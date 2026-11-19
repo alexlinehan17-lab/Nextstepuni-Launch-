@@ -1,0 +1,1790 @@
+{
+  "status": "visually inspected",
+  "paperFileid": "LC003GLP200EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "tasks": {
+    "1-a": {
+      "topic": "1-3",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 158,
+          "bottom": 234,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 39,
+          "top": 238,
+          "bottom": 291,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 58,
+          "top": 154,
+          "bottom": 245,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit e.g. one correct outcome other than BGG.",
+        "High Partial Credit — An almost correct response such as one/two outcomes missing or extra outcomes."
+      ],
+      "inspectedQuestionSha256": "c0bcad0f23ab725d08dd8fdcccfc7d0d09170afbccc82c895824d236902f4b86",
+      "inspectedSolutionSha256": "09c5b5f024ff6653e338d1f778af393d9d01ac2a7c5cdf0a1a178a46c2461973"
+    },
+    "1-b": {
+      "topic": "1-3",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 158,
+          "bottom": 191,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 3,
+          "top": 324,
+          "bottom": 358,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 39,
+          "top": 354,
+          "bottom": 399,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 58,
+          "top": 250,
+          "bottom": 300,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Any work of merit e.g. the number of boys or the number of girls."
+      ],
+      "inspectedQuestionSha256": "7e8754b11e28392b01ca979a233b3682a24b9e8ad2f0202da6016d03335938ec",
+      "inspectedSolutionSha256": "c92ed6c0fefb359f5887d25503d60428f51ea0587903ed28094e09cfa07661ae"
+    },
+    "1-c": {
+      "topic": "1-3",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 158,
+          "bottom": 191,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 3,
+          "top": 448,
+          "bottom": 482,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 39,
+          "top": 466,
+          "bottom": 513,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 58,
+          "top": 305,
+          "bottom": 415,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Full Credit — Correct answer without work shown."
+      ],
+      "inspectedQuestionSha256": "e8e57423527fc65e973a2616fda2333779a9c14e575d407e886158381cdaec06",
+      "inspectedSolutionSha256": "569ce903444fa21820ebd100bc914c1e73fa4f1f53ed3c7d7446f54ffac0b43f"
+    },
+    "1-d": {
+      "topic": "1-3",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 158,
+          "bottom": 191,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 3,
+          "top": 572,
+          "bottom": 634,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 39,
+          "top": 605,
+          "bottom": 710,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 58,
+          "top": 420,
+          "bottom": 542,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Answer with one element missing."
+      ],
+      "inspectedQuestionSha256": "562f6d525af44f3b2652d5d1b959c7d3f7b50de005cf281d211f5d321581cf2f",
+      "inspectedSolutionSha256": "05cec89d581baa0ebe662d6c085b6444f63780eb21aa532b1720eacc19681339"
+    },
+    "2-a": {
+      "topic": "1-3",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 74,
+          "bottom": 107,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 4,
+          "top": 115,
+          "bottom": 149,
+          "x0": 52,
+          "x1": 335
+        },
+        {
+          "page": 4,
+          "top": 115,
+          "bottom": 238,
+          "x0": 338,
+          "x1": 547
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 40,
+          "top": 74,
+          "bottom": 239,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 59,
+          "top": 80,
+          "bottom": 171,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit such as one correct element.",
+        "High Partial Credit — An almost correct response such as two or three correct elements."
+      ],
+      "inspectedQuestionSha256": "e9da444309578506c570c79d3b15da1476d53091c5b2459f25fac6346ff209a5",
+      "inspectedSolutionSha256": "7c5a45afedd8960ae08548abc5566029cf761c51d900a075f6095a19fe8dd640"
+    },
+    "2-b-i": {
+      "topic": "1-3",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 308,
+          "bottom": 343,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 40,
+          "top": 280,
+          "bottom": 334,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 59,
+          "top": 179,
+          "bottom": 284,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Full Credit — Correct answer without work shown."
+      ],
+      "inspectedQuestionSha256": "de087255fb632b01dfaae17b51e3b6ab96685fbf8845c1cfcc4e8b8ac38f87b5",
+      "inspectedSolutionSha256": "7378a3b94649ca0c9fc119b0e8c8766a4c3d7d4862492d75a5e6238fb8b28742"
+    },
+    "2-b-ii": {
+      "topic": "1-3",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 74,
+          "bottom": 107,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 4,
+          "top": 474,
+          "bottom": 508,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 40,
+          "top": 387,
+          "bottom": 436,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 59,
+          "top": 287,
+          "bottom": 430,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Full Credit — Correct answer without work shown."
+      ],
+      "inspectedQuestionSha256": "56936aa84b7b56e8601ac241aa32bb28f4e265fb3598f869d8a35c24996dada9",
+      "inspectedSolutionSha256": "b95dc5ac194d025b415a2e0a23a410e9f38cdd97404d6e717c116f24a374c558"
+    },
+    "2-b-iii": {
+      "topic": "1-3",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 74,
+          "bottom": 107,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 4,
+          "top": 635,
+          "bottom": 669,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 40,
+          "top": 502,
+          "bottom": 549,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 59,
+          "top": 435,
+          "bottom": 589,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Full Credit — Correct answer without work shown."
+      ],
+      "inspectedQuestionSha256": "d970dad3040224f882637e81f19b24b30502b88a752c6ffc842abaa8210f6b6f",
+      "inspectedSolutionSha256": "3fa4305dbfe808588346dfb02413cf4e7d9e41c7170e713b83a314caa6663c48"
+    },
+    "3-a": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 74,
+          "bottom": 382,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 41,
+          "top": 116,
+          "bottom": 380,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 60,
+          "top": 80,
+          "bottom": 185,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit such as showing knowledge of plotting a point."
+      ],
+      "inspectedQuestionSha256": "2fa0334cc1a1b788fc9563a01d200087254fa65a67e689d7e6da28f04818b81f",
+      "inspectedSolutionSha256": "4690880d09886f35a338dbf5357ebd27cb02660fa44465613a8efb20e27ceb66"
+    },
+    "3-b": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 74,
+          "bottom": 94,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 5,
+          "top": 386,
+          "bottom": 420,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 41,
+          "top": 428,
+          "bottom": 615,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 60,
+          "top": 190,
+          "bottom": 240,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Any work of merit e.g. incomplete statement(s) with some merit."
+      ],
+      "inspectedQuestionSha256": "13d5a150b810a0fab3e83230c5823c8baf693cf7df693d40f05b6381f98da131",
+      "inspectedSolutionSha256": "f197a76fca61cc296790b6c9f15bef09247cc81a3cce1a4e48cc4afa6c60bad7"
+    },
+    "3-c": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 74,
+          "bottom": 94,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 5,
+          "top": 386,
+          "bottom": 420,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 6,
+          "top": 54,
+          "bottom": 74,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 42,
+          "top": 81,
+          "bottom": 379,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 60,
+          "top": 246,
+          "bottom": 351,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit such as identification of a relevant formula."
+      ],
+      "inspectedQuestionSha256": "d14591ad57148814499a7b09d1588add3a68a7f05f101abe5363eaa7e316b7b0",
+      "inspectedSolutionSha256": "b49757ac5291c7a9d14924de841cfb27dd1fca3a58e9d0930bc2c3933b2a3101"
+    },
+    "4-a": {
+      "topic": "2-3",
+      "atlas": "co-ordinate-geometry-the-circle",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 453,
+          "bottom": 521,
+          "x0": 52,
+          "x1": 350
+        },
+        {
+          "page": 6,
+          "top": 465,
+          "bottom": 663,
+          "x0": 350,
+          "x1": 564
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 42,
+          "top": 500,
+          "bottom": 556,
+          "x0": 81,
+          "x1": 350
+        },
+        {
+          "page": 61,
+          "top": 71,
+          "bottom": 157,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit such as identification of a relevant formula."
+      ],
+      "inspectedQuestionSha256": "448062078663558cf9962c84c33cfba537aa2fa6f2bed77997a336433a032f09",
+      "inspectedSolutionSha256": "2ac95f3dc0226aa887718df0910cd8c79ac0ef3e599015ad72ddec031a465e77"
+    },
+    "4-b": {
+      "topic": "2-3",
+      "atlas": "co-ordinate-geometry-the-circle",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 453,
+          "bottom": 497,
+          "x0": 52,
+          "x1": 350
+        },
+        {
+          "page": 6,
+          "top": 465,
+          "bottom": 663,
+          "x0": 350,
+          "x1": 564
+        },
+        {
+          "page": 6,
+          "top": 640,
+          "bottom": 662,
+          "x0": 52,
+          "x1": 330
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 42,
+          "top": 665,
+          "bottom": 719,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 61,
+          "top": 161,
+          "bottom": 252,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit such as a correct substitution.",
+        "High Partial Credit — Almost correct response such as required conclusion not given."
+      ],
+      "inspectedQuestionSha256": "7e381de474c2233d1cad4eedd879cc5c6a5d5fb25e28f740f07e83b9fee14763",
+      "inspectedSolutionSha256": "28764ed93b2ec7263d01d22eaef6f05d81d2b13921b95cc803a0f64cddbb49bc"
+    },
+    "4-c": {
+      "topic": "2-3",
+      "atlas": "co-ordinate-geometry-the-circle",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 453,
+          "bottom": 497,
+          "x0": 52,
+          "x1": 350
+        },
+        {
+          "page": 6,
+          "top": 465,
+          "bottom": 663,
+          "x0": 350,
+          "x1": 564
+        },
+        {
+          "page": 7,
+          "top": 54,
+          "bottom": 107,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 43,
+          "top": 130,
+          "bottom": 216,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 61,
+          "top": 258,
+          "bottom": 364,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit e.g. use of translation indicated.",
+        "High Partial Credit — Almost correct response such as correct centre and radius indicated."
+      ],
+      "inspectedQuestionSha256": "a5202a1c350361f25725a43887dfad7d38068bfa8d43289903406c558647ff40",
+      "inspectedSolutionSha256": "aab17244177185d3c5c08700402679653d7f1c3dee14969f55e94515da84319f"
+    },
+    "4-d": {
+      "topic": "2-3",
+      "atlas": "co-ordinate-geometry-the-circle",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 453,
+          "bottom": 497,
+          "x0": 52,
+          "x1": 350
+        },
+        {
+          "page": 6,
+          "top": 465,
+          "bottom": 663,
+          "x0": 350,
+          "x1": 564
+        },
+        {
+          "page": 7,
+          "top": 54,
+          "bottom": 90,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 7,
+          "top": 410,
+          "bottom": 431,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 43,
+          "top": 418,
+          "bottom": 563,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 61,
+          "top": 368,
+          "bottom": 474,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "High Partial Credit — An almost correct response such as slope of tangent found correctly but fails to finish."
+      ],
+      "inspectedQuestionSha256": "29cd4e1719e75651822fae207458cc91b20c14a67b2ded6a8aaa182cd4e1dcc6",
+      "inspectedSolutionSha256": "18747b1d535932abb3c04ea1eacaa2a2255687987ebacb68d02f7cf3c898d426"
+    },
+    "5a-a-i": {
+      "topic": "2-1",
+      "atlas": "geometry-proofs-and-constructions",
+      "questionRegions": [
+        {
+          "page": 8,
+          "top": 121,
+          "bottom": 155,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 44,
+          "top": 162,
+          "bottom": 211,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 62,
+          "top": 80,
+          "bottom": 144,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Model solution — The tangent is perpendicular to the radius at the point of contact"
+      ],
+      "inspectedQuestionSha256": "c7214da5f524e0fef29d8cd1811f46a6861d54bf77af05547ab73217932debd1",
+      "inspectedSolutionSha256": "ed9bd7a7ed1bf5c8e057a5fe5ba9d5148487466fd8043777b33b25cc0ef603ca"
+    },
+    "5a-a-ii": {
+      "topic": "2-1",
+      "atlas": "geometry-proofs-and-constructions",
+      "questionRegions": [
+        {
+          "page": 8,
+          "top": 245,
+          "bottom": 393,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 44,
+          "top": 245,
+          "bottom": 283,
+          "x0": 52,
+          "x1": 335
+        },
+        {
+          "page": 44,
+          "top": 247,
+          "bottom": 391,
+          "x0": 387,
+          "x1": 535
+        },
+        {
+          "page": 62,
+          "top": 149,
+          "bottom": 200,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Any work of merit e.g. any incorrect line through the point of contact."
+      ],
+      "inspectedQuestionSha256": "ce3bbe5865274a3982d972ef6ed9dd0b06764cfd8dae8e7c1e302ceaf752f827",
+      "inspectedSolutionSha256": "391305090074774c99da07a0302173efbcf2f6412a98310dd95ce98fd1636428"
+    },
+    "5a-b": {
+      "topic": "2-1",
+      "atlas": "geometry-proofs-and-constructions",
+      "questionRegions": [
+        {
+          "page": 8,
+          "top": 398,
+          "bottom": 748,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 44,
+          "top": 439,
+          "bottom": 711,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 62,
+          "top": 204,
+          "bottom": 379,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit such as an arc drawn from any vertex of the triangle.",
+        "Mid Partial Credit — Further work of merit such as one perpendicular bisector of the triangle side constructed correctly."
+      ],
+      "inspectedQuestionSha256": "44b6b0fa75cc3273e339d7eb170e0d88f0d7f60f5de656db7272a512e6744df1",
+      "inspectedSolutionSha256": "fcde56d27c277a704bf10a44f9c91fb7315ac9f57656edcd34ee43bb1ceb2619"
+    },
+    "5b": {
+      "topic": "2-1",
+      "atlas": "geometry-proofs-and-constructions",
+      "questionRegions": [
+        {
+          "page": 9,
+          "top": 75,
+          "bottom": 237,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 45,
+          "top": 72,
+          "bottom": 443,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 62,
+          "top": 467,
+          "bottom": 559,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any one correct step.",
+        "High Partial Credit — One or two steps missing or incorrect."
+      ],
+      "inspectedQuestionSha256": "8469e1fbeae7bc8b0d9942fbaa371d0f7fe552dfbd74ea92984cfb762fada15b",
+      "inspectedSolutionSha256": "523ac1dc830ef6be77a7ccccfb284fdf95d1b74994f31a50bb431353a212d579"
+    },
+    "6-a-i": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 144,
+          "bottom": 344,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 10,
+          "top": 345,
+          "bottom": 668,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 46,
+          "top": 364,
+          "bottom": 653,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 63,
+          "top": 110,
+          "bottom": 215,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "High Partial Credit — An almost correct response such as one or two incorrect rectangles or scales omitted."
+      ],
+      "inspectedQuestionSha256": "9cf9c5c6a7656f233e3bb1f94aaf4f6d8c02b451416ccfa6e1e69673f3b4e47e",
+      "inspectedSolutionSha256": "cb59ae0e5743e6fc03976a099690ffd800b343b9470a641d612c132f9c14d756"
+    },
+    "6-a-ii": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 144,
+          "bottom": 344,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 10,
+          "top": 668,
+          "bottom": 688,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 46,
+          "top": 681,
+          "bottom": 736,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 63,
+          "top": 220,
+          "bottom": 354,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit e.g. at least two correct elements identified.",
+        "Full Credit — 121 128 without work."
+      ],
+      "inspectedQuestionSha256": "0959973fe68cd1e0f20c5bcec2678996b2e0b75679499db157978bff16589fd4",
+      "inspectedSolutionSha256": "d5b27e8265ce492b48908a4bb2d2828bd4da8d2b6084605c18b3630f4e9b68f7"
+    },
+    "6-a-iii": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 144,
+          "bottom": 344,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 11,
+          "top": 54,
+          "bottom": 74,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 47,
+          "top": 81,
+          "bottom": 119,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 63,
+          "top": 358,
+          "bottom": 491,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "High Partial Credit — An almost correct response such as one step missing.",
+        "Full Credit — Correct answer without work shown."
+      ],
+      "inspectedQuestionSha256": "a7dee3c6e8cc6308d15cfe03deb4705747fae4352a2c6ebb2dd8fc5cd4b20ccc",
+      "inspectedSolutionSha256": "2678600b823e9930a4bb9b8d689799e3f9157661c5553ffbd12bee1de732c80b"
+    },
+    "6-a-iv": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 144,
+          "bottom": 344,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 11,
+          "top": 54,
+          "bottom": 74,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 11,
+          "top": 151,
+          "bottom": 235,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 11,
+          "top": 286,
+          "bottom": 306,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 47,
+          "top": 195,
+          "bottom": 292,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 63,
+          "top": 496,
+          "bottom": 560,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Any work of merit which includes any mention of the year 2009, a decline in sales or an increase in sales."
+      ],
+      "inspectedQuestionSha256": "b9fa0622f4e2c680437b01222ecabbb4118b4634282d91a5ea46c290de33bae8",
+      "inspectedSolutionSha256": "302a6ba3484d5301f2ccc733f96eada2670c916898bf1e9d01df1dec6a0e0ab3"
+    },
+    "6-a-v": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 144,
+          "bottom": 344,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 11,
+          "top": 358,
+          "bottom": 378,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 47,
+          "top": 329,
+          "bottom": 386,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 63,
+          "top": 565,
+          "bottom": 629,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Model solution — Sales fell dramatically from 2007 to 2009; they recovered a lot since then, but are still much lower than they were at the start."
+      ],
+      "inspectedQuestionSha256": "468c14725c7f27ac9391995853e8eab092344c598317979211dd9aab55c1e050",
+      "inspectedSolutionSha256": "ffaf134ba178d8741ddd374152aaaad6575c18ceb7c895b0af6fd9aef00f19fa"
+    },
+    "6-b-i": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 144,
+          "bottom": 344,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 11,
+          "top": 454,
+          "bottom": 474,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 47,
+          "top": 427,
+          "bottom": 484,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 63,
+          "top": 634,
+          "bottom": 684,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Any work of merit such as a correct relevant observation that is incomplete."
+      ],
+      "inspectedQuestionSha256": "2ed01888b70d79ec5ad32883778d62652970e256026cce8ee325b5870bf6c132",
+      "inspectedSolutionSha256": "3b4c6c771f4f252ba40a5f1660593a1c8882a797960fcd4ef4a0ca916d7925e9"
+    },
+    "6-b-ii": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 144,
+          "bottom": 344,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 11,
+          "top": 454,
+          "bottom": 474,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 11,
+          "top": 565,
+          "bottom": 585,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 47,
+          "top": 524,
+          "bottom": 581,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 63,
+          "top": 689,
+          "bottom": 740,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Zero Credit — No reason given."
+      ],
+      "inspectedQuestionSha256": "7d76988c7719713f3c6c6a1dba160c10498ccd32800b5f24c8635524d0ab1bf6",
+      "inspectedSolutionSha256": "d88c7034a2c79acd3b6b51c72feeb3ab48e69d2b2cd85c55ba250bd307f6cfee"
+    },
+    "6-b-iii": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 144,
+          "bottom": 344,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 11,
+          "top": 647,
+          "bottom": 681,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 47,
+          "top": 633,
+          "bottom": 710,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 64,
+          "top": 52,
+          "bottom": 116,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Any work of merit such as an estimate within the range of values 72 000 to 90 000 without justification or any work with 36 081."
+      ],
+      "inspectedQuestionSha256": "7ba4217df892388306ddd3ac1dc311171b695ee3636902e3a8dab83ccf5bd572",
+      "inspectedSolutionSha256": "960c022b0169796de530f29954a660ca8310fb70fd687ceb2cabc98f3f43ccb8"
+    },
+    "6-c-i": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 144,
+          "bottom": 344,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 12,
+          "top": 54,
+          "bottom": 283,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 105,
+          "bottom": 478,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 64,
+          "top": 121,
+          "bottom": 241,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit such as finding any or all of the correct percentages or fractions."
+      ],
+      "inspectedQuestionSha256": "90893fdbccdc16358218b8ca9969b9e7af4dbe101993ef461084fb3a5a4b4af4",
+      "inspectedSolutionSha256": "9938c11086abf8368143d4e5e40890ed6b5588aea6323f13b1c42749cb1728fb"
+    },
+    "6-c-ii": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 144,
+          "bottom": 344,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 12,
+          "top": 565,
+          "bottom": 753,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 544,
+          "bottom": 731,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 64,
+          "top": 246,
+          "bottom": 295,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Selects B or C."
+      ],
+      "inspectedQuestionSha256": "31234f5a29c7c27c2943edf6091671e550694a09b699961bab5132911590720c",
+      "inspectedSolutionSha256": "3edab2925ecad34aa9dea70748f2cc6381dfec860f1ba28e1e640cded1b757c9"
+    },
+    "6-d-i": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 13,
+          "top": 54,
+          "bottom": 352,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 49,
+          "top": 181,
+          "bottom": 343,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 64,
+          "top": 301,
+          "bottom": 406,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit e.g. a correct element of stem-leaf plot indicated."
+      ],
+      "inspectedQuestionSha256": "e7aaec30cf5355f09f3e5bd9391b1b6cc94520d3145bca5edd1531e1d1f4b1ba",
+      "inspectedSolutionSha256": "b74265918686285a47bd732b0358b75befbfa095491a16dea60277f171b019eb"
+    },
+    "6-d-ii": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 13,
+          "top": 54,
+          "bottom": 352,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 13,
+          "top": 359,
+          "bottom": 407,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 49,
+          "top": 181,
+          "bottom": 343,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 49,
+          "top": 418,
+          "bottom": 473,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 64,
+          "top": 411,
+          "bottom": 502,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "High Partial Credit — An almost complete response such as reference to median/mean but no conclusion."
+      ],
+      "inspectedQuestionSha256": "024dcfbb9c0ad16e5184a701595ac2e4695623f539984cd168b69458f8a80b03",
+      "inspectedSolutionSha256": "f7272a2c545c79cea770da721fc4d8d44184b0dd37e5b3102d71de3704b7e990"
+    },
+    "6-d-iii": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 13,
+          "top": 54,
+          "bottom": 352,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 13,
+          "top": 558,
+          "bottom": 606,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 49,
+          "top": 181,
+          "bottom": 343,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 49,
+          "top": 556,
+          "bottom": 627,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 64,
+          "top": 508,
+          "bottom": 627,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "High Partial Credit — An almost complete response such as reference to range or measurement of variability but no conclusion."
+      ],
+      "inspectedQuestionSha256": "6171cd6325b9af0850c844e2c8fb60b1138d5029ef1c36f08998e03bfbeecfb5",
+      "inspectedSolutionSha256": "14988eb840f65eb19092c5aa61aa96af4914fe2af0ca98d337d96e8d3544366d"
+    },
+    "7-a": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 77,
+          "bottom": 211,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 144,
+          "bottom": 202,
+          "x0": 80,
+          "x1": 332
+        },
+        {
+          "page": 65,
+          "top": 80,
+          "bottom": 180,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Full Credit — A triangle drawn with three different lengths indicated."
+      ],
+      "inspectedQuestionSha256": "bf0f867ef9faa8517d9cca0d2c19271f214d91ea682e799cab38f9a6830d913a",
+      "inspectedSolutionSha256": "43e640b6b103ba6f49cb7b920b9690c2b725945bc558dac16513026b4bcf61fe"
+    },
+    "7-b": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 253,
+          "bottom": 505,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 14,
+          "top": 507,
+          "bottom": 527,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 539,
+          "bottom": 612,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 65,
+          "top": 181,
+          "bottom": 375,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Mid Partial Credit — Further work of merit such as scale factor found.",
+        "Full Credit — Correct answer without work shown."
+      ],
+      "inspectedQuestionSha256": "dff173b415953961beef91eb72bcacbabda64e17ec3d23cfbfc271be352f8539",
+      "inspectedSolutionSha256": "13a1441754647bb8ade4971e4498c5e1396c27234a2f1e28cde9fde980cf886e"
+    },
+    "7-c": {
+      "topic": "2-4",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 253,
+          "bottom": 505,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 14,
+          "top": 679,
+          "bottom": 699,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 659,
+          "bottom": 733,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 65,
+          "top": 375,
+          "bottom": 518,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit such as identifying the cosine rule as a method of solution.",
+        "Mid Partial Credit — Further work of merit such as significant correct substitution into the cosine formula."
+      ],
+      "inspectedQuestionSha256": "a836eda1f51cf99de8369bb221584fb40e0557f746ead0f91ba2b6512b34d860",
+      "inspectedSolutionSha256": "3ffe8baa6bf729edc42583959b138a15d13ec99596283cb240ddcd4b120f8bd3"
+    },
+    "7-d": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 253,
+          "bottom": 505,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 15,
+          "top": 295,
+          "bottom": 315,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 51,
+          "top": 84,
+          "bottom": 211,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 65,
+          "top": 519,
+          "bottom": 597,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Any work of merit such as an effort at finding or explaining the centre of enlargement or an effort at the use of the scale factor to find the centre of enlargement."
+      ],
+      "inspectedQuestionSha256": "150945c0588aaef3f44e9ca14e6a18d3d69701e278c48cccbc158ccff6741055",
+      "inspectedSolutionSha256": "2a285b38a2f3b57df1cda1ce51803653051232b441e06dabf5a854044456b280"
+    },
+    "7-e": {
+      "topic": "2-4",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 253,
+          "bottom": 505,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 16,
+          "top": 54,
+          "bottom": 108,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 52,
+          "top": 130,
+          "bottom": 422,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 65,
+          "top": 597,
+          "bottom": 755,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "High Partial Credit — An almost complete response whereby h is found but no conclusion is given."
+      ],
+      "inspectedQuestionSha256": "9171893800feb4406db0ff9aa734f7d29a416f7dcfb0f08c93824bc9c4d02e1c",
+      "inspectedSolutionSha256": "bf84aeecc91e902b59497d05c33cf098d5eef99bc04c54958b84c77639e9f327"
+    },
+    "8-a-i": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 17,
+          "top": 152,
+          "bottom": 260,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 53,
+          "top": 262,
+          "bottom": 335,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 66,
+          "top": 110,
+          "bottom": 206,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Full Credit — Correct answer without work shown."
+      ],
+      "inspectedQuestionSha256": "9159a0c737ff4b4d6b44d7764ed8c258931aa7be7135944c69ded03c14479a89",
+      "inspectedSolutionSha256": "bc01f1f703e3abcc4890341d1b853725979ddbd6129e1dd5d2029385a29c1fc3"
+    },
+    "8-a-ii": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 17,
+          "top": 152,
+          "bottom": 190,
+          "x0": 52,
+          "x1": 420
+        },
+        {
+          "page": 17,
+          "top": 152,
+          "bottom": 260,
+          "x0": 430,
+          "x1": 558
+        },
+        {
+          "page": 17,
+          "top": 457,
+          "bottom": 479,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 53,
+          "top": 426,
+          "bottom": 478,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 66,
+          "top": 211,
+          "bottom": 303,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Any work of merit such as identification of r in this part.",
+        "Full Credit — Correct answer without work shown."
+      ],
+      "inspectedQuestionSha256": "11fc5cd9606e72ac00591fd007d09f96a44483492060b79010fe1a02111fdac4",
+      "inspectedSolutionSha256": "d468d58f35a7ef29833bbfa082ce41c66f57280d1686e6b9ed438171e015c89c"
+    },
+    "8-b-i": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 18,
+          "top": 54,
+          "bottom": 370,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 54,
+          "top": 103,
+          "bottom": 324,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 66,
+          "top": 309,
+          "bottom": 429,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit such as one or two correct measurements shown.",
+        "High Partial Credit — If (b) (i) not done but all correct measurements are shown in (b) (ii)."
+      ],
+      "inspectedQuestionSha256": "c6c62071207b51c48769cfa900b9cf8333dd08e5075e88dab676d53d9a4f63a8",
+      "inspectedSolutionSha256": "b8712fbd539db54ada2de5818196148174b957de96a2b593f6d26e41a644118f"
+    },
+    "8-b-ii": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 18,
+          "top": 54,
+          "bottom": 398,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 54,
+          "top": 103,
+          "bottom": 324,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 54,
+          "top": 408,
+          "bottom": 548,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 66,
+          "top": 433,
+          "bottom": 622,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit such as a correct substitution of h, F + L or TOFE.",
+        "Mid Partial Credit — One correct substitution followed by some correct calculation."
+      ],
+      "inspectedQuestionSha256": "db8ee7eb617e0c81a7aefec3661c28c6e37c44b096062cc554bef6630aa55dc0",
+      "inspectedSolutionSha256": "ff0af5746ce579c13b3b48e6d008a7f70f358e76bd5691427b33a3daead91f31"
+    },
+    "8-c-i": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 19,
+          "top": 54,
+          "bottom": 243,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 250,
+          "bottom": 386,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 67,
+          "top": 66,
+          "bottom": 216,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "High Partial Credit — An almost correct response such as h isolated."
+      ],
+      "inspectedQuestionSha256": "33f8826944739adec49471b5a3cb1a39f4ba7663ee85fe65be9241b5f249d524",
+      "inspectedSolutionSha256": "8f5e7ec629e8e84afe7b984c9e34692ae2baf2b184f1b2ed946977f71c22dd51"
+    },
+    "8-c-ii": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 19,
+          "top": 54,
+          "bottom": 243,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 19,
+          "top": 420,
+          "bottom": 454,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 443,
+          "bottom": 568,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 67,
+          "top": 220,
+          "bottom": 271,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Any work of merit e.g. finds base or height of the box."
+      ],
+      "inspectedQuestionSha256": "ba36efbf9ce51dfffad9a0199e98a707ca7dfa48ff6ec23a971c31ecd01cb93d",
+      "inspectedSolutionSha256": "74368c42ef75a033cd7109d753a1f6544b6d78ea30aeeafcdbe42e0202102184"
+    }
+  }
+}

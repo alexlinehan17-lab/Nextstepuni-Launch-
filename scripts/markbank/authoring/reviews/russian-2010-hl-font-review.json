@@ -1,0 +1,1025 @@
+{
+  "paperSha256": "b31909e020b82ba2a6748f8b2ff59aa6bc5b0fc2c9351e7290d54c7e2215b475",
+  "schemeSha256": "15607f22c24d4502dee8d28cd319711c880d27d06eac33b1da96fa6554a0672c",
+  "assessment": "All 115 missing Times glyphs were visually reviewed as paired outlines from the original embedded source CFF and original-paper mapped TrueType glyphs. Every pair represents the mapped letter. Original CID numbers match original-paper glyph IDs. Exact geometry equality is not claimed: the exploratory two-unit tolerance failed for some format-converted outlines.",
+  "fonts": [
+    {
+      "style": "TimesNewRomanPSMT",
+      "paperFontXref": 75,
+      "schemeFontXref": 105,
+      "paperFontSha256": "9babac2f11948ce2e494cba20924b09546ad3cebd41c7fe57d6fd654659214ba",
+      "schemeFontSha256": "232fd7de3b9f1cf0bf0a768929da3bac43d6e33c34636603c51ccc7cf4d10627",
+      "glyphs": [
+        {
+          "glyph": 570,
+          "unicode": 1040,
+          "character": "А",
+          "maximumBoundaryDistanceAt1000Units": 1.174171,
+          "advanceDifferenceAt1000Units": 0.167969
+        },
+        {
+          "glyph": 571,
+          "unicode": 1041,
+          "character": "Б",
+          "maximumBoundaryDistanceAt1000Units": 1.615036,
+          "advanceDifferenceAt1000Units": 0.21875
+        },
+        {
+          "glyph": 572,
+          "unicode": 1042,
+          "character": "В",
+          "maximumBoundaryDistanceAt1000Units": 1.902374,
+          "advanceDifferenceAt1000Units": 0.007812
+        },
+        {
+          "glyph": 574,
+          "unicode": 1044,
+          "character": "Д",
+          "maximumBoundaryDistanceAt1000Units": 1.339707,
+          "advanceDifferenceAt1000Units": 0.128906
+        },
+        {
+          "glyph": 575,
+          "unicode": 1045,
+          "character": "Е",
+          "maximumBoundaryDistanceAt1000Units": 1.383363,
+          "advanceDifferenceAt1000Units": 0.160156
+        },
+        {
+          "glyph": 578,
+          "unicode": 1048,
+          "character": "И",
+          "maximumBoundaryDistanceAt1000Units": 1.644921,
+          "advanceDifferenceAt1000Units": 0.167969
+        },
+        {
+          "glyph": 580,
+          "unicode": 1050,
+          "character": "К",
+          "maximumBoundaryDistanceAt1000Units": 1.465066,
+          "advanceDifferenceAt1000Units": 0.007812
+        },
+        {
+          "glyph": 581,
+          "unicode": 1051,
+          "character": "Л",
+          "maximumBoundaryDistanceAt1000Units": 1.432839,
+          "advanceDifferenceAt1000Units": 0.222656
+        },
+        {
+          "glyph": 582,
+          "unicode": 1052,
+          "character": "М",
+          "maximumBoundaryDistanceAt1000Units": 2.047856,
+          "advanceDifferenceAt1000Units": 0.160156
+        },
+        {
+          "glyph": 583,
+          "unicode": 1053,
+          "character": "Н",
+          "maximumBoundaryDistanceAt1000Units": 1.334114,
+          "advanceDifferenceAt1000Units": 0.167969
+        },
+        {
+          "glyph": 584,
+          "unicode": 1054,
+          "character": "О",
+          "maximumBoundaryDistanceAt1000Units": 1.606392,
+          "advanceDifferenceAt1000Units": 0.167969
+        },
+        {
+          "glyph": 585,
+          "unicode": 1055,
+          "character": "П",
+          "maximumBoundaryDistanceAt1000Units": 1.465066,
+          "advanceDifferenceAt1000Units": 0.167969
+        },
+        {
+          "glyph": 586,
+          "unicode": 1056,
+          "character": "Р",
+          "maximumBoundaryDistanceAt1000Units": 1.194881,
+          "advanceDifferenceAt1000Units": 0.152344
+        },
+        {
+          "glyph": 587,
+          "unicode": 1057,
+          "character": "С",
+          "maximumBoundaryDistanceAt1000Units": 1.789786,
+          "advanceDifferenceAt1000Units": 0.007812
+        },
+        {
+          "glyph": 588,
+          "unicode": 1058,
+          "character": "Т",
+          "maximumBoundaryDistanceAt1000Units": 1.691998,
+          "advanceDifferenceAt1000Units": 0.160156
+        },
+        {
+          "glyph": 590,
+          "unicode": 1060,
+          "character": "Ф",
+          "maximumBoundaryDistanceAt1000Units": 1.332516,
+          "advanceDifferenceAt1000Units": 0.039062
+        },
+        {
+          "glyph": 594,
+          "unicode": 1064,
+          "character": "Ш",
+          "maximumBoundaryDistanceAt1000Units": 1.356701,
+          "advanceDifferenceAt1000Units": 0.210938
+        },
+        {
+          "glyph": 602,
+          "unicode": 1072,
+          "character": "а",
+          "maximumBoundaryDistanceAt1000Units": 1.710496,
+          "advanceDifferenceAt1000Units": 0.152344
+        },
+        {
+          "glyph": 603,
+          "unicode": 1073,
+          "character": "б",
+          "maximumBoundaryDistanceAt1000Units": 1.738545,
+          "advanceDifferenceAt1000Units": 0.210938
+        },
+        {
+          "glyph": 604,
+          "unicode": 1074,
+          "character": "в",
+          "maximumBoundaryDistanceAt1000Units": 2.036755,
+          "advanceDifferenceAt1000Units": 0.167969
+        },
+        {
+          "glyph": 605,
+          "unicode": 1075,
+          "character": "г",
+          "maximumBoundaryDistanceAt1000Units": 1.678515,
+          "advanceDifferenceAt1000Units": 0.15625
+        },
+        {
+          "glyph": 606,
+          "unicode": 1076,
+          "character": "д",
+          "maximumBoundaryDistanceAt1000Units": 1.861206,
+          "advanceDifferenceAt1000Units": 0.210938
+        },
+        {
+          "glyph": 607,
+          "unicode": 1077,
+          "character": "е",
+          "maximumBoundaryDistanceAt1000Units": 1.32108,
+          "advanceDifferenceAt1000Units": 0.152344
+        },
+        {
+          "glyph": 608,
+          "unicode": 1078,
+          "character": "ж",
+          "maximumBoundaryDistanceAt1000Units": 1.427447,
+          "advanceDifferenceAt1000Units": 0.082031
+        },
+        {
+          "glyph": 609,
+          "unicode": 1079,
+          "character": "з",
+          "maximumBoundaryDistanceAt1000Units": 1.640351,
+          "advanceDifferenceAt1000Units": 0.019531
+        },
+        {
+          "glyph": 610,
+          "unicode": 1080,
+          "character": "и",
+          "maximumBoundaryDistanceAt1000Units": 1.591335,
+          "advanceDifferenceAt1000Units": 0.15625
+        },
+        {
+          "glyph": 611,
+          "unicode": 1081,
+          "character": "й",
+          "maximumBoundaryDistanceAt1000Units": 1.591335,
+          "advanceDifferenceAt1000Units": 0.15625
+        },
+        {
+          "glyph": 612,
+          "unicode": 1082,
+          "character": "к",
+          "maximumBoundaryDistanceAt1000Units": 1.467596,
+          "advanceDifferenceAt1000Units": 0.160156
+        },
+        {
+          "glyph": 613,
+          "unicode": 1083,
+          "character": "л",
+          "maximumBoundaryDistanceAt1000Units": 2.256095,
+          "advanceDifferenceAt1000Units": 0.023438
+        },
+        {
+          "glyph": 614,
+          "unicode": 1084,
+          "character": "м",
+          "maximumBoundaryDistanceAt1000Units": 1.6393,
+          "advanceDifferenceAt1000Units": 0.1875
+        },
+        {
+          "glyph": 615,
+          "unicode": 1085,
+          "character": "н",
+          "maximumBoundaryDistanceAt1000Units": 1.422192,
+          "advanceDifferenceAt1000Units": 0.15625
+        },
+        {
+          "glyph": 616,
+          "unicode": 1086,
+          "character": "о",
+          "maximumBoundaryDistanceAt1000Units": 2.259738,
+          "advanceDifferenceAt1000Units": 0.0
+        },
+        {
+          "glyph": 617,
+          "unicode": 1087,
+          "character": "п",
+          "maximumBoundaryDistanceAt1000Units": 1.368994,
+          "advanceDifferenceAt1000Units": 0.15625
+        },
+        {
+          "glyph": 618,
+          "unicode": 1088,
+          "character": "р",
+          "maximumBoundaryDistanceAt1000Units": 1.373576,
+          "advanceDifferenceAt1000Units": 0.0
+        },
+        {
+          "glyph": 619,
+          "unicode": 1089,
+          "character": "с",
+          "maximumBoundaryDistanceAt1000Units": 1.701135,
+          "advanceDifferenceAt1000Units": 0.152344
+        },
+        {
+          "glyph": 620,
+          "unicode": 1090,
+          "character": "т",
+          "maximumBoundaryDistanceAt1000Units": 0.939484,
+          "advanceDifferenceAt1000Units": 0.011719
+        },
+        {
+          "glyph": 621,
+          "unicode": 1091,
+          "character": "у",
+          "maximumBoundaryDistanceAt1000Units": 1.44935,
+          "advanceDifferenceAt1000Units": 0.0
+        },
+        {
+          "glyph": 622,
+          "unicode": 1092,
+          "character": "ф",
+          "maximumBoundaryDistanceAt1000Units": 1.393147,
+          "advanceDifferenceAt1000Units": 0.050781
+        },
+        {
+          "glyph": 623,
+          "unicode": 1093,
+          "character": "х",
+          "maximumBoundaryDistanceAt1000Units": 1.856164,
+          "advanceDifferenceAt1000Units": 0.0
+        },
+        {
+          "glyph": 624,
+          "unicode": 1094,
+          "character": "ц",
+          "maximumBoundaryDistanceAt1000Units": 1.569309,
+          "advanceDifferenceAt1000Units": 0.15625
+        },
+        {
+          "glyph": 625,
+          "unicode": 1095,
+          "character": "ч",
+          "maximumBoundaryDistanceAt1000Units": 1.573501,
+          "advanceDifferenceAt1000Units": 0.070312
+        },
+        {
+          "glyph": 626,
+          "unicode": 1096,
+          "character": "ш",
+          "maximumBoundaryDistanceAt1000Units": 1.68634,
+          "advanceDifferenceAt1000Units": 0.019531
+        },
+        {
+          "glyph": 627,
+          "unicode": 1097,
+          "character": "щ",
+          "maximumBoundaryDistanceAt1000Units": 1.68634,
+          "advanceDifferenceAt1000Units": 0.019531
+        },
+        {
+          "glyph": 629,
+          "unicode": 1099,
+          "character": "ы",
+          "maximumBoundaryDistanceAt1000Units": 1.913441,
+          "advanceDifferenceAt1000Units": 0.125
+        },
+        {
+          "glyph": 630,
+          "unicode": 1100,
+          "character": "ь",
+          "maximumBoundaryDistanceAt1000Units": 1.423583,
+          "advanceDifferenceAt1000Units": 0.054688
+        },
+        {
+          "glyph": 631,
+          "unicode": 1101,
+          "character": "э",
+          "maximumBoundaryDistanceAt1000Units": 1.872438,
+          "advanceDifferenceAt1000Units": 0.199219
+        },
+        {
+          "glyph": 632,
+          "unicode": 1102,
+          "character": "ю",
+          "maximumBoundaryDistanceAt1000Units": 1.581996,
+          "advanceDifferenceAt1000Units": 0.070312
+        },
+        {
+          "glyph": 633,
+          "unicode": 1103,
+          "character": "я",
+          "maximumBoundaryDistanceAt1000Units": 1.382636,
+          "advanceDifferenceAt1000Units": 0.039062
+        },
+        {
+          "glyph": 634,
+          "unicode": 1105,
+          "character": "ё",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.152344
+        }
+      ]
+    },
+    {
+      "style": "TimesNewRomanPS-BoldMT",
+      "paperFontXref": 92,
+      "schemeFontXref": 116,
+      "paperFontSha256": "a4336cd0d2963d54b8506361a59b5ce7b5927f1aa399fd3969c3dfd81cb1fa07",
+      "schemeFontSha256": "f1a2257f7eba4f28dbd48015a81b08c5e8552dd0bd8e1cdd49ed78a22261ea13",
+      "glyphs": [
+        {
+          "glyph": 571,
+          "unicode": 1041,
+          "character": "Б",
+          "maximumBoundaryDistanceAt1000Units": 2.09063,
+          "advanceDifferenceAt1000Units": 0.132812
+        },
+        {
+          "glyph": 572,
+          "unicode": 1042,
+          "character": "В",
+          "maximumBoundaryDistanceAt1000Units": 4.033725,
+          "advanceDifferenceAt1000Units": 0.007812
+        },
+        {
+          "glyph": 574,
+          "unicode": 1044,
+          "character": "Д",
+          "maximumBoundaryDistanceAt1000Units": 2.425935,
+          "advanceDifferenceAt1000Units": 0.011719
+        },
+        {
+          "glyph": 575,
+          "unicode": 1045,
+          "character": "Е",
+          "maximumBoundaryDistanceAt1000Units": 1.957129,
+          "advanceDifferenceAt1000Units": 0.007812
+        },
+        {
+          "glyph": 578,
+          "unicode": 1048,
+          "character": "И",
+          "maximumBoundaryDistanceAt1000Units": 2.179488,
+          "advanceDifferenceAt1000Units": 0.167969
+        },
+        {
+          "glyph": 580,
+          "unicode": 1050,
+          "character": "К",
+          "maximumBoundaryDistanceAt1000Units": 2.067886,
+          "advanceDifferenceAt1000Units": 0.097656
+        },
+        {
+          "glyph": 583,
+          "unicode": 1053,
+          "character": "Н",
+          "maximumBoundaryDistanceAt1000Units": 2.370775,
+          "advanceDifferenceAt1000Units": 0.167969
+        },
+        {
+          "glyph": 584,
+          "unicode": 1054,
+          "character": "О",
+          "maximumBoundaryDistanceAt1000Units": 1.50905,
+          "advanceDifferenceAt1000Units": 0.167969
+        },
+        {
+          "glyph": 586,
+          "unicode": 1056,
+          "character": "Р",
+          "maximumBoundaryDistanceAt1000Units": 2.00346,
+          "advanceDifferenceAt1000Units": 0.160156
+        },
+        {
+          "glyph": 602,
+          "unicode": 1072,
+          "character": "а",
+          "maximumBoundaryDistanceAt1000Units": 1.035576,
+          "advanceDifferenceAt1000Units": 0.0
+        },
+        {
+          "glyph": 603,
+          "unicode": 1073,
+          "character": "б",
+          "maximumBoundaryDistanceAt1000Units": 1.562081,
+          "advanceDifferenceAt1000Units": 0.0
+        },
+        {
+          "glyph": 604,
+          "unicode": 1074,
+          "character": "в",
+          "maximumBoundaryDistanceAt1000Units": 1.654171,
+          "advanceDifferenceAt1000Units": 0.039062
+        },
+        {
+          "glyph": 605,
+          "unicode": 1075,
+          "character": "г",
+          "maximumBoundaryDistanceAt1000Units": 1.531429,
+          "advanceDifferenceAt1000Units": 0.101562
+        },
+        {
+          "glyph": 607,
+          "unicode": 1077,
+          "character": "е",
+          "maximumBoundaryDistanceAt1000Units": 1.148974,
+          "advanceDifferenceAt1000Units": 0.152344
+        },
+        {
+          "glyph": 609,
+          "unicode": 1079,
+          "character": "з",
+          "maximumBoundaryDistanceAt1000Units": 1.974355,
+          "advanceDifferenceAt1000Units": 0.144531
+        },
+        {
+          "glyph": 610,
+          "unicode": 1080,
+          "character": "и",
+          "maximumBoundaryDistanceAt1000Units": 1.871294,
+          "advanceDifferenceAt1000Units": 0.171875
+        },
+        {
+          "glyph": 611,
+          "unicode": 1081,
+          "character": "й",
+          "maximumBoundaryDistanceAt1000Units": 1.871294,
+          "advanceDifferenceAt1000Units": 0.171875
+        },
+        {
+          "glyph": 612,
+          "unicode": 1082,
+          "character": "к",
+          "maximumBoundaryDistanceAt1000Units": 1.718634,
+          "advanceDifferenceAt1000Units": 0.171875
+        },
+        {
+          "glyph": 613,
+          "unicode": 1083,
+          "character": "л",
+          "maximumBoundaryDistanceAt1000Units": 1.632233,
+          "advanceDifferenceAt1000Units": 0.035156
+        },
+        {
+          "glyph": 615,
+          "unicode": 1085,
+          "character": "н",
+          "maximumBoundaryDistanceAt1000Units": 1.619594,
+          "advanceDifferenceAt1000Units": 0.171875
+        },
+        {
+          "glyph": 616,
+          "unicode": 1086,
+          "character": "о",
+          "maximumBoundaryDistanceAt1000Units": 1.406919,
+          "advanceDifferenceAt1000Units": 0.0
+        },
+        {
+          "glyph": 617,
+          "unicode": 1087,
+          "character": "п",
+          "maximumBoundaryDistanceAt1000Units": 1.651425,
+          "advanceDifferenceAt1000Units": 0.171875
+        },
+        {
+          "glyph": 618,
+          "unicode": 1088,
+          "character": "р",
+          "maximumBoundaryDistanceAt1000Units": 1.714149,
+          "advanceDifferenceAt1000Units": 0.152344
+        },
+        {
+          "glyph": 619,
+          "unicode": 1089,
+          "character": "с",
+          "maximumBoundaryDistanceAt1000Units": 1.385173,
+          "advanceDifferenceAt1000Units": 0.152344
+        },
+        {
+          "glyph": 620,
+          "unicode": 1090,
+          "character": "т",
+          "maximumBoundaryDistanceAt1000Units": 1.358292,
+          "advanceDifferenceAt1000Units": 0.210938
+        },
+        {
+          "glyph": 621,
+          "unicode": 1091,
+          "character": "у",
+          "maximumBoundaryDistanceAt1000Units": 1.884562,
+          "advanceDifferenceAt1000Units": 0.0
+        },
+        {
+          "glyph": 624,
+          "unicode": 1094,
+          "character": "ц",
+          "maximumBoundaryDistanceAt1000Units": 1.686475,
+          "advanceDifferenceAt1000Units": 0.171875
+        },
+        {
+          "glyph": 629,
+          "unicode": 1099,
+          "character": "ы",
+          "maximumBoundaryDistanceAt1000Units": 1.686148,
+          "advanceDifferenceAt1000Units": 0.238281
+        },
+        {
+          "glyph": 630,
+          "unicode": 1100,
+          "character": "ь",
+          "maximumBoundaryDistanceAt1000Units": 1.656434,
+          "advanceDifferenceAt1000Units": 0.191406
+        },
+        {
+          "glyph": 632,
+          "unicode": 1102,
+          "character": "ю",
+          "maximumBoundaryDistanceAt1000Units": 1.608332,
+          "advanceDifferenceAt1000Units": 0.160156
+        },
+        {
+          "glyph": 633,
+          "unicode": 1103,
+          "character": "я",
+          "maximumBoundaryDistanceAt1000Units": 1.691096,
+          "advanceDifferenceAt1000Units": 0.015625
+        }
+      ]
+    },
+    {
+      "style": "TimesNewRomanPS-ItalicMT",
+      "paperFontXref": 105,
+      "schemeFontXref": 117,
+      "paperFontSha256": "69dfaaf3743b4c1e773f2e85e19316dd734086bc4ff190a5e195922a9a0f0bb5",
+      "schemeFontSha256": "492aeb7949e1020a6c58ee4fabbdbcf9f3631a61b0e35036c267e8bf73fc9c9a",
+      "glyphs": [
+        {
+          "glyph": 571,
+          "unicode": 1041,
+          "character": "Б",
+          "maximumBoundaryDistanceAt1000Units": 2.271158,
+          "advanceDifferenceAt1000Units": 0.15625
+        },
+        {
+          "glyph": 572,
+          "unicode": 1042,
+          "character": "В",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.160156
+        },
+        {
+          "glyph": 575,
+          "unicode": 1045,
+          "character": "Е",
+          "maximumBoundaryDistanceAt1000Units": 4.450972,
+          "advanceDifferenceAt1000Units": 0.160156
+        },
+        {
+          "glyph": 580,
+          "unicode": 1050,
+          "character": "К",
+          "maximumBoundaryDistanceAt1000Units": 2.263098,
+          "advanceDifferenceAt1000Units": 0.0625
+        },
+        {
+          "glyph": 582,
+          "unicode": 1052,
+          "character": "М",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.007812
+        },
+        {
+          "glyph": 583,
+          "unicode": 1053,
+          "character": "Н",
+          "maximumBoundaryDistanceAt1000Units": 3.835043,
+          "advanceDifferenceAt1000Units": 0.167969
+        },
+        {
+          "glyph": 586,
+          "unicode": 1056,
+          "character": "Р",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.160156
+        },
+        {
+          "glyph": 602,
+          "unicode": 1072,
+          "character": "а",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.0
+        },
+        {
+          "glyph": 603,
+          "unicode": 1073,
+          "character": "б",
+          "maximumBoundaryDistanceAt1000Units": 1.166132,
+          "advanceDifferenceAt1000Units": 0.070312
+        },
+        {
+          "glyph": 604,
+          "unicode": 1074,
+          "character": "в",
+          "maximumBoundaryDistanceAt1000Units": 1.478411,
+          "advanceDifferenceAt1000Units": 0.082031
+        },
+        {
+          "glyph": 605,
+          "unicode": 1075,
+          "character": "г",
+          "maximumBoundaryDistanceAt1000Units": 1.026353,
+          "advanceDifferenceAt1000Units": 0.136719
+        },
+        {
+          "glyph": 606,
+          "unicode": 1076,
+          "character": "д",
+          "maximumBoundaryDistanceAt1000Units": 1.340254,
+          "advanceDifferenceAt1000Units": 0.140625
+        },
+        {
+          "glyph": 607,
+          "unicode": 1077,
+          "character": "е",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.152344
+        },
+        {
+          "glyph": 608,
+          "unicode": 1078,
+          "character": "ж",
+          "maximumBoundaryDistanceAt1000Units": 2.886032,
+          "advanceDifferenceAt1000Units": 0.175781
+        },
+        {
+          "glyph": 609,
+          "unicode": 1079,
+          "character": "з",
+          "maximumBoundaryDistanceAt1000Units": 1.198616,
+          "advanceDifferenceAt1000Units": 0.136719
+        },
+        {
+          "glyph": 610,
+          "unicode": 1080,
+          "character": "и",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.0
+        },
+        {
+          "glyph": 611,
+          "unicode": 1081,
+          "character": "й",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.0
+        },
+        {
+          "glyph": 612,
+          "unicode": 1082,
+          "character": "к",
+          "maximumBoundaryDistanceAt1000Units": 2.705182,
+          "advanceDifferenceAt1000Units": 0.226562
+        },
+        {
+          "glyph": 613,
+          "unicode": 1083,
+          "character": "л",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.035156
+        },
+        {
+          "glyph": 614,
+          "unicode": 1084,
+          "character": "м",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.183594
+        },
+        {
+          "glyph": 615,
+          "unicode": 1085,
+          "character": "н",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.09375
+        },
+        {
+          "glyph": 616,
+          "unicode": 1086,
+          "character": "о",
+          "maximumBoundaryDistanceAt1000Units": 1.879099,
+          "advanceDifferenceAt1000Units": 0.0
+        },
+        {
+          "glyph": 617,
+          "unicode": 1087,
+          "character": "п",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.0
+        },
+        {
+          "glyph": 618,
+          "unicode": 1088,
+          "character": "р",
+          "maximumBoundaryDistanceAt1000Units": 3.902326,
+          "advanceDifferenceAt1000Units": 0.0
+        },
+        {
+          "glyph": 619,
+          "unicode": 1089,
+          "character": "с",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.152344
+        },
+        {
+          "glyph": 620,
+          "unicode": 1090,
+          "character": "т",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.167969
+        },
+        {
+          "glyph": 621,
+          "unicode": 1091,
+          "character": "у",
+          "maximumBoundaryDistanceAt1000Units": 2.956381,
+          "advanceDifferenceAt1000Units": 0.152344
+        },
+        {
+          "glyph": 623,
+          "unicode": 1093,
+          "character": "х",
+          "maximumBoundaryDistanceAt1000Units": 3.238939,
+          "advanceDifferenceAt1000Units": 0.152344
+        },
+        {
+          "glyph": 625,
+          "unicode": 1095,
+          "character": "ч",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.050781
+        },
+        {
+          "glyph": 626,
+          "unicode": 1096,
+          "character": "ш",
+          "maximumBoundaryDistanceAt1000Units": null,
+          "advanceDifferenceAt1000Units": 0.117188
+        },
+        {
+          "glyph": 629,
+          "unicode": 1099,
+          "character": "ы",
+          "maximumBoundaryDistanceAt1000Units": 3.716341,
+          "advanceDifferenceAt1000Units": 0.246094
+        },
+        {
+          "glyph": 630,
+          "unicode": 1100,
+          "character": "ь",
+          "maximumBoundaryDistanceAt1000Units": 3.716341,
+          "advanceDifferenceAt1000Units": 0.078125
+        },
+        {
+          "glyph": 631,
+          "unicode": 1101,
+          "character": "э",
+          "maximumBoundaryDistanceAt1000Units": 1.207016,
+          "advanceDifferenceAt1000Units": 0.082031
+        },
+        {
+          "glyph": 632,
+          "unicode": 1102,
+          "character": "ю",
+          "maximumBoundaryDistanceAt1000Units": 1.380792,
+          "advanceDifferenceAt1000Units": 0.078125
+        },
+        {
+          "glyph": 633,
+          "unicode": 1103,
+          "character": "я",
+          "maximumBoundaryDistanceAt1000Units": 1.618758,
+          "advanceDifferenceAt1000Units": 0.15625
+        }
+      ]
+    }
+  ],
+  "footerBlocks": {
+    "3": {
+      "text": "Lch 2 de 18 Page 2 of 18",
+      "bbox": [
+        56.59,
+        796.4625,
+        466.6535,
+        806.4825
+      ]
+    },
+    "4": {
+      "text": "Lch 3 de 18 Page 3 of 18",
+      "bbox": [
+        56.59,
+        796.4625,
+        466.6535,
+        806.4825
+      ]
+    },
+    "5": {
+      "text": "Lch 4 de 18 Page 4 of 18",
+      "bbox": [
+        56.59,
+        796.4625,
+        466.6535,
+        806.4825
+      ]
+    },
+    "6": {
+      "text": "Lch 5 de 18 Page 5 of 18",
+      "bbox": [
+        56.59,
+        796.4625,
+        466.6535,
+        806.4825
+      ]
+    },
+    "7": {
+      "text": "Lch 6 de 18 Page 6 of 18",
+      "bbox": [
+        56.59,
+        796.4625,
+        466.6535,
+        806.4825
+      ]
+    },
+    "8": {
+      "text": "Lch 7 de 18 Page 7 of 18",
+      "bbox": [
+        56.59,
+        796.4625,
+        466.6535,
+        806.4825
+      ]
+    },
+    "9": {
+      "text": "Lch 8 de 18 Page 8 of 18",
+      "bbox": [
+        83.89,
+        800.0024,
+        493.9535,
+        810.0225
+      ]
+    },
+    "10": {
+      "text": "Lch 9 de 18 Page 9 of 18",
+      "bbox": [
+        83.89,
+        800.0024,
+        493.9535,
+        810.0225
+      ]
+    },
+    "11": {
+      "text": "Lch 10 de 18 Page 10 of 18",
+      "bbox": [
+        83.89,
+        800.0024,
+        498.9283,
+        810.0225
+      ]
+    },
+    "12": {
+      "text": "Lch 11 de 18 Page 11 of 18",
+      "bbox": [
+        83.89,
+        800.0024,
+        498.9283,
+        810.0225
+      ]
+    },
+    "13": {
+      "text": "Lch 12 de 18 Page 12 of 18",
+      "bbox": [
+        83.89,
+        800.0024,
+        498.9283,
+        810.0225
+      ]
+    },
+    "14": {
+      "text": "Lch 13 de 18 Page 13 of 18",
+      "bbox": [
+        83.89,
+        800.0024,
+        498.9283,
+        810.0225
+      ]
+    },
+    "15": {
+      "text": "Lch 14 de 18 Page 14 of 18",
+      "bbox": [
+        83.89,
+        800.0024,
+        498.9283,
+        810.0225
+      ]
+    },
+    "16": {
+      "text": "Lch 15 de 18 Page 15 of 18",
+      "bbox": [
+        83.89,
+        800.0024,
+        498.9283,
+        810.0225
+      ]
+    },
+    "17": {
+      "text": "Lch 16 de 18 Page 16 of 18",
+      "bbox": [
+        83.89,
+        800.0024,
+        498.9283,
+        810.0225
+      ]
+    },
+    "18": {
+      "text": "Lch 17 de 18 Page 17 of 18",
+      "bbox": [
+        83.89,
+        800.0024,
+        498.9283,
+        810.0225
+      ]
+    },
+    "19": {
+      "text": "Lch 18 de 18 Page 18 of 18",
+      "bbox": [
+        83.89,
+        800.0024,
+        498.9283,
+        810.0225
+      ]
+    }
+  },
+  "boundaryComparisons": [
+    {
+      "page": 5,
+      "literal": "award 2 marks to all (there is no noun in the dative case)",
+      "presentInFull": true,
+      "presentInPriorClip": false
+    },
+    {
+      "page": 13,
+      "literal": "Include:",
+      "presentInFull": true,
+      "presentInPriorClip": true
+    }
+  ],
+  "manualSpanReview": {
+    "schemePages": [
+      5,
+      10
+    ],
+    "sourceText": "where reference is made to the language of the traditional folk/oral narrative but where there is no example/illustration",
+    "words": [
+      "языку",
+      "январе"
+    ],
+    "method": "Full original scheme pages visually reviewed; repeated glyphs have consistent mappings."
+  },
+  "comparisonImages": [
+    "scripts/markbank/authoring/reviews/glyphs/russian-2010-hl-fonts-1.png",
+    "scripts/markbank/authoring/reviews/glyphs/russian-2010-hl-fonts-2.png",
+    "scripts/markbank/authoring/reviews/glyphs/russian-2010-hl-fonts-3.png"
+  ]
+}

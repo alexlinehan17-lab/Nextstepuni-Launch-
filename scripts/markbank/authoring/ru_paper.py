@@ -112,7 +112,7 @@ OL_II = {'SA', 'EW'}
 # Page furniture the SEC prints on every page.
 FURNITURE = re.compile(
     r'^(?:Leaving Certificate\b|Scr[úu]d[úu] na hArdteistim|'
-    r'Russian\s*[–-]|R[úu]isis\s*[–-]|Page \d+$|\d{1,3}$|_+$|'
+    r'Russian\s*[–─,-]|R[úu]isis\s*[–─,-]|Page \d+$|\d{1,3}$|_+$|'
     r'Do not write|N[áa] scr[íi]obh)', re.I)
 
 # The listening booklet's own sections, in the English column.
@@ -506,8 +506,14 @@ class RuPaper:
         cur = {}
         cur_item = {}
         stop = False
+        with pymupdf.open(self.aural_path) as document:
+            non_exam_pages = {i for i, page in enumerate(document)
+                              if 'There is no examination material on this page.'
+                              in ' '.join(page.get_text().split())}
         for pno, groups in _rows(self.aural_path, marker=MARKER_START,
                                  fallback_split=split):
+            if pno in non_exam_pages:
+                continue
             if stop:
                 break
             for _x, side, text in _dewelded(groups):

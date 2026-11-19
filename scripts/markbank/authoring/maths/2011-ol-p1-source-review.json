@@ -1,0 +1,1586 @@
+{
+  "status": "complete; all 49 question and 49 solution presentations visually inspected; source, preservation, reconciliation, application, production and browser checks passed",
+  "reviewedAt": "2026-10-30",
+  "paperFileid": "LC003GLP000EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "generalNotesPages": [
+    4,
+    5
+  ],
+  "offeredMarks": 400,
+  "candidateMarks": 300,
+  "printedQuestionMarks": {
+    "Q1": 50,
+    "Q2": 50,
+    "Q3": 50,
+    "Q4": 50,
+    "Q5": 50,
+    "Q6": 50,
+    "Q7": 50,
+    "Q8": 50
+  },
+  "markingRules": [
+    "Mathematical errors/omissions lose 3; numerical slips and permitted misreadings lose 1.",
+    "Relevant work earns at least the specified attempt award; worthless work earns 0. No marks strictly between zero and the attempt floor.",
+    "Accept the best of multiple attempts unless specified otherwise; penalise the same error in one section once. Retain task-specific follow-through and caps.",
+    "Published step awards remain separate score controls within a linked task. Alternative methods do not create extra cards or add marks."
+  ],
+  "tasks": [
+    {
+      "suffix": "1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        6
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Total prize fund",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the total prize fund.",
+      "stem": "Aoife and Brian share a prize fund in the ratio 4 : 3. Aoife gets €56.",
+      "markingNote": "The original solution and notes cover both parts (a)(i) and (ii). Score only the selected five-mark task; apply relevant notes only."
+    },
+    {
+      "suffix": "1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        6
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Brian’s share",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "How much does Brian get?",
+      "stem": "Aoife and Brian share a prize fund in the ratio 4 : 3. Aoife gets €56.",
+      "markingNote": "The original solution and notes cover both parts (a)(i) and (ii). Score only the selected five-mark task; apply relevant notes only."
+    },
+    {
+      "suffix": "1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        7
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Euro cost",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the cost in euro.",
+      "stem": "A three-night hotel stay in England costs £231 sterling. €1 = £0.88 sterling."
+    },
+    {
+      "suffix": "1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        7,
+        8
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Previous euro cost",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "This cost is 5% more than a year ago. Find the cost a year ago in euro.",
+      "stem": "A three-night hotel stay in England costs £231 sterling. €1 = £0.88 sterling.",
+      "markingNote": "Accept earlier cost if not oversimplified. The retained note from (b)(i) caps this task at attempt marks when the candidate inverted the currency conversion as 0.88/231."
+    },
+    {
+      "suffix": "1-c-i",
+      "printedParts": [
+        "Q1(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        9
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Percentage error",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Calculate the percentage error, correct to one decimal place.",
+      "stem": "A faulty car speedometer reads 60 km/h when the actual speed is 57 km/h."
+    },
+    {
+      "suffix": "1-c-ii",
+      "printedParts": [
+        "Q1(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        10
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Actual speed",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "If the percentage error is the same at all speeds, find the actual speed when the speedometer reads 110 km/h. Give your answer to one decimal place.",
+      "stem": "A faulty car speedometer reads 60 km/h when the actual speed is 57 km/h."
+    },
+    {
+      "suffix": "1-c-iii",
+      "printedParts": [
+        "Q1(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        11
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Actual journey time",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "The driver expects a journey at an indicated average 80 km/h to take four hours. How long will it actually take, to the nearest minute?",
+      "stem": "A faulty car speedometer reads 60 km/h when the actual speed is 57 km/h. The percentage error is the same at all speeds."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        12
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Substitution for a",
+              "maximum": 10,
+              "attempt": 3
+            },
+            {
+              "id": "step-2",
+              "label": "Solving for x",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Given 3a(x + 5) = 114, find x when a = 4."
+    },
+    {
+      "suffix": "2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        13
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution set A",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find A, the solution set of 3x − 5 < 7, for integer x.",
+      "markingNote": "No back marking and no multiple attempt awards for the same work."
+    },
+    {
+      "suffix": "2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        13
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution set B",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find B, the solution set of (−2 − 3x)/4 ≤ 1, for integer x.",
+      "markingNote": "The original note refers back to the treatment of incorrect inequalities in (b)(i); that block is retained for reference. The maximum for this task remains five marks, attempt two. No back marking or duplicate attempt awards."
+    },
+    {
+      "suffix": "2-b-iii",
+      "printedParts": [
+        "Q2(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        14
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Intersection",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "List the elements of A ∩ B.",
+      "stem": "A is the integer solution set of 3x − 5 < 7; B is the integer solution set of (−2 − 3x)/4 ≤ 1.",
+      "markingNote": "If both earlier parts earned zero, at most two attempt marks here. Otherwise follow through the candidate’s inequalities consistently."
+    },
+    {
+      "suffix": "2-c-i",
+      "printedParts": [
+        "Q2(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        15
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Value of d",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Given f(0) = 6, find d.",
+      "stem": "f(x) = x³ − 2x² + cx + d."
+    },
+    {
+      "suffix": "2-c-ii",
+      "printedParts": [
+        "Q2(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        15
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Value of c",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Given f(0) = 6 and f(3) = 0, find c.",
+      "stem": "f(x) = x³ − 2x² + cx + d."
+    },
+    {
+      "suffix": "2-c-iii",
+      "printedParts": [
+        "Q2(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        16
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "All roots",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Hence solve f(x) = 0.",
+      "stem": "f(x) = x³ − 2x² + cx + d. f(0) = 6 and f(3) = 0.",
+      "markingNote": "Accept earlier coefficients, but solve that equation. Roots found by inspection, calculator or trial and error must be fully verified; otherwise at most two attempt marks."
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        17
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Expansion and simplification",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "Multiply (3x − 1)(2x² + 5x − 4) and simplify."
+    },
+    {
+      "suffix": "3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        18
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Usable equation form",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "First variable",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-3",
+              "label": "Second variable",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Solve for x and y.",
+      "stem": "2x = 13 + 3y and x/2 = (2 − y)/5.",
+      "markingNote": "Trial-and-error answers verified in one equation earn one attempt award (2); verified in both earn three attempt awards (6). Fully correct graphical solutions earn at most six marks."
+    },
+    {
+      "suffix": "3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        19
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Value of expression",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Hence find 4(x − y²).",
+      "stem": "2x = 13 + 3y and x/2 = (2 − y)/5.",
+      "markingNote": "Accept candidate’s earlier answers even if both positive or only attempt marks. Invented values with no earlier values are worthless here."
+    },
+    {
+      "suffix": "3-c-i",
+      "printedParts": [
+        "Q3(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        20
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Form quadratic equation",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Solve quadratic equation",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Solve the equation for x.",
+      "stem": "(x − 1)/x + x/(x + 1) = 1/2, where x ≠ 0 and x ≠ −1."
+    },
+    {
+      "suffix": "3-c-ii",
+      "printedParts": [
+        "Q3(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        21
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Verification",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Verify one of your solutions in the original equation.",
+      "stem": "(x − 1)/x + x/(x + 1) = 1/2, where x ≠ 0 and x ≠ −1. First solve the equation.",
+      "markingNote": "Verify one of the roots obtained in (c)(i). Both original examples remain visible. If the earlier equation was linear, at most two attempt marks here; invented values are worthless."
+    },
+    {
+      "suffix": "4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        22
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Argand plot",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Plot u on an Argand diagram.",
+      "stem": "u = 1 + 2i, where i² = −1.",
+      "markingNote": "Shared diagram and notes cover both plots; score only the selected task. Constructing the grid alone earns attempt three once only across part (a)."
+    },
+    {
+      "suffix": "4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        22
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Argand plot",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Plot u − 3 on an Argand diagram.",
+      "stem": "u = 1 + 2i, where i² = −1.",
+      "markingNote": "Shared diagram and notes cover both plots; score only the selected task. Constructing the grid alone earns attempt three once only across part (a)."
+    },
+    {
+      "suffix": "4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        23
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Complex square",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find z² in the form x + yi, where x and y are real.",
+      "stem": "z = 2 + 3i."
+    },
+    {
+      "suffix": "4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        23
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Complex identity",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Show z² = 4z − 13.",
+      "stem": "z = 2 + 3i."
+    },
+    {
+      "suffix": "4-b-iii",
+      "printedParts": [
+        "Q4(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        24
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Conjugate identity",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that (conjugate z)² + 13 = 4(conjugate z).",
+      "stem": "z = 2 + 3i."
+    },
+    {
+      "suffix": "4-c-i",
+      "printedParts": [
+        "Q4(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        24
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Complex quotient",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Express (4 + 2i)/(3 − i) in the form x + yi, where x and y are real."
+    },
+    {
+      "suffix": "4-c-ii",
+      "printedParts": [
+        "Q4(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        25
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Substitute modulus",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Solve for k and t",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Hence, or otherwise, find real k and t such that |(4 + 2i)/(3 − i)|(k + 5i) = (7 + (t − 1)i)/√2.",
+      "markingNote": "Accept the candidate’s modulus from (c)(i). Both parameters belong to the second five-mark step."
+    },
+    {
+      "suffix": "5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        26
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "First four terms",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "The first term of a geometric sequence is 5 and the common ratio is 2. Find its first four terms."
+    },
+    {
+      "suffix": "5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        27
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Common difference",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find d, the common difference.",
+      "stem": "The first three terms of an arithmetic series are 7 + 4 + 1 + … .",
+      "markingNote": "Follow through the candidate’s earlier difference/term as specified in the original notes. No retrospective marking."
+    },
+    {
+      "suffix": "5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        27
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Fifteenth term",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find T₁₅, the fifteenth term.",
+      "stem": "The first three terms of an arithmetic series are 7 + 4 + 1 + … .",
+      "markingNote": "Follow through the candidate’s earlier difference/term as specified in the original notes. No retrospective marking."
+    },
+    {
+      "suffix": "5-b-iii",
+      "printedParts": [
+        "Q5(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        28
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Sum of fifteen terms",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find S₁₅, the sum of the first fifteen terms.",
+      "stem": "The first three terms of an arithmetic series are 7 + 4 + 1 + … .",
+      "markingNote": "Follow through the candidate’s earlier difference/term as specified in the original notes. No retrospective marking."
+    },
+    {
+      "suffix": "5-c-i",
+      "printedParts": [
+        "Q5(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        29
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Value of h",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the value of h.",
+      "stem": "The first three terms of a geometric sequence are h − 1, 2h and 5h + 3, where h is real and greater than 1.",
+      "markingNote": "Treating the sequence as arithmetic caps each part at three attempt marks. A trial-and-error value h = 3 must be justified using the equal ratios for full marks."
+    },
+    {
+      "suffix": "5-c-ii",
+      "printedParts": [
+        "Q5(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        29
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Term index k",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "The kth term is 486. Find k.",
+      "stem": "The first three terms of a geometric sequence are h − 1, 2h and 5h + 3, where h is real and greater than 1.",
+      "markingNote": "Follow through the candidate’s h, but using h = −1 earns at most three attempt marks. Treating the sequence as arithmetic also caps the task at three."
+    },
+    {
+      "suffix": "6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        30
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Period and range",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Write down the period and range of f.",
+      "stem": "f is the periodic function defined for all real x by the original graph."
+    },
+    {
+      "suffix": "6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        31
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Value of f(71)",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find f(71).",
+      "stem": "f is the periodic function defined for all real x by the original graph."
+    },
+    {
+      "suffix": "6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        32
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative and simplification",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Differentiate (4x − 1)(3 − 2x²) and simplify.",
+      "markingNote": "The ten-mark allocation includes seven for differentiation and three for simplification. No product rule, or an oversimplified expansion with fewer than three terms, earns at most attempt three."
+    },
+    {
+      "suffix": "6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        33
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative inequality",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Given y = 1/(x² − 3x), find the range of x for which dy/dx < 0.",
+      "markingNote": "Seven marks for differentiation and three for solving the inequality, with an overall attempt floor of three."
+    },
+    {
+      "suffix": "6-c-i",
+      "printedParts": [
+        "Q6(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        34
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Differentiation",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Tangent equation",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the tangent to y = f(x) at P(1, 3).",
+      "stem": "f(x) = 2x + 1/x, for real x ≠ 0.",
+      "markingNote": "The original scheme caps a derivative simplified to a constant as shown at two attempt marks for each step (four total)."
+    },
+    {
+      "suffix": "6-c-ii",
+      "printedParts": [
+        "Q6(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        34
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Other point Q",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Q is another point on y = f(x) whose tangent is parallel to the tangent at P(1, 3). Find Q.",
+      "stem": "f(x) = 2x + 1/x, for real x ≠ 0."
+    },
+    {
+      "suffix": "7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "Differentiate x³ − 7x² + 6x."
+    },
+    {
+      "suffix": "7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative in specified form",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Differentiate (3x + 1)/(x − 2), writing the answer as k/(x − 2)ⁿ, where k and n are integers."
+    },
+    {
+      "suffix": "7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative at x = −2",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Given y = (x² − 2x − 9)⁴, find dy/dx when x = −2."
+    },
+    {
+      "suffix": "7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Speed after three seconds",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the speed after three seconds.",
+      "stem": "A ball rolls in a straight line. Its distance s metres is s = 18t − 2t², where t is seconds from the start."
+    },
+    {
+      "suffix": "7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        38,
+        39
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Stopping distance",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "How far is the ball from its starting point when it stops moving?",
+      "stem": "A ball rolls in a straight line. Its distance s metres is s = 18t − 2t², where t is seconds from the start."
+    },
+    {
+      "suffix": "7-c-iii",
+      "printedParts": [
+        "Q7(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        38,
+        39
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Constant deceleration proof",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that the ball’s speed decreases at a constant rate while it is moving.",
+      "stem": "A ball rolls in a straight line. Its distance s metres is s = 18t − 2t², where t is seconds from the start.",
+      "markingNote": "If the candidate’s second derivative is not a negative constant and no explanation is given, apply the specified one-mark slip. A first derivative alone earns zero."
+    },
+    {
+      "suffix": "8-i",
+      "printedParts": [
+        "Q8(i)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        40
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Completed table",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "Copy and complete the original table of f(x).",
+      "stem": "f(x) = 1/(x + 2), where x is real and x ≠ −2.",
+      "markingNote": "All five missing entries are required in one fifteen-mark task. No separate cell tariff is published. When no work is shown, each missing or incorrect value loses three marks, subject to the published attempt rule."
+    },
+    {
+      "suffix": "8-ii",
+      "printedParts": [
+        "Q8(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        41,
+        42
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Completed curve",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Copy and complete the original graph from x = −5 to x = 1.",
+      "stem": "f(x) = 1/(x + 2), where x is real and x ≠ −2.",
+      "markingNote": "The original solution diagram also includes g from part (iii); score only f here. Follow through table values unless oversimplified. If part (i) earned zero, at most attempt three, unless the work is independently redone as the source allows."
+    },
+    {
+      "suffix": "8-iii",
+      "printedParts": [
+        "Q8(iii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        41,
+        42
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Line graph",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "On the same diagram, draw g(x) = x + 2 for −5 ≤ x ≤ 1.",
+      "stem": "f(x) = 1/(x + 2), where x is real and x ≠ −2. Complete f’s original graph from x = −5 to x = 1.",
+      "markingNote": "The shared original solution diagram includes both curves. Score only g here; two correct points and the correct line earn ten marks."
+    },
+    {
+      "suffix": "8-iv",
+      "printedParts": [
+        "Q8(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        43
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Graphical inequality",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use your graphs to estimate the range of x for which f(x) ≤ g(x).",
+      "stem": "f(x) = 1/(x + 2), where x is real and x ≠ −2. g(x) = x + 2, drawn for −5 ≤ x ≤ 1; complete the original graph of f on that same interval."
+    },
+    {
+      "suffix": "8-v",
+      "printedParts": [
+        "Q8(v)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        44
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "No-turning-points proof",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Prove that y = f(x) has no turning points.",
+      "stem": "f(x) = 1/(x + 2), where x is real and x ≠ −2.",
+      "markingNote": "Seven marks for the derivative and three for the conclusion. The derivative is negative on each interval of its domain; x = −2 is excluded."
+    }
+  ],
+  "paperSha256": "18584915e15074062f0a225445ff9eaf69dba4f59de153132d9b139a573a73a3",
+  "schemeSha256": "0550df820b59db17845b1b21c0e7700ee8d435d76d18fef4cb916dcd07137b56",
+  "selectionReview": [
+    "Attempt SIX QUESTIONS is whole-examination selection. Retain every task in all eight questions, without duplicating six-question bundles.",
+    "Q3(c)(ii) asks to verify one of the student’s own derived roots. No printed pool of answer options is offered. Keep one verification task, with both published verification examples and the prior-equation cap.",
+    "Q4(c)(ii) Hence, or otherwise permits an alternative method; both real parameters are required.",
+    "All requested table entries, sequence terms, roots, graph features and proofs are required, not optional selection pools."
+  ],
+  "taskBoundaryReview": [
+    "Independent visual sweep identifies 49 printed tasks, eight questions worth 50 marks each, 400 offered marks and 300 candidate marks.",
+    "Q2(a), Q3(b)(i), Q3(c)(i), Q4(c)(ii), and Q6(c)(i) retain separately awarded steps inside their linked printed tasks.",
+    "Q6(a)(i) period and range share one ten-mark award. Q8(i) is one fifteen-mark table-completion task; no separately published cell awards.",
+    "The LC003GLP000EV.pdf paper filename is misleading: the original cover explicitly identifies 2011 M27 Ordinary Level Paper 1. The scheme with the same filename is a separate 104-page document, whose Paper 1 is pages 1–44."
+  ],
+  "censusReview": {
+    "covered": 49,
+    "open": 0,
+    "orphans": 0,
+    "notes": [
+      "The wrapped 4 : 3 ratio in Q1(a) is not Question 3. Paper parser now retains all Q1–Q3 tasks; regression also preserves the wrapped ratio before 2017 HL Paper 2 Q3(a).",
+      "The two short-leaf flags at Q4(a)(i,ii) are the printed operands u and u − 3. Both cards include the shared Argand-plot instruction and original typesetting.",
+      "Component 000 is retained in the original source filename; it is explicitly Paper 1 on the cover."
+    ]
+  }
+}

@@ -1,0 +1,1262 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2024,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003ALP100EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "6180e1eacc53dc6270605ccf1f15fd29f6d51ffc3896c66af5287acd2e4c513f",
+  "schemeSha256": "4f0b93a5830b420ab1773579f411f044d8a068791ae911864a5b01a45b1fdd97",
+  "reviewedAt": "2026-10-11",
+  "reviewMethod": "Independent visual reading of all 32 question-paper pages and PDF pages 1–29 of the combined Higher Level scheme (cover, notes, the Paper 1 scale table on page 4, annotation palette, every Paper 1 model solution and marking note, and the Paper 2 title page). Each task boundary is the published scale, not a parser count.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    4,
+    5
+  ],
+  "sourceNotes": [
+    "Candidates answer any five of Q1–6 (30 marks each) and any three of Q7–10 (50 marks each): 380 offered marks, 300 candidate marks. Every question is retained.",
+    "41 independently marked units. Shared scales keep their parts together: Q2(c)(i)–(ii) 15D, Q5(c)(i)–(ii) 20D, Q7(b)(i)–(ii) 15D, Q8(a)(i)–(ii) 10D and Q9(b)(i)–(ii) 10D.",
+    "Paper 1 bands from scheme page 4: 5A 0,5; 5B 0,2,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10B 0,4,10; 10C 0,4,6,10; 10D 0,3,5,7,10; 15C 0,6,8,15; 15D 0,4,6,8,15; 20D 0,8,11,13,20.",
+    "The 2024 scheme prints no general notes on slips; Full Credit −1 is applied only where a marking note names it, as printed beside each scale. Pages 4–5 (scale table and annotation palette) are attached as general notes.",
+    "Before this review the deck held 39 of the 41 units. Q8(a)(i)–(ii) had no card and is added. Q9(b)(i)–(ii) was authored but refused by the provenance gate because its third credit band is welded to the model solution in the scheme text layer; it is restored with marking points quoted where the text layer matches the printed scheme. All 39 existing card IDs, rows and figures are kept; prompts are restored from the paper and topics corrected as metadata.",
+    "The question booklet is LC003ALP100EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 2. All page references are PDF positions. The paper prints “infomation” in Q3(c); the prompt keeps the printed spelling."
+  ],
+  "cards": [
+    {
+      "id": "maths-2024-hl-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        6
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "questionText": "Solve the following equation for n ∈ ℕ: n − 3 = √(3n + 1)"
+    },
+    {
+      "id": "maths-2024-hl-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        6
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "Write the following expression as a single fraction in terms of t: 4/(2t + 1) − 7/(12t)"
+    },
+    {
+      "id": "maths-2024-hl-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-simultaneous-equations"
+      ],
+      "questionText": "Solve the following simultaneous equations for x, y, w ∈ ℤ: x + 2y = 143; y + 3w = −74; 4x + 5w = 4"
+    },
+    {
+      "id": "maths-2024-hl-p1-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "In this question, i² = −1.",
+      "questionText": "Find the two solutions of the following equation in z, where z is a complex number. Give each answer in the form a + bi, where a, b ∈ ℝ. z² + 12z + 261 = 0"
+    },
+    {
+      "id": "maths-2024-hl-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1.",
+      "questionText": "Use de Moivre’s theorem to write (1 − √3 i)⁹ in the form a + bi, where a, b ∈ ℝ."
+    },
+    {
+      "id": "maths-2024-hl-p1-q2-c-i",
+      "printedParts": [
+        "Q2(c)(i)",
+        "Q2(c)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1. The point w = −2 + 2i is shown in the Argand diagram below.",
+      "questionText": "(i) Plot and label the complex number u = 4(cos π/6 + i sin π/6) on the diagram, as accurately as possible. (ii) The complex number o is 0 + 0i. Find the size of the angle ∠wou. Give your answer in radians."
+    },
+    {
+      "id": "maths-2024-hl-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "questionText": "Find the integral: ∫ cos 6x dx"
+    },
+    {
+      "id": "maths-2024-hl-p1-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The function f is defined for x ∈ ℝ as: f(x) = 2x³ − 9x² + 5x − 11",
+      "questionText": "Find the equation of the tangent to the graph of f at the point where x = 2. You do not need to simplify your answer."
+    },
+    {
+      "id": "maths-2024-hl-p1-q3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The function f is defined for x ∈ ℝ as: f(x) = 2x³ − 9x² + 5x − 11",
+      "questionText": "Find the x co-ordinate of the point of inflection of f."
+    },
+    {
+      "id": "maths-2024-hl-p1-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "questionText": "The diagram below shows the curve y = p(x) and the line y = l(x), for 0 ≤ x ≤ 10, x ∈ ℝ. There are two values of x in the domain 0 ≤ x ≤ 10 for which: p′(x) = l′(x), where p′(x) is the derivative of p(x). Use the infomation in the diagram to estimate these two values of x, as accurately as you can. Show your work on the diagram."
+    },
+    {
+      "id": "maths-2024-hl-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "questionText": "Differentiate the following function from first principles, with respect to x: f(x) = x² − 7x − 10"
+    },
+    {
+      "id": "maths-2024-hl-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "questionText": "The function g(x) is defined for x ∈ ℝ by: g(x) = (6x + 1)/(x⁴ + 3). Find the value of g′(−2), the derivative of g(x) when x = −2."
+    },
+    {
+      "id": "maths-2024-hl-p1-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-differentiation-applications"
+      ],
+      "questionText": "h: ℝ → ℝ is a continuous function. The graph of h(x) has a local minimum at the point (0, 5). State whether the following statement is true or false: “The value of h(x) must be at least 5 for all real values of x.” Justify your answer."
+    },
+    {
+      "id": "maths-2024-hl-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "questionText": "The first three terms of an arithmetic sequence are as follows, where p ∈ ℝ: T₁ = 2p + 1; T₂ = 5p − 3; T₃ = 6p + 7. Find the value of p."
+    },
+    {
+      "id": "maths-2024-hl-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "questionText": "G₇ = 6 and G₁₁ = 3/8 are the 7th and 11th terms of a geometric sequence, respectively. Find the two possible values of r, the common ratio of this sequence, where r ∈ ℝ."
+    },
+    {
+      "id": "maths-2024-hl-p1-q5-c-i",
+      "printedParts": [
+        "Q5(c)(i)",
+        "Q5(c)(ii)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        8,
+        11,
+        13,
+        20
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules",
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "A sequence of functions F₀, F₁, F₂, … is defined as follows, for x ∈ ℝ, x > 0: F₀ = x²⁰²⁴; for n ≥ 1, the function Fₙ is the derivative of Fₙ₋₁ with respect to x.",
+      "questionText": "(i) Write F₁ and F₂ in terms of x. (ii) Find the first value of n for which Fₙ = 0."
+    },
+    {
+      "id": "maths-2024-hl-p1-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "h(x) = x² + bx − 12, where x ∈ ℝ and b is a constant. Find the value of b for which x − 4 is a factor of h(x)."
+    },
+    {
+      "id": "maths-2024-hl-p1-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Two functions, f(x) and g(x), are defined as follows, for x ∈ ℝ, x > 0: f(x) = e^(9x); g(x) = ln √x. Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii).",
+      "questionText": "Find the value of f(1·2). Give your answer in the form a × 10ⁿ, where a ∈ ℝ, 1 ≤ a < 10, n ∈ ℕ, and a is correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2024-hl-p1-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Two functions, f(x) and g(x), are defined as follows, for x ∈ ℝ, x > 0: f(x) = e^(9x); g(x) = ln √x. Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii).",
+      "questionText": "Find the value of x for which g(x) = 3·5. Give your answer in the form e^p, where p ∈ ℝ."
+    },
+    {
+      "id": "maths-2024-hl-p1-q6-b-iii",
+      "printedParts": [
+        "Q6(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Two functions, f(x) and g(x), are defined as follows, for x ∈ ℝ, x > 0: f(x) = e^(9x); g(x) = ln √x. Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii).",
+      "questionText": "Write the function g(f(x)) in terms of x, in its simplest form."
+    },
+    {
+      "id": "maths-2024-hl-p1-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "questionText": "Fiadh has a gross annual salary of €54 000. She pays income tax at a rate of 20% on the first €40 000 of her salary and at a rate of 40% on the remainder. She has an annual tax credit of €1775. Work out her net annual pay, assuming that there are no other deductions."
+    },
+    {
+      "id": "maths-2024-hl-p1-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)",
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "stem": "Fiadh and her partner take out a 25-year mortgage with a monthly interest rate of 0·279%. They make equal monthly repayments of €1647·75 at the end of each month. They make the first repayment exactly one month after they take out the mortgage.",
+      "questionText": "(i) Write down the present value of each of their first three monthly repayments, at the time when they take out the mortgage. Give each value as a fraction. Do not multiply out any powers. (ii) Work out the amount of money that Fiadh and her partner borrowed for their mortgage. Give your answer correct to the nearest euro."
+    },
+    {
+      "id": "maths-2024-hl-p1-q7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t ∈ ℝ, t ≥ 0: F(t) = 5000e^(0·04t). Use this expression to answer parts (c)(i), (c)(ii), and (c)(iii).",
+      "questionText": "Use differentiation to find the rate at which the amount of money in the account is increasing after 3·5 years. Give your answer correct to the nearest euro per year."
+    },
+    {
+      "id": "maths-2024-hl-p1-q7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        17,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t ∈ ℝ, t ≥ 0: F(t) = 5000e^(0·04t). Use this expression to answer parts (c)(i), (c)(ii), and (c)(iii).",
+      "questionText": "Use integration to find the average amount of money in the account over the first 5 years. Give your answer correct to the nearest euro."
+    },
+    {
+      "id": "maths-2024-hl-p1-q7-c-iii",
+      "printedParts": [
+        "Q7(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        17,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t ∈ ℝ, t ≥ 0: F(t) = 5000e^(0·04t). Use this expression to answer parts (c)(i), (c)(ii), and (c)(iii).",
+      "questionText": "Work out the annual rate of interest (AER) for this account. That is, find the percentage increase in the amount of money in the account over the course of one year. Give your answer as a percentage, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2024-hl-p1-q8-a-i-ii",
+      "printedParts": [
+        "Q8(a)(i)",
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "A clothing company sells t-shirts. The daily sales of t-shirts over a 360-day period can be modelled using the following function, T(x), where 0 ≤ x ≤ 360, x ∈ ℝ: T(x) = ((x − 240)/60)³ + 70",
+      "questionText": "(i) Fill in the table below, showing the value of T(x) for each of the given values of x. Give each value correct to the nearest whole number. Two values have already been filled in: T(60) = 43 and T(360) = 78; the values for x = 0, 120, 180, 240 and 300 are blank. (ii) Draw the graph of y = T(x) on the axes below, for 0 ≤ x ≤ 360, x ∈ ℝ."
+    },
+    {
+      "id": "maths-2024-hl-p1-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities",
+        "mathematics-higher-functions"
+      ],
+      "stem": "The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians.",
+      "questionText": "Work out the maximum and minimum daily sales of scarves, according to S(t). You do not need to use differentiation."
+    },
+    {
+      "id": "maths-2024-hl-p1-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations",
+        "mathematics-higher-functions"
+      ],
+      "stem": "The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. A different function, C(t), can also be used to model the daily sales of scarves, where: C(t) = S(t) − 2·4 + 0·03t. Again, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians.",
+      "questionText": "Find the value of t for which S(t) and C(t) give the same number of daily sales."
+    },
+    {
+      "id": "maths-2024-hl-p1-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. A different function, C(t), can also be used to model the daily sales of scarves, where: C(t) = S(t) − 2·4 + 0·03t. Again, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians.",
+      "questionText": "The graphs, J, K, and L, of three functions are shown below (not to scale). One of these graphs shows the function C(t) over a number of years, where C(t) = S(t) − 2·4 + 0·03t. Write down which graph this is. Justify your answer."
+    },
+    {
+      "id": "maths-2024-hl-p1-q8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. A different function, C(t), can also be used to model the daily sales of scarves, where: C(t) = S(t) − 2·4 + 0·03t. Again, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians.",
+      "questionText": "The derivative of C(t) is given by C′(t) = 0·03 − (38π/365) sin(2πt/365). Find the value of t that gives the first local maximum of C, that is, the first time that C′(t) = 0. Give your answer correct to the nearest day."
+    },
+    {
+      "id": "maths-2024-hl-p1-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: C = (πk²/3)(3R − k). Here, C is the volume of the cap and k is the height of the cap, with 0 < k ≤ R.",
+      "questionText": "Find the value of C, the volume of the cap, when R = 13 and k = 4. Give your answer in terms of π."
+    },
+    {
+      "id": "maths-2024-hl-p1-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)",
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: C = (πk²/3)(3R − k). Here, C is the volume of the cap and k is the height of the cap, with 0 < k ≤ R. A different sphere has a radius of 8 units and a cap with a height of y units, with 0 < y ≤ 8. The volume of this cap is (36πy) units³.",
+      "questionText": "(i) Use this, and the expression for C above, to show that: (y/3)(24 − y) = 36. (ii) Multiply out and solve the equation (y/3)(24 − y) = 36 to find the height of this cap."
+    },
+    {
+      "id": "maths-2024-hl-p1-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A hemisphere has a diameter of x cm. V(x), the volume of this hemisphere in cm³, is given by: V(x) = (π/12)x³.",
+      "questionText": "Find the value of x when the volume of the hemisphere is 3 litres. Give your answer correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2024-hl-p1-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        23,
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "A hemisphere has a diameter of x cm. V(x), the volume of this hemisphere in cm³, is given by: V(x) = (π/12)x³.",
+      "questionText": "The volume of the hemisphere is increasing at a constant rate of 450 cm³ per second. Find the rate at which the diameter (x) of the hemisphere is increasing with respect to time, when x = 20 cm. Give your answer in cm per second, correct to 1 decimal place. Remember that the volume of the hemisphere is V(x) = (π/12)x³."
+    },
+    {
+      "id": "maths-2024-hl-p1-q9-e",
+      "printedParts": [
+        "Q9(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "A cone has a radius of r cm and a height of h cm. The curved surface area of the cone, S, can be written as: S = πr√(r² + h²). Rearrange this to write h in terms of S, r, and π. Give your answer in the form √(S² − arⁿ)/(br), where a, b, and n are constants."
+    },
+    {
+      "id": "maths-2024-hl-p1-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "A company grows and sells plants. The function W(x) is defined below. It can be used to model the height, in mm, of a water spinach plant, for the first 35 days after it starts to grow. W(x) = 0·667x + 1·5x² − 0·025x³. Here, x is the number of days after the plant starts to grow, where 0 ≤ x ≤ 35, x ∈ ℝ.",
+      "questionText": "Use W(x) to estimate the height of a water spinach plant after 15 days. Give your answer correct to the nearest mm."
+    },
+    {
+      "id": "maths-2024-hl-p1-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "stem": "A company grows and sells plants. The function W(x) is defined below. It can be used to model the height, in mm, of a water spinach plant, for the first 35 days after it starts to grow. W(x) = 0·667x + 1·5x² − 0·025x³. Here, x is the number of days after the plant starts to grow, where 0 ≤ x ≤ 35, x ∈ ℝ.",
+      "questionText": "Write down W′(x), the derivative of W(x)."
+    },
+    {
+      "id": "maths-2024-hl-p1-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-inequalities",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "A company grows and sells plants.",
+      "questionText": "The height of a different plant can be modelled by the function P(x), where x is again the number of days after the plant starts to grow. The derivative of this function is: P′(x) = 1·1 + 2·73x − 0·078x². Find the range of values of x for which P′(x) > 24. In your answer, give each value correct to the nearest whole number."
+    },
+    {
+      "id": "maths-2024-hl-p1-q10-c-i",
+      "printedParts": [
+        "Q10(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "A company grows and sells plants. The logo for the company is shown on the co-ordinate diagram below. The logo is the region enclosed by three curves, defined by the following functions c, s, and k: c(x) = x², for −1 ≤ x ≤ 1, x ∈ ℝ; s(x) = 2x − x², for 0 ≤ x ≤ 1, x ∈ ℝ; k(x) is the image of s(x) under axial symmetry in the y-axis.",
+      "questionText": "Use integration to work out the area of the logo. Hint: find the area of the logo in the first quadrant, and then double it."
+    },
+    {
+      "id": "maths-2024-hl-p1-q10-c-ii",
+      "printedParts": [
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "A company grows and sells plants. The logo for the company is shown on the co-ordinate diagram below. The logo is the region enclosed by three curves, defined by the following functions c, s, and k: c(x) = x², for −1 ≤ x ≤ 1, x ∈ ℝ; s(x) = 2x − x², for 0 ≤ x ≤ 1, x ∈ ℝ; k(x) is the image of s(x) under axial symmetry in the y-axis.",
+      "questionText": "The function k can be written in the form k(x) = −x² + bx + c, where b, c ∈ ℝ are constants. Find the value of b and the value of c. Remember that k is the image of s under axial symmetry in the y-axis."
+    },
+    {
+      "id": "maths-2024-hl-p1-q10-d",
+      "printedParts": [
+        "Q10(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "stem": "A company grows and sells plants.",
+      "questionText": "In this part, p and r are constants, with p, r ∈ ℝ and 0 < r < 0·9p. The company sells bags of plant food. The usual price of one bag is €p. In a sale, the customer can choose to pay using either Option 1 or Option 2, as follows: Option 1: the usual price reduced by 10%, and then reduced by a further €r; Option 2: the usual price reduced by €r, and then this new price reduced by 10%. Which option (1 or 2), if either, is cheaper? Write the price for each option (1 and 2) in terms of p and r, to support your answer. Tick one box only: Option 1; Option 2; It depends on the value of p and of r."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained."
+    },
+    {
+      "pages": [
+        21
+      ],
+      "wording": "One of these graphs shows the function C(t)",
+      "classification": "answer-selection",
+      "reason": "Graphs J, K and L are answer options for one required identification with justification, not alternative prompts."
+    },
+    {
+      "pages": [
+        29
+      ],
+      "wording": "either Option 1 or Option 2 / Tick one box only",
+      "classification": "answer-selection",
+      "reason": "The two pricing options are the objects compared; the ticked box is the answer to one required task."
+    }
+  ],
+  "selectionDecisions": {
+    "3:8e58f60456ec7ed4": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:991950edb18a685a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:b62b6133e61fdb2b": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "16:f8bc1feb56e98eb8": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "21:1278981ffcd6c965": {
+      "classification": "answer-selection",
+      "reason": "Exactly one of the printed graphs J, K, L shows C(t); identifying it with justification is one required task."
+    },
+    "29:e5f242287ae169c7": {
+      "classification": "answer-selection",
+      "reason": "The customer’s two pricing options are compared in one required task (tick Option 1, Option 2 or “it depends”); not a choice of practice prompts."
+    },
+    "29:25a248d8b6a2122e": {
+      "classification": "answer-selection",
+      "reason": "The customer’s two pricing options are compared in one required task (tick Option 1, Option 2 or “it depends”); not a choice of practice prompts."
+    },
+    "29:ffb430c68cc5b14a": {
+      "classification": "answer-selection",
+      "reason": "The customer’s two pricing options are compared in one required task (tick Option 1, Option 2 or “it depends”); not a choice of practice prompts."
+    }
+  }
+}

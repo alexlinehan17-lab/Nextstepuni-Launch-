@@ -1,0 +1,2238 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2010,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP200EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "6e18df8f849496174453b0f1717354a8e459895627c08849311e70cb62979f85",
+  "schemeSha256": "84f3dd87a2646101fe9e8501a2ff6cb66398de011f571c60743cc5238414b0f9",
+  "reviewedAt": "2026-10-30",
+  "reviewMethod": "Independent visual inspection of all eight original paper pages and scheme pages 39–82, including every optional question, published allocation, restricted award, original diagram and alternative method. All 57 question and 57 complete solution presentations inspected.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "schemePagesInspected": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82
+  ],
+  "printedQuestionMarks": {
+    "1": 50,
+    "2": 50,
+    "3": 50,
+    "4": 50,
+    "5": 50,
+    "6": 50,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50,
+    "11": 50
+  },
+  "fullCreditMinusOne": false,
+  "generalNotesPages": [
+    41
+  ],
+  "sourceNotes": [
+    "Whole-examination choice of five Section A questions and one Section B question does not remove any of the eleven offered questions from practice. All are retained.",
+    "Q7(b): one novel, one play and one poem are random scenario outcomes, not a finite candidate answer menu. Each requested probability is one task.",
+    "Q9(b): one correct answer out of four defines the probability model, not a candidate selection pool. Four, five or six correct in part (iii) is the union of three required events.",
+    "Q11(c)(i): transformation to/from the unit circle or another method are alternative proof methods for the same marked task.",
+    "Q10(b)(v) asks the candidate to construct an isomorphism. No finite pool of candidate maps is printed; the six listed permutations define the group. Retain one construction task, with complete alternative proofs.",
+    "Both roots, both intercepts, all required angles, all order-two subgroups, and the complete order-three subgroup are required responses, not optional routes. Password strings are illustrative examples. No finite printed choose pool requires expansion.",
+    "Mathematical errors or omissions: −3. Numerical slips: −1. Misreadings: −1 provided the task is not oversimplified.",
+    "A correct relevant step earns its attempt mark; deductions cannot reduce it below that floor. No mark strictly between zero and the attempt mark.",
+    "Worthless work: zero. Hit or miss: full marks or zero.",
+    "Best of two or more attempts accepted unless indicated otherwise; same error in same section penalised once.",
+    "Particular cases, unrequested verifications/diagrams, and serious blunders/omissions/misreadings earn attempt marks at most.",
+    "Detailed task-specific exceptions and caps must remain beside all official worked alternatives.",
+    "Every independently marked printed part is retained. Named scoring steps within one proof or calculation remain components of that task; alternative solution methods do not multiply question counts or tariffs.",
+    "Independent visual sweep: all eight paper PDF pages and all scheme pages 39–82, including every Section B option and complete general and special marking notes.",
+    "57 tasks across eleven questions: 4, 6, 5, 5, 5, 3, 6, 6, 5, 7, 5. Each question offers 50 marks: 550 offered against the 300-mark examination selection.",
+    "The two printed radius calculations contain √(16 + 2). This should be √(16 + 4) = √20. The final circle (x − 6)² + (y − 2)² = 20 is correct. The mediator line should read 3y − 3 = x − 3, hence x − 3y = 0; the next simultaneous equations use this correct relation.",
+    "The worked answer changes the label to PQR in its last line. The angle requested and calculated is QPR, at P: 30° or 150°.",
+    "The paper allows any real a. The printed standard deviations omit the absolute value: the correct results are √2 |a| in (i) and 3√2 |a| in (ii). The scheme’s expressions are correct only when a ≥ 0.",
+    "The paper allows any real a. The printed standard deviations omit the absolute value: the correct results are √2 |a| in (i) and 3√2 |a| in (ii). The scheme’s expressions are correct only when a ≥ 0.",
+    "The slip note says two decimal places, but the paper and model answer require three. Use three decimal places.",
+    "The exact interval is 80 ± 1.96(6/√50) grams, approximately [78.3369, 81.6631]. To one decimal place this is [78.3, 81.7], not the printed [78.3, 81.6].",
+    "The paper prints ℝ ∖ {−1}. For the intended group and inverse rule, the domain should be ℝ ∖ {1}: 1 has no inverse, and the printed domain is not closed under the operation. The identity is 0; for x ≠ 1 the inverse is x/(x − 1).",
+    "The paper prints ℝ ∖ {−1}. For the intended group and inverse rule, the domain should be ℝ ∖ {1}: 1 has no inverse, and the printed domain is not closed under the operation. The identity is 0; for x ≠ 1 the inverse is x/(x − 1).",
+    "The model assumes that the major axis lies along the x-axis. The question does not state its orientation; rotated ellipses with the same axes also meet the stated conditions.",
+    "The source page mislabels this task as (c)(i) and 11(b)(ii); it is Q11(b)(i). Both the geometric and coordinate proofs below address the requested midpoint result.",
+    "The first displayed transformation prints y′ = y/10. It should be y′ = y/5, consistent with the subsequent inverse transformation and image coordinates."
+  ],
+  "cards": [
+    {
+      "id": "maths-2010-hl-p2-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "equation-of-circle",
+              "label": "Equation of circle",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "Find the equation of the circle with centre (3, −4) passing through (7, −3)."
+    },
+    {
+      "id": "maths-2010-hl-p2-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "centre-and-radius",
+              "label": "Centre and radius",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "Find the centre and radius of the circle.",
+      "stem": "The circle has equation x² + y² − 8x − 10y + 32 = 0."
+    },
+    {
+      "id": "maths-2010-hl-p2-q1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "both-tangent-values",
+              "label": "Both tangent values",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        43,
+        44
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "The line 3x + 4y + k = 0 is tangent to the circle. Find the two possible values of k.",
+      "stem": "The circle has equation x² + y² − 8x − 10y + 32 = 0.",
+      "markingNote": "Accept the candidate’s centre and radius from part (b)(i). Both values of k are required."
+    },
+    {
+      "id": "maths-2010-hl-p2-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 25,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "first-equation-in-two-variables",
+              "label": "First equation in two variables",
+              "maximum": 10,
+              "attempt": 3
+            },
+            {
+              "id": "finish",
+              "label": "Finish",
+              "maximum": 15,
+              "attempt": 5,
+              "permittedMarks": [
+                0,
+                5,
+                15
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        44,
+        45
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "Find the equation of a circle that has y = 2x as a tangent at (2, 4) and also passes through (4, −2).",
+      "markingNote": "The 15-mark finish allows only 0, 5 or 15: the scheme explicitly permits no slips or blunders in this component."
+    },
+    {
+      "id": "maths-2010-hl-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "position-vector",
+              "label": "Position vector",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Express the position vector c in terms of i and j.",
+      "stem": "A, B and C are points and O is the origin. a = 2i + 3j, b = −3i − 6j, and vector AC = vector OB."
+    },
+    {
+      "id": "maths-2010-hl-p2-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "magnitude-and-dot-product",
+              "label": "Magnitude and dot product",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Express |v| and u · v in terms of k.",
+      "stem": "u = 2i + j and v = −i + kj, where k is real."
+    },
+    {
+      "id": "maths-2010-hl-p2-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "both-values-of-k",
+              "label": "Both values of k",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Given cos θ = −1/√2, where θ is the angle between u and v, find the two possible values of k.",
+      "stem": "u = 2i + j and v = −i + kj, where k is real."
+    },
+    {
+      "id": "maths-2010-hl-p2-q2-c-i",
+      "printedParts": [
+        "Q2(c)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "position-vector-of-q",
+              "label": "Position vector of Q",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Express q in terms of a and c.",
+      "stem": "OABC is a parallelogram with O as origin. Q is the midpoint of BC. AQ is extended to R so that QR = AQ. Lower-case letters denote position vectors."
+    },
+    {
+      "id": "maths-2010-hl-p2-q2-c-ii",
+      "printedParts": [
+        "Q2(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "vector-aq",
+              "label": "Vector AQ",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Express vector AQ in terms of a and c.",
+      "stem": "OABC is a parallelogram with O as origin. Q is the midpoint of BC. AQ is extended to R so that QR = AQ. Lower-case letters denote position vectors."
+    },
+    {
+      "id": "maths-2010-hl-p2-q2-c-iii",
+      "printedParts": [
+        "Q2(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "collinearity-proof",
+              "label": "Collinearity proof",
+              "maximum": 10,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Show that O, C and R are collinear.",
+      "stem": "OABC is a parallelogram with O as origin. Q is the midpoint of BC. AQ is extended to R so that QR = AQ. Lower-case letters denote position vectors."
+    },
+    {
+      "id": "maths-2010-hl-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "perpendicular-slopes",
+              "label": "Perpendicular slopes",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The line 3x + 4y − 7 = 0 is perpendicular to ax − 6y − 1 = 0. Find a."
+    },
+    {
+      "id": "maths-2010-hl-p2-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "both-intercepts",
+              "label": "Both intercepts",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        49,
+        50
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Write down the coordinates of P and Q in terms of k.",
+      "stem": "The line 4x − 5y + k = 0 meets the x-axis at P and the y-axis at Q; O is the origin."
+    },
+    {
+      "id": "maths-2010-hl-p2-q3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "both-values-of-k",
+              "label": "Both values of k",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        50
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The area of triangle OPQ is 10 square units. Find the two possible values of k.",
+      "stem": "The line 4x − 5y + k = 0 meets the x-axis at P and the y-axis at Q; O is the origin."
+    },
+    {
+      "id": "maths-2010-hl-p2-q3-c-i",
+      "printedParts": [
+        "Q3(c)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "image-line",
+              "label": "Image line",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        50,
+        51
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line",
+        "mathematics-higher-functions"
+      ],
+      "questionText": "Find the equation of f(l), the image of l under f.",
+      "stem": "The transformation f maps (x, y) to (x′, y′), where x′ = x + y and y′ = x − y. The line l has equation y = mx + c."
+    },
+    {
+      "id": "maths-2010-hl-p2-q3-c-ii",
+      "printedParts": [
+        "Q3(c)(ii)"
+      ],
+      "totalMarks": 20,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "all-three-slopes",
+              "label": "All three slopes",
+              "maximum": 20,
+              "attempt": 6
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line",
+        "mathematics-higher-functions"
+      ],
+      "questionText": "Find every value of m for which f(l) makes an angle of 45° with l.",
+      "stem": "The transformation f maps (x, y) to (x′, y′), where x′ = x + y and y′ = x − y. The line l has equation y = mx + c.",
+      "markingNote": "All three solutions m = 0, 1 and −1 are required; otherwise the award is at most the attempt mark 6. At m = −1 the image is vertical and still satisfies the condition."
+    },
+    {
+      "id": "maths-2010-hl-p2-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "both-angles",
+              "label": "Both angles",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        52
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "Triangle PQR has area 20 cm², PQ = 10 cm and PR = 8 cm. Find the two possible values of angle QPR."
+    },
+    {
+      "id": "maths-2010-hl-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 15,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "equation",
+              "label": "Equation",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "roots",
+              "label": "Roots",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "finish",
+              "label": "Finish",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        53
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Find all solutions of cos 2x = cos x for 0° ≤ x ≤ 360°."
+    },
+    {
+      "id": "maths-2010-hl-p2-q4-c-i",
+      "printedParts": [
+        "Q4(c)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "area-identity",
+              "label": "Area identity",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "Show that the area of triangle ABC is ½r(a + b + c).",
+      "stem": "Triangle ABC has sides a, b and c and an incircle of centre O and radius r, as shown."
+    },
+    {
+      "id": "maths-2010-hl-p2-q4-c-ii",
+      "printedParts": [
+        "Q4(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "pythagorean-proof",
+              "label": "Pythagorean proof",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        55
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "Show that this triangle is right-angled.",
+      "stem": "Triangle ABC has sides a, b and c and an incircle of centre O and radius r, as shown. The side lengths are a = p² + q², b = p² − q² and c = 2pq, where p and q are natural numbers with p > q."
+    },
+    {
+      "id": "maths-2010-hl-p2-q4-c-iii",
+      "printedParts": [
+        "Q4(c)(iii)"
+      ],
+      "totalMarks": 15,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "integer-radius",
+              "label": "Integer radius",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        55
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "Show that the radius of the incircle is a whole number.",
+      "stem": "Triangle ABC has sides a, b and c and an incircle of centre O and radius r, as shown. The side lengths are a = p² + q², b = p² − q² and c = 2pq, where p and q are natural numbers with p > q. You may use the area identity ½r(a + b + c) and the right-angle result from the preceding parts."
+    },
+    {
+      "id": "maths-2010-hl-p2-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "double-angle-proof",
+              "label": "Double-angle proof",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        56
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Given tan θ = 1/3, show that tan 2θ = 3/4.",
+      "markingNote": "The alternative triangle method must account for both the first and third quadrants."
+    },
+    {
+      "id": "maths-2010-hl-p2-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "cosine-rule-proof",
+              "label": "Cosine-rule proof",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        57
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "Using the cosine rule, show that cos A + cos C = 7/8.",
+      "stem": "The triangle has sides 4, 5 and 6, with angles A, B and C labelled in the original diagram."
+    },
+    {
+      "id": "maths-2010-hl-p2-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "cosine-of-the-angle-sum",
+              "label": "Cosine of the angle sum",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        58
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "Show that cos(A + C) = −9/16.",
+      "stem": "The triangle has sides 4, 5 and 6, with angles A, B and C labelled in the original diagram."
+    },
+    {
+      "id": "maths-2010-hl-p2-q5-c-i",
+      "printedParts": [
+        "Q5(c)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "identity-proof",
+              "label": "Identity proof",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        58,
+        59
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Prove the stated trigonometric identity.",
+      "stem": "(cos A + cos B)² + (sin A + sin B)² = 2 + 2 cos(A − B)."
+    },
+    {
+      "id": "maths-2010-hl-p2-q5-c-ii",
+      "printedParts": [
+        "Q5(c)(ii)"
+      ],
+      "totalMarks": 15,
+      "methods": [
+        {
+          "id": "tangent-equation",
+          "label": "Tangent equation",
+          "components": [
+            {
+              "id": "equation-for-tan-3x",
+              "label": "Equation for tan 3x",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "all-six-solutions",
+              "label": "All six solutions",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "id": "compound-angle-equation",
+          "label": "Compound-angle equation",
+          "components": [
+            {
+              "id": "equation-for-2-cos-3x-60",
+              "label": "Equation for 2 cos(3x + 60°)",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "all-six-solutions",
+              "label": "All six solutions",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        59
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Hence solve (cos 4x + cos x)² + (sin 4x + sin x)² = 2 + 2√3 sin 3x for 0° ≤ x ≤ 360°.",
+      "stem": "Use the identity (cos A + cos B)² + (sin A + sin B)² = 2 + 2 cos(A − B).",
+      "markingNote": "For the 10-mark solutions component: all six values earn 10, exactly one omitted or incorrect value earns 3, and more than one omitted or incorrect value earns 0."
+    },
+    {
+      "id": "maths-2010-hl-p2-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "probability",
+              "label": "Probability",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        60
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "One bag has four red and six blue discs; another has five red and seven yellow discs. One disc is drawn from each. What is the probability both are red?"
+    },
+    {
+      "id": "maths-2010-hl-p2-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 20,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "root-property",
+              "label": "Root property",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "next-two-terms",
+              "label": "Next two terms",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "substitute-and-simplify",
+              "label": "Substitute and simplify",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "conclusion",
+              "label": "Conclusion",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        61
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "questionText": "Prove that p uₙ₊₂ + q uₙ₊₁ + r uₙ = 0 for all natural n.",
+      "stem": "α and β are the roots of px² + qx + r = 0. The sequence is uₙ = lαⁿ + mβⁿ for all natural n."
+    },
+    {
+      "id": "maths-2010-hl-p2-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 20,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "likelihood-comparison",
+              "label": "Likelihood comparison",
+              "maximum": 20,
+              "attempt": 6,
+              "permittedMarks": [
+                0,
+                6,
+                17,
+                20
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        62
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Six people sit at random in a row of 11 seats. How much more likely is it that all six sit together than that no two sit together?",
+      "markingNote": "Only 0, 6, 17 or 20 are permitted. The exceptional 17 is for both probabilities correct but subtracted rather than divided; otherwise the published awards are 0, 6 or 20."
+    },
+    {
+      "id": "maths-2010-hl-p2-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "password-count",
+              "label": "Password count",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        63
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Show that there are more than a million permitted passwords.",
+      "stem": "A password has four characters chosen from capital letters A–Z and digits 0–9, and starts with a letter. BA7A, C999 and DGKK are allowed; 7DCA is not."
+    },
+    {
+      "id": "maths-2010-hl-p2-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "probability",
+              "label": "Probability",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        63,
+        64
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Find the probability Karen has studied all three of the texts on the exam.",
+      "stem": "Karen’s English course has six novels, four plays and ten poems. The exam asks about one text of each type. She has studied four novels, three plays and seven poems."
+    },
+    {
+      "id": "maths-2010-hl-p2-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "probability",
+              "label": "Probability",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        64
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Find the probability Karen has studied none of the texts on the exam.",
+      "stem": "Karen’s English course has six novels, four plays and ten poems. The exam asks about one text of each type. She has studied four novels, three plays and seven poems."
+    },
+    {
+      "id": "maths-2010-hl-p2-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "probability",
+              "label": "Probability",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        64
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Find the probability Karen has studied at least two of the texts on the exam.",
+      "stem": "Karen’s English course has six novels, four plays and ten poems. The exam asks about one text of each type. She has studied four novels, three plays and seven poems."
+    },
+    {
+      "id": "maths-2010-hl-p2-q7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "mean-and-standard-deviation",
+              "label": "Mean and standard deviation",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        65
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "questionText": "Express μ and σ in terms of a.",
+      "stem": "The real numbers a, 2a, 3a, 4a and 5a have mean μ and standard deviation σ."
+    },
+    {
+      "id": "maths-2010-hl-p2-q7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "transformed-mean-and-spread",
+              "label": "Transformed mean and spread",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        65
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "questionText": "Hence write down the mean and standard deviation of 3a + 5, 6a + 5, 9a + 5, 12a + 5 and 15a + 5.",
+      "stem": "The real numbers a, 2a, 3a, 4a and 5a have mean μ and standard deviation σ.",
+      "markingNote": "Use the previous mean and standard deviation. Direct recalculation instead of “Hence” is capped at 3, even with both answers correct."
+    },
+    {
+      "id": "maths-2010-hl-p2-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "integration-by-parts",
+              "label": "Integration by parts",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        66
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "questionText": "Use integration by parts to find ∫ ln x dx.",
+      "markingNote": "Omitting the constant of integration is a one-mark slip."
+    },
+    {
+      "id": "maths-2010-hl-p2-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "area-expression",
+              "label": "Area expression",
+              "maximum": 5,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        66
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "questionText": "Write an expression for the area of the rectangle in terms of p.",
+      "stem": "A rectangle is inscribed between y = 9 − x² and the x-axis as shown; p is its positive half-width."
+    },
+    {
+      "id": "maths-2010-hl-p2-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "maximum-area",
+              "label": "Maximum area",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        67
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "questionText": "Hence calculate the area of the largest possible rectangle.",
+      "stem": "A rectangle is inscribed between y = 9 − x² and the x-axis as shown; p is its positive half-width. First write the area in terms of p.",
+      "markingNote": "The source explicitly awards 0 for this part if part (b)(i) earns 0. The area-expression prompt and diagram remain attached."
+    },
+    {
+      "id": "maths-2010-hl-p2-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "derived-expansion",
+              "label": "Derived expansion",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        67,
+        68
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Derive the Maclaurin series for f(x) = cos x up to and including the x⁶ term.",
+      "markingNote": "The expansion must be derived. Quoting the correct expansion without derivation earns the attempt mark only."
+    },
+    {
+      "id": "maths-2010-hl-p2-q8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "sine-squared-expansion",
+              "label": "Sine-squared expansion",
+              "maximum": 5,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        68
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Hence, using sin²x = ½(1 − cos 2x), show the first three non-zero Maclaurin terms for sin²x are x² − x⁴/3 + 2x⁶/45.",
+      "stem": "Use the Maclaurin expansion of cos x derived in part (i)."
+    },
+    {
+      "id": "maths-2010-hl-p2-q8-c-iii",
+      "printedParts": [
+        "Q8(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "fractional-approximation",
+              "label": "Fractional approximation",
+              "maximum": 5,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        68
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Use these terms to approximate sin²(½), as a fraction.",
+      "stem": "The first three non-zero terms of sin²x are x² − x⁴/3 + 2x⁶/45."
+    },
+    {
+      "id": "maths-2010-hl-p2-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "normal-probability",
+              "label": "Normal probability",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        69
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "questionText": "Z has a standard normal distribution. Find P(−1 < Z ≤ 1)."
+    },
+    {
+      "id": "maths-2010-hl-p2-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "binomial-probability",
+              "label": "Binomial probability",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        69,
+        70
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Find the probability Seán gets none answers correct. Give the answer to three decimal places.",
+      "stem": "A test has 20 multiple-choice questions, each with four possible answers and exactly one correct answer. Seán guesses every answer at random."
+    },
+    {
+      "id": "maths-2010-hl-p2-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "binomial-probability",
+              "label": "Binomial probability",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        70
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Find the probability Seán gets exactly five answers correct. Give the answer to three decimal places.",
+      "stem": "A test has 20 multiple-choice questions, each with four possible answers and exactly one correct answer. Seán guesses every answer at random."
+    },
+    {
+      "id": "maths-2010-hl-p2-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "binomial-probability",
+              "label": "Binomial probability",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        70
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Find the probability Seán gets four, five or six answers correct. Give the answer to three decimal places.",
+      "stem": "A test has 20 multiple-choice questions, each with four possible answers and exactly one correct answer. Seán guesses every answer at random.",
+      "markingNote": "Add the probabilities of four, five and six correct; retain precision until the final rounding."
+    },
+    {
+      "id": "maths-2010-hl-p2-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 20,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "standard-error",
+              "label": "Standard error",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "two-tailed-critical-value",
+              "label": "Two-tailed critical value",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "interval-expression",
+              "label": "Interval expression",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "finish",
+              "label": "Finish",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        71
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "questionText": "Form a 95% confidence interval for the mean weight of muffins produced by the bakery.",
+      "stem": "A random sample of 50 muffins has mean weight 80 grams and standard deviation 6 grams."
+    },
+    {
+      "id": "maths-2010-hl-p2-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "identity",
+              "label": "Identity",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        72
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "Find the identity element.",
+      "stem": "The operation is x ∗ y = x + y − xy. See the original printed domain and the source correction attached to the answer."
+    },
+    {
+      "id": "maths-2010-hl-p2-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "inverse",
+              "label": "Inverse",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        72
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "Express the inverse of x in terms of x.",
+      "stem": "The operation is x ∗ y = x + y − xy. See the original printed domain and the source correction attached to the answer."
+    },
+    {
+      "id": "maths-2010-hl-p2-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "inverse-of-b",
+              "label": "Inverse of b",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "inverse-of-d",
+              "label": "Inverse of d",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        73
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "Write down the inverses of b and d.",
+      "stem": "G is the group of the six permutations of {1, 2, 3} labelled a, b, c, d, f and g in the original table. The operation is composition."
+    },
+    {
+      "id": "maths-2010-hl-p2-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "one-composition",
+              "label": "One composition",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "finish",
+              "label": "Finish",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        73,
+        74
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "Verify that (b ∘ d)⁻¹ = d⁻¹ ∘ b⁻¹.",
+      "stem": "G is the group of the six permutations of {1, 2, 3} labelled a, b, c, d, f and g in the original table. The operation is composition."
+    },
+    {
+      "id": "maths-2010-hl-p2-q10-b-iii",
+      "printedParts": [
+        "Q10(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "all-order-two-subgroups",
+              "label": "All order-two subgroups",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        74
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "Write down all subgroups of G of order 2.",
+      "stem": "G is the group of the six permutations of {1, 2, 3} labelled a, b, c, d, f and g in the original table. The operation is composition."
+    },
+    {
+      "id": "maths-2010-hl-p2-q10-b-iv",
+      "printedParts": [
+        "Q10(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "order-three-subgroup",
+              "label": "Order-three subgroup",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        74
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "K is the subgroup of G of order 3. List its elements.",
+      "stem": "G is the group of the six permutations of {1, 2, 3} labelled a, b, c, d, f and g in the original table. The operation is composition."
+    },
+    {
+      "id": "maths-2010-hl-p2-q10-b-v",
+      "printedParts": [
+        "Q10(b)(v)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "establishing-the-link",
+              "label": "Establishing the link",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "finish",
+              "label": "Finish",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        75
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "Give an isomorphism from K under composition to H under multiplication, fully justifying that it is an isomorphism.",
+      "stem": "G is the group of the six permutations of {1, 2, 3} labelled a, b, c, d, f and g in the original table. The operation is composition. K is the subgroup of order 3. H = {1, w, w²} is a group under multiplication, where w³ = 1.",
+      "markingNote": "A complete isomorphism needs an explicit map and full justification. All nine products or the published cyclic-group argument are accepted."
+    },
+    {
+      "id": "maths-2010-hl-p2-q11-a",
+      "printedParts": [
+        "Q11(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "ellipse-equation",
+              "label": "Ellipse equation",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        76
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "Find the equation of an ellipse centred at (0, 0), with eccentricity 4/5 and major-axis length 2 units."
+    },
+    {
+      "id": "maths-2010-hl-p2-q11-b-i",
+      "printedParts": [
+        "Q11(b)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "midpoint-invariance",
+              "label": "Midpoint invariance",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        77
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line",
+        "mathematics-higher-functions"
+      ],
+      "questionText": "Show that f(M) is the midpoint of the segment joining f(A) and f(B).",
+      "stem": "f is an affine transformation and M is the midpoint of the segment AB."
+    },
+    {
+      "id": "maths-2010-hl-p2-q11-b-ii",
+      "printedParts": [
+        "Q11(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "centroid-invariance",
+              "label": "Centroid invariance",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        78
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line",
+        "mathematics-higher-functions"
+      ],
+      "questionText": "Triangle ABC has centroid G. Show that triangle f(A)f(B)f(C) has centroid f(G).",
+      "stem": "f is an affine transformation and M is the midpoint of the segment AB."
+    },
+    {
+      "id": "maths-2010-hl-p2-q11-c-i",
+      "printedParts": [
+        "Q11(c)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "conjugate-diameters",
+              "label": "Conjugate diameters",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        79
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line",
+        "mathematics-higher-functions"
+      ],
+      "questionText": "Using a transformation to or from the unit circle, or otherwise, show that PQ and RS are conjugate diameters.",
+      "stem": "The ellipse is x²/100 + y²/25 = 1. PQ and RS are diameters, with P = (8, 3) and R = (6, −4), as shown."
+    },
+    {
+      "id": "maths-2010-hl-p2-q11-c-ii",
+      "printedParts": [
+        "Q11(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "circumscribed-area",
+              "label": "Circumscribed area",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        80
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "questionText": "Find the area of the parallelogram that circumscribes the ellipse at P, S, Q and R.",
+      "stem": "The ellipse is x²/100 + y²/25 = 1. PQ and RS are diameters, with P = (8, 3) and R = (6, −4), as shown. The preceding part establishes that these are conjugate diameters."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        1,
+        2,
+        6
+      ],
+      "wording": "Attempt FIVE questions from Section A and ONE question from Section B.",
+      "classification": "whole-examination-selection",
+      "reason": "Whole-examination choice of five Section A questions and one Section B question does not remove any of the eleven offered questions from practice. All are retained."
+    },
+    {
+      "pages": [
+        5
+      ],
+      "wording": "one of the novels; one of the plays; one of the poems",
+      "classification": "scenario-definition",
+      "reason": "Q7(b): one novel, one play and one poem are random scenario outcomes, not a finite candidate answer menu. Each requested probability is one task."
+    },
+    {
+      "pages": [
+        6
+      ],
+      "wording": "four possible answers, only one of which is correct",
+      "classification": "scenario-definition",
+      "reason": "Q9(b): one correct answer out of four defines the probability model, not a candidate selection pool. Four, five or six correct in part (iii) is the union of three required events."
+    },
+    {
+      "pages": [
+        7
+      ],
+      "wording": "to or from the unit circle, or otherwise",
+      "classification": "alternative-proof-method",
+      "reason": "Q11(c)(i): transformation to/from the unit circle or another method are alternative proof methods for the same marked task."
+    },
+    {
+      "pages": [
+        7
+      ],
+      "wording": "Give an isomorphism",
+      "classification": "open-example-construction",
+      "reason": "Q10(b)(v) asks the candidate to construct an isomorphism. No finite pool of candidate maps is printed; the six listed permutations define the group. Retain one construction task, with complete alternative proofs."
+    }
+  ],
+  "selectionDecisions": {
+    "1:fc8ee88d3aadca05": {
+      "classification": "whole-examination-selection",
+      "reason": "Whole-examination choice of five Section A questions and one Section B question does not remove any of the eleven offered questions from practice. All are retained."
+    },
+    "2:ac1d44cbd89380bc": {
+      "classification": "whole-examination-selection",
+      "reason": "Whole-examination choice of five Section A questions and one Section B question does not remove any of the eleven offered questions from practice. All are retained."
+    },
+    "5:912fe11c4526f995": {
+      "classification": "scenario-definition",
+      "reason": "Q7(b): one novel, one play and one poem are random scenario outcomes, not a finite candidate answer menu. Each requested probability is one task."
+    },
+    "5:5db0ef864b34126d": {
+      "classification": "scenario-definition",
+      "reason": "Q7(b): one novel, one play and one poem are random scenario outcomes, not a finite candidate answer menu. Each requested probability is one task."
+    },
+    "5:80b351c9c0bb27dd": {
+      "classification": "scenario-definition",
+      "reason": "Q7(b): one novel, one play and one poem are random scenario outcomes, not a finite candidate answer menu. Each requested probability is one task."
+    },
+    "6:903f069b4432c2d5": {
+      "classification": "whole-examination-selection",
+      "reason": "Whole-examination choice of five Section A questions and one Section B question does not remove any of the eleven offered questions from practice. All are retained."
+    },
+    "6:352c70a21c0fbdd7": {
+      "classification": "scenario-definition",
+      "reason": "Q9(b): one correct answer out of four defines the probability model, not a candidate selection pool. Four, five or six correct in part (iii) is the union of three required events."
+    },
+    "7:0c01a930132ce5e9": {
+      "classification": "alternative-proof-method",
+      "reason": "Q11(c)(i): transformation to/from the unit circle or another method are alternative proof methods for the same marked task."
+    }
+  }
+}

@@ -1,0 +1,976 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2019,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP200EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "0d5bce2d1d9586738606e06a17a91ab9b380682d04449836ef17af32db6b0926",
+  "schemeSha256": "939dabdcff1d17b57e98911cb035dd928e1c997b235d4479029438c61fe34383",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 28 question-paper pages and PDF pages 29–50 of the combined Higher Level scheme (the Paper 2 title page 29, the Paper 2 scale table on page 30, the summary of mark allocations on page 31, every Paper 2 model solution and marking note on pages 32–48 and the blank back pages). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "schemePagesInspected": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 50,
+    "8": 45,
+    "9": 55
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    30,
+    31
+  ],
+  "sourceNotes": [
+    "The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 50 marks, Q8 45 marks, Q9 55 marks). Every question is retained.",
+    "32 independently marked units, matching the printed summary on scheme page 31. The summary labels Q4(b), Q5(b) and Q6(a) as “(b)(i)” and “(a)(i)”, and the scheme labels Q9(e) “(e)(ii)”; the paper prints each as a single undivided part, which the cards cite.",
+    "Paper 2 bands from the scale table on scheme page 30 and the ladders printed beside each part: 5B 0,2,5; 5C 0,2,3,5; 10C 0,4,7,10; 10D 0,4,5,8,10; 15C 0,5,10,15; 15D 0,5,7,11,15 (Paper 2’s 15D ladder differs from Paper 1’s 0,4,7,11,15).",
+    "This paper had no authored cards before this review; all 32 units are new. Marking points are lifted line by line from the scheme (read through the glyph repair map) and labelled with the part of the scheme they come from; parts with several printed methods keep each method’s ladder. Q5(a) is a construction whose model solution is a drawing; its card carries the printed credit criteria.",
+    "The question booklet is LC003ALP200EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 1. All page references are PDF positions, which match the printed scheme page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2019-hl-p2-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A class consists of 12 boys and 8 girls.",
+      "questionText": "Two students are selected at random from the class. What is the probability that the two students selected will be a boy and a girl in any order?"
+    },
+    {
+      "id": "maths-2019-hl-p2-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A class consists of 12 boys and 8 girls.",
+      "questionText": "Four students are selected, one at a time, at random from the class. What is the probability that the first three students selected will be boys and the fourth will be a girl?"
+    },
+    {
+      "id": "maths-2019-hl-p2-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "An examination paper is made up of two sections, Section A consisting of 7 questions and Section B consisting of 8 questions. The paper contains the following instruction: “From section A you must answer question 1 and any three other questions. From Section B you must also answer any four questions.” Find how many different combinations of questions may be answered if a candidate follows this instruction."
+    },
+    {
+      "id": "maths-2019-hl-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The line p makes an intercept on the x-axis at (a, 0) and on the y-axis at (0, b), where a, b ≠ 0. Show that the equation of p can be written as x/a + y/b = 1."
+    },
+    {
+      "id": "maths-2019-hl-p2-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The line l has a slope m, and contains the point A(6, 0).",
+      "questionText": "Write the equation of the line l in terms of m."
+    },
+    {
+      "id": "maths-2019-hl-p2-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line",
+        "mathematics-higher-algebra-simultaneous-equations"
+      ],
+      "stem": "The line l has a slope m, and contains the point A(6, 0). Part (b)(i): Write the equation of the line l in terms of m.",
+      "questionText": "The line l cuts the line k: 4x + 3y = 25 at P. Find the co-ordinates of P in terms of m. Give each co-ordinate as a fraction in its simplest form."
+    },
+    {
+      "id": "maths-2019-hl-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "The point (−2, k) is on the circle (x − 2)² + (y − 3)² = 65. Find the two possible values of k, where k ∈ ℤ."
+    },
+    {
+      "id": "maths-2019-hl-p2-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "The circle s is in the first quadrant. It touches both the x-axis and the y-axis. The line t: 3x − 4y + 6 = 0 is a tangent to s as shown. Find the equation of s."
+    },
+    {
+      "id": "maths-2019-hl-p2-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Show that cos 2θ = 1 − 2 sin² θ."
+    },
+    {
+      "id": "maths-2019-hl-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "Find the cosine of the acute angle between two diagonals of a cube."
+    },
+    {
+      "id": "maths-2019-hl-p2-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "Construct and label the orthocentre of the triangle ABC in the diagram below. Show any construction lines or arcs clearly."
+    },
+    {
+      "id": "maths-2019-hl-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry"
+      ],
+      "questionText": "In the diagram below O is the centre of circle s. [AB] is a diameter of s. BE is a tangent to s at point B. [CD] is a chord of circle s. |CD| = ½|AB| and CD is parallel to AB. Find, with justification, |∠BEA|."
+    },
+    {
+      "id": "maths-2019-hl-p2-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Two independent events F and S are represented in the Venn diagram shown below. P(F \\ S) = 1/4, P(F ∩ S) = 1/5, P(S \\ F) = x, and P(F ∪ S)′ = y, where x, y ≠ 0. Find the value of x and the value of y."
+    },
+    {
+      "id": "maths-2019-hl-p2-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "questionText": "In a club there are German, Irish and Spanish children only. There are 10 Spanish children. There are twice as many Irish children as German children. They are all in a group waiting to get on a swing. One child will be selected at random to go first and will not re-join the group. Then a second child will be selected at random to go next. The probability that the first child selected will be German and that the second child selected will not be German is 1/6. Find how many children are in the club."
+    },
+    {
+      "id": "maths-2019-hl-p2-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A cattle feeding trough of uniform cross section and 2·5 m in length, is shown in Figure 1. The front of the trough (segment ABC) is shown in Figure 2. The front of the trough is a segment of a circle of radius 90 cm. The height of the trough, |DB|, is 30 cm. |OA| = |OC| = |OB| = 90 cm. [OB] ⊥ [AC].",
+      "questionText": "Find |AD|. Give your answer in the form a√b cm, where a, b ∈ ℤ."
+    },
+    {
+      "id": "maths-2019-hl-p2-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A cattle feeding trough of uniform cross section and 2·5 m in length, is shown in Figure 1. The front of the trough (segment ABC) is shown in Figure 2. The front of the trough is a segment of a circle of radius 90 cm. The height of the trough, |DB|, is 30 cm. |OA| = |OC| = |OB| = 90 cm. [OB] ⊥ [AC].",
+      "questionText": "Find |∠DOA|. Give your answer in radians, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2019-hl-p2-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A cattle feeding trough of uniform cross section and 2·5 m in length, is shown in Figure 1. The front of the trough (segment ABC) is shown in Figure 2. The front of the trough is a segment of a circle of radius 90 cm. The height of the trough, |DB|, is 30 cm. |OA| = |OC| = |OB| = 90 cm. [OB] ⊥ [AC].",
+      "questionText": "Find the area of the segment ABC. Give your answer in m² correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2019-hl-p2-q7-a-iv",
+      "printedParts": [
+        "Q7(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A cattle feeding trough of uniform cross section and 2·5 m in length, is shown in Figure 1. The front of the trough (segment ABC) is shown in Figure 2. The front of the trough is a segment of a circle of radius 90 cm. The height of the trough, |DB|, is 30 cm. |OA| = |OC| = |OB| = 90 cm. [OB] ⊥ [AC].",
+      "questionText": "Find the volume of the trough. Give your answer in m³, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2019-hl-p2-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A sand timer for games is shown in the diagram. Each half of the timer consists of a hemisphere, a cylinder of height 3·5 cm and a cone of height 1·5 cm. All of the parts have a radius of 1·25 cm.",
+      "questionText": "The upper half of the timer is full of sand. Find the volume of sand in the upper half of the timer. Give your answer in cm³ correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2019-hl-p2-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A sand timer for games is shown in the diagram. Each half of the timer consists of a hemisphere, a cylinder of height 3·5 cm and a cone of height 1·5 cm. All of the parts have a radius of 1·25 cm. The upper half of the timer is full of sand.",
+      "questionText": "Sand flows from the top half of the timer into the bottom part. As it flows the top surfaces in both parts remain level. At a certain time, 98% of the sand has flowed into the bottom half of the timer. Find h, the height of the remaining sand (in the conical part of the top of the timer). Give your answer in cm, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2019-hl-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "A motoring magazine collected data on cars on a particular stretch of road. Certain details on 800 cars were recorded.",
+      "questionText": "The ages of the 800 cars were recorded. 174 of them were new (less than 1 year old). Find the 95% confidence interval for the proportion of new cars on this road. Give your answer correct to 4 significant figures."
+    },
+    {
+      "id": "maths-2019-hl-p2-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "A motoring magazine collected data on cars on a particular stretch of road. Certain details on 800 cars were recorded.",
+      "questionText": "The data on the speeds of these 800 vehicles is normally distributed with an average speed of 87·3 km per hour and a standard deviation of 12 km per hour. What proportion of cars on this stretch of road would you expect to find travelling at over 95 km per hour?"
+    },
+    {
+      "id": "maths-2019-hl-p2-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "A motoring magazine collected data on cars on a particular stretch of road. Certain details on 800 cars were recorded. The data on the speeds of these 800 vehicles is normally distributed with an average speed of 87·3 km per hour and a standard deviation of 12 km per hour.",
+      "questionText": "The driver of a car was told that 70% of all the speeds recorded were higher than his speed. Find the speed at which this driver was recorded. Give your answer correct to the nearest whole number."
+    },
+    {
+      "id": "maths-2019-hl-p2-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "A motoring magazine collected data on cars on a particular stretch of road. Certain details on 800 cars were recorded.",
+      "questionText": "A road safety programme was carried out in the area using posters, signs and radio slots. After the programme the motoring magazine recorded the speeds of 100 passing cars. The magazine carried out a hypothesis test, at the 5% level of significance, to determine whether the average speed had changed. The p-value of the test was 0·024. What can the magazine conclude based on this p-value? Give a reason for your answer."
+    },
+    {
+      "id": "maths-2019-hl-p2-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics",
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "A motoring magazine collected data on cars on a particular stretch of road. Certain details on 800 cars were recorded. The data on the speeds of these 800 vehicles is normally distributed with an average speed of 87·3 km per hour and a standard deviation of 12 km per hour. Part (b)(i): A road safety programme was carried out in the area using posters, signs and radio slots. After the programme the motoring magazine recorded the speeds of 100 passing cars. The magazine carried out a hypothesis test, at the 5% level of significance, to determine whether the average speed had changed. The p-value of the test was 0·024.",
+      "questionText": "The magazine found that the average speed of this sample was lower than the previously established average speed of 87·3 km per hour. Find the average speed of the cars in this sample, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2019-hl-p2-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P.",
+      "questionText": "Find |SG|. Give your answer in metres, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2019-hl-p2-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P.",
+      "questionText": "Find |∠HSG|. Give your answer in degrees, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2019-hl-p2-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P.",
+      "questionText": "Find the area of ∆SGH. Give your answer in m², correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2019-hl-p2-q9-d-i",
+      "printedParts": [
+        "Q9(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P.",
+      "questionText": "Find the area of ∆HSP, in terms of r, where r is the radius of the helicopter pad."
+    },
+    {
+      "id": "maths-2019-hl-p2-q9-d-ii",
+      "printedParts": [
+        "Q9(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P.",
+      "questionText": "Show that the area of ∆SGH, in terms of r, can be written as 71·2r m²."
+    },
+    {
+      "id": "maths-2019-hl-p2-q9-d-iii",
+      "printedParts": [
+        "Q9(d)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P.",
+      "questionText": "Find the value of r. Give your answer in metres, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2019-hl-p2-q9-e",
+      "printedParts": [
+        "Q9(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P.",
+      "questionText": "[ST] is a vertical pole at the point S. The angle of elevation of the top of the pole from the point P is 14°. Find the height of the pole. Give your answer, in metres, correct to 1 decimal place."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        5
+      ],
+      "wording": "“From section A you must answer question 1 and any three other questions. From Section B you must also answer any four questions.”",
+      "classification": "mathematical-counting",
+      "reason": "The quoted instruction is the counting problem itself (choose 3 of 6 and 4 of 8), not an instruction to the candidate sitting this paper."
+    }
+  ],
+  "selectionDecisions": {
+    "3:4bcb6b2e6058aa0d": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "4:6bf0d676fbb22738": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "5:22952f42eb72053c": {
+      "classification": "mathematical-counting",
+      "reason": "The quoted exam instruction is the data of a counting task (choose 3 of 6 and 4 of 8); it does not select prompts on this paper."
+    },
+    "5:ca8082e60e573aba": {
+      "classification": "mathematical-counting",
+      "reason": "The quoted exam instruction is the data of a counting task (choose 3 of 6 and 4 of 8); it does not select prompts on this paper."
+    },
+    "16:65f24702c4602511": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    }
+  }
+}

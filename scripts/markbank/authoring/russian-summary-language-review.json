@@ -1,0 +1,247 @@
+{
+  "reviewDate": "2026-11-10",
+  "reviewer": "Codex original-source review with independent coordinator review",
+  "scope": "Correction to exactly forty previously published Russian Higher summary tasks; no new source-coverage claim.",
+  "problem": "Whole-response language adjustment previously removed manual discretionary marks despite a specific source exception allowing discretion for substantial understanding that is not expressed in intelligible English.",
+  "resolution": "Retain every language flag and content adjustment. Exempt only the existing top-level manual summary-skills criterion from the whole-response multiplier, after applying all original discretionary caps. No automatic award and no invented wholly/mixed language threshold.",
+  "sourceDifferences": "2013 permits Russian-language words; later reviewed schemes distinguish discretionary marks from content and specify an excessive number of Russian-language words. Each sitting retains its own exact clause.",
+  "originals": [
+    {
+      "year": 2013,
+      "level": "higher",
+      "schemePath": "examiner-reports/russian/schemes/2013-hl.pdf",
+      "sha256": "b14c59425b38ee71743c5b59b119baad4071759692f069d143abc421b5ac4b6d",
+      "physicalPages": [
+        6
+      ],
+      "criterionIds": [
+        "summary-skills"
+      ],
+      "sourceText": "Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian-language words in their answers).",
+      "cardIds": [
+        "ru-2013-hl-c2-1",
+        "ru-2013-hl-c2-2",
+        "ru-2013-hl-c2-3",
+        "ru-2013-hl-c2-4"
+      ]
+    },
+    {
+      "year": 2014,
+      "level": "higher",
+      "schemePath": "examiner-reports/russian/schemes/2014-hl.pdf",
+      "sha256": "fb5cfc36f2f64fc1a8fc068bbad392ff99eb2ff5792c37267dfcabc0d0ad1f48",
+      "physicalPages": [
+        6
+      ],
+      "criterionIds": [
+        "summary-skills"
+      ],
+      "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+      "cardIds": [
+        "ru-2014-hl-c2-1",
+        "ru-2014-hl-c2-2",
+        "ru-2014-hl-c2-3",
+        "ru-2014-hl-c2-4"
+      ]
+    },
+    {
+      "year": 2015,
+      "level": "higher",
+      "schemePath": "examiner-reports/russian/schemes/2015-hl.pdf",
+      "sha256": "210b81b664cfac3107aed4c750d839c70c82777d40b92c805f7f5db60d1c730c",
+      "physicalPages": [
+        7
+      ],
+      "criterionIds": [
+        "summary-skills"
+      ],
+      "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+      "cardIds": [
+        "ru-2015-hl-c2-1",
+        "ru-2015-hl-c2-2",
+        "ru-2015-hl-c2-3",
+        "ru-2015-hl-c2-4"
+      ]
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "schemePath": "examiner-reports/russian/schemes/2016-hl.pdf",
+      "sha256": "ec7771b35c2c806b9e0f2cc8a35626cd3a8e85a9c991afc8089f4319decc19e4",
+      "physicalPages": [
+        6
+      ],
+      "criterionIds": [
+        "summary-skills"
+      ],
+      "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+      "cardIds": [
+        "ru-2016-hl-c2-1",
+        "ru-2016-hl-c2-2",
+        "ru-2016-hl-c2-3",
+        "ru-2016-hl-c2-4"
+      ]
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "schemePath": "examiner-reports/russian/schemes/2017-hl.pdf",
+      "sha256": "4436cf9e87767e3d7092bedbb38ad8818b731d232565d2d0fca1976621e95abd",
+      "physicalPages": [
+        6
+      ],
+      "criterionIds": [
+        "summary-skills"
+      ],
+      "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+      "cardIds": [
+        "ru-2017-hl-c2-1",
+        "ru-2017-hl-c2-2",
+        "ru-2017-hl-c2-3",
+        "ru-2017-hl-c2-4"
+      ]
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "schemePath": "examiner-reports/russian/schemes/2022-hl.pdf",
+      "sha256": "7f539dcb7b70c18e30b1047e463426bd2715926ddfe16a6daa0a93b995907071",
+      "physicalPages": [
+        7
+      ],
+      "criterionIds": [
+        "summary-skills"
+      ],
+      "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+      "cardIds": [
+        "ru-2022-hl-c2-1",
+        "ru-2022-hl-c2-2",
+        "ru-2022-hl-c2-3",
+        "ru-2022-hl-c2-4"
+      ]
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "schemePath": "examiner-reports/russian/schemes/2023-hl.pdf",
+      "sha256": "63933208c9846387f93bba3f48c13ec4d8821d7f3af1597998bcc8c531d983de",
+      "physicalPages": [
+        7
+      ],
+      "criterionIds": [
+        "summary-skills"
+      ],
+      "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+      "cardIds": [
+        "ru-2023-hl-c2-1",
+        "ru-2023-hl-c2-2",
+        "ru-2023-hl-c2-3",
+        "ru-2023-hl-c2-4"
+      ]
+    },
+    {
+      "year": 2024,
+      "level": "higher",
+      "schemePath": "examiner-reports/russian/schemes/2024-hl.pdf",
+      "sha256": "3fd5f06ee6dbc78e1ef53bcaa1e1e6f9a6d822c6ee898a69f16ec34cf0aac999",
+      "physicalPages": [
+        8
+      ],
+      "criterionIds": [
+        "summary-skills"
+      ],
+      "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+      "cardIds": [
+        "ru-2024-hl-c2-1",
+        "ru-2024-hl-c2-2",
+        "ru-2024-hl-c2-3",
+        "ru-2024-hl-c2-4"
+      ]
+    },
+    {
+      "year": 2025,
+      "level": "higher",
+      "schemePath": "examiner-reports/russian/schemes/2025-hl.pdf",
+      "sha256": "3c74de1d1d5d35a4e0e9ada2b5e7754446722444003f480a2bd876c90c27a52b",
+      "physicalPages": [
+        7
+      ],
+      "criterionIds": [
+        "summary-skills"
+      ],
+      "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+      "cardIds": [
+        "ru-2025-hl-c2-1",
+        "ru-2025-hl-c2-2",
+        "ru-2025-hl-c2-3",
+        "ru-2025-hl-c2-4"
+      ]
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "schemePath": "examiner-reports/russian/schemes/2026-hl.pdf",
+      "sha256": "e56810faf2cb2b34e30216c07b4ff771d1cc6f99b91fb6fcf1d47d045d8265be",
+      "physicalPages": [
+        7
+      ],
+      "criterionIds": [
+        "summary-skills"
+      ],
+      "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+      "cardIds": [
+        "ru-2026-hl-c2-1",
+        "ru-2026-hl-c2-2",
+        "ru-2026-hl-c2-3",
+        "ru-2026-hl-c2-4"
+      ]
+    }
+  ],
+  "specialCaps": [
+    {
+      "cardId": "ru-2016-hl-c2-4",
+      "flagId": "missed-return-delay",
+      "discretionaryMaximum": 0,
+      "note": "This original restriction remains effective alongside the incomplete-response maximum1."
+    }
+  ],
+  "preservation": {
+    "reviewedCardsBefore": 1228,
+    "reviewedCardsAfter": 1228,
+    "runtimeCardsBefore": 1245,
+    "runtimeCardsAfter": 1245,
+    "changedRecords": 40,
+    "allOtherReviewedRecordsUnchanged": 1188,
+    "allOriginal199IdsPreserved": true,
+    "allOldLanguageFlagsContentChoicesAndCriterionCapsPreserved": true,
+    "new2011JointSummaryUnchanged": true,
+    "allOtherSubjectsAndAtlasMappingsUnchanged": true
+  },
+  "validation": {
+    "status": "Passed authoring/runtime/build gates; native browser QA remains coordinator-owned.",
+    "mandatoryOriginalSourceCases": 69,
+    "allReviewedRecordsVerified": 1228,
+    "allOriginalSourceSlicesVerified": 11377,
+    "focusedScorerSourceAndRenderedCases": 117,
+    "fullRussianAndRequiredTestFiles": 45,
+    "fullRussianAndRequiredCases": 717,
+    "russianCoverageCases": 3,
+    "appTypes": "passed",
+    "scopedTestTypes": "passed",
+    "lint": "passed",
+    "deterministicRegenerations": 2,
+    "normalProductionBuild": "passed",
+    "ownedIgnoredDistRemovedInsideHeavyLock": true,
+    "sourcePageNegatives": [
+      "invented rule",
+      "wrong declared physical page",
+      "whitespace claim",
+      "unknown/grouped/duplicate/deduction criterion targets"
+    ],
+    "sourceBuilderEquality": "All ten sitting builders reproduce their exact corrected summaries."
+  },
+  "limitations": [
+    "Native browser checks and integration are owned by the coordinator.",
+    "This correction does not resolve other held Russian source allocations or whole-subject coverage."
+  ]
+}

@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 1,
+  "year": 2024,
+  "level": "higher",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-complete; browser-QA-pending",
+  "sources": {
+    "examiner-reports/home-economics/papers/2024-hl-014-paper.pdf": {
+      "sha256": "8b69f7212d16dfb0e99a86f6779631a79a43123dc9d77fd7cb1c2c5146adf1b0",
+      "pages": 40
+    },
+    "examiner-reports/home-economics/papers/2024-hl-039-paper.pdf": {
+      "sha256": "d96c7c489e029bec11fdead0572ab327ae59e93b873ab123f9de75ae639c2d91",
+      "pages": 12
+    },
+    "paper-trail-corpus/markingschemes/2024/LC098ALP000EV.pdf": {
+      "sha256": "baf9dcc0aef0b7abe6b58b1327196a29a39bb6b5065f2cdd2538a060f6a9ca13",
+      "pages": 42
+    }
+  },
+  "visualSweep": {
+    "a": "All 40 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–39, back cover 40.",
+    "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+    "scheme": "All 42 pages: cover 1, guidance/rubrics/annotations 2–5, A 6–10, B 11–17, C 18–29, Irish-language bonus tables 30–31, separate food-studies coursework 32–40, blank 41, back cover 42. Coursework is a separate assessment, not a task in these written-paper booklets."
+  },
+  "expectedTasks": 58,
+  "expectedSectionTasks": {
+    "A": 15,
+    "B": 16,
+    "C": 27
+  },
+  "offeredPracticeMarks": 749,
+  "candidateMarks": [
+    280,
+    320
+  ],
+  "tasks": [
+    {
+      "id": "he-2024-hl-sa-q1",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sa-q2",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 4
+    },
+    {
+      "id": "he-2024-hl-sa-q3",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sa-q4",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sa-q9",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sa-q13",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sa-q14",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sa-q5",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sa-q6",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sa-q7",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sa-q8",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sa-q10",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sa-q11",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sa-q12",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sa-q2-sources",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 2
+    },
+    {
+      "id": "he-2024-hl-sb-q1a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-hl-sb-q1b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 22
+    },
+    {
+      "id": "he-2024-hl-sb-q1c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 18
+    },
+    {
+      "id": "he-2024-hl-sb-q2a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-hl-sb-q2b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 18
+    },
+    {
+      "id": "he-2024-hl-sb-q2c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 12
+    },
+    {
+      "id": "he-2024-hl-sb-q3a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-hl-sb-q3b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-hl-sb-q3c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 10
+    },
+    {
+      "id": "he-2024-hl-sb-q4a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-hl-sb-q4c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 12
+    },
+    {
+      "id": "he-2024-hl-sb-q5a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-hl-sb-q5b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 18
+    },
+    {
+      "id": "he-2024-hl-sb-q5c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 12
+    },
+    {
+      "id": "he-2024-hl-sb-q1d",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-hl-sb-q4b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 18
+    },
+    {
+      "id": "he-2024-hl-sc-q1ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-hl-sc-q1aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2024-hl-sc-q1aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2024-hl-sc-q1bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2024-hl-sc-q1bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2024-hl-sc-q1ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sc-q1cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2024-hl-sc-q2ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-hl-sc-q2aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 10
+    },
+    {
+      "id": "he-2024-hl-sc-q2b-wool",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-hl-sc-q2ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-hl-sc-q2cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 9
+    },
+    {
+      "id": "he-2024-hl-sc-q3ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-hl-sc-q3aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-hl-sc-q3aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-hl-sc-q3bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2024-hl-sc-q3bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2024-hl-sc-q3ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2024-hl-sc-q3cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2024-hl-sc-q4ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-hl-sc-q4aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-hl-sc-q4aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-hl-sc-q4bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2024-hl-sc-q4bii-study",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2024-hl-sc-q4ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-hl-sc-q4cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-hl-sc-q1ci-methods",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    }
+  ],
+  "sectionAReview": {
+    "tasks": 15,
+    "marks": 84,
+    "selectionDecisions": "Only A2 has independent functions/source prompts with separate tariffs. All required iron forms, novel-protein categories, poison types, welfare categories and refrigerator components stay whole. Two contaminant/source/effect triples retain their pairings and all eight source examples. A11 agency name and role are dependent, so remain one open response.",
+    "sourceClarifications": {
+      "deamination": {
+        "source": "https://openstax.org/books/organic-chemistry/pages/29-9-catabolism-of-proteins-deamination",
+        "note": "After removal of the amino group, the remaining carbon skeleton enters energy metabolism; this is not oxidation of the carboxyl group alone."
+      },
+      "iron": {
+        "source": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+        "note": "Haem iron is iron combined with protoporphyrin IX. Non-haem iron is absorbed, although less bioavailable; do not equate haem/non-haem simply with ferrous/ferric."
+      },
+      "toxins": {
+        "source": "https://www.cdc.gov/staph-food-poisoning/about/index.htmL",
+        "note": "Cooking may kill Staph bacteria without destroying their preformed toxin. The scheme’s boiling/reheating statements are not universal safety instructions."
+      },
+      "incubation": {
+        "source": "https://www.cdc.gov/food-safety/signs-symptoms/",
+        "note": "Food-poisoning onset varies by organism; the scheme’s two-hour/over-twelve-hour distinction is not universal."
+      }
+    },
+    "checked": "2026-11-01"
+  },
+  "sectionBReview": {
+    "tasks": 16,
+    "marks": 280,
+    "sourceClarifications": {
+      "folate": {
+        "source": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/",
+        "note": "The historical cancer/heart-attack/depression examples are not established universal prevention or treatment effects. Preserve the scheme, distinguish it from current health guidance."
+      },
+      "pregnancy": {
+        "source": "https://www.hse.ie/pregnancy-birth/keeping-well/food-drink/what-to-avoid/",
+        "note": "The printed nutrient list is not a supplement prescription; avoid high-retinol vitamin A supplements and liver in pregnancy."
+      }
+    },
+    "selectionDecisions": "Recover the omitted sugar strategies and payment methods. Four of five chart factors, three sugar properties and two named payment methods each stay one choice response with all guidance. Preserve property/name/application and payment/name/evaluation pairings. Carbohydrate and folate bullet headings are required parts of one account. All original chart and chemical diagrams retained.",
+    "checked": "2026-11-01"
+  },
+  "sectionCReview": {
+    "tasks": 27,
+    "marks": 385,
+    "sourceClarifications": {
+      "cholesterol": {
+        "source": "https://www.canada.ca/en/health-canada/services/nutrients/cholesterol.html",
+        "note": "Plant oils do not contain dietary cholesterol; the scheme’s HDL-in-plant-oils wording is incorrect."
+      },
+      "lipoproteins": {
+        "source": "https://www.cdc.gov/cholesterol/about/ldl-and-hdl-cholesterol-and-triglycerides.html",
+        "note": "LDL and HDL carry cholesterol in blood; they are not categories of cholesterol contained in animal and plant fats."
+      },
+      "insulin": {
+        "source": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes",
+        "note": "Insulin helps glucose enter cells; it does not break sugar down into glucose."
+      },
+      "saturated-fat": {
+        "source": "https://www.cdc.gov/cholesterol/prevention/index.html",
+        "note": "High saturated-fat intake can contribute to high cholesterol and heart disease. Other outcomes in the source are not inevitable direct effects of saturated fat."
+      }
+    },
+    "selectionDecisions": "Insulation principle and methods have independent prompts and tariffs (6/12). The natural-fibre profile is one open response with four published models and another choice; three duplicate IDs are retained as explicit progress aliases to the original wool ID. Restore the omitted 2-mark appliance name to its dependent 18-mark study. All required headings, paired examples, community initiatives and Irish designer profiles remain whole. Preserve the designer continuation on page 23.",
+    "progressAliases": {
+      "he-2024-hl-sc-q2b-silk": "he-2024-hl-sc-q2b-wool",
+      "he-2024-hl-sc-q2b-cotton": "he-2024-hl-sc-q2b-wool",
+      "he-2024-hl-sc-q2b-linen": "he-2024-hl-sc-q2b-wool"
+    },
+    "checked": "2026-11-01"
+  },
+  "figures": {
+    "home-economics-2024-hl-sb-q1a-chart": {
+      "source": "examiner-reports/home-economics/papers/2024-hl-039-paper.pdf",
+      "page": 2,
+      "bounds": [
+        85,
+        207,
+        551,
+        452
+      ],
+      "alt": "Original Eurobarometer chart, 2022 (blue) / 2019 (red), percentage of consumers: cost 63 / 57; food safety 52 / 51; origin of food 36 / 44; impact on environment 11 / 0; nutrient content 52 / 52. Both year keys, axes and EFSA caption retained.",
+      "sha256": "61037c3834e030eacb4996f4327d96db010879fdd09d39b43e0388b776ef0550"
+    },
+    "home-economics-2024-hl-sb-q1b-chemistry": {
+      "source": "paper-trail-corpus/markingschemes/2024/LC098ALP000EV.pdf",
+      "page": 12,
+      "bounds": [
+        54,
+        80,
+        551,
+        405
+      ],
+      "solution": true,
+      "alt": "Original marking-scheme chemical diagrams: glucose ring structure with atom and hydroxyl-group labels, and two monosaccharide rings joining with loss of H₂O. Includes the corresponding structure and formation guidance.",
+      "sha256": "d864a5a04f4edcb13d9c72942c1a7503ab463985806b4b82b59cf80291704208"
+    },
+    "home-economics-2024-hl-sc-q2ai-summer-outfits": {
+      "source": "examiner-reports/home-economics/papers/2024-hl-039-paper.pdf",
+      "page": 6,
+      "bounds": [
+        165,
+        136,
+        369,
+        297
+      ],
+      "alt": "Both original summer outfits: a floral dress with thin straps and an asymmetrical hem, and a denim jacket with white T-shirt, beige trousers and white trainers. Both original source captions retained.",
+      "sha256": "659ce7703e0241eb2ed0545ceee56eab6b2b65b16b746f3cc6dadd3022025883"
+    }
+  },
+  "sourceCropReview": {
+    "status": "visually-checked",
+    "paperSchemePairs": 23,
+    "originalFigures": 3,
+    "detail": "Every A1–A14 and B1–B5/C1–C4 final paper/scheme crop inspected, all continuations retained. Full chart, both summer outfits and original chemical diagrams inspected. Core scheme footer clipping corrected and rechecked."
+  },
+  "reconciliation": {
+    "rawAsks": 56,
+    "covered": 56,
+    "open": 0,
+    "orphans": 0,
+    "policy": "Independent visual source review establishes 58 tasks. Parser coverage is diagnostic only; the subject remains incomplete."
+  },
+  "validation": {
+    "requiredVitest": "325 tests across 11 suites passed",
+    "atlas": "2 Home Economics registry tests passed; all 58 cards checked against canonical Atlas topics.",
+    "python": "29 Home Economics census/reference tests passed",
+    "mainTypecheck": "passed",
+    "scopedHomeEconomicsTestTypecheck": "passed",
+    "productionBuild": "passed",
+    "regeneration": "31 modified/new task files regenerated identically except generic reference-builder generatedAt; all other JSON fields identical.",
+    "browser": "unavailable; browser QA pending",
+    "sourceCropReview": "All 94 source pages, 23 final paper/scheme question groups and three original figures visually checked."
+  },
+  "preservation": {
+    "previousLiveTasks": 54,
+    "preservedLiveTasks": 54,
+    "addedTasks": 4,
+    "existingFabricAliases": 3,
+    "otherCards": "Every card outside 2024 Higher byte-identical. Existing fabric aliases preserved; no additional live ID withdrawn."
+  }
+}

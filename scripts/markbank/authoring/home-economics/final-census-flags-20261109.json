@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-09",
+  "subjectId": "home-economics",
+  "remainingFlags": 11,
+  "classifiedFlags": 11,
+  "unclassifiedFlags": 0,
+  "method": "paper_census.py marks_by_question scans generic text blocks, keeps only the first MARKS match per (section, question), and recognises a limited question-heading pattern. For these Home Economics layouts it emits 1-6 sparse entries; a cross-year modal subtotal of 80 is then compared, without modelling whole-paper sections, all alternatives, repeated question numbering or candidate choice. The values below were obtained by rerunning that reader on the original paper PDFs after the independent visual sweeps. They are not complete tariff checksums.",
+  "scope": "These 11 generic diagnostics are separate from the held 2019 Higher B3(b) numeric source contradiction. No missing/unparsed/continuity flag remains.",
+  "flags": [
+    {
+      "year": 2011,
+      "level": "ol",
+      "sitting": "main",
+      "flag": {
+        "type": "marks-checksum",
+        "where": "2011 ol ",
+        "detail": "marks sum 40, other years say 80"
+      },
+      "genericMarksSubtotal": 40,
+      "genericQuestionCount": 1,
+      "genericMap": [
+        {
+          "section": null,
+          "question": 4,
+          "marks": 40
+        }
+      ],
+      "comparedCrossYearMode": 80,
+      "classification": "generic-marks-reader-partial-subtotal",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2011-ol-main-review.json",
+          "sha256": "941caf733e3593db7d1bcf46fae31c017319036e9c0d203459c4bc1a7c5212e0"
+        }
+      ],
+      "manualPricedTasks": 52,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "disposition": "Retain this diagnostic flag. The independent visual ledger and priced-task tariffs govern; neither the sparse subtotal nor the modal 80 is a complete sitting total. No task, source marker, score, or choice pool was removed or changed to make this checksum pass."
+    },
+    {
+      "year": 2020,
+      "level": "hl",
+      "sitting": "main",
+      "flag": {
+        "type": "marks-checksum",
+        "where": "2020 hl ",
+        "detail": "marks sum 82, other years say 80"
+      },
+      "genericMarksSubtotal": 82,
+      "genericQuestionCount": 4,
+      "genericMap": [
+        {
+          "section": "B",
+          "question": 1,
+          "marks": 20
+        },
+        {
+          "section": "B",
+          "question": 2,
+          "marks": 20
+        },
+        {
+          "section": "B",
+          "question": 4,
+          "marks": 26
+        },
+        {
+          "section": "C",
+          "question": 4,
+          "marks": 16
+        }
+      ],
+      "comparedCrossYearMode": 80,
+      "classification": "generic-marks-reader-partial-subtotal",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2020-hl-main-review.json",
+          "sha256": "f7adecae77dfd1e8489ada1a604b5f3a7630765565bb65133df839e4b14949a1"
+        }
+      ],
+      "manualPricedTasks": 49,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "disposition": "Retain this diagnostic flag. The independent visual ledger and priced-task tariffs govern; neither the sparse subtotal nor the modal 80 is a complete sitting total. No task, source marker, score, or choice pool was removed or changed to make this checksum pass."
+    },
+    {
+      "year": 2020,
+      "level": "ol",
+      "sitting": "main",
+      "flag": {
+        "type": "marks-checksum",
+        "where": "2020 ol ",
+        "detail": "marks sum 76, other years say 80"
+      },
+      "genericMarksSubtotal": 76,
+      "genericQuestionCount": 4,
+      "genericMap": [
+        {
+          "section": "B",
+          "question": 1,
+          "marks": 24
+        },
+        {
+          "section": "B",
+          "question": 2,
+          "marks": 16
+        },
+        {
+          "section": "B",
+          "question": 4,
+          "marks": 16
+        },
+        {
+          "section": "C",
+          "question": 4,
+          "marks": 20
+        }
+      ],
+      "comparedCrossYearMode": 80,
+      "classification": "generic-marks-reader-partial-subtotal",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2020-ol-main-review.json",
+          "sha256": "d550347358f90c756259dc0ff951a67f73d30c82bfae46ce0fc49516c1c46621"
+        }
+      ],
+      "manualPricedTasks": 56,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "disposition": "Retain this diagnostic flag. The independent visual ledger and priced-task tariffs govern; neither the sparse subtotal nor the modal 80 is a complete sitting total. No task, source marker, score, or choice pool was removed or changed to make this checksum pass."
+    },
+    {
+      "year": 2021,
+      "level": "hl",
+      "sitting": "main",
+      "flag": {
+        "type": "marks-checksum",
+        "where": "2021 hl ",
+        "detail": "marks sum 72, other years say 80"
+      },
+      "genericMarksSubtotal": 72,
+      "genericQuestionCount": 4,
+      "genericMap": [
+        {
+          "section": "B",
+          "question": 1,
+          "marks": 20
+        },
+        {
+          "section": "B",
+          "question": 2,
+          "marks": 20
+        },
+        {
+          "section": "B",
+          "question": 4,
+          "marks": 16
+        },
+        {
+          "section": "C",
+          "question": 4,
+          "marks": 16
+        }
+      ],
+      "comparedCrossYearMode": 80,
+      "classification": "generic-marks-reader-partial-subtotal",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2021-hl-main-review.json",
+          "sha256": "3e198b45d1d4cf13c092f146a8f557a8c386f5b197593ec6569e256794e12c03"
+        }
+      ],
+      "manualPricedTasks": 62,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        200,
+        240
+      ],
+      "disposition": "Retain this diagnostic flag. The independent visual ledger and priced-task tariffs govern; neither the sparse subtotal nor the modal 80 is a complete sitting total. No task, source marker, score, or choice pool was removed or changed to make this checksum pass."
+    },
+    {
+      "year": 2022,
+      "level": "hl",
+      "sitting": "main",
+      "flag": {
+        "type": "marks-checksum",
+        "where": "2022 hl ",
+        "detail": "marks sum 53, other years say 80"
+      },
+      "genericMarksSubtotal": 53,
+      "genericQuestionCount": 3,
+      "genericMap": [
+        {
+          "section": "B",
+          "question": 4,
+          "marks": 20
+        },
+        {
+          "section": "B",
+          "question": 2,
+          "marks": 18
+        },
+        {
+          "section": "C",
+          "question": 4,
+          "marks": 15
+        }
+      ],
+      "comparedCrossYearMode": 80,
+      "classification": "generic-marks-reader-partial-subtotal",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2022-hl-main-review.json",
+          "sha256": "f2833076ccaef6da49075a7f1250f6ce852a978e9c65e422adb0bc0ea5194c8b"
+        }
+      ],
+      "manualPricedTasks": 62,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        200,
+        240
+      ],
+      "disposition": "Retain this diagnostic flag. The independent visual ledger and priced-task tariffs govern; neither the sparse subtotal nor the modal 80 is a complete sitting total. No task, source marker, score, or choice pool was removed or changed to make this checksum pass."
+    },
+    {
+      "year": 2022,
+      "level": "ol",
+      "sitting": "main",
+      "flag": {
+        "type": "marks-checksum",
+        "where": "2022 ol ",
+        "detail": "marks sum 76, other years say 80"
+      },
+      "genericMarksSubtotal": 76,
+      "genericQuestionCount": 4,
+      "genericMap": [
+        {
+          "section": "B",
+          "question": 1,
+          "marks": 20
+        },
+        {
+          "section": "B",
+          "question": 2,
+          "marks": 20
+        },
+        {
+          "section": "B",
+          "question": 4,
+          "marks": 16
+        },
+        {
+          "section": "C",
+          "question": 4,
+          "marks": 20
+        }
+      ],
+      "comparedCrossYearMode": 80,
+      "classification": "generic-marks-reader-partial-subtotal",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2022-ol-main-review.json",
+          "sha256": "eca70d9b7ba12cce34605a14c4e687806ff276e7aaf4141bf919b24d1f2f7650"
+        }
+      ],
+      "manualPricedTasks": 60,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        200,
+        240
+      ],
+      "disposition": "Retain this diagnostic flag. The independent visual ledger and priced-task tariffs govern; neither the sparse subtotal nor the modal 80 is a complete sitting total. No task, source marker, score, or choice pool was removed or changed to make this checksum pass."
+    },
+    {
+      "year": 2023,
+      "level": "hl",
+      "sitting": "main",
+      "flag": {
+        "type": "marks-checksum",
+        "where": "2023 hl ",
+        "detail": "marks sum 60, other years say 80"
+      },
+      "genericMarksSubtotal": 60,
+      "genericQuestionCount": 3,
+      "genericMap": [
+        {
+          "section": "B",
+          "question": 4,
+          "marks": 20
+        },
+        {
+          "section": "B",
+          "question": 2,
+          "marks": 20
+        },
+        {
+          "section": "C",
+          "question": 4,
+          "marks": 20
+        }
+      ],
+      "comparedCrossYearMode": 80,
+      "classification": "generic-marks-reader-partial-subtotal",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2023-hl-recovery-review.json",
+          "sha256": "cb9d7c41a5522d7089b7c12322d7a53370a9992fadc0ed58297e5125aef36a7a"
+        },
+        {
+          "path": "scripts/markbank/authoring/home-economics/section-a-2023-hl-review.json",
+          "sha256": "6d5cb289f95ea241c9cb4813d6c1396d5e2ad65179ab3468644312866b250d58"
+        },
+        {
+          "path": "scripts/markbank/authoring/home-economics/section-b-q1-2023-hl-review.json",
+          "sha256": "5a8058a3ab0c09c778404b3294d9c7525c59a3901bfe02245ed3dc8b77577fcb"
+        },
+        {
+          "path": "scripts/markbank/authoring/home-economics/section-b-rest-2023-hl-review.json",
+          "sha256": "4830160f334a0eb21bb34ee5d6cd7ba82da49a84454faeffb02cbdc23b10beee"
+        },
+        {
+          "path": "scripts/markbank/authoring/home-economics/section-c-2023-hl-review.json",
+          "sha256": "69528379b082f9cf26770ae0857d4dbf88aaae7522657f10f6f65682b1681c7b"
+        }
+      ],
+      "manualPricedTasks": 59,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "disposition": "Retain this diagnostic flag. The independent visual ledger and priced-task tariffs govern; neither the sparse subtotal nor the modal 80 is a complete sitting total. No task, source marker, score, or choice pool was removed or changed to make this checksum pass."
+    },
+    {
+      "year": 2023,
+      "level": "ol",
+      "sitting": "main",
+      "flag": {
+        "type": "marks-checksum",
+        "where": "2023 ol ",
+        "detail": "marks sum 120, other years say 80"
+      },
+      "genericMarksSubtotal": 120,
+      "genericQuestionCount": 6,
+      "genericMap": [
+        {
+          "section": "B",
+          "question": 4,
+          "marks": 24
+        },
+        {
+          "section": "B",
+          "question": 2,
+          "marks": 20
+        },
+        {
+          "section": "B",
+          "question": 3,
+          "marks": 16
+        },
+        {
+          "section": "B",
+          "question": 5,
+          "marks": 20
+        },
+        {
+          "section": "C",
+          "question": 5,
+          "marks": 20
+        },
+        {
+          "section": "C",
+          "question": 4,
+          "marks": 20
+        }
+      ],
+      "comparedCrossYearMode": 80,
+      "classification": "generic-marks-reader-partial-subtotal",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2023-ol-recovery-review.json",
+          "sha256": "d25b7981c4f15b16996f5f43acab2d4683cedfdab5a05e293b50cc10266c78e3"
+        },
+        {
+          "path": "scripts/markbank/authoring/home-economics/section-a-2023-ol-review.json",
+          "sha256": "0b83fb305c0381998b87ff4f6f778ce1f122908b69a41f3f9d6f9bde8b381961"
+        },
+        {
+          "path": "scripts/markbank/authoring/home-economics/section-b-2023-ol-review.json",
+          "sha256": "e8ceff9c1f788423dd1344073a75c36b631ed8155f16fb3eacc3f572843326de"
+        },
+        {
+          "path": "scripts/markbank/authoring/home-economics/section-c-2023-ol-review.json",
+          "sha256": "5b8ec2887957a41850a3a31b9321ff3dfb3f42a81208916cdfed8488c6d4c7c1"
+        }
+      ],
+      "manualPricedTasks": 60,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "disposition": "Retain this diagnostic flag. The independent visual ledger and priced-task tariffs govern; neither the sparse subtotal nor the modal 80 is a complete sitting total. No task, source marker, score, or choice pool was removed or changed to make this checksum pass."
+    },
+    {
+      "year": 2024,
+      "level": "hl",
+      "sitting": "main",
+      "flag": {
+        "type": "marks-checksum",
+        "where": "2024 hl ",
+        "detail": "marks sum 60, other years say 80"
+      },
+      "genericMarksSubtotal": 60,
+      "genericQuestionCount": 3,
+      "genericMap": [
+        {
+          "section": "B",
+          "question": 4,
+          "marks": 20
+        },
+        {
+          "section": "B",
+          "question": 2,
+          "marks": 20
+        },
+        {
+          "section": "C",
+          "question": 4,
+          "marks": 20
+        }
+      ],
+      "comparedCrossYearMode": 80,
+      "classification": "generic-marks-reader-partial-subtotal",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2024-hl-main-review.json",
+          "sha256": "b5b92ef7a35f8878e01a0bef5a4dc69a2918586c72e760fb8ab88d04eb752442"
+        }
+      ],
+      "manualPricedTasks": 58,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "disposition": "Retain this diagnostic flag. The independent visual ledger and priced-task tariffs govern; neither the sparse subtotal nor the modal 80 is a complete sitting total. No task, source marker, score, or choice pool was removed or changed to make this checksum pass."
+    },
+    {
+      "year": 2025,
+      "level": "hl",
+      "sitting": "main",
+      "flag": {
+        "type": "marks-checksum",
+        "where": "2025 hl ",
+        "detail": "marks sum 72, other years say 80"
+      },
+      "genericMarksSubtotal": 72,
+      "genericQuestionCount": 4,
+      "genericMap": [
+        {
+          "section": "A",
+          "question": 4,
+          "marks": 20
+        },
+        {
+          "section": "A",
+          "question": 2,
+          "marks": 18
+        },
+        {
+          "section": "A",
+          "question": 3,
+          "marks": 18
+        },
+        {
+          "section": "C",
+          "question": 4,
+          "marks": 16
+        }
+      ],
+      "comparedCrossYearMode": 80,
+      "classification": "generic-marks-reader-partial-subtotal",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2025-hl-main-review.json",
+          "sha256": "2241a0ee1adb00c882bdf9866628d2fe276859695b9094eb07cd4422e3bfcf1f"
+        }
+      ],
+      "manualPricedTasks": 61,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "disposition": "Retain this diagnostic flag. The independent visual ledger and priced-task tariffs govern; neither the sparse subtotal nor the modal 80 is a complete sitting total. No task, source marker, score, or choice pool was removed or changed to make this checksum pass."
+    },
+    {
+      "year": 2025,
+      "level": "ol",
+      "sitting": "main",
+      "flag": {
+        "type": "marks-checksum",
+        "where": "2025 ol ",
+        "detail": "marks sum 124, other years say 80"
+      },
+      "genericMarksSubtotal": 124,
+      "genericQuestionCount": 6,
+      "genericMap": [
+        {
+          "section": "A",
+          "question": 1,
+          "marks": 24
+        },
+        {
+          "section": "A",
+          "question": 2,
+          "marks": 20
+        },
+        {
+          "section": "A",
+          "question": 4,
+          "marks": 20
+        },
+        {
+          "section": "A",
+          "question": 5,
+          "marks": 20
+        },
+        {
+          "section": "C",
+          "question": 5,
+          "marks": 20
+        },
+        {
+          "section": "C",
+          "question": 4,
+          "marks": 20
+        }
+      ],
+      "comparedCrossYearMode": 80,
+      "classification": "generic-marks-reader-partial-subtotal",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2025-ol-main-review.json",
+          "sha256": "b90d8de9d7fae1d37aeb852f12b0f77bd7baed3df19202681ba226d9aa3389de"
+        }
+      ],
+      "manualPricedTasks": 60,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "disposition": "Retain this diagnostic flag. The independent visual ledger and priced-task tariffs govern; neither the sparse subtotal nor the modal 80 is a complete sitting total. No task, source marker, score, or choice pool was removed or changed to make this checksum pass."
+    }
+  ]
+}

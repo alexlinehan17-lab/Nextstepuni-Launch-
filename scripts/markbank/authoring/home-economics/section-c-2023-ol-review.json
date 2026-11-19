@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-01",
+  "scope": "2023 Ordinary English main sitting, Section C",
+  "status": "source-reviewed; browser QA pending",
+  "sources": "Paper 039 pp5–8; scheme physical pp16–24, source hashes pinned by generator.",
+  "generator": "he_review_2023_ol_section_c.py",
+  "correctedExistingIds": [
+    "he-2023-ol-sc-q1ai",
+    "he-2023-ol-sc-q1aii",
+    "he-2023-ol-sc-q1aiii",
+    "he-2023-ol-sc-q1bi",
+    "he-2023-ol-sc-q1bii",
+    "he-2023-ol-sc-q1ci",
+    "he-2023-ol-sc-q1cii",
+    "he-2023-ol-sc-q2ai",
+    "he-2023-ol-sc-q2aii",
+    "he-2023-ol-sc-q2bi",
+    "he-2023-ol-sc-q2bii",
+    "he-2023-ol-sc-q2ci",
+    "he-2023-ol-sc-q2cii",
+    "he-2023-ol-sc-q3ai",
+    "he-2023-ol-sc-q3aii",
+    "he-2023-ol-sc-q3aiii",
+    "he-2023-ol-sc-q3bi",
+    "he-2023-ol-sc-q3bii",
+    "he-2023-ol-sc-q3ci",
+    "he-2023-ol-sc-q3cii",
+    "he-2023-ol-sc-q4ai",
+    "he-2023-ol-sc-q4aii",
+    "he-2023-ol-sc-q4aiii",
+    "he-2023-ol-sc-q4bi",
+    "he-2023-ol-sc-q4bii",
+    "he-2023-ol-sc-q4ci",
+    "he-2023-ol-sc-q4cii"
+  ],
+  "addedIds": [],
+  "verifiedEarlierIds": [
+    "he-2023-ol-sc-q3aiv"
+  ],
+  "responseCount": 28,
+  "offeredMarks": {
+    "elective1": 110,
+    "elective2": 55,
+    "elective3": 110,
+    "core": 110,
+    "total": 385
+  },
+  "candidateMarks": "Electives 1/3/core: 50 compulsory + either 30 = 80. Elective 2: 25 compulsory + either 15 = 40.",
+  "boundaryDecisions": [
+    "Renewable energy source and its advantages remain one open-choice card, with all six source examples plus a criterion route for another valid source.",
+    "A fabric finish, description and clothing example remain one response. All six printed routes have the same 4+3+2 tariff, plus an open-choice route.",
+    "Design method has one 4:2:0 point and one 3:2:0 point. The scheme does not say name versus description and prints names only; the card states this explicitly.",
+    "Required fashion, unemployment, social-change and cold-water-supply headings retain reserved scores.",
+    "Osteoporosis causes and effects remain one response, with one reserved cause, one effect and two additional points.",
+    "Lifestyle and/or dietary guidance is flexible; do not split alternative combinations.",
+    "Physical and emotional development both required; no invented per-heading quota."
+  ],
+  "figures": {
+    "bathroom": "Existing complete original source image moved to the explicit question-figure slot. Independent heating task keeps access to source page without an unrelated bathroom image.",
+    "fashion": {
+      "path": "public/exam-figures/home-economics/home-economics-2023-ol-sc-q2ai-fashion.png",
+      "sha256": "abc4a18b3ad50a66911277a8dec4db76641d17e6255b082fd81337a068934ae7",
+      "bounds": [
+        132,
+        123,
+        515,
+        332
+      ],
+      "review": "All original fashion photographs and original source credit visually inspected; neighbouring question fragments removed. Corrected introductory wording to the actual paper: bringing, not scheme’s bring."
+    }
+  },
+  "preservation": {
+    "all560RuntimeIdsRetained": true,
+    "existingChanged": 27,
+    "otherRuntimeCardsByteIdentical": true,
+    "otherCorrectionsAndWithdrawnAliasesUnchanged": true
+  },
+  "atlas": "All 45 Ordinary B/C cards map to the reviewed section-specific anchors and canonical topics; identity map unchanged in this batch.",
+  "validation": {
+    "vitest": "267 passed across 5 suites",
+    "python": "13 passed",
+    "appTypecheck": "passed",
+    "scopedHomeEconomicsTestTypecheck": "passed",
+    "fullTestTypecheck": "Previously recorded 92 pre-existing errors outside these suites; not claimed as passing.",
+    "productionBuild": "passed",
+    "regeneration": "byte-identical",
+    "browser": "Retried CUA: apps/browsers empty, native pipe startup failed. Browser QA remains pending."
+  },
+  "mainSittingConclusion": "All 60 Ordinary main-sitting response boundaries independently checked against visually swept paper and scheme. Offered totals: A84+B280+C385=749; candidate total remains 280/320. Does not include deferred sitting or separate Food Studies coursework."
+}

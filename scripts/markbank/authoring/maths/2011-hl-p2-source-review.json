@@ -1,0 +1,1999 @@
+{
+  "paperFileid": "LC003ALP200EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "offeredMarks": 550,
+  "candidateMarks": 300,
+  "printedQuestionMarks": {
+    "Q1": 50,
+    "Q2": 50,
+    "Q3": 50,
+    "Q4": 50,
+    "Q5": 50,
+    "Q6": 50,
+    "Q7": 50,
+    "Q8": 50,
+    "Q9": 50,
+    "Q10": 50,
+    "Q11": 50
+  },
+  "markingRules": [
+    "Mathematical errors or omissions: −3. Numerical slips: −1. Misreadings: −1 provided the task is not oversimplified.",
+    "A correct relevant step earns its attempt mark; deductions cannot reduce it below that floor. No mark strictly between zero and the attempt mark.",
+    "Worthless work: zero. Hit or miss: full marks or zero.",
+    "Best of two or more attempts accepted unless indicated otherwise; same error in same section penalised once.",
+    "Particular cases, unrequested verifications/diagrams, and serious blunders/omissions/misreadings earn attempt marks at most.",
+    "Detailed task-specific exceptions and caps must remain beside all official worked alternatives."
+  ],
+  "status": "Complete locally: all 60 printed tasks carded, source and image review complete, Mark Bank and Topic Atlas verified. Whole Mathematics subject remains incomplete.",
+  "reviewedAt": "2026-10-30",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "schemePagesInspected": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76
+  ],
+  "generalNotesPages": [
+    35
+  ],
+  "tasks": [
+    {
+      "suffix": "1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        36
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Cartesian equation",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the Cartesian equation of the circle defined by x = 2 + 3 sin θ and y = 3 cos θ, where θ is real."
+    },
+    {
+      "suffix": "1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 25,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        37,
+        38
+      ],
+      "methods": [
+        {
+          "id": "perpendicular-bisectors",
+          "label": "Perpendicular bisectors",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "One mediator",
+              "maximum": 10,
+              "attempt": 3
+            },
+            {
+              "id": "step-2",
+              "label": "Second mediator",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-3",
+              "label": "Centre",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-4",
+              "label": "Finish",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        },
+        {
+          "id": "simultaneous-circle-equations",
+          "label": "Simultaneous circle equations",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Equation in two variables",
+              "maximum": 10,
+              "attempt": 3
+            },
+            {
+              "id": "step-2",
+              "label": "Second equation",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-3",
+              "label": "Two values",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-4",
+              "label": "Finish",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        },
+        {
+          "id": "angle-in-a-semicircle",
+          "label": "Angle in a semicircle",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Appropriate slopes",
+              "maximum": 10,
+              "attempt": 3
+            },
+            {
+              "id": "step-2",
+              "label": "Establishing semicircle",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-3",
+              "label": "Centre or radius",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-4",
+              "label": "Finish",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the equation of the circle through (0, 3), (2, 1) and (6, 5).",
+      "markingNote": "Three alternative published methods, each worth 25 marks. Their marks are not added together."
+    },
+    {
+      "suffix": "1-c-i",
+      "printedParts": [
+        "Q1(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        39
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Two intersections",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that c₁ and c₂ intersect at two points.",
+      "stem": "c₁: x² + y² − 8x + 2y − 23 = 0 has centre A and radius r₁. c₂: x² + y² + 6x + 4y + 3 = 0 has centre B and radius r₂."
+    },
+    {
+      "suffix": "1-c-ii",
+      "printedParts": [
+        "Q1(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        40
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Tangents through centre B",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that the tangents to c₁ at its two intersections with c₂ pass through the centre of c₂.",
+      "stem": "c₁: x² + y² − 8x + 2y − 23 = 0 has centre A and radius r₁. c₂: x² + y² + 6x + 4y + 3 = 0 has centre B and radius r₂."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        41
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Values of s and t",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "Find s and t such that s(i − 4j) + t(2i + 3j) = 4i − 27j."
+    },
+    {
+      "suffix": "2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        41
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Vector OQ",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find OQ in terms of i and j.",
+      "stem": "O is the origin, OP = 3i − 4j, and OQ = 5(OP⊥)."
+    },
+    {
+      "suffix": "2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        42
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Cosine in surd form",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find cos ∠OQP in surd form.",
+      "stem": "O is the origin, OP = 3i − 4j, and OQ = 5(OP⊥)."
+    },
+    {
+      "suffix": "2-c-i",
+      "printedParts": [
+        "Q2(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        42
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Vector AB",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Vector AC",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Express AB and AC in terms of AD and BC.",
+      "stem": "ABC is a triangle; D is the midpoint of [BC]."
+    },
+    {
+      "suffix": "2-c-ii",
+      "printedParts": [
+        "Q2(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        43
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Vector identity proof",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Hence prove |AB|² + |AC|² = 2|AD|² + ½|BC|².",
+      "stem": "ABC is a triangle; D is the midpoint of [BC]. First express AB and AC in terms of AD and BC."
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        44
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Division point",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "P = (−1, 4) and Q = (3, 7). Find the point that divides [PQ] internally in the ratio 3 : 1.",
+      "markingNote": "The original scheme explicitly says General Guideline 8 (accepting the best of multiple attempts) does not necessarily apply here. Using the midpoint once is worthless work (0 marks)."
+    },
+    {
+      "suffix": "3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 20,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        45
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Image line",
+              "maximum": 20,
+              "attempt": 7
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the equation of f(l₁).",
+      "stem": "f maps (x, y) to (x′, y′), where x′ = x − y and y′ = 2x + 3y. The line l₁ is 2x − y − 1 = 0."
+    },
+    {
+      "suffix": "3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        45,
+        46
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Parallel-line proof",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Prove that f maps every pair of parallel lines to a pair of parallel lines. You may assume that f maps every line to a line.",
+      "stem": "f maps (x, y) to (x′, y′), where x′ = x − y and y′ = 2x + 3y. The line l₁ is 2x − y − 1 = 0."
+    },
+    {
+      "suffix": "3-b-iii",
+      "printedParts": [
+        "Q3(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        46
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Both possible lines",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "The line l₂ is parallel to l₁. Its image meets the x-axis at A′ and the y-axis at B′. If triangle A′OB′ has area 9, find both possible equations of l₂.",
+      "stem": "f maps (x, y) to (x′, y′), where x′ = x − y and y′ = 2x + 3y. The line l₁ is 2x − y − 1 = 0. O is the origin."
+    },
+    {
+      "suffix": "3-b-iv",
+      "printedParts": [
+        "Q3(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        46
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Angles not preserved",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Given A′ = f(A) and B′ = f(B), show that ∠AOB ≠ ∠A′OB′.",
+      "stem": "f maps (x, y) to (x′, y′), where x′ = x − y and y′ = 2x + 3y. The line l₁ is 2x − y − 1 = 0. The line l₂ is parallel to l₁. Its image meets the axes at A′ and B′, and triangle A′OB′ has area 9. O is the origin."
+    },
+    {
+      "suffix": "4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        47
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Limit",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Evaluate the limit as x → 0 of (sin 2x + sin x)/(3x)."
+    },
+    {
+      "suffix": "4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 30,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        48
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Transform equation",
+              "maximum": 10,
+              "attempt": 3
+            },
+            {
+              "id": "step-2",
+              "label": "Solve for cosine and sine",
+              "maximum": 10,
+              "attempt": 3
+            },
+            {
+              "id": "step-3",
+              "label": "Solutions",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find all solutions of sin 2x + cos x = 0 for 0° ≤ x ≤ 360°."
+    },
+    {
+      "suffix": "4-c-i",
+      "printedParts": [
+        "Q4(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Area in terms of radii",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Area in terms of x",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Express the area of the shaded region in terms of x.",
+      "stem": "Two circles are concentric. A tangent to the inner circle cuts the outer circle at B and C, with |BC| = 2x. The shaded region is the annulus shown."
+    },
+    {
+      "suffix": "4-c-ii",
+      "printedParts": [
+        "Q4(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Segment area proof",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "If the outer radius is 2x, show that the portion of the shaded region below BC has area (2π/3 − √3)x².",
+      "stem": "Two circles are concentric. A tangent to the inner circle cuts the outer circle at B and C, with |BC| = 2x. The shaded region is the annulus shown."
+    },
+    {
+      "suffix": "5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        50
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "All angles",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find all values of x satisfying 3 tan x = √3, where 0° ≤ x ≤ 360°."
+    },
+    {
+      "suffix": "5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        50,
+        51
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Expanding",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Finish",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Prove tan(A + B) = (tan A + tan B)/(1 − tan A tan B)."
+    },
+    {
+      "suffix": "5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        51
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Identity proof",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that if α + β = 90°, then tan 2α / tan 2β = −1."
+    },
+    {
+      "suffix": "5-c-i",
+      "printedParts": [
+        "Q5(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        52
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Height AD",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find |AD| in surd form.",
+      "stem": "A and B are helicopter landing pads on level ground, and C is on the same level. |BC| = 800 m, |AC| = 900 m, ∠BCA = 60°. A helicopter D is vertically above A; its angle of elevation from C is 30°."
+    },
+    {
+      "suffix": "5-c-ii",
+      "printedParts": [
+        "Q5(c)(ii)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        52
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "AB²",
+              "maximum": 10,
+              "attempt": 3
+            },
+            {
+              "id": "step-2",
+              "label": "BD",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find |BD|.",
+      "stem": "A and B are helicopter landing pads on level ground, and C is on the same level. |BC| = 800 m, |AC| = 900 m, ∠BCA = 60°. A helicopter D is vertically above A; its angle of elevation from C is 30°.",
+      "markingNote": "Accept the candidate’s height from (c)(i). If the work for AB² is worthless, at most attempt marks are available for the remainder of the section."
+    },
+    {
+      "suffix": "6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        53
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Arrangements",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Two adults and four children stand in a row. How many arrangements have all four children between the two adults?",
+      "markingNote": "The answer 6! is classed as worthless work (0 marks)."
+    },
+    {
+      "suffix": "6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        53,
+        54
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "General term",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Solve the difference equation.",
+      "stem": "uₙ₊₂ − 6uₙ₊₁ + 8uₙ = 0 for n ≥ 0, with u₀ = 0 and u₁ = 4."
+    },
+    {
+      "suffix": "6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        54
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Value of n",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "For what value of n is uₙ = 30(2ⁿ)?",
+      "stem": "uₙ₊₂ − 6uₙ₊₁ + 8uₙ = 0 for n ≥ 0, with u₀ = 0 and u₁ = 4."
+    },
+    {
+      "suffix": "6-c-i",
+      "printedParts": [
+        "Q6(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        54
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Probability",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that all five are diamonds, in decimal form correct to two significant figures.",
+      "stem": "Five cards are drawn together at random from a standard pack of 52 playing cards."
+    },
+    {
+      "suffix": "6-c-ii",
+      "printedParts": [
+        "Q6(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        55
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Probability",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that all five are of the same suit, in decimal form correct to two significant figures.",
+      "stem": "Five cards are drawn together at random from a standard pack of 52 playing cards."
+    },
+    {
+      "suffix": "6-c-iii",
+      "printedParts": [
+        "Q6(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        55
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Probability",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that they are the ace, two, three, four and five of diamonds, in decimal form correct to two significant figures.",
+      "stem": "Five cards are drawn together at random from a standard pack of 52 playing cards."
+    },
+    {
+      "suffix": "6-c-iv",
+      "printedParts": [
+        "Q6(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        55
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Probability",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that they include the four aces, in decimal form correct to two significant figures.",
+      "stem": "Five cards are drawn together at random from a standard pack of 52 playing cards."
+    },
+    {
+      "suffix": "7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        56
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Selections",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "How many different selections are possible?",
+      "stem": "A team of four is selected from seven girls and five boys."
+    },
+    {
+      "suffix": "7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        56
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Selections with at least one girl",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "How many selections include at least one girl?",
+      "stem": "A team of four is selected from seven girls and five boys."
+    },
+    {
+      "suffix": "7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        57
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Both paths",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "One path from A to H is A–B–D–H. List the other two.",
+      "stem": "A marble falls from A along the original triangular network. Every path to the bottom row is equally likely. The rows are A; B,C; D,E,F; G,H,J,K; L,M,N,P,Q."
+    },
+    {
+      "suffix": "7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        57
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Probability",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that the marble passes through H or J.",
+      "stem": "A marble falls from A along the original triangular network. Every path to the bottom row is equally likely. The rows are A; B,C; D,E,F; G,H,J,K; L,M,N,P,Q."
+    },
+    {
+      "suffix": "7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        58
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Probability",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that the marble lands at N.",
+      "stem": "A marble falls from A along the original triangular network. Every path to the bottom row is equally likely. The rows are A; B,C; D,E,F; G,H,J,K; L,M,N,P,Q.",
+      "markingNote": "An incomplete outcome list with no further work, or an answer of 1/5, is classed as worthless work (0 marks)."
+    },
+    {
+      "suffix": "7-b-iv",
+      "printedParts": [
+        "Q7(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        58
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Probability",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Two marbles fall independently from A. Find the probability that both land at P.",
+      "stem": "A marble falls from A along the original triangular network. Every path to the bottom row is equally likely. The rows are A; B,C; D,E,F; G,H,J,K; L,M,N,P,Q.",
+      "markingNote": "An answer of 1/25 is classed as worthless work (0 marks)."
+    },
+    {
+      "suffix": "7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        59
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Mean proof",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that (a − μ)/σ, (b − μ)/σ and (c − μ)/σ have mean 0.",
+      "stem": "The real numbers a, b and c have mean μ and standard deviation σ."
+    },
+    {
+      "suffix": "7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        59
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Standard deviation and justification",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find, with justification, the standard deviation of (a − μ)/σ, (b − μ)/σ and (c − μ)/σ.",
+      "stem": "The real numbers a, b and c have mean μ and standard deviation σ."
+    },
+    {
+      "suffix": "8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        60
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Integral",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "Use integration by parts to find ∫ x sin x dx.",
+      "markingNote": "Here the published deduction for omitting the integration constant is 1 mark, not 3."
+    },
+    {
+      "suffix": "8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        60,
+        61
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Expression for x",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use the perimeter to express x in terms of r and π.",
+      "stem": "A window consists of a rectangle of width 2r metres and height x metres, topped by a semicircle of radius r metres. Its perimeter is 20 metres."
+    },
+    {
+      "suffix": "8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        61
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Area in terms of r",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Differentiation",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-3",
+              "label": "Finish",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find, in terms of π, the value of r for which the window’s area is a maximum.",
+      "stem": "A window consists of a rectangle of width 2r metres and height x metres, topped by a semicircle of radius r metres. Its perimeter is 20 metres.",
+      "markingNote": "If the perimeter expression in (b)(i) contains square units, no further marks are available in this section. A non-quadratic area expression is classed as worthless work (0 marks)."
+    },
+    {
+      "suffix": "8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        62
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "General term",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Write down the general term of the series.",
+      "stem": "The Maclaurin series for tan⁻¹x is x − x³/3 + x⁵/5 − x⁷/7 + … ."
+    },
+    {
+      "suffix": "8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        62
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Ratio Test proof",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use the Ratio Test to show that the series converges for |x| < 1.",
+      "stem": "The Maclaurin series for tan⁻¹x is x − x³/3 + x⁵/5 − x⁷/7 + … .",
+      "markingNote": "At most attempt marks (2) if (c)(i) earned 0, or if the index of x in the general term was incorrect."
+    },
+    {
+      "suffix": "8-c-iii",
+      "printedParts": [
+        "Q8(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        63
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Approximation of π",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use π/4 = 4 tan⁻¹(1/5) − tan⁻¹(1/239) and the first three terms of the series to approximate π, correct to five decimal places.",
+      "stem": "The Maclaurin series for tan⁻¹x is x − x³/3 + x⁵/5 − x⁷/7 + … ."
+    },
+    {
+      "suffix": "9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        64
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Value of z₁",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Z has a standard normal distribution. Use the tables to find z₁ such that P(Z ≥ z₁) = 0.0778."
+    },
+    {
+      "suffix": "9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 20,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        64,
+        65
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Probability of another single outcome",
+              "maximum": 10,
+              "attempt": 3
+            },
+            {
+              "id": "step-2",
+              "label": "Finish",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "A biased die rolls a six with probability p; its other five numbers are equally likely. It is rolled with a fair die. Show that the probability of a total of 7 is independent of p."
+    },
+    {
+      "suffix": "9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        65
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Significance test, n = 25",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that, for a sample of 25, the result is not significant at the 5% level.",
+      "stem": "The mean percentage mark in the 2010 Higher Mathematics exam was 67.0%, with standard deviation 10.4%. A random sample of candidates who appealed has mean 69.3%. Investigate whether appealing candidates have similar average results to all candidates."
+    },
+    {
+      "suffix": "9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        66
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Significance test, n = 100",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that, for a sample of 100, the result is significant at the 5% level.",
+      "stem": "The mean percentage mark in the 2010 Higher Mathematics exam was 67.0%, with standard deviation 10.4%. A random sample of candidates who appealed has mean 69.3%. Investigate whether appealing candidates have similar average results to all candidates."
+    },
+    {
+      "suffix": "9-c-iii",
+      "printedParts": [
+        "Q9(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        66
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Smallest sample size",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the smallest sample size for which the result is significant at the 5% level.",
+      "stem": "The mean percentage mark in the 2010 Higher Mathematics exam was 67.0%, with standard deviation 10.4%. A random sample of candidates who appealed has mean 69.3%. Investigate whether appealing candidates have similar average results to all candidates."
+    },
+    {
+      "suffix": "10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        67
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Identity element",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Write down the identity element.",
+      "stem": "Use the original Cayley table for the group ({a, b, c}, *): row a is c,a,b; row b is a,b,c; row c is b,c,a, in column order a,b,c."
+    },
+    {
+      "suffix": "10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        67
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "All three inverses",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Write down the inverse of each element.",
+      "stem": "Use the original Cayley table for the group ({a, b, c}, *): row a is c,a,b; row b is a,b,c; row c is b,c,a, in column order a,b,c."
+    },
+    {
+      "suffix": "10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        68
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Permutation",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Geometrical description",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Write one element x of order 3 in permutation form, and describe the symmetry geometrically.",
+      "stem": "The twelve rotational symmetries of a regular tetrahedron form a group G under composition. Represent symmetries as permutations of the vertices A, B, C and D."
+    },
+    {
+      "suffix": "10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        68
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Permutation",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Geometrical interpretation",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Write one element y of order 2 in permutation form, and describe the symmetry geometrically.",
+      "stem": "The twelve rotational symmetries of a regular tetrahedron form a group G under composition. Represent symmetries as permutations of the vertices A, B, C and D."
+    },
+    {
+      "suffix": "10-b-iii",
+      "printedParts": [
+        "Q10(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        68,
+        69
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Unequal compositions",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that x ∘ y ≠ y ∘ x.",
+      "stem": "The twelve rotational symmetries of a regular tetrahedron form a group G under composition. Represent symmetries as permutations of the vertices A, B, C and D. Choose x of order 3 and y of order 2, giving each permutation and its geometrical description.",
+      "markingNote": "The compositions depend on the chosen x and y; all correct choices give unequal compositions."
+    },
+    {
+      "suffix": "10-b-iv",
+      "printedParts": [
+        "Q10(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        69
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Failure of closure",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Let S = {e, x, y, x ∘ y, y ∘ x, x ∘ x}, where e is the identity. Show that S is not closed under composition.",
+      "stem": "The twelve rotational symmetries of a regular tetrahedron form a group G under composition. Represent symmetries as permutations of the vertices A, B, C and D. Choose x of order 3 and y of order 2, giving each permutation and its geometrical description.",
+      "markingNote": "Other correct examples of non-closure are accepted; the example depends on the chosen x and y."
+    },
+    {
+      "suffix": "10-b-v",
+      "printedParts": [
+        "Q10(b)(v)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        69
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Subgroup proof",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Let H be a subgroup of G with x and y in H. Show that H = G.",
+      "stem": "The twelve rotational symmetries of a regular tetrahedron form a group G under composition. Represent symmetries as permutations of the vertices A, B, C and D. Choose x of order 3 and y of order 2, giving each permutation and its geometrical description. The preceding tasks show x ∘ y ≠ y ∘ x and that S = {e, x, y, x ∘ y, y ∘ x, x ∘ x} is not closed."
+    },
+    {
+      "suffix": "11-a",
+      "printedParts": [
+        "Q11(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        70
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Ellipse equation",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "An ellipse has centre (0, 0), eccentricity 1/2 and a focus at (2, 0). Find its equation."
+    },
+    {
+      "suffix": "11-b-i",
+      "printedParts": [
+        "Q11(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        71
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Both coordinate differences",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Express x₂ − x₁ and y₂ − y₁ in terms of d and θ.",
+      "stem": "P(x₁, y₁) and Q(x₂, y₂) satisfy x₁ < x₂. The slope of PQ is tan θ and its length is d."
+    },
+    {
+      "suffix": "11-b-ii",
+      "printedParts": [
+        "Q11(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        71,
+        72
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Length ratio",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Finish",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that |f(P)f(Q)|/|PQ| = √[(2 cos θ + 5 sin θ)² + (3 cos θ + 4 sin θ)²].",
+      "stem": "P(x₁, y₁) and Q(x₂, y₂) satisfy x₁ < x₂. The slope of PQ is tan θ and its length is d. The transformation f is x′ = 2x + 5y + 6, y′ = 3x + 4y + 1."
+    },
+    {
+      "suffix": "11-b-iii",
+      "printedParts": [
+        "Q11(b)(iii)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        72
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Ratio invariance proof",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "Deduce that the ratio of lengths on parallel lines is invariant under f.",
+      "stem": "P(x₁, y₁) and Q(x₂, y₂) satisfy x₁ < x₂. The slope of PQ is tan θ and its length is d. The transformation f is x′ = 2x + 5y + 6, y′ = 3x + 4y + 1. The preceding part establishes |f(P)f(Q)|/|PQ| = √[(2 cos θ + 5 sin θ)² + (3 cos θ + 4 sin θ)²]."
+    }
+  ],
+  "paperSha256": "96436c3a82db0f6c14263a46b0c054fd2ccf51cbd110a8d29afbc0fe16d7a142",
+  "schemeSha256": "cd69d31b3c60b729b8de0886ec7271ce3a08ac39ffe77e2f025b2422239c850e",
+  "selectionReview": [
+    "Attempt five questions from Section A and one from Section B is whole-examination selection. Retain all tasks in all eleven questions, including all four Section B options. Do not create duplicate examination bundles.",
+    "A marble follows one path: this describes the random experiment, not a choice of practice task. Both other paths to H are required in Q7(b)(i). All events and subparts remain carded.",
+    "Q10(b)(i) and (ii) ask the student to construct an example of a symmetry with a specified order and describe it geometrically. No finite pool of printed answers is offered. The scheme lists the number of possible correct examples but these are alternative valid answers, not selectable printed routes. Later tasks retain the dependency on the chosen x and y.",
+    "All roots, angles, vectors, inverses and proofs requested together remain required. Published alternative solution methods stay inside the relevant card."
+  ],
+  "taskBoundaryReview": [
+    "The independent paper/scheme sweep identifies 60 printed tasks, with 50 offered marks in each of eleven questions. Section A is Q1–Q7; Section B is Q8–Q11.",
+    "Q2(c)(i) requires both vector expressions, Q10(b)(i)/(ii) each require a permutation and its geometrical description, and Q11(b)(ii) requires a linked transformation proof. Their separately allocated components remain visible within each printed task.",
+    "Setup, algebra, differentiation and completion allocations are steps of one response, not additional questions.",
+    "Historical vectors and transformations are placed with coordinate geometry, group operations with algebra, and the ellipse with coordinate geometry of the circle. These are existing canonical navigation topics, not a claim that these historical optional topics belong to the current syllabus. No historical question is hidden."
+  ]
+}
