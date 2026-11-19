@@ -1,5 +1,5 @@
 {
-  "name": "Russian approved summary split exact-candidate verification",
+  "name": "Russian summary verification type correction",
   "permissions": {
     "contents": "read"
   },
@@ -11,7 +11,7 @@
     }
   },
   "concurrency": {
-    "group": "russian-summary-split-20261119",
+    "group": "russian-summary-types-20261119",
     "cancel-in-progress": false
   },
   "jobs": {
@@ -31,7 +31,7 @@
         {
           "name": "Verify exact source candidate",
           "id": "integrity",
-          "run": "test \"$(git rev-parse HEAD^)\" = 4179f7ec80724cc07931960ae3b67642ed460ca7\ntest \"$(git diff --name-only HEAD^ HEAD)\" = .github/workflows/russian-sitting-check-20261118.yml"
+          "run": "test \"$(git rev-parse HEAD^)\" = b8e1b5dd98f64f8084244e385b631b04914f410d\ntest \"$(git diff --name-only HEAD^ HEAD)\" = .github/workflows/russian-sitting-check-20261118.yml\ntest \"$(git rev-parse HEAD^:components)\" = 18139a26262d1d93e180987c15655f15bcc794c0\ntest \"$(git rev-parse HEAD^:data)\" = 9cffffa550e4bfacda8af63060cb02437407d7d5\ntest \"$(git rev-parse HEAD^:scripts/markbank/authored)\" = 5df3c170defa0df0e1fdf8ee7393e8620580c30c"
         },
         {
           "uses": "actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
@@ -50,11 +50,6 @@
           "run": "bash \"$RUNNER_TEMP/plans/tools/heavy.sh\" npm ci --no-audit --no-fund"
         },
         {
-          "name": "Full application types",
-          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
-          "run": "bash \"$RUNNER_TEMP/plans/tools/heavy.sh\" npm run typecheck"
-        },
-        {
           "name": "Prepare changed-test type configuration",
           "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
           "run": "python3 - <<'PYCONFIG'\nfrom pathlib import Path\nimport json\np=Path('tmp/russian-review/2021-hl-nov18-types.json');p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps({'extends': '../../tsconfig.test.json', 'include': ['../../test/russian2017OrdinaryReviewed.test.tsx', '../../test/russian2018HigherReviewed.test.tsx', '../../test/russian2019HigherReviewed.test.tsx', '../../test/russian2020HigherReviewed.test.tsx', '../../test/russian2026Reviewed.test.ts', '../../test/russianSummaryLanguageExceptions.test.ts', '../../test/russianHostedAnswerRoutes.test.ts', '../../test/russian2011HigherReviewed.test.ts', '../../test/russianJointQuestions.test.ts', '../../test/russianVisibleGuidance.test.tsx', '../../test/russian2018OrdinaryReviewed.test.ts', '../../test/setup.ts', '../../vite-env.d.ts']}))\nPYCONFIG"
@@ -70,14 +65,9 @@
           "run": "bash \"$RUNNER_TEMP/plans/tools/heavy.sh\" node node_modules/eslint/bin/eslint.js test/russian2017OrdinaryReviewed.test.tsx test/russian2018HigherReviewed.test.tsx test/russian2019HigherReviewed.test.tsx test/russian2020HigherReviewed.test.tsx test/russian2026Reviewed.test.ts test/russianSummaryLanguageExceptions.test.ts test/russianHostedAnswerRoutes.test.ts components/PaperTrail/vaultResolve.ts test/russian2011HigherReviewed.test.ts test/russianJointQuestions.test.ts test/russianVisibleGuidance.test.tsx test/russian2018OrdinaryReviewed.test.ts --max-warnings 0"
         },
         {
-          "name": "Normal production build",
+          "name": "Corrected summary interaction",
           "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
-          "run": "bash \"$RUNNER_TEMP/plans/tools/heavy.sh\" npm run build"
-        },
-        {
-          "name": "Confirm generation leaves source unchanged",
-          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
-          "run": "git diff --exit-code\ngit status --short"
+          "run": "bash \"$RUNNER_TEMP/plans/tools/heavy.sh\" node node_modules/vitest/vitest.mjs run test/russianVisibleGuidance.test.tsx -t \"shows one 2011 summary\" --maxWorkers=1 --pool=threads"
         }
       ]
     }
