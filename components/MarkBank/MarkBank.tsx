@@ -41,7 +41,7 @@ import {
   commitReview, ensureDeck, fetchDeck, mergeDecks, readChoice, readLocal,
   writeChoice, writeLocal, type DeckState,
 } from './store';
-import { MARK_BANK_LEVEL_LABELS, type SecCard } from '../../types/markBank';
+import { MARK_BANK_LEVEL_LABELS, isConfidenceReviewCard, type SecCard } from '../../types/markBank';
 
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { ResultStatGrid } from '../ui/ProductPatterns';
@@ -277,7 +277,9 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
     const after = gradeCard(before, r.grade, t, retention);
     setDeck(commitReview(uid, deckId, r.cardId, after, t));
     const card = cards.find(candidate => candidate.id === r.cardId);
-    if (uid && uid !== DEMO_STUDENT_UID && card) {
+    // A confidence review has no mark total, so it is not an assessed zero:
+    // it records no accuracy at all.
+    if (uid && uid !== DEMO_STUDENT_UID && card && !isConfidenceReviewCard(card)) {
       const ratio = r.marksAvailable > 0 ? r.marksClaimed / r.marksAvailable : 0;
       const accuracyBand = ratio >= 1 ? 'full' : ratio >= 0.7 ? 'strong' : ratio > 0 ? 'partial' : 'none';
       trackProgrammeEvent('practice_attempt_completed', {
@@ -323,10 +325,17 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
   /* -------------------------------------------------------------- close ---- */
 
   if (screen.name === 'close') {
-    const claimed = screen.results.reduce((n, r) => n + r.marksClaimed, 0);
-    const available = screen.results.reduce((n, r) => n + r.marksAvailable, 0);
+    // Confidence reviews were never scored, so they stay out of the totals.
+    const scored = screen.results.filter(result => {
+      const resultCard = cards.find(card => card.id === result.cardId);
+      return !resultCard || !isConfidenceReviewCard(resultCard);
+    });
+    const unscoredCount = screen.results.length - scored.length;
+    const reviewOnly = scored.length === 0;
+    const claimed = scored.reduce((n, r) => n + r.marksClaimed, 0);
+    const available = scored.reduce((n, r) => n + r.marksAvailable, 0);
     const left = available - claimed;
-    const worst = [...screen.results].sort(
+    const worst = [...scored].sort(
       (a, b) => (b.marksAvailable - b.marksClaimed) - (a.marksAvailable - a.marksClaimed),
     )[0];
     const worstCard = worst && cards.find(c => c.id === worst.cardId);
@@ -349,8 +358,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
           <div style={{
             width: 76, height: 76, margin: '0 auto 20px', borderRadius: 24,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            background: left === 0 ? SUCCESS_TINT : '#FFF0E6',
-            color: left === 0 ? SUCCESS : ACCENT,
+            background: reviewOnly ? 'var(--mb-raised)' : left === 0 ? SUCCESS_TINT : '#FFF0E6',
+            color: reviewOnly ? INK_2 : left === 0 ? SUCCESS : ACCENT,
           }}>
             <svg width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true">
               {left === 0 ? (
@@ -365,19 +374,23 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
           </div>
           <Eyebrow>Session complete</Eyebrow>
           <h2 style={{ font: `700 32px/1.15 ${SERIF}`, color: INK, margin: '7px 0 8px' }}>
-            {left === 0 ? 'Every mark banked.' : 'Good work. Keep building.'}
+            {reviewOnly ? 'Your review is complete.' : left === 0 ? 'Every mark banked.' : 'Good work. Keep building.'}
           </h2>
           <p style={{ font: `400 14px/1.5 ${SANS}`, color: MUTED, margin: '0 0 28px' }}>
             {distinct} {distinct === 1 ? 'question' : 'questions'} reviewed · {subject.title} · {MARK_BANK_LEVEL_LABELS[level]} level
           </p>
 
-          <ResultStatGrid items={[
+          {!reviewOnly && <ResultStatGrid items={[
             { label: 'Marks banked', value: claimed, tone: 'success' },
             { label: 'Available', value: available },
             { label: 'To revisit', value: Math.max(0, left) },
-          ]} />
+          ]} />}
+          {unscoredCount > 0 && <p style={{ font: `400 14px/1.5 ${SANS}`, color: MUTED }}>
+            {unscoredCount} {unscoredCount === 1 ? 'answer review had' : 'answer reviews had'} no calculated marks
+            {reviewOnly ? '.' : unscoredCount === 1 ? ' and is excluded from these totals.' : ' and are excluded from these totals.'}
+          </p>}
 
-          <div style={{ marginTop: 14, background: 'var(--mb-paper)', border: `1px solid ${HAIRLINE}`, borderRadius: 16, padding: '17px 19px', textAlign: 'left' }}>
+          {!reviewOnly && <div style={{ marginTop: 14, background: 'var(--mb-paper)', border: `1px solid ${HAIRLINE}`, borderRadius: 16, padding: '17px 19px', textAlign: 'left' }}>
             {left > 0 && worstCard && (
               <>
                 <Eyebrow>Best next review</Eyebrow>
@@ -392,7 +405,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
                 Nothing left behind. The scheduler will bring these marks back before they fade.
               </p>
             )}
-          </div>
+          </div>}
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 22, textAlign: 'left' }}>
             <PrimaryActionButton label="Back to Mark Bank" onClick={() => setScreen({ name: 'board' })} className="w-full" />

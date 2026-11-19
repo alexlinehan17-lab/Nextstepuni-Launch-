@@ -94,6 +94,16 @@ const ADMITTED_DEFERRED = new Set([
   // German 2022 Higher, the deferred sitting (2026-11-13): written and listening.
   'german|2022|LC011ALP000BV-deferred.pdf',
   'german|2022|LC011ALPA00BV-deferred.pdf',
+  // Codex's reviewed Physics and Home Economics deferred sittings, released 2026-11-18.
+  'physics|2022|LC021ALP000EV-deferred.pdf',
+  'physics|2023|LC021ALP000EV-deferred.pdf',
+  'home-economics-s-and-s|2022|LC098ALP014EV-deferred.pdf',
+  'home-economics-s-and-s|2022|LC098ALP039EV-deferred.pdf',
+  'home-economics-s-and-s|2023|LC098ALP014EV-deferred.pdf',
+  'home-economics-s-and-s|2023|LC098ALP039EV-deferred.pdf',
+  // Maths: both papers at both levels of every deferred sitting, 2022-2025.
+  ...[2022, 2023, 2024, 2025].flatMap(year => ['ALP100', 'ALP200', 'GLP100', 'GLP200']
+    .map(booklet => `mathematics|${year}|LC003${booklet}EV-deferred.pdf`)),
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {

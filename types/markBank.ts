@@ -286,6 +286,8 @@ export interface CardFigure {
    * the written stem and prompt must remain visible. Omitted means the crop
    * contains the complete printed question and replaces that text. */
   includesPrompt?: boolean;
+  /** Verified clarification of a printed source error, shown only with the solution. */
+  sourceNote?: string;
   /** Named in the paper's acknowledgements, where a figure is third-party. */
   thirdPartyRights?: string;
 }
@@ -321,7 +323,11 @@ export interface CardSourceMaterial {
   /** The SEC never published the recording this listening paper was set to (Irish 2010 Foundation aural, whose
    * ledger records the audio as 'unavailable'): the reader says so, in one plain line, above its trigger. */
   recordingUnpublished?: boolean;
-  kind: 'source-text' | 'source-illustration' | 'source-data' | 'exam-material' | 'marking-scheme' | 'source-paper' | 'source-scheme' | 'source-table' | 'supplementary-text' | 'linked-reading';
+  kind: 'source-text' | 'source-question' | 'source-illustration' | 'source-data' | 'exam-material' | 'marking-scheme' | 'source-paper' | 'source-scheme' | 'source-table' | 'supplementary-text' | 'linked-reading';
+  /** Schemes occupy a distinct storage directory, even when file IDs match. */
+  documentKind?: 'paper' | 'scheme';
+  /** A printed-scale measurement task needs the calibrated PDF ruler. */
+  measurementRequired?: boolean;
   /** The paper's own identity for the source, e.g. "TEXT 1". */
   label: string;
   /** Human title printed in the reader header. */
@@ -388,6 +394,11 @@ export const MARK_BANK_LEVEL_LABELS: Record<MarkBankLevel, string> = {
 export const MARK_BANK_LEVEL_SHORT_LABELS: Record<MarkBankLevel, string> = {
   higher: 'HL', ordinary: 'OL', common: 'CL', foundation: 'FL',
 };
+/** An official audiovisual source required by the question, including its sound.
+ * Keep its original SEC identity even when a verified playback copy is used. */
+export interface CardVideoMaterial extends Omit<CardAudioMaterial, 'kind'> {
+  kind: 'source-video';
+}
 
 /** Fields every card shares, whatever its provenance. */
 interface CardBase {
@@ -471,7 +482,7 @@ export interface SecCardBase extends CardBase {
    *  what the card says a student is looking at. Part 4 is the composition,
    *  which is why the union needed a fourth number it had never had. */
   section: 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J'
-  | '1' | '2' | '3' | '4' | 'T1' | 'T2' | 'T3' | 'AG' | 'C1' | 'C2' | 'CD'
+  | '0' | '1' | '2' | '3' | '4' | 'T1' | 'T2' | 'T3' | 'AG' | 'C1' | 'C2' | 'CD'
   | 'IR1' | 'IR2' | 'LA1' | 'LA2' | 'CA1'
   // Latin's paper prints no lettered sections a card could be filed under:
   // it prints five QUESTIONS, and the "Section A"/"Section B" beneath three
@@ -515,6 +526,37 @@ export interface SecCardBase extends CardBase {
   additionalSourceMaterials?: CardSourceMaterial[];
   /** Required listening recording, available on the question side. */
   audioMaterial?: CardAudioMaterial;
+  /** Required original video, available before revealing any marking points. */
+  videoMaterial?: CardVideoMaterial;
+  /** Apply only the verified sitting's explicit wrong-language rule, after
+   * earning marks under its unchanged source tariff. Never infer language. */
+  answerLanguageRule?: {
+    otherLanguageMultiplier: 0 | 0.5;
+    sourceText: string;
+    schemePages: number[];
+    /** Some schemes name a particular response language; do not broaden that
+     * condition to every language other than the question's requested one. */
+    penalizedLanguage?: 'English' | 'Japanese';
+    /** A published exception can leave named manual criteria assessable after
+     * the response-language adjustment. Only top-level language-points
+     * criteria are supported; their ordinary source caps still apply. */
+    manualCriterionExceptions?: {
+      criterionIds: string[];
+      sourceText: string;
+      schemePages: number[];
+    };
+  };
+  /** An explicitly published half-credit condition for the complete priced
+   * response. This and wrong-language half credit apply once, not cumulatively.
+   * Supported only on fixed point cards; never infer extraneous material. */
+  extraneousMaterialRule?: {
+    multiplier: 0.5;
+    sourceText: string;
+    schemePages: number[];
+    /** Exact source clause when the published condition includes more than
+     * extraneous material. Must occur in sourceText; does not change scoring. */
+    conditionLabel?: string;
+  };
   /** Verbatim from the QUESTION PAPER — not the scheme. Required, always. */
   questionText: string;
   /** Names a separately priced task within a shared printed instruction. */
@@ -548,8 +590,41 @@ export interface SecCardBase extends CardBase {
  * exact failure Mark Bank exists to prevent — turning non-exhaustive English
  * indicative material into a fabricated answer checklist.
  */
+export interface MathematicsDeductionComponent {
+  id: string;
+  label: string;
+  maximum: number;
+  /** Zero means no attempt credit; without explicit awards, use hit-or-miss scoring. */
+  attempt: number;
+  /** Some older tasks replace general deductions with an explicit award list. */
+  permittedMarks?: number[];
+}
+
+export interface MathematicsDeductionMethod {
+  id: string;
+  label: string;
+  components: MathematicsDeductionComponent[];
+}
+
 export interface SecPointCardBase extends SecCardBase {
   tariffModel: TariffModel;
+  /** SEC credit scales, verified against the original scheme. Component scales
+   * belong to one indivisible task; their awards sum to the question total. */
+  mathematicsScale?: {
+    /** The fixed finite selection practised by this card; original question remains intact. */
+    practiceInstruction?: string;
+    /** Reviewed task-specific prerequisites, restrictions or follow-through rules. */
+    markingNote?: string;
+    fullCreditMinusOne: boolean;
+    schemeFileid: string;
+    schemePages: number[];
+    generalNotesPages: number[];
+  } & ({ code: string; marks: number[]; components?: never; methods?: never }
+    | { code?: never; marks?: never; methods?: never; components: { id: string; label: string; code: string; marks: number[]; fullCreditMinusOne?: boolean }[] }
+    | { code?: never; marks?: never; components?: never; fullCreditMinusOne: false;
+        /** Older schemes deduct errors from named steps, with an attempt floor.
+         * Alternative methods are exclusive: never add their awards together. */
+        methods: MathematicsDeductionMethod[] });
   /** Capped at six REQUIRED rows. Keep separately marked tasks split, while
    *  retaining all six marking groups in a published three-comparison route.
    *
@@ -1532,7 +1607,126 @@ export interface HistoryEssayRubric {
  *  build-deck.mjs, which refuses any other wording. */
 export const HISTORY_ESSAY_NO_MODEL_ANSWER = 'The scheme prints no model answer for this question.';
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric | ReligiousEducationRubric | HistoryEssayRubric;
+/** Source-defined language grids. Conditions are printed scheme rules, never
+ * inferred from the language or carried forward from another examination. */
+export type LanguageLimitCondition =
+  | { criterionIds: string[]; atMost: number; ignoreDeductions?: boolean;
+      /** Include the actual capped allocation of selected response groups.
+       * Only whole-task language-points criteria without language penalties
+       * may use this source-defined content threshold. Never entered twice. */
+      includeSelectedGroupMarks?: true }
+  | { length: 'words' | 'characters'; below: number }
+  | { flag: string; prompt: string };
+
+export interface LanguageBand {
+  label: string;
+  marks: number[];
+  guidance: string[];
+}
+
+export interface LanguageWritingCriterion {
+  id: string;
+  label: string;
+  kind?: 'award' | 'deduction';
+  /** A deduction changes this criterion, including subsequent content tests. */
+  deductFrom?: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  guidance: string[];
+  /** An explicit published award to every candidate, independent of response
+   * or saved placements. Supported only on top-level language-writing
+   * criteria without deductions, conditions or response-language rules. */
+  automaticAward?: {
+    marks: number;
+    sourceText: string;
+    schemePages: number[];
+  };
+  bands?: LanguageBand[];
+  limits?: Array<{
+    id: string;
+    /** A source scale may start above zero. Zero remains unassessed; a
+     * previous lower placement must never be raised to this minimum. */
+    minMarks?: number;
+    maxMarks: number;
+    /** The published scale name, e.g. Lower A or Lower E. */
+    scaleLabel?: string;
+    when: { any: LanguageLimitCondition[] };
+    bands?: LanguageBand[];
+    guidance: string[];
+  }>;
+}
+
+export interface LanguageWritingRubric {
+  system: 'language-writing';
+  taskRequirements: string[];
+  criteria: LanguageWritingCriterion[];
+  markingGuideNote: string;
+}
+
+/** A printed choose-k task whose options each have independently claimable
+ * components: e.g. a kanji reading AND meaning. Selection counts complete
+ * option groups, so partial components never create additional answer slots. */
+export interface LanguagePointsRubric {
+  system: 'language-points';
+  taskRequirements: string[];
+  count: number;
+  /** Published alternative ways of expressing the same answer. Only one
+   * member group from each set can contribute, even when their detail
+   * quotas or available marks differ. */
+  alternativeSets?: Array<{
+    id: string;
+    label: string;
+    sourceText: string;
+    schemePages: number[];
+  }>;
+  /** An explicitly published cap across selected groups, before separate
+   * whole-task criteria. A global answerCount counts individual row answers
+   * after each group's own quota, not the number of selected groups. */
+  allocationCap?: {
+    maxMarks: number;
+    answerCount?: number;
+    sourceText: string;
+    schemePages: number[];
+    /** A published transfer between manually assessed categories. One
+     * category at reducedMarks permits one other at increasedMarks; otherwise
+     * each is limited to normalMarks. Each group is one stepped category row.
+     * The enclosing sourceText/pages must contain this precise rule. */
+    categoryCompensation?: {
+      normalMarks: number;
+      reducedMarks: number;
+      increasedMarks: number;
+    };
+    /** Explicit source conditions reduce the whole allocation, without
+     * inventing partial credit for an otherwise full-mark detail. */
+    limits?: Array<{
+      id: string;
+      maxMarks: number;
+      when: { flag: string; prompt: string };
+      sourceText: string;
+      schemePages: number[];
+    }>;
+  };
+  /** Whole-task criteria in addition to the chosen answers, e.g. the SEC's
+   * separately awarded discretionary marks. Never silently granted. */
+  criteria?: LanguageWritingCriterion[];
+  groups: Array<{
+    id: string;
+    label: string;
+    alternativeSet?: string;
+    /** Mutually exclusive complete/partial wordings within one semantic answer. */
+    answerCount?: number;
+    rows: Array<{ id: string; text: string; marks: number; steps?: number[] }>;
+    /** Independently placed content/expression for this selected response.
+     * IDs must be unique across all groups and whole-task criteria. Limits
+     * may reference this group's criteria or an explicitly assessed flag.
+     * Group flag IDs must be distinct from other groups and whole-task flags.
+     * Response-specific length controls are not supported. */
+    criteria?: LanguageWritingCriterion[];
+  }>;
+  markingGuideNote: string;
+}
+
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric | ReligiousEducationRubric | HistoryEssayRubric | LanguageWritingRubric | LanguagePointsRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -1598,6 +1792,22 @@ export type SecCard = SecPointCard | SecRubricCard;
 export const isSecCard = (c: MarkBankCard): c is SecCard => c.source === 'sec';
 export const isPointCard = (c: SecCard): c is SecPointCard => c.kind === 'question' || c.kind === 'diagram';
 export const isRubricCard = (c: SecCard): c is SecRubricCard => c.kind === 'rubric';
+
+/** Subjects whose reviewed decks (released from Codex on 18 Nov 2026) hold a
+ *  task as a confidence review. Elsewhere a question-total card keeps the
+ *  mark-total assessment it has always had. */
+const CONFIDENCE_REVIEW_SUBJECTS = new Set(['maths', 'physics', 'home-economics', 'japanese', 'russian', 'lcvp']);
+
+/**
+ * A "confidence-only" hold: the reviewed scheme gives this task no settled
+ * per-answer tariff (or its sources disagree on the total), so it is shown and
+ * self-assessed but never scored: no mark total is offered, no numeric accuracy
+ * is recorded, and the close screen leaves it out of its totals. These cards
+ * stay as reviewed until they are converted under R3/R4.
+ */
+export const isConfidenceReviewCard = (c: SecCard): boolean =>
+  isPointCard(c) && c.tariffModel.kind === 'questionTotal' && !c.mathematicsScale
+  && CONFIDENCE_REVIEW_SUBJECTS.has(c.subjectId);
 export const isDiagramCard = (c: MarkBankCard): c is SecDiagramCard =>
   c.source === 'sec' && c.kind === 'diagram';
 
@@ -1844,6 +2054,33 @@ export function rowPartsReconcile(row: MarkRow): boolean {
 }
 
 export function tariffReconciles(card: SecCard): boolean {
+  if (card.extraneousMaterialRule && (card.extraneousMaterialRule.multiplier !== 0.5
+    || !card.extraneousMaterialRule.sourceText.trim() || !card.extraneousMaterialRule.schemePages.length
+    || !card.extraneousMaterialRule.schemePages.every(page => Number.isInteger(page) && page > 0)
+    || (card.extraneousMaterialRule.conditionLabel !== undefined
+      && (!card.extraneousMaterialRule.conditionLabel.trim()
+        || !card.extraneousMaterialRule.sourceText.replace(/\s+/g, ' ').includes(
+          card.extraneousMaterialRule.conditionLabel.trim().replace(/\s+/g, ' '))))
+    || !isPointCard(card) || card.tariffModel.kind !== 'fixed' || !!card.mathematicsScale)) return false;
+  if (card.answerLanguageRule && (![0, 0.5].includes(card.answerLanguageRule.otherLanguageMultiplier)
+    || !card.answerLanguageRule.sourceText.trim() || !card.answerLanguageRule.schemePages.length
+    || (card.answerLanguageRule.penalizedLanguage !== undefined
+      && !['English', 'Japanese'].includes(card.answerLanguageRule.penalizedLanguage))
+    || !card.answerLanguageRule.schemePages.every(page => Number.isInteger(page) && page > 0))) return false;
+  if (card.answerLanguageRule && (isRubricCard(card)
+    ? !['language-writing', 'language-points'].includes(card.rubric.system)
+    : card.tariffModel.kind !== 'fixed' || !!card.mathematicsScale)) return false;
+  const manualExceptions = card.answerLanguageRule?.manualCriterionExceptions;
+  if (manualExceptions) {
+    if (!isRubricCard(card) || card.rubric.system !== 'language-points') return false;
+    const criteria = card.rubric.criteria ?? [];
+    if (!manualExceptions.criterionIds.length
+      || new Set(manualExceptions.criterionIds).size !== manualExceptions.criterionIds.length
+      || manualExceptions.criterionIds.some(id => !id.trim()
+        || !criteria.some(criterion => criterion.id === id && criterion.kind !== 'deduction'))
+      || !manualExceptions.sourceText.trim() || !manualExceptions.schemePages.length
+      || !manualExceptions.schemePages.every(page => Number.isInteger(page) && page > 0)) return false;
+  }
   if (isRubricCard(card)) {
     if (card.rubric.system === 'religious-education') {
       // One grid per answer: its bands cover 0..answerMax, and the answers
@@ -1873,6 +2110,165 @@ export function tariffReconciles(card: SecCard): boolean {
           && covers(otherWay.bands, otherWay.answerMax) && !(ceilings ?? []).length))
         && (ceilings ?? []).every(ceiling => ceiling.when.trim()
           && Number.isInteger(ceiling.max) && ceiling.max > 0 && ceiling.max < answerMax);
+    }
+    if (card.rubric.system === 'language-writing' || card.rubric.system === 'language-points') {
+      const rubric = card.rubric;
+      const criteria = rubric.criteria ?? [];
+      const ids = new Set(criteria.map(criterion => criterion.id));
+      const automatic = criteria.filter(criterion => criterion.automaticAward !== undefined);
+      if (automatic.length && (rubric.system !== 'language-writing' || !!card.answerLanguageRule
+        || automatic.some(criterion => {
+          const award = criterion.automaticAward!;
+          return !award || criterion.kind === 'deduction' || criterion.deductFrom !== undefined
+            || criterion.bands !== undefined || criterion.limits !== undefined
+            || criteria.some(other => other.deductFrom === criterion.id)
+            || !Number.isInteger(award.marks) || award.marks <= 0 || award.marks !== criterion.maxMarks
+            || criterion.permittedMarks.length !== 1 || criterion.permittedMarks[0] !== award.marks
+            || !award.sourceText.trim() || !award.schemePages.length
+            || !award.schemePages.every(page => Number.isInteger(page) && page > 0);
+        }))) return false;
+      const validSteps = (marks: number[], max: number) => marks.length > 0
+        && marks[0] === 0 && marks.at(-1) === max
+        && marks.every((mark, index) => Number.isFinite(mark) && mark >= 0 && mark <= max && (index === 0 || mark > marks[index - 1]));
+      const validBands = (bands: LanguageBand[] | undefined, allowed: number[]) => {
+        if (!bands) return true;
+        const marks = bands.flatMap(band => band.marks);
+        // Some published grids start at1; zero remains the unclaimed state,
+        // without inventing a source band the scheme did not print.
+        return allowed.every(mark => mark === 0 || marks.includes(mark)) && new Set(marks).size === marks.length
+          && marks.every(mark => allowed.includes(mark))
+          && bands.every(band => band.label.trim() && band.guidance.length > 0 && band.guidance.every(text => text.trim()));
+      };
+      if (ids.size !== criteria.length || !criteria.every(criterion => criterion.id && criterion.label.trim()
+        && criterion.guidance.every(text => text.trim())
+        && Number.isInteger(criterion.maxMarks) && criterion.maxMarks >= 0
+        && (criterion.automaticAward !== undefined || validSteps(criterion.permittedMarks, criterion.maxMarks))
+        && validBands(criterion.bands, criterion.permittedMarks)
+        && (criterion.kind !== 'deduction' || criteria.some(target => target.id === criterion.deductFrom && target.kind !== 'deduction'))
+        && (criterion.limits ?? []).every(limit => limit.id && criterion.permittedMarks.includes(limit.maxMarks)
+          && limit.guidance.every(text => text.trim())
+          && (limit.minMarks === undefined || (criterion.permittedMarks.includes(limit.minMarks) && limit.minMarks <= limit.maxMarks))
+          && (limit.scaleLabel === undefined || !!limit.scaleLabel.trim())
+          && limit.when.any.length > 0 && validBands(limit.bands, criterion.permittedMarks.filter(mark => mark === 0
+            || (mark >= (limit.minMarks ?? 0) && mark <= limit.maxMarks)))
+          && limit.when.any.every(condition => 'criterionIds' in condition
+            ? (condition.includeSelectedGroupMarks === undefined ? condition.criterionIds.length > 0
+                : condition.includeSelectedGroupMarks === true && rubric.system === 'language-points' && !card.answerLanguageRule)
+              && condition.criterionIds.every(id => ids.has(id) && id !== criterion.id) && Number.isFinite(condition.atMost)
+            : 'length' in condition ? Number.isInteger(condition.below) && condition.below > 0
+              : !!condition.flag && !!condition.prompt.trim())))) return false;
+      // Source rules may depend on other criteria, but circular definitions
+      // cannot establish a published tariff and are rejected at authoring time.
+      const cyclic = (id: string, path: string[]): boolean => {
+        if (path.includes(id)) return true;
+        const criterion = criteria.find(item => item.id === id);
+        return (criterion?.limits ?? []).some(limit => limit.when.any.some(condition => 'criterionIds' in condition
+          && condition.criterionIds.some(ref => cyclic(ref, [...path, id]))));
+      };
+      if (criteria.some(criterion => cyclic(criterion.id, []))) return false;
+      const criterionTotal = criteria.filter(criterion => criterion.kind !== 'deduction').reduce((sum, criterion) => sum + criterion.maxMarks, 0);
+      if (rubric.system === 'language-writing') return criteria.length > 0 && criterionTotal === card.totalMarks;
+      const { groups, count } = rubric;
+      if (!Number.isInteger(count) || count < 1 || count > groups.length || new Set(groups.map(group => group.id)).size !== groups.length) return false;
+      const alternatives = rubric.alternativeSets ?? [];
+      const alternativeIds = new Set(alternatives.map(set => set.id));
+      if (alternativeIds.size !== alternatives.length
+        || !alternatives.every(set => set.id && set.label.trim() && set.sourceText.trim()
+          && set.schemePages.length > 0 && set.schemePages.every(page => Number.isInteger(page) && page > 0)
+          && groups.filter(group => group.alternativeSet === set.id).length >= 2)
+        || !groups.every(group => group.alternativeSet === undefined || alternativeIds.has(group.alternativeSet))) return false;
+      const allCriterionIds = [...criteria, ...groups.flatMap(group => group.criteria ?? [])].map(criterion => criterion.id);
+      if (new Set(allCriterionIds).size !== allCriterionIds.length) return false;
+      const groupCriterionTotal = (group: typeof groups[number]) => (group.criteria ?? []).filter(criterion => criterion.kind !== 'deduction')
+        .reduce((sum, criterion) => sum + criterion.maxMarks, 0);
+      if (!groups.every(group => group.id && group.label.trim() && (group.rows.length > 0 || (group.criteria?.length ?? 0) > 0)
+        && !(group.criteria ?? []).some(criterion => criterion.automaticAward)
+        && (group.criteria ?? []).every(criterion => (criterion.limits ?? []).every(limit => limit.when.any.every(condition => 'criterionIds' in condition || 'flag' in condition)))
+        && (!group.criteria || tariffReconciles({ ...card, totalMarks: groupCriterionTotal(group),
+          // The parent validated its response-level exceptions. A group-only
+          // criterion check must not inherit those top-level criterion IDs.
+          answerLanguageRule: card.answerLanguageRule && { ...card.answerLanguageRule, manualCriterionExceptions: undefined },
+          rubric: { system: 'language-writing', criteria: group.criteria, taskRequirements: rubric.taskRequirements, markingGuideNote: rubric.markingGuideNote } }))
+        && new Set(group.rows.map(row => row.id)).size === group.rows.length
+        && (group.answerCount === undefined || (Number.isInteger(group.answerCount) && group.answerCount >= 1 && group.answerCount <= group.rows.length))
+        && group.rows.every(row => row.id && row.text.trim() && Number.isInteger(row.marks) && row.marks > 0 && (!row.steps || validSteps(row.steps, row.marks))))) return false;
+      const responseFlags = new Set([
+        ...criteria.flatMap(criterion => (criterion.limits ?? []).flatMap(limit => limit.when.any.flatMap(condition => 'flag' in condition ? [condition.flag] : []))),
+        ...(rubric.allocationCap?.limits ?? []).map(limit => limit.when.flag),
+      ]);
+      const groupFlags = new Map<string, { groupId: string; prompt: string }>();
+      for (const group of groups) for (const criterion of group.criteria ?? []) for (const limit of criterion.limits ?? []) {
+        for (const condition of limit.when.any) if ('flag' in condition) {
+          const previous = groupFlags.get(condition.flag);
+          if (responseFlags.has(condition.flag) || (previous && (previous.groupId !== group.id || previous.prompt !== condition.prompt))) return false;
+          groupFlags.set(condition.flag, { groupId: group.id, prompt: condition.prompt });
+        }
+      }
+      const families = new Map<string, typeof groups>();
+      for (const group of groups) {
+        const key = group.alternativeSet === undefined ? `group:${group.id}` : `alternative:${group.alternativeSet}`;
+        families.set(key, [...(families.get(key) ?? []), group]);
+      }
+      const choices = [...families.values()];
+      if (count > choices.length) return false;
+      const maxima = choices.map(options => Math.max(...options.map(group => group.rows.map(row => row.marks).sort((a, b) => b - a)
+        .slice(0, group.answerCount ?? group.rows.length).reduce((sum, mark) => sum + mark, 0) + groupCriterionTotal(group)))).sort((a, b) => b - a);
+      let allocationMaximum = maxima.slice(0, count).reduce((sum, mark) => sum + mark, 0);
+      const cap = rubric.allocationCap;
+      if (cap) {
+        if (!Number.isInteger(cap.maxMarks) || cap.maxMarks <= 0 || !cap.sourceText.trim()
+          || !cap.schemePages.length || !cap.schemePages.every(page => Number.isInteger(page) && page > 0)) return false;
+        const compensation = cap.categoryCompensation;
+        if (compensation) {
+          const { normalMarks, reducedMarks, increasedMarks } = compensation;
+          if (![normalMarks, reducedMarks, increasedMarks].every(Number.isInteger)
+            || reducedMarks <= 0 || reducedMarks >= normalMarks || increasedMarks <= normalMarks
+            || increasedMarks - normalMarks !== normalMarks - reducedMarks
+            || count !== groups.length || count < 2 || cap.answerCount !== undefined
+            || cap.maxMarks !== normalMarks * count
+            || groups.some(group => group.alternativeSet !== undefined || !!group.criteria?.length || group.rows.length !== 1
+              || group.rows[0].marks !== increasedMarks || !group.rows[0].steps?.includes(normalMarks)
+              || !group.rows[0].steps.includes(reducedMarks)
+              || group.rows[0].steps.some(mark => mark > normalMarks && mark !== increasedMarks))) return false;
+        }
+        const limits = cap.limits ?? [];
+        if (new Set(limits.map(limit => limit.id)).size !== limits.length
+          || !limits.every(limit => limit.id.trim() && Number.isInteger(limit.maxMarks)
+            && limit.maxMarks >= 0 && limit.maxMarks < cap.maxMarks
+            && limit.when.flag.trim() && limit.when.prompt.trim() && limit.sourceText.trim()
+            && limit.schemePages.length > 0 && limit.schemePages.every(page => Number.isInteger(page) && page > 0))) return false;
+        if (cap.answerCount !== undefined) {
+          const answerCount = cap.answerCount;
+          const maximumRows = choices.map(options => Math.max(...options.map(group => group.answerCount ?? group.rows.length))).sort((a, b) => b - a)
+            .slice(0, count).reduce((sum, rows) => sum + rows, 0);
+          if (!Number.isInteger(answerCount) || answerCount < 1 || answerCount > maximumRows
+            || groups.some(group => !!group.criteria?.length)) return false;
+          // Compute an achievable maximum under BOTH quotas. Simply taking
+          // the highest group totals can overstate a three-detail allocation
+          // when one group contains two separately credited details.
+          let best = Array.from({ length: count + 1 }, () => Array<number>(answerCount + 1).fill(-Infinity));
+          best[0][0] = 0;
+          for (const options of choices) {
+            const next = best.map(values => [...values]);
+            for (const group of options) {
+              const rows = group.rows.map(row => row.marks).sort((a, b) => b - a)
+                .slice(0, group.answerCount ?? group.rows.length);
+              for (let chosen = 0; chosen < count; chosen++) for (let used = 0; used <= answerCount; used++) {
+                let marks = 0;
+                for (let take = 1; take <= rows.length && used + take <= answerCount; take++) {
+                  marks += rows[take - 1];
+                  next[chosen + 1][used + take] = Math.max(next[chosen + 1][used + take], best[chosen][used] + marks);
+                }
+              }
+            }
+            best = next;
+          }
+          allocationMaximum = Math.max(...best.flat());
+        }
+        if (cap.maxMarks > allocationMaximum) return false;
+        allocationMaximum = cap.maxMarks;
+      }
+      return allocationMaximum + criterionTotal === card.totalMarks;
     }
     if (card.rubric.system === 'politics') {
       const { criteria, schemePages, schemeFileid } = card.rubric;
@@ -2094,6 +2490,44 @@ export function tariffReconciles(card: SecCard): boolean {
   ))) return false;
   // Parts are a criterion row's own split: they add up to it, each on printed steps.
   if (rows.some(row => row.parts && !rowPartsReconcile(row))) return false;
+  if (card.mathematicsScale) {
+    const scale = card.mathematicsScale;
+    const validBand = (band: { code: string; marks: number[] }, maximum: number) =>
+      /^\d+[ABCDE]$/.test(band.code)
+      && Number.parseInt(band.code, 10) === maximum
+      && band.marks.length === 'ABCDE'.indexOf(band.code.at(-1)!) + 2
+      && band.marks[0] === 0 && band.marks.at(-1) === maximum
+      && band.marks.every((mark, index) => Number.isInteger(mark)
+        && (index === 0 || mark > band.marks[index - 1]));
+    const valid = scale.methods
+      ? scale.code === undefined && scale.marks === undefined && scale.components === undefined
+        && !scale.fullCreditMinusOne && scale.methods.length > 0
+        && new Set(scale.methods.map(method => method.id)).size === scale.methods.length
+        && scale.methods.every(method => /^[a-z][a-z0-9-]*$/.test(method.id) && method.label.trim().length > 0
+          && method.components.length > 0
+          && new Set(method.components.map(component => component.id)).size === method.components.length
+          && method.components.every(component => /^[a-z][a-z0-9-]*$/.test(component.id)
+            && component.label.trim().length > 0 && Number.isInteger(component.maximum) && component.maximum > 0
+            && Number.isInteger(component.attempt) && component.attempt >= 0 && component.attempt < component.maximum
+            && (component.permittedMarks === undefined || (Array.isArray(component.permittedMarks)
+              && component.permittedMarks[0] === 0 && component.permittedMarks.at(-1) === component.maximum
+              && component.permittedMarks.includes(component.attempt)
+              && component.permittedMarks.every((mark, index, marks) => Number.isInteger(mark)
+                && (index === 0 || (mark >= component.attempt && mark > marks[index - 1]))))))
+          && method.components.reduce((sum, component) => sum + component.maximum, 0) === totalMarks)
+      : scale.components
+      ? scale.code === undefined && scale.marks === undefined && scale.components.length > 1
+        && new Set(scale.components.map(component => component.id)).size === scale.components.length
+        && scale.components.every(component => /^[a-z][a-z0-9-]*$/.test(component.id)
+          && component.id !== 'deduction' && component.label.trim().length > 0
+          && (component.fullCreditMinusOne === undefined || typeof component.fullCreditMinusOne === 'boolean')
+          && validBand(component, Number.parseInt(component.code, 10)))
+        && !(scale.fullCreditMinusOne && scale.components.some(component => component.fullCreditMinusOne))
+        && scale.components.reduce((sum, component) => sum + Number.parseInt(component.code, 10), 0) === totalMarks
+      : validBand({ code: scale.code, marks: scale.marks }, totalMarks);
+    return valid && typeof scale.fullCreditMinusOne === 'boolean'
+      && scale.schemePages.length > 0 && scale.generalNotesPages.length > 0;
+  }
   if (t.kind === 'orderedSplit') return rows.every(r => r.marks === null);
   // The scheme never printed a split, so a row carrying its own marks is a
   // value the card invented — the tariff lives on the question alone.

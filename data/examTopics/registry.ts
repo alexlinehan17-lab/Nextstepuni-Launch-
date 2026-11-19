@@ -484,7 +484,10 @@ interface TechnologyRuntime {
 
 interface ChemistryRuntime extends BiologyRuntime {}
 
-interface PhysicsRuntime extends BiologyRuntime {}
+interface PhysicsRuntime extends Omit<BiologyRuntime, 'questionMappings'> {
+  /** [h/o, year-2000, question, topic indexes, optional deferred sitting] */
+  questionMappings: Array<['h' | 'o', number, string, number[], 'd'?]>;
+}
 
 interface DesignAndCommunicationGraphicsRuntime {
   v: 1;
@@ -558,7 +561,7 @@ interface BrowserQuestionRuntime {
   schemaVersion: 1;
   subjectId: string;
   topicIds: string[];
-  /** [level, language, year, paper slot, exact SEC booklet, card number, topic indexes] */
+  /** [level, language, year, paper slot, exact SEC booklet, card number, topic indexes, optional sitting] */
   questionMappings: Array<[
     'h' | 'o' | 'f',
     'e' | 'i',
@@ -567,6 +570,7 @@ interface BrowserQuestionRuntime {
     string,
     string,
     number[],
+    ExamSitting?,
   ]>;
 }
 
@@ -3569,6 +3573,7 @@ const registerBrowserQuestionRuntime = (runtime: BrowserQuestionRuntime) => {
     fileid,
     n,
     topicIndexes,
+    sitting = 'main',
   ] of runtime.questionMappings) {
     const topicIds = topicIndexes.map(topicIndex => {
       const topicId = runtime.topicIds[topicIndex];
@@ -3587,7 +3592,7 @@ const registerBrowserQuestionRuntime = (runtime: BrowserQuestionRuntime) => {
         runtime.subjectId,
         browserAuditLevel(levelCode),
         year,
-        'main',
+        sitting,
         fileid,
         n,
         paperKey,
@@ -3650,6 +3655,9 @@ const registerCanonicalTagBridge = (taxonomy: ExamTopicTaxonomy) => {
 
   for (const paper of PAPER_TOPIC_TAGS) {
     if (paper.subjectId !== taxonomy.subjectId) continue;
+    // The index gives deferred files a distinct virtual name. A canonical
+    // fallback must preserve that sitting just as exact runtime mappings do.
+    const sitting: ExamSitting = /-deferred\.pdf$/i.test(paper.fileid) ? 'deferred' : 'main';
     for (const question of paper.q) {
       const topicIds = [...new Set(
         [question.primary, question.secondary]
@@ -3670,7 +3678,7 @@ const registerCanonicalTagBridge = (taxonomy: ExamTopicTaxonomy) => {
         paper.subjectId,
         paper.level,
         paper.year,
-        'main',
+        sitting,
         question.n,
         paper.paperKey,
       );
@@ -3678,7 +3686,7 @@ const registerCanonicalTagBridge = (taxonomy: ExamTopicTaxonomy) => {
         paper.subjectId,
         paper.level,
         paper.year,
-        'main',
+        sitting,
         paper.fileid,
         question.n,
         paper.paperKey,
@@ -4035,16 +4043,16 @@ for (const [levelCode, yearOffset, n, topicIndexes] of chemistryRuntime.question
   );
 }
 
-// Physics shares the audited mapping between both official-language editions.
-// Exact factual joins cover 391 logical cards; 41 valid local questions absent
-// from the snapshot are retained from direct SEC-paper review.
-for (const [levelCode, yearOffset, n, topicIndexes] of physicsRuntime.questionMappings) {
+// Physics main mappings are shared between official-language editions.
+// Reviewed deferred sittings have a separate key, even when their Q numbers
+// match the main paper. Direct reviews also retain reference omissions.
+for (const [levelCode, yearOffset, n, topicIndexes, sittingCode] of physicsRuntime.questionMappings) {
   QUESTION_TOPICS.set(
     questionKey(
       physicsRuntime.subjectId,
       levelCode === 'h' ? 'higher' : 'ordinary',
       yearOffset + 2000,
-      'main',
+      sittingCode === 'd' ? 'deferred' : 'main',
       n,
       'single',
     ),
