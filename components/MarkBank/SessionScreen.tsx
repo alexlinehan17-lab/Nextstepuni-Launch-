@@ -47,9 +47,11 @@ import {
   MARK_BANK_LEVEL_LABELS,
   MARK_BANK_LEVEL_SHORT_LABELS,
   groupMarks,
+  isNoSchemeCard,
   isConfidenceReviewCard,
   isPointCard,
   isRubricCard,
+  NO_SCHEME_PUBLISHED,
   pclmCapRule,
   rowId,
   type ArtRubric,
@@ -110,6 +112,8 @@ import FrenchQuestionChoices from './FrenchQuestionChoices';
 import { frenchMarks, rubricLanguage, type FrenchScoreId } from './frenchRubric';
 import HistoryEssayPanel from './HistoryEssayPanel';
 import { historyEssayMarks, historyEssayPlacementComplete, type HistoryEssayScoreId } from './historyEssayScoring';
+import TranslationPanel from './TranslationPanel';
+import { translationMarks, translationPlacementComplete, type TranslationScoreId } from './translationScoring';
 import { listeningExerciseKey, listeningScoredAlone, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
 import { stemWithListBreaks, stemWithPrintedBreaks } from './stemText';
@@ -471,7 +475,7 @@ export type IrishScoreId = `irish:${string}`;
 export type { GeographyScoreId } from './geographyScoring';
 export { artMarks, artScoreId };
 export type { ArtScoreId };
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | AccountingScoreId | FrenchScoreId | BusinessScoreId | ReligiousEducationScoreId | HistoryEssayScoreId | LanguageScoreId | 'mathematics' | `mathematics:${string}`;
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | AccountingScoreId | FrenchScoreId | BusinessScoreId | ReligiousEducationScoreId | HistoryEssayScoreId | LanguageScoreId | TranslationScoreId | 'mathematics' | `mathematics:${string}`;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -646,6 +650,7 @@ export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system === 'politics') return politicsMarks(card, scores);
   if (card.rubric.system === 'religious-education') return religiousEducationMarks(card, scores);
   if (card.rubric.system === 'history-essay') return historyEssayMarks(card, scores);
+  if (card.rubric.system === 'translation') return translationMarks(card, scores);
   return pclmMarks(card, scores as PclmScores);
 }
 
@@ -1916,6 +1921,11 @@ const RubricPanel: React.FC<{
       rubric: Extract<SecRubricCard['rubric'], { system: 'history-essay' }>;
     }} scores={props.scores} onScore={props.onScore} />;
   }
+  if (props.card.rubric.system === 'translation') {
+    return <TranslationPanel card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'translation' }>;
+    }} scores={props.scores} onScore={props.onScore} />;
+  }
   return (
     <PclmRubricPanel
       {...props}
@@ -2658,9 +2668,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
      as a whole. Until the whole answer is placed on an OE band its marks are a
      running total, and a grade suggested from them preselected "Missed it"
      after two paragraphs. Every other rubric is placed in one go. */
+  /* A translation is marked unit by unit: a grade suggested before every unit
+     is marked would read the unmarked units as wrong. */
   const placementPending = Boolean(assessmentCard && isRubricCard(assessmentCard)
-    && assessmentCard.rubric.system === 'history-essay'
-    && !historyEssayPlacementComplete(assessmentCard.rubric, rubricScores));
+    && ((assessmentCard.rubric.system === 'history-essay'
+      && !historyEssayPlacementComplete(assessmentCard.rubric, rubricScores))
+    || (assessmentCard.rubric.system === 'translation'
+      && !translationPlacementComplete(assessmentCard.rubric, rubricScores))));
   const rubricLabel = assessmentCard && isRubricCard(assessmentCard)
     ? assessmentCard.rubric.system === 'pclm' ? 'PCLM'
       : assessmentCard.rubric.system === 'irish' ? 'Irish rubric'
@@ -2674,7 +2688,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       : assessmentCard.rubric.system === 'language-writing' ? 'Writing marking grid'
       : assessmentCard.rubric.system === 'language-points' ? 'SEC answer allocation'
       : assessmentCard.rubric.system === 'business' ? 'Business allocation'
-      : assessmentCard.rubric.system === 'history-essay' ? 'History essay' : 'Geography allocation'
+      : assessmentCard.rubric.system === 'history-essay' ? 'History essay'
+      : assessmentCard.rubric.system === 'translation' ? 'unit-by-unit' : 'Geography allocation'
     : 'rubric';
   const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims, picks) : null;
 
@@ -3387,7 +3402,29 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     )}
                   </div>
 
-                  {mathematicsCard ? (
+                  {isNoSchemeCard(assessmentCard) ? (
+                    /* No scheme was published for this paper (PLAN R4): the
+                       card says so and offers nothing to claim. Its one row
+                       is the fixed line; its note, where there is one, is
+                       what the SEC archive holds instead. */
+                    <section
+                      aria-label="No marking scheme"
+                      data-testid="mark-bank-no-scheme"
+                      style={{
+                        display: 'grid', gap: 7, padding: '13px 14px', borderRadius: 12,
+                        border: `1.5px solid ${MUTED_BORDER}`, background: 'var(--mb-raised)',
+                      }}
+                    >
+                      <p style={{ margin: 0, font: `600 18px/1.3 ${SERIF}`, color: INK }}>{NO_SCHEME_PUBLISHED}</p>
+                      <p style={{ margin: 0, font: `400 13px/1.5 ${SANS}`, color: INK_2 }}>
+                        This question cannot be scored here: there is no answer and no marking to check yours against.
+                        {' '}On the paper it is worth {assessmentCard.totalMarks} marks.
+                      </p>
+                      {isPointCard(assessmentCard) && assessmentCard.rows[0]?.contextNote && (
+                        <p style={{ margin: 0, font: `400 12px/1.5 ${SANS}`, color: MUTED }}>{assessmentCard.rows[0].contextNote}</p>
+                      )}
+                    </section>
+                  ) : mathematicsCard ? (
                     <MathematicsScalePanel card={mathematicsCard}
                       selected={rubricScores.mathematics}
                       onSelect={marks => setRubricScore('mathematics', marks)}
@@ -3675,7 +3712,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               {(
                 <MotionDiv key="grades" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.18 }}>
                   <p id="mark-bank-grade-guidance" style={{ margin: '0 0 9px', font: `400 12px/1.45 ${SANS}`, color: INK_2 }}>
-                    {mathematicsCard
+                    {isNoSchemeCard(assessmentCard)
+                      ? <>Nothing on this card can be scored, so there is no suggestion. Choose how it went yourself.</>
+                      : mathematicsCard
                       ? !schemeInteracted
                         ? <>No credit selected yet. Use the SEC {mathematicsCard.mathematicsScale.methods ? 'step marks' : 'scale'} above for a mark-based suggestion, or choose your own grade now.</>
                         : <>Your SEC {mathematicsCard.mathematicsScale.methods ? 'award' : 'scale award'} is {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
@@ -3687,7 +3726,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                           : <>No points selected yet. Select them above for a mark-based suggestion, or choose your own grade now.</>
                       : isRubricCard(assessmentCard)
                         ? placementPending
-                          ? <>Your {rubricLabel} placement is not finished. Place the whole answer on an OE band for a mark-based suggestion, or choose your own grade now.</>
+                          ? assessmentCard.rubric.system === 'translation'
+                            ? <>Your unit-by-unit marking is not finished. Mark every unit for a mark-based suggestion, or choose your own grade now.</>
+                            : <>Your {rubricLabel} placement is not finished. Place the whole answer on an OE band for a mark-based suggestion, or choose your own grade now.</>
                           : <>Your {rubricLabel} placement is {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
                         : showsRowMarks(assessmentCard)
                         ? <>You claimed {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>

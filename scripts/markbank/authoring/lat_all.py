@@ -592,6 +592,15 @@ def build():
             ref = question_ref(year, level, ask.key)
             entry, how = scheme_entry(scheme, ask.key)
 
+            if ((year, level) in TRANSLATION_CARDED and ask.q == 2
+                    and ask.route_kind == 'translate-into-english'):
+                card = _translation_card(P, scheme, year, level, ask, ref,
+                                         entry)
+                if card:
+                    cards.append(card)
+                    stats['translation-panel'] += 1
+                    continue
+                refuse('the translation panel could not cut this passage', ref)
             if ask.route_kind in TRANSLATION_KINDS:
                 exclude(ref, TRANSLATION_REASON[ask.route_kind], entry)
                 stats['excluded-translation'] += 1
@@ -801,6 +810,178 @@ def _source_for(P, ask, year, level):
                                  'printed them.'),
         }
     return None
+
+
+# PLAN-2026-11-18 Phase 2c, the treatments lane's prototype: ONE sitting's
+# unseen translation (Question 2) is carded with the translation panel
+# (types/markBank.ts TranslationRubric). 2023 Higher is the first scheme to
+# print its rule for marking a unit ("Each mark allocation represents a
+# complete unit of meaning..."), and it cuts every passage in full. Every
+# other translation ask stays excluded until Alex approves the treatment.
+TRANSLATION_CARDED = {(2023, 'hl')}
+# A unit ends where the scheme writes its mark: "ferunt;/4", "omnibus/8.".
+UNIT_MARK = re.compile(r'\s*/\s*(\d{1,2})\b')
+# Punctuation the scheme sets AFTER the mark belongs to the unit before it.
+LEADING_PUNCT = re.compile(r'^[\s.,;:!?’”\'"]+')
+# The author credit the paper prints under each passage, before its glosses.
+AUTHORS = ('Virgil', 'Ovid', 'Cicero', 'Sallust', 'Livy', 'Catullus',
+           'Horace', 'Tacitus', 'Caesar', 'Pliny', 'Nepos', 'Martial')
+
+
+def translation_units(entry):
+    """The passage as the scheme cuts it: [(text, marks)], the scheme's own
+    words in its own order, the mark after each cut removed. None if the
+    scheme's lines do not cut cleanly (text left over after the last mark)."""
+    text = ' '.join(l.strip() for l in entry.tariff_lines if l.strip())
+    bits = UNIT_MARK.split(text)
+    units = []
+    for i in range(0, len(bits) - 1, 2):
+        chunk, marks = bits[i], int(bits[i + 1])
+        lead = LEADING_PUNCT.match(chunk)
+        if lead and units:
+            moved = lead.group(0).strip()
+            if moved:
+                units[-1][0] = units[-1][0] + moved
+            chunk = chunk[lead.end():]
+        units.append([' '.join(chunk.split()), marks])
+    tail = bits[-1] if len(bits) % 2 else ''
+    if LEADING_PUNCT.sub('', tail).strip() or not units:
+        return None
+    lead = LEADING_PUNCT.match(tail)
+    if lead and lead.group(0).strip():
+        units[-1][0] += lead.group(0).strip()
+    return [(t, m) for t, m in units]
+
+
+def translation_rule(scheme):
+    """The scheme's rule for marking a unit, verbatim, one entry per bullet:
+    the lines under Question 2's own head, after its tariff line."""
+    head = scheme.get((None, 2, None, None))
+    if not head:
+        return []
+    lines = [l.strip() for l in head.tariff_lines if l.strip()]
+    lines = [l for l in lines if not re.search(r'\[\d+\]\s*$', l)]
+    out = []
+    for line in lines:
+        if line.startswith('- ') or not out:
+            out.append(line[2:] if line.startswith('- ') else line)
+        else:
+            out[-1] = f'{out[-1]} {line}'
+    return out
+
+
+def _scheme_pages(year, level, units):
+    import fitz
+    doc = fitz.open(os.path.join(ROOT, 'examiner-reports', SUBJECT, 'schemes',
+                                 f'{year}-{level}.pdf'))
+    flat = [re.sub(r'[^a-z]', '', p.get_text().lower()) for p in doc]
+    pages = set()
+    for text, _ in units:
+        needle = re.sub(r'[^a-z]', '', text.lower())
+        # A unit may run over a page break: look for its opening words.
+        probe = needle[:40]
+        pages.update(i + 1 for i, page in enumerate(flat) if probe and probe in page)
+    return sorted(pages)
+
+
+def _passage_region(P, ask):
+    """The passage, its summary and its glosses on the paper page, as PDF
+    fractions: from the route's own label to the OR under it (or the foot of
+    the printed matter)."""
+    import fitz
+    doc = fitz.open(P.path)
+    page = doc[ask.page - 1]
+    W, H = page.rect.width, page.rect.height
+    label = f'{ask.section}. ({ask.roman})' if ask.roman else f'{ask.section}.'
+    lines = []
+    for block in page.get_text('dict')['blocks']:
+        for line in block.get('lines', []):
+            text = ''.join(sp['text'] for sp in line['spans']).strip()
+            if text:
+                lines.append((line['bbox'][1], line['bbox'][3], text))
+    lines.sort()
+    start = next((y0 for y0, _, t in lines if t.replace(' ', '').startswith(label.replace(' ', ''))), None)
+    if start is None:
+        return None
+    after = [l for l in lines if l[0] > start + 2]
+    stop = next((y0 for y0, _, t in after if t == 'OR'
+                 or t.startswith('Leaving Certificate Examination')), None)
+    if stop is None:
+        stop = max(y1 for _, y1, _ in after) + 4
+    return [0.04, max(0.0, (start - 6) / H), 0.96, min(1.0, (stop - 2) / H)]
+
+
+def _translation_card(P, scheme, year, level, ask, ref, entry):
+    """Question 2's unseen passage, carded with the translation panel."""
+    units = translation_units(entry) if entry else None
+    rule = translation_rule(scheme)
+    if not units or not rule or sum(m for _, m in units) != ask.marks:
+        return None
+    question = ask.text
+    # The credit is the LAST mention of the author: a summary may name him
+    # first ("Sallust tells how Bocchus betrays Jugurtha...").
+    credits = [m for author in AUTHORS
+               for m in re.finditer(rf'\s{author}\s', question)]
+    if credits:
+        question = question[:max(credits, key=lambda m: m.start()).start()].strip()
+    pdf_text = ' '.join(' '.join(fitz_text(P.path, n) for n in range(1, ask.page + 1)).split())
+    head = re.search(r'2\.\s+(Translate into English one passage from '
+                     r'Section A and one passage from Section B\.)', pdf_text)
+    region = _passage_region(P, ask)
+    source = passage_source(
+        P, (ask.section, ask.q, ask.roman), year, level,
+        f'QUESTION 2 SECTION {ask.section} ({ask.roman}) — THE PASSAGE',
+        'The Latin passage, its summary and the printed vocabulary',
+        'The passage exactly as the examination printed it, with the words '
+        'the SEC underlined and glossed.') or {
+        'kind': 'source-text',
+        'label': f'QUESTION 2 SECTION {ask.section} ({ask.roman}) — THE PASSAGE',
+        'title': 'The Latin passage, its summary and the printed vocabulary',
+        'pages': [ask.page],
+        'attribution': (f'SEC Latin {year} {LEVEL_TITLE[level]} Level '
+                        'examination paper — © State Examinations Commission.'),
+        'presentationNote': ('The passage exactly as the examination printed '
+                             'it, with the words the SEC underlined and '
+                             'glossed.'),
+    }
+    source['pages'] = [ask.page]
+    if region:
+        source['regions'] = [{'p': ask.page, 'r': region}]
+    card = {
+        'id': card_id(year, level, ask.key),
+        'kind': 'rubric',
+        'subjectId': SUBJECT,
+        'level': LEVEL_WORD[level],
+        'year': year,
+        'section': f'Q{ask.q}',
+        'topicId': topic_for(ask.q, ask.route_kind, ''),
+        'conceptId': concept_for(question),
+        'questionRef': ref,
+        'questionText': question,
+        'totalMarks': ask.marks,
+        'rubric': {
+            'system': 'translation',
+            'schemeGuidance': rule,
+            'sourceLanguage': 'la',
+            'units': [{'id': f'u{i + 1}', 'text': t, 'marks': m}
+                      for i, (t, m) in enumerate(units)],
+            'schemePages': _scheme_pages(year, level, units),
+            'markingGuideNote': (
+                'The units, their marks and the rule above are the SEC '
+                'marking scheme\'s own. It prints no translation of any unit, '
+                'and it does not say how many marks a partly right unit '
+                'earns: that number is your judgement.'),
+        },
+        'sourceMaterial': source,
+    }
+    if head:
+        card['stem'] = head.group(1)
+    return card
+
+
+def fitz_text(path, page):
+    import fitz
+    return fitz.open(path)[page - 1].get_text()
 
 
 def _plate_card(P, S, year, level, parts, scheme, route_text):
