@@ -7121,7 +7121,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Samuele say about how he will practise his English? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Spontaneously (1) with Irish (1) teenagers (1) who will participate in afternoon (1) activities (1)", marks: 4, contextNote: "The scheme prices this half of the ask separately, under the heading “Four elements required”. Answer in English or Irish." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme asks for \"Four elements required\", each worth (1). The scheme also pays part marks for a shorter answer: “Young people from Ireland” 2 marks; “Evening” 1 mark; “Irish people” 1 mark. Answer in English or Irish.", group: {"claimMax":4,"perOption":1,"options":["Spontaneously","with Irish","teenagers","who will participate in afternoon","activities"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10805,7 +10805,9 @@ export const CARDS: SecCard[] = [
     questionText: "What did Sabrina do to save for this trip? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "She worked as waitress (2m)/in April (1m) and", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "criterion", verbatim: "She worked as waitress", marks: 2, contextNote: "The scheme prints “in April (1m) and” over “May (1m) (before going away)”. The scheme also pays part marks for a shorter answer: “worked” 1 mark. Answer in English or Irish.", permittedMarks: [0,1,2] },
+    { id: "r-2", kind: "point", verbatim: "in April", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "May", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16817,7 +16819,9 @@ export const CARDS: SecCard[] = [
     questionText: "Where will Luca and Grazia go to see the film? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In the new (1m) library (1m) of her/ Grazia’s neighbourhood/", marks: 3, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "In the new", marks: 1, contextNote: "The scheme prints the third piece as “of her/ Grazia’s neighbourhood/” and, after its tariff, “area (1m) (1+1+1)”. Answer in English or Irish." },
+    { id: "r-2", kind: "point", verbatim: "library", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "of her/ Grazia’s neighbourhood", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19119,7 +19123,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does Sara prefer travelling by train? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "You can look (1m) at the scenery (1m)/ You can chat (1m) with other passengers (1m)/ You can save money/it’s cheaper (1m) if travel by night (1m)", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints three answers in priced pieces: “You can look (1m) at the scenery (1m)/”, “You can chat (1m) with other passengers (1m)/”, “You can save money/it’s cheaper (1m) if travel by night (1m)”, for 4 marks. The scheme also pays part marks for a shorter answer: “You can visit all the European capitals/cities” 1 mark. Answer in English or Irish.", group: {"claimMax":4,"perOption":1,"options":["You can look","at the scenery","You can chat","with other passengers","You can save money/it’s cheaper","if travel by night"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
