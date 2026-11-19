@@ -130,6 +130,11 @@ class Sitting:
         return text
 
     def paper(self, kind, text):
+        # A line no text layer or OCR reading can carry (a printed superscript,
+        # "Use the form AA¹BB¹.") is accepted only as the reading file records it:
+        # read off a render of the page by the lane lead, with page, box and reader.
+        if any(r['booklet'] == kind and r['text'] == text for r in self.data.get('readFromPage', [])):
+            return text
         t = norm(text)
         if not t or (t not in self.paper_text.get(kind, '') and t not in self.ocr_text.get(kind, '')):
             raise SystemExit(f'{self.year} {self.tag}: not in the {kind} booklet: {text!r}')
@@ -484,6 +489,8 @@ def check(path, crops_to):
         got = sum(max(v) if k[1] == 'B' else sum(v) for k, v in sums.get(q, {}).items())
         flag = '' if printed.get(q) == got else '   <-- CHECK'
         print(f'  Listening Q{q}: paper prints {printed.get(q)}, asks give {got}{flag}')
+    for r in s.data.get('readFromPage', []):
+        print(f"  READ FROM PAGE ({r['booklet']} p{r['page']}, {r['readBy']}): {r['text']}")
     for n1, n2, page in crops_overlapping(s):
         print(f'  LOOK: the scheme crops of {n1} and {n2} overlap on page {page}: neither may show the other\'s answer')
     print(f'crops written to {crops_to}')

@@ -1181,7 +1181,7 @@
     0.36
    ],
    "questionText": "This song is sung in the sean-nós style. Identify two features of sean-nós singing as heard in the excerpt.",
-   "questionContext": "This question is based on three excepts of music.",
+   "questionContext": "Irish Music This question is based on three excepts of music.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1236,7 +1236,7 @@
     0.45
    ],
    "questionText": "The form of the music in this excerpt is",
-   "questionContext": "This question is based on three excepts of music.",
+   "questionContext": "Irish Music This question is based on three excepts of music.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1279,7 +1279,7 @@
     0.565
    ],
    "questionText": "The dance heard in this excerpt is",
-   "questionContext": "This question is based on three excepts of music.",
+   "questionContext": "Irish Music This question is based on three excepts of music.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1322,7 +1322,7 @@
     0.652
    ],
    "questionText": "The time signature of this dance is",
-   "questionContext": "This question is based on three excepts of music.",
+   "questionContext": "Irish Music This question is based on three excepts of music.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1375,7 +1375,7 @@
     0.805
    ],
    "questionText": "A typical bar of rhythm associated with this dance is",
-   "questionContext": "This question is based on three excepts of music.",
+   "questionContext": "Irish Music This question is based on three excepts of music.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1428,7 +1428,7 @@
     0.882
    ],
    "questionText": "Name one instrument which plays the melody in this excerpt.",
-   "questionContext": "This question is based on three excepts of music.",
+   "questionContext": "Irish Music This question is based on three excepts of music.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1457,7 +1457,7 @@
      ],
      "claim": 1,
      "per": 3,
-     "open": true,
+     "open": false,
      "quote": [
       "Any correct instrument"
      ]
@@ -1465,7 +1465,7 @@
    ],
    "grid": null,
    "sharedCard": null,
-   "notes": "\"Any correct instrument\" then three instruments (no \"For example\" printed here): open menu."
+   "notes": "\"Any correct instrument\" then three instruments (no \"For example\" printed here): open menu. Lane ruling 19 Nov: \"Any correct instrument\" followed by a list is a closed menu (as 2023-2026 Ordinary and 2023 Higher)."
   },
   {
    "paper": "listening",
@@ -1481,7 +1481,7 @@
     0.465
    ],
    "questionText": "This excerpt is a fusion of different styles of music. Discuss, with reference to the music heard in the excerpt.",
-   "questionContext": "This question is based on three excepts of music.",
+   "questionContext": "Irish Music This question is based on three excepts of music.",
    "excerptLine": "Excerpt 3, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1534,7 +1534,7 @@
     0.395
    ],
    "questionText": "The time signature of the music in this excerpt is",
-   "questionContext": "This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1587,7 +1587,7 @@
     0.5
    ],
    "questionText": "Name the instrument which plays the accompaniment in this excerpt.",
-   "questionContext": "This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1630,7 +1630,7 @@
     0.805
    ],
    "questionText": "Describe the texture of the music heard in this excerpt.",
-   "questionContext": "This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1684,7 +1684,7 @@
     0.55
    ],
    "questionText": "The missing notes at X on the score are",
-   "questionContext": "This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.",
    "excerptLine": "Excerpt 3, played three times. An outline score of the opening vocal melody is printed below.",
    "needsRecording": true,
    "figure": {
@@ -1737,7 +1737,7 @@
     0.232
    ],
    "questionText": "How many bars of music are heard in the introduction?",
-   "questionContext": "This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.",
    "excerptLine": "Excerpt 4, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1780,7 +1780,7 @@
     0.36
    ],
    "questionText": "Identify one feature of the vocal music heard in this excerpt.",
-   "questionContext": "This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.",
    "excerptLine": "Excerpt 4, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1841,7 +1841,7 @@
     0.66
    ],
    "questionText": "Describe one difference between the music heard in Excerpt 4 and the music heard in Excerpt 5. Refer to both excerpts in your answer.",
-   "questionContext": "This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.",
    "excerptLine": "Excerpt 4, played once more and Excerpt 5, played three times.",
    "needsRecording": true,
    "figure": {
