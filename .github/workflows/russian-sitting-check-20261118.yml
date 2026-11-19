@@ -1,5 +1,5 @@
 {
-  "name": "Russian remaining R4 batch exact-candidate verification",
+  "name": "Russian language-part split exact-candidate verification",
   "permissions": {
     "contents": "read"
   },
@@ -11,7 +11,7 @@
     }
   },
   "concurrency": {
-    "group": "russian-r4-final-source-20261119",
+    "group": "russian-language-splits-20261119",
     "cancel-in-progress": false
   },
   "jobs": {
@@ -31,7 +31,7 @@
         {
           "name": "Verify exact source candidate",
           "id": "integrity",
-          "run": "test \"$(git rev-parse HEAD^)\" = 81b4403c5b8938deed292780ee0c8c415e32def4\ntest \"$(git diff --name-only HEAD^ HEAD)\" = .github/workflows/russian-sitting-check-20261118.yml"
+          "run": "test \"$(git rev-parse HEAD^)\" = bea25c65e4233aa411317606aed069f674afedc6\ntest \"$(git diff --name-only HEAD^ HEAD)\" = .github/workflows/russian-sitting-check-20261118.yml"
         },
         {
           "uses": "actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
@@ -57,7 +57,7 @@
         {
           "name": "Prepare changed-test type configuration",
           "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
-          "run": "python3 - <<'PYCONFIG'\nfrom pathlib import Path\nimport json\np=Path('tmp/russian-review/2021-hl-nov18-types.json');p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps({'extends': '../../tsconfig.test.json', 'include': ['../../test/russian2017OrdinaryReviewed.test.tsx', '../../test/russian2018HigherReviewed.test.tsx', '../../test/russian2019HigherReviewed.test.tsx', '../../test/russian2020HigherReviewed.test.tsx', '../../test/russian2026Reviewed.test.ts', '../../test/russianSummaryLanguageExceptions.test.ts', '../../test/russianHostedAnswerRoutes.test.ts', '../../test/russian2011HigherReviewed.test.ts', '../../test/russianJointQuestions.test.ts', '../../test/russianVisibleGuidance.test.tsx', '../../test/russian2018OrdinaryReviewed.test.ts', '../../test/russian2014OrdinaryReviewed.test.ts', '../../test/russian2015OrdinaryReviewed.test.ts', '../../test/russian2016OrdinaryReviewed.test.ts', '../../test/russian2010HigherReviewed.test.tsx', '../../test/russian2013HigherReviewed.test.ts', '../../test/russian2013ConfidenceReview.test.tsx', '../../test/setup.ts', '../../vite-env.d.ts']}))\nPYCONFIG"
+          "run": "python3 - <<'PYCONFIG'\nfrom pathlib import Path\nimport json\np=Path('tmp/russian-review/2021-hl-nov18-types.json');p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps({'extends': '../../tsconfig.test.json', 'include': ['../../test/russian2017OrdinaryReviewed.test.tsx', '../../test/russian2018HigherReviewed.test.tsx', '../../test/russian2019HigherReviewed.test.tsx', '../../test/russian2020HigherReviewed.test.tsx', '../../test/russian2026Reviewed.test.ts', '../../test/russianSummaryLanguageExceptions.test.ts', '../../test/russianHostedAnswerRoutes.test.ts', '../../test/russian2011HigherReviewed.test.ts', '../../test/russianJointQuestions.test.ts', '../../test/russianVisibleGuidance.test.tsx', '../../test/russian2018OrdinaryReviewed.test.ts', '../../test/russian2014OrdinaryReviewed.test.ts', '../../test/russian2015OrdinaryReviewed.test.ts', '../../test/russian2016OrdinaryReviewed.test.ts', '../../test/russian2010HigherReviewed.test.tsx', '../../test/russian2013HigherReviewed.test.ts', '../../test/russian2013ConfidenceReview.test.tsx', '../../test/russian2012HigherReviewed.test.ts', '../../test/setup.ts', '../../vite-env.d.ts']}))\nPYCONFIG"
         },
         {
           "name": "Changed-test types",
@@ -67,7 +67,7 @@
         {
           "name": "Changed TypeScript lint",
           "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
-          "run": "bash \"$RUNNER_TEMP/plans/tools/heavy.sh\" node node_modules/eslint/bin/eslint.js test/russian2017OrdinaryReviewed.test.tsx test/russian2018HigherReviewed.test.tsx test/russian2019HigherReviewed.test.tsx test/russian2020HigherReviewed.test.tsx test/russian2026Reviewed.test.ts test/russianSummaryLanguageExceptions.test.ts test/russianHostedAnswerRoutes.test.ts components/PaperTrail/vaultResolve.ts test/russian2011HigherReviewed.test.ts test/russianJointQuestions.test.ts test/russianVisibleGuidance.test.tsx test/russian2018OrdinaryReviewed.test.ts test/russian2014OrdinaryReviewed.test.ts test/russian2015OrdinaryReviewed.test.ts test/russian2016OrdinaryReviewed.test.ts test/russian2010HigherReviewed.test.tsx test/russian2013HigherReviewed.test.ts test/russian2013ConfidenceReview.test.tsx --max-warnings 0"
+          "run": "bash \"$RUNNER_TEMP/plans/tools/heavy.sh\" node node_modules/eslint/bin/eslint.js test/russian2017OrdinaryReviewed.test.tsx test/russian2018HigherReviewed.test.tsx test/russian2019HigherReviewed.test.tsx test/russian2020HigherReviewed.test.tsx test/russian2026Reviewed.test.ts test/russianSummaryLanguageExceptions.test.ts test/russianHostedAnswerRoutes.test.ts components/PaperTrail/vaultResolve.ts test/russian2011HigherReviewed.test.ts test/russianJointQuestions.test.ts test/russianVisibleGuidance.test.tsx test/russian2018OrdinaryReviewed.test.ts test/russian2014OrdinaryReviewed.test.ts test/russian2015OrdinaryReviewed.test.ts test/russian2016OrdinaryReviewed.test.ts test/russian2010HigherReviewed.test.tsx test/russian2013HigherReviewed.test.ts test/russian2013ConfidenceReview.test.tsx test/russian2012HigherReviewed.test.ts --max-warnings 0"
         },
         {
           "name": "Normal production build",
