@@ -38,7 +38,7 @@ describe('Business marking schemes are extractor output, not editable text', () 
     // (2022 Higher and Ordinary, 2023 Higher: <year>-<level>-deferred.md).
     expect(files.filter(f => !f.endsWith('-deferred.md')).length).toBe(34);
     expect(files.filter(f => f.endsWith('-deferred.md')).sort())
-      .toEqual(['2022-hl-deferred.md']);
+      .toEqual(['2022-hl-deferred.md', '2022-ol-deferred.md']);
   });
 
   test.each(files)('%s carries no editorial insertion', (file) => {

@@ -3200,6 +3200,7 @@ describe('Business deferred sittings', () => {
   const deferred = cards.filter(isBusinessRubric).filter(card => card.paperFileid?.endsWith('-deferred'));
   const SITTINGS: Record<string, { cards: number; marks: Record<string, number> }> = {
     '2022-higher': { cards: 55, marks: { '1': 120, '2': 80, '3': 480 } },
+    '2022-ordinary': { cards: 68, marks: { '1': 225, '2': 675 } },
   };
 
   it('names the sitting in every id, reference, booklet and citation', () => {

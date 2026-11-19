@@ -64,7 +64,7 @@ CHAIN = [
     'add-2010-hl.py', 'add-2010-hl-paper-reviews.py',
     'post-generation-edits.py',
     # The SEC's deferred sittings, in their own files (deferred_lib.py); each replaces only its own sitting.
-    'add-2022-hl-deferred.py',
+    'add-2022-hl-deferred.py', 'add-2022-ol-deferred.py',
 ]
 
 OUTPUTS = [
@@ -81,7 +81,7 @@ OUTPUTS = [
 
 # Scheme files extracted in this work, with the extractor flags that made them.
 SCHEMES = [f'{y}-hl' for y in range(2010, 2021)] + ['2010-ol', '2011-ol', '2012-ol', '2013-ol', '2014-ol', '2015-ol', '2016-ol', '2017-ol', '2018-ol', '2019-ol', '2020-ol', '2026-hl', '2026-ol']
-DEFERRED_SCHEMES = ['2022-hl-deferred']
+DEFERRED_SCHEMES = ['2022-hl-deferred', '2022-ol-deferred']
 
 
 def run(cmd):

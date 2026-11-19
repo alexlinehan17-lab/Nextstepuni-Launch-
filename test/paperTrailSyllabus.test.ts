@@ -125,8 +125,9 @@ const ADMITTED_DEFERRED = new Set([
   // Geography: Part One and Part Two of each carded Higher deferred sitting.
   ...[2022, 2023, 2024, 2025].flatMap(year => ['ALP042', 'ALP043']
     .map(booklet => `geography|${year}|LC005${booklet}EV-deferred.pdf`)),
-  // Business: both booklets of each carded deferred sitting (2022 Higher).
+  // Business: both booklets of each carded deferred sitting (2022 Higher, 2022 Ordinary).
   'business|2022|LC033ALP032EV-deferred.pdf', 'business|2022|LC033ALP041EV-deferred.pdf',
+  'business|2022|LC033GLP032EV-deferred.pdf', 'business|2022|LC033GLP033EV-deferred.pdf',
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {
