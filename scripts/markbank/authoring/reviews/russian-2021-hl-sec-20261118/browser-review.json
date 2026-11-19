@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-11-18 21:05 UTC",
+  "sampleCards": [
+    "c1-1-i",
+    "c1-3-iii",
+    "c2-1",
+    "c2-4",
+    "la1",
+    "gr",
+    "se",
+    "gw",
+    "l3-2"
+  ],
+  "widths": [
+    390,
+    1120
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "combinations": 36,
+  "essaySaved": {
+    "marksClaimed": 30,
+    "marksAvailable": 30
+  },
+  "summaryObserved": {
+    "marksClaimed": 10,
+    "marksAvailable": 10
+  },
+  "sourcePagesLoaded": {
+    "written": [
+      2,
+      3,
+      4
+    ],
+    "listening": [
+      4
+    ]
+  },
+  "embeddedPlaybackPassed": false,
+  "officialLinkPlaybackObserved": true,
+  "officialElapsedSeconds": [
+    7.75035,
+    19.4814
+  ],
+  "screenshots": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-18-russian-2021-hl",
+  "visualContactReview": "Reviewed all nine four-layout contact sheets plus full-size essay scoring, summary scoring and written/listening source captures. No horizontal content overflow observed. Long source guidance requires scrolling. Embedded audio remains a release issue."
+}
