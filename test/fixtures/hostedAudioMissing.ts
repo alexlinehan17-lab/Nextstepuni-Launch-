@@ -2,9 +2,9 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * SEC recordings that live listening cards (or the Topic Atlas) use and that
- * have no verified copy in Firebase Storage yet. Until a recording has one,
- * its cards play the SEC's own address, as before.
+ * SEC recordings and videos that live cards (or the Topic Atlas) play and that
+ * have no verified copy in Firebase Storage yet. Until one has a copy, its
+ * cards play the SEC's own address, as before.
  *
  * This list only shrinks. A recording comes off it in the same change that
  * uploads it (scripts/markbank/audio-hosting/host_audio.py extends
@@ -116,4 +116,16 @@ export const HOSTED_AUDIO_MISSING: readonly string[] = [
   'audio/2026/LC001ZLP017IV.mp3',
   'audio/2026/LC011CLP017BV.mp3',
   'audio/2026/LC012ZLP017BV.mp3',
+  'video/2015/LC462CLPO31EV.mp4',
+  'video/2016/LC462CLP031EV.mp4',
+  'video/2017/LC462CLP031EV.mp4',
+  'video/2018/LC462CLP031EV.mp4',
+  'video/2019/LC462CLP031EV.mp4',
+  'video/2020/LC462CLP031EV.mp4',
+  'video/2021/LC462CLP031EV.mov',
+  'video/2022/LC462CLP031EV.mov',
+  'video/2023/LC462CLP031EV.mov',
+  'video/2024/LC462CLP031EV.mov',
+  'video/2025/LC462CLP031EV.mov',
+  'video/2026/LC462CLP031EV.mov',
 ];
