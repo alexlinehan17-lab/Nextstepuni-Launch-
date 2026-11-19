@@ -5678,6 +5678,161 @@
       "questionSha256": "9815f06906a63ffc079bcd9f12d1fc2717de5288cec27761032f1340fb9c67fe",
       "reason": "Paper PDF13 prints the instruction (“Read the following poem by Barbara Crooker”), the title, the whole 13-line poem, the byline and the gloss (*A murmuration occurs when a large flock of birds … fly together in swooping patterns) above both questions; visually verified. PDF14 begins Prescribed Poem A."
     },
+    "english-2022-hl-deferred-p1-composing-4": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Maggie O’Farrell",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Maggie O’Farrell — edited extracts from her novel Hamnet (Tinder Press, 2020), in which Shakespeare is about to go on stage as the ghost in Hamlet, with a photograph of Shakespeare’s Globe (PDF6–7). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "The story is “set in Shakespeare’s Globe Theatre on the day described in Text 3” and must fulfil “Shakespeare’s premonition of trouble” (paper PDF8, scheme PDF17), both of which only TEXT 3 describes; the whole of TEXT 3 (PDF6–7) is retained.",
+      "questionSha256": "96ceb1d675f8991092e7290174de6343635bbe3a9e10f2574b495b9239a6ad47"
+    },
+    "english-2022-hl-deferred-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Ciaran Carty Meets Paula Meehan",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Ciaran Carty — edited text adapted from an interview with the poet Paula Meehan, from his collection of interviews Writer to Writer, The Republic of Elsewhere (The Lilliput Press, 2018), with a photograph of the poet (PDF2–3). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "73b48020f597201546e4bf37ecd891047d83604d91f87e6e0498477ade2dd019"
+    },
+    "english-2022-hl-deferred-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Ciaran Carty Meets Paula Meehan",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Ciaran Carty — edited text adapted from an interview with the poet Paula Meehan, from his collection of interviews Writer to Writer, The Republic of Elsewhere (The Lilliput Press, 2018), with a photograph of the poet (PDF2–3). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "The task asks about the observations on poetry Jeanette Winterson and Paula Meehan make “in the final paragraph of TEXT 1” (paper PDF3); scheme PDF5 assesses how the candidate relates “the observations about poetry made by both” to their own experience, so the text is needed to answer faithfully. All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "b85575670cf41e59a5c6e0b940afe1b9b901aea362b58f56edb470a083ef82a3"
+    },
+    "english-2022-hl-deferred-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Ciaran Carty Meets Paula Meehan",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Ciaran Carty — edited text adapted from an interview with the poet Paula Meehan, from his collection of interviews Writer to Writer, The Republic of Elsewhere (The Lilliput Press, 2018), with a photograph of the poet (PDF2–3). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "9df11a2aa509012f0d8159d0a15f135c3f0be51b3a1e3d4f13615196a0bb6a36"
+    },
+    "english-2022-hl-deferred-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Billy O’Callaghan",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Billy O’Callaghan — text adapted from his essay The Nature of Stories, in the collection The Danger and the Glory, Irish Authors on the Art of Writing (Arlen House, 2019), with an image of a Chinese boat (PDF4–5). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "953f2f08453c6146661ec05f0748aebd1cbf3b5702f372c3e3e7e470c338deed"
+    },
+    "english-2022-hl-deferred-p1-t2-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "BILLY O’CALLAGHAN",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "questionSha256": "767d528aa71ab77a53ead91c1acb50dc19032e5db0d6ec6daa11c53516bd4a4e",
+      "reason": "Self-contained: the task prints Billy O’Callaghan’s view in full (“the best stories, poems and novels cast spells and crack eternity and let the light come streaming in”) and asks how far the candidate can relate it to their own experience of literature; scheme PDF7 assesses that relation (“Allow for a wide variety of responses”) and never refers to the rest of TEXT 2. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2022-hl-deferred-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Billy O’Callaghan",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Billy O’Callaghan — text adapted from his essay The Nature of Stories, in the collection The Danger and the Glory, Irish Authors on the Art of Writing (Arlen House, 2019), with an image of a Chinese boat (PDF4–5). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "b07df9613561b2c24f8540d61db6c846e89ab9219caa2fab04e63b2d84c984db"
+    },
+    "english-2022-hl-deferred-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Maggie O’Farrell",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Maggie O’Farrell — edited extracts from her novel Hamnet (Tinder Press, 2020), in which Shakespeare is about to go on stage as the ghost in Hamlet, with a photograph of Shakespeare’s Globe (PDF6–7). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "6f31603e79a5e1c4dfea75602926008336ff6a4297a2c2f41563a9d92599cfb6"
+    },
+    "english-2022-hl-deferred-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Maggie O’Farrell",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Maggie O’Farrell — edited extracts from her novel Hamnet (Tinder Press, 2020), in which Shakespeare is about to go on stage as the ghost in Hamlet, with a photograph of Shakespeare’s Globe (PDF6–7). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "The task relates “the experience of the audience in the text” in “the final paragraph of TEXT 3” (paper PDF7) to the candidate’s own experience of live performances (scheme PDF10), so the text is needed to answer faithfully. All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "18ae6c80c9e8cd0a4b2c6c4b19a180d7b9f2870b822e4558fa12cf795ebaee53"
+    },
+    "english-2022-hl-deferred-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Maggie O’Farrell",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Maggie O’Farrell — edited extracts from her novel Hamnet (Tinder Press, 2020), in which Shakespeare is about to go on stage as the ghost in Hamlet, with a photograph of Shakespeare’s Globe (PDF6–7). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "0b779c03e0107c280f5ef98a78e6f6b1ff727cf2b0c699fcd30a6c18c9b39218"
+    },
+    "english-2022-hl-deferred-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The English Astronaut",
+      "pages": [
+        6
+      ],
+      "attribution": "The English Astronaut — Simon Armitage, as reproduced in the SEC 2022 deferred paper.",
+      "reason": "Paper PDF6 prints the instruction (read the poem by Simon Armitage and answer either Question 1 or Question 2), the title, the whole poem in two stanzas and the byline above the questions; visually verified.",
+      "questionSha256": "afbe9249b996c0c4156a67b61074743d6d46567f98a495b0c58908f3846c8673"
+    },
+    "english-2022-hl-deferred-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The English Astronaut",
+      "pages": [
+        6
+      ],
+      "attribution": "The English Astronaut — Simon Armitage, as reproduced in the SEC 2022 deferred paper.",
+      "reason": "Paper PDF6 prints the instruction (read the poem by Simon Armitage and answer either Question 1 or Question 2), the title, the whole poem in two stanzas and the byline above the questions; visually verified.",
+      "questionSha256": "8638f2df26eb8ef390850519788b56a6bbf92194fdabb03593ddd8c50f3ca225"
+    },
+    "english-2022-hl-deferred-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The English Astronaut",
+      "pages": [
+        6
+      ],
+      "attribution": "The English Astronaut — Simon Armitage, as reproduced in the SEC 2022 deferred paper.",
+      "reason": "Paper PDF6 prints the instruction (read the poem by Simon Armitage and answer either Question 1 or Question 2), the title, the whole poem in two stanzas and the byline above the questions; visually verified.",
+      "questionSha256": "56ac887b3bdd4ea1236ae47ef52046061972bb0013313be1884df2f5ea15a8b7"
+    },
     "english-2023-hl-deferred-p1-t1-a-i": {
       "kind": "source-text",
       "label": "TEXT 1",

@@ -69,6 +69,8 @@
     "english-2026-hl-p2": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95",
     "english-2026-ol-p1": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
     "english-2026-ol-p2": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+    "english-2022-hl-deferred-p1": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+    "english-2022-hl-deferred-p2": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
     "english-2023-hl-deferred-p1": "8478421ce1f7230542c97d003557b909116f79e7d3e91cf0ba3a6245911e40d0",
     "english-2023-hl-deferred-p2": "f09cefdb117b7aeff217515351077ff6fdc71cff3887fa7dfd4ba73ef9a1a278",
     "english-2024-hl-deferred-p1": "951efae4c8cd26dd37d98cb4f4b3415d683d567500b8bd3f30ea8f72b2414f6a",
@@ -41466,6 +41468,644 @@
     "english-2020-ol-p2-p20-pdf-5-d267bb1d2e18": {
       "textSha256": "d267bb1d2e182c40cbe6c6507621d5d3ec3ae9d6dfd88964a23187ad832d122b",
       "contextSha256": "478dd31c099b7a6c9df37ed506a7493de0558f8303c08a248dda4e8c3f2f04f4",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2022-hl-deferred-p1-p1-pdf-21-fd00a33d9a2c": {
+      "textSha256": "fd00a33d9a2ca09c99a904b3e4a2ae50bf1a7443586c90f22b25848be7e182da",
+      "contextSha256": "a194997e6e8343536502df3e84b65719511b776a88be1fc3cf2f4a824c394415",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p1-p1-pdf-23-7df1b453ee72": {
+      "textSha256": "7df1b453ee72580a895f131468cd7f7ff9308babf9e15c3537d79b3f83a7da9a",
+      "contextSha256": "05f4576116338258d795ac78e6fd722bfc5ce62564a52486755f677d1ef5df7a",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p1-p12-pdf-13-2f8801734882": {
+      "textSha256": "2f8801734882680ccbf12e1152106d6d5b8e8e671044f16241f85ddbb3446c9d",
+      "contextSha256": "4f63f4f59e17c22c3f30886dcc08daf5207b573d9d8dfb7d8b80148c825d86e7",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2022-hl-deferred-p1-p12-pdf-14-e644cfcc1b94": {
+      "textSha256": "e644cfcc1b948765dd7f859c8107e282c77db55b9b081dc76a61510dcb97e435",
+      "contextSha256": "6330fe30ac93d671642b76aa8e4c11f0a966af0f345a058bd7af512ef29e8826",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2022-hl-deferred-p1-p12-pdf-15-0520d8176676": {
+      "textSha256": "0520d817667620da29159ba7fb148d66b56c3b603b9fdbb900b563030f43c86a",
+      "contextSha256": "21bd883d91e9ad41ac41325088b0a30550597b64867cecb895d34d0712e2b829",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2022-hl-deferred-p1-p12-pdf-16-90a266e53ac6": {
+      "textSha256": "90a266e53ac6981bdc1af7300969764c7a0bfd9836d2aab3fd42bb1dfcc533fa",
+      "contextSha256": "162bb6a019d0e0142b93c3a637b60b9a7397f598ba9d75976b673996db21688c",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2022-hl-deferred-p1-p12-pdf-17-3f1e1941d57f": {
+      "textSha256": "3f1e1941d57fdefdb868a77017307766c12237e2b4bd7af4d8f94ad314c1adfa",
+      "contextSha256": "4ca55d804b1dc1fd64f3a69e961554176792994659694e00b97d3cfcc387151c",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2022-hl-deferred-p1-p2-pdf-27-cdd72eac0fba": {
+      "textSha256": "cdd72eac0fbab3f87f5c3f1f6397fd24538176052f89f94ae3e720e00e68c144",
+      "contextSha256": "202d3d50e554d93dcdae7342d09c28b91e5432fd916e4fb7d9cad986c463810b",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p2-pdf-32-4f8ba1ef1dec": {
+      "textSha256": "4f8ba1ef1dec9163424a088673274c7aea4ea88b8de41ebc467d9cc0bd2d2d2a",
+      "contextSha256": "23fbc521b5ee41d758a2aa982c6521e0afceef6bb7bcb997ec21b3e5ba0ff636",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p3-pdf-19-b409c89a748c": {
+      "textSha256": "b409c89a748c3c07751b7bd409eaa5e8ca470bb7abfa80a24f0c070316876a6e",
+      "contextSha256": "37949d79e2a8a67251e4ddff912c222a62d11906208373c37034acdc1e72ed0d",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p3-pdf-39-f2f8722177db": {
+      "textSha256": "f2f8722177dbf90b2a3dd23f716c7b219790141ba50a90262bd6b7fc54796256",
+      "contextSha256": "bb92e26c3161e897fb53a81f0b913dbf9ed1193685553e0b757dd67808565303",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p3-pdf-41-1888a7f97838": {
+      "textSha256": "1888a7f97838c47079048c506a27959d32bea19d8aa668a141137301779ecd34",
+      "contextSha256": "0daa6bc692050c1982f5d517cd99e8d8d22359ff0a4aa9275cc2c6b617c09e60",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p3-pdf-55-0704d0098d9c": {
+      "textSha256": "0704d0098d9cb106f129aafe3388d731d100a267cd0f026bf76ed59e14bf2cf8",
+      "contextSha256": "37b2b60c4b8032dabd6e1c4e718d76e5a5bd962a4425384afd9191e79000f8bc",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p1-t1-b"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p1-t1-b": "8dfebfd822e5126c61336df2d60b55f03e409ab8ed5518d9eec646cefbd26457"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p1-p3-pdf-6-594faaf75c99": {
+      "textSha256": "594faaf75c99712a9d7fb8aa1dd2a63520159021a5783056750a6b7dcfbbd3e8",
+      "contextSha256": "8d262e53ddd3ae56f2674fce37fd62d9791021db47dd8dfadfe112e07ed41c4d",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p4-pdf-15-7a842cde26e2": {
+      "textSha256": "7a842cde26e2a31351f75b2b5ac4ec3b99c99cfa3d0cc4835a22305d391ea3d4",
+      "contextSha256": "1e9ee09dd4649d3508a903da1b86e9766c5e673e531f7063b5afd619a4b29f69",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p4-pdf-18-878e439752e4": {
+      "textSha256": "878e439752e401c4f59c24dd9992fb261c969e0b3101ce4754f6dea399847ebf",
+      "contextSha256": "86c83dc806d868da7a175b854ea0f8c6d4e498e73654975a04d7ad7b9ade638d",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p4-pdf-20-4cf9dca20825": {
+      "textSha256": "4cf9dca20825248eeb51666a4ded0f461cbb965f4fafdf3b4461c1a665e3a84e",
+      "contextSha256": "5716bf231d6c023256c83a243b9558c3d67f8903ca5e21875edf797c7cea8fd5",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p4-pdf-30-fecb2264d0e3": {
+      "textSha256": "fecb2264d0e38218ed063f623c31d0f33bfd6adab899842ef5a6400713bb8390",
+      "contextSha256": "5d07c510763684157a7d7ece13b3db44ad107f69d980750803914805909e9d29",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p4-pdf-34-69c16f9b0296": {
+      "textSha256": "69c16f9b0296fb13ae443026fe6e32ef261c4b3a5d9e7a70372bec11b82a8621",
+      "contextSha256": "5575a48ec7250ef6c2c04cfb2abbd058e03e57f7aa1eb16fe24f5be749261fef",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p4-pdf-37-7649d114e435": {
+      "textSha256": "7649d114e435571e4ab24ca4b5ef78daa32ddc9c965dbdce896531332dc347d6",
+      "contextSha256": "38664aa95c6d73a0af7d030de35de53769ec4cd7eac7d87db5fde71fdfe132c0",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p4-pdf-41-b792fdfda6cd": {
+      "textSha256": "b792fdfda6cd9de354f20ab14f5069a248125a0f1d0f965c36d500e4e730e506",
+      "contextSha256": "81f79ab8ff5b987248824dd8233f80802e1de87ba84dc268fd3d111ff3e76e25",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p4-pdf-53-bbe8f2f38f7c": {
+      "textSha256": "bbe8f2f38f7cb2f34b3eaf3b600ed97f1a64bec516677dcfac52ab9ad239e125",
+      "contextSha256": "89567fad085acda73a6a6e77819bd24a709d82a75dc531d3ca66329e03a84487",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p4-pdf-71-689c2a9d1957": {
+      "textSha256": "689c2a9d1957a83391bde4368dd01c6cfc5760f770df2fc591fb7a023be71c7c",
+      "contextSha256": "07733ace92a26a1deba95597cc0cad0868e2fb67319df698a7f01dfa329db840",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p4-pdf-8-3b9a5c45033f": {
+      "textSha256": "3b9a5c45033f7ac5f87e69d807220caf87495379cf3f72aab65a8524c7aeeef9",
+      "contextSha256": "4f20c34a0fe25b5a69e5f4dba330973685eab23752c643375c095b707ad94adc",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p5-pdf-23-5c7d0746c8c1": {
+      "textSha256": "5c7d0746c8c1fef3b1d3483a0f1bb0c87aa98c00ca7c52e9cd6d6cd31c30f6c9",
+      "contextSha256": "c6269e4758a729d1a33b61579ec55f11e9629177fa66fc44de3fe04616e72d86",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p5-pdf-43-1888a7f97838": {
+      "textSha256": "1888a7f97838c47079048c506a27959d32bea19d8aa668a141137301779ecd34",
+      "contextSha256": "0bcaff883f59b7e5716ca8bee103831eae93c5e0c9dd89639292e68ad287767a",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p5-pdf-59-8e04b270ff13": {
+      "textSha256": "8e04b270ff132ea41c2bbbaa8ecc5f37277cd2201d75b75ee67c45396d9e124f",
+      "contextSha256": "c9925a7354290f3130e45612c9280a8bd500445b426b89978a104042d1d41242",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p1-t2-b"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p1-t2-b": "9165e5571111ad4b09a28c2b38df93ce4bca44a6018c9ff05a0fcc863ed9bf3e"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p1-p5-pdf-8-00fb0ead78ff": {
+      "textSha256": "00fb0ead78ffaed06874d3ba2c72d5bc65e49501f865e7fe5af2cde5cc40bc13",
+      "contextSha256": "a798d731a64ce1e93d7b1aa35aae76d528613cb7d5fbf825a283d689db604a36",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p6-pdf-2-405c45e3052a": {
+      "textSha256": "405c45e3052a9b37575c430b6e9808b281aa2e0334941c3894aec9193bc50f02",
+      "contextSha256": "a23ff4e87928c40e2537d07c752c2c72aeb251b669a350423d49e63dd09f84c0",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p6-pdf-21-53f9136e9a63": {
+      "textSha256": "53f9136e9a63aa7be1057ba1b13fde81e37c79f2bead7cfbfd0ee1d2c7eb4749",
+      "contextSha256": "c14253a307c76cb27797370874e008cf4d8592d61eb3787a4541a98105127be8",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p6-pdf-38-666836cbf43b": {
+      "textSha256": "666836cbf43b0847ee2b435f0760ac1a8176a533f7c2757550be966386dd64ec",
+      "contextSha256": "696934bd0859563a8c3325cab46a9bd24d6a49f32aaf036c62d770e492c516c9",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p6-pdf-46-48ec29469828": {
+      "textSha256": "48ec29469828b693030771b557b4167adc5e4d2681c2eacff534a8acb16bf964",
+      "contextSha256": "86912dab0de57dc847c13e2379f387e8f0a5666e8f82ef5d463877c394e7a07d",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p6-pdf-47-b6515e4a4cb2": {
+      "textSha256": "b6515e4a4cb2744f8296e5713257d3f55df4b0e1745b509de043b3ad00fb2e96",
+      "contextSha256": "5ce2b355ccbeb36ed6f5ac9dd7ae6dd1f75116e29f9ab290c02758a9b4125f5f",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p6-pdf-64-f6e12a4b4795": {
+      "textSha256": "f6e12a4b47950994c827830f26387dfc0606b6ce49bc66226c30aa27920da50b",
+      "contextSha256": "2244c529bdacdc45a25283d04f69e933973122d92336de798c3626f5081b199b",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p6-pdf-8-bff434b5edc9": {
+      "textSha256": "bff434b5edc939cb093d8f46050bcf18bfe0fbd99479c29901de55c376578dcc",
+      "contextSha256": "9e3a606e8991e998172ffcf549395feba9847675cbe677b75116062e1beb76f7",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p7-pdf-14-b6837c0c1056": {
+      "textSha256": "b6837c0c1056e16bf1596cabac1091cd5597cfc6d2522dcc5148fea2b9a7cf62",
+      "contextSha256": "115bf7286b18972e66f0fd00fc7ae5c961778dfcba32caab429f2c7294b48067",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p7-pdf-17-844941144105": {
+      "textSha256": "8449411441050d90cedcd9568cd6b4d8b29c7047eeef7543f10f02dd869328ae",
+      "contextSha256": "3e8c5b2f011b41bdb0e27c74ea3d9b8665bcb283ca5be316b4078c17d45e4410",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p7-pdf-19-c3a73c706993": {
+      "textSha256": "c3a73c706993b3096577af371c2afc13aba3a3cd50dcd6f36f91aee24f87262a",
+      "contextSha256": "dde51b83c13458b1bd95d4f64b6d1387f3964b00fffd20916341ee18436d3f57",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p7-pdf-40-9f6c7f154ff6": {
+      "textSha256": "9f6c7f154ff675f0a01522f22f004794b1342b04ee102f3f9d870dc42fe3936a",
+      "contextSha256": "b65b4439617881e98e10a6603420f69bee4d476f3353edabe622d9ae0bd667c0",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p7-pdf-43-1888a7f97838": {
+      "textSha256": "1888a7f97838c47079048c506a27959d32bea19d8aa668a141137301779ecd34",
+      "contextSha256": "d822c792b24823945b4ae2c14f4f16d6d55cd44dfc79a16da878a8e4f07a256d",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p1-p7-pdf-47-314d838e95f3": {
+      "textSha256": "314d838e95f3fa867717bfbae47b1016a8e22999d6a006c44e528723721b1f03",
+      "contextSha256": "cb01eb01c5c0dd5a78065edc20c16942836358d2abceb3da2cdd0aa4e65bec7a",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p1-t3-a-i"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p1-t3-a-i": "6f31603e79a5e1c4dfea75602926008336ff6a4297a2c2f41563a9d92599cfb6"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p1-p7-pdf-51-738a98682ba2": {
+      "textSha256": "738a98682ba22592d5d6a74dc5dcb0d7c96e18f940448090ba566e784e77c405",
+      "contextSha256": "77160d484259a22463fbb46541c95a160ff4adc6e33133fc694922e3d3976330",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p1-t3-a-ii"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p1-t3-a-ii": "18ae6c80c9e8cd0a4b2c6c4b19a180d7b9f2870b822e4558fa12cf795ebaee53"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p1-p7-pdf-61-0f03b8552042": {
+      "textSha256": "0f03b8552042ab0074449cc9badffd13374a93a3c9f6d69c1899c73f122b1dce",
+      "contextSha256": "72929938ff44c70fce692bac409dc24bfa883de0c86adf6509da1343a05864a2",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p1-t3-b"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p1-t3-b": "56b685143fa29e4e8f755e7aaa08aed7d8a332f8b6597f2504d1e5c206fd01ba"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p1-p8-pdf-12-7786101972a6": {
+      "textSha256": "7786101972a6ba37bdd2d9c2b80a1f86c5036e8ef794da89d5b04c836a7972ea",
+      "contextSha256": "034120dea0ee6f5e54d06e54ff3a56fa6254007bae7dc8a952aec7f82d2b2a74",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p1-composing-2"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p1-composing-2": "307cead165b642be0829252ffbf3d8ec9810ad6c0f8ea8b97ebe70fd39b73b4f"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p1-p8-pdf-2-8474e8390844": {
+      "textSha256": "8474e8390844e0fb22b3ffa4c0e38ca6f17316cc4632d20b3f318c534001c1cf",
+      "contextSha256": "3f4ae41b35e49376170879a223c17bc0c39b5410998aee27cc6904d6a5c9aa98",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p1-p8-pdf-25-f8a6ff5511fc": {
+      "textSha256": "f8a6ff5511fc10077b85ad7d91de8d1e958213e7c650f2fa307c5f20406f77a0",
+      "contextSha256": "9ecc50320d34dc0ae155805437f77a80b117697032f585264b40d5edfb8b6634",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p1-composing-5"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p1-composing-5": "ac691bbe6deaf098aec1e9d47c867f363e481c4c7b5e164a4a229afc2394fc76"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p1-p8-pdf-7-d63619ecdb69": {
+      "textSha256": "d63619ecdb69eb09a9b1105124323d1e1202a504a339bd075bc70074f981b8f6",
+      "contextSha256": "edea7cc90c33a531a5965a8e88ed1b77f07de740c81ec0f5bd542eea2fe7decb",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p1-composing-1"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p1-composing-1": "1a52cb0eb65aaee919d1fde87137a03c792819a571e14bcf1df56509d4951e88"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p1-pdf-10-f3e51dcfaf84": {
+      "textSha256": "f3e51dcfaf84be5e55dc19d83e7faa9ce10f1a9a3dff846b03504324741e5ec1",
+      "contextSha256": "77ba0cc03099060108461de2764daeeb3fd700f272b47b3d018233a881acd42d",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p1-pdf-9-01d05e417585": {
+      "textSha256": "01d05e4175856835bc1dbb07ac6ca54a727e770d8a3ab9a372256353d82c25d0",
+      "contextSha256": "d1fdd31c3751039cb64ef9d64e8818b0c03f2f2151f3ccc480a7affbf98f8e1a",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p2-pdf-19-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "9d552997588657c4ea18ea22b72d8f79b8b0ad5dd841831b525668a5cc7b2844",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p2-pdf-28-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "58fbbe11f4028fa3242cc6d65bfc5dd823a2b0a1da772af07a7e4b8a96d49e02",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p2-pdf-7-fc96782b143f": {
+      "textSha256": "fc96782b143f46efdee5b65f6564f2a8ce9160b3f7e3e24bf41f632ba05ad69f",
+      "contextSha256": "3ebb9e7d6a0503372efb96f5232f010ee9f28a27017da0f4bc4db91942d55e00",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-single-a-i"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-single-a-i": "808eabb9fc4a5a4dd14701953f1b769f741f47584060f8e7be6e67d4dedb1202"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p2-pdf-9-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "5190f97515b1b07cf7fcdb99b3145e87391e07428d49d3bfad52e20e29020b0b",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p3-pdf-18-fc96782b143f": {
+      "textSha256": "fc96782b143f46efdee5b65f6564f2a8ce9160b3f7e3e24bf41f632ba05ad69f",
+      "contextSha256": "a96b196f8869a27dcb5fe8828d137a902d92cb80b843b827b2a1a746c5849553",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-single-e-i"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-single-e-i": "20b1d7a5eb856fb2e4cf92339d36e08758024b643fc14269a64fedb0e79ec757"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p3-pdf-20-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "e1fef7af520699c5bd08bb73b9f31ebcb397cf327e7e0c2b2683854f9a2254d4",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p3-pdf-5-fc96782b143f": {
+      "textSha256": "fc96782b143f46efdee5b65f6564f2a8ce9160b3f7e3e24bf41f632ba05ad69f",
+      "contextSha256": "7efe61ff716f355885c1fe924363cecbfd4ce1d21f28696632f822241b7903eb",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-single-d-i"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-single-d-i": "29ef24e6deee372fb14f8157abe8c59a380093d249e8e4d0dee5f0913f026b39"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p3-pdf-7-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "f13cbac8d4fdd22bed65265ac9942811559dab5cbd95569d3465202814137f16",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p4-pdf-17-92842fac3fbf": {
+      "textSha256": "92842fac3fbf172305d30c59f0846772c1882f0453bae30db07ddf659635e426",
+      "contextSha256": "c25907f80b6b50bac88b0e34ed19ea5a9cbbe07cb8ff9e7a0e4f6ca9b83483d2",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p4-pdf-2-f1aeeebd8bd0": {
+      "textSha256": "f1aeeebd8bd03c4067c859c06ba2ea2a337c6a76736ea8172612632e972029ac",
+      "contextSha256": "8f517aa6e5fbe47cf9ae5c590b0e3ad8a127362ff4df6ae2210b4d6de648a200",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p4-pdf-29-d36ba0b0a31d": {
+      "textSha256": "d36ba0b0a31debf2576f3891645fae5d6f051f16eba3f5187d41554a7cc6156c",
+      "contextSha256": "e9ddea94e8edff211ac30e2ac10abf5fe70a0a1c5ff715776acaf0e4df947344",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-comparative-a-q1-b"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-comparative-a-q1-b": "0bf25fa30a028479e19ba3cf29fa1c719ad644545a2fd1edb7ec5389fafe1c60"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p4-pdf-3-c09ca049e428": {
+      "textSha256": "c09ca049e428d3a734005dc06f1029bd003eab4158d8d9461f27f8c98548649c",
+      "contextSha256": "8c870a3858d048d962a028d6aac09eaa1b80305a61e68d6401d2e2d8e39e5fb0",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p4-pdf-33-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "dbbd7621f0d5d17533930bf022da401f5030b258ede2140d60f2eec3e7cc3bb6",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p4-pdf-36-aacb66e01399": {
+      "textSha256": "aacb66e013992f076ea511c2bb06587d2bd8fa25d54aa701aa73bec206ccabf3",
+      "contextSha256": "79b693cea88dd7e12416b5dca391e0ccd176e3371634ab6215d20b6d632b427a",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-comparative-a-q2"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-comparative-a-q2": "491ecde241fc07e85b9de37fd7eb28db1b56e8455b493c859d6d6dcb36944817"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p5-pdf-10-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "a3ccb4b3067cef507905e813137ef0caf244610f4432677f7110fc07f7486e95",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p5-pdf-18-71f106696531": {
+      "textSha256": "71f106696531f0fee2a9409cd3f0340c0106df29ca97556c12b96889fbb21402",
+      "contextSha256": "0f008dbd27436be0e48ec9926cb77f5ba9601696b6f14f6f5bbff5ae4af5b3ec",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-comparative-c-q1-a"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-comparative-c-q1-a": "c2918ef38bd36a8f81abfac4bcb1961e55dc1b7d94b10f2362925110c300df7b"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p5-pdf-2-0a743751cf77": {
+      "textSha256": "0a743751cf7785f0d9effaef8678072709b69f388a7921a9ce0c599533db5fab",
+      "contextSha256": "83bd803074d1fab3cedc8f3387ada5718702bb504c26659a1c9c8b6aa6008b79",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-comparative-b-q1-a"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-comparative-b-q1-a": "1e4a53774ed3d3ffc7da1ffdeb60a0d3e3d1110b9aec3fb89107ea26c729137d"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p5-pdf-24-d35b1bb8f6d8": {
+      "textSha256": "d35b1bb8f6d80c885514eed144b02a8ee207bb46526ce61e116e226ce3f91a32",
+      "contextSha256": "8c624393210b9cbbc94fe12d46966eac3fbad95c95fc3b5bc719f063ced78605",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-comparative-c-q1-b"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-comparative-c-q1-b": "d33346111befc95ccee06ec182efb2df1a3fcb64f5210d2d82f644e342b35396"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p5-pdf-29-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "c3b2607dbaacedf3fb135bbb712a20a3bb4d5ae0c554ecab41800bc0797c5d61",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p5-pdf-31-d35b1bb8f6d8": {
+      "textSha256": "d35b1bb8f6d80c885514eed144b02a8ee207bb46526ce61e116e226ce3f91a32",
+      "contextSha256": "2d639d4304620be775b52f62f75dc3cc9aab8425e606b6f782c83833ac4b30bc",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-comparative-c-q1-b",
+        "english-2022-hl-deferred-p2-comparative-c-q2"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-comparative-c-q1-b": "d33346111befc95ccee06ec182efb2df1a3fcb64f5210d2d82f644e342b35396",
+        "english-2022-hl-deferred-p2-comparative-c-q2": "2eb1e659963763211940184bad346f418c9a7722e28750b9a8fda0e38cfaaf07"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p5-pdf-33-3c1cbc06233b": {
+      "textSha256": "3c1cbc06233b015da325455e14ae945b3cee42bcd2c38a60ff7c4b15cac2a47d",
+      "contextSha256": "894c5ff2a90baaad04191fa0a7c5937706b34c262533068d1c0935f9d566b0c8",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-comparative-c-q2"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-comparative-c-q2": "2eb1e659963763211940184bad346f418c9a7722e28750b9a8fda0e38cfaaf07"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p5-pdf-6-1882bb10f7d1": {
+      "textSha256": "1882bb10f7d1f224b239552d82290d3e7626655c2cb9d152d5520158a75fa0ad",
+      "contextSha256": "b66e5372f27a820cf64f58199d3154da800eb6071f1d2beb94793238afb2e1be",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-comparative-b-q1-b"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-comparative-b-q1-b": "783ebafbfba4812f61b755ccbbed19410b0d6da325825d784c56dad4ad24bd8e"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p6-pdf-15-f174f941f192": {
+      "textSha256": "f174f941f192ec319d5d6ec481c8c148055c8a4bb724ccf782b3100067af6b92",
+      "contextSha256": "c8528d988c121d5199f2cea8c44a5d81649578f275572449a2a8049442d7e9d7",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-hl-deferred-p2-p6-pdf-36-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "568b8d21b755fa6f3f3d5807727ddab123384dbff63725dbf1eb73f916fa01fa",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p6-pdf-5-d7e5d2042c15": {
+      "textSha256": "d7e5d2042c153ecd3a0f878cf679a45e4708fec61dacd0d3a7892156bda85eb5",
+      "contextSha256": "11836e0bc0311944c51e8080a2a070235e9f0fb493f4281eaadc125c11b47f40",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p7-pdf-13-b94797e87778": {
+      "textSha256": "b94797e87778b22a2ce64ce94a3db366a61da7c26d5d1eec39e61809bbdb3b71",
+      "contextSha256": "b13380e860f489f53fdcaa2c6065a72efce8205eb79c96285ce5902e492d88bd",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-prescribed-2"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-prescribed-2": "e2613a6130311b7863d3a4cb8e2f1d43ee276b8c4b71f48196f38e1ef49b4877"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p7-pdf-20-b94797e87778": {
+      "textSha256": "b94797e87778b22a2ce64ce94a3db366a61da7c26d5d1eec39e61809bbdb3b71",
+      "contextSha256": "afb54ddbdc0cac9b136a082908db8f6764c42d01bf9fc218b3e5cfcaf917fb1d",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-prescribed-3"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-prescribed-3": "15c6582b71973795fdb81db249ff373adf53f068420f041854c3f3a445597c65"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p7-pdf-27-b94797e87778": {
+      "textSha256": "b94797e87778b22a2ce64ce94a3db366a61da7c26d5d1eec39e61809bbdb3b71",
+      "contextSha256": "7b5ff872d0fb966db541af95af783d43d22da4a8ed0b869b42cdfae1e7455236",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-prescribed-4"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-prescribed-4": "73e0d1121ea01e8bf70b7e5538b4049e117146c61d5df26d2214a3d9bf43cdbe"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p7-pdf-3-80b7fb7e97de": {
+      "textSha256": "80b7fb7e97de50783f55c9d20c382ca0498128af602c70740c8506228b673043",
+      "contextSha256": "e89587305ebea1173bf09efd1824f9efb251a07ebb4ad344bd0df1cc832e0ddd",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-hl-deferred-p2-p7-pdf-34-b94797e87778": {
+      "textSha256": "b94797e87778b22a2ce64ce94a3db366a61da7c26d5d1eec39e61809bbdb3b71",
+      "contextSha256": "89d2bd6130bfed288bb8a65906d82d43d4d2a2d9068fcffa926f2a1548ba0fe4",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-hl-deferred-p2-prescribed-5"
+      ],
+      "taskSha256": {
+        "english-2022-hl-deferred-p2-prescribed-5": "f421d8af078c2a36680880d750a40e3ca07ee6d9e4c0d2f8ab55b264fed857a5"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-hl-deferred-p2-p8-pdf-2-77255b5ce15d": {
+      "textSha256": "77255b5ce15d9949db2a698558f11a0d5b3a9838b73f36c1baff26b25e868898",
+      "contextSha256": "e4294acff86228a1a712538d4da632f7cbc35a25a9b3fe2167a41bc536ead61e",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2022-hl-deferred-p2-p8-pdf-3-640d9c6ddcf1": {
+      "textSha256": "640d9c6ddcf17ab84724edb8470b7e34203caae664045f0ab5bf0589d389ad00",
+      "contextSha256": "acc7e597e59106215a56c82a803455106472351cf28e494607640fbc6240c4eb",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2022-hl-deferred-p2-p8-pdf-5-b3f5c0004b81": {
+      "textSha256": "b3f5c0004b81ae661ae7e28783356a92ff299b031c14202429ac8a25bb625c19",
+      "contextSha256": "e300fc6b0d81898fc64fae7eb083e5034577e3b6b68366fa53c7ad8e96d66396",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2022-hl-deferred-p2-p8-pdf-6-fcd02c5a3dcf": {
+      "textSha256": "fcd02c5a3dcfa50c2564b9cdeb6f85b634a5fd7665ecec429a0d945e2768970e",
+      "contextSha256": "5358d63dc350179e04d5b2d2e3be19c8a0ba4f5870211b607759ed5af94bdda9",
       "kind": "non-selection",
       "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
     },

@@ -80,7 +80,7 @@ describe('audited hosted answer maps', () => {
     const englishPapers = publishedEnglishHigher.papers.length + publishedEnglishOrdinary.papers.length;
     const englishDeferred = [...publishedEnglishHigher.papers, ...publishedEnglishOrdinary.papers]
       .filter(paper => paper.paperId.includes('-deferred-')).length;
-    expect([englishPapers - englishDeferred, englishDeferred]).toEqual([68, 8]);
+    expect([englishPapers - englishDeferred, englishDeferred]).toEqual([68, 10]);
     const originalOverrides = [...HOSTED_ANSWER_OVERRIDES].filter(key => key.startsWith('art|')
       || key.startsWith('physics|') || key.startsWith('agricultural-science|') || key.startsWith('english|'));
     expect(originalOverrides).toHaveLength(61 + englishPapers);

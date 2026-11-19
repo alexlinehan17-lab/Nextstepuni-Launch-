@@ -981,6 +981,16 @@
     "english-8-1",
     "english-11-65"
    ]
+  },
+  {
+   "id": "english-higher-poetry-lawrence-reviewed-archive",
+   "level": "higher",
+   "slug": "poetry-lawrence",
+   "label": "Poetry - Lawrence",
+   "curriculumNodeIds": [
+    "english-8-0",
+    "english-11-14"
+   ]
   }
  ]
 }

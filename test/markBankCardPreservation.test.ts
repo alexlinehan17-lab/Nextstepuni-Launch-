@@ -2984,7 +2984,7 @@ describe('Mark Bank card preservation', () => {
     expect([added('-hl-'), aliased('-hl-'), added('-ol-'), aliased('-ol-')]).toEqual([548, 20, 1612, 105]);
     const deferredAdded = (level: string) => [...englishAdditionIds]
       .filter(id => id.includes(`${level}deferred-`)).length;
-    expect([deferredAdded('-hl-'), deferredAdded('-ol-')]).toEqual([133, 121]);
+    expect([deferredAdded('-hl-'), deferredAdded('-ol-')]).toEqual([179, 121]);
     for (const id of englishAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
     expect(ENGLISH_HIGHER).toHaveLength(210 - aliased('-hl-') + added('-hl-') + deferredAdded('-hl-'));
     expect(ENGLISH_ORDINARY).toHaveLength(440 - aliased('-ol-') + added('-ol-') + deferredAdded('-ol-'));

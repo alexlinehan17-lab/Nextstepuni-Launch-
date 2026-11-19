@@ -18486,6 +18486,144 @@
       "kind": "open",
       "reason": "Scheme PDF48: whether, in the candidate’s opinion, the poem is (or is not) amusing, disturbing, emotional or joyful as printed — one judgement. One 15-mark response."
     },
+    "english-2022-hl-deferred-p1-composing-1": {
+      "questionSha256": "1a52cb0eb65aaee919d1fde87137a03c792819a571e14bcf1df56509d4951e88",
+      "kind": "open",
+      "reason": "Scheme PDF14: a personal essay reflecting on how dull the candidate’s life would be without colourful people who add drama and excitement; they “may refer both to people whom they know and to celebrities”. One 100-mark composition."
+    },
+    "english-2022-hl-deferred-p1-composing-2": {
+      "questionSha256": "307cead165b642be0829252ffbf3d8ec9810ad6c0f8ea8b97ebe70fd39b73b4f",
+      "kind": "flexible",
+      "reason": "Scheme PDF15: a short story “set in China in the past or in the present” — either setting, on one grid — in which a river boatman in a small craft plays an important part. One 100-mark composition."
+    },
+    "english-2022-hl-deferred-p1-composing-5": {
+      "questionSha256": "ac691bbe6deaf098aec1e9d47c867f363e481c4c7b5e164a4a229afc2394fc76",
+      "kind": "flexible",
+      "reason": "Scheme PDF18: a personal essay reflecting on what makes the candidate “glow” with joy or satisfaction — either or both. One 100-mark composition."
+    },
+    "english-2022-hl-deferred-p1-t1-b": {
+      "questionSha256": "8dfebfd822e5126c61336df2d60b55f03e409ab8ed5518d9eec646cefbd26457",
+      "kind": "printed-choice",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF6 — an open letter arguing “for or against the inclusion of song lyrics in the selection of poetry prescribed”, anticipating and refuting views opposed to “their chosen stance”; either stance is marked on one grid and all aspects are required, not necessarily equally. One 40-mark response.",
+      "pools": [
+        {
+          "id": "selection",
+          "label": "Selected stance",
+          "take": 1,
+          "options": [
+            {
+              "id": "1",
+              "text": "For the inclusion of song lyrics"
+            },
+            {
+              "id": "2",
+              "text": "Against the inclusion of song lyrics"
+            }
+          ]
+        }
+      ],
+      "printedChoices": 2
+    },
+    "english-2022-hl-deferred-p1-t2-b": {
+      "questionSha256": "9165e5571111ad4b09a28c2b38df93ce4bca44a6018c9ff05a0fcc863ed9bf3e",
+      "kind": "required",
+      "reason": "Scheme PDF9: podcast text for a series of travel documentaries that celebrates the delights of travelling near and far, reflects on the pleasure of planning possible future trips and explains why the candidate keeps a journal when travelling; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 40-mark response."
+    },
+    "english-2022-hl-deferred-p1-t3-a-i": {
+      "questionSha256": "6f31603e79a5e1c4dfea75602926008336ff6a4297a2c2f41563a9d92599cfb6",
+      "kind": "open",
+      "reason": "Scheme PDF10: three insights of the candidate’s own into the theatrical world “at the time in which the novel is set”, supported by reference to TEXT 3; the indicative material is not a pool. One 10-mark response."
+    },
+    "english-2022-hl-deferred-p1-t3-a-ii": {
+      "questionSha256": "18ae6c80c9e8cd0a4b2c6c4b19a180d7b9f2870b822e4558fa12cf795ebaee53",
+      "kind": "flexible",
+      "reason": "Scheme PDF10: the extent to which the candidate can relate the audience’s experience in the text to their own “at concerts, matches, dramatic productions or other live performances” — any of these, one or more; “Allow for a wide variety of responses.” One 10-mark response."
+    },
+    "english-2022-hl-deferred-p1-t3-b": {
+      "questionSha256": "56b685143fa29e4e8f755e7aaa08aed7d8a332f8b6597f2504d1e5c206fd01ba",
+      "kind": "required",
+      "reason": "Scheme PDF12: the text of a Student Council talk that promotes reviving the annual musical production, reminds the school of past successes and encourages involvement in its roles and tasks; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 40-mark response."
+    },
+    "english-2022-hl-deferred-p2-comparative-a-q1-b": {
+      "questionSha256": "0bf25fa30a028479e19ba3cf29fa1c719ad644545a2fd1edb7ec5389fafe1c60",
+      "kind": "flexible",
+      "reason": "Scheme PDF34: at least one feature of storytelling in each of two other texts; “Candidates may refer to the same technique or different features of storytelling” — one comparison. One 40-mark response."
+    },
+    "english-2022-hl-deferred-p2-comparative-a-q2": {
+      "questionSha256": "491ecde241fc07e85b9de37fd7eb28db1b56e8455b493c859d6d6dcb36944817",
+      "kind": "flexible",
+      "reason": "Scheme PDF35: how the authors create a sense of anticipation in advance of significant developments or dramatic events — either or both — in each of at least two texts. One 70-mark comparison."
+    },
+    "english-2022-hl-deferred-p2-comparative-b-q1-a": {
+      "questionSha256": "1e4a53774ed3d3ffc7da1ffdeb60a0d3e3d1110b9aec3fb89107ea26c729137d",
+      "kind": "open",
+      "reason": "Scheme PDF36: the extent to which individual rights are respected or threatened in the cultural context of one text — a graded judgement either way. One 30-mark response."
+    },
+    "english-2022-hl-deferred-p2-comparative-b-q1-b": {
+      "questionSha256": "783ebafbfba4812f61b755ccbbed19410b0d6da325825d784c56dad4ad24bd8e",
+      "kind": "open",
+      "reason": "Scheme PDF37: the same question compared in each of two other texts — a graded judgement either way. One 40-mark response."
+    },
+    "english-2022-hl-deferred-p2-comparative-c-q1-a": {
+      "questionSha256": "c2918ef38bd36a8f81abfac4bcb1961e55dc1b7d94b10f2362925110c300df7b",
+      "kind": "open",
+      "reason": "Scheme PDF39: the extent to which the candidate’s sense of the general vision and viewpoint in one text was influenced by their response to its prevailing values — a graded judgement. One 30-mark response."
+    },
+    "english-2022-hl-deferred-p2-comparative-c-q1-b": {
+      "questionSha256": "d33346111befc95ccee06ec182efb2df1a3fcb64f5210d2d82f644e342b35396",
+      "kind": "open",
+      "reason": "Scheme PDF40: the same question compared in two other texts — a graded judgement. One 40-mark response."
+    },
+    "english-2022-hl-deferred-p2-comparative-c-q2": {
+      "questionSha256": "2eb1e659963763211940184bad346f418c9a7722e28750b9a8fda0e38cfaaf07",
+      "kind": "open",
+      "reason": "Scheme PDF41: at least two texts; the extent to which the general vision and viewpoint was shaped by how successfully a significant conflict or tension was resolved in each — a graded judgement. One 70-mark comparison."
+    },
+    "english-2022-hl-deferred-p2-prescribed-2": {
+      "questionSha256": "e2613a6130311b7863d3a4cb8e2f1d43ee276b8c4b71f48196f38e1ef49b4877",
+      "kind": "open",
+      "reason": "Scheme PDF45: agree or disagree with the printed statement, poems of the candidate’s choosing (PDF43: “freedom of choice in relation to the poems studied”) — a graded judgement. One 50-mark response."
+    },
+    "english-2022-hl-deferred-p2-prescribed-3": {
+      "questionSha256": "15c6582b71973795fdb81db249ff373adf53f068420f041854c3f3a445597c65",
+      "kind": "open",
+      "reason": "Scheme PDF46: agree or disagree with the printed statement, poems of the candidate’s choosing (PDF43: “freedom of choice in relation to the poems studied”) — a graded judgement. One 50-mark response."
+    },
+    "english-2022-hl-deferred-p2-prescribed-4": {
+      "questionSha256": "73e0d1121ea01e8bf70b7e5538b4049e117146c61d5df26d2214a3d9bf43cdbe",
+      "kind": "open",
+      "reason": "Scheme PDF47: agree or disagree with the printed statement, poems of the candidate’s choosing (PDF43: “freedom of choice in relation to the poems studied”) — a graded judgement. One 50-mark response."
+    },
+    "english-2022-hl-deferred-p2-prescribed-5": {
+      "questionSha256": "f421d8af078c2a36680880d750a40e3ca07ee6d9e4c0d2f8ab55b264fed857a5",
+      "kind": "open",
+      "reason": "Scheme PDF48: agree or disagree with the printed statement, poems of the candidate’s choosing (PDF43: “freedom of choice in relation to the poems studied”) — a graded judgement. One 50-mark response."
+    },
+    "english-2022-hl-deferred-p2-single-a-i": {
+      "questionSha256": "808eabb9fc4a5a4dd14701953f1b769f741f47584060f8e7be6e67d4dedb1202",
+      "kind": "open",
+      "reason": "Scheme PDF22: the reasons why the candidate does or does not agree that incorporating elements of history, mystery and legend adds to the narrative power of All the Light We Cannot See — agreement or disagreement is a reasoned judgement on one grid, not routes. One 70-mark response."
+    },
+    "english-2022-hl-deferred-p2-single-b-i": {
+      "questionSha256": "7ddd23a8bfcd1c0126b7a97d6da85d217e9c6cbb201acc7f4286691ad0e8007f",
+      "kind": "open",
+      "reason": "Scheme PDF24: how Ibsen creates moments of heightened dramatic intensity in A Doll’s House, developed with reference to “at least three moments” of the candidate’s choosing; the printed OR separates (i) from (ii), each its own card. One 70-mark response."
+    },
+    "english-2022-hl-deferred-p2-single-c-i": {
+      "questionSha256": "8ebb72d9e0ecfbee27324b8a08436ebc0b8ac7e46baaa6831e1ce6d17085a81e",
+      "kind": "open",
+      "reason": "Scheme PDF26: how Shakespeare creates moments of heightened dramatic intensity in Othello, developed with reference to “at least three moments” of the candidate’s choosing; the printed OR separates (i) from (ii), each its own card. One 70-mark response."
+    },
+    "english-2022-hl-deferred-p2-single-d-i": {
+      "questionSha256": "29ef24e6deee372fb14f8157abe8c59a380093d249e8e4d0dee5f0913f026b39",
+      "kind": "open",
+      "reason": "Scheme PDF28: the reasons why the candidate does or does not agree that incorporating elements of science fiction, gothic fiction and horror adds to the narrative power of Frankenstein — agreement or disagreement is a reasoned judgement on one grid, not routes. One 70-mark response."
+    },
+    "english-2022-hl-deferred-p2-single-e-i": {
+      "questionSha256": "20b1d7a5eb856fb2e4cf92339d36e08758024b643fc14269a64fedb0e79ec757",
+      "kind": "open",
+      "reason": "Scheme PDF30: the reasons why the candidate does or does not agree that incorporating elements of philosophy, melodrama and satiric comedy adds to the narrative power of The Picture of Dorian Gray — agreement or disagreement is a reasoned judgement on one grid, not routes. One 70-mark response."
+    },
     "english-2023-hl-deferred-p1-composing-2": {
       "questionSha256": "31a27835a7221de409bc93fb25f07471afa7af86105c140c8238ed271837d6f7",
       "kind": "open",

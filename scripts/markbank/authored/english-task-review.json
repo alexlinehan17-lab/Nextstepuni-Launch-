@@ -66605,6 +66605,1240 @@
       },
       "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–19. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)(b) 15 combined 9/6, Q2 “Combined Criteria ex 20” 12/8. Grid PDF53."
     },
+    "english-2022-hl-deferred-p1-composing-1": {
+      "taskSha256": "ccd2ffd657ea531746b27a05ddef0c5438de1aa3b7486681069f4ae5bd1b0857",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 100,
+      "schemePages": [
+        14
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF14: “Mark ex 100 by reference to the criteria for assessment”, P 30 / C 30 / L 30 / M 10 printed with the composition (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p1-composing-2": {
+      "taskSha256": "b47d590ed0c725b902269990674fcd27ff245f6c419707a73dafd1e684abd43c",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 100,
+      "schemePages": [
+        15
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF15: “Mark ex 100 by reference to the criteria for assessment”, P 30 / C 30 / L 30 / M 10 printed with the composition (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p1-composing-3": {
+      "taskSha256": "003453fb0df185446eef0fdb099950fa1aa87707fc86552afdc75e6a3ef76dc5",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 100,
+      "schemePages": [
+        16
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF16: “Mark ex 100 by reference to the criteria for assessment”, P 30 / C 30 / L 30 / M 10 printed with the composition (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p1-composing-4": {
+      "taskSha256": "dde898bedb8b39ede4ffcd8488408a7acbce3325d06330e34c052e10370e696a",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 100,
+      "schemePages": [
+        17
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF17: “Mark ex 100 by reference to the criteria for assessment”, P 30 / C 30 / L 30 / M 10 printed with the composition (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p1-composing-5": {
+      "taskSha256": "b4bd1c7cd03ad20f7532e703eb012f362ddf94f7b22bed52f93299b51fb8e576",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 100,
+      "schemePages": [
+        18
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF18: “Mark ex 100 by reference to the criteria for assessment”, P 30 / C 30 / L 30 / M 10 printed with the composition (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p1-composing-6": {
+      "taskSha256": "8608c57afc9990d51b188d04b21ba2e35b0f5b37585ce13f0d1241dfa78c0fc1",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 100,
+      "schemePages": [
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF19: “Mark ex 100 by reference to the criteria for assessment”, P 30 / C 30 / L 30 / M 10 printed with the composition (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p1-composing-7": {
+      "taskSha256": "18bf8cfe07febae95eb7fcf96069eddcfd68ce8dc7162832525a88c915f6b046",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 100,
+      "schemePages": [
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF20: “Mark ex 100 by reference to the criteria for assessment”, P 30 / C 30 / L 30 / M 10 printed with the composition (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p1-t1-a-i": {
+      "taskSha256": "2d3424c99ba3be264626a131374535e74caff8a40bfdd86c16aeca8dbf8362f3",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 10,
+      "schemePages": [
+        4
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 10 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF4: “Mark ex 10 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF50). No invented splits or submarks."
+    },
+    "english-2022-hl-deferred-p1-t1-a-ii": {
+      "taskSha256": "9f1193693116cd40ffa5ef6bfa9417a2d7e0c1e0bce619efd9031442693651dc",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 10,
+      "schemePages": [
+        5
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 10 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF5: “Mark ex 10 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF50). No invented splits or submarks."
+    },
+    "english-2022-hl-deferred-p1-t1-a-iii": {
+      "taskSha256": "6a5ae313dc259f6da4c2ba55887343801c9c5b9d1f83a66ef599f3167fe38ce2",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 20,
+      "schemePages": [
+        5
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF5: “Mark ex 20 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF50). No invented splits or submarks."
+    },
+    "english-2022-hl-deferred-p1-t1-b": {
+      "taskSha256": "8dd1e195d792676ba531b24a26fde0abc8bf453ac03eab9e5ce982fa1d6e2eef",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 40,
+      "schemePages": [
+        6
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. The discrete 40-mark H1–H8 grid is printed with each Question B (PDF6, 9, 12)."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF6: “Mark ex 40 by reference to the criteria for assessment”, P 12 / C 12 / L 12 / M 4 and the discrete 40-mark grid printed with the task."
+    },
+    "english-2022-hl-deferred-p1-t2-a-i": {
+      "taskSha256": "080f1974e9ae8887784e975c00cbda3ae4190ed797ce41f5e953962409519fe4",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 10,
+      "schemePages": [
+        7
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 10 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF7: “Mark ex 10 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF50). No invented splits or submarks."
+    },
+    "english-2022-hl-deferred-p1-t2-a-ii": {
+      "taskSha256": "f5040d4419385f52874035f3e13fe795328052a9d32c428f147cc1d68f463441",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 10,
+      "schemePages": [
+        7
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 10 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF7: “Mark ex 10 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF50). No invented splits or submarks."
+    },
+    "english-2022-hl-deferred-p1-t2-a-iii": {
+      "taskSha256": "bae40d0f0cc1e2ab7113a6e22acaa0153ff9e862aef234600fae413d73cfd245",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 20,
+      "schemePages": [
+        8
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF8: “Mark ex 20 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF50). No invented splits or submarks."
+    },
+    "english-2022-hl-deferred-p1-t2-b": {
+      "taskSha256": "201f58fc9808ba576b180c25e37ff702ec8d6a636ac6f737561f2037a159a6a0",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 40,
+      "schemePages": [
+        9
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. The discrete 40-mark H1–H8 grid is printed with each Question B (PDF6, 9, 12)."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF9: “Mark ex 40 by reference to the criteria for assessment”, P 12 / C 12 / L 12 / M 4 and the discrete 40-mark grid printed with the task."
+    },
+    "english-2022-hl-deferred-p1-t3-a-i": {
+      "taskSha256": "7e4cab7f46ce97e615bc8d0fbf074f8ffefc96f6841f2677b83d041a2e19d435",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 10,
+      "schemePages": [
+        10
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 10 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF10: “Mark ex 10 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF50). No invented splits or submarks."
+    },
+    "english-2022-hl-deferred-p1-t3-a-ii": {
+      "taskSha256": "c61949805c0299637ad7121b27060cf2c98dbbcc7176b0ff3b7d59315c238907",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 10,
+      "schemePages": [
+        10
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 10 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF10: “Mark ex 10 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF50). No invented splits or submarks."
+    },
+    "english-2022-hl-deferred-p1-t3-a-iii": {
+      "taskSha256": "d2350854840ef9fbde6fcb9a9276f6e60b1668c092a29f2b60178eae381ddc14",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 20,
+      "schemePages": [
+        11
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF11: “Mark ex 20 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF50). No invented splits or submarks."
+    },
+    "english-2022-hl-deferred-p1-t3-b": {
+      "taskSha256": "3b3513dcba1b7cff97fc7872d0f8e0d332c0a4e70df003c568e4db33a4089e1d",
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 40,
+      "schemePages": [
+        12
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. The discrete 40-mark H1–H8 grid is printed with each Question B (PDF6, 9, 12)."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF12: “Mark ex 40 by reference to the criteria for assessment”, P 12 / C 12 / L 12 / M 4 and the discrete 40-mark grid printed with the task."
+    },
+    "english-2022-hl-deferred-p2-comparative-a-q1-a": {
+      "taskSha256": "0828f85cc7bc8c37d19edcf92beda44f0d5c7afd680645c3ab43052854ee4f62",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 30,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 30 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF33: “Mark ex 30 by reference to the criteria for assessment”, one H1–H8 row printed with the part (combined grid PDF50); the P/C/L/M lines describe the criteria and carry no marks."
+    },
+    "english-2022-hl-deferred-p2-comparative-a-q1-b": {
+      "taskSha256": "51415fd1077914aedb6caaad55ebe181e3a4a6d4c98de0c94265275e764de943",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 40,
+      "schemePages": [
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 40 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF34: “Mark ex 40 by reference to the criteria for assessment”, one H1–H8 row printed with the part (combined grid PDF50); the P/C/L/M lines describe the criteria and carry no marks."
+    },
+    "english-2022-hl-deferred-p2-comparative-a-q2": {
+      "taskSha256": "40d44a9e539bf321aa76ad57fec27a1d110f26799616b42ce65b487787134f9b",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 70,
+      "schemePages": [
+        35
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF35: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-comparative-b-q1-a": {
+      "taskSha256": "e2e7505f5d16a40742bfff6e7742d6b46d141c60a789e76557a4982a04f0f7b3",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 30,
+      "schemePages": [
+        36
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 30 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF36: “Mark ex 30 by reference to the criteria for assessment”, one H1–H8 row printed with the part (combined grid PDF50); the P/C/L/M lines describe the criteria and carry no marks."
+    },
+    "english-2022-hl-deferred-p2-comparative-b-q1-b": {
+      "taskSha256": "e643eb20d91a831150016f9de61c3d7d0a3e3ff6c4226b9f0ff4495d58c72e64",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 40,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 40 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF37: “Mark ex 40 by reference to the criteria for assessment”, one H1–H8 row printed with the part (combined grid PDF50); the P/C/L/M lines describe the criteria and carry no marks."
+    },
+    "english-2022-hl-deferred-p2-comparative-b-q2": {
+      "taskSha256": "13b81954785c4d35d9b88aef41896307fcb5eb6513735bf94d02dd8df400d8dd",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 70,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF38: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-comparative-c-q1-a": {
+      "taskSha256": "fd58bc7f2c78dbad0ee2b0b4b27a1b5827139cfd3631c2d1758568ae0a65825d",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 30,
+      "schemePages": [
+        39
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 30 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF39: “Mark ex 30 by reference to the criteria for assessment”, one H1–H8 row printed with the part (combined grid PDF50); the P/C/L/M lines describe the criteria and carry no marks."
+    },
+    "english-2022-hl-deferred-p2-comparative-c-q1-b": {
+      "taskSha256": "479307b56cd009508e8d80ce66757f66b254e728c4727389c284748af896d376",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 40,
+      "schemePages": [
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 40 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF40: “Mark ex 40 by reference to the criteria for assessment”, one H1–H8 row printed with the part (combined grid PDF50); the P/C/L/M lines describe the criteria and carry no marks."
+    },
+    "english-2022-hl-deferred-p2-comparative-c-q2": {
+      "taskSha256": "01d76a99138601916849a81ab9ce7c907444b3e0be423e7c9999cf35c20220d1",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 70,
+      "schemePages": [
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF41: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-prescribed-1": {
+      "taskSha256": "218272476e349a49705f84ef7851470a20d59aa4cccd1adb5267b7a021c26dd6",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 50,
+      "schemePages": [
+        44
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF44: “Mark ex 50 … using the breakdown of marks below”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-prescribed-2": {
+      "taskSha256": "d88fdf78fa6dc2e8a590ec2c85ed58d15f1384f373ef09184e4055f3ac921198",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 50,
+      "schemePages": [
+        45
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF45: “Mark ex 50 … using the breakdown of marks below”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-prescribed-3": {
+      "taskSha256": "2b5f03c32a46ab6e144e73920a74ee0e206ba8bd38e0f57266de3645cfc42c48",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 50,
+      "schemePages": [
+        46
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF46: “Mark ex 50 … using the breakdown of marks below”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-prescribed-4": {
+      "taskSha256": "11eb3a7a6b95920b2439372fe119b3a52b20796b0cc1585167b8dab3cd6be4a9",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 50,
+      "schemePages": [
+        47
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF47: “Mark ex 50 … using the breakdown of marks below”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-prescribed-5": {
+      "taskSha256": "e33e6dceeebb78bfc233461c75e1572bf87fd42214fc76b62e9465a9112424bc",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 50,
+      "schemePages": [
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF48: “Mark ex 50 … using the breakdown of marks below”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-single-a-i": {
+      "taskSha256": "dd8fe03e3c92738dbb59d11cdb249b050979f9764986284e660c47dc517fe866",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 70,
+      "schemePages": [
+        22
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF22: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-single-a-ii": {
+      "taskSha256": "9a1394571e601044c25680a033f9c013c3d7b3db922fd7e88c6bae308e4d8527",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 70,
+      "schemePages": [
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF23: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-single-b-i": {
+      "taskSha256": "616c03f45a891883929653ffcb0f85a80bf6b73a9caf8d03e8f2e96d98eabd38",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 70,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF24: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-single-b-ii": {
+      "taskSha256": "356a48d8bc4cdd558502a394f4061e16ca184393bc6bc39d694f924e1e23cc5b",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 70,
+      "schemePages": [
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF25: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-single-c-i": {
+      "taskSha256": "ddea76b9c8651e3a85e5d3bef30659461429d4ecbc8245ef876626e2174dc8bc",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 70,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF26: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-single-c-ii": {
+      "taskSha256": "3d3921b87136c6c05c422ac1564e1fb5899a4d3a240d362eefb755f8c0698ebc",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 70,
+      "schemePages": [
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF27: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-single-d-i": {
+      "taskSha256": "f4180697d1856805fd00e51cda83c68d930be10307d8bd3f6d81c7abc86b1ca1",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 70,
+      "schemePages": [
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF28: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-single-d-ii": {
+      "taskSha256": "12279b1a35b132b6bcb24c16f8b8d4a18d00807cfac724700670a2fe3bd3f87f",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 70,
+      "schemePages": [
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF29: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-single-e-i": {
+      "taskSha256": "80cf35402bb78f02baf35cc9c5d2923e96c4ed1dfb16019c5aced73ee68e245f",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 70,
+      "schemePages": [
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF30: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-single-e-ii": {
+      "taskSha256": "4035652f9ba72f569646a56ff2107776498e2d8d6a8038c27d1458c40cf24963",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 70,
+      "schemePages": [
+        31
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2022 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF31: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF50)."
+    },
+    "english-2022-hl-deferred-p2-unseen-q1-a": {
+      "taskSha256": "5156344e63d739ea101a4088854d7ce994dbdc934ce990c5acdc371003aff2b0",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 10,
+      "schemePages": [
+        42
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 10 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF42: “Mark ex 10 by reference to the criteria for assessment” with its H1–H8 row (combined grid PDF50). No invented splits or submarks."
+    },
+    "english-2022-hl-deferred-p2-unseen-q1-b": {
+      "taskSha256": "88a21ab42428384b8deba0d90289af3524fd9d582a4781a09c87cc2e3cddbb63",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 10,
+      "schemePages": [
+        42
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 10 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF42: “Mark ex 10 by reference to the criteria for assessment” with its H1–H8 row (combined grid PDF50). No invented splits or submarks."
+    },
+    "english-2022-hl-deferred-p2-unseen-q2": {
+      "taskSha256": "f50c1d7a2af74194f27f0cc0254cd8b1cb825a5a97aa7ce21d80bb33fbd134eb",
+      "paperSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "schemeSha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+      "totalMarks": 20,
+      "schemePages": [
+        42
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        32,
+        42,
+        43,
+        49,
+        50,
+        51
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF50); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF42: “Mark ex 20 by reference to the criteria for assessment” with its H1–H8 row (combined grid PDF50). No invented splits or submarks."
+    },
     "english-2023-hl-deferred-p1-composing-1": {
       "taskSha256": "d972427dac4c4ec9c73cf38f14666d701f44b1a8b64643aca5bebd4234bf5b1a",
       "paperSha256": "8478421ce1f7230542c97d003557b909116f79e7d3e91cf0ba3a6245911e40d0",
