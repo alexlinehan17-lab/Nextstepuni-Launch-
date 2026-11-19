@@ -2,92 +2,127 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * The single model's topic record, derived (plan section 5, M1-M3): one record per ask, keyed by the card id, giving
- * the printed question the ask belongs to and the Topic Atlas headings it is filed under. The Mark Bank and the Topic
- * Atlas both read the generated file (data/atlasModel/<subject>.json, components/PaperTrail/atlasModel.ts); this module
- * is what writes it (scripts/atlas-model/build-ask-topics.mjs) and what the check re-derives it with
- * (test/atlasModelChecks.test.ts), so the committed file can never drift from the deck and the Atlas.
- *
- * Biology's rule is the one test/markBankBiologyReview.test.ts already holds every card to: the card's printed
- * question is an Atlas question; of that question's reviewed exam-topic headings (examTopicIdsForQuestion), the card
- * is filed under each one whose crosswalk (ExamTopicDefinition.curriculumNodeIds) holds the card's own curriculum
- * topic (topicId and additionalTopicIds; bio-u1 is read as bio-u2, the test's ATLAS_UNIT_EQUIV). Nothing here is a
- * new judgement: it narrows the question-level headings to the ones each part's own topic belongs to.
+ * The single model's topic record (plan section 5; Alex, 18 Nov 2026: "if it is under x in Mark Bank, it's under x
+ * in Topic Atlas"). Every subject has ONE heading list, and every ask (card) is filed under the heading for what that
+ * part asks. The decisions live in scripts/atlas-model/filings/<subject>.json (how each was decided:
+ * CARD-STANDARD.md section 9); this module turns a filing into data/atlasModel/<subject>.json, which the Mark Bank
+ * and the Topic Atlas both read (components/PaperTrail/atlasModel.ts). It is also what the automatic check re-runs,
+ * so the committed record can never drift from the deck, the filing or the Atlas.
  */
-import { loadCards, levelsFor } from '../../components/MarkBank/deck';
+import { SUBJECTS, loadCards, levelsFor } from '../../components/MarkBank/deck';
 import { topicsForPaper } from '../../components/PaperTrail/topics';
-import { isDeferredFileid } from '../../components/PaperTrail/sitting';
-import {
-  curriculumNodeIdsForExamTopic, examTopicDefinition, examTopicIdsForQuestion, examTopicTaxonomyFor,
-} from '../../data/examTopics/registry';
+import { examTopicDefinition } from '../../data/examTopics/registry';
+import { CURRICULUM } from '../../curriculum';
+import type { PaperLang, PaperLevel } from '../../types/paperTrail';
 import type { SecCard } from '../../types/markBank';
+import { addressContext, atlasAddress } from './cardAtlasAddress';
+import { atlasSubjectFor } from './checks';
 
-/** Subjects whose Mark Bank and Topic Atlas read one topic record per ask. */
-export const MODEL_SUBJECTS = ['biology'] as const;
+/** How a filing was decided: x = the card's topic crosswalks to one heading; xa = to several, narrowed to one by the
+ *  Atlas question; j = a one-to-one join of the subject's two topic lists; r2 = two independent readers agreed;
+ *  r1 = one reader, whose heading agrees with both the card's topic and the Atlas listing (not sampled for a second);
+ *  r3 = a third reader settled a difference; rs = settled by evidence and confirmed by a sampled second reading. */
+export type FilingHow = 'x' | 'xa' | 'j' | 'r1' | 'r2' | 'r3' | 'rs';
 
-/** Curriculum topics with no Atlas heading of their own, read as the topic the subject's own Atlas check uses. */
-const NODE_EQUIV: Record<string, Record<string, string>> = { biology: { 'bio-u1': 'bio-u2' } };
-
-export interface AskTopicFile {
+export interface SubjectFiling {
   v: 1;
-  subjectId: string;
-  atlasSubjectId: string;
-  headings: string;
-  rule: string;
-  groups: Array<{ id: string; level: string; label: string; topics: number[] }>;
-  topics: Array<{ id: string; level: string; code: string; title: string }>;
-  /** [year, level, booklet, printed question number, [[card id, [topic index…]]…]] */
-  questions: Array<[number, string, string, string, Array<[string, number[]]>]>;
+  subject: string;
+  /** Where the heading list comes from, in words. */
+  headingSource: string;
+  groups: Array<{ id: string; level: string; label: string; topics: string[] }>;
+  /** card id -> [heading ids, how decided] */
+  asks: Record<string, [string[], FilingHow]>;
 }
 
+export interface AskTopicFile {
+  v: 2;
+  subjectId: string;
+  headingSource: string;
+  groups: Array<{ id: string; level: string; label: string; topics: number[] }>;
+  topics: Array<{ id: string; level: string; code: string; title: string }>;
+  /** [Atlas subject, year, level, booklet, printed question number, [[card id, [topic index…]]…]] */
+  questions: Array<[string, number, string, string, string, Array<[string, number[]]>]>;
+  /** Asks whose printed question the Atlas does not list yet: [card id, [topic index…]]. */
+  unplaced: Array<[string, number[]]>;
+}
+
+const FILINGS = import.meta.glob('./filings/*.json', { eager: true, import: 'default' }) as Record<string, SubjectFiling>;
+export const FILED_SUBJECTS: string[] = Object.values(FILINGS).map(f => f.subject).sort();
+/** Subjects the app already reads (components/PaperTrail/atlasModel.ts); the rest join in Stage 2. */
+export const MODEL_SUBJECTS = ['biology'] as const;
+export const filingFor = (subject: string): SubjectFiling | null => Object.values(FILINGS).find(f => f.subject === subject) ?? null;
+
+const curriculumLabel = new Map(CURRICULUM.flatMap(c => c.strands.flatMap(s => s.subtopics.map(t => [t.id, t.name] as const))));
+const labelOf = (id: string) => examTopicDefinition(id)?.label ?? curriculumLabel.get(id) ?? null;
 const splitLabel = (label: string) => {
-  const m = /^((?:\d+(?:\.\d+)*\.?)|(?:U\d+))\s+(.*)$/.exec(label.trim());
-  return m ? { code: m[1].replace(/\.$/, ''), title: m[2] } : { code: '', title: label.trim() };
+  const m = /^((?:\d+(?:\.\d+)*\.?)|(?:U\d+)|(?:[A-J][.:])|(?:EUR\d\.)|(?:\d\.\s?IRL))\s+(.*)$/.exec(label.trim());
+  return m ? { code: m[1].replace(/[.:]$/, ''), title: m[2] } : { code: '', title: label.trim() };
 };
 
 export interface AskDerivation { file: AskTopicFile; problems: string[] }
 
 export async function deriveAskTopics(subjectId: string): Promise<AskDerivation> {
-  const taxonomy = examTopicTaxonomyFor(subjectId);
-  if (!taxonomy) throw new Error(`${subjectId} has no Atlas exam-topic headings`);
-  // One topic list: the course the cards' own curriculum topics are crosswalked to (Biology: the new course).
-  const groups = taxonomy.groups.filter(group => group.course === 'new' || !group.course);
-  const topicIds = groups.flatMap(group => group.topicIds);
-  const topicIndex = new Map(topicIds.map((id, index) => [id, index]));
-  const equiv = NODE_EQUIV[subjectId] ?? {};
+  const filing = filingFor(subjectId);
+  if (!filing) throw new Error(`${subjectId} has no filing (scripts/atlas-model/filings/${subjectId}.json)`);
   const problems: string[] = [];
-  const byQuestion = new Map<string, AskTopicFile['questions'][number]>();
+  const topicIds = [...new Set(filing.groups.flatMap(g => g.topics))];
+  const index = new Map(topicIds.map((id, i) => [id, i]));
+  const topics = topicIds.map(id => {
+    const label = labelOf(id);
+    if (!label) problems.push(`heading ${id} is neither an Atlas exam topic nor a curriculum topic`);
+    const level = examTopicDefinition(id)?.level ?? 'all';
+    return { id, level, ...splitLabel(label ?? id) };
+  });
+  const levelOk = (id: string, level: string) => { const l = topics[index.get(id)!].level; return l === 'all' || l === level || l === 'common' || level === 'common'; };
   const cards: SecCard[] = [];
   for (const level of levelsFor(subjectId)) cards.push(...await loadCards(subjectId, level));
+  const ids = new Set(cards.map(c => c.id));
+  for (const id of Object.keys(filing.asks)) if (!ids.has(id)) problems.push(`${id}: filed but not a card`);
+  const home = atlasSubjectFor(subjectId) ?? subjectId;
+  const ctx = addressContext(cards);
+  const byQuestion = new Map<string, AskTopicFile['questions'][number]>();
+  const unplaced: AskTopicFile['unplaced'] = [];
   for (const card of [...cards].sort((a, b) => a.id.localeCompare(b.id))) {
-    const n = /\bQ(\d+)/.exec(card.questionRef)?.[1];
-    const fileid = `${String(card.paperFileid).replace(/\.pdf$/i, '')}.pdf`;
-    const paper = topicsForPaper(subjectId, card.year, card.level as 'higher' | 'ordinary', 'ev', fileid);
-    if (!n || !paper || !paper.q.some(q => q.n === n)) { problems.push(`${card.id}: no Atlas question ${fileid} Q${n}`); continue; }
-    const filed = examTopicIdsForQuestion(subjectId, card.level as 'higher' | 'ordinary', card.year,
-      isDeferredFileid(fileid) ? 'deferred' : 'main', n, paper.paperKey, 'ev', fileid);
-    const nodes = new Set([card.topicId, ...(card.additionalTopicIds ?? [])].map(id => equiv[id] ?? id));
-    const own = filed.filter(id => topicIndex.has(id) && examTopicDefinition(id)?.level === card.level
-      && curriculumNodeIdsForExamTopic(id).some(node => nodes.has(node)));
-    if (!own.length) { problems.push(`${card.id}: ${[...nodes].join('+')} under none of Q${n}'s headings`); continue; }
-    const key = `${card.year}|${card.level}|${fileid}|${n}`;
-    const entry = byQuestion.get(key) ?? [card.year, card.level, fileid, n, []];
-    entry[4].push([card.id, own.map(id => topicIndex.get(id)!).sort((a, b) => a - b)]);
-    byQuestion.set(key, entry);
+    const filed = filing.asks[card.id];
+    if (!filed || !filed[0].length) { problems.push(`${card.id}: not filed`); continue; }
+    const bad = filed[0].filter(id => !index.has(id) || !levelOk(id, card.level));
+    if (bad.length) { problems.push(`${card.id}: ${bad.join(', ')} not a ${card.level} heading of the list`); continue; }
+    const at = filed[0].map(id => index.get(id)!).sort((a, b) => a - b);
+    const a = atlasAddress(card, home, ctx);
+    let placed = false;
+    if (!('fail' in a)) {
+      const atlas = a.atlas ?? home;
+      for (const lang of ['ev', 'iv'] as PaperLang[]) {
+        const paper = topicsForPaper(atlas, card.year, card.level as PaperLevel, lang, a.fileid);
+        if (!paper) continue;
+        let n: string | undefined;
+        for (const cand of a.cands) {
+          if (typeof cand === 'string') n = paper.q.find(x => x.n === cand)?.n;
+          else if (paper.q.some(x => x.n === cand.ifHas)) n = paper.q.find(x => x.n === cand.n)?.n;
+          if (n) break;
+        }
+        if (!n) break;
+        const key = `${atlas}|${card.year}|${card.level}|${paper.fileid}|${n}`;
+        const entry = byQuestion.get(key) ?? [atlas, card.year, card.level, paper.fileid, n, []];
+        entry[5].push([card.id, at]);
+        byQuestion.set(key, entry);
+        placed = true;
+        break;
+      }
+    }
+    if (!placed) unplaced.push([card.id, at]);
   }
-  const questions = [...byQuestion.values()].sort((a, b) => b[0] - a[0] || a[1].localeCompare(b[1])
-    || a[2].localeCompare(b[2]) || Number(a[3]) - Number(b[3]));
+  const questions = [...byQuestion.values()].sort((a, b) => a[0].localeCompare(b[0]) || b[1] - a[1] || a[2].localeCompare(b[2])
+    || a[3].localeCompare(b[3]) || a[4].localeCompare(b[4], undefined, { numeric: true }));
   return {
     problems,
     file: {
-      v: 1,
-      subjectId,
-      atlasSubjectId: subjectId,
-      headings: 'Topic Atlas exam-topic headings (new course), one list per level',
-      rule: 'scripts/atlas-model/askTopics.ts: each part is filed under the headings of its printed question whose crosswalk holds the part\'s own curriculum topic.',
-      groups: groups.map(group => ({ id: group.id, level: group.level, label: group.label.replace(/^.*?·\s*(?=Strand|Unifying)/, ''), topics: group.topicIds.map(id => topicIndex.get(id)!) })),
-      topics: topicIds.map(id => { const d = examTopicDefinition(id)!; return { id, level: d.level, ...splitLabel(d.label) }; }),
-      questions,
+      v: 2, subjectId, headingSource: filing.headingSource,
+      groups: filing.groups.map(g => ({ id: g.id, level: g.level, label: g.label, topics: g.topics.map(id => index.get(id)!) })),
+      topics, questions, unplaced,
     },
   };
 }
+
+/** Every Mark Bank subject with cards, for the coverage check that every one has a filing. */
+export const CARDED_SUBJECTS = SUBJECTS.map(s => s.id);

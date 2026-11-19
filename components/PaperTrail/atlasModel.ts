@@ -16,12 +16,14 @@
 import biology from '../../data/atlasModel/biology.json';
 
 interface AskTopicFile {
-  v: 1;
+  v: 2;
   subjectId: string;
-  atlasSubjectId: string;
   groups: Array<{ id: string; level: string; label: string; topics: number[] }>;
   topics: Array<{ id: string; level: string; code: string; title: string }>;
-  questions: Array<[number, string, string, string, Array<[string, number[]]>]>;
+  /** [Atlas subject, year, level, booklet, printed question number, [[card id, [topic index…]]…]] */
+  questions: Array<[string, number, string, string, string, Array<[string, number[]]>]>;
+  /** Asks whose printed question the Atlas does not list yet. */
+  unplaced: Array<[string, number[]]>;
 }
 
 export interface ModelHeading { id: string; level: string; code: string; title: string; label: string }
@@ -33,9 +35,9 @@ export interface AskRecord {
   atlasSubjectId: string;
   year: number;
   level: string;
-  /** The question booklet, as the Atlas files it ("LC025ALP040EV.pdf"). */
+  /** The question booklet, as the Atlas files it ("LC025ALP040EV.pdf"); '' when the Atlas does not list it yet. */
   fileid: string;
-  /** The printed question number the Atlas lists. */
+  /** The printed question number the Atlas lists; '' when it does not list it yet. */
   n: string;
   topics: ModelHeading[];
 }
@@ -56,14 +58,17 @@ for (const file of FILES) {
   const headings = file.topics.map(t => ({ ...t, label: t.code ? `${t.code} ${t.title}` : t.title }));
   headingsBySubject.set(file.subjectId, headings);
   groupsBySubject.set(file.subjectId, file.groups.map(g => ({ id: g.id, level: g.level, label: g.label, topics: g.topics.map(i => headings[i]) })));
-  for (const [year, level, fileid, n, asks] of file.questions) {
+  for (const [atlasSubjectId, year, level, fileid, n, asks] of file.questions) {
     const group: AskRecord[] = [];
     for (const [cardId, topics] of asks) {
-      const record: AskRecord = { cardId, subjectId: file.subjectId, atlasSubjectId: file.atlasSubjectId, year, level, fileid, n, topics: topics.map(i => headings[i]) };
+      const record: AskRecord = { cardId, subjectId: file.subjectId, atlasSubjectId, year, level, fileid, n, topics: topics.map(i => headings[i]) };
       askById.set(cardId, record);
       group.push(record);
     }
-    asksByQuestion.set(questionKey(file.atlasSubjectId, year, level, fileid, n), group);
+    asksByQuestion.set(questionKey(atlasSubjectId, year, level, fileid, n), group);
+  }
+  for (const [cardId, topics] of file.unplaced) {
+    askById.set(cardId, { cardId, subjectId: file.subjectId, atlasSubjectId: file.subjectId, year: 0, level: '', fileid: '', n: '', topics: topics.map(i => headings[i]) });
   }
 }
 
@@ -100,7 +105,7 @@ const LEVEL_WORD: Record<string, string> = { higher: 'Higher', ordinary: 'Ordina
  *  question's year, level and number so the topic opens on it). */
 export function atlasLinkForCard(cardId: string): { href: string; heading: ModelHeading; question: string } | null {
   const ask = askRecord(cardId);
-  if (!ask || !ask.topics.length) return null;
+  if (!ask || !ask.topics.length || !ask.n) return null;
   const heading = ask.topics[0];
   const p = new URLSearchParams({ view: 'innovation-zone', tool: 'paper-trail', subject: ask.atlasSubjectId, topic: heading.id, year: String(ask.year), level: ask.level, q: ask.n });
   return { href: `/?${p.toString()}`, heading, question: `${ask.year} ${LEVEL_WORD[ask.level] ?? ask.level} Question ${ask.n}` };

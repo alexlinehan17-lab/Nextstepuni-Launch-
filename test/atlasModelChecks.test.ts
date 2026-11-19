@@ -14,7 +14,7 @@ import { describe, expect, it } from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
 import { runAtlasModelChecks, type CheckResult } from '../scripts/atlas-model/checks';
-import { deriveAskTopics, MODEL_SUBJECTS } from '../scripts/atlas-model/askTopics';
+import { deriveAskTopics, FILED_SUBJECTS, MODEL_SUBJECTS } from '../scripts/atlas-model/askTopics';
 
 const FIXTURE = path.join(__dirname, 'fixtures', 'atlasModelKnownMisses.json');
 interface Known { note: string; cards: CheckResult['cards']; questions: CheckResult['questions'] }
@@ -63,7 +63,7 @@ describe('the single model: Mark Bank and Topic Atlas, both ways', () => {
   });
 
   it('the committed topic record is the one the model derives today', async () => {
-    for (const subject of MODEL_SUBJECTS) {
+    for (const subject of FILED_SUBJECTS) {
       const { file, problems } = await deriveAskTopics(subject);
       expect(problems, subject).toEqual([]);
       const committed = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'atlasModel', `${subject}.json`), 'utf8'));
