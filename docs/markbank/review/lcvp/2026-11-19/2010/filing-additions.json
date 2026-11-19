@@ -1,10 +1,10 @@
 {
-  "recordedAt": "2026-11-19T19:36:00.926063+00:00",
+  "recordedAt": "2026-11-19T20:01:04.281936+00:00",
   "sitting": "2010",
   "status": "Review-only filing additions; no canonical or generated file changed",
   "cards": 48,
   "sourceCandidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-authoring/proposed-48-authored-cards.json",
-  "sourceCandidateSha256": "11832f5af645fd70d1aecbb689443d39cad5624b5efc4ee62ea751d62d090ce2",
+  "sourceCandidateSha256": "abf05b904313b3f64a23e64d74ad55848e99a8d36d0b19ebddde2e69cc0520e9",
   "thirdReaderDecision": {
     "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/third-reader-decision.json",
     "sha256": "3c823d7b57028341300cbda8524ba841f3b10e569d5efc29738c567b40fe0e21"
@@ -18,7 +18,7 @@
   "asks": {
     "lcvp-2010-cl-a1": [
       [
-        "link-modules-common-1-career-investigation"
+        "link-modules-common-audio-visual"
       ],
       "r2"
     ],
@@ -40,12 +40,6 @@
       ],
       "r3"
     ],
-    "lcvp-2010-cl-a5": [
-      [
-        "link-modules-common-1-job-seeking-skills"
-      ],
-      "r2"
-    ],
     "lcvp-2010-cl-a6": [
       [
         "link-modules-common-1-job-seeking-skills"
@@ -60,8 +54,7 @@
     ],
     "lcvp-2010-cl-a8": [
       [
-        "link-modules-common-2-local-business-enterprises",
-        "link-modules-common-1-career-investigation"
+        "link-modules-common-audio-visual"
       ],
       "r2"
     ],
@@ -307,26 +300,39 @@
     ]
   },
   "counts": {
-    "r2": 38,
-    "r3": 10
+    "r2": 37,
+    "r3": 10,
+    "pending-method-evidence": 1
   },
   "items": [
     {
       "cardId": "lcvp-2010-cl-a1",
       "headingIds": [
-        "link-modules-common-1-career-investigation"
+        "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/category-comparison.json",
-      "reason": "Choosing a career from experience of human resources.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Her personal career preference and experience are stated in the recording.",
       "internalTopicId": "lcvp-link-modules-0-2",
       "questionRef": "2010 CL Section A Q1",
-      "firstHeadingIds": [
-        "link-modules-common-1-career-investigation"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-1-career-investigation"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2010-cl-a1",
+        "headingIds": [
+          "link-modules-common-1-career-investigation"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/category-comparison.json",
+        "reason": "Choosing a career from experience of human resources.",
+        "internalTopicId": "lcvp-link-modules-0-2",
+        "questionRef": "2010 CL Section A Q1",
+        "firstHeadingIds": [
+          "link-modules-common-1-career-investigation"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-1-career-investigation"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2010-cl-a2",
@@ -334,16 +340,28 @@
         "link-modules-common-2-enterprise-skills"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/category-comparison.json",
-      "reason": "Skills for running a business.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Names business-running skills, independent of the particular speaker.",
       "internalTopicId": "lcvp-link-modules-1-0",
       "questionRef": "2010 CL Section A Q2",
-      "firstHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2010-cl-a2",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/category-comparison.json",
+        "reason": "Skills for running a business.",
+        "internalTopicId": "lcvp-link-modules-1-0",
+        "questionRef": "2010 CL Section A Q2",
+        "firstHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2010-cl-a3",
@@ -372,17 +390,32 @@
       "headingIds": [
         "link-modules-common-1-job-seeking-skills"
       ],
-      "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/category-comparison.json",
-      "reason": "Identifying weaknesses in job seeking.",
+      "how": null,
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Evaluates job-seeking weaknesses using CV, flexibility and employer-contact criteria.",
       "internalTopicId": "lcvp-link-modules-0-1",
       "questionRef": "2010 CL Section A Q5",
-      "firstHeadingIds": [
-        "link-modules-common-1-job-seeking-skills"
-      ],
+      "previousReading": {
+        "cardId": "lcvp-2010-cl-a5",
+        "headingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/category-comparison.json",
+        "reason": "Identifying weaknesses in job seeking.",
+        "internalTopicId": "lcvp-link-modules-0-1",
+        "questionRef": "2010 CL Section A Q5",
+        "firstHeadingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ]
+      },
       "secondHeadingIds": [
-        "link-modules-common-1-job-seeking-skills"
-      ]
+        "link-modules-common-audio-visual"
+      ],
+      "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
     },
     {
       "cardId": "lcvp-2010-cl-a6",
@@ -390,16 +423,28 @@
         "link-modules-common-1-job-seeking-skills"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/category-comparison.json",
-      "reason": "Preparing an effective CV.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Applies general CV preparation principles; no personal biographical facts required.",
       "internalTopicId": "lcvp-link-modules-0-1",
       "questionRef": "2010 CL Section A Q6",
-      "firstHeadingIds": [
-        "link-modules-common-1-job-seeking-skills"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-1-job-seeking-skills"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2010-cl-a6",
+        "headingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/category-comparison.json",
+        "reason": "Preparing an effective CV.",
+        "internalTopicId": "lcvp-link-modules-0-1",
+        "questionRef": "2010 CL Section A Q6",
+        "firstHeadingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2010-cl-a7",
@@ -407,36 +452,60 @@
         "link-modules-common-1-job-seeking-skills"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/category-comparison.json",
-      "reason": "Benefits of interview preparation.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Explains general benefits of preparing for job interviews.",
       "internalTopicId": "lcvp-link-modules-0-1",
       "questionRef": "2010 CL Section A Q7",
-      "firstHeadingIds": [
-        "link-modules-common-1-job-seeking-skills"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-1-job-seeking-skills"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2010-cl-a7",
+        "headingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/category-comparison.json",
+        "reason": "Benefits of interview preparation.",
+        "internalTopicId": "lcvp-link-modules-0-1",
+        "questionRef": "2010 CL Section A Q7",
+        "firstHeadingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2010-cl-a8",
       "headingIds": [
-        "link-modules-common-2-local-business-enterprises",
-        "link-modules-common-1-career-investigation"
+        "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/category-comparison.json",
-      "reason": "Starting enterprises and reconsidering career paths.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Recalls Jane’s two stated responses to the contemporary downturn.",
       "internalTopicId": "lcvp-link-modules-1-1",
       "questionRef": "2010 CL Section A Q8",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-business-enterprises",
-        "link-modules-common-1-career-investigation"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-business-enterprises",
-        "link-modules-common-1-career-investigation"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2010-cl-a8",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises",
+          "link-modules-common-1-career-investigation"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/category-comparison.json",
+        "reason": "Starting enterprises and reconsidering career paths.",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2010 CL Section A Q8",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-business-enterprises",
+          "link-modules-common-1-career-investigation"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-business-enterprises",
+          "link-modules-common-1-career-investigation"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2010-cl-b1i",
@@ -1071,7 +1140,40 @@
       "questionRef": "2010 CL Section C Q3(a) — Equal opportunities employer"
     }
   ],
-  "pending": [],
+  "pending": [
+    {
+      "cardId": "lcvp-2010-cl-a5",
+      "headingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "how": null,
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Evaluates job-seeking weaknesses using CV, flexibility and employer-contact criteria.",
+      "internalTopicId": "lcvp-link-modules-0-1",
+      "questionRef": "2010 CL Section A Q5",
+      "previousReading": {
+        "cardId": "lcvp-2010-cl-a5",
+        "headingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/category-comparison.json",
+        "reason": "Identifying weaknesses in job seeking.",
+        "internalTopicId": "lcvp-link-modules-0-1",
+        "questionRef": "2010 CL Section A Q5",
+        "firstHeadingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ]
+      },
+      "secondHeadingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
+    }
+  ],
   "limits": [
     "All internal topic IDs, card IDs and concept IDs remain unchanged.",
     "The coordinator’s market-research ruling is applied explicitly; the remaining recall/content consistency review is recorded separately.",
