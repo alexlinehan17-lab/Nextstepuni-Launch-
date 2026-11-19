@@ -117,7 +117,9 @@ def _items(lines):
         if new or not out:
             out.append(BULLET.sub('', t))
         else:
-            out[-1] = f'{out[-1]} {t}'
+            # A word the SEC hyphenated over the break ("noun-" / "adjective")
+            # joins without a space.
+            out[-1] = f'{out[-1]}{t}' if out[-1].endswith('-') else f'{out[-1]} {t}'
     return out
 
 
@@ -129,15 +131,23 @@ class RangeBand:
         self.first, self.last = first, last
 
     def read(self, doc):
+        lines = [TEXT_RANGE.sub(' ', doc['scheme'][k - 1]) for k in range(self.first, self.last + 1)]
         for n in range(self.first, self.last + 1):
             for c in _cells(doc, n):
                 m = CELL_RANGE.match(c)
                 if m:
                     lo = int(m.group(1)); hi = int(m.group(2) or m.group(1))
                     label = re.sub(r'\s*marks?$', '', c, flags=re.I).strip()
-                    lines = [doc['scheme'][k - 1] for k in range(self.first, self.last + 1)]
                     return {'label': label, 'marks': list(range(lo, hi + 1)), 'guidance': _items(lines)}
-        raise ValueError(f'lines {self.first}-{self.last}: no range cell')
+        # Or the range printed in the text itself ("... although 5 - 9 marks",
+        # 2023 Ordinary), taken out of the descriptor it sits in.
+        for n in range(self.first, self.last + 1):
+            m = TEXT_RANGE.search(doc['scheme'][n - 1])
+            if m:
+                lo, hi = int(m.group(1)), int(m.group(2))
+                return {'label': f'{m.group(1)} - {m.group(2)}', 'marks': list(range(lo, hi + 1)),
+                        'guidance': _items(lines)}
+        raise ValueError(f'lines {self.first}-{self.last}: no printed range')
 
 
 class RangeCrit:
@@ -170,19 +180,45 @@ class RungCrit:
         top = _printed_max(doc, self.max_line)
         guidance = []
         for first, last in self.rungs:
-            text = ' '.join(re.sub(r'\s+', ' ', doc['scheme'][n - 1]).strip() for n in range(first, last + 1))
-            text = BULLET.sub('', text).strip()
+            # The rung's printed items: one per bullet (2022: "• Commented
+            # ..." and "• Date format ..."), or the whole rung where it prints
+            # none; each with the lines it spans.
+            bulleted = any(BULLET.match(doc['scheme'][n - 1].strip()) for n in range(first, last + 1))
+            items = []
+            for n in range(first, last + 1):
+                t = re.sub(r'\s+', ' ', doc['scheme'][n - 1]).strip()
+                if not t:
+                    continue
+                if not items or (bulleted and BULLET.match(t)):
+                    items.append([BULLET.sub('', t), n, n])
+                else:
+                    items[-1][0] = f'{items[-1][0]}{t}' if items[-1][0].endswith('-') else f'{items[-1][0]} {t}'
+                    items[-1][2] = n
             where = [(n, c) for n in range(first, last + 1) for c in _cells(doc, n) if CELL_RANGE.match(c)]
             if len(where) != 1:
                 raise ValueError(f'rung {first}-{last}: {len(where)} mark cells')
             n, cell = where[0]
-            guidance += [f'{text} {cell}'] if n == last else [text, cell]
+            # The item the mark belongs to: the one whose lines hold its cell,
+            # or the one it follows on a line of its own.
+            owner = next((i for i, it in enumerate(items) if it[1] <= n <= it[2]), None)
+            if owner is None:
+                owner = max(i for i, it in enumerate(items) if it[2] < n)
+            for i, (text, a, b) in enumerate(items):
+                if i != owner:
+                    guidance.append(text)
+                elif n >= b:
+                    guidance.append(f'{text} {cell}')      # contiguous in reading order
+                else:
+                    guidance += [text, cell]               # wrapped past its cell
         return {'id': self.cid, 'label': self.label.text(doc), 'maxMarks': top,
                 'permittedMarks': list(range(top + 1)), 'guidance': guidance}
 
 
+TEXT_RANGE = re.compile(r'(?<![\d.])(\d{1,2})\s*[–‐-]\s*(\d{1,2})\s*marks?\b', re.I)
+
+
 def _printed_max(doc, n):
-    nums = [int(c) for c in _cells(doc, n) if re.fullmatch(r'\d{1,2}', c)]
+    nums = [int(m.group(1)) for c in _cells(doc, n) for m in [re.fullmatch(r'(\d{1,2})(?:\s*marks?)?', c, re.I)] if m]
     if len(nums) != 1:
         raise ValueError(f'scheme line {n}: {len(nums)} maximum cells')
     return nums[0]
@@ -383,6 +419,96 @@ SPECS[(2023, 'hl')] = [
           RangeCrit('communication', S(396), 395, [RangeBand(397, 401), RangeBand(402, 406), RangeBand(407, 411)]),
           RangeCrit('language', S(413), 412, [RangeBand(414, 419), RangeBand(420, 426), RangeBand(427, 433)])],
          _REQ_2023_HL, [13]),
+]
+
+
+# ================================================================ 2023 OL ===
+# Scheme .md lines 235-349 (pages 10-12): Q4 and Q5 each Content 4 (rungs 4,
+# 3, 2, 1 and no 0: RungCrit) / Communication 13 / Language 13, some ranges
+# in marks cells and some in the text ("... although 5 - 9 marks").
+_REQ_2023_OL = [S(236), Celled(237), J(S(238), S(239)), S(240)]
+SPECS[(2023, 'ol')] = [
+    Task(4, 12, [PL(12, 'Escreva em português, cerca de 100')],
+         {'a': (12, [PLk(12, '(a)', 0, after='(a) '), PL(12, 'serviço. Escreva')]
+                + [PLk(12, '•', j) for j in range(3)]),
+          'b': (13, [PLk(13, '(b)', 0, after='(b) '), PL(13, 'enviadas para'), PL(13, 'serviço de apoio')]
+                + [PLk(13, '•', j) for j in range(3)]),
+          'c': (14, [PLk(14, '(c)', 0, after='(c) '), PL(14, 'contar a experiência')]
+                + [PLk(14, '•', j) for j in range(3)])},
+         [RungCrit('content', S(242), 242, [(243, 244), (245, 246), (247, 248), (249, 249)]),
+          RangeCrit('communication', S(250), 250, [RangeBand(251, 256), RangeBand(257, 262), RangeBand(263, 268)]),
+          RangeCrit('language', S(274), 274, [RangeBand(275, 280), RangeBand(281, 287), RangeBand(288, 294)])],
+         _REQ_2023_OL, [10, 11]),
+    Task(5, 15, [PL(15, 'Escreva em português, cerca de 100'), PL(15, 'Observe as imagens')],
+         {x: (15, [PL(15, 'Escreva um texto onde'), PL(15, '• Escreva sobre'), PL(15, '• Dê a sua opinião')])
+          for x in 'abc'},
+         [RungCrit('content', S(296), 296, [(297, 298), (299, 300), (301, 302), (303, 304)]),
+          RangeCrit('communication', S(310), 310, [RangeBand(311, 316), RangeBand(317, 322), RangeBand(323, 328)]),
+          RangeCrit('language', S(329), 329, [RangeBand(330, 335), RangeBand(336, 342), RangeBand(343, 349)])],
+         _REQ_2023_OL, [11, 12]),
+]
+
+
+# ================================================================ 2022 HL ===
+# Scheme .md lines 234-421 (pages 11-16): a grid per question; Q3 and Q4's
+# Content prints rungs 4, 3, 2, 1, each two bullets (the topics, then the
+# date format), and no 0: RungCrit. Part B prints no rules of its own.
+SPECS[(2022, 'hl')] = [
+    Task(3, 9, [PL(9, 'Escreva em português, cerca de 150')],
+         {'a': (9, [PLk(9, '(a)', 0, after='(a) '), PL(9, 'os jovens. Escreva')] + [PLk(9, '•', j) for j in range(4)]),
+          'b': (9, [PLk(9, '(b)', 0, after='(b) '), PL(9, 'recomendando um filme')]
+                + [PLk(9, '•', j) for j in range(4, 8)]),
+          'c': (9, [PLk(9, '(c)', 0, after='(c) ')] + [PLk(9, '•', j) for j in range(8, 12)])},
+         [RungCrit('content', S(236), 236, [(237, 239), (240, 242), (243, 245), (246, 248)]),
+          RangeCrit('communication', S(249), 249, [RangeBand(250, 256), RangeBand(257, 263), RangeBand(268, 274)]),
+          RangeCrit('language', S(275), 275, [RangeBand(276, 281), RangeBand(282, 289), RangeBand(290, 297)])],
+         [], [11, 12]),
+    Task(4, 11, [PL(11, 'Observe as imagens')],
+         {x: (11, [PL(11, 'Escreva um texto em português, com cerca de 100'), PL(11, '• Que mensagem'),
+                   PL(11, '• A sua opinião')]) for x in 'abc'},
+         [RungCrit('content', S(303), 303, [(304, 306), (307, 309), (310, 312), (313, 315)]),
+          RangeCrit('communication', S(316), 316, [RangeBand(317, 323), RangeBand(324, 330), RangeBand(335, 341)]),
+          RangeCrit('language', S(342), 342, [RangeBand(343, 348), RangeBand(349, 356), RangeBand(357, 364)])],
+         [], [13, 14]),
+    Task(5, 13, [PL(13, 'Preencha um dos seguintes'), PL(13, 'Escreva cerca de 75')],
+         {'a': (13, [PLk(13, '(a)', 0, after='(a) '), PL(13, 'Ficha de Inscrição'), PL(13, 'Nome:'),
+                     PL(13, 'Data de Nascimento:'), PL(13, 'Peso:'), PL(13, 'Altura:'), PL(13, 'Endereço:'),
+                     PL(13, 'Profissão:'), PL(13, 'Tipo de atividades'), PL(13, 'O que faz nos'), PL(13, 'Razões para')]),
+          'b': (14, [PLk(14, '(b)', 0, after='(b) '), PL(14, 'Crítica de um Livro'), PL(14, 'Título:'), PL(14, 'Autor:'),
+                     PL(14, 'Género:'), PL(14, 'Personagens:'), PL(14, 'Espaço:'), PL(14, 'Sumário:'),
+                     PL(14, 'Parte preferida:'), PL(14, 'Por que razão'), PL(14, 'Classificação:')]),
+          'c': (15, [PLk(15, '(c)', 0, after='(c) '), PL(15, 'Ficha de Inscrição'), PL(15, 'Nome:'),
+                     PL(15, 'Data de Nascimento:'), PL(15, 'Interesses:'), PL(15, 'Alguém na sua'),
+                     PL(15, 'Que instrumento'), PL(15, 'Há quanto tempo'), PL(15, 'Tipos de música'),
+                     PL(15, 'Cantor ou grupo'), PL(15, 'O que quer aprender'), PL(15, 'Descreva o último')])},
+         [RangeCrit('content', S(370), 370, [RangeBand(371, 371), RangeBand(372, 372)]),
+          RangeCrit('communication', S(373), 373, [RangeBand(374, 380), RangeBand(381, 387), RangeBand(388, 394)]),
+          RangeCrit('language', S(399), 399, [RangeBand(400, 405), RangeBand(406, 413), RangeBand(414, 421)])],
+         [], [15, 16]),
+]
+
+
+# ================================================================ 2022 OL ===
+# Scheme .md lines 234-358 (pages 13-16): Q4 and Q5 each Content 4 (rungs 4,
+# 3, 2, 1 and no 0, each mark cell on a line of its own inside its rung) /
+# Communication 13 / Language 13. Part B prints no rules of its own. Q4's
+# stimuli (an e-mail, a blog page, an advert) are on the task's page.
+SPECS[(2022, 'ol')] = [
+    Task(4, 11, [PL(11, 'Escreva em português, cerca de 100')],
+         {'a': (11, [PLk(11, '(a)', 0, after='(a) '), PL(11, 'seguintes pontos:')] + [PLk(11, '•', j) for j in range(3)]),
+          'b': (12, [PLk(12, '(b)', 0, after='(b) ')] + [PLk(12, '•', j) for j in range(3)]),
+          'c': (12, [PLk(12, '(c)', 0, after='(c) ')] + [PLk(12, '•', j) for j in range(3, 6)])},
+         [RungCrit('content', S(236), 236, [(237, 239), (240, 242), (243, 245), (246, 246)]),
+          RangeCrit('communication', S(247), 247, [RangeBand(248, 254), RangeBand(255, 261), RangeBand(262, 268)]),
+          RangeCrit('language', S(273), 273, [RangeBand(274, 280), RangeBand(281, 287), RangeBand(288, 294)])],
+         [], [13, 14]),
+    Task(5, 13, [PL(13, 'Escreva em português, cerca de 100'), PL(13, 'Observe as imagens')],
+         {x: (13, [PL(13, 'Escreva um texto onde'), PL(13, '• Que mensagem'), PL(13, '• A sua opinião')])
+          for x in 'abc'},
+         [RungCrit('content', S(300), 300, [(301, 303), (304, 306), (307, 309), (310, 310)]),
+          RangeCrit('communication', S(311), 311, [RangeBand(312, 318), RangeBand(319, 325), RangeBand(326, 332)]),
+          RangeCrit('language', S(337), 337, [RangeBand(338, 344), RangeBand(345, 351), RangeBand(352, 358)])],
+         [], [15, 16]),
 ]
 
 
