@@ -1,10 +1,10 @@
 {
-  "recordedAt": "2026-11-19T19:36:00.928225+00:00",
+  "recordedAt": "2026-11-19T20:01:04.284110+00:00",
   "sitting": "2011",
   "status": "Review-only filing additions; no canonical or generated file changed",
   "cards": 47,
   "sourceCandidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-authoring/proposed-47-authored-cards.json",
-  "sourceCandidateSha256": "235ac330a7d7899f1dfe9d8d09c705bdca09200c793849df11c0390cd4dba886",
+  "sourceCandidateSha256": "fa712f9f9970c683acaced3e58be644b26e497ef35ce5bd3130fdecd7e1eb085",
   "thirdReaderDecision": {
     "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/third-reader-decision.json",
     "sha256": "f8b9a29887a9c71448f73e28e65c19d2dcd5a91b8b4f4390fc8cb00ba12cfc8a"
@@ -30,25 +30,25 @@
     ],
     "lcvp-2011-cl-a3": [
       [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
+        "link-modules-common-audio-visual"
       ],
       "r2"
     ],
     "lcvp-2011-cl-a4": [
       [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
+        "link-modules-common-audio-visual"
       ],
       "r2"
     ],
     "lcvp-2011-cl-a5": [
       [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
+        "link-modules-common-audio-visual"
       ],
       "r2"
     ],
     "lcvp-2011-cl-a6": [
       [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
+        "link-modules-common-audio-visual"
       ],
       "r2"
     ],
@@ -314,16 +314,28 @@
         "link-modules-common-2-local-voluntarycommunity-enterprises"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
-      "reason": "Meaning of voluntary work.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Defines volunteering as helping others or a cause.",
       "internalTopicId": "lcvp-link-modules-1-2",
       "questionRef": "2011 CL Section A Q1",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2011-cl-a1",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+        "reason": "Meaning of voluntary work.",
+        "internalTopicId": "lcvp-link-modules-1-2",
+        "questionRef": "2011 CL Section A Q1",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2011-cl-a2",
@@ -331,84 +343,144 @@
         "link-modules-common-2-local-voluntarycommunity-enterprises"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
-      "reason": "Nature and purpose of volunteering.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Explains the altruistic purpose of voluntary activity.",
       "internalTopicId": "lcvp-link-modules-1-2",
       "questionRef": "2011 CL Section A Q2",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2011-cl-a2",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+        "reason": "Nature and purpose of volunteering.",
+        "internalTopicId": "lcvp-link-modules-1-2",
+        "questionRef": "2011 CL Section A Q2",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2011-cl-a3",
       "headingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
+        "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
-      "reason": "Appeal of a voluntary organisation and its purpose.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Recalls Orla’s particular reasons for choosing this named organisation.",
       "internalTopicId": "lcvp-link-modules-1-2",
       "questionRef": "2011 CL Section A Q3",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2011-cl-a3",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+        "reason": "Appeal of a voluntary organisation and its purpose.",
+        "internalTopicId": "lcvp-link-modules-1-2",
+        "questionRef": "2011 CL Section A Q3",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2011-cl-a4",
       "headingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
+        "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
-      "reason": "Changing needs addressed by a voluntary organisation.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Recalls the changes this organisation reported in the recording.",
       "internalTopicId": "lcvp-link-modules-1-2",
       "questionRef": "2011 CL Section A Q4",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2011-cl-a4",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+        "reason": "Changing needs addressed by a voluntary organisation.",
+        "internalTopicId": "lcvp-link-modules-1-2",
+        "questionRef": "2011 CL Section A Q4",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2011-cl-a5",
       "headingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
+        "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
-      "reason": "Services offered by a voluntary organisation.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Identifies this organisation’s particular services described in the recording.",
       "internalTopicId": "lcvp-link-modules-1-2",
       "questionRef": "2011 CL Section A Q5",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2011-cl-a5",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+        "reason": "Services offered by a voluntary organisation.",
+        "internalTopicId": "lcvp-link-modules-1-2",
+        "questionRef": "2011 CL Section A Q5",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2011-cl-a6",
       "headingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
+        "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
-      "reason": "Reasons a voluntary organisation involves young people.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Recalls this organisation’s stated rationale and tasks for young volunteers.",
       "internalTopicId": "lcvp-link-modules-1-2",
       "questionRef": "2011 CL Section A Q6",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2011-cl-a6",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+        "reason": "Reasons a voluntary organisation involves young people.",
+        "internalTopicId": "lcvp-link-modules-1-2",
+        "questionRef": "2011 CL Section A Q6",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2011-cl-a7",
@@ -438,16 +510,28 @@
         "link-modules-common-2-local-voluntarycommunity-enterprises"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
-      "reason": "Personal development through voluntary work.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Explains personal and community benefits of voluntary participation.",
       "internalTopicId": "lcvp-link-modules-1-2",
       "questionRef": "2011 CL Section A Q8",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2011-cl-a8",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+        "reason": "Personal development through voluntary work.",
+        "internalTopicId": "lcvp-link-modules-1-2",
+        "questionRef": "2011 CL Section A Q8",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2011-cl-b1",

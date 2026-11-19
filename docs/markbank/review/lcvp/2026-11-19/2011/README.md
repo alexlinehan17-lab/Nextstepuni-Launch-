@@ -2,7 +2,7 @@
 
 47 asks drafted out of 47 counted from the original paper and separately marked scheme instructions. This is unfinished work on `wip/lcvp-2026-11-19`, not a completed release.
 
-`candidate.json` is the current source candidate. Its SHA-256 is `235ac330a7d7899f1dfe9d8d09c705bdca09200c793849df11c0390cd4dba886`. Historical candidates and original reviews are retained in `evidence/`; the current candidate and coordinator's final split decisions supersede their provisional counts.
+`candidate.json` is the current source candidate. Its SHA-256 is `fa712f9f9970c683acaced3e58be644b26e497ef35ce5bd3130fdecd7e1eb085`. Historical candidates and original reviews are retained in `evidence/`; the current candidate and coordinator's final split decisions supersede their provisional counts.
 
 The filing additions contain 47 prepared decisions, with 0 requiring method evidence. Canonical filings and generated deck output are not changed by this commit. Existing card IDs, concept IDs and internal topic IDs remain untouched in the application.
 
