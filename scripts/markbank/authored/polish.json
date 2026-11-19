@@ -47921,5 +47921,899 @@
    "attribution": "SEC Polish 2017 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
   }
+ },
+ {
+  "id": "pl-2016-hl-i-1-a",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-sformulowan",
+  "questionRef": "2016 HL Section I Q1(a)",
+  "questionText": "Wyjaśnij własnymi słowami znaczenie następujących sformułowań i wyrażeń: „powtarzać utarte opinie” (akapit 1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ogólnie, powszechnie przyjęta, uznana, konwencjonalna opinia; stereotyp, itp.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2016-hl-i-1-b",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-sformulowan",
+  "questionRef": "2016 HL Section I Q1(b)",
+  "questionText": "Wyjaśnij własnymi słowami znaczenie następujących sformułowań i wyrażeń: „dzielić włos na czworo” (akapit 2)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "przesadnie, zbyt drobiazgowo coś analizować, czepiać się szczegółów, itp.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2016-hl-i-1-c",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-sformulowan",
+  "questionRef": "2016 HL Section I Q1(c)",
+  "questionText": "Wyjaśnij własnymi słowami znaczenie następujących sformułowań i wyrażeń: „coś porusza nas do szpiku kości” (akapit 3)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "coś porusza nas całkowicie, zupełnie, do głębi, coś nami wstrząsa, itp.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2016-hl-i-1-d",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-sformulowan",
+  "questionRef": "2016 HL Section I Q1(d)",
+  "questionText": "Wyjaśnij własnymi słowami znaczenie następujących sformułowań i wyrażeń: „trzymać rękę na pulsie” (akapit 3)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "śledzić rozwój czegoś, być w czymś zorientowanym na bieżąco, itp.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2016-hl-i-1-e",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-sformulowan",
+  "questionRef": "2016 HL Section I Q1(e)",
+  "questionText": "Wyjaśnij własnymi słowami znaczenie następujących sformułowań i wyrażeń: „przyzwoity człowiek” (akapit 7)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "człowiek dobrze się prowadzący, niebudzący zastrzeżeń, solidny, porządny, moralny, dobry, itp.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2016-hl-i-2",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "dlaczego-zdaniem-autora-warto-zajmowac-filozofia",
+  "questionRef": "2016 HL Section I Q2",
+  "questionText": "Dlaczego, zdaniem autora tekstu, warto zajmować się filozofią w naszej zabieganej kulturze, „w której wszystko dzieje się tu i teraz”(akapit 2). Wskaż trzy powody.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme pays a descending ladder here, in its own words: “3 pkt za jeden aspekt i 1 pkt za każdy kolejny” — 3, 1, 1 marks, in that order, to a printed total of 5.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "filozofia umożliwia nam pewnego rodzaju intelektualne uporządkowanie naszego świata poprzez świeże i nietuzinkowe spojrzenie na otaczające nas sprawy (akapit 1)",
+      "można ją potraktować jako intelektualną przygodę samą w sobie (akapit 1)",
+      "z greckiego nazywana „umiłowaniem mądrości” może się przydać zarówno tym, którzy już tę „mądrość” posiedli, jak i tym, którzy jej dopiero szukają (akapit 1)",
+      "właśnie w tej naszej zabieganej rzeczywistości może być okazją i zachętą do tego, by zwolnić tempo i wziąć coś pod lupę, by się temu dokładniej przyjrzeć z innej strony (akapit 2)",
+      "wielkość filozofii polega na tym, że jest zawsze aktualna i zaangażowana we współczesne wydarzenia (akapit 3)",
+      "sami filozofowie są według Edmunda Husserla „funkcjonariuszami całej ludzkości”, którzy podpowiadają nam, jak żyć (akapit 3)"
+     ],
+     "perOptionSteps": [
+      3,
+      1,
+      1
+     ]
+    }
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2016-hl-i-3",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "zyjemy-dobie-spoleczenstwa-spektaklu-oznacza-wypowiedz",
+  "questionRef": "2016 HL Section I Q3",
+  "questionText": "„Żyjemy w dobie »społeczeństwa spektaklu«” (akapit 5). Co oznacza ta wypowiedź w kontekście tekstu i czy się z nią zgadzasz (bądź nie zgadzasz)? Uzasadnij swoją odpowiedź.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Język i mowa, które do tej pory slużyły jako najważniejsze narzędzia porządkujące naszą rzeczywistość, nie są już na pierwszym miejscu. Dzięki współczesnym mediom i technologiom, takim jak telewizja i internet, to obraz i zdjęcie zajęły ich miejsce. Ich siła przekazu – dodatkowo wzmocniona jeszcze przez wielkość obrazu i jego kolor – powoduje, że wizualne newsy lepiej do nas docierają i mocniej nas przekonują. Czasami dziennikarze i producenci telewizyjni nadają tym wiadomościom przesadny kształt, żeby jeszcze bardziej zainteresować ludzi lub zwiększyć oglądalność swoich stacji. (akapit 5)",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ZGADZAM SIĘ: Redagujący wiadomości chcą nam pokazać wszystko jak najdokładniej, nawet jeśli oznacza to przekraczanie granic prywatności, intymności lub wulgarności i może wzbudzać skrajne emocje u oglądających. Wielu współczesnych widzów bardzo ceni sobie mocne wrażenia na wizji, czego przykładem są popularne programy typu „reality show”.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "NIE ZGADZAM SIĘ: Nie wszyscy ludzie żądni są mocnych wrażeń w internecie lub w informacyjnych programach telewizyjnych. Są też tacy, którzy wiadomości czytają w prasie lub słuchają w radiu. Poza tym, to nie jest niczyja wina, a raczej wynika to ze współczesnej technologii, która narzuca nam taki sposób przekazywania wiadomości.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2016-hl-i-4",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "obcy-jako-inny-moze-przeciez-byc",
+  "questionRef": "2016 HL Section I Q4",
+  "questionText": "„Obcy jako Inny może przecież być [dla nas] szansą” (akapit 10). O jakiej szansie mówi autor? Udziel odpowiedzi, odwołując się do treści tekstu oraz własnej opinii.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Po przekroczeniu granicy strachu przed nieznanym, obcy, w tym przypadku mowa jest o uchodźcach, może być szansą na poznanie czegoś nowego i na poszerzenie naszych horyzontów.",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Refleksje typu:”: examples, not a checklist."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Wyciągając rękę do obcego, możemy okazać swoją przychylność, tolerancję, jak również swoje człowieczeństwo.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Tak jak słońce świeci dla wszystkich ludzi na ziemi, tak wszyscy ludzie mają prawo do życia w pokoju i godności.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2016-hl-i-5",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "widok-cudzego-cierpienia-budzi-tym-wieksze",
+  "questionRef": "2016 HL Section I Q5",
+  "questionText": "„Widok cudzego cierpienia budzi tym większe współczucie, im bardziej mamy świadomość, że cierpiący jest gdzieś daleko” (akapit 8). Co oznacza ta wypowiedź w kontekście przeczytanego artykułu i czy się z nią zgadzasz (bądź nie zgadzasz)? Uzasadnij swoją wypowiedź.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "według autora łatwo jest komuś współczuć z daleka, bo takie współczucie nic nas nie kosztuje, a sami czujemy się przez to lepsi (akapit 7 i 8)",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Refleksje typu:”: examples, not a checklist."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "trudniej zachować współczucie, gdy trzeba zaryzykować swoją wygodę, a nawet bezpieczeństwo; zwycięża wtedy strach przed nieznanym, który każe nam wymyślać różne wymówki i argumenty przeciw (akapit 8)",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "ZGADZAM SIĘ: większość ludzi to egoiści i ich współczucie jest udawane; tylko niewiele osób jest w stanie poświęcić się dla drugiego człowieka – taka jest natura ludzka",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "zdarza się też, że to właśnie egoistyczne pobudki motywują ludzi do zachowań altruistycznych, i wtedy można mówić o współczuciu wykalkulowanym",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "NIE ZGADZAM SIĘ: jest to krzywdzące uogólnienie",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "jest wiele przykładów na to, że ludzie są wspaniali i potrafią zrezygnować z egoistycznych pobudek, żeby pomóc innym",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "najlepszym przykładem są zachowania i wspaniałe gesty wielu ludzi w różnych krajach, którzy pomagają uchodźcom",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2016-hl-i-6",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "niemiecki-mysliciel-theodor-adorno-stwierdzil-dac",
+  "questionRef": "2016 HL Section I Q6",
+  "questionText": "Niemiecki myśliciel, Theodor W. Adorno stwierdził: „Dać się wypowiedzieć cierpiącemu – oto warunek wszelkiej prawdy” (akapit 9). Co oznacza ta wypowiedź w świetle przeczytanego tekstu i czy się z nią zgadzasz (bądź nie zgadzasz)? Uzasadnij swoją odpowiedź.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "autor tekstu przypisuje ludzkiemu cierpieniu ogromne znaczenie, podkreśla jego ogólnoludzki a nawet uniwersalny wymiar, ponad wszelkimi podziałami, tj. rasowymi, politycznymi i religijnymi, a następnie nadaje mu rangę „wszelkiej prawdy” i najwyższego „autorytetu”, któremu nawet rozum powinien się podporządkować (akapit 9)",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Refleksje typu:”: examples, not a checklist."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "autor przekonuje, że każdy człowiek jest w stanie to dostrzec, bez względu na wykształcenie i przekonania, jeśli tylko otworzy oczy, co może oznaczać: otworzy swoje serce, i wtedy zareaguje on współczuciem (akapit 9)",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "ZGADZAM SIĘ: zgadzam się z tą wypowiedzią, ponieważ daje ona dużo do myślenia, uwrażliwia i wyczula na pewne tematy, o których wcześniej nie myślałem",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "NIE ZGADZAM SIĘ: nie zgadzam się i uważam, że nie można mieszać do tego rozumu, bo rozum powinien przede wszystkim myśleć trzeźwo, by nie popełnić jakichś błędów, których później można żałować",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2016-hl-ii-1",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2016,
+  "section": "II",
+  "topicId": "polish-3-2",
+  "conceptId": "troska-jakiej-wzywa-nas-twarz-innego",
+  "questionRef": "2016 HL Section II Q1",
+  "questionText": "„Troska, do jakiej wzywa nas twarz Innego, to także troska o nas samych. Bo każdy z nas jest przecież Inny” (akapit 11). Używając około 100 słów, skomentuj ten cytat w świetle przeczytanego tekstu, wyrażając własną opinię na ten temat.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Płynna wypowiedź na temat, przy użyciu około 100 słów",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Zasady – gramatyka i ortografia – 10%",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “zgadzam się z tym stwierdzeniem, bo każdy z nas jest czasem w sytuacji, w której właśnie to my jesteśmy tym „Innym” i musimy zmierzyć się z nieznanymi sobie ludźmi. I wtedy pozostaje nam tylko nadzieja, że nie zostaniemy przez nich odtrąceni, tylko zaakceptowani”; “warto pomagać „Innym”, bo to, jak my się dziś zachowamy, wróci do nas kiedyś, jak w przysłowiu: „jak ty komu, tak on tobie”, albo „jak Kuba Bogu, tak Bóg Kubie””; “twarz drugiego człowieka dużo może nam powiedzieć o jego dotychczasowym życiu, a o samych oczach mówi się, że są zwierciadłem duszy, czyli patrząc w nie, możemy zajrzeć do jej wnętrza”; “w każdym człowieku tkwi siła i niezłomnośc, ale też słabość i delikatność, i należy to uszanować”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2016-hl-iii-1",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "polish-3-2",
+  "conceptId": "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+  "questionRef": "2016 HL Section III Q1",
+  "questionText": "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: „Ciekawość jest najpotężniejszą siłą napędową w kosmosie, ponieważ jest w stanie pokonać dwie największe siły hamujące: rozsądek i strach”. - Walter Moers",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Zasady – gramatyka i ortografia – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “ciekawość odgrywa ogromną rolę w ludzkim życiu”; “ciekawość sprawia, że chcemy się czegoś dowiedzieć, kogoś poznać lub nad czymś się zastanowić”; “istotę ciekawości stanowi zadawanie pytań, eksperymentowanie oraz dążenie do odkrywania tajemnic”; “ciekawość to niezadowalanie się tym, co jest oczywiste, ale poszukiwanie nowych rozwiązań i przekraczanie granic”; “ciekawość popycha do szukania nowych rozwiązań, bo chcemy zobaczyć, jak coś będzie działało i jakie będę tego następstwa”; “bez ciekawości nie byłoby odkryć geograficznych i naukowych”; “zdziwienie jest nieodłącznym elementem ciekawości”; “ciekawość to pierwszy stopień do piekła”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2016-hl-iii-2",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "polish-3-2",
+  "conceptId": "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+  "questionRef": "2016 HL Section III Q2",
+  "questionText": "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: „Świat może okazać się bardzo nieciekawym miejscem, jeśli nie będziemy działać wspólnie, aby w większym stopniu zapanowały w nim równe prawa i demokracja, a jego rozwój był bardziej zrównoważony.” - Fintan O’Toole, The Irish Times (22.02.2016)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Zasady – gramatyka i ortografia – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “jeszcze nie jest za późno, by coś wspólnie zrobić dla dobra wszystkich mieszkańców naszej planety, ale czasu jest coraz mniej”; “świat jest tak zglobalizowany, a poszczególne kraje tak od siebie uzależnione, że pojedynczo nikt nie ma już szans na wyeliminowanie bolączek współczesnego świata”; “dopiero razem jesteśmy naprawdę silni”; “należy zacząć od edukacji młodzieży, by ludzie stali się dla siebie bardziej tolerancyjni i przyjaźni”; “poprzez współpracę handlową i gospodarczą można zapobiegać wojnom i konfliktom, czego przykładem jest UE”; “różne formy pomocy ekonomicznej dla najbiedniejszych krajów świata (tj. pomoc finansowa i humanitarna)”; “co każdy z nas sam może na co dzień zrobić, by uczynić świat lepszym?”; “czy pojedynczy człowiek może w ogóle mieć jakiś wpływ na losy świata?”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
  }
 ]
