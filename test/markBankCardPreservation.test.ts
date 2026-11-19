@@ -187,6 +187,7 @@ import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-stu
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
 import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
+import { CARDS as MUSIC_ORDINARY } from '../components/MarkBank/cards/music/ordinary';
 import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
@@ -3149,10 +3150,35 @@ describe('Mark Bank card preservation', () => {
   it('pins the Music 2025 Higher prototype (review pack 1), a deck of its own', () => {
     // 46 cards for 53 printed asks: 42 listening, Composing Section A's three,
     // and one Listening elective card for its five asks (one shared band).
-    // Composing Section B's three asks are not carded: no card type takes
-    // their half mark per correct note (treatments lane README).
-    expect(MUSIC_HIGHER).toHaveLength(46);
-    expect(idHash(MUSIC_HIGHER.map(card => card.id))).toBe('2d7a41260efd6dc6e9c91822e02da297e675a9eba782445057e9c868d2dd46b2');
+    // Composing Section B's three asks were carded later by the music lane,
+    // on the counted grid line (MUSIC_LANE_SITTINGS below).
+    const prototype = MUSIC_HIGHER.filter(card => card.year === 2025 && card.section !== 'B' && !card.id.includes('-deferred-'));
+    expect(prototype).toHaveLength(46);
+    expect(idHash(prototype.map(card => card.id))).toBe('2d7a41260efd6dc6e9c91822e02da297e675a9eba782445057e9c868d2dd46b2');
+  });
+
+  it('pins every card the music lane adds, sitting by sitting', () => {
+    // [sitting, cards, sha256 of the sorted ids]. One row per sitting, added
+    // in the commit that cards it; a row never changes once added.
+    const MUSIC_LANE_SITTINGS: Array<[string, number, string]> = [
+      ['2025 higher', 3, 'eba1c9deac3a34ae8b9e609a168791b0d6112c4ba1db6eddda4d57516dcc0c2c'],
+      ['2026 higher', 56, '7456dcb567921ed8a24c698bb99a461e7ced4159f874a83abef3f3d0df302fe2'],
+      ['2026 ordinary', 48, 'a5afbcf10d02d25dd699036a151444daafb5de89e16958c5ed1d54c5a9dfa47a'],
+      ['2025 ordinary', 45, '9e48dccaa817e4794a5d66be0fe64437eee127158bc9e8d728c77d07a4902cfa'],
+      ['2024 higher', 41, 'ae7bcd811086917d0b01d58c13f230471592207e378e7800eccd8c86df819c13'],
+    ];
+    const lane = new Map<string, string[]>();
+    for (const card of [...MUSIC_HIGHER, ...MUSIC_ORDINARY]) {
+      const deferred = card.id.includes('-deferred-');
+      if (card.year === 2025 && card.level === 'higher' && card.section !== 'B' && !deferred) continue;
+      const key = `${card.year} ${card.level}${deferred ? ' deferred' : ''}`;
+      lane.set(key, [...(lane.get(key) ?? []), card.id]);
+    }
+    expect([...lane.keys()].sort()).toEqual(MUSIC_LANE_SITTINGS.map(([key]) => key).sort());
+    for (const [key, count, hash] of MUSIC_LANE_SITTINGS) {
+      expect(lane.get(key), key).toHaveLength(count);
+      expect(idHash(lane.get(key)!), key).toBe(hash);
+    }
   });
 
   it('protects the complete current bank', () => {
