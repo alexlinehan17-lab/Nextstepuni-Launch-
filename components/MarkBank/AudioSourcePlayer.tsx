@@ -6,13 +6,14 @@
  * question side of the reveal, just as a printed passage does.  Native audio
  * controls are intentional: they retain scrubbing, playback-rate support and
  * VoiceOver behaviour inside both Safari and the iOS WKWebView shell.
- * An SEC recording plays from the app's verified copy (audioStorage.ts),
- * because the SEC blocks other sites from embedding its own address.
+ * An SEC recording plays from the app's verified copy where one has been
+ * uploaded (audioStorage.ts), because the SEC blocks other sites from
+ * embedding its own address; the copy is credited to the SEC.
  */
 
 import React, { useState } from 'react';
 import type { CardAudioMaterial } from '../../types/markBank';
-import { audioPlaybackUrl } from './audioStorage';
+import { audioPlaybackUrl, hostedAudioPath } from './audioStorage';
 
 interface AudioSourcePlayerProps {
   source: CardAudioMaterial;
@@ -27,6 +28,7 @@ const AudioWaveIcon = () => (
 
 const AudioSourcePlayer: React.FC<AudioSourcePlayerProps> = ({ source }) => {
   const [failed, setFailed] = useState(false);
+  const hosted = hostedAudioPath(source.canonicalUrl) !== null;
 
   return (
     <section
@@ -80,7 +82,7 @@ const AudioSourcePlayer: React.FC<AudioSourcePlayerProps> = ({ source }) => {
         </p>
       ) : (
         <p style={{ margin: '7px 0 0', fontSize: 10.5, lineHeight: 1.45, color: 'var(--mb-label, #756e66)' }}>
-          {source.presentationNote} {source.attribution}
+          {source.presentationNote}{hosted ? ` ${source.attribution}` : null}
         </p>
       )}
     </section>

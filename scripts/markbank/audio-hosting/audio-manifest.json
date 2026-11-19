@@ -372,6 +372,7 @@
   "md5": "zo3ckmVDrqjpNCt5cdzc2w==",
   "path": "audio/2017/LC099ZLP017EV.mp3",
   "priorVerification": [
+   "data/russianAudio.json",
    "~/Documents/NextStepUni-MarkBank-Lanes-20261104/codex-continuation-20261106/audio-discovery/russian-recordings.json"
   ],
   "secFileid": "LC099ZLP017EV.mp3",
@@ -687,6 +688,7 @@
   "md5": "yr7AKqt2YcD6IIXqJpBAHQ==",
   "path": "audio/2025/LC058ZLP017BV.mp3",
   "priorVerification": [
+   "data/japaneseAudio.json",
    "~/Documents/NextStepUni-MarkBank-Lanes-20261104/codex-continuation-20261106/audio-discovery/japanese-recordings.json"
   ],
   "secFileid": "LC058ZLP017BV.mp3",
@@ -722,6 +724,7 @@
   "md5": "Exz2yQxTn1oW4wfpAvWbGg==",
   "path": "audio/2025/LC099ZLP017BV.mp3",
   "priorVerification": [
+   "data/russianAudio.json",
    "~/Documents/NextStepUni-MarkBank-Lanes-20261104/codex-continuation-20261106/audio-discovery/russian-recordings.json"
   ],
   "secFileid": "LC099ZLP017BV.mp3",
@@ -827,6 +830,7 @@
   "md5": "/Oid+ykpA0iGVRU7OeaUMg==",
   "path": "audio/2026/LC058ZLP017BV.mp3",
   "priorVerification": [
+   "data/japaneseAudio.json",
    "~/Documents/NextStepUni-MarkBank-Lanes-20261104/codex-continuation-20261106/audio-discovery/japanese-recordings.json"
   ],
   "secFileid": "LC058ZLP017BV.mp3",
@@ -862,6 +866,7 @@
   "md5": "4iE/tol8+XhTtAGXIm8qEw==",
   "path": "audio/2026/LC099ZLP017BV.mp3",
   "priorVerification": [
+   "data/russianAudio.json",
    "~/Documents/NextStepUni-MarkBank-Lanes-20261104/codex-continuation-20261106/audio-discovery/russian-recordings.json"
   ],
   "secFileid": "LC099ZLP017BV.mp3",

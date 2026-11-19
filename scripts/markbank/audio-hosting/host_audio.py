@@ -49,6 +49,7 @@ from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MANIFEST = os.path.join(HERE, "audio-manifest.json")
+HOSTED_LIST = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(HERE))), "components/MarkBank/hostedAudio.json")
 DOWNLOADS = os.path.expanduser("~/Downloads")
 BUCKET = "gs://nextstepuni-app.firebasestorage.app"
 GCLOUD = os.path.expanduser("~/google-cloud-sdk/bin/gcloud")
@@ -65,6 +66,8 @@ PRIOR_SOURCES = [  # [{source: {canonicalUrl}, verification: {sha256}}]
     os.path.join(REPO, "data/frenchAudio.json"),
     os.path.join(REPO, "data/germanAudio.json"),
     os.path.join(REPO, "data/spanishAudio.json"),
+    os.path.join(REPO, "data/japaneseAudio.json"),
+    os.path.join(REPO, "data/russianAudio.json"),
     "/Users/alexlinehan/Documents/Nextstepuni-Classics-Lane-20261118/data/italianAudio.json",
 ]
 PRIOR_RECORDS = [  # [{canonicalUrl, sha256}]
@@ -97,6 +100,12 @@ def load_manifest():
 def save_manifest(m):
     with open(MANIFEST, "w") as fh:
         json.dump(dict(sorted(m.items())), fh, indent=1, sort_keys=True, ensure_ascii=False)
+        fh.write("\n")
+    # The app bundles only the paths of verified uploads (the manifest is too
+    # big to ship); a recording not listed keeps playing the SEC's address.
+    hosted = sorted(p for p, e in m.items() if e.get("storage"))
+    with open(HOSTED_LIST, "w") as fh:
+        json.dump(hosted, fh, indent=1)
         fh.write("\n")
 
 
