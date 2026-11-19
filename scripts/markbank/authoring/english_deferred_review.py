@@ -200,21 +200,23 @@ def apply(key, review, check):
             allocation = override.get('allocation', default.get('allocation'))
             parent = parents[task['atlasParent']]
             if task.get('schemeAbsent'):
-                pages = review['criteria']['absentPages'][paper_id[-2:]]
-                reason = DEFERRED_NOTE + ' ' + review['criteria']['absentReason'][kind]
+                pages = review['criteria']['absentPages'][kind]
+                reason = DEFERRED_NOTE + ' ' + review['criteria']['absentReason'][kind].format(marks=task['totalMarks'])
             else:
-                pages = override.get('schemePages') or sorted({s['p'] for s in parent.get('schemeRegion') or parent['region']})
+                # The page the task's own wording is traced to inside its scheme block.
+                pages = override.get('schemePages') or [task['schemePage']]
                 printed = scheme_split(scheme, parent.get('schemeRegion') or parent['region']) \
                     if mode == 'discrete' or kind not in ('comparative-q1', 'qa', 'unseen') else None
                 if mode == 'discrete' and len(tasks_in_block(tasks, task)) == 1 and printed and printed != allocation:
                     raise ValueError(f"{task['id']}: the scheme prints {printed}, the review says {allocation}")
                 if mode != 'discrete' and printed and len(tasks_in_block(tasks, task)) == 1:
                     raise ValueError(f"{task['id']}: the scheme prints a split {printed} for a combined task")
-                reason = review['criteria']['presentReason'][kind]
+                reason = review['criteria']['presentReason'][kind].format(marks=task['totalMarks'], page=pages[0])
             criteria = {'mode': mode}
             if mode == 'discrete':
                 criteria['allocation'] = allocation
-            criteria['notes'] = (override.get('notes') or default['notes'])
+            notes = override.get('notes') or (default['absentNotes'] if task.get('schemeAbsent') else default['notes'])
+            criteria['notes'] = notes.format(marks=task['totalMarks'])
             task_reviews['tasks'][task['id']] = {
                 'taskSha256': task_fingerprint(task),
                 'paperSha256': record['questionPaper']['sha256'], 'schemeSha256': record['markingScheme']['sha256'],
