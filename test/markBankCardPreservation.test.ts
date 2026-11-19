@@ -1500,6 +1500,18 @@ const polishAddedTotal = [...Object.values(POLISH_ADDED), ...Object.values(POLIS
  * sittings had no card at all before. Pinned per level, count and id hash,
  * beside the frozen set (technologyAdditions below). */
 const isTechnologyAdded = (id: string) => /^tech-201\d-/.test(id);
+/* Italian (classics-italian lane, from 2026-11-19): every new card is an
+ * addition on top of the 350 frozen 2021-2025 reading cards, never a
+ * replacement. New sittings (2010-2020, 2026) are added whole; in 2021-2025 the
+ * additions are the asks those cards left out: listening (Section LA, the three
+ * dialogues LB1-LB3), writing (C), the Higher essays (B3A, B3B), and the reading
+ * asks the generator refused (ITALIAN_ADDED_READING). Pinned per level, count
+ * and id hash, beside the frozen set (italianAdditions below). */
+const ITALIAN_ADDED_READING = new Set(['it-2025-hl-a-3-b', 'it-2024-hl-b2b-1-a', 'it-2023-hl-a-4-b',
+  'it-2022-hl-a-5', 'it-2021-hl-a-5']);
+const isItalianAdded = (id: string) => /^it-(?:201\d|2020|2026)-/.test(id)
+  || /^it-202[1-5]-(?:hl|ol)-(?:la|lb\d|c|b3[ab])-/.test(id)
+  || ITALIAN_ADDED_READING.has(id);
 /* Design & Communication Graphics (the 2010-2018 lane, from 2026-11-05):
  * every 2010-2018 card is an addition on top of the frozen 2019-2026 set,
  * never a replacement -- those sittings had no card at all before. So is
@@ -2740,6 +2752,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   if (name === 'technology:ordinary') return ids.filter(id => !isTechnologyAdded(id));
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
   if (name.startsWith('dcg:')) return ids.filter(id => !isDcgAdded(id));
+  if (name.startsWith('italian:')) return ids.filter(id => !isItalianAdded(id));
   if (name.startsWith('home-economics:')) return [...ids.filter(id => !homeEconomicsAdditionIds.has(id)), ...homeEconomicsAliasIds.filter(id => id.includes(name.endsWith(':higher') ? '-hl-' : '-ol-'))];
   if (name.startsWith('economics:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -2817,6 +2830,10 @@ const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
 const technologyAdditions = {
   higher: [TECHNOLOGY_HIGHER, 651, 'ce17746e8c42370352bcd6cbc13f9c8cf09b69c1f62e3f5e91144b243f964563'],
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
+} as const;
+const italianAdditions = {
+  higher: [ITALIAN_HIGHER, 232, 'dbdb1373b37ce794472bf5226ccee614ab8f2c2c1093aa569d14f584bebff061'],
+  ordinary: [ITALIAN_ORDINARY, 204, 'a155ef64bfaea7b85e2cdc92eccd5ba3b627b28e9040ebad3d4b2417a2a6974b'],
 } as const;
 const dcgAdditions = {
   higher: [DCG_HIGHER, 460, 'f3f80dccc2dbf842c64db715d43b83169290d4cb7315d9eb2087ad8b29c0a4c1'],
@@ -2918,6 +2935,38 @@ describe('Mark Bank card preservation', () => {
     expect([higher.length, ordinary.length]).toEqual(HISTORY_ADDITIONS.counts);
     expect([idHash(higher), idHash(ordinary)]).toEqual(HISTORY_ADDITIONS.hashes);
     for (const id of [...higher, ...ordinary]) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
+  });
+
+  it.each(Object.entries(italianAdditions))('pins the Italian %s additions beside the frozen set', (_, [cards, count, hash]) => {
+    // Added sitting by sitting, newest first, one card per printed ask the
+    // census reads (reconcile.py italian), a printed choice one card:
+    // 2026 Higher 67 cards for its 71 asks (Section C Q1's five prompts, of
+    // which a candidate answers three, are one card); 2026 Ordinary 64 for its
+    // 70 (the matching task's eight items are two cards of four); 2025 Higher
+    // 33 for the 37 asks its 33 live reading cards left out (listening 24,
+    // writing 8 asks on 4 cards, essays 4, and A Q3(b) on its printed scale);
+    // 2025 Ordinary 28 for the 28 its 34 live reading cards left out
+    // (listening 24, writing 4); 2024 Higher 33 for the 37 its 35 live cards
+    // left out (B2B Q1(a), 'Any two of the following' over a bare 5 marks, is
+    // carded on its printed total); 2024 Ordinary 28 for the 34 its 35 live
+    // cards left out (listening 24 - Dialogue 1 Q4, which the scheme reader
+    // loses at a page foot, carded from the scheme's own line - and writing 4);
+    // 2023 Higher 33 for the 37 its 34 live cards left out (listening 24,
+    // writing 4 on 8 asks, essays 4, and A Q4(b), whose answers the scheme
+    // prints as one line of slash-cut alternatives at two marks each); 2023
+    // Ordinary 28 for the 28 its 36 live cards left out (listening 24 -
+    // Dialogue 3 Q5 carded from the scheme's own line - and writing 4); 2022
+    // Higher 33 for the 37 its 35 live cards left out (A Q5's 'Three of
+    // (5+5+5+5)' carded on its printed total, both conflicting lines quoted);
+    // 2022 Ordinary 28 for the 28 its 36 live cards left out (listening 24 -
+    // Dialogue 3 Q1 carded from the scheme's own line - and writing 4); 2021
+    // Higher 33 for the 37 its 35 live cards left out (A Q5 on its printed
+    // total, its count and split disagreeing); 2021 Ordinary 28 for the 28
+    // its 37 live cards left out (listening 24 and writing 4).
+    const additions = cards.map(card => card.id).filter(isItalianAdded);
+    expect(additions).toHaveLength(count);
+    expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
+    expect(idHash(additions)).toBe(hash);
   });
 
   it.each(Object.entries(dcgAdditions))('pins the DCG %s 2010-2018 and deferred additions beside the frozen set', (_, [cards, count, hash]) => {
@@ -3215,7 +3264,9 @@ describe('Mark Bank card preservation', () => {
         : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
         : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length
-        : name === 'latin:higher' || name === 'ancient-greek:ordinary' ? cards.filter(card => treatmentAdditionIds.has(card.id)).length : 0;
+        : name === 'latin:higher' || name === 'ancient-greek:ordinary' ? cards.filter(card => treatmentAdditionIds.has(card.id)).length
+        : name.startsWith('italian:') ? cards.filter(card => isItalianAdded(card.id)).length : 0;
+    const italianAddedCount = [...ITALIAN_HIGHER, ...ITALIAN_ORDINARY].filter(card => isItalianAdded(card.id)).length;
     const technologyAddedCount = [...TECHNOLOGY_HIGHER, ...TECHNOLOGY_ORDINARY]
       .filter(card => isTechnologyAdded(card.id)).length;
     const dcgAddedCount = [...DCG_HIGHER, ...DCG_ORDINARY].filter(card => isDcgAdded(card.id)).length;
@@ -3254,6 +3305,8 @@ describe('Mark Bank card preservation', () => {
         + japaneseAdditionIds.size - japaneseAliasIds.length + lcvpAdditionIds.size
         // Review pack 1 prototypes: Latin 4 + Ancient Greek 21.
         + treatmentAdditionIds.size
+        // Italian (classics-italian lane): every card on top of the frozen 350.
+        + italianAddedCount
         // Polish additions (languages-q3 lane).
         + polishAddedTotal);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
