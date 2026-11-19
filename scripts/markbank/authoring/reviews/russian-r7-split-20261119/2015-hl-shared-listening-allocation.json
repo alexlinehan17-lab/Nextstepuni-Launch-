@@ -1,0 +1,12 @@
+{
+  "cardId": "ru-2015-hl-l3-3",
+  "printedAsks": 2,
+  "cards": 1,
+  "schemePage": 16,
+  "schemeSha256": "210b81b664cfac3107aed4c750d839c70c82777d40b92c805f7f5db60d1c730c",
+  "sourceText": "Section 3: assign a maximum of eight marks for up to four details across the two questions relating to Section 3.",
+  "decision": "Retain the joint question because the scheme explicitly makes one shared allocation across the two parts; it does not give separate marks for each part. Splitting into2+6 would remove the scheme’s permission to count any four details across both questions. This is not a screenshot-based bundle.",
+  "rule": "R7: split only where the scheme gives separate marks for things answered separately.",
+  "checkedAt": "2026-11-19",
+  "countTreatment": "Keep both independently counted printed asks and the single scheme-defined task. No exclusion and no erased ask."
+}

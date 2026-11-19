@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-11-19T11:33:34.039111+00:00",
+  "sourceVerifiedCards": 228,
+  "fixedNoticeRegenerationIsIdempotent": true,
+  "sourceVerification": "sources.log",
+  "requiredChecks": "required.log",
+  "reconciliation": "ledger.json"
+}

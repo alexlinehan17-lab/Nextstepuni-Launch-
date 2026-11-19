@@ -1,0 +1,23 @@
+{
+  "baseCommit": "1797eafa5260414c9a9fccbf6f5c37cb2486d8a4",
+  "retainedCardIdsAndConceptIds": 1485,
+  "allMarksUnchanged": true,
+  "writingGridsUnchanged": true,
+  "original199AndOtherSubjectsUnchanged": true,
+  "noAnswerCards": [
+    "ru-2017-hl-gw",
+    "ru-2017-hl-se",
+    "ru-2018-ol-ew",
+    "ru-2018-ol-la1",
+    "ru-2018-ol-sa",
+    "ru-2019-ol-ew",
+    "ru-2019-ol-la1",
+    "ru-2019-ol-sa",
+    "ru-2026-hl-gw",
+    "ru-2026-hl-se",
+    "ru-2026-ol-ew",
+    "ru-2026-ol-la2",
+    "ru-2026-ol-sa"
+  ],
+  "otherChange": "2018 Ordinary discourse wording now describes whole-question assessment; its10 answers and20 marks are unchanged."
+}
