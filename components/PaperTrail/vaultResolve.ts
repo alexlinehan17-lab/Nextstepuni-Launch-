@@ -49,6 +49,8 @@ export const HOSTED_ANSWER_OVERRIDES = new Set([
   // Russian: independently reviewed written and listening task pools.
   'russian|2010|LC099ALP000EV.pdf',
   'russian|2010|LC099ALPA00EV.pdf',
+  'russian|2017|LC099GLP000EV.pdf',
+  'russian|2017|LC099GLPA00EV.pdf',
   'russian|2018|LC099ALP000EV.pdf',
   'russian|2018|LC099ALPA00EV.pdf',
   'russian|2019|LC099ALP000BV.pdf',

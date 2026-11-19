@@ -4,9 +4,10 @@ import { describe, expect, it } from 'vitest';
 import { HOSTED_ANSWER_OVERRIDES, hostedAnswersUrl, preferredAnswersUrl } from '../components/PaperTrail/vaultResolve';
 import sources from '../scripts/markbank/authoring/russian-reviewed-sources.json';
 
-// Exact original filenames: EV for 2010/2018, bilingual BV from 2019.
+// Exact original filenames: EV through 2018, bilingual BV from 2019.
 const repaired = [
   [2010, 'LC099ALP000EV.pdf'], [2010, 'LC099ALPA00EV.pdf'],
+  [2017, 'LC099GLP000EV.pdf'], [2017, 'LC099GLPA00EV.pdf'],
   [2018, 'LC099ALP000EV.pdf'], [2018, 'LC099ALPA00EV.pdf'],
   [2019, 'LC099ALP000BV.pdf'], [2019, 'LC099ALPA00BV.pdf'],
   [2020, 'LC099ALP000BV.pdf'], [2020, 'LC099ALPA00BV.pdf'],
@@ -26,7 +27,8 @@ describe('reviewed Russian hosted answer-map routes', () => {
     expect(map.paperFileid).toBe(fileid);
     const bound = sources.filter(source => source.year === year && source.paperFileid === fileid);
     expect(bound.length).toBeGreaterThan(0);
-    expect(bound.every(source => source.level === 'higher' && source.schemeFileid === map.schemeFileid)).toBe(true);
+    const level = fileid.startsWith('LC099GL') ? 'ordinary' : 'higher';
+    expect(bound.every(source => source.level === level && source.schemeFileid === map.schemeFileid)).toBe(true);
     expect(map.q.length).toBeGreaterThan(0);
   });
 
