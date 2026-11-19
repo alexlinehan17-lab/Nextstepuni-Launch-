@@ -6530,6 +6530,472 @@
    ]
   ]
  },
+ "biology-2022-ol-deferred-q11-carbon": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q11-carbon.png",
+  "md5": "fa8b3cf99ce70910f9f69ac14a19309a",
+  "alt": "Diagram of part of the carbon cycle with five boxes: Carbon dioxide in air, Carbon in plants, Carbon in animals, Dead organic matter and Fossil fuels, joined by arrows labelled with letters: A and B between Carbon dioxide in air and Carbon in plants, C from Carbon in animals to Carbon dioxide in air, G from Carbon in plants to Carbon in animals, D from Carbon in plants and from Carbon in animals to Dead organic matter, E from Dead organic matter to Fossil fuels, and F from Fossil fuels to Carbon dioxide in air.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "G"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q11(b)(i)1 — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   280,
+   195,
+   545,
+   340
+  ]
+ },
+ "biology-2022-ol-deferred-q12-cells": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q12-cells.png",
+  "md5": "6a8cbe9d858447e2faa0417e023250d4",
+  "alt": "Diagram of two large cells, one containing XX and one containing XY, each with two arrows down to two smaller cells: the XX cell gives two cells each containing X, and the XY cell gives one cell containing X and one containing Y.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q12(c)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   160,
+   555,
+   500,
+   718
+  ]
+ },
+ "biology-2022-ol-deferred-q12b-ii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q12b-ii-scheme.png",
+  "md5": "dd554105a08b3ca3bd99840685c7114a",
+  "alt": "The marking scheme’s answer: Nn x Nn; a Punnett square with N and N along the top and N and n down the side, the boxes reading NN, Nn, Nn and nn; then NN: Normal wing, Nn: Normal wing, nn: Short wing, beside the scheme’s five one-point notes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q12(b)(ii) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV-deferred.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   108,
+   302,
+   540,
+   413
+  ],
+  "solution": true
+ },
+ "biology-2022-ol-deferred-q13-digestive": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q13-digestive.png",
+  "md5": "de65c282da5e4d06c009816a8d085269",
+  "alt": "Diagram of part of the human digestive system: a large organ at the upper left labelled A, a small sac beneath it labelled B, a tube leading down from the top labelled D, a curved bag labelled E, and the start of the intestine curving below it labelled C.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q13(c)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   185,
+   353,
+   440,
+   602
+  ]
+ },
+ "biology-2022-ol-deferred-q13-mouth": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q13-mouth.png",
+  "md5": "1efb3d024f559a717aa6329f1587b4b5",
+  "alt": "Photograph of the wide-open mouth of a carnivore, showing long pointed canine teeth at the front and the teeth behind them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q13(b)(ii) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   430,
+   124,
+   540,
+   284
+  ]
+ },
+ "biology-2022-ol-deferred-q13b-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q13b-i-question.png",
+  "md5": "e1173db11f95dab1942ea7db500f291d",
+  "alt": "The printed question: (b) The photograph shows the mouth of a carnivore. This animal demonstrates heterotrophic nutrition, with carnivore and heterotrophic underlined, then (i) Explain the underlined terms.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q13(b)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   80,
+   124,
+   365,
+   182
+  ]
+ },
+ "biology-2022-ol-deferred-q14-leaf": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q14-leaf.png",
+  "md5": "5afb5e0891c45887e4286d782efed37b",
+  "alt": "Diagram of a leaf cross section under a light microscope: E points to the top layer of cells, a bracket labelled F spans the cells in the middle of the leaf, and G and H point to two groups of cells in a bundle in the middle.",
+  "lettersVisible": [
+   "E",
+   "F",
+   "G",
+   "H"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(c)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   186,
+   408,
+   428,
+   588
+  ]
+ },
+ "biology-2022-ol-deferred-q14-plant": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q14-plant.png",
+  "md5": "a041f08075a8b98b4cbffb21793f3d21",
+  "alt": "Drawing of a whole plant: A points to a flower at the top, B to the stem, C to the roots below the soil line, and a bracket labelled D spans everything above the soil.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(b)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   383,
+   195,
+   540,
+   358
+  ]
+ },
+ "biology-2022-ol-deferred-q14-stem": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q14-stem.png",
+  "md5": "19b1036749bb105985c0f24d059f40f6",
+  "alt": "Diagram of a section through a stem: a circle with small dark patches scattered through it; X points to one of the patches.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(a)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   425,
+   52,
+   540,
+   155
+  ]
+ },
+ "biology-2022-ol-deferred-q15-heart": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q15-heart.png",
+  "md5": "1f2eee38644c1b398b9ec3746aae164d",
+  "alt": "Diagram of the human heart in section: A points to the upper chamber on the left of the picture, B to the wall dividing the two sides, C to the lower chamber on the right of the picture, D to the upper chamber on the right of the picture, and X to a flap at the base of a large blood vessel leaving the top of the heart.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q15(b)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   198,
+   165,
+   388,
+   360
+  ]
+ },
+ "biology-2022-ol-deferred-q16-arm": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q16-arm.png",
+  "md5": "cd8e0ee2ccbbb76957a6d6cf299f65cc",
+  "alt": "Drawing of the bones and muscles of a bent human arm: Biceps and Triceps are labelled; X points to the bone of the upper arm, and Y and Z to the two bones of the forearm.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q16(d)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   195,
+   438,
+   418,
+   610
+  ]
+ },
+ "biology-2022-ol-deferred-q16-mitosis": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q16-mitosis.png",
+  "md5": "15a2c0c0ca469d02b69b6a404c75b813",
+  "alt": "Diagram of a dividing cell: X-shaped chromosomes lined up across the middle of the cell, with lines fanning out from each end of the cell to them; Chromosome and Cell membrane are labelled, and X points to one of the lines.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q16(b)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   195,
+   347,
+   480,
+   492
+  ]
+ },
+ "biology-2022-ol-deferred-q16-plant": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q16-plant.png",
+  "md5": "3e97bb8edec4705d33b261bcc770dc12",
+  "alt": "Drawing of a plant in soil with arrows: Light coming in from above, Carbon dioxide going into the leaves and Oxygen coming out.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q16(c)(i)1 — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   212,
+   78,
+   408,
+   243
+  ]
+ },
+ "biology-2022-ol-deferred-q16-viruses": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q16-viruses.png",
+  "md5": "3153ee09f0d5b93abbb699ef6f7a2c00",
+  "alt": "Two virus particles: A is a round particle with a knobbly surface; B has a many-sided head on a long tail with thin legs at its base.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q16(a)(ii)1 — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   335,
+   130,
+   532,
+   282
+  ]
+ },
+ "biology-2022-ol-deferred-q17-amoeba": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q17-amoeba.png",
+  "md5": "ed6a639d1fb54744ff47353d34315788",
+  "alt": "Diagram of an Amoeba: an irregular cell with finger-like extensions; A points to a large round body near the middle, B to the outer edge of the cell, C to a small round body containing a dark particle, and a clear round space is labelled Contractile vacuole.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q17(a)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   115,
+   104,
+   448,
+   292
+  ]
+ },
+ "biology-2022-ol-deferred-q17-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q17-graph.png",
+  "md5": "18a558081cbeb66b9d114e0035adb0d0",
+  "alt": "Graph of urine and sweat produced (cm3/hour, 0 to 200) against outside temperature (°C, 0 to 40): the Urine line falls steadily from 100, and the Sweat line stays low then rises steeply, crossing the Urine line partway along.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q17(c)(vi)1 — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   115,
+   298,
+   525,
+   530
+  ]
+ },
+ "biology-2022-ol-deferred-q17d-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q17d-i-question.png",
+  "md5": "52d215786eca9c01ce45823ead03e443",
+  "alt": "The printed question: (d) The evolution of birds has occurred over 10 million years and has led to increased variation and the development of 10,000 species of birds on Earth today, with evolution and species underlined, then (i) Explain briefly the underlined terms.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q17(d)(i) — Evolution — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV-deferred.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   80,
+   539,
+   520,
+   598
+  ],
+  "maskedFurniture": [
+   [
+    383,
+    584,
+    522,
+    598
+   ]
+  ]
+ },
+ "biology-2022-ol-deferred-q2-cell": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q2-cell.png",
+  "md5": "8791c27a3db9e7681d162a48db3c052a",
+  "alt": "Diagram of a plant cell: a rounded rectangle with a thick outer wall, a large dark round body, oval bodies with stacked internal lines, and a large clear central space; A points to two of the oval bodies, B to the outer wall, C to the dark round body and D to the clear central space.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q2(a)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV-deferred.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   355,
+   428,
+   538,
+   600
+  ]
+ },
+ "biology-2022-ol-deferred-q4-chain": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q4-chain.png",
+  "md5": "4920b41c8fdbc42cb9e6f01a3437d869",
+  "alt": "The food chain as printed: A, an arrow, B, an arrow, C.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q4(a)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV-deferred.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   300,
+   372,
+   410,
+   396
+  ]
+ },
+ "biology-2022-ol-deferred-q5-male": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q5-male.png",
+  "md5": "1b21c65f164e29c2f8e55e1e22d98abc",
+  "alt": "Diagram of the human male reproductive system from the front: the bladder at the top, tubes looping from each testis up and over the bladder, a dark gland below the bladder, and the penis; A points to one of the looping tubes, B to a testis and C to the dark gland below the bladder.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q5(a)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV-deferred.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   160,
+   80,
+   440,
+   330
+  ]
+ },
+ "biology-2022-ol-deferred-q9-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-deferred-q9-graph.png",
+  "md5": "b91e1ae8ccd86b04bf639d1341068cf9",
+  "alt": "Graph of rate of enzyme activity against temperature: the curve starts low and flat, then rises steeply; the rest of the axis is left empty for the student to complete.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q9(b)(vii) — Deferred sitting",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   200,
+   540,
+   470,
+   735
+  ]
+ },
  "biology-2022-ol-q10-germination": {
   "src": "/exam-figures/biology/markbank/biology-2022-ol-q10-germination.png",
   "md5": "4fd444b244c1175e56339f194e9b8c05",

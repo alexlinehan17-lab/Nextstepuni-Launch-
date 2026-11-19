@@ -79,7 +79,10 @@ const DCG_DEFERRED_PAPERS: string[] = ['2022|LC562ALP014EV-deferred.pdf', '2022|
   '2023|LC562ALP014EV-deferred.pdf', '2023|LC562ALP039EV-deferred.pdf'];
 const IRISH_DEFERRED_PAPERS: string[] = ['2025|LC001ALP100IV-deferred.pdf', '2025|LC001ALP200IV-deferred.pdf', '2025|LC001GLP100IV-deferred.pdf', '2025|LC001GLP200IV-deferred.pdf', '2024|LC001ALP100IV-deferred.pdf', '2024|LC001ALP200IV-deferred.pdf', '2024|LC001GLP100IV-deferred.pdf', '2024|LC001GLP200IV-deferred.pdf', '2023|LC001ALP100IV-deferred.pdf', '2023|LC001ALP200IV-deferred.pdf', '2023|LC001GLP100IV-deferred.pdf', '2023|LC001GLP200IV-deferred.pdf', '2022|LC001GLP100IV-deferred.pdf', '2022|LC001GLP200IV-deferred.pdf', '2022|LC001ALP100IV-deferred.pdf', '2022|LC001ALP200IV-deferred.pdf'];
 // Biology's carded deferred sittings: both booklets of each (Sections A and B, Section C).
-const BIOLOGY_DEFERRED_PAPERS: string[] = ['2022|LC025ALP038EV-deferred.pdf', '2022|LC025ALP040EV-deferred.pdf'];
+const BIOLOGY_DEFERRED_PAPERS: string[] = [
+  '2022|LC025ALP038EV-deferred.pdf', '2022|LC025ALP040EV-deferred.pdf',
+  '2022|LC025GLP038EV-deferred.pdf', '2022|LC025GLP040EV-deferred.pdf',
+];
 const ENGLISH_DEFERRED_PAPERS: string[] = ['2025|LC002ALP100EV-deferred.pdf', '2025|LC002ALP200EV-deferred.pdf',
   '2024|LC002ALP100EV-deferred.pdf', '2024|LC002ALP200EV-deferred.pdf',
   '2024|LC002GLP100EV-deferred.pdf', '2024|LC002GLP200EV-deferred.pdf',

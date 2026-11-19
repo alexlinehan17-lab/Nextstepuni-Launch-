@@ -609,6 +609,11 @@ def _letters_in_order(subject, letters):
 # what the page prints). The empty-leaf flag stands down only while the reader
 # extracts exactly that text: a change in what it reads raises the flag again.
 SHORT_ASKS = {
+    # Biology 2022 Ordinary deferred Q4(a)(ii)-(iv): the paper prints only an answer box headed "A:", "B:" or "C:"
+    # under the lead-in "Give one example of an organism for A, B and C." (p4); each box is its own roman.
+    **{('biology', 2022, 'ol-deferred', f'Q4(a)({r})'): ('', f'p4: answer box "{x}:" under Q4(a)\'s lead-in "Give one '
+                                                           f'example of an organism for A, B and C."')
+       for r, x in (('ii', 'A'), ('iii', 'B'), ('iv', 'C'))},
     **{('biology', 2020, 'ol', f'Q5({x})'): ('', 'p5: an empty answer box under cell drawing; the ask is Q5\'s '
                                                'lead-in "Select the cell name from the following list and insert '
                                                'it into the appropriate box underneath each"')
