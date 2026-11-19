@@ -12858,4 +12858,3274 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC067ALP007EV"
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q1-a", topicId: "music-2-9", conceptId: "mus-different-excerpt-instruments-melody",
+    section: "L", questionRef: "2022 HL Listening Q1(a)",
+    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart. Excerpt 1, played three times.",
+    questionText: "Name two different instruments which play the melody in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Instruments which play the melody", marks: null, contextNote: "The scheme reads: “(any 2 correct instruments)” “Allow Piano” “2 + 2”", group: {"claimMax":2,"perOption":2,"options":["Flute","Clarinets","Bassoons","Piano"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.193,
+                            0.92,
+                            0.305
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q1-a-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q1-a-score.png",
+          "srcHash": "1696d9586f4500ff4e1922d02b950f8d",
+          "alt": "The printed question, printed with Listening Q1(a) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q1-b", topicId: "music-2-9", conceptId: "mus-answer-between-both-describe",
+    section: "L", questionRef: "2022 HL Listening Q1(b)",
+    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart. Excerpt 2, played three times.",
+    questionText: "Describe two differences between the music in this excerpt and the music in Excerpt 1. Refer to both excerpts in your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Excerpt 2 (This excerpt) — Excerpt 1", marks: null, contextNote: "The scheme reads: “Up to two marks for each description of two valid differences between the music in this excerpt (Excerpt 2) and the music heard in excerpt 1. Answers must refer to both excerpts and the same point of difference.” “For example:” “Partially correct answer = 1”", openList: true, group: {"claimMax":2,"perOption":2,"options":["Melody not played on ww — Melody played on ww","Subject 2B / 1D — Subject 2A / 1C","No broken octaves on piano — Broken octaves on piano","Triplet figures on piano — No triplet figures on piano","Alberti bass on piano — No alberti bass on piano","Antiphonal dialogue / imitation between violins / upper strings / flute and piano — No antiphonal dialogue / imitation between Violins / upper strings / flute and piano","Chromatic rising scale on piano — No chromatic rising scale on piano","Syncopation — No syncopation","Ends with imperfect cadence — Ends with perfect cadence"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.376,
+                            0.92,
+                            0.718
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q1-b-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q1-b-score.png",
+          "srcHash": "f4c92c9d2da73ff1ad86a35ffde4b8ee",
+          "alt": "The printed question, printed with Listening Q1(b) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q1-c", topicId: "music-2-9", conceptId: "mus-four-insert-missing-notes",
+    section: "L", questionRef: "2022 HL Listening Q1(c)",
+    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart. Excerpt 3, played three times. An outline score of bars 1–4 of the excerpt is printed below.",
+    questionText: "Insert the four missing notes at X on the score.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Mark the first four notes from left to right. 0.5m for each correct pitch", marks: 2, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", permittedMarks: [0,0.5,1,1.5,2] },
+    { id: "r-2", kind: "criterion", verbatim: "Mark the first four notes from left to right. 0.5m for each correct rhythm", marks: 2, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", permittedMarks: [0,0.5,1,1.5,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.355,
+                            0.92,
+                            0.392
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q1-c-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q1-c-score.png",
+          "srcHash": "c3e806f417e88fa0a21d285ec5a2d4c1",
+          "alt": "The outline score of bars 1-4 (X over bar 2) and the question, printed with Listening Q1(c) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2022-HL-scheme-p11-l-q1-c",
+          "src": "/exam-figures/music/markbank/music-2022-HL-scheme-p11-l-q1-c.png",
+          "srcHash": "d8714eaa4d8dcc921eee53d3fc804f0d",
+          "alt": "The marking scheme’s printed answer for Listening Q1(c): the four notes at X printed on a treble stave, with the pitch and rhythm rates, cropped from page 11 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q1-d", topicId: "music-2-9", conceptId: "mus-describe-excerpt-features-music",
+    section: "L", questionRef: "2022 HL Listening Q1(d)",
+    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart. Excerpt 4, played three times.",
+    questionText: "Describe two features of the piano music in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of the piano music", marks: null, contextNote: "The scheme reads: “Up to two marks for a description of each of two valid features of the piano music heard in this excerpt.” “For example, feature:” “Allow alberti bass” “Partially correct answer = 1”", openList: true, group: {"claimMax":2,"perOption":2,"options":["Plays melody (at start)","plays accompaniment (when other instruments enter)","contrapuntal (at the start)","trill / ornamentation","sequences","broken chords","dotted rhythm","syncopation","semiquaver movement / passages","(ascending / descending) scales","octave leaps","imitation","(decorated) repeated / pedal note (LH)","alberti bass"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.462,
+                            0.92,
+                            0.785
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 4",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q1-d-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q1-d-score.png",
+          "srcHash": "69504d7b0e84212b4469c65a6c206af3",
+          "alt": "The printed question, printed with Listening Q1(d) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q1-e", topicId: "music-2-9", conceptId: "mus-cadenza-could-described-excerpt",
+    section: "L", questionRef: "2022 HL Listening Q1(e)",
+    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart. Excerpt 5, played three times.",
+    questionText: "The music in this excerpt could be described as a mini cadenza. Give one reason to support this statement with reference to the music heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Up to three marks for a valid reason which supports the given statement with reference to the music heard in the excerpt.", marks: 3, contextNote: "The scheme reads: “For example:” “Flamboyant playing featuring the soloist; a feeling of extemporization featuring the soloist; use of long trill to bring tutti orchestra in; anticipates the full cadenza which happens shortly after.” “Ascending scales; use of triplets if compared to use in main cadenza” “Accept any correct answer which compares the music either to cadenzas in general or to cadenzas in the work = 3” “A generic description + supporting reference to the music = 3” “A generic description = 1” “A feature without a link to cadenza = 1” “Partially correct answer = 1m/2m”", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.094,
+                            0.92,
+                            0.278
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 5",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q1-e-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q1-e-score.png",
+          "srcHash": "51a1dfd98d8e97821da6bd5c5ab308ab",
+          "alt": "The printed question, printed with Listening Q1(e) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q1-f", topicId: "music-2-9", conceptId: "mus-cadence-excerpt-identify",
+    section: "L", questionRef: "2022 HL Listening Q1(f)",
+    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart. Excerpt 5, played three times.",
+    questionText: "Identify the cadence at the end of the excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Perfect cadence", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.316,
+                            0.92,
+                            0.396
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 5",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q1-f-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q1-f-score.png",
+          "srcHash": "17a35a8f3f11dc52e46a9b55aab8a1ad",
+          "alt": "The printed question, printed with Listening Q1(f) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q1-g", topicId: "music-2-9", conceptId: "mus-concerto-describe-excerpt-feature",
+    section: "L", questionRef: "2022 HL Listening Q1(g)",
+    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart. Excerpt 5, played three times.",
+    questionText: "Describe one feature of the music which immediately follows the music in this excerpt in Piano Concerto in A major, K 488 by Mozart.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Up to four marks for a description of one valid feature of the music which immediately follows excerpt 5 in the movement.", marks: 4, contextNote: "The scheme reads: “Accept any correct reference to the music in bars 284-297” “Note: the feature and some elaboration is needed. This could be the location of the feature, the name(s) of the instrument(s) attached to the feature, or more description of the feature itself.” “For example feature:” “Transition material / S1B / A2 returns at the start; development theme / 1E is played; orchestra only, soloist does not feature (with the exception of the final chord); changes of dynamics / alternating f and p; descending bass line in vc & cb; repeated notes in theme / accompaniment; dotted rhythm; syncopation; sequences; pedal note (horn); two beat rest” “Partially correct answer = 1m/2m/3m”", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.425,
+                            0.92,
+                            0.603
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 5",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q1-g-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q1-g-score.png",
+          "srcHash": "18492d00a295fd790cc5562da5c6e857",
+          "alt": "The printed question, printed with Listening Q1(g) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q2-a", topicId: "music-2-10", conceptId: "mus-excerpt-instrument-melody-name",
+    section: "L", questionRef: "2022 HL Listening Q2(a)",
+    stem: "Three excerpts from Symphonie Fantastique by Berlioz. Excerpt 1, played three times.",
+    questionText: "Name one instrument playing the melody in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An instrument playing the melody", marks: null, contextNote: "The scheme reads: “(Any correct instrument)”", group: {"claimMax":1,"perOption":2,"options":["Trombone(s)","Ophicléide(s) / Tuba(s)","Bassoon(s)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.197,
+                            0.92,
+                            0.273
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 1",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q2-a-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q2-a-score.png",
+          "srcHash": "62ed6bd1c6cefb339d637b6b34fbf443",
+          "alt": "The printed question, printed with Listening Q2(a) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q2-b", topicId: "music-2-10", conceptId: "mus-excerpt-feature-melody-this",
+    section: "L", questionRef: "2022 HL Listening Q2(b)",
+    stem: "Three excerpts from Symphonie Fantastique by Berlioz. Excerpt 1, played three times.",
+    questionText: "A feature of the melody in this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sequences", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.297,
+                            0.92,
+                            0.43
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 1",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q2-b-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q2-b-score.png",
+          "srcHash": "07f1aa54e88d7f41d5fc28f07dfd9e41",
+          "alt": "The question and its three printed options (syncopation, repeated notes, sequences), printed with Listening Q2(b) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q2-c", topicId: "music-2-10", conceptId: "mus-accompaniment-describe-excerpt-features",
+    section: "L", questionRef: "2022 HL Listening Q2(c)",
+    stem: "Three excerpts from Symphonie Fantastique by Berlioz. Excerpt 2, played three times.",
+    questionText: "Describe two features of the accompaniment in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of the accompaniment", marks: null, contextNote: "The scheme reads: “Up to two marks for a description of each of two valid features of the accompaniment heard in the excerpt.” “For example, feature:” “Tremolo in strings = 1” “Partially correct answer = 1”", openList: true, group: {"claimMax":2,"perOption":2,"options":["Timpani roll(s)","accented bass drum throughout","cymbal crashes throughout","cymbal crashes on off-beat","bass drum on off-beat","bass drum doubling cymbals","trumpet repeated notes","accurate reference to rhythm","tremolo / tremolo in upper strings / vln I, vln II and Vla","accurate reference to dynamics","leap of a 5th in timpani","step movement in upper strings / vln I, vln II & vla"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.503,
+                            0.92,
+                            0.825
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 2",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q2-c-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q2-c-score.png",
+          "srcHash": "89e4647785941ffa3970b274386d1611",
+          "alt": "The printed question, printed with Listening Q2(c) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q2-d", topicId: "music-2-10", conceptId: "mus-describe-excerpt-features-heard",
+    section: "L", questionRef: "2022 HL Listening Q2(d)",
+    stem: "Three excerpts from Symphonie Fantastique by Berlioz. Excerpt 3, played three times.",
+    questionText: "This excerpt features inversion. Describe the inversion heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Up to two marks for a valid description of how inversion is heard in the excerpt.", marks: 2, contextNote: "The scheme reads: “For example:” “Strings play fragments of the Descending theme ascending in inversion (in unison)” “A generic reference to inversion without reference to how it is heard in the music in the excerpt = 0” “Partially correct answer = 1”", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 7,
+                      "r": [
+                            0.08,
+                            0.094,
+                            0.92,
+                            0.322
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 3",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q2-d-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q2-d-score.png",
+          "srcHash": "516743ac5edb77e4f4f77f537369134b",
+          "alt": "The printed question, printed with Listening Q2(d) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q3-a", topicId: "music-2-11", conceptId: "mus-excerpt-instruments-melody-name",
+    section: "L", questionRef: "2022 HL Listening Q3(a)",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane. Excerpt 1, played three times.",
+    questionText: "Name the two instruments playing the melody at the start of this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Marimba", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "Violin", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.197,
+                            0.92,
+                            0.322
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · Excerpt 1",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q3-a-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q3-a-score.png",
+          "srcHash": "9610b12dd65409c13f03d00d8719a8aa",
+          "alt": "The printed question, printed with Listening Q3(a) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q3-b-i", topicId: "music-2-11", conceptId: "mus-excerpt-explain-features-ponticello",
+    section: "L", questionRef: "2022 HL Listening Q3(b)(i)",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane. Excerpt 1, played three times.",
+    questionText: "This excerpt features sul ponticello. • Explain sul ponticello.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "One mark for a valid explanation of sul ponticello.", marks: 1, contextNote: "The scheme reads: “For example:” “The bow is played near / over / across /above / below / on / at the bridge (of the violin and / or cello)”", permittedMarks: [0,1] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.347,
+                            0.92,
+                            0.515
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · Excerpt 1",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q3-b-i-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q3-b-i-score.png",
+          "srcHash": "ad4f00385392a8658db9633a2657e5f9",
+          "alt": "The printed part (b) stem and question (i), printed with Listening Q3(b)(i) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q3-b-ii", topicId: "music-2-11", conceptId: "mus-excerpt-features-instrument-name",
+    section: "L", questionRef: "2022 HL Listening Q3(b)(ii)",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane. Excerpt 1, played three times.",
+    questionText: "This excerpt features sul ponticello. • Name one instrument that uses sul ponticello in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Violin and / or cello", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.522,
+                            0.92,
+                            0.6
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · Excerpt 1",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q3-b-ii-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q3-b-ii-score.png",
+          "srcHash": "1064c6243d286c2a4782e8bc2286217c",
+          "alt": "The printed part (b) stem and question (ii) (with (i) and its answer lines between them), printed with Listening Q3(b)(ii) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q3-c", topicId: "music-2-11", conceptId: "mus-excerpt-this",
+    section: "L", questionRef: "2022 HL Listening Q3(c)",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane. Excerpt 1, played three times.",
+    questionText: "In this excerpt",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "the guiro plays quavers", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.624,
+                            0.92,
+                            0.756
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · Excerpt 1",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q3-c-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q3-c-score.png",
+          "srcHash": "b50aaaa21dd7596e22b77ca30e45e26c",
+          "alt": "The question and its three printed options (the guiro plays semiquavers / triplets / quavers), printed with Listening Q3(c) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q3-d", topicId: "music-2-11", conceptId: "mus-answer-between-both-describe",
+    section: "L", questionRef: "2022 HL Listening Q3(d)",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane. Excerpt 2, played three times.",
+    questionText: "Describe two differences between the music heard in this excerpt and the music heard in Excerpt 1. Refer to both excerpts in your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Excerpt 2 (This excerpt) — Excerpt 1", marks: null, contextNote: "The scheme reads: “Up to two marks for each description of two valid differences between the music heard in this excerpt (Excerpt 2) and the music heard in Excerpt 1. Answers must refer to both excerpts and the same point of difference.” “For example:” “Partially correct answer = 1”", openList: true, group: {"claimMax":2,"perOption":2,"options":["Melody / Dies Irae on flute — Melody/Dies Irae on marimba and violin","Melody / Dies Irae mainly semiquavers — Melody / Dies Irae mainly quavers","No guiro — Guiro plays","No sul ponticello — Sul ponticello","No piccolo — Piccolo","Totentanz — No Totentanz / Danse Macabre","No canon — Canon","Chord clusters (on marimba) — No chord clusters (on marimba)","Chord clusters (on piano) — No chord clusters (on piano)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.08,
+                            0.094,
+                            0.92,
+                            0.434
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · Excerpt 2",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q3-d-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q3-d-score.png",
+          "srcHash": "0fdc091ae5336cbfd2efee59e6ebd540",
+          "alt": "The printed question, printed with Listening Q3(d) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q4-a", topicId: "music-2-12", conceptId: "mus-describe-feature-lines-music",
+    section: "L", questionRef: "2022 HL Listening Q4(a)",
+    stem: "An excerpt from Sergeant Pepper’s Lonely Hearts Club Band by the Beatles will be played three times. The lyrics are printed below.",
+    questionText: "Describe one feature of the vocal music in lines 1–4.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the vocal music", marks: null, contextNote: "The scheme reads: “Up to 2m for a description of one valid feature of the vocal music of lines 1-4.” “For example:” “Partially correct answer = 1”", openList: true, group: {"claimMax":1,"perOption":2,"options":["The rhythm consists primarily of quavers","the melody begins on an upbeat","sung in (2/3-part) harmony","repeated notes","syncopation","flattened 3rd","flattened 7th","accurate reference to the rhythm","syllabic","narrow range in the melody","range of a 6th in the melody"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.437,
+                            0.92,
+                            0.603
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q4-a-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q4-a-score.png",
+          "srcHash": "722cc70b7f1ccfa992bebc380434bc5e",
+          "alt": "The printed lyrics (lines 1-11) and the question, printed with Listening Q4(a) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q4-b", topicId: "music-2-12", conceptId: "mus-feature-line-music",
+    section: "L", questionRef: "2022 HL Listening Q4(b)",
+    stem: "An excerpt from Sergeant Pepper’s Lonely Hearts Club Band by the Beatles will be played three times. The lyrics are printed below.",
+    questionText: "A feature of the music at the end of line 4 is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "descending D7 arpeggio", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.628,
+                            0.92,
+                            0.757
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q4-b-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q4-b-score.png",
+          "srcHash": "72cd38ce23ab0f531f690ae9006a00ec",
+          "alt": "The printed lyrics (lines 1-11), the question and its three printed options (an ascending D7 arpeggio, a descending D7 arpeggio, a pedal note D); part (a) and its answer box sit between them, printed with Listening Q4(b) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q4-c", topicId: "music-2-12", conceptId: "mus-line-rhythm-underlined-words",
+    section: "L", questionRef: "2022 HL Listening Q4(c)",
+    stem: "An excerpt from Sergeant Pepper’s Lonely Hearts Club Band by the Beatles will be played three times. The lyrics are printed below.",
+    questionText: "The rhythm of the underlined words in line 6 is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The rhythm of the underlined words in line 6 is", marks: 2, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.062,
+                            0.92,
+                            0.272
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q4-c-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q4-c-score.png",
+          "srcHash": "4b5680ddcad36d1f68771d367a854a0e",
+          "alt": "The question and its three printed rhythm options (in notation), printed with Listening Q4(c) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2022-HL-scheme-p15-l-q4-c",
+          "src": "/exam-figures/music/markbank/music-2022-HL-scheme-p15-l-q4-c.png",
+          "srcHash": "01cfc351d6f924815d8f18661ae92d00",
+          "alt": "The marking scheme’s printed answer for Listening Q4(c): the rhythm the scheme accepts, printed in notation, cropped from page 15 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q4-d", topicId: "music-2-12", conceptId: "mus-accompaniment-describe-excerpt-features",
+    section: "L", questionRef: "2022 HL Listening Q4(d)",
+    stem: "An excerpt from Sergeant Pepper’s Lonely Hearts Club Band by the Beatles will be played three times. The lyrics are printed below.",
+    questionText: "Describe two features of the accompaniment in lines 7–11 of this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of the accompaniment", marks: null, contextNote: "The scheme reads: “Up to two marks each for a description of two valid features of the accompaniment in lines 7-11.” “For example feature:” “Partially correct answer = 1”", openList: true, group: {"claimMax":2,"perOption":2,"options":["Block chords","quaver movement","repeated notes","repetition","movement by step and leap"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.3,
+                            0.92,
+                            0.625
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q4-d-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q4-d-score.png",
+          "srcHash": "9472f0469f9f145f7d61025375d76e95",
+          "alt": "The printed question, printed with Listening Q4(d) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q5-a-a", topicId: "music-2-2", conceptId: "mus-associated-dance-excerpt-give",
+    section: "L", questionRef: "2022 HL Listening Q5 A(a)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Excerpt 1.",
+    questionText: "Identify the type of dance tune heard in this excerpt, and give its time signature and one bar of rhythm associated with it.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Reel", marks: 2, contextNote: "The scheme reads: “2+1+1” “Allow polka”" },
+    { id: "r-2", kind: "point", verbatim: "Time signature", marks: 1, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
+    { id: "r-3", kind: "criterion", verbatim: "Any correct bar of rhythm", marks: 1, permittedMarks: [0,1] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 12,
+                      "r": [
+                            0.08,
+                            0.231,
+                            0.92,
+                            0.375
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1.",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q5-a-a-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q5-a-a-score.png",
+          "srcHash": "0096cb02293c440f113038cd4d9d0318",
+          "alt": "The question and its printed answer table (Type of dance / Time signature / Bar of rhythm), printed with Listening Q5 A(a) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2022-HL-scheme-p16-l-q5-a-a",
+          "src": "/exam-figures/music/markbank/music-2022-HL-scheme-p16-l-q5-a-a.png",
+          "srcHash": "58dd4299499096722c4abed15306ccf1",
+          "alt": "The marking scheme’s printed answer for Listening Q5 A(a): the dance type, the allowed polka, its time signatures printed stacked, and the rhythm line, cropped from page 16 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q5-a-b", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-melody-name",
+    section: "L", questionRef: "2022 HL Listening Q5 A(b)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Excerpt 1.",
+    questionText: "Name the instrument playing the melody in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "banjo", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 12,
+                      "r": [
+                            0.08,
+                            0.4,
+                            0.92,
+                            0.475
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1.",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q5-a-b-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q5-a-b-score.png",
+          "srcHash": "de8f314efb9ad3957564fb25a54e0b09",
+          "alt": "The printed question, printed with Listening Q5 A(b) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q5-a-c", topicId: "music-2-2", conceptId: "mus-describe-excerpt-feature-heard",
+    section: "L", questionRef: "2022 HL Listening Q5 A(c)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Excerpt 1.",
+    questionText: "Describe one non-traditional feature of the music heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A non-traditional feature", marks: null, contextNote: "The scheme reads: “Up to two marks for a valid description of one non-traditional feature of the music heard in the excerpt.” “For example:” “Partially correct = 1”", openList: true, group: {"claimMax":1,"perOption":2,"options":["There is an accompaniment / chords / harmony (on guitar/piano)/homophonic","use of syncopation (in the accompaniment)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 12,
+                      "r": [
+                            0.08,
+                            0.5,
+                            0.92,
+                            0.666
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1.",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q5-a-c-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q5-a-c-score.png",
+          "srcHash": "5c9e2b85555b7be344c62dd4c734669e",
+          "alt": "The printed question, printed with Listening Q5 A(c) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q5-a-d", topicId: "music-2-2", conceptId: "mus-excerpt-identify-singing-style",
+    section: "L", questionRef: "2022 HL Listening Q5 A(d)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Excerpt 2.",
+    questionText: "Identify the style of singing in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sean-nós", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 12,
+                      "r": [
+                            0.08,
+                            0.743,
+                            0.92,
+                            0.816
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2.",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q5-a-d-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q5-a-d-score.png",
+          "srcHash": "b6986fc36fe709b2f0d9f9a12d05a622",
+          "alt": "The printed question, printed with Listening Q5 A(d) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q5-a-e", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
+    section: "L", questionRef: "2022 HL Listening Q5 A(e)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Excerpt 2.",
+    questionText: "Identify two features of this style of singing, as heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of sean-nós singing", marks: null, contextNote: "The scheme reads: “One mark each for any two valid features of sean-nós which can be heard in the excerpt” “For example:” “1+1”", openList: true, group: {"claimMax":2,"perOption":1,"options":["Ornamentation","free rhythm","solo/unaccompanied/monophonic"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.062,
+                            0.92,
+                            0.184
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2.",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q5-a-e-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q5-a-e-score.png",
+          "srcHash": "ab423309bf74ef163382ceb4dcd32393",
+          "alt": "The printed question, printed with Listening Q5 A(e) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q5-a-f", topicId: "music-2-2", conceptId: "mus-excerpt-following-heard-this",
+    section: "L", questionRef: "2022 HL Listening Q5 A(f)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Excerpt 2.",
+    questionText: "Which of the following can be heard in this excerpt?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "flattened 7th", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.209,
+                            0.92,
+                            0.339
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2.",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q5-a-f-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q5-a-f-score.png",
+          "srcHash": "b535ef89662021d786905c5f86c0b420",
+          "alt": "The question and its three printed options (flattened 7th, sequence, gap scale), printed with Listening Q5 A(f) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q5-a-g", topicId: "music-2-2", conceptId: "mus-excerpt-heard-identify-this",
+    section: "L", questionRef: "2022 HL Listening Q5 A(g)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Excerpt 3.",
+    questionText: "Identify the type of tune heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Slow Air", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.378,
+                            0.92,
+                            0.451
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3.",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q5-a-g-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q5-a-g-score.png",
+          "srcHash": "becf93c32457d0613bfa027a6006aadb",
+          "alt": "The printed question, printed with Listening Q5 A(g) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q5-a-h", topicId: "music-2-2", conceptId: "mus-excerpt-identify-instrument-playing",
+    section: "L", questionRef: "2022 HL Listening Q5 A(h)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Excerpt 3.",
+    questionText: "Identify the instrument playing the tune in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tin Whistle", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.461,
+                            0.92,
+                            0.534
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3.",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q5-a-h-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q5-a-h-score.png",
+          "srcHash": "c3a5969a6d5a1b07343433dac42bce19",
+          "alt": "The printed question, printed with Listening Q5 A(h) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q5-a-i", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
+    section: "L", questionRef: "2022 HL Listening Q5 A(i)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Excerpt 3.",
+    questionText: "Identify two traditional features of the music heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Traditional features", marks: null, contextNote: "The scheme reads: “One mark each for any two valid traditional features of the music which can be heard in the excerpt” “For example:” “1 + 1”", openList: true, group: {"claimMax":2,"perOption":1,"options":["Ornamentation","free rhythm","solo/unaccompanied/monophonic","repeated last note","gap scale","modal","wide range"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.542,
+                            0.92,
+                            0.727
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3.",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q5-a-i-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q5-a-i-score.png",
+          "srcHash": "84b585e5a87b3129a49e4712709da495",
+          "alt": "The printed question, printed with Listening Q5 A(i) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.17 — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q5-b-i", topicId: "music-2-13", conceptId: "mus-discuss-instrumental-irish-music",
+    section: "L", questionRef: "2022 HL Listening Q5 B(i)",
+    stem: "Answer one of the following:",
+    questionText: "Discuss ornamentation in Irish traditional instrumental music.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence.",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 14,
+                      "r": [
+                            0.08,
+                            0.097,
+                            0.92,
+                            0.123
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.17 — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q5-b-ii", topicId: "music-2-13", conceptId: "mus-account-century-developments-irish",
+    section: "L", questionRef: "2022 HL Listening Q5 B(ii)",
+    stem: "Answer one of the following:",
+    questionText: "Write an account of the developments that took place in Irish traditional music in the 20th century.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence.",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 14,
+                      "r": [
+                            0.08,
+                            0.131,
+                            0.92,
+                            0.171
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.17 — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q5-b-iii", topicId: "music-2-13", conceptId: "mus-account-irish-music-song",
+    section: "L", questionRef: "2022 HL Listening Q5 B(iii)",
+    stem: "Answer one of the following:",
+    questionText: "Write an account of the song tradition in Irish traditional music.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence.",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 14,
+                      "r": [
+                            0.08,
+                            0.182,
+                            0.92,
+                            0.207
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.17 — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q5-b-iv", topicId: "music-2-13", conceptId: "mus-account-dance-irish-music",
+    section: "L", questionRef: "2022 HL Listening Q5 B(iv)",
+    stem: "Answer one of the following:",
+    questionText: "Write an account of the dance music tradition in Irish traditional music.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence.",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 14,
+                      "r": [
+                            0.08,
+                            0.216,
+                            0.92,
+                            0.241
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.17 — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q5-b-v", topicId: "music-2-13", conceptId: "mus-discuss-harping-irish-music",
+    section: "L", questionRef: "2022 HL Listening Q5 B(v)",
+    stem: "Answer one of the following:",
+    questionText: "Discuss the uilleann piping or harping tradition in Irish traditional music.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence.",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 14,
+                      "r": [
+                            0.08,
+                            0.251,
+                            0.92,
+                            0.277
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q6-a", topicId: "music-2-4", conceptId: "mus-describe-excerpt-heard-music",
+    section: "L", questionRef: "2022 HL Listening Q6(a)",
+    stem: "Aural Skills. This question is based on six excerpts of music. Excerpt 1, played three times.",
+    questionText: "Describe the texture of the music heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Up to three marks for a valid description of the texture of the music heard in the excerpt.", marks: 3, contextNote: "The scheme reads: “Reference to the terms monophonic and / or homophonic is not required.” “However, if the terms monophonic and / or homophonic are included in the answer, the description must match for full marks.” “Monophonic + homophonic + valid description = 3” “Monophonic + homophonic = 2” “Monophonic/homophonic = 1” “Valid description = 3” “Polyphonic = 0” “Polyphonic + correct description of texture = up to 2 marks” “Pedal: (Timpani pedal), trumpet and horn join later. Tune: (In bar 4) vc and cb play (the 4-bar) tune, vla, vln and ww join later” “Partially correct answer = 1m/2m”", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 17,
+                      "r": [
+                            0.08,
+                            0.197,
+                            0.92,
+                            0.364
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q6-a-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q6-a-score.png",
+          "srcHash": "8708320d068bd65a2bb83da39afd7f4b",
+          "alt": "The printed question, printed with Listening Q6(a) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q6-b", topicId: "music-2-4", conceptId: "mus-describe-excerpt-feature-heard",
+    section: "L", questionRef: "2022 HL Listening Q6(b)",
+    stem: "Aural Skills. This question is based on six excerpts of music. Excerpt 2, played three times.",
+    questionText: "Describe one feature of the piano music heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the piano music", marks: null, contextNote: "The scheme reads: “Up to three marks for a valid description of a feature of the piano music heard in the excerpt.” “For example:” “Glissando = 1” “Partially correct answer = 1m/2m”", openList: true, group: {"claimMax":1,"perOption":3,"options":["Block chords","scales / step movement","accented chords (in lh)","staccato notes","marcato","low pitch in lh","high pitch in rh","melody in lh","accompaniment in rh","chromatic movement/notes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 17,
+                      "r": [
+                            0.08,
+                            0.423,
+                            0.92,
+                            0.589
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 2",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q6-b-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q6-b-score.png",
+          "srcHash": "e7adaed9e3556a2b7568949fac535abe",
+          "alt": "The printed question, printed with Listening Q6(b) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q6-c", topicId: "music-2-4", conceptId: "mus-composer-dance-death-does",
+    section: "L", questionRef: "2022 HL Listening Q6(c)",
+    stem: "Aural Skills. This question is based on six excerpts of music. Excerpt 3, played three times.",
+    questionText: "The music in this excerpt is taken from a dance of death. How does the composer portray a dance of death in the music heard in this excerpt?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Up to three marks for a description of how the composer portrays a dance of death in the music heard in the excerpt.", marks: 3, contextNote: "The scheme reads: “For example:” “Use of dynamics/crescendo towards end of excerpt; use of triangle; fast tempo; dance rhythm; use of staccato; pizzicato strings; extreme of register in piano music; triplet figure in the strings; vamping piano” “Partially correct answer = 1m/2m”", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 17,
+                      "r": [
+                            0.08,
+                            0.647,
+                            0.92,
+                            0.83
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q6-c-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q6-c-score.png",
+          "srcHash": "457f0b007b78a6304a99309827101766",
+          "alt": "The printed question, printed with Listening Q6(c) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q6-d", topicId: "music-2-3", conceptId: "mus-five-insert-missing-notes",
+    section: "L", questionRef: "2022 HL Listening Q6(d)",
+    stem: "Aural Skills. This question is based on six excerpts of music. Excerpt 4, played three times. An outline score is printed below.",
+    questionText: "Insert the five missing notes at X on the score.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Mark the first five notes from left to right. 0.5m for each correct pitch", marks: 2.5, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", permittedMarks: [0,0.5,1,1.5,2,2.5] },
+    { id: "r-2", kind: "criterion", verbatim: "Mark the first five notes from left to right. 0.5m for each correct rhythm", marks: 2.5, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", permittedMarks: [0,0.5,1,1.5,2,2.5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 18,
+                      "r": [
+                            0.08,
+                            0.317,
+                            0.92,
+                            0.346
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 4",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q6-d-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q6-d-score.png",
+          "srcHash": "252219f3055518cae1d477a0096f6952",
+          "alt": "The outline score (bars 1-5, X over bars 2-3) and the question, printed with Listening Q6(d) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2022-HL-scheme-p19-l-q6-d",
+          "src": "/exam-figures/music/markbank/music-2022-HL-scheme-p19-l-q6-d.png",
+          "srcHash": "e3aaf6a8480dc85dd5976422e8734ac9",
+          "alt": "The marking scheme’s printed answer for Listening Q6(d): the five notes at X printed on a treble stave, with the pitch and rhythm rates, cropped from page 19 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
+    id: "mus-2022-hl-l-q6-e", topicId: "music-2-4", conceptId: "mus-answer-between-both-describe",
+    section: "L", questionRef: "2022 HL Listening Q6(e)",
+    stem: "Aural Skills. This question is based on six excerpts of music. Excerpt 5 and Excerpt 6, played three times.",
+    questionText: "Describe two differences between the music heard in Excerpt 5 and the music heard in Excerpt 6. Refer to both excerpts in your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Excerpt 5 — Excerpt 6", marks: null, contextNote: "The scheme reads: “Up to three for each description of two valid differences between the music heard in excerpt 5 and the music heard in excerpt 6.” “Answers must refer to both excerpts and the same point of difference.” “For example:” “Partially correct answer = 1m/2m”", openList: true, group: {"claimMax":2,"perOption":3,"options":["Melody sung by (unison female) voices — Melody played by woodwind /flute/oboe/clarinet","voices — no voices","voices and instruments — instruments only","countermelody on strings — countermelody on bassoon","legato strings — tremolo strings","legato melody — legato and staccato melody","(moderately) soft melody — (moderately) loud melody","(moderately) soft strings — very soft strings","slower tempo — faster tempo","different key (F major) — different key (A flat major)","lower key — higher key"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 18,
+                      "r": [
+                            0.08,
+                            0.42,
+                            0.92,
+                            0.758
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 5 and Excerpt 6",
+          "title": "2022 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2022-HL-l-q6-e-score",
+          "src": "/exam-figures/music/markbank/music-2022-HL-l-q6-e-score.png",
+          "srcHash": "911a42e1eeb4b54ea019e82032a9748e",
+          "alt": "The printed question, printed with Listening Q6(e) in the 2022 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.3 — © State Examinations Commission.",
+    id: "mus-2022-hl-c-a-q1", topicId: "music-1-10", conceptId: "mus-appropriate-choose-continuation-continue",
+    section: "A", questionRef: "2022 HL Composing Section A Q1",
+    stem: "Answer one question only in this section:",
+    questionText: "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list:",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "SECTION A – MELODY COMPOSITION (50 marks)",
+                      "maxMarks": 50,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Melody and rhythm have excellent style and imagination",
+                                  "marks": [43,44,45,46,47,48,49,50],
+                                  "guidance": [
+                                        "Excellent sense of shape and structure",
+                                        "Excellent development of opening ideas",
+                                        "Excellent sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Very good sense of melodic and rhythmic interest",
+                                  "marks": [35,36,37,38,39,40,41,42],
+                                  "guidance": [
+                                        "Very good sense of shape and structure",
+                                        "Very good development of opening ideas",
+                                        "Very good sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Good sense of melodic and rhythmic interest",
+                                  "marks": [27,28,29,30,31,32,33,34],
+                                  "guidance": [
+                                        "Good sense of shape and structure",
+                                        "Good development of opening ideas",
+                                        "Good sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Fair sense of melodic and rhythmic interest",
+                                  "marks": [19,20,21,22,23,24,25,26],
+                                  "guidance": [
+                                        "Fair sense of shape and structure",
+                                        "Fair development of opening ideas",
+                                        "Fair sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Poor melodic and rhythmic interest",
+                                  "marks": [11,12,13,14,15,16,17,18],
+                                  "guidance": [
+                                        "Poor sense of shape and structure",
+                                        "Poor development of opening ideas",
+                                        "Poor sense of direction",
+                                        "Inappropriate performing directions (phrasing and dynamics) inserted",
+                                        "Unsuitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor melodic and rhythmic interest",
+                                  "marks": [3,4,5,6,7,8,9,10],
+                                  "guidance": [
+                                        "Very poor sense of shape and structure",
+                                        "Very poor development of opening ideas",
+                                        "Very poor sense of direction",
+                                        "No performing directions (phrasing and dynamics) inserted",
+                                        "No instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (50 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 1",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.4 — © State Examinations Commission.",
+    id: "mus-2022-hl-c-a-q2", topicId: "music-1-11", conceptId: "mus-appropriate-bars-been-blow",
+    section: "A", questionRef: "2022 HL Composing Section A Q2",
+    stem: "Answer one question only in this section:",
+    questionText: "Setting music to a given text Here is an extract from the poem June by Francis Ledwidge. Soon the swallows will be flying south, The wind wheel north to gather in the snow, Even the roses split on youth’s red mouth Will soon blow down the road all roses go. The opening line has been set for you. • Set the remaining words to make a melody of 16 bars. (You may exceed this number of bars and include a modulation, if you wish.) • Add appropriate performing directions (phrasing and dynamics) to the melody.",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "SECTION A – MELODY COMPOSITION (50 marks)",
+                      "maxMarks": 50,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50],
+                      "guidance": [
+                            "No text inserted 0"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "Excellent \"marriage\" of words and music",
+                                  "marks": [43,44,45,46,47,48,49,50],
+                                  "guidance": [
+                                        "Excellent style and imagination",
+                                        "Excellent sense of shape and structure",
+                                        "Excellent sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good “marriage” of words and music",
+                                  "marks": [35,36,37,38,39,40,41,42],
+                                  "guidance": [
+                                        "Very good sense of melodic and rhythmic interest",
+                                        "Very good sense of shape and structure",
+                                        "Very good sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Good “marriage” of words and music",
+                                  "marks": [27,28,29,30,31,32,33,34],
+                                  "guidance": [
+                                        "Good sense of melodic and rhythmic interest",
+                                        "Good sense of shape and structure",
+                                        "Good sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair “marriage” of words and music",
+                                  "marks": [19,20,21,22,23,24,25,26],
+                                  "guidance": [
+                                        "Fair sense of melodic and rhythmic interest",
+                                        "Fair sense of shape and structure",
+                                        "Fair sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor “marriage” of words and music",
+                                  "marks": [11,12,13,14,15,16,17,18],
+                                  "guidance": [
+                                        "Poor melodic and rhythmic interest",
+                                        "Poor sense of shape and structure",
+                                        "Poor sense of direction",
+                                        "Inappropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor “marriage” of words and music",
+                                  "marks": [3,4,5,6,7,8,9,10],
+                                  "guidance": [
+                                        "Very poor melodic and rhythmic interest",
+                                        "Very poor sense of shape and structure",
+                                        "Very poor sense of direction",
+                                        "No performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (50 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 2",
+          "pages": [
+                6,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.5 — © State Examinations Commission.",
+    id: "mus-2022-hl-c-a-q3", topicId: "music-1-12", conceptId: "mus-appropriate-choose-composing-continue",
+    section: "A", questionRef: "2022 HL Composing Section A Q3",
+    stem: "Answer one question only in this section:",
+    questionText: "Composing to a given dance rhythm or metre or form The opening phrase of a gavotte is given. • Continue the given opening to make a 16-bar melody. • Use the form AA1BB1. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list:",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "SECTION A – MELODY COMPOSITION (50 marks)",
+                      "maxMarks": 50,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Rhythmic integrity of dance excellently maintained",
+                                  "marks": [43,44,45,46,47,48,49,50],
+                                  "guidance": [
+                                        "Melody and rhythm have excellent style and imagination",
+                                        "Excellent sense of shape and structure",
+                                        "Excellent development of opening ideas",
+                                        "Excellent sense of direction and climax",
+                                        "Excellent adherence to given structure",
+                                        "Successful modulation",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Rhythmic integrity of dance very well maintained",
+                                  "marks": [35,36,37,38,39,40,41,42],
+                                  "guidance": [
+                                        "Very good sense of melodic and rhythmic interest",
+                                        "Very good sense of shape and structure",
+                                        "Very good development of opening ideas",
+                                        "Very good sense of direction and climax",
+                                        "Very good adherence to given structure",
+                                        "Successful modulation",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Good attempt at maintaining dance rhythm",
+                                  "marks": [27,28,29,30,31,32,33,34],
+                                  "guidance": [
+                                        "Good sense of melodic and rhythmic interest",
+                                        "Good sense of shape and structure",
+                                        "Good development of opening ideas",
+                                        "Good sense of direction and climax",
+                                        "Good adherence to given structure",
+                                        "An unconfirmed modulation",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Fair attempt at maintaining dance rhythm",
+                                  "marks": [19,20,21,22,23,24,25,26],
+                                  "guidance": [
+                                        "Fair sense of melodic and rhythmic interest",
+                                        "Fair sense of shape and structure",
+                                        "Fair development of opening ideas",
+                                        "Fair sense of direction and climax",
+                                        "Fair adherence to given structure",
+                                        "An unsuccessful modulation",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Poor awareness of dance rhythm",
+                                  "marks": [11,12,13,14,15,16,17,18],
+                                  "guidance": [
+                                        "Poor melodic and rhythmic interest.",
+                                        "Poor sense of shape and structure",
+                                        "Poor development of opening ideas",
+                                        "Poor sense of direction",
+                                        "Poor adherence to given structure",
+                                        "No attempt at modulation",
+                                        "Inappropriate performing directions (phrasing and dynamics) inserted",
+                                        "Unsuitable instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor awareness of dance rhythm",
+                                  "marks": [3,4,5,6,7,8,9,10],
+                                  "guidance": [
+                                        "Very poor melodic and rhythmic interest.",
+                                        "Very poor sense of shape and structure",
+                                        "Very poor development of opening ideas",
+                                        "Very poor sense of direction",
+                                        "Very poor adherence to given structure",
+                                        "No attempt at modulation",
+                                        "No performing directions (phrasing and dynamics) inserted",
+                                        "No instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (50 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 3",
+          "pages": [
+                8,
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.6 — © State Examinations Commission.",
+    id: "mus-2022-hl-c-b-q4", topicId: "music-1-14", conceptId: "mus-bass-chords-complete-compose",
+    section: "B", questionRef: "2022 HL Composing Section B Q4",
+    stem: "Answer one question only in this section:",
+    questionText: "Composing melody and bass notes from a set of chords • Study the following piece of music. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Melody",
+                      "maxMarks": 33,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent style and imagination",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Excellent awareness of key and underlying harmonic structure",
+                                        "Excellent development of opening ideas",
+                                        "Excellent sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good style and imagination",
+                                  "marks": [23,24,25,26,27],
+                                  "guidance": [
+                                        "Very good awareness of key and underlying harmonic structure",
+                                        "Very good development of opening ideas",
+                                        "Very good sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Good style and imagination",
+                                  "marks": [18,19,20,21,22],
+                                  "guidance": [
+                                        "Good awareness of key and underlying harmonic structure",
+                                        "Good development of opening ideas",
+                                        "Good sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair style and imagination",
+                                  "marks": [13,14,15,16,17],
+                                  "guidance": [
+                                        "Fair awareness of key and underlying harmonic structure",
+                                        "Fair development of opening ideas",
+                                        "Fair sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor style and imagination",
+                                  "marks": [8,9,10,11,12],
+                                  "guidance": [
+                                        "Poor awareness of key and underlying harmonic structure",
+                                        "Poor development of opening ideas",
+                                        "Poor sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor style and imagination",
+                                  "marks": [3,4,5,6,7],
+                                  "guidance": [
+                                        "Very poor awareness of key and underlying harmonic structure",
+                                        "Very poor development of opening ideas",
+                                        "Very poor sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2],
+                                  "guidance": []
+                            }
+                      ]
+                },
+                {
+                      "id": "bass-count",
+                      "label": "0.5 mark per correct bass note under each chord symbol (0.5 x 20)",
+                      "maxMarks": 10,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2,
+                            2.5,
+                            3,
+                            3.5,
+                            4,
+                            4.5,
+                            5,
+                            5.5,
+                            6,
+                            6.5,
+                            7,
+                            7.5,
+                            8,
+                            8.5,
+                            9,
+                            9.5,
+                            10
+                      ],
+                      "guidance": [
+                            "(Correct pitch in correct place rhythmically)"
+                      ],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 20
+                      }
+                },
+                {
+                      "id": "bass-quality",
+                      "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent bass line",
+                                  "marks": [7],
+                                  "guidance": [
+                                        "Excellent awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good bass line",
+                                  "marks": [6],
+                                  "guidance": [
+                                        "Very good awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Good bass line",
+                                  "marks": [4,5],
+                                  "guidance": [
+                                        "Good awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair bass line",
+                                  "marks": [2,3],
+                                  "guidance": [
+                                        "Fair awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor bass line",
+                                  "marks": [0,1],
+                                  "guidance": [
+                                        "Poor awareness of style"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (50 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 4",
+          "pages": [
+                12,
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.7 — © State Examinations Commission.",
+    id: "mus-2022-hl-c-b-q5", topicId: "music-1-13", conceptId: "mus-adjacent-bass-both-boxes",
+    section: "B", questionRef: "2022 HL Composing Section B Q5",
+    stem: "Answer one question only in this section:",
+    questionText: "Composing bass notes and chord indications to a given tune • Study the following piece of music. • Add suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Chords: marks are awarded in the first instance for correct and acceptable chords. This is in the context of (i) the chord fitting the melody line at that point (i.e. until the next change of chord indicated by a box) (ii) the preceding chord and (iii) the following chord.",
+                "Chord quality: Marks are awarded here for the musical quality of the overall progressions chosen. While the candidate may have chosen chords that “worked” at any point, there may have been better choices. If that is the case, this will be reflected in the chord quality mark.",
+                "Chord Progressions - General points",
+                "Same chord in adjacent boxes not accepted unless bass changed or 7th added",
+                "Accidental and suffix, where relevant must be fully correct for mark to be awarded",
+                "Marks for chords not awarded in isolation. Chords must be part of a good progression.",
+                "V7 - V not accepted",
+                "Vb or V7b should generally be followed by I",
+                "V – ii generally not accepted,",
+                "ii – I generally not accepted except as approach to Ic in cadential 6/4",
+                "Cadential 6/4 must be on the stronger of the two beats and at a cadence point",
+                "Secondary 7ths, if used, must be used correctly i.e. they must be followed by a chord whose root is a 4th higher",
+                "Bass Line",
+                "No doubling of major 3rd under chord symbol"
+          ],
+          "criteria": [
+                {
+                      "id": "chords-count",
+                      "label": "1 mark for each chord that is part of a good progression in chord boxes 1, 2, 4, 5, 6, 7, 9, 10, 11, 12, 13, 15, 16, 19, 20, 21, 22 and 23",
+                      "maxMarks": 18,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 18
+                      }
+                },
+                {
+                      "id": "chords-count-half",
+                      "label": "0.5 mark for each chord that is part of a good progression in chord boxes 3, 8, 14, 17, 18 and 24",
+                      "maxMarks": 3,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2,
+                            2.5,
+                            3
+                      ],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 6
+                      }
+                },
+                {
+                      "id": "chords-quality",
+                      "label": "Quality of musical progressions in the style of the given opening",
+                      "maxMarks": 9,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent chord progressions",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good chord progressions",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good chord progressions",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Fair chord progressions",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Poor chord progressions",
+                                  "marks": [0,1],
+                                  "guidance": []
+                            }
+                      ]
+                },
+                {
+                      "id": "bass-count",
+                      "label": "0.5 mark per correct bass note under each correct chord symbol",
+                      "maxMarks": 12,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2,
+                            2.5,
+                            3,
+                            3.5,
+                            4,
+                            4.5,
+                            5,
+                            5.5,
+                            6,
+                            6.5,
+                            7,
+                            7.5,
+                            8,
+                            8.5,
+                            9,
+                            9.5,
+                            10,
+                            10.5,
+                            11,
+                            11.5,
+                            12
+                      ],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 24
+                      }
+                },
+                {
+                      "id": "bass-quality",
+                      "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge",
+                      "maxMarks": 8,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent bass line",
+                                  "marks": [8],
+                                  "guidance": [
+                                        "Excellent awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good bass line",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Very good awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Good bass line",
+                                  "marks": [4,5],
+                                  "guidance": [
+                                        "Good awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair bass line",
+                                  "marks": [2,3],
+                                  "guidance": [
+                                        "Fair awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor bass line",
+                                  "marks": [0,1],
+                                  "guidance": [
+                                        "Poor awareness of style"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (50 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 5",
+          "pages": [
+                14,
+                15
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.8 — © State Examinations Commission.",
+    id: "mus-2022-hl-c-b-q6", topicId: "music-1-15", conceptId: "mus-adding-adjacent-both-boxes",
+    section: "B", questionRef: "2022 HL Composing Section B Q6",
+    stem: "Answer one question only in this section:",
+    questionText: "Adding a countermelody or descant and chordal support to a given tune • Study the following piece of music. • Insert suitable chord indications in the boxes provided. • Continue the descant part in the given style to complete the piece. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "chords-count",
+                      "label": "1 mark for each chord that fits melody and is part of a good chord progression in chord boxes 1, 2, 3, 4, 6, 7, 8, 10, 11, 12, 13, 16, 17 and 18",
+                      "maxMarks": 14,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 14
+                      }
+                },
+                {
+                      "id": "chords-count-half",
+                      "label": "0.5 mark for each chord that fits melody and is part of a good chord progression in chord boxes 5, 9, 14, 15, 19 and 20",
+                      "maxMarks": 3,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2,
+                            2.5,
+                            3
+                      ],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 6
+                      }
+                },
+                {
+                      "id": "descant",
+                      "label": "Descant",
+                      "maxMarks": 33,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent descant line within harmonic framework",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Excellent adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good descant line within harmonic framework",
+                                  "marks": [23,24,25,26,27],
+                                  "guidance": [
+                                        "Very good adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Good descant line within harmonic framework",
+                                  "marks": [18,19,20,21,22],
+                                  "guidance": [
+                                        "Good adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair descant line within harmonic framework",
+                                  "marks": [13,14,15,16,17],
+                                  "guidance": [
+                                        "Fair adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor descant line within harmonic framework",
+                                  "marks": [8,9,10,11,12],
+                                  "guidance": [
+                                        "Poor adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor descant line within harmonic framework",
+                                  "marks": [3,4,5,6,7],
+                                  "guidance": [
+                                        "Very poor adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (50 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 6",
+          "pages": [
+                16,
+                17
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC067ALP007EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.20 — © State Examinations Commission.",
+    id: "mus-2022-hl-e-q1-q4", topicId: "music-2-8", conceptId: "mus-above-account-address-audio",
+    section: "E", questionRef: "2022 HL Elective Q1–Q4(b)",
+    stem: "Answer all questions.",
+    questionText: "1. State the title of your chosen Listening Elective topic. 2. List three of the sources which you used in studying this topic. Full details are required for all of your sources. If one of your sources is the Internet, give the full website address used in your research. 3. Name five pieces of music, and the composer or performer, which you studied as part of this listening elective, and which are on your audio recording. 4. (a) Identify three significant musical features of your chosen topic. (b) Give an account of your chosen topic ensuring that you • describe the three musical features which you have identified above • show how your three chosen, and other, musical features are present in the music you have studied for this elective • make reference to all the musical excerpts on your recording • include your personal response to your chosen topic.",
+    totalMarks: 100,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Refer to the Leaving Certificate Music Syllabus – page 12 – 2.3.5"
+          ],
+          "criteria": [
+                {
+                      "id": "elements-2-4",
+                      "label": "Listening - Higher Level – Elective",
+                      "maxMarks": 100,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100],
+                      "guidance": [
+                            "Name of topic -"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic.",
+                                  "marks": [85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100],
+                                  "guidance": [
+                                        "Excellent reference to all ten musical excerpts on the accompanying audio recording which illustrate the feature(s) discussed.",
+                                        "Excellent research evident, with excellent personal response.",
+                                        "Excellent sources and reference to pieces of music/composer/performer."
+                                  ]
+                            },
+                            {
+                                  "label": "Very good awareness and detailed knowledge of musical features of topic.",
+                                  "marks": [70,71,72,73,74,75,76,77,78,79,80,81,82,83,84],
+                                  "guidance": [
+                                        "Very good reference to all ten musical excerpts on the accompanying audio recording which illustrate the feature(s) discussed.",
+                                        "Very well researched, with very good personal response.",
+                                        "Very good sources and reference to pieces of music/composer/performer."
+                                  ]
+                            },
+                            {
+                                  "label": "Good knowledge of musical features of chosen topic, but lacking in detail.",
+                                  "marks": [55,56,57,58,59,60,61,62,63,64,65,66,67,68,69],
+                                  "guidance": [
+                                        "Good reference to all/some of the musical excerpts on the accompanying audio recording which broadly illustrate the feature(s) discussed.",
+                                        "Good research in evidence with good personal response.",
+                                        "Good sources and good reference to pieces of music/composer/performer."
+                                  ]
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking in detail.",
+                                  "marks": [40,41,42,43,44,45,46,47,48,49,50,51,52,53,54],
+                                  "guidance": [
+                                        "Choice of topic too broad to allow for appropriate detailed and personal response.",
+                                        "Some reference to all/some of the musical features of topic and to musical recordings.",
+                                        "Recorded excerpts do not illustrate / relate to the features in the essay.",
+                                        "General sources used, but lacking specific focus.",
+                                        "Some reference to pieces of music/composer/performer."
+                                  ]
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [25,26,27,28,29,30,31,32,33,34,35,36,37,38,39],
+                                  "guidance": [
+                                        "Little or no evidence of research or personal response.",
+                                        "Little or no reference to musical features of topic",
+                                        "Little or no reference to musical recordings.",
+                                        "Inadequate sources listed and inadequate reference to pieces of music/composer/performer."
+                                  ]
+                            },
+                            {
+                                  "label": "Very little response to chosen topic in evidence.",
+                                  "marks": [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0,1,2,3,4,5,6,7,8,9],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Listening - Higher Level – Elective"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING ELECTIVE",
+          "title": "Listening elective — Questions",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The questions exactly as the elective booklet prints them, about your own chosen topic.",
+          "sourceFileid": "LC067ALP007EV"
+    },
+  } as SecCard,
 ];
