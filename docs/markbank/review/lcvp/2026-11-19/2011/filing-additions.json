@@ -1,0 +1,1097 @@
+{
+  "recordedAt": "2026-11-19T19:36:00.928225+00:00",
+  "sitting": "2011",
+  "status": "Review-only filing additions; no canonical or generated file changed",
+  "cards": 47,
+  "sourceCandidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-authoring/proposed-47-authored-cards.json",
+  "sourceCandidateSha256": "235ac330a7d7899f1dfe9d8d09c705bdca09200c793849df11c0390cd4dba886",
+  "thirdReaderDecision": {
+    "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/third-reader-decision.json",
+    "sha256": "f8b9a29887a9c71448f73e28e65c19d2dcd5a91b8b4f4390fc8cb00ba12cfc8a"
+  },
+  "comparisonFiles": [
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "sha256": "cc7b0fffb578748067c9eb62ee875e548a0f00fee43e615159fd83a3ce8e88db"
+    }
+  ],
+  "asks": {
+    "lcvp-2011-cl-a1": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-a2": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-a3": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-a4": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-a5": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-a6": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-a7": [
+      [
+        "link-modules-common-audio-visual"
+      ],
+      "r3"
+    ],
+    "lcvp-2011-cl-a7-2": [
+      [
+        "link-modules-common-audio-visual"
+      ],
+      "r3"
+    ],
+    "lcvp-2011-cl-a8": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-b1": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-b1-2": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-b2i": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-b2ii": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-b3i": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-b3ii": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r3"
+    ],
+    "lcvp-2011-cl-b3iii": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c1a": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c1b": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c1b-2": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c1c": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c1d": [
+      [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c2a": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c2b": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c2c": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r3"
+    ],
+    "lcvp-2011-cl-c2di": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c2dii": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r3"
+    ],
+    "lcvp-2011-cl-c2dii-2": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r3"
+    ],
+    "lcvp-2011-cl-c3a": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r3"
+    ],
+    "lcvp-2011-cl-c3b": [
+      [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c3b-2": [
+      [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c3c": [
+      [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c3c-2": [
+      [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c3d": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c4a": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c4b": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c4c": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c4c-2": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c4d": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c5a": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c5b": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r3"
+    ],
+    "lcvp-2011-cl-c5c": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r3"
+    ],
+    "lcvp-2011-cl-c5d": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c6a": [
+      [
+        "link-modules-common-1-work-placement"
+      ],
+      "r3"
+    ],
+    "lcvp-2011-cl-c6b": [
+      [
+        "link-modules-common-1-work-placement"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c6c": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r2"
+    ],
+    "lcvp-2011-cl-c6d": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r3"
+    ],
+    "lcvp-2011-cl-c6d-2": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r3"
+    ]
+  },
+  "counts": {
+    "r2": 35,
+    "r3": 12
+  },
+  "items": [
+    {
+      "cardId": "lcvp-2011-cl-a1",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Meaning of voluntary work.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2011 CL Section A Q1",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-a2",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Nature and purpose of volunteering.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2011 CL Section A Q2",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-a3",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Appeal of a voluntary organisation and its purpose.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2011 CL Section A Q3",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-a4",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Changing needs addressed by a voluntary organisation.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2011 CL Section A Q4",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-a5",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Services offered by a voluntary organisation.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2011 CL Section A Q5",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-a6",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Reasons a voluntary organisation involves young people.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2011 CL Section A Q6",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-a7",
+      "headingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/third-reader-decision.json",
+      "reason": "Paper p6 Q7 asks why Orla did not show her interview with Stephen and scheme p4 (physical p6) pays 1m for the recording's own answer (to respect his dignity, too personal), so it is recall of the audio-visual, not voluntary-organisation content.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2011 CL Section A Q7 — decision"
+    },
+    {
+      "cardId": "lcvp-2011-cl-a7-2",
+      "headingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/third-reader-decision.json",
+      "reason": "Paper p6 Q7 asks what Orla learned from her interview with Stephen and scheme p4 pays 5 @ 1m for what Stephen said in the recording (homelessness is tough, most people decent, some talk down to him, misses his own place, unsafe), all recall of the interview.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2011 CL Section A Q7 — learning"
+    },
+    {
+      "cardId": "lcvp-2011-cl-a8",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Personal development through voluntary work.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2011 CL Section A Q8",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-b1",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Enterprising characteristics.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2011 CL Section B Q1 — characteristics",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-b1-2",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Explaining chosen enterprising characteristics.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2011 CL Section B Q1 — explanations",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-b2i",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Benefits of gaining ICT skills.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2011 CL Section B Q2(i)",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-b2ii",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Use of ICT in an enterprise.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2011 CL Section B Q2(ii)",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-b3i",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Purpose of business planning.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2011 CL Section B Q3(i)",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-b3ii",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/third-reader-decision.json",
+      "reason": "Paper p11 Q3(ii) asks the main issues Sara must plan for in her new start-up and scheme p8 (physical p10) pays 3 @ 2m for business set-up issues (premises, finance, marketing, employees, product, competition, legalities), which is how a local business is established, not a personal enterprise skill.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2011 CL Section B Q3(ii)"
+    },
+    {
+      "cardId": "lcvp-2011-cl-b3iii",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Viability of the local café.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2011 CL Section B Q3(iii)",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c1a",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Naming the investigated career.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2011 CL Section C Q1(a)",
+      "firstHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c1b",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Skills relevant to the investigated career.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2011 CL Section C Q1(b) — characteristics",
+      "firstHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c1b-2",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Explaining skills for the investigated career.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2011 CL Section C Q1(b) — explanations",
+      "firstHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c1c",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Benefits of a career investigation activity.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2011 CL Section C Q1(c)",
+      "firstHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c1d",
+      "headingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Advice for finding suitable employment.",
+      "internalTopicId": "lcvp-link-modules-0-1",
+      "questionRef": "2011 CL Section C Q1(d)",
+      "firstHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c2a",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Naming the local business visited.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2011 CL Section C Q2(a)",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c2b",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Goals for investigating a local business.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2011 CL Section C Q2(b)",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c2c",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/third-reader-decision.json",
+      "reason": "Paper p18 asks the factors in the success or failure of the class visit-out to a local business and scheme p11 (physical p13) pays planning, arrangements, participation, the host's welcome and research quality for that visit; the live 2021 Q1(c) visit success/failure ask is filed under Local Business Enterprises.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2011 CL Section C Q2(c)"
+    },
+    {
+      "cardId": "lcvp-2011-cl-c2di",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Meaning of evaluation.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2011 CL Section C Q2(d)(i)",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c2dii",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/third-reader-decision.json",
+      "reason": "Paper p19 asks how the class would evaluate the visit-out and scheme p12 (physical p14) pays methods aimed at that visit (questionnaire to the organisation visited, asking its members, report quality); evaluating a visit is filed with the visit, as live 2024 Q2(d) and 2023 Q6(d) are.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2011 CL Section C Q2(d)(ii) — methods"
+    },
+    {
+      "cardId": "lcvp-2011-cl-c2dii-2",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/third-reader-decision.json",
+      "reason": "Same printed part (paper p19, scheme p12): the reasons are paid 1m each beside each visit-evaluation method, so they belong under the same heading as the methods.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2011 CL Section C Q2(d)(ii) — reasons"
+    },
+    {
+      "cardId": "lcvp-2011-cl-c3a",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/third-reader-decision.json",
+      "reason": "Paper p20 asks, under 'Consider the area where you live', why the school is located where it is and scheme p13 (physical p15) pays location factors (population, no other school, tradition, traffic); location of an organisation in the local area is filed under Local Business Enterprises as live 2023 Q4(b) and 2025 Q1(a) are.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2011 CL Section C Q3(a)"
+    },
+    {
+      "cardId": "lcvp-2011-cl-c3b",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Choice covers commercial and voluntary organisations.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2011 CL Section C Q3(b) — types",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c3b-2",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Advantages of chosen commercial or voluntary organisations.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2011 CL Section C Q3(b) — advantages",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c3c",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Challenges for commercial and voluntary organisations.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2011 CL Section C Q3(c) — challenges",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c3c-2",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Solutions for the chosen organisations’ challenges.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2011 CL Section C Q3(c) — ways to overcome",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c3d",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Starting a business in the local area.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2011 CL Section C Q3(d)",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c4a",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Types of work.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2011 CL Section C Q4(a)",
+      "firstHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c4b",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Non-financial benefits of employment.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2011 CL Section C Q4(b)",
+      "firstHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c4c",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Role of trade unions.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2011 CL Section C Q4(c) — definition",
+      "firstHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c4c-2",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Reasons workers join trade unions.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2011 CL Section C Q4(c) — reasons",
+      "firstHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c4d",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Continuing education during working life.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2011 CL Section C Q4(d)",
+      "firstHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c5a",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Generating enterprise ideas.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2011 CL Section C Q5(a)",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c5b",
+      "headingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-third-reader-decisions.md",
+      "reason": "Coordinator ruling 4: market research plans or evaluates an enterprise activity.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2011 CL Section C Q5(b)",
+      "previousReading": {
+        "cardId": "lcvp-2011-cl-c5b",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+        "reason": "Purpose of market research.",
+        "internalTopicId": "lcvp-link-modules-1-0",
+        "questionRef": "2011 CL Section C Q5(b)",
+        "firstHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      "coordinatorRuling": 4,
+      "rulingSha256": "fd17baac513eab4ec8e9e911a4f2fd93be002e683c57a5035a1a6a1679e2ed02",
+      "methodStatus": "Coordinator settled the subject-wide market-research inconsistency"
+    },
+    {
+      "cardId": "lcvp-2011-cl-c5c",
+      "headingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-third-reader-decisions.md",
+      "reason": "Coordinator ruling 4: market research plans or evaluates an enterprise activity.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2011 CL Section C Q5(c)",
+      "previousReading": {
+        "cardId": "lcvp-2011-cl-c5c",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+        "reason": "Designing a market-research questionnaire.",
+        "internalTopicId": "lcvp-link-modules-1-0",
+        "questionRef": "2011 CL Section C Q5(c)",
+        "firstHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      "coordinatorRuling": 4,
+      "rulingSha256": "fd17baac513eab4ec8e9e911a4f2fd93be002e683c57a5035a1a6a1679e2ed02",
+      "methodStatus": "Coordinator settled the subject-wide market-research inconsistency"
+    },
+    {
+      "cardId": "lcvp-2011-cl-c5d",
+      "headingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Marketing plan for the class enterprise.",
+      "internalTopicId": "lcvp-link-modules-1-3",
+      "questionRef": "2011 CL Section C Q5(d)",
+      "firstHeadingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c6a",
+      "headingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/third-reader-decision.json",
+      "reason": "Paper p29 asks for the email sent when seeking a work placement and scheme p21 (physical p23) pays its parts including the number of days/dates, i.e. securing the placement; live 2021 Q2(b) and 2026 Q4(c), the same task, are filed under Work Placement.",
+      "internalTopicId": "lcvp-link-modules-0-3",
+      "questionRef": "2011 CL Section C Q6(a)"
+    },
+    {
+      "cardId": "lcvp-2011-cl-c6b",
+      "headingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Responsibilities during a work placement.",
+      "internalTopicId": "lcvp-link-modules-0-3",
+      "questionRef": "2011 CL Section C Q6(b)",
+      "firstHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c6c",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/category-comparison.json",
+      "reason": "Using work placement to choose a career.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2011 CL Section C Q6(c)",
+      "firstHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ]
+    },
+    {
+      "cardId": "lcvp-2011-cl-c6d",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/third-reader-decision.json",
+      "reason": "Paper p31 asks which characteristics employers value in their employees and scheme p22 (physical p24) pays trustworthy, initiative, reliable, loyal, hard-working, team player, well presented, communicator, which is what working life expects of an employee rather than enterprise skills.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2011 CL Section C Q6(d) — characteristics"
+    },
+    {
+      "cardId": "lcvp-2011-cl-c6d-2",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/third-reader-decision.json",
+      "reason": "Same printed part (paper p31, scheme p22): the 2 @ 1m explanations say why each characteristic matters to an employer, so they are filed with the names.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2011 CL Section C Q6(d) — explanations"
+    }
+  ],
+  "pending": [],
+  "limits": [
+    "All internal topic IDs, card IDs and concept IDs remain unchanged.",
+    "The coordinator’s market-research ruling is applied explicitly; the remaining recall/content consistency review is recorded separately.",
+    "These additions must be joined to the incoming canonical filing in the same commit as their new cards. Existing live filings are preserved."
+  ]
+}

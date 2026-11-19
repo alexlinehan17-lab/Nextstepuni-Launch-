@@ -1,0 +1,82 @@
+{
+  "recordedAt": "2026-11-19T18:58:54.719757+00:00",
+  "reader": "Codex second worker",
+  "initialCandidateSha256": "1ced5e750d843bbd005bf4bc414a67c271b53154a11a82eb9b1da77a3cd62d36",
+  "currentPayloadSha256": "d4282d7fed7ef26970b480d17d14f26bdbc3a844fd290375d0b98bfe5a987514",
+  "scope": "All47 candidate question texts/rows/controls and all39 selected scheme blocks read. Earlier independent64-page visual reading remains frozen separately. Eight relevant original images reopened for candidate adjudication.",
+  "asks": 47,
+  "offeredMarks": 210,
+  "wholeNoAnswer": [
+    "lcvp-2011-cl-b3iii",
+    "lcvp-2011-cl-c1a",
+    "lcvp-2011-cl-c1b-2",
+    "lcvp-2011-cl-c2a",
+    "lcvp-2011-cl-c6a"
+  ],
+  "partialNoAnswer": [
+    "lcvp-2011-cl-c4b"
+  ],
+  "actualImagesViewed": [
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/original-pages/paper-08.png",
+      "sha256": "486d2b42195f9ed9c24c5f6c3506fb6c09fb492779376a18908a14b433ef4075"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/original-pages/paper-09.png",
+      "sha256": "05120c1c93bc53cd7c5420633765fe5d4392e30b636dbcbfced156c2d845b0c7"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/original-pages/paper-14.png",
+      "sha256": "701e0ce68758a051f1a44339afa9e51217d6297fbbb32d16d2b9331dc5769936"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/original-pages/paper-23.png",
+      "sha256": "df56e69bb8761ae0fb71b2827ce6caf6da11f071d3b04f68856b459826f1e5d1"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/original-pages/scheme-07.png",
+      "sha256": "df777ed8bffe26977ed373d71fe1c4f100d986fc53a4d7e41e9fd919a7a0bf53"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/original-pages/scheme-11.png",
+      "sha256": "7bb5198c3fc6c9bd47bfe8e2c14b44e4816ac1d5abad8e77401fcaccfa1c8d2e"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/original-pages/scheme-18.png",
+      "sha256": "3e2da7c83ba7f0124eaa4d145ae755e19e03eab509dc8faa9708a7d9b42cbb9e"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/original-pages/scheme-21.png",
+      "sha256": "bb691a06df6cf126304c8960caca6103df51d76c1d4592d7dc2de92de417c3fb"
+    }
+  ],
+  "confirmed": [
+    "All18 case-table values and nine original column headings match paper8; source layout remains accessible before reveal.",
+    "Questionnaire has11 visible empty checkboxes and six model questions. Q6 willingness-to-pay is compulsory among five marked questions; the five presentation marks remain separate. The rendered page has no extra Male/female line above Q1.",
+    "B1 and C1(b) shared-verb split selections use original verbs and original shared object; full joint prompt remains before reveal. The scheme labels stating and explaining separately,3+3marks. Token-selection provenance must be integrated before release.",
+    "C4(b) Explanation is needed is a global direction, separate from option6. Its removal from that option and scoped zero-mark notice for missing expansions1–4 preserve six models and3×2(0/2).",
+    "The four-response A8/C3(d) controls preserve2+2+1+1 and3+3+2+2 allocations without assigning particular models to the higher marks. Their application scoring/browser verification remains pending."
+  ],
+  "outstandingFinding": {
+    "id": "lcvp-2011-cl-c1b",
+    "reason": "Scheme prints Etc. after three example skills. A claimMax3 closed pool of exactly those three makes them look compulsory. Use three1-mark criterion controls and retain all printed examples/Etc. as guidance for the chosen career.",
+    "marks": 3,
+    "countsUnchanged": true,
+    "sharedCodeRequired": false
+  },
+  "remaining": [
+    "Confirm open-skill criterion treatment.",
+    "Generic-component consistency for C2(d)(ii).",
+    "Ten display-heading decisions.",
+    "Production source bindings, source-token provenance, card generation and application/browser checks.",
+    "Fresh SEC archive recheck and native recording hosting/playback."
+  ],
+  "verdict": "Source draft supported subject to the recorded open-skill treatment and release dependencies; no whole-sitting release clearance.",
+  "openEndedSkillsConfirmation": {
+    "recordedAt": "2026-11-19T19:10:16.630891+00:00",
+    "payloadSha256": "235ac330a7d7899f1dfe9d8d09c705bdca09200c793849df11c0390cd4dba886",
+    "id": "lcvp-2011-cl-c1b",
+    "finding": "Three one-mark criterion responses preserve all printed examples plus Etc.; no compulsory three-example pool. Total, paper question and ID unchanged.",
+    "scope": "Source-only confirmation; no application or runtime check."
+  }
+}

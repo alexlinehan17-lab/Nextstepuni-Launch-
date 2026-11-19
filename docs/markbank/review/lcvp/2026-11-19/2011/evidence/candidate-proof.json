@@ -1,0 +1,16 @@
+{
+  "recordedAt": "2026-11-19T19:01:20.092284+00:00",
+  "status": "Review-only; not applied or independently reviewed",
+  "cards": 47,
+  "offeredMarks": 210,
+  "sourceParts": 39,
+  "payloadSha256": "235ac330a7d7899f1dfe9d8d09c705bdca09200c793849df11c0390cd4dba886",
+  "outstanding": [
+    "Original-PDF claim trace and layout review",
+    "Independent candidate review",
+    "Third-reader headings and generic split consistency",
+    "Full case-table layout, questionnaire checkbox glyphs and ordered-mark controls",
+    "Fresh R4 archive recheck",
+    "Video hosting, source/Atlas bindings and application verification"
+  ]
+}

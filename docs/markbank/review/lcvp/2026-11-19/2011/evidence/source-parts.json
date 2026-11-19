@@ -1,0 +1,816 @@
+{
+  "recordedAt": "2026-11-19T18:55:10.240698+00:00",
+  "status": "Source preparation only; no production writes.",
+  "sourceSha256": {
+    "paper": "29ae5c3837408a0de0881d46a6871d1e0f1dae7c4915049becba3a43537570e4",
+    "case": "87b9b66203f2fdfcb7ce97b274f2ffd0f264a3b6fe57b6447a9afcb19a5f0f51",
+    "scheme": "8eca146e38fa8bb2a92f49e324cd28f827f346fda7b7b384290c42e3c6e7692f"
+  },
+  "printedParts": 39,
+  "proposedAsks": 47,
+  "offeredMarks": 210,
+  "candidateMaximum": 160,
+  "pending": "Ten ask headings need third reading. C2(d)(ii) generic split consistency and fresh R4 archive recheck remain pending.",
+  "sectionCStems": {
+    "1": "A career investigation is helpful when making a career choice.",
+    "2": "A visit-out to a local business enterprise is very beneficial as a class activity.",
+    "3": "Consider the area where you live.",
+    "4": "Through your participation in LCVP you have gained knowledge of the working world.",
+    "5": "Your Link Modules class has decided to produce and sell friendship bracelets to the students of your school as an enterprise activity.",
+    "6": "Work Experience/Shadowing placement is a very valuable exercise for LCVP students as it prepares them for the future."
+  },
+  "records": [
+    {
+      "id": "lcvp-2011-cl-a1",
+      "ref": "A1",
+      "questionText": "What is volunteering?",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "sourceSchemeBlock": "What is volunteering?                                              1 mark\n\n     Volunteering is when people work to help others/for a particular cause.\n                                                                     1 mark\n",
+      "sourceSchemePrompt": "What is volunteering?",
+      "proposedCardMarks": [
+        1
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "sourceDecision": "Definition of volunteering; printed answer 1m."
+    },
+    {
+      "id": "lcvp-2011-cl-a2",
+      "ref": "A2",
+      "questionText": "Why is volunteering considered to be a selfless activity?",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "sourceSchemeBlock": "Why is volunteering considered a selfless activity?                       2 marks\n\n        It is intended to promote good/improve the quality of life for others.\n                                                                     2 @ 1m\n",
+      "sourceSchemePrompt": "Why is volunteering considered a selfless activity?",
+      "proposedCardMarks": [
+        2
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "sourceDecision": "One definition/explanation, 2 @ 1m on a single printed sentence; preserve both clauses."
+    },
+    {
+      "id": "lcvp-2011-cl-a3",
+      "ref": "A3",
+      "questionText": "Why did the organisation ‘HELP IRELAND’ appeal to Orla?",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "sourceSchemeBlock": "Why did the organisation ‘HELP IRELAND’ appeal to Orla?               3 marks\n\n      1.   Because in the current climate homelessness is on the rise.\n      2.   She was impressed by their vision 'everybody has a right to a place that they can call\n           home'.\n      3.   She also liked that they helped a wide range of people, young, old, male, female, also\n          from a variety of backgrounds.\n                                                                     3 @ 1m\n",
+      "sourceSchemePrompt": "Why did the organisation ‘HELP IRELAND’ appeal to Orla?",
+      "proposedCardMarks": [
+        3
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "sourceDecision": "Three reasons the named charity appealed; 3 @ 1m."
+    },
+    {
+      "id": "lcvp-2011-cl-a4",
+      "ref": "A4",
+      "questionText": "Like many voluntary organisations, ‘HELP IRELAND’ has seen many changes in recent years. Outline some of these changes.",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "sourceSchemeBlock": "Like many voluntary organisations ‘HELP IRELAND’ has seen many changes in recent\n        years. Outline some of these changes.                                4 marks\n\n        1.  There is an increase in homelessness due to financial difficulties.\n        2.  Due also to personal, family situations or medical reasons.\n                                                                     2 @ 2m\n",
+      "sourceSchemePrompt": "Like many voluntary organisations ‘HELP IRELAND’ has seen many changes in recent years. Outline some of these changes.",
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "sourceDecision": "Two changes at 2m each; no internal split is printed."
+    },
+    {
+      "id": "lcvp-2011-cl-a5",
+      "ref": "A5",
+      "questionText": "Explain the type of help offered to the clients of ‘HELP IRELAND’.",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "sourceSchemeBlock": "Explain the type of help offered to the clients of ‘HELP IRELAND’.         4 marks\n\n      1.   They have emergency hostels/short term accommodation.\n      2.   They try to get permanent accommodation for everyone.\n      3.    Provide inexpensive meals.\n      4.   Give impartial advice.\n      5.   Encourage clients to participate in training/education programmes.\n      6.   More experienced volunteers provide/offer support to anyone who asks for\n           help/place to go/someone to liase with.\n      7.   They assist clients in making the transition from being homeless.\n                                                                     4 @ 1m\n",
+      "sourceSchemePrompt": "Explain the type of help offered to the clients of ‘HELP IRELAND’.",
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "sourceDecision": "Four of seven printed services at 1m each."
+    },
+    {
+      "id": "lcvp-2011-cl-a6",
+      "ref": "A6",
+      "questionText": "Why does ‘HELP IRELAND’ encourage young people to act as volunteers in their organisation?",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "sourceSchemeBlock": "Why does ‘HELP IRELAND’ encourage young people to act as volunteers in their\n       organisations?                                                   4 marks\n\n\n    1. Young people are energetic/enthusiastic. Clients find them uplifting and optimistic.\n    2. They have many areas/practical aspects in which they can work e.g. helping in the\n        hostels/the coffee shop/soup runs/generally interacting with clients.\n                                                                     2 @ 2m\n                                                                                  (1 + 1)\n",
+      "sourceSchemePrompt": "Why does ‘HELP IRELAND’ encourage young people to act as volunteers in their organisations?",
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "sourceDecision": "Two reasons 2 @ 2m (1 + 1)."
+    },
+    {
+      "id": "lcvp-2011-cl-a7",
+      "ref": "A7",
+      "questionText": "Why did Orla decide not to show her interview with Stephen, a homeless man? What has Orla learned about homelessness and peoples’ attitude to the homeless from her interview with Stephen?",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        6
+      ],
+      "sourceSchemeBlock": "Why did Orla decide not to show her interview with Stephen, a homeless man? What has\n     Orla learned about homelessness and peoples’ attitude to the homeless from her interview\n     with Stephen?                                                    6 marks\n\n     Orla decided not to show the interview with Stephen as she wanted to respect his dignity as\n         it was a bit to personal.                                   1m\n\n     Orla has learned;\n\n      1.    Homelessness can be very tough.\n      2.   Most people he meets are decent.\n      3.   Some try to talk down to him/tell him to get a job.\n      4.   He misses having his own place and a normal way of life.\n      5.   He does not feel safe on the streets.\n                                                                     5 @ 1m\n",
+      "sourceSchemePrompt": "Why did Orla decide not to show her interview with Stephen, a homeless man? What has Orla learned about homelessness and peoples’ attitude to the homeless from her interview with Stephen?",
+      "proposedCardMarks": [
+        1,
+        5
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "sourceDecision": "Two separately printed questions: decision not to show interview 1m; learning about homelessness 5 @ 1m."
+    },
+    {
+      "id": "lcvp-2011-cl-a8",
+      "ref": "A8",
+      "questionText": "Personal growth and development can be achieved through involvement in voluntary work. Explain the meaning of this statement.",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        6
+      ],
+      "sourceSchemeBlock": "Personal growth and development can be achieved through involvement in voluntary\n       work. Explain the meaning of this statement.                          6 marks\n\n      1.    Personal characteristics are developed such as determination, patience and\n           understanding. You learn to take initiative, show committment and be energetic.\n      2.   Improve skills/CV/will enhance employment prospects/can help with future working\n               life.\n      3.   Make a difference to improve community/make a difference to the quality of\n           peoples’ lives/making your community a safer and more pleasant place to live.\n      4.   Learned empathy; organised own fundraising event.\n                                                                     2 @ 2m\n                                                               (1m+1m)\n                                                                     2 @ 1m\n",
+      "sourceSchemePrompt": "Personal growth and development can be achieved through involvement in voluntary work. Explain the meaning of this statement.",
+      "proposedCardMarks": [
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "sourceDecision": "One explanation; ordered 2 @ 2m (1 + 1), 2 @ 1m, retaining all four printed support notes."
+    },
+    {
+      "id": "lcvp-2011-cl-b1",
+      "ref": "B1",
+      "questionText": "State and explain three enterprising characteristics/skills shown by Sara.",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        7
+      ],
+      "sourceSchemeBlock": "State and explain three enterprising characteristics/skills shown by Sara.     6 marks\n\n      1.    Innovative/Creative:     She has come up with new ideas or found ways to improve\n                                       existing ideas.\n\n      2.    Motivated:            She is a self starter/enthuastic to get going. She wants to\n                                    give herself personal satisfaction.\n\n      3.    Realistic:              She knows what needs to be done without being too overly\n                                     ambitious.\n\n      4.    Risktaker:             She is willing to set up on her own and is willing to\n                              manage the risks both personal and financial.\n\n      5.    Decisive:              She is good at making decisions. She makes them quickly\n                                and definitely.\n\n      6.    Flexible:              She is willing to change her career path as the need arises.\n\n      7.   Hardworking:          She is willing to put in a huge effort/hours/work.\n                                                                        3 @ 2m\n                                                                                       (1 + 1)\n                                       1m for stating +1m for description\n                                                       No repetition\n",
+      "sourceSchemePrompt": "State and explain three enterprising characteristics/skills shown by Sara.",
+      "proposedCardMarks": [
+        3,
+        3
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "State and explain three characteristics: explicit 1m for stating + 1m for description, 3 @ 2m, no repetition. Proposed name/explanation split; seven complete models."
+    },
+    {
+      "id": "lcvp-2011-cl-b2i",
+      "ref": "B2(i)",
+      "questionText": "What are the benefits for Sara of enrolling in a web design course?",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "sourceSchemeBlock": "\n\n\n      1.   She can design her own website/use her new skill/upskilling herself/develop IT skills.\n      2.   Save money/doesn’t need a professional designer.\n      3.   Having a professional website gives her a competitive edge/good image.\n      4.  To show Banks/County Enterprise Board she is serious about setting up on her own.\n                                                                     4 @ 1m\n",
+      "sourceSchemePrompt": "What are the benefits for Sarah of enrolling in a web design course?",
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Four web-design/upskilling benefits at 1m each; preserve Sara source spelling despite Sarah in scheme."
+    },
+    {
+      "id": "lcvp-2011-cl-b2ii",
+      "ref": "B2(ii)",
+      "questionText": "Sara will be running this business on her own (sole trader). What impact will Information and Communication Technology (ICT) have on Sweet Dreams?",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "sourceSchemeBlock": "Impact of ICT\n\n1.    Internet/ Email/ Website/Social networking sites\n                            Website to advertise the products/take orders.\n                       To check out what competitors are doing.\n                             Online payment(paypal)\n                       To do market research\n\n2.    Software packages     Word Processing/Database/Publisher\n                       To be professional in the letters, invoices, flyers she sends\n                                  out.\n                           Easy to store information.\n\n3.    Financial              Keeping accounts/payroll/spreadsheet.\n                           Able to do online banking.\n                           Easy to draw up budgets/change figures.\n                             Online payments\n\n4.    Product Developement   Modern cake designs can be prepared.\n                           Customers can email in photos etc.\n                            Research designs online.\n\n5.   Mobile Phone/Laptop/Video Conferencing/Fax/Phone\n\n                        Makes business efficient as you can handle business\n                               matters anywhere.\n                            Cuts down on the need for other machines such as answer\n                           machines etc.\n\n6.   Cost Implications        Email/ design brochures/ valid cost implications/website\n                                 advertising.\n                                                                   4 @ 2m\n                                                                             (1+1)\n                                             No marks for headings\n                                             No repetition of points\n",
+      "sourceSchemePrompt": "Sara will be running this business on her own (sole trader). What impact will Information and Communications Technology (ICT) have on Sweet Dreams?",
+      "proposedCardMarks": [
+        8
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "ICT impact, 4 @ 2m (1 + 1), no marks for headings, no repetition. Six complete support pools."
+    },
+    {
+      "id": "lcvp-2011-cl-b3i",
+      "ref": "B3(i)",
+      "questionText": "State how the preparation of a Business Plan will help Sara’s enterprise.",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        9
+      ],
+      "sourceSchemeBlock": "1.   You know your aims/objectives/can assess actual performance compared to what is\n           expected.\n      2.   Banks and other fancial institutions/agencies will require it if you apply for a loan or\n           look for a grant.\n      3.   Helps decision making, helps you see how aims objectives can be met.\n      4.    Planning helps anticipate problems and aids problem solving/SWOT.\n      5.   Allows you to plan for the future – costings/finance/capital purchases.\n                                                                     4 @ 1m\n",
+      "sourceSchemePrompt": "State how the preparation of a Business Plan will help Sara’s enterprise.",
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Business-plan benefits, 4 @ 1m from five options."
+    },
+    {
+      "id": "lcvp-2011-cl-b3ii",
+      "ref": "B3(ii)",
+      "questionText": "Discuss, under relevant headings, the main issues that Sara must plan for in her new enterprise start-up.",
+      "paperPages": [
+        11,
+        12
+      ],
+      "schemePages": [
+        10
+      ],
+      "sourceSchemeBlock": "1.    Premises/Location      Where will she set up?\n                        How much rent she has to pay?\n                                   Will she have renovation/alteration costs?\n                                   Proximity to market/infrastructure.\n                                           Is the premises fitted out with equipment?\n\n      2.    Finances             What capital will she need for stock/start up?\n                            Day to day expenses needed/running costs.\n                                   Will suppliers give credit?\n                                  Sources of finance\n                                      Ability to repay loans/restraints imposed by lenders.\n\n        3.  Marketing          How will she advertise/website etc?\n                            What products will be successful?\n                        Who are the different types of customers/target market?\n                        How will she stand out from the competitors?\n                                Keeping up good community relations.\n\n      4.   Employees              Will she need any and what for/how many/what skills are\n                                 needed?\n                                 Cost of wages.\n                                    Training needed.\n\n      5.    Product/Service          Will this be a seasonal business or an all year round?\n                        How will she need to change the product depending on the\n                                   time of year?\n                                    Getting it right to meet customer demands/charging the\n                                         right price/maintaining quality control/service sourcing\n                                     ingredients/one off/batch.\n\n       6.   Competition         Who are the competition?\n                        How will her business be better/USP?\n                        How will competition influence price?\n\n      7.    Legalities               All laws regarding setting up a business adhered to.\n                                  Licences secured/or in order.\n                                   Health and safety issues addressed.\n                              Employment law/Consumer law.\n                                                                        3 @ 2m\n                                                                (1m + 1m)\n                                                 No marks for headings\n",
+      "sourceSchemePrompt": "Discuss, under relevant headings, the main issues that Sara must consider for in her new enterprise start-up.",
+      "proposedCardMarks": [
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "One requested discussion across business start-up issues, 3 @ 2m (1 + 1), no marks for headings. Seven complete pools."
+    },
+    {
+      "id": "lcvp-2011-cl-b3iii",
+      "ref": "B3(iii)",
+      "questionText": "Explain one reason the café might be successful during the winter months.",
+      "paperPages": [
+        11,
+        12
+      ],
+      "schemePages": [
+        10
+      ],
+      "sourceSchemeBlock": "Any relevant comment to the case study.\n                                                           2m\n",
+      "sourceSchemePrompt": "Explain one reason the cafe might be successful during the winter months.",
+      "proposedCardMarks": [
+        2
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Only Any relevant comment to the case study, 2m; no answer printed. R4 notice, whole case and original table required."
+    },
+    {
+      "id": "lcvp-2011-cl-c1a",
+      "ref": "C1(a)",
+      "questionText": "Name the career you investigated as part of your LCVP Link Modules.",
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        11
+      ],
+      "sourceSchemeBlock": "Name the career you investigated as part of your LCVP Link Modules.     1 mark\n\n    Any career mentioned                                  1m\n",
+      "sourceSchemePrompt": "Name the career you investigated as part of your LCVP Link Modules.",
+      "proposedCardMarks": [
+        1
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "sourceDecision": "Any career mentioned, 1m; no concrete answer. R4 notice."
+    },
+    {
+      "id": "lcvp-2011-cl-c1b",
+      "ref": "C1(b)",
+      "questionText": "State and explain three qualities/skills relevant to this career.",
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        11
+      ],
+      "sourceSchemeBlock": "State and explain three qualities/skills relevant to this career.             6 marks\n\n      1.   Teamwork skills\n      2.   Communication skills\n      3.   Confidence\n            Etc.                                                                   State 1m\n                                                                          Explain 1m\n                                                                  3 @ 2m\n                                                                               (1 +1)\n",
+      "sourceSchemePrompt": "State and explain three qualities/skills relevant to this career.",
+      "proposedCardMarks": [
+        3,
+        3
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "sourceDecision": "Explicit State 1m / Explain 1m, three times. Three characteristic names but no explanations printed. Proposed split and no-answer explanation notice."
+    },
+    {
+      "id": "lcvp-2011-cl-c1c",
+      "ref": "C1(c)",
+      "questionText": "As part of your investigation you were involved in an ‘out of school’ activity. What were the benefits of participating in this activity?",
+      "paperPages": [
+        15
+      ],
+      "schemePages": [
+        11
+      ],
+      "sourceSchemeBlock": "As part of your investigation you were involved in an ‘out of school’ activity.\n      What were the benefits of participating in this activity?                9 marks\n\n\n      1.   You learn new skills such as communication skills by having to get information or\n           pass on information successfully.\n\n      2.   Improve personal skills e.g. you improve planning/research/organisation skills.\n\n      3.   Easy to gain awareness/information about the career.\n\n      4.   You can have new experiences such as interviewing someone from the career/learn\n           about the type of work available/world of work.\n\n      5.   Complete a portfolio item for the Link Modules on a career investigation.\n\n      6.   Helped to focus you for the future/make decisions/make contacts/more motivated at\n            school.\n\n                                                                  3 @ 3m\n                                                                               (1 + 2)\n",
+      "sourceSchemePrompt": "As part of your investigation you were involved in an ‘out of school’ activity. What were the benefits of participating in this activity?",
+      "proposedCardMarks": [
+        9
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "sourceDecision": "Out-of-school career investigation benefits, 3 @ 3m (1 + 2). Six printed options."
+    },
+    {
+      "id": "lcvp-2011-cl-c1d",
+      "ref": "C1(d)",
+      "questionText": "What advice would you give to a recently qualified person who is finding it difficult to get a job in their chosen career area?",
+      "paperPages": [
+        16
+      ],
+      "schemePages": [
+        12
+      ],
+      "sourceSchemeBlock": "What advice would you give to a recently qualified person who is finding it difficult to get\n     a job in their chosen career area?                                   9 marks\n\n      1.   Seek unpaid work experience in a relevant business to show that you are really\n            interested in this area of work.\n\n      2.   Do voluntary work to show you are interested in adding to your CV/ not being\n            idle/personal satisfaction.\n\n      3.    Investigate what further courses you could take so that you can keep up your\n            skills/retrain/FAS/upskill.\n\n      4.   Be flexible in what work you would do as this will make you more attractive as an\n          employee.\n\n      5.   Develop personal skills, such as teamwork which will make you more efficient as a\n           worker.\n\n      6.   Make personal contact with potential employers/recruitment agencies.\n\n      7.    Set up your own business: grants/mentoring/fulfill personal ambition.\n\n      8.    Emigrate: move to a country where your skills /qualifications are needed. You are\n            upskilled/trained which enhances your CV.\n                                                                  3 @ 3m\n                                                                               (1 + 2)",
+      "sourceSchemePrompt": "What advice would you give to a recently qualified person who is finding it difficult to get a job in their chosen career area?",
+      "proposedCardMarks": [
+        9
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "sourceDecision": "Advice to recently qualified jobseeker, 3 @ 3m (1 + 2), eight printed options."
+    },
+    {
+      "id": "lcvp-2011-cl-c2a",
+      "ref": "C2(a)",
+      "questionText": "Name the business enterprise your class visited.",
+      "paperPages": [
+        17
+      ],
+      "schemePages": [
+        13
+      ],
+      "sourceSchemeBlock": "Name the business enterprise your class visited.                       2 marks\n\n    Any business named                                   2m\n",
+      "sourceSchemePrompt": "Name the business enterprise your class visited.",
+      "proposedCardMarks": [
+        2
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Any business named, 2m; no concrete answer. R4 notice."
+    },
+    {
+      "id": "lcvp-2011-cl-c2b",
+      "ref": "C2(b)",
+      "questionText": "State two goals you had for the visit-out to this business.",
+      "paperPages": [
+        17
+      ],
+      "schemePages": [
+        13
+      ],
+      "sourceSchemeBlock": "State two goals you had for the visit-out to this business.                4 marks\n\n      1.   To learn about the business.\n      2.   To sucessfully plan/organise a visit out.\n      3.   To improve personal skills.\n      4.   To prepare an item for my portfolio.\n      5.   Learn to work as part of a team.\n                                                                  2 @ 2m\n                                                                                           (0, 2)\n",
+      "sourceSchemePrompt": "State two goals you had for the visit-out to this business.",
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Visit-out goals, 2 @ 2m (0, 2); retain five options."
+    },
+    {
+      "id": "lcvp-2011-cl-c2c",
+      "ref": "C2(c)",
+      "questionText": "Outline the main factors which contributed to the success or failure of the activity.",
+      "paperPages": [
+        18
+      ],
+      "schemePages": [
+        13
+      ],
+      "sourceSchemeBlock": "Outline the main factors which contributed to the success or failure of the visit-out.\n                                                                  9 marks\n\n      1.   How well the visit was planned?\n      2.    Did arrangements work according to plan?\n      3.     Participation of all the class members.\n      4.   How welcoming/prepared the organisation we visited was for us?\n      5.    The quality of the research on the organisation.\n      6.    Quality of the questions asked/information received.\n                                                                  3 @ 3m\n                                                                               (1 + 2)\n",
+      "sourceSchemePrompt": "Outline the main factors which contributed to the success or failure of the visit-out.",
+      "proposedCardMarks": [
+        9
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Success/failure factors for visit, 3 @ 3m (1 + 2). Actual paper page says activity; index/scheme say visit-out. Preserve actual prompt."
+    },
+    {
+      "id": "lcvp-2011-cl-c2di",
+      "ref": "C2(d)(i)",
+      "questionText": "Explain what is meant by evaluation.",
+      "paperPages": [
+        19
+      ],
+      "schemePages": [
+        14
+      ],
+      "sourceSchemeBlock": "Evaluation is the reviewing of an activity with a view to assessing if it was\n      successful/analysing the information to see if it was a success or failure/to alter how we\n     would do the activity in the future.                          2m + 2m\n",
+      "sourceSchemePrompt": "Explain what is meant by evaluation.",
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "One evaluation definition, 2m + 2m. Definition components do not create extra asks."
+    },
+    {
+      "id": "lcvp-2011-cl-c2dii",
+      "ref": "C2(d)(ii)",
+      "questionText": "How would your class evaluate the visit-out? Give reasons why they would do so.",
+      "paperPages": [
+        19
+      ],
+      "schemePages": [
+        14
+      ],
+      "sourceSchemeBlock": "1.    Questionnaire:  Can be given to the organisation visited as well as to the class.\n\n          Reason:        Easy to administer/collate results.\n                      Can be completed anonymously.\n                           Generally inexpensive.\n                      Good response rate.\n                       They are objective.\n\n      2.   Ask Teachers/Member of organisation visited for their opinion.\n\n          Reason:        Allows the class to practice their interview/communication skills.\n                           Questions can be explained if necessary.\n                         Easy to do.\n                    No cost involved.\n                     You will get honest feedback/review of teamwork.\n\n      3.    Quality of report - has enough information/correct type of information been learned?\n\n          Reason:         Easy method to use as all class members must produce a report.\n                           Reports can be compared easily.\n\n      4.   Review of Teamwork – to see if the class put into practice what they have learned.\n\n          Reason          Objective was to work well as a team.\n                            All class members are aware of what is involved.\n\n      5.    Class Discussion: Varying opinions and discussions can be taken on board.\n\n          Reason         Easy to organise\n                          Everyone can participate.\n                         Allows one to see how much was learned.\n                      Good to show improvement or practice in communication skills.\n\n                                                                  3 @ 2m\n                                                                               (1 + 1)",
+      "sourceSchemePrompt": "How would your class evaluate the visit-out? Give reasons why they would do so.",
+      "proposedCardMarks": [
+        3,
+        3
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Two separately printed sentences request methods then reasons. Original scheme14 presents five methods, each followed by a separately labelled Reason block, and3@2m(1+1). First reader interprets one mark per method and one per reason, yielding3+3; allocation text has no explicit method/reason labels, so independent comparison must address this boundary."
+    },
+    {
+      "id": "lcvp-2011-cl-c3a",
+      "ref": "C3(a)",
+      "questionText": "Give one reason why you think your school is located where it is.",
+      "paperPages": [
+        20
+      ],
+      "schemePages": [
+        15
+      ],
+      "sourceSchemeBlock": "Give one reason why you think your school is located where it is.         1 mark\n\n\n      1.    In a town/near a large population.\n      2.   No other school nearby.\n      3.    Tradition in the area.\n      4.   Out of the way of major traffic/roads.\n        Any valid reason\n                                                    1m\n",
+      "sourceSchemePrompt": "Give one reason why you think your school is located where it is.",
+      "proposedCardMarks": [
+        1
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "sourceDecision": "School location in the local area; one valid reason from four printed examples."
+    },
+    {
+      "id": "lcvp-2011-cl-c3b",
+      "ref": "C3(b)",
+      "questionText": "Name two types of enterprises/organisations in the area. Explain one advantage of each to the area.",
+      "paperPages": [
+        20
+      ],
+      "schemePages": [
+        15
+      ],
+      "sourceSchemeBlock": "Name two types of enterprises/organisations in the area. Explain one advantage of each to\n      the area.                                                       6 marks\n\n     Types of enterprises\n\n\n        Commercial Organisations          Voluntary Organisations\n\n          Retail                          Community organisation\n         Manufacturing                         Charitable organisation\n          Financial                             Sporting organisations\n         Transport\n          Service industry\n         Job creation\n          State run organisations\n         Tourism/Heritage\n\n                                                                  2 @ 1m\n\n        Advantages      1.  Service offered is needed/has a function.\n                            2.  Convenience for the customers.\n                            3.  They provide employment/job creation.\n                            4.   Prestige for the area/brings visitors\n                            5.  They help other business/organisations/brings better facilities.\n                            6.  Sponsor school/community organisation.\n                            7.  Creates a community spirit/brings people together.\n                                                                  2 @ 2m\n                                                                                           (0, 2)\n",
+      "sourceSchemePrompt": "Name two types of enterprises/organisations in the area. Explain one advantage of each to the area.",
+      "proposedCardMarks": [
+        2,
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "sourceDecision": "Explicit types 2 @ 1m and advantages 2 @ 2m (0, 2). Commercial and voluntary types in printed two-column table; preserve chosen-type context."
+    },
+    {
+      "id": "lcvp-2011-cl-c3c",
+      "ref": "C3(c)",
+      "questionText": "Identify two challenges faced by enterprises/organisations in the area. Explain two ways each challenge can be overcome.",
+      "paperPages": [
+        21
+      ],
+      "schemePages": [
+        16
+      ],
+      "sourceSchemeBlock": "Identify two challenges faced by enterprises/organisations in the area. Explain two ways\n     each challenge can be overcome.                                    8 marks\n\n      1.    People have less money to spend/Recession/Lack of donations\n                   Change their product/service/diversify.\n                  Lower prices.\n                   Give value for money.\n\n      2.   High cost\n                      Negotiate new prices with suppliers.\n                     Find new suppliers.\n                Move premises/re-negotiate rent.\n                   Reduce wage bill.\n\n      3.    Competition from others\n                  Have a unique good/service.\n                 Make sure quality is better thus keeping customers.\n                  Lower prices.\n\n      4.   Some organisations may be faced with higher demand for service but with less\n           staff/money e.g. hospitals\n                     Reorganise how they do their work.\n                     Provide information so that customers understand why you are operating\n                how you are.\n                     Voluntary workers.\n\n      5.    Location/rural/urban\n                  Remote area lack of services/online business.\n                   Urban – No Parking.\n\n      6.    Depopulation/Emigration\n                         Festivals.\n                    Source grant incentives to set up a new business.\n                     Provide education and training courses\n\n      7.    Environmental issue/Vandalism\n                      Set up task a force within the enterprise/organisation to address/monitor\n                       issues/look at data.\n                     Recycling\n              CCTV\n\n                                                                     [2 x 2m challenges (0, 2)]\n                                                           [2 x 2m - ways to overcome (1 + 1)]\n",
+      "sourceSchemePrompt": "Identify two challenges faced by enterprises/organisations in the area. Explain two ways each challenge can be overcome.",
+      "proposedCardMarks": [
+        4,
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "sourceDecision": "Explicit [2 x 2m challenges (0, 2)] and [2 x 2m ways to overcome (1 + 1)]. Two names then two remedies per chosen challenge, no invented extra marks."
+    },
+    {
+      "id": "lcvp-2011-cl-c3d",
+      "ref": "C3(d)",
+      "questionText": "What advice would you give to an entrepreneur who is researching the possibility of setting up a business in the area? (Four points required)",
+      "paperPages": [
+        22
+      ],
+      "schemePages": [
+        17
+      ],
+      "sourceSchemeBlock": "What advice would you give to an entrepreneur who is researching the possibility of\n      setting up a business in the area? Four points needed.                  10 marks\n\n      1.   Do Market Research to determine if a market exists/look at competition.\n      2.    Contact the local enterprise board for advice/mentoring.\n      3.   Do a business plan/to get a bank loan/investors.\n      4.   Conduct a feasibility study.\n      5.   Apply for grants that are available.\n      6.   Rent one of the vacant units rather than building a new unit/lease equipment or\n           premises.\n      7.    Research the availability of suitable employees, so that you select hardworking,\n            flexible staff.\n      8.    Transport systems, near airport/port/good infrastructure.\n      9.   Check with the local council re planning requirements/permits/licences\n           secured/planning permission.\n                                                                  2 @ 3m\n                                                                               (1 + 2)\n                                                                  2 @ 2m\n                                                                               (1 + 1)",
+      "sourceSchemePrompt": "What advice would you give to an entrepreneur who is researching the possibility of setting up a business in the area? Four points needed.",
+      "proposedCardMarks": [
+        10
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Four advice points, ordered 2 @ 3m (1 + 2) plus 2 @ 2m (1 + 1), nine options."
+    },
+    {
+      "id": "lcvp-2011-cl-c4a",
+      "ref": "C4(a)",
+      "questionText": "Name two types of work other than employment.",
+      "paperPages": [
+        23
+      ],
+      "schemePages": [
+        18
+      ],
+      "sourceSchemeBlock": "Name two types of work other than employment.                      2 marks\n\n      1.    Self employment\n      2.    Voluntary work\n      3.   Housework\n      4.   Schoolwork/Homework\n      5.   Work experience                                           2 @ 1m\n",
+      "sourceSchemePrompt": "Name two types of work other than employment.",
+      "proposedCardMarks": [
+        2
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "sourceDecision": "Two non-employment work types at 1m, five options."
+    },
+    {
+      "id": "lcvp-2011-cl-c4b",
+      "ref": "C4(b)",
+      "questionText": "Describe three non-financial benefits of employment.",
+      "paperPages": [
+        23
+      ],
+      "schemePages": [
+        18
+      ],
+      "sourceSchemeBlock": "Describe three non-financial benefits of employment.               6 marks\n\n      1.    Experience/learn new skills/team work skills.\n      2.   Improve your own self esteem/more confident/self fulfilment.\n      3.    Sociable activity/friendships/quality of life/interpersonal aspect.\n      4.   You may get benefits-in-kind/company car/travel/shares.\n      5.   Job security so you can plan for the future.\n      6.  CV improved by having work/reference/referee/contact for the future.\n\n                                                                    Explanation is needed\n                                                                  3 @ 2m\n                                                                                           (0, 2)\n",
+      "sourceSchemePrompt": "Describe three non-financial benefits of employment.",
+      "proposedCardMarks": [
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "sourceDecision": "Three non-financial benefits at 2m (0, 2); explanation required."
+    },
+    {
+      "id": "lcvp-2011-cl-c4c",
+      "ref": "C4(c)",
+      "questionText": "What is a Trade Union? Explain three reasons why employees join Trade Unions.",
+      "paperPages": [
+        24
+      ],
+      "schemePages": [
+        18
+      ],
+      "sourceSchemeBlock": "What is a Trade Union? Explain three reasons why employees join Trade Unions.\n                                                                  8 marks\n\n\n   A Trade Union represents an organisation of workers. They represent the workers as a\n     group to improve their conditions of work.\n                                                    2m\n                                                                               (1 + 1)\n     Reasons why workers join unions.\n.\n      1.    All the workers back each other, solidarity.\n      2.   The union will negotiate better wages/working conditions.\n      3.   Union will represent the worker if there is a dispute/issue/bullying.\n      4.   Thousands of members are more powerful than a small number so better for\n            negotiating.\n      5.    Benefit from group schemes (VHI/Credit Union).\n      6.   Can be compulsory.\n                                                                  3 @ 2m\n                                                                               (1 + 1)\n",
+      "sourceSchemePrompt": "What is a Trade Union? Explain three reasons why employees join Trade Unions.",
+      "proposedCardMarks": [
+        2,
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "sourceDecision": "Definition of trade union 2m (1 + 1), then three reasons for joining 3 @ 2m (1 + 1); distinct asks."
+    },
+    {
+      "id": "lcvp-2011-cl-c4d",
+      "ref": "C4(d)",
+      "questionText": "Discuss three benefits for workers who engage in further education and training throughout their working life.",
+      "paperPages": [
+        25
+      ],
+      "schemePages": [
+        19
+      ],
+      "sourceSchemeBlock": "Discuss three benefits for workers who engage in further education and training\n     throughout their working life.                                      9 marks\n\n      1.   Improve skills: Better chance of promotion in their job/retention of work.\n      2.   Helps to find work in the future/Enhances your CV/Gives the employee choice for\n             their future.\n      3.   New challenges: Keeps the employee motivated and interested.\n      4.    Certain careers (such as IT) need constant updating because of new developments..\n      5.   Employees now change careers more often so new qualifications are needed.\n      6.    Renumeration/greater responsibility.\n                                                                  3 @ 3m\n                                                                               (1 + 2)",
+      "sourceSchemePrompt": "Discuss three benefits for workers who engage in further education and training throughout their working life.",
+      "proposedCardMarks": [
+        9
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "sourceDecision": "Lifelong education/training benefits, 3 @ 3m (1 + 2), six options."
+    },
+    {
+      "id": "lcvp-2011-cl-c5a",
+      "ref": "C5(a)",
+      "questionText": "Outline two methods of generating ideas for enterprise activities.",
+      "paperPages": [
+        26
+      ],
+      "schemePages": [
+        20
+      ],
+      "sourceSchemeBlock": "Outline two methods of generating ideas for enterprise activities.         4 marks\n\n      1.    Brainstorming in the class/suggestion box/mind map\n      2.   Copy previous successful enterprises.\n      3.   Do Market Research to find out what would sell/survey/internet.\n      4.   Look at what is available in the shops.\n      5.    Hobbies/interests.\n      6.    Consultants/mentor from Junior Achievement/CEB.\n                                                                  2 @ 2m\n                                                                                           (0, 2)\n",
+      "sourceSchemePrompt": "Outline two methods of generating ideas for enterprise activities.",
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Idea-generation methods, 2 @ 2m (0, 2)."
+    },
+    {
+      "id": "lcvp-2011-cl-c5b",
+      "ref": "C5(b)",
+      "questionText": "Explain why it is important to carry out market research before undertaking this activity.",
+      "paperPages": [
+        26
+      ],
+      "schemePages": [
+        20
+      ],
+      "sourceSchemeBlock": "Explain why it is important to carry out market research before undertaking this activity.\n                                                                  4 marks\n\n\n      1.   You find out if the students would be interested in the product/what year groups are\n            interested so you can plan your product around them.\n      2.   You can get an idea of how much students would be willing to pay.\n      3.    Potential problems should be identified e.g. quality, need for raw materials/start up\n             capital/location.\n      4.   Make sure money is not wasted, produce the correct quantity.\n      5.    Information on competitors/what’s in the shops.\n                                                                  2 @ 2m\n                                                                                           (0, 2)\n",
+      "sourceSchemePrompt": "Explain why it is important to carry out market research before undertaking this activity.",
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Market-research purpose, 2 @ 2m (0, 2)."
+    },
+    {
+      "id": "lcvp-2011-cl-c5c",
+      "ref": "C5(c)",
+      "questionText": "Draft a questionnaire to carry out market research for this activity. It should contain at least five questions.",
+      "paperPages": [
+        27
+      ],
+      "schemePages": [
+        21
+      ],
+      "sourceSchemeBlock": "Draft a questionnaire to carry out market research for this activity.  It should contain at\n      least five questions.                                              10 marks\n\n                                   Questionnaire\n\n  Q.1   Male □           Female    □\n\n  Q.2   What year are you in?        1st □        2nd □        3rd □\n                                      5th □         6th □\n\n  Q.3   Would you buy a Friendship Bracelet?     Yes □      No □\n\n  Q.4     If yes, would you buy bracelets in more than one colour?  Yes □      No □\n\n  Q.5   Would you buy them for yourself or as a gift?     ______________________\n\n  Q.6*  How much would you be willing to pay for 1 bracelet?    ________________\n\n\n\n     Layout\n     Heading\n     Neatness\n      Instructions\n      Variety of question styles                                         5 marks\n                                                                  5 @ 1m\n\n     5 Questions                                                    5 marks\n                                                                  5 @ 1m\n     *Compulsory Question\n",
+      "sourceSchemePrompt": "Draft a questionnaire to carry out market research for this activity. It should contain at least five questions.",
+      "proposedCardMarks": [
+        10
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "One complete questionnaire. Five presentation criteria at 1m plus five questions at 1m; compulsory question asks willingness to pay. Preserve full six-question printed model, choices and layout."
+    },
+    {
+      "id": "lcvp-2011-cl-c5d",
+      "ref": "C5(d)",
+      "questionText": "Set out the marketing section of the Business Plan which would have been drawn up. Include all elements of the marketing mix which would have been considered.",
+      "paperPages": [
+        28
+      ],
+      "schemePages": [
+        22
+      ],
+      "sourceSchemeBlock": "Set out the marketing section of the Business Plan which would have been drawn up.\n      Include all elements of the marketing mix which would have been considered.\n                                                                   7 marks\n\n     Marketing section:\n\n     Market Research: Draw up a questionnaire and do research in year group. Ask other\n      students who have set up mini companies in the past for advice. Use the internet to get\n      ideas for different products.                                       1 mark\n\n\n\n\n     Product   Make sure that the quality is good by using good quality raw materials and that\n                 the production is of a high standard/ USP/ packaging/design.\n\n\n      Price      Consider how much students will pay so that this is not priced to high yet high\n              enough to cover costs and yield a profit/in line with competition/different\n                  pricing stratagies.\n\n\n     Place      Plan carefully where the bracelets will be sold, e.g. setting up a stand in the\n                school in a good location in the assembly area. Sell the bracelets when there is\n                a school activity such as at sports event or school concert/set up stand in local\n               shopping centre/craft fairs/local primary school.\n\n\n     Promotion How will the bracelets be advertised; make samples and go round taking orders\n                  in advance, allow students to order the colours they want. Put up posters\n               around the school and use the school intercom. Sales promotion/web site.\n\n                                                                  2 @ 2m\n                                                                               (1 + 1)\n                                                                  2 @ 1m",
+      "sourceSchemePrompt": "Set out the marketing section of the Business Plan which would have been drawn up. Include all elements of the marketing mix which would have been considered.",
+      "proposedCardMarks": [
+        7
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "sourceDecision": "One marketing-plan output: market research 1m, four marketing-mix elements weighted 2 @ 2m + 2 @ 1m. Preserve complete model and score grouping; do not split headings into asks."
+    },
+    {
+      "id": "lcvp-2011-cl-c6a",
+      "ref": "C6(a)",
+      "questionText": "Write an email you might send when seeking a suitable work placement.",
+      "paperPages": [
+        29
+      ],
+      "schemePages": [
+        23
+      ],
+      "sourceSchemeBlock": "Write an email you might send when seeking a suitable work placement.   4 marks\n\n\n               Salutation (opening)\n              Subject line\n               Introduction\n            Reason why the email is being sent\n           Number of days/dates\n             Closing statement/closure\n              Attach CV\n             Email address\n                                                                 (Any 4)\n                                                                  4 @ 1m each\n",
+      "sourceSchemePrompt": "Write an email you might send when seeking a suitable work placement.",
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-work-placement"
+      ],
+      "sourceDecision": "One email seeking placement, any four of eight printed criteria at 1m. No full email model; preserve criteria and R4 fixed notice."
+    },
+    {
+      "id": "lcvp-2011-cl-c6b",
+      "ref": "C6(b)",
+      "questionText": "Outline three responsibilities you have as an employee to your work placement employer.",
+      "paperPages": [
+        29
+      ],
+      "schemePages": [
+        23
+      ],
+      "sourceSchemeBlock": "Outline three responsibilities you have as an employee to your work placement employer.\n                                                                  6 marks\n\n      1.   To work hard/act responsibly/ensure standards/honesty/attend training.\n      2.   To turn up on time.\n      3.   To follow Health & Safety instructions/take responsibility for their safety.\n      4.   To dress appropriately/take pride in uniform etc.\n      5.   Be pleasant to work colleagues/customers.\n      6.    Confidentiality/loyalty to organisation.\n                                                                  3 @ 2m\n                                                                                           (0, 2)\n",
+      "sourceSchemePrompt": "Outline three responsibilities you have as an employee to your work placement employer.",
+      "proposedCardMarks": [
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-work-placement"
+      ],
+      "sourceDecision": "Work-placement responsibilities, 3 @ 2m (0, 2)."
+    },
+    {
+      "id": "lcvp-2011-cl-c6c",
+      "ref": "C6(c)",
+      "questionText": "Describe three ways your LCVP work placement has influenced your career choice.",
+      "paperPages": [
+        30
+      ],
+      "schemePages": [
+        23
+      ],
+      "sourceSchemeBlock": "Describe three ways your LCVP work placement has influenced your career choice.\n                                                                  6 marks\n\n      1.   Type of work     I enjoyed/did not enjoy it/see what was involved in the particular\n                               job.\n      2.    Skills needed    Suitable for you, I have the skills/do not have the skills.\n      3.    Training            I am interested in this and would enjoy the training/college\n                            course/found it too difficult or too long.\n      4.   Job prospects    Good/poor.\n      5.    Career choice   Helped to make a decision regarding the career.\n\n                                                                  3 @ 2m\n                                                                               (1 + 1)\n",
+      "sourceSchemePrompt": "Describe three ways your LCVP work placement has influenced your career choice.",
+      "proposedCardMarks": [
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "sourceDecision": "Career choice informed by placement, 3 @ 2m (1 + 1), five options."
+    },
+    {
+      "id": "lcvp-2011-cl-c6d",
+      "ref": "C6(d)",
+      "questionText": "Employers value certain characteristics in their employees. Name three of these characteristics. Explain why each is important to an employer.",
+      "paperPages": [
+        31
+      ],
+      "schemePages": [
+        24
+      ],
+      "sourceSchemeBlock": "Employers value certain characteristics in their employees. Name three of these\n      characteristics and explain why each is important to an employer.         9 marks\n\n    Naming characteristics:\n\n       1.   Trustworthy         An employer must know that no stock or money will be\n                                         stolen.\n\n       2.   Showing initiative     An employer will want an employee who does not have to\n                                be told everything to do/who will find efficient ways to\n                                     carry out the work/can deal with the unexpected quickly\n                                and efficiently.\n\n       3.   Reliable            An employer wants employees to turn up on time and be\n                                     able to depend upon them to get the work done properly.\n\n       4.   Loyalty            An employer would expect employees to have the best\n                                          interests of the employer at heart and want to do a good\n                                        job.\n\n       5.   Hard working        An employer will expect employees to do their best, to do\n                                   a fair share of the work and to a high standard.\n\n       6.  Team player         An employer will want employees who want to work\n                                     together to do a task well, the employee must be willing\n                                       to co-operate with each other.\n\n       7.   Being well presented     Neat, tidy, appropriate attire to create a good impression\n                                        for the business.\n\n       8.  Good communicator    An employer will want employees who can deal clearly\n                                   with customers/others.\n\n                                                                  3 @ 3m\n                                                   1m for naming\n                                                         2 @1m for why important\n                                                      no repetition of points allowed",
+      "sourceSchemePrompt": "Employers value certain characteristics in their employees. Name three of these characteristics and explain why each is important to an employer.",
+      "proposedCardMarks": [
+        3,
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Explicit 1m naming and 2 @ 1m why important, three characteristics; no repetition. Proposed split, eight complete paired models."
+    }
+  ]
+}

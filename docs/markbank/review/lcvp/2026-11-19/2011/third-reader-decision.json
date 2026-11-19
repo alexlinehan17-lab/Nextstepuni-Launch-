@@ -1,0 +1,69 @@
+{
+  "recordedAt": "2026-11-19T20:10:00Z",
+  "reader": "Claude third reader (assigned by the Claude coordinator)",
+  "readerA": "root reader (rootHeadingIds)",
+  "readerB": "second reader (secondHeadingIds)",
+  "method": "Original paper and scheme renders in original-pages/ read for every item. Rules: PLAN R9, CARD-STANDARD section 9. Audio Visual is kept for asks answered only from the recording; module content goes under its content heading. Where the live 2015-2026 filings hold a near-identical ask, the same heading is used so the subject reads one way across years.",
+  "items": [
+    {
+      "id": "A7-first",
+      "decision": {"headingIds": ["link-modules-common-audio-visual"]},
+      "reason": "Paper p6 Q7 asks why Orla did not show her interview with Stephen and scheme p4 (physical p6) pays 1m for the recording's own answer (to respect his dignity, too personal), so it is recall of the audio-visual, not voluntary-organisation content.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "A7-second",
+      "decision": {"headingIds": ["link-modules-common-audio-visual"]},
+      "reason": "Paper p6 Q7 asks what Orla learned from her interview with Stephen and scheme p4 pays 5 @ 1m for what Stephen said in the recording (homelessness is tough, most people decent, some talk down to him, misses his own place, unsafe), all recall of the interview.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "B3ii",
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Paper p11 Q3(ii) asks the main issues Sara must plan for in her new start-up and scheme p8 (physical p10) pays 3 @ 2m for business set-up issues (premises, finance, marketing, employees, product, competition, legalities), which is how a local business is established, not a personal enterprise skill.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "C2c",
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Paper p18 asks the factors in the success or failure of the class visit-out to a local business and scheme p11 (physical p13) pays planning, arrangements, participation, the host's welcome and research quality for that visit; the live 2021 Q1(c) visit success/failure ask is filed under Local Business Enterprises.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C2dii-methods",
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Paper p19 asks how the class would evaluate the visit-out and scheme p12 (physical p14) pays methods aimed at that visit (questionnaire to the organisation visited, asking its members, report quality); evaluating a visit is filed with the visit, as live 2024 Q2(d) and 2023 Q6(d) are.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C2dii-reasons",
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Same printed part (paper p19, scheme p12): the reasons are paid 1m each beside each visit-evaluation method, so they belong under the same heading as the methods.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C3a",
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Paper p20 asks, under 'Consider the area where you live', why the school is located where it is and scheme p13 (physical p15) pays location factors (population, no other school, tradition, traffic); location of an organisation in the local area is filed under Local Business Enterprises as live 2023 Q4(b) and 2025 Q1(a) are.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C6a",
+      "decision": {"headingIds": ["link-modules-common-1-work-placement"]},
+      "reason": "Paper p29 asks for the email sent when seeking a work placement and scheme p21 (physical p23) pays its parts including the number of days/dates, i.e. securing the placement; live 2021 Q2(b) and 2026 Q4(c), the same task, are filed under Work Placement.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "C6d-names",
+      "decision": {"headingIds": ["link-modules-common-1-introduction-to-working-life"]},
+      "reason": "Paper p31 asks which characteristics employers value in their employees and scheme p22 (physical p24) pays trustworthy, initiative, reliable, loyal, hard-working, team player, well presented, communicator, which is what working life expects of an employee rather than enterprise skills.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C6d-reasons",
+      "decision": {"headingIds": ["link-modules-common-1-introduction-to-working-life"]},
+      "reason": "Same printed part (paper p31, scheme p22): the 2 @ 1m explanations say why each characteristic matters to an employer, so they are filed with the names.",
+      "agreesWith": "B"
+    }
+  ]
+}

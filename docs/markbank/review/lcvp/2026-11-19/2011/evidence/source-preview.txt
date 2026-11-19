@@ -1,0 +1,40 @@
+{"recordedAt": "2026-11-19T18:55:10.240698+00:00", "status": "Source preparation only; no production writes.", "sourceSha256": {"paper": "29ae5c3837408a0de0881d46a6871d1e0f1dae7c4915049becba3a43537570e4", "case": "87b9b66203f2fdfcb7ce97b274f2ffd0f264a3b6fe57b6447a9afcb19a5f0f51", "scheme": "8eca146e38fa8bb2a92f49e324cd28f827f346fda7b7b384290c42e3c6e7692f"}, "printedParts": 39, "proposedAsks": 47, "offeredMarks": 210, "candidateMaximum": 160, "pending": "Ten ask headings need third reading. C2(d)(ii) generic split consistency and fresh R4 archive recheck remain pending.", "sectionCStems": {"1": "A career investigation is helpful when making a career choice.", "2": "A visit-out to a local business enterprise is very beneficial as a class activity.", "3": "Consider the area where you live.", "4": "Through your participation in LCVP you have gained knowledge of the working world.", "5": "Your Link Modules class has decided to produce and sell friendship bracelets to the students of your school as an enterprise activity.", "6": "Work Experience/Shadowing placement is a very valuable exercise for LCVP students as it prepares them for the future."}}
+A1 [1] What is volunteering?
+A2 [2] Why is volunteering considered to be a selfless activity?
+A3 [3] Why did the organisation ‘HELP IRELAND’ appeal to Orla?
+A4 [4] Like many voluntary organisations, ‘HELP IRELAND’ has seen many changes in recent years. Outline some of these changes.
+A5 [4] Explain the type of help offered to the clients of ‘HELP IRELAND’.
+A6 [4] Why does ‘HELP IRELAND’ encourage young people to act as volunteers in their organisation?
+A7 [1, 5] Why did Orla decide not to show her interview with Stephen, a homeless man? What has Orla learned about homelessness and peoples’ attitude to the homeless from her interview with Stephen?
+A8 [6] Personal growth and development can be achieved through involvement in voluntary work. Explain the meaning of this statement.
+B1 [3, 3] State and explain three enterprising characteristics/skills shown by Sara.
+B2(i) [4] What are the benefits for Sara of enrolling in a web design course?
+B2(ii) [8] Sara will be running this business on her own (sole trader). What impact will Information and Communication Technology (ICT) have on Sweet Dreams?
+B3(i) [4] State how the preparation of a Business Plan will help Sara’s enterprise.
+B3(ii) [6] Discuss, under relevant headings, the main issues that Sara must plan for in her new enterprise start-up.
+B3(iii) [2] Explain one reason the café might be successful during the winter months.
+C1(a) [1] Name the career you investigated as part of your LCVP Link Modules.
+C1(b) [3, 3] State and explain three qualities/skills relevant to this career.
+C1(c) [9] As part of your investigation you were involved in an ‘out of school’ activity. What were the benefits of participating in this activity?
+C1(d) [9] What advice would you give to a recently qualified person who is finding it difficult to get a job in their chosen career area?
+C2(a) [2] Name the business enterprise your class visited.
+C2(b) [4] State two goals you had for the visit-out to this business.
+C2(c) [9] Outline the main factors which contributed to the success or failure of the activity.
+C2(d)(i) [4] Explain what is meant by evaluation.
+C2(d)(ii) [3, 3] How would your class evaluate the visit-out? Give reasons why they would do so.
+C3(a) [1] Give one reason why you think your school is located where it is.
+C3(b) [2, 4] Name two types of enterprises/organisations in the area. Explain one advantage of each to the area.
+C3(c) [4, 4] Identify two challenges faced by enterprises/organisations in the area. Explain two ways each challenge can be overcome.
+C3(d) [10] What advice would you give to an entrepreneur who is researching the possibility of setting up a business in the area? (Four points required)
+C4(a) [2] Name two types of work other than employment.
+C4(b) [6] Describe three non-financial benefits of employment.
+C4(c) [2, 6] What is a Trade Union? Explain three reasons why employees join Trade Unions.
+C4(d) [9] Discuss three benefits for workers who engage in further education and training throughout their working life.
+C5(a) [4] Outline two methods of generating ideas for enterprise activities.
+C5(b) [4] Explain why it is important to carry out market research before undertaking this activity.
+C5(c) [10] Draft a questionnaire to carry out market research for this activity. It should contain at least five questions.
+C5(d) [7] Set out the marketing section of the Business Plan which would have been drawn up. Include all elements of the marketing mix which would have been considered.
+C6(a) [4] Write an email you might send when seeking a suitable work placement.
+C6(b) [6] Outline three responsibilities you have as an employee to your work placement employer.
+C6(c) [6] Describe three ways your LCVP work placement has influenced your career choice.
+C6(d) [3, 6] Employers value certain characteristics in their employees. Name three of these characteristics. Explain why each is important to an employer.

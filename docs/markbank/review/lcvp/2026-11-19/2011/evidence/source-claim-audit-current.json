@@ -1,0 +1,10 @@
+{
+  "recordedAt": "2026-11-19T19:01:20.299112+00:00",
+  "candidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-authoring/proposed-47-authored-cards.json",
+  "payloadSha256": "235ac330a7d7899f1dfe9d8d09c705bdca09200c793849df11c0390cd4dba886",
+  "scheme": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2011/LC462CLP000EV.pdf",
+  "schemeSha256": "8eca146e38fa8bb2a92f49e324cd28f827f346fda7b7b384290c42e3c6e7692f",
+  "checked": 133,
+  "differences": [],
+  "scope": "Whitespace-normalised labels and options against actual cached PDF native/spatial text. Not full answer-pool, UI or production verification."
+}

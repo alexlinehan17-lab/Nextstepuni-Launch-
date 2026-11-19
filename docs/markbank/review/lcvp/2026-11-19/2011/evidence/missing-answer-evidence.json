@@ -1,0 +1,126 @@
+{
+  "recordedAt": "2026-11-19T18:00:53.976442+00:00",
+  "subject": "Link Modules",
+  "year": 2011,
+  "sitting": "June Common",
+  "state": "Cached-source evidence only; mandatory SEC archive recheck remains pending under the active archive block. No cards authored and no no-answer claim represented as freshly verified.",
+  "scheme": {
+    "kind": "scheme",
+    "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2011/LC462CLP000EV.pdf",
+    "bytes": 194711,
+    "sha256": "8eca146e38fa8bb2a92f49e324cd28f827f346fda7b7b384290c42e3c6e7692f",
+    "pages": 28,
+    "textPath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/scheme.txt"
+  },
+  "firstReadingSha256": "42c2a2e90dfc72d57812a81af3fcbca346c8f9132c9f2fbeda1c8e42b54695f0",
+  "archiveRecheck": {
+    "state": "pending",
+    "owner": "audio/source coordinator",
+    "reason": "SEC archive blocked; no independent Codex request allowed",
+    "required": "Reopen the official 2011 marking-scheme listing after the block lifts, confirm the published file and compare these pages; record time, exact response and hash."
+  },
+  "affectedAsks": 5,
+  "items": [
+    {
+      "printedRef": "B3(iii)",
+      "marksForAffectedAsk": 2,
+      "scope": "whole",
+      "evidence": "Only Any relevant comment to the case study, 2m; no answer printed. R4 notice, whole case and original table required.",
+      "fixedLine": "The scheme prints no answer for this part.",
+      "paperPhysicalPages": [
+        11,
+        12
+      ],
+      "schemePhysicalPages": [
+        10
+      ],
+      "originalSchemeImages": [
+        "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/original-pages/scheme-10.png"
+      ],
+      "originalPagesActuallyViewed": true
+    },
+    {
+      "printedRef": "C1(a)",
+      "marksForAffectedAsk": 1,
+      "scope": "whole",
+      "evidence": "Any career mentioned, 1m; no concrete answer. R4 notice.",
+      "fixedLine": "The scheme prints no answer for this part.",
+      "paperPhysicalPages": [
+        14
+      ],
+      "schemePhysicalPages": [
+        11
+      ],
+      "originalSchemeImages": [
+        "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/original-pages/scheme-11.png"
+      ],
+      "originalPagesActuallyViewed": true
+    },
+    {
+      "printedRef": "C1(b)",
+      "marksForAffectedAsk": 3,
+      "scope": "explanation half only; retain the printed characteristic names on the separate naming ask",
+      "evidence": "Explicit State 1m / Explain 1m, three times. Three characteristic names but no explanations printed. Proposed split and no-answer explanation notice.",
+      "fixedLine": "The scheme prints no answer for this part.",
+      "paperPhysicalPages": [
+        14
+      ],
+      "schemePhysicalPages": [
+        11
+      ],
+      "originalSchemeImages": [
+        "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/original-pages/scheme-11.png"
+      ],
+      "originalPagesActuallyViewed": true
+    },
+    {
+      "printedRef": "C2(a)",
+      "marksForAffectedAsk": 2,
+      "scope": "whole",
+      "evidence": "Any business named, 2m; no concrete answer. R4 notice.",
+      "fixedLine": "The scheme prints no answer for this part.",
+      "paperPhysicalPages": [
+        17
+      ],
+      "schemePhysicalPages": [
+        13
+      ],
+      "originalSchemeImages": [
+        "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/original-pages/scheme-13.png"
+      ],
+      "originalPagesActuallyViewed": true
+    },
+    {
+      "printedRef": "C6(a)",
+      "marksForAffectedAsk": 4,
+      "scope": "whole email; retain all eight printed marking criteria",
+      "evidence": "One email seeking placement, any four of eight printed criteria at 1m. No full email model; preserve criteria and R4 fixed notice.",
+      "fixedLine": "The scheme prints no answer for this part.",
+      "paperPhysicalPages": [
+        29
+      ],
+      "schemePhysicalPages": [
+        23
+      ],
+      "originalSchemeImages": [
+        "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/original-pages/scheme-23.png"
+      ],
+      "originalPagesActuallyViewed": true
+    },
+    {
+      "ref": "C4(b)",
+      "kind": "partial",
+      "marks": 6,
+      "finding": "Explanation is needed is a direction for all six responses. Options1–4 contain brief statements with no further explanation;5/6 retain their printed explanatory clauses.",
+      "notice": "The scheme prints no answer for this part.",
+      "treatment": "All six original alternatives and the three two-or-zero response controls remain; final zero-mark notice is scoped to the missing expansions.",
+      "sourcePage": 18,
+      "sourceImage": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-independent/original-pages/scheme-18.png",
+      "imageSha256": "3e2da7c83ba7f0124eaa4d145ae755e19e03eab509dc8faa9708a7d9b42cbb9e",
+      "secondReaderFinding": "Recorded by the independent reviewer,19 November18:55. Root applied the source-only correction; final amended review pending."
+    }
+  ],
+  "candidateUpdatedAt": "2026-11-19T18:56:41.116035+00:00",
+  "candidateSha256": "d4282d7fed7ef26970b480d17d14f26bdbc3a844fd290375d0b98bfe5a987514",
+  "scope": "Five whole no-answer asks and one partial notice in the47-card proposal. Archive recheck still outstanding."
+}

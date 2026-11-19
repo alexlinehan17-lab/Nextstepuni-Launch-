@@ -1,0 +1,43 @@
+{
+  "sourcePaperSha256": "29ae5c3837408a0de0881d46a6871d1e0f1dae7c4915049becba3a43537570e4",
+  "physicalPage": 8,
+  "originalText": "Activities Engaged in by Domestic Holidaymakers (%) \n \nNational \nParks \nWater \nSports \nHouses \nCastles \nHiking \nWalking \nVisits to \nSpas \nGardens \nHeritage \nInterpretive \nCentres \nMuseums  \nArt Galleries\nGolf \n2008 \n26 \n26 \n25 \n25 \n20 \n19 \n15 \n14 \n11 \n2009 \n23 \n27 \n24 \n21 \n24 \n20 \n21 \n14 \n10 \nSource: Fáilte Ireland 2009 \n \n \n \n \n \n \n",
+  "headers": [
+    "National Parks",
+    "Water Sports",
+    "Houses Castles",
+    "Hiking Walking",
+    "Visits to Spas",
+    "Gardens",
+    "Heritage Interpretive Centres",
+    "Museums Art Galleries",
+    "Golf"
+  ],
+  "values": {
+    "2008": [
+      26,
+      26,
+      25,
+      25,
+      20,
+      19,
+      15,
+      14,
+      11
+    ],
+    "2009": [
+      23,
+      27,
+      24,
+      21,
+      24,
+      20,
+      21,
+      14,
+      10
+    ]
+  },
+  "transcription": "Activities Engaged in by Domestic Holidaymakers (%)\nNational Parks — 2008: 26; 2009: 23\nWater Sports — 2008: 26; 2009: 27\nHouses Castles — 2008: 25; 2009: 24\nHiking Walking — 2008: 25; 2009: 21\nVisits to Spas — 2008: 20; 2009: 24\nGardens — 2008: 19; 2009: 20\nHeritage Interpretive Centres — 2008: 15; 2009: 21\nMuseums Art Galleries — 2008: 14; 2009: 14\nGolf — 2008: 11; 2009: 10\nSource: Fáilte Ireland 2009",
+  "originalImageRead": "2011-independent/original-pages/paper-08.png",
+  "scope": "Both original row sequences and every column header preserved. Original table layout remains available before reveal through source page8."
+}
