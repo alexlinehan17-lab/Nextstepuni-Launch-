@@ -680,10 +680,27 @@ function historyEssayFault(c, scheme) {
 /** The decks whose writing is a rubric card on the French grid shape, gated
  *  by spanishGridFault: Spanish, and German (whose expression criterion may
  *  carry a printed lower scale). */
-const GRID_SUBJECTS = new Set(['spanish', 'german']);
+// Polish joins with treatment D (languages-q3 lane, 19 Nov 2026): its Część B
+// tasks are marked on one Content (C) / Expression (E) grid, the same card.
+const GRID_SUBJECTS = new Set(['spanish', 'german', 'polish']);
+/* A band name the SEC sets on TWO lines of its table cell, with the band's
+ * own mark ranges printed in the next cells at the first line's height, so the
+ * text layer reads "Very 15 - 12 10-9 good" (Polish 2026 Higher scheme pp10-11,
+ * in its column runs) and the name is never contiguous. For these subjects a
+ * band name also traces where its words stand in that order with nothing but
+ * range digits between them. Only band NAMES take this path; descriptors and
+ * requirements trace as before. */
+const SPLIT_BAND_NAMES = new Set(['polish']);
+const bandNameTraces = (scheme, label) => {
+  if (!SPLIT_BAND_NAMES.has(SUBJECT_ID)) return false;
+  const words = String(label).split(/\s+/).map(w => normalise(w)).filter(Boolean);
+  if (words.length < 2) return false;
+  const esc = w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(words.map(esc).join('[0-9]*')).test(scheme);
+};
 function spanishGridFault(c, scheme) {
   const r = c.rubric;
-  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish or German marking grid';
+  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German or Polish marking grid';
   if (r.allocation || r.answerGuide) return 'a marking grid carries no answer rows';
   const criteria = r.criteria ?? [];
   if (!criteria.length || new Set(criteria.map(k => k.id)).size !== criteria.length) return 'no criteria, or two with one id';
@@ -698,11 +715,14 @@ function spanishGridFault(c, scheme) {
   }
   // A criterion zeroed by another's 0 names a criterion of this card, and the
   // card carries the scheme's printed rule ("… no marks are awarded for Content
-  // … no marks will be awarded for Language"), itself traced below.
+  // … no marks will be awarded for Language"), itself traced below. Polish
+  // names the second criterion Expression: "Where no marks are awarded for
+  // content (i.e. effort totally irrelevant), no marks will be awarded for
+  // expression."
   for (const k of criteria) {
     if (!k.zeroWhenZero) continue;
     if (k.zeroWhenZero === k.id || !criteria.some(other => other.id === k.zeroWhenZero)) return `${k.label} is zeroed by a criterion the card does not have`;
-    if (!r.taskRequirements.some(line => /no marks are awarded for Content\b.*no marks will be award(?:ed)? for Language\b/i.test(line))) {
+    if (!r.taskRequirements.some(line => /no marks are awarded for Content\b.*no marks will be award(?:ed)? for (?:Language|Expression)\b/i.test(line))) {
       return `${k.label} is zeroed by ${k.zeroWhenZero} but the card prints no such rule`;
     }
   }
@@ -737,7 +757,9 @@ function spanishGridFault(c, scheme) {
       ...(k.bands ?? []).flatMap(b => [...(SUBJECT_ID === 'german' ? [] : [b.label]), ...b.guidance]),
       ...(k.lowerScale ? [k.lowerScale.rule, ...k.lowerScale.bands.flatMap(b => b.guidance)] : [])]),
   ];
-  const untraced = lifted.find(text => !String(text).trim() || !claimMatches(scheme, text));
+  const bandNames = new Set(criteria.flatMap(k => (k.bands ?? []).map(b => b.label)));
+  const untraced = lifted.find(text => !String(text).trim()
+    || !(claimMatches(scheme, text) || (bandNames.has(text) && bandNameTraces(scheme, text))));
   if (untraced !== undefined) return `a marking line not found in the ${c.year} ${c.level} scheme, "${String(untraced).slice(0, 60)}"`;
   return null;
 }

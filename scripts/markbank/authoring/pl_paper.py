@@ -260,6 +260,9 @@ INLINE_PARTS = re.compile(r'^(.*?)(?:^|\s)a\)\s+(.+?)\s+b\)\s+(.+)$')
 # A 2021 essay title: the SEC prints it as a quotation attributed to its author.
 ESSAY_TITLE = re.compile(r'^[„“"]')
 AURAL_TAB = re.compile(r'^Cz[eę][sś][cć]\s+([A-F])\b')
+# A lettered sub-question in the listening booklet. Only (a)-(h): "(i)" there
+# is always a roman, an answer box or a table row.
+AURAL_LETTER = re.compile(r'^\(\s*([a-h])\s*\)\s*(\S.*)$')
 LETTER = re.compile(r'^\(?\s*([a-l])\s*\)\s*(.*)$', re.I)
 ROMAN = re.compile(r'^\(\s*(i{1,3}|iv|vi{0,3}|ix|x)\s*\)\s*(.*)$', re.I)
 NUMBERED = re.compile(r'^(\d{1,2})\s*\.\s*(.*)$')
@@ -700,6 +703,7 @@ class PlPaper:
         has to match one for one.
         """
         asks, section, item, roman = [], None, None, None
+        letter = None
         current, last_y = None, None
 
         def close():
@@ -725,7 +729,7 @@ class PlPaper:
             nm = NUMBERED.match(line.text)
             if nm:
                 close()
-                item, roman = int(nm.group(1)), None
+                item, roman, letter = int(nm.group(1)), None, None
                 rest = nm.group(2)
                 # "4. (i) Zaznacz…" opens the item AND its first roman.
                 inner = ROMAN.match(rest)
@@ -735,10 +739,30 @@ class PlPaper:
                 last_y = line.y
                 continue
             rm = ROMAN.match(line.text)
+            if rm and item is not None and not rm.group(2).strip():
+                # A bare "(i)" is an ANSWER BOX, not an ask: "(b) Wymień 2
+                # zalety Joanny Bator:" sets two boxes, (i) and (ii), for the
+                # two answers it asks for, and the scheme prices the letter
+                # "Any two of: (2 x 2 m)". Keyed as asks, the boxes stood in
+                # for the questions above them: 2026 Higher Część A Q3 read as
+                # Q3(i) and Q3(ii), and lost its (a) and (b).
+                continue
+            lm = AURAL_LETTER.match(line.text)
+            if lm and item is not None:
+                # A lettered sub-question with words of its own: "(a) Type of
+                # movie.", "(b) Wymień 2 zalety Joanny Bator:". Read before
+                # this walker knew letters, its words joined the item above
+                # and its answer boxes were counted in its place.
+                close()
+                letter, roman = lm.group(1).lower(), None
+                current = Ask(f'L{section}', item, letter, None, lm.group(2),
+                              line.page)
+                last_y = line.y
+                continue
             if rm and item is not None:
                 close()
                 roman = rm.group(1).lower()
-                current = Ask(f'L{section}', item, None, roman, rm.group(2),
+                current = Ask(f'L{section}', item, letter, roman, rm.group(2),
                               line.page)
                 last_y = line.y
                 continue

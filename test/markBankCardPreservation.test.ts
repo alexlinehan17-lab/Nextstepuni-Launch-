@@ -1406,6 +1406,25 @@ const germanAddedTotal = [...Object.values(GERMAN_ADDED), ...Object.values(GERMA
   ...Object.values(GERMAN_DEFERRED)]
   .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
 
+/* Polish (the languages-q3 lane, from 2026-11-19, treatment D): the frozen set
+ * is the 237 cards of 2021-2025 Reading. Every further sitting joins on top,
+ * one sitting per commit, pinned per year and level and never folded into the
+ * frozen hashes, as German does: new sittings whole, and in a frozen sitting
+ * the asks it excluded until then, its Listening Comprehension Test (Część
+ * A-E, sections LA-LE), its written tasks (Section B) and the reading asks
+ * the old reader refused, each named. */
+const POLISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
+  2026: { higher: 65, ordinary: 0 },
+};
+const POLISH_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {};
+const POLISH_ADDED_TO_FROZEN_ID = /^pl-202[1-5]-(?:hl|ol)-(?:l[a-e]-|b-)/;
+const POLISH_ADDED_TO_FROZEN_READING = new Set<string>([]);
+const isPolishAdded = (id: string) => /^pl-\d{4}-/.test(id) && (Number(id.slice(3, 7)) in POLISH_ADDED
+  || (Number(id.slice(3, 7)) in POLISH_ADDED_TO_FROZEN
+    && (POLISH_ADDED_TO_FROZEN_ID.test(id) || POLISH_ADDED_TO_FROZEN_READING.has(id))));
+const polishAddedTotal = [...Object.values(POLISH_ADDED), ...Object.values(POLISH_ADDED_TO_FROZEN)]
+  .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
+
 /* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
  * addition on top of the frozen 2020-2026 set, never a replacement -- those
  * sittings had no card at all before. Pinned per level, count and id hash,
@@ -2063,6 +2082,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
   if (name.startsWith('spanish:')) return ids.filter(id => !isSpanishAdded(id));
   if (name.startsWith('german:')) return ids.filter(id => !isGermanAdded(id));
+  if (name.startsWith('polish:')) return ids.filter(id => !isPolishAdded(id));
   if (name.startsWith('engineering:')) return ids.filter(id => !engineeringAdditionIds.has(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -2307,6 +2327,23 @@ describe('Mark Bank card preservation', () => {
       .toBe(true);
   });
 
+  it('adds each further Polish sitting on top of the frozen 2021-2025 identity', () => {
+    const cards = [...POLISH_HIGHER, ...POLISH_ORDINARY];
+    for (const [year, counts] of Object.entries(POLISH_ADDED)) {
+      const added = cards.filter(card => card.year === Number(year));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+      expect(added.every(card => card.id.startsWith(`pl-${year}-`))).toBe(true);
+    }
+    for (const [year, counts] of Object.entries(POLISH_ADDED_TO_FROZEN)) {
+      const added = cards.filter(card => card.year === Number(year) && isPolishAdded(card.id));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+    }
+    expect(cards.filter(card => !isPolishAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
+      .toBe(true);
+  });
+
   /* A German card's conceptId is its level-independent identity, the key a
    * student's progress is carried on between Higher and Ordinary
    * (types/markBank.ts: it "cannot be retrofitted"), so it is held like the
@@ -2456,6 +2493,7 @@ describe('Mark Bank card preservation', () => {
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length
         : name.startsWith('spanish:') ? cards.filter(card => isSpanishAdded(card.id)).length
         : name.startsWith('german:') ? cards.filter(card => isGermanAdded(card.id)).length
+        : name.startsWith('polish:') ? cards.filter(card => isPolishAdded(card.id)).length
         // Technology's 2010-2019 and DCG's 2010-2018 additions count on top of the bank the same way.
         : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
@@ -2488,7 +2526,7 @@ describe('Mark Bank card preservation', () => {
         + chemistryAdded.size - chemistryWithdrawnShipped.length
         + engineeringAdditionIds.size
         // History (2026-11-04): its 749 frozen cards gain the essay cards: + historyEssayIds.
-        + historyEssayIds.size + spanishAddedTotal + germanAddedTotal);
+        + historyEssayIds.size + spanishAddedTotal + germanAddedTotal + polishAddedTotal);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

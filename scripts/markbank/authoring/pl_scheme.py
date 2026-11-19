@@ -299,6 +299,13 @@ BARE_TARIFF = re.compile(r'(?:^|\s)(\d{1,2})\s*marks?\s*$', re.I)
 # Question 1(c)(iv) is the only one, and reading it as "1 mark" alone would
 # under-price the ask by half.
 SUM_TARIFF = re.compile(r'\(\s*(\d{1,2})\s*m\s*\+\s*(\d{1,2})\s*m\s*\)', re.I)
+# "(2+2+2 m)" — the 2026 schemes write N answers at M each as a sum with the
+# unit once at the end, under "Three of:". Read as a tariff only where every
+# term is the same number; unequal terms are a fault on the ask, never a
+# guess. Unread, the whole cell became the ask's first ANSWER and fourteen
+# 2026 Higher asks reported "the scheme states no tariff".
+PLUS_TARIFF = re.compile(
+    r'\(\s*(\d{1,2})((?:\s*\+\s*\d{1,2}){1,7})\s*(?:m|marks?)\s*\.?\s*\)', re.I)
 # The 2021 examination prices in PUNKTY and writes the unit nowhere: its heads
 # read "(5)" and "(5 × 1)" in the right-hand column, and its rate is a sentence
 # under them. Read only for that sitting, because a bare number in brackets is
@@ -800,7 +807,7 @@ def _absorb(ask, text):
                          f'the tariff {ask.notation!r} prices {ask.count}')
         ask.count = ask.count if ask.fault else count
         _read_tariff(ask, text, directive_count=count)
-        rest = TARIFF.sub('', text[d.end():]).strip(' :')
+        rest = PLUS_TARIFF.sub('', TARIFF.sub('', text[d.end():])).strip(' :')
         if rest and not PAGE_ONLY.match(rest):
             _add_answer(ask, rest)
         return
@@ -810,7 +817,7 @@ def _absorb(ask, text):
         _read_tariff(ask, text)
         return
     if TARIFF.fullmatch(text) or SUM_TARIFF.fullmatch(text) \
-            or BARE_TARIFF.fullmatch(text):
+            or PLUS_TARIFF.fullmatch(text) or BARE_TARIFF.fullmatch(text):
         _read_tariff(ask, text)
         return
     if BULLET.match(text) or ask.answers:
@@ -1018,6 +1025,18 @@ def _read_tariff(ask, text, directive_count=None):
         ask.count, ask.per = 2, int(sm.group(1))
         ask.total = int(sm.group(1)) + int(sm.group(2))
         ask.notation = sm.group(0)
+        return
+    pm = PLUS_TARIFF.search(text)
+    if pm:
+        terms = [int(pm.group(1))] + [int(t) for t in re.findall(r'\d{1,2}', pm.group(2))]
+        ask.notation = pm.group(0)
+        if len(set(terms)) != 1:
+            ask.fault = f'the printed tariff {pm.group(0)!r} adds unequal terms'
+            return
+        if directive_count is not None and directive_count != len(terms):
+            ask.fault = (f'the directive claims {directive_count} answer(s) and the '
+                         f'tariff {pm.group(0)!r} prices {len(terms)}')
+        ask.count, ask.per, ask.total = len(terms), terms[0], sum(terms)
         return
     stated_total = None
     bm = BARE_TARIFF.search(TARIFF.sub('', text))
