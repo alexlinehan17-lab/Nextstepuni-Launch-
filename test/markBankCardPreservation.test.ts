@@ -2822,7 +2822,7 @@ const technologyAdditions = {
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
 } as const;
 const italianAdditions = {
-  higher: [ITALIAN_HIGHER, 232, 'dbdb1373b37ce794472bf5226ccee614ab8f2c2c1093aa569d14f584bebff061'],
+  higher: [ITALIAN_HIGHER, 300, 'c58527ffc6239a7abdd6842c45a37d721e25525a1a62216928d970f7ff4aa547'],
   ordinary: [ITALIAN_ORDINARY, 204, 'a155ef64bfaea7b85e2cdc92eccd5ba3b627b28e9040ebad3d4b2417a2a6974b'],
 } as const;
 const dcgAdditions = {
@@ -2952,7 +2952,9 @@ describe('Mark Bank card preservation', () => {
     // Dialogue 3 Q1 carded from the scheme's own line - and writing 4); 2021
     // Higher 33 for the 37 its 35 live cards left out (A Q5 on its printed
     // total, its count and split disagreeing); 2021 Ordinary 28 for the 28
-    // its 37 live cards left out (listening 24 and writing 4).
+    // its 37 live cards left out (listening 24 and writing 4); 2020 Higher
+    // added whole, 68 cards for its 68 asks (no live cards; its LB1 Q1 and LB3
+    // Q1 trace through the split-only scheme form).
     const additions = cards.map(card => card.id).filter(isItalianAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
