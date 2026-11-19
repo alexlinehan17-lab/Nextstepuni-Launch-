@@ -45217,5 +45217,965 @@
    "attribution": "SEC Polish 2020 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
   }
+ },
+ {
+  "id": "pl-2019-hl-i-1-a",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-slow",
+  "questionRef": "2019 HL Section I Q1(a)",
+  "questionText": "Wyjaśnij własnymi słowami znaczenie następujących słów w kontekście tekstu: ocalić (tytuł)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ochronić, uratować, przyjść na ratunek, przyjść z pomocą itp.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-i-1-b",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-slow",
+  "questionRef": "2019 HL Section I Q1(b)",
+  "questionText": "Wyjaśnij własnymi słowami znaczenie następujących słów w kontekście tekstu: smukły (akapit 1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "chudy, cienki, mizerny, szczupły, drobny, delikatny, niewielki itp.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-i-1-c",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-slow",
+  "questionRef": "2019 HL Section I Q1(c)",
+  "questionText": "Wyjaśnij własnymi słowami znaczenie następujących słów w kontekście tekstu: przydomek (akapit 2)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "przezwisko, pseudonim, alias, ksywa itp.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-i-1-d",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-slow",
+  "questionRef": "2019 HL Section I Q1(d)",
+  "questionText": "Wyjaśnij własnymi słowami znaczenie następujących słów w kontekście tekstu: obecnie (akapit 4)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "aktualnie, teraz, dzisiaj, chwilowo itp.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-i-1-e",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-slow",
+  "questionRef": "2019 HL Section I Q1(e)",
+  "questionText": "Wyjaśnij własnymi słowami znaczenie następujących słów w kontekście tekstu: przystosować (akapit 9)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "przerobić, dopasować, zmienić, przekształcić, adaptować itp.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-i-2",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "zdaniem-autora-przyczyna-zespolu-masowego-wymierania",
+  "questionRef": "2019 HL Section I Q2",
+  "questionText": "Zdaniem autora tekstu, co jest przyczyną „zespołu masowego wymierania pszczoły miodnej” na świecie?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme notes: “Nikt nie wie na pewno, dlaczego pszczoły masowo wymierają. (akapit 5)”. The scheme notes: “Ogólnie uważa się, że może to być związane z następującymi czynnikami:”.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 1,
+     "options": [
+      "1. obniżenie się odporności pszczół",
+      "2. trujące substancje w pestycydach",
+      "3. mikroby",
+      "4. zmiany klimatyczne",
+      "5. promieniowanie elektromagnetyczne"
+     ]
+    }
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-i-3-a",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "swietle-artykulu-jak-wyglada-jak-dziala",
+  "questionRef": "2019 HL Section I Q3(a)",
+  "questionText": "W świetle artykułu, a) jak wygląda, i b) jak działa robot-zapylacz skonstruowany przez dr. Dalewskiego z Politechniki Warszawskiej?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Jest to półmetrowy robot poruszający się po ziemi (akapit 1), który „wygląda jak mały samochodzik z wysokim zawieszeniem.” (akapit 7) Z przodu ma on wystającą kolorową miotełkę do zapylania roślin. (akapit 1)",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-i-3-b",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "swietle-artykulu-jak-wyglada-jak-dziala",
+  "questionRef": "2019 HL Section I Q3(b)",
+  "questionText": "W świetle artykułu, a) jak wygląda, i b) jak działa robot-zapylacz skonstruowany przez dr. Dalewskiego z Politechniki Warszawskiej?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Jest to urządzenie automatyczne. Wystarczy, że człowiek ustawi odpowiednie parametry w komputerze, np. określi, jakie kwiaty mają być zapylane i na jakim obszarze. Robot sam decyduje, jaką trasę wybierze. „Akumulatory maszyny są na tyle wydajne, że pozwalają na kilka godzin pracy non stop na powierzchni kilkuset metrów kwadratowych.” (akapit 8)",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-i-4",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "podstawie-przeczytanego-artykulu-jakiego-stopnia-nowoczesna",
+  "questionRef": "2019 HL Section I Q4",
+  "questionText": "Na podstawie przeczytanego artykułu, do jakiego stopnia nowoczesna technologia jest w stanie zastąpić pszczoły w ich zadaniach?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Naziemny robot jest w stanie częściowo zastąpić pszczoły w zapylaniu kwiatów na plantacjach i w sadach, gdzie odstępy między roślinami są wystarczająco duże, ale nie na naturalnych łąkach (akapit 2), gdyż „jadąc, zniszczyłby zbyt wiele roślin.” (akapit 7)",
+    "marks": 3,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Do dzisiaj sztuczna pszczoła nie jest w stanie zastąpić naturalnej pszczoły przy produkcji miodu. (akapit 11)",
+    "marks": 2
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-i-5-a",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "jak-daleko-posuniete-prace-dalewskiego-nad",
+  "questionRef": "2019 HL Section I Q5(a)",
+  "questionText": "Jak daleko są posunięte prace dr. Dalewskiego nad stworzeniem latającego robota-pszczoły i na czym polega największa trudność w jego skonstruowaniu?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Początkowo naukowiec planował, że sztuczna pszczoła będzie zbliżona wyglądem do prawdziwej pszczoły. Szybko okazało się to jednak dużym wyzwaniem. (akapit 3)",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Działalność latającej sztucznej pszczoły jest niestety ograniczona tylko do powierzchni 3x3 metry. (akapit 10)",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Hałas, jaki wydaje ten latający robot, przypomina trochę bzyczenie pszczoły. (akapit 10)",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "„Wygląda jak dron, ma cztery śmigiełka na bokach oraz witkę z kolorowymi piórkami do zapylania sterczącą z przodu jak długie odnóże. Przypomina już nieco owada i bzyczy.” (akapit 10)",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Największa trudność polega na tym, że dotychczas znane baterie zasilające takie lekkie i delikatne urządzenia ważą za dużo i są za mało wydajne oraz że sterujące kamery są za słabe. (akapity 3 i 10)",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-i-5-b",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "oznacza-podsumowujaca-wypowiedz-dalewskiego-jeszcze-piesn",
+  "questionRef": "2019 HL Section I Q5(b)",
+  "questionText": "Co oznacza podsumowująca wypowiedź dr. Dalewskiego, że jest „to jeszcze pieśń przyszłości”?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "to jeszcze nic pewnego; prace są dopiero w powijakach i może będą zrealizowane kiedyś w przyszłości (akapit 10)",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-i-6-a",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "wyjasnij-jak-badania-dalewskiego-moglyby-przyczynic",
+  "questionRef": "2019 HL Section I Q6(a)",
+  "questionText": "Wyjaśnij, jak badania dr. Dalewskiego mogłyby przyczynić się do wspomagania zdrowia populacji pszczół?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Poprzez użycie robota do inteligentnego dawkowania środków ochrony roślin i nawozów na plantacjach można by w znacznym stopniu zredukować zastosowanie szkodliwych substancji chemicznych. (akapit 9)",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "„Urządzenie będzie jeździło po uprawach i wyszukiwało tylko te części roślin, które są chore, by nie rozpylać chemii na całej roślinie.” (akapit 9)",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Podobno taki sposób nawożenia roślin może obniżyć ilość użytych chemikaliów aż dziesięciokrotnie, znacznie zwiększając przy tym bezpieczeństwo pszczół. (akapit 9)",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-i-6-b",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "omow-inne-sposoby-ktore-moglyby-byc",
+  "questionRef": "2019 HL Section I Q6(b)",
+  "questionText": "Omów inne sposoby, które mogłyby być użyte do tego samego celu.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dbałość o naturalne środowisko, by nie dopuścić do dalszych zmian klimatycznych, może również przyczynić się do poprawy stanu zdrowia pszczół.",
+    "marks": null,
+    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Refleksje typu:”: an example, not a checklist."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in English or Irish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-ii-1",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "II",
+  "topicId": "polish-3-2",
+  "conceptId": "wydaje-wsrod-ludzi-jeszcze-bardzo-niewielka",
+  "questionRef": "2019 HL Section II Q1",
+  "questionText": "„Wydaje się, że wśród ludzi jest jeszcze bardzo niewielka świadomość strat, jakie przynosi zmniejszająca się populacja pszczół”. (akapit 9) Używając około 100 słów, skomentuj ten cytat w kontekście istniejących dziś problemów ekologicznych.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Płynna wypowiedź na temat, przy użyciu około 100 słów",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Zasady – gramatyka i ortografia – 10%",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “Czy czasem zastanawiamy się, skąd pochodzi nasze jedzenie? Może to się wydać komuś dziwne, ale okazuje się, że znaczną jego część zawdzięczamy w ten czy inny sposób właśnie pszczołom.”; “Gdyby tak spojrzeć na nasze jedzenie, które zjemy na obiad, pszczoły odegrały tu swoją rolę, albo zapylając większość owoców i warzyw bezpośrednio, albo zapylając pożywienie dla zwierząt, które my teraz spożywamy. Do tego należy jeszcze doliczyć miód i pszczeli wosk.”; “Znaczenie pszczoły dla środowiska przyrodniczego i dla gospodarki człowieka jest ogromne. Dobrze żeby o tym wiedzieli nie tylko pszczelarze, ale i całe społeczeństwo. By ludzie zrozumieli potrzebę troski o te bezcenne owady.”; “Jeśli te małe insekty, którym zawdzięczamy tak wiele naszego pożywienia, miałyby zniknąć, co byśmy bez nich zrobili?”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-iii-1",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "III",
+  "topicId": "polish-3-2",
+  "conceptId": "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+  "questionRef": "2019 HL Section III Q1",
+  "questionText": "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: Sztuczna inteligencja – rozwiąże wiele palących problemów świata czy też zagrozi naszemu istnieniu?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Zasady – gramatyka i ortografia – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “Sztuczna inteligencja może nam na pozór pomagać, ale wiążą się z tym różne zagrożenia. Pytanie, czy jest to cena, która warto zapłacić?”; “Podobno istnieją już lodówki, które posiadają wbudowaną sztuczną inteligencję. Pozornie jest to dobre, bo lodówka taka informuje nas, czego w niej brakuje i co jest już przeterminowane. Taka lodówka jest nawet w stanie sama zamówić, np. na Amazonie, brakujące produkty, uwzględniając nasze wcześniejsze preferencje.”; “Posiadanie takiego urządzenia u siebie wiąże się jednak z pewnym niebezpieczeństwem, a mianowicie różne korporacje zyskują tą drogą wgląd w naszą najbardziej prywatną sferę, czyli nasz dom. Całkiem nieświadomie my sami udostępniamy im nasze preferencje, które później mogą być wykorzystane do wciskania nam niepotrzebnych produktów.”; “W najgorszym wypadku taka lodówka mogłaby „szpiegować” nasze rodzinne rozmowy przy śniadaniu, a potem sprzedawać te informacje autorytarnym rządom.”; “Podsumowując, sztuczna inteligencja wiąże się z wielkimi niewiadomymi i, moim zdaniem, nie warto ryzykować.”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2019-hl-iii-2",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2019,
+  "section": "III",
+  "topicId": "polish-3-2",
+  "conceptId": "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+  "questionRef": "2019 HL Section III Q2",
+  "questionText": "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: Rok przerwy po szkole średniej jest dobrym rozwiązaniem czy stratą czasu? Udziel odpowiedzi, uwzględniając oba przeciwstawne punkty widzenia.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Zasady – gramatyka i ortografia – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “ZA: MOGŁABY TO BYĆ OKAZJA:”; “do zrelaksowania się po maturze przed uniwersytetem”; “do zobaczenia świata i poznania nowych ludzi z różnych środowisk”; “do zdobycia doświadczenia zawodowego”; “do zarobienia pieniędzy”; “do odkrycia nowych zainteresowań”; “by stać się bardziej niezależnym”; “PRZECIW: ISTNIEJE JEDNAK NIEBEZPIECZENSTWO:”; “utraty motywacji i wypadnięcia z rytmu”; “zapomnienia zdobytej wiedzy i sposobu uczenia się”; “utraty kontaktu ze znajomymi”; “przehulania dużych sum pieniędzy”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
  }
 ]
