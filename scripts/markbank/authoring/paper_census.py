@@ -620,6 +620,10 @@ SHORT_ASKS = {
     **{('biology', 2022, 'ol-deferred', f'Q4(a)({r})'): ('', f'p4: answer box "{x}:" under Q4(a)\'s lead-in "Give one '
                                                            f'example of an organism for A, B and C."')
        for r, x in (('ii', 'A'), ('iii', 'B'), ('iv', 'C'))},
+    # Biology 2023 Ordinary deferred Q12(a)(i): the paper prints the term alone ("Gene") under Q12(a)'s lead-in
+    # "Explain the following terms as used in genetics:" (040 p3); the term is the whole of the roman's ask.
+    ('biology', 2023, 'ol-deferred', 'Q12(a)(i)'): ('Gene', '040 p3: the term "Gene" under Q12(a)\'s lead-in '
+                                                            '"Explain the following terms as used in genetics:"'),
     ('physics', 2015, 'ol', 'Q12(c)(i)'): ('gases', 'Paper p10 lists gases under the shared charge-carrier prompt; '
                                                     'scheme p16 puts all four materials in one stepped 6+2+1+1 '
                                                     'response. The card keeps the full prompt and all four matches.'),

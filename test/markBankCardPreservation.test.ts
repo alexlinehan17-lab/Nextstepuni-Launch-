@@ -3721,7 +3721,7 @@ describe('Mark Bank card preservation', () => {
     expect(june(BIO_ORDINARY)).toHaveLength(2835);
     expect(idHash(june(BIO_ORDINARY).map(card => card.id))).toBe('4f0b15fd23902b4da3b0f8948e85519be7c02b8e567f42aeea5cb6aed366d95e');
     // The deferred sittings, carded one by one: [Higher, Ordinary].
-    expect([deferred(BIO_HIGHER).length, deferred(BIO_ORDINARY).length]).toEqual([182 + 179, 182]);
+    expect([deferred(BIO_HIGHER).length, deferred(BIO_ORDINARY).length]).toEqual([182 + 179, 182 + 188]);
     expect(biologyAdditionIds.size).toBe(2705 + 2835 - (673 - 1) - (686 - 1)
       + deferred(BIO_HIGHER).length + deferred(BIO_ORDINARY).length);
     // The sittings before 2021 had no Biology cards: everything they carry is new.

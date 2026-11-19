@@ -198,10 +198,11 @@ describe('Biology exam-topic registry', () => {
     const deferred = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'biology' && paper.fileid.endsWith('-deferred.pdf'));
     expect(deferred.map(paper => `${paper.year}|${paper.level}|${paper.fileid}|${paper.q.length}`)).toEqual([
       '2023|higher|LC025ALP038EV-deferred.pdf|10', '2023|higher|LC025ALP040EV-deferred.pdf|7',
+      '2023|ordinary|LC025GLP038EV-deferred.pdf|10', '2023|ordinary|LC025GLP040EV-deferred.pdf|7',
       '2022|higher|LC025ALP038EV-deferred.pdf|10', '2022|higher|LC025ALP040EV-deferred.pdf|7',
       '2022|ordinary|LC025GLP038EV-deferred.pdf|10', '2022|ordinary|LC025GLP040EV-deferred.pdf|7',
     ]);
-    expect(biologyEvidence.summary).toMatchObject({ deferredLogicalQuestions: 51 });
+    expect(biologyEvidence.summary).toMatchObject({ deferredLogicalQuestions: 68 });
     expect(biologyEvidence.summary).toMatchObject({
       localPaperVariants: 100,
       localPhysicalCards: 1068,
@@ -314,8 +315,8 @@ describe('Biology exam-topic registry', () => {
 
   it('surfaces all 534 entitled questions through all 122 topic buckets', () => {
     expect(subjectAtlasStats('biology')).toMatchObject({
-      // + the carded deferred sittings' printed questions (2022 Higher, 2022 Ordinary, 2023 Higher: 17 each).
-      questions: 534 + 17 + 17 + 17,
+      // + the carded deferred sittings' printed questions (2022 and 2023 Higher and Ordinary: 17 each).
+      questions: 534 + 17 + 17 + 17 + 17,
       topics: 122,
       yearMin: 2010,
       yearMax: 2026,

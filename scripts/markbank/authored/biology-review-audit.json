@@ -270583,6 +270583,6975 @@
     "tickChecksumsMatched": 36,
     "excluded": []
    }
+  },
+  "2023-ol-deferred": {
+   "status": "reviewed",
+   "reviewedAt": "2026-11-19",
+   "ledger": "scripts/markbank/authoring/bio_review_2023_ol_deferred.py",
+   "method": "Biology 2023 Ordinary Level, deferred sitting: reviewed task ledger, carded for the first time.",
+   "sources": {
+    "038": {
+     "path": "paper-trail-corpus/deferredexams/2023/LC025GLP038EV.pdf",
+     "fileid": "LC025GLP038EV-deferred.pdf",
+     "sha256": "b602064ffcec74354745a4a926301b4a565be17300cb839ef8a0fdda413853c2",
+     "bytes": 1501627,
+     "pages": 40,
+     "pageRoles": {
+      "1": "cover",
+      "2": "instructions",
+      "3": "questions",
+      "4": "questions",
+      "5": "questions",
+      "6": "questions",
+      "7": "questions",
+      "8": "questions",
+      "9": "questions",
+      "10": "questions",
+      "11": "questions",
+      "12": "answerbook-instructions",
+      "13": "graph-paper",
+      "14": "graph-paper",
+      "15": "answer-pages",
+      "16": "answer-pages",
+      "17": "answer-pages",
+      "18": "answer-pages",
+      "19": "answer-pages",
+      "20": "answer-pages",
+      "21": "answer-pages",
+      "22": "answer-pages",
+      "23": "answer-pages",
+      "24": "answer-pages",
+      "25": "answer-pages",
+      "26": "answer-pages",
+      "27": "answer-pages",
+      "28": "answer-pages",
+      "29": "answer-pages",
+      "30": "answer-pages",
+      "31": "answer-pages",
+      "32": "answer-pages",
+      "33": "answer-pages",
+      "34": "answer-pages",
+      "35": "answer-pages",
+      "36": "answer-pages",
+      "37": "answer-pages",
+      "38": "answer-pages",
+      "39": "answer-pages",
+      "40": "back-cover"
+     },
+     "pagesLifted": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ]
+    },
+    "040": {
+     "path": "paper-trail-corpus/deferredexams/2023/LC025GLP040EV.pdf",
+     "fileid": "LC025GLP040EV-deferred.pdf",
+     "sha256": "6c67b96fd4907556aa3a7e4016f26b93fcb5d8b3723ee0690b7c40b77a31bf84",
+     "bytes": 2438412,
+     "pages": 12,
+     "pageRoles": {
+      "1": "cover",
+      "2": "questions",
+      "3": "questions",
+      "4": "questions",
+      "5": "questions",
+      "6": "questions",
+      "7": "questions",
+      "8": "questions",
+      "9": "questions",
+      "10": "questions",
+      "11": "blank",
+      "12": "back-cover"
+     },
+     "pagesLifted": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    "scheme": {
+     "path": "paper-trail-corpus/deferredmarkingschemes/2023/LC025GLP000EV.pdf",
+     "fileid": "LC025GLP000EV-deferred.pdf",
+     "sha256": "59f3ee62d77f684372dd619244537cddab294cc6be93c82fdb258354d582a5ab",
+     "bytes": 393133,
+     "pages": 24,
+     "pageRoles": {
+      "1": "cover",
+      "2": "note",
+      "3": "introduction",
+      "4": "marking-examples",
+      "5": "marking-examples",
+      "6": "annotations",
+      "7": "irish-bonus",
+      "8": "marking",
+      "9": "marking",
+      "10": "marking",
+      "11": "marking",
+      "12": "marking",
+      "13": "marking",
+      "14": "marking",
+      "15": "marking",
+      "16": "marking",
+      "17": "marking",
+      "18": "marking",
+      "19": "marking",
+      "20": "marking",
+      "21": "marking",
+      "22": "marking",
+      "23": "blank",
+      "24": "back-cover"
+     },
+     "pagesLifted": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+     ]
+    }
+   },
+   "visualSweep": {
+    "038": "all 40 pages rendered and read",
+    "040": "all 12 pages rendered and read",
+    "scheme": "all 24 pages rendered and read"
+   },
+   "questionTotals": {
+    "1": 20,
+    "2": 20,
+    "3": 20,
+    "4": 20,
+    "5": 20,
+    "6": 20,
+    "7": 20,
+    "8": 30,
+    "9": 30,
+    "10": 30,
+    "11": 60,
+    "12": 60,
+    "13": 60,
+    "14": 60,
+    "15": 60,
+    "16": 120,
+    "17": 120
+   },
+   "partTotals": {},
+   "tickChecksums": {
+    "1": {
+     "7": 5
+    },
+    "3": {
+     "7": 5
+    },
+    "2": {
+     "8": 7
+    },
+    "4": {
+     "8": 7
+    },
+    "5": {
+     "8": 7
+    },
+    "6": {
+     "8": 7
+    },
+    "7": {
+     "8": 7
+    },
+    "8a": {
+     "5": 2
+    },
+    "9a": {
+     "5": 2
+    },
+    "10a": {
+     "5": 2
+    },
+    "8b": {
+     "9": 8
+    },
+    "9b": {
+     "9": 8
+    },
+    "10b": {
+     "9": 8
+    },
+    "11a": {
+     "5": 3
+    },
+    "12a": {
+     "5": 3
+    },
+    "13a": {
+     "5": 3
+    },
+    "14a": {
+     "5": 3
+    },
+    "15a": {
+     "5": 3
+    },
+    "11b": {
+     "5": 9
+    },
+    "12b": {
+     "5": 9
+    },
+    "13b": {
+     "5": 9
+    },
+    "14b": {
+     "5": 9
+    },
+    "15b": {
+     "5": 9
+    },
+    "11c": {
+     "6": 8
+    },
+    "12c": {
+     "6": 8
+    },
+    "13c": {
+     "6": 8
+    },
+    "14c": {
+     "6": 8
+    },
+    "15c": {
+     "6": 8
+    },
+    "16a": {
+     "7": 10
+    },
+    "16b": {
+     "7": 10
+    },
+    "16c": {
+     "7": 10
+    },
+    "16d": {
+     "7": 10
+    },
+    "17a": {
+     "7": 10
+    },
+    "17b": {
+     "7": 10
+    },
+    "17c": {
+     "7": 10
+    },
+    "17d": {
+     "7": 10
+    }
+   },
+   "selectionScan": [
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "or",
+     "disposition": "Instructions: \"blue or black pen\", not a question."
+    },
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "any five",
+     "disposition": "Section A rubric: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "any two",
+     "disposition": "Section B rubric: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "any four",
+     "disposition": "Section C rubric: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "038",
+     "page": 3,
+     "directive": "any five",
+     "disposition": "Section A rubric repeated."
+    },
+    {
+     "doc": "038",
+     "page": 3,
+     "directive": "the following",
+     "disposition": "Q1 lead-in: every part asked."
+    },
+    {
+     "doc": "038",
+     "page": 4,
+     "directive": "the following",
+     "disposition": "Q2 lead-in: every statement asked."
+    },
+    {
+     "doc": "038",
+     "page": 4,
+     "directive": "or",
+     "disposition": "Q2 \"true or false\": the answer options."
+    },
+    {
+     "doc": "038",
+     "page": 4,
+     "directive": "choose",
+     "disposition": "Q3 \"Choose each term\": a matching list, every term placed; one card per lettered description."
+    },
+    {
+     "doc": "038",
+     "page": 4,
+     "directive": "the following",
+     "disposition": "Q3 term list."
+    },
+    {
+     "doc": "038",
+     "page": 5,
+     "directive": "the following",
+     "disposition": "Q4 lead-in: every part asked."
+    },
+    {
+     "doc": "038",
+     "page": 7,
+     "directive": "any two",
+     "disposition": "Q6(b)(i) \"any two gases\": both required on the scheme's two rows; one card."
+    },
+    {
+     "doc": "038",
+     "page": 7,
+     "directive": "or",
+     "disposition": "Q6(b)(i) \"enter or exit\": description, not a choice."
+    },
+    {
+     "doc": "038",
+     "page": 8,
+     "directive": "both",
+     "disposition": "Q7(c) \"both a predator and prey\": the organism described, not a choice."
+    },
+    {
+     "doc": "038",
+     "page": 8,
+     "directive": "any one",
+     "disposition": "Q7(d) \"any one food chain\": open single answer; one card."
+    },
+    {
+     "doc": "038",
+     "page": 8,
+     "directive": "both",
+     "disposition": "Q7(e) \"both animals and plants\": description, not a choice."
+    },
+    {
+     "doc": "038",
+     "page": 9,
+     "directive": "any two",
+     "disposition": "Section B rubric repeated."
+    },
+    {
+     "doc": "038",
+     "page": 9,
+     "directive": "the following",
+     "disposition": "Q8(b) lead-in: every part asked."
+    },
+    {
+     "doc": "038",
+     "page": 10,
+     "directive": "the following",
+     "disposition": "Q9(b) lead-in: every part asked."
+    },
+    {
+     "doc": "038",
+     "page": 10,
+     "directive": "or",
+     "disposition": "Q9(b)(iv) \"product (or products)\": one answer; one card."
+    },
+    {
+     "doc": "038",
+     "page": 10,
+     "directive": "both",
+     "disposition": "Q9(b)(vii) \"Label both axes\": both required; one card."
+    },
+    {
+     "doc": "038",
+     "page": 11,
+     "directive": "either",
+     "disposition": "Q10(b) \"either starch or skimmed milk\": the scheme answers (iv) for each plate type: ROUTES."
+    },
+    {
+     "doc": "038",
+     "page": 11,
+     "directive": "or",
+     "disposition": "Q10(b), same choice."
+    },
+    {
+     "doc": "038",
+     "page": 11,
+     "directive": "both",
+     "disposition": "Q10(b)(iii) \"in both plates\": one reagent for both; one card."
+    },
+    {
+     "doc": "038",
+     "page": 11,
+     "directive": "both",
+     "disposition": "Q10(b) figure note \"Both plates were flooded with test reagent\": printed matter."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "any four",
+     "disposition": "Section C rubric repeated."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "the following",
+     "disposition": "Q11(a): every term asked, one card each."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "or",
+     "disposition": "Q11(b)(ii) \"stated in the article or otherwise\": source of the answer, not a choice of task."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "or",
+     "disposition": "Q11(b)(iii) \"from the passage or otherwise\": source of the answer, not a choice of task."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "any one",
+     "disposition": "Q11(b)(iv)2 \"any one of the following areas\": open choice of area; one card."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "the following",
+     "disposition": "Q11(b)(iv)2, the areas listed."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "or",
+     "disposition": "Q11(b)(iv)2 \"domestic or agricultural or industrial\": the areas listed."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "or",
+     "disposition": "Q11(b)(iv)2, same list."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "any one",
+     "disposition": "Q11(c)(iv) \"any one of the animals\": open single answer; one card."
+    },
+    {
+     "doc": "040",
+     "page": 3,
+     "directive": "the following",
+     "disposition": "Q12(a): every term asked, one card each."
+    },
+    {
+     "doc": "040",
+     "page": 3,
+     "directive": "either",
+     "disposition": "Q12(c)(vi) \"in either plants or animals\": open single answer; one card."
+    },
+    {
+     "doc": "040",
+     "page": 3,
+     "directive": "or",
+     "disposition": "Q12(c)(vi), same choice."
+    },
+    {
+     "doc": "040",
+     "page": 4,
+     "directive": "the following",
+     "disposition": "Q13(b) lead-in: every part asked."
+    },
+    {
+     "doc": "040",
+     "page": 4,
+     "directive": "the following",
+     "disposition": "Q13(b)(i) \"the following partially completed word equation\": a reference."
+    },
+    {
+     "doc": "040",
+     "page": 4,
+     "directive": "the following",
+     "disposition": "Q13(c)(ii) \"each of the following stages\": each stage asked, one card per item."
+    },
+    {
+     "doc": "040",
+     "page": 5,
+     "directive": "any two",
+     "disposition": "Q14(a)(ii) \"any two components\": bounded menu; one card."
+    },
+    {
+     "doc": "040",
+     "page": 5,
+     "directive": "any one",
+     "disposition": "Q14(c)(v) \"any one useful substance\": open single answer; one card."
+    },
+    {
+     "doc": "040",
+     "page": 6,
+     "directive": "any two",
+     "disposition": "Q15(a)(ii) \"any two adaptations\": bounded menu; one card."
+    },
+    {
+     "doc": "040",
+     "page": 6,
+     "directive": "either",
+     "disposition": "Q15(b)(v) \"either monocotyledonous or dicotyledonous\": description, both terms asked; one card."
+    },
+    {
+     "doc": "040",
+     "page": 6,
+     "directive": "or",
+     "disposition": "Q15(b)(v), same description."
+    },
+    {
+     "doc": "040",
+     "page": 6,
+     "directive": "any one",
+     "disposition": "Q15(c)(iii) \"any one example\": open single answer; one card."
+    },
+    {
+     "doc": "040",
+     "page": 7,
+     "directive": "any two",
+     "disposition": "Q16 \"any two of (a), (b), (c), (d)\": whole-part choice; every part is carded."
+    },
+    {
+     "doc": "040",
+     "page": 8,
+     "directive": "any one",
+     "disposition": "Q16(d)(vii) \"any one cause\": open single answer; one card."
+    },
+    {
+     "doc": "040",
+     "page": 8,
+     "directive": "any one",
+     "disposition": "Q16(d)(vii) \"any one corrective measure\": open single answer, same card."
+    },
+    {
+     "doc": "040",
+     "page": 9,
+     "directive": "any two",
+     "disposition": "Q17 \"any two of (a), (b), (c), (d)\": whole-part choice; every part is carded."
+    },
+    {
+     "doc": "040",
+     "page": 9,
+     "directive": "any two",
+     "disposition": "Q17(a)(vi) \"any two components\": bounded menu; one card."
+    },
+    {
+     "doc": "040",
+     "page": 9,
+     "directive": "any two",
+     "disposition": "Q17(b)(ii) \"any two other types\": bounded menu; one card."
+    },
+    {
+     "doc": "040",
+     "page": 9,
+     "directive": "any two",
+     "disposition": "Q17(b)(iii) \"any two methods\": bounded menu; one card."
+    },
+    {
+     "doc": "040",
+     "page": 9,
+     "directive": "the following",
+     "disposition": "Q17(b)(iv) \"the following table\": a reference; every cell asked; one card."
+    },
+    {
+     "doc": "040",
+     "page": 10,
+     "directive": "any two",
+     "disposition": "Q17(d)(ii) \"any two of these organs\": bounded menu; one card."
+    }
+   ],
+   "routes": {
+    "Q4(d)": [
+     "arthritis",
+     "osteoporosis"
+    ],
+    "Q5(e)": [
+     "parkinsons-disease",
+     "paralysis"
+    ],
+    "Q10(b)(iv)": [
+     "iodine",
+     "biuret"
+    ]
+   },
+   "tasks": [
+    {
+     "status": "carded",
+     "key": "1a",
+     "id": "bio-2023-ol-deferred-q1-a",
+     "questionRef": "2023 OL Q1(a) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-1-2",
+     "concept": "why-we-need-food",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 1 is marked on one ladder, 2(7) + 3(2)."
+    },
+    {
+     "status": "carded",
+     "key": "1b",
+     "id": "bio-2023-ol-deferred-q1-b",
+     "questionRef": "2023 OL Q1(b) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-1-2",
+     "concept": "carbohydrate-foods",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 1 is marked on one ladder, 2(7) + 3(2)."
+    },
+    {
+     "status": "carded",
+     "key": "1c",
+     "id": "bio-2023-ol-deferred-q1-c",
+     "questionRef": "2023 OL Q1(c) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-1-2",
+     "concept": "fat-soluble-vitamins",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 1 is marked on one ladder, 2(7) + 3(2)."
+    },
+    {
+     "status": "carded",
+     "key": "1d",
+     "id": "bio-2023-ol-deferred-q1-d",
+     "questionRef": "2023 OL Q1(d) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-1-2",
+     "concept": "trace-elements",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 1 is marked on one ladder, 2(7) + 3(2)."
+    },
+    {
+     "status": "carded",
+     "key": "1e",
+     "id": "bio-2023-ol-deferred-q1-e",
+     "questionRef": "2023 OL Q1(e) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-1-2",
+     "concept": "roles-of-water",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 1 is marked on one ladder, 2(7) + 3(2)."
+    },
+    {
+     "status": "carded",
+     "key": "2a",
+     "id": "bio-2023-ol-deferred-q2-a",
+     "questionRef": "2023 OL Q2(a) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-1",
+     "concept": "enzymes-are-catalysts",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme answers with a tick in the True or False column; read from its position.",
+     "notes": "Question 2 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "2b",
+     "id": "bio-2023-ol-deferred-q2-b",
+     "questionRef": "2023 OL Q2(b) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-1-3",
+     "concept": "ribosomes",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme answers with a tick in the True or False column; read from its position.",
+     "notes": "Question 2 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "2c",
+     "id": "bio-2023-ol-deferred-q2-c",
+     "questionRef": "2023 OL Q2(c) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-1-3",
+     "concept": "nucleus-function",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme answers with a tick in the True or False column; read from its position.",
+     "notes": "Question 2 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "2d",
+     "id": "bio-2023-ol-deferred-q2-d",
+     "questionRef": "2023 OL Q2(d) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-1-1",
+     "concept": "anabolic-reactions",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme answers with a tick in the True or False column; read from its position.",
+     "notes": "Question 2 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "2e",
+     "id": "bio-2023-ol-deferred-q2-e",
+     "questionRef": "2023 OL Q2(e) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-1-3",
+     "concept": "cell-membrane-composition",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme answers with a tick in the True or False column; read from its position.",
+     "notes": "Question 2 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "2f",
+     "id": "bio-2023-ol-deferred-q2-f",
+     "questionRef": "2023 OL Q2(f) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-3",
+     "concept": "meiosis-and-gametes",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme answers with a tick in the True or False column; read from its position.",
+     "notes": "Question 2 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "2g",
+     "id": "bio-2023-ol-deferred-q2-g",
+     "questionRef": "2023 OL Q2(g) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-1-3",
+     "concept": "organ",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme answers with a tick in the True or False column; read from its position.",
+     "notes": "Question 2 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "3a",
+     "id": "bio-2023-ol-deferred-q3-a",
+     "questionRef": "2023 OL Q3(a) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-1-3",
+     "concept": "cell-wall-permeability",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Lettered parts are separate printed addresses; the completed example (Vacuole, struck through in the list) is left out of the stem.",
+     "notes": "Question 3 is marked on one ladder, 2(7) + 3(2)."
+    },
+    {
+     "status": "carded",
+     "key": "3b",
+     "id": "bio-2023-ol-deferred-q3-b",
+     "questionRef": "2023 OL Q3(b) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "turgor",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Lettered parts are separate printed addresses; the completed example (Vacuole, struck through in the list) is left out of the stem.",
+     "notes": "Question 3 is marked on one ladder, 2(7) + 3(2)."
+    },
+    {
+     "status": "carded",
+     "key": "3c",
+     "id": "bio-2023-ol-deferred-q3-c",
+     "questionRef": "2023 OL Q3(c) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "osmosis",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Lettered parts are separate printed addresses; the completed example (Vacuole, struck through in the list) is left out of the stem.",
+     "notes": "Question 3 is marked on one ladder, 2(7) + 3(2)."
+    },
+    {
+     "status": "carded",
+     "key": "3d",
+     "id": "bio-2023-ol-deferred-q3-d",
+     "questionRef": "2023 OL Q3(d) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "salt-as-preservative",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Lettered parts are separate printed addresses; the completed example (Vacuole, struck through in the list) is left out of the stem.",
+     "notes": "Question 3 is marked on one ladder, 2(7) + 3(2)."
+    },
+    {
+     "status": "carded",
+     "key": "3e",
+     "id": "bio-2023-ol-deferred-q3-e",
+     "questionRef": "2023 OL Q3(e) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "diffusion",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Lettered parts are separate printed addresses; the completed example (Vacuole, struck through in the list) is left out of the stem.",
+     "notes": "Question 3 is marked on one ladder, 2(7) + 3(2)."
+    },
+    {
+     "status": "carded",
+     "key": "4a",
+     "id": "bio-2023-ol-deferred-q4-a",
+     "questionRef": "2023 OL Q4(a) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 16,
+     "markUnits": [
+      8,
+      8
+     ],
+     "topic": "bio-2-4",
+     "concept": "tissues-of-a-joint",
+     "route": null,
+     "rows": 2,
+     "figure": "q4-joint",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 4 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "4b",
+     "id": "bio-2023-ol-deferred-q4-b",
+     "questionRef": "2023 OL Q4(b) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-4",
+     "concept": "compact-bone",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-joint",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The answer is an arrow drawn on the printed diagram: a criterion row.",
+     "notes": "Question 4 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "4c",
+     "id": "bio-2023-ol-deferred-q4-c",
+     "questionRef": "2023 OL Q4(c) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 16,
+     "markUnits": [
+      8,
+      8
+     ],
+     "topic": "bio-2-4",
+     "concept": "synovial-fluid",
+     "route": null,
+     "rows": 2,
+     "figure": "q4-joint",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 4 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "4d-arthritis",
+     "id": "bio-2023-ol-deferred-q4-d-arthritis",
+     "questionRef": "2023 OL Q4(d) — arthritis — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 16,
+     "markUnits": [
+      8,
+      8
+     ],
+     "topic": "bio-2-4",
+     "concept": "arthritis",
+     "route": "arthritis",
+     "rows": 2,
+     "figure": "q4-joint",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The paper offers a choice of two disorders and the scheme prices each one's cause and treatment: one card per option, the tariff counted once.",
+     "notes": "Question 4 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "4d-osteoporosis",
+     "id": "bio-2023-ol-deferred-q4-d-osteoporosis",
+     "questionRef": "2023 OL Q4(d) — osteoporosis — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 16,
+     "markUnits": [
+      8,
+      8
+     ],
+     "topic": "bio-2-4",
+     "concept": "osteoporosis",
+     "route": "osteoporosis",
+     "rows": 2,
+     "figure": "q4-joint",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The paper offers a choice of two disorders and the scheme prices each one's cause and treatment: one card per option, the tariff counted once.",
+     "notes": "Question 4 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "5a",
+     "id": "bio-2023-ol-deferred-q5-a",
+     "questionRef": "2023 OL Q5(a) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 16,
+     "markUnits": [
+      8,
+      8
+     ],
+     "topic": "bio-2-4",
+     "concept": "parts-of-a-neuron",
+     "route": null,
+     "rows": 2,
+     "figure": "q5-neuron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 5 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "5b",
+     "id": "bio-2023-ol-deferred-q5-b",
+     "questionRef": "2023 OL Q5(b) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-4",
+     "concept": "direction-of-a-nerve-impulse",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-neuron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The answer is an arrow drawn in the printed box: a criterion row.",
+     "notes": "Question 5 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "5c",
+     "id": "bio-2023-ol-deferred-q5-c",
+     "questionRef": "2023 OL Q5(c) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-4",
+     "concept": "synaptic-cleft",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-neuron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 5 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "5d",
+     "id": "bio-2023-ol-deferred-q5-d",
+     "questionRef": "2023 OL Q5(d) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-4",
+     "concept": "neurotransmitter-vesicles",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-neuron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The answer is a letter placed on the printed diagram: a criterion row.",
+     "notes": "Question 5 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "5e-parkinsons-disease",
+     "id": "bio-2023-ol-deferred-q5-e-parkinsons-disease",
+     "questionRef": "2023 OL Q5(e) — parkinsons-disease — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 16,
+     "markUnits": [
+      8,
+      8
+     ],
+     "topic": "bio-2-4",
+     "concept": "parkinsons-disease",
+     "route": "parkinsons-disease",
+     "rows": 2,
+     "figure": "q5-neuron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The paper offers a choice of two disorders and the scheme prices each one's cause and treatment: one card per option, the tariff counted once.",
+     "notes": "Question 5 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "5e-paralysis",
+     "id": "bio-2023-ol-deferred-q5-e-paralysis",
+     "questionRef": "2023 OL Q5(e) — paralysis — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 16,
+     "markUnits": [
+      8,
+      8
+     ],
+     "topic": "bio-2-4",
+     "concept": "paralysis",
+     "route": "paralysis",
+     "rows": 2,
+     "figure": "q5-neuron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The paper offers a choice of two disorders and the scheme prices each one's cause and treatment: one card per option, the tariff counted once.",
+     "notes": "Question 5 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "6ai",
+     "id": "bio-2023-ol-deferred-q6-a-i",
+     "questionRef": "2023 OL Q6(a)(i) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-6",
+     "concept": "netted-venation",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-leaf",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 6 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "6aii",
+     "id": "bio-2023-ol-deferred-q6-a-ii",
+     "questionRef": "2023 OL Q6(a)(ii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-6",
+     "concept": "parallel-venation",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-leaf",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.6,
+     "pairedBy": "The scheme reprints the ask with a typing slip (\"anther other\").",
+     "decision": null,
+     "notes": "Question 6 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "6bi",
+     "id": "bio-2023-ol-deferred-q6-b-i",
+     "questionRef": "2023 OL Q6(b)(i) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 16,
+     "markUnits": [
+      8,
+      8
+     ],
+     "topic": "bio-2-6",
+     "concept": "gases-through-stomata",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-leaf",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme reprints this part as \"(b) (ii)\"; it is the paper's (b)(i), paired by its wording.",
+     "notes": "Question 6 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "6bii",
+     "id": "bio-2023-ol-deferred-q6-b-ii",
+     "questionRef": "2023 OL Q6(b)(ii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-6",
+     "concept": "lenticels",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-leaf",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 6 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "6ci",
+     "id": "bio-2023-ol-deferred-q6-c-i",
+     "questionRef": "2023 OL Q6(c)(i) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-6",
+     "concept": "phloem",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-leaf",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 6 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "6cii",
+     "id": "bio-2023-ol-deferred-q6-c-ii",
+     "questionRef": "2023 OL Q6(c)(ii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-6",
+     "concept": "xylem",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-leaf",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 6 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "7a",
+     "id": "bio-2023-ol-deferred-q7-a",
+     "questionRef": "2023 OL Q7(a) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-3-1",
+     "concept": "herbivores",
+     "route": null,
+     "rows": 1,
+     "figure": "q7-food-web",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 7 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "7b",
+     "id": "bio-2023-ol-deferred-q7-b",
+     "questionRef": "2023 OL Q7(b) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-3-1",
+     "concept": "carnivores",
+     "route": null,
+     "rows": 1,
+     "figure": "q7-food-web",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 7 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "7c",
+     "id": "bio-2023-ol-deferred-q7-c",
+     "questionRef": "2023 OL Q7(c) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-3-1",
+     "concept": "predator-and-prey",
+     "route": null,
+     "rows": 1,
+     "figure": "q7-food-web",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 7 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "7d",
+     "id": "bio-2023-ol-deferred-q7-d",
+     "questionRef": "2023 OL Q7(d) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-3-1",
+     "concept": "food-chain",
+     "route": null,
+     "rows": 1,
+     "figure": "q7-food-web",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 7 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "7e",
+     "id": "bio-2023-ol-deferred-q7-e",
+     "questionRef": "2023 OL Q7(e) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-3-1",
+     "concept": "omnivore",
+     "route": null,
+     "rows": 1,
+     "figure": "q7-food-web",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.82,
+     "decision": null,
+     "notes": "Question 7 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "7f",
+     "id": "bio-2023-ol-deferred-q7-f",
+     "questionRef": "2023 OL Q7(f) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-3-1",
+     "concept": "trophic-levels",
+     "route": null,
+     "rows": 1,
+     "figure": "q7-food-web",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 7 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "7g",
+     "id": "bio-2023-ol-deferred-q7-g",
+     "questionRef": "2023 OL Q7(g) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-3-1",
+     "concept": "predator-decline",
+     "route": null,
+     "rows": 1,
+     "figure": "q7-food-web",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 7 is marked on one ladder, 8 + 7 + 5(1)."
+    },
+    {
+     "status": "carded",
+     "key": "8a",
+     "id": "bio-2023-ol-deferred-q8-a",
+     "questionRef": "2023 OL Q8(a) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 10,
+     "markUnits": [
+      5,
+      5
+     ],
+     "topic": "bio-3-1",
+     "concept": "quantitative-and-qualitative-surveys",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bi",
+     "id": "bio-2023-ol-deferred-q8-b-i",
+     "questionRef": "2023 OL Q8(b)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-3-1",
+     "concept": "surveyed-plant",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bii",
+     "id": "bio-2023-ol-deferred-q8-b-ii",
+     "questionRef": "2023 OL Q8(b)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-3-1",
+     "concept": "identifying-a-plant",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8biii",
+     "id": "bio-2023-ol-deferred-q8-b-iii",
+     "questionRef": "2023 OL Q8(b)(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 36,
+     "markUnits": [
+      9,
+      9,
+      9,
+      9
+     ],
+     "topic": "bio-3-1",
+     "concept": "quantitative-survey-method",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8biv",
+     "id": "bio-2023-ol-deferred-q8-b-iv",
+     "questionRef": "2023 OL Q8(b)(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-3-1",
+     "concept": "presenting-survey-data",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.6,
+     "pairedBy": "The scheme rewords the ask as \"How did you suitably present your quantitative data?\".",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bv",
+     "id": "bio-2023-ol-deferred-q8-b-v",
+     "questionRef": "2023 OL Q8(b)(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-3-1",
+     "concept": "survey-errors",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9ai",
+     "id": "bio-2023-ol-deferred-q9-a-i",
+     "questionRef": "2023 OL Q9(a)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-1-1",
+     "concept": "metabolism",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9aii",
+     "id": "bio-2023-ol-deferred-q9-a-ii",
+     "questionRef": "2023 OL Q9(a)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-1",
+     "concept": "enzymes-in-washing-powders",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bi",
+     "id": "bio-2023-ol-deferred-q9-b-i",
+     "questionRef": "2023 OL Q9(b)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-1",
+     "concept": "enzyme-used",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bii",
+     "id": "bio-2023-ol-deferred-q9-b-ii",
+     "questionRef": "2023 OL Q9(b)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-1",
+     "concept": "substrate-used",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9biii",
+     "id": "bio-2023-ol-deferred-q9-b-iii",
+     "questionRef": "2023 OL Q9(b)(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-1",
+     "concept": "varying-ph",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9biv",
+     "id": "bio-2023-ol-deferred-q9-b-iv",
+     "questionRef": "2023 OL Q9(b)(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-1",
+     "concept": "products-of-the-enzyme",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bv",
+     "id": "bio-2023-ol-deferred-q9-b-v",
+     "questionRef": "2023 OL Q9(b)(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-1",
+     "concept": "factor-kept-constant",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bvi",
+     "id": "bio-2023-ol-deferred-q9-b-vi",
+     "questionRef": "2023 OL Q9(b)(vi) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-1",
+     "concept": "keeping-a-factor-constant",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bvii",
+     "id": "bio-2023-ol-deferred-q9-b-vii",
+     "questionRef": "2023 OL Q9(b)(vii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 18,
+     "markUnits": [
+      9,
+      9
+     ],
+     "topic": "bio-2-1",
+     "concept": "ph-and-enzyme-activity-graph",
+     "route": null,
+     "rows": 2,
+     "figure": "q9-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme prints the two axis labels in the order A, B.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10ai",
+     "id": "bio-2023-ol-deferred-q10-a-i",
+     "questionRef": "2023 OL Q10(a)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-5",
+     "concept": "conditions-for-germination",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10aii",
+     "id": "bio-2023-ol-deferred-q10-a-ii",
+     "questionRef": "2023 OL Q10(a)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-5",
+     "concept": "advantage-of-dormancy",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bi",
+     "id": "bio-2023-ol-deferred-q10-b-i",
+     "questionRef": "2023 OL Q10(b)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-5",
+     "concept": "seed-used",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-plates",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bii",
+     "id": "bio-2023-ol-deferred-q10-b-ii",
+     "questionRef": "2023 OL Q10(b)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-5",
+     "concept": "control-seeds",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-plates",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10biii",
+     "id": "bio-2023-ol-deferred-q10-b-iii",
+     "questionRef": "2023 OL Q10(b)(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-5",
+     "concept": "agar-and-reagent",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-plates",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10biv-iodine",
+     "id": "bio-2023-ol-deferred-q10-b-iv-iodine",
+     "questionRef": "2023 OL Q10(b)(iv) — iodine — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 36,
+     "markUnits": [
+      9,
+      9,
+      9,
+      9
+     ],
+     "topic": "bio-2-5",
+     "concept": "digestive-activity-results-iodine",
+     "route": "iodine",
+     "rows": 4,
+     "figure": "q10-plates",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme answers for a starch plate tested with iodine OR a milk plate tested with biuret, each with its own results: one card per option, the tariff counted once.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10biv-biuret",
+     "id": "bio-2023-ol-deferred-q10-b-iv-biuret",
+     "questionRef": "2023 OL Q10(b)(iv) — biuret — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 36,
+     "markUnits": [
+      9,
+      9,
+      9,
+      9
+     ],
+     "topic": "bio-2-5",
+     "concept": "digestive-activity-results-biuret",
+     "route": "biuret",
+     "rows": 4,
+     "figure": "q10-plates",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme answers for a starch plate tested with iodine OR a milk plate tested with biuret, each with its own results: one card per option, the tariff counted once.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bv",
+     "id": "bio-2023-ol-deferred-q10-b-v",
+     "questionRef": "2023 OL Q10(b)(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-u2",
+     "concept": "safety-precaution",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-plates",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11ai",
+     "id": "bio-2023-ol-deferred-q11-a-i",
+     "questionRef": "2023 OL Q11(a)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-3-1",
+     "concept": "ecosystem",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Each term is a separately counted response on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11aii",
+     "id": "bio-2023-ol-deferred-q11-a-ii",
+     "questionRef": "2023 OL Q11(a)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-3-1",
+     "concept": "edaphic-factors",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Each term is a separately counted response on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11aiii",
+     "id": "bio-2023-ol-deferred-q11-a-iii",
+     "questionRef": "2023 OL Q11(a)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-3-1",
+     "concept": "habitat",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Each term is a separately counted response on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bi",
+     "id": "bio-2023-ol-deferred-q11-b-i",
+     "questionRef": "2023 OL Q11(b)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 10,
+     "markUnits": [
+      5,
+      5
+     ],
+     "topic": "bio-3-1",
+     "concept": "conservation-grazing",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bii",
+     "id": "bio-2023-ol-deferred-q11-b-ii",
+     "questionRef": "2023 OL Q11(b)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 10,
+     "markUnits": [
+      5,
+      5
+     ],
+     "topic": "bio-3-1",
+     "concept": "population-decline",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11biii",
+     "id": "bio-2023-ol-deferred-q11-b-iii",
+     "questionRef": "2023 OL Q11(b)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-3-1",
+     "concept": "grazing-and-diversity",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11biv1",
+     "id": "bio-2023-ol-deferred-q11-b-iv-1",
+     "questionRef": "2023 OL Q11(b)(iv)1 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-3-1",
+     "concept": "pollution",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11biv2",
+     "id": "bio-2023-ol-deferred-q11-b-iv-2",
+     "questionRef": "2023 OL Q11(b)(iv)2 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-3-1",
+     "concept": "pollutants",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bv1",
+     "id": "bio-2023-ol-deferred-q11-b-v-1",
+     "questionRef": "2023 OL Q11(b)(v)1 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-3-1",
+     "concept": "conservation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bv2",
+     "id": "bio-2023-ol-deferred-q11-b-v-2",
+     "questionRef": "2023 OL Q11(b)(v)2 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-3-1",
+     "concept": "importance-of-conservation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11ci",
+     "id": "bio-2023-ol-deferred-q11-c-i",
+     "questionRef": "2023 OL Q11(c)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-3-1",
+     "concept": "named-ecosystem",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11cii",
+     "id": "bio-2023-ol-deferred-q11-c-ii",
+     "questionRef": "2023 OL Q11(c)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-3-1",
+     "concept": "local-ecological-issue",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11ciii",
+     "id": "bio-2023-ol-deferred-q11-c-iii",
+     "questionRef": "2023 OL Q11(c)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 18,
+     "markUnits": [
+      6,
+      6,
+      6
+     ],
+     "topic": "bio-3-1",
+     "concept": "animals-in-an-ecosystem",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Three animals are three responses on the part's ladder: one row of three.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11civ",
+     "id": "bio-2023-ol-deferred-q11-c-iv",
+     "questionRef": "2023 OL Q11(c)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-3-1",
+     "concept": "animal-adaptations",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11cv",
+     "id": "bio-2023-ol-deferred-q11-c-v",
+     "questionRef": "2023 OL Q11(c)(v) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-3-1",
+     "concept": "abiotic-factor",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11cvi",
+     "id": "bio-2023-ol-deferred-q11-c-vi",
+     "questionRef": "2023 OL Q11(c)(vi) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-3-1",
+     "concept": "abiotic-factors-and-distribution",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ai",
+     "id": "bio-2023-ol-deferred-q12-a-i",
+     "questionRef": "2023 OL Q12(a)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-1-4",
+     "concept": "gene",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Each term is a separately counted response on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12aii",
+     "id": "bio-2023-ol-deferred-q12-a-ii",
+     "questionRef": "2023 OL Q12(a)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-1-4",
+     "concept": "phenotype",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Each term is a separately counted response on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12aiii",
+     "id": "bio-2023-ol-deferred-q12-a-iii",
+     "questionRef": "2023 OL Q12(a)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-1-4",
+     "concept": "gamete",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Each term is a separately counted response on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bi",
+     "id": "bio-2023-ol-deferred-q12-b-i",
+     "questionRef": "2023 OL Q12(b)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-1-4",
+     "concept": "incomplete-dominance",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bii",
+     "id": "bio-2023-ol-deferred-q12-b-ii",
+     "questionRef": "2023 OL Q12(b)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-1-4",
+     "concept": "white-flower-genotype",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12biii",
+     "id": "bio-2023-ol-deferred-q12-b-iii",
+     "questionRef": "2023 OL Q12(b)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-1-4",
+     "concept": "white-flower-gamete",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12biv",
+     "id": "bio-2023-ol-deferred-q12-b-iv",
+     "questionRef": "2023 OL Q12(b)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-1-4",
+     "concept": "pink-flower-genotype",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bv",
+     "id": "bio-2023-ol-deferred-q12-b-v",
+     "questionRef": "2023 OL Q12(b)(v) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 10,
+     "markUnits": [
+      5,
+      5
+     ],
+     "topic": "bio-1-4",
+     "concept": "pink-flower-gametes",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The two gametes are two responses on the part's ladder: one row of two.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bvi",
+     "id": "bio-2023-ol-deferred-q12-b-vi",
+     "questionRef": "2023 OL Q12(b)(vi) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-1-4",
+     "concept": "ratio-of-offspring",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bvii1",
+     "id": "bio-2023-ol-deferred-q12-b-vii-1",
+     "questionRef": "2023 OL Q12(b)(vii)1 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-1-4",
+     "concept": "red-flower-genotype",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bvii2",
+     "id": "bio-2023-ol-deferred-q12-b-vii-2",
+     "questionRef": "2023 OL Q12(b)(vii)2 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-1-4",
+     "concept": "no-red-offspring",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ci",
+     "id": "bio-2023-ol-deferred-q12-c-i",
+     "questionRef": "2023 OL Q12(c)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-1-3",
+     "concept": "tissue",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12cii",
+     "id": "bio-2023-ol-deferred-q12-c-ii",
+     "questionRef": "2023 OL Q12(c)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-1-3",
+     "concept": "tissue-culture-medium",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ciii",
+     "id": "bio-2023-ol-deferred-q12-c-iii",
+     "questionRef": "2023 OL Q12(c)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-1-3",
+     "concept": "tissue-culture-temperature",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12civ",
+     "id": "bio-2023-ol-deferred-q12-c-iv",
+     "questionRef": "2023 OL Q12(c)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-3-2",
+     "concept": "asepsis-and-sterility",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12cv",
+     "id": "bio-2023-ol-deferred-q12-c-v",
+     "questionRef": "2023 OL Q12(c)(v) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-3",
+     "concept": "mitosis-in-tissue-culture",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12cvi",
+     "id": "bio-2023-ol-deferred-q12-c-vi",
+     "questionRef": "2023 OL Q12(c)(vi) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-1-3",
+     "concept": "uses-of-tissue-culture",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12cvii",
+     "id": "bio-2023-ol-deferred-q12-c-vii",
+     "questionRef": "2023 OL Q12(c)(vii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-3",
+     "concept": "daughter-cells-of-mitosis",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12cviii",
+     "id": "bio-2023-ol-deferred-q12-c-viii",
+     "questionRef": "2023 OL Q12(c)(viii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-3",
+     "concept": "interphase",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13ai",
+     "id": "bio-2023-ol-deferred-q13-a-i",
+     "questionRef": "2023 OL Q13(a)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-2",
+     "concept": "autotrophic",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q13a-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The paper marks the term to explain by underlining it, which the text layer drops: the question is shown as printed.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13aii",
+     "id": "bio-2023-ol-deferred-q13-a-ii",
+     "questionRef": "2023 OL Q13(a)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-2",
+     "concept": "energy-for-photosynthesis",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme's reprint drops the ask's first word, \"What\".",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13aiii",
+     "id": "bio-2023-ol-deferred-q13-a-iii",
+     "questionRef": "2023 OL Q13(a)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-2",
+     "concept": "raising-photosynthesis-in-greenhouses",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13bi",
+     "id": "bio-2023-ol-deferred-q13-b-i",
+     "questionRef": "2023 OL Q13(b)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 10,
+     "markUnits": [
+      5,
+      5
+     ],
+     "topic": "bio-2-2",
+     "concept": "photosynthesis-word-equation",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.29,
+     "pairedBy": "The scheme rewords the ask as \"Complete the partial word equation. By filling in the two spaces.\"",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13bii",
+     "id": "bio-2023-ol-deferred-q13-b-ii",
+     "questionRef": "2023 OL Q13(b)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-1-3",
+     "concept": "chloroplast",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-chloroplast",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13biii",
+     "id": "bio-2023-ol-deferred-q13-b-iii",
+     "questionRef": "2023 OL Q13(b)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-2",
+     "concept": "chlorophyll",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-chloroplast",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13biv",
+     "id": "bio-2023-ol-deferred-q13-b-iv",
+     "questionRef": "2023 OL Q13(b)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-2",
+     "concept": "function-of-chlorophyll",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13bv",
+     "id": "bio-2023-ol-deferred-q13-b-v",
+     "questionRef": "2023 OL Q13(b)(v) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 10,
+     "markUnits": [
+      5,
+      5
+     ],
+     "topic": "bio-2-2",
+     "concept": "products-of-splitting-water",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13bvi",
+     "id": "bio-2023-ol-deferred-q13-b-vi",
+     "questionRef": "2023 OL Q13(b)(vi) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 10,
+     "markUnits": [
+      5,
+      5
+     ],
+     "topic": "bio-2-2",
+     "concept": "fate-of-oxygen",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13ci",
+     "id": "bio-2023-ol-deferred-q13-c-i",
+     "questionRef": "2023 OL Q13(c)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-2",
+     "concept": "respiration",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13cii1",
+     "id": "bio-2023-ol-deferred-q13-c-ii-1",
+     "questionRef": "2023 OL Q13(c)(ii)1 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-2",
+     "concept": "location-of-stage-1",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13cii2",
+     "id": "bio-2023-ol-deferred-q13-c-ii-2",
+     "questionRef": "2023 OL Q13(c)(ii)2 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-2",
+     "concept": "location-of-stage-2",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13ciii",
+     "id": "bio-2023-ol-deferred-q13-c-iii",
+     "questionRef": "2023 OL Q13(c)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-2",
+     "concept": "stage-releasing-most-energy",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13civ",
+     "id": "bio-2023-ol-deferred-q13-c-iv",
+     "questionRef": "2023 OL Q13(c)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-2",
+     "concept": "lactic-acid",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13cv",
+     "id": "bio-2023-ol-deferred-q13-c-v",
+     "questionRef": "2023 OL Q13(c)(v) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-2",
+     "concept": "products-of-fermentation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13cvi1",
+     "id": "bio-2023-ol-deferred-q13-c-vi-1",
+     "questionRef": "2023 OL Q13(c)(vi)1 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-2",
+     "concept": "micro-organisms-in-fermentation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13cvi2",
+     "id": "bio-2023-ol-deferred-q13-c-vi-2",
+     "questionRef": "2023 OL Q13(c)(vi)2 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-1",
+     "concept": "advantages-of-immobilisation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14ai",
+     "id": "bio-2023-ol-deferred-q14-a-i",
+     "questionRef": "2023 OL Q14(a)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-6",
+     "concept": "excretion",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14aii",
+     "id": "bio-2023-ol-deferred-q14-a-ii",
+     "questionRef": "2023 OL Q14(a)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 10,
+     "markUnits": [
+      5,
+      5
+     ],
+     "topic": "bio-2-6",
+     "concept": "components-of-sweat",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bi",
+     "id": "bio-2023-ol-deferred-q14-b-i",
+     "questionRef": "2023 OL Q14(b)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-6",
+     "concept": "location-of-the-lungs",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-breathing",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bii",
+     "id": "bio-2023-ol-deferred-q14-b-ii",
+     "questionRef": "2023 OL Q14(b)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 10,
+     "markUnits": [
+      5,
+      5
+     ],
+     "topic": "bio-2-6",
+     "concept": "bronchus-and-alveoli",
+     "route": null,
+     "rows": 2,
+     "figure": "q14-breathing",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14biii",
+     "id": "bio-2023-ol-deferred-q14-b-iii",
+     "questionRef": "2023 OL Q14(b)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-6",
+     "concept": "rings-of-cartilage",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-breathing",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14biv",
+     "id": "bio-2023-ol-deferred-q14-b-iv",
+     "questionRef": "2023 OL Q14(b)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-6",
+     "concept": "adaptations-of-alveoli",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-breathing",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bv",
+     "id": "bio-2023-ol-deferred-q14-b-v",
+     "questionRef": "2023 OL Q14(b)(v) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 20,
+     "markUnits": [
+      5,
+      5,
+      5,
+      5
+     ],
+     "topic": "bio-2-6",
+     "concept": "inhalation",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-breathing",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14ci",
+     "id": "bio-2023-ol-deferred-q14-c-i",
+     "questionRef": "2023 OL Q14(c)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 24,
+     "markUnits": [
+      6,
+      6,
+      6,
+      6
+     ],
+     "topic": "bio-2-6",
+     "concept": "parts-of-the-urinary-system",
+     "route": null,
+     "rows": 4,
+     "figure": "q14-urinary",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14cii",
+     "id": "bio-2023-ol-deferred-q14-c-ii",
+     "questionRef": "2023 OL Q14(c)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-6",
+     "concept": "function-of-the-bladder",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-urinary",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14ciii",
+     "id": "bio-2023-ol-deferred-q14-c-iii",
+     "questionRef": "2023 OL Q14(c)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-6",
+     "concept": "renal-vein-and-artery",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-urinary",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14civ",
+     "id": "bio-2023-ol-deferred-q14-c-iv",
+     "questionRef": "2023 OL Q14(c)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-6",
+     "concept": "site-of-filtration",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-urinary",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14cv",
+     "id": "bio-2023-ol-deferred-q14-c-v",
+     "questionRef": "2023 OL Q14(c)(v) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-6",
+     "concept": "reabsorption",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-urinary",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ai",
+     "id": "bio-2023-ol-deferred-q15-a-i",
+     "questionRef": "2023 OL Q15(a)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-4",
+     "concept": "adverse-external-environments",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15aii",
+     "id": "bio-2023-ol-deferred-q15-a-ii",
+     "questionRef": "2023 OL Q15(a)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 10,
+     "markUnits": [
+      5,
+      5
+     ],
+     "topic": "bio-2-4",
+     "concept": "plant-protective-adaptations",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bi",
+     "id": "bio-2023-ol-deferred-q15-b-i",
+     "questionRef": "2023 OL Q15(b)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-5",
+     "concept": "origin-of-the-seed",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-seed",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bii",
+     "id": "bio-2023-ol-deferred-q15-b-ii",
+     "questionRef": "2023 OL Q15(b)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 15,
+     "markUnits": [
+      5,
+      5,
+      5
+     ],
+     "topic": "bio-2-5",
+     "concept": "parts-of-a-seed",
+     "route": null,
+     "rows": 3,
+     "figure": "q15-seed",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15biii",
+     "id": "bio-2023-ol-deferred-q15-b-iii",
+     "questionRef": "2023 OL Q15(b)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-5",
+     "concept": "function-of-the-testa",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-seed",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15biv",
+     "id": "bio-2023-ol-deferred-q15-b-iv",
+     "questionRef": "2023 OL Q15(b)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-5",
+     "concept": "non-endospermic-seeds",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q15b-iv-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The paper marks the term to explain by underlining it, which the text layer drops: the question is shown as printed.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bv",
+     "id": "bio-2023-ol-deferred-q15-b-v",
+     "questionRef": "2023 OL Q15(b)(v) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 10,
+     "markUnits": [
+      5,
+      5
+     ],
+     "topic": "bio-2-5",
+     "concept": "monocots-and-dicots",
+     "route": null,
+     "rows": 2,
+     "figure": "q15-seed",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bvi",
+     "id": "bio-2023-ol-deferred-q15-b-vi",
+     "questionRef": "2023 OL Q15(b)(vi) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-5",
+     "concept": "competition-between-seedlings",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-seed",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ci",
+     "id": "bio-2023-ol-deferred-q15-c-i",
+     "questionRef": "2023 OL Q15(c)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-4",
+     "concept": "importance-of-tropisms",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15cii",
+     "id": "bio-2023-ol-deferred-q15-c-ii",
+     "questionRef": "2023 OL Q15(c)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      6,
+      6
+     ],
+     "topic": "bio-2-4",
+     "concept": "stimuli-of-tropisms",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ciii",
+     "id": "bio-2023-ol-deferred-q15-c-iii",
+     "questionRef": "2023 OL Q15(c)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-4",
+     "concept": "growth-regulators",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15civ",
+     "id": "bio-2023-ol-deferred-q15-c-iv",
+     "questionRef": "2023 OL Q15(c)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      6,
+      6
+     ],
+     "topic": "bio-2-4",
+     "concept": "growth-regulators-and-hormones",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15cv",
+     "id": "bio-2023-ol-deferred-q15-c-v",
+     "questionRef": "2023 OL Q15(c)(v) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      6,
+      6
+     ],
+     "topic": "bio-2-4",
+     "concept": "uses-of-growth-regulators",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16ai",
+     "id": "bio-2023-ol-deferred-q16-a-i",
+     "questionRef": "2023 OL Q16(a)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "root-section",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-root",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Question 16(a) is marked on one ladder, 2(7) + 8(2)."
+    },
+    {
+     "status": "carded",
+     "key": "16aii",
+     "id": "bio-2023-ol-deferred-q16-a-ii",
+     "questionRef": "2023 OL Q16(a)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "identifying-a-root",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-root",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16aiii1",
+     "id": "bio-2023-ol-deferred-q16-a-iii-1",
+     "questionRef": "2023 OL Q16(a)(iii)1 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "function-of-ground-tissue",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-root",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16aiii2",
+     "id": "bio-2023-ol-deferred-q16-a-iii-2",
+     "questionRef": "2023 OL Q16(a)(iii)2 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "cortex",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-root",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16aiv",
+     "id": "bio-2023-ol-deferred-q16-a-iv",
+     "questionRef": "2023 OL Q16(a)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 28,
+     "markUnits": [
+      7,
+      7,
+      7,
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "zones-of-a-root",
+     "route": null,
+     "rows": 2,
+     "figure": "q16-root",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme counts the diagram and any three of its zone labels as responses on the part's ladder.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16av1",
+     "id": "bio-2023-ol-deferred-q16-a-v-1",
+     "questionRef": "2023 OL Q16(a)(v)1 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "dermal-tissue",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-root",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16av2",
+     "id": "bio-2023-ol-deferred-q16-a-v-2",
+     "questionRef": "2023 OL Q16(a)(v)2 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "function-of-dermal-tissue",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-root",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16bi",
+     "id": "bio-2023-ol-deferred-q16-b-i",
+     "questionRef": "2023 OL Q16(b)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      7,
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "digestion",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16bii",
+     "id": "bio-2023-ol-deferred-q16-b-ii",
+     "questionRef": "2023 OL Q16(b)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 28,
+     "markUnits": [
+      7,
+      7,
+      7,
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "chemical-and-mechanical-digestion",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16biii1",
+     "id": "bio-2023-ol-deferred-q16-b-iii-1",
+     "questionRef": "2023 OL Q16(b)(iii)1 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "location-of-villi",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-villus",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16biii2",
+     "id": "bio-2023-ol-deferred-q16-b-iii-2",
+     "questionRef": "2023 OL Q16(b)(iii)2 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      7,
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "parts-of-a-villus",
+     "route": null,
+     "rows": 2,
+     "figure": "q16-villus",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16biii3",
+     "id": "bio-2023-ol-deferred-q16-b-iii-3",
+     "questionRef": "2023 OL Q16(b)(iii)3 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "absorption-by-lacteals",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-villus",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16ci",
+     "id": "bio-2023-ol-deferred-q16-c-i",
+     "questionRef": "2023 OL Q16(c)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "rhizopus-kingdom",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-rhizopus",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16cii",
+     "id": "bio-2023-ol-deferred-q16-c-ii",
+     "questionRef": "2023 OL Q16(c)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 28,
+     "markUnits": [
+      7,
+      7,
+      7,
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "parts-of-rhizopus",
+     "route": null,
+     "rows": 4,
+     "figure": "q16-rhizopus",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16ciii",
+     "id": "bio-2023-ol-deferred-q16-c-iii",
+     "questionRef": "2023 OL Q16(c)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 28,
+     "markUnits": [
+      7,
+      7,
+      7,
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "sexual-reproduction-in-rhizopus",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-rhizopus",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16civ",
+     "id": "bio-2023-ol-deferred-q16-c-iv",
+     "questionRef": "2023 OL Q16(c)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "harmful-fungi",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-rhizopus",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16di",
+     "id": "bio-2023-ol-deferred-q16-d-i",
+     "questionRef": "2023 OL Q16(d)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 21,
+     "markUnits": [
+      7,
+      7,
+      7
+     ],
+     "topic": "bio-2-5",
+     "concept": "male-reproductive-structures",
+     "route": null,
+     "rows": 3,
+     "figure": "q16-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16dii",
+     "id": "bio-2023-ol-deferred-q16-d-ii",
+     "questionRef": "2023 OL Q16(d)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-5",
+     "concept": "seminal-fluid",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16diii",
+     "id": "bio-2023-ol-deferred-q16-d-iii",
+     "questionRef": "2023 OL Q16(d)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-5",
+     "concept": "site-of-sperm-production",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16div",
+     "id": "bio-2023-ol-deferred-q16-d-iv",
+     "questionRef": "2023 OL Q16(d)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-5",
+     "concept": "testosterone",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16dv",
+     "id": "bio-2023-ol-deferred-q16-d-v",
+     "questionRef": "2023 OL Q16(d)(v) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-5",
+     "concept": "meiosis-and-sperm",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16dvi",
+     "id": "bio-2023-ol-deferred-q16-d-vi",
+     "questionRef": "2023 OL Q16(d)(vi) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-5",
+     "concept": "sperm-tail",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "16dvii",
+     "id": "bio-2023-ol-deferred-q16-d-vii",
+     "questionRef": "2023 OL Q16(d)(vii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      7,
+      7
+     ],
+     "topic": "bio-2-5",
+     "concept": "male-infertility",
+     "route": null,
+     "rows": 2,
+     "figure": "q16-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17ai",
+     "id": "bio-2023-ol-deferred-q17-a-i",
+     "questionRef": "2023 OL Q17(a)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "closed-circulatory-system",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17aii",
+     "id": "bio-2023-ol-deferred-q17-a-ii",
+     "questionRef": "2023 OL Q17(a)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      7,
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "pulmonary-and-systemic-circuits",
+     "route": null,
+     "rows": 2,
+     "figure": "q17-circulation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17aiii1",
+     "id": "bio-2023-ol-deferred-q17-a-iii-1",
+     "questionRef": "2023 OL Q17(a)(iii)1 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "vena-cava",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-circulation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17aiii2",
+     "id": "bio-2023-ol-deferred-q17-a-iii-2",
+     "questionRef": "2023 OL Q17(a)(iii)2 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "aorta",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-circulation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17aiv",
+     "id": "bio-2023-ol-deferred-q17-a-iv",
+     "questionRef": "2023 OL Q17(a)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      7,
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "arteries-and-veins",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17av",
+     "id": "bio-2023-ol-deferred-q17-a-v",
+     "questionRef": "2023 OL Q17(a)(v) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "capillaries",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17avi",
+     "id": "bio-2023-ol-deferred-q17-a-vi",
+     "questionRef": "2023 OL Q17(a)(vi) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      7,
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "components-of-blood",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17bi",
+     "id": "bio-2023-ol-deferred-q17-b-i",
+     "questionRef": "2023 OL Q17(b)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-5",
+     "concept": "layering",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-layering",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17bii",
+     "id": "bio-2023-ol-deferred-q17-b-ii",
+     "questionRef": "2023 OL Q17(b)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      7,
+      7
+     ],
+     "topic": "bio-2-5",
+     "concept": "artificial-propagation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17biii",
+     "id": "bio-2023-ol-deferred-q17-b-iii",
+     "questionRef": "2023 OL Q17(b)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      7,
+      7
+     ],
+     "topic": "bio-2-5",
+     "concept": "vegetative-propagation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17biv",
+     "id": "bio-2023-ol-deferred-q17-b-iv",
+     "questionRef": "2023 OL Q17(b)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 35,
+     "markUnits": [
+      7,
+      7,
+      7,
+      7,
+      7
+     ],
+     "topic": "bio-2-5",
+     "concept": "seed-and-vegetative-reproduction",
+     "route": null,
+     "rows": 5,
+     "figure": "q17b-iv-scheme",
+     "questionFigure": "q17b-iv-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme fills the table's five empty cells, each a response on the part's ladder; its completed table is the solution figure.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17ci",
+     "id": "bio-2023-ol-deferred-q17-c-i",
+     "questionRef": "2023 OL Q17(c)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "bacteria-kingdom",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-bacterium",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17cii",
+     "id": "bio-2023-ol-deferred-q17-c-ii",
+     "questionRef": "2023 OL Q17(c)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 21,
+     "markUnits": [
+      7,
+      7,
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "parts-of-a-bacterium",
+     "route": null,
+     "rows": 3,
+     "figure": "q17-bacterium",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17ciii",
+     "id": "bio-2023-ol-deferred-q17-c-iii",
+     "questionRef": "2023 OL Q17(c)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "pathogenic-bacteria",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-bacterium",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17civ",
+     "id": "bio-2023-ol-deferred-q17-c-iv",
+     "questionRef": "2023 OL Q17(c)(iv) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      7,
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "bacterial-shapes",
+     "route": null,
+     "rows": 2,
+     "figure": "q17-bacterium",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17cv",
+     "id": "bio-2023-ol-deferred-q17-c-v",
+     "questionRef": "2023 OL Q17(c)(v) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      7,
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "factors-affecting-bacterial-growth",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-bacterium",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17cvi",
+     "id": "bio-2023-ol-deferred-q17-c-vi",
+     "questionRef": "2023 OL Q17(c)(vi) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "endospores",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-bacterium",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17di",
+     "id": "bio-2023-ol-deferred-q17-d-i",
+     "questionRef": "2023 OL Q17(d)(i) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      7,
+      7
+     ],
+     "topic": "bio-2-4",
+     "concept": "general-defence-system",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17dii",
+     "id": "bio-2023-ol-deferred-q17-d-ii",
+     "questionRef": "2023 OL Q17(d)(ii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      7,
+      7
+     ],
+     "topic": "bio-2-4",
+     "concept": "organs-of-the-immune-system",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-immune",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17diii",
+     "id": "bio-2023-ol-deferred-q17-d-iii",
+     "questionRef": "2023 OL Q17(d)(iii) — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-4",
+     "concept": "antigen",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17div1",
+     "id": "bio-2023-ol-deferred-q17-d-iv-1",
+     "questionRef": "2023 OL Q17(d)(iv)1 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      7,
+      7
+     ],
+     "topic": "bio-2-4",
+     "concept": "active-and-passive-immunity",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17div2",
+     "id": "bio-2023-ol-deferred-q17-d-iv-2",
+     "questionRef": "2023 OL Q17(d)(iv)2 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-4",
+     "concept": "passive-immunity-is-short-lived",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17dv1",
+     "id": "bio-2023-ol-deferred-q17-d-v-1",
+     "questionRef": "2023 OL Q17(d)(v)1 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "antibiotics",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "17dv2",
+     "id": "bio-2023-ol-deferred-q17-d-v-2",
+     "questionRef": "2023 OL Q17(d)(v)2 — Deferred sitting",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "abuse-of-antibiotics",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+     "notes": null
+    }
+   ],
+   "cardCount": 188,
+   "baseTaskCount": 188,
+   "figures": [
+    "biology-2023-ol-deferred-q10-plates",
+    "biology-2023-ol-deferred-q13-chloroplast",
+    "biology-2023-ol-deferred-q13a-question",
+    "biology-2023-ol-deferred-q14-breathing",
+    "biology-2023-ol-deferred-q14-urinary",
+    "biology-2023-ol-deferred-q15-seed",
+    "biology-2023-ol-deferred-q15b-iv-question",
+    "biology-2023-ol-deferred-q16-male",
+    "biology-2023-ol-deferred-q16-rhizopus",
+    "biology-2023-ol-deferred-q16-root",
+    "biology-2023-ol-deferred-q16-villus",
+    "biology-2023-ol-deferred-q17-bacterium",
+    "biology-2023-ol-deferred-q17-circulation",
+    "biology-2023-ol-deferred-q17-immune",
+    "biology-2023-ol-deferred-q17-layering",
+    "biology-2023-ol-deferred-q17b-iv-question",
+    "biology-2023-ol-deferred-q17b-iv-scheme",
+    "biology-2023-ol-deferred-q4-joint",
+    "biology-2023-ol-deferred-q5-neuron",
+    "biology-2023-ol-deferred-q6-leaf",
+    "biology-2023-ol-deferred-q7-food-web",
+    "biology-2023-ol-deferred-q9-graph"
+   ],
+   "checks": {
+    "censusLeaves": 173,
+    "censusLeavesClaimed": 173,
+    "atlas": {
+     "1": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-12-chemicals-of-life-biomolecules",
+       "biology-ordinary-old-course-food-food-tests"
+      ],
+      "taskTopics": [
+       "bio-1-2"
+      ]
+     },
+     "2": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-13-unit-of-life-cells",
+       "biology-ordinary-new-course-21-enzymes",
+       "biology-ordinary-new-course-11-characteristics-of-life",
+       "biology-ordinary-new-course-23-cell-division-and-cancer",
+       "biology-ordinary-old-course-cell-metabolism-osmosis",
+       "biology-ordinary-old-course-biochemical-reactions-enzymes",
+       "biology-ordinary-old-course-cell-division"
+      ],
+      "taskTopics": [
+       "bio-1-1",
+       "bio-1-3",
+       "bio-2-1",
+       "bio-2-3"
+      ]
+     },
+     "3": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-13-unit-of-life-cells",
+       "biology-ordinary-new-course-26-transport-across-membranes",
+       "biology-ordinary-old-course-cell-metabolism-osmosis"
+      ],
+      "taskTopics": [
+       "bio-1-3",
+       "bio-2-6"
+      ]
+     },
+     "4": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-24-the-musculoskeletal-system",
+       "biology-ordinary-old-course-musculoskeletal-system"
+      ],
+      "taskTopics": [
+       "bio-2-4"
+      ]
+     },
+     "5": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-24-the-nervous-system",
+       "biology-ordinary-old-course-eyeear-nervous-system"
+      ],
+      "taskTopics": [
+       "bio-2-4"
+      ]
+     },
+     "6": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-26-plant-structure-and-transport",
+       "biology-ordinary-old-course-plant-structure",
+       "biology-ordinary-old-course-transport-in-plants"
+      ],
+      "taskTopics": [
+       "bio-2-6"
+      ]
+     },
+     "7": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-31-ecology-ecosystems-and-biodiversity",
+       "biology-ordinary-old-course-ecology-ecosystems"
+      ],
+      "taskTopics": [
+       "bio-3-1"
+      ]
+     },
+     "8": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-31-investigating-an-ecosystem",
+       "biology-ordinary-new-course-31-ecology-ecosystems-and-biodiversity",
+       "biology-ordinary-old-course-ecology-ecosystems"
+      ],
+      "taskTopics": [
+       "bio-3-1"
+      ]
+     },
+     "9": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-21-enzymes",
+       "biology-ordinary-new-course-11-characteristics-of-life",
+       "biology-ordinary-old-course-biochemical-reactions-enzymes"
+      ],
+      "taskTopics": [
+       "bio-1-1",
+       "bio-2-1"
+      ]
+     },
+     "10": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-25-reproduction-plant",
+       "biology-ordinary-new-course-u2-investigating-in-science",
+       "biology-ordinary-old-course-plant-reproduction",
+       "biology-ordinary-old-course-experiment-questions"
+      ],
+      "taskTopics": [
+       "bio-2-5",
+       "bio-u2"
+      ]
+     },
+     "11": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-31-ecology-ecosystems-and-biodiversity",
+       "biology-ordinary-new-course-31-investigating-an-ecosystem",
+       "biology-ordinary-old-course-ecology-ecosystems"
+      ],
+      "taskTopics": [
+       "bio-3-1"
+      ]
+     },
+     "12": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-14-information-of-life-genetic-inheritance",
+       "biology-ordinary-new-course-13-unit-of-life-cells",
+       "biology-ordinary-new-course-23-cell-division-and-cancer",
+       "biology-ordinary-new-course-32-microorganisms",
+       "biology-ordinary-old-course-genetics-dna-evolution",
+       "biology-ordinary-old-course-cell-division"
+      ],
+      "taskTopics": [
+       "bio-1-3",
+       "bio-1-4",
+       "bio-2-3",
+       "bio-3-2"
+      ]
+     },
+     "13": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-22-photosynthesis",
+       "biology-ordinary-new-course-22-respiration",
+       "biology-ordinary-new-course-13-unit-of-life-cells",
+       "biology-ordinary-new-course-21-enzymes",
+       "biology-ordinary-old-course-photosynthesis",
+       "biology-ordinary-old-course-respiration"
+      ],
+      "taskTopics": [
+       "bio-1-3",
+       "bio-2-1",
+       "bio-2-2"
+      ]
+     },
+     "14": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-26-the-urinary-system",
+       "biology-ordinary-new-course-26-the-breathing-system",
+       "biology-ordinary-old-course-excretion",
+       "biology-ordinary-old-course-breathing-system"
+      ],
+      "taskTopics": [
+       "bio-2-6"
+      ]
+     },
+     "15": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-24-plant-responses",
+       "biology-ordinary-new-course-25-reproduction-plant",
+       "biology-ordinary-old-course-plant-responses",
+       "biology-ordinary-old-course-plant-reproduction"
+      ],
+      "taskTopics": [
+       "bio-2-4",
+       "bio-2-5"
+      ]
+     },
+     "16": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-26-plant-structure-and-transport",
+       "biology-ordinary-new-course-26-the-digestive-system",
+       "biology-ordinary-new-course-32-microorganisms",
+       "biology-ordinary-new-course-25-reproduction-human",
+       "biology-ordinary-old-course-plant-structure",
+       "biology-ordinary-old-course-digestive-system",
+       "biology-ordinary-old-course-bacteria-viruses-fungi-protista",
+       "biology-ordinary-old-course-human-reproduction"
+      ],
+      "taskTopics": [
+       "bio-2-5",
+       "bio-2-6",
+       "bio-3-2"
+      ]
+     },
+     "17": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-26-the-circulatory-system-and-blood",
+       "biology-ordinary-new-course-25-reproduction-plant",
+       "biology-ordinary-new-course-32-microorganisms",
+       "biology-ordinary-new-course-24-immunity",
+       "biology-ordinary-old-course-blood-circulatory-system",
+       "biology-ordinary-old-course-plant-reproduction",
+       "biology-ordinary-old-course-bacteria-viruses-fungi-protista",
+       "biology-ordinary-old-course-immunity"
+      ],
+      "taskTopics": [
+       "bio-2-4",
+       "bio-2-5",
+       "bio-2-6",
+       "bio-3-2"
+      ]
+     }
+    },
+    "atlasRule": "every task topic is a curriculum node of one of its question's Topic Atlas topics (biology-<year>-exam-topic-map.json via biology-curriculum-crosswalk.json)",
+    "tickChecksumsMatched": 36,
+    "excluded": []
+   }
   }
  }
 }
