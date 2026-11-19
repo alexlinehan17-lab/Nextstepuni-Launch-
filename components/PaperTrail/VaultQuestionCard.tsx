@@ -31,7 +31,7 @@ import { sittingLabel } from './sitting';
 import { lensFor } from '../../data/markingLens';
 import { physicalEducationTask } from './physicalEducationTasks';
 const PhysicalEducationTaskCard = lazy(() => import('./PhysicalEducationTaskCard'));
-import { frenchAudioForPaper } from './frenchAudio';
+import { audioForPaper } from './paperRecording';
 import FrenchPaperAudio from './FrenchPaperAudio';
 import AudioSourcePlayer from '../MarkBank/AudioSourcePlayer';
 
@@ -132,7 +132,7 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
   const rootRef = useRef<HTMLDivElement | null>(null);
 
   const resolved = useMemo(() => resolveSibling(sibling), [sibling]);
-  const audioSource = useMemo(() => frenchAudioForPaper(sibling), [sibling]);
+  const audioSource = useMemo(() => audioForPaper(sibling), [sibling]);
   // Marking Lens — the scheme-grounded marks breakdown, where one is authored.
   // Independent of the crop state: it teaches even when no crop can render.
   const lens = useMemo(() => lensFor(sibling), [sibling]);

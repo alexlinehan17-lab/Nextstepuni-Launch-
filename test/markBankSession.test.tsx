@@ -454,7 +454,9 @@ describe('the question comes first and stays', () => {
     expect(screen.getByText('Check your complete response.')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Select all/ })).not.toBeInTheDocument();
     expect(screen.getByText(/Explain the hidden economy and give one example other than/)).toBeInTheDocument();
+    // Economics is not a confidence-review subject: the question total stays the assessment.
     expect(screen.getByText(/Assess your complete answer against the 8-mark total/)).toBeInTheDocument();
+    expect(screen.queryByText('Confidence review')).not.toBeInTheDocument();
   });
 
   test('keeps a multi-row complete route under one published total', () => {
@@ -466,6 +468,7 @@ describe('the question comes first and stays', () => {
     expect(screen.getByText(/Explain the market diagram: supernormal profit attracts entry/)).toBeInTheDocument();
     expect(screen.getByText(/Answer \(b\) as well as both diagrams and their explanations/)).toBeInTheDocument();
     expect(screen.getByText(/Assess your complete answer against the 15-mark total/)).toBeInTheDocument();
+    expect(screen.queryByText('Confidence review')).not.toBeInTheDocument();
   });
 
   test('opens the Irish edition and reveals its distinct labels only with the answer', () => {

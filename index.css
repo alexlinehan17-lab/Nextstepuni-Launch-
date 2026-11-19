@@ -1668,6 +1668,18 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   white-space: nowrap;
 }
 
+/* Codex's source notes (Link Modules case studies, Maths, Physics, Home
+   Economics, Japanese, Russian) carry instructions a student needs before the
+   reveal, so they wrap and stay visible on phones. Other subjects keep the
+   single truncated line they have always had. */
+.mb-source-reader-provenance.mb-source-notes-full span {
+  overflow: visible;
+  font: 400 10.5px/1.4 'DM Sans', system-ui, sans-serif;
+  text-overflow: clip;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
 .mb-source-reader-provenance a {
   width: fit-content;
   margin-top: 3px;
@@ -1822,6 +1834,10 @@ html:not(.dark) [class*="text-[#A0978D]"] {
 
   .mb-source-reader-provenance span {
     display: none;
+  }
+
+  .mb-source-reader-provenance.mb-source-notes-full span {
+    display: block;
   }
 
   .mb-source-reader-navigation {
