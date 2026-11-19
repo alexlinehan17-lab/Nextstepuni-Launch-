@@ -44,7 +44,8 @@ KEY = re.compile(r'^(L[A-E])(\d{1,2})(?:([a-h])-)?(i{1,3}|iv|vi{0,3})?$'
                  r'|^(A|B)(\d{1,2})([a-l])?(?:-(i{1,3}|iv|vi{0,3}))?$')
 AUDIO = os.path.join(ROOT, 'data', 'portugueseAudio.json')
 PARTE = re.compile(r'^Parte\s+([A-E])\b')
-NUMBERED = re.compile(r'^\(\d{1,2}\)')
+# A question's printed number: "(1)" (2025, 2026) or "1." (2022-2024).
+NUMBERED = re.compile(r'^(?:\(\d{1,2}\)|\d{1,2}\.\s)')
 # "Parte A Diálogo ⟨20 Marks⟩", "Parte B Anúncio 20 marks", and 2025 Higher's
 # bare "Parte B Entrevista 20".
 SECTION_TOTAL = re.compile(r'^Parte?\s+([A-E])\b.*?(\d{1,3})\s*(?:marks?\b|\u27e9|$)', re.I)
@@ -374,6 +375,7 @@ def listening_cards(year, level):
         ask = asks[key]
         part = key[0][1]
         title, stem = intros[part]
+        stem = _repair(year, level, 'aural', stem)
         question = _repair(year, level, 'aural', _question(ask, spec, doc))
         language = _listening_language(stem)
         note = language_note(SUBJECT, language)

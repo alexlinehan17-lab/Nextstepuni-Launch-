@@ -151,6 +151,14 @@ def _check_aural_map(year, letter, parts):
     with open(path, encoding='utf-8') as fh:
         mapped = json.load(fh)['q']
     ns = [q['n'] for q in mapped]
+    if not any(q.get('label') for q in mapped) and ns != [str(i + 1) for i in range(len(parts))]:
+        # An unlabelled map that does not number the Partes: the 2024 maps
+        # number Parte A's questions and anchor them on the scheme's reading
+        # pages (a Paper Trail defect, reported). The rows number the Partes
+        # 1-5, the convention of every labelled Portuguese map, so a mended
+        # map lines up with them.
+        print(f'  NOTE {year} {letter}: aural answer map numbers {ns} without labels; Partes numbered 1-{len(parts)}')
+        return
     if ns != [str(i + 1) for i in range(len(parts))]:
         raise ValueError(f'{year} {letter}: aural answer map numbers {ns} against Partes {parts}')
     for q, p in zip(mapped, parts):

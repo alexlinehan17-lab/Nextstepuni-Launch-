@@ -761,7 +761,9 @@ function historyEssayFault(c, scheme) {
  *  carry a printed lower scale). */
 // Polish joins with treatment D (languages-q3 lane, 19 Nov 2026): its Część B
 // tasks are marked on one Content (C) / Expression (E) grid, the same card.
-const GRID_SUBJECTS = new Set(['spanish', 'german', 'music', 'polish']);
+// Portuguese joins the same way (languages-q3, 19 Nov 2026): its Section B
+// tasks are marked on a Content and Communication / Language grid.
+const GRID_SUBJECTS = new Set(['spanish', 'german', 'music', 'polish', 'portuguese']);
 /** Music is sat in separate booklets; a card's section names the booklet it is
  *  printed in, by the Paper Trail index's own label. */
 const MUSIC_BOOKLET = { L: 'Listening', A: 'Composing', B: 'Composing', E: 'Elective' };
@@ -782,7 +784,7 @@ const bandNameTraces = (scheme, label) => {
 };
 function spanishGridFault(c, scheme) {
   const r = c.rubric;
-  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German, Music or Polish marking grid';
+  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German, Music, Polish or Portuguese marking grid';
   if (r.allocation || r.answerGuide) return 'a marking grid carries no answer rows';
   const criteria = r.criteria ?? [];
   if (!criteria.length || new Set(criteria.map(k => k.id)).size !== criteria.length) return 'no criteria, or two with one id';
