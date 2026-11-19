@@ -1,0 +1,40 @@
+{
+  "recordedAt": "2026-11-19T19:17:43.141Z",
+  "payloadSha256": "42e7a81a1533013f55f46ea833f348167cceeab0860ab7fb4da625caad791ca7",
+  "checked": 8,
+  "result": [
+    {
+      "id": "lcvp-2023-cl-deferred-a1",
+      "fault": null
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a2",
+      "fault": null
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a3",
+      "fault": null
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a4",
+      "fault": null
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a5",
+      "fault": null
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a6",
+      "fault": null
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a7",
+      "fault": null
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a8",
+      "fault": null
+    }
+  ],
+  "scope": "Canonical SEC video identity and sitting only; no network, playback, hosting or publication verification. secFileid remains actual archive filename; shared storage resolver adds its deferred suffix from canonicalUrl."
+}

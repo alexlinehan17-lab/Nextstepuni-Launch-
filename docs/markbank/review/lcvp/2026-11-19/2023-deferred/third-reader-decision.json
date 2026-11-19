@@ -1,0 +1,59 @@
+{
+  "recordedAt": "2026-11-19T20:55:00Z",
+  "reader": "Claude third reader (assigned by the Claude coordinator)",
+  "readerA": "root reader (rootHeadingIds / rootOriginalTextProposal)",
+  "readerB": "second reader (secondHeadingIds / second reader split proposal)",
+  "method": "Original paper and scheme renders in original-pages/ read for every item. Rules: PLAN R7/R9, CARD-STANDARD sections 5 and 9. Splitting rule applied across all LCVP packets: a separately printed instruction (its own sentence), or an item the paper itself names, that the scheme marks separately is its own card; a single compound instruction ('identify and explain') whose (1+1) sits inside each answer point stays one card. Filing: evaluating or planning a visit goes with the visit's unit, as the live 2015-2026 filings do.",
+  "items": [
+    {
+      "id": "C1b",
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Paper p16 Q1(b), under 'Visit out gives us an insight into enterprises in our community', asks five questions to ask on the visit and scheme p8 (physical p9) pays 5 x 1m for questions 'relevant to the organisation' (what it makes, employees, training, recruiting, awards, challenges), i.e. investigating a local enterprise, with the agreed C1(a).",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C1di",
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Paper p18 Q1(d)(i) asks why it is important to evaluate the visit out and scheme p9 (physical p10) pays 2 x 1m for reasons about that visit; the live 2023 Q6(d) 'why evaluate the visit out/visit in' card is under Local Business Enterprises.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C1dii-methods",
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Paper p18 Q1(d)(ii) asks methods to evaluate the visit out and scheme p9 pays '1m method' for methods aimed at it (questionnaire to the organisation visited, asking its members, report quality); evaluating a visit goes with the visit, as live 2024 Q2(d) and the 2011 Q2(d)(ii) settlement are.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C1dii-reasons",
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Same printed part (paper p18, scheme p9): the '1m Reason' beside each visit-evaluation method is filed with the methods.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C3c",
+      "decision": {"headingIds": ["link-modules-common-2-local-voluntarycommunity-enterprises"]},
+      "reason": "Paper p23 Q3(c), under 'My own place ... the area in which we live', asks a SWOT/SCOT of the local area and scheme p12-13 (physical p13-14) gives no marks for headings and 4 x 2m (1+1) only for points about the community (amenities, community spirit, volunteers, tourism, grants, lack of community interest), so the marks test knowledge of the local community, as the agreed Q3(a)-(b) are filed.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "C7c",
+      "decision": {"headingIds": ["link-modules-common-1-job-seeking-skills"]},
+      "reason": "Paper p35 Q7(c), in a question on recruitment agencies and job interviews, asks the features employers look for in a potential employee and scheme p18 (physical p19) pays 3 x 3m (1+1+1) for recruitment criteria (qualifications, experience, qualities, skills, teamwork); the live 2017 Q5(d) and 2025 Q2(b) 'potential employee' cards are under Job Seeking Skills.",
+      "agreesWith": "A"
+    }
+  ],
+  "splitValidation": [
+    {
+      "id": "B2(ii)",
+      "decision": {"cards": 2, "cardMarks": [3, 3], "perCardSubject": ["suggest three ways to integrate the refugees", "give reasons for your answers"]},
+      "reason": "Paper p11 Q2(ii) prints two separate instructions, 'Suggest three ways ...' and 'Give reasons for your answers', and scheme p5 (physical p6) pays 3 x 2m (1+1) with each model printed as way then reason, so each printed ask carries 3 marks (R7, the CARD-STANDARD 'prints two asks' case); the informed 3+3 is confirmed, keeping the unlabelled-(1+1) caveat in the card's source note.",
+      "agreesWith": "both"
+    },
+    {
+      "id": "C6(b)",
+      "decision": {"cards": 2, "cardMarks": [2, 2], "perCardSubject": ["two skills of an entrepreneur", "two qualities of an entrepreneur"]},
+      "reason": "Paper p31 Q6(b) names two categories, two skills and two qualities, and scheme p17 (physical p18) prints a separate Skills list and Qualities list at 2 x 2m (1/1) ('List is not exhaustive'); either reading of that allocation gives 2 marks to the skills and 2 to the qualities, so the two named things are answered separately for separate marks; the informed 2+2 is confirmed, keeping the scheme's own classification (communication under qualities).",
+      "agreesWith": "both"
+    }
+  ]
+}

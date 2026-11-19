@@ -1,0 +1,101 @@
+[
+  {
+    "ref": "B2(ii)",
+    "originalPrompt": "Suggest three ways that Ballyfert could further integrate the refugees. Give reasons for your answers.",
+    "selectedPrompts": [
+      "Suggest three ways that Ballyfert could further integrate the refugees.",
+      "Give reasons for your answers."
+    ],
+    "marks": [
+      3,
+      3
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "thirdReaderRequired": true
+  },
+  {
+    "ref": "C1(a)",
+    "originalPrompt": "Name an enterprise you planned to visit and give a brief outline of the services it offers.",
+    "selectedPrompts": [
+      "Name an enterprise you planned to visit",
+      "and give a brief outline of the services it offers."
+    ],
+    "marks": [
+      1,
+      3
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "thirdReaderRequired": false
+  },
+  {
+    "ref": "C1(d)(ii)",
+    "originalPrompt": "Describe three methods that could be used to evaluate the visit out. Give a reason for choosing each method.",
+    "selectedPrompts": [
+      "Describe three methods that could be used to evaluate the visit out.",
+      "Give a reason for choosing each method."
+    ],
+    "marks": [
+      3,
+      3
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "thirdReaderRequired": false
+  },
+  {
+    "ref": "C2(a)",
+    "originalPrompt": "Name a career you have investigated and outline two qualities needed for this career.",
+    "selectedPrompts": [
+      "Name a career you have investigated",
+      "and outline two qualities needed for this career."
+    ],
+    "marks": [
+      1,
+      2
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "thirdReaderRequired": false
+  },
+  {
+    "ref": "C2(b)",
+    "originalPrompt": "Identify three sources of information you used to investigate this career. How was each source relevant?",
+    "selectedPrompts": [
+      "Identify three sources of information you used to investigate this career.",
+      "How was each source relevant?"
+    ],
+    "marks": [
+      3,
+      3
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "thirdReaderRequired": false
+  },
+  {
+    "ref": "C3(b)",
+    "originalPrompt": "Identify a need that is currently not being met in your local community and suggest how this need could be met.",
+    "selectedPrompts": [
+      "Identify a need that is currently not being met in your local community",
+      "and suggest how this need could be met."
+    ],
+    "marks": [
+      2,
+      4
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "thirdReaderRequired": false
+  },
+  {
+    "ref": "C6(b)",
+    "originalPrompt": "Outline two skills and two qualities of an entrepreneur that you are familiar with.",
+    "selectedPrompts": [
+      "Outline two skills of an entrepreneur that you are familiar with.",
+      "Outline two qualities of an entrepreneur that you are familiar with."
+    ],
+    "marks": [
+      2,
+      2
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "thirdReaderRequired": true,
+    "sharedVerbAndObject": true
+  }
+]

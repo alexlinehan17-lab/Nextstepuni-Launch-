@@ -1,0 +1,102 @@
+{
+  "recordedAt": "2026-11-19T19:12:45.178127+00:00",
+  "reviewedPayloadSha256": "77b55b2280b30b332210f3661ae5bd3054309c29921f54fa64fa10805c18b405",
+  "status": "Source-only candidate review. Provisional split and heading decisions remain unresolved; no production or application clearance.",
+  "coverage": {
+    "cardsRead": 50,
+    "originalQuestionSchemeBlocksRead": 43,
+    "offeredMarks": 235,
+    "candidateMaximum": 160,
+    "sourceImagesPreviouslyViewed": 60,
+    "originalImagesReopenedNow": [
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/original-pages/paper-09.png",
+        "sha256": "50ae402f409410406ff4d1f92ce5a1d272745b6c9d0befab1b4af3fa5092aae4"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/original-pages/paper-25.png",
+        "sha256": "777732386e692c774c8dab2a305db99df950bf64cbd88a2850dea70e374d538a"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/original-pages/scheme-05.png",
+        "sha256": "721a6e8dd5564cde0f134a56dd05ccb93857c1a0ac3f4ef9e9e68bfe4aba1b91"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/original-pages/scheme-15.png",
+        "sha256": "eb17312649489da86d0ce9e6b4f78669e78b5712c20f480bb19e7578d6a5c38f"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/original-pages/scheme-17.png",
+        "sha256": "d695714ad62f0623f2092c3cb6841b5b35485e944b65a9410c38bab76fe13fb9"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/original-pages/scheme-18.png",
+        "sha256": "8c6e51ff317029cf19ba5bcc5d26cab51791fe16f47445394e43313618643d98"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "kind": "confirmed",
+      "detail": "All50 prompts and controls follow the43 source blocks, with two explicitly provisional split groups. Full Ballyfert case, all multi-page model pools and printed directions retained."
+    },
+    {
+      "kind": "confirmed",
+      "detail": "Eight whole R4 notices and A6 scoped partial notice preserve the printed criteria/options. A6 remains one6-mark ask with3x2(0/2); no reason marks invented."
+    },
+    {
+      "kind": "confirmed",
+      "detail": "C4(a) two marks for four ways and C5(b) eight marks for three ways remain whole-question guidance with no inferred internal allocations. Original scheme15/17 reopened."
+    },
+    {
+      "kind": "confirmed",
+      "detail": "C3(d) retains one3-mark and three2-mark responses without assigning particular models to higher award. C1(b) Etc. and C6(b) List is not exhaustive remain open-ended."
+    },
+    {
+      "kind": "refinement-requested",
+      "id": "lcvp-2023-cl-deferred-c4b",
+      "detail": "Label the three0/2 control parts Services Provided, Finance, Staffing instead of generic Response1/2/3. Preserve the fixed R4 row, all guiding questions and No marks for headings; no mark change. Original paper25 and scheme15 reopened."
+    }
+  ],
+  "limits": [
+    "B2(ii) generic1+1 and C6(b) skills/qualities split proposals require third reading. Six display-heading differences remain.",
+    "The60-page independent visual reading predates authoring; this review reopened only the six listed images.",
+    "Source/Atlas bindings, runtime generation, application/browser checks, fresh archive recheck and deferred video hosting/playback not performed.",
+    "Synthetic deferred secFileid alias needs the existing verified source-binding convention; no present source-opening claim."
+  ],
+  "previousSourceTrace": {
+    "rowsOptions": 88,
+    "differences": 0,
+    "questionAndSchemeBlocks": 86,
+    "differencesComplete": 0
+  },
+  "refinementConfirmation": {
+    "recordedAt": "2026-11-19T19:16:28.936081+00:00",
+    "payloadSha256": "467b8fab5d5c7a341692ac2b8358d71113d847d29eea232d6aae65bd6b2258d7",
+    "changedOnly": [
+      "lcvp-2023-cl-deferred-c4b"
+    ],
+    "finding": "Only the three C4(b) part labels changed to printed required account headings. Fixed notice, all original guidance, marks, questions and IDs preserved."
+  },
+  "mediaIdentityConfirmation": {
+    "recordedAt": "2026-11-19T19:19:31.354730+00:00",
+    "payloadSha256": "42e7a81a1533013f55f46ea833f348167cceeab0860ab7fb4da625caad791ca7",
+    "changedOnlyFromPreviouslyConfirmed467b8fab": {
+      "ids": [
+        "lcvp-2023-cl-deferred-a1",
+        "lcvp-2023-cl-deferred-a2",
+        "lcvp-2023-cl-deferred-a3",
+        "lcvp-2023-cl-deferred-a4",
+        "lcvp-2023-cl-deferred-a5",
+        "lcvp-2023-cl-deferred-a6",
+        "lcvp-2023-cl-deferred-a7",
+        "lcvp-2023-cl-deferred-a8"
+      ],
+      "field": "videoMaterial.secFileid",
+      "before": "LC462CLP031EV-deferred.mov",
+      "after": "LC462CLP031EV.mov"
+    },
+    "finding": "Cards keep the exact SEC filename; Storage alone adds -deferred. Canonical and playback URLs, all content/marks/IDs and the confirmed C4(b) labels are preserved.",
+    "limitation": "No media download, upload, source opening or playback tested."
+  }
+}

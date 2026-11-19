@@ -1,0 +1,1431 @@
+# Link Modules 2023 Common Level — Deferred sitting
+
+Source: LC462CLP000EV.pdf from deferredmarkingschemes/2023.
+SHA-256: b64d9aff0039e06c09c21ca9218308263055547ea003d09fc1623e6afe2b6efa
+
+## PDF page 1
+
+ 
+ 
+ 
+Coimisiún na Scrúduithe Stáit 
+State Examinations Commission 
+ 
+Leaving Certificate 2023 
+Deferred Examinations 
+ 
+Marking Scheme 
+ 
+Common Level 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Link Modules – Written Paper 
+
+## PDF page 2
+
+ 
+ 
+ 
+Note to teachers and students on the marking schemes for the deferred examinations 
+ 
+Marking schemes published by the State Examinations Commission are not intended to be 
+standalone documents.  They are an essential resource for examiners who receive training 
+in the correct interpretation and application of the scheme.  However, it should be noted 
+that the marking schemes for the deferred examinations may not necessarily be as detailed 
+as the corresponding marking schemes for the main sitting of an examination, which serve 
+to ensure consistency across a large team of examiners.       
+Marking schemes are working documents.  While a draft marking scheme is prepared in 
+advance of the examination, the scheme is not finalised until examiners have applied it to 
+candidates’ work and the feedback from examiners has been collated and considered in 
+light of the full range of responses of candidates, the overall level of difficulty of the 
+examination, and the need to maintain consistency in standards between the main sitting 
+and the deferred sitting and from year to year.  In the case of the deferred examinations, 
+this means that the level of detail may vary by question, as the marking scheme will only 
+have been finalised for the questions attempted by the candidates who sat these 
+examinations.   
+In the case of marking schemes that include model solutions or answers, it should be noted 
+that these are not intended to be exhaustive.  Variations and alternatives may also be 
+acceptable.  Examiners must consider all answers on their merits, and will have consulted 
+with a senior examiner when in doubt. 
+Future Marking Schemes 
+Assumptions about future marking schemes on the basis of past schemes (whether for the 
+main examinations or the deferred examinations) should be avoided.  While the underlying 
+assessment principles remain the same, the details of the marking of a particular type of 
+question may change in the context of the contribution of that question to the overall 
+examination concerned.  Accordingly, aspects of the structure, detail and application of the 
+marking scheme for a particular examination will not necessarily be the same for the 
+deferred sitting as for the main sitting or from one year to the next. 
+ 
+
+## PDF page 3
+
+2 
+ 
+ 
+In considering this marking scheme, the following should be noted:  
+ 
+The detail required in any answer is determined by the context and the manner in which the 
+question is asked and by the number of marks assigned to the response in the examination paper.  
+ 
+Words, expressions or phrases must be correctly used in context and not contradicted, and where 
+there is evidence of incorrect use or contradiction, the marks may not be awarded.  
+ 
+As a general rule, if in doubt about the validity of any response, examiners must consult their 
+advising examiner before awarding marks.  
+ 
+The suggestions, examples etc. in the scheme are not exhaustive and alternative valid responses 
+etc. are acceptable.  
+ 
+ 
+The procedure for marking consists of:  
+ 
+ 
+• 
+Careful reading and analysis of all the responses 
+ 
+• 
+Allocation of marks to the components according to the agreed scheme.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+## PDF page 4
+
+3 
+ 
+ 
+ 
+Section A  
+ 
+         Audio Visual 
+ 
+ 
+ 
+        30 marks 
+ 
+Q.1  
+What is the name of the company where Molly will do her work placement?                     1 mark                             
+ 
+Meitheal Ltd  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Q.2  
+Why is it better for Molly to do a work placement rather than work shadowing?                             2 marks                               
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                      2 x 1m 
+1. Work shadowing is observing 
+2. Ge to do the actual job 
+3. Work placement more interesting 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Q.3   
+ 
+ 
+                  
+From your understanding of the audio visual explain what a social enterprise is.  
+3 marks 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+             3 x 1m 
+A social enterprise is a business that tries to solve/social, economic or environmental problems/ 
+rather than for profit 
+ 
+ 
+Q.4  
+Give three examples of how Odhran takes health and safety in the workplace seriously. 3 marks 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+             3 x 1m  
+1. Wear appropriate safety clothing 
+2. Gives a health and safety statement to employees to read 
+3. Provides training 
+4. Employees/work experience students have a safe pass 
+ 
+ 
+Q.5  
+Explain how the company where Molly is doing her work experience finances its operations.                    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 marks 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 3 x 1m 
+1. Tenants pay rent 
+2. Profit that are made are reinvested back into the company 
+3. Two major investors provided start-up capital 
+4. Receive grants from the social development fund 
+5. Low interest social loans 
+ 
+ 
+ 
+ 
+
+## PDF page 5
+
+4 
+ 
+ 
+Q.6  How does Odhran ensure that Molly’s work placement is meaningful? Give reasons for 
+your answers.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 6 marks
+ 
+  
+                  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        3 x 2m (0/2) 
+1. Provides training/IT package 
+2. Sits in on project team meetings 
+3. Goes out on site visits 
+4. Given regular feedback 
+5. Provides a mentor 
+Q.7  
+In your opinion why is receiving feedback an important element of a work placement? 6 marks 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                               3 x 2m (1+1) 
+ 
+1. Employee can gauge how they are performing in a workplace/so they can make informed 
+    decisions 
+2. Helps with an employee’s ongoing development/skills that need improvement/areas that 
+need work/do the job better 
+3. Helps to eliminate mistakes/prevents performance going off track 
+4. Reflect on the work placement/Builds confidence/insight gained into what strengths they 
+    have 
+5. Gives a true/honest perspective/to help with career choice  
+ 
+ 
+ 
+Q.8  
+ 
+Other than providing feedback, explain why assigning a work place mentor to a student/new 
+employee is important to work placement students/new employees.                                 6 marks   
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  3 x 2m (1+1) 
+ 
+A mentor can 
+1. Provides practical knowledge  
+2. Provide advice on the workplace/career 
+3. Can help improve their skills/provide training 
+4. Encourages and enable better professional or personal development 
+5. Help to focus students/new employees on their goals 
+6. Can provide a network of contacts/reference 
+7. Can inspire /motivate/provide a confidence boost 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+## PDF page 6
+
+5 
+ 
+ 
+ 
+Section B  
+ 
+ 
+   Case Study 
+ 
+ 
+ 
+        30 marks 
+ 
+ 
+Q.1    
+               
+Describe three advantages to Ballyfert of organising the family festival.   
+6 marks 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 x 2m (1+1) 
+1. A way to welcome/integrate refugees/locals meet the refugees 
+2. Promotes tourism/encourages visitors to the area  
+ 
+ 
+ 
+ 
+ 
+3. People have an opportunity to meet each other/social aspect 
+4. Local producers have an opportunity to showcase/sell their produce 
+5. Builds a community spirit/encourages people to volunteer 
+6. People get to learn about the cuisine of other countries 
+7. Provide employment during the festival 
+ 
+ 
+Q.2    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+             
+(i) 
+What are the benefits to the local people in Ballyfert of volunteering to get involved with 
+the Community Development Committee?  
+ 
+ 
+ 
+ 
+3 x 1m 
+ 
+1. To improve the area by providing a service to the community/help people in need/support 
+a local cause 
+2. To help their town to prosper and encourage locals to stay or return to the area 
+3. To help attract new businesses to the new workspaces  
+4. Assist with the successful integration of the refugees into the area  
+5. Social aspect/can make friends/improves community spirit 
+6. Gain referees for their CV 
+7. Recognition in their own town 
+8. Opportunity to voice their opinions and share ideas 
+9. Could make them more employable/gives volunteers an opportunity to upskill 
+ 
+(ii) 
+Suggest three ways that Ballyfert could further integrate the refugees. Give reasons for your 
+ 
+answers.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 x 2m (1+1) 
+       1.  Upskill/educate – English language make them more employable 
+       2.  Help them to find jobs- could help improve services in the area 
+       3.  Become friends with newcomers/encourage membership in local clubs/host an event-        
+            better community spirit 
+       4.  Enable the refugees to share their own skills with the locals/community -   
+             cooking/shared learning/join the community development committee 
+       5.  Create an Information centre/hub - to give out information 
+       6.  Encourage a buddy system/volunteer their time – help advocate with government    
+             agencies/transport systems/banking etc. 
+       7.  Collaborate with local agencies to create an inclusive community- aware of  
+ 
+  information/rights 
+ 
+ 
+ 
+ 
+ 
+
+## PDF page 7
+
+6 
+ 
+Q3.    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+       15 marks 
+(i) 
+The Community Development Committee (CDC) carried out research. Give three benefits of the 
+Community Development Committee conducting research.                3 x 1m 
+  
+       1.  Gives the most up to date knowledge/to support/or not what they want to do or the aims    
+             they want to achieve 
+       2.  Evidence from the research conducted and analysis of results may be required to support  
+             grant applications/loans etc. 
+       3.  Locals and those who are new to the area who completed the survey will feel that their  
+             voice/input has been heard 
+       4.  It could highlight a weakness or an idea that had not been previously considered 
+       5.  Builds credibility for the committee/information is accurate/up to date/supports aims 
+       6.  Helps with problem solving/where to look for help/make informed decisions 
+       7.  Identifies risks/less chance of failure 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                                                                                                       
+(ii) 
+Outline two of the factors that might influence the Community Development Committee as they 
+plan for the future.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2 x 3m (1+1+1) 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1.  Planning (business/financial/marketing): What money is needed for/capital and day to day 
+expenses/pricing/costing/budgeting/fees to be charged to potential clients/insurance costs 
+and rental 
+2.  Research: Identify that the town can support new comers such as school places and 
+housing 
+3.  Sufficient resources/facilities: Infrastructure/housing/shops/recreational and cultural 
+facilities/Hub to meet the new needs of the town 
+4.  Grants/loans: What grants/loans are available for and how you apply for them. What 
+conditions are associated with the grants/loans 
+5. Legal issues:  What is required by law/yearly accounts/ employment law/ insurance /tax 
+and all forms of compliance/Health & Safety/planning permission                                                                    
+6. Staffing/Lack of volunteers: how many are required to run the facilities/classes/how to 
+advertise/promote their committee       
+                                                               
+  
+ 
+(iii) 
+Outline the advantages and disadvantages of remote working for the employer. 6 marks 
+ 
+ 
+3 x 2m (1+1) 
+ 
+ 
+ 
+ 
+ 
+Advantages 
+1. Workers are happier/flextime/less time travelling leads more/better quality of work/better 
+job satisfaction/retainment of staff 
+2. Decrease in overhead costs/less office space required/increase in profits 
+
+## PDF page 8
+
+7 
+ 
+3. Many individuals thrive working on their own as they are less distractions/this can lead to 
+innovation and/or higher productivity 
+4. Greater pool of talent/no geographical limitations 
+5. May extend the businesses operational hours 
+6. CSR aspect/may assist employees with disabilities/lowers the carbon foot print/less 
+parking/office space needed 
+7. Maybe able to work from home when the employee is ill 
+ 
+ 
+Disadvantages 
+1. Extra cost involved in providing office equipment and computer software 
+2. Not meeting on a daily basis may make trouble shooting/coordinating projects to be more 
+difficult 
+3. Monitoring of employee’s work/ productivity is a challenge/internet issues 
+4. Loss of new ideas/lack of innovation as people not meeting regularly 
+5. Collegiality/team building/learning from and with colleagues lost as not meeting in person 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+## PDF page 9
+
+8 
+ 
+ 
+Section C  
+ 
+ 
+   General Questions 
+ 
+ 
+     100 marks 
+ 
+ 
+ 
+Q1.  Visit out gives us an insight into enterprises in our community 
+            
+  
+(a)  
+Name an enterprise you planned to visit and give a brief outline of the services it offers.    
+4 marks  
+Name of organisation  
+1m 
+Outline of services  
+ 
+3m 
+    
+ 
+ 
+ 
+ 
+  
+ 
+(b)  
+Draft five suitable questions you might ask on this visit                                                                  5 marks 
+ 
+Any five suitable questions must be relevant to the organisation  
+                                    5 x 1m each 
+ 
+1. What does your organisation do/make? 
+2. How many employees are in the company? 
+3. How long are they in existence? 
+4. What training does the company offer their employees? 
+5. What do they look for when recruiting/promoting employees? 
+6. Have you won any quality awards? 
+7. What employee incentives do they offer? 
+8. What are the challenges facing your company today? 
+9. Etc. 
+ 
+(c)  
+How can the person conducting the presentation to the students during their visit ensure it is 
+successful? 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8 marks 
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                      4 x 2m (1+1) 
+1. Making sure the presentation is clear/well structured                                                                             
+2. Being clear on the message you want to get across/find out the information needed by the 
+group in advance and prepare the presentation accordingly  
+3. Deciding on how you will present the message considering the audience, venue, facilities and 
+your own personal preferences  
+4. Use humour/stories so that the audience can relate to the topic 
+5. Keep it short and interesting/use language they will understand  
+6. Show passion/connect with the audience/try to have audience interaction  
+ 
+ 
+ 
+
+## PDF page 10
+
+9 
+ 
+ 
+(d)  
+(i) 
+Why is it important to evaluate the visit out?   
+ 
+                            2 marks  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+             2 x 1 m                                
+1. To see if it was successful or not 
+2. Were the aims and objectives of the visit met 
+3. Troubleshooting for the next visit/future plans 
+ 
+(ii) 
+Describe three methods that could be used to evaluate the visit out.  Give a  
+ 
+ 
+reason for choosing each method. 
+ 
+ 
+ 
+            6 marks 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                         3 x 2 m each  
+ 
+1m method + 1m Reason 
+ 
+1. Questionnaire:  
+Can be given to the organisation visited as well as to the class.  
+Reason: Easy to administer/collate results.  
+Can be completed anonymously.  
+Generally inexpensive.  
+Good response rate.  
+They are objective.  
+ 
+2. Ask Teachers/Member of organisation visited for their opinion.  
+Reason: Allows the class to practice their interview/communication skills.  
+Questions can be explained if necessary.  
+Easy to do.  
+No cost involved.  
+You will get honest feedback/review of teamwork.  
+ 
+3. Quality of report has enough information/correct type of information been learned.  
+Reason: Easy method to use as all class members must produce a report.  
+Reports can be compared easily.  
+ 
+4. Review of Teamwork.  
+Did the class put into practice what they have learned?  
+Reason Objective was to work well as a team.  
+All class members are aware of what is involved.  
+ 
+5. Class Discussion:  
+Varying opinions and discussions can be taken on board.  
+Reason Easy to organize / everyone can participate.  
+Allows one to see how much was learned.  
+Good to show improvement or practice in communication skills.  
+
+## PDF page 11
+
+10 
+ 
+ 
+ 
+Q2. Career Investigations allow students to make informed decisions about their future career. 
+ 
+(a) 
+Name a career you have investigated, and outline two qualities needed for this career.  
+ 
+3 marks 
+Naming a career    1m 
+Outlining two qualities (not just named needs to be explained) 2 x 1m 
+ 
+   
+(b) 
+(i)      Identify three sources of information you used to investigate this career.  
+ 
+        How was each source relevant?                                                                                                                          
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                 6 marks 
+3 x 2m (1m naming source + 1m relevance) 
+ 
+1. Review websites/college prospectus about specific careers/trade journals/newspaper 
+articles, uses the most up to date information for relevance.  
+2. Self-assessment/DATs tests. Highlights personal attributes. 
+3. Careers portal/Qualifax/career search online/media clips. Easy to use. Up to date 
+information. 
+4. Work experience/work shadowing.  Easy to do as part of the link modules, insight into 
+the career. 
+5. Interview someone in the career area/networking. First hand/direct information. 
+6. Go to career fairs/college open days. All colleges in the one place/ meet 
+representatives for various courses. 
+7. Career Guidance Teacher/subject teacher. Knowledge on all types of courses and entry 
+paths into the career.  
+ 
+ 
+(c)  
+You have undertaken a career investigation on a job of your choice.  
+      Present your findings on one page. You should include at least five pieces of information. 
+       
+ 
+ 
+ 
+ 
+ 
+      10 marks 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+5 x 2m (1+1)                                                   
+ 
+Five pieces of information 
+Entry pathways/Qualification needed 
+ 
+Description of the career 
+Skills/qualities required 
+Out of class learning 
+Evaluation of the career –Salary/Perks/benefits in kind/future prospects 
+ 
+Evaluation in light of personal aptitudes/interest/leaving certificate subjects 
+ 
+ 
+ 
+ 
+ 
+
+## PDF page 12
+
+11 
+ 
+ 
+(d) 
+      Explain three ways a strong work ethic could benefit an employee.                     6 marks 
+3 x 2m (1+1) 
+1. Easier to get a promotion at work/ given more responsibility 
+2. Higher wages/bonus may be given at the annual review 
+3. Develop new skills quickly/makes you more adaptable 
+4. Personal satisfaction/leads to positive well-being 
+5. Additional information for CV/makes you more attractive to potential new employers 
+ 
+                                                                                  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+## PDF page 13
+
+12 
+ 
+ 
+Q3. My own place gives us the opportunity to learn more about the area in which we live. 
+ 
+(a) 
+Name four different community organisations in your local area.                              2 marks 
+ 
+ 4 names - 2m  
+ 
+(b) 
+Identify a need that is currently not being met in your local community and suggest how this need 
+could be met.   
+ 
+ 
+ 
+                                                     6 marks  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Identify need - 2m (0/2) 
+2 x 2m (0/2) 
+1. Organise a meeting/committee of interested persons  
+2. Set up new branch of the society/organization e.g. St Vincent de Paul  
+3. Get businesses in the local area involved 
+4. Project for local school  
+5. Fundraising event/apply to National Lotto for funding  
+6. Approach local representatives/county council for help 
+7. Surveillance cameras 
+8. Etc.  
+ 
+ 
+ 
+ 
+(c) 
+Prepare a SWOT/SCOT analysis of your local area.                                                    8 marks 
+4 x 2m (1 + 1)  
+2 points under each heading 
+No marks for headings  
+No repetition of points 
+ 
+SWOT analysis: A relevant statement for each point  
+Strengths:  
+Location  
+Historical points of interest  
+Amenities  
+Infrastructure  
+Community Spirit/people/availability of volunteers with skills  
+ 
+Weaknesses/Challenges: 
+Parking and traffic management/infrastructure  
+Lack of accommodation for tourists  
+Lack of volunteers  
+ 
+Opportunities: 
+Develop of the tourism industry  
+Exploit the areas natural resources  
+New business opportunities  
+Provide more employment to local people  
+ 
+ 
+
+## PDF page 14
+
+13 
+ 
+ 
+Threats:  
+Competition from other similar towns/villages  
+Securing financial support  
+Other communities applying for the same grants  
+Seasonal and weather dependent activities 
+Lack of community interest  
+ 
+ 
+(d)  
+What advice would you give to an entrepreneur who is considering setting up a business in your 
+local area?   Give four points.                                                                       
+ 
+                               9 marks  
+1 x 3m (1+1+1)  
+3 x 2m (1+1) 
+1. Conduct a feasibility study/Getting the product/service right- Do market research to 
+determine if a market exists/look at competition  
+2. Contact the local enterprise board for advice/mentoring/training   
+3. Do a business plan/sets down short term and long-term objectives/ used to get a bank 
+loan/show investors.  
+4. Getting finance – ascertain the funding required to start a business/apply for grants that 
+are available.  
+5. Find the right business location/proximity to markets/good infrastructure/reduced 
+transport costs/lease a premises. 
+6. How to market the business/creating awareness/sufficient use of marketing strategies 
+7. Research the availability of suitable employees/so you can select hardworking/flexible 
+staff/talk to local colleges about training/courses available  
+8. Check with the local council re planning requirements/permits/licenses secured/planning 
+permission  
+9. Investigate the future development plans for the area/are there any environmental issues 
+that have to be considered 
+10. Employee local people/Use local distributers and suppliers/better image  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+## PDF page 15
+
+14 
+ 
+                                                                                                                  
+ 
+Q4. Voluntary Organisations play an important role in our communities 
+ 
+(a)      A voluntary organisation in your community has asked your class to promote volunteering in your 
+school. Suggest four ways your class would do this.                                                                             2 marks  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4 ways – 2m 
+Media/advertisements/brochures/posters/presentations/special events/displays & exhibits/promotional 
+material/visit in from a representative 
+ 
+(b) 
+Consider a voluntary organisation that you are familiar with and write an account of the above 
+body under the following three headings:              
+ 
+ 
+ 
+                       6 marks  
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 3 x 2m (0/2) 
+ 
+  
+ 
+Services Provided       Finance           Staffing 
+No marks for headings 
+1. Services Provided.  
+What the organisation does 
+Who they help  
+Why they were set up 
+Do they need to change/extend the services that they offer? 
+ 
+2. Finance 
+How they are financed?  
+Fundraising activities  
+Problems with getting finance/recession  
+Are government grants or lotto money available? 
+ 
+3. Staffing 
+What staff are needed?  
+How they are recruited?  
+Sourcing volunteers 
+Training offered  
+Benefit of working in the organisation  
+ 
+(c) 
+Explain the obligations of volunteers when working for a voluntary organisation. 8 marks 
+4 x 2m (1+1)  
+1. Volunteers must be reliable and committed to the voluntary body when needed/aspire to do 
+the tasks assigned to them to the best of their ability/act according to the voluntary body’s 
+goals.  
+2. Confidentiality - volunteers should agree not to disclose information acquired while 
+volunteering.  
+3. Refusal to accept items of monetary value - volunteers should not benefit in any way from the 
+voluntary bodies’ clients or any other person.  
+4. Avoid a conflict of interest - between their activity, position within the voluntary body in which 
+they are engaged.  
+
+## PDF page 16
+
+15 
+ 
+5. Reporting unethical behavior - including misappropriation of funds/unlawful conduct.  
+6. Obligations to the client/members - respect/treat them with dignity/be 
+responsible/patient/tolerant/refrain from discrimination/respect individual difference.  
+7. Be trustworthy/respect the voluntary body’s property/protect the voluntary body’s good 
+standing/punctual/honest/dependable.  
+8. Ensure they have the necessary skills to the job/to attend all training sessions and to put 
+information received into practice.  
+ 
+ 
+ 
+ 
+ 
+ 
+(d) 
+Outline how a voluntary organisation could evaluate its success.   
+9 marks  
+3 x 3m (1 + 1 +1) 
+1.  Review the organisations aims and objectives- are the needs of the organisation being met/is 
+the organisation run effectively 
+2.  Donations/money raised from fundraising – has it increased/have they helped more people 
+3.  Participation and retention of volunteers – do they stay long term and remain loyal to the 
+organisation 
+4.  Survey/interview their clientele or service users- do they feel supported/are they benefiting 
+from the organisation 
+5.  Total number of hours volunteered/volunteer satisfaction rate – feedback 
+6.  View of the organisation by the public 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+## PDF page 17
+
+16 
+ 
+ 
+Q5.    Enterprises are constantly diversifying in order to keep ahead of competition.  
+(a) 
+Explain the term diversification.                                                                                           3 marks 
+3 x 1m (1+1+1) 
+Diversification is when a business changes what they do to reduce risk/ by spotting and exploiting 
+new market opportunities /by using their existing skills to offer complimentary services or 
+expanding into a completely different market.  
+ 
+(b) 
+Outline three ways the owner of a business can ensure that customers remain loyal.                                  
+8 marks  
+1. Provide a good quality product or service  
+2. Have a good after sales service  
+3. Variety of services offered/online services/be adaptable/convenient opening hours/deliveries 
+on time 
+4. Use marketing strategies BOGOF/discounts/ click and collect/free postage/loyalty scheme  
+5. Market Research/plan ahead/anticipate changes in demand  
+6. Keep an eye on competition/price the product/service competitively  
+7. Support the local community/sponsor teams to develop a good relationship with the 
+community 
+ 
+(c) 
+Discuss the reasons why it is important for a business to diversify.                               6 marks 
+ 3 x 2m (1 + 1) 
+1. To protect the company in an economic downturn/loss of customers due to pandemic etc  
+2. Spread the risk of the company by not relying on one or two products/depending on just one 
+or two sources of income/e.g. if one supplier goes out of business they still have enough 
+business to remain profitable  
+3. To avoid relying on products which have seasonal fluctuations/becoming obsolete by 
+producing goods/services which have different demand cycles  
+4. To enable the company to expand so that greater profits are earned  
+5. To be able to compete with similar firms/businesses  
+6. To make better use of the existing resources of the business/they may not be using all its 
+staff/equipment to their full potential.   
+ 
+ 
+ 
+(d) 
+Information and Communications Technology (ICT) plays an important role in business. 
+ 
+Outline how changes in ICT have impacted on the operations/running of a business. 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8 marks   
+4 x 2m (1+1) 
+No repetition of answers 
+1. Work can be done faster, advances in machines, volume of work 
+2. Easier to communicate with employees/customers through zoom/email/messaging 
+3. Research, easier to keep up to date/Information at finger tips 
+4. Working from home is possible/attract top quality employees 
+5. Extra Costs involved keeping software up to date 
+6. Payment methods e.g. stripe apple pay/Quick, easy convenient for customer to pay/ Less risk no                      
+cash on premises/Pay suppliers through online banking  
+7. Websites - Sales/Reviews/Marketing/monitor negative reviews - can be responded to 
+immediately 
+8. Must ensure employees are upskilled/kept up to date with new technology 
+9.  Marketing/social media 
+
+## PDF page 18
+
+17 
+ 
+ 
+ 
+ 
+Q6. 
+Enterprise and innovation are key to the success and sustainability of modern businesses 
+ 
+ 
+(a) 
+Explain the term entrepreneur.                                         
+ 
+                4 marks 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    4 x 1m 
+ 
+This is a person who uses their initiative/to come up with a business opportunity or    
+idea/takes the risk to set up a business/make a profit.  
+ 
+(b) 
+Outline two skills and two qualities of an entrepreneur that you are familiar with 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+.    
+ 
+ 
+    4 marks 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    2 x 2m (1/1)  
+ 
+Skills – Planning/ leading/ time management/ motivating/ negotiating 
+ 
+Qualities - Risk taker/decisive/flexible/communication/ highly motivated/ 
+ 
+innovative/hardworking/confident. 
+ 
+List is not exhaustive 
+ 
+ 
+(c) 
+Discuss four benefits to an organisation of employees up-skilling     
+    8 marks  
+    4 x 2m (1+1) 
+1. Fills skills gap/up to date with changes 
+2. Improves employee productivity and efficiency  
+3. Change jobs/flexibility/more adaptable 
+4. Promotion options/career/professional progression/responsibility 
+5. Saves money/avoids unnecessary redundancies 
+6. Keeps the company/business competitive 
+7. Increase employee retention/happier workforce/job satisfaction/motivated 
+employees/low staff turnover  
+8. Increase customer satisfaction and retention 
+ 
+(d) 
+Teamwork is an essential element of the modern workplace.      
+ 
+ 
+ 
+What are the benefits of teamwork to an individual team member?             9 marks 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    3 x 3m (1+1+1) 
+ 
+ 
+1. More work done/better productivity 
+2. Employees take ownership/increased job satisfaction 
+3. Sharing of work/ideas/easier to solve problems/better decisions made 
+4. Learning from each other/upskilling/new skills/experiences 
+5. Builds positive relationships/sense of bonding/not on your own/ work closely with 
+others who have a common interest 
+6. Encourages intrapeneurship/self-motivated/proactive  
+7. Communication/interpersonal skills are improved 
+ 
+ 
+
+## PDF page 19
+
+18 
+ 
+ 
+Q7.  Many employees/employers use recruitment agencies or websites when seeking 
+employment or employees.  
+ 
+(a) 
+What does a Recruitment Agency do?                                                            
+ 
+2 marks 
+ 
+A Recruitment Agency is a business that will find employees/staff for an employer.           2m (0/2) 
+(b) 
+Outline the benefits to an employer of using a recruitment agency?                      6 marks 
+3 x 2m (0/2) 
+1. Saves an employer time dealing with applications and short listing  
+2. Saves them money by doing their advertising/the job search is streamlined  
+3. Good recruitment agencies attract high caliber applicants  
+4. The agency will head-hunt for the employer/have specialized knowledge of the 
+market/potential candidates 
+5. The agency will often have specialised staff who will recruit more objectively 
+6. Negotiate salaries and terms/conditions between the employer and applicants  
+ 
+ 
+(c) 
+Discuss three important features that employers look for in a potential employee.                                      
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+9 marks  
+3 x 3m (1 + 1+ 1) 
+1. Education/Qualifications/do they have the requirements for the job  
+2. Relevant work experience/duties under taken/internships  
+3. Personal qualities such as confidence/commitment/willing to learn on the 
+job/hardworking/productive/shows initiative/honesty/trustworthy/reliable/adaptability 
+4. Good communicator/good personality/customer orientated employee/people person/ 
+individuals need to be able to communicate with managers/other workers and customers  
+5. Skill set/do they have the necessary skills/variety of skills/expert skills to do the job   
+6. Team player/teamwork is a major feature of any workplace/workers need to get on with other 
+team members and also perform their assigned tasks within the team  
+7. Problem solving ability/how they handle challenges 
+ 
+(d) 
+You have been called for an online job interview via zoom.  
+ 
+Describe in detail, four ways you would prepare for this interview.  
+ 
+   8 marks 
+  4 x 2m (1+1)  
+1. Test out the interview platform in advance/have devices charged/ have back up device 
+available 
+2. Use the best internet you can access/have a plan B if the internet connection failed  
+3. Appropriate setting/room light/no background noise/ensure no inappropriate posters on the 
+walls/consider using a background filter  
+4. Researched the company/their products or services/potential questions and answers  
+5. Practice/rehearse questions and answers/do a mock interview with a friend or family member 
+6. Ensure other family members/residents in the house know the time of the interview and not 
+to make any noise during the interview 
+7. Plan appropriate clothing to wear/look professional 
+8. Reread your application form or CV/to refresh your memory and prepare for potential 
+questions on it 
+9. Prepare a question you could ask at the end of the interview 
+10. Mentally prepare/good night’s sleep/eat well before the interview 
+
+## PDF page 20
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

@@ -1,0 +1,1146 @@
+{
+  "recordedAt": "2026-11-19T19:36:00.938188+00:00",
+  "sitting": "2023-deferred",
+  "status": "Review-only filing additions; no canonical or generated file changed",
+  "cards": 50,
+  "sourceCandidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/proposed-50-authored-cards.json",
+  "sourceCandidateSha256": "42e7a81a1533013f55f46ea833f348167cceeab0860ab7fb4da625caad791ca7",
+  "thirdReaderDecision": {
+    "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/third-reader-decision.json",
+    "sha256": "15848a41a33b471b64468438fce20db2dc86da98008802f7a27fe0b7e98cfd4b"
+  },
+  "comparisonFiles": [
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "sha256": "e9a7f96d2558c1c5119c7e7c33818ac87d4f297106ff7c1e3db22f23d0c64e3e"
+    }
+  ],
+  "asks": {
+    "lcvp-2023-cl-deferred-a1": [
+      [
+        "link-modules-common-audio-visual"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-a2": [
+      [
+        "link-modules-common-1-work-placement"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-a3": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-a4": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-a5": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-a6": [
+      [
+        "link-modules-common-1-work-placement"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-a7": [
+      [
+        "link-modules-common-1-work-placement"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-a8": [
+      [
+        "link-modules-common-1-work-placement"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-b1": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-b2i": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-b2ii": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-b2ii-2": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-b3i": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-b3ii": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-b3iii": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c1a": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c1a-2": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c1b": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r3"
+    ],
+    "lcvp-2023-cl-deferred-c1c": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c1di": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r3"
+    ],
+    "lcvp-2023-cl-deferred-c1dii": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r3"
+    ],
+    "lcvp-2023-cl-deferred-c1dii-2": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r3"
+    ],
+    "lcvp-2023-cl-deferred-c2a": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c2a-2": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c2b": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c2b-2": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c2c": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c2d": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c3a": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c3b": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c3b-2": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c3c": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r3"
+    ],
+    "lcvp-2023-cl-deferred-c3d": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c4a": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c4b": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c4c": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c4d": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c5a": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c5b": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c5c": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c5d": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c6a": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c6b": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c6b-2": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c6c": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c6d": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c7a": [
+      [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c7b": [
+      [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "r2"
+    ],
+    "lcvp-2023-cl-deferred-c7c": [
+      [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "r3"
+    ],
+    "lcvp-2023-cl-deferred-c7d": [
+      [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "r2"
+    ]
+  },
+  "counts": {
+    "r2": 44,
+    "r3": 6
+  },
+  "items": [
+    {
+      "cardId": "lcvp-2023-cl-deferred-a1",
+      "headingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Recall of the company named in the recording.",
+      "internalTopicId": "lcvp-link-modules-0-3",
+      "questionRef": "2023 CL Section A Q1 — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-a2",
+      "headingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Comparing work placement and shadowing.",
+      "internalTopicId": "lcvp-link-modules-0-3",
+      "questionRef": "2023 CL Section A Q2 — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-a3",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Purpose and meaning of social enterprise.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2023 CL Section A Q3 — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-a4",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Health and safety in the workplace.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2023 CL Section A Q4 — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-a5",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Sources of finance for the company.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2023 CL Section A Q5 — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-a6",
+      "headingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Providing meaningful work placement.",
+      "internalTopicId": "lcvp-link-modules-0-3",
+      "questionRef": "2023 CL Section A Q6 — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-a7",
+      "headingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Feedback during work placement.",
+      "internalTopicId": "lcvp-link-modules-0-3",
+      "questionRef": "2023 CL Section A Q7 — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-a8",
+      "headingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Mentoring work placement students and new employees.",
+      "internalTopicId": "lcvp-link-modules-0-3",
+      "questionRef": "2023 CL Section A Q8 — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-b1",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Benefits of community development activities.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2023 CL Section B Q1 — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-b2i",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Benefits of volunteering in community development.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2023 CL Section B Q2(i) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-b2ii",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Actions to integrate newcomers into the community.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2023 CL Section B Q2(ii) — ways — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-b2ii-2",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Reasons for the chosen community integration actions.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2023 CL Section B Q2(ii) — reasons — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-b3i",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Benefits of research for planning.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2023 CL Section B Q3(i) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-b3ii",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Factors in future community development.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2023 CL Section B Q3(ii) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-b3iii",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Employer advantages and disadvantages of remote working.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2023 CL Section B Q3(iii) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c1a",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Naming the enterprise investigated by a visit.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2023 CL Section C Q1(a) — name — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c1a-2",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Services offered by the chosen enterprise.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2023 CL Section C Q1(a) — services — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c1b",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/third-reader-decision.json",
+      "reason": "Paper p16 Q1(b), under 'Visit out gives us an insight into enterprises in our community', asks five questions to ask on the visit and scheme p8 (physical p9) pays 5 x 1m for questions 'relevant to the organisation' (what it makes, employees, training, recruiting, awards, challenges), i.e. investigating a local enterprise, with the agreed C1(a).",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2023 CL Section C Q1(b) — Deferred sitting"
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c1c",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Effective presentation and communication.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2023 CL Section C Q1(c) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c1di",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/third-reader-decision.json",
+      "reason": "Paper p18 Q1(d)(i) asks why it is important to evaluate the visit out and scheme p9 (physical p10) pays 2 x 1m for reasons about that visit; the live 2023 Q6(d) 'why evaluate the visit out/visit in' card is under Local Business Enterprises.",
+      "internalTopicId": "lcvp-link-modules-1-3",
+      "questionRef": "2023 CL Section C Q1(d)(i) — Deferred sitting"
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c1dii",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/third-reader-decision.json",
+      "reason": "Paper p18 Q1(d)(ii) asks methods to evaluate the visit out and scheme p9 pays '1m method' for methods aimed at it (questionnaire to the organisation visited, asking its members, report quality); evaluating a visit goes with the visit, as live 2024 Q2(d) and the 2011 Q2(d)(ii) settlement are.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2023 CL Section C Q1(d)(ii) — methods — Deferred sitting"
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c1dii-2",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/third-reader-decision.json",
+      "reason": "Same printed part (paper p18, scheme p9): the '1m Reason' beside each visit-evaluation method is filed with the methods.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2023 CL Section C Q1(d)(ii) — reasons — Deferred sitting"
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c2a",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Naming the investigated career.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2023 CL Section C Q2(a) — career — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c2a-2",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Qualities required for the chosen career.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2023 CL Section C Q2(a) — qualities — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c2b",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Sources used to investigate a career.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2023 CL Section C Q2(b) — sources — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c2b-2",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Relevance of chosen career-information sources.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2023 CL Section C Q2(b) — relevance — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c2c",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Presenting a career investigation.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2023 CL Section C Q2(c) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c2d",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Employee benefits of work ethic.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2023 CL Section C Q2(d) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c3a",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Local community organisations.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2023 CL Section C Q3(a) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c3b",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Identifying unmet community needs.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2023 CL Section C Q3(b) — need — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c3b-2",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Meeting the chosen community need.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2023 CL Section C Q3(b) — solutions — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c3c",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/third-reader-decision.json",
+      "reason": "Paper p23 Q3(c), under 'My own place ... the area in which we live', asks a SWOT/SCOT of the local area and scheme p12-13 (physical p13-14) gives no marks for headings and 4 x 2m (1+1) only for points about the community (amenities, community spirit, volunteers, tourism, grants, lack of community interest), so the marks test knowledge of the local community, as the agreed Q3(a)-(b) are filed.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2023 CL Section C Q3(c) — Deferred sitting"
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c3d",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Starting a business in the local area.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2023 CL Section C Q3(d) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c4a",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Promoting volunteering.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2023 CL Section C Q4(a) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c4b",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Services, finance and staffing of a voluntary organisation.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2023 CL Section C Q4(b) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c4c",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Volunteers’ obligations.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2023 CL Section C Q4(c) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c4d",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Evaluating a voluntary organisation.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2023 CL Section C Q4(d) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c5a",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Meaning of business diversification.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2023 CL Section C Q5(a) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c5b",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Maintaining customer loyalty.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2023 CL Section C Q5(b) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c5c",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Reasons for business diversification.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2023 CL Section C Q5(c) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c5d",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Using ICT in business operations.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2023 CL Section C Q5(d) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c6a",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Meaning of entrepreneur.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2023 CL Section C Q6(a) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c6b",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Skills of entrepreneurs.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2023 CL Section C Q6(b) — skills — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c6b-2",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Qualities of entrepreneurs.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2023 CL Section C Q6(b) — qualities — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c6c",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Benefits to employer of staff training.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2023 CL Section C Q6(c) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c6d",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Benefits of teamwork to individuals.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2023 CL Section C Q6(d) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c7a",
+      "headingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Role of recruitment agencies.",
+      "internalTopicId": "lcvp-link-modules-0-1",
+      "questionRef": "2023 CL Section C Q7(a) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c7b",
+      "headingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Using recruitment agencies.",
+      "internalTopicId": "lcvp-link-modules-0-1",
+      "questionRef": "2023 CL Section C Q7(b) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ]
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c7c",
+      "headingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/third-reader-decision.json",
+      "reason": "Paper p35 Q7(c), in a question on recruitment agencies and job interviews, asks the features employers look for in a potential employee and scheme p18 (physical p19) pays 3 x 3m (1+1+1) for recruitment criteria (qualifications, experience, qualities, skills, teamwork); the live 2017 Q5(d) and 2025 Q2(b) 'potential employee' cards are under Job Seeking Skills.",
+      "internalTopicId": "lcvp-link-modules-0-1",
+      "questionRef": "2023 CL Section C Q7(c) — Deferred sitting"
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-c7d",
+      "headingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+      "reason": "Preparing for an online job interview.",
+      "internalTopicId": "lcvp-link-modules-0-1",
+      "questionRef": "2023 CL Section C Q7(d) — Deferred sitting",
+      "firstHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ]
+    }
+  ],
+  "pending": [],
+  "limits": [
+    "All internal topic IDs, card IDs and concept IDs remain unchanged.",
+    "The coordinator’s market-research ruling is applied explicitly; the remaining recall/content consistency review is recorded separately.",
+    "These additions must be joined to the incoming canonical filing in the same commit as their new cards. Existing live filings are preserved."
+  ]
+}

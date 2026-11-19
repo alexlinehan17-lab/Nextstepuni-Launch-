@@ -1,0 +1,23 @@
+{
+  "recordedAt": "2026-11-19T19:17:43.106398+00:00",
+  "status": "Review-only; not applied or independently reviewed",
+  "cards": 50,
+  "sourceParts": 43,
+  "offeredMarks": 235,
+  "examMaximum": 160,
+  "wholeNoAnswerNotices": 8,
+  "partialNoAnswerNotices": 1,
+  "wholeQuestionAwards": [
+    "C4(a)",
+    "C5(b)"
+  ],
+  "payloadSha256": "42e7a81a1533013f55f46ea833f348167cceeab0860ab7fb4da625caad791ca7",
+  "outstanding": [
+    "Second-reader candidate/source inspection",
+    "Two proposed splits and six headings need third reading",
+    "Question/answer source tracing",
+    "Deferred media binding and hosted video verification",
+    "Fresh R4 archive checks",
+    "Canonical filings, Atlas/source bindings and application checks"
+  ]
+}
