@@ -1,0 +1,505 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-09",
+  "activeSubject": "home-economics",
+  "scope": "English-language published exam papers, 2010–2026. Irish editions deferred.",
+  "completedBeforeThisSubject": {
+    "mathematics": "Locally integrated English scope; see mathematics launch reconciliation.",
+    "physics": "Locally integrated English published scope: commit 459b85680; launch cherry-pick 08f45ab93."
+  },
+  "currentCounts": {
+    "subject": "home-economics",
+    "mode": "sections",
+    "cards": 1953,
+    "leaves": 1908,
+    "covered": 1908,
+    "excluded": 0,
+    "open": 0,
+    "coveragePct": 100.0,
+    "orphans": [],
+    "unparsed": [],
+    "staleExclusions": [],
+    "papers": [
+      {
+        "year": 2010,
+        "level": "hl",
+        "paper": null,
+        "leaves": 50,
+        "covered": 50,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2010,
+        "level": "ol",
+        "paper": null,
+        "leaves": 46,
+        "covered": 46,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2011,
+        "level": "hl",
+        "paper": null,
+        "leaves": 47,
+        "covered": 47,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2011,
+        "level": "ol",
+        "paper": null,
+        "leaves": 50,
+        "covered": 50,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2012,
+        "level": "hl",
+        "paper": null,
+        "leaves": 50,
+        "covered": 50,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2012,
+        "level": "ol",
+        "paper": null,
+        "leaves": 49,
+        "covered": 49,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2013,
+        "level": "hl",
+        "paper": null,
+        "leaves": 49,
+        "covered": 49,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2013,
+        "level": "ol",
+        "paper": null,
+        "leaves": 50,
+        "covered": 50,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2014,
+        "level": "hl",
+        "paper": null,
+        "leaves": 48,
+        "covered": 48,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2014,
+        "level": "ol",
+        "paper": null,
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2015,
+        "level": "hl",
+        "paper": null,
+        "leaves": 49,
+        "covered": 49,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2015,
+        "level": "ol",
+        "paper": null,
+        "leaves": 50,
+        "covered": 50,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2016,
+        "level": "hl",
+        "paper": null,
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2016,
+        "level": "ol",
+        "paper": null,
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2017,
+        "level": "hl",
+        "paper": null,
+        "leaves": 48,
+        "covered": 48,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2017,
+        "level": "ol",
+        "paper": null,
+        "leaves": 52,
+        "covered": 52,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2018,
+        "level": "hl",
+        "paper": null,
+        "leaves": 49,
+        "covered": 49,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2018,
+        "level": "ol",
+        "paper": null,
+        "leaves": 54,
+        "covered": 54,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2019,
+        "level": "hl",
+        "paper": null,
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2019,
+        "level": "ol",
+        "paper": null,
+        "leaves": 54,
+        "covered": 54,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2020,
+        "level": "hl",
+        "paper": null,
+        "leaves": 53,
+        "covered": 53,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2020,
+        "level": "ol",
+        "paper": null,
+        "leaves": 55,
+        "covered": 55,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2021,
+        "level": "hl",
+        "paper": null,
+        "leaves": 58,
+        "covered": 58,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2021,
+        "level": "ol",
+        "paper": null,
+        "leaves": 58,
+        "covered": 58,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2022,
+        "level": "hl",
+        "paper": "Deferred",
+        "leaves": 56,
+        "covered": 56,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2022,
+        "level": "hl",
+        "paper": null,
+        "leaves": 58,
+        "covered": 58,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2022,
+        "level": "ol",
+        "paper": null,
+        "leaves": 57,
+        "covered": 57,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2023,
+        "level": "hl",
+        "paper": "Deferred",
+        "leaves": 57,
+        "covered": 57,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2023,
+        "level": "hl",
+        "paper": null,
+        "leaves": 57,
+        "covered": 57,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2023,
+        "level": "ol",
+        "paper": null,
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2024,
+        "level": "hl",
+        "paper": null,
+        "leaves": 56,
+        "covered": 56,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2024,
+        "level": "ol",
+        "paper": null,
+        "leaves": 56,
+        "covered": 56,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2025,
+        "level": "hl",
+        "paper": null,
+        "leaves": 57,
+        "covered": 57,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2025,
+        "level": "ol",
+        "paper": null,
+        "leaves": 57,
+        "covered": 57,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2026,
+        "level": "hl",
+        "paper": null,
+        "leaves": 58,
+        "covered": 58,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2026,
+        "level": "ol",
+        "paper": null,
+        "leaves": 57,
+        "covered": 57,
+        "excluded": 0,
+        "open": []
+      }
+    ],
+    "censusFlags": 11,
+    "unreadPapers": []
+  },
+  "nextActions": [
+    "Available English Home Economics source review complete: 36 manual ledgers indexed in source-scope-handoff-20261109.json. All 11 checksum diagnostics classified and retained. Refreshed official deferred inventory has no further English sets. Coordinator owns integration, held 2019 Higher B3(b) partial-credit ambiguity and release QA. Inspect live claims and propose next unclaimed subject without claiming or authoring it.",
+    "2023 Higher/Ordinary English main source reviews complete: 59/60 tasks. 2023 Higher deferred source review complete: 58 tasks, 749 offered practice marks, all mapped to Atlas. Browser QA pending.",
+    "2022 Higher deferred source review complete: all 61 tasks (749 offered practice marks), 23 Atlas question groups, all 79 source pages independently swept. Browser QA pending.",
+    "Live SEC inventory: English Home Economics deferred publications found for 2022/2023 Higher only; no subject listing for 2024/2025, and no 2026 deferred year offered. Absence is a publication finding, not proof no exam was sat.",
+    "Preserve prior card identities and progress, reconcile each verified batch, integrate locally and continue. Browser QA remains pending: browser host unavailable and native Chrome is in active use."
+  ],
+  "coveragePolicy": "Manual original-page sweeps, source-priced task boundaries and full printed choice pools establish source coverage. Raw leaves and emitted cards are distinct reconciliation counts and neither is a substitute for the visual ledgers. Offered practice marks include alternatives and must not be mistaken for candidate exam totals. All 11 remaining checksum flags are classified; 2019 Higher B3(b) disputed intermediate marks remain unassessed, not resolved.",
+  "integratedBatches": [
+    {
+      "workCommit": "14e08691b",
+      "launchCommit": "e3b8fd504",
+      "scope": "Three missing 2023 Higher tasks, four Section C Atlas anchors, 2022 Ordinary census correction."
+    },
+    {
+      "workCommit": "2135d2060",
+      "launchCommit": "80b3816b5",
+      "scope": "2023 Higher Section A: 14 existing cards corrected, two separately priced tasks added, original bacteria table retained."
+    },
+    {
+      "workCommit": "ad5869193",
+      "launchCommit": "11224ead5",
+      "scope": "2023 Higher B1: original nutrition chart, three grading corrections, all source guidance; Vitamin C verified unchanged."
+    },
+    {
+      "workCommit": "341c8b39f",
+      "launchCommit": "a606985d6",
+      "scope": "2023 Higher B2–B5: 10 marking corrections, preserved headings and choice boundaries."
+    },
+    {
+      "workCommit": "35b5850a1",
+      "launchCommit": "d1bb0e640",
+      "scope": "2023 Higher Section C: 26 grading corrections; full main-sitting source review complete."
+    },
+    {
+      "workCommit": "57d32509e",
+      "launchCommit": "020a8eec2",
+      "scope": "2023 Ordinary: four recovered tasks, full statutory-scheme tariff, Section C and care-symbol Atlas corrections."
+    },
+    {
+      "workCommit": "0185151b5",
+      "launchCommit": "fc3768b40",
+      "scope": "2023 Ordinary Section A: 11 corrections and the separately priced iron-source task."
+    },
+    {
+      "workCommit": "009d538e7",
+      "launchCommit": "6fe0e1419",
+      "scope": "2023 Ordinary Section B: 13 corrections and separate conflict-resolution task; factual clarifications distinguish source errors."
+    },
+    {
+      "workCommit": "d774f50ed",
+      "launchCommit": "d82cdab94",
+      "scope": "2023 Ordinary Section C: 27 corrections; full Ordinary main source review complete."
+    },
+    {
+      "workCommit": "34d964099",
+      "launchCommit": "1b8cc8171",
+      "scope": "2023 Higher deferred Section A: 15 cards, 14 Atlas anchors; sitting-aware source guard and deferred census."
+    },
+    {
+      "workCommit": "41f29a452",
+      "launchCommit": "bdb2f6823",
+      "scope": "2023 Higher deferred B1: five nutrition tasks, original consumption chart and matching two-page Atlas scheme anchor."
+    },
+    {
+      "workCommit": "1c5d3f207",
+      "launchCommit": "2cef7e656",
+      "scope": "2023 Higher deferred B2–B5: twelve tasks; complete Section B, original question and scheme anchors, all canonical topics."
+    },
+    {
+      "workCommit": "92cfca214",
+      "launchCommit": "6574b2e53",
+      "scope": "2023 Higher deferred Section C: 26 cards, full source guidance, original graduation image and four Atlas question groups; sitting source-complete."
+    },
+    {
+      "workCommit": "579b1f9ec",
+      "launchCommit": "c117d2d24",
+      "scope": "2022 Higher deferred Section A: nineteen tasks, fourteen Atlas anchors and full 79-page source sweep."
+    },
+    {
+      "workCommit": "d41590a7c",
+      "launchCommit": "d6025bea1",
+      "scope": "2022 Higher deferred Section B: sixteen tasks, original six-category food-label chart and five Atlas question groups."
+    },
+    {
+      "workCommit": "6d97b458a",
+      "launchCommit": "911008254",
+      "scope": "2022 Higher deferred Section C: 26 tasks, original fuel table, four Atlas groups; full sitting source-complete."
+    },
+    {
+      "workCommit": "3349c08cc",
+      "launchCommit": "252375465",
+      "scope": "2022 Ordinary main: all 60 tasks, eight new identities, full 81-page source review and 23 Atlas question groups."
+    },
+    {
+      "workCommit": "2d6c0c30b",
+      "launchCommit": "30268f46d",
+      "scope": "2022 Higher main: all 62 tasks; four independent additions, preserved flooring-profile progress alias, three original figures, all 23 Atlas groups."
+    },
+    {
+      "workCommit": "a9953e3fd",
+      "launchCommit": "7ce8b7129",
+      "scope": "2021 Higher main: all 62 tasks, six additions, all 92 source pages, both original figures and all 23 Atlas groups."
+    },
+    {
+      "workCommit": "6056801a4",
+      "launchCommit": "9f88b2ba3",
+      "scope": "2021 Ordinary main: all 61 tasks, eight additions, all 84 source pages, four original figures and all 23 Atlas groups."
+    },
+    {
+      "workCommit": "457d30d9e",
+      "launchCommit": "13f24f82d",
+      "scope": "2024 Higher main: all 58 tasks, four additions, all 94 source pages, three original figures and all 23 Atlas groups."
+    },
+    {
+      "workCommit": "543f3e2c3",
+      "launchCommit": "dd98eeb36",
+      "scope": "2024 Ordinary main: all 58 tasks, four additions, all 82 source pages, two original figures and all 23 Atlas groups."
+    },
+    {
+      "workCommit": "3419f52e5",
+      "launchCommit": "8f826a10c",
+      "scope": "2025 Higher Section A: fifteen tasks, one addition, all 96 source pages swept, fourteen Atlas anchors."
+    }
+  ],
+  "latestValidatedBatch": {
+    "scope": "2020 Ordinary main: 55 original leaves reconciled to 56 priced tasks, ten complete original figures, 17 preserved Atlas IDs and three restored electives.",
+    "runtimeCards": 1953,
+    "higher": 1026,
+    "ordinary": 927,
+    "sourceReview": "2020-ol-main-review.json",
+    "validation": {
+      "runtime": "248 affected/required tests passed: eight 2020 Ordinary and eight 2020 Higher plus 232 preservation/curriculum/deck. maxWorkers=1; owned temporary test caches removed automatically.",
+      "mandatoryRawSourceGate": "Explicit 2010-2020 original-PDF hash/key gates passed. Independent 78-page visual census and saved pre-parser manual ledger pinned 55 source leaves A13/B20/C22 and 56 priced tasks A15/B19/C22, 627 offered marks. A2 named roman definitions retained in one whole task; three A companion asks separately priced. B3(a) two inline source roman leaves restored narrowly; shared flexible tariff stays one task. No source marker removed.",
+      "atlas": "Two targeted HE checks passed: 76 tagged papers, 986 physical groups, 1014 registry mappings. All 17 original identities retained, missing C groups added as B/C6-8. Runtime 1002.",
+      "coverage": "Three targeted HE cases passed. Subject-only measured baseline: 1953 cards, 1908/1908 diagnostic raw leaves covered, zero open/excluded/orphan/unparsed. All other subject entries unchanged.",
+      "mainTypecheck": "passed",
+      "scoped2020TestTypecheck": "passed",
+      "productionBuild": "passed in 38.48s; owned ignored nonsymlink dist removed after success",
+      "cardlint": "1979 authored records inspected, clean",
+      "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across 36 generated files.",
+      "reconciliation": "2020 Ordinary 55/55 independently observed source leaves covered by 56 priced tasks; zero sitting opens/exclusions/continuity flags. Lane 1953 cards (1026 Higher / 927 Ordinary), 1908/1908 raw leaves covered, zero orphan/unparsed/excluded/open. All 11 remaining marks-checksum diagnostics explicitly classified in final-census-flags-20261109.json; flags are retained, not suppressed.",
+      "preservation": "Every earlier authored card and all 871 earlier Ordinary emitted blocks unchanged, along with every other deck, unrelated sizes/showcase subject, full/decoded non-HE Atlas, unrelated HE mappings and other HE census sittings. Frozen identity hashes retained; all 56 additions explicitly pinned. Narrow shared census change is scoped to Home Economics 2020 Ordinary B3(a).",
+      "browser": "Parent-owned; all ten original figure crops individually inspected here, with final chart quotation/attribution complete."
+    }
+  },
+  "knownExistingValidationIssues": [
+    {
+      "test": "test/finalStudyclixExamTopics.test.ts:138",
+      "subject": "mathematics",
+      "issue": "Expected 1632 logical topic mappings; current established runtime produces 2091. Test, Mathematics runtime and curriculum crosswalk unchanged from the pre-B2 commit. Reconcile this count separately against the completed Mathematics source-review evidence; do not change frozen preservation/coverage baselines to silence it."
+    }
+  ],
+  "sourceScopeHandoff": "source-scope-handoff-20261109.json"
+}

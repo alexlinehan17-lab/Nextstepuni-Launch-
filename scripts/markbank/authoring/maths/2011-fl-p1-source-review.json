@@ -1,0 +1,1511 @@
+{
+  "status": "complete locally; all 46 tasks authored and all 92 question/solution crops visually inspected",
+  "reviewedAt": "2026-10-30",
+  "paperFileid": "LC003BLP000EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "paperSha256": "fb962d9db838b8c7114ed45842072b84f13516b83e1bde21edb8b4e996324cfa",
+  "schemeSha256": "71489d15294f23003a621f7c6dd2bdb950c50a03504467f97f0bbda68558ecd5",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "generalNotesPages": [
+    4
+  ],
+  "offeredMarks": 400,
+  "candidateMarks": 300,
+  "printedQuestionMarks": {
+    "1": 100,
+    "2": 50,
+    "3": 50,
+    "4": 50,
+    "5": 50,
+    "6": 50,
+    "7": 50
+  },
+  "tasks": [
+    {
+      "suffix": "1-i",
+      "printedParts": [
+        "Q1(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        5
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find √132·9, correct to two decimal places.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution."
+    },
+    {
+      "suffix": "1-ii",
+      "printedParts": [
+        "Q1(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        6
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the exact value of 14·32 − 2·6 ÷ 0·4.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution."
+    },
+    {
+      "suffix": "1-iii",
+      "printedParts": [
+        "Q1(iii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        7
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find (4·2)³ − (2·8)², correct to one decimal place.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution."
+    },
+    {
+      "suffix": "1-iv",
+      "printedParts": [
+        "Q1(iv)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        8
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "A concert hall has 1200 seats. For one concert 1050 seats were occupied. What percentage of the seats were occupied?",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution."
+    },
+    {
+      "suffix": "1-v",
+      "printedParts": [
+        "Q1(v)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        9
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the value in euro of 600 South African rand given that €1 = 9·674 South African rand.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution. Candidate rounding is accepted; the answer in cents (6202) earns 9 marks."
+    },
+    {
+      "suffix": "1-vi",
+      "printedParts": [
+        "Q1(vi)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        10
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the number of seconds in 24 hours.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution. The printed scheme lists an incomplete 24 × 60 both under blunders and under attempts; both original notes are retained."
+    },
+    {
+      "suffix": "1-vii",
+      "printedParts": [
+        "Q1(vii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        11
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the exact value of 1/(0·5)² + 1/(0·25)².",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution."
+    },
+    {
+      "suffix": "1-viii",
+      "printedParts": [
+        "Q1(viii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        12
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Write 8/11 − 3/7 as a decimal, correct to three decimal places.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution."
+    },
+    {
+      "suffix": "1-ix",
+      "printedParts": [
+        "Q1(ix)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        13
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4,
+              "permittedMarks": [
+                0,
+                4,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find ((37·6 + 5·92)/0·85)², correct to the nearest integer.",
+      "markingNote": "The published scheme permits only 10 for a fully correct answer, 4 for an answer of some merit, or 0 otherwise. No intermediate deduction marks apply."
+    },
+    {
+      "suffix": "1-x",
+      "printedParts": [
+        "Q1(x)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        13
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4,
+              "permittedMarks": [
+                0,
+                4,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find ((3·68 × 10⁵) − (2·1 × 10⁴))/(3·8 × 10³), correct to three significant figures.",
+      "markingNote": "The published scheme permits only 10 for a fully correct answer, 4 for an answer of some merit, or 0 otherwise. No intermediate deduction marks apply."
+    },
+    {
+      "suffix": "2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        14
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Change 6·3 kilometres to metres.",
+      "markingNote": "The original panel includes both conversions and shared notes. This card awards only its named five-mark part. Correct answers without units are accepted."
+    },
+    {
+      "suffix": "2-a-ii",
+      "printedParts": [
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        14
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Change 8245 grams to kilograms.",
+      "markingNote": "The original panel includes both conversions and shared notes. This card awards only its named five-mark part. Correct answers without units are accepted."
+    },
+    {
+      "suffix": "2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        15
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Calculate the number of units of electricity used between these two readings.",
+      "stem": "The following information was used to calculate the cost of electricity used by Emma. Previous meter reading: 72 010. Present meter reading: 73 485. Cost per unit: 15 cent.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution."
+    },
+    {
+      "suffix": "2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        16
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Calculate the cost of the units used.",
+      "stem": "The following information was used to calculate the cost of electricity used by Emma. Previous meter reading: 72 010. Present meter reading: 73 485. Cost per unit: 15 cent.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution. Follow through the candidate’s earlier calculation."
+    },
+    {
+      "suffix": "2-b-iii",
+      "printedParts": [
+        "Q2(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        16
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "A standing charge of €24·75 and VAT of €33·21 are added to the cost of the units. Find the total cost of Emma’s electricity bill.",
+      "stem": "The following information was used to calculate the cost of electricity used by Emma. Previous meter reading: 72 010. Present meter reading: 73 485. Cost per unit: 15 cent.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution. Follow through the candidate’s earlier calculation."
+    },
+    {
+      "suffix": "2-c-i",
+      "printedParts": [
+        "Q2(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        17
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "How much tax does Sam pay each week?",
+      "stem": "Sam earns €550 a week. His rate of tax is 20% and he has tax credits of €75 a week.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution."
+    },
+    {
+      "suffix": "2-c-ii",
+      "printedParts": [
+        "Q2(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        18
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Sam also pays other deductions of €91·50 each week. Find his weekly take-home pay.",
+      "stem": "Sam earns €550 a week. His rate of tax is 20% and he has tax credits of €75 a week.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution. Use the candidate’s tax from part (i). The original cross-part recoup notes do not add marks to this five-mark card."
+    },
+    {
+      "suffix": "2-c-iii",
+      "printedParts": [
+        "Q2(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        18
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "What percentage of his total pay does Sam take home each week?",
+      "stem": "Sam earns €550 a week. His rate of tax is 20% and he has tax credits of €75 a week. He also pays other deductions of €91·50 each week.",
+      "markingNote": "Hit or miss: 10 marks or 0. Accept the candidate’s take-home pay from part (ii), and accept a correct answer without work."
+    },
+    {
+      "suffix": "3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        19
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the error in the estimate.",
+      "stem": "Seán estimates that he will get €200 by selling his DVDs. He actually gets €184.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution."
+    },
+    {
+      "suffix": "3-a-ii",
+      "printedParts": [
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        19
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Calculate the percentage error, correct to one decimal place.",
+      "stem": "Seán estimates that he will get €200 by selling his DVDs. He actually gets €184.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution. Use the actual amount (€184) as denominator; follow through the candidate’s error from part (i)."
+    },
+    {
+      "suffix": "3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        20
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "How much does Aoife get?",
+      "stem": "A raffle ticket costs €1. Caoimhe pays 40 cent and Aoife pays 60 cent of the cost. They share a prize in the ratio of the amount paid by each. Caoimhe gets €160.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution."
+    },
+    {
+      "suffix": "3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        20
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "How much is the total prize they share?",
+      "stem": "A raffle ticket costs €1. Caoimhe pays 40 cent and Aoife pays 60 cent of the cost. They share a prize in the ratio of the amount paid by each. Caoimhe gets €160.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution. Follow through the candidate’s share for Aoife."
+    },
+    {
+      "suffix": "3-c-i",
+      "printedParts": [
+        "Q3(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        21
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the annual rate of depreciation.",
+      "stem": "Tom bought a television set for €1100. At the end of the first year the television set is worth €935.",
+      "markingNote": "Hit or miss: 10 marks or 0. Only part (i) is marked on this card; part (ii) is retained beside the original television illustration for context."
+    },
+    {
+      "suffix": "3-c-ii",
+      "printedParts": [
+        "Q3(c)(ii)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        21
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 15,
+              "attempt": 6
+            }
+          ]
+        }
+      ],
+      "questionText": "At this rate of depreciation, how much will the television set be worth at the end of 3 years? Give your answer correct to the nearest euro.",
+      "stem": "Tom bought a television set for €1100. At the end of the first year the television set is worth €935.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution. Follow through the candidate’s rate from part (i). The formula and repeated annual calculation are alternative methods for the same 15 marks; only part (ii) is marked."
+    },
+    {
+      "suffix": "4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        22
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Solve for x: 3x − 7 = 6x + 8.",
+      "markingNote": "Show the work. A correct answer without work loses 3 marks; trial and error with verification earns full marks."
+    },
+    {
+      "suffix": "4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 20,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        23
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "first-variable",
+              "label": "First variable found",
+              "maximum": 15,
+              "attempt": 6
+            },
+            {
+              "id": "second-variable",
+              "label": "Second variable",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Solve the simultaneous equations x + 2y = 4 and 2x + 3y = 5.",
+      "markingNote": "One task with two marking steps: first variable 15 marks (attempt 6), second variable 5 (attempt 2). Either variable may be found first. Correct answers without work earn 6 + 2 only; verification in both equations earns all 20."
+    },
+    {
+      "suffix": "4-c-i",
+      "printedParts": [
+        "Q4(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        24
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Write an expression in x for the cost of a blue mobile phone.",
+      "stem": "The cost of a blue mobile phone is €12 less than the cost of a pink mobile phone. Let x be the cost of a pink mobile phone.",
+      "markingNote": "Only the named part is marked; the original phone illustration and connected prompts remain visible. Apply the original task-specific deductions."
+    },
+    {
+      "suffix": "4-c-ii",
+      "printedParts": [
+        "Q4(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        24
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "The total cost of 2 pink and 4 blue mobile phones is €840. Write this information as an equation in x.",
+      "stem": "The cost of a blue mobile phone is €12 less than the cost of a pink mobile phone. Let x be the cost of a pink mobile phone.",
+      "markingNote": "Only the named part is marked; the original phone illustration and connected prompts remain visible. Follow through the candidate’s earlier expression/equation. Cross-part recoup notes do not add marks to this card."
+    },
+    {
+      "suffix": "4-c-iii",
+      "printedParts": [
+        "Q4(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        25
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "The total cost of 2 pink and 4 blue mobile phones is €840. Solve this equation to find the cost of a pink mobile phone.",
+      "stem": "The cost of a blue mobile phone is €12 less than the cost of a pink mobile phone. Let x be the cost of a pink mobile phone.",
+      "markingNote": "Only the named part is marked; the original phone illustration and connected prompts remain visible. Follow through the candidate’s earlier expression/equation. Cross-part recoup notes do not add marks to this card."
+    },
+    {
+      "suffix": "5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        26
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Write down all the whole number factors of 24.",
+      "markingNote": "All listed numbers are required, not a choice of one. This card marks only its named part; both answers and their shared notes are shown. Deduct one per missing/incorrect entry, up to three, provided at least one is correct."
+    },
+    {
+      "suffix": "5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        26
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "List which of the whole number factors of 24 are multiples of 3.",
+      "markingNote": "All listed numbers are required, not a choice of one. This card marks only its named part; both answers and their shared notes are shown. Deduct one per missing/incorrect entry, up to three, provided at least one is correct."
+    },
+    {
+      "suffix": "5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        26,
+        27
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Solve the quadratic equation x² + 4x − 12 = 0.",
+      "markingNote": "Both roots are required. The second original panel supplies the quadratic-formula deductions referenced by this part; its separate question does not add marks to this ten-mark card."
+    },
+    {
+      "suffix": "5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        27
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Solve the quadratic equation 3x² − 6x + 2 = 0, correct to two decimal places.",
+      "markingNote": "Both roots are required. Once the starred expression is correctly reached, further deductions total at most 3 marks. A negative radicand cannot earn the final 3 marks."
+    },
+    {
+      "suffix": "5-c-i",
+      "printedParts": [
+        "Q5(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        28
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Solve 3x + 6 < 24, x ∈ ℤ.",
+      "markingNote": "The summary and task heading specify an attempt floor of 2. The body’s “Attempts (4 marks)” conflicts with both headings; this card follows the repeated 2-mark allocation. Show the work."
+    },
+    {
+      "suffix": "5-c-ii",
+      "printedParts": [
+        "Q5(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        28
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Solve 6 − 4x ≤ 10, x ∈ ℤ.",
+      "markingNote": "Hit or miss: 10 marks or 0. Reverse the inequality when dividing by −4."
+    },
+    {
+      "suffix": "5-c-iii",
+      "printedParts": [
+        "Q5(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        28
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Write down all the values of x which satisfy both of the above inequalities.",
+      "stem": "Solve 3x + 6 < 24 and 6 − 4x ≤ 10, x ∈ ℤ.",
+      "markingNote": "All seven integers are required. Follow through the candidate’s two inequalities; if either earlier part used equality, award at most 2 here. Missing/incorrect entries lose one each, up to three, provided at least one is correct."
+    },
+    {
+      "suffix": "6-i",
+      "printedParts": [
+        "Q6(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "How many CDs were sold on Friday?",
+      "stem": "A music shop sells CDs and DVDs. The graph shows the number of each sold over six days. For example, on Tuesday, 50 CDs and 10 DVDs were sold.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution."
+    },
+    {
+      "suffix": "6-ii",
+      "printedParts": [
+        "Q6(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "How many more CDs than DVDs were sold on Saturday?",
+      "stem": "A music shop sells CDs and DVDs. The graph shows the number of each sold over six days. For example, on Tuesday, 50 CDs and 10 DVDs were sold.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution."
+    },
+    {
+      "suffix": "6-iii",
+      "printedParts": [
+        "Q6(iii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "On which days of the week was the number of DVDs sold greater than the number of CDs sold?",
+      "stem": "A music shop sells CDs and DVDs. The graph shows the number of each sold over six days. For example, on Tuesday, 50 CDs and 10 DVDs were sold.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution. Both days are required."
+    },
+    {
+      "suffix": "6-iv",
+      "printedParts": [
+        "Q6(iv)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the average number of CDs sold per day.",
+      "stem": "A music shop sells CDs and DVDs. The graph shows the number of each sold over six days. For example, on Tuesday, 50 CDs and 10 DVDs were sold.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution."
+    },
+    {
+      "suffix": "6-v",
+      "printedParts": [
+        "Q6(v)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        31
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "The shop sells each CD for €8 and each DVD for €12. Find, in euro, the total amount of sales over the six days.",
+      "stem": "A music shop sells CDs and DVDs. The graph shows the number of each sold over six days. For example, on Tuesday, 50 CDs and 10 DVDs were sold.",
+      "markingNote": "The scheme accepts a correct answer without work. Apply the task-specific deductions in the original solution. Use the candidate’s CD total from part (iv)."
+    },
+    {
+      "suffix": "7-graph",
+      "printedParts": [
+        "Q7"
+      ],
+      "totalMarks": 30,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        32,
+        33,
+        34
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "evaluation",
+              "label": "Evaluate the function",
+              "maximum": 20,
+              "attempt": 8
+            },
+            {
+              "id": "graph",
+              "label": "Draw the graph",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Draw the graph of the function f: x ↦ 2x² − x − 5, for −3 ≤ x ≤ 3, x ∈ ℝ.",
+      "markingNote": "One graph task: evaluation 20 (attempt 8), plotting 10 (attempt 4). Table and direct evaluation are alternatives for the same evaluation marks. A fully correct graph without calculations earns all 30 marks. Follow through the candidate’s values when marking the plot."
+    },
+    {
+      "suffix": "7-i",
+      "printedParts": [
+        "Q7(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        34,
+        35
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use your graph to estimate the value of f(2·5).",
+      "stem": "Draw the graph of the function f: x ↦ 2x² − x − 5, for −3 ≤ x ≤ 3, x ∈ ℝ.",
+      "markingNote": "Only this named five-mark read-off is marked; the panel retains all four answers and shared notes. Accept the candidate’s graph, with tolerance ±0·3 on x and ±0·5 on y."
+    },
+    {
+      "suffix": "7-ii",
+      "printedParts": [
+        "Q7(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        34,
+        35
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use your graph to estimate the minimum value of f(x).",
+      "stem": "Draw the graph of the function f: x ↦ 2x² − x − 5, for −3 ≤ x ≤ 3, x ∈ ℝ.",
+      "markingNote": "Only this named five-mark read-off is marked; the panel retains all four answers and shared notes. Accept the candidate’s graph, with tolerance ±0·3 on x and ±0·5 on y."
+    },
+    {
+      "suffix": "7-iii",
+      "printedParts": [
+        "Q7(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        34,
+        35
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use your graph to estimate the values of x for which f(x) = 7.",
+      "stem": "Draw the graph of the function f: x ↦ 2x² − x − 5, for −3 ≤ x ≤ 3, x ∈ ℝ.",
+      "markingNote": "Only this named five-mark read-off is marked; the panel retains all four answers and shared notes. Accept the candidate’s graph, with tolerance ±0·3 on x and ±0·5 on y. Both intersections are required; solving correctly by algebra alone earns only the 2 attempt marks."
+    },
+    {
+      "suffix": "7-iv",
+      "printedParts": [
+        "Q7(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        34,
+        35
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use your graph to estimate the range of values of x for which f(x) is increasing.",
+      "stem": "Draw the graph of the function f: x ↦ 2x² − x − 5, for −3 ≤ x ≤ 3, x ∈ ℝ.",
+      "markingNote": "Only this named five-mark read-off is marked; the panel retains all four answers and shared notes. Accept the candidate’s graph, with tolerance ±0·3 on x and ±0·5 on y."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        1
+      ],
+      "wording": "Attempt QUESTION 1 (100 marks) and FOUR other questions (50 marks each).",
+      "classification": "whole-examination-selection",
+      "reason": "All seven printed questions and all 46 practice tasks are retained. The whole-examination choice is not duplicated as five-question bundles."
+    },
+    {
+      "pages": [
+        4,
+        5
+      ],
+      "wording": "all the whole number factors; multiples; solve the quadratic; all the values; on which days; graph estimates",
+      "classification": "all-required",
+      "reason": "All factors, applicable multiples, roots, simultaneous variables, integer solutions, days and requested graph estimates are required. There is no finite task-internal choice pool."
+    },
+    {
+      "pages": [
+        5
+      ],
+      "wording": "Draw the graph",
+      "classification": "open-method-choice",
+      "reason": "Table and direct evaluation are alternative assessment methods for the same 20 evaluation marks, followed by the same 10 plotting marks. They are not separate question options."
+    }
+  ],
+  "notes": [
+    "The original cover explicitly identifies PAPER 1, despite the indexed component code 000. All cards and Atlas placements bind to this exact source file.",
+    "Blunders lose 3; slips and misreadings lose 1, subject to the specific exceptions and caps. Penalise the same error once in a section; retain the attempt floor.",
+    "Q1(ix) and Q1(x) allow only 0,4,10. Q2(c)(iii), Q3(c)(i) and Q5(c)(ii) are hit-or-miss, 0 or 10.",
+    "Q4(b) is one task with 15+5 marking steps; Q7 graph is one task with 20+10 steps. There are 48 scoring components across 46 tasks.",
+    "Q5(c)(i) body says Attempts (4 marks), inconsistent with both summary and part heading Att 2. Use the repeated 2-mark allocation and explain the conflict without changing the original.",
+    "Q1(vi) repeats incomplete 24×60 under blunders and attempts; preserve both notes. Q1(viii) B2 says addition although the task is subtraction; the original calculation and notes remain visible.",
+    "Q7 increasing interval begins at approximately 0.2 in the published graph answer. This is consistent with the ±0.3 x tolerance and is not a source error; exact vertex x=0.25.",
+    "Only the named task earns marks when a shared source panel includes adjacent answers. All alternative solutions, diagrams, rounding requirements, dependencies and special deductions are retained."
+  ]
+}

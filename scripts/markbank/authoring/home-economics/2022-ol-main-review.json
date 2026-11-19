@@ -1,0 +1,555 @@
+{
+  "schemaVersion": 1,
+  "year": 2022,
+  "level": "ordinary",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-complete; all-source-pages-visually-reviewed; browser-QA-pending",
+  "sources": {
+    "examiner-reports/home-economics/papers/2022-ol-014-paper.pdf": {
+      "sha256": "d37643ef21753607e255f0afae544a1af0df497c8ed9e9795b33901547eb2354",
+      "pages": 32
+    },
+    "examiner-reports/home-economics/papers/2022-ol-039-paper.pdf": {
+      "sha256": "6fd83dce9dc39044b6284a9f16814c05c31b0dd9b6ed11c7b311e25ffc42b608",
+      "pages": 12
+    },
+    "paper-trail-corpus/markingschemes/2022/LC098GLP000EV.pdf": {
+      "sha256": "5eed036a64a77bd7d9b68d47827bd21a81e385d751c82bab133a8cacc33e5286",
+      "pages": 37
+    }
+  },
+  "visualSweep": {
+    "a": "All 32 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–31, back cover 32.",
+    "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+    "scheme": "All 37 pages: cover 1, guidance/rubric/annotations 2–5, A 6–10, B 11–16, C 17–25, separate practical-coursework scheme 26–35, blank 36 and back cover 37. Coursework is a separate assessment, not a task in these written-paper booklets."
+  },
+  "expectedTasks": 60,
+  "expectedSectionTasks": {
+    "A": 16,
+    "B": 16,
+    "C": 28
+  },
+  "offeredPracticeMarks": 749,
+  "candidateMarks": [
+    200,
+    240
+  ],
+  "boundaryDecisions": [
+    "A2: separately marked lipid functions 4 and dietary source 2.",
+    "A11: credit advantages 4 and car-credit example 2 are independent.",
+    "C3(a)(i): poverty definition 4 is independent of the two required poverty terms (12).",
+    "A14: both required original care symbols remain one six-mark task.",
+    "B1(a): one choice card with two routes, original milk table and all published reasons.",
+    "B2(a): preserve one nutritive point, one dietetic point and two others.",
+    "B2(b): one whole-day menu with three meals; each has two food courses and one beverage, all graded 2:1:0.",
+    "B3(a): one open preservation profile; foods must match the selected process; retain all source steps."
+  ],
+  "recoveryReview": {
+    "ids": [
+      "he-2022-ol-sa-q14",
+      "he-2022-ol-sb-q1a",
+      "he-2022-ol-sb-q2a",
+      "he-2022-ol-sb-q2b",
+      "he-2022-ol-sb-q3a"
+    ],
+    "figures": {
+      "home-economics-2022-ol-sa-q14-symbols": {
+        "source": "examiner-reports/home-economics/papers/2022-ol-014-paper.pdf",
+        "page": 7,
+        "bounds": [
+          53,
+          315,
+          202,
+          599
+        ],
+        "sha256": "90d8c2d6644c2a27fa8adc091140bb44171917dadf0007a42cc84b77e2927197",
+        "alt": "Two care symbols, in vertical order. Top: a crossed-out triangle. Bottom: a square containing one horizontal line."
+      },
+      "home-economics-2022-ol-sb-q1a-milk": {
+        "source": "examiner-reports/home-economics/papers/2022-ol-039-paper.pdf",
+        "page": 2,
+        "bounds": [
+          59,
+          216,
+          533,
+          345
+        ],
+        "sha256": "1b36e8fdb3b37bfcb8ffb59c9c9611b621fd4121bd4751b2dd0d2425592b5007",
+        "alt": "Nutrition per 100 ml. Whole milk: 64 kcal, protein 3.4 g, carbohydrates 4.7 g, fat 3.5 g, calcium 119 mg, vitamin B12 0.4 µg. Super Milk Fat-free: 35 kcal, protein 3.3 g, carbohydrates 5.0 g, fat 0.2 g, calcium 160 mg, vitamin B12 0.4 µg."
+      }
+    },
+    "sourceClarifications": {
+      "milk-data": {
+        "source": "Original paper table, B/C page 2",
+        "note": "Super Milk Fat-free has more carbohydrate (5.0 g versus 4.7 g), not less as the scheme says. Vitamin B12 values are equal."
+      },
+      "coeliac": {
+        "source": "https://www.niddk.nih.gov/health-information/digestive-diseases/celiac-disease/definition-facts",
+        "note": "Coeliac disease is an immune disorder triggered by gluten, not simply an inability to digest it."
+      },
+      "bottling": {
+        "source": "https://nchfp.uga.edu/how/general-canning-information/ensuring-safe-canned-foods/",
+        "note": "Water-bath processing is not suitable for all vegetables: low-acid foods require a validated pressure-canning process. The source’s short examples are examination guidance, not complete preservation recipes."
+      }
+    },
+    "checked": "2026-11-01"
+  },
+  "tasks": [
+    {
+      "id": "he-2022-ol-sa-q14",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-ol-sb-q1a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-ol-sb-q2a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-ol-sb-q2b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 18
+    },
+    {
+      "id": "he-2022-ol-sb-q3a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 24
+    },
+    {
+      "id": "he-2022-ol-sa-q1",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-ol-sa-q7",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-ol-sa-q12",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-ol-sa-q2",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 4
+    },
+    {
+      "id": "he-2022-ol-sa-q3",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-ol-sa-q4",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-ol-sa-q5",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-ol-sa-q6",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-ol-sa-q8",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-ol-sa-q13",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-ol-sa-q9",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-ol-sa-q10",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-ol-sa-q11",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 4
+    },
+    {
+      "id": "he-2022-ol-sa-q2-source",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 2
+    },
+    {
+      "id": "he-2022-ol-sa-q11-car",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 2
+    },
+    {
+      "id": "he-2022-ol-sb-q1b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 12
+    },
+    {
+      "id": "he-2022-ol-sb-q1c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 28
+    },
+    {
+      "id": "he-2022-ol-sb-q1d",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-ol-sb-q2c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 12
+    },
+    {
+      "id": "he-2022-ol-sb-q3b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 16
+    },
+    {
+      "id": "he-2022-ol-sb-q3c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 10
+    },
+    {
+      "id": "he-2022-ol-sb-q4a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 16
+    },
+    {
+      "id": "he-2022-ol-sb-q4b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 24
+    },
+    {
+      "id": "he-2022-ol-sb-q4c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 10
+    },
+    {
+      "id": "he-2022-ol-sb-q5a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-ol-sb-q5b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-ol-sb-q5c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 10
+    },
+    {
+      "id": "he-2022-ol-sc-q1ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-ol-sc-q1aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-ol-sc-q1aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-ol-sc-q1bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-ol-sc-q1bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-ol-sc-q1ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 10
+    },
+    {
+      "id": "he-2022-ol-sc-q1cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-ol-sc-q2ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2022-ol-sc-q2aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 7
+    },
+    {
+      "id": "he-2022-ol-sc-q2bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 9
+    },
+    {
+      "id": "he-2022-ol-sc-q2bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-ol-sc-q2ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 9
+    },
+    {
+      "id": "he-2022-ol-sc-q2cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-ol-sc-q3ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 4
+    },
+    {
+      "id": "he-2022-ol-sc-q3aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-ol-sc-q3aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 14
+    },
+    {
+      "id": "he-2022-ol-sc-q3bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-ol-sc-q3bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-ol-sc-q3ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-ol-sc-q3cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-ol-sc-q4ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-ol-sc-q4aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2022-ol-sc-q4aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2022-ol-sc-q4bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-ol-sc-q4bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-ol-sc-q4ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-ol-sc-q4cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-ol-sc-q3ai-terms",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    }
+  ],
+  "sectionAReview": {
+    "tasks": 16,
+    "marks": 84,
+    "sourceClarifications": {
+      "lipid-membranes": {
+        "source": "https://www.ncbi.nlm.nih.gov/books/NBK9928/",
+        "note": "Lipids form cell membranes; human cells do not have cell walls. Retain the historical scheme wording with this correction."
+      },
+      "reheating": {
+        "source": "https://www.fsai.ie/consumer-advice/food-safety-and-hygiene/cooking-and-reheating",
+        "note": "FSAI advises reheating to at least 70°C throughout. For stews/casseroles the liquid should boil for 3–5 minutes to heat the meat through; the source’s 100°C example is not a universal core-temperature rule."
+      }
+    },
+    "selectionDecisions": "All three true/false grids, the whole word bank, all required table headings, and open example counts remain one task each. Q2/Q11 have independent separately priced prompts. Q5 retains the unassigned 2+2+1+1 tariff without inventing which method gets two marks.",
+    "checked": "2026-11-01"
+  },
+  "sectionBReview": {
+    "tasks": 16,
+    "marks": 280,
+    "sourceClarifications": {
+      "tooth-decay": {
+        "source": "https://www.nidcr.nih.gov/health-info/tooth-decay",
+        "note": "Decay is driven by acids produced by oral bacteria acting on sugars/starches, not simply calcium deficiency."
+      },
+      "popcorn": {
+        "source": "https://www.nal.usda.gov/exhibits/speccoll/exhibits/show/popcorn/how-does-popcorn-pop-",
+        "note": "Water inside the heated kernel produces pressure; popping is not caused by starch absorbing fat."
+      },
+      "cellulose": {
+        "source": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/questions-and-answers-dietary-fiber",
+        "note": "Cellulose remains non-digestible dietary fibre; cooking can soften the food without making cellulose digestible by human enzymes."
+      },
+      "consent": {
+        "source": "https://www2.hse.ie/services/sexual-health/what-is/",
+        "note": "Sexual activity requires freely given, ongoing consent; marriage does not confer entitlement to sex."
+      },
+      "marriage-consent": {
+        "source": "https://data.oireachtas.ie/ie/oireachtas/act/2019/6/eng/enacted/a0619.pdf",
+        "note": "Distinguish consensual arranged marriages from forced marriages. Do not generalise the scheme’s community example to all members of that community."
+      }
+    },
+    "selectionDecisions": "Milk choice has two answer routes in one card; all meal courses/beverages are required; preservation and appliance are single open profiles. Required calcium, buying/storage, separation/divorce headings preserve exact tariffs. Cultural variations are open examples.",
+    "checked": "2026-11-01"
+  },
+  "sectionCReview": {
+    "tasks": 28,
+    "marks": 385,
+    "figures": {
+      "home-economics-2022-ol-sc-q1-room": {
+        "page": 5,
+        "bounds": [
+          115,
+          210,
+          493,
+          345
+        ],
+        "sha256": "40f65cef79179c3b439f18971011e3ae4e67af491c70981b6c946bf3951574b0",
+        "alt": "An overhead view of an open-plan kitchen, dining and living room. Left: corner sofa, armchair, coffee table, television and window. Right: dining table with four chairs, kitchen units, hob, extractor, sink and worktops. Pale wood-effect flooring continues throughout."
+      },
+      "home-economics-2022-ol-sc-q2-outfits": {
+        "page": 6,
+        "bounds": [
+          199,
+          129,
+          382,
+          302
+        ],
+        "sha256": "2f033a5e8d4600fcc94c9f2e5c47947f643a232873a838678f291de84e9f25e5",
+        "alt": "Two athleisure outfits. Left: navy open zip jacket, white T-shirt, navy drawstring joggers and white trainers. Right: open taupe hooded jacket, white T-shirt, cropped olive trousers with a drawstring waist, white socks and light-coloured trainers. Both full outfits are visible."
+      }
+    },
+    "sourceClarifications": {
+      "electrical-protection": {
+        "source": "https://new.abb.com/low-voltage/products/system-pro-m/residual-current-devices",
+        "note": "An ordinary MCB provides overcurrent protection; an RCBO combines overcurrent and residual-current protection. MCBs do not universally contain RCDs."
+      },
+      "poverty": {
+        "source": "https://www.cso.ie/en/media/csoie/releasespublications/documents/ep/surveyonincomeandlivingconditions/2022/factsheets/0127101_At_Risk_of_Poverty_Explained_Leaflet.pdf",
+        "note": "CSO’s at-risk-of-poverty threshold is 60% of median equivalised disposable income, not the scheme’s 50% of average household income. Preserve the general relative-poverty definition and distinguish the erroneous threshold."
+      }
+    },
+    "selectionDecisions": "All offered a/b/c tasks in all three electives and the alternative core are included. Required headings stay together. Fabric, voluntary organisation, accessory and fish processing are single open choices with internal model routes where helpful. Poverty definition is independent of its two required terms.",
+    "checked": "2026-11-01"
+  },
+  "completion": {
+    "sourceReviewedTasks": 60,
+    "offeredPracticeMarks": 749,
+    "candidateMarks": [
+      200,
+      240
+    ],
+    "sourcePagesReviewed": 81,
+    "atlasQuestionGroups": 23,
+    "note": "Full independent paper/scheme sweep. All final 23 paper/scheme anchor pairs and four clean source figures visually checked. Candidate section and elective choices are not additive. Irish editions remain separate; browser QA remains pending."
+  }
+}

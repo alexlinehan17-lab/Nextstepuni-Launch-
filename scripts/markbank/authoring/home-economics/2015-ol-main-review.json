@@ -1,0 +1,635 @@
+{
+  "schemaVersion": 1,
+  "year": 2015,
+  "level": "ordinary",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-reviewed",
+  "sources": {
+    "paper-trail-corpus/exampapers/2015/LC098GLP000EV.pdf": {
+      "sha256": "e0aa871c86189030c12b785043448cb825fc6d3b2c2378bce9b59a0817e9f0f0",
+      "pages": 12
+    },
+    "paper-trail-corpus/markingschemes/2015/LC098GLP000EV.pdf": {
+      "sha256": "1f24cb97ca1b4b1a6d68455ac4286339ffbe442cca28f839b700a1cdcb5727f1",
+      "pages": 36
+    }
+  },
+  "visualSweep": {
+    "paper": "All12 original pages inspected: cover1,A2–5,B6–8,C9–11,blank12.",
+    "scheme": "All36 original pages inspected: cover1,source-use notice2,written cover/instructions3,A4–6,B7–12,C13–19,blank20,separate coursework21–31,blanks32–35,backcover36.",
+    "evidence": "tmp/pdfs/home-economics-review/2015-ol-main: paper-01..03 and scheme-01..09 all visually inspected; original texts/hashes retained.",
+    "method": "Independent full original-page visual sweep and manual priced-task ledger before authoring or parser/card-count inspection."
+  },
+  "expectedTasks": 51,
+  "expectedSectionTasks": {
+    "A": 12,
+    "B": 19,
+    "C": 20
+  },
+  "sourceQuestionGroups": 20,
+  "offeredPracticeMarks": 627,
+  "independentTaskCensus": {
+    "A": {
+      "Q1": 6,
+      "Q2": 6,
+      "Q3": 6,
+      "Q4": 6,
+      "Q5": 6,
+      "Q6": 6,
+      "Q7": 6,
+      "Q8": 6,
+      "Q9": 6,
+      "Q10": 6,
+      "Q11": 6,
+      "Q12": 6
+    },
+    "B": {
+      "Q1(a)": 8,
+      "Q1(b)": 24,
+      "Q1(c)(i)": 24,
+      "Q1(c)(ii)": 4,
+      "Q1(d)": 20,
+      "Q2(a)(i)": 10,
+      "Q2(a)(ii)": 10,
+      "Q2(b)": 18,
+      "Q2(c)": 12,
+      "Q3(a)": 24,
+      "Q3(b)-methods": 12,
+      "Q3(b)-explanation": 8,
+      "Q3(c)": 6,
+      "Q4(a)": 26,
+      "Q4(b)": 12,
+      "Q4(c)": 12,
+      "Q5(a)": 28,
+      "Q5(b)": 12,
+      "Q5(c)": 10
+    },
+    "C": {
+      "E1(a)(i)-evaluation": 15,
+      "E1(a)(i)-modifications": 10,
+      "E1(a)(ii)": 18,
+      "E1(a)(iii)": 7,
+      "E1(b)(i)": 12,
+      "E1(b)(ii)": 18,
+      "E1(c)(i)": 15,
+      "E1(c)(ii)": 15,
+      "E2(a)(i)": 10,
+      "E2(a)(ii)": 15,
+      "E2(b)": 15,
+      "E2(c)(i)": 9,
+      "E2(c)(ii)": 6,
+      "E3(a)(i)": 20,
+      "E3(a)(ii)": 20,
+      "E3(a)(iii)": 10,
+      "E3(b)(i)": 20,
+      "E3(b)(ii)": 10,
+      "E3(c)(i)": 21,
+      "E3(c)(ii)": 9
+    }
+  },
+  "tasks": [
+    {
+      "id": "he-2015-ol-sa-q1",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2015 OL Section A Q1",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2015-ol-sa-q2",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2015 OL Section A Q2",
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2015-ol-sa-q3",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2015 OL Section A Q3",
+      "topicId": "home-economics-0-10"
+    },
+    {
+      "id": "he-2015-ol-sa-q4",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2015 OL Section A Q4",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2015-ol-sa-q5",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2015 OL Section A Q5",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2015-ol-sa-q6",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2015 OL Section A Q6",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2015-ol-sa-q7",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2015 OL Section A Q7",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2015-ol-sa-q8",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2015 OL Section A Q8",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2015-ol-sa-q9",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2015 OL Section A Q9",
+      "topicId": "home-economics-1-4"
+    },
+    {
+      "id": "he-2015-ol-sa-q10",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2015 OL Section A Q10",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2015-ol-sa-q11",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2015 OL Section A Q11",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2015-ol-sa-q12",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2015 OL Section A Q12",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2015-ol-sb-q1a",
+      "section": "B",
+      "marks": 8,
+      "questionRef": "2015 OL Section B Q1(a)",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2015-ol-sb-q1b",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2015 OL Section B Q1(b)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2015-ol-sb-q1ci",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2015 OL Section B Q1(c)(i)",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2015-ol-sb-q1cii",
+      "section": "B",
+      "marks": 4,
+      "questionRef": "2015 OL Section B Q1(c)(ii)",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2015-ol-sb-q1d",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2015 OL Section B Q1(d)",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2015-ol-sb-q2ai",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2015 OL Section B Q2(a)(i)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2015-ol-sb-q2aii",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2015 OL Section B Q2(a)(ii)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2015-ol-sb-q2b",
+      "section": "B",
+      "marks": 18,
+      "questionRef": "2015 OL Section B Q2(b)",
+      "topicId": "home-economics-0-10"
+    },
+    {
+      "id": "he-2015-ol-sb-q2c",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2015 OL Section B Q2(c)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2015-ol-sb-q3a",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2015 OL Section B Q3(a)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2015-ol-sb-q3b-methods",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2015 OL Section B Q3(b) — methods",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2015-ol-sb-q3b-explanation",
+      "section": "B",
+      "marks": 8,
+      "questionRef": "2015 OL Section B Q3(b) — explanation",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2015-ol-sb-q3c",
+      "section": "B",
+      "marks": 6,
+      "questionRef": "2015 OL Section B Q3(c)",
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2015-ol-sb-q4a",
+      "section": "B",
+      "marks": 26,
+      "questionRef": "2015 OL Section B Q4(a)",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2015-ol-sb-q4b",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2015 OL Section B Q4(b)",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2015-ol-sb-q4c",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2015 OL Section B Q4(c)",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2015-ol-sb-q5a",
+      "section": "B",
+      "marks": 28,
+      "questionRef": "2015 OL Section B Q5(a)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2015-ol-sb-q5b",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2015 OL Section B Q5(b)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2015-ol-sb-q5c",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2015 OL Section B Q5(c)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2015-ol-sc-q1ai-evaluation",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2015 OL Section C E1 Q1(a)(i) — evaluation",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2015-ol-sc-q1ai-modifications",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2015 OL Section C E1 Q1(a)(i) — modifications",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2015-ol-sc-q1aii",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2015 OL Section C E1 Q1(a)(ii)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2015-ol-sc-q1aiii",
+      "section": "C",
+      "marks": 7,
+      "questionRef": "2015 OL Section C E1 Q1(a)(iii)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2015-ol-sc-q1bi",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2015 OL Section C E1 Q1(b)(i)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2015-ol-sc-q1bii",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2015 OL Section C E1 Q1(b)(ii)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2015-ol-sc-q1ci",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2015 OL Section C E1 Q1(c)(i)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2015-ol-sc-q1cii",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2015 OL Section C E1 Q1(c)(ii)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2015-ol-sc-q2ai",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2015 OL Section C E2 Q2(a)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2015-ol-sc-q2aii",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2015 OL Section C E2 Q2(a)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2015-ol-sc-q2b",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2015 OL Section C E2 Q2(b)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2015-ol-sc-q2ci",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2015 OL Section C E2 Q2(c)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2015-ol-sc-q2cii",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2015 OL Section C E2 Q2(c)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2015-ol-sc-q3ai",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2015 OL Section C E3 Q3(a)(i)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2015-ol-sc-q3aii",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2015 OL Section C E3 Q3(a)(ii)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2015-ol-sc-q3aiii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2015 OL Section C E3 Q3(a)(iii)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2015-ol-sc-q3bi",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2015 OL Section C E3 Q3(b)(i)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2015-ol-sc-q3bii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2015 OL Section C E3 Q3(b)(ii)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2015-ol-sc-q3ci",
+      "section": "C",
+      "marks": 21,
+      "questionRef": "2015 OL Section C E3 Q3(c)(i)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2015-ol-sc-q3cii",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2015 OL Section C E3 Q3(c)(ii)",
+      "topicId": "home-economics-3-9"
+    }
+  ],
+  "selectionDecisions": [
+    "All12 A questions retain whole6 tariffs with unpriced source rows. A1/A6 true-false associations and A7 closed cheese matches preserved. A4 two functions and two dietary sources; A8 two qualities and two materials; A10 two credits plus advantage of ONE chosen credit; A11 explanation plus named scheme; A12 two rights plus Small Claims function.",
+    "B1(c) iron account24 and absorption nutrient4 separately priced; iron required sources12/functions8/deficiency4 remain one coherent account. B1(d) four5-point answers require one reference to fresh meat, one to meat products plus two others.",
+    "B2(a) independently priced causes10 and health risks10. B2(b) all three original meal models6 each retained. B3(a) printed nutritional and dietetic romans share one flexible24 account: one reference each plus two others at6, not a fabricated12/12 split. B3(b) three method names12 and explanation of ONE chosen method8 separately priced; all original method-specific guidance retained.",
+    "B4(a) one linked appliance study26: type4/reason4, three selection factors3, three use guidelines3; all six named appliances/reasons preserved. B4(b) one linked payment method6/reason6, all original payment options preserved. B5(a) all four family functions7 each.",
+    "C1(a)(i) separately priced house-plan evaluation15 and modifications10. C1(a)(ii) three name-and-description profiles6 each, no invented subprice. C1(b)(ii) two furniture profiles9 each:name3,description2,reason4. Full original names and reasons retained; no invented item-specific description models.",
+    "C2(a)(i) sketch6/description4 linked same outfit, criteria only with no invented sketch model. C2(a)(ii) colour,line,shape5 each. C2(b) ONE synthetic fabric15: name3, one reference3 to each of production/properties/construction plus one other3; Nylon and Polyester original models plus open valid response, no false fixed6-point heading. Scheme15–16 continuation retained.",
+    "C3(a)(iii) ONE education initiative10:name5/details5; all eight named original options through scheme18. C3(b)(i) changes in settlement,working hours,work conditions plus ONE other, four5-point answers. C3(c)(i) three childcare profiles7 each; all seven original named models. C3(c)(ii) one welfare benefit9:name5,two details2; all six named original options and visible gaps for names with no detail models."
+  ],
+  "sourceAnomalies": [
+    "Historical2015 credit terms, Small Claims limit, water-charge context, young-worker rights and benefit conditions retained as original examination guidance, not updated advice.",
+    "C2 sketch/description and C1 furniture descriptions lack item-specific worked models; show original criteria/source gaps visibly.",
+    "C3 welfare list includes Rent Allowance/Fuel vouchers/Widow-Widower allowance names without accompanying detail models; preserve names with visible absence rather than invent answers.",
+    "Paper9 extracts a standalone2 at(454,237) inside the original floor-plan image(108,201,500,406). It is a bedroom label, not a new question. Narrow census handling keeps following roman tasks under C1(a), while the complete original image preserves the label."
+  ],
+  "independentOriginalLeafReconciliation": "50 original printed leaves A12/B19/C19 reconcile to51 priced tasks A12/B19/C20: B3(a)(i)/(ii) share ONE flexible24 tariff (scheme10), while B3(b) separately allocates method names12 and explanation8 (scheme10); these offset within B. C1(a)(i) separately allocates evaluation15 and modifications10 (scheme13), adding one priced task. Independent original-leaf census is distinct from this priced-task ledger.",
+  "sectionAReview": {
+    "tasks": 12,
+    "marks": 72,
+    "tariffDecision": "All12 whole-six tariffs retain unpriced source answers. Complete VitaminC functions/sources, packaging qualities/materials, credit/advantage, loyalty/name and rights/SmallClaims companion asks; two fixed true-false grids and closed cheese matching retained. No invented per-answer price or one-per-source-line quota."
+  },
+  "sectionBReview": {
+    "tasks": 19,
+    "marks": 280,
+    "selectionDecisions": "Separate iron24/4, obesity10/10 and fish cooking12/8 tariffs. Fish nutrition/diet24 retains one-each-plus-two-others. All original cooking-method models, three menu meals, six appliances, five payment models and four required family functions retained. Linked explanation context and historical source terms render."
+  },
+  "sectionCReview": {
+    "tasks": 20,
+    "marks": 275,
+    "selectionDecisions": "House-plan evaluation15/modifications10 split. Two furniture profiles9 each, same-outfit design context, same-fabric flexible15 account and all original initiative/childcare/benefit choices retained. Source gaps and historical terms render. Nested cold-water part labels remain complete."
+  },
+  "figures": {
+    "home-economics-2015-ol-sa-q1": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2015/LC098GLP000EV.pdf",
+      "page": 2,
+      "bounds": [
+        35,
+        138.7676544189453,
+        570.219970703125,
+        282.55997467041016
+      ],
+      "alt": "Original calcium true/false table with all three complete statements and blank True/False columns.",
+      "sha256": "cecf04d5c037209c01acca239076240810cec68c42c8d037b5b7d1029d7b5da5"
+    },
+    "home-economics-2015-ol-sa-q6": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2015/LC098GLP000EV.pdf",
+      "page": 3,
+      "bounds": [
+        35,
+        426.2875061035156,
+        570.219970703125,
+        583.8200073242188
+      ],
+      "alt": "Original food-spoilage true/false table with all three complete statements and blank True/False columns.",
+      "sha256": "daca9cbdbd309b5987a16bff2e369bca5ca0c1f57db37acfbd96c346600de783"
+    },
+    "home-economics-2015-ol-sa-q7": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2015/LC098GLP000EV.pdf",
+      "page": 4,
+      "bounds": [
+        35,
+        39.88777160644531,
+        570.219970703125,
+        211.30000813802084
+      ],
+      "alt": "Original cheese matching question: all three supplied choices and complete Hard/Soft/Processed cheese blank rows.",
+      "sha256": "4e8fd7f962e67ba3e9e495d7fa285ccc2e5eb5e713355a779c302ab0f8bd78df"
+    },
+    "home-economics-2015-ol-sb-q1-meats": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2015/LC098GLP000EV.pdf",
+      "page": 6,
+      "bounds": [
+        84.25999895731609,
+        196.08001708984375,
+        527.5600179036459,
+        341.4942932128906
+      ],
+      "alt": "Original four-meat nutritional table: Beef, Chicken, Liver and Pork, all five nutrient columns, every value and original unit.",
+      "sha256": "c23c13aabed77f5f4ccb784ad964372077693dc2fe850494f40d0dfba18f6faf"
+    },
+    "home-economics-2015-ol-sc-q3-school": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2015/LC098GLP000EV.pdf",
+      "page": 11,
+      "bounds": [
+        117.43999926249187,
+        138.5400390625,
+        485.0199839274089,
+        276.25998942057294
+      ],
+      "alt": "Original school-leaver table: every year group and count1,500/1,777/1,064/3,299 from2009/2010, preserving the chart input.",
+      "sha256": "8ff921a7fd3dd3f9cd23ff01e458809f6ab539a35962ea83e3e03c52773a325b"
+    },
+    "home-economics-2015-ol-sc-q1-plan": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2015/LC098GLP000EV.pdf",
+      "page": 9,
+      "bounds": [
+        104.94000244140625,
+        198.05999755859375,
+        503.0400085449219,
+        408.6600036621094
+      ],
+      "alt": "Complete original floor plan for Sean and Julie: all four bedrooms, bathroom, ensuite, WC, kitchen/dining, utility, garage and lounge, with every door/wall and original label.",
+      "sha256": "4b69ca311c4935d83d1e0660dd28d8b188de64ed1af82d830930ad2cbdb8c07d"
+    }
+  },
+  "figureVisualReview": "All six original crops individually inspected: complete A1/A6 true-false and A7 cheese matching inputs, B1 four-meat table, C1 full house floor plan and C3 school-leaver chart. Final A crops trimmed to table bounds without losing prompts or choice pools. All readable and complete.",
+  "sourceCensusReconciliation": {
+    "level": "ordinary",
+    "sourceHashes": "verified",
+    "expectedSourceLeaves": 50,
+    "observedSourceLeaves": 50,
+    "continuityFlags": [],
+    "keys": [
+      "Section A Q1",
+      "Section A Q10",
+      "Section A Q11",
+      "Section A Q12",
+      "Section A Q2",
+      "Section A Q3",
+      "Section A Q4",
+      "Section A Q5",
+      "Section A Q6",
+      "Section A Q7",
+      "Section A Q8",
+      "Section A Q9",
+      "Section B Q1(a)",
+      "Section B Q1(b)",
+      "Section B Q1(c)(i)",
+      "Section B Q1(c)(ii)",
+      "Section B Q1(d)",
+      "Section B Q2(a)(i)",
+      "Section B Q2(a)(ii)",
+      "Section B Q2(b)",
+      "Section B Q2(c)",
+      "Section B Q3(a)(i)",
+      "Section B Q3(a)(ii)",
+      "Section B Q3(b)",
+      "Section B Q3(c)",
+      "Section B Q4(a)",
+      "Section B Q4(b)",
+      "Section B Q4(c)",
+      "Section B Q5(a)",
+      "Section B Q5(b)",
+      "Section B Q5(c)",
+      "Section C Q1(a)(i)",
+      "Section C Q1(a)(ii)",
+      "Section C Q1(a)(iii)",
+      "Section C Q1(b)(i)",
+      "Section C Q1(b)(ii)",
+      "Section C Q1(c)(i)",
+      "Section C Q1(c)(ii)",
+      "Section C Q2(a)(i)",
+      "Section C Q2(a)(ii)",
+      "Section C Q2(b)",
+      "Section C Q2(c)(i)",
+      "Section C Q2(c)(ii)",
+      "Section C Q3(a)(i)",
+      "Section C Q3(a)(ii)",
+      "Section C Q3(a)(iii)",
+      "Section C Q3(b)(i)",
+      "Section C Q3(b)(ii)",
+      "Section C Q3(c)(i)",
+      "Section C Q3(c)(ii)"
+    ],
+    "reconciliation": "50 original printed leaves A12/B19/C19 become51 priced tasks A12/B19/C20,627marks. B3(a)(i)/(ii) share one flexible24 account while B3(b) separately prices method names12 and explanation8 (scheme10), offsetting withinB. C1(a)(i) separately prices evaluation15/modifications10 (scheme13), adding one priced task. All48 original pages independently visually swept before authoring/parser counts."
+  },
+  "validation": {
+    "runtime": "316 required/sitting tests passed:232 required plus seven each 2010–2015 Higher/Ordinary; maxWorkers1. Seven sitting tests passed on the first full run; two new cards were moved from the general Food&Nutrition heading to specific canonical MealPlanning&Preparation/Diet&Health nodes before the complete successful rerun.",
+    "mandatoryRawSourceGate": "Explicit2010–2015 original-PDF hash/key gates passed.2015Ordinary50 independent original leaves reconcile to51 priced tasks; exact exceptions documented separately. Normal Vitest has no local archive/Python dependency.",
+    "atlas": "Two targeted Home Economics gates passed:69 tagged papers,832 physical groups,1008 registry mappings. All20 original IDs retained. Formerly unmapped original A6 food-spoilage group adds one exact mapping995→996.",
+    "mainTypecheck": "passed",
+    "scoped2015TestTypecheck": "passed",
+    "productionBuild": "passed; only own reproducible untracked dist removed after success",
+    "cardlint": "clean;1468 authored records including withdrawals inspected",
+    "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across29 generated files.",
+    "reconciliation": "2015OL50/50 raw leaves covered,51 priced tasks,zero sitting opens/exclusions/continuity flags. Lane1442 cards776HL/666OL;1390/1711 raw leaves covered,321 open,zero orphan/unparsed/excluded,22 flags.",
+    "preservation": "Every earlier authored card, unrelated deck, other sizes/showcase subjects, full/decoded nonHE Atlas data, unrelated HE tags/runtime/associations and every other HE raw census sitting unchanged. Frozen identity hashes unchanged.",
+    "browser": "Parent-owned/pending. All six original question crops individually visually inspected, including final trimmed A tables."
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "schemaVersion": 1,
+  "year": 2024,
+  "level": "ordinary",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-complete; browser-QA-pending",
+  "sources": {
+    "examiner-reports/home-economics/papers/2024-ol-014-paper.pdf": {
+      "sha256": "bb3203d5a58a3ba377ad3cf90e332d15797214e9a57e2b447cc7b88f29525499",
+      "pages": 32
+    },
+    "examiner-reports/home-economics/papers/2024-ol-039-paper.pdf": {
+      "sha256": "5e304e9af0e873c3c5b79923d04399c488bbe12da4a1d15046cda4799bbc87fb",
+      "pages": 12
+    },
+    "paper-trail-corpus/markingschemes/2024/LC098GLP000EV.pdf": {
+      "sha256": "ff68e9eda1be40ee7756b7cc1e62399031a99038f5919d93945cd8976167346d",
+      "pages": 38
+    }
+  },
+  "visualSweep": {
+    "a": "All 32 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–31, back cover 32.",
+    "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+    "scheme": "All 38 pages: cover 1, guidance/rubrics/annotations 2–5, A 6–9, B 10–15, C 16–25, Irish-language bonus tables 26–27, separate food-studies coursework 28–36, blank 37, back cover 38. Coursework is a separate assessment, not a task in these written-paper booklets."
+  },
+  "expectedTasks": 58,
+  "expectedSectionTasks": {
+    "A": 16,
+    "B": 16,
+    "C": 26
+  },
+  "offeredPracticeMarks": 749,
+  "candidateMarks": [
+    280,
+    320
+  ],
+  "tasks": [
+    {
+      "id": "he-2024-ol-sa-q1",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-ol-sa-q5",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-ol-sa-q2",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 4
+    },
+    {
+      "id": "he-2024-ol-sa-q3",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-ol-sa-q4",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 4
+    },
+    {
+      "id": "he-2024-ol-sa-q6",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-ol-sa-q8",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-ol-sa-q10",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-ol-sa-q11",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-ol-sa-q14",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-ol-sa-q7",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-ol-sa-q9",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-ol-sa-q12",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-ol-sa-q13",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-ol-sa-q2-source",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 2
+    },
+    {
+      "id": "he-2024-ol-sa-q4-methods",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 2
+    },
+    {
+      "id": "he-2024-ol-sb-q1a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-ol-sb-q1b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 28
+    },
+    {
+      "id": "he-2024-ol-sb-q1c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 12
+    },
+    {
+      "id": "he-2024-ol-sb-q1d",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-ol-sb-q2c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 12
+    },
+    {
+      "id": "he-2024-ol-sb-q3a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-ol-sb-q3b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sb-q3c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sb-q4a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-ol-sb-q4b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-ol-sb-q4c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 10
+    },
+    {
+      "id": "he-2024-ol-sb-q5a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-ol-sb-q5b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sb-q5c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sb-q2a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-ol-sb-q2b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 18
+    },
+    {
+      "id": "he-2024-ol-sc-q1ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-ol-sc-q1aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q1aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q1bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q1bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q1ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q1cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q2ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2024-ol-sc-q2aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 7
+    },
+    {
+      "id": "he-2024-ol-sc-q2b-linen",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q2ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 6
+    },
+    {
+      "id": "he-2024-ol-sc-q2cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 9
+    },
+    {
+      "id": "he-2024-ol-sc-q3ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q3aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q3aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-ol-sc-q3bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q3bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q3ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q3cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q4ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2024-ol-sc-q4aii-pasteurisation",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2024-ol-sc-q4aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2024-ol-sc-q4bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q4bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q4ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2024-ol-sc-q4cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    }
+  ],
+  "sectionAReview": {
+    "tasks": 16,
+    "marks": 84,
+    "selectionDecisions": "Vitamin C functions/source and meat-tenderness factors/methods have independent printed prompts and tariffs. True/false grids, word bank, heat-transfer definitions, required textile headings and both pastry/dish pairs stay whole. All source examples retained.",
+    "sourceClarifications": {
+      "vitamin-c-iron": {
+        "source": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+        "note": "Vitamin C enhances non-haem iron absorption; it does not change it into haem iron."
+      }
+    },
+    "checked": "2026-11-01"
+  },
+  "sectionBReview": {
+    "tasks": 16,
+    "marks": 280,
+    "selectionDecisions": "Recover the whole fruit/vegetable nutritive-and-dietetic account with its 1/1/2 quota and the entire three-meal vegetarian menu. Menu food courses allow 2:1:0; beverages allow 2:0. Five of seven diagram factors remain one choice card. Sector/product pairs and required packaging and family headings remain whole.",
+    "checked": "2026-11-01"
+  },
+  "sectionCReview": {
+    "tasks": 26,
+    "marks": 385,
+    "sourceClarifications": {
+      "winterproofing": {
+        "source": "https://www.water.ie/help/supply/winterproofing",
+        "note": "Uisce Éireann advises insulating pipes/tanks and keeping the home warm; running taps does not prevent freezing. Distinguish prevention from thawing already frozen pipes."
+      },
+      "milk-temperature": {
+        "source": "https://www.fsai.ie/getmedia/2d516a18-247a-41e4-ab78-93fdd9eb8837/Farmhouse-Cheesemakers-Workbook-FINAL.pdf?ext=.pdf",
+        "note": "UHT requires at least 135°C with a suitable holding time; pasteurised milk is quickly cooled to no more than 6°C. The source’s 132°C UHT / 10°C cooling examples are inaccurate."
+      }
+    },
+    "selectionDecisions": "All required headings and dependent profiles remain whole. One natural-fibre profile contains four model routes and another valid choice; one milk-treatment profile contains all five models, spray/roller drying acceptance and an open alternative. Existing withdrawn identities and progress aliases are unchanged. Preserve both original sportswear images on both dependent tasks, the 4+3 emphasis allocation, parenting continuation on page 23 and dairy examples on page 25.",
+    "checked": "2026-11-01"
+  },
+  "figures": {
+    "home-economics-2024-ol-sb-q1a-food-choice": {
+      "page": 2,
+      "bounds": [
+        60,
+        193,
+        528,
+        419
+      ],
+      "alt": "Original diagram showing seven factors affecting food choice: food availability, work patterns, emotions, cooking skills, time, money, and likes and dislikes. All seven photographs and labels are retained.",
+      "source": "examiner-reports/home-economics/papers/2024-ol-039-paper.pdf",
+      "sha256": "9120990a0a57b54ac42c6a0e7bb6211f4c9176ec470994deb1eb52d98c89b0cd"
+    },
+    "home-economics-2024-ol-sc-q2a-sportswear": {
+      "page": 6,
+      "bounds": [
+        190,
+        132,
+        393,
+        305
+      ],
+      "alt": "Both original sportswear outfits: a man in a white and dark jacket with a green shoulder stripe and dark tracksuit bottoms; a woman in a dark jacket, yellow top, dark leggings with a yellow stripe and bright trainers. The original Pinterest caption is retained.",
+      "source": "examiner-reports/home-economics/papers/2024-ol-039-paper.pdf",
+      "sha256": "7d345a91a3d526711e0c5dfdfb36eb121e297ef795eca5f904189864bf74686d"
+    }
+  },
+  "sourceCropReview": {
+    "status": "visually-checked",
+    "paperSchemePairs": 23,
+    "originalFigures": 2,
+    "detail": "All 82 source pages and every A1–A14 / B1–B5 / C1–C4 final paper/scheme crop inspected. Both original figures inspected. C2/C3 paper crops extended to preserve the bottom-page mark totals and rechecked; all scheme continuations retained."
+  },
+  "reconciliation": {
+    "rawAsks": 56,
+    "covered": 56,
+    "open": 0,
+    "orphans": 0,
+    "policy": "Independent visual source review establishes 58 tasks. Parser coverage is diagnostic only; the subject remains incomplete."
+  },
+  "preservation": {
+    "previousLiveTasks": 54,
+    "preservedLiveTasks": 54,
+    "addedTasks": 4,
+    "existingProfileAliases": 7,
+    "otherCards": "Every card outside 2024 Ordinary byte-identical. Existing fabric and milk aliases preserved; no additional live ID withdrawn."
+  },
+  "validation": {
+    "requiredVitest": "334 tests across 12 suites passed; final regeneration and concept-ID retention recheck passed the three required suites and 2024 Ordinary regression suite.",
+    "atlas": "2 Home Economics registry tests passed; all 58 cards checked against canonical Atlas topics.",
+    "python": "29 Home Economics census/reference tests passed",
+    "mainTypecheck": "passed",
+    "scopedHomeEconomicsTestTypecheck": "passed",
+    "productionBuild": "passed",
+    "regeneration": "30 modified/new task files regenerated identically except generic reference-builder generatedAt; all other JSON fields identical.",
+    "browser": "unavailable; browser QA pending",
+    "sourceCropReview": "All 82 source pages, 23 final paper/scheme question groups and two original figures visually checked."
+  }
+}

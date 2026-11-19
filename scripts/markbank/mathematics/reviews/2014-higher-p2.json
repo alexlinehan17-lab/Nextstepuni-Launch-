@@ -1,0 +1,1336 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2014,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP230EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "4737941ac1a250ce967663e7768ab0e10c10ee9bf208831a2145bfdba100ce74",
+  "schemeSha256": "e88ad358735f48eed234f0bbddd8187a265d792c4ba47ab328c0532f7d07ad68",
+  "reviewedAt": "2026-10-29",
+  "reviewMethod": "Independent visual review of all 24 original paper pages and scheme PDF pages 41–80. All models, detailed notes and allocation/scale tables read. Both Q6 alternatives retained; 41 marking boundaries, 325 offered marks, 300 candidate marks.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "schemePagesInspected": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6A": 25,
+    "6B": 25,
+    "7": 45,
+    "8": 45,
+    "9": 60
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    63,
+    64
+  ],
+  "sourceNotes": [
+    "All tasks in Questions 1–5 and 7–9 are required. Candidates choose Q6A or Q6B; both complete alternatives are represented, each worth 25 marks.",
+    "Q4(a)(i)+(ii), (b)(i)+(ii), (c)(i)+(ii) each share a single scale. Q6A(a) is one complete proof with component scales Diagram/Given 5B, Construction 5B, Proof 10C.",
+    "Source discrepancy: summary PDF page 64 prints Q9(a)(i) 10C and (iv) 10C; the detailed question-specific notes on PDF page 75 explicitly print 15C (0,5,10,15) and 5C (0,2,3,5). Cards use those detailed scales; either allocation totals 60. Original source preserved and the discrepancy is disclosed after reveal.",
+    "The Q7(d)(i) model prints Male unemployment declined where the chart concerns employment. A separately labelled clarification corrects this wording after reveal; the original source remains intact.",
+    "All diagrams, probability tree, voltage table/graph, labour-force table, comparison charts, constructions and preceding dependencies accompany the relevant tasks. Earlier answers are not supplied in questions.",
+    "Paper 2 ladders differ from Paper 1. Full credit minus one follows the general notes on PDF page 63. Model working and all credit notes are shown as original typeset source images.",
+    "All question and scheme references are PDF positions. Scheme printed page numbers are two less. The paper is the sole indexed 2014 Project Maths edition, LC003ALP230EV."
+  ],
+  "cards": [
+    {
+      "id": "maths-2014-hl-p2-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        43,
+        65
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The lengths of the sides of a flat triangular field ACB are |AB| = 120 m, |BC| = 134 m and |AC| = 150 m.",
+      "questionText": "Find |∠CBA|. Give your answer, in degrees, correct to two decimal places."
+    },
+    {
+      "id": "maths-2014-hl-p2-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        43,
+        65
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The lengths of the sides of a flat triangular field ACB are |AB| = 120 m, |BC| = 134 m and |AC| = 150 m.",
+      "questionText": "Find the area of the triangle ACB correct to the nearest whole number."
+    },
+    {
+      "id": "maths-2014-hl-p2-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        44,
+        65
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The lengths of the sides of a flat triangular field ACB are |AB| = 120 m, |BC| = 134 m and |AC| = 150 m.",
+      "questionText": "A vertical mast, [DE], is fixed at the circumcentre, D, of the triangle. The mast is held in place by three taut cables [EA], [EB] and [EC]. Explain why the three cables are equal in length."
+    },
+    {
+      "id": "maths-2014-hl-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        45,
+        66
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Prove that cos 2A = cos² A − sin² A."
+    },
+    {
+      "id": "maths-2014-hl-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        45,
+        66
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "The diagram shows part of the circular end of a running track with three running lanes shown. The centre of each of the circular boundaries of the lanes is at O. Kate runs in the middle of lane 1, from A to B as shown. Helen runs in the middle of lane 2, from C to D as shown. Helen runs 3 m further than Kate. |∠AOB| = |∠COD| = θ radians. If each lane is 1·2 m wide, find θ."
+    },
+    {
+      "id": "maths-2014-hl-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        46,
+        67
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Two different games of chance, shown below, can be played at a charity fundraiser. In each game, the player spins an arrow on a wheel and wins the amount shown on the sector that the arrow stops in. Each game is fair in that the arrow is just as likely to stop in one sector as in any other sector on that wheel. Game A has sectors €5, €0, €6, €3, €0. Game B has sectors €2, €5, €0, €3, €1, €4.",
+      "questionText": "John played Game A four times and tells us that he has won a total of €8. In how many different ways could he have done this?"
+    },
+    {
+      "id": "maths-2014-hl-p2-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        46,
+        67
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Two different games of chance, shown below, can be played at a charity fundraiser. In each game, the player spins an arrow on a wheel and wins the amount shown on the sector that the arrow stops in. Each game is fair in that the arrow is just as likely to stop in one sector as in any other sector on that wheel. Game A has sectors €5, €0, €6, €3, €0. Game B has sectors €2, €5, €0, €3, €1, €4.",
+      "questionText": "To spin either arrow once, the player pays €3. Which game of chance would you expect to be more successful in raising funds for the charity? Give a reason for your answer."
+    },
+    {
+      "id": "maths-2014-hl-p2-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        46,
+        67
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Two different games of chance, shown below, can be played at a charity fundraiser. In each game, the player spins an arrow on a wheel and wins the amount shown on the sector that the arrow stops in. Each game is fair in that the arrow is just as likely to stop in one sector as in any other sector on that wheel. Game A has sectors €5, €0, €6, €3, €0. Game B has sectors €2, €5, €0, €3, €1, €4.",
+      "questionText": "Mary plays Game B six times. Find the probability that the arrow stops in the €4 sector exactly twice."
+    },
+    {
+      "id": "maths-2014-hl-p2-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)",
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        47,
+        68
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The graph below shows the voltage, V, in an electric circuit as a function of time, t. The voltage is given by the formula V = 311 sin(100πt), where V is in volts and t is in seconds.",
+      "questionText": "(i) Write down the range of the function. (ii) How many complete periods are there in one second?"
+    },
+    {
+      "id": "maths-2014-hl-p2-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)",
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        47,
+        48,
+        68
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The graph below shows the voltage, V, in an electric circuit as a function of time, t. The voltage is given by the formula V = 311 sin(100πt), where V is in volts and t is in seconds.",
+      "questionText": "(i) The table below gives the voltage, correct to the nearest whole number, at equally spaced intervals from t₁ to t₁₂ over one complete period (as shown by the dashed lines on the diagram). Use the entries given in the table and the properties of the function to complete the table. (ii) Using a calculator, or otherwise, calculate the standard deviation, σ, of the twelve values of V in the table, correct to the nearest whole number."
+    },
+    {
+      "id": "maths-2014-hl-p2-q4-c-i",
+      "printedParts": [
+        "Q4(c)(i)",
+        "Q4(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        48,
+        68
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities",
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The graph below shows the voltage, V, in an electric circuit as a function of time, t. The voltage is given by the formula V = 311 sin(100πt), where V is in volts and t is in seconds. Part (b): (i) The table below gives the voltage, correct to the nearest whole number, at equally spaced intervals from t₁ to t₁₂ over one complete period (as shown by the dashed lines on the diagram). Use the entries given in the table and the properties of the function to complete the table. (ii) Using a calculator, or otherwise, calculate the standard deviation, σ, of the twelve values of V in the table, correct to the nearest whole number.",
+      "questionText": "(i) The standard deviation, σ, of closely spaced values of any function of the form V = a sin(bt), over 1 full period, is given by kσ = Vmax, where k is a constant that does not depend on a or b, and Vmax is the maximum value of the function. Use the function V = 311 sin(100πt) to find an approximate value for k correct to three decimal places. (ii) Using your answer in part (c)(i), or otherwise, find the value of b required so that the function V = a sin(bt) has 60 complete periods in one second and the approximate value of a so that it has a standard deviation of 110 volts."
+    },
+    {
+      "id": "maths-2014-hl-p2-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        49,
+        69
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The line RS cuts the x-axis at the point R and the y-axis at the point S(0, 10), as shown. The area of the triangle ROS, where O is the origin, is 125/3.",
+      "questionText": "Find the co-ordinates of R."
+    },
+    {
+      "id": "maths-2014-hl-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        49,
+        69
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The line RS cuts the x-axis at the point R and the y-axis at the point S(0, 10), as shown. The area of the triangle ROS, where O is the origin, is 125/3.",
+      "questionText": "Show that the point E(−5, 4) is on the line RS."
+    },
+    {
+      "id": "maths-2014-hl-p2-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        49,
+        69
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The line RS cuts the x-axis at the point R and the y-axis at the point S(0, 10), as shown. The area of the triangle ROS, where O is the origin, is 125/3. The point E is (−5, 4).",
+      "questionText": "A second line y = mx + c, where m and c are positive constants, passes through the point E and again makes a triangle of area 125/3 with the axes. Find the value of m and the value of c."
+    },
+    {
+      "id": "maths-2014-hl-p2-q6a-a",
+      "printedParts": [
+        "Q6A(a)"
+      ],
+      "totalMarks": 20,
+      "components": [
+        {
+          "id": "diagram-given",
+          "label": "Diagram / Given",
+          "code": "5B",
+          "marks": [
+            0,
+            2,
+            5
+          ]
+        },
+        {
+          "id": "construction",
+          "label": "Construction",
+          "code": "5B",
+          "marks": [
+            0,
+            2,
+            5
+          ]
+        },
+        {
+          "id": "proof",
+          "label": "Proof",
+          "code": "10C",
+          "marks": [
+            0,
+            3,
+            7,
+            10
+          ]
+        }
+      ],
+      "schemePages": [
+        50,
+        70
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "Prove that, if two triangles ABC and A′B′C′ are similar, then their sides are proportional, in order: |AB|/|A′B′| = |BC|/|B′C′| = |CA|/|C′A′|. Complete the sections: Diagram; Given; To Prove; Construction; Proof."
+    },
+    {
+      "id": "maths-2014-hl-p2-q6a-b",
+      "printedParts": [
+        "Q6A(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        51,
+        70
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "Given the line segment [BC], construct, without using a protractor or set square, a point A such that |∠ABC| = 60°. Show your construction lines."
+    },
+    {
+      "id": "maths-2014-hl-p2-q6b-a",
+      "printedParts": [
+        "Q6B(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        52,
+        70
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "[AB] and [CD] are chords of a circle that intersect externally at E, as shown.",
+      "questionText": "Name two similar triangles in the diagram above and give reasons for your answer."
+    },
+    {
+      "id": "maths-2014-hl-p2-q6b-b",
+      "printedParts": [
+        "Q6B(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        52,
+        70
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "[AB] and [CD] are chords of a circle that intersect externally at E, as shown.",
+      "questionText": "Prove that |EA|·|EB| = |EC|·|ED|."
+    },
+    {
+      "id": "maths-2014-hl-p2-q6b-c",
+      "printedParts": [
+        "Q6B(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        52,
+        70
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "[AB] and [CD] are chords of a circle that intersect externally at E, as shown.",
+      "questionText": "Given that |EB| = 6·25, |ED| = 5·94 and |CB| = 10, find |AD|."
+    },
+    {
+      "id": "maths-2014-hl-p2-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        53,
+        71
+      ],
+      "topicId": "maths-1-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Table 1 below gives details of the number of males (M) and females (F) aged 15 years and over at work, unemployed, or not in the labour force for each year in the period 2004 to 2013. The figures are in thousands.",
+      "questionText": "Suggest two categories of people, aged 15 years and over, who might not be in the labour force."
+    },
+    {
+      "id": "maths-2014-hl-p2-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        53,
+        71
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Table 1 below gives details of the number of males (M) and females (F) aged 15 years and over at work, unemployed, or not in the labour force for each year in the period 2004 to 2013. The figures are in thousands.",
+      "questionText": "Find the median and the interquartile range of the total persons at work over the period."
+    },
+    {
+      "id": "maths-2014-hl-p2-q7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        54,
+        71
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Table 1 below gives details of the number of males (M) and females (F) aged 15 years and over at work, unemployed, or not in the labour force for each year in the period 2004 to 2013. The figures are in thousands.",
+      "questionText": "The percentages of persons aged 15 years and over at work, unemployed, or not in the labour force for the year 2006 are given below. Complete the table for the year 2011. Give your answers correct to one decimal place."
+    },
+    {
+      "id": "maths-2014-hl-p2-q7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        54,
+        71
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Table 1 below gives details of the number of males (M) and females (F) aged 15 years and over at work, unemployed, or not in the labour force for each year in the period 2004 to 2013. The figures are in thousands.",
+      "questionText": "A census in 2006 showed that there were 864 449 persons in the population aged under 15 years of age. The corresponding number in the 2011 census was 979 590. Assuming that none of these persons are in the labour force, complete the table below to give the percentages of the total population at work, unemployed, or not in the labour force for the year 2011."
+    },
+    {
+      "id": "maths-2014-hl-p2-q7-c-iii",
+      "printedParts": [
+        "Q7(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        54,
+        71
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Table 1 below gives details of the number of males (M) and females (F) aged 15 years and over at work, unemployed, or not in the labour force for each year in the period 2004 to 2013. The figures are in thousands. Part (c)(i): The percentages of persons aged 15 years and over at work, unemployed, or not in the labour force for the year 2006 are given below. Complete the table for the year 2011. Give your answers correct to one decimal place. Part (c)(ii): A census in 2006 showed that there were 864 449 persons in the population aged under 15 years of age. The corresponding number in the 2011 census was 979 590. Assuming that none of these persons are in the labour force, complete the table below to give the percentages of the total population at work, unemployed, or not in the labour force for the year 2011.",
+      "questionText": "A commentator states that “The changes reflected in the data from 2006 to 2011 make it more difficult to balance the Government’s income and expenditure.” Do you agree with this statement? Give two reasons for your answer based on your calculations above."
+    },
+    {
+      "id": "maths-2014-hl-p2-q7-d-i",
+      "printedParts": [
+        "Q7(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        55,
+        56,
+        71
+      ],
+      "topicId": "maths-1-5",
+      "sourcePages": [
+        12,
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Table 1 below gives details of the number of males (M) and females (F) aged 15 years and over at work, unemployed, or not in the labour force for each year in the period 2004 to 2013. The figures are in thousands. Liam and Niamh are analysing the number of males and the number of females at work over the period 2004 to 2013. Liam draws the following chart, using data from Table 1. Niamh uses the same data and calculates the number of females at work as a percentage of the total number of persons at work and then draws the following chart.",
+      "questionText": "Having examined both charts, a commentator states “females were affected just as much as males by the downturn in employment.” Do you agree or disagree with this statement? Give a reason for your conclusion."
+    },
+    {
+      "id": "maths-2014-hl-p2-q7-d-ii",
+      "printedParts": [
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        55,
+        56,
+        72
+      ],
+      "topicId": "maths-1-5",
+      "sourcePages": [
+        12,
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Table 1 below gives details of the number of males (M) and females (F) aged 15 years and over at work, unemployed, or not in the labour force for each year in the period 2004 to 2013. The figures are in thousands. Liam and Niamh are analysing the number of males and the number of females at work over the period 2004 to 2013. Liam draws the following chart, using data from Table 1. Niamh uses the same data and calculates the number of females at work as a percentage of the total number of persons at work and then draws the following chart. Part (d)(i): Having examined both charts, a commentator states “females were affected just as much as males by the downturn in employment.” Do you agree or disagree with this statement? Give a reason for your conclusion.",
+      "questionText": "Which, if any, of the two charts did you find most useful in reaching your conclusion above? Give a reason for your answer."
+    },
+    {
+      "id": "maths-2014-hl-p2-q7-d-iii",
+      "printedParts": [
+        "Q7(d)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        56,
+        72
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Table 1 below gives details of the number of males (M) and females (F) aged 15 years and over at work, unemployed, or not in the labour force for each year in the period 2004 to 2013. The figures are in thousands.",
+      "questionText": "Use the data in Table 1, for the years 2012 and 2013 only, to predict the percentage of persons, aged 15 years and over, who will be at work in 2014."
+    },
+    {
+      "id": "maths-2014-hl-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        57,
+        73
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Blood tests are sometimes used to indicate if a person has a particular disease. Sometimes such tests give an incorrect result, either indicating the person has the disease when they do not (called a false positive) or indicating that they do not have the disease when they do (called a false negative). It is estimated that 0·3% of a large population have a particular disease. A test developed to detect the disease gives a false positive in 4% of tests and a false negative in 1% of tests. A person picked at random is tested for the disease.",
+      "questionText": "Write the probability associated with each branch of the tree diagram in the blank boxes provided."
+    },
+    {
+      "id": "maths-2014-hl-p2-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        57,
+        73
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Blood tests are sometimes used to indicate if a person has a particular disease. Sometimes such tests give an incorrect result, either indicating the person has the disease when they do not (called a false positive) or indicating that they do not have the disease when they do (called a false negative). It is estimated that 0·3% of a large population have a particular disease. A test developed to detect the disease gives a false positive in 4% of tests and a false negative in 1% of tests. A person picked at random is tested for the disease.",
+      "questionText": "Hence, or otherwise, calculate the probability that a person selected at random from the population tests positive for the disease."
+    },
+    {
+      "id": "maths-2014-hl-p2-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        57,
+        73
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Blood tests are sometimes used to indicate if a person has a particular disease. Sometimes such tests give an incorrect result, either indicating the person has the disease when they do not (called a false positive) or indicating that they do not have the disease when they do (called a false negative). It is estimated that 0·3% of a large population have a particular disease. A test developed to detect the disease gives a false positive in 4% of tests and a false negative in 1% of tests. A person picked at random is tested for the disease.",
+      "questionText": "A person tests positive for the disease. What is the probability that the person actually has the disease? Give your answer correct to three significant figures."
+    },
+    {
+      "id": "maths-2014-hl-p2-q8-a-iv",
+      "printedParts": [
+        "Q8(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        58,
+        73
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Blood tests are sometimes used to indicate if a person has a particular disease. Sometimes such tests give an incorrect result, either indicating the person has the disease when they do not (called a false positive) or indicating that they do not have the disease when they do (called a false negative). It is estimated that 0·3% of a large population have a particular disease. A test developed to detect the disease gives a false positive in 4% of tests and a false negative in 1% of tests. A person picked at random is tested for the disease. Part (a)(ii): Hence, or otherwise, calculate the probability that a person selected at random from the population tests positive for the disease. Part (a)(iii): A person tests positive for the disease. What is the probability that the person actually has the disease? Give your answer correct to three significant figures.",
+      "questionText": "The health authority is considering using a test on the general population with a view to treatment of the disease. Based on your results, do you think that the above test would be an effective way to do this? Give a reason for your answer."
+    },
+    {
+      "id": "maths-2014-hl-p2-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        58,
+        73
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "A generic drug used to treat a particular condition has a success rate of 51%. A company is developing two new drugs, A and B, to treat the condition. They carried out clinical trials on two groups of 500 patients suffering from the condition. The results showed that Drug A was successful in the case of 296 patients. The company claims that Drug A is more successful in treating the condition than the generic drug.",
+      "questionText": "Use a hypothesis test at the 5% level of significance to decide whether there is sufficient evidence to justify the company’s claim. State the null hypothesis and state your conclusion clearly."
+    },
+    {
+      "id": "maths-2014-hl-p2-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        59,
+        74
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "A generic drug used to treat a particular condition has a success rate of 51%. A company is developing two new drugs, A and B, to treat the condition. They carried out clinical trials on two groups of 500 patients suffering from the condition. The results showed that Drug A was successful in the case of 296 patients. The company claims that Drug A is more successful in treating the condition than the generic drug. Part (b)(i): Use a hypothesis test at the 5% level of significance to decide whether there is sufficient evidence to justify the company’s claim. State the null hypothesis and state your conclusion clearly.",
+      "questionText": "The null hypothesis was accepted for Drug B. Estimate the greatest number of patients in that trial who could have been successfully treated with Drug B."
+    },
+    {
+      "id": "maths-2014-hl-p2-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        60,
+        75
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "The diagram shows a circular clock face, with the hands not shown. The square part of the clock face is glass so that the mechanism is visible. Two circular cogs, h and k, which touch externally are shown. The point C is the centre of the clock face. The point D is the centre of the larger cog, h, and the point E is the centre of the smaller cog, k.",
+      "questionText": "In suitable co-ordinates, the equation of the circle h is x² + y² + 4x + 6y − 19 = 0. Find the radius of h, and the co-ordinates of its centre, D."
+    },
+    {
+      "id": "maths-2014-hl-p2-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        60,
+        75
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "The diagram shows a circular clock face, with the hands not shown. The square part of the clock face is glass so that the mechanism is visible. Two circular cogs, h and k, which touch externally are shown. The point C is the centre of the clock face. The point D is the centre of the larger cog, h, and the point E is the centre of the smaller cog, k. Part (a)(i): In suitable co-ordinates, the equation of the circle h is x² + y² + 4x + 6y − 19 = 0. Find the radius of h, and the co-ordinates of its centre, D.",
+      "questionText": "The point E has co-ordinates (3, 2). Find the radius of the circle k."
+    },
+    {
+      "id": "maths-2014-hl-p2-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        60,
+        75
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The diagram shows a circular clock face, with the hands not shown. The square part of the clock face is glass so that the mechanism is visible. Two circular cogs, h and k, which touch externally are shown. The point C is the centre of the clock face. The point D is the centre of the larger cog, h, and the point E is the centre of the smaller cog, k. Part (a)(i): In suitable co-ordinates, the equation of the circle h is x² + y² + 4x + 6y − 19 = 0. Find the radius of h, and the co-ordinates of its centre, D. Part (a)(ii): The point E has co-ordinates (3, 2). Find the radius of the circle k.",
+      "questionText": "Show that the distance from C(−2, 2) to the line DE is half the length of [DE]."
+    },
+    {
+      "id": "maths-2014-hl-p2-q9-a-iv",
+      "printedParts": [
+        "Q9(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        61,
+        75
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "The diagram shows a circular clock face, with the hands not shown. The square part of the clock face is glass so that the mechanism is visible. Two circular cogs, h and k, which touch externally are shown. The point C is the centre of the clock face. The point D is the centre of the larger cog, h, and the point E is the centre of the smaller cog, k. Part (a)(i): In suitable co-ordinates, the equation of the circle h is x² + y² + 4x + 6y − 19 = 0. Find the radius of h, and the co-ordinates of its centre, D. Part (a)(ii): The point E has co-ordinates (3, 2). Find the radius of the circle k. Part (a)(iii): Show that the distance from C(−2, 2) to the line DE is half the length of [DE].",
+      "questionText": "The translation which maps the midpoint of [DE] to the point C maps the circle k to the circle j. Find the equation of the circle j."
+    },
+    {
+      "id": "maths-2014-hl-p2-q9-a-v",
+      "printedParts": [
+        "Q9(a)(v)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        61,
+        76
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "The diagram shows a circular clock face, with the hands not shown. The square part of the clock face is glass so that the mechanism is visible. Two circular cogs, h and k, which touch externally are shown. The point C is the centre of the clock face. The point D is the centre of the larger cog, h, and the point E is the centre of the smaller cog, k. Part (a)(i): In suitable co-ordinates, the equation of the circle h is x² + y² + 4x + 6y − 19 = 0. Find the radius of h, and the co-ordinates of its centre, D. Part (a)(ii): The point E has co-ordinates (3, 2). Find the radius of the circle k. Part (a)(iii): Show that the distance from C(−2, 2) to the line DE is half the length of [DE].",
+      "questionText": "The glass square is of side length l. Find the smallest whole number l such that the two cogs, h and k, are fully visible through the glass."
+    },
+    {
+      "id": "maths-2014-hl-p2-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        61,
+        76
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The triangle ABC is right-angled at C. The circle s has diameter [AC] and the circle t has diameter [CB].",
+      "questionText": "Draw the circle u which has diameter [AB]."
+    },
+    {
+      "id": "maths-2014-hl-p2-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        62,
+        76
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The triangle ABC is right-angled at C. The circle s has diameter [AC] and the circle t has diameter [CB]. The circle u has diameter [AB].",
+      "questionText": "Prove that in any right-angled triangle ABC, the area of the circle u equals the sum of the areas of the circles s and t."
+    },
+    {
+      "id": "maths-2014-hl-p2-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        62,
+        76
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The triangle ABC is right-angled at C. The circle s has diameter [AC] and the circle t has diameter [CB]. The circle u has diameter [AB]. Part (b)(ii): Prove that in any right-angled triangle ABC, the area of the circle u equals the sum of the areas of the circles s and t.",
+      "questionText": "The diagram shows the right-angled triangle ABC and arcs of the circles s, t and u. Each of the shaded areas in the diagram is called a lune, a crescent-shaped area bounded by arcs of the circles. Prove that the sum of the areas of the two shaded lunes is equal to the area of the triangle ABC."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        9,
+        11
+      ],
+      "wording": "either Question 6A or Question 6B / Answer either 6A or 6B",
+      "classification": "finite-alternatives-expanded",
+      "reason": "Both alternatives are included, with two cards for Q6A and three for Q6B, each alternative retaining its 25-mark tariff."
+    },
+    {
+      "pages": [
+        3,
+        12
+      ],
+      "wording": "Answer all six / three questions",
+      "classification": "all-questions-required",
+      "reason": "All tasks retained, including the alternative sixth question."
+    },
+    {
+      "pages": [
+        5,
+        16
+      ],
+      "wording": "either arrow / either indicating",
+      "classification": "scenario-description",
+      "reason": "Describes the games or test errors; no finite pool of exam tasks."
+    },
+    {
+      "pages": [
+        7,
+        16
+      ],
+      "wording": "or otherwise",
+      "classification": "alternative-method",
+      "reason": "Alternative methods for one marked task."
+    }
+  ],
+  "selectionDecisions": {
+    "2:e2eadc118f75670f": {
+      "classification": "finite-alternatives-expanded",
+      "reason": "Both Q6A and Q6B are fully carded."
+    },
+    "2:1fe67f0f9d7ec67f": {
+      "classification": "finite-alternatives-expanded",
+      "reason": "Both Q6A and Q6B are fully carded."
+    },
+    "3:ee6f666b757180c9": {
+      "classification": "all-questions-required",
+      "reason": "Every required task retained."
+    },
+    "5:3ad3c9a0c747b414": {
+      "classification": "scenario-description",
+      "reason": "Describes the scenario, not a choice of exam tasks."
+    },
+    "7:c364ed9011da3c88": {
+      "classification": "alternative-method",
+      "reason": "Alternative method within one task."
+    },
+    "7:186546e2bc17e74c": {
+      "classification": "alternative-method",
+      "reason": "Alternative method within one task."
+    },
+    "9:0d3c5592687f1d94": {
+      "classification": "finite-alternatives-expanded",
+      "reason": "Both Q6A and Q6B are fully carded."
+    },
+    "12:59f5ad88eaaf418a": {
+      "classification": "all-questions-required",
+      "reason": "Every required task retained."
+    },
+    "16:266e22b9128877e9": {
+      "classification": "scenario-description",
+      "reason": "Describes the scenario, not a choice of exam tasks."
+    },
+    "16:a9971006ca3dc171": {
+      "classification": "alternative-method",
+      "reason": "Alternative method within one task."
+    }
+  }
+}

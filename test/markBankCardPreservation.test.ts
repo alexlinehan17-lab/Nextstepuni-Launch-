@@ -1,9 +1,14 @@
+import mathsLaunchBaseline from '../scripts/markbank/mathematics/launch-baseline.json';
+import mathsLaunchReview from '../scripts/markbank/mathematics/launch-reconciliation.json';
+import mathsChoicePolicy from '../scripts/markbank/mathematics/choice-policy.json';
+import { CARDS as MATHS_FOUNDATION } from '../components/MarkBank/cards/maths/foundation';
 import { CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS } from './fixtures/construction2015Reviewed';
 import { CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS } from './fixtures/construction2026Reviewed';
 import { CONSTRUCTION_2025_HIGHER_ADDED_IDS, CONSTRUCTION_2025_ORDINARY_ADDED_IDS } from './fixtures/construction2025Reviewed';
 import { CONSTRUCTION_2024_HIGHER_ADDED_IDS, CONSTRUCTION_2024_ORDINARY_ADDED_IDS } from './fixtures/construction2024Reviewed';
 import { CONSTRUCTION_2023_HIGHER_ADDED_IDS, CONSTRUCTION_2023_ORDINARY_ADDED_IDS } from './fixtures/construction2023Reviewed';
 import { CONSTRUCTION_REVIEWED_HIGHER_ADDED_IDS, CONSTRUCTION_REVIEWED_ORDINARY_ADDED_IDS } from './fixtures/constructionReviewedPapers';
+import { LCVP_2015_ADDED_IDS, LCVP_2016_ADDED_IDS, LCVP_2017_ADDED_IDS, LCVP_2018_ADDED_IDS, LCVP_2019_ADDED_IDS, LCVP_2020_ADDED_IDS, LCVP_2021_ADDED_IDS, LCVP_2022_ADDED_IDS, LCVP_2023_ADDED_IDS, LCVP_2024_ADDED_IDS, LCVP_2025_ADDED_IDS, LCVP_2026_ADDED_IDS } from './fixtures/lcvpReviewed';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -125,8 +130,44 @@ import { CARDS as ITALIAN_HIGHER } from '../components/MarkBank/cards/italian/hi
 import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/ordinary';
 import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/higher';
 import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
+import russianReviewedSources from '../scripts/markbank/authoring/russian-reviewed-sources.json';
+import russianOriginalCardIds from './fixtures/russianOriginalCardIds.json';
 import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
+import japanese2026HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2026-hl-census.json';
+import japanese2026OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2026-ol-census.json';
+import japanese2025HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2025-hl-census.json';
+import japanese2025OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2025-ol-census.json';
+import japanese2024OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2024-ol-census.json';
+import japanese2023OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2023-ol-census.json';
+import japanese2018OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2018-ol-census.json';
+import japanese2018HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2018-hl-census.json';
+import japanese2010OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2010-ol-census.json';
+import japanese2010HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2010-hl-census.json';
+import japanese2011HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2011-hl-census.json';
+import japanese2011OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2011-ol-census.json';
+import japanese2012OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2012-ol-census.json';
+import japanese2012HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2012-hl-census.json';
+import japanese2013HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2013-hl-census.json';
+import japanese2013OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2013-ol-census.json';
+import japanese2014OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2014-ol-census.json';
+import japanese2014HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2014-hl-census.json';
+import japanese2015OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2015-ol-census.json';
+import japanese2015HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2015-hl-census.json';
+import japanese2016OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2016-ol-census.json';
+import japanese2016HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2016-hl-census.json';
+import japanese2017HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2017-hl-census.json';
+import japanese2017OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2017-ol-census.json';
+import japanese2019OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2019-ol-census.json';
+import japanese2019HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2019-hl-census.json';
+import japanese2020HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2020-hl-census.json';
+import japanese2021OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2021-ol-census.json';
+import japanese2021HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2021-hl-census.json';
+import japanese2022HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2022-hl-census.json';
+import japanese2022OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2022-ol-census.json';
+import japanese2023HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2023-hl-census.json';
+import japanese2024HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2024-hl-census.json';
+import japaneseAliases from '../components/MarkBank/cards/japanese/aliases.json';
 import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/higher';
 import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
 import { CARDS as PORTUGUESE_HIGHER } from '../components/MarkBank/cards/portuguese/higher';
@@ -145,6 +186,7 @@ import { CARDS as MGREEK_HIGHER } from '../components/MarkBank/cards/modern-gree
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
+import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
 import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
@@ -160,6 +202,7 @@ import businessRoutePools from '../components/MarkBank/cards/business/route-pool
 import { expandBusinessRoutePools } from '../components/MarkBank/cards/business/routes.mjs';
 import agriculturalReview from '../scripts/markbank/authored/agricultural-science-reviewed-tasks.json';
 import biologyReview from '../scripts/markbank/authored/biology-review-audit.json';
+import physicsReview from '../scripts/markbank/authored/physics-review-audit.json';
 import publishedEnglishHigher from '../components/MarkBank/cards/english/published-higher.json';
 import publishedEnglishOrdinary from '../components/MarkBank/cards/english/published-ordinary.json';
 
@@ -2043,9 +2086,607 @@ const historyEssayIds = new Set([...HISTORY_HIGHER, ...HISTORY_ORDINARY]
   .filter(card => card.kind === 'rubric' || card.year === 2026 || card.year <= 2020 || HISTORY_NEW_POINT_IDS.has(card.id)
     || card.id.includes('-deferred-'))
   .map(card => card.id));
+const russianFrozen = new Set([...russianOriginalCardIds.higher, ...russianOriginalCardIds.ordinary]);
+const russianAdditionIds = new Set(russianReviewedSources.map(card => card.id).filter(id => !russianFrozen.has(id)));
+const mathsFrozen = new Set([...mathsLaunchBaseline.higher, ...mathsLaunchBaseline.ordinary]);
+const mathsNewAliases = new Set([...Object.keys(mathsLaunchReview.choiceAliases), ...Object.keys(mathsLaunchReview.identityMigrations).filter(id => id !== 'maths-2021-ol-p2-q6')]);
+const mathsNet = MATHS_HIGHER.length + MATHS_ORDINARY.length - mathsFrozen.size;
+// Physics (the paper-by-paper review, 2026-10-28): its 570/563 pre-review
+// 2021-2025 cards stay frozen; 2010-2020 and 2026 are carded for the first
+// time and the tasks the reviewed 2021-2025 sittings had bundled or missed are
+// added, all counted on top. A shipped id a review withdraws becomes an alias.
+// A pre-existing id the deck build never shipped at the baseline (it dropped
+// it, e.g. for a broken glyph) carries no student progress: counted with the
+// additions (the review's unshippedBefore).
+type PhysicsReviewSitting = { review?: { added: string[]; unshippedBefore?: string[] } };
+const PHYSICS_REVIEW_ADDED = new Set(Object.values(
+  (physicsReview as unknown as { sittings: Record<string, PhysicsReviewSitting> }).sittings)
+  .flatMap(sitting => [...(sitting.review?.added ?? []), ...(sitting.review?.unshippedBefore ?? [])]));
+const isPhysicsAdded = (id: string) => {
+  const year = Number(id.slice('phys-'.length, 'phys-'.length + 4));
+  return year < 2021 || year > 2025 || id.includes('-deferred-') || PHYSICS_REVIEW_ADDED.has(id);
+};
+const physicsAdditionIds = new Set([...PHYS_HIGHER, ...PHYS_ORDINARY]
+  .map(card => card.id).filter(isPhysicsAdded));
+const physicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('phys-'));
+// Source-reviewed missing tasks. Keep the original 283/266 identity hashes
+// frozen; these additions must never disguise a removed older card.
+// These newly consolidated identities belong to the frozen 283/266 set.
+// The older 22 he- aliases are already accounted for in the historical 158 aliases.
+const homeEconomicsAliasIds = ['he-2022-hl-sc-q1aii-properties',
+  'he-2025-hl-sb-q1b-mono', 'he-2025-hl-sb-q1b-poly', 'he-2025-hl-sb-q4b-features'];
+const homeEconomicsAdditionIds = new Set([
+  // 2019 Ordinary: 52 source-reviewed tasks reconcile all 54 independent original leaves.
+  'he-2019-ol-sa-q1', 'he-2019-ol-sa-q2', 'he-2019-ol-sa-q3',
+  'he-2019-ol-sa-q4', 'he-2019-ol-sa-q5', 'he-2019-ol-sa-q6',
+  'he-2019-ol-sa-q7', 'he-2019-ol-sa-q8', 'he-2019-ol-sa-q9',
+  'he-2019-ol-sa-q10', 'he-2019-ol-sa-q11', 'he-2019-ol-sa-q12',
+  'he-2019-ol-sb-q1ai', 'he-2019-ol-sb-q1aii', 'he-2019-ol-sb-q1b',
+  'he-2019-ol-sb-q1c', 'he-2019-ol-sb-q1d', 'he-2019-ol-sb-q2a',
+  'he-2019-ol-sb-q2b', 'he-2019-ol-sb-q2c', 'he-2019-ol-sb-q3a',
+  'he-2019-ol-sb-q3bi', 'he-2019-ol-sb-q3bii', 'he-2019-ol-sb-q3c',
+  'he-2019-ol-sb-q4a', 'he-2019-ol-sb-q4bi', 'he-2019-ol-sb-q4bii',
+  'he-2019-ol-sb-q4c', 'he-2019-ol-sb-q5ai', 'he-2019-ol-sb-q5aii',
+  'he-2019-ol-sb-q5b', 'he-2019-ol-sb-q5c', 'he-2019-ol-sc-q1ai',
+  'he-2019-ol-sc-q1aii', 'he-2019-ol-sc-q1aiii', 'he-2019-ol-sc-q1bi',
+  'he-2019-ol-sc-q1bii', 'he-2019-ol-sc-q1ci', 'he-2019-ol-sc-q1cii',
+  'he-2019-ol-sc-q2ai', 'he-2019-ol-sc-q2aii', 'he-2019-ol-sc-q2b',
+  'he-2019-ol-sc-q2ci', 'he-2019-ol-sc-q2cii', 'he-2019-ol-sc-q3ai',
+  'he-2019-ol-sc-q3aii', 'he-2019-ol-sc-q3aiii', 'he-2019-ol-sc-q3aiv',
+  'he-2019-ol-sc-q3bi', 'he-2019-ol-sc-q3bii', 'he-2019-ol-sc-q3ci',
+  'he-2019-ol-sc-q3cii',
+  // 2020 Higher: 49 source-reviewed whole tasks cover 53 original leaves; all prior cards remain frozen.
+  'he-2020-hl-sa-q1', 'he-2020-hl-sa-q2', 'he-2020-hl-sa-q3',
+  'he-2020-hl-sa-q4', 'he-2020-hl-sa-q5', 'he-2020-hl-sa-q6',
+  'he-2020-hl-sa-q7', 'he-2020-hl-sa-q8', 'he-2020-hl-sa-q9',
+  'he-2020-hl-sa-q10', 'he-2020-hl-sa-q11', 'he-2020-hl-sa-q12',
+  'he-2020-hl-sb-q1a', 'he-2020-hl-sb-q1b', 'he-2020-hl-sb-q1c',
+  'he-2020-hl-sb-q1d', 'he-2020-hl-sb-q2a', 'he-2020-hl-sb-q2b',
+  'he-2020-hl-sb-q2c', 'he-2020-hl-sb-q3a', 'he-2020-hl-sb-q3b',
+  'he-2020-hl-sb-q3c', 'he-2020-hl-sb-q4a', 'he-2020-hl-sb-q4b',
+  'he-2020-hl-sb-q4c', 'he-2020-hl-sb-q5a', 'he-2020-hl-sb-q5b',
+  'he-2020-hl-sb-q5c', 'he-2020-hl-sc-q1ai', 'he-2020-hl-sc-q1aii',
+  'he-2020-hl-sc-q1aiii', 'he-2020-hl-sc-q1bi', 'he-2020-hl-sc-q1bii',
+  'he-2020-hl-sc-q1ci', 'he-2020-hl-sc-q1cii', 'he-2020-hl-sc-q2ai',
+  'he-2020-hl-sc-q2aii', 'he-2020-hl-sc-q2bi', 'he-2020-hl-sc-q2bii',
+  'he-2020-hl-sc-q2ci', 'he-2020-hl-sc-q2cii', 'he-2020-hl-sc-q3ai',
+  'he-2020-hl-sc-q3aii', 'he-2020-hl-sc-q3aiii', 'he-2020-hl-sc-q3bi',
+  'he-2020-hl-sc-q3bii', 'he-2020-hl-sc-q3biii', 'he-2020-hl-sc-q3ci',
+  'he-2020-hl-sc-q3cii',
+
+  // 2020 Ordinary: 55 original leaves, 56 separately priced tasks.
+  'he-2020-ol-sa-q1', 'he-2020-ol-sa-q2', 'he-2020-ol-sa-q3',
+  'he-2020-ol-sa-q4', 'he-2020-ol-sa-q5', 'he-2020-ol-sa-q6-definition',
+  'he-2020-ol-sa-q6-additives', 'he-2020-ol-sa-q7', 'he-2020-ol-sa-q8-foods',
+  'he-2020-ol-sa-q8-careers', 'he-2020-ol-sa-q9', 'he-2020-ol-sa-q10-advantages',
+  'he-2020-ol-sa-q10-payment', 'he-2020-ol-sa-q11', 'he-2020-ol-sa-q12',
+  'he-2020-ol-sb-q1ai', 'he-2020-ol-sb-q1aii', 'he-2020-ol-sb-q1b',
+  'he-2020-ol-sb-q1c', 'he-2020-ol-sb-q1d', 'he-2020-ol-sb-q2ai',
+  'he-2020-ol-sb-q2aii', 'he-2020-ol-sb-q2b', 'he-2020-ol-sb-q2c',
+  'he-2020-ol-sb-q3a', 'he-2020-ol-sb-q3b', 'he-2020-ol-sb-q3c',
+  'he-2020-ol-sb-q4a', 'he-2020-ol-sb-q4b', 'he-2020-ol-sb-q4c',
+  'he-2020-ol-sb-q5ai', 'he-2020-ol-sb-q5aii', 'he-2020-ol-sb-q5b',
+  'he-2020-ol-sb-q5c', 'he-2020-ol-sc-q1ai', 'he-2020-ol-sc-q1aii',
+  'he-2020-ol-sc-q1aiii', 'he-2020-ol-sc-q1aiv', 'he-2020-ol-sc-q1bi',
+  'he-2020-ol-sc-q1bii', 'he-2020-ol-sc-q1ci', 'he-2020-ol-sc-q1cii',
+  'he-2020-ol-sc-q2ai', 'he-2020-ol-sc-q2aii', 'he-2020-ol-sc-q2bi',
+  'he-2020-ol-sc-q2bii', 'he-2020-ol-sc-q2ci', 'he-2020-ol-sc-q2cii',
+  'he-2020-ol-sc-q3ai', 'he-2020-ol-sc-q3aii', 'he-2020-ol-sc-q3aiii',
+  'he-2020-ol-sc-q3aiv', 'he-2020-ol-sc-q3bi', 'he-2020-ol-sc-q3bii',
+  'he-2020-ol-sc-q3ci', 'he-2020-ol-sc-q3cii',
+  // 2019 Higher: 51 independently source-reviewed additions; all prior cards remain frozen.
+  'he-2019-hl-sa-q1', 'he-2019-hl-sa-q2', 'he-2019-hl-sa-q3',
+  'he-2019-hl-sa-q4', 'he-2019-hl-sa-q5', 'he-2019-hl-sa-q6',
+  'he-2019-hl-sa-q7', 'he-2019-hl-sa-q8', 'he-2019-hl-sa-q9',
+  'he-2019-hl-sa-q10', 'he-2019-hl-sa-q11', 'he-2019-hl-sa-q12',
+  'he-2019-hl-sb-q1a', 'he-2019-hl-sb-q1b', 'he-2019-hl-sb-q1c',
+  'he-2019-hl-sb-q1d', 'he-2019-hl-sb-q1e', 'he-2019-hl-sb-q2a',
+  'he-2019-hl-sb-q2bi', 'he-2019-hl-sb-q2bii', 'he-2019-hl-sb-q2c',
+  'he-2019-hl-sb-q3a', 'he-2019-hl-sb-q3b', 'he-2019-hl-sb-q3c',
+  'he-2019-hl-sb-q4a', 'he-2019-hl-sb-q4b', 'he-2019-hl-sb-q4c',
+  'he-2019-hl-sb-q5a', 'he-2019-hl-sb-q5b', 'he-2019-hl-sb-q5c',
+  'he-2019-hl-sc-q1ai', 'he-2019-hl-sc-q1aii', 'he-2019-hl-sc-q1aiii',
+  'he-2019-hl-sc-q1bi', 'he-2019-hl-sc-q1bii', 'he-2019-hl-sc-q1ci',
+  'he-2019-hl-sc-q1cii', 'he-2019-hl-sc-q2ai', 'he-2019-hl-sc-q2aii',
+  'he-2019-hl-sc-q2bi', 'he-2019-hl-sc-q2bii', 'he-2019-hl-sc-q2ci',
+  'he-2019-hl-sc-q2cii', 'he-2019-hl-sc-q3ai', 'he-2019-hl-sc-q3aii',
+  'he-2019-hl-sc-q3aiii', 'he-2019-hl-sc-q3aiv', 'he-2019-hl-sc-q3bi',
+  'he-2019-hl-sc-q3bii', 'he-2019-hl-sc-q3ci', 'he-2019-hl-sc-q3cii',
+  // 2018 Ordinary: 53 source-reviewed additions; 54 original leaves reconciled through shared and separately priced asks.
+  'he-2018-ol-sa-q1', 'he-2018-ol-sa-q10', 'he-2018-ol-sa-q11',
+  'he-2018-ol-sa-q12', 'he-2018-ol-sa-q2', 'he-2018-ol-sa-q3',
+  'he-2018-ol-sa-q4', 'he-2018-ol-sa-q5', 'he-2018-ol-sa-q6',
+  'he-2018-ol-sa-q7', 'he-2018-ol-sa-q8', 'he-2018-ol-sa-q9',
+  'he-2018-ol-sb-q1ai', 'he-2018-ol-sb-q1aii', 'he-2018-ol-sb-q1b',
+  'he-2018-ol-sb-q1c', 'he-2018-ol-sb-q1d', 'he-2018-ol-sb-q2a',
+  'he-2018-ol-sb-q2b', 'he-2018-ol-sb-q2c', 'he-2018-ol-sb-q3a',
+  'he-2018-ol-sb-q3b', 'he-2018-ol-sb-q3ci', 'he-2018-ol-sb-q3cii',
+  'he-2018-ol-sb-q4a', 'he-2018-ol-sb-q4bi', 'he-2018-ol-sb-q4bii',
+  'he-2018-ol-sb-q4c', 'he-2018-ol-sb-q5a', 'he-2018-ol-sb-q5b',
+  'he-2018-ol-sb-q5c-definition', 'he-2018-ol-sb-q5c-ways', 'he-2018-ol-sc-q1ai',
+  'he-2018-ol-sc-q1aii', 'he-2018-ol-sc-q1aiii', 'he-2018-ol-sc-q1bi',
+  'he-2018-ol-sc-q1bii', 'he-2018-ol-sc-q1ci', 'he-2018-ol-sc-q1cii',
+  'he-2018-ol-sc-q2ai', 'he-2018-ol-sc-q2aii', 'he-2018-ol-sc-q2bi',
+  'he-2018-ol-sc-q2bii', 'he-2018-ol-sc-q2ci', 'he-2018-ol-sc-q2cii',
+  'he-2018-ol-sc-q3ai', 'he-2018-ol-sc-q3aii', 'he-2018-ol-sc-q3aiii',
+  'he-2018-ol-sc-q3aiv', 'he-2018-ol-sc-q3bi', 'he-2018-ol-sc-q3bii',
+  'he-2018-ol-sc-q3ci', 'he-2018-ol-sc-q3cii',
+  // 2018 Higher: 49 independently source-reviewed additions; all prior cards remain frozen.
+  'he-2018-hl-sa-q1', 'he-2018-hl-sa-q10', 'he-2018-hl-sa-q11',
+  'he-2018-hl-sa-q12', 'he-2018-hl-sa-q2', 'he-2018-hl-sa-q3',
+  'he-2018-hl-sa-q4', 'he-2018-hl-sa-q5', 'he-2018-hl-sa-q6',
+  'he-2018-hl-sa-q7', 'he-2018-hl-sa-q8', 'he-2018-hl-sa-q9',
+  'he-2018-hl-sb-q1a', 'he-2018-hl-sb-q1b', 'he-2018-hl-sb-q1c',
+  'he-2018-hl-sb-q1d', 'he-2018-hl-sb-q1e', 'he-2018-hl-sb-q2a',
+  'he-2018-hl-sb-q2b', 'he-2018-hl-sb-q2c', 'he-2018-hl-sb-q3a',
+  'he-2018-hl-sb-q3b', 'he-2018-hl-sb-q3c', 'he-2018-hl-sb-q4a',
+  'he-2018-hl-sb-q4b', 'he-2018-hl-sb-q4c', 'he-2018-hl-sb-q5a',
+  'he-2018-hl-sb-q5b', 'he-2018-hl-sb-q5c', 'he-2018-hl-sc-q1ai',
+  'he-2018-hl-sc-q1aii', 'he-2018-hl-sc-q1aiii', 'he-2018-hl-sc-q1bi',
+  'he-2018-hl-sc-q1bii', 'he-2018-hl-sc-q1ci', 'he-2018-hl-sc-q1cii',
+  'he-2018-hl-sc-q2ai', 'he-2018-hl-sc-q2aii', 'he-2018-hl-sc-q2bi',
+  'he-2018-hl-sc-q2bii', 'he-2018-hl-sc-q2ci', 'he-2018-hl-sc-q2cii',
+  'he-2018-hl-sc-q3ai', 'he-2018-hl-sc-q3aii', 'he-2018-hl-sc-q3aiii',
+  'he-2018-hl-sc-q3bi', 'he-2018-hl-sc-q3bii', 'he-2018-hl-sc-q3ci',
+  'he-2018-hl-sc-q3cii',
+  // 2017 Ordinary: 52 source-reviewed additions; shared and separately priced asks reconciled before authoring.
+  'he-2017-ol-sa-q1', 'he-2017-ol-sa-q10', 'he-2017-ol-sa-q11',
+  'he-2017-ol-sa-q12', 'he-2017-ol-sa-q2', 'he-2017-ol-sa-q3',
+  'he-2017-ol-sa-q4', 'he-2017-ol-sa-q5', 'he-2017-ol-sa-q6',
+  'he-2017-ol-sa-q7', 'he-2017-ol-sa-q8', 'he-2017-ol-sa-q9',
+  'he-2017-ol-sb-q1ai', 'he-2017-ol-sb-q1aii', 'he-2017-ol-sb-q1b',
+  'he-2017-ol-sb-q1c', 'he-2017-ol-sb-q1d', 'he-2017-ol-sb-q2ai',
+  'he-2017-ol-sb-q2aii', 'he-2017-ol-sb-q2b', 'he-2017-ol-sb-q2c',
+  'he-2017-ol-sb-q3a', 'he-2017-ol-sb-q3bi', 'he-2017-ol-sb-q3bii',
+  'he-2017-ol-sb-q3c', 'he-2017-ol-sb-q4a', 'he-2017-ol-sb-q4b',
+  'he-2017-ol-sb-q4c', 'he-2017-ol-sb-q5a', 'he-2017-ol-sb-q5b',
+  'he-2017-ol-sb-q5c', 'he-2017-ol-sc-q1ai', 'he-2017-ol-sc-q1aii',
+  'he-2017-ol-sc-q1aiii', 'he-2017-ol-sc-q1bi', 'he-2017-ol-sc-q1bii',
+  'he-2017-ol-sc-q1ci', 'he-2017-ol-sc-q1cii', 'he-2017-ol-sc-q2ai',
+  'he-2017-ol-sc-q2aii', 'he-2017-ol-sc-q2bi', 'he-2017-ol-sc-q2bii',
+  'he-2017-ol-sc-q2ci', 'he-2017-ol-sc-q2cii', 'he-2017-ol-sc-q3ai-definition',
+  'he-2017-ol-sc-q3ai-types', 'he-2017-ol-sc-q3aii', 'he-2017-ol-sc-q3aiii',
+  'he-2017-ol-sc-q3bi', 'he-2017-ol-sc-q3bii', 'he-2017-ol-sc-q3ci',
+  'he-2017-ol-sc-q3cii',
+  // 2017 Higher: 48 independently source-reviewed additions; prior cards and frozen hashes unchanged.
+  'he-2017-hl-sa-q1', 'he-2017-hl-sa-q10', 'he-2017-hl-sa-q11',
+  'he-2017-hl-sa-q12', 'he-2017-hl-sa-q2', 'he-2017-hl-sa-q3',
+  'he-2017-hl-sa-q4', 'he-2017-hl-sa-q5', 'he-2017-hl-sa-q6',
+  'he-2017-hl-sa-q7', 'he-2017-hl-sa-q8', 'he-2017-hl-sa-q9',
+  'he-2017-hl-sb-q1a', 'he-2017-hl-sb-q1b', 'he-2017-hl-sb-q1c',
+  'he-2017-hl-sb-q1d', 'he-2017-hl-sb-q1e', 'he-2017-hl-sb-q2a',
+  'he-2017-hl-sb-q2b', 'he-2017-hl-sb-q2c', 'he-2017-hl-sb-q3a',
+  'he-2017-hl-sb-q3b', 'he-2017-hl-sb-q3c', 'he-2017-hl-sb-q4a',
+  'he-2017-hl-sb-q4b', 'he-2017-hl-sb-q4c', 'he-2017-hl-sb-q5a',
+  'he-2017-hl-sb-q5b', 'he-2017-hl-sb-q5c', 'he-2017-hl-sc-q1ai',
+  'he-2017-hl-sc-q1aii', 'he-2017-hl-sc-q1aiii', 'he-2017-hl-sc-q1bi',
+  'he-2017-hl-sc-q1bii', 'he-2017-hl-sc-q1ci', 'he-2017-hl-sc-q1cii',
+  'he-2017-hl-sc-q2ai', 'he-2017-hl-sc-q2aii', 'he-2017-hl-sc-q2b',
+  'he-2017-hl-sc-q2ci', 'he-2017-hl-sc-q2cii', 'he-2017-hl-sc-q3ai',
+  'he-2017-hl-sc-q3aii', 'he-2017-hl-sc-q3aiii', 'he-2017-hl-sc-q3bi',
+  'he-2017-hl-sc-q3bii', 'he-2017-hl-sc-q3ci', 'he-2017-hl-sc-q3cii',
+  // 2016 Ordinary: 48 independently source-reviewed additions; prior cards and frozen hashes unchanged.
+  'he-2016-ol-sa-q1', 'he-2016-ol-sa-q10', 'he-2016-ol-sa-q11',
+  'he-2016-ol-sa-q12', 'he-2016-ol-sa-q2', 'he-2016-ol-sa-q3',
+  'he-2016-ol-sa-q4', 'he-2016-ol-sa-q5', 'he-2016-ol-sa-q6',
+  'he-2016-ol-sa-q7', 'he-2016-ol-sa-q8', 'he-2016-ol-sa-q9',
+  'he-2016-ol-sb-q1a', 'he-2016-ol-sb-q1b', 'he-2016-ol-sb-q1c',
+  'he-2016-ol-sb-q1d', 'he-2016-ol-sb-q2a', 'he-2016-ol-sb-q2b',
+  'he-2016-ol-sb-q2c', 'he-2016-ol-sb-q3a', 'he-2016-ol-sb-q3b',
+  'he-2016-ol-sb-q3c', 'he-2016-ol-sb-q4a', 'he-2016-ol-sb-q4b',
+  'he-2016-ol-sb-q4c', 'he-2016-ol-sb-q5a', 'he-2016-ol-sb-q5b',
+  'he-2016-ol-sb-q5c', 'he-2016-ol-sc-q1ai', 'he-2016-ol-sc-q1aii',
+  'he-2016-ol-sc-q1aiii', 'he-2016-ol-sc-q1bi', 'he-2016-ol-sc-q1bii',
+  'he-2016-ol-sc-q1ci', 'he-2016-ol-sc-q1cii', 'he-2016-ol-sc-q2ai',
+  'he-2016-ol-sc-q2aii', 'he-2016-ol-sc-q2bi', 'he-2016-ol-sc-q2bii',
+  'he-2016-ol-sc-q2ci', 'he-2016-ol-sc-q2cii', 'he-2016-ol-sc-q3ai',
+  'he-2016-ol-sc-q3aii', 'he-2016-ol-sc-q3aiii', 'he-2016-ol-sc-q3bi',
+  'he-2016-ol-sc-q3bii', 'he-2016-ol-sc-q3ci', 'he-2016-ol-sc-q3cii',
+  // 2016 Higher: 53 independently source-reviewed additions; every prior card and frozen hash unchanged.
+  'he-2016-hl-sa-q1', 'he-2016-hl-sa-q10', 'he-2016-hl-sa-q11',
+  'he-2016-hl-sa-q12', 'he-2016-hl-sa-q2', 'he-2016-hl-sa-q3',
+  'he-2016-hl-sa-q4', 'he-2016-hl-sa-q5', 'he-2016-hl-sa-q6',
+  'he-2016-hl-sa-q7', 'he-2016-hl-sa-q8', 'he-2016-hl-sa-q9',
+  'he-2016-hl-sb-q1a', 'he-2016-hl-sb-q1b', 'he-2016-hl-sb-q1c',
+  'he-2016-hl-sb-q1d', 'he-2016-hl-sb-q1e', 'he-2016-hl-sb-q2a',
+  'he-2016-hl-sb-q2b', 'he-2016-hl-sb-q2c', 'he-2016-hl-sb-q3a',
+  'he-2016-hl-sb-q3b', 'he-2016-hl-sb-q3c', 'he-2016-hl-sb-q4a',
+  'he-2016-hl-sb-q4b', 'he-2016-hl-sb-q4c', 'he-2016-hl-sb-q5a',
+  'he-2016-hl-sb-q5b', 'he-2016-hl-sb-q5c', 'he-2016-hl-sc-q1ai',
+  'he-2016-hl-sc-q1aii', 'he-2016-hl-sc-q1aiii', 'he-2016-hl-sc-q1bi',
+  'he-2016-hl-sc-q1bii', 'he-2016-hl-sc-q1ci-principles', 'he-2016-hl-sc-q1ci-profile',
+  'he-2016-hl-sc-q1cii', 'he-2016-hl-sc-q2ai', 'he-2016-hl-sc-q2aii',
+  'he-2016-hl-sc-q2aiii', 'he-2016-hl-sc-q2bi', 'he-2016-hl-sc-q2bii-colour',
+  'he-2016-hl-sc-q2bii-design', 'he-2016-hl-sc-q2ci', 'he-2016-hl-sc-q2cii',
+  'he-2016-hl-sc-q3ai', 'he-2016-hl-sc-q3aii', 'he-2016-hl-sc-q3aiii',
+  'he-2016-hl-sc-q3aiv', 'he-2016-hl-sc-q3bi', 'he-2016-hl-sc-q3bii',
+  'he-2016-hl-sc-q3ci', 'he-2016-hl-sc-q3cii',
+  // 2015 Ordinary:51 independently source-reviewed additions; frozen hashes unchanged.
+  'he-2015-ol-sa-q1', 'he-2015-ol-sa-q10', 'he-2015-ol-sa-q11',
+  'he-2015-ol-sa-q12', 'he-2015-ol-sa-q2', 'he-2015-ol-sa-q3',
+  'he-2015-ol-sa-q4', 'he-2015-ol-sa-q5', 'he-2015-ol-sa-q6',
+  'he-2015-ol-sa-q7', 'he-2015-ol-sa-q8', 'he-2015-ol-sa-q9',
+  'he-2015-ol-sb-q1a', 'he-2015-ol-sb-q1b', 'he-2015-ol-sb-q1ci',
+  'he-2015-ol-sb-q1cii', 'he-2015-ol-sb-q1d', 'he-2015-ol-sb-q2ai',
+  'he-2015-ol-sb-q2aii', 'he-2015-ol-sb-q2b', 'he-2015-ol-sb-q2c',
+  'he-2015-ol-sb-q3a', 'he-2015-ol-sb-q3b-explanation', 'he-2015-ol-sb-q3b-methods',
+  'he-2015-ol-sb-q3c', 'he-2015-ol-sb-q4a', 'he-2015-ol-sb-q4b',
+  'he-2015-ol-sb-q4c', 'he-2015-ol-sb-q5a', 'he-2015-ol-sb-q5b',
+  'he-2015-ol-sb-q5c', 'he-2015-ol-sc-q1ai-evaluation', 'he-2015-ol-sc-q1ai-modifications',
+  'he-2015-ol-sc-q1aii', 'he-2015-ol-sc-q1aiii', 'he-2015-ol-sc-q1bi',
+  'he-2015-ol-sc-q1bii', 'he-2015-ol-sc-q1ci', 'he-2015-ol-sc-q1cii',
+  'he-2015-ol-sc-q2ai', 'he-2015-ol-sc-q2aii', 'he-2015-ol-sc-q2b',
+  'he-2015-ol-sc-q2ci', 'he-2015-ol-sc-q2cii', 'he-2015-ol-sc-q3ai',
+  'he-2015-ol-sc-q3aii', 'he-2015-ol-sc-q3aiii', 'he-2015-ol-sc-q3bi',
+  'he-2015-ol-sc-q3bii', 'he-2015-ol-sc-q3ci', 'he-2015-ol-sc-q3cii',
+  // 2015 Higher: 48 independently source-reviewed additions; frozen identity hashes unchanged.
+  'he-2015-hl-sa-q1', 'he-2015-hl-sa-q10', 'he-2015-hl-sa-q11',
+  'he-2015-hl-sa-q12', 'he-2015-hl-sa-q2', 'he-2015-hl-sa-q3',
+  'he-2015-hl-sa-q4', 'he-2015-hl-sa-q5', 'he-2015-hl-sa-q6',
+  'he-2015-hl-sa-q7', 'he-2015-hl-sa-q8', 'he-2015-hl-sa-q9',
+  'he-2015-hl-sb-q1a', 'he-2015-hl-sb-q1b', 'he-2015-hl-sb-q1ci',
+  'he-2015-hl-sb-q1cii', 'he-2015-hl-sb-q1d', 'he-2015-hl-sb-q2a',
+  'he-2015-hl-sb-q2b', 'he-2015-hl-sb-q3a', 'he-2015-hl-sb-q3b',
+  'he-2015-hl-sb-q3c', 'he-2015-hl-sb-q4a', 'he-2015-hl-sb-q4b',
+  'he-2015-hl-sb-q4c', 'he-2015-hl-sb-q5ai', 'he-2015-hl-sb-q5aii',
+  'he-2015-hl-sb-q5b', 'he-2015-hl-sb-q5c', 'he-2015-hl-sc-q1ai',
+  'he-2015-hl-sc-q1aii', 'he-2015-hl-sc-q1aiii', 'he-2015-hl-sc-q1bi',
+  'he-2015-hl-sc-q1bii', 'he-2015-hl-sc-q1ci', 'he-2015-hl-sc-q1cii',
+  'he-2015-hl-sc-q2ai', 'he-2015-hl-sc-q2aii', 'he-2015-hl-sc-q2b',
+  'he-2015-hl-sc-q2ci', 'he-2015-hl-sc-q2cii', 'he-2015-hl-sc-q3ai',
+  'he-2015-hl-sc-q3aii', 'he-2015-hl-sc-q3aiii', 'he-2015-hl-sc-q3bi',
+  'he-2015-hl-sc-q3bii', 'he-2015-hl-sc-q3ci', 'he-2015-hl-sc-q3cii',
+  // 2014 Ordinary: 51 independently source-reviewed additions; frozen identity hashes unchanged.
+  'he-2014-ol-sa-q1', 'he-2014-ol-sa-q10', 'he-2014-ol-sa-q11',
+  'he-2014-ol-sa-q12', 'he-2014-ol-sa-q2', 'he-2014-ol-sa-q3',
+  'he-2014-ol-sa-q4', 'he-2014-ol-sa-q5', 'he-2014-ol-sa-q6',
+  'he-2014-ol-sa-q7', 'he-2014-ol-sa-q8', 'he-2014-ol-sa-q9',
+  'he-2014-ol-sb-q1a', 'he-2014-ol-sb-q1b', 'he-2014-ol-sb-q1c',
+  'he-2014-ol-sb-q1d', 'he-2014-ol-sb-q2a', 'he-2014-ol-sb-q2b',
+  'he-2014-ol-sb-q2c', 'he-2014-ol-sb-q3a', 'he-2014-ol-sb-q3bi',
+  'he-2014-ol-sb-q3bii', 'he-2014-ol-sb-q3c', 'he-2014-ol-sb-q4a',
+  'he-2014-ol-sb-q4bi', 'he-2014-ol-sb-q4bii', 'he-2014-ol-sb-q4c',
+  'he-2014-ol-sb-q5a', 'he-2014-ol-sb-q5b', 'he-2014-ol-sb-q5c',
+  'he-2014-ol-sc-q1ai', 'he-2014-ol-sc-q1aii', 'he-2014-ol-sc-q1aiii',
+  'he-2014-ol-sc-q1bi', 'he-2014-ol-sc-q1bii', 'he-2014-ol-sc-q1ci',
+  'he-2014-ol-sc-q1cii', 'he-2014-ol-sc-q2ai', 'he-2014-ol-sc-q2aii',
+  'he-2014-ol-sc-q2aiii', 'he-2014-ol-sc-q2bi', 'he-2014-ol-sc-q2bii',
+  'he-2014-ol-sc-q2ci', 'he-2014-ol-sc-q2cii', 'he-2014-ol-sc-q3ai',
+  'he-2014-ol-sc-q3aii', 'he-2014-ol-sc-q3aiii', 'he-2014-ol-sc-q3bi',
+  'he-2014-ol-sc-q3bii', 'he-2014-ol-sc-q3ci', 'he-2014-ol-sc-q3cii',
+  // 2014 Higher: 49 independently source-reviewed additions; frozen identity hashes unchanged.
+  'he-2014-hl-sa-q1', 'he-2014-hl-sa-q10', 'he-2014-hl-sa-q11',
+  'he-2014-hl-sa-q12', 'he-2014-hl-sa-q2', 'he-2014-hl-sa-q3',
+  'he-2014-hl-sa-q4', 'he-2014-hl-sa-q5', 'he-2014-hl-sa-q6',
+  'he-2014-hl-sa-q7', 'he-2014-hl-sa-q8', 'he-2014-hl-sa-q9',
+  'he-2014-hl-sb-q1a', 'he-2014-hl-sb-q1b', 'he-2014-hl-sb-q1c',
+  'he-2014-hl-sb-q1d', 'he-2014-hl-sb-q2a', 'he-2014-hl-sb-q2b-factors',
+  'he-2014-hl-sb-q2b-methods', 'he-2014-hl-sb-q2c', 'he-2014-hl-sb-q3a',
+  'he-2014-hl-sb-q3b', 'he-2014-hl-sb-q3c', 'he-2014-hl-sb-q4a',
+  'he-2014-hl-sb-q4b', 'he-2014-hl-sb-q4c', 'he-2014-hl-sb-q5a',
+  'he-2014-hl-sb-q5bi', 'he-2014-hl-sb-q5bii', 'he-2014-hl-sb-q5c',
+  'he-2014-hl-sc-q1ai', 'he-2014-hl-sc-q1aii', 'he-2014-hl-sc-q1aiii',
+  'he-2014-hl-sc-q1bi', 'he-2014-hl-sc-q1bii', 'he-2014-hl-sc-q1ci',
+  'he-2014-hl-sc-q1cii', 'he-2014-hl-sc-q2ai', 'he-2014-hl-sc-q2aii',
+  'he-2014-hl-sc-q2bi', 'he-2014-hl-sc-q2bii', 'he-2014-hl-sc-q2ci',
+  'he-2014-hl-sc-q2cii', 'he-2014-hl-sc-q3ai', 'he-2014-hl-sc-q3aii',
+  'he-2014-hl-sc-q3aiii', 'he-2014-hl-sc-q3b', 'he-2014-hl-sc-q3ci',
+  'he-2014-hl-sc-q3cii',
+  // 2013 Ordinary: 52 independently source-reviewed additions; frozen identity hashes unchanged.
+  'he-2013-ol-sa-q1', 'he-2013-ol-sa-q10', 'he-2013-ol-sa-q11',
+  'he-2013-ol-sa-q12', 'he-2013-ol-sa-q2', 'he-2013-ol-sa-q3',
+  'he-2013-ol-sa-q4', 'he-2013-ol-sa-q5', 'he-2013-ol-sa-q6',
+  'he-2013-ol-sa-q7', 'he-2013-ol-sa-q8', 'he-2013-ol-sa-q9',
+  'he-2013-ol-sb-q1a', 'he-2013-ol-sb-q1b', 'he-2013-ol-sb-q1c',
+  'he-2013-ol-sb-q1d', 'he-2013-ol-sb-q2a', 'he-2013-ol-sb-q2b-guidelines',
+  'he-2013-ol-sb-q2b-menu', 'he-2013-ol-sb-q2c', 'he-2013-ol-sb-q3a',
+  'he-2013-ol-sb-q3b', 'he-2013-ol-sb-q3c', 'he-2013-ol-sb-q4a',
+  'he-2013-ol-sb-q4b', 'he-2013-ol-sb-q4c', 'he-2013-ol-sb-q4d',
+  'he-2013-ol-sb-q5a', 'he-2013-ol-sb-q5bi', 'he-2013-ol-sb-q5bii',
+  'he-2013-ol-sb-q5c-definition', 'he-2013-ol-sb-q5c-ways', 'he-2013-ol-sc-q1ai',
+  'he-2013-ol-sc-q1aii', 'he-2013-ol-sc-q1aiii', 'he-2013-ol-sc-q1aiv',
+  'he-2013-ol-sc-q1bi', 'he-2013-ol-sc-q1bii', 'he-2013-ol-sc-q1ci',
+  'he-2013-ol-sc-q1cii', 'he-2013-ol-sc-q2ai', 'he-2013-ol-sc-q2aii',
+  'he-2013-ol-sc-q2b', 'he-2013-ol-sc-q2ci', 'he-2013-ol-sc-q2cii',
+  'he-2013-ol-sc-q3ai', 'he-2013-ol-sc-q3aii', 'he-2013-ol-sc-q3aiii',
+  'he-2013-ol-sc-q3bi', 'he-2013-ol-sc-q3bii', 'he-2013-ol-sc-q3ci',
+  'he-2013-ol-sc-q3cii',
+  // 2013 Higher: 49 independently source-reviewed additions; frozen identity hashes unchanged.
+  'he-2013-hl-sa-q1', 'he-2013-hl-sa-q10', 'he-2013-hl-sa-q11',
+  'he-2013-hl-sa-q12', 'he-2013-hl-sa-q2', 'he-2013-hl-sa-q3',
+  'he-2013-hl-sa-q4', 'he-2013-hl-sa-q5', 'he-2013-hl-sa-q6',
+  'he-2013-hl-sa-q7', 'he-2013-hl-sa-q8', 'he-2013-hl-sa-q9',
+  'he-2013-hl-sb-q1a', 'he-2013-hl-sb-q1b', 'he-2013-hl-sb-q1c',
+  'he-2013-hl-sb-q1d', 'he-2013-hl-sb-q1e', 'he-2013-hl-sb-q2a',
+  'he-2013-hl-sb-q2bi', 'he-2013-hl-sb-q2bii', 'he-2013-hl-sb-q2c',
+  'he-2013-hl-sb-q3a', 'he-2013-hl-sb-q3b', 'he-2013-hl-sb-q3c',
+  'he-2013-hl-sb-q4a', 'he-2013-hl-sb-q4b', 'he-2013-hl-sb-q4c',
+  'he-2013-hl-sb-q5a', 'he-2013-hl-sb-q5b', 'he-2013-hl-sb-q5c',
+  'he-2013-hl-sc-q1ai', 'he-2013-hl-sc-q1aii', 'he-2013-hl-sc-q1aiii',
+  'he-2013-hl-sc-q1bi', 'he-2013-hl-sc-q1bii', 'he-2013-hl-sc-q1ci',
+  'he-2013-hl-sc-q1cii', 'he-2013-hl-sc-q2ai', 'he-2013-hl-sc-q2aii',
+  'he-2013-hl-sc-q2aiii', 'he-2013-hl-sc-q2b', 'he-2013-hl-sc-q2ci',
+  'he-2013-hl-sc-q2cii', 'he-2013-hl-sc-q3ai', 'he-2013-hl-sc-q3aii',
+  'he-2013-hl-sc-q3aiii', 'he-2013-hl-sc-q3bi', 'he-2013-hl-sc-q3bii',
+  'he-2013-hl-sc-q3c',
+  // 2012 Ordinary: fifty-three source-reviewed additions; frozen identity hashes unchanged.
+  'he-2012-ol-sa-q1', 'he-2012-ol-sa-q10', 'he-2012-ol-sa-q11',
+  'he-2012-ol-sa-q12', 'he-2012-ol-sa-q2', 'he-2012-ol-sa-q3',
+  'he-2012-ol-sa-q4', 'he-2012-ol-sa-q5', 'he-2012-ol-sa-q6',
+  'he-2012-ol-sa-q7', 'he-2012-ol-sa-q8', 'he-2012-ol-sa-q9',
+  'he-2012-ol-sb-q1a', 'he-2012-ol-sb-q1b', 'he-2012-ol-sb-q1c',
+  'he-2012-ol-sb-q1d', 'he-2012-ol-sb-q2a-reasons', 'he-2012-ol-sb-q2a-sources',
+  'he-2012-ol-sb-q2b', 'he-2012-ol-sb-q2c-consumption', 'he-2012-ol-sb-q2c-definition',
+  'he-2012-ol-sb-q3a', 'he-2012-ol-sb-q3b', 'he-2012-ol-sb-q3c',
+  'he-2012-ol-sb-q4a', 'he-2012-ol-sb-q4b', 'he-2012-ol-sb-q4c-reasons',
+  'he-2012-ol-sb-q4c-schemes', 'he-2012-ol-sb-q5ai', 'he-2012-ol-sb-q5aii',
+  'he-2012-ol-sb-q5b', 'he-2012-ol-sb-q5c', 'he-2012-ol-sc-q1ai',
+  'he-2012-ol-sc-q1aii', 'he-2012-ol-sc-q1aiii', 'he-2012-ol-sc-q1bi',
+  'he-2012-ol-sc-q1bii-difference', 'he-2012-ol-sc-q1bii-procedure', 'he-2012-ol-sc-q1ci',
+  'he-2012-ol-sc-q1cii', 'he-2012-ol-sc-q2ai', 'he-2012-ol-sc-q2aii',
+  'he-2012-ol-sc-q2aiii', 'he-2012-ol-sc-q2bi', 'he-2012-ol-sc-q2bii',
+  'he-2012-ol-sc-q2ci', 'he-2012-ol-sc-q2cii', 'he-2012-ol-sc-q3ai',
+  'he-2012-ol-sc-q3aii', 'he-2012-ol-sc-q3bi', 'he-2012-ol-sc-q3bii',
+  'he-2012-ol-sc-q3ci', 'he-2012-ol-sc-q3cii',
+  // 2012 Higher: fifty-one source-reviewed additions; frozen identities unchanged.
+  'he-2012-hl-sa-q1', 'he-2012-hl-sa-q10', 'he-2012-hl-sa-q11',
+  'he-2012-hl-sa-q12', 'he-2012-hl-sa-q2', 'he-2012-hl-sa-q3',
+  'he-2012-hl-sa-q4', 'he-2012-hl-sa-q5', 'he-2012-hl-sa-q6',
+  'he-2012-hl-sa-q7', 'he-2012-hl-sa-q8', 'he-2012-hl-sa-q9',
+  'he-2012-hl-sb-q1a', 'he-2012-hl-sb-q1b', 'he-2012-hl-sb-q1c',
+  'he-2012-hl-sb-q1d', 'he-2012-hl-sb-q2a', 'he-2012-hl-sb-q2b',
+  'he-2012-hl-sb-q2c', 'he-2012-hl-sb-q3a', 'he-2012-hl-sb-q3b',
+  'he-2012-hl-sb-q3c', 'he-2012-hl-sb-q4a', 'he-2012-hl-sb-q4b',
+  'he-2012-hl-sb-q4c', 'he-2012-hl-sb-q5a', 'he-2012-hl-sb-q5b-child',
+  'he-2012-hl-sb-q5b-parent', 'he-2012-hl-sb-q5c', 'he-2012-hl-sc-q1ai',
+  'he-2012-hl-sc-q1aii', 'he-2012-hl-sc-q1aiii', 'he-2012-hl-sc-q1bi',
+  'he-2012-hl-sc-q1bii', 'he-2012-hl-sc-q1ci', 'he-2012-hl-sc-q1cii',
+  'he-2012-hl-sc-q2ai', 'he-2012-hl-sc-q2aii', 'he-2012-hl-sc-q2bi',
+  'he-2012-hl-sc-q2bii', 'he-2012-hl-sc-q2c-colour', 'he-2012-hl-sc-q2c-construction',
+  'he-2012-hl-sc-q2c-design', 'he-2012-hl-sc-q3ai', 'he-2012-hl-sc-q3aii',
+  'he-2012-hl-sc-q3aiii', 'he-2012-hl-sc-q3bi-definition', 'he-2012-hl-sc-q3bi-value',
+  'he-2012-hl-sc-q3bii', 'he-2012-hl-sc-q3ci', 'he-2012-hl-sc-q3cii',
+  // 2011 Ordinary: fifty-two source-reviewed additions; frozen identity hashes unchanged.
+  'he-2011-ol-sa-q1', 'he-2011-ol-sa-q10', 'he-2011-ol-sa-q11',
+  'he-2011-ol-sa-q11-uses', 'he-2011-ol-sa-q12', 'he-2011-ol-sa-q2',
+  'he-2011-ol-sa-q3', 'he-2011-ol-sa-q4', 'he-2011-ol-sa-q5',
+  'he-2011-ol-sa-q6', 'he-2011-ol-sa-q7', 'he-2011-ol-sa-q8',
+  'he-2011-ol-sa-q9', 'he-2011-ol-sb-q1a', 'he-2011-ol-sb-q1b',
+  'he-2011-ol-sb-q1c-essential', 'he-2011-ol-sb-q1c-omega3', 'he-2011-ol-sb-q1d',
+  'he-2011-ol-sb-q2a', 'he-2011-ol-sb-q2b', 'he-2011-ol-sb-q2c',
+  'he-2011-ol-sb-q3a', 'he-2011-ol-sb-q3b', 'he-2011-ol-sb-q3c',
+  'he-2011-ol-sb-q4a', 'he-2011-ol-sb-q4b', 'he-2011-ol-sb-q4c',
+  'he-2011-ol-sb-q5ai', 'he-2011-ol-sb-q5aii', 'he-2011-ol-sb-q5bi',
+  'he-2011-ol-sb-q5bii', 'he-2011-ol-sc-q1ai', 'he-2011-ol-sc-q1aii',
+  'he-2011-ol-sc-q1aiii', 'he-2011-ol-sc-q1bi', 'he-2011-ol-sc-q1bii',
+  'he-2011-ol-sc-q1ci', 'he-2011-ol-sc-q1cii', 'he-2011-ol-sc-q2ai',
+  'he-2011-ol-sc-q2aii', 'he-2011-ol-sc-q2aiii', 'he-2011-ol-sc-q2bi',
+  'he-2011-ol-sc-q2bii', 'he-2011-ol-sc-q2ci', 'he-2011-ol-sc-q2cii',
+  'he-2011-ol-sc-q3ai', 'he-2011-ol-sc-q3aii', 'he-2011-ol-sc-q3aiii',
+  'he-2011-ol-sc-q3bi', 'he-2011-ol-sc-q3bii', 'he-2011-ol-sc-q3ci',
+  'he-2011-ol-sc-q3cii',
+  // 2011 Higher: forty-eight source-reviewed additions; frozen identity hashes unchanged.
+  'he-2011-hl-sa-q1', 'he-2011-hl-sa-q10', 'he-2011-hl-sa-q11',
+  'he-2011-hl-sa-q12', 'he-2011-hl-sa-q2', 'he-2011-hl-sa-q3',
+  'he-2011-hl-sa-q4', 'he-2011-hl-sa-q5', 'he-2011-hl-sa-q6',
+  'he-2011-hl-sa-q7', 'he-2011-hl-sa-q8', 'he-2011-hl-sa-q9',
+  'he-2011-hl-sb-q1a', 'he-2011-hl-sb-q1b', 'he-2011-hl-sb-q1c',
+  'he-2011-hl-sb-q1d', 'he-2011-hl-sb-q2a', 'he-2011-hl-sb-q2b',
+  'he-2011-hl-sb-q2c', 'he-2011-hl-sb-q3a', 'he-2011-hl-sb-q3b',
+  'he-2011-hl-sb-q3c', 'he-2011-hl-sb-q4a', 'he-2011-hl-sb-q4b',
+  'he-2011-hl-sb-q4c', 'he-2011-hl-sb-q5a-definition', 'he-2011-hl-sb-q5a-universality',
+  'he-2011-hl-sb-q5b', 'he-2011-hl-sb-q5c', 'he-2011-hl-sc-q1ai',
+  'he-2011-hl-sc-q1aii', 'he-2011-hl-sc-q1aiii', 'he-2011-hl-sc-q1bi',
+  'he-2011-hl-sc-q1bii', 'he-2011-hl-sc-q1ci', 'he-2011-hl-sc-q1cii',
+  'he-2011-hl-sc-q2ai', 'he-2011-hl-sc-q2aii', 'he-2011-hl-sc-q2b',
+  'he-2011-hl-sc-q2ci', 'he-2011-hl-sc-q2cii', 'he-2011-hl-sc-q3ai',
+  'he-2011-hl-sc-q3aii', 'he-2011-hl-sc-q3aiii', 'he-2011-hl-sc-q3bi',
+  'he-2011-hl-sc-q3bii', 'he-2011-hl-sc-q3ci', 'he-2011-hl-sc-q3cii',
+  // 2010 Ordinary: fifty source-reviewed tasks; frozen identities and hashes unchanged.
+  'he-2010-ol-sa-q1', 'he-2010-ol-sa-q1-sources', 'he-2010-ol-sa-q10',
+  'he-2010-ol-sa-q10-assurance', 'he-2010-ol-sa-q11', 'he-2010-ol-sa-q12',
+  'he-2010-ol-sa-q2', 'he-2010-ol-sa-q3', 'he-2010-ol-sa-q4',
+  'he-2010-ol-sa-q5', 'he-2010-ol-sa-q6', 'he-2010-ol-sa-q6-careers',
+  'he-2010-ol-sa-q7', 'he-2010-ol-sa-q8', 'he-2010-ol-sa-q9',
+  'he-2010-ol-sa-q9-symbol', 'he-2010-ol-sb-q1a', 'he-2010-ol-sb-q1b',
+  'he-2010-ol-sb-q1c', 'he-2010-ol-sb-q1d', 'he-2010-ol-sb-q2a',
+  'he-2010-ol-sb-q2b', 'he-2010-ol-sb-q2c', 'he-2010-ol-sb-q3a',
+  'he-2010-ol-sb-q3b', 'he-2010-ol-sb-q3c', 'he-2010-ol-sb-q4a',
+  'he-2010-ol-sb-q4b', 'he-2010-ol-sb-q4c', 'he-2010-ol-sb-q5a',
+  'he-2010-ol-sb-q5b', 'he-2010-ol-sb-q5c', 'he-2010-ol-sc-q1ai',
+  'he-2010-ol-sc-q1aii', 'he-2010-ol-sc-q1aiii', 'he-2010-ol-sc-q1bi',
+  'he-2010-ol-sc-q1bii', 'he-2010-ol-sc-q1ci', 'he-2010-ol-sc-q1cii',
+  'he-2010-ol-sc-q2ai', 'he-2010-ol-sc-q2aii', 'he-2010-ol-sc-q2bi',
+  'he-2010-ol-sc-q2bii', 'he-2010-ol-sc-q2c', 'he-2010-ol-sc-q3ai',
+  'he-2010-ol-sc-q3aii', 'he-2010-ol-sc-q3aiii', 'he-2010-ol-sc-q3bi',
+  'he-2010-ol-sc-q3bii', 'he-2010-ol-sc-q3c',
+  // 2010 Higher: fifty source-reviewed tasks; all frozen identities/hashes unchanged.
+  'he-2010-hl-sa-q1', 'he-2010-hl-sa-q10', 'he-2010-hl-sa-q11',
+  'he-2010-hl-sa-q12', 'he-2010-hl-sa-q2', 'he-2010-hl-sa-q3',
+  'he-2010-hl-sa-q4', 'he-2010-hl-sa-q5', 'he-2010-hl-sa-q6',
+  'he-2010-hl-sa-q7', 'he-2010-hl-sa-q8', 'he-2010-hl-sa-q9',
+  'he-2010-hl-sb-q1ai', 'he-2010-hl-sb-q1aii', 'he-2010-hl-sb-q1b',
+  'he-2010-hl-sb-q1c', 'he-2010-hl-sb-q1d', 'he-2010-hl-sb-q2a',
+  'he-2010-hl-sb-q2b', 'he-2010-hl-sb-q2c', 'he-2010-hl-sb-q3a',
+  'he-2010-hl-sb-q3b', 'he-2010-hl-sb-q3c', 'he-2010-hl-sb-q4a',
+  'he-2010-hl-sb-q4b', 'he-2010-hl-sb-q4c', 'he-2010-hl-sb-q5a',
+  'he-2010-hl-sb-q5b', 'he-2010-hl-sb-q5c-importance', 'he-2010-hl-sb-q5c-procedure',
+  'he-2010-hl-sc-q1ai', 'he-2010-hl-sc-q1aii', 'he-2010-hl-sc-q1aiii',
+  'he-2010-hl-sc-q1bi', 'he-2010-hl-sc-q1bii', 'he-2010-hl-sc-q1ci',
+  'he-2010-hl-sc-q1cii', 'he-2010-hl-sc-q2ai', 'he-2010-hl-sc-q2aii',
+  'he-2010-hl-sc-q2aiii', 'he-2010-hl-sc-q2b', 'he-2010-hl-sc-q2ci',
+  'he-2010-hl-sc-q2cii', 'he-2010-hl-sc-q3ai', 'he-2010-hl-sc-q3aii',
+  'he-2010-hl-sc-q3aiii', 'he-2010-hl-sc-q3bi', 'he-2010-hl-sc-q3bii',
+  'he-2010-hl-sc-q3ci', 'he-2010-hl-sc-q3cii',
+  // 2026 Ordinary: fifty-eight independently reviewed tasks; frozen baseline unchanged.
+  'he-2026-ol-sa-q1', 'he-2026-ol-sa-q10', 'he-2026-ol-sa-q11',
+  'he-2026-ol-sa-q12', 'he-2026-ol-sa-q13', 'he-2026-ol-sa-q14',
+  'he-2026-ol-sa-q2', 'he-2026-ol-sa-q3', 'he-2026-ol-sa-q4',
+  'he-2026-ol-sa-q4-source', 'he-2026-ol-sa-q5', 'he-2026-ol-sa-q6',
+  'he-2026-ol-sa-q7', 'he-2026-ol-sa-q8', 'he-2026-ol-sa-q9',
+  'he-2026-ol-sb-q1a', 'he-2026-ol-sb-q1b', 'he-2026-ol-sb-q1c',
+  'he-2026-ol-sb-q1d', 'he-2026-ol-sb-q1e', 'he-2026-ol-sb-q2a',
+  'he-2026-ol-sb-q2b', 'he-2026-ol-sb-q2c', 'he-2026-ol-sb-q3a',
+  'he-2026-ol-sb-q3b', 'he-2026-ol-sb-q3c', 'he-2026-ol-sb-q4a',
+  'he-2026-ol-sb-q4b', 'he-2026-ol-sb-q4c', 'he-2026-ol-sb-q5a',
+  'he-2026-ol-sb-q5b', 'he-2026-ol-sb-q5c', 'he-2026-ol-sc-q1ai',
+  'he-2026-ol-sc-q1aii', 'he-2026-ol-sc-q1aiii', 'he-2026-ol-sc-q1bi',
+  'he-2026-ol-sc-q1bii', 'he-2026-ol-sc-q1ci', 'he-2026-ol-sc-q1cii',
+  'he-2026-ol-sc-q2ai', 'he-2026-ol-sc-q2aii', 'he-2026-ol-sc-q2b',
+  'he-2026-ol-sc-q2ci', 'he-2026-ol-sc-q2cii', 'he-2026-ol-sc-q3ai',
+  'he-2026-ol-sc-q3aii', 'he-2026-ol-sc-q3aiii', 'he-2026-ol-sc-q3bi',
+  'he-2026-ol-sc-q3bii', 'he-2026-ol-sc-q3ci', 'he-2026-ol-sc-q3cii',
+  'he-2026-ol-sc-q4ai', 'he-2026-ol-sc-q4aii', 'he-2026-ol-sc-q4aiii',
+  'he-2026-ol-sc-q4bi', 'he-2026-ol-sc-q4bii', 'he-2026-ol-sc-q4ci',
+  'he-2026-ol-sc-q4cii',
+  // 2026 Higher: sixty independently source-reviewed tasks; frozen identities/hashes unchanged.
+  'he-2026-hl-sa-q1', 'he-2026-hl-sa-q10', 'he-2026-hl-sa-q11',
+  'he-2026-hl-sa-q12', 'he-2026-hl-sa-q13', 'he-2026-hl-sa-q14',
+  'he-2026-hl-sa-q2', 'he-2026-hl-sa-q3', 'he-2026-hl-sa-q4',
+  'he-2026-hl-sa-q5', 'he-2026-hl-sa-q6', 'he-2026-hl-sa-q6-factors',
+  'he-2026-hl-sa-q7', 'he-2026-hl-sa-q8', 'he-2026-hl-sa-q9',
+  'he-2026-hl-sb-q1a', 'he-2026-hl-sb-q1b', 'he-2026-hl-sb-q1c',
+  'he-2026-hl-sb-q1d', 'he-2026-hl-sb-q1e', 'he-2026-hl-sb-q2a',
+  'he-2026-hl-sb-q2b', 'he-2026-hl-sb-q2c', 'he-2026-hl-sb-q3a',
+  'he-2026-hl-sb-q3b', 'he-2026-hl-sb-q3c', 'he-2026-hl-sb-q4a',
+  'he-2026-hl-sb-q4b', 'he-2026-hl-sb-q4c', 'he-2026-hl-sb-q5a',
+  'he-2026-hl-sb-q5b', 'he-2026-hl-sb-q5c', 'he-2026-hl-sb-q5c-procedure',
+  'he-2026-hl-sc-q1ai', 'he-2026-hl-sc-q1aii', 'he-2026-hl-sc-q1aiii',
+  'he-2026-hl-sc-q1bi', 'he-2026-hl-sc-q1bii', 'he-2026-hl-sc-q1ci',
+  'he-2026-hl-sc-q1cii', 'he-2026-hl-sc-q2ai', 'he-2026-hl-sc-q2aii',
+  'he-2026-hl-sc-q2aiii', 'he-2026-hl-sc-q2b', 'he-2026-hl-sc-q2ci',
+  'he-2026-hl-sc-q2cii', 'he-2026-hl-sc-q3ai', 'he-2026-hl-sc-q3aii',
+  'he-2026-hl-sc-q3aiii', 'he-2026-hl-sc-q3bi', 'he-2026-hl-sc-q3bii',
+  'he-2026-hl-sc-q3ci', 'he-2026-hl-sc-q3cii', 'he-2026-hl-sc-q4ai',
+  'he-2026-hl-sc-q4aii', 'he-2026-hl-sc-q4aiii', 'he-2026-hl-sc-q4bi',
+  'he-2026-hl-sc-q4bii', 'he-2026-hl-sc-q4ci', 'he-2026-hl-sc-q4cii',
+  // Seven independently recovered 2025 Ordinary main tasks; frozen IDs/hashes unchanged.
+  'he-2025-ol-sa-q2-source', 'he-2025-ol-sa-q10-benefit', 'he-2025-ol-sa-q14',
+  'he-2025-ol-sb-q1a', 'he-2025-ol-sb-q2a', 'he-2025-ol-sb-q2b',
+  'he-2025-ol-sc-q1cii-examples',
+  // 2024 Ordinary: four independently reviewed published task boundaries. Frozen baseline unchanged.
+  'he-2024-ol-sa-q2-source', 'he-2024-ol-sa-q4-methods', 'he-2024-ol-sb-q2a', 'he-2024-ol-sb-q2b',
+  // 2025 Higher A: independent sodium-source prompt; frozen baseline unchanged.
+  'he-2025-hl-sa-q3-sources',
+  // 2025 Higher B2: independent risk task; existing calcium and cheese IDs retained.
+  'he-2025-hl-sb-q2a-risk',
+  // 2025 Higher C: independent ventilation-effects and meat-tenderising tasks.
+  'he-2025-hl-sc-q1aiii-effects', 'he-2025-hl-sc-q4aii-methods',
+  'he-2024-hl-sa-q2-sources', 'he-2024-hl-sb-q1d', 'he-2024-hl-sb-q4b', 'he-2024-hl-sc-q1ci-methods',
+  'he-2021-ol-sa-q3-methods', 'he-2021-ol-sa-q10-payment', 'he-2021-ol-sa-q11-disposal', 'he-2021-ol-sa-q14',
+  'he-2021-ol-sb-q1a', 'he-2021-ol-sb-q2b', 'he-2021-ol-sb-q3a', 'he-2021-ol-sb-q3b-storage',
+  'he-2021-hl-sa-q4-factors', 'he-2021-hl-sa-q8-advantages',
+  'he-2021-hl-sb-q2a', 'he-2021-hl-sb-q3b', 'he-2021-hl-sb-q5a-universality', 'he-2021-hl-sc-q1cii-strategies',
+  'he-2022-hl-sa-q1-absorption', 'he-2022-hl-sa-q3-example', 'he-2022-hl-sa-q6-advantage', 'he-2022-hl-sb-q5c-procedure',
+  'he-2022-ol-sa-q14', 'he-2022-ol-sa-q2-source', 'he-2022-ol-sa-q11-car',
+  'he-2022-ol-sb-q1a', 'he-2022-ol-sb-q2a', 'he-2022-ol-sb-q2b', 'he-2022-ol-sb-q3a',
+  'he-2022-ol-sc-q3ai-terms',
+  'he-2022-hl-deferred-sc-q1ai', 'he-2022-hl-deferred-sc-q1aii', 'he-2022-hl-deferred-sc-q1aiii',
+  'he-2022-hl-deferred-sc-q1bi', 'he-2022-hl-deferred-sc-q1bii', 'he-2022-hl-deferred-sc-q1ci',
+  'he-2022-hl-deferred-sc-q1cii', 'he-2022-hl-deferred-sc-q2ai', 'he-2022-hl-deferred-sc-q2aii',
+  'he-2022-hl-deferred-sc-q2b', 'he-2022-hl-deferred-sc-q2ci', 'he-2022-hl-deferred-sc-q2cii',
+  'he-2022-hl-deferred-sc-q3ai', 'he-2022-hl-deferred-sc-q3aii', 'he-2022-hl-deferred-sc-q3aiii',
+  'he-2022-hl-deferred-sc-q3bi', 'he-2022-hl-deferred-sc-q3bii', 'he-2022-hl-deferred-sc-q3ci',
+  'he-2022-hl-deferred-sc-q3cii', 'he-2022-hl-deferred-sc-q4ai', 'he-2022-hl-deferred-sc-q4aii',
+  'he-2022-hl-deferred-sc-q4aiii', 'he-2022-hl-deferred-sc-q4bi', 'he-2022-hl-deferred-sc-q4bii',
+  'he-2022-hl-deferred-sc-q4ci', 'he-2022-hl-deferred-sc-q4cii',
+  'he-2022-hl-deferred-sb-q1a', 'he-2022-hl-deferred-sb-q1b', 'he-2022-hl-deferred-sb-q1c',
+  'he-2022-hl-deferred-sb-q1d', 'he-2022-hl-deferred-sb-q2a', 'he-2022-hl-deferred-sb-q2b',
+  'he-2022-hl-deferred-sb-q2c', 'he-2022-hl-deferred-sb-q3a', 'he-2022-hl-deferred-sb-q3b',
+  'he-2022-hl-deferred-sb-q3c', 'he-2022-hl-deferred-sb-q4a', 'he-2022-hl-deferred-sb-q4b',
+  'he-2022-hl-deferred-sb-q4c', 'he-2022-hl-deferred-sb-q5a', 'he-2022-hl-deferred-sb-q5b',
+  'he-2022-hl-deferred-sb-q5c',
+  'he-2022-hl-deferred-sa-q1', 'he-2022-hl-deferred-sa-q1-mycoprotein', 'he-2022-hl-deferred-sa-q2',
+  'he-2022-hl-deferred-sa-q3', 'he-2022-hl-deferred-sa-q3-factors', 'he-2022-hl-deferred-sa-q4',
+  'he-2022-hl-deferred-sa-q5', 'he-2022-hl-deferred-sa-q6', 'he-2022-hl-deferred-sa-q6-meal-factors',
+  'he-2022-hl-deferred-sa-q7', 'he-2022-hl-deferred-sa-q8', 'he-2022-hl-deferred-sa-q8-effects',
+  'he-2022-hl-deferred-sa-q9', 'he-2022-hl-deferred-sa-q10', 'he-2022-hl-deferred-sa-q10-components',
+  'he-2022-hl-deferred-sa-q11', 'he-2022-hl-deferred-sa-q12', 'he-2022-hl-deferred-sa-q13',
+  'he-2022-hl-deferred-sa-q14',
+  'he-2023-hl-sb-q2b', 'he-2023-hl-sb-q3b', 'he-2023-hl-sc-q2cii',
+  'he-2023-hl-sa-q4-factors', 'he-2023-hl-sa-q8-uses',
+  'he-2023-ol-sa-q14', 'he-2023-ol-sb-q1a', 'he-2023-ol-sb-q2a', 'he-2023-ol-sb-q2b',
+  'he-2023-ol-sa-q4-source', 'he-2023-ol-sb-q5bii',
+  'he-2023-hl-deferred-sa-q1', 'he-2023-hl-deferred-sa-q1-example',
+  'he-2023-hl-deferred-sa-q2', 'he-2023-hl-deferred-sa-q3', 'he-2023-hl-deferred-sa-q4',
+  'he-2023-hl-deferred-sa-q5', 'he-2023-hl-deferred-sa-q6', 'he-2023-hl-deferred-sa-q7',
+  'he-2023-hl-deferred-sa-q8', 'he-2023-hl-deferred-sa-q9', 'he-2023-hl-deferred-sa-q10',
+  'he-2023-hl-deferred-sa-q11', 'he-2023-hl-deferred-sa-q12', 'he-2023-hl-deferred-sa-q13',
+  'he-2023-hl-deferred-sa-q14',
+  'he-2023-hl-deferred-sb-q1a', 'he-2023-hl-deferred-sb-q1b', 'he-2023-hl-deferred-sb-q1c',
+  'he-2023-hl-deferred-sb-q1d', 'he-2023-hl-deferred-sb-q1e',
+  'he-2023-hl-deferred-sb-q2a', 'he-2023-hl-deferred-sb-q2b', 'he-2023-hl-deferred-sb-q2c',
+  'he-2023-hl-deferred-sb-q3a', 'he-2023-hl-deferred-sb-q3b', 'he-2023-hl-deferred-sb-q3c',
+  'he-2023-hl-deferred-sb-q4a', 'he-2023-hl-deferred-sb-q4b', 'he-2023-hl-deferred-sb-q4c',
+  'he-2023-hl-deferred-sb-q5a', 'he-2023-hl-deferred-sb-q5b', 'he-2023-hl-deferred-sb-q5c',
+  'he-2023-hl-deferred-sc-q1ai', 'he-2023-hl-deferred-sc-q1aii', 'he-2023-hl-deferred-sc-q1aiii',
+  'he-2023-hl-deferred-sc-q1bi', 'he-2023-hl-deferred-sc-q1bii', 'he-2023-hl-deferred-sc-q1ci',
+  'he-2023-hl-deferred-sc-q1cii', 'he-2023-hl-deferred-sc-q2ai', 'he-2023-hl-deferred-sc-q2aii',
+  'he-2023-hl-deferred-sc-q2b', 'he-2023-hl-deferred-sc-q2ci', 'he-2023-hl-deferred-sc-q2cii',
+  'he-2023-hl-deferred-sc-q3ai', 'he-2023-hl-deferred-sc-q3aii', 'he-2023-hl-deferred-sc-q3aiii',
+  'he-2023-hl-deferred-sc-q3bi', 'he-2023-hl-deferred-sc-q3bii', 'he-2023-hl-deferred-sc-q3ci',
+  'he-2023-hl-deferred-sc-q3cii', 'he-2023-hl-deferred-sc-q4ai', 'he-2023-hl-deferred-sc-q4aii',
+  'he-2023-hl-deferred-sc-q4aiii', 'he-2023-hl-deferred-sc-q4bi', 'he-2023-hl-deferred-sc-q4bii',
+  'he-2023-hl-deferred-sc-q4ci', 'he-2023-hl-deferred-sc-q4cii',
+]);
+// 2026 adds 130 tasks. 2025 Higher adds 40 new task identities and corrects
+// 29 existing ones, consolidating 42 legacy fragments onto seven complete tasks.
+// Original 600 identity counts/hashes stay frozen, including explicit alias keys.
+const japaneseLiteralIds = new Set(['higher', 'ordinary'].flatMap(level =>
+  [...readFileSync(resolve(__dirname, `../components/MarkBank/cards/japanese/${level}.ts`), 'utf8').matchAll(/^ {4}id: "([^"]+)"/gm)].map(match => match[1])));
+const japaneseAliasIds = Object.keys(japaneseAliases);
+// 2024 Higher: 72 full tasks, 20 retained IDs, 52 additions and 44 original
+// fragments explicitly aliased to seven complete pools; frozen 600 unchanged.
+// 2024 Ordinary: 59 full tasks, 19 retained IDs, 40 additions, 40 fragment
+// aliases across six complete tasks. No frozen original identity is removed.
+// 2023 Higher: 67 whole tasks, 25 retained IDs, 42 additions and 43 original
+// fragments resolving to seven independently source-reviewed whole tasks.
+// 2023 Ordinary: 58 whole tasks, 17 retained IDs, 41 additions and 34
+// original fragments resolving to five complete source-reviewed pools.
+// 2022 Higher: 66 whole tasks, 24 retained IDs, 42 additions and 43
+// original fragments bound to seven complete source-reviewed tasks.
+// 2022 Ordinary: 58 whole tasks, 18 retained IDs, 40 additions and 41
+// original fragments bound to six complete source-reviewed tasks.
+// 2021 Higher: 58 whole tasks, 26 retained IDs, 32 additions and 43
+// original fragments bound to seven complete source-reviewed pools.
+// 2021 Ordinary: 57 whole tasks, 18 retained IDs, 39 additions and 39
+// original fragments bound to six complete source-reviewed tasks.
+// 2015 Ordinary adds all 51 independently censused tasks; all frozen identities and aliases remain unchanged.
+// 2015 Higher adds all 60 independently censused tasks, including one unpriced confidence-review task; original 600 hashes and 391 aliases stay frozen.
+// 2014 Higher/Ordinary add 57/52 independently censused whole tasks; no frozen identity or alias is changed.
+// 2013 Higher adds all 40 independently censused tasks; frozen600 identities and391 aliases remain unchanged.
+// 2013 Ordinary adds all 51 independently censused tasks; every original identity/hash and all391 aliases remain unchanged.
+// 2012 Higher adds all 62 independently censused tasks; frozen600 identities/hashes and391 aliases stay fixed.
+// 2011 Higher adds56 independently censused whole tasks; every frozen identity/hash and all391 aliases remain unchanged.
+// 2010 Higher adds66 independently censused whole tasks; all600 original IDs/hashes and391 aliases remain frozen.
+// 2010 Ordinary adds61 independently censused whole tasks; original600 identities/hashes and391 aliases stay frozen.
+const japaneseAdditionIds = new Set([japanese2010OrdinaryCensus, japanese2010HigherCensus, japanese2011OrdinaryCensus, japanese2011HigherCensus, japanese2012OrdinaryCensus, japanese2012HigherCensus, japanese2013OrdinaryCensus, japanese2013HigherCensus, japanese2014OrdinaryCensus, japanese2014HigherCensus, japanese2015OrdinaryCensus, japanese2015HigherCensus, japanese2016OrdinaryCensus, japanese2016HigherCensus, japanese2017OrdinaryCensus, japanese2017HigherCensus, japanese2018OrdinaryCensus, japanese2018HigherCensus, japanese2019OrdinaryCensus, japanese2019HigherCensus, japanese2020HigherCensus, japanese2021OrdinaryCensus, japanese2021HigherCensus, japanese2022OrdinaryCensus, japanese2022HigherCensus, japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus, japanese2025OrdinaryCensus, japanese2024HigherCensus, japanese2024OrdinaryCensus, japanese2023HigherCensus, japanese2023OrdinaryCensus].flatMap(census => census.tasks.map(task =>
+  `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`)).filter(id => !japaneseLiteralIds.has(id)));
+const lcvpAdditionIds = new Set<string>([...LCVP_2015_ADDED_IDS, ...LCVP_2016_ADDED_IDS, ...LCVP_2017_ADDED_IDS, ...LCVP_2018_ADDED_IDS, ...LCVP_2019_ADDED_IDS, ...LCVP_2020_ADDED_IDS, ...LCVP_2021_ADDED_IDS, ...LCVP_2022_ADDED_IDS, ...LCVP_2023_ADDED_IDS, ...LCVP_2024_ADDED_IDS, ...LCVP_2025_ADDED_IDS, ...LCVP_2026_ADDED_IDS]);
+/* Review pack 1 prototypes (treatments lane, 18 Nov 2026), counted on top of
+ * the frozen bank as the History essays are: Latin 2023 Higher Q2's four
+ * unseen passages, carded with the translation panel, and the 21 asks of
+ * Ancient Greek 2022 Ordinary, a paper the SEC published no marking scheme
+ * for. Every card frozen before them keeps its id. */
+const treatmentAdditionIds = new Set([...LATIN_HIGHER, ...AGREEK_ORDINARY]
+  .filter(card => (card.kind === 'rubric' && card.rubric.system === 'translation')
+    || ((card.kind === 'question' || card.kind === 'diagram') && card.noScheme === true))
+  .map(card => card.id));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
+  if (name === 'latin:higher' || name === 'ancient-greek:ordinary') return ids.filter(id => !treatmentAdditionIds.has(id));
   if (name.startsWith('history:')) return ids.filter(id => !historyEssayIds.has(id));
+  if (name === 'lcvp:common') return ids.filter(id => !lcvpAdditionIds.has(id));
+  if (name.startsWith('russian:')) {
+    const published = new Set(ids);
+    return russianOriginalCardIds[name.endsWith(':higher') ? 'higher' : 'ordinary']
+      .filter(id => published.has(id) || published.has(CARD_ID_ALIASES[id]));
+  }
+  if (name.startsWith('maths:')) {
+    const published = new Set(ids);
+    return mathsLaunchBaseline[name.endsWith(':higher') ? 'higher' : 'ordinary']
+      .filter(id => published.has(id) || published.has(CARD_ID_ALIASES[id]));
+  }
   if (name === 'technology:higher') {
     // The reviewed split of 2024 Higher B3(d) replaces its one old card with
     // two independently priced tasks. Keep the old progress identity in the
@@ -2056,6 +2697,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   if (name === 'technology:ordinary') return ids.filter(id => !isTechnologyAdded(id));
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
   if (name.startsWith('dcg:')) return ids.filter(id => !isDcgAdded(id));
+  if (name.startsWith('home-economics:')) return [...ids.filter(id => !homeEconomicsAdditionIds.has(id)), ...homeEconomicsAliasIds.filter(id => id.includes(name.endsWith(':higher') ? '-hl-' : '-ol-'))];
   if (name.startsWith('economics:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
     return [
@@ -2063,6 +2705,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
       ...economicsAliasIds.filter(id => id.includes(level)),
     ];
   }
+  if (name.startsWith('japanese:')) return [...ids.filter(id => !japaneseAdditionIds.has(id)), ...japaneseAliasIds.filter(id => id.includes(name.endsWith(':higher') ? '-hl-' : '-ol-'))];
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
   if (name.startsWith('spanish:')) return ids.filter(id => !isSpanishAdded(id));
   if (name.startsWith('german:')) return ids.filter(id => !isGermanAdded(id));
@@ -2074,6 +2717,10 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   if (name.startsWith('agricultural-science:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
     return [...ids.filter(id => !agriAdditionIds.has(id)), ...agriAliasIds.filter(id => id.includes(level))];
+  }
+  if (name.startsWith('physics:')) {
+    const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
+    return [...ids.filter(id => !isPhysicsAdded(id)), ...physicsAliasIds.filter(id => id.includes(level))];
   }
   if (name.startsWith('construction-studies:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -2109,12 +2756,18 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   return ids;
 };
 const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
-  name.startsWith('economics:') ? cards.filter(card => !economicsAdditionIds.has(card.id)).length
+  name === 'lcvp:common' ? cards.filter(card => !lcvpAdditionIds.has(card.id)).length
+    : name.startsWith('russian:') ? cards.filter(card => russianFrozen.has(card.id)).length
+    : name.startsWith('maths:') ? cards.filter(card => mathsFrozen.has(card.id)).length
+    : name.startsWith('japanese:') ? cards.filter(card => !japaneseAdditionIds.has(card.id)).length
+    : name.startsWith('home-economics:') ? cards.filter(card => !homeEconomicsAdditionIds.has(card.id)).length
+    : name.startsWith('economics:') ? cards.filter(card => !economicsAdditionIds.has(card.id)).length
     : name.startsWith('agricultural-science:') ? cards.filter(card => !agriAdditionIds.has(card.id)).length
     : name.startsWith('construction-studies:') ? cards.filter(card => !constructionAdditionIds.has(card.id)).length
     : name.startsWith('geography:') ? cards.filter(card => !geographyAdditionIds.has(card.id)).length
     : name.startsWith('english:') ? cards.filter(card => !englishAdditionIds.has(card.id)).length
     : name.startsWith('biology:') ? cards.filter(card => !isBiologyAdded(card.id)).length
+    : name.startsWith('physics:') ? cards.filter(card => !isPhysicsAdded(card.id)).length
     : name.startsWith('chemistry:') ? cards.filter(card => !chemistryAdded.has(card.id)).length
     : cards.length;
 const technologyAdditions = {
@@ -2131,6 +2784,22 @@ const peAdditions = {
 } as const;
 
 describe('Mark Bank card preservation', () => {
+  it('retains all 204 reviewed LCVP additions beside the unchanged original 314 identities', () => {
+    const added = LCVP_COMMON.filter(card => lcvpAdditionIds.has(card.id));
+    expect(added.map(card => card.id).sort()).toEqual([...LCVP_2015_ADDED_IDS, ...LCVP_2016_ADDED_IDS, ...LCVP_2017_ADDED_IDS, ...LCVP_2018_ADDED_IDS, ...LCVP_2019_ADDED_IDS, ...LCVP_2020_ADDED_IDS, ...LCVP_2021_ADDED_IDS, ...LCVP_2022_ADDED_IDS, ...LCVP_2023_ADDED_IDS, ...LCVP_2024_ADDED_IDS, ...LCVP_2025_ADDED_IDS, ...LCVP_2026_ADDED_IDS].sort());
+    expect(lcvpAdditionIds.size).toBe(204);
+    expect(LCVP_COMMON).toHaveLength(518);
+  });
+  it('retains reviewed Russian additions beside the original frozen identities', () => {
+    const additions = [...RUSSIAN_HIGHER, ...RUSSIAN_ORDINARY].filter(card => !russianFrozen.has(card.id));
+    expect(additions.map(card => card.id).sort()).toEqual([...russianAdditionIds].sort());
+  });
+  it('retains the reviewed Home Economics additions beside the frozen set', () => {
+    const added = [...HOME_EC_HIGHER, ...HOME_EC_ORDINARY].filter(card => homeEconomicsAdditionIds.has(card.id));
+    expect(added.map(card => card.id).sort()).toEqual([...homeEconomicsAdditionIds].sort());
+    expect(HOME_EC_HIGHER).toHaveLength(1026);
+    expect(HOME_EC_ORDINARY).toHaveLength(927);
+  });
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
     const frozen = frozenIds(name, cards);
     expect(frozen.length, `${name}: card count changed`).toBe(count);
@@ -2355,6 +3024,27 @@ describe('Mark Bank card preservation', () => {
       .toBe(true);
   });
 
+  it('pins the review pack 1 prototypes beside the frozen set', () => {
+    expect([...treatmentAdditionIds].sort()).toEqual([
+      'agr-2022-ol-a-q1', 'agr-2022-ol-b-q1', 'agr-2022-ol-c-q1', 'agr-2022-ol-d-q1', 'agr-2022-ol-q2-i',
+      'agr-2022-ol-q2-ii-a', 'agr-2022-ol-q2-ii-b', 'agr-2022-ol-q2-ii-c', 'agr-2022-ol-q2-ii-d', 'agr-2022-ol-q2-ii-e',
+      'agr-2022-ol-q2-ii-f', 'agr-2022-ol-q2-ii-g', 'agr-2022-ol-q2-ii-h', 'agr-2022-ol-q3-i', 'agr-2022-ol-q3-ii',
+      'agr-2022-ol-q3-iii', 'agr-2022-ol-q3-iv', 'agr-2022-ol-q3-v', 'agr-2022-ol-q3-vi', 'agr-2022-ol-q3-vii',
+      'agr-2022-ol-q3-viii',
+      'lat-2023-hl-a-q2-i', 'lat-2023-hl-a-q2-ii', 'lat-2023-hl-b-q2-i', 'lat-2023-hl-b-q2-ii',
+    ]);
+    expect([...treatmentAdditionIds].filter(id => id in CARD_ID_ALIASES)).toEqual([]);
+  });
+
+  it('pins the Music 2025 Higher prototype (review pack 1), a deck of its own', () => {
+    // 46 cards for 53 printed asks: 42 listening, Composing Section A's three,
+    // and one Listening elective card for its five asks (one shared band).
+    // Composing Section B's three asks are not carded: no card type takes
+    // their half mark per correct note (treatments lane README).
+    expect(MUSIC_HIGHER).toHaveLength(46);
+    expect(idHash(MUSIC_HIGHER.map(card => card.id))).toBe('2d7a41260efd6dc6e9c91822e02da297e675a9eba782445057e9c868d2dd46b2');
+  });
+
   it('protects the complete current bank', () => {
     // 10,495 before this session, plus sixteen subjects carded in six waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
@@ -2462,7 +3152,8 @@ describe('Mark Bank card preservation', () => {
         // Technology's 2010-2019 and DCG's 2010-2018 additions count on top of the bank the same way.
         : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
-        : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length : 0;
+        : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length
+        : name === 'latin:higher' || name === 'ancient-greek:ordinary' ? cards.filter(card => treatmentAdditionIds.has(card.id)).length : 0;
     const technologyAddedCount = [...TECHNOLOGY_HIGHER, ...TECHNOLOGY_ORDINARY]
       .filter(card => isTechnologyAdded(card.id)).length;
     const dcgAddedCount = [...DCG_HIGHER, ...DCG_ORDINARY].filter(card => isDcgAdded(card.id)).length;
@@ -2475,14 +3166,17 @@ describe('Mark Bank card preservation', () => {
       name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:')
         || name.startsWith('geography:') || name.startsWith('english:') || name.startsWith('biology:')
         || name.startsWith('chemistry:') || name.startsWith('history:')
+        || name.startsWith('maths:') || name.startsWith('physics:')
+        || name.startsWith('home-economics:') || name.startsWith('japanese:') || name.startsWith('lcvp:')
         ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(24_087 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(24_087 + frenchAdditionIds.size + artNet + russianAdditionIds.size);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
       .toBe(24_087 + frenchAdditionIds.size + businessAdditionIds.size + technologyAddedCount + dcgAddedCount
+        + russianAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
@@ -2491,7 +3185,13 @@ describe('Mark Bank card preservation', () => {
         + chemistryAdded.size - chemistryWithdrawnShipped.length
         + engineeringAdditionIds.size
         // History (2026-11-04): its 749 frozen cards gain the essay cards: + historyEssayIds.
-        + historyEssayIds.size + spanishAddedTotal + germanAddedTotal);
+        + historyEssayIds.size + spanishAddedTotal + germanAddedTotal
+        // Codex's reviewed Maths, Physics, Home Economics, Japanese and Link Modules (release 2026-11-18).
+        + mathsNet
+        + physicsAdditionIds.size - physicsAliasIds.length + homeEconomicsAdditionIds.size - homeEconomicsAliasIds.length
+        + japaneseAdditionIds.size - japaneseAliasIds.length + lcvpAdditionIds.size
+        // Review pack 1 prototypes: Latin 4 + Ancient Greek 21.
+        + treatmentAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -2807,7 +3507,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
-    const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
+    const liveIds = new Set([...decks.flatMap(([, cards]) => cards.map(card => card.id)), ...MATHS_FOUNDATION.map(card => card.id)]);
     /* 54 earlier aliases + 68 Art per-option cards (2026-10-12) + 36 Economics consolidations from the 2021-2025
      * physical review, each a frozen half of a jointly priced answer (or a
      * duplicate route) withdrawn onto the card that now carries its progress:
@@ -2867,6 +3567,14 @@ describe('Mark Bank card preservation', () => {
     const chemistryAuditAliases = chemistryWithdrawn.map(([id]) => id)
       .filter(id => !['chem-2023-ol-q10-a-iii-iv-fig', 'chem-2023-ol-q6-b-i-iv'].includes(id));
     expect(chemistryWithdrawn).toHaveLength(54);
+    // ...and the Physics review's withdrawals (phys- keys) of SHIPPED ids, each a
+    // printed task that is now one card, aliased onto that card.
+    const physicsWithdrawn = Object.values(
+      (physicsReview as unknown as { sittings: Record<string, { review?: { withdrawn?: Record<string, unknown> } }> })
+        .sittings).flatMap(sitting => Object.keys(sitting.review?.withdrawn ?? {}));
+    // A withdrawn id that never shipped (a figure twin the build dropped) carries no
+    // progress and has no alias; every alias is a withdrawn id.
+    for (const id of physicsAliasIds) expect(physicsWithdrawn, id).toContain(id);
     // ...and the Technology lane's one split (tech- keys): 2022 OL C2(d), shipped
     // as a single card whose row was the truth table welded to its two asks, now
     // carded as (i) and (ii) with the old id reading its progress from (i).
@@ -2879,7 +3587,8 @@ describe('Mark Bank card preservation', () => {
     expect(computerScienceAliasIds).toEqual(['cs-2021-ol-q15', 'cs-2021-ol-q16', 'cs-2022-hl-q14', 'cs-2022-ol-q16', 'cs-2023-ol-q13', 'cs-2024-ol-q16', 'cs-2025-ol-q13', 'cs-2025-ol-q14', 'cs-2025-ol-q15']);
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
       + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length
-      + chemistryAuditAliases.length + technologyAliasIds.length + computerScienceAliasIds.length);
+      + chemistryAuditAliases.length + technologyAliasIds.length + computerScienceAliasIds.length
+      + mathsNewAliases.size + physicsAliasIds.length + homeEconomicsAliasIds.length + japaneseAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -2937,9 +3646,11 @@ describe('Mark Bank card preservation', () => {
     // withdrew, now alias keys: net 0), and its audit aliased eighteen
     // pre-audit ids the base build never shipped (+18).
     // Technology is a new subject, outside this tally; its alias key is not
-    // one of these cards. Nor are Computer Science's (a new subject too).
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length - technologyAliasIds.length
-      - computerScienceAliasIds.length).toBe(9_768 + 18);
+    // one of these cards. Nor are Computer Science's (a new subject too), or
+    // Japanese's and the new Maths review aliases.
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES)
+      .filter(id => !id.startsWith('ja-') && (!mathsNewAliases.has(id) || mathsFrozen.has(id))).length
+      - technologyAliasIds.length - computerScienceAliasIds.length).toBe(9_768 + 18);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
@@ -3018,6 +3729,19 @@ describe('Mark Bank card preservation', () => {
     expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(1742);
     expect(BIO_HIGHER.filter(card => card.year === 2026)).toHaveLength(188);
     expect(BIO_ORDINARY.filter(card => card.year === 2026)).toHaveLength(188);
+  });
+
+  it('adds the reviewed Physics sittings on top of the frozen 2021-2025 set without replacing an id', () => {
+    // Every card id names its own sitting, which is what isPhysicsAdded reads.
+    expect(PHYS_HIGHER.every(card => card.id.startsWith(`phys-${card.year}-hl-`))).toBe(true);
+    expect(PHYS_ORDINARY.every(card => card.id.startsWith(`phys-${card.year}-ol-`))).toBe(true);
+    for (const id of physicsAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
+    // The live decks, pinned whole (re-pinned as each reviewed sitting is written).
+    expect(PHYS_HIGHER).toHaveLength(2189);
+    expect(idHash(PHYS_HIGHER.map(card => card.id))).toBe('df204c985f1823c6c7080443f4ea60207e1d94db01eeb8e860d682c54c910670');
+    expect(PHYS_ORDINARY).toHaveLength(1870);
+    expect(idHash(PHYS_ORDINARY.map(card => card.id))).toBe('db39ff637b225bf8ce6e9e7aa3c952759a9f1b945863ce090076ffd508c36130');
+    expect(physicsAdditionIds.size).toBe(2189 + 1870 - 570 - 563 + physicsAliasIds.length);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
@@ -3191,5 +3915,24 @@ describe('Mark Bank card preservation', () => {
     for (const id of routes) expect(CARD_ID_ALIASES[id]).toBe('art-2025-ol-q4-a');
     expect(idHash(frozen.filter(id => !routes.has(id))))
       .toBe('e5403f6e685e0133ad94ef321f97a77f96127c2ee3570395e00662d7719ddbd5');
+  });
+});
+
+
+describe('Maths launch integration preservation', () => {
+  const live = [...MATHS_HIGHER, ...MATHS_ORDINARY, ...MATHS_FOUNDATION];
+  const ids = new Set(live.map(c => c.id));
+  it('retains every launched identity or its directly reviewed successor', () => {
+    for (const id of mathsFrozen) expect(ids.has(id) || ids.has(CARD_ID_ALIASES[id]), id).toBe(true);
+    expect(mathsFrozen.size).toBe(854);
+  });
+  it('consolidates only the 218 recorded choice duplicates and preserves their progress', () => {
+    expect(Object.keys(mathsLaunchReview.choiceAliases)).toHaveLength(218);
+    for (const g of mathsChoicePolicy.groups) {
+      expect(g.legacyIds.filter(id => ids.has(id))).toEqual([g.canonicalId]);
+      for (const id of g.legacyIds.filter(id => id !== g.canonicalId)) expect(CARD_ID_ALIASES[id]).toBe(g.canonicalId);
+    }
+    for (const id of mathsNewAliases) expect(ids.has(CARD_ID_ALIASES[id]), id).toBe(true);
+    expect(MATHS_FOUNDATION).toHaveLength(1137);
   });
 });

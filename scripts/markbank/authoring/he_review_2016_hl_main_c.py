@@ -1,0 +1,64 @@
+#!/usr/bin/env python3
+"""2016 Higher electives: separately priced tasks and complete source-only guidance."""
+from copy import deepcopy
+from he_review_2016_hl_main import *
+def build():
+ d=documents();p={n:re.sub(r'(\d)\.\s+\(([abc])\)',r'\1.(\2)',text(d['paper'],n+8)) for n in [1,2,3]};s={n:text(d['scheme'],n) for n in range(18,26)};cards=[]
+ def part(n,letter):
+  v=select(p[n],f'{n}.({letter})',f'{n}.({chr(ord(letter)+1)})' if f'{n}.({chr(ord(letter)+1)})' in p[n] else None)
+  return re.sub(r'\s+(?:and|or)\s*$','',v).strip()
+ def prompt(n,letter,roman):
+  v=part(n,letter)
+  if roman:v=select(v,f'({roman})');v=re.split(r'\((?:i|ii|iii|iv)\)',v,1)[0]
+  return re.sub(r'\s*\(\d+\)\s*$','',v).strip()
+ def add(n,letter,roman,topic,marks,rows,notation,suffix='',**extra):
+  v=part(n,letter);stem=v.split('(i)',1)[0].strip() if roman else ''
+  c=card(f'sc-q{n}{letter}{roman or ""}'+('-'+suffix if suffix else ''),'C',f'E{n} Q{n}({letter})'+(f'({roman})' if roman else '')+(' — '+suffix if suffix else ''),topic,prompt(n,letter,roman),stem,marks,rows,n+8,notation,**extra);cards.append(c);return c
+ def guide(page,token,end=None,include=False):return select(s[page],token,end,include)
+ def judged(n,letter,roman,topic,count,per,label,guidance,**extra):return add(n,letter,roman,topic,count*per,[criterion('points',label,count,[0,per],'Complete original source guidance: '+guidance)],f'{count} points × {per}',**extra)
+ def stripjoin(v):return re.sub(r'\s+(?:and|or)\s*$','',v).strip()
+ full=guide(18,'(2 references to location, 2 references to house style, plus 2 others)','(ii)');location,style=named(full,['Location:','House style:'])
+ add(1,'a','i','3-3',24,[criterion('location','location',2,[0,4],location),criterion('style','house style',2,[0,4],style),criterion('other','2 others',2,[0,4],'Two ADDITIONAL points from either required heading. '+full)],'Location2×4 + house style2×4 + two others×4')
+ full=guide(18,'3 points @ 4 marks each, 1 point @ 2 marks','(iii)');add(1,'a','ii','3-3',14,[criterion('procedures','procedures',3,[0,4],full),criterion('additional','planning permission',1,[0,2],'One ADDITIONAL procedure, at the distinct two-mark tariff printed by the scheme. '+full)],'Three procedures×4 + one additional procedure2')
+ heads=['People with disabilities:','Homeless people:'];add(1,'a','iii','3-3',12,[criterion(f'group-{i}',head.rstrip(':'),2,[0,3],stripjoin(body)) for i,(head,body) in enumerate(zip(heads,named(guide(18,'(2 references to each)'),heads)),1)],'Two required groups×two points×3')
+ judged(1,'b','i','3-6',3,4,'options',guide(19,'3 points @ 4 marks each','(ii)'))
+ types=guide(19,'Type:','Scientific principle:');models=guide(19,'Scientific principle:','Devices for thermal comfort:');devices=stripjoin(guide(19,'Devices for thermal comfort:'));names=['Wet system/small bore system/indirect system:','Dry system/under floor heating/storage heating:','Solar heating:'];variants=[]
+ for i,(name,detail) in enumerate(zip(names,named(models,names)),1):
+  variants.append(dict(id=f'system-{i}',label=name.rstrip(':'),rows=[point('type',name.rstrip(':'),3),criterion('principle','underlying principle',3,[0,3],'Three principles for this SAME selected heating system. '+detail),criterion('devices','devices',2,[0,3],'Two devices suitable for this SAME heating system. The source gives a name only for Apps; no additional explanation is invented. '+devices)]))
+ variants.append(dict(id='another-system',label='Another valid heating system',rows=[criterion('type','type of heating system',1,[0,3],'Choose ONE system consistently. Complete original type pool: '+types),criterion('principle','underlying principle',3,[0,3],'Three principles matching the SAME system. The source supplies worked accounts only for wet, dry and solar systems; other named systems have no additional worked model. Original complete accounts: '+models),criterion('devices','devices',2,[0,3],'Two devices applicable to the SAME selected system. Apps is named without a model description. '+devices)]))
+ add(1,'b','ii','3-6',18,deepcopy(variants[0]['rows']),'System3 + principle3×3 + devices2×3',answerVariants=variants)
+ c=judged(1,'c','i','3-4',3,3,'principles',guide(20,'3 principles @ 3 marks each','• name'),suffix='principles');c['questionText']=select(prompt(1,'c','i'),'outline the principles','• name',True)
+ full=guide(20,'Type:','(ii)');names=['Central lights:','Wall brackets:','Free standing lamps:','Ceiling lights:','Novelty lighting:'];variants=[]
+ for i,(name,detail) in enumerate(zip(names,named(full,names)),1):
+  variants.append(dict(id=f'light-{i}',label=name.rstrip(':'),rows=[point('name',name.rstrip(':'),2),criterion('description','Description',1,[0,3],'Describe the SAME lighting type for the home office/study. The original guidance gives these examples: '+detail)]))
+ variants.append(dict(id='another-light',label='Another valid lighting type',rows=[criterion('name','Name',1,[0,2],'Choose ONE type suitable for the home office/study; all five original model families remain available.'),criterion('description','Description',1,[0,3],'Describe the SAME selected type. No additional source model is printed.')]))
+ c=add(1,'c','i','3-4',5,deepcopy(variants[0]['rows']),'Name2 + description3',suffix='profile',answerVariants=variants);c['questionText']=select(prompt(1,'c','i'),'name and describe',include=True)
+ full=guide(20,'(1 reference to functional, 1 reference to aesthetic, plus 2 others)');functional,aesthetic=named(full,['Functional:','Aesthetic:']);add(1,'c','ii','3-4',16,[criterion('functional','functional',1,[0,4],functional),criterion('aesthetic','aesthetic',1,[0,4],aesthetic),criterion('other','2 others',2,[0,4],'Two ADDITIONAL points from either required heading. '+full)],'Functional4 + aesthetic4 + two others×4')
+ c=judged(2,'a','i','3-8',3,3,'fashion trends',guide(21,'3 points @ 3 marks each','(ii)'));c['rows'][0]['contextNote']='Evaluate MALE OR FEMALE fashion in the historical decade asked about by the 2016 paper. The original shared pool remains complete. '+c['rows'][0]['contextNote']
+ add(2,'a','ii','3-8',9,[criterion('sketch','Sketch',1,[0,5],'Sketch the SAME outfit incorporating one current fashion trend in the historical 2016 task. The original scheme gives five marks without a worked sketch or smaller allocations.'),criterion('design','Design',1,[0,4],'Design that SAME outfit. The original scheme gives four marks without a worked design or smaller allocations.')],'Sketch5 + design4')
+ full=stripjoin(guide(21,'Fashion trends:','2.(b)',True));trend,suitability=named(full,['Fashion trends:','Suitable for purpose:']);c=add(2,'a','iii','3-8',7,[criterion('trend','fashion trend',1,[0,4],'Refer to the SAME outfit sketched/designed in part(ii). '+trend),criterion('suitability','suitability for purpose',1,[0,3],'Explain suitability of the SAME outfit. The original only gives the following general criteria, not an outfit-specific model: '+suitability)],'Fashion trend4 + suitability3');c['stem']+='\n\n'+prompt(2,'a','ii')
+ full=guide(21,'Regenerated:',include=True);regenerated,synthetic=named(full,['Regenerated:','Synthetic:']);add(2,'b','i','3-7',6,[criterion('difference','Differentiate',1,[0,4],'Differentiate BOTH fibre categories in one four-mark account. No two-mark split is printed. '+full),menu('regenerated','Regenerated',1,1,[v.strip() for v in select(regenerated,'e.g.',';').split(',')],'ONE example of regenerated fibre.'),menu('synthetic','Synthetic',1,1,chosen(synthetic,['nylon','polyester','acrylic','PVC']),'ONE example of synthetic fibre.')],'Difference4 + one example of each category×1')
+ for suffix,marks,start,end in [('colour',5,'Colour application:','Design application:'),('design',4,'Design application:','2.(c)')]:
+  full=stripjoin(guide(22,start,end,True));label='colour application' if suffix=='colour' else 'design application'
+  c=add(2,'b','ii','3-7',marks,[criterion('method',label,1,[0,marks],'Name AND describe ONE method. This source allocation covers both together; no separate name/description tariff is printed. The original lists method names only, with no worked descriptions: '+full)],f'One named/described method{marks}',suffix=suffix)
+  original=prompt(2,'b','ii');c['questionText']='Name and describe '+select(original,'one method of '+label,'•' if suffix=='colour' else None,True)
+ full=guide(22,'Designers:','(ii)',True);names=semis(select(full,'Designers:','Milliners:'))+semis(select(full,'Milliners:'));add(2,'c','i','3-8',9,[menu('name','Name',1,3,names,'Choose ONE milliner OR fashion designer. All original names remain available; do not mix different people.'),criterion('work','work',2,[0,3],'Two points about the SAME person. The original scheme gives names only; no model account of anyone’s work is printed. Complete original named pool: '+full)],'Name3 + work2×3')
+ judged(2,'c','ii','3-8',2,3,'popularity of accessories',select(select(select(s[22],'2.(c)'),'(ii)'),'2 points @ 3 marks each'))
+ judged(3,'a','i','3-9',2,4,'Poverty',select(select(s[23],'(i)','(ii)'),'2 points @ 4 marks each'))
+ heads=['Relative poverty:','Poverty line:','Cycle of poverty:'];add(3,'a','ii','3-9',12,[criterion(f'term-{i}',head.rstrip(':'),1,[0,4],body) for i,(head,body) in enumerate(zip(heads,named(guide(23,'3 points @ 4 marks each','(iii)'),heads)),1)],'Three required terms×4')
+ full=guide(23,'(2 reference to social, 2 references to economic, plus 1 other)','(iv)');social,economic=named(full,['Social:','Economic:']);add(3,'a','iii','3-9',20,[criterion('social','social',2,[0,4],social),criterion('economic','economic',2,[0,4],economic),criterion('other','1 other',1,[0,4],'One ADDITIONAL point from either required heading. '+full)],'Social2×4 + economic2×4 + one other4')
+ full=stripjoin(guide(23,'Name: 2 marks, Details: 2 points @ 4 marks each'));names=chosen(full,['Society of St Vincent de Paul','Focus Ireland','Simon Community']);add(3,'a','iv','3-9',10,[menu('name','Name',1,2,names,'Choose ONE voluntary organisation consistently.'),criterion('details','Details',2,[0,4],'Two details about the SAME organisation. The original supplies only three names and no detailed model account. Complete original named pool: '+full)],'Name2 + details2×4')
+ heads=['Social:','Emotional:','Intellectual:'];add(3,'b','i','3-10',18,[criterion(f'development-{i}',head.rstrip(':'),1,[0,6],body) for i,(head,body) in enumerate(zip(heads,named(guide(24,'(1 reference to social, emotional and intellectual)','(ii)'),heads)),1)],'Three required development headings×6')
+ full=stripjoin(guide(24,'Name: 4 marks, Details: 2 points @ 4 marks each','3.(c)'));names=['The Early Start Programme:','The Early Childhood Care and Education (ECCE) Scheme:'];variants=[]
+ for i,(name,detail) in enumerate(zip(names,named(full,names)),1):
+  variants.append(dict(id=f'initiative-{i}',label=name.rstrip(':'),rows=[point('name',name.rstrip(':'),4),criterion('details','Details',2,[0,4],'Use the SAME initiative. Original historical 2016 eligibility, timetable and conditions retained. '+detail)]))
+ variants.append(dict(id='another-initiative',label='Another valid statutory pre-school initiative',rows=[criterion('name','Name',1,[0,4],'Choose ONE initiative consistently; both original historical models remain available.'),criterion('details','Details',2,[0,4],'Two details of the SAME initiative. No additional model is printed.')]))
+ add(3,'b','ii','3-10',12,deepcopy(variants[0]['rows']),'Name4 + details2×4',answerVariants=variants)
+ c=judged(3,'c','i','3-11',3,5,'gender roles',guide(24,'3 points @ 5 marks each'));c['rows'][0]['contextNote']='Cover BOTH changes and effects on family members within the THREE points; no separate quota is printed. '+c['rows'][0]['contextNote']
+ full=guide(25,'3 points @ 5 marks each');overload,conflict=named(full,['role overload','role conflict']);add(3,'c','ii','3-11',15,[criterion('overload','role overload',1,[0,5],overload),criterion('conflict','role conflict',1,[0,5],conflict),criterion('other','dual earner families',1,[0,5],'One ADDITIONAL point from either required heading; three points in total, no fixed two-per-heading quota. Complete original guidance: '+full)],'Role overload5 + role conflict5 + one other5')
+ assert len(cards)==24 and sum(c['totalMarks'] for c in cards)==275,(len(cards),sum(c['totalMarks'] for c in cards))
+ return cards
+if __name__=='__main__':
+ cards=build()
+ if '--write' in sys.argv:write_section('C',cards,dict(tasks=24,marks=275,selectionDecisions='Lighting principles9/profile5 and colour5/design4 split at separate published boundaries. Planning14 retains asymmetric 3×4+2. Heating/lighting/initiative models coherent; dependent outfit context and every named designer/milliner remain. Names-only and drawing model gaps visible in rendered row guidance. Flexible quotas retained.'))
+ else:print(json.dumps(cards,ensure_ascii=False,indent=2))

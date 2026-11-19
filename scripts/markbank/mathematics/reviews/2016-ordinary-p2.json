@@ -1,0 +1,1192 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2016,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "1b2a8e18961715e01e15d7221d346ac1bc516f54b36d0423d15b450cf815783a",
+  "schemeSha256": "646321674a62752356d9a6fd253ea56e667334201c6405e1cf47e306e353e90a",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 20 question-paper pages and PDF pages 21–44 of the combined Ordinary Level scheme (the Paper 2 title page 21, the scale table on page 22 (misheaded “Paper 1”), the summary of mark allocations on page 23, every Paper 2 model solution and marking note on pages 24–40, the Irish-language bonus-marks page 41 and the blank back pages). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 55,
+    "8": 50,
+    "9": 45
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    22,
+    23
+  ],
+  "sourceNotes": [
+    "The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 55 marks, Q8 50 marks, Q9 45 marks). Every question is retained.",
+    "39 independently marked units, matching the printed summary of allocations on scheme page 23. Q6(a)(i)+(ii) share one printed scale and are one task.",
+    "Paper 2 bands are the ladders printed beside each part, which differ from Paper 1’s: 5A 0,5; 5B 0,1,5; 5C 0,1,2,5; 5D 0,2,3,4,5; 10C 0,2,4,10; 15B 0,4,15; 15C 0,3,5,15; 15D 0,2,4,8,15; 20C 0,5,10,20; 20D 0,5,10,15,20. The scale table on page 22 prints the same ladders.",
+    "This paper had no authored cards before this review; all 39 units are new. Marking points are lifted line by line from the scheme (read through the glyph repair map) and labelled with the part of the scheme they come from; the scheme’s bullets are not reproduced. Stacked fractions are written a/b. The Q4(c) bands are labelled by the method the scheme prints them under (graphical, numerical, algebraic).",
+    "Seventeen parts carry the SEC’s own print of their scheme row (model solution and every credit band), cropped from the scheme PDF and shown only after the reveal, because their model solution is a diagram, graph, table, construction or chart, or a band could not be quoted (mixed numbers, an italic Q and an italic h the text layer mangles): Q1(a)(i), Q1(a)(ii), Q1(b), Q3(b), Q4(b), Q4(c), Q5(b), Q5(c), Q6(a)(i)+(ii), Q8(b)(i), Q8(b)(ii), Q8(c)(i), Q8(c)(ii), Q8(d), Q9(a)(ii), Q9(d) and Q9(e).",
+    "The question booklet is LC003GLP200EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 1. Scheme page references are PDF positions (printed page number + 2); question-paper PDF positions match the printed page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2016-ol-p2-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A survey of 168 people was carried out. Participants were asked whether they owned a cat or a dog. Some of the results are recorded in the Venn diagram below. Diagram labels: U, Cats, Dogs, 64, 48.",
+      "questionText": "Of those surveyed, 19 people did not own either a cat or a dog. Complete the diagram."
+    },
+    {
+      "id": "maths-2016-ol-p2-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A survey of 168 people was carried out. Participants were asked whether they owned a cat or a dog. Some of the results are recorded in the Venn diagram below. Diagram labels: U, Cats, Dogs, 64, 48.",
+      "questionText": "A person is chosen at random from those surveyed. What is the probability that the person owned both a cat and a dog?"
+    },
+    {
+      "id": "maths-2016-ol-p2-q1-a-iii",
+      "printedParts": [
+        "Q1(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability",
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A survey of 168 people was carried out. Participants were asked whether they owned a cat or a dog. Some of the results are recorded in the Venn diagram below. Diagram labels: U, Cats, Dogs, 64, 48. Part (a)(i): Of those surveyed, 19 people did not own either a cat or a dog. Complete the diagram.",
+      "questionText": "What percentage of the people surveyed owned one animal only? Give your answer correct to one decimal place."
+    },
+    {
+      "id": "maths-2016-ol-p2-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability",
+        "mathematics-ordinary-counting"
+      ],
+      "questionText": "Mandy wants to buy a ticket to the theatre. She can choose a ticket in the Balcony (B) or the Stalls (S). Mandy can go on Monday (M), Wednesday (W) or Friday (F). For an extra charge she can choose a VIP ticket (V) where she will meet the band or she can choose the show only (O). Complete the tree diagram below, and hence or otherwise, find the probability that Mandy chooses a VIP ticket on a Wednesday. You may assume that all choices are equally likely."
+    },
+    {
+      "id": "maths-2016-ol-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry",
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Find the area of the given triangle. Diagram labels: 8 cm, 30°, 12 cm."
+    },
+    {
+      "id": "maths-2016-ol-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "questionText": "A triangle has sides of length 3 cm, 5 cm, and 7 cm. Find the size of the largest angle in the triangle."
+    },
+    {
+      "id": "maths-2016-ol-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle c has centre (2, –3) and a radius of 4 cm.",
+      "questionText": "Write down the equation of c."
+    },
+    {
+      "id": "maths-2016-ol-p2-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle c has centre (2, –3) and a radius of 4 cm.",
+      "questionText": "Draw the circle c on the grid opposite. Each unit on the co-ordinate grid is 1 cm."
+    },
+    {
+      "id": "maths-2016-ol-p2-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle c has centre (2, –3) and a radius of 4 cm.",
+      "questionText": "Verify, using algebra, that the point (3, 1) is outside of c."
+    },
+    {
+      "id": "maths-2016-ol-p2-q3-d",
+      "printedParts": [
+        "Q3(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The circle c has centre (2, –3) and a radius of 4 cm.",
+      "questionText": "Find the area of the smallest four-sided figure that will fit around the circle c."
+    },
+    {
+      "id": "maths-2016-ol-p2-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        8,
+        15
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The line l contains the points A(4, 5) and B(2, 0). Find the equation of l. Give your answer in the form ax + by + c = 0 where a, b, and c ∈ ℤ."
+    },
+    {
+      "id": "maths-2016-ol-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Draw the line k: x + 2y = 8 on the axes below."
+    },
+    {
+      "id": "maths-2016-ol-p2-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "Part (a): The line l contains the points A(4, 5) and B(2, 0). Find the equation of l. Give your answer in the form ax + by + c = 0 where a, b, and c ∈ ℤ. Part (b): Draw the line k: x + 2y = 8 on the axes below.",
+      "questionText": "Use a graphic, numeric or algebraic method to find the co-ordinates of l ∩ k."
+    },
+    {
+      "id": "maths-2016-ol-p2-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        15
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The waiting times, in minutes, for 16 patients at a dentist’s surgery are recorded for a particular week (Week 1) on the following stem and leaf plot. Week 1: 0 | 5 8; 1 | 2 2 2 3; 2 | 0 4 5 7; 3 | 0 1 2 4 4; 4 | 4. Key: 1|3 = 13 minutes.",
+      "questionText": "Find the mode and the median of the data."
+    },
+    {
+      "id": "maths-2016-ol-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The waiting times, in minutes, for 16 patients at a dentist’s surgery are recorded for a particular week (Week 1) on the following stem and leaf plot. Week 1: 0 | 5 8; 1 | 2 2 2 3; 2 | 0 4 5 7; 3 | 0 1 2 4 4; 4 | 4. Key: 1|3 = 13 minutes.",
+      "questionText": "Find the mean waiting time for Week 1, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2016-ol-p2-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The waiting times, in minutes, for 16 patients at a dentist’s surgery are recorded for a particular week (Week 1) on the following stem and leaf plot. Week 1: 0 | 5 8; 1 | 2 2 2 3; 2 | 0 4 5 7; 3 | 0 1 2 4 4; 4 | 4. Key: 1|3 = 13 minutes.",
+      "questionText": "The waiting times were recorded again the following week. The results were: 27, 23, 6, 15, 18, 29, 16, 17, 15, 18, 40, 32, 16, 12, 28, 9. Show these results on the plot above (under Week 2), creating a back-to-back stem and leaf plot to display the data."
+    },
+    {
+      "id": "maths-2016-ol-p2-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)",
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions",
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "(i) Construct a triangle ABC, where |AB| = 7 cm, |∠BAC| = 50°, and |AC| = 4·5 cm. (ii) Measure the length of [BC] and hence find the sum of the lengths of the sides [AC] and [BC], correct to one decimal place. |AC| = 4·5 cm; |BC| = _; Sum = _."
+    },
+    {
+      "id": "maths-2016-ol-p2-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        1,
+        5
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions",
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "State which one of the following triangles can not be constructed. Give a reason to support your answer. Table: Triangle 1: Sides of lengths (cm) 3·2, 2·9, 5·4. Triangle 2: Sides of lengths (cm) 6, 7, 15."
+    },
+    {
+      "id": "maths-2016-ol-p2-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        15
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "The lengths of the sides of a right-angled triangle are 5, x, and x + 1 as shown. Use the Theorem of Pythagoras to find the value of x."
+    },
+    {
+      "id": "maths-2016-ol-p2-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15B",
+      "permittedMarks": [
+        0,
+        4,
+        15
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes.",
+      "questionText": "The Atomium is modelled on an iron atom that has been magnified 165 billion times. Given that a billion is a thousand million, write 165 billion in the form a × 10ⁿ, where n ∈ ℤ, and 1 ≤ a < 10."
+    },
+    {
+      "id": "maths-2016-ol-p2-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        1,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Part (b): The diameter of each sphere in the Atomium is 18 metres.",
+      "questionText": "Find the radius of each sphere."
+    },
+    {
+      "id": "maths-2016-ol-p2-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Part (b): The diameter of each sphere in the Atomium is 18 metres.",
+      "questionText": "Find the volume of each sphere, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2016-ol-p2-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Part (b): The diameter of each sphere in the Atomium is 18 metres.",
+      "questionText": "Find the combined surface area of all 9 spheres in the Atomium, correct to the nearest m²."
+    },
+    {
+      "id": "maths-2016-ol-p2-q7-d-i",
+      "printedParts": [
+        "Q7(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Part (d): Each of the 8 cylindrical pipes extending from the centre sphere has a radius of 1·65 m and a length of 23 m.",
+      "questionText": "Find the sum of the curved surface areas of all 8 pipes, correct to the nearest m²."
+    },
+    {
+      "id": "maths-2016-ol-p2-q7-d-ii",
+      "printedParts": [
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        15
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Part (d): Each of the 8 cylindrical pipes extending from the centre sphere has a radius of 1·65 m and a length of 23 m.",
+      "questionText": "The other 12 cylindrical pipes connect the outer spheres to each other. Each pipe has a radius of 1·45 m. All 12 pipes are equal in length. The sum of the curved surface areas of the 12 pipes is 3170 m². Find the length of one pipe. Give your answer correct to the nearest metre."
+    },
+    {
+      "id": "maths-2016-ol-p2-q7-d-iii",
+      "printedParts": [
+        "Q7(d)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Part (d): Each of the 8 cylindrical pipes extending from the centre sphere has a radius of 1·65 m and a length of 23 m. Part (c): Find the combined surface area of all 9 spheres in the Atomium, correct to the nearest m². Part (d)(i): Find the sum of the curved surface areas of all 8 pipes, correct to the nearest m². Part (d)(ii): The other 12 cylindrical pipes connect the outer spheres to each other. Each pipe has a radius of 1·45 m. All 12 pipes are equal in length. The sum of the curved surface areas of the 12 pipes is 3170 m². Find the length of one pipe. Give your answer correct to the nearest metre.",
+      "questionText": "The curved surfaces of the 20 pipes and 9 spheres are covered in stainless steel. Stainless steel costs €70 per square metre. Use the areas you have calculated or have been given above to find the approximate cost of the stainless steel required to resurface the Atomium."
+    },
+    {
+      "id": "maths-2016-ol-p2-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        1,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The following table shows some of the data gathered by a company on average water usage in homes. Table: Activity, Percentage used, Angle (Degrees). WC flushing, 30%, _; Personal Washing – Baths and Taps, 21%, _; Personal Washing – Showers, 12%, _; Clothes Washing, 13%, 46·8°; Other, _, _.",
+      "questionText": "Find the percentage used for the ‘Other’ activity, and write it in the table."
+    },
+    {
+      "id": "maths-2016-ol-p2-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The following table shows some of the data gathered by a company on average water usage in homes. Table: Activity, Percentage used, Angle (Degrees). WC flushing, 30%, _; Personal Washing – Baths and Taps, 21%, _; Personal Washing – Showers, 12%, _; Clothes Washing, 13%, 46·8°; Other, _, _. Part (b): A pie chart representing the data is to be drawn.",
+      "questionText": "The size of the angle representing ‘Clothes Washing’ on the pie chart is 46·8°. Complete the table above to show the remaining angles in the pie chart."
+    },
+    {
+      "id": "maths-2016-ol-p2-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The following table shows some of the data gathered by a company on average water usage in homes. Table: Activity, Percentage used, Angle (Degrees). WC flushing, 30%, _; Personal Washing – Baths and Taps, 21%, _; Personal Washing – Showers, 12%, _; Clothes Washing, 13%, 46·8°; Other, _, _. Part (b): A pie chart representing the data is to be drawn. Part (b)(i): The size of the angle representing ‘Clothes Washing’ on the pie chart is 46·8°. Complete the table above to show the remaining angles in the pie chart.",
+      "questionText": "Draw a pie chart to represent the data. Label the sector corresponding to each activity and write the size of the angle in each sector."
+    },
+    {
+      "id": "maths-2016-ol-p2-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "John compiled a table showing the amount of water used in his own household over the course of a week. He recorded the number of litres required for each activity and the number of times each activity was undertaken. The data are shown in the table below. Table: John’s weekly household water usage. Activity, Water Required per activity, Frequency, Number of litres used. One Bath, 80 litres, 3 baths, 240; One Shower, 125 litres, 20 showers, _; Brushing Teeth with Tap Running, 6 litres per minute, 32 minutes, _; One WC Flush, 6 litres, 60 flushes, _; One Use of Washing Machine, 45 litres, 8 uses, _; One Use of Dishwasher, 20 litres, 7 uses, _; Washing One Car with a Bucket, 10 litres, 1 wash, _; Hosepipe, 9 litres per minute, 15 minutes, _. Total number of litres used: _.",
+      "questionText": "Complete the table to show the number of litres used for the various activities and the total number of litres used in the week."
+    },
+    {
+      "id": "maths-2016-ol-p2-q8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems",
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "John compiled a table showing the amount of water used in his own household over the course of a week. He recorded the number of litres required for each activity and the number of times each activity was undertaken. The data are shown in the table below. Table: John’s weekly household water usage. Activity, Water Required per activity, Frequency, Number of litres used. One Bath, 80 litres, 3 baths, 240; One Shower, 125 litres, 20 showers, _; Brushing Teeth with Tap Running, 6 litres per minute, 32 minutes, _; One WC Flush, 6 litres, 60 flushes, _; One Use of Washing Machine, 45 litres, 8 uses, _; One Use of Dishwasher, 20 litres, 7 uses, _; Washing One Car with a Bucket, 10 litres, 1 wash, _; Hosepipe, 9 litres per minute, 15 minutes, _. Total number of litres used: _.",
+      "questionText": "If water were charged at €1·85 per 1000 litres, find what John’s household would pay for the water used in one year if the household uses the same amount of water each week."
+    },
+    {
+      "id": "maths-2016-ol-p2-q8-c-iii",
+      "printedParts": [
+        "Q8(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "John compiled a table showing the amount of water used in his own household over the course of a week. He recorded the number of litres required for each activity and the number of times each activity was undertaken. The data are shown in the table below. Table: John’s weekly household water usage. Activity, Water Required per activity, Frequency, Number of litres used. One Bath, 80 litres, 3 baths, 240; One Shower, 125 litres, 20 showers, _; Brushing Teeth with Tap Running, 6 litres per minute, 32 minutes, _; One WC Flush, 6 litres, 60 flushes, _; One Use of Washing Machine, 45 litres, 8 uses, _; One Use of Dishwasher, 20 litres, 7 uses, _; Washing One Car with a Bucket, 10 litres, 1 wash, _; Hosepipe, 9 litres per minute, 15 minutes, _. Total number of litres used: _. Part (c)(ii): If water were charged at €1·85 per 1000 litres, find what John’s household would pay for the water used in one year if the household uses the same amount of water each week.",
+      "questionText": "Find John’s total bill for this water if VAT were to be included at a rate of 13·5%."
+    },
+    {
+      "id": "maths-2016-ol-p2-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 20,
+      "scale": "20C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        20
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths",
+        "mathematics-ordinary-number-systems"
+      ],
+      "questionText": "John would like to reduce his water bill to €260 per year. If water were charged at €1·85 plus VAT at 13·5% per 1000 litres, find the number of litres of water he could purchase for €260."
+    },
+    {
+      "id": "maths-2016-ol-p2-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        1,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below.",
+      "questionText": "Write down the co-ordinates of the point F. F = ( , )"
+    },
+    {
+      "id": "maths-2016-ol-p2-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        1,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below.",
+      "questionText": "A barn is 5 units directly North of the farmhouse. Plot the point representing the position of the barn on the diagram. Label this point B."
+    },
+    {
+      "id": "maths-2016-ol-p2-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. Part (a)(ii): A barn is 5 units directly North of the farmhouse. Plot the point representing the position of the barn on the diagram. Label this point B.",
+      "questionText": "Joe's quad bike is marked with the point Q on the diagram. Find the distance from the barn (B) to the quad (Q). Give your answer correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2016-ol-p2-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        1,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line",
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. Part (a)(ii): A barn is 5 units directly North of the farmhouse. Plot the point representing the position of the barn on the diagram. Label this point B.",
+      "questionText": "Joe's tractor is at the point T, where FBQT is a parallelogram. Plot T on the diagram and write the co-ordinates of T in the space below. T = ( , )"
+    },
+    {
+      "id": "maths-2016-ol-p2-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. Part (c): Joe's tractor is at the point T, where FBQT is a parallelogram. Plot T on the diagram and write the co-ordinates of T in the space below. T = ( , )",
+      "questionText": "Joe wants to plough the land enclosed by the parallelogram FBQT. Find the area of this parallelogram in square units."
+    },
+    {
+      "id": "maths-2016-ol-p2-q9-e",
+      "printedParts": [
+        "Q9(e)"
+      ],
+      "totalMarks": 20,
+      "scale": "20C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        20
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. Part (c): Joe's tractor is at the point T, where FBQT is a parallelogram. Plot T on the diagram and write the co-ordinates of T in the space below. T = ( , )",
+      "questionText": "Given that |∠QFB| = 45°, use trigonometric methods to find |∠BQF|. Give your answer in degrees correct to one decimal place."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        10
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        3
+      ],
+      "wording": "She can choose … hence or otherwise",
+      "classification": "mathematical-context",
+      "reason": "The choices are the outcomes of the probability experiment the task models, not a choice between printed prompts; “hence or otherwise” offers alternative methods for the same task."
+    },
+    {
+      "pages": [
+        8
+      ],
+      "wording": "State which one of the following triangles can not be constructed",
+      "classification": "mathematical-context",
+      "reason": "Identifying the impossible triangle is the required task itself; both triangles are part of one prompt."
+    },
+    {
+      "pages": [
+        3
+      ],
+      "wording": "did not own either a cat or a dog",
+      "classification": "mathematical-context",
+      "reason": "“Either a cat or a dog” describes the survey data in a required task, not a choice between printed prompts."
+    },
+    {
+      "pages": [
+        10
+      ],
+      "wording": "one of Belgium's most famous landmarks … two types of cylindrical pipes",
+      "classification": "mathematical-context",
+      "reason": "Both pipe types are measured in required tasks; there is no printed choice of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "2:48a21cd75db7f791": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "3:d525107f4cea3e33": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "3:ce089dd6a9c84375": {
+      "classification": "mathematical-context",
+      "reason": "“Either a cat or a dog” describes the survey data in a required task, not a choice between printed prompts."
+    },
+    "3:5c8bffb09034d05f": {
+      "classification": "mathematical-context",
+      "reason": "The choices are the outcomes of the probability experiment the task models, not a choice between printed prompts; “hence or otherwise” offers alternative methods for the same task."
+    },
+    "3:4575f3eae36a697f": {
+      "classification": "mathematical-context",
+      "reason": "The choices are the outcomes of the probability experiment the task models, not a choice between printed prompts; “hence or otherwise” offers alternative methods for the same task."
+    },
+    "3:4a3a5b28702698bd": {
+      "classification": "mathematical-context",
+      "reason": "The choices are the outcomes of the probability experiment the task models, not a choice between printed prompts; “hence or otherwise” offers alternative methods for the same task."
+    },
+    "3:ee7d26aa8104abab": {
+      "classification": "mathematical-context",
+      "reason": "The choices are the outcomes of the probability experiment the task models, not a choice between printed prompts; “hence or otherwise” offers alternative methods for the same task."
+    },
+    "3:c12b076e76dbd1e7": {
+      "classification": "mathematical-context",
+      "reason": "The choices are the outcomes of the probability experiment the task models, not a choice between printed prompts; “hence or otherwise” offers alternative methods for the same task."
+    },
+    "8:d5396efe928d8212": {
+      "classification": "mathematical-context",
+      "reason": "Identifying the impossible triangle is the required task itself; both triangles are part of one prompt."
+    },
+    "10:0d1984034170618f": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "10:eea6d6c7cdfef73e": {
+      "classification": "mathematical-context",
+      "reason": "Both pipe types are measured in required tasks; there is no printed choice of prompts."
+    }
+  }
+}

@@ -1,0 +1,1743 @@
+{
+  "status": "visually inspected",
+  "paperFileid": "LC003ALP100EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "tasks": {
+    "1-a": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising,algebra-simultaneous-equations",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 54,
+          "bottom": 117,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 6,
+          "top": 211,
+          "bottom": 705,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 7,
+          "top": 53,
+          "bottom": 355,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Not like-to-like when equating coefficients",
+        "Slips (−1) — Numerical"
+      ],
+      "inspectedSolutionSha256": "0db08dca233d15a9aa2c08e454edd8a7d8929fc8958ff3ff839c56fe3cd09b0b"
+    },
+    "1-b-i": {
+      "topic": "4-2",
+      "atlas": "algebra-cubics",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 143,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 8,
+          "top": 136,
+          "bottom": 788,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 9,
+          "top": 51,
+          "bottom": 615,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 10,
+          "top": 51,
+          "bottom": 248,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Test for root",
+        "Blunders (−3) — Deduction of factor from root, or no deduction"
+      ],
+      "inspectedSolutionSha256": "48288d4e8d64188da297da8ae7722ba5abada67c58a5053c2f7a063d08696abc"
+    },
+    "1-b-ii": {
+      "topic": "4-2",
+      "atlas": "algebra-cubics",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 143,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 2,
+          "top": 201,
+          "bottom": 221,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 11,
+          "top": 51,
+          "bottom": 255,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — New roots",
+        "Blunders (−3) — Indices"
+      ],
+      "inspectedSolutionSha256": "a6e66577a4694e43ccd78a7dbf24400ad689d5050430b237ddfc90f2869c4c16"
+    },
+    "1-c-i": {
+      "topic": "4-2",
+      "atlas": "algebra-cubics",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 246,
+          "bottom": 280,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 11,
+          "top": 381,
+          "bottom": 667,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 12,
+          "top": 51,
+          "bottom": 781,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Not like-to-like when equating coefficients",
+        "Blunders (−3) — Deduction root from factor"
+      ],
+      "inspectedSolutionSha256": "4d9844b42623e4aeaf43c81ea27c3c807c8e8b720f372ece2e9c36538deca9ff"
+    },
+    "1-c-ii": {
+      "topic": "4-2",
+      "atlas": "algebra-cubics",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 246,
+          "bottom": 280,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 2,
+          "top": 290,
+          "bottom": 325,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 13,
+          "top": 51,
+          "bottom": 330,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Deduction root from factor",
+        "Blunders (−3) — Not 3 roots"
+      ],
+      "inspectedSolutionSha256": "a58c17f8fa299ec999edcc76457d50d03f53037e9d67ae05b4d93d6046990b72"
+    },
+    "2-a": {
+      "topic": "4-2",
+      "atlas": "algebra-solving-equations,algebra-quadratics",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 382,
+          "bottom": 409,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 14,
+          "top": 196,
+          "bottom": 685,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Factors once only",
+        "Slips (−1) — Numerical"
+      ],
+      "inspectedSolutionSha256": "25e5226780970e2aa92c86dcd2249fe914d20e3d28a0cbda37023aa6f8bf5d6a"
+    },
+    "2-b-i": {
+      "topic": "4-2",
+      "atlas": "algebra-quadratics",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 429,
+          "bottom": 485,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 15,
+          "top": 172,
+          "bottom": 315,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 16,
+          "top": 563,
+          "bottom": 710,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect sum",
+        "Blunders (−3) — Incorrect product"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "a2f0b7c4ca2a5bc7ec1903bd3fabb901bfb3e01acabac3b6ae523e7cf366bd9d"
+    },
+    "2-b-ii": {
+      "topic": "4-2",
+      "atlas": "algebra-quadratics",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 429,
+          "bottom": 485,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 2,
+          "top": 493,
+          "bottom": 528,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 15,
+          "top": 326,
+          "bottom": 740,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 16,
+          "top": 51,
+          "bottom": 710,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect sum",
+        "Blunders (−3) — Incorrect product"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "4700757d8ad628a61df3644b3a4020bfb9a51b97f7bda7665dde0ebd3f6bba21"
+    },
+    "2-c-i": {
+      "topic": "4-3",
+      "atlas": "algebra-inequalities",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 555,
+          "bottom": 589,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 17,
+          "top": 186,
+          "bottom": 282,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 18,
+          "top": 313,
+          "bottom": 480,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Inequality sign",
+        "Blunders (−3) — Incorrect deduction or no deduction"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "65e1cbc659729f091db93b409dfd675a79f2e4a6fdfe2de817d3218ed3ae6ddb"
+    },
+    "2-c-ii": {
+      "topic": "4-3",
+      "atlas": "algebra-inequalities",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 600,
+          "bottom": 633,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 17,
+          "top": 283,
+          "bottom": 391,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 18,
+          "top": 313,
+          "bottom": 480,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Inequality sign",
+        "Blunders (−3) — Incorrect deduction or no deduction"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "0dde01f49e5559e675fefdd7d284a4434279362f37b5f5319a275130a4d1de5a"
+    },
+    "2-c-iii": {
+      "topic": "4-3",
+      "atlas": "algebra-inequalities",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 555,
+          "bottom": 589,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 2,
+          "top": 600,
+          "bottom": 633,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 2,
+          "top": 645,
+          "bottom": 683,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 17,
+          "top": 395,
+          "bottom": 753,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 18,
+          "top": 51,
+          "bottom": 480,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Inequality sign",
+        "Blunders (−3) — Incorrect deduction or no deduction"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "6483b2cdd311de2e664d64e579bb0f931af4abf0a18084aebd78691bcb3514c7"
+    },
+    "3-a": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 55,
+          "bottom": 100,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 19,
+          "top": 200,
+          "bottom": 726,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect deduction or no deduction"
+      ],
+      "inspectedSolutionSha256": "7b635037457cda00e92fbbce7468c5e48db7fd063a11ca21e276c80b425840c2"
+    },
+    "3-b-i": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 120,
+          "bottom": 190,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 20,
+          "top": 202,
+          "bottom": 333,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Each incorrect element"
+      ],
+      "inspectedSolutionSha256": "7f6de5dc0d3266d9cf8bcac83a362e53fbc6e7880c00996c739ba4a53e8411f4"
+    },
+    "3-b-ii": {
+      "topic": "4-2",
+      "atlas": "algebra-simultaneous-equations,algebra-quadratics",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 120,
+          "bottom": 190,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 3,
+          "top": 198,
+          "bottom": 239,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 20,
+          "top": 339,
+          "bottom": 749,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Not like-to-like",
+        "Blunders (−3) — Extra values of x"
+      ],
+      "inspectedSolutionSha256": "901a3d13b067cb589e654cb4eb86f85b44b64f50393213343eeed7a9cdfcfb02"
+    },
+    "3-c-i": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 265,
+          "bottom": 328,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 21,
+          "top": 181,
+          "bottom": 715,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 22,
+          "top": 51,
+          "bottom": 770,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 23,
+          "top": 51,
+          "bottom": 206,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Application of De Moivre",
+        "Blunders (−3) — Modulus"
+      ],
+      "inspectedSolutionSha256": "1349f7e1a6f2dd13b0e41bb907954f2a1862323f1c557dfb10c0323a37f68f27"
+    },
+    "3-c-ii": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 265,
+          "bottom": 328,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 3,
+          "top": 337,
+          "bottom": 372,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 23,
+          "top": 221,
+          "bottom": 610,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 24,
+          "top": 51,
+          "bottom": 452,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 25,
+          "top": 51,
+          "bottom": 758,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Formula for area of triangle",
+        "Blunders (−3) — Points not collinear"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "217326dd5aded684e4572c358aa79f8e6decc6d46681d881df1fdf2cc4eded9b"
+    },
+    "4-a": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 421,
+          "bottom": 479,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 26,
+          "top": 230,
+          "bottom": 443,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Definition of AP",
+        "Blunders (−3) — Answer not in simplest form"
+      ],
+      "inspectedSolutionSha256": "5606bb07db5151c3f9222128256652c191da5d6ea2c1168f0b3f2961a9442e28"
+    },
+    "4-b-i": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 501,
+          "bottom": 537,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 26,
+          "top": 612,
+          "bottom": 729,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 27,
+          "top": 468,
+          "bottom": 635,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Not conjugate"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "b1c392eaa5134980d8a0c06e88776a673048d687fc83a3416f6ed96d646d3474"
+    },
+    "4-b-ii": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 501,
+          "bottom": 537,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 3,
+          "top": 550,
+          "bottom": 598,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 27,
+          "top": 51,
+          "bottom": 355,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 27,
+          "top": 468,
+          "bottom": 635,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Cancellation must be shown or implied",
+        "Blunders (−3) — Term omitted"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "86586fef6432a956de8bbd1befd6ecb511abb1ba62427c0a27bc4809c8ca665a"
+    },
+    "4-b-iii": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 501,
+          "bottom": 537,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 3,
+          "top": 550,
+          "bottom": 598,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 3,
+          "top": 607,
+          "bottom": 649,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 27,
+          "top": 378,
+          "bottom": 465,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 27,
+          "top": 468,
+          "bottom": 635,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Numerical"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "3049fbbb9478cbf2ab981b27ff034306124745c5006692286b27f19c7ade63c3"
+    },
+    "4-c": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 672,
+          "bottom": 744,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 28,
+          "top": 160,
+          "bottom": 500,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 29,
+          "top": 51,
+          "bottom": 501,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Definition of geometric sequence",
+        "Blunders (−3) — Definition of arithmetic sequence"
+      ],
+      "inspectedSolutionSha256": "0a5d437719ae931e7493ae212b7d05c8f97c9ec77f9c0235b239e9b36c471068"
+    },
+    "5-a": {
+      "topic": "5-1",
+      "atlas": "indices-and-logs",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 54,
+          "bottom": 82,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 30,
+          "top": 184,
+          "bottom": 401,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Log laws"
+      ],
+      "inspectedSolutionSha256": "253dd3d41537419c07071e816f5e5438f4cda4b3953801482cdcf7a83d19cb94"
+    },
+    "5-b-i": {
+      "topic": "4-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 102,
+          "bottom": 156,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 30,
+          "top": 525,
+          "bottom": 606,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 31,
+          "top": 448,
+          "bottom": 639,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — General term",
+        "Blunders (−3) — Error binomial expansion once only"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "9a3052629585eb3961ecb729c334a8d852dfd3bfbffb9357dec0a04c0fe1260c"
+    },
+    "5-b-ii": {
+      "topic": "4-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 102,
+          "bottom": 139,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 165,
+          "bottom": 186,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 30,
+          "top": 625,
+          "bottom": 790,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 31,
+          "top": 51,
+          "bottom": 338,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 31,
+          "top": 448,
+          "bottom": 639,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — General term",
+        "Blunders (−3) — Error binomial expansion once only"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "37e8f44b720306120ab3a8c1d27c32747cf6f29d8ebf152bb5c1559b9382baa7"
+    },
+    "5-b-iii": {
+      "topic": "4-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 102,
+          "bottom": 156,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 193,
+          "bottom": 213,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 31,
+          "top": 370,
+          "bottom": 639,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — General term",
+        "Blunders (−3) — Error binomial expansion once only"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "bf14a7db491c5e774a09b43e704e07b7f28a1b8788a391e3358c238e1ac30abe"
+    },
+    "5-c-i": {
+      "topic": "4-3",
+      "atlas": "algebra-inequalities",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 237,
+          "bottom": 264,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 32,
+          "top": 140,
+          "bottom": 301,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "General marking rule — any correct, relevant step in a part of a question merits at least the attempt mark for that part"
+      ],
+      "inspectedSolutionSha256": "50f5809a1a2542f363d58b3c68e1ac0db0c84ad58083cc4ab159175ae84cc333"
+    },
+    "5-c-ii": {
+      "topic": "4-1",
+      "atlas": "induction",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 237,
+          "bottom": 291,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 32,
+          "top": 310,
+          "bottom": 713,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Indices"
+      ],
+      "inspectedSolutionSha256": "ef7ffd5f158ab21782a845d144a0470e7fd58866c54e5541802d5901b77181bf"
+    },
+    "6-a-i": {
+      "topic": "5-2",
+      "atlas": "differentiation-rules",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 355,
+          "bottom": 376,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 384,
+          "bottom": 410,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 33,
+          "top": 253,
+          "bottom": 266,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 33,
+          "top": 281,
+          "bottom": 336,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 33,
+          "top": 391,
+          "bottom": 529,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Differentiation",
+        "Attempts — Error in differentiation formula (chain rule)"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "d19001544291f1b731bf653da3c45fa18dd557dbebe877e7f111ecc5a9f1626f"
+    },
+    "6-a-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation-rules",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 355,
+          "bottom": 376,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 422,
+          "bottom": 460,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 33,
+          "top": 267,
+          "bottom": 281,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 33,
+          "top": 340,
+          "bottom": 389,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 33,
+          "top": 391,
+          "bottom": 529,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Differentiation",
+        "Attempts — Error in differentiation formula (chain rule)"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "4e6613bd36c14833cc9a78a9ae861cd9d6b8f3e8616d168493c64b84a9674404"
+    },
+    "6-b-i": {
+      "topic": "5-2",
+      "atlas": "differentiation-rules",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 484,
+          "bottom": 506,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 34,
+          "top": 124,
+          "bottom": 438,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 34,
+          "top": 548,
+          "bottom": 782,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Worthless — Not first principles"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "aedb08d597e6603d074a0207af21d4c49d738d17ac7b8d7768c5bf84258826f0"
+    },
+    "6-b-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 484,
+          "bottom": 506,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 515,
+          "bottom": 543,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 34,
+          "top": 441,
+          "bottom": 538,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 34,
+          "top": 538,
+          "bottom": 782,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Equation of tangent"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "252002600d9cbc9bd608225893be4b0827e0597fcecc565db697adfecbf9396d"
+    },
+    "6-c-i": {
+      "topic": "5-2",
+      "atlas": "differentiation-rules",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 558,
+          "bottom": 612,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 35,
+          "top": 174,
+          "bottom": 187,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 35,
+          "top": 216,
+          "bottom": 255,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 35,
+          "top": 490,
+          "bottom": 634,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Differentiation",
+        "Blunders (−3) — Trig formula"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "3d509d38382a1f080a4ac548056c5a48aaca3cdfe01f1805d60b8cc04bda6b3c"
+    },
+    "6-c-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation-rules",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 558,
+          "bottom": 612,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 621,
+          "bottom": 643,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 35,
+          "top": 188,
+          "bottom": 201,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 35,
+          "top": 269,
+          "bottom": 333,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 35,
+          "top": 490,
+          "bottom": 634,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Differentiation",
+        "Blunders (−3) — Trig formula"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "4d7730f954876153a6da6b5f4c76a3997b1f7f8f9288dc8293187864c2304136"
+    },
+    "6-c-iii": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 558,
+          "bottom": 612,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 621,
+          "bottom": 643,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 650,
+          "bottom": 676,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 35,
+          "top": 202,
+          "bottom": 216,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 35,
+          "top": 338,
+          "bottom": 490,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 35,
+          "top": 490,
+          "bottom": 634,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Differentiation",
+        "Blunders (−3) — Trig formula"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "b117ac64ad476f77352895b51f55e60bf30c6dccfa28702e7bc4b7d84ac72968"
+    },
+    "7-a": {
+      "topic": "5-2",
+      "atlas": "differentiation-rules",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 54,
+          "bottom": 90,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 36,
+          "top": 191,
+          "bottom": 455,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Differentiation"
+      ],
+      "inspectedSolutionSha256": "f4dc33af2f378faf50fc3d0800d92cc66126aff166c4f00661d27c1a3942dcb8"
+    },
+    "7-b-i": {
+      "topic": "5-2",
+      "atlas": "differentiation-rules",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 107,
+          "bottom": 168,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 37,
+          "top": 175,
+          "bottom": 201,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 37,
+          "top": 216,
+          "bottom": 296,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 37,
+          "top": 397,
+          "bottom": 621,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Differentiation"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "3e75261317f3a5c3046ebddaef87851589fc75143db66639d50a96c59e2e9646"
+    },
+    "7-b-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 107,
+          "bottom": 168,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 169,
+          "bottom": 207,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 37,
+          "top": 203,
+          "bottom": 216,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 37,
+          "top": 296,
+          "bottom": 393,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 37,
+          "top": 397,
+          "bottom": 621,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect value of x or no value of x in slope"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "8cb788e5ae87f0eb85565274fe22f7ed426b59c7d0fdefcee55aaf2f8541af6f"
+    },
+    "7-c-i": {
+      "topic": "5-1",
+      "atlas": "functions",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 226,
+          "bottom": 281,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 38,
+          "top": 191,
+          "bottom": 204,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 38,
+          "top": 246,
+          "bottom": 304,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 38,
+          "top": 504,
+          "bottom": 714,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Model solution — has a root between 0 and 1"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "d81051dc3dfab9172825a8fe064fc15e461711f2e8fba2a2311b1af71708c190"
+    },
+    "7-c-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 226,
+          "bottom": 281,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 287,
+          "bottom": 323,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 38,
+          "top": 205,
+          "bottom": 232,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 38,
+          "top": 305,
+          "bottom": 459,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 38,
+          "top": 504,
+          "bottom": 714,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Newton-Raphson formula"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "673eed0ba83984be6dc113151921993df11acbe4e73edf7feac2b22bedee0a82"
+    },
+    "7-c-iii": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 226,
+          "bottom": 281,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 287,
+          "bottom": 323,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 338,
+          "bottom": 359,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 38,
+          "top": 232,
+          "bottom": 246,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 38,
+          "top": 462,
+          "bottom": 504,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 38,
+          "top": 504,
+          "bottom": 714,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Model solution — All further approximations will continue in the sequence"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "2c62006eaf9213bfb1b4227c30033f7d006b0c972ab25f40b10c98fb6a3ea622"
+    },
+    "8-a": {
+      "topic": "5-2",
+      "atlas": "integration",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 392,
+          "bottom": 435,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 39,
+          "top": 190,
+          "bottom": 406,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Integration",
+        "Worthless — Differentiation"
+      ],
+      "inspectedSolutionSha256": "da8a508ae8031feae6262427c6c263d3a72148460b80ae9bb6210aa5a3afa0c8"
+    },
+    "8-b-i": {
+      "topic": "5-2",
+      "atlas": "integration",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 442,
+          "bottom": 495,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 39,
+          "top": 580,
+          "bottom": 593,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 39,
+          "top": 608,
+          "bottom": 709,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 40,
+          "top": 431,
+          "bottom": 650,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect order in applying limits",
+        "Blunders (−3) — Not changing limits"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "bffc3ff6213d0cf536989eb6693f2d9e78f53db616847c901bfa3195cd6c4272"
+    },
+    "8-b-ii": {
+      "topic": "5-2",
+      "atlas": "integration",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 505,
+          "bottom": 566,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 39,
+          "top": 594,
+          "bottom": 608,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 40,
+          "top": 51,
+          "bottom": 650,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect order in applying limits",
+        "Blunders (−3) — Not changing limits"
+      ],
+      "sourceNote": "The SEC prints some marking notes jointly for these parts. Apply each note only to the work it describes; use the marks for this card’s named part.",
+      "inspectedSolutionSha256": "259303775ddaf5438dd87ee82d2f6bdd53c145290ac2a0c0cdcb2ebdb1334962"
+    },
+    "8-c-i": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 588,
+          "bottom": 633,
+          "x0": 79,
+          "x1": 385
+        },
+        {
+          "page": 5,
+          "top": 637,
+          "bottom": 700,
+          "x0": 108,
+          "x1": 395
+        },
+        {
+          "page": 5,
+          "top": 588,
+          "bottom": 710,
+          "x0": 383,
+          "x1": 549
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 41,
+          "top": 199,
+          "bottom": 762,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Blunder slope at P"
+      ],
+      "inspectedSolutionSha256": "652a1edf34092f1e688dc810252c5aefcd1e2fa64fbf4a8f84abd6708f9da1b4"
+    },
+    "8-c-ii": {
+      "topic": "5-2",
+      "atlas": "integration",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 588,
+          "bottom": 633,
+          "x0": 79,
+          "x1": 385
+        },
+        {
+          "page": 5,
+          "top": 637,
+          "bottom": 700,
+          "x0": 108,
+          "x1": 395
+        },
+        {
+          "page": 5,
+          "top": 708,
+          "bottom": 761,
+          "x0": 108,
+          "x1": 395
+        },
+        {
+          "page": 5,
+          "top": 588,
+          "bottom": 710,
+          "x0": 383,
+          "x1": 549
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 42,
+          "top": 51,
+          "bottom": 750,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 43,
+          "top": 51,
+          "bottom": 398,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in formula for area of triangle"
+      ],
+      "inspectedSolutionSha256": "55fc0cafb47c65224d69d8bbe9c52d612de483af30addb5509039886ea230046"
+    }
+  },
+  "reviewedAt": "2026-10-29"
+}

@@ -1,0 +1,544 @@
+[
+  {
+    "year": 2026,
+    "paperFileids": [
+      "LC058ALPA00BV.pdf",
+      "LC058GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2026 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "Official SEC archive response",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/76303135",
+      "bytes": 76303135,
+      "rangeBytes": 65536,
+      "rangeSha256": "f385dbbe2db55f285d2361c0b212525b97a80b7b4f5482bada5a84992b3ac9c6",
+      "browserPlayback": false,
+      "sha256": "3467f537fdd5781dede6cba307f61d078d46fdcdf4932fd661fabb4c777aa081",
+      "durationSeconds": 2384.472969
+    }
+  },
+  {
+    "year": 2025,
+    "paperFileids": [
+      "LC058ALPA00BV.pdf",
+      "LC058GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2025",
+      "listingSha256": "ac299cd355fae87250bfa6eda882a48dcce292fde1a5dedcd8b94bfc79f887be",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/76716460",
+      "bytes": 76716460,
+      "rangeBytes": 65536,
+      "rangeSha256": "6074a4faabea261dc52305a5d620288a24dd561aeaa5cffb80be06a9c4c31054",
+      "browserPlayback": false,
+      "sha256": "cc46424b50967be4358c84a0ff0285c21f34ef826cf892a4dca6cbc330870883",
+      "durationSeconds": 2397.389375
+    }
+  },
+  {
+    "year": 2024,
+    "paperFileids": [
+      "LC058ALPA00BV.pdf",
+      "LC058GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2024 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2024",
+      "listingSha256": "4cb88a711015cb6deac7a585207f5693115ad60cecaa7659ce5036f59d91fdd2",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/81258025",
+      "bytes": 81258025,
+      "rangeBytes": 65536,
+      "rangeSha256": "d72f54064cc147743c34412633ecde2d588bd067ebdd3f93e4a5429bee7e715c",
+      "browserPlayback": false,
+      "sha256": "e80d42c8e00bb58d915739dc5aa98f3291476e194dbe055ec2551585e1055576",
+      "durationSeconds": 2539.313281
+    }
+  },
+  {
+    "year": 2023,
+    "paperFileids": [
+      "LC058ALPA00BV.pdf",
+      "LC058GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2023 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2023",
+      "listingSha256": "8e354b43f002aa0d53e4cacc1393877dec1c0025858badf28047b814b930f883",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/72543130",
+      "bytes": 72543130,
+      "rangeBytes": 65536,
+      "rangeSha256": "3d467989924b536e48263e9feb006597002ae68495df7d6599910aa891755f5d",
+      "browserPlayback": false,
+      "sha256": "4d526b1f762f986a011d83e83a0558ee7116f7f32ee1dd015d466189b21278e7",
+      "durationSeconds": 2266.972813
+    }
+  },
+  {
+    "year": 2022,
+    "paperFileids": [
+      "LC058ALPA00BV.pdf",
+      "LC058GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2022 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2022",
+      "listingSha256": "7038d19aa3b8154e1ac47fb791caa7e312d103fbfe7aa592c3b1de4c21c895ab",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/77014555",
+      "bytes": 77014555,
+      "rangeBytes": 65536,
+      "rangeSha256": "b52fa1a1f55f781f983b5eb783f298cfd068fee1b31bca504ca294aace04d214",
+      "browserPlayback": false,
+      "sha256": "3f52ac1d1a3a7372a5cd5bd4510517350ab0c6a4c0447f6453115e857fd71393",
+      "durationSeconds": 2406.704844
+    }
+  },
+  {
+    "year": 2021,
+    "paperFileids": [
+      "LC058ALPA00BV.pdf",
+      "LC058GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2021 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2021",
+      "listingSha256": "a86cc1fd43cdb3f258a0c3813730ebb8ee248b82fd81740dd13cea1a4530496c",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/80824660",
+      "bytes": 80824660,
+      "rangeBytes": 65536,
+      "rangeSha256": "c93e196de704928f54c30d604c13a2da386c5d6795334da0eb88104d590abf2a",
+      "browserPlayback": false,
+      "sha256": "641945bfa7d44ec68bb82a224d0885bc31a60b883ed4fea874a1e8aed9ad0b81",
+      "durationSeconds": 2525.770625
+    }
+  },
+  {
+    "year": 2020,
+    "paperFileids": [
+      "LC058ALPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2020 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2020",
+      "listingSha256": "237d26ff3f4a56884602596be48fa438bec482c7439e42dafd0491f7465c6d13",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/80128270",
+      "bytes": 80128270,
+      "rangeBytes": 65536,
+      "rangeSha256": "1cd445af07ede65d5b0d379d431e69b68660f8ef9f08e8f90cf166f7aa4ab9be",
+      "browserPlayback": false,
+      "sha256": "a7069e65a06628d5d83e52a65fa55b618b1e9d669672d5fc896560c16affa9be",
+      "durationSeconds": 2504.008438
+    }
+  },
+  {
+    "year": 2019,
+    "paperFileids": [
+      "LC058ALPA00BV.pdf",
+      "LC058GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2019 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2019",
+      "listingSha256": "0b94722235388520153ad7a16c86ed4d452955ab42416ff409e648274b1315b8",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/68551460",
+      "bytes": 68551460,
+      "rangeBytes": 65536,
+      "rangeSha256": "81eee5cffe47c4b39be8494ac195f657e13fdfc2610cc73106710c18528ef546",
+      "browserPlayback": false,
+      "sha256": "3cf6a9ff63f9a756bfd1b8f9a63fb17ab57c0e5f9ac271f888495ec38e16fef7",
+      "durationSeconds": 2142.171406
+    }
+  },
+  {
+    "year": 2018,
+    "paperFileids": [
+      "LC058ALPA00EV.pdf",
+      "LC058GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2018 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2018",
+      "listingSha256": "7a606a8510ca7220846ce508af7f0e292392b941dfe577383127ed4688a9cc7c",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/80208342",
+      "bytes": 80208342,
+      "rangeBytes": 65536,
+      "rangeSha256": "ddba64ff37dc071a7802603c036c89fc5af869d398068e4afd6452d3672a72a7",
+      "browserPlayback": false,
+      "sha256": "8487e14a0064b8812b7413b6d3446a47466de61843bd004c17799979178a7961",
+      "durationSeconds": 2506.448969
+    }
+  },
+  {
+    "year": 2017,
+    "paperFileids": [
+      "LC058ALPA00EV.pdf",
+      "LC058GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2017 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2017",
+      "listingSha256": "05762d7c26f69f2bca6d79f32fa1bd334d5486cbd4401fdf6b713f19e9029371",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/7165676",
+      "bytes": 7165676,
+      "rangeBytes": 65536,
+      "rangeSha256": "9a3f73ce338943a7829bce517fa21ccc9de6fdf3faebceba5c7373aacee1f8f4",
+      "browserPlayback": false,
+      "sha256": "dbfd13c958ab687269c1304d64334d8abea74fc9538149e048508334075445aa",
+      "durationSeconds": 2039.04
+    }
+  },
+  {
+    "year": 2016,
+    "paperFileids": [
+      "LC058ALPA00EV.pdf",
+      "LC058GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2016",
+      "listingSha256": "d9c7495e9883e7e46fc44aaff3b0876eb15ae26a7a6d4e040b75699724c81cb3",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/19639476",
+      "bytes": 19639476,
+      "rangeBytes": 65536,
+      "rangeSha256": "05f88e4c406d66ddb3400040a111aa1b19510878db51e1d3145161ae91d5be95",
+      "browserPlayback": false,
+      "sha256": "583b24857e7ee6db6d6741990e99cebf7bc45bf9af2850b6a543fa2d6aa68bd5",
+      "durationSeconds": 2454.768
+    }
+  },
+  {
+    "year": 2015,
+    "paperFileids": [
+      "LC058ALPA00EV.pdf",
+      "LC058GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2015 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2015/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2015/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2015",
+      "listingSha256": "2719bbb1668f06ba416485225ccc6980bf758d7a353a04832497ae135d52918a",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/67506562",
+      "bytes": 67506562,
+      "rangeBytes": 65536,
+      "rangeSha256": "808f08774fae9cc3c2fe940f88833ef7533c8f1fbfb28c0776389f357d753d2b",
+      "browserPlayback": false,
+      "sha256": "ca80f41e4a674ed2004fcbb88d324260df7f3b4997d08e940fd1b68779236728",
+      "durationSeconds": 2109.518344
+    }
+  },
+  {
+    "year": 2014,
+    "paperFileids": [
+      "LC058ALPA00EV.pdf",
+      "LC058GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2014 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2014",
+      "listingSha256": "15c460f043eec3ca8c8dc74f9e3ee82fb572c3c6027ad53feb79ebdc8050129f",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/52368081",
+      "bytes": 52368081,
+      "rangeBytes": 65536,
+      "rangeSha256": "d64c53e61ffbfaf4ef36656b645ff6cf74d3cb01e8a3e9c7278842b26820aadd",
+      "browserPlayback": false,
+      "sha256": "ffcb01ac24a69cde09dc05595d48335a8334e4b32495b73502960c17a302e9a5",
+      "durationSeconds": 2181.929792
+    }
+  },
+  {
+    "year": 2013,
+    "paperFileids": [
+      "LC058ALPA00EV.pdf",
+      "LC058GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2013 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2013/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2013",
+      "listingSha256": "e043639ec03900f1c917ca4937482cc6ecb2c2a189f80099c87d356ac5ee2290",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/54935395",
+      "bytes": 54935395,
+      "rangeBytes": 65536,
+      "rangeSha256": "ae25705366eef1b6033f13900a31c66c04c990f5b3fdd26214e6b2ef48229bff",
+      "browserPlayback": false,
+      "sha256": "2846d3be737fdfb82160bb58334c3b94e1193725f175bf04b4a56c86ab6a863a",
+      "durationSeconds": 2288.901208
+    }
+  },
+  {
+    "year": 2012,
+    "paperFileids": [
+      "LC058ALPA00EV.pdf",
+      "LC058GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2012 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC058ZLPO17EV.mp3",
+      "secFileid": "LC058ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC058ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2012",
+      "listingSha256": "91c65a200cc98ef169fd901da1dbed3303a2fa7dffbeb440134857e7da33176c",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/37974820",
+      "bytes": 37974820,
+      "rangeBytes": 65536,
+      "rangeSha256": "098fa7a5950467772f89a35b0690f0e7083b0cc7edda5f0138133215d7dfa0ea",
+      "browserPlayback": false,
+      "sha256": "05c9b26454d29591eac371085d1a6553c9a21babbbf06abfd2415cd1852c1b63",
+      "durationSeconds": 2373.328937
+    }
+  },
+  {
+    "year": 2011,
+    "paperFileids": [
+      "LC058ALPA00EV.pdf",
+      "LC058GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2011 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2011",
+      "listingSha256": "6094801c81bada0175d0dc861d8d0cf2ebd6ac7c6136480d9670c52574744056",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/30067450",
+      "bytes": 30067450,
+      "rangeBytes": 65536,
+      "rangeSha256": "628d0f4cb1425c5dbc723b6e3bade62d3d74938c83cc4f718d595b6c20cfe59c",
+      "browserPlayback": false,
+      "sha256": "8e57addb698916e39d2edcc911638dd7c6377ac498b0f64a5760c64649ab81cb",
+      "durationSeconds": 1879.118313
+    }
+  },
+  {
+    "year": 2010,
+    "paperFileids": [
+      "LC058ALPA00EV.pdf",
+      "LC058GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2010 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2010/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2010/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/japanese/2010",
+      "listingSha256": "353a8eca3de0aa5c7fa72f148b23cb27d37cce5802f8dfb39b23e3318fe8a26a",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/36601406",
+      "bytes": 36601406,
+      "rangeBytes": 65536,
+      "rangeSha256": "fa21d9fdd92857a13a67bbb0058d495e50522d15d848ce72231575e1806d5d1e",
+      "browserPlayback": false,
+      "sha256": "6dbc09c2fdad6bacd758542c1be7ae0988cc0d0e1e9a32e50a5a280544766ae8",
+      "durationSeconds": 2287.490563
+    }
+  }
+]
