@@ -1,0 +1,680 @@
+{
+ "audio/2010/LC010ZLP017EV.mp3": {
+  "bitRate": 128000,
+  "bytes": 37733658,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2010/LC010ZLP017EV.mp3",
+  "durationSeconds": 2358.256313,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "QM8C7/i065m58+H9Nkqm1A==",
+  "path": "audio/2010/LC010ZLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010ZLP017EV.mp3",
+  "sha256": "c763e4e8d20495561418b1c26c35ff7c4f61e4e14c26f30aad6d5facd32072c2",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2010.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "LYePBg==",
+   "generation": "1795088409409812",
+   "md5Hash": "QM8C7/i065m58+H9Nkqm1A==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2010/LC010ZLP017EV.mp3",
+   "sha256Metadata": "c763e4e8d20495561418b1c26c35ff7c4f61e4e14c26f30aad6d5facd32072c2",
+   "size": 37733658,
+   "uploadedAt": "2026-11-19T11:40:10+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2010
+ },
+ "audio/2010/LC011ZLP017EV.mp3": {
+  "bitRate": 128000,
+  "bytes": 36060567,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2010/LC011ZLP017EV.mp3",
+  "durationSeconds": 2253.688125,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "Kj6bNoC/8cSKYf5eZBP3Ng==",
+  "path": "audio/2010/LC011ZLP017EV.mp3",
+  "priorVerification": [
+   "data/germanAudio.json",
+   "~/Documents/NextStepUni-MarkBank-Lanes-20261104/languages/audio/german-audio-verify.json"
+  ],
+  "secFileid": "LC011ZLP017EV.mp3",
+  "sha256": "4b610459c2e0298c6e0ba53e2637b873895d84ad8d99f3c6a9c34d5c02b1884e",
+  "sitting": "june",
+  "source": {
+   "contentLength": 36060567,
+   "contentType": "audio/mpeg",
+   "etag": "\"2263d97-489c76c38c680\"",
+   "fetchedAt": "2026-11-19T11:14:31.689Z",
+   "lastModified": "Thu, 24 Jun 2010 14:25:14 GMT",
+   "note": "browser record not retained; sha256 from the saved file, matched to the earlier verification",
+   "status": 200,
+   "via": "Chrome tab on www.examinations.ie"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "Z3i89A==",
+   "generation": "1795087581243621",
+   "md5Hash": "Kj6bNoC/8cSKYf5eZBP3Ng==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2010/LC011ZLP017EV.mp3",
+   "sha256Metadata": "4b610459c2e0298c6e0ba53e2637b873895d84ad8d99f3c6a9c34d5c02b1884e",
+   "size": 36060567,
+   "uploadedAt": "2026-11-19T11:26:22+00:00"
+  },
+  "subjects": [
+   "german"
+  ],
+  "year": 2010
+ },
+ "audio/2011/LC010ZLP017EV.mp3": {
+  "bitRate": 128000,
+  "bytes": 36421266,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC010ZLP017EV.mp3",
+  "durationSeconds": 2276.231813,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "24QVvI/ot9ezi12/+Jr++g==",
+  "path": "audio/2011/LC010ZLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010ZLP017EV.mp3",
+  "sha256": "08bbccd91d191f55e7a5cb8373e7f37b5c3f762b85fbb14ae113b6b79db99306",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2011.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "/iHskw==",
+   "generation": "1795088414630866",
+   "md5Hash": "24QVvI/ot9ezi12/+Jr++g==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2011/LC010ZLP017EV.mp3",
+   "sha256Metadata": "08bbccd91d191f55e7a5cb8373e7f37b5c3f762b85fbb14ae113b6b79db99306",
+   "size": 36421266,
+   "uploadedAt": "2026-11-19T11:40:15+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2011
+ },
+ "audio/2012/LC010ZLPO17EV.mp3": {
+  "bitRate": 128000,
+  "bytes": 36306327,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC010ZLPO17EV.mp3",
+  "durationSeconds": 2269.048125,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "4KG13itncwiwODWE9djkSA==",
+  "path": "audio/2012/LC010ZLPO17EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010ZLPO17EV.mp3",
+  "sha256": "5553d5c6e3d50edd3ac2a91c6f950a6d9f8f32b07e2f00ab9040f711702a8a34",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2012.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "Ik7Q6w==",
+   "generation": "1795088419445054",
+   "md5Hash": "4KG13itncwiwODWE9djkSA==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2012/LC010ZLPO17EV.mp3",
+   "sha256Metadata": "5553d5c6e3d50edd3ac2a91c6f950a6d9f8f32b07e2f00ab9040f711702a8a34",
+   "size": 36306327,
+   "uploadedAt": "2026-11-19T11:40:20+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2012
+ },
+ "audio/2012/LC011ZLPO17EV.mp3": {
+  "bitRate": 128000,
+  "bytes": 38792348,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC011ZLPO17EV.mp3",
+  "durationSeconds": 2424.424438,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "AfxR38Zdz6rfYNAueRkQBg==",
+  "path": "audio/2012/LC011ZLPO17EV.mp3",
+  "priorVerification": [
+   "data/germanAudio.json",
+   "~/Documents/NextStepUni-MarkBank-Lanes-20261104/languages/audio/german-audio-verify.json"
+  ],
+  "secFileid": "LC011ZLPO17EV.mp3",
+  "sha256": "aa372ce309287ee3cdf22254ce2fea88ca2ad40de11295eb6fa6330f3214546b",
+  "sitting": "june",
+  "source": {
+   "contentLength": 38792348,
+   "contentType": "audio/mpeg",
+   "etag": "\"24fec9c-4c34a636e1e80\"",
+   "fetchedAt": "2026-11-19T11:19:06.709Z",
+   "lastModified": "Mon, 25 Jun 2012 11:36:10 GMT",
+   "status": 200,
+   "via": "Chrome tab on www.examinations.ie"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "ZzZd0Q==",
+   "generation": "1795087586378690",
+   "md5Hash": "AfxR38Zdz6rfYNAueRkQBg==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2012/LC011ZLPO17EV.mp3",
+   "sha256Metadata": "aa372ce309287ee3cdf22254ce2fea88ca2ad40de11295eb6fa6330f3214546b",
+   "size": 38792348,
+   "uploadedAt": "2026-11-19T11:26:26+00:00"
+  },
+  "subjects": [
+   "german"
+  ],
+  "year": 2012
+ },
+ "audio/2013/LC010ZLP017EV.mp3": {
+  "bitRate": 192000,
+  "bytes": 54186830,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC010ZLP017EV.mp3",
+  "durationSeconds": 2257.711,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "FueQppBkXj7TeU5ehRCehw==",
+  "path": "audio/2013/LC010ZLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010ZLP017EV.mp3",
+  "sha256": "77ffc7acf15b6e900702ceca54b82efbf4d4cd77cb126179a96fdcb70669658e",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2013.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "BcWZ+Q==",
+   "generation": "1795088425674835",
+   "md5Hash": "FueQppBkXj7TeU5ehRCehw==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2013/LC010ZLP017EV.mp3",
+   "sha256Metadata": "77ffc7acf15b6e900702ceca54b82efbf4d4cd77cb126179a96fdcb70669658e",
+   "size": 54186830,
+   "uploadedAt": "2026-11-19T11:40:26+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2013
+ },
+ "audio/2014/LC010ZLP017EV.mp3": {
+  "bitRate": 192000,
+  "bytes": 55544152,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC010ZLP017EV.mp3",
+  "durationSeconds": 2314.266083,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "US7IgdsQSaHWahB9zuxvQA==",
+  "path": "audio/2014/LC010ZLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010ZLP017EV.mp3",
+  "sha256": "950451c3892f04c619cd2a87870b50fb0b2830f56db1784d5690bdb57ecc1957",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2014.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "DNumzQ==",
+   "generation": "1795088431970859",
+   "md5Hash": "US7IgdsQSaHWahB9zuxvQA==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2014/LC010ZLP017EV.mp3",
+   "sha256Metadata": "950451c3892f04c619cd2a87870b50fb0b2830f56db1784d5690bdb57ecc1957",
+   "size": 55544152,
+   "uploadedAt": "2026-11-19T11:40:32+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2014
+ },
+ "audio/2015/LC010ZLP017EV.mp3": {
+  "bitRate": 256000,
+  "bytes": 72685913,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2015/LC010ZLP017EV.mp3",
+  "durationSeconds": 2271.373062,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "2ASrbtWAKEFFS0lMkfhwWA==",
+  "path": "audio/2015/LC010ZLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010ZLP017EV.mp3",
+  "sha256": "82f1bd824d49edc6f214f7c41964622434662ae7f10cf313f22dfa92bd9591ca",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2015.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "3aXSpA==",
+   "generation": "1795088439776277",
+   "md5Hash": "2ASrbtWAKEFFS0lMkfhwWA==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2015/LC010ZLP017EV.mp3",
+   "sha256Metadata": "82f1bd824d49edc6f214f7c41964622434662ae7f10cf313f22dfa92bd9591ca",
+   "size": 72685913,
+   "uploadedAt": "2026-11-19T11:40:40+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2015
+ },
+ "audio/2016/LC010ZLP017EV.mp3": {
+  "bitRate": 46909,
+  "bytes": 13025412,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC010ZLP017EV.mp3",
+  "durationSeconds": 2221.152,
+  "fileType": "MPG3",
+  "format": "2 ch,  24000 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 576 frames/packet, 0 bytes/frame",
+  "md5": "ghPc9nyf9gCV5sKloII+Mg==",
+  "path": "audio/2016/LC010ZLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010ZLP017EV.mp3",
+  "sha256": "ba7499b08b0ee05f76cd3f9b49c59779587e347ff55574afd06b3dee66b65cf5",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2016.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "K3L5Cg==",
+   "generation": "1795088442810094",
+   "md5Hash": "ghPc9nyf9gCV5sKloII+Mg==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2016/LC010ZLP017EV.mp3",
+   "sha256Metadata": "ba7499b08b0ee05f76cd3f9b49c59779587e347ff55574afd06b3dee66b65cf5",
+   "size": 13025412,
+   "uploadedAt": "2026-11-19T11:40:43+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2016
+ },
+ "audio/2017/LC010ZLP017EV.mp3": {
+  "bitRate": 29168,
+  "bytes": 8055422,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC010ZLP017EV.mp3",
+  "durationSeconds": 2208.966531,
+  "fileType": "MPG3",
+  "format": "2 ch,  22050 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 576 frames/packet, 0 bytes/frame",
+  "md5": "KEtNhUU3jRlCC+XGn/70DQ==",
+  "path": "audio/2017/LC010ZLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010ZLP017EV.mp3",
+  "sha256": "49529e5a875dc1404eb20ee121a59bb101679851f0cd4e268aae2f787759a7bf",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2017.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "lJ1P7g==",
+   "generation": "1795088445346312",
+   "md5Hash": "KEtNhUU3jRlCC+XGn/70DQ==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2017/LC010ZLP017EV.mp3",
+   "sha256Metadata": "49529e5a875dc1404eb20ee121a59bb101679851f0cd4e268aae2f787759a7bf",
+   "size": 8055422,
+   "uploadedAt": "2026-11-19T11:40:45+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2017
+ },
+ "audio/2018/LC010ZLP017EV.mp3": {
+  "bitRate": 256000,
+  "bytes": 71155346,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC010ZLP017EV.mp3",
+  "durationSeconds": 2223.542844,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "Cv6F6W/fODLvhpiLJbfMvw==",
+  "path": "audio/2018/LC010ZLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010ZLP017EV.mp3",
+  "sha256": "a50905e94e274360f5621b5e5930283afdb53462da18475439a4367757cac1bf",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2018.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "OOWGVQ==",
+   "generation": "1795088452723464",
+   "md5Hash": "Cv6F6W/fODLvhpiLJbfMvw==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2018/LC010ZLP017EV.mp3",
+   "sha256Metadata": "a50905e94e274360f5621b5e5930283afdb53462da18475439a4367757cac1bf",
+   "size": 71155346,
+   "uploadedAt": "2026-11-19T11:40:53+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2018
+ },
+ "audio/2019/LC010ZLP017EV.mp3": {
+  "bitRate": 256000,
+  "bytes": 72130027,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC010ZLP017EV.mp3",
+  "durationSeconds": 2254.001625,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "vyX4ePoo5U83SJWMgbvy3g==",
+  "path": "audio/2019/LC010ZLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010ZLP017EV.mp3",
+  "sha256": "81ba72f182beb8b5327df79501bff0a41295df058ea9bc902d05be952dc080fe",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2019.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "JR7Fgw==",
+   "generation": "1795088460967755",
+   "md5Hash": "vyX4ePoo5U83SJWMgbvy3g==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2019/LC010ZLP017EV.mp3",
+   "sha256Metadata": "81ba72f182beb8b5327df79501bff0a41295df058ea9bc902d05be952dc080fe",
+   "size": 72130027,
+   "uploadedAt": "2026-11-19T11:41:01+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2019
+ },
+ "audio/2020/LC010ZLP017EV.mp3": {
+  "bitRate": 256000,
+  "bytes": 72042130,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC010ZLP017EV.mp3",
+  "durationSeconds": 2251.316563,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "XP7lQt1DD2Kv/gETPC8cNA==",
+  "path": "audio/2020/LC010ZLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010ZLP017EV.mp3",
+  "sha256": "46204cb41f5fc8f735898c145503f869b8b351c204503e3463ca23c771ff695e",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2020.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "7CuAMQ==",
+   "generation": "1795088468681508",
+   "md5Hash": "XP7lQt1DD2Kv/gETPC8cNA==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2020/LC010ZLP017EV.mp3",
+   "sha256Metadata": "46204cb41f5fc8f735898c145503f869b8b351c204503e3463ca23c771ff695e",
+   "size": 72042130,
+   "uploadedAt": "2026-11-19T11:41:09+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2020
+ },
+ "audio/2021/LC010ZLP017EV.mp3": {
+  "bitRate": 256000,
+  "bytes": 71966980,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC010ZLP017EV.mp3",
+  "durationSeconds": 2248.968125,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "wFbnar9xFlb5IbG+bXJMTg==",
+  "path": "audio/2021/LC010ZLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010ZLP017EV.mp3",
+  "sha256": "26d3febedd0b12947e846cc91b96e6be3737dccbefcf968929e9401426a85efe",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2021.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "PgF2hA==",
+   "generation": "1795088476224143",
+   "md5Hash": "wFbnar9xFlb5IbG+bXJMTg==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2021/LC010ZLP017EV.mp3",
+   "sha256Metadata": "26d3febedd0b12947e846cc91b96e6be3737dccbefcf968929e9401426a85efe",
+   "size": 71966980,
+   "uploadedAt": "2026-11-19T11:41:16+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2021
+ },
+ "audio/2022/LC010CLP017BV.mp3": {
+  "bitRate": 256000,
+  "bytes": 76083530,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC010CLP017BV.mp3",
+  "durationSeconds": 2377.610312,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "xa6jluCX5z9NJ/SId1fKJg==",
+  "path": "audio/2022/LC010CLP017BV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010CLP017BV.mp3",
+  "sha256": "6054828b9d4f246b9f548d4a5a05bae6f04e5f56a580a5664770faebfb042eb2",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2022.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "nky5cw==",
+   "generation": "1795088484052651",
+   "md5Hash": "xa6jluCX5z9NJ/SId1fKJg==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2022/LC010CLP017BV.mp3",
+   "sha256Metadata": "6054828b9d4f246b9f548d4a5a05bae6f04e5f56a580a5664770faebfb042eb2",
+   "size": 76083530,
+   "uploadedAt": "2026-11-19T11:41:24+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2022
+ },
+ "audio/2023/LC010CLP017EV.mp3": {
+  "bitRate": 256000,
+  "bytes": 76646320,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC010CLP017EV.mp3",
+  "durationSeconds": 2395.1975,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "e3S0lRl+oBY2X+WSoLxWyA==",
+  "path": "audio/2023/LC010CLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010CLP017EV.mp3",
+  "sha256": "d8e86734141a6187c0d5b970b38aa9aa524565aed1220d8d7e76df12d31dc458",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2023.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "jeG4uA==",
+   "generation": "1795088492326837",
+   "md5Hash": "e3S0lRl+oBY2X+WSoLxWyA==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2023/LC010CLP017EV.mp3",
+   "sha256Metadata": "d8e86734141a6187c0d5b970b38aa9aa524565aed1220d8d7e76df12d31dc458",
+   "size": 76646320,
+   "uploadedAt": "2026-11-19T11:41:33+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2023
+ },
+ "audio/2024/LC010CLP017EV.mp3": {
+  "bitRate": 256000,
+  "bytes": 77210780,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC010CLP017EV.mp3",
+  "durationSeconds": 2412.836875,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "3Knz280ta3nyyrY723rLng==",
+  "path": "audio/2024/LC010CLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010CLP017EV.mp3",
+  "sha256": "badb9cb95dab3638ba0714f1f3077539173b0ab619b4b5d6ebbd32a6a779bd85",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2024.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "NyEogw==",
+   "generation": "1795088500367283",
+   "md5Hash": "3Knz280ta3nyyrY723rLng==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2024/LC010CLP017EV.mp3",
+   "sha256Metadata": "badb9cb95dab3638ba0714f1f3077539173b0ab619b4b5d6ebbd32a6a779bd85",
+   "size": 77210780,
+   "uploadedAt": "2026-11-19T11:41:40+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2024
+ },
+ "audio/2025/LC010CLP017EV.mp3": {
+  "bitRate": 256000,
+  "bytes": 75338710,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC010CLP017EV.mp3",
+  "durationSeconds": 2354.334688,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "UBOc8tcCqtjVPFhZdDwCzg==",
+  "path": "audio/2025/LC010CLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010CLP017EV.mp3",
+  "sha256": "ba7bb5e6678741dfd39573947727a5fb5a1434a7cbbd626199130a00d70abf8f",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2025.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "o2z8TQ==",
+   "generation": "1795088508127808",
+   "md5Hash": "UBOc8tcCqtjVPFhZdDwCzg==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2025/LC010CLP017EV.mp3",
+   "sha256Metadata": "ba7bb5e6678741dfd39573947727a5fb5a1434a7cbbd626199130a00d70abf8f",
+   "size": 75338710,
+   "uploadedAt": "2026-11-19T11:41:48+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2025
+ },
+ "audio/2026/LC010CLP017EV.mp3": {
+  "bitRate": 256000,
+  "bytes": 78597715,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC010CLP017EV.mp3",
+  "durationSeconds": 2456.178594,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "5+9t8Rym1zSZREnXb3V0Tg==",
+  "path": "audio/2026/LC010CLP017EV.mp3",
+  "priorVerification": [
+   "data/frenchAudio.json"
+  ],
+  "secFileid": "LC010CLP017EV.mp3",
+  "sha256": "a5b3f3f8290d50f7a3c5055feb7393a0aea0b33671162c935943f2c2efe1be3a",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-French-Bank-Atlas-20261007/examiner-reports/french/audio/2026.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=86400",
+   "contentType": "audio/mpeg",
+   "crc32c": "0u1z7w==",
+   "generation": "1795088516371014",
+   "md5Hash": "5+9t8Rym1zSZREnXb3V0Tg==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2026/LC010CLP017EV.mp3",
+   "sha256Metadata": "a5b3f3f8290d50f7a3c5055feb7393a0aea0b33671162c935943f2c2efe1be3a",
+   "size": 78597715,
+   "uploadedAt": "2026-11-19T11:41:56+00:00"
+  },
+  "subjects": [
+   "french"
+  ],
+  "year": 2026
+ }
+}

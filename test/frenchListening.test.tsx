@@ -5,6 +5,7 @@ import { FRENCH_LISTENING_CARDS as cards } from '../components/MarkBank/cards/fr
 import SessionScreen from '../components/MarkBank/SessionScreen';
 import VaultQuestionCard from '../components/PaperTrail/VaultQuestionCard';
 import { frenchAudioForPaper } from '../components/PaperTrail/frenchAudio';
+import { audioPlaybackUrl } from '../components/MarkBank/audioStorage';
 import { listeningExerciseKey, visibleSessionExercises, resolveSessionQueue } from '../components/MarkBank/sessionPlanning';
 import { tariffReconciles } from '../types/markBank';
 import { topicsForPaper, browseTopicIdsForQuestion } from '../components/PaperTrail/topics';
@@ -466,7 +467,7 @@ describe('reviewed French listening tasks', () => {
     const next = byId('ol-listening-la-q2a');
     const onGrade = vi.fn();
     const { baseElement } = render(<SessionScreen cards={[first, next]} subjectLabel="French" onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()} />);
-    expect(baseElement.querySelector('audio')).toHaveAttribute('src', audio[0].source.playbackUrl);
+    expect(baseElement.querySelector('audio')).toHaveAttribute('src', audioPlaybackUrl(audio[0].source));
     expect(screen.getAllByRole('radio')).toHaveLength(4);
     expect(screen.queryByText('Camping (3rd option)')).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('radio', { name: 'camping' }));
@@ -489,7 +490,7 @@ describe('reviewed French listening tasks', () => {
     });
     const { container } = render(<VaultQuestionCard sibling={{ subjectId: 'french', level: 'ordinary', lang: 'ev', year: 2026, fileid: 'LC010GLPA00BV.pdf', paperKey: 'aural', n: 'LA-Q1' }} saved={false} onToggleReview={vi.fn()} onOpenInPaper={vi.fn()} />);
     const player = container.querySelector('audio')!;
-    expect(player).toHaveAttribute('src', audio[0].source.playbackUrl);
+    expect(player).toHaveAttribute('src', audioPlaybackUrl(audio[0].source));
     fireEvent.error(player);
     expect(screen.getByRole('link', { name: 'Open the SEC recording' })).toHaveAttribute('href', audio[0].source.canonicalUrl);
     expect(within(container).queryByText('Camping (3rd option)')).not.toBeInTheDocument();
