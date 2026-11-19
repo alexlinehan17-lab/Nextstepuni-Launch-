@@ -7585,7 +7585,8 @@
     "Q": {
      "page": 7,
      "start": "Name the parts labelled",
-     "end": "A, B and C."
+     "end": "A, B and C.",
+     "nth": 2
     }
    },
    "rows": [

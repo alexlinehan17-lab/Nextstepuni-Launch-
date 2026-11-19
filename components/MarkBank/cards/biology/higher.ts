@@ -50136,7 +50136,7 @@ export const CARDS: SecCard[] = [
     id: "bio-2023-hl-deferred-q16-b-i", topicId: "bio-2-4", conceptId: "parts-of-the-ear",
     section: "C", questionRef: "2023 HL Q16(b)(i) — Deferred sitting",
     stem: "The diagram shows the internal structure of the human ear.",
-    questionText: "Name the parts labelled X, Y and Z. (ii) The pollen grain can be carried to the stigma by animals. Give one other way in which pollen can be carried to the stigma of a flower. (iii) Copy the diagram into your answerbook and draw in a pollen tube to show the path taken by the male gametes. (iv) The pollen grain has a generative nucleus. Describe how this nucleus gives rise to the male gametes. (v) Give an account of the development of the egg cell within structure Z. (vi) Two fertilisations occur during sexual reproduction in flowering plants. Describe what happens during each fertilisation. (b) The diagram shows the internal structure of the human ear. (i) Name the parts labelled A, B and C.",
+    questionText: "Name the parts labelled A, B and C.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r1", kind: "point", verbatim: "A — Semi-circular canals", marks: 1 },
@@ -56441,7 +56441,7 @@ export const CARDS: SecCard[] = [
     id: "bio-2025-hl-deferred-q16-d-iii-1", topicId: "bio-2-4", conceptId: "graphing-iaa-data",
     section: "C", questionRef: "2025 HL Q16(d)(iii)1 — Deferred sitting",
     stem: "Some external factors that regulate the growth of plants are light intensity, gravity and temperature. Plants respond to these external factors through tropisms. A botanist investigated the effect of using different concentrations of IAA on the growth of roots and shoots of germinating cress seeds. They obtained the data below.",
-    questionText: "1. On the graph paper in your answerbook, plot line graphs to illustrate the data obtained by the botanist. Put the relative IAA concentrations (0, 10–1, 100, 101, 102) on the horizontal axis.",
+    questionText: "1. On the graph paper in your answerbook, plot line graphs to illustrate the data obtained by the botanist. Put the relative IAA concentrations (0, 10⁻¹, 10⁰, 10¹, 10²) on the horizontal axis.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
     { id: "r1", kind: "criterion", verbatim: "x-axis labelled correctly", marks: 2 },
