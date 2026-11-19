@@ -19353,4 +19353,3552 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC067ALP007EV"
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q1-a", topicId: "music-2-12", conceptId: "mus-feature-identify-lines-music",
+    section: "L", questionRef: "2020 HL Listening Q1(a)",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 1, played three times.\n• The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave",
+    questionText: "Identify one feature of the vocal music in lines 1–2.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the vocal music", marks: null, contextNote: "The scheme reads: “Up to 2 marks for a valid identification of one correct feature of the vocal music in lines 1-2” “For example:” “Partially correct answer = 1 mark” “moves by step = 0;” “sung by a male voice = 0;” “reference to dynamics /tempo / texture = 0;”", openList: true, group: {"claimMax":1,"perOption":2,"options":["triadic","minor/modal tonality","repeated (2-note) figure","moves (mostly) by leap","small range/ range of a 6th","swung rhythm","syncopation","dotted rhythm","repeated motif","repeated notes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 2,
+                      "r": [
+                            0.08,
+                            0.29,
+                            0.92,
+                            0.36
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q1-a-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q1-a-score.png",
+          "srcHash": "172be6566411cea999ea9a1c41eaf71e",
+          "alt": "The printed lyrics (lines 1-5) and the question, printed with Listening Q1(a) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q1-b", topicId: "music-2-12", conceptId: "mus-change-describe-line-music",
+    section: "L", questionRef: "2020 HL Listening Q1(b)",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 1, played three times.\n• The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave",
+    questionText: "Describe one change which takes place in the vocal music in line 3.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A change in the vocal music in line 3", marks: null, contextNote: "The scheme reads: “Up to 3 marks for a valid description of how the vocal music changes in line 3.” “For example:”", openList: true, group: {"claimMax":1,"perOption":3,"options":["no longer solo","backing vocals/chorus added","(vocal) harmony added","pitch is higher in solo part","diminution/ values halved in the 2nd part/backing vocals","contrapuntal","imitation"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 2,
+                      "r": [
+                            0.08,
+                            0.36,
+                            0.92,
+                            0.46
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q1-b-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q1-b-score.png",
+          "srcHash": "5c891b52e3a5b17b2c2b2196e5ce3772",
+          "alt": "The printed lyrics (lines 1-5) and the question; part (a) and its answer line sit between them, printed with Listening Q1(b) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q1-c", topicId: "music-2-12", conceptId: "mus-accompaniment-describe-feature-instrumental",
+    section: "L", questionRef: "2020 HL Listening Q1(c)",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 1, played three times.\n• The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave",
+    questionText: "Describe one feature of the instrumental accompaniment in lines 1–4.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the instrumental accompaniment", marks: null, contextNote: "The scheme reads: “Up to 3 marks for a valid description of one feature of the instrumental accompaniment in lines 1 - 4” “For example:”", openList: true, group: {"claimMax":1,"perOption":3,"options":["repeated crotchet/notes on (bass) drum","repeated (bass) notes on bass guitar","repeated 3rds/ repeated figure on piano","(descending) 3rds on clarinets","(jazzy) slide on clarinet","clarinets double vocal harmony line","flattened 7th + reference","use of chimes (accept bell(s)) + reference"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 2,
+                      "r": [
+                            0.08,
+                            0.466,
+                            0.92,
+                            0.57
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q1-c-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q1-c-score.png",
+          "srcHash": "b31f63bb3f7ab1c1d33a9845b3042233",
+          "alt": "The printed lyrics (lines 1-5) and the question; parts (a) and (b) and their answer lines sit between them, printed with Listening Q1(c) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q1-d", topicId: "music-2-12", conceptId: "mus-cadence-line",
+    section: "L", questionRef: "2020 HL Listening Q1(d)",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 1, played three times.\n• The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave",
+    questionText: "The cadence at the end of Line 5 is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "imperfect", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 2,
+                      "r": [
+                            0.08,
+                            0.578,
+                            0.92,
+                            0.64
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q1-d-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q1-d-score.png",
+          "srcHash": "4e2cdf40db62cc265c0dd1a090aa0727",
+          "alt": "The printed lyrics (lines 1-5), the question and its three printed options (perfect, plagal, imperfect); parts (a)-(c) and their answer lines sit between them, printed with Listening Q1(d) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q1-e", topicId: "music-2-12", conceptId: "mus-four-given-insert-missing",
+    section: "L", questionRef: "2020 HL Listening Q1(e)",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 2. An excerpt from verse 1 of She’s Leaving Home played three times. An outline score is printed below.",
+    questionText: "Insert the four missing notes at X on the score. Use the given rhythm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "0.5 for each correct pitch.", marks: 2, contextNote: "The scheme reads: “Bars 5 - 10” “Pitch only (rhythm given)” “Mark the first 4 notes from left to right:” The scheme prints its answer in music notation: its print is shown on this card.", permittedMarks: [0,0.5,1,1.5,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 2,
+                      "r": [
+                            0.08,
+                            0.705,
+                            0.93,
+                            0.84
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2. An excerpt from verse 1 of She’s Leaving Home played three times. An outline score is printed below.",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q1-e-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q1-e-score.png",
+          "srcHash": "52c2e9aecef6de2de104b4cfd414aa93",
+          "alt": "The outline score (bars 1-6, X over bars 2-3, rhythm given) and the question, printed with Listening Q1(e) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2020-HL-scheme-p10-l-q1-e",
+          "src": "/exam-figures/music/markbank/music-2020-HL-scheme-p10-l-q1-e.png",
+          "srcHash": "49a1c3d5dd9a94f8085bebc2ca6c2726",
+          "alt": "The marking scheme’s printed answer for Listening Q1(e): the four notes printed on a treble stave, with its pitch-only rule, cropped from page 10 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q1-f", topicId: "music-2-12", conceptId: "mus-accompaniment-describe-excerpt-features",
+    section: "L", questionRef: "2020 HL Listening Q1(f)",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 3. Verse 1 from She’s Leaving Home played twice.",
+    questionText: "Describe two features of the accompaniment in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of the accompaniment", marks: null, contextNote: "The scheme reads: “Bars 1 – 36” “Up to 2 marks each for two valid descriptions of the accompaniment in the excerpt.” “For example:” “2+2”", openList: true, group: {"claimMax":2,"perOption":2,"options":["broken chords in the harp (opening of excerpt)","block chords in the harp","scale passages (during singing)","held notes","syncopation"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.09,
+                            0.92,
+                            0.265
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3. Verse 1 from She’s Leaving Home played twice.",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q1-f-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q1-f-score.png",
+          "srcHash": "f02b61bcd1ee1ec739ee559db13c2575",
+          "alt": "The printed question, printed with Listening Q1(f) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q1-g", topicId: "music-2-12", conceptId: "mus-before-describe-enter-excerpt",
+    section: "L", questionRef: "2020 HL Listening Q1(g)",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 4, played three times.\n• The lyrics are printed below. Line 1 It was twenty years ago today Line 2 Sergeant Pepper taught the band to play Line 3 They’ve been going in and out of style Line 4 But they’re guaranteed to raise a smile Line 5 So may I introduce to you Line 6 The act you’ve known for all these years; Line 7 Sergeant Pepper’s Lonely Hearts Club Band",
+    questionText: "Describe one feature of the opening of this excerpt (before the instruments enter).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the opening", marks: null, contextNote: "The scheme reads: “Up to 3 marks for a description of one valid feature of the opening of this excerpt (before the vocals enter).” “For example:” “Accept references to recording / production techniques.”", openList: true, group: {"claimMax":1,"perOption":3,"options":["sound effects / audience noise / instruments tuning up","there is a ‘buzz’ of anticipation / an outdoors feel","the listener becomes part of the audience at an outdoor concert"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.479,
+                            0.92,
+                            0.575
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 4",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q1-g-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q1-g-score.png",
+          "srcHash": "c83eb77a62584b77a6811b14812b8a10",
+          "alt": "The printed question, printed with Listening Q1(g) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q1-h", topicId: "music-2-12", conceptId: "mus-drum-heard-lines-rhythm",
+    section: "L", questionRef: "2020 HL Listening Q1(h)",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 4, played three times.\n• The lyrics are printed below. Line 1 It was twenty years ago today Line 2 Sergeant Pepper taught the band to play Line 3 They’ve been going in and out of style Line 4 But they’re guaranteed to raise a smile Line 5 So may I introduce to you Line 6 The act you’ve known for all these years; Line 7 Sergeant Pepper’s Lonely Hearts Club Band",
+    questionText: "The snare drum rhythm heard in lines 1–4 is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The snare drum rhythm heard in lines 1–4 is", marks: 2, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.592,
+                            0.92,
+                            0.67
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 4",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q1-h-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q1-h-score.png",
+          "srcHash": "89e1db0ae910aa7bc213367069ef3779",
+          "alt": "The printed lyrics (lines 1-7), the question and its three rhythm options in notation; part (g) and its answer lines sit between them, printed with Listening Q1(h) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2020-HL-scheme-p11-l-q1-h",
+          "src": "/exam-figures/music/markbank/music-2020-HL-scheme-p11-l-q1-h.png",
+          "srcHash": "c3b29ca254097b9451af4aa9796c6013",
+          "alt": "The marking scheme’s printed answer for Listening Q1(h): the rhythm the scheme accepts, printed in notation, cropped from page 11 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q1-i", topicId: "music-2-12", conceptId: "mus-describe-excerpt-features-follows",
+    section: "L", questionRef: "2020 HL Listening Q1(i)",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 4, played three times.\n• The lyrics are printed below. Line 1 It was twenty years ago today Line 2 Sergeant Pepper taught the band to play Line 3 They’ve been going in and out of style Line 4 But they’re guaranteed to raise a smile Line 5 So may I introduce to you Line 6 The act you’ve known for all these years; Line 7 Sergeant Pepper’s Lonely Hearts Club Band",
+    questionText: "Describe two features of the music in this song which immediately follows the music in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of the music that follows", marks: null, contextNote: "The scheme reads: “Up to 2 marks for each of two valid features of the music that immediately follows the excerpt (next 5 bars –the interlude only).” “For example:” “Partially correct answer = 1 mark”", openList: true, group: {"claimMax":2,"perOption":2,"options":["audience applause/sampled sounds","French horns enter/play","polyphonic texture","there is a change of key (f major)","semiquaver movement","ends with D7 chord","descending bass line (in bass guitar)","tonic‐dominant bass (in bass guitar)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.676,
+                            0.92,
+                            0.865
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 4",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q1-i-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q1-i-score.png",
+          "srcHash": "3109afcd9ec1dc04c23e57b0792309f8",
+          "alt": "The printed question, printed with Listening Q1(i) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q2-a", topicId: "music-2-10", conceptId: "mus-excerpt-features-identify-melody",
+    section: "L", questionRef: "2020 HL Listening Q2(a)",
+    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    questionText: "Identify two features of the melody in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of the melody", marks: null, contextNote: "The scheme reads: “Up to 1.5 marks for each of two valid features of the melody in the excerpt” “For example:” “Partially correct answer = 1 mark” “Reference to dynamics / texture = 0” “1.5+1.5”", openList: true, group: {"claimMax":2,"perOption":1.5,"options":["syncopation","f major","opening notes outline f major","melody repeated a 4th lower/in C major","the melody is repeated at a lower pitch","there is a triadic element","sequence"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.156,
+                            0.92,
+                            0.26
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 1",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q2-a-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q2-a-score.png",
+          "srcHash": "5efe2d64e90fcddb9a27c39e6bb7d280",
+          "alt": "The printed question, printed with Listening Q2(a) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q2-b", topicId: "music-2-10", conceptId: "mus-accompaniment-describe-excerpt-feature",
+    section: "L", questionRef: "2020 HL Listening Q2(b)",
+    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    questionText: "Describe one feature of the accompaniment in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the accompaniment", marks: null, contextNote: "The scheme reads: “Up to 2marks for a description of one valid feature of the accompaniment in this excerpt.” “For example:” “Partially correct answer = 1 mark”", openList: true, group: {"claimMax":1,"perOption":2,"options":["tremolo violins & violas / upper strings (played pppp)","cellos and basses play descending /ascending (staccato) arpeggios","cellos and basses play an agitated figure","violin 1 plays the opening bar(s) of the main (waltz) theme","viola plays (almost the entire first phrase of) the waltz theme","cellos, basses and violin 2 provide a vamping (style) /waltz accompaniment"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.282,
+                            0.92,
+                            0.375
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 1",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q2-b-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q2-b-score.png",
+          "srcHash": "96d78d62da7ee9f044c6434c6a05d285",
+          "alt": "The printed question, printed with Listening Q2(b) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q2-c", topicId: "music-2-10", conceptId: "mus-excerpt-identify-instrument-melody",
+    section: "L", questionRef: "2020 HL Listening Q2(c)",
+    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    questionText: "Identify the instrument which plays the melody in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Clarinet", marks: 1.5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.425,
+                            0.92,
+                            0.452
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 2",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q2-c-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q2-c-score.png",
+          "srcHash": "23e5e588d51d656cff988e1afb6d99f4",
+          "alt": "The printed question, printed with Listening Q2(c) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q2-d", topicId: "music-2-10", conceptId: "mus-accompaniment-excerpt-features-following",
+    section: "L", questionRef: "2020 HL Listening Q2(d)",
+    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    questionText: "Which one of the following features can be heard in the accompaniment in this excerpt?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pedal notes", marks: 1.5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.476,
+                            0.92,
+                            0.535
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 2",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q2-d-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q2-d-score.png",
+          "srcHash": "ca014646cfb7b050060925d6de6548ec",
+          "alt": "The question and its three printed options (antiphonal dialogue, pedal notes, off-beat chords), printed with Listening Q2(d) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q2-e-i", topicId: "music-2-10", conceptId: "mus-excerpt-heard-name-theme",
+    section: "L", questionRef: "2020 HL Listening Q2(e)(i)",
+    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    questionText: "Name the theme heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 0.5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Idée Fixe", marks: 0.5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.555,
+                            0.92,
+                            0.584
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 2",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q2-e-i-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q2-e-i-score.png",
+          "srcHash": "0370155214170304c428217ecbea7503",
+          "alt": "The printed question (i), printed with Listening Q2(e)(i) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q2-e-ii", topicId: "music-2-10", conceptId: "mus-berlioz-every-fantastique-movement",
+    section: "L", questionRef: "2020 HL Listening Q2(e)(ii)",
+    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    questionText: "Berlioz uses this theme in every movement of Symphonie Fantastique. What is the reason for this?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1.5, contextNote: "The scheme reads: “Up to 1.5 marks for a valid reason”", permittedMarks: [0,1.5], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.586,
+                            0.92,
+                            0.73
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 2",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q2-e-ii-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q2-e-ii-score.png",
+          "srcHash": "83253d30749daffac0e8a5c8337f7c29",
+          "alt": "The printed question (ii), printed with Listening Q2(e)(ii) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q3-a", topicId: "music-2-9", conceptId: "mus-excerpt-from-taken-this",
+    section: "L", questionRef: "2020 HL Listening Q3(a)",
+    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    questionText: "This excerpt is taken from the",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "recapitulation", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.352,
+                            0.92,
+                            0.41
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · Excerpt 1",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q3-a-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q3-a-score.png",
+          "srcHash": "e700cb318571086335eb1b9f97d9648f",
+          "alt": "The question and its three printed options (exposition, development, recapitulation), printed with Listening Q3(a) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q3-b", topicId: "music-2-9", conceptId: "mus-bars-features-melody",
+    section: "L", questionRef: "2020 HL Listening Q3(b)",
+    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    questionText: "The melody in bars 5 and 6 features",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sequence", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.414,
+                            0.92,
+                            0.472
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · Excerpt 1",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q3-b-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q3-b-score.png",
+          "srcHash": "b4846e044dbc35641e2f9055b1176546",
+          "alt": "The outline score (bars 1-8), the question and its three printed options (repetition, imitation, sequence); part (a) sits between them, printed with Listening Q3(b) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q3-c", topicId: "music-2-9", conceptId: "mus-describe-difference-excerpt-first",
+    section: "L", questionRef: "2020 HL Listening Q3(c)",
+    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    questionText: "In this excerpt, we first hear the melody played by the orchestra and then by the soloist. Describe one difference in the melody when played by the soloist.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Bars 9-16: a difference in the melody played by the soloist", marks: null, contextNote: "The scheme reads: “Up to 2 marks for a valid description of one correct difference in the melody when played by the soloist in bars 9-16.” “For example:” “Partially correct answer = 1 mark”", openList: true, group: {"claimMax":1,"perOption":2,"options":["Ornamentation/grace notes","Higher (octave) pitch","Semi‐quaver scale passages","Broken chords","Piano plays melody"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.476,
+                            0.92,
+                            0.59
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · Excerpt 1",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q3-c-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q3-c-score.png",
+          "srcHash": "30d06acacf6b08e2fde4524b02bfcf02",
+          "alt": "The printed question, printed with Listening Q3(c) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q3-d", topicId: "music-2-9", conceptId: "mus-describe-excerpt-feature-music",
+    section: "L", questionRef: "2020 HL Listening Q3(d)",
+    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    questionText: "Describe one feature of the piano music in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the piano music", marks: null, contextNote: "The scheme reads: “Up to 2 marks for a valid description of one correct feature of the piano music in the excerpt.” “For example:” “partially correct answer = 1 mark”", openList: true, group: {"claimMax":1,"perOption":2,"options":["(ascending / descending) scales","ornamentation","semiquavers","broken chords","(descending) octaves"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.65,
+                            0.92,
+                            0.745
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · Excerpt 2",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q3-d-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q3-d-score.png",
+          "srcHash": "fb1cf4b08b74d3541a115406fc1c3e10",
+          "alt": "The printed question, printed with Listening Q3(d) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q3-e", topicId: "music-2-9", conceptId: "mus-excerpt-features-music-orchestral",
+    section: "L", questionRef: "2020 HL Listening Q3(e)",
+    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    questionText: "The orchestral music in this excerpt features",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Descending scales", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.76,
+                            0.92,
+                            0.818
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · Excerpt 2",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q3-e-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q3-e-score.png",
+          "srcHash": "9ac51939018513bd40bbff2919f81ae4",
+          "alt": "The question and its three printed options (Alberti accompaniment, descending arpeggios, descending scales), printed with Listening Q3(e) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q3-f", topicId: "music-2-9", conceptId: "mus-chord-excerpt-final-identify",
+    section: "L", questionRef: "2020 HL Listening Q3(f)",
+    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    questionText: "Identify the tonality of the final chord of the excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Major", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.823,
+                            0.92,
+                            0.85
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · Excerpt 2",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q3-f-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q3-f-score.png",
+          "srcHash": "b40f1ed85f5106a94e42836b24de1e9f",
+          "alt": "The printed question, printed with Listening Q3(f) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q4-a", topicId: "music-2-11", conceptId: "mus-cello-chord-excerpt-played",
+    section: "L", questionRef: "2020 HL Listening Q4(a)",
+    stem: "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played three times.\n• Answer the following questions:",
+    questionText: "The chord played by the violin and cello throughout this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "major (chord)", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.141,
+                            0.92,
+                            0.198
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q4-a-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q4-a-score.png",
+          "srcHash": "14204429dd8c0304d078ddb03177b3c9",
+          "alt": "The question and its three printed options (a major chord, a minor chord, a discord), printed with Listening Q4(a) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q4-b", topicId: "music-2-11", conceptId: "mus-describe-excerpt-feature-music",
+    section: "L", questionRef: "2020 HL Listening Q4(b)",
+    stem: "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played three times.\n• Answer the following questions:",
+    questionText: "Describe one feature of the music played by the piano in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the piano music", marks: null, contextNote: "The scheme reads: “Up to 2 marks for an identification of one correct feature of the music played by the piano” “For example:”", openList: true, group: {"claimMax":1,"perOption":2,"options":["Piano punctuates the music with chords","chord clusters"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.22,
+                            0.92,
+                            0.318
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q4-b-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q4-b-score.png",
+          "srcHash": "a06140a64a199bea99236852c9a3df76",
+          "alt": "The printed question, printed with Listening Q4(b) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q4-c", topicId: "music-2-11", conceptId: "mus-describe-excerpt-feature-flute",
+    section: "L", questionRef: "2020 HL Listening Q4(c)",
+    stem: "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played three times.\n• Answer the following questions:",
+    questionText: "Describe one feature of the music played by the flute in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the flute music", marks: null, contextNote: "The scheme reads: “Up to 2 marks for a description of any valid feature of the music played by the flute in the excerpt.” “For example:” “Partially correct answer = 1 mark”", openList: true, group: {"claimMax":1,"perOption":2,"options":["melody derived from Dies Irae","diminution","uses intervals of 2nds and 3rds","gets louder as the excerpt progresses","flutter tonguing","pitch gets much higher","moves in semiquavers","the melody is played at a (very) high pitch"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.346,
+                            0.92,
+                            0.44
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q4-c-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q4-c-score.png",
+          "srcHash": "b1c5f30eb94a7207595089f47d7657f7",
+          "alt": "The printed question, printed with Listening Q4(c) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q4-d", topicId: "music-2-11", conceptId: "mus-excerpt-identify-instruments-percussion",
+    section: "L", questionRef: "2020 HL Listening Q4(d)",
+    stem: "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played three times.\n• Answer the following questions:",
+    questionText: "Identify three percussion instruments playing in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Percussion instruments", marks: null, contextNote: "The scheme reads: “Allow piano” “3 correct different instruments in any order.” “0.5 mark for each correct instrument.”", group: {"claimMax":3,"perOption":0.5,"options":["marimba","bass drum","cymbal","guiro","Gong","crotales","piano"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.471,
+                            0.92,
+                            0.53
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q4-d-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q4-d-score.png",
+          "srcHash": "7de4350bc50a03e8398d6b85797cbcd5",
+          "alt": "The printed question, printed with Listening Q4(d) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q4-e", topicId: "music-2-11", conceptId: "mus-danse-deane-death-does",
+    section: "L", questionRef: "2020 HL Listening Q4(e)",
+    stem: "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played three times.\n• Answer the following questions:",
+    questionText: "How does Raymond Deane portray the image of death in the music of Seachanges with Danse Macabre?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2.5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Up to 2.5 marks for a description of how Deane portrays the image of death in Seachanges with Danse Macabre.", marks: 2.5, contextNote: "The scheme reads: “For example:” “A carnival / festival‐like approach reflected in the Totentanz rhythm; Totentanz: a mediaeval 'dance of the dead ones’; use of maracas; dance like rhythms;” “Partially correct answer = 1 mark”", permittedMarks: [0,1,2.5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.558,
+                            0.92,
+                            0.735
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q4-e-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q4-e-score.png",
+          "srcHash": "b494327735d04d59a13c43b342317832",
+          "alt": "The printed question, printed with Listening Q4(e) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q5-a-a", topicId: "music-2-2", conceptId: "mus-associated-case-dance-each",
+    section: "L", questionRef: "2020 HL Listening Q5 A(a)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt. Excerpt 1. Two dance tunes.",
+    questionText: "In the case of each dance tune, identify the type of dance and give its time signature and one bar of rhythm associated with it.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Reel", marks: 0.5, contextNote: "The scheme reads: “.5+.5+.5”" },
+    { id: "r-2", kind: "point", verbatim: "4/4 , 2/4", marks: 0.5 },
+    { id: "r-3", kind: "point", verbatim: "Bar of rhythm", marks: 0.5, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
+    { id: "r-4", kind: "point", verbatim: "Jig", marks: 0.5, contextNote: "The scheme reads: “.5+.5+.5”" },
+    { id: "r-5", kind: "point", verbatim: "6/8", marks: 0.5 },
+    { id: "r-6", kind: "point", verbatim: "Bar of rhythm", marks: 0.5, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.214,
+                            0.92,
+                            0.38
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1. Two dance tunes.",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q5-a-a-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q5-a-a-score.png",
+          "srcHash": "0275db5e1179a7d98aa028334a6faf38",
+          "alt": "The question and its printed answer table (Type of dance / Time signature / Bar of rhythm, for Dance 1 and Dance 2), printed with Listening Q5 A(a) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2020-HL-scheme-p15-l-q5-a-a",
+          "src": "/exam-figures/music/markbank/music-2020-HL-scheme-p15-l-q5-a-a.png",
+          "srcHash": "5245e9795f156f66505963444ea023c3",
+          "alt": "The marking scheme’s printed answer for Listening Q5 A(a): the table of the two dances, their time signatures, a bar of rhythm for each printed in notation, and the marks, cropped from page 15 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q5-a-b", topicId: "music-2-2", conceptId: "mus-different-excerpt-heard-identify",
+    section: "L", questionRef: "2020 HL Listening Q5 A(b)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt. Excerpt 1. Two dance tunes.",
+    questionText: "Identify two different instruments heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Instruments heard", marks: null, contextNote: "The scheme reads: “2 different instruments heard playing in the excerpt” “Allow concertina/melodeon/piano accordion” “1+1”", group: {"claimMax":2,"perOption":1,"options":["accordion/box","whistle","low whistle/flute","fiddle","guitar","bass guitar","bouzouki","bodhrán","concertina/melodeon/piano accordion"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.39,
+                            0.92,
+                            0.45
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1. Two dance tunes.",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q5-a-b-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q5-a-b-score.png",
+          "srcHash": "c22480fb2a9b2de91b7eab47b6c825dd",
+          "alt": "The printed question, printed with Listening Q5 A(b) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q5-a-c", topicId: "music-2-2", conceptId: "mus-excerpt-heard-identify-singing",
+    section: "L", questionRef: "2020 HL Listening Q5 A(c)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt. Excerpt 2. A verse from Caoineadh na dTrí Mhuire.",
+    questionText: "Identify the style of singing heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sean‐nós", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.515,
+                            0.92,
+                            0.544
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2. A verse from Caoineadh na dTrí Mhuire.",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q5-a-c-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q5-a-c-score.png",
+          "srcHash": "14f319b4fe72a24b1c3a4f6da90b45cc",
+          "alt": "The printed question, printed with Listening Q5 A(c) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q5-a-d", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
+    section: "L", questionRef: "2020 HL Listening Q5 A(d)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt. Excerpt 2. A verse from Caoineadh na dTrí Mhuire.",
+    questionText: "Identify two features of this style of singing, as heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of sean-nós singing", marks: null, contextNote: "The scheme reads: “Any two correct features of sean‐nós singing which can be heard in the excerpt” “For example:” “1.5+1.5”", openList: true, group: {"claimMax":2,"perOption":1.5,"options":["ornamentation","vibrato","free rhythm","nasalization","solo/unaccompanied"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.549,
+                            0.92,
+                            0.652
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2. A verse from Caoineadh na dTrí Mhuire.",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q5-a-d-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q5-a-d-score.png",
+          "srcHash": "885fc43e5d7960eba0124ba06a18360e",
+          "alt": "The printed question, printed with Listening Q5 A(d) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q5-a-e", topicId: "music-2-2", conceptId: "mus-excerpt-feature-heard-identify",
+    section: "L", questionRef: "2020 HL Listening Q5 A(e)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt. Excerpt 2. A verse from Caoineadh na dTrí Mhuire.",
+    questionText: "Identify one feature of the melody heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the melody", marks: null, contextNote: "The scheme reads: “2 marks for a correct identification of one feature of the melody in the excerpt” “For example:”", openList: true, group: {"claimMax":1,"perOption":2,"options":["repeated last note","wide range"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.675,
+                            0.92,
+                            0.768
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2. A verse from Caoineadh na dTrí Mhuire.",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q5-a-e-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q5-a-e-score.png",
+          "srcHash": "bea71156fd0d85619824d611a0b8984c",
+          "alt": "The printed question, printed with Listening Q5 A(e) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q5-a-f", topicId: "music-2-2", conceptId: "mus-lines-pipes-uilleann",
+    section: "L", questionRef: "2020 HL Listening Q5 A(f)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt. Excerpt 3. An excerpt from Granuaile by Shaun Davey.\n• The lyrics are printed below. Line 1 What can you see from the masthead? Line 2 A trading ship for Galway Line 3 What does he pay for the passage? Line 4 A just reward for the pilot Line 5 Rising up on the breaking wave Line 6 Let it carry you over all the sea in the morning Line 7 Weigh, hey, and up she rises, Line 8 Sun is up, the bird’s a-wing Line 9 And we’re sailing free and easy",
+    questionText: "In lines 2 and 4, the uilleann pipes",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "doubles the vocal melody line", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.08,
+                            0.3,
+                            0.92,
+                            0.415
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3. An excerpt from Granuaile by Shaun Davey.\n• The lyrics are printed below. Line 1 What can you see from the masthead? Line 2 A trading ship for Galway Line 3 What does he pay for the passage? Line 4 A just reward for the pilot Line 5 Rising up on the breaking wave Line 6 Let it carry you over all the sea in the morning Line 7 Weigh",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q5-a-f-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q5-a-f-score.png",
+          "srcHash": "8f3567862c532979f9faa32e2fa04c51",
+          "alt": "The printed lyrics (lines 1-9), the question and its three printed options (play in harmony with the vocal melody line, double the vocal melody line, play a countermelody), printed with Listening Q5 A(f) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q5-a-g", topicId: "music-2-2", conceptId: "mus-describe-excerpt-feature-heard",
+    section: "L", questionRef: "2020 HL Listening Q5 A(g)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt. Excerpt 3. An excerpt from Granuaile by Shaun Davey.\n• The lyrics are printed below. Line 1 What can you see from the masthead? Line 2 A trading ship for Galway Line 3 What does he pay for the passage? Line 4 A just reward for the pilot Line 5 Rising up on the breaking wave Line 6 Let it carry you over all the sea in the morning Line 7 Weigh, hey, and up she rises, Line 8 Sun is up, the bird’s a-wing Line 9 And we’re sailing free and easy",
+    questionText: "Describe one non-traditional feature of the music heard in lines 5–9 of this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A non-traditional feature", marks: null, contextNote: "The scheme reads: “Up to 2 marks for a valid description of one non‐traditional feature in the music in lines 5‐9” “For example:”", openList: true, group: {"claimMax":1,"perOption":2,"options":["vocal harmony","two voices are singing","instrumental accompaniment"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.08,
+                            0.417,
+                            0.92,
+                            0.51
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3. An excerpt from Granuaile by Shaun Davey.\n• The lyrics are printed below. Line 1 What can you see from the masthead? Line 2 A trading ship for Galway Line 3 What does he pay for the passage? Line 4 A just reward for the pilot Line 5 Rising up on the breaking wave Line 6 Let it carry you over all the sea in the morning Line 7 Weigh",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q5-a-g-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q5-a-g-score.png",
+          "srcHash": "83693a2c78c96c25aac0f113853fbdd8",
+          "alt": "The printed lyrics (lines 1-9) and the question; part (f) and its options sit between them, printed with Listening Q5 A(g) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2020 Higher Level, p.16 — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q5-b-i", topicId: "music-2-13", conceptId: "mus-discuss-fusion-irish-music",
+    section: "L", questionRef: "2020 HL Listening Q5 B(i)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    questionText: "Discuss the use of fusion in Irish traditional music.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.08,
+                            0.558,
+                            0.92,
+                            0.582
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2020 Higher Level, p.16 — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q5-b-ii", topicId: "music-2-13", conceptId: "mus-account-belfast-festival-harp",
+    section: "L", questionRef: "2020 HL Listening Q5 B(ii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    questionText: "Write an account of the Irish harping tradition up to and including the Belfast Harp Festival (1792).",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.08,
+                            0.584,
+                            0.92,
+                            0.607
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2020 Higher Level, p.16 — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q5-b-iii", topicId: "music-2-13", conceptId: "mus-account-irish-language-sean-n",
+    section: "L", questionRef: "2020 HL Listening Q5 B(iii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    questionText: "Write an account of sean-nós singing in the Irish language.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.08,
+                            0.608,
+                            0.92,
+                            0.631
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2020 Higher Level, p.16 — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q5-b-iv", topicId: "music-2-13", conceptId: "mus-account-band-irish-music",
+    section: "L", questionRef: "2020 HL Listening Q5 B(iv)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    questionText: "Write an account of the céilí band tradition in Irish traditional music.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.08,
+                            0.633,
+                            0.92,
+                            0.656
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q6-a", topicId: "music-2-3", conceptId: "mus-four-insert-missing-notes",
+    section: "L", questionRef: "2020 HL Listening Q6(a)",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played twice. An outline score of bars 1–8 of this excerpt is printed below.",
+    questionText: "Insert the four missing notes at X on the score.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: ".5 x 4 for pitch and rhythm. Both pitch & rhythm must be correct.", marks: 2, contextNote: "The scheme reads: “Mark the first 4 notes from left to right in bar 6” The scheme prints its answer in music notation: its print is shown on this card.", permittedMarks: [0,0.5,1,1.5,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 12,
+                      "r": [
+                            0.08,
+                            0.152,
+                            0.93,
+                            0.352
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q6-a-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q6-a-score.png",
+          "srcHash": "56fbb05d0bb806667387c2c21fec52ca",
+          "alt": "The outline score (bars 1-8, bass clef, X over bar 6) and the question, printed with Listening Q6(a) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2020-HL-scheme-p17-l-q6-a",
+          "src": "/exam-figures/music/markbank/music-2020-HL-scheme-p17-l-q6-a.png",
+          "srcHash": "7e7c3c2a55164dc0d71fd4a664c63c6a",
+          "alt": "The marking scheme’s printed answer for Listening Q6(a): the four notes printed on a bass stave, with the marking rule, cropped from page 17 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q6-b", topicId: "music-2-4", conceptId: "mus-excerpt-instruments-melody-name",
+    section: "L", questionRef: "2020 HL Listening Q6(b)",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played twice more.",
+    questionText: "Name the instruments that play the melody in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Instruments that play the melody", marks: null, contextNote: "The scheme reads: “cello  and double bass” “Allow viola” “1+1”", group: {"claimMax":2,"perOption":1,"options":["cello","double bass","viola"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 12,
+                      "r": [
+                            0.08,
+                            0.393,
+                            0.92,
+                            0.45
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q6-b-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q6-b-score.png",
+          "srcHash": "99ae03590113a5ce167ad636d55a7b6a",
+          "alt": "The printed question, printed with Listening Q6(b) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q6-c", topicId: "music-2-4", conceptId: "mus-excerpt-form-heard-music",
+    section: "L", questionRef: "2020 HL Listening Q6(c)",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played twice more.",
+    questionText: "The form of the music heard in this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ABB", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 12,
+                      "r": [
+                            0.08,
+                            0.462,
+                            0.92,
+                            0.53
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q6-c-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q6-c-score.png",
+          "srcHash": "bffce1cf9d1ee01ebd37a63667d670f3",
+          "alt": "The question and its three printed options (ABA, ABB, ABC), printed with Listening Q6(c) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q6-d", topicId: "music-2-4", conceptId: "mus-describe-excerpt-music-texture",
+    section: "L", questionRef: "2020 HL Listening Q6(d)",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    questionText: "Describe the texture of the music in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A description of the texture", marks: null, contextNote: "The scheme reads: “Up to 3 marks for a valid description of the texture of the music in this excerpt.” “For example:” “NB Reference to polyphonic/countermelody not necessary for full marks.”", openList: true, group: {"claimMax":1,"perOption":3,"options":["polyphonic + elaboration","two (three) different melodies can be heard at the same time (vlns + bassoon + bass)","countermelody on bassoon against lower strings","countermelody on bassoon against violins"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 12,
+                      "r": [
+                            0.08,
+                            0.619,
+                            0.92,
+                            0.76
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 2",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q6-d-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q6-d-score.png",
+          "srcHash": "913f1332a81da9bd9de5dedbcdb68a21",
+          "alt": "The printed question, printed with Listening Q6(d) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q6-e", topicId: "music-2-4", conceptId: "mus-introduction-piano-played-rhythm",
+    section: "L", questionRef: "2020 HL Listening Q6(e)",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day.",
+    questionText: "The rhythm of the introduction played on piano is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The rhythm of the introduction played on piano is", marks: 2, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.269,
+                            0.92,
+                            0.336
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q6-e-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q6-e-score.png",
+          "srcHash": "2f6589e56b609df54d7e82c109ce100f",
+          "alt": "The question and its three rhythm options in notation, printed with Listening Q6(e) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2020-HL-scheme-p17-l-q6-e",
+          "src": "/exam-figures/music/markbank/music-2020-HL-scheme-p17-l-q6-e.png",
+          "srcHash": "58de27fd9a1e29319990376faf51ee99",
+          "alt": "The marking scheme’s printed answer for Listening Q6(e): the rhythm the scheme accepts, printed in notation, cropped from page 17 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q6-f", topicId: "music-2-4", conceptId: "mus-between-describe-line-music",
+    section: "L", questionRef: "2020 HL Listening Q6(f)",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day.",
+    questionText: "Describe one similarity between the vocal music of line 1 and the vocal music of line 3.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Up to 2 marks for a description of one valid similarity between the vocal music of line 1 and line 3” “Partially correct answer = 1 mark”", permittedMarks: [0,1,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.351,
+                            0.92,
+                            0.435
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q6-f-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q6-f-score.png",
+          "srcHash": "1c89480d118c994f45176d0761aaf3a4",
+          "alt": "The printed lyrics (lines 1-9) and the question; part (e) and its options sit between them, printed with Listening Q6(f) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q6-g", topicId: "music-2-4", conceptId: "mus-cadence-identify-line",
+    section: "L", questionRef: "2020 HL Listening Q6(g)",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day.",
+    questionText: "Identify the cadence at the end of line 6.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Imperfect", marks: 1, contextNote: "The scheme reads: “Allow perfect”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.448,
+                            0.92,
+                            0.475
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q6-g-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q6-g-score.png",
+          "srcHash": "cedbd42231e7a053d8ecd1c124dd5024",
+          "alt": "The printed lyrics (lines 1-9) and the question; parts (e) and (f) sit between them, printed with Listening Q6(g) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q6-h", topicId: "music-2-4", conceptId: "mus-achieved-climax-line-music",
+    section: "L", questionRef: "2020 HL Listening Q6(h)",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day.",
+    questionText: "There is a climax in the music in line 7. How is this achieved?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Up to 2 marks for a description of how a climax is achieved in the music in line 7” “Partially correct answer = 1 mark”", permittedMarks: [0,1,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.481,
+                            0.92,
+                            0.57
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q6-h-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q6-h-score.png",
+          "srcHash": "600e7ddad175cc188824a641f9ecd399",
+          "alt": "The printed lyrics (lines 1-9) and the question; parts (e)-(g) sit between them, printed with Listening Q6(h) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
+    id: "mus-2020-hl-l-q6-i", topicId: "music-2-4", conceptId: "mus-answer-between-both-describe",
+    section: "L", questionRef: "2020 HL Listening Q6(i)",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    questionText: "Describe two differences between the music heard in this excerpt and the music heard in Excerpt 3. Refer to both excerpts in your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 4, contextNote: "The scheme reads: “Up to 2 marks for each for descriptions of two valid differences between the music heard in Excerpt 4 and the music heard in excerpt 3. Answers must refer to both excerpts.” “Reference to difference in lyrics = 0” “Partially correct answer = 1 mark” “2+ 2”", permittedMarks: [0,1,2,3,4], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.631,
+                            0.92,
+                            0.8
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 4",
+          "title": "2020 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2020-HL-l-q6-i-score",
+          "src": "/exam-figures/music/markbank/music-2020-HL-l-q6-i-score.png",
+          "srcHash": "517fb62024a1e5e942d22d3654e72a2a",
+          "alt": "The printed question, printed with Listening Q6(i) in the 2020 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2020 Higher Level, p.3 — © State Examinations Commission.",
+    id: "mus-2020-hl-c-a-q1", topicId: "music-1-10", conceptId: "mus-appropriate-below-choose-continuation",
+    section: "A", questionRef: "2020 HL Composing Section A Q1",
+    stem: "Answer one question only in this section: Q1 or Q2 or Q3.",
+    questionText: "CONTINUATION OF A GIVEN OPENING • Continue the opening below to make a 16–bar melody. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ descant recorder □ oboe □ violin □ trumpet",
+    totalMarks: 40,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "SECTION A – MELODY COMPOSITION (40 marks)",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Melody and rhythm have excellent style and imagination",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent sense of shape and structure",
+                                        "Excellent development of opening ideas",
+                                        "Excellent sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Very good sense of melodic and rhythmic interest",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Very good sense of shape and structure",
+                                        "Very good development of opening ideas",
+                                        "Very good sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Good sense of melodic and rhythmic interest",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Good sense of shape and structure",
+                                        "Good development of opening ideas",
+                                        "Good sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Fair sense of melodic and rhythmic interest",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Fair sense of shape and structure",
+                                        "Fair development of opening ideas",
+                                        "Fair sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Poor melodic and rhythmic interest",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Poor sense of shape and structure",
+                                        "Poor development of opening ideas",
+                                        "Poor sense of direction",
+                                        "Inappropriate performing directions (phrasing and dynamics) inserted",
+                                        "Unsuitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor melodic and rhythmic interest",
+                                  "marks": [4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very poor sense of shape and structure",
+                                        "Very poor development of opening ideas",
+                                        "Very poor sense of direction",
+                                        "No performing directions (phrasing and dynamics) inserted",
+                                        "No instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2,3],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.18,
+                            0.93,
+                            0.895
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2020 Higher Level, p.4 — © State Examinations Commission.",
+    id: "mus-2020-hl-c-a-q2", topicId: "music-1-11", conceptId: "mus-already-appropriate-arise-bars",
+    section: "A", questionRef: "2020 HL Composing Section A Q2",
+    stem: "Answer one question only in this section: Q1 or Q2 or Q3.",
+    questionText: "SETTING MUSIC TO A GIVEN TEXT Here is an extract from Romeo and Juliet by William Shakespeare. But soft, what light through yonder window breaks? It is the east and Juliet is the sun! Arise, fair sun, and kill the envious moon Who is already sick and pale with grief. The opening line has been set to music below. • Set the remaining words to make a melody of 16 bars. (You may exceed this number of bars and include a modulation, if you wish.) • Add appropriate performing directions (phrasing and dynamics) to the melody.",
+    totalMarks: 40,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "SECTION A – MELODY COMPOSITION (40 marks)",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [
+                            "No text inserted 0"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "Excellent \"marriage\" of words and music",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent style and imagination",
+                                        "Excellent sense of shape and structure",
+                                        "Excellent sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good “marriage” of words and music",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Very good sense of melodic and rhythmic interest",
+                                        "Very good sense of shape and structure",
+                                        "Very good sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Good “marriage” of words and music",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Good sense of melodic and rhythmic interest",
+                                        "Good sense of shape and structure",
+                                        "Good sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair “marriage” of words and music",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Fair sense of melodic and rhythmic interest",
+                                        "Fair sense of shape and structure",
+                                        "Fair sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor “marriage” of words and music",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Poor melodic and rhythmic interest",
+                                        "Poor sense of shape and structure",
+                                        "Poor sense of direction",
+                                        "Inappropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor “marriage” of words and music",
+                                  "marks": [4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very poor melodic and rhythmic interest",
+                                        "Very poor sense of shape and structure",
+                                        "Very poor sense of direction",
+                                        "No performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2,3],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.058,
+                            0.93,
+                            0.89
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2020 Higher Level, p.5 — © State Examinations Commission.",
+    id: "mus-2020-hl-c-a-q3", topicId: "music-1-12", conceptId: "mus-appropriate-below-choose-clarinet",
+    section: "A", questionRef: "2020 HL Composing Section A Q3",
+    stem: "Answer one question only in this section: Q1 or Q2 or Q3.",
+    questionText: "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM The opening phrase of a minuet is given below. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ flute □ trumpet",
+    totalMarks: 40,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "SECTION A – MELODY COMPOSITION (40 marks)",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Rhythmic integrity of dance excellently maintained",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Melody and rhythm have excellent style and imagination",
+                                        "Excellent sense of shape and structure",
+                                        "Excellent development of opening ideas",
+                                        "Excellent sense of direction and climax",
+                                        "Excellent adherence to given structure",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Rhythmic integrity of dance very well maintained",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Very good sense of melodic and rhythmic interest",
+                                        "Very good sense of shape and structure",
+                                        "Very good development of opening ideas",
+                                        "Very good sense of direction and climax",
+                                        "Very good adherence to given structure",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Good attempt at maintaining dance rhythm",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Good sense of melodic and rhythmic interest",
+                                        "Good sense of shape and structure",
+                                        "Good development of opening ideas",
+                                        "Good sense of direction and climax",
+                                        "Good adherence to given structure",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Fair attempt at maintaining dance rhythm",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Fair sense of melodic and rhythmic interest",
+                                        "Fair sense of shape and structure",
+                                        "Fair development of opening ideas",
+                                        "Fair sense of direction and climax",
+                                        "Fair adherence to given structure",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Poor awareness of dance rhythm",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Poor melodic and rhythmic interest.",
+                                        "Poor sense of shape and structure",
+                                        "Poor development of opening ideas",
+                                        "Poor sense of direction",
+                                        "Poor adherence to given structure",
+                                        "Inappropriate performing directions (phrasing and dynamics) inserted",
+                                        "Unsuitable instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor awareness of dance rhythm",
+                                  "marks": [4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very poor melodic and rhythmic interest.",
+                                        "Very poor sense of shape and structure",
+                                        "Very poor development of opening ideas",
+                                        "Very poor sense of direction",
+                                        "Very poor adherence to given structure",
+                                        "No performing directions (phrasing and dynamics) inserted",
+                                        "No instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2,3],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 3",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 7,
+                      "r": [
+                            0.08,
+                            0.055,
+                            0.93,
+                            0.885
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2020 Higher Level, p.6 — © State Examinations Commission.",
+    id: "mus-2020-hl-c-b-q4", topicId: "music-1-14", conceptId: "mus-available-bank-bass-below",
+    section: "B", questionRef: "2020 HL Composing Section B Q4",
+    stem: "Answer one question only in this section: Q4 or Q5 or Q6.",
+    questionText: "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS PREPARATORY WORK • Plot the chords available in the key of E major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Melody",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent style and imagination",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent awareness of key and underlying harmonic structure",
+                                        "Excellent development of opening ideas",
+                                        "Excellent sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good style and imagination",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Very good awareness of key and underlying harmonic structure",
+                                        "Very good development of opening ideas",
+                                        "Very good sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Good style and imagination",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Good awareness of key and underlying harmonic structure",
+                                        "Good development of opening ideas",
+                                        "Good sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair style and imagination",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Fair awareness of key and underlying harmonic structure",
+                                        "Fair development of opening ideas",
+                                        "Fair sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor style and imagination",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Poor awareness of key and underlying harmonic structure",
+                                        "Poor development of opening ideas",
+                                        "Poor sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor style and imagination",
+                                  "marks": [4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very poor awareness of key and underlying harmonic structure",
+                                        "Very poor development of opening ideas",
+                                        "Very poor sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2,3],
+                                  "guidance": []
+                            }
+                      ]
+                },
+                {
+                      "id": "bass-count",
+                      "label": "0.5 mark per correct bass note under each chord symbol (0.5 X 20)",
+                      "maxMarks": 10,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2,
+                            2.5,
+                            3,
+                            3.5,
+                            4,
+                            4.5,
+                            5,
+                            5.5,
+                            6,
+                            6.5,
+                            7,
+                            7.5,
+                            8,
+                            8.5,
+                            9,
+                            9.5,
+                            10
+                      ],
+                      "guidance": [
+                            "(Correct pitch in correct place rhythmically)"
+                      ],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 20
+                      }
+                },
+                {
+                      "id": "bass-quality",
+                      "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent bass line",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Excellent awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good bass line",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Very good awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Good bass line",
+                                  "marks": [4,5],
+                                  "guidance": [
+                                        "Good awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair bass line",
+                                  "marks": [2,3],
+                                  "guidance": [
+                                        "Fair awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor bass line",
+                                  "marks": [0,1],
+                                  "guidance": [
+                                        "Poor awareness of style"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 4",
+          "pages": [
+                8,
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.08,
+                            0.06,
+                            0.93,
+                            0.89
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2020 Higher Level, p.7 — © State Examinations Commission.",
+    id: "mus-2020-hl-c-b-q5", topicId: "music-1-13", conceptId: "mus-adjacent-available-bank-bass",
+    section: "B", questionRef: "2020 HL Composing Section B Q5",
+    stem: "Answer one question only in this section: Q4 or Q5 or Q6.",
+    questionText: "COMPOSING BASS NOTES AND CHORD INDICATIONS TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of E flat major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Chord Progressions - General points",
+                "Same chord in adjacent boxes not accepted unless bass changed or 7th added",
+                "Accidental and suffix, where relevant must be fully correct for mark to be awarded",
+                "Marks for chords not awarded in isolation. Chords must be part of a good progression.",
+                "V7 - V not accepted",
+                "Vb or V7b should generally be followed by I.",
+                "V – ii generally not accepted",
+                "ii – I generally not accepted except as approach to Ic in cadential 6/4",
+                "Cadential 6/4 must be on the stronger of the two beats and at a cadence point",
+                "Secondary 7ths, if used, must be used correctly i.e. they must be followed by a chord whose root is a 4th higher",
+                "Bass Line",
+                "No doubling of major 3rd under chord symbol"
+          ],
+          "criteria": [
+                {
+                      "id": "chords-count",
+                      "label": "1 mark for each chord that is part of a good progression in all chord boxes",
+                      "maxMarks": 24,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 24
+                      }
+                },
+                {
+                      "id": "chords-quality",
+                      "label": "Quality of musical progressions in the style of the given opening",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent chord progressions",
+                                  "marks": [11,12],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good chord progressions",
+                                  "marks": [8,9,10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good chord progressions",
+                                  "marks": [5,6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Fair chord progressions",
+                                  "marks": [3,4],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Poor chord progressions",
+                                  "marks": [0,1,2],
+                                  "guidance": []
+                            }
+                      ]
+                },
+                {
+                      "id": "bass-count",
+                      "label": "0.5 mark per correct bass note under each correct chord symbol",
+                      "maxMarks": 12,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2,
+                            2.5,
+                            3,
+                            3.5,
+                            4,
+                            4.5,
+                            5,
+                            5.5,
+                            6,
+                            6.5,
+                            7,
+                            7.5,
+                            8,
+                            8.5,
+                            9,
+                            9.5,
+                            10,
+                            10.5,
+                            11,
+                            11.5,
+                            12
+                      ],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 24
+                      }
+                },
+                {
+                      "id": "bass-quality",
+                      "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent bass line",
+                                  "marks": [11,12],
+                                  "guidance": [
+                                        "Excellent awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good bass line",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Very good awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Good bass line",
+                                  "marks": [5,6,7],
+                                  "guidance": [
+                                        "Good awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair bass line",
+                                  "marks": [3,4],
+                                  "guidance": [
+                                        "Fair awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor bass line",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Poor awareness of style"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 5",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.06,
+                            0.93,
+                            0.89
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2020, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2020 Higher Level, p.8 — © State Examinations Commission.",
+    id: "mus-2020-hl-c-b-q6", topicId: "music-1-15", conceptId: "mus-adding-adjacent-available-bank",
+    section: "B", questionRef: "2020 HL Composing Section B Q6",
+    stem: "Answer one question only in this section: Q4 or Q5 or Q6.",
+    questionText: "ADDING A COUNTERMELODY OR DESCANT AND CHORDAL SUPPORT TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of B minor, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable chord indications in the boxes provided. • Continue the descant part in the given style to complete the piece. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "chords-count",
+                      "label": "1 mark for each chord that fits melody and is part of a good chord progression (1 X 20)",
+                      "maxMarks": 20,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 20
+                      }
+                },
+                {
+                      "id": "descant",
+                      "label": "Descant",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent descant line within harmonic framework",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good descant line within harmonic framework",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Very good adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Good descant line within harmonic framework",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Good adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair descant line within harmonic framework",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Fair adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor descant line within harmonic framework",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Poor adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor descant line within harmonic framework",
+                                  "marks": [4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very poor adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2,3],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 6",
+          "pages": [
+                12,
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.06,
+                            0.93,
+                            0.89
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
 ];
