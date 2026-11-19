@@ -4037,7 +4037,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2026-hl-l-q3-c-i", topicId: "music-2-11", conceptId: "mus-below-each-excerpt-flute",
     section: "L", questionRef: "2026 HL Listening Q3(c)(i)",
     stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played once more.",
-    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (i) Flute in G",
+    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. (i) Flute in G",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Flutter tongue", marks: 1 },
@@ -4092,7 +4092,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2026-hl-l-q3-c-ii", topicId: "music-2-11", conceptId: "mus-below-cymbal-each-excerpt",
     section: "L", questionRef: "2026 HL Listening Q3(c)(ii)",
     stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played once more.",
-    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (ii) Cymbal",
+    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. (ii) Cymbal",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Cymbal) Roll", marks: 1 },
@@ -4147,7 +4147,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2026-hl-l-q3-c-iii", topicId: "music-2-11", conceptId: "mus-below-each-excerpt-following",
     section: "L", questionRef: "2026 HL Listening Q3(c)(iii)",
     stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played once more.",
-    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (iii) Violin",
+    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. (iii) Violin",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Tremolo", marks: 1 },
@@ -13537,7 +13537,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2022-hl-l-q3-b-i", topicId: "music-2-11", conceptId: "mus-excerpt-explain-features-ponticello",
     section: "L", questionRef: "2022 HL Listening Q3(b)(i)",
     stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
-    questionText: "This excerpt features sul ponticello. • Explain sul ponticello.",
+    questionText: "This excerpt features sul ponticello. Explain sul ponticello.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "criterion", verbatim: "One mark for a valid explanation of sul ponticello.", marks: 1, contextNote: "The scheme reads: “For example:” “The bow is played near / over / across /above / below / on / at the bridge (of the violin and / or cello)”", permittedMarks: [0,1] },
@@ -13592,7 +13592,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2022-hl-l-q3-b-ii", topicId: "music-2-11", conceptId: "mus-excerpt-features-instrument-name",
     section: "L", questionRef: "2022 HL Listening Q3(b)(ii)",
     stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
-    questionText: "This excerpt features sul ponticello. • Name one instrument that uses sul ponticello in this excerpt.",
+    questionText: "This excerpt features sul ponticello. Name one instrument that uses sul ponticello in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Violin and / or cello", marks: 1 },

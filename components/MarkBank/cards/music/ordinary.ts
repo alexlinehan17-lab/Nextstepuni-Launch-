@@ -839,7 +839,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2026-ol-l-q3-c-i", topicId: "music-2-11", conceptId: "mus-below-each-excerpt-flute",
     section: "L", questionRef: "2026 OL Listening Q3(c)(i)",
     stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played once more.",
-    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (i) Flute in G",
+    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. (i) Flute in G",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Flutter tongue", marks: 2 },
@@ -894,7 +894,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2026-ol-l-q3-c-ii", topicId: "music-2-11", conceptId: "mus-below-cymbal-each-excerpt",
     section: "L", questionRef: "2026 OL Listening Q3(c)(ii)",
     stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played once more.",
-    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (ii) Cymbal",
+    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. (ii) Cymbal",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Cymbal) Roll", marks: 2 },
@@ -949,7 +949,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2026-ol-l-q3-c-iii", topicId: "music-2-11", conceptId: "mus-below-each-excerpt-following",
     section: "L", questionRef: "2026 OL Listening Q3(c)(iii)",
     stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played once more.",
-    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (iii) Violin",
+    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. (iii) Violin",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Tremolo", marks: 2 },

@@ -746,7 +746,7 @@
     0.92,
     0.515
    ],
-   "questionText": "This excerpt features sul ponticello. • Explain sul ponticello.",
+   "questionText": "This excerpt features sul ponticello.\nExplain sul ponticello.",
    "questionContext": "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
@@ -797,7 +797,7 @@
     0.92,
     0.6
    ],
-   "questionText": "This excerpt features sul ponticello. • Name one instrument that uses sul ponticello in this excerpt.",
+   "questionText": "This excerpt features sul ponticello.\nName one instrument that uses sul ponticello in this excerpt.",
    "questionContext": "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,

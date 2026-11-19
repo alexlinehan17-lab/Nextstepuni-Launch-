@@ -5834,7 +5834,7 @@
   "topicId": "music-2-11",
   "conceptId": "mus-below-each-excerpt-flute",
   "questionRef": "2026 HL Listening Q3(c)(i)",
-  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (i) Flute in G",
+  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt.\n(i) Flute in G",
   "totalMarks": 1,
   "sourceMaterial": {
    "kind": "source-text",
@@ -5892,7 +5892,7 @@
   "topicId": "music-2-11",
   "conceptId": "mus-below-cymbal-each-excerpt",
   "questionRef": "2026 HL Listening Q3(c)(ii)",
-  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (ii) Cymbal",
+  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt.\n(ii) Cymbal",
   "totalMarks": 1,
   "sourceMaterial": {
    "kind": "source-text",
@@ -5950,7 +5950,7 @@
   "topicId": "music-2-11",
   "conceptId": "mus-below-each-excerpt-following",
   "questionRef": "2026 HL Listening Q3(c)(iii)",
-  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (iii) Violin",
+  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt.\n(iii) Violin",
   "totalMarks": 1,
   "sourceMaterial": {
    "kind": "source-text",
@@ -11041,7 +11041,7 @@
   "topicId": "music-2-11",
   "conceptId": "mus-below-each-excerpt-flute",
   "questionRef": "2026 OL Listening Q3(c)(i)",
-  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (i) Flute in G",
+  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt.\n(i) Flute in G",
   "totalMarks": 2,
   "sourceMaterial": {
    "kind": "source-text",
@@ -11099,7 +11099,7 @@
   "topicId": "music-2-11",
   "conceptId": "mus-below-cymbal-each-excerpt",
   "questionRef": "2026 OL Listening Q3(c)(ii)",
-  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (ii) Cymbal",
+  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt.\n(ii) Cymbal",
   "totalMarks": 2,
   "sourceMaterial": {
    "kind": "source-text",
@@ -11157,7 +11157,7 @@
   "topicId": "music-2-11",
   "conceptId": "mus-below-each-excerpt-following",
   "questionRef": "2026 OL Listening Q3(c)(iii)",
-  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (iii) Violin",
+  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt.\n(iii) Violin",
   "totalMarks": 2,
   "sourceMaterial": {
    "kind": "source-text",
@@ -31717,7 +31717,7 @@
   "topicId": "music-2-11",
   "conceptId": "mus-excerpt-explain-features-ponticello",
   "questionRef": "2022 HL Listening Q3(b)(i)",
-  "questionText": "This excerpt features sul ponticello. • Explain sul ponticello.",
+  "questionText": "This excerpt features sul ponticello.\nExplain sul ponticello.",
   "totalMarks": 1,
   "sourceMaterial": {
    "kind": "source-text",
@@ -31780,7 +31780,7 @@
   "topicId": "music-2-11",
   "conceptId": "mus-excerpt-features-instrument-name",
   "questionRef": "2022 HL Listening Q3(b)(ii)",
-  "questionText": "This excerpt features sul ponticello. • Name one instrument that uses sul ponticello in this excerpt.",
+  "questionText": "This excerpt features sul ponticello.\nName one instrument that uses sul ponticello in this excerpt.",
   "totalMarks": 1,
   "sourceMaterial": {
    "kind": "source-text",
