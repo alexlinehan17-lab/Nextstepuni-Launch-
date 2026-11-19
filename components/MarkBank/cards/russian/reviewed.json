@@ -195413,7 +195413,7 @@
           ]
         }
       ],
-      "markingGuideNote": "Select one of the three original topics and assess three distinct relevant details. The scheme does not print an exemplar factual pool. English or Russian is explicitly permitted; retain the Irish column of the original paper without imposing an automatic language penalty."
+      "markingGuideNote": "The scheme prints no answer for this part. Select one of the three original topics and assess three distinct relevant details. The scheme does not print an exemplar factual pool. English or Russian is explicitly permitted; retain the Irish column of the original paper without imposing an automatic language penalty."
     },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
@@ -195436,7 +195436,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -195780,7 +195780,7 @@
           ]
         }
       ],
-      "markingGuideNote": "Select five distinct source entries. Each complete printed multiword entry is one accepted response, not separately priced atoms."
+      "markingGuideNote": "Select five distinct source entries. Each complete printed multiword entry is one accepted response, each has one mark."
     },
     "answerLanguageRule": {
       "otherLanguageMultiplier": 0,
@@ -196201,7 +196201,7 @@
           ]
         }
       ],
-      "markingGuideNote": "The thirteen original gaps contain fifteen separately priced forms. Each word of the complete adjective/noun phrases receives the printed two-mark form allocation; the published пошла/шла alternatives are one response. Apply the exact spelling/transcription and wrong-tense zero rules."
+      "markingGuideNote": "The thirteen original gaps contain fifteen forms with separate marks. Each word of the complete adjective/noun phrases receives the printed two-mark form allocation; the published пошла/шла alternatives are one response. Apply the exact spelling/transcription and wrong-tense zero rules."
     },
     "answerLanguageRule": {
       "otherLanguageMultiplier": 0,
@@ -196264,7 +196264,7 @@
         "Communication + content 15 marks Language + expression 15 marks Textual coherence 10 marks ",
         "WRITTEN EXAMINATION - 220 MARKS Waivers: For those who have been granted a spelling and grammar waiver, errors in spelling and in certain grammatical elements, as explained at conference, are not penalised. In assessing the work of these candidates, a modified marking scheme will apply. Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks. Quality of English: The quality of the English will only be an assessment factor insofar as it impedes communication. 1. The examiner should not have to second guess what the candidate is thinking. Where the examiner has difficulty deciding what the English means, do not award marks. 2. The following usages are acceptable: • A modicum of “loan” words that occur in standard modern English (e.g. dacha, putsch, perestroika, glasnost…) • The use of acronyms of Russian origin (e.g. SSSR) • The use of a Russian technical term for the sake of clarity following an English version of the same term (e.g.) • Where the answer viewed as a whole demonstrates the appropriate use of both the structure and vocabulary of English 3. Material that is crossed out: if correct/relevant assign a mark. Marking: • Allocate a mark to every question/section of question, even if it is a mark of 0. Write marks above the material. In the right-hand margin total the marks for each question/sub-question and underline. • Correct all material. Where more material is supplied than is required, allocate a mark to that material and supply the mark in square brackets: [mark]. Do not include these marks in your totting up of that question. • Write the total number of marks obtained on page 1 at the bottom of the page in (round brackets). Thereafter, keep a running total at bottom of page in round brackets, e.g (27 + 12 = 39). • Total each question (Q.1., Q.2., Q.3.) as you go along and circle those marks at top of page where the Q begins. • Transfer Q. marks onto the spreadsheet. • Double check the final total by comparing the final tot at the bottom of page with the total of marks for each Q at the top of the page. Decoding the marking scheme: • Stroke [/] indicates alternatives, any one of which will do. • Round brackets () enclose information which is valid but not essential for marks."
       ],
-      "markingGuideNote": "Manually assess the selected complete response against every original requirement. The source gives one mark per content detail and requires at least one from each specified category, without fixed category totals. Lower A permits 7–12, but its prose middle range 9/10 and table 9–11 disagree at 11, overlapping the table’s 11–12 range. Both exact versions remain visible; no descriptor is reassigned, no precedence is inferred and the range does not automatically award its minimum.",
+      "markingGuideNote": "The scheme prints no answer for this part. Manually assess the selected complete response against every original requirement. The source gives one mark per content detail and requires at least one from each specified category, without fixed category totals. Lower A permits 7–12, but its prose middle range 9/10 and table 9–11 disagree at 11, overlapping the table’s 11–12 range. Both exact versions remain visible; no descriptor is reassigned, no precedence is inferred and the range does not automatically award its minimum.",
       "criteria": [
         {
           "id": "content",
@@ -196565,7 +196565,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -196578,31 +196578,7 @@
     "conceptId": "short-essay-words-russian-following-topics",
     "questionRef": "2019 HL Section SE Q2",
     "questionText": "Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title.\n\nНапишите небольшую статью по–русски размером 50 слов на одну из следующих тем. В свою \nстатью включите пять страноведческих фактов. \n \n1. Spórt i gCónaidhm na Rúise / Sport in the Russian Federation/ Спорт в Российской Федерции  \n \n2. An t‐Oideachas i gCónaidhm na Rúise / Education in the Russian Federation / Oбразование в \nРоссийской Федерции  \n \n3. An teaghlach i gCónaidhm na Rúise / The family in the Russian Federation / Семья в Российской \nФедерции  \n \n4. Reiligiún i gCónaidhm na Rúise / Religion in the Russian Federation / Религия в Российской Федерции \n \n5. Tithíocht i gCónaidhm na Rúise / Housing in the Russian Federation / Жильё в Российской Федерции  \n \n",
-    "tariffModel": {
-      "kind": "questionTotal"
-    },
     "totalMarks": 30,
-    "rows": [
-      {
-        "id": "published-choice",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "Q.2. Cultural Awareness 30 marks Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title. Напишите небольшую статью по–русски размером 50 слов на одну из следующих тем. В свою статью включите пять страноведческих фактов. 1. Sport in the Russian Federation/ Спорт в Российской Федерции 2. Education in the Russian Federation / Oбразование в Российской Федерции 3. The family in the Russian Federation / Семья в Российской Федерции 4. Religion in the Russian Federation / Религия в Российской Федерции 5. Housing in the Russian Federation / Жильё в Российской Федерции ",
-        "contextNote": "Confidence review: the complete question is printed as 30 marks, content 10 plus expression 20. The scheme’s literal soft-sign instruction says “Deduct 1/2 marks” without establishing whether this is a half-mark or one-or-two marks. Neither interpretation is selected. Every original choice and scoring rule is retained, but this task does not calculate a numerical score."
-      },
-      {
-        "id": "published-guidance",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "1. Content 10 marks 2. Language/expression 20 marks Mark content and language/expression separately 1. Communication/content (C) • Award content marks first (ex 10). No marks are awarded for irrelevant information/content. • Use square brackets to bracket off irrelevant material [ … ]; exclude when judging the expression mark. • Answers which are completely irrelevant or contain no rewardable material for content will be awarded no marks for language. • Award a maximum of two content marks for an introductory/contextual remark or judgment (not a factual detail). • Award two marks for each relevant content detail (up to a maximum of 10 marks). • Candidates are required to indicate which question they are answering. If a candidate does not indicate which question they are answering deduct ONE penalty mark from the overall content score. 2. Expression (E) • Take a global view of the language. • Use (E = Expression) to locate the candidate’s work in the most appropriate category. • If the content mark is 5 or less [excepting where a penalty mark has been deducted and brought the content marks down to 5], or the question is too short (less than 25 words), mark expression out of 14 and write ‘lower E’ to indicate this. • If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology); error in every 2nd or 3rd word, mark expression between 9 and 14 (9+10; 11+12; 13+14) and write ‘lower A’ to indicate this. • Put a square box around repeated errors, do not re-penalise. • Use a wavy line to underline spelling mistakes and errors of vocabulary. • Underline serious mistakes. • Deduct 1/2 marks from candidates who randomly use/fail to use soft signs in present tense forms or infinitives "
-      },
-      {
-        "id": "published-expression-grid",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "Mark Language: lexis, accuracy, fluency 18-20 lower A 13-14 lower E 12-14 Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language. 14-17 lower A 11-12 lower E 10-11 Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse. 10-13 lower A 9-10 lower E 7-9 Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful. 6-9 lower E 4-6 Some basic knowledge of lexis but lacks variety. Lexis often inappropriate with frequent Anglicism and wrong words. Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language; mainly simple 'translated' language, which impedes communication. 1-5 lower E 1-3 Very limited knowledge and range of lexis. Very basic, inappropriate or wrong words. Much Anglicism. Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language. 0 Knowledge and range so limited that no mark can be awarded Add the marks for communication/content (C) and expression (E/ lower E) to give the total marks for the question."
-      }
-    ],
     "sourceMaterial": {
       "kind": "source-text",
       "label": "Official question and source",
@@ -196614,7 +196590,334 @@
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
     "notes": "Source reviewed against the original paper and marking scheme, pages 9, 10, 11.",
-    "kind": "question",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Q.2. Cultural Awareness 30 marks Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title. Напишите небольшую статью по–русски размером 50 слов на одну из следующих тем. В свою статью включите пять страноведческих фактов. 1. Sport in the Russian Federation/ Спорт в Российской Федерции 2. Education in the Russian Federation / Oбразование в Российской Федерции 3. The family in the Russian Federation / Семья в Российской Федерции 4. Religion in the Russian Federation / Религия в Российской Федерции 5. Housing in the Russian Federation / Жильё в Российской Федерции ",
+        "1. Content 10 marks 2. Language/expression 20 marks Mark content and language/expression separately 1. Communication/content (C) • Award content marks first (ex 10). No marks are awarded for irrelevant information/content. • Use square brackets to bracket off irrelevant material [ … ]; exclude when judging the expression mark. • Answers which are completely irrelevant or contain no rewardable material for content will be awarded no marks for language. • Award a maximum of two content marks for an introductory/contextual remark or judgment (not a factual detail). • Award two marks for each relevant content detail (up to a maximum of 10 marks). • Candidates are required to indicate which question they are answering. If a candidate does not indicate which question they are answering deduct ONE penalty mark from the overall content score. 2. Expression (E) • Take a global view of the language. • Use (E = Expression) to locate the candidate’s work in the most appropriate category. • If the content mark is 5 or less [excepting where a penalty mark has been deducted and brought the content marks down to 5], or the question is too short (less than 25 words), mark expression out of 14 and write ‘lower E’ to indicate this. • If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology); error in every 2nd or 3rd word, mark expression between 9 and 14 (9+10; 11+12; 13+14) and write ‘lower A’ to indicate this. • Put a square box around repeated errors, do not re-penalise. • Use a wavy line to underline spelling mistakes and errors of vocabulary. • Underline serious mistakes. • Deduct 1/2 marks from candidates who randomly use/fail to use soft signs in present tense forms or infinitives ",
+        "Mark Language: lexis, accuracy, fluency 18-20 lower A 13-14 lower E 12-14 Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language. 14-17 lower A 11-12 lower E 10-11 Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse. 10-13 lower A 9-10 lower E 7-9 Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful. 6-9 lower E 4-6 Some basic knowledge of lexis but lacks variety. Lexis often inappropriate with frequent Anglicism and wrong words. Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language; mainly simple 'translated' language, which impedes communication. 1-5 lower E 1-3 Very limited knowledge and range of lexis. Very basic, inappropriate or wrong words. Much Anglicism. Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language. 0 Knowledge and range so limited that no mark can be awarded Add the marks for communication/content (C) and expression (E/ lower E) to give the total marks for the question."
+      ],
+      "markingGuideNote": "The scheme prints no answer for this part. Assess the selected essay using the printed content and expression grid. The direction “Deduct 1/2 marks” means one or two marks under Alex’s 18 November approval; its original wording is retained.",
+      "criteria": [
+        {
+          "id": "content",
+          "label": "Communication/content (C)",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "guidance": [
+            "Award content marks first (ex 10). No marks are awarded for irrelevant information/content.",
+            "Use square brackets to bracket off irrelevant material [ … ]; exclude when judging the expression mark.",
+            "Answers which are completely irrelevant or contain no rewardable material for content will be awarded no marks for language.",
+            "Award a maximum of two content marks for an introductory/contextual remark or judgment (not a factual detail).",
+            "Award two marks for each relevant content detail (up to a maximum of 10 marks).",
+            "Candidates are required to indicate which question they are answering. If a candidate does not indicate which question they are answering deduct ONE penalty mark from the overall content score."
+          ]
+        },
+        {
+          "id": "title-penalty",
+          "label": "Essay title penalty",
+          "kind": "deduction",
+          "deductFrom": "content",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidance": [
+            "Candidates are required to indicate which question they are answering. If a candidate does not indicate which question they are answering deduct ONE penalty mark from the overall content score."
+          ]
+        },
+        {
+          "id": "expression",
+          "label": "Language/expression (E)",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [
+            "• Take a global view of the language. • Use (E = Expression) to locate the candidate’s work in the most appropriate category. • If the content mark is 5 or less [excepting where a penalty mark has been deducted and brought the content marks down to 5], or the question is too short (less than 25 words), mark expression out of 14 and write ‘lower E’ to indicate this. • If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology); error in every 2nd or 3rd word, mark expression between 9 and 14 (9+10; 11+12; 13+14) and write ‘lower A’ to indicate this. • Put a square box around repeated errors, do not re-penalise. • Use a wavy line to underline spelling mistakes and errors of vocabulary. • Underline serious mistakes. • Deduct 1/2 marks from candidates who randomly use/fail to use soft signs in present tense forms or infinitives"
+          ],
+          "bands": [
+            {
+              "label": "18-20",
+              "marks": [
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language."
+              ]
+            },
+            {
+              "label": "14-17",
+              "marks": [
+                14,
+                15,
+                16,
+                17
+              ],
+              "guidance": [
+                "Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse."
+              ]
+            },
+            {
+              "label": "10-13",
+              "marks": [
+                10,
+                11,
+                12,
+                13
+              ],
+              "guidance": [
+                "Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful."
+              ]
+            },
+            {
+              "label": "6-9",
+              "marks": [
+                6,
+                7,
+                8,
+                9
+              ],
+              "guidance": [
+                "Some basic knowledge of lexis but lacks variety. Lexis often inappropriate with frequent Anglicism and wrong words. Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language; mainly simple 'translated' language, which impedes communication."
+              ]
+            },
+            {
+              "label": "1-5",
+              "marks": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Very limited knowledge and range of lexis. Very basic, inappropriate or wrong words. Much Anglicism. Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language."
+              ]
+            },
+            {
+              "label": "0",
+              "marks": [
+                0
+              ],
+              "guidance": [
+                "Knowledge and range so limited that no mark can be awarded"
+              ]
+            }
+          ],
+          "limits": [
+            {
+              "id": "lower-e",
+              "scaleLabel": "Lower E",
+              "maxMarks": 14,
+              "when": {
+                "any": [
+                  {
+                    "criterionIds": [
+                      "content"
+                    ],
+                    "atMost": 5,
+                    "ignoreDeductions": true
+                  },
+                  {
+                    "length": "words",
+                    "below": 25
+                  }
+                ]
+              },
+              "guidance": [
+                "If the content mark is 5 or less [excepting where a penalty mark has been deducted and brought the content marks down to 5], or the question is too short (less than 25 words), mark expression out of 14 and write ‘lower E’ to indicate this."
+              ],
+              "bands": [
+                {
+                  "label": "12-14",
+                  "marks": [
+                    12,
+                    13,
+                    14
+                  ],
+                  "guidance": [
+                    "Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language."
+                  ]
+                },
+                {
+                  "label": "10-11",
+                  "marks": [
+                    10,
+                    11
+                  ],
+                  "guidance": [
+                    "Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse."
+                  ]
+                },
+                {
+                  "label": "7-9",
+                  "marks": [
+                    7,
+                    8,
+                    9
+                  ],
+                  "guidance": [
+                    "Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful."
+                  ]
+                },
+                {
+                  "label": "4-6",
+                  "marks": [
+                    4,
+                    5,
+                    6
+                  ],
+                  "guidance": [
+                    "Some basic knowledge of lexis but lacks variety. Lexis often inappropriate with frequent Anglicism and wrong words. Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language; mainly simple 'translated' language, which impedes communication."
+                  ]
+                },
+                {
+                  "label": "1-3",
+                  "marks": [
+                    1,
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Very limited knowledge and range of lexis. Very basic, inappropriate or wrong words. Much Anglicism. Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language."
+                  ]
+                },
+                {
+                  "label": "0",
+                  "marks": [
+                    0
+                  ],
+                  "guidance": [
+                    "Knowledge and range so limited that no mark can be awarded"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "lower-a",
+              "scaleLabel": "Lower A",
+              "minMarks": 9,
+              "maxMarks": 14,
+              "when": {
+                "any": [
+                  {
+                    "flag": "lower-a",
+                    "prompt": "If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology); error in every 2nd or 3rd word, mark expression between 9 and 14 (9+10; 11+12; 13+14) and write ‘lower A’ to indicate this."
+                  }
+                ]
+              },
+              "guidance": [
+                "If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology); error in every 2nd or 3rd word, mark expression between 9 and 14 (9+10; 11+12; 13+14) and write ‘lower A’ to indicate this."
+              ],
+              "bands": [
+                {
+                  "label": "13-14",
+                  "marks": [
+                    13,
+                    14
+                  ],
+                  "guidance": [
+                    "Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language."
+                  ]
+                },
+                {
+                  "label": "11-12",
+                  "marks": [
+                    11,
+                    12
+                  ],
+                  "guidance": [
+                    "Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse."
+                  ]
+                },
+                {
+                  "label": "9-10",
+                  "marks": [
+                    9,
+                    10
+                  ],
+                  "guidance": [
+                    "Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "no-content",
+              "maxMarks": 0,
+              "when": {
+                "any": [
+                  {
+                    "criterionIds": [
+                      "content"
+                    ],
+                    "atMost": 0,
+                    "ignoreDeductions": true
+                  }
+                ]
+              },
+              "guidance": [
+                "Answers which are completely irrelevant or contain no rewardable material for content will be awarded no marks for language."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "soft-sign-penalty",
+          "label": "Soft sign penalty",
+          "kind": "deduction",
+          "deductFrom": "expression",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidance": [
+            "Deduct 1/2 marks from candidates who randomly use/fail to use soft signs in present tense forms or infinitives"
+          ]
+        }
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -196636,471 +196939,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
-    }
-  },
-  {
-    "id": "ru-2019-hl-l1",
-    "subjectId": "russian",
-    "level": "higher",
-    "year": 2019,
-    "section": "L1",
-    "topicId": "russian-0-9",
-    "conceptId": "taxi-driver-recommend-radisson-hotel-level",
-    "questionRef": "2019 HL Section L1 Q1–5 — complete section",
-    "questionText": "1. Why does the taxi driver recommend the Radisson hotel? Give two details.\n\n2(i). What level of English does this caller have?\n\n2(ii). How many people will be in her class?\n\n3. Give two details about the patient’s symptoms.\n\n4. Give two details about the plans these friends make for this evening.\n\n5(i). Where does this caller want to go?\n\n5(ii). How many passengers will be travelling in the taxi?",
-    "tariffModel": {
-      "kind": "questionTotal"
-    },
-    "totalMarks": 20,
-    "rows": [
-      {
-        "id": "general-listening-guidance",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
-        "contextNote": "Confidence review of the complete 20-mark listening section. The scheme does not supply full per-answer tariffs. Every original question, full answer pool and explicitly printed partial or zero-credit clause remains available; no equal allocation or numeric score is inferred."
-      },
-      {
-        "id": "l1-1",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• New • Modern • Central location • Museum/theatre/department store not far from it • Park/river beside it",
-        "contextNote": "Why does the taxi driver recommend the Radisson hotel? Give two details."
-      },
-      {
-        "id": "l1-2-i",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• Beginner",
-        "contextNote": "What level of English does this caller have?"
-      },
-      {
-        "id": "l1-2-ii",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• Five",
-        "contextNote": "How many people will be in her class?"
-      },
-      {
-        "id": "l1-3",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• Headache • Sore throat • Fever/high temperature/38.8",
-        "contextNote": "Give two details about the patient’s symptoms."
-      },
-      {
-        "id": "l1-4",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• Going to the theatre • Meeting at metro/underground exit • At 6.30 pm • Play begins at 7pm",
-        "contextNote": "Give two details about the plans these friends make for this evening."
-      },
-      {
-        "id": "l1-5-i",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• Train station Assign one mark: station",
-        "contextNote": "Where does this caller want to go? Source numbering: English booklet prints5(ii) twice; Irish and scheme disambiguate destination5(i), passengers5(ii)."
-      },
-      {
-        "id": "l1-5-ii",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• four",
-        "contextNote": "How many passengers will be travelling in the taxi?"
-      }
-    ],
-    "sourceMaterial": {
-      "kind": "source-question",
-      "label": "Official question and source",
-      "title": "2019 Higher Russian — L1",
-      "pages": [
-        2
-      ],
-      "attribution": "© State Examinations Commission.",
-      "presentationNote": "Listen to the official recording and answer all the original questions in this section. The transcript is not shown before answering."
-    },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 14.",
-    "kind": "question",
-    "additionalTopicIds": [
-      "russian-0-3",
-      "russian-0-5",
-      "russian-1-0"
-    ],
-    "audioMaterial": {
-      "kind": "source-audio",
-      "label": "Russian listening",
-      "title": "2019 Russian · Higher and Ordinary Level",
-      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
-      "secFileid": "LC099ZLP017EV.mp3",
-      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
-      "attribution": "© State Examinations Commission.",
-      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
-    },
-    "source": "sec",
-    "paperFileid": "LC099ALPA00BV",
-    "specVersion": "lc-russian-syllabus",
-    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14 — © State Examinations Commission.",
-    "schemeRegion": {
-      "schemeFileid": "LC099ALP000EV.pdf",
-      "p": 14,
-      "r": [
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    "qa": {
-      "gates": [
-        "original-pdf-review",
-        "printed-task-census",
-        "source-defined-tariff"
-      ],
-      "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
-    }
-  },
-  {
-    "id": "ru-2019-hl-l2",
-    "subjectId": "russian",
-    "level": "higher",
-    "year": 2019,
-    "section": "L2",
-    "topicId": "russian-0-5",
-    "conceptId": "maria-first-experiences-irish-dancing-irish",
-    "questionRef": "2019 HL Section L2 Q1–4 — complete section",
-    "questionText": "1(i). Give two details about Maria’s first experiences of Irish dancing.\n\n2(i). Give two details about Irish Culture Day.\n\n2(ii). Give one detail about the age range of the dancers in the group.\n\n3(i). What does Maria say about her job? Give two details.\n\n3(ii). Name one other hobby apart from Irish dancing that Maria enjoys\n\n4. Give two details about Maria’s last holiday.",
-    "tariffModel": {
-      "kind": "questionTotal"
-    },
-    "totalMarks": 20,
-    "rows": [
-      {
-        "id": "general-listening-guidance",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
-        "contextNote": "Confidence review of the complete 20-mark listening section. The scheme does not supply full per-answer tariffs. Every original question, full answer pool and explicitly printed partial or zero-credit clause remains available; no equal allocation or numeric score is inferred."
-      },
-      {
-        "id": "l2-1-i",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• Four years ago • Her friend brought her • Didn’t take it seriously at that time • Thought she would not come back • It would only be that one time • Enjoyed the atmosphere • New friends helped her to make a right decision • She decided to stay/ get involved",
-        "contextNote": "Give two details about Maria’s first experiences of Irish dancing. Source numbering: English booklet 1(i); Irish and scheme 1. Preserve both original forms."
-      },
-      {
-        "id": "l2-2-i",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• 20th September • In Youth centre • First time • There will be dancing • Master classes • Art market • Irish culture lectures",
-        "contextNote": "Give two details about Irish Culture Day."
-      },
-      {
-        "id": "l2-2-ii",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• Different age range • 14 year old teens • Once there was a 60 year old man",
-        "contextNote": "Give one detail about the age range of the dancers in the group."
-      },
-      {
-        "id": "l2-3-i",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• Works in a toy museum • Loves her work • It’s creative • Organisational/routine",
-        "contextNote": "What does Maria say about her job? Give two details."
-      },
-      {
-        "id": "l2-3-ii",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• Ice skating • ceramics Award one mark: skating",
-        "contextNote": "Name one other hobby apart from Irish dancing that Maria enjoys"
-      },
-      {
-        "id": "l2-4",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• Lake (Svetloyar) • Nizhegorodskaya province • One week • Lived in the forest • Enjoyed nature",
-        "contextNote": "Give two details about Maria’s last holiday."
-      }
-    ],
-    "sourceMaterial": {
-      "kind": "source-question",
-      "label": "Official question and source",
-      "title": "2019 Higher Russian — L2",
-      "pages": [
-        3
-      ],
-      "attribution": "© State Examinations Commission.",
-      "presentationNote": "Listen to the official recording and answer all the original questions in this section. The transcript is not shown before answering."
-    },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 14, 15.",
-    "kind": "question",
-    "additionalTopicIds": [
-      "russian-0-7",
-      "russian-0-4",
-      "russian-0-8",
-      "russian-1-0"
-    ],
-    "audioMaterial": {
-      "kind": "source-audio",
-      "label": "Russian listening",
-      "title": "2019 Russian · Higher and Ordinary Level",
-      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
-      "secFileid": "LC099ZLP017EV.mp3",
-      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
-      "attribution": "© State Examinations Commission.",
-      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
-    },
-    "source": "sec",
-    "paperFileid": "LC099ALPA00BV",
-    "specVersion": "lc-russian-syllabus",
-    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14, 15 — © State Examinations Commission.",
-    "schemeRegion": {
-      "schemeFileid": "LC099ALP000EV.pdf",
-      "p": 14,
-      "r": [
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    "qa": {
-      "gates": [
-        "original-pdf-review",
-        "printed-task-census",
-        "source-defined-tariff"
-      ],
-      "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
-    }
-  },
-  {
-    "id": "ru-2019-hl-l3",
-    "subjectId": "russian",
-    "level": "higher",
-    "year": 2019,
-    "section": "L3",
-    "topicId": "russian-0-7",
-    "conceptId": "festival-take-place-opening-ceremony-festival",
-    "questionRef": "2019 HL Section L3 Q1–3 — complete section",
-    "questionText": "1(i). Where and when will the festival take place?\n\n1(ii). Give two details about the opening ceremony of the festival.\n\n2(i). Give two details about the subject matter of the film ‘Zhili Bili.’\n\n2(ii). What format of this film will be shown?\n\n3. Give three details about the award ceremony.",
-    "tariffModel": {
-      "kind": "questionTotal"
-    },
-    "totalMarks": 20,
-    "rows": [
-      {
-        "id": "general-listening-guidance",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
-        "contextNote": "Confidence review of the complete 20-mark listening section. The scheme does not supply full per-answer tariffs. Every original question, full answer pool and explicitly printed partial or zero-credit clause remains available; no equal allocation or numeric score is inferred."
-      },
-      {
-        "id": "l3-1-i",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• The Mill Theatre / Dundrum theatre / Dublin theatre • 21st and 22nd July • Award one mark for a partial detail e.g. Dublin/Dundrum",
-        "contextNote": "Where and when will the festival take place?"
-      },
-      {
-        "id": "l3-1-ii",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• 2:00 pm • viewers will be able to watch the works of different schools • viewers would be able to take part in a secret vote/ballot • meet with young actors • meet the honoured guests of the festival Assign no marks: artists",
-        "contextNote": "Give two details about the opening ceremony of the festival."
-      },
-      {
-        "id": "l3-2-i",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• Real Russian people • history of the whole generation • parents • grandmothers • grandfathers • nature • touches the soul Assign no marks: comedy",
-        "contextNote": "Give two details about the subject matter of the film ‘Zhili Bili.’"
-      },
-      {
-        "id": "l3-2-ii",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• In Russian with English subtitles",
-        "contextNote": "What format of this film will be shown?"
-      },
-      {
-        "id": "l3-3",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• 22nd July • The Mill Theatre • 5:00 pm • Free admission",
-        "contextNote": "Give three details about the award ceremony."
-      }
-    ],
-    "sourceMaterial": {
-      "kind": "source-question",
-      "label": "Official question and source",
-      "title": "2019 Higher Russian — L3",
-      "pages": [
-        4
-      ],
-      "attribution": "© State Examinations Commission.",
-      "presentationNote": "Listen to the official recording and answer all the original questions in this section. The transcript is not shown before answering."
-    },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 14, 16.",
-    "kind": "question",
-    "additionalTopicIds": [
-      "russian-1-0"
-    ],
-    "audioMaterial": {
-      "kind": "source-audio",
-      "label": "Russian listening",
-      "title": "2019 Russian · Higher and Ordinary Level",
-      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
-      "secFileid": "LC099ZLP017EV.mp3",
-      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
-      "attribution": "© State Examinations Commission.",
-      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
-    },
-    "source": "sec",
-    "paperFileid": "LC099ALPA00BV",
-    "specVersion": "lc-russian-syllabus",
-    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14, 16 — © State Examinations Commission.",
-    "schemeRegion": {
-      "schemeFileid": "LC099ALP000EV.pdf",
-      "p": 14,
-      "r": [
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    "qa": {
-      "gates": [
-        "original-pdf-review",
-        "printed-task-census",
-        "source-defined-tariff"
-      ],
-      "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
-    }
-  },
-  {
-    "id": "ru-2019-hl-l4",
-    "subjectId": "russian",
-    "level": "higher",
-    "year": 2019,
-    "section": "L4",
-    "topicId": "russian-0-1",
-    "conceptId": "michael-family-part-time-job-michael",
-    "questionRef": "2019 HL Section L4 Q1–3 — complete section",
-    "questionText": "1(i). Give two details about Michael’s family.\n\n1(ii). Give two details about the part‐time job Michael had when he was young.\n\n2(i). Give one detail about the band that Michael formed during his teenage years.\n\n2(ii). Give two details about why Michael says the age of 19 was the most difficult time in his life.\n\n3(i). Give two details about Michael’s leading role in the film ‘300.’\n\n3(ii). Give one detail about why 2014 was a significant year in Michael’s career.",
-    "tariffModel": {
-      "kind": "questionTotal"
-    },
-    "totalMarks": 20,
-    "rows": [
-      {
-        "id": "general-listening-guidance",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
-        "contextNote": "Confidence review of the complete 20-mark listening section. The scheme does not supply full per-answer tariffs. Every original question, full answer pool and explicitly printed partial or zero-credit clause remains available; no equal allocation or numeric score is inferred."
-      },
-      {
-        "id": "l4-1-i",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• His father is German • His mother was born in (Northern) Ireland • Has (an older) sister/Kathrine • Family moved to Ireland",
-        "contextNote": "Give two details about Michael’s family."
-      },
-      {
-        "id": "l4-1-ii",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• Michael worked as a waiter • General operator • In his father’s/family restaurant • Parents encouraged him to work hard",
-        "contextNote": "Give two details about the part‐time job Michael had when he was young. Source numbering: English booklet and scheme 1(ii); Irish column prints 2(ii) beside the same part-time-job question. Both original forms are retained."
-      },
-      {
-        "id": "l4-2-i",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• Rock band • he played the guitar • played in clubs in Killarney",
-        "contextNote": "Give one detail about the band that Michael formed during his teenage years."
-      },
-      {
-        "id": "l4-2-ii",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• Entered London Drama Centre • Rented a cold apartment • Worked and studied at the same time • In a few years he dropped out of Drama Centre • Went touring with the Oxford Stage Company",
-        "contextNote": "Give two details about why Michael says the age of 19 was the most difficult time in his life."
-      },
-      {
-        "id": "l4-3-i",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• 2006 • Trained for 4 hours a day • For 10 weeks",
-        "contextNote": "Give two details about Michael’s leading role in the film ‘300.’"
-      },
-      {
-        "id": "l4-3-ii",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "• He was nominated for an Oscar for his role in “12 years a slave” • he didn’t win • Michael says that awards are not important for him/ are of no interest to him",
-        "contextNote": "Give one detail about why 2014 was a significant year in Michael’s career."
-      }
-    ],
-    "sourceMaterial": {
-      "kind": "source-question",
-      "label": "Official question and source",
-      "title": "2019 Higher Russian — L4",
-      "pages": [
-        5
-      ],
-      "attribution": "© State Examinations Commission.",
-      "presentationNote": "Listen to the official recording and answer all the original questions in this section. The transcript is not shown before answering."
-    },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 14, 17.",
-    "kind": "question",
-    "additionalTopicIds": [
-      "russian-0-4",
-      "russian-0-5",
-      "russian-0-3",
-      "russian-1-0"
-    ],
-    "audioMaterial": {
-      "kind": "source-audio",
-      "label": "Russian listening",
-      "title": "2019 Russian · Higher and Ordinary Level",
-      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
-      "secFileid": "LC099ZLP017EV.mp3",
-      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
-      "attribution": "© State Examinations Commission.",
-      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
-    },
-    "source": "sec",
-    "paperFileid": "LC099ALPA00BV",
-    "specVersion": "lc-russian-syllabus",
-    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14, 17 — © State Examinations Commission.",
-    "schemeRegion": {
-      "schemeFileid": "LC099ALP000EV.pdf",
-      "p": 14,
-      "r": [
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    "qa": {
-      "gates": [
-        "original-pdf-review",
-        "printed-task-census",
-        "source-defined-tariff"
-      ],
-      "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -214799,6 +214638,2762 @@
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
       "humanReviewedAt": "2026-11-18"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l1-1",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L1",
+    "topicId": "russian-0-9",
+    "conceptId": "taxi-driver-recommend-radisson-hotel",
+    "questionRef": "2019 HL Section L1 Q1",
+    "questionText": "Why does the taxi driver recommend the Radisson hotel? Give two details.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• New • Modern • Central location • Museum/theatre/department store not far from it • Park/river beside it"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "New",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Modern",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Central location",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Museum/theatre/department store not far from it",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Park/river beside it",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 14,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l1-2-i",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L1",
+    "topicId": "russian-0-3",
+    "conceptId": "level-english-caller",
+    "questionRef": "2019 HL Section L1 Q2(i)",
+    "questionText": "What level of English does this caller have?",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• Beginner"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Beginner",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 14,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l1-2-ii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L1",
+    "topicId": "russian-0-3",
+    "conceptId": "many-people-class",
+    "questionRef": "2019 HL Section L1 Q2(ii)",
+    "questionText": "How many people will be in her class?",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• Five"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Five",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 14,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l1-3",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L1",
+    "topicId": "russian-0-9",
+    "conceptId": "patient-symptoms",
+    "questionRef": "2019 HL Section L1 Q3",
+    "questionText": "Give two details about the patient’s symptoms.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• Headache • Sore throat • Fever/high temperature/38.8"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Headache",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Sore throat",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Fever/high temperature/38.8",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 14,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l1-4",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L1",
+    "topicId": "russian-0-5",
+    "conceptId": "plans-these-friends-make-evening",
+    "questionRef": "2019 HL Section L1 Q4",
+    "questionText": "Give two details about the plans these friends make for this evening.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• Going to the theatre • Meeting at metro/underground exit • At 6.30 pm • Play begins at 7pm"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Going to the theatre",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Meeting at metro/underground exit",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "At 6.30 pm",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Play begins at 7pm",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 14,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l1-5-i",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L1",
+    "topicId": "russian-0-9",
+    "conceptId": "caller-want",
+    "questionRef": "2019 HL Section L1 Q5(i)",
+    "questionText": "Where does this caller want to go?",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• Train station Assign one mark: station"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Train station",
+              "marks": 2
+            },
+            {
+              "id": "partial-1",
+              "text": "station",
+              "marks": 1
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested. Source numbering: English booklet prints5(ii) twice; Irish and scheme disambiguate destination5(i), passengers5(ii)."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 14,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l1-5-ii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L1",
+    "topicId": "russian-0-9",
+    "conceptId": "many-passengers-travelling-taxi",
+    "questionRef": "2019 HL Section L1 Q5(ii)",
+    "questionText": "How many passengers will be travelling in the taxi?",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• four"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "four",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 14,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l2-1-i",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L2",
+    "topicId": "russian-0-5",
+    "conceptId": "maria-first-experiences-irish-dancing",
+    "questionRef": "2019 HL Section L2 Q1(i)",
+    "questionText": "Give two details about Maria’s first experiences of Irish dancing.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• Four years ago • Her friend brought her • Didn’t take it seriously at that time • Thought she would not come back • It would only be that one time • Enjoyed the atmosphere • New friends helped her to make a right decision • She decided to stay/ get involved"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Four years ago",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Her friend brought her",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Didn’t take it seriously at that time",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Thought she would not come back",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "It would only be that one time",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Enjoyed the atmosphere",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "New friends helped her to make a right decision",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She decided to stay/ get involved",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested. Source numbering: English booklet 1(i); Irish and scheme 1. Preserve both original forms."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 15 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 15,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l2-2-i",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L2",
+    "topicId": "russian-0-7",
+    "conceptId": "irish-culture-day",
+    "questionRef": "2019 HL Section L2 Q2(i)",
+    "questionText": "Give two details about Irish Culture Day.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• 20th September • In Youth centre • First time • There will be dancing • Master classes • Art market • Irish culture lectures"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "20th September",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "In Youth centre",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "First time",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "There will be dancing",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Master classes",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Art market",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Irish culture lectures",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 15 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 15,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l2-2-ii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L2",
+    "topicId": "russian-0-5",
+    "conceptId": "age-range-dancers-group",
+    "questionRef": "2019 HL Section L2 Q2(ii)",
+    "questionText": "Give one detail about the age range of the dancers in the group.",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• Different age range • 14 year old teens • Once there was a 60 year old man"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Different age range",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "14 year old teens",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Once there was a 60 year old man",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 15 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 15,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l2-3-i",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L2",
+    "topicId": "russian-0-4",
+    "conceptId": "maria-say-job",
+    "questionRef": "2019 HL Section L2 Q3(i)",
+    "questionText": "What does Maria say about her job? Give two details.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• Works in a toy museum • Loves her work • It’s creative • Organisational/routine"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Works in a toy museum",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Loves her work",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "It’s creative",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Organisational/routine",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 15 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 15,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l2-3-ii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L2",
+    "topicId": "russian-0-5",
+    "conceptId": "other-hobby-apart-irish-dancing-maria",
+    "questionRef": "2019 HL Section L2 Q3(ii)",
+    "questionText": "Name one other hobby apart from Irish dancing that Maria enjoys",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• Ice skating • ceramics Award one mark: skating"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Ice skating",
+              "marks": 2
+            },
+            {
+              "id": "partial-1",
+              "text": "skating",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "ceramics",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 15 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 15,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l2-4",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L2",
+    "topicId": "russian-0-8",
+    "conceptId": "maria-last-holiday",
+    "questionRef": "2019 HL Section L2 Q4",
+    "questionText": "Give two details about Maria’s last holiday.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• Lake (Svetloyar) • Nizhegorodskaya province • One week • Lived in the forest • Enjoyed nature"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Lake (Svetloyar)",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Nizhegorodskaya province",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "One week",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Lived in the forest",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Enjoyed nature",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 15 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 15,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l3-1-i",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L3",
+    "topicId": "russian-0-7",
+    "conceptId": "festival-take-place",
+    "questionRef": "2019 HL Section L3 Q1(i)",
+    "questionText": "Where and when will the festival take place?",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• The Mill Theatre / Dundrum theatre / Dublin theatre • 21st and 22nd July • Award one mark for a partial detail e.g. Dublin/Dundrum"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "The Mill Theatre / Dundrum theatre / Dublin theatre",
+              "marks": 2
+            },
+            {
+              "id": "partial-1",
+              "text": "Dublin/Dundrum",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "21st and 22nd July",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 16 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 16,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l3-1-ii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L3",
+    "topicId": "russian-0-7",
+    "conceptId": "opening-ceremony-festival",
+    "questionRef": "2019 HL Section L3 Q1(ii)",
+    "questionText": "Give two details about the opening ceremony of the festival.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• 2:00 pm • viewers will be able to watch the works of different schools • viewers would be able to take part in a secret vote/ballot • meet with young actors • meet the honoured guests of the festival Assign no marks: artists"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "2:00 pm",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "viewers will be able to watch the works of different schools",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "viewers would be able to take part in a secret vote/ballot",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "meet with young actors",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "meet the honoured guests of the festival",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 16 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 16,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l3-2-i",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L3",
+    "topicId": "russian-0-7",
+    "conceptId": "subject-matter-film-zhili-bili",
+    "questionRef": "2019 HL Section L3 Q2(i)",
+    "questionText": "Give two details about the subject matter of the film ‘Zhili Bili.’",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• Real Russian people • history of the whole generation • parents • grandmothers • grandfathers • nature • touches the soul Assign no marks: comedy"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Real Russian people",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "history of the whole generation",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "parents",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "grandmothers",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "grandfathers",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "nature",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "touches the soul",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 16 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 16,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l3-2-ii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L3",
+    "topicId": "russian-0-7",
+    "conceptId": "format-film-shown",
+    "questionRef": "2019 HL Section L3 Q2(ii)",
+    "questionText": "What format of this film will be shown?",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• In Russian with English subtitles"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "In Russian with English subtitles",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 16 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 16,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l3-3",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L3",
+    "topicId": "russian-0-7",
+    "conceptId": "award-ceremony",
+    "questionRef": "2019 HL Section L3 Q3",
+    "questionText": "Give three details about the award ceremony.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• 22nd July • The Mill Theatre • 5:00 pm • Free admission"
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "22nd July",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "The Mill Theatre",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "5:00 pm",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Free admission",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 16 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 16,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l4-1-i",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L4",
+    "topicId": "russian-0-1",
+    "conceptId": "michael-family",
+    "questionRef": "2019 HL Section L4 Q1(i)",
+    "questionText": "Give two details about Michael’s family.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• His father is German • His mother was born in (Northern) Ireland • Has (an older) sister/Kathrine • Family moved to Ireland"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "His father is German",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "His mother was born in (Northern) Ireland",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Has (an older) sister/Kathrine",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Family moved to Ireland",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 17 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 17,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l4-1-ii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L4",
+    "topicId": "russian-0-4",
+    "conceptId": "part-time-job-michael-young",
+    "questionRef": "2019 HL Section L4 Q1(ii)",
+    "questionText": "Give two details about the part‐time job Michael had when he was young.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• Michael worked as a waiter • General operator • In his father’s/family restaurant • Parents encouraged him to work hard"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Michael worked as a waiter",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "General operator",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "In his father’s/family restaurant",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Parents encouraged him to work hard",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested. Source numbering: English booklet and scheme 1(ii); Irish column prints 2(ii) beside the same part-time-job question. Both original forms are retained."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 17 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 17,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l4-2-i",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L4",
+    "topicId": "russian-0-5",
+    "conceptId": "band-michael-formed-during-teenage-years",
+    "questionRef": "2019 HL Section L4 Q2(i)",
+    "questionText": "Give one detail about the band that Michael formed during his teenage years.",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• Rock band • he played the guitar • played in clubs in Killarney"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Rock band",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "he played the guitar",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "played in clubs in Killarney",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 17 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 17,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l4-2-ii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L4",
+    "topicId": "russian-0-3",
+    "conceptId": "michael-says-age-most-difficult-time",
+    "questionRef": "2019 HL Section L4 Q2(ii)",
+    "questionText": "Give two details about why Michael says the age of 19 was the most difficult time in his life.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• Entered London Drama Centre • Rented a cold apartment • Worked and studied at the same time • In a few years he dropped out of Drama Centre • Went touring with the Oxford Stage Company"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Entered London Drama Centre",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Rented a cold apartment",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Worked and studied at the same time",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "In a few years he dropped out of Drama Centre",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Went touring with the Oxford Stage Company",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 17 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 17,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l4-3-i",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L4",
+    "topicId": "russian-0-4",
+    "conceptId": "michael-leading-role-film-300",
+    "questionRef": "2019 HL Section L4 Q3(i)",
+    "questionText": "Give two details about Michael’s leading role in the film ‘300.’",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• 2006 • Trained for 4 hours a day • For 10 weeks"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "2006",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Trained for 4 hours a day",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "For 10 weeks",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 17 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 17,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l4-3-ii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L4",
+    "topicId": "russian-0-4",
+    "conceptId": "2014-significant-year-michael-career",
+    "questionRef": "2019 HL Section L4 Q3(ii)",
+    "questionText": "Give one detail about why 2014 was a significant year in Michael’s career.",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "• He was nominated for an Oscar for his role in “12 years a slave” • he didn’t win • Michael says that awards are not important for him/ are of no interest to him"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He was nominated for an Oscar for his role in “12 years a slave”",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "he didn’t win",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Michael says that awards are not important for him/ are of no interest to him",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 17 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 17,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
     }
   }
 ]

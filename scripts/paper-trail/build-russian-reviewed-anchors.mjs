@@ -45,7 +45,12 @@ for (const fileid of new Set(sources.map(source => `${source.year}/${source.pape
         region:original.schemePages.map(p=>({p,r:[0,0,1,1]})),mode:'pagejump',conf:1,
         ...(joint ? {markBankCardId:card.id} : {})};
       const existing = map.q.find(row=>row.n===n);
-      if(existing)Object.assign(existing,question,{printOrder:existing.printOrder});
+      if(existing) {
+        Object.assign(existing,question,{printOrder:existing.printOrder});
+        // A newly separated ask must resolve to its own card, not its retired
+        // section placeholder. Joint questions retain their explicit binding.
+        if(!joint) delete existing.markBankCardId;
+      }
       else map.q.push(question);
       const existingTag=tag.q.find(row=>row.n===n);
       const questionTag=mergeRussianQuestionTag(existingTag,original,task,card);

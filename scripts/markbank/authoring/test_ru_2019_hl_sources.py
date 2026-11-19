@@ -5,8 +5,7 @@ import fitz
 ROOT=Path(__file__).resolve().parents[3];sys.path.insert(0,str(ROOT/'scripts/markbank/authoring'))
 from reconcile import parse_ref
 from ru_verify_review import verify,normal
-from ru_joint_tasks import validate_joint_task
-from ru_review_2019_hl import build,source_records,grammar_forms,raw_scheme_text,METADATA
+from ru_review_2019_hl import build,source_records,grammar_forms,raw_scheme_text,METADATA,allocation_approval
 from ru_review_census import reviewed_keys
 MODULE={'build':build,'source_records':source_records,'grammar_forms':grammar_forms,'raw_scheme_text':raw_scheme_text,'METADATA':METADATA}
 
@@ -18,7 +17,7 @@ class Original2019HigherSources(unittest.TestCase):
 
     def get(self,suffix):return copy.deepcopy(next(c for c in self.cards if c['id']=='ru-2019-hl-'+suffix))
 
-    def test_independent_original_census_retains44_asks_under24_tasks(self):
+    def test_independent_original_census_retains44_asks_as44_cards(self):
         # Literal census from the prior independent48-page visual sweep.
         keys=[('C1',q,None,r) for q,rs in [(1,(None,)),(2,('i','ii')),(3,('i','ii','iii','iv')),(4,(None,))] for r in rs]
         keys += [('C2',q,None,None) for q in (1,2,3,4)]+[(u,None,None,None) for u in ('LA1','CA1')]
@@ -34,70 +33,58 @@ class Original2019HigherSources(unittest.TestCase):
             for ref in c['review'].get('coveredQuestionRefs',[c['questionRef']]):
                 parsed=parse_ref(ref);self.assertIsNotNone(parsed)
                 actual.update((parsed['section'],parsed['q'],letter,roman) for letter,roman in parsed['paths'])
-        self.assertEqual(actual,set(keys));self.assertEqual(actual,reviewed_keys(2019,'hl'));self.assertEqual(len(self.cards),24)
+        self.assertEqual(actual,set(keys));self.assertEqual(actual,reviewed_keys(2019,'hl'));self.assertEqual(len(self.cards),44)
         self.assertEqual(sum(c['totalMarks'] for c in self.cards),300)
-        self.assertEqual(sum(c['totalMarks'] for c in self.cards if c['kind']=='rubric'),190)
-        self.assertEqual(sum(c['totalMarks'] for c in self.cards if c['kind']=='question'),110)
+        self.assertEqual(sum(c['totalMarks'] for c in self.cards if c['kind']=='rubric'),300)
+        self.assertEqual(sum(c['totalMarks'] for c in self.cards if c['kind']=='question'),0)
 
-    def test_joint_manifest_matches_all_original_questions_pages_and_hashes(self):
+    def test_individual_listening_cards_match_every_original_question_and_approved_allocation(self):
         docs,source=MODULE['source_records']()
         try:
             self.assertEqual([len(docs[k]) for k in ('paper','aural','scheme')],[16,8,24])
-            for spec in [t for t in self.registry['tasks'] if t['year']==2019 and t['level']=='higher']:
-                c=self.get(spec['id'].replace('ru-2019-hl-',''))
-                generated={k:c[k] for k in ('id','year','level','questionRef')}|{'paperFileid':spec['paperFileid'],'schemeFileid':spec['schemeFileid'],**c['review']}
-                validate_joint_task(generated,c,self.registry)
-                self.assertEqual(spec['paperSha256'],MODULE['METADATA']['aural']['sha256'])
-                self.assertEqual(spec['schemeSha256'],MODULE['METADATA']['scheme']['sha256'])
-                self.assertEqual(spec['independentSittingAsks'],44)
-                originals=[r for r in source['tasks'] if r['unit']==spec['section']]
-                self.assertEqual(len(spec['questions']),len(originals))
-                for q,r in zip(spec['questions'],originals):
-                    self.assertEqual(q['questionText'],r['question']);self.assertEqual(q['questionPages'],r['questionPages'])
-                    self.assertEqual(q['schemePages'],r['schemePages'])
-                    self.assertEqual(q['leafKey'],[r['unit'],r['item'],None,r['roman']])
-                    original=' '.join(docs['aural'][page-1].get_text(clip=fitz.Rect(295,30,580,793)) for page in q['questionPages'])
-                    self.assertIn(normal(q['questionText']),normal(original))
-                for change in [lambda s:s['atlasQuestions'][0].update(questionText='Invented extra source question'),lambda s:s['atlasQuestions'][0].update(questionPages=[99]),lambda s:s['atlasQuestions'][0].update(topicId='russian-unknown')]:
-                    wrong=copy.deepcopy(generated);change(wrong)
-                    with self.assertRaises(AssertionError):validate_joint_task(wrong,c,self.registry)
+            self.assertFalse([t for t in self.registry['tasks'] if t['year']==2019 and t['level']=='higher'])
+            approved={r['id']:r for r in allocation_approval()['listening']['cards'] if r['year']==2019}
+            originals=[r for r in source['tasks'] if r['component']=='aural']
+            self.assertEqual(len(originals),24)
+            for r in originals:
+                c=self.get(r['id'].replace('ru-2019-hl-',''));a=approved[c['id']]
+                self.assertEqual(c['questionText'],r['question']);self.assertEqual(c['totalMarks'],a['proposedMaximum'])
+                self.assertEqual(c['review']['questionPages'],r['questionPages']);self.assertEqual(c['review']['schemePages'],r['schemePages'])
+                self.assertNotIn('coveredQuestionRefs',c['review']);self.assertNotIn('answerLanguageRule',c)
+                self.assertEqual(c['rubric']['taskRequirements'],[source['listeningGuidance'],r['publishedSourceBlock']])
+                self.assertEqual(c['rubric']['count'],a['proposedDetails']);self.assertEqual(c['topicId'],r['topicId'])
+                self.assertIn('not printed as a general per-detail award',c['rubric']['markingGuideNote'])
+                original=' '.join(docs['aural'][page-1].get_text(clip=fitz.Rect(295,30,580,793)) for page in r['questionPages'])
+                self.assertIn(normal(c['questionText']),normal(original))
+            self.assertEqual(sum(c['totalMarks'] for c in self.cards if c.get('audioMaterial')),80)
         finally:
             for d in docs.values():d.close()
 
-    def test_listening_keeps_complete_unpriced_pools_and_every_known_partial_or_zero(self):
-        docs,source=MODULE['source_records']()
-        try:
-            clauses=[];asks=0
-            for section in range(1,5):
-                c=self.get(f'l{section}');records=[r for r in source['tasks'] if r['unit']==f'L{section}']
-                self.assertEqual(c['totalMarks'],20);self.assertEqual(c['tariffModel'],{'kind':'questionTotal'})
-                self.assertTrue(all(row['marks'] is None for row in c['rows']));self.assertNotIn('answerLanguageRule',c)
-                self.assertEqual(c['rows'][0]['verbatim'],source['listeningGuidance'])
-                self.assertIn('Accept answers written in Russian',c['rows'][0]['verbatim'])
-                self.assertEqual([row['verbatim'] for row in c['rows'][1:]],[r['publishedSourceBlock'] for r in records])
-                asks+=len(records);clauses.extend(row['verbatim'] for row in c['rows'])
-            self.assertEqual(asks,24)
-            all_text=' '.join(clauses)
-            for literal in ['Assign one mark: station','Award one mark: skating','Award one mark for a partial detail e.g. Dublin/Dundrum','Assign no marks: artists','Assign no marks: comedy']:
-                self.assertIn(literal,all_text)
-            self.assertIn('5(ii) twice',' '.join(row.get('contextNote','') for row in self.get('l1')['rows']))
-            self.assertIn('Irish column prints 2(ii)',' '.join(row.get('contextNote','') for row in self.get('l4')['rows']))
-        finally:
-            for d in docs.values():d.close()
+    def test_every_explicit_partial_and_zero_remains_in_its_own_answer(self):
+        station=self.get('l1-5-i')['rubric']['groups'][0]
+        self.assertEqual(station['answerCount'],1);self.assertEqual([(r['text'],r['marks']) for r in station['rows']],[('Train station',2),('station',1)])
+        skating=self.get('l2-3-ii')['rubric']['groups'][0]
+        self.assertEqual([(r['text'],r['marks']) for r in skating['rows']],[('Ice skating',2),('skating',1)])
+        place=self.get('l3-1-i')['rubric']['groups'][0]
+        self.assertEqual(place['rows'][-1]['text'],'Dublin/Dundrum');self.assertEqual(place['rows'][-1]['marks'],1)
+        self.assertEqual(self.get('l3-1-i')['rubric']['groups'][1]['rows'][0]['steps'],[0,1,2])
+        for suffix,literal in [('l3-1-ii','Assign no marks: artists'),('l3-2-i','Assign no marks: comedy')]:
+            c=self.get(suffix);self.assertIn(literal,' '.join(c['rubric']['taskRequirements']))
+            self.assertFalse(any(r['text'] in ('artists','comedy') for g in c['rubric']['groups'] for r in g['rows']))
+        self.assertIn('5(ii) twice',self.get('l1-5-i')['rubric']['markingGuideNote'])
+        self.assertIn('Irish column prints 2(ii)',self.get('l4-1-ii')['rubric']['markingGuideNote'])
 
-    def test_essay_preserves_unresolved_literal_deduction_and_every_choice(self):
-        c=self.get('se');docs,source=MODULE['source_records']()
-        try:
-            record=next(r for r in source['tasks'] if r['unit']=='SE')
-            self.assertEqual(c['totalMarks'],30);self.assertEqual(c['tariffModel'],{'kind':'questionTotal'})
-            self.assertTrue(all(row['marks'] is None for row in c['rows']));self.assertNotIn('answerLanguageRule',c)
-            self.assertEqual(normal(' '.join(r['verbatim'] for r in c['rows'])),normal(record['publishedSourceBlock']))
-            for text in ['Sport in the Russian Federation','Education in the Russian Federation','The family in the Russian Federation','Religion in the Russian Federation','Housing in the Russian Federation']:
-                self.assertIn(text,c['questionText'])
-            self.assertIn('Deduct 1/2 marks',' '.join(r['verbatim'] for r in c['rows']))
-            self.assertIn('Neither interpretation is selected',c['rows'][0]['contextNote'])
-        finally:
-            for d in docs.values():d.close()
+    def test_essay_preserves_approved_one_or_two_deduction_and_every_choice(self):
+        c=self.get('se');self.assertEqual(c['totalMarks'],30);self.assertEqual(c['rubric']['system'],'language-writing')
+        self.assertEqual(c['rubric']['criteria'][-1]['permittedMarks'],[0,1,2])
+        self.assertIn('Deduct 1/2 marks',c['rubric']['criteria'][-1]['guidance'][0])
+        self.assertIn('one or two marks',c['rubric']['markingGuideNote'])
+        self.assertEqual(c['review']['noPrintedAnswer']['fixedLine'],'The scheme prints no answer for this part.')
+        for text in ['Sport in the Russian Federation','Education in the Russian Federation','The family in the Russian Federation','Religion in the Russian Federation','Housing in the Russian Federation']:self.assertIn(text,c['questionText'])
+        expression=c['rubric']['criteria'][2]
+        self.assertEqual([b['marks'] for b in expression['limits'][1]['bands']],[[13,14],[11,12],[9,10]])
+        self.assertTrue(expression['limits'][0]['when']['any'][0]['ignoreDeductions'])
+        self.assertEqual(c['answerLanguageRule']['otherLanguageMultiplier'],0)
 
     def test_comprehension_general_guidance_and_detail_specific_repeat_rule_are_complete(self):
         docs,source=MODULE['source_records']()

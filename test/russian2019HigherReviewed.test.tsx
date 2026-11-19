@@ -1,6 +1,6 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import SessionScreen, { marksClaimed, showsRowMarks } from '../components/MarkBank/SessionScreen';
+import SessionScreen from '../components/MarkBank/SessionScreen';
 import LanguageRubricPanel from '../components/MarkBank/LanguageRubricPanel';
 import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 import { languageMarks, languageScoreId, languageGroupId, languageRowId, languageFlagId, languageLengthId, languageOtherLanguageId } from '../components/MarkBank/languageScoring';
@@ -10,18 +10,18 @@ const sitting=REVIEWED_CARDS.filter(c=>c.year===2019&&c.level==='higher');
 const get=(suffix:string)=>{const card=sitting.find(c=>c.id===`ru-2019-hl-${suffix}`);if(!card)throw new Error(suffix);return card;};
 const points=(suffix:string)=>{const card=get(suffix);if(!isRubricCard(card)||card.rubric.system!=='language-points')throw new Error(suffix);return {...card,rubric:card.rubric};};
 const writing=()=>{const card=get('gw');if(!isRubricCard(card)||card.rubric.system!=='language-writing')throw new Error('gw');return {...card,rubric:card.rubric};};
-const confidence=(suffix:string)=>{const card=get(suffix);if(isRubricCard(card))throw new Error(suffix);return card;};
+const essay=()=>{const card=get('se');if(!isRubricCard(card)||card.rubric.system!=='language-writing')throw new Error('se');return {...card,rubric:card.rubric};};
 const slot=(n:number,value:number)=>({[languageGroupId(`detail-${n}`)]:1,[languageScoreId(`detail-${n}-credit`)]:value});
 const row=(id:string)=>({[languageGroupId(id)]:1,[languageRowId(id,'full')]:1});
 afterEach(cleanup);
 
-describe('Russian 2019 Higher original questions and explicit holds',()=>{
-  it('represents 44 asks in 24 tasks, keeping the five complete confidence tasks unpriced',()=>{
-    expect(sitting).toHaveLength(24);expect(sitting.filter(c=>c.audioMaterial)).toHaveLength(4);
+describe('Russian 2019 Higher approved individual questions and source marks',()=>{
+  it('represents all 44 printed asks individually with approved marks',()=>{
+    expect(sitting).toHaveLength(44);expect(sitting.filter(c=>c.audioMaterial)).toHaveLength(24);
     expect(sitting.every(tariffReconciles)).toBe(true);
-    expect(sitting.filter(isRubricCard).reduce((sum,c)=>sum+c.totalMarks,0)).toBe(190);
-    expect(sitting.filter(c=>!isRubricCard(c)).reduce((sum,c)=>sum+c.totalMarks,0)).toBe(110);
-    expect(sitting.filter(c=>c.answerLanguageRule)).toHaveLength(16);
+    expect(sitting.filter(isRubricCard).reduce((sum,c)=>sum+c.totalMarks,0)).toBe(300);
+    expect(sitting.filter(c=>!isRubricCard(c)).reduce((sum,c)=>sum+c.totalMarks,0)).toBe(0);
+    expect(sitting.filter(c=>c.answerLanguageRule)).toHaveLength(17);
   });
   it('caps only a repeated credited detail, preserving the other response and saved raw choices',()=>{
     const card=points('c1-2-ii'),saved={...slot(1,2),...slot(2,2)};
@@ -93,25 +93,35 @@ describe('Russian 2019 Higher original questions and explicit holds',()=>{
     expect(screen.getAllByText(/Lower A Expression 11-12/)[0]).toHaveTextContent('9-11');
     expect(card.rubric.criteria[1].limits?.find(l=>l.id==='lower-a')?.bands).toBeUndefined();
   });
-  it('keeps all five unresolved tasks entirely unpriced while retaining known source allocations',()=>{
-    for(const suffix of ['se','l1','l2','l3','l4']) {
-      const card=confidence(suffix);expect(card.tariffModel).toEqual({kind:'questionTotal'});
-      expect(card.rows.every(r=>r.marks===null)).toBe(true);expect(card.answerLanguageRule).toBeUndefined();
-      expect(showsRowMarks(card)).toBe(false);
-      expect(marksClaimed(card,Object.fromEntries(card.rows.map(r=>[r.id,'yes'])),{})).toBe(0);
+  it('keeps full and partial wordings mutually exclusive within the requested detail',()=>{
+    for(const suffix of ['l1-5-i','l2-3-ii']) {
+      const card=points(suffix),group=card.rubric.groups[0];
+      const partial={[languageGroupId(group.id)]:1,[languageRowId(group.id,'partial-1')]:1};
+      expect(languageMarks(card,partial)).toBe(1);
+      expect(languageMarks(card,{...partial,[languageRowId(group.id,'full')]:1})).toBe(2);
     }
-    expect(confidence('se').rows.map(r=>r.verbatim).join(' ')).toContain('Deduct 1/2 marks');
-    expect(confidence('l1').rows.map(r=>r.verbatim).join(' ')).toContain('Assign one mark: station');
-    expect(confidence('l2').rows.map(r=>r.verbatim).join(' ')).toContain('Award one mark: skating');
-    expect(confidence('l3').rows.map(r=>r.verbatim).join(' ')).toContain('Assign no marks: comedy');
+    const whenWhere=points('l3-1-i');
+    expect(languageMarks(whenWhere,{...row('answer-1'),...row('answer-2'),[languageRowId('answer-2','full')]:2})).toBe(4);
+    expect(languageMarks(whenWhere,{...row('answer-1'),[languageRowId('answer-1','full')]:0,[languageRowId('answer-1','partial-1')]:1,...row('answer-2')})).toBe(2);
   });
-  it.each(['se','l1','l2','l3','l4'].flatMap(suffix=>[false,true].map(paperLayout=>({suffix,paperLayout}))))('saves $suffix confidence0/0 in paper layout=$paperLayout',async({suffix,paperLayout})=>{
-    const card=confidence(suffix),onGrade=vi.fn();render(<SessionScreen paperLayout={paperLayout} cards={[card]} subjectLabel="Russian" onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()}/>);
+  it('applies the approved essay deduction without changing the original notation or lower scales',()=>{
+    const card=essay(),full={[languageScoreId('content')]:10,[languageScoreId('expression')]:20,[languageLengthId('words')]:50};
+    expect(languageMarks(card,full)).toBe(30);
+    expect(languageMarks(card,{...full,[languageScoreId('soft-sign-penalty')]:1})).toBe(29);
+    expect(languageMarks(card,{...full,[languageScoreId('soft-sign-penalty')]:2})).toBe(28);
+    expect(languageMarks(card,{...full,[languageFlagId('lower-a')]:1})).toBe(24);
+    expect(languageMarks(card,{...full,[languageScoreId('content')]:4})).toBe(18);
+    expect(languageMarks(card,{...full,[languageScoreId('content')]:0})).toBe(0);
+    expect(languageMarks(card,{...full,[languageLengthId('words')]:24})).toBe(24);
+    expect(card.rubric.criteria.at(-1)?.guidance[0]).toContain('Deduct 1/2 marks');
+  });
+  it.each([false,true])('saves an assessed listening answer with its two available marks, paper layout=%s',async paperLayout=>{
+    const card=points('l1-5-i'),onGrade=vi.fn();render(<SessionScreen paperLayout={paperLayout} cards={[card]} subjectLabel="Russian" onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()}/>);
     fireEvent.click(screen.getByRole('button',{name:'Reveal the marking scheme'}));
-    await waitFor(()=>expect(screen.getByText(suffix==='se'?/Neither interpretation is selected/:/The scheme does not supply full per-answer tariffs/)).toBeVisible());
-    expect(screen.queryByRole('button',{name:/^Claim \d+ marks/})).not.toBeInTheDocument();
+    await waitFor(()=>expect(screen.getByText(/Two marks per complete requested detail are inferred/)).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Answer 1'}));
+    fireEvent.click(screen.getByRole('button',{name:/Train station.*2m/}));
     fireEvent.click(screen.getByRole('button',{name:'Got it'}));
-    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({cardId:card.id,grade:'got',marksClaimed:0,marksAvailable:0}));
+    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({cardId:card.id,grade:'got',marksClaimed:2,marksAvailable:2}));
   });
 });
-// Current-root confidence header and numeric-quiz exclusion require root integration QA.
