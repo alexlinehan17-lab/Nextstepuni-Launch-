@@ -149,10 +149,12 @@ class Sitting:
             parts = re.findall(r'\(([a-z]+)\)', m.group(3))
             return '-'.join(x for x in [f'{base}-l', f'q{m.group(1)}', (m.group(2) or '').lower(), *parts] if x)
         if kind == 'composing':
-            m = re.fullmatch(r'Section ([AB]) Q(\d)', addr)
+            # Ordinary Level prints two melodies under one question, "Answer (a) and (b)".
+            m = re.fullmatch(r'Section ([AB]) Q(\d)((?:\([a-z]+\))*)', addr)
             if not m:
                 raise SystemExit(f'composing address {addr!r}')
-            return f'{base}-c-{m.group(1).lower()}-q{m.group(2)}'
+            parts = re.findall(r'\(([a-z]+)\)', m.group(3))
+            return '-'.join([f'{base}-c-{m.group(1).lower()}-q{m.group(2)}', *parts])
         return f'{base}-e-' + addr.lower().replace('(', '-').replace(')', '')
 
     def ref(self, a):
@@ -348,6 +350,10 @@ def grid_criteria(s, spec):
         else:
             crit['permittedMarks'] = list(range(k['max'] + 1))
             crit['guidance'] = [s.scheme(g) for g in k.get('guidance', [])]
+            if not k.get('bands'):
+                # "Up to 3 marks for quality ... (3 x 4)": placed on its marks, no descriptors printed.
+                out.append(crit)
+                continue
             bands = []
             for b in k['bands']:
                 marks = b['marks']
@@ -382,6 +388,10 @@ def grid_card(s, a, atlas, cid=None, ref=None, question=None):
             'sourceMaterial': source_for(s, a, title)}
     if spec.get('stem'):
         card['stem'] = s.paper(a['paper'], spec['stem'])
+    if a.get('schemeCrop'):
+        # The scheme's own print held back to the reveal: a composing question's
+        # table of accepted chords, box by box, which a grid cannot carry.
+        figure_keys(s, dict(a, figure=None), card, cid)
     if sum(k['maxMarks'] for k in card['rubric']['criteria']) != a['marks']:
         raise SystemExit(f'{card["questionRef"]}: criteria do not make {a["marks"]}')
     return card
@@ -404,7 +414,10 @@ def build_sitting(s, atlas):
         lead = asks[0]
         question = ' '.join(f'{x.get("label", "")} {question_text(s, x)}'.strip() for x in asks)
         cid = f'mus-{s.year}-{s.tag}-{name}'
-        ref = f'{s.year} {s.LV} {BOOKLET[lead["paper"]]} {asks[0]["address"]}–{asks[-1]["address"]}{s.ref_suffix}'
+        first, last = asks[0]['address'], asks[-1]['address']
+        base = first.split('(')[0]
+        span = f'{first}–{last[len(base):]}' if last.startswith(base + '(') else f'{first}–{last}'
+        ref = f'{s.year} {s.LV} {BOOKLET[lead["paper"]]} {span}{s.ref_suffix}'
         lead = dict(lead, pages=sorted({p for x in asks for p in x['pages']}), crop=None)
         cards.append(grid_card(s, lead, atlas, cid=cid, ref=ref, question=question))
         covers[cid] = [s.card_id(x) for x in asks]
@@ -464,8 +477,11 @@ def main():
     atlas = Atlas()
     cards, census, manifest = music_2025.build()
     MANIFEST.update(manifest)
-    for path in sorted(glob.glob(os.path.join(REVIEW_DIR, '*.json')), reverse=True):
-        s = Sitting(path)
+    # Only the sittings listed in landed.json are built: a reading file still
+    # being written beside them never reaches the deck by accident.
+    landed = json.load(open(os.path.join(REVIEW_DIR, 'landed.json'), encoding='utf-8'))
+    for tag in landed:
+        s = Sitting(os.path.join(REVIEW_DIR, f'{tag}.json'))
         got, papers, covers = build_sitting(s, atlas)
         cards += got
         census['papers'] += papers

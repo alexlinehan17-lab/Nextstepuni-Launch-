@@ -31,6 +31,21 @@ def ocr_binary():
     return BIN
 
 
+def reading_order(found):
+    """Lines on one printed row, left to right, rows top to bottom. Vision
+    reports lines by their top edge, so a part label set a hair lower than its
+    question's first line ("(a)") fell between that line and the next."""
+    rows = []
+    for box, text in sorted(found, key=lambda f: (f[0][1] + f[0][3]) / 2):
+        mid, h = (box[1] + box[3]) / 2, box[3] - box[1]
+        row = rows[-1] if rows else None
+        if row and abs(mid - row['mid']) <= 0.5 * min(h, row['h']):
+            row['items'].append((box, text))
+        else:
+            rows.append({'mid': mid, 'h': h, 'items': [(box, text)]})
+    return [item for row in rows for item in sorted(row['items'], key=lambda f: f[0][0])]
+
+
 def main(pdf, out, lines_path=None):
     binary = ocr_binary()
     doc = fitz.open(pdf)
@@ -40,11 +55,14 @@ def main(pdf, out, lines_path=None):
             png = os.path.join(tmp, f'p{i + 1}.png')
             pg.get_pixmap(dpi=200).save(png)
             res = subprocess.run([binary, png], capture_output=True, text=True, check=True).stdout
-            texts = []
+            found = []
             for line in res.splitlines():
                 box, _, text = line.partition('\t')
+                found.append(([float(v) for v in box.split()], text))
+            texts = []
+            for box, text in reading_order(found):
                 texts.append(text)
-                positions.append(f'p{i + 1} [{", ".join(box.split())}]  {text}')
+                positions.append(f'p{i + 1} [{", ".join(f"{v:.3f}" for v in box)}]  {text}')
             pages[str(i + 1)] = '\n'.join(texts)
     json.dump(pages, open(out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     open(out, 'a').write('\n')

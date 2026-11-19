@@ -3048,6 +3048,7 @@ describe('Mark Bank card preservation', () => {
     // in the commit that cards it; a row never changes once added.
     const MUSIC_LANE_SITTINGS: Array<[string, number, string]> = [
       ['2025 higher', 3, 'eba1c9deac3a34ae8b9e609a168791b0d6112c4ba1db6eddda4d57516dcc0c2c'],
+      ['2026 higher', 56, '7456dcb567921ed8a24c698bb99a461e7ced4159f874a83abef3f3d0df302fe2'],
     ];
     const lane = new Map<string, string[]>();
     for (const card of MUSIC_HIGHER) {
