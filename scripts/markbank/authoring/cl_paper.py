@@ -52,7 +52,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
 SUBJECT = 'classical-studies'
 # The syllabus break. 2021 and 2022 are the ten-topic paper; 2023 onwards is
 # the Section A / Section B paper.
-TOPIC_ERA = (2021, 2022)
+# Every sitting before 2023 is the ten-topic paper: the SEC set it from 2010
+# (the start of this bank's window) to 2022, and the 2010-2020 papers read
+# with the same walker as 2021 and 2022 (measured 18 Nov 2026: 40 questions a
+# sitting, fifty marks each, in all 21 older sittings but the three flagged).
+TOPIC_ERA = tuple(range(2010, 2023))
 
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v']
 LETTERS = 'abcdef'
@@ -264,7 +268,11 @@ class ClPaper:
         out = []
         # (i)..(iv) open the topic's questions; a letter before the first roman
         # would be a mis-read, and there is none in the corpus.
-        pieces = re.split(r'(?=\((?:i|ii|iii|iv|v)\)\s)', text)
+        # A roman is followed by white space or, where the SEC set the two
+        # markers hard together, by the first letter: 2017 Higher prints
+        # Topic 10's last question as "(iv)(a) Identify the painting", and a
+        # whitespace-only lookahead glued (iv) onto (iii) — 39 questions.
+        pieces = re.split(r'(?=\((?:i|ii|iii|iv|v)\)(?:\s|\([a-f]\)))', text)
         for piece in pieces[1:]:
             m = re.match(r'^\((i|ii|iii|iv|v)\)\s*(.*)$', piece)
             if not m:

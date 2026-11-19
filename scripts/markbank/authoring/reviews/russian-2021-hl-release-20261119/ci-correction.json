@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-11-19T15:44:42.562987+00:00",
+  "failureRun": 44550360633,
+  "failureJob": 135652120927,
+  "allCardFilesByteIdentical": true,
+  "allOtherSubjectBaselinesUnchanged": true,
+  "routeChanges": "Only taskRoute:true and the half-open upper band correction (written map18\u219219) on regenerated Russian2021Higher maps.",
+  "russianBaseline": {
+    "cards": 1396,
+    "contentHash": "09b035e449d50b77",
+    "coveragePct": 98.3,
+    "covered": 1438,
+    "excluded": 0,
+    "leaves": 1463,
+    "open": 25,
+    "orphans": 0,
+    "papers": {
+      "count": 66,
+      "hash": "ff06e1bdb6b5283e"
+    },
+    "refsHash": "dddab76f55e09ae2"
+  },
+  "files": [
+    "public/paper-answers/2021/LC099ALP000BV.pdf.json",
+    "public/paper-answers/2021/LC099ALPA00BV.pdf.json",
+    "scripts/markbank/coverage-baseline.json",
+    "scripts/paper-trail/answers/2021/LC099ALP000BV.pdf.json",
+    "scripts/paper-trail/answers/2021/LC099ALPA00BV.pdf.json",
+    "scripts/paper-trail/build-russian-reviewed-anchors.mjs",
+    "test/russianSummaryLanguageExceptions.test.ts"
+  ]
+}

@@ -127,6 +127,89 @@ MISPRINTS = {
 }
 
 
+# Papers published as page images with no text layer, read off the rendered
+# pages on 19 Nov 2026 (question, part letter cited a-f, page, printed part).
+# 2010 Higher: Part 1 Q1-4 multiple choice and Q5-6 on pp3-4; Part 2 the
+# Qur'an Q7-8 (p5) and the choice of Q9 (a)-(b) poetry (pp6-7) or Q9 (c)-(d)
+# modern literature (p8); Part 3 Q10 parsing, Q11 and Q12 four parts each
+# (p9), Q13 six parts (أ)-(و) and Q14 four parts (p10); Part 4 Q15 (p11).
+# 2010 Ordinary: the same Parts 1, 2 and 4; Part 3 sets no parsing question —
+# Q10 four parts, Q11 six, Q12 four (p8), Q13 and Q14 four each (p9).
+def _image_census(spec):
+    out = []
+    for question, letters, page, part in spec:
+        if letters:
+            out += [(question, l, page, part) for l in letters]
+        else:
+            out.append((question, None, page, part))
+    return out
+
+
+IMAGE_ONLY = {
+    (2010, 'hl'): _image_census([
+        (1, '', 3, 1), (2, '', 3, 1), (3, '', 4, 1), (4, '', 4, 1),
+        (5, '', 4, 1), (6, '', 4, 1), (7, '', 5, 2), (8, '', 5, 2),
+        (9, 'ab', 6, 2), (9, 'cd', 8, 2), (10, '', 9, 3), (11, 'abcd', 9, 3),
+        (12, 'abcd', 9, 3), (13, 'abcdef', 10, 3), (14, 'abcd', 10, 3),
+        (15, '', 11, 4)]),
+    (2010, 'ol'): _image_census([
+        (1, '', 3, 1), (2, '', 3, 1), (3, '', 4, 1), (4, '', 4, 1),
+        (5, '', 4, 1), (6, '', 4, 1), (7, '', 5, 2), (8, '', 5, 2),
+        (9, 'ab', 6, 2), (9, 'cd', 7, 2), (10, 'abcd', 8, 3),
+        (11, 'abcdef', 8, 3), (12, 'abcd', 8, 3), (13, 'abcd', 9, 3),
+        (14, 'abcd', 9, 3), (15, '', 10, 4)]),
+}
+# The last sitting of the older paper (see AraPaper._walk_older). 2020 Higher,
+# the November sitting, already sets Part 2 the current way.
+OLDER_LAST = 2019
+ANY_DIGIT = DIGIT + '0-9'
+# No word boundary: 2011 Ordinary sets "الجزءالرابع(١٠٠درجة)" with no space.
+PART_WORD = re.compile(r'^\s*الجزء')
+# "(٥درجا )": 2011 Ordinary loses the taa of درجات to the same junk form.
+MARKS_ANY = re.compile(rf'[()]\s*([{ANY_DIGIT}]{{1,3}})\s*(?:درجة|درجات|درجا)\s*[()]')
+OLDER_QHEAD = re.compile(
+    rf'^[\s.،]*\(?\s*([{ANY_DIGIT}]{{1,2}})\s*(?:\)\s*|[.،]\s*|\s+(?=\())(.+)$')
+# "(أ)" — or "أ(", the bracket printed on one side only, which is how 2017-2019
+# Ordinary set the five parts of Question 11.
+# The older grammar questions run to a sixth part, "(و)": 2011 Ordinary sets
+# six under Questions 11 and 12.
+OLDER_LETTER = re.compile(
+    r'^(?:\(\s*(أ|ا|ب|ج|د|هـ|ه|ذ|و)\s*\)|(أ|ا|ب|ج|د|هـ|ه|ذ|و)\s*\()\s*(.*)$')
+# Two sittings letter Question 12's third part "(ت)", the alphabetical order,
+# between "(ب)" and "(ج)" — 2019 Higher and 2020 Higher print أ ب ت ج د. Keyed
+# by sitting, never inferred; their parts are cited by printed POSITION, a-e,
+# and the card shows the letter the SEC printed.
+TAA_THIRD = {(2019, 'hl'), (2020, 'hl')}
+OLDER_LETTER_T = re.compile(
+    r'^(?:\(\s*(أ|ا|ب|ت|ج|د|هـ|ه|ذ)\s*\)|(أ|ا|ب|ت|ج|د|هـ|ه|ذ)\s*\()\s*(.*)$')
+PARTHEAD_T = re.compile(r'^\(?\s*(أ|ا|ب|ت|ج|د|هـ|ه|ذ)\s*\)\s*(.*)$')
+
+
+def _older_fold(text):
+    """An older paper's line, folded only enough to READ its markers.
+
+    The hamza seat the text layer draws twice inside a part letter — "( أأ)" —
+    is one letter. Nothing else is touched: the ask's own words are kept as
+    the text layer holds them.
+    """
+    text = re.sub(r'\(\s*أأ\s*\)', '(أ)', text)
+    # 2011 keys the full stop after a question number as an ASCII apostrophe
+    # (its subset writes the glyph's position as a character, and a full stop
+    # is not a letter the outline map can name): "١٠' اِملأ كل فراغ".
+    # 2011 Ordinary keys it as "#" ("٢# كان حفل زواج"), for the same reason.
+    return re.sub(rf"^(\s*[{ANY_DIGIT}]{{1,2}})['#]", r'\1.', text)
+
+
+def _any_int(text):
+    return int(''.join(AR_DIGITS.get(c, c) for c in text))
+
+
+def _older_marks(ask, text):
+    m = MARKS_ANY.search(text)
+    if m and ask.marks is None:
+        ask.marks = _any_int(m.group(1))
+
+
 def arabic_int(text):
     return int(''.join(AR_DIGITS.get(c, c) for c in text))
 
@@ -181,7 +264,13 @@ class AraPaper:
         self.odd_heads = []
         self.part_marks = {}
         self.question_marks = {}
-        self._walk()
+        self.era = 'older' if year <= OLDER_LAST else 'current'
+        if (year, level) in IMAGE_ONLY:
+            self._walk_image_only()
+        elif self.era == 'older':
+            self._walk_older()
+        else:
+            self._walk()
 
     # ------------------------------------------------------------------ walk
     def _walk(self):
@@ -191,6 +280,8 @@ class AraPaper:
         current = None
         mcq = False
         started = False
+        parthead = PARTHEAD_T if (self.year, self.level) in TAA_THIRD \
+            else PARTHEAD
         for pno, text in self.lines:
             if 'There is no examination material' in text:
                 continue
@@ -229,7 +320,7 @@ class AraPaper:
             if qm:
                 n = arabic_int(qm.group(1))
                 rest = qm.group(2).strip()
-                pm = PARTHEAD.match(rest)
+                pm = parthead.match(rest)
                 if self._opens_question(part, question, n, pm):
                     question = n
                     if pm:
@@ -246,7 +337,7 @@ class AraPaper:
                     # question and the next, and those are printed matter, not
                     # mis-keyed heads.
                     self.odd_heads.append((pno, text[:80]))
-            pm = PARTHEAD.match(text) or PARTDASH.match(text)
+            pm = parthead.match(text) or PARTDASH.match(text)
             if pm and question is not None:
                 letter, rest = pm.group(1), pm.group(2).strip()
                 # Part 1's Q1-4 are the multiple choice at every sitting and
@@ -279,6 +370,123 @@ class AraPaper:
                     # 2021 Ordinary runs "التعبير", the head of Part 4, onto
                     # the end of Q14's tariff.
                     add = text[:mk.start()] if mk else text
+                    current.text = (current.text + ' ' + add).strip()
+        self._lift_question_marks()
+        first = min((a.page for a in self.asks), default=None)
+        if first:
+            self.passage_pages = list(range(1, first + 1))
+
+    def _walk_image_only(self):
+        """A paper the SEC published as page IMAGES, with no text layer.
+
+        2010 Higher and Ordinary are scans: 12 pages, 160 and 83 characters
+        of text between them, all of it page furniture. Nothing can be read
+        off them by machine, so the asks are the ones read off the rendered
+        pages and listed in IMAGE_ONLY, page by page, and a card for one of
+        them shows the printed crop. The list is the paper's; the scheme
+        (which has a text layer) is checked against it like any other.
+        """
+        for question, letter, page, part in IMAGE_ONLY[(self.year, self.level)]:
+            ask = Ask(question, letter, None,
+                      f'(printed as an image, page {page})', page, part)
+            self.asks.append(ask)
+            self.part_pages.setdefault(part, [])
+            if page not in self.part_pages[part]:
+                self.part_pages[part].append(page)
+
+    # ---------------------------------------------------- 2010 to 2019 ----
+    def _walk_older(self):
+        """The paper before 2020, which numbers 1 to 15 like the current one
+        but sets Part 2 differently, and whose text layer is rougher.
+
+        Part 2 (Literature) sets the Qur'an as TWO questions, 7 and 8, each
+        printed without a part letter — 2017 Higher even prints them "(7)"
+        and "(٨)" — and then a printed choice: "Answer Q9 (a) and Q9 (b) of
+        Section 2, or Q9 (c) and Q9 (d) of Section 3", poetry or modern
+        literature. So Part 2 prints six leaves where the current paper prints
+        nine. Everything else keeps its current shape: Q1-4 multiple choice,
+        Q5 and Q6 written, Q10-13 five parts each, Q14 parsing, Q15 one
+        composition on a choice of titles.
+
+        The text layer of these papers mixes the two digit sets inside one
+        number — 2017 Higher keys "1." beside "٣." and Question 15 as "1٥." —
+        and draws the hamza of a part letter twice, "( أأ)", so heads are read
+        with both digit sets and a doubled alef folded. The part heads are
+        found by the word الجزء and taken in printed order, because the ordinal
+        after it is not always one word in the text layer ("ا ألول").
+        """
+        part = None
+        question = None
+        current = None
+        started = False
+        part_seen = 0
+        letter_re = OLDER_LETTER_T if (self.year, self.level) in TAA_THIRD \
+            else OLDER_LETTER
+        for pno, text in self.lines:
+            if 'There is no examination material' in text:
+                continue
+            t = _older_fold(text)
+            if PART_WORD.search(t) and MARKS_ANY.search(t) and len(t) < 60:
+                part_seen += 1
+                part = part_seen
+                started = True
+                self.part_pages.setdefault(part, []).append(pno)
+                mk = MARKS_ANY.search(t)
+                self.part_marks[part] = _any_int(mk.group(1))
+                current = None
+                continue
+            if not started:
+                continue
+            self.part_pages.setdefault(part, []).append(pno)
+            if part == 4 and question == COMPOSITION_Q:
+                if current is not None and not self._is_furniture(t):
+                    current.text = (current.text + ' ' + t).strip()
+                    _older_marks(current, t)
+                continue
+            qm = OLDER_QHEAD.match(t)
+            if qm:
+                n = _any_int(qm.group(1))
+                rest = qm.group(2).strip()
+                pm = letter_re.match(rest)
+                allowed = PART_QUESTIONS.get(part, ())
+                want = allowed[0] if question is None or question < allowed[0] \
+                    else question + 1
+                ok = n in allowed and (n == want or (
+                    part == 2 and n == question == 9 and pm is not None))
+                if ok and part == 2 and n == 9 and pm is None:
+                    ok = False        # a verse of the poem, numbered "٩."
+                if ok:
+                    question = n
+                    if pm:
+                        current = self._open(question, pm.group(1) or pm.group(2),
+                                             pm.group(3), pno, part)
+                    else:
+                        current = self._open(question, None, rest, pno, part)
+                    _older_marks(current, t)
+                    continue
+            pm = letter_re.match(t)
+            if pm and question is not None:
+                letter, rest = pm.group(1) or pm.group(2), pm.group(3).strip()
+                if part == 1 and question <= 4:
+                    if current is not None:
+                        mk = MARKS_ANY.search(rest)
+                        current.options.append(
+                            (letter, (rest[:mk.start()] if mk else rest).strip()))
+                        _older_marks(current, t)
+                    continue
+                if part == 3 and question in (10, 11, 12, 13):
+                    mk = MARKS_ANY.search(rest)
+                    current = self._open(question, letter,
+                                         rest[:mk.start()] if mk else rest,
+                                         pno, part)
+                    _older_marks(current, t)
+                    continue
+            if current is not None and t.strip():
+                mk = MARKS_ANY.search(t)
+                if mk:
+                    _older_marks(current, t)
+                if not self._is_furniture(t):
+                    add = t[:mk.start()] if mk else t
                     current.text = (current.text + ' ' + add).strip()
         self._lift_question_marks()
         first = min((a.page for a in self.asks), default=None)
@@ -344,6 +552,12 @@ class AraPaper:
 
     def _open(self, question, arabic_letter, text, page, part):
         letter = LETTERS.get(arabic_letter) if arabic_letter else None
+        if arabic_letter == 'و' and self.era == 'older':
+            letter = 'f'
+        if arabic_letter and (self.year, self.level) in TAA_THIRD \
+                and question == 12:
+            letter = 'abcde'[sum(1 for a in self.asks
+                                 if a.question == 12 and a.letter)]
         ask = Ask(question, letter, arabic_letter, text.strip(), page, part)
         self.asks.append(ask)
         return ask

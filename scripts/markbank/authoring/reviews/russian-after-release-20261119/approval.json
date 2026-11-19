@@ -1,0 +1,8 @@
+{
+  "approvedAt": "2026-11-19T13:44:04.083887+00:00",
+  "userAnswer": "Approve the 108 changes",
+  "scope": "All 108 proposed live Russian changes; keep all 1372 live IDs and concept IDs, retain eight old listening-section IDs on the first split question; earlier 2021 Higher and 2011 Higher approvals remain valid.",
+  "review": "review.html",
+  "proposalSha256": "9413a0398e73b0dd7cdad12eaa16f30137927a0775adc061ce139f874b15882c",
+  "questionItemId": "[\"request_user_input_async\",\"call_4b1a0242680a4435b63cbe8ca5425bbb\",0]"
+}

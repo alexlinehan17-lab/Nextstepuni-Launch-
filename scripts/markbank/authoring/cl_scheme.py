@@ -49,7 +49,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
 
 SUBJECT = 'classical-studies'
-TOPIC_ERA = (2021, 2022)
+# Every sitting before 2023 is the ten-topic paper: the SEC set it from 2010
+# (the start of this bank's window) to 2022, and the 2010-2020 papers read
+# with the same walker as 2021 and 2022 (measured 18 Nov 2026: 40 questions a
+# sitting, fifty marks each, in all 21 older sittings but the three flagged).
+TOPIC_ERA = tuple(range(2010, 2023))
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v']
 
 
@@ -446,7 +450,7 @@ class ClScheme:
         # The answers begin at the first topic head; everything before it is
         # the note to teachers and the introduction.
         start = next((i for i, l in enumerate(lines)
-                      if re.match(r'^Topic\s+\d{1,2}[.:]', l)), None)
+                      if re.match(r'^Topic\s+\d{1,2}[.:]', l, re.I)), None)
         if start is None:
             raise AssertionError(f'{self.path}: no "Topic 1." head')
         out = []
@@ -457,7 +461,8 @@ class ClScheme:
                 continue
             if re.match(r'^Appendix\b', line.strip()):
                 break
-            m = re.match(r'^Topic\s+(\d{1,2})[.:]', line)
+            # "TOPIC 1:" in capitals: 2013 Ordinary heads every topic so.
+            m = re.match(r'^Topic\s+(\d{1,2})[.:]', line, re.I)
             if m:
                 topic, roman, letter, buf = int(m.group(1)), None, None, []
                 continue

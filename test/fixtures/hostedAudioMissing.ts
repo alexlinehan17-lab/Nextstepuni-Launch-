@@ -2,16 +2,17 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * SEC recordings that live listening cards (or the Topic Atlas) use and that
- * have no verified copy in Firebase Storage yet. Until a recording has one,
- * its cards play the SEC's own address, as before.
+ * SEC recordings and videos that live cards (or the Topic Atlas) play and that
+ * have no verified copy in Firebase Storage yet. Until one has a copy, its
+ * cards play the SEC's own address, as before.
  *
  * This list only shrinks. A recording comes off it in the same change that
  * uploads it (scripts/markbank/audio-hosting/host_audio.py extends
  * audio-manifest.json and components/MarkBank/hostedAudio.json); a card whose
  * recording is neither hosted nor listed here fails
- * test/markBankHostedAudio.test.tsx. Never add to it to make that test pass:
- * upload the recording instead.
+ * test/markBankHostedAudio.test.tsx. Entries may be added only by a
+ * coordinator ruling recorded beside them; otherwise upload the recording,
+ * never add to this list to make that test pass.
  */
 export const HOSTED_AUDIO_MISSING: readonly string[] = [
   'audio/2010/LC001ZLP017IV.mp3',
@@ -91,6 +92,7 @@ export const HOSTED_AUDIO_MISSING: readonly string[] = [
   'audio/2022/LC012ZLP017BV.mp3',
   'audio/2022/LC058ZLP017BV.mp3',
   'audio/2022/LC099ZLP017BV.mp3',
+  'audio/2022/LC548ZLP017BV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2023/LC001BLP017IV.mp3',
   'audio/2023/LC001ZLP017IV-deferred.mp3',
   'audio/2023/LC001ZLP017IV.mp3',
@@ -98,6 +100,7 @@ export const HOSTED_AUDIO_MISSING: readonly string[] = [
   'audio/2023/LC012ZLP017BV.mp3',
   'audio/2023/LC058ZLP017BV.mp3',
   'audio/2023/LC099ZLP017BV.mp3',
+  'audio/2023/LC548ZLP017BV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2024/LC001BLP017IV.mp3',
   'audio/2024/LC001ZLP017IV-deferred.mp3',
   'audio/2024/LC001ZLP017IV.mp3',
@@ -105,6 +108,7 @@ export const HOSTED_AUDIO_MISSING: readonly string[] = [
   'audio/2024/LC012ZLP017BV.mp3',
   'audio/2024/LC058ZLP017BV.mp3',
   'audio/2024/LC099ZLP017BV.mp3',
+  'audio/2024/LC548ZLP017BV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2025/LC001BLP017IV.mp3',
   'audio/2025/LC001ZLP017IV-deferred.mp3',
   'audio/2025/LC001ZLP017IV.mp3',
@@ -112,8 +116,44 @@ export const HOSTED_AUDIO_MISSING: readonly string[] = [
   'audio/2025/LC012ZLP017BV.mp3',
   'audio/2025/LC067ZLP045EV.mp3',
   'audio/2025/LC067ZLP046EV.mp3',
+  'audio/2025/LC548ZLP017BV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2026/LC001BLP017IV.mp3',
   'audio/2026/LC001ZLP017IV.mp3',
   'audio/2026/LC011CLP017BV.mp3',
   'audio/2026/LC012ZLP017BV.mp3',
+  'audio/2026/LC548ZLP017BV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'video/2015/LC462CLPO31EV.mp4', // Recorded exception, coordinator ruling 19 Nov 2026: LCVP Link Modules video (#374), SEC archive blocked since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'video/2016/LC462CLP031EV.mp4', // Recorded exception, coordinator ruling 19 Nov 2026: LCVP Link Modules video (#374), SEC archive blocked since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'video/2017/LC462CLP031EV.mp4', // Recorded exception, coordinator ruling 19 Nov 2026: LCVP Link Modules video (#374), SEC archive blocked since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'video/2018/LC462CLP031EV.mp4', // Recorded exception, coordinator ruling 19 Nov 2026: LCVP Link Modules video (#374), SEC archive blocked since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'video/2019/LC462CLP031EV.mp4', // Recorded exception, coordinator ruling 19 Nov 2026: LCVP Link Modules video (#374), SEC archive blocked since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'video/2020/LC462CLP031EV.mp4', // Recorded exception, coordinator ruling 19 Nov 2026: LCVP Link Modules video (#374), SEC archive blocked since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'video/2021/LC462CLP031EV.mov', // Recorded exception, coordinator ruling 19 Nov 2026: LCVP Link Modules video (#374), SEC archive blocked since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'video/2022/LC462CLP031EV.mov', // Recorded exception, coordinator ruling 19 Nov 2026: LCVP Link Modules video (#374), SEC archive blocked since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'video/2023/LC462CLP031EV.mov', // Recorded exception, coordinator ruling 19 Nov 2026: LCVP Link Modules video (#374), SEC archive blocked since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'video/2024/LC462CLP031EV.mov', // Recorded exception, coordinator ruling 19 Nov 2026: LCVP Link Modules video (#374), SEC archive blocked since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'video/2025/LC462CLP031EV.mov', // Recorded exception, coordinator ruling 19 Nov 2026: LCVP Link Modules video (#374), SEC archive blocked since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'video/2026/LC462CLP031EV.mov', // Recorded exception, coordinator ruling 19 Nov 2026: LCVP Link Modules video (#374), SEC archive blocked since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  // Recorded exception (coordinator ruling 19 Nov): Italian listening recordings
+  // carded on claude/classics-lane-20261118. Not uploaded because the SEC
+  // archive has been blocking this Mac since 19 Nov 11:19 UTC; owner: the
+  // audio-hosting lane, which fetches and uploads these first when the block
+  // lifts and takes them off this list. Fingerprints: data/italianAudio.json,
+  // whose 2010-2020 entries the Topic Atlas lists as well.
+  'audio/2010/LC013ZLP017EV.mp3',
+  'audio/2011/LC013ZLP017EV.mp3',
+  'audio/2012/LC013ZLPO17EV.mp3',
+  'audio/2013/LC013ZLP017EV.mp3',
+  'audio/2014/LC013ZLP017EV.mp3',
+  'audio/2015/LC013ZLP017EV.mp3',
+  'audio/2016/LC013ZLP017EV.mp3',
+  'audio/2017/LC013ZLP017EV.mp3',
+  'audio/2018/LC013ZLP017EV.mp3',
+  'audio/2019/LC013ZLP017EV.mp3',
+  'audio/2020/LC013ZLP017EV.mp3',
+  'audio/2021/LC013ZLP017EV.mp3',
+  'audio/2022/LC013ZLP017BV.mp3',
+  'audio/2023/LC013ZLP017BV.mp3',
+  'audio/2024/LC013ZLP017BV.mp3',
+  'audio/2025/LC013ZLP017BV.mp3',
 ];
