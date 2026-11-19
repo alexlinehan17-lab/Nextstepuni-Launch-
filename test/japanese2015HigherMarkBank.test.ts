@@ -134,7 +134,9 @@ describe('Japanese 2015 Higher independent source review', () => {
     expect(point('lb-1-v').rows[0].contextNote).toContain('no per-digit allocation');
   });
 
-  it('preserves the unpriced three-item task for confidence review with exact visible language guidance', () => {
+  it('keeps the unsplit three-item task at its printed total with exact visible language guidance', () => {
+    // Converted from a confidence hold on 19 Nov 2026: the scheme prints a 3-mark total and no
+    // per-item split, so CARD-STANDARD section 5 cards it at the question total.
     const found = point('lb-1-iv');
     expect(found.totalMarks).toBe(3);
     expect(found.tariffModel).toEqual({ kind: 'questionTotal' });
@@ -144,7 +146,7 @@ describe('Japanese 2015 Higher independent source review', () => {
     expect(found.rows[0].group).toBeUndefined();
     expect(found.rows[0].verbatim.split('/').map(text => text.trim())).toEqual(['Kimono', 'clothes', 'books', 'DVDs', 'computer games', 'bicycles']);
     expect(found.questionText).toBe('Name three items you can get there.');
-    expect(found.rows[0].contextNote).toContain('Marks are not calculated because the response split is unpublished');
+    expect(found.rows[0].contextNote).toContain('Assess the three items against the printed 3-mark total.');
     expect(found.rows[0].contextNote).toContain('(1/2 marks if answered in Japanese, romaji or Japanese script)');
     expect(found.answerLanguageRule).toBeUndefined();
     expect(found.qa?.gates).not.toContain('tariff');

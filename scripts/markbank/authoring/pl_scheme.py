@@ -299,6 +299,13 @@ BARE_TARIFF = re.compile(r'(?:^|\s)(\d{1,2})\s*marks?\s*$', re.I)
 # Question 1(c)(iv) is the only one, and reading it as "1 mark" alone would
 # under-price the ask by half.
 SUM_TARIFF = re.compile(r'\(\s*(\d{1,2})\s*m\s*\+\s*(\d{1,2})\s*m\s*\)', re.I)
+# "(2+2+2 m)" — the 2026 schemes write N answers at M each as a sum with the
+# unit once at the end, under "Three of:". Read as a tariff only where every
+# term is the same number; unequal terms are a fault on the ask, never a
+# guess. Unread, the whole cell became the ask's first ANSWER and fourteen
+# 2026 Higher asks reported "the scheme states no tariff".
+PLUS_TARIFF = re.compile(
+    r'\(\s*(\d{1,2})((?:\s*\+\s*\d{1,2}){1,7})\s*(?:m|marks?)\s*\.?\s*\)', re.I)
 # The 2021 examination prices in PUNKTY and writes the unit nowhere: its heads
 # read "(5)" and "(5 × 1)" in the right-hand column, and its rate is a sentence
 # under them. Read only for that sitting, because a bare number in brackets is
@@ -452,13 +459,43 @@ class Ask:
         return f'Ask({self.key} {self.notation!r} {len(self.answers)} answers)'
 
 
+# Markers the SEC MISPRINTED in a scheme, put back to what the question paper
+# prints, each read on the rendered page. No heuristic can know these.
+# (year, level) -> [(page, the row's printed opening, the marker as printed,
+# the marker the paper prints, evidence)].
+MISPRINTS = {
+    (2026, 'ol'): [(
+        9, '(j) Maja goes to the philharmonic in her free time.', '(j)', '(i)',
+        'scheme p9, Zadanie 3(e) true/false table: the worked-example row is '
+        'printed "(j)" (Calibri-BoldItalic) where the paper prints "(i)" '
+        '(paper p15) and the rows below it run (ii)-(vi). Read as printed, '
+        '"(j)" opened a letter after (e), the five romans were filed under '
+        'it, and (f) and (g) were swallowed into its last row, so twelve '
+        'paper asks paired with nothing and six scheme asks with no paper ask.'),
+    ],
+}
+
+
+def _apply_misprints(rows, year, level):
+    for page, opening, printed, meant, _evidence in MISPRINTS.get((year, level), []):
+        hits = [r for r in rows if r.page == page and r.text.startswith(opening)]
+        if len(hits) != 1:
+            raise ValueError(f'{year} {level} misprint on p{page} {opening!r}: '
+                             f'{len(hits)} rows match, expected one')
+        row = hits[0]
+        row.text = meant + row.text[len(printed):]
+        row.cells = [(x, meant + t[len(printed):] if t.startswith(printed) else t)
+                     for x, t in row.cells]
+    return rows
+
+
 class PlScheme:
     def __init__(self, year, level, subject=SUBJECT):
         self.year, self.level, self.subject = year, level, subject
         self.path = scheme_path(year, level, subject)
         if self.path is None:
             raise FileNotFoundError(f'no Polish scheme for {year} {level}')
-        self.rows = read_rows(self.path)
+        self.rows = _apply_misprints(read_rows(self.path), year, level)
         self.letter_x = self._letter_column()
         self.grid_lines = []
         self._asks = self._walk_2021() if year <= 2021 else self._walk()
@@ -770,7 +807,7 @@ def _absorb(ask, text):
                          f'the tariff {ask.notation!r} prices {ask.count}')
         ask.count = ask.count if ask.fault else count
         _read_tariff(ask, text, directive_count=count)
-        rest = TARIFF.sub('', text[d.end():]).strip(' :')
+        rest = PLUS_TARIFF.sub('', TARIFF.sub('', text[d.end():])).strip(' :')
         if rest and not PAGE_ONLY.match(rest):
             _add_answer(ask, rest)
         return
@@ -780,7 +817,7 @@ def _absorb(ask, text):
         _read_tariff(ask, text)
         return
     if TARIFF.fullmatch(text) or SUM_TARIFF.fullmatch(text) \
-            or BARE_TARIFF.fullmatch(text):
+            or PLUS_TARIFF.fullmatch(text) or BARE_TARIFF.fullmatch(text):
         _read_tariff(ask, text)
         return
     if BULLET.match(text) or ask.answers:
@@ -988,6 +1025,18 @@ def _read_tariff(ask, text, directive_count=None):
         ask.count, ask.per = 2, int(sm.group(1))
         ask.total = int(sm.group(1)) + int(sm.group(2))
         ask.notation = sm.group(0)
+        return
+    pm = PLUS_TARIFF.search(text)
+    if pm:
+        terms = [int(pm.group(1))] + [int(t) for t in re.findall(r'\d{1,2}', pm.group(2))]
+        ask.notation = pm.group(0)
+        if len(set(terms)) != 1:
+            ask.fault = f'the printed tariff {pm.group(0)!r} adds unequal terms'
+            return
+        if directive_count is not None and directive_count != len(terms):
+            ask.fault = (f'the directive claims {directive_count} answer(s) and the '
+                         f'tariff {pm.group(0)!r} prices {len(terms)}')
+        ask.count, ask.per, ask.total = len(terms), terms[0], sum(terms)
         return
     stated_total = None
     bm = BARE_TARIFF.search(TARIFF.sub('', text))

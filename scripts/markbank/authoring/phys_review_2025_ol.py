@@ -17,8 +17,12 @@ cell, [4 + 3]). Q12 prints (a) and (b), both compulsory (20 + 36). Q14 is any
 two of (a)-(d): every part is carded. Most rows carry the scheme's partial
 allowance ("[accept partial answer for 3]") as their note. A cell "[4 + 3]"
 set against two answer lines is carded positionally, the first line 4 and the
-second 3. Where the scheme prices "any two" with one cell and no per-answer
-split (Q11(ii) and (v), [6]), the part is carded whole (questionTotal).
+second 3. Where the scheme prices "any two" with one cell [6] and its partial
+allowance (Q11(ii) and (v)), the cell is the grid: Q11(ii)'s three named
+methods are a menu at 3 each (one right method is the partial answer, two are
+the 6), and Q11(v)'s open list ("etc.") is one row at 6 with the partial note,
+as Q11(viii) is. (These two were confidence-only holds until 19 Nov 2026,
+converted under CARD-STANDARD section 5.)
 
 The paper sets 1/p (Q2(iv), (v)), the mirror formula (Q9(iii)) and the radon
 and alpha nuclides (Q12(a)) in a mathematical font whose text layer is
@@ -566,8 +570,8 @@ TASKS = [
       [anyn(S('any two: conduction, convection, radiation', piece=2, psep=': '), 2, 3, sep=',', note='any two',
             note_sel=PA(3))], 'phys-2-1', 'methods-of-heat-transfer',
       SQ(17, 'State two methods by which heat can be transferred throughout a home.'), 6, stem=STEM11,
-      tariff='questionTotal', id='phys-2025-ol-q11-ii',
-      decision='"any two" at one cell [6], with no mark printed per method: the part is carded whole.'),
+      id='phys-2025-ol-q11-ii',
+      decision='"any two" at one cell [6] with "[accept partial answer for 3]": a menu, 3 per method.'),
     T('11iii', 'Q11(iii)', 'B', P(11, 'Calculate the temperature of the living room in degrees celsius (°C).'),
       [R('292 – 273 = 19 °C', 6, note_sel=PA(3))], 'phys-2-1', 'kelvin-to-celsius',
       SQ(17, 'Calculate the temperature of the living room in degrees celsius (°C).'), 6, stem=[MONITOR],
@@ -580,9 +584,9 @@ TASKS = [
     T('11v', 'Q11(v)', 'B', P(11, 'State two ways in which the U‐value of a house can be reduced.'),
       [pt(S('any two of: glazing, insulation, etc.'), 6, whole=True, note_sel=PA(3))], 'phys-2-1',
       'reducing-u-value', SQ(17, 'State two ways in which the U-value of a house can be reduced.'), 6,
-      stem=[UVALUE], tariff='questionTotal', id='phys-2025-ol-q11-v',
-      decision='"any two of" at one cell [6], with no mark printed per way, and the scheme\'s list closes on '
-               '"etc.": the part is carded whole, its list one row as printed.'),
+      stem=[UVALUE], id='phys-2025-ol-q11-v',
+      decision='"any two of" at one cell [6] with "[accept partial answer for 3]", its list closing on "etc.": '
+               'one row as printed, at 6 with the partial note (as Q11(viii)).'),
     T('11vi', 'Q11(vi)', 'B', P(11, 'Explain what is meant by the term renewable', 'energy source.'),
       [R('(an energy source) that doesn’t run out', 6, note_sel=PA(3))], 'phys-1-4', 'renewable-energy-source',
       SQ(17, 'Explain what is meant by the term renewable energy source.'), 6, stem=[SOLAR],
