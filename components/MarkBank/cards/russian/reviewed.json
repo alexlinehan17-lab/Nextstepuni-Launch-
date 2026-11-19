@@ -91436,7 +91436,7 @@
           "guidance": []
         }
       ],
-      "markingGuideNote": "Write out the following sentence in cursive/handwritten Cyrillic script. Three marks are awarded for how well you form letters and three marks are awarded for how accurately you transcribe the text. The original paper supplies this 3 + 3 allocation. The scheme provides no handwritten exemplar."
+      "markingGuideNote": "The scheme prints no answer for this part. Write out the following sentence in cursive/handwritten Cyrillic script. Three marks are awarded for how well you form letters and three marks are awarded for how accurately you transcribe the text. The original paper supplies this 3 + 3 allocation. The scheme provides no handwritten exemplar."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000EV",
@@ -91459,7 +91459,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -91482,7 +91482,7 @@
         "kind": "point",
         "verbatim": "Адрес",
         "marks": null,
-        "contextNote": "Nouns. The scheme gives 10 marks for the complete classification exercise and no per-word allocation. Individual answers can be reviewed; numeric self-scoring is unavailable for this task."
+        "contextNote": "Nouns. The scheme gives 10 marks for the complete classification exercise and no per-word allocation. Assess the whole response against the printed total and all ten answers; no marks per word are inferred."
       },
       {
         "id": "nouns-2",
@@ -92290,7 +92290,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000EV",
@@ -92313,7 +92313,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -92512,7 +92512,7 @@
           ]
         }
       ],
-      "markingGuideNote": "Choice 1: Opening/greeting; your name; age; who you are; where you’re from; where you were at school; what subjects you liked; when and why you started learning Russian; what you do in your free time; suggestion to get to know one another; signing off.\nChoice 2: Opening/greeting; What town you are going to visit; When the visit will be; When you will meet up; Where you will meet up; Signing off.\nChoice 3: Opening/greeting; congratulations; Well wishing; Small talk; Signing off."
+      "markingGuideNote": "The scheme prints no answer for this part. Choice 1: Opening/greeting; your name; age; who you are; where you’re from; where you were at school; what subjects you liked; when and why you started learning Russian; what you do in your free time; suggestion to get to know one another; signing off.\nChoice 2: Opening/greeting; What town you are going to visit; When the visit will be; When you will meet up; Where you will meet up; Signing off.\nChoice 3: Opening/greeting; congratulations; Well wishing; Small talk; Signing off."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000EV",
@@ -92535,7 +92535,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {

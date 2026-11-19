@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19T12:12:06.202003+00:00",
+  "archive": {
+    "year": 2014,
+    "level": "ol",
+    "url": "https://www.examinations.ie/archive/markingschemes/2014/LC099GLP000EV.pdf",
+    "filename": "Russian-2014-ol-SEC-fresh-20261119.pdf",
+    "pages": 16,
+    "downloadDone": true,
+    "downloadConfirmation": "Chrome history shows exact completed file and source URL with Show in Finder.",
+    "checkedAt": "2026-11-19T12:00:48.151Z",
+    "bytes": 100961,
+    "sha256": "b3186b37ad28e970e617c4c9fc3710628400da21c59a2dd18e51f444799e2d3c",
+    "retainedSha256": "b3186b37ad28e970e617c4c9fc3710628400da21c59a2dd18e51f444799e2d3c",
+    "exactMatch": true,
+    "freshDownloadVerified": true,
+    "localFile": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/stale-exclusions-20261119/sec-recheck/2014-ol.pdf"
+  },
+  "cards": [
+    {
+      "id": "ru-2014-ol-la1",
+      "printedMarks": 6,
+      "schemePages": [
+        4
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2014-ol.pdf",
+      "schemeSha256": "b3186b37ad28e970e617c4c9fc3710628400da21c59a2dd18e51f444799e2d3c",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2014-ol.json",
+      "finding": "The scheme repeats the handwriting prompt without a completed handwritten answer.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2014-ol-sa",
+      "printedMarks": 30,
+      "schemePages": [
+        9
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2014-ol.pdf",
+      "schemeSha256": "b3186b37ad28e970e617c4c9fc3710628400da21c59a2dd18e51f444799e2d3c",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2014-ol.json",
+      "finding": "The scheme supplies the task and marking grid/criteria, without a model answer or indicative answer content.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2014-ol-ew",
+      "printedMarks": 30,
+      "schemePages": [
+        10,
+        11
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2014-ol.pdf",
+      "schemeSha256": "b3186b37ad28e970e617c4c9fc3710628400da21c59a2dd18e51f444799e2d3c",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2014-ol.json",
+      "finding": "The scheme supplies the task and marking grid/criteria, without a model answer or indicative answer content.",
+      "fixedLine": "The scheme prints no answer for this part."
+    }
+  ],
+  "otherFindings": [
+    {
+      "id": "ru-2014-ol-la2",
+      "decision": "Whole-question assessment out of10; all five noun and five adjective answers retained, without inferred marks per word.",
+      "sourcePages": [
+        5
+      ]
+    }
+  ],
+  "sourceReview": "All relevant scheme pages read in full as original-page images and extracted text; examples distinguished from prompts. Original downloaded PDF matches the retained source exactly.",
+  "rule": "R4; CARD-STANDARD sections3,5 and10a",
+  "sourceBranch": "wip/russian-2026-11-19",
+  "liveCardsChanged": false
+}

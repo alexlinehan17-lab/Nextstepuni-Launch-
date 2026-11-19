@@ -107,7 +107,7 @@ def language_and_matching(docs):
   words=[squash(t) for t in page_text(S,5,col).splitlines() if re.search('[А-Яа-яЁё]',t)]
   assert len(words)==5,(label,words)
   for n,word in enumerate(words,1):c['rows'].append({'id':f'{label.lower()}-{n}','kind':'point','verbatim':word,'marks':None,'contextNote':label})
- c['rows'][0]['contextNote']+='. The scheme gives 10 marks for the complete classification exercise and no per-word allocation. Individual answers can be reviewed; numeric self-scoring is unavailable for this task.'
+ c['rows'][0]['contextNote']+='. The scheme gives 10 marks for the complete classification exercise and no per-word allocation. Assess the whole response against the printed total and all ten answers; no marks per word are inferred.'
  cards.append(c)
  question='Complete the table '+squash(between(page_text(Q,10,(300,30,580,150)),'Complete the table'))
  table=S[5].find_tables().tables[0].extract();assert len(table)==11 and table[4][2]=='Стать пилотом'

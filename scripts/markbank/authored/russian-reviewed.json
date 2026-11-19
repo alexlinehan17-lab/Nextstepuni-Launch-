@@ -85459,7 +85459,15 @@
       "component": "000",
       "paperGuidancePages": [
         5
-      ]
+      ],
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          4
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2014-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -85493,7 +85501,7 @@
           "guidance": []
         }
       ],
-      "markingGuideNote": "Write out the following sentence in cursive/handwritten Cyrillic script. Three marks are awarded for how well you form letters and three marks are awarded for how accurately you transcribe the text. The original paper supplies this 3 + 3 allocation. The scheme provides no handwritten exemplar."
+      "markingGuideNote": "The scheme prints no answer for this part. Write out the following sentence in cursive/handwritten Cyrillic script. Three marks are awarded for how well you form letters and three marks are awarded for how accurately you transcribe the text. The original paper supplies this 3 + 3 allocation. The scheme provides no handwritten exemplar."
     }
   },
   {
@@ -85516,7 +85524,7 @@
         "kind": "point",
         "verbatim": "Адрес",
         "marks": null,
-        "contextNote": "Nouns. The scheme gives 10 marks for the complete classification exercise and no per-word allocation. Individual answers can be reviewed; numeric self-scoring is unavailable for this task."
+        "contextNote": "Nouns. The scheme gives 10 marks for the complete classification exercise and no per-word allocation. Assess the whole response against the printed total and all ten answers; no marks per word are inferred."
       },
       {
         "id": "nouns-2",
@@ -86147,7 +86155,15 @@
       "schemePages": [
         9
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          9
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2014-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -86292,7 +86308,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {
@@ -86325,7 +86341,16 @@
         10,
         11
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          10,
+          11
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2014-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -86501,7 +86526,7 @@
           ]
         }
       ],
-      "markingGuideNote": "Choice 1: Opening/greeting; your name; age; who you are; where you’re from; where you were at school; what subjects you liked; when and why you started learning Russian; what you do in your free time; suggestion to get to know one another; signing off.\nChoice 2: Opening/greeting; What town you are going to visit; When the visit will be; When you will meet up; Where you will meet up; Signing off.\nChoice 3: Opening/greeting; congratulations; Well wishing; Small talk; Signing off."
+      "markingGuideNote": "The scheme prints no answer for this part. Choice 1: Opening/greeting; your name; age; who you are; where you’re from; where you were at school; what subjects you liked; when and why you started learning Russian; what you do in your free time; suggestion to get to know one another; signing off.\nChoice 2: Opening/greeting; What town you are going to visit; When the visit will be; When you will meet up; Where you will meet up; Signing off.\nChoice 3: Opening/greeting; congratulations; Well wishing; Small talk; Signing off."
     }
   },
   {
