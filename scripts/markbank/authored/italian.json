@@ -39950,5 +39950,1753 @@
    "attribution": "SEC Italian 2022 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "The task as the examination paper prints it."
   }
+ },
+ {
+  "id": "it-2022-ol-la-1",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "giorgio-parisi-born",
+  "questionRef": "2022 OL Section LA Q1",
+  "questionText": "Giorgio Parisi was born in\n(a) 1936\n(b) 1946\n(c) 1948\n(d) 2006",
+  "questionChoices": [
+   "1936",
+   "1946",
+   "1948",
+   "2006"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. (c)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (c) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 1",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-la-2",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "train-has-been-delayed",
+  "questionRef": "2022 OL Section LA Q2",
+  "questionText": "The train has been delayed by\n(a) 12 minutes\n(b) 20 minutes\n(c) 25 minutes\n(d) 30 minutes",
+  "questionChoices": [
+   "12 minutes",
+   "20 minutes",
+   "25 minutes",
+   "30 minutes"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2. (c)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (c) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 2",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-la-3",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "sciocola",
+  "questionRef": "2022 OL Section LA Q3",
+  "questionText": "“Sciocola” is\n(a) a chocolate festival\n(b) an ice‐cream festival\n(c) an artisan bread festival\n(d) a vegetarian food festival",
+  "questionChoices": [
+   "a chocolate festival",
+   "an ice‐cream festival",
+   "an artisan bread festival",
+   "a vegetarian food festival"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3. (a)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (a) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 3",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-la-4",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "north-italy-there-will",
+  "questionRef": "2022 OL Section LA Q4",
+  "questionText": "In the North of Italy there will be\n(a) a heatwave\n(b) fog\n(c) heavy rain\n(d) snow",
+  "questionChoices": [
+   "a heatwave",
+   "fog",
+   "heavy rain",
+   "snow"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "4. (c)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (c) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 4",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-la-5",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "announcement-about",
+  "questionRef": "2022 OL Section LA Q5",
+  "questionText": "The announcement is about\n(a) beauty products\n(b) food products\n(c) designer clothes\n(d) jewellery",
+  "questionChoices": [
+   "beauty products",
+   "food products",
+   "designer clothes",
+   "jewellery"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "5. (a)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (a) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 3.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 5",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-la-6",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "initiative-about",
+  "questionRef": "2022 OL Section LA Q6",
+  "questionText": "The initiative is about\n(a) recycling\n(b) pollution\n(c) food waste\n(d) traffic",
+  "questionChoices": [
+   "recycling",
+   "pollution",
+   "food waste",
+   "traffic"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "6. (c)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (c) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 3.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 6",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-la-7",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "news-item-about",
+  "questionRef": "2022 OL Section LA Q7",
+  "questionText": "The news item is about\n(a) holidays\n(b) transport\n(c) education\n(d) jobs",
+  "questionChoices": [
+   "holidays",
+   "transport",
+   "education",
+   "jobs"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "7. (b)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (b) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 3.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 7",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-la-8",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "city-council-crema-has-adopted",
+  "questionRef": "2022 OL Section LA Q8",
+  "questionText": "The City Council of Crema has adopted\n(a) two cats\n(b) two dogs\n(c) two rabbits\n(d) two goats Iodáilis ‐ Gnáthleibhéal",
+  "questionChoices": [
+   "two cats",
+   "two dogs",
+   "two rabbits",
+   "two goats Iodáilis ‐ Gnáthleibhéal"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "8. (a)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (a) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 3.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 8",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb1-1",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "time-will-meeting-start",
+  "questionRef": "2022 OL Section LB1 Q1",
+  "questionText": "At what time will the meeting start?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "7.15",
+    "marks": 4,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 1. Conversation between Lorenzo and Luisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 1",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb1-2",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "who-project-aimed",
+  "questionRef": "2022 OL Section LB1 Q2",
+  "questionText": "Who is the project aimed at?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1-1",
+    "kind": "point",
+    "verbatim": "University",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish."
+   },
+   {
+    "id": "r-1-2",
+    "kind": "point",
+    "verbatim": "students",
+    "marks": 2
+   },
+   {
+    "id": "r-1-3",
+    "kind": "point",
+    "verbatim": "the elderly",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 1. Conversation between Lorenzo and Luisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 2",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb1-3",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "household-chores-mentioned",
+  "questionRef": "2022 OL Section LB1 Q3",
+  "questionText": "Name two household chores mentioned.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Doing the shopping",
+      "Cooking",
+      "Washing the dishes",
+      "Vacuuming",
+      "Cleaning floors",
+      "Looking after pets"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks (2+2)'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 1. Conversation between Lorenzo and Luisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 3",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb1-4",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "other-activity-included-project",
+  "questionRef": "2022 OL Section LB1 Q4",
+  "questionText": "Name one other activity included in the project.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Accompanying the elderly [2] going to medical appointments [2]",
+      "Watching a film [2] together [2]",
+      "Reading/newspaper [2] together [2]",
+      "(Going for) walks [2] together [2]"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 1. Conversation between Lorenzo and Luisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 4",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb2-1",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "agata-feeling",
+  "questionRef": "2022 OL Section LB2 Q1",
+  "questionText": "How is Agata feeling?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Amazingly/very happy",
+      "Very proud",
+      "Very tired",
+      "She has no energy"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '5 marks'; the listening booklet prints this ask on page 5.",
+  "stem": "Dialogue 2. Conversation between Agata and Franco. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 1",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb2-2",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "age-children-will-agata-organise-art",
+  "questionRef": "2022 OL Section LB2 Q2",
+  "questionText": "For what age children will Agata organise art workshops?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Under tens",
+    "marks": 4,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 5.",
+  "stem": "Dialogue 2. Conversation between Agata and Franco. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 2",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb2-3",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "item-agata-will-use-her-art",
+  "questionRef": "2022 OL Section LB2 Q3",
+  "questionText": "Mention one item Agata will use in her art workshops.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Bottles",
+      "Cans",
+      "Cardboard boxes",
+      "Old clothes"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '5 marks'; the listening booklet prints this ask on page 5.",
+  "stem": "Dialogue 2. Conversation between Agata and Franco. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 3",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb2-4",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "has-positive-effect-people-wellbeing-iod",
+  "questionRef": "2022 OL Section LB2 Q4",
+  "questionText": "What has a positive effect on people’s wellbeing? Give two details. Iodáilis ‐ Gnáthleibhéal",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Art",
+      "Music",
+      "Sport",
+      "Nature"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks (2+2)'; the listening booklet prints this ask on page 5.",
+  "stem": "Dialogue 2. Conversation between Agata and Franco. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 4",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb3-1",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "month-did-piero-start-his-sailing",
+  "questionRef": "2022 OL Section LB3 Q1",
+  "questionText": "In which month did Piero start his sailing tour of Italy?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(Last) May",
+    "marks": 4,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 1",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb3-2",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "when-did-piero-start-sailing",
+  "questionRef": "2022 OL Section LB3 Q2",
+  "questionText": "When did Piero start sailing?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "As a child at (about) five years of age",
+    "marks": 4,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 2",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb3-3",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "documentary-about",
+  "questionRef": "2022 OL Section LB3 Q3",
+  "questionText": "What is the documentary about?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Marine plastic pollution",
+    "marks": 6,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 3",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb3-4",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "people-ask-piero",
+  "questionRef": "2022 OL Section LB3 Q4",
+  "questionText": "What do people ask Piero? Give one detail.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "How he prepares (for his journey)",
+      "If he is scared before his journey",
+      "If he misses his family"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 4",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb3-5",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "dangers-being-sea",
+  "questionRef": "2022 OL Section LB3 Q5",
+  "questionText": "What are the dangers of being at sea? Give one detail.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "The sudden changes of weather",
+      "Storms (cause fear)",
+      "Strong/summer sun",
+      "Dehydration",
+      "Tiredness"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 5",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb3-6",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "other-than-fruit-foods-that-piero",
+  "questionRef": "2022 OL Section LB3 Q6",
+  "questionText": "Other than fruit, mention two foods that Piero eats during his trip.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "(Raw) vegetables",
+      "(Canned) lentils",
+      "Beans",
+      "Cheese",
+      "Eggs",
+      "Biscuits"
+     ],
+     "perOptionSteps": [
+      4,
+      2
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks (4+2)'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 6",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb3-7",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "would-piero-like-future",
+  "questionRef": "2022 OL Section LB3 Q7",
+  "questionText": "What would Piero like to do in the future? Give one detail.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Continue his adventure by travelling more",
+      "Write a book on his adventures",
+      "(Continue) raising awareness about problems in the sea",
+      "Contribute to his dream of a world without pollution"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 7",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-lb3-8",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "where-piero-going-after-sailing-trip",
+  "questionRef": "2022 OL Section LB3 Q8",
+  "questionText": "Where is Piero going after the sailing trip? Iodáilis ‐ Gnáthleibhéal Ordinary level Italian Monday 27 June 12:10 – 12:50",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The seaside 1 mark)",
+    "marks": 4,
+    "contextNote": "The scheme prices this half of the ask separately, under the heading “The mountains (for a few days)”. Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 8",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-ol-c-1-a",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "C",
+  "topicId": "italian-6-3",
+  "conceptId": "informal-writing-30-marks-choose-a-informal-lett",
+  "questionRef": "2022 OL Section C Q1(a)",
+  "questionText": "Informal Writing (30 marks) Choose (a) Informal Letter or (b) Dialogue In both (a) and (b), write on any four of the following six ideas.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Question 1 30 marks",
+    "(a) E-mail/Letter 30 marks",
+    "Where marks for content and communication are 7 or less, award no marks for language"
+   ],
+   "criteria": [
+    {
+     "id": "format",
+     "label": "Format",
+     "maxMarks": 7,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "guidance": [
+      "Beginning, opening greeting,",
+      "closing formula, ending 7 marks (2+2+2+1)"
+     ]
+    },
+    {
+     "id": "content",
+     "label": "Content and communication",
+     "maxMarks": 16,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "guidance": [
+      "Content and communication: 16 marks (4x4)",
+      "Four of the following points to be covered",
+      "• reason for the",
+      "invitation (why, reason, etc.)",
+      "• when and where you go",
+      "• how the day will be organised",
+      "(means of transport,",
+      "what type of activities)",
+      "• what you bring (clothes, boots,",
+      "good / bad weather)",
+      "• what do you eat (rolls, picnic)",
+      "• suggestions for gifts (money, books)"
+     ]
+    },
+    {
+     "id": "language",
+     "label": "Language",
+     "maxMarks": 7,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "guidance": [
+      "Language: 7 marks"
+     ],
+     "bands": [
+      {
+       "label": "0 - 2",
+       "marks": [
+        0,
+        1,
+        2
+       ],
+       "guidance": [
+        "Most verbs incorrect, few correct agreements, many spelling mistakes"
+       ]
+      },
+      {
+       "label": "3 - 5",
+       "marks": [
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Few verbs wrong, some correct agreements not too many mistakes"
+       ]
+      },
+      {
+       "label": "6 - 7",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": [
+        "Few mistakes, many correct agreements, very good accuracy"
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower",
+      "maxMarks": 0,
+      "permittedMarks": [
+       0
+      ],
+      "bands": [],
+      "contentCriteria": [
+       "content"
+      ],
+      "contentAtMost": 7,
+      "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+     }
+    }
+   ],
+   "markingGuideNote": "Question 1 30 marks"
+  },
+  "schemePages": [
+   13,
+   14,
+   15
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Italian 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2022-ol-c-1-b",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "C",
+  "topicId": "italian-6-3",
+  "conceptId": "informal-writing-30-marks-choose-a-informal-lett",
+  "questionRef": "2022 OL Section C Q1(b)",
+  "questionText": "Informal Writing (30 marks) Choose (a) Informal Letter or (b) Dialogue In both (a) and (b), write on any four of the following six ideas.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Question 1 30 marks",
+    "(b) Dialogue 30 marks",
+    "Where marks for content and communication are 7 or less, award no marks for language"
+   ],
+   "criteria": [
+    {
+     "id": "format",
+     "label": "Format",
+     "maxMarks": 7,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "guidance": [
+      "Dialogue format, beginning,",
+      "closing formula, ending 7 marks (2+2+2+1)"
+     ]
+    },
+    {
+     "id": "content",
+     "label": "Content and communication",
+     "maxMarks": 16,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "guidance": [
+      "Content and communication: 16 marks (4x4)",
+      "Four of the following points to be covered",
+      "• when are you planning to go",
+      "and for how long",
+      "• details of your arrival (day, transport)",
+      "• details on the accommodation",
+      "(where, type, for how many people etc.)",
+      "• what are you planning to do on holiday",
+      "(visits, museums, sports, etc.)",
+      "• organise a weekend together (availability,",
+      "when, etc.)",
+      "• what to do together (activities, food, etc.)"
+     ]
+    },
+    {
+     "id": "language",
+     "label": "Language and conversational expressions 7 marks",
+     "maxMarks": 7,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "guidance": [
+      "Language and conversational expressions 7 marks"
+     ],
+     "bands": [
+      {
+       "label": "0 - 2",
+       "marks": [
+        0,
+        1,
+        2
+       ],
+       "guidance": [
+        "Most verbs incorrect, few correct agreements, many spelling mistakes"
+       ]
+      },
+      {
+       "label": "3 - 5",
+       "marks": [
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Few verbs wrong, some correct agreements not too many mistakes"
+       ]
+      },
+      {
+       "label": "6 - 7",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": [
+        "Few mistakes, many correct agreements, very good accuracy"
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower",
+      "maxMarks": 0,
+      "permittedMarks": [
+       0
+      ],
+      "bands": [],
+      "contentCriteria": [
+       "content"
+      ],
+      "contentAtMost": 7,
+      "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+     }
+    }
+   ],
+   "markingGuideNote": "Question 1 30 marks"
+  },
+  "schemePages": [
+   13,
+   14,
+   15
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Italian 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2022-ol-c-2",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "C",
+  "topicId": "italian-6-4",
+  "conceptId": "without-using-your-own-name-and-address-fill-in-",
+  "questionRef": "2022 OL Section C Q2",
+  "questionText": "Without using your own name and address fill in the form below in Italian.\nThe same answer should not be used twice.\nAnswer any seven of the following eight questions.\nNote some questions have two parts.\nAnswer any eight of the following nine questions.",
+  "totalMarks": 22,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Question 2 FORM-FILLING 22 marks",
+    "Candidates will be penalised for incorrect verbs, incorrect agreements and spelling mistakes"
+   ],
+   "criteria": [
+    {
+     "id": "box-a",
+     "label": "Box A",
+     "maxMarks": 8,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "guidance": [
+      "Box A – 8 marks (8x1)",
+      "Marks awarded for the best 8 questions (out of 9 questions)"
+     ]
+    },
+    {
+     "id": "box-b",
+     "label": "Box B",
+     "maxMarks": 14,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ],
+     "guidance": [
+      "Box B – 14 marks (7x2)",
+      "Marks awarded for the best 7 questions (out of 8 questions)",
+      "Where a question has two parts award 1+1",
+      "(When the same word is used to answer multiple questions, marks may only be allocated once).",
+      "Question 3",
+      "A new Italian restaurant is opening in Killarney 8 marks (8x1 mark)",
+      "1. Il nostro nuovo ristorante aprirà a Killarney fra una settimana. La prima sera offriremo un",
+      "menù speciale al costo di 25€",
+      "2. Prima della cena verrà servito un aperitivo analcolico alla pera."
+     ]
+    }
+   ],
+   "markingGuideNote": "Question 2 FORM-FILLING 22 marks"
+  },
+  "schemePages": [
+   13,
+   14,
+   15
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    18
+   ],
+   "attribution": "SEC Italian 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2022-ol-c-3",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "C",
+  "topicId": "italian-6-5",
+  "conceptId": "a-new-italian-restaurant-is-opening-in-killarney",
+  "questionRef": "2022 OL Section C Q3",
+  "questionText": "A new Italian restaurant is opening in Killarney.\n(8 marks) The note below got mixed up.\nWrite it in the correct order.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 8,
+     "perOption": 1,
+     "options": [
+      "1. Il nostro nuovo ristorante aprirà a Killarney fra una settimana. La prima sera offriremo un menù speciale al costo di 25€",
+      "2. Prima della cena verrà servito un aperitivo analcolico alla pera.",
+      "3. Subito dopo l’aperitivo serviremo il cibo",
+      "4. La cena comincerà con un antipasto di salumi e formaggi.",
+      "5. Dopo l’antipasto arriveranno i primi piatti.",
+      "6. Dopo i primi saranno serviti i secondi piatti insieme ai contorni.",
+      "7. Il menù finirà con una buonissima selezione di dolci e il caffè.",
+      "8. Alla fine della serata, ognuno tornerà a casa con una scatola di biscotti artigianali fatti a mano da noi."
+     ]
+    },
+    "contextNote": "The scheme prints the order line by line; each line in its place is one mark."
+   }
+  ],
+  "notes": "The scheme prices the sequence \"Question 3\": one mark for each line in its place.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    19
+   ],
+   "attribution": "SEC Italian 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it, with the eight sentences to put in order."
+  }
  }
 ]
