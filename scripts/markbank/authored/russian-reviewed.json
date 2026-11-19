@@ -88784,7 +88784,15 @@
       "schemePages": [
         5
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          5
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2013-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -88874,7 +88882,7 @@
           "guidance": []
         }
       ],
-      "markingGuideNote": "The scheme awards one mark for each completed form line and supplies no personal example answers. Answer in Russian or English; do not supply real contact information. The original booklet and the scheme phrase some field labels differently."
+      "markingGuideNote": "The scheme prints no answer for this part. The scheme awards one mark for each completed form line and supplies no personal example answers. Answer in Russian or English; do not supply real contact information. The original booklet and the scheme phrase some field labels differently."
     }
   },
   {
@@ -90962,7 +90970,15 @@
       "schemePages": [
         5
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          5
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2013-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -91012,7 +91028,7 @@
           ]
         }
       ],
-      "markingGuideNote": "The printed example банкетный зал cannot be used. The scheme accepts another correct-gender noun phrase whether or not it occurs in the passage; no closed phrase list is imposed."
+      "markingGuideNote": "The scheme prints no answer for this part. The printed example банкетный зал cannot be used. The scheme accepts another correct-gender noun phrase whether or not it occurs in the passage; no closed phrase list is imposed."
     }
   },
   {
@@ -91466,7 +91482,16 @@
         9,
         10
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          9,
+          10
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2013-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -91611,7 +91636,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {
@@ -91646,7 +91671,16 @@
         11,
         12
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          11,
+          12
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2013-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -91822,7 +91856,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {

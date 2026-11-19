@@ -3005,6 +3005,16 @@
         "baselineRegression": "none",
         "sittingOpenTasks": 0,
         "sittingExclusions": 0
+      },
+      "r4Recheck20261119": {
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2013-ol.json",
+        "cards": [
+          "ru-2013-ol-sa",
+          "ru-2013-ol-ew",
+          "ru-2013-ol-ir1-iii",
+          "ru-2013-ol-la1"
+        ],
+        "releaseComplete": false
       }
     },
     {
