@@ -8,7 +8,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
 import chemistryReference from '../data/examTopics/chemistry.json';
 import chemistryEvidence from '../data/examTopics/chemistry-local-crosswalk.json';
 import curriculumCrosswalk from '../data/examTopics/chemistry-curriculum-crosswalk.json';
@@ -31,6 +31,9 @@ import {
 } from '../data/examTopics/registry';
 import { resolveCurriculumSpecification } from '../curriculumRegistry';
 import preservationBaseline from './fixtures/chemistryTopicQuestionBaseline.json';
+import { loadAllAtlasModels as loadAtlasModelsForTest } from '../components/PaperTrail/atlasModel';
+// The single model: subjects' filings load when they open; these checks read every one.
+beforeAll(() => loadAtlasModelsForTest());
 
 const ROOT = process.cwd();
 const VARIANTS = [
@@ -81,7 +84,8 @@ describe('Chemistry exam-topic registry', () => {
       .toEqual(referenceTopics.map(topic => topic.id));
     expect(taxonomy.topics.map(topic => topic.label))
       .toEqual(referenceTopics.map(topic => topic.label));
-    expect(topicsForSubject('chemistry')).toHaveLength(76);
+    // The registry keeps all 76 reference topics; the Atlas browses the single model's one list (new course, 34).
+    expect(topicsForSubject('chemistry')).toHaveLength(34);
   });
 
   it('bridges every practice bucket to the correct canonical specification', () => {
@@ -299,10 +303,10 @@ describe('Chemistry exam-topic registry', () => {
     ))).toBe(false);
   });
 
-  it('surfaces all 374 entitled questions through all 76 topic buckets', () => {
+  it('surfaces all 374 entitled questions through the single model\'s 34 headings', () => {
     expect(subjectAtlasStats('chemistry')).toMatchObject({
       questions: 374,
-      topics: 76,
+      topics: 34,
       yearMin: 2010,
       yearMax: 2026,
     });

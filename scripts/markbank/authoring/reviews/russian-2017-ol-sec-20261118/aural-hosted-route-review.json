@@ -1,0 +1,9 @@
+{
+  "shownAt": "2026-11-19T10:20:42.183578+00:00",
+  "coordinatorReview": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-russian-2017-listening/review.html",
+  "change": "Add russian|2017|LC099GLPA00EV.pdf to existing hosted answer preferences.",
+  "reason": "Per-ask bindings are committed but the old remote sidecar is preferred without the exact entry.",
+  "otherSubjectsChanged": false,
+  "screenshot": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-russian-2017-listening/source-page-3.png",
+  "audio": "Embedded SEC MP3 returns 403. Coordinator hosting handoff required; do not deploy from this lane."
+}
