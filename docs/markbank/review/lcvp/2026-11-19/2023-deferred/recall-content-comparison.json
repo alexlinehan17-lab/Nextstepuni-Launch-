@@ -1,0 +1,1550 @@
+{
+  "recordedAt": "2026-11-19T19:46:57.945535+00:00",
+  "scope": "Coordinator recall/content consistency ruling applied independently to49 new Section A asks; previous exposure is explicit.",
+  "sources": [
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/root-reader-frozen.json",
+      "sha256": "b375ed95daa98f258952a13d2f2caaae241f97d731b79a8177762975058e6754"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/second-reader-frozen.json",
+      "sha256": "6df7acff65534a69db7d0e1b3897f50432012894bdab4083aea8d92bc2c87949"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/source-only-input.json",
+      "sha256": "65aa9acf402c808f16fa05de85d9c33bc593e39e2c9187c8940e1e7794e2af37"
+    }
+  ],
+  "compared": 49,
+  "agreements": 43,
+  "differences": 6,
+  "agreedChanges": [
+    {
+      "id": "lcvp-2010-cl-a1",
+      "before": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "after": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2010-cl-a8",
+      "before": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-1-career-investigation"
+      ],
+      "after": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2011-cl-a3",
+      "before": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "after": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2011-cl-a4",
+      "before": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "after": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2011-cl-a5",
+      "before": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "after": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2011-cl-a6",
+      "before": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "after": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2012-cl-a4",
+      "before": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "after": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2013-cl-a4",
+      "before": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "after": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a2",
+      "before": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "after": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a4",
+      "before": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "after": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a5",
+      "before": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "after": [
+        "link-modules-common-audio-visual"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "lcvp-2010-cl-a1",
+      "root": {
+        "id": "lcvp-2010-cl-a1",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Her personal career preference and experience are stated in the recording."
+      },
+      "second": {
+        "id": "lcvp-2010-cl-a1",
+        "sitting": "2010",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves Jane’s personal career motivation and previous HR experience.",
+        "mode": "recording recall",
+        "paperPages": [
+          3
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ]
+    },
+    {
+      "id": "lcvp-2010-cl-a2",
+      "root": {
+        "id": "lcvp-2010-cl-a2",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "reason": "Names business-running skills, independent of the particular speaker."
+      },
+      "second": {
+        "id": "lcvp-2010-cl-a2",
+        "sitting": "2010",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "reason": "Names transferable business skills: finance, staffing, marketing and negotiating.",
+        "mode": "module content",
+        "paperPages": [
+          3
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "id": "lcvp-2010-cl-a3",
+      "root": {
+        "id": "lcvp-2010-cl-a3",
+        "headingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "reason": "Explains recruitment agencies matching applicants and employment sectors."
+      },
+      "second": {
+        "id": "lcvp-2010-cl-a3",
+        "sitting": "2010",
+        "headingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "reason": "Tests recruitment agencies’ matching function and knowledge of employment sectors.",
+        "mode": "module content",
+        "paperPages": [
+          3
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ]
+    },
+    {
+      "id": "lcvp-2010-cl-a4",
+      "root": {
+        "id": "lcvp-2010-cl-a4",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls Michael’s own family and return-to-work concerns."
+      },
+      "second": {
+        "id": "lcvp-2010-cl-a4",
+        "sitting": "2010",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves Michael’s family attachment and concern about returning employment.",
+        "mode": "recording recall",
+        "paperPages": [
+          4
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2010-cl-a5",
+      "root": {
+        "id": "lcvp-2010-cl-a5",
+        "headingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "reason": "Evaluates job-seeking weaknesses using CV, flexibility and employer-contact criteria."
+      },
+      "second": {
+        "id": "lcvp-2010-cl-a5",
+        "sitting": "2010",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Specific CV omissions and construction-sector history are recorded case facts.",
+        "mode": "recording recall",
+        "paperPages": [
+          4
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": false,
+      "previousHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ]
+    },
+    {
+      "id": "lcvp-2010-cl-a6",
+      "root": {
+        "id": "lcvp-2010-cl-a6",
+        "headingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "reason": "Applies general CV preparation principles; no personal biographical facts required."
+      },
+      "second": {
+        "id": "lcvp-2010-cl-a6",
+        "sitting": "2010",
+        "headingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "reason": "Accepted answers are transferable CV-writing practices, not personal case details.",
+        "mode": "module content",
+        "paperPages": [
+          5
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ]
+    },
+    {
+      "id": "lcvp-2010-cl-a7",
+      "root": {
+        "id": "lcvp-2010-cl-a7",
+        "headingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "reason": "Explains general benefits of preparing for job interviews."
+      },
+      "second": {
+        "id": "lcvp-2010-cl-a7",
+        "sitting": "2010",
+        "headingIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        "reason": "Explains the benefits of interview preparation and presentation.",
+        "mode": "module content",
+        "paperPages": [
+          6
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ]
+    },
+    {
+      "id": "lcvp-2010-cl-a8",
+      "root": {
+        "id": "lcvp-2010-cl-a8",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls Jane’s two stated responses to the contemporary downturn."
+      },
+      "second": {
+        "id": "lcvp-2010-cl-a8",
+        "sitting": "2010",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves Jane’s two observations about responses to the economic downturn.",
+        "mode": "recording recall",
+        "paperPages": [
+          7
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-1-career-investigation"
+      ]
+    },
+    {
+      "id": "lcvp-2011-cl-a1",
+      "root": {
+        "id": "lcvp-2011-cl-a1",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "reason": "Defines volunteering as helping others or a cause."
+      },
+      "second": {
+        "id": "lcvp-2011-cl-a1",
+        "sitting": "2011",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "reason": "Defines volunteering as helping others or a cause.",
+        "mode": "module content",
+        "paperPages": [
+          3
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2011-cl-a2",
+      "root": {
+        "id": "lcvp-2011-cl-a2",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "reason": "Explains the altruistic purpose of voluntary activity."
+      },
+      "second": {
+        "id": "lcvp-2011-cl-a2",
+        "sitting": "2011",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "reason": "Explains the social purpose of voluntary activity.",
+        "mode": "module content",
+        "paperPages": [
+          3
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2011-cl-a3",
+      "root": {
+        "id": "lcvp-2011-cl-a3",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls Orla’s particular reasons for choosing this named organisation."
+      },
+      "second": {
+        "id": "lcvp-2011-cl-a3",
+        "sitting": "2011",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves Orla’s reasons for choosing this named organisation.",
+        "mode": "recording recall",
+        "paperPages": [
+          3
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2011-cl-a4",
+      "root": {
+        "id": "lcvp-2011-cl-a4",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls the changes this organisation reported in the recording."
+      },
+      "second": {
+        "id": "lcvp-2011-cl-a4",
+        "sitting": "2011",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves the particular changes described for HELP IRELAND’s clients.",
+        "mode": "recording recall",
+        "paperPages": [
+          4
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2011-cl-a5",
+      "root": {
+        "id": "lcvp-2011-cl-a5",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Identifies this organisation’s particular services described in the recording."
+      },
+      "second": {
+        "id": "lcvp-2011-cl-a5",
+        "sitting": "2011",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves the organisation’s actual accommodation, meals, advice and support services.",
+        "mode": "recording recall",
+        "paperPages": [
+          4
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2011-cl-a6",
+      "root": {
+        "id": "lcvp-2011-cl-a6",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls this organisation’s stated rationale and tasks for young volunteers."
+      },
+      "second": {
+        "id": "lcvp-2011-cl-a6",
+        "sitting": "2011",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves HELP IRELAND’s reasons and specified roles for young volunteers.",
+        "mode": "recording recall",
+        "paperPages": [
+          5
+        ],
+        "schemePages": [
+          6
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2011-cl-a7",
+      "root": {
+        "id": "lcvp-2011-cl-a7",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls Orla’s decision about Stephen’s personal interview."
+      },
+      "second": {
+        "id": "lcvp-2011-cl-a7",
+        "sitting": "2011",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves Orla’s decision to respect Stephen’s personal dignity.",
+        "mode": "recording recall",
+        "paperPages": [
+          6
+        ],
+        "schemePages": [
+          6
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2011-cl-a7-2",
+      "root": {
+        "id": "lcvp-2011-cl-a7-2",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls the specific lessons from Stephen’s interview."
+      },
+      "second": {
+        "id": "lcvp-2011-cl-a7-2",
+        "sitting": "2011",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves Stephen’s reported experiences and attitudes encountered on the streets.",
+        "mode": "recording recall",
+        "paperPages": [
+          6
+        ],
+        "schemePages": [
+          6
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2011-cl-a8",
+      "root": {
+        "id": "lcvp-2011-cl-a8",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "reason": "Explains personal and community benefits of voluntary participation."
+      },
+      "second": {
+        "id": "lcvp-2011-cl-a8",
+        "sitting": "2011",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "reason": "Explains general personal and community benefits of voluntary work.",
+        "mode": "module content",
+        "paperPages": [
+          7
+        ],
+        "schemePages": [
+          6
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2012-cl-a1",
+      "root": {
+        "id": "lcvp-2012-cl-a1",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Identifies the employer named in the recording."
+      },
+      "second": {
+        "id": "lcvp-2012-cl-a1",
+        "sitting": "2012",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves the employer’s name.",
+        "mode": "recording recall",
+        "paperPages": [
+          3
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2012-cl-a2",
+      "root": {
+        "id": "lcvp-2012-cl-a2",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls Dermot’s actual qualifications and studies."
+      },
+      "second": {
+        "id": "lcvp-2012-cl-a2",
+        "sitting": "2012",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves Dermot’s particular educational qualifications.",
+        "mode": "recording recall",
+        "paperPages": [
+          3
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2012-cl-a3",
+      "root": {
+        "id": "lcvp-2012-cl-a3",
+        "headingIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ],
+        "reason": "Describes the responsibilities of a project manager at work."
+      },
+      "second": {
+        "id": "lcvp-2012-cl-a3",
+        "sitting": "2012",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "reason": "Tests managers’ planning, budgeting, coordination and communication duties.",
+        "mode": "module content",
+        "paperPages": [
+          3
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": false,
+      "previousHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "id": "lcvp-2012-cl-a4",
+      "root": {
+        "id": "lcvp-2012-cl-a4",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls specific complaints, delays and atmosphere prompting this meeting."
+      },
+      "second": {
+        "id": "lcvp-2012-cl-a4",
+        "sitting": "2012",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves specific complaints, delays and reporting problems involving Tom.",
+        "mode": "recording recall",
+        "paperPages": [
+          4
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "id": "lcvp-2012-cl-a5",
+      "root": {
+        "id": "lcvp-2012-cl-a5",
+        "headingIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ],
+        "reason": "Explains employee-manager feedback and working-condition benefits."
+      },
+      "second": {
+        "id": "lcvp-2012-cl-a5",
+        "sitting": "2012",
+        "headingIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ],
+        "reason": "Assesses employee feedback, workplace relations, training and stress benefits.",
+        "mode": "module content",
+        "paperPages": [
+          4,
+          5
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ]
+    },
+    {
+      "id": "lcvp-2012-cl-a6",
+      "root": {
+        "id": "lcvp-2012-cl-a6",
+        "headingIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ],
+        "reason": "Applies workplace support and planning to reduce employee stress."
+      },
+      "second": {
+        "id": "lcvp-2012-cl-a6",
+        "sitting": "2012",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "reason": "Proposes management planning, scheduling, communication and training improvements.",
+        "mode": "module content",
+        "paperPages": [
+          5
+        ],
+        "schemePages": [
+          6
+        ]
+      },
+      "agrees": false,
+      "previousHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "id": "lcvp-2012-cl-a7",
+      "root": {
+        "id": "lcvp-2012-cl-a7",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "reason": "Explains communication skills needed to manage teams and resolve problems."
+      },
+      "second": {
+        "id": "lcvp-2012-cl-a7",
+        "sitting": "2012",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "reason": "Explains why managers need communication, leadership and listening skills.",
+        "mode": "module content",
+        "paperPages": [
+          6
+        ],
+        "schemePages": [
+          6
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "id": "lcvp-2012-cl-a8",
+      "root": {
+        "id": "lcvp-2012-cl-a8",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "reason": "Evaluates management skills and qualities, permitting either reasoned judgement."
+      },
+      "second": {
+        "id": "lcvp-2012-cl-a8",
+        "sitting": "2012",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "reason": "Evaluates management competence using criteria; accepts either defended judgment.",
+        "mode": "module content",
+        "paperPages": [
+          7
+        ],
+        "schemePages": [
+          6
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "id": "lcvp-2013-cl-a1",
+      "root": {
+        "id": "lcvp-2013-cl-a1",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls the couple’s six-year residence."
+      },
+      "second": {
+        "id": "lcvp-2013-cl-a1",
+        "sitting": "2013",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves the six-year duration.",
+        "mode": "recording recall",
+        "paperPages": [
+          3
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2013-cl-a2",
+      "root": {
+        "id": "lcvp-2013-cl-a2",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls their personal comparison between Ireland and New York."
+      },
+      "second": {
+        "id": "lcvp-2013-cl-a2",
+        "sitting": "2013",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves this couple’s reported changes after moving from the USA.",
+        "mode": "recording recall",
+        "paperPages": [
+          3
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2013-cl-a3",
+      "root": {
+        "id": "lcvp-2013-cl-a3",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Explains networking, tourism and advertising benefits for a local enterprise."
+      },
+      "second": {
+        "id": "lcvp-2013-cl-a3",
+        "sitting": "2013",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves the named trail’s support, tourist trade and website benefits.",
+        "mode": "recording recall",
+        "paperPages": [
+          3
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": false,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2013-cl-a4",
+      "root": {
+        "id": "lcvp-2013-cl-a4",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls Tom’s specific savings, grant application and bank arrangements."
+      },
+      "second": {
+        "id": "lcvp-2013-cl-a4",
+        "sitting": "2013",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves Tom’s actual savings, grant, banking and bill-paying arrangements.",
+        "mode": "recording recall",
+        "paperPages": [
+          4
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "id": "lcvp-2013-cl-a5",
+      "root": {
+        "id": "lcvp-2013-cl-a5",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Explains local craft quality, employment and spending benefits."
+      },
+      "second": {
+        "id": "lcvp-2013-cl-a5",
+        "sitting": "2013",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Explains craft quality and local economic benefits of buying locally.",
+        "mode": "module content",
+        "paperPages": [
+          4,
+          5
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2013-cl-a6",
+      "root": {
+        "id": "lcvp-2013-cl-a6",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Explains economic and operating problems facing craft enterprises."
+      },
+      "second": {
+        "id": "lcvp-2013-cl-a6",
+        "sitting": "2013",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Explains market demand and cost pressures on local craft businesses.",
+        "mode": "module content",
+        "paperPages": [
+          5
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2013-cl-a7",
+      "root": {
+        "id": "lcvp-2013-cl-a7",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "reason": "Applies ICT and marketing skills to promoting craft industries."
+      },
+      "second": {
+        "id": "lcvp-2013-cl-a7",
+        "sitting": "2013",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "reason": "Applies ICT and promotional communication skills to marketing.",
+        "mode": "module content",
+        "paperPages": [
+          6
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "id": "lcvp-2013-cl-a8",
+      "root": {
+        "id": "lcvp-2013-cl-a8",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Advises on establishing and operating a local craft business."
+      },
+      "second": {
+        "id": "lcvp-2013-cl-a8",
+        "sitting": "2013",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Advises an entrepreneur about establishing a local craft enterprise.",
+        "mode": "module content",
+        "paperPages": [
+          7
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a1",
+      "root": {
+        "id": "lcvp-2022-cl-deferred-a1",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "reason": "Explains teamwork benefits such as sharing ideas and dividing work."
+      },
+      "second": {
+        "id": "lcvp-2022-cl-deferred-a1",
+        "sitting": "2022-deferred",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "reason": "Explains transferable teamwork benefits: shared ideas, divided work and reduced stress.",
+        "mode": "module content",
+        "paperPages": [
+          4
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a2",
+      "root": {
+        "id": "lcvp-2022-cl-deferred-a2",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls the two researched areas and specific supermarket interview."
+      },
+      "second": {
+        "id": "lcvp-2022-cl-deferred-a2",
+        "sitting": "2022-deferred",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves these students’ two actual project areas and named interview.",
+        "mode": "recording recall",
+        "paperPages": [
+          4
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a3",
+      "root": {
+        "id": "lcvp-2022-cl-deferred-a3",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Defines corporate social responsibility and an enterprise’s impacts."
+      },
+      "second": {
+        "id": "lcvp-2022-cl-deferred-a3",
+        "sitting": "2022-deferred",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Defines enterprises’ corporate social responsibility.",
+        "mode": "module content",
+        "paperPages": [
+          4
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a4",
+      "root": {
+        "id": "lcvp-2022-cl-deferred-a4",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls Cáit’s particular observations of this supermarket’s staff."
+      },
+      "second": {
+        "id": "lcvp-2022-cl-deferred-a4",
+        "sitting": "2022-deferred",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves Cáit’s observations of this supermarket’s staff and atmosphere.",
+        "mode": "recording recall",
+        "paperPages": [
+          5
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ]
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a5",
+      "root": {
+        "id": "lcvp-2022-cl-deferred-a5",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Applies corporate social responsibility to one chosen business-impact area."
+      },
+      "second": {
+        "id": "lcvp-2022-cl-deferred-a5",
+        "sitting": "2022-deferred",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Applies CSR categories to examples from the supermarket.",
+        "mode": "module content",
+        "paperPages": [
+          5
+        ],
+        "schemePages": [
+          4,
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a6",
+      "root": {
+        "id": "lcvp-2022-cl-deferred-a6",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Evaluates business advertising, reputation and community goodwill."
+      },
+      "second": {
+        "id": "lcvp-2022-cl-deferred-a6",
+        "sitting": "2022-deferred",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Evaluates business advertising, goodwill and loyalty through CSR.",
+        "mode": "module content",
+        "paperPages": [
+          6
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a7",
+      "root": {
+        "id": "lcvp-2022-cl-deferred-a7",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Evaluates whether the enterprise meets corporate social responsibility aims."
+      },
+      "second": {
+        "id": "lcvp-2022-cl-deferred-a7",
+        "sitting": "2022-deferred",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Evaluates the enterprise against community, environmental and social CSR aims.",
+        "mode": "module content",
+        "paperPages": [
+          7
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a8",
+      "root": {
+        "id": "lcvp-2022-cl-deferred-a8",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Explains modern business, customer and community reasons for CSR."
+      },
+      "second": {
+        "id": "lcvp-2022-cl-deferred-a8",
+        "sitting": "2022-deferred",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "reason": "Explains CSR’s importance to businesses, customers, employees and suppliers.",
+        "mode": "module content",
+        "paperPages": [
+          8
+        ],
+        "schemePages": [
+          6
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a1",
+      "root": {
+        "id": "lcvp-2023-cl-deferred-a1",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls the placement company’s name."
+      },
+      "second": {
+        "id": "lcvp-2023-cl-deferred-a1",
+        "sitting": "2023-deferred",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves Molly’s placement employer.",
+        "mode": "recording recall",
+        "paperPages": [
+          4
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-audio-visual"
+      ]
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a2",
+      "root": {
+        "id": "lcvp-2023-cl-deferred-a2",
+        "headingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "reason": "Compares active work placement with observational work shadowing."
+      },
+      "second": {
+        "id": "lcvp-2023-cl-deferred-a2",
+        "sitting": "2023-deferred",
+        "headingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "reason": "Distinguishes observing work from doing the job during placement.",
+        "mode": "module content",
+        "paperPages": [
+          4
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ]
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a3",
+      "root": {
+        "id": "lcvp-2023-cl-deferred-a3",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "reason": "Defines a social enterprise’s social or environmental purpose."
+      },
+      "second": {
+        "id": "lcvp-2023-cl-deferred-a3",
+        "sitting": "2023-deferred",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "reason": "Defines social enterprise through its social purpose rather than profit.",
+        "mode": "module content",
+        "paperPages": [
+          4
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a4",
+      "root": {
+        "id": "lcvp-2023-cl-deferred-a4",
+        "headingIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ],
+        "reason": "Identifies employer responsibilities for workplace health and safety."
+      },
+      "second": {
+        "id": "lcvp-2023-cl-deferred-a4",
+        "sitting": "2023-deferred",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves Odhran’s actual clothing, statement, training and Safe Pass practices.",
+        "mode": "recording recall",
+        "paperPages": [
+          5
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": false,
+      "previousHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ]
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a5",
+      "root": {
+        "id": "lcvp-2023-cl-deferred-a5",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Recalls this company’s particular investors, rents, grants and loans."
+      },
+      "second": {
+        "id": "lcvp-2023-cl-deferred-a5",
+        "sitting": "2023-deferred",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves the company’s actual rents, investors, grants and social loans.",
+        "mode": "recording recall",
+        "paperPages": [
+          5
+        ],
+        "schemePages": [
+          4
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a6",
+      "root": {
+        "id": "lcvp-2023-cl-deferred-a6",
+        "headingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "reason": "Evaluates arrangements that make a work placement meaningful."
+      },
+      "second": {
+        "id": "lcvp-2023-cl-deferred-a6",
+        "sitting": "2023-deferred",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "reason": "Retrieves the specific training, meetings, visits, feedback and mentoring provided.",
+        "mode": "recording recall",
+        "paperPages": [
+          6
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": false,
+      "previousHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ]
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a7",
+      "root": {
+        "id": "lcvp-2023-cl-deferred-a7",
+        "headingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "reason": "Explains feedback’s value when learning from work placement."
+      },
+      "second": {
+        "id": "lcvp-2023-cl-deferred-a7",
+        "sitting": "2023-deferred",
+        "headingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "reason": "Explains the general value of feedback during work placement.",
+        "mode": "module content",
+        "paperPages": [
+          7
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ]
+    },
+    {
+      "id": "lcvp-2023-cl-deferred-a8",
+      "root": {
+        "id": "lcvp-2023-cl-deferred-a8",
+        "headingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "reason": "Explains mentoring benefits for a placement student or new employee."
+      },
+      "second": {
+        "id": "lcvp-2023-cl-deferred-a8",
+        "sitting": "2023-deferred",
+        "headingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "reason": "Explains mentoring benefits for work-placement students and new employees.",
+        "mode": "module content",
+        "paperPages": [
+          8
+        ],
+        "schemePages": [
+          5
+        ]
+      },
+      "agrees": true,
+      "previousHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ]
+    }
+  ]
+}

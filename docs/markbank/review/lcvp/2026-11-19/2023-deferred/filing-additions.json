@@ -1,10 +1,10 @@
 {
-  "recordedAt": "2026-11-19T19:36:00.938188+00:00",
+  "recordedAt": "2026-11-19T20:01:04.292592+00:00",
   "sitting": "2023-deferred",
   "status": "Review-only filing additions; no canonical or generated file changed",
   "cards": 50,
   "sourceCandidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/proposed-50-authored-cards.json",
-  "sourceCandidateSha256": "42e7a81a1533013f55f46ea833f348167cceeab0860ab7fb4da625caad791ca7",
+  "sourceCandidateSha256": "67cd973f737ed8e04f4db92edec3ecc7e6048685bd7e4d9eb570a66fd245ace1",
   "thirdReaderDecision": {
     "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/third-reader-decision.json",
     "sha256": "15848a41a33b471b64468438fce20db2dc86da98008802f7a27fe0b7e98cfd4b"
@@ -34,21 +34,9 @@
       ],
       "r2"
     ],
-    "lcvp-2023-cl-deferred-a4": [
-      [
-        "link-modules-common-1-introduction-to-working-life"
-      ],
-      "r2"
-    ],
     "lcvp-2023-cl-deferred-a5": [
       [
-        "link-modules-common-2-local-business-enterprises"
-      ],
-      "r2"
-    ],
-    "lcvp-2023-cl-deferred-a6": [
-      [
-        "link-modules-common-1-work-placement"
+        "link-modules-common-audio-visual"
       ],
       "r2"
     ],
@@ -318,7 +306,8 @@
     ]
   },
   "counts": {
-    "r2": 44,
+    "r2": 42,
+    "pending-method-evidence": 2,
     "r3": 6
   },
   "items": [
@@ -328,16 +317,28 @@
         "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
-      "reason": "Recall of the company named in the recording.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Recalls the placement company’s name.",
       "internalTopicId": "lcvp-link-modules-0-3",
       "questionRef": "2023 CL Section A Q1 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-audio-visual"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-audio-visual"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2023-cl-deferred-a1",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+        "reason": "Recall of the company named in the recording.",
+        "internalTopicId": "lcvp-link-modules-0-3",
+        "questionRef": "2023 CL Section A Q1 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-audio-visual"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2023-cl-deferred-a2",
@@ -345,16 +346,28 @@
         "link-modules-common-1-work-placement"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
-      "reason": "Comparing work placement and shadowing.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Compares active work placement with observational work shadowing.",
       "internalTopicId": "lcvp-link-modules-0-3",
       "questionRef": "2023 CL Section A Q2 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-1-work-placement"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-1-work-placement"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2023-cl-deferred-a2",
+        "headingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+        "reason": "Comparing work placement and shadowing.",
+        "internalTopicId": "lcvp-link-modules-0-3",
+        "questionRef": "2023 CL Section A Q2 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-1-work-placement"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2023-cl-deferred-a3",
@@ -362,67 +375,121 @@
         "link-modules-common-2-local-voluntarycommunity-enterprises"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
-      "reason": "Purpose and meaning of social enterprise.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Defines a social enterprise’s social or environmental purpose.",
       "internalTopicId": "lcvp-link-modules-1-2",
       "questionRef": "2023 CL Section A Q3 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-voluntarycommunity-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2023-cl-deferred-a3",
+        "headingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+        "reason": "Purpose and meaning of social enterprise.",
+        "internalTopicId": "lcvp-link-modules-1-2",
+        "questionRef": "2023 CL Section A Q3 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2023-cl-deferred-a4",
       "headingIds": [
         "link-modules-common-1-introduction-to-working-life"
       ],
-      "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
-      "reason": "Health and safety in the workplace.",
+      "how": null,
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Identifies employer responsibilities for workplace health and safety.",
       "internalTopicId": "lcvp-link-modules-0-0",
       "questionRef": "2023 CL Section A Q4 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-1-introduction-to-working-life"
-      ],
+      "previousReading": {
+        "cardId": "lcvp-2023-cl-deferred-a4",
+        "headingIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+        "reason": "Health and safety in the workplace.",
+        "internalTopicId": "lcvp-link-modules-0-0",
+        "questionRef": "2023 CL Section A Q4 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ]
+      },
       "secondHeadingIds": [
-        "link-modules-common-1-introduction-to-working-life"
-      ]
+        "link-modules-common-audio-visual"
+      ],
+      "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
     },
     {
       "cardId": "lcvp-2023-cl-deferred-a5",
       "headingIds": [
-        "link-modules-common-2-local-business-enterprises"
+        "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
-      "reason": "Sources of finance for the company.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Recalls this company’s particular investors, rents, grants and loans.",
       "internalTopicId": "lcvp-link-modules-1-1",
       "questionRef": "2023 CL Section A Q5 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2023-cl-deferred-a5",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+        "reason": "Sources of finance for the company.",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2023 CL Section A Q5 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2023-cl-deferred-a6",
       "headingIds": [
         "link-modules-common-1-work-placement"
       ],
-      "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
-      "reason": "Providing meaningful work placement.",
+      "how": null,
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Evaluates arrangements that make a work placement meaningful.",
       "internalTopicId": "lcvp-link-modules-0-3",
       "questionRef": "2023 CL Section A Q6 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-1-work-placement"
-      ],
+      "previousReading": {
+        "cardId": "lcvp-2023-cl-deferred-a6",
+        "headingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+        "reason": "Providing meaningful work placement.",
+        "internalTopicId": "lcvp-link-modules-0-3",
+        "questionRef": "2023 CL Section A Q6 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-1-work-placement"
+        ]
+      },
       "secondHeadingIds": [
-        "link-modules-common-1-work-placement"
-      ]
+        "link-modules-common-audio-visual"
+      ],
+      "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
     },
     {
       "cardId": "lcvp-2023-cl-deferred-a7",
@@ -430,16 +497,28 @@
         "link-modules-common-1-work-placement"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
-      "reason": "Feedback during work placement.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Explains feedback’s value when learning from work placement.",
       "internalTopicId": "lcvp-link-modules-0-3",
       "questionRef": "2023 CL Section A Q7 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-1-work-placement"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-1-work-placement"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2023-cl-deferred-a7",
+        "headingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+        "reason": "Feedback during work placement.",
+        "internalTopicId": "lcvp-link-modules-0-3",
+        "questionRef": "2023 CL Section A Q7 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-1-work-placement"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2023-cl-deferred-a8",
@@ -447,16 +526,28 @@
         "link-modules-common-1-work-placement"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
-      "reason": "Mentoring work placement students and new employees.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Explains mentoring benefits for a placement student or new employee.",
       "internalTopicId": "lcvp-link-modules-0-3",
       "questionRef": "2023 CL Section A Q8 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-1-work-placement"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-1-work-placement"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2023-cl-deferred-a8",
+        "headingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+        "reason": "Mentoring work placement students and new employees.",
+        "internalTopicId": "lcvp-link-modules-0-3",
+        "questionRef": "2023 CL Section A Q8 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-1-work-placement"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2023-cl-deferred-b1",
@@ -1137,7 +1228,72 @@
       ]
     }
   ],
-  "pending": [],
+  "pending": [
+    {
+      "cardId": "lcvp-2023-cl-deferred-a4",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": null,
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Identifies employer responsibilities for workplace health and safety.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2023 CL Section A Q4 — Deferred sitting",
+      "previousReading": {
+        "cardId": "lcvp-2023-cl-deferred-a4",
+        "headingIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+        "reason": "Health and safety in the workplace.",
+        "internalTopicId": "lcvp-link-modules-0-0",
+        "questionRef": "2023 CL Section A Q4 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ]
+      },
+      "secondHeadingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
+    },
+    {
+      "cardId": "lcvp-2023-cl-deferred-a6",
+      "headingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "how": null,
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Evaluates arrangements that make a work placement meaningful.",
+      "internalTopicId": "lcvp-link-modules-0-3",
+      "questionRef": "2023 CL Section A Q6 — Deferred sitting",
+      "previousReading": {
+        "cardId": "lcvp-2023-cl-deferred-a6",
+        "headingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+        "reason": "Providing meaningful work placement.",
+        "internalTopicId": "lcvp-link-modules-0-3",
+        "questionRef": "2023 CL Section A Q6 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-1-work-placement"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-1-work-placement"
+        ]
+      },
+      "secondHeadingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
+    }
+  ],
   "limits": [
     "All internal topic IDs, card IDs and concept IDs remain unchanged.",
     "The coordinator’s market-research ruling is applied explicitly; the remaining recall/content consistency review is recorded separately.",

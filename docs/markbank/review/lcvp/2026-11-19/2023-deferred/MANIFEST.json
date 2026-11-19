@@ -1,17 +1,17 @@
 {
-  "recordedAt": "2026-11-19T19:38:56.449318+00:00",
+  "recordedAt": "2026-11-19T20:01:20.777882+00:00",
   "sitting": "2023-deferred",
   "sourceCandidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/proposed-50-authored-cards.json",
   "files": [
     {
       "path": "docs/markbank/review/lcvp/2026-11-19/2023-deferred/README.md",
       "bytes": 1110,
-      "sha256": "89935842df2b4d30adfbff77d34989eaf556575fcb2ec192769a79956c7ea7fc"
+      "sha256": "ff0ea371a4792bcde8c135ea8e58d638cfc7ca7edcfe24d4c905e0de6a249d62"
     },
     {
       "path": "docs/markbank/review/lcvp/2026-11-19/2023-deferred/candidate.json",
-      "bytes": 175016,
-      "sha256": "42e7a81a1533013f55f46ea833f348167cceeab0860ab7fb4da625caad791ca7"
+      "bytes": 174930,
+      "sha256": "67cd973f737ed8e04f4db92edec3ecc7e6048685bd7e4d9eb570a66fd245ace1"
     },
     {
       "path": "docs/markbank/review/lcvp/2026-11-19/2023-deferred/coordinator-rulings.md",
@@ -40,8 +40,8 @@
     },
     {
       "path": "docs/markbank/review/lcvp/2026-11-19/2023-deferred/evidence/proposed-50-authored-cards.json",
-      "bytes": 175016,
-      "sha256": "42e7a81a1533013f55f46ea833f348167cceeab0860ab7fb4da625caad791ca7"
+      "bytes": 174930,
+      "sha256": "67cd973f737ed8e04f4db92edec3ecc7e6048685bd7e4d9eb570a66fd245ace1"
     },
     {
       "path": "docs/markbank/review/lcvp/2026-11-19/2023-deferred/evidence/question-and-complete-scheme-trace.json",
@@ -90,8 +90,23 @@
     },
     {
       "path": "docs/markbank/review/lcvp/2026-11-19/2023-deferred/filing-additions.json",
-      "bytes": 43013,
-      "sha256": "e9a15b3554e0278d8a3a29ee13d6dfc61069d04756186142a963ac966b76a9f4"
+      "bytes": 51065,
+      "sha256": "b8a642d822afc9f6a35fa90d1329462eeb734056a9ea9e0c3b950096e13da78c"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2023-deferred/final-note-cleanup.json",
+      "bytes": 39466,
+      "sha256": "2a0c5b163a325c710911a7be2cfbb446de31c25f77a21127d7c50c5546dd9a47"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2023-deferred/finalize-candidate-notes.py",
+      "bytes": 6935,
+      "sha256": "c577e236dce0c221e4ee52c6ce625ca59a669393e2920daf1173e17a1dc2c663"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2023-deferred/recall-content-comparison.json",
+      "bytes": 42565,
+      "sha256": "b69a8529a955f7aa4e4204c92dd91083e5662def1280c710eb359d977dd62f0f"
     },
     {
       "path": "docs/markbank/review/lcvp/2026-11-19/2023-deferred/third-reader-decision.json",

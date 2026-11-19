@@ -1,0 +1,237 @@
+{
+  "recordedAt": "2026-11-19T20:00:24.135229+00:00",
+  "scope": "Settled editorial notes removed from new source drafts; quoted source text and all assessment fields preserved.",
+  "basis": [
+    "Final third-reader decisions beside the original comparison packets",
+    "Coordinator splitting rule: separately printed instructions or named items with separate marks split; compound instructions stay together",
+    "2010 B2(ii), 2011 C2(d)(ii), 2012 C4(b): two separate printed instructions confirmed in source-parts.json"
+  ],
+  "limitations": [
+    "Audio hosting/search remains unresolved in the evidence; removing operational notes from student copy does not certify playback.",
+    "Final generation, source openings, canonical filings and production verification remain pending."
+  ],
+  "files": [
+    {
+      "sitting": "2010",
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-authoring/proposed-48-authored-cards.json",
+      "beforeSha256": "11832f5af645fd70d1aecbb689443d39cad5624b5efc4ee62ea751d62d090ce2",
+      "afterSha256": "abf05b904313b3f64a23e64d74ad55848e99a8d36d0b19ebddde2e69cc0520e9",
+      "cards": 48,
+      "changedCards": 7,
+      "changes": [
+        {
+          "id": "lcvp-2010-cl-b2i",
+          "field": "rows/0/contextNote",
+          "before": "Response 1 of 1. Answer only for this named organisation. The source gives one of the two three-mark awards to each printed model; split form remains provisional. Complete printed support notes and allocation: 1. The County Enterprise Boards promote entrepreneurship/by helping existing Enterprises and new enterprises in local areas/help new enterprises with grants, advice or mentoring. 2. The County Councils look after local areas/ they have responsibility for planning/ environmental issues and amenities in these areas. 2 @ 3m (2 + 1) Complete original guidance: The County Enterprise Boards promote entrepreneurship/by helping existing Enterprises and new enterprises in local areas/help new enterprises with grants, advice or mentoring.",
+          "after": "Response 1 of 1. Answer only for this named organisation. The source gives one of the two three-mark awards to each printed model. Complete printed support notes and allocation: 1. The County Enterprise Boards promote entrepreneurship/by helping existing Enterprises and new enterprises in local areas/help new enterprises with grants, advice or mentoring. 2. The County Councils look after local areas/ they have responsibility for planning/ environmental issues and amenities in these areas. 2 @ 3m (2 + 1) Complete original guidance: The County Enterprise Boards promote entrepreneurship/by helping existing Enterprises and new enterprises in local areas/help new enterprises with grants, advice or mentoring."
+        },
+        {
+          "id": "lcvp-2010-cl-b2i-2",
+          "field": "rows/0/contextNote",
+          "before": "Response 1 of 1. Answer only for this named organisation. The source gives one of the two three-mark awards to each printed model; split form remains provisional. Complete printed support notes and allocation: 1. The County Enterprise Boards promote entrepreneurship/by helping existing Enterprises and new enterprises in local areas/help new enterprises with grants, advice or mentoring. 2. The County Councils look after local areas/ they have responsibility for planning/ environmental issues and amenities in these areas. 2 @ 3m (2 + 1) Complete original guidance: The County Councils look after local areas/ they have responsibility for planning/ environmental issues and amenities in these areas.",
+          "after": "Response 1 of 1. Answer only for this named organisation. The source gives one of the two three-mark awards to each printed model. Complete printed support notes and allocation: 1. The County Enterprise Boards promote entrepreneurship/by helping existing Enterprises and new enterprises in local areas/help new enterprises with grants, advice or mentoring. 2. The County Councils look after local areas/ they have responsibility for planning/ environmental issues and amenities in these areas. 2 @ 3m (2 + 1) Complete original guidance: The County Councils look after local areas/ they have responsibility for planning/ environmental issues and amenities in these areas."
+        },
+        {
+          "id": "lcvp-2010-cl-b2ii",
+          "field": "rows/0/contextNote",
+          "before": "Provisional split of the three printed1+1 allocations; generic-component consistency decision remains pending. Complete printed support notes and allocation: 1. Grants. 2. Serviced facilities/enterprise units/infrastructure. 3. Support/mentoring/advice. 4. Work with enterprise courses in local schools/colleges/provide training/courses. 5. Tourism - marketing/website/promotion/adventure centre. 3 @ 2m (1 +1)",
+          "after": "The paper asks for three ways and then an explanation of each. The scheme gives 3 @ 2m (1+1), without naming the component weights. Complete printed support notes and allocation: 1. Grants. 2. Serviced facilities/enterprise units/infrastructure. 3. Support/mentoring/advice. 4. Work with enterprise courses in local schools/colleges/provide training/courses. 5. Tourism - marketing/website/promotion/adventure centre. 3 @ 2m (1 +1)"
+        },
+        {
+          "id": "lcvp-2010-cl-b2ii-2",
+          "field": "rows/0/contextNote",
+          "before": "Explain each same chosen way. Keep all five printed option lines; do not invent explanations. The proposed naming/explanation split remains provisional. Complete printed support notes and allocation: 1. Grants. 2. Serviced facilities/enterprise units/infrastructure. 3. Support/mentoring/advice. 4. Work with enterprise courses in local schools/colleges/provide training/courses. 5. Tourism - marketing/website/promotion/adventure centre. 3 @ 2m (1 +1)",
+          "after": "Explain each same chosen way. Keep all five printed option lines; do not invent explanations. Complete printed support notes and allocation: 1. Grants. 2. Serviced facilities/enterprise units/infrastructure. 3. Support/mentoring/advice. 4. Work with enterprise courses in local schools/colleges/provide training/courses. 5. Tourism - marketing/website/promotion/adventure centre. 3 @ 2m (1 +1)"
+        },
+        {
+          "id": "lcvp-2010-cl-c3a",
+          "field": "rows/0/contextNote",
+          "before": "Define only this fixed underlined term. Split form remains provisional. Complete printed support notes and allocation: CV: Curriculum Vitae. This is a document setting out/ personal, educational, work experience information together with skills and talents plus any other relevant information of a person seeking employment. Referees: These are people who know the job seeker and a potential employer can contact them to find out about their reliability etc. Equal opportunities employer: This means that the employer will not discriminate between applicants on the grounds of sex, age, race, religion, ethnic group, gender, marital status, disability etc./everyone gets the same chance. 3 @ 2m (0, 2)",
+          "after": "Define only this fixed underlined term. Complete printed support notes and allocation: CV: Curriculum Vitae. This is a document setting out/ personal, educational, work experience information together with skills and talents plus any other relevant information of a person seeking employment. Referees: These are people who know the job seeker and a potential employer can contact them to find out about their reliability etc. Equal opportunities employer: This means that the employer will not discriminate between applicants on the grounds of sex, age, race, religion, ethnic group, gender, marital status, disability etc./everyone gets the same chance. 3 @ 2m (0, 2)"
+        },
+        {
+          "id": "lcvp-2010-cl-c3a-2",
+          "field": "rows/0/contextNote",
+          "before": "Define only this fixed underlined term. Split form remains provisional. Complete printed support notes and allocation: CV: Curriculum Vitae. This is a document setting out/ personal, educational, work experience information together with skills and talents plus any other relevant information of a person seeking employment. Referees: These are people who know the job seeker and a potential employer can contact them to find out about their reliability etc. Equal opportunities employer: This means that the employer will not discriminate between applicants on the grounds of sex, age, race, religion, ethnic group, gender, marital status, disability etc./everyone gets the same chance. 3 @ 2m (0, 2)",
+          "after": "Define only this fixed underlined term. Complete printed support notes and allocation: CV: Curriculum Vitae. This is a document setting out/ personal, educational, work experience information together with skills and talents plus any other relevant information of a person seeking employment. Referees: These are people who know the job seeker and a potential employer can contact them to find out about their reliability etc. Equal opportunities employer: This means that the employer will not discriminate between applicants on the grounds of sex, age, race, religion, ethnic group, gender, marital status, disability etc./everyone gets the same chance. 3 @ 2m (0, 2)"
+        },
+        {
+          "id": "lcvp-2010-cl-c3a-3",
+          "field": "rows/0/contextNote",
+          "before": "Define only this fixed underlined term. Split form remains provisional. Complete printed support notes and allocation: CV: Curriculum Vitae. This is a document setting out/ personal, educational, work experience information together with skills and talents plus any other relevant information of a person seeking employment. Referees: These are people who know the job seeker and a potential employer can contact them to find out about their reliability etc. Equal opportunities employer: This means that the employer will not discriminate between applicants on the grounds of sex, age, race, religion, ethnic group, gender, marital status, disability etc./everyone gets the same chance. 3 @ 2m (0, 2)",
+          "after": "Define only this fixed underlined term. Complete printed support notes and allocation: CV: Curriculum Vitae. This is a document setting out/ personal, educational, work experience information together with skills and talents plus any other relevant information of a person seeking employment. Referees: These are people who know the job seeker and a potential employer can contact them to find out about their reliability etc. Equal opportunities employer: This means that the employer will not discriminate between applicants on the grounds of sex, age, race, religion, ethnic group, gender, marital status, disability etc./everyone gets the same chance. 3 @ 2m (0, 2)"
+        }
+      ]
+    },
+    {
+      "sitting": "2011",
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-authoring/proposed-47-authored-cards.json",
+      "beforeSha256": "235ac330a7d7899f1dfe9d8d09c705bdca09200c793849df11c0390cd4dba886",
+      "afterSha256": "fa712f9f9970c683acaced3e58be644b26e497ef35ce5bd3130fdecd7e1eb085",
+      "cards": 47,
+      "changedCards": 2,
+      "changes": [
+        {
+          "id": "lcvp-2011-cl-c2dii",
+          "field": "rows/0/contextNote",
+          "before": "Three methods; proposed split awaiting consistency adjudication. Complete printed support notes and allocation: 1. Questionnaire: Can be given to the organisation visited as well as to the class. Reason: Easy to administer/collate results. Can be completed anonymously. Generally inexpensive. Good response rate. They are objective. 2. Ask Teachers/Member of organisation visited for their opinion. Reason: Allows the class to practice their interview/communication skills. Questions can be explained if necessary. Easy to do. No cost involved. You will get honest feedback/review of teamwork. 3. Quality of report - has enough information/correct type of information been learned? Reason: Easy method to use as all class members must produce a report. Reports can be compared easily. 4. Review of Teamwork – to see if the class put into practice what they have learned. Reason Objective was to work well as a team. All class members are aware of what is involved. 5. Class Discussion: Varying opinions and discussions can be taken on board. Reason Easy to organise Everyone can participate. Allows one to see how much was learned. Good to show improvement or practice in communication skills. 3 @ 2m (1 + 1)",
+          "after": "Three methods. Complete printed support notes and allocation: 1. Questionnaire: Can be given to the organisation visited as well as to the class. Reason: Easy to administer/collate results. Can be completed anonymously. Generally inexpensive. Good response rate. They are objective. 2. Ask Teachers/Member of organisation visited for their opinion. Reason: Allows the class to practice their interview/communication skills. Questions can be explained if necessary. Easy to do. No cost involved. You will get honest feedback/review of teamwork. 3. Quality of report - has enough information/correct type of information been learned? Reason: Easy method to use as all class members must produce a report. Reports can be compared easily. 4. Review of Teamwork – to see if the class put into practice what they have learned. Reason Objective was to work well as a team. All class members are aware of what is involved. 5. Class Discussion: Varying opinions and discussions can be taken on board. Reason Easy to organise Everyone can participate. Allows one to see how much was learned. Good to show improvement or practice in communication skills. 3 @ 2m (1 + 1)"
+        },
+        {
+          "id": "lcvp-2011-cl-c2dii-2",
+          "field": "rows/0/contextNote",
+          "before": "One reason for each same method; proposed split awaiting consistency adjudication. Complete printed support notes and allocation: 1. Questionnaire: Can be given to the organisation visited as well as to the class. Reason: Easy to administer/collate results. Can be completed anonymously. Generally inexpensive. Good response rate. They are objective. 2. Ask Teachers/Member of organisation visited for their opinion. Reason: Allows the class to practice their interview/communication skills. Questions can be explained if necessary. Easy to do. No cost involved. You will get honest feedback/review of teamwork. 3. Quality of report - has enough information/correct type of information been learned? Reason: Easy method to use as all class members must produce a report. Reports can be compared easily. 4. Review of Teamwork – to see if the class put into practice what they have learned. Reason Objective was to work well as a team. All class members are aware of what is involved. 5. Class Discussion: Varying opinions and discussions can be taken on board. Reason Easy to organise Everyone can participate. Allows one to see how much was learned. Good to show improvement or practice in communication skills. 3 @ 2m (1 + 1)",
+          "after": "One reason for each same method. Complete printed support notes and allocation: 1. Questionnaire: Can be given to the organisation visited as well as to the class. Reason: Easy to administer/collate results. Can be completed anonymously. Generally inexpensive. Good response rate. They are objective. 2. Ask Teachers/Member of organisation visited for their opinion. Reason: Allows the class to practice their interview/communication skills. Questions can be explained if necessary. Easy to do. No cost involved. You will get honest feedback/review of teamwork. 3. Quality of report - has enough information/correct type of information been learned? Reason: Easy method to use as all class members must produce a report. Reports can be compared easily. 4. Review of Teamwork – to see if the class put into practice what they have learned. Reason Objective was to work well as a team. All class members are aware of what is involved. 5. Class Discussion: Varying opinions and discussions can be taken on board. Reason Easy to organise Everyone can participate. Allows one to see how much was learned. Good to show improvement or practice in communication skills. 3 @ 2m (1 + 1)"
+        }
+      ]
+    },
+    {
+      "sitting": "2012",
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-authoring/proposed-47-authored-cards.json",
+      "beforeSha256": "973a864707db5bf505312661fef90321fd8b53923b122cabbb00cab1e5652149",
+      "afterSha256": "c3790d702477748be6a877a01f0e7bdb788671274aa762f208ee7ba8da2a69b9",
+      "cards": 47,
+      "changedCards": 1,
+      "changes": [
+        {
+          "id": "lcvp-2012-cl-c4b",
+          "field": "rows/0/contextNote",
+          "before": "Proposed name allocation from the printed 2@3m(1+2), awaiting consistency adjudication. Printed support notes and allocation: State two research methods used when planning this activity. Analyse the usefulness of each method used. 6 Marks 1. Telephone call, face to face meetings, talking with school Principal and teachers and anyone else involved. Information can be requested directly. Answers are instant answer. Clarification can be provided if needed/questions explained. Easy to do. 2. Survey/Questionaire/Sugggestion Box It is inexpensive to carry out. Different types of information can be gathered easily. It is quick to administer and answers can be collated easily. Anonymous. Good response rate. 3. Internet A wide variety of information can be accessed. This can be done from your desk at any time of the day or night. It is inexpensive to carry out this type of research. (Information may not be specific to the needs of the activity/hard to filter information) 4. Brainstorming/Class Discussion/Group discussion The entire class can be involved. Everyone can give their opinion on ideas being expressed. It is quick to administer and can be done in a single session. 5.Publications Library free to access Different types of information can be accessed **Also accept valid critisism with an expansion 2 @ 3m (1 + 2)",
+          "after": "Name allocation from the printed 2@3m(1+2). Printed support notes and allocation: State two research methods used when planning this activity. Analyse the usefulness of each method used. 6 Marks 1. Telephone call, face to face meetings, talking with school Principal and teachers and anyone else involved. Information can be requested directly. Answers are instant answer. Clarification can be provided if needed/questions explained. Easy to do. 2. Survey/Questionaire/Sugggestion Box It is inexpensive to carry out. Different types of information can be gathered easily. It is quick to administer and answers can be collated easily. Anonymous. Good response rate. 3. Internet A wide variety of information can be accessed. This can be done from your desk at any time of the day or night. It is inexpensive to carry out this type of research. (Information may not be specific to the needs of the activity/hard to filter information) 4. Brainstorming/Class Discussion/Group discussion The entire class can be involved. Everyone can give their opinion on ideas being expressed. It is quick to administer and can be done in a single session. 5.Publications Library free to access Different types of information can be accessed **Also accept valid critisism with an expansion 2 @ 3m (1 + 2)"
+        }
+      ]
+    },
+    {
+      "sitting": "2013",
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/proposed-authored-cards.json",
+      "beforeSha256": "873162dad707b5e62b48b623194a693c433ff710c1e1e90d6ca38204ca2dc96b",
+      "afterSha256": "b8bc53100661798bdc5b01af2793c43ddd3a7c68123b09f778450e21b2d753ad",
+      "cards": 41,
+      "changedCards": 9,
+      "changes": [
+        {
+          "id": "lcvp-2013-cl-a1",
+          "field": "videoMaterial/presentationNote",
+          "before": "Watch the original recording with its sound and follow the printed viewing instructions. Hosted playback remains pending the audio-hosting lane while the SEC archive is blocked.",
+          "after": "Watch the original recording with its sound and follow the printed viewing instructions."
+        },
+        {
+          "id": "lcvp-2013-cl-a2",
+          "field": "videoMaterial/presentationNote",
+          "before": "Watch the original recording with its sound and follow the printed viewing instructions. Hosted playback remains pending the audio-hosting lane while the SEC archive is blocked.",
+          "after": "Watch the original recording with its sound and follow the printed viewing instructions."
+        },
+        {
+          "id": "lcvp-2013-cl-a3",
+          "field": "videoMaterial/presentationNote",
+          "before": "Watch the original recording with its sound and follow the printed viewing instructions. Hosted playback remains pending the audio-hosting lane while the SEC archive is blocked.",
+          "after": "Watch the original recording with its sound and follow the printed viewing instructions."
+        },
+        {
+          "id": "lcvp-2013-cl-a4",
+          "field": "videoMaterial/presentationNote",
+          "before": "Watch the original recording with its sound and follow the printed viewing instructions. Hosted playback remains pending the audio-hosting lane while the SEC archive is blocked.",
+          "after": "Watch the original recording with its sound and follow the printed viewing instructions."
+        },
+        {
+          "id": "lcvp-2013-cl-a5",
+          "field": "videoMaterial/presentationNote",
+          "before": "Watch the original recording with its sound and follow the printed viewing instructions. Hosted playback remains pending the audio-hosting lane while the SEC archive is blocked.",
+          "after": "Watch the original recording with its sound and follow the printed viewing instructions."
+        },
+        {
+          "id": "lcvp-2013-cl-a6",
+          "field": "videoMaterial/presentationNote",
+          "before": "Watch the original recording with its sound and follow the printed viewing instructions. Hosted playback remains pending the audio-hosting lane while the SEC archive is blocked.",
+          "after": "Watch the original recording with its sound and follow the printed viewing instructions."
+        },
+        {
+          "id": "lcvp-2013-cl-a7",
+          "field": "videoMaterial/presentationNote",
+          "before": "Watch the original recording with its sound and follow the printed viewing instructions. Hosted playback remains pending the audio-hosting lane while the SEC archive is blocked.",
+          "after": "Watch the original recording with its sound and follow the printed viewing instructions."
+        },
+        {
+          "id": "lcvp-2013-cl-a8",
+          "field": "videoMaterial/presentationNote",
+          "before": "Watch the original recording with its sound and follow the printed viewing instructions. Hosted playback remains pending the audio-hosting lane while the SEC archive is blocked.",
+          "after": "Watch the original recording with its sound and follow the printed viewing instructions."
+        },
+        {
+          "id": "lcvp-2013-cl-c5d",
+          "field": "rows/1/contextNote",
+          "before": "Only the explanations for printed options 3, 7 and 8 are absent. Retain all eight models and three two-mark response controls. The generic (1 + 1) does not label separate state/explain allocations; the whole six-mark ask is provisional pending third reading. No product-name mark is printed or invented.",
+          "after": "Only the explanations for printed options 3, 7 and 8 are absent. Retain all eight models and three two-mark response controls. The generic (1 + 1) does not label separate state/explain allocations; the whole ask carries six marks. No product-name mark is printed or invented."
+        }
+      ]
+    },
+    {
+      "sitting": "2022-deferred",
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/proposed-48-after-third-reading.json",
+      "beforeSha256": "fa505f8e2b82ca42a2fefbf8c735996ff3e3f75860bbf1f086f9bab8d06ff3f2",
+      "afterSha256": "a66a9e40753549d3c29b2f57a3c1485b1a357f565c3e0e6521a7fa28a30a1280",
+      "cards": 48,
+      "changedCards": 5,
+      "changes": [
+        {
+          "id": "lcvp-2022-cl-deferred-b3i",
+          "field": "rows/0/contextNote",
+          "before": "Proposed positive-effect card, with all seven positive models. The six negative models are shown for source context only. Third-reader validation required. Complete original wording, models and allocation: Describe one positive and one negative effect for an enterprising moving to selling online. Two valid answers 2 x 2 marks (1+1) 1. You can shop at any time. 2. You do not need a shop for online so rent will be cheaper. 3. More stock on hand as area for shop sales is not reduced/warehouse. 4. Online platform can develop a bigger audience/customer base than a shop base. 5. Selling Online can offer promo discount codes. 6. Online sales can have reviews. 7. Hours of work different which may be easier to attract staff with selling online. 1. Dealing with returns is more complex/time 2. You have to consider costs such as packaging or delivery dates with online. 3. With online you need a good website/product description to make it easy for customers to order. 4. Greater security risks/fees to be paid for online payments. 5. Better relationship/rapport/attention with in person sales. People can be distracted when on line with ads, social media, and other websites competing for attention. 6. Losing customers who do not have access/use the internet.",
+          "after": "Positive-effect question, with all seven positive models. The six negative models are shown for source context only. Complete original wording, models and allocation: Describe one positive and one negative effect for an enterprising moving to selling online. Two valid answers 2 x 2 marks (1+1) 1. You can shop at any time. 2. You do not need a shop for online so rent will be cheaper. 3. More stock on hand as area for shop sales is not reduced/warehouse. 4. Online platform can develop a bigger audience/customer base than a shop base. 5. Selling Online can offer promo discount codes. 6. Online sales can have reviews. 7. Hours of work different which may be easier to attract staff with selling online. 1. Dealing with returns is more complex/time 2. You have to consider costs such as packaging or delivery dates with online. 3. With online you need a good website/product description to make it easy for customers to order. 4. Greater security risks/fees to be paid for online payments. 5. Better relationship/rapport/attention with in person sales. People can be distracted when on line with ads, social media, and other websites competing for attention. 6. Losing customers who do not have access/use the internet."
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b3i-2",
+          "field": "rows/0/contextNote",
+          "before": "Proposed negative-effect card, with all six negative models. The seven positive models are shown for source context only. Third-reader validation required. Complete original wording, models and allocation: Describe one positive and one negative effect for an enterprising moving to selling online. Two valid answers 2 x 2 marks (1+1) 1. You can shop at any time. 2. You do not need a shop for online so rent will be cheaper. 3. More stock on hand as area for shop sales is not reduced/warehouse. 4. Online platform can develop a bigger audience/customer base than a shop base. 5. Selling Online can offer promo discount codes. 6. Online sales can have reviews. 7. Hours of work different which may be easier to attract staff with selling online. 1. Dealing with returns is more complex/time 2. You have to consider costs such as packaging or delivery dates with online. 3. With online you need a good website/product description to make it easy for customers to order. 4. Greater security risks/fees to be paid for online payments. 5. Better relationship/rapport/attention with in person sales. People can be distracted when on line with ads, social media, and other websites competing for attention. 6. Losing customers who do not have access/use the internet.",
+          "after": "Negative-effect question, with all six negative models. The seven positive models are shown for source context only. Complete original wording, models and allocation: Describe one positive and one negative effect for an enterprising moving to selling online. Two valid answers 2 x 2 marks (1+1) 1. You can shop at any time. 2. You do not need a shop for online so rent will be cheaper. 3. More stock on hand as area for shop sales is not reduced/warehouse. 4. Online platform can develop a bigger audience/customer base than a shop base. 5. Selling Online can offer promo discount codes. 6. Online sales can have reviews. 7. Hours of work different which may be easier to attract staff with selling online. 1. Dealing with returns is more complex/time 2. You have to consider costs such as packaging or delivery dates with online. 3. With online you need a good website/product description to make it easy for customers to order. 4. Greater security risks/fees to be paid for online payments. 5. Better relationship/rapport/attention with in person sales. People can be distracted when on line with ads, social media, and other websites competing for attention. 6. Losing customers who do not have access/use the internet."
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b3ii",
+          "field": "rows/0/contextNote",
+          "before": "Provisional whole ask. Generic 3 x 2 (1+1) does not name separate identification/explanation awards. A third reader decides whether it must split. Complete original wording, models and allocation: Identify and explain three issues which should be considered when preparing a long‐ term plan for the business Three valid answers 3 x 2 marks (1+1) 1. Marketing/Market Research ‐ to find out if your idea will be successful: Desk and field research/undertaken by the business or by a market research firm/identify target market/demand/competition/advertising/USP/price. 2. Finance ‐ to know how much is needed/where you will get the money/budgeting is important to ensure you have enough to meet your running costs. Sources of finance/loan/grants/cash flow forecast/budgeting income and expenditure/costs involved in purchasing equipment. 3. Staff/Personnel/HR ‐ to know how many employees are required/qualifications: Job description for employees/qualifications/salary/training required/how many employees needed. 4. Production ‐ to know how long it will take to make the product/potential difficulties can be planned for. Raw materials/suppliers/production process/distribution/packaging/design. 5. Location/Premises ‐ to plan for proper facilities and enough space/near good infrastructure. Near customers, staff and suppliers/parking/adequate room for future expansion. Near airport/good road network for deliveries. 6. Legalities – planning permission, custom clearance, safety statement, employee contracts.",
+          "after": "Three complete responses, each worth two marks (1+1). The scheme does not name separate identification/explanation awards. Complete original wording, models and allocation: Identify and explain three issues which should be considered when preparing a long‐ term plan for the business Three valid answers 3 x 2 marks (1+1) 1. Marketing/Market Research ‐ to find out if your idea will be successful: Desk and field research/undertaken by the business or by a market research firm/identify target market/demand/competition/advertising/USP/price. 2. Finance ‐ to know how much is needed/where you will get the money/budgeting is important to ensure you have enough to meet your running costs. Sources of finance/loan/grants/cash flow forecast/budgeting income and expenditure/costs involved in purchasing equipment. 3. Staff/Personnel/HR ‐ to know how many employees are required/qualifications: Job description for employees/qualifications/salary/training required/how many employees needed. 4. Production ‐ to know how long it will take to make the product/potential difficulties can be planned for. Raw materials/suppliers/production process/distribution/packaging/design. 5. Location/Premises ‐ to plan for proper facilities and enough space/near good infrastructure. Near customers, staff and suppliers/parking/adequate room for future expansion. Near airport/good road network for deliveries. 6. Legalities – planning permission, custom clearance, safety statement, employee contracts."
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3c",
+          "field": "rows/0/contextNote",
+          "before": "Response 1 of 2. Provisional whole ask. Two responses, each with two indivisible two-mark components. No semantic allocation is invented; a third reader decides the split. Complete original guidance: Identify and describe two skills that could be developed during this activity. 2 x 4 marks (2 + 2) 1. Communication skills 2. ICT skills 3. Teamwork skills 4. Presentation skills 5. Research skills 6. Leadership skills 7. Report writing skills 8. Planning skills 9. Organisation skills 10. Problem solving skills 11. Time management skills 12. Etc.",
+          "after": "Response 1 of 2. Two responses, each with two indivisible two-mark components. The scheme does not name separate identification/description awards. Complete original guidance: Identify and describe two skills that could be developed during this activity. 2 x 4 marks (2 + 2) 1. Communication skills 2. ICT skills 3. Teamwork skills 4. Presentation skills 5. Research skills 6. Leadership skills 7. Report writing skills 8. Planning skills 9. Organisation skills 10. Problem solving skills 11. Time management skills 12. Etc."
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3c",
+          "field": "rows/1/contextNote",
+          "before": "Response 2 of 2. Provisional whole ask. Two responses, each with two indivisible two-mark components. No semantic allocation is invented; a third reader decides the split. Complete original guidance: Identify and describe two skills that could be developed during this activity. 2 x 4 marks (2 + 2) 1. Communication skills 2. ICT skills 3. Teamwork skills 4. Presentation skills 5. Research skills 6. Leadership skills 7. Report writing skills 8. Planning skills 9. Organisation skills 10. Problem solving skills 11. Time management skills 12. Etc.",
+          "after": "Response 2 of 2. Two responses, each with two indivisible two-mark components. The scheme does not name separate identification/description awards. Complete original guidance: Identify and describe two skills that could be developed during this activity. 2 x 4 marks (2 + 2) 1. Communication skills 2. ICT skills 3. Teamwork skills 4. Presentation skills 5. Research skills 6. Leadership skills 7. Report writing skills 8. Planning skills 9. Organisation skills 10. Problem solving skills 11. Time management skills 12. Etc."
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c7c",
+          "field": "rows/0/contextNote",
+          "before": "Provisional whole ask: a third reader decides whether generic 1+1 permits separate naming/explanation cards. Complete original wording, models and allocation: Identify and explain four forms of promotion you would use for this activity. Four valid points 4 x 2 marks (1+1) • Social media – Twitter/Instagram/Snapchat/Tik Tok/Facebook • YouTube videos • Notice‐boards/posters around the school • Flyers • Intercom announcements • Introductory offers/discounts/incentives to participate/prizes • Class to class visits • School website/App/Email • Word of mouth",
+          "after": "Four complete responses, each worth two marks (1+1). The scheme does not name separate identification/explanation awards. Complete original wording, models and allocation: Identify and explain four forms of promotion you would use for this activity. Four valid points 4 x 2 marks (1+1) • Social media – Twitter/Instagram/Snapchat/Tik Tok/Facebook • YouTube videos • Notice‐boards/posters around the school • Flyers • Intercom announcements • Introductory offers/discounts/incentives to participate/prizes • Class to class visits • School website/App/Email • Word of mouth"
+        }
+      ]
+    },
+    {
+      "sitting": "2023-deferred",
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/proposed-50-authored-cards.json",
+      "beforeSha256": "42e7a81a1533013f55f46ea833f348167cceeab0860ab7fb4da625caad791ca7",
+      "afterSha256": "67cd973f737ed8e04f4db92edec3ecc7e6048685bd7e4d9eb570a66fd245ace1",
+      "cards": 50,
+      "changedCards": 2,
+      "changes": [
+        {
+          "id": "lcvp-2023-cl-deferred-c6b",
+          "field": "rows/0/contextNote",
+          "before": "Proposed two marks for this category; third-reader validation required. Preserve Skills and Qualities lists and List is not exhaustive. Complete original wording, models and allocation: Outline two skills and two qualities of an entrepreneur that you are familiar with . 4 marks 2 x 2m (1/1) Skills – Planning/ leading/ time management/ motivating/ negotiating Qualities - Risk taker/decisive/flexible/communication/ highly motivated/ innovative/hardworking/confident. List is not exhaustive",
+          "after": "Two marks for this category. Preserve Skills and Qualities lists and List is not exhaustive. Complete original wording, models and allocation: Outline two skills and two qualities of an entrepreneur that you are familiar with . 4 marks 2 x 2m (1/1) Skills – Planning/ leading/ time management/ motivating/ negotiating Qualities - Risk taker/decisive/flexible/communication/ highly motivated/ innovative/hardworking/confident. List is not exhaustive"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6b-2",
+          "field": "rows/0/contextNote",
+          "before": "Proposed two marks for this category; third-reader validation required. Preserve Skills and Qualities lists and List is not exhaustive. Complete original wording, models and allocation: Outline two skills and two qualities of an entrepreneur that you are familiar with . 4 marks 2 x 2m (1/1) Skills – Planning/ leading/ time management/ motivating/ negotiating Qualities - Risk taker/decisive/flexible/communication/ highly motivated/ innovative/hardworking/confident. List is not exhaustive",
+          "after": "Two marks for this category. Preserve Skills and Qualities lists and List is not exhaustive. Complete original wording, models and allocation: Outline two skills and two qualities of an entrepreneur that you are familiar with . 4 marks 2 x 2m (1/1) Skills – Planning/ leading/ time management/ motivating/ negotiating Qualities - Risk taker/decisive/flexible/communication/ highly motivated/ innovative/hardworking/confident. List is not exhaustive"
+        }
+      ]
+    }
+  ]
+}
