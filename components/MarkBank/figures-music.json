@@ -1741,5 +1741,151 @@
   "alt": "The marking scheme’s printed answer for Listening Q6(e): the missing notes printed on a treble stave, and their 3 marks, cropped from page 17 of the scheme.",
   "attribution": "SEC Leaving Certificate Music 2022 Ordinary Level marking scheme — © State Examinations Commission",
   "solution": true
+ },
+ "music-2024-OL-l-q1-a-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q1-a-score.png",
+  "md5": "4a385f41f8d397e813a2251811e7b8e8",
+  "alt": "The three printed options (violin and viola, viola and cello, violin and cello), printed with Listening Q1(a) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q1-b-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q1-b-score.png",
+  "md5": "3077717f3d85c974cb6efd9209380462",
+  "alt": "The outline score of Excerpt 1 (bars 1-16) with X marked, down to the three printed time-signature options for (b), printed with Listening Q1(b) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q1-d-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q1-d-score.png",
+  "md5": "2fbbf7a33505b622c4b33a609c7962f4",
+  "alt": "The three printed options (ascending scales, triplets, sustained notes), printed with Listening Q1(d) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q1-f-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q1-f-score.png",
+  "md5": "476826afd242973e44c1c9dd754d2e98",
+  "alt": "The four printed features, each with a box, printed with Listening Q1(f) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q2-b-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q2-b-score.png",
+  "md5": "54322d53daad02d56b7f670b784f2f73",
+  "alt": "The printed score (bars 1-16) with X marked over bar 4, down to the three printed cadence options for (b), printed with Listening Q2(b) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q2-c-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q2-c-score.png",
+  "md5": "f704109bf67ebd3e359a1048a094e834",
+  "alt": "The three printed options (an aria, a chorale, a recitative), printed with Listening Q2(c) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q3-a-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q3-a-score.png",
+  "md5": "4dd4da2c4578ad5bc260fc2d60f17335",
+  "alt": "The three printed options (piano + bass guitar; piano + drums + bass guitar; piano + drums + guitar + bass guitar), printed with Listening Q3(a) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q3-b-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q3-b-score.png",
+  "md5": "e07d4f335122182526bfda0c109be893",
+  "alt": "The printed lyrics (Lines 1-6) the ask refers to, down to the three printed options for (b), printed with Listening Q3(b) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q3-c-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q3-c-score.png",
+  "md5": "6f3f8df35a0982a9fda1e1642037f2db",
+  "alt": "The printed lyrics of Excerpt 1, Lines 1-6, printed with Listening Q3(c) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q3-d-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q3-d-score.png",
+  "md5": "6f3f8df35a0982a9fda1e1642037f2db",
+  "alt": "The printed lyrics of Excerpt 1, Lines 1-6, printed with Listening Q3(d) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q3-e-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q3-e-score.png",
+  "md5": "88bb1d0e81bf3dfa476686e7e707f8ed",
+  "alt": "The outline score of Excerpt 2 (bars 1-3) with the lyrics, X marked over bar 2, printed with Listening Q3(e) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-scheme-p14-l-q3-e": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-scheme-p14-l-q3-e.png",
+  "md5": "30002fd3e1d80b467a8d4e27bb3c2ebc",
+  "alt": "The marking scheme’s printed answer for Listening Q3(e): the two missing notes printed on a treble stave, with \"Mark the first two notes from left to right\" and \"1 + 1\", cropped from page 14 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2024-OL-l-q4-a-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q4-a-score.png",
+  "md5": "cd503c9f8ec40f88b86371d11a761cfe",
+  "alt": "The three printed options (exposition, development, coda), printed with Listening Q4(a) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q4-b-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q4-b-score.png",
+  "md5": "2d804023076ed6b8d78aa93a24352b99",
+  "alt": "The three printed options (Love theme, Friar Lawrence theme, Strife theme), printed with Listening Q4(b) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q4-c-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q4-c-score.png",
+  "md5": "f53f5569953fc88ce39ebabd8bd5a213",
+  "alt": "The three printed options (descending scales, repeated notes, trills), printed with Listening Q4(c) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q4-d-i-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q4-d-i-score.png",
+  "md5": "eea8f367d09dec03c6b25544d664b202",
+  "alt": "The three printed options (monophonic, homophonic, polyphonic), printed with Listening Q4(d)(i) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q5-a-i-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q5-a-i-score.png",
+  "md5": "52f65bad75dbd1fd60456d7890191f6e",
+  "alt": "The three printed options (a reel, a jig, a hornpipe), printed with Listening Q5(a)(i) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q5-a-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q5-a-ii-score.png",
+  "md5": "8a279cfe85b473d753adb153fc61e573",
+  "alt": "The three printed time signatures, each with a box, printed with Listening Q5(a)(ii) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q5-a-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q5-a-iii-score.png",
+  "md5": "6329617bbe17d9e6ddfdc44008f16b6e",
+  "alt": "The three printed rhythms, each with a box, printed with Listening Q5(a)(iii) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-scheme-p16-l-q5-a-iii": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-scheme-p16-l-q5-a-iii.png",
+  "md5": "2c021214c15cade51a6d9181dc041257",
+  "alt": "The marking scheme’s printed answer for Listening Q5(a)(iii): the bar of rhythm printed in notation, and its 3 marks, cropped from page 16 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2024-OL-l-q5-d-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q5-d-score.png",
+  "md5": "08a2446be11d664bee452e597b13632e",
+  "alt": "The three printed options (ABBA, AABB, AABC), printed with Listening Q5(d) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q6-a-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q6-a-score.png",
+  "md5": "9138ed11a4ae4b1289e7fda4648f2a77",
+  "alt": "The three printed options (strings, woodwind, brass), printed with Listening Q6(a) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q6-b-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q6-b-score.png",
+  "md5": "98560e99387adbba21978fbcc665216f",
+  "alt": "The outline score of bars 1-3 with X marked, down to the three printed time-signature options for (b), printed with Listening Q6(b) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-OL-l-q6-e-score": {
+  "src": "/exam-figures/music/markbank/music-2024-OL-l-q6-e-score.png",
+  "md5": "37e7dc8eada45d4025fc000fdc7eacf9",
+  "alt": "The three printed options (3 bars, 4 bars, 6 bars), printed with Listening Q6(e) in the 2024 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
  }
 }
