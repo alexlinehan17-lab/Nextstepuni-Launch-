@@ -565,11 +565,6 @@ OVERRIDES = {
         'claimMax': 2, 'perOption': 4,
         'options': ['Emotional/nervous', 'a little nervous/excited', 'worried'],
         'note': ['(any two elements)', '(If just one emotion is given and if another reason also given – allow an additional 1 mark only. Reasons - It’s the first time /Living together (is not easy)/(Facing) other people’s habits/ Language barriers)']},
-    # "4 marks" printed on the line ABOVE "8. His family (1) for at least
-    # (1m) two (1) weeks(1) (1+1+1+1)", so the reader never prices the ask.
-    (2018, 'hl', 3, 8): {'total': 4, 'points': [('His family', 1), ('for at least', 1),
-                                                ('two', 1), ('weeks', 1)],
-                         'note': ['His family (1) for at least (1m) two (1) weeks(1) (1+1+1+1)']},
     (2026, 'ol', 2, 4): {
         'claimMax': 4, 'perOption': 2,
         'options': ['A (prizewinning) app', 'to practice/learn', 'their verbs',
