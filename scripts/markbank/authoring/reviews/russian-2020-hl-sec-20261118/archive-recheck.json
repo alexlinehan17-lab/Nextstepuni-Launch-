@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-11-19T10:35:07.651795+00:00",
+  "url": "https://www.examinations.ie/archive/markingschemes/2020/LC099ALP000EV.pdf",
+  "method": "Native Chrome opened the official PDF; automatic security verification completed without interaction, and the download visibly reached Done.",
+  "bytes": 622867,
+  "sha256": "7ac8daeec37224d7082fe61f3e6a6bf5c6c99429580bc25bfa5efd2ff888d55f",
+  "retainedSha256": "7ac8daeec37224d7082fe61f3e6a6bf5c6c99429580bc25bfa5efd2ff888d55f",
+  "exactMatch": true,
+  "freshDownloadVerified": true,
+  "localFile": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/2020-hl-nov19/SEC-fresh-20261119.pdf",
+  "cardsWithNoPrintedAnswer": [
+    {
+      "id": "ru-2020-hl-se",
+      "schemePages": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "ru-2020-hl-gw",
+      "schemePages": [
+        15,
+        16
+      ]
+    }
+  ],
+  "earlierAttempt": null
+}

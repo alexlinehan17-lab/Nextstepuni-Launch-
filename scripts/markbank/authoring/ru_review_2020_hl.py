@@ -106,7 +106,7 @@ def source_records():
     records.append(record('GR',None,None,q,[11],page(S,11),[11],30,reviewNote='Eleven bracketed original prompts with15 underlined accepted forms, including four two-word phrases. зимой/зимою is one printed alternative response. Bold source spans yield the15 accepted forms; the original underlining was independently visually reviewed.'))
     q='Write a short essay '+squash(between(page(Q,12,True),'Write a short essay'))
     q=q[:q.index('essay title.')+len('essay title.')]
-    records.append(record('SE',None,None,q,[12],'\n'.join(page(S,p) for p in (12,13,14)),[12,13,14],30,fullQuestionPage=page(Q,12),sourcePageBlocks=[squash(page(S,p)) for p in (12,13,14)],pending='Complete confidence task; ambiguous literalDeduct1/2marks. Five choices, full C10/E20 and guidance.'))
+    records.append(record('SE',None,None,q,[12],'\n'.join(page(S,p) for p in (12,13,14)),[12,13,14],30,fullQuestionPage=page(Q,12),sourcePageBlocks=[squash(page(S,p)) for p in (12,13,14)],reviewNote='Alex approved one or two marks for soft-sign errors; all five choices and original C10/E20 remain.'))
     q='Write a piece '+question_text(between(page(Q,13,True),'Write a piece'))
     records.append(record('GW',None,None,q,[13],'\n'.join(page(S,p) for p in (15,16)),[15,16],40,pending='Three choices,C15/E15/TC10,LowerA7–12 with9–11/11–12 overlap kept literal,explicit2softsign.'))
     assert len(records)==20 and sum(r['publishedTotal'] for r in records)==220
@@ -126,9 +126,9 @@ def source_records():
                 assert (qi,qr)==(3,None);note='Paper3, scheme3(i), same future-hopes prompt.'
             else:assert (i,r)==(qi,qr),(section,i,r,qi,qr)
             cue,pool=source_split(b,'•');assert score(bag(q),bag(cue))>.75,(q,cue)
-            records.append(record(f'L{section}',qi,qr,q,[section+1],pool,[section+16],None,printedDetailQuota=count,topicId=topic,reviewNote=note,sharedAward=f'L{section}-section20',pending='Whole20confidence, full per-answer tariffs absent; luggage1+1 and petsbare1 remain exact visible evidence.'))
+            records.append(record(f'L{section}',qi,qr,q,[section+1],pool,[section+16],None,printedDetailQuota=count,topicId=topic,reviewNote=note,sharedAward=f'L{section}-section20',reviewNoteAllocation='Alex approved two per requested detail; explicit luggage1+1 and pet1 awards are retained.'))
     assert len(records)==42 and len({r['id'] for r in records})==42
-    return docs,dict(status='Unpublished source-only proposal',sources=METADATA,independentTasks=42,writtenTasks=20,listeningTasks=22,printedExamTotal=300,printedWrittenTotal=220,pricedWrittenTotal=190,confidenceWrittenPrintedTotal=30,generalWrittenGuidance=squash(page(S,3)),comprehensionGuidance=squash(comprehension[:re.search(r'^\s*1\.\s*\(i\)',comprehension,re.M).start()]),summaryGuidance=squash(summary[:re.search(r'^\s*1\.\s*[A-Z]',summary,re.M).start()]),listeningGuidance=squash(source[:heads[0].start()]),tasks=records)
+    return docs,dict(status='Unpublished source-only proposal',sources=METADATA,independentTasks=42,writtenTasks=20,listeningTasks=22,printedExamTotal=300,printedWrittenTotal=220,pricedWrittenTotal=220,confidenceWrittenPrintedTotal=0,generalWrittenGuidance=squash(page(S,3)),comprehensionGuidance=squash(comprehension[:re.search(r'^\s*1\.\s*\(i\)',comprehension,re.M).start()]),summaryGuidance=squash(summary[:re.search(r'^\s*1\.\s*[A-Z]',summary,re.M).start()]),listeningGuidance=squash(source[:heads[0].start()]),tasks=records)
 
 
 def grammar_forms(document):
@@ -218,19 +218,56 @@ def writing(docs,source):
     c['review']['guidancePages']=[3];return c
 
 
-def cultural_confidence(source):
+def cultural_writing(docs,source):
+    from ru_review_2017_hl import band
+    allocation_approval()
     r=next(r for r in source['tasks'] if r['unit']=='SE');c=source_card(r)
     choices='Напишите'+between(r['fullQuestionPage'],'Напишите').split('___')[0]
     assert all(f'{n}.' in choices for n in range(1,6));c['questionText']+='\n\n'+choices
-    c['kind']='question';c['tariffModel']={'kind':'questionTotal'}
-    # Complete original page slices retain every clause without silently
-    # joining across the printed page-number blocks.
-    blocks=r['sourcePageBlocks'];assert len(blocks)==3
-    assert squash(' '.join(blocks))==r['publishedSourceBlock']
-    c['rows']=[{'id':identifier,'kind':'point','marks':None,'verbatim':text}
-        for identifier,text in zip(['published-choice','published-guidance','published-expression-grid'],blocks)]
-    c['rows'][0]['contextNote']='Confidence review: the complete question is printed as 30 marks, content 10 plus expression 20. The scheme’s literal soft-sign instruction says “Deduct 1/2 marks” without establishing whether this is a half-mark or one-or-two marks. Neither interpretation is selected. Every original choice and scoring rule is retained, but this task does not calculate a numerical score.'
+    body=r['publishedSourceBlock']
+    content=between(body,'Communication/content (C)','2. Expression (E)')
+    expression=between(body,'2. Expression (E)','Mark Language:')
+    bullets=[squash(x) for x in content.split('•')[1:]];assert len(bullets)==6
+    title=next(x for x in bullets if 'ONE penalty mark' in x)
+    no_content=next(x for x in bullets if 'no marks for language' in x)
+    lower_e=re.search(r'If the content mark.*?indicate this\.',expression).group()
+    lower_a=re.search(r'If the expression is very fluent.*?indicate this\.',expression).group()
+    soft=re.search(r'Deduct 1/2 marks.*?infinitives',expression).group()
+    normal=[];lower=[];accuracy=[]
+    for physical in (13,14):
+        tables=docs['scheme'][physical-1].find_tables().tables;assert len(tables)==1
+        for printed,description in tables[0].extract():
+            if printed=='Mark':continue
+            normal.append(band(re.split(r'lower [AE]',printed)[0].strip(),description))
+            lower.append(band(printed.split('lower E')[-1].strip(),description))
+            if 'lower A' in printed:accuracy.append(band(between(printed,'lower A','lower E'),description))
+    assert [x['marks'] for x in normal]==[[18,19,20],[14,15,16,17],[10,11,12,13],[6,7,8,9],[1,2,3,4,5],[0]]
+    assert [x['marks'] for x in lower]==[[12,13,14],[10,11],[7,8,9],[4,5,6],[1,2,3],[0]]
+    assert [x['marks'] for x in accuracy]==[[13,14],[11,12],[9,10]]
+    c.pop('rows');c.pop('tariffModel');c['kind']='rubric'
+    blocks=r['sourcePageBlocks'];assert len(blocks)==3 and squash(' '.join(blocks))==body
+    c['rubric']={'system':'language-writing','taskRequirements':blocks,
+        'markingGuideNote':'The scheme prints no answer for this part. Assess the selected essay using the printed content and expression grid. The direction “Deduct 1/2 marks” means one or two marks under Alex’s 18 November approval; its original wording is retained.',
+        'criteria':[
+            {'id':'content','label':'Communication/content (C)','maxMarks':10,'permittedMarks':[0,2,4,6,8,10],'guidance':bullets},
+            {'id':'title-penalty','label':'Essay title penalty','kind':'deduction','deductFrom':'content','maxMarks':1,'permittedMarks':[0,1],'guidance':[title]},
+            {'id':'expression','label':'Language/expression (E)','maxMarks':20,'permittedMarks':list(range(21)),
+             'guidance':[squash(expression)],'bands':normal,'limits':[
+                {'id':'lower-e','scaleLabel':'Lower E','maxMarks':14,'when':{'any':[{'criterionIds':['content'],'atMost':5,'ignoreDeductions':True},{'length':'words','below':25}]},'guidance':[lower_e],'bands':lower},
+                {'id':'lower-a','scaleLabel':'Lower A','minMarks':9,'maxMarks':14,'when':{'any':[{'flag':'lower-a','prompt':lower_a}]},'guidance':[lower_a],'bands':accuracy},
+                {'id':'no-content','maxMarks':0,'when':{'any':[{'criterionIds':['content'],'atMost':0,'ignoreDeductions':True}]},'guidance':[no_content]}]},
+            {'id':'soft-sign-penalty','label':'Soft sign penalty','kind':'deduction','deductFrom':'expression','maxMarks':2,'permittedMarks':[0,1,2],'guidance':[soft]}]}
+    c['review']['allocationApproval']='reviews/russian-2020-hl-sec-20261118/allocation-approval.json'
+    return no_printed_answer(c,r['schemePages'])
+
+
+def no_printed_answer(c,pages):
+    fixed='The scheme prints no answer for this part.'
+    if not c['rubric']['markingGuideNote'].startswith(fixed):c['rubric']['markingGuideNote']=fixed+' '+c['rubric']['markingGuideNote']
+    c['review']['reviewedAt']='2026-11-19'
+    c['review']['noPrintedAnswer']={'fixedLine':fixed,'schemePages':pages,'evidence':'scripts/markbank/authoring/reviews/russian-2020-hl-sec-20261118/archive-recheck.json'}
     return c
+
 
 
 def raw_scheme_text():
@@ -280,7 +317,7 @@ def language_and_matching(docs,source):
     c=as_points(source_card(r),words,5)
     for g in c['rubric']['groups']:g['rows'][0]['marks']=1
     c['rubric']['taskRequirements']=[r['publishedSourceBlock'].split('Путешествовать',1)[0]]
-    c['rubric']['markingGuideNote']='Choose five distinct accepted source entries, in any case or number as explicitly permitted. A complete multiword entry is one response, not separately priced words. The original paper labels this Q.1.3; the scheme labels it Q.2.2. Both refer to the first travel/cruise passage.'
+    c['rubric']['markingGuideNote']='Choose five distinct accepted source entries, in any case or number as explicitly permitted. A complete multiword entry is one response, each has one mark. The original paper labels this Q.1.3; the scheme labels it Q.2.2. Both refer to the first travel/cruise passage.'
     result.append(c)
     r=records['la2']
     entries=re.findall(r'(?<![\w.])(?:10|[1-9])\.\s*(.*?)(?=\s+(?:10|[1-9])\.\s|$)',r['publishedSourceBlock'])
@@ -298,49 +335,72 @@ def language_and_matching(docs,source):
     r=records['gr'];answers=grammar_forms(docs['scheme'])
     c=as_points(source_card(r),answers,15)
     c['rubric']['taskRequirements']=[r['publishedSourceBlock'].split('Мою бабушку',1)[0]]
-    c['rubric']['markingGuideNote']='The eleven bracketed prompts contain fifteen separately priced word forms: four prompts supply two words each. Each form receives the published two marks; зимой /зимою is one alternative response. Apply the exact zero-credit spelling/transcription and wrong-tense rules. The original instructions preserve singular or plural as supplied.'
+    c['rubric']['markingGuideNote']='The eleven bracketed prompts contain fifteen word forms with separate marks: four prompts supply two words each. Each form receives the published two marks; зимой /зимою is one alternative response. Apply the exact zero-credit spelling/transcription and wrong-tense rules. The original instructions preserve singular or plural as supplied.'
     result.append(c)
     assert len(result)==5 and sum(c['totalMarks'] for c in result)==70
     return result
 
 
+def allocation_approval():
+    folder=ROOT/'scripts/markbank/authoring/reviews/russian-2020-hl-sec-20261118'
+    proposal_path=folder/'allocation-proposal.json'
+    approval=json.loads((folder/'allocation-approval.json').read_text())
+    assert approval['listeningAnswer']=='Approve the proposed listening allocations'
+    assert approval['writingAnswer']=='One or two marks'
+    assert hashlib.sha256(proposal_path.read_bytes()).hexdigest()==approval['proposalSha256']
+    return json.loads(proposal_path.read_text())
+
+
 def listening(source):
-    result=[]
-    manifest=json.loads((ROOT/'scripts/markbank/authoring/russian-joint-tasks.json').read_text())
+    proposal=allocation_approval()
+    approved={r['id']:r for r in proposal['listening']['cards'] if r['year']==2020}
+    records=[r for r in source['tasks'] if r['component']=='aural']
+    assert len(approved)==len(records)==22
     audio=next(row['source'] for row in json.loads((ROOT/'data/russianAudio.json').read_text()) if row['year']==2020)
-    for section in range(1,5):
-        records=[r for r in source['tasks'] if r['unit']==f'L{section}']
-        expected=next(task for task in manifest['tasks'] if task['id']==f'ru-2020-hl-l{section}')
-        prompts=[f'{r["item"]}'+(f'({r["roman"]})' if r['roman'] else '')+'. '+r['question'] for r in records]
-        c=base(f'L{section}','\n\n'.join(prompts),20,expected['paperPages'],expected['schemePages'])
-        c['questionRef']=expected['questionRef'];c['kind']='question';c['tariffModel']={'kind':'questionTotal'}
-        c['review']['questionPages']=expected['paperPages'];c['review']['guidancePages']=[17]
-        c['review']['coveredQuestionRefs']=[f'2020 HL Section L{section} Q'+str(r['item'])+(f'({r["roman"]})' if r['roman'] else '') for r in records]
-        c['review']['atlasQuestions']=[{'n':r['id'].replace('ru-2020-hl-',''),'questionRef':ref,
-            'questionText':r['question'],'questionPages':r['questionPages'],'schemePages':r['schemePages'],
-            'topicId':r['topicId'],'additionalTopicIds':['russian-1-0']} for r,ref in zip(records,c['review']['coveredQuestionRefs'])]
-        note='Confidence review of the complete printed 20-mark section. The scheme does not provide complete full-answer allocations for its questions. All original prompts and accepted pools remain available, with no equal tariff or numerical score inferred.'
-        if section==1:note+=' The luggage answer explicitly gives one mark for a suitcase and one for a bag/purse. Those known prices remain visible below; they do not establish an 18-mark remainder or allocations for the other questions.'
-        if section==4:note+=' The published bare Dog and Cat one-mark partials remain visible; they do not establish the absent full-answer tariffs.'
-        note+=' The original booklet front says 50 minutes while its back says 40 minutes; both source statements are retained without selecting one as a correction.'
-        c['rows']=[{'id':'general-listening-guidance','kind':'point','marks':None,'verbatim':source['listeningGuidance'],'contextNote':note}]
-        for r in records:
-            c['rows'].append({'id':r['id'].replace('ru-2020-hl-',''),'kind':'point','marks':None,
-                'verbatim':r['publishedSourceBlock'],'contextNote':r['question']+(' Source numbering: '+r['reviewNote'] if r['reviewNote'] else '')})
-        topics=list(dict.fromkeys([r['topicId'] for r in records]+['russian-1-0']))
-        c['topicId']=topics[0];c['additionalTopicIds']=topics[1:]
+    result=[]
+    for r in records:
+        a=approved[r['id']]
+        assert a['question']==r['question'] and a['sourceAnswers']==r['publishedSourceBlock']
+        count=a['proposedDetails'];assert a['proposedMaximum']==2*count
+        body=r['publishedSourceBlock']
+        # Keep named partial and zero-credit clauses as source guidance. Each
+        # partial shares its full answer's existing mutually exclusive group.
+        if r['id']=='ru-2020-hl-l1-2':
+            assert body=='• One suitcase (1 mark) and a bag/purse (1 mark)'
+            c=as_points(source_card({**r,'publishedTotal':2}),['One suitcase','a bag/purse'],2)
+            for g in c['rubric']['groups']:g['rows'][0]['marks']=1
+        elif r['id']=='ru-2020-hl-l4-3-ii':
+            answers=[squash(x) for x in body.split('•')[1:]]
+            assert answers==["Dog called ‘Rada’ / happy / joy",'Cat called Steve','Dog: 1 mark','Cat: 1 mark']
+            c=as_points(source_card({**r,'publishedTotal':2}),answers[:2],1,partials={0:['Dog'],1:['Cat']})
+        else:
+            answers=[squash(x) for x in body.split('•')[1:] if squash(x)]
+            c=as_points(source_card({**r,'publishedTotal':a['proposedMaximum']}),answers,count)
+        c['rubric']['taskRequirements']=[source['listeningGuidance'],body]
+        c['rubric']['markingGuideNote']='Two marks per complete requested detail are inferred from the paper’s 20-mark section totals and approved on 18 November 2026; two is not printed as a general per-detail award in this scheme. The printed one-mark and zero-mark instructions remain in force. Select distinct details up to the number requested.'
+        c['rubric']['markingGuideNote']+=' The booklet front says 50 minutes and its back says 40 minutes; both original statements are retained.'
+        if r['reviewNote']:c['rubric']['markingGuideNote']+=' Source numbering: '+r['reviewNote']
+        c['review']['allocationApproval']='reviews/russian-2020-hl-sec-20261118/allocation-approval.json'
+        c['review']['approvedInference']={'marksPerRequestedDetail':2,'requestedDetails':count,'printedSectionTotal':20}
+        if r['id']=='ru-2020-hl-l1-2':
+            c['rubric']['markingGuideNote']='The scheme gives one mark for a suitcase and one mark for a bag/purse. These two marks are explicitly printed; no allocation is inferred for this answer.'
+            c['review'].pop('approvedInference');c['review']['explicitAllocation']=[1,1]
+        c['review']['reviewedAt']='2026-11-19';c['review']['guidancePages']=[17]
+        c['topicId']=r['topicId'];c['additionalTopicIds']=['russian-1-0']
         c['sourceMaterial']['kind']='source-question'
-        c['sourceMaterial']['presentationNote']='Listen to the official recording and answer all the original questions in this section. The transcript is not shown before answering.'
+        c['sourceMaterial']['presentationNote']='Listen to the official recording and answer the printed question. The transcript is not shown before answering.'
         c['audioMaterial']=audio;result.append(c)
-    assert len(result)==4 and sum(len(c['review']['coveredQuestionRefs']) for c in result)==22
+    assert len(result)==22 and sum(c['totalMarks'] for c in result)==80
+    assert all(sum(c['totalMarks'] for c in result if c['section']==f'L{section}')==20 for section in range(1,5))
     return result
+
 
 
 def source_language_rules(cards,source):
     rule='Language of answer:'+between(source['generalWrittenGuidance'],'Language of answer:','Quality of English:')
     exception=re.search(r'Discretionary marks \(as opposed to content marks\) may be awarded.*?answers\)\.',source['summaryGuidance']).group()
     for c in cards:
-        if c['section'] not in ('C1','C2','LA1','GR','GW'):continue
+        if c['section'] not in ('C1','C2','LA1','GR','GW','SE'):continue
         c['answerLanguageRule']={'otherLanguageMultiplier':0,'sourceText':squash(rule),'schemePages':[3]}
         if c['section'] in ('C1','C2'):
             c['rubric']['markingGuideNote']+=' Answer in English or Irish, as permitted by the original bilingual paper.'
@@ -352,17 +412,30 @@ def source_language_rules(cards,source):
 def build():
     docs,source=source_records()
     try:
-        cards=reading(source)+summaries(source)+language_and_matching(docs,source)+[writing(docs,source),cultural_confidence(source)]+listening(source)
+        cards=reading(source)+summaries(source)+language_and_matching(docs,source)+[no_printed_answer(writing(docs,source),[15,16]),cultural_writing(docs,source)]+listening(source)
         source_language_rules(cards,source)
-        assert len(cards)==len({c['id'] for c in cards})==24
+        assert len(cards)==len({c['id'] for c in cards})==42
         assert sum(c['totalMarks'] for c in cards)==300
-        assert sum(c['totalMarks'] for c in cards if c.get('kind')=='rubric')==190
-        assert sum(bool(c.get('answerLanguageRule')) for c in cards)==17
+        assert sum(c['totalMarks'] for c in cards if c.get('kind')=='rubric')==300
+        assert sum(bool(c.get('answerLanguageRule')) for c in cards)==18
         return cards
     finally:
         for document in docs.values():document.close()
 
 
 if __name__=='__main__':
-    save_reviewed(build())
+    cards=build()
+    # These four never-live section placeholders are replaced by their 22
+    # original asks. Keep the retired records in the review evidence.
+    output=ROOT/'scripts/markbank/authored/russian-reviewed.json'
+    previous=json.loads(output.read_text())
+    retired={f'ru-2020-hl-l{n}' for n in range(1,5)}
+    removed=[c for c in previous if c['id'] in retired]
+    if removed:
+        assert len(removed)==4
+        evidence=ROOT/'scripts/markbank/authoring/reviews/russian-2020-hl-sec-20261118/retired-section-cards.json'
+        if evidence.exists():assert json.loads(evidence.read_text())==removed
+        else:evidence.write_text(json.dumps(removed,indent=2,ensure_ascii=False)+'\n')
+        output.write_text(json.dumps([c for c in previous if c['id'] not in retired],indent=2,ensure_ascii=False)+'\n')
+    save_reviewed(cards)
     (ROOT/'examiner-reports/russian/schemes/2020-hl.md').write_text(raw_scheme_text())

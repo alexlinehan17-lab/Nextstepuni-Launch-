@@ -6,8 +6,7 @@ ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/'scripts/markbank/authoring'))
 from reconcile import parse_ref
 from ru_verify_review import normal,verify
-from ru_joint_tasks import validate_joint_task
-from ru_review_2020_hl import build,source_records,grammar_forms,raw_scheme_text,summary_tariff,METADATA
+from ru_review_2020_hl import build,source_records,grammar_forms,raw_scheme_text,summary_tariff,METADATA,allocation_approval
 from ru_review_census import reviewed_keys
 MODULE={name:globals()[name] for name in ('build','source_records','grammar_forms','raw_scheme_text','summary_tariff','METADATA')}
 
@@ -21,7 +20,7 @@ class Original2020HigherSources(unittest.TestCase):
 
     def get(self,suffix):return copy.deepcopy(next(c for c in self.cards if c['id']=='ru-2020-hl-'+suffix))
 
-    def test_independent42_ask_census_under24_practice_tasks(self):
+    def test_independent42_ask_census_as42_cards(self):
         keys=[('C1',q,None,r) for q,rs in [(1,('i','ii')),(2,('i','ii','iii')),(3,('i','ii')),(4,('i','ii'))] for r in rs]
         keys += [('LA1',q,None,None) for q in (1,2)]
         keys += [('C2',q,None,None) for q in (1,2,3,4)]
@@ -41,86 +40,62 @@ class Original2020HigherSources(unittest.TestCase):
             for ref in card['review'].get('coveredQuestionRefs',[card['questionRef']]):
                 parsed=parse_ref(ref);self.assertIsNotNone(parsed)
                 actual.update((parsed['section'],parsed['q'],letter,roman) for letter,roman in parsed['paths'])
-        self.assertEqual(actual,expected);self.assertEqual(len(self.cards),24)
+        self.assertEqual(actual,expected);self.assertEqual(len(self.cards),42)
         self.assertEqual(sum(c['totalMarks'] for c in self.cards),300)
-        self.assertEqual(sum(c['totalMarks'] for c in self.cards if c['kind']=='rubric'),190)
-        self.assertEqual(sum(c['totalMarks'] for c in self.cards if c['kind']=='question'),110)
+        self.assertEqual(sum(c['totalMarks'] for c in self.cards if c['kind']=='rubric'),300)
+        self.assertEqual(sum(c['totalMarks'] for c in self.cards if c['kind']=='question'),0)
 
-    def test_joint_original_identities_pages_and_hashes_with_negative_claims(self):
+    def test_individual_listening_cards_match_every_original_question_and_approved_allocation(self):
         docs,source=MODULE['source_records']()
         try:
             self.assertEqual([len(docs[k]) for k in ('paper','aural','scheme')],[16,8,27])
-            total=0
-            for spec in [t for t in self.registry['tasks'] if t['year']==2020]:
-                card=self.get(spec['id'].replace('ru-2020-hl-',''))
-                record={k:card[k] for k in ('id','year','level','questionRef')}|{'paperFileid':spec['paperFileid'],'schemeFileid':spec['schemeFileid'],**card['review']}
-                validate_joint_task(record,card,self.registry)
-                self.assertEqual(spec['paperSha256'],MODULE['METADATA']['aural']['sha256'])
-                self.assertEqual(spec['schemeSha256'],MODULE['METADATA']['scheme']['sha256'])
-                self.assertEqual(spec['independentSittingAsks'],42)
-                originals=[r for r in source['tasks'] if r['unit']==spec['section']]
-                self.assertEqual(len(originals),len(spec['questions']));total+=len(originals)
-                for question,original in zip(spec['questions'],originals):
-                    self.assertEqual(question['questionText'],original['question'])
-                    self.assertEqual(question['leafKey'],[original['unit'],original['item'],None,original['roman']])
-                    self.assertEqual(question['questionPages'],original['questionPages'])
-                    self.assertEqual(question['schemePages'],original['schemePages'])
-                    raw=' '.join(docs['aural'][p-1].get_text(clip=fitz.Rect(295,30,580,793)) for p in question['questionPages'])
-                    self.assertIn(normal(question['questionText']),normal(raw))
-                for mutation in [lambda r:r['atlasQuestions'][0].update(questionText='Invented source question'),lambda r:r['atlasQuestions'][0].update(questionPages=[99]),lambda r:r['atlasQuestions'][0].update(topicId='russian-unknown')]:
-                    wrong=copy.deepcopy(record);mutation(wrong)
-                    with self.assertRaises(AssertionError):validate_joint_task(wrong,card,self.registry)
-            self.assertEqual(total,22)
+            self.assertFalse([t for t in self.registry['tasks'] if t['year']==2020 and t['level']=='higher'])
+            approved={r['id']:r for r in allocation_approval()['listening']['cards'] if r['year']==2020}
+            originals=[r for r in source['tasks'] if r['component']=='aural']
+            self.assertEqual(len(originals),22)
+            for r in originals:
+                c=self.get(r['id'].replace('ru-2020-hl-',''));a=approved[c['id']]
+                self.assertEqual(c['questionText'],r['question']);self.assertEqual(c['totalMarks'],a['proposedMaximum'])
+                self.assertEqual(c['review']['questionPages'],r['questionPages']);self.assertEqual(c['review']['schemePages'],r['schemePages'])
+                self.assertNotIn('coveredQuestionRefs',c['review']);self.assertNotIn('answerLanguageRule',c)
+                self.assertEqual(c['rubric']['taskRequirements'],[source['listeningGuidance'],r['publishedSourceBlock']])
+                self.assertEqual(c['rubric']['count'],2 if c['id']=='ru-2020-hl-l1-2' else a['proposedDetails']);self.assertEqual(c['topicId'],r['topicId'])
+                if c['id']!='ru-2020-hl-l1-2':self.assertIn('not printed as a general per-detail award',c['rubric']['markingGuideNote'])
+                original=' '.join(docs['aural'][page-1].get_text(clip=fitz.Rect(295,30,580,793)) for page in r['questionPages'])
+                self.assertIn(normal(c['questionText']),normal(original))
+            self.assertEqual(sum(c['totalMarks'] for c in self.cards if c.get('audioMaterial')),80)
         finally:
-            for doc in docs.values():doc.close()
+            for d in docs.values():d.close()
 
-    def test_listening_complete_pools_known_luggage_prices_and_pet_partials(self):
-        docs,source=MODULE['source_records']()
-        try:
-            for section in range(1,5):
-                card=self.get(f'l{section}');records=[r for r in source['tasks'] if r['unit']==f'L{section}']
-                self.assertEqual(card['totalMarks'],20);self.assertEqual(card['tariffModel'],{'kind':'questionTotal'})
-                self.assertTrue(all(row['marks'] is None for row in card['rows']))
-                self.assertNotIn('answerLanguageRule',card)
-                self.assertEqual(card['rows'][0]['verbatim'],source['listeningGuidance'])
-                self.assertIn('Accept answers written in Russian',card['rows'][0]['verbatim'])
-                self.assertIn('no penalty for excess material which does not invalidate the answer',card['rows'][0]['verbatim'])
-                self.assertEqual([row['verbatim'] for row in card['rows'][1:]],[r['publishedSourceBlock'] for r in records])
-            luggage=next(row for row in self.get('l1')['rows'] if row['id']=='l1-2')
-            self.assertEqual(luggage['verbatim'],'• One suitcase (1 mark) and a bag/purse (1 mark)')
-            self.assertIsNone(luggage['marks'])
-            self.assertFalse(any(c['id']=='ru-2020-hl-l1-2' for c in self.cards))
-            pets=next(row for row in self.get('l4')['rows'] if row['id']=='l4-3-ii')
-            self.assertIn('Dog: 1 mark',pets['verbatim']);self.assertIn('Cat: 1 mark',pets['verbatim'])
-        finally:
-            for doc in docs.values():doc.close()
+    def test_luggage_and_pet_partials_use_their_explicit_printed_marks(self):
+        luggage=self.get('l1-2');self.assertEqual(luggage['totalMarks'],2)
+        self.assertEqual([(g['rows'][0]['text'],g['rows'][0]['marks']) for g in luggage['rubric']['groups']],[('One suitcase',1),('a bag/purse',1)])
+        self.assertEqual(luggage['review']['explicitAllocation'],[1,1]);self.assertNotIn('approvedInference',luggage['review'])
+        pets=self.get('l4-3-ii');self.assertEqual(pets['rubric']['count'],1)
+        self.assertEqual([[r['marks'] for r in g['rows']] for g in pets['rubric']['groups']],[[2,1],[2,1]])
+        self.assertEqual([g['rows'][1]['text'] for g in pets['rubric']['groups']],['Dog','Cat'])
+        self.assertTrue(all(g['answerCount']==1 for g in pets['rubric']['groups']))
 
     def test_original_numbering_and_duration_discrepancies_remain_visible(self):
         docs,_=MODULE['source_records']()
         try:
-            front=normal(docs['aural'][0].get_text());back=normal(docs['aural'][7].get_text())
-            self.assertIn(normal('50 minutes'),front);self.assertIn(normal('40 minutes'),back)
-            notes=' '.join(row.get('contextNote','') for row in self.get('l2')['rows'])
-            self.assertIn('50 minutes',notes);self.assertIn('40 minutes',notes)
-            self.assertIn('English booklet1(i), Irish and scheme1',notes)
-            self.assertIn('Paper3, scheme3(i)',notes)
+            self.assertIn(normal('50 minutes'),normal(docs['aural'][0].get_text()))
+            self.assertIn(normal('40 minutes'),normal(docs['aural'][7].get_text()))
+            notes=' '.join(c['rubric']['markingGuideNote'] for c in self.cards if c.get('audioMaterial'))
+            for text in ['50 minutes','40 minutes','English booklet1(i), Irish and scheme1','Paper3, scheme3(i)']:self.assertIn(text,notes)
         finally:
             for doc in docs.values():doc.close()
 
-    def test_essay_retains_all_five_choices_and_ambiguous_literal_deduction(self):
+    def test_essay_retains_all_five_choices_and_approved_deduction(self):
         card=self.get('se');docs,source=MODULE['source_records']()
         try:
             record=next(r for r in source['tasks'] if r['unit']=='SE')
-            self.assertEqual(card['tariffModel'],{'kind':'questionTotal'});self.assertEqual(card['totalMarks'],30)
-            self.assertTrue(all(row['marks'] is None for row in card['rows']))
-            self.assertEqual(normal(' '.join(row['verbatim'] for row in card['rows'])),normal(record['publishedSourceBlock']))
-            self.assertEqual([row['verbatim'] for row in card['rows']],record['sourcePageBlocks'])
-            for physical,row in zip((12,13,14),card['rows']):
-                self.assertIn(normal(row['verbatim']),normal(docs['scheme'][physical-1].get_text()))
-            for text in ['education system in the Russian Federation','family in the Russian Federation','Places of historic and cultural interest','Music / musicians in the Russian Federation','Russian language in Ireland']:
-                self.assertIn(normal(text),normal(card['questionText']))
-            self.assertIn('Deduct 1/2 marks',' '.join(row['verbatim'] for row in card['rows']))
-            self.assertIn('Neither interpretation is selected',card['rows'][0]['contextNote'])
+            self.assertEqual(card['rubric']['system'],'language-writing');self.assertEqual(card['totalMarks'],30)
+            self.assertEqual(card['rubric']['taskRequirements'],record['sourcePageBlocks'])
+            for physical,text in zip((12,13,14),card['rubric']['taskRequirements']):self.assertIn(normal(text),normal(docs['scheme'][physical-1].get_text()))
+            for text in ['education system in the Russian Federation','family in the Russian Federation','Places of historic and cultural interest','Music / musicians in the Russian Federation','Russian language in Ireland']:self.assertIn(normal(text),normal(card['questionText']))
+            self.assertIn('Deduct 1/2 marks',card['rubric']['criteria'][-1]['guidance'][0]);self.assertEqual(card['rubric']['criteria'][-1]['permittedMarks'],[0,1,2])
+            self.assertIn('one or two marks',card['rubric']['markingGuideNote'])
         finally:
             for doc in docs.values():doc.close()
 

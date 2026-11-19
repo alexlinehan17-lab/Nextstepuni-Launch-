@@ -708,8 +708,8 @@
     "refsHash": "8dc6e8622a1ca48e"
   },
   "russian": {
-    "cards": 1467,
-    "contentHash": "ed3ebb4929b864f3",
+    "cards": 1485,
+    "contentHash": "27712bc024d73f2c",
     "coveragePct": 100.0,
     "covered": 1489,
     "excluded": 0,
@@ -720,7 +720,7 @@
       "count": 66,
       "hash": "ff06e1bdb6b5283e"
     },
-    "refsHash": "59701223a095ed78"
+    "refsHash": "9947d4141725bd76"
   },
   "slovakian": {
     "cards": 140,
