@@ -63,7 +63,9 @@ describe('2019 Higher Home Economics: independently swept original sources', () 
     expect(get('sb-q5a').rows.map(r => r.marks)).toEqual([3, 3, 3, 3, 2]);
     expect(get('sb-q5c').rows.map(r => r.marks)).toEqual([8, 8, 8]);
   });
-  it('preserves all eight coherent bacteria routes while holding the complete task for confidence review', () => {
+  it('preserves all eight coherent bacteria routes at the printed 20-mark total, both conflicting lines quoted', () => {
+    // Converted from a confidence hold on 19 Nov 2026: two printed lines conflict, so
+    // CARD-STANDARD section 5 cards the printed total and quotes both.
     const c = get('sb-q3b');
     expect(c.tariffModel.kind).toBe('questionTotal');
     expect(c.totalMarks).toBe(20);
@@ -73,7 +75,7 @@ describe('2019 Higher Home Economics: independently swept original sources', () 
       expect(v.rows.map(r => r.marks)).toEqual([null, null, null, null, null]);
       expect(v.rows[0].contextNote).toContain('page 12 prints 2:1:0');
       expect(v.rows[0].contextNote).toContain('page 13 table headers print 2:0');
-      expect(v.rows[0].contextNote).toContain('confidence review only');
+      expect(v.rows[0].contextNote).toContain('assesses the task against the printed total (20)');
       for (const original of ['3 conditions @ 2 marks (graded 2:1:0)', '1 source@ 2 marks (graded 2:1:0)', '3 points @ 2 marks (graded 2:0)', '2 foods @ 2 marks (graded 2:1:0)']) {
         expect(v.rows[0].contextNote).toContain(original);
       }

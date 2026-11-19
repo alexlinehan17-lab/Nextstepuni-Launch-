@@ -4230,7 +4230,7 @@
         "scoringClarification": {
           "status": "unpublished-response-allocation",
           "sourceText": "Kimono / clothes / books / DVDs / computer games / bicycles (3 marks)",
-          "issue": "Three requested items and total 3 without a published per-item split. Confidence review only; no inferred partial allocation.",
+          "issue": "Three requested items and total 3 without a published per-item split. Carded at the printed total (CARD-STANDARD section 5, converted 19 Nov 2026); no per-item allocation inferred.",
           "resolution": null
         }
       },
@@ -4244,7 +4244,7 @@
           "verbatim": "Kimono / clothes / books / DVDs / computer games / bicycles",
           "marks": null,
           "id": "r-1",
-          "contextNote": "The paper requests three items and the scheme prints a 3-mark total, but no per-item allocation. All six accepted options are retained. Marks are not calculated because the response split is unpublished; use confidence review and consult examiner guidance for an exact award. (1/2 marks if answered in Japanese, romaji or Japanese script)"
+          "contextNote": "The paper requests three items and the scheme prints a 3-mark total, but no per-item allocation. All six accepted options are retained. Assess the three items against the printed 3-mark total. (1/2 marks if answered in Japanese, romaji or Japanese script)"
         }
       ],
       "sourceMaterial": {

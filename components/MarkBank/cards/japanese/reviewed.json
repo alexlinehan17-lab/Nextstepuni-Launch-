@@ -3774,113 +3774,194 @@
     },
     "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2010 Higher Level — © State Examinations Commission.",
     "tariffModel": {
-      "kind": "questionTotal"
+      "kind": "fixed"
     },
     "rows": [
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "18",
-        "marks": null,
-        "contextNote": "1. TOM — age. Printed allocation: 1 mark. (1/2 marks if answered in Japanese, romaji or Japanese script) The scheme separately publishes half-credit content alternatives and this language reduction, but gives no rule for combining them. This complete 18-mark task is therefore a confidence review: no quarter mark, combined multiplier or calculated score is inferred. Given cells are not additional answers.",
-        "id": "tom-age"
+        "marks": 1,
+        "contextNote": "1. TOM — age. Printed allocation: 1 mark. (1/2 marks if answered in Japanese, romaji or Japanese script) Each half step is the scheme's half marks: for an answer in Japanese, romaji or Japanese script, or for a half-credit answer it prints. It gives no rule for combining the two. Given cells are not additional answers.",
+        "id": "tom-age",
+        "permittedMarks": [
+          0,
+          0.5,
+          1
+        ]
       },
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "Mountain climbing",
-        "marks": null,
-        "contextNote": "1. TOM — one hobby. Printed allocation: 1 mark.",
-        "id": "tom-hobby"
+        "marks": 1,
+        "contextNote": "1. TOM — one hobby. Printed allocation: 1 mark. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+        "id": "tom-hobby",
+        "permittedMarks": [
+          0,
+          0.5,
+          1
+        ]
       },
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "Climb Mount Fuji (see Mount Fuji half marks)",
-        "marks": null,
-        "contextNote": "1. TOM — one reason. Printed allocation: 1 mark; literal half-credit alternative retained.",
-        "id": "tom-reason"
+        "marks": 1,
+        "contextNote": "1. TOM — one reason. Printed allocation: 1 mark; literal half-credit alternative retained. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+        "id": "tom-reason",
+        "permittedMarks": [
+          0,
+          0.5,
+          1
+        ]
       },
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "June 1 mark 16th 1 mark",
-        "marks": null,
-        "contextNote": "2. TARA — birthday. Printed allocation: Month1 + day1.",
-        "id": "tara-birthday"
+        "marks": 2,
+        "contextNote": "2. TARA — birthday. Printed allocation: Month1 + day1. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+        "id": "tara-birthday",
+        "permittedMarks": [
+          0,
+          0.5,
+          1,
+          1.5,
+          2
+        ]
       },
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "2nd year of college (college student half marks) Studying art (studying half marks) 1 mark for any of the above",
-        "marks": null,
-        "contextNote": "2. TARA — current activity, one detail. Printed allocation: 1 mark; all full/partial alternatives retained.",
-        "id": "tara-current"
+        "marks": 1,
+        "contextNote": "2. TARA — current activity, one detail. Printed allocation: 1 mark; all full/partial alternatives retained. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+        "id": "tara-current",
+        "permittedMarks": [
+          0,
+          0.5,
+          1
+        ]
       },
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "Go to manga coffee shop Go to art galleries. 1 mark for any of the above",
-        "marks": null,
-        "contextNote": "2. TARA — one reason. Printed allocation: 1 mark.",
-        "id": "tara-reason"
+        "marks": 1,
+        "contextNote": "2. TARA — one reason. Printed allocation: 1 mark. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+        "id": "tara-reason",
+        "permittedMarks": [
+          0,
+          0.5,
+          1
+        ]
       },
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "23",
-        "marks": null,
-        "contextNote": "3. MIKE — age. Printed allocation: 1 mark.",
-        "id": "mike-age"
+        "marks": 1,
+        "contextNote": "3. MIKE — age. Printed allocation: 1 mark. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+        "id": "mike-age",
+        "permittedMarks": [
+          0,
+          0.5,
+          1
+        ]
       },
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "September 1 mark 30th 1 mark",
-        "marks": null,
-        "contextNote": "3. MIKE — birthday. Printed allocation: Month1 + day1.",
-        "id": "mike-birthday"
+        "marks": 2,
+        "contextNote": "3. MIKE — birthday. Printed allocation: Month1 + day1. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+        "id": "mike-birthday",
+        "permittedMarks": [
+          0,
+          0.5,
+          1,
+          1.5,
+          2
+        ]
       },
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "3rd year in college in Berlin (college student half marks) studying maths (studying half marks) 1 mark for any of the above",
-        "marks": null,
-        "contextNote": "3. MIKE — current activity, one detail. Printed allocation: 1 mark; all full/partial alternatives retained.",
-        "id": "mike-current"
+        "marks": 1,
+        "contextNote": "3. MIKE — current activity, one detail. Printed allocation: 1 mark; all full/partial alternatives retained. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+        "id": "mike-current",
+        "permittedMarks": [
+          0,
+          0.5,
+          1
+        ]
       },
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "Sudoku puzzles Studying Japanese",
-        "marks": null,
-        "contextNote": "3. MIKE — one hobby. Printed allocation: 1 mark for one listed alternative.",
-        "id": "mike-hobby"
+        "marks": 1,
+        "contextNote": "3. MIKE — one hobby. Printed allocation: 1 mark for one listed alternative. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+        "id": "mike-hobby",
+        "permittedMarks": [
+          0,
+          0.5,
+          1
+        ]
       },
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "To live there for 3 years To do a masters in Tokyo university/ to go to Tokyo university)",
-        "marks": null,
-        "contextNote": "3. MIKE — one reason. Printed allocation: 1 mark for one listed alternative.",
-        "id": "mike-reason"
+        "marks": 1,
+        "contextNote": "3. MIKE — one reason. Printed allocation: 1 mark for one listed alternative. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+        "id": "mike-reason",
+        "permittedMarks": [
+          0,
+          0.5,
+          1
+        ]
       },
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "May 1 mark 19th 1 mark",
-        "marks": null,
-        "contextNote": "4. SOPHIE — birthday. Printed allocation: Month1 + day1.",
-        "id": "sophie-birthday"
+        "marks": 2,
+        "contextNote": "4. SOPHIE — birthday. Printed allocation: Month1 + day1. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+        "id": "sophie-birthday",
+        "permittedMarks": [
+          0,
+          0.5,
+          1,
+          1.5,
+          2
+        ]
       },
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "Studying fashion design in university (studying half marks) 4th year college student (college student half marks)",
-        "marks": null,
-        "contextNote": "4. SOPHIE — current activity, one detail. Printed allocation: 1 mark; all full/partial alternatives retained.",
-        "id": "sophie-current"
+        "marks": 1,
+        "contextNote": "4. SOPHIE — current activity, one detail. Printed allocation: 1 mark; all full/partial alternatives retained. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+        "id": "sophie-current",
+        "permittedMarks": [
+          0,
+          0.5,
+          1
+        ]
       },
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "Designing clothes Making clothes Going to fashion shows",
-        "marks": null,
-        "contextNote": "4. SOPHIE — one hobby. Printed allocation: 1 mark for one listed alternative.",
-        "id": "sophie-hobby"
+        "marks": 1,
+        "contextNote": "4. SOPHIE — one hobby. Printed allocation: 1 mark for one listed alternative. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+        "id": "sophie-hobby",
+        "permittedMarks": [
+          0,
+          0.5,
+          1
+        ]
       },
       {
-        "kind": "point",
+        "kind": "criterion",
         "verbatim": "Studying fashion design Study about kimono.",
-        "marks": null,
-        "contextNote": "4. SOPHIE — one reason. Printed allocation: 1 mark for one listed alternative.",
-        "id": "sophie-reason"
+        "marks": 1,
+        "contextNote": "4. SOPHIE — one reason. Printed allocation: 1 mark for one listed alternative. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+        "id": "sophie-reason",
+        "permittedMarks": [
+          0,
+          0.5,
+          1
+        ]
       }
     ],
     "sourceMaterial": {
@@ -3895,6 +3976,51 @@
       "sourceYear": 2010
     },
     "stem": "You will hear FOUR students introduce themselves at the 2nd annual European Japanese Speech Contest. You will hear the introductions three times; first right through; then in segments with pauses; and finally right through again.",
+    "taskGroups": [
+      {
+        "sourceCardId": "ja-2010-hl-la-tom",
+        "label": "1. TOM",
+        "marks": 3,
+        "rowIds": [
+          "tom-age",
+          "tom-hobby",
+          "tom-reason"
+        ]
+      },
+      {
+        "sourceCardId": "ja-2010-hl-la-tara",
+        "label": "2. TARA",
+        "marks": 4,
+        "rowIds": [
+          "tara-birthday",
+          "tara-current",
+          "tara-reason"
+        ]
+      },
+      {
+        "sourceCardId": "ja-2010-hl-la-mike",
+        "label": "3. MIKE",
+        "marks": 6,
+        "rowIds": [
+          "mike-age",
+          "mike-birthday",
+          "mike-current",
+          "mike-hobby",
+          "mike-reason"
+        ]
+      },
+      {
+        "sourceCardId": "ja-2010-hl-la-sophie",
+        "label": "4. SOPHIE",
+        "marks": 5,
+        "rowIds": [
+          "sophie-birthday",
+          "sophie-current",
+          "sophie-hobby",
+          "sophie-reason"
+        ]
+      }
+    ],
     "audioMaterial": {
       "kind": "source-audio",
       "label": "Japanese listening",
@@ -7192,50 +7318,39 @@
     },
     "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2010 Ordinary Level — © State Examinations Commission.",
     "tariffModel": {
-      "kind": "questionTotal"
+      "kind": "fixed"
     },
     "rows": [
       {
-        "kind": "point",
-        "verbatim": "Steak",
+        "kind": "anyN",
+        "verbatim": "Steak / Teriyaki Chicken / Raw fish / Potato fries / Ceaser salad (chicken, fish, salad;  half marks)",
         "marks": null,
-        "contextNote": "2 names of the following food (2 marks each). (chicken, fish, salad;  half marks). (Half marks if answered in the inappropriate language). The full alternatives carry 2 each and the generic chicken/fish/salad alternatives carry half (1 each), under the two-answer total4. The source does not state how generic partial credit and the independent language reduction combine. This complete task is confidence review only; marks are not calculated. Do not infer a cumulative or once-only combined reduction.",
-        "id": "r-1"
-      },
-      {
-        "kind": "point",
-        "verbatim": "Teriyaki Chicken",
-        "marks": null,
-        "contextNote": "2 names of the following food (2 marks each). (chicken, fish, salad;  half marks). (Half marks if answered in the inappropriate language). The full alternatives carry 2 each and the generic chicken/fish/salad alternatives carry half (1 each), under the two-answer total4. The source does not state how generic partial credit and the independent language reduction combine. This complete task is confidence review only; marks are not calculated. Do not infer a cumulative or once-only combined reduction.",
-        "id": "r-2"
-      },
-      {
-        "kind": "point",
-        "verbatim": "Raw fish",
-        "marks": null,
-        "contextNote": "2 names of the following food (2 marks each). (chicken, fish, salad;  half marks). (Half marks if answered in the inappropriate language). The full alternatives carry 2 each and the generic chicken/fish/salad alternatives carry half (1 each), under the two-answer total4. The source does not state how generic partial credit and the independent language reduction combine. This complete task is confidence review only; marks are not calculated. Do not infer a cumulative or once-only combined reduction.",
-        "id": "r-3"
-      },
-      {
-        "kind": "point",
-        "verbatim": "Potato fries",
-        "marks": null,
-        "contextNote": "2 names of the following food (2 marks each). (chicken, fish, salad;  half marks). (Half marks if answered in the inappropriate language). The full alternatives carry 2 each and the generic chicken/fish/salad alternatives carry half (1 each), under the two-answer total4. The source does not state how generic partial credit and the independent language reduction combine. This complete task is confidence review only; marks are not calculated. Do not infer a cumulative or once-only combined reduction.",
-        "id": "r-4"
-      },
-      {
-        "kind": "point",
-        "verbatim": "Ceaser salad",
-        "marks": null,
-        "contextNote": "2 names of the following food (2 marks each). (chicken, fish, salad;  half marks). (Half marks if answered in the inappropriate language). The full alternatives carry 2 each and the generic chicken/fish/salad alternatives carry half (1 each), under the two-answer total4. The source does not state how generic partial credit and the independent language reduction combine. This complete task is confidence review only; marks are not calculated. Do not infer a cumulative or once-only combined reduction.",
-        "id": "r-5"
-      },
-      {
-        "kind": "point",
-        "verbatim": "(chicken, fish, salad;  half marks)",
-        "marks": null,
-        "contextNote": "2 names of the following food (2 marks each). (chicken, fish, salad;  half marks). (Half marks if answered in the inappropriate language). The full alternatives carry 2 each and the generic chicken/fish/salad alternatives carry half (1 each), under the two-answer total4. The source does not state how generic partial credit and the independent language reduction combine. This complete task is confidence review only; marks are not calculated. Do not infer a cumulative or once-only combined reduction.",
-        "id": "r-6"
+        "contextNote": "2 names of the following food (2 marks each). (chicken, fish, salad;  half marks). (Half marks if answered in the inappropriate language). The scheme gives no rule for combining a half-mark answer with the language reduction, so the card does not apply the reduction for you.",
+        "id": "r-1",
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "Steak",
+            "Teriyaki Chicken",
+            "Raw fish",
+            "Potato fries",
+            "Ceaser salad",
+            "chicken",
+            "fish",
+            "salad"
+          ],
+          "optionMarks": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1
+          ]
+        }
       }
     ],
     "sourceMaterial": {
@@ -59867,7 +59982,7 @@
       "scoringClarification": {
         "status": "unpublished-response-allocation",
         "sourceText": "Kimono / clothes / books / DVDs / computer games / bicycles (3 marks)",
-        "issue": "Three requested items and total 3 without a published per-item split. Confidence review only; no inferred partial allocation.",
+        "issue": "Three requested items and total 3 without a published per-item split. Carded at the printed total (CARD-STANDARD section 5, converted 19 Nov 2026); no per-item allocation inferred.",
         "resolution": null
       }
     },
@@ -59881,7 +59996,7 @@
         "verbatim": "Kimono / clothes / books / DVDs / computer games / bicycles",
         "marks": null,
         "id": "r-1",
-        "contextNote": "The paper requests three items and the scheme prints a 3-mark total, but no per-item allocation. All six accepted options are retained. Marks are not calculated because the response split is unpublished; use confidence review and consult examiner guidance for an exact award. (1/2 marks if answered in Japanese, romaji or Japanese script)"
+        "contextNote": "The paper requests three items and the scheme prints a 3-mark total, but no per-item allocation. All six accepted options are retained. Assess the three items against the printed 3-mark total. (1/2 marks if answered in Japanese, romaji or Japanese script)"
       }
     ],
     "sourceMaterial": {
@@ -142799,7 +142914,7 @@
         "verbatim": "0120-923-915 (any two digits, 1  mark each)",
         "marks": null,
         "id": "r-1",
-        "contextNote": "Unresolved source scoring conflict: the scheme prints a 4-mark total and also “any two digits, 1 mark each”. The original paper has eight missing digits. These published statements are inconsistent. The full answer and question total are reproduced; no per-digit allocation or partial-credit scale is inferred. Use this card for answer review and consult examiner guidance for an exact award. (1/2 marks if answered in Japanese, romaji or Japanese script)"
+        "contextNote": "Unresolved source scoring conflict: the scheme prints a 4-mark total and also “any two digits, 1 mark each”. The original paper has eight missing digits. These published statements are inconsistent. The full answer and question total are reproduced; no per-digit allocation or partial-credit scale is inferred. The card assesses the task against the printed 4-mark total and quotes both statements. (1/2 marks if answered in Japanese, romaji or Japanese script)"
       }
     ],
     "sourceMaterial": {

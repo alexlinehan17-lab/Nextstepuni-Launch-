@@ -27825,31 +27825,28 @@
   "stem": "An air to water system is one of the most common ways to heat modern homes.",
   "questionText": "State two methods by which heat can be transferred throughout a home.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r1",
-    "kind": "point",
-    "verbatim": "conduction",
+    "kind": "anyN",
+    "verbatim": "conduction / convection / radiation",
     "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "conduction",
+      "convection",
+      "radiation"
+     ]
+    },
     "contextNote": "[accept partial answer for 3] any two"
-   },
-   {
-    "id": "r2",
-    "kind": "point",
-    "verbatim": "convection",
-    "marks": null
-   },
-   {
-    "id": "r3",
-    "kind": "point",
-    "verbatim": "radiation",
-    "marks": null
    }
   ],
-  "notes": "\"any two\" at one cell [6], with no mark printed per method: the part is carded whole. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2025_ol.py.",
+  "notes": "\"any two\" at one cell [6] with \"[accept partial answer for 3]\": a menu, 3 per method. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2025_ol.py.",
   "year": 2025,
   "level": "ordinary"
  },
@@ -27889,7 +27886,7 @@
   "stem": "A U‐value is the measure of the rate of heat loss in a house.",
   "questionText": "State two ways in which the U‐value of a house can be reduced.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
@@ -27897,11 +27894,11 @@
     "id": "r1",
     "kind": "point",
     "verbatim": "any two of: glazing, insulation, etc.",
-    "contextNote": "[accept partial answer for 3]",
-    "marks": null
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "\"any two of\" at one cell [6], with no mark printed per way, and the scheme's list closes on \"etc.\": the part is carded whole, its list one row as printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2025_ol.py.",
+  "notes": "\"any two of\" at one cell [6] with \"[accept partial answer for 3]\", its list closing on \"etc.\": one row as printed, at 6 with the partial note (as Q11(viii)). Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2025_ol.py.",
   "year": 2025,
   "level": "ordinary"
  },
