@@ -389,9 +389,9 @@ describe('Business exam-topic registry', () => {
   });
 
   it('surfaces all 721 entitled questions through all 105 topic buckets', () => {
-    // + the carded deferred sittings' printed questions (2022 Higher 21, 2022 Ordinary 24).
+    // + the carded deferred sittings' printed questions (2022 Higher 21, 2022 Ordinary 24, 2023 Higher 21).
     expect(subjectAtlasStats('business')).toMatchObject({
-      questions: 721 + 21 + 24,
+      questions: 721 + 21 + 24 + 21,
       topics: 105,
       yearMin: 2010,
       yearMax: 2026,
@@ -410,6 +410,7 @@ describe('Business exam-topic registry', () => {
 const DEFERRED_BOOKLETS = [
   '2022 higher LC033ALP032EV-deferred.pdf', '2022 higher LC033ALP041EV-deferred.pdf',
   '2022 ordinary LC033GLP032EV-deferred.pdf', '2022 ordinary LC033GLP033EV-deferred.pdf',
+  '2023 higher LC033ALP032EV-deferred.pdf', '2023 higher LC033ALP041EV-deferred.pdf',
 ];
 
 function expectedQuestionNumbers(

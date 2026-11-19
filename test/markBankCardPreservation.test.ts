@@ -3268,15 +3268,15 @@ describe('Mark Bank card preservation', () => {
      * and the one differently marked 2013 route pool. Every
      * addition is a new, unique ID at its own level; none reuses an original
      * ID. */
-    // + the deferred sittings: 2022 Higher 55, 2022 Ordinary 68.
-    expect(businessAdditionIds.size).toBe(1382 + 55 + 68);
+    // + the deferred sittings: 2022 Higher 55, 2022 Ordinary 68, 2023 Higher 52.
+    expect(businessAdditionIds.size).toBe(1382 + 55 + 68 + 52);
     const higher = BUSINESS_HIGHER.map(card => card.id);
     const ordinary = BUSINESS_ORDINARY.map(card => card.id);
     expect(new Set(higher).size).toBe(higher.length);
     expect(new Set(ordinary).size).toBe(ordinary.length);
     const higherAdditions = BUSINESS_HIGHER.filter(card => businessAdditionIds.has(card.id));
     const ordinaryAdditions = BUSINESS_ORDINARY.filter(card => businessAdditionIds.has(card.id));
-    expect(higherAdditions).toHaveLength(605 + 55);
+    expect(higherAdditions).toHaveLength(605 + 55 + 52);
     expect(ordinaryAdditions).toHaveLength(777 + 68);
     expect(higherAdditions.length + ordinaryAdditions.length).toBe(businessAdditionIds.size);
     for (const id of businessAdditionIds) {

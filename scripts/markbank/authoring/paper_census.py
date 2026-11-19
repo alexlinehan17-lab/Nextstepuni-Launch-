@@ -4785,7 +4785,7 @@ def census_biology_deferred():
 # each, as June's: Higher LC033ALP032EV Section 1 and Answerbook and LC033ALP041EV Sections 2 and 3; Ordinary
 # LC033GLP032EV Section 1 and Answerbook and LC033GLP033EV Section 2; scheme LC033<A|G>LP000EV in
 # deferredmarkingschemes/). 2022 at both levels and 2023 Higher; nothing for 2024-2025.
-BUS_DEFERRED_SITTINGS = ((2022, 'hl'), (2022, 'ol'))
+BUS_DEFERRED_SITTINGS = ((2022, 'hl'), (2022, 'ol'), (2023, 'hl'))
 
 
 def business_deferred_files(year, level):

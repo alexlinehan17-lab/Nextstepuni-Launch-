@@ -3201,6 +3201,7 @@ describe('Business deferred sittings', () => {
   const SITTINGS: Record<string, { cards: number; marks: Record<string, number> }> = {
     '2022-higher': { cards: 55, marks: { '1': 120, '2': 80, '3': 480 } },
     '2022-ordinary': { cards: 68, marks: { '1': 225, '2': 675 } },
+    '2023-higher': { cards: 52, marks: { '1': 120, '2': 80, '3': 480 } },
   };
 
   it('names the sitting in every id, reference, booklet and citation', () => {
@@ -3230,7 +3231,7 @@ describe('Business deferred sittings', () => {
   it('shows the scheme’s printed responses as rows, and says so where the scheme prints none', () => {
     const unprinted = deferred.filter(card => !card.rubric.expected);
     // 2023 Higher Section 3 Q3: the deferred scheme prints nothing for it (its p2 note).
-    expect(unprinted.map(card => card.id)).toEqual([]);
+    expect(unprinted.map(card => card.id)).toEqual(['bus-2023-hl-deferred-s3-q3a', 'bus-2023-hl-deferred-s3-q3b', 'bus-2023-hl-deferred-s3-q3c']);
     for (const card of unprinted) {
       expect(card.rubric.responses).toHaveLength(1);
       expect(card.rubric.responses[0].label).toBe('The scheme prints no answer for this part.');

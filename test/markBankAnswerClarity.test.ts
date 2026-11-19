@@ -883,8 +883,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
 
   it('Business: the responses the scheme prints for a part are rows on the card, each lifted from the cited scheme page', () => {
     const cards = [...BUSINESS_HIGHER, ...BUSINESS_ORDINARY].filter((card): card is SecRubricCard & { rubric: BusinessRubric } => isRubricCard(card) && card.rubric.system === 'business');
-    // + the deferred sittings (deferred-authored.json): 2022 Higher 55, 2022 Ordinary 68.
-    expect(cards).toHaveLength(1988 + 55 + 68);
+    // + the deferred sittings (deferred-authored.json): 2022 Higher 55, 2022 Ordinary 68, 2023 Higher 52.
+    expect(cards).toHaveLength(1988 + 55 + 68 + 52);
     const normalise = (value: string) => value.normalize('NFKC').toLowerCase().replace(/[^a-z0-9]+/g, '');
     const schemes = new Map<string, { text: string; cells: Set<string> }>();
     // The scheme markdown as bus_expected.py reads it: no page heads, running footers, "(20 marks)" cells or marks column.
@@ -910,10 +910,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // 1,766 from the text layer (stage A), 15 from a hand-checked slice, 198 from the page's geometry (stage B: tables, ticks, rings, True/False columns).
     // The six cards without rows are the recorded exclusions in business-expected-slices.json: two image answers, a drawn organisation chart, three drawn charts.
     // A deferred sitting's rows are cut from its scheme page at the printed headings (deferred_lib.py), so read as
-    // slices: 2022 Higher 55, 2022 Ordinary 68.
-    expect(lifted).toHaveLength(1979 + 55 + 68);
+    // slices: 2022 Higher 55, 2022 Ordinary 68, 2023 Higher 49 (its Question 3 prints no answer: three cards without rows).
+    expect(lifted).toHaveLength(1979 + 55 + 68 + 49);
     expect(lifted.filter(card => card.rubric.expected!.lifted === 'geometry')).toHaveLength(198);
-    expect(lifted.filter(card => card.rubric.expected!.lifted === 'slice')).toHaveLength(15 + 55 + 68);
+    expect(lifted.filter(card => card.rubric.expected!.lifted === 'slice')).toHaveLength(15 + 55 + 68 + 49);
     for (const card of lifted) {
       const { text: corpus, cells } = schemeText(card.year, card.level, card.paperFileid?.endsWith('-deferred'));
       const expected = card.rubric.expected!;
@@ -938,8 +938,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     }
     // A row sits under the response it names, or in one pool the responses draw from.
     const layouts = lifted.map(card => businessExpectedLayout(card.rubric)!.kind);
-    // Deferred: per response 8 + 4, pooled 47 + 64 (2022 Higher, 2022 Ordinary).
-    expect([layouts.filter(kind => kind === 'per-response').length, layouts.filter(kind => kind === 'pool').length]).toEqual([258 + 12, 1721 + 111]);
+    // Deferred: per response 8 + 4 + 3, pooled 47 + 64 + 46 (2022 Higher, 2022 Ordinary, 2023 Higher).
+    expect([layouts.filter(kind => kind === 'per-response').length, layouts.filter(kind => kind === 'pool').length]).toEqual([258 + 15, 1721 + 157]);
     // What bus_expected.py could not lift — the text-layer reason, then the slice's — each with the pages it looked at.
     // Every entry is a recorded exclusion whose slice reason carries the page evidence; a new shape here needs its own evidence.
     const review = JSON.parse(readFileSync(resolve(__dirname, '..', 'scripts', 'markbank', 'authored', 'business-expected-review.json'), 'utf8')) as Array<{ id: string; reason: string; schemePages: number[] }>;
@@ -960,7 +960,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     }
     const reviewed = new Set(review.map(entry => entry.id));
     // Every card either carries its rows or is on the review list; the three route-pool expansions share their template's data.
-    expect(cards.filter(card => !card.rubric.expected && !reviewed.has(card.id)).length).toBe(3);
+    // + the three 2023 Higher deferred Question 3 cards, whose scheme prints no answer (their row says so).
+    expect(cards.filter(card => !card.rubric.expected && !reviewed.has(card.id)).length).toBe(3 + 3);
   });
 
 });

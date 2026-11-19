@@ -123,19 +123,19 @@
     "refsHash": "98027c9761a7d3b1"
   },
   "business": {
-    "cards": 2111,
-    "contentHash": "51f9ada70a5d3a9f",
+    "cards": 2163,
+    "contentHash": "4baf895f016eba4a",
     "coveragePct": 100.0,
-    "covered": 2306,
+    "covered": 2366,
     "excluded": 0,
-    "leaves": 2306,
+    "leaves": 2366,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 48,
       "hash": "473899bda3fb160b"
     },
-    "refsHash": "9cd4ababb148fa34"
+    "refsHash": "fe3ddea26ba3fb3e"
   },
   "chemistry": {
     "cards": 3369,
