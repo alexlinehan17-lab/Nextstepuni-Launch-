@@ -18,7 +18,9 @@ describe('reviewed Russian shared-question coverage and Atlas identities', () =>
     expect(anchors.map((q: {pP:number}) => q.pP)).toEqual([6,7,8,9]);
     const tags = read('scripts/paper-trail/topic-tags/tags/russian.json').find((p: {year:number;fileid:string;level:string}) => p.year === 2011 && p.level === 'higher' && p.fileid === 'LC099ALP000EV.pdf');
     for (const question of questions) expect(tags.q.filter((q: {n:string}) => q.n === question.n)).toHaveLength(1);
-    for (const directory of ['paper-answers','paper-anchors']) expect(read(`public/${directory}/2011/LC099ALP000EV.pdf.json`)).toEqual(map);
+    // The hosted answer map (served by HOSTED_ANSWER_OVERRIDES) is the source map; the release does not
+    // bring Codex's paper-anchors copies, which claimed a scheme a paper-only sidecar must not.
+    expect(read('public/paper-answers/2011/LC099ALP000EV.pdf.json')).toEqual(map);
   });
   it.each(['coveredQuestionRefs','atlasQuestions','questionPages','paperPages','schemePages'])('rejects omitted source evidence: %s', key => {
     const changed = structuredClone(source); delete changed[key];
