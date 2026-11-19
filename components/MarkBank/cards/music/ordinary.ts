@@ -7367,7 +7367,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 4 · Excerpt 1 and Excerpt 2 once more.",
+          "label": "Question 4 · Excerpt 1 and Excerpt 2",
           "title": "2023 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
           "secFileid": "LC067ZLP045EV.mp3",
@@ -7422,7 +7422,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2023 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -7477,7 +7477,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2023 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -7532,7 +7532,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2023 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -7587,7 +7587,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 2.",
+          "label": "Question 5 · Excerpt 2",
           "title": "2023 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -7642,7 +7642,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 2.",
+          "label": "Question 5 · Excerpt 2",
           "title": "2023 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -7706,7 +7706,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 2.",
+          "label": "Question 5 · Excerpt 2",
           "title": "2023 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -7770,7 +7770,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 2.",
+          "label": "Question 5 · Excerpt 2",
           "title": "2023 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -7825,7 +7825,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 3.",
+          "label": "Question 5 · Excerpt 3",
           "title": "2023 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -7880,7 +7880,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 3.",
+          "label": "Question 5 · Excerpt 3",
           "title": "2023 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -10760,7 +10760,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2022 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -10815,7 +10815,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2022 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -10879,7 +10879,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2022 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -10943,7 +10943,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2022 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -10998,7 +10998,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 2.",
+          "label": "Question 5 · Excerpt 2",
           "title": "2022 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -11044,7 +11044,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 2.",
+          "label": "Question 5 · Excerpt 2",
           "title": "2022 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -11090,7 +11090,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 3.",
+          "label": "Question 5 · Excerpt 3",
           "title": "2022 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -11136,7 +11136,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 3.",
+          "label": "Question 5 · Excerpt 3",
           "title": "2022 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -11182,7 +11182,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 3.",
+          "label": "Question 5 · Excerpt 3",
           "title": "2022 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -13576,7 +13576,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2024 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -13631,7 +13631,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2024 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -13686,7 +13686,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2024 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -13750,7 +13750,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2024 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -13796,7 +13796,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 2.",
+          "label": "Question 5 · Excerpt 2",
           "title": "2024 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -13842,7 +13842,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 2.",
+          "label": "Question 5 · Excerpt 2",
           "title": "2024 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -13897,7 +13897,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 3.",
+          "label": "Question 5 · Excerpt 3",
           "title": "2024 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC067ZLP046EV.mp3",
           "secFileid": "LC067ZLP046EV.mp3",
@@ -16840,7 +16840,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1. Two dance tunes.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2021 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -16895,7 +16895,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1. Two dance tunes.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2021 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -16959,7 +16959,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1. Two dance tunes.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2021 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -17014,7 +17014,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1. Two dance tunes.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2021 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -17078,7 +17078,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1. Two dance tunes.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2021 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -17133,7 +17133,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 2.",
+          "label": "Question 5 · Excerpt 2",
           "title": "2021 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -17179,7 +17179,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 2.",
+          "label": "Question 5 · Excerpt 2",
           "title": "2021 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -17225,7 +17225,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 2.",
+          "label": "Question 5 · Excerpt 2",
           "title": "2021 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -17280,7 +17280,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 3.",
+          "label": "Question 5 · Excerpt 3",
           "title": "2021 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -17335,7 +17335,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 3.",
+          "label": "Question 5 · Excerpt 3",
           "title": "2021 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -17381,7 +17381,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 3.",
+          "label": "Question 5 · Excerpt 3",
           "title": "2021 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -20256,7 +20256,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1 One verse from the ballad The Bonny Irish Maid.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2019 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -20311,7 +20311,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1 One verse from the ballad The Bonny Irish Maid.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2019 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -20366,7 +20366,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1 One verse from the ballad The Bonny Irish Maid.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2019 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -22202,7 +22202,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 1 · Excerpt 1 for the first time. Answer (i) and (ii).",
+          "label": "Question 1 · Excerpt 1",
           "title": "2018 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
           "secFileid": "LC067ZLP117EV.mp3",
@@ -22257,7 +22257,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 1 · Excerpt 1 for the first time. Answer (i) and (ii).",
+          "label": "Question 1 · Excerpt 1",
           "title": "2018 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
           "secFileid": "LC067ZLP117EV.mp3",
@@ -22312,7 +22312,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 1 · Excerpt 1 for the second time. Answer (iii).",
+          "label": "Question 1 · Excerpt 1",
           "title": "2018 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
           "secFileid": "LC067ZLP117EV.mp3",
@@ -23482,7 +23482,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1 A verse from An Bonnán Buí.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2018 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -23528,7 +23528,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 1 A verse from An Bonnán Buí.",
+          "label": "Question 5 · Excerpt 1",
           "title": "2018 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -23574,7 +23574,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 2 An excerpt from Carolan’s Concerto.",
+          "label": "Question 5 · Excerpt 2",
           "title": "2018 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -23621,7 +23621,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 2 An excerpt from Carolan’s Concerto.",
+          "label": "Question 5 · Excerpt 2",
           "title": "2018 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -23677,7 +23677,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 3 This excerpt consists of three different dances based on the tune Drops of Brandy.",
+          "label": "Question 5 · Excerpt 3",
           "title": "2018 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -23733,7 +23733,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 3 This excerpt consists of three different dances based on the tune Drops of Brandy.",
+          "label": "Question 5 · Excerpt 3",
           "title": "2018 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",
@@ -23798,7 +23798,7 @@ export const CARDS: SecCard[] = [
     },
     audioMaterial: {
           "kind": "source-audio",
-          "label": "Question 5 · Excerpt 3 This excerpt consists of three different dances based on the tune Drops of Brandy.",
+          "label": "Question 5 · Excerpt 3",
           "title": "2018 Music · Listening test (Higher and Ordinary)",
           "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
           "secFileid": "LC067ZLP217EV.mp3",

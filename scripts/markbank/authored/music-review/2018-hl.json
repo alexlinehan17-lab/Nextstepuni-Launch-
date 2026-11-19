@@ -1805,22 +1805,17 @@
      "marks": 1
     },
     {
-     "type": "menu",
-     "label": "Dance 1: time signature",
-     "options": [
-      "6/8"
-     ],
-     "claim": 1,
-     "per": 0.5,
-     "open": false
-    },
-    {
      "type": "criterion",
-     "text": "bar of rhythm",
-     "marks": 0.5,
+     "text": "6/8",
+     "marks": 1,
      "steps": [
       0,
-      0.5
+      0.5,
+      1
+     ],
+     "quote": [
+      "bar of rhythm",
+      "1 + 0.5 + 0.5 = 2"
      ]
     },
     {
@@ -1829,24 +1824,17 @@
      "marks": 1
     },
     {
-     "type": "menu",
-     "label": "Dance 2: time signature",
-     "options": [
-      "4/4",
-      "2/2",
-      "2/4"
-     ],
-     "claim": 1,
-     "per": 0.5,
-     "open": false
-    },
-    {
      "type": "criterion",
-     "text": "bar of rhythm",
-     "marks": 0.5,
+     "text": "4/4 or 2/2 or 2/4",
+     "marks": 1,
      "steps": [
       0,
-      0.5
+      0.5,
+      1
+     ],
+     "quote": [
+      "bar of rhythm",
+      "1 + 0.5 + 0.5 = 2"
      ]
     },
     {
@@ -1855,31 +1843,23 @@
      "marks": 1
     },
     {
-     "type": "menu",
-     "label": "Dance 3: time signature",
-     "options": [
-      "9/8"
-     ],
-     "claim": 1,
-     "per": 0.5,
-     "open": false
-    },
-    {
      "type": "criterion",
-     "text": "bar of rhythm",
-     "marks": 0.5,
+     "text": "9/8",
+     "marks": 1,
      "steps": [
       0,
-      0.5
+      0.5,
+      1
      ],
      "quote": [
+      "bar of rhythm",
       "1 + 0.5 + 0.5 = 2"
      ]
     }
    ],
    "grid": null,
    "sharedCard": null,
-   "notes": "Address: the 2018 booklet restarts its part numbers at every excerpt (\"Excerpt 2 (i)\"), which the checker's address pattern cannot carry; the excerpt is written as a letter ((a) = Excerpt 1, (b) = Excerpt 2 ...) and the printed label follows it. Printed A, Excerpt 3: one unlabelled question; Dance 1-3 are rows of its answer table (answer slots), so one ask. The scheme prints each dance \"type; time signature; bar of rhythm 1 + 0.5 + 0.5 = 2\". Rows: the type as printed with its dance label; each time signature as a one-pick list so it is labelled by dance (Dance 2 accepts \"4/4 or 2/2 or 2/4\", printed stacked); \"bar of rhythm\" as a criterion, the scheme printing no rhythm. The scheme heads Excerpt 3 \"The Chieftains, Lots Of Drops Of Brandy\"."
+   "notes": "Address: the 2018 booklet restarts its part numbers at every excerpt (\"Excerpt 2 (i)\"), which the checker's address pattern cannot carry; the excerpt is written as a letter ((a) = Excerpt 1, (b) = Excerpt 2 ...) and the printed label follows it. Printed A, Excerpt 3: one unlabelled question; Dance 1-3 are rows of its answer table (answer slots), so one ask. The scheme prints each dance \"type; time signature; bar of rhythm 1 + 0.5 + 0.5 = 2\". Rows (six, the point-card cap): per dance the type as printed with its dance label (1), then one criterion on 0-1 in half marks for the printed time signature (Dance 2 accepts \"4/4 or 2/2 or 2/4\", printed stacked) and the bar of rhythm the scheme prints no rhythm for, its \"bar of rhythm\" / \"1 + 0.5 + 0.5 = 2\" lines quoted (lane lead, 19 Nov: nine rows broke the six-row cap). The scheme heads Excerpt 3 \"The Chieftains, Lots Of Drops Of Brandy\"."
   },
   {
    "paper": "listening",
