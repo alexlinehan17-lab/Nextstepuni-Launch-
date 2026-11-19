@@ -1,6 +1,7 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import SessionScreen from '../components/MarkBank/SessionScreen';
+import { audioPlaybackUrl } from '../components/MarkBank/audioStorage';
 import type { CardAudioMaterial, SecCard, SecQuestionCard } from '../types/markBank';
 import { REVIEWED_CARDS as JAPANESE } from '../components/MarkBank/cards/japanese/reviewed';
 
@@ -46,7 +47,8 @@ describe('independently scored language listening sessions', () => {
     expect(screen.queryByText(card.questionText)).not.toBeInTheDocument();
     expect(baseElement.querySelectorAll('audio')).toHaveLength(1);
     expect(baseElement.querySelector('audio')).toHaveAttribute('controls');
-    expect(baseElement.querySelector('audio')).toHaveAttribute('src', card.audioMaterial!.playbackUrl);
+    // The hosted copy once its upload is verified (audioStorage.ts), the SEC address until then.
+    expect(baseElement.querySelector('audio')).toHaveAttribute('src', audioPlaybackUrl(card.audioMaterial!));
     fireEvent.click(screen.getByRole('button', { name: 'Reveal the marking scheme' }));
     expect(baseElement.querySelectorAll('audio')).toHaveLength(1);
   });
