@@ -128,5 +128,12 @@ describe('Spanish listening is scored one task at a time, as French is', () => {
   test('the marking grid is named by the card\'s own language', () => {
     expect(rubricLanguage('spanish')).toBe('Spanish');
     expect(rubricLanguage('french')).toBe('French');
+    expect(rubricLanguage('polish')).toBe('Polish');
+  });
+
+  test('a Polish listening card is its own exercise, as German\'s is', () => {
+    const polish = [listening('polish', 'pl-2026-hl-la-1'), listening('polish', 'pl-2026-hl-la-2')];
+    expect(polish.map(listeningExerciseKey)).toEqual([null, null]);
+    expect(visibleSessionExercises(polish).map(card => card.id)).toEqual(['pl-2026-hl-la-1', 'pl-2026-hl-la-2']);
   });
 });

@@ -1,0 +1,117 @@
+[
+ {
+  "year": 2026,
+  "paperFileids": [
+   "LC548ALPA00EV.pdf",
+   "LC548GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Polish listening",
+   "title": "2026 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "checkedAt": "2026-11-18",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2026/",
+   "liveStatus": 200,
+   "method": "HEAD request from a browser session; recorded in the lanes folder SOURCES.md and sources.json meta.liveResults[\"e26548ZLP017BV.mp3\"]. Not downloaded: the archive answers scripts with a Cloudflare 403, so size, duration and hash are not pinned (German pins them)."
+  }
+ },
+ {
+  "year": 2025,
+  "paperFileids": [
+   "LC548ALPA00EV.pdf",
+   "LC548GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Polish listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "checkedAt": "2026-11-18",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2025/",
+   "liveStatus": 200,
+   "method": "HEAD request from a browser session; recorded in the lanes folder SOURCES.md and sources.json meta.liveResults[\"e25548ZLP017BV.mp3\"]. Not downloaded: the archive answers scripts with a Cloudflare 403, so size, duration and hash are not pinned (German pins them)."
+  }
+ },
+ {
+  "year": 2024,
+  "paperFileids": [
+   "LC548ALPA00EV.pdf",
+   "LC548GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Polish listening",
+   "title": "2024 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "checkedAt": "2026-11-18",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2024/",
+   "liveStatus": 200,
+   "method": "HEAD request from a browser session; recorded in the lanes folder SOURCES.md and sources.json meta.liveResults[\"e24548ZLP017BV.mp3\"]. Not downloaded: the archive answers scripts with a Cloudflare 403, so size, duration and hash are not pinned (German pins them)."
+  }
+ },
+ {
+  "year": 2023,
+  "paperFileids": [
+   "LC548ALPA00EV.pdf",
+   "LC548GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Polish listening",
+   "title": "2023 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "checkedAt": "2026-11-18",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2023/",
+   "liveStatus": 200,
+   "method": "HEAD request from a browser session; recorded in the lanes folder SOURCES.md and sources.json meta.liveResults[\"e23548ZLP017BV.mp3\"]. Not downloaded: the archive answers scripts with a Cloudflare 403, so size, duration and hash are not pinned (German pins them)."
+  }
+ },
+ {
+  "year": 2022,
+  "paperFileids": [
+   "LC548ALPA00EV.pdf",
+   "LC548GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Polish listening",
+   "title": "2022 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "checkedAt": "2026-11-18",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2022/",
+   "liveStatus": 200,
+   "method": "HEAD request from a browser session; recorded in the lanes folder SOURCES.md and sources.json meta.liveResults[\"e22548ZLP017BV.mp3\"]. Not downloaded: the archive answers scripts with a Cloudflare 403, so size, duration and hash are not pinned (German pins them)."
+  }
+ }
+]

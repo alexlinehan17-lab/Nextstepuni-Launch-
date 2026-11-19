@@ -71,17 +71,25 @@ describe('Japanese 2010 Higher original-source review', () => {
     expect(JSON.stringify([cards, review.selectors])).not.toContain('�');
   });
 
-  it('keeps the complete listening table in confidence review with all fifteen missing-cell identities', () => {
+  it('prices the listening table by its printed allocations, all fifteen missing-cell identities kept', () => {
+    // Converted from a confidence hold on 19 Nov 2026 (CARD-STANDARD section 5):
+    // the scheme prints each cell's allocation, so the rows carry it, grouped by
+    // person, with the scheme's half marks as a manual half step (as Q3).
     const table = point('la');
     expect(table.totalMarks).toBe(18);
-    expect(table.tariffModel).toEqual({ kind: 'questionTotal' });
+    expect(table.tariffModel).toEqual({ kind: 'fixed' });
+    expect(table.taskGroups?.map(group => [group.label, group.marks, group.rowIds.length]))
+      .toEqual([['1. TOM', 3, 3], ['2. TARA', 4, 3], ['3. MIKE', 6, 5], ['4. SOPHIE', 5, 4]]);
     expect(table.rows.map(row => row.id)).toEqual(['tom-age', 'tom-hobby', 'tom-reason', 'tara-birthday', 'tara-current', 'tara-reason', 'mike-age', 'mike-birthday', 'mike-current', 'mike-hobby', 'mike-reason', 'sophie-birthday', 'sophie-current', 'sophie-hobby', 'sophie-reason']);
     for (const row of table.rows) {
-      expect(row.marks).toBeNull();
       expect(row.contextNote).toContain('Printed allocation:');
+      expect(row.contextNote).toContain('1/2 marks if answered in Japanese');
+      expect(row.kind).toBe('criterion');
+      // "Month1 + day1" birthdays are two marks, every other cell one; each mark halves.
+      expect(row.permittedMarks).toEqual(row.marks === 2 ? [0, 0.5, 1, 1.5, 2] : [0, 0.5, 1]);
     }
+    expect(table.rows.map(row => row.marks)).toEqual([1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1]);
     expect(table.rows[0].contextNote).toContain('gives no rule for combining');
-    expect(table.rows[0].contextNote).toContain('no quarter mark');
     expect(table.rows[0].contextNote).toContain('1/2 marks if answered in Japanese');
     expect(table.rows.find(row => row.id === 'sophie-current')?.verbatim).toContain('Studying fashion design in university');
     expect(table.rows.find(row => row.id === 'sophie-hobby')?.verbatim).toContain('Designing clothes');
@@ -90,7 +98,7 @@ describe('Japanese 2010 Higher original-source review', () => {
     expect(table.questionFigure?.includesPrompt).toBe(true);
     expect(table.audioMaterial).toBeDefined();
     expect(table.topicId).toBe('japanese-6-1');
-    expect(marksClaimed(table, Object.fromEntries(table.rows.map(row => [row.id, 'yes'])))).toBe(0);
+    expect(marksClaimed(table, Object.fromEntries(table.rows.map(row => [row.id, 'yes'])))).toBe(18);
   });
 
   it('retains the seven webpage prompts beside their source-only figure and all required answer pools', () => {
