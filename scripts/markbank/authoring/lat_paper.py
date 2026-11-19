@@ -419,6 +419,17 @@ class LatPaper:
             nxt = joined.find(ROW, off)
             row = joined[off:nxt if nxt != -1 else len(joined)]
             if BACK_MATTER.match(row):
+                # A bare "A." whose next printed row opens "(i)" is a ROUTE
+                # head, not a plate heading. 2010-2020 set Question 5 as two
+                # routes — "A." (Roman history) and "B." (Roman life and
+                # literature), each "(i)" to "(iii)" — and cutting at that
+                # "A." as back matter lost all of Question 5 in eleven
+                # Higher and ten Ordinary sittings. A plate heading is
+                # followed by its picture, never by a printed part.
+                after = joined[nxt + 1:nxt + 12] if nxt != -1 else ''
+                if re.match(r'^[A-E]\.$', row.strip()) \
+                        and re.match(r'\s*\((?:i|ii|iii)\)', after):
+                    continue
                 end = off
                 break
         out = []
@@ -434,23 +445,49 @@ class LatPaper:
             total = TOTAL.search(text)
             if total:
                 self.question_marks[q] = int(total.group(1))
-            if q in (1, 2, 3):
+            if q in (1, 2, 3) or (q == 5 and self._q5_routed(text)):
                 asks += self._routed(q, text, base)
             else:
                 asks += self._plain(q, text, base)
         return asks
 
+    @staticmethod
+    def _q5_routed(text):
+        """Whether Question 5 prints Section A and Section B routes.
+
+        2010-2020 do — "At least one question must be chosen from Section A
+        and one question from Section B", then "A." and "B." heading three
+        romans each — and from 2021 Question 5 is one run of romans. Read off
+        the paper's own rubric AND its route heads, both, never the year.
+        """
+        # The rubric wraps anywhere, "chosen from" / "Section A" included, so
+        # a row break counts as the space it stands for.
+        if not re.search(r'\bfrom[\s\x00]+Section[\s\x00]+A\b', text, re.I):
+            return False
+        heads = [m.group(1) for m in ROUTE.finditer(text)]
+        # The rubric itself can wrap so that "B." opens a printed line —
+        # 2010 Higher ends it "...either Section A or Section / B. (Each
+        # question carries twenty-five marks)" — so the run is read from the
+        # first "A.", as _routed reads it.
+        if 'A' in heads:
+            heads = heads[heads.index('A'):]
+        return heads[:2] == ['A', 'B']
+
     # ---- Questions 1, 2 and 3: the paper prints a choice of routes ---------
     def _routed(self, q, text, base):
-        _head, routes = _split_forward(text, ROUTE, ROUTES, from_start=True)
+        head, routes = _split_forward(text, ROUTE, ROUTES, from_start=True)
+        # A routed Question 5 (2010-2020) prices its parts once, in words, on
+        # the question's own rubric: "(Each question carries twenty-five
+        # marks)". Questions 1-3 print their tariffs on the parts themselves.
+        per = _word_tariff(head) if q == 5 else None
         out = []
         for i, (route, body, off) in enumerate(routes):
             stop = (base + routes[i + 1][2] if i + 1 < len(routes)
                     else base + len(text))
-            out += self._route_asks(q, route, body, base + off, stop)
+            out += self._route_asks(q, route, body, base + off, stop, per)
         return out
 
-    def _route_asks(self, q, route, body, base, stop):
+    def _route_asks(self, q, route, body, base, stop, per_part=None):
         pages = self._pages_between(base, stop)
         page = pages[0]
         head_marks = self.question_marks.get(q)
@@ -481,6 +518,8 @@ class LatPaper:
             rpage = self._page_at(base + roff)
             if not letters:
                 marks, ask = self._split_marks(rbody)
+                if marks is None and per_part is not None:
+                    marks = per_part
                 if kind == 'translate-into-english':
                     # A translation ask IS its passage: the Latin the card has
                     # to show is the ask's own printed text.
@@ -492,7 +531,7 @@ class LatPaper:
                 continue
             stem_text, _ = _split_forward(rbody, LETTER, LETTERS)
             stem_marks, stem_text = self._split_marks(stem_text)
-            per = _word_tariff(rbody) or stem_marks
+            per = _word_tariff(rbody) or stem_marks or per_part
             for letter, lbody, loff in letters:
                 marks, ask = self._split_marks(lbody)
                 out.append(Ask(route, q, letter, roman, ask, _clean(stem_text),
