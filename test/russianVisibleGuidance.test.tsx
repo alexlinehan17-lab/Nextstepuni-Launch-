@@ -23,7 +23,7 @@ describe('Russian source directions visible in the practice session',()=>{
     expect(screen.getByText(/no numerical or wholly\/mixed-language threshold/)).toBeVisible();
     expect(screen.getByText(/maxima add to 48/)).toBeVisible();
     expect(screen.queryByRole('checkbox',{name:'All answers answered in another language'})).not.toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button',{name:'Section 1',exact:true}));
+    fireEvent.click(screen.getByRole('button',{name:'Section 1'}));
     fireEvent.click(screen.getByRole('button',{name:'Set Section 1 discretionary marks to 2 marks'}));
     await waitFor(()=>expect(screen.getByText(/placement is 2 of 12 marks/)).toBeVisible());
     fireEvent.click(screen.getByRole('button',{name:'Set Section 1 content (manual assessment) to 10 marks'}));
