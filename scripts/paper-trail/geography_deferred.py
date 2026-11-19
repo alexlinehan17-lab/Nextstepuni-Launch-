@@ -105,7 +105,8 @@ def maps():
         letter = 'A' if level == 'higher' else 'G'
         part_one = fitz.open(CORPUS / str(year) / f'LC005{letter}LP042EV.pdf')
         part_two = fitz.open(CORPUS / str(year) / f'LC005{letter}LP043EV.pdf')
-        one = anchors(part_one, heading_lines(part_one, r'^(1[0-2]|[1-9])\.(?:\s|$)', 3, 12),
+        # Part One's questions run from page 3 to page 12 or 13 (2023 prints Q12 on p13); the answerbook follows.
+        one = anchors(part_one, heading_lines(part_one, r'^(1[0-2]|[1-9])\.(?:\s|$)', 3, 14),
                       {n: f'Part One · Question {n}' for n in range(1, 13)})
         two_numbers = heading_lines(part_two, r'^Question\s+(1[0-2]|[1-9])$', 3, len(part_two))
         two_numbers += [hit for hit in heading_lines(part_two, r'^(1[3-9]|2[0-4])\.(?:\s|$)', 3, len(part_two))]

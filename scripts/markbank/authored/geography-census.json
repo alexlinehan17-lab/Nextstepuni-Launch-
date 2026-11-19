@@ -23,10 +23,10 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 3981,
-  "includedBaseTasks": 3981,
+  "paperBaseTasks": 4095,
+  "includedBaseTasks": 4095,
   "excludedBaseTasks": 0,
-  "authoredCards": 4273,
+  "authoredCards": 4397,
   "baseTasks": [
     {
       "id": "geography-2010-hl-p1-q1",
@@ -35968,6 +35968,1146 @@
       "title": "The Atmosphere – Ocean Environment",
       "status": "authored",
       "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q1",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q1(i) — Deferred sitting",
+      "title": "Physical Processes",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q1-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q1(ii) — Deferred sitting",
+      "title": "Physical Processes",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q2",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q2(i) — Deferred sitting",
+      "title": "Rocks and Deformation",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q2-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q2(ii) — Deferred sitting",
+      "title": "Rocks and Deformation",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q3",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q3(i) — Deferred sitting",
+      "title": "The Physical Environment",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q3-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q3(ii) — Deferred sitting",
+      "title": "The Physical Environment",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q4",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q4(i) — Deferred sitting",
+      "title": "Volcanic Activity",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q4-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q4(ii) — Deferred sitting",
+      "title": "Volcanic Activity",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q4-iii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q4(iii) — Deferred sitting",
+      "title": "Volcanic Activity",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q5",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q5(i) — Deferred sitting",
+      "title": "Weather",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q5-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q5(ii) — Deferred sitting",
+      "title": "Weather",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q5-iii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q5(iii) — Deferred sitting",
+      "title": "Weather",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q5-iv",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q5(iv) — Deferred sitting",
+      "title": "Weather",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q6",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q6(i) — Deferred sitting",
+      "title": "Ordnance Survey Map",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q6-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q6(ii) — Deferred sitting",
+      "title": "Ordnance Survey Map",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q6-iii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q6(iii) — Deferred sitting",
+      "title": "Ordnance Survey Map",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q6-iv",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q6(iv) — Deferred sitting",
+      "title": "Ordnance Survey Map",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q7",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q7(i) — Deferred sitting",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q7-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q7(ii) — Deferred sitting",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q7-iii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q7(iii) — Deferred sitting",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q7-iv",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q7(iv) — Deferred sitting",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q8",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q8 — Deferred sitting",
+      "title": "Aerial Photograph",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q9",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q9(i) — Deferred sitting",
+      "title": "Regions",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q9-ii-a",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q9(ii)(a) — Deferred sitting",
+      "title": "Regions",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q9-ii-b",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q9(ii)(b) — Deferred sitting",
+      "title": "Regions",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q10",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q10(i) — Deferred sitting",
+      "title": "Fluvial Adjustment",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q10-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q10(ii) — Deferred sitting",
+      "title": "Fluvial Adjustment",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q10-iii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q10(iii) — Deferred sitting",
+      "title": "Fluvial Adjustment",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q10-iv",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q10(iv) — Deferred sitting",
+      "title": "Fluvial Adjustment",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q11",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q11(i) — Deferred sitting",
+      "title": "Statistical Interpretation",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q11-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q11(ii) — Deferred sitting",
+      "title": "Statistical Interpretation",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q11-iii",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q11(iii) — Deferred sitting",
+      "title": "Statistical Interpretation",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q11-iv",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q11(iv) — Deferred sitting",
+      "title": "Statistical Interpretation",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p1-q12",
+      "year": 2023,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2023 HL Part 1 Q12 — Deferred sitting",
+      "title": "Satellite Image Interpretation",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q1a",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q1A — Deferred sitting",
+      "title": "Ordnance Survey Map",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q1b",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q1B — Deferred sitting",
+      "title": "Rocks",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q1c-the-impact-of-flood-control-measur",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q1C — Deferred sitting",
+      "title": "Human Interaction with Surface Processes",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q2a",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q2A(i) — Deferred sitting",
+      "title": "Coastal Landforms",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q2a-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q2A(ii) — Deferred sitting",
+      "title": "Coastal Landforms",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q2a-iii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q2A(iii) — Deferred sitting",
+      "title": "Coastal Landforms",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q2a-iv",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q2A(iv) — Deferred sitting",
+      "title": "Coastal Landforms",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q2b",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q2B — Deferred sitting",
+      "title": "Earthquakes",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q2c-mining",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q2C — Deferred sitting",
+      "title": "Human Interaction with the Rock Cycle",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q3a",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q3A(i) — Deferred sitting",
+      "title": "Hot Spots",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q3a-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q3A(ii) — Deferred sitting",
+      "title": "Hot Spots",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q3a-iii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q3A(iii) — Deferred sitting",
+      "title": "Hot Spots",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q3a-iv",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q3A(iv) — Deferred sitting",
+      "title": "Hot Spots",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q3a-v",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q3A(v) — Deferred sitting",
+      "title": "Hot Spots",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q3a-vi",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q3A(vi) — Deferred sitting",
+      "title": "Hot Spots",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q3b-route-i-fluvial-landform",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q3B — Deferred sitting",
+      "title": "Surface Processes",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q3c",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q3C — Deferred sitting",
+      "title": "Plate Boundaries",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q4a",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q4A — Deferred sitting",
+      "title": "Map Skills",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q4b",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q4B — Deferred sitting",
+      "title": "Secondary Economic Activity",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q4c",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q4C — Deferred sitting",
+      "title": "Population Dynamics",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q5a",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q5A(i) — Deferred sitting",
+      "title": "Irish Transport",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q5a-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q5A(ii) — Deferred sitting",
+      "title": "Irish Transport",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q5a-iii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q5A(iii) — Deferred sitting",
+      "title": "Irish Transport",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q5a-iv",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q5A(iv) — Deferred sitting",
+      "title": "Irish Transport",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q5a-v",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q5A(v) — Deferred sitting",
+      "title": "Irish Transport",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q5a-vi",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q5A(vi) — Deferred sitting",
+      "title": "Irish Transport",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q5b",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q5B — Deferred sitting",
+      "title": "Primary Economic Activity",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q5c",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q5C — Deferred sitting",
+      "title": "Industrial Decline",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q6a",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q6A(i) — Deferred sitting",
+      "title": "Irish Agriculture",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q6a-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q6A(ii) — Deferred sitting",
+      "title": "Irish Agriculture",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q6a-iii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q6A(iii) — Deferred sitting",
+      "title": "Irish Agriculture",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q6a-iv",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q6A(iv) — Deferred sitting",
+      "title": "Irish Agriculture",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q6a-v",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q6A(v) — Deferred sitting",
+      "title": "Irish Agriculture",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q6a-vi",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q6A(vi) — Deferred sitting",
+      "title": "Irish Agriculture",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q6b",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q6B — Deferred sitting",
+      "title": "Socio-Economic Regions",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q6c",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q6C — Deferred sitting",
+      "title": "Cultural Regions",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q7a",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q7A — Deferred sitting",
+      "title": "Aerial Photograph",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q7b",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q7B — Deferred sitting",
+      "title": "Developing Economy",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q7c",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q7C — Deferred sitting",
+      "title": "European Union Policy",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q8a",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q8A(i) — Deferred sitting",
+      "title": "Gross Domestic Product",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q8a-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q8A(ii) — Deferred sitting",
+      "title": "Gross Domestic Product",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q8b-footloose-industries",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q8B — Deferred sitting",
+      "title": "Economic Development – Developed Economy",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q8c",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q8C — Deferred sitting",
+      "title": "Location of Economic Activity",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q9a",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q9A(i) — Deferred sitting",
+      "title": "Irish Trade",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q9a-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q9A(ii) — Deferred sitting",
+      "title": "Irish Trade",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q9a-iii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q9A(iii) — Deferred sitting",
+      "title": "Irish Trade",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q9a-iv",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q9A(iv) — Deferred sitting",
+      "title": "Irish Trade",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q9a-v",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q9A(v) — Deferred sitting",
+      "title": "Irish Trade",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q9a-vi",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q9A(vi) — Deferred sitting",
+      "title": "Irish Trade",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q9a-vii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q9A(vii) — Deferred sitting",
+      "title": "Irish Trade",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q9b",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q9B — Deferred sitting",
+      "title": "Multinational Company",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q9c",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q9C — Deferred sitting",
+      "title": "Conflict of Interest",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q10a",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q10A — Deferred sitting",
+      "title": "Aerial Photograph",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q10b",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q10B — Deferred sitting",
+      "title": "Migration",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q10c",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q10C — Deferred sitting",
+      "title": "Central Place Theory",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q11a",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q11A(i) — Deferred sitting",
+      "title": "Displaced Populations",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q11a-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q11A(ii) — Deferred sitting",
+      "title": "Displaced Populations",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q11b",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q11B(i) — Deferred sitting",
+      "title": "Historical Settlement",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q11b-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q11B(ii) — Deferred sitting",
+      "title": "Historical Settlement",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q11c",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q11C — Deferred sitting",
+      "title": "Urban Land-use",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q12a",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q12A(i) — Deferred sitting",
+      "title": "Population Change in Ireland",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q12a-ii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q12A(ii) — Deferred sitting",
+      "title": "Population Change in Ireland",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q12a-iii",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q12A(iii) — Deferred sitting",
+      "title": "Population Change in Ireland",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q12a-iv",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q12A(iv) — Deferred sitting",
+      "title": "Population Change in Ireland",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q12a-v",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q12A(v) — Deferred sitting",
+      "title": "Population Change in Ireland",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q12a-vi",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q12A(vi) — Deferred sitting",
+      "title": "Population Change in Ireland",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q12b",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q12B — Deferred sitting",
+      "title": "Urban Growth – Developing World City",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q12c",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q12C — Deferred sitting",
+      "title": "Overpopulation",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q13",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q13 — Deferred sitting",
+      "title": "Global Interdependence",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q14",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q14 — Deferred sitting",
+      "title": "Global Interdependence",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q15",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q15 — Deferred sitting",
+      "title": "Global Interdependence",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q16",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q16 — Deferred sitting",
+      "title": "Geoecology",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q17",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q17 — Deferred sitting",
+      "title": "Geoecology",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q18",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q18 — Deferred sitting",
+      "title": "Geoecology",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q19",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q19 — Deferred sitting",
+      "title": "Culture and Identity",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q20",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q20 — Deferred sitting",
+      "title": "Culture and Identity",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q21",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q21 — Deferred sitting",
+      "title": "Culture and Identity",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q22",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q22 — Deferred sitting",
+      "title": "The Atmosphere – Ocean Environment",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q23",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q23 — Deferred sitting",
+      "title": "The Atmosphere – Ocean Environment",
+      "status": "authored",
+      "sitting": "deferred"
+    },
+    {
+      "id": "geography-2023-hl-deferred-p2-q24",
+      "year": 2023,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2023 HL Part 2 Q24 — Deferred sitting",
+      "title": "The Atmosphere – Ocean Environment",
+      "status": "authored",
+      "sitting": "deferred"
     }
   ],
   "sittings": [
@@ -36285,6 +37425,16 @@
       "includedBaseTasks": 112,
       "excludedBaseTasks": 0,
       "authoredCardsAfterFiniteExpansion": 120,
+      "reviewed": true
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "sitting": "deferred",
+      "paperBaseTasks": 114,
+      "includedBaseTasks": 114,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 124,
       "reviewed": true
     }
   ],
@@ -38306,6 +39456,38 @@
       "questionRef": "2022 HL Part 2 Q9B — Deferred sitting",
       "classification": "finite-expanded",
       "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2023 HL Part 2 Q1C — Deferred sitting",
+      "classification": "finite-expanded",
+      "variants": 3,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2023 HL Part 2 Q2C — Deferred sitting",
+      "classification": "finite-expanded",
+      "variants": 4,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2023 HL Part 2 Q3B — Deferred sitting",
+      "classification": "finite-expanded",
+      "variants": 4,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2023 HL Part 2 Q8B — Deferred sitting",
+      "classification": "finite-expanded",
+      "variants": 3,
       "kinds": [
         "reviewed-printed-route"
       ]
