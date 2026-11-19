@@ -418,7 +418,16 @@
       13,
       14
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        13,
+        14
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2026-hl.json"
+    }
   },
   {
     "id": "ru-2026-hl-gw",
@@ -437,7 +446,17 @@
       16,
       17
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        15,
+        16,
+        17
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2026-hl.json"
+    }
   },
   {
     "id": "ru-2026-hl-l1-1-i",

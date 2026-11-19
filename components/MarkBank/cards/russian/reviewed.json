@@ -2716,7 +2716,7 @@
     "rubric": {
       "system": "language-writing",
       "taskRequirements": [],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
@@ -3063,7 +3063,7 @@
       "taskRequirements": [
         "Question 3. Guided writing (40 marks) Write a piece of continuous prose in Russian (140 words) in answer to ONE of the following. In your answer, make sure to include ALL the points listed. 1. LETTER a) Write a letter that Seryozhka wrote to his grandmother about adopting a pet from a local animal shelter. In your letter, you should refer to the following: • Opening (A) • description of the pet (B) • its personality or habits (C); • Seryozhka’s responsibilities (D); • an amusing episode involving the new pet (E); • Sign off (F) OR b) Write a letter of enquiry about voluntary opportunities at the zoo. In your letter, you should refer to the following: • Opening (A) • your personal details (B) • your interests (C) and motivation (D); • relevant skills or experience (E); • Sign off (F) 2. NARRATIVE a) Write an account of a time someone unexpectedly helped you. OR b) Maria and her friends (Comprehension Text, Section II) went on a trip to Europe after their graduation from school. Write Maria’s blog entry about their experience. You should address the following: • overall impression from the trip (A); • challenges faced and how they were overcome (B); • Maria’s advice to her followers about travelling (C). 3. DISCUSSION a) Discuss the importance of balancing studies and leisure. OR b) Discuss the advantages (A, B) and disadvantages (C, D) of studying at your home town vs. moving away to go to college."
       ],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
