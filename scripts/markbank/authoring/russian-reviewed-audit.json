@@ -2122,7 +2122,27 @@
         "sittingOpenTasks": 0,
         "sittingExclusions": 0
       },
-      "sourceReview": "complete"
+      "sourceReview": "complete",
+      "planRecheck20261119": {
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2022-hl.json",
+        "retiredExclusions": 32,
+        "fixedNoAnswerCards": [
+          "ru-2022-hl-se",
+          "ru-2022-hl-gw"
+        ],
+        "allPrintedMarksAndGridsUnchanged": true,
+        "currentRussianLedger": {
+          "asksCounted": 1489,
+          "asksCarded": 1489,
+          "open": 0,
+          "excluded": 0,
+          "staleExclusions": 0,
+          "orphans": 0,
+          "unreadPapers": 0
+        },
+        "releaseComplete": false,
+        "remaining": "Hosted audio and full R1–R12 sweep, then coordinator release."
+      }
     },
     {
       "year": 2022,
