@@ -805,6 +805,1901 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-a-1-f", topicId: "polish-3-1", conceptId: "kolei-robil-bartek-ponumeruj-wydarzenia-tabeli",
+    section: "A", questionRef: "2022 OL Section A Q1(f)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "Co po kolei robił Bartek? Ponumeruj wydarzenia w tabeli obok, zgodnie z przykładem. (akapity: 3, 4)\n(i) Zmienił buty.\n(ii) Myślał o tym, co zobaczy w domu Adama.\n(iii) Bartek odpowiedział Patrycji na jej wiadomość. 1\n(iv) Wyszedł ze szkoły.\n(v) Zabrał swoje ubrania z szatni.\n(vi) Szedł na przystanek.\n(vii) Cieszył się na przygodę.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "3", marks: 1, contextNote: "For “(i) Zmienił buty.”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "7", marks: 1, contextNote: "For “(ii) Myślał o tym, co zobaczy w domu Adama.”" },
+    { id: "r-3", kind: "point", verbatim: "4", marks: 1, contextNote: "For “(iv) Wyszedł ze szkoły.”" },
+    { id: "r-4", kind: "point", verbatim: "2", marks: 1, contextNote: "For “(v) Zabrał swoje ubrania z szatni.”" },
+    { id: "r-5", kind: "point", verbatim: "5", marks: 1, contextNote: "For “(vi) Szedł na przystanek.”" },
+    { id: "r-6", kind: "point", verbatim: "6", marks: 1, contextNote: "For “(vii) Cieszył się na przygodę.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                4,
+                5,
+                6
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-a-2-b", topicId: "polish-3-1", conceptId: "polacz-okreslenia-nazwa-uczelni-ktorej-okreslenie",
+    section: "A", questionRef: "2022 OL Section A Q2(b)",
+    stem: "Zadanie 2: Tekst 2",
+    questionText: "Połącz określenia 2 – 4 z nazwą uczelni A – D, do której to określenie pasuje najlepiej. Swoje odpowiedzi wpisz do tabeli poniżej, zgodnie z przykładem. (część 2)\n1. Nowoczesna\n2. Najmłodszy w Polsce\n3. Największy w Polsce\n4. Najstarszy w Polsce\nA. Uniwersytet Warszawski\nB. Uniwersytet Jagielloński\nC. Polsko-Japońska Akademia Technik Komputerowych\nD. Uniwersytet im. Adama Mickiewicza",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "D", marks: 2, contextNote: "For “2. Najmłodszy w Polsce”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "A", marks: 2, contextNote: "For “3. Największy w Polsce”" },
+    { id: "r-3", kind: "point", verbatim: "B", marks: 2, contextNote: "For “4. Najstarszy w Polsce”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 2: TEKST 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                8,
+                9,
+                10
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-a-3-a", topicId: "polish-3-1", conceptId: "mateusz-daje-wskazowki-jak-przygotowac-rozmowy",
+    section: "A", questionRef: "2022 OL Section A Q3(a)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Mateusz daje wskazówki, jak przygotować się do rozmowy o pracę. Podaj 3 szczegóły. (akapit 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme heads its list “Any three of:” and prices the question “(2 x 3 marks)”; the printed price is carded, though the paper asks for three details.", group: {"claimMax":2,"perOption":3,"options":["Trzeba się dobrze przygotować.","Warto wiedzieć coś więcej o miejscu, w którym chcemy pracować.","Znać zakres obowiązków na stanowisko, o które się staramy.","Poznać swoje zalety i pokazać je na rozmowie.","Warto pamiętać o skromności."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                12,
+                13
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-a-3-d-i", topicId: "polish-3-1", conceptId: "helped-mateusz-get-job-programme-reasons",
+    section: "A", questionRef: "2022 OL Section A Q3(d)(i)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "What helped Mateusz to get this job in the programme? Give three reasons. (paragraph 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["Mateusz studied at Warszawa University","Experience in working in TV and radio programmes","Mateusz was eloquent / talkative / chatty.","He was feisty / a go‐getter/ go‐ahead / scrappy boy.","He had an interest in pop culture.","He could speak English."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                12,
+                13
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-a-3-d-ii", topicId: "polish-3-1", conceptId: "mateusz-took-part-casting-voice-poland",
+    section: "A", questionRef: "2022 OL Section A Q3(d)(ii)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Mateusz took part in the casting for “The Voice of Poland”. How many people applied for one place? (paragraph 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Almost) 1000 people", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                12,
+                13
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-la-1", topicId: "polish-2-1", conceptId: "uzupelnij-tabele-firmie-wedel-czas-powstania",
+    section: "LA", questionRef: "2022 OL Section LA Q1",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Uzupełnij tabelę o firmie Wedel. Czas powstania: Miejsce powstania:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "170 lat temu / 1852r.", marks: 3, contextNote: "For “Czas powstania:”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Warszawa/ stolica", marks: 3, contextNote: "For “Miejsce powstania:”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-la-2", topicId: "polish-2-1", conceptId: "kto-pracowal-razem-wlascicielem-pierwszej-cukierni",
+    section: "LA", questionRef: "2022 OL Section LA Q2",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Kto pracował razem z właścicielem w pierwszej cukierni?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "żona właściciela/ żona Karola Wedla/ żona Karolina/ Karolina", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-la-3-i", topicId: "polish-2-1", conceptId: "gdzie-szkolil-emil-wedel",
+    section: "LA", questionRef: "2022 OL Section LA Q3(i)",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Gdzie szkolił się Emil Wedel?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "w Paryżu", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 3(i)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-la-3-ii", topicId: "polish-2-1", conceptId: "zaznacz-prawda-czy-falsz-wedel-wprowadzil",
+    section: "LA", questionRef: "2022 OL Section LA Q3(ii)",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Zaznacz (✓) prawda czy fałsz. Wedel wprowadził pierwszy w Polsce automat z gorącą czekoladą.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fałsz", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 3(ii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-la-3-iii", topicId: "polish-2-1", conceptId: "kto-zaprojektowal-symbol-wedla",
+    section: "LA", questionRef: "2022 OL Section LA Q3(iii)",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Kto zaprojektował symbol Wedla?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Włoch/ włoski malarz", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 3(iii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-la-4", topicId: "polish-2-1", conceptId: "zaznacz-poprawna-odpowiedz-firma-wedel-znana",
+    section: "LA", questionRef: "2022 OL Section LA Q4",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Zaznacz (✓) poprawną odpowiedź. Firma Wedel znana jest: tylko w Polsce w 60 polskich miastach w ponad 60 państwach w ponad 160 krajach",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "w ponad 60 państwach", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-la-5", topicId: "polish-2-1", conceptId: "wartosci-wazne-dla-firmy-wedel",
+    section: "LA", questionRef: "2022 OL Section LA Q5",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jakie wartości są ważne dla firmy Wedel?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "radość", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "przyjemność", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 5",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-lb-1-i", topicId: "polish-2-1", conceptId: "zaznacz-prawda-czy-falsz-muzeum-opolu",
+    section: "LB", questionRef: "2022 OL Section LB Q1(i)",
+    stem: "Muzeum Polskiej Piosenki You will hear about Muzeum Polskiej Piosenki. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Zaznacz (✓) prawda czy fałsz. Muzeum jest w Opolu.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Prawda", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 1(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-lb-1-ii", topicId: "polish-2-1", conceptId: "kiedy-otwarto-muzeum",
+    section: "LB", questionRef: "2022 OL Section LB Q1(ii)",
+    stem: "Muzeum Polskiej Piosenki You will hear about Muzeum Polskiej Piosenki. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Kiedy otwarto muzeum?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2016 r.", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 1(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-lb-1-iii", topicId: "polish-2-1", conceptId: "jak-zwiedza-muzeum",
+    section: "LB", questionRef: "2022 OL Section LB Q1(iii)",
+    stem: "Muzeum Polskiej Piosenki You will hear about Muzeum Polskiej Piosenki. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jak zwiedza się muzeum?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["indywidualnie","z audioprzewodnikiem","ze słuchawkami"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 1(iii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-lb-2", topicId: "polish-2-1", conceptId: "najwieksza-atrakcja-muzeum-polskiej-piosenki-dlaczego",
+    section: "LB", questionRef: "2022 OL Section LB Q2",
+    stem: "Muzeum Polskiej Piosenki You will hear about Muzeum Polskiej Piosenki. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Co jest największą atrakcją Muzeum Polskiej Piosenki? Dlaczego?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "budki (do nagrywania piosenek)", marks: 3, contextNote: "For “Co?”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Można samemu nagrać piosenkę/ Można wysłać nagraną piosenkę na pocztę elektroniczną (e‐mail).", marks: 3, contextNote: "For “Dlaczego?”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-lb-3", topicId: "polish-2-1", conceptId: "dzieje-centrum-kulturalnym-muzeum-przyklady",
+    section: "LB", questionRef: "2022 OL Section LB Q3",
+    stem: "Muzeum Polskiej Piosenki You will hear about Muzeum Polskiej Piosenki. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Co dzieje się w centrum kulturalnym muzeum? Wymień 2 przykłady.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["spotkania z artystami","koncerty","lekcje muzealne","zajęcia edukacyjne (dla najmłodszych)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-lc-1", topicId: "polish-2-1", conceptId: "agnieszka-radwanska-say-athlete-lifestyle",
+    section: "LC", questionRef: "2022 OL Section LC Q1",
+    stem: "You will hear an interview with tennis player, Agnieszka Radwańska. There will be pauses during the second playing. Answer in English.",
+    questionText: "What does Agnieszka Radwańska say about an athlete’s lifestyle? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["they have so little time","hard work","a routine","a monotony","a sacrifice","athletes train a lot","they travel a lot","they take part in sports tournaments"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-lc-2", topicId: "polish-2-1", conceptId: "agnieszka-radwanska-now",
+    section: "LC", questionRef: "2022 OL Section LC Q2",
+    stem: "You will hear an interview with tennis player, Agnieszka Radwańska. There will be pauses during the second playing. Answer in English.",
+    questionText: "What does Agnieszka Radwańska do now?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Wife / mother", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-lc-3", topicId: "polish-2-1", conceptId: "agnieszka-radwanska-not-rebel-child",
+    section: "LC", questionRef: "2022 OL Section LC Q3",
+    stem: "You will hear an interview with tennis player, Agnieszka Radwańska. There will be pauses during the second playing. Answer in English.",
+    questionText: "Why did Agnieszka Radwańska not rebel as a child?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "She enjoyed the successes / She enjoyed the rewards / The prizes compensated for the effort.", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-lc-4", topicId: "polish-2-1", conceptId: "much-money-earn",
+    section: "LC", questionRef: "2022 OL Section LC Q4",
+    stem: "You will hear an interview with tennis player, Agnieszka Radwańska. There will be pauses during the second playing. Answer in English.",
+    questionText: "How much money did she earn?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "30 million dollars", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-lc-5", topicId: "polish-2-1", conceptId: "agnieszka-radwanska-say-raising-son",
+    section: "LC", questionRef: "2022 OL Section LC Q5",
+    stem: "You will hear an interview with tennis player, Agnieszka Radwańska. There will be pauses during the second playing. Answer in English.",
+    questionText: "What does Agnieszka Radwańska say about raising her son?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["He will have a different start to his life.","It is the biggest challenge for her.","She doesn’t want him to think that he has everything.","She wants him to know: money must be earned / Money does not come out of nowhere."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 5",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-ld-1", topicId: "polish-2-1", conceptId: "jola-going-study",
+    section: "LD", questionRef: "2022 OL Section LD Q1",
+    stem: "Rozmowa studentów You will hear the students’ conversation. There will be pauses during the second playing. Answer in English.",
+    questionText: "What is Jola going to study?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Acting", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-ld-2-i", topicId: "polish-2-1", conceptId: "many-people-applied-university-place",
+    section: "LD", questionRef: "2022 OL Section LD Q2(i)",
+    stem: "Rozmowa studentów You will hear the students’ conversation. There will be pauses during the second playing. Answer in English.",
+    questionText: "How many people applied for one university place?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "12", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 2(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-ld-2-ii", topicId: "polish-2-1", conceptId: "jola-concerned-living-dormitory",
+    section: "LD", questionRef: "2022 OL Section LD Q2(ii)",
+    stem: "Rozmowa studentów You will hear the students’ conversation. There will be pauses during the second playing. Answer in English.",
+    questionText: "Why is Jola concerned about living in a dormitory?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "noisy place / parties / difficult to focus on studies / several people in one room", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 2(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-ld-3", topicId: "polish-2-1", conceptId: "marek-say-dormitory-life",
+    section: "LD", questionRef: "2022 OL Section LD Q3",
+    stem: "Rozmowa studentów You will hear the students’ conversation. There will be pauses during the second playing. Answer in English.",
+    questionText: "What does Marek say about dormitory life?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["cheap","no need for furniture","close to the university"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-ld-4", topicId: "polish-2-1", conceptId: "accommodation-jola-prefer-tick-correct-box",
+    section: "LD", questionRef: "2022 OL Section LD Q4",
+    stem: "Rozmowa studentów You will hear the students’ conversation. There will be pauses during the second playing. Answer in English.",
+    questionText: "Which accommodation does Jola prefer? Tick (✓) the correct box. Tick one box only. dormitory rented room hotel studio",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "rented room", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-ld-5", topicId: "polish-2-1", conceptId: "jola-going-pay-accommodation",
+    section: "LD", questionRef: "2022 OL Section LD Q5",
+    stem: "Rozmowa studentów You will hear the students’ conversation. There will be pauses during the second playing. Answer in English.",
+    questionText: "How is Jola going to pay for her accommodation?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "she has savings / she will work (weekends)", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 5",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-le-1", topicId: "polish-2-1", conceptId: "new-mural",
+    section: "LE", questionRef: "2022 OL Section LE Q1",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 1",
+    questionText: "What is the new mural for? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["cleans the air","removes bacteria","removes bad odours","removes air pollution"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 1",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-le-2", topicId: "polish-2-1", conceptId: "effect-paint-compared-tick-correct-box",
+    section: "LE", questionRef: "2022 OL Section LE Q2",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 1",
+    questionText: "What is the effect of this paint compared to? Tick (✓) the correct box. Tick one box only. Planting 100 trees Planting 103 trees Planting 140 trees Planting 143 trees",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "planting 100 trees", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-le-3", topicId: "polish-2-1", conceptId: "customers-enter-shop",
+    section: "LE", questionRef: "2022 OL Section LE Q3",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 2",
+    questionText: "What do customers have to do to enter the shop?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "generate an access code/use an app on the phone", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 3",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-le-4", topicId: "polish-2-1", conceptId: "kind-customers-shop-there",
+    section: "LE", questionRef: "2022 OL Section LE Q4",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 2",
+    questionText: "What kind of customers shop there?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "people who live active, busy lives, are in a hurry", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 4",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-le-5", topicId: "polish-2-1", conceptId: "roza-rutkowska-proved-natural-materials-replace",
+    section: "LE", questionRef: "2022 OL Section LE Q5",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 3",
+    questionText: "Róża Rutkowska proved that natural materials: can replace plastic boxes are not eco‐friendly grow in 20ᵒC reduce the shelf life of food Tick (✓) the correct box. Tick one box only.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "can replace plastic boxes", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 5",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-le-6", topicId: "polish-2-1", conceptId: "done-new-packaging-after-use",
+    section: "LE", questionRef: "2022 OL Section LE Q6",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 3",
+    questionText: "What can be done with new packaging after use?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["can be cooked","can be eaten","can be composted"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 6",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2022-ol-le-7", topicId: "polish-2-1", conceptId: "learn-new-course-poznan-university",
+    section: "LE", questionRef: "2022 OL Section LE Q7",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 4",
+    questionText: "What do we learn about the new course at Poznań University? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["for those interested in computer games","takes three years","Bachelor’s degree","virtual reality fans","experts/teachers are from all over Poland","plenty of opportunities","focusses on the future."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 7",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Ordinary Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-ol-b-4-a", topicId: "polish-3-3", conceptId: "wyobraz-sobie-jestes-adamem-pierwszego-rozmawiasz",
+    section: "B", questionRef: "2022 OL Section B Q4(a)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Wyobraź sobie, że jesteś Adamem z tekstu pierwszego. Rozmawiasz z Bartkiem o tym, dlaczego nie byłeś dziś w szkole. Odpowiedz po polsku na pytania Bartka. Użyj około 100 słów.\nBartek: Adam, dlaczego nie poszedłeś dziś do szkoły?\nAdam:\nBartek: Jak mogę ci pomóc?\nAdam:\nBartek: Czy chcesz, żebym zostawił ci moje zeszyty, abyś mógł uzupełnić zaległości?\nAdam:\nBartek: Jak się czujesz w naszej klasie?\nAdam:\nBartek: Czy będziesz jutro w szkole? Jeśli chcesz, możemy pójść razem.\nAdam:",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt question 4(a) or 4(b), or 4(c) AND question 5(a) or 5(b), or 5(c).",
+                "If more than one part of Question 4 or Question 5 is answered, all answers must be marked and marks awarded only for the highest scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of the written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression.",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content ‐ relevant",
+                                        "Coherence very good",
+                                        "Communicative intention fulfilled"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content – relevant but limited",
+                                        "Coherence good",
+                                        "Communicative intention more or less respected"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content ‐ very limited",
+                                        "Coherence fair",
+                                        "Communicative intention struggling for accuracy"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "A lot of interference from English syntax",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (a) — answer in Polish",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Ordinary Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-ol-b-4-b", topicId: "polish-3-3", conceptId: "planujesz-isc-studia-napisz-list-kolezanki",
+    section: "B", questionRef: "2022 OL Section B Q4(b)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Planujesz iść na studia. Napisz list do koleżanki. Użyj około 100 słów.\nNapisz:\n• Gdzie i na jakiej uczelni będziesz studiować?\n• Jaki kierunek studiów wybrałaś/wybrałeś?\n• Dlaczego zdecydowałaś/zdecydowałeś się na ten kierunek studiów?\n• Z jakich przedmiotów musisz zdać maturę, by dostać się na wymarzony kierunek?\n• Jaki zawód będziesz wykonywać po ukończeniu wybranych studiów?",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt question 4(a) or 4(b), or 4(c) AND question 5(a) or 5(b), or 5(c).",
+                "If more than one part of Question 4 or Question 5 is answered, all answers must be marked and marks awarded only for the highest scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of the written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression.",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content ‐ relevant",
+                                        "Coherence very good",
+                                        "Communicative intention fulfilled"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content – relevant but limited",
+                                        "Coherence good",
+                                        "Communicative intention more or less respected"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content ‐ very limited",
+                                        "Coherence fair",
+                                        "Communicative intention struggling for accuracy"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "A lot of interference from English syntax",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (b) — answer in Polish",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Ordinary Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-ol-b-4-c", topicId: "polish-3-3", conceptId: "opisz-zdjecie-zamieszczone-obok-uzyj-okolo",
+    section: "B", questionRef: "2022 OL Section B Q4(c)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Opisz zdjęcie zamieszczone obok. Użyj około 100 słów. Napisz:\n• Kto jest przedstawiony na zdjęciu?\n• Jak są ubrane te osoby?\n• Gdzie się znajdują? Opisz to miejsce.\n• Jakie przeżywają emocje?\n• Co, twoim zdaniem, mogło wywołać te emocje?",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt question 4(a) or 4(b), or 4(c) AND question 5(a) or 5(b), or 5(c).",
+                "If more than one part of Question 4 or Question 5 is answered, all answers must be marked and marks awarded only for the highest scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of the written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression.",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content ‐ relevant",
+                                        "Coherence very good",
+                                        "Communicative intention fulfilled"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content – relevant but limited",
+                                        "Coherence good",
+                                        "Communicative intention more or less respected"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content ‐ very limited",
+                                        "Coherence fair",
+                                        "Communicative intention struggling for accuracy"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "A lot of interference from English syntax",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (c) — answer in Polish",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Ordinary Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-ol-b-5-a", topicId: "polish-3-3", conceptId: "wlasnie-obejrzalas-obejrzales-film-chcesz-opowiedziec",
+    section: "B", questionRef: "2022 OL Section B Q5(a)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Właśnie obejrzałaś/obejrzałeś film. Chcesz opowiedzieć o nim swojemu koledze, Filipowi. Napisz do niego e-mail. Użyj około 100 słów. Napisz:\n• tytuł filmu, który obejrzałaś/obejrzałeś;\n• o czym był ten film;\n• co ci się w nim spodobało;\n• gdzie go obejrzałaś/obejrzałeś;\n• jaki był ten film, użyj 2 określeń.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt question 4(a) or 4(b), or 4(c) AND question 5(a) or 5(b), or 5(c).",
+                "If more than one part of Question 4 or Question 5 is answered, all answers must be marked and marks awarded only for the highest scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of the written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression.",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content ‐ relevant",
+                                        "Coherence very good",
+                                        "Communicative intention fulfilled"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content – relevant but limited",
+                                        "Coherence good",
+                                        "Communicative intention more or less respected"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content ‐ very limited",
+                                        "Coherence fair",
+                                        "Communicative intention struggling for accuracy"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "A lot of interference from English syntax",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (a) — answer in Polish",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Ordinary Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-ol-b-5-b", topicId: "polish-3-3", conceptId: "przygotowujesz-notatke-zdrowym-odzywianiu-lekcje-jezyka",
+    section: "B", questionRef: "2022 OL Section B Q5(b)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Przygotowujesz notatkę o zdrowym odżywianiu na lekcję języka polskiego. Użyj około 100 słów. Napisz:\n• dlaczego ważne jest, by zdrowo jeść;\n• które posiłki są szczególnie ważne;\n• jakie zdrowe przekąski polecasz;\n• z jakiego jedzenia warto zrezygnować;\n• co oznacza powiedzenie: W zdrowym ciele zdrowy duch?",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt question 4(a) or 4(b), or 4(c) AND question 5(a) or 5(b), or 5(c).",
+                "If more than one part of Question 4 or Question 5 is answered, all answers must be marked and marks awarded only for the highest scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of the written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression.",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content ‐ relevant",
+                                        "Coherence very good",
+                                        "Communicative intention fulfilled"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content – relevant but limited",
+                                        "Coherence good",
+                                        "Communicative intention more or less respected"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content ‐ very limited",
+                                        "Coherence fair",
+                                        "Communicative intention struggling for accuracy"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "A lot of interference from English syntax",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (b) — answer in Polish",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Ordinary Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-ol-b-5-c", topicId: "polish-3-3", conceptId: "organizujesz-urodziny-opisz-swoje-plany-uzyj",
+    section: "B", questionRef: "2022 OL Section B Q5(c)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Organizujesz urodziny. Opisz swoje plany. Użyj około 100 słów. Napisz:\n• gdzie i kiedy się odbędą;\n• kogo zaprosisz;\n• jakie będą atrakcje;\n• co będzie do jedzenia;\n• co chciałabyś/chciałbyś dostać w prezencie i dlaczego?",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt question 4(a) or 4(b), or 4(c) AND question 5(a) or 5(b), or 5(c).",
+                "If more than one part of Question 4 or Question 5 is answered, all answers must be marked and marks awarded only for the highest scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of the written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression.",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content ‐ relevant",
+                                        "Coherence very good",
+                                        "Communicative intention fulfilled"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content – relevant but limited",
+                                        "Coherence good",
+                                        "Communicative intention more or less respected"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content ‐ very limited",
+                                        "Coherence fair",
+                                        "Communicative intention struggling for accuracy"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "A lot of interference from English syntax",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (c) — answer in Polish",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Polish 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC548GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
@@ -1526,6 +3421,1656 @@ export const CARDS: SecCard[] = [
           ],
           "attribution": "SEC Polish 2023 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-a-1-g", topicId: "polish-3-1", conceptId: "put-sentences-below-order-appear-text",
+    section: "A", questionRef: "2023 OL Section A Q1(g)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "Put the sentences below in the order in which they appear in the text. Number them one to five according to the example. (paragraphs: 5, 6)\n(i) The girl met Krzysiek on the street.\n(ii) The girl was surprised on seeing one of Krzysiek’s pictures.\n(iii) The girl visited the art gallery. 1\n(iv) The girl read the title of the picture.\n(v) The girl left the gallery.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "5", marks: 2, contextNote: "For “(i) The girl met Krzysiek on the street.”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "2", marks: 2, contextNote: "For “(ii) The girl was surprised on seeing one of Krzysiek’s pictures.”" },
+    { id: "r-3", kind: "point", verbatim: "3", marks: 2, contextNote: "For “(iv) The girl read the title of the picture.”" },
+    { id: "r-4", kind: "point", verbatim: "4", marks: 2, contextNote: "For “(v) The girl left the gallery.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-a-2-d", topicId: "polish-3-1", conceptId: "ktore-muzeum-bedzie-odpowiadac-zainteresowaniom-marty",
+    section: "A", questionRef: "2023 OL Section A Q2(d)",
+    stem: "Zadanie 2: Tekst 2",
+    questionText: "Które muzeum będzie odpowiadać zainteresowaniom: Marty, Tomka i Zosi? Wpisz nazwę muzeum pod zdjęciami. (części: 3, 4, 5)\nMarta lubi: • modę oraz • utwory Stanisława Lema\nTomek lubi: • Halloween oraz • przerażające filmy\nZosia lubi: • jeść słodycze oraz • piec i gotować",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Muzeum Guzików w Łowiczu", marks: 2, contextNote: "For “Marta lubi:”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Muzeum Horroru w Wojnowicach", marks: 2, contextNote: "For “Tomek lubi:”" },
+    { id: "r-3", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Zosia lubi:”", group: {"claimMax":1,"perOption":2,"options":["Rogalowe Muzeum Poznania","Żywe Muzeum Piernika w Toruniu"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 2: TEKST 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                8,
+                9,
+                10
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-a-3-a-i", topicId: "polish-3-1", conceptId: "uzupelnij-ponizsza-tabelke-podstawie-adresat-listu",
+    section: "A", questionRef: "2023 OL Section A Q3(a)(i)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Uzupełnij poniższą tabelkę na podstawie tekstu 3. Adresat listu",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Wisława Szymborska/ (Pani) Wisława/ Szymborska", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                12,
+                13
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-a-3-a-ii", topicId: "polish-3-1", conceptId: "uzupelnij-ponizsza-tabelke-podstawie-nadawca-listu",
+    section: "A", questionRef: "2023 OL Section A Q3(a)(ii)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Uzupełnij poniższą tabelkę na podstawie tekstu 3. Nadawca listu",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mikołaj Łoziński", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                12,
+                13
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-a-3-a-iii", topicId: "polish-3-1", conceptId: "uzupelnij-ponizsza-tabelke-podstawie-miejscowosc",
+    section: "A", questionRef: "2023 OL Section A Q3(a)(iii)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Uzupełnij poniższą tabelkę na podstawie tekstu 3. Miejscowość",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kraków", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                12,
+                13
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-a-3-a-iv", topicId: "polish-3-1", conceptId: "uzupelnij-ponizsza-tabelke-podstawie-data",
+    section: "A", questionRef: "2023 OL Section A Q3(a)(iv)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Uzupełnij poniższą tabelkę na podstawie tekstu 3. Data",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "31 maja 2022 (roku)/ 31.05.2022", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                12,
+                13
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-la-1", topicId: "polish-2-1", conceptId: "jaki-zawod-wykonuje-kornelia-neumann",
+    section: "LA", questionRef: "2023 OL Section LA Q1",
+    stem: "You will hear an interview with Kornelia Neumann – a company owner. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jaki zawód wykonuje Kornelia Neumann?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(mało popularny) okleja samochody", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-la-2", topicId: "polish-2-1", conceptId: "kornelia-neumann-lubila-robic-dziecinstwie",
+    section: "LA", questionRef: "2023 OL Section LA Q2",
+    stem: "You will hear an interview with Kornelia Neumann – a company owner. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Co Kornelia Neumann lubiła robić w dzieciństwie? Podaj 2 szczegóły.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["majsterkować przy rowerze","rozkładać rower na części","składać rower"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-la-3-i", topicId: "polish-2-1", conceptId: "kornelia-neumann-mowi-swojej-pracy-anglii",
+    section: "LA", questionRef: "2023 OL Section LA Q3(i)",
+    stem: "You will hear an interview with Kornelia Neumann – a company owner. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Co Kornelia Neumann mówi o swojej pracy w Anglii? Podaj 2 szczegóły.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["pracowała po 16 godzin na dobę","chciała się jak najwięcej nauczyć","chciała się jak najszybciej nauczyć"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 3(i)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-la-3-ii", topicId: "polish-2-1", conceptId: "plany-odnosnie-swojego-zycia-miala-kornelia",
+    section: "LA", questionRef: "2023 OL Section LA Q3(ii)",
+    stem: "You will hear an interview with Kornelia Neumann – a company owner. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jakie plany, odnośnie swojego życia, miała Kornelia Neumann będąc w Anglii? Podaj 2 szczegóły.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "wrócić do Polski /nie chciała zostać w Anglii na stałe", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "otworzyć swój biznes (w Polsce)", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 3(ii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-la-4", topicId: "polish-2-1", conceptId: "zaznacz-poprawna-odpowiedz-kornelia-neumann-marzy",
+    section: "LA", questionRef: "2023 OL Section LA Q4",
+    stem: "You will hear an interview with Kornelia Neumann – a company owner. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Zaznacz (✓) poprawną odpowiedź. Kornelia Neumann marzy: o rozbudowywaniu portfolio o luksusowych samochodach o tym, żeby jej firma była popularna w Polsce o tym, żeby jej firma była znana w Polsce i w Europie",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "o tym, żeby jej firma była znana w Polsce i w Europie", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-lb-1", topicId: "polish-2-1", conceptId: "jak-wyglada-tunel-fruwania",
+    section: "LB", questionRef: "2023 OL Section LB Q1",
+    stem: "Flyspot – tunel do fruwania You will hear about Flyspot. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jak wygląda tunel do fruwania? Podaj 2 szczegóły.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["pionowa tuba","szeroka tuba","szklana tuba"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-lb-2", topicId: "polish-2-1", conceptId: "kiedy-zbudowano-pierwsze-tunele-fruwania",
+    section: "LB", questionRef: "2023 OL Section LB Q2",
+    stem: "Flyspot – tunel do fruwania You will hear about Flyspot. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Kiedy zbudowano pierwsze tunele do fruwania?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "po II wojnie światowej", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-lb-3", topicId: "polish-2-1", conceptId: "czynnosci-ktore-nalezy-wykonac-przed-lotem",
+    section: "LB", questionRef: "2023 OL Section LB Q3",
+    stem: "Flyspot – tunel do fruwania You will hear about Flyspot. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Wymień 3 czynności, które należy wykonać przed lotem.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":3,"options":["umówić się na spotkanie","przyjść (30 minut) wcześniej","wypełnić oświadczenie (o stanie zdrowia)","założyć kombinezon","założyć kask","założyć gogle","odbyć szkolenie"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-lb-4", topicId: "polish-2-1", conceptId: "trzeba-zrobic-aby-otrzymac-filmik-lotu",
+    section: "LB", questionRef: "2023 OL Section LB Q4",
+    stem: "Flyspot – tunel do fruwania You will hear about Flyspot. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Co trzeba zrobić, aby otrzymać filmik z lotu?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["podać adres e-mail","podać numer kasku"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-lc-1", topicId: "polish-2-1", conceptId: "mragowo-located",
+    section: "LC", questionRef: "2023 OL Section LC Q1",
+    stem: "Mrągowo You will hear about Mrągowo. There will be pauses during the second playing. Answer in English.",
+    questionText: "Where is Mrągowo located?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["north of Poland","Masuria/Mazury"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-lc-2", topicId: "polish-2-1", conceptId: "many-people-live-mragowo",
+    section: "LC", questionRef: "2023 OL Section LC Q2",
+    stem: "Mrągowo You will hear about Mrągowo. There will be pauses during the second playing. Answer in English.",
+    questionText: "How many people live in Mrągowo?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(about) 20 000", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-lc-3", topicId: "polish-2-1", conceptId: "town-centre",
+    section: "LC", questionRef: "2023 OL Section LC Q3",
+    stem: "Mrągowo You will hear about Mrągowo. There will be pauses during the second playing. Answer in English.",
+    questionText: "Describe the town centre. Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["it is pretty","(there are) historic (tenement) houses there","(there are) paved/cobbled streets there","(there is) a charming square","(there is) Museum of Warmia and Masuria there"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-lc-4", topicId: "polish-2-1", conceptId: "tick-true-false-bear-paw-symbol",
+    section: "LC", questionRef: "2023 OL Section LC Q4",
+    stem: "Mrągowo You will hear about Mrągowo. There will be pauses during the second playing. Answer in English.",
+    questionText: "Tick (✓) true or false. The bear’s paw is the symbol of Mrągowo.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-lc-5", topicId: "polish-2-1", conceptId: "attracts-tourists-mragowo-summer",
+    section: "LC", questionRef: "2023 OL Section LC Q5",
+    stem: "Mrągowo You will hear about Mrągowo. There will be pauses during the second playing. Answer in English.",
+    questionText: "What attracts tourists to Mrągowo in summer? Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":3,"options":["festivals (Piknik Country/ Mazurska Noc Kabaretowa)","(beautiful) gardens","old churches","a cable/rope park/ zip wire","(a galery of) stone figures / sculptures","sailing","swiming (in the lakes)","sunbathing","marina","ride on a water tram","drinking water from the spring"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 5",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-lc-6", topicId: "polish-2-1", conceptId: "sport-popular-mragowo-winter",
+    section: "LC", questionRef: "2023 OL Section LC Q6",
+    stem: "Mrągowo You will hear about Mrągowo. There will be pauses during the second playing. Answer in English.",
+    questionText: "What sport is popular in Mrągowo in winter?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "skiing", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 6",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-ld-1", topicId: "polish-2-1", conceptId: "fill-table-below-building-built-long",
+    section: "LD", questionRef: "2023 OL Section LD Q1",
+    stem: "Audycja radiowa You will hear a radio broadcast „Nieoczywiste atrakcje turystyczne”. There will be pauses during the second playing. Answer in English.",
+    questionText: "Fill in the table below about the building: When was it built? How long is it? What does its shape remind us of?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "in 1970s", marks: 3, contextNote: "For “When was it built?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "(almost) 1 km", marks: 3, contextNote: "For “How long is it?”" },
+    { id: "r-3", kind: "point", verbatim: "a wave", marks: 3, contextNote: "For “What does its shape remind us of?”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-ld-2", topicId: "polish-2-1", conceptId: "tick-true-false-building-like-small",
+    section: "LD", questionRef: "2023 OL Section LD Q2",
+    stem: "Audycja radiowa You will hear a radio broadcast „Nieoczywiste atrakcje turystyczne”. There will be pauses during the second playing. Answer in English.",
+    questionText: "Tick (✓) true or false. The building is like a small town.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-ld-3", topicId: "polish-2-1", conceptId: "facilities-there-building",
+    section: "LD", questionRef: "2023 OL Section LD Q3",
+    stem: "Audycja radiowa You will hear a radio broadcast „Nieoczywiste atrakcje turystyczne”. There will be pauses during the second playing. Answer in English.",
+    questionText: "What facilities are there in the building? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["shops","bank","hairdressers/barbers"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-le-1", topicId: "polish-2-1", conceptId: "tick-correct-box-tick-box-only",
+    section: "LE", questionRef: "2023 OL Section LE Q1",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 1",
+    questionText: "Tick (✓) the correct box. Tick one box only. The Summer Polish Language School is organized: in September for the thirty-third time for Polish students only online only",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "for the thirty-third time", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 1",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-le-2", topicId: "polish-2-1", conceptId: "students-participate",
+    section: "LE", questionRef: "2023 OL Section LE Q2",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 1",
+    questionText: "What can students participate in? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["Polish langauage classes","lectures","theatre (meetings)","concerts","movie/film shows","workshops","language games","weekend trips"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-le-3", topicId: "polish-2-1", conceptId: "fill-table-below-competition-walbrzych-type",
+    section: "LE", questionRef: "2023 OL Section LE Q3",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 2",
+    questionText: "Fill in the table below about the competition in Wałbrzych: type title main prize",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "photo competition", marks: 3, contextNote: "For “type”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "‘My Town’", marks: 3, contextNote: "For “title”" },
+    { id: "r-3", kind: "point", verbatim: "1200 zł", marks: 3, contextNote: "For “main prize”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 3",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-le-4", topicId: "polish-2-1", conceptId: "warsaw-modlin-airport-capsule-hotel",
+    section: "LE", questionRef: "2023 OL Section LE Q4",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 3",
+    questionText: "Give two details about Warsaw Modlin Airport capsule hotel.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["it is different than traditional hotels","there is no reception","there is no restaurant","there is no swimming pool","there is no SPA","capsules are for rest only","there are 6 capsules","internet access","socket to charge phone","USB slots","touch screen TV","online reservation","around 100 zł per night"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 4",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2023-ol-le-5", topicId: "polish-2-1", conceptId: "happened-playground-poznan",
+    section: "LE", questionRef: "2023 OL Section LE Q5",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 4",
+    questionText: "What happened in the playground in Poznań? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["(people were scared because) there was a snake there (at first near to the sandpit later in the parking)","people informed the guards","the guards found (caught) a snake (under the car hood/bonnet)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 5",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2023-ol-b-4-a", topicId: "polish-3-3", conceptId: "wyobraz-sobie-jestes-dziewczyna-pierwszego-masz",
+    section: "B", questionRef: "2023 OL Section B Q4(a)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Wyobraź sobie, że jesteś dziewczyną z tekstu pierwszego. Masz na imię Zosia. Uzupełnij dialog. Użyj około 100 słów.\nKrzysiek: Cześć Zosiu. Proszę, te konwalie są dla ciebie.\nZosia:\nKrzysiek: Oczywiście, że pamiętałem. 😊︎ Co u ciebie? Tak dawno się nie widzieliśmy...\nZosia:\nKrzysiek: To świetnie! Wiedziałem, że zostaniesz pielęgniarką. Zawsze o tym marzyłaś. Jak się mają twoi rodzice?\nZosia:\nKrzysiek: Moja mama wyjechała razem ze mną do Francji. Masz jeszcze kontakt z kimś z klasy?\nZosia:\nKrzysiek: Może pójdziemy na kawę? 😊︎\nZosia:",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (a) — answer in Polish",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2023-ol-b-4-b", topicId: "polish-3-3", conceptId: "zwiedziles-muzeum-ktorego-oferta-znajduje-ponizej",
+    section: "B", questionRef: "2023 OL Section B Q4(b)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Zwiedziłeś muzeum, którego oferta znajduje się poniżej. Napisz o tej wizycie na swoim blogu. Użyj około 100 słów.\nUwzględnij:\n• Jakie muzeum zwiedziłeś?\n• W którym dniu i miesiącu tam byłeś? Z kim?\n• Gdzie kupiłeś bilet wstępu? Ile kosztował?\n• Co najbardziej ci się podobało? Wyjaśnij.\n• Komu poleciłbyś to muzeum? Dlaczego?",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (b) — answer in Polish",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2023-ol-b-4-c", topicId: "polish-3-3", conceptId: "opisz-zamieszczone-obok-zdjecie-uzyj-okolo",
+    section: "B", questionRef: "2023 OL Section B Q4(c)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Opisz zamieszczone obok zdjęcie. Użyj około 100 słów.\nNapisz:\n• Kogo przedstawia?\n• Jak wyglądają te postacie?\n• Co robią?\n• Gdzie się znajdują?\n• Czy podoba ci się to zdjęcie? Uzasadnij.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (c) — answer in Polish",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2023-ol-b-5-a", topicId: "polish-3-3", conceptId: "zapisales-klubu-fitness-napisz-mail-kolegi",
+    section: "B", questionRef: "2023 OL Section B Q5(a)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Zapisałeś się do klubu fitness. Napisz e‐mail do kolegi. Użyj około 100 słów. Napisz:\n• Dlaczego zapisałeś się do tego klubu?\n• Na jakie zajęcia chodzisz? Uzasadnij swój wybór.\n• Jak często masz treningi? Ile trwają?\n• Jak się czujesz po treningach?\n• Kogo poznałeś w klubie fitness?",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (a) — answer in Polish",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2023-ol-b-5-b", topicId: "polish-3-3", conceptId: "podstawie-ponizszych-zdjec-opowiedz-jak-marek",
+    section: "B", questionRef: "2023 OL Section B Q5(b)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Na podstawie poniższych zdjęć opowiedz, jak Marek spędził dzień. Użyj około 100 słów.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (b) — answer in Polish",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2023-ol-b-5-c", topicId: "polish-3-3", conceptId: "chcesz-zaprosic-irlandii-swoja-kuzynke-kasie",
+    section: "B", questionRef: "2023 OL Section B Q5(c)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Chcesz zaprosić do Irlandii swoją kuzynkę Kasię. Napisz do niej list. Użyj około 100 słów. Uwzględnij następujące kwestie:\n• Zaproponuj Kasi, by spędziła wakacje u ciebie.\n• Napisz, w jakiej części Irlandii mieszkasz i na kiedy ją zapraszasz.\n• Wyjaśnij, jak można do ciebie dojechać (samolotem, autobusem).\n• Napisz, jak planujesz spędzić z nią czas.\n• Poproś o odpowiedź na twój list.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (c) — answer in Polish",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Polish 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
     },
   } as SecCard,
   {
@@ -2355,6 +5900,1490 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-a-2-c-v", topicId: "polish-3-1", conceptId: "ksiega-rekordow-guinnessa-ukazala-polsce-pozniej",
+    section: "A", questionRef: "2024 OL Section A Q2(c)(v)",
+    stem: "Zadanie 2: Tekst 2",
+    questionText: "Określ, czy podane zdania (ii) – (v) to prawda czy fałsz. Odpowiedzi zaznacz (✓) w tabeli, zgodnie z przykładem (i): (część 2) Księga rekordów Guinnessa ukazała się w Polsce później niż w Wielkiej Brytanii.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Prawda", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 2: TEKST 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                8,
+                9
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-la-1", topicId: "polish-2-1", conceptId: "uzupelnij-tabele-spektaklu-nazwa-teatru-ktorym",
+    section: "LA", questionRef: "2024 OL Section LA Q1",
+    stem: "You will hear a review of a play. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Uzupełnij tabelę o spektaklu. Nazwa teatru, w którym jest grany. Jak ma na imię bohaterka?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kwadrat", marks: 3, contextNote: "For “Nazwa teatru, w którym jest grany.”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Maria", marks: 3, contextNote: "For “Jak ma na imię bohaterka?”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-la-2", topicId: "polish-2-1", conceptId: "zaznacz-poprawna-odpowiedz-sztuka-poswiecona-zyciu",
+    section: "LA", questionRef: "2024 OL Section LA Q2",
+    stem: "You will hear a review of a play. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Zaznacz (✓) poprawną odpowiedź. Sztuka poświęcona jest: życiu i pracy noblistki jedynie życiu noblistki jedynie pracy noblistki jedynie pracy naukowej, dlatego jest nudna",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "życiu i pracy noblistki", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-la-3", topicId: "polish-2-1", conceptId: "zalety-spektaklu",
+    section: "LA", questionRef: "2024 OL Section LA Q3",
+    stem: "You will hear a review of a play. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Wymień 3 zalety spektaklu.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":3,"options":["aspekt edukacyjny","duma narodowa","sztuka jest ładna wizualnie","kostiumy","charakteryzacja","scenografia","gra aktorska"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-la-4", topicId: "polish-2-1", conceptId: "uczucie-ktore-aktorka-wyraza-swoja-gra",
+    section: "LA", questionRef: "2024 OL Section LA Q4",
+    stem: "You will hear a review of a play. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Podaj 1 uczucie, które aktorka wyraża swoją grą.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["miłość","tęsknota","pożądanie","oburzenie"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-la-5", topicId: "polish-2-1", conceptId: "dlaczego-warto-obejrzec-ten-spektakl",
+    section: "LA", questionRef: "2024 OL Section LA Q5",
+    stem: "You will hear a review of a play. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Dlaczego warto obejrzeć ten spektakl?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":4,"options":["bo jest dobrze przemyślany","bo porusza najważniejsze tematy życiowe"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 5",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-lb-1", topicId: "polish-2-1", conceptId: "gdzie-lezy-sandomierz",
+    section: "LB", questionRef: "2024 OL Section LB Q1",
+    stem: "Sandomierz You will hear about Sandomierz. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Gdzie leży Sandomierz?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Na południowym wschodzie Polski/na południu Polski.", marks: 4, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-lb-2", topicId: "polish-2-1", conceptId: "szlaki-przebiegaly-przez-sandomierz",
+    section: "LB", questionRef: "2024 OL Section LB Q2",
+    stem: "Sandomierz You will hear about Sandomierz. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jakie szlaki przebiegały przez Sandomierz?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["wodne","lądowe","handlowe"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-lb-3", topicId: "polish-2-1", conceptId: "wspolnego-maja-sandomierz-rzym",
+    section: "LB", questionRef: "2024 OL Section LB Q3",
+    stem: "Sandomierz You will hear about Sandomierz. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Co wspólnego mają Sandomierz i Rzym?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["położenie/leżą na 7 wzgórzach","(burzliwą) historię"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-lb-4", topicId: "polish-2-1", conceptId: "turysci-chetnie-ogladaja-sandomierzu",
+    section: "LB", questionRef: "2024 OL Section LB Q4",
+    stem: "Sandomierz You will hear about Sandomierz. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Co turyści chętnie oglądają w Sandomierzu?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["zabytki","winnice","szlak jabłkowy"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-lb-5", topicId: "polish-2-1", conceptId: "mozna-przywiezc-sandomierza",
+    section: "LB", questionRef: "2024 OL Section LB Q5",
+    stem: "Sandomierz You will hear about Sandomierz. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Co można przywieźć z Sandomierza? Podaj 2 szczegóły.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["lokalne przysmaki","(owocowe) soki","wina","sery","krówki","kamień optymizmu/amulet na szczęście"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 5",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-lc-1", topicId: "polish-2-1", conceptId: "dawid-podsiadlo-day-album-released-example",
+    section: "LC", questionRef: "2024 OL Section LC Q1",
+    stem: "You will hear an interview with Dawid Podsiadło – a singer. There will be pauses during the second playing. Answer in English.",
+    questionText: "What does Dawid Podsiadło do on the day that his album is released? Give one example.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":4,"options":["gets up early","reads all messages"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-lc-2", topicId: "polish-2-1", conceptId: "dawid-podsiadlo-like-fans",
+    section: "LC", questionRef: "2024 OL Section LC Q2",
+    stem: "You will hear an interview with Dawid Podsiadło – a singer. There will be pauses during the second playing. Answer in English.",
+    questionText: "What does Dawid Podsiadło like about his fans?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "That they react lively/with energy to his new albums.", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-lc-3", topicId: "polish-2-1", conceptId: "tick-true-false-there-only-positive",
+    section: "LC", questionRef: "2024 OL Section LC Q3",
+    stem: "You will hear an interview with Dawid Podsiadło – a singer. There will be pauses during the second playing. Answer in English.",
+    questionText: "Tick (✓) true or false. There are only positive posts on the Internet about Dawid Podsiadło.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "F", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-lc-4", topicId: "polish-2-1", conceptId: "dawid-podsiadlo-say-album-making-process",
+    section: "LC", questionRef: "2024 OL Section LC Q4",
+    stem: "You will hear an interview with Dawid Podsiadło – a singer. There will be pauses during the second playing. Answer in English.",
+    questionText: "What does Dawid Podsiadło say about his album‐making process? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":4,"options":["he does not watch over everything","he is less involved in aesthetics/in how the album looks","he hires professionals to look after aesthetics","he trusts professionals","he makes final decisions","he cares about the quality of his albums"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-lc-5", topicId: "polish-2-1", conceptId: "important-dawid-podsiadlo",
+    section: "LC", questionRef: "2024 OL Section LC Q5",
+    stem: "You will hear an interview with Dawid Podsiadło – a singer. There will be pauses during the second playing. Answer in English.",
+    questionText: "What is important for Dawid Podsiadło? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["his close ones/family/friends","himself","his job"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 5",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-ld-1", topicId: "polish-2-1", conceptId: "tick-true-false-polish-posters-popular",
+    section: "LD", questionRef: "2024 OL Section LD Q1",
+    stem: "Polska szkoła plakatu You will hear about the Polish School of Posters. There will be pauses during the second playing. Answer in English.",
+    questionText: "Tick (✓) true or false. Polish posters were popular only in Poland.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "F", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-ld-2", topicId: "polish-2-1", conceptId: "fill-table-below-polish-school-posters",
+    section: "LD", questionRef: "2024 OL Section LD Q2",
+    stem: "Polska szkoła plakatu You will hear about the Polish School of Posters. There will be pauses during the second playing. Answer in English.",
+    questionText: "Fill in the table below about the Polish School of Posters. Name two style details of the posters: For what were the posters created?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Name two style details of the posters:”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["simple form","irony","symbol","metaphor"]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “For what were the posters created?”", group: {"claimMax":2,"perOption":3,"options":["films","theatre shows","circus shows","exhibitions"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-ld-3", topicId: "polish-2-1", conceptId: "bronislaw-zelek-poster",
+    section: "LD", questionRef: "2024 OL Section LD Q3",
+    stem: "Polska szkoła plakatu You will hear about the Polish School of Posters. There will be pauses during the second playing. Answer in English.",
+    questionText: "Give two details about Bronisław Zelek’s poster.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["it is exceptional/extraordinary","it is unique","it became a graphic icon","there is a copy of it in every art book","it is one of the most expensive posters","(during an auction in London) it reached the price of £7,000","it was made for the film “Birds”"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-le-1", topicId: "polish-2-1", conceptId: "fill-table-below-news-przemysl-been",
+    section: "LE", questionRef: "2024 OL Section LE Q1",
+    stem: "You will hear three news items followed by the weather forecast. There will be pauses during the second playing. Answer in English. Item 1",
+    questionText: "Fill in the table below about the news from Przemyśl. What has been damaged? When did the damage happen? Who came to help?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "gas pipe", marks: 3, contextNote: "For “What has been damaged?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "(last) Tuesday/during pavement repairs", marks: 3, contextNote: "For “When did the damage happen?”" },
+    { id: "r-3", kind: "point", verbatim: "fire brigade/gas emergency service/police(garda)", marks: 3, contextNote: "For “Who came to help?”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 1",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-le-2", topicId: "polish-2-1", conceptId: "maciej-musialowski-going-open-castle",
+    section: "LE", questionRef: "2024 OL Section LE Q2",
+    stem: "You will hear three news items followed by the weather forecast. There will be pauses during the second playing. Answer in English. Item 2",
+    questionText: "What is Maciej Musiałowski going to open in his castle? Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":3,"options":["a school of music","an art gallery","a school for orphans","stables","a polo club"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-le-3", topicId: "polish-2-1", conceptId: "many-years-take-kamil-babel-complete",
+    section: "LE", questionRef: "2024 OL Section LE Q3",
+    stem: "You will hear three news items followed by the weather forecast. There will be pauses during the second playing. Answer in English. Item 3",
+    questionText: "How many years did it take Kamil Bąbel to complete his project?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "4 years", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 3",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2024-ol-le-4", topicId: "polish-2-1", conceptId: "weather-seaside-mountains",
+    section: "LE", questionRef: "2024 OL Section LE Q4",
+    stem: "You will hear three news items followed by the weather forecast. There will be pauses during the second playing. Answer in English. Item 4",
+    questionText: "Describe the weather: at the seaside in the mountains",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “at the seaside”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["temperature 25 degrees","moderate winds","rain will fall at the end of the month"]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “in the mountains”", group: {"claimMax":1,"perOption":3,"options":["sunny days","30 degrees during the day","windy nights","18 degrees during the nights"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 4",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2024 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2024 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2024-ol-b-4-a", topicId: "polish-3-3", conceptId: "wyobraz-sobie-jestes-panem-alojzym-pierwszego",
+    section: "B", questionRef: "2024 OL Section B Q4(a)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Wyobraź sobie, że jesteś panem Alojzym z tekstu pierwszego. Spotykasz Franka, byłego klienta twojej księgarni. Uzupełnij dialog. Użyj około 100 słów.\nFranek: Dzień dobry, panie Alojzy. Co za spotkanie! Pan Alojzy:\nFranek: W tym roku przygotowuję się do matury. Mam dużo nauki. A co u pana słychać? Pan Alojzy:\nFranek: Często zastanawiałem się, dlaczego zamknął pan księgarnię przy ulicy Wiśniowej... Pan Alojzy:\nFranek: Co pan zrobił z książkami? Pan Alojzy:\nFranek: Właśnie idę do biblioteki. Może pójdzie pan ze mną? Pan Alojzy:",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content – relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content – relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference from English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (a) — answer in Polish",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2024 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2024-ol-b-4-b", topicId: "polish-3-3", conceptId: "wziales-udzial-konkursie-opisanym-ponizszym-plakacie",
+    section: "B", questionRef: "2024 OL Section B Q4(b)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Wziąłeś udział w konkursie opisanym na poniższym plakacie. Napisz list do kuzyna. Użyj około 100 słów. Rozwiń następujące punkty:\n• Informacje o konkursie (nazwa, data).\n• Opis zdjęcia, które wysłałeś na konkurs.\n• Sposób, w jaki dowiedziałeś się, że wygrałeś ten konkurs.\n• Opis towarzyszących ci emocji.\n• Zapytaj kuzyna, w jakich konkursach bierze udział.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content – relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content – relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference from English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (b) — answer in Polish",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2024 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2024-ol-b-4-c", topicId: "polish-3-3", conceptId: "opisz-zamieszczony-obok-obrazek-uzyj-okolo",
+    section: "B", questionRef: "2024 OL Section B Q4(c)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Opisz zamieszczony obok obrazek. Użyj około 100 słów. Rozwiń następujące punkty:\n• Kto jest przedstawiony na obrazku?\n• Jak wyglądają te postaci?\n• Gdzie się znajdują? Opisz to miejsce.\n• Co robią te postaci?\n• Czy podoba ci się ta tradycja? Dlaczego?",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content – relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content – relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference from English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (c) — answer in Polish",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2024 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2024-ol-b-5-a", topicId: "polish-3-3", conceptId: "opisz-kota-mruczka-podstawie-informacji-zawartych",
+    section: "B", questionRef: "2024 OL Section B Q5(a)",
+    stem: "Wykonaj zadanie (a) lub (b), lub (c).",
+    questionText: "Opisz kota Mruczka na podstawie informacji zawartych w poniższej tabeli. Użyj około 100 słów.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content – relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content – relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference from English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (a) — answer in Polish",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2024 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2024-ol-b-5-b", topicId: "polish-3-3", conceptId: "zredaguj-wpis-pamietnika-nowej-grze-ktora",
+    section: "B", questionRef: "2024 OL Section B Q5(b)",
+    stem: "Wykonaj zadanie (a) lub (b), lub (c).",
+    questionText: "Zredaguj wpis do pamiętnika o nowej grze, którą dostałeś. Użyj około 100 słów. Rozwiń następujące punkty:\n• Jak nazywa się gra, którą dostałeś?\n• Ile osób może w nią grać jednocześnie? Z kim grasz najczęściej?\n• Wyjaśnij zasady tej gry.\n• Jak często w nią grasz?\n• Jak się czujesz, kiedy przegrywasz?",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content – relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content – relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference from English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (b) — answer in Polish",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2024 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2024-ol-b-5-c", topicId: "polish-3-3", conceptId: "napisz-notatke-temat-moj-czas-wolny",
+    section: "B", questionRef: "2024 OL Section B Q5(c)",
+    stem: "Wykonaj zadanie (a) lub (b), lub (c).",
+    questionText: "Napisz notatkę na temat: „Mój czas wolny”. Użyj około 100 słów. Rozwiń następujące punkty:\n• Kiedy masz najwięcej czasu wolnego?\n• Gdzie i z kim spędzasz swój czas wolny?\n• Co daje ci czas wolny?\n• Jakie formy spędzania wolnego czasu poleciłbyś innym?\n• Czy uważasz, że masz za dużo/za mało wolnego czasu?",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content – relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content – relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference from English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (c) — answer in Polish",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Polish 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC548GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
@@ -2639,7 +7668,7 @@ export const CARDS: SecCard[] = [
     questionText: "Określ, czy podane zdania (ii) – (vi) to prawda czy fałsz. Odpowiedzi zaznacz (✓) w tabeli, zgodnie z przykładem (i). (części: 2, 3) Prawda Fałsz ✓ Zbiórki harcerskie odbywają się raz w roku.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Prawda", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Fałsz", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2689,7 +7718,7 @@ export const CARDS: SecCard[] = [
     questionText: "Określ, czy podane zdania (ii) – (vi) to prawda czy fałsz. Odpowiedzi zaznacz (✓) w tabeli, zgodnie z przykładem (i). (części: 2, 3) Prawda Fałsz ✓ Harcerze sami budują obóz.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Fałsz", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Prawda", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2714,7 +7743,7 @@ export const CARDS: SecCard[] = [
     questionText: "Na obozie harcerze wywieszają polską flagę każdego wieczoru.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Prawda", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Fałsz", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3101,6 +8130,4395 @@ export const CARDS: SecCard[] = [
           ],
           "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-a-1-d", topicId: "polish-3-1", conceptId: "visited-ania-family-christmas-eve-tick",
+    section: "A", questionRef: "2025 OL Section A Q1(d)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "Who visited Ania and her family on Christmas Eve? Tick the three correct answers from the six boxes below. (paragraph 3)\nA. Her aunt\nB. Kacper, the cat\nC. Her grandmother\nD. Her great grandfather\nE. Her school friend\nF. Her uncle",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A", marks: 2, contextNote: "For “A. Her aunt”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "C", marks: 2, contextNote: "For “C. Her grandmother”" },
+    { id: "r-3", kind: "point", verbatim: "F", marks: 2, contextNote: "For “F. Her uncle”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-a-2-b-i", topicId: "polish-3-1", conceptId: "uzupelnij-ponizsza-tabelke-podstawie-czesc-oznacza",
+    section: "A", questionRef: "2025 OL Section A Q2(b)(i)",
+    stem: "Zadanie 2: Tekst 2",
+    questionText: "Uzupełnij poniższą tabelkę na podstawie tekstu 2. (część 1) Co oznacza skrót ZHP?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Związek Harcerstwa Polskiego", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 2: TEKST 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-a-2-b-ii", topicId: "polish-3-1", conceptId: "uzupelnij-ponizsza-tabelke-podstawie-czesc-kiedy",
+    section: "A", questionRef: "2025 OL Section A Q2(b)(ii)",
+    stem: "Zadanie 2: Tekst 2",
+    questionText: "Uzupełnij poniższą tabelkę na podstawie tekstu 2. (część 1) Kiedy powstał ZHP?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Przed II wojną (światową)", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 2: TEKST 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-a-2-c-vi", topicId: "polish-3-1", conceptId: "okresl-czy-podane-zdania-prawda-czy",
+    section: "A", questionRef: "2025 OL Section A Q2(c)(vi)",
+    stem: "Zadanie 2: Tekst 2",
+    questionText: "Określ, czy podane zdania (ii) – (vi) to prawda czy fałsz. Odpowiedzi zaznacz (✓) w tabeli, zgodnie z przykładem (i). (części: 2, 3) Prawda Fałsz ✓ Harcerze potrafią przetrwać w trudnych warunkach.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Prawda", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 2: TEKST 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-la-1-i", topicId: "polish-2-1", conceptId: "uzupelnij-tabele-ile-lat-adam-wajrak",
+    section: "LA", questionRef: "2025 OL Section LA Q1(i)",
+    stem: "You will hear an interview with Adam Wajrak – a journalist and ecologist. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Uzupełnij tabelę. Ile lat Adam Wajrak mieszka w Puszczy Białowieskiej?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "27 lat", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 1(i)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-la-1-ii", topicId: "polish-2-1", conceptId: "uzupelnij-tabele-dlaczego-adam-wajrak-przeprowadzil",
+    section: "LA", questionRef: "2025 OL Section LA Q1(ii)",
+    stem: "You will hear an interview with Adam Wajrak – a journalist and ecologist. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Uzupełnij tabelę. Dlaczego Adam Wajrak przeprowadził się do puszczy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme allows “żona chciała się przeprowadzić” for 2 marks, in place of “jego żona chciała prowadzić w puszczy badania”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["jego żona chciała prowadzić w puszczy badania","puszcza to fascynujące miejsce","to miejsce urzekło go już w czasach studenckich","żona chciała się przeprowadzić"],"optionMarks":[3,3,3,2],"optionOf":[null,null,null,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 1(ii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-la-2", topicId: "polish-2-1", conceptId: "zajecia-wykonuje-adam-wajrak-puszczy",
+    section: "LA", questionRef: "2025 OL Section LA Q2",
+    stem: "You will hear an interview with Adam Wajrak – a journalist and ecologist. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jakie zajęcia wykonuje Adam Wajrak w puszczy? Podaj 3 szczegóły.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":3,"options":["kosi trawę","rąbie drzewo","naprawia dach","maluje płot","sprząta szopę","pisze artkuły"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-la-3", topicId: "polish-2-1", conceptId: "adam-wajrak-robi-rano",
+    section: "LA", questionRef: "2025 OL Section LA Q3",
+    stem: "You will hear an interview with Adam Wajrak – a journalist and ecologist. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Co Adam Wajrak robi rano?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["idzie do lasu","obserwuje przyrodę","je śniadanie","zabiera psa na spacer"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-la-4", topicId: "polish-2-1", conceptId: "zwierzeta-mozna-spotkac-puszczy-bialowieskiej",
+    section: "LA", questionRef: "2025 OL Section LA Q4",
+    stem: "You will hear an interview with Adam Wajrak – a journalist and ecologist. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jakie zwierzęta można spotkać w Puszczy Białowieskiej? Podaj 3 szczegóły.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":3,"options":["żubry","wilki","lisy","jelenie","borsuki","nornice","myszołowy"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-la-5", topicId: "polish-2-1", conceptId: "czym-adam-wajrak-jezdzi-puszczy",
+    section: "LA", questionRef: "2025 OL Section LA Q5",
+    stem: "You will hear an interview with Adam Wajrak – a journalist and ecologist. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Czym Adam Wajrak jeździ po puszczy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "rowerem", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 5",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-lb-1", topicId: "polish-2-1", conceptId: "jakim-wojewodztwie-lezy-kazimierz-dolny",
+    section: "LB", questionRef: "2025 OL Section LB Q1",
+    stem: "You will hear about Kazimierz Dolny. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "W jakim województwie leży Kazimierz Dolny?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "lubelskim", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-lb-2-i", topicId: "polish-2-1", conceptId: "kiedy-kazimierzu-dolnym-odbywa-festiwal-dwa",
+    section: "LB", questionRef: "2025 OL Section LB Q2(i)",
+    stem: "You will hear about Kazimierz Dolny. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Kiedy w Kazimierzu Dolnym odbywa się festiwal Dwa Brzegi?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme allows “w lipcu/w sierpniu” for 1 mark, in place of “co roku/na przełomie lipca i sierpnia/w lipcu i sierpniu”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["co roku/na przełomie lipca i sierpnia/w lipcu i sierpniu","w lipcu/w sierpniu"],"optionMarks":[3,1],"optionOf":[null,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 2(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-lb-2-ii", topicId: "polish-2-1", conceptId: "filmy-mozna-zobaczyc-podczas-trwania-festiwalu",
+    section: "LB", questionRef: "2025 OL Section LB Q2(ii)",
+    stem: "You will hear about Kazimierz Dolny. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jakie filmy można zobaczyć podczas trwania festiwalu Dwa Brzegi? Podaj 2 szczegóły.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["fabularne","dokumentalne","animowane","z różnych krajów świata"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 2(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-lb-3", topicId: "polish-2-1", conceptId: "rodzaje-warsztatow-ktore-odbywaja-kazimierzu-dolnym",
+    section: "LB", questionRef: "2025 OL Section LB Q3",
+    stem: "You will hear about Kazimierz Dolny. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Wymień 2 rodzaje warsztatów, które odbywają się w Kazimierzu Dolnym?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme allows “sztuki” for 2 marks, in place of “sztuki ulicznej”, never beside it.", group: {"claimMax":2,"perOption":3,"options":["sztuki ulicznej","jogi","pszczelarskie","sztuki"],"optionMarks":[3,3,3,2],"optionOf":[null,null,null,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-lb-4", topicId: "polish-2-1", conceptId: "jakiego-przysmaku-mozna-skosztowac-kazimierzu-dolnym",
+    section: "LB", questionRef: "2025 OL Section LB Q4",
+    stem: "You will hear about Kazimierz Dolny. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jakiego przysmaku można skosztować w Kazimierzu Dolnym?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["(miejscowego) wypieku","koguta (z ciasta)","oponki (z dodatkami)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-lc-1", topicId: "polish-2-1", conceptId: "complete-table-below-book-jowita-zostaje",
+    section: "LC", questionRef: "2025 OL Section LC Q1",
+    stem: "You will hear a book review. There will be pauses during the second playing. Answer in English.",
+    questionText: "Complete the table below about the book Jowita zostaje. Venue of the protest Date of the protest Number of days of the protest",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Poznań/dormitory/Jowita", marks: 3, contextNote: "For “Venue of the protest”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Date of the protest” The scheme allows “December/2023” for 2 marks, in place of “December 2023”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["December 2023","December/2023"],"optionMarks":[3,2],"optionOf":[null,0]} },
+    { id: "r-3", kind: "point", verbatim: "Ten", marks: 3, contextNote: "For “Number of days of the protest”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-lc-2", topicId: "polish-2-1", conceptId: "tick-true-false-students-also-authors",
+    section: "LC", questionRef: "2025 OL Section LC Q2",
+    stem: "You will hear a book review. There will be pauses during the second playing. Answer in English.",
+    questionText: "Tick (✓) true or false. The students are also the authors of the book Jowita zostaje.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-lc-3", topicId: "polish-2-1", conceptId: "list-contents-book",
+    section: "LC", questionRef: "2025 OL Section LC Q3",
+    stem: "You will hear a book review. There will be pauses during the second playing. Answer in English.",
+    questionText: "List two details about the contents of the book.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["instructions","program/schedule of the protest","correspondence","interviews","articles","essays","photos","leaflets","posters"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-lc-4", topicId: "polish-2-1", conceptId: "mark-correct-answer-closing-down-dormitory",
+    section: "LC", questionRef: "2025 OL Section LC Q4",
+    stem: "You will hear a book review. There will be pauses during the second playing. Answer in English.",
+    questionText: "Mark (✓) the correct answer. Closing down the dormitory would mean for the students: higher cost of living less hours at work more time available for self-development more time for hobbies",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "higher cost of living", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-lc-5-i", topicId: "polish-2-1", conceptId: "book-received",
+    section: "LC", questionRef: "2025 OL Section LC Q5(i)",
+    stem: "You will hear a book review. There will be pauses during the second playing. Answer in English.",
+    questionText: "How was the book received?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "enthusiastically", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 5(i)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-lc-5-ii", topicId: "polish-2-1", conceptId: "read-book",
+    section: "LC", questionRef: "2025 OL Section LC Q5(ii)",
+    stem: "You will hear a book review. There will be pauses during the second playing. Answer in English.",
+    questionText: "Who read the book? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["students","parents","teachers"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 5(ii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-ld-1", topicId: "polish-2-1", conceptId: "type-furniture-mentioned-here",
+    section: "LD", questionRef: "2025 OL Section LD Q1",
+    stem: "You will hear about Oskar Zięta’s furniture. There will be pauses during the second playing. Answer in English.",
+    questionText: "What type of furniture is mentioned here?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "stools/chairs", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-ld-2", topicId: "polish-2-1", conceptId: "shape-furniture-bought",
+    section: "LD", questionRef: "2025 OL Section LD Q2",
+    stem: "You will hear about Oskar Zięta’s furniture. There will be pauses during the second playing. Answer in English.",
+    questionText: "In what shape can the furniture be bought?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "in a roll", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-ld-3", topicId: "polish-2-1", conceptId: "tick-true-false-there-only-silver",
+    section: "LD", questionRef: "2025 OL Section LD Q3",
+    stem: "You will hear about Oskar Zięta’s furniture. There will be pauses during the second playing. Answer in English.",
+    questionText: "Tick (✓) true or false. There is only silver furniture available.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-ld-4-i", topicId: "polish-2-1", conceptId: "weight-damage-oskar-zieta-furniture",
+    section: "LD", questionRef: "2025 OL Section LD Q4(i)",
+    stem: "You will hear about Oskar Zięta’s furniture. There will be pauses during the second playing. Answer in English.",
+    questionText: "What weight will damage Oskar Zięta’s furniture?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2 tonnes", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 4(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-ld-4-ii", topicId: "polish-2-1", conceptId: "whom-oskar-zieta-get-interest-metal",
+    section: "LD", questionRef: "2025 OL Section LD Q4(ii)",
+    stem: "You will hear about Oskar Zięta’s furniture. There will be pauses during the second playing. Answer in English.",
+    questionText: "From whom did Oskar Zięta get his interest in metal?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "from his grandfather", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 4(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-le-1", topicId: "polish-2-1", conceptId: "fill-table-below-amp-football-against",
+    section: "LE", questionRef: "2025 OL Section LE Q1",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 1",
+    questionText: "Fill in the table below about Amp Football. Against who was the Polish team playing? What was the result of the match?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kenya", marks: 3, contextNote: "For “Against who was the Polish team playing?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “What was the result of the match?” The scheme allows “1 – 0” for 2 marks, in place of “Poland 1, Kenya 0 / Poland won”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["Poland 1, Kenya 0 / Poland won","1 – 0"],"optionMarks":[3,2],"optionOf":[null,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 1",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-le-2", topicId: "polish-2-1", conceptId: "learn-rysiek-cat",
+    section: "LE", questionRef: "2025 OL Section LE Q2",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 2",
+    questionText: "What do we learn about Rysiek, the cat? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["from a shelter","he regularly accompanied his owner to the train","he waited until the train left","he was loyal","he was smart"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-le-3", topicId: "polish-2-1", conceptId: "project-run-copernicus-science-centre",
+    section: "LE", questionRef: "2025 OL Section LE Q3",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 3",
+    questionText: "Give two details about the project run by the Copernicus Science Centre.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["The Centre runs workshops Lets discover it!","The workshops take place in small towns","The workshops take place during weekends","The workshops take place in local libraries/community centres/sport centres/schools","The teachers show adults how to discover science with a child","No advanced technical equipment is needed","No costly tools are needed","Participants get a free kit to experiment at home"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 3",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2025-ol-le-4", topicId: "polish-2-1", conceptId: "porcelain-square-cmielow",
+    section: "LE", questionRef: "2025 OL Section LE Q4",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 4",
+    questionText: "Describe the Porcelain Square in Ćmielów. Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["there is a fountain there","the fountain looks like a coffee set","there are 20 benches there","the benches are cup shaped","there is water pouring into one of the coffee cups (from the coffee pot)","there is a sugar bowl there"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 4",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2025 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2025 Ordinary Level, p.9 — © State Examinations Commission.",
+    id: "pl-2025-ol-b-4-a", topicId: "polish-3-3", conceptId: "wyobraz-sobie-jestes-ania-pierwszego-spotykasz",
+    section: "B", questionRef: "2025 OL Section B Q4(a)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Wyobraź sobie, że jesteś Anią z tekstu pierwszego. Spotykasz kuzyna Marcina. Uzupełnij dialog. Użyj około 100 słów.\nMarcin: Cześć Aniu! Jak się czujesz po świętach?\nAnia:\nMarcin: Jakie dania smakowały ci najbardziej?\nAnia:\nMarcin: Otworzyłaś w końcu swój prezent? Co dostałaś?\nAnia:\nMarcin: Twój tata wspominał, że bardzo polubiłaś mojego szczeniaka i też chcesz mieć psa.\nAnia:\nMarcin: Zapraszam cię na sylwestra. Będzie dużo znajomych. Przyjdziesz?\nAnia:",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (a) — answer in Polish",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2025 Ordinary Level, p.9 — © State Examinations Commission.",
+    id: "pl-2025-ol-b-4-b", topicId: "polish-3-3", conceptId: "byles-obozie-harcerskim-zredaguj-wpis-pamietnika",
+    section: "B", questionRef: "2025 OL Section B Q4(b)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Byłeś na obozie harcerskim. Zredaguj wpis do pamiętnika i opisz bieg nocny, w którym brałeś udział. Użyj około 100 słów.\nUwzględnij:\n• czas (kiedy odbył się bieg i jak długo trwał)\n• miejsce startu i zakończenia biegu\n• mijane miejsca i napotkane przeszkody\n• warunki pogodowe\n• odczucia związane z ukończeniem biegu",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (b) — answer in Polish",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2025 Ordinary Level, p.9 — © State Examinations Commission.",
+    id: "pl-2025-ol-b-4-c", topicId: "polish-3-3", conceptId: "twoi-rodzice-wyjechali-tydzien-posprzatales-dom",
+    section: "B", questionRef: "2025 OL Section B Q4(c)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Twoi rodzice wyjechali na tydzień, a ty posprzątałeś dom. Napisz e-mail do rodziców, w którym opowiesz im, co zrobiłeś. Uwzględnij zastosowanie każdego z 5 sprzętów domowych przedstawionych na poniższych zdjęciach. Użyj około 100 słów.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (c) — answer in Polish",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2025 Ordinary Level, p.9 — © State Examinations Commission.",
+    id: "pl-2025-ol-b-5-a", topicId: "polish-3-3", conceptId: "napisz-notatke-zajecia-jezyka-polskiego-irlandzkich",
+    section: "B", questionRef: "2025 OL Section B Q5(a)",
+    stem: "Wykonaj zadanie (a) lub (b), lub (c).",
+    questionText: "Napisz notatkę na zajęcia języka polskiego o irlandzkich i polskich symbolach. Uwzględnij informacje zawarte w poniższej tabeli. Użyj około 100 słów.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (a) — answer in Polish",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2025 Ordinary Level, p.9 — © State Examinations Commission.",
+    id: "pl-2025-ol-b-5-b", topicId: "polish-3-3", conceptId: "wziales-udzial-waznej-uroczystosci-rodzinnej-przyklad",
+    section: "B", questionRef: "2025 OL Section B Q5(b)",
+    stem: "Wykonaj zadanie (a) lub (b), lub (c).",
+    questionText: "Wziąłeś udział w ważnej uroczystości rodzinnej, na przykład w weselu, chrzcie itp. Napisz opowiadanie. Użyj około 100 słów. Rozwiń następujące punkty:\n• W jakiej uroczystości rodzinnej wziąłeś udział?\n• Kiedy i gdzie miała miejsce ta uroczystość?\n• Kto był na niej obecny?\n• Opisz 2 zwyczaje związane z tą uroczystością.\n• Jakie masz pamiątki z tej uroczystości?",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (b) — answer in Polish",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2025 Ordinary Level, p.9 — © State Examinations Commission.",
+    id: "pl-2025-ol-b-5-c", topicId: "polish-3-3", conceptId: "kolega-polski-zaprosil-cie-tygodniowa-wyprawe",
+    section: "B", questionRef: "2025 OL Section B Q5(c)",
+    stem: "Wykonaj zadanie (a) lub (b), lub (c).",
+    questionText: "Kolega z Polski zaprosił cię na tygodniową wyprawę w Bieszczady. Niestety, nie możesz pojechać. Napisz list do kolegi. Użyj około 100 słów. Uwzględnij następujące punkty:\n• Powitaj kolegę i podziękuj za zaproszenie.\n• Wyjaśnij, dlaczego nie możesz przyjechać.\n• Zaproponuj spotkanie w innym terminie.\n• Napisz, co ciekawego wydarzyło się ostatnio.\n• Zakończ list pozdrowieniami.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (c) — answer in Polish",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-1-a", topicId: "polish-3-1", conceptId: "nazwisko-rodziny-akapitu",
+    section: "A", questionRef: "2026 OL Section A Q1(a)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "Podaj nazwisko rodziny z akapitu 1.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mazurscy", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-1-b", topicId: "polish-3-1", conceptId: "skladalo-sniadanie",
+    section: "A", questionRef: "2026 OL Section A Q1(b)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "Z czego składało się śniadanie? Podaj 3 szczegóły. (akapit 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["jajecznica","kabanosy","bułki","szynka","ser","pomidor","sałata","herbata (z cytryną)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-1-d", topicId: "polish-3-1", conceptId: "dowiadujemy-sniezce-informacje",
+    section: "A", questionRef: "2026 OL Section A Q1(d)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "Czego dowiadujemy się o Śnieżce? Podaj 2 informacje. (akapit 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["to nie byle jaka góra","to najwyższy szczyt w Karkonoszach","ma 1600 metrów nad poziomem morza"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-1-e", topicId: "polish-3-1", conceptId: "family-take-raincoats-summer-trip-paragraph",
+    section: "A", questionRef: "2026 OL Section A Q1(e)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "Why did the family have to take raincoats for their summer trip? (paragraph 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":4,"options":["It may be rain/wind there.","On Śnieżka the weather changes frequently."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-1-f-i", topicId: "polish-3-1", conceptId: "mother-pack-backpacks-dark-chocolate-scarfs",
+    section: "A", questionRef: "2026 OL Section A Q1(f)(i)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "What did the mother pack in the backpacks? A. dark chocolate, scarfs, water B. dark chocolate, sun cream, water C. water, gloves, sandwiches D. water, sandwiches, dark chocolate",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "D", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-1-f-ii", topicId: "polish-3-1", conceptId: "weather-conditions-valley-there-fog-rain",
+    section: "A", questionRef: "2026 OL Section A Q1(f)(ii)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "What were the weather conditions in the valley? There was A. fog B. rain C. snow D. a storm",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-1-f-iii", topicId: "polish-3-1", conceptId: "long-rest-samotnia-shelter-last-half",
+    section: "A", questionRef: "2026 OL Section A Q1(f)(iii)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "How long did the rest at the Samotnia Shelter last? A. half an hour B. an hour C. an hour and a half D. two hours",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-1-g-ii", topicId: "polish-3-1", conceptId: "indicate-whether-following-statements-true-false",
+    section: "A", questionRef: "2026 OL Section A Q1(g)(ii)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "Indicate whether the following statements are true or false. Put a tick (✓) in the appropriate boxes. (paragraphs: 4, 5, 6) The family climbed the top of Śnieżka very quickly.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-1-g-iii", topicId: "polish-3-1", conceptId: "father-wanted-choose-easier-route-top",
+    section: "A", questionRef: "2026 OL Section A Q1(g)(iii)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "Indicate whether the following statements are true or false. Put a tick (✓) in the appropriate boxes. (paragraphs: 4, 5, 6) The father wanted to choose an easier route to the top of Śnieżka.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-1-g-iv", topicId: "polish-3-1", conceptId: "indicate-whether-following-statements-true-false",
+    section: "A", questionRef: "2026 OL Section A Q1(g)(iv)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "Indicate whether the following statements are true or false. Put a tick (✓) in the appropriate boxes. (paragraphs: 4, 5, 6) The granny was in a bad physical condition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-1-g-v", topicId: "polish-3-1", conceptId: "indicate-whether-following-statements-true-false",
+    section: "A", questionRef: "2026 OL Section A Q1(g)(v)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "Indicate whether the following statements are true or false. Put a tick (✓) in the appropriate boxes. (paragraphs: 4, 5, 6) The views were lovely.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-1-g-vi", topicId: "polish-3-1", conceptId: "indicate-whether-following-statements-true-false",
+    section: "A", questionRef: "2026 OL Section A Q1(g)(vi)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "Indicate whether the following statements are true or false. Put a tick (✓) in the appropriate boxes. (paragraphs: 4, 5, 6) The hats came in handy on the top of Śnieżka.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-1-h", topicId: "polish-3-1", conceptId: "way-back-top-sniezka-paragraph",
+    section: "A", questionRef: "2026 OL Section A Q1(h)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "Describe the way back from the top of Śnieżka. Give two details. (paragraph 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["lovely","easy/smooth","narrow","Marcela/her brother was taking selfies/ photos"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-2-a", topicId: "polish-3-1", conceptId: "dopasuj-srodtytuly-ramki-odpowiednich-czesci-oznaczonych",
+    section: "A", questionRef: "2026 OL Section A Q2(a)",
+    stem: "Zadanie 2: Tekst 2",
+    questionText: "Dopasuj śródtytuły z ramki do odpowiednich części tekstu 2 oznaczonych cyframi 2 – 6.\nW świecie bez internetu Zabawa i nauka Wygląd bajkowych bohaterów\nPierwsze dobranocki Poza granicami Wspólne oglądanie\nPrzykład: 1. W świecie bez internetu",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":5,"perOption":2,"options":["2. Pierwsze dobranocki","3. Wygląd bajkowych bohaterów","4. Zabawa i nauka","5. Wspólne oglądanie","6. Poza granicami"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 2: TEKST 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                8,
+                9
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-2-b-i", topicId: "polish-3-1", conceptId: "ile-razy-ciagu-dnia-mozna-bylo",
+    section: "A", questionRef: "2026 OL Section A Q2(b)(i)",
+    stem: "Zadanie 2: Tekst 2",
+    questionText: "Ile razy w ciągu dnia można było oglądać bajkę na dobranoc? A. jeden raz B. co 15 minut C. co 30 minut D. dowolną ilość razy",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 2: TEKST 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                8,
+                9
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-2-b-ii", topicId: "polish-3-1", conceptId: "ktorej-godzinie-rozpoczynala-dobranocka",
+    section: "A", questionRef: "2026 OL Section A Q2(b)(ii)",
+    stem: "Zadanie 2: Tekst 2",
+    questionText: "O której godzinie rozpoczynała się dobranocka? A. o 7.00 B. o 9.00 C. o 17.00 D. o 19.00",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "D", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 2: TEKST 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                8,
+                9
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-2-d", topicId: "polish-3-1", conceptId: "bedtime-cartoons-teach-children-section",
+    section: "A", questionRef: "2026 OL Section A Q2(d)",
+    stem: "Zadanie 2: Tekst 2",
+    questionText: "What did the bedtime cartoons teach children? Give three details. (section 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["important values","good behaviour","dealing with difficult situations","friendship","caring for others","help","loyalty","responsibility","bravery","curiosity"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 2: TEKST 2",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                8,
+                9
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-2-e", topicId: "polish-3-1", conceptId: "bedtime-cartoons-connected-generations-past-section",
+    section: "A", questionRef: "2026 OL Section A Q2(e)",
+    stem: "Zadanie 2: Tekst 2",
+    questionText: "Bedtime cartoons connected generations in the past. Give two details. (section 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["It was a shared experience/ritual/ routine","Children were watching bedtime cartoons with their parents and grandparents","They were often talking about the characters and their adventures"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 2: TEKST 2",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                8,
+                9
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-2-f", topicId: "polish-3-1", conceptId: "countries-teddy-drop-ear-cartoon-broadcast",
+    section: "A", questionRef: "2026 OL Section A Q2(f)",
+    stem: "Zadanie 2: Tekst 2",
+    questionText: "Name two countries where the Teddy Drop Ear cartoon was broadcast. (section 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Japan","Iran","Portugal","Finland","Hungary"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 2: TEKST 2",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                8,
+                9
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-a", topicId: "polish-3-1", conceptId: "robi-mlodziez-wolnym-czasie-czesc",
+    section: "A", questionRef: "2026 OL Section A Q3(a)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Co robi młodzież w wolnym czasie? Podaj 2 szczegóły. (część 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Uprawia sport","Słucha muzyki","Tańczy","Jeździ konno"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-b", topicId: "polish-3-1", conceptId: "ksiazki-lubi-czytac-martyna-czesc",
+    section: "A", questionRef: "2026 OL Section A Q3(b)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Jakie książki lubi czytać Martyna? Podaj 2 szczegóły. (część 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Polskie","Powieści przygodowe","Romanse","Niemieckie"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-c", topicId: "polish-3-1", conceptId: "mowi-martyna-temat-swoich-psow-czesc",
+    section: "A", questionRef: "2026 OL Section A Q3(c)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Co mówi Martyna na temat swoich psów? Podaj 2 szczegóły. (część 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Uwielbia z nimi chodzić na spacery","Są inteligentne","To owczarki","Mają piękną sierść","Mają lśniącą sierść","Robi im zdjęcia w lesie/na plaży"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-d-i", topicId: "polish-3-1", conceptId: "filip-football-training-every-day-every",
+    section: "A", questionRef: "2026 OL Section A Q3(d)(i)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Filip has football training A. every day B. every Saturday C. once a week D. twice a week",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "D", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-d-ii", topicId: "polish-3-1", conceptId: "indicate-correct-answer-questions-iii-below",
+    section: "A", questionRef: "2026 OL Section A Q3(d)(ii)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Indicate the correct answer for the questions (i) – (iii) below. Tick the box next to the chosen answer. Tick one answer for each question. (sections: 3, 4) ✓ Sport gives Filip A. energy B. fame C. money D. stress",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-d-iii", topicId: "polish-3-1", conceptId: "indicate-correct-answer-questions-iii-below",
+    section: "A", questionRef: "2026 OL Section A Q3(d)(iii)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Indicate the correct answer for the questions (i) – (iii) below. Tick the box next to the chosen answer. Tick one answer for each question. (sections: 3, 4) ✓ Maja plays A. guitar B. harp C. piano D. violin",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "C", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-e-ii", topicId: "polish-3-1", conceptId: "indicate-whether-following-statements-true-false",
+    section: "A", questionRef: "2026 OL Section A Q3(e)(ii)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Indicate whether the following statements are true or false. Put a tick (✓) in the appropriate boxes. (sections: 4, 5, 6) Maja listens to pop and hip hop.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-e-iii", topicId: "polish-3-1", conceptId: "indicate-whether-following-statements-true-false",
+    section: "A", questionRef: "2026 OL Section A Q3(e)(iii)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Indicate whether the following statements are true or false. Put a tick (✓) in the appropriate boxes. (sections: 4, 5, 6) Bartek plays computer games once a week.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-e-iv", topicId: "polish-3-1", conceptId: "indicate-whether-following-statements-true-false",
+    section: "A", questionRef: "2026 OL Section A Q3(e)(iv)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Indicate whether the following statements are true or false. Put a tick (✓) in the appropriate boxes. (sections: 4, 5, 6) Bartek is going to study IT.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-e-v", topicId: "polish-3-1", conceptId: "indicate-whether-following-statements-true-false",
+    section: "A", questionRef: "2026 OL Section A Q3(e)(v)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Indicate whether the following statements are true or false. Put a tick (✓) in the appropriate boxes. (sections: 4, 5, 6) Lucyna goes to museums and art galleries.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-e-vi", topicId: "polish-3-1", conceptId: "indicate-whether-following-statements-true-false",
+    section: "A", questionRef: "2026 OL Section A Q3(e)(vi)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Indicate whether the following statements are true or false. Put a tick (✓) in the appropriate boxes. (sections: 4, 5, 6) Lucyna wants to study architecture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-f", topicId: "polish-3-1", conceptId: "list-oskar-hobbies-section",
+    section: "A", questionRef: "2026 OL Section A Q3(f)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "List two of Oskar’s hobbies. (section 7)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Cooking/trying new receipes","Healthy food","Cycling"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-g-ii", topicId: "polish-3-1", conceptId: "uzupelnij-polsku-zdania-zgodnie-przykladem-wybierz",
+    section: "A", questionRef: "2026 OL Section A Q3(g)(ii)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Uzupełnij po polsku zdania (ii) – (v), zgodnie z przykładem (i). Wybierz brakujące wyrazy z tabeli, użyj właściwej formy gramatycznej. Uwaga, jeden wyraz pozostanie niewykorzystany. Maja nie tylko ładnie gra, ale też ________________.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Maja nie tylko ładnie gra, ale też śpiewa.", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-g-iii", topicId: "polish-3-1", conceptId: "uzupelnij-polsku-zdania-zgodnie-przykladem-wybierz",
+    section: "A", questionRef: "2026 OL Section A Q3(g)(iii)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Uzupełnij po polsku zdania (ii) – (v), zgodnie z przykładem (i). Wybierz brakujące wyrazy z tabeli, użyj właściwej formy gramatycznej. Uwaga, jeden wyraz pozostanie niewykorzystany. Bartek lubi grać w _________________.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bartek lubi grać w gry sportowe.", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-g-iv", topicId: "polish-3-1", conceptId: "uzupelnij-polsku-zdania-zgodnie-przykladem-wybierz",
+    section: "A", questionRef: "2026 OL Section A Q3(g)(iv)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Uzupełnij po polsku zdania (ii) – (v), zgodnie z przykładem (i). Wybierz brakujące wyrazy z tabeli, użyj właściwej formy gramatycznej. Uwaga, jeden wyraz pozostanie niewykorzystany. Lucyna chodzi na kółko ________________.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lucyna chodzi na kółko plastyczne.", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-3-g-v", topicId: "polish-3-1", conceptId: "uzupelnij-polsku-zdania-zgodnie-przykladem-wybierz",
+    section: "A", questionRef: "2026 OL Section A Q3(g)(v)",
+    stem: "Zadanie 3: Tekst 3",
+    questionText: "Uzupełnij po polsku zdania (ii) – (v), zgodnie z przykładem (i). Wybierz brakujące wyrazy z tabeli, użyj właściwej formy gramatycznej. Uwaga, jeden wyraz pozostanie niewykorzystany. Oskar _________________ artykuły w internecie.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Oskar czyta artykuły w internecie.", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 3: TEKST 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                13,
+                14
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-1-c", topicId: "polish-3-1", conceptId: "podkresl-zdanie-prawdziwe-rodzina-planowala-wejsc",
+    section: "A", questionRef: "2026 OL Section A Q1(c)",
+    stem: "Zadanie 1: Tekst 1",
+    questionText: "Podkreśl zdanie prawdziwe. (akapit 2) 1. Rodzina planowała wejść na Śnieżkę bez względu na pogodę. 2. Rodzina planowała najpierw wejść na Śnieżkę, a potem pójść do Schroniska Samotnia. 3. Rodzina planowała najpierw pójść do Schroniska Samotnia, a potem wejść na Śnieżkę.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "3. Rodzina planowała najpierw pójść do Schroniska Samotnia, a potem wejść na Śnieżkę.", marks: 4, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 1: TEKST 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-2-b-iii", topicId: "polish-3-1", conceptId: "dobranocka-inaczej-obrazek-plansza-wieczorynka-zabawka",
+    section: "A", questionRef: "2026 OL Section A Q2(b)(iii)",
+    stem: "Zadanie 2: Tekst 2",
+    questionText: "Dobranocka to inaczej A. obrazek B. plansza C. wieczorynka D. zabawka",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "C", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 2: TEKST 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                8,
+                9,
+                11
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-a-2-c", topicId: "polish-3-1", conceptId: "polacz-imiona-bohaterow-ich-portretami-oznaczonymi",
+    section: "A", questionRef: "2026 OL Section A Q2(c)",
+    stem: "Zadanie 2: Tekst 2",
+    questionText: "Połącz imiona bohaterów 2 – 6 z ich portretami oznaczonymi A – F. Odpowiedzi wpisz do tabeli poniżej, zgodnie z przykładem. (część 3) Przykład: 1. Agatka\n2. Jacek\n3. Miś Uszatek\n4. Reksio\n5. Lolek\n6. Bolek",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "C", marks: 2, contextNote: "For “2. Jacek”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "F", marks: 2, contextNote: "For “3. Miś Uszatek”" },
+    { id: "r-3", kind: "point", verbatim: "A", marks: 2, contextNote: "For “4. Reksio”" },
+    { id: "r-4", kind: "point", verbatim: "B", marks: 2, contextNote: "For “5. Lolek”" },
+    { id: "r-5", kind: "point", verbatim: "D", marks: 2, contextNote: "For “6. Bolek”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 2: TEKST 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                8,
+                9,
+                11
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-la-1", topicId: "polish-2-1", conceptId: "jaka-nagrode-dostala-joanna-bator",
+    section: "LA", questionRef: "2026 OL Section LA Q1",
+    stem: "You will hear an interview with the writer – Joanna Bator. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jaką nagrodę dostała Joanna Bator?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Nike/literacką", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-la-2", topicId: "polish-2-1", conceptId: "komu-joanna-bator-podziekowala-podczas-wreczenia",
+    section: "LA", questionRef: "2026 OL Section LA Q2",
+    stem: "You will hear an interview with the writer – Joanna Bator. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Komu Joanna Bator podziękowała podczas wręczenia nagrody?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "mężowi", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-la-3-a", topicId: "polish-2-1", conceptId: "joanna-bator-mowi-swoim-charakterze-wade",
+    section: "LA", questionRef: "2026 OL Section LA Q3(a)",
+    stem: "You will hear an interview with the writer – Joanna Bator. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Joanna Bator mówi o swoim charakterze. Podaj 1 wadę Joanny Bator:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["emocjonalna","impulsywna","zmiany nastroju","irytuje się"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 3(a)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-la-3-b", topicId: "polish-2-1", conceptId: "joanna-bator-mowi-swoim-charakterze-zalete",
+    section: "LA", questionRef: "2026 OL Section LA Q3(b)",
+    stem: "You will hear an interview with the writer – Joanna Bator. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Joanna Bator mówi o swoim charakterze. Podaj 1 zaletę Joanny Bator:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["optymizm","cieszy się drobiazgami/każdą osobą"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 3(b)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-la-4", topicId: "polish-2-1", conceptId: "robila-joanna-bator-walbrzychu",
+    section: "LA", questionRef: "2026 OL Section LA Q4",
+    stem: "You will hear an interview with the writer – Joanna Bator. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Co robiła Joanna Bator w Wałbrzychu? Podaj 3 szczegóły.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme heads its list “Any one of:” and prices the question “(3 x 3 marks)”; the printed price is carded, as the paper asks for three details.", group: {"claimMax":3,"perOption":3,"options":["mieszkała","mieszkała w 10-piętrowym budynku","siedziała na dachu (z koleżankami)/","rozmawiała (z koleżankami)/spędzała dużo czasu z koleżankami","pożyczała ubrania","czytała książki","odkrywała siebie","tam poznała, że literatura może zmieniać świat"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-la-5", topicId: "polish-2-1", conceptId: "gdzie-chce-zyc-joanna-bator",
+    section: "LA", questionRef: "2026 OL Section LA Q5",
+    stem: "You will hear an interview with the writer – Joanna Bator. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Gdzie chce żyć Joanna Bator?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "w Polsce", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 5",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-lb-1-i", topicId: "polish-2-1", conceptId: "uzupelnij-tabele-jaki-dzien-celebruje-grabowie",
+    section: "LB", questionRef: "2026 OL Section LB Q1(i)",
+    stem: "You will hear about the Polish tradition – Palant Celebration. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Uzupełnij tabelę. W jaki dzień celebruje się w Grabowie Święto Palanta?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "we wtorek/po Wielkanocnym Poniedziałku", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 1(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-lb-1-ii", topicId: "polish-2-1", conceptId: "uzupelnij-tabele-skad-pochodzi-nazwa-gry",
+    section: "LB", questionRef: "2026 OL Section LB Q1(ii)",
+    stem: "You will hear about the Polish tradition – Palant Celebration. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Uzupełnij tabelę. Skąd pochodzi nazwa gry?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme allows “od kija” for 1 mark, in place of “od drewnianego kija/palanta”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["od drewnianego kija/palanta","od kija"],"optionMarks":[3,1],"optionOf":[null,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 1(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-lb-1-iii", topicId: "polish-2-1", conceptId: "uzupelnij-tabele-czym-dawniej-grano-palanta",
+    section: "LB", questionRef: "2026 OL Section LB Q1(iii)",
+    stem: "You will hear about the Polish tradition – Palant Celebration. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Uzupełnij tabelę. Czym dawniej grano w palanta?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme allows “kijem do kiełbasy” for 2 marks, in place of “kijem do wędzenia kiełbasy”, never beside it. The scheme allows “kijem” for 1 mark, in place of “kijem do wędzenia kiełbasy”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["kijem do wędzenia kiełbasy","kijem do kiełbasy","kijem"],"optionMarks":[3,2,1],"optionOf":[null,0,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 1(iii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-lb-2", topicId: "polish-2-1", conceptId: "organizowano-swieto-palanta-szczegol",
+    section: "LB", questionRef: "2026 OL Section LB Q2",
+    stem: "You will hear about the Polish tradition – Palant Celebration. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Po co organizowano Święto Palanta? Podaj 1 szczegół.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["opóźnić powrót do pracy","zrzucić kilogramy","dla zabawy"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-lb-3", topicId: "polish-2-1", conceptId: "jak-zaczyna-swieto-palanta-grabowie-szczegol",
+    section: "LB", questionRef: "2026 OL Section LB Q3",
+    stem: "You will hear about the Polish tradition – Palant Celebration. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jak zaczyna się Święto Palanta w Grabowie? Podaj 1 szczegół.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme allows “mszą” for 1 mark, in place of “mszą świętą”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["mszą świętą","mszą"],"optionMarks":[3,1],"optionOf":[null,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-lb-4", topicId: "polish-2-1", conceptId: "jak-nazywaja-druzyny-biorace-udzial-meczu",
+    section: "LB", questionRef: "2026 OL Section LB Q4",
+    stem: "You will hear about the Polish tradition – Palant Celebration. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jak nazywają się drużyny biorące udział w meczu w palanta?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["Niebo","Piekło"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-lc-1", topicId: "polish-2-1", conceptId: "type-movie-pianoforte-movie",
+    section: "LC", questionRef: "2026 OL Section LC Q1",
+    stem: "You will hear a review of a movie. There will be pauses during the second playing. Answer in English.",
+    questionText: "What type of a movie is the Pianoforte movie?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "documentary", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-lc-2", topicId: "polish-2-1", conceptId: "pianoforte-movie",
+    section: "LC", questionRef: "2026 OL Section LC Q2",
+    stem: "You will hear a review of a movie. There will be pauses during the second playing. Answer in English.",
+    questionText: "What is the Pianoforte movie about? Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":3,"options":["participants of Chopin Piano Competition","dreams","price to pay for success","stress","ambitions","people","people’s lives"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-lc-3", topicId: "polish-2-1", conceptId: "old-characters-pianoforte-movie",
+    section: "LC", questionRef: "2026 OL Section LC Q3",
+    stem: "You will hear a review of a movie. There will be pauses during the second playing. Answer in English.",
+    questionText: "How old are the characters in the Pianoforte movie?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "16 to 30 years old", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-lc-4", topicId: "polish-2-1", conceptId: "characters-movie-while-waiting-competition-results",
+    section: "LC", questionRef: "2026 OL Section LC Q4",
+    stem: "You will hear a review of a movie. There will be pauses during the second playing. Answer in English.",
+    questionText: "What do the characters of the movie do while waiting for the competition results? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["play online games","go to pubs","sightsee Polish capital","talk with friends"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-lc-5", topicId: "polish-2-1", conceptId: "tick-true-false-advantages-pianoforte-movie",
+    section: "LC", questionRef: "2026 OL Section LC Q5",
+    stem: "You will hear a review of a movie. There will be pauses during the second playing. Answer in English.",
+    questionText: "Tick (✓) true or false. One of the advantages of the Pianoforte movie is its humour.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "T", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 5",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-lc-6", topicId: "polish-2-1", conceptId: "type-atmosphere-chopin-music-create-movie",
+    section: "LC", questionRef: "2026 OL Section LC Q6",
+    stem: "You will hear a review of a movie. There will be pauses during the second playing. Answer in English.",
+    questionText: "What type of atmosphere does Chopin’s music create in the movie?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["unique","romantic"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 6",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-ld-1", topicId: "polish-2-1", conceptId: "mysterious-gates-jelenia-gora-called",
+    section: "LD", questionRef: "2026 OL Section LD Q1",
+    stem: "You will hear about the Mystery of Jelenia Góra. There will be pauses during the second playing. Answer in English.",
+    questionText: "What are the mysterious gates in Jelenia Góra called?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Gates of Time", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-ld-2", topicId: "polish-2-1", conceptId: "underground-rooms-used-during-second-world",
+    section: "LD", questionRef: "2026 OL Section LD Q2",
+    stem: "You will hear about the Mystery of Jelenia Góra. There will be pauses during the second playing. Answer in English.",
+    questionText: "What were the underground rooms used for during the Second World War?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "shelters/bunkers", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-ld-3", topicId: "polish-2-1", conceptId: "many-people-underground-rooms-take",
+    section: "LD", questionRef: "2026 OL Section LD Q3",
+    stem: "You will hear about the Mystery of Jelenia Góra. There will be pauses during the second playing. Answer in English.",
+    questionText: "How many people could the underground rooms take?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "6 thousand", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-ld-4", topicId: "polish-2-1", conceptId: "tick-true-false-there-tracks-underground",
+    section: "LD", questionRef: "2026 OL Section LD Q4",
+    stem: "You will hear about the Mystery of Jelenia Góra. There will be pauses during the second playing. Answer in English.",
+    questionText: "Tick (✓) true or false. There are three tracks in the underground of Jelenia Góra to choose from for sightseeing.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "F", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-ld-5", topicId: "polish-2-1", conceptId: "list-attractions-seen-underground-jelenia-gora",
+    section: "LD", questionRef: "2026 OL Section LD Q5",
+    stem: "You will hear about the Mystery of Jelenia Góra. There will be pauses during the second playing. Answer in English.",
+    questionText: "List three attractions to be seen in the underground of Jelenia Góra.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":3,"options":["History Track","Science Track","Exhibitions/museum","treasures (of Sudety Mountains)","minerals","experiments (with the magical substance)","dogs","birds","exotic animals"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 5",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-le-1", topicId: "polish-2-1", conceptId: "olympiad-mentioned",
+    section: "LE", questionRef: "2026 OL Section LE Q1",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 1",
+    questionText: "What Olympiad is mentioned?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "mathematics/ international/66th international mathematics", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 1",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-le-2", topicId: "polish-2-1", conceptId: "country-well-poland-olympiad",
+    section: "LE", questionRef: "2026 OL Section LE Q2",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 1",
+    questionText: "What country did as well as Poland in the Olympiad?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Japan", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-le-3", topicId: "polish-2-1", conceptId: "whom-sneakers-festival-designed",
+    section: "LE", questionRef: "2026 OL Section LE Q3",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 2",
+    questionText: "For whom is the Sneakers Festival designed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "women", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 3",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-le-4", topicId: "polish-2-1", conceptId: "agenda-last-year-sneakers-festival",
+    section: "LE", questionRef: "2026 OL Section LE Q4",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 2",
+    questionText: "What was on the agenda of last year’s Sneakers Festival? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["health during travel","photography","accommodation for work","work online","expedition financing/funding"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 4",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-le-5", topicId: "polish-2-1", conceptId: "learn-franciszek-bielak",
+    section: "LE", questionRef: "2026 OL Section LE Q5",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 3",
+    questionText: "What do we learn about Franciszek Bielak? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["nominated for TikTok Award","nominated in Creator of The Year Category","he is 19 years old/teenager","he is a drawer/ cartoonist/ draftsman","he posts his work on Instagram","he got famous","he has 15 million subscribers","he made a viral video","he is patient","one project takes him 5 to 15 hours"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 5",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-le-6", topicId: "polish-2-1", conceptId: "many-days-professional-summer-camp-miedzyzdroje",
+    section: "LE", questionRef: "2026 OL Section LE Q6",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 4",
+    questionText: "How many days did the Professional Summer Camp in Międzyzdroje last?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "four", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 6",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pl-2026-ol-le-7", topicId: "polish-2-1", conceptId: "teenagers-during-professional-summer-camp-miedzyzdroje",
+    section: "LE", questionRef: "2026 OL Section LE Q7",
+    stem: "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 4",
+    questionText: "What did teenagers do during the Professional Summer Camp in Międzyzdroje? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language. The scheme allows “campaigns” for 1 mark, in place of “promotional campaigns”, never beside it.", group: {"claimMax":2,"perOption":3,"options":["learnt about dream jobs","participated in different workshops","court trial simulations","promotional campaigns","see criminology job","interviewed (interesting) people","campaigns"],"optionMarks":[3,3,3,3,3,3,1],"optionOf":[null,null,null,null,null,null,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 7",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2026 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2026 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2026-ol-b-4-a", topicId: "polish-3-3", conceptId: "wyobraz-sobie-jestes-marcela-pierwszego-spotykasz",
+    section: "B", questionRef: "2026 OL Section B Q4(a)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Wyobraź sobie, że jesteś Marcelą z tekstu pierwszego. Spotykasz koleżankę Jolę. Uzupełnij dialog. Użyj około 100 słów.\nJola: Cześć Marcelo! Widziałam na Instagramie twoje zdjęcia ze Śnieżki! Jak było w górach?\nMarcela:\nJola: Pogoda wam dopisała?\nMarcela:\nJola: Przypomniała mi się nasza klasowa wycieczka do Zakopanego. Co najbardziej ci się tam podobało?\nMarcela:\nJola: A pamiętasz, jak Janek zgubił swój plecak?\nMarcela:\nJola: Co planujesz robić w kolejny weekend? Może pojedziemy gdzieś razem?\nMarcela:",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (a) — answer in Polish",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2026 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2026-ol-b-4-b", topicId: "polish-3-3", conceptId: "podstawie-ponizszych-zdjec-opisz-jak-adam",
+    section: "B", questionRef: "2026 OL Section B Q4(b)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Na podstawie poniższych zdjęć opisz, jak Adam zamierza urządzić pokój, w którym będzie mieszkał na studiach. Użyj około 100 słów.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (b) — answer in Polish",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2026 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2026-ol-b-4-c", topicId: "polish-3-3", conceptId: "napisz-notatke-temat-przewidywanej-pogody-dla",
+    section: "B", questionRef: "2026 OL Section B Q4(c)",
+    stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+    questionText: "Napisz notatkę na temat przewidywanej pogody dla Polski, odwołując się do mapy zamieszczonej poniżej. Użyj około 100 słów. Rozwiń następujące punkty:\n• Na kiedy jest ta prognoza.\n• Miejscowości z najlepszą pogodą. Uzasadnij.\n• Pogoda na zachodzie i w centrum Polski.\n• Temperatury dzienne we Wrocławiu, Szczecinie i Lublinie.\n• Temperatury w nocy – gdzie najcieplej, gdzie najzimniej.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 4",
+          "title": "Zadanie 4 (c) — answer in Polish",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2026 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2026-ol-b-5-a", topicId: "polish-3-3", conceptId: "ostatni-dzwonek-zredaguj-wpis-pamietnika-ktorym",
+    section: "B", questionRef: "2026 OL Section B Q5(a)",
+    stem: "Wykonaj zadanie (a) lub (b), lub (c).",
+    questionText: "Ostatni dzwonek. Zredaguj wpis do pamiętnika, w którym opiszesz swoje przeżycia. Użyj około 100 słów. Rozwiń następujące punkty:\n• Poranny stres.\n• Droga do szkoły.\n• Ostatnia szkolna uroczystość.\n• Mój ulubiony nauczyciel.\n• Trudne pożegnania.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (a) — answer in Polish",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2026 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2026-ol-b-5-b", topicId: "polish-3-3", conceptId: "chcesz-zarezerwowac-dla-swojej-rodziny-nocleg",
+    section: "B", questionRef: "2026 OL Section B Q5(b)",
+    stem: "Wykonaj zadanie (a) lub (b), lub (c).",
+    questionText: "Chcesz zarezerwować dla swojej rodziny nocleg w hotelu. Napisz e‐mail do hotelu. Użyj około 100 słów. Rozwiń następujące punkty:\n• Planowana data przyjazdu; na ile dni.\n• Rodzaj pokoju – dla ilu osób, widok z okna (morze, góry, las itp.).\n• Dostępność i cena.\n• Udogodnienia, jak na przykład: parking, basen, SPA.\n• Posiłki wegetariańskie.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (b) — answer in Polish",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC548GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2026 Ordinary Level, p.10 — © State Examinations Commission.",
+    id: "pl-2026-ol-b-5-c", topicId: "polish-3-3", conceptId: "moj-wymarzony-zawod-zredaguj-wpis-blog",
+    section: "B", questionRef: "2026 OL Section B Q5(c)",
+    stem: "Wykonaj zadanie (a) lub (b), lub (c).",
+    questionText: "Mój wymarzony zawód. Zredaguj wpis na blog. Użyj około 100 słów. Rozwiń następujące punkty:\n• Zawód, który chciałbyś wykonywać. Wyjaśnij dlaczego.\n• Droga do zdobycia wymarzonego zawodu.\n• Cechy charakteru potrzebne do wykonywania tego zawodu.\n• Typowy dzień w pracy.\n• Plusy i minusy tego zawodu.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Zadanie 4: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)",
+                "Zadanie 5: (a) lub (b), lub (c)",
+                "(30 marks: Content 15 marks, Expression 15 marks)"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Content - relevant",
+                                        "Coherence very good",
+                                        "Communication intention fulfilled",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Content - relevant but limited",
+                                        "Coherence good",
+                                        "Communication intention more or less respected",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Content – very limited",
+                                        "Coherence fair",
+                                        "Communication intention struggling for accuracy",
+                                        "Many mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good vocabulary",
+                                        "Rare grammar errors",
+                                        "Minor loan translations",
+                                        "Words mostly spelt correctly"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Good vocabulary",
+                                        "Grammar correct more often than incorrect",
+                                        "Few loan translations",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Poor vocabulary",
+                                        "Grammar incorrect more often than correct",
+                                        "Big interference form English",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ZADANIE 5",
+          "title": "Zadanie 5 (c) — answer in Polish",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Polish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
     },
   } as SecCard,
 ];

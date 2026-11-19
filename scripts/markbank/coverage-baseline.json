@@ -648,19 +648,19 @@
     "refsHash": "c8412e48ab29b939"
   },
   "polish": {
-    "cards": 237,
-    "contentHash": "408ba0b39d9d0167",
+    "cards": 805,
+    "contentHash": "ab87a74dac9ca058",
     "coveragePct": 100.0,
-    "covered": 243,
-    "excluded": 310,
-    "leaves": 553,
+    "covered": 823,
+    "excluded": 0,
+    "leaves": 823,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 17,
-      "hash": "593a0709ee51ab08"
+      "count": 32,
+      "hash": "6a6c3eeffb300707"
     },
-    "refsHash": "727a4af11e33aa55"
+    "refsHash": "c7cc349f46545b73"
   },
   "politics-and-society": {
     "cards": 623,
