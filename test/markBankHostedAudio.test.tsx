@@ -23,11 +23,12 @@ import { readFileSync } from 'node:fs';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 import AudioSourcePlayer from '../components/MarkBank/AudioSourcePlayer';
+import VideoSourcePlayer from '../components/MarkBank/VideoSourcePlayer';
 import { audioPlaybackUrl, hostedAudioPath, secAudioStoragePath } from '../components/MarkBank/audioStorage';
 import { builtDecks, loadCards } from '../components/MarkBank/deck';
 import HOSTED_AUDIO from '../components/MarkBank/hostedAudio.json';
 import manifest from '../scripts/markbank/audio-hosting/audio-manifest.json';
-import type { CardAudioMaterial } from '../types/markBank';
+import type { CardAudioMaterial, CardVideoMaterial } from '../types/markBank';
 import { HOSTED_AUDIO_MISSING } from './fixtures/hostedAudioMissing';
 
 interface HostedRecording {
@@ -55,7 +56,7 @@ const storageUrl = (path: string) =>
 const ATLAS_FILES = import.meta.glob<{ source: CardAudioMaterial }[]>('../data/*Audio.json', { eager: true, import: 'default' });
 const ATLAS_SOURCES = Object.values(ATLAS_FILES).flatMap(recordings => recordings.map(r => r.source));
 
-describe('hosted SEC listening recordings', () => {
+describe('hosted SEC listening recordings and videos', () => {
   it('stores June recordings by year and file id, and deferred ones beside them', () => {
     expect(secAudioStoragePath('https://www.examinations.ie/archive/exampapers/2012/LC011ZLPO17EV.mp3'))
       .toBe('audio/2012/LC011ZLPO17EV.mp3');
@@ -63,6 +64,13 @@ describe('hosted SEC listening recordings', () => {
     expect(secAudioStoragePath('https://www.examinations.ie/archive/deferredexams/2022/LC001ZLP017IV.mp3'))
       .toBe('audio/2022/LC001ZLP017IV-deferred.mp3');
     expect(secAudioStoragePath('https://example.com/2022/LC001ZLP017IV.mp3')).toBeNull();
+    // Videos (LCVP Link Modules) sit beside the recordings, by the same rules.
+    expect(secAudioStoragePath('https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4'))
+      .toBe('video/2015/LC462CLPO31EV.mp4');
+    expect(secAudioStoragePath('https://www.examinations.ie/archive/deferredexams/2023/LC462CLP031EV.mp4'))
+      .toBe('video/2023/LC462CLP031EV-deferred.mp4');
+    expect(secAudioStoragePath('https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov'))
+      .toBe('video/2026/LC462CLP031EV.mov');
     const elsewhere = { playbackUrl: 'https://example.com/a.mp3', canonicalUrl: 'https://example.com/a.mp3' };
     expect(audioPlaybackUrl(elsewhere)).toBe('https://example.com/a.mp3');
   });
@@ -92,17 +100,18 @@ describe('hosted SEC listening recordings', () => {
       && e.storage.size === e.bytes
       && e.storage.md5Hash === e.md5
       && e.storage.sha256Metadata === e.sha256
-      && e.storage.contentType === 'audio/mpeg'
+      && e.storage.contentType === ({ mp3: 'audio/mpeg', mp4: 'video/mp4', mov: 'video/quicktime' } as Record<string, string>)[path.split('.').pop()!]
     )).map(([path]) => path);
     expect(wrong).toEqual([]);
     expect([...HOSTED_AUDIO]).toEqual(entries.filter(([, e]) => e.storage).map(([path]) => path).sort());
   });
 
-  it('hosts every live listening recording, or pins it as still missing', async () => {
-    const sources: CardAudioMaterial[] = [...ATLAS_SOURCES];
+  it('hosts every live recording and video, or pins it as still missing', async () => {
+    const sources: (CardAudioMaterial | CardVideoMaterial)[] = [...ATLAS_SOURCES];
     for (const deck of builtDecks()) {
       for (const card of await loadCards(deck.subjectId, deck.level)) {
         if (card.audioMaterial) sources.push(card.audioMaterial);
+        if (card.videoMaterial) sources.push(card.videoMaterial);
       }
     }
     expect(sources.length).toBeGreaterThan(ATLAS_SOURCES.length);
@@ -110,7 +119,7 @@ describe('hosted SEC listening recordings', () => {
     const missing = new Set<string>();
     for (const audio of sources) {
       const path = secAudioStoragePath(audio.canonicalUrl);
-      if (!path) { problems.add(`not an SEC archive recording: ${audio.canonicalUrl}`); continue; }
+      if (!path) { problems.add(`not an SEC archive recording or video: ${audio.canonicalUrl}`); continue; }
       const entry = MANIFEST[path];
       if (!hostedAudioPath(audio.canonicalUrl)) { missing.add(path); continue; }
       if (entry.canonicalUrl !== audio.canonicalUrl) problems.add(`${path} is a copy of ${entry.canonicalUrl}`);
@@ -143,6 +152,19 @@ describe('hosted SEC listening recordings', () => {
     expect(container.querySelector('p')!.textContent).toBe(source.presentationNote);
     fireEvent.error(player);
     expect(screen.getByRole('link', { name: 'Open the SEC recording' })).toHaveAttribute('href', source.canonicalUrl);
+  });
+
+  it('plays a video without a copy exactly as before, linking to the SEC video', () => {
+    const source: CardVideoMaterial = {
+      kind: 'source-video', label: 'Link Modules', title: 'Video',
+      playbackUrl: 'https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4',
+      canonicalUrl: 'https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4',
+      secFileid: 'LC462CLP031EV.mp4', attribution: '© State Examinations Commission.', presentationNote: 'Watch the video.',
+    };
+    expect(hostedAudioPath(source.canonicalUrl)).toBeNull();
+    const { container } = render(<VideoSourcePlayer source={source} />);
+    expect(container.querySelector('video')).toHaveAttribute('src', source.playbackUrl);
+    expect(screen.getByRole('link', { name: 'Open the official SEC video' })).toHaveAttribute('href', source.canonicalUrl);
   });
 
   it('lets every page load media from Firebase Storage', () => {

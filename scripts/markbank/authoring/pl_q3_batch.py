@@ -21,6 +21,7 @@ evidence.
 import collections
 import json
 import os
+import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -172,11 +173,20 @@ def old_exam_row(year, level, letter, P, topic_for):
     and its essay 7; 2020 and earlier number the Części themselves, 1 to 3 or 4.
     Each number is checked against the census's sections."""
     fileid = f'LC548{letter}LP000EV.pdf'
-    with open(os.path.join(ANSWERS, str(year), f'{fileid}.json'), encoding='utf-8') as fh:
-        ns = [q['n'] for q in json.load(fh)['q']]
     sections = {}
     for a in P.all_asks():
         sections.setdefault(a.section, set()).add(a.q)
+    path = os.path.join(ANSWERS, str(year), f'{fileid}.json')
+    if not os.path.exists(path):
+        # No answer map (2015): number the Części 1 to 3, the convention every
+        # other old-exam map uses, so a later map lines up with these tags.
+        order = [r for r in ROMAN if r in sections]
+        return {'subjectId': 'polish', 'level': LEVEL_WORD[level], 'lang': 'ev', 'year': year,
+                'fileid': fileid, 'paperKey': 'single',
+                'q': [{'n': str(i + 1), 'primary': topic_for(year, r)} for i, r in enumerate(order)]}
+    with open(path, encoding='utf-8') as fh:
+        mapped = json.load(fh)['q']
+    ns = [q['n'] for q in mapped]
     if year == 2021:
         first = sorted(sections['I'])
         if ns != [str(q) for q in first] + [str(len(first) + 1)] or set(sections) != {'I', 'II'}:
@@ -184,9 +194,17 @@ def old_exam_row(year, level, letter, P, topic_for):
         q = ([{'n': str(n), 'primary': topic_for(year, 'I')} for n in first]
              + [{'n': ns[-1], 'primary': topic_for(year, 'II')}])
     else:
-        if set(sections) != set(ROMAN[:len(ns)]) or ns != [str(i) for i in range(1, len(ns) + 1)]:
-            raise ValueError(f'{year}: answer map {ns} does not match the Części {sorted(sections)}')
-        q = [{'n': n, 'primary': topic_for(year, ROMAN[int(n) - 1])} for n in ns]
+        # Each entry names its Część ("Część III", "CZĘŚĆ III"); a map may give
+        # the essay's two titles an entry each (2016: 3 and 4 are both III).
+        romans = []
+        for entry in mapped:
+            m = re.match(r'^(?:Część|CZĘŚĆ)\s+(I{1,3})$', entry.get('label', '').strip())
+            if not m:
+                raise ValueError(f'{year}: answer map entry {entry["n"]} label {entry.get("label")!r}')
+            romans.append(m.group(1))
+        if set(romans) != set(sections):
+            raise ValueError(f'{year}: answer map Części {sorted(set(romans))} != census {sorted(sections)}')
+        q = [{'n': n, 'primary': topic_for(year, r)} for n, r in zip(ns, romans)]
     return {'subjectId': 'polish', 'level': LEVEL_WORD[level], 'lang': 'ev', 'year': year,
             'fileid': fileid, 'paperKey': 'single', 'q': q}
 
