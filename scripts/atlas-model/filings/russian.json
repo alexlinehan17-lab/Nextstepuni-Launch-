@@ -1,0 +1,303 @@
+{
+  "v": 1,
+  "subject": "russian",
+  "headingSource": "Current Russian curriculum outline: one identical heading per part-level card topic, shared with the Atlas. Russian has no separate exam-topic heading list.",
+  "groups": [
+    {
+      "id": "russian-0",
+      "level": "all",
+      "label": "Basic Communicative Proficiency",
+      "topics": [
+        "russian-0-0",
+        "russian-0-1",
+        "russian-0-2",
+        "russian-0-3",
+        "russian-0-4",
+        "russian-0-5",
+        "russian-0-6",
+        "russian-0-7",
+        "russian-0-8",
+        "russian-0-9",
+        "russian-0-10",
+        "russian-0-11",
+        "russian-0-12",
+        "russian-0-13",
+        "russian-0-14"
+      ]
+    },
+    {
+      "id": "russian-1",
+      "level": "all",
+      "label": "Language Awareness",
+      "topics": [
+        "russian-1-0",
+        "russian-1-1",
+        "russian-1-2",
+        "russian-1-3",
+        "russian-1-4"
+      ]
+    },
+    {
+      "id": "russian-2",
+      "level": "all",
+      "label": "Cultural Awareness",
+      "topics": [
+        "russian-2-0",
+        "russian-2-1",
+        "russian-2-2",
+        "russian-2-3",
+        "russian-2-4",
+        "russian-2-5",
+        "russian-2-6",
+        "russian-2-7",
+        "russian-2-8",
+        "russian-2-9",
+        "russian-2-10",
+        "russian-2-11",
+        "russian-2-12"
+      ]
+    },
+    {
+      "id": "russian-3",
+      "level": "all",
+      "label": "Written Paper — Task Types",
+      "topics": [
+        "russian-3-0",
+        "russian-3-1",
+        "russian-3-2",
+        "russian-3-3",
+        "russian-3-4",
+        "russian-3-5",
+        "russian-3-6",
+        "russian-3-7",
+        "russian-3-8",
+        "russian-3-9"
+      ]
+    }
+  ],
+  "asks": {
+    "ru-2021-hl-c1-1-i": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-c1-2-ii": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-c1-3-i": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-c1-3-ii": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-c1-3-iii": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-c1-4-i": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-c1-4-ii": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-c2-1": [
+      [
+        "russian-3-1"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-c2-2": [
+      [
+        "russian-3-1"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-c2-3": [
+      [
+        "russian-3-1"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-c2-4": [
+      [
+        "russian-3-1"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-la2-ii": [
+      [
+        "russian-3-2"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-ca1": [
+      [
+        "russian-2-0"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-sd": [
+      [
+        "russian-3-3"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-gr": [
+      [
+        "russian-3-7"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-gw": [
+      [
+        "russian-3-9"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-se": [
+      [
+        "russian-3-8"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l1-1": [
+      [
+        "russian-0-8"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l1-2": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l1-3": [
+      [
+        "russian-0-9"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l1-4": [
+      [
+        "russian-0-8"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l2-1-i": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l2-1-ii": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l2-2-i": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l2-2-ii": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l2-3": [
+      [
+        "russian-0-11"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l2-4": [
+      [
+        "russian-0-6"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l3-1-i": [
+      [
+        "russian-0-8"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l3-1-ii": [
+      [
+        "russian-0-9"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l3-2": [
+      [
+        "russian-0-8"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l3-3-i": [
+      [
+        "russian-0-2"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l3-3-ii": [
+      [
+        "russian-2-6"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l3-4": [
+      [
+        "russian-2-5"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l4-1-i": [
+      [
+        "russian-0-3"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l4-1-ii": [
+      [
+        "russian-0-10"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l4-2": [
+      [
+        "russian-0-4"
+      ],
+      "x"
+    ],
+    "ru-2021-hl-l4-3": [
+      [
+        "russian-0-10"
+      ],
+      "x"
+    ]
+  },
+  "releaseScope": "New or changed asks replayed after the 19 November release. Combine with the coordinator’s independent Stage 1r filings before enabling the single model; unchanged existing asks are deliberately not re-filed here."
+}

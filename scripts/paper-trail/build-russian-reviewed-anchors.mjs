@@ -8,7 +8,11 @@ import { validateReviewedRussianQuestionTopics } from '../markbank/russianJointT
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const read = file => JSON.parse(fs.readFileSync(path.join(ROOT, file), 'utf8'));
 const cards = read('components/MarkBank/cards/russian/reviewed.json');
-const sources = read('scripts/markbank/authoring/russian-reviewed-sources.json');
+const sitting = process.argv[2];
+if (sitting && !/^\d{4}:(higher|ordinary)$/.test(sitting)) throw new Error('Expected year:level');
+const sources = read('scripts/markbank/authoring/russian-reviewed-sources.json')
+  .filter(source => !sitting || `${source.year}:${source.level}` === sitting);
+if (!sources.length) throw new Error('No reviewed Russian sources for the selected sitting');
 const tagPath = 'scripts/paper-trail/topic-tags/tags/russian.json';
 const tags = read(tagPath);
 const write = (file, data) => {
@@ -35,7 +39,7 @@ for (const fileid of new Set(sources.map(source => `${source.year}/${source.pape
     const card = cards.find(card=>card.id===task.id);
     const joint = reviewedRussianJointTask(task, card);
     const questions = joint ?? [{
-      n: task.id.replace(/^ru-\d+-[a-z]+-/, ''), questionRef: task.questionRef,
+      n: task.atlasQuestionKey ?? task.id.replace(/^ru-\d+-[a-z]+-/, ''), questionRef: task.questionRef,
       questionPages: task.questionPages ?? task.paperPages, schemePages: task.schemePages,
     }];
     for (const original of questions) {
@@ -43,9 +47,12 @@ for (const fileid of new Set(sources.map(source => `${source.year}/${source.pape
       const question = {n,label:original.questionRef.replace(/^\d+ (?:HL|OL) /,''),printOrder:map.q.length+1,
         pP:original.questionPages[0],pY:[0,1],paperRegion:task.paperPages.map(p=>({p,r:[0,0,1,1]})),
         region:original.schemePages.map(p=>({p,r:[0,0,1,1]})),mode:'pagejump',conf:1,
-        ...(joint ? {markBankCardId:card.id} : {})};
+        ...((joint || task.atlasQuestionKey) ? {markBankCardId:card.id} : {})};
       const existing = map.q.find(row=>row.n===n);
-      if(existing)Object.assign(existing,question,{printOrder:existing.printOrder});
+      if(existing) {
+        Object.assign(existing,question,{printOrder:existing.printOrder});
+        if(!joint && !task.atlasQuestionKey) delete existing.markBankCardId;
+      }
       else map.q.push(question);
       const existingTag=tag.q.find(row=>row.n===n);
       const questionTag=mergeRussianQuestionTag(existingTag,original,task,card);
@@ -57,7 +64,6 @@ for (const fileid of new Set(sources.map(source => `${source.year}/${source.pape
   map.maxCropPages=Math.max(3,...tasks.map(task=>Math.max(...task.paperPages)-Math.min(...task.paperPages)+1));
   write(file,map);
   write(`public/paper-answers/${fileid}.json`,map);
-  write(`public/paper-anchors/${fileid}.json`,map);
 }
 fs.writeFileSync(path.join(ROOT,tagPath),JSON.stringify(tags,null,1)+'\n');
 // Keep the generated index's answer chips in sync with these reviewed maps.
