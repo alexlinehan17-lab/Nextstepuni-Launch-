@@ -495,7 +495,7 @@
     "tasks": 18,
     "marks": 280,
     "selectionDecisions": "Original survey/choice pools, paired snack merits, calcium and Vitamin C headings, exact packaging quotas, vegetable category caps, both separately priced B2(b) romans, eight coherent bacterium alternatives (seven named and one open), all five sociology definitions and three compulsory change categories. Source gaps visible; no model answers invented.",
-    "unresolvedNumericSourceAmbiguity": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance."
+    "unresolvedNumericSourceAmbiguity": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. The card assesses the task against the printed total (20) and quotes both lines. Review ONE bacterium and every required heading against the original guidance."
   },
   "sectionCReview": {
     "tasks": 21,
@@ -577,10 +577,10 @@
     "reconciliation": "2019 Higher 51/51 original leaves and 51 priced tasks, zero sitting opens/exclusions/continuity flags. Lane 1796 cards (977 Higher / 819 Ordinary), 1746/1881 raw leaves covered, 135 open, zero orphan/unparsed/excluded, 13 flags.",
     "preservation": "Every earlier authored card and all 926 earlier emitted Higher blocks, unrelated decks, sizes/showcase subjects, full and decoded non-HE Atlas records, unrelated HE mappings and every other HE raw census sitting unchanged. Frozen identity hashes unchanged; 51 additions explicitly pinned.",
     "browser": "Parent-owned/pending; both original input crops individually visually inspected.",
-    "numericAmbiguity": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance."
+    "numericAmbiguity": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. The card assesses the task against the printed total (20) and quotes both lines. Review ONE bacterium and every required heading against the original guidance."
   },
   "unresolvedNumericAmbiguities": [
-    "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance."
+    "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. The card assesses the task against the printed total (20) and quotes both lines. Review ONE bacterium and every required heading against the original guidance."
   ],
   "confidenceOnlyCorrection": {
     "date": "2026-11-10",
@@ -595,6 +595,6 @@
     "numericMarksAvailable": 0,
     "variants": 8,
     "preservation": "All original variant/row IDs, labels, complete source profiles and required counts retained; no models invented. Every other authored record and order unchanged.",
-    "decision": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance."
+    "decision": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. The card assesses the task against the printed total (20) and quotes both lines. Review ONE bacterium and every required heading against the original guidance."
   }
 }
