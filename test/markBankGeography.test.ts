@@ -51,6 +51,7 @@ const DEFERRED_SITTINGS: Record<string, { tasks: number; cards: number; routed: 
   '2022-higher': { tasks: 112, cards: 120, routed: 5 },
   '2023-higher': { tasks: 114, cards: 124, routed: 4 },
   '2024-higher': { tasks: 112, cards: 124, routed: 6 },
+  '2025-higher': { tasks: 109, cards: 120, routed: 5 },
 };
 const deferredTotal = (key: 'tasks' | 'cards' | 'routed') =>
   Object.values(DEFERRED_SITTINGS).reduce((sum, row) => sum + row[key], 0);
@@ -176,7 +177,7 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
     }
 
     const deposition = HIGHER.filter(card =>
-      card.questionRef.startsWith('2025 HL Part 2 Q2B'));
+      card.questionRef.startsWith('2025 HL Part 2 Q2B') && !isDeferred(card));
     expect(deposition.map(card => card.questionRef)).toEqual([
       '2025 HL Part 2 Q2B · Route (i) · one fluvial landform',
       '2025 HL Part 2 Q2B · Route (i) · one coastal landform',
