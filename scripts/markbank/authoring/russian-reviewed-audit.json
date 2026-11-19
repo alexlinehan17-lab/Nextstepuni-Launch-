@@ -4022,6 +4022,14 @@
           "Two rendered tests corrected to select the original answer route before revealing and to await the existing answer animation. All57 sitting/visible-guidance cases passed, then all550 required tests passed."
         ],
         "interruptionRecovery": "Transient ENOSPC opening a log: all JSON parsed and all1001 prior authored records proved intact before rerunning the entire mandatory source/initial gate. Full production build ran after disk preflight and safe download-cache cleanup; no reduced build."
+      },
+      "r4Recheck20261119": {
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2016-ol.json",
+        "cards": [
+          "ru-2016-ol-sa",
+          "ru-2016-ol-ew"
+        ],
+        "releaseComplete": false
       }
     },
     {

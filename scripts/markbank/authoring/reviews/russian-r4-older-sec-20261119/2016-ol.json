@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-11-19T12:12:06.201212+00:00",
+  "archive": {
+    "year": 2016,
+    "level": "ol",
+    "url": "https://www.examinations.ie/archive/markingschemes/2016/LC099GLP000EV.pdf",
+    "filename": "Russian-2016-ol-SEC-fresh-20261119.pdf",
+    "pages": "16",
+    "downloadDone": true,
+    "downloadConfirmation": "Chrome history shows exact completed file and source URL with Show in Finder.",
+    "checkedAt": "2026-11-19T11:42:53.746Z",
+    "bytes": 246893,
+    "sha256": "4242b1be879b2ff9973f75aabf3135478afe1e59b098d2c694ff581d1ce84616",
+    "retainedSha256": "4242b1be879b2ff9973f75aabf3135478afe1e59b098d2c694ff581d1ce84616",
+    "exactMatch": true,
+    "freshDownloadVerified": true,
+    "localFile": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/stale-exclusions-20261119/sec-recheck/2016-ol.pdf"
+  },
+  "cards": [
+    {
+      "id": "ru-2016-ol-sa",
+      "printedMarks": 30,
+      "schemePages": [
+        9
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2016-ol.pdf",
+      "schemeSha256": "4242b1be879b2ff9973f75aabf3135478afe1e59b098d2c694ff581d1ce84616",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2016-ol.json",
+      "finding": "The scheme supplies the task and marking grid/criteria, without a model answer or indicative answer content.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2016-ol-ew",
+      "printedMarks": 30,
+      "schemePages": [
+        10,
+        11
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2016-ol.pdf",
+      "schemeSha256": "4242b1be879b2ff9973f75aabf3135478afe1e59b098d2c694ff581d1ce84616",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2016-ol.json",
+      "finding": "The scheme supplies the task and marking grid/criteria, without a model answer or indicative answer content.",
+      "fixedLine": "The scheme prints no answer for this part."
+    }
+  ],
+  "otherFindings": [
+    {
+      "id": "ru-2016-ol-la1",
+      "decision": "Keep the actual printed Russian equivalents and handwritten-marking guidance; no R4 notice.",
+      "sourcePages": [
+        3
+      ],
+      "reason": "The task asks students to find the Russian equivalents as well as write them in cursive. The scheme supplies all three equivalents and the accepted alternativeдля бизнеса."
+    },
+    {
+      "id": "ru-2016-ol-sd",
+      "decision": "Whole-question assessment out of20; all ten missing-word answers retained, without invented marks per gap.",
+      "sourcePages": [
+        7,
+        8
+      ],
+      "workedExample": "Question4 of the first interview is already complete in the paper, so it is not an ask."
+    }
+  ],
+  "sourceReview": "All relevant scheme pages read in full as original-page images and extracted text; examples distinguished from prompts. Original downloaded PDF matches the retained source exactly.",
+  "rule": "R4; CARD-STANDARD sections3,5 and10a",
+  "sourceBranch": "wip/russian-2026-11-19",
+  "liveCardsChanged": false
+}

@@ -21877,7 +21877,15 @@
     "component": "000",
     "questionPages": [
       14
-    ]
+    ],
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        9
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2016-ol.json"
+    }
   },
   {
     "id": "ru-2016-ol-ew",
@@ -21897,7 +21905,16 @@
     "component": "000",
     "questionPages": [
       15
-    ]
+    ],
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        10,
+        11
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2016-ol.json"
+    }
   },
   {
     "id": "ru-2016-ol-l1-1-i",

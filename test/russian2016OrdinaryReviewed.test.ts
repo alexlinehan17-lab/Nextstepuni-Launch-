@@ -48,7 +48,7 @@ describe('Russian 2016 Ordinary original-source allocations',()=>{
     const c=get('sd');if(isRubricCard(c))throw new Error('unpriced task');
     expect(c.tariffModel).toEqual({kind:'questionTotal'});expect(c.totalMarks).toBe(20);expect(c.rows).toHaveLength(10);
     expect(c.rows.every(r=>r.marks===null)).toBe(true);expect(c.rows[0].contextNote).toContain('Complete all three interviews');
-    expect(c.rows[0].contextNote).toContain('numeric self-scoring is unavailable');
+    expect(c.rows[0].contextNote).toContain('Assess the whole response against the printed total');
     expect(c.rows[0].contextNote).toContain('Question 4 in the first interview is already complete');
     expect(c.rows[2].verbatim).toBe('скольки/ скольких');
   });

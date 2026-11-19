@@ -180,7 +180,7 @@ def language_and_matching(docs,source):
             c['kind']='question';c['tariffModel']={'kind':'questionTotal'}
             answers=['Kак','сколько','скольки/ скольких','где','Kак','Кто','Kакие','Kогда','Чья','Сколько']
             c['rows']=[{'id':f'gap-{n}','kind':'point','verbatim':answer,'marks':None} for n,answer in enumerate(answers,1)]
-            c['rows'][0]['contextNote']='Complete all three interviews. The scheme publishes 20 marks for the whole exercise and no per-gap allocations. All ten missing-word answers are retained here; numeric self-scoring is unavailable. Question 4 in the first interview is already complete in the original paper and is not an additional gap.'
+            c['rows'][0]['contextNote']='Complete all three interviews. The scheme gives 20 marks for the whole exercise and no per-gap allocations. Assess the whole response against the printed total and all ten missing-word answers. Question 4 in the first interview is already complete in the original paper and is not an additional gap.'
         result.append(c)
     assert len(result)==4 and sum(c['totalMarks'] for c in result)==74
     return result

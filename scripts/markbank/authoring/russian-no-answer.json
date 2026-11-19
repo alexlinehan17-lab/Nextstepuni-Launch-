@@ -399,6 +399,27 @@
       "schemeSha256": "ec7771b35c2c806b9e0f2cc8a35626cd3a8e85a9c991afc8089f4319decc19e4",
       "reviewedAt": "2026-11-19",
       "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2016-hl.json"
+    },
+    "ru-2016-ol-ew": {
+      "printedMarks": 30,
+      "schemePages": [
+        10,
+        11
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2016-ol.pdf",
+      "schemeSha256": "4242b1be879b2ff9973f75aabf3135478afe1e59b098d2c694ff581d1ce84616",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2016-ol.json"
+    },
+    "ru-2016-ol-sa": {
+      "printedMarks": 30,
+      "schemePages": [
+        9
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2016-ol.pdf",
+      "schemeSha256": "4242b1be879b2ff9973f75aabf3135478afe1e59b098d2c694ff581d1ce84616",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2016-ol.json"
     }
   }
 }

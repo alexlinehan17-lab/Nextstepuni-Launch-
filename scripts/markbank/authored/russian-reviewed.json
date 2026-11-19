@@ -142217,7 +142217,7 @@
         "kind": "point",
         "verbatim": "Kак",
         "marks": null,
-        "contextNote": "Complete all three interviews. The scheme publishes 20 marks for the whole exercise and no per-gap allocations. All ten missing-word answers are retained here; numeric self-scoring is unavailable. Question 4 in the first interview is already complete in the original paper and is not an additional gap."
+        "contextNote": "Complete all three interviews. The scheme gives 20 marks for the whole exercise and no per-gap allocations. Assess the whole response against the printed total and all ten missing-word answers. Question 4 in the first interview is already complete in the original paper and is not an additional gap."
       },
       {
         "id": "gap-2",
@@ -142334,7 +142334,15 @@
       "component": "000",
       "questionPages": [
         14
-      ]
+      ],
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          9
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2016-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -142479,7 +142487,7 @@
         "Write 3-5 sentences on TWO of the following topics in Russian or English. Each answer should contain three factual details. Marks are awarded for relevant content and textual coherence.",
         "The quality of the English/Russian will only be an assessment factor insofar as it impedes communication."
       ],
-      "markingGuideNote": "Choose two topics. Each has three content details at four marks full or two marks partial, plus three marks for coherence; there is no published model essay."
+      "markingGuideNote": "The scheme prints no answer for this part. Choose two topics. Each has three content details at four marks full or two marks partial, plus three marks for coherence; there is no published model essay."
     }
   },
   {
@@ -142515,7 +142523,16 @@
       "component": "000",
       "questionPages": [
         15
-      ]
+      ],
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          10,
+          11
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2016-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -142691,7 +142708,7 @@
         "ALL: Allocate a mark for content + expression (ex 24) as indicated below. Allocate half of the available mark for fulfilling the required function/supplying the required information (lexis) and half of available mark for manipulation of the language (accuracy/appropriacy). No marks are awarded for additional information/content.",
         "Write 6-10 sentences on one of the following topics IN RUSSIAN."
       ],
-      "markingGuideNote": "Use the original required information/functions for the chosen prompt. No marks for additional content and no model answer or later-year expression cap is invented."
+      "markingGuideNote": "The scheme prints no answer for this part. Use the original required information/functions for the chosen prompt. No marks for additional content and no model answer or later-year expression cap is invented."
     }
   },
   {
