@@ -196,10 +196,9 @@
     "Native2014video playback has not been verified; official listing/headers/container prefix were verified.",
     "Ten display headings still need coordinator adjudication; shared single-model generation/production integration remain pending.",
     "SEC archive no-answer recheck remains blocked.",
-    "Browser source openings use hash-verified cached PDFs; no hosted availability or signed-in navigation claim.",
-    "Six-card settled-state/full-modal screenshot follow-up remains pending;68 functional/layout cases already passed."
+    "Browser source openings use hash-verified cached PDFs; no hosted availability or signed-in navigation claim."
   ],
-  "releaseStatus": "Unfinished WIP:45 source/application/browser checks passed; visual follow-up,10filing decisions and shared model/video integration pending.",
+  "releaseStatus": "Unfinished WIP:45source/application/browser and visual checks passed;10filing decisions and shared model/video/main integration pending.",
   "displayFilingReview": {
     "asks": 45,
     "firstReaderOriginalPagesSeen": 50,
@@ -227,7 +226,7 @@
   },
   "releaseSnapshot": "https://drive.google.com/file/d/1PHjEcp8s340w5H5clFGdGF_wQb6T98zH/view",
   "verification": {
-    "recordedAt": "2026-11-19T18:52:40.642598+00:00",
+    "recordedAt": "2026-11-19T18:56:13.837635+00:00",
     "preservedLiveAuthoredCards": 518,
     "preservedLiveRuntimeCards": 518,
     "newAsks": 45,
@@ -248,14 +247,14 @@
       "Source syntax and scopedlint",
       "All45cached-original source openings",
       "68phone/desktop light/dark browser cases,0pageerrors and0documentoverflow",
-      "8zero-mark notice interactions add0marks"
+      "8zero-mark notice interactions add0marks",
+      "24follow-up modal-scroll/settled-state cases;11specified images across6cards visually inspected, no persistent contrast defect"
     ],
     "pending": [
       "Native2014video playback has not been verified; official listing/headers/container prefix were verified.",
       "Ten display headings still need coordinator adjudication; shared single-model generation/production integration remain pending.",
       "SEC archive no-answer recheck remains blocked.",
-      "Browser source openings use hash-verified cached PDFs; no hosted availability or signed-in navigation claim.",
-      "Six-card settled-state/full-modal screenshot follow-up remains pending;68 functional/layout cases already passed."
+      "Browser source openings use hash-verified cached PDFs; no hosted availability or signed-in navigation claim."
     ],
     "evidenceHashes": {
       "checks45/complete.json": "4cc069ec7467847c2992c5f942b62c0880dea66ce6f996bd96a3851ea4877f14",
@@ -266,7 +265,8 @@
       "checks45/coverage.log": "e46f2717134b701362dac3400d4e2486df51cb06288674132ef3e2e0df954e6f",
       "checks45/paper-trail.log": "315ec00e625eaddbce9b25562e323f5964dd49ee8c6de13698981a877a7c8bfd",
       "browser45/results.json": "92e9408fca832c7b13f7e69ed46bb421cf9e0fc3caaca3e76b1d6ed805923d3e",
-      "45-new-ask-filing-handoff.json": "acf404ed5a873c9b7934d8fa8d8b99d7731e2f42da9dab5791647246e0ac24bc"
+      "45-new-ask-filing-handoff.json": "acf404ed5a873c9b7934d8fa8d8b99d7731e2f42da9dab5791647246e0ac24bc",
+      "45-visual-inspection.json": "9939bf6727d64f8a116a56151217d882b074b63c1f15cc4e43d06f3a801c0067"
     }
   },
   "correctionReview": {
