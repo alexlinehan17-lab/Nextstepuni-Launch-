@@ -51438,5 +51438,935 @@
    "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
   }
+ },
+ {
+  "id": "pl-2012-hl-i-1-a",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2012,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "zastap-podkreslone-slowo-synonimem-wyrazem-bliskoznacznym",
+  "questionRef": "2012 HL Section I Q1(a)",
+  "questionText": "Zastąp podkreślone słowo synonimem (tj. wyrazem bliskoznacznym). „Syreny alarmowe zawyły.” (akapit 1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "rozbrzmiały",
+      "wydały ostry, donośny, przeciągły dźwięk"
+     ]
+    }
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2012-hl-i-1-b",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2012,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "zastap-podkreslone-slowo-synonimem-wyrazem-bliskoznacznym",
+  "questionRef": "2012 HL Section I Q1(b)",
+  "questionText": "Zastąp podkreślone słowo synonimem (tj. wyrazem bliskoznacznym). „Kiedy zaczęliśmy chełpić się cudem polskiego boomu edukacyjnego.” (akapit 4)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "chwalić się",
+      "pysznić się",
+      "szczycić się"
+     ]
+    }
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2012-hl-i-1-c",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2012,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "zastap-podkreslone-slowo-synonimem-wyrazem-bliskoznacznym",
+  "questionRef": "2012 HL Section I Q1(c)",
+  "questionText": "Zastąp podkreślone słowo synonimem (tj. wyrazem bliskoznacznym). „Liczba studentów wzrosła z mizernych 350 tysięcy.” (akapit 4)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "zaledwie",
+      "marnych"
+     ]
+    }
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2012-hl-i-1-d",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2012,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "zastap-podkreslone-slowo-synonimem-wyrazem-bliskoznacznym",
+  "questionRef": "2012 HL Section I Q1(d)",
+  "questionText": "Zastąp podkreślone słowo synonimem (tj. wyrazem bliskoznacznym). „Coraz powszechniej twierdzi się.” (akapit 9)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "częściej",
+      "ogólniej"
+     ]
+    }
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2012-hl-i-1-e",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2012,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "zastap-podkreslone-slowo-synonimem-wyrazem-bliskoznacznym",
+  "questionRef": "2012 HL Section I Q1(e)",
+  "questionText": "Zastąp podkreślone słowo synonimem (tj. wyrazem bliskoznacznym). „Po odnotowanej zapaści zaczęły odżywać biblioteki.” (akapit 9)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "zły, krytyczny stan czegoś",
+      "załamanie"
+     ]
+    }
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2012-hl-i-2",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2012,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "wygodne-mity-odnosnie-czytelnictwa-polsce-obalane",
+  "questionRef": "2012 HL Section I Q2",
+  "questionText": "Jakie wygodne mity odnośnie do czytelnictwa w Polsce są obalane przez wyniki badań Biblioteki Narodowej? Podaj trzy przykłady.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Brak czasu nie jest głównym powodem nieczytania (np. emeryci i renciści). (akapit 5)",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Internet nie jest winny załamaniu czytelnictwa („tylko” 42 procent internautów nie miało od roku książki w ręku). (akapit 5)",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Sam internet też w sumie nie pomaga w czytaniu książek (jedna trzecia internautów czyta wyłącznie krótsze teksty). (akapit 5)",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2012-hl-i-3",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2012,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "dlaczego-autor-kwestionuje-sukces-polskiego-rynku",
+  "questionRef": "2012 HL Section I Q3",
+  "questionText": "Dlaczego autor kwestionuje sukces polskiego rynku wydawniczego?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "a) Choć obecnie liczbowo wydawanych jest wiele tytułów, ich nakłady nie są zbyt wysokie. (akapit 3)",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "b) Liczbę wydanych tytułów sztucznie zwiększają publikacje naukowe służące budowaniu naukowych karier. (akapit 3)",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2012-hl-i-4-a",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2012,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "gaszczu-ponurej-statystyki-przebija-jednak-slabe",
+  "questionRef": "2012 HL Section I Q4(a)",
+  "questionText": "„Z gąszczu ponurej statystyki przebija jednak słabe światełko.” (akapit 9) Czym według autora jest to słabe światełko?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ponowny rozwój bibliotek: „zaczęły odżywać biblioteki” i „ich popularność rośnie” (akapit 9)",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2012-hl-i-4-b",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2012,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "gaszczu-ponurej-statystyki-przebija-jednak-slabe",
+  "questionRef": "2012 HL Section I Q4(b)",
+  "questionText": "„Z gąszczu ponurej statystyki przebija jednak słabe światełko.” (akapit 9) Jaką rolę przypisuje mu on w kształtowaniu ogólnej kultury w Polsce?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ponieważ biblioteki to główne miejsce kontaktu z książką dla 30 procent czytelników, coraz głośniej mówi się, że ich rozwój jest nie tylko ważnym, ale wręcz niezbędnym warunkiem ożywienia czytelnictwa i kultury w ogóle. (akapit 9)",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2012-hl-i-5",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2012,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "swietle-przedstawionego-artykulu-dlaczego-polska-nazwana",
+  "questionRef": "2012 HL Section I Q5",
+  "questionText": "W świetle przedstawionego artykułu, dlaczego Polska nazwana jest „krajem Koziołka Matołka”? Podaj dwa powody.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. bardzo duża popularność tej książki w Polsce: „Przygody Koziołka Matołka” Kornela Makuszyńskiego to jedna z najczęściej wydawanych pozycji w Polsce w okresie powojennym (akapit 3)",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. nawiązanie do zapaści czytelniczej w Polsce: poprzez nieczytanie Polacy upodobniają się do poziomu intelektualnego Koziołka Matołka (akapity 1, 2, 4, 8 )",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2012-hl-i-6",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2012,
+  "section": "I",
+  "topicId": "polish-3-0",
+  "conceptId": "dotychczas-ksiazka-byla-kluczowym-nosnikiem-wiedzy",
+  "questionRef": "2012 HL Section I Q6",
+  "questionText": "„Dotychczas [książka] była […] kluczowym nośnikiem wiedzy, symbolem demokratyzacji i powszechności. Teraz najwyraźniej staje się częścią kultury wysokiej, dystynkcją oznaczającą przynależność do kulturalnej i społecznej elity.” (akapit 6) Co autor powyższej wypowiedzi ma na myśli i jak postrzega on te zmiany w Polsce?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wcześniej mogliśmy się uczyć prawie wyłącznie z książek, które były symbolem wiedzy i powszechności, tzn. każdy miał do nich dostęp. Miało to pozytywny wpływ na demokratyzację społeczeństw. (akapit 6)",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Autor uważa, że jesteśmy w trakcie transformacji kulturowej, w wyniku której zmienia się miejsce i rola książki „w przestrzeni społecznej”, co z kolei prowadzi do powstania w naszym kraju kulturalnej elity społecznej. (akapit 6)",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Dużą rolę odgrywają w tym procesie „wzorce kultury popularnej, zwłaszcza w wydaniu telewizyjno-serialowym, w której nie ma ani czasu, ani miejsca na książkę.” (akapit 6)",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Proces ten nie dotyczy jedynie książki, lecz również innych form uczestnictwa w kulturze (np. kino). (akapit 7)",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Polskie społeczeństwo podzieliło się na tych, którym telewizor z jego ofertą w zasadzie wystarcza do zaspokojenia potrzeb informacyjno-kulturalnch, oraz na tych, którzy nie rezygnują z korzystania z różnych form kultury. (akapit 7)",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Autor jest zaniepokojony tymi zmianami w Polsce i pyta: „Czyżby więc należało ogłosić zmierzch kultury humanistycznej i nadejście czasów barbarzyństwa?” (akapit 5)",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2012-hl-ii-1",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2012,
+  "section": "II",
+  "topicId": "polish-3-2",
+  "conceptId": "oznacza-rosnacy-spadek-czytelnictwa-dla-demokracji",
+  "questionRef": "2012 HL Section II Q1",
+  "questionText": "„Co oznacza rosnący spadek czytelnictwa dla demokracji, kultury i szans dalszego rozwoju?” (akapit 10) Odpowiedz na powyższe pytanie, przedstawiając swoją opinię. (około 100 słów)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Płynna wypowiedź na temat, przy użyciu około 100 słów",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i płynny przekazać treść – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Zasady – gramatyka i ortografia – 10%",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy :” Its points for this task, as examples, not a checklist: “Należałoby oddzielić czytanie beletrystyki od czytania literatury fachowej.”; “Wolny rynek w Polsce przyniósł ze sobą zalew nowych możliwości, ale też nowych wartości, celów i zainteresowań; zmieniła się telewizja oraz podejście do kul tury, dotychczas głównie finansowanej przez państwo; ludzie zaczęli więcej pracować, ale i bardziej się spieszyć; pojawił się internet; gdzie w tym wszystkim znaleźć miejsce na książkę i czytanie?”; “Czy i jak kultura obroni się, jesli ludzie przestaną z niej korzystać?”; “W jakim kierunku pójdzie rozwój społeczeństwa?”; “Czy rzeczywiście istnieje realne zagrożenie dla kultury i społeczeństwa? Przecież postęp cywilizacyjny idzie naprzód, przybywa specjalistów w różnych dziedzinach, ludzie nadal się kształcą, osiągają wyżyny intelektualne, jedynie może zmienił się sposób docierania do informacji.”; “Może tak naprawdę jest to fałszywy alarm, a proces, którego jesteśmy świadkami jest naturalnym krokiem w rozwoju naszej cywilizacji; zamiast obawiać się zmian, warto przeanalizować nasze indywidualne podejście do tej sprawy: w jaki sposób my sami moglibyśmy w naszym życiu zwiększyć kontakt z Kulturą przez duże K?”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2012-hl-iii-1",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2012,
+  "section": "III",
+  "topicId": "polish-3-2",
+  "conceptId": "napisz-wypracowanie-jeden-nastepujacych-tematow-uzywajac",
+  "questionRef": "2012 HL Section III Q1",
+  "questionText": "Napisz wypracowanie na jeden z następujących tematów, używając około 300 słów: „Czytaj, by żyć!” – Gustave Flaubert",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i płynny przekazać treść – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Zasady – gramatyka i ortografia – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy :” Its points for this task, as examples, not a checklist: “Czytanie jest ważne, potrzebne niektórym jak tlen do życia.”; “Książki mogą informować, inspirować, wychowywać i kształtować ludzkie postawy, być rozrywką i odpoczynkiem od codzienności, przenosić nas w inne wymiary.”; “Znacząca rola rodziców w pierwszych kontaktach dziecka z książką, kształtująca jego nawyk czytania na całe życie.”; “Czy ten, kto nie czyta beletrystyki, jest intelektualnym leniem?”; “Co dają nam książki, a czego brakuje nam w innych formach przekazu, takich jak telewizja, kino czy teatr?”; “Czy audiobook i książka elektroniczna wyprą swoją starszą drukowaną siostrę?”; “Czy życie bez czytania jest możliwe?”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2012-hl-iii-2",
+  "subjectId": "polish",
+  "level": "higher",
+  "year": 2012,
+  "section": "III",
+  "topicId": "polish-3-2",
+  "conceptId": "napisz-wypracowanie-jeden-nastepujacych-tematow-uzywajac",
+  "questionRef": "2012 HL Section III Q2",
+  "questionText": "Napisz wypracowanie na jeden z następujących tematów, używając około 300 słów: We współczesnym społeczeństwie wszystko kręci się wokół „tu i teraz”.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i płynny przekazać treść – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Zasady – gramatyka i ortografia – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy :” Its points for this task, as examples, not a checklist: “maksymalne zużycie zasobów naturalnych na zaspokojenie potrzeb współczesnych pokoleń”; “zanieczyszczenie środowiska naturalnego, czego negatywne skutki odczują dopiero przyszłe pokolenia”; “brak należytego szacunku dla wieku i ludzi starszych”; “lekceważenie historii”; “społeczeństwo „instant”:”; “a) zachcianki dzieci zaspokajane są przez większość rodziców natychmiastowo”; “b) dorośli są pod społeczną presją szybkiego dorobienia się”; “c) tempo pracy i nakręcanie produktywności kosztem zdrowia”; “d) spożywczy przemysł „fast foodów””; “e) automatyzacja naszej rzeczywistości w celu zaoszczędzenia czasu i ułatwienia życia, która często przynosi odwrotne skutki”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
  }
 ]
