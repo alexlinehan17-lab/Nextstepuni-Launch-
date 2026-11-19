@@ -3,6 +3,8 @@ import { browseTopicIdsForQuestion, topicLabel, topicsForPaper } from '../../com
 import { findCanonicalTopic, resolveCurriculumSpecification } from '../../curriculumRegistry';
 import type { AskIndexFile, AskTopicIndexFile } from '../../components/landing/fx-e/ask';
 import { CURRICULUM } from '../../curriculum';
+// The single model's filings, registered by ask-topics.mjs before it builds (it bundles without Vite).
+export { registerAtlasModelFile } from '../../components/PaperTrail/atlasModel';
 
 /** Curriculum names for canonical tag ids that the Paper Trail label table
  * predates (english-12-17 is "Pride and Prejudice (Jane Austen)"). A Topics

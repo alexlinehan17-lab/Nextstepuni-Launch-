@@ -131,6 +131,8 @@ const PRECACHE_IGNORES = [
   '**/rubric-*.js',
   '**/exam-topic-data-*.js', '**/paper-topic-data-*.js',
   '**/markbank-french-*.js',
+  // Each subject filing for the Mark Bank and Topic Atlas (data/atlasModel/<subject>.json) loads when that subject opens.
+  '**/atlas-asks-*.js',
   '**/catchUpLaneData*.js', '**/commandWordData*.js',
   '**/vendor-three*.js',
   // PDF export libraries — only pulled in when a student or GC actually
@@ -371,6 +373,9 @@ export default defineConfig(() => {
               // reading and listening task, 2010-2026) are the largest exam-topic
               // registry; on their own they keep exam-topic-data under the 3 MiB
               // precache ceiling instead of silently dropping it from the cache.
+              // The single model: one small eager heading manifest, and one lazy chunk per subject's filing.
+              const atlasModel = id.match(/\/data\/atlasModel\/([a-z-]+)\.json$/);
+              if (atlasModel) return atlasModel[1] === 'headings' ? 'atlas-model-headings' : `atlas-asks-${atlasModel[1]}`;
               if (id.includes('/data/examTopics/french-')) return 'exam-topic-french';
               if (id.includes('/data/examTopics/')) return 'exam-topic-data';
               if (id.includes('/data/paperTrail/')) return 'paper-topic-data';

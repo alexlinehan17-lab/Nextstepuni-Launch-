@@ -8,7 +8,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
 import biologyReference from '../data/examTopics/biology.json';
 import biologyEvidence from '../data/examTopics/biology-local-crosswalk.json';
 import curriculumCrosswalk from '../data/examTopics/biology-curriculum-crosswalk.json';
@@ -33,6 +33,8 @@ import {
   resolveCurriculumSpecification,
 } from '../curriculumRegistry';
 import preservationBaseline from './fixtures/biologyTopicQuestionBaseline.json';
+import { loadAllAtlasModels as loadAtlasModelsForTest } from '../components/PaperTrail/atlasModel';
+beforeAll(() => loadAtlasModelsForTest());
 
 const ROOT = process.cwd();
 const VARIANTS = [
@@ -94,7 +96,9 @@ describe('Biology exam-topic registry', () => {
       .toEqual(referenceTopics.map(topic => topic.id));
     expect(taxonomy.topics.map(topic => topic.label))
       .toEqual(referenceTopics.map(topic => topic.label));
-    expect(topicsForSubject('biology')).toHaveLength(122);
+    // The registry keeps all 122 reference topics (above). Biology's Atlas now browses the single model's one list,
+    // the 66 new-course headings its cards are filed under (components/PaperTrail/atlasModel.ts).
+    expect(topicsForSubject('biology')).toHaveLength(66);
   });
 
   it('bridges every practice bucket to the correct canonical specification', () => {
@@ -316,12 +320,12 @@ describe('Biology exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 534 entitled questions through all 122 topic buckets', () => {
+  it('surfaces all 534 entitled questions, and the carded deferred sittings\', through the single model\'s 66 headings', () => {
     expect(subjectAtlasStats('biology')).toMatchObject({
       // + the carded deferred sittings' printed questions (all six: 2022 and 2023 Higher and Ordinary, 2024 and
       // 2025 Higher, 17 each).
       questions: 534 + 17 * 6,
-      topics: 122,
+      topics: 66,
       yearMin: 2010,
       yearMax: 2026,
     });

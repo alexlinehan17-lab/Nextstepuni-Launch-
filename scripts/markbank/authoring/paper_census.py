@@ -2961,7 +2961,12 @@ def census_it(subject, year, level):
     S = ItScheme(year, level, subject)
     texts = {}
     for section, item, letter, text, _page in P.asks():
-        texts[(section, item, letter, None)] = text
+        # A matching task nested under a lettered part (2013 Ordinary B2(b))
+        # carries its item letter in the fourth slot: "Section B2 Q(b)(a)".
+        if isinstance(letter, tuple):
+            texts[(section, item, letter[0], letter[1])] = text
+        else:
+            texts[(section, item, letter, None)] = text
     for route, item, text, _page in P.essay_asks():
         texts[(f'B3{route}', item, None, None)] = text
     for item, letter, text, _page in P.writing_asks():

@@ -34,6 +34,8 @@ const PhysicalEducationTaskCard = lazy(() => import('./PhysicalEducationTaskCard
 import { audioForPaper } from './paperRecording';
 import FrenchPaperAudio from './FrenchPaperAudio';
 import AudioSourcePlayer from '../MarkBank/AudioSourcePlayer';
+import { asksForQuestion, isModelSubject, markBankLinkForCards } from './atlasModel';
+import type { SecCard } from '../../types/markBank';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
@@ -120,9 +122,117 @@ interface Props {
   saved: boolean;
   onToggleReview: () => void;
   onOpenInPaper: () => void;
+  /** The heading this card is listed under. In the single model a question whose parts sit under several headings
+   *  shows only the parts of this one, with the rest a tap away. */
+  topicId?: string;
+  onOpenTopic?: (topicId: string) => void;
 }
 
-const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, onOpenInPaper }) => {
+/** Printed order of a part from its reference: "Q14(c)(iv)2" reads (c), (iv), 2. Letters, roman numerals and
+ *  trailing numbers each sort by their value, so (i) comes before (iv) and (a) before (b). */
+const ROMAN: Record<string, number> = { i: 1, v: 5, x: 10, l: 50 };
+const romanValue = (r: string) => [...r].reduce((sum, ch, i, all) => (ROMAN[ch] < (ROMAN[all[i + 1]] ?? 0) ? sum - ROMAN[ch] : sum + ROMAN[ch]), 0);
+export function printedPartKey(questionRef: string): number[] {
+  const address = questionRef.replace(/^\d{4} [A-Z]{2} /, '').replace(/^.*?Q\d+/, '');
+  return [...address.matchAll(/\(([^)]+)\)|(\d+)|([A-Z])/g)].map(m => {
+    const token = (m[1] ?? m[2] ?? m[3]).toLowerCase();
+    if (/^\d+$/.test(token)) return 1000 + Number(token);
+    if (/^[ivxl]+$/.test(token) && token !== 'l') return 100 + romanValue(token);
+    return token.charCodeAt(0);
+  });
+}
+const byPrintedOrder = (a: SecCard, b: SecCard) => {
+  const ka = printedPartKey(a.questionRef); const kb = printedPartKey(b.questionRef);
+  for (let i = 0; i < Math.max(ka.length, kb.length); i++) { const d = (ka[i] ?? -1) - (kb[i] ?? -1); if (d) return d; }
+  return 0;
+};
+
+/** The parts of a printed question filed under one heading (atlasModel.ts), lifted from their Mark Bank cards. */
+const PartsOnThisTopic: React.FC<{ sibling: TopicSibling; topicId: string; onOpenTopic?: (id: string) => void }> = ({ sibling, topicId, onOpenTopic }) => {
+  const asks = useMemo(() => asksForQuestion(sibling.subjectId, sibling.year, sibling.level, sibling.fileid, sibling.n), [sibling]);
+  const here = useMemo(() => asks.filter(a => a.topics.some(t => t.id === topicId)), [asks, topicId]);
+  const [cards, setCards] = useState<SecCard[] | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    const ids = new Set(here.map(a => a.cardId));
+    import('../MarkBank/deck').then(({ loadCards }) => loadCards(here[0].subjectId, sibling.level as never))
+      .then(all => { if (!cancelled) setCards(all.filter(c => ids.has(c.id)).sort(byPrintedOrder)); })
+      .catch(() => { if (!cancelled) setCards([]); });
+    return () => { cancelled = true; };
+  }, [here, sibling.level]);
+  const elsewhere = useMemo(() => {
+    const counts = new Map<string, { label: string; parts: number }>();
+    for (const ask of asks) {
+      if (ask.topics.some(t => t.id === topicId)) continue;
+      for (const t of ask.topics) { const c = counts.get(t.id) ?? { label: t.label, parts: 0 }; c.parts++; counts.set(t.id, c); }
+    }
+    return [...counts.entries()];
+  }, [asks, topicId]);
+  const marks = (cards ?? []).reduce((n, c) => n + (c.totalMarks ?? 0), 0);
+  let lastStem = '';
+  // The printed figures these parts point at, once each and before them: shared material travels with each topic.
+  const figures = [...new Map((cards ?? []).flatMap(card => {
+    const figure = 'figure' in card ? card.figure : undefined;
+    return figure && !figure.solution ? [[figure.src, figure] as const] : [];
+  })).values()];
+  return (
+    <div className="px-4 pt-3 pb-4" data-testid="atlas-parts-on-topic">
+      <p className="text-[10px] font-bold uppercase tracking-[0.12em]" style={{ color: '#7a7068' }}>
+        On this topic: {here.length} of {asks.length} parts{cards && marks ? ` · ${marks} marks` : ''}
+      </p>
+      {figures.map(figure => (
+        <img key={figure.src} src={figure.src} alt={figure.alt} loading="lazy" className="mt-2 rounded-md"
+          style={{ maxWidth: 'min(100%, 320px)', border: '1px solid #eeebe6' }} />
+      ))}
+      <ol className="mt-2 space-y-2.5">
+        {(cards ?? []).map(card => {
+          const stem = card.stem && card.stem !== lastStem ? card.stem : '';
+          if (card.stem) lastStem = card.stem;
+          return (
+            <li key={card.id}>
+              {stem && <p className="text-[12.5px] italic mb-1" style={{ color: '#5a5550' }}>{stem}</p>}
+
+              <div className="flex items-baseline gap-3">
+                <span className="shrink-0 text-[12px] font-bold tabular-nums" style={{ color: INK, minWidth: 64 }}>{card.questionRef.replace(/^\d{4} [A-Z]{2} /, '')}</span>
+                <span className="flex-1 text-[13.5px] leading-snug" style={{ color: INK }}>{card.questionText}</span>
+                <span className="shrink-0 text-[12px] font-semibold tabular-nums" style={{ color: '#7a7068' }}>{card.totalMarks}m</span>
+              </div>
+            </li>
+          );
+        })}
+        {!cards && <li className="h-3 rounded-full animate-pulse" style={{ backgroundColor: 'var(--surface-soft)', width: '70%' }} />}
+      </ol>
+      {elsewhere.length > 0 && (
+        <div className="mt-3 flex flex-wrap items-baseline gap-x-3 gap-y-1.5 text-[12.5px]" style={{ color: '#5a5550' }}>
+          <span>The other parts are under</span>
+          {elsewhere.map(([id, e]) => (
+            <button key={id} type="button" onClick={() => onOpenTopic?.(id)} disabled={!onOpenTopic}
+              className="rounded-md px-2 py-0.5 font-semibold underline underline-offset-2"
+              style={{ color: INK, border: '1px solid #d0cdc8' }}>
+              {e.label} · {e.parts} {e.parts === 1 ? 'part' : 'parts'}
+            </button>
+          ))}
+        </div>
+      )}
+      <a href={markBankLinkForCards(here.map(a => a.cardId))} target="_blank" rel="noopener noreferrer"
+        className="mt-3 inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-[13px] font-semibold"
+        style={{ color: INK, border: '1.5px solid #383838' }}>
+        Practise {here.length === 1 ? 'this part' : `these ${here.length} parts`} in the Mark Bank <ExternalLink size={12} />
+      </a>
+    </div>
+  );
+};
+
+const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, onOpenInPaper, topicId, onOpenTopic }) => {
+  // The single model: when this question's parts sit under several headings, the card leads with the parts filed
+  // under this one and keeps the whole printed question one tap away.
+  const splitParts = useMemo(() => {
+    if (!topicId || !isModelSubject(sibling.subjectId)) return false;
+    const asks = asksForQuestion(sibling.subjectId, sibling.year, sibling.level, sibling.fileid, sibling.n);
+    const here = asks.filter(a => a.topics.some(t => t.id === topicId)).length;
+    return here > 0 && here < asks.length;
+  }, [sibling, topicId]);
+  const [wholeOpen, setWholeOpen] = useState(false);
   const [visible, setVisible] = useState(false);
   const [state, setState] = useState<CardState>({ s: 'idle' });
   const [lensOpen, setLensOpen] = useState(false);
@@ -236,8 +346,17 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
       </div>
 
       {/* Body */}
+      {splitParts && topicId && <PartsOnThisTopic sibling={sibling} topicId={topicId} onOpenTopic={onOpenTopic} />}
+      {splitParts && (
+        <button type="button" onClick={() => setWholeOpen(v => !v)} aria-expanded={wholeOpen}
+          className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-[13px] font-semibold"
+          style={{ color: INK, borderTop: '1px solid #eeebe6' }}>
+          {wholeOpen ? 'Hide the whole printed question' : 'Show the whole printed question'}
+          <ChevronDown size={14} className="transition-transform" style={wholeOpen ? { transform: 'rotate(180deg)' } : undefined} />
+        </button>
+      )}
       {visible && audioSource && <FrenchPaperAudio source={audioSource} />}
-      {state.s === 'ready' ? (
+      {splitParts && !wholeOpen ? null : state.s === 'ready' ? (
         // Stays light in dark mode too — the card itself is forced white
         // (design system), so a zinc-950 strip here read as a black band.
         <div className="px-3 pt-3 pb-1 bg-[#fafafa]">

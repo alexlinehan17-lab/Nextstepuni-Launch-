@@ -2,12 +2,13 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
 import { browseTopicIdsForQuestion, topicsForPaper } from '../components/PaperTrail/topics';
 import parityJson from '../data/examTopics/studyclix-question-parity.json';
 import mathsTopicDifferences from './fixtures/studyclixMathsTopicDifferences.json';
 import { examTopicDefinition } from '../data/examTopics/registry';
 import { PAPER_TRAIL_INDEX } from '../paperTrailData';
+import { atlasHeadings, isModelSubject, loadAllAtlasModels } from '../components/PaperTrail/atlasModel';
 import type { PaperLang, PaperLevel } from '../types/paperTrail';
 
 interface CrosswalkTarget {
@@ -42,6 +43,17 @@ const ROOT = process.cwd();
 // shrink-only: never add a key; a key whose heading resolves again must come
 // out. The uniform-heading rollout re-files every Maths part (its Stage 2).
 const PINNED_MATHS_TOPIC_DIFFERENCES = new Set<string>(mathsTopicDifferences.keys);
+
+// The single model (Alex, 18 Nov 2026): a switched-on subject shows ONE heading list and files every part by what
+// it asks. A StudyClix topic that is not on that list (the other course) is not shown at all, so it is not checked;
+// a StudyClix heading whose question the model files elsewhere is a filing difference, listed per subject in
+// test/fixtures/studyclixModelTopicDifferences.json. Shrink-only like the Maths list: a new difference fails, and a
+// listed one that resolves must come off. STUDYCLIX_MODEL_DIFFERENCES_WRITE=1 rewrites the file; it refuses to grow
+// a subject already listed and adds a newly switched-on subject.
+const MODEL_FIXTURE = path.join(__dirname, 'fixtures', 'studyclixModelTopicDifferences.json');
+const modelPinned: Record<string, string[]> = fs.existsSync(MODEL_FIXTURE)
+  ? (JSON.parse(fs.readFileSync(MODEL_FIXTURE, 'utf8')) as { subjects: Record<string, string[]> }).subjects : {};
+beforeAll(() => loadAllAtlasModels());
 const physicalCardCache = new Map<string, Set<string>>();
 
 const physicalCardNumbers = (year: number, fileid: string): Set<string> => {
@@ -102,6 +114,7 @@ describe('StudyClix official-question parity', () => {
   it('resolves every matched StudyClix heading to its official NextStepUni paper card and live-course topic', () => {
     const failures: string[] = [];
     const pinnedStillDiffering = new Set<string>();
+    const modelDiffering: Record<string, string[]> = {};
 
     for (const subject of parityJson.subjects) {
       if (!subject.crosswalkFile) continue;
@@ -175,6 +188,11 @@ describe('StudyClix official-question parity', () => {
             }
             const topicIds = browseTopicIdsForQuestion(paper, question);
             const pinKey = `${crosswalk.subjectId}|${association.topicId}|${association.heading}|${target.fileid}|Q${number}`;
+            if (isModelSubject(crosswalk.subjectId)) {
+              const onList = (atlasHeadings(crosswalk.subjectId) ?? []).some(topic => topic.id === association.topicId);
+              if (onList && !topicIds.includes(association.topicId)) (modelDiffering[crosswalk.subjectId] ??= []).push(pinKey);
+              continue;
+            }
             if (!topicIds.includes(association.topicId) && PINNED_MATHS_TOPIC_DIFFERENCES.has(pinKey)) {
               pinnedStillDiffering.add(pinKey);
               continue;
@@ -201,6 +219,20 @@ describe('StudyClix official-question parity', () => {
       'resolved: remove from test/fixtures/studyclixMathsTopicDifferences.json',
     ).toEqual([]);
     expect(PINNED_MATHS_TOPIC_DIFFERENCES.size).toBeLessThanOrEqual(174);
+
+    const differing = Object.fromEntries(Object.entries(modelDiffering).map(([s, keys]) => [s, [...new Set(keys)].sort()]));
+    if (process.env.STUDYCLIX_MODEL_DIFFERENCES_WRITE) {
+      const grows = Object.entries(differing).flatMap(([s, keys]) => (s in modelPinned ? keys.filter(k => !modelPinned[s].includes(k)) : []));
+      if (grows.length) throw new Error(`refusing to grow the model differences list: ${grows.slice(0, 5).join('; ')}`);
+      fs.writeFileSync(MODEL_FIXTURE, `${JSON.stringify({
+        note: 'Shrink-only (test/studyclixQuestionParity.test.ts). StudyClix headings, in a subject switched on in the single model, whose question the model files under other headings of the one list (each part by what it asks).',
+        subjects: differing,
+      }, null, 1)}\n`);
+    }
+    const newlyDiffering = Object.entries(differing).flatMap(([s, keys]) => keys.filter(k => !modelPinned[s]?.includes(k)));
+    const resolved = Object.entries(modelPinned).flatMap(([s, keys]) => keys.filter(k => !differing[s]?.includes(k)));
+    expect(newlyDiffering.slice(0, 50), `${newlyDiffering.length} StudyClix headings newly filed elsewhere in a model subject`).toEqual([]);
+    expect(resolved.slice(0, 50), 'resolved: rewrite test/fixtures/studyclixModelTopicDifferences.json (STUDYCLIX_MODEL_DIFFERENCES_WRITE=1)').toEqual([]);
   });
 
   it('has no heading left under the generic local-paper/card-missing state', () => {
