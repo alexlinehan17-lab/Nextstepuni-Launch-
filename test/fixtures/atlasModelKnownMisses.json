@@ -1,0 +1,8 @@
+{
+ "note": "Shrink-only (test/atlasModelChecks.test.ts). questions: Atlas subject switched on in the single model -> its in-scope Atlas questions (year|level|booklet|n) with no card.",
+ "questions": {
+  "agricultural-science": [],
+  "biology": [],
+  "chemistry": []
+ }
+}

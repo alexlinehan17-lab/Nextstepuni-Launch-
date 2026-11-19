@@ -1,0 +1,618 @@
+{
+  "reviewedAt": "2026-11-19T10:39:17.147Z",
+  "sitting": "Russian 2020 Higher",
+  "asksCountedFromPapers": 42,
+  "asksCarded": 42,
+  "asksOpen": 0,
+  "primaryTopicMismatches": 0,
+  "headingMismatches": 0,
+  "sourceLinksToRetiredSectionCards": 0,
+  "splitReview": "One card per printed ask. The short essay and guided-writing choices remain one card each. The retired four section cards are replaced by the original individually numbered listening asks.",
+  "categoryReview": "Every listening ask retains its independently reviewed prior per-question topic. All other task topics and headings remain exact. Source records bind the original question and scheme pages.",
+  "rows": [
+    {
+      "id": "ru-2020-hl-c1-1-i",
+      "question": "How do Russians like to celebrate the New Year? Give three details.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2020-hl-c1-1-ii",
+      "question": "What does the author say about going on a cruise? Give three details.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2020-hl-c1-2-i",
+      "question": "How would you describe the weather in Cape Horn? Give two details.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2020-hl-c1-2-ii",
+      "question": "Give three details about the author’s experience of celebrating New Year in South America.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2020-hl-c1-2-iii",
+      "question": "Give two details about how the author describes the Americans.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2020-hl-c1-3-i",
+      "question": "Give three details about the Chinese cruise on New Year’s Eve.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2020-hl-c1-3-ii",
+      "question": "Give two reasons why some people had gone to bed by half past twelve on New Year’s Eve.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2020-hl-c1-4-i",
+      "question": "Why does the author believe there is no holiday feeling in her native town? Give one detail.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2020-hl-c1-4-ii",
+      "question": "What do the people who travel find special about Christmas and New Year? Give one detail.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2020-hl-c2-1",
+      "question": "Describe this person’s experience of school exchanges. Give four details.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        7,
+        8
+      ],
+      "cardPrimary": "russian-3-1",
+      "atlasPrimary": "russian-3-1",
+      "heading": "Summary in English"
+    },
+    {
+      "id": "ru-2020-hl-c2-2",
+      "question": "What differences between the education systems of Brazil and Russia does this student identify? Give four details.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        7,
+        8
+      ],
+      "cardPrimary": "russian-3-1",
+      "atlasPrimary": "russian-3-1",
+      "heading": "Summary in English"
+    },
+    {
+      "id": "ru-2020-hl-c2-3",
+      "question": "Give four details about this person’s experience in France.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        7,
+        8
+      ],
+      "cardPrimary": "russian-3-1",
+      "atlasPrimary": "russian-3-1",
+      "heading": "Summary in English"
+    },
+    {
+      "id": "ru-2020-hl-c2-4",
+      "question": "Give four details about this person’s experience in America.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        7,
+        8
+      ],
+      "cardPrimary": "russian-3-1",
+      "atlasPrimary": "russian-3-1",
+      "heading": "Summary in English"
+    },
+    {
+      "id": "ru-2020-hl-la1-1",
+      "question": "Supply the infinitive/dictionary form of the following verbs from the text.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "cardPrimary": "russian-3-2",
+      "atlasPrimary": "russian-3-2",
+      "heading": "Language Awareness Tasks"
+    },
+    {
+      "id": "ru-2020-hl-la1-2",
+      "question": "Semantic field/семaнтичеcкое поле: in the text find five words related to ‘travel’ and list them in Russian.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "cardPrimary": "russian-3-2",
+      "atlasPrimary": "russian-3-2",
+      "heading": "Language Awareness Tasks"
+    },
+    {
+      "id": "ru-2020-hl-la2",
+      "question": "Indicate the case of the following noun phrases. (You may write your answer in Irish, English or Russian.)",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        9
+      ],
+      "cardPrimary": "russian-3-2",
+      "atlasPrimary": "russian-3-2",
+      "heading": "Language Awareness Tasks"
+    },
+    {
+      "id": "ru-2020-hl-sd",
+      "question": "Read the following paragraphs which describe how you might spend your holidays. Match each paragraph with the headings provided.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "cardPrimary": "russian-3-3",
+      "atlasPrimary": "russian-3-3",
+      "heading": "Structuring Discourse"
+    },
+    {
+      "id": "ru-2020-hl-gr",
+      "question": "Read through the following text. Put the words in brackets into the correct form. All words in brackets are provided in the nominative case. Words supplied in the singular should be left in the singular; those supplied in the plural should be left in the plural. No marks are awarded for incorrectly spelt words or substitute words.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "cardPrimary": "russian-3-7",
+      "atlasPrimary": "russian-3-7",
+      "heading": "Grammar & Language Use"
+    },
+    {
+      "id": "ru-2020-hl-gw",
+      "question": "Write a piece of continuous prose in Russian (140 words) in answer to ONE of the following. In your answer make sure to include ALL the points listed. 1. LETTER You are away from home participating in an exchange. Write a letter to your parents asking them if a new friend can visit you in your home. In your letter make reference to the following: • How your exchange is going • Information about your new friend (physical description; age; character; interests; studying or working etc.) • Possible dates of the visit • Activities planned for the visit. 2. NARRATIVE Write the outline of the story of your favourite book or film. 3. DISCUSSION Discuss the advantages and disadvantages of student exchange programmes.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        13
+      ],
+      "schemePages": [
+        15,
+        16
+      ],
+      "cardPrimary": "russian-3-9",
+      "atlasPrimary": "russian-3-9",
+      "heading": "Guided / Extended Writing (Letter, Continuous Prose)"
+    },
+    {
+      "id": "ru-2020-hl-se",
+      "question": "Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title.\n\nНапишите небольшую статью по–русски размером 50 слов на одну из следующих тем. В свою статью \nвключите пять страноведческих фактов. \n \n1. \nAn córas oideachais i gCónaidhm na Rúise / The education system in the Russian Federation / \nOбразование в Российской Федерции \n \n2. \nAn teaghlach i gCónaidhm na Rúise / The family in the Russian Federation / Семья в Российской \nФедерции \n \n3. \nÁiteanna a mbíonn an-tóir ag turasóirí orthu / áiteanna spéisiúla ó thaobh na staire agus an chultúir de \ni gCónaidhm na Rúise / Places of historic and cultural interest in the Russian Federation / \nДостопримечательности в Российской Федерации \n \n4. \nCeol / ceoltóirí i gCónaidhm na Rúise Music / Music / musicians in the Russian Federation / \nМузыка/музыканты в Российской Федерации \n \n5. \nAn Rúisis in Éirinn / The Russian language in Ireland / Русский язык в Ирландии \n \n",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        12,
+        13,
+        14
+      ],
+      "cardPrimary": "russian-3-8",
+      "atlasPrimary": "russian-3-8",
+      "heading": "Short Essay (~50 Words, HL)"
+    },
+    {
+      "id": "ru-2020-hl-l1-1",
+      "question": "What do these people order to eat and drink? Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        17
+      ],
+      "cardPrimary": "russian-0-9",
+      "atlasPrimary": "russian-0-9",
+      "heading": "Buying Goods & Services"
+    },
+    {
+      "id": "ru-2020-hl-l1-2",
+      "question": "What luggage does this person have?",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        17
+      ],
+      "cardPrimary": "russian-0-8",
+      "atlasPrimary": "russian-0-8",
+      "heading": "Travel & Transport"
+    },
+    {
+      "id": "ru-2020-hl-l1-3",
+      "question": "What is the weather like at the moment? Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        17
+      ],
+      "cardPrimary": "russian-0-2",
+      "atlasPrimary": "russian-0-2",
+      "heading": "Your Region & Locality"
+    },
+    {
+      "id": "ru-2020-hl-l1-4",
+      "question": "Give two details about what this person wants to buy.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        17
+      ],
+      "cardPrimary": "russian-0-9",
+      "atlasPrimary": "russian-0-9",
+      "heading": "Buying Goods & Services"
+    },
+    {
+      "id": "ru-2020-hl-l1-5-i",
+      "question": "Give two details about the classes Tanya will attend in St Petersburg.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        17
+      ],
+      "cardPrimary": "russian-0-3",
+      "atlasPrimary": "russian-0-3",
+      "heading": "Learning"
+    },
+    {
+      "id": "ru-2020-hl-l1-5-ii",
+      "question": "What does Tanya plan to do in Russia after the two weeks of classes?",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        17
+      ],
+      "cardPrimary": "russian-0-8",
+      "atlasPrimary": "russian-0-8",
+      "heading": "Travel & Transport"
+    },
+    {
+      "id": "ru-2020-hl-l2-1-i",
+      "question": "Give two details about Elena’s training as a gymnast.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        18
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits"
+    },
+    {
+      "id": "ru-2020-hl-l2-2-i",
+      "question": "Why did Elena say she chose rhythmic gymnastics?",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        18
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits"
+    },
+    {
+      "id": "ru-2020-hl-l2-2-ii",
+      "question": "How does her participation in sport affect Elena’s life. Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        18
+      ],
+      "cardPrimary": "russian-0-11",
+      "atlasPrimary": "russian-0-11",
+      "heading": "Feelings & Attitudes"
+    },
+    {
+      "id": "ru-2020-hl-l2-3",
+      "question": "What are Elena’s hopes for the future? Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        18
+      ],
+      "cardPrimary": "russian-0-6",
+      "atlasPrimary": "russian-0-6",
+      "heading": "Plans & Future Action"
+    },
+    {
+      "id": "ru-2020-hl-l2-4",
+      "question": "How does Elena spend her free time? Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        18
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits"
+    },
+    {
+      "id": "ru-2020-hl-l2-5",
+      "question": "What other sports is Elena interested in? Give one detail",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        18
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits"
+    },
+    {
+      "id": "ru-2020-hl-l3-1",
+      "question": "According to the advertisement, what does the bikesbooking.com scheme give tourists the freedom to do when visiting different cities? Give two details",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        19
+      ],
+      "cardPrimary": "russian-0-8",
+      "atlasPrimary": "russian-0-8",
+      "heading": "Travel & Transport"
+    },
+    {
+      "id": "ru-2020-hl-l3-2-i",
+      "question": "How do we know that bikesbooking.com is a successful company? Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        19
+      ],
+      "cardPrimary": "russian-0-9",
+      "atlasPrimary": "russian-0-9",
+      "heading": "Buying Goods & Services"
+    },
+    {
+      "id": "ru-2020-hl-l3-2-ii",
+      "question": "What information needs to be provided to bikesbooking.com when making a booking. Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        19
+      ],
+      "cardPrimary": "russian-0-9",
+      "atlasPrimary": "russian-0-9",
+      "heading": "Buying Goods & Services"
+    },
+    {
+      "id": "ru-2020-hl-l3-3-i",
+      "question": "Give two details about the pricing structure offered by this company.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        19
+      ],
+      "cardPrimary": "russian-0-9",
+      "atlasPrimary": "russian-0-9",
+      "heading": "Buying Goods & Services"
+    },
+    {
+      "id": "ru-2020-hl-l3-3-ii",
+      "question": "What additional services are offered by bikesbooking.com? Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        19
+      ],
+      "cardPrimary": "russian-0-9",
+      "atlasPrimary": "russian-0-9",
+      "heading": "Buying Goods & Services"
+    },
+    {
+      "id": "ru-2020-hl-l4-1-i",
+      "question": "Who is Katya? Give three details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "cardPrimary": "russian-0-7",
+      "atlasPrimary": "russian-0-7",
+      "heading": "Events in People's Lives"
+    },
+    {
+      "id": "ru-2020-hl-l4-1-ii",
+      "question": "What does Katya do every summer? Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits"
+    },
+    {
+      "id": "ru-2020-hl-l4-2",
+      "question": "Give two details about what Katya had accomplished by 2017.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "cardPrimary": "russian-0-4",
+      "atlasPrimary": "russian-0-4",
+      "heading": "Work"
+    },
+    {
+      "id": "ru-2020-hl-l4-3-i",
+      "question": "Give two details about the content of Katya’s videos.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits"
+    },
+    {
+      "id": "ru-2020-hl-l4-3-ii",
+      "question": "Give one detail about Katya’s pets.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "cardPrimary": "russian-0-1",
+      "atlasPrimary": "russian-0-1",
+      "heading": "Family & Home"
+    }
+  ]
+}

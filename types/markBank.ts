@@ -504,6 +504,14 @@ export interface SecCardBase extends CardBase {
   // "2026 HL Section L2 Q1" files under 'L2'.
   | 'L'
   | 'L1' | 'L2' | 'L3' | 'L4'
+  // Polish's Listening Comprehension Test prints five parts, "Część A" to
+  // "Część E", each numbering its questions from 1, so the part is in the
+  // address: "2026 HL Section LA Q1" files under 'LA' (pl_listen_specs).
+  | 'LA' | 'LB' | 'LC' | 'LD' | 'LE'
+  // Polish's old examination (2010-2021) prints Część I, II and III -- the
+  // text and its questions, a ~100-word commentary, the essay -- each
+  // numbering from 1: "2020 HL Section III Q1" files under 'III'.
+  | 'II' | 'III'
   // German's two written-production sections, each a choice of (a) or (b):
   // Äußerung zum Thema and Schriftliche Produktion, cited "Section AT Q(a)".
   | 'AT' | 'SP'
@@ -1443,6 +1451,24 @@ export interface FrenchCriterion {
    *  printed rule; absent on every card that prints none, and those score
    *  exactly as before (frenchCriterionMark). */
   lowerScale?: FrenchLowerScale;
+  /** A line the scheme marks by COUNTING items at a printed rate, beside its
+   *  bands: Music Composing Section B, "0.5 mark per correct bass note under
+   *  each chord symbol (0.5 X 20)", "1 mark for each chord that is part of a
+   *  good progression in all chord boxes". The student counts the items they
+   *  got right, 0 to `items`, and the line earns count x `rate`; so
+   *  `permittedMarks` are exactly those products and `maxMarks` is
+   *  `items` x `rate`. The label is the scheme's rate line, verbatim. Set only
+   *  from a printed rate; absent on every other criterion, which scores
+   *  exactly as before (the stored mark is a product in permittedMarks). */
+  counted?: FrenchCountedLine;
+}
+
+/** See FrenchCriterion.counted. */
+export interface FrenchCountedLine {
+  /** Marks per item, as printed ("0.5 mark per", "1 mark for each"). */
+  rate: number;
+  /** How many items the question prints (the "X 20" of "0.5 X 20"). */
+  items: number;
 }
 
 /** See FrenchCriterion.lowerScale. Every string is the scheme's own. */
@@ -2438,6 +2464,14 @@ export function tariffReconciles(card: SecCard): boolean {
         && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
         && criteria.every(criterion => {
           const allowed = criterion.permittedMarks;
+          // A line counted at a printed rate: every count from 0 to the items,
+          // each at the rate, making the line's marks; no bands of its own.
+          if (criterion.counted) {
+            const { rate, items } = criterion.counted;
+            return rate > 0 && Number.isInteger(items) && items > 0 && !criterion.bands
+              && rate * items === criterion.maxMarks
+              && allowed.length === items + 1 && allowed.every((mark, index) => mark === index * rate);
+          }
           if (!allowed.length || Math.min(...allowed) !== 0
             || Math.max(...allowed) !== criterion.maxMarks
             || new Set(allowed).size !== allowed.length

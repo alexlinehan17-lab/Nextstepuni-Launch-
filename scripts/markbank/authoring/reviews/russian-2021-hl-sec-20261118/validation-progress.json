@@ -1,0 +1,318 @@
+{
+  "sourceCases": 16,
+  "sourcePassages": 429,
+  "focusedRuntimeCases": 107,
+  "widerRuntimeCasesPassed": 551,
+  "dependencyInterruptedFiles": 7,
+  "recoveredRuntimeCasesPassed": 49,
+  "runtimeTotalPassed": 707,
+  "coverageCasesPassed": 3,
+  "actualOverlayCards": 1396,
+  "cardLintFindings": 0,
+  "sittingAsksCarded": 41,
+  "sittingAsksCounted": 41,
+  "wholeSubjectAsksCarded": 1438,
+  "wholeSubjectAsksCounted": 1463,
+  "wholeSubjectOpen": 25,
+  "wholeSubjectExcluded": 0,
+  "wholeSubjectStaleExclusionRecords": 254,
+  "wholeSubjectOrphans": 0,
+  "wholeSubjectUnparsed": 0,
+  "preservedEarlierReviewedCards": 1355,
+  "preservedLegacyIds": 199,
+  "applicationTypes": "Passed remote run44394104267 after local4GiB heap exhaustion",
+  "build": "Passed normal production build in run44394104267; generation left source unchanged",
+  "browserReview": "36 sample combinations captured and visually reviewed; essay30/30 save and summary10/10 observed; hosted original pages loaded; embedded SEC audio blocked, official direct link played",
+  "runs": {
+    "app-types.result": {
+      "command": [
+        "node",
+        "--max-old-space-size=4096",
+        "node_modules/typescript/lib/tsc.js",
+        "--noEmit"
+      ],
+      "exitCode": 134,
+      "log": "tmp/russian-review/2021-hl-nov18/app-types.log"
+    },
+    "coverage-fingerprint.result": {
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/markBankCoverage.test.ts",
+        "-t",
+        "russian deck content",
+        "--maxWorkers=1",
+        "--pool=threads"
+      ],
+      "exitCode": 0,
+      "log": "tmp/russian-review/2021-hl-nov18/coverage-fingerprint.log"
+    },
+    "card-lint.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/ru_cardlint.py"
+      ],
+      "exitCode": 0,
+      "log": "tmp/russian-review/2021-hl-nov18/card-lint.log"
+    },
+    "unfinished-seven.result": {
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/russian2015OrdinaryReviewed.test.ts",
+        "test/russian2016OrdinaryReviewed.test.ts",
+        "test/russian2018OrdinaryReviewed.test.ts",
+        "test/russian2019OrdinaryReviewed.test.ts",
+        "test/russian2023OrdinaryReviewed.test.ts",
+        "test/russian2024OrdinaryReviewed.test.ts",
+        "test/russian2026OrdinaryReviewed.test.ts",
+        "--maxWorkers=1",
+        "--pool=threads"
+      ],
+      "exitCode": 0,
+      "log": "tmp/russian-review/2021-hl-nov18/unfinished-seven.log"
+    },
+    "measured-baseline.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/reconcile.py",
+        "russian",
+        "--baseline",
+        "write",
+        "--json",
+        "tmp/russian-review/2021-hl-nov18/measured-ledger.json"
+      ],
+      "exitCode": 120,
+      "log": "tmp/russian-review/2021-hl-nov18/measured-baseline.log"
+    },
+    "remaining-russian-and-required.result": {
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/russian2010HigherReviewed.test.tsx",
+        "test/russian2010OrdinaryReviewed.test.ts",
+        "test/russian2011HigherReviewed.test.ts",
+        "test/russian2011OrdinaryReviewed.test.ts",
+        "test/russian2012ConfidenceReview.test.tsx",
+        "test/russian2012HigherReviewed.test.ts",
+        "test/russian2012OrdinaryReviewed.test.ts",
+        "test/russian2013ConfidenceReview.test.tsx",
+        "test/russian2013HigherReviewed.test.ts",
+        "test/russian2013OrdinaryReviewed.test.ts",
+        "test/russian2014HigherReviewed.test.ts",
+        "test/russian2014OrdinaryReviewed.test.ts",
+        "test/russian2015HigherReviewed.test.ts",
+        "test/russian2015OrdinaryReviewed.test.ts",
+        "test/russian2016HigherReviewed.test.ts",
+        "test/russian2016OrdinaryReviewed.test.ts",
+        "test/russian2017HigherReviewed.test.ts",
+        "test/russian2018HigherReviewed.test.tsx",
+        "test/russian2018OrdinaryReviewed.test.ts",
+        "test/russian2019HigherReviewed.test.tsx",
+        "test/russian2019OrdinaryReviewed.test.ts",
+        "test/russian2020HigherReviewed.test.tsx",
+        "test/russian2021OrdinaryReviewed.test.ts",
+        "test/russian2022HigherReviewed.test.ts",
+        "test/russian2022OrdinaryReviewed.test.ts",
+        "test/russian2023HigherReviewed.test.ts",
+        "test/russian2023OrdinaryReviewed.test.ts",
+        "test/russian2024HigherReviewed.test.ts",
+        "test/russian2024OrdinaryReviewed.test.ts",
+        "test/russian2025HigherReviewed.test.ts",
+        "test/russian2025OrdinaryReviewed.test.ts",
+        "test/russian2026OrdinaryReviewed.test.ts",
+        "test/russianJointQuestions.test.ts",
+        "test/russianVisibleGuidance.test.tsx",
+        "test/markBankCardPreservation.test.ts",
+        "test/curriculumRegistry.test.ts",
+        "test/markBankDeck.test.ts",
+        "--maxWorkers=1",
+        "--pool=threads"
+      ],
+      "exitCode": 1,
+      "log": "tmp/russian-review/2021-hl-nov18/remaining-russian-and-required.log"
+    },
+    "anchors.result": {
+      "command": [
+        "node",
+        "scripts/paper-trail/build-russian-reviewed-anchors.mjs"
+      ],
+      "exitCode": 0,
+      "log": "tmp/russian-review/2021-hl-nov18/anchors.log"
+    },
+    "runtime-generation.result": {
+      "command": [
+        "node",
+        "scripts/markbank/build-russian-reviewed.mjs"
+      ],
+      "exitCode": 0,
+      "log": "tmp/russian-review/2021-hl-nov18/runtime-generation.log"
+    },
+    "focus.result": {
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/russian2021HigherReviewed.test.tsx",
+        "test/russianSummaryLanguageExceptions.test.ts",
+        "test/russian2026Reviewed.test.ts",
+        "test/russianHostedAnswerRoutes.test.ts",
+        "--maxWorkers=1",
+        "--pool=threads"
+      ],
+      "exitCode": 0,
+      "log": "tmp/russian-review/2021-hl-nov18/focus.log"
+    },
+    "reconciliation.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/reconcile.py",
+        "russian",
+        "--json",
+        "tmp/russian-review/2021-hl-nov18/ledger.json"
+      ],
+      "exitCode": 120,
+      "log": "tmp/russian-review/2021-hl-nov18/reconciliation.log"
+    },
+    "preservation.result": {
+      "command": [
+        "python3",
+        "tmp/russian-review/prove-2021-hl-preservation.py"
+      ],
+      "exitCode": 0,
+      "log": "tmp/russian-review/2021-hl-nov18/preservation.log"
+    },
+    "source-tests.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/test_ru_2021_hl_sources.py"
+      ],
+      "exitCode": 0,
+      "log": "tmp/russian-review/2021-hl-nov18/source-tests.log"
+    },
+    "coverage.result": {
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/markBankCoverage.test.ts",
+        "-t",
+        "russian",
+        "--maxWorkers=1",
+        "--pool=threads"
+      ],
+      "exitCode": 1,
+      "log": "tmp/russian-review/2021-hl-nov18/coverage.log"
+    },
+    "wording-preservation.result": {
+      "command": [
+        "python3",
+        "tmp/russian-review/prove-2021-hl-preservation.py"
+      ],
+      "exitCode": 0,
+      "log": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/2021-hl-nov18/wording-preservation.log",
+      "expectedExit": 0
+    },
+    "wording-runtime.result": {
+      "command": [
+        "node",
+        "scripts/markbank/build-russian-reviewed.mjs"
+      ],
+      "exitCode": 0,
+      "log": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/2021-hl-nov18/wording-runtime.log",
+      "expectedExit": 0
+    },
+    "wording-cardlint.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/ru_cardlint.py"
+      ],
+      "exitCode": 0,
+      "log": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/2021-hl-nov18/wording-cardlint.log",
+      "expectedExit": 0
+    },
+    "wording-focused.result": {
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/russian2021HigherReviewed.test.tsx",
+        "test/russianSummaryLanguageExceptions.test.ts",
+        "test/russian2026Reviewed.test.ts",
+        "test/russianHostedAnswerRoutes.test.ts",
+        "test/markBankCardPreservation.test.ts",
+        "test/curriculumRegistry.test.ts",
+        "test/markBankDeck.test.ts",
+        "test/markBankCoverage.test.ts",
+        "--maxWorkers=1",
+        "--pool=threads"
+      ],
+      "exitCode": 1,
+      "log": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/2021-hl-nov18/wording-focused.log",
+      "expectedExit": 0
+    },
+    "wording-baseline.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/reconcile.py",
+        "russian",
+        "--baseline",
+        "write",
+        "--json",
+        "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/2021-hl-nov18/wording-ledger.json"
+      ],
+      "exitCode": 120,
+      "log": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/2021-hl-nov18/wording-baseline.log",
+      "expectedExit": 120
+    },
+    "wording-generation.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/ru_review_2021_hl.py"
+      ],
+      "exitCode": 0,
+      "log": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/2021-hl-nov18/wording-generation.log",
+      "expectedExit": 0
+    },
+    "wording-sources.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/test_ru_2021_hl_sources.py"
+      ],
+      "exitCode": 0,
+      "log": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/2021-hl-nov18/wording-sources.log",
+      "expectedExit": 0
+    }
+  },
+  "remoteVerification": {
+    "candidate": "c983b807305b7816d5e41041fa567254ee16fe1f",
+    "commit": "83d1d762dd61ca5d4e7747cb62e1577894539660",
+    "url": "https://github.com/alexlinehan17-lab/Nextstepuni-Launch-/actions/runs/44394104267",
+    "conclusion": "success"
+  },
+  "finalWordingVerification": {
+    "allSevenFocusedAndRequiredFilesPassed": true,
+    "focusedAndRequiredCases": 340,
+    "russianCoverageCasesPassed": 3,
+    "wholeCoverageRun": {
+      "totalPassed": 497,
+      "failed": 6,
+      "unrelatedSubjects": [
+        "home-economics",
+        "maths",
+        "business",
+        "physics"
+      ],
+      "reason": "Unchanged older lane baselines; all other subject decks and baseline records match lane HEAD, proven by preservation check."
+    },
+    "sourceCases": 16,
+    "sourcePassages": 429,
+    "lintFindings": 0,
+    "priorReviewedRecordsPreserved": 1355,
+    "runtimeTotal": 1396,
+    "noFullAppBuildRepeatedForWordingOnlyDataChanges": true
+  }
+}

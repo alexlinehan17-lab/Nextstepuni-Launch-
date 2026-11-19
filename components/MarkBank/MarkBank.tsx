@@ -1,4 +1,6 @@
 import { markBankCurriculumMenu, cardsForCurriculumNode } from './curriculumMenu';
+import { consumeInitialPracticeLink } from './markBankDeepLink';
+import { loadAtlasModel } from '../PaperTrail/atlasModel';
 import { resolveSubjectId } from '../../curriculumRegistry';
 /**
  * @license
@@ -141,7 +143,17 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
     && SUBJECTS.some(subject => subject.id === saved.subjectId && canSelectSubject(subject.title))
     && deckSize(saved.subjectId, saved.level) > 0,
   );
-  const initialChoice = savedIsValid && saved ? saved : profileDefault ?? { subjectId: (SUBJECTS.find(s => canSelectSubject(s.title)) ?? SUBJECTS[0]).id, level: 'higher' as Level };
+  // A Topic Atlas question's "Practise these parts" link opens its own deck (markBankDeepLink).
+  const [practiceLink] = useState(() => {
+    const link = consumeInitialPracticeLink();
+    const subject = link && SUBJECTS.find(s => s.id === link.subjectId);
+    const linkLevel = link && levelsFor(link.subjectId).find(l => l === link.level);
+    // The deck choice is rebuilt from the deck's own subject and level values, never copied from the URL.
+    return link && subject && linkLevel && canSelectSubject(subject.title) && deckSize(subject.id, linkLevel) > 0
+      ? { subjectId: subject.id, level: linkLevel, ids: link.ids } : null;
+  });
+  const linkedChoice = practiceLink ? { subjectId: practiceLink.subjectId, level: practiceLink.level } : null;
+  const initialChoice = linkedChoice ?? (savedIsValid && saved ? saved : profileDefault) ?? { subjectId: (SUBJECTS.find(s => canSelectSubject(s.title)) ?? SUBJECTS[0]).id, level: 'higher' as Level };
   const [subjectId, setSubjectId] = useState<string>(initialChoice.subjectId);
   const [level, setLevel] = useState<Level>(initialChoice.level);
   const chooseSubject = useCallback((id: string) => {
@@ -213,7 +225,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
     let cancelled = false;
     setCardsLoading(true);
     setCardsError(false);
-    loadCards(subjectId, level).then(loaded => {
+    // The subject's filing under the Topic Atlas headings arrives with its cards (atlasModel.ts).
+    Promise.all([loadCards(subjectId, level), loadAtlasModel(subjectId)]).then(([loaded]) => {
       if (cancelled) return;
       setCards(loaded);
       setCardsLoading(false);
@@ -229,6 +242,15 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
   useEffect(() => () => {
     if (launchTimerRef.current !== null) window.clearTimeout(launchTimerRef.current);
   }, []);
+
+  const practiceLinkUsed = useRef(false);
+  useEffect(() => {
+    if (!practiceLink || practiceLinkUsed.current || cardsLoading || subjectId !== practiceLink.subjectId || level !== practiceLink.level) return;
+    practiceLinkUsed.current = true;
+    const byId = new Map(cards.map(card => [card.id, card]));
+    const queue = practiceLink.ids.map(id => byId.get(id)).filter((card): card is SecCard => Boolean(card));
+    if (queue.length) setScreen({ name: 'session', cards: queue });
+  }, [practiceLink, cards, cardsLoading, subjectId, level]);
 
   const memories = deck.cards;
   const retention = retentionFor(now(), deck.examTs);

@@ -22,10 +22,10 @@ export const MARK_BANK_SESSION_SIZE = 12;
  */
 /** Subjects whose listening cards each carry one independently scored task,
  *  shown with the recording above that card's own question. French, Spanish,
- *  German, Japanese and Russian; only the Irish path combines section criteria
- *  into one assessment, and grouping these would hide every task after the
- *  first without assessing it. */
-const LISTENING_SCORED_ALONE = new Set(['french', 'spanish', 'german', 'japanese', 'russian']);
+ *  German, Japanese, Russian, Polish and Italian; only the Irish path combines section
+ *  criteria into one assessment, and grouping these would hide every task
+ *  after the first without assessing it. */
+const LISTENING_SCORED_ALONE = new Set(['french', 'spanish', 'german', 'japanese', 'russian', 'polish', 'italian']);
 export const listeningScoredAlone = (card: SecCard): boolean =>
   Boolean(card.audioMaterial) && LISTENING_SCORED_ALONE.has(card.subjectId);
 

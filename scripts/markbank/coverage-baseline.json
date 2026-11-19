@@ -453,19 +453,19 @@
     "refsHash": "55377fc06aab0b52"
   },
   "italian": {
-    "cards": 350,
-    "contentHash": "7df0d826a57f097d",
-    "coveragePct": 100.0,
-    "covered": 380,
-    "excluded": 325,
-    "leaves": 705,
-    "open": 0,
+    "cards": 786,
+    "contentHash": "51b374e6b4c17a47",
+    "coveragePct": 37.3,
+    "covered": 846,
+    "excluded": 0,
+    "leaves": 2270,
+    "open": 1424,
     "orphans": 0,
     "papers": {
-      "count": 20,
-      "hash": "b817ee80bd176c86"
+      "count": 66,
+      "hash": "4f7a342aa9e434bd"
     },
-    "refsHash": "7bc73bbdfb897f41"
+    "refsHash": "b0fec6b3ce76d4be"
   },
   "japanese": {
     "cards": 1941,
@@ -603,19 +603,19 @@
     "refsHash": "98497719950dbd78"
   },
   "music": {
-    "cards": 46,
-    "contentHash": "8634bc5a8b03e0c0",
-    "coveragePct": 94.3,
-    "covered": 50,
+    "cards": 239,
+    "contentHash": "d44375a1adc74eed",
+    "coveragePct": 100.0,
+    "covered": 253,
     "excluded": 0,
-    "leaves": 53,
-    "open": 3,
+    "leaves": 253,
+    "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 3,
-      "hash": "a8e3a2545845e20d"
+      "count": 90,
+      "hash": "19ae47d97a6c3bd4"
     },
-    "refsHash": "c2ebc900e30e56ea"
+    "refsHash": "fa2a38deb6e15718"
   },
   "physical-education": {
     "cards": 772,
@@ -648,19 +648,19 @@
     "refsHash": "c8412e48ab29b939"
   },
   "polish": {
-    "cards": 237,
-    "contentHash": "408ba0b39d9d0167",
+    "cards": 805,
+    "contentHash": "ab87a74dac9ca058",
     "coveragePct": 100.0,
-    "covered": 243,
-    "excluded": 310,
-    "leaves": 553,
+    "covered": 823,
+    "excluded": 0,
+    "leaves": 823,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 17,
-      "hash": "593a0709ee51ab08"
+      "count": 32,
+      "hash": "6a6c3eeffb300707"
     },
-    "refsHash": "727a4af11e33aa55"
+    "refsHash": "c7cc349f46545b73"
   },
   "politics-and-society": {
     "cards": 623,
@@ -723,19 +723,19 @@
     "refsHash": "8dc6e8622a1ca48e"
   },
   "russian": {
-    "cards": 1372,
-    "contentHash": "644185115d27074a",
-    "coveragePct": 98.3,
-    "covered": 1414,
-    "excluded": 26,
-    "leaves": 1465,
-    "open": 25,
+    "cards": 1485,
+    "contentHash": "4f30f3c1c5adae72",
+    "coveragePct": 100.0,
+    "covered": 1489,
+    "excluded": 0,
+    "leaves": 1489,
+    "open": 0,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "ff06e1bdb6b5283e"
     },
-    "refsHash": "9391f1468955b756"
+    "refsHash": "922dcd4bb5770390"
   },
   "slovakian": {
     "cards": 140,

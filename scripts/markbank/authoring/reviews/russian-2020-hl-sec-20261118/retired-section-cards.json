@@ -1,0 +1,792 @@
+[
+  {
+    "id": "ru-2020-hl-l1",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2020,
+    "section": "L1",
+    "topicId": "russian-0-9",
+    "conceptId": "these-people-order-eat-drink-luggage",
+    "questionRef": "2020 HL Section L1 Q1–5 — complete section",
+    "questionText": "1. What do these people order to eat and drink? Give two details.\n\n2. What luggage does this person have?\n\n3. What is the weather like at the moment? Give two details.\n\n4. Give two details about what this person wants to buy.\n\n5(i). Give two details about the classes Tanya will attend in St Petersburg.\n\n5(ii). What does Tanya plan to do in Russia after the two weeks of classes?",
+    "tariffModel": {
+      "kind": "questionTotal"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "general-listening-guidance",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "contextNote": "Confidence review of the complete printed 20-mark section. The scheme does not provide complete full-answer allocations for its questions. All original prompts and accepted pools remain available, with no equal tariff or numerical score inferred. The luggage answer explicitly gives one mark for a suitcase and one for a bag/purse. Those known prices remain visible below; they do not establish an 18-mark remainder or allocations for the other questions. The original booklet front says 50 minutes while its back says 40 minutes; both source statements are retained without selecting one as a correction."
+      },
+      {
+        "id": "l1-1",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• 2 bottles of sparkling water • Salad (Stolichniy) • Fish",
+        "contextNote": "What do these people order to eat and drink? Give two details."
+      },
+      {
+        "id": "l1-2",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• One suitcase (1 mark) and a bag/purse (1 mark)",
+        "contextNote": "What luggage does this person have?"
+      },
+      {
+        "id": "l1-3",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Cold • 15 below zero • Rain • Snow • Hailstones • Fog",
+        "contextNote": "What is the weather like at the moment? Give two details."
+      },
+      {
+        "id": "l1-4",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Jeans • Size m (44-46) • Navy • Classic cut",
+        "contextNote": "Give two details about what this person wants to buy."
+      },
+      {
+        "id": "l1-5-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Summer school of Saint-Petersburg University • Russian grammar + literature + history • Students from different countries attend • Popular • 8 hours a day",
+        "contextNote": "Give two details about the classes Tanya will attend in St Petersburg."
+      },
+      {
+        "id": "l1-5-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Visit Moscow • Take a train (Trans-Siberian railway) to Vladivostok • Plans to spend 2 weeks in Vladivostok",
+        "contextNote": "What does Tanya plan to do in Russia after the two weeks of classes?"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2020 Higher Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer all the original questions in this section. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "review": {
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        17
+      ],
+      "component": "A00",
+      "questionPages": [
+        2
+      ],
+      "guidancePages": [
+        17
+      ],
+      "coveredQuestionRefs": [
+        "2020 HL Section L1 Q1",
+        "2020 HL Section L1 Q2",
+        "2020 HL Section L1 Q3",
+        "2020 HL Section L1 Q4",
+        "2020 HL Section L1 Q5(i)",
+        "2020 HL Section L1 Q5(ii)"
+      ],
+      "atlasQuestions": [
+        {
+          "n": "l1-1",
+          "questionRef": "2020 HL Section L1 Q1",
+          "questionText": "What do these people order to eat and drink? Give two details.",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-2",
+          "questionRef": "2020 HL Section L1 Q2",
+          "questionText": "What luggage does this person have?",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "topicId": "russian-0-8",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-3",
+          "questionRef": "2020 HL Section L1 Q3",
+          "questionText": "What is the weather like at the moment? Give two details.",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "topicId": "russian-0-2",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-4",
+          "questionRef": "2020 HL Section L1 Q4",
+          "questionText": "Give two details about what this person wants to buy.",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-5-i",
+          "questionRef": "2020 HL Section L1 Q5(i)",
+          "questionText": "Give two details about the classes Tanya will attend in St Petersburg.",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "topicId": "russian-0-3",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-5-ii",
+          "questionRef": "2020 HL Section L1 Q5(ii)",
+          "questionText": "What does Tanya plan to do in Russia after the two weeks of classes?",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "topicId": "russian-0-8",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        }
+      ]
+    },
+    "kind": "question",
+    "additionalTopicIds": [
+      "russian-0-8",
+      "russian-0-2",
+      "russian-0-3",
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2020 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2020-hl-l2",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2020,
+    "section": "L2",
+    "topicId": "russian-0-5",
+    "conceptId": "elena-training-gymnast-elena-say-chose",
+    "questionRef": "2020 HL Section L2 Q1–5 — complete section",
+    "questionText": "1(i). Give two details about Elena’s training as a gymnast.\n\n2(i). Why did Elena say she chose rhythmic gymnastics?\n\n2(ii). How does her participation in sport affect Elena’s life. Give two details.\n\n3. What are Elena’s hopes for the future? Give two details.\n\n4. How does Elena spend her free time? Give two details.\n\n5. What other sports is Elena interested in? Give one detail",
+    "tariffModel": {
+      "kind": "questionTotal"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "general-listening-guidance",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "contextNote": "Confidence review of the complete printed 20-mark section. The scheme does not provide complete full-answer allocations for its questions. All original prompts and accepted pools remain available, with no equal tariff or numerical score inferred. The original booklet front says 50 minutes while its back says 40 minutes; both source statements are retained without selecting one as a correction."
+      },
+      {
+        "id": "l2-1-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Started training at the age of 8 • 5 days a week • 4 hours a day • She has been doing (rhythmic) gymnastics for over 10 years • Her mother brought her • 5 years old",
+        "contextNote": "Give two details about Elena’s training as a gymnast. Source numbering: English booklet1(i), Irish and scheme1."
+      },
+      {
+        "id": "l2-2-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Beautiful type / kind of sports • Interesting sports",
+        "contextNote": "Why did Elena say she chose rhythmic gymnastics?"
+      },
+      {
+        "id": "l2-2-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• She doesn’t give up easily • She is determined to reach her goals • She learned to be independent early • She can do things around the house",
+        "contextNote": "How does her participation in sport affect Elena’s life. Give two details."
+      },
+      {
+        "id": "l2-3",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• To be a promising / successful woman • To have a big friendly family • To be happy and loved • To be successful in her studies and her work",
+        "contextNote": "What are Elena’s hopes for the future? Give two details. Source numbering: Paper3, scheme3(i), same future-hopes prompt."
+      },
+      {
+        "id": "l2-4",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Likes to walk her dogs • Listens to music • Goes shopping • Likes to visit people (with her parents) • Goes to the lake with her friends in Summer • Goes to the cinema • Rides her bike • Goes skating in Winter",
+        "contextNote": "How does Elena spend her free time? Give two details."
+      },
+      {
+        "id": "l2-5",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Physical exercises • Running • Riding her bike • Skiing",
+        "contextNote": "What other sports is Elena interested in? Give one detail"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2020 Higher Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer all the original questions in this section. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17, 18.",
+    "review": {
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        17,
+        18
+      ],
+      "component": "A00",
+      "questionPages": [
+        3
+      ],
+      "guidancePages": [
+        17
+      ],
+      "coveredQuestionRefs": [
+        "2020 HL Section L2 Q1(i)",
+        "2020 HL Section L2 Q2(i)",
+        "2020 HL Section L2 Q2(ii)",
+        "2020 HL Section L2 Q3",
+        "2020 HL Section L2 Q4",
+        "2020 HL Section L2 Q5"
+      ],
+      "atlasQuestions": [
+        {
+          "n": "l2-1-i",
+          "questionRef": "2020 HL Section L2 Q1(i)",
+          "questionText": "Give two details about Elena’s training as a gymnast.",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            18
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-2-i",
+          "questionRef": "2020 HL Section L2 Q2(i)",
+          "questionText": "Why did Elena say she chose rhythmic gymnastics?",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            18
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-2-ii",
+          "questionRef": "2020 HL Section L2 Q2(ii)",
+          "questionText": "How does her participation in sport affect Elena’s life. Give two details.",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            18
+          ],
+          "topicId": "russian-0-11",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-3",
+          "questionRef": "2020 HL Section L2 Q3",
+          "questionText": "What are Elena’s hopes for the future? Give two details.",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            18
+          ],
+          "topicId": "russian-0-6",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-4",
+          "questionRef": "2020 HL Section L2 Q4",
+          "questionText": "How does Elena spend her free time? Give two details.",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            18
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-5",
+          "questionRef": "2020 HL Section L2 Q5",
+          "questionText": "What other sports is Elena interested in? Give one detail",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            18
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        }
+      ]
+    },
+    "kind": "question",
+    "additionalTopicIds": [
+      "russian-0-11",
+      "russian-0-6",
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2020 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2020-hl-l3",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2020,
+    "section": "L3",
+    "topicId": "russian-0-8",
+    "conceptId": "advertisement-bikesbooking-com-scheme-tourists-freedom",
+    "questionRef": "2020 HL Section L3 Q1–3 — complete section",
+    "questionText": "1. According to the advertisement, what does the bikesbooking.com scheme give tourists the freedom to do when visiting different cities? Give two details\n\n2(i). How do we know that bikesbooking.com is a successful company? Give two details.\n\n2(ii). What information needs to be provided to bikesbooking.com when making a booking. Give two details.\n\n3(i). Give two details about the pricing structure offered by this company.\n\n3(ii). What additional services are offered by bikesbooking.com? Give two details.",
+    "tariffModel": {
+      "kind": "questionTotal"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "general-listening-guidance",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "contextNote": "Confidence review of the complete printed 20-mark section. The scheme does not provide complete full-answer allocations for its questions. All original prompts and accepted pools remain available, with no equal tariff or numerical score inferred. The original booklet front says 50 minutes while its back says 40 minutes; both source statements are retained without selecting one as a correction."
+      },
+      {
+        "id": "l3-1",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Visit surroundings of Barcelona • Visit deserted beaches • Ride a scooter along the river Tiber in Rome • Explore the sight-seeing in Amsterdam on a bike • Go around Moscow on a scooter",
+        "contextNote": "According to the advertisement, what does the bikesbooking.com scheme give tourists the freedom to do when visiting different cities? Give two details"
+      },
+      {
+        "id": "l3-2-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• operates around the world • available in 40 countries • available in 1000 locations • offers bikes, scooters, quad cycles, motorcycles",
+        "contextNote": "How do we know that bikesbooking.com is a successful company? Give two details."
+      },
+      {
+        "id": "l3-2-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Date • City • Type of a vehicle",
+        "contextNote": "What information needs to be provided to bikesbooking.com when making a booking. Give two details."
+      },
+      {
+        "id": "l3-3-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Bikes 5-25 euro per day (24 hours) depending on a country • Scooter starts from 20 euro per day ( 24 hours) • Motor bike costs 36 euro",
+        "contextNote": "Give two details about the pricing structure offered by this company."
+      },
+      {
+        "id": "l3-3-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Compare prices • write a review • Airport or hotel delivery/drop off • Insurance • Navigation • Information on popular destination • Rules/ regulations • Traffic details/information • Second helmet • Choose model",
+        "contextNote": "What additional services are offered by bikesbooking.com? Give two details."
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2020 Higher Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer all the original questions in this section. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17, 19.",
+    "review": {
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        17,
+        19
+      ],
+      "component": "A00",
+      "questionPages": [
+        4
+      ],
+      "guidancePages": [
+        17
+      ],
+      "coveredQuestionRefs": [
+        "2020 HL Section L3 Q1",
+        "2020 HL Section L3 Q2(i)",
+        "2020 HL Section L3 Q2(ii)",
+        "2020 HL Section L3 Q3(i)",
+        "2020 HL Section L3 Q3(ii)"
+      ],
+      "atlasQuestions": [
+        {
+          "n": "l3-1",
+          "questionRef": "2020 HL Section L3 Q1",
+          "questionText": "According to the advertisement, what does the bikesbooking.com scheme give tourists the freedom to do when visiting different cities? Give two details",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            19
+          ],
+          "topicId": "russian-0-8",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l3-2-i",
+          "questionRef": "2020 HL Section L3 Q2(i)",
+          "questionText": "How do we know that bikesbooking.com is a successful company? Give two details.",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            19
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l3-2-ii",
+          "questionRef": "2020 HL Section L3 Q2(ii)",
+          "questionText": "What information needs to be provided to bikesbooking.com when making a booking. Give two details.",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            19
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l3-3-i",
+          "questionRef": "2020 HL Section L3 Q3(i)",
+          "questionText": "Give two details about the pricing structure offered by this company.",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            19
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l3-3-ii",
+          "questionRef": "2020 HL Section L3 Q3(ii)",
+          "questionText": "What additional services are offered by bikesbooking.com? Give two details.",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            19
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        }
+      ]
+    },
+    "kind": "question",
+    "additionalTopicIds": [
+      "russian-0-9",
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2020 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2020-hl-l4",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2020,
+    "section": "L4",
+    "topicId": "russian-0-7",
+    "conceptId": "katya-katya-every-summer-katya-accomplished",
+    "questionRef": "2020 HL Section L4 Q1–3 — complete section",
+    "questionText": "1(i). Who is Katya? Give three details.\n\n1(ii). What does Katya do every summer? Give two details.\n\n2. Give two details about what Katya had accomplished by 2017.\n\n3(i). Give two details about the content of Katya’s videos.\n\n3(ii). Give one detail about Katya’s pets.",
+    "tariffModel": {
+      "kind": "questionTotal"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "general-listening-guidance",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "contextNote": "Confidence review of the complete printed 20-mark section. The scheme does not provide complete full-answer allocations for its questions. All original prompts and accepted pools remain available, with no equal tariff or numerical score inferred. The published bare Dog and Cat one-mark partials remain visible; they do not establish the absent full-answer tariffs. The original booklet front says 50 minutes while its back says 40 minutes; both source statements are retained without selecting one as a correction."
+      },
+      {
+        "id": "l4-1-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Young Russian video blogger • The most successful teenage blogger in Russia • Born in Moscow • Born on 18 October 2003 • Adushkina is her real surname • Dancer",
+        "contextNote": "Who is Katya? Give three details."
+      },
+      {
+        "id": "l4-1-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Does an intensive dancing course in Bulgaria • Takes part in dance festivals • In different cities/towns of Russia",
+        "contextNote": "What does Katya do every summer? Give two details."
+      },
+      {
+        "id": "l4-2",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Over a million subscribers • Her videos were getting more popular • Registered her you tube channel",
+        "contextNote": "Give two details about what Katya had accomplished by 2017."
+      },
+      {
+        "id": "l4-3-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Tells about her travels • Tells about events in her life • Gives advice, for example, “riding a gyro scooter”/ “truth about braces” • Talks about interests",
+        "contextNote": "Give two details about the content of Katya’s videos."
+      },
+      {
+        "id": "l4-3-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Dog called ‘Rada’ / happy / joy • Cat called Steve • Dog: 1 mark • Cat: 1 mark",
+        "contextNote": "Give one detail about Katya’s pets."
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2020 Higher Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer all the original questions in this section. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17, 20.",
+    "review": {
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        17,
+        20
+      ],
+      "component": "A00",
+      "questionPages": [
+        5
+      ],
+      "guidancePages": [
+        17
+      ],
+      "coveredQuestionRefs": [
+        "2020 HL Section L4 Q1(i)",
+        "2020 HL Section L4 Q1(ii)",
+        "2020 HL Section L4 Q2",
+        "2020 HL Section L4 Q3(i)",
+        "2020 HL Section L4 Q3(ii)"
+      ],
+      "atlasQuestions": [
+        {
+          "n": "l4-1-i",
+          "questionRef": "2020 HL Section L4 Q1(i)",
+          "questionText": "Who is Katya? Give three details.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            20
+          ],
+          "topicId": "russian-0-7",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l4-1-ii",
+          "questionRef": "2020 HL Section L4 Q1(ii)",
+          "questionText": "What does Katya do every summer? Give two details.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            20
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l4-2",
+          "questionRef": "2020 HL Section L4 Q2",
+          "questionText": "Give two details about what Katya had accomplished by 2017.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            20
+          ],
+          "topicId": "russian-0-4",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l4-3-i",
+          "questionRef": "2020 HL Section L4 Q3(i)",
+          "questionText": "Give two details about the content of Katya’s videos.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            20
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l4-3-ii",
+          "questionRef": "2020 HL Section L4 Q3(ii)",
+          "questionText": "Give one detail about Katya’s pets.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            20
+          ],
+          "topicId": "russian-0-1",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        }
+      ]
+    },
+    "kind": "question",
+    "additionalTopicIds": [
+      "russian-0-5",
+      "russian-0-4",
+      "russian-0-1",
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2020 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  }
+]

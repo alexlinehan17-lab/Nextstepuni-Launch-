@@ -49,6 +49,12 @@ export const hostedAnchorsUrl = (year: number, fileid: string) =>
 export const HOSTED_ANSWER_OVERRIDES = new Set([
   // Independently reviewed 2014 LCVP written and audiovisual questions.
   'link-modules|2014|LC462CLP000EV.pdf',
+  // Newly reviewed Russian 2017 Ordinary sitting.
+  'russian|2017|LC099GLP000EV.pdf',
+  'russian|2017|LC099GLPA00EV.pdf',
+  // Newly reviewed Russian 2021 Higher sitting.
+  'russian|2021|LC099ALP000BV.pdf',
+  'russian|2021|LC099ALPA00BV.pdf',
   // Russian: independently reviewed written and listening task pools (the
   // 2010 and 2018-2020 Higher entries as Codex 465e0c377 binds them; its 2021
   // entries wait for the 2021 Higher sitting).

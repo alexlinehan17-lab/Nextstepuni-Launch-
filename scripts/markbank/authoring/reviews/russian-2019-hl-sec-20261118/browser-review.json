@@ -1,0 +1,218 @@
+{
+  "recordedAt": "2026-11-19T10:51:10.495061+00:00",
+  "review": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-russian-2019-higher/review.html",
+  "matrix": [
+    {
+      "year": 2019,
+      "card": "ca1",
+      "width": 1120,
+      "theme": "dark",
+      "score": "144 text Your  SEC answer allocation  placement is  6  of  6  marks — that looks like  Got it .",
+      "noAnswerLine": true,
+      "inferenceLabel": false,
+      "audioBlocked": false
+    },
+    {
+      "year": 2019,
+      "card": "ca1",
+      "width": 1120,
+      "theme": "light",
+      "score": "145 text Your  SEC answer allocation  placement is  6  of  6  marks — that looks like  Got it .",
+      "noAnswerLine": true,
+      "inferenceLabel": false,
+      "audioBlocked": false
+    },
+    {
+      "year": 2019,
+      "card": "ca1",
+      "width": 390,
+      "theme": "dark",
+      "score": "145 text Your  SEC answer allocation  placement is  6  of  6  marks — that looks like  Got it .",
+      "noAnswerLine": true,
+      "inferenceLabel": false,
+      "audioBlocked": false
+    },
+    {
+      "year": 2019,
+      "card": "ca1",
+      "width": 390,
+      "theme": "light",
+      "score": "146 text Your  SEC answer allocation  placement is  6  of  6  marks — that looks like  Got it .",
+      "noAnswerLine": true,
+      "inferenceLabel": false,
+      "audioBlocked": false
+    },
+    {
+      "year": 2019,
+      "card": "gw",
+      "width": 1120,
+      "theme": "dark",
+      "score": "178 text Your  Writing marking grid  placement is  38  of  40  marks — that looks like  Got it .",
+      "noAnswerLine": true,
+      "inferenceLabel": false,
+      "audioBlocked": false
+    },
+    {
+      "year": 2019,
+      "card": "gw",
+      "width": 1120,
+      "theme": "light",
+      "score": "179 text Your  Writing marking grid  placement is  38  of  40  marks — that looks like  Got it .",
+      "noAnswerLine": true,
+      "inferenceLabel": false,
+      "audioBlocked": false
+    },
+    {
+      "year": 2019,
+      "card": "gw",
+      "width": 390,
+      "theme": "dark",
+      "score": "179 text Your  Writing marking grid  placement is  38  of  40  marks — that looks like  Got it .",
+      "noAnswerLine": true,
+      "inferenceLabel": false,
+      "audioBlocked": false
+    },
+    {
+      "year": 2019,
+      "card": "gw",
+      "width": 390,
+      "theme": "light",
+      "score": "180 text Your  Writing marking grid  placement is  38  of  40  marks — that looks like  Got it .",
+      "noAnswerLine": true,
+      "inferenceLabel": false,
+      "audioBlocked": false
+    },
+    {
+      "year": 2019,
+      "card": "l1-5-i",
+      "width": 1120,
+      "theme": "dark",
+      "score": "93 text Your  SEC answer allocation  placement is  2  of  2  marks — that looks like  Got it .",
+      "noAnswerLine": false,
+      "inferenceLabel": true,
+      "audioBlocked": true
+    },
+    {
+      "year": 2019,
+      "card": "l1-5-i",
+      "width": 1120,
+      "theme": "light",
+      "score": "94 text Your  SEC answer allocation  placement is  2  of  2  marks — that looks like  Got it .",
+      "noAnswerLine": false,
+      "inferenceLabel": true,
+      "audioBlocked": true
+    },
+    {
+      "year": 2019,
+      "card": "l1-5-i",
+      "width": 390,
+      "theme": "dark",
+      "score": "95 text Your  SEC answer allocation  placement is  2  of  2  marks — that looks like  Got it .",
+      "noAnswerLine": false,
+      "inferenceLabel": true,
+      "audioBlocked": true
+    },
+    {
+      "year": 2019,
+      "card": "l1-5-i",
+      "width": 390,
+      "theme": "light",
+      "score": "95 text Your  SEC answer allocation  placement is  2  of  2  marks — that looks like  Got it .",
+      "noAnswerLine": false,
+      "inferenceLabel": true,
+      "audioBlocked": true
+    },
+    {
+      "year": 2019,
+      "card": "l3-1-i",
+      "width": 1120,
+      "theme": "dark",
+      "score": "100 text Your  SEC answer allocation  placement is  2  of  4  marks — that looks like  Shaky .",
+      "noAnswerLine": false,
+      "inferenceLabel": true,
+      "audioBlocked": true
+    },
+    {
+      "year": 2019,
+      "card": "l3-1-i",
+      "width": 1120,
+      "theme": "light",
+      "score": "101 text Your  SEC answer allocation  placement is  2  of  4  marks — that looks like  Shaky .",
+      "noAnswerLine": false,
+      "inferenceLabel": true,
+      "audioBlocked": true
+    },
+    {
+      "year": 2019,
+      "card": "l3-1-i",
+      "width": 390,
+      "theme": "dark",
+      "score": "101 text Your  SEC answer allocation  placement is  2  of  4  marks — that looks like  Shaky .",
+      "noAnswerLine": false,
+      "inferenceLabel": true,
+      "audioBlocked": true
+    },
+    {
+      "year": 2019,
+      "card": "l3-1-i",
+      "width": 390,
+      "theme": "light",
+      "score": "103 text Your  SEC answer allocation  placement is  2  of  4  marks — that looks like  Shaky .",
+      "noAnswerLine": false,
+      "inferenceLabel": true,
+      "audioBlocked": true
+    },
+    {
+      "year": 2019,
+      "card": "se",
+      "width": 1120,
+      "theme": "dark",
+      "score": "157 text Your  Writing marking grid  placement is  28  of  30  marks — that looks like  Got it .",
+      "noAnswerLine": true,
+      "inferenceLabel": false,
+      "audioBlocked": false
+    },
+    {
+      "year": 2019,
+      "card": "se",
+      "width": 1120,
+      "theme": "light",
+      "score": "158 text Your  Writing marking grid  placement is  28  of  30  marks — that looks like  Got it .",
+      "noAnswerLine": true,
+      "inferenceLabel": false,
+      "audioBlocked": false
+    },
+    {
+      "year": 2019,
+      "card": "se",
+      "width": 390,
+      "theme": "dark",
+      "score": "158 text Your  Writing marking grid  placement is  28  of  30  marks — that looks like  Got it .",
+      "noAnswerLine": true,
+      "inferenceLabel": false,
+      "audioBlocked": false
+    },
+    {
+      "year": 2019,
+      "card": "se",
+      "width": 390,
+      "theme": "light",
+      "score": "159 text Your  Writing marking grid  placement is  28  of  30  marks — that looks like  Got it .",
+      "noAnswerLine": true,
+      "inferenceLabel": false,
+      "audioBlocked": false
+    }
+  ],
+  "recommendation": "All 44 asks counted from the Russian 2019 Higher papers now have their own cards, including 24 listening asks. The essay uses the approved one-or-two-mark soft-sign deduction. The scheme’s printed partial answers remain selectable, and inferred listening marks are labelled. The fixed no-answer line appears beside writing guidance. All 20 phone/desktop and light/dark cases are captured. Embedded SEC audio is blocked, so this sitting is not ready to release until a verified hosted recording plays in the card.",
+  "nativeBrowser": "Google Chrome; actual SessionScreen; isolated review without student progress",
+  "screenshotsCaptured": 43,
+  "visualInspection": "All 20 marking-control contact-sheet panels inspected after the native review; phone and desktop controls wrap within their frames in both themes. Original source pages inspected at full size. Manual partial/full scores recorded.",
+  "manualScores": {
+    "festival": [
+      4,
+      3
+    ],
+    "outOf": 4,
+    "sourcePage": 4
+  }
+}

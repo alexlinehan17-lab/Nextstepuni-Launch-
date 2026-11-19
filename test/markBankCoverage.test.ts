@@ -262,8 +262,10 @@ describe('Mark Bank paper-coverage ratchet', () => {
         }
         if (subject === 'music') {
           // Three booklets, each its own address: "Listening Q5 A(d)", "Listening Q5 B(i)", "Listening Q2(e)(ii)",
-          // "Composing Section A Q1", and the elective's one card over its five asks, "Elective Q1–Q4(b)".
-          return !/^\d{4} (?:HL|OL) (?:Listening Q[1-7](?: [AB])?(?:\([a-h]\))?(?:\((?:i|ii|iii|iv|v)\))?|Composing Section [AB] Q[1-6]|Elective Q[1-4](?:\([ab]\))?(?:–Q[1-4](?:\([ab]\))?)?)$/.test(ref);
+          // "Listening Q6(k)", "Composing Section A Q1", Ordinary's "Composing Section A Q1(a)" and the one card
+          // over parts the scheme marks together, "Composing Section A Q2(a)–(b)", and the elective's one card over
+          // its five asks, "Elective Q1–Q4(b)". A deferred sitting's card ends " — Deferred sitting".
+          return !/^\d{4} (?:HL|OL) (?:Listening Q[1-7](?: [AB])?(?:\([a-l]\))?(?:\((?:i|ii|iii|iv|v|vi)\))?|Composing Section [AB] Q[1-6](?:\([ab]\)(?:–\([ab]\))?)?|Elective Q[1-4](?:\([ab]\))?(?:–Q[1-4](?:\([ab]\))?)?)(?: — Deferred sitting)?$/.test(ref);
         }
         if (subject === 'geography') {
           // Reviewed sittings cite the printed part: "Q2(ii)(a)", "Q5A(iii)", "Q8A(vii)";

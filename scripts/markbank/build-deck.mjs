@@ -759,19 +759,47 @@ function historyEssayFault(c, scheme) {
 /** The decks whose writing is a rubric card on the French grid shape, gated
  *  by spanishGridFault: Spanish, and German (whose expression criterion may
  *  carry a printed lower scale). */
-const GRID_SUBJECTS = new Set(['spanish', 'german', 'music']);
+// Polish joins with treatment D (languages-q3 lane, 19 Nov 2026): its Część B
+// tasks are marked on one Content (C) / Expression (E) grid, the same card.
+const GRID_SUBJECTS = new Set(['spanish', 'german', 'music', 'polish', 'italian']);
 /** Music is sat in separate booklets; a card's section names the booklet it is
  *  printed in, by the Paper Trail index's own label. */
 const MUSIC_BOOKLET = { L: 'Listening', A: 'Composing', B: 'Composing', E: 'Elective' };
+/* A band name the SEC sets on TWO lines of its table cell, with the band's
+ * own mark ranges printed in the next cells at the first line's height, so the
+ * text layer reads "Very 15 - 12 10-9 good" (Polish 2026 Higher scheme pp10-11,
+ * in its column runs) and the name is never contiguous. For these subjects a
+ * band name also traces where its words stand in that order with nothing but
+ * range digits between them. Only band NAMES take this path; descriptors and
+ * requirements trace as before. */
+const SPLIT_BAND_NAMES = new Set(['polish']);
+const bandNameTraces = (scheme, label) => {
+  if (!SPLIT_BAND_NAMES.has(SUBJECT_ID)) return false;
+  const words = String(label).split(/\s+/).map(w => normalise(w)).filter(Boolean);
+  if (words.length < 2) return false;
+  const esc = w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(words.map(esc).join('[0-9]*')).test(scheme);
+};
 function spanishGridFault(c, scheme) {
   const r = c.rubric;
-  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German or Music marking grid';
+  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German, Music or Polish marking grid';
   if (r.allocation || r.answerGuide) return 'a marking grid carries no answer rows';
   const criteria = r.criteria ?? [];
   if (!criteria.length || new Set(criteria.map(k => k.id)).size !== criteria.length) return 'no criteria, or two with one id';
   if (criteria.reduce((sum, k) => sum + k.maxMarks, 0) !== c.totalMarks) return `the criteria do not add up to the paper's ${c.totalMarks}`;
   for (const k of criteria) {
     const allowed = k.permittedMarks ?? [];
+    // A line the scheme marks by counting items at a printed rate (Music
+    // Composing Section B: "0.5 mark per correct bass note ... (0.5 X 20)"):
+    // placed on every count from 0 to the printed number of items, each at the
+    // printed rate, with no bands of its own. Only Music prints one.
+    if (k.counted) {
+      if (SUBJECT_ID !== 'music') return `${k.label} is counted at a rate, which only Music prints`;
+      const { rate, items } = k.counted;
+      if (!(rate > 0) || !Number.isInteger(items) || items < 1 || rate * items !== k.maxMarks) return `${k.label}'s count does not make its ${k.maxMarks} marks`;
+      if (k.bands || allowed.length !== items + 1 || allowed.some((m, i) => m !== i * rate)) return `${k.label} is not placed on every count from 0 to ${items}`;
+      continue;
+    }
     if (allowed.length !== k.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
     if (k.bands) {
       const marks = k.bands.flatMap(b => b.marks).sort((a, b) => a - b);
@@ -780,11 +808,14 @@ function spanishGridFault(c, scheme) {
   }
   // A criterion zeroed by another's 0 names a criterion of this card, and the
   // card carries the scheme's printed rule ("… no marks are awarded for Content
-  // … no marks will be awarded for Language"), itself traced below.
+  // … no marks will be awarded for Language"), itself traced below. Polish
+  // names the second criterion Expression: "Where no marks are awarded for
+  // content (i.e. effort totally irrelevant), no marks will be awarded for
+  // expression."
   for (const k of criteria) {
     if (!k.zeroWhenZero) continue;
     if (k.zeroWhenZero === k.id || !criteria.some(other => other.id === k.zeroWhenZero)) return `${k.label} is zeroed by a criterion the card does not have`;
-    if (!r.taskRequirements.some(line => /no marks are awarded for Content\b.*no marks will be award(?:ed)? for Language\b/i.test(line))) {
+    if (!r.taskRequirements.some(line => /no marks are awarded for Content\b.*no marks will be award(?:ed)? for (?:Language|Expression)\b/i.test(line))) {
       return `${k.label} is zeroed by ${k.zeroWhenZero} but the card prints no such rule`;
     }
   }
@@ -795,12 +826,16 @@ function spanishGridFault(c, scheme) {
   for (const k of criteria) {
     const lower = k.lowerScale;
     if (!lower) continue;
-    if (SUBJECT_ID !== 'german') return `${k.label} carries a lower scale, which only German prints`;
-    if (!(lower.maxMarks > 0 && lower.maxMarks < k.maxMarks)) return `${k.label}'s lower scale is not below its own ${k.maxMarks}`;
+    // Any grid subject may carry the cap its scheme prints (German "Lower E";
+    // Italian "language will be marked out of 5", or at Ordinary "award no marks
+    // for language", a cap of 0). Bands are checked where the scheme prints
+    // them for the lower scale; a cap printed with no bands of its own carries
+    // none (Italian), and is placed on every mark from 0 to the cap.
+    if (!(lower.maxMarks >= 0 && lower.maxMarks < k.maxMarks)) return `${k.label}'s lower scale is not below its own ${k.maxMarks}`;
     const allowed = lower.permittedMarks ?? [];
     if (allowed.length !== lower.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label}'s lower scale is not placed on every mark from 0 to ${lower.maxMarks}`;
     const marks = (lower.bands ?? []).flatMap(b => b.marks).sort((a, b) => a - b);
-    if (marks.length !== allowed.length || marks.some((m, i) => m !== i)) return `${k.label}'s lower bands do not cover 0 to ${lower.maxMarks} once`;
+    if ((lower.bands ?? []).length && (marks.length !== allowed.length || marks.some((m, i) => m !== i))) return `${k.label}'s lower bands do not cover 0 to ${lower.maxMarks} once`;
     if (!lower.contentCriteria?.length || lower.contentCriteria.some(id => id === k.id || !criteria.some(other => other.id === id && !other.lowerScale))) {
       return `${k.label}'s lower scale counts a criterion the card does not have`;
     }
@@ -813,13 +848,15 @@ function spanishGridFault(c, scheme) {
   const lifted = [
     ...r.taskRequirements,
     ...String(r.markingGuideNote ?? '').split('\n').filter(Boolean),
-    ...criteria.flatMap(k => [...k.guidance, ...(k.bands ? [k.label] : []),
+    ...criteria.flatMap(k => [...k.guidance, ...(k.bands || k.counted ? [k.label] : []),
       // German prints its expression categories unnamed ("CATEGORY
       // DESCRIPTION"): "Category 1" is the card's own label, never traced.
       ...(k.bands ?? []).flatMap(b => [...(SUBJECT_ID === 'german' ? [] : [b.label]), ...b.guidance]),
       ...(k.lowerScale ? [k.lowerScale.rule, ...k.lowerScale.bands.flatMap(b => b.guidance)] : [])]),
   ];
-  const untraced = lifted.find(text => !String(text).trim() || !claimMatches(scheme, text));
+  const bandNames = new Set(criteria.flatMap(k => (k.bands ?? []).map(b => b.label)));
+  const untraced = lifted.find(text => !String(text).trim()
+    || !(claimMatches(scheme, text) || (bandNames.has(text) && bandNameTraces(scheme, text))));
   if (untraced !== undefined) return `a marking line not found in the ${c.year} ${c.level} scheme, "${String(untraced).slice(0, 60)}"`;
   return null;
 }
@@ -950,7 +987,11 @@ function schemeFor(subjectId, card) {
  * these four are added and not the block they live in, because the block is
  * also where several BROKEN subset glyphs land — U+019E stands for "tf" and
  * U+019F for "ti" in glyphmap.json — and those must still be refused. */
-const REAL = /[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D62-\u1D6A\u1F00-\u1FFF]/;
+/* U+1D52 MODIFIER LETTER SMALL O is the raised o the SEC types for a degree in
+ * Calibri: the 2022 Higher Polish listening booklet prints "grows in 20\u1D52C" (rendered:
+ * a degree sign), and its text layer carries the character itself, not a
+ * subset's stand-in. Added alone; at the time no other deck input held it. */
+const REAL = /[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D52\u1D62-\u1D6A\u1F00-\u1FFF]/;
 /* Greek Extended (U+1F00-U+1FFF) is genuinely Greek, for the same reason
  * U+0370-U+03FF already is: POLYTONIC Greek is the alphabet the Ancient Greek
  * paper and its scheme are printed in, and every accented vowel in it lives

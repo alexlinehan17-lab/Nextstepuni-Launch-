@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it } from 'vitest';
+import { beforeAll, beforeEach, describe, expect, it } from 'vitest';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { attemptNs, allMarks, setMark } from '../components/PaperTrail/attemptStore';
 import { browseTopicIdsForQuestion, topicsForSubject } from '../components/PaperTrail/topics';
@@ -8,6 +8,9 @@ import { resolveCurriculumSpecification, resolveSubjectId } from '../curriculumR
 import { SUBJECTS, loadCards, levelsFor } from '../components/MarkBank/deck';
 import { cardsForCurriculumNode, markBankCurriculumMenu } from '../components/MarkBank/curriculumMenu';
 import { LC_SUBJECTS, JC_SUBJECTS } from '../components/subjectData';
+import { loadAllAtlasModels as loadAtlasModelsForTest } from '../components/PaperTrail/atlasModel';
+// The single model: subjects' filings load when they open; these checks read every one.
+beforeAll(() => loadAtlasModelsForTest());
 
 beforeEach(() => localStorage.clear());
 describe('topic connections', () => {
