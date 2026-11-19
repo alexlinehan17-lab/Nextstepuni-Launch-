@@ -1,0 +1,675 @@
+{
+  "schemaVersion": 1,
+  "year": 2011,
+  "level": "ordinary",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-reviewed",
+  "sources": {
+    "paper-trail-corpus/exampapers/2011/LC098GLP000EV.pdf": {
+      "sha256": "603fecfd5aa5f7fe0c4ef963e05bc3001921e9ca1fbabc31362cf0bd1344c28a",
+      "pages": 12
+    },
+    "paper-trail-corpus/markingschemes/2011/LC098GLP000EV.PDF": {
+      "sha256": "3abf73d93781c28a5b282a6d3094c3d4702b90c4d062def396ba1abd69bb0fd8",
+      "pages": 32
+    }
+  },
+  "visualSweep": {
+    "paper": "All12 physical pages reviewed: cover/instructions1;A2–5;B6–8;C9–11;explicit blank12.",
+    "scheme": "All32 physical pages reviewed:cover1,blank2,guidance3;A4–7;B8–14;C15–20;separate coursework21–30;blank31;backcover32.",
+    "evidence": "tmp/pdfs/home-economics-review/2011-ol-main:paper-01..03.png,scheme-01..08.png,full texts and hash inventory.",
+    "method": "Independent complete original-page inspection before authoring or relying on parser output."
+  },
+  "expectedTasks": 52,
+  "expectedSectionTasks": {
+    "A": 13,
+    "B": 18,
+    "C": 21
+  },
+  "sourceQuestionGroups": 20,
+  "offeredPracticeMarks": 627,
+  "independentTaskCensus": {
+    "A": {
+      "Q1": 6,
+      "Q2": 6,
+      "Q3": 6,
+      "Q4": 6,
+      "Q5": 6,
+      "Q6": 6,
+      "Q7": 6,
+      "Q8": 6,
+      "Q9": 6,
+      "Q10": 6,
+      "Q12": 6,
+      "Q11-name": 2,
+      "Q11-uses": 4
+    },
+    "B": {
+      "Q1(a)": 18,
+      "Q1(b)": 28,
+      "Q1(c)-essential": 7,
+      "Q1(c)-omega3": 7,
+      "Q1(d)": 20,
+      "Q2(a)": 20,
+      "Q2(b)": 18,
+      "Q2(c)": 12,
+      "Q3(a)": 20,
+      "Q3(b)": 18,
+      "Q3(c)": 12,
+      "Q4(a)": 24,
+      "Q4(b)": 8,
+      "Q4(c)": 18,
+      "Q5(a)(i)": 15,
+      "Q5(a)(ii)": 18,
+      "Q5(b)(i)": 5,
+      "Q5(b)(ii)": 12
+    },
+    "C": {
+      "E1(a)(i)": 20,
+      "E1(a)(ii)": 10,
+      "E1(a)(iii)": 20,
+      "E1(b)(i)": 14,
+      "E1(b)(ii)": 16,
+      "E1(c)(i)": 12,
+      "E1(c)(ii)": 18,
+      "E2(a)(i)": 10,
+      "E2(a)(ii)": 9,
+      "E2(a)(iii)": 6,
+      "E2(b)(i)": 6,
+      "E2(b)(ii)": 9,
+      "E2(c)(i)": 9,
+      "E2(c)(ii)": 6,
+      "E3(a)(i)": 6,
+      "E3(a)(ii)": 24,
+      "E3(a)(iii)": 20,
+      "E3(b)(i)": 20,
+      "E3(b)(ii)": 10,
+      "E3(c)(i)": 15,
+      "E3(c)(ii)": 15
+    }
+  },
+  "decisionsBeforeAuthoring": [
+    "A11 has independent fire-finish naming2 and uses4 asks. A10 loyalty name/advantage/disadvantage and A8 pollution name/effect pairs stay whole; A12 retains the required pair of explanations/examples at the printed2×2+2×1, without inventing separate three-mark source subtotals.",
+    "A6 three raising-agent matches are priced2@2+1@1, but no named dish has a printed individual allocation; keep one five-mark table criterion with visible ambiguity plus one-mark dependent principle. No per-food2/2/1 assignment inferred.",
+    "B1(c) separately prints7 marks for essential fatty acids and7 for omega-3 benefit: two companion tasks. B5(b) separately prices will importance5 and features12 across the continued scheme14.",
+    "B1(d) requires two advantages and two disadvantages. B5(a)(ii) requires one advantage and one disadvantage for EACH of three relationship options.",
+    "C1(a)(i) has four points across three headings without a printed distribution; no invented per-heading quotas. C3(b)(i) has four points across two required headings, likewise no fabricated split.",
+    "C3(a)(iii) names two social groups at4 each plus three effects TOTAL at4; do not incorrectly require three effects per group.",
+    "Ten original input-figure groups planned: A1 carbohydrate table,A3 cloze,A4 true-false,A5 matching,A6 raising table,A9 energy label,B1 complete fish nutrition table,B2 fullsix-pair fruit chart,C1threehousingphotos,C3povertytable."
+  ],
+  "tasks": [
+    {
+      "id": "he-2011-ol-sa-q1",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2011 OL Section A Q1",
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2011-ol-sa-q2",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2011 OL Section A Q2",
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2011-ol-sa-q3",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2011 OL Section A Q3",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2011-ol-sa-q4",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2011 OL Section A Q4",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2011-ol-sa-q5",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2011 OL Section A Q5",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2011-ol-sa-q6",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2011 OL Section A Q6",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2011-ol-sa-q7",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2011 OL Section A Q7",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2011-ol-sa-q8",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2011 OL Section A Q8",
+      "topicId": "home-economics-1-5"
+    },
+    {
+      "id": "he-2011-ol-sa-q9",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2011 OL Section A Q9",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2011-ol-sa-q10",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2011 OL Section A Q10",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2011-ol-sa-q11",
+      "section": "A",
+      "marks": 2,
+      "questionRef": "2011 OL Section A Q11",
+      "topicId": "home-economics-1-4"
+    },
+    {
+      "id": "he-2011-ol-sa-q11-uses",
+      "section": "A",
+      "marks": 4,
+      "questionRef": "2011 OL Section A Q11 — uses",
+      "topicId": "home-economics-1-4"
+    },
+    {
+      "id": "he-2011-ol-sa-q12",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2011 OL Section A Q12",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2011-ol-sb-q1a",
+      "section": "B",
+      "marks": 18,
+      "questionRef": "2011 OL Section B Q1(a)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2011-ol-sb-q1b",
+      "section": "B",
+      "marks": 28,
+      "questionRef": "2011 OL Section B Q1(b)",
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2011-ol-sb-q1c-essential",
+      "section": "B",
+      "marks": 7,
+      "questionRef": "2011 OL Section B Q1(c) — essential fatty acids",
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2011-ol-sb-q1c-omega3",
+      "section": "B",
+      "marks": 7,
+      "questionRef": "2011 OL Section B Q1(c) — omega-3 benefit",
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2011-ol-sb-q1d",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2011 OL Section B Q1(d)",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2011-ol-sb-q2a",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2011 OL Section B Q2(a)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2011-ol-sb-q2b",
+      "section": "B",
+      "marks": 18,
+      "questionRef": "2011 OL Section B Q2(b)",
+      "topicId": "home-economics-0-10"
+    },
+    {
+      "id": "he-2011-ol-sb-q2c",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2011 OL Section B Q2(c)",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2011-ol-sb-q3a",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2011 OL Section B Q3(a)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2011-ol-sb-q3b",
+      "section": "B",
+      "marks": 18,
+      "questionRef": "2011 OL Section B Q3(b)",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2011-ol-sb-q3c",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2011 OL Section B Q3(c)",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2011-ol-sb-q4a",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2011 OL Section B Q4(a)",
+      "topicId": "home-economics-1-0"
+    },
+    {
+      "id": "he-2011-ol-sb-q4b",
+      "section": "B",
+      "marks": 8,
+      "questionRef": "2011 OL Section B Q4(b)",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2011-ol-sb-q4c",
+      "section": "B",
+      "marks": 18,
+      "questionRef": "2011 OL Section B Q4(c)",
+      "topicId": "home-economics-1-0"
+    },
+    {
+      "id": "he-2011-ol-sb-q5ai",
+      "section": "B",
+      "marks": 15,
+      "questionRef": "2011 OL Section B Q5(a)(i)",
+      "topicId": "home-economics-2-1"
+    },
+    {
+      "id": "he-2011-ol-sb-q5aii",
+      "section": "B",
+      "marks": 18,
+      "questionRef": "2011 OL Section B Q5(a)(ii)",
+      "topicId": "home-economics-2-1"
+    },
+    {
+      "id": "he-2011-ol-sb-q5bi",
+      "section": "B",
+      "marks": 5,
+      "questionRef": "2011 OL Section B Q5(b)(i)",
+      "topicId": "home-economics-2-1"
+    },
+    {
+      "id": "he-2011-ol-sb-q5bii",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2011 OL Section B Q5(b)(ii)",
+      "topicId": "home-economics-2-1"
+    },
+    {
+      "id": "he-2011-ol-sc-q1ai",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2011 OL Section C E1 Q1(a)(i)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2011-ol-sc-q1aii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2011 OL Section C E1 Q1(a)(ii)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2011-ol-sc-q1aiii",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2011 OL Section C E1 Q1(a)(iii)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2011-ol-sc-q1bi",
+      "section": "C",
+      "marks": 14,
+      "questionRef": "2011 OL Section C E1 Q1(b)(i)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2011-ol-sc-q1bii",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2011 OL Section C E1 Q1(b)(ii)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2011-ol-sc-q1ci",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2011 OL Section C E1 Q1(c)(i)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2011-ol-sc-q1cii",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2011 OL Section C E1 Q1(c)(ii)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2011-ol-sc-q2ai",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2011 OL Section C E2 Q2(a)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2011-ol-sc-q2aii",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2011 OL Section C E2 Q2(a)(ii)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2011-ol-sc-q2aiii",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2011 OL Section C E2 Q2(a)(iii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2011-ol-sc-q2bi",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2011 OL Section C E2 Q2(b)(i)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2011-ol-sc-q2bii",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2011 OL Section C E2 Q2(b)(ii)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2011-ol-sc-q2ci",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2011 OL Section C E2 Q2(c)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2011-ol-sc-q2cii",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2011 OL Section C E2 Q2(c)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2011-ol-sc-q3ai",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2011 OL Section C E3 Q3(a)(i)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2011-ol-sc-q3aii",
+      "section": "C",
+      "marks": 24,
+      "questionRef": "2011 OL Section C E3 Q3(a)(ii)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2011-ol-sc-q3aiii",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2011 OL Section C E3 Q3(a)(iii)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2011-ol-sc-q3bi",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2011 OL Section C E3 Q3(b)(i)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2011-ol-sc-q3bii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2011 OL Section C E3 Q3(b)(ii)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2011-ol-sc-q3ci",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2011 OL Section C E3 Q3(c)(i)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2011-ol-sc-q3cii",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2011 OL Section C E3 Q3(c)(ii)",
+      "topicId": "home-economics-3-10"
+    }
+  ],
+  "figures": {
+    "home-economics-2011-ol-sa-q1": {
+      "source": "paper-trail-corpus/exampapers/2011/LC098GLP000EV.pdf",
+      "page": 2,
+      "bounds": [
+        45,
+        138.7676544189453,
+        570.219970703125,
+        354.8876647949219
+      ],
+      "alt": "Original carbohydrate matching table and printed classification choices. Sources: cellulose e.g. vegetables, glucose e.g. fruit, sucrose e.g. table sugar; blank Classification column.",
+      "sha256": "9ff71592ac34c53ae4f015ac0fb9da8aed6c68ce32f3cb8f9d6043e649ab9f03"
+    },
+    "home-economics-2011-ol-sa-q3": {
+      "source": "paper-trail-corpus/exampapers/2011/LC098GLP000EV.pdf",
+      "page": 2,
+      "bounds": [
+        45,
+        506.6875915527344,
+        570.219970703125,
+        690
+      ],
+      "alt": "Original B-vitamin cloze with all three complete sentences and the printed word bank: folic acid, thiamine, energy.",
+      "sha256": "ba9c0fc2d12cb295078c8e1abebe8ade7db957e7f6dda716e4902bed5951abbf"
+    },
+    "home-economics-2011-ol-sa-q4": {
+      "source": "paper-trail-corpus/exampapers/2011/LC098GLP000EV.pdf",
+      "page": 3,
+      "bounds": [
+        45,
+        39.88771057128906,
+        570.219970703125,
+        247.60768127441406
+      ],
+      "alt": "Original three-statement True/False table: osteoporosis, lacto-vegetarian dairy produce, and cholesterol transport; both response columns retained.",
+      "sha256": "7183dfd5f33d692ffd475c7cd556e44cd2a75189a48363721d3f7706183c4630"
+    },
+    "home-economics-2011-ol-sa-q5": {
+      "source": "paper-trail-corpus/exampapers/2011/LC098GLP000EV.pdf",
+      "page": 3,
+      "bounds": [
+        45,
+        247.60768127441406,
+        570.219970703125,
+        463.6676940917969
+      ],
+      "alt": "Original preservation-function matching table and word bank: pectin, blanching, sugar and vinegar; all three function rows retained.",
+      "sha256": "97f6271ec781bede56a8cdfb82d573e6b4529e24d87e2e4b0e833b4673f08a14"
+    },
+    "home-economics-2011-ol-sa-q6": {
+      "source": "paper-trail-corpus/exampapers/2011/LC098GLP000EV.pdf",
+      "page": 3,
+      "bounds": [
+        45,
+        463.6676940917969,
+        570.219970703125,
+        793.19189453125
+      ],
+      "alt": "Original raising-agent question, all three dish rows Bread / Sponge Cake / Muffins, blank Raising Agents column, and dependent underlying-principle prompt.",
+      "sha256": "5e7c0977cfb5cabef00a1c8a81c97c8b13374f82726b521ba91a3f918287a5c9"
+    },
+    "home-economics-2011-ol-sa-q9": {
+      "source": "paper-trail-corpus/exampapers/2011/LC098GLP000EV.pdf",
+      "page": 4,
+      "bounds": [
+        45,
+        440.1476745605469,
+        570.219970703125,
+        793.2518920898438
+      ],
+      "alt": "Original appliance energy label and question. Complete A–G efficiency scale, large A rating arrow, energy and washing/spinning performance, capacity, water and noise rows, and EU logo retained.",
+      "sha256": "9401a7b4ac2e6cc7695417531a0b7b7aa70ec18cfb77f31353761138c93f851d"
+    },
+    "home-economics-2011-ol-sb-q1-fish": {
+      "source": "paper-trail-corpus/exampapers/2011/LC098GLP000EV.pdf",
+      "page": 6,
+      "bounds": [
+        82,
+        145,
+        545,
+        311
+      ],
+      "alt": "Original nutrition table per 100 g for Cod and Salmon. Protein 18.3 g/20.2 g; fat 0.7 g/11.0 g; carbohydrate 0 g/0 g; cod minerals Iron, Phosphorus, Iodine; salmon minerals Phosphorus, Calcium, Iodine; vitamins B group / A,D,B group; energy 80 kcal/180 kcal. Complete headings, units and both rows retained.",
+      "sha256": "dc09a72e256ab40ae6dff839b984dd07941d8b51416ce822d26bf18ca13d30c4"
+    },
+    "home-economics-2011-ol-sb-q2-fruit": {
+      "source": "paper-trail-corpus/exampapers/2011/LC098GLP000EV.pdf",
+      "page": 7,
+      "bounds": [
+        125,
+        105,
+        520,
+        365
+      ],
+      "alt": "Original fooddudes.ie chart: More portions of fruit & veg being eaten in the HOME (%). All six paired bar categories None, One, Two, Three, Four, Five; black children and grey parents legend; full percentage axis 0–35; title and source caption retained. Bars carry no exact printed value labels.",
+      "sha256": "0c0f8c0e1e04ad8076fc7a3ba45c4e6d37ea46cc1f0e54f7e099ee21a6a4248d"
+    },
+    "home-economics-2011-ol-sc-q1-houses": {
+      "source": "paper-trail-corpus/exampapers/2011/LC098GLP000EV.pdf",
+      "page": 9,
+      "bounds": [
+        100,
+        176,
+        470,
+        322
+      ],
+      "alt": "All three original housing-style photographs: a multi-storey apartment building, a detached single-storey house and adjoining two-storey houses. Complete images retained, without redrawing or invented labels.",
+      "sha256": "2dc83fa800e25bd3be2f336a572db47a74e3143820482be41d3aa69b3d95d344"
+    },
+    "home-economics-2011-ol-sc-q3-poverty": {
+      "source": "paper-trail-corpus/exampapers/2011/LC098GLP000EV.pdf",
+      "page": 11,
+      "bounds": [
+        145,
+        133,
+        475,
+        238
+      ],
+      "alt": "Original Poverty in Ireland 2008 table. Consistent Poverty 4.2% (178,074 people); At Risk of Poverty 14.4% (610,538 people); footnote also known as relative poverty. Complete title, two rows and footnote retained.",
+      "sha256": "9302ae8cd75191d0e9fc731229e309efcde763f3f2e80e3034670f8f2ac33527"
+    }
+  },
+  "sourceCensusReconciliation": {
+    "independentSourceLeaves": 50,
+    "sourceSectionLeaves": {
+      "A": 12,
+      "B": 17,
+      "C": 21
+    },
+    "pricedTasks": 52,
+    "splits": [
+      {
+        "paper": 5,
+        "scheme": 7,
+        "sourceLeaf": "Section A Q11",
+        "tasks": [
+          "he-2011-ol-sa-q11",
+          "he-2011-ol-sa-q11-uses"
+        ],
+        "marks": [
+          2,
+          4
+        ],
+        "reason": "Independent fire-retardant finish name and uses asks."
+      },
+      {
+        "paper": 6,
+        "scheme": 9,
+        "sourceLeaf": "Section B Q1(c)",
+        "tasks": [
+          "he-2011-ol-sb-q1c-essential",
+          "he-2011-ol-sb-q1c-omega3"
+        ],
+        "marks": [
+          7,
+          7
+        ],
+        "reason": "Independent essential-fatty-acid and omega-3 benefit explanations."
+      }
+    ],
+    "gate": "python3 scripts/markbank/authoring/he_validate_2011_source_census.py",
+    "policy": "Original paper keys pinned from full visual sweep, independently of authored cards. No census count substitutes for inspection of all 44 source pages."
+  },
+  "sourceTextAnomalies": [
+    "Paper pages4,7,9 are strip-set with repeated glyphs at strip boundaries. Positional strip_set_lines pools original glyphs by baseline and keeps identical overprinted glyphs once; source census uses it only for these pages. A7–9, B2–3 and C1 authoring reads these reconstructed original glyphs, visually checked against the printed pages. No authored list or scheme wording substituted for paper questions."
+  ],
+  "figuresVisuallyInspected": [
+    "home-economics-2011-ol-sa-q1",
+    "home-economics-2011-ol-sa-q3",
+    "home-economics-2011-ol-sa-q4",
+    "home-economics-2011-ol-sa-q5",
+    "home-economics-2011-ol-sa-q6",
+    "home-economics-2011-ol-sa-q9",
+    "home-economics-2011-ol-sb-q1-fish",
+    "home-economics-2011-ol-sb-q2-fruit",
+    "home-economics-2011-ol-sc-q1-houses",
+    "home-economics-2011-ol-sc-q3-poverty"
+  ],
+  "sectionAReview": {
+    "tasks": 13,
+    "marks": 72,
+    "selectionDecisions": "A11 independent name/uses tasks2+4; remaining required pairs and chosen-profile dependencies stay whole. A6 source gives2@2+1@1 without mapping prices to foods; visible whole-table criterion preserves this ambiguity and dependent principle1."
+  },
+  "sectionBReview": {
+    "tasks": 18,
+    "marks": 280,
+    "selectionDecisions": "B1(c) has two independently priced seven-mark explanations. Profiles, three-meal menu and paired egg/resource tasks stay whole. B5(a)(ii) requires one advantage/disadvantage for each named option. Full will continuation on scheme14 retained."
+  },
+  "sectionCReview": {
+    "tasks": 21,
+    "marks": 275,
+    "selectionDecisions": "Keep all required headings and chosen-system/outfit dependencies. Four-point housing and leisure totals have no invented heading quotas. Poverty effects are three TOTAL across two groups. Full source-specified criteria and any omitted model details are visible."
+  },
+  "atlasReconciliation": "Original ordinary tag record had12 groups, now20; papers61 unchanged, physical groups664→672. Exact file mappings989→991 add Q8/Q16. Q8 previously used a canonical fileless fallback, replaced by its exact mapping, so registry total1002→1003 (not1004). All20 original physical IDs retained.",
+  "validation": {
+    "runtime": "232 required preservation/curriculum/deck tests plus7 each2010HL/2010OL/2011HL/2011OL =260 passed at maxWorkers1. Seven Ordinary regressions reran after original glyph-position reconstruction.",
+    "mandatoryRawSourceGate": "Passed explicit Python2010 and2011 source gates: original source hashes and independent pinned keys. 2011Ordinary50 leaves, zero continuity flags. Normal checkout Vitest has no archive/Python dependency.",
+    "atlas": "Two targeted Home Economics tests passed. 61 tagged papers,672 physical groups,1003 registry mappings. Original IDs1–20 retained; every task mapped to canonical topics. Exact Q8 replaces its prior fileless fallback; Q16 newly mapped.",
+    "mainTypecheck": "passed",
+    "scoped2011TestTypecheck": "passed",
+    "productionBuild": "passed; removed only own reproducible untracked dist output",
+    "cardlint": "clean;1064 authored records including withdrawals inspected",
+    "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across33 files.",
+    "reconciliation": "2011OL50/50 raw source leaves covered;52 priced tasks;zero open/excluded/orphan/continuity flags. Whole subject1038 cards579HL/459OL,994/1453 raw leaves covered,459 open,zero orphan/unparsed/excluded,31 flags.",
+    "browser": "Parent-owned/pending; all ten original source crops visually inspected.",
+    "preservation": "All earlier authored cards, other decks, unrelated sizes/showcase subjects, full and decoded compact non-HE Atlas data, unrelated HE tags/runtime/associations and every other HE sitting census unchanged. Frozen identity hashes preserved.",
+    "correctedValidationFindings": "Initial pass found nonexistent A4 curriculum node0-0, corrected to0-1, and test casing Sponge Cake vs printed scheme Sponge cake. Source-corrected data passed260 tests. Registry count initially estimated1004; inspected canonical bridge proves Q8 fallback replacement, final1003 exact expected."
+  }
+}

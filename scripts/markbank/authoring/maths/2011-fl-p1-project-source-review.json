@@ -1,0 +1,721 @@
+{
+  "paperFileid": "LC003BLP130EV.pdf",
+  "schemeFileid": "LC003BLP030EV.pdf",
+  "offeredMarks": 300,
+  "candidateMarks": 300,
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 75,
+    "7": 50,
+    "8": 50
+  },
+  "scales": {
+    "5B": [
+      0,
+      3,
+      5
+    ],
+    "5C": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "10B": [
+      0,
+      8,
+      10
+    ],
+    "10C": [
+      0,
+      6,
+      9,
+      10
+    ],
+    "15B": [
+      0,
+      10,
+      15
+    ],
+    "15C": [
+      0,
+      9,
+      13,
+      15
+    ],
+    "20C": [
+      0,
+      12,
+      17,
+      20
+    ]
+  },
+  "status": "Independent source sweep complete; all question, solution and published question crops visually inspected",
+  "reviewedAt": "2026-10-30",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "generalNotesPages": [
+    18,
+    19,
+    24
+  ],
+  "notes": [
+    "All 16 paper pages and marking-scheme pages 1–28 visually inspected independently; no tasks on the extra-work pages.",
+    "Q1(a) six classifications and Q6(a)(ii), Q7(a) complete tables are holistic marked tasks.",
+    "Q6(b)(i,ii) share 15C and Q7(e,f) share 5C: preserve both required prompts in each card.",
+    "Q1(c)(ii) is mislabelled (d)(ii) in the summary; paper, model and detailed marking notes agree on (c)(ii).",
+    "Only Q3(a), Q3(b) and Q5(b) have published starred full-credit-minus-one provision.",
+    "Q8(a) is one 30-mark graph with 20+10 components; all four readings remain independently practicable five-mark tasks.",
+    "The graph estimates follow the published tolerances; approximate turning point 0.2 is not an exact algebraic statement."
+  ],
+  "selectionReview": [
+    {
+      "classification": "whole-examination-selection",
+      "reason": "All eight questions are required, with no choice of whole questions or internal finite practice routes."
+    },
+    {
+      "classification": "required-answer-identification",
+      "reason": "Q7(e) asks which formula is correct and to explain, then Q7(f) requires an equivalence explanation. The candidate must evaluate the provided alternatives; they are not optional practice routes. All formulae and both prompts are retained in one shared five-mark task."
+    }
+  ],
+  "tasks": [
+    {
+      "suffix": "1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        7,
+        20
+      ],
+      "questionText": "For each number, tick the correct box to say whether it is rational or irrational: 7, 2/3, √2, √4, π, 3.14.",
+      "scale": "10C",
+      "markingNote": "All six classifications form one ten-mark task; they are not six separate cards."
+    },
+    {
+      "suffix": "1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        7,
+        20
+      ],
+      "questionText": "Show the number √2 on the number line below.",
+      "scale": "5B",
+      "markingNote": "Full credit accepts a position from 1.4 to 1.5. The broader 1-to-2 range and writing an approximation without locating it earn partial credit."
+    },
+    {
+      "suffix": "1-c-i",
+      "printedParts": [
+        "Q1(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        7,
+        20
+      ],
+      "questionText": "Write this as an ordinary whole number.",
+      "scale": "5B",
+      "stem": "Ireland’s national debt, in euro, at the end of 2010 was approximately 9.3 × 10¹⁰."
+    },
+    {
+      "suffix": "1-c-ii",
+      "printedParts": [
+        "Q1(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        7,
+        20
+      ],
+      "questionText": "Write the number out in words.",
+      "scale": "5B",
+      "stem": "Ireland’s national debt, in euro, at the end of 2010 was approximately 9.3 × 10¹⁰."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        8,
+        20
+      ],
+      "questionText": "Write 8% as a decimal.",
+      "scale": "15B"
+    },
+    {
+      "suffix": "2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        8,
+        20
+      ],
+      "questionText": "A company borrows €15 000 for five years at an interest rate of 8% per annum (APR). If the company makes no repayments, how much will it owe at the end of the five years?",
+      "scale": "10C"
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 20,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        9,
+        21
+      ],
+      "questionText": "Find the volume of the cone, in cm³, correct to two decimal places.",
+      "scale": "20C",
+      "stem": "The diagram shows a right cone: radius of base 5 cm, vertical height 12 cm, slant height 13 cm.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        9,
+        21
+      ],
+      "questionText": "Find the total surface area of the cone, in cm², correct to two decimal places.",
+      "scale": "5C",
+      "stem": "The diagram shows a right cone: radius of base 5 cm, vertical height 12 cm, slant height 13 cm.",
+      "markingNote": "Include both the curved surface and circular base. The slant height is 13 cm.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 20,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        10,
+        21
+      ],
+      "questionText": "Evaluate (4x − 8)/(3x + 2) when x = −2.",
+      "scale": "20C",
+      "markingNote": "The published 20C band gives 12 for low partial and 17 for high partial; it does not use the later 20C values."
+    },
+    {
+      "suffix": "4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        10,
+        21
+      ],
+      "questionText": "Let f(x) = 4x − 8 and g(x) = 3x + 2. Find the value of x for which f(x) = g(x).",
+      "scale": "5C"
+    },
+    {
+      "suffix": "5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 20,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        11,
+        21
+      ],
+      "questionText": "Solve the equation x² − 12x + 11 = 0.",
+      "scale": "20C",
+      "markingNote": "Both roots are required. Factorisation, the quadratic formula or verified trial-and-error are alternative methods, not extra tasks."
+    },
+    {
+      "suffix": "5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        11,
+        21
+      ],
+      "questionText": "Solve the equation 2y² − 7y − 5 = 0, giving your answers correct to two decimal places.",
+      "scale": "5C",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        12,
+        22
+      ],
+      "questionText": "Describe fully the pattern in the value of the equipment over time.",
+      "scale": "10B",
+      "stem": "A piece of machinery is valued every three years. Year: 1996, 1999, 2002, 2005, 2008. Value at end of year (€): 256 000, 128 000, 64 000, 32 000, 16 000."
+    },
+    {
+      "suffix": "6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        12,
+        22
+      ],
+      "questionText": "Suppose that this pattern continued. Complete the table for the next two valuations, beginning in 2011.",
+      "scale": "15C",
+      "stem": "A piece of machinery is valued every three years. Year: 1996, 1999, 2002, 2005, 2008. Value at end of year (€): 256 000, 128 000, 64 000, 32 000, 16 000."
+    },
+    {
+      "suffix": "6-a-iii",
+      "printedParts": [
+        "Q6(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        12,
+        22
+      ],
+      "questionText": "The machinery will be scrapped when its value is €1000 or less. When will this happen?",
+      "scale": "10C",
+      "stem": "A piece of machinery is valued every three years. Year: 1996, 1999, 2002, 2005, 2008. Value at end of year (€): 256 000, 128 000, 64 000, 32 000, 16 000."
+    },
+    {
+      "suffix": "6-b-i-ii",
+      "printedParts": [
+        "Q6(b)(i)",
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        13,
+        22
+      ],
+      "questionText": "(i) Show how Peter might have made a suitable estimate. (ii) Find the correct answer to the calculation.",
+      "scale": "15C",
+      "stem": "Peter had to calculate (132.068 − 63.142)/4.82. He estimated the answer first, then got 118.968 on his calculator. His estimate showed this could not be correct.",
+      "markingNote": "The estimate and exact calculation share one 15C scale. Complete both for full credit; either part correct earns high partial credit. They are not separately scored cards."
+    },
+    {
+      "suffix": "6-b-iii",
+      "printedParts": [
+        "Q6(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        13,
+        22
+      ],
+      "questionText": "Peter keyed 132.068 − 63.142 ÷ 4.82 = into his calculator. Explain why this did not give the correct answer.",
+      "scale": "5B",
+      "stem": "Peter had to calculate (132.068 − 63.142)/4.82. He estimated the answer first, then got 118.968 on his calculator. His estimate showed this could not be correct."
+    },
+    {
+      "suffix": "6-c-i",
+      "printedParts": [
+        "Q6(c)(i)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        14,
+        22
+      ],
+      "questionText": "How much will Ciara save on her heating bills each year if she gets the insulation?",
+      "scale": "15C",
+      "stem": "Ciara spends €1600 each year on heating her house. Adding extra attic insulation can reduce this by 15%."
+    },
+    {
+      "suffix": "6-c-ii",
+      "printedParts": [
+        "Q6(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        14,
+        22
+      ],
+      "questionText": "The insulation costs €920 and Ciara gets a grant of €200. How many years will it take for the heating-bill savings to recover the rest of the cost?",
+      "scale": "5C",
+      "stem": "Ciara spends €1600 each year on heating her house. Adding extra attic insulation can reduce this by 15%."
+    },
+    {
+      "suffix": "7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 20,
+      "sourcePages": [
+        11
+      ],
+      "schemePages": [
+        15,
+        23
+      ],
+      "questionText": "Complete the table showing monthly clock sales at prices €15, €16, €17, €18, €19, €20 and €25.",
+      "scale": "20C",
+      "stem": "A company makes and sells clocks. At €15 per clock, it sells 300 per month. For every extra euro charged, monthly sales fall by twenty.",
+      "markingNote": "All six missing entries share one twenty-mark scale."
+    },
+    {
+      "suffix": "7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        11
+      ],
+      "schemePages": [
+        15,
+        23
+      ],
+      "questionText": "Draw a graph to represent monthly clock sales for prices from €15 to €25.",
+      "scale": "15C",
+      "stem": "A company makes and sells clocks. At €15 per clock, it sells 300 per month. For every extra euro charged, monthly sales fall by twenty."
+    },
+    {
+      "suffix": "7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        11,
+        12
+      ],
+      "schemePages": [
+        15,
+        16,
+        23
+      ],
+      "questionText": "Use the graph to estimate monthly clock sales if each clock costs €23.50.",
+      "scale": "5B",
+      "stem": "A company makes and sells clocks. At €15 per clock, it sells 300 per month. For every extra euro charged, monthly sales fall by twenty.",
+      "markingNote": "Use the graph from part (b); its construction and original axes are included as prerequisites. Only this reading is scored. The exact published graph-reading tolerance is retained."
+    },
+    {
+      "suffix": "7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        11,
+        12
+      ],
+      "schemePages": [
+        15,
+        16,
+        23
+      ],
+      "questionText": "Use the graph to work out the price per clock needed to sell 250 clocks per month.",
+      "scale": "5B",
+      "stem": "A company makes and sells clocks. At €15 per clock, it sells 300 per month. For every extra euro charged, monthly sales fall by twenty.",
+      "markingNote": "Use the graph from part (b); its construction and original axes are included as prerequisites. Only this reading is scored. The exact published graph-reading tolerance is retained."
+    },
+    {
+      "suffix": "7-e-f",
+      "printedParts": [
+        "Q7(e)",
+        "Q7(f)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        11,
+        12
+      ],
+      "schemePages": [
+        16,
+        23
+      ],
+      "questionText": "(e) Andrew writes n = 300 − 20x; Betty n = 300 − 20(x + 15); Charlie n = 300 − 20(x − 15). Which formula, if any, is correct? Explain. (f) Dónal writes n = 600 − 20x. Explain why it always agrees with Charlie’s formula.",
+      "scale": "5C",
+      "stem": "A company makes and sells clocks. At €15 per clock, it sells 300 per month. For every extra euro charged, monthly sales fall by twenty.",
+      "markingNote": "Both explanations share one five-mark scale. Either complete part earns high partial credit. The three printed formulae are alternatives to evaluate, not optional questions: retain all three on this card."
+    },
+    {
+      "suffix": "8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 30,
+      "sourcePages": [
+        13
+      ],
+      "schemePages": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "questionText": "Draw the graph of f: x ↦ 2x² − x − 5 for −3 ≤ x ≤ 3, x ∈ ℝ.",
+      "methods": [
+        {
+          "id": "solution",
+          "label": "Graph",
+          "components": [
+            {
+              "id": "evaluation",
+              "label": "Function evaluation",
+              "maximum": 20,
+              "attempt": 8
+            },
+            {
+              "id": "plotting",
+              "label": "Plotting the graph",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "One graph task: 20 marks for evaluation and 10 for plotting. The table and direct-evaluation methods are alternatives. A fully correct graph without shown working earns all 30 marks."
+    },
+    {
+      "suffix": "8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        13,
+        14
+      ],
+      "schemePages": [
+        27,
+        28
+      ],
+      "questionText": "Use your graph to estimate f(2.5).",
+      "methods": [
+        {
+          "id": "solution",
+          "label": "Graph reading",
+          "components": [
+            {
+              "id": "reading",
+              "label": "Graph reading",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "stem": "For f(x) = 2x² − x − 5, −3 ≤ x ≤ 3, x ∈ ℝ, draw and use the graph.",
+      "markingNote": "Only the named reading earns five marks. The full graph and shared read-off notes are retained. Accept the candidate’s graph values within the published tolerances: ±0.3 on x and ±0.5 on y. The printed 0.2 turning-point estimate is approximate; the exact turning point is x = 0.25."
+    },
+    {
+      "suffix": "8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        13,
+        14
+      ],
+      "schemePages": [
+        27,
+        28
+      ],
+      "questionText": "Use your graph to estimate the minimum value of f(x).",
+      "methods": [
+        {
+          "id": "solution",
+          "label": "Graph reading",
+          "components": [
+            {
+              "id": "reading",
+              "label": "Graph reading",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "stem": "For f(x) = 2x² − x − 5, −3 ≤ x ≤ 3, x ∈ ℝ, draw and use the graph.",
+      "markingNote": "Only the named reading earns five marks. The full graph and shared read-off notes are retained. Accept the candidate’s graph values within the published tolerances: ±0.3 on x and ±0.5 on y. The printed 0.2 turning-point estimate is approximate; the exact turning point is x = 0.25."
+    },
+    {
+      "suffix": "8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        13,
+        14
+      ],
+      "schemePages": [
+        27,
+        28
+      ],
+      "questionText": "Use your graph to estimate the values of x for which f(x) = 7.",
+      "methods": [
+        {
+          "id": "solution",
+          "label": "Graph reading",
+          "components": [
+            {
+              "id": "reading",
+              "label": "Graph reading",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "stem": "For f(x) = 2x² − x − 5, −3 ≤ x ≤ 3, x ∈ ℝ, draw and use the graph.",
+      "markingNote": "Only the named reading earns five marks. The full graph and shared read-off notes are retained. Accept the candidate’s graph values within the published tolerances: ±0.3 on x and ±0.5 on y. The printed 0.2 turning-point estimate is approximate; the exact turning point is x = 0.25."
+    },
+    {
+      "suffix": "8-b-iv",
+      "printedParts": [
+        "Q8(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        13,
+        14
+      ],
+      "schemePages": [
+        27,
+        28
+      ],
+      "questionText": "Use your graph to estimate the range of x for which f(x) is increasing.",
+      "methods": [
+        {
+          "id": "solution",
+          "label": "Graph reading",
+          "components": [
+            {
+              "id": "reading",
+              "label": "Graph reading",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "stem": "For f(x) = 2x² − x − 5, −3 ≤ x ≤ 3, x ∈ ℝ, draw and use the graph.",
+      "markingNote": "Only the named reading earns five marks. The full graph and shared read-off notes are retained. Accept the candidate’s graph values within the published tolerances: ±0.3 on x and ±0.5 on y. The printed 0.2 turning-point estimate is approximate; the exact turning point is x = 0.25."
+    }
+  ],
+  "paperSha256": "34cb934f1c7d1314c9d434816c64ef4267d524b61e79b403b346ef5b0965f0a8",
+  "schemeSha256": "1141518171373aa02df40f492f62691bc5538258a0d9f1d69d6e943f0d9a874b"
+}

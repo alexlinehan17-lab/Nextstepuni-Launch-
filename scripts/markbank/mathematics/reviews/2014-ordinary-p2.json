@@ -1,0 +1,1318 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2014,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP230EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "26c71c6dd6bca8bccc38e69eaedb48230c74df040e3fc5587f950065efba891c",
+  "schemeSha256": "61afeac56c4a47317dec549e4f1423f116032b2a07ba57af9872869137c93f91",
+  "reviewedAt": "2026-10-29",
+  "reviewMethod": "Independent visual review of all 20 original paper pages and scheme PDF pages 33–68, including models 35–51, scale and allocation tables 52–53 and detailed notes 54–65. Both Q6 alternatives retained; every printed task reconciled to the detailed marking boundaries.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6A": 25,
+    "6B": 25,
+    "7": 70,
+    "8": 50,
+    "9": 30
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    52,
+    53
+  ],
+  "sourceNotes": [
+    "325 offered marks, 300 candidate marks. Both Q6A and Q6B retained.",
+    "Q1(a)(i)+(ii), Q3(a)(i)+(ii), Q4(b)(i)+(ii) and Q7(a)(i)+(ii) each use one shared scale. Q7(b) has separate 5C angle/20B chart components; Q7(c)(i) has 5C property-count/10C tax components.",
+    "Paper 2 scales differ from Paper 1: 5B 0,3,5; 5C 0,3,4,5; 10C 0,4,7,10; 15B 0,7,15; 25E 0,5,10,15,20,25. Do not reuse Paper 1 ladders.",
+    "Q6A construction and radius measurement retain original page access. Q6B is one unlettered 25E proof.",
+    "Q7(b) model solution prints 37·44° approximately 90° in the sector-D working, but the chart correctly labels 37°. Preserve source and disclose typo after reveal.",
+    "Q7(a) model answer 1·71 is in millions; disclose units. Q8(c)(ii) follows the rounded angle requested in (c)(i).",
+    "All earlier required prompts, tables and diagrams accompany dependent tasks; no earlier answers are supplied in the questions. All 41 cards are new."
+  ],
+  "cards": [
+    {
+      "id": "maths-2014-ol-p2-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)",
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        35,
+        54
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A garage has 5 black cars, 9 red cars and 10 silver cars for sale.",
+      "questionText": "A car is selected at random. What is the probability that: (i) The car is black? (ii) The car is black or red?"
+    },
+    {
+      "id": "maths-2014-ol-p2-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        35,
+        54
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A garage has 5 black cars, 9 red cars and 10 silver cars for sale. A car is selected at random. Then a second car is selected at random from those remaining.",
+      "questionText": "What is the probability that the first car is silver and the second car is black?"
+    },
+    {
+      "id": "maths-2014-ol-p2-q1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        35,
+        54
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A garage has 5 black cars, 9 red cars and 10 silver cars for sale. A car is selected at random. Then a second car is selected at random from those remaining.",
+      "questionText": "What is the probability that one of the selected cars is red and the other is black?"
+    },
+    {
+      "id": "maths-2014-ol-p2-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        35,
+        54
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A garage has 5 black cars, 9 red cars and 10 silver cars for sale.",
+      "questionText": "Three of the black cars, two of the red cars and four of the silver cars have diesel engines. One car from the garage is again selected at random. What is the probability that it is a red car or a diesel car?"
+    },
+    {
+      "id": "maths-2014-ol-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        36,
+        55
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "When taking a penalty kick, the probability that Kevin scores is always 3/4.",
+      "questionText": "Kevin takes a penalty. What is the probability that he does not score?"
+    },
+    {
+      "id": "maths-2014-ol-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        36,
+        55
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "When taking a penalty kick, the probability that Kevin scores is always 3/4.",
+      "questionText": "Kevin takes two penalties. What is the probability that he scores both?"
+    },
+    {
+      "id": "maths-2014-ol-p2-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        36,
+        55
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "When taking a penalty kick, the probability that Kevin scores is always 3/4.",
+      "questionText": "Kevin takes three penalties. What is the probability that he scores exactly twice?"
+    },
+    {
+      "id": "maths-2014-ol-p2-q2-d",
+      "printedParts": [
+        "Q2(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        36,
+        55
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "When taking a penalty kick, the probability that Kevin scores is always 3/4.",
+      "questionText": "Kevin takes five penalties. What is the probability that he scores for the first time on his fifth penalty?"
+    },
+    {
+      "id": "maths-2014-ol-p2-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)",
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        37,
+        56
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle c has equation (x + 2)² + (y − 3)² = 100.",
+      "questionText": "(i) Write down the co-ordinates of A, the centre of c. Write down r, the length of the radius of c. (ii) Show that the point P(−8, 11) is on the circle c."
+    },
+    {
+      "id": "maths-2014-ol-p2-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        37,
+        56
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle c has equation (x + 2)² + (y − 3)² = 100. A is the centre of c and P(−8, 11) is on c.",
+      "questionText": "Find the slope of the radius [AP]."
+    },
+    {
+      "id": "maths-2014-ol-p2-q3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        37,
+        56
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle c has equation (x + 2)² + (y − 3)² = 100. A is the centre of c and P(−8, 11) is on c. Part (b)(i): Find the slope of the radius [AP].",
+      "questionText": "Hence, find the equation of t, the tangent to c at P."
+    },
+    {
+      "id": "maths-2014-ol-p2-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        37,
+        56
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle c has equation (x + 2)² + (y − 3)² = 100. A is the centre of c and P(−8, 11) is on c. The line t is the tangent to c at P.",
+      "questionText": "A second line k is a tangent to c at the point Q and k ∥ t. Find the co-ordinates of Q."
+    },
+    {
+      "id": "maths-2014-ol-p2-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        38,
+        57
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points A(−9, 3), B(−4, 3) and C(−4, 10) are the vertices of the triangle ABC, as shown.",
+      "questionText": "Find the length of [AB]."
+    },
+    {
+      "id": "maths-2014-ol-p2-q4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        38,
+        39,
+        57
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points A(−9, 3), B(−4, 3) and C(−4, 10) are the vertices of the triangle ABC, as shown.",
+      "questionText": "Find the area of the triangle ABC."
+    },
+    {
+      "id": "maths-2014-ol-p2-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)",
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        38,
+        39,
+        57
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry",
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points A(−9, 3), B(−4, 3) and C(−4, 10) are the vertices of the triangle ABC, as shown.",
+      "questionText": "X(2, −4) and Y(2, 1) are two points. (i) Draw, on the diagram above, a triangle, XYZ, which is congruent to the triangle ABC. (ii) Write down the co-ordinates of Z and explain why the triangle XYZ is congruent to the triangle ABC."
+    },
+    {
+      "id": "maths-2014-ol-p2-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        40,
+        58
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The square ABCD has an area of 81 cm².",
+      "questionText": "Find |AD|."
+    },
+    {
+      "id": "maths-2014-ol-p2-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        40,
+        58
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The square ABCD has an area of 81 cm². A sector of a circle, centre B and radius |BC|, is drawn inside ABCD as shown by the shaded region.",
+      "questionText": "Find the area of the sector, correct to one decimal place."
+    },
+    {
+      "id": "maths-2014-ol-p2-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        40,
+        58
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The square ABCD has an area of 81 cm². A sector of a circle, centre B and radius |BC|, is drawn inside ABCD as shown by the shaded region.",
+      "questionText": "A second sector of a circle, centre D and radius |DA|, is drawn. Find the area of the shaded region (the overlap of the two sectors), correct to one decimal place."
+    },
+    {
+      "id": "maths-2014-ol-p2-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        40,
+        58
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The square ABCD has an area of 81 cm². A sector of a circle, centre D and radius |DA|, is drawn inside ABCD.",
+      "questionText": "The point P is on the arc of the sector DAC, as shown. The triangle APC is isosceles. Find the area of the triangle APC, correct to one decimal place."
+    },
+    {
+      "id": "maths-2014-ol-p2-q6a-a-i",
+      "printedParts": [
+        "Q6A(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15B",
+      "permittedMarks": [
+        0,
+        7,
+        15
+      ],
+      "schemePages": [
+        41,
+        59
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "questionText": "Construct the incircle of the triangle ABC below. Show all your construction lines clearly.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2014-ol-p2-q6a-a-ii",
+      "printedParts": [
+        "Q6A(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        41,
+        59
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "stem": "Part (a)(i): Construct the incircle of the triangle ABC below. Show all your construction lines clearly.",
+      "questionText": "Measure the length of the radius of the circle constructed in part (i).",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2014-ol-p2-q6a-b",
+      "printedParts": [
+        "Q6A(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        42,
+        59
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry",
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The point P is on the circle c with centre O and diameter [MN], as shown. The length of the radius of c is 2√5 cm. |MP| = x cm and |PN| = 2x cm.",
+      "questionText": "Find the value of x."
+    },
+    {
+      "id": "maths-2014-ol-p2-q6b",
+      "printedParts": [
+        "Q6B"
+      ],
+      "totalMarks": 25,
+      "scale": "25E",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "schemePages": [
+        43,
+        59
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "stem": "Two circles, c₁ and c₂, intersect at the points B and X, as shown. The circle c₁ has diameter [AB]. The circle c₂ has diameter [BC]. The line CB is a tangent to c₁.",
+      "questionText": "Prove that X is on the line AC."
+    },
+    {
+      "id": "maths-2014-ol-p2-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)",
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        44,
+        60
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "A newspaper report in October 2013 stated that 90% of homeowners who were liable for property tax had registered for it. The total number of properties liable for the tax was estimated at 1·9 million.",
+      "questionText": "(i) Estimate the number of properties that were registered. (ii) Suggest one reason why some properties were not registered."
+    },
+    {
+      "id": "maths-2014-ol-p2-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 25,
+      "components": [
+        {
+          "id": "angles",
+          "label": "Angle Determination",
+          "code": "5C",
+          "marks": [
+            0,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "pie-chart",
+          "label": "Pie Chart",
+          "code": "20B",
+          "marks": [
+            0,
+            10,
+            20
+          ]
+        }
+      ],
+      "schemePages": [
+        44,
+        60
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "Represent the data in the table using the pie chart below. Label each sector you create and show the angle in each sector clearly.",
+      "stem": "A newspaper report in October 2013 stated that 90% of homeowners who were liable for property tax had registered for it. The total number of properties liable for the tax was estimated at 1·9 million. Homeowners, who registered, were required to value their property in one of a number of given Valuation Bands. Percentage of registered homeowners: €0–€100 000, 24·9%; €100 001–€150 000, 28·6%; €150 001–€200 000, 21·9%; €200 001–€250 000, 10·4%; €250 001–€300 000, 4·9%; over €300 000, 9·3%."
+    },
+    {
+      "id": "maths-2014-ol-p2-q7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 15,
+      "components": [
+        {
+          "id": "properties",
+          "label": "Number of Properties",
+          "code": "5C",
+          "marks": [
+            0,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "tax",
+          "label": "Total Tax due",
+          "code": "10C",
+          "marks": [
+            0,
+            4,
+            7,
+            10
+          ]
+        }
+      ],
+      "schemePages": [
+        45,
+        60
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "Use the data in the table above and your answer to part (a)(i) above to complete the following table: Number of properties and Total tax due (€).",
+      "stem": "A newspaper report in October 2013 stated that 90% of homeowners who were liable for property tax had registered for it. The total number of properties liable for the tax was estimated at 1·9 million. Homeowners, who registered, were required to value their property in one of a number of given Valuation Bands. Percentage of registered homeowners: €0–€100 000, 24·9%; €100 001–€150 000, 28·6%; €150 001–€200 000, 21·9%; €200 001–€250 000, 10·4%; €250 001–€300 000, 4·9%; over €300 000, 9·3%. Tax per property by valuation band: €0–€100 000: €45; €100 001–€150 000: €112; €150 001–€200 000: €157; €200 001–€250 000: €202; €250 001–€300 000: €247; over €300 000: NA. The table gives 425 790 properties and €19 160 550 total tax for the first band, and 489 060 properties for the second. NA = Not Available."
+    },
+    {
+      "id": "maths-2014-ol-p2-q7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        45,
+        46,
+        61
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12,
+        13,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "A newspaper report in October 2013 stated that 90% of homeowners who were liable for property tax had registered for it. The total number of properties liable for the tax was estimated at 1·9 million. Homeowners, who registered, were required to value their property in one of a number of given Valuation Bands. Percentage of registered homeowners: €0–€100 000, 24·9%; €100 001–€150 000, 28·6%; €150 001–€200 000, 21·9%; €200 001–€250 000, 10·4%; €250 001–€300 000, 4·9%; over €300 000, 9·3%. Tax per property by valuation band: €0–€100 000: €45; €100 001–€150 000: €112; €150 001–€200 000: €157; €200 001–€250 000: €202; €250 001–€300 000: €247; over €300 000: NA. The table gives 425 790 properties and €19 160 550 total tax for the first band, and 489 060 properties for the second. NA = Not Available.",
+      "questionText": "Find the total tax due on those properties, registered by October 2013, with a valuation up to €300 000."
+    },
+    {
+      "id": "maths-2014-ol-p2-q7-c-iii",
+      "printedParts": [
+        "Q7(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        45,
+        46,
+        61
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12,
+        13,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "A newspaper report in October 2013 stated that 90% of homeowners who were liable for property tax had registered for it. The total number of properties liable for the tax was estimated at 1·9 million. Homeowners, who registered, were required to value their property in one of a number of given Valuation Bands. Percentage of registered homeowners: €0–€100 000, 24·9%; €100 001–€150 000, 28·6%; €150 001–€200 000, 21·9%; €200 001–€250 000, 10·4%; €250 001–€300 000, 4·9%; over €300 000, 9·3%. Tax per property by valuation band: €0–€100 000: €45; €100 001–€150 000: €112; €150 001–€200 000: €157; €200 001–€250 000: €202; €250 001–€300 000: €247; over €300 000: NA. The table gives 425 790 properties and €19 160 550 total tax for the first band, and 489 060 properties for the second. NA = Not Available.",
+      "questionText": "The total tax due on all the properties that were registered was estimated at €241 million. Find the total tax due on those properties with a valuation over €300 000."
+    },
+    {
+      "id": "maths-2014-ol-p2-q7-c-iv",
+      "printedParts": [
+        "Q7(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        45,
+        46,
+        61
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12,
+        13,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "A newspaper report in October 2013 stated that 90% of homeowners who were liable for property tax had registered for it. The total number of properties liable for the tax was estimated at 1·9 million. Homeowners, who registered, were required to value their property in one of a number of given Valuation Bands. Percentage of registered homeowners: €0–€100 000, 24·9%; €100 001–€150 000, 28·6%; €150 001–€200 000, 21·9%; €200 001–€250 000, 10·4%; €250 001–€300 000, 4·9%; over €300 000, 9·3%. Tax per property by valuation band: €0–€100 000: €45; €100 001–€150 000: €112; €150 001–€200 000: €157; €200 001–€250 000: €202; €250 001–€300 000: €247; over €300 000: NA. The table gives 425 790 properties and €19 160 550 total tax for the first band, and 489 060 properties for the second. NA = Not Available. The total tax due on all the properties that were registered was estimated at €241 million.",
+      "questionText": "Find the mean estimated tax per property on those properties with a valuation over €300 000."
+    },
+    {
+      "id": "maths-2014-ol-p2-q7-c-v",
+      "printedParts": [
+        "Q7(c)(v)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        45,
+        46,
+        61
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12,
+        13,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "A newspaper report in October 2013 stated that 90% of homeowners who were liable for property tax had registered for it. The total number of properties liable for the tax was estimated at 1·9 million. Homeowners, who registered, were required to value their property in one of a number of given Valuation Bands. Percentage of registered homeowners: €0–€100 000, 24·9%; €100 001–€150 000, 28·6%; €150 001–€200 000, 21·9%; €200 001–€250 000, 10·4%; €250 001–€300 000, 4·9%; over €300 000, 9·3%. Tax per property by valuation band: €0–€100 000: €45; €100 001–€150 000: €112; €150 001–€200 000: €157; €200 001–€250 000: €202; €250 001–€300 000: €247; over €300 000: NA. The table gives 425 790 properties and €19 160 550 total tax for the first band, and 489 060 properties for the second. NA = Not Available.",
+      "questionText": "Some homeowners may under-value their property in order to pay less tax. For example, one estimate stated that 20% of properties in the €100 001–€150 000 band should have been valued in the €150 001–€200 000 band. Based on this estimate, find the amount of extra tax that would be raised if these properties were registered in the correct Valuation Band."
+    },
+    {
+      "id": "maths-2014-ol-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "A wind turbine, used to generate electricity, has three equally spaced blades 65 metres long.",
+      "questionText": "Write down the size of the angle between two blades."
+    },
+    {
+      "id": "maths-2014-ol-p2-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A wind turbine, used to generate electricity, has three equally spaced blades 65 metres long.",
+      "questionText": "Find the area of the disc traced out by one full rotation of the blades, correct to the nearest whole number."
+    },
+    {
+      "id": "maths-2014-ol-p2-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A wind turbine, used to generate electricity, has three equally spaced blades 65 metres long.",
+      "questionText": "Find the area of the triangle formed by joining the tips of the three blades, correct to the nearest whole number."
+    },
+    {
+      "id": "maths-2014-ol-p2-q8-a-iv",
+      "printedParts": [
+        "Q8(a)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        48,
+        62
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        15,
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "A wind turbine, used to generate electricity, has three equally spaced blades 65 metres long.",
+      "questionText": "The expected lifetime of the turbine is 25 years. On average, the turbine operates 31% of the time. The blades rotate 15 times per minute when the turbine is operating. Find the number of times the blades will rotate during the expected lifetime of the turbine (ignore leap years). Write your answer in the form a × 10ⁿ, where 1 ≤ a < 10 and n ∈ ℤ."
+    },
+    {
+      "id": "maths-2014-ol-p2-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        48,
+        63
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Gráinne stood at a point B, which is on level ground 100 metres from the base of the tower supporting the blades, as shown. From there, she measured the angle of elevation to the top of the tower as 60°.",
+      "questionText": "Find the height of the tower, using Gráinne’s measurements. Give your answer correct to the nearest metre."
+    },
+    {
+      "id": "maths-2014-ol-p2-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        48,
+        49,
+        63
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Gráinne stood at a point B, which is on level ground 100 metres from the base of the tower supporting the blades, as shown. From there, she measured the angle of elevation to the top of the tower as 60°. Gráinne recognises that her measurement of the angle may not be totally accurate. She read elsewhere that the actual height of the tower is 154 m.",
+      "questionText": "If Gráinne measured the 100 m accurately, find the actual size of the angle at B, correct to the nearest degree."
+    },
+    {
+      "id": "maths-2014-ol-p2-q8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        48,
+        49,
+        63
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems",
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Gráinne stood at a point B, which is on level ground 100 metres from the base of the tower supporting the blades, as shown. From there, she measured the angle of elevation to the top of the tower as 60°. Gráinne recognises that her measurement of the angle may not be totally accurate. She read elsewhere that the actual height of the tower is 154 m. Part (c)(i): Find the actual size of the angle at B, correct to the nearest degree.",
+      "questionText": "Find the percentage error in Gráinne’s measurement of the angle of elevation, correct to one decimal place."
+    },
+    {
+      "id": "maths-2014-ol-p2-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        50,
+        64
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "At an activity centre a zip-line, [BD], runs between two vertical poles, [AB] and [CD], on level ground, as shown. The point E is on the ground, directly below the zip-line. |AE| = 12 m, |BE| = 14 m, |CD| = 1·95 m, and |EC| = 10 m.",
+      "questionText": "Find the distance |ED|, correct to one decimal place."
+    },
+    {
+      "id": "maths-2014-ol-p2-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        50,
+        64
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "At an activity centre a zip-line, [BD], runs between two vertical poles, [AB] and [CD], on level ground, as shown. The point E is on the ground, directly below the zip-line. |AE| = 12 m, |BE| = 14 m, |CD| = 1·95 m, and |EC| = 10 m.",
+      "questionText": "Find |∠AEB|, correct to the nearest degree."
+    },
+    {
+      "id": "maths-2014-ol-p2-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        51,
+        64
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "At an activity centre a zip-line, [BD], runs between two vertical poles, [AB] and [CD], on level ground, as shown. The point E is on the ground, directly below the zip-line. |AE| = 12 m, |BE| = 14 m, |CD| = 1·95 m, and |EC| = 10 m.",
+      "questionText": "Find |∠DEB|, given that |∠CED| = 11°, correct to the nearest degree."
+    },
+    {
+      "id": "maths-2014-ol-p2-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        51,
+        65
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "At an activity centre a zip-line, [BD], runs between two vertical poles, [AB] and [CD], on level ground, as shown. The point E is on the ground, directly below the zip-line. |AE| = 12 m, |BE| = 14 m, |CD| = 1·95 m, and |EC| = 10 m. Part (b)(i): Find |∠DEB|, given that |∠CED| = 11°, correct to the nearest degree.",
+      "questionText": "Hence, or otherwise, find the distance |DB|. Give your answer correct to one decimal place."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        9,
+        11
+      ],
+      "wording": "either Question 6A or Question 6B; OR",
+      "classification": "numbered-alternatives",
+      "reason": "Both alternatives retained, with 25 marks each."
+    },
+    {
+      "pages": [
+        2,
+        3,
+        12
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-with-alternative",
+      "reason": "All tasks retained including both Q6 alternatives."
+    }
+  ],
+  "selectionDecisions": {
+    "2:4aeeb6a83bba5531": {
+      "classification": "numbered-alternatives",
+      "reason": "Both Q6A and Q6B retained, 25 marks each."
+    },
+    "2:1fe67f0f9d7ec67f": {
+      "classification": "numbered-alternatives",
+      "reason": "Both Q6A and Q6B retained, 25 marks each."
+    },
+    "3:b223d766b1c2d51d": {
+      "classification": "all-questions-with-alternative",
+      "reason": "All printed tasks retained, including both Q6 alternatives."
+    },
+    "3:7b7dfe88ddd4aaeb": {
+      "classification": "random-selection-context",
+      "reason": "Probability event, not a choice of examination tasks."
+    },
+    "9:d716c3c1b4d20263": {
+      "classification": "numbered-alternatives",
+      "reason": "Both Q6A and Q6B retained, 25 marks each."
+    },
+    "12:8a48c3cba67f4a4c": {
+      "classification": "all-questions-with-alternative",
+      "reason": "All printed tasks retained, including both Q6 alternatives."
+    },
+    "12:2ba8bbee707a4876": {
+      "classification": "data-category",
+      "reason": "Valuation-band classification, not a choice of examination tasks."
+    },
+    "19:0f0c1abf9a41d4eb": {
+      "classification": "alternative-methods",
+      "reason": "One required distance; any valid method accepted."
+    }
+  }
+}

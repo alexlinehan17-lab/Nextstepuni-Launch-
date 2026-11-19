@@ -1,0 +1,1722 @@
+{
+  "status": "visually inspected",
+  "scope": "Missing exact A/B alternative anchors only; original sidecar questions retained unchanged.",
+  "papers": [
+    {
+      "review": "scripts/markbank/mathematics/reviews/2010-higher-p2-project.json",
+      "year": 2010,
+      "paperFileid": "LC003ALP230EV.pdf",
+      "schemeFileid": "LC003ALP030EV.pdf",
+      "paperSha256": "2c8dd9f3c69edb29535eb8911f3743c5212775d143c12f4fb7ff5fb3615f6264",
+      "schemeSha256": "cd4089ad0834d23f9b7596ca2d1418ec38a138ac7fe56f94a3bf59d84e2bd9b0",
+      "baseMapSha256": "34fd954223554eff190f30d0df5dad207f73e5a7e0850ade83c956b0c572f244",
+      "questions": {
+        "9A": {
+          "paper": [
+            {
+              "p": 14,
+              "r": [
+                0,
+                0.063183,
+                1,
+                0.940618
+              ]
+            },
+            {
+              "p": 15,
+              "r": [
+                0,
+                0.047506,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 55,
+              "r": [
+                0,
+                0.060941,
+                1,
+                0.940603
+              ]
+            },
+            {
+              "p": 56,
+              "r": [
+                0,
+                0.047517,
+                1,
+                0.940603
+              ]
+            },
+            {
+              "p": 67,
+              "r": [
+                0,
+                0.249347,
+                1,
+                0.940603
+              ]
+            }
+          ]
+        },
+        "9B": {
+          "paper": [
+            {
+              "p": 16,
+              "r": [
+                0,
+                0.063183,
+                1,
+                0.940618
+              ]
+            },
+            {
+              "p": 17,
+              "r": [
+                0,
+                0.047506,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 57,
+              "r": [
+                0,
+                0.060941,
+                1,
+                0.940603
+              ]
+            },
+            {
+              "p": 58,
+              "r": [
+                0,
+                0.047517,
+                1,
+                0.940603
+              ]
+            },
+            {
+              "p": 68,
+              "r": [
+                0,
+                0.060941,
+                1,
+                0.940603
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "originalQuestionsSha256": "902ef516b10891ebf0e2986a03a39711d20d4b1be24236e3d8ac124912204f5d"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2010-ordinary-p2-project.json",
+      "year": 2010,
+      "paperFileid": "LC003GLP230EV.pdf",
+      "schemeFileid": "LC003GLP030EV.pdf",
+      "paperSha256": "7c5a248842a404ad94346adf12a267d207ae60e57b9602fa9ebaae5f3d0cb935",
+      "schemeSha256": "70d0865498a3dc161c0b2b514d12ab434947bddacf3bce027829e7a5dc21d159",
+      "baseMapSha256": "6338f8e850165313dbeddc1169333b2a38371f91fd8ef75c1db79d18c1d1de46",
+      "questions": {
+        "9A": {
+          "paper": [
+            {
+              "p": 14,
+              "r": [
+                0,
+                0.063183,
+                1,
+                0.940618
+              ]
+            },
+            {
+              "p": 15,
+              "r": [
+                0,
+                0.047506,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 57,
+              "r": [
+                0,
+                0.060941,
+                1,
+                0.940603
+              ]
+            },
+            {
+              "p": 58,
+              "r": [
+                0,
+                0.047517,
+                1,
+                0.940603
+              ]
+            },
+            {
+              "p": 75,
+              "r": [
+                0,
+                0.076859,
+                1,
+                0.940603
+              ]
+            }
+          ]
+        },
+        "9B": {
+          "paper": [
+            {
+              "p": 16,
+              "r": [
+                0,
+                0.063183,
+                1,
+                0.940618
+              ]
+            },
+            {
+              "p": 17,
+              "r": [
+                0,
+                0.047506,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 59,
+              "r": [
+                0,
+                0.060941,
+                1,
+                0.940603
+              ]
+            },
+            {
+              "p": 60,
+              "r": [
+                0,
+                0.047517,
+                1,
+                0.940603
+              ]
+            },
+            {
+              "p": 76,
+              "r": [
+                0,
+                0.076859,
+                1,
+                0.940603
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "originalQuestionsSha256": "63d09119f0141e0fd656a5ed5f54421a6efda0e42e87571bbc33a617f205f24d"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2011-foundation-p2-project.json",
+      "year": 2011,
+      "paperFileid": "LC003BLP230EV.pdf",
+      "schemeFileid": "LC003BLP030EV.pdf",
+      "paperSha256": "ee66546ab03fb4fb2377d7f7007ff44dded91af9441b76fa442e0d83f38ce616",
+      "schemeSha256": "1141518171373aa02df40f492f62691bc5538258a0d9f1d69d6e943f0d9a874b",
+      "baseMapSha256": "2344a0199e88fd0aef262bde16c2edb6f435eb47f2fa24d1b75e9a4d7060e1c9",
+      "questions": {
+        "6A": {
+          "paper": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.107957,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 36,
+              "r": [
+                0,
+                0.110214,
+                1,
+                0.93923
+              ]
+            },
+            {
+              "p": 48,
+              "r": [
+                0,
+                0.423753,
+                1,
+                0.657363
+              ]
+            }
+          ]
+        },
+        "6B": {
+          "paper": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.107957,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 37,
+              "r": [
+                0,
+                0.110214,
+                1,
+                0.93923
+              ]
+            },
+            {
+              "p": 48,
+              "r": [
+                0,
+                0.657363,
+                1,
+                0.91771
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "originalQuestionsSha256": "588f791fcfb8932540c67a46392c0169d88e6fed21ef6c9df086120bdd02272f"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2011-higher-p2-project.json",
+      "year": 2011,
+      "paperFileid": "LC003ALP230EV.pdf",
+      "schemeFileid": "LC003ALP030EV.pdf",
+      "paperSha256": "591e89aca36f8f78d50319633b4041c726954108d26d7448e42e392fa8eaeb52",
+      "schemeSha256": "cfcb62282992ce772d9b15856459dbb762078690bac621878466813c12a7e671",
+      "baseMapSha256": "4112a0bb3bf247ca8cf9b7dc4baaeb9db10d00eab9e00339c13cb2840a2a45f2",
+      "questions": {
+        "6A": {
+          "paper": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.107957,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 50,
+              "r": [
+                0,
+                0.110095,
+                1,
+                0.920791
+              ]
+            },
+            {
+              "p": 68,
+              "r": [
+                0,
+                0.063183,
+                1,
+                0.509739
+              ]
+            }
+          ]
+        },
+        "6B": {
+          "paper": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.084442,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 51,
+              "r": [
+                0,
+                0.110095,
+                1,
+                0.925178
+              ]
+            },
+            {
+              "p": 68,
+              "r": [
+                0,
+                0.509739,
+                1,
+                0.912311
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "originalQuestionsSha256": "58e8f17bf01276889977f82e0d79d2b1ec78b48b80df8c8ad725fe62c7f6393c"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2011-ordinary-p2-project.json",
+      "year": 2011,
+      "paperFileid": "LC003GLP230EV.pdf",
+      "schemeFileid": "LC003GLP030EV.pdf",
+      "paperSha256": "eefed571c26566544ec1f7e65b3fcdc5fd3baa07aebf7077be4fdeb685138c31",
+      "schemeSha256": "8f5f26d039d785de5584b6f8ee8fe6f601529c33e97f7df0afb76a8537631d7c",
+      "baseMapSha256": "685d175c18f70535ec33d072c894867d0cec22deace878d0a45646fc1bc37b81",
+      "questions": {
+        "6A": {
+          "paper": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.107957,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 50,
+              "r": [
+                0,
+                0.110095,
+                1,
+                0.920691
+              ]
+            },
+            {
+              "p": 68,
+              "r": [
+                0,
+                0.062589,
+                1,
+                0.392755
+              ]
+            }
+          ]
+        },
+        "6B": {
+          "paper": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.107957,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 51,
+              "r": [
+                0,
+                0.110095,
+                1,
+                0.920691
+              ]
+            },
+            {
+              "p": 68,
+              "r": [
+                0,
+                0.392755,
+                1,
+                0.920722
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "originalQuestionsSha256": "aac9175bb78abaa51888d8e4ea032507ad7b1dca67f8a39a1197ef46627a8464"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2012-foundation-p2.json",
+      "year": 2012,
+      "paperFileid": "LC003BLP200EV.pdf",
+      "schemeFileid": "LC003BLP000EV.pdf",
+      "paperSha256": "00bb1f29194a39f9612caf8a876b5b883bac53459e0be4c0f4d522006d34ab37",
+      "schemeSha256": "a2c36474eef909e0348c0533b379f4f34d56fa99b0f92ec09b25da5812680459",
+      "baseMapSha256": "5d6fd1eaa3facdec3b9c54b40762e7d887caaae4aa4ee4020d4186bcb808f741",
+      "questions": {
+        "4A": {
+          "paper": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.110214,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 46,
+              "r": [
+                0,
+                0.108209,
+                1,
+                0.950391
+              ]
+            },
+            {
+              "p": 61,
+              "r": [
+                0,
+                0.061172,
+                1,
+                0.936707
+              ]
+            }
+          ]
+        },
+        "4B": {
+          "paper": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.086698,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 47,
+              "r": [
+                0,
+                0.08469,
+                1,
+                0.950391
+              ]
+            },
+            {
+              "p": 62,
+              "r": [
+                0,
+                0.061172,
+                1,
+                0.936707
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "originalQuestionsSha256": "ea4ea9fa8d2ba99f1c121b480494a0ae9fbba92611b4efb7f711c20860ec1ffb"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2012-higher-p2-project.json",
+      "year": 2012,
+      "paperFileid": "LC003ALP230EV.pdf",
+      "schemeFileid": "LC003ALP030EV.pdf",
+      "paperSha256": "a64ea9fcb9c23814b967c07d4f4afe351742662ea9643c3a08ef9d65a27a2071",
+      "schemeSha256": "d034ecd07854cd1ae60fe78514ae6436cbc48618f46272b932a1d56870df67a9",
+      "baseMapSha256": "3eb1fc088b69398776ef7fc0da141ee188ed033e142a12c94723cc804ca23e3c",
+      "questions": {
+        "6A": {
+          "paper": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.110214,
+                1,
+                0.940618
+              ]
+            },
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.047506,
+                1,
+                0.356057
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 46,
+              "r": [
+                0,
+                0.107853,
+                1,
+                0.931973
+              ]
+            },
+            {
+              "p": 47,
+              "r": [
+                0,
+                0.047512,
+                1,
+                0.344701
+              ]
+            },
+            {
+              "p": 64,
+              "r": [
+                0,
+                0.060697,
+                1,
+                0.551378
+              ]
+            }
+          ]
+        },
+        "6B": {
+          "paper": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.356057,
+                1,
+                0.940618
+              ]
+            },
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.047506,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 47,
+              "r": [
+                0,
+                0.344701,
+                1,
+                0.930514
+              ]
+            },
+            {
+              "p": 48,
+              "r": [
+                0,
+                0.047512,
+                1,
+                0.93143
+              ]
+            },
+            {
+              "p": 64,
+              "r": [
+                0,
+                0.551378,
+                1,
+                0.931842
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "originalQuestionsSha256": "27eb2bf3ad9b209f830cc9423787fc89579dd965b974c8afa253fc67c29e47a4"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2012-higher-p2.json",
+      "year": 2012,
+      "paperFileid": "LC003ALP200EV.pdf",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "paperSha256": "472f497e414a29cec4c855bed37d840e89ab417466a50958c93516508775a066",
+      "schemeSha256": "577ad1539a1f3b470b715047d5e4643171b6130cb4bba23ffa90579976540876",
+      "baseMapSha256": "34eda2f862bf4f18431bbdb237685cf738c2e2c2a41197ce2e914e4aebee95cc",
+      "questions": {
+        "6A": {
+          "paper": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.110214,
+                1,
+                0.940618
+              ]
+            },
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.047506,
+                1,
+                0.356057
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 54,
+              "r": [
+                0,
+                0.108209,
+                1,
+                0.948653
+              ]
+            },
+            {
+              "p": 55,
+              "r": [
+                0,
+                0.047512,
+                1,
+                0.347076
+              ]
+            },
+            {
+              "p": 72,
+              "r": [
+                0,
+                0.077564,
+                1,
+                0.56872
+              ]
+            }
+          ]
+        },
+        "6B": {
+          "paper": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.356057,
+                1,
+                0.940618
+              ]
+            },
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.047506,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 55,
+              "r": [
+                0,
+                0.347076,
+                1,
+                0.948653
+              ]
+            },
+            {
+              "p": 56,
+              "r": [
+                0,
+                0.047512,
+                1,
+                0.948653
+              ]
+            },
+            {
+              "p": 72,
+              "r": [
+                0,
+                0.56872,
+                1,
+                0.932261
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "originalQuestionsSha256": "7a35dfd2544f4b18b0e247f20ba2bf2d42d139088e4e277c99a1b3f6ac875318"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2012-ordinary-p2-project.json",
+      "year": 2012,
+      "paperFileid": "LC003GLP230EV.pdf",
+      "schemeFileid": "LC003GLP030EV.pdf",
+      "paperSha256": "a00eced9ae5939af1c3ef0947391079dcd03309cd35ca9c9c2febf4bc67c1e5e",
+      "schemeSha256": "cd5eb0637449f098575ff73ce6eaaf3cbaf355c099f08cbae2a32cd9053bd7d0",
+      "baseMapSha256": "5a0c9fd6139f6fc5175e8d872236d24688667f74e97975f01fb1bfe6fd4aabd5",
+      "questions": {
+        "6A": {
+          "paper": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.110214,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 46,
+              "r": [
+                0,
+                0.10809,
+                1,
+                0.932166
+              ]
+            },
+            {
+              "p": 63,
+              "r": [
+                0,
+                0.060578,
+                1,
+                0.519545
+              ]
+            }
+          ]
+        },
+        "6B": {
+          "paper": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.086698,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 47,
+              "r": [
+                0,
+                0.08469,
+                1,
+                0.932291
+              ]
+            },
+            {
+              "p": 63,
+              "r": [
+                0,
+                0.519545,
+                1,
+                0.91855
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "originalQuestionsSha256": "5f50844c79a292fc84319d313fdd99d44cdd02c46dc8c767fea387d243766a4f"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2013-foundation-p2-project.json",
+      "year": 2013,
+      "paperFileid": "LC003BLP230EV.pdf",
+      "schemeFileid": "LC003BLP030EV.pdf",
+      "paperSha256": "d817d19ad6ab18d03cf702a887428031e35b7250af8252917cf1485241c32406",
+      "schemeSha256": "7aa5be97a6ef2b1fe03a5b0bae65515e1be52c20dbf4fd8958ef51e772ae4060",
+      "baseMapSha256": "909d11c9956367049525526ab7484b8d76565b84d6cd30bf97c68d33e7a244d5",
+      "questions": {
+        "8A": {
+          "paper": [
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.110214,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 40,
+              "r": [
+                0,
+                0.108209,
+                1,
+                0.922163
+              ]
+            },
+            {
+              "p": 55,
+              "r": [
+                0,
+                0.061172,
+                1,
+                0.922163
+              ]
+            }
+          ]
+        },
+        "8B": {
+          "paper": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.086698,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 41,
+              "r": [
+                0,
+                0.08469,
+                1,
+                0.922163
+              ]
+            },
+            {
+              "p": 56,
+              "r": [
+                0,
+                0.061291,
+                1,
+                0.922163
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "originalQuestionsSha256": "af4d09123db70fc0c50eb3ddf13ce1e3e3de7723b9042c421fa1a68fb239a5c3"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2013-foundation-p2.json",
+      "year": 2013,
+      "paperFileid": "LC003BLP200EV.pdf",
+      "schemeFileid": "LC003BLP000EV.pdf",
+      "paperSha256": "640cc065ff71ca3478f7c2b8cfb1aba82b8f33175d14bebc5178e1361677dde6",
+      "schemeSha256": "447394dc691d39b689cec19197a926131ec7ab7b8a5efc88ecc545bebda06c45",
+      "baseMapSha256": "ffc4cdd283e11dbe71864ab0b9532e56fe33f468ae855dee62f1bf7d04ffcd3f",
+      "questions": {
+        "8A": {
+          "paper": [
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.110214,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 40,
+              "r": [
+                0,
+                0.108209,
+                1,
+                0.922163
+              ]
+            },
+            {
+              "p": 55,
+              "r": [
+                0,
+                0.061172,
+                1,
+                0.922092
+              ]
+            }
+          ]
+        },
+        "8B": {
+          "paper": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.086698,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 41,
+              "r": [
+                0,
+                0.08469,
+                1,
+                0.922163
+              ]
+            },
+            {
+              "p": 56,
+              "r": [
+                0,
+                0.061291,
+                1,
+                0.922092
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "originalQuestionsSha256": "7576eb3a33ac114b5c37290c55b5d06208278fb23fb548c37a32d7914c4569e1"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2013-higher-p2-project.json",
+      "year": 2013,
+      "paperFileid": "LC003ALP230EV.pdf",
+      "schemeFileid": "LC003ALP030EV.pdf",
+      "paperSha256": "8ca3d3121b469bc15cfedb4113f990ebced0d76b43c515124767ff5dbb3ecbc9",
+      "schemeSha256": "2f5b71e54351b0169be01c61f2a5c8cd37d80d99252dafbbe13d9b779ac6cd93",
+      "baseMapSha256": "d2fd01493c9e598c21868a9b76dbbe5eaad0596cf5541cce876a14a48dfdcc2c",
+      "questions": {
+        "6A": {
+          "paper": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.133729,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 49,
+              "r": [
+                0,
+                0.131727,
+                1,
+                0.933844
+              ]
+            },
+            {
+              "p": 70,
+              "r": [
+                0,
+                0.061172,
+                1,
+                0.932369
+              ]
+            }
+          ]
+        },
+        "6B": {
+          "paper": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.086698,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 50,
+              "r": [
+                0,
+                0.08469,
+                1,
+                0.933844
+              ]
+            },
+            {
+              "p": 51,
+              "r": [
+                0,
+                0.047512,
+                1,
+                0.933844
+              ]
+            },
+            {
+              "p": 71,
+              "r": [
+                0,
+                0.061172,
+                1,
+                0.932369
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "originalQuestionsSha256": "7e06337bd265e4964e18085f51123fbe6090a8045b199f0dcbdd121c780f92af"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2013-higher-p2.json",
+      "year": 2013,
+      "paperFileid": "LC003ALP200EV.pdf",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "paperSha256": "74c22ae557aafa3ecb9b30d62db179a697e06f8ff99d1c2702f9cf02c62564dd",
+      "schemeSha256": "28ce10519d9169f602714dc9fa5651fa9a8b6836d3ea88787a50bd703fa761af",
+      "baseMapSha256": "d9611d825e1adb42d0c03cb6097ceb5997fb066d75fd98ab1f9d649cd544800d",
+      "questions": {
+        "6A": {
+          "paper": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.133729,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 49,
+              "r": [
+                0,
+                0.131727,
+                1,
+                0.933844
+              ]
+            },
+            {
+              "p": 70,
+              "r": [
+                0,
+                0.061172,
+                1,
+                0.932359
+              ]
+            }
+          ]
+        },
+        "6B": {
+          "paper": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.086698,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 50,
+              "r": [
+                0,
+                0.08469,
+                1,
+                0.933844
+              ]
+            },
+            {
+              "p": 51,
+              "r": [
+                0,
+                0.047512,
+                1,
+                0.933844
+              ]
+            },
+            {
+              "p": 71,
+              "r": [
+                0,
+                0.061172,
+                1,
+                0.932359
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "originalQuestionsSha256": "9469f49ad9abcf7f3baf398d391eac7cad24fee6b01a42a7d305ef7c3490dc5c"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2013-ordinary-p2-project.json",
+      "year": 2013,
+      "paperFileid": "LC003GLP230EV.pdf",
+      "schemeFileid": "LC003GLP030EV.pdf",
+      "paperSha256": "56e32fa82276d5ecc54b693426336cfa4ba99112a2b03745acd4ebaa56d50efc",
+      "schemeSha256": "cb68c49b5d520486f0b4d01eb6b7074747b5b9275eb86436271d1b49c6849abf",
+      "baseMapSha256": "6e161b307dfdf10f65e3059f03eda21e009615f92804c0e566ab7c3f3819ba4e",
+      "questions": {
+        "6A": {
+          "paper": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.110214,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 42,
+              "r": [
+                0,
+                0.108209,
+                1,
+                0.933903
+              ]
+            },
+            {
+              "p": 59,
+              "r": [
+                0,
+                0.061172,
+                1,
+                0.618489
+              ]
+            }
+          ]
+        },
+        "6B": {
+          "paper": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.047506,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 43,
+              "r": [
+                0,
+                0.047512,
+                1,
+                0.933903
+              ]
+            },
+            {
+              "p": 59,
+              "r": [
+                0,
+                0.618489,
+                1,
+                0.935348
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "originalQuestionsSha256": "a36d081f1f4cfa9e8d0f1249928b708c5abdf999d17c12e41cc73b1212602a9c"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2013-ordinary-p2.json",
+      "year": 2013,
+      "paperFileid": "LC003GLP200EV.pdf",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "paperSha256": "c86dc2625fdfb3f94aebf825fdb5f98b4cbed045756e09277480cc33d26060a7",
+      "schemeSha256": "4319204ecd7c5e2156e0d66eba5c5df4eff752e799521130b2c114e1a8f732ac",
+      "baseMapSha256": "c20cc9a356654714bfa8874a85f3f68ae5b577d89eb3022e8e14b6a0e7d8980b",
+      "questions": {
+        "6A": {
+          "paper": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.110214,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 44,
+              "r": [
+                0,
+                0.108209,
+                1,
+                0.933903
+              ]
+            },
+            {
+              "p": 61,
+              "r": [
+                0,
+                0.061172,
+                1,
+                0.618489
+              ]
+            }
+          ]
+        },
+        "6B": {
+          "paper": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.047506,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 45,
+              "r": [
+                0,
+                0.047512,
+                1,
+                0.933903
+              ]
+            },
+            {
+              "p": 61,
+              "r": [
+                0,
+                0.618489,
+                1,
+                0.935348
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "originalQuestionsSha256": "b506302272ee8db6868e274c2cd950d88aac39fb60d2d03ed7c80f3d114865ac"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2014-higher-p2.json",
+      "year": 2014,
+      "paperFileid": "LC003ALP230EV.pdf",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "paperSha256": "4737941ac1a250ce967663e7768ab0e10c10ee9bf208831a2145bfdba100ce74",
+      "schemeSha256": "e88ad358735f48eed234f0bbddd8187a265d792c4ba47ab328c0532f7d07ad68",
+      "baseMapSha256": "4104a18ff74fe7cf546f7c270609cbe92e08d66a8c00324c4b0cb2511ac60a99",
+      "questions": {
+        "6A": {
+          "paper": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.126603,
+                1,
+                0.940618
+              ]
+            },
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.047506,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 50,
+              "r": [
+                0,
+                0.128995,
+                1,
+                0.965235
+              ]
+            },
+            {
+              "p": 51,
+              "r": [
+                0,
+                0.047512,
+                1,
+                0.965235
+              ]
+            },
+            {
+              "p": 70,
+              "r": [
+                0,
+                0.065567,
+                1,
+                0.47322
+              ]
+            }
+          ]
+        },
+        "6B": {
+          "paper": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.086698,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 52,
+              "r": [
+                0,
+                0.089085,
+                1,
+                0.965235
+              ]
+            },
+            {
+              "p": 70,
+              "r": [
+                0,
+                0.47322,
+                1,
+                0.965227
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "originalQuestionsSha256": "240a16f2383293c8216b75deabcd0daf5ccdf400209a4fcfd5cc07ecd4bd80a7"
+    },
+    {
+      "review": "scripts/markbank/mathematics/reviews/2014-ordinary-p2.json",
+      "year": 2014,
+      "paperFileid": "LC003GLP230EV.pdf",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "paperSha256": "26c71c6dd6bca8bccc38e69eaedb48230c74df040e3fc5587f950065efba891c",
+      "schemeSha256": "61afeac56c4a47317dec549e4f1423f116032b2a07ba57af9872869137c93f91",
+      "baseMapSha256": "e60bb60b0f8ce77fe5cb12ee50b8d3595654d8ad85d502c7374ed43178289670",
+      "questions": {
+        "6A": {
+          "paper": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.119477,
+                1,
+                0.940618
+              ]
+            },
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.047506,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 41,
+              "r": [
+                0,
+                0.105477,
+                1,
+                0.967202
+              ]
+            },
+            {
+              "p": 42,
+              "r": [
+                0,
+                0.047512,
+                1,
+                0.967202
+              ]
+            },
+            {
+              "p": 59,
+              "r": [
+                0,
+                0.065567,
+                1,
+                0.489849
+              ]
+            }
+          ]
+        },
+        "6B": {
+          "paper": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.086698,
+                1,
+                0.940618
+              ]
+            }
+          ],
+          "scheme": [
+            {
+              "p": 43,
+              "r": [
+                0,
+                0.089085,
+                1,
+                0.967202
+              ]
+            },
+            {
+              "p": 59,
+              "r": [
+                0,
+                0.489849,
+                1,
+                0.967202
+              ]
+            }
+          ]
+        }
+      },
+      "originalQuestionNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "originalQuestionsSha256": "91c5164b7baea55b828cc0048aac0f7f939fecc1810ed72d114c099f44c53798"
+    }
+  ],
+  "visualReview": {
+    "date": "2026-10-31",
+    "uniqueRegions": 114,
+    "contactSheets": 29,
+    "correctedRegionsReinspected": 5,
+    "notes": [
+      "Every paper and scheme region inspected, including solution methods and detailed credit pages.",
+      "2011 Higher Project Q6B retains the complete SEC correction footnote.",
+      "2013 Ordinary Q6B retains the triangle apex above the heading in both editions and their scheme sections.",
+      "Original question objects retained exactly; missing A/B children added with their own source regions."
+    ]
+  }
+}

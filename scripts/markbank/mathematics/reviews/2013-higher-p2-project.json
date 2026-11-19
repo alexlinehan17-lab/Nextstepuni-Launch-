@@ -1,0 +1,1383 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2013,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP230EV.pdf",
+  "schemeFileid": "LC003ALP030EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "8ca3d3121b469bc15cfedb4113f990ebced0d76b43c515124767ff5dbb3ecbc9",
+  "schemeSha256": "2f5b71e54351b0169be01c61f2a5c8cd37d80d99252dafbbe13d9b779ac6cd93",
+  "reviewedAt": "2026-10-29",
+  "reviewMethod": "Independent visual inspection of all 24 original paper pages and scheme PDF pages 39–80: all models, diagrams, alternative solutions, allocation/scale tables and detailed notes. Both Q6 alternatives retained. Exact Project Maths edition kept separate from legacy.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "schemePagesInspected": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6A": 25,
+    "6B": 25,
+    "7": 75,
+    "8": 30,
+    "9": 45
+  },
+  "fullCreditMinusOne": false,
+  "generalNotesPages": [
+    63,
+    64
+  ],
+  "sourceNotes": [
+    "300 candidate marks; 325 offered marks including both 25-mark Q6 alternatives.",
+    "Q1(b) and Q6A(a) retain their joint scales. All three Q2(b) graphs and the five Q3(a) descriptions are required, not optional pools.",
+    "Only the seven starred parts allow Full Credit minus one. Paper 2 ladders differ from Paper 1.",
+    "Detailed notes govern the Q5 and Q6A labels where the summary table is mislabelled. Q9(c)(i) is printed as Scale 5B (0,5,10); its actual 10-mark allocation and bands are retained as 10B.",
+    "Q8 contains errors expressly acknowledged by the SEC: retain all alternative model answers, carry-forward guidance, once-only units penalty, rounding allowance and full-credit provisions where the error affected work, including all impact criteria.",
+    "Source model typos: Q7(e)(i) reverses interval endpoints; Q9(c)(i) fourth row prints 1² instead of 2². Original images retained with labelled clarifications."
+  ],
+  "cards": [
+    {
+      "id": "maths-2013-hl-p2-project-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        41,
+        65
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Explain the following term: Sample space."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        41,
+        65
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Explain the following term: Mutually exclusive events."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q1-a-iii",
+      "printedParts": [
+        "Q1(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        41,
+        65
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Explain the following term: Independent events."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q1-b",
+      "printedParts": [
+        "Q1(b)(i)",
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        9,
+        10
+      ],
+      "schemePages": [
+        41,
+        65
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In a class of 30 students, 20 study Physics, 6 study Biology and 4 study both Physics and Biology. A student is selected at random from this class. E: the student studies Physics. F: the student studies Biology.",
+      "questionText": "(i) Represent the information on the Venn diagram. (ii) By calculating probabilities, investigate if the events E and F are independent."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        42,
+        66
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "A random variable X follows a normal distribution with mean 60 and standard deviation 5.",
+      "questionText": "Find P(X ≤ 68)."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q2-a-ii",
+      "printedParts": [
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        42,
+        66
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "A random variable X follows a normal distribution with mean 60 and standard deviation 5.",
+      "questionText": "Find P(52 ≤ X ≤ 68)."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        42,
+        43,
+        66
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "The heights of a certain type of plant at harvest are normally distributed with mean μ. Three hormones are tested on different large samples, whose heights remain normally distributed at harvest. Diagrams A, B and C show the expected distributions without hormones.",
+      "questionText": "Sketch, on each diagram, a new distribution to show the effect of the hormone. A: increases the height of all plants. B: reduces the number of really small and really tall plants, with the mean unchanged. C: increases the number of small and tall plants, with the mean unchanged."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        9,
+        10
+      ],
+      "schemePages": [
+        44,
+        67
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The equations of six lines are given: h: x = 3 − y; i: 2x − 4y = 3; k: y = −¼(2x − 7); l: 4x − 2y − 5 = 0; m: x + √3y − 10 = 0; n: √3x + y − 10 = 0.",
+      "questionText": "Complete the table by matching each description to one or more of the lines: slope 2; intersects the y-axis at (0, −2½); equal intercepts on the axes; angle 150° with the positive sense of the x-axis; two perpendicular lines."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        44,
+        67
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The equations of six lines are given: h: x = 3 − y; i: 2x − 4y = 3; k: y = −¼(2x − 7); l: 4x − 2y − 5 = 0; m: x + √3y − 10 = 0; n: √3x + y − 10 = 0.",
+      "questionText": "Find the acute angle between the lines m and n."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        45,
+        68
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "The circles c₁ and c₂ touch externally as shown. The table gives c₁ with centre (−3, −2) and radius 2, and c₂ with equation x² + y² − 2x − 2y − 7 = 0. The line t is their common tangent.",
+      "questionText": "Complete the table: the equation of c₁, and the centre and radius of c₂."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        9,
+        10
+      ],
+      "schemePages": [
+        45,
+        68
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "The circles c₁ and c₂ touch externally as shown. The table gives c₁ with centre (−3, −2) and radius 2, and c₂ with equation x² + y² − 2x − 2y − 7 = 0. The line t is their common tangent.",
+      "questionText": "Find the co-ordinates of the point of contact of c₁ and c₂."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        46,
+        68
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "The circles c₁ and c₂ touch externally as shown. The table gives c₁ with centre (−3, −2) and radius 2, and c₂ with equation x² + y² − 2x − 2y − 7 = 0. The line t is their common tangent. Part (b)(i): find the point of contact.",
+      "questionText": "Hence, or otherwise, find the equation of the tangent, t, common to c₁ and c₂."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        47,
+        69
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "In a triangle ABC, the lengths of the sides are a, b and c. Using a formula for the area of a triangle, or otherwise, prove that a/sin ∠A = b/sin ∠B = c/sin ∠C."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        47,
+        69
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "In a triangle XYZ, |XY| = 5 cm, |XZ| = 3 cm and |∠XYZ| = 27°.",
+      "questionText": "Find the two possible values of |∠XZY|. Give your answers correct to the nearest degree.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        48,
+        69
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "In a triangle XYZ, |XY| = 5 cm, |XZ| = 3 cm and |∠XYZ| = 27°.",
+      "questionText": "Draw a sketch of the triangle XYZ, showing the two possible positions of the point Z."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        48,
+        69
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "In a triangle XYZ, |XY| = 5 cm, |XZ| = 3 cm and |∠XYZ| = 27°.",
+      "questionText": "In the case that |∠XZY| < 90°, write down |∠ZXY|, and hence find the area of the triangle XYZ, correct to the nearest integer.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q6a-a",
+      "printedParts": [
+        "Q6A(a)(i)",
+        "Q6A(a)(ii)",
+        "Q6A(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        9,
+        10
+      ],
+      "schemePages": [
+        49,
+        70
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "Complete each statement: (i) The circumcentre of a triangle is the point of intersection of ____. (ii) The incentre of a triangle is the point of intersection of ____. (iii) The centroid of a triangle is the point of intersection of ____."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q6a-b",
+      "printedParts": [
+        "Q6A(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        49,
+        70
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "In an equilateral triangle, the circumcentre, the incentre and the centroid are all in the same place. Explain why this is the case."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q6a-c",
+      "printedParts": [
+        "Q6A(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        9,
+        10
+      ],
+      "schemePages": [
+        49,
+        70
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "Use the original obtuse triangle ABC shown on the paper.",
+      "questionText": "Construct the orthocentre of the triangle ABC below. Show all construction lines clearly.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q6b-a",
+      "printedParts": [
+        "Q6B(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        50,
+        71
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "A quadrilateral (four sided figure) has two sides which are parallel and equal in length. Prove that the quadrilateral is a parallelogram."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q6b-b",
+      "printedParts": [
+        "Q6B(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        51,
+        71
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "Refer to the original diagram with E and F on the diagonal AC.",
+      "questionText": "In the parallelogram ABCD, DE is perpendicular to AC and BF is perpendicular to AC. Prove that EBFD is a parallelogram."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        52,
+        72
+      ],
+      "topicId": "maths-1-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Go Fast Airlines provides internal flights in Ireland, short haul flights to Europe and long haul flights to America and Asia. Long haul tickets are economy, business or executive class. All passengers have a baggage allowance of 20 kg and pay per kg above it. The company surveys 1000 passengers each month. May survey: male 479, female 521; previously flown: yes 682, no 318; would fly again: yes 913, no 87; age: mean 42, median 31; in-flight spend: mean €18·65, median €32·18; flight delayed: yes 231, no 748, don’t know 21; overall service: satisfied 664, not satisfied 238, don’t know 98.",
+      "questionText": "Go Fast Airlines used a stratified random sample to conduct the survey. Explain what is meant by a stratified random sample."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        53,
+        72
+      ],
+      "topicId": "maths-1-4",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Go Fast Airlines provides internal flights in Ireland, short haul flights to Europe and long haul flights to America and Asia. Long haul tickets are economy, business or executive class. All passengers have a baggage allowance of 20 kg and pay per kg above it. The company surveys 1000 passengers each month. May survey: male 479, female 521; previously flown: yes 682, no 318; would fly again: yes 913, no 87; age: mean 42, median 31; in-flight spend: mean €18·65, median €32·18; flight delayed: yes 231, no 748, don’t know 21; overall service: satisfied 664, not satisfied 238, don’t know 98. The sample was a stratified random sample.",
+      "questionText": "Write down 4 different passenger groups that the company might have included in their sample."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        53,
+        72
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Go Fast Airlines provides internal flights in Ireland, short haul flights to Europe and long haul flights to America and Asia. Long haul tickets are economy, business or executive class. All passengers have a baggage allowance of 20 kg and pay per kg above it. The company surveys 1000 passengers each month. May survey: male 479, female 521; previously flown: yes 682, no 318; would fly again: yes 913, no 87; age: mean 42, median 31; in-flight spend: mean €18·65, median €32·18; flight delayed: yes 231, no 748, don’t know 21; overall service: satisfied 664, not satisfied 238, don’t know 98.",
+      "questionText": "What is the probability that a passenger selected at random from this sample (1) had his/her flight delayed; (2) was not satisfied with the overall service?"
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        53,
+        72
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Go Fast Airlines provides internal flights in Ireland, short haul flights to Europe and long haul flights to America and Asia. Long haul tickets are economy, business or executive class. All passengers have a baggage allowance of 20 kg and pay per kg above it. The company surveys 1000 passengers each month. May survey: male 479, female 521; previously flown: yes 682, no 318; would fly again: yes 913, no 87; age: mean 42, median 31; in-flight spend: mean €18·65, median €32·18; flight delayed: yes 231, no 748, don’t know 21; overall service: satisfied 664, not satisfied 238, don’t know 98. Part (b)(i): calculate the probability of a delayed flight and the probability of dissatisfaction.",
+      "questionText": "An employee suggests that the probability of selecting a passenger whose flight was delayed and who was not satisfied with the overall service should be the product of the two probabilities in (i). Do you agree? Give a reason."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        53,
+        72
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Go Fast Airlines provides internal flights in Ireland, short haul flights to Europe and long haul flights to America and Asia. Long haul tickets are economy, business or executive class. All passengers have a baggage allowance of 20 kg and pay per kg above it. The company surveys 1000 passengers each month. Refer to all three original graphs marked at 20 kg.",
+      "questionText": "Which of the three graphs is most likely to represent the distribution of the weights of passenger baggage? Give a reason."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q7-d-i",
+      "printedParts": [
+        "Q7(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        54,
+        72
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Go Fast Airlines provides internal flights in Ireland, short haul flights to Europe and long haul flights to America and Asia. Long haul tickets are economy, business or executive class. All passengers have a baggage allowance of 20 kg and pay per kg above it. The company surveys 1000 passengers each month. May survey: male 479, female 521; previously flown: yes 682, no 318; would fly again: yes 913, no 87; age: mean 42, median 31; in-flight spend: mean €18·65, median €32·18; flight delayed: yes 231, no 748, don’t know 21; overall service: satisfied 664, not satisfied 238, don’t know 98.",
+      "questionText": "Draw a sketch of the possible distribution of the ages of the passengers based on the data in the survey."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q7-d-ii",
+      "printedParts": [
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        54,
+        72
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Go Fast Airlines provides internal flights in Ireland, short haul flights to Europe and long haul flights to America and Asia. Long haul tickets are economy, business or executive class. All passengers have a baggage allowance of 20 kg and pay per kg above it. The company surveys 1000 passengers each month. May survey: male 479, female 521; previously flown: yes 682, no 318; would fly again: yes 913, no 87; age: mean 42, median 31; in-flight spend: mean €18·65, median €32·18; flight delayed: yes 231, no 748, don’t know 21; overall service: satisfied 664, not satisfied 238, don’t know 98. Part (d)(i): sketch a possible distribution of passenger ages.",
+      "questionText": "Explain your answer to (d)(i)."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q7-e-i",
+      "printedParts": [
+        "Q7(e)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        9,
+        10
+      ],
+      "schemePages": [
+        54,
+        73
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "Go Fast Airlines provides internal flights in Ireland, short haul flights to Europe and long haul flights to America and Asia. Long haul tickets are economy, business or executive class. All passengers have a baggage allowance of 20 kg and pay per kg above it. The company surveys 1000 passengers each month. May survey: male 479, female 521; previously flown: yes 682, no 318; would fly again: yes 913, no 87; age: mean 42, median 31; in-flight spend: mean €18·65, median €32·18; flight delayed: yes 231, no 748, don’t know 21; overall service: satisfied 664, not satisfied 238, don’t know 98.",
+      "questionText": "The company repeatedly asserts that 70% of their customers are satisfied with their overall service. Use an hypothesis test at the 5% level of significance to decide whether there is sufficient evidence to conclude that their claim is valid in May. Write the null hypothesis and state your conclusion clearly."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q7-e-ii",
+      "printedParts": [
+        "Q7(e)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        54,
+        73
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "Go Fast Airlines provides internal flights in Ireland, short haul flights to Europe and long haul flights to America and Asia. Long haul tickets are economy, business or executive class. All passengers have a baggage allowance of 20 kg and pay per kg above it. The company surveys 1000 passengers each month.",
+      "questionText": "A manager says: “If we survey 2000 passengers from June on, we will halve the margin of error in our surveys.” Is the manager correct? Explain your answer."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q7-f-i",
+      "printedParts": [
+        "Q7(f)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        55,
+        73
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Responses from ten passengers are given as (age in years, in-flight spend in euro): (46,30), (29,15), (37,20), (18,0), (25,10), (75,45), (52,25), (35,20), (40,20), (31,30).",
+      "questionText": "Draw a scatter plot of the data."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q7-f-ii",
+      "printedParts": [
+        "Q7(f)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        55,
+        73
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Responses from ten passengers are given as (age in years, in-flight spend in euro): (46,30), (29,15), (37,20), (18,0), (25,10), (75,45), (52,25), (35,20), (40,20), (31,30).",
+      "questionText": "Calculate the correlation coefficient between passenger age and in-flight spend."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q7-f-iii",
+      "printedParts": [
+        "Q7(f)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        55,
+        73
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Responses from ten passengers are given as (age in years, in-flight spend in euro): (46,30), (29,15), (37,20), (18,0), (25,10), (75,45), (52,25), (35,20), (40,20), (31,30). Parts (f)(i) and (ii): draw the scatter plot and calculate the correlation coefficient.",
+      "questionText": "What can you conclude from the completed scatter plot and the correlation coefficient?"
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q7-f-iv",
+      "printedParts": [
+        "Q7(f)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        55,
+        73
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Responses from ten passengers are given as (age in years, in-flight spend in euro): (46,30), (29,15), (37,20), (18,0), (25,10), (75,45), (52,25), (35,20), (40,20), (31,30). Part (f)(i): draw the scatter plot.",
+      "questionText": "Sketch the line of best fit in the completed scatter plot above."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        56,
+        74,
+        75
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A port P is directly east of a port H. To sail from H to P, a ship first sails 80 km to R in the direction shown, then turns through an angle of 124° and sails 110 km directly to P. The original diagram marks ∠RHP = 36° and ∠HRP = 124°. Use the original question data as printed.",
+      "questionText": "Find the distance from R to HP.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        56,
+        57,
+        74,
+        75
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A port P is directly east of a port H. To sail from H to P, a ship first sails 80 km to R in the direction shown, then turns through an angle of 124° and sails 110 km directly to P. The original diagram marks ∠RHP = 36° and ∠HRP = 124°. Use the original question data as printed. Part (a)(i): find the distance from R to HP.",
+      "questionText": "Calculate |HP|.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        57,
+        58,
+        74,
+        75
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A port P is directly east of a port H. To sail from H to P, a ship first sails 80 km to R in the direction shown, then turns through an angle of 124° and sails 110 km directly to P. The original diagram marks ∠RHP = 36° and ∠HRP = 124°. Use the original question data as printed. Part (a)(ii): calculate |HP|. Refer also to the diagram showing T.",
+      "questionText": "The point T is directly east of R. |HT| = 110 km and |TP| = 80 km. Find |RT|.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        9,
+        10
+      ],
+      "schemePages": [
+        59,
+        76
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "The triangle XYZ is right-angled at X and XP is perpendicular to YZ. |YP| = 4, |PZ| = 8 and |PX| = k. Find k."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        60,
+        76
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The shaded region is an arbelos: a semicircular region of radius r₁ from which semicircles of radii r₂ and r₃ are removed as shown. SC is perpendicular to AF and |SC| = k. Refer to the original diagram.",
+      "questionText": "Show that, for fixed r₁, the perimeter of the arbelos is independent of the values of r₂ and r₃."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        60,
+        76
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The shaded region is an arbelos: a semicircular region of radius r₁ from which semicircles of radii r₂ and r₃ are removed as shown. SC is perpendicular to AF and |SC| = k. Refer to the original diagram.",
+      "questionText": "If r₂ = 2 and r₃ = 4, show that the area of the arbelos is the same as the area of the circle of diameter k."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        61,
+        76
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18,
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The shaded region is an arbelos: a semicircular region of radius r₁ from which semicircles of radii r₂ and r₃ are removed as shown. SC is perpendicular to AF and |SC| = k. Refer to the original diagram. To investigate its area, a student fixes r₁ at 6 cm and varies r₂ and r₃.",
+      "questionText": "Complete the table for r₂ = 1, 2, 3, 4, 5: fill in r₃ and the area of the arbelos for each row."
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        61,
+        76
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18,
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-functions"
+      ],
+      "stem": "The shaded region is an arbelos: a semicircular region of radius r₁ from which semicircles of radii r₂ and r₃ are removed as shown. SC is perpendicular to AF and |SC| = k. Refer to the original diagram. To investigate its area, a student fixes r₁ at 6 cm and varies r₂ and r₃.",
+      "questionText": "In general, for r₁ = 6 cm and r₂ = x, 0 < x < 6, x ∈ ℝ, find an expression in x for the area of the arbelos.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q9-c-iii",
+      "printedParts": [
+        "Q9(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        61,
+        76
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        18,
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The shaded region is an arbelos: a semicircular region of radius r₁ from which semicircles of radii r₂ and r₃ are removed as shown. SC is perpendicular to AF and |SC| = k. Refer to the original diagram. To investigate its area, a student fixes r₁ at 6 cm and varies r₂ and r₃. Part (c)(ii): find its area in terms of r₂ = x, with 0 < x < 6.",
+      "questionText": "Hence, or otherwise, find the maximum area of an arbelos that can be formed in a semicircle of radius 6 cm.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p2-project-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        62,
+        76
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        18,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The shaded region is an arbelos: a semicircular region of radius r₁ from which semicircles of radii r₂ and r₃ are removed as shown. SC is perpendicular to AF and |SC| = k. Refer to the original diagram.",
+      "questionText": "AS and FS cut the two smaller semicircles at T and R respectively. Prove that RSTC is a rectangle."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        10,
+        11
+      ],
+      "wording": "either Question 6A or Question 6B",
+      "classification": "expanded-alternatives",
+      "reason": "All three Q6A tasks and both Q6B tasks are retained, each at its published tariff."
+    },
+    {
+      "pages": [
+        6
+      ],
+      "wording": "matching each description given to one or more of the lines",
+      "classification": "matching-task",
+      "reason": "All five descriptions must be answered; this is not a choice of tasks."
+    },
+    {
+      "pages": [
+        13
+      ],
+      "wording": "4 different passenger groups",
+      "classification": "open-response",
+      "reason": "No finite list is specified. Retain one response at its 5B boundary."
+    },
+    {
+      "pages": [
+        13
+      ],
+      "wording": "Which of the graphs",
+      "classification": "answer-selection",
+      "reason": "All three answer options retained in one question; candidate identifies and explains the appropriate distribution."
+    }
+  ],
+  "selectionDecisions": {
+    "2:c51070e56a720468": {
+      "classification": "expanded-alternatives",
+      "reason": "Both complete Q6 routes retained."
+    },
+    "2:55422f2df83b52ff": {
+      "classification": "expanded-alternatives",
+      "reason": "Both complete Q6 routes retained."
+    },
+    "3:08ecf566b642d8ad": {
+      "classification": "all-required",
+      "reason": "All required tasks retained; Q6 routes are both covered."
+    },
+    "7:202fce8ad091c50f": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same task; all published methods retained."
+    },
+    "8:05ba549d44ed67bd": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same task; all published methods retained."
+    },
+    "10:2823a1ec19bf3f2e": {
+      "classification": "expanded-alternatives",
+      "reason": "Both complete Q6 routes retained."
+    },
+    "12:94f178d07726493f": {
+      "classification": "all-required",
+      "reason": "All required tasks retained; Q6 routes are both covered."
+    },
+    "20:cab8e45f218eacb9": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same task; all published methods retained."
+    }
+  }
+}

@@ -1,0 +1,645 @@
+{
+  "schemaVersion": 1,
+  "year": 2014,
+  "level": "higher",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-reviewed",
+  "sources": {
+    "paper-trail-corpus/exampapers/2014/LC098ALP000EV.pdf": {
+      "sha256": "520a2a2ab00814b34453c21b7dd78323d855b08c778513672244b96dc17a3ef6",
+      "pages": 12
+    },
+    "paper-trail-corpus/markingschemes/2014/LC098ALP000EV.pdf": {
+      "sha256": "93331547487b86d251bd7bd632f6f06ed248f7a3f0165408a15b864f268f0706",
+      "pages": 40
+    }
+  },
+  "visualSweep": {
+    "paper": "All 12 original pages inspected: cover/instructions1; A2–5; B6–8; C9–11; blank12.",
+    "scheme": "All 40 original pages inspected: cover1, source-use notice2, instructions3, A4–7, B8–18, C19–27, blank28, separate coursework29–39, backcover40.",
+    "evidence": "tmp/pdfs/home-economics-review/2014-hl-main: paper-01..03 and scheme-01..10 all visually inspected; original texts and hashes retained.",
+    "method": "Full independent original-page visual sweep and manual priced-task ledger before authoring or parser/card-count inspection."
+  },
+  "expectedTasks": 49,
+  "expectedSectionTasks": {
+    "A": 12,
+    "B": 18,
+    "C": 19
+  },
+  "sourceQuestionGroups": 20,
+  "offeredPracticeMarks": 627,
+  "independentTaskCensus": {
+    "A": {
+      "Q1": 6,
+      "Q2": 6,
+      "Q3": 6,
+      "Q4": 6,
+      "Q5": 6,
+      "Q6": 6,
+      "Q7": 6,
+      "Q8": 6,
+      "Q9": 6,
+      "Q10": 6,
+      "Q11": 6,
+      "Q12": 6
+    },
+    "B": {
+      "Q1(a)": 12,
+      "Q1(b)": 12,
+      "Q1(c)": 9,
+      "Q1(d)": 47,
+      "Q2(a)": 20,
+      "Q2(b)-factors": 9,
+      "Q2(b)-methods": 6,
+      "Q2(c)": 15,
+      "Q3(a)": 24,
+      "Q3(b)": 20,
+      "Q3(c)": 6,
+      "Q4(a)": 12,
+      "Q4(b)": 26,
+      "Q4(c)": 12,
+      "Q5(a)": 16,
+      "Q5(b)(i)": 15,
+      "Q5(b)(ii)": 10,
+      "Q5(c)": 9
+    },
+    "C": {
+      "E1(a)(i)": 24,
+      "E1(a)(ii)": 14,
+      "E1(a)(iii)": 12,
+      "E1(b)(i)": 16,
+      "E1(b)(ii)": 14,
+      "E1(c)(i)": 15,
+      "E1(c)(ii)": 15,
+      "E2(a)(i)": 15,
+      "E2(a)(ii)": 10,
+      "E2(b)(i)": 9,
+      "E2(b)(ii)": 6,
+      "E2(c)(i)": 9,
+      "E2(c)(ii)": 6,
+      "E3(a)(i)": 20,
+      "E3(a)(ii)": 20,
+      "E3(a)(iii)": 10,
+      "E3(b)": 30,
+      "E3(c)(i)": 18,
+      "E3(c)(ii)": 12
+    }
+  },
+  "tasks": [
+    {
+      "id": "he-2014-hl-sa-q1",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2014 HL Section A Q1",
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2014-hl-sa-q2",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2014 HL Section A Q2",
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2014-hl-sa-q3",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2014 HL Section A Q3",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2014-hl-sa-q4",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2014 HL Section A Q4",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2014-hl-sa-q5",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2014 HL Section A Q5",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2014-hl-sa-q6",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2014 HL Section A Q6",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2014-hl-sa-q7",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2014 HL Section A Q7",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2014-hl-sa-q8",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2014 HL Section A Q8",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2014-hl-sa-q9",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2014 HL Section A Q9",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2014-hl-sa-q10",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2014 HL Section A Q10",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2014-hl-sa-q11",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2014 HL Section A Q11",
+      "topicId": "home-economics-1-4"
+    },
+    {
+      "id": "he-2014-hl-sa-q12",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2014 HL Section A Q12",
+      "topicId": "home-economics-1-5"
+    },
+    {
+      "id": "he-2014-hl-sb-q1a",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2014 HL Section B Q1(a)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2014-hl-sb-q1b",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2014 HL Section B Q1(b)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2014-hl-sb-q1c",
+      "section": "B",
+      "marks": 9,
+      "questionRef": "2014 HL Section B Q1(c)",
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2014-hl-sb-q1d",
+      "section": "B",
+      "marks": 47,
+      "questionRef": "2014 HL Section B Q1(d)",
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2014-hl-sb-q2a",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2014 HL Section B Q2(a)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2014-hl-sb-q2b-factors",
+      "section": "B",
+      "marks": 9,
+      "questionRef": "2014 HL Section B Q2(b) — factors",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2014-hl-sb-q2b-methods",
+      "section": "B",
+      "marks": 6,
+      "questionRef": "2014 HL Section B Q2(b) — methods",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2014-hl-sb-q2c",
+      "section": "B",
+      "marks": 15,
+      "questionRef": "2014 HL Section B Q2(c)",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2014-hl-sb-q3a",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2014 HL Section B Q3(a)",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2014-hl-sb-q3b",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2014 HL Section B Q3(b)",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2014-hl-sb-q3c",
+      "section": "B",
+      "marks": 6,
+      "questionRef": "2014 HL Section B Q3(c)",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2014-hl-sb-q4a",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2014 HL Section B Q4(a)",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2014-hl-sb-q4b",
+      "section": "B",
+      "marks": 26,
+      "questionRef": "2014 HL Section B Q4(b)",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2014-hl-sb-q4c",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2014 HL Section B Q4(c)",
+      "topicId": "home-economics-1-5"
+    },
+    {
+      "id": "he-2014-hl-sb-q5a",
+      "section": "B",
+      "marks": 16,
+      "questionRef": "2014 HL Section B Q5(a)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2014-hl-sb-q5bi",
+      "section": "B",
+      "marks": 15,
+      "questionRef": "2014 HL Section B Q5(b)(i)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2014-hl-sb-q5bii",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2014 HL Section B Q5(b)(ii)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2014-hl-sb-q5c",
+      "section": "B",
+      "marks": 9,
+      "questionRef": "2014 HL Section B Q5(c)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2014-hl-sc-q1ai",
+      "section": "C",
+      "marks": 24,
+      "questionRef": "2014 HL Section C E1 Q1(a)(i)",
+      "topicId": "home-economics-3-6"
+    },
+    {
+      "id": "he-2014-hl-sc-q1aii",
+      "section": "C",
+      "marks": 14,
+      "questionRef": "2014 HL Section C E1 Q1(a)(ii)",
+      "topicId": "home-economics-3-6"
+    },
+    {
+      "id": "he-2014-hl-sc-q1aiii",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2014 HL Section C E1 Q1(a)(iii)",
+      "topicId": "home-economics-3-6"
+    },
+    {
+      "id": "he-2014-hl-sc-q1bi",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2014 HL Section C E1 Q1(b)(i)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2014-hl-sc-q1bii",
+      "section": "C",
+      "marks": 14,
+      "questionRef": "2014 HL Section C E1 Q1(b)(ii)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2014-hl-sc-q1ci",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2014 HL Section C E1 Q1(c)(i)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2014-hl-sc-q1cii",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2014 HL Section C E1 Q1(c)(ii)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2014-hl-sc-q2ai",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2014 HL Section C E2 Q2(a)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2014-hl-sc-q2aii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2014 HL Section C E2 Q2(a)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2014-hl-sc-q2bi",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2014 HL Section C E2 Q2(b)(i)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2014-hl-sc-q2bii",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2014 HL Section C E2 Q2(b)(ii)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2014-hl-sc-q2ci",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2014 HL Section C E2 Q2(c)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2014-hl-sc-q2cii",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2014 HL Section C E2 Q2(c)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2014-hl-sc-q3ai",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2014 HL Section C E3 Q3(a)(i)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2014-hl-sc-q3aii",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2014 HL Section C E3 Q3(a)(ii)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2014-hl-sc-q3aiii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2014 HL Section C E3 Q3(a)(iii)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2014-hl-sc-q3b",
+      "section": "C",
+      "marks": 30,
+      "questionRef": "2014 HL Section C E3 Q3(b)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2014-hl-sc-q3ci",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2014 HL Section C E3 Q3(c)(i)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2014-hl-sc-q3cii",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2014 HL Section C E3 Q3(c)(ii)",
+      "topicId": "home-economics-3-11"
+    }
+  ],
+  "selectionDecisions": [
+    "All A tasks retain printed whole6 tariffs with unpriced source rows and no invented suballocations. A6 asks three cheese classes/examples from five original source variants; all choices retained. A4/A7/A9/A11/A12 companion asks remain whole6.",
+    "B1 complete four-household/three-outlet cost table, all euro values, percentages and calorie inputs are essential. B1(a) evaluates all three outlets12; B1(b) excludes family size12; B1(c) linked low-cost protein/use9. B1(d) coherent protein account47: classification24 (three groups4 and six points2), complementary8, structures15. Original protein classification and complementary tables retained without invented associations.",
+    "B2(b) independently priced toughness factors9 and tenderising methods6 split into two tasks. B2(c) one meat-preservation profile15: name2/how including principle9/effects4, full scheme11–12 continuation. No independent splits of linked profile headings.",
+    "B3(a) six linked HACCP points4, minimum one preparation and one cooking reference plus four others. Potential hazards matched to corresponding controls; full original table retained. B3(b) one grilling/barbecue profile20 with principle9/guidelines9/effect2. B3(c) two required food-poisoning types3 each.",
+    "B4(a) three required selection headings4 each. B4(b) one microwave profile26: construction8/working12/use6. B4(c) required choosing/using/disposing4 each. B5(b) printed roman functions15/state intervention10 separate; two DIFFERENT interventions required.",
+    "C1(a)(i) three area/method/principle groups8 each (2/2/4). C1(a)(ii) one energy profile14 (name2/source3/advantages-disadvantages6/sustainability3). Scheme explicitly accepts NON-RENEWABLE as well because English/Irish papers differ; original allowance must render visibly. Five renewable models provided; do not invent non-renewable models.",
+    "C1(b)(ii) two different wall finishes7 each: name1/description2/two properties2 each. Full continued wallpaper guidance through scheme21 retained. C1(c) buying/renting comparative costs15 and rental-sector15 separate.",
+    "C2(a)(i) original complete photograph essential, three required evaluation headings5 each. C2(a)(ii) ANY TWO design elements5 each, all five source models including continuation scheme23 retained. C2(b)(i) one construction technique9 (name3/two details3 each); C2(b)(ii) ONE finish with two details3 each and no name price. Some original finish models have fewer detail points; do not invent missing points.",
+    "C2(c)(ii) one Irish designer profile6: name2/work4. Original names and generic work examples retained without invented name/work associations. C3(a)(iii) one educational initiative10: name4/two details3, full scheme25–26 continuation. Historical source guidance retained.",
+    "C3(b) coherent family-change account30 with three required headings10 each (two points5 each). C3(c) community role18 and volunteer benefits12 separate."
+  ],
+  "sourceAnomalies": [
+    "A1 crystallisation model literally says jam making if over 65% of jam is added; retain original source wording and visibly identify the printed wording rather than silently substituting sugar.",
+    "C1(a)(ii) scheme expressly accepts non-renewable energy due to English/Irish paper inconsistency; this is a genuine source allowance, not an inferred new model.",
+    "C2(c)(ii) source lists Irish designers plus generic work examples without a full designer-specific model; make this limitation explicit in rendered guidance.",
+    "Scheme19 non-renewable allowance is an embedded image, absent from the text layer. Original image crop retained as a solution figure and exact visible wording manually transcribed into the source transcript."
+  ],
+  "sectionAReview": {
+    "tasks": 12,
+    "marks": 72,
+    "tariffDecision": "All twelve printed whole-six tariffs and complete companion prompts retained with unpriced source rows and visible guidance. Three cheese pairs from all five source classes; all other original pools retained. Original crystallisation wording visible, no invented correction."
+  },
+  "sectionBReview": {
+    "tasks": 18,
+    "marks": 280,
+    "selectionDecisions": "Separate toughness factors9 and tenderising methods6. Coherent protein47, preservation15, grilling20 and microwave26 profiles retain all priced headings. Original complete cost/protein/HACCP tables, source continuations, required/flexible quotas and two distinct state interventions retained."
+  },
+  "sectionCReview": {
+    "tasks": 19,
+    "marks": 275,
+    "selectionDecisions": "Three linked insulation profiles, explicit non-renewable allowance and full renewable variants. Two wall finishes retain name1/description2/properties4. Original dress, all design elements, construction variants, one-finish quota and visible incomplete model guidance. Complete educational initiative continuation and coherent three-heading family change account."
+  },
+  "figures": {
+    "home-economics-2014-hl-sa-q2": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2014/LC098ALP000EV.pdf",
+      "page": 2,
+      "bounds": [
+        45,
+        373.3675537109375,
+        570.219970703125,
+        495.4676818847656
+      ],
+      "alt": "Original lipid-digestion question table, complete Small Intestine row and blank Secretion, Enzyme and Product cells.",
+      "sha256": "a8bf94d8e349a9bd524f6dc5089441fbb1c206b630ea4d9b1c95d700cfd01884"
+    },
+    "home-economics-2014-hl-sa-q6": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2014/LC098ALP000EV.pdf",
+      "page": 3,
+      "bounds": [
+        45,
+        440.0874328613281,
+        570.219970703125,
+        620.147705078125
+      ],
+      "alt": "Original cheese-classification question table with three blank classification/example pairs and the complete prompt.",
+      "sha256": "89ca5ddda2c458b05d71bde30d69ef31e9a4bea9d94cc6c70a97dd6dae2b1057"
+    },
+    "home-economics-2014-hl-sa-q8": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2014/LC098ALP000EV.pdf",
+      "page": 4,
+      "bounds": [
+        45,
+        39.88771057128906,
+        570.219970703125,
+        212.26771545410156
+      ],
+      "alt": "Original micro-organism/use question table: Lactic acid bacteria, Lactobacillus bulgaricus and Yeast; all blank use cells retained.",
+      "sha256": "4c58f09f63df68a1e8f724b5b2fc420e7ebb14885d9151788f01e77ffd273359"
+    },
+    "home-economics-2014-hl-sb-q1-costs": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2014/LC098ALP000EV.pdf",
+      "page": 6,
+      "bounds": [
+        82.03999773661296,
+        166.55999755859375,
+        548.8000081380209,
+        465.22800903320314
+      ],
+      "alt": "Original four-household, three-outlet food-cost table: every household description, euro value, percentage and daily calorie requirement retained; complete multiple-supermarket, low-cost-shop and local-shop headings.",
+      "sha256": "01aab8cf429f71aa691b543c06f5aad2414b6512171613778b6e51d4187deb36"
+    },
+    "home-economics-2014-hl-sc-q2-dress": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2014/LC098ALP000EV.pdf",
+      "page": 10,
+      "bounds": [
+        247.3000030517578,
+        127.17999267578125,
+        363.79998779296875,
+        332.8999938964844
+      ],
+      "alt": "Complete original examination photograph for the Imelda May dress-design question, including the striped dress, belt, arms and shoes; full original frame retained.",
+      "sha256": "5e805ab3dd85c8c171f2dafd05bc208a42a357f250d55106226bb7f0876a87d4"
+    },
+    "home-economics-2014-hl-sb-q1d-protein": {
+      "kind": "scheme",
+      "source": "paper-trail-corpus/markingschemes/2014/LC098ALP000EV.pdf",
+      "page": 9,
+      "bounds": [
+        54.40177590506418,
+        417.6600036621094,
+        559.1903599330357,
+        645.8200022379557
+      ],
+      "alt": "Original complete protein-classification answer table, preserving merged Simple/Animal/Plant and Conjugated groups, subgroups, all examples and aligned food sources.",
+      "solution": true,
+      "sha256": "bd3c6ba5881e54ce85d0abda16dd842bbb35565193179073a17bf6ee59c7ec37"
+    },
+    "home-economics-2014-hl-sc-q1aii-allowance": {
+      "kind": "scheme",
+      "source": "paper-trail-corpus/markingschemes/2014/LC098ALP000EV.pdf",
+      "page": 19,
+      "bounds": [
+        354.6816101074219,
+        509.5430603027344,
+        589.8394775390625,
+        552.8961791992188
+      ],
+      "alt": "Original image-only marking note: Due to an inconsistency between the English and Irish versions of the examination paper, non-renewable sources of energy were also accepted.",
+      "solution": true,
+      "sha256": "3112608b04ed38e098c7ab9b35dd06bd0bd93e14c3bec11c1bd126811674c987"
+    }
+  },
+  "atlasCountReconciliation": {
+    "beforeExactRuntimeMappings": 991,
+    "afterExactRuntimeMappings": 993,
+    "beforeRegistryMappings": 1003,
+    "afterRegistryMappings": 1005,
+    "newSourceIdentities": [
+      "2014 HL LC098ALP000EV.pdf / 9 — Section A Q9 PRSI",
+      "2014 HL LC098ALP000EV.pdf / 10 — Section A Q10 National Housing Policy"
+    ],
+    "reason": "These two original questions lacked exact runtime rows before this review. Both were independently read on original paper4 and scheme6. No original identity removed; all twenty source identities now mapped."
+  },
+  "figureVisualReview": "All seven original crops individually inspected; final energy image bounded exactly to its original image rectangle, removing neighbouring text artefacts without clipping its border or allowance.",
+  "sourceCensusReconciliation": {
+    "level": "higher",
+    "sourceHashes": "verified",
+    "expectedSourceLeaves": 48,
+    "observedSourceLeaves": 48,
+    "continuityFlags": [],
+    "keys": [
+      "Section A Q1",
+      "Section A Q10",
+      "Section A Q11",
+      "Section A Q12",
+      "Section A Q2",
+      "Section A Q3",
+      "Section A Q4",
+      "Section A Q5",
+      "Section A Q6",
+      "Section A Q7",
+      "Section A Q8",
+      "Section A Q9",
+      "Section B Q1(a)",
+      "Section B Q1(b)",
+      "Section B Q1(c)",
+      "Section B Q1(d)",
+      "Section B Q2(a)",
+      "Section B Q2(b)",
+      "Section B Q2(c)",
+      "Section B Q3(a)",
+      "Section B Q3(b)",
+      "Section B Q3(c)",
+      "Section B Q4(a)",
+      "Section B Q4(b)",
+      "Section B Q4(c)",
+      "Section B Q5(a)",
+      "Section B Q5(b)(i)",
+      "Section B Q5(b)(ii)",
+      "Section B Q5(c)",
+      "Section C Q1(a)(i)",
+      "Section C Q1(a)(ii)",
+      "Section C Q1(a)(iii)",
+      "Section C Q1(b)(i)",
+      "Section C Q1(b)(ii)",
+      "Section C Q1(c)(i)",
+      "Section C Q1(c)(ii)",
+      "Section C Q2(a)(i)",
+      "Section C Q2(a)(ii)",
+      "Section C Q2(b)(i)",
+      "Section C Q2(b)(ii)",
+      "Section C Q2(c)(i)",
+      "Section C Q2(c)(ii)",
+      "Section C Q3(a)(i)",
+      "Section C Q3(a)(ii)",
+      "Section C Q3(a)(iii)",
+      "Section C Q3(b)",
+      "Section C Q3(c)(i)",
+      "Section C Q3(c)(ii)"
+    ],
+    "reconciliation": "48 independent original leaves A12/B17/C19 become49 priced tasks A12/B18/C19,627 marks: B2(b) independently prices toughness factors9 and tenderising methods6 (paper7,scheme11). Coherent protein47 (classification24/complementary8/structure15), microwave26 and family-change30 accounts preserve their printed priced headings. All A tasks retain whole6 without inferred suballocations. All52 original pages visually swept."
+  },
+  "validation": {
+    "runtime": "295 required/sitting tests passed:232 required plus seven each 2010–2013 Higher/Ordinary and 2014 Higher. maxWorkers1.",
+    "mandatoryRawSourceGate": "Explicit 2010–2014 original-PDF hash/key gates passed. 2014 Higher48 pinned original leaves reconcile to49 priced tasks via B2(b) factors9/methods6. Normal Vitest has no local archive/Python dependency.",
+    "atlas": "Two targeted Home Economics gates passed:66 tagged papers,772 physical groups,1005 registry mappings. All20 original IDs retained; source-backed new A9/A10 exact rows reconcile991→993 runtime mappings.",
+    "mainTypecheck": "passed",
+    "scoped2014TestTypecheck": "passed",
+    "productionBuild": "passed; only own reproducible untracked dist removed after success",
+    "cardlint": "clean;1318 authored records including withdrawals inspected",
+    "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across30 generated files.",
+    "reconciliation": "2014HL48/48 raw leaves covered,49 priced tasks,zero sitting opens/exclusions/continuity flags. Lane1292 cards728HL/564OL;1240/1621 raw leaves covered,381 open,zero orphan/unparsed/excluded,25 flags.",
+    "preservation": "Every earlier authored card, unrelated deck, other sizes/showcase subjects, full/decoded non-HE Atlas data, unrelated HE tags/runtime/associations and every other HE raw census sitting unchanged. Frozen identity hashes unchanged.",
+    "browser": "Parent-owned/pending. All seven original crops individually visually inspected, including final precisely bounded image-only energy allowance."
+  }
+}

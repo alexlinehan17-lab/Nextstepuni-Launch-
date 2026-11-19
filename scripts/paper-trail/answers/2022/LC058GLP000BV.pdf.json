@@ -1,7 +1,7 @@
 {
   "band": [
     1,
-    17
+    16
   ],
   "component": "000",
   "copyright": "© State Examinations Commission",
@@ -423,7 +423,7 @@
     },
     {
       "conf": 1.0,
-      "label": "Q3 · B (Answer in Japanese)",
+      "label": "Q3 A · 5 (Answer in Japanese)",
       "mode": "crop",
       "n": "19",
       "pP": 10,
@@ -446,7 +446,7 @@
     },
     {
       "conf": 1.0,
-      "label": "Q3 C · 1 (Past tense)",
+      "label": "Q3 B · 1 (Past tense)",
       "mode": "crop",
       "n": "20",
       "pP": 10,
@@ -469,7 +469,7 @@
     },
     {
       "conf": 1.0,
-      "label": "Q3 C · 2 (Particles)",
+      "label": "Q3 B · 2 (Particles)",
       "mode": "crop",
       "n": "21",
       "pP": 11,

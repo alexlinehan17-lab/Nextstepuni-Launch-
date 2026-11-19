@@ -1,0 +1,306 @@
+{
+  "reviewedAt": "2026-10-30",
+  "paper": "2024 Ordinary Paper 1",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "schemeSha256": "c856460b3a5a9b69a4ee84eb9661cfc32a76489fc5dc5c9a52b6dfc7176490d3",
+  "reviewedSchemePages": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "changes": [
+    {
+      "id": "maths-2024-ol-p1-q3-c",
+      "previous": [
+        10
+      ],
+      "corrected": [
+        11
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q4-a",
+      "previous": [
+        11
+      ],
+      "corrected": [
+        12
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q4-b",
+      "previous": [
+        11
+      ],
+      "corrected": [
+        12
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q4-c-i",
+      "previous": [
+        11
+      ],
+      "corrected": [
+        12
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q5-a",
+      "previous": [
+        11
+      ],
+      "corrected": [
+        13
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q5-b",
+      "previous": [
+        11
+      ],
+      "corrected": [
+        13
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q6-a-i",
+      "previous": [
+        12
+      ],
+      "corrected": [
+        14
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q6-b-i",
+      "previous": [
+        12
+      ],
+      "corrected": [
+        14
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q6-b-ii",
+      "previous": [
+        12
+      ],
+      "corrected": [
+        14
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q7-a-i",
+      "previous": [
+        13
+      ],
+      "corrected": [
+        15
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q7-a-iii",
+      "previous": [
+        13
+      ],
+      "corrected": [
+        15
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q7-a-v",
+      "previous": [
+        13
+      ],
+      "corrected": [
+        15
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q7-b-i",
+      "previous": [
+        14
+      ],
+      "corrected": [
+        16
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q7-b-ii",
+      "previous": [
+        14
+      ],
+      "corrected": [
+        16
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q8-a-i",
+      "previous": [
+        15
+      ],
+      "corrected": [
+        17
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q8-a-ii",
+      "previous": [
+        15
+      ],
+      "corrected": [
+        17
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q8-a-iii",
+      "previous": [
+        15
+      ],
+      "corrected": [
+        17
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q8-b-i",
+      "previous": [
+        16
+      ],
+      "corrected": [
+        18
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q8-b-iii",
+      "previous": [
+        16
+      ],
+      "corrected": [
+        18
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q8-b-iv",
+      "previous": [
+        16
+      ],
+      "corrected": [
+        18
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q9-a-i",
+      "previous": [
+        17
+      ],
+      "corrected": [
+        19
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q9-b",
+      "previous": [
+        17
+      ],
+      "corrected": [
+        19
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q9-c-i",
+      "previous": [
+        17
+      ],
+      "corrected": [
+        19
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q9-c-ii",
+      "previous": [
+        18
+      ],
+      "corrected": [
+        20
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q9-d-i",
+      "previous": [
+        18
+      ],
+      "corrected": [
+        20
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q10-a-i",
+      "previous": [
+        19
+      ],
+      "corrected": [
+        21
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q10-b-i",
+      "previous": [
+        19
+      ],
+      "corrected": [
+        21
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q10-b-iii",
+      "previous": [
+        20
+      ],
+      "corrected": [
+        22
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q10-b-iv",
+      "previous": [
+        20
+      ],
+      "corrected": [
+        22
+      ]
+    },
+    {
+      "id": "maths-2024-ol-p1-q10-c-i",
+      "previous": [
+        20
+      ],
+      "corrected": [
+        22
+      ]
+    }
+  ],
+  "additionalPreviouslyCorrected": {
+    "maths-2024-ol-p1-q5-c": {
+      "previous": [
+        11
+      ],
+      "corrected": [
+        13
+      ]
+    }
+  }
+}

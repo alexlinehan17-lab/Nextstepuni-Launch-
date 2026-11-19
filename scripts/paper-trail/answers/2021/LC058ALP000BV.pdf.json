@@ -1,7 +1,7 @@
 {
   "band": [
     1,
-    21
+    20
   ],
   "component": "000",
   "copyright": "© State Examinations Commission",
@@ -681,7 +681,7 @@
     },
     {
       "conf": 1.0,
-      "label": "Q5 · Blog about your locality",
+      "label": "Q5 · Essay on memories of your school",
       "mode": "crop",
       "n": "29",
       "pP": 16,
