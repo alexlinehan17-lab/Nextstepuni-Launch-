@@ -30368,13 +30368,22 @@
         13,
         14
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          13,
+          14
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2024-hl.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
       "system": "language-writing",
       "taskRequirements": [],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
@@ -30682,7 +30691,17 @@
         16,
         17
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          15,
+          16,
+          17
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2024-hl.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -30690,7 +30709,7 @@
       "taskRequirements": [
         "Question 3. Guided writing (40 marks) Write a piece of continuous prose in Russian (140 words) in answer to ONE of the following. In your answer, make sure to include ALL the points listed. 1. LETTER a) Write a letter on behalf of Lyonka to the fishermen (Comprehension Text, Question1) to let them know about how the cat has settled in since they left. In your letter, you should refer to the following: • opening (A) • where the cat lives now (B) • what the cat looks like now (C) • how the cat’s character has changed (D) • sign off (E) OR b) Write a letter of enquiry about work as a team leader in a summer camp. In your letter, you should refer to the following: • opening (A) • basic information about yourself, including your education (B) and hobbies (C); • why you are interested in this position (D) • dates you are available (E) • your work experience to date (F) • sign off (G) 2. NARRATIVE a) Write an account of your most memorable school trip. OR b) Masha (Comprehension Text, Question 2) has recently started her part-time job. Write Masha’s blog entry describing her first day in work. 3. DISCUSSION a) Discuss the importance of keeping traditions. OR b) Discuss the advantages (A) and disadvantages (B) of having a pet animal."
       ],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
