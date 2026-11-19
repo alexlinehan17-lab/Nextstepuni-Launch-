@@ -3452,8 +3452,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "music-2026-HL-scheme-p19-l-q1-e",
           "src": "/exam-figures/music/markbank/music-2026-HL-scheme-p19-l-q1-e.png",
-          "srcHash": "991e4c832f2df224d3c7cab6e1047fc9",
-          "alt": "The marking scheme’s printed answer for Listening Q1(e): the time signature at X and the half-mark alternatives, printed in music notation, cropped from page 19 of the scheme.",
+          "srcHash": "08af5b25c482d8a875f8ddf2295f6f8e",
+          "alt": "The marking scheme’s printed answer for Listening Q1(e): the time signature at X, printed in music notation, and the half-mark alternatives, cropped from page 19 of the scheme.",
           "attribution": "SEC Leaving Certificate Music 2026 Higher Level marking scheme — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -3517,7 +3517,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "music-2026-HL-scheme-p19-l-q1-f",
           "src": "/exam-figures/music/markbank/music-2026-HL-scheme-p19-l-q1-f.png",
-          "srcHash": "07b15f41e69e18834ace47a723791f32",
+          "srcHash": "2c8d48d32a4b7dddd7b45e9cda7322e3",
           "alt": "The marking scheme’s printed answer for Listening Q1(f): the four notes at Y printed on the treble stave, cropped from page 19 of the scheme.",
           "attribution": "SEC Leaving Certificate Music 2026 Higher Level marking scheme — © State Examinations Commission",
           "solution": true,
@@ -4078,10 +4078,10 @@ export const CARDS: SecCard[] = [
           "candId": "music-2026-HL-l-q3-c-i-score",
           "src": "/exam-figures/music/markbank/music-2026-HL-l-q3-c-i-score.png",
           "srcHash": "6bcbe189785d86706c57d9406c864957",
-          "alt": "The question line with its printed tremolo sign, and the flute stave at (i), printed with Listening Q3(c)(i) in the 2026 Higher Level paper, as the SEC set it.",
+          "alt": "The printed question, its tremolo sign included, down to the stave at (i), printed with Listening Q3(c)(i) in the 2026 Higher Level paper, as the SEC set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Music 2026 Higher Level examination paper — © State Examinations Commission",
-          "includesPrompt": false
+          "includesPrompt": true
     },
   } as SecCard,
   {
@@ -4132,11 +4132,11 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "music-2026-HL-l-q3-c-ii-score",
           "src": "/exam-figures/music/markbank/music-2026-HL-l-q3-c-ii-score.png",
-          "srcHash": "a7f85203ac2dca1de1c2891a706bd74a",
-          "alt": "The cymbal stave at (ii), with the tremolo sign on its notes, printed with Listening Q3(c)(ii) in the 2026 Higher Level paper, as the SEC set it.",
+          "srcHash": "6782a5560c93c51b426374118c3e3c5b",
+          "alt": "The printed question, its tremolo sign included, down to the stave at (ii), printed with Listening Q3(c)(ii) in the 2026 Higher Level paper, as the SEC set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Music 2026 Higher Level examination paper — © State Examinations Commission",
-          "includesPrompt": false
+          "includesPrompt": true
     },
   } as SecCard,
   {
@@ -4187,11 +4187,11 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "music-2026-HL-l-q3-c-iii-score",
           "src": "/exam-figures/music/markbank/music-2026-HL-l-q3-c-iii-score.png",
-          "srcHash": "717183a1e2487e6cf42bb964e7132abc",
-          "alt": "The violin stave at (iii), with the tremolo sign on its notes, printed with Listening Q3(c)(iii) in the 2026 Higher Level paper, as the SEC set it.",
+          "srcHash": "0a0c65d9e69c76bce1b43fe3e8d46b90",
+          "alt": "The printed question, its tremolo sign included, down to the stave at (iii), printed with Listening Q3(c)(iii) in the 2026 Higher Level paper, as the SEC set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Music 2026 Higher Level examination paper — © State Examinations Commission",
-          "includesPrompt": false
+          "includesPrompt": true
     },
   } as SecCard,
   {

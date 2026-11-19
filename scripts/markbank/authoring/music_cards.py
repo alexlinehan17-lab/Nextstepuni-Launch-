@@ -398,6 +398,21 @@ def grid_card(s, a, atlas, cid=None, ref=None, question=None):
 
 
 # ----------------------------------------------------------------- build ----
+def crops_overlapping(s):
+    """Pairs of asks whose scheme crops overlap on one page: each pair is LOOKED
+    at, because a crop must never show another ask's answer (2026 HL Q1(e)'s crop
+    once carried Q1(f)'s notes at Y, and Q1(f)'s the time signature at X)."""
+    crops = [(a['address'], a['schemeCrop']) for a in s.data['asks'] if a.get('schemeCrop')]
+    out = []
+    for i, (n1, c1) in enumerate(crops):
+        for n2, c2 in crops[i + 1:]:
+            a, b = c1['box'], c2['box']
+            if c1['page'] == c2['page'] and min(a[2], b[2]) - max(a[0], b[0]) > 0.005 \
+                    and min(a[3], b[3]) - max(a[1], b[1]) > 0.005:
+                out.append((n1, n2, c1['page']))
+    return out
+
+
 def build_sitting(s, atlas):
     cards, census, covers = [], {}, {}
     shared = {}
@@ -454,7 +469,8 @@ def check(path, crops_to):
         ocr = os.path.join(REVIEW_DIR, 'ocr', f'{s.year}-{s.tag}-008.json')
         if os.path.exists(ocr):
             text += '\n' + '\n'.join(json.load(open(ocr, encoding='utf-8')).values())
-        for m in re.finditer(r'Question\s+(\d)\s*[\s\S]{0,40}?\((\d+)\s*marks\)', text):
+        # "Question 1 (25 marks)", or before 2021 a bare "(25)" beside the question number.
+        for m in re.finditer(r'Question\s+(\d)\s*[\s\S]{0,40}?\((\d+)(?:\s*marks)?\)', text):
             printed.setdefault(int(m.group(1)), int(m.group(2)))
     sums = {}
     for a in s.data['asks']:
@@ -468,6 +484,8 @@ def check(path, crops_to):
         got = sum(max(v) if k[1] == 'B' else sum(v) for k, v in sums.get(q, {}).items())
         flag = '' if printed.get(q) == got else '   <-- CHECK'
         print(f'  Listening Q{q}: paper prints {printed.get(q)}, asks give {got}{flag}')
+    for n1, n2, page in crops_overlapping(s):
+        print(f'  LOOK: the scheme crops of {n1} and {n2} overlap on page {page}: neither may show the other\'s answer')
     print(f'crops written to {crops_to}')
 
 

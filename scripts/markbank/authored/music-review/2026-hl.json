@@ -277,10 +277,10 @@
     "box": [
      0.08,
      0.475,
-     0.93,
+     0.515,
      0.665
     ],
-    "what": "the time signature at X and the half-mark alternatives, printed in music notation"
+    "what": "the time signature at X, printed in music notation, and the half-mark alternatives"
    },
    "rows": [
     {
@@ -332,7 +332,7 @@
    "schemeCrop": {
     "page": 19,
     "box": [
-     0.08,
+     0.235,
      0.475,
      0.95,
      0.575
@@ -901,7 +901,8 @@
      0.95,
      0.291
     ],
-    "what": "The question line with its printed tremolo sign, and the flute stave at (i)"
+    "includesPrompt": true,
+    "what": "The printed question, its tremolo sign included, down to the stave at (i)"
    },
    "topicId": "music-2-11",
    "marks": 1,
@@ -916,7 +917,7 @@
    ],
    "grid": null,
    "sharedCard": null,
-   "notes": "Page 11's text layer is broken (\"Iden&fy\"); the stem is gated against the coordinator's OCR. The stem prints a tremolo sign between \"technique,\" and \", seen\": the words either side are kept and the figure shows the sign. \" • (i) Flute in G\" is the sub-part's own printed label (text layer), joined with the builder's piece separator so each of the three cards names its instrument."
+   "notes": "Page 11's text layer is broken (\"Iden&fy\"); the stem is gated against the coordinator's OCR. The stem prints a tremolo sign between \"technique,\" and \", seen\": the words either side are kept and the figure shows the sign. \" • (i) Flute in G\" is the sub-part's own printed label (text layer), joined with the builder's piece separator so each of the three cards names its instrument. Second reader 19 Nov: the stem prints the tremolo sign as an image between two commas (\"technique, [sign] , seen\"); the typed words keep every printed word, and the card shows the printed stem, sign included, in place of them."
   },
   {
    "paper": "listening",
@@ -939,11 +940,12 @@
     "page": 11,
     "box": [
      0.08,
-     0.38,
+     0.105,
      0.95,
      0.49
     ],
-    "what": "The cymbal stave at (ii), with the tremolo sign on its notes"
+    "includesPrompt": true,
+    "what": "The printed question, its tremolo sign included, down to the stave at (ii)"
    },
    "topicId": "music-2-11",
    "marks": 1,
@@ -958,7 +960,7 @@
    ],
    "grid": null,
    "sharedCard": null,
-   "notes": "Crop runs from the shared (c) line (with the printed sign) down to this part's answer box."
+   "notes": "Crop runs from the shared (c) line (with the printed sign) down to this part's answer box. Second reader 19 Nov: the stem prints the tremolo sign as an image between two commas (\"technique, [sign] , seen\"); the typed words keep every printed word, and the card shows the printed stem, sign included, in place of them."
   },
   {
    "paper": "listening",
@@ -981,11 +983,12 @@
     "page": 11,
     "box": [
      0.08,
-     0.6,
+     0.105,
      0.95,
      0.735
     ],
-    "what": "The violin stave at (iii), with the tremolo sign on its notes"
+    "includesPrompt": true,
+    "what": "The printed question, its tremolo sign included, down to the stave at (iii)"
    },
    "topicId": "music-2-11",
    "marks": 1,
@@ -1000,7 +1003,7 @@
    ],
    "grid": null,
    "sharedCard": null,
-   "notes": "Crop runs from the shared (c) line (with the printed sign) down to this part's answer box."
+   "notes": "Crop runs from the shared (c) line (with the printed sign) down to this part's answer box. Second reader 19 Nov: the stem prints the tremolo sign as an image between two commas (\"technique, [sign] , seen\"); the typed words keep every printed word, and the card shows the printed stem, sign included, in place of them."
   },
   {
    "paper": "listening",

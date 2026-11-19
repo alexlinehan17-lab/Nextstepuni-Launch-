@@ -851,7 +851,7 @@
    ],
    "questionText": "This excerpt features panning. Explain panning.",
    "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
-   "excerptLine": "Excerpt 2, played three times.",
+   "excerptLine": "Excerpt 2, played three times. The opening lyrics are printed below.",
    "needsRecording": true,
    "figure": {
     "page": 9,
@@ -902,7 +902,7 @@
    ],
    "questionText": "Describe how the words ‘for me’ are emphasised in the music towards the end of the excerpt.",
    "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
-   "excerptLine": "Excerpt 2, played three times.",
+   "excerptLine": "Excerpt 2, played three times. The opening lyrics are printed below.",
    "needsRecording": true,
    "figure": {
     "page": 9,

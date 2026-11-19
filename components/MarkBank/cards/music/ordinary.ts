@@ -836,10 +836,10 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC067GLP008EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
-    id: "mus-2026-ol-l-q3-c-i", topicId: "music-2-11", conceptId: "mus-below-each-excerpt-following",
+    id: "mus-2026-ol-l-q3-c-i", topicId: "music-2-11", conceptId: "mus-below-each-excerpt-flute",
     section: "L", questionRef: "2026 OL Listening Q3(c)(i)",
     stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane. Excerpt 2, played once more.",
-    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt.",
+    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (i) Flute in G",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Flutter tongue", marks: 2 },
@@ -880,7 +880,7 @@ export const CARDS: SecCard[] = [
           "candId": "music-2026-OL-l-q3-c-i-score",
           "src": "/exam-figures/music/markbank/music-2026-OL-l-q3-c-i-score.png",
           "srcHash": "df269e3040be20b63ce821e0190e2ba2",
-          "alt": "The question line with its printed tremolo sign, and the flute stave (i), printed with Listening Q3(c)(i) in the 2026 Ordinary Level paper, as the SEC set it.",
+          "alt": "The printed question, its tremolo sign included, down to the stave at (i), printed with Listening Q3(c)(i) in the 2026 Ordinary Level paper, as the SEC set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Music 2026 Ordinary Level examination paper — © State Examinations Commission",
           "includesPrompt": true
@@ -891,10 +891,10 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC067GLP008EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
-    id: "mus-2026-ol-l-q3-c-ii", topicId: "music-2-11", conceptId: "mus-below-each-excerpt-following",
+    id: "mus-2026-ol-l-q3-c-ii", topicId: "music-2-11", conceptId: "mus-below-cymbal-each-excerpt",
     section: "L", questionRef: "2026 OL Listening Q3(c)(ii)",
     stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane. Excerpt 2, played once more.",
-    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt.",
+    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (ii) Cymbal",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Cymbal) Roll", marks: 2 },
@@ -934,11 +934,11 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "music-2026-OL-l-q3-c-ii-score",
           "src": "/exam-figures/music/markbank/music-2026-OL-l-q3-c-ii-score.png",
-          "srcHash": "8d0dcd88f1d78f5fdfcec755530f9236",
-          "alt": "The cymbal stave (ii), its notes marked with the tremolo sign, printed with Listening Q3(c)(ii) in the 2026 Ordinary Level paper, as the SEC set it.",
+          "srcHash": "0d8160970a3edb5b5c9080feae1eb7b5",
+          "alt": "The printed question, its tremolo sign included, down to the stave at (ii), printed with Listening Q3(c)(ii) in the 2026 Ordinary Level paper, as the SEC set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Music 2026 Ordinary Level examination paper — © State Examinations Commission",
-          "includesPrompt": false
+          "includesPrompt": true
     },
   } as SecCard,
   {
@@ -949,7 +949,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2026-ol-l-q3-c-iii", topicId: "music-2-11", conceptId: "mus-below-each-excerpt-following",
     section: "L", questionRef: "2026 OL Listening Q3(c)(iii)",
     stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane. Excerpt 2, played once more.",
-    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt.",
+    questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (iii) Violin",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Tremolo", marks: 2 },
@@ -989,11 +989,11 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "music-2026-OL-l-q3-c-iii-score",
           "src": "/exam-figures/music/markbank/music-2026-OL-l-q3-c-iii-score.png",
-          "srcHash": "2191502af7932c5602424e618b1c8f7d",
-          "alt": "The violin stave (iii), its notes marked with the tremolo sign, printed with Listening Q3(c)(iii) in the 2026 Ordinary Level paper, as the SEC set it.",
+          "srcHash": "f25a56bc6f8a56f3a5b5ce9d7d031c81",
+          "alt": "The printed question, its tremolo sign included, down to the stave at (iii), printed with Listening Q3(c)(iii) in the 2026 Ordinary Level paper, as the SEC set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Music 2026 Ordinary Level examination paper — © State Examinations Commission",
-          "includesPrompt": false
+          "includesPrompt": true
     },
   } as SecCard,
   {
@@ -4017,7 +4017,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q3-d", topicId: "music-2-14", conceptId: "mus-excerpt-explain-features-panning",
     section: "L", questionRef: "2025 OL Listening Q3(d)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 2, played three times.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 2, played three times. The opening lyrics are printed below.",
     questionText: "This excerpt features panning. Explain panning.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4072,7 +4072,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q3-e", topicId: "music-2-14", conceptId: "mus-describe-emphasised-excerpt-music",
     section: "L", questionRef: "2025 OL Listening Q3(e)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 2, played three times.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 2, played three times. The opening lyrics are printed below.",
     questionText: "Describe how the words ‘for me’ are emphasised in the music towards the end of the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [

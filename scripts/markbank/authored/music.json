@@ -5881,7 +5881,7 @@
    "kind": "fixed"
   },
   "questionFigureKey": "music-2026-HL-l-q3-c-i-score",
-  "questionFigureIncludesPrompt": false
+  "questionFigureIncludesPrompt": true
  },
  {
   "id": "mus-2026-hl-l-q3-c-ii",
@@ -5939,7 +5939,7 @@
    "kind": "fixed"
   },
   "questionFigureKey": "music-2026-HL-l-q3-c-ii-score",
-  "questionFigureIncludesPrompt": false
+  "questionFigureIncludesPrompt": true
  },
  {
   "id": "mus-2026-hl-l-q3-c-iii",
@@ -5997,7 +5997,7 @@
    "kind": "fixed"
   },
   "questionFigureKey": "music-2026-HL-l-q3-c-iii-score",
-  "questionFigureIncludesPrompt": false
+  "questionFigureIncludesPrompt": true
  },
  {
   "id": "mus-2026-hl-l-q4-a",
@@ -11039,9 +11039,9 @@
   "year": 2026,
   "section": "L",
   "topicId": "music-2-11",
-  "conceptId": "mus-below-each-excerpt-following",
+  "conceptId": "mus-below-each-excerpt-flute",
   "questionRef": "2026 OL Listening Q3(c)(i)",
-  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt.",
+  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (i) Flute in G",
   "totalMarks": 2,
   "sourceMaterial": {
    "kind": "source-text",
@@ -11097,9 +11097,9 @@
   "year": 2026,
   "section": "L",
   "topicId": "music-2-11",
-  "conceptId": "mus-below-each-excerpt-following",
+  "conceptId": "mus-below-cymbal-each-excerpt",
   "questionRef": "2026 OL Listening Q3(c)(ii)",
-  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt.",
+  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (ii) Cymbal",
   "totalMarks": 2,
   "sourceMaterial": {
    "kind": "source-text",
@@ -11146,7 +11146,7 @@
    "kind": "fixed"
   },
   "questionFigureKey": "music-2026-OL-l-q3-c-ii-score",
-  "questionFigureIncludesPrompt": false
+  "questionFigureIncludesPrompt": true
  },
  {
   "id": "mus-2026-ol-l-q3-c-iii",
@@ -11157,7 +11157,7 @@
   "topicId": "music-2-11",
   "conceptId": "mus-below-each-excerpt-following",
   "questionRef": "2026 OL Listening Q3(c)(iii)",
-  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt.",
+  "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (iii) Violin",
   "totalMarks": 2,
   "sourceMaterial": {
    "kind": "source-text",
@@ -11204,7 +11204,7 @@
    "kind": "fixed"
   },
   "questionFigureKey": "music-2026-OL-l-q3-c-iii-score",
-  "questionFigureIncludesPrompt": false
+  "questionFigureIncludesPrompt": true
  },
  {
   "id": "mus-2026-ol-l-q4-a",
@@ -15143,7 +15143,7 @@
     }
    ]
   },
-  "stem": "Two excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 2, played three times.",
+  "stem": "Two excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 2, played three times. The opening lyrics are printed below.",
   "audioMaterial": {
    "kind": "source-audio",
    "label": "Question 3 · Excerpt 2",
@@ -15208,7 +15208,7 @@
     }
    ]
   },
-  "stem": "Two excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 2, played three times.",
+  "stem": "Two excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 2, played three times. The opening lyrics are printed below.",
   "audioMaterial": {
    "kind": "source-audio",
    "label": "Question 3 · Excerpt 2",
