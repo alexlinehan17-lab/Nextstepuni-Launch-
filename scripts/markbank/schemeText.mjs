@@ -368,6 +368,43 @@ const LANGUAGE_TARIFF = new RegExp(
   + `punkt|pistett[äa]|point|to[čc]ke|to[čc]ka|to[čc]k|puncte|punct|punten|`
   + `punt|pontos|ponto|marks?|p)\\.?\\s*\\)?`, 'gi');
 
+/**
+ * The scheme with its marks cells kept, in place: "⟨10 - 13⟩" reads " 10 - 13 ".
+ * An ADDED form for ONE gate, the marking-grid gate (build-deck.mjs
+ * spanishGridFault), which consults it beside comparableScheme; every other
+ * provenance path reads comparableScheme alone.
+ *
+ * Some grids print their marks ONLY in the marks column, which the extractor
+ * brackets and comparableScheme strips: the Portuguese 2023 Higher scheme p10
+ * sets each band's range ("⟨10 - 13⟩" over "⟨marks⟩"), each Content rung's
+ * price ("... on all topics. ⟨4 marks⟩") and the penalty "Did not follow the
+ * requested structure/format. ⟨-1⟩ ⟨mark⟩" in cells, so a grid line quoting
+ * them could never trace. Built from the same raw text through the same
+ * pipeline (page markers and footers handled alike), so it can only let more
+ * of the SEC's own text through, as LANGUAGE_TARIFF's added form does.
+ */
+export const comparableSchemeWithCells = (raw) =>
+  comparableScheme(String(raw).replace(MARKS_CELL, cell => ` ${cell.slice(1, -1)} `));
+
+/**
+ * A band the scheme names by nothing but its printed range ("10 - 13", "4"):
+ * such a label traces too easily on its own, so its marks must be exactly the
+ * range it names (lo..hi, or the single mark). Returns the reason a band
+ * fails, or null; a band with any other label is not this rule's.
+ */
+export const rangeLabelFault = (band) => {
+  const m = /^\s*(\d{1,3})(?:\s*[\u2010-\u2015-]\s*(\d{1,3}))?\s*$/.exec(String(band?.label ?? ''));
+  if (!m) return null;
+  const a = Number(m[1]);
+  const b = m[2] === undefined ? a : Number(m[2]);
+  const [lo, hi] = a <= b ? [a, b] : [b, a];
+  const want = Array.from({ length: hi - lo + 1 }, (_, i) => lo + i);
+  const marks = [...(band.marks ?? [])].sort((x, y) => x - y);
+  return marks.length === want.length && marks.every((v, i) => v === want[i])
+    ? null
+    : `band "${band.label}" is placed on ${marks.join(', ')}, not the ${lo}-${hi} its label prints`;
+};
+
 export const comparableScheme = (raw) => {
   const sourceLines = raw.replace(MARKS_CELL, ' ').replace(PAGE_MARKER, ' ').replace(PAGE_FOOTER, ' ')
     .split('\n');
