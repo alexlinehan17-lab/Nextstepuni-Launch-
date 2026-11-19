@@ -93,12 +93,12 @@
   "ordinary": 926
  },
  "italian": {
-  "higher": 172,
-  "ordinary": 178
+  "higher": 404,
+  "ordinary": 382
  },
  "russian": {
-  "higher": 642,
-  "ordinary": 730
+  "higher": 704,
+  "ordinary": 781
  },
  "japanese": {
   "higher": 1053,
@@ -113,7 +113,7 @@
   "ordinary": 82
  },
  "polish": {
-  "higher": 341,
+  "higher": 468,
   "ordinary": 337
  },
  "arabic": {

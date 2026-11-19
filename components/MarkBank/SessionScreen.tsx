@@ -32,6 +32,7 @@
  * share a surface. `test/markBankSession.test.tsx` asserts it.
  */
 
+import { atlasLinkForCard } from '../PaperTrail/atlasModel';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import ActionButton from '../ui/ActionButton';
 import { LogOut, Maximize2, Minimize2, X } from 'lucide-react';
@@ -2589,6 +2590,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     );
     return selected ? { ...baseAssessmentCard, rows: selected.rows } : baseAssessmentCard;
   }, [answerVariantId, baseAssessmentCard]);
+  const atlasLink = useMemo(() => (assessmentCard ? atlasLinkForCard(assessmentCard.id) : null), [assessmentCard]);
   const wholeResponseAssessment = Boolean(assessmentCard && isPointCard(assessmentCard)
     && assessmentCard.tariffModel.kind === 'questionTotal');
   // A held task (isConfidenceReviewCard) is reviewed against its guidance with
@@ -3276,6 +3278,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             )}
 
             {paperLayout && assessmentCard.paperFileid && <a className="mb-original-paper" href={`/?view=innovation-zone&tool=paper-trail&subject=${encodeURIComponent(assessmentCard.subjectId)}&year=${assessmentCard.year}&level=${assessmentCard.level}&lang=ev&paper=${encodeURIComponent(assessmentCard.paperFileid.endsWith('.pdf')?assessmentCard.paperFileid:assessmentCard.paperFileid+'.pdf')}`} target="_blank" rel="noopener noreferrer">Open original paper ↗</a>}
+            {/* The single model (atlasModel.ts): the card knows its Topic Atlas question and heading. */}
+            {paperLayout && atlasLink && <a className="mb-original-paper" data-testid="mb-atlas-link" style={{ display: 'flex', marginTop: 10 }} href={atlasLink.href} target="_blank" rel="noopener noreferrer">In the Topic Atlas: {atlasLink.heading.label} · {atlasLink.question} ↗</a>}
             {/* Irish listening cards show their readers beside the recording, above. */}
             {!(audioMaterial && !printedQuestionReplacesText && assessmentCard.subjectId !== 'french') && sourceReaders}
 

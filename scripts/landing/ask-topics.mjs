@@ -12,7 +12,12 @@ const bundle = await build({
   entryPoints: [path.join(root, 'scripts/landing/askTopicIndex.ts')],
   bundle: true, format: 'esm', platform: 'node', write: false, logLevel: 'silent',
 });
-const { buildAskTopicIndex } = await import(`data:text/javascript;base64,${Buffer.from(bundle.outputFiles[0].text).toString('base64')}`);
+const { buildAskTopicIndex, registerAtlasModelFile } = await import(`data:text/javascript;base64,${Buffer.from(bundle.outputFiles[0].text).toString('base64')}`);
+// Questions in the single model take their parts' headings, exactly as Paper Trail shows them.
+const modelDir = path.join(root, 'data/atlasModel');
+for (const { subjectId } of JSON.parse(fs.readFileSync(path.join(modelDir, 'headings.json'), 'utf8')).subjects) {
+  registerAtlasModelFile(JSON.parse(fs.readFileSync(path.join(modelDir, `${subjectId}.json`), 'utf8')));
+}
 const dir = path.join(root, 'public/assets/landing/ask');
 const index = JSON.parse(fs.readFileSync(path.join(dir, 'index.json'), 'utf8'));
 const result = buildAskTopicIndex(index, (year, fileid) => {

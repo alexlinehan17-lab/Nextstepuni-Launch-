@@ -1,0 +1,63 @@
+{
+  "baseCommit": "38cf0b0183a25ba1b4d4ab696ac37cfc25cf0da8",
+  "mainChecked": "476e46a476503e6ebc9bed44723780141ab537b5",
+  "mainHasNoRussian2019Or2020Cards": true,
+  "components/MarkBank/cards/russian/reviewed.json": {
+    "retainedIdsAndConceptIds": 1439,
+    "unchangedRecords": 1430,
+    "changedRecords": [
+      "ru-2019-hl-ca1",
+      "ru-2019-hl-gr",
+      "ru-2019-hl-gw",
+      "ru-2019-hl-la2-2",
+      "ru-2019-hl-se",
+      "ru-2020-hl-gr",
+      "ru-2020-hl-gw",
+      "ru-2020-hl-la1-2",
+      "ru-2020-hl-se"
+    ],
+    "retiredNeverLiveSections": [
+      "ru-2019-hl-l1",
+      "ru-2019-hl-l2",
+      "ru-2019-hl-l3",
+      "ru-2019-hl-l4",
+      "ru-2020-hl-l1",
+      "ru-2020-hl-l2",
+      "ru-2020-hl-l3",
+      "ru-2020-hl-l4"
+    ],
+    "newPrintedAskCards": 46
+  },
+  "scripts/markbank/authored/russian-reviewed.json": {
+    "retainedIdsAndConceptIds": 1439,
+    "unchangedRecords": 1430,
+    "changedRecords": [
+      "ru-2019-hl-ca1",
+      "ru-2019-hl-gr",
+      "ru-2019-hl-gw",
+      "ru-2019-hl-la2-2",
+      "ru-2019-hl-se",
+      "ru-2020-hl-gr",
+      "ru-2020-hl-gw",
+      "ru-2020-hl-la1-2",
+      "ru-2020-hl-se"
+    ],
+    "retiredNeverLiveSections": [
+      "ru-2019-hl-l1",
+      "ru-2019-hl-l2",
+      "ru-2019-hl-l3",
+      "ru-2019-hl-l4",
+      "ru-2020-hl-l1",
+      "ru-2020-hl-l2",
+      "ru-2020-hl-l3",
+      "ru-2020-hl-l4"
+    ],
+    "newPrintedAskCards": 46
+  },
+  "all199OriginalLegacyRecordsUnchanged": true,
+  "allOtherSubjectDecksAndCountsUnchanged": true,
+  "allRussianAndOtherAtlasTopicsAndPaperIndexUnchanged": true,
+  "all46AtlasAskLinksNowUseOwnCard": true,
+  "allOtherRussianSourceMapFieldsAndFilesUnchanged": true,
+  "onlyEightRetiredJointEntriesRemoved": true
+}
