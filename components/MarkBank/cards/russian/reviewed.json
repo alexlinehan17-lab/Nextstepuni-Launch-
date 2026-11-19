@@ -159709,7 +159709,7 @@
     "rubric": {
       "system": "language-writing",
       "taskRequirements": [],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
@@ -160052,7 +160052,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -160086,7 +160086,7 @@
         "3. DISCUSSION Discuss the differences between the Russian and Irish education systems. A. Criteria 1 in Russia B. Criteria 1 in Ireland C. Criteria 2 in Russia D. Criteria 2 in Ireland E. (Criteria 3 in Russia) F. (Criteria 3 in Ireland), etc… up to a maximum of 15 content marks",
         "If a candidate answers TWO or MORE Questions, mark ALL and take the best mark. Only if a candidate obtains full marks on the first/second questions the examiner is not required to mark the subsequent one(s)."
       ],
-      "markingGuideNote": "The scheme explicitly gives choice-specific category lists, retained above. Its later general minimum-category shorthand A–D / A–E / A–D(E,F,G) does not fully match those lists. Both versions remain visible; no per-category numeric split or automatic conversion is imposed. Follow every required point in the original chosen task.",
+      "markingGuideNote": "The scheme prints no answer for this part. The scheme explicitly gives choice-specific category lists, retained above. Its later general minimum-category shorthand A–D / A–E / A–D(E,F,G) does not fully match those lists. Both versions remain visible; no per-category numeric split or automatic conversion is imposed. Follow every required point in the original chosen task.",
       "criteria": [
         {
           "id": "content",
@@ -160418,7 +160418,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
