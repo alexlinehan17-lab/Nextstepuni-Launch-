@@ -223,7 +223,8 @@ const deferredCard = (card: { id?: string; subjectId: string }) =>
   || (card.subjectId === 'geography' && /^geography-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'physics' && /^phys-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'home-economics' && /^he-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
-  || (card.subjectId === 'maths' && /^maths-\d{4}-(?:hl|ol|fl)-deferred-/.test(card.id ?? ''));
+  || (card.subjectId === 'maths' && /^maths-\d{4}-(?:hl|ol|fl)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'business' && /^bus-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
 // Codex's reviewed subjects bind each card to its exact reviewed booklet.
 const REVIEWED_SOURCE_SUBJECTS = new Set(['maths', 'physics', 'home-economics']);
 
@@ -647,9 +648,10 @@ describe('every card points at the question paper it came from', () => {
           const named = deferred?.papers?.find((p: { label: string }) => p.label === `Deferred · Paper ${c.section === '1' ? 'One' : 'Two'}`);
           return String(named?.doc?.f ?? '').replace(/\.pdf$/, '') !== c.paperFileid;
         }
-        // DCG's, Biology's and Geography's deferred sittings are two booklets, as June's are:
+        // DCG's, Biology's, Geography's and Business's deferred sittings are two booklets, as June's are:
         // a deferred card's paper is the one printing its section, found as June's is.
-        if (deferredCard(c) && (c.subjectId === 'dcg' || c.subjectId === 'biology' || c.subjectId === 'geography')) {
+        if (deferredCard(c) && (c.subjectId === 'dcg' || c.subjectId === 'biology' || c.subjectId === 'geography'
+          || c.subjectId === 'business')) {
           return c.paperFileid === null
             || c.paperFileid !== resolvePaperFileid(c.subjectId, c.year, c.level, c.section, 'deferred');
         }

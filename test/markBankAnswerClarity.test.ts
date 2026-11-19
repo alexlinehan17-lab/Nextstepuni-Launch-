@@ -883,14 +883,16 @@ describe('answer clarity: priced answers are rows, not prose', () => {
 
   it('Business: the responses the scheme prints for a part are rows on the card, each lifted from the cited scheme page', () => {
     const cards = [...BUSINESS_HIGHER, ...BUSINESS_ORDINARY].filter((card): card is SecRubricCard & { rubric: BusinessRubric } => isRubricCard(card) && card.rubric.system === 'business');
-    expect(cards).toHaveLength(1988);
+    // + the deferred sittings (deferred-authored.json): 2022 Higher 55.
+    expect(cards).toHaveLength(1988 + 55);
     const normalise = (value: string) => value.normalize('NFKC').toLowerCase().replace(/[^a-z0-9]+/g, '');
     const schemes = new Map<string, { text: string; cells: Set<string> }>();
     // The scheme markdown as bus_expected.py reads it: no page heads, running footers, "(20 marks)" cells or marks column.
     const FOOT = /^\s*(?:Page \d+ of \d+|Bus\.? ?\d{4} ?\((?:OL|HL)\) ?\d+|LC Business \d{4} \((?:OL|HL)\)|Leaving Certificate\b.*|\d{1,2}\s*marks?|⟨\d+⟩|\d{1,2})\s*$/;
     const INLINE_FOOT = /\s*(?:LC Business \d{4} \((?:OL|HL)\)|Bus\.? ?\d{4} ?\((?:OL|HL)\) ?\d+|Page \d+ of \d+|Leaving Certificate(?: \d{4})?\s*[–-]\s*(?:Higher|Ordinary) Level(?: \d{4})?)\s*(?:⟨\d{1,2}⟩)?\s*/g;
-    const schemeText = (year: number, level: string) => {
-      const key = `${year}-${level === 'higher' ? 'hl' : 'ol'}`;
+    // A deferred sitting's card reads its own scheme (examiner-reports/business/schemes/<year>-<level>-deferred.md).
+    const schemeText = (year: number, level: string, deferred = false) => {
+      const key = `${year}-${level === 'higher' ? 'hl' : 'ol'}${deferred ? '-deferred' : ''}`;
       if (!schemes.has(key)) {
         const raw = readFileSync(resolve(__dirname, '..', 'examiner-reports', 'business', 'schemes', `${key}.md`), 'utf8').replace(/\u00a0/g, ' ');
         const lines = raw.split('\n')
@@ -907,11 +909,13 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     const lifted = cards.filter(card => card.rubric.expected);
     // 1,766 from the text layer (stage A), 15 from a hand-checked slice, 198 from the page's geometry (stage B: tables, ticks, rings, True/False columns).
     // The six cards without rows are the recorded exclusions in business-expected-slices.json: two image answers, a drawn organisation chart, three drawn charts.
-    expect(lifted).toHaveLength(1979);
+    // A deferred sitting's rows are cut from its scheme page at the printed headings (deferred_lib.py), so read as
+    // slices: 2022 Higher 55.
+    expect(lifted).toHaveLength(1979 + 55);
     expect(lifted.filter(card => card.rubric.expected!.lifted === 'geometry')).toHaveLength(198);
-    expect(lifted.filter(card => card.rubric.expected!.lifted === 'slice')).toHaveLength(15);
+    expect(lifted.filter(card => card.rubric.expected!.lifted === 'slice')).toHaveLength(15 + 55);
     for (const card of lifted) {
-      const { text: corpus, cells } = schemeText(card.year, card.level);
+      const { text: corpus, cells } = schemeText(card.year, card.level, card.paperFileid?.endsWith('-deferred'));
       const expected = card.rubric.expected!;
       expect(expected.page, card.id).toBeGreaterThan(0);
       expect(expected.items.length, card.id).toBeGreaterThan(0);
@@ -934,7 +938,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     }
     // A row sits under the response it names, or in one pool the responses draw from.
     const layouts = lifted.map(card => businessExpectedLayout(card.rubric)!.kind);
-    expect([layouts.filter(kind => kind === 'per-response').length, layouts.filter(kind => kind === 'pool').length]).toEqual([258, 1721]);
+    // Deferred: per response 8, pooled 47 (2022 Higher).
+    expect([layouts.filter(kind => kind === 'per-response').length, layouts.filter(kind => kind === 'pool').length]).toEqual([258 + 8, 1721 + 47]);
     // What bus_expected.py could not lift — the text-layer reason, then the slice's — each with the pages it looked at.
     // Every entry is a recorded exclusion whose slice reason carries the page evidence; a new shape here needs its own evidence.
     const review = JSON.parse(readFileSync(resolve(__dirname, '..', 'scripts', 'markbank', 'authored', 'business-expected-review.json'), 'utf8')) as Array<{ id: string; reason: string; schemePages: number[] }>;

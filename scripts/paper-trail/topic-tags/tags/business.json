@@ -7330,5 +7330,118 @@
     "secondary": "business-3-17"
    }
   ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC033ALP032EV-deferred.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-3-18"
+   },
+   {
+    "n": "2",
+    "primary": "business-3-20"
+   },
+   {
+    "n": "3",
+    "primary": "business-2-13"
+   },
+   {
+    "n": "4",
+    "primary": "business-4-16"
+   },
+   {
+    "n": "5",
+    "primary": "business-5-14"
+   },
+   {
+    "n": "6",
+    "primary": "business-6-14"
+   },
+   {
+    "n": "7",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-18"
+   },
+   {
+    "n": "9",
+    "primary": "business-5-17"
+   },
+   {
+    "n": "10",
+    "primary": "business-3-18"
+   },
+   {
+    "n": "11",
+    "primary": "business-3-20"
+   },
+   {
+    "n": "12",
+    "primary": "business-3-19"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC033ALP041EV-deferred.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "ABQ",
+    "primary": "business-4-17",
+    "secondary": "business-3-17"
+   },
+   {
+    "n": "1",
+    "primary": "business-0-12",
+    "secondary": "business-0-14"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-15",
+    "secondary": "business-3-18"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-15",
+    "secondary": "business-5-15"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-14",
+    "secondary": "business-0-13"
+   },
+   {
+    "n": "5",
+    "primary": "business-2-11",
+    "secondary": "business-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "business-3-16",
+    "secondary": "business-3-21"
+   },
+   {
+    "n": "7",
+    "primary": "business-3-19",
+    "secondary": "business-3-16"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-15",
+    "secondary": "business-4-16"
+   }
+  ]
  }
 ]

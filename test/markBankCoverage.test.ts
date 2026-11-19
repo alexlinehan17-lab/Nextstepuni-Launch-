@@ -20,7 +20,7 @@
  */
 import { describe, expect, it } from 'vitest';
 import { createHash } from 'node:crypto';
-import { readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 import baseline from '../scripts/markbank/coverage-baseline.json';
@@ -359,6 +359,9 @@ describe('Mark Bank paper-coverage ratchet', () => {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
+      // The deferred sittings' cards (deferred-authored.json), last, as reconcile.py reads them.
+      const deferred = resolve(__dirname, '..', 'components', 'MarkBank', 'cards', subject, 'deferred-authored.json');
+      if (existsSync(deferred)) h.update(readFileSync(deferred));
     }
     if (subject === 'french') {
       // Same files and order as reconcile.py's content hash, listening included.

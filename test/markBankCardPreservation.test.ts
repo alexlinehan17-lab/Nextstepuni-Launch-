@@ -199,6 +199,7 @@ import PE_FROZEN_MANIFEST from '../scripts/markbank/authored/physical-education.
 import businessOriginals from '../scripts/markbank/authored/business.json';
 import businessReviewed from '../components/MarkBank/cards/business/rubric-authored.json';
 import businessRoutePools from '../components/MarkBank/cards/business/route-pools.json';
+import businessDeferred from '../components/MarkBank/cards/business/deferred-authored.json';
 import { expandBusinessRoutePools } from '../components/MarkBank/cards/business/routes.mjs';
 import agriculturalReview from '../scripts/markbank/authored/agricultural-science-reviewed-tasks.json';
 import biologyReview from '../scripts/markbank/authored/biology-review-audit.json';
@@ -1510,9 +1511,11 @@ const peAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('pe-'
 // routes that did not exist before are tracked as explicit additions on top;
 // corrected legacy cards keep their IDs and stay inside the frozen hash.
 const businessOriginalIds = new Set(businessOriginals.map(card => card.id));
+// The deferred sittings' cards (deferred-authored.json) are additions too: new ids naming their sitting.
 const businessAdditionIds = new Set([
   ...businessReviewed.cards,
   ...expandBusinessRoutePools(businessRoutePools.pools),
+  ...businessDeferred.cards,
 ].map(card => card.id).filter(id => !businessOriginalIds.has(id)));
 // Engineering lane (2026-11-04 on): the 554 pre-lane cards stay frozen in the
 // deck pins; each sitting's added cards are listed in the lane's ledger
@@ -3265,14 +3268,15 @@ describe('Mark Bank card preservation', () => {
      * and the one differently marked 2013 route pool. Every
      * addition is a new, unique ID at its own level; none reuses an original
      * ID. */
-    expect(businessAdditionIds.size).toBe(1382);
+    // + the deferred sittings: 2022 Higher 55.
+    expect(businessAdditionIds.size).toBe(1382 + 55);
     const higher = BUSINESS_HIGHER.map(card => card.id);
     const ordinary = BUSINESS_ORDINARY.map(card => card.id);
     expect(new Set(higher).size).toBe(higher.length);
     expect(new Set(ordinary).size).toBe(ordinary.length);
     const higherAdditions = BUSINESS_HIGHER.filter(card => businessAdditionIds.has(card.id));
     const ordinaryAdditions = BUSINESS_ORDINARY.filter(card => businessAdditionIds.has(card.id));
-    expect(higherAdditions).toHaveLength(605);
+    expect(higherAdditions).toHaveLength(605 + 55);
     expect(ordinaryAdditions).toHaveLength(777);
     expect(higherAdditions.length + ordinaryAdditions.length).toBe(businessAdditionIds.size);
     for (const id of businessAdditionIds) {

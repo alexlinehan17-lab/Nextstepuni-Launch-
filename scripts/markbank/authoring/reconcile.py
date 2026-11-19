@@ -225,6 +225,12 @@ def shipped_cards(subject):
                 routes = json.loads(subprocess.check_output(['node', os.path.join(
                     ROOT, 'scripts/markbank/authoring/business_routes.mjs')], text=True))
                 by_id.update((card['id'], card['questionRef']) for card in routes)
+            # The deferred sittings' cards (business/add-<year>-<level>-deferred.py), in their own file.
+            deferred = os.path.join(DECKS, 'business', 'deferred-authored.json')
+            if os.path.exists(deferred):
+                data = json.load(open(deferred, encoding='utf-8'))
+                assert not data['pools'], 'Business deferred route pools need expanding here'
+                by_id.update((card['id'], card['questionRef']) for card in data['cards'])
             out = list(by_id.items())
     return out
 
@@ -748,7 +754,8 @@ def reconcile_subject(subject, census=None):
                 continue
             if hist_deferred:
                 ref['paper'] = 'Deferred'
-        if subject in ('economics', 'engineering', 'dcg', 'spanish', 'german', 'biology', 'physics', 'home-economics'):
+        if subject in ('economics', 'engineering', 'dcg', 'spanish', 'german', 'biology', 'physics', 'home-economics',
+                       'business'):
             # A deferred sitting is its own census paper, 'Deferred', and its
             # card says so twice: the id ("econ-2022-hl-deferred-...",
             # "eng-2022-hl-deferred-...", "dcg-2022-hl-deferred-...", "bio-2022-hl-deferred-...") and the
@@ -762,7 +769,8 @@ def reconcile_subject(subject, census=None):
                                       'german': r'^de-\d{4}-(?:hl|ol)-deferred-',
                                       'biology': r'^bio-\d{4}-(?:hl|ol)-deferred-',
                                       'physics': r'^phys-\d{4}-(?:hl|ol)-deferred-',
-                                      'home-economics': r'^he-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
+                                      'home-economics': r'^he-\d{4}-(?:hl|ol)-deferred-',
+                                      'business': r'^bus-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
             if deferred != (' — Deferred sitting' in refstr):
                 unparsed.append({'id': cid, 'ref': refstr})
                 continue
@@ -943,6 +951,8 @@ def content_hash(subject):
         # Reviewed rubric cards and printed routes are data, not literal cards.
         for name in ('rubric-authored.json', 'route-pools.json', 'routes.mjs', 'rubric.ts'):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
+        if os.path.exists(os.path.join(DECKS, subject, 'deferred-authored.json')):
+            h.update(open(os.path.join(DECKS, subject, 'deferred-authored.json'), 'rb').read())
     if subject == 'french':
         # answers.ts cuts the lifted answer lines into rows at load.
         for name in ('writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json', 'answers.ts'):
