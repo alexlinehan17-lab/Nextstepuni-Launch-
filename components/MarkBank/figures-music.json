@@ -1993,5 +1993,255 @@
   "md5": "3f8050f510ffea962b8594bddaa87111",
   "alt": "The three printed options (imitation, repetition, sequences), printed with Listening Q6(f) in the 2021 Higher Level paper, as the SEC set it.",
   "attribution": "SEC Leaving Certificate Music 2021 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q1-a-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q1-a-score.png",
+  "md5": "789a80c5b66c0e8ab044663703f84591",
+  "alt": "The three printed options (violins, violas, cellos and double basses), printed with Listening Q1(a) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q1-b-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q1-b-score.png",
+  "md5": "6ff949c736f0fba3c07fb5a36e5cc157",
+  "alt": "The two printed options (major, minor), printed with Listening Q1(b) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q1-c-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q1-c-score.png",
+  "md5": "444536f78c5f4d38ab791c241fd829b2",
+  "alt": "The three printed options (a countermelody on violin, on cello, on bassoon), printed with Listening Q1(c) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q1-e-i-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q1-e-i-score.png",
+  "md5": "8831f51fc6cd920d69daa88f80e5d3d9",
+  "alt": "The three printed options (a single melody line, a melody supported by harmony, two interweaving melodies), printed with Listening Q1(e)(i) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q1-e-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q1-e-ii-score.png",
+  "md5": "1e96aa8d817798d515065b62d731ad24",
+  "alt": "The three printed options (homophonic, polyphonic, monophonic), printed with Listening Q1(e)(ii) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q1-f-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q1-f-score.png",
+  "md5": "ecb09c6c2873cf01145a8f0ee84665f8",
+  "alt": "The three printed options (in unison, in harmony, in contrary motion), printed with Listening Q1(f) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q1-g-i-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q1-g-i-score.png",
+  "md5": "a37ba4aab4cfc989a5e71aae4ba013a3",
+  "alt": "The three printed options (get louder, get softer, play very loud), printed with Listening Q1(g)(i) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q1-g-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q1-g-ii-score.png",
+  "md5": "fb391ba7fcf02513258919ea71b74149",
+  "alt": "The three printed options (crescendo, diminuendo, fortissimo), printed with Listening Q1(g)(ii) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q1-h-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q1-h-score.png",
+  "md5": "8abd2714bedfea3b1ac014ce63ccb35e",
+  "alt": "The outline score of bars 1-4 with X marked over two notes in bar 3, printed with Listening Q1(h) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-scheme-p11-l-q1-h": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-scheme-p11-l-q1-h.png",
+  "md5": "8588678d18145275770db597d13bcb01",
+  "alt": "The marking scheme’s printed answer for Listening Q1(h): the notes printed on a treble stave, with its marking line and \"1+1\", cropped from page 11 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2021-OL-l-q1-i-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q1-i-score.png",
+  "md5": "10267a2d4de3bd7104e8a52a8bc5f5d8",
+  "alt": "The three printed options (Descending theme, idée fixe, March theme), printed with Listening Q1(i) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q1-l-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q1-l-score.png",
+  "md5": "c70aa7104bbc06dec569c77fef0da58b",
+  "alt": "The three printed options (Un Bal, Scène aux Champs, Marche au Supplice), printed with Listening Q1(l) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q2-a-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q2-a-score.png",
+  "md5": "81550b1b1c0041f300ed8e830a56d0cc",
+  "alt": "The three printed options (Main melody, Totentanz, Dies Irae), printed with Listening Q2(a) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q2-b-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q2-b-score.png",
+  "md5": "9ee188c74e0625965cc5790dd26777b1",
+  "alt": "The three printed options (marimba, piano, flute), printed with Listening Q2(b) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q2-d-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q2-d-score.png",
+  "md5": "07ba9f663151ccc2c1cbd315bfa18a54",
+  "alt": "The three printed options (triplets, syncopation, dotted rhythm), printed with Listening Q2(d) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q2-e-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q2-e-score.png",
+  "md5": "3941caad6769964b300ace469e9ae39d",
+  "alt": "The three printed answer boxes, labelled Canon, Subtraction principle and Inversion, printed with Listening Q2(e) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q3-a-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q3-a-score.png",
+  "md5": "86905dcb42be4e6f0c0dd184c79cfaef",
+  "alt": "The three printed options (rising scales, pizzicato, imitation), printed with Listening Q3(a) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q3-b-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q3-b-score.png",
+  "md5": "e0c0e1dd5792205685b06cec156ce81b",
+  "alt": "The three printed options (plagal, imperfect, perfect), printed with Listening Q3(b) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q3-d-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q3-d-score.png",
+  "md5": "ef813029298ab7ec1bcf8c3583fbd5e1",
+  "alt": "The three printed options (block chords, pizzicato strings, trills), printed with Listening Q3(d) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q3-e-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q3-e-score.png",
+  "md5": "fa2498b4e0340e2c733594822cad16a7",
+  "alt": "The three printed options (scales, rising arpeggios, repeated notes), printed with Listening Q3(e) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q4-a-i-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q4-a-i-score.png",
+  "md5": "fbb4acb85cad6628c9ff374e71f5bab6",
+  "alt": "The two printed options (major, minor), each with a box, printed with Listening Q4(a)(i) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q4-b-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q4-b-score.png",
+  "md5": "bc0e64d35d7d95ea5941666b1d7551b7",
+  "alt": "The printed lyrics (Lines 1-6) the ask refers to, down to the three printed options for (b), printed with Listening Q4(b) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q4-c-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q4-c-score.png",
+  "md5": "7496da244c0ba6d79cfe929b74306818",
+  "alt": "The printed lyrics (Lines 1-6), down to the three printed options for (c), printed with Listening Q4(c) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q4-d-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q4-d-score.png",
+  "md5": "77889a34acff3358a4f99b4d800a29eb",
+  "alt": "The three printed options (block chords, broken chords, sustained chords), printed with Listening Q4(d) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q4-e-i-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q4-e-i-score.png",
+  "md5": "950eca42cbf4bf37de1c0e23b4ef435e",
+  "alt": "The three printed options (classical music, rock music, jazz music), printed with Listening Q4(e)(i) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q5-a-i-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q5-a-i-score.png",
+  "md5": "831c99bbce2404fad3eb3c4bf614b6f1",
+  "alt": "The three printed options (a reel, a jig, a hornpipe), each with a box, printed with Listening Q5(a)(i) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q5-a-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q5-a-ii-score.png",
+  "md5": "ea819c20cc1e9dfe00943c59c05466ce",
+  "alt": "The three printed time signatures, each with a box, printed with Listening Q5(a)(ii) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-scheme-p16-l-q5-a-ii": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-scheme-p16-l-q5-a-ii.png",
+  "md5": "bb4b4340143395d5ef3159fbd88d42cf",
+  "alt": "The marking scheme’s printed answer for Listening Q5(a)(ii): the time signature printed as stacked figures, and its 2 marks, cropped from page 16 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2021-OL-l-q5-b-i-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q5-b-i-score.png",
+  "md5": "13001cb471c6d75f18fbf3d44e43ef61",
+  "alt": "The three printed options (a reel, a jig, a hornpipe), each with a box, printed with Listening Q5(b)(i) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q5-b-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q5-b-ii-score.png",
+  "md5": "c0f01a8ecfb9904607b10129f86c31f6",
+  "alt": "The three printed rhythms, each with a box, printed with Listening Q5(b)(ii) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-scheme-p16-l-q5-b-ii": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-scheme-p16-l-q5-b-ii.png",
+  "md5": "ff22dd2a481b233333348c7adc2260cd",
+  "alt": "The marking scheme’s printed answer for Listening Q5(b)(ii): the bar of rhythm printed in notation, and its 2 marks, cropped from page 16 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2021-OL-l-q5-c-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q5-c-score.png",
+  "md5": "fd44498b549cf0a422c71f42fc3b5d13",
+  "alt": "The three printed options (piano, flute, accordion), printed with Listening Q5(c) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q5-f-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q5-f-score.png",
+  "md5": "023cd48d5971d6521a8002d59755710d",
+  "alt": "The two printed options (AABB, ABBA), each with a box, printed with Listening Q5(f) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q5-g-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q5-g-score.png",
+  "md5": "ce591d6a52a549ecff967435a678df05",
+  "alt": "The two printed options (free rhythm, ornamentation), each with a box, printed with Listening Q5(g) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q6-a-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q6-a-score.png",
+  "md5": "7547e70b791f785d11422a51d4ac00b4",
+  "alt": "The three printed options (clarinet, oboe, trumpet), printed with Listening Q6(a) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q6-b-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q6-b-score.png",
+  "md5": "14683f877b56d87bcc2346ac253ec8cd",
+  "alt": "The three printed options (changes of speed, changes of key, changes of metre), printed with Listening Q6(b) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q6-d-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q6-d-score.png",
+  "md5": "4a6b56caadb525018ba75cf6ed34171b",
+  "alt": "The outline score of bars 1-7 with X over bar 4, and the three printed notated options, each with a box, printed with Listening Q6(d) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-scheme-p18-l-q6-d": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-scheme-p18-l-q6-d.png",
+  "md5": "5506f94f4ee3571adb22a506b5cb44e4",
+  "alt": "The marking scheme’s printed answer for Listening Q6(d): the missing notes printed on a treble stave, and their 3 marks, cropped from page 18 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2021-OL-l-q6-e-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q6-e-score.png",
+  "md5": "3f67eb8fbf1f75419dae04b8bd72bc43",
+  "alt": "The printed lyrics (Lines 1-9 and the instrumental section), down to the three printed options for (e), printed with Listening Q6(e) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q6-f-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q6-f-score.png",
+  "md5": "3286d5e03658cfaf8308b2336af14bcb",
+  "alt": "The printed lyrics (Lines 1-9), down to the three printed options for (f), printed with Listening Q6(f) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-OL-l-q6-g-score": {
+  "src": "/exam-figures/music/markbank/music-2021-OL-l-q6-g-score.png",
+  "md5": "01c14c36971555efcb0eb84c30bcc488",
+  "alt": "The three printed options (descending scales, descending arpeggios, block chords), printed with Listening Q6(g) in the 2021 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Ordinary Level examination paper — © State Examinations Commission"
  }
 }
