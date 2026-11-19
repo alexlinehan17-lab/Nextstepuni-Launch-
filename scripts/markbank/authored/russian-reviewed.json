@@ -167440,13 +167440,22 @@
       "component": "000",
       "guidancePages": [
         3
-      ]
+      ],
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          13,
+          14
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2011-hl.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
       "system": "language-writing",
       "taskRequirements": [],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",

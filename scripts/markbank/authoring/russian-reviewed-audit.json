@@ -4908,6 +4908,13 @@
           "Original p3 general wrong-language NO marks and p8 summary-specific weak-English/Russian-word discretion exception must both remain visible. No source-defined wholly/mixed threshold exists; joint-summary language assessment remains manual, without automatic multiplier or language flags.",
           "All four original Atlas questions must resolve to the shared card; retain the independent39-ask census and every pre-existing anchor."
         ]
+      },
+      "r4Recheck20261119": {
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2011-hl.json",
+        "cards": [
+          "ru-2011-hl-se"
+        ],
+        "releaseComplete": false
       }
     },
     {
