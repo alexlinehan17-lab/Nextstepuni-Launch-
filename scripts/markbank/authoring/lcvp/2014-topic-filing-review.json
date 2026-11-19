@@ -1,0 +1,867 @@
+{
+  "recordedAt": "2026-11-19T20:01:04.278815+00:00",
+  "sitting": "2014",
+  "status": "Review-only filing additions; no canonical or generated file changed",
+  "cards": 45,
+  "sourceCandidate": "/Users/alexlinehan/Documents/Nextstepuni-LCVP-Release-20261119/scripts/markbank/authored/lcvp.json",
+  "sourceCandidateSha256": "ec9b66c7f8df202949e864e01908503a43b94be73d5b5681b825fb60e6c30df6",
+  "thirdReaderDecision": {
+    "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/third-reader-decision.json",
+    "sha256": "ea60e4912e50f3a36222a1e5ff3f843188f59b74847e38c96fb6e098c448964a"
+  },
+  "comparisonFiles": [
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "sha256": "acf404ed5a873c9b7934d8fa8d8b99d7731e2f42da9dab5791647246e0ac24bc"
+    }
+  ],
+  "asks": {
+    "lcvp-2014-cl-a1": [
+      [
+        "link-modules-common-audio-visual"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-a2": [
+      [
+        "link-modules-common-audio-visual"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-a3": [
+      [
+        "link-modules-common-audio-visual"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-a4": [
+      [
+        "link-modules-common-audio-visual"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-a5": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-a6": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-a7": [
+      [
+        "link-modules-common-audio-visual"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-a8": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-b1": [
+      [
+        "link-modules-common-case-study"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-b2i": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-b2ii": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-b3i": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-b3ii": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-c1a": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c1b": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c1c": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c1c-2": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c1d": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c2a": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c2a-2": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c2b": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c2c": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c2c-2": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c2d": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c3a": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c3b": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c3c": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c3d": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c4a": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c4b": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c4c": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c4c-2": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c4d": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-c4d-2": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c5a": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c5a-2": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c5b": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c5ci": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c5cii": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c5di": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c5dii": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c6a": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c6b": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c6c": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c6d": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r1"
+    ]
+  },
+  "counts": {
+    "r2": 15,
+    "r3": 10,
+    "r1": 20
+  },
+  "items": [
+    {
+      "cardId": "lcvp-2014-cl-a1",
+      "headingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "Answer depends on the audiovisual enterprise sequence.",
+      "internalTopicId": "lcvp-link-modules-1-3",
+      "questionRef": "2014 CL Section A Q1",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-a2",
+      "headingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "Answer depends on the audiovisual enterprise sequence.",
+      "internalTopicId": "lcvp-link-modules-1-3",
+      "questionRef": "2014 CL Section A Q2",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-a3",
+      "headingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/third-reader-decision.json",
+      "reason": "Paper p3 Q3 asks how Aoife prepared for the presentation and scheme p2 pays 2 @ 1m only for what she did in the recording (rehearsed for three weeks, used her public-speaking awards, spoke with last year's class, prepared on her iPad), so it is recall of the audio-visual like the agreed Q1, Q2 and Q7.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2014 CL Section A Q3"
+    },
+    {
+      "cardId": "lcvp-2014-cl-a4",
+      "headingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/third-reader-decision.json",
+      "reason": "Paper p4 Q4 asks how the class intends to complete the costly project and scheme p2 pays 4 @ 1m for the class's own plans in the recording (free local contractor, the 'Second Helpings' pop-up shop, a unit from the shopping centre manager, parents' vans), recall rather than enterprise-activity content.",
+      "internalTopicId": "lcvp-link-modules-1-3",
+      "questionRef": "2014 CL Section A Q4"
+    },
+    {
+      "cardId": "lcvp-2014-cl-a5",
+      "headingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/third-reader-decision.json",
+      "reason": "Paper p4-5 Q5 asks how the class can ensure their charity shop appeals to teenagers and scheme p2 pays 4 marks for marketing the class enterprise (attractive name, reasonable prices, stock young people want, central location, research), an application of enterprise-activity marketing that a student can answer beyond the recording.",
+      "internalTopicId": "lcvp-link-modules-1-3",
+      "questionRef": "2014 CL Section A Q5"
+    },
+    {
+      "cardId": "lcvp-2014-cl-a6",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/third-reader-decision.json",
+      "reason": "Paper p5 Q6 asks the student to describe two planning skills the class showed and scheme p3 pays 2 @ 2m (0/2) for planning skills (research, negotiating, dividing work, rosters, stock control, marketing plan, anticipating issues), so the ask tests recognising planning skills, Enterprise Skills content.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2014 CL Section A Q6"
+    },
+    {
+      "cardId": "lcvp-2014-cl-a7",
+      "headingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "Answer depends on the audiovisual enterprise sequence.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2014 CL Section A Q7",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-a8",
+      "headingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/third-reader-decision.json",
+      "reason": "Paper p7 Q8 asks how the class should evaluate the project and scheme p3 pays 6 @ 1m for evaluation methods (review aims, class discussion, survey or SWOT, skills review, teacher's opinion), i.e. evaluating the class enterprise activity, filed with that activity as live 2016 Q2(d) and 2019 Q2(d)(ii) are.",
+      "internalTopicId": "lcvp-link-modules-1-3",
+      "questionRef": "2014 CL Section A Q8"
+    },
+    {
+      "cardId": "lcvp-2014-cl-b1",
+      "headingIds": [
+        "link-modules-common-case-study"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "Answer applies the printed Corobawn case study.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2014 CL Section B Q1",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-b2i",
+      "headingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-third-reader-decisions.md",
+      "reason": "Coordinator ruling 4: market research plans or evaluates an enterprise activity.",
+      "internalTopicId": "lcvp-link-modules-1-3",
+      "questionRef": "2014 CL Section B Q2(i)",
+      "previousReading": {
+        "cardId": "lcvp-2014-cl-b2i",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "how": "r3",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/third-reader-decision.json",
+        "reason": "Paper p10-11 Q2(i) asks why the festival committee surveyed visitors and scheme p4 pays 4 @ 2m (1+1) for the purposes of market research (reasons for visiting, planning, feedback, gaps, business plan, advertising spend), which tests market research, filed as the readers agreed for the 2013 Q5(b) and 2022 deferred Q7(a)-(b) market-research asks.",
+        "internalTopicId": "lcvp-link-modules-1-3",
+        "questionRef": "2014 CL Section B Q2(i)"
+      },
+      "coordinatorRuling": 4,
+      "rulingSha256": "fd17baac513eab4ec8e9e911a4f2fd93be002e683c57a5035a1a6a1679e2ed02",
+      "methodStatus": "Coordinator settled the subject-wide market-research inconsistency"
+    },
+    {
+      "cardId": "lcvp-2014-cl-b2ii",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/third-reader-decision.json",
+      "reason": "Paper p10-11 Q2(ii) asks how local businesses in Corobawn could promote themselves and scheme p4 pays promotion methods for those businesses (website, social media, special promotions, trade fairs, advertising), filed as live 2024 Q1(c)(ii) business promotion is.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2014 CL Section B Q2(ii)"
+    },
+    {
+      "cardId": "lcvp-2014-cl-b3i",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/third-reader-decision.json",
+      "reason": "Paper p11-12 Q3(i) asks how the committee can ensure meetings are effective and scheme p5 pays 4 @ 2m (1+1) for meeting skills (notice, agenda, minutes, chairperson, consensus, roles, listening), generic Enterprise Skills content rather than recall of the case.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2014 CL Section B Q3(i)"
+    },
+    {
+      "cardId": "lcvp-2014-cl-b3ii",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/third-reader-decision.json",
+      "reason": "Paper p11-12 Q3(ii) asks methods the committee could use to resolve its conflict and scheme p5 pays conflict-resolution methods (discussion and vote, strong chair, timeframe, sub-committees, outside facilitator, team building), teamwork content filed as the readers agreed for the 2010 Q5(d) class-disagreement ask.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2014 CL Section B Q3(ii)"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c1a",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2014 CL Section C Q1(a)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c1b",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2014 CL Section C Q1(b)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c1c",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "The two asks select relevant qualities/skills for the investigated career, then explain their relevance to that same career.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2014 CL Section C Q1(c)",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c1c-2",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "The two asks select relevant qualities/skills for the investigated career, then explain their relevance to that same career.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2014 CL Section C Q1(c) — relevance of qualities/skills",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c1d",
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-0-2",
+      "questionRef": "2014 CL Section C Q1(d)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c2a",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "Naming and outlining the work of the business visited are both about the local business investigation.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2014 CL Section C Q2(a)",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c2a-2",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "Naming and outlining the work of the business visited are both about the local business investigation.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2014 CL Section C Q2(a) — type of work",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c2b",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2014 CL Section C Q2(b)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c2c",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "The asks connect the selected Leaving Certificate subjects to organising the same business visit, an explicit part of the local-business investigation.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2014 CL Section C Q2(c)",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c2c-2",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "The asks connect the selected Leaving Certificate subjects to organising the same business visit, an explicit part of the local-business investigation.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2014 CL Section C Q2(c) — use of subjects",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c2d",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2014 CL Section C Q2(d)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c3a",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2014 CL Section C Q3(a)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c3b",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2014 CL Section C Q3(b)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c3c",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2014 CL Section C Q3(c)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c3d",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-0-0",
+      "questionRef": "2014 CL Section C Q3(d)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c4a",
+      "headingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-1-3",
+      "questionRef": "2014 CL Section C Q4(a)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c4b",
+      "headingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-1-3",
+      "questionRef": "2014 CL Section C Q4(b)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c4c",
+      "headingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "The part identifies the resources for the mini-company making plant pot holders and explains why those same resources are needed.",
+      "internalTopicId": "lcvp-link-modules-1-3",
+      "questionRef": "2014 CL Section C Q4(c)",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c4c-2",
+      "headingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "The part identifies the resources for the mini-company making plant pot holders and explains why those same resources are needed.",
+      "internalTopicId": "lcvp-link-modules-1-3",
+      "questionRef": "2014 CL Section C Q4(c) — reasons resources are needed",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c4d",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r3",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/third-reader-decision.json",
+      "reason": "Paper p25 Q4(d) first asks only 'Explain the term feedback' and scheme p10 pays 3 @ 1m for a general definition (information or advice after a task, positive or negative, to improve future performance), a generic evaluation term like the 2011 Q2(d)(i) 'what is meant by evaluation' ask both readers filed under Enterprise Skills; the activity-specific types of feedback stay with the agreed An Enterprise Activity card (c4d-2).",
+      "internalTopicId": "lcvp-link-modules-1-3",
+      "questionRef": "2014 CL Section C Q4(d)"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c4d-2",
+      "headingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "The part asks about the named career, enterprise or working-life activity.",
+      "internalTopicId": "lcvp-link-modules-1-3",
+      "questionRef": "2014 CL Section C Q4(d) — types of feedback",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c5a",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "Naming the chosen local voluntary organisation and outlining its work both concern that community enterprise.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2014 CL Section C Q5(a)",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c5a-2",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r2",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+      "reason": "Naming the chosen local voluntary organisation and outlining its work both concern that community enterprise.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2014 CL Section C Q5(a) — type of work",
+      "methodStatus": "two-independent-readers-agree"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c5b",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2014 CL Section C Q5(b)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c5ci",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2014 CL Section C Q5(c)(i)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c5cii",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2014 CL Section C Q5(c)(ii)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c5di",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2014 CL Section C Q5(d)(i)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c5dii",
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-1-2",
+      "questionRef": "2014 CL Section C Q5(d)(ii)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c6a",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2014 CL Section C Q6(a)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c6b",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2014 CL Section C Q6(b)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c6c",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2014 CL Section C Q6(c)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    },
+    {
+      "cardId": "lcvp-2014-cl-c6d",
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "how": "r1",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/filing-method-evidence/r1-evidence.json",
+      "reason": "The first reading, internal topic crosswalk and pre-existing main Atlas listing agree on one content heading.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2014 CL Section C Q6(d)",
+      "evidenceMainCommit": "21f14aa243a10a9ff2d4d3520ef4b24b6d0825a8",
+      "methodStatus": "Evidence agreement; not an independent second reading"
+    }
+  ],
+  "pending": [],
+  "limits": [
+    "All internal topic IDs, card IDs and concept IDs remain unchanged.",
+    "The coordinator’s market-research ruling is applied explicitly; the remaining recall/content consistency review is recorded separately.",
+    "These additions must be joined to the incoming canonical filing in the same commit as their new cards. Existing live filings are preserved."
+  ]
+}

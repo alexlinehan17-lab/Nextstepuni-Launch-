@@ -1,0 +1,297 @@
+{
+  "v": 1,
+  "subject": "lcvp",
+  "headingSource": "Topic Atlas exam-topic headings",
+  "groups": [
+    {
+      "id": "link-modules-common",
+      "level": "common",
+      "label": "Common Level",
+      "topics": [
+        "link-modules-common-1-career-investigation",
+        "link-modules-common-1-introduction-to-working-life",
+        "link-modules-common-1-job-seeking-skills",
+        "link-modules-common-1-work-placement",
+        "link-modules-common-2-an-enterprise-activity",
+        "link-modules-common-2-enterprise-skills",
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises",
+        "link-modules-common-audio-visual",
+        "link-modules-common-case-study"
+      ]
+    }
+  ],
+  "asks": {
+    "lcvp-2014-cl-a1": [
+      [
+        "link-modules-common-audio-visual"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-a2": [
+      [
+        "link-modules-common-audio-visual"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-a3": [
+      [
+        "link-modules-common-audio-visual"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-a4": [
+      [
+        "link-modules-common-audio-visual"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-a5": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-a6": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-a7": [
+      [
+        "link-modules-common-audio-visual"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-a8": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-b1": [
+      [
+        "link-modules-common-case-study"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-b2i": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-b2ii": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-b3i": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-b3ii": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-c1a": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c1b": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c1c": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c1c-2": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c1d": [
+      [
+        "link-modules-common-1-career-investigation"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c2a": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c2a-2": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c2b": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c2c": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c2c-2": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c2d": [
+      [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c3a": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c3b": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c3c": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c3d": [
+      [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c4a": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c4b": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c4c": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c4c-2": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c4d": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r3"
+    ],
+    "lcvp-2014-cl-c4d-2": [
+      [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c5a": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c5a-2": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r2"
+    ],
+    "lcvp-2014-cl-c5b": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c5ci": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c5cii": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c5di": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c5dii": [
+      [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c6a": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c6b": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c6c": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r1"
+    ],
+    "lcvp-2014-cl-c6d": [
+      [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "r1"
+    ]
+  },
+  "releaseScope": "Only the 45 new 2014 asks. The coordinator combines these with its separately reviewed 518 live-card filings before enabling the shared model."
+}

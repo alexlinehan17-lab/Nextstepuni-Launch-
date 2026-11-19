@@ -1,0 +1,31 @@
+{
+  "recordedAt": "2026-11-19T20:17:47.106486+00:00",
+  "base": "3949450502754f47f508c4c74d624d7cfe6e8058",
+  "asksCarded": 45,
+  "asksCountedFromOriginalSources": 45,
+  "existingCardsUnchanged": 518,
+  "newFilings": 45,
+  "filingMethods": {
+    "r1": 20,
+    "r2": 15,
+    "r3": 10
+  },
+  "localChecks": {
+    "sourceAndGeneration": "45 asks reproduced from original PDFs",
+    "focusedChecks": 275,
+    "coverageChecks": 3,
+    "paperTrailChecks": 3871,
+    "sourceOpenings": 45,
+    "browserCases": 68,
+    "visualFollowupCases": 24,
+    "typesAndScopedLint": "passed on this reviewed base"
+  },
+  "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release",
+  "outstanding": [
+    "One coordinated refresh onto the agreed current main; current-head checks",
+    "Combine new filings with the coordinator shared model and verify both directions",
+    "Fresh SEC archive recheck and hosted video integration/playback",
+    "Coordinator merge and production verification"
+  ],
+  "status": "Prepared sitting checkpoint; not merged or verified live"
+}
