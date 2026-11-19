@@ -1416,9 +1416,13 @@ const germanAddedTotal = [...Object.values(GERMAN_ADDED), ...Object.values(GERMA
 const POLISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 65, ordinary: 74 },
 };
-const POLISH_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {};
+const POLISH_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
+  2025: { higher: 38, ordinary: 0 },
+};
 const POLISH_ADDED_TO_FROZEN_ID = /^pl-202[1-5]-(?:hl|ol)-(?:l[a-e]-|b-)/;
-const POLISH_ADDED_TO_FROZEN_READING = new Set<string>([]);
+const POLISH_ADDED_TO_FROZEN_READING = new Set<string>([
+  'pl-2025-hl-a-2-a-ii', 'pl-2025-hl-a-2-h-i', 'pl-2025-hl-a-2-h-ii',
+]);
 const isPolishAdded = (id: string) => /^pl-\d{4}-/.test(id) && (Number(id.slice(3, 7)) in POLISH_ADDED
   || (Number(id.slice(3, 7)) in POLISH_ADDED_TO_FROZEN
     && (POLISH_ADDED_TO_FROZEN_ID.test(id) || POLISH_ADDED_TO_FROZEN_READING.has(id))));
