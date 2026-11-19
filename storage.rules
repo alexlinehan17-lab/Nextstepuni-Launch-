@@ -17,6 +17,12 @@ service firebase.storage {
       allow read: if true;
       allow write: if false;
     }
+    // The SEC's examination videos (LCVP Link Modules, mp4 and mov), hosted
+    // the same way.
+    match /video/{allPaths=**} {
+      allow read: if true;
+      allow write: if false;
+    }
     // Everything else in the bucket: no client access.
     match /{allPaths=**} {
       allow read, write: if false;

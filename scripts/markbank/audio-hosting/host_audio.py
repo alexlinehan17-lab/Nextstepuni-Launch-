@@ -75,17 +75,23 @@ PRIOR_RECORDS = [  # [{canonicalUrl, sha256}]
     os.path.join(LANES, "codex-continuation-20261106/audio-discovery/russian-recordings.json"),
 ]
 SEC_AUDIO = re.compile(
-    r"^https://www\.examinations\.ie/archive/(exampapers|deferredexams)/(\d{4})/([A-Za-z0-9]+\.mp3)$")
+    r"^https://www\.examinations\.ie/archive/(exampapers|deferredexams)/(\d{4})/([A-Za-z0-9]+\.(?:mp3|mp4|mov))$")
+CONTENT_TYPE = {"mp3": "audio/mpeg", "mp4": "video/mp4", "mov": "video/quicktime"}
+
+
+def extension(url_or_path):
+    return url_or_path.rsplit(".", 1)[-1].lower()
 
 
 def storage_path(url):
-    """The Storage object path for an SEC recording address (mirrors audioStorage.ts)."""
+    """The Storage object path for an SEC recording or video address (mirrors audioStorage.ts)."""
     m = SEC_AUDIO.match(url)
     if not m:
-        raise ValueError(f"not an SEC archive recording: {url}")
+        raise ValueError(f"not an SEC archive recording or video: {url}")
     view, year, fileid = m.groups()
-    name = re.sub(r"\.mp3$", "-deferred.mp3", fileid, flags=re.I) if view == "deferredexams" else fileid
-    return f"audio/{year}/{name}"
+    stem, ext = fileid.rsplit(".", 1)
+    name = f"{stem}-deferred.{ext}" if view == "deferredexams" else fileid
+    return f"{'audio' if ext == 'mp3' else 'video'}/{year}/{name}"
 
 
 def download_name(url):
@@ -161,14 +167,27 @@ def check_file(local, url, target):
     n, sha, md5 = digest(local)
     info = afinfo(local)
     with open(local, "rb") as fh:
-        head = fh.read(3)
+        head = fh.read(12)
     fileid = SEC_AUDIO.match(url).group(3)
     if fileid != target["fileid"]:
         problems.append(f"file id {fileid} != card file id {target['fileid']}")
-    if not (head == b"ID3" or (head[0] == 0xFF and head[1] & 0xE0 == 0xE0)):
-        problems.append(f"not an MPEG audio header: {head!r}")
-    if info["fileType"] != "MPG3" or info["durationSeconds"] < 60:
-        problems.append(f"afinfo: {info}")
+    if extension(url) in ("mp4", "mov"):
+        # MPEG-4 / QuickTime: a top-level atom first (ftyp, or moov/wide/mdat/
+        # free in older QuickTime). afinfo reads the sound track; a video with
+        # none falls back to Spotlight's duration for the whole file.
+        if head[4:8] not in (b"ftyp", b"moov", b"wide", b"mdat", b"free", b"skip"):
+            problems.append(f"not an MPEG-4/QuickTime header: {head!r}")
+        if not info["durationSeconds"]:
+            out = subprocess.run(["mdls", "-raw", "-name", "kMDItemDurationSeconds", local],
+                                 capture_output=True, text=True).stdout.strip()
+            info["durationSeconds"] = float(out) if re.fullmatch(r"[\d.]+", out) else 0.0
+        if info["durationSeconds"] < 10:
+            problems.append(f"duration: {info}")
+    else:
+        if not (head[:3] == b"ID3" or (head[0] == 0xFF and head[1] & 0xE0 == 0xE0)):
+            problems.append(f"not an MPEG audio header: {head[:3]!r}")
+        if info["fileType"] != "MPG3" or info["durationSeconds"] < 60:
+            problems.append(f"afinfo: {info}")
     return problems, n, sha, md5, info
 
 
@@ -231,7 +250,7 @@ def verify(log_path, targets_path):
             problems.append(f"bytes {n} != Content-Length {rec['contentLength']}")
         if sha != rec["sha256"]:
             problems.append("sha256 on disk != sha256 of the bytes received")
-        if (rec.get("contentType") or "").split(";")[0].strip() != "audio/mpeg":
+        if (rec.get("contentType") or "").split(";")[0].strip() != CONTENT_TYPE[extension(url)]:
             problems.append(f"SEC content type {rec.get('contentType')}")
         priors = refs.get(url, [])
         problems += [f"sha256 differs from the earlier fingerprint in {w}" for w, h in priors if h != sha]
@@ -315,7 +334,8 @@ def upload():
             f"secFileid={e['secFileid']}",
             f"sha256={e['sha256']}",
         ])
-        r = gcloud("storage", "cp", "--content-type", "audio/mpeg", "--cache-control", cache,
+        ctype = CONTENT_TYPE[extension(e["path"])]
+        r = gcloud("storage", "cp", "--content-type", ctype, "--cache-control", cache,
                    f"--custom-metadata={meta}", local, dest)
         if r.returncode != 0:
             failures.append(f"{e['path']}: gcloud cp failed: {r.stderr.strip()[-300:]}")
@@ -341,7 +361,7 @@ def upload():
             bad.append(f"size {got['size']} != {e['bytes']}")
         if got["md5Hash"] != e["md5"]:
             bad.append(f"md5 {got['md5Hash']} != {e['md5']}")
-        if got["contentType"] != "audio/mpeg":
+        if got["contentType"] != ctype:
             bad.append(f"content type {got['contentType']}")
         if got["cacheControl"] != cache:
             bad.append(f"cache control {got['cacheControl']}")

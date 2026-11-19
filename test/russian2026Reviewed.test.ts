@@ -97,18 +97,18 @@ describe('Russian 2026 Higher independent source review', () => {
       const card=REVIEWED_CARDS.find(card=>card.id===source.id);
       if(!card)throw new Error(`Missing reviewed Russian task ${source.id}`);
       const joint=reviewedRussianJointTask(source,card);
-      const questions=joint??[{n:source.id.replace(/^ru-\d+-[a-z]+-/,''),
+      const questions=joint??[{n:source.atlasQuestionKey??source.id.replace(/^ru-\d+-[a-z]+-/,''),
         questionPages:source.questionPages??source.paperPages,schemePages:source.schemePages}];
       const file=`${source.year}/${source.paperFileid}.json`;
       const map=JSON.parse(readFileSync(resolve(__dirname,'../public/paper-answers',file),'utf8'));
       for(const original of questions) {
         const matching=map.q.filter((q:{n:string})=>q.n===original.n);
-        expect(matching).toHaveLength(1);
+        expect(matching, `${source.id}/${original.n}`).toHaveLength(1);
         const question=matching[0];
         expect(question.paperRegion.map((region:{p:number})=>region.p)).toEqual(source.paperPages);
         expect(question.region.map((region:{p:number})=>region.p)).toEqual(original.schemePages);
         expect(question.pP).toBe(original.questionPages[0]);
-        if(joint)expect(question.markBankCardId).toBe(source.id);
+        if(joint || source.atlasQuestionKey)expect(question.markBankCardId).toBe(source.id);
         // A joint task's printed questions carry their own topics (as Codex's Russian branch reads them, 989a1a4).
         const topic = PAPER_TOPIC_TAGS.find(p=>p.subjectId==='russian'&&p.year===source.year&&p.fileid===source.paperFileid)?.q.find(q=>q.n===original.n);
         const ownTopics = original as { topicId?: string; additionalTopicIds?: string[] };
