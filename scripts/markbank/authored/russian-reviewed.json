@@ -94187,7 +94187,15 @@
       "component": "000",
       "guidancePages": [
         3
-      ]
+      ],
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          4
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -94365,7 +94373,7 @@
           ]
         }
       ],
-      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question. The scheme gives criteria for your own menu choices and no worked example. Select two courses from different menu sections and one drink. The two dish names carry 5 marks each and the drink name 3. No handwritten exemplar is supplied. The scheme’s English Text 1 heading gives 35 marks while its Irish heading gives 30; the priced subparts and original paper total 35."
+      "markingGuideNote": "The scheme prints no answer for this part. Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question. The scheme gives criteria for your own menu choices and no worked example. Select two courses from different menu sections and one drink. The two dish names carry 5 marks each and the drink name 3. No handwritten exemplar is supplied. The scheme’s English Text 1 heading gives 35 marks while its Irish heading gives 30; the priced subparts and original paper total 35."
     }
   },
   {
@@ -94406,7 +94414,15 @@
       "component": "000",
       "guidancePages": [
         3
-      ]
+      ],
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          4
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -94470,7 +94486,7 @@
           ]
         }
       ],
-      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question. The scheme gives criteria for your own menu choices and no worked example. Select two courses from different menu sections and one drink."
+      "markingGuideNote": "The scheme prints no answer for this part. Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question. The scheme gives criteria for your own menu choices and no worked example. Select two courses from different menu sections and one drink."
     }
   },
   {
@@ -94511,7 +94527,15 @@
       "component": "000",
       "guidancePages": [
         3
-      ]
+      ],
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          4
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -94536,7 +94560,7 @@
           ]
         }
       ],
-      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question. The scheme gives criteria for your own menu choices and no worked example. Select two courses from different menu sections and one drink. Four marks are for a correct bill; the general one-mark partial-answer rule is retained. No per-item price allocation is inferred."
+      "markingGuideNote": "The scheme prints no answer for this part. Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question. The scheme gives criteria for your own menu choices and no worked example. Select two courses from different menu sections and one drink. Four marks are for a correct bill; the general one-mark partial-answer rule is retained. No per-item price allocation is inferred."
     }
   },
   {
@@ -94577,7 +94601,15 @@
       "component": "000",
       "guidancePages": [
         3
-      ]
+      ],
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          4
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -94602,7 +94634,7 @@
           ]
         }
       ],
-      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question. The scheme gives criteria for your own menu choices and no worked example. Select two courses from different menu sections and one drink."
+      "markingGuideNote": "The scheme prints no answer for this part. Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question. The scheme gives criteria for your own menu choices and no worked example. Select two courses from different menu sections and one drink."
     }
   },
   {
@@ -96869,7 +96901,15 @@
       "schemePages": [
         5
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          5
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -96929,7 +96969,7 @@
           "guidance": []
         }
       ],
-      "markingGuideNote": "Find one example of each category in the original AVOR advertisement. The scheme supplies no closed answer list."
+      "markingGuideNote": "The scheme prints no answer for this part. Find one example of each category in the original AVOR advertisement. The scheme supplies no closed answer list."
     }
   },
   {
@@ -97317,7 +97357,15 @@
       "schemePages": [
         9
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          9
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -97462,7 +97510,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {
@@ -97495,7 +97543,16 @@
         10,
         11
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          10,
+          11
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -97671,7 +97728,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {

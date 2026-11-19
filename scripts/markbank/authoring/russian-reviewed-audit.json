@@ -3133,6 +3133,19 @@
         "sittingExcludedTasks": 0,
         "sittingOrphans": 0,
         "browserQa": "pending; browser host unavailable"
+      },
+      "r4Recheck20261119": {
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-ol.json",
+        "cards": [
+          "ru-2012-ol-sa",
+          "ru-2012-ol-ew",
+          "ru-2012-ol-ir1-iv-a",
+          "ru-2012-ol-ir1-iv-b",
+          "ru-2012-ol-ir1-iv-c",
+          "ru-2012-ol-ir1-iv-d",
+          "ru-2012-ol-la2"
+        ],
+        "releaseComplete": false
       }
     },
     {
