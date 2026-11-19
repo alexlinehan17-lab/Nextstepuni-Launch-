@@ -1,0 +1,72 @@
+{
+ "readingFile": "2026-hl.json",
+ "readBy": "second reader (Opus helper), 19 Nov 2026",
+ "method": "each string compared word for word with a 150 dpi render of the printed page",
+ "booklet": "examiner-reports/music/papers/2026-hl-008-paper.pdf",
+ "pagesRendered": [
+  10,
+  11
+ ],
+ "asks": [
+  {
+   "address": "Q3(c)(i)",
+   "page": 11,
+   "strings": [
+    "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (i) Flute in G",
+    "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.",
+    "Excerpt 2, played once more."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionText: punctuation. The page prints 'Identify the instrumental technique, [tremolo sign] , seen on the staves below, ...' (a comma, the printed tremolo sign, then a second comma before 'seen'; the text layer confirms 'technique,' and ', seen' as two runs). The file has 'Identify the instrumental technique, seen on the staves below, ...': the sign (an image) is left out, as the ask's notes record, and the comma after it is dropped with it. Every word of the stem otherwise matches."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext checked on page 10 (Question 3 opening); excerptLine 'Excerpt 2, played once more.' checked on page 11.",
+    "Second piece '(i) Flute in G' matches the printed sub-part label and instrument name ('Flute' / 'in G' on two lines for (i)).",
+    "Figure shows the (c) stem with its printed tremolo sign and the (i) Flute in G stave."
+   ]
+  },
+  {
+   "address": "Q3(c)(ii)",
+   "page": 11,
+   "strings": [
+    "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (ii) Cymbal",
+    "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.",
+    "Excerpt 2, played once more."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionText: punctuation. The page prints 'Identify the instrumental technique, [tremolo sign] , seen on the staves below, ...' (a comma, the printed tremolo sign, then a second comma before 'seen'; the text layer confirms 'technique,' and ', seen' as two runs). The file has 'Identify the instrumental technique, seen on the staves below, ...': the sign (an image) is left out, as the ask's notes record, and the comma after it is dropped with it. Every word of the stem otherwise matches."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext checked on page 10 (Question 3 opening); excerptLine 'Excerpt 2, played once more.' checked on page 11.",
+    "Second piece '(ii) Cymbal' matches the printed sub-part label and instrument name ('Flute' / 'in G' on two lines for (i)).",
+    "Figure shows this sub-part's label, instrument name and stave with the tremolo marks; the shared (c) stem and its printed sign sit in Q3(c)(i)'s figure, not this one."
+   ]
+  },
+  {
+   "address": "Q3(c)(iii)",
+   "page": 11,
+   "strings": [
+    "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (iii) Violin",
+    "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.",
+    "Excerpt 2, played once more."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionText: punctuation. The page prints 'Identify the instrumental technique, [tremolo sign] , seen on the staves below, ...' (a comma, the printed tremolo sign, then a second comma before 'seen'; the text layer confirms 'technique,' and ', seen' as two runs). The file has 'Identify the instrumental technique, seen on the staves below, ...': the sign (an image) is left out, as the ask's notes record, and the comma after it is dropped with it. Every word of the stem otherwise matches."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext checked on page 10 (Question 3 opening); excerptLine 'Excerpt 2, played once more.' checked on page 11.",
+    "Second piece '(iii) Violin' matches the printed sub-part label and instrument name ('Flute' / 'in G' on two lines for (i)).",
+    "Figure shows this sub-part's label, instrument name and stave with the tremolo marks; the shared (c) stem and its printed sign sit in Q3(c)(i)'s figure, not this one."
+   ]
+  }
+ ],
+ "resolutions": [
+  "Q3(c)(i)-(iii): the printed tremolo sign (an image) cannot be typed; every printed word is kept and each card now shows the printed stem, sign included, as its question (figure includesPrompt, from the stem down to that part's stave), so the student sees the SEC's print (lane lead, 19 Nov)."
+ ]
+}

@@ -93,19 +93,19 @@
     "refsHash": "4fef6e53e28af5ba"
   },
   "biology": {
-    "cards": 5540,
-    "contentHash": "33808b0a2e3ee089",
-    "coveragePct": 100.0,
-    "covered": 4928,
+    "cards": 5904,
+    "contentHash": "fd2115321a18ee7a",
+    "coveragePct": 89.5,
+    "covered": 5259,
     "excluded": 0,
-    "leaves": 4928,
-    "open": 0,
+    "leaves": 5876,
+    "open": 617,
     "orphans": 0,
     "papers": {
       "count": 50,
       "hash": "4fd05441da103297"
     },
-    "refsHash": "32a1d05fcfa8198c"
+    "refsHash": "214ae8bb950e8bd4"
   },
   "bulgarian": {
     "cards": 141,
@@ -303,19 +303,19 @@
     "refsHash": "f8c5b0fdc8cb31f7"
   },
   "english": {
-    "cards": 2685,
-    "contentHash": "267c86a433787b88",
+    "cards": 3105,
+    "contentHash": "b73aee3467467f8b",
     "coveragePct": 100.0,
-    "covered": 2685,
+    "covered": 3105,
     "excluded": 0,
-    "leaves": 2685,
+    "leaves": 3105,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 20,
       "hash": "5a9e0ab3f863aa4f"
     },
-    "refsHash": "0791d22855f00c38"
+    "refsHash": "2b0da202e5b95214"
   },
   "estonian": {
     "cards": 107,
@@ -603,19 +603,19 @@
     "refsHash": "98497719950dbd78"
   },
   "music": {
-    "cards": 46,
-    "contentHash": "8634bc5a8b03e0c0",
-    "coveragePct": 94.3,
-    "covered": 50,
+    "cards": 239,
+    "contentHash": "d44375a1adc74eed",
+    "coveragePct": 100.0,
+    "covered": 253,
     "excluded": 0,
-    "leaves": 53,
-    "open": 3,
+    "leaves": 253,
+    "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 3,
-      "hash": "a8e3a2545845e20d"
+      "count": 90,
+      "hash": "19ae47d97a6c3bd4"
     },
-    "refsHash": "c2ebc900e30e56ea"
+    "refsHash": "fa2a38deb6e15718"
   },
   "physical-education": {
     "cards": 772,
