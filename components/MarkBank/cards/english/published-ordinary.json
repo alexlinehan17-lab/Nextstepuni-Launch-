@@ -18873,8 +18873,11 @@
    ],
    "stem": "Comparative B · Theme",
    "schemePages": [
-    26
+    3,
+    23,
+    34
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "combined",
     "grid": "2024-ordinary-deferred",
@@ -18906,8 +18909,11 @@
    ],
    "stem": "Comparative B · Theme",
    "schemePages": [
-    26
+    3,
+    23,
+    34
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "combined",
     "grid": "2024-ordinary-deferred",
@@ -19041,8 +19047,11 @@
    ],
    "stem": "Comparative C · Social Setting",
    "schemePages": [
-    27
+    3,
+    23,
+    34
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "combined",
     "grid": "2024-ordinary-deferred",
@@ -19074,8 +19083,11 @@
    ],
    "stem": "Comparative C · Social Setting",
    "schemePages": [
-    27
+    3,
+    23,
+    34
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "combined",
     "grid": "2024-ordinary-deferred",

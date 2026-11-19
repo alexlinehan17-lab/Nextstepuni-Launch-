@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
 from pathlib import Path
 import re
 from urllib.parse import urlparse
@@ -323,11 +324,28 @@ def trace_scheme(record, text, pages):
     (None); extract_record refuses that wherever the answer map holds the task's own scheme block.
     """
     try:
-        return question_scheme_page(text, pages)
+        page, score = question_scheme_page(text, pages)
     except AssertionError:
         if record.get('sitting') != 'deferred':
             raise
         return None, 0
+    if record.get('sitting') == 'deferred' and not restated(text, pages[page]):
+        # A deferred scheme omits whole tasks, and a sibling's block shares a task's boilerplate
+        # ("… should demonstrate your knowledge and understanding of the poem"): two or three shared
+        # word sequences out of dozens are not the task restated.
+        return None, 0
+    return page, score
+
+
+def restated(text, page_text):
+    """The scheme page restates the task: at least 3, and at least a fifth, of its eight-word sequences
+    (a restatement can differ from the paper in a word or two, which costs at most eight sequences each)."""
+    words = comparable(text).split()
+    width = min(8, max(4, len(words)))
+    grams = [' '.join(words[index:index + width]) for index in range(max(1, len(words) - width + 1))]
+    page = comparable(page_text)
+    shared = sum(gram in page for gram in grams)
+    return shared >= max(3, math.ceil(.2 * len(grams)))
 
 
 def emit(record, key, section, value, marks, scheme_pages, *, source=None,

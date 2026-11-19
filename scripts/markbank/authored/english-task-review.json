@@ -71080,7 +71080,9 @@
       "schemeSha256": "2cff36cfe559ca5bf37c6808ccb82c587ef6a736366997defceac92757f119c9",
       "totalMarks": 15,
       "schemePages": [
-        26
+        3,
+        23,
+        34
       ],
       "generalCriteriaPages": [
         3,
@@ -71099,7 +71101,7 @@
         },
         "notes": "One global mark ex 15 from the 2024 OL deferred combined grid (PDF34, O1–O8), P+C and L+M read together."
       },
-      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF26: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grid PDF34). No invented splits or submarks."
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 15-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 15, P + C = 9, L + M = 6”), on PDF3’s criteria (C/L ≤ P) and the grid PDF34. No task-specific guidance exists to quote."
     },
     "english-2024-ol-deferred-p2-comparative-b-q2-a-ii": {
       "taskSha256": "f2e61ecdb18d714ddca55f0343fa0bd7e8cbb205afd5c10500285b92642a1646",
@@ -71107,7 +71109,9 @@
       "schemeSha256": "2cff36cfe559ca5bf37c6808ccb82c587ef6a736366997defceac92757f119c9",
       "totalMarks": 15,
       "schemePages": [
-        26
+        3,
+        23,
+        34
       ],
       "generalCriteriaPages": [
         3,
@@ -71126,7 +71130,7 @@
         },
         "notes": "One global mark ex 15 from the 2024 OL deferred combined grid (PDF34, O1–O8), P+C and L+M read together."
       },
-      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF26: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grid PDF34). No invented splits or submarks."
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 15-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 15, P + C = 9, L + M = 6”), on PDF3’s criteria (C/L ≤ P) and the grid PDF34. No task-specific guidance exists to quote."
     },
     "english-2024-ol-deferred-p2-comparative-b-q2-b": {
       "taskSha256": "018d26c73722b114b82c3c6ab6053c1d5ff58fbf811bfa4a8ac19ee02ce62e16",
@@ -71246,7 +71250,9 @@
       "schemeSha256": "2cff36cfe559ca5bf37c6808ccb82c587ef6a736366997defceac92757f119c9",
       "totalMarks": 15,
       "schemePages": [
-        27
+        3,
+        23,
+        34
       ],
       "generalCriteriaPages": [
         3,
@@ -71265,7 +71271,7 @@
         },
         "notes": "One global mark ex 15 from the 2024 OL deferred combined grid (PDF34, O1–O8), P+C and L+M read together."
       },
-      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF27: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grid PDF34). No invented splits or submarks."
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 15-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 15, P + C = 9, L + M = 6”), on PDF3’s criteria (C/L ≤ P) and the grid PDF34. No task-specific guidance exists to quote."
     },
     "english-2024-ol-deferred-p2-comparative-c-q2-a-ii": {
       "taskSha256": "10a66e29e0b2e770f71d766c76e495cbe5657f91cd2377ac2f5fe8dbfe3571b8",
@@ -71273,7 +71279,9 @@
       "schemeSha256": "2cff36cfe559ca5bf37c6808ccb82c587ef6a736366997defceac92757f119c9",
       "totalMarks": 15,
       "schemePages": [
-        27
+        3,
+        23,
+        34
       ],
       "generalCriteriaPages": [
         3,
@@ -71292,7 +71300,7 @@
         },
         "notes": "One global mark ex 15 from the 2024 OL deferred combined grid (PDF34, O1–O8), P+C and L+M read together."
       },
-      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF27: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grid PDF34). No invented splits or submarks."
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 15-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 15, P + C = 9, L + M = 6”), on PDF3’s criteria (C/L ≤ P) and the grid PDF34. No task-specific guidance exists to quote."
     },
     "english-2024-ol-deferred-p2-comparative-c-q2-b": {
       "taskSha256": "375dd94e40ff8aaaf1c418e7e05177bd22f829667ad5df3647f8c77480a5ffc5",
