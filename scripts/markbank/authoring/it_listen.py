@@ -435,6 +435,10 @@ def cards(year, level, refuse, row_for, concept_for):
 # a directive) cannot see it. Each option is a cut of the scheme's own line,
 # checked present in the scheme before it is used, never typed.
 OVERRIDES = {
+    # "Under 15 and (3) over 60 (3) years of age": two components priced
+    # inside one line, the line's last words after the second price.
+    (2025, 'hl', 3, 4): {'points': [('Under 15', 3), ('over 60', 3)],
+                         'note': ['Under 15 and (3) over 60 (3) years of age']},
     # "(Many) language schools (1) universities (1) have decided to use her
     # app (in their courses)" with its third "(1)" on a line of its own.
     (2026, 'hl', 2, 4): {'points': [('(Many) language schools', 1), ('universities', 1),

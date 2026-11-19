@@ -6506,4 +6506,1773 @@ export const CARDS: SecCard[] = [
           "presentationNote": "The task as the examination paper prints it."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-a-3-b", topicId: "italian-5-0", conceptId: "writer-prima-cominciare-sua-opera",
+    section: "A", questionRef: "2025 HL Section A Q3(b)",
+    questionText: "Cosa fa il writer prima di cominciare la sua opera?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prints \"Any three of 5 marks (0,1,3,5)*\": its scale gives 0, 1, 3, 5 marks for none, one, two and three answers.", group: {"claimMax":3,"perOption":2,"perOptionSteps":[1,2,2],"options":["Parte sempre da una immagine da fissare (nella mente)","In un preciso angolo della città","Ci passa davanti e","Pensa a come farlo, quanto grande, con che colori"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A",
+          "title": "Journalistic passage — answer in Italian",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-la-1", topicId: "italian-3-1", conceptId: "advertisement-about-holiday-accommodation",
+    section: "L", questionRef: "2025 HL Section LA Q1",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "The advertisement is about\n(a) a house for sale\n(b) a new leisure centre\n(c) a new library\n(d) holiday accommodation",
+    questionChoices: ["a house for sale","a new leisure centre","a new library","holiday accommodation"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "holiday accommodation", marks: 2, contextNote: "The scheme sets the right option in bold: (d)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-la-2", topicId: "italian-3-1", conceptId: "enrico-plant-nursery-his-apartment-building",
+    section: "L", questionRef: "2025 HL Section LA Q2",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "Enrico’s plant nursery is in\n(a) his apartment building\n(b) his back garden\n(c) the countryside\n(d) the suburbs",
+    questionChoices: ["his apartment building","his back garden","the countryside","the suburbs"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "his apartment building", marks: 2, contextNote: "The scheme sets the right option in bold: (a)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 2",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-la-3", topicId: "italian-3-1", conceptId: "advertisement-about-historical-train-routes",
+    section: "L", questionRef: "2025 HL Section LA Q3",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "The advertisement is about\n(a) airline discounts\n(b) cheaper mid-week bus fares\n(c) new ferry routes\n(d) historical train routes",
+    questionChoices: ["airline discounts","cheaper mid-week bus fares","new ferry routes","historical train routes"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "historical train routes", marks: 2, contextNote: "The scheme sets the right option in bold: (d)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 3",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-la-4", topicId: "italian-3-1", conceptId: "forecast-warm-winds-carrying-sand",
+    section: "L", questionRef: "2025 HL Section LA Q4",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "The forecast is for\n(a) cold northerly winds\n(b) snow\n(c) thunderstorms\n(d) warm winds carrying sand",
+    questionChoices: ["cold northerly winds","snow","thunderstorms","warm winds carrying sand"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "warm winds carrying sand", marks: 2, contextNote: "The scheme sets the right option in bold: (d)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 4",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-la-5", topicId: "italian-3-1", conceptId: "advertisement-about-home-appliances",
+    section: "L", questionRef: "2025 HL Section LA Q5",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "The advertisement is about\n(a) content creation\n(b) home appliances\n(c) the visual arts\n(d) translation courses",
+    questionChoices: ["content creation","home appliances","the visual arts","translation courses"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "home appliances", marks: 2, contextNote: "The scheme sets the right option in bold: (b)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 5",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-la-6", topicId: "italian-3-1", conceptId: "festival-promotes-sustainable-development",
+    section: "L", questionRef: "2025 HL Section LA Q6",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "The festival promotes\n(a) Italian cinema\n(b) Italian fashion\n(c) new music groups\n(d) sustainable development",
+    questionChoices: ["Italian cinema","Italian fashion","new music groups","sustainable development"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sustainable development", marks: 2, contextNote: "The scheme sets the right option in bold: (d)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 6",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-la-7", topicId: "italian-3-1", conceptId: "news-item-about-longevity-among-certain",
+    section: "L", questionRef: "2025 HL Section LA Q7",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "The news item is about\n(a) clean drinking water\n(b) inclusivity among teenagers\n(c) longevity among certain communities\n(d) river pollution",
+    questionChoices: ["clean drinking water","inclusivity among teenagers","longevity among certain communities","river pollution"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "longevity among certain communities", marks: 2, contextNote: "The scheme sets the right option in bold: (c)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 7",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-la-8", topicId: "italian-3-1", conceptId: "nova-gorica-gorizia-2025-european-capitals",
+    section: "L", questionRef: "2025 HL Section LA Q8",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "Nova Gorica and Gorizia are the 2025\n(a) Asian Capitals of Sport\n(b) European Capitals of Culture\n(c) European Capitals of Film\n(d) European Capitals of Music",
+    questionChoices: ["Asian Capitals of Sport","European Capitals of Culture","European Capitals of Film","European Capitals of Music"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "European Capitals of Culture", marks: 2, contextNote: "The scheme sets the right option in bold: (b)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 8",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb1-1", topicId: "italian-3-0", conceptId: "does-paola-like-about-maths-competition",
+    section: "L", questionRef: "2025 HL Section LB1 Q1",
+    stem: "Dialogue 1. Conversation between Paola and Giacomo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What does Paola like about the maths competition? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["(She likes it because) it is more stimulating / challenging than (doing maths) in class","You work (1) in teams / squads (1) / teamwork (2)","You meet new friends / make friends (2)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb1-2", topicId: "italian-3-0", conceptId: "category-did-paola-make-final",
+    section: "L", questionRef: "2025 HL Section LB1 Q2",
+    stem: "Dialogue 1. Conversation between Paola and Giacomo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "For which category did Paola make the final?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Individual / Solo / Girls / Female category", marks: 2, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb1-3", topicId: "italian-3-0", conceptId: "four-about-final",
+    section: "L", questionRef: "2025 HL Section LB1 Q3",
+    stem: "Dialogue 1. Conversation between Paola and Giacomo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Give four details about the final.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":4,"perOption":1,"options":["It was in May","There were 300 students (from all over Italy)","It took place during a whole weekend / during the weekend","At the beginning there was a bit of tension","There were fun moments","They met students / people / boys / girls from everywhere in Italy","They made friends / friendships with other boys / girls from other schools"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb1-4", topicId: "italian-3-0", conceptId: "provided-organisation-those-who-get-through",
+    section: "L", questionRef: "2025 HL Section LB1 Q4",
+    stem: "Dialogue 1. Conversation between Paola and Giacomo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What is provided by the organisation for those who get through to the international competition?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Travel / Trip / Food / Accommodation (2)", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-2", kind: "point", verbatim: "€100 voucher for a bookshop/books (4)", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb2-1", topicId: "italian-3-0", conceptId: "samuele-going-ireland-this-summer-full",
+    section: "L", questionRef: "2025 HL Section LB2 Q1",
+    stem: "Dialogue 2. Conversation between Samuele and Lisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Why is Samuele going to Ireland this summer? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["To escape from the hot weather (in Rome) (4m)","Temperatures in Ireland hardly ever go beyond 20 degrees (4m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb2-2", topicId: "italian-3-0", conceptId: "does-samuele-prefer-wexford-dublin",
+    section: "L", questionRef: "2025 HL Section LB2 Q2",
+    stem: "Dialogue 2. Conversation between Samuele and Lisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Why does Samuele prefer Wexford to Dublin?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":2,"options":["He wants to do water sports","He doesn’t like big cities / prefers the countryside","He prefers to be in touch with nature / he likes nature"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb2-3", topicId: "italian-3-0", conceptId: "does-samuele-say-about-mornings",
+    section: "L", questionRef: "2025 HL Section LB2 Q3",
+    stem: "Dialogue 2. Conversation between Samuele and Lisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What does Samuele say about the mornings?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "Four hours of classes", marks: 3, contextNote: "Answer in English or Irish." },
+    { id: "r-1-2", kind: "point", verbatim: "of grammar", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "conversation", marks: 1 },
+    { id: "r-1-4", kind: "point", verbatim: "(creative) writing", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb2-4", topicId: "italian-3-0", conceptId: "does-samuele-say-about-will-practise",
+    section: "L", questionRef: "2025 HL Section LB2 Q4",
+    stem: "Dialogue 2. Conversation between Samuele and Lisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What does Samuele say about how he will practise his English? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Spontaneously (1) with Irish (1) teenagers (1) who will participate in afternoon (1) activities (1)", marks: 4, contextNote: "The scheme prices this half of the ask separately, under the heading “Four elements required”. Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb3-1", topicId: "italian-3-0", conceptId: "about-citt-pedala",
+    section: "L", questionRef: "2025 HL Section LB3 Q1",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Give two details about Città Pedala.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["It is an initiative for bike lovers / passionate about bikes","It’s for those who want to cycle along the seaside promenade","It’s for those who want to enjoy the sea view without traffic","It’s a five km (cycle)","It’s a cycle from the old town to the beach"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb3-2", topicId: "italian-3-0", conceptId: "months-will-event-take-place",
+    section: "L", questionRef: "2025 HL Section LB3 Q2",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "In which months will the event take place?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "May, June and July", marks: 2, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb3-3", topicId: "italian-3-0", conceptId: "who-can-participate-event-full",
+    section: "L", questionRef: "2025 HL Section LB3 Q3",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Who can participate in the event? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Anyone who has a bike","Adults, young people, children","There are no age limits"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb3-4", topicId: "italian-3-0", conceptId: "who-can-partake-event-free-full",
+    section: "L", questionRef: "2025 HL Section LB3 Q4",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Who can partake in the event for free? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Under 15", marks: 3, contextNote: "Under 15 and (3) over 60 (3) years of age Answer in English or Irish." },
+    { id: "r-2", kind: "point", verbatim: "over 60", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb3-5", topicId: "italian-3-0", conceptId: "this-event-held-weekend-full",
+    section: "L", questionRef: "2025 HL Section LB3 Q5",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Why is this event held at the weekend? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["To reduce (2) the traffic (1) going to the beach / sea (1)","To give the opportunity to / Take advantage of / More people (2) those who are free at the weekend (2)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 5",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb3-6", topicId: "italian-3-0", conceptId: "about-event-organisers",
+    section: "L", questionRef: "2025 HL Section LB3 Q6",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Give two details about the event organisers.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["They are four friends","who have known each other since (primary) school","They travelled (together) by bike (1) to different parts of Italy / Europe / Turkey (1)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 6",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb3-7", topicId: "italian-3-0", conceptId: "services-does-association-offer",
+    section: "L", questionRef: "2025 HL Section LB3 Q7",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What services does the association offer?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["Bike hire / bikes for those who don’t have them / offer bikes (3)","Bike repair (3) (workshops)","(Group bike) tours (2) between May and October / to different parts of Italy (1)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 7",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
+    id: "it-2025-hl-lb3-8", topicId: "italian-3-0", conceptId: "languages-mentioned",
+    section: "L", questionRef: "2025 HL Section LB3 Q8",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Which languages are mentioned?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "English, French, Spanish, German", marks: 2, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 8",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Higher Level, pp.26-32 — © State Examinations Commission.",
+    id: "it-2025-hl-c-1-a", topicId: "italian-6-0", conceptId: "1-written-composition-linked-to-reading-comprehe",
+    section: "C", questionRef: "2025 HL Section C Q1(a)–(e)",
+    questionText: "1. Written composition linked to reading\ncomprehension (journalistic passage).\nAnswer any three of parts (a), (b), (c), (d),\n(e).\n(25 marks)\nNell’articolo si parla di graffiti e street art.\n(a) Come considerate i graffiti: arte o vandalismo? Spiegate perché.\n(b) Pensate che i graffiti possano avere una funzione positiva sui muri di una città? Perché?\n(c) Siete contrari ai graffiti sui monumenti come statue, chiese, palazzi antichi e musei?\n(d) Avreste interesse a partecipare ad un workshop per imparare ad eseguire graffiti e\n(e) Se poteste dipingere un graffito e murales nel vostro quartiere, cosa vi piacerebbe",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "1. Composition linked to the journalistic passage 25 marks",
+                "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [
+                            "Content and communication 15 marks",
+                            "3 points 4 marks each",
+                            "Introduction (0m, 2m)",
+                            "Conclusion (0m, 1m)"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 – 5",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Lacks coherence",
+                                        "Very confused argumentation",
+                                        "Communicative task not fulfilled",
+                                        "All irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "6 - 7",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Little coherence",
+                                        "Unclear argumentation",
+                                        "Communicative task barely fulfilled",
+                                        "Poor use of vocabulary",
+                                        "Mostly irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "8 – 10",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Adequate level of coherence",
+                                        "Argumentation not always clear",
+                                        "Elements of communicative task not always fulfilled and developed",
+                                        "Lack of vocabulary interferes at times with ability to complete task",
+                                        "A good deal of irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "11 – 12",
+                                  "marks": [11,12],
+                                  "guidance": [
+                                        "Reasonable level of coherence",
+                                        "Reasonably clear argumentation",
+                                        "Almost full completion of communicative task",
+                                        "Reasonable range of vocabulary",
+                                        "Little irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "13 – 15",
+                                  "marks": [13,14,15],
+                                  "guidance": [
+                                        "Good level of coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Good range of vocabulary",
+                                        "Appropriate use of idiomatic expressions",
+                                        "No irrelevant material"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [
+                            "Use the descriptors in Appendix 2"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 - 3",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very limited range of vocabulary, most verbs incorrect and many spelling",
+                                        "mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "4 - 6",
+                                  "marks": [4,5,6],
+                                  "guidance": [
+                                        "Adequate vocabulary, some incorrect verbs and agreements, and many spelling",
+                                        "mistakes."
+                                  ]
+                            },
+                            {
+                                  "label": "7 - 10",
+                                  "marks": [7,8,9,10],
+                                  "guidance": [
+                                        "Idiomatic Italian, good vocabulary, good grammatical accuracy and few spelling",
+                                        "mistakes."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Use the descriptors in Appendix 2"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Italian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Higher Level, pp.26-32 — © State Examinations Commission.",
+    id: "it-2025-hl-c-2", topicId: "italian-6-1", conceptId: "2-guided-composition-25-marks-use-any-six-of-the",
+    section: "C", questionRef: "2025 HL Section C Q2",
+    questionText: "2. Guided Composition.\n(25 marks)\nUse any six of the ideas listed below.\n• Domenica pomeriggio\n• evento beneficenza\n• fine anno scolastico\n• invitare parenti e amici\n• attività per adulti\n• giochi per bambini\n• bevande e cibo\n• premi per una lotteria\n• raccogliere soldi",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "2. Guided composition 25 marks",
+                "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [
+                            "Candidates must not produce something learnt off by heart and off the point.",
+                            "12 marks for points covered and well expanded for full marks.",
+                            "6 points (0,1,2)",
+                            "3 marks (0,1,2,3) for overall coherence"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 – 5",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Lacks coherence",
+                                        "Very confused argumentation",
+                                        "Communicative task not fulfilled",
+                                        "All irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "6 - 7",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Little coherence",
+                                        "Unclear argumentation",
+                                        "Communicative task barely fulfilled",
+                                        "Poor use of vocabulary",
+                                        "Mostly irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "8 – 10",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Adequate level of coherence",
+                                        "Argumentation not always clear",
+                                        "Elements of communicative task not always fulfilled and developed",
+                                        "Lack of vocabulary interferes at times with ability to complete task",
+                                        "A good deal of irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "11 – 12",
+                                  "marks": [11,12],
+                                  "guidance": [
+                                        "Reasonable level of coherence",
+                                        "Reasonably clear argumentation",
+                                        "Almost full completion of communicative task",
+                                        "Reasonable range of vocabulary",
+                                        "Little irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "13 – 15",
+                                  "marks": [13,14,15],
+                                  "guidance": [
+                                        "Good level of coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Good range of vocabulary",
+                                        "Appropriate use of idiomatic expressions",
+                                        "No irrelevant material"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [
+                            "Use the descriptors in Appendix 2"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 - 3",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very limited range of vocabulary, most verbs incorrect and many spelling",
+                                        "mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "4 - 6",
+                                  "marks": [4,5,6],
+                                  "guidance": [
+                                        "Adequate vocabulary, some incorrect verbs and agreements, and many spelling",
+                                        "mistakes."
+                                  ]
+                            },
+                            {
+                                  "label": "7 - 10",
+                                  "marks": [7,8,9,10],
+                                  "guidance": [
+                                        "Idiomatic Italian, good vocabulary, good grammatical accuracy and few spelling",
+                                        "mistakes."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Use the descriptors in Appendix 2"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Italian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Higher Level, pp.26-32 — © State Examinations Commission.",
+    id: "it-2025-hl-c-3-a", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-a",
+    section: "C", questionRef: "2025 HL Section C Q3(a)",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(a)\nLa famiglia italiana con cui avete soggiornato durante uno scambio linguistico vi ha invitato a\ntrascorrere una settimana nella loro casa estiva a Forte dei Marmi, ma non potete accettare.\nScrivete una lettera/un’e-mail alla Signora Polizzi in cui declinate il loro invito e: li ringraziate per\naver pensato a voi; spiegate i due motivi per cui non potete andare; parlate del meraviglioso\nperiodo che avete trascorso con loro l’anno scorso; condividete\nalcune notizie personali; suggerite di incontrarvi in un altro\nmomento quando sarete in Toscana alla fine dell’anno.\nNÓ / OR",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "3. Formal Writing 50 marks",
+                "In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7."
+          ],
+          "criteria": [
+                {
+                      "id": "format",
+                      "label": "Format",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [
+                            "Date 1 mark",
+                            "Address 2 marks (3 marks if candidate chooses email)",
+                            "Greeting 2 marks",
+                            "Closing formula 3m",
+                            "Final salutation 2m"
+                      ]
+                },
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 25,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+                      "guidance": [
+                            "• Correct register, full and appropriate greeting and endings, as per format, spelt correctly",
+                            "are required for full marks",
+                            "• Date and address are required for letter",
+                            "• Candidates are expected to make relevant points",
+                            "• Each point should be expanded and developed",
+                            "• Full name (e.g. Alex Murphy) must be provided (own name not required)",
+                            "(a) The following points to be covered",
+                            "i. Introduzione + Declinare invito 3m+2m",
+                            "ii. Ringraziare 2m",
+                            "iii. Due motivi 3m+3m",
+                            "iv. Un evento anno precedente con famiglia 3m",
+                            "v. Notizie personali (2 at least for full marking) 3m+3m",
+                            "vi. Proporre incontro l’anno prossimo 3m"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 – 9",
+                                  "marks": [0,1,2,3,4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Lacks coherence",
+                                        "Very confused argumentation",
+                                        "Communicative task not fulfilled",
+                                        "All irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "10 – 13",
+                                  "marks": [10,11,12,13],
+                                  "guidance": [
+                                        "Little coherence",
+                                        "Unclear argumentation",
+                                        "Communicative task barely fulfilled",
+                                        "Poor use of vocabulary",
+                                        "Mostly irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "14 – 17",
+                                  "marks": [14,15,16,17],
+                                  "guidance": [
+                                        "Adequate level of coherence",
+                                        "Argumentation not always clear",
+                                        "Elements of communicative task not always fulfilled and developed",
+                                        "Lack of vocabulary interferes at times with ability to complete task",
+                                        "A good deal of irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "18 – 20",
+                                  "marks": [18,19,20],
+                                  "guidance": [
+                                        "Reasonable level of coherence",
+                                        "Reasonably clear argumentation",
+                                        "Almost full completion of communicative task",
+                                        "Reasonable range of vocabulary",
+                                        "Little irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "21 – 25",
+                                  "marks": [21,22,23,24,25],
+                                  "guidance": [
+                                        "Good level of coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Good range of vocabulary",
+                                        "Appropriate use of idiomatic expressions",
+                                        "No irrelevant material"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [
+                            "Use the descriptors in Appendix 2"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 - 5",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Inappropriate/irrelevant vocabulary, most verbs incorrect, many spelling",
+                                        "mistakes."
+                                  ]
+                            },
+                            {
+                                  "label": "6 - 10",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Adequate vocabulary, some incorrect verbs and agreements, and some spelling",
+                                        "mistakes."
+                                  ]
+                            },
+                            {
+                                  "label": "11 - 15",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Correct topic related vocabulary, most verbs correct and few spelling mistakes."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Use the descriptors in Appendix 2"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Italian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Higher Level, pp.26-32 — © State Examinations Commission.",
+    id: "it-2025-hl-c-3-b", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-b",
+    section: "C", questionRef: "2025 HL Section C Q3(b)",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(b)\nAvete letto il seguente annuncio e avete deciso di fare domanda.\nScrivete all’Ufficio Selezione del Personale in Via della Libertà, n°17, 20122 Milano, oppure a\ninfo@viaggietribù.it, indicando per quale ruolo vi vorreste candidare, le caratteristiche che vi\nrendono particolarmente adatti/e a quel ruolo, l’esperienza lavorativa passata, la disponibilità\nSono iniziati i casting per animazione turistica per la prossima estate!\nLa ricerca è rivolta ad animatori con o senza esperienza di età compresa\ntra 18 e 25 anni e disponibilità di almeno 2 mesi durante la stagione\nSe per qualsiasi motivo pensate di avere le caratteristiche giuste (sportivi, estroversi ecc.) e\nvolete vivere con noi questa fantastica esperienza…\n…contattateci ora ed inviate la vostra candidatura!\nYou may use this page for extra work.\nMake sure to label extra work clearly with the\nYou may use this page for extra work.\nMake sure to label extra work clearly with the\nQ3 (a): https://www.toscanaovunquebella.it/en/forte-dei-marmi/the-return\nC3 (a): https://www.toscanaovunquebella.it/en/forte-dei-marmi/the-return\nHigher Level\nItalian\nMonday, 23 June\nMorning 9:30 – 12:00",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "3. Formal Writing 50 marks",
+                "In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7."
+          ],
+          "criteria": [
+                {
+                      "id": "format",
+                      "label": "Format",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [
+                            "Date 1 mark",
+                            "Address 2 marks (3 marks if candidate chooses email)",
+                            "Greeting 2 marks",
+                            "Closing formula 3m",
+                            "Final salutation 2m"
+                      ]
+                },
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 25,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+                      "guidance": [
+                            "• Correct register, full and appropriate greeting and endings, as per format, spelt correctly",
+                            "are required for full marks",
+                            "• Date and address are required for letter",
+                            "• Candidates are expected to make relevant points",
+                            "• Each point should be expanded and developed",
+                            "• Full name (e.g. Alex Murphy) must be provided (own name not required)",
+                            "(b) The following points to be covered",
+                            "i. Introduzione + Ruolo 3m+2m",
+                            "ii. 2 caratteristiche candidato ideale 4m+4m",
+                            "iii. Esperienza precedente 6m (1+1+4)",
+                            "iv. Disponibilità 2m",
+                            "v. Informazioni utili personali 2m+2m"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 – 9",
+                                  "marks": [0,1,2,3,4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Lacks coherence",
+                                        "Very confused argumentation",
+                                        "Communicative task not fulfilled",
+                                        "All irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "10 – 13",
+                                  "marks": [10,11,12,13],
+                                  "guidance": [
+                                        "Little coherence",
+                                        "Unclear argumentation",
+                                        "Communicative task barely fulfilled",
+                                        "Poor use of vocabulary",
+                                        "Mostly irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "14 – 17",
+                                  "marks": [14,15,16,17],
+                                  "guidance": [
+                                        "Adequate level of coherence",
+                                        "Argumentation not always clear",
+                                        "Elements of communicative task not always fulfilled and developed",
+                                        "Lack of vocabulary interferes at times with ability to complete task",
+                                        "A good deal of irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "18 – 20",
+                                  "marks": [18,19,20],
+                                  "guidance": [
+                                        "Reasonable level of coherence",
+                                        "Reasonably clear argumentation",
+                                        "Almost full completion of communicative task",
+                                        "Reasonable range of vocabulary",
+                                        "Little irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "21 – 25",
+                                  "marks": [21,22,23,24,25],
+                                  "guidance": [
+                                        "Good level of coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Good range of vocabulary",
+                                        "Appropriate use of idiomatic expressions",
+                                        "No irrelevant material"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [
+                            "Use the descriptors in Appendix 2"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 - 5",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Inappropriate/irrelevant vocabulary, most verbs incorrect, many spelling",
+                                        "mistakes."
+                                  ]
+                            },
+                            {
+                                  "label": "6 - 10",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Adequate vocabulary, some incorrect verbs and agreements, and some spelling",
+                                        "mistakes."
+                                  ]
+                            },
+                            {
+                                  "label": "11 - 15",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Correct topic related vocabulary, most verbs correct and few spelling mistakes."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Use the descriptors in Appendix 2"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Italian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Higher Level, pp.29-30 — © State Examinations Commission.",
+    id: "it-2025-hl-b3a-1", topicId: "italian-5-2", conceptId: "in-your-opinion-which-three-stories-best-succeed",
+    section: "B", questionRef: "2025 HL Section B3A Q1",
+    questionText: "In your opinion, which three stories best succeed in demonstrating Marcovaldo’s character? Explain the reasons for your choice of stories.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "B 3 Essay on prescribed text",
+                "Use the descriptors in Appendix 1"
+          ],
+          "criteria": [
+                {
+                      "id": "essay",
+                      "label": "Essay",
+                      "maxMarks": 60,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],
+                      "guidance": [
+                            "(51 - 60 marks)",
+                            "Answers the question fully",
+                            "Demonstrates excellent knowledge of text as a whole",
+                            "Accurate quotes/references to text in support of all points made",
+                            "No irrelevant material or repetition of points",
+                            "(42 - 50 marks)",
+                            "All points covered",
+                            "Demonstrates very good knowledge of text as a whole",
+                            "Makes ample accurate references to the text",
+                            "Some irrelevant material and some small repetition of points",
+                            "(33 - 41 marks)",
+                            "Answer not always fully developed or clear",
+                            "Demonstrates adequate knowledge of text as a whole",
+                            "Makes some references to the text, but they may be slightly vague or inaccurate",
+                            "Substantial irrelevant material and repetition of points.",
+                            "(24 - 32 marks)",
+                            "Argumentation unclear",
+                            "Some or little knowledge of text as a whole",
+                            "Below average answer of the question",
+                            "Makes little reference to the text",
+                            "A lot of irrelevant material and repetition of points",
+                            "(6 - 23 marks)",
+                            "Shows almost no knowledge of text",
+                            "No attempt at question asked",
+                            "No reference to the text",
+                            "All irrelevant material",
+                            "If individual point only:",
+                            "Excellent: up to 18 marks",
+                            "Excellent/extremely good point with no inaccuracies",
+                            "Well – developed: up to 16 marks",
+                            "Point fully covered and developed",
+                            "Better than average up to 14 marks",
+                            "Point made is reasonably developed",
+                            "Average: up to 12 marks",
+                            "Answer not always fully developed or clear",
+                            "Below average up to 10 marks",
+                            "Argumentation unclear some knowledge of text",
+                            "Poor: up to 8 marks",
+                            "Shows almost no knowledge of text",
+                            "Where an introduction is present 1m, 3m",
+                            "Where a conclusion is present 1m, 3m"
+                      ]
+                }
+          ],
+          "markingGuideNote": "Use the descriptors in Appendix 1"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Higher Level, pp.29-30 — © State Examinations Commission.",
+    id: "it-2025-hl-b3a-2", topicId: "italian-5-2", conceptId: "the-children-in-marcovaldo-are-portrayed-as-inno",
+    section: "B", questionRef: "2025 HL Section B3A Q2",
+    questionText: "The children in Marcovaldo are portrayed as innocent. Discuss this statement identifying three stories which best support your answer.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "B 3 Essay on prescribed text",
+                "Use the descriptors in Appendix 1"
+          ],
+          "criteria": [
+                {
+                      "id": "essay",
+                      "label": "Essay",
+                      "maxMarks": 60,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],
+                      "guidance": [
+                            "(51 - 60 marks)",
+                            "Answers the question fully",
+                            "Demonstrates excellent knowledge of text as a whole",
+                            "Accurate quotes/references to text in support of all points made",
+                            "No irrelevant material or repetition of points",
+                            "(42 - 50 marks)",
+                            "All points covered",
+                            "Demonstrates very good knowledge of text as a whole",
+                            "Makes ample accurate references to the text",
+                            "Some irrelevant material and some small repetition of points",
+                            "(33 - 41 marks)",
+                            "Answer not always fully developed or clear",
+                            "Demonstrates adequate knowledge of text as a whole",
+                            "Makes some references to the text, but they may be slightly vague or inaccurate",
+                            "Substantial irrelevant material and repetition of points.",
+                            "(24 - 32 marks)",
+                            "Argumentation unclear",
+                            "Some or little knowledge of text as a whole",
+                            "Below average answer of the question",
+                            "Makes little reference to the text",
+                            "A lot of irrelevant material and repetition of points",
+                            "(6 - 23 marks)",
+                            "Shows almost no knowledge of text",
+                            "No attempt at question asked",
+                            "No reference to the text",
+                            "All irrelevant material",
+                            "If individual point only:",
+                            "Excellent: up to 18 marks",
+                            "Excellent/extremely good point with no inaccuracies",
+                            "Well – developed: up to 16 marks",
+                            "Point fully covered and developed",
+                            "Better than average up to 14 marks",
+                            "Point made is reasonably developed",
+                            "Average: up to 12 marks",
+                            "Answer not always fully developed or clear",
+                            "Below average up to 10 marks",
+                            "Argumentation unclear some knowledge of text",
+                            "Poor: up to 8 marks",
+                            "Shows almost no knowledge of text",
+                            "Where an introduction is present 1m, 3m",
+                            "Where a conclusion is present 1m, 3m"
+                      ]
+                }
+          ],
+          "markingGuideNote": "Use the descriptors in Appendix 1"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Higher Level, pp.29-30 — © State Examinations Commission.",
+    id: "it-2025-hl-b3b-1", topicId: "italian-5-2", conceptId: "laurana-s-investigation-is-both-a-successful-and",
+    section: "B", questionRef: "2025 HL Section B3B Q1",
+    questionText: "Laurana’s investigation is both a successful and unsuccessful one. Do you agree with this statement? Explain your answer with reference to the novel.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "B 3 Essay on prescribed text",
+                "Use the descriptors in Appendix 1"
+          ],
+          "criteria": [
+                {
+                      "id": "essay",
+                      "label": "Essay",
+                      "maxMarks": 60,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],
+                      "guidance": [
+                            "(51 - 60 marks)",
+                            "Answers the question fully",
+                            "Demonstrates excellent knowledge of text as a whole",
+                            "Accurate quotes/references to text in support of all points made",
+                            "No irrelevant material or repetition of points",
+                            "(42 - 50 marks)",
+                            "All points covered",
+                            "Demonstrates very good knowledge of text as a whole",
+                            "Makes ample accurate references to the text",
+                            "Some irrelevant material and some small repetition of points",
+                            "(33 - 41 marks)",
+                            "Answer not always fully developed or clear",
+                            "Demonstrates adequate knowledge of text as a whole",
+                            "Makes some references to the text, but they may be slightly vague or inaccurate",
+                            "Substantial irrelevant material and repetition of points.",
+                            "(24 - 32 marks)",
+                            "Argumentation unclear",
+                            "Some or little knowledge of text as a whole",
+                            "Below average answer of the question",
+                            "Makes little reference to the text",
+                            "A lot of irrelevant material and repetition of points",
+                            "(6 - 23 marks)",
+                            "Shows almost no knowledge of text",
+                            "No attempt at question asked",
+                            "No reference to the text",
+                            "All irrelevant material",
+                            "If individual point only:",
+                            "Excellent: up to 18 marks",
+                            "Excellent/extremely good point with no inaccuracies",
+                            "Well – developed: up to 16 marks",
+                            "Point fully covered and developed",
+                            "Better than average up to 14 marks",
+                            "Point made is reasonably developed",
+                            "Average: up to 12 marks",
+                            "Answer not always fully developed or clear",
+                            "Below average up to 10 marks",
+                            "Argumentation unclear some knowledge of text",
+                            "Poor: up to 8 marks",
+                            "Shows almost no knowledge of text",
+                            "Where an introduction is present 1m, 3m",
+                            "Where a conclusion is present 1m, 3m"
+                      ]
+                }
+          ],
+          "markingGuideNote": "Use the descriptors in Appendix 1"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC013ALP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Higher Level, pp.29-30 — © State Examinations Commission.",
+    id: "it-2025-hl-b3b-2", topicId: "italian-5-2", conceptId: "discuss-what-role-religion-plays-in-the-novel-a-",
+    section: "B", questionRef: "2025 HL Section B3B Q2",
+    questionText: "Discuss what role religion plays in the novel A ciascuno il suo.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "B 3 Essay on prescribed text",
+                "Use the descriptors in Appendix 1"
+          ],
+          "criteria": [
+                {
+                      "id": "essay",
+                      "label": "Essay",
+                      "maxMarks": 60,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],
+                      "guidance": [
+                            "(51 - 60 marks)",
+                            "Answers the question fully",
+                            "Demonstrates excellent knowledge of text as a whole",
+                            "Accurate quotes/references to text in support of all points made",
+                            "No irrelevant material or repetition of points",
+                            "(42 - 50 marks)",
+                            "All points covered",
+                            "Demonstrates very good knowledge of text as a whole",
+                            "Makes ample accurate references to the text",
+                            "Some irrelevant material and some small repetition of points",
+                            "(33 - 41 marks)",
+                            "Answer not always fully developed or clear",
+                            "Demonstrates adequate knowledge of text as a whole",
+                            "Makes some references to the text, but they may be slightly vague or inaccurate",
+                            "Substantial irrelevant material and repetition of points.",
+                            "(24 - 32 marks)",
+                            "Argumentation unclear",
+                            "Some or little knowledge of text as a whole",
+                            "Below average answer of the question",
+                            "Makes little reference to the text",
+                            "A lot of irrelevant material and repetition of points",
+                            "(6 - 23 marks)",
+                            "Shows almost no knowledge of text",
+                            "No attempt at question asked",
+                            "No reference to the text",
+                            "All irrelevant material",
+                            "If individual point only:",
+                            "Excellent: up to 18 marks",
+                            "Excellent/extremely good point with no inaccuracies",
+                            "Well – developed: up to 16 marks",
+                            "Point fully covered and developed",
+                            "Better than average up to 14 marks",
+                            "Point made is reasonably developed",
+                            "Average: up to 12 marks",
+                            "Answer not always fully developed or clear",
+                            "Below average up to 10 marks",
+                            "Argumentation unclear some knowledge of text",
+                            "Poor: up to 8 marks",
+                            "Shows almost no knowledge of text",
+                            "Where an introduction is present 1m, 3m",
+                            "Where a conclusion is present 1m, 3m"
+                      ]
+                }
+          ],
+          "markingGuideNote": "Use the descriptors in Appendix 1"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
 ];

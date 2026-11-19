@@ -2143,7 +2143,7 @@ const technologyAdditions = {
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
 } as const;
 const italianAdditions = {
-  higher: [ITALIAN_HIGHER, 67, 'c55c0e8c933d23f8288990984d7b9fdbceffdb405c5322967653b163d3d4b429'],
+  higher: [ITALIAN_HIGHER, 100, 'c16743fee5bc75a2d2f3cd1321aa014d332998322a58a59805a802f431522d24'],
   ordinary: [ITALIAN_ORDINARY, 64, 'c3f786a59f9be680cb2344eda9e18077b2242cb3c2c336ba0e5322cd4c1b29fe'],
 } as const;
 const dcgAdditions = {
@@ -2237,7 +2237,9 @@ describe('Mark Bank card preservation', () => {
     // census reads (reconcile.py italian), a printed choice one card:
     // 2026 Higher 67 cards for its 71 asks (Section C Q1's five prompts, of
     // which a candidate answers three, are one card); 2026 Ordinary 64 for its
-    // 70 (the matching task's eight items are two cards of four).
+    // 70 (the matching task's eight items are two cards of four); 2025 Higher
+    // 33 for the 37 asks its 33 live reading cards left out (listening 24,
+    // writing 8 asks on 4 cards, essays 4, and A Q3(b) on its printed scale).
     const additions = cards.map(card => card.id).filter(isItalianAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
