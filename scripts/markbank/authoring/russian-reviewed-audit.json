@@ -3395,6 +3395,15 @@
         "targetedLint": "passed",
         "productionBuild": "passed",
         "requiredTestRunNote": "419/420 passed initially; missing 2010 hosted answer registrations corrected, then all8 anchor/source cases passed on targeted rerun. No scoring exemption."
+      },
+      "r4Recheck20261119": {
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-ol.json",
+        "cards": [
+          "ru-2010-ol-sa",
+          "ru-2010-ol-ew",
+          "ru-2010-ol-la1"
+        ],
+        "releaseComplete": false
       }
     },
     {

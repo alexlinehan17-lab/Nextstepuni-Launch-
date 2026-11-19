@@ -108743,7 +108743,15 @@
       "schemePages": [
         4
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          4
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -108793,7 +108801,7 @@
           "guidance": []
         }
       ],
-      "markingGuideNote": "Find one example of each category. The scheme explicitly accepts appropriate English words and supplies no closed answer list."
+      "markingGuideNote": "The scheme prints no answer for this part. Find one example of each category. The scheme explicitly accepts appropriate English words and supplies no closed answer list."
     }
   },
   {
@@ -109282,7 +109290,15 @@
       "schemePages": [
         9
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          9
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -109427,7 +109443,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {
@@ -109459,7 +109475,15 @@
       "schemePages": [
         10
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          10
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -109580,7 +109604,7 @@
           ]
         }
       ],
-      "markingGuideNote": "The scheme prints 4 x 6 marks for each choice, with half of each available mark for the required function/information and half for language manipulation, plus 6 for coherence. These two 12-mark totals summarise that allocation; they do not create extra credit for additional material. No content/expression quality-band descriptors or a new four-slot mapping for the book review are supplied."
+      "markingGuideNote": "The scheme prints no answer for this part. The scheme prints 4 x 6 marks for each choice, with half of each available mark for the required function/information and half for language manipulation, plus 6 for coherence. These two 12-mark totals summarise that allocation; they do not create extra credit for additional material. No content/expression quality-band descriptors or a new four-slot mapping for the book review are supplied."
     }
   },
   {

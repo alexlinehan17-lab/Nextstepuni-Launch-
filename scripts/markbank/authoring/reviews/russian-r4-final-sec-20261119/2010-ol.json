@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-11-19T12:26:39.932129+00:00",
+  "archive": {
+    "year": 2010,
+    "level": "ol",
+    "url": "https://www.examinations.ie/archive/markingschemes/2010/LC099GLP000EV.pdf",
+    "filename": "Russian-2010-ol-SEC-fresh-20261119.pdf",
+    "pages": 16,
+    "downloadDone": true,
+    "downloadConfirmation": "Chrome history shows exact completed file and source URL with Show in Finder.",
+    "checkedAt": "2026-11-19T12:10:32.660Z",
+    "bytes": 108873,
+    "sha256": "a9fa632484624a15aab956313b463260948d60ae1deaeb4f6344ef4dff2da67e",
+    "retainedSha256": "a9fa632484624a15aab956313b463260948d60ae1deaeb4f6344ef4dff2da67e",
+    "exactMatch": true,
+    "freshDownloadVerified": true,
+    "localFile": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/stale-exclusions-20261119/sec-recheck/2010-ol.pdf"
+  },
+  "cards": [
+    {
+      "id": "ru-2010-ol-sa",
+      "printedMarks": 30,
+      "schemePages": [
+        9
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2010-ol.pdf",
+      "schemeSha256": "a9fa632484624a15aab956313b463260948d60ae1deaeb4f6344ef4dff2da67e",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-ol.json",
+      "finding": "The scheme supplies marking instructions or a grid but no answer for this task.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2010-ol-ew",
+      "printedMarks": 30,
+      "schemePages": [
+        10
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2010-ol.pdf",
+      "schemeSha256": "a9fa632484624a15aab956313b463260948d60ae1deaeb4f6344ef4dff2da67e",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-ol.json",
+      "finding": "The scheme supplies marking instructions or a grid but no answer for this task.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2010-ol-la1",
+      "printedMarks": 4,
+      "schemePages": [
+        4
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2010-ol.pdf",
+      "schemeSha256": "a9fa632484624a15aab956313b463260948d60ae1deaeb4f6344ef4dff2da67e",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-ol.json",
+      "finding": "The scheme supplies marking instructions or a grid but no answer for this task.",
+      "fixedLine": "The scheme prints no answer for this part."
+    }
+  ],
+  "otherFindings": [],
+  "sourceReview": "All relevant scheme pages read in full as original-page images and extracted text; examples distinguished from prompts. Original downloaded PDF matches the retained source exactly.",
+  "rule": "R4; CARD-STANDARD sections3,5 and10a",
+  "sourceBranch": "wip/russian-2026-11-19",
+  "liveCardsChanged": false,
+  "mainAtReview": "dd70ba43d6bc87dbe293b72d1b52c1cabdfcabf0"
+}

@@ -116205,7 +116205,7 @@
           "guidance": []
         }
       ],
-      "markingGuideNote": "Find one example of each category. The scheme explicitly accepts appropriate English words and supplies no closed answer list."
+      "markingGuideNote": "The scheme prints no answer for this part. Find one example of each category. The scheme explicitly accepts appropriate English words and supplies no closed answer list."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000EV",
@@ -116228,7 +116228,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -116893,7 +116893,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000EV",
@@ -116916,7 +116916,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -117060,7 +117060,7 @@
           ]
         }
       ],
-      "markingGuideNote": "The scheme prints 4 x 6 marks for each choice, with half of each available mark for the required function/information and half for language manipulation, plus 6 for coherence. These two 12-mark totals summarise that allocation; they do not create extra credit for additional material. No content/expression quality-band descriptors or a new four-slot mapping for the book review are supplied."
+      "markingGuideNote": "The scheme prints no answer for this part. The scheme prints 4 x 6 marks for each choice, with half of each available mark for the required function/information and half for language manipulation, plus 6 for coherence. These two 12-mark totals summarise that allocation; they do not create extra credit for additional material. No content/expression quality-band descriptors or a new four-slot mapping for the book review are supplied."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000EV",
@@ -117083,7 +117083,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
