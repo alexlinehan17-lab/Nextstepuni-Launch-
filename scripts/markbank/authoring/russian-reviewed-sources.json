@@ -26966,7 +26966,7 @@
     "id": "ru-2010-hl-la1",
     "year": 2010,
     "level": "higher",
-    "questionRef": "2010 HL Section LA1",
+    "questionRef": "2010 HL Section LA1 Q1(i)",
     "topicId": "russian-3-2",
     "paperFileid": "LC099ALP000EV.pdf",
     "schemeFileid": "LC099ALP000EV.pdf",
@@ -26983,13 +26983,14 @@
       5
     ],
     "reviewedAt": "2026-11-19",
+    "splitEvidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json",
     "noPrintedAnswer": {
       "fixedLine": "The scheme prints no answer for this part.",
       "schemePages": [
         5,
         6
       ],
-      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-hl.json"
+      "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json"
     }
   },
   {
@@ -33317,6 +33318,161 @@
         7
       ],
       "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2012-hl.json"
+    }
+  },
+  {
+    "id": "ru-2010-hl-la1-1-ii",
+    "year": 2010,
+    "level": "higher",
+    "questionRef": "2010 HL Section LA1 Q1(ii)",
+    "topicId": "russian-3-2",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      5
+    ],
+    "schemePages": [
+      5,
+      6
+    ],
+    "component": "000",
+    "questionPages": [
+      5
+    ],
+    "reviewedAt": "2026-11-19",
+    "splitEvidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        5,
+        6
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json"
+    }
+  },
+  {
+    "id": "ru-2010-hl-la1-2-i",
+    "year": 2010,
+    "level": "higher",
+    "questionRef": "2010 HL Section LA1 Q2(i)",
+    "topicId": "russian-3-2",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      5
+    ],
+    "schemePages": [
+      5,
+      6
+    ],
+    "component": "000",
+    "questionPages": [
+      5
+    ],
+    "reviewedAt": "2026-11-19",
+    "splitEvidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        5,
+        6
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json"
+    }
+  },
+  {
+    "id": "ru-2010-hl-la1-2-ii",
+    "year": 2010,
+    "level": "higher",
+    "questionRef": "2010 HL Section LA1 Q2(ii)",
+    "topicId": "russian-3-2",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      5
+    ],
+    "schemePages": [
+      5,
+      6
+    ],
+    "component": "000",
+    "questionPages": [
+      5
+    ],
+    "reviewedAt": "2026-11-19",
+    "splitEvidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        5,
+        6
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json"
+    }
+  },
+  {
+    "id": "ru-2010-hl-la1-3",
+    "year": 2010,
+    "level": "higher",
+    "questionRef": "2010 HL Section LA1 Q3",
+    "topicId": "russian-3-2",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      5
+    ],
+    "schemePages": [
+      5,
+      6
+    ],
+    "component": "000",
+    "questionPages": [
+      5
+    ],
+    "reviewedAt": "2026-11-19",
+    "splitEvidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        5,
+        6
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json"
+    }
+  },
+  {
+    "id": "ru-2010-hl-la1-4",
+    "year": 2010,
+    "level": "higher",
+    "questionRef": "2010 HL Section LA1 Q4",
+    "topicId": "russian-3-2",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      5
+    ],
+    "schemePages": [
+      5,
+      6
+    ],
+    "component": "000",
+    "questionPages": [
+      5
+    ],
+    "reviewedAt": "2026-11-19",
+    "splitEvidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        5,
+        6
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json"
     }
   }
 ]

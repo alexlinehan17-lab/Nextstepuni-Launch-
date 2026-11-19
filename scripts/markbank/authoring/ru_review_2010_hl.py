@@ -536,6 +536,9 @@ def build():
     assert city['tariffModel']['kind']=='fixed' and city['rows'][0]['marks']==4 and city['rows'][0]['unprinted']
     assert sum(c['totalMarks'] for c in cards if c is not city)==296
     assert 'answerLanguageRule' not in next(c for c in cards if c['section']=='LA1')
+    from ru_language_part_split import split_language_parts
+    cards = split_language_parts(cards, source, 2010)
+    assert len(cards) == 43
     for doc in docs.values():doc.close()
     return cards
 

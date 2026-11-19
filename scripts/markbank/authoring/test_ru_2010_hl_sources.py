@@ -10,6 +10,7 @@ import ru_2010_hl_fonts as fonts
 from reconcile import parse_ref
 from ru_review_2010_hl import build,source_records
 from ru_review_census import reviewed_keys
+from ru_no_answer import annotate_no_answers
 from ru_verify_review import verify,normal,verify_automatic_award_sources
 
 ROOT=Path(__file__).resolve().parents[3]
@@ -18,7 +19,7 @@ ROOT=Path(__file__).resolve().parents[3]
 class Original2010HigherSources(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.cards=build();cls.docs,cls.source=source_records()
+        cls.cards=annotate_no_answers(build());cls.docs,cls.source=source_records()
 
     @classmethod
     def tearDownClass(cls):
@@ -26,12 +27,12 @@ class Original2010HigherSources(unittest.TestCase):
 
     def get(self,suffix):return copy.deepcopy(next(c for c in self.cards if c['id']=='ru-2010-hl-'+suffix))
 
-    def test_all_38_independently_reviewed_asks_have_original_source_claims(self):
+    def test_all_43_independently_reviewed_asks_have_original_source_claims(self):
         verify(self.cards);keys=set()
         for card in self.cards:
             ref=parse_ref(card['questionRef']);self.assertIsNotNone(ref)
             keys.update((ref['section'],ref['q'],letter,roman) for letter,roman in ref['paths'])
-        self.assertEqual(keys,reviewed_keys(2010,'hl'));self.assertEqual(len(keys),38)
+        self.assertEqual(keys,reviewed_keys(2010,'hl'));self.assertEqual(len(keys),43)
         self.assertEqual(sum(c['totalMarks'] for c in self.cards if c['id']!='ru-2010-hl-l1-1-i'),296)
         self.assertEqual(self.source['sourceLeafTotalIncludesDerivedMissingAnswerMarks'],4)
 
@@ -70,18 +71,21 @@ class Original2010HigherSources(unittest.TestCase):
             with self.assertRaises(AssertionError):fonts.scheme_page(self.docs['scheme'],5)
 
     def test_all_six_prompts_original_story_and_specific_language_allowance_survive(self):
-        c=self.get('la1');record=next(r for r in self.source['tasks'] if r['unit']=='LA1')
+        record=next(r for r in self.source['tasks'] if r['unit']=='LA1')
+        parts=[self.get(x) for x in ['la1','la1-1-ii','la1-2-i','la1-2-ii','la1-3','la1-4']]
         self.assertEqual(len(record['printedPrompts']),6)
-        self.assertEqual(c['sourceMaterial']['pages'],[2,5])
-        for prompt in record['printedPrompts']:
-            self.assertIn(normal(prompt),normal(c['questionText']))
+        for card,prompt in zip(parts,record['printedPrompts']):
+            self.assertEqual(card['sourceMaterial']['pages'],[2,5])
+            self.assertEqual(card['totalMarks'],2)
+            self.assertIn(normal(prompt),normal(card['questionText']))
             self.assertIn(normal(prompt),normal(self.docs['paper'][4].get_text()))
-        criteria=c['rubric']['criteria'];self.assertEqual([x['permittedMarks'] for x in criteria],[[0,2],[0,2],[0,2],[2],[0,2],[0,2]])
-        self.assertEqual(criteria[3]['id'],'section2-dative-plural')
-        self.assertNotIn('answerLanguageRule',c)
-        self.assertIn('translated and supplied in English OR', ' '.join(c['rubric']['taskRequirements']))
+            self.assertNotIn('answerLanguageRule',card)
+            self.assertIn('translated and supplied in English OR',' '.join(card['rubric']['taskRequirements']))
+        criteria=[c['rubric']['criteria'][0] for c in parts]
+        self.assertEqual([x['permittedMarks'] for x in criteria],[[0,2],[0,2],[0,2],[2],[0,2],[0,2]])
+        c=parts[3];self.assertEqual(criteria[3]['id'],'section2-dative-plural')
         verify_automatic_award_sources(self.docs['scheme'],c)
-        c['rubric']['criteria'][3]['automaticAward']['schemePages']=[6]
+        c['rubric']['criteria'][0]['automaticAward']['schemePages']=[6]
         with self.assertRaises(AssertionError):verify_automatic_award_sources(self.docs['scheme'],c)
 
     def test_infinitive_question_contains_worked_example_and_five_actual_prompts(self):
@@ -100,19 +104,21 @@ class Original2010HigherSources(unittest.TestCase):
         self.assertEqual(c['questionText'],record['question']);self.assertEqual(c['questionRef'],'2010 HL Section L1 Q1(i)')
         self.assertEqual(c['totalMarks'],4);self.assertEqual(record['derivedTotalBasis']['detailCount'],2)
         self.assertEqual(record['derivedTotalBasis']['marksPerDetail'],2)
-        self.assertEqual(c['tariffModel'],{'kind':'questionTotal'});self.assertEqual(len(c['rows']),1)
-        self.assertEqual(c['rows'][0]['verbatim'],self.source['listeningGuidance']);self.assertIsNone(c['rows'][0]['marks'])
-        self.assertIn('derived',c['rows'][0]['contextNote']);self.assertIn('not a separately printed task total',c['rows'][0]['contextNote'])
+        self.assertEqual(c['tariffModel'],{'kind':'fixed'});self.assertEqual(len(c['rows']),1)
+        self.assertEqual(c['rows'][0]['verbatim'],'The scheme prints no answer for this part.');self.assertEqual(c['rows'][0]['marks'],4)
+        self.assertTrue(c['rows'][0]['unprinted']);self.assertEqual(c['rows'][0]['permittedMarks'],[0,2,4])
+        self.assertIn(self.source['listeningGuidance'],c['rows'][0]['contextNote'])
+        self.assertIn('derived',c['rows'][0]['contextNote']);self.assertIn('no separate task total is printed',c['rows'][0]['contextNote'])
         self.assertNotIn('answerLanguageRule',c)
         all_text=' '.join(p.get_text() for p in self.docs['scheme'])
         self.assertEqual(all_text.count('Yaroslavl'),1)
         self.assertIn(normal(record['question']),normal(self.docs['aural'][1].get_text()))
 
-    def test_missing_city_is_confidence_only_with_original_audio_and_derived_total(self):
+    def test_missing_city_is_scored_with_original_audio_and_derived_total(self):
         c=self.get('l1-1-i');self.verify_missing_city(c);self.assertIsNotNone(c['audioMaterial'])
 
     def test_borrowed_city_answer_or_invented_numeric_row_is_rejected(self):
-        for update in [{'verbatim':'The city has one thousand years of history.'},{'marks':4}]:
+        for update in [{'verbatim':'The city has one thousand years of history.'},{'marks':5}]:
             c=self.get('l1-1-i');c['rows'][0].update(update)
             with self.assertRaises(AssertionError):self.verify_missing_city(c)
 

@@ -16,27 +16,31 @@ const row=(group:string,id='full',value=1)=>({[languageGroupId(group)]:1,[langua
 afterEach(cleanup);
 
 describe('Russian 2010 Higher original-source tasks',()=>{
-  it('represents all 38 original asks and the derived four-mark city task',()=>{
-    expect(sitting).toHaveLength(38);expect(sitting.filter(c=>!tariffReconciles(c)).map(c=>c.id)).toEqual([]);
+  it('represents all 43 original asks and the derived four-mark city task',()=>{
+    expect(sitting).toHaveLength(43);expect(sitting.filter(c=>!tariffReconciles(c)).map(c=>c.id)).toEqual([]);
     expect(sitting.filter(c=>c.id!=='ru-2010-hl-l1-1-i').reduce((s,c)=>s+c.totalMarks,0)).toBe(296);
     expect(sitting.filter(c=>c.audioMaterial)).toHaveLength(18);
     expect(sitting.filter(c=>c.audioMaterial).reduce((s,c)=>s+c.totalMarks,0)).toBe(80);
-    expect(sources.filter(s=>s.year===2010&&s.level==='higher')).toHaveLength(38);
+    expect(sources.filter(s=>s.year===2010&&s.level==='higher')).toHaveLength(43);
   });
 
-  it('keeps all six LA1 prompts and awards the fixed two for blank, saved zero, reset and invalid saved values',()=>{
-    const c=writing('la1'),fixed='section2-dative-plural';
-    expect(c.sourceMaterial?.pages).toEqual([2,5]);expect(c.rubric.criteria).toHaveLength(6);
-    expect(c.rubric.criteria.map(k=>k.permittedMarks)).toEqual([[0,2],[0,2],[0,2],[2],[0,2],[0,2]]);
-    expect(c.answerLanguageRule).toBeUndefined();
-    expect(c.rubric.taskRequirements.join(' ')).toContain('translated and supplied in English OR');
+  it('splits six printed LA1 prompts and retains the universal award only on its own task',()=>{
+    const parts=['la1','la1-1-ii','la1-2-i','la1-2-ii','la1-3','la1-4'].map(writing);
+    expect(parts.map(c=>c.totalMarks)).toEqual([2,2,2,2,2,2]);
+    expect(parts.every(c=>c.sourceMaterial?.pages.join(',')==='2,5'&&c.rubric.criteria.length===1)).toBe(true);
+    expect(parts.map(c=>c.rubric.criteria[0].permittedMarks)).toEqual([[0,2],[0,2],[0,2],[2],[0,2],[0,2]]);
+    expect(parts.map(c=>languageMarks(c,{}))).toEqual([0,0,0,2,0,0]);
+    const c=writing('la1-2-ii'),fixed='section2-dative-plural';
     for(const scores of [{},...[0,1,2,99,-1].map(value=>({[languageScoreId(fixed)]:value}))])expect(languageMarks(c,scores)).toBe(2);
-    const all=Object.fromEntries(c.rubric.criteria.filter(k=>!k.automaticAward).map(k=>[languageScoreId(k.id),2]));
-    expect(languageMarks(c,all)).toBe(12);expect(languageMarks(c,{})).toBe(2);
+    for(const part of parts){
+      expect(part.answerLanguageRule).toBeUndefined();
+      expect(part.rubric.taskRequirements.join(' ')).toContain('translated and supplied in English OR');
+      expect(part.rubric.markingGuideNote).toContain('The scheme prints no answer for this part.');
+    }
   });
 
   it('renders the actual universal-award source without a manual claim control',()=>{
-    const c=writing('la1');render(<LanguageRubricPanel card={c} scores={{}} onScore={vi.fn()}/>);
+    const c=writing('la1-2-ii');render(<LanguageRubricPanel card={c} scores={{}} onScore={vi.fn()}/>);
     const fixed=c.rubric.criteria.find(k=>k.automaticAward)!;
     const section=screen.getByRole('heading',{name:fixed.label}).closest('section')!;
     expect(within(section).getByText('2 marks awarded to all candidates')).toBeVisible();
@@ -46,12 +50,12 @@ describe('Russian 2010 Higher original-source tasks',()=>{
   });
 
   it.each([false,true])('saves the actual source award for blank LA1 in paper layout=%s',async paperLayout=>{
-    const c=writing('la1'),onGrade=vi.fn();
+    const c=writing('la1-2-ii'),onGrade=vi.fn();
     render(<SessionScreen paperLayout={paperLayout} cards={[c]} subjectLabel="Russian" onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()}/>);
     fireEvent.click(screen.getByRole('button',{name:'Reveal the marking scheme'}));
     await waitFor(()=>expect(screen.getByText('2 marks awarded to all candidates')).toBeVisible());
     fireEvent.click(screen.getByRole('button',{name:'Got it'}));
-    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({cardId:c.id,marksClaimed:2,marksAvailable:12}));
+    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({cardId:c.id,marksClaimed:2,marksAvailable:2}));
   });
 
   it('retains seven cultural slots with the two traditional/two modern requirement and only the named one-mark partial',()=>{
