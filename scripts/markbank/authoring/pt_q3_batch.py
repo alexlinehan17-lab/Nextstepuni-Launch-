@@ -3,6 +3,7 @@
 
     python3 scripts/markbank/authoring/pt_q3_batch.py review 2026 hl
     python3 scripts/markbank/authoring/pt_q3_batch.py write 2026 hl
+    python3 scripts/markbank/authoring/pt_q3_batch.py add 2023 ol   # a held ask, since unblocked
 
 On the Polish pattern (pl_q3_batch.py). The live 2021-2025 cards were written
 by the shared generator (eu_all.py), which no longer reproduces all of them
@@ -52,7 +53,10 @@ def generated():
     return _GENERATED
 
 
-def sitting_cards(year, level):
+def sitting_cards(year, level, present='raise'):
+    """The sitting's cards not yet in the bank. present='raise' refuses a
+    card whose id is already there; present='skip' (the add command) leaves
+    it out, but only if it regenerates byte for byte as it stands."""
     import pt_specs
     with open(AUTHORED, encoding='utf-8') as fh:
         authored = json.load(fh)
@@ -74,7 +78,14 @@ def sitting_cards(year, level):
     if dup:
         raise ValueError(f'{year} {level}: duplicate new ids {dup}')
     clash = [i for i in ids if i in have]
-    if clash:
+    if clash and present == 'skip':
+        by_id = {c['id']: c for c in authored}
+        drift = [c['id'] for c in new if c['id'] in have
+                 and json.dumps(c, sort_keys=True) != json.dumps(by_id[c['id']], sort_keys=True)]
+        if drift:
+            raise ValueError(f'{year} {level}: cards in the bank no longer regenerate as they stand {drift}')
+        new = [c for c in new if c['id'] not in have]
+    elif clash:
         raise ValueError(f'{year} {level}: new ids already live {clash}')
     order = {k: i for i, k in enumerate(['A', 'B', 'LA', 'LB', 'LC', 'LD', 'LE'])}
 
@@ -116,6 +127,31 @@ def write(year, level):
         at = max((i for i, c in enumerate(authored) if c['level'] == lv and c['year'] < year),
                  default=len(authored) - 1)
     out = authored[:at + 1] + new + authored[at + 1:]
+    with open(AUTHORED, 'w', encoding='utf-8') as fh:
+        json.dump(out, fh, ensure_ascii=False, indent=1)
+        fh.write('\n')
+    return new
+
+
+def add(year, level):
+    """Add the cards a sitting already in the bank still lacks (an ask held
+    and since unblocked). Each goes straight after the last card of its
+    sitting that comes before it in paper order, so the lane's cards stay in
+    paper order after the live ones; no card already there moves or changes."""
+    authored, new = sitting_cards(year, level, present='skip')
+    lv = LEVEL_WORD[level]
+    order = {k: i for i, k in enumerate(['A', 'B', 'LA', 'LB', 'LC', 'LD', 'LE'])}
+    import pt_specs
+
+    def place(c):
+        key = pt_specs.parse_key(_spec_key(c))
+        return (order.get(key[0], 99), key[1], key[2] or '', key[3] or '')
+    out = list(authored)
+    for c in new:
+        mine = [i for i, x in enumerate(out) if x['year'] == year and x['level'] == lv]
+        before = [i for i in mine if place(out[i]) < place(c)]
+        at = max(before) if before else (min(mine) - 1 if mine else len(out) - 1)
+        out.insert(at + 1, c)
     with open(AUTHORED, 'w', encoding='utf-8') as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)
         fh.write('\n')
@@ -225,6 +261,10 @@ def main():
         write_filings(new)
         for r in write_tags(year, level):
             print(f"  atlas {r['fileid']} {r['paperKey']}: {[q['n'] + ' ' + q['primary'] for q in r['q']]}")
+    elif cmd == 'add':
+        new = add(year, level)
+        print(f'{year} {level}: {len(new)} cards added to {AUTHORED}: {[c["id"] for c in new]}')
+        write_filings(new)
     elif cmd == 'tags':
         for r in write_tags(year, level):
             print(f"  atlas {r['fileid']} {r['paperKey']}: {[q['n'] + ' ' + q['primary'] for q in r['q']]}")

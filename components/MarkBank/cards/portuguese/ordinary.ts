@@ -1151,6 +1151,31 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC018GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
+    id: "por-2023-ol-a-2-a", topicId: "portuguese-2-3", conceptId: "quando-trotinetas-chegaram-lisboa",
+    section: "A", questionRef: "2023 OL Section A Q2(a)",
+    stem: "Questão 2 – Leia este texto e responda às perguntas.",
+    questionText: "Quando as trotinetas chegaram a Lisboa? (parágrafo 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2018", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 2 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                6,
+                7
+          ],
+          "attribution": "SEC Portuguese 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-a-2-h", topicId: "portuguese-2-3", conceptId: "filipe-opinion-electric-scooters-should-definitely",
     section: "A", questionRef: "2023 OL Section A Q2(h)",
     stem: "Questão 2 – Leia este texto e responda às perguntas.",

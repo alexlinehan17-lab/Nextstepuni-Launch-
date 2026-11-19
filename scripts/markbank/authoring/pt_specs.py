@@ -1019,9 +1019,9 @@ READING[(2023, 'ol')] = [
     C('A1g', [one(S(125, after='call. '), T(125), lead=S(125, before=' 2'))],
       question=(PLc(5, '(g) What happened', after='(g) '), PL(5, 'Enter the correct'), PL(5, '1. Antônio'),
                 PL(5, '2. Antônio'), PL(5, '3. Antônio'))),
-    # Q2(a)'s answer is the bare line "2018": provenance excludes single
-    # numeric lines as ambiguous mark/page cells (schemeText comparableScheme),
-    # so it cannot trace; held with its exclusion, asked of the coordinator.
+    # Q2(a)'s answer is the bare line "2018 ⟨1 mark⟩", which traces through
+    # schemeText's year-line form (lead ruling, 19 Nov 2026).
+    C('A2a', [one(S(135), T(135))]),
     C('A2h', [one(VI(173, 7), T(173))], extra=(PL(8, 'Tick (✓)'), PL(8, 'True'))),
     C('A3b', [one(VI(190, 8), T(190))]),
 ]

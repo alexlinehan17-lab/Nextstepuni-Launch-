@@ -5941,6 +5941,43 @@
   }
  },
  {
+  "id": "por-2023-ol-a-2-a",
+  "subjectId": "portuguese",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "A",
+  "topicId": "portuguese-2-3",
+  "conceptId": "quando-trotinetas-chegaram-lisboa",
+  "questionRef": "2023 OL Section A Q2(a)",
+  "questionText": "Quando as trotinetas chegaram a Lisboa? (parágrafo 1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2018",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this ask 1 mark; the paper prints it on page 7 of the question booklet.",
+  "stem": "Questão 2 – Leia este texto e responda às perguntas.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTÃO 2 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    6,
+    7
+   ],
+   "attribution": "SEC Portuguese 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
   "id": "por-2023-ol-a-2-h",
   "subjectId": "portuguese",
   "level": "ordinary",

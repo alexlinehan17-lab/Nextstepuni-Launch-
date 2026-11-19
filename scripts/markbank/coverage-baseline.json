@@ -678,11 +678,11 @@
     "refsHash": "38694d71adeb29ca"
   },
   "portuguese": {
-    "cards": 494,
-    "contentHash": "b8c03a219d3fb6df",
+    "cards": 495,
+    "contentHash": "da28d55d445061dd",
     "coveragePct": 80.5,
-    "covered": 494,
-    "excluded": 105,
+    "covered": 495,
+    "excluded": 104,
     "leaves": 744,
     "open": 145,
     "orphans": 0,
@@ -690,7 +690,7 @@
       "count": 31,
       "hash": "1ed69ceed274dcd0"
     },
-    "refsHash": "9a379387a1c5a91a"
+    "refsHash": "f44608191cc97048"
   },
   "religious-education": {
     "cards": 786,
