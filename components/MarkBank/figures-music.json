@@ -1887,5 +1887,111 @@
   "md5": "37e7dc8eada45d4025fc000fdc7eacf9",
   "alt": "The three printed options (3 bars, 4 bars, 6 bars), printed with Listening Q6(e) in the 2024 Ordinary Level paper, as the SEC set it.",
   "attribution": "SEC Leaving Certificate Music 2024 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-HL-l-q1-a-i-score": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-l-q1-a-i-score.png",
+  "md5": "ae8923f279abe3048c1b9ba7bd1df385",
+  "alt": "The four printed instrument options (violins, violas, cellos, double basses), printed with Listening Q1(a)(i) in the 2021 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-HL-l-q1-a-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-l-q1-a-ii-score.png",
+  "md5": "9ef3ba75e7dd23e5aef51cb69175f36c",
+  "alt": "The three printed range options (an octave, a tenth, two octaves), printed with Listening Q1(a)(ii) in the 2021 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-HL-l-q1-e-score": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-l-q1-e-score.png",
+  "md5": "565ed29e7d5f1061a798d9dae12a3a5e",
+  "alt": "The outline score of bars 1-4, with X marked over bars 3-4, printed with Listening Q1(e) in the 2021 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-HL-scheme-p12-l-q1-e": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-scheme-p12-l-q1-e.png",
+  "md5": "35c814f01aa1c3cd3ea25bd7b0420b3a",
+  "alt": "The marking scheme’s printed answer for Listening Q1(e): the four notes at X printed on a treble stave, with the marking rule, cropped from page 12 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2021-HL-l-q2-b-score": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-l-q2-b-score.png",
+  "md5": "683aaad079a9ca039d8a6fd2d68c5c8e",
+  "alt": "The three printed options (the marimba plays in fifths / chord clusters / arpeggios), printed with Listening Q2(b) in the 2021 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-HL-l-q4-c-score": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-l-q4-c-score.png",
+  "md5": "aa08b40064a405902b903deee83be742",
+  "alt": "The printed lyrics (lines 1-6), the question and its three rhythm options in notation; parts (a) and (b) and their answer boxes sit between them, printed with Listening Q4(c) in the 2021 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-HL-scheme-p16-l-q4-c": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-scheme-p16-l-q4-c.png",
+  "md5": "006e4ffdcf15faf821762c99de7c279b",
+  "alt": "The marking scheme’s printed answer for Listening Q4(c): the rhythm the scheme accepts, printed in notation, cropped from page 16 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2021-HL-l-q4-d-score": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-l-q4-d-score.png",
+  "md5": "e5ff496b73ad2d14b90438307483047d",
+  "alt": "The three printed options (glissando, contrary motion, trills), printed with Listening Q4(d) in the 2021 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-HL-scheme-p17-l-q5-a-a": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-scheme-p17-l-q5-a-a.png",
+  "md5": "7baf9bb81d5ae7afb2840e50b239d8e3",
+  "alt": "The marking scheme’s printed answer for Listening Q5 A(a): the two dances, their time signatures printed stacked as in music, the rhythm lines and the marks, cropped from page 17 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2021-HL-l-q5-a-e-score": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-l-q5-a-e-score.png",
+  "md5": "37fc9b73ce7b33328720f9e50dc572a5",
+  "alt": "The three printed options (repeated last note, sequence, gap scale), printed with Listening Q5 A(e) in the 2021 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-HL-l-q6-a-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-l-q6-a-ii-score.png",
+  "md5": "1b3b73f7756c6651585cca210b1475d0",
+  "alt": "The three printed options (woodwind, brass, strings), printed with Listening Q6(a)(ii) in the 2021 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-HL-l-q6-b-score": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-l-q6-b-score.png",
+  "md5": "16e602ace8b7b9a3ea76ab54fb980c45",
+  "alt": "The three printed options (free rhythm, changes of key, antiphonal dialogue), printed with Listening Q6(b) in the 2021 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-HL-l-q6-c-score": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-l-q6-c-score.png",
+  "md5": "947bc45f3165d002a86e8f3d9191c9f4",
+  "alt": "The outline score of bars 1-7, with X marked over bar 4 and its rhythm given, printed with Listening Q6(c) in the 2021 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-HL-scheme-p19-l-q6-c": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-scheme-p19-l-q6-c.png",
+  "md5": "d8c23f879910a704adaf424723435641",
+  "alt": "The marking scheme’s printed answer for Listening Q6(c): the four notes at X printed on a treble stave, with the pitch rate, cropped from page 19 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2021-HL-l-q6-d-score": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-l-q6-d-score.png",
+  "md5": "85e6581a673b6c7b0379a90cc20cc5d9",
+  "alt": "The printed lyrics (lines 1-9 and the instrumental section), printed with Listening Q6(d) in the 2021 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-HL-l-q6-e-score": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-l-q6-e-score.png",
+  "md5": "7d4cf4665a779c3dec5a245f567a323c",
+  "alt": "The three printed options (repeating 2-, 3- and 4-note figures), printed with Listening Q6(e) in the 2021 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2021-HL-l-q6-f-score": {
+  "src": "/exam-figures/music/markbank/music-2021-HL-l-q6-f-score.png",
+  "md5": "3f8050f510ffea962b8594bddaa87111",
+  "alt": "The three printed options (imitation, repetition, sequences), printed with Listening Q6(f) in the 2021 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2021 Higher Level examination paper — © State Examinations Commission"
  }
 }
