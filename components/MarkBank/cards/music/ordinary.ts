@@ -37,7 +37,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q1-a", topicId: "music-2-10", conceptId: "mus-excerpt-heard-identify-instrument",
     section: "L", questionRef: "2026 OL Listening Q1(a)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz. Excerpt 1, played three times.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "Identify the percussion instrument heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -101,7 +101,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q1-b", topicId: "music-2-10", conceptId: "mus-describe-dynamics-excerpt-heard",
     section: "L", questionRef: "2026 OL Listening Q1(b)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz. Excerpt 1, played three times.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "Describe the use of dynamics heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -147,7 +147,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q1-c", topicId: "music-2-10", conceptId: "mus-describe-excerpt-heard-instruments",
     section: "L", questionRef: "2026 OL Listening Q1(c)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz. Excerpt 2, played three times.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "The texture of the music in this excerpt is polyphonic. Describe with reference to the instruments heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -193,7 +193,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q1-d", topicId: "music-2-10", conceptId: "mus-missing-notes-score",
     section: "L", questionRef: "2026 OL Listening Q1(d)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz. Excerpt 3, played three times. An outline score of the opening four bars of the excerpt is printed below.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 3, played three times. An outline score of the opening four bars of the excerpt is printed below.",
     questionText: "The missing notes at X on the score are",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -257,7 +257,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q1-e", topicId: "music-2-10", conceptId: "mus-each-false-statement-tick",
     section: "L", questionRef: "2026 OL Listening Q1(e)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz. Excerpt 4, played three times.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
     questionText: "Tick whether each statement is true or false.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -324,7 +324,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q1-f", topicId: "music-2-10", conceptId: "mus-excerpt-heard-identify-theme",
     section: "L", questionRef: "2026 OL Listening Q1(f)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz. Excerpt 5, played three times.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 5, played three times.",
     questionText: "Identify the theme heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -370,7 +370,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q1-g", topicId: "music-2-10", conceptId: "mus-heard-identify-instrument-playing",
     section: "L", questionRef: "2026 OL Listening Q1(g)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz. Excerpt 5, played three times.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 5, played three times.",
     questionText: "Identify the instrument heard playing this theme.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -416,7 +416,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q1-h", topicId: "music-2-10", conceptId: "mus-berlioz-depict-example-excerpt",
     section: "L", questionRef: "2026 OL Listening Q1(h)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz. Excerpt 5, played three times.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 5, played three times.",
     questionText: "Symphonie Fantastique is an example of programme music. Identify what Berlioz was trying to depict in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -462,7 +462,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q2-a", topicId: "music-2-9", conceptId: "mus-excerpt-music-this-tonality",
     section: "L", questionRef: "2026 OL Listening Q2(a)",
-    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart. Excerpt 1, played three times.",
+    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "The tonality of the music in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -526,7 +526,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q2-b", topicId: "music-2-9", conceptId: "mus-excerpt-features-identify-music",
     section: "L", questionRef: "2026 OL Listening Q2(b)",
-    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart. Excerpt 1, played three times.",
+    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "Identify two features of the music played by the piano in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -572,7 +572,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q2-c", topicId: "music-2-9", conceptId: "mus-excerpt-music-tempo-this",
     section: "L", questionRef: "2026 OL Listening Q2(c)",
-    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart. Excerpt 2, played three times.",
+    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "The tempo of the music in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -636,7 +636,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q2-d", topicId: "music-2-9", conceptId: "mus-excerpt-instruments-melody-name",
     section: "L", questionRef: "2026 OL Listening Q2(d)",
-    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart. Excerpt 2, played three times.",
+    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "Name two instruments playing the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -682,7 +682,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q2-e", topicId: "music-2-9", conceptId: "mus-cadenza-excerpt-explain-from",
     section: "L", questionRef: "2026 OL Listening Q2(e)",
-    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart. Excerpt 3, played three times.",
+    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
     questionText: "This excerpt is taken from the cadenza. Explain the term cadenza.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -728,7 +728,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q3-a", topicId: "music-2-11", conceptId: "mus-above-insert-missing-score",
     section: "L", questionRef: "2026 OL Listening Q3(a)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane. Excerpt 1, played three times. An outline score of the excerpt is printed below.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of the excerpt is printed below.",
     questionText: "Insert the missing time signature at X on the score above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -792,7 +792,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q3-b", topicId: "music-2-11", conceptId: "mus-compositional-deane-excerpt-explain",
     section: "L", questionRef: "2026 OL Listening Q3(b)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane. Excerpt 2, played three times.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "In this excerpt Raymond Deane uses the compositional techniques of inversion and the subtraction principle. Select one of these techniques and explain it with reference to the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -838,7 +838,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q3-c-i", topicId: "music-2-11", conceptId: "mus-below-each-excerpt-flute",
     section: "L", questionRef: "2026 OL Listening Q3(c)(i)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane. Excerpt 2, played once more.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played once more.",
     questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (i) Flute in G",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -893,7 +893,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q3-c-ii", topicId: "music-2-11", conceptId: "mus-below-cymbal-each-excerpt",
     section: "L", questionRef: "2026 OL Listening Q3(c)(ii)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane. Excerpt 2, played once more.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played once more.",
     questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (ii) Cymbal",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -948,7 +948,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q3-c-iii", topicId: "music-2-11", conceptId: "mus-below-each-excerpt-following",
     section: "L", questionRef: "2026 OL Listening Q3(c)(iii)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane. Excerpt 2, played once more.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played once more.",
     questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (iii) Violin",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1003,7 +1003,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q4-a", topicId: "music-2-12", conceptId: "mus-excerpt-music-signature-this",
     section: "L", questionRef: "2026 OL Listening Q4(a)",
-    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles. Excerpt 1, played three times.",
+    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "The time signature of the music in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -1067,7 +1067,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q4-b", topicId: "music-2-12", conceptId: "mus-excerpt-heard-identify-instruments",
     section: "L", questionRef: "2026 OL Listening Q4(b)",
-    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles. Excerpt 1, played three times.",
+    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "Identify the three instruments heard playing in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -1113,7 +1113,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q4-c", topicId: "music-2-12", conceptId: "mus-excerpt-feature-identify-melody",
     section: "L", questionRef: "2026 OL Listening Q4(c)",
-    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles. Excerpt 2, played three times.",
+    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "Identify one feature of the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -1159,7 +1159,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q4-d", topicId: "music-2-12", conceptId: "mus-excerpt-feature-identify-rhythm",
     section: "L", questionRef: "2026 OL Listening Q4(d)",
-    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles. Excerpt 2, played three times.",
+    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "Identify one feature of the rhythm in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -1205,7 +1205,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q4-e", topicId: "music-2-12", conceptId: "mus-boxes-excerpt-features-heard",
     section: "L", questionRef: "2026 OL Listening Q4(e)",
-    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles. Excerpt 3, played three times.",
+    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
     questionText: "Identify two features of the music heard in this excerpt. (Tick two boxes)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -1270,7 +1270,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q4-f", topicId: "music-2-12", conceptId: "mus-excerpt-there",
     section: "L", questionRef: "2026 OL Listening Q4(f)",
-    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles. Excerpt 3, played three times.",
+    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
     questionText: "At the end of the excerpt there is a",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -1334,7 +1334,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q5-a", topicId: "music-2-2", conceptId: "mus-excerpt-heard-instruments-melody",
     section: "L", questionRef: "2026 OL Listening Q5(a)",
-    stem: "Irish Music This question is based on four excerpts of music. Excerpt 1, played three times.",
+    stem: "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "Name two instruments heard playing the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1380,7 +1380,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q5-b", topicId: "music-2-2", conceptId: "mus-accompaniment-excerpt-heard-instruments",
     section: "L", questionRef: "2026 OL Listening Q5(b)",
-    stem: "Irish Music This question is based on four excerpts of music. Excerpt 1, played three times.",
+    stem: "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "Name two instruments heard playing the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1426,7 +1426,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q5-c-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-this",
     section: "L", questionRef: "2026 OL Listening Q5(c)(i)",
-    stem: "Irish Music This question is based on four excerpts of music. Excerpt 2, played three times.",
+    stem: "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "The dance heard in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1490,7 +1490,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q5-c-ii", topicId: "music-2-2", conceptId: "mus-dance-signature-this-time",
     section: "L", questionRef: "2026 OL Listening Q5(c)(ii)",
-    stem: "Irish Music This question is based on four excerpts of music. Excerpt 2, played three times.",
+    stem: "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "The time signature of this dance is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1554,7 +1554,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q5-c-iii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-this",
     section: "L", questionRef: "2026 OL Listening Q5(c)(iii)",
-    stem: "Irish Music This question is based on four excerpts of music. Excerpt 2, played three times.",
+    stem: "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "A typical bar of rhythm associated with this dance is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1618,7 +1618,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q5-d", topicId: "music-2-2", conceptId: "mus-missing-notes-score",
     section: "L", questionRef: "2026 OL Listening Q5(d)",
-    stem: "Irish Music This question is based on four excerpts of music. Excerpt 3, played three times. An outline score of the melody is printed below.",
+    stem: "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. An outline score of the melody is printed below.",
     questionText: "The missing notes at X on the score (bar 6) are",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -1682,7 +1682,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q5-e", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2026 OL Listening Q5(e)",
-    stem: "Irish Music This question is based on four excerpts of music. Excerpt 4, played three times.",
+    stem: "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
     questionText: "Identify two features of Irish traditional music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1728,7 +1728,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q5-f", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2026 OL Listening Q5(f)",
-    stem: "Irish Music This question is based on four excerpts of music. Excerpt 4, played three times.",
+    stem: "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
     questionText: "Identify two non-traditional features heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1774,7 +1774,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q6-a", topicId: "music-2-4", conceptId: "mus-excerpt-identify-instrument-melody",
     section: "L", questionRef: "2026 OL Listening Q6(a)",
-    stem: "Aural Skills This question is based on six excerpts of music. Excerpt 1, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "Identify the instrument which plays the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -1838,7 +1838,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q6-b", topicId: "music-2-4", conceptId: "mus-accompaniment-excerpt-features-heard",
     section: "L", questionRef: "2026 OL Listening Q6(b)",
-    stem: "Aural Skills This question is based on six excerpts of music. Excerpt 1, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "Identify two features of the accompaniment heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1884,7 +1884,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q6-c", topicId: "music-2-4", conceptId: "mus-excerpt-form-music-this",
     section: "L", questionRef: "2026 OL Listening Q6(c)",
-    stem: "Aural Skills This question is based on six excerpts of music. Excerpt 2, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "The form of the music in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -1948,7 +1948,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q6-d", topicId: "music-2-4", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2026 OL Listening Q6(d)",
-    stem: "Aural Skills This question is based on six excerpts of music. Excerpt 3, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1994,7 +1994,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q6-e", topicId: "music-2-4", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2026 OL Listening Q6(e)",
-    stem: "Aural Skills This question is based on six excerpts of music. Excerpt 4, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
     questionText: "Identify two features of the melody heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -2059,7 +2059,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q6-f", topicId: "music-2-4", conceptId: "mus-each-false-statement-tick",
     section: "L", questionRef: "2026 OL Listening Q6(f)",
-    stem: "Aural Skills This question is based on six excerpts of music. Excerpt 5, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 5, played three times.",
     questionText: "Tick whether each statement is true or false.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -2126,7 +2126,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q6-g", topicId: "music-2-4", conceptId: "mus-excerpt-identify-instrument-melody",
     section: "L", questionRef: "2026 OL Listening Q6(g)",
-    stem: "Aural Skills This question is based on six excerpts of music. Excerpt 6, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 6, played three times.",
     questionText: "Identify the instrument playing the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -2172,7 +2172,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Ordinary Level — © State Examinations Commission.",
     id: "mus-2026-ol-l-q6-h", topicId: "music-2-4", conceptId: "mus-excerpt-feature-heard-identify",
     section: "L", questionRef: "2026 OL Listening Q6(h)",
-    stem: "Aural Skills This question is based on six excerpts of music. Excerpt 6, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 6, played three times.",
     questionText: "Identify one feature of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -2216,10 +2216,10 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC067GLP006EV",
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2026 Ordinary Level, pp.4-5 — © State Examinations Commission.",
-    id: "mus-2026-ol-c-a-q1-a", topicId: "music-1-10", conceptId: "mus-appropriate-choose-continuation-continue",
+    id: "mus-2026-ol-c-a-q1-a", topicId: "music-1-10", conceptId: "mus-answer-appropriate-choose-continuation",
     section: "A", questionRef: "2026 OL Composing Section A Q1(a)",
     stem: "Answer one question only in this section:",
-    questionText: "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+    questionText: "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -2333,7 +2333,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2026-ol-c-a-q1-b", topicId: "music-1-10", conceptId: "mus-appropriate-choose-continuation-continue",
     section: "A", questionRef: "2026 OL Composing Section A Q1(b)",
     stem: "Answer one question only in this section:",
-    questionText: "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+    questionText: "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -2444,10 +2444,10 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC067GLP006EV",
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2026 Ordinary Level, pp.8-9 — © State Examinations Commission.",
-    id: "mus-2026-ol-c-a-q3-a", topicId: "music-1-12", conceptId: "mus-appropriate-choose-composing-continue",
+    id: "mus-2026-ol-c-a-q3-a", topicId: "music-1-12", conceptId: "mus-answer-appropriate-choose-composing",
     section: "A", questionRef: "2026 OL Composing Section A Q3(a)",
     stem: "Answer one question only in this section:",
-    questionText: "Composing to a given dance rhythm or metre or form • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+    questionText: "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -2561,7 +2561,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2026-ol-c-a-q3-b", topicId: "music-1-12", conceptId: "mus-appropriate-choose-composing-continue",
     section: "A", questionRef: "2026 OL Composing Section A Q3(b)",
     stem: "Answer one question only in this section:",
-    questionText: "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+    questionText: "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -3117,7 +3117,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q1-a", topicId: "music-2-15", conceptId: "mus-excerpt-from-music-taken",
     section: "L", questionRef: "2025 OL Listening Q1(a)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Excerpt 1, played four times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played four times.",
     questionText: "The music in this excerpt is taken from the",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3172,7 +3172,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q1-b", topicId: "music-2-15", conceptId: "mus-excerpt-heard-theme-this",
     section: "L", questionRef: "2025 OL Listening Q1(b)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Excerpt 1, played four times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played four times.",
     questionText: "The theme heard in this excerpt is the",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3227,7 +3227,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q1-c", topicId: "music-2-15", conceptId: "mus-excerpt-instrument-name-playing",
     section: "L", questionRef: "2025 OL Listening Q1(c)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Excerpt 1, played four times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played four times.",
     questionText: "Name one instrument playing the theme in the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3282,7 +3282,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q1-d", topicId: "music-2-15", conceptId: "mus-excerpt-play-strings-this",
     section: "L", questionRef: "2025 OL Listening Q1(d)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Excerpt 1, played four times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played four times.",
     questionText: "In this excerpt the strings play",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -3337,7 +3337,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q1-e", topicId: "music-2-15", conceptId: "mus-cadence-excerpt-heard",
     section: "L", questionRef: "2025 OL Listening Q1(e)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Excerpt 1, played four times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played four times.",
     questionText: "The cadence heard at the end of the excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3392,7 +3392,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q1-f", topicId: "music-2-15", conceptId: "mus-changes-describe-during-excerpt",
     section: "L", questionRef: "2025 OL Listening Q1(f)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Excerpt 2, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "Describe how the music changes during this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -3447,7 +3447,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q1-g", topicId: "music-2-15", conceptId: "mus-excerpt-features-identify-music",
     section: "L", questionRef: "2025 OL Listening Q1(g)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Excerpt 3, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
     questionText: "Identify two features of the music in this excerpt:",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -3503,7 +3503,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q1-h", topicId: "music-2-15", conceptId: "mus-above-given-insert-missing",
     section: "L", questionRef: "2025 OL Listening Q1(h)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Excerpt 4, played three times. An outline score of the excerpt is printed below.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 4, played three times. An outline score of the excerpt is printed below.",
     questionText: "Insert the two missing notes at X on the score above. Use the given rhythm.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -3567,7 +3567,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q1-i", topicId: "music-2-15", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2025 OL Listening Q1(i)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Excerpt 5, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 5, played three times.",
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -3622,7 +3622,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q2-a", topicId: "music-2-16", conceptId: "mus-excerpt-identify-instruments-play",
     section: "L", questionRef: "2025 OL Listening Q2(a)",
-    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry. Excerpt 1, played three times. An outline score of the excerpt is printed below.",
+    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of the excerpt is printed below.",
     questionText: "Identify the two instruments which play in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -3678,7 +3678,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q2-b", topicId: "music-2-16", conceptId: "mus-above-missing-score-signature",
     section: "L", questionRef: "2025 OL Listening Q2(b)",
-    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry. Excerpt 1, played three times. An outline score of the excerpt is printed below.",
+    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of the excerpt is printed below.",
     questionText: "The missing time signature at X on the score above is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3742,7 +3742,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q2-c", topicId: "music-2-16", conceptId: "mus-excerpt-music-texture-this",
     section: "L", questionRef: "2025 OL Listening Q2(c)",
-    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry. Excerpt 2, played three times.",
+    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "The texture of the music in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3797,7 +3797,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q2-d", topicId: "music-2-16", conceptId: "mus-canon-excerpt-explain-features",
     section: "L", questionRef: "2025 OL Listening Q2(d)",
-    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry. Excerpt 2, played three times.",
+    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "This excerpt features canon. Explain canon.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3852,7 +3852,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q3-a", topicId: "music-2-14", conceptId: "mus-excerpt-from-music-taken",
     section: "L", questionRef: "2025 OL Listening Q3(a)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 1, played three times.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "The music in this excerpt is taken from the",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3907,7 +3907,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q3-b", topicId: "music-2-14", conceptId: "mus-accompaniment-excerpt-identify-instrument",
     section: "L", questionRef: "2025 OL Listening Q3(b)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 1, played three times.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "Identify an instrument playing the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3962,7 +3962,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q3-c", topicId: "music-2-14", conceptId: "mus-feature-heard-identify-lines",
     section: "L", questionRef: "2025 OL Listening Q3(c)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 2, played three times. The opening lyrics are printed below.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 2, played three times. The opening lyrics are printed below. Line 1 Galileo, Galileo, Galileo, Galileo, Line 2 Galileo Figaro. Magnifico. Line 3 I’m just a poor boy, nobody loves me. Line 4 He’s just a poor boy from a poor family, Line 5 Spare him his life from this monstrosity.",
     questionText: "Identify one feature of the vocal music heard in lines 1–5.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4017,7 +4017,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q3-d", topicId: "music-2-14", conceptId: "mus-excerpt-explain-features-panning",
     section: "L", questionRef: "2025 OL Listening Q3(d)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 2, played three times. The opening lyrics are printed below.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 2, played three times. The opening lyrics are printed below. Line 1 Galileo, Galileo, Galileo, Galileo, Line 2 Galileo Figaro. Magnifico. Line 3 I’m just a poor boy, nobody loves me. Line 4 He’s just a poor boy from a poor family, Line 5 Spare him his life from this monstrosity.",
     questionText: "This excerpt features panning. Explain panning.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4072,7 +4072,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q3-e", topicId: "music-2-14", conceptId: "mus-describe-emphasised-excerpt-music",
     section: "L", questionRef: "2025 OL Listening Q3(e)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 2, played three times. The opening lyrics are printed below.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 2, played three times. The opening lyrics are printed below. Line 1 Galileo, Galileo, Galileo, Galileo, Line 2 Galileo Figaro. Magnifico. Line 3 I’m just a poor boy, nobody loves me. Line 4 He’s just a poor boy from a poor family, Line 5 Spare him his life from this monstrosity.",
     questionText: "Describe how the words ‘for me’ are emphasised in the music towards the end of the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4127,7 +4127,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q4-a", topicId: "music-2-17", conceptId: "mus-excerpt-from-music-taken",
     section: "L", questionRef: "2025 OL Listening Q4(a)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach. Excerpt 1, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "The music in this excerpt is taken from the",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4182,7 +4182,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q4-b", topicId: "music-2-17", conceptId: "mus-excerpt-music-this-tonality",
     section: "L", questionRef: "2025 OL Listening Q4(b)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach. Excerpt 1, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "The tonality of the music in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4237,7 +4237,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q4-c", topicId: "music-2-17", conceptId: "mus-baroque-excerpt-feature-heard",
     section: "L", questionRef: "2025 OL Listening Q4(c)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach. Excerpt 1, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "Identify one feature of Baroque music as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4292,7 +4292,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q4-d", topicId: "music-2-17", conceptId: "mus-excerpt-first-heard-this",
     section: "L", questionRef: "2025 OL Listening Q4(d)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach. Excerpt 2, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "The first voice heard in this excerpt is a",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -4347,7 +4347,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q4-e", topicId: "music-2-17", conceptId: "mus-excerpt-explain-features-picardie",
     section: "L", questionRef: "2025 OL Listening Q4(e)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach. Excerpt 2, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "This excerpt features a Tierce de Picardie. Explain Tierce de Picardie.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4402,7 +4402,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q5-a", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2025 OL Listening Q5(a)",
-    stem: "Irish Music This question is based on three excepts of music. Excerpt 1, played three times.",
+    stem: "Irish Music This question is based on three excepts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "This song is sung in the sean-nós style. Identify two features of sean-nós singing as heard in the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -4457,7 +4457,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q5-b", topicId: "music-2-2", conceptId: "mus-excerpt-form-music-this",
     section: "L", questionRef: "2025 OL Listening Q5(b)",
-    stem: "Irish Music This question is based on three excepts of music. Excerpt 1, played three times.",
+    stem: "Irish Music This question is based on three excepts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "The form of the music in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -4512,7 +4512,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q5-c-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-this",
     section: "L", questionRef: "2025 OL Listening Q5(c)(i)",
-    stem: "Irish Music This question is based on three excepts of music. Excerpt 2, played three times.",
+    stem: "Irish Music This question is based on three excepts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "The dance heard in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -4567,7 +4567,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q5-c-ii", topicId: "music-2-2", conceptId: "mus-dance-signature-this-time",
     section: "L", questionRef: "2025 OL Listening Q5(c)(ii)",
-    stem: "Irish Music This question is based on three excepts of music. Excerpt 2, played three times.",
+    stem: "Irish Music This question is based on three excepts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "The time signature of this dance is",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -4631,7 +4631,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q5-c-iii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-this",
     section: "L", questionRef: "2025 OL Listening Q5(c)(iii)",
-    stem: "Irish Music This question is based on three excepts of music. Excerpt 2, played three times.",
+    stem: "Irish Music This question is based on three excepts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "A typical bar of rhythm associated with this dance is",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -4695,7 +4695,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q5-d", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-melody-name",
     section: "L", questionRef: "2025 OL Listening Q5(d)",
-    stem: "Irish Music This question is based on three excepts of music. Excerpt 2, played three times.",
+    stem: "Irish Music This question is based on three excepts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "Name one instrument which plays the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -4750,7 +4750,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q5-e", topicId: "music-2-2", conceptId: "mus-different-discuss-excerpt-fusion",
     section: "L", questionRef: "2025 OL Listening Q5(e)",
-    stem: "Irish Music This question is based on three excepts of music. Excerpt 3, played three times.",
+    stem: "Irish Music This question is based on three excepts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
     questionText: "This excerpt is a fusion of different styles of music. Discuss, with reference to the music heard in the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -4805,7 +4805,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q6-a", topicId: "music-2-4", conceptId: "mus-excerpt-music-signature-this",
     section: "L", questionRef: "2025 OL Listening Q6(a)",
-    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 1, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "The time signature of the music in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4869,7 +4869,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q6-b", topicId: "music-2-4", conceptId: "mus-accompaniment-excerpt-instrument-name",
     section: "L", questionRef: "2025 OL Listening Q6(b)",
-    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 1, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
     questionText: "Name the instrument which plays the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4924,7 +4924,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q6-c", topicId: "music-2-4", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2025 OL Listening Q6(c)",
-    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 2, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -4979,7 +4979,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q6-d", topicId: "music-2-3", conceptId: "mus-missing-notes-score",
     section: "L", questionRef: "2025 OL Listening Q6(d)",
-    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 3, played three times. An outline score of the opening vocal melody is printed below.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. An outline score of the opening vocal melody is printed below.",
     questionText: "The missing notes at X on the score are",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -5043,7 +5043,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q6-e", topicId: "music-2-4", conceptId: "mus-bars-heard-introduction-many",
     section: "L", questionRef: "2025 OL Listening Q6(e)",
-    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 4, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
     questionText: "How many bars of music are heard in the introduction?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -5098,7 +5098,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q6-f", topicId: "music-2-4", conceptId: "mus-excerpt-feature-heard-identify",
     section: "L", questionRef: "2025 OL Listening Q6(f)",
-    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 4, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
     questionText: "Identify one feature of the vocal music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -5153,7 +5153,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Ordinary Level — © State Examinations Commission.",
     id: "mus-2025-ol-l-q6-g", topicId: "music-2-4", conceptId: "mus-answer-between-both-describe",
     section: "L", questionRef: "2025 OL Listening Q6(g)",
-    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 4, played once more and Excerpt 5, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played once more and Excerpt 5, played three times.",
     questionText: "Describe one difference between the music heard in Excerpt 4 and the music heard in Excerpt 5. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -5206,10 +5206,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC067GLP006EV",
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2025 Ordinary Level, p.3 — © State Examinations Commission.",
-    id: "mus-2025-ol-c-a-q1-a", topicId: "music-1-10", conceptId: "mus-appropriate-choose-continuation-continue",
+    id: "mus-2025-ol-c-a-q1-a", topicId: "music-1-10", conceptId: "mus-answer-appropriate-choose-clarinet",
     section: "A", questionRef: "2025 OL Composing Section A Q1(a)",
     stem: "Answer one question only in this section:",
-    questionText: "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+    questionText: "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -5326,10 +5326,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC067GLP006EV",
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2025 Ordinary Level, p.3 — © State Examinations Commission.",
-    id: "mus-2025-ol-c-a-q1-b", topicId: "music-1-10", conceptId: "mus-appropriate-choose-continuation-continue",
+    id: "mus-2025-ol-c-a-q1-b", topicId: "music-1-10", conceptId: "mus-appropriate-choose-clarinet-continuation",
     section: "A", questionRef: "2025 OL Composing Section A Q1(b)",
     stem: "Answer one question only in this section:",
-    questionText: "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+    questionText: "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -5446,10 +5446,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC067GLP006EV",
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2025 Ordinary Level, p.5 — © State Examinations Commission.",
-    id: "mus-2025-ol-c-a-q3-a", topicId: "music-1-12", conceptId: "mus-appropriate-choose-composing-continue",
+    id: "mus-2025-ol-c-a-q3-a", topicId: "music-1-12", conceptId: "mus-answer-appropriate-choose-clarinet",
     section: "A", questionRef: "2025 OL Composing Section A Q3(a)",
     stem: "Answer one question only in this section:",
-    questionText: "Composing to a given dance rhythm or metre or form • Study this opening of a minuet. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+    questionText: "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a minuet. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -5566,10 +5566,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC067GLP006EV",
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2025 Ordinary Level, p.5 — © State Examinations Commission.",
-    id: "mus-2025-ol-c-a-q3-b", topicId: "music-1-12", conceptId: "mus-appropriate-choose-composing-continue",
+    id: "mus-2025-ol-c-a-q3-b", topicId: "music-1-12", conceptId: "mus-appropriate-choose-clarinet-composing",
     section: "A", questionRef: "2025 OL Composing Section A Q3(b)",
     stem: "Answer one question only in this section:",
-    questionText: "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+    questionText: "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -5689,7 +5689,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2025-ol-c-b-q4", topicId: "music-1-14", conceptId: "mus-approach-available-bank-bass",
     section: "B", questionRef: "2025 OL Composing Section B Q4",
     stem: "Answer one question only in this section:",
-    questionText: "Composing melody and bass notes from a set of chords at cadence points • Write out the scale of Bb major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Using the given rhythms, add melody and bass notes to complete the cadences and approach chords as follows: • (i) At A, an imperfect cadence with approach chord (I—IV—V) • (ii) At B, a perfect cadence with approach chord (ii—V—I) • (iii) At C, an interrupted cadence with approach chord (ii—V—vi) • (iv) At D, a plagal cadence with approach chord (vi—IV—I)",
+    questionText: "Composing melody and bass notes from a set of chords at cadence points Preparatory work: • Write out the scale of Bb major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Using the given rhythms, add melody and bass notes to complete the cadences and approach chords as follows: • (i) At A, an imperfect cadence with approach chord (I—IV—V) • (ii) At B, a perfect cadence with approach chord (ii—V—I) • (iii) At C, an interrupted cadence with approach chord (ii—V—vi) • (iv) At D, a plagal cadence with approach chord (vi—IV—I)",
     totalMarks: 60,
     rubric: {
           "system": "french",
@@ -5796,7 +5796,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2025-ol-c-b-q5", topicId: "music-1-13", conceptId: "mus-adding-adjacent-available-bank",
     section: "B", questionRef: "2025 OL Composing Section B Q5",
     stem: "Answer one question only in this section:",
-    questionText: "Adding bass notes and chord indications at cadence points • Write out the scale of G major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Add suitable bass notes and chord indications to complete the cadences at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both. • Do not repeat the same chord in adjacent boxes.",
+    questionText: "Adding bass notes and chord indications at cadence points Preparatory work: • Write out the scale of G major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Add suitable bass notes and chord indications to complete the cadences at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both. • Do not repeat the same chord in adjacent boxes.",
     totalMarks: 60,
     rubric: {
           "system": "french",
@@ -5903,7 +5903,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2025-ol-c-b-q6", topicId: "music-1-15", conceptId: "mus-adding-available-bank-below",
     section: "B", questionRef: "2025 OL Composing Section B Q6",
     stem: "Answer one question only in this section:",
-    questionText: "Adding descant notes and chord indications at cadence points • Write out the scale of F major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Complete the phrase endings by adding suitable chords and descant notes at the cadence points A, B, C and D. • You may use either chord symbols or Roman numerals, but not both.",
+    questionText: "Adding descant notes and chord indications at cadence points Preparatory work: • Write out the scale of F major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Complete the phrase endings by adding suitable chords and descant notes at the cadence points A, B, C and D. • You may use either chord symbols or Roman numerals, but not both.",
     totalMarks: 60,
     rubric: {
           "system": "french",

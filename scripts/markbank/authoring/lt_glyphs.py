@@ -54,7 +54,13 @@ ALPHABETS = {
     'lithuanian': 'aąbcčdeęėfghiįyjklmnoprsštuųūvzž',
     'latvian': 'aābcčdeēfgģhiījkķlļmnņoprsštuūvzž',
     'czech': 'aábcčdďeéěfghiíjklmnňoóprřsštťuúůvyýzž',
+    'polish': 'aąbcćdeęfghijklłmnńoóprsśtuwyzźż',
 }
+# Latin-1 letters a subject's mangled file uses for its OWN letters, so they
+# are not real there even though LATIN1_REAL lists them for quoted names: the
+# 2015 Polish Higher scheme sets "ł" as "á" and "ć" as "ü" ("wáasnymi",
+# "podejĞü"). Only the named subject reads them as mangled.
+LATIN1_MANGLED = {'polish': set('áüÁÜ')}
 KEEP = set('„“”‘’–—…€°·×•✓‐−’')
 
 
@@ -66,12 +72,13 @@ LATIN1_REAL = set('äöüåæøéèêëáàâíìîóòôúùûñçß'
                   'ÄÖÜÅÆØÉÈÊËÁÀÂÍÌÎÓÒÔÚÙÛÑÇ')
 
 
-def mangled_chars(text, alphabet):
+def mangled_chars(text, alphabet, latin1_real=None):
+    real = LATIN1_REAL if latin1_real is None else latin1_real
     out = set()
     for c in text:
         if 0x00C0 <= ord(c) <= 0x024F or 0x02B0 <= ord(c) <= 0x036F:
             if c.lower() not in alphabet and c not in KEEP \
-                    and c not in LATIN1_REAL:
+                    and c not in real:
                 out.add(c)
     return out
 
@@ -118,6 +125,14 @@ VERIFIED = {
         '\u0107': 'ď',   # "Teć už víme" -> "Teď už víme"
         '\u0122': 'ť',   # "šĢastný s málem" -> "šťastný s málem"
     },
+    'polish': {
+        # Ĩ U+0128 -- 2015 Higher scheme p4, "wypowiedĨ w kontekĞcie": the crop
+        # at 400 dpi shows z with an acute, "wypowiedź". The vote cannot settle
+        # it: "odpowiedĨ" fits both "odpowiedź" and the imperative "odpowiedz",
+        # which the clean schemes also print. Its five words (odpowiedĨ,
+        # wypowiedĨ, ludĨmi, Ĩli, OdpowiedĨ) all read ź.
+        '\u0128': 'ź',
+    },
 }
 
 
@@ -148,15 +163,16 @@ def derive(subject, verbose=True):
     positions are wildcards and each one is read off the match.
     """
     alphabet = ALPHABETS[subject]
+    real = LATIN1_REAL - LATIN1_MANGLED.get(subject, set())
     clean = collections.Counter()
     dirty = collections.Counter()
     bad = collections.Counter()
     for _path, text in corpus(subject):
-        hits = mangled_chars(text, alphabet)
+        hits = mangled_chars(text, alphabet, real)
         for word in WORD.findall(text):
             if len(word) < 3:
                 continue
-            if hits and mangled_chars(word, alphabet):
+            if hits and mangled_chars(word, alphabet, real):
                 dirty[word] += 1
             else:
                 clean[word] += 1
@@ -176,7 +192,7 @@ def derive(subject, verbose=True):
         for word in dirty:
             fixed = _apply(word, table)
             unknown = [i for i, c in enumerate(fixed)
-                       if mangled_chars(c, alphabet)]
+                       if mangled_chars(c, alphabet, real)]
             if not unknown:
                 continue
             low = fixed.lower()

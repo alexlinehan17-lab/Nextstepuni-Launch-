@@ -262,7 +262,7 @@ def listening_card(r):
     stem = ' '.join(x for x in [r.get('questionContext'), r.get('excerptLine')] if x)
     card = {
         'id': listening_id(a), 'subjectId': 'music', 'level': 'higher', 'year': YEAR,
-        'section': 'L', 'topicId': topic, 'conceptId': concept(question),
+        'section': 'L', 'topicId': topic, 'conceptId': concept(r.get('conceptText') or question),
         'questionRef': f'2025 HL Listening {a}', 'questionText': question,
         'totalMarks': r['schemeMarks'],
         'sourceMaterial': {
@@ -300,9 +300,11 @@ def listening_card(r):
 
 
 # ---------------------------------------------------------------- grids ----
-def grid_card(cid, ref, section, topic, question, marks, criterion, pages, source, stem=None, note=None):
+def grid_card(cid, ref, section, topic, question, marks, criterion, pages, source, stem=None, note=None, concept_text=None):
+    # A live card keeps its conceptId when its printed text is completed (Alex, 18 Nov): concept_text is the
+    # text the id was first made from.
     card = {'id': cid, 'kind': 'rubric', 'subjectId': 'music', 'level': 'higher', 'year': YEAR,
-            'section': section, 'topicId': topic, 'conceptId': concept(question), 'questionRef': ref,
+            'section': section, 'topicId': topic, 'conceptId': concept(concept_text or question), 'questionRef': ref,
             'questionText': question, 'totalMarks': marks, 'schemePages': pages,
             'rubric': {'system': 'french', 'taskRequirements': [], 'criteria': [criterion],
                        'markingGuideNote': scheme(note or criterion['label'])},
@@ -367,7 +369,7 @@ def composing_a(r):
               'presentationNote': 'The question and its printed opening, exactly as the composing booklet sets them.'}
     return grid_card(f'mus-2025-hl-c-a-q{q}', f'2025 HL Composing Section A Q{q}', 'A',
                      {1: 'music-1-10', 2: 'music-1-11', 3: 'music-1-12'}[q], question, 40, criterion, [page], source,
-                     stem=paper('composing', 'Answer one question only in this section.'))
+                     stem=paper('composing', 'Answer one question only in this section.'), concept_text=r.get('conceptText'))
 
 
 def composing_b(r):
@@ -398,7 +400,7 @@ def composing_b(r):
               'presentationNote': 'The question, its printed opening and the chords it gives, exactly as the composing booklet sets them.'}
     card = {'id': f'mus-2025-hl-c-b-q{q}', 'kind': 'rubric', 'subjectId': 'music', 'level': 'higher', 'year': YEAR,
             'section': 'B', 'topicId': {4: 'music-1-14', 5: 'music-1-13', 6: 'music-1-15'}[q],
-            'conceptId': concept(question), 'questionRef': f'2025 HL Composing Section B Q{q}',
+            'conceptId': concept(r.get('conceptText') or question), 'questionRef': f'2025 HL Composing Section B Q{q}',
             'questionText': question, 'totalMarks': 60, 'schemePages': [page],
             'rubric': {'system': 'french', 'taskRequirements': rules, 'criteria': criteria,
                        'markingGuideNote': scheme('SECTION B – HARMONY (60 marks)')},

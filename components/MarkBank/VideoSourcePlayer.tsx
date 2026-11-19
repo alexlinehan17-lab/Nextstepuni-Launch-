@@ -1,9 +1,13 @@
-/** Official examination video, with native playback, seeking and fullscreen. */
+/** Official examination video, with native playback, seeking and fullscreen.
+ *  An SEC video plays from the app's verified copy where one has been uploaded
+ *  (audioStorage.ts), because the SEC blocks other sites from embedding it. */
 import React, { useState } from 'react';
 import type { CardVideoMaterial } from '../../types/markBank';
+import { audioPlaybackUrl } from './audioStorage';
 
 const VideoSourcePlayer: React.FC<{ source: CardVideoMaterial }> = ({ source }) => {
   const [failedUrl, setFailedUrl] = useState<string | null>(null);
+  const src = audioPlaybackUrl(source);
   return (
     <section aria-label={`${source.label}, official examination video`} style={{
       marginTop: 15, padding: '13px 14px 14px', border: '1px solid var(--mb-muted-border, #d4d4d4)',
@@ -16,20 +20,20 @@ const VideoSourcePlayer: React.FC<{ source: CardVideoMaterial }> = ({ source }) 
       <strong style={{ display: 'block', marginTop: 2, fontSize: 13.5, lineHeight: 1.35,
         color: 'var(--mb-ink, #242424)' }}>{source.title}</strong>
       <video
-        key={source.playbackUrl}
+        key={src}
         aria-label={source.title}
         controls
         playsInline
         preload="metadata"
-        src={source.playbackUrl}
-        onError={() => setFailedUrl(source.playbackUrl)}
+        src={src}
+        onError={() => setFailedUrl(src)}
         onCanPlay={() => setFailedUrl(null)}
         style={{ display: 'block', width: '100%', maxHeight: 430, marginTop: 11, background: '#000' }}
       >Your browser does not support video playback.</video>
       <p style={{ margin: '8px 0 0', fontSize: 11.5, lineHeight: 1.45, color: 'var(--mb-muted, #6b6b6b)' }}>
         {source.presentationNote}
       </p>
-      {failedUrl === source.playbackUrl && (
+      {failedUrl === src && (
         <p role="status" style={{ margin: '8px 0 0', fontSize: 11.5, lineHeight: 1.45,
           color: 'var(--mb-muted, #6b6b6b)' }}>
           This video could not be played here. Open the official SEC video to use another player.

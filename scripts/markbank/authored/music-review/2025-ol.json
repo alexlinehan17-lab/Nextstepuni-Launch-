@@ -39,7 +39,7 @@
     0.33
    ],
    "questionText": "The music in this excerpt is taken from the",
-   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played four times.",
    "needsRecording": true,
    "figure": {
@@ -82,7 +82,7 @@
     0.485
    ],
    "questionText": "The theme heard in this excerpt is the",
-   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played four times.",
    "needsRecording": true,
    "figure": {
@@ -125,7 +125,7 @@
     0.585
    ],
    "questionText": "Name one instrument playing the theme in the excerpt.",
-   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played four times.",
    "needsRecording": true,
    "figure": {
@@ -178,7 +178,7 @@
     0.71
    ],
    "questionText": "In this excerpt the strings play",
-   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played four times.",
    "needsRecording": true,
    "figure": {
@@ -221,7 +221,7 @@
     0.83
    ],
    "questionText": "The cadence heard at the end of the excerpt is",
-   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played four times.",
    "needsRecording": true,
    "figure": {
@@ -264,7 +264,7 @@
     0.295
    ],
    "questionText": "Describe how the music changes during this excerpt.",
-   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -317,7 +317,7 @@
     0.535
    ],
    "questionText": "Identify two features of the music in this excerpt:",
-   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 3, played three times.",
    "needsRecording": true,
    "figure": {
@@ -368,7 +368,7 @@
     0.335
    ],
    "questionText": "Insert the two missing notes at X on the score above. Use the given rhythm.",
-   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 4, played three times. An outline score of the excerpt is printed below.",
    "needsRecording": true,
    "figure": {
@@ -432,7 +432,7 @@
     0.71
    ],
    "questionText": "Describe the texture of the music heard in this excerpt.",
-   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 5, played three times.",
    "needsRecording": true,
    "figure": {
@@ -485,7 +485,7 @@
     0.525
    ],
    "questionText": "Identify the two instruments which play in this excerpt.",
-   "questionContext": "Two excerpts from Piano Quartet No.1 by Gerald Barry.",
+   "questionContext": "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times. An outline score of the excerpt is printed below.",
    "needsRecording": true,
    "figure": {
@@ -536,7 +536,7 @@
     0.7
    ],
    "questionText": "The missing time signature at X on the score above is",
-   "questionContext": "Two excerpts from Piano Quartet No.1 by Gerald Barry.",
+   "questionContext": "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times. An outline score of the excerpt is printed below.",
    "needsRecording": true,
    "figure": {
@@ -593,7 +593,7 @@
     0.232
    ],
    "questionText": "The texture of the music in this excerpt is",
-   "questionContext": "Two excerpts from Piano Quartet No.1 by Gerald Barry.",
+   "questionContext": "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -636,7 +636,7 @@
     0.54
    ],
    "questionText": "This excerpt features canon. Explain canon.",
-   "questionContext": "Two excerpts from Piano Quartet No.1 by Gerald Barry.",
+   "questionContext": "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -687,7 +687,7 @@
     0.33
    ],
    "questionText": "The music in this excerpt is taken from the",
-   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -730,7 +730,7 @@
     0.42
    ],
    "questionText": "Identify an instrument playing the accompaniment in this excerpt.",
-   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -783,8 +783,8 @@
     0.775
    ],
    "questionText": "Identify one feature of the vocal music heard in lines 1–5.",
-   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
-   "excerptLine": "Excerpt 2, played three times. The opening lyrics are printed below.",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times. The opening lyrics are printed below. Line 1 Galileo, Galileo, Galileo, Galileo, Line 2 Galileo Figaro. Magnifico. Line 3 I’m just a poor boy, nobody loves me. Line 4 He’s just a poor boy from a poor family, Line 5 Spare him his life from this monstrosity.",
    "needsRecording": true,
    "figure": {
     "page": 8,
@@ -850,8 +850,8 @@
     0.262
    ],
    "questionText": "This excerpt features panning. Explain panning.",
-   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
-   "excerptLine": "Excerpt 2, played three times. The opening lyrics are printed below.",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times. The opening lyrics are printed below. Line 1 Galileo, Galileo, Galileo, Galileo, Line 2 Galileo Figaro. Magnifico. Line 3 I’m just a poor boy, nobody loves me. Line 4 He’s just a poor boy from a poor family, Line 5 Spare him his life from this monstrosity.",
    "needsRecording": true,
    "figure": {
     "page": 9,
@@ -901,8 +901,8 @@
     0.47
    ],
    "questionText": "Describe how the words ‘for me’ are emphasised in the music towards the end of the excerpt.",
-   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
-   "excerptLine": "Excerpt 2, played three times. The opening lyrics are printed below.",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times. The opening lyrics are printed below. Line 1 Galileo, Galileo, Galileo, Galileo, Line 2 Galileo Figaro. Magnifico. Line 3 I’m just a poor boy, nobody loves me. Line 4 He’s just a poor boy from a poor family, Line 5 Spare him his life from this monstrosity.",
    "needsRecording": true,
    "figure": {
     "page": 9,
@@ -952,7 +952,7 @@
     0.32
    ],
    "questionText": "The music in this excerpt is taken from the",
-   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.",
+   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -995,7 +995,7 @@
     0.445
    ],
    "questionText": "The tonality of the music in this excerpt is",
-   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.",
+   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1038,7 +1038,7 @@
     0.6
    ],
    "questionText": "Identify one feature of Baroque music as heard in this excerpt.",
-   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.",
+   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1087,7 +1087,7 @@
     0.2
    ],
    "questionText": "The first voice heard in this excerpt is a",
-   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.",
+   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1130,7 +1130,7 @@
     0.42
    ],
    "questionText": "This excerpt features a Tierce de Picardie. Explain Tierce de Picardie.",
-   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.",
+   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1181,7 +1181,7 @@
     0.36
    ],
    "questionText": "This song is sung in the sean-nós style. Identify two features of sean-nós singing as heard in the excerpt.",
-   "questionContext": "Irish Music This question is based on three excepts of music.",
+   "questionContext": "Irish Music This question is based on three excepts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1236,7 +1236,7 @@
     0.45
    ],
    "questionText": "The form of the music in this excerpt is",
-   "questionContext": "Irish Music This question is based on three excepts of music.",
+   "questionContext": "Irish Music This question is based on three excepts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1279,7 +1279,7 @@
     0.565
    ],
    "questionText": "The dance heard in this excerpt is",
-   "questionContext": "Irish Music This question is based on three excepts of music.",
+   "questionContext": "Irish Music This question is based on three excepts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1322,7 +1322,7 @@
     0.652
    ],
    "questionText": "The time signature of this dance is",
-   "questionContext": "Irish Music This question is based on three excepts of music.",
+   "questionContext": "Irish Music This question is based on three excepts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1375,7 +1375,7 @@
     0.805
    ],
    "questionText": "A typical bar of rhythm associated with this dance is",
-   "questionContext": "Irish Music This question is based on three excepts of music.",
+   "questionContext": "Irish Music This question is based on three excepts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1428,7 +1428,7 @@
     0.882
    ],
    "questionText": "Name one instrument which plays the melody in this excerpt.",
-   "questionContext": "Irish Music This question is based on three excepts of music.",
+   "questionContext": "Irish Music This question is based on three excepts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1481,7 +1481,7 @@
     0.465
    ],
    "questionText": "This excerpt is a fusion of different styles of music. Discuss, with reference to the music heard in the excerpt.",
-   "questionContext": "Irish Music This question is based on three excepts of music.",
+   "questionContext": "Irish Music This question is based on three excepts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 3, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1534,7 +1534,7 @@
     0.395
    ],
    "questionText": "The time signature of the music in this excerpt is",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1587,7 +1587,7 @@
     0.5
    ],
    "questionText": "Name the instrument which plays the accompaniment in this excerpt.",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1630,7 +1630,7 @@
     0.805
    ],
    "questionText": "Describe the texture of the music heard in this excerpt.",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1684,7 +1684,7 @@
     0.55
    ],
    "questionText": "The missing notes at X on the score are",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 3, played three times. An outline score of the opening vocal melody is printed below.",
    "needsRecording": true,
    "figure": {
@@ -1737,7 +1737,7 @@
     0.232
    ],
    "questionText": "How many bars of music are heard in the introduction?",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 4, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1780,7 +1780,7 @@
     0.36
    ],
    "questionText": "Identify one feature of the vocal music heard in this excerpt.",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 4, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1841,7 +1841,7 @@
     0.66
    ],
    "questionText": "Describe one difference between the music heard in Excerpt 4 and the music heard in Excerpt 5. Refer to both excerpts in your answer.",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 4, played once more and Excerpt 5, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1899,7 +1899,7 @@
     0.92,
     0.875
    ],
-   "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+   "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -2014,7 +2014,7 @@
     0.92,
     0.815
    ],
-   "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+   "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -2269,7 +2269,7 @@
     0.92,
     0.865
    ],
-   "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a minuet. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+   "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a minuet. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -2384,7 +2384,7 @@
     0.92,
     0.825
    ],
-   "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+   "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -2500,7 +2500,7 @@
     0.92,
     0.82
    ],
-   "questionText": "Composing melody and bass notes from a set of chords at cadence points • Write out the scale of Bb major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Using the given rhythms, add melody and bass notes to complete the cadences and approach chords as follows: • (i) At A, an imperfect cadence with approach chord (I—IV—V) • (ii) At B, a perfect cadence with approach chord (ii—V—I) • (iii) At C, an interrupted cadence with approach chord (ii—V—vi) • (iv) At D, a plagal cadence with approach chord (vi—IV—I)",
+   "questionText": "Composing melody and bass notes from a set of chords at cadence points Preparatory work: • Write out the scale of Bb major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Using the given rhythms, add melody and bass notes to complete the cadences and approach chords as follows: • (i) At A, an imperfect cadence with approach chord (I—IV—V) • (ii) At B, a perfect cadence with approach chord (ii—V—I) • (iii) At C, an interrupted cadence with approach chord (ii—V—vi) • (iv) At D, a plagal cadence with approach chord (vi—IV—I)",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -2599,7 +2599,7 @@
     0.92,
     0.76
    ],
-   "questionText": "Adding bass notes and chord indications at cadence points • Write out the scale of G major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Add suitable bass notes and chord indications to complete the cadences at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both. • Do not repeat the same chord in adjacent boxes.",
+   "questionText": "Adding bass notes and chord indications at cadence points Preparatory work: • Write out the scale of G major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Add suitable bass notes and chord indications to complete the cadences at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both. • Do not repeat the same chord in adjacent boxes.",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -2698,7 +2698,7 @@
     0.92,
     0.78
    ],
-   "questionText": "Adding descant notes and chord indications at cadence points • Write out the scale of F major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Complete the phrase endings by adding suitable chords and descant notes at the cadence points A, B, C and D. • You may use either chord symbols or Roman numerals, but not both.",
+   "questionText": "Adding descant notes and chord indications at cadence points Preparatory work: • Write out the scale of F major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Complete the phrase endings by adding suitable chords and descant notes at the cadence points A, B, C and D. • You may use either chord symbols or Roman numerals, but not both.",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -2782,6 +2782,21 @@
    },
    "sharedCard": null,
    "notes": "Section B: the \"Preparatory work\" (scale and chord bank) is MARKED at Ordinary Level (\"Grid / Stave\", 1 mark per correct note of chord, 1 x 12), so its bullets are part of the question text and its line is a counted criterion. The four cadence criteria are the scheme’s \"Criteria for awarding marks at cadence points\" lines, each 12 over the four cadences (the per-cadence table A-D prints the same lines at 1 x 3 and 3). The two \"Up to 3 marks for quality ... (3 x 4)\" lines carry no bands and sit on 0-12. The Section B general points (scheme p6) are carried on all three questions. The 2025 Ordinary scheme prints NO table of given or accepted chords for Q4-Q6, so there is no scheme crop."
+  }
+ ],
+ "readFromPage": [
+  {
+   "booklet": "listening",
+   "page": 8,
+   "box": [
+    0.08,
+    0.505,
+    0.92,
+    0.645
+   ],
+   "text": "Excerpt 2, played three times. The opening lyrics are printed below. Line 1 Galileo, Galileo, Galileo, Galileo, Line 2 Galileo Figaro. Magnifico. Line 3 I’m just a poor boy, nobody loves me. Line 4 He’s just a poor boy from a poor family, Line 5 Spare him his life from this monstrosity.",
+   "readBy": "music lane lead, 19 Nov 2026, from a 220 dpi render of the page",
+   "why": "The booklet has no usable text layer and the OCR readings drop the \"Line 2\" and \"Line 5\" labels of the printed lyrics."
   }
  ]
 }

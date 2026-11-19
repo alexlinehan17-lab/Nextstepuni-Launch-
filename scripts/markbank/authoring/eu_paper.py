@@ -68,13 +68,46 @@ LANGS = {
         # those as section boundaries.
         'section_tab': r'^Parte\s+([AB])\b',
         'aural_tab': r'^Parte\s+([A-E])\b',
-        # The classic examination's two halves, printed as words.
-        'classic_part': r'^(Primeira|Segunda)\s+Parte\b',
+        # The classic examination's parts. 2021 prints its two halves as
+        # words, "Primeira Parte" and "Segunda Parte"; the 100-mark paper of
+        # 2010 to 2019 prints three, "Parte I", "Parte II" and "Parte III"
+        # (2011 with its marks on the same line, "Parte I (30 pontos)"). Knowing
+        # only the words, the reader found no part in any of those ten
+        # sittings, and each censused zero asks while its scheme was read.
+        # "Partes I, II e III da Prova." in the rubric is not a head: "Parte"
+        # has to be followed by a space.
+        'classic_part': (r'^(?:(Primeira|Segunda)\s+Parte|'
+                         r'Parte\s+(I{1,3}))\b'),
         'classic_part_map': {'primeira': 'I', 'segunda': 'II'},
-        # The second part's essay options, which the SEC titles rather than
-        # numbers: "Tópico 1", "Tópico 2". The scheme numbers them "Tema 1"
-        # and "Tema 2", so the paper's own title carries the number.
-        'essay_title': r'^T[óo]pico\s+(\d)\b',
+        # The heads whose printed prices make up the paper's total. Only
+        # 2021's: the 100-mark paper states its own total, "Máximo 100
+        # pontos", and that sentence is what cover_marks reads when no head is
+        # priced. Summing the heads instead gave 2011 seventy, because it
+        # prints Parte I's price INSIDE the head line ("Parte I (30 pontos)"),
+        # which _part_head_tariff does not read.
+        'classic_total_part': r'^(Primeira|Segunda)\s+Parte\b',
+        # The writing options, which the SEC titles rather than numbers:
+        # "Tópico 1", "Tópico 2" in 2021, "Proposta 1", "Proposta 2" in Parte
+        # III of 2010-2019. The scheme numbers them "Tema 1" and "Tema 2", so
+        # the paper's own title carries the number.
+        'essay_title': r'^(?:T[óo]pico|Proposta)\s+(\d)\b',
+        # The glossary the 100-mark paper prints under its text: "1 Pensador e
+        # crítico de literatura.", "2 Fernando Pessoa (1888-1935)…". A number
+        # with NO stop or bracket after it, which no Portuguese question ever
+        # is. Read as a question head, 2013's footnote "1 Nome por que era
+        # conhecido o pai…" opened Question 1, and the five expressions of
+        # the real Question 1 were filed under the footnote's words. Such a
+        # line opens nothing.
+        'classic_footnote': r'^\d{1,2}(?!\s*[.)])\s*[^\W\d]',
+        # The 100-mark paper prints "Parte I" TWICE in 2015, 2017, 2018 and
+        # 2019: once above the text and again above the questions. Under the
+        # second, the run starts again, as it does at a restarted "1." — and
+        # for the same reason: 2017 numbers its text's paragraphs "1." to
+        # "11.", and kept, paragraphs 7 to 11 censused as five more questions
+        # and paragraphs 1 to 6 collided with the six real ones (18 asks for
+        # a paper that prints 13). Only what nothing priced is let go, as at
+        # the restart.
+        'classic_rehead_restarts': True,
         # The `\b` used to close the whole run, so it had to hold after the
         # DASH of the running head — and "Portuguese – Higher Level" has a
         # space there, so the foot of every page reached the ask above it.
@@ -1054,6 +1087,11 @@ class EuPaper:
         tail_pat = re.compile(tail, re.I) if tail else None
         numeral_only = re.compile(r'^(I{1,3}|[123])\s*\.?$')
         furniture = re.compile(cfg(self.subject, 'furniture'), re.I)
+        # Both opt-in, set by Portuguese alone (see LANGS): a glossary line
+        # that may never open a question, and a part head printed twice.
+        foot = cfg(self.subject, 'classic_footnote')
+        foot_pat = re.compile(foot) if foot else None
+        rehead = cfg(self.subject, 'classic_rehead_restarts')
 
         asks, part, q, letter = [], None, None, None
         current, last_y = None, None
@@ -1106,7 +1144,19 @@ class EuPaper:
             if pm:
                 close_part()
                 token = next(g for g in pm.groups() if g).lower()
-                part = part_map.get(token) or _part_token(token)
+                reheaded = part_map.get(token) or _part_token(token)
+                if rehead and part is not None and reheaded == part \
+                        and part == first_part \
+                        and not any(a.section == part and a.margin_price
+                                    for a in asks):
+                    # The first part headed a second time: what was read
+                    # under the first head was its text, as at a restart.
+                    for a in [a for a in asks if a.section == part]:
+                        text_pages.setdefault(part, [])
+                        if a.page not in text_pages[part]:
+                            text_pages[part].append(a.page)
+                    asks = [a for a in asks if a.section != part]
+                part = reheaded
                 first_part = first_part or part
                 q, letter = None, None
                 continue
@@ -1133,6 +1183,8 @@ class EuPaper:
                 prompt_page = prompt_page or line.page
                 continue
             nm = NUMBERED.match(line.text)
+            if nm and foot_pat is not None and foot_pat.match(line.text):
+                nm = None
             lm = letter_pat.match(line.text)
             at_margin = line.x <= self.left_margin + HEAD_INDENT
             # The RUN RESTARTS at 1, and where it does the questions have not
@@ -1398,7 +1450,8 @@ class EuPaper:
         return [a for a in self.all_asks() if (a.section or '').startswith('L')]
 
     def _part_totals(self):
-        pattern = cfg(self.subject, 'classic_part')
+        pattern = (cfg(self.subject, 'classic_total_part')
+                   or cfg(self.subject, 'classic_part'))
         if not pattern:
             return {}
         return _part_head_tariff(self.lines, re.compile(pattern, re.I))
