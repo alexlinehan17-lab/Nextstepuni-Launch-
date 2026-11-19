@@ -23792,10 +23792,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Spontaneously (1) with Irish (1) teenagers (1) who will participate in afternoon (1) activities (1)",
-    "marks": 4,
-    "contextNote": "The scheme prices this half of the ask separately, under the heading “Four elements required”. Answer in English or Irish."
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "Spontaneously",
+      "with Irish",
+      "teenagers",
+      "who will participate in afternoon",
+      "activities"
+     ]
+    },
+    "contextNote": "The scheme asks for \"Four elements required\", each worth (1). The scheme also pays part marks for a shorter answer: “Young people from Ireland” 2 marks; “Evening” 1 mark; “Irish people” 1 mark. Answer in English or Irish."
    }
   ],
   "notes": "The scheme prints the tariff as '4 marks (1+1+1+1)'; the listening booklet prints this ask on page 5.",
@@ -33241,10 +33252,27 @@
   "rows": [
    {
     "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "She worked as waitress",
+    "marks": 2,
+    "contextNote": "The scheme prints “in April (1m) and” over “May (1m) (before going away)”. The scheme also pays part marks for a shorter answer: “worked” 1 mark. Answer in English or Irish.",
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "id": "r-2",
     "kind": "point",
-    "verbatim": "She worked as waitress (2m)/in April (1m) and",
-    "marks": 4,
-    "contextNote": "Answer in English or Irish."
+    "verbatim": "in April",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "May",
+    "marks": 1
    }
   ],
   "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 6.",
