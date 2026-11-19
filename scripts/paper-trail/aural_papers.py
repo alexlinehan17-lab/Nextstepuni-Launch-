@@ -157,7 +157,25 @@ def lines_with_pos(page):
     return out
 
 
-def paper_questions(doc):
+# Booklets whose PARTS are the answer map's units though the question run
+# looks longer, keyed by year/fileid. The Portuguese listening booklets of
+# 2022 Ordinary, 2023 and 2024 restart their question numbers in every Parte,
+# and a later Parte prints more questions than the first, so the run "1..N"
+# splices one Parte's numbers onto another's and wins over the five Partes:
+# 2024 (and 2022 OL IV, 2023 HL IV) then read their answers off the scheme's
+# READING pages; 2022 OL EV and 2023 EV/IV OL mapped "questions" 6-8 onto
+# later Partes. Every other Portuguese map (2022 HL, 2025, 2026) already
+# numbers the Partes. A general restart test would move maps of other
+# languages too (Japanese, Polish, Russian), so the override names the
+# papers. EV and IV twins alike.
+FORCE_PARTS = {"2022/LC018GLPA00EV.pdf", "2022/LC018GLPA00IV.pdf",
+               "2023/LC018ALPA00EV.pdf", "2023/LC018ALPA00IV.pdf",
+               "2023/LC018GLPA00EV.pdf", "2023/LC018GLPA00IV.pdf",
+               "2024/LC018ALPA00EV.pdf", "2024/LC018ALPA00IV.pdf",
+               "2024/LC018GLPA00EV.pdf", "2024/LC018GLPA00IV.pdf"}
+
+
+def paper_questions(doc, force_parts=False):
     """{n: (page1, y)} — the longest ascending 1..N run of question heads.
 
     The booklet's cover counts its own questions ("There are seven questions in
@@ -208,7 +226,7 @@ def paper_questions(doc):
         # its runs extend past part 2 and keep question mode.
         confined = best and all(
             pg < p2pg or (pg == p2pg and y < p2y) for pg, y in best.values())
-        if len(prun) > len(best) or confined:
+        if len(prun) > len(best) or confined or force_parts:
             return {n: (pg, y) for n, (pg, y, _) in prun.items()}, \
                 {n: lab for n, (_, _, lab) in prun.items()}
     return best, None
@@ -334,7 +352,8 @@ def scheme_blocks(doc, want_n, paper_words, parts_mode=False):
 
 def build_sidecar(paper_path, scheme_path):
     paper, scheme = fitz.open(paper_path), fitz.open(scheme_path)
-    pq, part_labels = paper_questions(paper)
+    key = f"{os.path.basename(os.path.dirname(paper_path))}/{os.path.basename(paper_path)}"
+    pq, part_labels = paper_questions(paper, force_parts=key in FORCE_PARTS)
     if not (2 <= len(pq) <= 12):
         return None, f"paper run is {len(pq)} heads — outside any aural format"
     sb = scheme_blocks(scheme, len(pq), _harvest_words(paper),
