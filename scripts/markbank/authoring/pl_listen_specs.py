@@ -273,7 +273,7 @@ def cards(year, level):
 
 
 SECTION_TOTAL = re.compile(
-    r'^Cz[eę][sś][cć]\s+([A-E])\s*[–-].*?(?:[–-]\s*|\(\s*)(\d{1,3})\s*marks?\s*\)?$', re.I)
+    r'^Cz[eę][sś][cć]\s+([A-E])\s*[–‐-].*?(?:[–‐-]\s*|\(\s*)(\d{1,3})\s*marks?\s*\)?$', re.I)
 
 
 # ================================================================ 2026 HL ===
@@ -325,6 +325,12 @@ SPECS[(2026, 'hl')] = [
     C('LE3', [menu([S(535), S(536)] + [S(n) for n in range(541, 547)], T(534))]),
     C('LE4', [menu([S(n) for n in range(550, 556)], T(549), [part(S(557), 4, T(557))])]),
 ]
+
+
+def quoted(*sels):
+    """A marking instruction the scheme prints over the answer ("All or
+    nothing:"), quoted for the student."""
+    return lambda d: ' '.join(f'The scheme notes: “{s.text(d)}”.' for s in sels)
 
 
 def conflict(head, tariff, asked):
@@ -572,3 +578,51 @@ SPECS[(2024, 'ol')] = [
                    lead=S(419, before=' - sunny'))],
       total=T(413), extra=(PL(7, 'in the mountains'),)),
 ]
+
+
+# ================================================================ 2023 HL ===
+# Scheme .md lines 354-495 (pages 12-16). Część A and B answer in Polish, C to
+# E in English. Section totals as printed: A 22, B 18, C 22, D 14, E 24 (= 100);
+# A, B and D set their heads with U+2010 hyphens.
+SPECS[(2023, 'hl')] = [
+    C('LA1', [one(S(356), T(356))]),
+    # "(2 x 2m)" over exactly two printed answers: both are asked for.
+    C('LA2', [one(S(358), T(357, each=True)), one(J(S(359), S(360)), T(357, each=True))],
+      total=T(357)),
+    C('LA3', [one(S(363), T(362, each=True)), one(S(364), T(362, each=True))], total=T(362)),
+    C('LA4i', [one(S(366, after='wykształcenie. '), T(365))]),
+    C('LA4ii', [menu([S(369), S(370), S(371)], T(368))]),
+    C('LA5', [menu([S(n) for n in range(374, 379)], T(373))]),
+    C('LA6', [one(S(381), T(379))], rownote=quoted(S(380))),
+    C('LB1', [menu([S(389), S(390), S(391)], T(388))]),
+    C('LB2', [one(S(393, after='powstały? '), T(392, each=True), lead=S(393, before=' w celu')),
+              one(S(394, after='Kiedy? '), T(392, each=True), lead=S(394, before=' po II'))],
+      total=T(392)),
+    C('LB3', [menu([S(n) for n in range(397, 404)], T(396))]),
+    C('LB4', [one(S(405), T(404, each=True)), one(S(406), T(404, each=True))], total=T(404)),
+    C('LC1', [menu([S(414), S(415)], T(413))]),
+    C('LC2i', [one(S(418), T(417))], rownote=quoted(S(417))),
+    C('LC2ii', [menu([S(n) for n in range(421, 425)], T(420))]),
+    C('LC2iii', [one(S(426), T(425))]),
+    C('LC3', [menu([S(n) for n in range(429, 440)], T(428))]),
+    C('LC4', [one(S(441, after='Mrągowo. '), T(440))]),
+    C('LC5', [one(S(443), T(443))]),
+    C('LD1', [one(S(450, after='built? '), T(449, each=True), lead=S(450, before=' in 1970s')),
+              one(S(451, after='is it? '), T(449, each=True), lead=S(451, before=' (almost)')),
+              one(S(452, after='remind us of? '), T(449, each=True), lead=S(452, before=' a sea'))],
+      total=T(449)),
+    C('LD2', [menu([S(n) for n in range(455, 458)], T(454))]),
+    C('LD3', [menu([S(n) for n in range(460, 463)], T(459))]),
+    # Multiple choice: the scheme prints the ticked box's words.
+    C('LE1', [one(S(470, before=' ✓'), T(470))],
+      extra=(PL(7, 'in September'), PL(7, 'for the thirty'), PL(7, 'for Polish students'),
+             PL(7, 'online only'))),
+    C('LE2', [menu([S(n) for n in range(473, 481)], T(472))]),
+    C('LE3', [one(S(482, after='type '), T(481, each=True), lead=S(482, before=' photo')),
+              one(S(483, after='title '), T(481, each=True), lead=S(483, before=' “My')),
+              one(S(484, after='prize '), T(481, each=True), lead=S(484, before=' 1 200'))],
+      total=T(481)),
+    C('LE4', [menu([S(n) for n in range(487, 491)], T(486))]),
+    C('LE5', [menu([S(n) for n in range(493, 496)], T(492))]),
+]
+

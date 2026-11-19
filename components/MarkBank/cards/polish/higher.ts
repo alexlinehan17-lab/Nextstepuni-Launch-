@@ -1480,6 +1480,2280 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-a-1-d-ii", topicId: "polish-3-1", conceptId: "podkreslone-wyrazy-zastap-synonimami-zdania-ktorych",
+    section: "A", questionRef: "2023 HL Section A Q1(d)(ii)",
+    questionText: "Podkreślone wyrazy zastąp synonimami. Zdania, z których pochodzą, powinny zachować swoje znaczenie. Chciałam być ostatnia, żebyś miała dla mnie więcej czasu, więc przepuściłam mnóstwo osób. (akapit 6) mnóstwo –",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "wiele/ dużo / sporo", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                3,
+                4
+          ],
+          "attribution": "SEC Polish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-la-1", topicId: "polish-2-1", conceptId: "jaki-zawod-wykonuje-kornelia-neumann",
+    section: "LA", questionRef: "2023 HL Section LA Q1",
+    stem: "You will hear an interview with Kornelia Neumann – a company owner. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jaki zawód wykonuje Kornelia Neumann?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(mało popularny) okleja samochody", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-la-2", topicId: "polish-2-1", conceptId: "jak-zaczela-kariera-kornelii-neumann",
+    section: "LA", questionRef: "2023 HL Section LA Q2",
+    stem: "You will hear an interview with Kornelia Neumann – a company owner. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jak zaczęła się kariera Kornelii Neumann?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "przypadkiem", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "(kiedy pracowała w Anglii) dowiedziała się, że pewna firma poszukuje kogoś do pracy przy oklejaniu aut", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-la-3", topicId: "polish-2-1", conceptId: "dlaczego-kornelia-neumann-wybrala-zawod-zwiazany",
+    section: "LA", questionRef: "2023 HL Section LA Q3",
+    stem: "You will hear an interview with Kornelia Neumann – a company owner. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Dlaczego Kornelia Neumann wybrała zawód związany z motoryzacją? Podaj 2 szczegóły.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "motoryzacja interesowała ją od najmłodszych lat", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "lubiła majsterkować przy rowerze / w dzieciństwie rozkładała i składała rower na części", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-la-4-i", topicId: "polish-2-1", conceptId: "zaznacz-prawda-czy-falsz-kornelia-neumann",
+    section: "LA", questionRef: "2023 HL Section LA Q4(i)",
+    stem: "You will hear an interview with Kornelia Neumann – a company owner. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Zaznacz (✓) prawda czy fałsz. Kornelia Neumann twierdzi, że w jej pracy liczy się wykształcenie.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fałsz", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 4(i)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-la-4-ii", topicId: "polish-2-1", conceptId: "kornelia-neumann-mowi-swojej-pracy-anglii",
+    section: "LA", questionRef: "2023 HL Section LA Q4(ii)",
+    stem: "You will hear an interview with Kornelia Neumann – a company owner. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Co Kornelia Neumann mówi o swojej pracy w Anglii? Podaj 2 szczegóły.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["pracowała po 16 godzin na dobę","chciała jak najwięcej się nauczyć","chciała jak najszybciej się nauczyć"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 4(ii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-la-5", topicId: "polish-2-1", conceptId: "dlaczego-kornelia-neumann-uwaza-osiagnela-sukces",
+    section: "LA", questionRef: "2023 HL Section LA Q5",
+    stem: "You will hear an interview with Kornelia Neumann – a company owner. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Dlaczego Kornelia Neumann uważa, że osiągnęła sukces?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["jej firma świetnie funkcjonuje","robi coś, w czym jest dobra","robi to, co daje jej radość","jej pasja stała się pracą","początki były ciężkie, więc cieszy się, że jej się powiodło"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 5",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-la-6", topicId: "polish-2-1", conceptId: "czym-marzy-kornelia-neumann",
+    section: "LA", questionRef: "2023 HL Section LA Q6",
+    stem: "You will hear an interview with Kornelia Neumann – a company owner. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "O czym marzy Kornelia Neumann?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "żeby jej biznes stał się rozpoznawalny nie tylko w Polsce, ale i w całej Europie", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme notes: “All or nothing:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 6",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-lb-1", topicId: "polish-2-1", conceptId: "jak-wyglada-tunel-fruwania",
+    section: "LB", questionRef: "2023 HL Section LB Q1",
+    stem: "Flyspot – tunel do fruwania You will hear about Flyspot. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jak wygląda tunel do fruwania? Podaj 2 szczegóły.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["pionowa tuba","szklana tuba","szeroka tuba"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-lb-2", topicId: "polish-2-1", conceptId: "informacje-dotyczace-pierwszych-tuneli-fruwania-powstaly",
+    section: "LB", questionRef: "2023 HL Section LB Q2",
+    stem: "Flyspot – tunel do fruwania You will hear about Flyspot. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Podaj informacje dotyczące pierwszych tuneli do fruwania. Po co powstały? Kiedy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "w celu szkolenia żołnierzy", marks: 2, contextNote: "For “Po co powstały?”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "po II wojnie światowej", marks: 2, contextNote: "For “Kiedy?”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-lb-3", topicId: "polish-2-1", conceptId: "czynnosci-ktore-nalezy-wykonac-przed-lotem",
+    section: "LB", questionRef: "2023 HL Section LB Q3",
+    stem: "Flyspot – tunel do fruwania You will hear about Flyspot. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Wymień 3 czynności, które należy wykonać przed lotem.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["umówić się na spotkanie","przyjść (30 minut) wcześniej","wypełnić oświadczenie (o stanie zdrowia)","założyć kombinezon","założyć kask","założyć gogle","odbyć szkolenie"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-lb-4", topicId: "polish-2-1", conceptId: "zalezy-cena-biletu",
+    section: "LB", questionRef: "2023 HL Section LB Q4",
+    stem: "Flyspot – tunel do fruwania You will hear about Flyspot. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Od czego zależy cena biletu? Podaj 2 szczegóły.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "od liczby lotów", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "od wieku (klienta)", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-lc-1", topicId: "polish-2-1", conceptId: "mragowo-located",
+    section: "LC", questionRef: "2023 HL Section LC Q1",
+    stem: "Mrągowo You will hear about Mrągowo. There will be pauses during the second playing. Answer in English.",
+    questionText: "Where is Mrągowo located?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":2,"options":["north of Poland","Masuria/Mazury"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-lc-2-i", topicId: "polish-2-1", conceptId: "mragowo-surrounded",
+    section: "LC", questionRef: "2023 HL Section LC Q2(i)",
+    stem: "Mrągowo You will hear about Mrągowo. There will be pauses during the second playing. Answer in English.",
+    questionText: "What is Mrągowo surrounded by?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "forests and lakes", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language. The scheme notes: “All or nothing:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 2(i)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-lc-2-ii", topicId: "polish-2-1", conceptId: "town-centre",
+    section: "LC", questionRef: "2023 HL Section LC Q2(ii)",
+    stem: "Mrągowo You will hear about Mrągowo. There will be pauses during the second playing. Answer in English.",
+    questionText: "Describe the town centre. Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["(it is) pretty","(there are) historic (tenement) houses there","(there are) paved/cobbled streets","(there is) charming market square there"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 2(ii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-lc-2-iii", topicId: "polish-2-1", conceptId: "learn-museum-warmia-mazury",
+    section: "LC", questionRef: "2023 HL Section LC Q2(iii)",
+    stem: "Mrągowo You will hear about Mrągowo. There will be pauses during the second playing. Answer in English.",
+    questionText: "What can one learn in the Museum of Warmia and Mazury?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "the legend about a (black) bear (whose cut paw became a symbol of the town)", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 2(iii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-lc-3", topicId: "polish-2-1", conceptId: "attracts-tourists-mragowo-summer",
+    section: "LC", questionRef: "2023 HL Section LC Q3",
+    stem: "Mrągowo You will hear about Mrągowo. There will be pauses during the second playing. Answer in English.",
+    questionText: "What attracts tourists to Mrągowo in summer? Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["festivals","(beautiful) gardens","old churches","cable/rope park/zip wire","(gallery of) stone figures / sculptures","sailing","swimming (in lakes)","sunbathing on the beach","marina","(a ride) on a water tram","drinking water from the spring"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-lc-4", topicId: "polish-2-1", conceptId: "tick-true-false-good-drinking-water",
+    section: "LC", questionRef: "2023 HL Section LC Q4",
+    stem: "Mrągowo You will hear about Mrągowo. There will be pauses during the second playing. Answer in English.",
+    questionText: "Tick (✓) true or false. Good drinking water was not always available in the area of Mrągowo.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-lc-5", topicId: "polish-2-1", conceptId: "attracts-tourists-mragowo-winter",
+    section: "LC", questionRef: "2023 HL Section LC Q5",
+    stem: "Mrągowo You will hear about Mrągowo. There will be pauses during the second playing. Answer in English.",
+    questionText: "What attracts tourists to Mrągowo in winter?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "skiing/winter sports", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 5",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-ld-1", topicId: "polish-2-1", conceptId: "fill-table-below-building-built-long",
+    section: "LD", questionRef: "2023 HL Section LD Q1",
+    stem: "Audycja radiowa You will hear a radio broadcast „Nieoczywiste atrakcje turystyczne”. There will be pauses during the second playing. Answer in English.",
+    questionText: "Fill in the table below about the building: When was it built? How long is it? What does its shape remind us of?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "in 1970s", marks: 2, contextNote: "For “When was it built?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "(almost) 1 km", marks: 2, contextNote: "For “How long is it?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-3", kind: "point", verbatim: "a sea wave", marks: 2, contextNote: "For “What does its shape remind us of?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-ld-2", topicId: "polish-2-1", conceptId: "facilities-there-building",
+    section: "LD", questionRef: "2023 HL Section LD Q2",
+    stem: "Audycja radiowa You will hear a radio broadcast „Nieoczywiste atrakcje turystyczne”. There will be pauses during the second playing. Answer in English.",
+    questionText: "What facilities are there in the building? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["shops","bank","hairdressers/barbers"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-ld-3", topicId: "polish-2-1", conceptId: "examples-show-building-inspires-artists",
+    section: "LD", questionRef: "2023 HL Section LD Q3",
+    stem: "Audycja radiowa You will hear a radio broadcast „Nieoczywiste atrakcje turystyczne”. There will be pauses during the second playing. Answer in English.",
+    questionText: "Give two examples which show that the building inspires artists.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["they write books (about it)","(the building appeared) in the movie/film","(the building appeared) in a music video"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-le-1", topicId: "polish-2-1", conceptId: "tick-correct-box-tick-box-only",
+    section: "LE", questionRef: "2023 HL Section LE Q1",
+    stem: "Wiadomości You will hear four news items. There will be pauses during the second playing. Answer in English. Item 1",
+    questionText: "Tick (✓) the correct box. Tick one box only. The Summer Polish Language School is organized: in September for the thirty-third time for Polish students only online only",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "for the thirty‐ third time", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 1",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-le-2", topicId: "polish-2-1", conceptId: "students-participate",
+    section: "LE", questionRef: "2023 HL Section LE Q2",
+    stem: "Wiadomości You will hear four news items. There will be pauses during the second playing. Answer in English. Item 1",
+    questionText: "What can students participate in? Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["Polish language classes","lectures","theater (meetings)","concerts","movie/film shows","workshops","language games","weekend trips"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-le-3", topicId: "polish-2-1", conceptId: "fill-table-below-competition-walbrzych-type",
+    section: "LE", questionRef: "2023 HL Section LE Q3",
+    stem: "Wiadomości You will hear four news items. There will be pauses during the second playing. Answer in English. Item 2",
+    questionText: "Fill in the table below about the competition in Wałbrzych: type title main prize",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "photo competition", marks: 2, contextNote: "For “type”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "“My Town”", marks: 2, contextNote: "For “title”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-3", kind: "point", verbatim: "1 200 złotych", marks: 2, contextNote: "For “main prize”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 3",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-le-4", topicId: "polish-2-1", conceptId: "capsules-warsaw-modlin-airport-equipped",
+    section: "LE", questionRef: "2023 HL Section LE Q4",
+    stem: "Wiadomości You will hear four news items. There will be pauses during the second playing. Answer in English. Item 3",
+    questionText: "What are the capsules of Warsaw Modlin Airport equipped with? Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["internet/Wi Fi","sockets/plug (to charge phone)","USB slot","touch screen TV"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 4",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
+    id: "pl-2023-hl-le-5", topicId: "polish-2-1", conceptId: "happened-playground-poznan",
+    section: "LE", questionRef: "2023 HL Section LE Q5",
+    stem: "Wiadomości You will hear four news items. There will be pauses during the second playing. Answer in English. Item 4",
+    questionText: "What happened in the playground in Poznań? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["(people were scared because) there was a snake there","people informed the guards","the guards found (caught) a snake (under the hood/bonnet of the car)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 5",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2023 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2023-hl-b-3-a", topicId: "polish-3-3", conceptId: "dzisiaj-nawet-ludzie-przecietni-stanie-zdobyc",
+    section: "B", questionRef: "2023 HL Section B Q3(a)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 200 słów.",
+    questionText: "Dzisiaj nawet ludzie przeciętni są w stanie zdobyć popularność, która dawniej była zarezerwowana tylko dla najwybitniejszych. Wyraź swoją opinię, odwołując się do tekstu numer 1.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalized twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e‐mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 3",
+          "title": "Pytanie 3 (a) — answer in Polish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Polish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2023-hl-b-3-b", topicId: "polish-3-3", conceptId: "czy-zgadzasz-tym-rok-przerwy-edukacji",
+    section: "B", questionRef: "2023 HL Section B Q3(b)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 200 słów.",
+    questionText: "Czy zgadzasz się z tym, że rok przerwy w edukacji może przynieść korzyści, ale też problemy? Udziel odpowiedzi na podstawie tekstu numer 2.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalized twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e‐mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 3",
+          "title": "Pytanie 3 (b) — answer in Polish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Polish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2023-hl-b-3-c", topicId: "polish-3-3", conceptId: "polacy-roznia-innych-narodow-pod-wzgledem",
+    section: "B", questionRef: "2023 HL Section B Q3(c)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 200 słów.",
+    questionText: "Polacy różnią się od innych narodów pod względem: tradycji, wierzeń i zwyczajów. Wyraź swoją opinię na ten temat, odwołując się do wybranych przykładów.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalized twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e‐mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 3",
+          "title": "Pytanie 3 (c) — answer in Polish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Polish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2023-hl-b-4-a", topicId: "polish-3-3", conceptId: "wakacje-czekalem-dlugiego-czasu-zredaguj-wpis",
+    section: "B", questionRef: "2023 HL Section B Q4(a)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 200 słów.",
+    questionText: "Na te wakacje czekałem od długiego czasu. Zredaguj wpis do pamiętnika. Porusz następujące kwestie:\n• chaos na lotnisku\n• pomyłka w rezerwacji hotelu\n• wyjątkowe miejsce w Polsce\n• okazja do porozumiewania się w języku polskim",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalized twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e‐mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 4",
+          "title": "Pytanie 4 (a) — answer in Polish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Polish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2023-hl-b-4-b", topicId: "polish-3-3", conceptId: "samorzad-uczniowski-twojej-szkoly-zamierza-zorganizowac",
+    section: "B", questionRef: "2023 HL Section B Q4(b)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 200 słów.",
+    questionText: "Samorząd uczniowski twojej szkoły zamierza zorganizować zbiórkę pieniędzy na cel charytatywny. Napisz e-mail do dyrektora szkoły w tej sprawie. Zamieść w nim:\n• prośbę o wyrażenie zgody na zorganizowanie zbiórki\n• informacje na temat wybranej organizacji/ instytucji, którą planujecie wesprzeć\n• wydarzenie dnia (np.: zaproszony gość, konkurs) wraz z opisem\n• argument pokazujący korzyści, jakie akcja ta przyniesie całej szkole",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalized twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e‐mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 4",
+          "title": "Pytanie 4 (b) — answer in Polish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Polish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2023-hl-b-4-c", topicId: "polish-3-3", conceptId: "byles-koncercie-napisz-opowiadanie-tresci-uwzglednij",
+    section: "B", questionRef: "2023 HL Section B Q4(c)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 200 słów.",
+    questionText: "Byłeś na koncercie. Napisz opowiadanie. W treści uwzględnij punkty:\n• trudności z zakupem biletu\n• długie oczekiwanie na występ\n• niespodziewane spotkanie w hali koncertowej\n• powrót do domu",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalized twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e‐mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 4",
+          "title": "Pytanie 4 (c) — answer in Polish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Polish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2023-hl-b-5-a", topicId: "polish-3-3", conceptId: "spojrz-zamieszczony-obok-obrazek-opisz-zdaniach",
+    section: "B", questionRef: "2023 HL Section B Q5(a)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 150 słów.",
+    questionText: "Spójrz na zamieszczony obok obrazek.\n• Opisz w 3 – 4 zdaniach, co na nim widzisz.\n• Czy sklepy on-line są przyszłością handlu? Uzasadnij.\n• Nie wszystko można kupić. Podaj przykład i wyjaśnij.\n• Ludzie kupują zbyt wiele – odnosi się to do każdej dziedziny życia. Skomentuj.",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalized twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [9,10],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e‐mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [9,10],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 5",
+          "title": "Pytanie 5 (a) — answer in Polish",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Polish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2023-hl-b-5-b", topicId: "polish-3-3", conceptId: "spojrz-zamieszczony-obok-obrazek-opisz-zdaniach",
+    section: "B", questionRef: "2023 HL Section B Q5(b)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 150 słów.",
+    questionText: "Spójrz na zamieszczony obok obrazek.\n• Opisz w 3 – 4 zdaniach, co na nim widzisz.\n• Czy występy zwierząt w cyrkach powinny być zakazane? Podaj dwa powody za lub przeciw.\n• Które zwierzę najbardziej kojarzy ci się z Polską? Wyjaśnij dlaczego.\n• Zwierzęta uczą odpowiedzialności. Uzasadnij.",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalized twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [9,10],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e‐mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [9,10],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 5",
+          "title": "Pytanie 5 (b) — answer in Polish",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Polish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2023 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2023-hl-b-5-c", topicId: "polish-3-3", conceptId: "spojrz-zamieszczony-obok-obraz-tamary-lempickiej",
+    section: "B", questionRef: "2023 HL Section B Q5(c)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 150 słów.",
+    questionText: "Spójrz na zamieszczony obok obraz Tamary Łempickiej.\n• Opisz w 3 – 4 zdaniach, co na nim widzisz.\n• Czy nauka gry na instrumencie powinna być obowiązkowym przedmiotem w szkole? Uzasadnij.\n• Muzyka łączy czy dzieli pokolenia? Wyjaśnij swoje stanowisko.\n• Które dźwięki najbardziej cię irytują? Wymień 2 i wytłumacz dlaczego.",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalized twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right‐hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [9,10],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e‐mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [9,10],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 5",
+          "title": "Pytanie 5 (c) — answer in Polish",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Polish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC548ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2024 Higher Level — © State Examinations Commission.",

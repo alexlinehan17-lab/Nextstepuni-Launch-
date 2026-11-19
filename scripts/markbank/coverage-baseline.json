@@ -633,11 +633,11 @@
     "refsHash": "83bd7bc978ad6302"
   },
   "polish": {
-    "cards": 510,
-    "contentHash": "e2b4640a4abd6664",
+    "cards": 546,
+    "contentHash": "d00f4fe5b7a9aa4a",
     "coveragePct": 82.9,
-    "covered": 519,
-    "excluded": 163,
+    "covered": 555,
+    "excluded": 127,
     "leaves": 823,
     "open": 141,
     "orphans": 0,
@@ -645,7 +645,7 @@
       "count": 32,
       "hash": "6a6c3eeffb300707"
     },
-    "refsHash": "0601c11f8870d313"
+    "refsHash": "3e6dbea011cc220a"
   },
   "politics-and-society": {
     "cards": 623,

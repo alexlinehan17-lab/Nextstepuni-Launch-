@@ -46,6 +46,30 @@ class R:
         self.extra_pages = extra_pages
 
 
+class TextRemainder:
+    """The price of a part the scheme prices nowhere but in its text's total:
+    the "(50 marks)" printed on the text's head line, less the prices printed
+    for the text's other parts (the bank's cards for them, each lifted from
+    its printed tariff). One answer at that price."""
+    def __init__(self, n_total, prefix, own_id):
+        self.n_total, self.prefix, self.own_id = n_total, prefix, own_id
+
+    def read(self, doc):
+        import json
+        line = doc['scheme'][self.n_total - 1]
+        m = re.search(r'\(\s*(\d{1,3})\s*marks\s*\)', line)
+        if not m:
+            raise ValueError(f'scheme line {self.n_total} prints no text total: {line!r}')
+        with open(os.path.join(HERE, '..', 'authored', 'polish.json'), encoding='utf-8') as fh:
+            others = [c for c in json.load(fh)
+                      if c['id'].startswith(self.prefix) and c['id'] != self.own_id]
+        rest = int(m.group(1)) - sum(c['totalMarks'] for c in others)
+        if not 0 < rest <= 10:
+            raise ValueError(f'{self.own_id}: {m.group(0)} less the other parts leaves {rest}')
+        return 1, rest, (f'{m.group(0)} for the text, less the {int(m.group(1)) - rest} '
+                         f'printed for its other {len(others)} parts')
+
+
 def lifted(*sels):
     """A note quoting printed lines, for the student."""
     return lambda d: ' '.join(f'The scheme notes: “{s.text(d)}”.' for s in sels)
@@ -118,6 +142,20 @@ SPECS[(2025, 'ol')] = [
     # under "Prawda" at x=392; "Fałsz" is at x=446). Priced in the Marks column.
     R('A2cvi', [one(S(152, before=' Fałsz'), TM(160))],
       note='The tick stands in the Prawda column (scheme p6, rendered).'),
+]
+
+
+# ================================================================ 2023 HL ===
+SPECS[(2023, 'hl')] = [
+    # Rendered scheme p5: (ii)'s synonyms are printed with no price, and the
+    # (d) head prints none. "Celebrytka z Instagramu (50 marks)" less the 48
+    # its twelve other parts print ((i) "(2m)") leaves 2. The paper prints the
+    # answer line opening with the underlined word, "mnóstwo –" (p5).
+    R('A1dii', [one(S(130), TextRemainder(77, 'pl-2023-hl-a-1-', 'pl-2023-hl-a-1-d-ii'))],
+      question=lambda d, q: ' '.join(
+          [_marker_off(PL(5, '(d) Podkreślone').text(d)), q, PL(5, 'mnóstwo').text(d)]),
+      note=('The scheme prints no price for (ii); its 2 marks are the text\'s printed '
+            '50 less the 48 printed for its other parts (scheme pp4-7).')),
 ]
 
 

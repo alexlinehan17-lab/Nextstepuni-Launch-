@@ -43,7 +43,9 @@ class Sel:
         lines = doc[self.src]
         if not (1 <= self.n <= len(lines)):
             raise ValueError(f'{self.src} line {self.n} does not exist')
-        t = lines[self.n - 1]
+        # 2023 sets its schemes in no-break spaces; anchors are typed with
+        # plain ones (the cut text is whitespace-normalised below either way).
+        t = lines[self.n - 1].replace('\xa0', ' ')
         if self.after is not None:
             if self.after not in t:
                 raise ValueError(f'{self.src} line {self.n}: anchor {self.after!r} not in {t!r}')
