@@ -316,7 +316,12 @@ def cards(year, level, refuse, row_for, concept_for):
         return a
 
     per, key = section_a_key(year, level)
-    stem_a = _sentences(' '.join(B.rubric['A']))
+    # The Section A instruction's last sentence ("Choose what you consider the
+    # most appropriate answer to each question below and indicate your choice
+    # by circling …") loses a printed line in the booklet's text layer in
+    # every 2025-2026 booklet, so the stem stops before it: what is shown is
+    # complete and the paper's own.
+    stem_a = _sentences(' '.join(B.rubric['A']).split(' Choose ')[0])
     for n in sorted(B.section_a):
         q = B.section_a[n]
         ref = f'{year} {lvl} Section LA Q{n}'

@@ -128,7 +128,7 @@ PAGE_FURNITURE = re.compile(r'^(?:Leaving Certificate|Italian\s*[—–-]|Iod[á
                             r'|Lch\s+\d|Page\s+\d|\d{1,3}$|_+$)', re.I)
 
 
-def paper_task(year, level, item):
+def paper_task(year, level, item, english_only=False):
     """The printed task: the English rubric and the Italian task, in page order.
 
     Irish lines are left out (the task itself is set in Italian; the rubric is
@@ -170,6 +170,8 @@ def paper_task(year, level, item):
                         continue
                 if not on:
                     continue
+                if side != 'R' and english_only:
+                    continue
                 if side != 'R':
                     welded = [m.start(1) for m in re.finditer(rf'(?:^|\s)({item}\s*\.\s+[A-Z])', s)]
                     if welded and welded[-1] > 0:
@@ -185,6 +187,93 @@ def paper_task(year, level, item):
                 if not lines or lines[-1] != s:
                     lines.append(s)
     return lines, page_of
+
+
+def join_lines(lines):
+    """The printed task as paragraphs: a line the paper wrapped is joined to
+    the line it continues; a new item ("(a)", "•", "3.") or a line after a
+    full stop, question mark, colon or closing bracket starts a new line."""
+    out = []
+    for l in lines:
+        starts = re.match(r'^(?:\([a-e]\)|•|\d{1,2}\.|[A-Z]\.\s|\(\d+ marks?\))', l)
+        if out and (out[-1].endswith(',') or not starts) and not re.search(r'[.?!:)]$', out[-1]):
+            out[-1] = f'{out[-1]} {l}'
+        else:
+            out.append(l)
+    return out
+
+
+def english_column(year, level, item):
+    """The English column of a bilingual writing page, read WORD by word.
+
+    The row reader welds an Irish line and the English line beside it into
+    one group when the gutter between them is narrow (2025 Ordinary page 16:
+    "In both (a) and (b), write on any four of the" vanished into the Irish),
+    so the column is cut at the page's own midline word by word instead.
+    Returns (lines, page) from the item's head to the next item's.
+    """
+    P = IP.ItPaper(year, level)
+    marked = P.pages.get('C', [])
+    lines, page_of, on = [], None, False
+    with IP.pymupdf.open(P.path) as doc:
+        for pno in range(marked[0] - 1, doc.page_count) if marked else []:
+            page = doc[pno]
+            mid = page.rect.width * 0.47
+            rows = {}
+            for x0, y0, x1, y1, w, *_ in page.get_text('words'):
+                if x0 < mid:
+                    continue
+                key = round((y0 + y1) / 2 / 3)
+                rows.setdefault(key, []).append((x0, w))
+            for key in sorted(rows):
+                text = IP._clean(' '.join(w for _x, w in sorted(rows[key])))
+                if not text or PAGE_FURNITURE.match(text):
+                    continue
+                if on and re.match(rf'^{item + 1}\s*\.', text):
+                    return lines, page_of
+                if not on and re.match(rf'^{item}\s*\.', text):
+                    on, page_of = True, pno + 1
+                if on:
+                    lines.append(text.replace('\uf0b7', '•'))
+    return lines, page_of
+
+
+EN_WORDS = re.compile(r'\b(?:the|and|of|in|to|your|you|any|following|write|choose|answer|'
+                      r'form|below|same|should|not|be|used|twice|questions?|ideas|plan|'
+                      r'weekend|correct|order|both|four|six|eight|seven|nine|some|have|'
+                      r'parts|details|personal|without|using|fill|is|are|going|for|a|an|'
+                      r'with|this|line|begin|letter|dialogue|informal|writing|marks?)\b', re.I)
+
+
+def english_sentences(year, level, item):
+    """The paper's English instruction for a task, as whole printed sentences.
+
+    Read off the page text of the task's pages, cut into sentences, and kept
+    where a sentence is English and nothing else (an Irish or an Italian word
+    in it means the converter welded two columns): every sentence kept is a
+    run of words the page prints in that order.
+    """
+    lines, page = english_column(year, level, item)
+    P = IP.ItPaper(year, level)
+    with IP.pymupdf.open(P.path) as doc:
+        text = ' '.join(doc[p - 1].get_text() for p in range(page, min(page + 2, doc.page_count + 1)))
+    text = flat(IP._clean(text))
+    m = re.search(rf'(?:^|\s){item}\s*\.\s', text)
+    stop = re.search(rf'\s{item + 1}\s*\.\s', text[m.end():]) if m else None
+    body = text[m.start():m.end() + (stop.start() if stop else len(text))] if m else text
+    out = []
+    for sent in re.split(r'(?<=[.?!:])\s+', body):
+        sent = sent.strip()
+        words = re.findall(r'[A-Za-zÀ-ÿ’\']+', sent)
+        if not words:
+            continue
+        en = len(EN_WORDS.findall(sent))
+        if IRISH.search(sent):
+            continue
+        if en >= max(2, len(words) * 0.3) or re.fullmatch(r'\(\d+ marks\)|\(max \d+ marks\)', sent):
+            if not out or out[-1] != sent:
+                out.append(sent)
+    return out, page
 
 
 def split_choice(lines):
@@ -253,7 +342,7 @@ def higher(year):
         criterion('content', 'Content and communication', 15, g1, c_essay),
         criterion('language', 'Language', 10, ['Use the descriptors in Appendix 2'], lang10,
                   lower_scale(5, rule5, 7))],
-        [S.lines[i1], rule5], '\n'.join(t1), p1, 25, pages=cpages))
+        [S.lines[i1], rule5], '\n'.join(join_lines(t1)), p1, 25, pages=cpages))
     # C2
     i2 = S.at(r'^2\.\s*Guided composition', c0)
     g2 = S.span(r'^Candidates must not', r'^3\.\s*Formal', i2)
@@ -262,7 +351,7 @@ def higher(year):
         criterion('content', 'Content and communication', 15, g2, c_essay),
         criterion('language', 'Language', 10, ['Use the descriptors in Appendix 2'], lang10,
                   lower_scale(5, rule5, 7))],
-        [S.lines[i2], rule5], '\n'.join(t2), p2, 25, pages=cpages))
+        [S.lines[i2], rule5], '\n'.join(join_lines(t2)), p2, 25, pages=cpages))
     # C3 (a) and (b)
     i3 = S.at(r'^3\.\s*Formal Writing', c0)
     fmt = S.span(r'^Date 1 mark', r'^Use the descriptors in Appendix 2', i3)
@@ -277,7 +366,7 @@ def higher(year):
             criterion('content', 'Content and communication', 25, general + pts, c_letter),
             criterion('language', 'Language', 15, ['Use the descriptors in Appendix 2'], lang15,
                       lower_scale(7, rule7, 12))],
-            [S.lines[i3], rule7], '\n'.join(task), p3, 50, pages=cpages))
+            [S.lines[i3], rule7], '\n'.join(join_lines(task)), p3, 50, pages=cpages))
     # B3 essays
     a1 = S.at(r'^APPENDIX 1')
     a1_end = S.at(r'^APP?ENDIX 2', a1)
@@ -305,8 +394,12 @@ def ordinary(year):
     c0 = S.at(r'^Section C Writing')
     opages = S.pages(c0, S.at(r'^APPENDIX 1', c0) - 1)
     out = []
-    t1, p1 = paper_task(year, 'ol', 1)
-    choice = split_choice(t1) or {}
+    # The Ordinary writing pages set Irish, English and the Italian task in a
+    # layout a row reader welds; the card carries the paper's English
+    # instruction and the page itself (its source) shows the task as printed.
+    t1, p1 = english_sentences(year, 'ol', 1)
+    head = join_lines(t1)
+    choice = {'a': head, 'b': head}
     for letter, head, stop in (('a', r'^\(a\)\s*E-mail/Letter', r'^OR$'),
                                ('b', r'^\(b\)\s*Dialogue', r'^Question 2 FORM')):
         i = S.at(head, c0)
@@ -328,18 +421,18 @@ def ordinary(year):
             criterion('content', 'Content and communication', 16, content),
             criterion('language', block[li].split(':')[0].replace(' 7 marks (2+2+2+1)', ''),
                       7, [block[li]], bands, lower_scale(0, rule, 7))],
-            [S.lines[S.at(r'^Question 1 30 marks', c0)], block[0], rule], '\n'.join(task), p1, 30,
+            [S.lines[S.at(r'^Question 1 30 marks', c0)], block[0], rule], '\n'.join(join_lines(task)), p1, 30,
             note=S.lines[S.at(r'^Question 1 30 marks', c0)], pages=opages))
     # C2 form-filling: two boxes, each priced by its best N answers
     i2 = S.at(r'^Question 2 FORM-FILLING', c0)
     q2 = S.span(r'^Question 2 FORM-FILLING', r'^3\.\s', c0)
     ia = next(k for k, l in enumerate(q2) if l.startswith('Box A'))
     ib = next(k for k, l in enumerate(q2) if l.startswith('Box B'))
-    t2, p2 = paper_task(year, 'ol', 2)
+    t2, p2 = english_sentences(year, 'ol', 2)
     out.append(rubric_card(year, 'ol', 2, None, [], [
         criterion('box-a', 'Box A', 8, q2[ia:ib]),
         criterion('box-b', 'Box B', 14, q2[ib:])],
-        q2[:ia], '\n'.join(t2), p2, 22, note=q2[0], pages=opages))
+        q2[:ia], '\n'.join(join_lines(t2)), p2, 22, note=q2[0], pages=opages))
     # C3 the sequence: eight lines in the printed order, one mark each
     q3 = S.span(r'^3\.\s.*\(8x1 mark', r'^APPENDIX 1', c0)
     rows, cur = [], None
@@ -353,12 +446,21 @@ def ordinary(year):
     assert [r[0] for r in rows] == list(range(1, 9)), (year, [r[0] for r in rows])
     for _n, t in rows:
         S.check(t)
-    t3, p3 = paper_task(year, 'ol', 3)
+    t3, p3 = english_sentences(year, 'ol', 3)
+    # The eight sentences to order are set in two columns on the page, which a
+    # row reader welds together; the card carries the instruction and the
+    # sentence the paper says to begin with, and the page itself (its source)
+    # shows the eight sentences as printed.
+    t3 = join_lines(t3)
+    order = next((k for k, l in enumerate(t3) if re.search(r'in the correct order\.\s*$', l)), None)
+    assert order is not None, f'{year} OL C3: no "in the correct order." line'
+    begin = next((k for k, l in enumerate(t3) if re.match(r'^Begin with this line', l)), None)
+    t3 = t3[:begin + 2] if begin is not None else t3[:order + 1]
     out.append({
         'id': f'it-{year}-ol-c-3', 'subjectId': 'italian', 'level': 'ordinary', 'year': year,
         'section': 'C', 'topicId': TOPIC[('ol', 3)],
         'conceptId': re.sub(r'[^a-z0-9]+', '-', flat(' '.join(t3))[:60].lower()).strip('-')[:48],
-        'questionRef': f'{year} OL Section C Q3', 'questionText': '\n'.join(t3),
+        'questionRef': f'{year} OL Section C Q3', 'questionText': '\n'.join(join_lines(t3)),
         'tariffModel': {'kind': 'fixed'}, 'totalMarks': 8,
         # One menu row of the eight printed lines, a mark for each in its place
         # ("8x1 mark"): a fixed card shows at most six rows.
@@ -367,7 +469,9 @@ def ordinary(year):
                   'group': {'claimMax': 8, 'perOption': 1,
                             'options': [f'{n}. {flat(t)}' for n, t in rows]}}],
         'notes': f'The scheme prices the sequence "{q3[0]}": one mark for each line in its place.',
-        'sourceMaterial': source(year, 'ol', p3),
+        'sourceMaterial': dict(source(year, 'ol', p3), presentationNote=(
+            'The task as the examination paper prints it, with the eight sentences '
+            'to put in order.')),
     })
     out[-1]['rows'][0]['contextNote'] = ('The scheme prints the order line by line; each line '
                                          'in its place is one mark.')
