@@ -405,6 +405,16 @@ export const rangeLabelFault = (band) => {
     : `band "${band.label}" is placed on ${marks.join(', ')}, not the ${lo}-${hi} its label prints`;
 };
 
+/**
+ * A scheme line that is nothing but a four-digit year, once its marks cell
+ * and the page furniture are gone: the 2023 Portuguese Ordinary scheme p6
+ * answers "Quando as trotinetas chegaram a Lisboa?" with the line "2018
+ * ⟨1 mark⟩". Single numeric lines are excluded as ambiguous mark/page cells
+ * (MARKS_ONLY), and a year is neither, so each such line is an ADDED form of
+ * its own, beside the numeric runs. Nothing shorter or longer qualifies.
+ */
+const YEAR_LINE = /^(?:19|20)\d\d$/;
+
 export const comparableScheme = (raw) => {
   const sourceLines = raw.replace(MARKS_CELL, ' ').replace(PAGE_MARKER, ' ').replace(PAGE_FOOTER, ' ')
     .split('\n');
@@ -423,6 +433,7 @@ export const comparableScheme = (raw) => {
     }
   }
   if (numericRun.length >= 2) numericRuns.push(normalise(numericRun.join(' ')));
+  const yearLines = sourceLines.map((l) => l.trim()).filter((l) => YEAR_LINE.test(l));
   const lines = sourceLines.filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l));
   const joined = lines.join(' ');
   const whole = normalise(joined);
@@ -438,5 +449,6 @@ export const comparableScheme = (raw) => {
     normalise(sourceLines.map((l) => l.replace(MARKS_COLUMN, ''))
       .filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l)).join(' ')),
     ...numericRuns,
+    ...yearLines,
   ].join('|');
 };
