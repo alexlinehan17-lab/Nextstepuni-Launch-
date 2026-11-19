@@ -7295,4 +7295,1127 @@ export const CARDS: SecCard[] = [
           "presentationNote": "The task as the examination paper prints it, with the eight sentences to put in order."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-la-1", topicId: "italian-3-1", conceptId: "news-item-about-celebrating",
+    section: "L", questionRef: "2024 OL Section LA Q1",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The news item is about celebrating\n(a) in a hotel\n(b) in a park\n(c) in a venue with a swimming pool\n(d) on the beach",
+    questionChoices: ["in a hotel","in a park","in a venue with a swimming pool","on the beach"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. (c)", marks: 3, contextNote: "The scheme accepts option (c) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-la-2", topicId: "italian-3-1", conceptId: "following-nationalities-mentioned",
+    section: "L", questionRef: "2024 OL Section LA Q2",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "Which of the following nationalities is mentioned?\n(a) Austrian\n(b) Egyptian\n(c) Greek\n(d) Nigerian",
+    questionChoices: ["Austrian","Egyptian","Greek","Nigerian"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2. (a)", marks: 3, contextNote: "The scheme accepts option (a) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 2",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-la-3", topicId: "italian-3-1", conceptId: "colour-associated-with-newspaper",
+    section: "L", questionRef: "2024 OL Section LA Q3",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The colour associated with the newspaper is\n(a) blue\n(b) green\n(c) pink\n(d) yellow",
+    questionChoices: ["blue","green","pink","yellow"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "3. (c)", marks: 3, contextNote: "The scheme accepts option (c) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 3",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-la-4", topicId: "italian-3-1", conceptId: "weather-forecast-day",
+    section: "L", questionRef: "2024 OL Section LA Q4",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The weather forecast is for a day in\n(a) Spring\n(b) Summer\n(c) Autumn\n(d) Winter",
+    questionChoices: ["Spring","Summer","Autumn","Winter"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "4. (b)", marks: 3, contextNote: "The scheme accepts option (b) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 4",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-la-5", topicId: "italian-3-1", conceptId: "initiative-has-been-running-since",
+    section: "L", questionRef: "2024 OL Section LA Q5",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The initiative has been running since\n(a) 2002\n(b) 2005\n(c) 2008\n(d) 2020",
+    questionChoices: ["2002","2005","2008","2020"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "5. (b)", marks: 3, contextNote: "The scheme accepts option (b) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 5",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-la-6", topicId: "italian-3-1", conceptId: "award-best",
+    section: "L", questionRef: "2024 OL Section LA Q6",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The award is for the best\n(a) beach\n(b) lake\n(c) park\n(d) river",
+    questionChoices: ["beach","lake","park","river"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "6. (a)", marks: 3, contextNote: "The scheme accepts option (a) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 6",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-la-7", topicId: "italian-3-1", conceptId: "announcement-tickets",
+    section: "L", questionRef: "2024 OL Section LA Q7",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The announcement is for tickets to\n(a) a concert\n(b) a match\n(c) the cinema\n(d) the theatre",
+    questionChoices: ["a concert","a match","the cinema","the theatre"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "7. (a)", marks: 3, contextNote: "The scheme accepts option (a) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 7",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-la-8", topicId: "italian-3-1", conceptId: "special-offer-relates",
+    section: "L", questionRef: "2024 OL Section LA Q8",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The special offer relates to\n(a) bus journeys\n(b) ferry trips\n(c) flights\n(d) train journeys Iodáilis ‐ Gnáthleibhéal",
+    questionChoices: ["bus journeys","ferry trips","flights","train journeys Iodáilis ‐ Gnáthleibhéal"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "8. (c)", marks: 3, contextNote: "The scheme accepts option (c) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 8",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb1-1", topicId: "italian-3-0", conceptId: "whom-giulia-going-buy-present",
+    section: "L", questionRef: "2024 OL Section LB1 Q1",
+    stem: "Dialogue 1. Conversation between Paolo and Giulia. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "For whom is Giulia going to buy a present?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Incorrect additional information minus 2 from off/full answer", marks: 6, contextNote: "The scheme prices this half of the ask separately, under the heading “Her best friend”. Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb1-2", topicId: "italian-3-0", conceptId: "did-giulia-not-hear-her-phone",
+    section: "L", questionRef: "2024 OL Section LB1 Q2",
+    stem: "Dialogue 1. Conversation between Paolo and Giulia. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Why did Giulia not hear her phone? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["Because the volume was low","Because it was in (an internal) pocket of her bag"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb1-3", topicId: "italian-3-0", conceptId: "where-did-giulia-have-appointment",
+    section: "L", questionRef: "2024 OL Section LB1 Q3",
+    stem: "Dialogue 1. Conversation between Paolo and Giulia. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Where did Giulia have an appointment?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The dentist’s", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb1-4", topicId: "italian-3-0", conceptId: "when-did-giulia-get-her-phone",
+    section: "L", questionRef: "2024 OL Section LB1 Q4",
+    stem: "Dialogue 1. Conversation between Paolo and Giulia. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "When did Giulia get her phone back?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Only) this morning", marks: 4, contextNote: "(After her dentist’s appointment 2 marks) Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb2-1", topicId: "italian-3-0", conceptId: "where-does-giada-work-mornings",
+    section: "L", questionRef: "2024 OL Section LB2 Q1",
+    stem: "Dialogue 2. Conversation between Alberto and Giada. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Where does Giada work in the mornings?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In an office in the city centre", marks: 8, contextNote: "The scheme prices this half of the ask separately, under the heading “In an estate agent’s”. Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb2-2", topicId: "italian-3-0", conceptId: "who-can-benefit-from-bank-account",
+    section: "L", questionRef: "2024 OL Section LB2 Q2",
+    stem: "Dialogue 2. Conversation between Alberto and Giada. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Who can benefit from the bank account Giada is opening?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "People on a budget (as there are no fees) 4 marks)", marks: 6, contextNote: "The scheme prices this half of the ask separately, under the heading “Young people, newly employed/who have a new job”. Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb2-3", topicId: "italian-3-0", conceptId: "about-giada-work-contract",
+    section: "L", questionRef: "2024 OL Section LB2 Q3",
+    stem: "Dialogue 2. Conversation between Alberto and Giada. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Give one detail about Giada’s work contract.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "One-year/fixed term contract — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “One-year/fixed term contract”. Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["She can work from home one day a week","She has four-week annual leave"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb2-4", topicId: "italian-3-0", conceptId: "family-member-lives-canada-iod-ilis",
+    section: "L", questionRef: "2024 OL Section LB2 Q4",
+    stem: "Dialogue 2. Conversation between Alberto and Giada. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Which family member lives in Canada? Iodáilis ‐ Gnáthleibhéal",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Her uncle", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb3-1", topicId: "italian-3-0", conceptId: "instruments-does-riccardo-play",
+    section: "L", questionRef: "2024 OL Section LB3 Q1",
+    stem: "Dialogue 3. Interview with Riccardo Vianelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Which instruments does Riccardo play?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Guitar and Violin", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb3-2", topicId: "italian-3-0", conceptId: "subject-did-riccardo-teach",
+    section: "L", questionRef: "2024 OL Section LB3 Q2",
+    stem: "Dialogue 3. Interview with Riccardo Vianelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What subject did Riccardo teach?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Geography", marks: 3, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb3-3", topicId: "italian-3-0", conceptId: "where-does-riccardo-usually-tour",
+    section: "L", questionRef: "2024 OL Section LB3 Q3",
+    stem: "Dialogue 3. Interview with Riccardo Vianelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Where does Riccardo usually go on tour?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Various) cities in the North of Italy", marks: 5, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb3-4", topicId: "italian-3-0", conceptId: "type-restaurant-riccardo-friend-looking",
+    section: "L", questionRef: "2024 OL Section LB3 Q4",
+    stem: "Dialogue 3. Interview with Riccardo Vianelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What type of restaurant was Riccardo’s friend looking for?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A good, fish (restaurant)", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb3-5", topicId: "italian-3-0", conceptId: "when-riccardo-last-dublin",
+    section: "L", questionRef: "2024 OL Section LB3 Q5",
+    stem: "Dialogue 3. Interview with Riccardo Vianelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "When was Riccardo last in Dublin?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Six months ago/When he was there for a concert", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 5",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb3-6", topicId: "italian-3-0", conceptId: "does-riccardo-like-when-ireland",
+    section: "L", questionRef: "2024 OL Section LB3 Q6",
+    stem: "Dialogue 3. Interview with Riccardo Vianelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What does Riccardo like to do when he is in Ireland? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Listen to traditional Irish music","Listen to musicians play (live)","Collaborate with other musicians","Play with traditional Irish instruments used in Irish music"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 6",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb3-7", topicId: "italian-3-0", conceptId: "does-riccardo-say-about-music",
+    section: "L", questionRef: "2024 OL Section LB3 Q7",
+    stem: "Dialogue 3. Interview with Riccardo Vianelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What does Riccardo say about music? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Music is an international language","Music allows you to travel","Music brings people together/allows people to meet","Music builds bridges","Music brings joy/happiness/peace/serenity (in difficult times)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 7",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-lb3-8", topicId: "italian-3-0", conceptId: "where-ireland-riccardo-looking-forward-going",
+    section: "L", questionRef: "2024 OL Section LB3 Q8",
+    stem: "Dialogue 3. Interview with Riccardo Vianelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Where in Ireland is Riccardo looking forward to going? Give one detail. Iodáilis ‐ Gnáthleibhéal Ordinary level Italian Monday 24 June 12:10 – 12:50",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["The west coast","Smaller towns","Outside Dublin","Somewhere he has never been before"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 8",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2024 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2024 Ordinary Level, pp.14-16 — © State Examinations Commission.",
+    id: "it-2024-ol-c-1-a", topicId: "italian-6-3", conceptId: "informal-writing-30-marks-choose-a-informal-lett",
+    section: "C", questionRef: "2024 OL Section C Q1(a)",
+    questionText: "Informal Writing (30 marks) Choose (a) Informal Letter or (b) Dialogue In both (a) and (b), write on any four of the following six ideas.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 1 30 marks",
+                "(a) E-mail/Letter 30 marks",
+                "Where marks for content and communication are 7 or less, award no marks for language"
+          ],
+          "criteria": [
+                {
+                      "id": "format",
+                      "label": "Format",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Beginning, opening greeting,",
+                            "closing formula, ending 7 marks (2+2+2+1)"
+                      ]
+                },
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 16,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+                      "guidance": [
+                            "Content and communication: 16 marks (4x4)",
+                            "Four of the following points to be covered",
+                            "• Details of the event",
+                            "• How will the day be organised",
+                            "• How will the teams be organised",
+                            "• What to wear",
+                            "• What will winners receive",
+                            "• Requests for lunch suggestions"
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Language: 7 marks"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 - 2",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Most verbs incorrect, few correct agreements, many spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "3 - 5",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Few verbs wrong, some correct agreements not too many mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "6 - 7",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Few mistakes, many correct agreements, very good accuracy"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 0,
+                            "permittedMarks": [0],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+                      }
+                }
+          ],
+          "markingGuideNote": "Question 1 30 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2024 Ordinary Level, pp.14-16 — © State Examinations Commission.",
+    id: "it-2024-ol-c-1-b", topicId: "italian-6-3", conceptId: "informal-writing-30-marks-choose-a-informal-lett",
+    section: "C", questionRef: "2024 OL Section C Q1(b)",
+    questionText: "Informal Writing (30 marks) Choose (a) Informal Letter or (b) Dialogue In both (a) and (b), write on any four of the following six ideas.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 1 30 marks",
+                "(b) Dialogue 30 marks",
+                "Where marks for content and communication are 7 or less, award no marks for language"
+          ],
+          "criteria": [
+                {
+                      "id": "format",
+                      "label": "Format",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Dialogue format, beginning,",
+                            "closing formula, ending 7 marks (2+2+2+1)"
+                      ]
+                },
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 16,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+                      "guidance": [
+                            "Content and communication: 16 marks (4x4)",
+                            "Four of the following points to be covered",
+                            "• Who you are and where you found their number",
+                            "• Why you are ringing",
+                            "• Request for information on Italian students",
+                            "• Information on your school and your studies",
+                            "• Organise a meeting",
+                            "• What you can do together"
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language and conversational expressions",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Language and conversational expressions 7 marks (2+2+2+1)"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 – 2",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Most verbs incorrect, few correct agreements, many spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "3 - 5",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Few verbs wrong, some correct agreements not too many mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "6 -7",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Few mistakes, many correct agreements, very good accuracy"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 0,
+                            "permittedMarks": [0],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+                      }
+                }
+          ],
+          "markingGuideNote": "Question 1 30 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2024 Ordinary Level, pp.14-16 — © State Examinations Commission.",
+    id: "it-2024-ol-c-2", topicId: "italian-6-4", conceptId: "without-using-your-personal-details-fill-in-the-",
+    section: "C", questionRef: "2024 OL Section C Q2",
+    questionText: "Without using your personal details fill in the form below in Italian.\nThe same answer should not be used twice.\n(max 22 marks) A.\nAnswer any eight of the following nine questions.\nAnswer any seven of the following eight questions.\nNote some questions have 2 parts.",
+    totalMarks: 22,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 2 FORM-FILLING 22 marks",
+                "Candidates will be penalised for incorrect verbs, incorrect agreements and spelling mistakes"
+          ],
+          "criteria": [
+                {
+                      "id": "box-a",
+                      "label": "Box A",
+                      "maxMarks": 8,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                      "guidance": [
+                            "Box A – 8 marks (8x1)",
+                            "Marks awarded for the best 8 questions (out of 9 questions)"
+                      ]
+                },
+                {
+                      "id": "box-b",
+                      "label": "Box B",
+                      "maxMarks": 14,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+                      "guidance": [
+                            "Box B – 14 marks (7x2)",
+                            "Marks awarded for the best 7 questions (out of 8 questions)",
+                            "Where a question has two parts award 2 Marks (1+1)",
+                            "(When the same word is used to answer multiple questions, marks may only be allocated once)"
+                      ]
+                }
+          ],
+          "markingGuideNote": "Question 2 FORM-FILLING 22 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
+    id: "it-2024-ol-c-3", topicId: "italian-6-5", conceptId: "write-roberto-s-weekend-messages-to-his-mother-i",
+    section: "C", questionRef: "2024 OL Section C Q3",
+    questionText: "Write Roberto’s weekend messages to his mother in the correct order.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints the order line by line; each line in its place is one mark.", group: {"claimMax":8,"perOption":1,"options":["1. Ciao mamma, domani vado al festival della musica! Come sono felice! Parto domani mattina alle 8 e 30 con il treno.","2. Sono in stazione! Il treno dovrebbe partire alle 8 e trenta ma ha già un ritardo di 1 ora! Che disastro!","3. Siamo partiti finalmente. Arrivo a Bergamo alle 12 e 45. Avrò sicuramente fame.","4. È l’una! Sono arrivato a Bergamo, mangio un panino prima di prendere l’autobus.","5. Sono appena salito sull’autobus… è pienissimo di ragazzi che vanno al Festival!","6. L’autobus del Festival è stato veloce… sono arrivato!","7. Wow mamma, c’è tantissima gente qui al Festival! Che bello. Ora devo trovare un posto per montare la tenda.","8. Ho montato la tenda, è stato abbastanza facile. Ora iniziano i concerti! Ci sentiamo a fine serata! Ciao!"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Italian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it, with the eight sentences to put in order."
+    },
+  } as SecCard,
 ];

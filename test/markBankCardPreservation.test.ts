@@ -2144,7 +2144,7 @@ const technologyAdditions = {
 } as const;
 const italianAdditions = {
   higher: [ITALIAN_HIGHER, 133, 'b97e82622c6f9e7e80a1ccb078cbd814be9b145c9248ee006efaaa7b7809acf2'],
-  ordinary: [ITALIAN_ORDINARY, 92, '04dc03dc8e8b6f5c7b44f17bef66cfd441d64d4416c082b848be092b51a38e6c'],
+  ordinary: [ITALIAN_ORDINARY, 120, 'ac8f3589b791fce6cefccdcab74e293d93a71d572c27ecf4a87a8497b1ecd6a4'],
 } as const;
 const dcgAdditions = {
   higher: [DCG_HIGHER, 460, 'f3f80dccc2dbf842c64db715d43b83169290d4cb7315d9eb2087ad8b29c0a4c1'],
@@ -2243,7 +2243,9 @@ describe('Mark Bank card preservation', () => {
     // 2025 Ordinary 28 for the 28 its 34 live reading cards left out
     // (listening 24, writing 4); 2024 Higher 33 for the 37 its 35 live cards
     // left out (B2B Q1(a), 'Any two of the following' over a bare 5 marks, is
-    // carded on its printed total).
+    // carded on its printed total); 2024 Ordinary 28 for the 34 its 35 live
+    // cards left out (listening 24 - Dialogue 1 Q4, which the scheme reader
+    // loses at a page foot, carded from the scheme's own line - and writing 4).
     const additions = cards.map(card => card.id).filter(isItalianAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
