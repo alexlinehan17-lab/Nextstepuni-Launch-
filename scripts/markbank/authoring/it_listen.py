@@ -70,12 +70,24 @@ class Booklet:
         section = None
         dialogue = None
         cur = None                # the dict a continuation line extends
+        width = IP.ItPaper._page_width(self.path)
+        self.gap = {'A': False, 'B': False}
         for pno, groups in _rows(self.path):
             for _x, side, text in groups:
                 s = IP._clean(text)
                 if not s or IP.FURNITURE.match(s):
                     continue
+                # A row the column finder could not split reads as 'L'; the
+                # English column is the right half of the sheet.
+                if _x >= 0.45 * width:
+                    side = 'R'
                 if side != 'R':
+                    # An Irish line welded to the English beside it ("… cuir
+                    # ciorcal what you consider the most appropriate") hides an
+                    # English line: the section's instruction is cut before it.
+                    if section in ('A', 'B') and re.search(r'\b(?:what|the|you|each|will|answer)\b', s):
+                        if (section == 'A' and not self.section_a) or (section == 'B' and dialogue is None):
+                            self.gap[section] = True
                     continue
                 if re.fullmatch(r'SECTION\s+A', s):
                     section, cur = 'A', None
@@ -109,10 +121,12 @@ class Booklet:
                     cur = q['options'][-1]
                     continue
                 if section in ('A', 'B') and not self.section_a and section == 'A':
-                    self.rubric['A'].append(s)
+                    if not self.gap['A']:
+                        self.rubric['A'].append(s)
                     continue
                 if section == 'B' and dialogue is None:
-                    self.rubric['B'].append(s)
+                    if not self.gap['B']:
+                        self.rubric['B'].append(s)
                     continue
                 if cur is None:
                     continue
@@ -266,6 +280,13 @@ def _ladder_rows(S, ask):
     return rows
 
 
+def _sentences(text):
+    """The instruction up to its last full stop: never a sentence cut short."""
+    text = ' '.join(text.split())
+    end = text.rfind('.')
+    return text[:end + 1] if end > 0 else ''
+
+
 def cards(year, level, refuse, row_for, concept_for):
     """Every listening card for one sitting; refusals go to `refuse`."""
     B = Booklet(year, level)
@@ -295,7 +316,7 @@ def cards(year, level, refuse, row_for, concept_for):
         return a
 
     per, key = section_a_key(year, level)
-    stem_a = ' '.join(B.rubric['A'])
+    stem_a = _sentences(' '.join(B.rubric['A']))
     for n in sorted(B.section_a):
         q = B.section_a[n]
         ref = f'{year} {lvl} Section LA Q{n}'
@@ -335,7 +356,7 @@ def cards(year, level, refuse, row_for, concept_for):
         })
 
     S, scheme = scheme_dialogues(year, level)
-    stem_b = ' '.join(B.rubric['B'])
+    stem_b = _sentences(' '.join(B.rubric['B']))
     for d in sorted(B.dialogues):
         asks = B.dialogues[d]['asks']
         priced = scheme.get(d, [])

@@ -16,9 +16,14 @@
    "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
   },
   "verification": {
-   "listedIn": "SEC Examination Material Archive listing of 31 August 2026 (Leaving Certificate, Italian, exam papers, \"Sound File\")",
-   "listingFile": "NextStepUni-MarkBank-Lanes-20261104/sources-tools/sec-archive-manifest-20260831.jsonl",
-   "liveCheck": "HTTP 200 from a browser session on 18 November 2026 (SOURCES.md, Italian)"
+   "verifiedAt": "2026-11-19",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2026/",
+   "sha256": "7b022b3a563f382a113ff6be786d0881b468be447d263f424b8117267e3d9ccc",
+   "bytes": 78364750,
+   "durationSeconds": 2448.8984375,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
   }
  },
  {
@@ -38,9 +43,14 @@
    "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
   },
   "verification": {
-   "listedIn": "SEC Examination Material Archive listing of 31 August 2026 (Leaving Certificate, Italian, exam papers, \"Sound File\")",
-   "listingFile": "NextStepUni-MarkBank-Lanes-20261104/sources-tools/sec-archive-manifest-20260831.jsonl",
-   "liveCheck": "HTTP 200 from a browser session on 18 November 2026 (SOURCES.md, Italian)"
+   "verifiedAt": "2026-11-19",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2025/",
+   "sha256": "55bc4467506053e2130d1c72e344c2540deac80a61f61ab48e87d623fa1cf19f",
+   "bytes": 77220800,
+   "durationSeconds": 2413.15,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
   }
  },
  {
@@ -60,9 +70,14 @@
    "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
   },
   "verification": {
-   "listedIn": "SEC Examination Material Archive listing of 31 August 2026 (Leaving Certificate, Italian, exam papers, \"Sound File\")",
-   "listingFile": "NextStepUni-MarkBank-Lanes-20261104/sources-tools/sec-archive-manifest-20260831.jsonl",
-   "liveCheck": "HTTP 200 from a browser session on 18 November 2026 (SOURCES.md, Italian)"
+   "verifiedAt": "2026-11-19",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2024/",
+   "sha256": "6d99f73a65193d979e4399d70855a526416ed78a1540a8a0453787736427213f",
+   "bytes": 77321000,
+   "durationSeconds": 2416.28125,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
   }
  },
  {
@@ -82,9 +97,14 @@
    "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
   },
   "verification": {
-   "listedIn": "SEC Examination Material Archive listing of 31 August 2026 (Leaving Certificate, Italian, exam papers, \"Sound File\")",
-   "listingFile": "NextStepUni-MarkBank-Lanes-20261104/sources-tools/sec-archive-manifest-20260831.jsonl",
-   "liveCheck": "HTTP 200 from a browser session on 18 November 2026 (SOURCES.md, Italian)"
+   "verifiedAt": "2026-11-19",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2023/",
+   "sha256": "fb3960bea7ca4f9baaf83cc6f0e9fad6f66d55ca425a5702cb2f5b31829d9efa",
+   "bytes": 77053800,
+   "durationSeconds": 2407.93125,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
   }
  },
  {
@@ -104,9 +124,14 @@
    "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
   },
   "verification": {
-   "listedIn": "SEC Examination Material Archive listing of 31 August 2026 (Leaving Certificate, Italian, exam papers, \"Sound File\")",
-   "listingFile": "NextStepUni-MarkBank-Lanes-20261104/sources-tools/sec-archive-manifest-20260831.jsonl",
-   "liveCheck": "HTTP 200 from a browser session on 18 November 2026 (SOURCES.md, Italian)"
+   "verifiedAt": "2026-11-19",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2022/",
+   "sha256": "6133590bc375ab33859ed891710ccc9a32bb23f68f2a1ed136adabae6b64fe60",
+   "bytes": 77676710,
+   "durationSeconds": 2427.3971875,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
   }
  },
  {
@@ -126,8 +151,14 @@
    "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
   },
   "verification": {
-   "listedIn": "SEC Examination Material Archive listing of 31 August 2026 (Leaving Certificate, Italian, exam papers, \"Sound File\")",
-   "listingFile": "NextStepUni-MarkBank-Lanes-20261104/sources-tools/sec-archive-manifest-20260831.jsonl"
+   "verifiedAt": "2026-11-19",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2021/",
+   "sha256": "bcb03dd115250559a768b8a8fab88cc6d1093dae80db42a95dd9a6bb22f2efe2",
+   "bytes": 77073840,
+   "durationSeconds": 2408.5575,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
   }
  },
  {
@@ -146,8 +177,14 @@
    "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher Level only. Use the player to pause, replay or move through the recording."
   },
   "verification": {
-   "listedIn": "SEC Examination Material Archive listing of 31 August 2026 (Leaving Certificate, Italian, exam papers, \"Sound File\")",
-   "listingFile": "NextStepUni-MarkBank-Lanes-20261104/sources-tools/sec-archive-manifest-20260831.jsonl"
+   "verifiedAt": "2026-11-19",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2020/",
+   "sha256": "115c7fea3a7d267c353262e112da2f44eedd319a41ec986c08216a3d10900e9e",
+   "bytes": 77482155,
+   "durationSeconds": 2421.31734375,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
   }
  },
  {

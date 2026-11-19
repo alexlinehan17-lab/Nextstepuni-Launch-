@@ -752,7 +752,7 @@ function historyEssayFault(c, scheme) {
 /** The decks whose writing is a rubric card on the French grid shape, gated
  *  by spanishGridFault: Spanish, and German (whose expression criterion may
  *  carry a printed lower scale). */
-const GRID_SUBJECTS = new Set(['spanish', 'german', 'music']);
+const GRID_SUBJECTS = new Set(['spanish', 'german', 'music', 'italian']);
 /** Music is sat in separate booklets; a card's section names the booklet it is
  *  printed in, by the Paper Trail index's own label. */
 const MUSIC_BOOKLET = { L: 'Listening', A: 'Composing', B: 'Composing', E: 'Elective' };
