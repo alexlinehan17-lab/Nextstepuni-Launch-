@@ -191623,5 +191623,5103 @@
   "notes": "Numbered items are separately counted responses on the part's ladder: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2023_ol_deferred.py.",
   "year": 2023,
   "level": "ordinary"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q1-a",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "elements-in-carbohydrates",
+  "section": "A",
+  "questionRef": "2024 HL Q1(a) — Deferred sitting",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "Name the three chemical elements found in carbohydrates.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "allOf",
+    "verbatim": "Carbon, hydrogen, oxygen (or C, H, O)",
+    "marks": 4
+   }
+  ],
+  "notes": "Question 1 is marked best five of six at 4. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q1-b",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "carbohydrate-general-formula",
+  "section": "A",
+  "questionRef": "2024 HL Q1(b) — Deferred sitting",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "Write down the general formula for carbohydrates.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Cx(H2O)y",
+    "marks": 4
+   }
+  ],
+  "notes": "Question 1 is marked best five of six at 4. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q1-c",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "elements-in-salts",
+  "section": "A",
+  "questionRef": "2024 HL Q1(c) — Deferred sitting",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "Write down any three elements present in foods as dissolved salts.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Sodium (or Na) / Potassium (or K) / Chlorine (or Cl) / Magnesium (or Mg) / Calcium (or Ca) / other correct",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Any three"
+   }
+  ],
+  "notes": "The scheme prices \"any three\" of its listed elements as one 4-mark answer: one row, the condition shown under it. Question 1 is marked best five of six at 4. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q1-d",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "trace-elements",
+  "section": "A",
+  "questionRef": "2024 HL Q1(d) — Deferred sitting",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "Write down any three elements present in foods in trace amounts.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Iron (or Fe) / Copper (or Cu) / Zinc (or Zn) / other correct",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Any three"
+   }
+  ],
+  "notes": "The scheme prices \"any three\" of its listed elements as one 4-mark answer: one row, the condition shown under it. Question 1 is marked best five of six at 4. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q1-e",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "water-soluble-vitamins",
+  "section": "A",
+  "questionRef": "2024 HL Q1(e) — Deferred sitting",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "Name one water-soluble vitamin.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "B (or named B vitamin) or C",
+    "marks": 4
+   }
+  ],
+  "notes": "Question 1 is marked best five of six at 4. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q1-f",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "fat-soluble-vitamins",
+  "section": "A",
+  "questionRef": "2024 HL Q1(f) — Deferred sitting",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "Name one fat-soluble vitamin.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "A or D or E or K",
+    "marks": 4
+   }
+  ],
+  "notes": "Question 1 is marked best five of six at 4. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q2-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "interphase-length",
+  "section": "A",
+  "questionRef": "2024 HL Q2(a) — Deferred sitting",
+  "stem": "Indicate whether the following statements are true or false by placing a tick (✓) in the appropriate box in each case.",
+  "questionText": "Interphase is the shortest stage of the cell cycle.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme answers with a tick in the True or False column; read from its position. Question 2 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q2-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "yellow-marrow",
+  "section": "A",
+  "questionRef": "2024 HL Q2(b) — Deferred sitting",
+  "stem": "Indicate whether the following statements are true or false by placing a tick (✓) in the appropriate box in each case.",
+  "questionText": "The yellow marrow in bone stores fats.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme answers with a tick in the True or False column; read from its position. Question 2 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q2-c",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "contest-competition",
+  "section": "A",
+  "questionRef": "2024 HL Q2(c) — Deferred sitting",
+  "stem": "Indicate whether the following statements are true or false by placing a tick (✓) in the appropriate box in each case.",
+  "questionText": "Contest competition ensures all get some of the resource.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme answers with a tick in the True or False column; read from its position. Question 2 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q2-d",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "amoeba-kingdom",
+  "section": "A",
+  "questionRef": "2024 HL Q2(d) — Deferred sitting",
+  "stem": "Indicate whether the following statements are true or false by placing a tick (✓) in the appropriate box in each case.",
+  "questionText": "Amoeba belongs to the Kingdom Protista.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme answers with a tick in the True or False column; read from its position. Question 2 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q2-e",
+  "subjectId": "biology",
+  "topicId": "bio-1-5",
+  "conceptId": "mutation-and-variation",
+  "section": "A",
+  "questionRef": "2024 HL Q2(e) — Deferred sitting",
+  "stem": "Indicate whether the following statements are true or false by placing a tick (✓) in the appropriate box in each case.",
+  "questionText": "Variation can result from mutation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme answers with a tick in the True or False column; read from its position. Question 2 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q2-f",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "morula-and-blastocyst",
+  "section": "A",
+  "questionRef": "2024 HL Q2(f) — Deferred sitting",
+  "stem": "Indicate whether the following statements are true or false by placing a tick (✓) in the appropriate box in each case.",
+  "questionText": "The morula forms before the blastocyst in human reproduction.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme answers with a tick in the True or False column; read from its position. Two tick glyphs are printed one over the other in (f)'s True box; the row is read from the upper one. Question 2 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q2-g",
+  "subjectId": "biology",
+  "topicId": "bio-1-1",
+  "conceptId": "characteristics-of-life",
+  "section": "A",
+  "questionRef": "2024 HL Q2(g) — Deferred sitting",
+  "stem": "Indicate whether the following statements are true or false by placing a tick (✓) in the appropriate box in each case.",
+  "questionText": "Response is a characteristic of life.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme answers with a tick in the True or False column; read from its position. Question 2 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q3-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzymes-are-proteins",
+  "section": "A",
+  "questionRef": "2024 HL Q3(a) — Deferred sitting",
+  "stem": "Enzymes are biological catalysts involved in metabolism. Enzyme structure is often represented using ribbon diagrams. The picture shows a ribbon diagram representing a common human enzyme.",
+  "questionText": "To which group of biomolecules do enzymes belong?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Protein",
+    "marks": null
+   }
+  ],
+  "notes": "Question 3 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q3-enzyme"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q3-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "examples-of-enzymes",
+  "section": "A",
+  "questionRef": "2024 HL Q3(b) — Deferred sitting",
+  "stem": "Enzymes are biological catalysts involved in metabolism. Enzyme structure is often represented using ribbon diagrams. The picture shows a ribbon diagram representing a common human enzyme.",
+  "questionText": "Give one example of an enzyme.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Amylase or catalase or pepsin or other correct",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "Question 3 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q3-enzyme"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q3-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "active-site",
+  "section": "A",
+  "questionRef": "2024 HL Q3(c) — Deferred sitting",
+  "stem": "Enzymes are biological catalysts involved in metabolism. Enzyme structure is often represented using ribbon diagrams. The picture shows a ribbon diagram representing a common human enzyme.",
+  "questionText": "Enzymes such as the one shown in the picture have a folded shape and an active site. What is the function of the active site of an enzyme?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To combine with the substrate or convert substrate to product",
+    "marks": null
+   }
+  ],
+  "notes": "Question 3 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q3-enzyme"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q3-d",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzyme-specificity",
+  "section": "A",
+  "questionRef": "2024 HL Q3(d) — Deferred sitting",
+  "stem": "Enzymes are biological catalysts involved in metabolism. Enzyme structure is often represented using ribbon diagrams. The picture shows a ribbon diagram representing a common human enzyme.",
+  "questionText": "Enzymes show specificity. Explain the underlined term.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Enzyme can only act on one substrate.",
+    "marks": null
+   }
+  ],
+  "notes": "Question 3 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q3-enzyme"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q3-e",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "factors-affecting-enzymes",
+  "section": "A",
+  "questionRef": "2024 HL Q3(e) — Deferred sitting",
+  "stem": "Enzymes are biological catalysts involved in metabolism. Enzyme structure is often represented using ribbon diagrams. The picture shows a ribbon diagram representing a common human enzyme.",
+  "questionText": "Give two factors that affect the function of an enzyme.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "pH / temperature",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "pH",
+      "temperature"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Question 3 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q3-enzyme"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q3-f",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "denatured-enzyme",
+  "section": "A",
+  "questionRef": "2024 HL Q3(f) — Deferred sitting",
+  "stem": "Enzymes are biological catalysts involved in metabolism. Enzyme structure is often represented using ribbon diagrams. The picture shows a ribbon diagram representing a common human enzyme.",
+  "questionText": "What is a denatured enzyme?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "An enzyme that has lost its function or other correct",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "Question 3 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q3-enzyme"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q4-a",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "double-helix",
+  "section": "A",
+  "questionRef": "2024 HL Q4(a) — Deferred sitting",
+  "stem": "The diagram shows a piece of DNA undergoing replication.",
+  "questionText": "What name is given to the shape of a DNA molecule?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Double helix",
+    "marks": null
+   }
+  ],
+  "notes": "Question 4 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q4-dna"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q4-b",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "organelles-with-dna",
+  "section": "A",
+  "questionRef": "2024 HL Q4(b) — Deferred sitting",
+  "stem": "The diagram shows a piece of DNA undergoing replication.",
+  "questionText": "Most DNA in a eukaryotic cell is found in the nucleus. Name another cell organelle in which DNA is found.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Mitochondrion or chloroplast",
+    "marks": null
+   }
+  ],
+  "notes": "Question 4 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q4-dna"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q4-c",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "purine-bases",
+  "section": "A",
+  "questionRef": "2024 HL Q4(c) — Deferred sitting",
+  "stem": "The diagram shows a piece of DNA undergoing replication.",
+  "questionText": "DNA is composed of nucleotides with purine and pyrimidine nitrogenous bases. Name the two purine nitrogenous bases present in DNA.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Adenine",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Guanine",
+    "marks": null
+   }
+  ],
+  "notes": "Question 4 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q4-dna"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q4-d",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "base-pairing",
+  "section": "A",
+  "questionRef": "2024 HL Q4(d) — Deferred sitting",
+  "stem": "The diagram shows a piece of DNA undergoing replication.",
+  "questionText": "The nitrogenous bases are paired together as complementary base pairs. Explain how complementary base pairs are held together.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "By hydrogen bonds",
+    "marks": null
+   }
+  ],
+  "notes": "Question 4 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q4-dna"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q4-e",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "events-of-dna-replication",
+  "section": "A",
+  "questionRef": "2024 HL Q4(e) — Deferred sitting",
+  "stem": "The diagram shows a piece of DNA undergoing replication.",
+  "questionText": "DNA replication is an important biological process. Briefly describe two events shown in the diagram above that show this piece of DNA is undergoing replication.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "DNA (strands) are separating (or unzipping)",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "New (complementary) bases are attaching (onto the separated strands) or new strands forming",
+    "marks": null
+   }
+  ],
+  "notes": "Question 4 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q4-dna"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q5-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "skin-structures",
+  "section": "A",
+  "questionRef": "2024 HL Q5(a)(i) — Deferred sitting",
+  "stem": "The diagram shows a vertical section of human skin. (a) The parts labelled X, Y and Z are all involved in temperature regulation.",
+  "questionText": "Name parts X, Y and Z.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "X — Hair",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Y — Sweat gland",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Z — Blood vessel",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q5-skin",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "Hair",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Y",
+    "meaning": "Sweat gland",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Z",
+    "meaning": "Blood vessel",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-hl-deferred-q5-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "temperature-regulation-by-skin",
+  "section": "A",
+  "questionRef": "2024 HL Q5(a)(ii) — Deferred sitting",
+  "stem": "The diagram shows a vertical section of human skin. (a) The parts labelled X, Y and Z are all involved in temperature regulation.",
+  "questionText": "Explain in detail how any two of the parts X, Y, and Z help to regulate body temperature.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "X: When the body is cold the (hair) will stand on end (or piloerection) trapping a layer of air close to the skin and reduce heat loss or When the body is hot the (hairs) lie flat allowing more heat loss from the surface of the skin / Y: When the body is hot, the (sweat glands) produces and release sweat to the surface of the skin which evaporates and has a cooling effect on the body or When the body is cold, the (sweat glands) does not produce sweat no evaporation from the surface of the skin occurs so less heat is lost / Z: When the body is cold the (blood vessels) constrict (or become narrower) causing less blood flow to the surface of the skin and conserving heat or When the body is hot the (blood vessels) dilate (or become wider) causing more blood flow to the surface of the skin and releasing heat",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "X: When the body is cold the (hair) will stand on end (or piloerection) trapping a layer of air close to the skin and reduce heat loss or When the body is hot the (hairs) lie flat allowing more heat loss from the surface of the skin",
+      "Y: When the body is hot, the (sweat glands) produces and release sweat to the surface of the skin which evaporates and has a cooling effect on the body or When the body is cold, the (sweat glands) does not produce sweat no evaporation from the surface of the skin occurs so less heat is lost",
+      "Z: When the body is cold the (blood vessels) constrict (or become narrower) causing less blood flow to the surface of the skin and conserving heat or When the body is hot the (blood vessels) dilate (or become wider) causing more blood flow to the surface of the skin and releasing heat"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices \"any two of X, Y, Z\" as 4(3): each part's explanation is two points. Each part is read from its own column by glyph position, as the text layer interleaves the tariff printed beside it. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q5-skin",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "Hair",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Y",
+    "meaning": "Sweat gland",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Z",
+    "meaning": "Blood vessel",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-hl-deferred-q5-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "sebaceous-gland",
+  "section": "A",
+  "questionRef": "2024 HL Q5(b) — Deferred sitting",
+  "stem": "The diagram shows a vertical section of human skin. (a) The parts labelled X, Y and Z are all involved in temperature regulation.",
+  "questionText": "What is the function of the sebaceous gland?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Produce and release sebum onto the surface of the skin",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q5-skin"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q6-a",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "ecosystem",
+  "section": "A",
+  "questionRef": "2024 HL Q6(a) — Deferred sitting",
+  "stem": "Two ecological pyramids are shown – one from a terrestrial ecosystem and one from an aquatic ecosystem.",
+  "questionText": "What do you understand by the term ecosystem?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Organisms and their environment",
+    "marks": null
+   }
+  ],
+  "notes": "Question 6 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q6-pyramids"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q6-b",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "shape-of-pyramids",
+  "section": "A",
+  "questionRef": "2024 HL Q6(b) — Deferred sitting",
+  "stem": "Two ecological pyramids are shown – one from a terrestrial ecosystem and one from an aquatic ecosystem.",
+  "questionText": "Explain the difference in the shape of the ecological pyramids.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Any reference to the width of the bars being representative of the number of organisms at a trophic level",
+    "marks": null
+   }
+  ],
+  "notes": "Question 6 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q6-pyramids"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q6-c",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "base-of-a-pyramid",
+  "section": "A",
+  "questionRef": "2024 HL Q6(c) — Deferred sitting",
+  "stem": "Two ecological pyramids are shown – one from a terrestrial ecosystem and one from an aquatic ecosystem.",
+  "questionText": "What type of organism occupies the bottom of an ecological pyramid of numbers?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Producer",
+    "marks": null
+   }
+  ],
+  "notes": "Question 6 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q6-pyramids"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q6-d",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "predator-prey",
+  "section": "A",
+  "questionRef": "2024 HL Q6(d) — Deferred sitting",
+  "stem": "Two ecological pyramids are shown – one from a terrestrial ecosystem and one from an aquatic ecosystem.",
+  "questionText": "What type of ecological relationship exists between the spider and the ladybird?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Predator-prey",
+    "marks": null
+   }
+  ],
+  "notes": "Question 6 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q6-pyramids"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q6-e",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "limitations-of-pyramids",
+  "section": "A",
+  "questionRef": "2024 HL Q6(e) — Deferred sitting",
+  "stem": "Two ecological pyramids are shown – one from a terrestrial ecosystem and one from an aquatic ecosystem.",
+  "questionText": "Give one limitation of the use of ecological pyramids.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Do not take the size of the organisms into account or they cannot be drawn to scale or difficult to incorporate detritus feeders or other correct",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "Question 6 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q6-pyramids"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q6-f-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "aquatic-abiotic-factors",
+  "section": "A",
+  "questionRef": "2024 HL Q6(f)(i) — Deferred sitting",
+  "stem": "Two ecological pyramids are shown – one from a terrestrial ecosystem and one from an aquatic ecosystem. Abiotic factors affect organisms in their habitats.",
+  "questionText": "Name any one abiotic factor present in an aquatic ecosystem.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Correctly named aquatic abiotic factor",
+    "marks": null
+   }
+  ],
+  "notes": "Question 6 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q6-pyramids"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q6-f-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "terrestrial-abiotic-factors",
+  "section": "A",
+  "questionRef": "2024 HL Q6(f)(ii) — Deferred sitting",
+  "stem": "Two ecological pyramids are shown – one from a terrestrial ecosystem and one from an aquatic ecosystem. Abiotic factors affect organisms in their habitats.",
+  "questionText": "Name any one abiotic factor present in a terrestrial ecosystem.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Correctly named terrestrial abiotic factor",
+    "marks": null
+   }
+  ],
+  "notes": "Question 6 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q6-pyramids"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q7-a",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "bacteria-kingdom",
+  "section": "A",
+  "questionRef": "2024 HL Q7(a) — Deferred sitting",
+  "stem": "The image shows bacterial cells being infected with viruses.",
+  "questionText": "To which kingdom of living organisms do bacteria belong?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Monera",
+    "marks": null
+   }
+  ],
+  "notes": "Question 7 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q7-bacteria"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q7-b",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "binary-fission",
+  "section": "A",
+  "questionRef": "2024 HL Q7(b) — Deferred sitting",
+  "stem": "The image shows bacterial cells being infected with viruses.",
+  "questionText": "Name the method by which bacteria reproduce.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Binary fission",
+    "marks": null
+   }
+  ],
+  "notes": "Question 7 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q7-bacteria"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q7-c",
+  "subjectId": "biology",
+  "topicId": "bio-1-1",
+  "conceptId": "classifying-viruses",
+  "section": "A",
+  "questionRef": "2024 HL Q7(c) — Deferred sitting",
+  "stem": "The image shows bacterial cells being infected with viruses.",
+  "questionText": "Explain why it is difficult to classify viruses into a kingdom of living organisms.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Non-cellular or no metabolism or other correct",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "Question 7 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q7-bacteria"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q7-d",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "pathogenic",
+  "section": "A",
+  "questionRef": "2024 HL Q7(d) — Deferred sitting",
+  "stem": "The image shows bacterial cells being infected with viruses.",
+  "questionText": "Some species of bacteria are pathogenic. What is meant by the term pathogenic?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Disease causing",
+    "marks": null
+   }
+  ],
+  "notes": "Question 7 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q7-bacteria"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q7-e",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "economic-importance-of-bacteria",
+  "section": "A",
+  "questionRef": "2024 HL Q7(e) — Deferred sitting",
+  "stem": "The image shows bacterial cells being infected with viruses.",
+  "questionText": "Give two examples of the economic importance of bacteria.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Food production or bioprocessing (or named food production method or example) / used in genetic engineering / used in antibiotic production",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Food production or bioprocessing (or named food production method or example)",
+      "used in genetic engineering",
+      "used in antibiotic production"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Question 7 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q7-bacteria"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q7-f",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "endospores",
+  "section": "A",
+  "questionRef": "2024 HL Q7(f) — Deferred sitting",
+  "stem": "The image shows bacterial cells being infected with viruses.",
+  "questionText": "Many species of bacteria can survive in unfavourable environmental conditions. Name the structure that bacteria can form that helps them to survive these conditions.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Endospore",
+    "marks": null
+   }
+  ],
+  "notes": "Question 7 is marked on one ladder, 6(3) + 2. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q7-bacteria"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q8-a",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "hypothesis-and-double-blind-testing",
+  "section": "B",
+  "questionRef": "2024 HL Q8(a) — Deferred sitting",
+  "questionText": "Explain the terms hypothesis and double-blind testing.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Hypothesis — Proposed (or possible) explanation for an observation or other correct description.",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Double blind testing — an experiment where neither the subject(s) nor the researcher knows which treatment is being given (or explained)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q8-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "test-for-protein",
+  "section": "B",
+  "questionRef": "2024 HL Q8(b)(i) — Deferred sitting",
+  "stem": "Answer the following questions based on your knowledge of practical activities completed.",
+  "questionText": "Describe how you tested a food for the presence of protein.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Added Biuret (solution) or added named reagents",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Colour change from blue to purple",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q8-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "preparing-an-animal-cell-slide",
+  "section": "B",
+  "questionRef": "2024 HL Q8(b)(ii) — Deferred sitting",
+  "stem": "Answer the following questions based on your knowledge of practical activities completed.",
+  "questionText": "In preparing and examining an animal cell using the light microscope, describe how you prepared the slide.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Add water (or stain) to sample",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Add coverslip and lower slowly (or at an angle)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q8-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "collection-methods",
+  "section": "B",
+  "questionRef": "2024 HL Q8(b)(iii) — Deferred sitting",
+  "stem": "Answer the following questions based on your knowledge of practical activities completed.",
+  "questionText": "As part of your habitat study, you collected organisms using various collection methods. Name and describe how you used any two.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Correctly named first collection method",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Correct description of how to use the first collection method",
+    "marks": 3,
+    "contextNote": "Must match"
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "Correctly named second collection method",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "Correct description of how to use the second collection method",
+    "marks": 3,
+    "contextNote": "Must match"
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q9-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "osmosis",
+  "section": "B",
+  "questionRef": "2024 HL Q9(a) — Deferred sitting",
+  "questionText": "Water enters cells by osmosis. Explain the term osmosis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Movement of water from a region of high water concentration to a region of low water concentration",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "across a semi-permeable membrane",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q9-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "demonstrating-osmosis",
+  "section": "B",
+  "questionRef": "2024 HL Q9(b) — Deferred sitting",
+  "questionText": "During your practical studies, you carried out an investigation to demonstrate osmosis. Using a labelled diagram, describe how you demonstrated osmosis. Include a description of the control and a safety precaution you took.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Named material used (e.g. Visking tubing) or named living tissue used (e.g. potato) / sugar (or salt) solution (prepared) / concentration difference described or implied / correct reference to time / correct result described",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Named material used (e.g. Visking tubing) or named living tissue used (e.g. potato)",
+      "sugar (or salt) solution (prepared)",
+      "concentration difference described or implied",
+      "correct reference to time",
+      "correct result described"
+     ]
+    }
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Control described",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "Safety precaution stated or described",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "Diagram",
+    "marks": 3
+   },
+   {
+    "id": "r5",
+    "kind": "criterion",
+    "verbatim": "Labels (any three)",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices any four method points 4(3), the control, the safety precaution and the diagram 3 each, and any three labels 3(1). Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q10-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "systole-and-diastole",
+  "section": "B",
+  "questionRef": "2024 HL Q10(a) — Deferred sitting",
+  "questionText": "Distinguish between the terms, systole and diastole.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Systole — Heart muscle is contracting",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Diastole — Heart muscle is relaxing",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q10-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "front-of-the-heart",
+  "section": "B",
+  "questionRef": "2024 HL Q10(b)(i) — Deferred sitting",
+  "stem": "Answer the following questions in relation to the dissection, display and identification of the parts of a sheep’s or an ox’s heart.",
+  "questionText": "Explain how you distinguished the front of the heart from the back.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Location of the coronary artery on the front or other correct description",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q10-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "dissecting-equipment",
+  "section": "B",
+  "questionRef": "2024 HL Q10(b)(ii) — Deferred sitting",
+  "stem": "Answer the following questions in relation to the dissection, display and identification of the parts of a sheep’s or an ox’s heart.",
+  "questionText": "Name one piece of equipment you used to make an incision.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Scalpel or other correct",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q10-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "tricuspid-valve",
+  "section": "B",
+  "questionRef": "2024 HL Q10(b)(iii) — Deferred sitting",
+  "stem": "Answer the following questions in relation to the dissection, display and identification of the parts of a sheep’s or an ox’s heart.",
+  "questionText": "During your dissection you located the tricuspid valve. State the exact location of this valve.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Between the right atrium and right ventricle",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q10-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "exposing-the-semilunar-valve",
+  "section": "B",
+  "questionRef": "2024 HL Q10(b)(iv) — Deferred sitting",
+  "stem": "Answer the following questions in relation to the dissection, display and identification of the parts of a sheep’s or an ox’s heart.",
+  "questionText": "What did you do to expose the semi-lunar valve?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Cut into the aorta (or pulmonary artery)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q10-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "left-and-right-sides",
+  "section": "B",
+  "questionRef": "2024 HL Q10(b)(v) — Deferred sitting",
+  "stem": "Answer the following questions in relation to the dissection, display and identification of the parts of a sheep’s or an ox’s heart.",
+  "questionText": "Describe one difference you observed between the right side of the heart and the left side after your dissection.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "The wall of the left ventricle was thicker than the wall of the right ventricle or other correct difference described",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q10-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "sketching-the-heart-dissection",
+  "section": "B",
+  "questionRef": "2024 HL Q10(b)(vi) — Deferred sitting",
+  "stem": "Answer the following questions in relation to the dissection, display and identification of the parts of a sheep’s or an ox’s heart.",
+  "questionText": "In the space provided below, sketch the internal structure of the heart dissection showing where you located the following: septum, right ventricle, left atrium.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Sketch of the right side, including chambers",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Sketch of the left side showing thicker wall, including chambers",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Septum",
+    "marks": 1
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Right ventricle",
+    "marks": 1
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "Left atrium",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices the sketch's two sides 3 each and its three labels 1 each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q11-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "tissue-culture",
+  "section": "C",
+  "questionRef": "2024 HL Q11(a)(i) — Deferred sitting",
+  "stem": "Answer the following questions in relation to tissue culture.",
+  "questionText": "What is meant by the term tissue culture?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Growing cells in a nutrient medium",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q11-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "uses-of-tissue-culture",
+  "section": "C",
+  "questionRef": "2024 HL Q11(a)(ii) — Deferred sitting",
+  "stem": "Answer the following questions in relation to tissue culture.",
+  "questionText": "Give two applications of tissue culture.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Cancer research / skin grafting / IVF",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Cancer research",
+      "skin grafting",
+      "IVF"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q11-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "sex-linkage",
+  "section": "C",
+  "questionRef": "2024 HL Q11(b)(i) — Deferred sitting",
+  "stem": "Red-green colour vision is controlled by an allele present on the X chromosome. There is no corresponding allele on the Y chromosome. The allele for normal red-green colour vision (N) is dominant to the allele for red-green colour blindness (n).",
+  "questionText": "What term describes the presence of a gene on the X chromosome?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Sex-linked (or X-linked)",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q11-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "dominant",
+  "section": "C",
+  "questionRef": "2024 HL Q11(b)(ii) — Deferred sitting",
+  "stem": "Red-green colour vision is controlled by an allele present on the X chromosome. There is no corresponding allele on the Y chromosome. The allele for normal red-green colour vision (N) is dominant to the allele for red-green colour blindness (n).",
+  "questionText": "What is meant by the term dominant?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "An allele masks the effect of another allele",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q11-b-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "parent-phenotypes",
+  "section": "C",
+  "questionRef": "2024 HL Q11(b)(iii)1 — Deferred sitting",
+  "stem": "Red-green colour vision is controlled by an allele present on the X chromosome. There is no corresponding allele on the Y chromosome. The allele for normal red-green colour vision (N) is dominant to the allele for red-green colour blindness (n). The chromosome diagrams show the genetic makeup of two parents.",
+  "questionText": "1. Write down the full phenotypes of parent 1 and parent 2.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Parent 1 — (Red-green) colour-blind male",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "Parent 2 — Normal female (or carrier female)",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q11-chromosomes"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q11-b-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "offspring-genotypes-and-phenotypes",
+  "section": "C",
+  "questionRef": "2024 HL Q11(b)(iii)2 — Deferred sitting",
+  "stem": "Red-green colour vision is controlled by an allele present on the X chromosome. There is no corresponding allele on the Y chromosome. The allele for normal red-green colour vision (N) is dominant to the allele for red-green colour blindness (n). The chromosome diagrams show the genetic makeup of two parents.",
+  "questionText": "2. If parents 1 and 2 had a child, there are four possible genotypes. Write down each genotype and its corresponding phenotype.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "XXNn and normal (or carrier) female",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "XXnn and red-green colour-blind female",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r3",
+    "kind": "gate",
+    "verbatim": "XYN– and normal male",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r4",
+    "kind": "gate",
+    "verbatim": "XYn– and red-green colour-blind male",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q11-chromosomes"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q11-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "sex-linkage-in-males",
+  "section": "C",
+  "questionRef": "2024 HL Q11(b)(iv) — Deferred sitting",
+  "stem": "Red-green colour vision is controlled by an allele present on the X chromosome. There is no corresponding allele on the Y chromosome. The allele for normal red-green colour vision (N) is dominant to the allele for red-green colour blindness (n).",
+  "questionText": "Explain why red-green colour blindness is more common in males than females.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Males only have one copy of the gene",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q11-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "sites-of-transcription-and-translation",
+  "section": "C",
+  "questionRef": "2024 HL Q11(c)(i) — Deferred sitting",
+  "stem": "Gene expression is the use of the DNA code to produce a protein. The production of a protein involves transcription and translation.",
+  "questionText": "State the location of transcription and the location of translation in the cell.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Location of transcription — Nucleus",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "Location of translation — Ribosome",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q11-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "protein-synthesis",
+  "section": "C",
+  "questionRef": "2024 HL Q11(c)(ii) — Deferred sitting",
+  "stem": "Gene expression is the use of the DNA code to produce a protein. The production of a protein involves transcription and translation.",
+  "questionText": "Describe the events that occur in transcription and translation. Include in your answer the three types of RNA involved.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "DNA unwinds (at location of gene) / RNA nucleotides are joined together / to form messenger RNA (mRNA) / mRNA leaves nucleus or mRNA travels to cytoplasm",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "DNA unwinds (at location of gene)",
+      "RNA nucleotides are joined together",
+      "to form messenger RNA (mRNA)",
+      "mRNA leaves nucleus or mRNA travels to cytoplasm"
+     ]
+    }
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "mRNA arrives at ribosome / ribosome is composed of rRNA / transfer RNA (tRNA) carries amino acid / (tRNA) anti-codon attaches to (mRNA) codon or correct reference to start or stop codon / amino acids are joined in sequence",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "mRNA arrives at ribosome",
+      "ribosome is composed of rRNA",
+      "transfer RNA (tRNA) carries amino acid",
+      "(tRNA) anti-codon attaches to (mRNA) codon or correct reference to start or stop codon",
+      "amino acids are joined in sequence"
+     ]
+    },
+    "contextNote": "If no types of RNA are mentioned, max marks ="
+   }
+  ],
+  "notes": "The scheme prices any three transcription points and any three translation points 3(3) each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "biosphere",
+  "section": "C",
+  "questionRef": "2024 HL Q12(a)(i) — Deferred sitting",
+  "questionText": "Define the following terms as used in ecology.\nBiosphere",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Where life can exist on Earth",
+    "marks": 3
+   }
+  ],
+  "notes": "Each term is priced on its own: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "habitat",
+  "section": "C",
+  "questionRef": "2024 HL Q12(a)(ii) — Deferred sitting",
+  "questionText": "Define the following terms as used in ecology.\nHabitat",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Where an organism lives",
+    "marks": 3
+   }
+  ],
+  "notes": "Each term is priced on its own: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "niche",
+  "section": "C",
+  "questionRef": "2024 HL Q12(a)(iii) — Deferred sitting",
+  "questionText": "Define the following terms as used in ecology.\nNiche",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Role of an organism (in its habitat)",
+    "marks": 3
+   }
+  ],
+  "notes": "Each term is priced on its own: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "importance-of-hoverflies",
+  "section": "C",
+  "questionRef": "2024 HL Q12(b)(i) — Deferred sitting",
+  "stem": "Read the passage below and answer the questions that follow. Next time you’re about to swat a fly, think again. They’re important in many ways, playing a vital role in pollination, which enables plants to reproduce. Insects such as the hoverfly, play a critical role in pollination. Hoverflies, of which we have 180 species, are more abundant as flower-visitors than might be expected, accounting for more than half of such recorded visits to flowering plants, such as the ribwort plantain. The importance of allowing a certain amount of grassland grow wild is now being highlighted. It allows hoverfly populations to increase, which in turn provides a food source for birds, such as the robin. We need to get a variety of native plants back into Irish habitats to support pollinators – and it’s something many people can do quite easily and contribute to conservation efforts. Adapted from “These pollinators 'dress up' like bees for their own protection”, Irish Examiner, 17 Nov 2022",
+  "questionText": "Give two reasons why hoverflies are important in a habitat.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "For pollination (or for plant reproduction) / as a food source for birds",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "For pollination (or for plant reproduction)",
+      "as a food source for birds"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-b-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "conservation",
+  "section": "C",
+  "questionRef": "2024 HL Q12(b)(ii)1 — Deferred sitting",
+  "stem": "Read the passage below and answer the questions that follow. Next time you’re about to swat a fly, think again. They’re important in many ways, playing a vital role in pollination, which enables plants to reproduce. Insects such as the hoverfly, play a critical role in pollination. Hoverflies, of which we have 180 species, are more abundant as flower-visitors than might be expected, accounting for more than half of such recorded visits to flowering plants, such as the ribwort plantain. The importance of allowing a certain amount of grassland grow wild is now being highlighted. It allows hoverfly populations to increase, which in turn provides a food source for birds, such as the robin. We need to get a variety of native plants back into Irish habitats to support pollinators – and it’s something many people can do quite easily and contribute to conservation efforts. Adapted from “These pollinators 'dress up' like bees for their own protection”, Irish Examiner, 17 Nov 2022",
+  "questionText": "1. Conservation is referred to in the passage. What is meant by the term conservation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Management (or preservation or protection) of organisms (or species or their habitats or environments or ecosystems)",
+    "marks": 3
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-b-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "conservation-practices",
+  "section": "C",
+  "questionRef": "2024 HL Q12(b)(ii)2 — Deferred sitting",
+  "stem": "Read the passage below and answer the questions that follow. Next time you’re about to swat a fly, think again. They’re important in many ways, playing a vital role in pollination, which enables plants to reproduce. Insects such as the hoverfly, play a critical role in pollination. Hoverflies, of which we have 180 species, are more abundant as flower-visitors than might be expected, accounting for more than half of such recorded visits to flowering plants, such as the ribwort plantain. The importance of allowing a certain amount of grassland grow wild is now being highlighted. It allows hoverfly populations to increase, which in turn provides a food source for birds, such as the robin. We need to get a variety of native plants back into Irish habitats to support pollinators – and it’s something many people can do quite easily and contribute to conservation efforts. Adapted from “These pollinators 'dress up' like bees for their own protection”, Irish Examiner, 17 Nov 2022 Conservation is referred to in the passage.",
+  "questionText": "2. Outline any one conservation practice, mentioned in the passage, or from one of the following areas: agriculture; fisheries; forestry.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Valid conservation practice (e.g. allow grassland to grow wild)",
+    "marks": 3
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-b-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "food-chain",
+  "section": "C",
+  "questionRef": "2024 HL Q12(b)(iii)1 — Deferred sitting",
+  "stem": "Read the passage below and answer the questions that follow. Next time you’re about to swat a fly, think again. They’re important in many ways, playing a vital role in pollination, which enables plants to reproduce. Insects such as the hoverfly, play a critical role in pollination. Hoverflies, of which we have 180 species, are more abundant as flower-visitors than might be expected, accounting for more than half of such recorded visits to flowering plants, such as the ribwort plantain. The importance of allowing a certain amount of grassland grow wild is now being highlighted. It allows hoverfly populations to increase, which in turn provides a food source for birds, such as the robin. We need to get a variety of native plants back into Irish habitats to support pollinators – and it’s something many people can do quite easily and contribute to conservation efforts. Adapted from “These pollinators 'dress up' like bees for their own protection”, Irish Examiner, 17 Nov 2022",
+  "questionText": "1. Write down a food chain using organisms named in the passage above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Ribwort) plantain → hoverfly → robin",
+    "marks": 3
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-b-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "trophic-levels",
+  "section": "C",
+  "questionRef": "2024 HL Q12(b)(iii)2 — Deferred sitting",
+  "stem": "Read the passage below and answer the questions that follow. Next time you’re about to swat a fly, think again. They’re important in many ways, playing a vital role in pollination, which enables plants to reproduce. Insects such as the hoverfly, play a critical role in pollination. Hoverflies, of which we have 180 species, are more abundant as flower-visitors than might be expected, accounting for more than half of such recorded visits to flowering plants, such as the ribwort plantain. The importance of allowing a certain amount of grassland grow wild is now being highlighted. It allows hoverfly populations to increase, which in turn provides a food source for birds, such as the robin. We need to get a variety of native plants back into Irish habitats to support pollinators – and it’s something many people can do quite easily and contribute to conservation efforts. Adapted from “These pollinators 'dress up' like bees for their own protection”, Irish Examiner, 17 Nov 2022",
+  "questionText": "2. How many trophic levels are in the food chain you wrote above?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "3",
+    "marks": 3
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-b-iii-3",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "limits-on-trophic-levels",
+  "section": "C",
+  "questionRef": "2024 HL Q12(b)(iii)3 — Deferred sitting",
+  "stem": "Read the passage below and answer the questions that follow. Next time you’re about to swat a fly, think again. They’re important in many ways, playing a vital role in pollination, which enables plants to reproduce. Insects such as the hoverfly, play a critical role in pollination. Hoverflies, of which we have 180 species, are more abundant as flower-visitors than might be expected, accounting for more than half of such recorded visits to flowering plants, such as the ribwort plantain. The importance of allowing a certain amount of grassland grow wild is now being highlighted. It allows hoverfly populations to increase, which in turn provides a food source for birds, such as the robin. We need to get a variety of native plants back into Irish habitats to support pollinators – and it’s something many people can do quite easily and contribute to conservation efforts. Adapted from “These pollinators 'dress up' like bees for their own protection”, Irish Examiner, 17 Nov 2022",
+  "questionText": "3. Explain why the number of trophic levels in food chains are limited.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Large energy loss between trophic levels or other correct description",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "effects-of-mowing",
+  "section": "C",
+  "questionRef": "2024 HL Q12(b)(iv) — Deferred sitting",
+  "stem": "Read the passage below and answer the questions that follow. Next time you’re about to swat a fly, think again. They’re important in many ways, playing a vital role in pollination, which enables plants to reproduce. Insects such as the hoverfly, play a critical role in pollination. Hoverflies, of which we have 180 species, are more abundant as flower-visitors than might be expected, accounting for more than half of such recorded visits to flowering plants, such as the ribwort plantain. The importance of allowing a certain amount of grassland grow wild is now being highlighted. It allows hoverfly populations to increase, which in turn provides a food source for birds, such as the robin. We need to get a variety of native plants back into Irish habitats to support pollinators – and it’s something many people can do quite easily and contribute to conservation efforts. Adapted from “These pollinators 'dress up' like bees for their own protection”, Irish Examiner, 17 Nov 2022",
+  "questionText": "If the ribwort plantain population reduced due to mowing give two effects this might have on the habitat.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Reduced hoverfly population / migration / reduced robin population / reduced biodiversity / other correct effect",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Reduced hoverfly population",
+      "migration",
+      "reduced robin population",
+      "reduced biodiversity",
+      "other correct effect"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "pollution",
+  "section": "C",
+  "questionRef": "2024 HL Q12(c)(i) — Deferred sitting",
+  "questionText": "Explain the term pollution.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Harmful addition to environment",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-c-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "effects-of-pollutants",
+  "section": "C",
+  "questionRef": "2024 HL Q12(c)(ii)1 — Deferred sitting",
+  "questionText": "1. Describe one effect of a named pollutant from one of the following areas: domestic; agricultural; industrial.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Named pollutant and matching effect",
+    "marks": 3
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-c-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "pollution-control",
+  "section": "C",
+  "questionRef": "2024 HL Q12(c)(ii)2 — Deferred sitting",
+  "questionText": "2. Give one way in which pollution may be controlled.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Valid pollution control method",
+    "marks": 3
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "waste-disposal-problems",
+  "section": "C",
+  "questionRef": "2024 HL Q12(c)(iii) — Deferred sitting",
+  "questionText": "Outline two problems associated with waste disposal.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Attracts vermin / unsightly / pollution (or example)",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Attracts vermin",
+      "unsightly",
+      "pollution (or example)"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "waste-minimisation",
+  "section": "C",
+  "questionRef": "2024 HL Q12(c)(iv) — Deferred sitting",
+  "questionText": "Suggest two methods of waste minimisation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Recycle / bottle return scheme / reuse (items)",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Recycle",
+      "bottle return scheme",
+      "reuse (items)"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q12-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "micro-organisms-in-waste-management",
+  "section": "C",
+  "questionRef": "2024 HL Q12(c)(v) — Deferred sitting",
+  "questionText": "Give one example of the use of micro-organisms in waste management.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Breakdown sewage or other correct",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q13-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-1",
+  "conceptId": "metabolism",
+  "section": "C",
+  "questionRef": "2024 HL Q13(a)(i) — Deferred sitting",
+  "stem": "Metabolism can be categorised as anabolic and catabolic.",
+  "questionText": "What is meant by the term metabolism?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(All) chemical reactions in a cell (or organism).",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q13-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-1",
+  "conceptId": "anabolic-and-catabolic",
+  "section": "C",
+  "questionRef": "2024 HL Q13(a)(ii) — Deferred sitting",
+  "stem": "Metabolism can be categorised as anabolic and catabolic.",
+  "questionText": "Distinguish between the terms anabolic and catabolic.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Anabolic — building up large molecules from small molecules or (a reaction) using energy",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Catabolic — breaking down large molecules to small molecules or (a reaction) releasing energy",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q13-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "greenhouse-factors",
+  "section": "C",
+  "questionRef": "2024 HL Q13(b)(i) — Deferred sitting",
+  "stem": "The photograph shows an industrial-sized greenhouse. Photosynthesis and crop growth can be controlled and maximised in greenhouses.",
+  "questionText": "Give two factors that horticulturists can adjust in a greenhouse to promote crop growth.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Light intensity / temperature",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Light intensity",
+      "temperature"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q13-greenhouse"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q13-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "photosynthesis-balanced-equation",
+  "section": "C",
+  "questionRef": "2024 HL Q13(b)(ii) — Deferred sitting",
+  "stem": "The photograph shows an industrial-sized greenhouse. Photosynthesis and crop growth can be controlled and maximised in greenhouses.",
+  "questionText": "Write a balanced chemical equation for photosynthesis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "6CO2 + 6H2O → C6H12O6 + 6O2",
+    "marks": 6,
+    "contextNote": "First point: formulae; second point: balancing"
+   }
+  ],
+  "notes": "The scheme gives a point for the formulae and one for the balancing, 2(3): one row of two responses. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q13-greenhouse"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q13-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "light-and-dark-stages",
+  "section": "C",
+  "questionRef": "2024 HL Q13(b)(iii) — Deferred sitting",
+  "stem": "The photograph shows an industrial-sized greenhouse. Photosynthesis and crop growth can be controlled and maximised in greenhouses.",
+  "questionText": "The biochemical processes in photosynthesis can be described under two main headings: the light stage and the dark stage. Give a detailed account of each of these stages.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Energised electron leaves chlorophyll and is picked up by (electron) acceptor or transferred from carrier to carrier / energy released / ATP produced from ADP and P / (electron) transferred to NADP(+) / water is split into protons, electrons and oxygen (gas) / protons transferred to NADP(–) or NADPH produced / electron to chlorophyll",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Energised electron leaves chlorophyll and is picked up by (electron) acceptor or transferred from carrier to carrier",
+      "energy released",
+      "ATP produced from ADP and P",
+      "(electron) transferred to NADP(+)",
+      "water is split into protons, electrons and oxygen (gas)",
+      "protons transferred to NADP(–) or NADPH produced",
+      "electron to chlorophyll"
+     ]
+    },
+    "openList": true
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "NADPH supplies protons and electrons / carbon dioxide is converted to glucose (carbohydrate) / ATP supplies the energy / NADP(+) or ADP returns to the light stage",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "NADPH supplies protons and electrons",
+      "carbon dioxide is converted to glucose (carbohydrate)",
+      "ATP supplies the energy",
+      "NADP(+) or ADP returns to the light stage"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prices any three light-stage points 3(3) and any two dark-stage points 2(3). Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q13-greenhouse"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q13-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "glycolysis",
+  "section": "C",
+  "questionRef": "2024 HL Q13(c)(i) — Deferred sitting",
+  "stem": "Respiration occurs in all living cells.",
+  "questionText": "What name is given to the first stage of respiration?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Glycolysis",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q13-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "pyruvate",
+  "section": "C",
+  "questionRef": "2024 HL Q13(c)(ii) — Deferred sitting",
+  "stem": "Respiration occurs in all living cells.",
+  "questionText": "Name the end product of the first stage.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Pyruvate (or pyruvic acid)",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q13-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "mitochondrion",
+  "section": "C",
+  "questionRef": "2024 HL Q13(c)(iii) — Deferred sitting",
+  "stem": "Respiration occurs in all living cells.",
+  "questionText": "If conditions within a cell undergoing respiration are aerobic, the product you named above passes into an organelle. Name this organelle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Mitochondrion",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q13-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "acetyl-coenzyme-a",
+  "section": "C",
+  "questionRef": "2024 HL Q13(c)(iv) — Deferred sitting",
+  "stem": "Respiration occurs in all living cells.",
+  "questionText": "What is the name of the two-carbon molecule that is formed from the product you named at part (c) (ii) above?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Acetyl (Co-enzyme A)",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q13-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "krebs-cycle",
+  "section": "C",
+  "questionRef": "2024 HL Q13(c)(v) — Deferred sitting",
+  "stem": "Respiration occurs in all living cells.",
+  "questionText": "Name the cycle of reactions that this two-carbon molecule passes directly into and give two products of this cycle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Krebs (cycle)",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "Carbon dioxide / ATP / NADH",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Carbon dioxide",
+      "ATP",
+      "NADH"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q13-c-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "anaerobic-conditions",
+  "section": "C",
+  "questionRef": "2024 HL Q13(c)(vi) — Deferred sitting",
+  "stem": "Respiration occurs in all living cells.",
+  "questionText": "Describe a situation in which some cells in the human body may not be able to take part in the second stage of aerobic respiration.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Intense exercise or other correct",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q14-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "parts-of-a-flower",
+  "section": "C",
+  "questionRef": "2024 HL Q14(a) — Deferred sitting",
+  "stem": "The diagram shows a typical flower.",
+  "questionText": "Give one function for each of the three structures labelled on the diagram.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Petal — attract pollinators (or named pollinator)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Anther — Produce pollen",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Sepal — Protects (developing) flower",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q14-flower"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q14-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "pollination",
+  "section": "C",
+  "questionRef": "2024 HL Q14(b)(i) — Deferred sitting",
+  "stem": "Pollination can be carried out by animals, as shown in the photograph.",
+  "questionText": "What is pollination?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Transfer of pollen from anther to stigma",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q14-pollination"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q14-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "methods-of-pollination",
+  "section": "C",
+  "questionRef": "2024 HL Q14(b)(ii) — Deferred sitting",
+  "stem": "Pollination can be carried out by animals, as shown in the photograph.",
+  "questionText": "Name one other type of pollination (other than by animals).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Wind or water",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q14-pollination"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q14-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "double-fertilisation",
+  "section": "C",
+  "questionRef": "2024 HL Q14(b)(iii) — Deferred sitting",
+  "stem": "Pollination can be carried out by animals, as shown in the photograph.",
+  "questionText": "Two fertilisations occur following pollination. Name the products of both fertilisations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Diploid) zygote",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(Triploid) endosperm",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q14-pollination"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q14-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "drawing-a-seed",
+  "section": "C",
+  "questionRef": "2024 HL Q14(b)(iv) — Deferred sitting",
+  "stem": "Pollination can be carried out by animals, as shown in the photograph.",
+  "questionText": "Seed development follows fertilisation. Draw a labelled diagram of the internal structure of a seed, labelling the following parts: testa, cotyledon, embryo.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagram showing testa and embryo",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Testa",
+    "marks": 1
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Cotyledon",
+    "marks": 1
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Embryo",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices the diagram \"3\" and each of its three labels \"1\". Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q14-pollination"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q14-b-v-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "seed-dispersal",
+  "section": "C",
+  "questionRef": "2024 HL Q14(b)(v)1 — Deferred sitting",
+  "stem": "Pollination can be carried out by animals, as shown in the photograph. After seed development, fruit and seed dispersal occurs.",
+  "questionText": "1. What is meant by the term seed dispersal?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Transfer of (seed or fruit) away from the parent (plant)",
+    "marks": 3
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q14-pollination"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q14-b-v-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "benefits-of-dispersal",
+  "section": "C",
+  "questionRef": "2024 HL Q14(b)(v)2 — Deferred sitting",
+  "stem": "Pollination can be carried out by animals, as shown in the photograph. After seed development, fruit and seed dispersal occurs.",
+  "questionText": "2. Give one benefit to plants of seed dispersal.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Allows plant to colonise new habitats or increases chance of survival or prevents (reduces) competition with the parent plant or avoids overcrowding or other correct",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q14-pollination"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q14-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "seedless-fruit",
+  "section": "C",
+  "questionRef": "2024 HL Q14(b)(vi) — Deferred sitting",
+  "stem": "Pollination can be carried out by animals, as shown in the photograph.",
+  "questionText": "Horticulturists can produce seedless fruits. Give one way in which seedless fruits can be produced.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Special breeding programmes or using plant growth regulators or other correct",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q14-pollination"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q14-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "factors-in-germination",
+  "section": "C",
+  "questionRef": "2024 HL Q14(c)(i) — Deferred sitting",
+  "stem": "Water, oxygen and a suitable temperature are all required for the germination of seeds.",
+  "questionText": "In the case of any two of these factors, describe their effect on the process of germination.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Water: Activates metabolism or allows enzyme function or dilutes inhibitors or allows transfer of nutrients (or minerals) or other correct / Oxygen: Allows for aerobic respiration or production of energy from glucose / Suitable temperature: Allows for optimum metabolic reactions or optimum enzyme activity",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Water: Activates metabolism or allows enzyme function or dilutes inhibitors or allows transfer of nutrients (or minerals) or other correct",
+      "Oxygen: Allows for aerobic respiration or production of energy from glucose",
+      "Suitable temperature: Allows for optimum metabolic reactions or optimum enzyme activity"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q14-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "endospermic-and-non-endospermic-seeds",
+  "section": "C",
+  "questionRef": "2024 HL Q14(c)(ii) — Deferred sitting",
+  "stem": "Water, oxygen and a suitable temperature are all required for the germination of seeds.",
+  "questionText": "Seeds can generally be classified as endospermic and non-endospermic. Give one example of each.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Endospermic — valid example (e.g. maize)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Non-endospermic — valid example (e.g. broad bean)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q14-c-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "advantages-of-seed-reproduction",
+  "section": "C",
+  "questionRef": "2024 HL Q14(c)(iii)1 — Deferred sitting",
+  "stem": "Water, oxygen and a suitable temperature are all required for the germination of seeds. Reproduction in plants can be either asexual (vegetative propagation) or sexual (seed development and germination).",
+  "questionText": "1. Give two advantages for a plant that reproduces by seed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "(Produces) genetic variation / (seeds) can be dispersed widely / survive winter / seed banks",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "(Produces) genetic variation",
+      "(seeds) can be dispersed widely",
+      "survive winter",
+      "seed banks"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q14-c-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "advantages-of-vegetative-propagation",
+  "section": "C",
+  "questionRef": "2024 HL Q14(c)(iii)2 — Deferred sitting",
+  "stem": "Water, oxygen and a suitable temperature are all required for the germination of seeds. Reproduction in plants can be either asexual (vegetative propagation) or sexual (seed development and germination).",
+  "questionText": "2. Give two advantages for a plant that reproduces by vegetative propagation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Simple process / efficient / fast / short period of growth to reach maturity",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Simple process",
+      "efficient",
+      "fast",
+      "short period of growth to reach maturity"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q15-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "excretion-and-homeostasis",
+  "section": "C",
+  "questionRef": "2024 HL Q15(a)(i) — Deferred sitting",
+  "stem": "Excretion is an important process involved in maintaining homeostasis.",
+  "questionText": "Explain the terms excretion and homeostasis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Excretion — getting rid of waste products of metabolism",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Homeostasis — maintenance of a constant internal environment (within the body)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q15-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "importance-of-homeostasis",
+  "section": "C",
+  "questionRef": "2024 HL Q15(a)(ii) — Deferred sitting",
+  "stem": "Excretion is an important process involved in maintaining homeostasis.",
+  "questionText": "Give one reason why homeostasis is important for the body.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "So enzyme function is maintained or other correct description",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q15-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "filtration",
+  "section": "C",
+  "questionRef": "2024 HL Q15(b)(i) — Deferred sitting",
+  "stem": "The diagram shows the structure of the nephron in the kidney. Filtration, reabsorption and secretion are three important processes involved in urine formation. Using your knowledge of the human urinary system, answer the following questions.",
+  "questionText": "What is meant by filtration?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Process where (waste) substances are removed from the blood",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q15-nephron"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q15-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "site-of-filtration",
+  "section": "C",
+  "questionRef": "2024 HL Q15(b)(ii) — Deferred sitting",
+  "stem": "The diagram shows the structure of the nephron in the kidney. Filtration, reabsorption and secretion are three important processes involved in urine formation. Using your knowledge of the human urinary system, answer the following questions.",
+  "questionText": "Which part of the nephron is involved in filtration?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Glomerulus or Bowman’s capsule",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q15-nephron"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q15-b-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "substances-reabsorbed",
+  "section": "C",
+  "questionRef": "2024 HL Q15(b)(iii)1 — Deferred sitting",
+  "stem": "The diagram shows the structure of the nephron in the kidney. Filtration, reabsorption and secretion are three important processes involved in urine formation. Using your knowledge of the human urinary system, answer the following questions. Reabsorption of substances, such as water, is very important to the body.",
+  "questionText": "1. Name two substances (other than water) that are reabsorbed from the nephron.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Glucose / amino acids / minerals / salts / ions",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Glucose",
+      "amino acids",
+      "minerals",
+      "salts",
+      "ions"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q15-nephron"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q15-b-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "sites-of-reabsorption",
+  "section": "C",
+  "questionRef": "2024 HL Q15(b)(iii)2 — Deferred sitting",
+  "stem": "The diagram shows the structure of the nephron in the kidney. Filtration, reabsorption and secretion are three important processes involved in urine formation. Using your knowledge of the human urinary system, answer the following questions. Reabsorption of substances, such as water, is very important to the body.",
+  "questionText": "2. Name three regions of the nephron where reabsorption occurs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Proximal convoluted tubule (or PCT)",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "Loop of Henle",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r3",
+    "kind": "gate",
+    "verbatim": "Distal convoluted tubule (or DCT)",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q15-nephron"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q15-b-iv-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "adh",
+  "section": "C",
+  "questionRef": "2024 HL Q15(b)(iv)1 — Deferred sitting",
+  "stem": "The diagram shows the structure of the nephron in the kidney. Filtration, reabsorption and secretion are three important processes involved in urine formation. Using your knowledge of the human urinary system, answer the following questions. The nephron is also sensitive to a hormone. This hormone has an effect on the reabsorption of water from the nephron.",
+  "questionText": "1. What is the name of this hormone?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Anti-diuretic hormone (or ADH)",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q15-nephron"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q15-b-iv-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "when-adh-is-secreted",
+  "section": "C",
+  "questionRef": "2024 HL Q15(b)(iv)2 — Deferred sitting",
+  "stem": "The diagram shows the structure of the nephron in the kidney. Filtration, reabsorption and secretion are three important processes involved in urine formation. Using your knowledge of the human urinary system, answer the following questions. The nephron is also sensitive to a hormone. This hormone has an effect on the reabsorption of water from the nephron.",
+  "questionText": "2. Under what condition is the hormone you named above secreted?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Low water content in the blood or other correct",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q15-nephron"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q15-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "closed-circulatory-system",
+  "section": "C",
+  "questionRef": "2024 HL Q15(c)(i) — Deferred sitting",
+  "stem": "Answer the following questions based on the human circulatory system.",
+  "questionText": "The human circulatory system is described as a closed circulatory system. What is meant by a closed circulatory system?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Blood flows completely within blood vessels",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q15-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "sketching-artery-and-vein",
+  "section": "C",
+  "questionRef": "2024 HL Q15(c)(ii) — Deferred sitting",
+  "stem": "Answer the following questions based on the human circulatory system.",
+  "questionText": "Sketch a cross section of a vein and an artery to show the difference between the walls of each. Clearly indicate which is the vein and which is the artery.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Sketch of showing difference in walls of each blood vessel",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Clear indication which is artery and which is vein",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q15-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "valves-in-veins",
+  "section": "C",
+  "questionRef": "2024 HL Q15(c)(iii) — Deferred sitting",
+  "stem": "Answer the following questions based on the human circulatory system.",
+  "questionText": "Veins have valves along their length. Explain the purpose of these valves.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Prevent backflow of blood",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q15-c-iv-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "pulmonary-vein",
+  "section": "C",
+  "questionRef": "2024 HL Q15(c)(iv)1 — Deferred sitting",
+  "stem": "Answer the following questions based on the human circulatory system. Veins generally carry deoxygenated blood and arteries generally carry oxygenated blood. However, there are exceptions.",
+  "questionText": "1. Name the vein in the body that carries oxygenated blood.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Pulmonary (vein)",
+    "marks": 3
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q15-c-iv-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "pulmonary-artery",
+  "section": "C",
+  "questionRef": "2024 HL Q15(c)(iv)2 — Deferred sitting",
+  "stem": "Answer the following questions based on the human circulatory system. Veins generally carry deoxygenated blood and arteries generally carry oxygenated blood. However, there are exceptions.",
+  "questionText": "2. Name the artery in the body that carries deoxygenated blood.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Pulmonary (artery)",
+    "marks": 3
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q15-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "pulse-and-blood-pressure",
+  "section": "C",
+  "questionRef": "2024 HL Q15(c)(v) — Deferred sitting",
+  "stem": "Answer the following questions based on the human circulatory system.",
+  "questionText": "Pulse and blood pressure are two factors that have an effect on blood vessels. Explain the terms pulse and blood pressure.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Pulse — throbbing (or expansion) of an artery or blood moves through artery in spurts or other correct description",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Blood pressure — force of blood against the walls of blood vessels",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "joints-of-the-skull",
+  "section": "C",
+  "questionRef": "2024 HL Q16(a)(i) — Deferred sitting",
+  "stem": "The human skull (also known as the cranium) is shown in the diagram.",
+  "questionText": "What type of joint is found between the bones that make up the skull?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Immovable (or fixed or fused)",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-skull"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "types-of-joints",
+  "section": "C",
+  "questionRef": "2024 HL Q16(a)(ii) — Deferred sitting",
+  "stem": "The human skull (also known as the cranium) is shown in the diagram.",
+  "questionText": "Name another type of joint found in the human skeleton and give its location.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Type of joint (e.g. freely movable)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Correct location",
+    "marks": 3,
+    "contextNote": "Must match named type"
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-skull"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "axial-skeleton",
+  "section": "C",
+  "questionRef": "2024 HL Q16(a)(iii) — Deferred sitting",
+  "stem": "The human skull (also known as the cranium) is shown in the diagram.",
+  "questionText": "The skull is part of the axial skeleton. Name another two bones that are part of the axial skeleton.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Vertebra (or named type) / sternum / rib",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Vertebra (or named type)",
+      "sternum",
+      "rib"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-skull"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-a-iv-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "structure-of-a-long-bone",
+  "section": "C",
+  "questionRef": "2024 HL Q16(a)(iv)1 — Deferred sitting",
+  "stem": "The human skull (also known as the cranium) is shown in the diagram. The appendicular skeleton is mostly composed of long bones.",
+  "questionText": "1. Draw the internal structure of a long bone and label the following parts: cartilage, compact bone, spongy bone.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Drawing of long bone showing at least one epiphysis",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Cartilage",
+    "marks": 1
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Compact bone",
+    "marks": 1
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Spongy bone",
+    "marks": 1
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. The scheme prices the drawing \"3\" and each of its three labels \"1\". Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-skull"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-a-iv-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "functions-of-bone-tissues",
+  "section": "C",
+  "questionRef": "2024 HL Q16(a)(iv)2 — Deferred sitting",
+  "stem": "The human skull (also known as the cranium) is shown in the diagram. The appendicular skeleton is mostly composed of long bones.",
+  "questionText": "2. Give one function of each labelled part.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Cartilage — shock absorption or friction free movement or protect ends of bone",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Compact bone — give structure (to the bone) or other correct",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "Spongy bone — produces blood cells or stores fat or other correct",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-skull"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "general-defence-system",
+  "section": "C",
+  "questionRef": "2024 HL Q16(b)(i) — Deferred sitting",
+  "stem": "The human defence system is a network of organs, cells and proteins that defend the body against infection, while protecting the body’s own cells. The diagram shows a phagocyte, a part of the general defence system, engulfing a bacterium.",
+  "questionText": "Name another part of the general defence system and explain how it defends against infection.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Barrier (e.g. skin) or chemicals (e.g. sebum, sweat, interferon) or fever or (stomach) acid or tears or blood clotting or other correct",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Explanation",
+    "marks": 3,
+    "contextNote": "Must match"
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-phagocyte"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-b-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "antigen-antibody-response",
+  "section": "C",
+  "questionRef": "2024 HL Q16(b)(ii)1 — Deferred sitting",
+  "stem": "The human defence system is a network of organs, cells and proteins that defend the body against infection, while protecting the body’s own cells. The diagram shows a phagocyte, a part of the general defence system, engulfing a bacterium. The specific defence system (also known as the immune system) defends the body against infection using the antigen-antibody response. This response is part of active immunity.",
+  "questionText": "1. Describe how the antigen-antibody response works in defending the body against infection. In your answer refer to the type of immune cells involved.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Antigen stimulates production of antibodies / antibodies are proteins or antibodies inactivate a pathogen (or described) / white blood cells destroy inactivated pathogens (or described)",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Antigen stimulates production of antibodies",
+      "antibodies are proteins or antibodies inactivate a pathogen (or described)",
+      "white blood cells destroy inactivated pathogens (or described)"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-b-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "active-immunity",
+  "section": "C",
+  "questionRef": "2024 HL Q16(b)(ii)2 — Deferred sitting",
+  "stem": "The human defence system is a network of organs, cells and proteins that defend the body against infection, while protecting the body’s own cells. The diagram shows a phagocyte, a part of the general defence system, engulfing a bacterium. The specific defence system (also known as the immune system) defends the body against infection using the antigen-antibody response. This response is part of active immunity.",
+  "questionText": "2. Why is this form of immunity described as active?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Antibodies are produced (by the body)",
+    "marks": 3
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-phagocyte"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-b-ii-3",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "passive-immunity",
+  "section": "C",
+  "questionRef": "2024 HL Q16(b)(ii)3 — Deferred sitting",
+  "stem": "The human defence system is a network of organs, cells and proteins that defend the body against infection, while protecting the body’s own cells. The diagram shows a phagocyte, a part of the general defence system, engulfing a bacterium. The specific defence system (also known as the immune system) defends the body against infection using the antigen-antibody response. This response is part of active immunity.",
+  "questionText": "3. Immunity can also be passive. Give one example of passive immunity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Correct example given",
+    "marks": 3
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-phagocyte"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-b-ii-4",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "duration-of-immunity",
+  "section": "C",
+  "questionRef": "2024 HL Q16(b)(ii)4 — Deferred sitting",
+  "stem": "The human defence system is a network of organs, cells and proteins that defend the body against infection, while protecting the body’s own cells. The diagram shows a phagocyte, a part of the general defence system, engulfing a bacterium. The specific defence system (also known as the immune system) defends the body against infection using the antigen-antibody response. This response is part of active immunity.",
+  "questionText": "4. Explain why active immunity is long-lived and passive immunity is short-lived.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Active immunity produces memory cells",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Passive immunity does not produce memory cells (or other correct explanation)",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-phagocyte"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "vaccine",
+  "section": "C",
+  "questionRef": "2024 HL Q16(b)(iii) — Deferred sitting",
+  "stem": "The human defence system is a network of organs, cells and proteins that defend the body against infection, while protecting the body’s own cells. The diagram shows a phagocyte, a part of the general defence system, engulfing a bacterium.",
+  "questionText": "Vaccines are an important tool used in medicine. What is a vaccine?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Attenuated (or weakened) dose of a pathogen (or part of a pathogen) that stimulates immunity (or the production of antibodies)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-phagocyte"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "menstruation",
+  "section": "C",
+  "questionRef": "2024 HL Q16(c)(i) — Deferred sitting",
+  "stem": "The menstrual cycle is a series of events that occurs on average every 28 days if fertilisation has not occurred. It begins at puberty and continues until the menopause which is the end of a woman’s reproductive life. The diagram shows the various stages of the menstrual cycle as it occurs in the ovary.",
+  "questionText": "Menstruation normally occurs between days 1 and 5 of the menstrual cycle. What is meant by the term menstruation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Breaking down (or release) of the endometrium (from the body)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-cycle"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-c-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "oestrogen",
+  "section": "C",
+  "questionRef": "2024 HL Q16(c)(ii)1 — Deferred sitting",
+  "stem": "The menstrual cycle is a series of events that occurs on average every 28 days if fertilisation has not occurred. It begins at puberty and continues until the menopause which is the end of a woman’s reproductive life. The diagram shows the various stages of the menstrual cycle as it occurs in the ovary. The follicle increases in size during the first half of the cycle.",
+  "questionText": "1. Name the main hormone the follicle produces.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Oestrogen",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-cycle"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-c-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "function-of-oestrogen",
+  "section": "C",
+  "questionRef": "2024 HL Q16(c)(ii)2 — Deferred sitting",
+  "stem": "The menstrual cycle is a series of events that occurs on average every 28 days if fertilisation has not occurred. It begins at puberty and continues until the menopause which is the end of a woman’s reproductive life. The diagram shows the various stages of the menstrual cycle as it occurs in the ovary. The follicle increases in size during the first half of the cycle.",
+  "questionText": "2. Give the function of the hormone you named above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Repair of the endometrium or other correct",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-cycle"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "luteinising-hormone",
+  "section": "C",
+  "questionRef": "2024 HL Q16(c)(iii) — Deferred sitting",
+  "stem": "The menstrual cycle is a series of events that occurs on average every 28 days if fertilisation has not occurred. It begins at puberty and continues until the menopause which is the end of a woman’s reproductive life. The diagram shows the various stages of the menstrual cycle as it occurs in the ovary.",
+  "questionText": "Ovulation usually occurs on day 14. What hormone is responsible for causing ovulation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Luteinising hormone (or LH)",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-cycle"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-c-iv-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "corpus-luteum",
+  "section": "C",
+  "questionRef": "2024 HL Q16(c)(iv)1 — Deferred sitting",
+  "stem": "The menstrual cycle is a series of events that occurs on average every 28 days if fertilisation has not occurred. It begins at puberty and continues until the menopause which is the end of a woman’s reproductive life. The diagram shows the various stages of the menstrual cycle as it occurs in the ovary.",
+  "questionText": "1. What name is given to structure A?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Corpus luteum (or yellow body)",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-cycle",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Corpus luteum (or yellow body)",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-c-iv-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "progesterone",
+  "section": "C",
+  "questionRef": "2024 HL Q16(c)(iv)2 — Deferred sitting",
+  "stem": "The menstrual cycle is a series of events that occurs on average every 28 days if fertilisation has not occurred. It begins at puberty and continues until the menopause which is the end of a woman’s reproductive life. The diagram shows the various stages of the menstrual cycle as it occurs in the ovary.",
+  "questionText": "2. Name the main hormone that is produced by structure A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Progesterone",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-cycle",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Corpus luteum (or yellow body)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-c-iv-3",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "fate-of-the-corpus-luteum",
+  "section": "C",
+  "questionRef": "2024 HL Q16(c)(iv)3 — Deferred sitting",
+  "stem": "The menstrual cycle is a series of events that occurs on average every 28 days if fertilisation has not occurred. It begins at puberty and continues until the menopause which is the end of a woman’s reproductive life. The diagram shows the various stages of the menstrual cycle as it occurs in the ovary.",
+  "questionText": "3. Describe what happens to structure A if fertilisation of an egg cell does not occur.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "It degenerates (towards the end of the menstrual cycle)",
+    "marks": 3
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-cycle",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Corpus luteum (or yellow body)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "menstrual-disorders",
+  "section": "C",
+  "questionRef": "2024 HL Q16(c)(v) — Deferred sitting",
+  "stem": "The menstrual cycle is a series of events that occurs on average every 28 days if fertilisation has not occurred. It begins at puberty and continues until the menopause which is the end of a woman’s reproductive life. The diagram shows the various stages of the menstrual cycle as it occurs in the ovary.",
+  "questionText": "Name a menstrual cycle disorder and state a cause and a possible treatment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Name — Fibroids or endometriosis or other correct",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Cause — Hormone imbalance or other correct",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Must match"
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "Possible treatment — Hormonal medication or other correct",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Must match"
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q16-cycle"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-d-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "drawing-a-leaf-section",
+  "section": "C",
+  "questionRef": "2024 HL Q16(d)(i) — Deferred sitting",
+  "stem": "Leaves are the main organ responsible for photosynthesis.",
+  "questionText": "Draw a diagram of a transverse section (TS) of the internal structure of a leaf. Label the following parts:\ndermal tissue, ground tissue, stoma.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Drawing — showing upper epidermis and lower epidermis",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "ground tissue",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Dermal tissue",
+    "marks": 1
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Ground tissue",
+    "marks": 1
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "Stoma",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices the drawing's epidermis and ground tissue 3 each and each of its three labels 1. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-d-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "gases-and-leaves",
+  "section": "C",
+  "questionRef": "2024 HL Q16(d)(ii) — Deferred sitting",
+  "stem": "Leaves are the main organ responsible for photosynthesis.",
+  "questionText": "Name two gases that enter or exit the leaf.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Oxygen / carbon dioxide / water",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Oxygen",
+      "carbon dioxide",
+      "water"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-d-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "diffusion-of-gases",
+  "section": "C",
+  "questionRef": "2024 HL Q16(d)(iii) — Deferred sitting",
+  "stem": "Leaves are the main organ responsible for photosynthesis.",
+  "questionText": "Name the process by which the gases move in and out of the leaf.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Diffusion",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-d-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "lenticels",
+  "section": "C",
+  "questionRef": "2024 HL Q16(d)(iv) — Deferred sitting",
+  "stem": "Leaves are the main organ responsible for photosynthesis.",
+  "questionText": "Stomata are present in leaves. Name the corresponding structures present on stems.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Lenticels",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-d-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "mineral-transport",
+  "section": "C",
+  "questionRef": "2024 HL Q16(d)(v) — Deferred sitting",
+  "stem": "Leaves are the main organ responsible for photosynthesis.",
+  "questionText": "Describe how minerals are transported from the root to the leaf cells of a plant.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Dissolved in water or other correct description",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Through xylem (tissue)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q16-d-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "leaves-for-food-storage",
+  "section": "C",
+  "questionRef": "2024 HL Q16(d)(vi) — Deferred sitting",
+  "stem": "Leaves are the main organ responsible for photosynthesis.",
+  "questionText": "In some species of flowering plants, the leaves are modified for the storage of food. Name a plant in which the leaves are modified for food storage.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Correctly named plant",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "parts-of-the-alimentary-canal",
+  "section": "C",
+  "questionRef": "2024 HL Q17(a)(i) — Deferred sitting",
+  "stem": "The diagram shows part of the alimentary canal.",
+  "questionText": "Name any two parts of the alimentary canal shown in the diagram and give the main function for each named part.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "colon (or named part) / appendix / small intestine (or named part) / rectum / anus",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "colon (or named part)",
+      "appendix",
+      "small intestine (or named part)",
+      "rectum",
+      "anus"
+     ]
+    }
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Main function of first named part",
+    "marks": 3,
+    "contextNote": "Must match"
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "Main function of second named part",
+    "marks": 3,
+    "contextNote": "Must match"
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q17-canal"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "peristalsis",
+  "section": "C",
+  "questionRef": "2024 HL Q17(a)(ii) — Deferred sitting",
+  "stem": "The diagram shows part of the alimentary canal.",
+  "questionText": "Peristalsis is an important process in the alimentary canal. Explain the term peristalsis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Rhythmical) muscular contraction of the alimentary canal (or named part) (pushing food along in one direction)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q17-canal"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "drawing-a-villus",
+  "section": "C",
+  "questionRef": "2024 HL Q17(a)(iii) — Deferred sitting",
+  "stem": "The diagram shows part of the alimentary canal.",
+  "questionText": "Villi are present in large numbers in a part of the alimentary canal shown in the diagram. Draw a labelled diagram of the internal structure of a villus.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagram",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "microvilli / blood vessel (or capillary) / lacteal",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "microvilli",
+      "blood vessel (or capillary)",
+      "lacteal"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prices the diagram \"3\" and any three labels \"3(1)\". Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q17-canal"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-a-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "gut-bacteria",
+  "section": "C",
+  "questionRef": "2024 HL Q17(a)(iv) — Deferred sitting",
+  "stem": "The diagram shows part of the alimentary canal.",
+  "questionText": "Symbiotic bacteria are present in very large numbers in one of the parts shown in the diagram. Give two functions of these symbiotic bacteria in the alimentary canal.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Vitamin (B and K) production / compete with pathogens / reference to digestion",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Vitamin (B and K) production",
+      "compete with pathogens",
+      "reference to digestion"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q17-canal"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-a-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "benefits-of-fibre",
+  "section": "C",
+  "questionRef": "2024 HL Q17(a)(v) — Deferred sitting",
+  "stem": "The diagram shows part of the alimentary canal.",
+  "questionText": "Fibre is an important part of the human diet. Give one benefit of fibre in the diet.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Stimulates peristalsis or prevents constipation or lowers cholesterol or other correct",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q17-canal"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "rhizopus-kingdom",
+  "section": "C",
+  "questionRef": "2024 HL Q17(b)(i) — Deferred sitting",
+  "stem": "Rhizopus is an example of a saprophytic organism.",
+  "questionText": "To which kingdom of organisms does Rhizopus belong?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Fungi",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "saprophytic-nutrition",
+  "section": "C",
+  "questionRef": "2024 HL Q17(b)(ii) — Deferred sitting",
+  "stem": "Rhizopus is an example of a saprophytic organism.",
+  "questionText": "Explain the term saprophytic.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Organism that) feeds on dead organic matter",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "role-of-saprophytes",
+  "section": "C",
+  "questionRef": "2024 HL Q17(b)(iii) — Deferred sitting",
+  "stem": "Rhizopus is an example of a saprophytic organism.",
+  "questionText": "State a role of saprophytic organisms in the overall scheme of nature.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Return nutrients to the environment or so nutrients can be reused or decomposition",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "drawing-rhizopus",
+  "section": "C",
+  "questionRef": "2024 HL Q17(b)(iv) — Deferred sitting",
+  "stem": "Rhizopus is an example of a saprophytic organism.",
+  "questionText": "Rhizopus is also known as bread mould (shown in the photograph). Draw a labelled diagram showing the microscopic structure of Rhizopus.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagram — sporangiophore and sporangium",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "stolon or rhizoid",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "anyN",
+    "verbatim": "stolon / rhizoid / sporangiophore / sporangium / spore / hypha / mycelium / apophysis / columella",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "stolon",
+      "rhizoid",
+      "sporangiophore",
+      "sporangium",
+      "spore",
+      "hypha",
+      "mycelium",
+      "apophysis",
+      "columella"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prices the diagram's two parts \"3\" each and any three labels \"3(1)\". Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q17-mould"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "sexual-reproduction-in-rhizopus",
+  "section": "C",
+  "questionRef": "2024 HL Q17(b)(v) — Deferred sitting",
+  "stem": "Rhizopus is an example of a saprophytic organism.",
+  "questionText": "Describe the process Rhizopus undergoes during sexual reproduction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Two hyphae together or + and – (strains) / progametangia form or gametangium forms / nuclei fuse (or fertilisations occur) / zygotes or zygospore formed / survives unsuitable conditions or germinates (when conditions are suitable)",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Two hyphae together or + and – (strains)",
+      "progametangia form or gametangium forms",
+      "nuclei fuse (or fertilisations occur)",
+      "zygotes or zygospore formed",
+      "survives unsuitable conditions or germinates (when conditions are suitable)"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "other-fungi",
+  "section": "C",
+  "questionRef": "2024 HL Q17(b)(vi) — Deferred sitting",
+  "stem": "Rhizopus is an example of a saprophytic organism.",
+  "questionText": "Name another organism you have studied that belongs to the kingdom you named at part (b) (i) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Yeast or other correct",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "hormone-action",
+  "section": "C",
+  "questionRef": "2024 HL Q17(c)(i) — Deferred sitting",
+  "stem": "Endocrine glands produce hormones.",
+  "questionText": "Explain in detail what happens to a hormone when it is released by the endocrine gland.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Enters blood(stream) / travels to target tissue (or organ or effector) / exerts a specific effect",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Enters blood(stream)",
+      "travels to target tissue (or organ or effector)",
+      "exerts a specific effect"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-c-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "location-of-thyroid",
+  "section": "C",
+  "questionRef": "2024 HL Q17(c)(ii)1 — Deferred sitting",
+  "stem": "Endocrine glands produce hormones. Copy the outline of the human body into your answerbook. Draw in each of the following endocrine glands labelling them in their correct locations:",
+  "questionText": "1. Thyroid",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct location",
+    "marks": 2
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q17-outline"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-c-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "location-of-pancreas",
+  "section": "C",
+  "questionRef": "2024 HL Q17(c)(ii)2 — Deferred sitting",
+  "stem": "Endocrine glands produce hormones. Copy the outline of the human body into your answerbook. Draw in each of the following endocrine glands labelling them in their correct locations:",
+  "questionText": "2. Pancreas (islets of Langerhans)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct location",
+    "marks": 2
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q17-outline"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-c-ii-3",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "location-of-testes",
+  "section": "C",
+  "questionRef": "2024 HL Q17(c)(ii)3 — Deferred sitting",
+  "stem": "Endocrine glands produce hormones. Copy the outline of the human body into your answerbook. Draw in each of the following endocrine glands labelling them in their correct locations:",
+  "questionText": "3. Testes",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct location",
+    "marks": 2
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q17-outline"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-c-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "hormone-of-a-gland",
+  "section": "C",
+  "questionRef": "2024 HL Q17(c)(iii)1 — Deferred sitting",
+  "stem": "Endocrine glands produce hormones. Choosing one of the endocrine glands named above, write it into your answerbook and answer the following questions based on the chosen endocrine gland.",
+  "questionText": "1. Name a hormone it produces.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Named hormone",
+    "marks": 3,
+    "contextNote": "Must match stated gland"
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-c-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "function-of-the-hormone",
+  "section": "C",
+  "questionRef": "2024 HL Q17(c)(iii)2 — Deferred sitting",
+  "stem": "Endocrine glands produce hormones. Choosing one of the endocrine glands named above, write it into your answerbook and answer the following questions based on the chosen endocrine gland.",
+  "questionText": "2. Give the function of the named hormone.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Correct function",
+    "marks": 3,
+    "contextNote": "Must match named hormone"
+   }
+  ],
+  "notes": "Numbered items are separately priced responses: one card each. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "hormones-and-nerves",
+  "section": "C",
+  "questionRef": "2024 HL Q17(c)(iv) — Deferred sitting",
+  "stem": "Endocrine glands produce hormones.",
+  "questionText": "State two ways in which hormone action differs from nerve action.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Hormone action is slow, nerve action is fast / hormone action is chemical, nerve action is electrical / hormone action is long-lasting, nerve action is short-lived / other correct difference",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Hormone action is slow, nerve action is fast",
+      "hormone action is chemical, nerve action is electrical",
+      "hormone action is long-lasting, nerve action is short-lived",
+      "other correct difference"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "hormone-supplements",
+  "section": "C",
+  "questionRef": "2024 HL Q17(c)(v) — Deferred sitting",
+  "stem": "Endocrine glands produce hormones.",
+  "questionText": "Give one use of a hormone supplement.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "HRT used after menopause or anabolic steroids used for building muscle mass or insulin used for diabetes or other correct use",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-c-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "exocrine-glands",
+  "section": "C",
+  "questionRef": "2024 HL Q17(c)(vi) — Deferred sitting",
+  "stem": "Endocrine glands produce hormones.",
+  "questionText": "Human glands can also be exocrine. Explain what happens to the product when it is released by the exocrine gland.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Enters a duct",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-d-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "parts-of-the-brain",
+  "section": "C",
+  "questionRef": "2024 HL Q17(d)(i) — Deferred sitting",
+  "stem": "The diagram shows a cross section of the human brain.",
+  "questionText": "Name the parts A, B and C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "A — Medulla oblongata",
+    "marks": 1,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "B — Cerebrum",
+    "marks": 1,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r3",
+    "kind": "gate",
+    "verbatim": "C — Cerebellum",
+    "marks": 1,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q17-brain",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Medulla oblongata",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Cerebrum",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Cerebellum",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-d-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "functions-of-brain-parts",
+  "section": "C",
+  "questionRef": "2024 HL Q17(d)(ii) — Deferred sitting",
+  "stem": "The diagram shows a cross section of the human brain.",
+  "questionText": "Choose one of the parts named above and give its function.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Medulla oblongata: controls breathing or control blood pressure or controls heart rate or other correct / Cerebrum: memory or hearing or speech or sight or movement or other correct / Cerebellum: controls balance or other correct",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Medulla oblongata: controls breathing or control blood pressure or controls heart rate or other correct",
+      "Cerebrum: memory or hearing or speech or sight or movement or other correct",
+      "Cerebellum: controls balance or other correct"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q17-brain"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-d-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "types-of-neuron",
+  "section": "C",
+  "questionRef": "2024 HL Q17(d)(iii) — Deferred sitting",
+  "stem": "The diagram shows a cross section of the human brain.",
+  "questionText": "There are three types of neuron in the human nervous system. Name each type.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Motor",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Sensory",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Inter(neuron)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q17-brain"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-d-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "structure-of-a-neuron",
+  "section": "C",
+  "questionRef": "2024 HL Q17(d)(iv) — Deferred sitting",
+  "stem": "The diagram shows a cross section of the human brain.",
+  "questionText": "The human brain consists of billions of neurons. Draw the structure of a neuron and label the following parts: cell body, axon, dendrite, Schwann cell, myelin, axon terminal",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagram — Cell body and axon",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "cell body / axon / dendrite, Schwann cell, myelin, axon terminal / Schwann cell / myelin / axon terminal",
+    "marks": null,
+    "group": {
+     "claimMax": 6,
+     "perOption": 1,
+     "options": [
+      "cell body",
+      "axon",
+      "dendrite, Schwann cell, myelin, axon terminal",
+      "Schwann cell",
+      "myelin",
+      "axon terminal"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices the diagram \"3\" and each of its six labels \"1\": the labels are one row, each claimed on its own. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q17-brain"
+ },
+ {
+  "id": "bio-2024-hl-deferred-q17-d-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "nervous-system-disorders",
+  "section": "C",
+  "questionRef": "2024 HL Q17(d)(v) — Deferred sitting",
+  "stem": "The diagram shows a cross section of the human brain.",
+  "questionText": "Name one disorder of the nervous system and give a possible treatment for the named disorder.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Named disorder",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Possible treatment",
+    "marks": 3,
+    "contextNote": "Must match"
+   }
+  ],
+  "notes": "Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2024_hl_deferred.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "biology-2024-hl-deferred-q17-brain"
  }
 ]
