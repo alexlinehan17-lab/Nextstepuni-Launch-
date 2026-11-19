@@ -82,6 +82,7 @@ const IRISH_DEFERRED_PAPERS: string[] = ['2025|LC001ALP100IV-deferred.pdf', '202
 const BIOLOGY_DEFERRED_PAPERS: string[] = [
   '2022|LC025ALP038EV-deferred.pdf', '2022|LC025ALP040EV-deferred.pdf',
   '2022|LC025GLP038EV-deferred.pdf', '2022|LC025GLP040EV-deferred.pdf',
+  '2023|LC025ALP038EV-deferred.pdf', '2023|LC025ALP040EV-deferred.pdf',
 ];
 const ENGLISH_DEFERRED_PAPERS: string[] = ['2025|LC002ALP100EV-deferred.pdf', '2025|LC002ALP200EV-deferred.pdf',
   '2024|LC002ALP100EV-deferred.pdf', '2024|LC002ALP200EV-deferred.pdf',
