@@ -6108,4 +6108,3205 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC067GLP006EV"
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q1-a", topicId: "music-2-14", conceptId: "mus-excerpt-singing-this-voices",
+    section: "L", questionRef: "2023 OL Listening Q1(a)",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 1, played three times.",
+    questionText: "The voices in this excerpt are singing",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In harmony", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.215,
+                            0.92,
+                            0.32
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q1-a-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q1-a-score.png",
+          "srcHash": "39c461018eec1ea65b8b2ba7876edf8d",
+          "alt": "The question and its two printed options (in unison, in harmony), printed with Listening Q1(a) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q1-b", topicId: "music-2-14", conceptId: "mus-excerpt-features-music-this",
+    section: "L", questionRef: "2023 OL Listening Q1(b)",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 1, played three times.",
+    questionText: "The music in this excerpt features",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Repeated notes", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.348,
+                            0.92,
+                            0.45
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q1-b-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q1-b-score.png",
+          "srcHash": "d5385399f517588d374bdd92a323875d",
+          "alt": "The question and its two printed options (repeated notes, octave leaps), printed with Listening Q1(b) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q1-c", topicId: "music-2-14", conceptId: "mus-excerpt-name-recording-technique",
+    section: "L", questionRef: "2023 OL Listening Q1(c)",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 2, played three times.",
+    questionText: "Name a recording technique used in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A recording technique", marks: null, contextNote: "The scheme reads: “3m for identification of a recording technique used in the excerpt” “For example, recording technique:”", openList: true, group: {"claimMax":1,"perOption":3,"options":["Flanging","Overdubbing","Multitracking","Panning"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.515,
+                            0.92,
+                            0.625
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q1-c-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q1-c-score.png",
+          "srcHash": "052635c8c88f99fb38544e9c1ab02037",
+          "alt": "The printed question, printed with Listening Q1(c) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q1-d", topicId: "music-2-14", conceptId: "mus-accompaniment-excerpt-instrument-name",
+    section: "L", questionRef: "2023 OL Listening Q1(d)",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 2, played three times.",
+    questionText: "Name one instrument which plays the accompaniment in the excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Piano/Cymbal/Bass (guitar)", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.662,
+                            0.92,
+                            0.775
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q1-d-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q1-d-score.png",
+          "srcHash": "adffcdc96ee3f63dcab361fe41a9d8b6",
+          "alt": "The printed question, printed with Listening Q1(d) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q1-e", topicId: "music-2-14", conceptId: "mus-circle-highest-line-note",
+    section: "L", questionRef: "2023 OL Listening Q1(e)",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 3, played three times. The lyrics are printed below.",
+    questionText: "Circle the word in line 3 where the highest note is sung.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "“just”", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.265,
+                            0.92,
+                            0.3
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q1-e-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q1-e-score.png",
+          "srcHash": "12dc7fdafdc0695e9c9ab008cb145871",
+          "alt": "The four printed lines of lyrics and the question, printed with Listening Q1(e) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q1-f", topicId: "music-2-14", conceptId: "mus-drum-enters-first-line",
+    section: "L", questionRef: "2023 OL Listening Q1(f)",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 3, played three times. The lyrics are printed below.",
+    questionText: "The drum kit enters for the first time in line 4 at the word",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "“away”", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.313,
+                            0.92,
+                            0.45
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q1-f-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q1-f-score.png",
+          "srcHash": "a9af132f65e238484ad091990cea4342",
+          "alt": "The printed lyrics (the ask points at line 4), the question and its three printed options (now, thrown, away), printed with Listening Q1(f) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q1-g", topicId: "music-2-14", conceptId: "mus-answer-between-both-describe",
+    section: "L", questionRef: "2023 OL Listening Q1(g)",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 3, played once more and Excerpt 4, played three times.",
+    questionText: "Describe one difference between the music in Excerpt 3 and the music in Excerpt 4. Refer to both excerpts in your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A difference between Excerpt 3 and Excerpt 4", marks: null, contextNote: "The scheme reads: “Up to 3m for a valid difference between the music in excerpt 3 and the music in excerpt 4.” “The answer must refer to both excerpts and the same point of difference for full marks.” “For example:” “Partially correct answer = 1m/2m”", openList: true, group: {"claimMax":1,"perOption":3,"options":["Drums enter towards the end of the excerpt — Drums heard from the start of the excerpt","No guitar — Guitar heard towards the end of the excerpt","No bell tree effect / No chimes — Bell tree effect / Chimes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.533,
+                            0.92,
+                            0.78
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q1-g-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q1-g-score.png",
+          "srcHash": "fba4ddc2f7d2bc9bcddd9560a4a166da",
+          "alt": "The printed question, printed with Listening Q1(g) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q1-h", topicId: "music-2-14", conceptId: "mus-excerpt-feature-guitar-identify",
+    section: "L", questionRef: "2023 OL Listening Q1(h)",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury. Excerpt 5, played three times.",
+    questionText: "Identify one feature of the guitar music in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the guitar music", marks: null, contextNote: "The scheme reads: “Up to 4m for each of one valid feature of the guitar music heard in the excerpt” “For example:” “Partially correct answer = 1m/2m/3m”", openList: true, group: {"claimMax":1,"perOption":4,"options":["Sequences","(rising) scales","Syncopated rhythm","(dominant) pedal note","distortion","guitar overdubs (guitar orchestra)","power chords","vibrato","bends","triplet rhythm/triplet feel","played in octaves","mixture of steps and leaps","riffs"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.093,
+                            0.92,
+                            0.235
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 5",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q1-h-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q1-h-score.png",
+          "srcHash": "53f0d7649532dbf7c7233e7615f13494",
+          "alt": "The printed question, printed with Listening Q1(h) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q2-a", topicId: "music-2-15", conceptId: "mus-excerpt-from-music-taken",
+    section: "L", questionRef: "2023 OL Listening Q2(a)",
+    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Excerpt 1, played three times.",
+    questionText: "The music in this excerpt is taken from the",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Introduction", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.215,
+                            0.92,
+                            0.35
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 1",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q2-a-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q2-a-score.png",
+          "srcHash": "8381a89da1e2322b6013b9b9f620393d",
+          "alt": "The question and its three printed options (introduction, development, coda), printed with Listening Q2(a) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q2-b", topicId: "music-2-15", conceptId: "mus-excerpt-heard-theme-this",
+    section: "L", questionRef: "2023 OL Listening Q2(b)",
+    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Excerpt 1, played three times.",
+    questionText: "The theme heard in this excerpt is the",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Friar Lawrence theme", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.368,
+                            0.92,
+                            0.505
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 1",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q2-b-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q2-b-score.png",
+          "srcHash": "a9db014b74cca06424214dbb0ac36252",
+          "alt": "The question and its three printed options (Love theme, Strife theme, Friar Lawrence theme), printed with Listening Q2(b) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q2-c", topicId: "music-2-15", conceptId: "mus-excerpt-instrument-playing-theme",
+    section: "L", questionRef: "2023 OL Listening Q2(c)",
+    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Excerpt 1, played three times.",
+    questionText: "An instrument playing the theme in this excerpt is the",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Flute", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.523,
+                            0.92,
+                            0.675
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 1",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q2-c-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q2-c-score.png",
+          "srcHash": "ef5da91374b0d2837aaea73c8bfaeced",
+          "alt": "The question and its three printed options (cello, trumpet, flute), printed with Listening Q2(c) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q2-d", topicId: "music-2-15", conceptId: "mus-excerpt-families-identify-instruments",
+    section: "L", questionRef: "2023 OL Listening Q2(d)",
+    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Excerpt 2, played three times.",
+    questionText: "Identify the two families of instruments playing in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Strings", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "Woodwind", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 7,
+                      "r": [
+                            0.08,
+                            0.112,
+                            0.92,
+                            0.315
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 2",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q2-d-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q2-d-score.png",
+          "srcHash": "4720b8be2145dc04c099e65c2a4c593e",
+          "alt": "The printed question, printed with Listening Q2(d) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q2-e", topicId: "music-2-15", conceptId: "mus-excerpt-music-towards",
+    section: "L", questionRef: "2023 OL Listening Q2(e)",
+    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Excerpt 2, played three times.",
+    questionText: "Towards the end of the excerpt the music",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Gets louder", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 7,
+                      "r": [
+                            0.08,
+                            0.354,
+                            0.92,
+                            0.49
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Excerpt 2",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q2-e-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q2-e-score.png",
+          "srcHash": "ebe1a31c545cd131f682577812a503ed",
+          "alt": "The question and its three printed options (gets louder, gets softer, gets slower), printed with Listening Q2(e) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q3-a", topicId: "music-2-16", conceptId: "mus-excerpt-identify-instrument-playing",
+    section: "L", questionRef: "2023 OL Listening Q3(a)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry, will be played three times.",
+    questionText: "Identify the instrument playing in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Piano", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.18,
+                            0.92,
+                            0.258
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q3-a-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q3-a-score.png",
+          "srcHash": "24884b0491bce40507747709bfd98f8b",
+          "alt": "The printed question, printed with Listening Q3(a) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q3-b", topicId: "music-2-16", conceptId: "mus-barry-gerald-instruments-other",
+    section: "L", questionRef: "2023 OL Listening Q3(b)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry, will be played three times.",
+    questionText: "The other three instruments that play in Piano Quartet No.1 by Gerald Barry are",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Violin", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "Viola", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "Cello", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.297,
+                            0.92,
+                            0.505
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q3-b-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q3-b-score.png",
+          "srcHash": "0060516c7c8ff43d73e76a22c668cf4c",
+          "alt": "The printed question, printed with Listening Q3(b) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q3-c", topicId: "music-2-16", conceptId: "mus-excerpt-music-texture-this",
+    section: "L", questionRef: "2023 OL Listening Q3(c)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry, will be played three times.",
+    questionText: "The texture of the music in this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Polyphonic", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.545,
+                            0.92,
+                            0.68
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q3-c-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q3-c-score.png",
+          "srcHash": "b459d487c270b6810d7b7fc21ac62cc6",
+          "alt": "The question and its three printed options (monophonic, polyphonic, homophonic), printed with Listening Q3(c) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q3-d", topicId: "music-2-16", conceptId: "mus-century-excerpt-feature-identify",
+    section: "L", questionRef: "2023 OL Listening Q3(d)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry, will be played three times.",
+    questionText: "Identify one feature of 20th century music in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of 20th century music", marks: null, contextNote: "The scheme reads: “Up to 2m for a feature of 20th century music in the excerpt” “For example:” “Partially correct answer = 1m”", openList: true, group: {"claimMax":1,"perOption":2,"options":["Atonality","changing time signatures","dissonance"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.7,
+                            0.92,
+                            0.81
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q3-d-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q3-d-score.png",
+          "srcHash": "19ce4420ad2e4d8c93de70838151ffe0",
+          "alt": "The printed question, printed with Listening Q3(d) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q3-e", topicId: "music-2-16", conceptId: "mus-barry-between-describe-difference",
+    section: "L", questionRef: "2023 OL Listening Q3(e)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry, will be played three times.",
+    questionText: "Describe one difference between the music heard in this excerpt and the music which immediately follows this excerpt in Piano Quartet No.1 by Gerald Barry.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A difference between the excerpt and the music which follows it", marks: null, contextNote: "The scheme reads: “Up to 2m for a valid difference between the music in this excerpt and the music which immediately follows in Piano Quartet No. 1.” “The answer must refer to both excerpts and the same point of difference for full marks.” “For example:” “Partially correct answer = 1m”", openList: true, group: {"claimMax":1,"perOption":2,"options":["(Solo) piano — No piano","No violin/viola/cello/strings — Violin/viola/cello/strings","Faster tempo — Slower tempo","No canon — Canon","Louder — Softer","fff — mp"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.08,
+                            0.06,
+                            0.92,
+                            0.245
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q3-e-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q3-e-score.png",
+          "srcHash": "cb8119408ca5972db1eef95022923294",
+          "alt": "The printed question, printed with Listening Q3(e) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q4-a", topicId: "music-2-17", conceptId: "mus-given-insert-missing-notes",
+    section: "L", questionRef: "2023 OL Listening Q4(a)",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach. Excerpt 1, played three times. An outline score of the opening four bars of the excerpt is printed below.",
+    questionText: "Insert the two missing notes at X on the score. Use the given rhythm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Mark the first two notes from left to right.", marks: 2, contextNote: "The scheme reads: “1 + 1” The scheme prints its answer in music notation: its print is shown on this card.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.195,
+                            0.95,
+                            0.4
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · Excerpt 1",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q4-a-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q4-a-score.png",
+          "srcHash": "802702059e5106596e2460f6d68a3477",
+          "alt": "The outline score of the opening four bars (X over the end of bar 3) and the question, printed with Listening Q4(a) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2023-OL-scheme-p15-l-q4-a",
+          "src": "/exam-figures/music/markbank/music-2023-OL-scheme-p15-l-q4-a.png",
+          "srcHash": "426196d9f43b5ab4dadd97caa6d38d2a",
+          "alt": "The marking scheme’s printed answer for Listening Q4(a): the two notes at X printed on a treble stave, with \"Mark the first two notes from left to right.\" and \"1 + 1\", cropped from page 15 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q4-b", topicId: "music-2-17", conceptId: "mus-excerpt-from-taken-this",
+    section: "L", questionRef: "2023 OL Listening Q4(b)",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach. Excerpt 1, played three times. An outline score of the opening four bars of the excerpt is printed below.",
+    questionText: "This excerpt is taken from",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A chorale", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.42,
+                            0.92,
+                            0.555
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · Excerpt 1",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q4-b-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q4-b-score.png",
+          "srcHash": "d1cadf587b1221744129e0de198809fb",
+          "alt": "The question and its three printed options (an aria, a recitative, a chorale), printed with Listening Q4(b) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q4-c", topicId: "music-2-17", conceptId: "mus-ends-excerpt-this-with",
+    section: "L", questionRef: "2023 OL Listening Q4(c)",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach. Excerpt 1, played three times. An outline score of the opening four bars of the excerpt is printed below.",
+    questionText: "This excerpt ends with",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "An imperfect cadence", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.574,
+                            0.92,
+                            0.705
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · Excerpt 1",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q4-c-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q4-c-score.png",
+          "srcHash": "99cc995459dc58de0ac202f4d5c93891",
+          "alt": "The question and its three printed options (a perfect cadence, an imperfect cadence, a plagal cadence), printed with Listening Q4(c) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q4-d", topicId: "music-2-17", conceptId: "mus-excerpt-identify-instruments-play",
+    section: "L", questionRef: "2023 OL Listening Q4(d)",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach. Excerpt 2, played three times.",
+    questionText: "Identify two instruments which play in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Instruments which play in this excerpt", marks: null, contextNote: "The scheme reads: “Any two correct instruments” “For example:” “1+ 1”", openList: true, group: {"claimMax":2,"perOption":1,"options":["Oboe","violin","viola","organ","cello","flute","bass"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.095,
+                            0.92,
+                            0.24
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · Excerpt 2",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q4-d-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q4-d-score.png",
+          "srcHash": "c8f52be6161c669843015a95d076cd15",
+          "alt": "The printed question, printed with Listening Q4(d) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q4-e", topicId: "music-2-17", conceptId: "mus-between-describe-difference-excerpt",
+    section: "L", questionRef: "2023 OL Listening Q4(e)",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach. Excerpt 1 and Excerpt 2 once more.",
+    questionText: "Describe one similarity or one difference between the music in Excerpt 1 and the music in Excerpt 2.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A similarity or a difference between Excerpt 1 and Excerpt 2", marks: null, contextNote: "The scheme reads: “Up to 2m a valid similarity or for a valid difference between the music in excerpt 1 and the music in excerpt 2” “The answer must refer to both excerpts and the same point of similarity/difference for full marks.” “For example:” “Partially correct answer = 1m”", openList: true, group: {"claimMax":1,"perOption":2,"options":["Same key (G minor)","SATB choir","Full orchestra","The chorale hymn theme/tune is heard in both excerpts","4/4 time — 3/4 time","Homophonic — Polyphonic","No imitation/ anon/antiphony — Imitation/canon/antiphony","Ends on an imperfect cadence — Ends on a perfect cadence","No ground bass — Ground bass","Slower tempo — Faster tempo"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.31,
+                            0.92,
+                            0.67
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · Excerpt 1 and Excerpt 2 once more.",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "secFileid": "LC067ZLP045EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP045EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q4-e-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q4-e-score.png",
+          "srcHash": "79adf882e8a423861a768d69532ab648",
+          "alt": "The printed question, printed with Listening Q4(e) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q5-a", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-playing-this",
+    section: "L", questionRef: "2023 OL Listening Q5(a)",
+    stem: "Irish Music You will hear three excerpts, each played three times. Excerpt 1.",
+    questionText: "The instrument playing in this excerpt is the",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Harp", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 12,
+                      "r": [
+                            0.08,
+                            0.25,
+                            0.92,
+                            0.385
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1.",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q5-a-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q5-a-score.png",
+          "srcHash": "88be4aa11946b50fef7d947732dccb9f",
+          "alt": "The question and its three printed options (guitar, harp, harpsichord), printed with Listening Q5(a) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q5-b", topicId: "music-2-2", conceptId: "mus-excerpt-features-music-this",
+    section: "L", questionRef: "2023 OL Listening Q5(b)",
+    stem: "Irish Music You will hear three excerpts, each played three times. Excerpt 1.",
+    questionText: "The music in this excerpt features",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ornamentation", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 12,
+                      "r": [
+                            0.08,
+                            0.42,
+                            0.92,
+                            0.555
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1.",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q5-b-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q5-b-score.png",
+          "srcHash": "0b26e2c47efcfcf3f743505953980aae",
+          "alt": "The question and its three printed options (a flattened 7th, a gap scale, ornamentation), printed with Listening Q5(b) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q5-c", topicId: "music-2-2", conceptId: "mus-excerpt-form-music-this",
+    section: "L", questionRef: "2023 OL Listening Q5(c)",
+    stem: "Irish Music You will hear three excerpts, each played three times. Excerpt 1.",
+    questionText: "The form of the music in this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ABAB", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 12,
+                      "r": [
+                            0.08,
+                            0.59,
+                            0.92,
+                            0.725
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1.",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q5-c-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q5-c-score.png",
+          "srcHash": "8e8b03f9755933419e5f23d9b1180cde",
+          "alt": "The question and its three printed options (ABBA, AABB, ABAB), printed with Listening Q5(c) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q5-d-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-this",
+    section: "L", questionRef: "2023 OL Listening Q5(d)(i)",
+    stem: "Irish Music You will hear three excerpts, each played three times. Excerpt 2.",
+    questionText: "The dance heard in this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "reel", marks: 3, contextNote: "The scheme reads: “(i) Option 1: reel”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.095,
+                            0.92,
+                            0.18
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2.",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q5-d-i-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q5-d-i-score.png",
+          "srcHash": "f3117244c6ab8e57da5664a6234268b0",
+          "alt": "The question and its three printed options (a reel, a jig, a hornpipe), printed with Listening Q5(d)(i) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q5-d-ii", topicId: "music-2-2", conceptId: "mus-dance-signature-this-time",
+    section: "L", questionRef: "2023 OL Listening Q5(d)(ii)",
+    stem: "Irish Music You will hear three excerpts, each played three times. Excerpt 2.",
+    questionText: "The time signature of this dance is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The time signature of this dance is", marks: 2, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.2,
+                            0.92,
+                            0.29
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2.",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q5-d-ii-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q5-d-ii-score.png",
+          "srcHash": "43c7a2cc758623943a8d9a4bf93ade15",
+          "alt": "The question and its three printed time signatures (3/4, 4/4, 6/8), printed with Listening Q5(d)(ii) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2023-OL-scheme-p16-l-q5-d-ii",
+          "src": "/exam-figures/music/markbank/music-2023-OL-scheme-p16-l-q5-d-ii.png",
+          "srcHash": "88d7ba939f05025661f6556692a5bf45",
+          "alt": "The marking scheme’s printed answer for Listening Q5(d)(ii): the time signature the scheme prints for (ii), stacked, with \"Option 3:\" and its 2 marks, cropped from page 16 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q5-d-iii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-this",
+    section: "L", questionRef: "2023 OL Listening Q5(d)(iii)",
+    stem: "Irish Music You will hear three excerpts, each played three times. Excerpt 2.",
+    questionText: "A typical bar of rhythm associated with this dance is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A typical bar of rhythm associated with this dance is", marks: 2, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.3,
+                            0.92,
+                            0.462
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2.",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q5-d-iii-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q5-d-iii-score.png",
+          "srcHash": "4e636452a4c0c39fca39f7068b8db7e3",
+          "alt": "The question and its three printed bars of rhythm, printed with Listening Q5(d)(iii) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2023-OL-scheme-p16-l-q5-d-iii",
+          "src": "/exam-figures/music/markbank/music-2023-OL-scheme-p16-l-q5-d-iii.png",
+          "srcHash": "beb62141a51d4f055d62bd8a7ad1ee05",
+          "alt": "The marking scheme’s printed answer for Listening Q5(d)(iii): the bar of rhythm the scheme prints for (iii) (\"Option 2:\", two groups of four quavers), with its 2 marks, cropped from page 16 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q5-e", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-melody-name",
+    section: "L", questionRef: "2023 OL Listening Q5(e)",
+    stem: "Irish Music You will hear three excerpts, each played three times. Excerpt 2.",
+    questionText: "Name one instrument which plays the melody in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An instrument which plays the melody", marks: null, contextNote: "The scheme reads: “Any correct instrument”", group: {"claimMax":1,"perOption":2,"options":["Violin/Fiddle","Flute","Uilleann pipes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.487,
+                            0.92,
+                            0.565
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2.",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q5-e-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q5-e-score.png",
+          "srcHash": "50b3e10a7d9d8c42a9b4683b17251f6b",
+          "alt": "The printed question, printed with Listening Q5(e) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q5-f", topicId: "music-2-2", conceptId: "mus-excerpt-feature-heard-identify",
+    section: "L", questionRef: "2023 OL Listening Q5(f)",
+    stem: "Irish Music You will hear three excerpts, each played three times. Excerpt 3.",
+    questionText: "Identify one feature of sean nós singing as heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of sean nós singing", marks: null, contextNote: "The scheme reads: “Any feature of sean nós singing as heard in the excerpt.” “For example:” “Allow solo vocal performance”", openList: true, group: {"claimMax":1,"perOption":3,"options":["Ornamentation","nasal tone","solo vocal performance"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.603,
+                            0.92,
+                            0.71
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3.",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q5-f-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q5-f-score.png",
+          "srcHash": "4bc86bb5878733b5b8f17f1dc92f25a0",
+          "alt": "The printed question, printed with Listening Q5(f) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q5-g", topicId: "music-2-2", conceptId: "mus-accompaniment-describe-excerpt-feature",
+    section: "L", questionRef: "2023 OL Listening Q5(g)",
+    stem: "Irish Music You will hear three excerpts, each played three times. Excerpt 3.",
+    questionText: "Describe one feature of the instrumental accompaniment heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the instrumental accompaniment", marks: null, contextNote: "The scheme reads: “Up to 4m for a description of one feature of the instrumental accompaniment.” “For example:” “Partially correct answer = 1m/2m/3m”", openList: true, group: {"claimMax":1,"perOption":4,"options":["Repeated notes/chord/rhythm in guitar","repeated note on fiddle","drone/held note/pedal note/long note on fiddle","sustained notes/chords on concertina","dissonant sounds/clashing sounds between instruments."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 13,
+                      "r": [
+                            0.08,
+                            0.734,
+                            0.92,
+                            0.87
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3.",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q5-g-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q5-g-score.png",
+          "srcHash": "c31a75c9f407549f4af232ffebd54f48",
+          "alt": "The printed question, printed with Listening Q5(g) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q6-a", topicId: "music-2-4", conceptId: "mus-bars-before-enters-full",
+    section: "L", questionRef: "2023 OL Listening Q6(a)",
+    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 1, played three times.",
+    questionText: "How many full bars of music are heard in the introduction, before the vocalist enters?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "4 bars", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 14,
+                      "r": [
+                            0.08,
+                            0.232,
+                            0.92,
+                            0.365
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q6-a-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q6-a-score.png",
+          "srcHash": "8ef5f8941798710a21048fe925313680",
+          "alt": "The question and its three printed options (3 bars, 4 bars, 6 bars), printed with Listening Q6(a) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q6-b", topicId: "music-2-4", conceptId: "mus-excerpt-piano-plays-this",
+    section: "L", questionRef: "2023 OL Listening Q6(b)",
+    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 1, played three times.",
+    questionText: "In this excerpt the piano plays",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Block chords", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 14,
+                      "r": [
+                            0.08,
+                            0.375,
+                            0.92,
+                            0.51
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q6-b-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q6-b-score.png",
+          "srcHash": "c65610a555160feafb90b18d91e67941",
+          "alt": "The question and its three printed options (block chords, arpeggios, sustained notes), printed with Listening Q6(b) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q6-c", topicId: "music-2-4", conceptId: "mus-feature-heard-lines-music",
+    section: "L", questionRef: "2023 OL Listening Q6(c)",
+    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 2, played three times. The lyrics are printed below.",
+    questionText: "A feature of the vocal music heard in lines 1–4 is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Syncopation", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 15,
+                      "r": [
+                            0.08,
+                            0.266,
+                            0.92,
+                            0.4
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 2",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q6-c-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q6-c-score.png",
+          "srcHash": "fe7dc3b82788d365d5515e4ec710ff71",
+          "alt": "The six printed lines of lyrics, the question and its three printed options (repeated notes, syncopation, octave leap), printed with Listening Q6(c) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q6-d", topicId: "music-2-4", conceptId: "mus-heard-instrument-lines-name",
+    section: "L", questionRef: "2023 OL Listening Q6(d)",
+    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 2, played three times. The lyrics are printed below.",
+    questionText: "Name one instrument (other than piano) heard playing in lines 5–6.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An instrument (other than piano)", marks: null, contextNote: "The scheme reads: “An instrument (other than piano).”", group: {"claimMax":1,"perOption":2,"options":["Drums(Drum kit)","Guitar (electric guitar)","Bass (Bass guitar)","Saxophone","Trumpet","Synthesizer"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 15,
+                      "r": [
+                            0.08,
+                            0.42,
+                            0.92,
+                            0.497
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 2",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q6-d-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q6-d-score.png",
+          "srcHash": "099cf7ffd9a80ea9070310c11ef91f2f",
+          "alt": "The printed lyrics (the ask points at lines 5-6) and the question; (c) shows between, printed with Listening Q6(d) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q6-e", topicId: "music-2-4", conceptId: "mus-features-line-music-piano",
+    section: "L", questionRef: "2023 OL Listening Q6(e)",
+    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 2, played three times. The lyrics are printed below.",
+    questionText: "The piano music at the end of line 6 features",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Rising notes", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 15,
+                      "r": [
+                            0.08,
+                            0.52,
+                            0.92,
+                            0.655
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 2",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q6-e-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q6-e-score.png",
+          "srcHash": "512715272bdbf4c7c464e471d6f13423",
+          "alt": "The printed lyrics (the ask points at line 6), the question and its three printed options (rising notes, falling notes, rising and falling notes); (c) and (d) show between, printed with Listening Q6(e) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q6-f", topicId: "music-2-4", conceptId: "mus-excerpt-instrument-melody-playing",
+    section: "L", questionRef: "2023 OL Listening Q6(f)",
+    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 3, played three times.",
+    questionText: "The instrument playing the melody at the start of the excerpt is the",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Oboe", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 16,
+                      "r": [
+                            0.08,
+                            0.095,
+                            0.92,
+                            0.23
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q6-f-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q6-f-score.png",
+          "srcHash": "4974f2bb6e13e3c91bde8030ce9eb94b",
+          "alt": "The question and its three printed options (oboe, trumpet, harp), printed with Listening Q6(f) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q6-g", topicId: "music-2-4", conceptId: "mus-another-excerpt-heard-instrument",
+    section: "L", questionRef: "2023 OL Listening Q6(g)",
+    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 3, played three times.",
+    questionText: "Name another instrument heard playing in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Another instrument heard playing", marks: null, contextNote: "The scheme reads: “Any correct instrument”", group: {"claimMax":1,"perOption":2,"options":["Harp","Violin(s)","Cello","Clarinet","Bassoon","Flutes","Double Bass"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 16,
+                      "r": [
+                            0.08,
+                            0.232,
+                            0.92,
+                            0.34
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q6-g-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q6-g-score.png",
+          "srcHash": "d63742cf4e9a95c03b83ad17b821e664",
+          "alt": "The printed question, printed with Listening Q6(g) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q6-h", topicId: "music-2-3", conceptId: "mus-missing-notes-score",
+    section: "L", questionRef: "2023 OL Listening Q6(h)",
+    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 4, played three times. An outline score is printed below.",
+    questionText: "The missing notes at X on the score are",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The missing notes at X on the score are", marks: 2, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 16,
+                      "r": [
+                            0.08,
+                            0.36,
+                            0.95,
+                            0.86
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 4",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q6-h-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q6-h-score.png",
+          "srcHash": "690a5521e20862e21bea107e6e6e271c",
+          "alt": "The outline score (X over bar 3) and the three printed options for X, each on a treble stave, printed with Listening Q6(h) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2023-OL-scheme-p17-l-q6-h",
+          "src": "/exam-figures/music/markbank/music-2023-OL-scheme-p17-l-q6-h.png",
+          "srcHash": "77edbf1478bd9a980d0039a8701ad04f",
+          "alt": "The marking scheme’s printed answer for Listening Q6(h): the scheme's \"Option 1:\" with the notes at X printed on a treble stave, and its 2 marks, cropped from page 17 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2023-ol-l-q6-i", topicId: "music-2-4", conceptId: "mus-choice-closely-excerpt-from",
+    section: "L", questionRef: "2023 OL Listening Q6(i)",
+    stem: "Aural Skills This question is based on five excerpts of music. Excerpt 5, played three times.",
+    questionText: "From your prescribed works, select the work which most closely resembles the music heard in this excerpt. Give a reason for your choice.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 4, contextNote: "The scheme reads: “Up to 4m for an accurate comparison between the music in the excerpt and the prescribed work selected.” “Partially correct answer = 1m/2m/3m”", permittedMarks: [0,1,2,3,4], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 17,
+                      "r": [
+                            0.08,
+                            0.095,
+                            0.92,
+                            0.37
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 5",
+          "title": "2023 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "secFileid": "LC067ZLP046EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC067ZLP046EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2023-OL-l-q6-i-score",
+          "src": "/exam-figures/music/markbank/music-2023-OL-l-q6-i-score.png",
+          "srcHash": "3a88cf46289fa54e4302536511f6fe06",
+          "alt": "The printed question, printed with Listening Q6(i) in the 2023 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2023 Ordinary Level, p.3 — © State Examinations Commission.",
+    id: "mus-2023-ol-c-a-q1-a", topicId: "music-1-10", conceptId: "mus-appropriate-choose-continuation-continue",
+    section: "A", questionRef: "2023 OL Composing Section A Q1(a)",
+    stem: "Answer one question only in this section:",
+    questionText: "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Each Melody",
+                      "maxMarks": 20,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good sense of key (Melody ends on tonic)",
+                                  "marks": [18,19,20],
+                                  "guidance": [
+                                        "Very good melodic shape",
+                                        "Very good continuation of given opening",
+                                        "Very good rhythmic consistency",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Good sense of key (Melody ends on tonic)",
+                                  "marks": [15,16,17],
+                                  "guidance": [
+                                        "Good melodic shape",
+                                        "Good continuation of given opening",
+                                        "Good rhythmic consistency",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Moderately good sense of key (Melody ends on tonic)",
+                                  "marks": [12,13,14],
+                                  "guidance": [
+                                        "Moderately good melodic shape",
+                                        "Moderately good continuation of given opening",
+                                        "Moderately good rhythmic consistency",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Fair sense of key (Melody ends on tonic)",
+                                  "marks": [9,10,11],
+                                  "guidance": [
+                                        "Fair melodic shape",
+                                        "Fair continuation of given opening",
+                                        "Fair rhythmic consistency",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Poor sense of key (Melody does not end on tonic)",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "Poor melodic shape",
+                                        "Poor continuation of given opening",
+                                        "Poor rhythmic consistency",
+                                        "Inappropriate phrasing and expression marks inserted.",
+                                        "Unsuitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor sense of key (Melody does not end on tonic)",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Very poor melodic shape",
+                                        "Very poor continuation of given opening",
+                                        "Very poor rhythmic consistency",
+                                        "No phrasing and expression marks inserted.",
+                                        "No instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.06,
+                            0.92,
+                            0.875
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2023 Ordinary Level, p.3 — © State Examinations Commission.",
+    id: "mus-2023-ol-c-a-q1-b", topicId: "music-1-10", conceptId: "mus-appropriate-choose-continuation-continue",
+    section: "A", questionRef: "2023 OL Composing Section A Q1(b)",
+    stem: "Answer one question only in this section:",
+    questionText: "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Each Melody",
+                      "maxMarks": 20,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good sense of key (Melody ends on tonic)",
+                                  "marks": [18,19,20],
+                                  "guidance": [
+                                        "Very good melodic shape",
+                                        "Very good continuation of given opening",
+                                        "Very good rhythmic consistency",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Good sense of key (Melody ends on tonic)",
+                                  "marks": [15,16,17],
+                                  "guidance": [
+                                        "Good melodic shape",
+                                        "Good continuation of given opening",
+                                        "Good rhythmic consistency",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Moderately good sense of key (Melody ends on tonic)",
+                                  "marks": [12,13,14],
+                                  "guidance": [
+                                        "Moderately good melodic shape",
+                                        "Moderately good continuation of given opening",
+                                        "Moderately good rhythmic consistency",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Fair sense of key (Melody ends on tonic)",
+                                  "marks": [9,10,11],
+                                  "guidance": [
+                                        "Fair melodic shape",
+                                        "Fair continuation of given opening",
+                                        "Fair rhythmic consistency",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Poor sense of key (Melody does not end on tonic)",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "Poor melodic shape",
+                                        "Poor continuation of given opening",
+                                        "Poor rhythmic consistency",
+                                        "Inappropriate phrasing and expression marks inserted.",
+                                        "Unsuitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor sense of key (Melody does not end on tonic)",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Very poor melodic shape",
+                                        "Very poor continuation of given opening",
+                                        "Very poor rhythmic consistency",
+                                        "No phrasing and expression marks inserted.",
+                                        "No instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.075,
+                            0.92,
+                            0.81
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2023 Ordinary Level, p.5 — © State Examinations Commission.",
+    id: "mus-2023-ol-c-a-q3-a", topicId: "music-1-12", conceptId: "mus-appropriate-choose-composing-continue",
+    section: "A", questionRef: "2023 OL Composing Section A Q3(a)",
+    stem: "Answer one question only in this section:",
+    questionText: "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Each Melody",
+                      "maxMarks": 20,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Rhythm and style of dance very well maintained",
+                                  "marks": [18,19,20],
+                                  "guidance": [
+                                        "Very good sense of key (Melody ends on tonic)",
+                                        "Very good melodic shape",
+                                        "Very good continuation of given opening",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Rhythm and style of dance well maintained",
+                                  "marks": [15,16,17],
+                                  "guidance": [
+                                        "Good sense of key (Melody ends on tonic)",
+                                        "Good melodic shape",
+                                        "Good continuation of given opening",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Rhythm and style of dance moderately well maintained",
+                                  "marks": [12,13,14],
+                                  "guidance": [
+                                        "Moderately good sense of key (Melody ends on tonic)",
+                                        "Moderately good melodic shape",
+                                        "Moderately good continuation of given opening",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Rhythm and style of dance fairly well maintained",
+                                  "marks": [9,10,11],
+                                  "guidance": [
+                                        "Fair sense of key (Melody ends on tonic)",
+                                        "Fair melodic shape",
+                                        "Fair continuation of given opening",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Poor adherence to rhythm and style of dance",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "Poor sense of key (Melody does not end on tonic)",
+                                        "Poor melodic shape",
+                                        "Poor continuation of given opening",
+                                        "Inappropriate phrasing and expression marks inserted.",
+                                        "Unsuitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor adherence to rhythm and style of dance",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Very poor sense of key (Melody does not end on tonic)",
+                                        "Very poor melodic shape",
+                                        "Very poor continuation of given opening",
+                                        "No phrasing and expression marks inserted.",
+                                        "No instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 3",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.06,
+                            0.92,
+                            0.862
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2023 Ordinary Level, p.5 — © State Examinations Commission.",
+    id: "mus-2023-ol-c-a-q3-b", topicId: "music-1-12", conceptId: "mus-appropriate-choose-composing-continue",
+    section: "A", questionRef: "2023 OL Composing Section A Q3(b)",
+    stem: "Answer one question only in this section:",
+    questionText: "Composing to a given dance rhythm or metre or form • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Each Melody",
+                      "maxMarks": 20,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Rhythm and style of dance very well maintained",
+                                  "marks": [18,19,20],
+                                  "guidance": [
+                                        "Very good sense of key (Melody ends on tonic)",
+                                        "Very good melodic shape",
+                                        "Very good continuation of given opening",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Rhythm and style of dance well maintained",
+                                  "marks": [15,16,17],
+                                  "guidance": [
+                                        "Good sense of key (Melody ends on tonic)",
+                                        "Good melodic shape",
+                                        "Good continuation of given opening",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Rhythm and style of dance moderately well maintained",
+                                  "marks": [12,13,14],
+                                  "guidance": [
+                                        "Moderately good sense of key (Melody ends on tonic)",
+                                        "Moderately good melodic shape",
+                                        "Moderately good continuation of given opening",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Rhythm and style of dance fairly well maintained",
+                                  "marks": [9,10,11],
+                                  "guidance": [
+                                        "Fair sense of key (Melody ends on tonic)",
+                                        "Fair melodic shape",
+                                        "Fair continuation of given opening",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Poor adherence to rhythm and style of dance",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "Poor sense of key (Melody does not end on tonic)",
+                                        "Poor melodic shape",
+                                        "Poor continuation of given opening",
+                                        "Inappropriate phrasing and expression marks inserted.",
+                                        "Unsuitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor adherence to rhythm and style of dance",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Very poor sense of key (Melody does not end on tonic)",
+                                        "Very poor melodic shape",
+                                        "Very poor continuation of given opening",
+                                        "No phrasing and expression marks inserted.",
+                                        "No instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 3",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.08,
+                            0.075,
+                            0.92,
+                            0.822
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2023 Ordinary Level, pp.6-7 — © State Examinations Commission.",
+    id: "mus-2023-ol-c-b-q4", topicId: "music-1-14", conceptId: "mus-approach-available-bank-bass",
+    section: "B", questionRef: "2023 OL Composing Section B Q4",
+    stem: "Answer one question only in this section:",
+    questionText: "Composing melody and bass notes from a set of chords at cadence points • Write out the scale of D major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Using the given rhythms, add melody and bass notes to complete the cadences and approach chords as follows: • (i) At A, an imperfect cadence with approach chord (I—IV—V) • (ii) At B, a plagal cadence with approach chord (vi—IV—I) • (iii) At C, an interrupted cadence with approach chord (I—V—vi) • (iv) At D, a perfect cadence with approach chord (ii—V—I)",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Chord Progressions - General points",
+                "1. Same chord in adjacent boxes not accepted",
+                "2. Accidental and suffix, where relevant, must be fully correct for mark to be awarded",
+                "3. Chords must be part of a good progression",
+                "4. V – ii generally not accepted",
+                "5. ii – I generally not accepted",
+                "Good Progressions",
+                "1. Falling 3rd = generally better than rising 3rd",
+                "2. Rising 4ths",
+                "3. Cadence progressions anywhere",
+                "4. Primary triads",
+                "Bass Line",
+                "1. No doubling of major 3rd under chord symbol",
+                "2. Treatment of LN",
+                "3. Stepwise movement to and from inversions = good",
+                "4. Good finish"
+          ],
+          "criteria": [
+                {
+                      "id": "grid",
+                      "label": "1 mark per correct note of chord",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Grid / Stave"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "melody-count",
+                      "label": "1 mark per correct melody note which is part of the given chord and which falls on the correct beat of the bar. The given rhythms must be used. (1 x 12)",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "melody-quality",
+                      "label": "Up to 3 marks for quality of correct melody line at each cadence point, which fits well with the chord progression and correct bass notes (3 x 4)",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": []
+                },
+                {
+                      "id": "bass-count",
+                      "label": "1 mark per correct bass note of the given chord and which falls on the correct beat of the bar. The given rhythms must be used (1 x 12)",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "bass-quality",
+                      "label": "Up to 3 marks for quality of the correct bass line at each cadence point (3 x 4)",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "Section B – Harmony (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 4",
+          "pages": [
+                12,
+                13
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 12,
+                      "r": [
+                            0.08,
+                            0.06,
+                            0.92,
+                            0.82
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2023 Ordinary Level, pp.6-8 — © State Examinations Commission.",
+    id: "mus-2023-ol-c-b-q5", topicId: "music-1-13", conceptId: "mus-adding-adjacent-available-bank",
+    section: "B", questionRef: "2023 OL Composing Section B Q5",
+    stem: "Answer one question only in this section:",
+    questionText: "Adding bass notes and chord indications at cadence points • Write out the scale of F major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Add suitable bass notes and chord indications to complete the cadences at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both. • Do not repeat the same chord in adjacent boxes.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Chord Progressions - General points",
+                "1. Same chord in adjacent boxes not accepted",
+                "2. Accidental and suffix, where relevant, must be fully correct for mark to be awarded",
+                "3. Chords must be part of a good progression",
+                "4. V – ii generally not accepted",
+                "5. ii – I generally not accepted",
+                "Good Progressions",
+                "1. Falling 3rd = generally better than rising 3rd",
+                "2. Rising 4ths",
+                "3. Cadence progressions anywhere",
+                "4. Primary triads",
+                "Bass Line",
+                "1. No doubling of major 3rd under chord symbol",
+                "2. Treatment of LN",
+                "3. Stepwise movement to and from inversions = good",
+                "4. Good finish"
+          ],
+          "criteria": [
+                {
+                      "id": "grid",
+                      "label": "1 mark per correct note of chord",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Grid / Stave"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "chord-count",
+                      "label": "1 mark per correct chord that fits the melody notes (1 x 12)",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "chord-quality",
+                      "label": "Up to 3 marks for quality of chord progression at each cadence point, which fits well with the melody (3 x 4)",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": []
+                },
+                {
+                      "id": "bass-count",
+                      "label": "1 mark per correct bass note of the chord and which falls on the correct beat of the bar. (1 x 12)",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "bass-quality",
+                      "label": "Up to 3 marks for quality of the bass line at each cadence point which fits well with the chord progression and melody notes (3 x 4)",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "Section B – Harmony (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 5",
+          "pages": [
+                14,
+                15
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 14,
+                      "r": [
+                            0.08,
+                            0.06,
+                            0.92,
+                            0.76
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2023 Ordinary Level, pp.6-9 — © State Examinations Commission.",
+    id: "mus-2023-ol-c-b-q6", topicId: "music-1-15", conceptId: "mus-adding-available-bank-below",
+    section: "B", questionRef: "2023 OL Composing Section B Q6",
+    stem: "Answer one question only in this section:",
+    questionText: "Adding descant notes and chord indications at cadence points • Write out the scale of G major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Complete the phrase endings by adding suitable chords and descant notes at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Chord Progressions - General points",
+                "1. Same chord in adjacent boxes not accepted",
+                "2. Accidental and suffix, where relevant, must be fully correct for mark to be awarded",
+                "3. Chords must be part of a good progression",
+                "4. V – ii generally not accepted",
+                "5. ii – I generally not accepted",
+                "Good Progressions",
+                "1. Falling 3rd = generally better than rising 3rd",
+                "2. Rising 4ths",
+                "3. Cadence progressions anywhere",
+                "4. Primary triads",
+                "Bass Line",
+                "1. No doubling of major 3rd under chord symbol",
+                "2. Treatment of LN",
+                "3. Stepwise movement to and from inversions = good",
+                "4. Good finish"
+          ],
+          "criteria": [
+                {
+                      "id": "grid",
+                      "label": "1 mark per correct note of chord",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Grid / Stave"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "chord-count",
+                      "label": "1 mark per correct cadence chord (1 x 12)",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "chord-quality",
+                      "label": "Up to 3 marks for quality of chord progression at each cadence point, which fits well with the melody (3 x 4)",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": []
+                },
+                {
+                      "id": "descant-count",
+                      "label": "1 mark per correct descant note which is part of the chord and which falls on the correct beat of the bar (1 x 12)",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "descant-quality",
+                      "label": "Up to 3 marks for quality of descant line at each cadence point, which fits well with the melody and bass notes (3 x 4)",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "Section B – Harmony (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 6",
+          "pages": [
+                16,
+                17
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 16,
+                      "r": [
+                            0.08,
+                            0.06,
+                            0.92,
+                            0.775
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2023 Ordinary Level, p.4 — © State Examinations Commission.",
+    id: "mus-2023-ol-c-a-q2", topicId: "music-1-11", conceptId: "mus-answer-appropriate-bars-been",
+    section: "A", questionRef: "2023 OL Composing Section A Q2(a)–(b)",
+    stem: "Answer one question only in this section:",
+    questionText: "(a) Setting music to a given text • Answer (a) and (b). • Here is an extract from the poem The Star by Jane Taylor. • In the dark blue sky you keep, And often through my curtains peep, For you never shut your eye, ‘Till the sun is in the sky. • The first two lines have been set to a rhythm. Compose a rhythm to fit the remaining words. (b) Using the rhythm that you composed at (a), continue the opening below to make a melody of eight bars. • End on the keynote, that is, doh. • Write the words under the notes. • Add appropriate phrasing and expression marks to the melody.",
+    totalMarks: 40,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Q.2 SETTING MUSIC TO A GIVEN TEXT",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [
+                            "Where there is no answer at (a) and no attempt at word setting at (b) award 0 marks."
+                      ],
+                      "bands": [
+                            {
+                                  "label": "Very good rhythmic consistency with words",
+                                  "marks": [35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Very good continuation of given opening",
+                                        "Very good sense of key (Melody ends on tonic)",
+                                        "Very good melodic shape",
+                                        "Appropriate phrasing and expression marks inserted."
+                                  ]
+                            },
+                            {
+                                  "label": "Good rhythmic consistency with words",
+                                  "marks": [29,30,31,32,33,34],
+                                  "guidance": [
+                                        "Good continuation of given opening",
+                                        "Good sense of key (Melody ends on tonic)",
+                                        "Good melodic shape",
+                                        "Appropriate phrasing and expression marks inserted."
+                                  ]
+                            },
+                            {
+                                  "label": "Moderately good rhythmic consistency with words",
+                                  "marks": [23,24,25,26,27,28],
+                                  "guidance": [
+                                        "Moderately good continuation of given opening",
+                                        "Moderately good sense of key (Melody ends on tonic)",
+                                        "Moderately good melodic shape",
+                                        "Generally appropriate phrasing and expression marks inserted."
+                                  ]
+                            },
+                            {
+                                  "label": "Fair rhythmic consistency with words",
+                                  "marks": [17,18,19,20,21,22],
+                                  "guidance": [
+                                        "Fair continuation of given opening",
+                                        "Fair sense of key (Melody ends on tonic)",
+                                        "Fair melodic shape",
+                                        "Generally appropriate phrasing and expression marks inserted."
+                                  ]
+                            },
+                            {
+                                  "label": "Poor rhythmic consistency with words",
+                                  "marks": [11,12,13,14,15,16],
+                                  "guidance": [
+                                        "Poor continuation of given opening",
+                                        "Poor sense of key (Melody does not end on tonic)",
+                                        "Poor melodic shape",
+                                        "Inappropriate phrasing and expression marks inserted."
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor rhythmic consistency with words",
+                                  "marks": [5,6,7,8,9,10],
+                                  "guidance": [
+                                        "Very poor continuation of given opening",
+                                        "Very poor sense of key (Melody does not end on tonic)",
+                                        "Very poor melodic shape",
+                                        "No phrasing and expression marks inserted."
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no attempt",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 2",
+          "pages": [
+                6,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Music 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
 ];
