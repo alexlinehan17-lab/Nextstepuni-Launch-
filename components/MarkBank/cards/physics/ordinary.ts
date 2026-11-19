@@ -6939,11 +6939,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2025 OL Q11(ii)",
     stem: "An air to water system is one of the most common ways to heat modern homes.",
     questionText: "State two methods by which heat can be transferred throughout a home.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r1", kind: "point", verbatim: "conduction", marks: null, contextNote: "[accept partial answer for 3] any two" },
-    { id: "r2", kind: "point", verbatim: "convection", marks: null },
-    { id: "r3", kind: "point", verbatim: "radiation", marks: null },
+    { id: "r1", kind: "anyN", verbatim: "conduction / convection / radiation", marks: null, contextNote: "[accept partial answer for 3] any two", group: {"claimMax":2,"perOption":3,"options":["conduction","convection","radiation"]} },
     ],
   } as SecCard,
   {
@@ -6969,9 +6967,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2025 OL Q11(v)",
     stem: "A U‐value is the measure of the rate of heat loss in a house.",
     questionText: "State two ways in which the U‐value of a house can be reduced.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r1", kind: "point", verbatim: "any two of: glazing, insulation, etc.", marks: null, contextNote: "[accept partial answer for 3]" },
+    { id: "r1", kind: "point", verbatim: "any two of: glazing, insulation, etc.", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
