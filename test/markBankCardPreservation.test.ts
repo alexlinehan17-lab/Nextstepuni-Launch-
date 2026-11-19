@@ -1459,6 +1459,16 @@ const germanAddedTotal = [...Object.values(GERMAN_ADDED), ...Object.values(GERMA
 const POLISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 65, ordinary: 74 },
   2020: { higher: 13, ordinary: 0 },
+  2019: { higher: 16, ordinary: 0 },
+  2018: { higher: 13, ordinary: 0 },
+  2017: { higher: 13, ordinary: 0 },
+  2016: { higher: 13, ordinary: 0 },
+  2015: { higher: 10, ordinary: 0 },
+  2014: { higher: 10, ordinary: 0 },
+  2013: { higher: 15, ordinary: 0 },
+  2012: { higher: 14, ordinary: 0 },
+  2011: { higher: 13, ordinary: 0 },
+  2010: { higher: 10, ordinary: 0 },
 };
 const POLISH_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
   2025: { higher: 38, ordinary: 36 },

@@ -15304,4 +15304,3169 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-i-1-a", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-slow",
+    section: "I", questionRef: "2019 HL Section I Q1(a)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie następujących słów w kontekście tekstu: ocalić (tytuł)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ochronić, uratować, przyjść na ratunek, przyjść z pomocą itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-i-1-b", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-slow",
+    section: "I", questionRef: "2019 HL Section I Q1(b)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie następujących słów w kontekście tekstu: smukły (akapit 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "chudy, cienki, mizerny, szczupły, drobny, delikatny, niewielki itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-i-1-c", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-slow",
+    section: "I", questionRef: "2019 HL Section I Q1(c)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie następujących słów w kontekście tekstu: przydomek (akapit 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "przezwisko, pseudonim, alias, ksywa itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-i-1-d", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-slow",
+    section: "I", questionRef: "2019 HL Section I Q1(d)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie następujących słów w kontekście tekstu: obecnie (akapit 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "aktualnie, teraz, dzisiaj, chwilowo itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-i-1-e", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-slow",
+    section: "I", questionRef: "2019 HL Section I Q1(e)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie następujących słów w kontekście tekstu: przystosować (akapit 9)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "przerobić, dopasować, zmienić, przekształcić, adaptować itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-i-2", topicId: "polish-3-0", conceptId: "zdaniem-autora-przyczyna-zespolu-masowego-wymierania",
+    section: "I", questionRef: "2019 HL Section I Q2",
+    questionText: "Zdaniem autora tekstu, co jest przyczyną „zespołu masowego wymierania pszczoły miodnej” na świecie?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme notes: “Nikt nie wie na pewno, dlaczego pszczoły masowo wymierają. (akapit 5)”. The scheme notes: “Ogólnie uważa się, że może to być związane z następującymi czynnikami:”.", group: {"claimMax":5,"perOption":1,"options":["1. obniżenie się odporności pszczół","2. trujące substancje w pestycydach","3. mikroby","4. zmiany klimatyczne","5. promieniowanie elektromagnetyczne"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-i-3-a", topicId: "polish-3-0", conceptId: "swietle-artykulu-jak-wyglada-jak-dziala",
+    section: "I", questionRef: "2019 HL Section I Q3(a)",
+    questionText: "W świetle artykułu, a) jak wygląda, i b) jak działa robot-zapylacz skonstruowany przez dr. Dalewskiego z Politechniki Warszawskiej?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Jest to półmetrowy robot poruszający się po ziemi (akapit 1), który „wygląda jak mały samochodzik z wysokim zawieszeniem.” (akapit 7) Z przodu ma on wystającą kolorową miotełkę do zapylania roślin. (akapit 1)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-i-3-b", topicId: "polish-3-0", conceptId: "swietle-artykulu-jak-wyglada-jak-dziala",
+    section: "I", questionRef: "2019 HL Section I Q3(b)",
+    questionText: "W świetle artykułu, a) jak wygląda, i b) jak działa robot-zapylacz skonstruowany przez dr. Dalewskiego z Politechniki Warszawskiej?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Jest to urządzenie automatyczne. Wystarczy, że człowiek ustawi odpowiednie parametry w komputerze, np. określi, jakie kwiaty mają być zapylane i na jakim obszarze. Robot sam decyduje, jaką trasę wybierze. „Akumulatory maszyny są na tyle wydajne, że pozwalają na kilka godzin pracy non stop na powierzchni kilkuset metrów kwadratowych.” (akapit 8)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-i-4", topicId: "polish-3-0", conceptId: "podstawie-przeczytanego-artykulu-jakiego-stopnia-nowoczesna",
+    section: "I", questionRef: "2019 HL Section I Q4",
+    questionText: "Na podstawie przeczytanego artykułu, do jakiego stopnia nowoczesna technologia jest w stanie zastąpić pszczoły w ich zadaniach?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Naziemny robot jest w stanie częściowo zastąpić pszczoły w zapylaniu kwiatów na plantacjach i w sadach, gdzie odstępy między roślinami są wystarczająco duże, ale nie na naturalnych łąkach (akapit 2), gdyż „jadąc, zniszczyłby zbyt wiele roślin.” (akapit 7)", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Do dzisiaj sztuczna pszczoła nie jest w stanie zastąpić naturalnej pszczoły przy produkcji miodu. (akapit 11)", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-i-5-a", topicId: "polish-3-0", conceptId: "jak-daleko-posuniete-prace-dalewskiego-nad",
+    section: "I", questionRef: "2019 HL Section I Q5(a)",
+    questionText: "Jak daleko są posunięte prace dr. Dalewskiego nad stworzeniem latającego robota-pszczoły i na czym polega największa trudność w jego skonstruowaniu?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Początkowo naukowiec planował, że sztuczna pszczoła będzie zbliżona wyglądem do prawdziwej pszczoły. Szybko okazało się to jednak dużym wyzwaniem. (akapit 3)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Działalność latającej sztucznej pszczoły jest niestety ograniczona tylko do powierzchni 3x3 metry. (akapit 10)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Hałas, jaki wydaje ten latający robot, przypomina trochę bzyczenie pszczoły. (akapit 10)", marks: null },
+    { id: "r-4", kind: "point", verbatim: "„Wygląda jak dron, ma cztery śmigiełka na bokach oraz witkę z kolorowymi piórkami do zapylania sterczącą z przodu jak długie odnóże. Przypomina już nieco owada i bzyczy.” (akapit 10)", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Największa trudność polega na tym, że dotychczas znane baterie zasilające takie lekkie i delikatne urządzenia ważą za dużo i są za mało wydajne oraz że sterujące kamery są za słabe. (akapity 3 i 10)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-i-5-b", topicId: "polish-3-0", conceptId: "oznacza-podsumowujaca-wypowiedz-dalewskiego-jeszcze-piesn",
+    section: "I", questionRef: "2019 HL Section I Q5(b)",
+    questionText: "Co oznacza podsumowująca wypowiedź dr. Dalewskiego, że jest „to jeszcze pieśń przyszłości”?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "to jeszcze nic pewnego; prace są dopiero w powijakach i może będą zrealizowane kiedyś w przyszłości (akapit 10)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-i-6-a", topicId: "polish-3-0", conceptId: "wyjasnij-jak-badania-dalewskiego-moglyby-przyczynic",
+    section: "I", questionRef: "2019 HL Section I Q6(a)",
+    questionText: "Wyjaśnij, jak badania dr. Dalewskiego mogłyby przyczynić się do wspomagania zdrowia populacji pszczół?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Poprzez użycie robota do inteligentnego dawkowania środków ochrony roślin i nawozów na plantacjach można by w znacznym stopniu zredukować zastosowanie szkodliwych substancji chemicznych. (akapit 9)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "„Urządzenie będzie jeździło po uprawach i wyszukiwało tylko te części roślin, które są chore, by nie rozpylać chemii na całej roślinie.” (akapit 9)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Podobno taki sposób nawożenia roślin może obniżyć ilość użytych chemikaliów aż dziesięciokrotnie, znacznie zwiększając przy tym bezpieczeństwo pszczół. (akapit 9)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-i-6-b", topicId: "polish-3-0", conceptId: "omow-inne-sposoby-ktore-moglyby-byc",
+    section: "I", questionRef: "2019 HL Section I Q6(b)",
+    questionText: "Omów inne sposoby, które mogłyby być użyte do tego samego celu.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dbałość o naturalne środowisko, by nie dopuścić do dalszych zmian klimatycznych, może również przyczynić się do poprawy stanu zdrowia pszczół.", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Refleksje typu:”: an example, not a checklist." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-ii-1", topicId: "polish-3-2", conceptId: "wydaje-wsrod-ludzi-jeszcze-bardzo-niewielka",
+    section: "II", questionRef: "2019 HL Section II Q1",
+    questionText: "„Wydaje się, że wśród ludzi jest jeszcze bardzo niewielka świadomość strat, jakie przynosi zmniejszająca się populacja pszczół”. (akapit 9) Używając około 100 słów, skomentuj ten cytat w kontekście istniejących dziś problemów ekologicznych.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Płynna wypowiedź na temat, przy użyciu około 100 słów", marks: 30, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “Czy czasem zastanawiamy się, skąd pochodzi nasze jedzenie? Może to się wydać komuś dziwne, ale okazuje się, że znaczną jego część zawdzięczamy w ten czy inny sposób właśnie pszczołom.”; “Gdyby tak spojrzeć na nasze jedzenie, które zjemy na obiad, pszczoły odegrały tu swoją rolę, albo zapylając większość owoców i warzyw bezpośrednio, albo zapylając pożywienie dla zwierząt, które my teraz spożywamy. Do tego należy jeszcze doliczyć miód i pszczeli wosk.”; “Znaczenie pszczoły dla środowiska przyrodniczego i dla gospodarki człowieka jest ogromne. Dobrze żeby o tym wiedzieli nie tylko pszczelarze, ale i całe społeczeństwo. By ludzie zrozumieli potrzebę troski o te bezcenne owady.”; “Jeśli te małe insekty, którym zawdzięczamy tak wiele naszego pożywienia, miałyby zniknąć, co byśmy bez nich zrobili?”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-iii-1", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2019 HL Section III Q1",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: Sztuczna inteligencja – rozwiąże wiele palących problemów świata czy też zagrozi naszemu istnieniu?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “Sztuczna inteligencja może nam na pozór pomagać, ale wiążą się z tym różne zagrożenia. Pytanie, czy jest to cena, która warto zapłacić?”; “Podobno istnieją już lodówki, które posiadają wbudowaną sztuczną inteligencję. Pozornie jest to dobre, bo lodówka taka informuje nas, czego w niej brakuje i co jest już przeterminowane. Taka lodówka jest nawet w stanie sama zamówić, np. na Amazonie, brakujące produkty, uwzględniając nasze wcześniejsze preferencje.”; “Posiadanie takiego urządzenia u siebie wiąże się jednak z pewnym niebezpieczeństwem, a mianowicie różne korporacje zyskują tą drogą wgląd w naszą najbardziej prywatną sferę, czyli nasz dom. Całkiem nieświadomie my sami udostępniamy im nasze preferencje, które później mogą być wykorzystane do wciskania nam niepotrzebnych produktów.”; “W najgorszym wypadku taka lodówka mogłaby „szpiegować” nasze rodzinne rozmowy przy śniadaniu, a potem sprzedawać te informacje autorytarnym rządom.”; “Podsumowując, sztuczna inteligencja wiąże się z wielkimi niewiadomymi i, moim zdaniem, nie warto ryzykować.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2019 Higher Level — © State Examinations Commission.",
+    id: "pl-2019-hl-iii-2", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2019 HL Section III Q2",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: Rok przerwy po szkole średniej jest dobrym rozwiązaniem czy stratą czasu? Udziel odpowiedzi, uwzględniając oba przeciwstawne punkty widzenia.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “ZA: MOGŁABY TO BYĆ OKAZJA:”; “do zrelaksowania się po maturze przed uniwersytetem”; “do zobaczenia świata i poznania nowych ludzi z różnych środowisk”; “do zdobycia doświadczenia zawodowego”; “do zarobienia pieniędzy”; “do odkrycia nowych zainteresowań”; “by stać się bardziej niezależnym”; “PRZECIW: ISTNIEJE JEDNAK NIEBEZPIECZENSTWO:”; “utraty motywacji i wypadnięcia z rytmu”; “zapomnienia zdobytej wiedzy i sposobu uczenia się”; “utraty kontaktu ze znajomymi”; “przehulania dużych sum pieniędzy”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2018 Higher Level — © State Examinations Commission.",
+    id: "pl-2018-hl-i-1-a", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-podkreslonych-slow",
+    section: "I", questionRef: "2018 HL Section I Q1(a)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie podkreślonych słów i wyrażeń w kontekście tekstu. z rozrzewnieniem (akapit 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ze wzruszeniem, z czułością, z tkliwością, z sentymentem, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2018 Higher Level — © State Examinations Commission.",
+    id: "pl-2018-hl-i-1-b", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-podkreslonych-slow",
+    section: "I", questionRef: "2018 HL Section I Q1(b)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie podkreślonych słów i wyrażeń w kontekście tekstu. obcować z kimś (akapit 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "kontaktować się z kimś, spotykać się, stykać się, utrzymywać z kimś znajomość, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2018 Higher Level — © State Examinations Commission.",
+    id: "pl-2018-hl-i-1-c", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-podkreslonych-slow",
+    section: "I", questionRef: "2018 HL Section I Q1(c)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie podkreślonych słów i wyrażeń w kontekście tekstu. dorośli są zdumieni (akapit 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "dorośli są zdziwieni, zaskoczeni, zaszokowani, zszokowani, skonfundowani, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2018 Higher Level — © State Examinations Commission.",
+    id: "pl-2018-hl-i-1-d", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-podkreslonych-slow",
+    section: "I", questionRef: "2018 HL Section I Q1(d)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie podkreślonych słów i wyrażeń w kontekście tekstu. tubylcy (akapit 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ludzie miejscowi, tutejsi, rdzenni mieszkańcy jakiegoś terenu, np. miasta lub wsi; autochtoni, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2018 Higher Level — © State Examinations Commission.",
+    id: "pl-2018-hl-i-1-e", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-podkreslonych-slow",
+    section: "I", questionRef: "2018 HL Section I Q1(e)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie podkreślonych słów i wyrażeń w kontekście tekstu. niewymierne bogactwo (akapit 7)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "niedające się określić co do wielkości, niezmierzone, niepoliczalne, ogromne bogactwo, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2018 Higher Level — © State Examinations Commission.",
+    id: "pl-2018-hl-i-2", topicId: "polish-3-0", conceptId: "piec-przykladow-praktycznej-wspolpracy-miedzypokoleniowej-ktorych",
+    section: "I", questionRef: "2018 HL Section I Q2",
+    questionText: "Podaj pięć przykładów praktycznej współpracy międzypokoleniowej, o których jest mowa w artykule.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":5,"perOption":1,"options":["1. wspinanie się po górach (akapit 2)","2. zajęcia z filozofii w liceum w Sopocie (akapit 3)","3. wypady na piwo (akapit 3)","4. imprezowe rejsy po Bałtyku (akapit 3)","5. odwiedzanie Dany przez młodzież po jej operacji (akapit 4)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2018 Higher Level — © State Examinations Commission.",
+    id: "pl-2018-hl-i-3", topicId: "polish-3-0", conceptId: "odwolujac-tresci-wyjasnij-jaki-sposob-zmienila",
+    section: "I", questionRef: "2018 HL Section I Q3",
+    questionText: "Odwołując się do treści tekstu, wyjaśnij, w jaki sposób zmieniła się kwestia nastawienia do wiedzy na przełomie wieku XX i XXI. Jakie były konsekwencje tych zmian?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Autor nawiązuje do szkolnictwa w Polsce w XX wieku, kiedy to podstawę stanowiła nauka pamięciowa, a mniejszy nacisk kładziono na twórcze i logiczne myślenie. Chodziło o to, by do egzaminu nauczyć się na pamięć jak najwięcej faktów, po czym po egzaminie równie szybko je zapomnieć (tzw. zasada ZZZ – „zakuć, zdać, zapomnieć”). (akapit 6)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme notes: “1 pkt za każdy element”, over the model points below." },
+    { id: "r-2", kind: "point", verbatim: "Według autora wynikało to też częściowo z braku książek w polskich sklepach i trudnego do nich dostępu.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Sytuacja zmieniła się, gdy na przełomie XX i XXI wieku pojawił się internet i wyszukiwarki, (co umożliwiło szybki dostęp do informacji), przez co zakuwanie przestało mieć sens. Najbardziej cenioną umiejętnością stało się za to szybkie wyszukiwanie i przetwarzanie informacji.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2018 Higher Level — © State Examinations Commission.",
+    id: "pl-2018-hl-i-4", topicId: "polish-3-0", conceptId: "jak-ludzie-ktorzy-racji-wieku-naturalnie",
+    section: "I", questionRef: "2018 HL Section I Q4",
+    questionText: "„[...]Jak ludzie, którzy z racji wieku naturalnie mniej wiedzą, mogliby być nauczycielami starszych i więcej wiedzących?” (akapit 1). Wytłumacz tę pozorną sprzeczność w świetle przeczytanego tekstu.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Choć na pozór mogłoby się wydawać, że tylko starsi mogą przekazywać mądrość młodszym, okazuje się, że może też być odwrotnie. Wystarczy spojrzeć na to z szerszej perspektywy, ukazując i obalając trzy ukryte w tym pytaniu założenia i przekonania. Bo przecież, ...", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "1. ... przedmiotem nauki może być nie tylko wiedza, ale też umiejętności.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "2. ... ludzie starsi nie zawsze wiedzą więcej niż młodzi.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "3. ... słowo nauczać ma szerokie znaczenie i może też znaczyć „zainspirować”.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2018 Higher Level — © State Examinations Commission.",
+    id: "pl-2018-hl-i-5", topicId: "polish-3-0", conceptId: "wielu-doroslych-przewartosciowaniu-swojego-zycia-odrzuca",
+    section: "I", questionRef: "2018 HL Section I Q5",
+    questionText: "„[...] Wielu dorosłych po przewartościowaniu swojego życia odrzuca schematy narzucane przez społeczeństwo i przeżywając drugą młodość wraca do autentyczności adolescencji” (akapit 5). Co oznacza ta wypowiedź w kontekście przeczytanego artykułu? Udziel odpowiedzi w kilku zdaniach.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Często ludzie starsi w kontaktach z młodymi, widząc u nich takie cechy jak spontaniczność, wiara, odwaga, werwa, pasja, radość (akapit 2 i akapit 4), chcą się nimi „zarazić” i w ten sposób zbuntować się przeciwko skostniałym formom myślenia i zachowania, które przez lata stały się rzeczywistością ich dorosłego życia.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Refleksje typu:”: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "Dzięki temu pozytywnemu impulsowi czują oni przypływ nowych sił witalnych i na nowo zaczynają przeżywać świat w sposób bardziej intensywny, autentyczny i otwarty. Pozwala im to wrócić do zapomnianej młodości, a jedocześnie jeszcze lepiej zrozumieć i bardziej docenić młodych ludzi.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "W kontekście przeczytanego artykułu wypowiedź ta pokazuje, jak cenne pod wieloma względami jest towarzystwo młodych ludzi dla ludzi starszych. Także jak cenna jest taka inicjatywa, dzięki której dwa różne pokolenia mogą sobie w ten sposób pomagać i wzajemnie się wzbogacać.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2018 Higher Level — © State Examinations Commission.",
+    id: "pl-2018-hl-i-6", topicId: "polish-3-0", conceptId: "oznacza-przeczytanym-tekscie-sztuka-dawania-brania",
+    section: "I", questionRef: "2018 HL Section I Q6",
+    questionText: "Co oznacza w przeczytanym tekście „sztuka dawania i brania” i dlaczego, twoim zdaniem, autor nazywa ją „najpiękniejszą ze sztuk”? (śródtytuł).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "„Sztuka dawania i brania” odnosi się do komunikacji interpersonalnej i jest podstawą każdej relacji i związku.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Refleksje typu:”: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "W naszych relacjach z otoczeniem nieustannie następuje wielopłaszczyznowa wymiana: raz coś dajemy, raz otrzymujemy. Im harmonijniej przebiega ten proces, tym lepsza jest relacja.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Zdarza się, że ktoś chce tylko brać, nie dając nic z siebie, co może prowadzić do zaburzonej relacji. Podobno to, co dajemy, wraca do nas, jak w przysłowiu „co zasiejesz, to zbierzesz.”", marks: null },
+    { id: "r-4", kind: "point", verbatim: "W przeczytanym tekście jest mowa o wspaniałej symbiotycznej relacji między dwoma pokoleniami, które mimo różnicy wieku potrafią tak dobrze na siebie wpływać. Moim zdaniem autor nazywa „sztukę dawania i brania” najpiękniejszą ze sztuk, ponieważ określa ona nasze relacje międzyludzkie, które, choć nie zawsze proste i łatwe, są podstawą jakości naszego życia i dlatego warto je twórczo rozwijać i umacniać.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2018 Higher Level — © State Examinations Commission.",
+    id: "pl-2018-hl-ii-1", topicId: "polish-3-2", conceptId: "mlodzi-ludzie-dzieki-swojemu-emocjonalnemu-wdziekowi",
+    section: "II", questionRef: "2018 HL Section II Q1",
+    questionText: "„Młodzi ludzie dzięki swojemu emocjonalnemu wdziękowi, kompetencjom cyfrowym i szerokiemu zakresowi współczesnego słownictwa mogą być doskonałymi ekspertami ds. rzeczywistości” (akapit 9). Czy zgadzasz się z tym stwierdzeniem, czy nie? Odpowiedź swoją uzasadnij, używając około 100 słów.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Płynna wypowiedź na temat, przy użyciu około 100 słów", marks: 30, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “TAK, ZGADZAM SIĘ”; “Ponieważ młodzi nadążają za szybko zmieniającą się rzeczywistością.”; “Posiadają świeży umysł, zdolny do abstrakcyjnego myślenia.”; “NIE, NIE ZGADZAM SIĘ”; “Owszem młodzi są spontaniczni, mają pewne techniczne umiejętności i znają współczesne modne słownictwo, ale to nie wystarczy, żeby mogli w pełni panować nad rzeczywistością, bo brakuje im doświadczenia życiowego i dojrzałości.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2018 Higher Level — © State Examinations Commission.",
+    id: "pl-2018-hl-iii-1", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2018 HL Section III Q1",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: Co dla ciebie znaczy sukces?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “Słyszy się, że sukces jest czymś pożądanym i wartościowym, do czego należy dążyć za wszelką cenę, nawet idąc po trupach. Czy warto zapłacić za sukces każdą cenę? Czy rzeczywiście on przesądza o wartości człowieka?”; “Sukces dla każdego ma trochę inne znaczenie. Mogą to być bardzo różne rzeczy, przez jednych uznawane za drobiazg, dla innych mające „rozmiar góry”. Sukces może być związany z jakimś wydarzeniem lub postrzegany jako ogólna ocena działań danego człowieka.”; “Dla jednych będzie to świetne stanowisko w firmie; dla drugich – własna firma.”; “Dla jednych dokonanie odkrycia naukowego na miarę światową; dla drugich – pokonanie strachu przed wodą i nauka pływania.”; “Dla jednych przebiegnięcie maratonu; dla drugich – samodzielne zrobienie dwóch kroków po wypadku.”; “Bywa tak, że jesteśmy zajęci osiąganiem celów, które nie są nasze. Zostaliśmy zaprogramowani przez rodziców, nauczycieli i otoczenie do realizowania ich celów i wydaje nam się, że życie polega na spełnianiu czyichś oczekiwań. Christopher Morley powiedział: „Jeden jest tylko sukces – być w stanie spędzić życie na swój sposób” .”; “Warto się zastanowić, do jakiego sukcesu dążymy i jaką płacimy za niego cenę. Co on dla nas znaczy? Czy daje nam wolność, radość i poczucie spełnienia?”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2018 Higher Level — © State Examinations Commission.",
+    id: "pl-2018-hl-iii-2", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2018 HL Section III Q2",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: Nie ubiór zdobi człowieka, ale jak cię widzą, tak cię piszą. Czy i do jakiego stopnia możemy formułować trafne osądy na temat ludzi na podstawie ubrań, które noszą? Rozważ argumenty za i przeciw oraz podaj własny punkt widzenia.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “TAK, MOŻEMY FORMUŁOWAĆ TRAFNE OSĄDY NA PODSTAWIE UBRAŃ”; “Czy to się nam podoba, czy nie, wszyscy jesteśmy osądzani i sami osądzamy innych na podstawie ubrań i wyglądu zewnętrznego.”; “Styl i schludność ubrania oraz higiena osobista i fryzura są naszą wizytówką.”; “Wygląd jest bardzo ważną sprawą nie tylko dla kobiet.”; “Swoim strojem ludzie często wyrażają przynależność do pewnej grupy, co daje im poczucie tożsamości i zwiększa pewność siebie.”; “Łatwiej ufamy ludziom w mundurach i ubraniach zawodowych (np. policjantom).”; “NIE, NIE MOŻEMY FORMUŁOWAĆ TRAFNYCH OSĄDÓW NA PODSTAWIE UBRAŃ”; “Ubrania nie są częścią osobowości.”; “Służą one jedynie jako okrycie przed zimnem.”; “Trafnie możemy ocenić osobę dopiero po bliższym jej poznaniu.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2017 Higher Level — © State Examinations Commission.",
+    id: "pl-2017-hl-i-1-a", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-podkreslonych-slow",
+    section: "I", questionRef: "2017 HL Section I Q1(a)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie podkreślonych słów i wyrażeń w odniesieniu do tekstu: „Te neurobadania u handlowców wywołują dreszcz podniecenia” (akapit 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "te neurobadania wywołują radość / ciekawość u handlowców, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2017 Higher Level — © State Examinations Commission.",
+    id: "pl-2017-hl-i-1-b", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-podkreslonych-slow",
+    section: "I", questionRef: "2017 HL Section I Q1(b)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie podkreślonych słów i wyrażeń w odniesieniu do tekstu: „Współczesna psychologia marketingu dostarcza handlowcom wielu wygodnych narzędzi” (akapit 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "współczesna psychologia marketingu dostarcza handlowcom wielu skutecznych możliwości działania / wielu prostych sposobów wpływania na klienta, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2017 Higher Level — © State Examinations Commission.",
+    id: "pl-2017-hl-i-1-c", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-podkreslonych-slow",
+    section: "I", questionRef: "2017 HL Section I Q1(c)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie podkreślonych słów i wyrażeń w odniesieniu do tekstu: „Miłe hostessy częstują klientów napojami, przekąskami, wędlinami” (akapit 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "częstują klientów czymś małym do jedzenia, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2017 Higher Level — © State Examinations Commission.",
+    id: "pl-2017-hl-i-1-d", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-podkreslonych-slow",
+    section: "I", questionRef: "2017 HL Section I Q1(d)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie podkreślonych słów i wyrażeń w odniesieniu do tekstu: „Tradycyjna nauka ekonomii długo trzymała się mitu konsumenta racjonalnego” (akapit 9)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "w tradycyjnej nauce ekonomii długo uważano, że taki jest stan rzeczy, bez sprawdzania, czy jest tak rzeczywiście, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2017 Higher Level — © State Examinations Commission.",
+    id: "pl-2017-hl-i-1-e", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-podkreslonych-slow",
+    section: "I", questionRef: "2017 HL Section I Q1(e)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie podkreślonych słów i wyrażeń w odniesieniu do tekstu: „Bo choć internauta korzysta z mądrości sieci” (akapit 12)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "korzysta z całej wiedzy zebranej w internecie, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2017 Higher Level — © State Examinations Commission.",
+    id: "pl-2017-hl-i-2", topicId: "polish-3-0", conceptId: "wedlug-autora-jaki-sposob-nasz-mozg",
+    section: "I", questionRef: "2017 HL Section I Q2",
+    questionText: "Według autora tekstu, w jaki sposób nasz mózg reaguje na smak produktu znanej marki w odróżnieniu do produktu nieznanej marki? Jakie są tego konsekwencje?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Nasz mózg reaguje na smak znanej marki poprzez znane nam już skojarzenia myślowe z tą marką. (akapit 2)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Ponieważ wiemy, że smak tego napoju został zaakceptowany i uznany przez innych za świetny, my sami nie musimy już nawet go weryfikować.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Dla kontrastu, pijąc nowy napój nieznanej marki, uważnie natężamy nasze kubki smakowe, jak również i inne narządy zmysłów, by poznać istotę i głębię jego smaku.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Zjawisko to jest dużym ułatwieniem i zachętą dla firm do budowania mocnego wizerunku danej marki i produktu poprzez reklamy. W momencie gdy to zostanie osiągnięte, prawdziwy smak i jakość napoju stają się drugorzędne.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2017 Higher Level — © State Examinations Commission.",
+    id: "pl-2017-hl-i-3", topicId: "polish-3-0", conceptId: "odwolujac-tresci-akapitow-wyjasnij-techniki-wplywu",
+    section: "I", questionRef: "2017 HL Section I Q3",
+    questionText: "Odwołując się do treści akapitów 4–8, wymień i wyjaśnij techniki wpływu opisane w artykule.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme pays a descending ladder here, in its own words: “3 pkt za jedną technikę i 1 pkt za każdą kolejną” — 3, 1, 1 marks, in that order, to a printed total of 5.", group: {"claimMax":3,"perOption":3,"options":["1. W galerii nic nie jest przypadkowe (układ alejek, rozmieszczenie półek, ułożenie towaru, oświetlenie, muzyka) (akapit 4)","2. Marketing sensoryczny (oddziaływanie na wzrok, słuch i węch konsumenta oraz jego wrażliwość na dotyk) (akapit 5)","3. Reguła społecznego dowodu słuszności („Jeśli oni to kupują, to widać jest dobre. Kupię i ja”.) (akapit 7)","4. Reguła lubienia (chętnie wybieramy produkty reklamowane przez nasze ulubione gwiazdy) (akapit 8)"],"perOptionSteps":[3,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2017 Higher Level — © State Examinations Commission.",
+    id: "pl-2017-hl-i-4", topicId: "polish-3-0", conceptId: "jak-handlowcom-udaje-poznac-dotrzec-konsumenta",
+    section: "I", questionRef: "2017 HL Section I Q4",
+    questionText: "Jak handlowcom udaje się poznać i dotrzeć do konsumenta internauty? Udziel odpowiedzi, odwołując się do przeczytanego tekstu.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Na pozór mogłoby się wydawać, że handlowcom trudno jest dotrzeć do konsumenta internauty, który potencjalnie ma bezpośredni dostęp do informacji i dużo czasu na zastanowienie przed podjęciem decyzji. Okazuje się jednak, że i na niego są różne sposoby. (akapit 11)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Konsument internauta, choć najprawdopodobniej siedzi gdzieś w zaciszu swojego domu, nadal pozostaje łowcą okazji ze wszystkimi swoimi słabościami. Zatem nie jest on wolny od pokusy impulsywnego działania i łatwo ulega marketingowym technikom wpływu, takim jak np. reguła niedostępności i gratisy. (akapity 11 i 12)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Handlowcy mogą też zgromadzić o konsumencie internetowym dużo informacji, zwracając uwagę na to, jakie strony internetowe przegląda.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2017 Higher Level — © State Examinations Commission.",
+    id: "pl-2017-hl-i-5", topicId: "polish-3-0", conceptId: "czy-swietle-przeczytanego-artykulu-konsument-osoba",
+    section: "I", questionRef: "2017 HL Section I Q5",
+    questionText: "Czy w świetle przeczytanego artykułu konsument jest osobą racjonalną, czy też nie? Odpowiedź uzasadnij. Podaj też swoją własną opinię na ten temat.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "W świetle przeczytanego tekstu konsument jest osobą nieracjonalną, choć wcześniej uważano, że jest wręcz odwrotnie. (akapit 9)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Refleksje typu:”: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "Przeprowadzone badania wykazują jednak, że ludzie często robią zakupy w sposób spontaniczny i nieprzemyślany, nie zastanawiając się, czy dany produkt jest im naprawdę potrzebny, ani nie porównując zbytnio cen tych samych produktów. (akapit 9)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Moim zdaniem ludzie z zasady nie są racjonalni. Wprawdzie lubią myśleć sami o sobie, że tacy są, ale z reguły większość szybko traci głowę, gdy w grę zaczynają wchodzić emocje. Jeśli do tego ci ludzie nie znają chwytów marketingowych zastosowanych przez handlowców, często nie są w stanie obronić się przed nimi i działają jeszcze mniej racjonalnie.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2017 Higher Level — © State Examinations Commission.",
+    id: "pl-2017-hl-i-6", topicId: "polish-3-0", conceptId: "shopping-cos-wiecej-niz-robienie-zakupow",
+    section: "I", questionRef: "2017 HL Section I Q6",
+    questionText: "„Shopping to coś więcej niż robienie zakupów, to styl życia”. (akapit 1) Skomentuj ten cytat.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Gdy ktoś idzie do galerii handlowej, często nie chodzi wcale o zakupy, ale o przeżycie czegoś niecodziennego, zjedzenie czegoś specjalnego, pójście do kina lub po prostu pobycie wśród ludzi. Tak jak kiedyś szło się do lokalnej knajpy, na nabożeństwo lub na rynek, tak teraz chodzi się do centrum handlowego, żeby się pokazać.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Refleksje typu:”: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "Centra handlowe prześcigają się w nowych pomysłach dotyczących architektury i wystroju (np. fontanny, karuzele i interaktywne ekrany), żeby zaspokoić wymogi estetyczne i oczekiwania oraz przyciągnąć jak najwięcej klientów w różnym wieku.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Ludzie uwielbiają kupować, nawet jeśli zakupione towary nie są im potrzebne. Sam fakt nabywania czegoś jest dla nich przyjemnością. Słyszy się o osobach, które zapożyczają się na duże sumy, żeby zapłacić za luksusowe zakupy.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Shopping i nadmierna konsumpcja w naszym społeczeństwie ciągle przybierają na sile. Jest to ciekawe zjawisko, badane przez socjologów w kontekście większych przemian społecznych. Może chodzi tu o pewne antidotum na presje i kłopoty dnia codziennego, żeby choć przez chwilę móc pobyć królewiczem lub królewną w krainie baśni.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2017 Higher Level — © State Examinations Commission.",
+    id: "pl-2017-hl-ii-1", topicId: "polish-3-2", conceptId: "psycholodzy-marketingu-nieustannie-nas-obserwuja-szukajac",
+    section: "II", questionRef: "2017 HL Section II Q1",
+    questionText: "„[...]psycholodzy marketingu nieustannie nas obserwują, szukając klucza do naszej konsumenckiej psychiki. W tej sytuacji nasuwa się pytanie, czy my jako konsumenci, do tego stopnia już rozszyfrowani, mamy jeszcze w ogóle jakikolwiek wybór?” (akapit 13) Używając około 100 słów, skomentuj ten cytat na podstawie przeczytanego tekstu, wyrażając własną opinię na ten temat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Płynna wypowiedź na temat, przy użyciu około 100 słów", marks: 30, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “Po przeczytaniu tego artykułu mogłoby się wydawać, że nie mamy już w zasadzie żadnego wyboru, ale moim zdaniem tak nie jest. Człowiek zawsze ma wybór.”; “Jeśli spróbujemy zdać sobie sprawę ze stosowanych przez handlowców chwytów marketingowych, możemy być bardziej świadomi pułapek, które na nas czyhają. Nasze decyzje przy dokonywaniu zakupów będą wtedy bardziej świadome i wyważone.”; “Każdy z nas na pewno słyszał kiedyś dobrą radę typu „Nie chodź po zakupy spożywcze, gdy jesteś głodny”. Ale tak naprawdę, czy zawsze o niej pamiętamy?”; “Aby nie pozwolić do końca rozszyfrować się psychologom marketingu, warto czasem pokrzyżować im plany i zrobić coś, co może ich zaskoczyć, np. nie kupić czegoś, mimo ze ma się na to wielką ochotę, lub zmienić plany i zamiast do centrum handlowego wybrać się np. na wycieczkę do lasu.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2017 Higher Level — © State Examinations Commission.",
+    id: "pl-2017-hl-iii-1", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2017 HL Section III Q1",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: Gdzie szukać szczęścia w dzisiejszym świecie?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “Jak wynika z tytułu wypracowania, kandydat jest proszony w tym zadaniu o omówienie tematu poszukiwania szczęścia w dzisiejszym świecie. Nie wystarczy zatem ogólnie powiedzieć o zwykłych sposobach poszukiwania szczęścia, pomijając odniesienie do charakterystycznych cech współczesnego świata, tj. jego aspektów politycznych, gospodarczych, społecznych, religijnych czy technologicznych. One to bowiem mogą bezpośrednio zmniejszać albo zwiększać nasze perspektywy znalezienia szczęścia w środowisku, w którym żyjemy. Być może kandydat stwierdzi, że czasy nigdy nie były lepsze albo że nigdy nie były gorsze dla pogoni za szczęściem, ale jego refleksje, jak przykładowo te poniżej, muszą być ujęte w kontekście dzisiejszego świata.”; “Szczęście ma wiele definicji i każdy z nas inaczej je rozumie. Dla jednych szczęście to zdrowie, spokój wewnętrzny, bycie wolnym od stresu i pośpiechu. Dla innych szczęście to dzielenie życia z ukochanymi osobami. Jeszcze inni uważają, że być szczęśliwym znaczy nic nie musieć robić, tylko czytać książki albo oglądać telewizję i grać w gry komputerowe. Są też takie osoby, dla których największym szczęściem jest pomaganie innym.”; “Mówi się, że do szczęścia pieniądze nie są potrzebne i że tak naprawdę największe szczęście dają nam rzeczy, które nic nie kosztują, takie jak np. miłość, słońce czy uśmiech.”; “Według mnie szczęście to kombinacja wielu czynników, ale czasem zapominamy też o tym, że w życiu warto doceniać podstawowe rzeczy, chociażby takie, że mieszkamy w kraju, w którym panuje pokój, i że mamy gdzie mieszkać i co jeść. Wielu osób na świecie nie ma takiego luksusu. Wtedy nasze szczęście staje się pełniejsze i mniej zależy od codziennych wzlotów i upadków.”; “Każdy człowiek sam sobie musi odpowiedzieć na to pytanie, gdzie szukać szczęścia w dzisiejszym zapędzonym, złożonym i skomplikowanym świecie i konsekwentnie podążać wybraną drogą.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2017 Higher Level — © State Examinations Commission.",
+    id: "pl-2017-hl-iii-2", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2017 HL Section III Q2",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: „Moja opinia jest tak samo dobra jak twoja, a zatem wszystkie opinie powinny być jednakowo cenione”. – Skomentuj ten punkt widzenia w kontekście współczesnego świata, a w szczególności roli mediów społecznościowych.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “Żyjemy w ciekawych czasach. Na naszych oczach dokonuje się przełomowa przemiana technologiczna, w wyniku której ludzka praca coraz częściej zostaje zastąpiona maszynową. Powoduje to radykalny wzrost nierówności społecznej i wyzwala naturalne lęki, co z kolei kreuje świat, w którym bardziej liczą się emocje i osobiste przekonania niż fakty.”; “Wzrasta nieufność do ekspertów, analiz i statystyk, co pozwala pewnym grupom interesów mówic i pisać to co jest im wygodne by realizować własne cele.”; “Podczas gdy tradycyjne media przeżywają kryzys, rozkwitają media społecznościowe, z których coraz więcej ludzi czerpie informacje o świecie. Nikt tu jednak nie sprawdza prawdziwości podawanych informacji. W tym szumie informacyjnym zacierają się granice między faktem a opinią, prawdą a fałszem, informacją a dezinformacją.”; “Świat jawi się niczym wielka debata w barze, gdzie każdy krzycząc może wyrazić swoje zdanie, nierzadko odwołując się do najniższych instynktów i obrażając innych. Co gorsza, bywa to często źle pojmowane jako demokracja.”; “Jeśli demokracja polega na tym, że obywatele są w stanie rozliczać polityków z ich czynów, to konieczny jest do tego język zdolny opisywać rzeczywistość poprzez nazywanie i ocenianie faktów. Świat zbudowany na samych opiniach łatwo może przeistoczyć się w autorytarną dyktaturę.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2016 Higher Level — © State Examinations Commission.",
+    id: "pl-2016-hl-i-1-a", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-sformulowan",
+    section: "I", questionRef: "2016 HL Section I Q1(a)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie następujących sformułowań i wyrażeń: „powtarzać utarte opinie” (akapit 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ogólnie, powszechnie przyjęta, uznana, konwencjonalna opinia; stereotyp, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2016 Higher Level — © State Examinations Commission.",
+    id: "pl-2016-hl-i-1-b", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-sformulowan",
+    section: "I", questionRef: "2016 HL Section I Q1(b)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie następujących sformułowań i wyrażeń: „dzielić włos na czworo” (akapit 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "przesadnie, zbyt drobiazgowo coś analizować, czepiać się szczegółów, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2016 Higher Level — © State Examinations Commission.",
+    id: "pl-2016-hl-i-1-c", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-sformulowan",
+    section: "I", questionRef: "2016 HL Section I Q1(c)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie następujących sformułowań i wyrażeń: „coś porusza nas do szpiku kości” (akapit 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "coś porusza nas całkowicie, zupełnie, do głębi, coś nami wstrząsa, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2016 Higher Level — © State Examinations Commission.",
+    id: "pl-2016-hl-i-1-d", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-sformulowan",
+    section: "I", questionRef: "2016 HL Section I Q1(d)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie następujących sformułowań i wyrażeń: „trzymać rękę na pulsie” (akapit 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "śledzić rozwój czegoś, być w czymś zorientowanym na bieżąco, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2016 Higher Level — © State Examinations Commission.",
+    id: "pl-2016-hl-i-1-e", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-znaczenie-nastepujacych-sformulowan",
+    section: "I", questionRef: "2016 HL Section I Q1(e)",
+    questionText: "Wyjaśnij własnymi słowami znaczenie następujących sformułowań i wyrażeń: „przyzwoity człowiek” (akapit 7)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "człowiek dobrze się prowadzący, niebudzący zastrzeżeń, solidny, porządny, moralny, dobry, itp.", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2016 Higher Level — © State Examinations Commission.",
+    id: "pl-2016-hl-i-2", topicId: "polish-3-0", conceptId: "dlaczego-zdaniem-autora-warto-zajmowac-filozofia",
+    section: "I", questionRef: "2016 HL Section I Q2",
+    questionText: "Dlaczego, zdaniem autora tekstu, warto zajmować się filozofią w naszej zabieganej kulturze, „w której wszystko dzieje się tu i teraz”(akapit 2). Wskaż trzy powody.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme pays a descending ladder here, in its own words: “3 pkt za jeden aspekt i 1 pkt za każdy kolejny” — 3, 1, 1 marks, in that order, to a printed total of 5.", group: {"claimMax":3,"perOption":3,"options":["filozofia umożliwia nam pewnego rodzaju intelektualne uporządkowanie naszego świata poprzez świeże i nietuzinkowe spojrzenie na otaczające nas sprawy (akapit 1)","można ją potraktować jako intelektualną przygodę samą w sobie (akapit 1)","z greckiego nazywana „umiłowaniem mądrości” może się przydać zarówno tym, którzy już tę „mądrość” posiedli, jak i tym, którzy jej dopiero szukają (akapit 1)","właśnie w tej naszej zabieganej rzeczywistości może być okazją i zachętą do tego, by zwolnić tempo i wziąć coś pod lupę, by się temu dokładniej przyjrzeć z innej strony (akapit 2)","wielkość filozofii polega na tym, że jest zawsze aktualna i zaangażowana we współczesne wydarzenia (akapit 3)","sami filozofowie są według Edmunda Husserla „funkcjonariuszami całej ludzkości”, którzy podpowiadają nam, jak żyć (akapit 3)"],"perOptionSteps":[3,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2016 Higher Level — © State Examinations Commission.",
+    id: "pl-2016-hl-i-3", topicId: "polish-3-0", conceptId: "zyjemy-dobie-spoleczenstwa-spektaklu-oznacza-wypowiedz",
+    section: "I", questionRef: "2016 HL Section I Q3",
+    questionText: "„Żyjemy w dobie »społeczeństwa spektaklu«” (akapit 5). Co oznacza ta wypowiedź w kontekście tekstu i czy się z nią zgadzasz (bądź nie zgadzasz)? Uzasadnij swoją odpowiedź.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Język i mowa, które do tej pory slużyły jako najważniejsze narzędzia porządkujące naszą rzeczywistość, nie są już na pierwszym miejscu. Dzięki współczesnym mediom i technologiom, takim jak telewizja i internet, to obraz i zdjęcie zajęły ich miejsce. Ich siła przekazu – dodatkowo wzmocniona jeszcze przez wielkość obrazu i jego kolor – powoduje, że wizualne newsy lepiej do nas docierają i mocniej nas przekonują. Czasami dziennikarze i producenci telewizyjni nadają tym wiadomościom przesadny kształt, żeby jeszcze bardziej zainteresować ludzi lub zwiększyć oglądalność swoich stacji. (akapit 5)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "ZGADZAM SIĘ: Redagujący wiadomości chcą nam pokazać wszystko jak najdokładniej, nawet jeśli oznacza to przekraczanie granic prywatności, intymności lub wulgarności i może wzbudzać skrajne emocje u oglądających. Wielu współczesnych widzów bardzo ceni sobie mocne wrażenia na wizji, czego przykładem są popularne programy typu „reality show”.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "NIE ZGADZAM SIĘ: Nie wszyscy ludzie żądni są mocnych wrażeń w internecie lub w informacyjnych programach telewizyjnych. Są też tacy, którzy wiadomości czytają w prasie lub słuchają w radiu. Poza tym, to nie jest niczyja wina, a raczej wynika to ze współczesnej technologii, która narzuca nam taki sposób przekazywania wiadomości.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2016 Higher Level — © State Examinations Commission.",
+    id: "pl-2016-hl-i-4", topicId: "polish-3-0", conceptId: "obcy-jako-inny-moze-przeciez-byc",
+    section: "I", questionRef: "2016 HL Section I Q4",
+    questionText: "„Obcy jako Inny może przecież być [dla nas] szansą” (akapit 10). O jakiej szansie mówi autor? Udziel odpowiedzi, odwołując się do treści tekstu oraz własnej opinii.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Po przekroczeniu granicy strachu przed nieznanym, obcy, w tym przypadku mowa jest o uchodźcach, może być szansą na poznanie czegoś nowego i na poszerzenie naszych horyzontów.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Refleksje typu:”: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "Wyciągając rękę do obcego, możemy okazać swoją przychylność, tolerancję, jak również swoje człowieczeństwo.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Tak jak słońce świeci dla wszystkich ludzi na ziemi, tak wszyscy ludzie mają prawo do życia w pokoju i godności.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2016 Higher Level — © State Examinations Commission.",
+    id: "pl-2016-hl-i-5", topicId: "polish-3-0", conceptId: "widok-cudzego-cierpienia-budzi-tym-wieksze",
+    section: "I", questionRef: "2016 HL Section I Q5",
+    questionText: "„Widok cudzego cierpienia budzi tym większe współczucie, im bardziej mamy świadomość, że cierpiący jest gdzieś daleko” (akapit 8). Co oznacza ta wypowiedź w kontekście przeczytanego artykułu i czy się z nią zgadzasz (bądź nie zgadzasz)? Uzasadnij swoją wypowiedź.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "według autora łatwo jest komuś współczuć z daleka, bo takie współczucie nic nas nie kosztuje, a sami czujemy się przez to lepsi (akapit 7 i 8)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Refleksje typu:”: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "trudniej zachować współczucie, gdy trzeba zaryzykować swoją wygodę, a nawet bezpieczeństwo; zwycięża wtedy strach przed nieznanym, który każe nam wymyślać różne wymówki i argumenty przeciw (akapit 8)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "ZGADZAM SIĘ: większość ludzi to egoiści i ich współczucie jest udawane; tylko niewiele osób jest w stanie poświęcić się dla drugiego człowieka – taka jest natura ludzka", marks: null },
+    { id: "r-4", kind: "point", verbatim: "zdarza się też, że to właśnie egoistyczne pobudki motywują ludzi do zachowań altruistycznych, i wtedy można mówić o współczuciu wykalkulowanym", marks: null },
+    { id: "r-5", kind: "point", verbatim: "NIE ZGADZAM SIĘ: jest to krzywdzące uogólnienie", marks: null },
+    { id: "r-6", kind: "point", verbatim: "jest wiele przykładów na to, że ludzie są wspaniali i potrafią zrezygnować z egoistycznych pobudek, żeby pomóc innym", marks: null },
+    { id: "r-7", kind: "point", verbatim: "najlepszym przykładem są zachowania i wspaniałe gesty wielu ludzi w różnych krajach, którzy pomagają uchodźcom", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2016 Higher Level — © State Examinations Commission.",
+    id: "pl-2016-hl-i-6", topicId: "polish-3-0", conceptId: "niemiecki-mysliciel-theodor-adorno-stwierdzil-dac",
+    section: "I", questionRef: "2016 HL Section I Q6",
+    questionText: "Niemiecki myśliciel, Theodor W. Adorno stwierdził: „Dać się wypowiedzieć cierpiącemu – oto warunek wszelkiej prawdy” (akapit 9). Co oznacza ta wypowiedź w świetle przeczytanego tekstu i czy się z nią zgadzasz (bądź nie zgadzasz)? Uzasadnij swoją odpowiedź.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "autor tekstu przypisuje ludzkiemu cierpieniu ogromne znaczenie, podkreśla jego ogólnoludzki a nawet uniwersalny wymiar, ponad wszelkimi podziałami, tj. rasowymi, politycznymi i religijnymi, a następnie nadaje mu rangę „wszelkiej prawdy” i najwyższego „autorytetu”, któremu nawet rozum powinien się podporządkować (akapit 9)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Refleksje typu:”: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "autor przekonuje, że każdy człowiek jest w stanie to dostrzec, bez względu na wykształcenie i przekonania, jeśli tylko otworzy oczy, co może oznaczać: otworzy swoje serce, i wtedy zareaguje on współczuciem (akapit 9)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "ZGADZAM SIĘ: zgadzam się z tą wypowiedzią, ponieważ daje ona dużo do myślenia, uwrażliwia i wyczula na pewne tematy, o których wcześniej nie myślałem", marks: null },
+    { id: "r-4", kind: "point", verbatim: "NIE ZGADZAM SIĘ: nie zgadzam się i uważam, że nie można mieszać do tego rozumu, bo rozum powinien przede wszystkim myśleć trzeźwo, by nie popełnić jakichś błędów, których później można żałować", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2016 Higher Level — © State Examinations Commission.",
+    id: "pl-2016-hl-ii-1", topicId: "polish-3-2", conceptId: "troska-jakiej-wzywa-nas-twarz-innego",
+    section: "II", questionRef: "2016 HL Section II Q1",
+    questionText: "„Troska, do jakiej wzywa nas twarz Innego, to także troska o nas samych. Bo każdy z nas jest przecież Inny” (akapit 11). Używając około 100 słów, skomentuj ten cytat w świetle przeczytanego tekstu, wyrażając własną opinię na ten temat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Płynna wypowiedź na temat, przy użyciu około 100 słów", marks: 30, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “zgadzam się z tym stwierdzeniem, bo każdy z nas jest czasem w sytuacji, w której właśnie to my jesteśmy tym „Innym” i musimy zmierzyć się z nieznanymi sobie ludźmi. I wtedy pozostaje nam tylko nadzieja, że nie zostaniemy przez nich odtrąceni, tylko zaakceptowani”; “warto pomagać „Innym”, bo to, jak my się dziś zachowamy, wróci do nas kiedyś, jak w przysłowiu: „jak ty komu, tak on tobie”, albo „jak Kuba Bogu, tak Bóg Kubie””; “twarz drugiego człowieka dużo może nam powiedzieć o jego dotychczasowym życiu, a o samych oczach mówi się, że są zwierciadłem duszy, czyli patrząc w nie, możemy zajrzeć do jej wnętrza”; “w każdym człowieku tkwi siła i niezłomnośc, ale też słabość i delikatność, i należy to uszanować”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2016 Higher Level — © State Examinations Commission.",
+    id: "pl-2016-hl-iii-1", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2016 HL Section III Q1",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: „Ciekawość jest najpotężniejszą siłą napędową w kosmosie, ponieważ jest w stanie pokonać dwie największe siły hamujące: rozsądek i strach”. - Walter Moers",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “ciekawość odgrywa ogromną rolę w ludzkim życiu”; “ciekawość sprawia, że chcemy się czegoś dowiedzieć, kogoś poznać lub nad czymś się zastanowić”; “istotę ciekawości stanowi zadawanie pytań, eksperymentowanie oraz dążenie do odkrywania tajemnic”; “ciekawość to niezadowalanie się tym, co jest oczywiste, ale poszukiwanie nowych rozwiązań i przekraczanie granic”; “ciekawość popycha do szukania nowych rozwiązań, bo chcemy zobaczyć, jak coś będzie działało i jakie będę tego następstwa”; “bez ciekawości nie byłoby odkryć geograficznych i naukowych”; “zdziwienie jest nieodłącznym elementem ciekawości”; “ciekawość to pierwszy stopień do piekła”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2016 Higher Level — © State Examinations Commission.",
+    id: "pl-2016-hl-iii-2", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2016 HL Section III Q2",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: „Świat może okazać się bardzo nieciekawym miejscem, jeśli nie będziemy działać wspólnie, aby w większym stopniu zapanowały w nim równe prawa i demokracja, a jego rozwój był bardziej zrównoważony.” - Fintan O’Toole, The Irish Times (22.02.2016)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “jeszcze nie jest za późno, by coś wspólnie zrobić dla dobra wszystkich mieszkańców naszej planety, ale czasu jest coraz mniej”; “świat jest tak zglobalizowany, a poszczególne kraje tak od siebie uzależnione, że pojedynczo nikt nie ma już szans na wyeliminowanie bolączek współczesnego świata”; “dopiero razem jesteśmy naprawdę silni”; “należy zacząć od edukacji młodzieży, by ludzie stali się dla siebie bardziej tolerancyjni i przyjaźni”; “poprzez współpracę handlową i gospodarczą można zapobiegać wojnom i konfliktom, czego przykładem jest UE”; “różne formy pomocy ekonomicznej dla najbiedniejszych krajów świata (tj. pomoc finansowa i humanitarna)”; “co każdy z nas sam może na co dzień zrobić, by uczynić świat lepszym?”; “czy pojedynczy człowiek może w ogóle mieć jakiś wpływ na losy świata?”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2015 Higher Level — © State Examinations Commission.",
+    id: "pl-2015-hl-i-1", topicId: "polish-3-0", conceptId: "zachowania-postawy-decyduja-tym-okreslamy-kogos",
+    section: "I", questionRef: "2015 HL Section I Q1",
+    questionText: "Jakie zachowania i postawy decydują o tym, że określamy kogoś mianem fanatyka? Podaj pięć cech, które autor wymienia w 2. akapicie.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme ends its list “inne”.", group: {"claimMax":5,"perOption":1,"options":["przekonanie o słuszności wyznawanych przez siebie poglądów","przyjęcie bezkompromisowej i dogmatycznej postawy wobec innych","odwołanie się do przemocy w celu udowodnienia słuszności swoich przekonań","kierowanie się emocjami","przekonanie o własnej wielkości"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2015 Higher Level — © State Examinations Commission.",
+    id: "pl-2015-hl-i-2", topicId: "polish-3-0", conceptId: "trzy-najwazniejsze-sposoby-przeciwdzialania-fanatyzmowi-ktorych",
+    section: "I", questionRef: "2015 HL Section I Q2",
+    questionText: "Podaj trzy najważniejsze sposoby przeciwdziałania fanatyzmowi, o których autor mówi w akapitach 6, 7, 8 i 9.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme pays a descending ladder here, in its own words: “3 pkt za jeden aspekt i 1 pkt za każdy kolejny” — 3, 1, 1 marks, in that order, to a printed total of 5.", group: {"claimMax":3,"perOption":3,"options":["wypracowanie zdolności do krytycznego myślenia i prowadzenia dialogu","akceptacja pluralizmu opinii","wypracowanie nowych zasad etycznych, opartych na godności człowieka"],"perOptionSteps":[3,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2015 Higher Level — © State Examinations Commission.",
+    id: "pl-2015-hl-i-3-a", topicId: "polish-3-0", conceptId: "odwolujac-tresci-napisz-dwie-glowne-przyczyny",
+    section: "I", questionRef: "2015 HL Section I Q3(a)",
+    questionText: "Odwołując się do treści tekstu (akapit 2, 3, 4 i 5), napisz, jakie są dwie główne przyczyny sprzyjające tworzeniu się postaw fanatycznych oraz",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "wewnętrzne predyspozycje jednostki czyli patologiczne cechy osobowościowe", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "zewnętrzne warunki środowiskowe lub społeczne", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2015 Higher Level — © State Examinations Commission.",
+    id: "pl-2015-hl-i-3-b", topicId: "polish-3-0", conceptId: "odwolujac-tresci-wyjasnij-czym-polega-roznica",
+    section: "I", questionRef: "2015 HL Section I Q3(b)",
+    questionText: "Odwołując się do treści tekstu (akapit 2, 3, 4 i 5), wyjaśnij, na czym polega różnica w ocenie postawy fanatycznej, dokonanej przez samego fanatyka i przez społeczeństwo.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fanatyk ocenia swoją działalność pozytywnie. Uważa siebie za wybrańca, występującego w obronie słusznej sprawy.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Społeczeństwo natomiast odbiera jego postawę jako agresywną i wywołującą zagrożenie.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2015 Higher Level — © State Examinations Commission.",
+    id: "pl-2015-hl-i-4", topicId: "polish-3-0", conceptId: "fanatykiem-staje-czesto-osoba-bezradna-zyciowo",
+    section: "I", questionRef: "2015 HL Section I Q4",
+    questionText: "„Fanatykiem staje się często osoba bezradna życiowo, niedojrzała emocjonalnie, szukająca stałego wsparcia i pomocy ze strony innych. W postawach fanatycznych osobowości niedojrzałe znajdują rozwiązanie swoich problemów, poczucie bezpieczeństwa oraz wrażenie sensowności życia i świata”. (akapit 4) Co oznacza ta wypowiedź w kontekście przeczytanego tekstu i czy się z nią zgadzasz (lub nie zgadzasz)? Uzasadnij swoją odpowiedź.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "mówi się czasami, że ludzie z marginesu społecznego to osoby, które nie zaznały miłości i akceptacji w rodzinie; tacy ludzie często tracą kontakt z samym sobą, są zagubieni, czują się niezrozumiani, nie widzą sensu życia", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Refleksje typu:”: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "dopiero jakaś idea albo grupa jest w stanie nimi zawładnąć i zapełnić im tę pustkę w życiu", marks: null },
+    { id: "r-3", kind: "point", verbatim: "przypomina to działanie niebezpiecznych sekt, które również oferują swoim wyznawcom akceptację, zrozumienie i miłość, by zdobyć ich względy i zaufanie, w zamian za posłuszeństwo", marks: null },
+    { id: "r-4", kind: "point", verbatim: "w takich sytuacjach należy mieć się na baczności i zachować zdrowy rozsadek, tj. umiejętność krytycznego myślenia", marks: null },
+    { id: "r-5", kind: "point", verbatim: "ważne jest, by w społeczeństwie nikogo nie wykluczać, lecz go integrować", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2015 Higher Level — © State Examinations Commission.",
+    id: "pl-2015-hl-i-5", topicId: "polish-3-0", conceptId: "boiskach-sportowych-fanatyczni-szalikowcy-bija-miedzy",
+    section: "I", questionRef: "2015 HL Section I Q5",
+    questionText: "„Na boiskach sportowych fanatyczni szalikowcy biją się między sobą w obronie dobrego imienia drużyny piłkarskiej, której kibicują”. (akapit 1) Odwołując się do treści tekstu, opisz postawy fanatyczne widoczne w zachowaniu kibiców sportowych.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "kampania ideologiczna", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Przykłady typu:”: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "działanie grupy", marks: null },
+    { id: "r-3", kind: "point", verbatim: "my dobrzy, oni źli", marks: null },
+    { id: "r-4", kind: "point", verbatim: "agresor / ofiara", marks: null },
+    { id: "r-5", kind: "point", verbatim: "używane argumenty", marks: null },
+    { id: "r-6", kind: "point", verbatim: "półprawdy i pomówienia", marks: null },
+    { id: "r-7", kind: "point", verbatim: "zniesławienie ofiary", marks: null },
+    { id: "r-8", kind: "point", verbatim: "kierowanie się silnymi emocjami", marks: null },
+    { id: "r-9", kind: "point", verbatim: "poczucie bycia usprawiedliwionym", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2015 Higher Level — © State Examinations Commission.",
+    id: "pl-2015-hl-i-6", topicId: "polish-3-0", conceptId: "umiejetnosc-krytycznego-myslenia-pozwala-zweryfikowac-prawdziwosc",
+    section: "I", questionRef: "2015 HL Section I Q6",
+    questionText: "„Umiejętność krytycznego myślenia pozwala zweryfikować prawdziwość własnych poglądów [...]. Ten, kto myśli krytycznie, stwierdzi z pokorą, że wielu rzeczy jeszcze nie wie i daleko mu do poznania całej prawdy”. (akapit 7) Co oznacza ta wypowiedź w świetle przeczytanego tekstu? Odpowiedź uzasadnij.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "każda demokracja i wspólnota wolna od agresji i fanatyzmu opiera się na dialogu", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Under the scheme's heading “Refleksje typu:”: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "podstawą otwartego dialogu jest krytyczne myślenie wobec własnych i cudzych poglądów", marks: null },
+    { id: "r-3", kind: "point", verbatim: "krytyczne myślenie polega na zachowaniu otwartego umysłu, unikaniu stereotypów i ciągłym weryfikowaniu swoich poglądów", marks: null },
+    { id: "r-4", kind: "point", verbatim: "nikt tak naprawdę nie wie wszystkiego do końca, a jeśli ktoś twierdzi inaczej, może stać się zagrożeniem dla innych, i w tym momencie powinno nam się zapalić czerwone światełko", marks: null },
+    { id: "r-5", kind: "point", verbatim: "dobrze jest zachować dystans wobec autorytetów i nie wierzyć każdemu przeczytanemu i usłyszanemu słowu", marks: null },
+    { id: "r-6", kind: "point", verbatim: "ważne jest, by wykazywać tolerancję i nie upierać się przy własnych poglądach, bez wysłuchania argumentów drugiej strony", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2015 Higher Level — © State Examinations Commission.",
+    id: "pl-2015-hl-ii-1", topicId: "polish-3-2", conceptId: "przytoczone-fakty-swiadcza-powaznym-kryzysie-wspolczesnej",
+    section: "II", questionRef: "2015 HL Section II Q1",
+    questionText: "„Przytoczone fakty świadczą o poważnym kryzysie współczesnej kultury [...]”. (akapit 1) Używając około 100 słów, skomentuj ten cytat w świetle przeczytanego tekstu, wyrażając własną opinię na ten temat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Płynna wypowiedź na temat przy użyciu około 100 słów", marks: 30, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “Czy jest to rzeczywiście problem współczesny (zglobalizowanego świata), czy istnieje on już od dawna?”; “Fanatyzm jest złem, bo zaburza i dezorganizuje współpracę i współżycie jednostek i grup społecznych, uniemożliwia jednostce poznanie prawdy.”; “Skutkiem fanatyzmu jest eskalacja przemocy i agresji w postępowaniu jednostek i zachowaniu narodów i społeczeństw, np. znęcanie się, wszelkie formy nietolerancji, konflikty i terroryzm.”; “Co możemy zrobić, żeby rozwiązać ten problem?”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2015 Higher Level — © State Examinations Commission.",
+    id: "pl-2015-hl-iii-1", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: Głęboka wiara niesie ze sobą nie tylko nagrodę, ale i ryzyko.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “wiara daje nadzieję, ale nadzieja jest też matką głupich”; “wiara zbliża ludzi do siebie, ale też ich dzieli”; “wiara pomaga żyć, ale posunięta zbyt daleko może zaślepiać i prowadzić do fanatyzmu”; “wiara obiecuje zbawienie, ale relatywizuje winę i odpowiedzialność za popełnione czyny”; “religia oferuje gotowe autorytety, ale może też łatwo ludźmi manipulować”; “religia daje możliwość wiary w coś większego od nas samych, ale odbiera wiarę we własne siły”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2015 Higher Level — © State Examinations Commission.",
+    id: "pl-2015-hl-iii-2", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2015 HL Section III Q2",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: „Najbogatszym jest ten, kto na najmniejszym poprzestaje”. (Sokrates)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “Być bogatym, znaczy:”; “potrafić się cieszyć z tego, co się ma”; “znać swoją miarę i wiedzieć, kiedy trzeba powiedzieć „dosyć””; “dzielić się z innymi”; “doceniać drobiazgi w naszym życiu”; “być wrażliwym na wartości pozamaterialne”; “zauważać bogactwo przyrody wokół nas”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-i-1", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-ogolne-znaczenie-nastepujacych",
+    section: "I", questionRef: "2014 HL Section I Q1",
+    questionText: "Wyjaśnij własnymi słowami ogólne znaczenie następujących wyrażeń:\na) „być na własnych śmieciach” (akapit 5)\nb) „wlec się w ogonie” (akapit 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme pays a descending ladder here, in its own words: “(3 pkt za jedno wyjaśnienie i 2 pkt za drugie)” — 3, 2 marks, in that order, to a printed total of 5.", group: {"claimMax":2,"perOption":3,"options":["być w swoim domu, na swoim gospodarstwie, w swoim kraju, itp.","nie nadążać za rozwojem sytuacji, nie brać w czymś czynnego udziału, być biernym wobec określonych wydarzeń, itp."],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-i-2", topicId: "polish-3-0", conceptId: "trzy-aspekty-nowej-ustawy-smieciowej-ktore",
+    section: "I", questionRef: "2014 HL Section I Q2",
+    questionText: "Wymień trzy aspekty nowej ustawy śmieciowej, które szokują Polaków i zmuszają ich do całkowitej zmiany sposobu myślenia. (akapit 9)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme pays a descending ladder here, in its own words: “(3 pkt za jeden aspekt i 1 pkt za każdy kolejny)” — 3, 1, 1 marks, in that order, to a printed total of 5.", group: {"claimMax":3,"perOption":3,"options":["fakt, że muszą oni płacić za coś, co wyrzucają lub czego się pozbywają","że to, co do tej pory było takie proste (tj. wywożenie niechcianych gratów do pobliskiego lasu lub rzeki), teraz nie wchodzi już w rachubę","że muszą regularnie i konsekwentnie segregować odpady"],"perOptionSteps":[3,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-i-3", topicId: "polish-3-0", conceptId: "gdzie-tekscie-widzimy-probe-usprawiedliwienia-oryginalnego",
+    section: "I", questionRef: "2014 HL Section I Q3",
+    questionText: "Gdzie w tekście widzimy próbę usprawiedliwienia „oryginalnego stosunku” Polaków do śmieci i bałaganiarstwa? Podaj dwa przykłady.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme pays a descending ladder here, in its own words: “(3 pkt za pierwszy przykład i 2 pkt za drugi)” — 3, 2 marks, in that order, to a printed total of 5.", group: {"claimMax":2,"perOption":3,"options":["w akapicie 5 autorka żartobliwie wspomina Bolesława Prusa, który rzekomo twierdził, że Polacy lubią śmieci (stąd mamy nawet w naszym języku idiom o śmieciach) (akapit 5)","z kolei antropolog kultury (dr Włodzimierz Pessel) wyjaśnia, że nasz obecny stosunek do śmieci został ukształtowany przez wieloletnią biedę i prowizorkę, spowodowane m.in. przez ciągłe migracje i przesiedlenia ludności zamieszkującej nasze tereny (akapit 5)"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-i-4", topicId: "polish-3-0", conceptId: "wypada-byc-dzis-ekologicznie-uwaznym-ekonomicznie",
+    section: "I", questionRef: "2014 HL Section I Q4",
+    questionText: "„Wypada być dziś ekologicznie uważnym i ekonomicznie rozsądnym obywatelem globalnej wioski” (akapit 6). Co oznacza ta wypowiedź w kontekście przeczytanego tekstu i czy się z nią zgadzasz (lub nie zgadzasz)? Uzasadnij swoją odpowiedź.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "(3 pkt za wyjaśnienie wypowiedzi i 2 pkt za własny komentarz)", marks: 5, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Examples the scheme prints, not a checklist: “świat coraz bardziej skłania się ku ponownemu wykorzystaniu używanych – a nawet zużytych – przedmiotów”; “modnym jest dzisiaj być trochę Re”; “artyści szukają inspiracji i materiałów na złomowiskach”; “ludzie zamiast kupować coś bezmyślnie (np. prezenty), wymyślają inne, coraz popularniejsze, rozwiązania (takie jak np. zrobię to sam lub kupię coś używanego)”; “ubrania, które nie są nam już potrzebne, mogą się przydać innym (mogę je sprzedać lub wymienić)”; “ZGADZAM SIĘ: nasza czynna postawa ma ogromne znaczenie w skali globalnej, bo to przecież my sami tworzymy ten świat”; “NIE ZGADZAM SIĘ: nieważne, co robimy, bo i tak na wielką politykę, ekonomię i ekologię nie mamy żadnego wpływu, więc szkoda naszego wysiłku”.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"c1","verbatim":"wyjaśnienie wypowiedzi","marks":3,"permittedMarks":[0,1,2,3]},{"id":"c2","verbatim":"własny komentarz","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-i-5-a", topicId: "polish-3-0", conceptId: "czas-wlozyc-rece-wlasne-smieci-tytul",
+    section: "I", questionRef: "2014 HL Section I Q5(a)",
+    questionText: "„Czas włożyć ręce we własne śmieci” (tytuł). Odwołując się do treści tekstu napisz, jak należy rozumieć tytuł artykułu w sensie a) dosłownym i b) przenośnym.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "już czas zacząć sortować śmieci", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "sprzątać bałagan", marks: null },
+    { id: "r-3", kind: "point", verbatim: "ograniczać opakowania", marks: null },
+    { id: "r-4", kind: "point", verbatim: "zadbać o jakość produkowanych towarów", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-i-5-b", topicId: "polish-3-0", conceptId: "czas-wlozyc-rece-wlasne-smieci-tytul",
+    section: "I", questionRef: "2014 HL Section I Q5(b)",
+    questionText: "„Czas włożyć ręce we własne śmieci” (tytuł). Odwołując się do treści tekstu napisz, jak należy rozumieć tytuł artykułu w sensie a) dosłownym i b) przenośnym.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "już czas wziąć sprawy w swoje ręce, nawet gdy są one mało przyjemne", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "dokonać samoanalizy i podsumowania", marks: null },
+    { id: "r-3", kind: "point", verbatim: "zająć się własnym podwórkiem", marks: null },
+    { id: "r-4", kind: "point", verbatim: "poczuć się odpowiedzialnym za sprawy dotyczące nas samych i zacząć działać", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-i-6", topicId: "polish-3-0", conceptId: "pozadanie-rzeczy-nastepnie-ich-nadmierne-gromadzenie",
+    section: "I", questionRef: "2014 HL Section I Q6",
+    questionText: "„Pożądanie rzeczy, a następnie ich nadmierne gromadzenie, to nieprzezwyciężona skłonność człowieczego gatunku.” (akapit 4) Czy w świetle przeczytanego tekstu zgadzasz się z tym stwierdzeniem (lub nie zgadzasz)? Uzasadnij swoją odpowiedź.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ZGADZAM SIĘ: natura ludzka jest nienasycona i zachłanna", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "gromadząc nadmiar rzeczy, poszukujemy stałości i bezpieczeństwa; chcemy zatrzymać czas albo znaleźć pocieszenie i wybawienie od naszych codziennych trosk; chcemy też pokazać swój status społeczny lub zaznaczyć pozycję w grupie", marks: null },
+    { id: "r-3", kind: "point", verbatim: "zbyt mocno skoncentrowani na gromadzeniu dóbr materialnych, często zapominamy o wartościach pozamaterialnych, takich jak honor, przyjaźń czy uczciwość", marks: null },
+    { id: "r-4", kind: "point", verbatim: "NIE ZGADZAM SIĘ: obecnie dużo się mówi i dyskutuje na ten temat", marks: null },
+    { id: "r-5", kind: "point", verbatim: "coraz więcej ludzi stara się kontrolować swoją niepohamowaną chęć zakupów i gromadzenia przedmiotów poprzez bardziej odpowiedzialne i świadome życie", marks: null },
+    { id: "r-6", kind: "point", verbatim: "zawsze mamy wolność wyboru", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-ii-1", topicId: "polish-3-2", conceptId: "wczesniej-czy-pozniej-unia-europejska-nawroci",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "„Wcześniej czy później [Unia Europejska] nawróci [Polskę] na swoją religię Re: redukcji, reanimacji i reinkarnacji odpadów. Ta religia ma swoich kapłanów, obrzędy i żąda ofiary.” (akapit 1) Używając około 100 słów, skomentuj ten cytat w świetle przeczytanego tekstu, wyrażając własną opinię na ten temat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Płynna wypowiedź na temat, przy użyciu około 100 słów", marks: 30, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “kapłani to: wszyscy związani z wprowadzaniem nowych przepisów, a zatem urzędnicy europejscy i krajowi, także pracownicy zakładów utylizacji oraz sami śmiecący, itp.”; “obrzędy to: sortowanie śmieci, zmniejszanie liczby opakowań, świadome podejście do zakupów, nowe przyzwyczajenia Polaków, itp.”; “ofiary wynikają: z bycia zmuszonym do zmiany sposobu myślenia; z rezygnacji z dotychczasowych przyzwyczajeń i konieczności wyrobienia w sobie nowych nawyków; z narzuconych dodatkowych opłat za pozbywanie się śmieci i niechcianych przedmiotów; z całego zamieszania wokół nowych przepisów, itp.”; “Z JEDNEJ STRONY: wśród europejskich urzędników jest wielu ideowców, pełnych dobrych pomysłów, a ponieważ są oni u władzy i mają możliwość wprowadzania zmian, na pewno im się to uda”; “coraz więcej ludzi w Polsce jest przekonanych o pozytywnych stronach recyclingu i negatywnych stronach nadmiernej ilości opakowań”; “ALE Z DRUGIEJ STRONY: ludzie nie lubią zmian”; “są leniwi i wygodni, z łatwością znajdują logiczne wytłumaczenie swojego postępowania”; “nie chcą ponosić dodatkowych kosztów”; “wolą wierzyć, że nie jest to ich problem”; “nie lubią, gdy ktoś im coś odgórnie narzuca”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-iii-1", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: Jak dzisiejsze społeczeństwo wpływa na środowisko, w którym żyć będą jego dzieci i wnuki?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “zmiany klimatyczne”; “rozwój gospodarczy i globalizacja”; “zaspokojenie rosnących potrzeb energetycznych”; “żywność i rolnictwo”; “ochrona środowiska (w tym zagrożonych zwierząt i roślin)”; “badania i rozwój nowych technologii”; “aktywne motywowanie władz w tej dziedzinie”; “co każdy z nas może zrobić sam (np. zużycie wody i elektryczności, sortowanie śmieci)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-iii-2", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: „W poszukiwaniu piękna objedziemy cały świat, ale żeby je znaleźć, trzeba je nosić w sercu. ” – Ralf Waldo Emerson",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “definicja piękna od zawsze była sporna; dziś także dla każdego oznacza ono coś innego”; “to, że ktoś opisze jakąś budowlę jako piękną, nie znaczy wcale, że wzbudzi ona w nas te same odczucia”; “żeby dostrzec piękno, potrzebna jest nam pewna wrażliwość serca”; “kontakt z przyrodą i otwarcie na drugiego człowieka mogą nas wyczulić na piękno”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-i-1-a", topicId: "polish-3-0", conceptId: "wyjasnij-znaczenie-ponizszych-wyrazow-wlasnymi-slowami",
+    section: "I", questionRef: "2013 HL Section I Q1(a)",
+    questionText: "Wyjaśnij znaczenie poniższych wyrazów własnymi słowami: przywilej (akapit 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "szczególne uprawnienie, pozwolenie na coś", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-i-1-b", topicId: "polish-3-0", conceptId: "wyjasnij-znaczenie-ponizszych-wyrazow-wlasnymi-slowami",
+    section: "I", questionRef: "2013 HL Section I Q1(b)",
+    questionText: "Wyjaśnij znaczenie poniższych wyrazów własnymi słowami: kursować między [czymś a czymś] (akapit 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "chodzić, jeździć, przemieszczać się regularnie od punktu do punktu", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-i-1-c", topicId: "polish-3-0", conceptId: "wyjasnij-znaczenie-ponizszych-wyrazow-wlasnymi-slowami",
+    section: "I", questionRef: "2013 HL Section I Q1(c)",
+    questionText: "Wyjaśnij znaczenie poniższych wyrazów własnymi słowami: odwaga (akapit 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "brak strachu, męstwo, śmiałość", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-i-1-d", topicId: "polish-3-0", conceptId: "wyjasnij-znaczenie-ponizszych-wyrazow-wlasnymi-slowami",
+    section: "I", questionRef: "2013 HL Section I Q1(d)",
+    questionText: "Wyjaśnij znaczenie poniższych wyrazów własnymi słowami: bierność (akapit 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "brak inicjatywy, obojętność, brak zaangażowania", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-i-1-e", topicId: "polish-3-0", conceptId: "wyjasnij-znaczenie-ponizszych-wyrazow-wlasnymi-slowami",
+    section: "I", questionRef: "2013 HL Section I Q1(e)",
+    questionText: "Wyjaśnij znaczenie poniższych wyrazów własnymi słowami: tęsknota (akapit 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "silne pragnienie czegoś, uczucie cierpienia wywołane utratą kogoś lub czegoś", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-i-2", topicId: "polish-3-0", conceptId: "jak-podrozowanie-zmienilo-dzisiejszym-swiecie-udziel",
+    section: "I", questionRef: "2013 HL Section I Q2",
+    questionText: "Jak podróżowanie zmieniło się w dzisiejszym świecie? Udziel odpowiedzi w mniej więcej pięciu zdaniach na podstawie przeczytanego tekstu.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "W dawnych czasach podróże były tylko dla odważnych zdobywców, gotowych na wszystko: „Poszukiwali przygody, okazji do wzbogacenia się i bez względu na motywację musieli brać pod uwagę trudy czy niebezpieczeństwa, szykować się nawet na śmierć” (akapit 4).", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "„Otwarcie granic oraz wprowadzenie tanich linii lotniczych miało nas dosłownie łączyć ze światem”, ale już wtedy „znaczenie podróży zmalało” (akapit 2).", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Dzisiaj odległości się skurczyły i wprawdzie – dzięki tanim liniom lotniczym – oswoiliśmy sobie świat, ale poszliśmy trochę za daleko, zamieniając go w swoisty turystyczny supermarket: „ […] można powiedzieć, że masowo zbliżyliśmy się do [świata] przede wszystkim jako klienci, nie jako jego kosmopolityczni obywatele” (akapit 2).", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-i-3-a", topicId: "polish-3-0", conceptId: "swiecie-zglobalizowanym-poddanym-cyfryzacji-bardzo-trudno",
+    section: "I", questionRef: "2013 HL Section I Q3(a)",
+    questionText: "„ […] W świecie zglobalizowanym i poddanym cyfryzacji […] bardzo trudno mieć […] coś, do czego inni nie mieliby równie łatwego dostępu” (akapit 7). Opierając się na tekście, wyjaśnij, dlaczego tak jest.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "„Coraz rzadziej udaje się być samodzielnym, niezależnym podróżnikiem” (akapit 5).", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "„Przygody, które [zbieramy] jak osobiste doznania, też są do siebie zadziwiająco podobne” (akapit 5).", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Nawet, jeśli zdaje nam się, że mamy coś, czego inni nie mają, jest to tylko złudzeniem. „A przynajmniej [pragniemy] wierzyć, że tak właśnie jest” (akapit 5). „ […] chodzimy utartymi ścieżkami” i „ [jesteśmy] nie mniej spętani komercyjnymi schematami” (akapit 5). „Do pewnego stopnia [my] także oddajemy się iluzji\" (akapit 5).", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-i-3-b", topicId: "polish-3-0", conceptId: "swiecie-zglobalizowanym-poddanym-cyfryzacji-bardzo-trudno",
+    section: "I", questionRef: "2013 HL Section I Q3(b)",
+    questionText: "„ […] W świecie zglobalizowanym i poddanym cyfryzacji […] bardzo trudno mieć […] coś, do czego inni nie mieliby równie łatwego dostępu” (akapit 7). Dlaczego autorka uważa, że „wrażenia i doznania” są kategoriami „szczególnej wagi” w dzisiejszych czasach? (akapit 7)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "chodzi o potrzebę budowania własnej, indywidualnej tożsamości, o naturalne pragnienie każdego człowieka, by być kimś wyjątkowym", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "osobiste doświadczenia (np. zdjęcia z niezwykłych miejsc lub opowieści o niepowtarzalnych przygodach), w przeciwieństwie do przedmiotów materialnych, które każdy może mieć, stają się walutą pomagającą budować status także w portalach społecznościowych.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-i-4", topicId: "polish-3-0", conceptId: "jakiej-podstawie-autorka-doszla-wniosku-akapicie",
+    section: "I", questionRef: "2013 HL Section I Q4",
+    questionText: "Na jakiej podstawie autorka tekstu doszła do wniosku w akapicie 8, że „znaleźliśmy się w erze zachwytu wszystkim, co nierealne”? Udziel odpowiedzi na podstawie tekstu.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "W internecie już się nie bywa, w internecie jest się cały czas. Internet i gry komputerowe zastępują wielu ludziom realne doświadczenia. Pochłonięci technologią nie angażują się oni we własne otoczenie i mogą tracić poczucie tego, co jest realne, a co nierealne. Bardziej zachwycają ich wirtualne efekty specjalne, niż np. piękny kwiat albo zachód słońca.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "„ […] z pasją [poruszamy] się między poziomami gier komputerowych, przedkładając komunikatory nad rozmowy, a retuszowane zdjęcia nad rzeczywiste obrazy. Częściej patrzymy na mobilne ekrany, niż rozglądamy się wokół” (akapit 8).", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-i-5-a", topicId: "polish-3-0", conceptId: "byc-moze-dzisiejsi-backpackerzy-ostatni-podroznicy",
+    section: "I", questionRef: "2013 HL Section I Q5(a)",
+    questionText: "„Być może dzisiejsi backpackerzy to ostatni podróżnicy mający kompleks Herodota – marzący o pierwszeństwie i dokonaniu autentycznego odkrycia” (akapit 8). Dlaczego w świetle przeczytanego tekstu można tak powiedzieć?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Zarówno backpackerzy jak i Herodot marzą o dokonaniu przełomowego odkrycia. „W opozycji do miłośników all-inclusive znajdują się backpackerzy – zwykle młodzi, samodzielni, idący przez świat własną ścieżką” (akapit 5).", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Jak kiedyś Herodot, backpackerzy rezygnują z wygód, poruszając się najprostszymi środkami transportu:„ […] wsiadają do najtańszych klas kolejowych, pchają się na dachy autobusów […]” (akapit 6)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "I tak jak Herodot, często opisują swoje „wyjątkowe” przygody na podróżnym blogu.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-i-5-b", topicId: "polish-3-0", conceptId: "byc-moze-dzisiejsi-backpackerzy-ostatni-podroznicy",
+    section: "I", questionRef: "2013 HL Section I Q5(b)",
+    questionText: "„Być może dzisiejsi backpackerzy to ostatni podróżnicy mający kompleks Herodota – marzący o pierwszeństwie i dokonaniu autentycznego odkrycia” (akapit 8). A jak jest naprawdę?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Backpackerzy myślą, że rezygnują z luksusów i uzależnień cywilizowanego świata, ale tak naprawdę zostają wmanipulowani w inne uzależnienia.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "„Coraz rzadziej udaje się być samodzielnym, niezależnym podróżnikiem[…]” (akapit 5).", marks: null },
+    { id: "r-3", kind: "point", verbatim: "„Przygody, które zbierają jak osobiste doznania, też są do siebie zadziwiająco podobne” (akapit 5).", marks: null },
+    { id: "r-4", kind: "point", verbatim: "„To podróżnicy innego typu, ale nie mniej spętani komercyjnymi schematami. Do pewnego stopnia oni także oddają się iluzji” (akapit 5).", marks: null },
+    { id: "r-5", kind: "point", verbatim: "„W rzeczywistości [podróżowanie z plecakiem] również podlega procedurom, w dużej mierze biznesowym\", a \"turysta otrzymuje iluzję szytą na miarę” (akapit 6).", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-i-6", topicId: "polish-3-0", conceptId: "trudno-sobie-wyobrazic-czym-swiat-moglby",
+    section: "I", questionRef: "2013 HL Section I Q6",
+    questionText: "„Trudno sobie wyobrazić, czym świat mógłby przyciągać cyfrowe dzieci […]” (akapit 8). W kilku zdaniach przedstaw swoje zdanie na ten temat.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "„Cyfrowe dzieci” (akapit 8), czyli współcześni ludzie uwikłani w nowoczesną technologię, można powiedzieć, że mają nadmiar dóbr materialnych, ale mimo to nie są zadowoleni.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Nawet podróże, (kiedyś „kojarzone z rozwojem osobistym” (akapit 1)) tak ich nie cieszą jak w przeszłości („podróże już nie kształcą” (tytuł), bowiem „okazały się biznesem oddalającym od rozumienia złożonej rzeczywistości” (akapit 2).", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Z tego poczucia zagubienia bierze się bunt: „Podróżowanie z plecakiem jest – przynajmniej w zamiarze – aktem rebelii” (akapit 6).", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Ludzie ci z jednej strony odczuwają przesyt dobrobytem („ […] celowo porzucają komfort, chcą uwolnić się od luksusów, uwierzyć, że potrafią być bez nich szczęśliwi” (akapit 6)), z drugiej jednak strony czegoś im brakuje („ […] oni także oddają się iluzji” (akapit 5)).", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Bardzo możliwe, że przesyt zbyt wygodnym życiem i nowoczesnymi technologiami, którego obecnie doświadczamy, kiedyś ponownie zawróci nas w kierunku bardziej naturalnych i prawdziwych doświadczeń. „W tych próbach można zobaczyć rodzaj antidotum na przesyt dobrobytem i jest w nim na pewno tęsknota za życiem bez zaawansowanego technologicznie otoczenia i skomplikowanych systemów obsługi rzeczywistości” (akapit 6).", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-ii-1", topicId: "polish-3-2", conceptId: "blyskawicznie-nauczylismy-uzywac-swiata-zas-doswiadczac",
+    section: "II", questionRef: "2013 HL Section II Q1",
+    questionText: "„Błyskawicznie nauczyliśmy się używać świata, nie zaś go doświadczać” (akapit 2) Używając około 100 słów, skomentuj powyższy cytat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Płynna wypowiedź na temat, przy użyciu około 100 słów", marks: 30, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “Jeszcze niedawno byliśmy spragnieni świata, a dziś tej ciekawości jest mniej, za to większe jest nastawienie na wygodną konsumpcję. Dziś masowo używamy świata jak wybredni i nieciekawi nowych smaków użytkownicy podróżniczego hipermarketu.”; “„Masowo zbliżyliśmy się do [świata] przede wszystkim jako klienci, nie jako jego kosmopolityczni obywatele” (akapit 2)”; “„Podróżowanie, które miało oznaczać poznawanie i zmianę sposobu myślenia, okazało się biznesem umacniającym stereotypy i oddalającym od rozumienia złożonej rzeczywistości” (akapit 2).”; “Ośrodki wypoczynkowe traktujemy jak jedyne cywilizowane przyczółki na obcym (dzikim i niebezpiecznym) terytorium. Lubimy mało płacić za słońce i nie interesujemy się tym, co się dzieje za płotem kurortu. Chętnie kupujemy przecenione wycieczki, nie wnikając za bardzo w istotę kraju, który odwiedzamy.”; “„Jako klienci zorganizowanego sektora usług poruszamy się korytarzami – precyzyjnie wytyczonymi i zaaranżowanymi na nasze potrzeby. O 'dotykaniu odmiennych kultur' ani 'spotkaniu z Innym' nie może być mowy” (akapit 3).”; “„Uczestnicy turnusów all-inclusive bywają nie tyle w Grecji, Turcji, Maroku czy Tunezji, ile w enklawach stworzonych na terytorium tych państw” (akapit 3)”; “„Kupując wycieczkę, wkraczamy w baśń o nicnierobieniu, nicniewidzeniu, nicniechceniu, i taka konsumencka klatka w zupełności nam wystarcza” (akapit 4).”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi - 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób - 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść - 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia - 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-iii-1", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2013 HL Section III Q1",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: „Człowiek wyrusza w świat w poszukiwaniu tego, czego mu brakuje, ale wraca do domu, by to odnaleźć” – George Moore (1852–1933), pisarz irlandzki",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “Wszędzie dobrze, ale w domu najlepiej.”; “Lubimy gdzieś wyjechać, ale lubimy także powracać.”; “Czasem trzeba objechać cały świat, żeby móc docenić własny dom.”; “Wszędzie dobrze, gdzie nas nie ma.”; “Lubimy szukać daleko (tzn. skomplikowanych rozwiązań), a nie dostrzegamy tego, co jest blisko (tzn. prostych rozwiązań).”; “Każda, nawet najdalsza podróż jest tak naprawdę tylko podróżą w głąb siebie.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi - 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób - 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść - 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia - 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2013 Higher Level — © State Examinations Commission.",
+    id: "pl-2013-hl-iii-2", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2013 HL Section III Q2",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: Słodko-gorzki smak pogoni za marzeniami",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “„Gdy bogowie chcą cię ukarać, spełniają twoje marzenia””; “Dlaczego warto sięgać po swoje marzenia?”; “Jeśli nie wiesz, czego tak naprawdę pożądasz, niczego nigdy nie osiągniesz.”; “Dlaczego niektórzy ludzie realizują swoje marzenia, a inni nie?”; “Czy trzeba wierzyć, że zasługuje się na osiągnięcie sukcesu, żeby go osiągnąć?”; “Czy należy poprzestawać na marzeniach, które wydają się osiągalne?”; “Co z przekraczaniem własnych granic?”; “Jak radzić sobie z przeszkodami na drodze do własnych marzeń?”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi - 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób - 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść - 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia - 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2012 Higher Level — © State Examinations Commission.",
+    id: "pl-2012-hl-i-1-a", topicId: "polish-3-0", conceptId: "zastap-podkreslone-slowo-synonimem-wyrazem-bliskoznacznym",
+    section: "I", questionRef: "2012 HL Section I Q1(a)",
+    questionText: "Zastąp podkreślone słowo synonimem (tj. wyrazem bliskoznacznym). „Syreny alarmowe zawyły.” (akapit 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":1,"options":["rozbrzmiały","wydały ostry, donośny, przeciągły dźwięk"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2012 Higher Level — © State Examinations Commission.",
+    id: "pl-2012-hl-i-1-b", topicId: "polish-3-0", conceptId: "zastap-podkreslone-slowo-synonimem-wyrazem-bliskoznacznym",
+    section: "I", questionRef: "2012 HL Section I Q1(b)",
+    questionText: "Zastąp podkreślone słowo synonimem (tj. wyrazem bliskoznacznym). „Kiedy zaczęliśmy chełpić się cudem polskiego boomu edukacyjnego.” (akapit 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":1,"options":["chwalić się","pysznić się","szczycić się"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2012 Higher Level — © State Examinations Commission.",
+    id: "pl-2012-hl-i-1-c", topicId: "polish-3-0", conceptId: "zastap-podkreslone-slowo-synonimem-wyrazem-bliskoznacznym",
+    section: "I", questionRef: "2012 HL Section I Q1(c)",
+    questionText: "Zastąp podkreślone słowo synonimem (tj. wyrazem bliskoznacznym). „Liczba studentów wzrosła z mizernych 350 tysięcy.” (akapit 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":1,"options":["zaledwie","marnych"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2012 Higher Level — © State Examinations Commission.",
+    id: "pl-2012-hl-i-1-d", topicId: "polish-3-0", conceptId: "zastap-podkreslone-slowo-synonimem-wyrazem-bliskoznacznym",
+    section: "I", questionRef: "2012 HL Section I Q1(d)",
+    questionText: "Zastąp podkreślone słowo synonimem (tj. wyrazem bliskoznacznym). „Coraz powszechniej twierdzi się.” (akapit 9)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":1,"options":["częściej","ogólniej"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2012 Higher Level — © State Examinations Commission.",
+    id: "pl-2012-hl-i-1-e", topicId: "polish-3-0", conceptId: "zastap-podkreslone-slowo-synonimem-wyrazem-bliskoznacznym",
+    section: "I", questionRef: "2012 HL Section I Q1(e)",
+    questionText: "Zastąp podkreślone słowo synonimem (tj. wyrazem bliskoznacznym). „Po odnotowanej zapaści zaczęły odżywać biblioteki.” (akapit 9)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":1,"options":["zły, krytyczny stan czegoś","załamanie"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2012 Higher Level — © State Examinations Commission.",
+    id: "pl-2012-hl-i-2", topicId: "polish-3-0", conceptId: "wygodne-mity-odnosnie-czytelnictwa-polsce-obalane",
+    section: "I", questionRef: "2012 HL Section I Q2",
+    questionText: "Jakie wygodne mity odnośnie do czytelnictwa w Polsce są obalane przez wyniki badań Biblioteki Narodowej? Podaj trzy przykłady.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Brak czasu nie jest głównym powodem nieczytania (np. emeryci i renciści). (akapit 5)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "2. Internet nie jest winny załamaniu czytelnictwa („tylko” 42 procent internautów nie miało od roku książki w ręku). (akapit 5)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. Sam internet też w sumie nie pomaga w czytaniu książek (jedna trzecia internautów czyta wyłącznie krótsze teksty). (akapit 5)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2012 Higher Level — © State Examinations Commission.",
+    id: "pl-2012-hl-i-3", topicId: "polish-3-0", conceptId: "dlaczego-autor-kwestionuje-sukces-polskiego-rynku",
+    section: "I", questionRef: "2012 HL Section I Q3",
+    questionText: "Dlaczego autor kwestionuje sukces polskiego rynku wydawniczego?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a) Choć obecnie liczbowo wydawanych jest wiele tytułów, ich nakłady nie są zbyt wysokie. (akapit 3)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "b) Liczbę wydanych tytułów sztucznie zwiększają publikacje naukowe służące budowaniu naukowych karier. (akapit 3)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2012 Higher Level — © State Examinations Commission.",
+    id: "pl-2012-hl-i-4-a", topicId: "polish-3-0", conceptId: "gaszczu-ponurej-statystyki-przebija-jednak-slabe",
+    section: "I", questionRef: "2012 HL Section I Q4(a)",
+    questionText: "„Z gąszczu ponurej statystyki przebija jednak słabe światełko.” (akapit 9) Czym według autora jest to słabe światełko?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ponowny rozwój bibliotek: „zaczęły odżywać biblioteki” i „ich popularność rośnie” (akapit 9)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2012 Higher Level — © State Examinations Commission.",
+    id: "pl-2012-hl-i-4-b", topicId: "polish-3-0", conceptId: "gaszczu-ponurej-statystyki-przebija-jednak-slabe",
+    section: "I", questionRef: "2012 HL Section I Q4(b)",
+    questionText: "„Z gąszczu ponurej statystyki przebija jednak słabe światełko.” (akapit 9) Jaką rolę przypisuje mu on w kształtowaniu ogólnej kultury w Polsce?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ponieważ biblioteki to główne miejsce kontaktu z książką dla 30 procent czytelników, coraz głośniej mówi się, że ich rozwój jest nie tylko ważnym, ale wręcz niezbędnym warunkiem ożywienia czytelnictwa i kultury w ogóle. (akapit 9)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2012 Higher Level — © State Examinations Commission.",
+    id: "pl-2012-hl-i-5", topicId: "polish-3-0", conceptId: "swietle-przedstawionego-artykulu-dlaczego-polska-nazwana",
+    section: "I", questionRef: "2012 HL Section I Q5",
+    questionText: "W świetle przedstawionego artykułu, dlaczego Polska nazwana jest „krajem Koziołka Matołka”? Podaj dwa powody.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. bardzo duża popularność tej książki w Polsce: „Przygody Koziołka Matołka” Kornela Makuszyńskiego to jedna z najczęściej wydawanych pozycji w Polsce w okresie powojennym (akapit 3)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "2. nawiązanie do zapaści czytelniczej w Polsce: poprzez nieczytanie Polacy upodobniają się do poziomu intelektualnego Koziołka Matołka (akapity 1, 2, 4, 8 )", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2012 Higher Level — © State Examinations Commission.",
+    id: "pl-2012-hl-i-6", topicId: "polish-3-0", conceptId: "dotychczas-ksiazka-byla-kluczowym-nosnikiem-wiedzy",
+    section: "I", questionRef: "2012 HL Section I Q6",
+    questionText: "„Dotychczas [książka] była […] kluczowym nośnikiem wiedzy, symbolem demokratyzacji i powszechności. Teraz najwyraźniej staje się częścią kultury wysokiej, dystynkcją oznaczającą przynależność do kulturalnej i społecznej elity.” (akapit 6) Co autor powyższej wypowiedzi ma na myśli i jak postrzega on te zmiany w Polsce?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Wcześniej mogliśmy się uczyć prawie wyłącznie z książek, które były symbolem wiedzy i powszechności, tzn. każdy miał do nich dostęp. Miało to pozytywny wpływ na demokratyzację społeczeństw. (akapit 6)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Autor uważa, że jesteśmy w trakcie transformacji kulturowej, w wyniku której zmienia się miejsce i rola książki „w przestrzeni społecznej”, co z kolei prowadzi do powstania w naszym kraju kulturalnej elity społecznej. (akapit 6)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Dużą rolę odgrywają w tym procesie „wzorce kultury popularnej, zwłaszcza w wydaniu telewizyjno-serialowym, w której nie ma ani czasu, ani miejsca na książkę.” (akapit 6)", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Proces ten nie dotyczy jedynie książki, lecz również innych form uczestnictwa w kulturze (np. kino). (akapit 7)", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Polskie społeczeństwo podzieliło się na tych, którym telewizor z jego ofertą w zasadzie wystarcza do zaspokojenia potrzeb informacyjno-kulturalnch, oraz na tych, którzy nie rezygnują z korzystania z różnych form kultury. (akapit 7)", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Autor jest zaniepokojony tymi zmianami w Polsce i pyta: „Czyżby więc należało ogłosić zmierzch kultury humanistycznej i nadejście czasów barbarzyństwa?” (akapit 5)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2012 Higher Level — © State Examinations Commission.",
+    id: "pl-2012-hl-ii-1", topicId: "polish-3-2", conceptId: "oznacza-rosnacy-spadek-czytelnictwa-dla-demokracji",
+    section: "II", questionRef: "2012 HL Section II Q1",
+    questionText: "„Co oznacza rosnący spadek czytelnictwa dla demokracji, kultury i szans dalszego rozwoju?” (akapit 10) Odpowiedz na powyższe pytanie, przedstawiając swoją opinię. (około 100 słów)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Płynna wypowiedź na temat, przy użyciu około 100 słów", marks: 30, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy :” Its points for this task, as examples, not a checklist: “Należałoby oddzielić czytanie beletrystyki od czytania literatury fachowej.”; “Wolny rynek w Polsce przyniósł ze sobą zalew nowych możliwości, ale też nowych wartości, celów i zainteresowań; zmieniła się telewizja oraz podejście do kul tury, dotychczas głównie finansowanej przez państwo; ludzie zaczęli więcej pracować, ale i bardziej się spieszyć; pojawił się internet; gdzie w tym wszystkim znaleźć miejsce na książkę i czytanie?”; “Czy i jak kultura obroni się, jesli ludzie przestaną z niej korzystać?”; “W jakim kierunku pójdzie rozwój społeczeństwa?”; “Czy rzeczywiście istnieje realne zagrożenie dla kultury i społeczeństwa? Przecież postęp cywilizacyjny idzie naprzód, przybywa specjalistów w różnych dziedzinach, ludzie nadal się kształcą, osiągają wyżyny intelektualne, jedynie może zmienił się sposób docierania do informacji.”; “Może tak naprawdę jest to fałszywy alarm, a proces, którego jesteśmy świadkami jest naturalnym krokiem w rozwoju naszej cywilizacji; zamiast obawiać się zmian, warto przeanalizować nasze indywidualne podejście do tej sprawy: w jaki sposób my sami moglibyśmy w naszym życiu zwiększyć kontakt z Kulturą przez duże K?”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i płynny przekazać treść – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2012 Higher Level — © State Examinations Commission.",
+    id: "pl-2012-hl-iii-1", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-nastepujacych-tematow-uzywajac",
+    section: "III", questionRef: "2012 HL Section III Q1",
+    questionText: "Napisz wypracowanie na jeden z następujących tematów, używając około 300 słów: „Czytaj, by żyć!” – Gustave Flaubert",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy :” Its points for this task, as examples, not a checklist: “Czytanie jest ważne, potrzebne niektórym jak tlen do życia.”; “Książki mogą informować, inspirować, wychowywać i kształtować ludzkie postawy, być rozrywką i odpoczynkiem od codzienności, przenosić nas w inne wymiary.”; “Znacząca rola rodziców w pierwszych kontaktach dziecka z książką, kształtująca jego nawyk czytania na całe życie.”; “Czy ten, kto nie czyta beletrystyki, jest intelektualnym leniem?”; “Co dają nam książki, a czego brakuje nam w innych formach przekazu, takich jak telewizja, kino czy teatr?”; “Czy audiobook i książka elektroniczna wyprą swoją starszą drukowaną siostrę?”; “Czy życie bez czytania jest możliwe?”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2012 Higher Level — © State Examinations Commission.",
+    id: "pl-2012-hl-iii-2", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-nastepujacych-tematow-uzywajac",
+    section: "III", questionRef: "2012 HL Section III Q2",
+    questionText: "Napisz wypracowanie na jeden z następujących tematów, używając około 300 słów: We współczesnym społeczeństwie wszystko kręci się wokół „tu i teraz”.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy :” Its points for this task, as examples, not a checklist: “maksymalne zużycie zasobów naturalnych na zaspokojenie potrzeb współczesnych pokoleń”; “zanieczyszczenie środowiska naturalnego, czego negatywne skutki odczują dopiero przyszłe pokolenia”; “brak należytego szacunku dla wieku i ludzi starszych”; “lekceważenie historii”; “społeczeństwo „instant”:”; “a) zachcianki dzieci zaspokajane są przez większość rodziców natychmiastowo”; “b) dorośli są pod społeczną presją szybkiego dorobienia się”; “c) tempo pracy i nakręcanie produktywności kosztem zdrowia”; “d) spożywczy przemysł „fast foodów””; “e) automatyzacja naszej rzeczywistości w celu zaoszczędzenia czasu i ułatwienia życia, która często przynosi odwrotne skutki”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2011 Higher Level — © State Examinations Commission.",
+    id: "pl-2011-hl-i-1-a", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-bez-uzywania-sformulowan",
+    section: "I", questionRef: "2011 HL Section I Q1(a)",
+    questionText: "Wyjaśnij własnymi słowami (tj. bez używania sformułowań zawartych w tekście) znaczenie podanych wyrażeń i sformułowań. „pal sześć” (tytuł)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "synonimy: mniejsza o to, wszystko jedno, niech tam, do czorta, do diabła, do diaska, do jasnej ciasnej, psiakość, do licha, furda", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme notes: “przykład zdania: „Pal sześć! Najwyżej przemoczę nogi.””." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2011 Higher Level — © State Examinations Commission.",
+    id: "pl-2011-hl-i-1-b", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-bez-uzywania-sformulowan",
+    section: "I", questionRef: "2011 HL Section I Q1(b)",
+    questionText: "Wyjaśnij własnymi słowami (tj. bez używania sformułowań zawartych w tekście) znaczenie podanych wyrażeń i sformułowań. „pełnokrwista postać” (akapit 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "o postaci: pełna wyrazu, temperamentu", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme notes: “(o koniu: będący czystej rasy)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2011 Higher Level — © State Examinations Commission.",
+    id: "pl-2011-hl-i-1-c", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-bez-uzywania-sformulowan",
+    section: "I", questionRef: "2011 HL Section I Q1(c)",
+    questionText: "Wyjaśnij własnymi słowami (tj. bez używania sformułowań zawartych w tekście) znaczenie podanych wyrażeń i sformułowań. „zaklinać się” (akapit 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "synonimy: przyrzekać, przysięgać, ślubować, zarzekać się", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2011 Higher Level — © State Examinations Commission.",
+    id: "pl-2011-hl-i-1-d", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-bez-uzywania-sformulowan",
+    section: "I", questionRef: "2011 HL Section I Q1(d)",
+    questionText: "Wyjaśnij własnymi słowami (tj. bez używania sformułowań zawartych w tekście) znaczenie podanych wyrażeń i sformułowań. „nawróceni na niepalenie palacze” (akapit 7)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "palacze, którzy zrezygnowali z palenia", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2011 Higher Level — © State Examinations Commission.",
+    id: "pl-2011-hl-i-1-e", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-bez-uzywania-sformulowan",
+    section: "I", questionRef: "2011 HL Section I Q1(e)",
+    questionText: "Wyjaśnij własnymi słowami (tj. bez używania sformułowań zawartych w tekście) znaczenie podanych wyrażeń i sformułowań. „przerzucić się na coś” (akapit 8)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "zamienić coś na coś, np. przerzucić się z kawy na herbatę", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2011 Higher Level — © State Examinations Commission.",
+    id: "pl-2011-hl-i-2", topicId: "polish-3-0", conceptId: "sprawcy-ktory-zarzacy-papieros-reku-mozna",
+    section: "I", questionRef: "2011 HL Section I Q2",
+    questionText: "„O sprawcy, który ma żarzący się papieros w ręku, można jak najbardziej powiedzieć, że został złapany na gorącym uczynku.” (akapit 2) Wyjaśnij, na czym polega humor tego zdania.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Złapać kogoś na gorącym uczynku znaczy przyłapać kogoś w momencie popełnianego wykroczenia lub przestępstwa (w tym przypadku, palenia w miejscu niedozwolonym). Ponieważ dodatkowo żarzący papieros jest już sam w sobie gorący, zatem uczynek ten jest podwójnie gorący. Humor tego zdania polega na grze słów.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2011 Higher Level — © State Examinations Commission.",
+    id: "pl-2011-hl-i-3", topicId: "polish-3-0", conceptId: "jakiej-podstawie-autor-twierdzi-lokale-polsce",
+    section: "I", questionRef: "2011 HL Section I Q3",
+    questionText: "Na jakiej podstawie autor tekstu twierdzi, że lokale w Polsce mogą mieć więcej klientów dzięki nowej ustawie?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "wiele osób nie lubi siedzieć w dymie, więc gdy dymu będzie mniej, przyjdzie więcej ludzi (akapit 7)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "do lokalu ludzie głównie chodzą, żeby spotkać się z innymi ludźmi, więc nowa ustawa nie zniechęci ich do tych spotkań, a może nawet zachęcić (akapit 7)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "następną grupą klientów będą nawróceni na niepalenie palacze (akapit 7)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2011 Higher Level — © State Examinations Commission.",
+    id: "pl-2011-hl-i-4", topicId: "polish-3-0", conceptId: "wedlug-przeczytanego-wady-czy-ciemne-strony",
+    section: "I", questionRef: "2011 HL Section I Q4",
+    questionText: "Według przeczytanego tekstu, jakie są wady czy ciemne strony zakazu palenia w miejscach publicznych? Podaj pięć przykładów.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. możliwość bycia ukaranym mandatem w wysokości 500 złotych (akapit 2)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "2. wychodzenie na przerwy i marnowanie cennego czasu pracy (akapit 6)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. zagrożenie pożarowe (akapit 6)", marks: null },
+    { id: "r-4", kind: "point", verbatim: "4. uniemożliwienie inspirujących spotkań w oparach dymu tym, którzy lubią takie spotkania (akapit 10)", marks: null },
+    { id: "r-5", kind: "point", verbatim: "5. pozbawienie ludzi prawa do tego, by nie byli idealni (akapit 11)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2011 Higher Level — © State Examinations Commission.",
+    id: "pl-2011-hl-i-5", topicId: "polish-3-0", conceptId: "opierajac-powyzszym-tekscie-napisz-wlasnymi-slowami",
+    section: "I", questionRef: "2011 HL Section I Q5",
+    questionText: "Opierając się na powyższym tekście, napisz własnymi słowami, jak historia kina odzwierciedla zmianę nastawienia opinii publicznej do palaczy i palenia.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a) W latach powojennych palenie było modne, a nawet dobrze widziane. Także na ekranie papieros był ważnym atrybutem, dodającym protagonistom szlifu i charakteru. Wręcz nie do pomyślenia było, żeby bohater filmu w którymś momencie nie zapalił papierosa, co miało uwypuklać jego postać i odzwierciedlać jego wewnętrzne zmagania. Z latami palenie stawało się coraz mniej modne, a nawet źle widziane. Kino z czasem również to podchwyciło i promuje teraz zdrowy tryb życia, znacznie ograniczając sceny z papierosem i dymem tytoniowym, a nawet ich unikając. (akapit 3)", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "b) Dowodem na taki stan rzeczy są statystyki: w 2005 r. odnotowano 4000 scen filmowych z papierosem, w 2009 r. było tylko 1935 takich scen (akapit 4)", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2011 Higher Level — © State Examinations Commission.",
+    id: "pl-2011-hl-i-6", topicId: "polish-3-0", conceptId: "palacze-czasach-antynikotynowego-terroru-ludzie-ekscentryczni",
+    section: "I", questionRef: "2011 HL Section I Q6",
+    questionText: "„[Palacze] w czasach antynikotynowego terroru [to] ludzie ekscentryczni, którzy nie poddali się modzie, [a] zadymiona atmosfera sprzyja twórczym rozmowom.” Czy zgadzasz się, czy nie zgadzasz ze stwierdzeniem w akapicie 10 dotyczącym typu osobowości palacza? Odpowiedź uzasadnij.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "NIE ZGADZAM SIĘ: nie są to ludzie ekscentryczni, ale raczej ludzie bez wyobraźni i inteligencji", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "nie chodzi o to, że nie poddali się modzie, tylko o to, że nie mogą przestać palić, bo ulegają nałogowi", marks: null },
+    { id: "r-3", kind: "point", verbatim: "nie nazwałbym naszych czasów antynikotynowym terrorem, a raczej erą zwiększonej świadomości i nowych praw dla niepalących", marks: null },
+    { id: "r-4", kind: "point", verbatim: "zadymiona atmosfera sprzyja nie twórczym rozmowom, ale bólowi głowy, a twórczym rozmowom sprzyja np. spotykanie się z ciekawymi ludźmi", marks: null },
+    { id: "r-5", kind: "point", verbatim: "ZGADZAM SIĘ: rzeczywiście palacze to ludzie godni podziwu i z charakterem, którzy mimo wielkiej presji społecznej i tego, że są coraz mniej popularni, zostają przy swoim zdaniu i nadal palą", marks: null },
+    { id: "r-6", kind: "point", verbatim: "jest cos tajemniczego i magicznego w dymie z papierosa, czego nie da się zastąpić niczym innym, i najlepsze rozmowy toczą się właśnie w zadymionej atmosferze", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2011 Higher Level — © State Examinations Commission.",
+    id: "pl-2011-hl-ii-1", topicId: "polish-3-2", conceptId: "ten-zakaz-pozbawia-ludzi-prawa-tego",
+    section: "II", questionRef: "2011 HL Section II Q1",
+    questionText: "„Ten zakaz pozbawia ludzi prawa do tego, by nie byli idealni. A przecież do knajpy chodzi się, by grzeszyć, pogrążać do woli w nałogach i złych nawykach.” (akapit 11) Używając około 100 słów, skomentuj powyższy cytat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Płynna wypowiedź na temat, przy użyciu około 100 słów", marks: 30, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Następujące elementy będą brane pod uwagę przy przyznawaniu punktów w części II i III:” Its points for this task, as examples, not a checklist: “atmosfera pubu sprzyja odreagowaniu stresu”; “sprzyja też oderwaniu się, a nawet ucieczce od codzienności”; “knajpa to miejsce, gdzie tradycyjnie można było pofolgować swoim nałogom”; “można tam było na chwilę stać się kimś innym”; “co się teraz stanie z nagromadzonymi frustracjami i napięciami, jeśli nie można ich rozładować w pubie przy papierosie?”; “może nadszedł czas, żeby zacząć szukać nowych sposobów na rozładowanie napięć i stresów, jak np. jogging czy pływanie?”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2011 Higher Level — © State Examinations Commission.",
+    id: "pl-2011-hl-iii-1", topicId: "polish-3-2", conceptId: "uzywajac-okolo-300-slow-napisz-wypracowanie",
+    section: "III", questionRef: "2011 HL Section III Q1",
+    questionText: "Używając około 300 słów, napisz wypracowanie na jeden z następujących tematów: „Moda na zdrowy tryb życia – wielka przesada czy nakaz naszych czasów?”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Następujące elementy będą brane pod uwagę przy przyznawaniu punktów w części II i III:” Its points for this task, as examples, not a checklist: “wzrosła świadomość oraz poziom życia i ludzie poprzez prowadzenie zdrowego trybu życia starają się w zdrowiu dożyć późnego wieku”; “zwiększenie zatrucia środowiska powoduje wzrost popytu na żywność ekologiczną”; “naturalne kuracje i wellness stały się nie tylko modnym spędzaniem czasu, ale i coraz bardziej popularnym sposobem zapobiegania chorobom”; “ponieważ przesada w niczym nie popłaca, warto i tu zachować zdrowy rozsądek”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2011 Higher Level — © State Examinations Commission.",
+    id: "pl-2011-hl-iii-2", topicId: "polish-3-2", conceptId: "uzywajac-okolo-300-slow-napisz-wypracowanie",
+    section: "III", questionRef: "2011 HL Section III Q2",
+    questionText: "Używając około 300 słów, napisz wypracowanie na jeden z następujących tematów: „Ludzie są zwykle na tyle szczęśliwi, na ile sami sobie postanowią.” – Abraham Lincoln (16. prezydent Stanów Zjednoczonych: 1809-1865)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Następujące elementy będą brane pod uwagę przy przyznawaniu punktów w części II i III:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-i-1-a", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-bez-uzywania-sformulowan",
+    section: "I", questionRef: "2010 HL Section I Q1(a)",
+    questionText: "Wyjaśnij własnymi słowami (tj. bez używania sformułowań zawartych w tekście) znaczenie wyrażenia „kozioł ofiarny” (akapit 3)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(fraz.) kozioł ofiarny „ktoś, na kogo zrzuca się całą odpowiedzialność za coś”", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Mechanizm kozła ofiarnego polega na tym, iż grupa społeczna w momencie kryzysu czy zagrożenia, by powrócić do stanu utraconej równowagi, obiera sobie ofiarę, która staje się obiektem zbiorowej agresji całej grupy.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-i-1-b", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-bez-uzywania-sformulowan",
+    section: "I", questionRef: "2010 HL Section I Q1(b)",
+    questionText: "Wyjaśnij własnymi słowami (tj. bez używania sformułowań zawartych w tekście) na czym polega efekt przemieszczania się agresji (akapit 6)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Efekt przemieszczania się agresji polega na tym, że ofiara agresji (np. dziecko karane przez zbyt surowych rodziców) wyładowuje swoją złość na kimś słabszym od siebie (młodszym koledze, bracie albo zwierzęciu domowym), często niemającym związku z daną sprawą.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-i-2", topicId: "polish-3-0", conceptId: "opierajac-powyzszym-tekscie-napisz-wlasnymi-slowami",
+    section: "I", questionRef: "2010 HL Section I Q2",
+    questionText: "Opierając się na powyższym tekście, napisz własnymi słowami, co to jest agresja i jakie są jej przyczyny. Udziel odpowiedzi w mniej więcej pięciu zdaniach.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Agresja to zachowanie, którego podłożem jest zwykle gniew lub frustracja znajdujące w ten sposób swoje ujście. Psychologowie wyróżniają rożne formy agresji, np. z jednej strony, pojedynczą lub zbiorową, z drugiej, fizyczną, werbalną i niewerbalną. Jako przyczyny agresji wymienia się niezaspokojone potrzeby w domu rodzinnym, w szkole lub w grupie rówieśników. Dodaje się, że również środki masowego przekazu mogą wzmagać przemoc i agresję wśród młodzieży. Ogólnie mówiąc, zjawisko to nie jest do końca wyjaśnione, choć agresja wśród młodych ludzi ciągle się nasila, a wiele przypadków jest zatajanych ze strachu przed odwetem.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-i-3", topicId: "polish-3-0", conceptId: "jakich-rad-podstawie-przeczytanego-udzielilbys-rodzicom",
+    section: "I", questionRef: "2010 HL Section I Q3",
+    questionText: "Jakich rad – na podstawie przeczytanego tekstu – udzieliłbyś rodzicom czy nauczycielom, żeby ograniczyć agresję wśród młodzieży? Podaj trzy przykłady.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "szczera rozmowa z dzieckiem o jego potrzebach w domu i w szkole (akapit 5)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme notes: “(5 pkt za trzy przykłady, 4 pkt za dwa, itd.)”." },
+    { id: "r-2", kind: "point", verbatim: "niestosowanie surowych kar (akapit 6)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "położenie większego nacisku w szkole na funkcję wychowawczą i opiekuńczą (akapit 7)", marks: null },
+    { id: "r-4", kind: "point", verbatim: "wyczulenie klasy przez wychowawców na możliwość występowania tego zjawiska i odpowiednie reakcje ze strony uczniów (akapit 9)", marks: null },
+    { id: "r-5", kind: "point", verbatim: "nauczenie dzieci tolerancji i poszanowania drugiego człowieka (akapit 10)", marks: null },
+    { id: "r-6", kind: "point", verbatim: "uczenie młodych ludzi panowania nad emocjami i nawiązywania przyjaznych kontaktów z rówieśnikami (akapit 10)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-i-4", topicId: "polish-3-0", conceptId: "czy-zgadzasz-stwierdzeniem-akapicie-srodki-masowego",
+    section: "I", questionRef: "2010 HL Section I Q4",
+    questionText: "Czy zgadzasz się ze stwierdzeniem w akapicie 5, że środki masowego przekazu mogą wzmagać przemoc wśród uczniów? Odpowiedź uzasadnij.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tak, całkowicie zgadzam się z tą opinią. Środki masowego przekazu mają duże znaczenie dla kształtowania zachowań społecznych. Do takich, które swoim agresywnym charakterem mogą negatywnie wpływać na zachowania młodzieży, można zaliczyć: telewizję, kino, prasę, blogi komputerowe, gry komputerowe.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints two answers, either one, joined by “LUB”." },
+    { id: "r-2", kind: "point", verbatim: "Nie zgadzam się z tą opinią. Uważam, że ten argument jest często nadużywany. Powiedziałbym, że, po pierwsze, jeśli ktoś ma mocny kręgosłup moralny, oglądanie agresywnych filmów na pewno go nie zmieni. Po drugie – moim zdaniem – środki masowego przekazu mogą wręcz zapobiegać agresywnym zachowaniom poprzez umożliwienie ludziom wyżycia się, np. w grach komputerowych.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-i-5", topicId: "polish-3-0", conceptId: "rozne-bywaja-przyczyny-takiego-przesladowania-najczestsza",
+    section: "I", questionRef: "2010 HL Section I Q5",
+    questionText: "„Różne bywają przyczyny takiego prześladowania, a najczęstszą pozostaje jakaś odmienność.” (akapit 3) Dlaczego według ciebie czyjaś odmienność może wywoływać agresję u innych? Udziel odpowiedzi podając trzy powody.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme pays by how many reasons are given, in its own words: “(5 pkt za trzy powody, 4 pkt za dwa, 3 pkt za jeden )”. Its lead-in: “Inność zawsze wzbudza zainteresowanie, ale staje się to zjawiskiem niepokojącym, gdy zaczyna wzbudzać agresję. Można wymienić kilka przyczyn takiego zachowania:”", group: {"claimMax":3,"perOption":3,"options":["zazdrość,","pokaz siły,","chęć zaimponowania rówieśnikom,","chęć pokazania, ze jest się kimś lepszym; kompleks wyższości,","chęć wyżycia się na kimś,","chęć kontrolowania kogoś,","odreagowanie za niesłusznie doświadczone kary."],"perOptionSteps":[3,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-i-6", topicId: "polish-3-0", conceptId: "chodzi-dziecko-zachowywalo-poprawnie-dlatego-boi",
+    section: "I", questionRef: "2010 HL Section I Q6",
+    questionText: "„Chodzi o to, by dziecko zachowywało się poprawnie nie dlatego, że boi się kary, ale dlatego, że tak podpowiada mu jego wewnętrzny system wartości.” (akapit 10) Twoim zdaniem, jaka jest różnica pomiędzy poprawnym zachowaniem pod wpływem strachu, a poprawnym zachowaniem wynikającym z czyjegoś systemu wartości?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dziecko, które boi się kary, nie rozumie, dlaczego ma się dobrze zachowywać. Strach przed karą może mu zaciemnić obraz sytuacji i utrudnić prawidłowe postępowanie, ponieważ strach nigdy nie jest dobrą motywacją.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Dziecko, które zachowuje się poprawnie, bo tak podpowiada mu jego wewnętrzny system wartości, ma nie tylko szansę podejmować bardziej świadome i precyzyjne decyzje, ale także, działając w zgodzie z samym sobą, może nabrać większego zaufania do siebie i przez to jeszcze umocnić się w swoim systemie wartości.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Pierwsze działa z pozycji strachu i niewoli, drugie – z pozycji wewnętrznej wolności.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Pierwsze, w przyszłości będzie zawsze potrzebowało do działania czyjejś opinii albo bodźca strachu, drugie – to z silniejszym kośćcem moralnym – będzie potrafiło samodzielnie zachować się odpowiednio w każdej sytuacji.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-ii-1", topicId: "polish-3-2", conceptId: "dotkliwosc-agresji-slownej-bez-uzycia-slow",
+    section: "II", questionRef: "2010 HL Section II Q1",
+    questionText: "„Dotkliwość agresji słownej i bez użycia słów jest często większa niż fizycznej, bowiem narażając na upokorzenie i ośmieszenie osobę będącą przedmiotem agresji, rani ona jej godność.” (akapit 3) Używając około 100 słów, skomentuj powyższy cytat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Płynna wypowiedź na temat, przy użyciu około 100 słów", marks: 30, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Uwaga: Następujące elementy będą brane pod uwagę przy przyznawaniu punktów w części II i III:” Its model for this task, as an example, not a checklist: “Jak najbardziej zgadzam się z tym stwierdzeniem, chodzi tu bowiem nie o ranę fizyczną, ale duchową. W przypadku agresji fizycznej z czasem rany mają szansę zagoić się bez śladu. W przypadku agresji werbalnej i niewerbalnej agresor rani godność i dumę swojej ofiary, które są niepodważalnymi cechami każdego człowieka i których rany najtrudniej wyleczyć.” “Agresja niewerbalna ma jeszcze jedną cechę, a mianowicie, często jej ani nie widać, ani nie słychać, a jednak ma miejsce. Jest ją trudno udowodnić. Przenośnie mówi się wtedy o takiej sytuacji, że ktoś „wypił krew, ale śladu nie zostawił”.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-iii-1", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2010 HL Section III Q1",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: „Panować nad sobą – to najwyższa władza.”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Uwaga: Następujące elementy będą brane pod uwagę przy przyznawaniu punktów w części II i III:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-iii-2", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2010 HL Section III Q2",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: Nikt nie jest wyspą.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Uwaga: Następujące elementy będą brane pod uwagę przy przyznawaniu punktów w części II i III:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
 ];
