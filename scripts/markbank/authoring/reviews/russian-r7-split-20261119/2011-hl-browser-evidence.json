@@ -1,0 +1,193 @@
+{
+  "checkedAt": "2026-11-19T11:56:13.491269+00:00",
+  "captureMethod": "Native Chrome accessibility and screenshots; real SessionScreen in isolated local review harness; no student progress saved.",
+  "cases": [
+    {
+      "id": "ru-2011-hl-c2",
+      "width": 390,
+      "theme": "light",
+      "key": "c2-390-light",
+      "checkedAt": "2026-11-19T11:47:27.999Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2",
+      "width": 1120,
+      "theme": "light",
+      "key": "c2-1120-light",
+      "checkedAt": "2026-11-19T11:47:31.915Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2",
+      "width": 390,
+      "theme": "dark",
+      "key": "c2-390-dark",
+      "checkedAt": "2026-11-19T11:47:35.840Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2",
+      "width": 1120,
+      "theme": "dark",
+      "key": "c2-1120-dark",
+      "checkedAt": "2026-11-19T11:47:39.801Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2-2",
+      "width": 390,
+      "theme": "light",
+      "key": "c2-2-390-light",
+      "checkedAt": "2026-11-19T11:47:54.783Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2-2",
+      "width": 390,
+      "theme": "dark",
+      "key": "c2-2-390-dark",
+      "checkedAt": "2026-11-19T11:47:58.604Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2-2",
+      "width": 1120,
+      "theme": "light",
+      "key": "c2-2-1120-light",
+      "checkedAt": "2026-11-19T11:48:02.051Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2-2",
+      "width": 1120,
+      "theme": "dark",
+      "key": "c2-2-1120-dark",
+      "checkedAt": "2026-11-19T11:48:05.919Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2-3",
+      "width": 390,
+      "theme": "light",
+      "key": "c2-3-390-light",
+      "checkedAt": "2026-11-19T11:48:21.209Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2-3",
+      "width": 390,
+      "theme": "dark",
+      "key": "c2-3-390-dark",
+      "checkedAt": "2026-11-19T11:48:24.778Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2-3",
+      "width": 1120,
+      "theme": "light",
+      "key": "c2-3-1120-light",
+      "checkedAt": "2026-11-19T11:48:28.587Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2-3",
+      "width": 1120,
+      "theme": "dark",
+      "key": "c2-3-1120-dark",
+      "checkedAt": "2026-11-19T11:48:32.681Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2-4",
+      "width": 390,
+      "theme": "light",
+      "key": "c2-4-390-light",
+      "checkedAt": "2026-11-19T11:48:47.503Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2-4",
+      "width": 390,
+      "theme": "dark",
+      "key": "c2-4-390-dark",
+      "checkedAt": "2026-11-19T11:48:51.397Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2-4",
+      "width": 1120,
+      "theme": "light",
+      "key": "c2-4-1120-light",
+      "checkedAt": "2026-11-19T11:48:55.149Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2011-hl-c2-4",
+      "width": 1120,
+      "theme": "dark",
+      "key": "c2-4-1120-dark",
+      "checkedAt": "2026-11-19T11:48:58.649Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2018-ol-la1",
+      "width": 390,
+      "theme": "light",
+      "key": "2018-la1-390-light",
+      "checkedAt": "2026-11-19T11:49:11.352Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2018-ol-la1",
+      "width": 390,
+      "theme": "dark",
+      "key": "2018-la1-390-dark",
+      "checkedAt": "2026-11-19T11:49:14.318Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2018-ol-la1",
+      "width": 1120,
+      "theme": "light",
+      "key": "2018-la1-1120-light",
+      "checkedAt": "2026-11-19T11:49:17.294Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    },
+    {
+      "id": "ru-2018-ol-la1",
+      "width": 1120,
+      "theme": "dark",
+      "key": "2018-la1-1120-dark",
+      "checkedAt": "2026-11-19T11:49:20.033Z",
+      "questionCaptured": true,
+      "schemeCaptured": true
+    }
+  ],
+  "captureFolder": "REVIEW/2026-11-19-russian-2011-summary-split/browser",
+  "manualScoreEvidence": [
+    "Summary content10 + discretion2 =12",
+    "Incomplete response removes discretion:12 to10",
+    "2018 handwriting R4 criterion:6 of6"
+  ],
+  "productionSiteVerified": false
+}

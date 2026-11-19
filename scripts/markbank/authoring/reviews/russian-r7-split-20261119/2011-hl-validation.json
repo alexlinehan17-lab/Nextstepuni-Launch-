@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-11-19T11:56:13.491269+00:00",
+  "baseCommit": "a29338dc78d54f2a75b74e6174309e6076acd556",
+  "existingIdsRetained": 1485,
+  "existingConceptIdsRetained": true,
+  "existingCardsChanged": [
+    "ru-2011-hl-c2"
+  ],
+  "newCards": [
+    "ru-2011-hl-c2-2",
+    "ru-2011-hl-c2-3",
+    "ru-2011-hl-c2-4"
+  ],
+  "original199AndOtherSubjectCardsByteIdentical": true,
+  "approval": "2011-hl-approval.json",
+  "sourceChecks": {
+    "checksPassed": 10,
+    "cards": 39,
+    "sourcePassages": 350
+  },
+  "requiredChecks": {
+    "files": 6,
+    "passed": 261
+  },
+  "topicContractsPassed": 10,
+  "visibleScoreCheckPassed": true,
+  "manualScoring": [
+    "Summary content10 + discretion2 =12",
+    "Incomplete response removes discretion:12 to10",
+    "2018 handwriting R4 criterion:6 of6"
+  ],
+  "coverage": {
+    "asksCarded": 1489,
+    "asksCounted": 1489,
+    "cards": 1488,
+    "open": 0,
+    "excluded": 0,
+    "orphans": 0,
+    "unread": 0
+  },
+  "releaseComplete": false
+}

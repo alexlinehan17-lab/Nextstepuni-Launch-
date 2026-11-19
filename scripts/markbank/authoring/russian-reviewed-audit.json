@@ -4603,7 +4603,7 @@
     {
       "year": 2011,
       "level": "higher",
-      "reviewedAt": "2026-11-10",
+      "reviewedAt": "2026-11-19",
       "paperPagesInspected": [
         1,
         2,
@@ -4667,20 +4667,20 @@
       "independentPracticeTasks": 39,
       "writtenTasks": 19,
       "listeningTasks": 20,
-      "publishedPracticeCards": 36,
+      "publishedPracticeCards": 39,
       "printedWrittenMarks": 220,
       "printedListeningMarks": 80,
-      "publishedPracticeMarks": 300,
-      "newCards": 36,
+      "publishedPracticeMarks": 303,
+      "newCards": 39,
       "correctedCards": 0,
       "previousIdsPreserved": 199,
-      "sourceReview": "All original questions reviewed; validation pending",
+      "sourceReview": "All39 source asks represented; approved four-summary split checked against originals and native browser. Hosted listening and production release remain pending.",
       "diagnosedReaderIssues": [
-        "All 48 original pages visually inspected before authoring. No runtime additions.",
+        "Historical finding before Alex approved the split: All 48 original pages visually inspected before authoring. No runtime additions.",
         "C1 scheme36+14=50, paper reading header40 conflicts. Eight source leaf totals4/6/6/6/4/6/2/2=36. Preserve source priced leaves and visible heading discrepancy.",
         "C1 Q1(i) both out walking full4 alternative versus individual2 details with minimum one about each person; avoid4+2 overclaim. Q2(ii) fantasy/sciencefiction only if not already credited Q2(i); general repeated info best answer only applies. Named partial1 and no-award phrases retained.",
         "LA1 six infinitives1 each, no partial; original p7 explicitly rejects поити forпошел, нравится forнравятся, забывать forзабыл. Accepted нравиться is printed in the table; prior preparation note mistook the invalid forms and is corrected after full-size original inspection. CA1 choose2 of3 topics,2details each2, both/either language accepted.",
-        "C2 scheme45+LA5=50 versus paper summary40. Original p8 five details2 each, main or secondary, AND1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION2) discretionary mark. The2 is the alternative amount, not Section2; Japanese peer independently confirmed. No source basis for11/12/11/11 allocation. Preserve full rule and collective45; per-summary maxima/cumulative allocation unresolved. General partial1; incomplete sections/subsections discretion0. No2012 Russian-summary exemption.",
+        "Historical finding before Alex approved the split: C2 scheme45+LA5=50 versus paper summary40. Original p8 five details2 each, main or secondary, AND1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION2) discretionary mark. The2 is the alternative amount, not Section2; Japanese peer independently confirmed. No source basis for11/12/11/11 allocation. Preserve full rule and collective45; per-summary maxima/cumulative allocation unresolved. General partial1; incomplete sections/subsections discretion0. No2012 Russian-summary exemption.",
         "C2 section2 all four subject categories required for2; subject lists within categories max2. Section3 any two boys sports form a subpool; named leisure details explicitly1 each up to4. Preserve these caps inside global5detail/10content boundary; do not reprice secondary details all2 or invent category splits.",
         "LA2 five parts-of-speech rows1:4/2/5/1/3, all sourceforms exact. SD10rows2, full6/4/7/8/1/2/10/3/9/5; named1 alternatives row1=5or8,row2=3or10,row4=6,row10=2. No inferred unique-use restriction.",
         "GR fifteen forms2 across two texts under one30 task; no separately printed text subtotals. Wrong capitalization expressly0 (unlike2013 half). Compare Amsterdam/August initials if uncertain. Source accepts вуза/ВУЗа, allotherexactforms. Bothtexts preserved.",
@@ -4695,17 +4695,51 @@
         "Guided LowerA numeric7–12 is consistent but descriptor9–11 overlaps11–12; retain both literal versions without descriptor reassignment. All seven essay choices and four guided choices are preserved.",
         "Initial original-source gate caught a stale NARRATIVE heading in the prepared Facebook guide; corrected to the literal FACEBOOK before publication. Two multi-page quotations are split at exact reviewed boundaries (summary8/9 and guided15/16), with exact recombination and original heading assertions. No verifier relaxation."
       ],
-      "independentReview": {
-        "reviewers": [
-          "Codex coordinator"
-        ],
-        "findings": [
-          "Original scheme physical8–9 supports a collective45 summary allocation with no fixed section11/12 split. Preserve all four original prompts under four manual content0–10 and discretion0/1/2 controls, capped45 overall.",
-          "Original p3 general wrong-language NO marks and p8 summary-specific weak-English/Russian-word discretion exception must both remain visible. No source-defined wholly/mixed threshold exists; joint-summary language assessment remains manual, without automatic multiplier or language flags.",
-          "All four original Atlas questions must resolve to the shared card; retain the independent39-ask census and every pre-existing anchor."
-        ]
-      },
       "validation": {
+        "checkedAt": "2026-11-19T11:56:13.491269+00:00",
+        "baseCommit": "a29338dc78d54f2a75b74e6174309e6076acd556",
+        "existingIdsRetained": 1485,
+        "existingConceptIdsRetained": true,
+        "existingCardsChanged": [
+          "ru-2011-hl-c2"
+        ],
+        "newCards": [
+          "ru-2011-hl-c2-2",
+          "ru-2011-hl-c2-3",
+          "ru-2011-hl-c2-4"
+        ],
+        "original199AndOtherSubjectCardsByteIdentical": true,
+        "approval": "2011-hl-approval.json",
+        "sourceChecks": {
+          "checksPassed": 10,
+          "cards": 39,
+          "sourcePassages": 350
+        },
+        "requiredChecks": {
+          "files": 6,
+          "passed": 261
+        },
+        "topicContractsPassed": 10,
+        "visibleScoreCheckPassed": true,
+        "manualScoring": [
+          "Summary content10 + discretion2 =12",
+          "Incomplete response removes discretion:12 to10",
+          "2018 handwriting R4 criterion:6 of6"
+        ],
+        "coverage": {
+          "asksCarded": 1489,
+          "asksCounted": 1489,
+          "cards": 1488,
+          "open": 0,
+          "excluded": 0,
+          "orphans": 0,
+          "unread": 0
+        },
+        "releaseComplete": false,
+        "atlasDataMapping": "Four original summary anchors reach four separate cards under the same topic; existing first card ID and conceptId retained. All eight prior reading anchors preserved.",
+        "nativeAtlasNavigation": "Awaiting coordinator single-model release; bidirectional production navigation not yet verified."
+      },
+      "historicalValidationBeforeApprovedSplit": {
         "status": "all source, runtime and preservation gates passed; native Atlas-to-practice consumer remains pending",
         "browserQa": "pending; root integration owns native UI QA",
         "sittingCompletion": false,
@@ -4743,7 +4777,7 @@
         "nativeAtlasNavigation": "pending; generic answer-map markBankCardId consumer is not present and click-to-practice behavior is not claimed",
         "anchorTestCorrection": "Existing all-source test now validates each manifest-bound original question for joint cards instead of assuming a single ID-derived anchor. Includes exact pages, unique anchors, card target and topic tags. No source/runtime records changed."
       },
-      "jointAllocations": [
+      "historicalJointAllocationsBeforeApprovedSplit": [
         {
           "cardId": "ru-2011-hl-c2",
           "coveredQuestionRefs": [
@@ -4760,7 +4794,31 @@
           ],
           "manualAssessment": "Four content0–10 and four discretion0/1/2 controls under collective45. Nested semantic conditions remain full literal manual guidance, not automatically classified detail slots."
         }
-      ]
+      ],
+      "approvedSummarySplit": {
+        "cards": [
+          "ru-2011-hl-c2",
+          "ru-2011-hl-c2-2",
+          "ru-2011-hl-c2-3",
+          "ru-2011-hl-c2-4"
+        ],
+        "perPracticeCard": 12,
+        "paperSectionMarks": 40,
+        "schemeSectionMarks": 45,
+        "sumOfPracticeMaxima": 48,
+        "combinedExamMaximum": 45,
+        "approval": "scripts/markbank/authoring/reviews/russian-r7-split-20261119/2011-hl-approval.json"
+      },
+      "historicalIndependentReviewBeforeApprovedSplit": {
+        "reviewers": [
+          "Codex coordinator"
+        ],
+        "findings": [
+          "Original scheme physical8–9 supports a collective45 summary allocation with no fixed section11/12 split. Preserve all four original prompts under four manual content0–10 and discretion0/1/2 controls, capped45 overall.",
+          "Original p3 general wrong-language NO marks and p8 summary-specific weak-English/Russian-word discretion exception must both remain visible. No source-defined wholly/mixed threshold exists; joint-summary language assessment remains manual, without automatic multiplier or language flags.",
+          "All four original Atlas questions must resolve to the shared card; retain the independent39-ask census and every pre-existing anchor."
+        ]
+      }
     },
     {
       "year": 2010,

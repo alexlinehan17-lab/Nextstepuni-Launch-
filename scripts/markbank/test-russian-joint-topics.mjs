@@ -13,15 +13,11 @@ import { validateReviewedRussianQuestionTopics } from './russianJointTopics.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const read = path => JSON.parse(readFileSync(join(root, path), 'utf8'));
-const registry = read('scripts/markbank/authoring/russian-joint-tasks.json');
+const historical = read('test/fixtures/russian2011SummaryBeforeSplit.json');
+const { registry, source, card, map: originalMap, tag: originalTag } = historical;
 const sources = read('scripts/markbank/authoring/russian-reviewed-sources.json');
 const cards = read('components/MarkBank/cards/russian/reviewed.json');
-const source = sources.find(row => row.id === 'ru-2011-hl-c2');
-const card = cards.find(row => row.id === source.id);
-const task = registry.tasks.find(row => row.id === source.id);
-const originalMap = read('scripts/paper-trail/answers/2011/LC099ALP000EV.pdf.json');
-const originalTag = read('scripts/paper-trail/topic-tags/tags/russian.json')
-  .find(row => row.year === 2011 && row.fileid === source.paperFileid && row.level === source.level);
+const task = registry.tasks[0];
 
 // Synthetic topic annotations on the real, already reviewed four-question shape.
 // These are contract fixtures, not a reinterpretation of the original topics.
@@ -45,12 +41,12 @@ const canonical = (fixture, atRoot = root) => validateReviewedRussianQuestionTop
   atRoot, [fixture.source], [fixture.card], fixture.registry,
 );
 
-test('all existing joint sources validate without changing their JSON or legacy tags', async () => {
+test('historical shared questions retain their contract and current source records validate', async () => {
   const before = JSON.stringify({ sources, cards, originalMap, originalTag });
-  const questions = reviewedRussianJointTask(source, card);
+  const questions = reviewedRussianJointTask(source, card, registry);
   assert.equal(questions.length, 4);
-  verifyRussianJointAnchors(source, card, originalMap);
-  verifyRussianJointTags(source, card, originalTag);
+  verifyRussianJointAnchors(source, card, originalMap, registry);
+  verifyRussianJointTags(source, card, originalTag, registry);
   for (const q of questions) {
     const expected = { n: q.n, primary: source.topicId,
       ...(card.additionalTopicIds?.length ? { secondary: card.additionalTopicIds[0] } : {}) };
@@ -140,7 +136,7 @@ test('removes stale secondary only for an explicit replacement and preserves unr
   assert.deepEqual(changed, { n: question.n, primary: question.topicId, conf: 0.75, reviewer: 'original' });
   const withSecondary = { ...question, additionalTopicIds: ['russian-0-3'] };
   assert.equal(mergeRussianQuestionTag(structuredClone(old), withSecondary, fixture.source, fixture.card).secondary, 'russian-0-3');
-  const legacy = reviewedRussianJointTask(source, card)[0];
+  const legacy = reviewedRussianJointTask(source, card, registry)[0];
   assert.equal(mergeRussianQuestionTag(structuredClone(old), legacy, source, card).secondary, old.secondary);
 });
 

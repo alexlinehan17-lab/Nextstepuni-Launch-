@@ -1,4 +1,4 @@
-"""Russian 2011 Higher source authoring; unsupported numeric cases remain open."""
+"""Russian 2011 Higher source authoring, including the approved R7 summary split."""
 import hashlib
 import json
 import re
@@ -90,7 +90,7 @@ def source_records():
         cue,body=source_split(b,'main points:' if i==1 else 'Main points:')
         assert score(bag(q),bag(cue))>.75,(q,cue)
         cards.append(record('C2',i,None,q,[p],body,[8,9],None,sharedAward='C2-summary-collective45',
-                            pending='Collective45 is printed; five details2 plus1 or2 discretionary does not assign11/12/11/11. Exact general rule retained; numeric allocation unresolved.'))
+                            sourceDiscrepancy='Collective45 is printed. Alex approved four12-mark practice cards on19November2026, retaining the45 exam cap and paper40 conflict; see the split review.'))
 
     q='Verbs: '+question_text(between(page(Q,4,True),'Verbs:'))
     b='Verbs: '+between(page(S,7),'Verbs:','Cultural awareness:')
@@ -147,7 +147,7 @@ def source_records():
     draft=dict(status='Source-only draft; not runtime cards or a completed sitting',sources=METADATA,
                independentTasks=39,writtenTasks=19,listeningTasks=20,printedExamTotal=300,pricedTasksTotal=255,
                sharedAwards=[dict(id='C2-summary-collective45',publishedTotal=45,tasks=[f'ru-2011-hl-c2-{i}' for i in range(1,5)],schemePages=[8,9],
-                                 pending='Five details2 plus1 or2 discretion and collective45 do not establish separate task maxima. No11/12/11/11 allocation.')],
+                                 reviewNote='Historical shared section allocation. Four12-mark practice cards approved19November2026; printed45 section maximum remains disclosed.')],
                aggregateDiscrepancy='Paper reading40 versus scheme36; paper summary40 versus scheme45. Preserve original section and leaf totals.',
                generalWrittenGuidance=squash('\n'.join(page(S,p) for p in (3,4))),
                comprehensionGuidance=squash(page(S,5).split('1. i')[0]),
@@ -455,6 +455,7 @@ def build():
     assert sum(bool(c.get('answerLanguageRule')) for c in cards)==12
     assert not next(c for c in cards if c['id']=='ru-2011-hl-c2').get('answerLanguageRule')
     for doc in docs.values():doc.close()
-    return cards
+    from ru_2011_summary_split import split_approved_summaries
+    return split_approved_summaries(cards)
 
 if __name__=='__main__':save_reviewed(build())

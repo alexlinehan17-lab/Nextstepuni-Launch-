@@ -1,4 +1,4 @@
-"""Mandatory pinned-original and joint-question coverage gate; no CI skips."""
+"""Pinned-original coverage and approved per-summary marks; no CI skips."""
 import copy
 import json
 import tempfile
@@ -30,7 +30,7 @@ class Original2011HigherSources(unittest.TestCase):
     def get(self, suffix):
         return copy.deepcopy(next(c for c in self.cards if c['id'] == 'ru-2011-hl-' + suffix))
 
-    def test_all_39_original_asks_keep_their_denominator_with_36_real_tasks(self):
+    def test_all_39_original_asks_have_39_real_cards(self):
         verify(self.cards)
         keys = set()
         for c in self.cards:
@@ -41,15 +41,15 @@ class Original2011HigherSources(unittest.TestCase):
         census = reviewed_keys(2011, 'hl')
         self.assertEqual(len(census), 39)
         self.assertEqual(keys, census)
-        self.assertEqual(len(self.cards), 36)
-        self.assertEqual(sum(c['totalMarks'] for c in self.cards), 300)
+        self.assertEqual(len(self.cards), 39)
+        self.assertEqual(sum(c['totalMarks'] for c in self.cards), 303)
 
     def test_published_records_equal_original_derivation(self):
         authored = json.loads((ROOT / 'scripts/markbank/authored/russian-reviewed.json').read_text())
         published = [c for c in authored if c['year'] == 2011 and c['level'] == 'higher']
         self.assertEqual({c['id']: c for c in published}, {c['id']: c for c in self.cards})
 
-    def test_joint_manifest_pins_all_four_original_prompts_and_pdf_hashes(self):
+    def test_first_identity_binding_and_all_four_prompts_match_originals(self):
         docs, source = source_records()
         try:
             spec = self.registry['tasks'][0]
@@ -58,7 +58,12 @@ class Original2011HigherSources(unittest.TestCase):
             self.assertEqual(spec['independentSittingAsks'], 39)
             originals = [r for r in source['tasks'] if r['unit'] == 'C2']
             self.assertEqual(len(originals), 4)
-            for number, (q, original) in enumerate(zip(spec['questions'], originals), 1):
+            self.assertEqual(len(spec['questions']), 1)
+            questions = []
+            for number in range(1, 5):
+                card = self.get('c2' if number == 1 else f'c2-{number}')
+                questions.append(dict(questionText=card['questionText'].split('\n\n', 1)[1], questionPages=card['review']['questionPages'], schemePages=card['review']['schemePages'], leafKey=['C2', number, None, None]))
+            for number, (q, original) in enumerate(zip(questions, originals), 1):
                 self.assertEqual(q['questionText'], original['question'])
                 self.assertEqual(q['questionPages'], [number + 5])
                 self.assertEqual(q['schemePages'], [8, 9])
@@ -82,17 +87,19 @@ class Original2011HigherSources(unittest.TestCase):
         finally:
             for d in docs.values(): d.close()
 
-    def test_collective_45_and_paper_40_remain_literal_without_section_tariffs(self):
+    def test_approved_practice_maxima_preserve_the_printed_45_and_paper_40_conflict(self):
         docs, source = source_records()
         try:
             self.assertIn(normal('Summary writing 45 marks'), normal(docs['scheme'][7].get_text()))
             self.assertIn(normal('40 marks'), normal(docs['paper'][5].get_text()))
-            c = self.get('c2')
-            self.assertEqual(c['totalMarks'], 45)
-            self.assertEqual(c['rubric']['allocationCap']['schemePages'], [8])
-            self.assertEqual([k['maxMarks'] for k in c['rubric']['groups'][0]['criteria']], [10,2,10,2,10,2,10,2])
-            c['rubric']['allocationCap']['schemePages'] = [9]
-            with self.assertRaises(AssertionError): verify([c])
+            for number in range(1, 5):
+                c = self.get('c2' if number == 1 else f'c2-{number}')
+                self.assertEqual(c['totalMarks'], 12)
+                self.assertNotIn('allocationCap', c['rubric'])
+                self.assertEqual([k['maxMarks'] for k in c['rubric']['groups'][0]['criteria']], [10,2])
+                self.assertIn('scheme’s printed 45', c['rubric']['markingGuideNote'])
+                self.assertIn('paper prints 40', c['rubric']['markingGuideNote'])
+                self.assertTrue((ROOT / c['review']['splitApproval']).is_file())
         finally:
             for d in docs.values(): d.close()
 
@@ -113,7 +120,7 @@ class Original2011HigherSources(unittest.TestCase):
         docs, source = source_records()
         try:
             original = next(r for r in source['tasks'] if r['unit']=='C2' and r['item']==2)
-            criterion = next(k for k in self.get('c2')['rubric']['groups'][0]['criteria'] if k['id']=='section-2-content')
+            criterion = next(k for k in self.get('c2-2')['rubric']['groups'][0]['criteria'] if k['id']=='section-2-content')
             self.assertIn(normal(original['publishedSourceBlock']), normal(' '.join(criterion['guidance'])))
             guide = ' '.join(self.get('gw')['rubric']['taskRequirements'])
             self.assertIn('1. FACEBOOK', guide)
@@ -128,7 +135,7 @@ class Original2011HigherSources(unittest.TestCase):
         self.assertIsNotNone(validate_joint_task(source, c, self.registry))
         mutations = [
             lambda s:s['coveredQuestionRefs'].pop(),
-            lambda s:s['coveredQuestionRefs'].__setitem__(1, s['coveredQuestionRefs'][0]),
+            lambda s:s['coveredQuestionRefs'].append(s['coveredQuestionRefs'][0]),
             lambda s:s['coveredQuestionRefs'].__setitem__(0, '2011 HL Section C2 Q5'),
             lambda s:s.__setitem__('year', 2012),
             lambda s:s.__setitem__('level', 'ordinary'),
@@ -144,7 +151,7 @@ class Original2011HigherSources(unittest.TestCase):
                 validate_joint_task(wrong, c, self.registry)
         wrong = copy.deepcopy(c); wrong['section'] = 'C1'
         with self.assertRaises(AssertionError): validate_joint_task(source, wrong, self.registry)
-        wrong = copy.deepcopy(c); wrong['questionText'] = wrong['questionText'].split('Section 4')[0]
+        wrong = copy.deepcopy(c); wrong['questionText'] = ''
         with self.assertRaises(AssertionError): validate_joint_task(source, wrong, self.registry)
         wrong = copy.deepcopy(source); wrong['id'] = 'ru-2011-hl-invented'
         with self.assertRaises(AssertionError): validate_joint_task(wrong, c, self.registry)
@@ -161,15 +168,16 @@ class Original2011HigherSources(unittest.TestCase):
             write('components/MarkBank/cards/russian/reviewed.json', [c])
             actual = reviewed_joint_coverage([(c['id'],c['questionRef'])], census, root)
             self.assertEqual(actual, {c['id']: source['coveredQuestionRefs']})
-            wrong = copy.deepcopy(census); wrong[(2011,'hl',None)].remove(('C2',4,None,None))
+            wrong = copy.deepcopy(census); wrong[(2011,'hl',None)].remove(('C2',1,None,None))
             with self.assertRaises(AssertionError): reviewed_joint_coverage([(c['id'],c['questionRef'])], wrong, root)
             write('scripts/markbank/authoring/russian-reviewed-sources.json', [])
             with self.assertRaises(AssertionError): reviewed_joint_coverage([(c['id'],c['questionRef'])], census, root)
         leaves = [{'key': ['C2', n, None, None]} for n in range(1,5)]
         fixture = {'mode':'sections','papers':[{'year':2011,'level':'hl','leaves':leaves,'flags':[]}]}
-        with patch('reconcile.shipped_cards', return_value=[(c['id'],c['questionRef'])]), patch('reconcile.load_exclusions', return_value=[]), patch('ru_joint_tasks.reviewed_joint_coverage', return_value={c['id']:source['coveredQuestionRefs']}):
+        shipped = [(task['id'], task['questionRef']) for task in self.cards if task['section'] == 'C2']
+        with patch('reconcile.shipped_cards', return_value=shipped), patch('reconcile.load_exclusions', return_value=[]), patch('ru_joint_tasks.reviewed_joint_coverage', return_value={c['id']:source['coveredQuestionRefs']}):
             ledger = reconcile_subject('russian', fixture)
-            self.assertEqual((ledger['cards'],ledger['leaves'],ledger['covered']), (1,4,4))
+            self.assertEqual((ledger['cards'],ledger['leaves'],ledger['covered']), (4,4,4))
             self.assertEqual(ledger['orphans'], [])
 
     def test_non_russian_reconciliation_does_not_use_joint_metadata(self):

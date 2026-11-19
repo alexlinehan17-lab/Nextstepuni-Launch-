@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-11-19T11:59:31.067684+00:00",
+  "nativeCapturesInspected": 40,
+  "representativeFullSizeCaptures": [
+    "c2-390-dark-scheme.png",
+    "c2-4-390-light-question.png",
+    "c2-3-1120-dark-scheme.png",
+    "2018-la1-manual-6.png"
+  ],
+  "findings": "All four summary prompts and handwritten-task prompt fit the390px and1120px card viewports in both themes. Controls and score footer remain readable. Long scheme guidance scrolls within the card. Four summary cards each show their own content pool and12-mark maximum. Handwriting fixed-line criterion shows6 marks and reaches6of6. No horizontal text overflow or overlapping controls observed.",
+  "limits": "Screenshots show the captured scroll positions, not every scroll position. Full accessible text is retained for the complete source guidance and conflict disclosure. Production navigation and listening playback are not claimed."
+}

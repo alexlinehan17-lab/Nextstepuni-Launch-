@@ -1,0 +1,7 @@
+{
+  "recordedAt": "2026-11-19T11:24:20.511760+00:00",
+  "answer": "Approve four 12-mark practice cards",
+  "authority": "Alex’s direct reply in this Codex conversation on 19 November 2026.",
+  "proposalSha256": "caf0fad5de070a366e2a2d9605ac7d63a3f22ce5c98fff3d26e10dfb22f67fb9",
+  "scope": "Split the 2011 Higher summary into four practice cards out of12. Retain existing card ID and conceptId on Section1, retain every source answer and instruction, disclose the paper40/scheme45/four-maxima48 conflict and combined exam maximum45. No live card changes, no merge/deployment authorization."
+}

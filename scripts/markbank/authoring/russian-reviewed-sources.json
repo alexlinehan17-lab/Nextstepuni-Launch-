@@ -25650,15 +25650,12 @@
     "id": "ru-2011-hl-c2",
     "year": 2011,
     "level": "higher",
-    "questionRef": "2011 HL Section C2 — Summary Sections 1–4",
+    "questionRef": "2011 HL Section C2 Q1",
     "topicId": "russian-3-1",
     "paperFileid": "LC099ALP000EV.pdf",
     "schemeFileid": "LC099ALP000EV.pdf",
     "paperPages": [
-      6,
-      7,
-      8,
-      9
+      6
     ],
     "schemePages": [
       8,
@@ -25666,16 +25663,10 @@
     ],
     "component": "000",
     "questionPages": [
-      6,
-      7,
-      8,
-      9
+      6
     ],
     "coveredQuestionRefs": [
-      "2011 HL Section C2 Q1",
-      "2011 HL Section C2 Q2",
-      "2011 HL Section C2 Q3",
-      "2011 HL Section C2 Q4"
+      "2011 HL Section C2 Q1"
     ],
     "atlasQuestions": [
       {
@@ -25689,47 +25680,13 @@
           8,
           9
         ]
-      },
-      {
-        "n": "c2-2",
-        "questionRef": "2011 HL Section C2 Q2",
-        "questionText": "Anna describes how the British educational system differs from the Russian one. Give five details.",
-        "questionPages": [
-          7
-        ],
-        "schemePages": [
-          8,
-          9
-        ]
-      },
-      {
-        "n": "c2-3",
-        "questionRef": "2011 HL Section C2 Q3",
-        "questionText": "Apart from classroom learning, what activities do British boarding schools support? Give five details.",
-        "questionPages": [
-          8
-        ],
-        "schemePages": [
-          8,
-          9
-        ]
-      },
-      {
-        "n": "c2-4",
-        "questionRef": "2011 HL Section C2 Q4",
-        "questionText": "What benefits has Anna derived from studying in British schools? Give five details.",
-        "questionPages": [
-          9
-        ],
-        "schemePages": [
-          8,
-          9
-        ]
       }
     ],
     "guidancePages": [
       3
-    ]
+    ],
+    "reviewedAt": "2026-11-19",
+    "splitApproval": "scripts/markbank/authoring/reviews/russian-r7-split-20261119/2011-hl-approval.json"
   },
   {
     "id": "ru-2011-hl-la1",
@@ -32841,5 +32798,80 @@
     "guidancePages": [
       17
     ]
+  },
+  {
+    "id": "ru-2011-hl-c2-2",
+    "year": 2011,
+    "level": "higher",
+    "questionRef": "2011 HL Section C2 Q2",
+    "topicId": "russian-3-1",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      7
+    ],
+    "schemePages": [
+      8,
+      9
+    ],
+    "component": "000",
+    "questionPages": [
+      7
+    ],
+    "guidancePages": [
+      3
+    ],
+    "reviewedAt": "2026-11-19",
+    "splitApproval": "scripts/markbank/authoring/reviews/russian-r7-split-20261119/2011-hl-approval.json"
+  },
+  {
+    "id": "ru-2011-hl-c2-3",
+    "year": 2011,
+    "level": "higher",
+    "questionRef": "2011 HL Section C2 Q3",
+    "topicId": "russian-3-1",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      8
+    ],
+    "schemePages": [
+      8,
+      9
+    ],
+    "component": "000",
+    "questionPages": [
+      8
+    ],
+    "guidancePages": [
+      3
+    ],
+    "reviewedAt": "2026-11-19",
+    "splitApproval": "scripts/markbank/authoring/reviews/russian-r7-split-20261119/2011-hl-approval.json"
+  },
+  {
+    "id": "ru-2011-hl-c2-4",
+    "year": 2011,
+    "level": "higher",
+    "questionRef": "2011 HL Section C2 Q4",
+    "topicId": "russian-3-1",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      9
+    ],
+    "schemePages": [
+      8,
+      9
+    ],
+    "component": "000",
+    "questionPages": [
+      9
+    ],
+    "guidancePages": [
+      3
+    ],
+    "reviewedAt": "2026-11-19",
+    "splitApproval": "scripts/markbank/authoring/reviews/russian-r7-split-20261119/2011-hl-approval.json"
   }
 ]

@@ -8,25 +8,45 @@ const card = cards.find((c: {id:string}) => c.id === 'ru-2011-hl-c2');
 const source = sources.find((c: {id:string}) => c.id === card?.id);
 const map = read('scripts/paper-trail/answers/2011/LC099ALP000EV.pdf.json');
 
-describe('reviewed Russian shared-question coverage and Atlas identities', () => {
-  it('resolves each original summary question to one joint card with complete source context', () => {
+describe('reviewed Russian summary split and preserved Atlas identities', () => {
+  it('keeps the old card identity bound only to the first original question', () => {
     const questions = reviewedRussianJointTask(source,card);
-    expect(questions.map((q: {n:string}) => q.n)).toEqual(['c2-1','c2-2','c2-3','c2-4']);
+    expect(questions.map((q: {n:string}) => q.n)).toEqual(['c2-1']);
     expect(() => verifyRussianJointAnchors(source,card,map)).not.toThrow();
     const anchors = map.q.filter((q: {markBankCardId?:string}) => q.markBankCardId === card.id);
-    expect(anchors).toHaveLength(4);
-    expect(anchors.map((q: {pP:number}) => q.pP)).toEqual([6,7,8,9]);
+    expect(anchors).toHaveLength(1);
+    expect(anchors[0].pP).toBe(6);
+    expect(source.coveredQuestionRefs).toEqual(['2011 HL Section C2 Q1']);
+  });
+  it('resolves all four original asks separately without duplicating an Atlas row or card', () => {
     const tags = read('scripts/paper-trail/topic-tags/tags/russian.json').find((p: {year:number;fileid:string;level:string}) => p.year === 2011 && p.level === 'higher' && p.fileid === 'LC099ALP000EV.pdf');
-    for (const question of questions) expect(tags.q.filter((q: {n:string}) => q.n === question.n)).toHaveLength(1);
+    const targets = new Set();
+    for (const section of [1,2,3,4]) {
+      const id = section === 1 ? 'ru-2011-hl-c2' : `ru-2011-hl-c2-${section}`;
+      const matches = map.q.filter((q: {n:string}) => q.n === `c2-${section}`);
+      expect(matches).toHaveLength(1);
+      const anchor = matches[0];
+      expect(anchor.markBankCardId).toBe(section === 1 ? id : undefined);
+      expect(anchor.paperRegion.map((p: {p:number})=>p.p)).toEqual([section+5]);
+      const task = sources.find((s: {id:string})=>s.id===id);
+      const own = cards.find((c: {id:string})=>c.id===id);
+      expect(own.questionRef).toBe(`2011 HL Section C2 Q${section}`);
+      expect(task.questionPages).toEqual([section+5]);
+      expect(tags.q.find((q: {n:string})=>q.n===`c2-${section}`).primary).toBe(own.topicId);
+      if (section > 1) expect(reviewedRussianJointTask(task,own)).toBeNull();
+      targets.add(id);
+    }
+    expect(targets.size).toBe(4);
+    expect(map.q.filter((q: {n:string})=>q.n==='c2')).toHaveLength(0);
     for (const directory of ['paper-answers','paper-anchors']) expect(read(`public/${directory}/2011/LC099ALP000EV.pdf.json`)).toEqual(map);
   });
-  it.each(['coveredQuestionRefs','atlasQuestions','questionPages','paperPages','schemePages'])('rejects omitted source evidence: %s', key => {
+  it.each(['coveredQuestionRefs','atlasQuestions','questionPages','paperPages','schemePages'])('rejects omitted identity evidence: %s', key => {
     const changed = structuredClone(source); delete changed[key];
     expect(() => reviewedRussianJointTask(changed,card)).toThrow();
   });
-  it('rejects unknown, duplicate, mismatched and incomplete original questions', () => {
+  it('rejects unknown, duplicate, mismatched and incomplete first-question bindings', () => {
     for (const change of [
-      (s: typeof source) => {s.coveredQuestionRefs[1] = s.coveredQuestionRefs[0];},
+      (s: typeof source) => {s.coveredQuestionRefs.push(s.coveredQuestionRefs[0]);},
       (s: typeof source) => {s.coveredQuestionRefs[0] = '2011 HL Section C2 Q5';},
       (s: typeof source) => {s.year = 2012;},
       (s: typeof source) => {s.level = 'ordinary';},
@@ -41,27 +61,23 @@ describe('reviewed Russian shared-question coverage and Atlas identities', () =>
     }
     expect(() => reviewedRussianJointTask({...source,id:'ru-2011-hl-invented'},card)).toThrow();
     expect(() => reviewedRussianJointTask(source,{...card,section:'C1'})).toThrow();
-    expect(() => reviewedRussianJointTask(source,{...card,questionText:card.questionText.split('Section 4')[0]})).toThrow();
+    expect(() => reviewedRussianJointTask(source,{...card,questionText:''})).toThrow();
   });
-  it('rejects missing or duplicate anchors, wrong card targets and lost passage pages', () => {
+  it('rejects lost or duplicate first anchors, wrong targets and lost passage pages', () => {
     for (const change of [
-      (m: typeof map) => {m.q = m.q.filter((q:{n:string}) => q.n !== 'c2-4');},
+      (m: typeof map) => {m.q = m.q.filter((q:{n:string}) => q.n !== 'c2-1');},
       (m: typeof map) => {m.q.push(structuredClone(m.q.find((q:{n:string}) => q.n === 'c2-1')));},
-      (m: typeof map) => {m.q.find((q:{n:string}) => q.n === 'c2-2').markBankCardId = 'ru-2011-hl-c1-1-i';},
-      (m: typeof map) => {m.q.find((q:{n:string}) => q.n === 'c2-3').paperRegion.pop();},
-      (m: typeof map) => {m.q.find((q:{n:string}) => q.n === 'c2-4').region[0].p = 10;},
+      (m: typeof map) => {m.q.find((q:{n:string}) => q.n === 'c2-1').markBankCardId = 'ru-2011-hl-c1-1-i';},
+      (m: typeof map) => {m.q.find((q:{n:string}) => q.n === 'c2-1').paperRegion.pop();},
+      (m: typeof map) => {m.q.find((q:{n:string}) => q.n === 'c2-1').region[0].p = 10;},
     ]) {
       const changed = structuredClone(map); change(changed);
       expect(() => verifyRussianJointAnchors(source,card,changed)).toThrow();
     }
   });
-  it('preserves every original 2011 reading anchor identity and coordinate', () => {
+  it('preserves every original reading anchor identity and coordinate', () => {
     const originals = read('test/fixtures/russian2011OriginalAnchors.json');
     expect(originals).toHaveLength(8);
     for (const old of originals) expect(map.q.find((q: {n:string}) => q.n === old.n)).toEqual(old);
-  });
-  it('leaves ordinary source records without joint metadata on their existing path', () => {
-    const original = sources.find((s: {id:string}) => s.id === 'ru-2012-hl-gr');
-    expect(reviewedRussianJointTask(original,cards.find((c: {id:string}) => c.id === original.id))).toBeNull();
   });
 });

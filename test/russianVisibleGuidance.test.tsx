@@ -13,28 +13,26 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
-  it('shows all four 2011 summary prompts and preserves manual language discretion beside the literal rules',async()=>{
+  it('shows one 2011 summary with its own score and the conflicting section totals',async()=>{
     reveal('c2','hl',2011);
     await waitFor(()=>expect(screen.getByRole('button',{name:'Set Section 1 content (manual assessment) to 10 marks'})).toBeVisible());
     expect(screen.getAllByText(/How did the writer end up spending two years/)[0]).toBeVisible();
-    expect(screen.getAllByText(/What benefits has Anna derived/)[0]).toBeVisible();
+    expect(screen.queryByText(/What benefits has Anna derived/)).not.toBeInTheDocument();
     expect(screen.getAllByText(/award NO marks/)[0]).toBeVisible();
     expect(screen.getAllByText(/Russian-\s*language words/)[0]).toBeVisible();
     expect(screen.getByText(/no numerical or wholly\/mixed-language threshold/)).toBeVisible();
+    expect(screen.getByText(/maxima add to 48/)).toBeVisible();
     expect(screen.queryByRole('checkbox',{name:'All answers answered in another language'})).not.toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button',{name:'Assess the complete four-section response'}));
+    fireEvent.click(screen.getByRole('button',{name:'Section 1',exact:true}));
     fireEvent.click(screen.getByRole('button',{name:'Set Section 1 discretionary marks to 2 marks'}));
-    await waitFor(()=>expect(screen.getByText(/placement is 2 of 45 marks/)).toBeVisible());
-    for(const n of [1,2,3,4]){
-      fireEvent.click(screen.getByRole('button',{name:`Set Section ${n} content (manual assessment) to 10 marks`}));
-      if(n!==1)fireEvent.click(screen.getByRole('button',{name:`Set Section ${n} discretionary marks to 2 marks`}));
-    }
-    await waitFor(()=>expect(screen.getByText(/placement is 45 of 45 marks/)).toBeVisible());
+    await waitFor(()=>expect(screen.getByText(/placement is 2 of 12 marks/)).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Set Section 1 content (manual assessment) to 10 marks'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 12 of 12 marks/)).toBeVisible());
     const incomplete=screen.getByRole('checkbox',{name:/If a candidate fails to answer all sections/});
     fireEvent.click(incomplete);
-    await waitFor(()=>expect(screen.getByText(/placement is 40 of 45 marks/)).toBeVisible());
+    await waitFor(()=>expect(screen.getByText(/placement is 10 of 12 marks/)).toBeVisible());
     fireEvent.click(incomplete);
-    await waitFor(()=>expect(screen.getByText(/placement is 45 of 45 marks/)).toBeVisible());
+    await waitFor(()=>expect(screen.getByText(/placement is 12 of 12 marks/)).toBeVisible());
   });
   it('shows the 2012 derived both-girls ceiling without automatically awarding five',async()=>{
     reveal('c1-1-ii','hl',2012);

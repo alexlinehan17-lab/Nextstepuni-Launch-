@@ -166226,18 +166226,15 @@
     "section": "C2",
     "topicId": "russian-3-1",
     "conceptId": "summary-english-content-section-instructed-section",
-    "questionRef": "2011 HL Section C2 — Summary Sections 1–4",
-    "questionText": "Write a summary in English of the content of each Section as instructed.\n\nSection 1\nHow did the writer end up spending two years in two English boarding schools? Give five details.\n\nSection 2\nAnna describes how the British educational system differs from the Russian one. Give five details.\n\nSection 3\nApart from classroom learning, what activities do British boarding schools support? Give five details.\n\nSection 4\nWhat benefits has Anna derived from studying in British schools? Give five details.",
-    "totalMarks": 45,
+    "questionRef": "2011 HL Section C2 Q1",
+    "questionText": "Write a summary in English of the content of each Section as instructed.\n\nHow did the writer end up spending two years in two English boarding schools? Give five details.",
+    "totalMarks": 12,
     "sourceMaterial": {
       "kind": "source-text",
       "label": "Official question and source",
       "title": "2011 Higher Russian — C2",
       "pages": [
-        6,
-        7,
-        8,
-        9
+        6
       ],
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
@@ -166245,10 +166242,7 @@
     "notes": "Source reviewed against the original paper and marking scheme, pages 8, 9.",
     "review": {
       "paperPages": [
-        6,
-        7,
-        8,
-        9
+        6
       ],
       "schemePages": [
         8,
@@ -166256,16 +166250,10 @@
       ],
       "component": "000",
       "questionPages": [
-        6,
-        7,
-        8,
-        9
+        6
       ],
       "coveredQuestionRefs": [
-        "2011 HL Section C2 Q1",
-        "2011 HL Section C2 Q2",
-        "2011 HL Section C2 Q3",
-        "2011 HL Section C2 Q4"
+        "2011 HL Section C2 Q1"
       ],
       "atlasQuestions": [
         {
@@ -166279,47 +166267,13 @@
             8,
             9
           ]
-        },
-        {
-          "n": "c2-2",
-          "questionRef": "2011 HL Section C2 Q2",
-          "questionText": "Anna describes how the British educational system differs from the Russian one. Give five details.",
-          "questionPages": [
-            7
-          ],
-          "schemePages": [
-            8,
-            9
-          ]
-        },
-        {
-          "n": "c2-3",
-          "questionRef": "2011 HL Section C2 Q3",
-          "questionText": "Apart from classroom learning, what activities do British boarding schools support? Give five details.",
-          "questionPages": [
-            8
-          ],
-          "schemePages": [
-            8,
-            9
-          ]
-        },
-        {
-          "n": "c2-4",
-          "questionRef": "2011 HL Section C2 Q4",
-          "questionText": "What benefits has Anna derived from studying in British schools? Give five details.",
-          "questionPages": [
-            9
-          ],
-          "schemePages": [
-            8,
-            9
-          ]
         }
       ],
       "guidancePages": [
         3
-      ]
+      ],
+      "reviewedAt": "2026-11-19",
+      "splitApproval": "scripts/markbank/authoring/reviews/russian-r7-split-20261119/2011-hl-approval.json"
     },
     "kind": "rubric",
     "rubric": {
@@ -166327,8 +166281,8 @@
       "count": 1,
       "groups": [
         {
-          "id": "complete-response",
-          "label": "Assess the complete four-section response",
+          "id": "section-1",
+          "label": "Section 1",
           "rows": [],
           "criteria": [
             {
@@ -166384,185 +166338,15 @@
                   ]
                 }
               ]
-            },
-            {
-              "id": "section-2-content",
-              "label": "Section 2 content (manual assessment)",
-              "maxMarks": 10,
-              "permittedMarks": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9,
-                10
-              ],
-              "guidance": [
-                "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
-                "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)",
-                "Main points: exam system + number of years spent in education (13) + school leaving age (minimum school leaving age = 16 + age of 18-9) + categories of subjects + assessment procedures (essays & other types of continuous assessment/projects) Secondary details: names of exams : GCSE and GSE + subject categories [all four categories are required to obtain 2 marks]: science; essay-based subjects; languages;",
-                "art + subjects in which there is no continuous assessment/project work (maths and advanced maths) + [a maximum of two marks for supplying lists of subjects within categories]: subject within categories: science (maths, physics, chemistry, biology, advanced maths, geography, psychology); essay-based subjects (history, literature, economics, classical civilisation, politics, business, media studies); languages (Latin, French, Spanish, German, Italian, Russian, Chinese, Japanese); art (drawing, drama, craft, photography)"
-              ]
-            },
-            {
-              "id": "section-2-discretion",
-              "label": "Section 2 discretionary marks",
-              "maxMarks": 2,
-              "permittedMarks": [
-                0,
-                1,
-                2
-              ],
-              "guidance": [
-                "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
-                "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
-              ],
-              "limits": [
-                {
-                  "id": "section-2-incomplete",
-                  "maxMarks": 0,
-                  "when": {
-                    "any": [
-                      {
-                        "flag": "incomplete-summary-response",
-                        "prompt": "If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
-                      }
-                    ]
-                  },
-                  "guidance": [
-                    "If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "section-3-content",
-              "label": "Section 3 content (manual assessment)",
-              "maxMarks": 10,
-              "permittedMarks": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9,
-                10
-              ],
-              "guidance": [
-                "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
-                "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)",
-                "Main points: sports/ easy for boys + not as straightforward/limited choice for girls + sports associated with different seasons + entertainment/leisure activities + themed non- uniform days (for charity) = pay a £ and wear a costume associated with the theme + snowball fighting and sledging + going to away matches Secondary details: any two of sports for boys: football, tennis, hockey, rugby, cricket, swimming, gym + sports for girls (hockey, netball) + seasons = autumn and winter & spring & summer + tennis in the summer & cross-country all year round + leisure [assign one mark for each correct detail, up to a maximum of 4] = for fashion shows for charity & school plays & concerts & discos & celebratory dinners + students play musical instruments + students sing in choir"
-              ]
-            },
-            {
-              "id": "section-3-discretion",
-              "label": "Section 3 discretionary marks",
-              "maxMarks": 2,
-              "permittedMarks": [
-                0,
-                1,
-                2
-              ],
-              "guidance": [
-                "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
-                "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
-              ],
-              "limits": [
-                {
-                  "id": "section-3-incomplete",
-                  "maxMarks": 0,
-                  "when": {
-                    "any": [
-                      {
-                        "flag": "incomplete-summary-response",
-                        "prompt": "If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
-                      }
-                    ]
-                  },
-                  "guidance": [
-                    "If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "section-4-content",
-              "label": "Section 4 content (manual assessment)",
-              "maxMarks": 10,
-              "permittedMarks": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9,
-                10
-              ],
-              "guidance": [
-                "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
-                "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)",
-                "Main points: opened her eyes/broadened her experience /will be invaluable in the future + most important: increased awareness of how others live, of other’s traditions and values + adaptation to a new system + not compromising self/staying or remaining who she was + friends live all over the world + access to best universities in the world + a new view of/take on the world Secondary details: unrepeatable/once-off life experience + invaluable = English- language skills + independence/self-reliance + interaction with people from all over the world + questions: where does she belong? + whole world opens up before her"
-              ]
-            },
-            {
-              "id": "section-4-discretion",
-              "label": "Section 4 discretionary marks",
-              "maxMarks": 2,
-              "permittedMarks": [
-                0,
-                1,
-                2
-              ],
-              "guidance": [
-                "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
-                "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
-              ],
-              "limits": [
-                {
-                  "id": "section-4-incomplete",
-                  "maxMarks": 0,
-                  "when": {
-                    "any": [
-                      {
-                        "flag": "incomplete-summary-response",
-                        "prompt": "If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
-                      }
-                    ]
-                  },
-                  "guidance": [
-                    "If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
-                  ]
-                }
-              ]
             }
           ]
         }
       ],
-      "allocationCap": {
-        "maxMarks": 45,
-        "sourceText": "Summary writing 45 marks",
-        "schemePages": [
-          8
-        ]
-      },
       "taskRequirements": [
         "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
         "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
       ],
-      "markingGuideNote": "The original paper gives 40 marks for summary writing; the final marking scheme gives 45 for the complete section. This joint task retains all four original questions and the final scheme’s collective maximum, without assigning a fixed 11/12 split to individual sections. Assess each section’s content manually against its complete published pool and five-distinct-details rule, including Section 2’s all-four-category requirement and two-mark subject-list maximum, and Section 3’s two-boy-sport limit and one-mark leisure details up to four. The numerical controls record your manual assessment; they do not count or classify individual details. Normal discretion is one, or two for a particularly well-answered question. If the response fails to answer all required sections/subsections, select the printed condition to withhold all discretionary marks. Assess language manually for each section. Read the general no-marks instruction alongside the summary-specific discretion exception. The scheme gives no numerical or wholly/mixed-language threshold; do not automatically remove discretionary marks merely because Russian words appear. English or Irish is permitted by the original bilingual paper."
+      "markingGuideNote": "The scheme gives up to 10 content marks plus one discretionary mark, or two for a particularly well-answered question. This individual practice card is therefore marked out of 12. The scheme also prints 45 marks for all four summaries together, while the paper prints 40. Four individual maxima add to 48; do not add these practice scores to report a section mark above the scheme’s printed 45. All three source figures are retained. Assess content manually against the complete printed pool and its conditions; the numerical controls do not count or classify individual details. Assess language manually for each section. Read the general no-marks instruction alongside the summary-specific discretion exception. The scheme gives no numerical or wholly/mixed-language threshold; do not automatically remove discretionary marks merely because Russian words appear. English or Irish is permitted by the original bilingual paper."
     }
   },
   {
@@ -208035,6 +207819,349 @@
       "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC099ZLP017EV.mp3",
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2011-hl-c2-2",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2011,
+    "section": "C2",
+    "topicId": "russian-3-1",
+    "conceptId": "russian-2011-summary-section-2",
+    "questionRef": "2011 HL Section C2 Q2",
+    "questionText": "Write a summary in English of the content of each Section as instructed.\n\nAnna describes how the British educational system differs from the Russian one. Give five details.",
+    "totalMarks": 12,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2011 Higher Russian — C2",
+      "pages": [
+        7
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8, 9.",
+    "review": {
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        8,
+        9
+      ],
+      "component": "000",
+      "questionPages": [
+        7
+      ],
+      "guidancePages": [
+        3
+      ],
+      "reviewedAt": "2026-11-19",
+      "splitApproval": "scripts/markbank/authoring/reviews/russian-r7-split-20261119/2011-hl-approval.json"
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "count": 1,
+      "groups": [
+        {
+          "id": "section-2",
+          "label": "Section 2",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "section-2-content",
+              "label": "Section 2 content (manual assessment)",
+              "maxMarks": 10,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
+                "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)",
+                "Main points: exam system + number of years spent in education (13) + school leaving age (minimum school leaving age = 16 + age of 18-9) + categories of subjects + assessment procedures (essays & other types of continuous assessment/projects) Secondary details: names of exams : GCSE and GSE + subject categories [all four categories are required to obtain 2 marks]: science; essay-based subjects; languages;",
+                "art + subjects in which there is no continuous assessment/project work (maths and advanced maths) + [a maximum of two marks for supplying lists of subjects within categories]: subject within categories: science (maths, physics, chemistry, biology, advanced maths, geography, psychology); essay-based subjects (history, literature, economics, classical civilisation, politics, business, media studies); languages (Latin, French, Spanish, German, Italian, Russian, Chinese, Japanese); art (drawing, drama, craft, photography)"
+              ]
+            },
+            {
+              "id": "section-2-discretion",
+              "label": "Section 2 discretionary marks",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": [
+                "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
+                "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
+              ],
+              "limits": [
+                {
+                  "id": "section-2-incomplete",
+                  "maxMarks": 0,
+                  "when": {
+                    "any": [
+                      {
+                        "flag": "incomplete-summary-response",
+                        "prompt": "If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
+                      }
+                    ]
+                  },
+                  "guidance": [
+                    "If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "taskRequirements": [
+        "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
+        "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
+      ],
+      "markingGuideNote": "The scheme gives up to 10 content marks plus one discretionary mark, or two for a particularly well-answered question. This individual practice card is therefore marked out of 12. The scheme also prints 45 marks for all four summaries together, while the paper prints 40. Four individual maxima add to 48; do not add these practice scores to report a section mark above the scheme’s printed 45. All three source figures are retained. Assess content manually against the complete printed pool and its conditions; the numerical controls do not count or classify individual details. Assess language manually for each section. Read the general no-marks instruction alongside the summary-specific discretion exception. The scheme gives no numerical or wholly/mixed-language threshold; do not automatically remove discretionary marks merely because Russian words appear. English or Irish is permitted by the original bilingual paper."
+    }
+  },
+  {
+    "id": "ru-2011-hl-c2-3",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2011,
+    "section": "C2",
+    "topicId": "russian-3-1",
+    "conceptId": "russian-2011-summary-section-3",
+    "questionRef": "2011 HL Section C2 Q3",
+    "questionText": "Write a summary in English of the content of each Section as instructed.\n\nApart from classroom learning, what activities do British boarding schools support? Give five details.",
+    "totalMarks": 12,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2011 Higher Russian — C2",
+      "pages": [
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8, 9.",
+    "review": {
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        8,
+        9
+      ],
+      "component": "000",
+      "questionPages": [
+        8
+      ],
+      "guidancePages": [
+        3
+      ],
+      "reviewedAt": "2026-11-19",
+      "splitApproval": "scripts/markbank/authoring/reviews/russian-r7-split-20261119/2011-hl-approval.json"
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "count": 1,
+      "groups": [
+        {
+          "id": "section-3",
+          "label": "Section 3",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "section-3-content",
+              "label": "Section 3 content (manual assessment)",
+              "maxMarks": 10,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
+                "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)",
+                "Main points: sports/ easy for boys + not as straightforward/limited choice for girls + sports associated with different seasons + entertainment/leisure activities + themed non- uniform days (for charity) = pay a £ and wear a costume associated with the theme + snowball fighting and sledging + going to away matches Secondary details: any two of sports for boys: football, tennis, hockey, rugby, cricket, swimming, gym + sports for girls (hockey, netball) + seasons = autumn and winter & spring & summer + tennis in the summer & cross-country all year round + leisure [assign one mark for each correct detail, up to a maximum of 4] = for fashion shows for charity & school plays & concerts & discos & celebratory dinners + students play musical instruments + students sing in choir"
+              ]
+            },
+            {
+              "id": "section-3-discretion",
+              "label": "Section 3 discretionary marks",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": [
+                "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
+                "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
+              ],
+              "limits": [
+                {
+                  "id": "section-3-incomplete",
+                  "maxMarks": 0,
+                  "when": {
+                    "any": [
+                      {
+                        "flag": "incomplete-summary-response",
+                        "prompt": "If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
+                      }
+                    ]
+                  },
+                  "guidance": [
+                    "If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "taskRequirements": [
+        "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
+        "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
+      ],
+      "markingGuideNote": "The scheme gives up to 10 content marks plus one discretionary mark, or two for a particularly well-answered question. This individual practice card is therefore marked out of 12. The scheme also prints 45 marks for all four summaries together, while the paper prints 40. Four individual maxima add to 48; do not add these practice scores to report a section mark above the scheme’s printed 45. All three source figures are retained. Assess content manually against the complete printed pool and its conditions; the numerical controls do not count or classify individual details. Assess language manually for each section. Read the general no-marks instruction alongside the summary-specific discretion exception. The scheme gives no numerical or wholly/mixed-language threshold; do not automatically remove discretionary marks merely because Russian words appear. English or Irish is permitted by the original bilingual paper."
+    }
+  },
+  {
+    "id": "ru-2011-hl-c2-4",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2011,
+    "section": "C2",
+    "topicId": "russian-3-1",
+    "conceptId": "russian-2011-summary-section-4",
+    "questionRef": "2011 HL Section C2 Q4",
+    "questionText": "Write a summary in English of the content of each Section as instructed.\n\nWhat benefits has Anna derived from studying in British schools? Give five details.",
+    "totalMarks": 12,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2011 Higher Russian — C2",
+      "pages": [
+        9
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8, 9.",
+    "review": {
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        8,
+        9
+      ],
+      "component": "000",
+      "questionPages": [
+        9
+      ],
+      "guidancePages": [
+        3
+      ],
+      "reviewedAt": "2026-11-19",
+      "splitApproval": "scripts/markbank/authoring/reviews/russian-r7-split-20261119/2011-hl-approval.json"
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "count": 1,
+      "groups": [
+        {
+          "id": "section-4",
+          "label": "Section 4",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "section-4-content",
+              "label": "Section 4 content (manual assessment)",
+              "maxMarks": 10,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
+                "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)",
+                "Main points: opened her eyes/broadened her experience /will be invaluable in the future + most important: increased awareness of how others live, of other’s traditions and values + adaptation to a new system + not compromising self/staying or remaining who she was + friends live all over the world + access to best universities in the world + a new view of/take on the world Secondary details: unrepeatable/once-off life experience + invaluable = English- language skills + independence/self-reliance + interaction with people from all over the world + questions: where does she belong? + whole world opens up before her"
+              ]
+            },
+            {
+              "id": "section-4-discretion",
+              "label": "Section 4 discretionary marks",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": [
+                "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
+                "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
+              ],
+              "limits": [
+                {
+                  "id": "section-4-incomplete",
+                  "maxMarks": 0,
+                  "when": {
+                    "any": [
+                      {
+                        "flag": "incomplete-summary-response",
+                        "prompt": "If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
+                      }
+                    ]
+                  },
+                  "guidance": [
+                    "If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "taskRequirements": [
+        "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
+        "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
+      ],
+      "markingGuideNote": "The scheme gives up to 10 content marks plus one discretionary mark, or two for a particularly well-answered question. This individual practice card is therefore marked out of 12. The scheme also prints 45 marks for all four summaries together, while the paper prints 40. Four individual maxima add to 48; do not add these practice scores to report a section mark above the scheme’s printed 45. All three source figures are retained. Assess content manually against the complete printed pool and its conditions; the numerical controls do not count or classify individual details. Assess language manually for each section. Read the general no-marks instruction alongside the summary-specific discretion exception. The scheme gives no numerical or wholly/mixed-language threshold; do not automatically remove discretionary marks merely because Russian words appear. English or Irish is permitted by the original bilingual paper."
     }
   }
 ]
