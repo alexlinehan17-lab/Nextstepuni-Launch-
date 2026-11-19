@@ -450,7 +450,7 @@ class ClScheme:
         # The answers begin at the first topic head; everything before it is
         # the note to teachers and the introduction.
         start = next((i for i, l in enumerate(lines)
-                      if re.match(r'^Topic\s+\d{1,2}[.:]', l)), None)
+                      if re.match(r'^Topic\s+\d{1,2}[.:]', l, re.I)), None)
         if start is None:
             raise AssertionError(f'{self.path}: no "Topic 1." head')
         out = []
@@ -461,7 +461,8 @@ class ClScheme:
                 continue
             if re.match(r'^Appendix\b', line.strip()):
                 break
-            m = re.match(r'^Topic\s+(\d{1,2})[.:]', line)
+            # "TOPIC 1:" in capitals: 2013 Ordinary heads every topic so.
+            m = re.match(r'^Topic\s+(\d{1,2})[.:]', line, re.I)
             if m:
                 topic, roman, letter, buf = int(m.group(1)), None, None, []
                 continue
