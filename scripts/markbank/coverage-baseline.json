@@ -30,11 +30,11 @@
     "refsHash": "e0d39c458d72982a"
   },
   "ancient-greek": {
-    "cards": 383,
-    "contentHash": "a367719c91764025",
+    "cards": 404,
+    "contentHash": "20c4392f54a33e25",
     "coveragePct": 100.0,
-    "covered": 387,
-    "excluded": 371,
+    "covered": 408,
+    "excluded": 350,
     "leaves": 758,
     "open": 0,
     "orphans": 0,
@@ -42,7 +42,7 @@
       "count": 27,
       "hash": "211caedff97f5a80"
     },
-    "refsHash": "2ecf53681016b22d"
+    "refsHash": "d07829765aae8bf1"
   },
   "applied-maths": {
     "cards": 1486,
@@ -483,11 +483,11 @@
     "refsHash": "999ffad1ef9e4b50"
   },
   "latin": {
-    "cards": 227,
-    "contentHash": "33bb32809e144f2d",
+    "cards": 231,
+    "contentHash": "1824b58aa2fa3d6a",
     "coveragePct": 100.0,
-    "covered": 237,
-    "excluded": 91,
+    "covered": 241,
+    "excluded": 87,
     "leaves": 328,
     "open": 0,
     "orphans": 0,
@@ -495,7 +495,7 @@
       "count": 8,
       "hash": "eca81927b9c1e198"
     },
-    "refsHash": "ecd84fa7c53eb9c0"
+    "refsHash": "1068c61a33369766"
   },
   "latvian": {
     "cards": 20,
@@ -601,6 +601,21 @@
       "hash": "6c618224f47c0b52"
     },
     "refsHash": "98497719950dbd78"
+  },
+  "music": {
+    "cards": 46,
+    "contentHash": "8634bc5a8b03e0c0",
+    "coveragePct": 94.3,
+    "covered": 50,
+    "excluded": 0,
+    "leaves": 53,
+    "open": 3,
+    "orphans": 0,
+    "papers": {
+      "count": 3,
+      "hash": "a8e3a2545845e20d"
+    },
+    "refsHash": "c2ebc900e30e56ea"
   },
   "physical-education": {
     "cards": 772,

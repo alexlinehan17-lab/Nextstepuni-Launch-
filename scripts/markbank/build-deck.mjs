@@ -219,6 +219,14 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/lcvp',
     blocked: new Set(),
   },
+  /* Review pack 1 prototype (treatments lane): ONE sitting, 2025 Higher. */
+  music: {
+    title: 'Music',
+    specVersion: 'lc-music-syllabus',
+    specNote: 'Cards are tagged to the Listening, Composing and elective strands of the Leaving\n * Certificate Music syllabus. A sitting is up to THREE booklets: Listening (core),\n * Composing and, at Higher Level, the Listening elective. A listening card plays the\n * SEC\'s own published sound file; a band-marked answer is placed on the scheme\'s\n * printed bands.',
+    figureDir: 'public/exam-figures/music',
+    blocked: new Set(),
+  },
   german: {
     title: 'German',
     /* The syllabus these papers were sat under and the one still being sat.
@@ -624,6 +632,70 @@ const UNPRINTED_ANSWER = 'The scheme prints no answer for this part.';
  *  it, so no card carries it as data. */
 const HISTORY_ESSAY_NO_MODEL_ANSWER = 'The scheme prints no model answer for this question.';
 
+/** The line a card carries when the SEC published no marking scheme for its
+ *  paper (PLAN-2026-11-18 R4). Mirrors NO_SCHEME_PUBLISHED in types/markBank.ts. */
+const NO_SCHEME_PUBLISHED = 'The SEC published no marking scheme for this paper.';
+
+/**
+ * A card whose paper has no published scheme (types/markBank.ts `noScheme`):
+ * the question as printed, the paper's own marks, and one criterion row that
+ * reads NO_SCHEME_PUBLISHED and claims nothing. It is refused if the sitting
+ * HAS a scheme, on disk or in the Paper Trail index: the flag can never stand
+ * in for an answer the SEC printed. Returns the reason to drop it, or null.
+ */
+function noSchemeFault(c) {
+  const t = c.tariffModel ?? {};
+  if (t.kind !== 'questionTotal') return 'a no-scheme card has the questionTotal tariff';
+  if (c.rows.length !== 1) return 'a no-scheme card has exactly one row';
+  const [r] = c.rows;
+  if (r.kind !== 'criterion' || r.verbatim !== NO_SCHEME_PUBLISHED || (r.marks !== null && r.marks !== undefined)
+    || r.group || r.parts || r.permittedMarks || r.route || r.unprinted || r.ask) {
+    return `a no-scheme card's one row is an unpriced criterion reading "${NO_SCHEME_PUBLISHED}"`;
+  }
+  if (c.answerVariants?.length || c.questionBonus || c.taskGroups || c.figureKey || c.labelKey?.length) {
+    return 'a no-scheme card carries nothing from a scheme';
+  }
+  if (!Number.isInteger(c.totalMarks) || c.totalMarks <= 0) return 'a no-scheme card keeps the marks its paper prints';
+  const stem = `${c.year}-${LEVEL_TOKEN[c.level] ?? 'hl'}${deferredCard(SUBJECT_ID, c) ? '-deferred' : ''}`;
+  if (['md', 'pdf'].some(ext => existsSync(resolve(ROOT, 'examiner-reports', SUBJECT_ID, 'schemes', `${stem}.${ext}`)))) {
+    return `a scheme for ${c.year} ${c.level} is on disk`;
+  }
+  const entry = deferredCard(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, c.year, c.level) : paperEntry(SUBJECT_ID, c.year, c.level);
+  if (entry?.papers?.some(p => p.scheme?.f)) return `the Paper Trail index lists a scheme for ${c.year} ${c.level}`;
+  return null;
+}
+
+/** The fixed line on a translation card. Mirrors TRANSLATION_NO_MODEL in
+ *  types/markBank.ts; the panel prints it, so no card carries it as data. */
+const TRANSLATION_NO_MODEL = 'The scheme prints no model translation.';
+
+/**
+ * An unseen-translation rubric card (types/markBank.ts TranslationRubric),
+ * held as a point card's rows are: every unit of the passage and every line
+ * of the scheme's rule must be found in that year's scheme, the units' marks
+ * must make the question's total, and nothing else may ride on it. Returns
+ * the reason to drop the card, or null.
+ */
+function translationFault(c, scheme) {
+  const r = c.rubric;
+  if (r?.system !== 'translation') return 'not a translation rubric';
+  if ('schemeFileid' in r) return 'schemeFileid is resolved by the build, never authored';
+  if (!Array.isArray(r.units) || !r.units.length) return 'a translation card needs its units';
+  if (new Set(r.units.map(u => u.id)).size !== r.units.length) return 'two units share an id';
+  const bad = r.units.find(u => !String(u.text ?? '').trim() || !Number.isInteger(u.marks) || u.marks <= 0);
+  if (bad) return `unit ${bad.id} has no text or no whole positive mark`;
+  const sum = r.units.reduce((n, u) => n + u.marks, 0);
+  if (sum !== c.totalMarks) return `units sum to ${sum}, the paper prints ${c.totalMarks}`;
+  if (!Array.isArray(r.schemeGuidance) || !r.schemeGuidance.length) return 'a translation card quotes the scheme\'s own rule';
+  const untraced = [...r.units.map(u => u.text), ...r.schemeGuidance].find(text => !claimMatches(scheme, text));
+  if (untraced) return `not found in the ${c.year} ${c.level} scheme: "${String(untraced).slice(0, 60)}"`;
+  if (!Array.isArray(r.schemePages) || !r.schemePages.length || r.schemePages.some(p => !Number.isInteger(p) || p <= 0)) {
+    return 'schemePages must be the scheme pages the units are printed on';
+  }
+  if (!String(r.sourceLanguage ?? '').trim() || !String(r.markingGuideNote ?? '').trim()) return 'sourceLanguage and markingGuideNote are required';
+  return null;
+}
+
 /**
  * A History essay rubric card (types/markBank.ts HistoryEssayRubric), checked
  * the way a point card's rows are: every string the card shows from the
@@ -687,10 +759,13 @@ function historyEssayFault(c, scheme) {
 /** The decks whose writing is a rubric card on the French grid shape, gated
  *  by spanishGridFault: Spanish, and German (whose expression criterion may
  *  carry a printed lower scale). */
-const GRID_SUBJECTS = new Set(['spanish', 'german']);
+const GRID_SUBJECTS = new Set(['spanish', 'german', 'music']);
+/** Music is sat in separate booklets; a card's section names the booklet it is
+ *  printed in, by the Paper Trail index's own label. */
+const MUSIC_BOOKLET = { L: 'Listening', A: 'Composing', B: 'Composing', E: 'Elective' };
 function spanishGridFault(c, scheme) {
   const r = c.rubric;
-  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish or German marking grid';
+  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German or Music marking grid';
   if (r.allocation || r.answerGuide) return 'a marking grid carries no answer rows';
   const criteria = r.criteria ?? [];
   if (!criteria.length || new Set(criteria.map(k => k.id)).size !== criteria.length) return 'no criteria, or two with one id';
@@ -1609,6 +1684,44 @@ const seenHash = new Map();
 let unresolvedPapers = 0;
 
 for (const c of cards) {
+  /* An unseen translation marked unit by unit (Latin): a RUBRIC card of its
+   * own system, with its own gate. Only a card authored with
+   * rubric.system 'translation' takes this path, so every other deck,
+   * History's essays included, is emitted exactly as before. */
+  if (c.kind === 'rubric' && c.rubric?.system === 'translation') {
+    if (seenId.has(c.id)) { dropped.push(`${c.id}: duplicate id`); continue; }
+    const badQ = badQuestion(c.questionText, c);
+    if (badQ) { dropped.push(`${c.id}: ${badQ} — "${c.questionText}"`); continue; }
+    const scheme = schemeFor(SUBJECT_ID, c);
+    if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
+    const fault = translationFault(c, scheme);
+    if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
+    const source = c.sourceMaterial;
+    const badSource = source ? sourceMaterialFault(source, 'sourceMaterial') : null;
+    if (badSource) { dropped.push(`${c.id}: ${badSource}`); continue; }
+    repairGlyphs(c);
+    const mangled = mangledText(c);
+    if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+    const fileid = resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
+    if (!fileid) unresolvedPapers++;
+    const schemeFile = paperEntry(SUBJECT_ID, c.year, c.level)?.papers?.find(p => p.scheme?.f)?.scheme?.f;
+    if (!schemeFile) { dropped.push(`${c.id}: no scheme document in the Paper Trail index`); continue; }
+    const rubric = { ...c.rubric, schemeFileid: String(schemeFile).replace(/\.pdf$/i, '') };
+    const pages = rubric.schemePages.length > 1 ? `pp.${rubric.schemePages[0]}-${rubric.schemePages.at(-1)}` : `p.${rubric.schemePages[0]}`;
+    seenId.add(c.id);
+    out.push({ id: c.id, level: c.level, code: `  {
+    ...base, kind: "rubric",
+    year: ${c.year}, level: ${q(c.level)},
+    paperFileid: ${fileid ? q(fileid) : 'null'},
+    schemeCitation: ${q(`Units and marks quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level, ${pages} — © State Examinations Commission.`)},
+    id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
+    section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
+    questionText: ${q(c.questionText)},
+    totalMarks: ${c.totalMarks},
+    rubric: ${JSON.stringify(rubric, null, 6).replace(/\n/g, '\n    ')},${source ? `\n    sourceMaterial: ${JSON.stringify(source, null, 6).replace(/\n/g, '\n    ')},` : ''}
+  } as SecCard,` });
+    continue;
+  }
   /* A History essay is a RUBRIC card: no rows, a paragraph-marking apparatus
    * instead. It gets its own gates and its own literal, and nothing else in
    * this loop applies to it. No other subject authors kind 'rubric' into its
@@ -1638,6 +1751,8 @@ for (const c of cards) {
     if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
     const fileid = deferredCard(SUBJECT_ID, c)
       ? deferredDoc(SUBJECT_ID, c, 'Exam Paper')
+      : SUBJECT_ID === 'music'
+      ? resolveCompanionFileid('music', c.year, c.level, MUSIC_BOOKLET[c.section])
       : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
     if (!fileid) unresolvedPapers++;
     const pages = c.schemePages.length > 1 ? `pp.${c.schemePages[0]}-${c.schemePages.at(-1)}` : `p.${c.schemePages[0]}`;
@@ -1881,11 +1996,19 @@ for (const c of cards) {
   const kindFault = badRowKind(c);
   if (kindFault) { dropped.push(`${c.id}: ${kindFault}`); continue; }
 
+  /* A card whose paper has no published scheme claims nothing from one, so
+   * it has nothing to trace; noSchemeFault holds it to its one fixed row and
+   * refuses it outright where a scheme exists. Only a card authored with
+   * `noScheme` takes this path. */
+  if (c.noScheme) {
+    const fault = noSchemeFault(c);
+    if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
+  }
   // Every marking point must actually appear in its own scheme.
-  const scheme = schemeFor(SUBJECT_ID, c);
-  if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
+  const scheme = c.noScheme ? null : schemeFor(SUBJECT_ID, c);
+  if (!c.noScheme && !scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
   const untraceable = [];
-  for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows), ...(c.questionBonus ? [[c.questionBonus]] : [])].flat()) {
+  for (const r of c.noScheme ? [] : [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows), ...(c.questionBonus ? [[c.questionBonus]] : [])].flat()) {
     if (r.unprinted) {
       /* A printed ask whose scheme prints NO answer row (Biology 2010 Ordinary
        * Q11(c)(vii)): every printed ask gets a card, and this row says the
@@ -2048,6 +2171,8 @@ for (const c of cards) {
       : String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null)
     : listening
       ? resolveCompanionFileid(SUBJECT_ID, year, level, 'Aural Paper')
+      : SUBJECT_ID === 'music'
+      ? resolveCompanionFileid('music', year, level, MUSIC_BOOKLET[c.section])
       : audioQuestionPaperFileid(c, SUBJECT_ID)
         ?? resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
   if (!fileid) unresolvedPapers++;
@@ -2056,11 +2181,13 @@ for (const c of cards) {
     ...base,${c.qa ? ` qa: ${JSON.stringify(c.qa)},` : ''}${c.curriculumNodeIds ? `\n    ...examCardCurriculum(${q(SUBJECT_ID)}, ${year}, ${JSON.stringify(c.curriculumNodeIds)}),` : ''} kind: ${q(labelKey ? 'diagram' : 'question')},
     year: ${year}, level: ${q(level)},
     paperFileid: ${fileid ? q(fileid) : 'null'},
-    schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry || reviewedSource?.sitting === 'deferred' ? ', deferred examination' : ''} — © State Examinations Commission.`)},
+    schemeCitation: ${q(c.noScheme
+    ? `No marking scheme: the SEC published none for ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry || reviewedSource?.sitting === 'deferred' ? ', deferred examination' : ''}. Question quoted from the SEC examination paper — © State Examinations Commission.`
+    : `Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry || reviewedSource?.sitting === 'deferred' ? ', deferred examination' : ''} — © State Examinations Commission.`)},
     id: ${q(c.id)}, topicId: ${q(c.topicId)},${c.additionalTopicIds?.length ? ` additionalTopicIds: ${JSON.stringify(c.additionalTopicIds)},` : ''} conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},${c.questionChoices?.length ? `\n    questionChoices: ${JSON.stringify(c.questionChoices)},` : ''}
-    tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},
+    tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},${c.noScheme ? '\n    noScheme: true,' : ''}
     rows: [
 ${rows}
     ],${c.mathematicsScale ? `\n    mathematicsScale: ${JSON.stringify(c.mathematicsScale)},` : ''}${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.audioMaterial ? `\n    audioMaterial: ${JSON.stringify(c.audioMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.videoMaterial ? `\n    videoMaterial: ${JSON.stringify(c.videoMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
