@@ -1,0 +1,937 @@
+{
+  "createdAt": "2026-11-18T22:52:55.721942+00:00",
+  "status": "Awaiting Alex; no inferred marks published",
+  "liveMainChecked": "476e46a476503e6ebc9bed44723780141ab537b5",
+  "liveCardsChanged": 0,
+  "sourceHashes": {
+    "2019": {
+      "paper": {
+        "pages": 16,
+        "sha256": "539997eea0823aaf3f93224cc764ec9904cb57ef8afbe3de2048c413e153ecc8"
+      },
+      "aural": {
+        "pages": 8,
+        "sha256": "b2353a68203d0fd57e2e1d1f78ece5b024db3f251308502c599100b990e2662e"
+      },
+      "scheme": {
+        "pages": 24,
+        "sha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216"
+      }
+    },
+    "2020": {
+      "paper": {
+        "pages": 16,
+        "sha256": "29eb6fbdfe4d43b0f85912a87ba9589710417a5e39794c630f0ff70949c37251"
+      },
+      "aural": {
+        "pages": 8,
+        "sha256": "d9394291088173c4590d88db20bb6c5380dec243a2c50cebc37ea12c4d53e3a8"
+      },
+      "scheme": {
+        "pages": 27,
+        "sha256": "7ac8daeec37224d7082fe61f3e6a6bf5c6c99429580bc25bfa5efd2ff888d55f"
+      }
+    }
+  },
+  "freshRecheck": {
+    "2019": "Direct SEC request returned403 on18November; further scripted SEC requests stopped. Retained pinned originals are shown.",
+    "2020": "No new request after the2019 403; native refresh still pending."
+  },
+  "listening": {
+    "current": "Eight whole-section confidence cards",
+    "proposed": "46 individual printed-ask cards with source answers; two marks per requested detail inferred from paper section totals, preserving all explicit one-mark and zero-mark clauses. Luggage stays one plus one.",
+    "cards": [
+      {
+        "id": "ru-2019-hl-l1-1",
+        "year": 2019,
+        "section": "L1",
+        "question": "Why does the taxi driver recommend the Radisson hotel? Give two details.",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          14
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• New • Modern • Central location • Museum/theatre/department store not far from it • Park/river beside it",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l1-2-i",
+        "year": 2019,
+        "section": "L1",
+        "question": "What level of English does this caller have?",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          14
+        ],
+        "printedDetailQuota": 1,
+        "proposedDetails": 1,
+        "proposedMaximum": 2,
+        "sourceAnswers": "• Beginner",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l1-2-ii",
+        "year": 2019,
+        "section": "L1",
+        "question": "How many people will be in her class?",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          14
+        ],
+        "printedDetailQuota": 1,
+        "proposedDetails": 1,
+        "proposedMaximum": 2,
+        "sourceAnswers": "• Five",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l1-3",
+        "year": 2019,
+        "section": "L1",
+        "question": "Give two details about the patient’s symptoms.",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          14
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Headache • Sore throat • Fever/high temperature/38.8",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l1-4",
+        "year": 2019,
+        "section": "L1",
+        "question": "Give two details about the plans these friends make for this evening.",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          14
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Going to the theatre • Meeting at metro/underground exit • At 6.30 pm • Play begins at 7pm",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l1-5-i",
+        "year": 2019,
+        "section": "L1",
+        "question": "Where does this caller want to go?",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          14
+        ],
+        "printedDetailQuota": 1,
+        "proposedDetails": 1,
+        "proposedMaximum": 2,
+        "sourceAnswers": "• Train station Assign one mark: station",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l1-5-ii",
+        "year": 2019,
+        "section": "L1",
+        "question": "How many passengers will be travelling in the taxi?",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          14
+        ],
+        "printedDetailQuota": 1,
+        "proposedDetails": 1,
+        "proposedMaximum": 2,
+        "sourceAnswers": "• four",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l2-1-i",
+        "year": 2019,
+        "section": "L2",
+        "question": "Give two details about Maria’s first experiences of Irish dancing.",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          15
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Four years ago • Her friend brought her • Didn’t take it seriously at that time • Thought she would not come back • It would only be that one time • Enjoyed the atmosphere • New friends helped her to make a right decision • She decided to stay/ get involved",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l2-2-i",
+        "year": 2019,
+        "section": "L2",
+        "question": "Give two details about Irish Culture Day.",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          15
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• 20th September • In Youth centre • First time • There will be dancing • Master classes • Art market • Irish culture lectures",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l2-2-ii",
+        "year": 2019,
+        "section": "L2",
+        "question": "Give one detail about the age range of the dancers in the group.",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          15
+        ],
+        "printedDetailQuota": 1,
+        "proposedDetails": 1,
+        "proposedMaximum": 2,
+        "sourceAnswers": "• Different age range • 14 year old teens • Once there was a 60 year old man",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l2-3-i",
+        "year": 2019,
+        "section": "L2",
+        "question": "What does Maria say about her job? Give two details.",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          15
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Works in a toy museum • Loves her work • It’s creative • Organisational/routine",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l2-3-ii",
+        "year": 2019,
+        "section": "L2",
+        "question": "Name one other hobby apart from Irish dancing that Maria enjoys",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          15
+        ],
+        "printedDetailQuota": 1,
+        "proposedDetails": 1,
+        "proposedMaximum": 2,
+        "sourceAnswers": "• Ice skating • ceramics Award one mark: skating",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l2-4",
+        "year": 2019,
+        "section": "L2",
+        "question": "Give two details about Maria’s last holiday.",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          15
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Lake (Svetloyar) • Nizhegorodskaya province • One week • Lived in the forest • Enjoyed nature",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l3-1-i",
+        "year": 2019,
+        "section": "L3",
+        "question": "Where and when will the festival take place?",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          16
+        ],
+        "printedDetailQuota": null,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• The Mill Theatre / Dundrum theatre / Dublin theatre • 21st and 22nd July • Award one mark for a partial detail e.g. Dublin/Dundrum",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": "Two details are the explicitly requested where and when."
+      },
+      {
+        "id": "ru-2019-hl-l3-1-ii",
+        "year": 2019,
+        "section": "L3",
+        "question": "Give two details about the opening ceremony of the festival.",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          16
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• 2:00 pm • viewers will be able to watch the works of different schools • viewers would be able to take part in a secret vote/ballot • meet with young actors • meet the honoured guests of the festival Assign no marks: artists",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l3-2-i",
+        "year": 2019,
+        "section": "L3",
+        "question": "Give two details about the subject matter of the film ‘Zhili Bili.’",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          16
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Real Russian people • history of the whole generation • parents • grandmothers • grandfathers • nature • touches the soul Assign no marks: comedy",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l3-2-ii",
+        "year": 2019,
+        "section": "L3",
+        "question": "What format of this film will be shown?",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          16
+        ],
+        "printedDetailQuota": 1,
+        "proposedDetails": 1,
+        "proposedMaximum": 2,
+        "sourceAnswers": "• In Russian with English subtitles",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l3-3",
+        "year": 2019,
+        "section": "L3",
+        "question": "Give three details about the award ceremony.",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          16
+        ],
+        "printedDetailQuota": 3,
+        "proposedDetails": 3,
+        "proposedMaximum": 6,
+        "sourceAnswers": "• 22nd July • The Mill Theatre • 5:00 pm • Free admission",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l4-1-i",
+        "year": 2019,
+        "section": "L4",
+        "question": "Give two details about Michael’s family.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          17
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• His father is German • His mother was born in (Northern) Ireland • Has (an older) sister/Kathrine • Family moved to Ireland",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l4-1-ii",
+        "year": 2019,
+        "section": "L4",
+        "question": "Give two details about the part‐time job Michael had when he was young.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          17
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Michael worked as a waiter • General operator • In his father’s/family restaurant • Parents encouraged him to work hard",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l4-2-i",
+        "year": 2019,
+        "section": "L4",
+        "question": "Give one detail about the band that Michael formed during his teenage years.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          17
+        ],
+        "printedDetailQuota": 1,
+        "proposedDetails": 1,
+        "proposedMaximum": 2,
+        "sourceAnswers": "• Rock band • he played the guitar • played in clubs in Killarney",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l4-2-ii",
+        "year": 2019,
+        "section": "L4",
+        "question": "Give two details about why Michael says the age of 19 was the most difficult time in his life.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          17
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Entered London Drama Centre • Rented a cold apartment • Worked and studied at the same time • In a few years he dropped out of Drama Centre • Went touring with the Oxford Stage Company",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l4-3-i",
+        "year": 2019,
+        "section": "L4",
+        "question": "Give two details about Michael’s leading role in the film ‘300.’",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          17
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• 2006 • Trained for 4 hours a day • For 10 weeks",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2019-hl-l4-3-ii",
+        "year": 2019,
+        "section": "L4",
+        "question": "Give one detail about why 2014 was a significant year in Michael’s career.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          17
+        ],
+        "printedDetailQuota": 1,
+        "proposedDetails": 1,
+        "proposedMaximum": 2,
+        "sourceAnswers": "• He was nominated for an Oscar for his role in “12 years a slave” • he didn’t win • Michael says that awards are not important for him/ are of no interest to him",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l1-1",
+        "year": 2020,
+        "section": "L1",
+        "question": "What do these people order to eat and drink? Give two details.",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          17
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• 2 bottles of sparkling water • Salad (Stolichniy) • Fish",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l1-2",
+        "year": 2020,
+        "section": "L1",
+        "question": "What luggage does this person have?",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          17
+        ],
+        "printedDetailQuota": null,
+        "proposedDetails": 1,
+        "proposedMaximum": 2,
+        "sourceAnswers": "• One suitcase (1 mark) and a bag/purse (1 mark)",
+        "basis": "Printed one mark for suitcase plus one for bag/purse.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l1-3",
+        "year": 2020,
+        "section": "L1",
+        "question": "What is the weather like at the moment? Give two details.",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          17
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Cold • 15 below zero • Rain • Snow • Hailstones • Fog",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l1-4",
+        "year": 2020,
+        "section": "L1",
+        "question": "Give two details about what this person wants to buy.",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          17
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Jeans • Size m (44-46) • Navy • Classic cut",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l1-5-i",
+        "year": 2020,
+        "section": "L1",
+        "question": "Give two details about the classes Tanya will attend in St Petersburg.",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          17
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Summer school of Saint-Petersburg University • Russian grammar + literature + history • Students from different countries attend • Popular • 8 hours a day",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l1-5-ii",
+        "year": 2020,
+        "section": "L1",
+        "question": "What does Tanya plan to do in Russia after the two weeks of classes?",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          17
+        ],
+        "printedDetailQuota": null,
+        "proposedDetails": 1,
+        "proposedMaximum": 2,
+        "sourceAnswers": "• Visit Moscow • Take a train (Trans-Siberian railway) to Vladivostok • Plans to spend 2 weeks in Vladivostok",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": "One complete response is inferred for the unnumbered detail quota from the section total."
+      },
+      {
+        "id": "ru-2020-hl-l2-1-i",
+        "year": 2020,
+        "section": "L2",
+        "question": "Give two details about Elena’s training as a gymnast.",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          18
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Started training at the age of 8 • 5 days a week • 4 hours a day • She has been doing (rhythmic) gymnastics for over 10 years • Her mother brought her • 5 years old",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l2-2-i",
+        "year": 2020,
+        "section": "L2",
+        "question": "Why did Elena say she chose rhythmic gymnastics?",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          18
+        ],
+        "printedDetailQuota": null,
+        "proposedDetails": 1,
+        "proposedMaximum": 2,
+        "sourceAnswers": "• Beautiful type / kind of sports • Interesting sports",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": "One complete response is inferred for the unnumbered detail quota from the section total."
+      },
+      {
+        "id": "ru-2020-hl-l2-2-ii",
+        "year": 2020,
+        "section": "L2",
+        "question": "How does her participation in sport affect Elena’s life. Give two details.",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          18
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• She doesn’t give up easily • She is determined to reach her goals • She learned to be independent early • She can do things around the house",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l2-3",
+        "year": 2020,
+        "section": "L2",
+        "question": "What are Elena’s hopes for the future? Give two details.",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          18
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• To be a promising / successful woman • To have a big friendly family • To be happy and loved • To be successful in her studies and her work",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l2-4",
+        "year": 2020,
+        "section": "L2",
+        "question": "How does Elena spend her free time? Give two details.",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          18
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Likes to walk her dogs • Listens to music • Goes shopping • Likes to visit people (with her parents) • Goes to the lake with her friends in Summer • Goes to the cinema • Rides her bike • Goes skating in Winter",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l2-5",
+        "year": 2020,
+        "section": "L2",
+        "question": "What other sports is Elena interested in? Give one detail",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          18
+        ],
+        "printedDetailQuota": 1,
+        "proposedDetails": 1,
+        "proposedMaximum": 2,
+        "sourceAnswers": "• Physical exercises • Running • Riding her bike • Skiing",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l3-1",
+        "year": 2020,
+        "section": "L3",
+        "question": "According to the advertisement, what does the bikesbooking.com scheme give tourists the freedom to do when visiting different cities? Give two details",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          19
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Visit surroundings of Barcelona • Visit deserted beaches • Ride a scooter along the river Tiber in Rome • Explore the sight-seeing in Amsterdam on a bike • Go around Moscow on a scooter",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l3-2-i",
+        "year": 2020,
+        "section": "L3",
+        "question": "How do we know that bikesbooking.com is a successful company? Give two details.",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          19
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• operates around the world • available in 40 countries • available in 1000 locations • offers bikes, scooters, quad cycles, motorcycles",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l3-2-ii",
+        "year": 2020,
+        "section": "L3",
+        "question": "What information needs to be provided to bikesbooking.com when making a booking. Give two details.",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          19
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Date • City • Type of a vehicle",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l3-3-i",
+        "year": 2020,
+        "section": "L3",
+        "question": "Give two details about the pricing structure offered by this company.",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          19
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Bikes 5-25 euro per day (24 hours) depending on a country • Scooter starts from 20 euro per day ( 24 hours) • Motor bike costs 36 euro",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l3-3-ii",
+        "year": 2020,
+        "section": "L3",
+        "question": "What additional services are offered by bikesbooking.com? Give two details.",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          19
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Compare prices • write a review • Airport or hotel delivery/drop off • Insurance • Navigation • Information on popular destination • Rules/ regulations • Traffic details/information • Second helmet • Choose model",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l4-1-i",
+        "year": 2020,
+        "section": "L4",
+        "question": "Who is Katya? Give three details.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          20
+        ],
+        "printedDetailQuota": 3,
+        "proposedDetails": 3,
+        "proposedMaximum": 6,
+        "sourceAnswers": "• Young Russian video blogger • The most successful teenage blogger in Russia • Born in Moscow • Born on 18 October 2003 • Adushkina is her real surname • Dancer",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l4-1-ii",
+        "year": 2020,
+        "section": "L4",
+        "question": "What does Katya do every summer? Give two details.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          20
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Does an intensive dancing course in Bulgaria • Takes part in dance festivals • In different cities/towns of Russia",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l4-2",
+        "year": 2020,
+        "section": "L4",
+        "question": "Give two details about what Katya had accomplished by 2017.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          20
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Over a million subscribers • Her videos were getting more popular • Registered her you tube channel",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l4-3-i",
+        "year": 2020,
+        "section": "L4",
+        "question": "Give two details about the content of Katya’s videos.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          20
+        ],
+        "printedDetailQuota": 2,
+        "proposedDetails": 2,
+        "proposedMaximum": 4,
+        "sourceAnswers": "• Tells about her travels • Tells about events in her life • Gives advice, for example, “riding a gyro scooter”/ “truth about braces” • Talks about interests",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      },
+      {
+        "id": "ru-2020-hl-l4-3-ii",
+        "year": 2020,
+        "section": "L4",
+        "question": "Give one detail about Katya’s pets.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          20
+        ],
+        "printedDetailQuota": 1,
+        "proposedDetails": 1,
+        "proposedMaximum": 2,
+        "sourceAnswers": "• Dog called ‘Rada’ / happy / joy • Cat called Steve • Dog: 1 mark • Cat: 1 mark",
+        "basis": "Proposed two per requested detail, inferred from the paper’s20-mark section total; not printed as a general per-detail rule.",
+        "additionalInference": ""
+      }
+    ]
+  },
+  "writing": {
+    "ids": [
+      "ru-2019-hl-se",
+      "ru-2020-hl-se"
+    ],
+    "printedTotal": 30,
+    "printedContent": 10,
+    "printedExpression": 20,
+    "ambiguousLine": "Deduct 1/2 marks from candidates who randomly use/fail to use soft signs in present tense forms or infinitives",
+    "proposedReading": "One or two marks, matching the explicit2018 one-or-two wording; this interpretation needs Alex because the2019/2020 line itself is ambiguous.",
+    "alternativeReading": "Half a mark.",
+    "sourcePages": {
+      "2019": [
+        10
+      ],
+      "2020": [
+        13
+      ]
+    },
+    "preserveIdsAndConceptIds": true
+  },
+  "images": [
+    {
+      "name": "2019-aural-01.png",
+      "sha256": "c313b91707e4fd00145c92dfe3a6566c2e4a0afc88b3b53f3168ecfd9bb048a9"
+    },
+    {
+      "name": "2019-aural-02.png",
+      "sha256": "6d00b2acf2884abf6a1c5333334f48fff18e044c957acba10185405fff9b9640"
+    },
+    {
+      "name": "2019-scheme-03.png",
+      "sha256": "31233764134ea49a30d4d5e588d862123d18f7b2eeb020ea4a547ab8953b30c6"
+    },
+    {
+      "name": "2019-scheme-04.png",
+      "sha256": "4a6a1c73eba2c6363fae1a0f3ef6e90b3772ef42a88dc62dcbe84db3ba17f571"
+    },
+    {
+      "name": "2019-scheme-05.png",
+      "sha256": "3a51c94352bc504268681cb757ef59cdf314fcfff29f920bc77e2f08e87fc871"
+    },
+    {
+      "name": "2020-aural-01.png",
+      "sha256": "10de1611880328588b7da5831d14e4ee138b4aa687688f082ca11c52af8134cd"
+    },
+    {
+      "name": "2020-aural-02.png",
+      "sha256": "5da9760e3579b5fadef70238bd42526a0e5c405c2b63971640750bdf648fdf34"
+    },
+    {
+      "name": "2020-scheme-03.png",
+      "sha256": "1c4f3ba131f4358a8ad3163abc0905c201129be261729813ca27fb1a2489beb1"
+    },
+    {
+      "name": "2020-scheme-04.png",
+      "sha256": "e5f06a5c8b71135419ae88965056dc4daa57c1481d883b2a08418467a7ad96c9"
+    },
+    {
+      "name": "2020-scheme-05.png",
+      "sha256": "20a60d0d085d80d50185ef0f0c17575252ccf5b9f00588f40f32cc09ae2da6f4"
+    }
+  ]
+}
