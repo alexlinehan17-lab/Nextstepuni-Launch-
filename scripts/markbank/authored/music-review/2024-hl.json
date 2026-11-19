@@ -1857,7 +1857,7 @@
     5
    ],
    "crop": null,
-   "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+   "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ oboe □ French horn",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -2081,7 +2081,7 @@
     9
    ],
    "crop": null,
-   "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a waltz is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+   "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a waltz is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ trumpet □ clarinet □ violin",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,

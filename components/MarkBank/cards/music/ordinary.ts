@@ -2219,7 +2219,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2026-ol-c-a-q1-a", topicId: "music-1-10", conceptId: "mus-answer-appropriate-choose-continuation",
     section: "A", questionRef: "2026 OL Composing Section A Q1(a)",
     stem: "Answer one question only in this section:",
-    questionText: "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+    questionText: "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ violin □ flute □ trumpet",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -2333,7 +2333,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2026-ol-c-a-q1-b", topicId: "music-1-10", conceptId: "mus-appropriate-choose-continuation-continue",
     section: "A", questionRef: "2026 OL Composing Section A Q1(b)",
     stem: "Answer one question only in this section:",
-    questionText: "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+    questionText: "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ violin □ flute □ trumpet",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -2444,10 +2444,10 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC067GLP006EV",
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2026 Ordinary Level, pp.8-9 — © State Examinations Commission.",
-    id: "mus-2026-ol-c-a-q3-a", topicId: "music-1-12", conceptId: "mus-answer-appropriate-choose-composing",
+    id: "mus-2026-ol-c-a-q3-a", topicId: "music-1-12", conceptId: "mus-answer-appropriate-choose-clarinet",
     section: "A", questionRef: "2026 OL Composing Section A Q3(a)",
     stem: "Answer one question only in this section:",
-    questionText: "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+    questionText: "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ clarinet □ flute □ violin",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -2558,10 +2558,10 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC067GLP006EV",
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2026 Ordinary Level, pp.8-9 — © State Examinations Commission.",
-    id: "mus-2026-ol-c-a-q3-b", topicId: "music-1-12", conceptId: "mus-appropriate-choose-composing-continue",
+    id: "mus-2026-ol-c-a-q3-b", topicId: "music-1-12", conceptId: "mus-appropriate-choose-clarinet-composing",
     section: "A", questionRef: "2026 OL Composing Section A Q3(b)",
     stem: "Answer one question only in this section:",
-    questionText: "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+    questionText: "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ clarinet □ flute □ violin",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -5209,7 +5209,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2025-ol-c-a-q1-a", topicId: "music-1-10", conceptId: "mus-answer-appropriate-choose-clarinet",
     section: "A", questionRef: "2025 OL Composing Section A Q1(a)",
     stem: "Answer one question only in this section:",
-    questionText: "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+    questionText: "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ descant recorder □ oboe",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -5329,7 +5329,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2025-ol-c-a-q1-b", topicId: "music-1-10", conceptId: "mus-appropriate-choose-clarinet-continuation",
     section: "A", questionRef: "2025 OL Composing Section A Q1(b)",
     stem: "Answer one question only in this section:",
-    questionText: "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+    questionText: "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ descant recorder □ oboe",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -5449,7 +5449,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2025-ol-c-a-q3-a", topicId: "music-1-12", conceptId: "mus-answer-appropriate-choose-clarinet",
     section: "A", questionRef: "2025 OL Composing Section A Q3(a)",
     stem: "Answer one question only in this section:",
-    questionText: "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a minuet. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+    questionText: "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a minuet. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ trumpet □ flute",
     totalMarks: 20,
     rubric: {
           "system": "french",
@@ -5569,7 +5569,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2025-ol-c-a-q3-b", topicId: "music-1-12", conceptId: "mus-appropriate-choose-clarinet-composing",
     section: "A", questionRef: "2025 OL Composing Section A Q3(b)",
     stem: "Answer one question only in this section:",
-    questionText: "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+    questionText: "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ trumpet □ flute",
     totalMarks: 20,
     rubric: {
           "system": "french",
