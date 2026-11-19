@@ -71787,5 +71787,3895 @@
    "presentationNote": "The questions exactly as the elective booklet prints them, about your own chosen topic."
   },
   "stem": "Answer all questions."
+ },
+ {
+  "id": "mus-2018-ol-l-q1-x1-i",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-15",
+  "conceptId": "mus-excerpt-from-taken-this",
+  "questionRef": "2018 OL Listening Q1 Excerpt 1(i)",
+  "questionText": "This excerpt is taken from the",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 1",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 2,
+     "r": [
+      0.08,
+      0.163,
+      0.92,
+      0.225
+     ]
+    }
+   ]
+  },
+  "stem": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1 for the first time. Answer (i) and (ii).",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 1 for the first time. Answer (i) and (ii).",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "middle of the work",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q1-x1-i-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q1-x1-ii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-15",
+  "conceptId": "mus-based-excerpt-heard-melody",
+  "questionRef": "2018 OL Listening Q1 Excerpt 1(ii)",
+  "questionText": "The melody heard at the start of this excerpt is based on the",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 1",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 2,
+     "r": [
+      0.08,
+      0.243,
+      0.92,
+      0.303
+     ]
+    }
+   ]
+  },
+  "stem": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1 for the first time. Answer (i) and (ii).",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 1 for the first time. Answer (i) and (ii).",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Friar Lawrence theme",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q1-x1-ii-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q1-x1-iii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-15",
+  "conceptId": "mus-melody-played",
+  "questionRef": "2018 OL Listening Q1 Excerpt 1(iii)",
+  "questionText": "The melody is played by",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 1",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 2,
+     "r": [
+      0.08,
+      0.351,
+      0.92,
+      0.41
+     ]
+    }
+   ]
+  },
+  "stem": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1 for the second time. Answer (iii).",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 1 for the second time. Answer (iii).",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "French horns.",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q1-x1-iii-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q1-x1-iv",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-15",
+  "conceptId": "mus-four-missing-notes-rhythm",
+  "questionRef": "2018 OL Listening Q1 Excerpt 1(iv)",
+  "questionText": "The rhythm of the four missing notes at X on the score is",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 1",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 2,
+     "r": [
+      0.08,
+      0.562,
+      0.92,
+      0.64
+     ]
+    }
+   ]
+  },
+  "stem": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played twice more. The first 2 bars of the melody are printed below. Answer (iv).",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 1",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The rhythm of the four missing notes at X on the score is",
+    "marks": 2,
+    "ask": true,
+    "contextNote": "The scheme prints its answer in music notation: its print is shown on this card."
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q1-x1-iv-score",
+  "questionFigureIncludesPrompt": true,
+  "figureKey": "music-2018-OL-scheme-p12-l-q1-x1-iv"
+ },
+ {
+  "id": "mus-2018-ol-l-q1-x2-i",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-15",
+  "conceptId": "mus-between-differences-excerpt-heard",
+  "questionRef": "2018 OL Listening Q1 Excerpt 2(i)",
+  "questionText": "Identify two differences between the music heard in this excerpt and the music heard in Excerpt 1.",
+  "totalMarks": 4,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 1",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 2,
+     "r": [
+      0.08,
+      0.685,
+      0.92,
+      0.897
+     ]
+    }
+   ]
+  },
+  "stem": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 2",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A difference (this excerpt — Excerpt 1)",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Melody/theme on trumpet(s) — Melody/theme on French horn",
+      "Rhythm from Strife theme heard in (all other parts) in orchestra. — This rhythm is not heard in excerpt 1. or A different fragment from the Strife theme is heard in this excerpt.",
+      "The dynamics are very loud / ff. — The dynamics are softer / p.",
+      "There are more instruments playing. or This excerpt is played tutti. — There are fewer instruments playing here.",
+      "There are percussion instruments used here. — There are no percussion instruments used here.",
+      "There are cymbals (crashes). — There are no cymbals (crashes).",
+      "The texture is fuller here. — The texture is more sparse."
+     ]
+    },
+    "contextNote": "The scheme reads: “Two differences (examples)” “Up to 2 marks each for 2 valid identifications of  differences between Excerpt 2 and Excerpt 1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q1-x3-i",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-15",
+  "conceptId": "mus-excerpt-music-this-tonality",
+  "questionRef": "2018 OL Listening Q1 Excerpt 3(i)",
+  "questionText": "The tonality of the music in this excerpt is",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 1",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 3,
+     "r": [
+      0.08,
+      0.094,
+      0.92,
+      0.152
+     ]
+    }
+   ]
+  },
+  "stem": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 3",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "minor",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q1-x3-i-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q1-x3-ii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-15",
+  "conceptId": "mus-explain-music-played-this",
+  "questionRef": "2018 OL Listening Q1 Excerpt 3(ii)",
+  "questionText": "This music is played tutti. Explain tutti.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 1",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 3,
+     "r": [
+      0.08,
+      0.156,
+      0.92,
+      0.25
+     ]
+    }
+   ]
+  },
+  "stem": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 3",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The (full) orchestra (plays) / all the instruments (play) (together)",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q1-x3-iii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-15",
+  "conceptId": "mus-excerpt-features-heard-identify",
+  "questionRef": "2018 OL Listening Q1 Excerpt 3(iii)",
+  "questionText": "Identify two features of the music heard in this excerpt.",
+  "totalMarks": 4,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 1",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 3,
+     "r": [
+      0.08,
+      0.268,
+      0.92,
+      0.362
+     ]
+    }
+   ]
+  },
+  "stem": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 3",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A feature of the music",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "The music is performed ff / very loud",
+      "The melody is played by flute / trumpet/ violins (I)",
+      "There are cymbal (crashes)",
+      "All the instruments play the same rhythm (at the start and end of the excerpt)",
+      "There are rising / descending scale(s)",
+      "There are (high) repeated notes"
+     ]
+    },
+    "contextNote": "The scheme reads: “Up to 2 marks for each of two valid identifications of features of the music.” “For example:”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q1-x4-i",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-15",
+  "conceptId": "mus-choice-excerpt-give-reason",
+  "questionRef": "2018 OL Listening Q1 Excerpt 4(i)",
+  "questionText": "In this excerpt there is a\nGive a reason for your choice.",
+  "totalMarks": 3,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 1",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 3,
+     "r": [
+      0.08,
+      0.425,
+      0.92,
+      0.578
+     ]
+    }
+   ]
+  },
+  "stem": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 4",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Crescendo",
+    "marks": 1,
+    "contextNote": "The scheme reads: “(Allow diminuendo).”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To (gradually) get louder / or to (gradually) get softer",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q1-x4-i-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q1-x4-ii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-15",
+  "conceptId": "mus-answer-fantasy-favourite-give",
+  "questionRef": "2018 OL Listening Q1 Excerpt 4(ii)",
+  "questionText": "Name your favourite section of Romeo and Juliet Fantasy Overture by Tchaikovsky.\nGive one reason why this is your favourite section. Refer to the music of Romeo and Juliet Fantasy Overture in your answer.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 1",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 3,
+     "r": [
+      0.08,
+      0.593,
+      0.92,
+      0.815
+     ]
+    }
+   ]
+  },
+  "stem": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "unprinted": true,
+    "contextNote": "The scheme reads: “Name of favourite section / part / theme.” “Up to 2 marks for any valid musical feature of named section / part / theme.”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q2-i",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-14",
+  "conceptId": "mus-cappella-explain-lines-sung",
+  "questionRef": "2018 OL Listening Q2(i)",
+  "questionText": "Lines 1–2 are sung a cappella. Explain a cappella.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 2",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 4,
+     "r": [
+      0.08,
+      0.299,
+      0.92,
+      0.357
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "unaccompanied (singing) (in one or more parts)",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "The scheme reads: “Up 2 to marks for a valid description of a cappella.” “For example:” “in church style = 1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q2-i-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q2-ii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-14",
+  "conceptId": "mus-first-heard-line-piano",
+  "questionRef": "2018 OL Listening Q2(ii)",
+  "questionText": "In which line is the piano heard for the first time? It plays",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 2",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 4,
+     "r": [
+      0.08,
+      0.387,
+      0.92,
+      0.488
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Line 3",
+    "marks": 1
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "broken chords",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q2-ii-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q2-iii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-14",
+  "conceptId": "mus-feature-identify-line-vocal",
+  "questionRef": "2018 OL Listening Q2(iii)",
+  "questionText": "Identify one feature of the vocal line in line 5.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 2",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 4,
+     "r": [
+      0.08,
+      0.509,
+      0.92,
+      0.566
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A feature of the vocal line in line 5",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "repeated notes",
+      "chromatic/step movement",
+      "panning",
+      "repetition",
+      "(sung in close) harmony"
+     ]
+    },
+    "contextNote": "The scheme reads: “One correct feature of vocal line in line 5,” “For example:”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q2-iv",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-14",
+  "conceptId": "mus-blows-depicted-describe-line",
+  "questionRef": "2018 OL Listening Q2(iv)",
+  "questionText": "Describe how the words any way the wind blows (line 6) are depicted in the music.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 2",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 4,
+     "r": [
+      0.08,
+      0.599,
+      0.92,
+      0.69
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "flanging / flanged cymbal",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "The scheme reads: “up to 2 marks for a valid description” “For example:” “flanging / flanged cymbal = 2” “word painting = 1 + elaboration = 2”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q2-v",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-14",
+  "conceptId": "mus-between-bohemian-differences-excerpt",
+  "questionRef": "2018 OL Listening Q2(v)",
+  "questionText": "Identify two differences between the music in the operatic section of Bohemian Rhapsody and the music heard in this excerpt.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 2",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 4,
+     "r": [
+      0.08,
+      0.722,
+      0.92,
+      0.856
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "unprinted": true,
+    "contextNote": "The scheme reads: “any two valid differences between the music in this excerpt and the music in the Operatic Section of Bohemian Rhapsody.” “1+1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q3-i",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-16",
+  "conceptId": "mus-excerpt-instruments-play-this",
+  "questionRef": "2018 OL Listening Q3(i)",
+  "questionText": "Which two instruments play in this excerpt? (Tick two).",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 3",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 5,
+     "r": [
+      0.08,
+      0.146,
+      0.92,
+      0.212
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "viola",
+    "marks": 1
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "cello",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q3-i-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q3-ii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-16",
+  "conceptId": "mus-explain-music-performed-senza",
+  "questionRef": "2018 OL Listening Q3(ii)",
+  "questionText": "The music is performed mp senza vib. Explain mp senza vib.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 3",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 5,
+     "r": [
+      0.08,
+      0.232,
+      0.92,
+      0.295
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "moderately soft",
+    "marks": 1
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "without vibrato",
+    "marks": 1,
+    "contextNote": "The scheme reads: “(or comparable descriptions)”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q3-ii-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q3-iii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-16",
+  "conceptId": "mus-bars-below-excerpt-missing",
+  "questionRef": "2018 OL Listening Q3(iii)",
+  "questionText": "An outline score of bars 1–6 of the excerpt is printed below. The missing time signature in bar 5 is",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 3",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 5,
+     "r": [
+      0.08,
+      0.323,
+      0.92,
+      0.517
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3/4",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q3-iii-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q3-iv",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-16",
+  "conceptId": "mus-excerpt-heard-music-texture",
+  "questionRef": "2018 OL Listening Q3(iv)",
+  "questionText": "The texture of the music heard in this excerpt is",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 3",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 5,
+     "r": [
+      0.08,
+      0.53,
+      0.92,
+      0.595
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "polyphonic",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q3-iv-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q3-v",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-16",
+  "conceptId": "mus-barry-gerald-heard-irish",
+  "questionRef": "2018 OL Listening Q3(v)",
+  "questionText": "Name an Irish tune used by Gerald Barry in his Piano Quartet No.1 and name the section of the work where it can be heard.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 3",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 5,
+     "r": [
+      0.08,
+      0.616,
+      0.92,
+      0.75
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:",
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An Irish tune used by Gerald Barry",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Sí Beag Sí Mór",
+      "Lord Mayo’s Delight",
+      "The Last Rose of Summer"
+     ]
+    },
+    "contextNote": "The scheme reads: “Name of Irish tune” “(Accept Sí Beag Sí Mór, Lord Mayo’s Delight and The Last Rose of Summer. Other Irish tunes will only be accepted if they can be validated by the section of the work named in the second part of the question)”"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "unprinted": true,
+    "contextNote": "The scheme reads: “Section of work”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q4-i",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-17",
+  "conceptId": "mus-excerpt-from-sung-taken",
+  "questionRef": "2018 OL Listening Q4(i)",
+  "questionText": "This excerpt is taken from\nIt is sung by",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 4",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 6,
+     "r": [
+      0.08,
+      0.18,
+      0.92,
+      0.317
+     ]
+    }
+   ]
+  },
+  "stem": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · Excerpt 1",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "a recitative",
+    "marks": 1
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "bass",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q4-i-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q4-ii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-17",
+  "conceptId": "mus-excerpt-features-line-this",
+  "questionRef": "2018 OL Listening Q4(ii)",
+  "questionText": "The vocal line in this excerpt features",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 4",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 6,
+     "r": [
+      0.08,
+      0.339,
+      0.92,
+      0.404
+     ]
+    }
+   ]
+  },
+  "stem": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · Excerpt 1",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "wide leaps",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q4-ii-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q4-iii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-17",
+  "conceptId": "mus-accompaniment-excerpt-feature-identify",
+  "questionRef": "2018 OL Listening Q4(iii)",
+  "questionText": "Identify one feature of the accompaniment in this excerpt.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 4",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 6,
+     "r": [
+      0.08,
+      0.426,
+      0.92,
+      0.5
+     ]
+    }
+   ]
+  },
+  "stem": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · Excerpt 1",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A feature of the accompaniment",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "pedal note (in continuo)",
+      "(long) sustained notes (in continuo/ strings)",
+      "long notes"
+     ]
+    },
+    "contextNote": "The scheme reads: “Up to 2 marks for any one valid feature of the accompaniment.”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q4-iv",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-17",
+  "conceptId": "mus-cadence-excerpt",
+  "questionRef": "2018 OL Listening Q4(iv)",
+  "questionText": "The cadence at the end of the excerpt is",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 4",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 6,
+     "r": [
+      0.08,
+      0.513,
+      0.92,
+      0.578
+     ]
+    }
+   ]
+  },
+  "stem": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · Excerpt 1",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "perfect",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q4-iv-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q4-v",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-17",
+  "conceptId": "mus-between-differences-excerpt-heard",
+  "questionRef": "2018 OL Listening Q4(v)",
+  "questionText": "Identify two differences between the music heard in this excerpt and the music heard in Excerpt 1.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 4",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 6,
+     "r": [
+      0.08,
+      0.649,
+      0.92,
+      0.785
+     ]
+    }
+   ]
+  },
+  "stem": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · Excerpt 2",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "secFileid": "LC067ZLP117EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP117EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A difference between Excerpt 2 and Excerpt 1",
+    "marks": null,
+    "openList": false,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "It's more dramatic",
+      "The tonality changes (to minor) (g minor)",
+      "descending chord",
+      "now forte (or accurate reference to dynamics)",
+      "now vivace (or accurate reference to tempo)",
+      "repeated notes (in strings)",
+      "features of the vocal line (which are different)",
+      "rising arpeggio at start of this excerpt",
+      "correct reference to texture"
+     ]
+    },
+    "contextNote": "The scheme reads: “1+1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q5-x1-i",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-2",
+  "conceptId": "mus-excerpt-identify-singing-style",
+  "questionRef": "2018 OL Listening Q5 Excerpt 1(i)",
+  "questionText": "Identify the style of singing in this excerpt.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 5",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 8,
+     "r": [
+      0.08,
+      0.246,
+      0.92,
+      0.305
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1 A verse from An Bonnán Buí.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · Excerpt 1 A verse from An Bonnán Buí.",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "secFileid": "LC067ZLP217EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "sean‐nós",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q5-x1-ii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-2",
+  "conceptId": "mus-excerpt-features-heard-identify",
+  "questionRef": "2018 OL Listening Q5 Excerpt 1(ii)",
+  "questionText": "Identify two features of this style of singing as heard in this excerpt.",
+  "totalMarks": 4,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 5",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 8,
+     "r": [
+      0.08,
+      0.313,
+      0.92,
+      0.435
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1 A verse from An Bonnán Buí.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · Excerpt 1 A verse from An Bonnán Buí.",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "secFileid": "LC067ZLP217EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A feature of sean-nós style as heard",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "unaccompanied",
+      "(sung) solo",
+      "(sung with) ornamentation",
+      "(sung with) free rhythm",
+      "nasalisation"
+     ]
+    },
+    "contextNote": "The scheme reads: “Any 2 valid features of sean‐nós style as heard in the excerpt” “For example:”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q5-x2-i",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-2",
+  "conceptId": "mus-different-excerpt-heard-instruments",
+  "questionRef": "2018 OL Listening Q5 Excerpt 2(i)",
+  "questionText": "Name three different instruments heard playing the melody in this excerpt.",
+  "totalMarks": 6,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 5",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 8,
+     "r": [
+      0.08,
+      0.531,
+      0.92,
+      0.605
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2 An excerpt from Carolan’s Concerto.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · Excerpt 2 An excerpt from Carolan’s Concerto.",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "secFileid": "LC067ZLP217EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Instruments playing the melody",
+    "marks": null,
+    "openList": false,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "harp(s)",
+      "uileann pipes",
+      "tinwhistle",
+      "flute",
+      "fiddle"
+     ]
+    },
+    "contextNote": "The scheme reads: “Any three correct instruments (in any order)”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q5-x2-ii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-2",
+  "conceptId": "mus-excerpt-features-heard-music",
+  "questionRef": "2018 OL Listening Q5 Excerpt 2(ii)",
+  "questionText": "The music heard in this excerpt features (tick two)",
+  "totalMarks": 4,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 5",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 8,
+     "r": [
+      0.08,
+      0.619,
+      0.92,
+      0.738
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2 An excerpt from Carolan’s Concerto.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · Excerpt 2 An excerpt from Carolan’s Concerto.",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "secFileid": "LC067ZLP217EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ornamentation",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "repeated last note",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q5-x2-ii-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q5-x3-i",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-2",
+  "conceptId": "mus-dance-excerpt-first-heard",
+  "questionRef": "2018 OL Listening Q5 Excerpt 3(i)",
+  "questionText": "The first dance heard in this excerpt is a\nThe time signature of this dance is",
+  "totalMarks": 3,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 5",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 9,
+     "r": [
+      0.08,
+      0.143,
+      0.92,
+      0.29
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3 This excerpt consists of three different dances based on the tune Drops of Brandy.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · Excerpt 3 This excerpt consists of three different dances based on the tune Drops of Brandy.",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "secFileid": "LC067ZLP217EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Jig",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "6/8",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q5-x3-i-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q5-x3-ii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-2",
+  "conceptId": "mus-associated-dance-excerpt-heard",
+  "questionRef": "2018 OL Listening Q5 Excerpt 3(ii)",
+  "questionText": "The second dance heard in this excerpt is a\nA typical bar of rhythm associated with this dance is",
+  "totalMarks": 3,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 5",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 9,
+     "r": [
+      0.08,
+      0.302,
+      0.92,
+      0.45
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3 This excerpt consists of three different dances based on the tune Drops of Brandy.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · Excerpt 3 This excerpt consists of three different dances based on the tune Drops of Brandy.",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "secFileid": "LC067ZLP217EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reel",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A typical bar of rhythm associated with this dance is",
+    "marks": 1,
+    "ask": true,
+    "contextNote": "The scheme prints its answer in music notation: its print is shown on this card."
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q5-x3-ii-score",
+  "questionFigureIncludesPrompt": true,
+  "figureKey": "music-2018-OL-scheme-p17-l-q5-x3-ii"
+ },
+ {
+  "id": "mus-2018-ol-l-q5-x3-iii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-2",
+  "conceptId": "mus-dance-excerpt-heard-signature",
+  "questionRef": "2018 OL Listening Q5 Excerpt 3(iii)",
+  "questionText": "The third dance heard in this excerpt is a\nThe time signature of this dance is",
+  "totalMarks": 3,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 5",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 9,
+     "r": [
+      0.08,
+      0.457,
+      0.92,
+      0.604
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3 This excerpt consists of three different dances based on the tune Drops of Brandy.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · Excerpt 3 This excerpt consists of three different dances based on the tune Drops of Brandy.",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "secFileid": "LC067ZLP217EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Slip jig",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "9/8",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q5-x3-iii-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q6-x1-i",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-4",
+  "conceptId": "mus-excerpt-heard-metre-music",
+  "questionRef": "2018 OL Listening Q6 Excerpt 1(i)",
+  "questionText": "The metre of the music heard in this excerpt is",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 6",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 10,
+     "r": [
+      0.08,
+      0.163,
+      0.92,
+      0.229
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 1",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "secFileid": "LC067ZLP217EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q6-x1-i-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q6-x1-ii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-4",
+  "conceptId": "mus-excerpt-features-heard-identify",
+  "questionRef": "2018 OL Listening Q6 Excerpt 1(ii)",
+  "questionText": "Identify two features of the music heard in this excerpt. (Tick two).",
+  "totalMarks": 4,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 6",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 10,
+     "r": [
+      0.08,
+      0.25,
+      0.92,
+      0.351
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 1",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "secFileid": "LC067ZLP217EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "woodwind scales",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "repeated notes",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q6-x1-ii-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2018-ol-l-q6-x2-i",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-3",
+  "conceptId": "mus-above-five-missing-notes",
+  "questionRef": "2018 OL Listening Q6 Excerpt 2(i)",
+  "questionText": "The five missing notes at X on the score above are",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 6",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 10,
+     "r": [
+      0.08,
+      0.544,
+      0.92,
+      0.635
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt. Excerpt 2, played three times. An outline score of  bars 1–4 of this excerpt is printed below. Answer (i).",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 2",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "secFileid": "LC067ZLP217EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The five missing notes at X on the score above are",
+    "marks": 2,
+    "ask": true,
+    "contextNote": "The scheme prints its answer in music notation: its print is shown on this card."
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2018-OL-l-q6-x2-i-score",
+  "questionFigureIncludesPrompt": true,
+  "figureKey": "music-2018-OL-scheme-p18-l-q6-x2-i"
+ },
+ {
+  "id": "mus-2018-ol-l-q6-x2-ii",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-4",
+  "conceptId": "mus-accompaniment-excerpt-features-heard",
+  "questionRef": "2018 OL Listening Q6 Excerpt 2(ii)",
+  "questionText": "Identify  two features of the accompaniment as heard in this excerpt.",
+  "totalMarks": 4,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 6",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 10,
+     "r": [
+      0.08,
+      0.698,
+      0.92,
+      0.815
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt. Excerpt 2, played twice more. Answer (ii).",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 2",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "secFileid": "LC067ZLP217EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "unprinted": true,
+    "contextNote": "The scheme reads: “Up to 2 marks for each of 2 valid features of the accompaniment.” “2+2”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q6-x3",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-4",
+  "conceptId": "mus-between-differences-excerpt-heard",
+  "questionRef": "2018 OL Listening Q6 Excerpt 3",
+  "questionText": "Identify two differences between the music heard in this excerpt and the music heard in Excerpt 2.",
+  "totalMarks": 4,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 6",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 11,
+     "r": [
+      0.08,
+      0.094,
+      0.92,
+      0.225
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 3",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "secFileid": "LC067ZLP217EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A difference between Excerpt 3 and Excerpt 2",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "There is a different melody at the start (of excerpt 2)",
+      "The melody in here is heard on woodwind (and horns)",
+      "The horns now feature"
+     ]
+    },
+    "contextNote": "The scheme reads: “Up to 2 marks for each of 2 valid differences between excerpt 3 and excerpt 2.” “For example:”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-l-q6-x4",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "L",
+  "topicId": "music-2-4",
+  "conceptId": "mus-achieves-climax-composer-concluding",
+  "questionRef": "2018 OL Listening Q6 Excerpt 4",
+  "questionText": "This excerpt is the concluding section of E.T. Flying Theme by John Williams. Describe two ways in which the composer achieves a sense of climax in this excerpt.",
+  "totalMarks": 4,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING",
+   "title": "Listening — Question 6",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 11,
+     "r": [
+      0.08,
+      0.297,
+      0.92,
+      0.62
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 4",
+   "title": "2018 Music · Listening test (Higher and Ordinary)",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "secFileid": "LC067ZLP217EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC067ZLP217EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "unprinted": true,
+    "contextNote": "The scheme reads: “Up to 2 marks for each of 2 valid descriptions of how a sense of climax is achieved in the excerpt.” “2+2”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "mus-2018-ol-c-a-q1-a",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "topicId": "music-1-10",
+  "conceptId": "mus-answer-appropriate-choose-clarinet",
+  "questionRef": "2018 OL Composing Section A Q1(a)",
+  "questionText": "CONTINUATION OF A GIVEN OPENING Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ descant recorder □ violin □ clarinet",
+  "totalMarks": 20,
+  "schemePages": [
+   3
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [],
+   "criteria": [
+    {
+     "id": "melody",
+     "label": "Each Melody",
+     "maxMarks": 20,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good sense of key",
+       "marks": [
+        17,
+        18,
+        19,
+        20
+       ],
+       "guidance": [
+        "Very good melodic shape",
+        "Very good continuation of given opening",
+        "Very good rhythmic consistency",
+        "Melody ends on tonic",
+        "Appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Good sense of key",
+       "marks": [
+        14,
+        15,
+        16
+       ],
+       "guidance": [
+        "Good melodic shape",
+        "Good continuation of given opening",
+        "Good rhythmic consistency",
+        "Melody ends on tonic",
+        "Appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Moderately good sense of key",
+       "marks": [
+        11,
+        12,
+        13
+       ],
+       "guidance": [
+        "Moderately good melodic shape",
+        "Moderately good continuation of given opening",
+        "Moderately good rhythmic consistency",
+        "Melody ends on tonic",
+        "Generally appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Fair sense of key",
+       "marks": [
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Fair melodic shape",
+        "Fair continuation of given opening",
+        "Fair rhythmic consistency",
+        "Melody ends on tonic",
+        "Generally appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Poor sense of key",
+       "marks": [
+        5,
+        6,
+        7
+       ],
+       "guidance": [
+        "Poor melodic shape",
+        "Poor continuation of given opening",
+        "Poor rhythmic consistency",
+        "Melody does not end on tonic",
+        "Inappropriate/no phrasing and expression marks inserted.",
+        "Unsuitable/no instrument chosen."
+       ]
+      },
+      {
+       "label": "Very poor sense of key",
+       "marks": [
+        2,
+        3,
+        4
+       ],
+       "guidance": [
+        "Very poor melodic shape",
+        "Very poor continuation of given opening",
+        "Very poor rhythmic consistency",
+        "Melody does not end on tonic",
+        "Inappropriate/no phrasing and expression marks inserted.",
+        "Unsuitable/no instrument chosen."
+       ]
+      },
+      {
+       "label": "Very little or no attempt",
+       "marks": [
+        0,
+        1
+       ],
+       "guidance": []
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "COMPOSING · SECTION A",
+   "title": "Section A — Question 1",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Composing",
+   "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+   "regions": [
+    {
+     "p": 3,
+     "r": [
+      0.08,
+      0.175,
+      0.92,
+      0.535
+     ]
+    }
+   ]
+  },
+  "stem": "Answer one question only in this section: Q1 or Q2 or Q3."
+ },
+ {
+  "id": "mus-2018-ol-c-a-q1-b",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "topicId": "music-1-10",
+  "conceptId": "mus-answer-appropriate-choose-clarinet",
+  "questionRef": "2018 OL Composing Section A Q1(b)",
+  "questionText": "CONTINUATION OF A GIVEN OPENING Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ descant recorder □ violin □ clarinet",
+  "totalMarks": 20,
+  "schemePages": [
+   3
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [],
+   "criteria": [
+    {
+     "id": "melody",
+     "label": "Each Melody",
+     "maxMarks": 20,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good sense of key",
+       "marks": [
+        17,
+        18,
+        19,
+        20
+       ],
+       "guidance": [
+        "Very good melodic shape",
+        "Very good continuation of given opening",
+        "Very good rhythmic consistency",
+        "Melody ends on tonic",
+        "Appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Good sense of key",
+       "marks": [
+        14,
+        15,
+        16
+       ],
+       "guidance": [
+        "Good melodic shape",
+        "Good continuation of given opening",
+        "Good rhythmic consistency",
+        "Melody ends on tonic",
+        "Appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Moderately good sense of key",
+       "marks": [
+        11,
+        12,
+        13
+       ],
+       "guidance": [
+        "Moderately good melodic shape",
+        "Moderately good continuation of given opening",
+        "Moderately good rhythmic consistency",
+        "Melody ends on tonic",
+        "Generally appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Fair sense of key",
+       "marks": [
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Fair melodic shape",
+        "Fair continuation of given opening",
+        "Fair rhythmic consistency",
+        "Melody ends on tonic",
+        "Generally appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Poor sense of key",
+       "marks": [
+        5,
+        6,
+        7
+       ],
+       "guidance": [
+        "Poor melodic shape",
+        "Poor continuation of given opening",
+        "Poor rhythmic consistency",
+        "Melody does not end on tonic",
+        "Inappropriate/no phrasing and expression marks inserted.",
+        "Unsuitable/no instrument chosen."
+       ]
+      },
+      {
+       "label": "Very poor sense of key",
+       "marks": [
+        2,
+        3,
+        4
+       ],
+       "guidance": [
+        "Very poor melodic shape",
+        "Very poor continuation of given opening",
+        "Very poor rhythmic consistency",
+        "Melody does not end on tonic",
+        "Inappropriate/no phrasing and expression marks inserted.",
+        "Unsuitable/no instrument chosen."
+       ]
+      },
+      {
+       "label": "Very little or no attempt",
+       "marks": [
+        0,
+        1
+       ],
+       "guidance": []
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "COMPOSING · SECTION A",
+   "title": "Section A — Question 1",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Composing",
+   "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+   "regions": [
+    {
+     "p": 3,
+     "r": [
+      0.08,
+      0.57,
+      0.92,
+      0.86
+     ]
+    }
+   ]
+  },
+  "stem": "Answer one question only in this section: Q1 or Q2 or Q3."
+ },
+ {
+  "id": "mus-2018-ol-c-a-q3-a",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "topicId": "music-1-12",
+  "conceptId": "mus-answer-appropriate-choose-clarinet",
+  "questionRef": "2018 OL Composing Section A Q3(a)",
+  "questionText": "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM Answer (a) and (b). • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ descant recorder □ violin □ clarinet",
+  "totalMarks": 20,
+  "schemePages": [
+   5
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [],
+   "criteria": [
+    {
+     "id": "melody",
+     "label": "Each Melody",
+     "maxMarks": 20,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good sense of key",
+       "marks": [
+        17,
+        18,
+        19,
+        20
+       ],
+       "guidance": [
+        "Very good melodic shape",
+        "Very good continuation of given opening",
+        "Rhythm and style of dance very well maintained",
+        "Melody ends on tonic",
+        "Appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Good sense of key",
+       "marks": [
+        14,
+        15,
+        16
+       ],
+       "guidance": [
+        "Good melodic shape",
+        "Good continuation of given opening",
+        "Rhythm and style of dance well maintained",
+        "Melody ends on tonic",
+        "Appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Moderately good sense of key",
+       "marks": [
+        11,
+        12,
+        13
+       ],
+       "guidance": [
+        "Moderately good melodic shape",
+        "Moderately good continuation of given opening",
+        "Rhythm and style of dance moderately well maintained",
+        "Melody ends on tonic",
+        "Generally appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Fair sense of key",
+       "marks": [
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Fair melodic shape",
+        "Fair continuation of given opening",
+        "Rhythm and style of dance fairly well maintained",
+        "Melody ends on tonic",
+        "Generally appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Poor sense of key",
+       "marks": [
+        5,
+        6,
+        7
+       ],
+       "guidance": [
+        "Poor melodic shape",
+        "Poor continuation of given opening",
+        "Poor adherence to rhythm and style of dance",
+        "Melody does not end on tonic",
+        "Inappropriate/no phrasing and expression marks inserted.",
+        "Unsuitable/no instrument chosen."
+       ]
+      },
+      {
+       "label": "Very poor sense of key",
+       "marks": [
+        2,
+        3,
+        4
+       ],
+       "guidance": [
+        "Very poor melodic shape",
+        "Very poor continuation of given opening",
+        "Very poor adherence to rhythm and style of dance",
+        "Melody does not end on tonic",
+        "Inappropriate/no phrasing and expression marks inserted.",
+        "Unsuitable/no instrument chosen."
+       ]
+      },
+      {
+       "label": "Very little or no attempt",
+       "marks": [
+        0,
+        1
+       ],
+       "guidance": []
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "COMPOSING · SECTION A",
+   "title": "Section A — Question 3",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Composing",
+   "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+   "regions": [
+    {
+     "p": 5,
+     "r": [
+      0.08,
+      0.055,
+      0.92,
+      0.49
+     ]
+    }
+   ]
+  },
+  "stem": "Answer one question only in this section: Q1 or Q2 or Q3."
+ },
+ {
+  "id": "mus-2018-ol-c-a-q3-b",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "topicId": "music-1-12",
+  "conceptId": "mus-answer-appropriate-choose-clarinet",
+  "questionRef": "2018 OL Composing Section A Q3(b)",
+  "questionText": "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM Answer (a) and (b). • Study this opening of a minuet. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ descant recorder □ violin □ clarinet",
+  "totalMarks": 20,
+  "schemePages": [
+   5
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [],
+   "criteria": [
+    {
+     "id": "melody",
+     "label": "Each Melody",
+     "maxMarks": 20,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good sense of key",
+       "marks": [
+        17,
+        18,
+        19,
+        20
+       ],
+       "guidance": [
+        "Very good melodic shape",
+        "Very good continuation of given opening",
+        "Rhythm and style of dance very well maintained",
+        "Melody ends on tonic",
+        "Appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Good sense of key",
+       "marks": [
+        14,
+        15,
+        16
+       ],
+       "guidance": [
+        "Good melodic shape",
+        "Good continuation of given opening",
+        "Rhythm and style of dance well maintained",
+        "Melody ends on tonic",
+        "Appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Moderately good sense of key",
+       "marks": [
+        11,
+        12,
+        13
+       ],
+       "guidance": [
+        "Moderately good melodic shape",
+        "Moderately good continuation of given opening",
+        "Rhythm and style of dance moderately well maintained",
+        "Melody ends on tonic",
+        "Generally appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Fair sense of key",
+       "marks": [
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Fair melodic shape",
+        "Fair continuation of given opening",
+        "Rhythm and style of dance fairly well maintained",
+        "Melody ends on tonic",
+        "Generally appropriate phrasing and expression marks inserted.",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Poor sense of key",
+       "marks": [
+        5,
+        6,
+        7
+       ],
+       "guidance": [
+        "Poor melodic shape",
+        "Poor continuation of given opening",
+        "Poor adherence to rhythm and style of dance",
+        "Melody does not end on tonic",
+        "Inappropriate/no phrasing and expression marks inserted.",
+        "Unsuitable/no instrument chosen."
+       ]
+      },
+      {
+       "label": "Very poor sense of key",
+       "marks": [
+        2,
+        3,
+        4
+       ],
+       "guidance": [
+        "Very poor melodic shape",
+        "Very poor continuation of given opening",
+        "Very poor adherence to rhythm and style of dance",
+        "Melody does not end on tonic",
+        "Inappropriate/no phrasing and expression marks inserted.",
+        "Unsuitable/no instrument chosen."
+       ]
+      },
+      {
+       "label": "Very little or no attempt",
+       "marks": [
+        0,
+        1
+       ],
+       "guidance": []
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "COMPOSING · SECTION A",
+   "title": "Section A — Question 3",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Composing",
+   "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+   "regions": [
+    {
+     "p": 5,
+     "r": [
+      0.08,
+      0.525,
+      0.92,
+      0.84
+     ]
+    }
+   ]
+  },
+  "stem": "Answer one question only in this section: Q1 or Q2 or Q3."
+ },
+ {
+  "id": "mus-2018-ol-c-b-q4",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "topicId": "music-1-14",
+  "conceptId": "mus-approach-available-bank-bass",
+  "questionRef": "2018 OL Composing Section B Q4",
+  "questionText": "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of B♭ major on the stave below: • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Using the given rhythms, add melody and bass notes to complete each phrase with cadence and approach chords as follows: (i) At A, an imperfect cadence with approach chord (IV—ii—V) (ii) At B, a plagal cadence with approach chord (vi—IV—I) (iii) At C, an imperfect cadence with approach chord (vi—IV—V) (iv) At D, a perfect cadence with approach chord (ii—V—I)",
+  "totalMarks": 60,
+  "schemePages": [
+   6,
+   7
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Chord Progressions - General points",
+    "Same chord in adjacent boxes not accepted",
+    "Accidental and suffix, where relevant, must be fully correct for mark to be awarded",
+    "Chords must be part of a good progression",
+    "V – ii generally not accepted",
+    "Chords that cause weak bass line (aug 4th, dim 5th) not accepted",
+    "Good Progressions",
+    "Falling 3rd = generally better than rising 3rd",
+    "Rising 4ths",
+    "Cadence progressions anywhere",
+    "Primary triads",
+    "Bass Line",
+    "No doubling of major 3rd under chord symbol",
+    "Treatment of LN (aug 4th)",
+    "Stepwise movement to and from inversions = good",
+    "Good finish"
+   ],
+   "criteria": [
+    {
+     "id": "grid",
+     "label": "1 mark per correct note of chord",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": [
+      "Grid / Stave"
+     ],
+     "counted": {
+      "rate": 1,
+      "items": 12
+     }
+    },
+    {
+     "id": "melody-count",
+     "label": "1 mark per correct melody note which is part of the chord and which falls on the correct beat of the bar",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": [],
+     "counted": {
+      "rate": 1,
+      "items": 12
+     }
+    },
+    {
+     "id": "melody-quality",
+     "label": "Up to 3 marks for quality of correct melody line at each cadence point, which fits well with the chord progression and correct bass notes",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": []
+    },
+    {
+     "id": "bass-count",
+     "label": "1 mark per correct bass note of the chord and which falls on the correct beat of the bar",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": [],
+     "counted": {
+      "rate": 1,
+      "items": 12
+     }
+    },
+    {
+     "id": "bass-quality",
+     "label": "Up to 3 marks for quality of the correct bass line at each cadence point.",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": []
+    }
+   ],
+   "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "COMPOSING · SECTION B",
+   "title": "Section B — Question 4",
+   "pages": [
+    6,
+    7
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Composing",
+   "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+   "regions": [
+    {
+     "p": 6,
+     "r": [
+      0.08,
+      0.125,
+      0.92,
+      0.66
+     ]
+    }
+   ]
+  },
+  "stem": "Answer one question only in this section: Q4 or Q5 or Q6."
+ },
+ {
+  "id": "mus-2018-ol-c-b-q5",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "topicId": "music-1-13",
+  "conceptId": "mus-adding-adjacent-available-bank",
+  "questionRef": "2018 OL Composing Section B Q5",
+  "questionText": "ADDING BASS NOTES AND CHORD INDICATIONS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of D major on the stave below: • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Add suitable bass notes and chord indications to complete the cadences at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both. • Do not repeat the same chord in adjacent boxes.",
+  "totalMarks": 60,
+  "schemePages": [
+   6,
+   8
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Chord Progressions - General points",
+    "Same chord in adjacent boxes not accepted",
+    "Accidental and suffix, where relevant, must be fully correct for mark to be awarded",
+    "Chords must be part of a good progression",
+    "V – ii generally not accepted",
+    "Chords that cause weak bass line (aug 4th, dim 5th) not accepted",
+    "Good Progressions",
+    "Falling 3rd = generally better than rising 3rd",
+    "Rising 4ths",
+    "Cadence progressions anywhere",
+    "Primary triads",
+    "Bass Line",
+    "No doubling of major 3rd under chord symbol",
+    "Treatment of LN (aug 4th)",
+    "Stepwise movement to and from inversions = good",
+    "Good finish"
+   ],
+   "criteria": [
+    {
+     "id": "grid",
+     "label": "1 mark per correct note of chord",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": [
+      "Grid / Stave"
+     ],
+     "counted": {
+      "rate": 1,
+      "items": 12
+     }
+    },
+    {
+     "id": "chord-count",
+     "label": "1 mark per correct cadence chord",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": [],
+     "counted": {
+      "rate": 1,
+      "items": 12
+     }
+    },
+    {
+     "id": "chord-quality",
+     "label": "Up to 3 marks per quality of chord progression at each cadence point, which fits well with the melody",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": []
+    },
+    {
+     "id": "bass-count",
+     "label": "1 mark per correct bass note of the chord and which falls on the correct beat of the bar",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": [],
+     "counted": {
+      "rate": 1,
+      "items": 12
+     }
+    },
+    {
+     "id": "bass-quality",
+     "label": "Up to 3 marks for quality of bass line at each cadence point, which fits well with the chord progression and melody notes",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": []
+    }
+   ],
+   "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "COMPOSING · SECTION B",
+   "title": "Section B — Question 5",
+   "pages": [
+    8,
+    9
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Composing",
+   "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+   "regions": [
+    {
+     "p": 8,
+     "r": [
+      0.08,
+      0.055,
+      0.92,
+      0.59
+     ]
+    }
+   ]
+  },
+  "stem": "Answer one question only in this section: Q4 or Q5 or Q6."
+ },
+ {
+  "id": "mus-2018-ol-c-b-q6",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "topicId": "music-1-15",
+  "conceptId": "mus-adding-available-bank-below",
+  "questionRef": "2018 OL Composing Section B Q6",
+  "questionText": "ADDING DESCANT NOTES AND CHORD INDICATIONS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of F major on the stave below: • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Complete the phrase endings by adding suitable chords and descant notes at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both.",
+  "totalMarks": 60,
+  "schemePages": [
+   6,
+   9
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Chord Progressions - General points",
+    "Same chord in adjacent boxes not accepted",
+    "Accidental and suffix, where relevant, must be fully correct for mark to be awarded",
+    "Chords must be part of a good progression",
+    "V – ii generally not accepted",
+    "Chords that cause weak bass line (aug 4th, dim 5th) not accepted",
+    "Good Progressions",
+    "Falling 3rd = generally better than rising 3rd",
+    "Rising 4ths",
+    "Cadence progressions anywhere",
+    "Primary triads",
+    "Bass Line",
+    "No doubling of major 3rd under chord symbol",
+    "Treatment of LN (aug 4th)",
+    "Stepwise movement to and from inversions = good",
+    "Good finish"
+   ],
+   "criteria": [
+    {
+     "id": "grid",
+     "label": "1 mark per correct note of chord",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": [
+      "Grid Stave"
+     ],
+     "counted": {
+      "rate": 1,
+      "items": 12
+     }
+    },
+    {
+     "id": "chord-count",
+     "label": "1 mark per correct cadence chord",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": [],
+     "counted": {
+      "rate": 1,
+      "items": 12
+     }
+    },
+    {
+     "id": "chord-quality",
+     "label": "Up to 3 marks per quality of chord progression at each cadence point, which fits well with the melody and bass notes",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": []
+    },
+    {
+     "id": "descant-count",
+     "label": "1 mark per correct descant note which is part of the chord and which falls on the correct beat of the bar",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": [],
+     "counted": {
+      "rate": 1,
+      "items": 12
+     }
+    },
+    {
+     "id": "descant-quality",
+     "label": "Up to 3 marks for quality of descant line at each cadence point, which fits well with the melody and bass notes",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": []
+    }
+   ],
+   "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "COMPOSING · SECTION B",
+   "title": "Section B — Question 6",
+   "pages": [
+    10,
+    11
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Composing",
+   "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+   "regions": [
+    {
+     "p": 10,
+     "r": [
+      0.08,
+      0.055,
+      0.92,
+      0.59
+     ]
+    }
+   ]
+  },
+  "stem": "Answer one question only in this section: Q4 or Q5 or Q6."
+ },
+ {
+  "id": "mus-2018-ol-c-a-q2",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "topicId": "music-1-11",
+  "conceptId": "mus-answer-appropriate-ballad-bars",
+  "questionRef": "2018 OL Composing Section A Q2(a)–(b)",
+  "questionText": "(a) SETTING MUSIC TO A GIVEN TEXT Answer (a) and (b). Here is an extract from the poem The Ballad of Fr. Gilligan by W. B. Yeats. The old priest Peter Gilligan Was weary night and day; For half his flock were in their beds, Or under green sods lay. • The first two lines have been set to a rhythm. Compose a rhythm to fit the remaining words. (b) Using this rhythm, continue the opening below to make a melody of eight bars. • End on the keynote, that is, doh. • Write the words under the notes. • Add appropriate phrasing and expression marks to the melody.",
+  "totalMarks": 40,
+  "schemePages": [
+   4
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [],
+   "criteria": [
+    {
+     "id": "melody",
+     "label": "Q.2 SETTING MUSIC TO A GIVEN TEXT",
+     "maxMarks": 40,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+     ],
+     "guidance": [
+      "Where there is no answer at (a) and no attempt at word setting at (b) award 0 marks."
+     ],
+     "bands": [
+      {
+       "label": "Very good rhythmic consistency with words",
+       "marks": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+       ],
+       "guidance": [
+        "Very good sense of key",
+        "Very good melodic shape",
+        "Very good continuation of given opening",
+        "Very good text setting",
+        "Melody ends on tonic",
+        "Appropriate phrasing and expression marks inserted."
+       ]
+      },
+      {
+       "label": "Good rhythmic consistency with words",
+       "marks": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+       ],
+       "guidance": [
+        "Good sense of key",
+        "Good melodic shape",
+        "Good continuation of given opening",
+        "Good text setting",
+        "Melody ends on tonic",
+        "Appropriate phrasing and expression marks inserted."
+       ]
+      },
+      {
+       "label": "Moderately good rhythmic consistency with words",
+       "marks": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+       ],
+       "guidance": [
+        "Moderately good sense of key",
+        "Moderately good melodic shape",
+        "Moderately good continuation of given opening",
+        "Moderately good text setting",
+        "Melody ends on tonic",
+        "Generally appropriate phrasing and expression marks inserted."
+       ]
+      },
+      {
+       "label": "Fair rhythmic consistency with words",
+       "marks": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+       ],
+       "guidance": [
+        "Fair sense of key",
+        "Fair melodic shape",
+        "Fair continuation of given opening",
+        "Fair text setting",
+        "Melody ends on tonic",
+        "Generally appropriate phrasing and expression marks inserted."
+       ]
+      },
+      {
+       "label": "Poor rhythmic consistency with words",
+       "marks": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Poor sense of key",
+        "Poor melodic shape",
+        "Poor continuation of given opening",
+        "Poor text setting",
+        "Melody does not end on tonic",
+        "Inappropriate/no phrasing and expression marks inserted."
+       ]
+      },
+      {
+       "label": "Very poor rhythmic consistency with words",
+       "marks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+       ],
+       "guidance": [
+        "Very poor sense of key",
+        "Very poor melodic shape",
+        "Very poor continuation of given opening",
+        "Very poor text setting",
+        "Melody does not end on tonic",
+        "Inappropriate/no phrasing and expression marks inserted."
+       ]
+      },
+      {
+       "label": "Very little or no attempt",
+       "marks": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "guidance": []
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "COMPOSING · SECTION A",
+   "title": "Section A — Question 2",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Leaving Certificate Music 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "sourceLabel": "Composing",
+   "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them."
+  },
+  "stem": "Answer one question only in this section: Q1 or Q2 or Q3."
  }
 ]
