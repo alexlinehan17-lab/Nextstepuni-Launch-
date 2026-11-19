@@ -39,7 +39,7 @@
     0.335
    ],
    "questionText": "Identify the percussion instrument heard in this excerpt.",
-   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.",
+   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -90,7 +90,7 @@
     0.575
    ],
    "questionText": "Describe the use of dynamics heard in this excerpt.",
-   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.",
+   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -135,7 +135,7 @@
     0.4
    ],
    "questionText": "The texture of the music in this excerpt is polyphonic. Describe with reference to the instruments heard in this excerpt.",
-   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.",
+   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -182,7 +182,7 @@
     0.865
    ],
    "questionText": "The missing notes at X on the score are",
-   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.",
+   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 3, played three times. An outline score of the opening four bars of the excerpt is printed below.",
    "needsRecording": true,
    "figure": {
@@ -244,7 +244,7 @@
     0.315
    ],
    "questionText": "Tick whether each statement is true or false.",
-   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.",
+   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 4, played three times.",
    "needsRecording": true,
    "figure": {
@@ -322,7 +322,7 @@
     0.48
    ],
    "questionText": "Identify the theme heard in this excerpt.",
-   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.",
+   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 5, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -355,7 +355,7 @@
     0.58
    ],
    "questionText": "Identify the instrument heard playing this theme.",
-   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.",
+   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 5, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -388,7 +388,7 @@
     0.845
    ],
    "questionText": "Symphonie Fantastique is an example of programme music. Identify what Berlioz was trying to depict in this excerpt.",
-   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.",
+   "questionContext": "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 5, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -434,7 +434,7 @@
     0.3
    ],
    "questionText": "The tonality of the music in this excerpt is",
-   "questionContext": "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.",
+   "questionContext": "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -485,7 +485,7 @@
     0.505
    ],
    "questionText": "Identify two features of the music played by the piano in this excerpt.",
-   "questionContext": "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.",
+   "questionContext": "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -532,7 +532,7 @@
     0.69
    ],
    "questionText": "The tempo of the music in this excerpt is",
-   "questionContext": "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.",
+   "questionContext": "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -583,7 +583,7 @@
     0.835
    ],
    "questionText": "Name two instruments playing the melody in this excerpt.",
-   "questionContext": "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.",
+   "questionContext": "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -629,7 +629,7 @@
     0.325
    ],
    "questionText": "This excerpt is taken from the cadenza. Explain the term cadenza.",
-   "questionContext": "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.",
+   "questionContext": "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 3, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -673,7 +673,7 @@
     0.365
    ],
    "questionText": "Insert the missing time signature at X on the score above.",
-   "questionContext": "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.",
+   "questionContext": "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times. An outline score of the excerpt is printed below.",
    "needsRecording": true,
    "figure": {
@@ -725,7 +725,7 @@
     0.74
    ],
    "questionText": "In this excerpt Raymond Deane uses the compositional techniques of inversion and the subtraction principle. Select one of these techniques and explain it with reference to the music heard in this excerpt.",
-   "questionContext": "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.",
+   "questionContext": "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -769,7 +769,7 @@
     0.36
    ],
    "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (i) Flute in G",
-   "questionContext": "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.",
+   "questionContext": "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played once more.",
    "needsRecording": true,
    "figure": {
@@ -812,7 +812,7 @@
     0.58
    ],
    "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (ii) Cymbal",
-   "questionContext": "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.",
+   "questionContext": "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played once more.",
    "needsRecording": true,
    "figure": {
@@ -855,7 +855,7 @@
     0.84
    ],
    "questionText": "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. • (iii) Violin",
-   "questionContext": "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.",
+   "questionContext": "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played once more.",
    "needsRecording": true,
    "figure": {
@@ -898,7 +898,7 @@
     0.32
    ],
    "questionText": "The time signature of the music in this excerpt is",
-   "questionContext": "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.",
+   "questionContext": "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -950,7 +950,7 @@
     0.545
    ],
    "questionText": "Identify the three instruments heard playing in this excerpt.",
-   "questionContext": "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.",
+   "questionContext": "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -994,7 +994,7 @@
     0.735
    ],
    "questionText": "Identify one feature of the melody in this excerpt.",
-   "questionContext": "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.",
+   "questionContext": "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -1038,7 +1038,7 @@
     0.865
    ],
    "questionText": "Identify one feature of the rhythm in this excerpt.",
-   "questionContext": "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.",
+   "questionContext": "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -1083,7 +1083,7 @@
     0.272
    ],
    "questionText": "Identify two features of the music heard in this excerpt. (Tick two boxes)",
-   "questionContext": "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.",
+   "questionContext": "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 3, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1150,7 +1150,7 @@
     0.468
    ],
    "questionText": "At the end of the excerpt there is a",
-   "questionContext": "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.",
+   "questionContext": "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 3, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1201,7 +1201,7 @@
     0.34
    ],
    "questionText": "Name two instruments heard playing the melody in this excerpt.",
-   "questionContext": "Irish Music This question is based on four excerpts of music.",
+   "questionContext": "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -1244,7 +1244,7 @@
     0.472
    ],
    "questionText": "Name two instruments heard playing the accompaniment in this excerpt.",
-   "questionContext": "Irish Music This question is based on four excerpts of music.",
+   "questionContext": "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -1287,7 +1287,7 @@
     0.625
    ],
    "questionText": "The dance heard in this excerpt is",
-   "questionContext": "Irish Music This question is based on four excerpts of music.",
+   "questionContext": "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1338,7 +1338,7 @@
     0.723
    ],
    "questionText": "The time signature of this dance is",
-   "questionContext": "Irish Music This question is based on four excerpts of music.",
+   "questionContext": "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1390,7 +1390,7 @@
     0.895
    ],
    "questionText": "A typical bar of rhythm associated with this dance is",
-   "questionContext": "Irish Music This question is based on four excerpts of music.",
+   "questionContext": "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1442,7 +1442,7 @@
     0.38
    ],
    "questionText": "The missing notes at X on the score (bar 6) are",
-   "questionContext": "Irish Music This question is based on four excerpts of music.",
+   "questionContext": "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 3, played three times. An outline score of the melody is printed below.",
    "needsRecording": true,
    "figure": {
@@ -1495,7 +1495,7 @@
     0.625
    ],
    "questionText": "Identify two features of Irish traditional music heard in this excerpt.",
-   "questionContext": "Irish Music This question is based on four excerpts of music.",
+   "questionContext": "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 4, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -1541,7 +1541,7 @@
     0.825
    ],
    "questionText": "Identify two non-traditional features heard in this excerpt.",
-   "questionContext": "Irish Music This question is based on four excerpts of music.",
+   "questionContext": "Irish Music This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 4, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -1592,7 +1592,7 @@
     0.385
    ],
    "questionText": "Identify the instrument which plays the melody in this excerpt.",
-   "questionContext": "Aural Skills This question is based on six excerpts of music.",
+   "questionContext": "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1643,7 +1643,7 @@
     0.6
    ],
    "questionText": "Identify two features of the accompaniment heard in this excerpt.",
-   "questionContext": "Aural Skills This question is based on six excerpts of music.",
+   "questionContext": "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -1688,7 +1688,7 @@
     0.768
    ],
    "questionText": "The form of the music in this excerpt is",
-   "questionContext": "Aural Skills This question is based on six excerpts of music.",
+   "questionContext": "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1739,7 +1739,7 @@
     0.325
    ],
    "questionText": "Describe the texture of the music heard in this excerpt.",
-   "questionContext": "Aural Skills This question is based on six excerpts of music.",
+   "questionContext": "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 3, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -1788,7 +1788,7 @@
     0.585
    ],
    "questionText": "Identify two features of the melody heard in this excerpt.",
-   "questionContext": "Aural Skills This question is based on six excerpts of music.",
+   "questionContext": "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 4, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1847,7 +1847,7 @@
     0.3
    ],
    "questionText": "Tick whether each statement is true or false.",
-   "questionContext": "Aural Skills This question is based on six excerpts of music.",
+   "questionContext": "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 5, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1925,7 +1925,7 @@
     0.468
    ],
    "questionText": "Identify the instrument playing the melody in this excerpt.",
-   "questionContext": "Aural Skills This question is based on six excerpts of music.",
+   "questionContext": "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 6, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -1958,7 +1958,7 @@
     0.568
    ],
    "questionText": "Identify one feature of the music heard in this excerpt.",
-   "questionContext": "Aural Skills This question is based on six excerpts of music.",
+   "questionContext": "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 6, played three times.",
    "needsRecording": true,
    "figure": null,
@@ -1998,7 +1998,7 @@
     0.92,
     0.88
    ],
-   "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+   "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -2108,7 +2108,7 @@
     0.92,
     0.815
    ],
-   "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+   "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -2361,7 +2361,7 @@
     0.92,
     0.87
    ],
-   "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+   "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -2471,7 +2471,7 @@
     0.92,
     0.825
    ],
-   "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list:",
+   "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
