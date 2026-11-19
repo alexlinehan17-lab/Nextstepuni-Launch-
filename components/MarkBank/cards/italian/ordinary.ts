@@ -6147,4 +6147,1108 @@ export const CARDS: SecCard[] = [
           "presentationNote": "The task as the examination paper prints it."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-la-1", topicId: "italian-3-1", conceptId: "following-languages-mentioned",
+    section: "L", questionRef: "2025 OL Section LA Q1",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "Which of the following languages is mentioned?\n(a) Dutch\n(b) German\n(c) Polish\n(d) Slovak",
+    questionChoices: ["Dutch","German","Polish","Slovak"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. (b)", marks: 3, contextNote: "The scheme accepts option (b) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-la-2", topicId: "italian-3-1", conceptId: "enrico-offers-take-care",
+    section: "L", questionRef: "2025 OL Section LA Q2",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "Enrico offers to take care of your\n(a) grocery shopping\n(b) online shopping\n(c) pets\n(d) plants",
+    questionChoices: ["grocery shopping","online shopping","pets","plants"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2. (d)", marks: 3, contextNote: "The scheme accepts option (d) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 2",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-la-3", topicId: "italian-3-1", conceptId: "advertisement-about",
+    section: "L", questionRef: "2025 OL Section LA Q3",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "The advertisement is about\n(a) boat services\n(b) ferry services\n(c) flight services\n(d) train services",
+    questionChoices: ["boat services","ferry services","flight services","train services"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "3. (d)", marks: 3, contextNote: "The scheme accepts option (d) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 3",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-la-4", topicId: "italian-3-1", conceptId: "weather-forecast-mentions",
+    section: "L", questionRef: "2025 OL Section LA Q4",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "The weather forecast mentions\n(a) fog\n(b) rain\n(c) snow\n(d) warm winds",
+    questionChoices: ["fog","rain","snow","warm winds"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "4. (d)", marks: 3, contextNote: "The scheme accepts option (d) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 4",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-la-5", topicId: "italian-3-1", conceptId: "appliances-mentioned",
+    section: "L", questionRef: "2025 OL Section LA Q5",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "One of the appliances mentioned is a\n(a) food processor\n(b) fridge\n(c) television\n(d) washing machine",
+    questionChoices: ["food processor","fridge","television","washing machine"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "5. (d)", marks: 3, contextNote: "The scheme accepts option (d) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 5",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-la-6", topicId: "italian-3-1", conceptId: "festival-lasts",
+    section: "L", questionRef: "2025 OL Section LA Q6",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "The festival lasts\n(a) 14 days\n(b) 16 days\n(c) 17 days\n(d) 19 days",
+    questionChoices: ["14 days","16 days","17 days","19 days"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "6. (c)", marks: 3, contextNote: "The scheme accepts option (c) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 6",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-la-7", topicId: "italian-3-1", conceptId: "news-item-mentions",
+    section: "L", questionRef: "2025 OL Section LA Q7",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "The news item mentions\n(a) newborn babies\n(b) children\n(c) teenagers\n(d) the elderly",
+    questionChoices: ["newborn babies","children","teenagers","the elderly"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "7. (d)", marks: 3, contextNote: "The scheme accepts option (d) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 7",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-la-8", topicId: "italian-3-1", conceptId: "other-than-italy-county-mentioned",
+    section: "L", questionRef: "2025 OL Section LA Q8",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause. Choose what you consider the most appropriate your choice by circling the appropriate letter in each case.",
+    questionText: "Other than Italy, which county is mentioned?\n(a) Austria\n(b) Germany\n(c) Slovenia\n(d) Spain",
+    questionChoices: ["Austria","Germany","Slovenia","Spain"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "8. (c)", marks: 3, contextNote: "The scheme accepts option (c) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 8",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb1-1", topicId: "italian-3-0", conceptId: "long-has-paola-prepared-maths-competition",
+    section: "L", questionRef: "2025 OL Section LB1 Q1",
+    stem: "Dialogue 1. Conversation between Paola and Giacomo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "How long has Paola prepared for the Maths competition?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Six months", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb1-2", topicId: "italian-3-0", conceptId: "many-categories-there-competition",
+    section: "L", questionRef: "2025 OL Section LB1 Q2",
+    stem: "Dialogue 1. Conversation between Paola and Giacomo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "How many categories are there in the competition?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Four", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb1-3", topicId: "italian-3-0", conceptId: "about-final",
+    section: "L", questionRef: "2025 OL Section LB1 Q3",
+    stem: "Dialogue 1. Conversation between Paola and Giacomo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Give one detail about the final.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["It was (held) in May","300 students participated in it","The participants come from all over Italy","It took place during the weekend/at the weekend","At the beginning there was a bit of tension","There were plenty of fun moments (at it)","They met students/boys/girls from everywhere in Italy (at it)","They made friends / friendships (with other boys and girls from other schools)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb1-4", topicId: "italian-3-0", conceptId: "provided-organisation-those-who-get-through",
+    section: "L", questionRef: "2025 OL Section LB1 Q4",
+    stem: "Dialogue 1. Conversation between Paola and Giacomo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What is provided by the organisation for those who get through to the international competition? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["(Their) Travel/Trip/Food/ Accommodation","A €100 book voucher/€100 gift card"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb2-1", topicId: "italian-3-0", conceptId: "does-lisa-want-spend-her-summer",
+    section: "L", questionRef: "2025 OL Section LB2 Q1",
+    stem: "Dialogue 2. Conversation between Samuele and Lisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Why does Lisa want to spend her summer holidays in Greece? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "Because she likes", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1-2", kind: "point", verbatim: "history", marks: 2 },
+    { id: "r-1-3", kind: "point", verbatim: "(she loves) Greek", marks: 2 },
+    { id: "r-1-4", kind: "point", verbatim: "cuisine", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb2-2", topicId: "italian-3-0", conceptId: "does-samuele-plan-when-wexford",
+    section: "L", questionRef: "2025 OL Section LB2 Q2",
+    stem: "Dialogue 2. Conversation between Samuele and Lisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What does Samuele plan to do when he is in Wexford? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Water/Aquatic (sports)","Enjoy the countryside/Enjoy nature"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb2-3", topicId: "italian-3-0", conceptId: "sports-available-afternoon",
+    section: "L", questionRef: "2025 OL Section LB2 Q3",
+    stem: "Dialogue 2. Conversation between Samuele and Lisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Which sports are available in the afternoon? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Sailing","Canoeing","Horse-riding"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb2-4", topicId: "italian-3-0", conceptId: "where-will-samuele-stay",
+    section: "L", questionRef: "2025 OL Section LB2 Q4",
+    stem: "Dialogue 2. Conversation between Samuele and Lisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Where will Samuele stay?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In a country residence", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb3-1", topicId: "italian-3-0", conceptId: "about-citt-pedala",
+    section: "L", questionRef: "2025 OL Section LB3 Q1",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Give one detail about Città Pedala.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["It is an initiative/event for cycling enthusiasts/those who are passionate about cycling","It is a cycle along the (seafront) promenade","It is an initiative/event where you can enjoy the sea view without traffic","It is a 5km cycle","The cycle stretches from the old town centre to the beach"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb3-2", topicId: "italian-3-0", conceptId: "time-will-event-start",
+    section: "L", questionRef: "2025 OL Section LB3 Q2",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "At what time will the event start?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "At 17:30", marks: 6, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb3-3", topicId: "italian-3-0", conceptId: "where-meeting-point",
+    section: "L", questionRef: "2025 OL Section LB3 Q3",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Where is the meeting point? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["In the Town Square","In the city/centre (of Bari)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb3-4", topicId: "italian-3-0", conceptId: "much-money-participants-encouraged-donate",
+    section: "L", questionRef: "2025 OL Section LB3 Q4",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "How much money are participants encouraged to donate?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Two euro", marks: 2, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb3-5", topicId: "italian-3-0", conceptId: "when-does-event-take-place",
+    section: "L", questionRef: "2025 OL Section LB3 Q5",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "When does the event take place?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "At the weekend/At weekends", marks: 2, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 5",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb3-6", topicId: "italian-3-0", conceptId: "about-event-organisers",
+    section: "L", questionRef: "2025 OL Section LB3 Q6",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Give one detail about the event organisers.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Four/Childhood friends.","They travelled (together)by bike","They organised trips all around Italy/ to Europe/to Turkey."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 6",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb3-7", topicId: "italian-3-0", conceptId: "services-does-association-offer",
+    section: "L", questionRef: "2025 OL Section LB3 Q7",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What services does the association offer? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Bike repair (workshops) — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Bike repair (workshops)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["Bike hire","It organises group travel (around Italy/ from May to October)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 7",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-lb3-8", topicId: "italian-3-0", conceptId: "about-people-that-wish-hire",
+    section: "L", questionRef: "2025 OL Section LB3 Q8",
+    stem: "Dialogue 3. Interview with Milena Angeloni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Give one detail about the people that they wish to hire.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Cycling enthusiasts","(People) who can speak different languages","(People) who speak English/French/Spanish/German","Enthusiastic (people)","Kind (people)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 8",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2025 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "secFileid": "LC013ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC013ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Ordinary Level, pp.20-22 — © State Examinations Commission.",
+    id: "it-2025-ol-c-1-a", topicId: "italian-6-3", conceptId: "1-informal-writing-30-marks-choose-a-informal-le",
+    section: "C", questionRef: "2025 OL Section C Q1(a)",
+    questionText: "1. Informal Writing\n(30 marks)\nChoose\n(a) Informal Letter\nor\n(b) Dialogue\nfollowing six ideas.\n(a)\nInformal Letter\nLa tua insegnante ti ha chiesto di organizzare un evento per celebrare l’Italia e la lingua italiana.\nScrivi un’e-mail (in italiano) ai tuoi compagni di classe per dare loro informazioni sull’evento,\n• quando (giorno e orario evento)\n• attività della mattina (quiz d’italiano, videogiochi…)\n• organizzazione pausa pranzo (cosa mangiate …)\n• attività del pomeriggio (partita di calcio, visione di un film in italiano…)\n• cosa preparare (poster, bandiere, magliette, opuscoli e biglietti …)\n• foto di gruppo con insegnanti e studenti d'italiano",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 1 30 marks",
+                "(a) E-mail/Letter 30 marks",
+                "Where marks for content and communication are 7 or less, award no marks for language"
+          ],
+          "criteria": [
+                {
+                      "id": "format",
+                      "label": "Format",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Beginning, opening greeting,",
+                            "closing formula, ending 7 marks (2+2+2+1)"
+                      ]
+                },
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 16,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+                      "guidance": [
+                            "Content and communication: 16 marks (4x4)",
+                            "Four of the following points to be covered",
+                            "• The date and time of the event",
+                            "• The morning activities",
+                            "• Details about the lunch break",
+                            "• Afternoon activities",
+                            "• Things to prepare",
+                            "• Group photo"
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Language: 7 marks"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 - 2",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Most verbs incorrect, few correct agreements, many spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "3 - 5",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Few verbs wrong, some correct agreements not too many mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "6 - 7",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Few mistakes, many correct agreements, very good accuracy"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Question 1 30 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Ordinary Level, pp.20-22 — © State Examinations Commission.",
+    id: "it-2025-ol-c-1-b", topicId: "italian-6-3", conceptId: "1-informal-writing-30-marks-choose-a-informal-le",
+    section: "C", questionRef: "2025 OL Section C Q1(b)",
+    questionText: "1. Informal Writing\n(30 marks)\nChoose\n(a) Informal Letter\nor\n(b) Dialogue\nfollowing six ideas.\n(b)\nDialogue\nQuest’estate andrai a Parma per lavorare in un piccolo albergo con ristorante. Videochiama una\ntua amica o un tuo amico e racconta:\n• perché hai deciso di andare in Italia quest’estate\n• in cosa consiste il tuo lavoro\n• quanto è lo stipendio (pagamento, all’ora…)\n• con chi lavori\n• dove alloggi (casa vacanze/ostello/famiglia…)\n• perché sei la persona ideale per questo lavoro\nScrivi il dialogo della videochiamata (in italiano).",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 1 30 marks",
+                "(b) Dialogue 30 marks",
+                "Where marks for content and communication are 7 or less, award no marks for language"
+          ],
+          "criteria": [
+                {
+                      "id": "format",
+                      "label": "Format",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Dialogue format, beginning,",
+                            "closing formula, ending 7 marks (2+2+2+1)"
+                      ]
+                },
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 16,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+                      "guidance": [
+                            "Content and communication: 16 marks (4x4)",
+                            "Four of the following points to be covered",
+                            "• why you decided to go to Italy this summer",
+                            "• what your job entails",
+                            "• how much the salary is",
+                            "• who you work with",
+                            "• where you are staying",
+                            "• why you are the ideal person for this job"
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language and conversational expressions",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Language and conversational expressions 7 marks (2+2+2+1)"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 – 2",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Most verbs incorrect, few correct agreements, many spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "3 - 5",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Few verbs wrong, some correct agreements not too many mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "6 -7",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Few mistakes, many correct agreements, very good accuracy"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Question 1 30 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Ordinary Level, pp.20-22 — © State Examinations Commission.",
+    id: "it-2025-ol-c-2", topicId: "italian-6-4", conceptId: "2-you-are-in-italy-for-a-few-months-and-trying-t",
+    section: "C", questionRef: "2025 OL Section C Q2",
+    questionText: "2.\nYou are in Italy for a few months and\ntrying to join the local gym.\nWithout using your personal details fill in\nthe form below in Italian.\nThe same answer should not be used\ntwice.\n(max 22 marks)\nA.\nAnswer any eight of the following nine\nquestions.\nData di nascita Luogo di nascita\nNazionalità Numero di cellulare\nIndirizzo di posta elettronica\nPersone di contatto per referenze Firma\nB.\nquestions. Note some questions have 2 parts.\nÈ importante per te essere in forma? Spiega perché\nQuali sono i tuoi sport preferiti? i. ii.\nQuanto sport pratichi alla settimana?\nQual è la qualità più importante per praticare lo sport?\nPerché ti piace questa palestra?\nQuale attività o corso ti piacerebbe fare?\nPer quanto tempo rimani in Italia?\nIn quale momento del giorno pensi di venire in palestra?",
+    totalMarks: 22,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 2 FORM-FILLING 22 marks",
+                "Candidates will be penalised for incorrect verbs, incorrect agreements and spelling mistakes"
+          ],
+          "criteria": [
+                {
+                      "id": "box-a",
+                      "label": "Box A",
+                      "maxMarks": 8,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                      "guidance": [
+                            "Box A – 8 marks (8x1)",
+                            "Marks awarded for the best 8 questions (out of 9 questions)"
+                      ]
+                },
+                {
+                      "id": "box-b",
+                      "label": "Box B",
+                      "maxMarks": 14,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+                      "guidance": [
+                            "Box B – 14 marks (7x2)",
+                            "Marks awarded for the best 7 questions (out of 8 questions)",
+                            "Where a question has two parts award 2 marks (1+1)",
+                            "(When the same word is used to answer multiple questions, marks may only be allocated once)"
+                      ]
+                }
+          ],
+          "markingGuideNote": "Question 2 FORM-FILLING 22 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC013GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "it-2025-ol-c-3", topicId: "italian-6-5", conceptId: "francesca-has-a-busy-weekend-ahead-she-writes-in",
+    section: "C", questionRef: "2025 OL Section C Q3",
+    questionText: "Francesca has a busy weekend ahead.\nShe writes in her diary, but the details\ngot mixed up.\n(8 marks)\nWrite out Francesca’s plan for the\nweekend in the correct order.\nVoglio fare tantissime cose questo fine settimana.\nDomani mattina, sabato, ho promesso a Claudia di andare\ncon lei in centro a fare colazione e un po’ di shopping.\nDomenica sera devo preparare la valigia! Lunedì si parte!\nSabato sera ho la festa della scuola! Ci incontriamo tutti\ninsieme per festeggiare.\nPrima di tutto devo sistemare la mia cameretta. Dopo gli\nesami è un disastro.\nper le vacanze! Me le sono proprio meritate.\nin forma, soprattutto per le vacanze!\nIn secondo luogo, devo aiutare mamma a preparare la\ncena, questa sera, venerdì abbiamo degli invitati.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints the order line by line; each line in its place is one mark.", group: {"claimMax":8,"perOption":1,"options":["1. Primo fine settimana dopo gli esami: ho finito! Voglio fare tantissime cose questo fine settimana.","2. Prima di tutto devo sistemare la mia cameretta. Dopo gli esami è un disastro.","3. In secondo luogo, devo aiutare mamma a preparare la cena, questa sera, venerdì abbiamo degli invitati/","4. Domani mattina, sabato, ho promesso a Claudia di andare con lei in centro a fare colazione e un po’ di shopping.","5. Sabato sera ho la festa della scuola! Ci incontriamo tutti insieme per festeggiare.","6. Domenica mattina presto vado a correre, mi devo tenere in forma, soprattutto per le vacanze!","7. Domenica sera devo preparare la valigia! Lunedì si parte!","8. Dovrò andare in aeroporto presto lunedì mattina. Parto per le vacanze! Me le sono proprio meritate."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Italian 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
 ];

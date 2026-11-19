@@ -453,11 +453,11 @@
     "refsHash": "55377fc06aab0b52"
   },
   "italian": {
-    "cards": 514,
-    "contentHash": "f5f4943d17ce1cd8",
+    "cards": 542,
+    "contentHash": "6088d71c1b05f513",
     "coveragePct": 37.3,
-    "covered": 558,
-    "excluded": 288,
+    "covered": 586,
+    "excluded": 260,
     "leaves": 2270,
     "open": 1424,
     "orphans": 0,
@@ -465,7 +465,7 @@
       "count": 66,
       "hash": "4f7a342aa9e434bd"
     },
-    "refsHash": "dc8967cea847f0b0"
+    "refsHash": "1fc485680dcb5cd3"
   },
   "japanese": {
     "cards": 600,
