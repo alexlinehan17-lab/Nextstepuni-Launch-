@@ -28,7 +28,7 @@ sys.path.insert(0, HERE)
 import pl_paper                                                  # noqa: E402
 from pl_listen import scheme_lines, aural_lines, AUDIO           # noqa: E402
 from pl_listen_lib import (S, J, T, TN, PL, one, menu, part,   # noqa: E402,F401
-                           One, Menu, Sel, Shown, shown, Graded, percent_of)
+                           One, Menu, Sel, Shown, shown, Graded, percent_of, Ladder)
 from pl_topics import (AURAL, POLISH, ENGLISH_OR_IRISH,          # noqa: E402
                        language_note, answer_language, concept_for)
 from paper_census import key_label                              # noqa: E402
@@ -159,6 +159,22 @@ def build_rows(doc, spec, note):
             rows.append({'id': rid, 'kind': 'criterion', 'verbatim': r.head.text(doc),
                          'marks': whole, 'permittedMarks': list(range(whole + 1)),
                          'parts': parts, **ctx})
+            total += whole
+            continue
+        if isinstance(r, Ladder):
+            _c, first, fn = r.first.read(doc)
+            _c, rest, rn = r.rest.read(doc)
+            _c, whole, wn = r.total.read(doc)
+            if (whole - first) % rest or whole < first:
+                raise ValueError(f'{spec.key}: {fn} then {rn} does not reach {wn}')
+            steps = [first] + [rest] * ((whole - first) // rest)
+            texts = [o.text(doc) for o in r.options]
+            if len(texts) < len(steps):
+                raise ValueError(f'{spec.key}: {len(steps)} steps over {len(texts)} printed answers')
+            rows.append({'id': rid, 'kind': 'anyN',
+                         'verbatim': 'The answers the scheme accepts in full', 'marks': None, **ctx,
+                         'group': {'claimMax': len(steps), 'perOption': first, 'options': texts,
+                                   'perOptionSteps': steps}})
             total += whole
             continue
         if isinstance(r, Shown):

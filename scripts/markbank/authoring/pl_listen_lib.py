@@ -161,6 +161,19 @@ def graded(head, total, parts):
     return Graded(head, total, parts)
 
 
+class Ladder(Row):
+    """A descending price over a printed list: "3 pkt za jedną technikę i 1 pkt
+    za każdą kolejną" under a "(5)" pays 3, 1, 1 -- the live 2021 cards' shape
+    (anyN with perOptionSteps). `first` and `rest` are the two printed prices,
+    `total` the question's."""
+    def __init__(self, options, first, rest, total, lead=None):
+        self.options, self.first, self.rest, self.total, self.lead = options, first, rest, total, lead
+
+
+def ladder(options, first, rest, total):
+    return Ladder(options, first, rest, total)
+
+
 PERCENT = re.compile(r'(\d{1,3})\s*%')
 
 
