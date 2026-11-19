@@ -58477,11 +58477,29 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r-1-1",
     "kind": "point",
-    "verbatim": "soprattutto nelle periferie/ nelle zone (1m) in cui la qualità delle (1+1+1+2) infrastrutture è scadente/ per migliorarle urbanisticamente/ per farle diventare luoghi dove socializzare (2m)",
-    "marks": 5,
-    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prices this half of the ask separately, under the heading “Fare delle aree giochi/ campi da gioco (1m) in tutti i quartieri (1m)”."
+    "verbatim": "Fare delle aree giochi/ campi da gioco",
+    "marks": 1,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   },
+   {
+    "id": "r-1-2",
+    "kind": "point",
+    "verbatim": "in tutti i quartieri",
+    "marks": 1
+   },
+   {
+    "id": "r-1-3",
+    "kind": "point",
+    "verbatim": "soprattutto nelle periferie/ nelle zone",
+    "marks": 1
+   },
+   {
+    "id": "r-1-4",
+    "kind": "point",
+    "verbatim": "in cui la qualità delle infrastrutture è scadente/ per migliorarle urbanisticamente/ per farle diventare luoghi dove socializzare",
+    "marks": 2
    }
   ],
   "notes": "The scheme prints the tariff as '5 marks'; the paper prints this ask on page 3 of the question booklet."
@@ -58576,16 +58594,35 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "criterion",
-    "verbatim": "Permette di fare sport/fare esercizio/allenarsi (1m) all’aperto/all’aria aperta/ en plein air (1m) tutto l’anno (1m) senza spendere soldi (1)",
-    "marks": 5,
-    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Il tutto a costo zero” 1 mark; “Perché il bel clima” 1 mark.",
-    "permittedMarks": [
-     0,
-     1,
-     5
-    ]
+    "id": "r-1-1",
+    "kind": "point",
+    "verbatim": "Perché il bel clima",
+    "marks": 1,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Il tutto a costo zero” 1 mark."
+   },
+   {
+    "id": "r-1-2",
+    "kind": "point",
+    "verbatim": "Permette di fare sport/fare esercizio/allenarsi",
+    "marks": 1
+   },
+   {
+    "id": "r-1-3",
+    "kind": "point",
+    "verbatim": "all’aperto/all’aria aperta/ en plein air",
+    "marks": 1
+   },
+   {
+    "id": "r-1-4",
+    "kind": "point",
+    "verbatim": "tutto l’anno",
+    "marks": 1
+   },
+   {
+    "id": "r-1-5",
+    "kind": "point",
+    "verbatim": "senza spendere soldi",
+    "marks": 1
    }
   ],
   "notes": "The scheme prints the tariff as '5 marks'; the paper prints this ask on page 3 of the question booklet."
