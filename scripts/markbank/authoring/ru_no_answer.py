@@ -17,17 +17,26 @@ def annotate_no_answers(cards):
         entry = entries.get(card['id'])
         if entry is None:
             continue
-        assert card['kind'] == 'rubric', card['id']
-        assert card['rubric']['system'] == 'language-writing', card['id']
+        if entry.get('treatment') == 'unprinted-criterion':
+            assert card['kind'] == 'question', card['id']
+            assert card['tariffModel'] == {'kind': 'fixed'}, card['id']
+            assert len(card['rows']) == 1, card['id']
+            row = card['rows'][0]
+            assert row['kind'] == 'criterion' and row['unprinted'] is True, card['id']
+            assert row['verbatim'] == FIXED_LINE and row['marks'] == entry['printedMarks'], card['id']
+        else:
+            assert card['kind'] == 'rubric', card['id']
+            assert card['rubric']['system'] == 'language-writing', card['id']
         assert card['totalMarks'] == entry['printedMarks'], card['id']
         assert card['review']['schemePages'] == entry['schemePages'], card['id']
         relative = entry['schemePath']
         if relative not in checked:
             checked[relative] = hashlib.sha256((ROOT / relative).read_bytes()).hexdigest()
         assert checked[relative] == entry['schemeSha256'], card['id']
-        note = card['rubric'].get('markingGuideNote', '')
-        if not note.startswith(FIXED_LINE):
-            card['rubric']['markingGuideNote'] = FIXED_LINE + (' ' + note if note else '')
+        if card['kind'] == 'rubric':
+            note = card['rubric'].get('markingGuideNote', '')
+            if not note.startswith(FIXED_LINE):
+                card['rubric']['markingGuideNote'] = FIXED_LINE + (' ' + note if note else '')
         card['review']['reviewedAt'] = entry['reviewedAt']
         card['review']['noPrintedAnswer'] = {
             'fixedLine': FIXED_LINE,
