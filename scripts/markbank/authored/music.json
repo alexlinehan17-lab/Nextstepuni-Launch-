@@ -3039,7 +3039,7 @@
   "topicId": "music-1-10",
   "conceptId": "mus-appropriate-choose-continuation-continue",
   "questionRef": "2025 HL Composing Section A Q1",
-  "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+  "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ violin □ clarinet □ trumpet",
   "totalMarks": 40,
   "schemePages": [
    3
@@ -3453,7 +3453,7 @@
   "topicId": "music-1-12",
   "conceptId": "mus-appropriate-choose-composing-continue",
   "questionRef": "2025 HL Composing Section A Q3",
-  "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a gavotte is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ flute",
+  "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a gavotte is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ violin □ oboe □ descant recorder",
   "totalMarks": 40,
   "schemePages": [
    5
@@ -8335,9 +8335,9 @@
   "year": 2026,
   "section": "A",
   "topicId": "music-1-10",
-  "conceptId": "mus-appropriate-choose-continuation-continue",
+  "conceptId": "mus-appropriate-choose-clarinet-continuation",
   "questionRef": "2026 HL Composing Section A Q1",
-  "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ violin",
+  "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ violin □ oboe □ descant recorder □ clarinet",
   "totalMarks": 40,
   "schemePages": [
    5
@@ -8757,7 +8757,7 @@
   "topicId": "music-1-12",
   "conceptId": "mus-appropriate-choose-clarinet-composing",
   "questionRef": "2026 HL Composing Section A Q3",
-  "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a gigue is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+  "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a gigue is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ trumpet □ oboe",
   "totalMarks": 40,
   "schemePages": [
    7
@@ -12644,7 +12644,7 @@
   "topicId": "music-1-10",
   "conceptId": "mus-answer-appropriate-choose-continuation",
   "questionRef": "2026 OL Composing Section A Q1(a)",
-  "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+  "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ violin □ flute □ trumpet",
   "totalMarks": 20,
   "schemePages": [
    4,
@@ -12814,7 +12814,7 @@
   "topicId": "music-1-10",
   "conceptId": "mus-appropriate-choose-continuation-continue",
   "questionRef": "2026 OL Composing Section A Q1(b)",
-  "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+  "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ violin □ flute □ trumpet",
   "totalMarks": 20,
   "schemePages": [
    4,
@@ -12982,9 +12982,9 @@
   "year": 2026,
   "section": "A",
   "topicId": "music-1-12",
-  "conceptId": "mus-answer-appropriate-choose-composing",
+  "conceptId": "mus-answer-appropriate-choose-clarinet",
   "questionRef": "2026 OL Composing Section A Q3(a)",
-  "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+  "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ clarinet □ flute □ violin",
   "totalMarks": 20,
   "schemePages": [
    8,
@@ -13152,9 +13152,9 @@
   "year": 2026,
   "section": "A",
   "topicId": "music-1-12",
-  "conceptId": "mus-appropriate-choose-composing-continue",
+  "conceptId": "mus-appropriate-choose-clarinet-composing",
   "questionRef": "2026 OL Composing Section A Q3(b)",
-  "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+  "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ clarinet □ flute □ violin",
   "totalMarks": 20,
   "schemePages": [
    8,
@@ -16447,7 +16447,7 @@
   "topicId": "music-1-10",
   "conceptId": "mus-answer-appropriate-choose-clarinet",
   "questionRef": "2025 OL Composing Section A Q1(a)",
-  "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+  "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ descant recorder □ oboe",
   "totalMarks": 20,
   "schemePages": [
    3
@@ -16623,7 +16623,7 @@
   "topicId": "music-1-10",
   "conceptId": "mus-appropriate-choose-clarinet-continuation",
   "questionRef": "2025 OL Composing Section A Q1(b)",
-  "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+  "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ descant recorder □ oboe",
   "totalMarks": 20,
   "schemePages": [
    3
@@ -16799,7 +16799,7 @@
   "topicId": "music-1-12",
   "conceptId": "mus-answer-appropriate-choose-clarinet",
   "questionRef": "2025 OL Composing Section A Q3(a)",
-  "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a minuet. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+  "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a minuet. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ trumpet □ flute",
   "totalMarks": 20,
   "schemePages": [
    5
@@ -16975,7 +16975,7 @@
   "topicId": "music-1-12",
   "conceptId": "mus-appropriate-choose-clarinet-composing",
   "questionRef": "2025 OL Composing Section A Q3(b)",
-  "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+  "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ trumpet □ flute",
   "totalMarks": 20,
   "schemePages": [
    5
@@ -20440,7 +20440,7 @@
   "topicId": "music-1-10",
   "conceptId": "mus-appropriate-choose-clarinet-continuation",
   "questionRef": "2024 HL Composing Section A Q1",
-  "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+  "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ oboe □ French horn",
   "totalMarks": 40,
   "schemePages": [
    3
@@ -20852,9 +20852,9 @@
   "year": 2024,
   "section": "A",
   "topicId": "music-1-12",
-  "conceptId": "mus-appropriate-choose-composing-continue",
+  "conceptId": "mus-appropriate-choose-clarinet-composing",
   "questionRef": "2024 HL Composing Section A Q3",
-  "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a waltz is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+  "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a waltz is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ trumpet □ clarinet □ violin",
   "totalMarks": 40,
   "schemePages": [
    5
@@ -25109,7 +25109,7 @@
   "topicId": "music-1-10",
   "conceptId": "mus-appropriate-choose-clarinet-continuation",
   "questionRef": "2023 HL Composing Section A Q1",
-  "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+  "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ oboe □ trumpet",
   "totalMarks": 40,
   "schemePages": [
    3
@@ -25517,7 +25517,7 @@
   "topicId": "music-1-12",
   "conceptId": "mus-appropriate-choose-composing-continue",
   "questionRef": "2023 HL Composing Section A Q3",
-  "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a gigue is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+  "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a gigue is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ trumpet □ flute □ violin",
   "totalMarks": 40,
   "schemePages": [
    5
@@ -29430,9 +29430,9 @@
   "year": 2023,
   "section": "A",
   "topicId": "music-1-10",
-  "conceptId": "mus-answer-appropriate-choose-continuation",
+  "conceptId": "mus-answer-appropriate-choose-clarinet",
   "questionRef": "2023 OL Composing Section A Q1(a)",
-  "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ descant recorder",
+  "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ descant recorder □ clarinet □ violin □ oboe",
   "totalMarks": 20,
   "schemePages": [
    3
@@ -29606,9 +29606,9 @@
   "year": 2023,
   "section": "A",
   "topicId": "music-1-10",
-  "conceptId": "mus-appropriate-choose-continuation-continue",
+  "conceptId": "mus-appropriate-choose-clarinet-continuation",
   "questionRef": "2023 OL Composing Section A Q1(b)",
-  "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ descant recorder",
+  "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ descant recorder □ clarinet □ violin □ oboe",
   "totalMarks": 20,
   "schemePages": [
    3
@@ -29782,9 +29782,9 @@
   "year": 2023,
   "section": "A",
   "topicId": "music-1-12",
-  "conceptId": "mus-answer-appropriate-choose-composing",
+  "conceptId": "mus-answer-appropriate-choose-clarinet",
   "questionRef": "2023 OL Composing Section A Q3(a)",
-  "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ trumpet",
+  "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ trumpet □ violin □ clarinet □ oboe",
   "totalMarks": 20,
   "schemePages": [
    5
@@ -29958,9 +29958,9 @@
   "year": 2023,
   "section": "A",
   "topicId": "music-1-12",
-  "conceptId": "mus-appropriate-choose-composing-continue",
+  "conceptId": "mus-appropriate-choose-clarinet-composing",
   "questionRef": "2023 OL Composing Section A Q3(b)",
-  "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ trumpet",
+  "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ trumpet □ violin □ clarinet □ oboe",
   "totalMarks": 20,
   "schemePages": [
    5
@@ -33793,9 +33793,9 @@
   "year": 2022,
   "section": "A",
   "topicId": "music-1-10",
-  "conceptId": "mus-appropriate-choose-continuation-continue",
+  "conceptId": "mus-appropriate-choose-clarinet-continuation",
   "questionRef": "2022 HL Composing Section A Q1",
-  "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ flute",
+  "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ trumpet □ clarinet □ violin",
   "totalMarks": 50,
   "schemePages": [
    3
@@ -34243,7 +34243,7 @@
   "topicId": "music-1-12",
   "conceptId": "mus-appropriate-choose-composing-continue",
   "questionRef": "2022 HL Composing Section A Q3",
-  "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a gavotte is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+  "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a gavotte is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ violin □ trumpet □ descant recorder",
   "totalMarks": 50,
   "schemePages": [
    5
@@ -38201,9 +38201,9 @@
   "year": 2022,
   "section": "A",
   "topicId": "music-1-10",
-  "conceptId": "mus-answer-appropriate-choose-continuation",
+  "conceptId": "mus-answer-appropriate-choose-clarinet",
   "questionRef": "2022 OL Composing Section A Q1(a)",
-  "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ violin",
+  "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ violin □ trumpet □ clarinet □ oboe",
   "totalMarks": 25,
   "schemePages": [
    3
@@ -38387,9 +38387,9 @@
   "year": 2022,
   "section": "A",
   "topicId": "music-1-10",
-  "conceptId": "mus-appropriate-choose-continuation-continue",
+  "conceptId": "mus-appropriate-choose-clarinet-continuation",
   "questionRef": "2022 OL Composing Section A Q1(b)",
-  "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ violin",
+  "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ violin □ trumpet □ clarinet □ oboe",
   "totalMarks": 25,
   "schemePages": [
    3
@@ -38575,7 +38575,7 @@
   "topicId": "music-1-12",
   "conceptId": "mus-answer-appropriate-choose-composing",
   "questionRef": "2022 OL Composing Section A Q3(a)",
-  "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a minuet. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ violin",
+  "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a minuet. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ violin □ oboe □ trumpet □ descant recorder",
   "totalMarks": 25,
   "schemePages": [
    5
@@ -38761,7 +38761,7 @@
   "topicId": "music-1-12",
   "conceptId": "mus-appropriate-choose-composing-continue",
   "questionRef": "2022 OL Composing Section A Q3(b)",
-  "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ violin",
+  "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ violin □ oboe □ trumpet □ descant recorder",
   "totalMarks": 25,
   "schemePages": [
    5
@@ -41856,9 +41856,9 @@
   "year": 2024,
   "section": "A",
   "topicId": "music-1-10",
-  "conceptId": "mus-answer-appropriate-choose-continuation",
+  "conceptId": "mus-answer-appropriate-choose-clarinet",
   "questionRef": "2024 OL Composing Section A Q1(a)",
-  "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+  "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ clarinet □ flute □ descant recorder",
   "totalMarks": 20,
   "schemePages": [
    3
@@ -42032,9 +42032,9 @@
   "year": 2024,
   "section": "A",
   "topicId": "music-1-10",
-  "conceptId": "mus-appropriate-choose-continuation-continue",
+  "conceptId": "mus-appropriate-choose-clarinet-continuation",
   "questionRef": "2024 OL Composing Section A Q1(b)",
-  "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+  "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ clarinet □ flute □ descant recorder",
   "totalMarks": 20,
   "schemePages": [
    3
@@ -42210,7 +42210,7 @@
   "topicId": "music-1-12",
   "conceptId": "mus-answer-appropriate-choose-clarinet",
   "questionRef": "2024 OL Composing Section A Q3(a)",
-  "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+  "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ oboe □ trumpet □ violin",
   "totalMarks": 20,
   "schemePages": [
    5
@@ -42386,7 +42386,7 @@
   "topicId": "music-1-12",
   "conceptId": "mus-appropriate-choose-clarinet-composing",
   "questionRef": "2024 OL Composing Section A Q3(b)",
-  "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+  "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ oboe □ trumpet □ violin",
   "totalMarks": 20,
   "schemePages": [
    5
@@ -46387,9 +46387,9 @@
   "year": 2021,
   "section": "A",
   "topicId": "music-1-10",
-  "conceptId": "mus-appropriate-choose-continuation-continue",
+  "conceptId": "mus-appropriate-choose-clarinet-continuation",
   "questionRef": "2021 HL Composing Section A Q1",
-  "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ trumpet",
+  "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ trumpet □ violin □ clarinet □ oboe",
   "totalMarks": 50,
   "schemePages": [
    3
@@ -46841,9 +46841,9 @@
   "year": 2021,
   "section": "A",
   "topicId": "music-1-12",
-  "conceptId": "mus-appropriate-choose-composing-continue",
+  "conceptId": "mus-appropriate-choose-clarinet-composing",
   "questionRef": "2021 HL Composing Section A Q3",
-  "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a gigue is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+  "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a gigue is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ clarinet □ flute □ violin",
   "totalMarks": 50,
   "schemePages": [
    5
@@ -51180,9 +51180,9 @@
   "year": 2021,
   "section": "A",
   "topicId": "music-1-10",
-  "conceptId": "mus-answer-appropriate-choose-continuation",
+  "conceptId": "mus-answer-appropriate-choose-clarinet",
   "questionRef": "2021 OL Composing Section A Q1(a)",
-  "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+  "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ violin □ descant recorder □ clarinet",
   "totalMarks": 25,
   "schemePages": [
    3
@@ -51372,9 +51372,9 @@
   "year": 2021,
   "section": "A",
   "topicId": "music-1-10",
-  "conceptId": "mus-appropriate-choose-continuation-continue",
+  "conceptId": "mus-appropriate-choose-clarinet-continuation",
   "questionRef": "2021 OL Composing Section A Q1(b)",
-  "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
+  "questionText": "Continuation of a given opening • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ violin □ descant recorder □ clarinet",
   "totalMarks": 25,
   "schemePages": [
    3
@@ -51566,7 +51566,7 @@
   "topicId": "music-1-12",
   "conceptId": "mus-answer-appropriate-choose-clarinet",
   "questionRef": "2021 OL Composing Section A Q3(a)",
-  "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+  "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ oboe □ trumpet",
   "totalMarks": 25,
   "schemePages": [
    5
@@ -51758,7 +51758,7 @@
   "topicId": "music-1-12",
   "conceptId": "mus-appropriate-choose-clarinet-composing",
   "questionRef": "2021 OL Composing Section A Q3(b)",
-  "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
+  "questionText": "Composing to a given dance rhythm or metre or form • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ oboe □ trumpet",
   "totalMarks": 25,
   "schemePages": [
    5
