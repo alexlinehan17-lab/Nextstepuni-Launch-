@@ -508,6 +508,10 @@ export interface SecCardBase extends CardBase {
   // "Część E", each numbering its questions from 1, so the part is in the
   // address: "2026 HL Section LA Q1" files under 'LA' (pl_listen_specs).
   | 'LA' | 'LB' | 'LC' | 'LD' | 'LE'
+  // Polish's old examination (2010-2021) prints Część I, II and III -- the
+  // text and its questions, a ~100-word commentary, the essay -- each
+  // numbering from 1: "2020 HL Section III Q1" files under 'III'.
+  | 'II' | 'III'
   // German's two written-production sections, each a choice of (a) or (b):
   // Äußerung zum Thema and Schriftliche Produktion, cited "Section AT Q(a)".
   | 'AT' | 'SP'
