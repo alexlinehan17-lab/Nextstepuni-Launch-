@@ -84,6 +84,27 @@ class Booklet:
                 if _x >= 0.45 * width:
                     side = 'R'
                 if side != 'R':
+                    # "Comhrá 2. Dialogue 2." welded into one group (2018,
+                    # 2020 Higher): the English head still opens the dialogue.
+                    wd = re.search(r'\bDialogue\s+(\d)\s*\.', s)
+                    if wd and section == 'B':
+                        dialogue = int(wd.group(1))
+                        self.dialogues[dialogue] = {'title': [], 'asks': {}}
+                        cur = self.dialogues[dialogue]['title']
+                        continue
+                    # The English number welded onto the END of the Irish line
+                    # beside it — 2021 Higher Dialogue 1 prints "Luaigh dhá
+                    # ghníomhaíocht atá sé i gceist 4." with the English
+                    # question, without its "4.", on the right: the number
+                    # opens that question.
+                    tail = re.search(r'\s(\d{1,2})\s*\.\s*$', s)
+                    if tail and section == 'B' and dialogue is not None:
+                        n = int(tail.group(1))
+                        if n == max(self.dialogues[dialogue]['asks'] or [0]) + 1:
+                            ask = {'text': [], 'page': pno + 1}
+                            self.dialogues[dialogue]['asks'][n] = ask
+                            cur = ask['text']
+                            continue
                     # An Irish line welded to the English beside it ("… cuir
                     # ciorcal what you consider the most appropriate") hides an
                     # English line: the section's instruction is cut before it.
@@ -374,6 +395,12 @@ def cards(year, level, refuse, row_for, concept_for):
         head = ' '.join(B.dialogues[d]['title'])
         by_item = {a.item: a for a in priced}
         missing = [n for n in sorted(asks) if n not in by_item]
+        if len(asks) < len(priced):
+            for n in sorted(by_item):
+                refuse('the booklet prints fewer asks in this dialogue than the scheme '
+                       'prices, so the booklet reader lost one', f'{year} {lvl} Section LB{d} Q{n}',
+                       f'paper {len(asks)}, scheme {len(priced)}')
+            continue
         if len(asks) != len(priced) and not all(
                 (year, level, d, n) in OVERRIDES and 'total' in OVERRIDES[(year, level, d, n)]
                 for n in missing):
