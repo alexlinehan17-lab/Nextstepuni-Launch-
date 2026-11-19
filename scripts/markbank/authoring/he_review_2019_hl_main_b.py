@@ -2,7 +2,7 @@
 """2019 Higher B: source allocations, full choices and explicit unresolved tariff conflict."""
 from copy import deepcopy
 from he_review_2019_hl_main import *
-AMBIGUITY='Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance.'
+AMBIGUITY='Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. The card assesses the task against the printed total (20) and quotes both lines. Review ONE bacterium and every required heading against the original guidance.'
 def build():
  d=documents();p={n:text(d['paper'],n) for n in range(6,9)};s={n:text(d['scheme'],n) for n in range(8,16)}
  q={1:select(p[6],'1. Over',include=True)[3:],2:select(p[7],'2.','3.'),3:select(p[7],'3.'),4:select(p[8],'4.','5.'),5:select(p[8],'5.')};cards=[]

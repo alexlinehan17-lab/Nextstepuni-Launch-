@@ -118,20 +118,27 @@ export function assertJapanese2010OrdinaryRules(card, review) {
     throw new Error(`${card.id}: language rule exceeds its exact 2010 Ordinary local source`);
   }
   if (card.id === 'ja-2010-ol-2-3-iii') {
+    // Converted from a confidence hold on 19 Nov 2026 (CARD-STANDARD section 5,
+    // R3): the scheme prices each named food at 2 and the generic chicken,
+    // fish and salad at half, so it is a two-answer menu with those prices. The
+    // scheme gives no rule for combining a half-mark answer with the language
+    // reduction, so the card carries no automatic language rule; both clauses
+    // are quoted on the row.
     const quota = '2 names of the following food (2 marks each)';
     const partial = '(chicken, fish, salad;  half marks)';
-    const answers = ['Steak', 'Teriyaki Chicken', 'Raw fish', 'Potato fries', 'Ceaser salad', partial];
-    if (card.kind !== 'question' || card.tariffModel?.kind !== 'questionTotal' || card.totalMarks !== 4
-      || card.rubric || card.answerVariants || card.extraneousMaterialRule
+    const named = ['Steak', 'Teriyaki Chicken', 'Raw fish', 'Potato fries', 'Ceaser salad'];
+    const [row] = card.rows ?? [];
+    if (card.kind !== 'question' || card.tariffModel?.kind !== 'fixed' || card.totalMarks !== 4
+      || card.rubric || card.answerVariants || card.extraneousMaterialRule || card.answerLanguageRule
       || !same(card.sourceEvidence?.paperPages, [5]) || !same(card.sourceEvidence?.schemePages, [6])
-      || !same(card.rows?.map(row => row.verbatim), answers)
-      || !card.rows.every(row => row.kind === 'point' && row.marks === null
-        && row.contextNote?.includes(quota) && row.contextNote.includes(partial)
-        && row.contextNote.includes(selector.text) && row.contextNote.includes('marks are not calculated'))
+      || card.rows.length !== 1 || row.kind !== 'anyN' || row.group?.claimMax !== 2 || row.group?.perOption !== 2
+      || !same(row.group?.options, [...named, 'chicken', 'fish', 'salad'])
+      || !same(row.group?.optionMarks, [2, 2, 2, 2, 2, 1, 1, 1])
+      || !row.contextNote?.includes(quota) || !row.contextNote.includes(partial) || !row.contextNote.includes(selector.text)
       || ![{ document: 'scheme', page: 6, row: 24, group: null, text: quota },
         { document: 'scheme', page: 6, row: 27, group: null, text: partial }, selector]
         .every(bound => review.selectors.some(actual => same(actual, bound)))) {
-      throw new Error(`${card.id}: food partial/language intersection must remain the complete source-bound confidence task`);
+      throw new Error(`${card.id}: the food menu must keep the scheme's prices (2 each, generic half) and quote both clauses`);
     }
   }
   for (const [id, groups, rowsPerGroup, mark] of [['ja-2010-ol-3a-2', 6, 2, 1], ['ja-2010-ol-lb', 10, 1, 3]]) {

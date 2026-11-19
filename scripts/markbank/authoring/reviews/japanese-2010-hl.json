@@ -3746,113 +3746,194 @@
       },
       "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2010 Higher Level — © State Examinations Commission.",
       "tariffModel": {
-        "kind": "questionTotal"
+        "kind": "fixed"
       },
       "rows": [
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "18",
-          "marks": null,
-          "contextNote": "1. TOM — age. Printed allocation: 1 mark. (1/2 marks if answered in Japanese, romaji or Japanese script) The scheme separately publishes half-credit content alternatives and this language reduction, but gives no rule for combining them. This complete 18-mark task is therefore a confidence review: no quarter mark, combined multiplier or calculated score is inferred. Given cells are not additional answers.",
-          "id": "tom-age"
+          "marks": 1,
+          "contextNote": "1. TOM — age. Printed allocation: 1 mark. (1/2 marks if answered in Japanese, romaji or Japanese script) Each half step is the scheme's half marks: for an answer in Japanese, romaji or Japanese script, or for a half-credit answer it prints. It gives no rule for combining the two. Given cells are not additional answers.",
+          "id": "tom-age",
+          "permittedMarks": [
+            0,
+            0.5,
+            1
+          ]
         },
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "Mountain climbing",
-          "marks": null,
-          "contextNote": "1. TOM — one hobby. Printed allocation: 1 mark.",
-          "id": "tom-hobby"
+          "marks": 1,
+          "contextNote": "1. TOM — one hobby. Printed allocation: 1 mark. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+          "id": "tom-hobby",
+          "permittedMarks": [
+            0,
+            0.5,
+            1
+          ]
         },
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "Climb Mount Fuji (see Mount Fuji half marks)",
-          "marks": null,
-          "contextNote": "1. TOM — one reason. Printed allocation: 1 mark; literal half-credit alternative retained.",
-          "id": "tom-reason"
+          "marks": 1,
+          "contextNote": "1. TOM — one reason. Printed allocation: 1 mark; literal half-credit alternative retained. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+          "id": "tom-reason",
+          "permittedMarks": [
+            0,
+            0.5,
+            1
+          ]
         },
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "June 1 mark 16th 1 mark",
-          "marks": null,
-          "contextNote": "2. TARA — birthday. Printed allocation: Month1 + day1.",
-          "id": "tara-birthday"
+          "marks": 2,
+          "contextNote": "2. TARA — birthday. Printed allocation: Month1 + day1. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+          "id": "tara-birthday",
+          "permittedMarks": [
+            0,
+            0.5,
+            1,
+            1.5,
+            2
+          ]
         },
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "2nd year of college (college student half marks) Studying art (studying half marks) 1 mark for any of the above",
-          "marks": null,
-          "contextNote": "2. TARA — current activity, one detail. Printed allocation: 1 mark; all full/partial alternatives retained.",
-          "id": "tara-current"
+          "marks": 1,
+          "contextNote": "2. TARA — current activity, one detail. Printed allocation: 1 mark; all full/partial alternatives retained. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+          "id": "tara-current",
+          "permittedMarks": [
+            0,
+            0.5,
+            1
+          ]
         },
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "Go to manga coffee shop Go to art galleries. 1 mark for any of the above",
-          "marks": null,
-          "contextNote": "2. TARA — one reason. Printed allocation: 1 mark.",
-          "id": "tara-reason"
+          "marks": 1,
+          "contextNote": "2. TARA — one reason. Printed allocation: 1 mark. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+          "id": "tara-reason",
+          "permittedMarks": [
+            0,
+            0.5,
+            1
+          ]
         },
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "23",
-          "marks": null,
-          "contextNote": "3. MIKE — age. Printed allocation: 1 mark.",
-          "id": "mike-age"
+          "marks": 1,
+          "contextNote": "3. MIKE — age. Printed allocation: 1 mark. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+          "id": "mike-age",
+          "permittedMarks": [
+            0,
+            0.5,
+            1
+          ]
         },
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "September 1 mark 30th 1 mark",
-          "marks": null,
-          "contextNote": "3. MIKE — birthday. Printed allocation: Month1 + day1.",
-          "id": "mike-birthday"
+          "marks": 2,
+          "contextNote": "3. MIKE — birthday. Printed allocation: Month1 + day1. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+          "id": "mike-birthday",
+          "permittedMarks": [
+            0,
+            0.5,
+            1,
+            1.5,
+            2
+          ]
         },
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "3rd year in college in Berlin (college student half marks) studying maths (studying half marks) 1 mark for any of the above",
-          "marks": null,
-          "contextNote": "3. MIKE — current activity, one detail. Printed allocation: 1 mark; all full/partial alternatives retained.",
-          "id": "mike-current"
+          "marks": 1,
+          "contextNote": "3. MIKE — current activity, one detail. Printed allocation: 1 mark; all full/partial alternatives retained. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+          "id": "mike-current",
+          "permittedMarks": [
+            0,
+            0.5,
+            1
+          ]
         },
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "Sudoku puzzles Studying Japanese",
-          "marks": null,
-          "contextNote": "3. MIKE — one hobby. Printed allocation: 1 mark for one listed alternative.",
-          "id": "mike-hobby"
+          "marks": 1,
+          "contextNote": "3. MIKE — one hobby. Printed allocation: 1 mark for one listed alternative. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+          "id": "mike-hobby",
+          "permittedMarks": [
+            0,
+            0.5,
+            1
+          ]
         },
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "To live there for 3 years To do a masters in Tokyo university/ to go to Tokyo university)",
-          "marks": null,
-          "contextNote": "3. MIKE — one reason. Printed allocation: 1 mark for one listed alternative.",
-          "id": "mike-reason"
+          "marks": 1,
+          "contextNote": "3. MIKE — one reason. Printed allocation: 1 mark for one listed alternative. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+          "id": "mike-reason",
+          "permittedMarks": [
+            0,
+            0.5,
+            1
+          ]
         },
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "May 1 mark 19th 1 mark",
-          "marks": null,
-          "contextNote": "4. SOPHIE — birthday. Printed allocation: Month1 + day1.",
-          "id": "sophie-birthday"
+          "marks": 2,
+          "contextNote": "4. SOPHIE — birthday. Printed allocation: Month1 + day1. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+          "id": "sophie-birthday",
+          "permittedMarks": [
+            0,
+            0.5,
+            1,
+            1.5,
+            2
+          ]
         },
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "Studying fashion design in university (studying half marks) 4th year college student (college student half marks)",
-          "marks": null,
-          "contextNote": "4. SOPHIE — current activity, one detail. Printed allocation: 1 mark; all full/partial alternatives retained.",
-          "id": "sophie-current"
+          "marks": 1,
+          "contextNote": "4. SOPHIE — current activity, one detail. Printed allocation: 1 mark; all full/partial alternatives retained. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+          "id": "sophie-current",
+          "permittedMarks": [
+            0,
+            0.5,
+            1
+          ]
         },
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "Designing clothes Making clothes Going to fashion shows",
-          "marks": null,
-          "contextNote": "4. SOPHIE — one hobby. Printed allocation: 1 mark for one listed alternative.",
-          "id": "sophie-hobby"
+          "marks": 1,
+          "contextNote": "4. SOPHIE — one hobby. Printed allocation: 1 mark for one listed alternative. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+          "id": "sophie-hobby",
+          "permittedMarks": [
+            0,
+            0.5,
+            1
+          ]
         },
         {
-          "kind": "point",
+          "kind": "criterion",
           "verbatim": "Studying fashion design Study about kimono.",
-          "marks": null,
-          "contextNote": "4. SOPHIE — one reason. Printed allocation: 1 mark for one listed alternative.",
-          "id": "sophie-reason"
+          "marks": 1,
+          "contextNote": "4. SOPHIE — one reason. Printed allocation: 1 mark for one listed alternative. (1/2 marks if answered in Japanese, romaji or Japanese script)",
+          "id": "sophie-reason",
+          "permittedMarks": [
+            0,
+            0.5,
+            1
+          ]
         }
       ],
       "questionFigureKey": "ja-2010-hl-la",
@@ -3866,7 +3947,52 @@
         "attribution": "© State Examinations Commission.",
         "_component": "aural"
       },
-      "stem": "You will hear FOUR students introduce themselves at the 2nd annual European Japanese Speech Contest. You will hear the introductions three times; first right through; then in segments with pauses; and finally right through again."
+      "stem": "You will hear FOUR students introduce themselves at the 2nd annual European Japanese Speech Contest. You will hear the introductions three times; first right through; then in segments with pauses; and finally right through again.",
+      "taskGroups": [
+        {
+          "sourceCardId": "ja-2010-hl-la-tom",
+          "label": "1. TOM",
+          "marks": 3,
+          "rowIds": [
+            "tom-age",
+            "tom-hobby",
+            "tom-reason"
+          ]
+        },
+        {
+          "sourceCardId": "ja-2010-hl-la-tara",
+          "label": "2. TARA",
+          "marks": 4,
+          "rowIds": [
+            "tara-birthday",
+            "tara-current",
+            "tara-reason"
+          ]
+        },
+        {
+          "sourceCardId": "ja-2010-hl-la-mike",
+          "label": "3. MIKE",
+          "marks": 6,
+          "rowIds": [
+            "mike-age",
+            "mike-birthday",
+            "mike-current",
+            "mike-hobby",
+            "mike-reason"
+          ]
+        },
+        {
+          "sourceCardId": "ja-2010-hl-la-sophie",
+          "label": "4. SOPHIE",
+          "marks": 5,
+          "rowIds": [
+            "sophie-birthday",
+            "sophie-current",
+            "sophie-hobby",
+            "sophie-reason"
+          ]
+        }
+      ]
     },
     {
       "id": "ja-2010-hl-lb-1",
