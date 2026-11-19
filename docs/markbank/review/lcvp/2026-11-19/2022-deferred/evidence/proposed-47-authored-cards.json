@@ -1,0 +1,3613 @@
+[
+  {
+    "id": "lcvp-2022-cl-deferred-a1",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "deferred-a1-source",
+    "level": "common",
+    "year": 2022,
+    "section": "A",
+    "questionRef": "2022 CL Section A Q1 — Deferred sitting",
+    "questionText": "Why are the students happy to be working together as a team?",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 1,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Why are the students happy to be working together as a team?",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": " Complete original wording, models and allocation: Why are the students happy to be working together as a team? 1 mark Less stressful Share ideas Can divide the work Not working on your own"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        4
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred audiovisual instructions",
+        "pages": [
+          3
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-a2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-a2-source",
+    "level": "common",
+    "year": 2022,
+    "section": "A",
+    "questionRef": "2022 CL Section A Q2 — Deferred sitting",
+    "questionText": "Explain the two areas being researched by these students for their My Own Place project.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Explain the two areas being researched by these students for their My Own Place project?",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Two areas, Tourism and Business enterprise, with their complete printed explanations. Keep as one ask. Complete original wording, models and allocation: Explain the two areas being researched by these students for their My Own Place project? 2 x 1 mark Tourism: the hotel/the restaurants/the B&B's/the new surf and sailing school/the bike hire/ businesses/tourism is actually the main source of income in that town Business enterprise: interviewed the manager of Kilabbey Supermarket.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Tourism",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Business enterprise",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        4
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred audiovisual instructions",
+        "pages": [
+          3
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-a3",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-a3-source",
+    "level": "common",
+    "year": 2022,
+    "section": "A",
+    "questionRef": "2022 CL Section A Q3 — Deferred sitting",
+    "questionText": "What is Corporate Social Responsibility (CSR)?",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "What is Corporate Social Responsibility (CSR)?",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "One complete CSR definition, with three one-mark components. Complete original wording, models and allocation: What is Corporate Social Responsibility (CSR)? 3 x 1 mark It is the responsibility of enterprises for their impacts/raise awareness on society/environment/workplace/community.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        4
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred audiovisual instructions",
+        "pages": [
+          3
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-a4",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-0",
+    "conceptId": "deferred-a4-source",
+    "level": "common",
+    "year": 2022,
+    "section": "A",
+    "questionRef": "2022 CL Section A Q4 — Deferred sitting",
+    "questionText": "Why does Cáit think that Kilabbey Supermarket is a great place to work?",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Why does Cáit think that Kilabbey Supermarket is a great place to work?",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": " Complete original wording, models and allocation: Why does Cáit think that Kilabbey Supermarket is a great place to work? 4 x 1 mark 1. The staff are all local 2. The staff are different ages 3. Different abilities 4. Different cultural backgrounds 5. It is very diverse and inclusive 6. They seem very happy 7. There’s a great atmosphere in the place 8. Supports their personal beliefs",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        5
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred audiovisual instructions",
+        "pages": [
+          3
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-a5",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-a5-source",
+    "level": "common",
+    "year": 2022,
+    "section": "A",
+    "questionRef": "2022 CL Section A Q5 — Deferred sitting",
+    "questionText": "Give examples of CSR in action in one of the four areas named below. Community ☐ Workplace ☐ Environment ☐ Marketplace ☐",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Give examples of CSR in action in one of the four areas named below.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          2,
+          4
+        ],
+        "contextNote": "Choose ONE of Community, Workplace, Environment or Market place. Credit two examples from that same chosen area, two or zero marks each. Keep all four complete printed pools; do not combine areas. Complete original wording, models and allocation: Give examples of CSR in action in one of the four areas named below. 2 x 2 marks (0/2) Community: Kilabbey Supermarket sponsors jerseys for the local football teams Fundraisers for the homeless. Autism/Age friendly times for shopping. Age‐friendly parking. Provide local employment that is diverse and inclusive. Workplace: Staff are all local Different ages, abilities and cultural backgrounds It is very diverse and inclusive They work hard Seem very happy There’s a great atmosphere in the place Environment: Compostable fruit and veg bags/environmentally friendly products Electric delivery trucks Putting in charging points for electric cars in the car park Energy efficient/reduce, reuse, recycle ‘the three Rs’ Lack of pollution Market place: Is about customers Sourcing of products Looking after suppliers by treating them fairly Paying suppliers on time They’re not spending as much on supplies or energy Ensuring high safety standards for consumers",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        5
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred audiovisual instructions",
+        "pages": [
+          3
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-a6",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-a6-source",
+    "level": "common",
+    "year": 2022,
+    "section": "A",
+    "questionRef": "2022 CL Section A Q6 — Deferred sitting",
+    "questionText": "Do you agree with Cáít that ‘giving back to the community’ is just a way for a business to advertise? Give two reasons for your answer.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Do you agree with Cáit that ‘giving back to the community is just a way for a business to advertise? Give two reasons for your answer.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": "Keep the agreement question open. The scheme supplies three advertising-benefit models and does not require a YES answer. No invented negative model. Complete original wording, models and allocation: Do you agree with Cáit that ‘giving back to the community is just a way for a business to advertise? Give two reasons for your answer. 2 x 2 marks (1+1) Get their name on the jerseys which is advertising: Sponsors jerseys for the local football teams. Fundraises for the homeless raises their profile in the community, creates goodwill. By having age friendly parking and autism awareness evenings so the shop benefits from loyal customers.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        6
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred audiovisual instructions",
+        "pages": [
+          3
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-a7",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-a7-source",
+    "level": "common",
+    "year": 2022,
+    "section": "A",
+    "questionRef": "2022 CL Section A Q7 — Deferred sitting",
+    "questionText": "Have the aims of CSR been met by Kilabbey Supermarket? Give reasons for your answer.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Have the aims of CSR been met by Kilabbey Supermarket? Give reasons for your answer. Three valid reasons",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "The scheme prints Three valid reasons and 6 x 1 mark. Preserve both statements: six one-mark components overall, without inventing a fixed mark allocation to the three reason groups. Complete original wording, models and allocation: Have the aims of CSR been met by Kilabbey Supermarket? Give reasons for your answer. Three valid reasons 6 x 1 mark Build trust within communities Sponsorship for local teams Provide services for people with disabilities/the homeless/the elderly/Autism Provides employment which is diverse and inclusive Raise awareness about the environment Everyone benefits from lack of pollution etc. Encourage the use of compostable bags Safeguarding the future provision of goods and services Providing a service etc. electric charging points, electric trucks Encourage social change How products are sourced Environmental awareness Consumer will benefit as new products / business will evolve. Standards are high when workers work hard, good for business No complaints to be dealt with from workers re discrimination/pay Paying suppliers on time",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-5",
+            "verbatim": "Response 5",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-6",
+            "verbatim": "Response 6",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        7
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred audiovisual instructions",
+        "pages": [
+          3
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-a8",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-a8-source",
+    "level": "common",
+    "year": 2022,
+    "section": "A",
+    "questionRef": "2022 CL Section A Q8 — Deferred sitting",
+    "questionText": "Why has CSR become more important in recent years?",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Why has CSR become more important in recent years? Three valid answers",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": " Complete original wording, models and allocation: Why has CSR become more important in recent years? Three valid answers 3 x 2 marks (1+1) 1. Customers now want to know that their choices are supporting their own community. 2. Customers are prepared to pay more for something if they see the business cares about the environment. 3. People want to support businesses who care about social issues and actually do something about them ‐ like Kilabbey Supermarket fundraising for the homeless. 4. They’re making a positive difference to the environment/compostable bags/electric trucks. 5. The business gets a good reputation which improves their profits. 6. The business becomes a place where people want to work due to its diverse and inclusive staffing. 7. The community benefits due to sponsorship of local teams. 8. Suppliers are paid on time and treated fairly.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred audiovisual instructions",
+        "pages": [
+          3
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-b1",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-b1-source",
+    "level": "common",
+    "year": 2022,
+    "section": "B",
+    "questionRef": "2022 CL Section B Q1 — Deferred sitting",
+    "questionText": "Explain three of the following terms: (i) Overheads (iii) Innovation (ii) Diversification (iv) Mentor",
+    "stem": "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Explain three of the following terms Three valid answers",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "One printed choice: explain three of the four terms. Keep all four complete models, including all Overheads examples. Do not count a term twice. Complete original wording, models and allocation: Explain three of the following terms Three valid answers 3 x 2 marks (1+1) Mentor: A mentor is a person with experience who gives advice/help/guidance over a period of time to someone younger/less experienced to help them develop their work. Diversification: Entering into a new market or industry while also creating a new product for that new market. Spreading the risk. Innovation: The introduction of new things, ideas or ways of doing something. Overheads: Overhead costs are an expense, associated with running a business. Examples: Rent; utilities; insurance; office supplies; travel; advertising expenses; accounting and legal expenses; salaries and wages.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Alex and Rami — complete case study",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalTopicIds": [
+      "lcvp-link-modules-1-0"
+    ],
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred question",
+        "pages": [
+          11
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-b2i",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-b2i-source",
+    "level": "common",
+    "year": 2022,
+    "section": "B",
+    "questionRef": "2022 CL Section B Q2(i) — Deferred sitting",
+    "questionText": "Why do businesses diversify?",
+    "stem": "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 1,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Why do businesses diversify?",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": " Complete original wording, models and allocation: Why do businesses diversify? 1 mark 1. Diversification of your investments lowers risk so less chance of failure. 2. Companies diversify to achieve greater profitability. 3. Diversification helps to expand a business into markets and industries that they haven't currently explored."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Alex and Rami — complete case study",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred question",
+        "pages": [
+          12
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-b2ii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-b2ii-source",
+    "level": "common",
+    "year": 2022,
+    "section": "B",
+    "questionRef": "2022 CL Section B Q2(ii) — Deferred sitting",
+    "questionText": "Outline two examples of diversification evident in this case study.",
+    "stem": "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Outline two examples of diversification evident in this case study. Two valid answers",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": " Complete original wording, models and allocation: Outline two examples of diversification evident in this case study. Two valid answers 2 x 2 marks (1+1) 1. Before COVID they were thinking of diversifying into accessories and footwear. 2. Diversified into online sales. 3. Business consultancy.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Alex and Rami — complete case study",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred question",
+        "pages": [
+          12
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-b2iii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-b2iii-source",
+    "level": "common",
+    "year": 2022,
+    "section": "B",
+    "questionRef": "2022 CL Section B Q2(iii) — Deferred sitting",
+    "questionText": "Describe two risks associated with diversification in business.",
+    "stem": "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Describe two risks associated with diversification in business Two valid answers",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": " Complete original wording, models and allocation: Describe two risks associated with diversification in business Two valid answers 2 x 2 marks (1+1) 1. Cost associated with expansion. 2. Availability of capital. 3. Availability of essential resources. 4. May lose money if the product line fails. 5. Dilute/confuse the impact of the original product when they specialize in a specific brand. 6. Might reduce productivity/ quality of work it there is a strain put on employees/owners.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Alex and Rami — complete case study",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred question",
+        "pages": [
+          12
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-b3i",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-b3i-source",
+    "level": "common",
+    "year": 2022,
+    "section": "B",
+    "questionRef": "2022 CL Section B Q3(i) — positive effect — Deferred sitting",
+    "questionText": "Describe one positive effect for an enterprise moving to selling online.",
+    "stem": "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business. Describe one positive and one negative effect for an enterprise moving to selling online.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "positive",
+        "kind": "criterion",
+        "verbatim": "Describe one positive and one negative effect for an enterprising moving to selling online. Two valid answers",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Proposed positive-effect card, with all seven positive models. The six negative models are shown for source context only. Third-reader validation required. Complete original wording, models and allocation: Describe one positive and one negative effect for an enterprising moving to selling online. Two valid answers 2 x 2 marks (1+1) 1. You can shop at any time. 2. You do not need a shop for online so rent will be cheaper. 3. More stock on hand as area for shop sales is not reduced/warehouse. 4. Online platform can develop a bigger audience/customer base than a shop base. 5. Selling Online can offer promo discount codes. 6. Online sales can have reviews. 7. Hours of work different which may be easier to attract staff with selling online. 1. Dealing with returns is more complex/time 2. You have to consider costs such as packaging or delivery dates with online. 3. With online you need a good website/product description to make it easy for customers to order. 4. Greater security risks/fees to be paid for online payments. 5. Better relationship/rapport/attention with in person sales. People can be distracted when on line with ads, social media, and other websites competing for attention. 6. Losing customers who do not have access/use the internet."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Alex and Rami — complete case study",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred question",
+        "pages": [
+          13,
+          14
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-b3i-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-b3i-source-second-ask",
+    "level": "common",
+    "year": 2022,
+    "section": "B",
+    "questionRef": "2022 CL Section B Q3(i) — negative effect — Deferred sitting",
+    "questionText": "Describe one negative effect for an enterprise moving to selling online.",
+    "stem": "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business. Describe one positive and one negative effect for an enterprise moving to selling online.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "negative",
+        "kind": "criterion",
+        "verbatim": "Describe one positive and one negative effect for an enterprising moving to selling online. Two valid answers",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Proposed negative-effect card, with all six negative models. The seven positive models are shown for source context only. Third-reader validation required. Complete original wording, models and allocation: Describe one positive and one negative effect for an enterprising moving to selling online. Two valid answers 2 x 2 marks (1+1) 1. You can shop at any time. 2. You do not need a shop for online so rent will be cheaper. 3. More stock on hand as area for shop sales is not reduced/warehouse. 4. Online platform can develop a bigger audience/customer base than a shop base. 5. Selling Online can offer promo discount codes. 6. Online sales can have reviews. 7. Hours of work different which may be easier to attract staff with selling online. 1. Dealing with returns is more complex/time 2. You have to consider costs such as packaging or delivery dates with online. 3. With online you need a good website/product description to make it easy for customers to order. 4. Greater security risks/fees to be paid for online payments. 5. Better relationship/rapport/attention with in person sales. People can be distracted when on line with ads, social media, and other websites competing for attention. 6. Losing customers who do not have access/use the internet."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Alex and Rami — complete case study",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred question",
+        "pages": [
+          13,
+          14
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-b3ii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-b3ii-source",
+    "level": "common",
+    "year": 2022,
+    "section": "B",
+    "questionRef": "2022 CL Section B Q3(ii) — Deferred sitting",
+    "questionText": "Identify and explain three issues which should be considered when preparing a long- term plan for the business.",
+    "stem": "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Identify and explain three issues which should be considered when preparing a long‐ term plan for the business Three valid answers",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "Provisional whole ask. Generic 3 x 2 (1+1) does not name separate identification/explanation awards. A third reader decides whether it must split. Complete original wording, models and allocation: Identify and explain three issues which should be considered when preparing a long‐ term plan for the business Three valid answers 3 x 2 marks (1+1) 1. Marketing/Market Research ‐ to find out if your idea will be successful: Desk and field research/undertaken by the business or by a market research firm/identify target market/demand/competition/advertising/USP/price. 2. Finance ‐ to know how much is needed/where you will get the money/budgeting is important to ensure you have enough to meet your running costs. Sources of finance/loan/grants/cash flow forecast/budgeting income and expenditure/costs involved in purchasing equipment. 3. Staff/Personnel/HR ‐ to know how many employees are required/qualifications: Job description for employees/qualifications/salary/training required/how many employees needed. 4. Production ‐ to know how long it will take to make the product/potential difficulties can be planned for. Raw materials/suppliers/production process/distribution/packaging/design. 5. Location/Premises ‐ to plan for proper facilities and enough space/near good infrastructure. Near customers, staff and suppliers/parking/adequate room for future expansion. Near airport/good road network for deliveries. 6. Legalities – planning permission, custom clearance, safety statement, employee contracts.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Alex and Rami — complete case study",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original deferred question",
+        "pages": [
+          13,
+          14
+        ],
+        "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c1a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-1",
+    "conceptId": "deferred-c1a-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q1(a) — Deferred sitting",
+    "questionText": "State two steps that you should take to prepare for an interview for the above position.",
+    "stem": "Read the following advertisement and answer the questions which follow. Part-time Retail Assistants required for busy city centre outlet. The successful applicant must have good communication skills and a pleasant manner. Apply with Curriculum Vitae (including referees) and letter of application to: The Manager, Rooney’s Supermarkets Ltd, Cooke St, Dublin 8.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "State two steps that you should take to prepare for an interview for the above position.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          2,
+          4
+        ],
+        "contextNote": " Complete original wording, models and allocation: State two steps that you should take to prepare for an interview for the above position. 2 x 2 marks (0/2) 1. Carefully examine the job description, the more you can align yourself to these details 2. Research the company, their products or services online/in the newspapers/trade magazines. 3. Do an interview preparation course/practice questions/do a mock interview with a friend or family member. This will help to improve your confidence, give you a chance to practice your interview. 4. Interview etiquette ‐ proper handshake/maintaining eye contact/sitting up straight/gestures/diction. So you come across well in the interview. 5. Pick appropriate clothes to wear for the interview/make sure your clothes are clean and appropriate for the interview/you should also be well groomed. This will make a good first impression. 6. Plan your transport to the interview/Do a dry run the day before to make sure you know where to go and how long it will take to get there. This will ensure you will arrive on time for the interview/be early. 7. Reread your application form or CV. To refresh your memory and prepare for potential questions on them. 8. Prepare in advance additional documents you may have been asked to bring to the interview/ safe pass/ certification. So as to not be looking for these minutes before your interview. 9. Prepare questions you would like to ask at the end of you interview. Shows you have given some thought to the job/contact/duties etc. 10. Mentally prepare, good night’s sleep, eat well before the interview. You’re not tired, hungry, there is less stress on you as you are ready for the interview.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        18
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c1b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-1",
+    "conceptId": "deferred-c1b-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q1(b) — Deferred sitting",
+    "questionText": "List two questions that might be asked at an interview for the position as advertised.",
+    "stem": "Read the following advertisement and answer the questions which follow. Part-time Retail Assistants required for busy city centre outlet. The successful applicant must have good communication skills and a pleasant manner. Apply with Curriculum Vitae (including referees) and letter of application to: The Manager, Rooney’s Supermarkets Ltd, Cooke St, Dublin 8.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "List two questions that might be asked at an interview for the position as advertised.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          2,
+          4
+        ],
+        "contextNote": "Two suitable interview questions, two marks each. Keep all four printed examples; no specific pair is compulsory. Complete original wording, models and allocation: List two questions that might be asked at an interview for the position as advertised. 4 marks (2+2) Two relavent questions Why do you want this job? Why should we employ you? Have you any experience of working in retail? What hours would you be available to work?",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        18
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c1c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-1",
+    "conceptId": "deferred-c1c-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q1(c) — Deferred sitting",
+    "questionText": "Write a letter of application for the position of part-time Retail Assistant as advertised above.",
+    "stem": "Read the following advertisement and answer the questions which follow. Part-time Retail Assistants required for busy city centre outlet. The successful applicant must have good communication skills and a pleasant manner. Apply with Curriculum Vitae (including referees) and letter of application to: The Manager, Rooney’s Supermarkets Ltd, Cooke St, Dublin 8.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "criterion-1",
+        "kind": "point",
+        "verbatim": "Own address",
+        "marks": 1,
+        "contextNote": "Original model letter:\n\nRe: Position of Part‐time Retail Assistant\n\nDear Sir/Madam\n\nI am a 6th year LCVP student at XXXX Community School. I would like to apply for the position of part‐time retail assistant as advertised.\n\nI am really interested in this position and I will be available to work from the 25th June.\n\nPlease find enclosed my curriculum vitae and names of my referees. I would appreciate an opportunity to interview for this position.\n\nYours faithfully\n\nJohn Smith\n\nSummary of marks: Own address 1m; Business address 1m; Date 1m; Subject line 1m; Opening 1m; Introduction/reason 1m; Closing 1m; CV/references 1m; Total 8m."
+      },
+      {
+        "id": "criterion-2",
+        "kind": "point",
+        "verbatim": "Business address",
+        "marks": 1
+      },
+      {
+        "id": "criterion-3",
+        "kind": "point",
+        "verbatim": "Date",
+        "marks": 1
+      },
+      {
+        "id": "criterion-4",
+        "kind": "point",
+        "verbatim": "Subject line",
+        "marks": 1
+      },
+      {
+        "id": "criterion-5",
+        "kind": "point",
+        "verbatim": "Opening",
+        "marks": 1
+      },
+      {
+        "id": "criterion-6",
+        "kind": "point",
+        "verbatim": "Introduction/reason",
+        "marks": 1
+      },
+      {
+        "id": "criterion-7",
+        "kind": "point",
+        "verbatim": "Closing",
+        "marks": 1
+      },
+      {
+        "id": "criterion-8",
+        "kind": "point",
+        "verbatim": "CV/references",
+        "marks": 1
+      },
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "unprinted": true,
+        "contextNote": "The scheme gives one mark each for Own address, Business address and Date, but its model letter begins at Re: and prints none of those three fields. The complete model and all eight printed criteria are retained; no address or date is invented. This notice adds no marks."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        19
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c1d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "deferred-c1d-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q1(d) — Deferred sitting",
+    "questionText": "Why do employers emphasise communication skills when interviewing for new employees? Include three reasons in your answer.",
+    "stem": "Read the following advertisement and answer the questions which follow. Part-time Retail Assistants required for busy city centre outlet. The successful applicant must have good communication skills and a pleasant manner. Apply with Curriculum Vitae (including referees) and letter of application to: The Manager, Rooney’s Supermarkets Ltd, Cooke St, Dublin 8.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Why do employers emphasise communication skills when interviewing for new employees? Include three reasons in your answer. Three valid reasons",
+        "marks": 9,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "contextNote": " Complete original wording, models and allocation: Why do employers emphasise communication skills when interviewing for new employees? Include three reasons in your answer. Three valid reasons 3 x 3 marks (1+1+1) 1. Businesses use phones, emails, various chat applications, and video conferencing systems to interact with other people. 2. Excellent communication skills also help with team building, and help to make sure that collaborative projects run smoothly. 3. Excellent communicators expresses themselves in a positive, clear and unambiguous way both when speaking to customers and in writing. 4. Employees with excellent communication skills understand instructions, ask questions and relay information with ease. 5. Innovation within an organisation relies heavily on employees that have excellent communication skills. 6. The ability to communicate effectively plays a large role in resolving conflicts and preventing potential ones from arising.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        20
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c2a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "deferred-c2a-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q2(a) — Deferred sitting",
+    "questionText": "Name one community association in your area.",
+    "stem": "Community associations bring great benefits to the local area.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          2
+        ],
+        "contextNote": " Complete original wording, models and allocation: Name one community association in your area. One valid community association 2 marks (0/2)",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        21
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c2b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "deferred-c2b-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q2(b) — Deferred sitting",
+    "questionText": "State three benefits this community association brings to your area.",
+    "stem": "Community associations bring great benefits to the local area. Name one community association in your area.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "State three benefits this community association brings to your area.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "Eight complete examples plus Etc.; retain the same chosen community association. Complete original wording, models and allocation: State three benefits this community association brings to your area. 3 x 2 marks (1+1) 1. They provide services to the community/to help people in need/support a local cause. 2. They can create employment by hiring full time staff/ give volunteers an opportunity to upskill. 3. Young people can get work experience with them and can experience the work of the voluntary body/visit in to school from voluntary organisation. 4. Local amenities or environment can be improved/tidy towns/walkways, parks, cycle tracks etc. 5. Attracts tourism/spin off business/B&Bs/restaurants/transport business. Money spent in the area raises the standard of living in the area. 6. A good community spirit is generated/fosters pride in the local area/there might be an increase in the number of volunteers/provides an opportunity for people to volunteer/ friendships. 7. Grants received could be used locally e.g. improving local resources or facilities. 8. Services in the community are improved/family members may benefit from the organisation. 9. Etc.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        21
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c2ci",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "deferred-c2ci-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q2(c)(i) — Deferred sitting",
+    "questionText": "Outline two steps you should take in preparing for the visit.",
+    "stem": "Community associations bring great benefits to the local area. Name one community association in your area. You have been asked to organise the visit of a representative from a voluntary organisation to your class.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Outline two steps you should take in preparing for the visit.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Six actual preparation examples plus Etc. The printed numbering skips 5; do not create a missing example. Complete original wording, models and allocation: Outline two steps you should take in preparing for the visit. 2 x 1 mark 1. Contact the organisation to arrange date and time. 2. Get permission from the principal/parents. 3. Research the organisation/prepare questions to ask. 4. Ask teacher to review the questions that were prepared. 6. Prepare necessary materials for the visit/questionnaire/notebook and pen. 7. Decide who is doing what for the visit/assign roles to different people. 8. Etc.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        22
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c2cii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "deferred-c2cii-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q2(c)(ii) — Deferred sitting",
+    "questionText": "Identify three personal qualities you need to successfully organise the visit.",
+    "stem": "Community associations bring great benefits to the local area. Name one community association in your area. You have been asked to organise the visit of a representative from a voluntary organisation to your class.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Identify three personal qualities you need to successfully organise the visit.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          2,
+          4,
+          6
+        ],
+        "contextNote": "Three personal qualities at two marks each. The source prints no one-mark step; examples plus Etc. remain open. Complete original wording, models and allocation: Identify three personal qualities you need to successfully organise the visit. 3 x 2m 1. Ability to work as a team. 2. Able to communicate clearly. 3. Be organised. 4. Make preparations in advance. 5. Etc.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        22
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c2d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "deferred-c2d-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q2(d) — Deferred sitting",
+    "questionText": "Describe three ways you could evaluate the success of the visit.",
+    "stem": "Community associations bring great benefits to the local area. Name one community association in your area. You have been asked to organise the visit of a representative from a voluntary organisation to your class.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Describe three ways you could evaluate the success of the visit.",
+        "marks": 9,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "contextNote": "Keep every continuation in all seven evaluation-method models. No separate naming/reason awards are printed. Complete original wording, models and allocation: Describe three ways you could evaluate the success of the visit. 3 x 3 marks (1+1+1) 1. Questionnaire: Can be given to the speaker as well as the class to get their opinion on the visit. Easy to administer/collate results Can be completed anonymously Generally inexpensive Good response rate They are objective. 2. Class Discussion: The class can discuss the visit in/varying opinions can be taken on board. Easy to organise Everyone can participate Can see how much was learned Allows for everyone to contribute to the discussion Good to show improvement or practice communication skills. 3. Portfolio Item e.g. Summary Report: Correct type of information to complete the report. Easy method to use as all class members must produce a report Reports can be compared easily. 4. Contact the speaker via a follow‐up phone call or e‐mail. They are in a position to give feedback from their point of view as to how they felt about the visit, how the students engaged and whether they felt that the students benefitted from the visit. 5. Ask Teacher: who can comment on how well this visit was organised/run. This allows the class to practice their interview/communication skills where questions can be explained if necessary They are easy to carry out with no cost involved You will get honest feedback/review of teamwork. 6. Review of Teamwork: Did the class put into practice what they have learned/how well did they work together as a team. Objective was to work as a team All class members are aware of what is involved Will give direction for future teamwork activities. 7. Review Aims/Objectives: To see if the aims or objectives for the visit were met. Was the purpose of the activity achieved? Did they get the information they needed?",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        23
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c3a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "deferred-c3a-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q3(a) — Deferred sitting",
+    "questionText": "Draw up an agenda for the class meeting to organise the activity.",
+    "stem": "The school Principal has asked your class to organise the end of year student awards ceremony.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Draw up an agenda for the class meeting to organise this activity.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": "One agenda with four one-mark items chosen from the seven printed examples. No compulsory item or extra layout/heading award is printed. Complete original wording, models and allocation: Draw up an agenda for the class meeting to organise this activity. 4 x 1 mark 1. Election of class members to positions/chairperson/secretary/treasurer etc. 2. Assigning tasks/roles/delegation of duties/permission from PE teacher to use the school hall. 3. Finance. 4. Plan of work/action steps. 5. Timeline/deadlines/completion dates/schedule of time. 6. Date/time of next meeting. 7. AOB.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        24
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c3b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "deferred-c3b-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q3(b) — Deferred sitting",
+    "questionText": "Outline two benefits of teamwork.",
+    "stem": "The school Principal has asked your class to organise the end of year student awards ceremony.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Outline two benefits of teamwork",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": " Complete original wording, models and allocation: Outline two benefits of teamwork 2 x 2 marks (1+1) 1. Sharing of information and ideas. 2. More problem‐solving abilities. 3. Sharing of goals. 4. Greater sense of ownership. 5. Sharing of tasks/sharing of responsibilities/less stressful. 6. Gets the job completed faster or on time. 7. Activity runs smoothly. 8. Develops friendships.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        24
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c3c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "deferred-c3c-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q3(c) — Deferred sitting",
+    "questionText": "Identify and describe two skills that could be developed during this activty?",
+    "stem": "The school Principal has asked your class to organise the end of year student awards ceremony.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "response-1",
+        "kind": "criterion",
+        "verbatim": "Identify and describe two skills that could be developed during this activity.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          2,
+          4
+        ],
+        "contextNote": "Response 1 of 2. Provisional whole ask. Two responses, each with two indivisible two-mark components. No semantic allocation is invented; a third reader decides the split. Complete original guidance: Identify and describe two skills that could be developed during this activity. 2 x 4 marks (2 + 2) 1. Communication skills 2. ICT skills 3. Teamwork skills 4. Presentation skills 5. Research skills 6. Leadership skills 7. Report writing skills 8. Planning skills 9. Organisation skills 10. Problem solving skills 11. Time management skills 12. Etc.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-2",
+        "kind": "criterion",
+        "verbatim": "Identify and describe two skills that could be developed during this activity.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          2,
+          4
+        ],
+        "contextNote": "Response 2 of 2. Provisional whole ask. Two responses, each with two indivisible two-mark components. No semantic allocation is invented; a third reader decides the split. Complete original guidance: Identify and describe two skills that could be developed during this activity. 2 x 4 marks (2 + 2) 1. Communication skills 2. ICT skills 3. Teamwork skills 4. Presentation skills 5. Research skills 6. Leadership skills 7. Report writing skills 8. Planning skills 9. Organisation skills 10. Problem solving skills 11. Time management skills 12. Etc.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "unprinted": true,
+        "contextNote": "The scheme names eleven skills plus Etc. but prints no descriptions. Retain all names and the printed 2 x 4 (2+2) allocation. This notice adds no marks."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        25
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c3d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-3",
+    "conceptId": "deferred-c3d-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q3(d) — Deferred sitting",
+    "questionText": "Set out under four appropriate headings, a plan for organising the event.",
+    "stem": "The school Principal has asked your class to organise the end of year student awards ceremony.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "headings",
+        "kind": "anyN",
+        "verbatim": "Set out under four appropriate headings, a plan for organising the event.",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 4,
+          "perOption": 1,
+          "options": [
+            "Aims/Objectives",
+            "Research Methods",
+            "Analysis of Research",
+            "Action Steps",
+            "Schedule of Time",
+            "Schedule of Costs",
+            "Evaluation Methods"
+          ]
+        },
+        "contextNote": "One event plan with four appropriate headings. Complete original wording, models and allocation: Set out under four appropriate headings, a plan for organising the event. 4 x 1 mark heading 5 x 1 mark action steps 1. Aims/Objectives 2. Research Methods 3. Analysis of Research 4. Action Steps 5. Schedule of Time 6. Schedule of Costs 7. Evaluation Methods"
+      },
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 5,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "contextNote": "The five one-mark action steps have no printed example answers. The seven printed headings remain above. Complete original wording, models and allocation: Set out under four appropriate headings, a plan for organising the event. 4 x 1 mark heading 5 x 1 mark action steps 1. Aims/Objectives 2. Research Methods 3. Analysis of Research 4. Action Steps 5. Schedule of Time 6. Schedule of Costs 7. Evaluation Methods",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-5",
+            "verbatim": "Response 5",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ],
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        26
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c4a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-0",
+    "conceptId": "deferred-c4a-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q4(a) — Deferred sitting",
+    "questionText": "List four sources of employment in your local area.",
+    "stem": "Work experience is an important part of the Leaving Certificate Vocational Programme.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": " Complete original wording, models and allocation: List four sources of employment in your local area. Any four workplaces named 4 x 1 mark",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ],
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        27
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c4b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-3",
+    "conceptId": "deferred-c4b-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q4(b) — Deferred sitting",
+    "questionText": "Outline two ways of finding work experience.",
+    "stem": "Work experience is an important part of the Leaving Certificate Vocational Programme.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Outline two ways of finding work experience",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": " Complete original wording, models and allocation: Outline two ways of finding work experience 2 x 2 marks (1+1) 1. Personal contacts‐ family members, teachers, word of mouth 2. Sending out CV/letter of application to potential employers 3. Personal visits 4. Phone call 5. From part time work 6. Use of the internet 7. Send an email to business 8. Newspapers/Notice boards 9. Local radio",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        27
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c4c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-3",
+    "conceptId": "deferred-c4c-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q4(c) — sources — Deferred sitting",
+    "questionText": "State three different sources of support or help available to you during your work experience.",
+    "stem": "Work experience is an important part of the Leaving Certificate Vocational Programme. State three different sources of support or help available to you during your work experience. Explain in detail how one of the stated sources helped you.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "sources",
+        "kind": "criterion",
+        "verbatim": "State three different sources of support or help available to you during your work experience. Explain in detail how one of the stated sources helped you.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Three different named sources, one mark each; keep all nine printed names. Complete original wording, models and allocation: State three different sources of support or help available to you during your work experience. Explain in detail how one of the stated sources helped you. 3 x 1 mark sources 1 point developed (2 + 2 + 1)  Family member  Your LCVP teacher/teacher  Career Guidance Teacher  Employer  Mentor  Fellow worker/Employee  Instruction manual/Training booklet  Internet  Fellow classmates",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        28
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c4c-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-3",
+    "conceptId": "deferred-c4c-source-second-ask",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q4(c) — developed support — Deferred sitting",
+    "questionText": "Explain in detail how one of the stated sources helped you.",
+    "stem": "Work experience is an important part of the Leaving Certificate Vocational Programme. State three different sources of support or help available to you during your work experience. Explain in detail how one of the stated sources helped you.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 5,
+    "rows": [
+      {
+        "id": "response-1",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 5,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "contextNote": "Response 1 of 1. One developed point about one of the same stated sources; the scheme prints no developed example. Complete original guidance: State three different sources of support or help available to you during your work experience. Explain in detail how one of the stated sources helped you. 3 x 1 mark sources 1 point developed (2 + 2 + 1)  Family member  Your LCVP teacher/teacher  Career Guidance Teacher  Employer  Mentor  Fellow worker/Employee  Instruction manual/Training booklet  Internet  Fellow classmates",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "component-3",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ],
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        28
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c4d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-3",
+    "conceptId": "deferred-c4d-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q4(d) — challenges — Deferred sitting",
+    "questionText": "Describe three challenges which a student might face undertaking work experience.",
+    "stem": "Work experience is an important part of the Leaving Certificate Vocational Programme. Describe three challenges which a student might face undertaking work experience. Outline how each challenge might be overcome.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "challenges",
+        "kind": "criterion",
+        "verbatim": "(i) Describe three challenges that a student may experience during their work experience/ work shadowing. Describe three difficulties",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "The scheme labels this (i), three challenges at two marks each. Complete original wording, models and allocation: (i) Describe three challenges that a student may experience during their work experience/ work shadowing. Describe three difficulties 3 x 2 marks (1+1) 1. Not having meaningful work to do/boredom/trying to fill the time. 2. Lack of training for tasks/no instructions given/finding the work difficult. 3. Not being treated well by the organisation/being overworked/exploited/long hours. 4. Practical issues/transport/timekeeping/dress code. 5. Being excluded/employees not interested in helping the student. (ii) Outline how these challenges might be overcome. 3 x 1 mark 1. Speak to the employer and explain that you do not have enough to do, watch and learn from what others are doing. 2. Ask other employees for help and/or speak to the employer and explain the difficulties. 3. Speak to your LCVP teacher and explain the difficulties. 4. Speak to the employer and give reasons for these difficulties – offer solutions/alternatives. 5. Try not to see this as personal, do the work, be friendly and polite – you are there to learn.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        29
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c4d-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-3",
+    "conceptId": "deferred-c4d-source-second-ask",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q4(d) — solutions — Deferred sitting",
+    "questionText": "Outline how each challenge might be overcome.",
+    "stem": "Work experience is an important part of the Leaving Certificate Vocational Programme. Describe three challenges which a student might face undertaking work experience. Outline how each challenge might be overcome.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "solutions",
+        "kind": "criterion",
+        "verbatim": "Outline how these challenges might be overcome.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "The scheme labels this (ii), one solution for each of the same three challenges. Complete original wording, models and allocation: (i) Describe three challenges that a student may experience during their work experience/ work shadowing. Describe three difficulties 3 x 2 marks (1+1) 1. Not having meaningful work to do/boredom/trying to fill the time. 2. Lack of training for tasks/no instructions given/finding the work difficult. 3. Not being treated well by the organisation/being overworked/exploited/long hours. 4. Practical issues/transport/timekeeping/dress code. 5. Being excluded/employees not interested in helping the student. (ii) Outline how these challenges might be overcome. 3 x 1 mark 1. Speak to the employer and explain that you do not have enough to do, watch and learn from what others are doing. 2. Ask other employees for help and/or speak to the employer and explain the difficulties. 3. Speak to your LCVP teacher and explain the difficulties. 4. Speak to the employer and give reasons for these difficulties – offer solutions/alternatives. 5. Try not to see this as personal, do the work, be friendly and polite – you are there to learn.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        29
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c5a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-c5a-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q5(a) — Deferred sitting",
+    "questionText": "Name one state agency that might offer assistance to Francis.",
+    "stem": "Francis Curran has recently set up his own business providing technical support to companies seeking to develop the e-commerce aspect of their business.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Name one state agency that might offer assistance to Francis.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          2
+        ],
+        "contextNote": "Retain all twelve printed agency names, including their historical wording. No one-mark step is printed. Complete original wording, models and allocation: Name one state agency that might offer assistance to Francis. 2 marks (0/2) 1. Local Enterprise Office/LEO/CEB 7. Udaras Na Gaeltacha 2. Enterprise Ireland 8. Failte Ireland 3. Local Area Partnerships companies/APC’s 9. IDA Ireland 4. ETB’s/SOLAS/FAS 10. Intertrade Ireland 5. Leader Plus 11. Bord Bia 6. Teagasc 12. Glas"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        30
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c5b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-c5b-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q5(b) — Deferred sitting",
+    "questionText": "Outline three reasons why it is important for a business to plan.",
+    "stem": "Francis Curran has recently set up his own business providing technical support to companies seeking to develop the e-commerce aspect of their business.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Outline three reasons why it is important for a business to plan. Three relevant answers",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": " Complete original wording, models and allocation: Outline three reasons why it is important for a business to plan. Three relevant answers 3 x 2 marks (1+1) 1. To see if it is worthwhile beginning the business/continuing with the business. 2. Required when applying for a bank loan/grants. 3. You can evaluate how your business is doing by comparing it to the plan. 4. Having a plan helps with the day to day decision making. 5. To help your business run more efficiently. 6. Helps anticipate trends or needs of the business. 7. Helps identify weaknesses in the business. 8. Helps to measure progress as the business develops.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        30
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c5c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "deferred-c5c-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q5(c) — Deferred sitting",
+    "questionText": "Describe four ways Francis could evaluate the success of his enterprise.",
+    "stem": "Francis Curran has recently set up his own business providing technical support to companies seeking to develop the e-commerce aspect of their business.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Describe four ways Francis could evaluate the success of his enterprise. Four valid points",
+        "marks": 8,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "contextNote": " Complete original wording, models and allocation: Describe four ways Francis could evaluate the success of his enterprise. Four valid points 4 x 2 marks (1+1) 1. Profits/turnover/sales ‐ increased from previous years. Meeting targeted profits/achieving aims. Improved share price. 2. Comparisons with competitors/market share/being the dominant business in a particular industry or for a particular product. 3. Winning awards/recognition from the industry/ISO awards. 4. Good staff relations/no strikes/low staff turnover/committed hardworking staff. 5. Customer loyalty/customers stay with the business, keep coming back. 6. Size of the business/expansion/gaining new markets/new products/diversification. 7. Continuity/length of time in business.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        31
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c5d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "deferred-c5d-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q5(d) — Deferred sitting",
+    "questionText": "Describe three enterprising characteristics that Francis should possess which would help in getting his enterprise up and running.",
+    "stem": "Francis Curran has recently set up his own business providing technical support to companies seeking to develop the e-commerce aspect of their business.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Describe three enterprising characteristics that Francis should possess which would help in getting his enterprise up and running. Three valid answers",
+        "marks": 9,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "contextNote": " Complete original wording, models and allocation: Describe three enterprising characteristics that Francis should possess which would help in getting his enterprise up and running. Three valid answers 3 x 3 marks (1+1+1) 1. Willing to take a risk. 5. Hard working. 2. Focused. 6. Motivated. 3. Determined. 7. Persistent. 4. Constantly learning. 8. Decisive etc.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "unprinted": true,
+        "contextNote": "The eight printed characteristics are names only; the scheme prints no developed descriptions. Keep the original 3 x 3 (1+1+1) award. This notice adds no marks."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        32
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c6ai",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-2",
+    "conceptId": "deferred-c6ai-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q6(a)(i) — Deferred sitting",
+    "questionText": "What job would you like to do when you leave school?",
+    "stem": "You are very keen to identify the career that best suits your interests.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 1,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": " Complete original wording, models and allocation: What job would you like to do when you leave school? One valid career 1 mark",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        33
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c6aii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-2",
+    "conceptId": "deferred-c6aii-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q6(a)(ii) — Deferred sitting",
+    "questionText": "What qualification/training is needed for this position?",
+    "stem": "You are very keen to identify the career that best suits your interests. What job would you like to do when you leave school?",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 1,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": " Complete original wording, models and allocation: What qualification/training is needed for this position? One valid qualification/training 1 mark",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        33
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c6b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-2",
+    "conceptId": "deferred-c6b-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q6(b) — Deferred sitting",
+    "questionText": "Identify three personal skills or qualities required for this position.",
+    "stem": "You are very keen to identify the career that best suits your interests. What job would you like to do when you leave school?",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Identify three personal skills or qualities required for this position. Three relevant skills or qualities",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          2,
+          4,
+          6
+        ],
+        "contextNote": "The source allows any other relevant skill/quality with valid explanations. Preserve all six complete models and the chosen-career context. Complete original wording, models and allocation: Identify three personal skills or qualities required for this position. Three relevant skills or qualities 3 x 2 marks (0/2) 1. Hard working: productive, hardworking people are better for a business. 2. Good communicator: individuals need to be able to communicate with managers, other workers and customers. 3. Punctual: it is essential that all workers are on time for work. 4. Team player: teamwork is a major feature of any work place, workers need to get on with other team member and also perform their assigned tasks. 5. Shows initiative: employers need workers who can work on their own and do not need constant direction/positive attitude. 6. Honest/trustworthy: it is essential that workers do an honest day’s work for their pay. Do not steal from employer/loyal. Any other relevant personal skill/quality with valid explanations",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        33
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c6c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-2",
+    "conceptId": "deferred-c6c-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q6(c) — Deferred sitting",
+    "questionText": "State four sources of information used to investigate the position. Outline how each source was relevant.",
+    "stem": "You are very keen to identify the career that best suits your interests. What job would you like to do when you leave school?",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "State four sources of information used to investigate the position. Outline how each source was relevant. Four valid sources",
+        "marks": 8,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "contextNote": "Provisional whole ask: a third reader decides whether generic 1+1 supplies separate source/relevance awards. Retain all six source models. Complete original wording, models and allocation: State four sources of information used to investigate the position. Outline how each source was relevant. Four valid sources 4 x 2 marks (1+1) 1. Career Guidance Teacher: book an appointment to review DAT’s results/suitability for career/ course options. 2. Research: internet/websites e.g. Careers Portal, Qualifax, CAO, college websites. 3. Open Day/Career fairs: college open day/get to see facilities/ speak to students and lecturers/careers exhibition e.g. Higher Options variety of third level institutions in one place. 4. Work Experience/shadowing: get to experience the day to day duties involved in the career. 5. Interview: talking to someone doing this job allows you to ask questions e.g. salary, advantages and disadvantages of the job. 6. College prospectus/brochures/newspaper articles/pamphlets/library.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "unprinted": true,
+        "contextNote": "The relevance of source options 2 and 6 is not printed. Retain the four developed source examples and those two names. This notice adds no marks."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        34
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c6d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "deferred-c6d-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q6(d) — Deferred sitting",
+    "questionText": "Does the LCVP prepare students with the skills they need to succeed in the modern world of work? Give three reasons for your answer.",
+    "stem": "You are very keen to identify the career that best suits your interests. What job would you like to do when you leave school?",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Does the LCVP prepare students with the skills they need to succeed in the modern world of work? Give three reasons for your answer. Three valid reasons YES or NO",
+        "marks": 9,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "contextNote": "YES or NO is explicitly allowed. Keep all printed positive examples and original duplicated numbering; do not require agreement. Complete original wording, models and allocation: Does the LCVP prepare students with the skills they need to succeed in the modern world of work? Give three reasons for your answer. Three valid reasons YES or NO 3 x 3 marks (1+1+1) 1. Helps students to develop communication skills which will enable students to communicate 1. with employers/fellow employees/ customers in the future 2. Develop IT skills/typing CV which will enable them to engage effectively with IT in the future 3. Helps develop teamwork skills which will enable them to work as part of a team in their future 4. workplace 5. Helps them develop presentation skills which will help them when making presentations 6. within their workplace in the future 7. Develop research skills 12. Problem solving 8. May have developed leadership skills 13. Time management 9. Report writing skills 14. Motivation 10. Planning skills 15. Etc. 11. Organisation skills",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "unprinted": true,
+        "contextNote": "The scheme permits NO but gives no model answer for that route. Do not invent negative examples. This notice adds no marks."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        35
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c7a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "deferred-c7a-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q7(a) — Deferred sitting",
+    "questionText": "What is meant by market research?",
+    "stem": "Your class has decided to run a lunch time swap shop as a social enterprise.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "What is meant by market research?",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          2,
+          4
+        ],
+        "contextNote": "One whole market-research definition. The scheme prints 2+2, without assigning those awards to particular phrases; do not create a semantic split. Complete original wording, models and allocation: What is meant by market research? 2 + 2 marks Market research involves gathering/ and analysing information/ about the market for a particular product or service/this allows you make decisions about how to proceed in business.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        36
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c7b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "deferred-c7b-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q7(b) — Deferred sitting",
+    "questionText": "Why is market research important when undertaking an activity such as this?",
+    "stem": "Your class has decided to run a lunch time swap shop as a social enterprise.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Why is market research important when undertaking an activity such as this?",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": " Complete original wording, models and allocation: Why is market research important when undertaking an activity such as this? 2 x 2 marks (1+1) 1. Can help you find out if there is a demand for your product. 2. Can help decide on the price to charge. 3. Can help you find out what your competitors are doing. 4. Can help you adapt your product to a product customers want. 5. Can lead to better decision making in the business. 6. Can help minimise risk and the risk of failure.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        36
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c7c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "deferred-c7c-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q7(c) — Deferred sitting",
+    "questionText": "Identify and explain four forms of promotion you would use for this activity.",
+    "stem": "Your class has decided to run a lunch time swap shop as a social enterprise.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Identify and explain four forms of promotion you would use for this activity. Four valid points",
+        "marks": 8,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "contextNote": "Provisional whole ask: a third reader decides whether generic 1+1 permits separate naming/explanation cards. Complete original wording, models and allocation: Identify and explain four forms of promotion you would use for this activity. Four valid points 4 x 2 marks (1+1)  Social media – Twitter/Instagram/Snapchat/Tik Tok/Facebook  YouTube videos  Notice‐boards/posters around the school  Flyers  Intercom announcements  Introductory offers/discounts/incentives to participate/prizes  Class to class visits  School website/App/Email  Word of mouth",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "unprinted": true,
+        "contextNote": "The nine printed forms of promotion have no explanations. Preserve all nine source examples, without inventing reasons. This notice adds no marks."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        37
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2022-cl-deferred-c7d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "deferred-c7d-source",
+    "level": "common",
+    "year": 2022,
+    "section": "C",
+    "questionRef": "2022 CL Section C Q7(d) — Deferred sitting",
+    "questionText": "Describe three ways participation in the organisation and running of this activity would benefit you as a student.",
+    "stem": "Your class has decided to run a lunch time swap shop as a social enterprise.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Describe three ways participation in the organisation and running of this activity would benefit you as a student.",
+        "marks": 9,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "contextNote": " Complete original wording, models and allocation: Describe three ways participation in the organisation and running of this activity would benefit you as a student. 3 x 3 marks (1+1+1) 1. Personal skills/qualities learned or developed. 2. Teamwork skills learned. 3. Planning skills developed. 4. Problem solving/flexibility/adaptability 5. Knowledge of different aspects of running an activity, finance, advertising etc. 6. Awareness of broader issues 7. Gain networking contacts which may be useful in the future. 8. Social contact/friendships.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2022 deferred marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original deferred question",
+      "pages": [
+        38
+      ],
+      "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "recordedAt": "2026-11-19T19:16:21.031643+00:00",
+  "status": "Review-only; not applied or independently reviewed",
+  "cards": 47,
+  "sourceParts": 44,
+  "offeredMarks": 230,
+  "examMaximum": 130,
+  "wholeNoAnswerNotices": 5,
+  "partialNoAnswerNotices": 7,
+  "payloadSha256": "ec2f9b38d5d36e1b10d8af4fda05c335ecca69876ead3f3c5281f396ba673e03",
+  "outstanding": [
+    "Second-reader candidate/source inspection",
+    "Four split differences, one informed split and twelve headings need third reading",
+    "Question/answer source tracing",
+    "Official deferred recording search: no URL or unpublished assertion invented",
+    "Fresh R4 archive checks",
+    "Canonical filings, Atlas/source bindings and application checks"
+  ]
+}

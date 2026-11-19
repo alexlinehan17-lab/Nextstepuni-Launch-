@@ -1,0 +1,726 @@
+{
+  "recordedAt": "2026-11-19T19:12:33.222427+00:00",
+  "sourcePartsSha256": "732a6460d1def245044478b94c1703b1898d20b22cde6a4359d728ce67be030c",
+  "checked": 88,
+  "differences": [
+    {
+      "ref": "A5",
+      "kind": "paper",
+      "unmatched": [
+        "Give examples of CSR in action in one of the four areas named below. Community ☐ Workplace ☐ Environment ☐ Marketplace ☐"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "ref": "A1",
+      "kind": "paper",
+      "pages": [
+        4
+      ],
+      "matched": true
+    },
+    {
+      "ref": "A1",
+      "kind": "scheme",
+      "pages": [
+        4
+      ],
+      "matched": true
+    },
+    {
+      "ref": "A2",
+      "kind": "paper",
+      "pages": [
+        4
+      ],
+      "matched": true
+    },
+    {
+      "ref": "A2",
+      "kind": "scheme",
+      "pages": [
+        4
+      ],
+      "matched": true
+    },
+    {
+      "ref": "A3",
+      "kind": "paper",
+      "pages": [
+        4
+      ],
+      "matched": true
+    },
+    {
+      "ref": "A3",
+      "kind": "scheme",
+      "pages": [
+        4
+      ],
+      "matched": true
+    },
+    {
+      "ref": "A4",
+      "kind": "paper",
+      "pages": [
+        5
+      ],
+      "matched": true
+    },
+    {
+      "ref": "A4",
+      "kind": "scheme",
+      "pages": [
+        4
+      ],
+      "matched": true
+    },
+    {
+      "ref": "A5",
+      "kind": "paper",
+      "pages": [
+        5
+      ],
+      "matched": false
+    },
+    {
+      "ref": "A5",
+      "kind": "scheme",
+      "pages": [
+        4,
+        5
+      ],
+      "matched": true
+    },
+    {
+      "ref": "A6",
+      "kind": "paper",
+      "pages": [
+        6
+      ],
+      "matched": true
+    },
+    {
+      "ref": "A6",
+      "kind": "scheme",
+      "pages": [
+        5
+      ],
+      "matched": true
+    },
+    {
+      "ref": "A7",
+      "kind": "paper",
+      "pages": [
+        7
+      ],
+      "matched": true
+    },
+    {
+      "ref": "A7",
+      "kind": "scheme",
+      "pages": [
+        5
+      ],
+      "matched": true
+    },
+    {
+      "ref": "A8",
+      "kind": "paper",
+      "pages": [
+        8
+      ],
+      "matched": true
+    },
+    {
+      "ref": "A8",
+      "kind": "scheme",
+      "pages": [
+        6
+      ],
+      "matched": true
+    },
+    {
+      "ref": "B1",
+      "kind": "paper",
+      "pages": [
+        11
+      ],
+      "matched": true
+    },
+    {
+      "ref": "B1",
+      "kind": "scheme",
+      "pages": [
+        7
+      ],
+      "matched": true
+    },
+    {
+      "ref": "B2(i)",
+      "kind": "paper",
+      "pages": [
+        12
+      ],
+      "matched": true
+    },
+    {
+      "ref": "B2(i)",
+      "kind": "scheme",
+      "pages": [
+        7
+      ],
+      "matched": true
+    },
+    {
+      "ref": "B2(ii)",
+      "kind": "paper",
+      "pages": [
+        12
+      ],
+      "matched": true
+    },
+    {
+      "ref": "B2(ii)",
+      "kind": "scheme",
+      "pages": [
+        7
+      ],
+      "matched": true
+    },
+    {
+      "ref": "B2(iii)",
+      "kind": "paper",
+      "pages": [
+        12
+      ],
+      "matched": true
+    },
+    {
+      "ref": "B2(iii)",
+      "kind": "scheme",
+      "pages": [
+        7
+      ],
+      "matched": true
+    },
+    {
+      "ref": "B3(i)",
+      "kind": "paper",
+      "pages": [
+        13,
+        14
+      ],
+      "matched": true
+    },
+    {
+      "ref": "B3(i)",
+      "kind": "scheme",
+      "pages": [
+        8
+      ],
+      "matched": true
+    },
+    {
+      "ref": "B3(ii)",
+      "kind": "paper",
+      "pages": [
+        13,
+        14
+      ],
+      "matched": true
+    },
+    {
+      "ref": "B3(ii)",
+      "kind": "scheme",
+      "pages": [
+        8
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C1(a)",
+      "kind": "paper",
+      "pages": [
+        18
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C1(a)",
+      "kind": "scheme",
+      "pages": [
+        9
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C1(b)",
+      "kind": "paper",
+      "pages": [
+        18
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C1(b)",
+      "kind": "scheme",
+      "pages": [
+        9
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C1(c)",
+      "kind": "paper",
+      "pages": [
+        19
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C1(c)",
+      "kind": "scheme",
+      "pages": [
+        10
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C1(d)",
+      "kind": "paper",
+      "pages": [
+        20
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C1(d)",
+      "kind": "scheme",
+      "pages": [
+        10
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C2(a)",
+      "kind": "paper",
+      "pages": [
+        21
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C2(a)",
+      "kind": "scheme",
+      "pages": [
+        11
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C2(b)",
+      "kind": "paper",
+      "pages": [
+        21
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C2(b)",
+      "kind": "scheme",
+      "pages": [
+        11
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C2(c)(i)",
+      "kind": "paper",
+      "pages": [
+        22
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C2(c)(i)",
+      "kind": "scheme",
+      "pages": [
+        11
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C2(c)(ii)",
+      "kind": "paper",
+      "pages": [
+        22
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C2(c)(ii)",
+      "kind": "scheme",
+      "pages": [
+        11
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C2(d)",
+      "kind": "paper",
+      "pages": [
+        23
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C2(d)",
+      "kind": "scheme",
+      "pages": [
+        12
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C3(a)",
+      "kind": "paper",
+      "pages": [
+        24
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C3(a)",
+      "kind": "scheme",
+      "pages": [
+        12
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C3(b)",
+      "kind": "paper",
+      "pages": [
+        24
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C3(b)",
+      "kind": "scheme",
+      "pages": [
+        13
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C3(c)",
+      "kind": "paper",
+      "pages": [
+        25
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C3(c)",
+      "kind": "scheme",
+      "pages": [
+        13
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C3(d)",
+      "kind": "paper",
+      "pages": [
+        26
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C3(d)",
+      "kind": "scheme",
+      "pages": [
+        13
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C4(a)",
+      "kind": "paper",
+      "pages": [
+        27
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C4(a)",
+      "kind": "scheme",
+      "pages": [
+        14
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C4(b)",
+      "kind": "paper",
+      "pages": [
+        27
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C4(b)",
+      "kind": "scheme",
+      "pages": [
+        14
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C4(c)",
+      "kind": "paper",
+      "pages": [
+        28
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C4(c)",
+      "kind": "scheme",
+      "pages": [
+        14
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C4(d)",
+      "kind": "paper",
+      "pages": [
+        29
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C4(d)",
+      "kind": "scheme",
+      "pages": [
+        14,
+        15
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C5(a)",
+      "kind": "paper",
+      "pages": [
+        30
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C5(a)",
+      "kind": "scheme",
+      "pages": [
+        15
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C5(b)",
+      "kind": "paper",
+      "pages": [
+        30
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C5(b)",
+      "kind": "scheme",
+      "pages": [
+        15
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C5(c)",
+      "kind": "paper",
+      "pages": [
+        31
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C5(c)",
+      "kind": "scheme",
+      "pages": [
+        15
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C5(d)",
+      "kind": "paper",
+      "pages": [
+        32
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C5(d)",
+      "kind": "scheme",
+      "pages": [
+        16
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C6(a)(i)",
+      "kind": "paper",
+      "pages": [
+        33
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C6(a)(i)",
+      "kind": "scheme",
+      "pages": [
+        16
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C6(a)(ii)",
+      "kind": "paper",
+      "pages": [
+        33
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C6(a)(ii)",
+      "kind": "scheme",
+      "pages": [
+        16
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C6(b)",
+      "kind": "paper",
+      "pages": [
+        33
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C6(b)",
+      "kind": "scheme",
+      "pages": [
+        16
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C6(c)",
+      "kind": "paper",
+      "pages": [
+        34
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C6(c)",
+      "kind": "scheme",
+      "pages": [
+        16,
+        17
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C6(d)",
+      "kind": "paper",
+      "pages": [
+        35
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C6(d)",
+      "kind": "scheme",
+      "pages": [
+        17
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C7(a)",
+      "kind": "paper",
+      "pages": [
+        36
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C7(a)",
+      "kind": "scheme",
+      "pages": [
+        17
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C7(b)",
+      "kind": "paper",
+      "pages": [
+        36
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C7(b)",
+      "kind": "scheme",
+      "pages": [
+        17
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C7(c)",
+      "kind": "paper",
+      "pages": [
+        37
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C7(c)",
+      "kind": "scheme",
+      "pages": [
+        18
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C7(d)",
+      "kind": "paper",
+      "pages": [
+        38
+      ],
+      "matched": true
+    },
+    {
+      "ref": "C7(d)",
+      "kind": "scheme",
+      "pages": [
+        18
+      ],
+      "matched": true
+    }
+  ],
+  "limit": "Questions whole; scheme blocks line by line after documented furniture removal. Does not verify split choices, scoring, model letter layout, application or release."
+}

@@ -1,0 +1,143 @@
+{
+  "recordedAt": "2026-11-19T20:45:00Z",
+  "reader": "Claude third reader (assigned by the Claude coordinator)",
+  "readerA": "root reader (root)",
+  "readerB": "second reader (secondReader)",
+  "method": "Original paper and scheme renders in original-pages/ read for every item. Rules: PLAN R7/R9, CARD-STANDARD sections 5 and 9, standard-model/stage1/READING.md rule 6 for printed choices. Splitting rule applied across all LCVP packets: a separately printed instruction (its own sentence), or an item the paper itself names, that the scheme marks separately is its own card; a single compound instruction ('identify and explain', 'identify and describe', 'state and explain') whose (1+1) or (2+2) sits inside each answer point stays one card. Filing: evaluating or planning a specific activity goes with that activity's unit, as the live 2015-2026 filings do.",
+  "splitValidation": [
+    {
+      "id": "B3(i)",
+      "decision": {
+        "cards": 2,
+        "cardMarks": [2, 2],
+        "perCardSubject": ["one positive effect", "one negative effect"],
+        "perCardHeadingIds": [
+          ["link-modules-common-2-local-business-enterprises"],
+          ["link-modules-common-2-local-business-enterprises"]
+        ]
+      },
+      "reason": "Paper p13 Q3(i) demands one positive and one negative effect of moving to selling online, two things the paper itself names, and scheme p8 prints a separate pool for each (seven positive, six negative) at 2 x 2 marks (1+1), so the student answers two things separately for separate marks (R7); the informed 2+2 is confirmed.",
+      "agreesWith": "both"
+    }
+  ],
+  "splitDifferences": [
+    {
+      "id": "B3(ii)",
+      "decision": {"cards": 1, "cardMarks": [6], "split": false, "headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Paper p13 Q3(ii) is one compound instruction, 'Identify and explain three issues', and scheme p8 pays 3 x 2 marks (1+1) per issue with each model printing the issue and its explanation together, so the (1+1) is the inside of each answer point, not two separately answered asks; the issues (market research, finance, staff, production, premises, legalities) are planning a business, filed as 2011 B3(ii) is.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "C3(c)",
+      "decision": {"cards": 1, "cardMarks": [8], "split": false, "headingIds": ["link-modules-common-2-enterprise-skills"]},
+      "reason": "Paper p25 Q3(c) is one compound instruction, 'Identify and describe two skills', and scheme p13 pays 2 x 4 marks (2+2) per skill while printing only skill names, so it is two answer points of 4 marks on one card, with the scoped no-answer notice for the unprinted descriptions.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "C6(c)",
+      "decision": {
+        "cards": 2,
+        "cardMarks": [4, 4],
+        "perCardSubject": ["state four sources of information", "outline how each source was relevant"],
+        "perCardHeadingIds": [
+          ["link-modules-common-1-career-investigation"],
+          ["link-modules-common-1-career-investigation"]
+        ]
+      },
+      "reason": "Paper p34 Q6(c) prints two separate instructions, 'State four sources of information used...' and 'Outline how each source was relevant', and scheme p16-17 pays 4 x 2 marks (1+1) with each model printed as source then relevance, so each printed ask has its own 4 marks (R7, the CARD-STANDARD 'prints two asks' case); the two models without a relevance line need the scoped no-answer notice on the relevance card.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C7(c)",
+      "decision": {"cards": 1, "cardMarks": [8], "split": false, "headingIds": ["link-modules-common-2-enterprise-skills"]},
+      "reason": "Paper p37 Q7(c) is one compound instruction, 'Identify and explain four forms of promotion', and scheme p18 pays 4 x 2 marks (1+1) per form while printing only the forms, so it stays one 8-mark card with the scoped no-answer notice for the explanations.",
+      "agreesWith": "A"
+    }
+  ],
+  "filingDifferences": [
+    {
+      "id": "B1",
+      "componentIndex": 1,
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises", "link-modules-common-2-enterprise-skills"], "choiceSpans": true},
+      "reason": "Paper p11 Q1 is one printed 'explain three of the following terms' choice (overheads, diversification, innovation, mentor) marked alike at 3 x 2 (1+1) on scheme p7; under READING rule 6 the two headings covering most of it are Local Business Enterprises (overheads, diversification) and Enterprise Skills (innovation, mentor), flagged CHOICE SPANS.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "B3(i)",
+      "componentIndex": 1,
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Paper p13 asks a positive effect for an enterprise moving to selling online and scheme p8 pays business-operation effects (trading hours, lower rent, more stock, bigger customer base, discount codes, reviews), which is how a business operates, not a personal enterprise skill.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "B3(i)",
+      "componentIndex": 2,
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Paper p13 asks a negative effect of selling online and scheme p8 pays business-operation costs and risks (returns, packaging and delivery, website, payment security, lost offline customers), filed with its positive twin.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "C1(d)",
+      "componentIndex": 1,
+      "decision": {"headingIds": ["link-modules-common-1-introduction-to-working-life"]},
+      "reason": "Paper p20 asks why employers emphasise communication skills when hiring and scheme p10 pays 3 x 3 (1+1+1) for what the workplace needs (contact with others, teamwork, customers, instructions, conflict), filed as the live 2020 Q1(c) 'why this employer wants excellent communication skills' card is.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C2(c)(i)",
+      "componentIndex": 1,
+      "decision": {"headingIds": ["link-modules-common-2-local-voluntarycommunity-enterprises"]},
+      "reason": "Paper p22 Q2(c)(i), in a question on community associations, asks steps to prepare the visit of a voluntary organisation's representative and scheme p11 pays 2 x 1 for arranging that visit; a visit-in from a voluntary body is filed as the live 2016 Q5 visit-in asks are.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C2(d)",
+      "componentIndex": 1,
+      "decision": {"headingIds": ["link-modules-common-2-local-voluntarycommunity-enterprises"]},
+      "reason": "Paper p23 asks ways to evaluate the success of that voluntary-organisation visit and scheme p12 pays 3 x 3 (1+1+1) for methods aimed at it (questionnaire to the speaker, contacting the speaker, reviewing the visit's aims); evaluating a visit goes with the visit, as live 2023 Q6(d) and 2024 Q2(d) are.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C3(a)",
+      "componentIndex": 1,
+      "decision": {"headingIds": ["link-modules-common-2-an-enterprise-activity"]},
+      "reason": "Paper p24 asks the agenda for the class meeting to organise the end-of-year awards ceremony and scheme p12 pays 4 x 1 for planning items for that class activity (officers, tasks, finance, plan of work, timeline), filed as the 2010 Q5(a) and live 2025 Q5(a) class-activity agendas are.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C4(a)",
+      "componentIndex": 1,
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Paper p27 Q4(a) asks four sources of employment in the local area and scheme p14 pays 4 x 1 for any workplaces named, i.e. local employers; live 2018 Q3(a), the same ask, is under Local Business Enterprises, and the model lane's pass C moved the 2022 June local-economy part out of Work Placement for the same reason.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C5(b)",
+      "componentIndex": 1,
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Paper p30 asks why it is important for a business to plan and scheme p15 pays 3 x 2 (1+1) for business reasons (viability, loans and grants, measuring progress, decisions, efficiency), filed as the live 2023 Q4(a) 'why plan for the future' business card is.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "C5(c)",
+      "componentIndex": 1,
+      "decision": {"headingIds": ["link-modules-common-2-local-business-enterprises"]},
+      "reason": "Paper p31 asks how Francis could evaluate his enterprise's success and scheme p15 pays 4 x 2 (1+1) for business measures (profit, market share, awards, staff relations, customer loyalty, expansion, continuity), filed as the live 2023 Q4(d) business-evaluation card is.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "C6(d)",
+      "componentIndex": 1,
+      "decision": {"headingIds": ["link-modules-common-1-introduction-to-working-life"]},
+      "reason": "Paper p35 asks whether the LCVP prepares students with the skills to succeed in the modern world of work and scheme p17 pays 3 x 3 (1+1+1), YES or NO; the live 2019 Q4(d) card with the same wording is under Introduction to Working Life.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C7(d)",
+      "componentIndex": 1,
+      "decision": {"headingIds": ["link-modules-common-2-an-enterprise-activity"]},
+      "reason": "Paper p38 asks how taking part in organising and running the class swap-shop social enterprise benefits the student and scheme p18 pays 3 x 3 (1+1+1) for what the activity teaches; benefits of the class enterprise activity are filed under An Enterprise Activity as live 2016 Q2(c) and 2026 Q7(c) are.",
+      "agreesWith": "B"
+    }
+  ]
+}

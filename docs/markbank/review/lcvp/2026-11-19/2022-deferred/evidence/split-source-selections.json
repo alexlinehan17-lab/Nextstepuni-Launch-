@@ -1,0 +1,44 @@
+[
+  {
+    "ref": "B3(i)",
+    "originalPrompt": "Describe one positive and one negative effect for an enterprise moving to selling online.",
+    "selectedPrompts": [
+      "Describe one positive effect for an enterprise moving to selling online.",
+      "Describe one negative effect for an enterprise moving to selling online."
+    ],
+    "marks": [
+      2,
+      2
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "thirdReaderRequired": true
+  },
+  {
+    "ref": "C4(c)",
+    "originalPrompt": "State three different sources of support or help available to you during your work experience. Explain in detail how one of the stated sources helped you.",
+    "selectedPrompts": [
+      "State three different sources of support or help available to you during your work experience.",
+      "Explain in detail how one of the stated sources helped you."
+    ],
+    "marks": [
+      3,
+      5
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "thirdReaderRequired": false
+  },
+  {
+    "ref": "C4(d)",
+    "originalPrompt": "Describe three challenges which a student might face undertaking work experience. Outline how each challenge might be overcome.",
+    "selectedPrompts": [
+      "Describe three challenges which a student might face undertaking work experience.",
+      "Outline how each challenge might be overcome."
+    ],
+    "marks": [
+      6,
+      3
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "thirdReaderRequired": false
+  }
+]

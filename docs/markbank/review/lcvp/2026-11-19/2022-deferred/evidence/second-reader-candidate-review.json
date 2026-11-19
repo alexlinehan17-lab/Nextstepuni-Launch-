@@ -1,0 +1,90 @@
+{
+  "recordedAt": "2026-11-19T19:16:28.931751+00:00",
+  "reviewedPayloadSha256": "fec78a6a22fa8b4f6b323c7aa0495d4f35aef2cfa2ed06cb4b12e298b48c1af7",
+  "status": "Source-only candidate review; requested refinements pending. No production/application clearance and no disputed split adjudication.",
+  "coverage": {
+    "cardsRead": 47,
+    "sourceQuestionSchemeBlocksRead": 44,
+    "offeredMarks": 230,
+    "candidateMaximum": 130,
+    "priorIndependentOriginalPages": 60,
+    "originalImagesReopened": [
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/original-pages/scheme-10.png",
+        "sha256": "950237efb52486eb94466e76df69bd81eaee6e20c9040e16389caaa9cc175f65"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/original-pages/paper-17.png",
+        "sha256": "4b719a76d795d044b95306b1b1a736e4b8134a4cad52cd40e8f4a7262a15e824"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/original-pages/paper-18.png",
+        "sha256": "326a62414de9a2d7015833a5bcc23414ba42945cae564c9d60fbd5d2170896f3"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/original-pages/paper-22.png",
+        "sha256": "60abdb5e2b3f7b49a97ed0dc374b159a7104bf6860b300f0c41ffc874f087cb9"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/original-pages/scheme-13.png",
+        "sha256": "2bb585b3decc9c579b06c7c20c730385446aa75519860af55fd19c0c910b6b82"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/original-pages/scheme-14.png",
+        "sha256": "c077e26137b92a5b6c3d37d040e743bc87a43ac9484c0b6200748658f6db9fd0"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/original-pages/paper-10.png",
+        "sha256": "c2e2368b834af4d2d343d04da49a2694c38470397ad9a436f7acf012e00d2cdf"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/original-pages/scheme-17.png",
+        "sha256": "39fd708ef86de8a8b1622abe7b3583e85cf86a98ad497bf592047c1f214151df"
+      }
+    ]
+  },
+  "confirmed": [
+    "All47 prompts and control totals compared with all44 source parts. Four unresolved whole/split alternatives remain explicitly provisional, with B3(i) informed split separately pending.",
+    "Complete Alex/Rami case and complete Rooney’s advertisement retained. Full seven-paragraph letter matches the visible model; summary table is separated without adding missing fields.",
+    "C3(c) retains two4-mark responses, each numeric2+2; C4(c) developed response retains2+2+1. No semantic allocation imposed inside these numeric components.",
+    "C3(d) preserves four heading marks plus five action-step marks and the fixed partial notice. C6(d) retains explicit YES or NO, duplicate original numbering and the scoped absent-NO-model notice.",
+    "A5 keeps the single chosen CSR area instruction; A7 preserves both Three valid reasons and6x1 without inventing a fixed per-reason split.",
+    "No verified2022 recording URL or unpublished claim invented. Media search and source-opening remain pending."
+  ],
+  "refinementsRequested": [
+    {
+      "id": "lcvp-2022-cl-deferred-c1c",
+      "source": "Scheme physical10",
+      "change": "Append scoped last zero-mark fixed notice for Own address, Business address and Date, which each receive1mark in the summary but have no printed model field. Keep all eight criterion marks and seven model paragraphs unchanged.",
+      "evidence": "Original model begins Re: Position of Part-time Retail Assistant. Neither address nor a letter date appears. Do not invent these fields or copy them into an answer from the paper."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c2d",
+      "source": "Paper22 shared C2(c) introduction",
+      "change": "Carry the exact representative-visit introduction into this card’s shared context too, since it refers to the success of the visit.",
+      "verbatim": "You have been asked to organise the visit of a representative from a voluntary organisation to your class."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a2",
+      "source": "Scheme4",
+      "change": "Label the two fixed one-mark control parts Tourism and Business enterprise rather than generic Response1/2; both areas are requested. No mark change."
+    }
+  ],
+  "limitations": [
+    "Four generic split disagreements, one informed split and12 heading differences remain for third reading. This review does not choose the final count.",
+    "Earlier60-image independent reading remains the source census evidence; only the eight listed images reopened during candidate review.",
+    "A6/A7 have only affirmative models for open questions. Unlike C6(d), no explicit YES-or-NO permission is printed in the scheme; no additional absent-alternative claim made automatically.",
+    "Canonical filings, source/Atlas links, runtime generation, application/browser and fresh archive/media checks remain outstanding."
+  ],
+  "refinementConfirmation": {
+    "recordedAt": "2026-11-19T19:17:09.322200+00:00",
+    "payloadSha256": "ec2f9b38d5d36e1b10d8af4fda05c335ecca69876ead3f3c5281f396ba673e03",
+    "changedOnly": [
+      "lcvp-2022-cl-deferred-a2",
+      "lcvp-2022-cl-deferred-c1c",
+      "lcvp-2022-cl-deferred-c2d"
+    ],
+    "preservation": "Only two A2 control labels, one last zero-mark C1(c) notice, and the exact C2(d) shared visit introduction changed. All prior rows, marks, questions, IDs and other cards unchanged. Five whole and seven partial notices now.",
+    "scope": "Source-only; application and final split decisions remain pending."
+  }
+}

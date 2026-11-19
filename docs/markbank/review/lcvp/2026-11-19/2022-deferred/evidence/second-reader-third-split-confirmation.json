@@ -1,0 +1,33 @@
+{
+  "recordedAt": "2026-11-19T19:31:57.613575+00:00",
+  "status": "Independent application check confirmed; review-only candidate",
+  "payloadSha256": "eca25ef5bba944bf9faae54ae70443211c88db324a78a61dbc154c2ad67c1cde",
+  "baselineSha256": "ec2f9b38d5d36e1b10d8af4fda05c335ecca69876ead3f3c5281f396ba673e03",
+  "scriptSha256": "8927560079ef7c7f3e6225657a83653cbd1f0a7b3235a92c2c7c3d7b4dc5c9c0",
+  "viewedOriginalImages": [
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/original-pages/paper-34.png",
+      "sha256": "35c6f50d50bf3a0c3ec750316bbea1496812965dc1e6a99211e6bb0fda21c8cd"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/original-pages/scheme-16.png",
+      "sha256": "df364807c863417208b3c80870dca35fbc893af27a66a72ec0334bf63dd2c9db"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/original-pages/scheme-17.png",
+      "sha256": "39fd708ef86de8a8b1622abe7b3583e85cf86a98ad497bf592047c1f214151df"
+    }
+  ],
+  "findings": [
+    "Paper page34 prints two separate sentences: four sources, then relevance of each. The combined question is8marks.",
+    "Scheme pages16–17 gives4×2(1+1), six source options; it does not name the two components separately. The candidate retains this caveat and the final third-reader4+4decision.",
+    "The old ID/concept stay on the first four-mark ask; the new -2 ask has four linked one-mark relevance controls.",
+    "All six printed source models remain in both cards. The missing relevance for options2 and6 is stated only in the final zero-mark notice on the second card.",
+    "Full chosen-position and joint-question context is retained. The two selected question spans rejoin the exact previous printed question.",
+    "The other46cards are byte-equivalent as parsed JSON; total remains230offeredmarks across48cards."
+  ],
+  "limitations": [
+    "This verifies application of an already settled third-reader decision, not a fresh blind split decision.",
+    "No production cards, source files, shared builder or filings changed. Application/Atlas/production checks and archive rechecks remain separate."
+  ]
+}

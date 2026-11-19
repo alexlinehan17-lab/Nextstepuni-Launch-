@@ -1,0 +1,915 @@
+{
+  "recordedAt": "2026-11-19T19:08:22.587122+00:00",
+  "status": "Review-only; no lane writes.",
+  "sourceSha256": {
+    "paper": "e345113703ad6ab2ed12634e6f6cba9b71795cc89cb20437fe61529443096835",
+    "scheme": "9b14e6acf76be8d4467c394e15d5e59ecc2a0deaab5c52f4f2d887159f071ba2"
+  },
+  "printedParts": 44,
+  "numberedLeafLabels": 43,
+  "proposedAsks": 47,
+  "offeredMarks": 230,
+  "examMaximum": 130,
+  "sectionCStems": {
+    "1": "Read the following advertisement and answer the questions which follow. Part-time Retail Assistants required for busy city centre outlet. The successful applicant must have good communication skills and a pleasant manner. Apply with Curriculum Vitae (including referees) and letter of application to: The Manager, Rooney’s Supermarkets Ltd, Cooke St, Dublin 8.",
+    "2": "Community associations bring great benefits to the local area.",
+    "3": "The school Principal has asked your class to organise the end of year student awards ceremony.",
+    "4": "Work experience is an important part of the Leaving Certificate Vocational Programme.",
+    "5": "Francis Curran has recently set up his own business providing technical support to companies seeking to develop the e-commerce aspect of their business.",
+    "6": "You are very keen to identify the career that best suits your interests.",
+    "7": "Your class has decided to run a lunch time swap shop as a social enterprise."
+  },
+  "caseStudy": "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business.",
+  "pending": "Twelve headings, four split differences and one informed split need a third reader; fresh R4 archive checks and official video search remain outstanding.",
+  "records": [
+    {
+      "id": "lcvp-2022-cl-deferred-a1",
+      "ref": "A1",
+      "questionText": "Why are the students happy to be working together as a team?",
+      "sourceSchemePrompt": "Why are the students happy to be working together as a team?",
+      "sourceSchemeBlock": "\nWhy are the students happy to be working together as a team?               1 mark\n\nLess stressful\nShare ideas\nCan divide the work\nNot working on your own\n",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "proposedCardMarks": [
+        1
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "One teamwork reason from four printed options."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a2",
+      "ref": "A2",
+      "questionText": "Explain the two areas being researched by these students for their My Own Place project.",
+      "sourceSchemePrompt": "Explain the two areas being researched by these students for their My Own Place project?",
+      "sourceSchemeBlock": "\nExplain the two areas being researched by these students for their My Own Place project?\n\n                                                                      2 x 1 mark\n\nTourism: the hotel/the restaurants/the B&B's/the new surf and sailing school/the bike hire/\nbusinesses/tourism is actually the main source of income in that town\n\nBusiness enterprise: interviewed the manager of Kilabbey Supermarket.\n",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "proposedCardMarks": [
+        2
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Two researched areas, Tourism and Business enterprise, 2 x 1 mark; full explanations. Keep whole."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a3",
+      "ref": "A3",
+      "questionText": "What is Corporate Social Responsibility (CSR)?",
+      "sourceSchemePrompt": "What is Corporate Social Responsibility (CSR)?",
+      "sourceSchemeBlock": "\nWhat is Corporate Social Responsibility (CSR)?                          3 x 1 mark\n\nIt is the responsibility of enterprises for their impacts/raise awareness on\nsociety/environment/workplace/community.\n",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "proposedCardMarks": [
+        3
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Whole CSR definition, 3 x 1 mark; complete printed model."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a4",
+      "ref": "A4",
+      "questionText": "Why does Cáit think that Kilabbey Supermarket is a great place to work?",
+      "sourceSchemePrompt": "Why does Cáit think that Kilabbey Supermarket is a great place to work?",
+      "sourceSchemeBlock": "\nWhy does Cáit think that Kilabbey Supermarket is a great place to work?\n                                                                     4 x 1 mark\n1. The staff are all local\n2. The staff are different ages\n3.  Different abilities\n4.  Different cultural backgrounds\n5.   It is very diverse and inclusive\n6.  They seem very happy\n7.  There’s a great atmosphere in the place\n8.  Supports their personal beliefs\n",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        4
+      ],
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "sourceDecision": "Four one-mark reasons from eight workplace-diversity options."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a5",
+      "ref": "A5",
+      "questionText": "Give examples of CSR in action in one of the four areas named below. Community ☐ Workplace ☐ Environment ☐ Marketplace ☐",
+      "sourceSchemePrompt": "Give examples of CSR in action in one of the four areas named below.",
+      "sourceSchemeBlock": "\nGive examples of CSR in action in one of the four areas named below.    2 x 2 marks (0/2)\n\nCommunity:  Kilabbey Supermarket sponsors jerseys for the local football teams\n              Fundraisers for the homeless.\n             Autism/Age friendly times for shopping.\n              Age‐friendly parking.\n              Provide local employment that is diverse and inclusive.\n\nWorkplace:   Staff are all local\n               Different ages, abilities and cultural backgrounds\n                    It is very diverse and inclusive\n            They work hard\n           Seem very happy\n              There’s a great atmosphere in the place\nEnvironment:       Compostable fruit and veg bags/environmentally friendly products\n                        Electric delivery trucks\n                     Putting in charging points for electric cars in the car park\n                   Energy efficient/reduce, reuse, recycle ‘the three Rs’\n                    Lack of pollution\n\nMarket place:          Is about customers\n                     Sourcing of products\n                    Looking after suppliers by treating them fairly\n                    Paying suppliers on time\n                     They’re not spending as much on supplies or energy\n                     Ensuring high safety standards for consumers\n",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "One printed choice of four CSR areas, 2 x 2m (0/2) within chosen area; retain all four complete pools. Never split choices into separate cards."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a6",
+      "ref": "A6",
+      "questionText": "Do you agree with Cáít that ‘giving back to the community’ is just a way for a business to advertise? Give two reasons for your answer.",
+      "sourceSchemePrompt": "Do you agree with Cáit that ‘giving back to the community is just a way for a business to advertise? Give two reasons for your answer.",
+      "sourceSchemeBlock": "\nDo you agree with Cáit that ‘giving back to the community is just a way for a business to\nadvertise? Give two reasons for your answer.\n\n                                                            2 x 2 marks (1+1)\n\nGet their name on the jerseys which is advertising: Sponsors jerseys for the local football teams.\nFundraises for the homeless raises their profile in the community, creates goodwill.\nBy having age friendly parking and autism awareness evenings so the shop benefits from loyal\ncustomers.\n",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        5
+      ],
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Agreement question, two reasons at 2 (1+1); three complete advertising-benefit models. Do not invent a compulsory yes answer or negative models."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a7",
+      "ref": "A7",
+      "questionText": "Have the aims of CSR been met by Kilabbey Supermarket? Give reasons for your answer.",
+      "sourceSchemePrompt": "Have the aims of CSR been met by Kilabbey Supermarket? Give reasons for your answer. Three valid reasons",
+      "sourceSchemeBlock": "\nHave the aims of CSR been met by Kilabbey Supermarket? Give reasons for your answer.\n\nThree valid reasons                                                  6 x 1 mark\n\nBuild trust within communities\nSponsorship for local teams\nProvide services for people with disabilities/the homeless/the elderly/Autism\nProvides employment which is diverse and inclusive\n\nRaise awareness about the environment\nEveryone benefits from lack of pollution etc.\nEncourage the use of compostable bags\nSafeguarding the future provision of goods and services\nProviding a service etc. electric charging points, electric trucks\n\nEncourage social change\nHow products are sourced\nEnvironmental awareness\nConsumer will benefit as new products / business will evolve.\nStandards are high when workers work hard, good for business\nNo complaints to be dealt with from workers re discrimination/pay\nPaying suppliers on time\n",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        5
+      ],
+      "proposedCardMarks": [
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Scheme says Three valid reasons and 6 x 1 mark. Keep whole six-mark question and full three groups; preserve both figures without inventing a mandatory grouping allocation."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-a8",
+      "ref": "A8",
+      "questionText": "Why has CSR become more important in recent years?",
+      "sourceSchemePrompt": "Why has CSR become more important in recent years? Three valid answers",
+      "sourceSchemeBlock": "\nWhy has CSR become more important in recent years?\n\nThree valid answers                                                 3 x 2 marks (1+1)\n\n1.  Customers now want to know that their choices are supporting their own community.\n2.  Customers are prepared to pay more for something if they see the business cares about the\n   environment.\n3.  People want to support businesses who care about social issues and actually do something\n   about them ‐ like Kilabbey Supermarket fundraising for the homeless.\n4.  They’re making a positive difference to the environment/compostable bags/electric trucks.\n5. The business gets a good reputation which improves their profits.\n6. The business becomes a place where people want to work due to its diverse and inclusive\n    staffing.\n7. The community benefits due to sponsorship of local teams.\n8.  Suppliers are paid on time and treated fairly.\n",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        6
+      ],
+      "proposedCardMarks": [
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Three CSR reasons at 2 (1+1); eight full models."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-b1",
+      "ref": "B1",
+      "questionText": "Explain three of the following terms: (i) Overheads (iii) Innovation (ii) Diversification (iv) Mentor",
+      "sourceSchemePrompt": "Explain three of the following terms Three valid answers",
+      "sourceSchemeBlock": "\nExplain three of the following terms\n\nThree valid answers                                                 3 x 2 marks (1+1)\n\nMentor:     A mentor is a person with experience who gives advice/help/guidance over a\n              period of time to someone younger/less experienced to help them develop their\n             work.\n\nDiversification: Entering into a new market or industry while also creating a new product for\n              that new market. Spreading the risk.\n\nInnovation:  The introduction of new things, ideas or ways of doing something.\n\nOverheads:  Overhead costs are an expense, associated with running a business.\n             Examples: Rent; utilities; insurance; office supplies; travel; advertising expenses;\n             accounting and legal expenses; salaries and wages.\n",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        7
+      ],
+      "proposedCardMarks": [
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Printed three-of-four definitions choice, one card. CHOICE SPANS: business, skills, life. Overheads/diversification, innovation and mentoring span these headings; preserve all four full definitions."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-b2i",
+      "ref": "B2(i)",
+      "questionText": "Why do businesses diversify?",
+      "sourceSchemePrompt": "Why do businesses diversify?",
+      "sourceSchemeBlock": "Why do businesses diversify?\n                                                                       1 mark\n1.  Diversification of your investments lowers risk so less chance of failure.\n2. Companies diversify to achieve greater profitability.\n3.  Diversification helps to expand a business into markets and industries that they haven't\ncurrently explored.\n",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        7
+      ],
+      "proposedCardMarks": [
+        1
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "One diversification reason from three printed models."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-b2ii",
+      "ref": "B2(ii)",
+      "questionText": "Outline two examples of diversification evident in this case study.",
+      "sourceSchemePrompt": "Outline two examples of diversification evident in this case study. Two valid answers",
+      "sourceSchemeBlock": "Outline two examples of diversification evident in this case study.\n\nTwo valid answers                                                 2 x 2 marks (1+1)\n\n1.  Before COVID they were thinking of diversifying into accessories and footwear.\n2.   Diversified into online sales.\n3.  Business consultancy.\n",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        7
+      ],
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Two case-specific diversification examples at 2 (1+1); three complete models and full Alex/Rami case."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-b2iii",
+      "ref": "B2(iii)",
+      "questionText": "Describe two risks associated with diversification in business.",
+      "sourceSchemePrompt": "Describe two risks associated with diversification in business Two valid answers",
+      "sourceSchemeBlock": "Describe two risks associated with diversification in business\n\nTwo valid answers                                                  2 x 2 marks (1+1)\n\n1.  Cost associated with expansion.\n2.  Availability of capital.\n3.  Availability of essential resources.\n4. May lose money if the product line fails.\n5.  Dilute/confuse the impact of the original product when they specialize in a specific brand.\n6.  Might reduce productivity/ quality of work it there is a strain put on employees/owners.\n",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        7
+      ],
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Two diversification risks at 2 (1+1); six models."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-b3i",
+      "ref": "B3(i)",
+      "questionText": "Describe one positive and one negative effect for an enterprise moving to selling online.",
+      "sourceSchemePrompt": "Describe one positive and one negative effect for an enterprising moving to selling online. Two valid answers",
+      "sourceSchemeBlock": "Describe one positive and one negative effect for an enterprising moving to selling\n      online.\n\nTwo valid answers                                            2 x 2 marks (1+1)\n\n1.  You can shop at any time.\n2.  You do not need a shop for online so rent will be cheaper.\n3.  More stock on hand as area for shop sales is not reduced/warehouse.\n4.  Online platform can develop a bigger audience/customer base than a shop base.\n5.   Selling Online can offer promo discount codes.\n6.  Online sales can have reviews.\n7.  Hours of work different which may be easier to attract staff with selling online.\n\n1.  Dealing with returns is more complex/time\n2.  You have to consider costs such as packaging or delivery dates with online.\n3.  With online you need a good website/product description to make it easy for customers to\n    order.\n4.  Greater security risks/fees to be paid for online payments.\n5.  Better relationship/rapport/attention with in person sales. People can be distracted when on\n     line with ads, social media, and other websites competing for attention.\n6.  Losing customers who do not have access/use the internet.\n",
+      "paperPages": [
+        13,
+        14
+      ],
+      "schemePages": [
+        8
+      ],
+      "proposedCardMarks": [
+        2,
+        2
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Split positive and negative effects into two2-mark asks. Paper13 demands one of each; scheme8 gives separate answer pools and two answers at2(1+1). Changed after second-reader summary arrived: informed agreement, third-reader validation required."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-b3ii",
+      "ref": "B3(ii)",
+      "questionText": "Identify and explain three issues which should be considered when preparing a long- term plan for the business.",
+      "sourceSchemePrompt": "Identify and explain three issues which should be considered when preparing a long‐ term plan for the business Three valid answers",
+      "sourceSchemeBlock": "Identify and explain three issues which should be considered when preparing a long‐\n      term plan for the business\n\nThree valid answers                                                 3 x 2 marks (1+1)\n\n1. Marketing/Market Research ‐ to find out if your idea will be successful:\nDesk and field research/undertaken by the business or by a market research firm/identify target\nmarket/demand/competition/advertising/USP/price.\n\n2. Finance ‐ to know how much is needed/where you will get the money/budgeting is important to\nensure you have enough to meet your running costs.\nSources of finance/loan/grants/cash flow forecast/budgeting income and expenditure/costs\ninvolved in purchasing equipment.\n\n3. Staff/Personnel/HR ‐ to know how many employees are required/qualifications:\nJob description for employees/qualifications/salary/training required/how many employees\nneeded.\n\n4. Production ‐ to know how long it will take to make the product/potential difficulties can\nbe planned for.\nRaw materials/suppliers/production process/distribution/packaging/design.\n\n5. Location/Premises ‐ to plan for proper facilities and enough space/near good infrastructure.\nNear customers, staff and suppliers/parking/adequate room for future expansion.\nNear airport/good road network for deliveries.\n\n6. Legalities – planning permission, custom clearance, safety statement, employee\ncontracts.\n",
+      "paperPages": [
+        13,
+        14
+      ],
+      "schemePages": [
+        8
+      ],
+      "proposedCardMarks": [
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Retain whole6 provisionally. Scheme8 has named issues and explanations but only generic3x2(1+1), no named identification/explanation allocation. Third reader decides whether sufficient to split."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c1a",
+      "ref": "C1(a)",
+      "questionText": "State two steps that you should take to prepare for an interview for the above position.",
+      "sourceSchemePrompt": "State two steps that you should take to prepare for an interview for the above position.",
+      "sourceSchemeBlock": "State two steps that you should take to prepare for an interview for the above position.\n                                                            2 x 2 marks (0/2)\n\n1.  Carefully examine the job description, the more you can align yourself to these details\n2.  Research the company, their products or services online/in the newspapers/trade magazines.\n3. Do an interview preparation course/practice questions/do a mock interview with a friend or\n    family member. This will help to improve your confidence, give you a chance to practice your\n    interview.\n4.  Interview etiquette ‐ proper handshake/maintaining eye contact/sitting up\n    straight/gestures/diction. So you come across well in the interview.\n5.  Pick appropriate clothes to wear for the interview/make sure your clothes are clean and\n   appropriate for the interview/you should also be well groomed. This will make a good first\n    impression.\n6.  Plan your transport to the interview/Do a dry run the day before to make sure you know\n   where to go and how long it will take to get there. This will ensure you will arrive on time for\n   the interview/be early.\n7.  Reread your application form or CV. To refresh your memory and prepare for potential\n   questions on them.\n8.  Prepare in advance additional documents you may have been asked to bring to the interview/\n    safe pass/ certification. So as to not be looking for these minutes before your interview.\n9.  Prepare questions you would like to ask at the end of you interview. Shows you have given\n   some thought to the job/contact/duties etc.\n10. Mentally prepare, good night’s sleep, eat well before the interview. You’re not tired, hungry,\n   there is less stress on you as you are ready for the interview.\n",
+      "paperPages": [
+        18
+      ],
+      "schemePages": [
+        9
+      ],
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "sourceDecision": "Two interview-preparation steps at 2 (0/2); ten full models. Full printed Rooney’s advertisement as shared context."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c1b",
+      "ref": "C1(b)",
+      "questionText": "List two questions that might be asked at an interview for the position as advertised.",
+      "sourceSchemePrompt": "List two questions that might be asked at an interview for the position as advertised.",
+      "sourceSchemeBlock": "List two questions that might be asked at an interview for the position as advertised.\n                                                                 4 marks (2+2)\nTwo relavent questions\n\nWhy do you want this job?\nWhy should we employ you?\nHave you any experience of working in retail?\nWhat hours would you be available to work?\n",
+      "paperPages": [
+        18
+      ],
+      "schemePages": [
+        9
+      ],
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "sourceDecision": "Two interview questions, 2+2; four printed examples. One ask, no fixed question pair."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c1c",
+      "ref": "C1(c)",
+      "questionText": "Write a letter of application for the position of part-time Retail Assistant as advertised above.",
+      "sourceSchemePrompt": "Write a letter of application for the position of part‐time Retail Assistant as advertised.",
+      "sourceSchemeBlock": "Write a letter of application for the position of part‐time Retail Assistant as advertised.\n                                                                 8 x 1 mark\n\nRe: Position of Part‐time Retail Assistant\n\nDear Sir/Madam\n\nI am a 6th year LCVP student at XXXX Community School. I would like to apply for the position of\npart‐time retail assistant as advertised.\n\nI am really interested in this position and I will be available to work from the 25th June.\n\nPlease find enclosed my curriculum vitae and names of\nmy referees. I would appreciate an opportunity to       Summary of marks\ninterview for this position.                     Own address          1m\n                                                        Business address        1m\nYours faithfully                                      Date               1m\n                                                         Subject line           1m\nJohn Smith                                        Opening             1m\n                                                        Introduction/reason      1m\n                                                           Closing              1m\n                                                      CV/references         1m\n                                                         Total               8m\n",
+      "paperPages": [
+        19
+      ],
+      "schemePages": [
+        10
+      ],
+      "proposedCardMarks": [
+        8
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "sourceDecision": "Whole letter with eight one-mark criteria AND a full printed model. Keep complete model after reveal; not an R4 no-answer task. Original image needed to separate model from adjacent marks table."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c1d",
+      "ref": "C1(d)",
+      "questionText": "Why do employers emphasise communication skills when interviewing for new employees? Include three reasons in your answer.",
+      "sourceSchemePrompt": "Why do employers emphasise communication skills when interviewing for new employees? Include three reasons in your answer. Three valid reasons",
+      "sourceSchemeBlock": "Why do employers emphasise communication skills when interviewing for new employees?\n     Include three reasons in your answer.\n\nThree valid reasons                                               3 x 3 marks (1+1+1)\n\n    1. Businesses use phones, emails, various chat applications, and video conferencing systems to\n        interact with other people.\n    2. Excellent communication skills also help with team building, and help to make sure that\n       collaborative projects run smoothly.\n    3. Excellent communicators expresses themselves in a positive, clear and unambiguous way\n      both when speaking to customers and in writing.\n    4. Employees with excellent communication skills understand instructions, ask questions and\n       relay information with ease.\n    5. Innovation  within an  organisation  relies  heavily on employees  that have  excellent\n      communication skills.\n    6. The ability to communicate effectively plays a large role in resolving conflicts and preventing\n       potential ones from arising.\n",
+      "paperPages": [
+        20
+      ],
+      "schemePages": [
+        10
+      ],
+      "proposedCardMarks": [
+        9
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Three communication reasons at 3 (1+1+1); six full models."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c2a",
+      "ref": "C2(a)",
+      "questionText": "Name one community association in your area.",
+      "sourceSchemePrompt": "Name one community association in your area. One valid community association",
+      "sourceSchemeBlock": "Name one community association in your area.\n\nOne valid community association                                       2 marks (0/2)\n",
+      "paperPages": [
+        21
+      ],
+      "schemePages": [
+        11
+      ],
+      "proposedCardMarks": [
+        2
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "sourceDecision": "One valid community association, 2 (0/2), no example name: R4."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c2b",
+      "ref": "C2(b)",
+      "questionText": "State three benefits this community association brings to your area.",
+      "sourceSchemePrompt": "State three benefits this community association brings to your area.",
+      "sourceSchemeBlock": "State three benefits this community association brings to your area.    3 x 2 marks (1+1)\n\n1.  They provide services to the community/to help people in need/support a local cause.\n2.  They can create employment by hiring full time staff/ give volunteers an opportunity to upskill.\n3. Young people can get work experience with them and can experience the work of the voluntary\n    body/visit in to school from voluntary organisation.\n4.  Local amenities or environment can be improved/tidy towns/walkways, parks, cycle tracks etc.\n5.  Attracts tourism/spin off business/B&Bs/restaurants/transport business. Money spent in the\n   area raises the standard of living in the area.\n6. A good community spirit is generated/fosters pride in the local area/there might be an\n    increase in the number of volunteers/provides an opportunity for people to volunteer/ friendships.\n7.  Grants received could be used locally e.g. improving local resources or facilities.\n8.  Services in the community are improved/family members may benefit from the organisation.\n9.  Etc.\n",
+      "paperPages": [
+        21
+      ],
+      "schemePages": [
+        11
+      ],
+      "proposedCardMarks": [
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "sourceDecision": "Three community benefits at 2 (1+1); eight full models plus Etc.; same chosen association."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c2ci",
+      "ref": "C2(c)(i)",
+      "questionText": "Outline two steps you should take in preparing for the visit.",
+      "sourceSchemePrompt": "Outline two steps you should take in preparing for the visit.",
+      "sourceSchemeBlock": "Outline two steps you should take in preparing for the visit.    2 x 1 mark\n\n1.  Contact the organisation to arrange date and time.\n2.  Get permission from the principal/parents.\n3.  Research the organisation/prepare questions to ask.\n4.  Ask teacher to review the questions that were prepared.\n6.  Prepare necessary materials for the visit/questionnaire/notebook and pen.\n7.  Decide who is doing what for the visit/assign roles to different people.\n8.  Etc.\n",
+      "paperPages": [
+        22
+      ],
+      "schemePages": [
+        11
+      ],
+      "proposedCardMarks": [
+        2
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Two one-mark preparation steps; six actual models plus Etc., printed numbering skips5. No fabricated missing option."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c2cii",
+      "ref": "C2(c)(ii)",
+      "questionText": "Identify three personal qualities you need to successfully organise the visit.",
+      "sourceSchemePrompt": "Identify three personal qualities you need to successfully organise the visit.",
+      "sourceSchemeBlock": "Identify three personal qualities you need to successfully organise the visit. 3 x 2m\n1.  Ability to work as a team.\n2.  Able to communicate clearly.\n3. Be organised.\n4. Make preparations in advance.\n5.  Etc.\n",
+      "paperPages": [
+        22
+      ],
+      "schemePages": [
+        11
+      ],
+      "proposedCardMarks": [
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Three personal qualities at 2; four models plus Etc. Paper’s combined8 is2+6 from scheme."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c2d",
+      "ref": "C2(d)",
+      "questionText": "Describe three ways you could evaluate the success of the visit.",
+      "sourceSchemePrompt": "Describe three ways you could evaluate the success of the visit.",
+      "sourceSchemeBlock": "Describe three ways you could evaluate the success of the visit.    3 x 3 marks (1+1+1)\n\n1. Questionnaire: Can be given to the speaker as well as the class to get their opinion on the visit.\nEasy to administer/collate results\nCan be completed anonymously\nGenerally inexpensive\nGood response rate\nThey are objective.\n\n2. Class Discussion: The class can discuss the visit in/varying opinions can be taken on board.\nEasy to organise\nEveryone can participate\nCan see how much was learned\n Allows for everyone to contribute to the discussion\nGood to show improvement or practice communication skills.\n\n3. Portfolio Item e.g. Summary Report: Correct type of information to complete the report.\nEasy method to use as all class members must produce a report\nReports can be compared easily.\n\n4. Contact the speaker via a follow‐up phone call or e‐mail.\nThey are in a position to give feedback from their point of view as to how they felt about the visit,\nhow the students engaged and whether they felt that the students benefitted from the visit.\n\n5. Ask Teacher: who can comment on how well this visit was organised/run.\nThis allows the class to practice their interview/communication skills where questions can be\nexplained if necessary\nThey are easy to carry out with no cost involved\nYou will get honest feedback/review of teamwork.\n\n6. Review of Teamwork: Did the class put into practice what they have learned/how well did\nthey work together as a team.\n Objective was to work as a team\n All class members are aware of what is involved\n Will give direction for future teamwork activities.\n\n7. Review Aims/Objectives: To see if the aims or objectives for the visit were met.\nWas the purpose of the activity achieved? Did they get the information they needed?\n",
+      "paperPages": [
+        23
+      ],
+      "schemePages": [
+        12
+      ],
+      "proposedCardMarks": [
+        9
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Three evaluation methods at 3 (1+1+1); seven full models and all continuations. No separate printed naming/reason totals."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c3a",
+      "ref": "C3(a)",
+      "questionText": "Draw up an agenda for the class meeting to organise the activity.",
+      "sourceSchemePrompt": "Draw up an agenda for the class meeting to organise this activity.",
+      "sourceSchemeBlock": "Draw up an agenda for the class meeting to organise this activity.           4 x 1 mark\n1.  Election of class members to positions/chairperson/secretary/treasurer etc.\n2.  Assigning tasks/roles/delegation of duties/permission from PE teacher to use the school hall.\n3.  Finance.\n4.  Plan of work/action steps.\n5.  Timeline/deadlines/completion dates/schedule of time.\n6.  Date/time of next meeting.\n7. AOB.\n",
+      "paperPages": [
+        24
+      ],
+      "schemePages": [
+        12
+      ],
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "One agenda, four one-mark items from seven; no heading/layout marks or compulsory item printed."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c3b",
+      "ref": "C3(b)",
+      "questionText": "Outline two benefits of teamwork.",
+      "sourceSchemePrompt": "Outline two benefits of teamwork",
+      "sourceSchemeBlock": "Outline two benefits of teamwork                             2 x 2 marks (1+1)\n\n1.  Sharing of information and ideas.\n2. More problem‐solving abilities.\n3.  Sharing of goals.\n4.  Greater sense of ownership.\n5.  Sharing of tasks/sharing of responsibilities/less stressful.\n6.  Gets the job completed faster or on time.\n7.  Activity runs smoothly.\n8.  Develops friendships.\n",
+      "paperPages": [
+        24
+      ],
+      "schemePages": [
+        13
+      ],
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Two teamwork benefits at 2 (1+1); eight models."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c3c",
+      "ref": "C3(c)",
+      "questionText": "Identify and describe two skills that could be developed during this activty?",
+      "sourceSchemePrompt": "Identify and describe two skills that could be developed during this activity.",
+      "sourceSchemeBlock": "Identify and describe two skills that could be developed during this activity.\n                                                           2 x 4 marks (2 + 2)\n\n1. Communication skills\n2.  ICT skills\n3. Teamwork skills\n4.  Presentation skills\n5.  Research skills\n6.  Leadership skills\n7.  Report writing skills\n8.  Planning skills\n9.  Organisation skills\n10. Problem solving skills\n11. Time management skills\n12. Etc.\n",
+      "paperPages": [
+        25
+      ],
+      "schemePages": [
+        13
+      ],
+      "proposedCardMarks": [
+        8
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Retain whole8 provisionally. Paper25 ends in question mark; index16 has period. Scheme13 gives2x4(2+2), eleven names plus Etc., no descriptions or named semantic allocation. Keep names and scoped partial R4; third reader decides split."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c3d",
+      "ref": "C3(d)",
+      "questionText": "Set out under four appropriate headings, a plan for organising the event.",
+      "sourceSchemePrompt": "Set out under four appropriate headings, a plan for organising the event.",
+      "sourceSchemeBlock": "Set out under four appropriate headings, a plan for organising the event.\n                                                           4 x 1 mark heading\n                                                           5 x 1 mark action steps\n1.  Aims/Objectives\n2.  Research Methods\n3.  Analysis of Research\n4.  Action Steps\n5.  Schedule of Time\n6.  Schedule of Costs\n7.  Evaluation Methods\n",
+      "paperPages": [
+        26
+      ],
+      "schemePages": [
+        13
+      ],
+      "proposedCardMarks": [
+        9
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "sourceDecision": "One event plan: four heading marks and five action-step marks. Seven headings printed, no actual action-step examples; partial R4 evidence. Do not split parts of the one plan into cards."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c4a",
+      "ref": "C4(a)",
+      "questionText": "List four sources of employment in your local area.",
+      "sourceSchemePrompt": "List four sources of employment in your local area. Any four workplaces named",
+      "sourceSchemeBlock": "List four sources of employment in your local area.\n\nAny four workplaces named                                             4 x 1 mark\n",
+      "paperPages": [
+        27
+      ],
+      "schemePages": [
+        14
+      ],
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "sourceDecision": "Any four workplaces named, 4 x 1; no actual example workplaces, R4."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c4b",
+      "ref": "C4(b)",
+      "questionText": "Outline two ways of finding work experience.",
+      "sourceSchemePrompt": "Outline two ways of finding work experience",
+      "sourceSchemeBlock": "Outline two ways of finding work experience                  2 x 2 marks (1+1)\n\n1.  Personal contacts‐ family members, teachers, word of mouth\n2.  Sending out CV/letter of application to potential employers\n3.  Personal visits\n4.  Phone call\n5.  From part time work\n6.  Use of the internet\n7.  Send an email to business\n8.  Newspapers/Notice boards\n9.  Local radio\n",
+      "paperPages": [
+        27
+      ],
+      "schemePages": [
+        14
+      ],
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-work-placement"
+      ],
+      "sourceDecision": "Two ways of finding placement at 2 (1+1); nine models."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c4c",
+      "ref": "C4(c)",
+      "questionText": "State three different sources of support or help available to you during your work experience. Explain in detail how one of the stated sources helped you.",
+      "sourceSchemePrompt": "State three different sources of support or help available to you during your work experience. Explain in detail how one of the stated sources helped you.",
+      "sourceSchemeBlock": "State three different sources of support or help available to you during your work\n     experience. Explain in detail how one of the stated sources helped you.\n                                                     3 x 1 mark sources\n                                                     1 point developed (2 + 2 + 1)\n  Family member\n  Your LCVP teacher/teacher\n  Career Guidance Teacher\n  Employer\n  Mentor\n  Fellow worker/Employee\n   Instruction manual/Training booklet\n   Internet\n  Fellow classmates\n",
+      "paperPages": [
+        28
+      ],
+      "schemePages": [
+        14
+      ],
+      "proposedCardMarks": [
+        3,
+        5
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-work-placement"
+      ],
+      "sourceDecision": "Explicit three sources at1 plus one developed point(2+2+1); proposed split, nine source names but no developed example. Retain selected-source context and R4 for explanation."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c4d",
+      "ref": "C4(d)",
+      "questionText": "Describe three challenges which a student might face undertaking work experience. Outline how each challenge might be overcome.",
+      "sourceSchemePrompt": "(i) Describe three challenges that a student may experience during their work experience/ work shadowing. Describe three difficulties",
+      "sourceSchemeBlock": "(i) Describe three challenges that a student may experience during their work experience/\n    work shadowing.\n\nDescribe three difficulties                                            3 x 2 marks (1+1)\n\n1. Not having meaningful work to do/boredom/trying to fill the time.\n2.  Lack of training for tasks/no instructions given/finding the work difficult.\n3. Not being treated well by the organisation/being overworked/exploited/long hours.\n4.  Practical issues/transport/timekeeping/dress code.\n5.  Being excluded/employees not interested in helping the student.\n        (ii) Outline how these challenges might be overcome.                      3 x 1 mark\n\n1.  Speak to the employer and explain that you do not have enough to do, watch and learn from\n   what others are doing.\n2.  Ask other employees for help and/or speak to the employer and explain the difficulties.\n3.  Speak to your LCVP teacher and explain the difficulties.\n4.  Speak to the employer and give reasons for these difficulties – offer solutions/alternatives.\n5.  Try not to see this as personal, do the work, be friendly and polite – you are there to learn.\n",
+      "paperPages": [
+        29
+      ],
+      "schemePages": [
+        14,
+        15
+      ],
+      "proposedCardMarks": [
+        6,
+        3
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-work-placement"
+      ],
+      "sourceDecision": "Scheme separately labels(i)three challenges at2(1+1) and(ii)three solutions at1. Proposed split of paper’s two commands; retain five full challenges and five related solutions."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c5a",
+      "ref": "C5(a)",
+      "questionText": "Name one state agency that might offer assistance to Francis.",
+      "sourceSchemePrompt": "Name one state agency that might offer assistance to Francis.",
+      "sourceSchemeBlock": "Name one state agency that might offer assistance to Francis. 2 marks (0/2)\n\n1.  Local Enterprise Office/LEO/CEB                   7.  Udaras Na Gaeltacha\n2.  Enterprise Ireland                                  8.  Failte Ireland\n3.  Local Area Partnerships companies/APC’s         9.  IDA Ireland\n4.  ETB’s/SOLAS/FAS                               10. Intertrade Ireland\n5.  Leader Plus                                     11. Bord Bia\n6.  Teagasc                                        12. Glas\n",
+      "paperPages": [
+        30
+      ],
+      "schemePages": [
+        15
+      ],
+      "proposedCardMarks": [
+        2
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "One state agency,2(0/2); twelve printed names including historical labels, no modernisation."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c5b",
+      "ref": "C5(b)",
+      "questionText": "Outline three reasons why it is important for a business to plan.",
+      "sourceSchemePrompt": "Outline three reasons why it is important for a business to plan. Three relevant answers",
+      "sourceSchemeBlock": "Outline three reasons why it is important for a business to plan.\n\nThree relevant answers                                        3 x 2 marks (1+1)\n\n1. To see if it is worthwhile beginning the business/continuing with the business.\n2.  Required when applying for a bank loan/grants.\n3. You can evaluate how your business is doing by comparing it to the plan.\n4.  Having a plan helps with the day to day decision making.\n5. To help your business run more efficiently.\n6.  Helps anticipate trends or needs of the business.\n7.  Helps identify weaknesses in the business.\n8.  Helps to measure progress as the business develops.\n",
+      "paperPages": [
+        30
+      ],
+      "schemePages": [
+        15
+      ],
+      "proposedCardMarks": [
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Three business-plan reasons at2(1+1); eight models."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c5c",
+      "ref": "C5(c)",
+      "questionText": "Describe four ways Francis could evaluate the success of his enterprise.",
+      "sourceSchemePrompt": "Describe four ways Francis could evaluate the success of his enterprise. Four valid points",
+      "sourceSchemeBlock": "Describe four ways Francis could evaluate the success of his enterprise.\n\nFour valid points                                                   4 x 2 marks (1+1)\n\n1.  Profits/turnover/sales ‐ increased from previous years. Meeting targeted profits/achieving\n   aims. Improved share price.\n2.  Comparisons with competitors/market share/being the dominant business in a particular\n    industry or for a particular product.\n3.  Winning awards/recognition from the industry/ISO awards.\n4. Good staff relations/no strikes/low staff turnover/committed hardworking staff.\n5.  Customer loyalty/customers stay with the business, keep coming back.\n6.  Size of the business/expansion/gaining new markets/new products/diversification.\n7.  Continuity/length of time in business.\n",
+      "paperPages": [
+        31
+      ],
+      "schemePages": [
+        15
+      ],
+      "proposedCardMarks": [
+        8
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "sourceDecision": "Four enterprise-evaluation responses at2(1+1); seven full models."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c5d",
+      "ref": "C5(d)",
+      "questionText": "Describe three enterprising characteristics that Francis should possess which would help in getting his enterprise up and running.",
+      "sourceSchemePrompt": "Describe three enterprising characteristics that Francis should possess which would help in getting his enterprise up and running. Three valid answers",
+      "sourceSchemeBlock": "Describe three enterprising characteristics that Francis should possess which would help in\n       getting his enterprise up and running.\n\nThree valid answers                                            3 x 3 marks (1+1+1)\n\n1.  Willing to take a risk.                               5.  Hard working.\n2.  Focused.                                           6.  Motivated.\n3.  Determined.                                       7.  Persistent.\n4.  Constantly learning.                                8.  Decisive etc.\n",
+      "paperPages": [
+        32
+      ],
+      "schemePages": [
+        16
+      ],
+      "proposedCardMarks": [
+        9
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Whole9. Scheme16 prints eight characteristic names and3x3(1+1+1), no descriptions. Keep names and scoped partial R4."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c6ai",
+      "ref": "C6(a)(i)",
+      "questionText": "What job would you like to do when you leave school?",
+      "sourceSchemePrompt": "What job would you like to do when you leave school? One valid career",
+      "sourceSchemeBlock": "What job would you like to do when you leave school?\n\nOne valid career                                                            1 mark\n",
+      "paperPages": [
+        33
+      ],
+      "schemePages": [
+        16
+      ],
+      "proposedCardMarks": [
+        1
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "sourceDecision": "One valid career, no actual name printed, R4."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c6aii",
+      "ref": "C6(a)(ii)",
+      "questionText": "What qualification/training is needed for this position?",
+      "sourceSchemePrompt": "What qualification/training is needed for this position? One valid qualification/training",
+      "sourceSchemeBlock": "What qualification/training is needed for this position?\n\nOne valid qualification/training                                                1 mark\n",
+      "paperPages": [
+        33
+      ],
+      "schemePages": [
+        16
+      ],
+      "proposedCardMarks": [
+        1
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "sourceDecision": "One valid qualification/training for same career; no actual example, R4."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c6b",
+      "ref": "C6(b)",
+      "questionText": "Identify three personal skills or qualities required for this position.",
+      "sourceSchemePrompt": "Identify three personal skills or qualities required for this position. Three relevant skills or qualities",
+      "sourceSchemeBlock": "Identify three personal skills or qualities required for this position.\n\nThree relevant skills or qualities                                        3 x 2 marks (0/2)\n\n1.  Hard working: productive, hardworking people are better for a business.\n2.  Good communicator: individuals need to be able to communicate with managers, other\n    workers and customers.\n3.  Punctual: it is essential that all workers are on time for work.\n4.  Team player: teamwork is a major feature of any work place, workers need to get on with\n    other team member and also perform their assigned tasks.\n5.  Shows initiative: employers need workers who can work on their own and do not need\n    constant direction/positive attitude.\n6.  Honest/trustworthy: it is essential that workers do an honest day’s work for their pay. Do not\n     steal from employer/loyal.\n\nAny other relevant personal skill/quality with valid explanations\n",
+      "paperPages": [
+        33
+      ],
+      "schemePages": [
+        16
+      ],
+      "proposedCardMarks": [
+        6
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "sourceDecision": "Three skills/qualities at2(0/2); six full models plus other relevant skill/quality with valid explanation. Keep tied to chosen career."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c6c",
+      "ref": "C6(c)",
+      "questionText": "State four sources of information used to investigate the position. Outline how each source was relevant.",
+      "sourceSchemePrompt": "State four sources of information used to investigate the position. Outline how each source was relevant. Four valid sources",
+      "sourceSchemeBlock": "State four sources of information used to investigate the position. Outline how each\n     source was relevant.\n\nFour valid sources                                                 4 x 2 marks (1+1)\n\n1.  Career Guidance Teacher: book an appointment to review DAT’s results/suitability for career/\n   course options.\n\n2.  Research: internet/websites e.g. Careers Portal, Qualifax, CAO, college websites.\n3. Open Day/Career fairs: college open day/get to see facilities/ speak to students and\n    lecturers/careers exhibition e.g. Higher Options variety of third level institutions in one place.\n\n4. Work Experience/shadowing: get to experience the day to day duties involved in the career.\n\n5.  Interview: talking to someone doing this job allows you to ask questions e.g. salary, advantages\n   and disadvantages of the job.\n6.  College prospectus/brochures/newspaper articles/pamphlets/library.\n",
+      "paperPages": [
+        34
+      ],
+      "schemePages": [
+        16,
+        17
+      ],
+      "proposedCardMarks": [
+        8
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "sourceDecision": "Retain whole8 provisionally. Scheme16-17 gives4x2(1+1), no named source/relevance allocation. Keep all six models; options2and6 lack relevance, scoped partial R4. Third reader decides split."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c6d",
+      "ref": "C6(d)",
+      "questionText": "Does the LCVP prepare students with the skills they need to succeed in the modern world of work? Give three reasons for your answer.",
+      "sourceSchemePrompt": "Does the LCVP prepare students with the skills they need to succeed in the modern world of work? Give three reasons for your answer. Three valid reasons YES or NO",
+      "sourceSchemeBlock": "Does the LCVP prepare students with the skills they need to succeed in the modern world\n      of work? Give three reasons for your answer.\n\n\n\nThree valid reasons YES or NO                                   3 x 3 marks (1+1+1)\n\n1.  Helps students to develop communication skills which will enable students to communicate\n1.  with employers/fellow employees/ customers in the future\n2.  Develop IT skills/typing CV which will enable them to engage effectively with IT in the future\n3.  Helps develop teamwork skills which will enable them to work as part of a team in their future\n4.  workplace\n5.  Helps them develop presentation skills which will help them when making presentations\n6.  within their workplace in the future\n7.  Develop research skills                          12. Problem solving\n8. May have developed leadership skills            13. Time management\n9.  Report writing skills                             14. Motivation\n10. Planning skills                                  15. Etc.\n11. Organisation skills\n",
+      "paperPages": [
+        35
+      ],
+      "schemePages": [
+        17
+      ],
+      "proposedCardMarks": [
+        9
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Whole9. Scheme17 expressly permits YES or NO,3x3(1+1+1). Keep all positive models and duplicated numbering; no NO model printed, scoped partial R4 for this route."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c7a",
+      "ref": "C7(a)",
+      "questionText": "What is meant by market research?",
+      "sourceSchemePrompt": "What is meant by market research?",
+      "sourceSchemeBlock": "What is meant by market research?                                    2 + 2 marks\n\nMarket research involves gathering/ and analysing information/ about the market for a particular\nproduct or service/this allows you make decisions about how to proceed in business.\n",
+      "paperPages": [
+        36
+      ],
+      "schemePages": [
+        17
+      ],
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Whole market-research definition,2+2; full model, no forced semantic split."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c7b",
+      "ref": "C7(b)",
+      "questionText": "Why is market research important when undertaking an activity such as this?",
+      "sourceSchemePrompt": "Why is market research important when undertaking an activity such as this?",
+      "sourceSchemeBlock": "Why is market research important when undertaking an activity such as this?\n                                                            2 x 2 marks (1+1)\n\n1. Can help you find out if there is a demand for your product.\n2. Can help decide on the price to charge.\n3. Can help you find out what your competitors are doing.\n4. Can help you adapt your product to a product customers want.\n5. Can lead to better decision making in the business.\n6. Can help minimise risk and the risk of failure.\n",
+      "paperPages": [
+        36
+      ],
+      "schemePages": [
+        17
+      ],
+      "proposedCardMarks": [
+        4
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Two market-research benefits at2(1+1); six models, same swap-shop context."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c7c",
+      "ref": "C7(c)",
+      "questionText": "Identify and explain four forms of promotion you would use for this activity.",
+      "sourceSchemePrompt": "Identify and explain four forms of promotion you would use for this activity. Four valid points",
+      "sourceSchemeBlock": "Identify and explain four forms of promotion you would use for this activity.\n\nFour valid points                                                   4 x 2 marks (1+1)\n\n   Social media – Twitter/Instagram/Snapchat/Tik Tok/Facebook\n  YouTube videos\n  Notice‐boards/posters around the school\n   Flyers\n  Intercom announcements\n  Introductory offers/discounts/incentives to participate/prizes\n   Class to class visits\n  School website/App/Email\n  Word of mouth\n",
+      "paperPages": [
+        37
+      ],
+      "schemePages": [
+        18
+      ],
+      "proposedCardMarks": [
+        8
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Retain whole8 provisionally. Scheme18 gives4x2(1+1), no named identification/explanation allocation. Nine forms named, no explanations; scoped partial R4. Third reader decides split."
+    },
+    {
+      "id": "lcvp-2022-cl-deferred-c7d",
+      "ref": "C7(d)",
+      "questionText": "Describe three ways participation in the organisation and running of this activity would benefit you as a student.",
+      "sourceSchemePrompt": "Describe three ways participation in the organisation and running of this activity would benefit you as a student.",
+      "sourceSchemeBlock": "Describe three ways participation in the organisation and running of this activity would\n      benefit you as a student.                                  3 x 3 marks (1+1+1)\n\n1.  Personal skills/qualities learned or developed.\n2. Teamwork skills learned.\n3.  Planning skills developed.\n4.  Problem solving/flexibility/adaptability\n5. Knowledge of different aspects of running an activity, finance, advertising etc.\n6.  Awareness of broader issues\n7.  Gain networking contacts which may be useful in the future.\n8.  Social contact/friendships.",
+      "paperPages": [
+        38
+      ],
+      "schemePages": [
+        18
+      ],
+      "proposedCardMarks": [
+        9
+      ],
+      "firstReaderHeadings": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "sourceDecision": "Three personal benefits at3(1+1+1); eight full models."
+    }
+  ]
+}

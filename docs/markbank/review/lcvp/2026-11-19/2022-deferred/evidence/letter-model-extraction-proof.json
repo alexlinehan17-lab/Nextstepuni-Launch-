@@ -1,0 +1,129 @@
+{
+  "schemeSha256": "9b14e6acf76be8d4467c394e15d5e59ecc2a0deaab5c52f4f2d887159f071ba2",
+  "page": 10,
+  "selectedLines": [
+    [
+      147.5997314453125,
+      56.699951171875,
+      "Re: Position of Part‐time Retail Assistant",
+      [
+        56.699951171875,
+        147.5997314453125,
+        256.2119445800781,
+        159.5997314453125
+      ]
+    ],
+    [
+      176.8797607421875,
+      56.69996643066406,
+      "Dear Sir/Madam",
+      [
+        56.69996643066406,
+        176.8797607421875,
+        140.1695556640625,
+        188.8797607421875
+      ]
+    ],
+    [
+      205.1545867919922,
+      56.69996643066406,
+      "I am a 6th year LCVP student at XXXX Community School. I would like to apply for the position of",
+      [
+        56.69996643066406,
+        205.1545867919922,
+        525.0767822265625,
+        218.1597900390625
+      ]
+    ],
+    [
+      220.8597412109375,
+      56.699981689453125,
+      "part‐time retail assistant as advertised.",
+      [
+        56.699981689453125,
+        220.8597412109375,
+        249.39474487304688,
+        232.8597412109375
+      ]
+    ],
+    [
+      249.1346893310547,
+      56.699981689453125,
+      "I am really interested in this position and I will be available to work from the 25th June.",
+      [
+        56.699981689453125,
+        249.1346893310547,
+        483.05877685546875,
+        262.1397705078125
+      ]
+    ],
+    [
+      279.41961669921875,
+      56.699981689453125,
+      "Please find enclosed my curriculum vitae and names of",
+      [
+        56.699981689453125,
+        279.41961669921875,
+        329.6520080566406,
+        291.41961669921875
+      ]
+    ],
+    [
+      294.05963134765625,
+      56.699981689453125,
+      "my referees. I would appreciate an opportunity to",
+      [
+        56.699981689453125,
+        294.05963134765625,
+        305.788818359375,
+        306.05963134765625
+      ]
+    ],
+    [
+      308.69964599609375,
+      56.699981689453125,
+      "interview for this position.",
+      [
+        56.699981689453125,
+        308.69964599609375,
+        190.70156860351562,
+        320.69964599609375
+      ]
+    ],
+    [
+      338.0396728515625,
+      56.699981689453125,
+      "Yours faithfully",
+      [
+        56.699981689453125,
+        338.0396728515625,
+        132.80877685546875,
+        350.0396728515625
+      ]
+    ],
+    [
+      367.3197021484375,
+      56.699981689453125,
+      "John Smith",
+      [
+        56.699981689453125,
+        367.3197021484375,
+        113.02796936035156,
+        379.3197021484375
+      ]
+    ]
+  ],
+  "letter": "Re: Position of Part‐time Retail Assistant\n\nDear Sir/Madam\n\nI am a 6th year LCVP student at XXXX Community School. I would like to apply for the position of part‐time retail assistant as advertised.\n\nI am really interested in this position and I will be available to work from the 25th June.\n\nPlease find enclosed my curriculum vitae and names of my referees. I would appreciate an opportunity to interview for this position.\n\nYours faithfully\n\nJohn Smith",
+  "criteria": [
+    "Own address",
+    "Business address",
+    "Date",
+    "Subject line",
+    "Opening",
+    "Introduction/reason",
+    "Closing",
+    "CV/references"
+  ],
+  "originalImageViewed": "2022-deferred-independent/original-pages/scheme-10.png",
+  "scope": "All seven visible model paragraphs and eight printed one-mark criteria; no invented sender/address/date inserted."
+}

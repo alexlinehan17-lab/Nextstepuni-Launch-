@@ -1,0 +1,36 @@
+{
+  "recordedAt": "2026-11-19T19:28:59.835248+00:00",
+  "status": "Review-only split applied; no production writes",
+  "baselineSha256": "ec2f9b38d5d36e1b10d8af4fda05c335ecca69876ead3f3c5281f396ba673e03",
+  "payloadSha256": "eca25ef5bba944bf9faae54ae70443211c88db324a78a61dbc154c2ad67c1cde",
+  "decisionPath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/third-reader-decision.json",
+  "decisionSha256": "ec8fae088bedbc0e7db2d6036ea790cc17ea89ac9975c62a85279bff580ccbf0",
+  "cards": 48,
+  "sourceParts": 44,
+  "offeredMarks": 230,
+  "examMaximum": 130,
+  "unchangedOriginalCards": 46,
+  "originalIdentityRetained": "lcvp-2022-cl-deferred-c6c",
+  "newIdentity": "lcvp-2022-cl-deferred-c6c-2",
+  "sourceSelection": {
+    "fullPrompt": "State four sources of information used to investigate the position. Outline how each source was relevant.",
+    "selectedPrompts": [
+      "State four sources of information used to investigate the position.",
+      "Outline how each source was relevant."
+    ],
+    "paperPages": [
+      34
+    ],
+    "schemePages": [
+      16,
+      17
+    ]
+  },
+  "changes": "C6(c) becomes two four-mark asks; the scoped missing-relevance notice appears only on the second. Full original question and all six source models remain.",
+  "remaining": [
+    "Independent confirmation of the applied split",
+    "Final filings and provenance integration",
+    "Application/source/Atlas checks",
+    "Fresh archive recheck and official recording search"
+  ]
+}
