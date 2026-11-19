@@ -95,20 +95,24 @@ describe('Japanese 2010 Ordinary original-source review', () => {
     expect(weather.group.options).toEqual(['Play baseball with his friends', 'Go to the beach']);
   });
 
-  it('keeps all food alternatives and partial directions in one confidence-only task', () => {
+  it('prices the food menu as printed: two answers, 2 each, the generic chicken, fish and salad half', () => {
+    // Converted from a confidence hold on 19 Nov 2026 (CARD-STANDARD section 5).
     const found = point('2-3-iii');
     expect(found.totalMarks).toBe(4);
-    expect(found.tariffModel).toEqual({ kind: 'questionTotal' });
-    expect(found.rows.map(row => row.verbatim)).toEqual(['Steak', 'Teriyaki Chicken', 'Raw fish', 'Potato fries', 'Ceaser salad', '(chicken, fish, salad;  half marks)']);
-    for (const row of found.rows) {
-      expect(row.marks).toBeNull();
-      expect(row.contextNote).toContain('marks are not calculated');
-      expect(row.contextNote).toContain('Half marks if answered in the inappropriate language');
-    }
+    expect(found.tariffModel).toEqual({ kind: 'fixed' });
+    expect(found.rows).toHaveLength(1);
+    const [menu] = found.rows;
+    expect(menu.group?.options).toEqual(['Steak', 'Teriyaki Chicken', 'Raw fish', 'Potato fries', 'Ceaser salad', 'chicken', 'fish', 'salad']);
+    expect(menu.group?.optionMarks).toEqual([2, 2, 2, 2, 2, 1, 1, 1]);
+    expect(menu.contextNote).toContain('(chicken, fish, salad;  half marks)');
+    expect(menu.contextNote).toContain('Half marks if answered in the inappropriate language');
+    // No published rule combines a half-mark answer with the language reduction.
     expect(found.answerLanguageRule).toBeUndefined();
-    expect(marksClaimed(found, Object.fromEntries(found.rows.map(row => [row.id, 'yes'])))).toBe(0);
+    expect(marksClaimed(found, {}, { [menu.id ?? 'r-1']: [0, 1] })).toBe(4);
+    expect(marksClaimed(found, {}, { [menu.id ?? 'r-1']: [0, 5] })).toBe(3);
+    expect(marksClaimed(found, {}, { [menu.id ?? 'r-1']: [5, 6] })).toBe(2);
     const original = review.cards.find(card => card.id === found.id)!;
-    for (const patch of [{ tariffModel: { kind: 'fixed' } }, { rows: original.rows!.slice(1) },
+    for (const patch of [{ tariffModel: { kind: 'questionTotal' } }, { rows: [] },
       { answerLanguageRule: { otherLanguageMultiplier: 0.5, sourceText: 'half', schemePages: [6] } },
       { sourceEvidence: { ...original.sourceEvidence, schemePages: [7] } }]) {
       expect(() => assertJapanese2010OrdinaryRules({ ...original, ...patch }, review)).toThrow();
