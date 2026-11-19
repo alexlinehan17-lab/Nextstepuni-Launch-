@@ -63,3 +63,17 @@ export function buildVaultLink(subjectId: string, subtopicId: string, origin?: s
   const base = `${origin ?? window.location.origin}${pathname ?? window.location.pathname}`;
   return `${base}?${p.toString()}`;
 }
+
+/** The question a card's Atlas link names (atlasModel.atlasLinkForCard): `year`, `level` and `q` beside the topic.
+ *  Read with the topic link, so the feed opens on that question's year and level. */
+export function initialVaultFocus(): { year?: number; level?: string; n?: string } | null {
+  const year = Number(getBootParam('year'));
+  const level = getBootParam('level');
+  const n = getBootParam('q');
+  if (!year && !level) return null;
+  return {
+    ...(Number.isInteger(year) && year >= 1990 && year <= 2100 ? { year } : {}),
+    ...(level && ['higher', 'ordinary', 'foundation', 'common'].includes(level) ? { level } : {}),
+    ...(n ? { n } : {}),
+  };
+}

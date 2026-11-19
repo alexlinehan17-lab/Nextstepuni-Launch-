@@ -453,19 +453,19 @@
     "refsHash": "55377fc06aab0b52"
   },
   "italian": {
-    "cards": 350,
-    "contentHash": "7df0d826a57f097d",
-    "coveragePct": 100.0,
-    "covered": 380,
-    "excluded": 325,
-    "leaves": 705,
-    "open": 0,
+    "cards": 786,
+    "contentHash": "51b374e6b4c17a47",
+    "coveragePct": 37.3,
+    "covered": 846,
+    "excluded": 0,
+    "leaves": 2270,
+    "open": 1424,
     "orphans": 0,
     "papers": {
-      "count": 20,
-      "hash": "b817ee80bd176c86"
+      "count": 66,
+      "hash": "4f7a342aa9e434bd"
     },
-    "refsHash": "7bc73bbdfb897f41"
+    "refsHash": "b0fec6b3ce76d4be"
   },
   "japanese": {
     "cards": 1941,
@@ -723,19 +723,19 @@
     "refsHash": "8dc6e8622a1ca48e"
   },
   "russian": {
-    "cards": 1372,
-    "contentHash": "644185115d27074a",
-    "coveragePct": 98.3,
-    "covered": 1414,
-    "excluded": 26,
-    "leaves": 1465,
-    "open": 25,
+    "cards": 1485,
+    "contentHash": "4f30f3c1c5adae72",
+    "coveragePct": 100.0,
+    "covered": 1489,
+    "excluded": 0,
+    "leaves": 1489,
+    "open": 0,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "ff06e1bdb6b5283e"
     },
-    "refsHash": "9391f1468955b756"
+    "refsHash": "922dcd4bb5770390"
   },
   "slovakian": {
     "cards": 140,

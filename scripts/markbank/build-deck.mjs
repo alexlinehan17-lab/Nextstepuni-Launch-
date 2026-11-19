@@ -763,7 +763,7 @@ function historyEssayFault(c, scheme) {
 // tasks are marked on one Content (C) / Expression (E) grid, the same card.
 // Portuguese joins the same way (languages-q3, 19 Nov 2026): its Section B
 // tasks are marked on a Content and Communication / Language grid.
-const GRID_SUBJECTS = new Set(['spanish', 'german', 'music', 'polish', 'portuguese']);
+const GRID_SUBJECTS = new Set(['spanish', 'german', 'music', 'polish', 'italian', 'portuguese']);
 /** Music is sat in separate booklets; a card's section names the booklet it is
  *  printed in, by the Paper Trail index's own label. */
 const MUSIC_BOOKLET = { L: 'Listening', A: 'Composing', B: 'Composing', E: 'Elective' };
@@ -784,7 +784,7 @@ const bandNameTraces = (scheme, label) => {
 };
 function spanishGridFault(c, scheme, schemeCells = '') {
   const r = c.rubric;
-  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German, Music, Polish or Portuguese marking grid';
+  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German, Music, Polish, Italian or Portuguese marking grid';
   if (r.allocation || r.answerGuide) return 'a marking grid carries no answer rows';
   const criteria = r.criteria ?? [];
   if (!criteria.length || new Set(criteria.map(k => k.id)).size !== criteria.length) return 'no criteria, or two with one id';
@@ -820,12 +820,16 @@ function spanishGridFault(c, scheme, schemeCells = '') {
   for (const k of criteria) {
     const lower = k.lowerScale;
     if (!lower) continue;
-    if (SUBJECT_ID !== 'german') return `${k.label} carries a lower scale, which only German prints`;
-    if (!(lower.maxMarks > 0 && lower.maxMarks < k.maxMarks)) return `${k.label}'s lower scale is not below its own ${k.maxMarks}`;
+    // Any grid subject may carry the cap its scheme prints (German "Lower E";
+    // Italian "language will be marked out of 5", or at Ordinary "award no marks
+    // for language", a cap of 0). Bands are checked where the scheme prints
+    // them for the lower scale; a cap printed with no bands of its own carries
+    // none (Italian), and is placed on every mark from 0 to the cap.
+    if (!(lower.maxMarks >= 0 && lower.maxMarks < k.maxMarks)) return `${k.label}'s lower scale is not below its own ${k.maxMarks}`;
     const allowed = lower.permittedMarks ?? [];
     if (allowed.length !== lower.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label}'s lower scale is not placed on every mark from 0 to ${lower.maxMarks}`;
     const marks = (lower.bands ?? []).flatMap(b => b.marks).sort((a, b) => a - b);
-    if (marks.length !== allowed.length || marks.some((m, i) => m !== i)) return `${k.label}'s lower bands do not cover 0 to ${lower.maxMarks} once`;
+    if ((lower.bands ?? []).length && (marks.length !== allowed.length || marks.some((m, i) => m !== i))) return `${k.label}'s lower bands do not cover 0 to ${lower.maxMarks} once`;
     if (!lower.contentCriteria?.length || lower.contentCriteria.some(id => id === k.id || !criteria.some(other => other.id === id && !other.lowerScale))) {
       return `${k.label}'s lower scale counts a criterion the card does not have`;
     }
