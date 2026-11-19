@@ -87,8 +87,12 @@ UNIT_A = re.compile(r'^SECTION\s+A\s+READING\s+COMPREHENSION\b', re.I)
 # Higher's Section B is one of three routes a candidate chooses between, and
 # the scheme heads each: the unseen passage, the prescribed novel (itself A or
 # B) and the essay. Ordinary's is five publicity pieces.
-UNIT_B_HL = re.compile(r'^SECTION\s+B\s+Unseen\s+Literary\s+Passage\b', re.I)
-UNIT_B2_HL = re.compile(r'^B\s*2\.?\s*Literary\s+passage\s+from\s+[Pp]rescribed\s+novel\b', re.I)
+# 2026 heads the section "SECTION B Literary Passage (60 marks)" and its routes
+# "B 1. Unseen passage" and "B 2. Prescribed novel".
+UNIT_B_HL = re.compile(r'^SECTION\s+B\s+Unseen\s+Literary\s+Passage\b'
+                       r'|^B\s*1\.?\s*Unseen\s+passage\b', re.I)
+UNIT_B2_HL = re.compile(r'^B\s*2\.?\s*Literary\s+passage\s+from\s+[Pp]rescribed\s+novel\b'
+                        r'|^B\s*2\.?\s*Prescribed\s+novel\b', re.I)
 UNIT_B3_HL = re.compile(r'^B\s*3\.?\s*Essay\s+on\s+prescribed\s+text\b', re.I)
 UNIT_B_OL = re.compile(r'^SECTION\s+B\s*:?\s*PUBLICITY\b', re.I)
 UNIT_C = re.compile(r'^Section\s+C\s+WRITING\b', re.I)
@@ -107,7 +111,9 @@ NOVEL_ROUTE = re.compile(r'^([AB])\s*[.)]\s*(\S.*)$')
 # is three dialogues, which the scheme heads by name.
 LISTEN_A = re.compile(r'^\(?\s*(?:Section\s+A?\s*)?\(?\s*(\d{1,3})\s*marks?\s*\(?\s*8\s*[xX×]\s*(\d)', re.I)
 LISTEN_SECTION_B = re.compile(r'^SECTION\s+B\b\s*(\d{1,3})?\s*marks?', re.I)
-DIALOGUE = re.compile(r'^Dialogue\s+(\d)\b\s*(.*)$', re.I)
+# "Dialogue 3 Interview with …", or in Italian "Dialogo 3 Intervista a …"
+# (2018 Higher).
+DIALOGUE = re.compile(r'^Dialog(?:ue|o)\s+(\d)\b\s*(.*)$', re.I)
 
 # ------------------------------------------------------------- the block ----
 # A printed marker opening an ask. "1.", "1. (a)", "(b)", "a)" — the last of
@@ -200,6 +206,17 @@ SPLIT_ONLY = re.compile(r'^\(?\s*(\d{1,2}(?:\s*\+\s*\d{1,2})+)\s*\)?\s*$')
 # (0,1,3,5)*" is the scale it may score, not an answer.
 BAND_LINE = re.compile(r'^\d{1,2}\s+points?\b|^\(\s*0\s*,', re.I)
 
+# One priced line the SEC wrapped onto a second line that opens with a
+# capital, which no wrap rule may join without joining separate answers
+# everywhere: the two printed lines, joined exactly here.
+WRAPS = {
+    # 2018 Ordinary B Question 4, ask 3 prices two prizes on two lines, "2nd
+    # prize … 3 marks" and "3rd prize A book (1m) written your favourite" /
+    # "Writer/ of your choice (1m) 2 marks"; the question's 10 marks need both.
+    (2018, 'ol'): [('3rd prize A book (1m) written your favourite\nWriter/ of your choice (1m) 2 marks',
+                    '3rd prize A book (1m) written your favourite Writer/ of your choice (1m) 2 marks')],
+}
+
 # SEC misprints, keyed by the sitting, never repaired by a heuristic.
 MISPRINTS = {
     # 2022 Ordinary prices the first ask of its second publicity piece
@@ -210,6 +227,19 @@ MISPRINTS = {
     # beside a bracket as a tariff, which would find one in every answer that
     # ends in a date.
     (2022, 'ol'): [('1. Three of: 6 (2+2+2)', '1. Three of: 6 marks (2+2+2)')],
+    # 2026 Higher prices Dialogue 3 Q7 "Any two of: 4 (2+2) marks", the word
+    # after the split instead of before it; the dialogue's other seven asks
+    # and its printed total (32) say the 4 is marks.
+    (2026, 'hl'): [('7. Any two of: 4 (2+2) marks', '7. Any two of: 4 marks (2+2)')],
+    # 2018 Ordinary prints Question 1's second ask "2 Any two of: 4 marks
+    # (2+2)" with no stop after its number; the paper sets six asks and the
+    # question's printed 40 marks need this ask's 4.
+    (2018, 'ol'): [('2 Any two of: 4 marks (2+2)', '2. Any two of: 4 marks (2+2)')],
+    # 2017 Ordinary prices Dialogue 3 Q4 "4 mharc" (the Irish word) and Q7
+    # "6 (4+2)" with no word at all; the dialogue's other six asks and its
+    # printed 36 marks say both are marks.
+    (2017, 'ol'): [('4. Two required 4 mharc (3+1)', '4. Two required 4 marks (3+1)'),
+                   ('7. Two required 6 (4+2)', '7. Two required 6 marks (4+2)')],
 }
 
 
@@ -301,7 +331,7 @@ class ItScheme:
         self.path = os.path.join(schemes_dir(subject), f'{year}-{level}.md')
         with open(self.path, encoding='utf-8') as fh:
             raw = fh.read()
-        for old, new in MISPRINTS.get((year, level), ()):
+        for old, new in list(MISPRINTS.get((year, level), ())) + list(WRAPS.get((year, level), ())):
             assert old in raw, f'{year} {level}: misprint {old!r} is not in the scheme'
             raw = raw.replace(old, new)
         self.lines = [l.rstrip() for l in raw.split('\n')]
@@ -480,7 +510,12 @@ class ItScheme:
                 heads.append((i, item, m.group(1), m.group(2)))
                 continue
             m = MATCH_MARK.match(s)
-            if m and re.fullmatch(r'\d{1,2}', m.group(2).strip()):
+            if m and (re.fullmatch(r'\d{1,2}', m.group(2).strip())
+                      # 2018 Ordinary prints the point's words after its
+                      # number ("a) 3 Do not share your password"); only in a
+                      # section whose head prices equal items ("(8x2 marks)").
+                      or (re.match(r'\d{1,2}\s+\S', m.group(2).strip()) and section_split
+                          and len(section_split) > 1 and len(set(section_split)) == 1)):
                 # The matching task: "a) 7" — the marker is a bare letter and
                 # the answer is the number of the point it refers to.
                 heads.append((i, None, m.group(1), m.group(2)))
