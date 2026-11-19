@@ -2021,4 +2021,1617 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-1-a", topicId: "portuguese-2-3", conceptId: "onde-ana-cresceu-dois",
+    section: "A", questionRef: "2026 OL Section A Q1(a)",
+    stem: "Questão 1 – Leia este texto e responda às perguntas.",
+    questionText: "Descreva onde a Ana cresceu. Dê dois detalhes. (parágrafo 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Em/No Timor-Leste","Num país no Sudeste da Ásia","Na aldeia de Maubara"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 1 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-1-b", topicId: "portuguese-2-3", conceptId: "projeto-ana-lucia-dois",
+    section: "A", questionRef: "2026 OL Section A Q1(b)",
+    stem: "Questão 1 – Leia este texto e responda às perguntas.",
+    questionText: "Descreva o projeto da Ana e da Lúcia. Dê dois detalhes. (parágrafo 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Projeto comunitário","Plantar árvores","Mudar as práticas da agricultura"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 1 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-1-c", topicId: "portuguese-2-3", conceptId: "alguns-habitantes-aldeia-resistiram-ideias-ana",
+    section: "A", questionRef: "2026 OL Section A Q1(c)",
+    stem: "Questão 1 – Leia este texto e responda às perguntas.",
+    questionText: "Por que razão alguns habitantes da aldeia resistiram às ideias de Ana e Lúcia? Dê dois detalhes. (parágrafo 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["As pessoas estavam habituadas às práticas tradicionais de agricultura.","Os moradores tinham medo que as mudanças pudessem alterar o modo de vida que as suas famílias tinham seguido por gerações."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 1 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-1-d", topicId: "portuguese-2-3", conceptId: "foram-duas-acoes-projeto-ana-lucia",
+    section: "A", questionRef: "2026 OL Section A Q1(d)",
+    stem: "Questão 1 – Leia este texto e responda às perguntas.",
+    questionText: "Quais foram as duas ações do projeto de Ana e Lúcia? Explique. (parágrafo 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Organizaram hortas comunitárias","Utilização da água da chuva"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 1 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-1-e", topicId: "portuguese-2-3", conceptId: "palavras-sentido-contrario",
+    section: "A", questionRef: "2026 OL Section A Q1(e)",
+    stem: "Questão 1 – Leia este texto e responda às perguntas.",
+    questionText: "Encontre no texto palavras com sentido contrário.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Jovem", marks: 1, contextNote: "For “Velha (Parágrafo 1)”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Muitas", marks: 1, contextNote: "For “Poucas (Parágrafo 3)”" },
+    { id: "r-3", kind: "point", verbatim: "Perderemos", marks: 1, contextNote: "For “Ganharemos (Parágrafo 4)”" },
+    { id: "r-4", kind: "point", verbatim: "Juntas", marks: 1, contextNote: "For “Separadas (Parágrafo 6)”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 1 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-1-f", topicId: "portuguese-2-3", conceptId: "ana-grandad-happen-people-keep-destroying",
+    section: "A", questionRef: "2026 OL Section A Q1(f)",
+    stem: "Questão 1 – Leia este texto e responda às perguntas.",
+    questionText: "According to Ana’s grandad, what will happen if people keep destroying the forest? (paragraph 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["They will lose the capacity to produce food for their families","they will lose their identity."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 1 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-1-g", topicId: "portuguese-2-3", conceptId: "festival-vozes-terra-paragraph",
+    section: "A", questionRef: "2026 OL Section A Q1(g)",
+    stem: "Questão 1 – Leia este texto e responda às perguntas.",
+    questionText: "Describe Festival das Vozes da Terra. Give three details. (paragraph 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["It’s an annual event","It’s for the community","They share new techniques and strengthen the community bonds","The construction of the stage and stalls to sell local products","The elders share stories","The children perform the Tebe and Likurai, traditional Timorese dances"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 1 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-1-h", topicId: "portuguese-2-3", conceptId: "story-maubara-teach-paragraph",
+    section: "A", questionRef: "2026 OL Section A Q1(h)",
+    stem: "Questão 1 – Leia este texto e responda às perguntas.",
+    questionText: "What does the story of Maubara teach us? Give two details. (paragraph 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":4,"options":["How tradition and innovation can go hand in hand.","The bond between generations grew stronger.","The village became a model of sustainability.","It is possible to build a better future when we respect local traditions."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 1 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-2-a", topicId: "portuguese-2-3", conceptId: "linha-5652-especial",
+    section: "A", questionRef: "2026 OL Section A Q2(a)",
+    stem: "Questão 2 – Leia este texto e responda às perguntas.",
+    questionText: "Por que razão a linha 5652 é especial? (parágrafo 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prices “Deixou de ser só mais um trajeto no mapa e ganhou vida nova.” at 2 marks, as an answer of its own.", group: {"claimMax":1,"perOption":4,"options":["Um grupo de passageiros de ônibus formou uma verdadeira família.","Deixou de ser só mais um trajeto no mapa e ganhou vida nova."],"optionMarks":[4,2],"optionOf":[null,null]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 2 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-2-b", topicId: "portuguese-2-3", conceptId: "frequencia-cafe-manha-coletivo-organizado",
+    section: "A", questionRef: "2026 OL Section A Q2(b)",
+    stem: "Questão 2 – Leia este texto e responda às perguntas.",
+    questionText: "Com que frequência o café da manhã coletivo é organizado? (parágrafo 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pelo menos uma vez por semana.", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 2 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-2-c", topicId: "portuguese-2-3", conceptId: "washington-luiz-posta-eventos-nas-redes",
+    section: "A", questionRef: "2026 OL Section A Q2(c)",
+    stem: "Questão 2 – Leia este texto e responda às perguntas.",
+    questionText: "Por que razões Washington Luiz posta os eventos nas redes sociais? Dê dois detalhes. (parágrafo 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["Espalhar a ideia por outras linhas e bairros de São Paulo.","Inspirar a que as pessoas se ajudem, tenham compaixão umas pelas outras."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 2 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-2-d", topicId: "portuguese-2-3", conceptId: "festas-aconteceram-onibus-tres-exemplos",
+    section: "A", questionRef: "2026 OL Section A Q2(d)",
+    stem: "Questão 2 – Leia este texto e responda às perguntas.",
+    questionText: "Que festas aconteceram no ônibus? Dê três exemplos. (parágrafo 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":1,"options":["Aniversários","Dia das Mulheres","chá de bebê."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 2 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-2-e", topicId: "portuguese-2-3", conceptId: "graciele-medrado-diz-experiencia-trajeto-onibus",
+    section: "A", questionRef: "2026 OL Section A Q2(e)",
+    stem: "Questão 2 – Leia este texto e responda às perguntas.",
+    questionText: "Graciele Medrado diz que a experiência no trajeto do ônibus é positiva. Dê três detalhes. (parágrafo 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Os passageiros viraram uma grande família, conversam, falam dos problemas, escutam um ao outro.", marks: 6, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “6 marks: 3 x 2 marks (any 3)”.", permittedMarks: [0,2,4,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 2 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-2-f", topicId: "portuguese-2-3", conceptId: "palavras-mesmo-significado",
+    section: "A", questionRef: "2026 OL Section A Q2(f)",
+    stem: "Questão 2 – Leia este texto e responda às perguntas.",
+    questionText: "Encontre palavras no texto com o mesmo significado.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "passageiros", marks: 1, contextNote: "For “Viajantes (parágrafo 1)”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "improvisada", marks: 1, contextNote: "For “Sem planejamento (parágrafo 2)”" },
+    { id: "r-3", kind: "point", verbatim: "rotina", marks: 1, contextNote: "For “Dia a dia (parágrafo 3)”" },
+    { id: "r-4", kind: "point", verbatim: "escuta", marks: 1, contextNote: "For “Ouve (parágrafo 5)”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 2 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-2-g", topicId: "portuguese-2-3", conceptId: "simple-rule-5652-bus-paragraph",
+    section: "A", questionRef: "2026 OL Section A Q2(g)",
+    stem: "Questão 2 – Leia este texto e responda às perguntas.",
+    questionText: "Describe the simple rule on the 5652 bus. (paragraph 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Even if you leave home without breakfast, nobody goes hungry / starves on the bus.", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 2 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-2-h", topicId: "portuguese-2-3", conceptId: "video-went-viral-instagram-comments-joana",
+    section: "A", questionRef: "2026 OL Section A Q2(h)",
+    stem: "Questão 2 – Leia este texto e responda às perguntas.",
+    questionText: "The video went viral on Instagram. What comments did Joana make? Give two details. (paragraph 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["Joana said they organised her a birthday party","She turned 16","She was the only student taking the bus at five in the morning to go to school"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 2 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-2-i", topicId: "portuguese-2-3", conceptId: "cafe-onibus-make-bus-journey-better",
+    section: "A", questionRef: "2026 OL Section A Q2(i)",
+    stem: "Questão 2 – Leia este texto e responda às perguntas.",
+    questionText: "Why does Café do Ônibus make the bus journey better? (paragraph 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The passengers can find a friend, see a smile or have a piece of cake.", marks: 6, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “6 marks: 2 x 3 marks (any 2)”.", permittedMarks: [0,3,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 2 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-3-a", topicId: "portuguese-2-3", conceptId: "oferece-escola-anuncio-tres-anuncio",
+    section: "A", questionRef: "2026 OL Section A Q3(a)",
+    stem: "Questão 3 – Leia este texto e responda às perguntas.",
+    questionText: "O que oferece a escola do anúncio 1? Dê três detalhes. (anúncio 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["Formação pré-universitária","Oportunidades","Bolsas","Formações à medida do estudante","Cursos de orientação profissional / técnicos"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 3 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-3-b", topicId: "portuguese-2-3", conceptId: "areas-escola-oferece-modulos-dois-anuncio",
+    section: "A", questionRef: "2026 OL Section A Q3(b)",
+    stem: "Questão 3 – Leia este texto e responda às perguntas.",
+    questionText: "Em que áreas a escola oferece módulos? Dê dois detalhes. (anúncio 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":4,"options":["Aconselhamento vocacional","Apoio psicológico","Informação sobre empréstimos para estudantes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 3 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-3-c", topicId: "portuguese-2-3", conceptId: "metodo-ensino-desta-escola-conducao-anuncio",
+    section: "A", questionRef: "2026 OL Section A Q3(c)",
+    stem: "Questão 3 – Leia este texto e responda às perguntas.",
+    questionText: "Como é o método de ensino desta escola de condução? (anúncio 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["Prático","interativo."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 3 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-3-d", topicId: "portuguese-2-3", conceptId: "tipo-aulas-escola-oferece-anuncio",
+    section: "A", questionRef: "2026 OL Section A Q3(d)",
+    stem: "Questão 3 – Leia este texto e responda às perguntas.",
+    questionText: "Que tipo de aulas a escola oferece? Dê detalhes. (anúncio 2)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Aulas teóricas presenciais ou online", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Aulas práticas adaptadas ao horário do aluno", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 3 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-3-e", topicId: "portuguese-2-3", conceptId: "classes-scheduled-advertisement",
+    section: "A", questionRef: "2026 OL Section A Q3(e)",
+    stem: "Questão 3 – Leia este texto e responda às perguntas.",
+    questionText: "For when are the classes scheduled? Give details. (advertisement 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Beginning of next month, Saturday in the morning from 10 to 13h.", marks: 6, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “6 marks: 6 x 1 mark”.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 3 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-a-3-f", topicId: "portuguese-2-3", conceptId: "makes-driving-school-excellent-advertisement",
+    section: "A", questionRef: "2026 OL Section A Q3(f)",
+    stem: "Questão 3 – Leia este texto e responda às perguntas.",
+    questionText: "What makes the driving school excellent? Give two details. (advertisement 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":4,"options":["Driving simulator","Practical lessons","Adapted to your availability","Including nights and weekends"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 3 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-la-1", topicId: "portuguese-2-5", conceptId: "complete-frase-voo-problema-escadas-aviao",
+    section: "LA", questionRef: "2026 OL Section LA Q1",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Complete a frase: O voo está ____________ por que há um problema ___________________ com as escadas do avião.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "atrasado", marks: 1, contextNote: "For “O voo está atrasado porque há um problema técnico com as escadas do avião.”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "técnico", marks: 1, contextNote: "For “O voo está atrasado porque há um problema técnico com as escadas do avião.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Diálogo — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-la-2", topicId: "portuguese-2-5", conceptId: "horas-novo-horario-embarque",
+    section: "LA", questionRef: "2026 OL Section LA Q2",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "A que horas é o novo horário de embarque?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Duas e quarenta e cinco / 2:45.", marks: 3, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “3 marks: 3 x 1 mark”.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Diálogo — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-la-3", topicId: "portuguese-2-5", conceptId: "bruno-vai-viajar",
+    section: "LA", questionRef: "2026 OL Section LA Q3",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Por que razão o Bruno vai viajar?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Jantar de família","aniversário de 100 anos","aniversário da avó","festa surpresa para a avó."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Diálogo — Question 3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-la-4", topicId: "portuguese-2-5", conceptId: "quem-vai-estar-porto-complete-tabela",
+    section: "LA", questionRef: "2026 OL Section LA Q4",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Quem vai estar no Porto? Complete a tabela: Convidados De onde Irmão da avó Moçambique Guiné‐Bissau",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Brasil", marks: 1, contextNote: "For “Irmão da avó”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Primos", marks: 1, contextNote: "For “Moçambique”" },
+    { id: "r-3", kind: "point", verbatim: "Tios", marks: 1, contextNote: "For “Guiné-Bissau”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Diálogo — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-la-5", topicId: "portuguese-2-5", conceptId: "bruno-pode-confirmar-horario-voo-tres",
+    section: "LA", questionRef: "2026 OL Section LA Q5",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Como o Bruno pode confirmar o horário do voo? Dê três detalhes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["Confirmar no painel/ ecrã/ tela de informações","balcão","aplicação/ aplicativo da companhia aérea."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Diálogo — Question 5",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-la-6", topicId: "portuguese-2-5", conceptId: "catarina-explica-bruno-onde-encher-garrafa",
+    section: "LA", questionRef: "2026 OL Section LA Q6",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "A Catarina explica ao Bruno onde encher a garrafa de água. Complete abaixo as três indicações. Segues sempre em _________________ neste corredor da _________________. Viras na ____________________ à ______________________. Mesmo ao _______________ da ___________________ de embarque número 7.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "frente", marks: 1, contextNote: "For “Segues sempre em frente neste corredor da livraria.”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "livraria", marks: 1, contextNote: "For “Segues sempre em frente neste corredor da livraria.”" },
+    { id: "r-3", kind: "point", verbatim: "segunda", marks: 1, contextNote: "For “Viras na segunda à esquerda.”" },
+    { id: "r-4", kind: "point", verbatim: "esquerda", marks: 1, contextNote: "For “Viras na segunda à esquerda.”" },
+    { id: "r-5", kind: "point", verbatim: "lado", marks: 1, contextNote: "For “Mesmo ao lado da porta de embarque número 7.”" },
+    { id: "r-6", kind: "point", verbatim: "porta", marks: 1, contextNote: "For “Mesmo ao lado da porta de embarque número 7.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Diálogo — Question 6",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-lb-1", topicId: "portuguese-2-5", conceptId: "quando-acontece-evento",
+    section: "LB", questionRef: "2026 OL Section LB Q1",
+    stem: "Vai ouvir um anúncio. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Quando acontece o evento? De ___________________ a ____________________ de _________________ .",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "7", marks: 1, contextNote: "For “De 7 a 23 de março.”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "23", marks: 1, contextNote: "For “De 7 a 23 de março.”" },
+    { id: "r-3", kind: "point", verbatim: "março", marks: 1, contextNote: "For “De 7 a 23 de março.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B Anúncio — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-lb-2", topicId: "portuguese-2-5", conceptId: "verdadeiro-falso-assinale-resposta-correta-evento",
+    section: "LB", questionRef: "2026 OL Section LB Q2",
+    stem: "Vai ouvir um anúncio. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Verdadeiro ou Falso? Assinale a resposta correta com um (✓). O evento inclui muitas atrações irresistíveis. Verdadeiro Falso Esculturas de chocolate Cursos de técnicas para trabalhar o chocolate Cursos para guia de turismo Competição de fotografia Animação de rua Mural temático Música ao vivo",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Verdadeiro", marks: 1, contextNote: "For “Esculturas em chocolate”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Verdadeiro", marks: 1, contextNote: "For “Cursos de técnicas para trabalhar o chocolate”" },
+    { id: "r-3", kind: "point", verbatim: "Falso", marks: 1, contextNote: "For “Cursos para guia de turismo”" },
+    { id: "r-4", kind: "point", verbatim: "Falso", marks: 1, contextNote: "For “Competição de fotografia”" },
+    { id: "r-5", kind: "point", verbatim: "Verdadeiro", marks: 1, contextNote: "For “Animação de rua”" },
+    { id: "r-6", kind: "point", verbatim: "Falso", marks: 1, contextNote: "For “Mural temático”" },
+    { id: "r-7", kind: "point", verbatim: "Verdadeiro", marks: 1, contextNote: "For “Música ao vivo”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B Anúncio — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-lb-3", topicId: "portuguese-2-5", conceptId: "tres-tipos-alojamento-disponiveis-evento",
+    section: "LB", questionRef: "2026 OL Section LB Q3",
+    stem: "Vai ouvir um anúncio. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Indique três tipos de alojamento disponíveis para o evento.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["Hotéis","pousadas","turismo rural","casas de campo."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B Anúncio — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-lb-4", topicId: "portuguese-2-5", conceptId: "duas-formas-chegar-evento",
+    section: "LB", questionRef: "2026 OL Section LB Q4",
+    stem: "Vai ouvir um anúncio. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Quais são as duas formas de chegar ao evento?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["De carro","transporte público","rede expresso."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B Anúncio — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-lb-5", topicId: "portuguese-2-5", conceptId: "duas-informacoes-uteis-disponiveis-pagina-oficial",
+    section: "LB", questionRef: "2026 OL Section LB Q5",
+    stem: "Vai ouvir um anúncio. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Indique duas informações úteis disponíveis na página oficial de Óbidos.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Horários","preços (de bilhetes)","concursos (temáticos)."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B Anúncio — Question 5",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-lc-1", topicId: "portuguese-2-5", conceptId: "complete-sentence-correct-letter-teresa-start",
+    section: "LC", questionRef: "2026 OL Section LC Q1",
+    stem: "You will hear a job interview. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "Complete the sentence with the correct letter (a, b, c or d): Teresa will start studying ___________ in September. (a) business (b) medicine (c) nursing (d) social work",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "C", marks: 2, contextNote: "For “(c) nursing”: The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Entrevista — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-lc-2", topicId: "portuguese-2-5", conceptId: "teresa-look-after-grandparents",
+    section: "LC", questionRef: "2026 OL Section LC Q2",
+    stem: "You will hear a job interview. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "How did Teresa look after her grandparents? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "She helped them with meals and medication, and she spent a lot of time with them.", marks: 6, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “6 marks: 2 x 3 marks (any 2)”.", permittedMarks: [0,3,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Entrevista — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-lc-3", topicId: "portuguese-2-5", conceptId: "jobs-teresa-looking-tick-correct-answers",
+    section: "LC", questionRef: "2026 OL Section LC Q3",
+    stem: "You will hear a job interview. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What jobs is Teresa looking for? Tick (✓) the two correct answers: Childminder Sales assistant Customer service Waitress",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["Sales assistant","Customer Service"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Entrevista — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-lc-4", topicId: "portuguese-2-5", conceptId: "teresa-personality",
+    section: "LC", questionRef: "2026 OL Section LC Q4",
+    stem: "You will hear a job interview. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "Describe Teresa’s personality. Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["Calm","positive (personality)","responsible","honest","patient","good listener","punctual","team player","she treats everybody with dignity/respect."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Entrevista — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-lc-5", topicId: "portuguese-2-5", conceptId: "teresa-availability-after-september",
+    section: "LC", questionRef: "2026 OL Section LC Q5",
+    stem: "You will hear a job interview. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What is Teresa’s availability after September?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tuesdays in the morning and Wednesdays after one o’clock /afternoon.", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “4 marks: 4 x 1 mark”.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Entrevista — Question 5",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-ld-1", topicId: "portuguese-2-5", conceptId: "paulo-correia-talk-podcast",
+    section: "LD", questionRef: "2026 OL Section LD Q1",
+    stem: "You will hear a podcast. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What does Paulo Correia talk about in his podcast? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Humour","comedy shows","premieres of comedy movies."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Podcast — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-ld-2", topicId: "portuguese-2-5", conceptId: "comedians-nationalities-show-tons-comedia",
+    section: "LD", questionRef: "2026 OL Section LD Q2",
+    stem: "You will hear a podcast. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What are the comedians’ nationalities in the show Tons de Comédia?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Angolan","Brazilian","Portuguese."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Podcast — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-ld-3", topicId: "portuguese-2-5", conceptId: "target-audience-show-tons-comedia",
+    section: "LD", questionRef: "2026 OL Section LD Q3",
+    stem: "You will hear a podcast. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What is the target audience of the show Tons de Comédia? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Countries with large migrant communities that speak Portuguese.", marks: 6, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “6 marks: 2 x 3 marks”.", permittedMarks: [0,3,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Podcast — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-ld-4", topicId: "portuguese-2-5", conceptId: "comedians-present-show-dublin",
+    section: "LD", questionRef: "2026 OL Section LD Q4",
+    stem: "You will hear a podcast. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What did the comedians present at the show in Dublin? Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["Funny stories","several characters","different accents."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Podcast — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-ld-5", topicId: "portuguese-2-5", conceptId: "tons-comedia-different-portugal-tick-correct",
+    section: "LD", questionRef: "2026 OL Section LD Q5",
+    stem: "You will hear a podcast. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "Tons de Comédia was different in Portugal. Tick (✓) the two correct answers. The comedians were more relaxed. The show was boring. They invited a new team member. They made new jokes about the tour.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["The comedians were more relaxed.","They made new jokes about the tour."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Podcast — Question 5",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-le-1", topicId: "portuguese-2-5", conceptId: "luana-jonas-meet",
+    section: "LE", questionRef: "2026 OL Section LE Q1",
+    stem: "You will hear a voice message. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What do Luana and Jonas have to do when they meet? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Finish their presentation","create posters","a leaflet","a video."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Troca de Mensagens — Question 1",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-le-2", topicId: "portuguese-2-5", conceptId: "items-jonas-bringing-tick-correct-answers",
+    section: "LE", questionRef: "2026 OL Section LE Q2",
+    stem: "You will hear a voice message. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What items is Jonas bringing? Tick (✓) the two correct answers. Toilet rolls Glass bottles Bottle caps Newspapers",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":1,"options":["Toilet rolls","Bottle caps"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Troca de Mensagens — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-le-3", topicId: "portuguese-2-5", conceptId: "jonas-idea",
+    section: "LE", questionRef: "2026 OL Section LE Q3",
+    stem: "You will hear a voice message. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What is Jonas’s idea?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "To include QR codes on the posters.", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “4 marks: 2 x 2 marks”.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Troca de Mensagens — Question 3",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-le-4", topicId: "portuguese-2-5", conceptId: "luana-suggest",
+    section: "LE", questionRef: "2026 OL Section LE Q4",
+    stem: "You will hear a voice message. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What does Luana suggest?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "To create personalised phone supports as souvenirs to remember the class.", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “4 marks: 2 x 2 marks (any 2)”.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Troca de Mensagens — Question 4",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-le-5-i", topicId: "portuguese-2-5", conceptId: "jonas-wants-people-envelopes-envelopes",
+    section: "LE", questionRef: "2026 OL Section LE Q5(i)",
+    stem: "You will hear a voice message. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "Jonas wants to give people envelopes. What is in the envelopes?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Seeds.", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Troca de Mensagens — Question 5(i)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-le-5-ii", topicId: "portuguese-2-5", conceptId: "jonas-wants-people-envelopes-envelopes-made",
+    section: "LE", questionRef: "2026 OL Section LE Q5(ii)",
+    stem: "You will hear a voice message. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "Jonas wants to give people envelopes. What are the envelopes made of?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Old magazines.", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Troca de Mensagens — Question 5(ii)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-le-6-i", topicId: "portuguese-2-5", conceptId: "group-won-young-scientist-award-prize",
+    section: "LE", questionRef: "2026 OL Section LE Q6(i)",
+    stem: "You will hear a voice message. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "The group won a Young Scientist Award. What prize did they get in the competition?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2nd place/ prize", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Troca de Mensagens — Question 6(i)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
+    id: "por-2026-ol-le-6-ii", topicId: "portuguese-2-5", conceptId: "group-won-young-scientist-award-device",
+    section: "LE", questionRef: "2026 OL Section LE Q6(ii)",
+    stem: "You will hear a voice message. There will be one pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "The group won a Young Scientist Award. What device did they develop?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A portable solar battery.", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “4 marks: 2 x 2 marks”.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Troca de Mensagens — Question 6(ii)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2026 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
 ];
