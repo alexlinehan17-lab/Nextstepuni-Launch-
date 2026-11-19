@@ -136,16 +136,21 @@ describe('Latin 2023 Higher Q2: an unseen translation marked unit by unit', () =
 });
 
 import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
+import FrenchRubricPanel from '../components/MarkBank/FrenchRubricPanel';
+import { frenchMarks, frenchScoreId } from '../components/MarkBank/frenchRubric';
+import type { FrenchRubric } from '../types/markBank';
 
 describe('Music 2025 Higher: the whole sitting on card types that exist', () => {
-  const listening = MUSIC_HIGHER.filter(card => card.section === 'L');
-  it('cards all 42 listening asks, Composing Section A and the elective, and leaves Composing Section B', () => {
+  const sitting = MUSIC_HIGHER.filter(card => card.year === 2025);
+  const listening = sitting.filter(card => card.section === 'L');
+  it('cards all 42 listening asks, Composing Sections A and B and the elective', () => {
     expect(listening).toHaveLength(42);
-    expect(MUSIC_HIGHER.filter(card => card.section === 'A').map(card => card.id).sort())
+    expect(sitting.filter(card => card.section === 'A').map(card => card.id).sort())
       .toEqual(['mus-2025-hl-c-a-q1', 'mus-2025-hl-c-a-q2', 'mus-2025-hl-c-a-q3']);
-    expect(MUSIC_HIGHER.some(card => card.section === 'B')).toBe(false);
-    expect(MUSIC_HIGHER.filter(card => card.section === 'E').map(card => card.questionRef)).toEqual(['2025 HL Elective Q1–Q4(b)']);
-    expect(MUSIC_HIGHER.every(tariffReconciles)).toBe(true);
+    expect(sitting.filter(card => card.section === 'B').map(card => card.id).sort())
+      .toEqual(['mus-2025-hl-c-b-q4', 'mus-2025-hl-c-b-q5', 'mus-2025-hl-c-b-q6']);
+    expect(sitting.filter(card => card.section === 'E').map(card => card.questionRef)).toEqual(['2025 HL Elective Q1–Q4(b)']);
+    expect(sitting.every(tariffReconciles)).toBe(true);
   });
 
   it('plays the SEC\'s own published sound file on every listening card that needs the recording', () => {
@@ -158,13 +163,63 @@ describe('Music 2025 Higher: the whole sitting on card types that exist', () => 
   });
 
   it('places band-marked answers on the scheme\'s own bands, each covering every mark once', () => {
-    const grids = MUSIC_HIGHER.filter(isRubricCard);
-    expect(grids).toHaveLength(9);
+    const grids = sitting.filter(isRubricCard);
+    expect(grids).toHaveLength(12);
     for (const card of grids) {
       if (card.rubric.system !== 'french') throw new Error(card.id);
-      const [criterion] = card.rubric.criteria;
-      const marks = criterion.bands!.flatMap(band => band.marks).sort((a, b) => a - b);
-      expect(marks).toEqual(Array.from({ length: card.totalMarks + 1 }, (_, i) => i));
+      for (const criterion of card.rubric.criteria) {
+        if (criterion.counted) continue;
+        const marks = criterion.bands!.flatMap(band => band.marks).sort((a, b) => a - b);
+        expect(marks).toEqual(Array.from({ length: criterion.maxMarks + 1 }, (_, i) => i));
+      }
+      expect(card.rubric.criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0)).toBe(card.totalMarks);
     }
+  });
+});
+
+describe('Music Composing Section B: bands plus lines counted at the printed rate', () => {
+  type GridCard = SecRubricCard & { rubric: FrenchRubric };
+  const sectionB = MUSIC_HIGHER.filter((card): card is GridCard =>
+    isRubricCard(card) && card.section === 'B' && card.rubric.system === 'french');
+  const q4 = sectionB.find(card => card.id === 'mus-2025-hl-c-b-q4')!;
+  const q5 = sectionB.find(card => card.id === 'mus-2025-hl-c-b-q5')!;
+
+  it('counts each line at the rate the scheme prints, on every count from none to all', () => {
+    const lines = (card: GridCard) => card.rubric.criteria.filter(criterion => criterion.counted)
+      .map(criterion => [criterion.label, criterion.counted!.rate, criterion.counted!.items, criterion.maxMarks]);
+    expect(lines(q4)).toEqual([['0.5 mark per correct bass note under each chord symbol (0.5 X 20)', 0.5, 20, 10]]);
+    expect(lines(q5)).toEqual([
+      ['1 mark for each chord that is part of a good progression in all chord boxes', 1, 22, 22],
+      ['0.5 mark per correct bass note under each correct chord symbol (0.5 x 22)', 0.5, 22, 11],
+    ]);
+    for (const card of sectionB) {
+      for (const criterion of card.rubric.criteria.filter(k => k.counted)) {
+        const { rate, items } = criterion.counted!;
+        expect(criterion.bands).toBeUndefined();
+        expect(criterion.permittedMarks).toEqual(Array.from({ length: items + 1 }, (_, i) => i * rate));
+      }
+    }
+  });
+
+  it('adds the counted marks to the band placements', () => {
+    const scores = {
+      [frenchScoreId('melody')]: 30, [frenchScoreId('bass-count')]: 7.5, [frenchScoreId('bass-quality')]: 6,
+    };
+    expect(frenchMarks(q4, scores)).toBe(43.5);
+    // A mark the count cannot reach (not a multiple of the rate) earns nothing.
+    expect(frenchMarks(q4, { [frenchScoreId('bass-count')]: 7.25 })).toBe(0);
+  });
+
+  it('lets the student set the count and shows what it earns', () => {
+    const onScore = vi.fn();
+    const { rerender } = render(<FrenchRubricPanel card={q4} scores={{}} onScore={onScore} />);
+    fireEvent.click(screen.getByRole('button', { name: 'One more item right' }));
+    expect(onScore).toHaveBeenCalledWith(frenchScoreId('bass-count'), 0.5);
+    rerender(<FrenchRubricPanel card={q4} scores={{ [frenchScoreId('bass-count')]: 6 }} onScore={onScore} />);
+    expect(screen.getByText('12 of 20')).toBeInTheDocument();
+    expect(screen.getByText('12 x 0.5 = 6 marks')).toBeInTheDocument();
+    fireEvent.change(screen.getByRole('slider', { name: 'Number of items right, out of 20' }), { target: { value: '20' } });
+    expect(onScore).toHaveBeenLastCalledWith(frenchScoreId('bass-count'), 10);
+    expect(screen.getByText('6 / 60')).toBeInTheDocument();
   });
 });
