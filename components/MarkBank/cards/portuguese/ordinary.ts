@@ -611,6 +611,804 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2022 Ordinary Level, pp.13-14 — © State Examinations Commission.",
+    id: "por-2022-ol-b-4-a", topicId: "portuguese-2-4", conceptId: "voce-recebeu-email-confirmacao-sua-viagem",
+    section: "B", questionRef: "2022 OL Section B Q4(a)",
+    stem: "Escreva em português, cerca de 100 palavras.",
+    questionText: "Você recebeu o email de confirmação da sua viagem para Salvador da Bahia, no Brasil. Ficou com dúvidas e resolveu escrever à agência de viagens. Escreva um email para esclarecer os seguintes pontos: • Bagagem permitida; • Refeições a bordo; • Transporte para o hotel.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Commented on the theme, followed suggested structure/format and gave information on all topics.",
+                            "4 marks",
+                            "Commented on the theme, followed suggested structure/format but only gave information on 2 topics.",
+                            "3 marks",
+                            "Commented on the theme, followed suggested structure/format but only gave information on 1 topic.",
+                            "2 marks",
+                            "Commented on the theme. 1 mark"
+                      ]
+                },
+                {
+                      "id": "communication",
+                      "label": "Communication",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "10 - 13",
+                                  "marks": [10,11,12,13],
+                                  "guidance": [
+                                        "Logical and well-structured text",
+                                        "Appropriate register",
+                                        "Comprehensible for Portuguese language native speaker although with a few mistakes",
+                                        "Communicative intention fulfilled with clear and adequate message",
+                                        "Little or no irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "5 - 9",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "Reasonable level of textual structure",
+                                        "Not too many mistakes in register",
+                                        "Comprehensible for Portuguese language native speaker although with some mistakes",
+                                        "Communicative intention almost fulfilled",
+                                        "Some irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "0 - 4",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "Lack of textual structure",
+                                        "Mistakes in register",
+                                        "Portuguese language native speaker would have difficulty understanding",
+                                        "Communicative intention not fulfilled",
+                                        "A lot of irrelevant material"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "10 - 13",
+                                  "marks": [10,11,12,13],
+                                  "guidance": [
+                                        "Excellent grammar",
+                                        "Wide vocabulary",
+                                        "Very few spellings mistakes",
+                                        "Good use of language",
+                                        "Few mistakes in verbs and agreement",
+                                        "Complex sentences well handled"
+                                  ]
+                            },
+                            {
+                                  "label": "5 - 9",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "Some grammar mistakes for example agreement of verb (subject and predicate) and of noun (number and gender)",
+                                        "Adequate vocabulary",
+                                        "Some spelling mistakes",
+                                        "Average use of language",
+                                        "Some mistakes in verbs and agreement",
+                                        "Sentences well handled"
+                                  ]
+                            },
+                            {
+                                  "label": "0 - 4",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "Frequent grammar mistakes, for example agreement of verb (subject and predicate) and of noun (number and gender)",
+                                        "Inadequate vocabulary",
+                                        "Many spellings mistake",
+                                        "Poor use of language",
+                                        "Most verbs incorrect and basic agreement rule not respected",
+                                        "Simple sentences"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 4",
+          "title": "Questão 4 (a) — answer in Portuguese",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Portuguese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2022 Ordinary Level, pp.13-14 — © State Examinations Commission.",
+    id: "por-2022-ol-b-4-b", topicId: "portuguese-2-4", conceptId: "escreva-entrada-blog-contar-sua-experiencia",
+    section: "B", questionRef: "2022 OL Section B Q4(b)",
+    stem: "Escreva em português, cerca de 100 palavras.",
+    questionText: "Escreva uma entrada para um blog a contar a sua experiência de um trabalho de verão. Inclua os seguintes tópicos: • Descreva o trabalho; • Como foi fazer parte de uma equipa; • O que aprendeu com a experiência.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Commented on the theme, followed suggested structure/format and gave information on all topics.",
+                            "4 marks",
+                            "Commented on the theme, followed suggested structure/format but only gave information on 2 topics.",
+                            "3 marks",
+                            "Commented on the theme, followed suggested structure/format but only gave information on 1 topic.",
+                            "2 marks",
+                            "Commented on the theme. 1 mark"
+                      ]
+                },
+                {
+                      "id": "communication",
+                      "label": "Communication",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "10 - 13",
+                                  "marks": [10,11,12,13],
+                                  "guidance": [
+                                        "Logical and well-structured text",
+                                        "Appropriate register",
+                                        "Comprehensible for Portuguese language native speaker although with a few mistakes",
+                                        "Communicative intention fulfilled with clear and adequate message",
+                                        "Little or no irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "5 - 9",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "Reasonable level of textual structure",
+                                        "Not too many mistakes in register",
+                                        "Comprehensible for Portuguese language native speaker although with some mistakes",
+                                        "Communicative intention almost fulfilled",
+                                        "Some irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "0 - 4",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "Lack of textual structure",
+                                        "Mistakes in register",
+                                        "Portuguese language native speaker would have difficulty understanding",
+                                        "Communicative intention not fulfilled",
+                                        "A lot of irrelevant material"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "10 - 13",
+                                  "marks": [10,11,12,13],
+                                  "guidance": [
+                                        "Excellent grammar",
+                                        "Wide vocabulary",
+                                        "Very few spellings mistakes",
+                                        "Good use of language",
+                                        "Few mistakes in verbs and agreement",
+                                        "Complex sentences well handled"
+                                  ]
+                            },
+                            {
+                                  "label": "5 - 9",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "Some grammar mistakes for example agreement of verb (subject and predicate) and of noun (number and gender)",
+                                        "Adequate vocabulary",
+                                        "Some spelling mistakes",
+                                        "Average use of language",
+                                        "Some mistakes in verbs and agreement",
+                                        "Sentences well handled"
+                                  ]
+                            },
+                            {
+                                  "label": "0 - 4",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "Frequent grammar mistakes, for example agreement of verb (subject and predicate) and of noun (number and gender)",
+                                        "Inadequate vocabulary",
+                                        "Many spellings mistake",
+                                        "Poor use of language",
+                                        "Most verbs incorrect and basic agreement rule not respected",
+                                        "Simple sentences"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 4",
+          "title": "Questão 4 (b) — answer in Portuguese",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Portuguese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2022 Ordinary Level, pp.13-14 — © State Examinations Commission.",
+    id: "por-2022-ol-b-4-c", topicId: "portuguese-2-4", conceptId: "voce-entrou-universidade-quer-fazer-parte",
+    section: "B", questionRef: "2022 OL Section B Q4(c)",
+    stem: "Escreva em português, cerca de 100 palavras.",
+    questionText: "Você entrou para a universidade, quer fazer parte do Clube de Atletismo e viu o anúncio no Instagram. Escreva uma mensagem e inclua os seguintes tópicos: • Informação sobre o dia e a hora dos treinos; • Localização do clube e dos treinos; • Como funcionam os testes de admissão.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Commented on the theme, followed suggested structure/format and gave information on all topics.",
+                            "4 marks",
+                            "Commented on the theme, followed suggested structure/format but only gave information on 2 topics.",
+                            "3 marks",
+                            "Commented on the theme, followed suggested structure/format but only gave information on 1 topic.",
+                            "2 marks",
+                            "Commented on the theme. 1 mark"
+                      ]
+                },
+                {
+                      "id": "communication",
+                      "label": "Communication",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "10 - 13",
+                                  "marks": [10,11,12,13],
+                                  "guidance": [
+                                        "Logical and well-structured text",
+                                        "Appropriate register",
+                                        "Comprehensible for Portuguese language native speaker although with a few mistakes",
+                                        "Communicative intention fulfilled with clear and adequate message",
+                                        "Little or no irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "5 - 9",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "Reasonable level of textual structure",
+                                        "Not too many mistakes in register",
+                                        "Comprehensible for Portuguese language native speaker although with some mistakes",
+                                        "Communicative intention almost fulfilled",
+                                        "Some irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "0 - 4",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "Lack of textual structure",
+                                        "Mistakes in register",
+                                        "Portuguese language native speaker would have difficulty understanding",
+                                        "Communicative intention not fulfilled",
+                                        "A lot of irrelevant material"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "10 - 13",
+                                  "marks": [10,11,12,13],
+                                  "guidance": [
+                                        "Excellent grammar",
+                                        "Wide vocabulary",
+                                        "Very few spellings mistakes",
+                                        "Good use of language",
+                                        "Few mistakes in verbs and agreement",
+                                        "Complex sentences well handled"
+                                  ]
+                            },
+                            {
+                                  "label": "5 - 9",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "Some grammar mistakes for example agreement of verb (subject and predicate) and of noun (number and gender)",
+                                        "Adequate vocabulary",
+                                        "Some spelling mistakes",
+                                        "Average use of language",
+                                        "Some mistakes in verbs and agreement",
+                                        "Sentences well handled"
+                                  ]
+                            },
+                            {
+                                  "label": "0 - 4",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "Frequent grammar mistakes, for example agreement of verb (subject and predicate) and of noun (number and gender)",
+                                        "Inadequate vocabulary",
+                                        "Many spellings mistake",
+                                        "Poor use of language",
+                                        "Most verbs incorrect and basic agreement rule not respected",
+                                        "Simple sentences"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 4",
+          "title": "Questão 4 (c) — answer in Portuguese",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Portuguese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2022 Ordinary Level, pp.15-16 — © State Examinations Commission.",
+    id: "por-2022-ol-b-5-a", topicId: "portuguese-2-4", conceptId: "escreva-onde-inclua-topicos-mensagem-lhe",
+    section: "B", questionRef: "2022 OL Section B Q5(a)",
+    stem: "Escreva em português, cerca de 100 palavras. Observe as imagens com atenção e escolha uma: (a) ou (b) ou (c).",
+    questionText: "Escreva um texto onde inclua os tópicos: • Que mensagem lhe transmite a imagem; • A sua opinião sobre a mensagem contida na imagem.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Commented on the theme, followed suggested structure/format and gave information on all topics.",
+                            "4 marks",
+                            "Commented on the theme, followed suggested structure/format but only gave information on 2 topics.",
+                            "3 marks",
+                            "Commented on the theme, followed suggested structure/format but only gave information on 1 topic.",
+                            "2 marks",
+                            "Commented on the theme. 1 mark"
+                      ]
+                },
+                {
+                      "id": "communication",
+                      "label": "Communication",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "10 - 13",
+                                  "marks": [10,11,12,13],
+                                  "guidance": [
+                                        "Logical and well-structured text",
+                                        "Appropriate register",
+                                        "Comprehensible for Portuguese language native speaker although with a few mistakes",
+                                        "Communicative intention fulfilled with clear and adequate message",
+                                        "Little or no irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "5 - 9",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "Reasonable level of textual structure",
+                                        "Not too many mistakes in register",
+                                        "Comprehensible for Portuguese language native speaker although with some mistakes",
+                                        "Communicative intention almost fulfilled",
+                                        "Some irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "0 - 4",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "Lack of textual structure",
+                                        "Mistakes in register",
+                                        "Portuguese language native speaker would have difficulty understanding",
+                                        "Communicative intention not fulfilled",
+                                        "A lot of irrelevant material"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "10 - 13",
+                                  "marks": [10,11,12,13],
+                                  "guidance": [
+                                        "Excellent grammar",
+                                        "Wide vocabulary",
+                                        "Very few spellings mistakes",
+                                        "Good use of language",
+                                        "Few mistakes in verbs and agreement",
+                                        "Complex sentences well handled"
+                                  ]
+                            },
+                            {
+                                  "label": "5 - 9",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "Some grammar mistakes for example agreement of verb (subject and predicate) and of noun (number and gender)",
+                                        "Adequate vocabulary",
+                                        "Some spelling mistakes",
+                                        "Average use of language",
+                                        "Some mistakes in verbs and agreement",
+                                        "Sentences well handled"
+                                  ]
+                            },
+                            {
+                                  "label": "0 - 4",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "Frequent grammar mistakes, for example agreement of verb (subject and predicate) and of noun (number and gender)",
+                                        "Inadequate vocabulary",
+                                        "Many spellings mistake",
+                                        "Poor use of language",
+                                        "Most verbs incorrect and basic agreement rule not respected",
+                                        "Simple sentences"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 5",
+          "title": "Questão 5 (a) — answer in Portuguese",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Portuguese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2022 Ordinary Level, pp.15-16 — © State Examinations Commission.",
+    id: "por-2022-ol-b-5-b", topicId: "portuguese-2-4", conceptId: "escreva-onde-inclua-topicos-mensagem-lhe",
+    section: "B", questionRef: "2022 OL Section B Q5(b)",
+    stem: "Escreva em português, cerca de 100 palavras. Observe as imagens com atenção e escolha uma: (a) ou (b) ou (c).",
+    questionText: "Escreva um texto onde inclua os tópicos: • Que mensagem lhe transmite a imagem; • A sua opinião sobre a mensagem contida na imagem.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Commented on the theme, followed suggested structure/format and gave information on all topics.",
+                            "4 marks",
+                            "Commented on the theme, followed suggested structure/format but only gave information on 2 topics.",
+                            "3 marks",
+                            "Commented on the theme, followed suggested structure/format but only gave information on 1 topic.",
+                            "2 marks",
+                            "Commented on the theme. 1 mark"
+                      ]
+                },
+                {
+                      "id": "communication",
+                      "label": "Communication",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "10 - 13",
+                                  "marks": [10,11,12,13],
+                                  "guidance": [
+                                        "Logical and well-structured text",
+                                        "Appropriate register",
+                                        "Comprehensible for Portuguese language native speaker although with a few mistakes",
+                                        "Communicative intention fulfilled with clear and adequate message",
+                                        "Little or no irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "5 - 9",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "Reasonable level of textual structure",
+                                        "Not too many mistakes in register",
+                                        "Comprehensible for Portuguese language native speaker although with some mistakes",
+                                        "Communicative intention almost fulfilled",
+                                        "Some irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "0 - 4",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "Lack of textual structure",
+                                        "Mistakes in register",
+                                        "Portuguese language native speaker would have difficulty understanding",
+                                        "Communicative intention not fulfilled",
+                                        "A lot of irrelevant material"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "10 - 13",
+                                  "marks": [10,11,12,13],
+                                  "guidance": [
+                                        "Excellent grammar",
+                                        "Wide vocabulary",
+                                        "Very few spellings mistakes",
+                                        "Good use of language",
+                                        "Few mistakes in verbs and agreement",
+                                        "Complex sentences well handled"
+                                  ]
+                            },
+                            {
+                                  "label": "5 - 9",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "Some grammar mistakes for example agreement of verb (subject and predicate) and of noun (number and gender)",
+                                        "Adequate vocabulary",
+                                        "Some spelling mistakes",
+                                        "Average use of language",
+                                        "Some mistakes in verbs and agreement",
+                                        "Sentences well handled"
+                                  ]
+                            },
+                            {
+                                  "label": "0 - 4",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "Frequent grammar mistakes, for example agreement of verb (subject and predicate) and of noun (number and gender)",
+                                        "Inadequate vocabulary",
+                                        "Many spellings mistake",
+                                        "Poor use of language",
+                                        "Most verbs incorrect and basic agreement rule not respected",
+                                        "Simple sentences"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 5",
+          "title": "Questão 5 (b) — answer in Portuguese",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Portuguese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2022 Ordinary Level, pp.15-16 — © State Examinations Commission.",
+    id: "por-2022-ol-b-5-c", topicId: "portuguese-2-4", conceptId: "escreva-onde-inclua-topicos-mensagem-lhe",
+    section: "B", questionRef: "2022 OL Section B Q5(c)",
+    stem: "Escreva em português, cerca de 100 palavras. Observe as imagens com atenção e escolha uma: (a) ou (b) ou (c).",
+    questionText: "Escreva um texto onde inclua os tópicos: • Que mensagem lhe transmite a imagem; • A sua opinião sobre a mensagem contida na imagem.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Commented on the theme, followed suggested structure/format and gave information on all topics.",
+                            "4 marks",
+                            "Commented on the theme, followed suggested structure/format but only gave information on 2 topics.",
+                            "3 marks",
+                            "Commented on the theme, followed suggested structure/format but only gave information on 1 topic.",
+                            "2 marks",
+                            "Commented on the theme. 1 mark"
+                      ]
+                },
+                {
+                      "id": "communication",
+                      "label": "Communication",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "10 - 13",
+                                  "marks": [10,11,12,13],
+                                  "guidance": [
+                                        "Logical and well-structured text",
+                                        "Appropriate register",
+                                        "Comprehensible for Portuguese language native speaker although with a few mistakes",
+                                        "Communicative intention fulfilled with clear and adequate message",
+                                        "Little or no irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "5 - 9",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "Reasonable level of textual structure",
+                                        "Not too many mistakes in register",
+                                        "Comprehensible for Portuguese language native speaker although with some mistakes",
+                                        "Communicative intention almost fulfilled",
+                                        "Some irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "0 - 4",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "Lack of textual structure",
+                                        "Mistakes in register",
+                                        "Portuguese language native speaker would have difficulty understanding",
+                                        "Communicative intention not fulfilled",
+                                        "A lot of irrelevant material"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "10 - 13",
+                                  "marks": [10,11,12,13],
+                                  "guidance": [
+                                        "Excellent grammar",
+                                        "Wide vocabulary",
+                                        "Very few spellings mistakes",
+                                        "Good use of language",
+                                        "Few mistakes in verbs and agreement",
+                                        "Complex sentences well handled"
+                                  ]
+                            },
+                            {
+                                  "label": "5 - 9",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "Some grammar mistakes for example agreement of verb (subject and predicate) and of noun (number and gender)",
+                                        "Adequate vocabulary",
+                                        "Some spelling mistakes",
+                                        "Average use of language",
+                                        "Some mistakes in verbs and agreement",
+                                        "Sentences well handled"
+                                  ]
+                            },
+                            {
+                                  "label": "0 - 4",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "Frequent grammar mistakes, for example agreement of verb (subject and predicate) and of noun (number and gender)",
+                                        "Inadequate vocabulary",
+                                        "Many spellings mistake",
+                                        "Poor use of language",
+                                        "Most verbs incorrect and basic agreement rule not respected",
+                                        "Simple sentences"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 5",
+          "title": "Questão 5 (c) — answer in Portuguese",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Portuguese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC018GLP000EV",
