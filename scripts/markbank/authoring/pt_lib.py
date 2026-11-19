@@ -43,8 +43,9 @@ from pl_listen_lib import Sel, Join, J, PL                       # noqa: E402,F4
 SCHEMES = os.path.join(ROOT, 'examiner-reports', 'portuguese', 'schemes')
 ANGLE = re.compile('⟨[^⟩]*⟩')
 # "6 marks: 2 x 3 marks", "4 marks", "1 marks: 1 x 1 mark", "20 Marks".
+# The per-answer "marks" may be left off: "⟨6 marks: 3 x 2⟩" (2023 Ordinary).
 PRICE = re.compile(r'(?<![\w.])(?P<total>\d{1,3})\s*marks?\b'
-                   r'(?:\s*:\s*(?P<n>\d{1,2})\s*[x×]\s*(?P<p>\d{1,2})\s*marks?\b)?', re.I)
+                   r'(?:\s*:\s*(?P<n>\d{1,2})\s*[x×]\s*(?P<p>\d{1,2})(?:\s*marks?\b)?)?', re.I)
 ANY_N = re.compile(r'\(\s*any\s+(\d{1,2})\s*\)', re.I)
 
 

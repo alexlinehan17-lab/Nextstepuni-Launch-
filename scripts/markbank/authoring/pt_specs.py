@@ -130,7 +130,7 @@ class Verdict(Sel):
             raise ValueError(f'scheme p{self.page}: {len(hits)} rows read {statement!r}')
         y = hits[0][1]
         # The column heads: the nearest row of them printed above this one.
-        heads = [w for w in words if w[4] in ('Verdadeiro', 'Falso', 'True', 'False') and w[1] < y]
+        heads = [w for w in words if w[4] in ('Verdadeiro', 'Falso', 'True', 'False', 'T', 'F') and w[1] < y]
         if not heads:
             raise ValueError(f'scheme p{self.page}: no column heads above {statement!r}')
         top = max(w[1] for w in heads)
@@ -140,7 +140,7 @@ class Verdict(Sel):
         # than its row's text: 2025 Ordinary p6 and p8).
         mid = lambda w: (w[1] + w[3]) / 2                              # noqa: E731
         row_mid = mid(hits[0])
-        ticks = sorted((w for w in words if w[4] in ('\uf0fc', '\u2713', '\u2714')
+        ticks = sorted((w for w in words if w[4] in ('\uf0fc', '\uf0fe', '\u2713', '\u2714')
                         and abs(mid(w) - row_mid) < 14), key=lambda w: abs(mid(w) - row_mid))
         if not ticks:
             raise ValueError(f'scheme p{self.page}: no tick beside {statement!r}')
@@ -178,9 +178,12 @@ class InlineVerdict(Sel):
         ticks = [w for w in words if w[4] in ('\uf0fc', '\uf0fe', '✓', '✔')]
         found = []
         for t in ticks:
-            row = [h for h in heads if abs(h[1] - t[1]) < 8 and h[2] <= t[0]]
-            if len(row) >= 2:
-                found.append(max(row, key=lambda h: h[2])[4])
+            # Both labels on the tick's row; the box belongs to the label
+            # printed nearest on its left ("True ☒ False" is True).
+            row = [h for h in heads if abs(h[1] - t[1]) < 8]
+            left = [h for h in row if h[2] <= t[0]]
+            if len(row) >= 2 and left:
+                found.append(max(left, key=lambda h: h[2])[4])
         if len(found) != 1:
             raise ValueError(f'scheme p{self.page}: {len(found)} inline ticks after a label: {found}')
         line = doc['scheme'][self.n - 1]
@@ -234,7 +237,7 @@ def reading_cards(year, level):
         return []
     P = EuPaper(year, level, SUBJECT)
     import eu_all
-    asks = {a.key: a for a in P.all_asks()}
+    asks = _census_aural(year, level, P, written=True)
     doc = _doc(year, level, P)
     out = []
     for spec in specs:
@@ -331,22 +334,23 @@ def _repair(year, level, booklet, text):
     return text
 
 
-def _census_aural(year, level, P):
-    """The listening asks as the census counts them: the walker's, with any
-    ask it folds (paper_census.EU_FOLDED_ASKS) unfolded into the printed ones,
-    each on the page of the ask it was folded into."""
+def _census_aural(year, level, P, written=False):
+    """The asks of one booklet as the census counts them: the walker's, with
+    the census's corrections (paper_census.EU_FOLDED_ASKS) applied, each new
+    ask on the page of the first ask it replaces."""
     from types import SimpleNamespace
     import paper_census
-    asks = {a.key: a for a in P.aural_asks()}
+    asks = {a.key: a for a in (P.all_asks() if written else P.aural_asks())}
     fix = paper_census.EU_FOLDED_ASKS.get((SUBJECT, year, level))
-    if not fix:
+    if not fix or (fix.get('booklet') == 'written') != written:
         return asks
     texts = paper_census.census_eu(SUBJECT, year, level)[1]
     page = asks[fix['folded'][0]].page
     for k in fix['folded']:
         asks.pop(k)
     for k in fix['asks']:
-        asks[k] = SimpleNamespace(key=k, page=page, full_text=texts[k])
+        asks[k] = SimpleNamespace(key=k, page=page, full_text=texts[k], q=k[1], section=k[0],
+                                  letter=k[2], roman=k[3])
     return asks
 
 
@@ -993,6 +997,95 @@ LISTENING[(2023, 'hl')] = [
                     S(596, after='historians, and ')], T(596))]),
     C('LE7', [one(VI(601, 18), TG(601, 602))]),
     C('LE8', [one(S(605), T(605))]),
+]
+
+
+# ================================================================ 2023 OL ===
+# Live: 18 reading cards. New: six reading asks (Q1(c) and Q1(e) each one
+# tick question, as the census now counts them, 10c) and the listening test
+# (scheme .md lines 355-498, pages 13-17; each Part 24). Written held.
+READING[(2023, 'ol')] = [
+    # The four options the scheme prints as correct, each "1 mark".
+    C('A1c', [one(S(n), T(n)) for n in range(91, 95)], total=T(90),
+      question=(PLc(4, '(c) Quais', after='(c) '), PL(4, 'Assinale com um'), PL(4, '(i) Telefonar'),
+                PL(4, '(ii) Falar'), PL(4, '(iii) Iniciar'), PL(4, '(iv) Escrever'), PL(4, '(v) Abrir'),
+                PL(4, '(vi) Jogar'))),
+    # Each statement's scheme line ends in the checked box (U+F0FE): cut off.
+    C('A1e', [one(V(n, 5), T(108, each=True), lead=S(n, before=' \uf0fe')) for n in range(110, 114)],
+      total=T(108),
+      question=(PLc(5, '(e) Tick', after='(e) '), PL(5, '(i) Pedro Barros'), PL(5, '(ii) The post'),
+                PL(5, '(iii) Pedro and'), PL(5, '(iv) Antônio keeps'))),
+    # The option's number, as the scheme prints it beside the option.
+    C('A1g', [one(S(125, after='call. '), T(125), lead=S(125, before=' 2'))],
+      question=(PLc(5, '(g) What happened', after='(g) '), PL(5, 'Enter the correct'), PL(5, '1. Antônio'),
+                PL(5, '2. Antônio'), PL(5, '3. Antônio'))),
+    # Q2(a)'s answer is the bare line "2018": provenance excludes single
+    # numeric lines as ambiguous mark/page cells (schemeText comparableScheme),
+    # so it cannot trace; held with its exclusion, asked of the coordinator.
+    C('A2h', [one(VI(173, 7), T(173))], extra=(PL(8, 'Tick (✓)'), PL(8, 'True'))),
+    C('A3b', [one(VI(190, 8), T(190))]),
+]
+
+LISTENING[(2023, 'ol')] = [
+    C('LA1', [one(S(359, after='Onde: '), T(360, each=True), lead=S(359, before=': Numa')),
+              one(S(361, after='Quando: '), T(360, each=True), lead=S(361, before=': segunda'))],
+      total=T(360), extra=(PL(3, 'Onde:'), PL(3, 'Quando:'))),
+    # The six words the scheme sets in the sentence's boxes, in the order of
+    # the gaps ("Com a mala na mão ... impediu-os de continuar o assalto").
+    C('LA2', [one(S(364, after='começou a ', before=' mão'), T(365, each=True)),
+              one(S(364, after='mala ', before=' bater'), T(365, each=True)),
+              one(S(364, after='mão '), T(365, each=True)),
+              one(S(366, after='o . ', before=' continuar'), T(365, each=True)),
+              one(S(366, after='assaltantes ', before=' assalto'), T(365, each=True)),
+              one(S(366, after='continuar '), T(365, each=True))],
+      total=T(365), extra=(PL(3, 'Com a'), PL(3, 'nos e'))),
+    C('LA3', [one(S(369), T(369))]),
+    C('LA4', [one(VI(372, 13), T(372))]),
+    C('LA5', [stepped(J(S(375), S(376)), T(376))]),
+    C('LB1', [one(VI(385, 14), T(385))]),
+    C('LB2', [one(S(388), T(388))]),
+    C('LB3', [one(S(391), T(391))]),
+    C('LB4', [one(S(394), T(394))],
+      extra=(PL(4, 'Na Serra da Estrela'), PL(4, 'ainda não nevou'), PL(4, 'nevou pouco'),
+             PL(4, 'nevou muito'), PL(4, 'ainda vai nevar'))),
+    C('LB5', [menu([S(397, before=', meias'), S(397, after='Botas, ', before=', casaco'),
+                    S(397, after='[quentes], ', before=', gorro'), S(397, after='[impermeável], ', before=', cachecol'),
+                    S(397, after='gorro, ', before=', luvas'), S(397, after='cachecol, ', before=','),
+                    S(398)], T(397))]),
+    C('LB6', [stepped(S(401), TG(401, 402))]),
+    C('LB7', [one(S(405), TG(406, 407, each=True)), one(S(406), TG(406, 407, each=True)),
+              one(S(407), TG(406, 407, each=True))], total=TG(406, 407),
+      extra=(PL(5, 'A Serra da Estrela'),)),
+    # A less exact answer on its own line at the lower price: paid in place
+    # of the full one, never beside it.
+    C('LC1', [menu([S(416)], T(416), [alt(S(417), T(417), of=0)])]),
+    C('LC2', [one(S(420), T(420))]),
+    C('LC3', [menu([S(423)], T(423), [alt(S(424), T(424), of=0)])]),
+    C('LC4', [one(VI(428, 15), T(428))]),
+    C('LC5', [one(S(431, after='Beaches '), T(431, each=True), lead=S(431, before=' Fine')),
+              one(S(432, after='Sea '), T(431, each=True), lead=S(432, before=' Warm'))], total=T(431)),
+    C('LC6', [one(S(435), T(435))]),
+    C('LD1', [one(S(444), T(444))]),
+    C('LD2', [one(S(447), T(447))]),
+    C('LD3', [menu([S(450, before=', bald'), S(450, after='Tall, ', before=', with'),
+                    S(450, after='bald, ', before=' and brown'), S(450, after='moustache and ')], T(450))],
+      extra=(PL(8, "Sara's father is:"),)),
+    C('LD4', [one(S(453), T(453))]),
+    C('LD5', [one(V(n, 16), T(456, each=True), lead=S(n, before=' ✓')) for n in range(458, 462)],
+      total=T(456), extra=(PL(9, 'T'), PL(9, 'F'), PL(9, 'Sara’s uncle’s band'), PL(9, 'Sara’s aunt'),
+                           PL(9, 'Sara’s uncle´s rehearsal'), PL(9, 'It’s a warm'))),
+    C('LD6', [one(S(464), T(464))]),
+    C('LE1', [one(S(473), T(473))]),
+    C('LE2', [one(VI(476, 17), T(476))]),
+    C('LE3', [one(S(479), T(479))]),
+    # Three forms of one answer, each shorter at a lower price: one paid.
+    C('LE4', [menu([S(482)], T(482), [alt(S(483), T(483), of=0), alt(S(484), T(484), of=0)])]),
+    C('LE5', [menu([S(487), S(488)], T(487))]),
+    C('LE6', [one(S(491, after=' '), T(491))], extra=tuple(PLk(11, 'She is', k) for k in range(4))),
+    C('LE7', [menu([S(494, before=', writers'), S(494, after='actors, ', before=', journalists'),
+                    S(494, after='writers, ', before=', historians'), S(494, after='journalists, ', before=', and'),
+                    S(494, after='historians, and ')], T(494))]),
+    C('LE8', [one(S(498), T(498))]),
 ]
 
 

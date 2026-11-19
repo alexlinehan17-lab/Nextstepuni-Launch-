@@ -3746,6 +3746,24 @@ EU_FOLDED_ASKS = {
                                    '(ii) What will they do in the afternoon'),
         },
     },
+    # The other way round, CARD-STANDARD 10c ("Tick the correct options":
+    # one card per printed question; the census counts the printed question
+    # once). Portuguese 2023 Ordinary (written booklet pp4-5) prints Q1(c)
+    # "Assinale com um (✓) as opções corretas" over six options (i)-(vi), and
+    # Q1(e) "Tick (✓) the True (T) and False (F) answers below" over four
+    # statements (i)-(iv); the walker keyed every option and statement as an
+    # ask of its own. One ask each.
+    ('portuguese', 2023, 'ol'): {
+        'booklet': 'written',
+        'folded': [('A', 1, 'c', r) for r in ('i', 'ii', 'iii', 'iv', 'v', 'vi')]
+                  + [('A', 1, 'e', r) for r in ('i', 'ii', 'iii', 'iv')],
+        'asks': {
+            ('A', 1, 'c', None): ('(c) Quais os planos', 'Assinale com um', '(i) Telefonar', '(ii) Falar',
+                                  '(iii) Iniciar', '(iv) Escrever', '(v) Abrir', '(vi) Jogar'),
+            ('A', 1, 'e', None): ('(e) Tick', '(i) Pedro Barros', '(ii) The post', '(iii) Pedro and',
+                                  '(iv) Antônio keeps'),
+        },
+    },
 }
 _EU_MARKERS = re.compile(r'^(?:\d{1,2}\.\s*|\((?:[a-h]|i{1,3}|iv|vi{0,3})\)\s*)+')
 
@@ -3759,7 +3777,8 @@ def _eu_unfold(subject, year, level, P, texts):
     if missing:
         raise ValueError(f'{subject} {year} {level}: the walker no longer writes {missing}; '
                          f'review EU_FOLDED_ASKS')
-    lines = [l.text for l in read_lines(P.aural_path, P.furniture)]
+    path = P.path if fix.get('booklet') == 'written' else P.aural_path
+    lines = [l.text for l in read_lines(path, P.furniture)]
     out = {k: v for k, v in texts.items() if k not in fix['folded']}
     for key, openings in fix['asks'].items():
         parts = []
