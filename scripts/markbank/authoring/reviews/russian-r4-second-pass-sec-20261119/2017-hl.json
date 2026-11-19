@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-19T11:29:25.171845+00:00",
+  "archive": {
+    "year": 2017,
+    "level": "hl",
+    "url": "https://www.examinations.ie/archive/markingschemes/2017/LC099ALP000EV.pdf",
+    "filename": "Russian-2017-hl-SEC-fresh-20261119.pdf",
+    "pages": 20,
+    "downloadDone": true,
+    "downloadConfirmation": "Chrome Download history shows the exact file and source URL with Show in Finder; complete file present on disk.",
+    "checkedAt": "2026-11-19T11:28:46.564Z",
+    "bytes": 783049,
+    "sha256": "4436cf9e87767e3d7092bedbb38ad8818b731d232565d2d0fca1976621e95abd",
+    "retainedSha256": "4436cf9e87767e3d7092bedbb38ad8818b731d232565d2d0fca1976621e95abd",
+    "exactMatch": true,
+    "freshDownloadVerified": true,
+    "localFile": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/stale-exclusions-20261119/sec-recheck/2017-hl.pdf"
+  },
+  "cards": [
+    {
+      "id": "ru-2017-hl-se",
+      "printedMarks": 30,
+      "schemePages": [
+        10,
+        11
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2017-hl.pdf",
+      "schemeSha256": "4436cf9e87767e3d7092bedbb38ad8818b731d232565d2d0fca1976621e95abd",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2017-hl.json",
+      "finding": "The scheme prints the task and marking criteria/grid, but no model answer or indicative answer content.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2017-hl-gw",
+      "printedMarks": 40,
+      "schemePages": [
+        12,
+        13,
+        14
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2017-hl.pdf",
+      "schemeSha256": "4436cf9e87767e3d7092bedbb38ad8818b731d232565d2d0fca1976621e95abd",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2017-hl.json",
+      "finding": "The scheme prints the task and marking criteria/grid, but no model answer or indicative answer content.",
+      "fixedLine": "The scheme prints no answer for this part."
+    }
+  ],
+  "rule": "R4; CARD-STANDARD sections3 and10a",
+  "sourceReview": "Complete scheme pages10–14 read; all criteria and explicit one-mark soft-sign instruction retained.",
+  "sourceBranch": "wip/russian-2026-11-19",
+  "liveCardsChanged": false
+}
