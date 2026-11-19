@@ -246,5 +246,5 @@
    "mus-2025-hl-e-q4-b"
   ]
  },
- "note": "Every numbered ask the three 2025 Higher Level booklets print, read page by page (authored/music-2025-hl-review.json). The three unnumbered \"Preparatory work\" tasks of Composing Section B carry no marks and sit inside their question."
+ "note": "Every numbered ask each sitting's booklets print, read page by page: 2025 Higher from authored/music-2025-hl-review.json, every other sitting from authored/music-review/. Unnumbered, unmarked \"Preparatory work\" tasks sit inside their question."
 }

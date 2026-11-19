@@ -3036,10 +3036,31 @@ describe('Mark Bank card preservation', () => {
   it('pins the Music 2025 Higher prototype (review pack 1), a deck of its own', () => {
     // 46 cards for 53 printed asks: 42 listening, Composing Section A's three,
     // and one Listening elective card for its five asks (one shared band).
-    // Composing Section B's three asks are not carded: no card type takes
-    // their half mark per correct note (treatments lane README).
-    expect(MUSIC_HIGHER).toHaveLength(46);
-    expect(idHash(MUSIC_HIGHER.map(card => card.id))).toBe('2d7a41260efd6dc6e9c91822e02da297e675a9eba782445057e9c868d2dd46b2');
+    // Composing Section B's three asks were carded later by the music lane,
+    // on the counted grid line (MUSIC_LANE_SITTINGS below).
+    const prototype = MUSIC_HIGHER.filter(card => card.year === 2025 && card.section !== 'B' && !card.id.includes('-deferred-'));
+    expect(prototype).toHaveLength(46);
+    expect(idHash(prototype.map(card => card.id))).toBe('2d7a41260efd6dc6e9c91822e02da297e675a9eba782445057e9c868d2dd46b2');
+  });
+
+  it('pins every card the music lane adds, sitting by sitting', () => {
+    // [sitting, cards, sha256 of the sorted ids]. One row per sitting, added
+    // in the commit that cards it; a row never changes once added.
+    const MUSIC_LANE_SITTINGS: Array<[string, number, string]> = [
+      ['2025 higher', 3, 'eba1c9deac3a34ae8b9e609a168791b0d6112c4ba1db6eddda4d57516dcc0c2c'],
+    ];
+    const lane = new Map<string, string[]>();
+    for (const card of MUSIC_HIGHER) {
+      const deferred = card.id.includes('-deferred-');
+      if (card.year === 2025 && card.section !== 'B' && !deferred) continue;
+      const key = `${card.year} ${card.level}${deferred ? ' deferred' : ''}`;
+      lane.set(key, [...(lane.get(key) ?? []), card.id]);
+    }
+    expect([...lane.keys()].sort()).toEqual(MUSIC_LANE_SITTINGS.map(([key]) => key).sort());
+    for (const [key, count, hash] of MUSIC_LANE_SITTINGS) {
+      expect(lane.get(key), key).toHaveLength(count);
+      expect(idHash(lane.get(key)!), key).toBe(hash);
+    }
   });
 
   it('protects the complete current bank', () => {

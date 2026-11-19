@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+"""Text for a Music booklet the SEC printed with no text layer (2012, and the
+listening booklets of 2019, 2020, 2022, 2023 Higher and 2023, 2025 Ordinary):
+each page rendered at 200 dpi and read by Apple's Vision text recogniser
+(music_ocr.swift, compiled on first use). The output is what the reading file's
+question lines are checked against, in place of a text layer; the card shows a
+crop of the printed page, so a student always sees the SEC's own print.
+
+    python3 music_ocr.py <pdf> <out.json> [--lines <positions.txt>]
+
+out.json: {"<page>": "<the page's recognised lines, top to bottom>"}.
+--lines also writes every line with its box as page fractions (for crops).
+macOS only (Vision); nothing in CI reads the PDF or runs this.
+"""
+import json
+import os
+import subprocess
+import sys
+import tempfile
+
+import fitz
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+BIN = '/private/tmp/claude-501/music-ocr-bin'
+
+
+def ocr_binary():
+    if not os.path.exists(BIN):
+        os.makedirs(os.path.dirname(BIN), exist_ok=True)
+        subprocess.run(['swiftc', '-O', os.path.join(HERE, 'music_ocr.swift'), '-o', BIN], check=True)
+    return BIN
+
+
+def main(pdf, out, lines_path=None):
+    binary = ocr_binary()
+    doc = fitz.open(pdf)
+    pages, positions = {}, []
+    with tempfile.TemporaryDirectory() as tmp:
+        for i, pg in enumerate(doc):
+            png = os.path.join(tmp, f'p{i + 1}.png')
+            pg.get_pixmap(dpi=200).save(png)
+            res = subprocess.run([binary, png], capture_output=True, text=True, check=True).stdout
+            texts = []
+            for line in res.splitlines():
+                box, _, text = line.partition('\t')
+                texts.append(text)
+                positions.append(f'p{i + 1} [{", ".join(box.split())}]  {text}')
+            pages[str(i + 1)] = '\n'.join(texts)
+    json.dump(pages, open(out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    open(out, 'a').write('\n')
+    if lines_path:
+        open(lines_path, 'w', encoding='utf-8').write('\n'.join(positions) + '\n')
+
+
+if __name__ == '__main__':
+    args = sys.argv[1:]
+    lines = None
+    if '--lines' in args:
+        i = args.index('--lines')
+        lines = args[i + 1]
+        del args[i:i + 2]
+    main(args[0], args[1], lines)
