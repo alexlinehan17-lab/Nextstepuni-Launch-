@@ -3765,6 +3765,13 @@
           "L4Q2(ii): the transferred started-doing-music partial has no established tariff and remains explicitly unassessed; clear full-credit details retain their native 0/2 controls."
         ],
         "sourceTestSeparation": "Actual original-PDF, independent census and negative source-rule checks are a mandatory Python gate; the2016 Vitest suite is portable and contains no conditional PDF skip."
+      },
+      "r4Recheck20261119": {
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2016-hl.json",
+        "cards": [
+          "ru-2016-hl-gw"
+        ],
+        "releaseComplete": false
       }
     },
     {
