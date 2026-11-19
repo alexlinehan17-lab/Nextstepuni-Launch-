@@ -16923,4 +16923,255 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-i-1", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-ogolne-znaczenie-nastepujacych",
+    section: "I", questionRef: "2014 HL Section I Q1",
+    questionText: "Wyjaśnij własnymi słowami ogólne znaczenie następujących wyrażeń:\na) „być na własnych śmieciach” (akapit 5)\nb) „wlec się w ogonie” (akapit 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme pays a descending ladder here, in its own words: “(3 pkt za jedno wyjaśnienie i 2 pkt za drugie)” — 3, 2 marks, in that order, to a printed total of 5.", group: {"claimMax":2,"perOption":3,"options":["być w swoim domu, na swoim gospodarstwie, w swoim kraju, itp.","nie nadążać za rozwojem sytuacji, nie brać w czymś czynnego udziału, być biernym wobec określonych wydarzeń, itp."],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-i-2", topicId: "polish-3-0", conceptId: "trzy-aspekty-nowej-ustawy-smieciowej-ktore",
+    section: "I", questionRef: "2014 HL Section I Q2",
+    questionText: "Wymień trzy aspekty nowej ustawy śmieciowej, które szokują Polaków i zmuszają ich do całkowitej zmiany sposobu myślenia. (akapit 9)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme pays a descending ladder here, in its own words: “(3 pkt za jeden aspekt i 1 pkt za każdy kolejny)” — 3, 1, 1 marks, in that order, to a printed total of 5.", group: {"claimMax":3,"perOption":3,"options":["fakt, że muszą oni płacić za coś, co wyrzucają lub czego się pozbywają","że to, co do tej pory było takie proste (tj. wywożenie niechcianych gratów do pobliskiego lasu lub rzeki), teraz nie wchodzi już w rachubę","że muszą regularnie i konsekwentnie segregować odpady"],"perOptionSteps":[3,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-i-3", topicId: "polish-3-0", conceptId: "gdzie-tekscie-widzimy-probe-usprawiedliwienia-oryginalnego",
+    section: "I", questionRef: "2014 HL Section I Q3",
+    questionText: "Gdzie w tekście widzimy próbę usprawiedliwienia „oryginalnego stosunku” Polaków do śmieci i bałaganiarstwa? Podaj dwa przykłady.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme pays a descending ladder here, in its own words: “(3 pkt za pierwszy przykład i 2 pkt za drugi)” — 3, 2 marks, in that order, to a printed total of 5.", group: {"claimMax":2,"perOption":3,"options":["w akapicie 5 autorka żartobliwie wspomina Bolesława Prusa, który rzekomo twierdził, że Polacy lubią śmieci (stąd mamy nawet w naszym języku idiom o śmieciach) (akapit 5)","z kolei antropolog kultury (dr Włodzimierz Pessel) wyjaśnia, że nasz obecny stosunek do śmieci został ukształtowany przez wieloletnią biedę i prowizorkę, spowodowane m.in. przez ciągłe migracje i przesiedlenia ludności zamieszkującej nasze tereny (akapit 5)"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-i-4", topicId: "polish-3-0", conceptId: "wypada-byc-dzis-ekologicznie-uwaznym-ekonomicznie",
+    section: "I", questionRef: "2014 HL Section I Q4",
+    questionText: "„Wypada być dziś ekologicznie uważnym i ekonomicznie rozsądnym obywatelem globalnej wioski” (akapit 6). Co oznacza ta wypowiedź w kontekście przeczytanego tekstu i czy się z nią zgadzasz (lub nie zgadzasz)? Uzasadnij swoją odpowiedź.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "(3 pkt za wyjaśnienie wypowiedzi i 2 pkt za własny komentarz)", marks: 5, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. Examples the scheme prints, not a checklist: “świat coraz bardziej skłania się ku ponownemu wykorzystaniu używanych – a nawet zużytych – przedmiotów”; “modnym jest dzisiaj być trochę Re”; “artyści szukają inspiracji i materiałów na złomowiskach”; “ludzie zamiast kupować coś bezmyślnie (np. prezenty), wymyślają inne, coraz popularniejsze, rozwiązania (takie jak np. zrobię to sam lub kupię coś używanego)”; “ubrania, które nie są nam już potrzebne, mogą się przydać innym (mogę je sprzedać lub wymienić)”; “ZGADZAM SIĘ: nasza czynna postawa ma ogromne znaczenie w skali globalnej, bo to przecież my sami tworzymy ten świat”; “NIE ZGADZAM SIĘ: nieważne, co robimy, bo i tak na wielką politykę, ekonomię i ekologię nie mamy żadnego wpływu, więc szkoda naszego wysiłku”.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"c1","verbatim":"wyjaśnienie wypowiedzi","marks":3,"permittedMarks":[0,1,2,3]},{"id":"c2","verbatim":"własny komentarz","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-i-5-a", topicId: "polish-3-0", conceptId: "czas-wlozyc-rece-wlasne-smieci-tytul",
+    section: "I", questionRef: "2014 HL Section I Q5(a)",
+    questionText: "„Czas włożyć ręce we własne śmieci” (tytuł). Odwołując się do treści tekstu napisz, jak należy rozumieć tytuł artykułu w sensie a) dosłownym i b) przenośnym.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "już czas zacząć sortować śmieci", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "sprzątać bałagan", marks: null },
+    { id: "r-3", kind: "point", verbatim: "ograniczać opakowania", marks: null },
+    { id: "r-4", kind: "point", verbatim: "zadbać o jakość produkowanych towarów", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-i-5-b", topicId: "polish-3-0", conceptId: "czas-wlozyc-rece-wlasne-smieci-tytul",
+    section: "I", questionRef: "2014 HL Section I Q5(b)",
+    questionText: "„Czas włożyć ręce we własne śmieci” (tytuł). Odwołując się do treści tekstu napisz, jak należy rozumieć tytuł artykułu w sensie a) dosłownym i b) przenośnym.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "już czas wziąć sprawy w swoje ręce, nawet gdy są one mało przyjemne", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "dokonać samoanalizy i podsumowania", marks: null },
+    { id: "r-3", kind: "point", verbatim: "zająć się własnym podwórkiem", marks: null },
+    { id: "r-4", kind: "point", verbatim: "poczuć się odpowiedzialnym za sprawy dotyczące nas samych i zacząć działać", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-i-6", topicId: "polish-3-0", conceptId: "pozadanie-rzeczy-nastepnie-ich-nadmierne-gromadzenie",
+    section: "I", questionRef: "2014 HL Section I Q6",
+    questionText: "„Pożądanie rzeczy, a następnie ich nadmierne gromadzenie, to nieprzezwyciężona skłonność człowieczego gatunku.” (akapit 4) Czy w świetle przeczytanego tekstu zgadzasz się z tym stwierdzeniem (lub nie zgadzasz)? Uzasadnij swoją odpowiedź.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ZGADZAM SIĘ: natura ludzka jest nienasycona i zachłanna", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "gromadząc nadmiar rzeczy, poszukujemy stałości i bezpieczeństwa; chcemy zatrzymać czas albo znaleźć pocieszenie i wybawienie od naszych codziennych trosk; chcemy też pokazać swój status społeczny lub zaznaczyć pozycję w grupie", marks: null },
+    { id: "r-3", kind: "point", verbatim: "zbyt mocno skoncentrowani na gromadzeniu dóbr materialnych, często zapominamy o wartościach pozamaterialnych, takich jak honor, przyjaźń czy uczciwość", marks: null },
+    { id: "r-4", kind: "point", verbatim: "NIE ZGADZAM SIĘ: obecnie dużo się mówi i dyskutuje na ten temat", marks: null },
+    { id: "r-5", kind: "point", verbatim: "coraz więcej ludzi stara się kontrolować swoją niepohamowaną chęć zakupów i gromadzenia przedmiotów poprzez bardziej odpowiedzialne i świadome życie", marks: null },
+    { id: "r-6", kind: "point", verbatim: "zawsze mamy wolność wyboru", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-ii-1", topicId: "polish-3-2", conceptId: "wczesniej-czy-pozniej-unia-europejska-nawroci",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "„Wcześniej czy później [Unia Europejska] nawróci [Polskę] na swoją religię Re: redukcji, reanimacji i reinkarnacji odpadów. Ta religia ma swoich kapłanów, obrzędy i żąda ofiary.” (akapit 1) Używając około 100 słów, skomentuj ten cytat w świetle przeczytanego tekstu, wyrażając własną opinię na ten temat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Płynna wypowiedź na temat, przy użyciu około 100 słów", marks: 30, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “kapłani to: wszyscy związani z wprowadzaniem nowych przepisów, a zatem urzędnicy europejscy i krajowi, także pracownicy zakładów utylizacji oraz sami śmiecący, itp.”; “obrzędy to: sortowanie śmieci, zmniejszanie liczby opakowań, świadome podejście do zakupów, nowe przyzwyczajenia Polaków, itp.”; “ofiary wynikają: z bycia zmuszonym do zmiany sposobu myślenia; z rezygnacji z dotychczasowych przyzwyczajeń i konieczności wyrobienia w sobie nowych nawyków; z narzuconych dodatkowych opłat za pozbywanie się śmieci i niechcianych przedmiotów; z całego zamieszania wokół nowych przepisów, itp.”; “Z JEDNEJ STRONY: wśród europejskich urzędników jest wielu ideowców, pełnych dobrych pomysłów, a ponieważ są oni u władzy i mają możliwość wprowadzania zmian, na pewno im się to uda”; “coraz więcej ludzi w Polsce jest przekonanych o pozytywnych stronach recyclingu i negatywnych stronach nadmiernej ilości opakowań”; “ALE Z DRUGIEJ STRONY: ludzie nie lubią zmian”; “są leniwi i wygodni, z łatwością znajdują logiczne wytłumaczenie swojego postępowania”; “nie chcą ponosić dodatkowych kosztów”; “wolą wierzyć, że nie jest to ich problem”; “nie lubią, gdy ktoś im coś odgórnie narzuca”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-iii-1", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: Jak dzisiejsze społeczeństwo wpływa na środowisko, w którym żyć będą jego dzieci i wnuki?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “zmiany klimatyczne”; “rozwój gospodarczy i globalizacja”; “zaspokojenie rosnących potrzeb energetycznych”; “żywność i rolnictwo”; “ochrona środowiska (w tym zagrożonych zwierząt i roślin)”; “badania i rozwój nowych technologii”; “aktywne motywowanie władz w tej dziedzinie”; “co każdy z nas może zrobić sam (np. zużycie wody i elektryczności, sortowanie śmieci)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2014 Higher Level — © State Examinations Commission.",
+    id: "pl-2014-hl-iii-2", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: „W poszukiwaniu piękna objedziemy cały świat, ale żeby je znaleźć, trzeba je nosić w sercu. ” – Ralf Waldo Emerson",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Przy przyznawaniu punktów w części II i III będą brane pod uwagę następujące elementy:” Its points for this task, as examples, not a checklist: “definicja piękna od zawsze była sporna; dziś także dla każdego oznacza ono coś innego”; “to, że ktoś opisze jakąś budowlę jako piękną, nie znaczy wcale, że wzbudzi ona w nas te same odczucia”; “żeby dostrzec piękno, potrzebna jest nam pewna wrażliwość serca”; “kontakt z przyrodą i otwarcie na drugiego człowieka mogą nas wyczulić na piękno”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
 ];
