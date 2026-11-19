@@ -130,6 +130,16 @@ NO_SCHEME_EVIDENCE = (
     'for 2015, 2019 and 2023 only. With no scheme there is no stated answer '
     'and no printed tariff, so no card can be made from the paper alone.')
 
+# PLAN-2026-11-18 R4, the treatments lane's prototype: ONE sitting with no
+# published scheme is carded as question-only, every ask of it. Every other
+# no-scheme sitting stays excluded until Alex approves the treatment (review
+# pack 1). The archive evidence for this sitting is in the lane's
+# work/greek/archive-check-2022-ol.md: the SEC lists the paper and no scheme.
+NO_SCHEME_CARDED = {(2022, 'ol')}
+NO_SCHEME_PUBLISHED = 'The SEC published no marking scheme for this paper.'
+NO_SCHEME_NOTE = ('The SEC archive holds this paper and no marking scheme for '
+                  'it (checked 18 November 2026).')
+
 TARIFF_ONLY_EVIDENCE = (
     'the scheme prints its tariff table and stops. 2019 and 2023 Ordinary '
     'carry no "ADDITIONAL NOTES" section at all — where every Higher scheme '
@@ -165,6 +175,9 @@ def build():
         for ask in asks:
             ref = question_ref(year, level, ask.key)
             if S is None:
+                if (year, level) in NO_SCHEME_CARDED:
+                    _no_scheme_card(P, ask, year, level, cards)
+                    continue
                 refuse('the SEC published no marking scheme for this sitting',
                        ref, f'{stamp}: {NO_SCHEME_EVIDENCE}')
                 continue
@@ -307,6 +320,41 @@ def _card(P, S, ask, year, level, cards, refuse, covers=None):
         'totalMarks': marks,
         'rows': rows,
         'notes': _notes(entry, ask, marks, covers),
+    }
+    stem = _stem(ask)
+    if stem:
+        card['stem'] = stem
+    source = _source(P, ask, year, level, question)
+    if source:
+        card['sourceMaterial'] = source
+    cards.append(card)
+
+
+def _no_scheme_card(P, ask, year, level, cards):
+    """The question exactly as the paper prints it, the paper's own marks, and
+    the one fixed line: there is no scheme to lift an answer or a split from,
+    so nothing on the card is claimable (types/markBank.ts `noScheme`)."""
+    question = ask.text
+    route_text = _route_text(P, ask)
+    card = {
+        'id': card_id(year, level, ask.key),
+        'subjectId': SUBJECT,
+        'level': LEVEL_WORD[level],
+        'year': year,
+        'section': f'Q{ask.q}',
+        'topicId': topic_for(level, ask.q, ask.kind, route_text),
+        'conceptId': concept_for(question),
+        'questionRef': question_ref(year, level, ask.key),
+        'questionText': question,
+        'tariffModel': {'kind': 'questionTotal'},
+        'totalMarks': ask.marks,
+        'noScheme': True,
+        'rows': [{'id': 'r-1', 'kind': 'criterion',
+                  'verbatim': NO_SCHEME_PUBLISHED, 'marks': None,
+                  'contextNote': NO_SCHEME_NOTE}],
+        'notes': (f'The examination prints this ask at {ask.marks} marks, on '
+                  f'page {ask.page} of the question booklet. The SEC published '
+                  f'no marking scheme for this paper.'),
     }
     stem = _stem(ask)
     if stem:

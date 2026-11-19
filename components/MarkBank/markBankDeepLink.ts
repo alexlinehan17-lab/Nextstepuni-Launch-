@@ -11,18 +11,19 @@ import { isModelSubject } from '../PaperTrail/atlasModel';
 
 let consumed = false;
 
-export interface MarkBankCardLink { subjectId: string; level: string; cardIds: string[] }
+/** A Topic Atlas question's practice link: the deck to open and the ids of the parts to practise. */
+export interface PracticeLink { subjectId: string; level: string; ids: string[] }
 
-export function consumeInitialMarkBankCards(): MarkBankCardLink | null {
+export function consumeInitialPracticeLink(): PracticeLink | null {
   if (consumed) return null;
   consumed = true;
   if (getBootParam('tool') !== 'mark-bank') return null;
   const subjectId = getBootParam('mbsubject') ?? '';
   const level = getBootParam('mblevel') ?? '';
-  const cardIds = (getBootParam('cards') ?? '').split(',').map(id => id.trim()).filter(Boolean).slice(0, 60);
+  const ids = (getBootParam('cards') ?? '').split(',').map(id => id.trim()).filter(Boolean).slice(0, 60);
   // Only a subject in the single model, at a real level; MarkBank.tsx then keeps only cards its deck holds.
-  if (!isModelSubject(subjectId) || !['higher', 'ordinary', 'foundation', 'common'].includes(level) || !cardIds.length) return null;
-  return { subjectId, level, cardIds };
+  if (!isModelSubject(subjectId) || !['higher', 'ordinary', 'foundation', 'common'].includes(level) || !ids.length) return null;
+  return { subjectId, level, ids };
 }
 
 /** Reset the once-guard: test-only. */

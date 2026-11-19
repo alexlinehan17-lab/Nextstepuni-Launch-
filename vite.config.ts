@@ -131,7 +131,7 @@ const PRECACHE_IGNORES = [
   '**/rubric-*.js',
   '**/exam-topic-data-*.js', '**/paper-topic-data-*.js',
   '**/markbank-french-*.js',
-  // Each subject's Mark Bank / Topic Atlas filing (data/atlasModel/<subject>.json) loads when that subject opens.
+  // Each subject filing for the Mark Bank and Topic Atlas (data/atlasModel/<subject>.json) loads when that subject opens.
   '**/atlas-asks-*.js',
   '**/catchUpLaneData*.js', '**/commandWordData*.js',
   '**/vendor-three*.js',

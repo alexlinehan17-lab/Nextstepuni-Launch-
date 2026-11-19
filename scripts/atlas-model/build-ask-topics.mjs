@@ -7,8 +7,9 @@ import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('../../', import.meta.url));
 const server = await createServer({ root, configFile: false, cacheDir: 'node_modules/.vite-atlas-model', server: { middlewareMode: true, watch: null, hmr: false, ws: false }, optimizeDeps: { noDiscovery: true, include: [] }, appType: 'custom', logLevel: 'error' });
 try {
-  const { deriveAskTopics, FILED_SUBJECTS } = await server.ssrLoadModule('/scripts/atlas-model/askTopics.ts');
-  for (const subjectId of process.argv.slice(2).length ? process.argv.slice(2) : FILED_SUBJECTS) {
+  // Records are kept for the subjects switched on (MODEL_SUBJECTS); a filed subject gets its record when it is.
+  const { deriveAskTopics, MODEL_SUBJECTS: ON } = await server.ssrLoadModule('/scripts/atlas-model/askTopics.ts');
+  for (const subjectId of process.argv.slice(2).length ? process.argv.slice(2) : ON) {
     const { file, problems } = await deriveAskTopics(subjectId);
     if (problems.length) { console.error(problems.slice(0, 20).join('\n')); throw new Error(`${subjectId}: ${problems.length} cards have no topic record`); }
     await writeFile(new URL(`../../data/atlasModel/${subjectId}.json`, import.meta.url), `${JSON.stringify(file)}\n`);

@@ -10,6 +10,13 @@ service firebase.storage {
       allow read: if true;
       allow write: if false;
     }
+    // Mark Bank listening: verified copies of the SEC's recordings, credited
+    // to the SEC, uploaded by scripts/markbank/audio-hosting/ (the SEC blocks
+    // other sites from playing its own copies). Public, like the papers.
+    match /audio/{allPaths=**} {
+      allow read: if true;
+      allow write: if false;
+    }
     // Everything else in the bucket: no client access.
     match /{allPaths=**} {
       allow read, write: if false;
