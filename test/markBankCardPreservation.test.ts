@@ -8,6 +8,7 @@ import { CONSTRUCTION_2025_HIGHER_ADDED_IDS, CONSTRUCTION_2025_ORDINARY_ADDED_ID
 import { CONSTRUCTION_2024_HIGHER_ADDED_IDS, CONSTRUCTION_2024_ORDINARY_ADDED_IDS } from './fixtures/construction2024Reviewed';
 import { CONSTRUCTION_2023_HIGHER_ADDED_IDS, CONSTRUCTION_2023_ORDINARY_ADDED_IDS } from './fixtures/construction2023Reviewed';
 import { CONSTRUCTION_REVIEWED_HIGHER_ADDED_IDS, CONSTRUCTION_REVIEWED_ORDINARY_ADDED_IDS } from './fixtures/constructionReviewedPapers';
+import { LCVP_2015_ADDED_IDS, LCVP_2016_ADDED_IDS, LCVP_2017_ADDED_IDS, LCVP_2018_ADDED_IDS, LCVP_2019_ADDED_IDS, LCVP_2020_ADDED_IDS, LCVP_2021_ADDED_IDS, LCVP_2022_ADDED_IDS, LCVP_2023_ADDED_IDS, LCVP_2024_ADDED_IDS, LCVP_2025_ADDED_IDS, LCVP_2026_ADDED_IDS } from './fixtures/lcvpReviewed';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -129,6 +130,8 @@ import { CARDS as ITALIAN_HIGHER } from '../components/MarkBank/cards/italian/hi
 import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/ordinary';
 import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/higher';
 import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
+import russianReviewedSources from '../scripts/markbank/authoring/russian-reviewed-sources.json';
+import russianOriginalCardIds from './fixtures/russianOriginalCardIds.json';
 import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
 import japanese2026HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2026-hl-census.json';
@@ -2079,6 +2082,8 @@ const historyEssayIds = new Set([...HISTORY_HIGHER, ...HISTORY_ORDINARY]
   .filter(card => card.kind === 'rubric' || card.year === 2026 || card.year <= 2020 || HISTORY_NEW_POINT_IDS.has(card.id)
     || card.id.includes('-deferred-'))
   .map(card => card.id));
+const russianFrozen = new Set([...russianOriginalCardIds.higher, ...russianOriginalCardIds.ordinary]);
+const russianAdditionIds = new Set(russianReviewedSources.map(card => card.id).filter(id => !russianFrozen.has(id)));
 const mathsFrozen = new Set([...mathsLaunchBaseline.higher, ...mathsLaunchBaseline.ordinary]);
 const mathsNewAliases = new Set([...Object.keys(mathsLaunchReview.choiceAliases), ...Object.keys(mathsLaunchReview.identityMigrations).filter(id => id !== 'maths-2021-ol-p2-q6')]);
 const mathsNet = MATHS_HIGHER.length + MATHS_ORDINARY.length - mathsFrozen.size;
@@ -2653,9 +2658,16 @@ const japaneseAliasIds = Object.keys(japaneseAliases);
 // 2010 Ordinary adds61 independently censused whole tasks; original600 identities/hashes and391 aliases stay frozen.
 const japaneseAdditionIds = new Set([japanese2010OrdinaryCensus, japanese2010HigherCensus, japanese2011OrdinaryCensus, japanese2011HigherCensus, japanese2012OrdinaryCensus, japanese2012HigherCensus, japanese2013OrdinaryCensus, japanese2013HigherCensus, japanese2014OrdinaryCensus, japanese2014HigherCensus, japanese2015OrdinaryCensus, japanese2015HigherCensus, japanese2016OrdinaryCensus, japanese2016HigherCensus, japanese2017OrdinaryCensus, japanese2017HigherCensus, japanese2018OrdinaryCensus, japanese2018HigherCensus, japanese2019OrdinaryCensus, japanese2019HigherCensus, japanese2020HigherCensus, japanese2021OrdinaryCensus, japanese2021HigherCensus, japanese2022OrdinaryCensus, japanese2022HigherCensus, japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus, japanese2025OrdinaryCensus, japanese2024HigherCensus, japanese2024OrdinaryCensus, japanese2023HigherCensus, japanese2023OrdinaryCensus].flatMap(census => census.tasks.map(task =>
   `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`)).filter(id => !japaneseLiteralIds.has(id)));
+const lcvpAdditionIds = new Set<string>([...LCVP_2015_ADDED_IDS, ...LCVP_2016_ADDED_IDS, ...LCVP_2017_ADDED_IDS, ...LCVP_2018_ADDED_IDS, ...LCVP_2019_ADDED_IDS, ...LCVP_2020_ADDED_IDS, ...LCVP_2021_ADDED_IDS, ...LCVP_2022_ADDED_IDS, ...LCVP_2023_ADDED_IDS, ...LCVP_2024_ADDED_IDS, ...LCVP_2025_ADDED_IDS, ...LCVP_2026_ADDED_IDS]);
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
   if (name.startsWith('history:')) return ids.filter(id => !historyEssayIds.has(id));
+  if (name === 'lcvp:common') return ids.filter(id => !lcvpAdditionIds.has(id));
+  if (name.startsWith('russian:')) {
+    const published = new Set(ids);
+    return russianOriginalCardIds[name.endsWith(':higher') ? 'higher' : 'ordinary']
+      .filter(id => published.has(id) || published.has(CARD_ID_ALIASES[id]));
+  }
   if (name.startsWith('maths:')) {
     const published = new Set(ids);
     return mathsLaunchBaseline[name.endsWith(':higher') ? 'higher' : 'ordinary']
@@ -2730,7 +2742,9 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   return ids;
 };
 const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
-  name.startsWith('maths:') ? cards.filter(card => mathsFrozen.has(card.id)).length
+  name === 'lcvp:common' ? cards.filter(card => !lcvpAdditionIds.has(card.id)).length
+    : name.startsWith('russian:') ? cards.filter(card => russianFrozen.has(card.id)).length
+    : name.startsWith('maths:') ? cards.filter(card => mathsFrozen.has(card.id)).length
     : name.startsWith('japanese:') ? cards.filter(card => !japaneseAdditionIds.has(card.id)).length
     : name.startsWith('home-economics:') ? cards.filter(card => !homeEconomicsAdditionIds.has(card.id)).length
     : name.startsWith('economics:') ? cards.filter(card => !economicsAdditionIds.has(card.id)).length
@@ -2756,6 +2770,16 @@ const peAdditions = {
 } as const;
 
 describe('Mark Bank card preservation', () => {
+  it('retains all 204 reviewed LCVP additions beside the unchanged original 314 identities', () => {
+    const added = LCVP_COMMON.filter(card => lcvpAdditionIds.has(card.id));
+    expect(added.map(card => card.id).sort()).toEqual([...LCVP_2015_ADDED_IDS, ...LCVP_2016_ADDED_IDS, ...LCVP_2017_ADDED_IDS, ...LCVP_2018_ADDED_IDS, ...LCVP_2019_ADDED_IDS, ...LCVP_2020_ADDED_IDS, ...LCVP_2021_ADDED_IDS, ...LCVP_2022_ADDED_IDS, ...LCVP_2023_ADDED_IDS, ...LCVP_2024_ADDED_IDS, ...LCVP_2025_ADDED_IDS, ...LCVP_2026_ADDED_IDS].sort());
+    expect(lcvpAdditionIds.size).toBe(204);
+    expect(LCVP_COMMON).toHaveLength(518);
+  });
+  it('retains reviewed Russian additions beside the original frozen identities', () => {
+    const additions = [...RUSSIAN_HIGHER, ...RUSSIAN_ORDINARY].filter(card => !russianFrozen.has(card.id));
+    expect(additions.map(card => card.id).sort()).toEqual([...russianAdditionIds].sort());
+  });
   it('retains the reviewed Home Economics additions beside the frozen set', () => {
     const added = [...HOME_EC_HIGHER, ...HOME_EC_ORDINARY].filter(card => homeEconomicsAdditionIds.has(card.id));
     expect(added.map(card => card.id).sort()).toEqual([...homeEconomicsAdditionIds].sort());
@@ -3107,15 +3131,16 @@ describe('Mark Bank card preservation', () => {
         || name.startsWith('geography:') || name.startsWith('english:') || name.startsWith('biology:')
         || name.startsWith('chemistry:') || name.startsWith('history:')
         || name.startsWith('maths:') || name.startsWith('physics:')
-        || name.startsWith('home-economics:') || name.startsWith('japanese:')
+        || name.startsWith('home-economics:') || name.startsWith('japanese:') || name.startsWith('lcvp:')
         ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(24_087 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(24_087 + frenchAdditionIds.size + artNet + russianAdditionIds.size);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
       .toBe(24_087 + frenchAdditionIds.size + businessAdditionIds.size + technologyAddedCount + dcgAddedCount
+        + russianAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
@@ -3128,7 +3153,7 @@ describe('Mark Bank card preservation', () => {
         // Codex's reviewed Maths, Physics, Home Economics, Japanese and Link Modules (release 2026-11-18).
         + mathsNet
         + physicsAdditionIds.size - physicsAliasIds.length + homeEconomicsAdditionIds.size - homeEconomicsAliasIds.length
-        + japaneseAdditionIds.size - japaneseAliasIds.length);
+        + japaneseAdditionIds.size - japaneseAliasIds.length + lcvpAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

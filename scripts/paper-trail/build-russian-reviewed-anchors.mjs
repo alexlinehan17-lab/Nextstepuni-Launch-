@@ -1,0 +1,91 @@
+#!/usr/bin/env node
+/** Add only the reviewed Russian tasks and retain every previous identity. */
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { reviewedRussianJointTask, verifyRussianJointAnchors, mergeRussianQuestionTag, verifyRussianJointTags } from '../markbank/russianJointTasks.mjs';
+import { validateReviewedRussianQuestionTopics } from '../markbank/russianJointTopics.mjs';
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+const read = file => JSON.parse(fs.readFileSync(path.join(ROOT, file), 'utf8'));
+const cards = read('components/MarkBank/cards/russian/reviewed.json');
+const sources = read('scripts/markbank/authoring/russian-reviewed-sources.json');
+const tagPath = 'scripts/paper-trail/topic-tags/tags/russian.json';
+const tags = read(tagPath);
+const write = (file, data) => {
+  fs.mkdirSync(path.dirname(path.join(ROOT, file)), { recursive: true });
+  fs.writeFileSync(path.join(ROOT, file), JSON.stringify(data) + '\n');
+};
+await validateReviewedRussianQuestionTopics(ROOT, sources, cards);
+for (const fileid of new Set(sources.map(source => `${source.year}/${source.paperFileid}`))) {
+  const tasks = sources.filter(source => `${source.year}/${source.paperFileid}` === fileid);
+  const first = tasks[0];
+  const file = `scripts/paper-trail/answers/${fileid}.json`;
+  const map = fs.existsSync(path.join(ROOT,file)) ? read(file) : {
+    v: 1, paperFileid: first.paperFileid, schemeFileid: first.schemeFileid,
+    component: first.component, band: [1, Math.max(...tasks.flatMap(task=>task.schemePages))],
+    copyright: '© State Examinations Commission', q: [],
+  };
+  let tag = tags.find(tag=>tag.year===first.year && tag.fileid===first.paperFileid && tag.lang==='ev');
+  if (!tag) {
+    tag = {subjectId:'russian',level:first.level,lang:'ev',year:first.year,fileid:first.paperFileid,
+      paperKey:first.component==='A00'?'aural':'single',q:[]};
+    tags.push(tag);
+  }
+  for(const task of tasks) {
+    const card = cards.find(card=>card.id===task.id);
+    const joint = reviewedRussianJointTask(task, card);
+    const questions = joint ?? [{
+      n: task.id.replace(/^ru-\d+-[a-z]+-/, ''), questionRef: task.questionRef,
+      questionPages: task.questionPages ?? task.paperPages, schemePages: task.schemePages,
+    }];
+    for (const original of questions) {
+      const n = original.n;
+      const question = {n,label:original.questionRef.replace(/^\d+ (?:HL|OL) /,''),printOrder:map.q.length+1,
+        pP:original.questionPages[0],pY:[0,1],paperRegion:task.paperPages.map(p=>({p,r:[0,0,1,1]})),
+        region:original.schemePages.map(p=>({p,r:[0,0,1,1]})),mode:'pagejump',conf:1,
+        ...(joint ? {markBankCardId:card.id} : {})};
+      const existing = map.q.find(row=>row.n===n);
+      if(existing)Object.assign(existing,question,{printOrder:existing.printOrder});
+      else map.q.push(question);
+      const existingTag=tag.q.find(row=>row.n===n);
+      const questionTag=mergeRussianQuestionTag(existingTag,original,task,card);
+      if(!existingTag) tag.q.push(questionTag);
+    }
+    verifyRussianJointAnchors(task, card, map);
+    verifyRussianJointTags(task, card, tag);
+  }
+  map.maxCropPages=Math.max(3,...tasks.map(task=>Math.max(...task.paperPages)-Math.min(...task.paperPages)+1));
+  write(file,map);
+  write(`public/paper-answers/${fileid}.json`,map);
+  write(`public/paper-anchors/${fileid}.json`,map);
+}
+fs.writeFileSync(path.join(ROOT,tagPath),JSON.stringify(tags,null,1)+'\n');
+// Keep the generated index's answer chips in sync with these reviewed maps.
+// Preserve every unrelated subject and every unchanged Russian line verbatim.
+const indexPath = path.join(ROOT, 'paperTrailData.ts');
+const indexText = fs.readFileSync(indexPath, 'utf8');
+const marker = '\n  "russian": [\n';
+const start = indexText.indexOf(marker) + marker.length;
+const end = indexText.indexOf('\n  ],', start);
+if (start < marker.length || end < start) throw new Error('Russian index block missing');
+const reviewedFiles = new Set(sources.map(source => `${source.year}|${source.level}|${source.paperFileid}`));
+const spacedJson = value => Array.isArray(value) ? `[${value.map(spacedJson).join(', ')}]`
+  : value !== null && typeof value === 'object'
+    ? `{${Object.entries(value).map(([key, item]) => `${JSON.stringify(key)}: ${spacedJson(item)}`).join(', ')}}`
+    : JSON.stringify(value);
+const indexRows = indexText.slice(start, end).split('\n').map(line => {
+  const raw = line.trim();
+  const comma = raw.endsWith(',');
+  const entry = JSON.parse(comma ? raw.slice(0, -1) : raw);
+  if (entry.lang !== 'ev' || (entry.sitting && entry.sitting !== 'main')) return line;
+  let changed = false;
+  for (const paper of entry.papers) {
+    if (paper.scheme && reviewedFiles.has(`${entry.year}|${entry.level}|${paper.doc.f}`) && paper.answers !== 1) {
+      paper.answers = 1;
+      changed = true;
+    }
+  }
+  return changed ? `    ${spacedJson(entry)}${comma ? ',' : ''}` : line;
+}).join('\n');
+fs.writeFileSync(indexPath, indexText.slice(0, start) + indexRows + indexText.slice(end));
+console.log(`Russian Atlas: ${sources.length} reviewed tasks linked to original question and scheme pages.`);

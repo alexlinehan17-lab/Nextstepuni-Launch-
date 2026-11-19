@@ -56,6 +56,8 @@ import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/high
 import { CARDS as RE_HIGHER } from '../components/MarkBank/cards/religious-education/higher';
 import { CARDS as RE_ORDINARY } from '../components/MarkBank/cards/religious-education/ordinary';
 import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
+import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/higher';
+import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
@@ -87,6 +89,7 @@ const japaneseUnnumberedRefs = new Map(([
 const isJapaneseUnnumberedRef = (id: string, ref: string) => japaneseUnnumberedRefs.get(id) === ref;
 
 const deckCards = (subject: string): { id: string; ref: string }[] => {
+  if (subject === 'russian') return [...RUSSIAN_HIGHER, ...RUSSIAN_ORDINARY].map(({id, questionRef: ref}) => ({id, ref}));
   if (subject === 'accounting') return [...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
   if (subject === 'japanese') return [...JAPANESE_HIGHER, ...JAPANESE_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
   if (subject === 'french') {
@@ -223,7 +226,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // display ordering is not the manifest ordering. Coverage pins identity,
     // not presentation order.
     if (subject === 'english' || subject === 'irish' || subject === 'art'
-      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education' || subject === 'applied-maths' || subject === 'accounting' || subject === 'business' || subject === 'religious-education' || subject === 'japanese') identities.sort();
+      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education' || subject === 'applied-maths' || subject === 'accounting' || subject === 'business' || subject === 'religious-education' || subject === 'russian' || subject === 'japanese') identities.sort();
     const digest = createHash('sha256')
       .update(identities.join('\n'))
       .digest('hex').slice(0, 16);
@@ -327,7 +330,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
     }
-    if (subject === 'physical-education' || subject === 'applied-maths' || subject === 'japanese') {
+    if (subject === 'physical-education' || subject === 'applied-maths' || subject === 'russian' || subject === 'japanese') {
       // PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
       for (const name of subject === 'physical-education' ? ['factory.ts', 'reviewed.json', 'answers.ts'] : ['reviewed.ts', 'reviewed.json']) {
         h.update(readFileSync(resolve(
