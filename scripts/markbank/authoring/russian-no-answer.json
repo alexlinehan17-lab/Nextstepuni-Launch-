@@ -753,6 +753,37 @@
       "schemeSha256": "0e0ba4dc7e9bffee7675b899d8380ed4102c50d5c0c84ffb7decf39362e5979e",
       "reviewedAt": "2026-11-19",
       "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2011-hl.json"
+    },
+    "ru-2011-ol-la2": {
+      "printedMarks": 8,
+      "schemePages": [
+        5
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2011-ol.pdf",
+      "schemeSha256": "e4160e18369177d720c75bfba145a13289b352affa583db0881a37b058df1716",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2011-ol.json"
+    },
+    "ru-2011-ol-sa": {
+      "printedMarks": 30,
+      "schemePages": [
+        9
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2011-ol.pdf",
+      "schemeSha256": "e4160e18369177d720c75bfba145a13289b352affa583db0881a37b058df1716",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2011-ol.json"
+    },
+    "ru-2011-ol-ew": {
+      "printedMarks": 30,
+      "schemePages": [
+        10,
+        11
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2011-ol.pdf",
+      "schemeSha256": "e4160e18369177d720c75bfba145a13289b352affa583db0881a37b058df1716",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2011-ol.json"
     }
   }
 }
