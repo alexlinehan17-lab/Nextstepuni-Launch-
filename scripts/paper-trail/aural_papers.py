@@ -359,7 +359,11 @@ def scheme_blocks(doc, want_n, paper_words, parts_mode=False):
 # (right for a last QUESTION), which cut off the rest of the Polish 2026
 # Ordinary Część E (EV p13 -> p14, IV p14 -> p15). Keyed for the same reason
 # as FORCE_PARTS: a general rule moves the maps of eleven languages.
-LAST_PART_TO_KEY_END = {"2026/LC548GLPA00EV.pdf", "2026/LC548GLPA00IV.pdf"}
+# The Portuguese 2022 booklets' Parte E runs on too (Higher p23 -> p24,
+# Ordinary p21 -> p22), EV and IV alike.
+LAST_PART_TO_KEY_END = {"2026/LC548GLPA00EV.pdf", "2026/LC548GLPA00IV.pdf",
+                        "2022/LC018ALPA00EV.pdf", "2022/LC018ALPA00IV.pdf",
+                        "2022/LC018GLPA00EV.pdf", "2022/LC018GLPA00IV.pdf"}
 
 # A heading that ends a scheme's listening key: its appendices (the modified
 # marking scheme, the audio scripts), a line opening "APPENDIX" / "AGUISÍN".
