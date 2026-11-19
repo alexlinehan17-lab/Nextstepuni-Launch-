@@ -6,11 +6,12 @@ from pathlib import Path
 from reconcile import parse_ref
 from ru_review_2012_hl import build,source_records,grammar_forms
 from ru_review_census import reviewed_keys
+from ru_no_answer import annotate_no_answers
 from ru_verify_review import verify,normal
 
 class Original2012HigherSources(unittest.TestCase):
     @classmethod
-    def setUpClass(cls):cls.cards=build()
+    def setUpClass(cls):cls.cards=annotate_no_answers(build())
 
     def get(self,suffix):return copy.deepcopy(next(c for c in self.cards if c['id']=='ru-2012-hl-'+suffix))
 
@@ -19,9 +20,9 @@ class Original2012HigherSources(unittest.TestCase):
         for c in self.cards:
             ref=parse_ref(c['questionRef']);self.assertIsNotNone(ref)
             keys.update((ref['section'],ref['q'],letter,roman) for letter,roman in ref['paths'])
-        census=reviewed_keys(2012,'hl');self.assertEqual(len(census),40)
+        census=reviewed_keys(2012,'hl');self.assertEqual(len(census),42)
         self.assertEqual(census,keys)
-        self.assertEqual(len(keys),40);self.assertEqual(sum(c['totalMarks'] for c in self.cards if c['id']!='ru-2012-hl-c1-2-ii'),296)
+        self.assertEqual(len(keys),42);self.assertEqual(sum(c['totalMarks'] for c in self.cards if c['id']!='ru-2012-hl-c1-2-ii'),296)
 
     def test_published_cards_equal_original_derivation(self):
         root=Path(__file__).resolve().parents[3]

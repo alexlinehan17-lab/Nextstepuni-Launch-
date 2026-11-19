@@ -10,8 +10,8 @@ const row=(group:string,id='full',value=1)=>({[languageGroupId(group)]:1,[langua
 const slot=(id:string,value:number)=>({[languageGroupId(id)]:1,[languageScoreId(id)]:value});
 
 describe('Russian 2012 Higher supported source tasks',()=>{
-  it('keeps the numeric conflict held within complete forty-task source coverage',()=>{
-    expect(sitting).toHaveLength(40);expect(sitting.some(c=>c.id==='ru-2012-hl-c1-2-ii')).toBe(true);
+  it('keeps the printed allocation conflict within complete forty-two-ask coverage',()=>{
+    expect(sitting).toHaveLength(42);expect(sitting.some(c=>c.id==='ru-2012-hl-c1-2-ii')).toBe(true);
     expect(sitting.filter(c=>!tariffReconciles(c)).map(c=>c.id)).toEqual([]);
     expect(sitting.filter(c=>c.id!=='ru-2012-hl-c1-2-ii').reduce((s,c)=>s+c.totalMarks,0)).toBe(296);
     expect(sitting.reduce((s,c)=>s+c.totalMarks,0)).toBe(302);
@@ -39,10 +39,14 @@ describe('Russian 2012 Higher supported source tasks',()=>{
     expect(c.answerLanguageRule).toBeUndefined();expect(c.rubric.markingGuideNote).toContain('BOTH the exhibits and their importance');
   });
   it('keeps only the source instrumental partial and no invented case examples',()=>{
-    const c=writing('la1');expect(c.rubric.criteria.map(x=>x.permittedMarks)).toEqual([[0,2],[0,2],[0,1,2]]);
+    const first=writing('la1'),second=writing('la1-ii'),c=writing('la1-iii');
+    expect([first,second,c].map(p=>p.totalMarks)).toEqual([2,2,2]);
+    expect([first,second,c].map(p=>p.rubric.criteria.map(x=>x.permittedMarks))).toEqual([[[0,2]],[[0,2]],[[0,1,2]]]);
     expect(languageMarks(c,{[languageScoreId('instrumental')]:1})).toBe(1);
-    expect(languageMarks(c,{[languageScoreId('accusative')]:1})).toBe(0);
-    expect(c.rubric.taskRequirements.join(' ')).toContain('одним');
+    expect(languageMarks(first,{[languageScoreId('accusative')]:1})).toBe(0);
+    expect(c.rubric.criteria[0].guidance.join(' ')).toContain('одним');
+    expect(first.rubric.criteria[0].guidance.join(' ')).not.toContain('одним');
+    expect(c.rubric.markingGuideNote).toContain('Full-credit example: The scheme prints no answer for this part.');
   });
   it('keeps the cultural two-topic quota and literal unnamed language exception',()=>{
     const c=points('ca1');expect(c.rubric.count).toBe(2);expect(c.rubric.groups.map(g=>g.label)).toEqual(['электричка','дача','Арбат','метро']);
@@ -89,8 +93,8 @@ describe('Russian 2012 Higher supported source tasks',()=>{
     expect(languageMarks(c,{...slot('detail-1',2),...slot('detail-2',1),...slot('detail-3',2)})).toBe(5);
     expect(c.rubric.markingGuideNote).toContain('One mark is available only for a named source partial');
   });
-  it('scopes language penalties to thirteen written tasks and exempts all summaries and listening',()=>{
-    expect(sitting.filter(c=>c.answerLanguageRule)).toHaveLength(13);
+  it('scopes language penalties to fifteen written tasks and exempts all summaries and listening',()=>{
+    expect(sitting.filter(c=>c.answerLanguageRule)).toHaveLength(15);
     expect(sitting.filter(c=>c.audioMaterial||c.section==='C2').every(c=>!c.answerLanguageRule)).toBe(true);
     expect(get('c1-1-i').answerLanguageRule?.sourceText).not.toContain('red pen');
   });

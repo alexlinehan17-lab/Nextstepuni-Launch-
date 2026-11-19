@@ -1,0 +1,83 @@
+{
+  "reviewedAt": "2026-11-19T12:44:25.872271+00:00",
+  "rule": "R7; CARD-STANDARD sections3,5,10a",
+  "originalCardId": "ru-2012-hl-la1",
+  "originalConceptId": "paragraph-below-find-examples-following-marks",
+  "paperPages": [
+    4
+  ],
+  "paperSha256": "b7757711e6c73bd6f4d7648501364cb252d771bce02177a4c52893137c6ff04a",
+  "schemePages": [
+    7
+  ],
+  "archive": {
+    "year": 2012,
+    "level": "hl",
+    "url": "https://www.examinations.ie/archive/markingschemes/2012/LC099ALP000EV.pdf",
+    "filename": "Russian-2012-hl-SEC-fresh-20261119.pdf",
+    "pages": 28,
+    "downloadDone": true,
+    "downloadConfirmation": "Chrome history shows exact completed file and source URL with Show in Finder.",
+    "checkedAt": "2026-11-19T12:06:11.452Z",
+    "bytes": 559034,
+    "sha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+    "retainedSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+    "exactMatch": true,
+    "freshDownloadVerified": true,
+    "localFile": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/stale-exclusions-20261119/sec-recheck/2012-hl.pdf"
+  },
+  "cards": [
+    {
+      "id": "ru-2012-hl-la1",
+      "printedMarks": 2,
+      "schemePages": [
+        7
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2012-hl.pdf",
+      "schemeSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2012-hl.json",
+      "fixedLine": "The scheme prints no answer for this part.",
+      "finding": "Printed marking instructions without an exemplar answer; two marks retained."
+    },
+    {
+      "id": "ru-2012-hl-la1-ii",
+      "printedMarks": 2,
+      "schemePages": [
+        7
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2012-hl.pdf",
+      "schemeSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2012-hl.json",
+      "fixedLine": "The scheme prints no answer for this part.",
+      "finding": "Printed marking instructions without an exemplar answer; two marks retained."
+    },
+    {
+      "id": "ru-2012-hl-la1-iii",
+      "printedMarks": 2,
+      "schemePages": [
+        7
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2012-hl.pdf",
+      "schemeSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2012-hl.json",
+      "noticePrefix": "Full-credit example: ",
+      "fixedLine": "The scheme prints no answer for this part.",
+      "finding": "One-mark partial одним retained; no full-credit example printed."
+    }
+  ],
+  "paperAsksBefore": 40,
+  "paperAsksAfter": 42,
+  "cardMarksBefore": 6,
+  "cardMarksAfter": [
+    2,
+    2,
+    2
+  ],
+  "sourceReading": "Original question page and every relevant scheme page read as images and text. The question prints separate prompts; the scheme gives two marks to each. Shared source passage/pages retained on each card.",
+  "specialInstruction": "Retain the one-mark partial answer одним on the instrumental question.",
+  "mainAtReview": "dd70ba43d6bc87dbe293b72d1b52c1cabdfcabf0",
+  "liveCardsChanged": false
+}

@@ -39,8 +39,11 @@ def annotate_no_answers(cards):
         assert checked[relative] == entry['schemeSha256'], card['id']
         if card['kind'] == 'rubric':
             note = card['rubric'].get('markingGuideNote', '')
-            if not note.startswith(FIXED_LINE):
-                card['rubric']['markingGuideNote'] = FIXED_LINE + (' ' + note if note else '')
+            prefix = entry.get('noticePrefix', '')
+            assert prefix in ('', 'Full-credit example: '), card['id']
+            notice = prefix + FIXED_LINE
+            if not note.startswith(notice):
+                card['rubric']['markingGuideNote'] = notice + (' ' + note if note else '')
         card['review']['reviewedAt'] = entry['reviewedAt']
         card['review']['noPrintedAnswer'] = {
             'fixedLine': FIXED_LINE,

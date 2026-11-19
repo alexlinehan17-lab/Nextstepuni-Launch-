@@ -161380,9 +161380,9 @@
     "section": "LA1",
     "topicId": "russian-3-2",
     "conceptId": "paragraph-below-find-examples-following-marks",
-    "questionRef": "2012 HL Section LA1 Q",
-    "questionText": "In the paragraph below find the examples of each of the following (6 marks)\n\nGive an example of a noun in the accusative case\nGive an example of a noun in the prepositional case.\nGive an example of a noun in the instrumental case",
-    "totalMarks": 6,
+    "questionRef": "2012 HL Section LA1 Q(i)",
+    "questionText": "In the paragraph below find the examples of each of the following\n\nGive an example of a noun in the accusative case",
+    "totalMarks": 2,
     "sourceMaterial": {
       "kind": "source-text",
       "label": "Official question and source",
@@ -161404,7 +161404,16 @@
       "component": "000",
       "questionPages": [
         4
-      ]
+      ],
+      "reviewedAt": "2026-11-19",
+      "splitEvidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2012-hl.json",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          7
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2012-hl.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -161419,39 +161428,15 @@
             2
           ],
           "guidance": [
-            "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested i. Give an example of a noun in the accusative case: ii. Give an example of a noun in the prepositional case iii Give an example of a noun in the instrumental case (award ONE mark for одним)"
-          ]
-        },
-        {
-          "id": "prepositional",
-          "label": "Give an example of a noun in the prepositional case.",
-          "maxMarks": 2,
-          "permittedMarks": [
-            0,
-            2
-          ],
-          "guidance": [
-            "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested i. Give an example of a noun in the accusative case: ii. Give an example of a noun in the prepositional case iii Give an example of a noun in the instrumental case (award ONE mark for одним)"
-          ]
-        },
-        {
-          "id": "instrumental",
-          "label": "Give an example of a noun in the instrumental case",
-          "maxMarks": 2,
-          "permittedMarks": [
-            0,
-            1,
-            2
-          ],
-          "guidance": [
-            "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested i. Give an example of a noun in the accusative case: ii. Give an example of a noun in the prepositional case iii Give an example of a noun in the instrumental case (award ONE mark for одним)"
+            "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested",
+            "Give an example of a noun in the accusative case:"
           ]
         }
       ],
       "taskRequirements": [
-        "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested i. Give an example of a noun in the accusative case: ii. Give an example of a noun in the prepositional case iii Give an example of a noun in the instrumental case (award ONE mark for одним)"
+        "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested"
       ],
-      "markingGuideNote": "Supply three examples from the original paragraph. The source permits the nominative form or requested case and explicitly gives one mark for одним in the instrumental task. It provides no full-credit exemplar pool; no example nouns are invented."
+      "markingGuideNote": "The scheme prints no answer for this part. Use the shared paragraph on the original question page. This separately numbered part is marked out of two; all three parts together are marked out of six. The scheme permits the nominative form or the requested case."
     },
     "answerLanguageRule": {
       "otherLanguageMultiplier": 0,
@@ -208543,6 +208528,155 @@
         "Q.2 Summary writing [50 marks: 45 + 5] Summary writing 45 marks Write a summary in English of the content of each Section as instructed. Marks are awarded for relevant content (a minimum of 5 details) and for summary-writing skills, the structuring of your answer, and your ability to differentiate essential information from secondary details. Award 2 marks for each of 5 details – whether main or secondary - (up to 10 marks) AND 1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION 2) discretionary mark to reward candidates who Express/develop their ideas clearly Provide evidence of an ability to synthesise. Supply additional details. Demonstrate ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian- language words in their answers). If a candidate fails to answer all sections/sub-section of a question, do not award a discretionary mark)"
       ],
       "markingGuideNote": "The scheme gives up to 10 content marks plus one discretionary mark, or two for a particularly well-answered question. This individual practice card is therefore marked out of 12. The scheme also prints 45 marks for all four summaries together, while the paper prints 40. Four individual maxima add to 48; do not add these practice scores to report a section mark above the scheme’s printed 45. All three source figures are retained. Assess content manually against the complete printed pool and its conditions; the numerical controls do not count or classify individual details. Assess language manually for each section. Read the general no-marks instruction alongside the summary-specific discretion exception. The scheme gives no numerical or wholly/mixed-language threshold; do not automatically remove discretionary marks merely because Russian words appear. English or Irish is permitted by the original bilingual paper."
+    }
+  },
+  {
+    "id": "ru-2012-hl-la1-ii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2012,
+    "section": "LA1",
+    "topicId": "russian-3-2",
+    "conceptId": "example-noun-prepositional-case",
+    "questionRef": "2012 HL Section LA1 Q(ii)",
+    "questionText": "In the paragraph below find the examples of each of the following\n\nGive an example of a noun in the prepositional case.",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Higher Russian — LA1",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 7.",
+    "review": {
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        7
+      ],
+      "component": "000",
+      "questionPages": [
+        4
+      ],
+      "reviewedAt": "2026-11-19",
+      "splitEvidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2012-hl.json",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          7
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2012-hl.json"
+      }
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "criteria": [
+        {
+          "id": "prepositional",
+          "label": "Give an example of a noun in the prepositional case.",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested",
+            "Give an example of a noun in the prepositional case"
+          ]
+        }
+      ],
+      "taskRequirements": [
+        "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested"
+      ],
+      "markingGuideNote": "The scheme prints no answer for this part. Use the shared paragraph on the original question page. This separately numbered part is marked out of two; all three parts together are marked out of six. The scheme permits the nominative form or the requested case."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
+      "schemePages": [
+        3
+      ]
+    }
+  },
+  {
+    "id": "ru-2012-hl-la1-iii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2012,
+    "section": "LA1",
+    "topicId": "russian-3-2",
+    "conceptId": "example-noun-instrumental-case",
+    "questionRef": "2012 HL Section LA1 Q(iii)",
+    "questionText": "In the paragraph below find the examples of each of the following\n\nGive an example of a noun in the instrumental case",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Higher Russian — LA1",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 7.",
+    "review": {
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        7
+      ],
+      "component": "000",
+      "questionPages": [
+        4
+      ],
+      "reviewedAt": "2026-11-19",
+      "splitEvidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2012-hl.json",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          7
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2012-hl.json"
+      }
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "criteria": [
+        {
+          "id": "instrumental",
+          "label": "Give an example of a noun in the instrumental case",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidance": [
+            "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested",
+            "Give an example of a noun in the instrumental case (award ONE mark for одним)"
+          ]
+        }
+      ],
+      "taskRequirements": [
+        "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested"
+      ],
+      "markingGuideNote": "Full-credit example: The scheme prints no answer for this part. Use the shared paragraph on the original question page. This separately numbered part is marked out of two; all three parts together are marked out of six. The scheme permits the nominative form or the requested case. The scheme gives one mark for одним, but prints no full-credit example. Preserve that partial answer when assessing the response."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
+      "schemePages": [
+        3
+      ]
     }
   }
 ]

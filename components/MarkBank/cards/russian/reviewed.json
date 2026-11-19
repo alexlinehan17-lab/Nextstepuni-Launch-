@@ -171388,9 +171388,9 @@
     "section": "LA1",
     "topicId": "russian-3-2",
     "conceptId": "paragraph-below-find-examples-following-marks",
-    "questionRef": "2012 HL Section LA1 Q",
-    "questionText": "In the paragraph below find the examples of each of the following (6 marks)\n\nGive an example of a noun in the accusative case\nGive an example of a noun in the prepositional case.\nGive an example of a noun in the instrumental case",
-    "totalMarks": 6,
+    "questionRef": "2012 HL Section LA1 Q(i)",
+    "questionText": "In the paragraph below find the examples of each of the following\n\nGive an example of a noun in the accusative case",
+    "totalMarks": 2,
     "sourceMaterial": {
       "kind": "source-text",
       "label": "Official question and source",
@@ -171415,39 +171415,15 @@
             2
           ],
           "guidance": [
-            "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested i. Give an example of a noun in the accusative case: ii. Give an example of a noun in the prepositional case iii Give an example of a noun in the instrumental case (award ONE mark for одним)"
-          ]
-        },
-        {
-          "id": "prepositional",
-          "label": "Give an example of a noun in the prepositional case.",
-          "maxMarks": 2,
-          "permittedMarks": [
-            0,
-            2
-          ],
-          "guidance": [
-            "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested i. Give an example of a noun in the accusative case: ii. Give an example of a noun in the prepositional case iii Give an example of a noun in the instrumental case (award ONE mark for одним)"
-          ]
-        },
-        {
-          "id": "instrumental",
-          "label": "Give an example of a noun in the instrumental case",
-          "maxMarks": 2,
-          "permittedMarks": [
-            0,
-            1,
-            2
-          ],
-          "guidance": [
-            "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested i. Give an example of a noun in the accusative case: ii. Give an example of a noun in the prepositional case iii Give an example of a noun in the instrumental case (award ONE mark for одним)"
+            "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested",
+            "Give an example of a noun in the accusative case:"
           ]
         }
       ],
       "taskRequirements": [
-        "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested i. Give an example of a noun in the accusative case: ii. Give an example of a noun in the prepositional case iii Give an example of a noun in the instrumental case (award ONE mark for одним)"
+        "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested"
       ],
-      "markingGuideNote": "Supply three examples from the original paragraph. The source permits the nominative form or requested case and explicitly gives one mark for одним in the instrumental task. It provides no full-credit exemplar pool; no example nouns are invented."
+      "markingGuideNote": "The scheme prints no answer for this part. Use the shared paragraph on the original question page. This separately numbered part is marked out of two; all three parts together are marked out of six. The scheme permits the nominative form or the requested case."
     },
     "answerLanguageRule": {
       "otherLanguageMultiplier": 0,
@@ -171477,7 +171453,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -220112,6 +220088,159 @@
     "schemeRegion": {
       "schemeFileid": "LC099ALP000EV.pdf",
       "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2012-hl-la1-ii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2012,
+    "section": "LA1",
+    "topicId": "russian-3-2",
+    "conceptId": "example-noun-prepositional-case",
+    "questionRef": "2012 HL Section LA1 Q(ii)",
+    "questionText": "In the paragraph below find the examples of each of the following\n\nGive an example of a noun in the prepositional case.",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Higher Russian — LA1",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 7.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "criteria": [
+        {
+          "id": "prepositional",
+          "label": "Give an example of a noun in the prepositional case.",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested",
+            "Give an example of a noun in the prepositional case"
+          ]
+        }
+      ],
+      "taskRequirements": [
+        "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested"
+      ],
+      "markingGuideNote": "The scheme prints no answer for this part. Use the shared paragraph on the original question page. This separately numbered part is marked out of two; all three parts together are marked out of six. The scheme permits the nominative form or the requested case."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
+      "schemePages": [
+        3
+      ]
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000EV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2012 Higher Level marking scheme, pages 7 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 7,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-19"
+    }
+  },
+  {
+    "id": "ru-2012-hl-la1-iii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2012,
+    "section": "LA1",
+    "topicId": "russian-3-2",
+    "conceptId": "example-noun-instrumental-case",
+    "questionRef": "2012 HL Section LA1 Q(iii)",
+    "questionText": "In the paragraph below find the examples of each of the following\n\nGive an example of a noun in the instrumental case",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Higher Russian — LA1",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 7.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "criteria": [
+        {
+          "id": "instrumental",
+          "label": "Give an example of a noun in the instrumental case",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidance": [
+            "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested",
+            "Give an example of a noun in the instrumental case (award ONE mark for одним)"
+          ]
+        }
+      ],
+      "taskRequirements": [
+        "Language awareness 2 marks per correct answers; answers may be supplied in the nominative form or in the case that is requested"
+      ],
+      "markingGuideNote": "Full-credit example: The scheme prints no answer for this part. Use the shared paragraph on the original question page. This separately numbered part is marked out of two; all three parts together are marked out of six. The scheme permits the nominative form or the requested case. The scheme gives one mark for одним, but prints no full-credit example. Preserve that partial answer when assessing the response."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
+      "schemePages": [
+        3
+      ]
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000EV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2012 Higher Level marking scheme, pages 7 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 7,
       "r": [
         0,
         0,

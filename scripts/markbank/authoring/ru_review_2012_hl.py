@@ -452,6 +452,9 @@ def build():
     assert sum(c['totalMarks'] for c in cards)==302
     assert sum(bool(c.get('answerLanguageRule')) for c in cards)==13
     assert len([c for c in cards if c['id']=='ru-2012-hl-c1-2-ii'])==1
+    from ru_language_part_split import split_language_parts
+    cards = split_language_parts(cards, source, 2012)
+    assert len(cards) == 42
     for doc in docs.values():doc.close()
     return cards
 
