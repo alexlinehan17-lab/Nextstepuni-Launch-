@@ -909,6 +909,7 @@ const DEFERRED_ID = {
   spanish: /^es-\d{4}-(?:hl|ol)-deferred-/,
   dcg: /^dcg-\d{4}-(?:hl|ol)-deferred-/,
   german: /^de-\d{4}-(?:hl|ol)-deferred-/,
+  biology: /^bio-\d{4}-(?:hl|ol)-deferred-/,
   physics: /^phys-\d{4}-(?:hl|ol)-deferred-/,
   'home-economics': /^he-\d{4}-(?:hl|ol)-deferred-/,
   maths: /^maths-\d{4}-(?:hl|ol|fl)-deferred-/,
@@ -2214,15 +2215,15 @@ for (const c of cards) {
    * audioQuestionPaperFileid. No other deck has these. */
   const listening = (SUBJECT_ID === 'spanish' && c.section === 'L')
     || (SUBJECT_ID === 'german' && /^L[1-4]$/.test(c.section));
-  /* A DCG deferred sitting is two booklets, as June's is: its card opens the
-   * one that prints its section, never simply the entry's first. */
+  /* A DCG or Biology deferred sitting is two booklets, as June's is: its card
+   * opens the one that prints its section, never simply the entry's first. */
   const fileid = reviewedSource
     ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
     : deferredEntry && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
     ? deferredDoc(SUBJECT_ID, c, listening ? 'Aural Paper' : 'Exam Paper')
     : deferredEntry
-    ? (SUBJECT_ID === 'dcg'
-      ? resolvePaperFileid('dcg', year, level, paperSection, 'deferred')
+    ? (SUBJECT_ID === 'dcg' || SUBJECT_ID === 'biology'
+      ? resolvePaperFileid(SUBJECT_ID, year, level, paperSection, 'deferred')
       : String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null)
     : listening
       ? resolveCompanionFileid(SUBJECT_ID, year, level, 'Aural Paper')

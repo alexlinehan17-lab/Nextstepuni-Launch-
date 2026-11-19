@@ -2116,9 +2116,12 @@ const BIOLOGY_REVIEW_ADDED = new Set([
     .sittings).flatMap(sitting => sitting.review?.added ?? []),
   'bio-2025-hl-q9-b-ii',
 ]);
+// The SEC's deferred sittings (bio_review_<year>_<level>_deferred.py, from 2026-11-19,
+// "bio-2022-hl-deferred-…", cited "… — Deferred sitting") join as additions: every id is new.
+const BIOLOGY_DEFERRED_ID = /^bio-\d{4}-(?:hl|ol)-deferred-/;
 const isBiologyAdded = (id: string) => {
   const year = Number(id.slice('bio-'.length, 'bio-'.length + 4));
-  return year < 2021 || year > 2025 || BIOLOGY_REVIEW_ADDED.has(id);
+  return year < 2021 || year > 2025 || BIOLOGY_REVIEW_ADDED.has(id) || BIOLOGY_DEFERRED_ID.test(id);
 };
 const biologyAdditionIds = new Set([...BIO_HIGHER, ...BIO_ORDINARY]
   .map(card => card.id).filter(isBiologyAdded));
@@ -3807,7 +3810,11 @@ describe('Mark Bank card preservation', () => {
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
     const published = new Set([...publishedEnglishHigher.cards, ...publishedEnglishOrdinary.cards]
       .map(card => card.id));
-    expect(published.size).toBe(2_685);
+    // 2,685 June cards; the deferred sittings (from 2026-11-19, "english-<year>-<lv>-deferred-…") are new ids
+    // on top, never a June id.
+    expect([...published].filter(id => !id.includes('-deferred-'))).toHaveLength(2_685);
+    expect([...published].filter(id => id.includes('-deferred-'))
+      .every(id => /^english-20(?:22|23|24|25)-(?:hl|ol)-deferred-p[12]-/.test(id))).toBe(true);
     // No route card is published: a printed choice marked identically is one card.
     expect([...published].some(id => id.includes('-route-'))).toBe(false);
     // Legacy ids of bridged papers (2025 HL) are no longer served as legacy
@@ -3837,19 +3844,25 @@ describe('Mark Bank card preservation', () => {
     }
     const papers = [...publishedEnglishHigher.papers, ...publishedEnglishOrdinary.papers].map(paper => paper.paperId);
     expect([...published].every(id => papers.some(paper => id.startsWith(`${paper}-`)))).toBe(true);
-    // Reviewed additions on top of the frozen 650: 548 Higher + 1,612 Ordinary,
-    // none reusing a frozen ID or an alias key.
-    const added = (level: string) => [...englishAdditionIds].filter(id => id.includes(level)).length;
+    // Reviewed additions on top of the frozen 650: 548 Higher + 1,612 Ordinary June cards,
+    // none reusing a frozen ID or an alias key; and, from 2026-11-19, the deferred sittings' new ids
+    // (2025 Higher 44, 2024 Higher 44, 2024 Ordinary 121, 2023 Higher 45).
+    const added = (level: string) => [...englishAdditionIds].filter(id => id.includes(level) && !id.includes('-deferred-')).length;
     const aliased = (level: string) => englishAliasIds.filter(id => id.includes(level)).length;
     expect([added('-hl-'), aliased('-hl-'), added('-ol-'), aliased('-ol-')]).toEqual([548, 20, 1612, 105]);
+    const deferredAdded = (level: string) => [...englishAdditionIds]
+      .filter(id => id.includes(`${level}deferred-`)).length;
+    expect([deferredAdded('-hl-'), deferredAdded('-ol-')]).toEqual([179, 241]);
     for (const id of englishAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
-    expect(ENGLISH_HIGHER).toHaveLength(210 - aliased('-hl-') + added('-hl-'));
-    expect(ENGLISH_ORDINARY).toHaveLength(440 - aliased('-ol-') + added('-ol-'));
+    expect(ENGLISH_HIGHER).toHaveLength(210 - aliased('-hl-') + added('-hl-') + deferredAdded('-hl-'));
+    expect(ENGLISH_ORDINARY).toHaveLength(440 - aliased('-ol-') + added('-ol-') + deferredAdded('-ol-'));
   });
 
   it('adds the reviewed Biology sittings on top of the frozen 2021-2025 set without replacing an id', () => {
     // Every card id names its own sitting, which is what isBiologyAdded reads.
     expect(BIO_HIGHER.every(card => card.id.startsWith(`bio-${card.year}-hl-`))).toBe(true);
+    const june = (cards: readonly { id: string }[]) => cards.filter(card => !BIOLOGY_DEFERRED_ID.test(card.id));
+    const deferred = (cards: readonly { id: string }[]) => cards.filter(card => BIOLOGY_DEFERRED_ID.test(card.id));
     expect(BIO_ORDINARY.every(card => card.id.startsWith(`bio-${card.year}-ol-`))).toBe(true);
     // A shipped id a review withdraws survives as a progress alias; restored,
     // the 2021-2025 set is exactly the one pinned before the reviews (above).
@@ -3857,11 +3870,14 @@ describe('Mark Bank card preservation', () => {
     expect(biologyAliasIds.filter(id => id.includes('-ol-'))).toEqual(['bio-2025-ol-q16-ciii-fig']);
     for (const id of biologyAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
     // The live decks, pinned whole (their history is beside the frozen pins).
-    expect(BIO_HIGHER).toHaveLength(2705);
-    expect(idHash(BIO_HIGHER.map(card => card.id))).toBe('ddd10144ca8fa3f688428f95265c9ec22b34845cb958e688bda87cbe1fe5cf39');
-    expect(BIO_ORDINARY).toHaveLength(2835);
-    expect(idHash(BIO_ORDINARY.map(card => card.id))).toBe('4f0b15fd23902b4da3b0f8948e85519be7c02b8e567f42aeea5cb6aed366d95e');
-    expect(biologyAdditionIds.size).toBe(2705 + 2835 - (673 - 1) - (686 - 1));
+    expect(june(BIO_HIGHER)).toHaveLength(2705);
+    expect(idHash(june(BIO_HIGHER).map(card => card.id))).toBe('ddd10144ca8fa3f688428f95265c9ec22b34845cb958e688bda87cbe1fe5cf39');
+    expect(june(BIO_ORDINARY)).toHaveLength(2835);
+    expect(idHash(june(BIO_ORDINARY).map(card => card.id))).toBe('4f0b15fd23902b4da3b0f8948e85519be7c02b8e567f42aeea5cb6aed366d95e');
+    // The deferred sittings, carded one by one: [Higher, Ordinary].
+    expect([deferred(BIO_HIGHER).length, deferred(BIO_ORDINARY).length]).toEqual([182, 182]);
+    expect(biologyAdditionIds.size).toBe(2705 + 2835 - (673 - 1) - (686 - 1)
+      + deferred(BIO_HIGHER).length + deferred(BIO_ORDINARY).length);
     // The sittings before 2021 had no Biology cards: everything they carry is new.
     expect(BIO_HIGHER.filter(card => card.year <= 2020)).toHaveLength(1627);
     expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(1742);

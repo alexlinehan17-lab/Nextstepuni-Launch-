@@ -109,7 +109,9 @@ class EnglishPublisherTest(unittest.TestCase):
             for card in manifest['cards']:
                 task_id = card.get('choiceParentId', card['id'])
                 self.assertEqual(card['schemePages'], reviews[task_id]['schemePages'], card['id'])
-                self.assertEqual(card['assessment']['grid'], f"{card['year']}-{card['level']}")
+                # A deferred sitting's card is marked on its own deferred scheme's printed grid.
+                sitting = '-deferred' if '-deferred-' in card['id'] else ''
+                self.assertEqual(card['assessment']['grid'], f"{card['year']}-{card['level']}{sitting}")
                 self.assertEqual(card['assessment']['grid'] in manifest['grids']['sittings'], True)
 
     def test_grid_transcription_is_bound_to_the_printed_cells(self):

@@ -826,6 +826,12 @@ export interface PclmRubric {
    */
   indicativeMaterial?: string[];
   indicativeMaterialNote: string;
+  /**
+   * Set only on a task its scheme sets out no block for (a deferred scheme is "finalised for the questions
+   * attempted by the candidates"). The card shows UNPRINTED_ANSWER, then this citation of the scheme's general
+   * criteria and printed grid the task is marked on, so the student knows why there are no task-specific points.
+   */
+  unprintedAnswer?: { citation: string };
 }
 
 export type IrishGuidanceKind =
