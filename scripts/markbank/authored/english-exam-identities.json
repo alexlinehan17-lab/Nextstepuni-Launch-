@@ -3866,6 +3866,386 @@
       "sourcePages": [
         20
       ]
+    },
+    "english-2022-hl-deferred-p2-prescribed-1": {
+      "topicId": "english-11-23",
+      "title": "W.B. Yeats",
+      "canonicalLabel": "W.B. Yeats",
+      "observedHeading": "Prescribed Poetry · Discuss How Yeats Uses Language, Including Imagery, To Convey Both Passion And · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "promptHeading": "W.B. Yeats"
+    },
+    "english-2022-hl-deferred-p2-prescribed-2": {
+      "topicId": "english-11-2",
+      "title": "Emily Dickinson",
+      "canonicalLabel": "Emily Dickinson",
+      "observedHeading": "Prescribed Poetry · “Dickinson Pushes The Boundaries Of Both Language And Imagination To Explore A Variety · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "promptHeading": "Emily Dickinson"
+    },
+    "english-2022-hl-deferred-p2-prescribed-3": {
+      "topicId": "english-11-12",
+      "title": "Brendan Kennelly",
+      "canonicalLabel": "Brendan Kennelly",
+      "observedHeading": "Prescribed Poetry · “Kennelly Uses A Conversational Style To Communicate The Emotional, Imaginative · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "promptHeading": "Brendan Kennelly"
+    },
+    "english-2022-hl-deferred-p2-prescribed-4": {
+      "topicId": "english-11-14",
+      "title": "D.H. Lawrence",
+      "canonicalLabel": "D.H. Lawrence",
+      "observedHeading": "Prescribed Poetry · “Lawrence Uses A Vivid And Evocative Style To Present A Variety Of Memorable Scenes · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "promptHeading": "D.H. Lawrence"
+    },
+    "english-2022-hl-deferred-p2-prescribed-5": {
+      "topicId": "english-11-0",
+      "title": "Elizabeth Bishop",
+      "canonicalLabel": "Elizabeth Bishop",
+      "observedHeading": "Prescribed Poetry · “Bishop’s Precise Use Of Language Enables Her To Effectively Convey Her Reflections On · Q5",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+      "promptHeading": "Elizabeth Bishop"
+    },
+    "english-2022-hl-deferred-p2-single-a": {
+      "topicId": "english-12-8",
+      "title": "All the Light We Cannot See",
+      "canonicalLabel": "All the Light We Cannot See (Anthony Doerr)",
+      "observedHeading": "Single Text A · All The Light We Cannot See · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608"
+    },
+    "english-2022-hl-deferred-p2-single-b": {
+      "topicId": "english-12-6",
+      "title": "A Doll's House",
+      "canonicalLabel": "A Doll's House (Henrik Ibsen)",
+      "observedHeading": "Single Text B · A Doll’s House · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608"
+    },
+    "english-2022-hl-deferred-p2-single-c": {
+      "topicId": "english-12-3",
+      "title": "Othello",
+      "canonicalLabel": "Othello (Shakespeare)",
+      "observedHeading": "Single Text C · Othello · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608"
+    },
+    "english-2022-hl-deferred-p2-single-d": {
+      "topicId": "english-12-12",
+      "title": "Frankenstein",
+      "canonicalLabel": "Frankenstein (Mary Shelley)",
+      "observedHeading": "Single Text D · Frankenstein · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608"
+    },
+    "english-2022-hl-deferred-p2-single-e": {
+      "topicId": "english-12-25",
+      "title": "The Picture of Dorian Gray",
+      "canonicalLabel": "The Picture of Dorian Gray (Oscar Wilde)",
+      "observedHeading": "Single Text E · The Picture Of Dorian Gray · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608"
+    },
+    "english-2023-hl-deferred-p2-prescribed-1": {
+      "topicId": "english-11-0",
+      "title": "Elizabeth Bishop",
+      "canonicalLabel": "Elizabeth Bishop",
+      "observedHeading": "Prescribed Poetry · “Elizabeth Bishop’s Use Of An Attractive Observational Style Enhances Her Ability To · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "f09cefdb117b7aeff217515351077ff6fdc71cff3887fa7dfd4ba73ef9a1a278",
+      "promptHeading": "Elizabeth Bishop"
+    },
+    "english-2023-hl-deferred-p2-prescribed-2": {
+      "topicId": "english-11-3",
+      "title": "John Donne",
+      "canonicalLabel": "John Donne",
+      "observedHeading": "Prescribed Poetry · “John Donne Effectively Employs Complex Thought And Language To Explore A Variety · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "f09cefdb117b7aeff217515351077ff6fdc71cff3887fa7dfd4ba73ef9a1a278",
+      "promptHeading": "John Donne"
+    },
+    "english-2023-hl-deferred-p2-prescribed-3": {
+      "topicId": "english-11-10",
+      "title": "Patrick Kavanagh",
+      "canonicalLabel": "Patrick Kavanagh",
+      "observedHeading": "Prescribed Poetry · “Patrick Kavanagh Articulates A Range Of Powerful Emotions In His Work, Often Expressed · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "f09cefdb117b7aeff217515351077ff6fdc71cff3887fa7dfd4ba73ef9a1a278",
+      "promptHeading": "Patrick Kavanagh"
+    },
+    "english-2023-hl-deferred-p2-prescribed-4": {
+      "topicId": "english-11-16",
+      "title": "Paula Meehan",
+      "canonicalLabel": "Paula Meehan",
+      "observedHeading": "Prescribed Poetry · “Paula Meehan Crafts Vivid Poetry, Holding Up A Mirror To Life That Can Be Revealing Or · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "f09cefdb117b7aeff217515351077ff6fdc71cff3887fa7dfd4ba73ef9a1a278",
+      "promptHeading": "Paula Meehan"
+    },
+    "english-2023-hl-deferred-p2-prescribed-5": {
+      "topicId": "english-11-2",
+      "title": "Emily Dickinson",
+      "canonicalLabel": "Emily Dickinson",
+      "observedHeading": "Prescribed Poetry · “Emily Dickinson’s Work Is Fascinating Due To The Various Challenges Presented By · Q5",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "f09cefdb117b7aeff217515351077ff6fdc71cff3887fa7dfd4ba73ef9a1a278",
+      "promptHeading": "Emily Dickinson"
+    },
+    "english-2023-hl-deferred-p2-single-a": {
+      "topicId": "english-12-8",
+      "title": "All the Light We Cannot See",
+      "canonicalLabel": "All the Light We Cannot See (Anthony Doerr)",
+      "observedHeading": "Single Text A · All The Light We Cannot See · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/deferredexams/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "f09cefdb117b7aeff217515351077ff6fdc71cff3887fa7dfd4ba73ef9a1a278"
+    },
+    "english-2023-hl-deferred-p2-single-b": {
+      "topicId": "english-12-6",
+      "title": "A Doll's House",
+      "canonicalLabel": "A Doll's House (Henrik Ibsen)",
+      "observedHeading": "Single Text B · A Doll’ S House · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/deferredexams/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "f09cefdb117b7aeff217515351077ff6fdc71cff3887fa7dfd4ba73ef9a1a278"
+    },
+    "english-2023-hl-deferred-p2-single-c": {
+      "topicId": "english-12-2",
+      "title": "Macbeth",
+      "canonicalLabel": "Macbeth (Shakespeare)",
+      "observedHeading": "Single Text C · Macbeth · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/deferredexams/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "f09cefdb117b7aeff217515351077ff6fdc71cff3887fa7dfd4ba73ef9a1a278"
+    },
+    "english-2023-hl-deferred-p2-single-d": {
+      "topicId": "english-12-12",
+      "title": "Frankenstein",
+      "canonicalLabel": "Frankenstein (Mary Shelley)",
+      "observedHeading": "Single Text D · Frankenstein · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/deferredexams/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "f09cefdb117b7aeff217515351077ff6fdc71cff3887fa7dfd4ba73ef9a1a278"
+    },
+    "english-2023-hl-deferred-p2-single-e": {
+      "topicId": "english-12-25",
+      "title": "The Picture of Dorian Gray",
+      "canonicalLabel": "The Picture of Dorian Gray (Oscar Wilde)",
+      "observedHeading": "Single Text E · The Picture Of Dorian Gray · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/deferredexams/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "f09cefdb117b7aeff217515351077ff6fdc71cff3887fa7dfd4ba73ef9a1a278"
+    },
+    "english-2024-hl-deferred-p2-prescribed-1": {
+      "topicId": "english-11-23",
+      "title": "W.B. Yeats",
+      "canonicalLabel": "W.B. Yeats",
+      "observedHeading": "Prescribed Poetry · “The Tensions Apparent In The Poetry Of Yeats Are Addressed With Emotional Honesty.” · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "4ef1663d1f4ccc88038f2705fc3b59d71fe885a576118ce3423006089a71f6b6",
+      "promptHeading": "W.B. Yeats"
+    },
+    "english-2024-hl-deferred-p2-prescribed-2": {
+      "topicId": "english-11-19",
+      "title": "Sylvia Plath",
+      "canonicalLabel": "Sylvia Plath",
+      "observedHeading": "Prescribed Poetry · “Plath’s Work Displays Realism And Resilience Through Powerful, Provocative Imagery.” · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "4ef1663d1f4ccc88038f2705fc3b59d71fe885a576118ce3423006089a71f6b6",
+      "promptHeading": "Sylvia Plath"
+    },
+    "english-2024-hl-deferred-p2-prescribed-3": {
+      "topicId": "english-11-8",
+      "title": "Seamus Heaney",
+      "canonicalLabel": "Seamus Heaney",
+      "observedHeading": "Prescribed Poetry · “Heaney’s Poetry Reaches Profound Insights Through The Evocative Exploration Of · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "4ef1663d1f4ccc88038f2705fc3b59d71fe885a576118ce3423006089a71f6b6",
+      "promptHeading": "Seamus Heaney"
+    },
+    "english-2024-hl-deferred-p2-prescribed-4": {
+      "topicId": "english-11-16",
+      "title": "Paula Meehan",
+      "canonicalLabel": "Paula Meehan",
+      "observedHeading": "Prescribed Poetry · “In Her Work, Meehan’s Compelling Poetic Voice Simultaneously Celebrates And Questions · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "4ef1663d1f4ccc88038f2705fc3b59d71fe885a576118ce3423006089a71f6b6",
+      "promptHeading": "Paula Meehan"
+    },
+    "english-2024-hl-deferred-p2-prescribed-5": {
+      "topicId": "english-11-9",
+      "title": "Gerard Manley Hopkins",
+      "canonicalLabel": "Gerard Manley Hopkins",
+      "observedHeading": "Prescribed Poetry · “Hopkins’ Poetry Explores Aspects Of Spirituality Using Language In A Highly Sophisticated · Q5",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "4ef1663d1f4ccc88038f2705fc3b59d71fe885a576118ce3423006089a71f6b6",
+      "promptHeading": "Gerard Manley Hopkins"
+    },
+    "english-2024-hl-deferred-p2-single-a": {
+      "topicId": "english-12-8",
+      "title": "All the Light We Cannot See",
+      "canonicalLabel": "All the Light We Cannot See (Anthony Doerr)",
+      "observedHeading": "Single Text A · All The Light We Cannot See · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "4ef1663d1f4ccc88038f2705fc3b59d71fe885a576118ce3423006089a71f6b6"
+    },
+    "english-2024-hl-deferred-p2-single-b": {
+      "topicId": "english-12-21",
+      "title": "The Crucible",
+      "canonicalLabel": "The Crucible (Arthur Miller)",
+      "observedHeading": "Single Text B · The Crucible · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "4ef1663d1f4ccc88038f2705fc3b59d71fe885a576118ce3423006089a71f6b6"
+    },
+    "english-2024-hl-deferred-p2-single-c": {
+      "topicId": "english-12-0",
+      "title": "Hamlet",
+      "canonicalLabel": "Hamlet (Shakespeare)",
+      "observedHeading": "Single Text C · Hamlet · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "4ef1663d1f4ccc88038f2705fc3b59d71fe885a576118ce3423006089a71f6b6"
+    },
+    "english-2024-hl-deferred-p2-single-d": {
+      "topicId": "english-12-12",
+      "title": "Frankenstein",
+      "canonicalLabel": "Frankenstein (Mary Shelley)",
+      "observedHeading": "Single Text D · Frankenstein · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "4ef1663d1f4ccc88038f2705fc3b59d71fe885a576118ce3423006089a71f6b6"
+    },
+    "english-2024-hl-deferred-p2-single-e": {
+      "topicId": "english-12-25",
+      "title": "The Picture of Dorian Gray",
+      "canonicalLabel": "The Picture of Dorian Gray (Oscar Wilde)",
+      "observedHeading": "Single Text E · The Picture Of Dorian Gray · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "4ef1663d1f4ccc88038f2705fc3b59d71fe885a576118ce3423006089a71f6b6"
+    },
+    "english-2025-hl-deferred-p2-prescribed-1": {
+      "topicId": "english-11-21",
+      "title": "Tracy K. Smith",
+      "canonicalLabel": "Tracy K. Smith",
+      "observedHeading": "Prescribed Poetry · “Assisted By An Appreciation Of Style, A Reader Can Discover Universal Truths In Smith’s Poetry, · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "promptHeading": "Tracy K Smith"
+    },
+    "english-2025-hl-deferred-p2-prescribed-2": {
+      "topicId": "english-11-10",
+      "title": "Patrick Kavanagh",
+      "canonicalLabel": "Patrick Kavanagh",
+      "observedHeading": "Prescribed Poetry · “Kavanagh’s Poetry Can Be Unfamiliar To Contemporary Readers, Who Struggle To Appreciate · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "promptHeading": "Patrick Kavanagh"
+    },
+    "english-2025-hl-deferred-p2-prescribed-3": {
+      "topicId": "english-11-15",
+      "title": "Derek Mahon",
+      "canonicalLabel": "Derek Mahon",
+      "observedHeading": "Prescribed Poetry · “Mahon Paints Masterly Portraits Of Conflicted Characters And Complex Places, Using · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "promptHeading": "Derek Mahon"
+    },
+    "english-2025-hl-deferred-p2-prescribed-4": {
+      "topicId": "english-11-9",
+      "title": "Gerard Manley Hopkins",
+      "canonicalLabel": "Gerard Manley Hopkins",
+      "observedHeading": "Prescribed Poetry · “Hopkins Interrogates Positive And Negative Aspects Of Spirituality, Using Language In Both · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "promptHeading": "Gerard Manley Hopkins"
+    },
+    "english-2025-hl-deferred-p2-prescribed-5": {
+      "topicId": "english-11-2",
+      "title": "Emily Dickinson",
+      "canonicalLabel": "Emily Dickinson",
+      "observedHeading": "Prescribed Poetry · “Dickinson Exploits A Darkly Humorous And Playful Style, To Explore Profound Themes In Her · Q5",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "promptHeading": "Emily Dickinson"
+    },
+    "english-2025-hl-deferred-p2-single-a": {
+      "topicId": "english-12-28",
+      "title": "The Tenant of Wildfell Hall",
+      "canonicalLabel": "The Tenant of Wildfell Hall (Anne Brontë)",
+      "observedHeading": "Single Text A · The Tenant Of Wildfell Hall · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/deferredexams/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136"
+    },
+    "english-2025-hl-deferred-p2-single-b": {
+      "topicId": "english-12-8",
+      "title": "All the Light We Cannot See",
+      "canonicalLabel": "All the Light We Cannot See (Anthony Doerr)",
+      "observedHeading": "Single Text B · All The Light We Cannot See · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/deferredexams/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136"
+    },
+    "english-2025-hl-deferred-p2-single-c": {
+      "topicId": "english-12-21",
+      "title": "The Crucible",
+      "canonicalLabel": "The Crucible (Arthur Miller)",
+      "observedHeading": "Single Text C · The Crucible · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/deferredexams/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136"
+    },
+    "english-2025-hl-deferred-p2-single-d": {
+      "topicId": "english-12-1",
+      "title": "King Lear",
+      "canonicalLabel": "King Lear (Shakespeare)",
+      "observedHeading": "Single Text D · King Lear · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/deferredexams/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136"
+    },
+    "english-2025-hl-deferred-p2-single-e": {
+      "topicId": "english-12-12",
+      "title": "Frankenstein",
+      "canonicalLabel": "Frankenstein (Mary Shelley)",
+      "observedHeading": "Single Text E · Frankenstein · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/deferredexams/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136"
     }
   }
 }

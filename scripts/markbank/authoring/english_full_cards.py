@@ -33,6 +33,7 @@ from english_p2_complete import (  # noqa: E402
 )
 from english_p2_ol import collect_cards as ordinary_blocks  # noqa: E402
 
+DEFERRED_SUFFIX = ' — Deferred sitting'
 TARIFF = re.compile(r'\(\s*(\d{1,3})\s*(?:marks?)?\s*\)', re.I)
 DIRECTIVE = re.compile(
     r'\b(?:choose|choice|select|either|or|any|following|which|'
@@ -141,6 +142,10 @@ def region_text(doc, regions):
             if re.fullmatch(r'\d{1,2}', text):
                 continue
             if re.match(r'^Question continues on page \d+', text, re.I):
+                continue
+            # The deferred papers' running footer: "Leaving Certificate  3" over
+            # "English, Higher Level – Paper 1" (June prints "English – Higher Level – Paper 1").
+            if re.fullmatch(r'Leaving Certificate(?:\s+\d{1,2})?|English, (?:Higher|Ordinary) Level\s*[–—-]\s*Paper [12]', text):
                 continue
             if re.fullmatch(r'(?:[A-I]\s*)?\(continued\)', text, re.I):
                 continue
@@ -309,13 +314,28 @@ def apply_reviewed_context(task, record):
     task['contextNotes'] = list(dict.fromkeys(task.get('contextNotes', []) + context['notes']))
 
 
+def trace_scheme(record, text, pages):
+    """question_scheme_page, except where a deferred scheme sets out no block for the task.
+
+    A deferred scheme "will only have been finalised for the questions attempted by the candidates"
+    (its page 2), so a deferred prompt may be restated nowhere in it. Such a task is traced to no page
+    (None); extract_record refuses that wherever the answer map holds the task's own scheme block.
+    """
+    try:
+        return question_scheme_page(text, pages)
+    except AssertionError:
+        if record.get('sitting') != 'deferred':
+            raise
+        return None, 0
+
+
 def emit(record, key, section, value, marks, scheme_pages, *, source=None,
          topic=None, parent=None, regions=None, stem=None):
     text = prompt(value)
     source = reviewed_source(record['id'] + '-' + key, text, source)
     if len(comparable(text).split()) < 5:
         raise ValueError(f'{key}: empty or truncated prompt: {text!r}')
-    page, score = question_scheme_page(text, scheme_pages)
+    page, score = trace_scheme(record, text, scheme_pages)
     card = {
         'id': record['id'] + '-' + key,
         'year': record['year'], 'level': record['level'], 'paper': record['paper'],
@@ -536,7 +556,7 @@ def p2_cards(record, doc, sidecar, scheme_pages):
     return cards
 
 
-def split_marked_tasks(card, scheme_pages):
+def split_marked_tasks(card, scheme_pages, record=None):
     """Propose leaf tasks at printed tariffs, retaining the whole context.
 
     These are still review candidates. A printed tariff is evidence to check
@@ -594,7 +614,7 @@ def split_marked_tasks(card, scheme_pages):
             'parentQuestionText': card['questionText'],
             'selectionReviewRequired': bool(DIRECTIVE.search(value)),
         })
-        task['schemePage'], task['schemeTraceScore'] = question_scheme_page(task['questionText'], scheme_pages)
+        task['schemePage'], task['schemeTraceScore'] = trace_scheme(record or {}, task['questionText'], scheme_pages)
         task['taskRequirements'] = requirements_for(task['questionText'], task.get('sourceMaterial'), [])
         if local_context:
             task['contextNotes'] = [prompt(local_context)]
@@ -625,8 +645,11 @@ def extract_record(record):
                     scoped[region['p']] = scoped.get(region['p'], '') + '\n' + region_text(scheme, [region])
                 scopes[parent['n']] = scoped
             scoped = scopes[parent['n']]
-            card['schemePage'], card['schemeTraceScore'] = question_scheme_page(card['questionText'], scoped)
-            for task in split_marked_tasks(card, scoped):
+            card['schemePage'], card['schemeTraceScore'] = trace_scheme(record, card['questionText'], scoped)
+            if card['schemePage'] is None and parent.get('mode') != 'pagejump':
+                raise AssertionError('no marking-scheme trace inside its own scheme block: ' + card['id'])
+            card['schemeAbsent'] = parent.get('mode') == 'pagejump' and record.get('sitting') == 'deferred'
+            for task in split_marked_tasks(card, scoped, record):
                 source = reviewed_source(task['id'], task['questionText'], task.get('sourceMaterial'))
                 if source:
                     task['sourceMaterial'] = source
@@ -637,6 +660,12 @@ def extract_record(record):
                 apply_source_exclusion(task, record)
                 apply_reviewed_context(task, record)
                 leaf_tasks.append(task)
+        if record.get('sitting') == 'deferred':
+            # A deferred sitting's citation says so after the June form (CARD-STANDARD section 4):
+            # "2024 HL Paper 1 Text 1 QA(i) — Deferred sitting". Its ids already do ("english-2024-hl-deferred-p1-...").
+            for value in parsed + leaf_tasks:
+                if not value['questionRef'].endswith(DEFERRED_SUFFIX):
+                    value['questionRef'] += DEFERRED_SUFFIX
         return parsed, leaf_tasks
 
 

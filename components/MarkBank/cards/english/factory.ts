@@ -429,7 +429,9 @@ const makePublishedCard = (
   totalMarks: card.totalMarks,
   schemeCitation:
     `SEC English ${card.level === 'higher' ? 'Higher' : 'Ordinary'} Level marking scheme ` +
-    `${card.year}, ${pageList(card.schemePages)} — © State Examinations Commission.`,
+    `${card.year}, ${pageList(card.schemePages)}` +
+    // A deferred sitting's own scheme (paperFileid "LC002ALP100EV-deferred"), named as every deferred card names it.
+    `${card.paperFileid.endsWith('-deferred') ? ', deferred examination' : ''} — © State Examinations Commission.`,
   specVersion: 'english:outgoing',
   qa: {
     gates: ['verbatim-paper-prompt', 'independent-paper-review', 'paper-gate', 'printed-year-grid', 'indicative-not-checklist'],

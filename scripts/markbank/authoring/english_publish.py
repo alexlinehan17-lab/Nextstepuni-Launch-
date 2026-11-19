@@ -98,7 +98,8 @@ def verify_grids(grids, records):
         schemes.setdefault((record['year'], record['level']), set()).add(
             (record['markingScheme']['path'], record['markingScheme']['sha256']))
     for key, sitting in grids['sittings'].items():
-        year, level = key.split('-')
+        # "<year>-<level>" for June, "<year>-<level>-deferred" for the deferred sitting's own scheme.
+        year, level = key.split('-')[:2]
         bound = schemes.get((int(year), level), set())
         if (sitting['scheme'], sitting['schemeSha256']) not in bound:
             raise ValueError('Marking grid bound to a different scheme: ' + key)
@@ -155,8 +156,13 @@ def stem_for(task):
     return stem or None
 
 
+def sitting_key_for(record):
+    """The marking-grid sitting of a paper: June's year and level, or its deferred sitting's own scheme."""
+    return f'{record["year"]}-{record["level"]}' + ('-deferred' if record.get('sitting') == 'deferred' else '')
+
+
 def card_record(route, record, review, grids):
-    sitting_key = f'{record["year"]}-{record["level"]}'
+    sitting_key = sitting_key_for(record)
     if sitting_key not in grids['sittings']:
         raise ValueError('No transcribed marking grid for ' + sitting_key)
     card = {
@@ -420,7 +426,11 @@ def publish():
     published, refused, cards = [], [], {'higher': [], 'ordinary': []}
     for record in sorted(records, key=lambda r: (-r['year'], r['level'], r['paper'])):
         key = record['id']
-        entry = visual[key]
+        entry = visual.get(key)
+        if entry is None:
+            # A paper with no visual review entry at all (a deferred sitting not yet reviewed).
+            refused.append({'paperId': key, 'reason': 'no visual review entry'})
+            continue
         if key in legacy and key not in bridges:
             refused.append({'paperId': key, 'reason': 'served by legacy runtime cards; no legacy bridge'})
             continue
