@@ -1,17 +1,17 @@
 {
-  "recordedAt": "2026-11-19T19:38:49.905967+00:00",
+  "recordedAt": "2026-11-19T20:01:14.659561+00:00",
   "sitting": "2013",
   "sourceCandidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/proposed-authored-cards.json",
   "files": [
     {
       "path": "docs/markbank/review/lcvp/2026-11-19/2013/README.md",
       "bytes": 1101,
-      "sha256": "b5ab715939af6b110e674f5531c14018022737cd899c19b117dfe32cc84a9761"
+      "sha256": "95dffd04779a0c12f49b4319640ef146a0aef9594e59b76369a86b29326f6ef3"
     },
     {
       "path": "docs/markbank/review/lcvp/2026-11-19/2013/candidate.json",
-      "bytes": 144345,
-      "sha256": "873162dad707b5e62b48b623194a693c433ff710c1e1e90d6ca38204ca2dc96b"
+      "bytes": 143605,
+      "sha256": "b8bc53100661798bdc5b01af2793c43ddd3a7c68123b09f778450e21b2d753ad"
     },
     {
       "path": "docs/markbank/review/lcvp/2026-11-19/2013/coordinator-rulings.md",
@@ -95,8 +95,8 @@
     },
     {
       "path": "docs/markbank/review/lcvp/2026-11-19/2013/evidence/proposed-authored-cards.json",
-      "bytes": 144345,
-      "sha256": "873162dad707b5e62b48b623194a693c433ff710c1e1e90d6ca38204ca2dc96b"
+      "bytes": 143605,
+      "sha256": "b8bc53100661798bdc5b01af2793c43ddd3a7c68123b09f778450e21b2d753ad"
     },
     {
       "path": "docs/markbank/review/lcvp/2026-11-19/2013/evidence/remaining-category-comparison.json",
@@ -165,8 +165,23 @@
     },
     {
       "path": "docs/markbank/review/lcvp/2026-11-19/2013/filing-additions.json",
-      "bytes": 37215,
-      "sha256": "ec11c2a55c47486977d42e763a9e994b84d23eb3d0cfab41c747d368e5259902"
+      "bytes": 43011,
+      "sha256": "507a83a6e48137e818cacf155157077180b985bc15df332edebd41950a4e0433"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2013/final-note-cleanup.json",
+      "bytes": 39466,
+      "sha256": "2a0c5b163a325c710911a7be2cfbb446de31c25f77a21127d7c50c5546dd9a47"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2013/finalize-candidate-notes.py",
+      "bytes": 6935,
+      "sha256": "c577e236dce0c221e4ee52c6ce625ca59a669393e2920daf1173e17a1dc2c663"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2013/recall-content-comparison.json",
+      "bytes": 42565,
+      "sha256": "b69a8529a955f7aa4e4204c92dd91083e5662def1280c710eb359d977dd62f0f"
     },
     {
       "path": "docs/markbank/review/lcvp/2026-11-19/2013/third-reader-decision.json",

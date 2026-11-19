@@ -1,10 +1,10 @@
 {
-  "recordedAt": "2026-11-19T19:36:00.933308+00:00",
+  "recordedAt": "2026-11-19T20:01:04.288560+00:00",
   "sitting": "2013",
   "status": "Review-only filing additions; no canonical or generated file changed",
   "cards": 41,
   "sourceCandidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/proposed-authored-cards.json",
-  "sourceCandidateSha256": "873162dad707b5e62b48b623194a693c433ff710c1e1e90d6ca38204ca2dc96b",
+  "sourceCandidateSha256": "b8bc53100661798bdc5b01af2793c43ddd3a7c68123b09f778450e21b2d753ad",
   "thirdReaderDecision": {
     "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/third-reader-decision.json",
     "sha256": "21effa3700ce2d462b07df2b395fa730d63d4c84c512a4ba7dac2d62fd94defc"
@@ -32,15 +32,9 @@
       ],
       "r2"
     ],
-    "lcvp-2013-cl-a3": [
-      [
-        "link-modules-common-2-local-business-enterprises"
-      ],
-      "r2"
-    ],
     "lcvp-2013-cl-a4": [
       [
-        "link-modules-common-2-enterprise-skills"
+        "link-modules-common-audio-visual"
       ],
       "r2"
     ],
@@ -239,9 +233,9 @@
     ]
   },
   "counts": {
-    "r2": 30,
+    "r2": 29,
+    "pending-method-evidence": 6,
     "r3": 5,
-    "pending-method-evidence": 5,
     "r1": 1
   },
   "items": [
@@ -251,16 +245,28 @@
         "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
-      "reason": "Recall a duration stated in the recording.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Recalls the couple’s six-year residence.",
       "internalTopicId": "lcvp-link-modules-1-1",
       "questionRef": "2013 CL Section A Q1",
-      "firstHeadingIds": [
-        "link-modules-common-audio-visual"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-audio-visual"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2013-cl-a1",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
+        "reason": "Recall a duration stated in the recording.",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2013 CL Section A Q1",
+        "firstHeadingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-audio-visual"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2013-cl-a2",
@@ -268,50 +274,89 @@
         "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
-      "reason": "Recall living-condition comparisons from the recording, without a narrower content heading.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Recalls their personal comparison between Ireland and New York.",
       "internalTopicId": "lcvp-link-modules-1-1",
       "questionRef": "2013 CL Section A Q2",
-      "firstHeadingIds": [
-        "link-modules-common-audio-visual"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-audio-visual"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2013-cl-a2",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
+        "reason": "Recall living-condition comparisons from the recording, without a narrower content heading.",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2013 CL Section A Q2",
+        "firstHeadingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-audio-visual"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2013-cl-a3",
       "headingIds": [
         "link-modules-common-2-local-business-enterprises"
       ],
-      "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
-      "reason": "Benefits of a local craft business network.",
+      "how": null,
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Explains networking, tourism and advertising benefits for a local enterprise.",
       "internalTopicId": "lcvp-link-modules-1-1",
       "questionRef": "2013 CL Section A Q3",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ],
+      "previousReading": {
+        "cardId": "lcvp-2013-cl-a3",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
+        "reason": "Benefits of a local craft business network.",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2013 CL Section A Q3",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
       "secondHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ]
+        "link-modules-common-audio-visual"
+      ],
+      "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
     },
     {
       "cardId": "lcvp-2013-cl-a4",
       "headingIds": [
-        "link-modules-common-2-enterprise-skills"
+        "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
-      "reason": "Financial organisation and management practices.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Recalls Tom’s specific savings, grant application and bank arrangements.",
       "internalTopicId": "lcvp-link-modules-1-0",
       "questionRef": "2013 CL Section A Q4",
-      "firstHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2013-cl-a4",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
+        "reason": "Financial organisation and management practices.",
+        "internalTopicId": "lcvp-link-modules-1-0",
+        "questionRef": "2013 CL Section A Q4",
+        "firstHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2013-cl-a5",
@@ -319,16 +364,28 @@
         "link-modules-common-2-local-business-enterprises"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
-      "reason": "Local craft production and its economic advantages.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Explains local craft quality, employment and spending benefits.",
       "internalTopicId": "lcvp-link-modules-1-1",
       "questionRef": "2013 CL Section A Q5",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2013-cl-a5",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
+        "reason": "Local craft production and its economic advantages.",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2013 CL Section A Q5",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2013-cl-a6",
@@ -336,16 +393,28 @@
         "link-modules-common-2-local-business-enterprises"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
-      "reason": "Commercial problems affecting Irish craft industries.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Explains economic and operating problems facing craft enterprises.",
       "internalTopicId": "lcvp-link-modules-1-1",
       "questionRef": "2013 CL Section A Q6",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2013-cl-a6",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
+        "reason": "Commercial problems affecting Irish craft industries.",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2013 CL Section A Q6",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2013-cl-a7",
@@ -353,16 +422,28 @@
         "link-modules-common-2-enterprise-skills"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
-      "reason": "Using ICT for marketing and communication.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Applies ICT and marketing skills to promoting craft industries.",
       "internalTopicId": "lcvp-link-modules-1-0",
       "questionRef": "2013 CL Section A Q7",
-      "firstHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2013-cl-a7",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
+        "reason": "Using ICT for marketing and communication.",
+        "internalTopicId": "lcvp-link-modules-1-0",
+        "questionRef": "2013 CL Section A Q7",
+        "firstHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2013-cl-a8",
@@ -911,6 +992,38 @@
     }
   ],
   "pending": [
+    {
+      "cardId": "lcvp-2013-cl-a3",
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "how": null,
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Explains networking, tourism and advertising benefits for a local enterprise.",
+      "internalTopicId": "lcvp-link-modules-1-1",
+      "questionRef": "2013 CL Section A Q3",
+      "previousReading": {
+        "cardId": "lcvp-2013-cl-a3",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/audio-case-category-comparison.json",
+        "reason": "Benefits of a local craft business network.",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2013 CL Section A Q3",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      "secondHeadingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
+    },
     {
       "cardId": "lcvp-2013-cl-c3a",
       "headingIds": [
