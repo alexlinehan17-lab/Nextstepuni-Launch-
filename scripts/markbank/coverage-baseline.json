@@ -532,8 +532,8 @@
     "contentHash": "0d11f6d500d72a7a",
     "coveragePct": 100.0,
     "covered": 306,
-    "excluded": 520,
-    "leaves": 826,
+    "excluded": 513,
+    "leaves": 819,
     "open": 0,
     "orphans": 0,
     "papers": {
@@ -635,15 +635,15 @@
   "polish": {
     "cards": 237,
     "contentHash": "408ba0b39d9d0167",
-    "coveragePct": 100.0,
+    "coveragePct": 65.8,
     "covered": 243,
-    "excluded": 310,
-    "leaves": 553,
-    "open": 0,
+    "excluded": 298,
+    "leaves": 822,
+    "open": 281,
     "orphans": 0,
     "papers": {
-      "count": 17,
-      "hash": "593a0709ee51ab08"
+      "count": 32,
+      "hash": "6a6c3eeffb300707"
     },
     "refsHash": "727a4af11e33aa55"
   },

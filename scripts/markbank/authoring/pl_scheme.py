@@ -452,13 +452,43 @@ class Ask:
         return f'Ask({self.key} {self.notation!r} {len(self.answers)} answers)'
 
 
+# Markers the SEC MISPRINTED in a scheme, put back to what the question paper
+# prints, each read on the rendered page. No heuristic can know these.
+# (year, level) -> [(page, the row's printed opening, the marker as printed,
+# the marker the paper prints, evidence)].
+MISPRINTS = {
+    (2026, 'ol'): [(
+        9, '(j) Maja goes to the philharmonic in her free time.', '(j)', '(i)',
+        'scheme p9, Zadanie 3(e) true/false table: the worked-example row is '
+        'printed "(j)" (Calibri-BoldItalic) where the paper prints "(i)" '
+        '(paper p15) and the rows below it run (ii)-(vi). Read as printed, '
+        '"(j)" opened a letter after (e), the five romans were filed under '
+        'it, and (f) and (g) were swallowed into its last row, so twelve '
+        'paper asks paired with nothing and six scheme asks with no paper ask.'),
+    ],
+}
+
+
+def _apply_misprints(rows, year, level):
+    for page, opening, printed, meant, _evidence in MISPRINTS.get((year, level), []):
+        hits = [r for r in rows if r.page == page and r.text.startswith(opening)]
+        if len(hits) != 1:
+            raise ValueError(f'{year} {level} misprint on p{page} {opening!r}: '
+                             f'{len(hits)} rows match, expected one')
+        row = hits[0]
+        row.text = meant + row.text[len(printed):]
+        row.cells = [(x, meant + t[len(printed):] if t.startswith(printed) else t)
+                     for x, t in row.cells]
+    return rows
+
+
 class PlScheme:
     def __init__(self, year, level, subject=SUBJECT):
         self.year, self.level, self.subject = year, level, subject
         self.path = scheme_path(year, level, subject)
         if self.path is None:
             raise FileNotFoundError(f'no Polish scheme for {year} {level}')
-        self.rows = read_rows(self.path)
+        self.rows = _apply_misprints(read_rows(self.path), year, level)
         self.letter_x = self._letter_column()
         self.grid_lines = []
         self._asks = self._walk_2021() if year <= 2021 else self._walk()

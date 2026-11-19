@@ -941,6 +941,75 @@ PRINTED_EXAMPLES = {
         'paper p12: (a) reads "use the information above to calculate part (ii). Part (i) has been '
         'completed for you." and the ladder prints (i) worked to "Ans: €325 bn"; scheme p14 prices (a) '
         'at 6 for the (ii) calculation (GNI €326.5 bn) and nothing for (i).'),
+    # Polish and Lithuanian (languages-q3 lane, 19 Nov 2026; CARD-STANDARD 10d): rows each
+    # paper prints already answered as the worked example. Each was rendered and read on its
+    # paper page (bold, pre-ticked or pre-numbered) and on its scheme page (a dash, 0 or no mark).
+    ('lithuanian', 2023, 'ol', 'Section A Q1(h)(iii)'): (
+        'Ką veikė Severija? Sunumeruokite įvykius eilės tvarka pagal pavyzdį. (3 dalis) Prirakino dviratį. 2',
+        'paper p6: the ordering row is printed bold with "2" already in its box ("pagal pavyzdį"); scheme p5 prints it bold and unbracketed and pays "(4 × 2 marks)" to the four blank rows only.'),
+    ('lithuanian', 2023, 'ol', 'Section A Q1(h)(vi)'): (
+        'Ką veikė Severija? Sunumeruokite įvykius eilės tvarka pagal pavyzdį. (3 dalis) Ėmė lyti. 1',
+        'paper p6: the ordering row is printed bold with "1" already in its box ("pagal pavyzdį"); scheme p5 prints it bold and unbracketed and pays "(4 × 2 marks)" to the four blank rows only.'),
+    ('lithuanian', 2024, 'ol', 'Section A Q1(e)(i)'): (
+        'Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) paltas viena užkalbintų sustingusi sukryžiuotos mėlynas ilgas paltas',
+        'paper p5: row (i) "mėlynas ilgas" is printed with "paltas" already written in (italic); scheme p4 pays "4 Marks (4 x 1)" to rows (ii)-(v).'),
+    ('lithuanian', 2025, 'ol', 'Section A Q1(f)(1)'): (
+        'Sudarykite sakinius. Įrašykite atsakymo raidę prie žemiau pateiktų skaičių. (2 dalis) Užlipo į palėpę A. ... atsargiai.',
+        'paper p5: the answer grid prints "C" already under 1 ("pagal pavyzdį"); scheme p4 pays "4 marks (4 x 1 mark)" to boxes 2-5.'),
+    ('lithuanian', 2026, 'ol', 'Section A Q1(e)(i)'): (
+        'Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) nepastebimai laiškus neprastos dokumentus portalus laikas bėga nepastebimai',
+        'paper p5: row (i) "laikas bėga" is printed with "nepastebimai" already written in (italic); scheme p4 pays "4 Marks (4 x 1)" to rows (ii)-(v).'),
+    ('lithuanian', 2026, 'ol', 'Section A Q1(g)(i)'): (
+        'Sunumeruokite veiksmus pagal jų eiliškumą tekste. Įrašykite skaičių. (2 dalis) Veiksmas Eiliškumas Pasirąžo kėdėje. 1',
+        'paper p6: row (i) "Pasirąžo kėdėje." is printed bold with "1" already in its box; scheme p5 pays "10 Marks (5 x 2)" to rows (ii)-(vi).'),
+    ('lithuanian', 2026, 'ol', 'Section A Q2(h)(i)'): (
+        'Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (3 dalis) piešinių keliauti lengvesnis pinigų dietą užsidirbu iš savo piešinių',
+        'paper p9: row (i) "užsidirbu iš savo" is printed with "piešinių" already written in, and the word is struck through in the box; scheme p7 pays "8 Marks (4 x 2)" to rows (ii)-(v).'),
+    ('polish', 2022, 'ol', 'Section A Q1(e)(i)'): (
+        'Na podstawie przeczytanego tekstu 1 określ, czy podane zdania (ii) – (vi) to prawda czy fałsz. Odpowiedzi zaznacz (✓) w tabeli, zgodnie z przykładem (i): (akapity: 1, 2, 3) Bartek miał swój telefon w kieszeni. ✓',
+        'paper p6: The paper prints this row in bold with ✓ already in the Prawda column, and the instruction reads "określ, czy podane zdania (ii) – (vi) to prawda czy fałsz ... p.4 prints ‐ (dash in the marks column); the head prices (ii)–(vi) only: "(e) 10 marks (5 x 2 marks)" for this row.'),
+    ('polish', 2022, 'ol', 'Section A Q1(f)(iii)'): (
+        'Co po kolei robił Bartek? Ponumeruj wydarzenia w tabeli obok, zgodnie z przykładem. (akapity: 3, 4) Bartek odpowiedział Patrycji na jej wiadomość.',
+        'paper p7: The paper prints this row in bold with "1" already in its box: p.5 prints ‐ (dash in the marks column) for this row.'),
+    ('polish', 2022, 'ol', 'Section A Q3(g)(i)'): (
+        'Mateusz często wspomina swoją pierwszą rozmowę kwalifikacyjną.',
+        'paper p14: The paper prints the sentence already completed with "kwalifikacyjną" in bold, and strikes "kwalifikacyjna" through in the word box; p.9 prints 0 marks for this row.'),
+    ('polish', 2023, 'ol', 'Section A Q1(f)(i)'): (
+        'Indicate whether the following statements are true or false. Put a tick (✓) in the appropriate boxes. (paragraphs: 4, 5) True False ✓ There was a waiter serving in the café.',
+        'paper p6: The paper prints this row in bold with ✓ already in the False column. p.5 prints - (dash in the Marks column) for this row.'),
+    ('polish', 2023, 'ol', 'Section A Q1(g)(iii)'): (
+        'Put the sentences below in the order in which they appear in the text. Number them one to five according to the example. (paragraphs: 5, 6) The girl visited the art gallery.',
+        'paper p7: The paper prints this row in bold with "1" already in its box: p.5 prints - (dash) for this row.'),
+    ('polish', 2023, 'ol', 'Section A Q3(g)(i)'): (
+        'Uzupełnij po polsku zdania (ii) – (v), zgodnie z przykładem (i). Wybierz brakujące wyrazy z tabeli, użyj właściwej formy gramatycznej. Uwaga, jeden wyraz pozostanie niewykorzystany. Mikołaj Łoziński przyjechał do Krakowa.',
+        'paper p15: The paper prints the sentence completed with "przyjechał" in bold and strikes "przyjechać" through in the word box ("zgodnie z przykładem (i)"). p.9 prints (0 marks) for this row.'),
+    ('polish', 2024, 'ol', 'Section A Q1(c)(i)'): (
+        'Pan Alojzy z łatwością podjął decyzję o zamknięciu księgarni. ✓',
+        'paper p5: The paper prints this row in bold with ✓ already in the Fałsz column ("zgodnie z przykładem (i)"). p.4 prints - (dash in the Marks column) for this row.'),
+    ('polish', 2024, 'ol', 'Section A Q2(c)(i)'): (
+        'Księga rekordów Guinnessa była wydana po raz pierwszy ✓ w 1955 roku.',
+        'paper p10: The paper prints this row in bold with ✓ already in the Prawda column. p.6 prints - (dash in the Marks column) for this row.'),
+    ('polish', 2024, 'ol', 'Section A Q3(g)(i)'): (
+        'Uzupełnij po polsku zdania (ii) – (v), zgodnie z przykładem (i). Wybierz brakujące wyrazy z tabeli, użyj właściwej formy gramatycznej. Uwaga, jeden wyraz pozostanie niewykorzystany. Karolina i Piotr żyją na Malcie.',
+        'paper p15: The paper prints the sentence completed with "Malcie" in bold and strikes "Malta" through in the word box. p.9 prints (0 marks) for this row.'),
+    ('polish', 2025, 'ol', 'Section A Q1(e)(i)'): (
+        'Indicate whether the following statements are true or false. Put a tick (✓) in the appropriate boxes. (paragraphs: 3, 4, 5) Ania’s family shared a holy wafer. ✓',
+        'paper p6: The paper prints this row in bold with ✓ already in the True column. p.5 prints - (dash) for this row.'),
+    ('polish', 2025, 'ol', 'Section A Q2(c)(i)'): (
+        'Określ, czy podane zdania (ii) – (vi) to prawda czy fałsz. Odpowiedzi zaznacz (✓) w tabeli, zgodnie z przykładem (i). (części: 2, 3) Prawda Fałsz ✓ Dziewczyny i chłopcy należą do tych samych drużyn.',
+        'paper p9: The paper prints this row in bold with ✓ already in the Fałsz column ("zgodnie z przykładem (i)"). p.6 prints 0 for this row.'),
+    ('polish', 2025, 'ol', 'Section A Q3(g)(i)'): (
+        'Uzupełnij po polsku zdania (ii) – (v), zgodnie z przykładem (i). Wybierz brakujące wyrazy z tabeli, użyj właściwej formy gramatycznej. Uwaga, jeden wyraz pozostanie niewykorzystany. Jan Miodek jest profesorem.',
+        'paper p14: The paper prints the sentence completed with "profesorem" in bold and strikes "profesor" through in the word box ("zgodnie z przykładem (i)"). p.8 prints none printed (no dash, no 0) for this row.'),
+    ('polish', 2026, 'ol', 'Section A Q1(g)(i)'): (
+        'Indicate whether the following statements are true or false. Put a tick (✓) in the appropriate boxes. (paragraphs: 4, 5, 6) There was a pond in the valley. ✓',
+        'paper p7: The paper prints this row in bold with ✓ already in the True column; scheme p.8 prints 0 for this row.'),
+    ('polish', 2026, 'ol', 'Section A Q3(e)(i)'): (
+        'Indicate whether the following statements are true or false. Put a tick (✓) in the appropriate boxes. (sections: 4, 5, 6) Maja goes to the philharmonic in her free time. ✓',
+        'paper p15: The paper prints this row in bold; scheme p.9 prints 0 for this row.'),
+    ('polish', 2026, 'ol', 'Section A Q3(g)(i)'): (
+        'Uzupełnij po polsku zdania (ii) – (v), zgodnie z przykładem (i). Wybierz brakujące wyrazy z tabeli, użyj właściwej formy gramatycznej. Uwaga, jeden wyraz pozostanie niewykorzystany. Martyna i Filip mają różne zainteresowania.',
+        'paper p16: The paper prints the sentence completed with "zainteresowania" in bold ("zgodnie z przykładem (i)"); scheme p.9 prints no mark for this row.'),
 }
 
 
