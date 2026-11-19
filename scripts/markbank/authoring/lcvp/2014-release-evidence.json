@@ -196,7 +196,7 @@
     "Native2014video playback has not been verified; official listing/headers/container prefix were verified.",
     "Single-model generation and production integration are owned by the coordinator and not yet complete."
   ],
-  "releaseStatus": "Unfinished: new-only display filings await the coordinator third reading; shared-model integration and native video hosting remain pending.",
+  "releaseStatus": "Unfinished WIP: source and application checks passed; browser, ten filing decisions and shared model/video integration remain pending.",
   "displayFilingReview": {
     "asks": 40,
     "firstReaderOriginalPagesSeen": 50,
@@ -218,5 +218,43 @@
     "existing518FilingsOverwritten": false,
     "decisionEvidence": "REVIEW/2026-11-19-lcvp-release/third-reader-input.json in the shared plans folder"
   },
-  "releaseSnapshot": "https://drive.google.com/file/d/1PHjEcp8s340w5H5clFGdGF_wQb6T98zH/view"
+  "releaseSnapshot": "https://drive.google.com/file/d/1PHjEcp8s340w5H5clFGdGF_wQb6T98zH/view",
+  "verification": {
+    "recordedAt": "2026-11-19T17:07:25.183366+00:00",
+    "preservedLiveCards": 518,
+    "newAsks": 40,
+    "printedLeafLabels": 39,
+    "offeredMarks": 210,
+    "passed": [
+      "Original question, case and scheme hashes and all 50 source pages",
+      "All 518 prior authored and runtime card objects unchanged",
+      "All 40 source bindings and original Atlas links",
+      "Unrelated subject records, source routes and coverage baseline entries unchanged",
+      "Card lint",
+      "Seven focused suites: 274 checks",
+      "LCVP coverage checks: 3 checks",
+      "Paper Trail integrity: 3871 checks",
+      "Application type check",
+      "Repository test type check at its 12 GiB setting",
+      "LCVP source helper syntax and scoped lint"
+    ],
+    "browser": "Pending browser-only retry and manual screenshot inspection",
+    "pending": [
+      "Ten third-reader display filings",
+      "Shared single-model generation and production integration",
+      "Native video hosting and its shared resolver/fixture treatment"
+    ],
+    "logEvidence": {
+      "original-source-proof.json": "5ee479cedf31170103c46a8b64061ae5a4f38deae1ebc6c6b576bc707b938289",
+      "runtime-preservation-and-links.json": "57ee6f0916f92a56c88962309db8de2984ab98c51ff085bfa8da37be91ac99ea",
+      "baseline-preservation.json": "cc3a4f428c83625991cc2a0c9a2f3ea1c730850d5bb406886a16938437375d2f",
+      "required-checks.log": "3fc8f6c29174a36b54cbb7ce9eaf3b5a0a2187889b9d2784975772bc003071a2",
+      "coverage-checks.log": "6c23334a1df8cafe1c0fea267e7d2882d98f376b51742c7c1df52c97910973ae",
+      "paper-trail-integrity.log": "306074d8fdb8477dd6625925cb0227a489498443ba97408c1c727486e5ebe9bd",
+      "application-types.log": "59925f4b026bd55ff54374e4d96c1d662f0018373be22840bf14358894b759f6",
+      "test-types.log": "b49d59b972b11cc7833e72bcc31512d134cb3dbd9b8594bcb4aa852475282d28",
+      "scoped-lint.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source-helper-syntax.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
 }
