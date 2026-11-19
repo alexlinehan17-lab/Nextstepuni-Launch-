@@ -22,7 +22,8 @@ sys.path.insert(0, HERE)
 
 import pl_paper                                                  # noqa: E402
 from pl_listen import scheme_lines                               # noqa: E402
-from pl_listen_lib import S, J, T, TM, PL, W, one, menu, part, One, shown, graded, ladder  # noqa: E402,F401
+from pl_listen_lib import (S, J, T, TM, PL, W, one, menu, part, One, shown,  # noqa: E402,F401
+                           graded, ladder, components)
 from pl_listen_specs import build_rows, conflict                 # noqa: E402
 from pl_topics import (topic_for, concept_for, answer_language,  # noqa: E402
                        language_note)
@@ -130,6 +131,21 @@ def points_for(n, what):
 
 def bracket(n):
     return Rule(n, r'\((\d{1,3})(?:/\d{1,3})?\)', ('per',))
+
+
+class PaperPrice:
+    """A part's price as the QUESTION PAPER prints it beside the part, "(1)"
+    at the part's own line height (2013 Higher Q1, p3), where the scheme
+    prints only the question's total. One answer at that price."""
+    def __init__(self, page, y):
+        self.page, self.y = page, y
+
+    def read(self, doc):
+        hits = [l.text for l in doc['lines'] if l.page == self.page and abs(l.y - self.y) < 2
+                and re.fullmatch(r'\(\s*\d{1,2}\s*\)', l.text.strip())]
+        if len(hits) != 1:
+            raise ValueError(f'paper p{self.page} y{self.y}: {len(hits)} printed prices')
+        return 1, int(re.search(r'\d{1,2}', hits[0]).group(0)), f'{hits[0]} (paper p{self.page})'
 
 
 def columns(d, page, y0, y1, edges):
@@ -284,6 +300,315 @@ def criteria(l1, p1, l2, p2, l3, p3, l4):
     percentage last)."""
     return [(J(*[S(n) for n in range(l1, p1 + 1)]), p1), (J(*[S(n) for n in range(l2, p2 + 1)]), p2),
             (J(*[S(n) for n in range(l3, p3 + 1)]), p3), (S(l4), l4)]
+
+
+# ================================================================ 2010 HL ===
+# Q5 prints its whole scale, "(5 pkt za trzy powody, 4 pkt za dwa, 3 pkt za
+# jeden )": a ladder of 3, then 1, then 1, read from those printed totals. Q3
+# prints "(5 pkt za trzy przykłady, 4 pkt za dwa, itd.)", which leaves the
+# one-example price unprinted: a whole-question card that quotes the rule.
+CRITERIA_2010 = criteria(141, 142, 143, 144, 145, 146, 147)
+
+
+class Step:
+    """The difference between two printed totals of one scale: "4 pkt za dwa"
+    less "3 pkt za jeden" is what the second answer adds."""
+    def __init__(self, higher, lower):
+        self.higher, self.lower = higher, lower
+
+    def read(self, doc):
+        _a, hi, hn = self.higher.read(doc)
+        _b, lo, ln = self.lower.read(doc)
+        return 1, hi - lo, f'{hn} less {ln}'
+
+
+def _rules_2010(*sels):
+    def note(d):
+        head = J(S(139), S(140)).text(d)
+        tail = (' Its model for this task, as an example, not a checklist: '
+                + ' '.join(f'“{x.text(d)}”' for x in sels) + '.') if sels else ''
+        return f'The scheme prints, for Części II and III: “{head}”{tail}'
+    return note
+
+
+SPECS[(2010, 'hl')] = [
+    R('I1a', [shown(S(22)), shown(J(S(23), S(24), S(25)))], total=bracket(21), whole=True),
+    R('I1b', [shown(J(S(27), S(28), S(29), S(30)))], total=bracket(26), whole=True),
+    R('I2', [shown(J(*[S(n) for n in range(34, 43)]))], total=bracket(33), whole=True),
+    R('I3', [shown(x) for x in _j([47], [48], range(53, 55), range(55, 57), [57], range(58, 60))],
+      total=bracket(45), whole=True, rownote=lifted(S(46))),
+    R('I4', [shown(J(*[S(n) for n in range(62, 71)])), shown(J(*[S(n) for n in range(72, 78)]))],
+      total=bracket(61), whole=True,
+      rownote=lambda d: f'The scheme prints two answers, either one, joined by “{S(71).text(d)}”.'),
+    R('I5', [ladder([S(n) for n in range(86, 93)],
+                    Rule(82, r'(\d) pkt za jeden', ('per',)),
+                    Step(Rule(82, r'(\d) pkt za dwa', ('per',)), Rule(82, r'(\d) pkt za jeden', ('per',))),
+                    Rule(82, r'(\d) pkt za trzy', ('per',)))],
+      rownote=lambda d: (f'The scheme pays by how many reasons are given, in its own words: '
+                         f'“{S(82).text(d)}”. Its lead-in: “{J(S(83), S(84), S(85)).text(d)}”')),
+    R('I6', [shown(x) for x in _j(range(102, 105), range(105, 109), range(109, 111), range(111, 114))],
+      total=bracket(101), whole=True),
+    R('II1', [graded(S(115), bracket(114), CRITERIA_2010)],
+      rownote=_rules_2010(J(*[S(n) for n in range(120, 125)]), J(S(125), S(126), S(127)))),
+    R('III1', [graded(J(S(133), S(134)), bracket(132), CRITERIA_2010)], rownote=_rules_2010(),
+      question=essay_question(4)),
+    R('III2', [graded(J(S(133), S(134)), bracket(132), CRITERIA_2010)], rownote=_rules_2010(),
+      question=essay_question(4)),
+]
+
+
+# ================================================================ 2011 HL ===
+# Q5 prices its two components in words, "3 pkt tylko za akapit 3" and "2 pkt
+# tylko za akapit 4": each answer is a row at its printed price. The criteria
+# block stands at the end (p5), headed over two lines.
+CRITERIA_2011 = criteria(131, 132, 133, 134, 135, 136, 137)
+
+
+def _rules_2011(*sels):
+    def note(d):
+        head = J(S(129), S(130)).text(d)
+        tail = (' Its points for this task, as examples, not a checklist: '
+                + '; '.join(f'“{x.text(d)}”' for x in sels) + '.') if sels else ''
+        return f'The scheme prints, for Części II and III: “{head}”{tail}'
+    return note
+
+
+def _essay_2011(d, q):
+    title = re.sub(r'^\d\.\s*', '', q)
+    return f'{PL(4, "Używając około 300").text(d)} {title}'
+
+
+SPECS[(2011, 'hl')] = [
+    R('I1a', [one(J(S(25), S(26)), bracket(23))], rownote=lifted(S(24))),
+    R('I1b', [one(S(28), bracket(27))], rownote=lifted(S(29))),
+    R('I1c', [one(S(31), bracket(30))]),
+    R('I1d', [one(S(33), bracket(32))]),
+    R('I1e', [one(S(35), bracket(34))]),
+    R('I2', [shown(J(S(39), S(40), S(41), S(42)))], total=bracket(38), whole=True),
+    R('I3', [shown(x) for x in _j(range(49, 51), range(51, 53), [53])], total=bracket(48), whole=True),
+    R('I4', [shown(x) for x in _j([56], [57], [58], range(59, 61), [61])], total=bracket(55), whole=True),
+    R('I5', [one(J(*[S(n) for n in range(64, 71)], S(71, before=' 3 pkt')),
+                 Rule(71, r'(\d) pkt tylko za akapit 3', ('per',))),
+             one(J(S(72), S(73), S(74, before=' 2 pkt')),
+                 Rule(74, r'(\d) pkt tylko za akapit 4', ('per',)))],
+      total=bracket(63)),
+    R('I6', [shown(x) for x in _j(range(79, 81), range(85, 87), range(87, 89), range(89, 91),
+                                  range(91, 94), range(94, 96))], total=bracket(78), whole=True),
+    R('II1', [graded(S(97), bracket(96), CRITERIA_2011)],
+      rownote=_rules_2011(*_j([102], [103], [104], [105], range(106, 108), range(108, 110)))),
+    R('III1', [graded(J(S(111), S(112)), bracket(110), CRITERIA_2011)],
+      rownote=_rules_2011(*_j(range(115, 117), [117], range(122, 124), [124])), question=_essay_2011),
+    R('III2', [graded(J(S(111), S(112)), bracket(110), CRITERIA_2011)],
+      rownote=_rules_2011(), question=_essay_2011),
+]
+
+
+# ================================================================ 2012 HL ===
+# Q1 prints "(1)" for each word and its accepted synonyms as a dash list: any
+# one of them. The criteria block stands at the END of this scheme (p7).
+CRITERIA_2012 = criteria(171, 172, 173, 174, 175, 176, 177)
+
+
+def _q2012_1(d, q):
+    instr = re.sub(r'^1\.\s*', '', PL(3, '1. Zastąp').text(d))
+    return q if q.startswith(instr[:20]) else f'{instr} {q}'
+
+
+def _q2012_4b(d, q):
+    quote = re.sub(r'^4\.\s*', '', PL(4, '4. „Z gąszczu').text(d))
+    return f'{quote} {q}'
+
+
+def _essay_2012(d, q):
+    title = re.sub(r'(?<=[a-z])\d$', '', re.sub(r'^\d\.\s*', '', q))   # the footnote mark
+    return f'{PL(4, "Napisz wypracowanie").text(d)} {title}'
+
+
+SPECS[(2012, 'hl')] = [
+    *[R(f'I1{x}', [menu([S(n) for n in opts], bracket(price))], question=_q2012_1)
+      for x, opts, price in (('a', (27, 28), 26), ('b', (31, 32, 33), 30), ('c', (36, 37), 35),
+                             ('d', (39, 40), 38), ('e', (42, 43), 41))],
+    R('I2', [shown(x) for x in _j(range(50, 52), range(52, 54), range(54, 56))],
+      total=bracket(49), whole=True),
+    R('I3', [shown(x) for x in _j(range(57, 59), range(59, 61))], total=bracket(56), whole=True),
+    R('I4a', [shown(J(S(63), S(64)))], total=bracket(62), whole=True),
+    R('I4b', [shown(J(S(66), S(67), S(68), S(69)))], total=bracket(65), whole=True, question=_q2012_4b),
+    R('I5', [shown(x) for x in _j(range(72, 75), range(75, 77))], total=bracket(71), whole=True),
+    R('I6', [shown(x) for x in _j(range(87, 90), range(90, 93), range(93, 96), range(96, 98),
+                                  range(98, 101), range(101, 104))], total=bracket(86), whole=True),
+    R('II1', [graded(S(105), bracket(104), CRITERIA_2012)],
+      rownote=examples(170, *_j([110], (111, 112, 113, 118, 119), [120], [121], range(122, 126),
+                                range(126, 130)))),
+    R('III1', [graded(J(S(131), S(132)), bracket(130), CRITERIA_2012)],
+      rownote=examples(170, *_j([136], range(137, 140), range(140, 142), [142], range(143, 145),
+                                [145], [146])),
+      question=_essay_2012),
+    R('III2', [graded(J(S(131), S(132)), bracket(130), CRITERIA_2012)],
+      rownote=examples(170, *_j(range(156, 158), range(158, 160), [160], [161], [162], [163], [164],
+                                [165], [166], range(167, 169))),
+      question=_essay_2012),
+]
+
+
+# ================================================================ 2013 HL ===
+# The scheme prices Q1 only as "(5)"; the PAPER prints "(1)" beside each of
+# its five words (p3), and that printed price is each part's. Q3 and Q5 print
+# their parts' shares, "(3)" and "(2)", on both documents.
+CRITERIA_2013 = criteria(50, 50, 51, 52, 53, 54, 55)
+
+
+def _q2013_3b(d, q):
+    quote = (re.sub(r'^3\.\s*', '', PL(4, '3. „').text(d)) + ' '
+             + PL(4, '[…] coś, do czego').text(d))
+    return f'{quote} {q}'
+
+
+def _q2013_5a(d, q):
+    quote = (re.sub(r'^5\.\s*', '', PL(4, '5. „Być').text(d)) + ' '
+             + PL(4, '– marzący').text(d))
+    return f'{quote} {q}'
+
+
+SPECS[(2013, 'hl')] = [
+    *[R(f'I1{x}', [one(S(n), PaperPrice(3, y))])
+      for x, n, y in zip('abcde', (60, 62, 64, 66, 68), (590, 606, 622, 638, 654))],
+    R('I2', [shown(x) for x in _j(range(72, 75), range(75, 77), range(81, 85))],
+      total=bracket(71), whole=True),
+    R('I3a', [shown(x) for x in _j([92], range(93, 95), range(95, 99))], total=bracket(88), whole=True),
+    R('I3b', [shown(x) for x in _j(range(101, 103), range(103, 106))], total=bracket(90), whole=True,
+      question=_q2013_3b),
+    R('I4', [shown(x) for x in _j(range(110, 114), range(118, 121))], total=bracket(109), whole=True),
+    R('I5a', [shown(x) for x in _j(range(128, 131), range(131, 134), [134])], total=bracket(125),
+      whole=True, question=_q2013_5a),
+    R('I5b', [shown(x) for x in _j(range(137, 139), [139], range(140, 142), range(142, 144),
+                                   range(144, 146))], total=bracket(126), whole=True),
+    R('I6', [shown(x) for x in _j(range(155, 157), range(157, 160), range(160, 162), range(162, 165),
+                                  range(165, 170))], total=bracket(149), whole=True),
+    R('II1', [graded(S(172), bracket(171), CRITERIA_2013)],
+      rownote=examples(49, *_j(range(175, 178), range(178, 180), range(180, 183), range(183, 187),
+                               range(187, 190), range(194, 196), range(196, 198)))),
+    R('III1', [graded(J(S(200), S(201)), bracket(199), CRITERIA_2013)],
+      rownote=examples(49, *_j([206], [207], [208], [209], range(210, 212), [212])),
+      question=essay_question(4)),
+    R('III2', [graded(J(S(200), S(201)), bracket(199), CRITERIA_2013)],
+      rownote=examples(49, *_j([217], [218], [219], [220], [221], [222], [223], [224])),
+      question=essay_question(4)),
+]
+
+
+# ================================================================ 2014 HL ===
+# 2014 prints its prices as words in brackets under each question: ladders
+# ("(3 pkt za jedno wyjaśnienie i 2 pkt za drugie)" across Q1's two parts, so
+# Q1 is one card for the printed question, as the ordering tasks are), a
+# split by component (Q4), and a split by part (Q5).
+CRITERIA_2014 = criteria(49, 49, 50, 51, 52, 53, 54)
+
+
+def _q2014_1(d, q):
+    head = re.sub(r'^1\.\s*', '', PL(3, '1. Wyjaśnij').text(d))
+    return '\n'.join([head, f'{PL(3, "a)").text(d)} {PL(3, "„być").text(d)}',
+                       f'{PL(3, "b)").text(d)} {PL(3, "„wlec").text(d)}'])
+
+
+def _q2014_5(d, q):
+    return (re.sub(r'^5\.\s*', '', PL(4, '5. „Czas').text(d)) + ' '
+            + PL(4, 'należy rozumieć').text(d))
+
+
+def _ladder_note(n, steps):
+    return lambda d: (f'The scheme pays a descending ladder here, in its own words: '
+                      f'“{S(n).text(d)}” — {steps} marks, in that order, to a printed total of 5.')
+
+
+SPECS[(2014, 'hl')] = [
+    R('I1', [ladder([S(60), J(S(62), S(63))],
+                    Rule(58, r'\((\d) pkt za jedno', ('per',)), Rule(58, r'i (\d) pkt za drugie', ('per',)),
+                    bracket(57))],
+      question=_q2014_1, rownote=_ladder_note(58, '3, 2')),
+    R('I2', [ladder([S(67), J(S(68), S(69)), S(70)],
+                    Rule(66, r'\((\d) pkt za jeden', ('per',)),
+                    Rule(66, r'i (\d) pkt za każdy kolejny', ('per',)), bracket(65))],
+      rownote=_ladder_note(66, '3, 1, 1')),
+    R('I3', [ladder([J(S(79), S(80)), J(S(81), S(82), S(83))],
+                    Rule(74, r'\((\d) pkt za pierwszy', ('per',)), Rule(74, r'i (\d) pkt za drugi', ('per',)),
+                    bracket(73))],
+      rownote=_ladder_note(74, '3, 2')),
+    # Priced by component: the explanation 3, the student's own comment 2.
+    # The scheme's points for each are quoted on the row as examples.
+    R('I4', [components(S(88), [(S(88, after='pkt za ', before=' i 2'),
+                                 Rule(88, r'\((\d) pkt za wyjaśnienie', ('per',))),
+                                (S(88, after='2 pkt za ', before=')'),
+                                 Rule(88, r'i (\d) pkt za własny', ('per',)))])],
+      total=bracket(87),
+      rownote=lambda d: ('Examples the scheme prints, not a checklist: '
+                         + '; '.join(f'“{x.text(d)}”' for x in
+                                     [J(S(89), S(90)), S(91), S(92), J(S(93), S(94)), J(S(95), S(96)),
+                                      J(S(98), S(99), S(100)), J(S(102), S(103), S(104))]) + '.')),
+    R('I5a', [shown(S(n)) for n in (110, 111, 112, 113)],
+      total=Rule(108, r'\((\d) pkt za sens dosłowny', ('per',)), whole=True, question=_q2014_5),
+    R('I5b', [shown(S(n)) for n in (116, 117, 122, 123)],
+      total=Rule(108, r'i (\d) pkt za sens przenośny', ('per',)), whole=True, question=_q2014_5),
+    R('I6', [shown(x) for x in _j(range(128, 130), range(130, 133), range(133, 135), range(136, 138),
+                                  range(138, 140), [140])],
+      total=bracket(127), whole=True),
+    R('II1', [graded(S(143), bracket(142), CRITERIA_2014)],
+      rownote=examples(48, *_j(range(149, 152), range(152, 155), range(155, 160), range(164, 167),
+                               range(167, 169), range(170, 172), [172], [173], [174], [175]))),
+    R('III1', [graded(J(S(178), S(179)), bracket(177), CRITERIA_2014)],
+      rownote=examples(48, *_j([184], [185], [186], [187], [188], [189], [190], [191])),
+      question=essay_question(4)),
+    R('III2', [graded(J(S(178), S(179)), bracket(177), CRITERIA_2014)],
+      rownote=examples(48, *_j([197], range(198, 200), [200], [201])),
+      question=essay_question(4)),
+]
+
+
+# ================================================================ 2015 HL ===
+# Read against the repaired scheme (464645160: its text layer had reported
+# the Polish letters as other code points). Q3 prices its parts in words,
+# "2 pkt za część (a) i 3 pkt za część (b)", and prints no split inside
+# either: each part is a whole-question card at its printed share.
+CRITERIA_2015 = criteria(51, 52, 53, 54, 55, 56, 57)
+
+
+def _q2015_3(d, q):
+    lead = re.sub(r'^3\.\s*', '', PL(4, '3. Odwołując').text(d))
+    return f'{lead} {q}'
+
+
+def _heading(n):
+    return lambda d: f'Under the scheme\'s heading “{S(n).text(d)}”: examples, not a checklist.'
+
+
+SPECS[(2015, 'hl')] = [
+    R('I1', [menu([S(n) for n in range(63, 68)],
+                  EachOf(bracket(61), Rule(62, r'(\d) pkt za każde', ('per',))))],
+      rownote=lambda d: f'The scheme ends its list “{S(68).text(d)}”.'),
+    R('I2', [ladder([S(72), S(73), S(74)],
+                    Rule(71, r'^(\d) pkt za jeden', ('per',)),
+                    Rule(71, r'i (\d) pkt za każdy kolejny', ('per',)), bracket(70))],
+      rownote=lambda d: (f'The scheme pays a descending ladder here, in its own words: '
+                         f'“{S(71).text(d)}” — 3, 1, 1 marks, in that order, to a printed total of 5.')),
+    R('I3a', [shown(S(87)), shown(S(88))],
+      total=Rule(85, r'(\d) pkt za część \(a\)', ('per',)), whole=True, question=_q2015_3),
+    R('I3b', [shown(J(S(91), S(92))), shown(S(93))],
+      total=Rule(85, r'(\d) pkt za część \(b\)', ('per',)), whole=True, question=_q2015_3),
+    R('I4', [shown(x) for x in _j(range(102, 105), [105], range(106, 109), range(109, 111), [111])],
+      total=bracket(100), whole=True, rownote=_heading(101)),
+    R('I5', [shown(S(n)) for n in (117, 118, 119, 120, 121, 122, 123, 128, 129)],
+      total=bracket(115), whole=True, rownote=_heading(116)),
+    R('I6', [shown(x) for x in _j([136], [137], range(138, 140), range(140, 142), range(142, 144),
+                                  range(144, 146))],
+      total=bracket(134), whole=True, rownote=_heading(135)),
+    R('II1', [graded(S(148), bracket(147), CRITERIA_2015)],
+      rownote=examples(50, *_j(range(153, 155), range(155, 157), range(157, 160), [160]))),
+    R('III1', [graded(J(S(167), S(168)), bracket(166), CRITERIA_2015)],
+      rownote=examples(50, *_j([172], [173], [174], [175], [176], range(177, 179))),
+      question=essay_question(4)),
+    R('III2', [graded(J(S(167), S(168)), bracket(166), CRITERIA_2015)],
+      rownote=examples(50, *_j([183], [184], [185], [186], [187], [188], [189])),
+      question=essay_question(4)),
+]
 
 
 # ================================================================ 2016 HL ===
@@ -727,8 +1052,9 @@ def cards(year, level):
         key = (m.group(1), int(m.group(2)), m.group(3), m.group(4))
         # A card for a whole printed question whose rows the census reads as
         # romans (an ordering task) cites the question; its page is theirs.
+        depth = next((i for i, part in enumerate(key) if part is None), len(key))
         ask = asks.get(key) or next(a for k, a in sorted(asks.items(), key=str)
-                                    if k[:3] == key[:3])
+                                    if k[:depth] == key[:depth])
         question = ask.full_text
         if spec.question:
             question = spec.question(doc, question)

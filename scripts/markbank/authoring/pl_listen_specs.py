@@ -28,7 +28,8 @@ sys.path.insert(0, HERE)
 import pl_paper                                                  # noqa: E402
 from pl_listen import scheme_lines, aural_lines, AUDIO           # noqa: E402
 from pl_listen_lib import (S, J, T, TN, PL, one, menu, part,   # noqa: E402,F401
-                           One, Menu, Sel, Shown, shown, Graded, percent_of, Ladder)
+                           One, Menu, Sel, Shown, shown, Graded, percent_of, Ladder,
+                           Components)
 from pl_topics import (AURAL, POLISH, ENGLISH_OR_IRISH,          # noqa: E402
                        language_note, answer_language, concept_for)
 from paper_census import key_label                              # noqa: E402
@@ -156,6 +157,20 @@ def build_rows(doc, spec, note):
                 given += pct
             if given != 100:
                 raise ValueError(f'{spec.key}: the criteria print {given}%, not 100%')
+            rows.append({'id': rid, 'kind': 'criterion', 'verbatim': r.head.text(doc),
+                         'marks': whole, 'permittedMarks': list(range(whole + 1)),
+                         'parts': parts, **ctx})
+            total += whole
+            continue
+        if isinstance(r, Components):
+            parts, whole = [], 0
+            for k, (sel, tariff) in enumerate(r.parts, 1):
+                c, per, pn = tariff.read(doc)
+                if c != 1:
+                    raise ValueError(f'{spec.key}: a component priced {pn!r}')
+                parts.append({'id': f'c{k}', 'verbatim': sel.text(doc), 'marks': per,
+                              'permittedMarks': list(range(per + 1))})
+                whole += per
             rows.append({'id': rid, 'kind': 'criterion', 'verbatim': r.head.text(doc),
                          'marks': whole, 'permittedMarks': list(range(whole + 1)),
                          'parts': parts, **ctx})

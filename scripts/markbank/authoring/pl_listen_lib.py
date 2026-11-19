@@ -161,6 +161,19 @@ def graded(head, total, parts):
     return Graded(head, total, parts)
 
 
+class Components(Row):
+    """One answer the scheme prices by its printed COMPONENTS, "(3 pkt za
+    wyjaśnienie wypowiedzi i 2 pkt za własny komentarz)": a criterion row,
+    the scheme's own line, each component a part placed 0 to its printed
+    price. `parts` are (selector naming the component, its tariff)."""
+    def __init__(self, head, parts, lead=None):
+        self.head, self.parts, self.lead = head, parts, lead
+
+
+def components(head, parts):
+    return Components(head, parts)
+
+
 class Ladder(Row):
     """A descending price over a printed list: "3 pkt za jedną technikę i 1 pkt
     za każdą kolejną" under a "(5)" pays 3, 1, 1 -- the live 2021 cards' shape

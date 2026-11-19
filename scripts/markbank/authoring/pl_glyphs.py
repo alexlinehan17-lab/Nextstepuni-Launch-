@@ -29,10 +29,36 @@ sys.path.insert(0, HERE)
 
 import lt_glyphs  # noqa: E402
 
+# Files whose few wrong glyphs are settled by a crop of the printed page alone,
+# never by the corpus map: the corpus map's Ċ is ę (2015), but here the page
+# prints Ć. Each entry names the page and the word. These files also carry
+# real Latin-1 letters ("Stáit" on the cover) that the map must not touch.
+VERIFIED_FILE = {
+    ('2018', 'hl'): {
+        # Ċ U+010A -- scheme p7, "TAK, MOŻEMY FORMUŁOWAĊ TRAFNE OSĄDY" (and its
+        # NIE line): the 400 dpi crop shows C with an acute, "FORMUŁOWAĆ".
+        '\u010a': 'Ć',
+    },
+}
+
+
+def verified_only(md, year, level, check):
+    table = VERIFIED_FILE[(year, level)]
+    text = open(md, encoding='utf-8').read()
+    counts = {f'{c} U+{ord(c):04X} -> {table[c]}': text.count(c) for c in table}
+    fixed = ''.join(table.get(c, c) for c in text)
+    print(f'{md}: {sum(text.count(c) for c in table)} glyphs repaired by the page {counts}')
+    if not check:
+        with open(md, 'w', encoding='utf-8') as fh:
+            fh.write(fixed)
+    return 0
+
 
 def main():
     year, level = sys.argv[1], sys.argv[2]
     md = os.path.join(ROOT, 'examiner-reports', 'polish', 'schemes', f'{year}-{level}.md')
+    if (year, level) in VERIFIED_FILE:
+        return verified_only(md, year, level, '--check' in sys.argv)
     text = open(md, encoding='utf-8').read()
     real = lt_glyphs.LATIN1_REAL - lt_glyphs.LATIN1_MANGLED['polish']
     present = lt_glyphs.mangled_chars(text, lt_glyphs.ALPHABETS['polish'], real)
