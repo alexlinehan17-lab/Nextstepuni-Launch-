@@ -407,6 +407,8 @@ interface BiologyRuntime {
   partReferences: Array<[number, number, number, string, number]>;
   /** [h/o, year-2000, printed question, topic indexes] */
   questionMappings: Array<['h' | 'o', number, string, number[]]>;
+  /** The SEC's deferred sittings, carded: [h/o, year-2000, booklet file id, printed question, topic indexes]. */
+  deferredQuestionMappings?: Array<['h' | 'o', number, string, string, number[]]>;
 }
 
 interface BusinessRuntime {
@@ -3744,10 +3746,12 @@ const registerAdditiveQuestionRuntime = (runtime: BrowserQuestionRuntime) => {
     }).filter(topicId => topicAppliesToExamYear(runtime.subjectId, TOPICS_BY_ID.get(topicId)!, year));
     if (!added.length) continue;
     const key = fileQuestionKey(runtime.subjectId, level, year, 'main', fileid, n, paperKey, lang);
-    const current = FILE_QUESTION_TOPICS.get(key) ?? [
+    // A deferred paper ("…-deferred.pdf") is numbered like June's but is not June's paper: its question
+    // starts from its own reviewed topics only, never from June's question of the same number.
+    const current = FILE_QUESTION_TOPICS.get(key) ?? (/-deferred\.pdf$/i.test(fileid) ? [] : [
       ...(QUESTION_TOPICS.get(questionKey(runtime.subjectId, level, year, 'main', n, paperKey)) ?? []),
       ...(QUESTION_TOPICS.get(questionKey(runtime.subjectId, level, year, 'main', n, paperKey, lang)) ?? []),
-    ];
+    ]);
     FILE_QUESTION_TOPICS.set(key, [...new Set([...current, ...added])]);
   }
 };
@@ -3879,6 +3883,26 @@ for (const [levelCode, yearOffset, n, topicIndexes] of biologyRuntime.questionMa
       levelCode === 'h' ? 'higher' : 'ordinary',
       yearOffset + 2000,
       'main',
+      n,
+      'single',
+    ),
+    topicIndexes.map(topicIndex => biologyTopicIdentity(topicIndex).id),
+  );
+}
+// A deferred sitting's booklets ("LC025ALP038EV-deferred.pdf",
+// "LC025ALP040EV-deferred.pdf") are numbered as June's: their questions join
+// on the booklet, so they never replace or merge with June's question of the
+// same number (Engineering does the same).
+for (const [levelCode, yearOffset, fileid, n, topicIndexes] of (
+  biologyRuntime.deferredQuestionMappings ?? []
+)) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey(
+      biologyRuntime.subjectId,
+      levelCode === 'h' ? 'higher' : 'ordinary',
+      yearOffset + 2000,
+      'main',
+      fileid,
       n,
       'single',
     ),
