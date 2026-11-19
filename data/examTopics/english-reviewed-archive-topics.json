@@ -991,6 +991,36 @@
     "english-8-0",
     "english-11-14"
    ]
+  },
+  {
+   "id": "english-ordinary-poetry-keats-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-keats",
+   "label": "Poetry - Keats",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-11"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-o-reilly-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-o-reilly",
+   "label": "Poetry - O'Reilly",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-66"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-healy-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-healy",
+   "label": "Poetry - Healy",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-67"
+   ]
   }
  ]
 }

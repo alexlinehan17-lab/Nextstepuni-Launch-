@@ -326,9 +326,10 @@ def ordinary_criteria_printed(scheme, task, mode, allocation):
     else:
         want = f"Combined Criteria ex {marks} P + C = {allocation['P+C']} L + M = {allocation['L+M']}"
     if mode == 'discrete' and marks == 100 and allocation == {'P': 30, 'C': 30, 'L': 30, 'M': 10}:
-        # A composition prints its discrete grid in full: 100% / 30% / 10% rows.
+        # A composition prints its discrete grid in full: 100% / 30% / 10% rows (2022 leaves the 100% row's
+        # label cell empty, so the row is matched by its first two bands).
         flat = re.sub(r'\s*-\s*', ' - ', text)
-        if '100% 100 - 90' in flat and '30% 30 - 27' in flat and '10% 10 - 9' in flat:
+        if '100 - 90 89 - 80' in flat and '30% 30 - 27' in flat and '10% 10 - 9' in flat:
             return
     if re.sub(r'\s+', ' ', want) not in re.sub(r'\s*=\s*', ' = ', text):
         raise ValueError(f"{task['id']}: the scheme does not print “{want}” on PDF{page}-{page + 1}")

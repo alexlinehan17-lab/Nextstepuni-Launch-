@@ -67839,6 +67839,3720 @@
       },
       "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF42: “Mark ex 20 by reference to the criteria for assessment” with its H1–H8 row (combined grid PDF50). No invented splits or submarks."
     },
+    "english-2022-ol-deferred-p1-composing-1": {
+      "taskSha256": "fb03dff90e8d840fc905506914656a9d74d808726a1e14aad05cf23b31b09847",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 100,
+      "schemePages": [
+        12
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF12: “Mark ex 100 by reference to the Criteria for Assessment”, P 30 / C 30 / L 30 / M 10, with the 100-mark discrete grid (30% and 10% rows) printed with the composition (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-composing-2": {
+      "taskSha256": "91b96a6c62add1a2696b4d90301e13a852037ccc306a7ac3b6b63898339aa5a2",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 100,
+      "schemePages": [
+        12
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF12: “Mark ex 100 by reference to the Criteria for Assessment”, P 30 / C 30 / L 30 / M 10, with the 100-mark discrete grid (30% and 10% rows) printed with the composition (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-composing-3": {
+      "taskSha256": "8136070a4d3fb87cb30166a3b7dc1cd40611313d80d773b99add09a23066cc20",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 100,
+      "schemePages": [
+        13
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF13: “Mark ex 100 by reference to the Criteria for Assessment”, P 30 / C 30 / L 30 / M 10, with the 100-mark discrete grid (30% and 10% rows) printed with the composition (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-composing-4": {
+      "taskSha256": "5047c267a8b6e03de7cd19b4e72c466e64c21c797d0952bc67c37c30e11501b4",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 100,
+      "schemePages": [
+        14
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF14: “Mark ex 100 by reference to the Criteria for Assessment”, P 30 / C 30 / L 30 / M 10, with the 100-mark discrete grid (30% and 10% rows) printed with the composition (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-composing-5": {
+      "taskSha256": "bb98bcca51a46567dde5875883bd92002e9e190810d87cca590a9f112bfb7c63",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 100,
+      "schemePages": [
+        15
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF15: “Mark ex 100 by reference to the Criteria for Assessment”, P 30 / C 30 / L 30 / M 10, with the 100-mark discrete grid (30% and 10% rows) printed with the composition (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-composing-6": {
+      "taskSha256": "18fe918e4d410f3ff0a274343e7b0d6df6fdb3d0351c40aca22e3fddb815ac7a",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 100,
+      "schemePages": [
+        16
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF16: “Mark ex 100 by reference to the Criteria for Assessment”, P 30 / C 30 / L 30 / M 10, with the 100-mark discrete grid (30% and 10% rows) printed with the composition (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-composing-7": {
+      "taskSha256": "bbe8614fa1534a8dd89bb52b4cbfc1214d2dd4d6c33fdc795654920509820a50",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 100,
+      "schemePages": [
+        3,
+        11,
+        47
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 12 paper pages viewed; the prompt and its 100-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Mark ex 100 by reference to the Criteria for Assessment”, P 30 / C 30 / L 30 / M 10, with the 100-mark discrete grid), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p1-t1-a-i": {
+      "taskSha256": "8a602b59496b31c19a7af6f8a1d6b5425f1af5756a9635a884b4f2b8b11b5602",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        5
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF5: the part’s own line “Combined Criteria ex 10, P+C = 6, L + M = 4” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-t1-a-ii": {
+      "taskSha256": "b1ce1976e00a25b4f959e7dcf918acc3a76155819119d4f3d4e8b8a0dccb08fb",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        5
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF5: the part’s own line “Combined Criteria ex 10, P+C = 6, L + M = 4” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-t1-a-iii-a": {
+      "taskSha256": "7c34a32f3d7d60212d958db46135d316cd484e099f39ed86ef85b8a6a16902a1",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        6
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF6: the part’s own line “Combined Criteria ex 10, P+C = 6, L + M = 4” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-t1-a-iii-b": {
+      "taskSha256": "cefe0fb4b263424a5009791787a89248f2dc5d29c15ab76bb08817fc2b7e3b32",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        6
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF6: the part’s own line “Combined Criteria ex 10, P+C = 6, L + M = 4” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-t1-b": {
+      "taskSha256": "cba6f0d45895359f49ecabe2473c2bde7e67d8f3dfd72a28c6d33d415cac269d",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 40,
+      "schemePages": [
+        6
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF6: the part’s own line “Discrete Criteria ex 40, P = 12, C = 12, L = 12, M = 4” printed with it (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-t2-a-i": {
+      "taskSha256": "a22d0861c59e324ebebcf1ad87743c8fe060311e3b6eec8a620492cd16a2d1b6",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        7
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF7: the part’s own line “Combined Criteria ex 10, P+C = 6, L + M = 4” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-t2-a-ii": {
+      "taskSha256": "74232bd92e6f5b2d69b074f406797ca546bf81942de6581daaf3210a1f1931e6",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        7
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF7: the part’s own line “Combined Criteria ex 10, P+C = 6, L + M = 4” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-t2-a-iii-a": {
+      "taskSha256": "669d35b9d08c9b76358c97adeb159701bbcc71ac12a7569d2c04b9fc3796d5dc",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        7
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF7: the part’s own line “Combined Criteria ex 10, P+C = 6, L + M = 4” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-t2-a-iii-b": {
+      "taskSha256": "5123638fdb4b52e3f1b10f3731d7cde599ab4ebf2fb885d29ef4588ad1ee35a8",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        8
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF8: the part’s own line “Combined Criteria ex 10, P+C = 6, L + M = 4” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-t2-b": {
+      "taskSha256": "f0a3ab8feb78d1f22d2495b3dffbc5d3d26e1cc3a74a490678ee69841345305c",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 40,
+      "schemePages": [
+        8
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF8: the part’s own line “Discrete Criteria ex 40, P = 12, C = 12, L = 12, M = 4” printed with it (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-t3-a-i": {
+      "taskSha256": "d37d4b28a64853cd00075e9a7db596a3d600f8ead40a6cf70c590976dce0fe0b",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        9
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF9: the part’s own line “Combined Criteria ex 10, P+C = 6, L + M = 4” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-t3-a-ii": {
+      "taskSha256": "dce42eee392489f9eecf50290d3d48f55889547c1217d2915035a1ed7a72240b",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        9
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF9: the part’s own line “Combined Criteria ex 10, P+C = 6, L + M = 4” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-t3-a-iii-a": {
+      "taskSha256": "fae4c6f3905330b068bb41d3c21844638624451cd1b8669f991b8b69dfd854f3",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        9
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF9: the part’s own line “Combined Criteria ex 10, P+C = 6, L + M = 4” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-t3-a-iii-b": {
+      "taskSha256": "ed00f34a508dfc0fa62d9f11c342c98c985ce3ba0dd4fc1bf5676734ebb55993",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        10
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF10: the part’s own line “Combined Criteria ex 10, P+C = 6, L + M = 4” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p1-t3-b": {
+      "taskSha256": "2bacba040953c17d0456f2dbc15382acfe7e895d4a1035ff0e13606c6c1a9b84",
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 40,
+      "schemePages": [
+        10
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        11,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF10: the part’s own line “Discrete Criteria ex 40, P = 12, C = 12, L = 12, M = 4” printed with it (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-a-q1-a-i": {
+      "taskSha256": "277dda61ecb42c84a496834301ca58e0104890aba60c38653cbb729d5d23767a",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        31
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF31: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-a-q1-a-ii": {
+      "taskSha256": "d71b5d2463f8855092cb488757b8a07b47575642b3b981399382cd8607e862b1",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        31
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF31: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-a-q1-b": {
+      "taskSha256": "39978a1b88081a0ea39e132fbd54540713f95987cd9f5a7f19a8912fcdb289f0",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 40,
+      "schemePages": [
+        31
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF31: the part’s own line “Discrete Criteria ex 40, P = 12, C = 12, L = 12, M = 4” printed with it (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-a-q2-a-i": {
+      "taskSha256": "1872f5ec02b4708623a64107345e8c6c380b8f2713689c2ca2b7d7b5e295c4a2",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF32: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-a-q2-a-ii": {
+      "taskSha256": "e8875d207ca22bb73e195bb5564a2d3d58407ea9de22c684572bcee4daf1bedd",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF32: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-a-q2-b": {
+      "taskSha256": "6a97dff28a1df836908d37d738dc0dfb7dc9ceaea2e5ce961662517a1de847e9",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 40,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF32: the part’s own line “Discrete Criteria ex 40, P = 12, C = 12, L = 12, M = 4” printed with it (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-b-q1-a-i": {
+      "taskSha256": "01460786bee641d067a490588f48e05ba066af987c0c8c0e17175e8478d11f6f",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF33: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-b-q1-a-ii": {
+      "taskSha256": "119f18720d5e4ca581c79e194f8c88b6cea31f4aec508844498275ec3eab3d69",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF33: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-b-q1-b": {
+      "taskSha256": "4547154c1b35a3fe521597c016b632e4b547f9e4e149169116c69b4754b92b5d",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 40,
+      "schemePages": [
+        33,
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF33: the part’s own line “Discrete Criteria ex 40, P = 12, C = 12, L = 12, M = 4” printed with it (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-b-q2-a-i": {
+      "taskSha256": "f4aa2acfd7433f9c24b0dd2e50f3e61299a7c5ea2b75a44c46bd7476e4d466d7",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF34: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-b-q2-a-ii": {
+      "taskSha256": "b2f0a0d9c1ef3c270f2a49cec37c43b55d8bc0f9b8dff1597be29e72749a45f3",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF34: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-b-q2-b": {
+      "taskSha256": "475097abc23121ad13b493f67dcd1886c77f520b3fc049eba3fcdd225d2580e3",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 40,
+      "schemePages": [
+        35
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF35: the part’s own line “Discrete Criteria ex 40, P = 12, C = 12, L = 12, M = 4” printed with it (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-c-q1-a-i": {
+      "taskSha256": "ed4d818f87353beffd1218a9c714c23615634e7e3dd3cabd79d55d1020cab269",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        35
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF35: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-c-q1-a-ii": {
+      "taskSha256": "4ab8ab6b37201fdef8418a7ed526aa2e6f5adb179e5fb1683bfd27f0f2320517",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        36
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF36: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-c-q1-b": {
+      "taskSha256": "0e0c78dba7a256f25d29582723164ed4aea15e0f8d8b7b64289c3c8b2ff396dd",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 40,
+      "schemePages": [
+        36
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF36: the part’s own line “Discrete Criteria ex 40, P = 12, C = 12, L = 12, M = 4” printed with it (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-c-q2-a-i": {
+      "taskSha256": "13fb99a1aef666642384b49472da3477b37208869663f2b88525bf813373036a",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        36
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF36: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-c-q2-a-ii": {
+      "taskSha256": "695b0610493170d35c52a0f446c7e06e76e8bab206f40a1d7bc05ff1085ce6c6",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF37: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-comparative-c-q2-b": {
+      "taskSha256": "c591c69f82cebd5047d9e12936e15e1d0b0a66c77b1eafe698c6f9c58c6794c3",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 40,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF47 (O1–O8)."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF37: the part’s own line “Discrete Criteria ex 40, P = 12, C = 12, L = 12, M = 4” printed with it (grid PDF47). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-a-q1-a": {
+      "taskSha256": "9c44cf8214e8f60453f73e77455709fc57418d21f11b3ffbad930cde325ba8d5",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF40: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-a-q1-b": {
+      "taskSha256": "cd465f367be9efa2ab76d7b662b0eb456e0d09867014bdd85c7806d06a214b69",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF40: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-a-q2-i": {
+      "taskSha256": "107b034ca8243fbf7e3ec7e24f4b2053a99d8311cd25629c83f5f1623624a585",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF40: the part’s own line “Combined Criteria ex 20, P + C = 12, L + M = 8” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-a-q2-ii": {
+      "taskSha256": "a3c3740f940ad1926ef4fe4e1c54f34119b09a755a870c1b8a9909bcc8ca253d",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 20-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 20, P + C = 12, L + M = 8”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-a-q2-iii": {
+      "taskSha256": "c1103c50eaac784b54430bfa7ad91e9a2d7518c6181b6dfd90ced5a4659d0202",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 20-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 20, P + C = 12, L + M = 8”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-b-q1-a": {
+      "taskSha256": "84217d46518807b0e3b71baffe624caaa481abc56ff47b26cc701f1fd6505108",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF41: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-b-q1-b": {
+      "taskSha256": "68a6e56830c441b17247bf10391083b545385988259918ac9f19ac00b39584e5",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF41: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-b-q2-i": {
+      "taskSha256": "dd794c7219ba19d402546ec796e554404da4518a9508f62f3fd27048c4ada6f8",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF41: the part’s own line “Combined Criteria ex 20, P + C = 12, L + M = 8” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-b-q2-ii": {
+      "taskSha256": "87c74e4c56892bad35e13a95b790c7c76c0acc93aaec42f8932c190158eb5131",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF41: the part’s own line “Combined Criteria ex 20, P + C = 12, L + M = 8” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-b-q2-iii": {
+      "taskSha256": "e1b124a5e4aa404c14270a44a08947cc772bbe19b7bcede24cfc20e3f6892134",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 20-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 20, P + C = 12, L + M = 8”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-c-q1-a": {
+      "taskSha256": "653cafdf13d70eae0e36557984bcfe376ab70ee9251edead1b273be344a194f6",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF43: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-c-q1-b": {
+      "taskSha256": "56f8f4ef0bfd4677bea3ad17a8e0e5820c2afb8f16b6064fe03b35010bd38c1c",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF43: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-c-q2-i": {
+      "taskSha256": "b13b440523f5bb40946797e20a41f71160ceea4345b7aefb50ef80d9b4bfe38a",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF43: the part’s own line “Combined Criteria ex 20, P + C = 12, L + M = 8” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-c-q2-ii": {
+      "taskSha256": "b236bf98503e7583e6796d2d5e5a6656bbe1b78613c8bef91bf4bfe827cbc55c",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF43: the part’s own line “Combined Criteria ex 20, P + C = 12, L + M = 8” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-c-q2-iii": {
+      "taskSha256": "a1b3cc55b2c2b7d312792cb11cac56d9992674b50ed8a8696b052e992692610a",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 20-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 20, P + C = 12, L + M = 8”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-d-q1-a": {
+      "taskSha256": "8f4c211dc541fcc2e1dd8cf12ce204ed34fcad88713b51629754df99b70bfdd8",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 15-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 15, P + C = 9, L + M = 6”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-d-q1-b": {
+      "taskSha256": "96e9ebce92794f6cb9a46866a7649a83de5d53e0a8c265af706211ebefe41ca8",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 15-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 15, P + C = 9, L + M = 6”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-d-q2-i": {
+      "taskSha256": "ddb1beb5e1a58df3a4131245a79ce3f75040404260147fbf3ab7c68dae965be6",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 20-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 20, P + C = 12, L + M = 8”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-d-q2-ii": {
+      "taskSha256": "217478288dc785e33d5c5313505167a63ba39a17d8ae4a0b33192a059c53cf1e",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 20-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 20, P + C = 12, L + M = 8”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-d-q2-iii": {
+      "taskSha256": "0621f51746da039e3f1ce5090b6e4ea4557cb87e2cf6fd8dbb687fcbabe6e1f0",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 20-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 20, P + C = 12, L + M = 8”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-e-q1-a": {
+      "taskSha256": "6e6f71aa2c31871ade50f4cd2c0449fb0c8382f4dafef85941462bdf9f56d438",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        45
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF45: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-e-q1-b": {
+      "taskSha256": "2137b34b17f3bf3e5755605ea2261c927cc49e6a6bc8644edc60972aede03140",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        45
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF45: the part’s own line “Combined Criteria ex 15, P + C = 9, L + M = 6” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-e-q2-i": {
+      "taskSha256": "9782888a139c5c1ef0b819edc11f82385290fff108ed9e357f01f33b3113a4c1",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        45
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF45: the part’s own line “Combined Criteria ex 20, P + C = 12, L + M = 8” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-prescribed-e-q2-ii": {
+      "taskSha256": "88eae2b328e2b2ce5a6292a089b65364b513e5720189bbfaae2fa7197f81f98f",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 20-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 20, P + C = 12, L + M = 8”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-e-q2-iii": {
+      "taskSha256": "05738e3c1ec8ab3e2c00fb17530b3ba3f3f004e4018a664dd15805da09a1ffa7",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 20-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 20, P + C = 12, L + M = 8”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-f-q1-a": {
+      "taskSha256": "ddac21513851268cc03f4c73215326dfcbe32e29f9f3680b8c524c7bda98285d",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 15-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 15, P + C = 9, L + M = 6”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-f-q1-b": {
+      "taskSha256": "688a31c501c42db9191351b434242bab954e198600cad32f0cd2ebc4a683236b",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 15-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 15, P + C = 9, L + M = 6”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-f-q2-i": {
+      "taskSha256": "e29fd34e165736921e9ba8852c9783f4b46bdfa7e1f37ce26af778a860a3d081",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 20-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 20, P + C = 12, L + M = 8”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-f-q2-ii": {
+      "taskSha256": "85dd90c9c724be5dc71080c3c29bcd2e6499a79b2ac9180a44cdceed6682e5b7",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 20-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 20, P + C = 12, L + M = 8”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-prescribed-f-q2-iii": {
+      "taskSha256": "dc48d7dfb06ded7933f5aa44cc8ab4295462c145a9cbe73e5d9997a8eb4278a7",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 20,
+      "schemePages": [
+        3,
+        38,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 20-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 20, P + C = 12, L + M = 8”), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-a-q1-a": {
+      "taskSha256": "a237fc36d1093603cb1a48487908ac6720f072916f89282a6a0c2c09590408da",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 10-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 10, P+C = 6, L + M = 4” for Question 1(a) and (b), “Combined Criteria ex 15, P+C = 9, L + M = 6” for (c)), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-a-q1-b": {
+      "taskSha256": "3eadf4dc56a8fdd7aeff3c9c913652ebc59f23bb0aee4bed01f2cdfbed2abdb4",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 10-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 10, P+C = 6, L + M = 4” for Question 1(a) and (b), “Combined Criteria ex 15, P+C = 9, L + M = 6” for (c)), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-a-q1-c": {
+      "taskSha256": "dfedf31a8661916d1e9c9737fdd2de4b0ae68aaaa41bf8801ce20a659c6b1956",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 15-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 10, P+C = 6, L + M = 4” for Question 1(a) and (b), “Combined Criteria ex 15, P+C = 9, L + M = 6” for (c)), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-a-q2": {
+      "taskSha256": "92b9713446ba409d162822e6ea757b249d06ced6c0d2107cf497a68eec907076",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-a-q3": {
+      "taskSha256": "41062203d41f5f7558f95205189dc9572cfb6bac63e2b6ca198488d37f3e7e9b",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-a-q4": {
+      "taskSha256": "ac8506acd077cb228b2a78e5423077d8aa56f8161327a27b5f9f5765656e0fab",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-b-q1-a": {
+      "taskSha256": "3811432d89b0e829cf983bea74888c85ca55ca88a5b435041b63c7a4cd2f36fb",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 10-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 10, P+C = 6, L + M = 4” for Question 1(a) and (b), “Combined Criteria ex 15, P+C = 9, L + M = 6” for (c)), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-b-q1-b": {
+      "taskSha256": "7d7236d1444a91d3272276434536d17e3da2f2100125f81ea241b7c53b5a5ea8",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 10-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 10, P+C = 6, L + M = 4” for Question 1(a) and (b), “Combined Criteria ex 15, P+C = 9, L + M = 6” for (c)), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-b-q1-c": {
+      "taskSha256": "22e97bacc5e53f0142649045136f77056e4a0c939dfd3afd4a735e7cb61cadf9",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 15-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 10, P+C = 6, L + M = 4” for Question 1(a) and (b), “Combined Criteria ex 15, P+C = 9, L + M = 6” for (c)), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-b-q2": {
+      "taskSha256": "f2dcb568cbde94e7e4bd053ac0c681877093da167c114327626975d9dd763107",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-b-q3": {
+      "taskSha256": "46dbc2744578da61a485cf65ecfbe8a559b5927921157d401aa586ef9bf483b2",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-b-q4": {
+      "taskSha256": "9f2b29745ab939b5ecdd7f786f09d9720ce009f2b6777c8317b642542d42727b",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-c-q1-a": {
+      "taskSha256": "e38167e604732bfc172981088aeae85e3f881252bf227156ea8d8a55742dcef7",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF19: the part’s own line “Combined Criteria ex 10” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-c-q1-b": {
+      "taskSha256": "5b58c6d9f1de6cca21315a52086075de1cb21ea7ba38f1a901745002366f98d8",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF19: the part’s own line “Combined Criteria ex 10” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-c-q1-c": {
+      "taskSha256": "99f831e7aa4e33a50eab8946320c578e2d196515bdfab24e9328e55e12b9e9aa",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF19: the part’s own line “Combined Criteria ex 15” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-c-q2": {
+      "taskSha256": "f97101f636d13453ab81689d5b14b38792f70fea839ade483f649cfd43f93bc9",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF20: the part’s own line “Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2” printed with it (grid PDF47, modified weightings PDF48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-c-q3": {
+      "taskSha256": "1469b4262bb9f7de1c8065bd05f17af66fe55d2fb47a6f385909faed1f5466df",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF20: the part’s own line “Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2” printed with it (grid PDF47, modified weightings PDF48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-c-q4": {
+      "taskSha256": "206075e00dbacbc875156a32173a962a9ad9bd5996acdaca443fcfb06b820477",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF20: the part’s own line “Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2” printed with it (grid PDF47, modified weightings PDF48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-d-q1-a": {
+      "taskSha256": "9e80520b23513e4c3b246c197c00f761f2f97ccedfb8a3b03d3ae349977d8fb6",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        22
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF22: the part’s own line “Combined Criteria ex 10” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-d-q1-b": {
+      "taskSha256": "d34838e93dea280214f96abef022037816ccf805dc18317979d5fe78a1dc6f2c",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        22
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF22: the part’s own line “Combined Criteria ex 10” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-d-q1-c": {
+      "taskSha256": "9ae8cc103ce3a695529d4840317f50957ddfd41398ebc429823b7a081701e24f",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        22
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF22: the part’s own line “Combined Criteria ex 15” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-d-q2": {
+      "taskSha256": "ec79026520eb113e809e9d1b91a1bc477635390e5a16f97a6ef2208796108ffe",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF23: the part’s own line “Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2” printed with it (grid PDF47, modified weightings PDF48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-d-q3": {
+      "taskSha256": "57ff68576d61b154832566cc2a8b73af845b3886e0675c7e02fa936c647c97c0",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF23: the part’s own line “Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2” printed with it (grid PDF47, modified weightings PDF48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-d-q4": {
+      "taskSha256": "190e84e03e15c7c11633a77b3b2710bfa343746668af0633f05c91438d2938b2",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-e-q1-a": {
+      "taskSha256": "43705771ac14a3b3a3430b3dbdeb829f1cfe1e2747589554cdd6da05dd495667",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF24: the part’s own line “Combined Criteria ex 10” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-e-q1-b": {
+      "taskSha256": "870698cf2acb8753819876e03d6d400c0cd912ff935a1bf55170d0cad194d098",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF24: the part’s own line “Combined Criteria ex 10” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-e-q1-c": {
+      "taskSha256": "3cd9a0f2047b12897e2f74e240f61324eb6c841c8182a8a27e8e99e7d8b74f53",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF24: the part’s own line “Combined Criteria ex 15” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-e-q2": {
+      "taskSha256": "8781f8c8cf7fa891094195d6463c6d96618c41f80b05a984e9b0b299c0d19a19",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-e-q3": {
+      "taskSha256": "3e11ad2a68c8e5a03164f699bbfce1a758f9a19482eeb8d9caa407fd0dabad39",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF25: the part’s own line “Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2” printed with it (grid PDF47, modified weightings PDF48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-e-q4": {
+      "taskSha256": "2be4543418655d27bd92813921c7a69191c7ef8030069403ac9704027a3b9e5a",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-f-q1-a": {
+      "taskSha256": "48dce8db5ded447316c4c963aab7f253ea6aafb72cd738d8242bcb6b63cd9681",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF26: the part’s own line “Combined Criteria ex 10” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-f-q1-b": {
+      "taskSha256": "37f1517abd1dd36ced5c57287a8761d5c7e7a4cd605b6792972a04a937ed48f5",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF26: the part’s own line “Combined Criteria ex 10” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-f-q1-c": {
+      "taskSha256": "98fbf39077953f1a07105188c7052f11d777f779182f273529fd1ca53b1910ac",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF26: the part’s own line “Combined Criteria ex 15” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-f-q2": {
+      "taskSha256": "7f1766da76cb93130132e1abb4c7e4d4aa578472a4dd44751d3dae13ff99f110",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-f-q3": {
+      "taskSha256": "1c660b0a0f41506af108c6aaa1d6e09eedb4badd0cd5c92d2c146380eac984ea",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF27: the part’s own line “Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2” printed with it (grid PDF47, modified weightings PDF48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-f-q4": {
+      "taskSha256": "7eb30e1baf79c37b90798ae2913443e3ef0b8c3fca5051a7fadd5414706e6749",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-g-q1-a": {
+      "taskSha256": "89ff23886f31ac134575e942e39377a800afff3f5fd5ca64c3be2e2528a0cec7",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF28: the part’s own line “Combined Criteria ex 10” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-g-q1-b": {
+      "taskSha256": "23851e16f2398e036689fff6f345b02b4a2827938c2c7ccf0c71debc2245cc67",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF28: the part’s own line “Combined Criteria ex 10” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-g-q1-c": {
+      "taskSha256": "5bd62437899ef791e12ffba4328748a874227f66a7ce93db27b663ec28e5a62e",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF28: the part’s own line “Combined Criteria ex 15” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-g-q2": {
+      "taskSha256": "a6d26718afdefc007ed853f38af33cdc488d38178ffd32b056a26e8865d085f0",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-g-q3": {
+      "taskSha256": "c3ce2676dd7cab2a4744938c79b86694cde6006e84c43476b81e12895aa6d601",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-g-q4": {
+      "taskSha256": "27ad5e7f43f82533dc9e92ea37df7419c94a02be01c362eb30e2895b51f4cd0c",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF29: the part’s own line “Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2” printed with it (grid PDF47, modified weightings PDF48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-single-h-q1-a": {
+      "taskSha256": "678c1da47243175fd614cf60ee8686de7fa6edc13e7e0715b658baf00d2a5364",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 10-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 10, P+C = 6, L + M = 4” for Question 1(a) and (b), “Combined Criteria ex 15, P+C = 9, L + M = 6” for (c)), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-h-q1-b": {
+      "taskSha256": "146e5b3f51bf5fc693030d42e0af885c5d231eb8b700086998fb47122fc9bba1",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 10-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 10, P+C = 6, L + M = 4” for Question 1(a) and (b), “Combined Criteria ex 15, P+C = 9, L + M = 6” for (c)), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-h-q1-c": {
+      "taskSha256": "778d78625a1f68852ea9fc84b00c45aedf10efcf588f86b96d16c83b95db044c",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 15-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 10, P+C = 6, L + M = 4” for Question 1(a) and (b), “Combined Criteria ex 15, P+C = 9, L + M = 6” for (c)), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-h-q2": {
+      "taskSha256": "c9a4d2e63401b612fb72e4591726da1a56b0b69922bbaf7592327b1b64f7291a",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-h-q3": {
+      "taskSha256": "cf7b4a73e558bc837584e49a46ff5fec13a0a279941b20f306727b63e7f6067d",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-h-q4": {
+      "taskSha256": "e9a7ebea3643646bec0fe31d130f70e9f238d4db3928db87d0fd37b27780453c",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-i-q1-a": {
+      "taskSha256": "5532b5911337b0659ab3082dcadf23f9c43786cae7d09a3216e7ca3f4d5603eb",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 10-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 10, P+C = 6, L + M = 4” for Question 1(a) and (b), “Combined Criteria ex 15, P+C = 9, L + M = 6” for (c)), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-i-q1-b": {
+      "taskSha256": "0df131b70427956ea55d498cef24f8f1e20aeb6b154ba95880089c760a4e0183",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 10-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 10, P+C = 6, L + M = 4” for Question 1(a) and (b), “Combined Criteria ex 15, P+C = 9, L + M = 6” for (c)), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-i-q1-c": {
+      "taskSha256": "4ceb12166f4725bdb8f1134ead7a2f2e2f40486f2567f2f9aca0a01b286fa99e",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 15,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 15-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Combined Criteria ex 10, P+C = 6, L + M = 4” for Question 1(a) and (b), “Combined Criteria ex 15, P+C = 9, L + M = 6” for (c)), on PDF3’s criteria (C/L ≤ P) and the grids PDF47–48. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-i-q2": {
+      "taskSha256": "26938b77f8e91b3b42862907e20850ea035af884830ae45a01728551cf79c92f",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-i-q3": {
+      "taskSha256": "0be679b3005779ef775e9ad88e43823a7b281994ae0fd7d04439bb4b856ab7c4",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-single-i-q4": {
+      "taskSha256": "4788833394ea078121ec45f7cf358294cc023dc74785c9eed6205282c48239fc",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 35,
+      "schemePages": [
+        3,
+        18,
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 11,
+          "C": 11,
+          "L": 11,
+          "M": 2
+        },
+        "notes": "2022 OL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. 35-mark discrete grid PDF47 (O1–O8), “weightings have been modified in the light of adjustments to the 2022 examination questions” (PDF48): P 11, C 11, L 11, M 2."
+      },
+      "reason": "The deferred marking scheme prints no block for this task: its PDF2 note says a deferred scheme \"will only have been finalised for the questions attempted by the candidates\". All 20 paper pages viewed; the prompt and its 35-mark tariff are the paper’s. Marked as every part of its kind that this scheme does set out (“Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2”, weightings modified for 2022 (PDF48)), on PDF3’s criteria (C/L ≤ P) and the grid PDF47. No task-specific guidance exists to quote."
+    },
+    "english-2022-ol-deferred-p2-unseen-q1": {
+      "taskSha256": "3e8fa5cee669204511d2cc90409889da617f30e26c791635733e3a5c0816a063",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF38: the part’s own line “Combined Criteria ex 10, P + C = 6, L + M = 4” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
+    "english-2022-ol-deferred-p2-unseen-q2": {
+      "taskSha256": "34b392894e6686b6bbce996224dce114bc56d7a964e3909c9131bf91d467bdef",
+      "paperSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "schemeSha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+      "totalMarks": 10,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        18,
+        30,
+        38,
+        46,
+        47,
+        48
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2022 OL deferred combined grids (PDF47–48, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages viewed. Exact task and award verified on scheme PDF38: the part’s own line “Combined Criteria ex 10, P + C = 6, L + M = 4” printed with it (grids PDF47–48). No invented splits or submarks."
+    },
     "english-2023-hl-deferred-p1-composing-1": {
       "taskSha256": "d972427dac4c4ec9c73cf38f14666d701f44b1a8b64643aca5bebd4234bf5b1a",
       "paperSha256": "8478421ce1f7230542c97d003557b909116f79e7d3e91cf0ba3a6245911e40d0",

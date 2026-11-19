@@ -18624,6 +18624,521 @@
       "kind": "open",
       "reason": "Scheme PDF30: the reasons why the candidate does or does not agree that incorporating elements of philosophy, melodrama and satiric comedy adds to the narrative power of The Picture of Dorian Gray — agreement or disagreement is a reasoned judgement on one grid, not routes. One 70-mark response."
     },
+    "english-2022-ol-deferred-p1-composing-1": {
+      "questionSha256": "1167c1d91d7d08d246e69d9bd16ecc1c8d7c3ee1089a90359542d1dce83ed4ff",
+      "kind": "open",
+      "reason": "Scheme PDF12: a speech to a local historical society discussing three important lessons the candidate believes we should learn from the past — their own three. One 100-mark composition."
+    },
+    "english-2022-ol-deferred-p1-composing-2": {
+      "questionSha256": "32114bbbfc9dc87678efce37f9684debe5003ece40186f42bfa78b22b10c36be",
+      "kind": "open",
+      "reason": "Scheme PDF12: a magazine article about the various animals the candidate fears or dislikes and why; “serious or amusing or both” is the register, not a choice of task. One 100-mark composition."
+    },
+    "english-2022-ol-deferred-p1-composing-3": {
+      "questionSha256": "8ab687cce40220c3dcc075f7ce604664b43fc5e4c42ebafc8aa58366abc2afaf",
+      "kind": "required",
+      "reason": "Scheme PDF13: a short story in which a character is both amazed and alarmed to have grown feathers overnight, dealing with the difficulties of seeking both an explanation and a cure; “serious or humorous or both” is the register. One 100-mark composition."
+    },
+    "english-2022-ol-deferred-p1-composing-4": {
+      "questionSha256": "2aa63311479b82acac2647cb7601e2bc1b3ea1eabf0a9e9970452fab083020f2",
+      "kind": "flexible",
+      "reason": "Scheme PDF14: a front-page article for a national newspaper “(either broadsheet or tabloid)” — either style, on one grid — breaking the news that Irish scientists have recreated a Tyrannosaurus Rex. One 100-mark composition."
+    },
+    "english-2022-ol-deferred-p1-composing-5": {
+      "questionSha256": "3f989f53cf771a520f47fda16de01cb267df5149c578263dd880522e61ebf37e",
+      "kind": "open",
+      "reason": "Scheme PDF15: a personal essay reflecting on what the candidate believes are the most astonishing pieces of technology invented by humans; “one of” belongs to the quotation from TEXT 3, not a choice. One 100-mark composition."
+    },
+    "english-2022-ol-deferred-p1-composing-6": {
+      "questionSha256": "6d714f191a9b966331545dca9d2a67357a501e9b62a56fdefc26e733d603c50f",
+      "kind": "open",
+      "reason": "Scheme PDF16: a talk to a conference for young environmentalists explaining why the candidate does or does not support keeping wild animals in zoos or other artificial habitats — a reasoned stance either way. One 100-mark composition."
+    },
+    "english-2022-ol-deferred-p1-composing-7": {
+      "questionSha256": "c4d150bff1fecb69bdb751e5b88332392cc20f2a599badeb1805537080afef24",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this composition (PDF2 note); the paper asks for one short story in which a participant in a Citizen Science project makes a terrifying discovery. One 100-mark composition."
+    },
+    "english-2022-ol-deferred-p1-t1-a-iii-b": {
+      "questionSha256": "71e385b20e9c655e7a526067b514c9d67dbef6f09c8ef93afd291cd205cda1c4",
+      "kind": "open",
+      "reason": "Scheme PDF6: the type of creature – an insect, bird or other animal – the candidate would choose to spend a day as, with reasons; “Allow for a broad range of responses.” One 10-mark response."
+    },
+    "english-2022-ol-deferred-p1-t1-b": {
+      "questionSha256": "e015c277ae92d1c0bb26a84fda04709d973a800fda9f8d25574c049e9a9f0f1b",
+      "kind": "required",
+      "reason": "Scheme PDF6: a letter to the Editor of the local newspaper that explains why the candidate and friends would like a wild flower garden in the park, looks for sponsorship from local businesses and encourages the community to become involved; “Candidates should deal with all aspects of the task, although not necessarily equally.” One 40-mark response."
+    },
+    "english-2022-ol-deferred-p1-t2-a-i": {
+      "questionSha256": "bcb9c3bb83433d94817b43ffd01997d316c82d542cb684387009c5f44635ab6d",
+      "kind": "open",
+      "reason": "Scheme PDF7: three ways humans can benefit from interacting with a variety of animals, from TEXT 2; “in which” introduces the task, not a choice. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p1-t2-a-iii-b": {
+      "questionSha256": "71e385b20e9c655e7a526067b514c9d67dbef6f09c8ef93afd291cd205cda1c4",
+      "kind": "open",
+      "reason": "Scheme PDF8: the type of creature – an insect, bird or other animal – the candidate would choose to spend a day as, with reasons; “Allow for a broad range of responses.” One 10-mark response."
+    },
+    "english-2022-ol-deferred-p1-t2-b": {
+      "questionSha256": "1538ce9f88aaf97cbe8471b0cd993cdf958e715d291e16b4ad76c85d23ddb871",
+      "kind": "required",
+      "reason": "Scheme PDF8: podcast text that discusses the importance of animals in the candidate’s life, explains why humans should respect other creatures and outlines how we could do more for the world’s animal population; domesticated or wild animals “or both”; all aspects required, not necessarily equally. One 40-mark response."
+    },
+    "english-2022-ol-deferred-p1-t3-a-i": {
+      "questionSha256": "40a56f204f7af4b55a1f6e9e0d98b76f6e3d08383dadc5585bd45c47097e20c5",
+      "kind": "open",
+      "reason": "Scheme PDF9: three of the reasons Washington Wachira thinks birds are wonderful, the candidate’s own three, supported from TEXT 3; the indicative material is not a pool. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p1-t3-a-ii": {
+      "questionSha256": "0e9887d303bc799ad0f0f48fe53d5adfbdd37d984678a2f1bc1d85e287a85561",
+      "kind": "open",
+      "reason": "Scheme PDF9: whether the speech was both entertaining and informative — “They may agree or disagree, wholly or in part”: a reasoned judgement either way, not routes. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p1-t3-a-iii-b": {
+      "questionSha256": "71e385b20e9c655e7a526067b514c9d67dbef6f09c8ef93afd291cd205cda1c4",
+      "kind": "open",
+      "reason": "Scheme PDF10: the type of creature – an insect, bird or other animal – the candidate would choose to spend a day as, with reasons; “Allow for a broad range of responses.” One 10-mark response."
+    },
+    "english-2022-ol-deferred-p1-t3-b": {
+      "questionSha256": "e5ae6f6aa598c6b599eb98b1d60230e67e7c16a9209f3bdde9691d2167dfefdc",
+      "kind": "required",
+      "reason": "Scheme PDF10: a talk to Transition Year students sharing enthusiasm for a hobby or activity other than bird-watching or beekeeping, describing it and the candidate’s involvement, how they became interested and why others should take it up; all aspects required, not necessarily equally. One 40-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-a-q1-a-i": {
+      "questionSha256": "6dd7836cf9f088e024f3b84fd64f018114da71da71151f72b61b11299b74cd08",
+      "kind": "flexible",
+      "reason": "Scheme PDF31: a text and relationship of the candidate’s choosing, with at least one key moment explaining the greatest strength or the greatest weakness — either. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-a-q1-a-ii": {
+      "questionSha256": "5b424e378b5d1c65652611c7b3c0d16c1489191b806a5949ae159a30a724116a",
+      "kind": "flexible",
+      "reason": "Scheme PDF31: a text and relationship of the candidate’s choosing, with at least one key moment explaining the greatest strength or the greatest weakness — either. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-a-q1-b": {
+      "questionSha256": "62c75ee6f36e63d90cc03b1190ce6803960dac4af400b6f7909b3f73f9bbb231",
+      "kind": "flexible",
+      "reason": "Scheme PDF31: a relationship in each of at least two texts, compared for whether the characters’ involvement did or did not improve their lives — either or a combination on one grid. One 40-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-a-q2-a-i": {
+      "questionSha256": "fb8ba866039e091677bb307979bb37efdfcb80ffe75808b567eb3efab94a33a4",
+      "kind": "open",
+      "reason": "Scheme PDF32: a text and relationship of the candidate’s choosing and which character contributed most to its success or failure — their own judgement. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-a-q2-a-ii": {
+      "questionSha256": "4e5cfb72d7075dd83cdc253e112b32eb89ea16afe1de730a189c5f9f07be52e6",
+      "kind": "open",
+      "reason": "Scheme PDF32: a text and relationship of the candidate’s choosing and which character contributed most to its success or failure — their own judgement. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-a-q2-b": {
+      "questionSha256": "62c75ee6f36e63d90cc03b1190ce6803960dac4af400b6f7909b3f73f9bbb231",
+      "kind": "flexible",
+      "reason": "Scheme PDF32: a relationship in each of at least two texts, compared for whether the characters’ involvement did or did not improve their lives — either or a combination on one grid. One 40-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-b-q1-a-i": {
+      "questionSha256": "a88d025c90c7e4125420c8ab1350b9bed3b4050fffe2c478b5be24c7b9478122",
+      "kind": "flexible",
+      "reason": "Scheme PDF33: a text, at least one key moment and an aspect of the social setting the candidate finds attractive or unattractive — either. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-b-q1-a-ii": {
+      "questionSha256": "d0d6c9492c63c72a3d24559125127d7d8fbea1ba4499eabd96dd83c7dd5cd244",
+      "kind": "flexible",
+      "reason": "Scheme PDF33: a text, at least one key moment and an aspect of the social setting the candidate finds attractive or unattractive — either. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-b-q1-b": {
+      "questionSha256": "0c2b6b6254f3d5f20fd8c571cba6997cadbf8e29cb5ba89d4b9b8966be7e64ed",
+      "kind": "open",
+      "reason": "Scheme PDF33–34: the extent to which money or other forms of wealth was considered important in the social setting of each of at least two texts — a graded comparison; “which” belongs to the question’s wording. One 40-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-b-q2-b": {
+      "questionSha256": "0c2b6b6254f3d5f20fd8c571cba6997cadbf8e29cb5ba89d4b9b8966be7e64ed",
+      "kind": "open",
+      "reason": "Scheme PDF35: the extent to which money or other forms of wealth was considered important in the social setting of each of at least two texts — a graded comparison; “which” belongs to the question’s wording. One 40-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-c-q1-a-i": {
+      "questionSha256": "0b1d9255959062d9269e1f30215fd1669a0d43a71b961665b5af760043a5ae69",
+      "kind": "flexible",
+      "reason": "Scheme PDF35: a text and a hero, heroine or villain of the candidate’s choosing, with at least one key moment for a TV documentary showing why the character truly is one — any of the three. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-c-q1-a-ii": {
+      "questionSha256": "83f64570565f5b44ee64ce02e74ec328957c98cd8c19c8ad010823a9a28b93a3",
+      "kind": "flexible",
+      "reason": "Scheme PDF36: a text and a hero, heroine or villain of the candidate’s choosing, with at least one key moment for a TV documentary showing why the character truly is one — any of the three. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-c-q1-b": {
+      "questionSha256": "f6a0b94c6409e341628c8c8fd00e12c2bd22d1162cc508eacf6a3a2473b990df",
+      "kind": "flexible",
+      "reason": "Scheme PDF36: a hero or a heroine or a villain from each of at least two texts, compared for their influence on the outcome or ending — any of the three in each. One 40-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-c-q2-a-i": {
+      "questionSha256": "bc38be2f3a2f305bd13f72f70c4c671fa1b4794c736157c98c2d5f471da9f5fd",
+      "kind": "flexible",
+      "reason": "Scheme PDF36: a text and a hero, heroine or villain of the candidate’s choosing and at least one way their actions had either a positive or a negative impact on their community — either. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-c-q2-a-ii": {
+      "questionSha256": "178122c3f4a05a05c2e2e15dc2d42cb447ef2d3d6dcefe3d38e4cf670a8a3b53",
+      "kind": "flexible",
+      "reason": "Scheme PDF37: a text and a hero, heroine or villain of the candidate’s choosing and at least one way their actions had either a positive or a negative impact on their community — either. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-comparative-c-q2-b": {
+      "questionSha256": "59bc887e9fcfe221462c992af0ff3ffdc61d35f393a7e8f38c3b152644c0399f",
+      "kind": "flexible",
+      "reason": "Scheme PDF37: a hero or a heroine or a villain from each of at least two texts, compared for their influence on the outcome or ending — any of the three in each. One 40-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-a-q2-i": {
+      "questionSha256": "9f72d01d15dd51a7bb84d5079264d22a3cbd4cfb61825d18a7045248adbafc74",
+      "kind": "open",
+      "reason": "Scheme PDF40: whether the candidate would describe the poem as romantic — a judgement either way. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-a-q2-ii": {
+      "questionSha256": "5854725f789fd0eb1ace84a2939a5297862b72f838eeab52a31e32aa17d2cff4",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this part (PDF2 note); the paper asks for a diary entry in the persona the paper names, demonstrating knowledge and understanding of the poem; “in which” introduces the task, not a choice. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-a-q2-iii": {
+      "questionSha256": "cdb4f2a9f355816060503c53d1adc9f94ec393999cf566b19b05166ee3d94f9c",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this part (PDF2 note); the paper asks why the poem would or would not provide a good basis for “either a short film or a short story” — a reasoned judgement either way, about either form. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-b-q2-i": {
+      "questionSha256": "e6e216813d2f563fcab015688393031d7718bcdeb9c92733add94402cbedeac9",
+      "kind": "open",
+      "reason": "Scheme PDF41: whether the candidate would describe the poem as disturbing — a judgement either way. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-b-q2-ii": {
+      "questionSha256": "6933920e1683843ba0b973d182f1d47327763568adba9e3e3df772ce02b596a7",
+      "kind": "open",
+      "reason": "Scheme PDF41: a diary entry in the persona the paper names, demonstrating knowledge and understanding of the poem; “in which” introduces the task, not a choice. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-b-q2-iii": {
+      "questionSha256": "cdb4f2a9f355816060503c53d1adc9f94ec393999cf566b19b05166ee3d94f9c",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this part (PDF2 note); the paper asks why the poem would or would not provide a good basis for “either a short film or a short story” — a reasoned judgement either way, about either form. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-c-q1-b": {
+      "questionSha256": "6a63de003159b738f53f392551db1e8c6d07c85bb979f77d679c51778aaaf1cc",
+      "kind": "flexible",
+      "reason": "Scheme PDF43: whether Elizabeth Bishop’s impression of the filling station changes or stays the same throughout the poem — a judgement either way. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-c-q2-i": {
+      "questionSha256": "cd0273944a4bd7d6bd96b3aac277d3cadf10173a37e547816ca3c842fcfa61d9",
+      "kind": "open",
+      "reason": "Scheme PDF43: whether the candidate would describe the poem as optimistic — a judgement either way. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-c-q2-ii": {
+      "questionSha256": "e7fd9c2fd82f1f55223cabee8b50536f7a07e5fb6c4fb8ed2614329156d005c2",
+      "kind": "open",
+      "reason": "Scheme PDF43: a diary entry in the persona the paper names, demonstrating knowledge and understanding of the poem; “in which” introduces the task, not a choice. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-c-q2-iii": {
+      "questionSha256": "cdb4f2a9f355816060503c53d1adc9f94ec393999cf566b19b05166ee3d94f9c",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this part (PDF2 note); the paper asks why the poem would or would not provide a good basis for “either a short film or a short story” — a reasoned judgement either way, about either form. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-d-q2-i": {
+      "questionSha256": "44df843ceedba87892463aaf9d6d3402a411fa91e8f6e7ae6656fa7c44c87117",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this part (PDF2 note); the paper asks whether the candidate would describe the poem as reflective — a judgement either way. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-d-q2-ii": {
+      "questionSha256": "cceda36d4815b4323e80fcc3fa20b8e4b01566d4622b902de847533fae33a3b4",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this part (PDF2 note); the paper asks for a diary entry in the persona the paper names, demonstrating knowledge and understanding of the poem; “in which” introduces the task, not a choice. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-d-q2-iii": {
+      "questionSha256": "cdb4f2a9f355816060503c53d1adc9f94ec393999cf566b19b05166ee3d94f9c",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this part (PDF2 note); the paper asks why the poem would or would not provide a good basis for “either a short film or a short story” — a reasoned judgement either way, about either form. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-e-q1-b": {
+      "questionSha256": "4dbc0db210ef4fa17ab925ad98d0c880a55f3b051cd655ff357afdd93d1f6bfd",
+      "kind": "open",
+      "reason": "Scheme PDF45: whether the candidate finds any aspect of the poem disturbing — the scheme accepts “disturbing or not disturbing or a mixture of both”: one judgement. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-e-q2-i": {
+      "questionSha256": "0fe47f7618af361cf69ab21201f2afd2ca0f715f79f99e12a415a26a4ee6cd25",
+      "kind": "open",
+      "reason": "Scheme PDF45: whether the candidate would describe the poem as fascinating — a judgement either way. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-e-q2-ii": {
+      "questionSha256": "5f28165d53083a81e39d47d097cea88bb898f0bc3580134a7eb3f293ae2cf6c6",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this part (PDF2 note); the paper asks for a diary entry in the persona the paper names, demonstrating knowledge and understanding of the poem; “in which” introduces the task, not a choice. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-e-q2-iii": {
+      "questionSha256": "cdb4f2a9f355816060503c53d1adc9f94ec393999cf566b19b05166ee3d94f9c",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this part (PDF2 note); the paper asks why the poem would or would not provide a good basis for “either a short film or a short story” — a reasoned judgement either way, about either form. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-f-q2-i": {
+      "questionSha256": "0558a2d28db865396feb938bed85d31ca5985aee673fa2960d67e273289df396",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this part (PDF2 note); the paper asks whether the candidate would describe the poem as both impressive and inspiring — a judgement either way. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-f-q2-ii": {
+      "questionSha256": "93b89a4fa7270db31bb92bfc0e099ef3cc854390d49d48a69222a928d796bd99",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this part (PDF2 note); the paper asks for a diary entry in the persona the paper names, demonstrating knowledge and understanding of the poem; “in which” introduces the task, not a choice. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-prescribed-f-q2-iii": {
+      "questionSha256": "cdb4f2a9f355816060503c53d1adc9f94ec393999cf566b19b05166ee3d94f9c",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this part (PDF2 note); the paper asks why the poem would or would not provide a good basis for “either a short film or a short story” — a reasoned judgement either way, about either form. “Answer ONE of the following” makes (i), (ii) and (iii) separate tasks; the OR between them is not a choice inside this one. One 20-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-a-q1-a": {
+      "questionSha256": "5b303f52f61b49e0e2110a88c81f1db2383b5eaacb78f0c255b9124c3c0da6c9",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for a character the candidate liked or disliked in By the Bog of Cats and at least one reason — either is marked on one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-a-q1-b": {
+      "questionSha256": "43ce4905fda1915663116bf97d69590bd3682bdf569cc4dc11b64cb43863f26d",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for an incident or episode that helped the candidate decide they liked or disliked the character of part (a), and why — either opinion, one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-a-q1-c": {
+      "questionSha256": "fe965535fb66b32c96ccef8e9abc748db5da86eb78ef48f99cc16cd7a8f2079e",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks whether the character changed or remained the same during the text — a reasoned judgement either way, not routes. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-a-q2": {
+      "questionSha256": "5a2486e0f028d606ce61873207e7b33502caf3660bf9a4f40b482c9d3c848dee",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for a letter in the persona it names, referring to some of the characters and events; “in which” introduces the task, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-a-q3": {
+      "questionSha256": "40e3c7da9ac982b35be477726322b1b16ddfe6988e1d16d18edf813a1e309c12",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for three points of the candidate’s own on what they learned from the text, as the question frames it; “which” belongs to the question’s wording, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-a-q4": {
+      "questionSha256": "36254b9cc2498c0a8dfa34f38e80727f4466bdb1d3486822cf28ec31cdc473c9",
+      "kind": "required",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks how each of costume(s), props and body language could convey the named character to an audience — all three required. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-b-q1-a": {
+      "questionSha256": "78c55753f78f36b6abc00df5598d20f615a78eb323408a0bb42ea1aae7e3fc84",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for a character the candidate liked or disliked in All the Light We Cannot See and at least one reason — either is marked on one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-b-q1-b": {
+      "questionSha256": "43ce4905fda1915663116bf97d69590bd3682bdf569cc4dc11b64cb43863f26d",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for an incident or episode that helped the candidate decide they liked or disliked the character of part (a), and why — either opinion, one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-b-q1-c": {
+      "questionSha256": "fe965535fb66b32c96ccef8e9abc748db5da86eb78ef48f99cc16cd7a8f2079e",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks whether the character changed or remained the same during the text — a reasoned judgement either way, not routes. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-b-q2": {
+      "questionSha256": "f20d6356ae4f8464d475acad653b028b81599eabb41071802234a5283b7c59c9",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for a letter in the persona it names, referring to some of the characters and events; “in which” introduces the task, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-b-q4": {
+      "questionSha256": "8b90b6c90bf110b94d596237e91debc7679cd1d1dc2c7b5337fe722a075af517",
+      "kind": "required",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks how each of costume(s), props and body language could convey the named character to an audience — all three required. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-c-q1-a": {
+      "questionSha256": "8175ee5aa1414ed2a0cc923df77f42647a101e872bd2a134f71d89d1e1453267",
+      "kind": "flexible",
+      "reason": "Scheme PDF19: a character the candidate liked or disliked in Room and at least one reason — either is marked on one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-c-q1-b": {
+      "questionSha256": "43ce4905fda1915663116bf97d69590bd3682bdf569cc4dc11b64cb43863f26d",
+      "kind": "flexible",
+      "reason": "Scheme PDF19: an incident or episode that helped the candidate decide they liked or disliked the character of part (a), and why — either opinion, one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-c-q1-c": {
+      "questionSha256": "fe965535fb66b32c96ccef8e9abc748db5da86eb78ef48f99cc16cd7a8f2079e",
+      "kind": "flexible",
+      "reason": "Scheme PDF19: whether the character changed or remained the same during the text — a reasoned judgement either way, not routes. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-c-q2": {
+      "questionSha256": "563a946bc090134d5a15b436836ddaaf66acdf4ef8e6b14cfae46e138ae6682b",
+      "kind": "open",
+      "reason": "Scheme PDF20: a letter in the persona the paper names, referring to some of the characters and events; “in which” introduces the task, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-c-q3": {
+      "questionSha256": "9e9578ff477a368e0229048089ea2e0b6649516c0e7b140fba9c03b435f0eb08",
+      "kind": "open",
+      "reason": "Scheme PDF20: three points of the candidate’s own on what they learned from the text, as the question frames it; “which” belongs to the question’s wording, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-c-q4": {
+      "questionSha256": "6ecee1eb5fd0925c7d85c16c6cb5bd0570999b98b9f2ed8335c20f6379d11d95",
+      "kind": "required",
+      "reason": "Scheme PDF20: how each of costume(s), props and body language could convey the named character to an audience; “Candidates should deal with each of elements listed, although not necessarily equally” — all three required. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-d-q1-a": {
+      "questionSha256": "558fccbacf9f494812c904f833de95c6caeea716054d8946acc46b1c538f57fe",
+      "kind": "flexible",
+      "reason": "Scheme PDF22: a character the candidate liked or disliked in Philadelphia, Here I Come! and at least one reason — either is marked on one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-d-q1-b": {
+      "questionSha256": "43ce4905fda1915663116bf97d69590bd3682bdf569cc4dc11b64cb43863f26d",
+      "kind": "flexible",
+      "reason": "Scheme PDF22: an incident or episode that helped the candidate decide they liked or disliked the character of part (a), and why — either opinion, one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-d-q1-c": {
+      "questionSha256": "fe965535fb66b32c96ccef8e9abc748db5da86eb78ef48f99cc16cd7a8f2079e",
+      "kind": "flexible",
+      "reason": "Scheme PDF22: whether the character changed or remained the same during the text — a reasoned judgement either way, not routes. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-d-q2": {
+      "questionSha256": "1bca75e93aaf248e744f025b6af28270b066252f3552f5e5c6c13c70eb891ebe",
+      "kind": "open",
+      "reason": "Scheme PDF23: a letter in the persona the paper names, referring to some of the characters and events; “in which” introduces the task, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-d-q3": {
+      "questionSha256": "02ba29c43a4666b6ad569d1db006baaa95ead4b96f010f924bfb8f9913e6bef0",
+      "kind": "open",
+      "reason": "Scheme PDF23: three points of the candidate’s own on what they learned from the text, as the question frames it; “which” belongs to the question’s wording, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-d-q4": {
+      "questionSha256": "07515afac3e341ade2a15f8eea27c4de69509204b0fdc4b185038dd5281ecac9",
+      "kind": "required",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks how each of costume(s), props and body language could convey the named character to an audience — all three required. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-e-q1-a": {
+      "questionSha256": "e3af0c679f052f4d6811b45291e4abc7d658203dfbfad0dd0ccee04e9343dfb7",
+      "kind": "flexible",
+      "reason": "Scheme PDF24: a character the candidate liked or disliked in A Doll’s House and at least one reason — either is marked on one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-e-q1-b": {
+      "questionSha256": "43ce4905fda1915663116bf97d69590bd3682bdf569cc4dc11b64cb43863f26d",
+      "kind": "flexible",
+      "reason": "Scheme PDF24: an incident or episode that helped the candidate decide they liked or disliked the character of part (a), and why — either opinion, one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-e-q1-c": {
+      "questionSha256": "fe965535fb66b32c96ccef8e9abc748db5da86eb78ef48f99cc16cd7a8f2079e",
+      "kind": "flexible",
+      "reason": "Scheme PDF24: whether the character changed or remained the same during the text — a reasoned judgement either way, not routes. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-e-q2": {
+      "questionSha256": "d71131890c7f8132a2d0fe35bb266170784e4b8d9586a5526a9ba4d375b62a52",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for a letter in the persona it names, referring to some of the characters and events; “in which” introduces the task, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-e-q3": {
+      "questionSha256": "b2b36f06183df8d110d3a332e06743ee99c3ecf925b1544b19e9fbcab1fabeaf",
+      "kind": "open",
+      "reason": "Scheme PDF25: three points of the candidate’s own on what they learned from the text, as the question frames it; “which” belongs to the question’s wording, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-e-q4": {
+      "questionSha256": "fca701ddf95b885efb362798adfd844c4795434ce1e87e2909878cb1b4494025",
+      "kind": "required",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks how each of costume(s), props and body language could convey the named character to an audience — all three required. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-f-q1-a": {
+      "questionSha256": "046c5ad4c0c4c1003e509fbeb01f276a934fbf769806ccec50d28a08654fb899",
+      "kind": "flexible",
+      "reason": "Scheme PDF26: a character the candidate liked or disliked in Othello and at least one reason — either is marked on one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-f-q1-b": {
+      "questionSha256": "43ce4905fda1915663116bf97d69590bd3682bdf569cc4dc11b64cb43863f26d",
+      "kind": "flexible",
+      "reason": "Scheme PDF26: an incident or episode that helped the candidate decide they liked or disliked the character of part (a), and why — either opinion, one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-f-q1-c": {
+      "questionSha256": "fe965535fb66b32c96ccef8e9abc748db5da86eb78ef48f99cc16cd7a8f2079e",
+      "kind": "flexible",
+      "reason": "Scheme PDF26: whether the character changed or remained the same during the text — a reasoned judgement either way, not routes. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-f-q2": {
+      "questionSha256": "2d71f75d6fbb836d977e06ee7514573b4cb50592f2a7e00315de39f4086fee35",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for a letter in the persona it names, referring to some of the characters and events; “in which” introduces the task, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-f-q3": {
+      "questionSha256": "7c24c27e9262a604280155c89dd8bccb5dbd1629cce550838640a5c1aa6a83dd",
+      "kind": "open",
+      "reason": "Scheme PDF27: three points of the candidate’s own on what they learned from the text, as the question frames it; “which” belongs to the question’s wording, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-f-q4": {
+      "questionSha256": "8a83b84849282ac9bb42e54e7f42c7b92e67b9e404eec38d29fb73d354df6d0e",
+      "kind": "required",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks how each of costume(s), props and body language could convey the named character to an audience — all three required. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-g-q1-a": {
+      "questionSha256": "4dc373ba92b67edf416540c9534e4230d7a99ab7f52c5e8b78452b1a50a668f7",
+      "kind": "flexible",
+      "reason": "Scheme PDF28: a character the candidate liked or disliked in Frankenstein and at least one reason — either is marked on one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-g-q1-b": {
+      "questionSha256": "43ce4905fda1915663116bf97d69590bd3682bdf569cc4dc11b64cb43863f26d",
+      "kind": "flexible",
+      "reason": "Scheme PDF28: an incident or episode that helped the candidate decide they liked or disliked the character of part (a), and why — either opinion, one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-g-q1-c": {
+      "questionSha256": "fe965535fb66b32c96ccef8e9abc748db5da86eb78ef48f99cc16cd7a8f2079e",
+      "kind": "flexible",
+      "reason": "Scheme PDF28: whether the character changed or remained the same during the text — a reasoned judgement either way, not routes. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-g-q2": {
+      "questionSha256": "8a9194c75c535a36aca3c071b6a7b98f612590eb380f517bc492c3a7020ce5b4",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for a letter in the persona it names, referring to some of the characters and events; “in which” introduces the task, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-g-q4": {
+      "questionSha256": "5ad00d5f9fa1d3c946f951eb944d186ab988d6ae53434bc188e79d9e4ab1eee4",
+      "kind": "required",
+      "reason": "Scheme PDF29: how each of costume(s), props and body language could convey the named character to an audience; “Candidates should deal with each of elements listed, although not necessarily equally” — all three required. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-h-q1-a": {
+      "questionSha256": "2716febd742ac68bd83239d17635ab9d2267e1692236b99bc91b7426b60a286b",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for a character the candidate liked or disliked in The Lauras and at least one reason — either is marked on one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-h-q1-b": {
+      "questionSha256": "43ce4905fda1915663116bf97d69590bd3682bdf569cc4dc11b64cb43863f26d",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for an incident or episode that helped the candidate decide they liked or disliked the character of part (a), and why — either opinion, one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-h-q1-c": {
+      "questionSha256": "fe965535fb66b32c96ccef8e9abc748db5da86eb78ef48f99cc16cd7a8f2079e",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks whether the character changed or remained the same during the text — a reasoned judgement either way, not routes. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-h-q2": {
+      "questionSha256": "e8cf593fd581aeebca8af5b59ab7a46ca601be75a18d5c161329bfe36a4923f9",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for a letter in the persona it names, referring to some of the characters and events; “in which” introduces the task, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-h-q4": {
+      "questionSha256": "12d58d14c8f6a686f650360d07be267d93fc5c9cbbb1a79cdf82f5bfcde37b30",
+      "kind": "required",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks how each of costume(s), props and body language could convey the named character to an audience — all three required. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-i-q1-a": {
+      "questionSha256": "f9d85b1534d424b9827abfa32fcbbb77568b32b1a1c4f21bff24301ee61c8ff7",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for a character the candidate liked or disliked in The Picture of Dorian Gray and at least one reason — either is marked on one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-i-q1-b": {
+      "questionSha256": "43ce4905fda1915663116bf97d69590bd3682bdf569cc4dc11b64cb43863f26d",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for an incident or episode that helped the candidate decide they liked or disliked the character of part (a), and why — either opinion, one grid. One 10-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-i-q1-c": {
+      "questionSha256": "fe965535fb66b32c96ccef8e9abc748db5da86eb78ef48f99cc16cd7a8f2079e",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks whether the character changed or remained the same during the text — a reasoned judgement either way, not routes. One 15-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-i-q2": {
+      "questionSha256": "3261ae68b2c42ce4f560d24afd9326a45d2446a127ec6b2c5578c35c5a86919e",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for a letter in the persona it names, referring to some of the characters and events; “in which” introduces the task, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-i-q3": {
+      "questionSha256": "0df6a40ee7343592046abe155523e97e425cc488b13132bedd7fc84fa169d085",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks for three points of the candidate’s own on what they learned from the text, as the question frames it; “which” belongs to the question’s wording, not a choice. One 35-mark response."
+    },
+    "english-2022-ol-deferred-p2-single-i-q4": {
+      "questionSha256": "5465b05cb7fe2e440e2b0f34d2e8c0903a2e372ee9d2dde83f38b611a42bf77b",
+      "kind": "required",
+      "reason": "The deferred scheme sets out no block for this option (PDF2 note); the paper asks how each of costume(s), props and body language could convey the named character to an audience — all three required. One 35-mark response."
+    },
     "english-2023-hl-deferred-p1-composing-2": {
       "questionSha256": "31a27835a7221de409bc93fb25f07471afa7af86105c140c8238ed271837d6f7",
       "kind": "open",

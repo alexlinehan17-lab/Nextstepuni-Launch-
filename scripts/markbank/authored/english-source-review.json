@@ -5833,6 +5833,184 @@
       "reason": "Paper PDF6 prints the instruction (read the poem by Simon Armitage and answer either Question 1 or Question 2), the title, the whole poem in two stanzas and the byline above the questions; visually verified.",
       "questionSha256": "56ac887b3bdd4ea1236ae47ef52046061972bb0013313be1884df2f5ea15a8b7"
     },
+    "english-2022-ol-deferred-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Nuri, the Beekeeper",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Christy Lefteri — an edited extract from her novel The Beekeeper of Aleppo (Bonnier Books (UK) Ltd., 2019), with the photograph “Beekeepers at Work” (PDF2–3). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. The scheme (PDF4, General – Paper 1) treats each text as a whole, so the whole text is retained.",
+      "questionSha256": "8dcd2d1e230538f24934b0e5fd4128787c433a1820d8c0ca9c561afdc0b2b68f"
+    },
+    "english-2022-ol-deferred-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Nuri, the Beekeeper",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Christy Lefteri — an edited extract from her novel The Beekeeper of Aleppo (Bonnier Books (UK) Ltd., 2019), with the photograph “Beekeepers at Work” (PDF2–3). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. The scheme (PDF4, General – Paper 1) treats each text as a whole, so the whole text is retained.",
+      "questionSha256": "7a1a42534b954a0a09c8730774332a4a3cc92b064767450b80aff513a01bbac4"
+    },
+    "english-2022-ol-deferred-p1-t1-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "NURI, THE BEEKEEPER",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "questionSha256": "71ba6e7fac1e806d3f7247e1bbbe1465d473c3a7f7ebf49d5386e9e3ff8a81e3",
+      "reason": "Self-contained: whether humans show sufficient respect to the other creatures with whom we share the planet; the scheme (PDF6) assesses the candidate’s own view (“Allow for a broad range of responses”) and never refers to TEXT 1. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2022-ol-deferred-p1-t1-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "NURI, THE BEEKEEPER",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "questionSha256": "71e385b20e9c655e7a526067b514c9d67dbef6f09c8ef93afd291cd205cda1c4",
+      "reason": "Self-contained: the creature – an insect, bird or other animal – the candidate would choose to spend a day as, with reasons; the scheme (PDF6) assesses their own choice (“Allow for a broad range of responses”) and never refers to TEXT 1. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2022-ol-deferred-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "What We Can Learn From Other Creatures",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "A text on the relationship between humans and other creatures and what we can learn from a variety of animals (sourced from onegreenplanet.org), with a photograph of a beach sign (PDF4–5). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. The scheme (PDF4, General – Paper 1) treats each text as a whole, so the whole text is retained.",
+      "questionSha256": "bcb9c3bb83433d94817b43ffd01997d316c82d542cb684387009c5f44635ab6d"
+    },
+    "english-2022-ol-deferred-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "What We Can Learn From Other Creatures",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "A text on the relationship between humans and other creatures and what we can learn from a variety of animals (sourced from onegreenplanet.org), with a photograph of a beach sign (PDF4–5). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. The scheme (PDF4, General – Paper 1) treats each text as a whole, so the whole text is retained.",
+      "questionSha256": "2919b5bcd5eb2e033ea2d16d8fb37ac92b5b7416196e7d82e58b9631e3d596d4"
+    },
+    "english-2022-ol-deferred-p1-t2-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "considers the relationship between humans and other creatures and what we can",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "questionSha256": "71ba6e7fac1e806d3f7247e1bbbe1465d473c3a7f7ebf49d5386e9e3ff8a81e3",
+      "reason": "Self-contained: whether humans show sufficient respect to the other creatures with whom we share the planet; the scheme (PDF7) assesses the candidate’s own view (“Allow for a broad range of responses”) and never refers to TEXT 2. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2022-ol-deferred-p1-t2-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "considers the relationship between humans and other creatures and what we can",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "questionSha256": "71e385b20e9c655e7a526067b514c9d67dbef6f09c8ef93afd291cd205cda1c4",
+      "reason": "Self-contained: the creature – an insect, bird or other animal – the candidate would choose to spend a day as, with reasons; the scheme (PDF8) assesses their own choice (“Allow for a broad range of responses”) and never refers to TEXT 2. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2022-ol-deferred-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "For the Love of Birds",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Washington Wachira — based on his TED talk, with additional information on Citizen Science (EPA), and the photograph “A Crested Guinea Fowl” (PDF6–7). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. The scheme (PDF4, General – Paper 1) treats each text as a whole, so the whole text is retained.",
+      "questionSha256": "40a56f204f7af4b55a1f6e9e0d98b76f6e3d08383dadc5585bd45c47097e20c5"
+    },
+    "english-2022-ol-deferred-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "For the Love of Birds",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Washington Wachira — based on his TED talk, with additional information on Citizen Science (EPA), and the photograph “A Crested Guinea Fowl” (PDF6–7). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. The scheme (PDF4, General – Paper 1) treats each text as a whole, so the whole text is retained.",
+      "questionSha256": "0e9887d303bc799ad0f0f48fe53d5adfbdd37d984678a2f1bc1d85e287a85561"
+    },
+    "english-2022-ol-deferred-p1-t3-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "FOR THE LOVE OF BIRDS",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "questionSha256": "71ba6e7fac1e806d3f7247e1bbbe1465d473c3a7f7ebf49d5386e9e3ff8a81e3",
+      "reason": "Self-contained: whether humans show sufficient respect to the other creatures with whom we share the planet; the scheme (PDF9) assesses the candidate’s own view (“Allow for a broad range of responses”) and never refers to TEXT 3. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2022-ol-deferred-p1-t3-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "FOR THE LOVE OF BIRDS",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "questionSha256": "71e385b20e9c655e7a526067b514c9d67dbef6f09c8ef93afd291cd205cda1c4",
+      "reason": "Self-contained: the creature – an insect, bird or other animal – the candidate would choose to spend a day as, with reasons; the scheme (PDF10) assesses their own choice (“Allow for a broad range of responses”) and never refers to TEXT 3. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2022-ol-deferred-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Poet and his Dog",
+      "pages": [
+        14
+      ],
+      "attribution": "The Poet and his Dog (after the Gaelic poem, ‘The Scholar and His Cat’) — Desmond O’Grady, as reproduced in the SEC 2022 deferred paper.",
+      "reason": "Paper PDF14 prints the introduction (the poet describes his relationship with his dog), the instruction to read the poem and questions at least twice, the title, the subtitle, the whole poem and the byline above both questions; visually verified.",
+      "questionSha256": "9f283582968a0e5712b871e5f48ea1b7d5ae5b7c6b610ad6420ac2167fc1cb42"
+    },
+    "english-2022-ol-deferred-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Poet and his Dog",
+      "pages": [
+        14
+      ],
+      "attribution": "The Poet and his Dog (after the Gaelic poem, ‘The Scholar and His Cat’) — Desmond O’Grady, as reproduced in the SEC 2022 deferred paper.",
+      "reason": "Paper PDF14 prints the introduction (the poet describes his relationship with his dog), the instruction to read the poem and questions at least twice, the title, the subtitle, the whole poem and the byline above both questions; visually verified.",
+      "questionSha256": "b8a0a544181fe5dbaf5b2d317a215ea0de1a0843eb4b5d8a076e5927fd23aa7a"
+    },
     "english-2023-hl-deferred-p1-t1-a-i": {
       "kind": "source-text",
       "label": "TEXT 1",
