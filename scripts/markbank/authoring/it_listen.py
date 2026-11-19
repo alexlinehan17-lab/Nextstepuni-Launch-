@@ -45,6 +45,8 @@ DIALOGUE_TOPIC = 'italian-3-0'       # Aural — Conversations
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 LEVEL_TITLE = {'hl': 'Higher', 'ol': 'Ordinary'}
 OPTION = re.compile(r'^\(\s*([a-e])\s*\)\s*(.*)$')
+# The scheme's options: "(a) a house for sale" (2024-2026) or "a) a hotel" (2023).
+KEY_OPTION = re.compile(r'^\(?\s*([a-e])\s*\)\s*(.*)$')
 DIALOGUE = re.compile(r'^Dialogue\s+(\d)\s*\.?\s*$', re.I)
 
 
@@ -176,10 +178,10 @@ def section_a_key(year, level):
                         if lone:
                             key[q] = (lone.group(1), None)
                         continue
-                    m = OPTION.match(text)
+                    m = KEY_OPTION.match(text)
                     if m and q is not None:
                         body = [sp for sp in spans
-                                if not re.fullmatch(r'\(\s*[a-e]\s*\)', sp['text'].strip())]
+                                if not re.fullmatch(r'\(?\s*[a-e]\s*\)', sp['text'].strip())]
                         if body and all('Bold' in sp['font'] for sp in body):
                             bold.setdefault(q, []).append(
                                 (m.group(1), ' '.join(m.group(2).split())))
@@ -370,28 +372,42 @@ def cards(year, level, refuse, row_for, concept_for):
         asks = B.dialogues[d]['asks']
         priced = scheme.get(d, [])
         head = ' '.join(B.dialogues[d]['title'])
-        if len(asks) != len(priced):
+        by_item = {a.item: a for a in priced}
+        missing = [n for n in sorted(asks) if n not in by_item]
+        if len(asks) != len(priced) and not all(
+                (year, level, d, n) in OVERRIDES and 'total' in OVERRIDES[(year, level, d, n)]
+                for n in missing):
             for n in sorted(asks):
                 refuse('the booklet and the scheme print a different number of asks '
                        'in this dialogue, so they cannot be paired by order',
                        f'{year} {lvl} Section LB{d} Q{n}',
                        f'paper {len(asks)}, scheme {len(priced)}')
             continue
-        for n, ask in zip(sorted(asks), priced):
+        # Equal counts pair in printed order; where the reader lost a scheme
+        # ask its number is supplied by an OVERRIDES entry (with its printed
+        # total) and every other ask pairs on its own printed number.
+        pairs = (list(zip(sorted(asks), priced)) if len(asks) == len(priced)
+                 else [(n, by_item.get(n)) for n in sorted(asks)])
+        for n, ask in pairs:
             ref = f'{year} {lvl} Section LB{d} Q{n}'
             text = ' '.join(' '.join(asks[n]['text']).split())
+            if ask is None:
+                o = OVERRIDES[(year, level, d, n)]
+                ask = type('Lost', (), {'total': o['total'], 'fault': None, 'parts': [],
+                                        'item': n})()
             if ask.total is None or ask.fault:
                 refuse('the scheme prints no tariff this reads for the ask', ref,
                        f'{year} {lvl} scheme, Dialogue {d} ask {ask.item}')
                 continue
             override = OVERRIDES.get((year, level, d, n))
-            _repair_bullets(S, ask)
-            ladder = None if override else _ladder_rows(S, ask)
+            if ask.parts:
+                _repair_bullets(S, ask)
+            ladder = None if (override or not ask.parts) else _ladder_rows(S, ask)
             tariff = {'kind': 'fixed'}
             rows = []
             bad = None
-            part0 = ask.parts[0]
-            components = (len(ask.parts) == 1 and not part0.directive and part0.split
+            part0 = ask.parts[0] if ask.parts else None
+            components = (part0 is not None and len(ask.parts) == 1 and not part0.directive and part0.split
                           and len(part0.split) == len(part0.answers) > 1
                           and sum(part0.split) == ask.total)
             if override:
@@ -426,7 +442,7 @@ def cards(year, level, refuse, row_for, concept_for):
                 'tariffModel': tariff, 'totalMarks': ask.total,
                 'rows': rows,
                 'notes': (f'The scheme prints the tariff as '
-                          f'{"; ".join(p.notation for p in ask.parts)!r}; the '
+                          f'{"; ".join(p.notation for p in ask.parts) or str(ask.total) + " marks"!r}; the '
                           f'listening booklet prints this ask on page {asks[n]["page"]}.'),
                 'stem': f'Dialogue {d}. {head}. {stem_b}'.replace('..', '.'),
                 'sourceMaterial': source(f'Dialogue {d}', n, asks[n]['page']),
@@ -440,6 +456,13 @@ def cards(year, level, refuse, row_for, concept_for):
 # a directive) cannot see it. Each option is a cut of the scheme's own line,
 # checked present in the scheme before it is used, never typed.
 OVERRIDES = {
+    # Asks the reading grammar loses at a page foot or under a wrapped answer;
+    # each carries its printed total, and its rows are cuts of the scheme.
+    (2024, 'ol', 1, 4): {'total': 4, 'points': [('(Only) this morning', 4)],
+                         'note': ['(After her dentist’s appointment 2 marks)']},
+    (2023, 'ol', 3, 5): {'total': 4, 'points': [
+        ('(Around) 7 pm/The Italians finish work late (Later than the Irish)', 4)],
+        'note': ['(In the evening 1 mark)']},
     # "Under 15 and (3) over 60 (3) years of age": two components priced
     # inside one line, the line's last words after the second price.
     (2025, 'hl', 3, 4): {'points': [('Under 15', 3), ('over 60', 3)],

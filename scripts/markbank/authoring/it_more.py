@@ -77,6 +77,46 @@ def ladder_card(P, S, year, level, section, item, letter, cards):
     cards.append(card)
 
 
+def question_total_card(P, S, year, level, section, item, letter, cards):
+    """An ask whose scheme names how many answers it wants but prints no
+    split of its total between them ("Any two of the following" over a bare
+    "5 marks"): CARD-STANDARD section 5 - the printed total, self-assessed,
+    with the scheme's answers as criteria and its lesser answers quoted."""
+    ask = next(a for a in S.asks if (a.section, a.item, a.letter) == (section, item, letter))
+    text, page = next((t, pg) for sec, it, le, t, pg in P.asks()
+                      if (sec, it, le) == (section, item, letter))
+    part = ask.parts[0]
+    ws = it_writing.Scheme(year, level)
+    ws.check(part.directive, *part.answers, *[t for t, _m in part.rungs])
+    language = it_all.answer_language(level, text)
+    rows = [{'id': f'r-{k}', 'kind': 'criterion', 'verbatim': a, 'marks': None}
+            for k, a in enumerate(part.answers, start=1)]
+    lesser = '; '.join(f'{t} {m}m' for t, m in part.rungs)
+    rows[0]['contextNote'] = (f'{it_all.language_note(language)} The scheme prints '
+                              f'"{part.directive}" for {ask.total} marks and does not say what '
+                              'one answer is worth: judge your answer against the total.'
+                              + (f' It also accepts, for less: {lesser}.' if lesser else ''))
+    card = {
+        'id': it_all.card_id(year, level, section, item, letter),
+        'subjectId': 'italian', 'level': it_all.LEVEL_WORD[level], 'year': year,
+        'section': it_all.CARD_SECTION[section[0]],
+        'topicId': it_all.topic_for(level, section),
+        'conceptId': it_all.concept_for(text),
+        'questionRef': it_all.question_ref(year, level, section, item, letter),
+        'questionText': text, 'tariffModel': {'kind': 'questionTotal'}, 'totalMarks': ask.total,
+        'rows': rows,
+        'notes': (f'The scheme prints the tariff as {part.notation!r} under '
+                  f'{part.directive!r}; the paper prints this ask on page {page}.'),
+    }
+    source = it_all.source_material(P, section, language, level, year)
+    if source:
+        card['sourceMaterial'] = source
+    cards.append(card)
+
+
+TOTAL_ONLY = 'the scheme asks for more answers than its printed tariff divides into'
+
+
 def sitting(year, level):
     P = ItPaper(year, level)
     S = ItScheme(year, level)
@@ -92,6 +132,11 @@ def sitting(year, level):
             ladder_card(P, S, year, level, *key[2:], reading)
             ref = it_all.question_ref(year, level, key[2], key[3], key[4])
             refused[:] = [r for r in refused if r['ref'] != ref]
+    for r in [r for r in refused if r['reason'].startswith(TOTAL_ONLY)]:
+        key = next((sec, it, le) for sec, it, le, _t, _p in P.asks()
+                   if it_all.question_ref(year, level, sec, it, le) == r['ref'])
+        question_total_card(P, S, year, level, *key, reading)
+        refused.remove(r)
     cards += [split_priced(c) for c in reading]
     cards += it_listen.cards(year, level, refuse, it_all._row_for, it_all.concept_for)
     cards += it_writing.higher(year) if level == 'hl' else it_writing.ordinary(year)

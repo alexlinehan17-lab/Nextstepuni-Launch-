@@ -327,9 +327,10 @@ def higher(year):
     a2 = S.at(r'^APP?ENDIX 2')
     a2_end = S.at(r'^APPENDIX 3|^Italian Leaving', a2)
     cpages = sorted(set(S.pages(c0, S.at(r'^APPENDIX 1', c0) - 1)) | set(S.pages(a2, a2_end - 1)))
-    lang10 = bands_from(S.span(r'^Language \(essays\) out of 10', r'^Language \(letter\)', a2,
+    # "Language (essays) out of 10" (2025-2026) or "Language (essays)" (2023-2024)
+    lang10 = bands_from(S.span(r'^Language \(essays\)', r'^Language \(letter\)', a2,
                                include_start=False))
-    lang15 = bands_from(S.span(r'^Language \(letter\) out of 15', r'^APPENDIX 3|^Italian Leaving', a2,
+    lang15 = bands_from(S.span(r'^Language \(letter\)', r'^APPENDIX 3|^Italian Leaving', a2,
                                include_start=False))
     content_lines = S.span(r'^CONTENT AND COMMUNICATION DESCRIPTORS', r'^N\.B\.', a2,
                            include_start=False)
@@ -357,8 +358,14 @@ def higher(year):
         [S.lines[i2], rule5], '\n'.join(join_lines(t2)), p2, 25, pages=cpages))
     # C3 (a) and (b)
     i3 = S.at(r'^3\.\s*Formal Writing', c0)
-    fmt = S.span(r'^Date 1 mark', r'^Use the descriptors in Appendix 2', i3)
-    general = S.span(r'Correct register', r'^. Format$|^● Format$|^• Format$', i3)
+    try:
+        fmt = S.span(r'^Date 1 mark', r'^Use the descriptors in Appendix 2', i3)
+        general = S.span(r'Correct register', r'^. Format$|^● Format$|^• Format$', i3)
+    except AssertionError:
+        # 2023-2024 print no breakdown of the format marks: the criterion's
+        # guidance is its own printed line.
+        fmt = [S.lines[S.at(r'^Format 10 marks', i3)]]
+        general = S.span(r'Correct register', r'^Format 10 marks', i3)
     t3, p3 = paper_task(year, 'hl', 3)
     for letter, nxt in (('a', r'^\(?b[.)]\s*The following'), ('b', r'^Points for the composition|^APPENDIX 1')):
         pts = S.span(rf'^\(?{letter}[.)]\s*The following points', nxt, i3)
