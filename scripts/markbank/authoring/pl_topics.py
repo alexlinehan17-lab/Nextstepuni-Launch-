@@ -51,7 +51,9 @@ def topic_for(year, section):
     Section A Czytanie and Section B Pisanie.
     """
     if year <= 2021:
-        return ESSAY if section == 'II' else OPEN_QUESTIONS
+        # 2020 and earlier print a Część III too: the essay, after Część II's
+        # ~100-word commentary on the text.
+        return ESSAY if section in ('II', 'III') else OPEN_QUESTIONS
     if (section or '').startswith('L'):
         return AURAL
     return WRITTEN_PRODUCTION if section == 'B' else NEW_FORMAT_READING

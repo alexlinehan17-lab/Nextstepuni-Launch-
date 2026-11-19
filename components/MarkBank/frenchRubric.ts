@@ -3,7 +3,9 @@ import type { FrenchAllocation, FrenchAnswerRow, FrenchCriterion, SecRubricCard 
 /** The language a card on the French marking grid is examined in. Spanish
  *  writing is marked on the same grid shape (Communication/Language bands), so
  *  the panel names the scheme by the card's own subject. */
-const RUBRIC_LANGUAGE: Record<string, string> = { french: 'French', spanish: 'Spanish', german: 'German', music: 'Music' };
+const RUBRIC_LANGUAGE: Record<string, string> = {
+  french: 'French', spanish: 'Spanish', german: 'German', music: 'Music', polish: 'Polish',
+};
 export const rubricLanguage = (subjectId: string): string => RUBRIC_LANGUAGE[subjectId] ?? 'French';
 
 export type FrenchScoreId = `french:${string}`;
