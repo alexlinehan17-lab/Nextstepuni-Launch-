@@ -441,9 +441,9 @@ def listening(docs,source):
         c=source_card(r)
         if r.get('missingAcceptedAnswerSource'):
             assert key==('L1',1,'i') and not body and count==2
-            c['kind']='question';c['tariffModel']={'kind':'questionTotal'}
-            c['rows']=[{'id':'published-guidance','kind':'point','verbatim':source['listeningGuidance'],'marks':None,
-                'contextNote':'The original listening booklet asks for two details about Yaroslavl. Its English column labels this question 1, while its Irish column labels it 1(i); the scheme starts with the different visitors question 1(ii). No accepted city-answer pool is printed in the available original scheme. The recorded 4 is derived from two requested details and the general two-marks-per-detail rule; it is not a separately printed task total or an assessed score. Listen to the original recording and review your response; this card does not calculate a numerical score. No answers are borrowed from the Ordinary paper.'}]
+            c['kind']='question';c['tariffModel']={'kind':'fixed'}
+            c['rows']=[{'id':'published-guidance','kind':'criterion','verbatim':'The scheme prints no answer for this part.','marks':4,'unprinted':True,'permittedMarks':[0,2,4],
+                'contextNote':'The original listening booklet asks for two details about Yaroslavl. Its English column labels this question 1, while its Irish column labels it 1(i); the scheme starts with the different visitors question 1(ii). No accepted city-answer pool is printed in the original scheme. The 4 marks are derived from two requested details and the printed general rule of two marks per correct/relevant point; no separate task total is printed. Assess each relevant detail once using that rule. No answers are borrowed from the Ordinary paper. Complete printed listening guidance: '+source['listeningGuidance']}]
         else:
             pieces=re.split(r'(?i)\s*award one mark:\s*',body);assert len(pieces)<=2
             pool=pieces[0].split('Award no marks:',1)[0].strip()
@@ -533,7 +533,7 @@ def build():
     assert len(cards)==len({c['id'] for c in cards})==38
     assert sum(c['totalMarks'] for c in cards)==300
     city=next(c for c in cards if c['id']=='ru-2010-hl-l1-1-i')
-    assert city['tariffModel']['kind']=='questionTotal' and all(row['marks'] is None for row in city['rows'])
+    assert city['tariffModel']['kind']=='fixed' and city['rows'][0]['marks']==4 and city['rows'][0]['unprinted']
     assert sum(c['totalMarks'] for c in cards if c is not city)==296
     assert 'answerLanguageRule' not in next(c for c in cards if c['section']=='LA1')
     for doc in docs.values():doc.close()

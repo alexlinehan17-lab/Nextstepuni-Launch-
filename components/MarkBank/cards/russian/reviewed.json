@@ -183667,7 +183667,7 @@
         "Award full marks if candidates supply an appropriate word from the text and put it into the required form. Award full marks if correct words are translated and supplied in English OR if appropriate words are selected from the text and supplied in the base/dictionary form (rather than the form supplied in the task).",
         "award 2 marks to all (there is no noun in the dative case)"
       ],
-      "markingGuideNote": "Assess the other five examples manually using the printed guidance, including its English-translation and base/dictionary-form allowances. The plural-dative prompt carries the published two-mark award for all candidates, including a blank response. No noun is invented."
+      "markingGuideNote": "The scheme prints no answer for this part. Assess the other five examples manually using the printed guidance, including its English-translation and base/dictionary-form allowances. The plural-dative prompt carries the published two-mark award for all candidates, including a blank response. No noun is invented."
     },
     "source": "sec",
     "paperFileid": "LC099ALP000EV",
@@ -183690,7 +183690,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -184804,7 +184804,7 @@
         }
       ],
       "taskRequirements": [],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "answerLanguageRule": {
       "otherLanguageMultiplier": 0,
@@ -184834,7 +184834,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -185144,7 +185144,7 @@
         "If a candidate answers TWO or MORE Questions, mark ALL and take the best mark. Only if a candidate obtains full marks on the firs/second questions the examiner is not required to mark the subsequent one(s).",
         "Round brackets () enclose information which is valid but not essential for marks"
       ],
-      "markingGuideNote": "Assess the chosen response manually against its complete printed categories, one mark per content detail. Parenthesized additional-relevant-information categories retain the source’s general “valid but not essential” rule. The content paragraph itself says no marks for additional information/content; both original statements remain visible, without an invented category tariff or silently rewritten rule. Lower A has a descriptor conflict: the prose gives 9/10, while the table prints 9–11 and also 11–12. Both exact versions are retained. The numeric range remains 7–12; no descriptor is trimmed, no precedence is invented, and no minimum is automatically awarded."
+      "markingGuideNote": "The scheme prints no answer for this part. Assess the chosen response manually against its complete printed categories, one mark per content detail. Parenthesized additional-relevant-information categories retain the source’s general “valid but not essential” rule. The content paragraph itself says no marks for additional information/content; both original statements remain visible, without an invented category tariff or silently rewritten rule. Lower A has a descriptor conflict: the prose gives 9/10, while the table prints 9–11 and also 11–12. Both exact versions are retained. The numeric range remains 7–12; no descriptor is trimmed, no precedence is invented, and no minimum is automatically awarded."
     },
     "answerLanguageRule": {
       "otherLanguageMultiplier": 0,
@@ -185174,7 +185174,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -185188,16 +185188,22 @@
     "questionRef": "2010 HL Section L1 Q1(i)",
     "questionText": "Give two details about the city of Yaroslavl.",
     "tariffModel": {
-      "kind": "questionTotal"
+      "kind": "fixed"
     },
     "totalMarks": 4,
     "rows": [
       {
         "id": "published-guidance",
-        "kind": "point",
-        "verbatim": "LISTENING COMPREHENSION (80 marks) General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • The quality of the English will only be an assessment factor insofar as it impedes communication. • Do not award marks for information contained within the question. • Accept answers written in Russian. • The examiner should not have to second guess what the candidate is thinking (e.g. ‘circle concurs’ for ‘circus competition/contest’. Where a speaker of English who does not understand Russian would have difficulty deciding what the English means, do not award marks. Award two marks for each correct/relevant point.",
-        "marks": null,
-        "contextNote": "The original listening booklet asks for two details about Yaroslavl. Its English column labels this question 1, while its Irish column labels it 1(i); the scheme starts with the different visitors question 1(ii). No accepted city-answer pool is printed in the available original scheme. The recorded 4 is derived from two requested details and the general two-marks-per-detail rule; it is not a separately printed task total or an assessed score. Listen to the original recording and review your response; this card does not calculate a numerical score. No answers are borrowed from the Ordinary paper."
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 4,
+        "unprinted": true,
+        "permittedMarks": [
+          0,
+          2,
+          4
+        ],
+        "contextNote": "The original listening booklet asks for two details about Yaroslavl. Its English column labels this question 1, while its Irish column labels it 1(i); the scheme starts with the different visitors question 1(ii). No accepted city-answer pool is printed in the original scheme. The 4 marks are derived from two requested details and the printed general rule of two marks per correct/relevant point; no separate task total is printed. Assess each relevant detail once using that rule. No answers are borrowed from the Ordinary paper. Complete printed listening guidance: LISTENING COMPREHENSION (80 marks) General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • The quality of the English will only be an assessment factor insofar as it impedes communication. • Do not award marks for information contained within the question. • Accept answers written in Russian. • The examiner should not have to second guess what the candidate is thinking (e.g. ‘circle concurs’ for ‘circus competition/contest’. Where a speaker of English who does not understand Russian would have difficulty deciding what the English means, do not award marks. Award two marks for each correct/relevant point."
       }
     ],
     "sourceMaterial": {
@@ -185246,7 +185252,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {

@@ -16,7 +16,7 @@ const row=(group:string,id='full',value=1)=>({[languageGroupId(group)]:1,[langua
 afterEach(cleanup);
 
 describe('Russian 2010 Higher original-source tasks',()=>{
-  it('represents all 38 original asks while separating 296 scored marks and the derived four-mark unpriced task',()=>{
+  it('represents all 38 original asks and the derived four-mark city task',()=>{
     expect(sitting).toHaveLength(38);expect(sitting.filter(c=>!tariffReconciles(c)).map(c=>c.id)).toEqual([]);
     expect(sitting.filter(c=>c.id!=='ru-2010-hl-l1-1-i').reduce((s,c)=>s+c.totalMarks,0)).toBe(296);
     expect(sitting.filter(c=>c.audioMaterial)).toHaveLength(18);
@@ -116,14 +116,16 @@ describe('Russian 2010 Higher original-source tasks',()=>{
     expect(sitting.filter(c=>c.audioMaterial).every(c=>!c.answerLanguageRule)).toBe(true);
   });
 
-  it('saves the missing city task as confidence only while showing the source gap and derived total',async()=>{
-    const c=card('l1-1-i');if(isRubricCard(c))throw new Error('Expected unpriced city task');
-    expect(c.tariffModel).toEqual({kind:'questionTotal'});expect(c.rows.every(r=>r.marks===null)).toBe(true);
-    expect(c.rows[0].contextNote).toContain('not a separately printed task total');
+  it('scores the missing city task using the general printed rule and shows the source gap',async()=>{
+    const c=card('l1-1-i');if(isRubricCard(c))throw new Error('Expected no-answer criterion');
+    expect(c.tariffModel).toEqual({kind:'fixed'});
+    expect(c.rows[0]).toMatchObject({kind:'criterion',marks:4,unprinted:true,permittedMarks:[0,2,4],verbatim:'The scheme prints no answer for this part.'});
+    expect(c.rows[0].contextNote).toContain('no separate task total is printed');
     const onGrade=vi.fn();render(<SessionScreen cards={[c]} subjectLabel="Russian" onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()}/>);
     fireEvent.click(screen.getByRole('button',{name:'Reveal the marking scheme'}));
     await waitFor(()=>expect(screen.getByText(/No accepted city-answer pool is printed/)).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Award 2 marks for The scheme prints no answer for this part.'}));
     fireEvent.click(screen.getByRole('button',{name:'Got it'}));
-    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({cardId:c.id,marksClaimed:0,marksAvailable:0}));
+    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({cardId:c.id,marksClaimed:2,marksAvailable:4}));
   });
 });

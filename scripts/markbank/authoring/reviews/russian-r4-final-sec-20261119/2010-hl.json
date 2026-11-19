@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-11-19T12:26:39.933047+00:00",
+  "archive": {
+    "year": 2010,
+    "level": "hl",
+    "url": "https://www.examinations.ie/archive/markingschemes/2010/LC099ALP000EV.pdf",
+    "filename": "Russian-2010-hl-SEC-fresh-20261119.pdf",
+    "pages": 20,
+    "downloadDone": true,
+    "downloadConfirmation": "Chrome history shows exact completed file and source URL with Show in Finder.",
+    "checkedAt": "2026-11-19T12:10:03.076Z",
+    "bytes": 153163,
+    "sha256": "15607f22c24d4502dee8d28cd319711c880d27d06eac33b1da96fa6554a0672c",
+    "retainedSha256": "15607f22c24d4502dee8d28cd319711c880d27d06eac33b1da96fa6554a0672c",
+    "exactMatch": true,
+    "freshDownloadVerified": true,
+    "localFile": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/stale-exclusions-20261119/sec-recheck/2010-hl.pdf"
+  },
+  "cards": [
+    {
+      "id": "ru-2010-hl-se",
+      "printedMarks": 30,
+      "schemePages": [
+        11,
+        12
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2010-hl.pdf",
+      "schemeSha256": "15607f22c24d4502dee8d28cd319711c880d27d06eac33b1da96fa6554a0672c",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-hl.json",
+      "finding": "The scheme supplies marking instructions or a grid but no answer for this task.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2010-hl-gw",
+      "printedMarks": 40,
+      "schemePages": [
+        13,
+        14,
+        15
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2010-hl.pdf",
+      "schemeSha256": "15607f22c24d4502dee8d28cd319711c880d27d06eac33b1da96fa6554a0672c",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-hl.json",
+      "finding": "The scheme supplies marking instructions or a grid but no answer for this task.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2010-hl-la1",
+      "printedMarks": 12,
+      "schemePages": [
+        5,
+        6
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2010-hl.pdf",
+      "schemeSha256": "15607f22c24d4502dee8d28cd319711c880d27d06eac33b1da96fa6554a0672c",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-hl.json",
+      "finding": "No requested word answers are supplied. Preserve the printed automatic two-mark award for the impossible plural-dative prompt.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2010-hl-l1-1-i",
+      "printedMarks": 4,
+      "schemePages": [
+        16
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2010-hl.pdf",
+      "schemeSha256": "15607f22c24d4502dee8d28cd319711c880d27d06eac33b1da96fa6554a0672c",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-hl.json",
+      "treatment": "unprinted-criterion",
+      "finding": "The city question is absent from the scheme. Its general rule gives2 marks per correct/relevant point; the booklet asks for2 details. Retain the derived total4, label the derivation and supply no invented answer.",
+      "fixedLine": "The scheme prints no answer for this part."
+    }
+  ],
+  "otherFindings": [
+    {
+      "id": "ru-2010-hl-la2-2",
+      "decision": "Retain all printed swimming-word examples. No blanket no-answer notice.",
+      "sourcePages": [
+        8
+      ]
+    }
+  ],
+  "sourceReview": "All relevant scheme pages read in full as original-page images and extracted text; examples distinguished from prompts. Original downloaded PDF matches the retained source exactly.",
+  "rule": "R4; CARD-STANDARD sections3,5 and10a",
+  "sourceBranch": "wip/russian-2026-11-19",
+  "liveCardsChanged": false,
+  "mainAtReview": "dd70ba43d6bc87dbe293b72d1b52c1cabdfcabf0"
+}

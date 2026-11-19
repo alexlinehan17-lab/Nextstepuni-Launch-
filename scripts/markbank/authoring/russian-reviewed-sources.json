@@ -26948,7 +26948,16 @@
     "component": "000",
     "questionPages": [
       5
-    ]
+    ],
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        5,
+        6
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-hl.json"
+    }
   },
   {
     "id": "ru-2010-hl-la2-1",
@@ -27051,7 +27060,16 @@
     "component": "000",
     "guidancePages": [
       3
-    ]
+    ],
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        11,
+        12
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-hl.json"
+    }
   },
   {
     "id": "ru-2010-hl-gw",
@@ -27072,7 +27090,17 @@
     "component": "000",
     "guidancePages": [
       3
-    ]
+    ],
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        13,
+        14,
+        15
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-hl.json"
+    }
   },
   {
     "id": "ru-2010-hl-l1-1-i",
@@ -27094,7 +27122,15 @@
     ],
     "guidancePages": [
       16
-    ]
+    ],
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        16
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2010-hl.json"
+    }
   },
   {
     "id": "ru-2010-hl-l1-1-ii",
