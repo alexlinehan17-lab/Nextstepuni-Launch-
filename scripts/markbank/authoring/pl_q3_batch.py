@@ -78,9 +78,19 @@ def sitting_cards(year, level, generated=None):
         generated = pl_all.build()[0]
     specs = pl_reading_specs.cards(year, level)
     spec_ids = {c['id'] for c in specs}
-    reading = [pl_reading_specs.fix_question(json.loads(json.dumps(c)), year, level)
+    import pl_paper
+    from paper_census import key_label, PRINTED_EXAMPLES
+    P = pl_paper.PlPaper(year, level)
+    by_label = {key_label(a.key, 'polish'): a for a in P.all_asks()}
+    worked = {k[3] for k in PRINTED_EXAMPLES if k[:3] == ('polish', year, level)}
+    label = lambda c: c['questionRef'].split(' ', 2)[2]                    # noqa: E731
+    # A worked example is not an ask (CARD-STANDARD 10d): pl_all still reads
+    # its row, priced at 0 or a dash, and it is left out here.
+    reading = [pl_reading_specs.fix_question(json.loads(json.dumps(c)), year, level,
+                                             ask=by_label.get(label(c)))
                for c in generated if c['year'] == year and c['level'] == lv
-               and c['id'] not in have and c['id'] not in spec_ids]
+               and c['id'] not in have and c['id'] not in spec_ids
+               and label(c) not in worked]
     new = (reading + specs + pl_listen_specs.cards(year, level)
            + pl_writing.cards(year, level))
     ids = [c['id'] for c in new]
@@ -93,7 +103,19 @@ def sitting_cards(year, level, generated=None):
     return authored, new
 
 
+# Sittings with no live card before this lane: every card in them is the
+# lane's own, so a rewrite replaces them whole.
+ALL_NEW = {2026}
+
+
 def write(year, level, generated=None):
+    if year in ALL_NEW:
+        with open(AUTHORED, encoding='utf-8') as fh:
+            kept = [c for c in json.load(fh)
+                    if not (c['year'] == year and c['level'] == LEVEL_WORD[level])]
+        with open(AUTHORED, 'w', encoding='utf-8') as fh:
+            json.dump(kept, fh, ensure_ascii=False, indent=1)
+            fh.write('\n')
     authored, new = sitting_cards(year, level, generated)
     lv = LEVEL_WORD[level]
     out = [_correct(c) if (c['year'], c['level']) == (year, lv) else c for c in authored]

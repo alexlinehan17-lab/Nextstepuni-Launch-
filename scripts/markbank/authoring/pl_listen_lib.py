@@ -176,3 +176,20 @@ class PaperLine:
 
 def PL(page, opening):
     return PaperLine(page, opening)
+
+
+class Token:
+    """The k-th cell of a printed row of single-word cells, scheme line n:
+    "E C F A B D" under "1. 2. 3. 4. 5. 6." (a matching task's key)."""
+    def __init__(self, n, k):
+        self.n, self.k = n, k
+
+    def text(self, doc):
+        cells = doc['scheme'][self.n - 1].split()
+        if self.k >= len(cells):
+            raise ValueError(f'scheme line {self.n} has no cell #{self.k}')
+        return cells[self.k]
+
+
+def W(n, k):
+    return Token(n, k)

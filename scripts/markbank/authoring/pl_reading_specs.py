@@ -22,7 +22,7 @@ sys.path.insert(0, HERE)
 
 import pl_paper                                                  # noqa: E402
 from pl_listen import scheme_lines                               # noqa: E402
-from pl_listen_lib import S, J, T, TM, PL, one, menu, part, One  # noqa: E402,F401
+from pl_listen_lib import S, J, T, TM, PL, W, one, menu, part, One  # noqa: E402,F401
 from pl_listen_specs import build_rows                           # noqa: E402
 from pl_topics import (topic_for, concept_for, answer_language,  # noqa: E402
                        language_note)
@@ -37,9 +37,13 @@ class R:
     """One reading card: the census address, its rows, notes for the student
     (`rownote`, a callable of the documents or a string) and the reviewer's
     evidence (`note`)."""
-    def __init__(self, key, rows, total=None, note=None, rownote=None, question=None):
+    def __init__(self, key, rows, total=None, note=None, rownote=None, question=None,
+                 extra_pages=()):
         self.key, self.rows, self.total, self.note = key, rows, total, note
         self.rownote, self.question = rownote, question
+        # Paper pages the card needs beside its text's: a matching task's
+        # pictures printed on a page of their own.
+        self.extra_pages = extra_pages
 
 
 def lifted(*sels):
@@ -72,6 +76,14 @@ SPECS[(2026, 'ol')] = [
     # Multiple choice A-D: the scheme answers "C (2 marks)". The paper prints
     # the four options in the question itself.
     R('A2biii', [one(S(162), T(162))]),
+    # A matching task: names 2-6 to portraits A-F (1. Agatka is the example).
+    # The scheme sets its key as a table, numbers over letters ("1. 2. 3. 4.
+    # 5. 6." / "E C F A B D", cells read by find_tables in that order) and
+    # "2 marks" under each answer; each row is one name's letter, led by the
+    # name as the paper prints it (p11). The portraits are on paper p11.
+    R('A2c', [one(W(166, k - 1), T(167, k - 2), lead=PL(11, f'{k}. ')) for k in range(2, 7)],
+      question=lambda d, q: '\n'.join([q] + [PL(11, f'{k}. ').text(d) for k in range(2, 7)]),
+      extra_pages=(11,)),
 ]
 
 # ================================================================ 2025 HL ===
@@ -117,6 +129,11 @@ def _marker_off(text):
 # own lines (id -> f(documents, census question) -> question). Applied to the
 # cards pl_all builds; the census itself is unchanged.
 QFIX = {
+    # The box of headings the task matches to parts 2-6, and its example, as
+    # the paper prints them under the task (p9).
+    'pl-2026-ol-a-2-a': lambda d, q: '\n'.join(
+        [q, PL(9, 'W świecie bez internetu').text(d), PL(9, 'Pierwsze dobranocki').text(d),
+         PL(9, 'Przykład:').text(d)]),
     # The text layer repeats the NEXT row's label beside this one ("miejsce
     # pierwszej styczności", p4 x=87), and the census appended it.
     'pl-2026-hl-a-1-a-i': lambda d, q: q.split(' miejsce pierwszej styczności')[0],
@@ -130,7 +147,23 @@ QFIX = {
 }
 
 
-def fix_question(card, year, level, doc=None):
+TF = {'true', 'false', 'prawda', 'fałsz'}
+
+
+def with_instruction(card, ask):
+    """A true/false row's card carries the table's printed instruction
+    ("Indicate whether the following statements are true or false. ..."): the
+    census keeps it only when the statement is short, and a statement alone
+    does not say what to do with it."""
+    rows = card.get('rows') or []
+    if len(rows) == 1 and rows[0]['verbatim'].strip().lower() in TF and ask is not None \
+            and ask.stem and not card['questionText'].startswith(ask.stem[:40]):
+        card['questionText'] = f'{ask.stem} {card["questionText"]}'
+    return card
+
+
+def fix_question(card, year, level, doc=None, ask=None):
+    with_instruction(card, ask)
     fix = QFIX.get(card['id'])
     if not fix:
         return card
@@ -186,6 +219,10 @@ def cards(year, level):
             card['stem'] = lead
         source = source_material(P, ask, language, level, year)
         if source:
+            for p in spec.extra_pages:
+                if p not in source['pages']:
+                    source['pages'].append(p)
             card['sourceMaterial'] = source
+        with_instruction(card, ask)
         out.append(card)
     return out

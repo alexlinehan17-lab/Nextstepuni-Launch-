@@ -3405,7 +3405,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Higher Level — © State Examinations Commission.",
     id: "pl-2026-hl-a-1-j-i", topicId: "polish-3-1", conceptId: "mount-everest-expedition-left-poland-april",
     section: "A", questionRef: "2026 HL Section A Q1(j)(i)",
-    questionText: "The Mount Everest expedition left Poland in April. (paragraph 2)",
+    questionText: "Based on the text, indicate if the following statements are true or false. Put a tick (✓) in the appropriate boxes. The Mount Everest expedition left Poland in April. (paragraph 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "False", marks: 1, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language. The scheme notes: “If candidate clearly identifies correct answer, without using a tick = 1 mark”. The scheme notes: “If more than one answer offered = 0 marks”." },
@@ -3429,7 +3429,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2026 Higher Level — © State Examinations Commission.",
     id: "pl-2026-hl-a-1-j-ii", topicId: "polish-3-1", conceptId: "jerzy-kukuczka-trained-running-before-began",
     section: "A", questionRef: "2026 HL Section A Q1(j)(ii)",
-    questionText: "Jerzy Kukuczka trained in running before he began his climbing career. (paragraph 7)",
+    questionText: "Based on the text, indicate if the following statements are true or false. Put a tick (✓) in the appropriate boxes. Jerzy Kukuczka trained in running before he began his climbing career. (paragraph 7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "True", marks: 1, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme notes: “If candidate clearly identifies correct answer, without using a tick = 1 mark”. The scheme notes: “If more than one answer offered = 0 marks”." },
