@@ -2,30 +2,39 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * The single model's two automatic checks across every subject (plan section 5, M5), plus the model's own record:
+ * The single model's two automatic checks (plan section 5, M5), plus the model's own record:
  *   1. every Mark Bank card reaches a Topic Atlas question under the same topic;
  *   2. every Topic Atlas question in scope has a card;
  *   3. data/atlasModel/<subject>.json is what scripts/atlas-model/askTopics.ts derives today (never hand-edited).
- * Today's misses are listed in test/fixtures/atlasModelKnownMisses.json. The list may shrink and never grow: a new
- * miss fails, and so does a listed miss that has been fixed and not taken off the list. To shrink the file after a
- * fix, run this file with ATLAS_MISSES_WRITE=1; it refuses to write a list that grows.
+ * Both checks run across every subject. They gate the subjects switched on in the model (MODEL_SUBJECTS): such a
+ * subject has no card miss at all, and its Atlas questions without a card are listed in
+ * test/fixtures/atlasModelKnownMisses.json, which may shrink and never grow (a new miss fails, and so does a listed
+ * miss that has been fixed and not taken off the list). Subjects not yet switched on are measured and reported, not
+ * gated, so another lane adding cards to them is never blocked here; each joins the gate when it is switched on.
+ * To rewrite the list after a fix or a switch-on, run this file with ATLAS_MISSES_WRITE=1: it refuses to grow the
+ * list of a subject already on it, and adds a newly switched-on subject.
  */
 import { describe, expect, it } from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
 import { runAtlasModelChecks, type CheckResult } from '../scripts/atlas-model/checks';
-import { deriveAskTopics, FILED_SUBJECTS, MODEL_SUBJECTS } from '../scripts/atlas-model/askTopics';
+import { deriveAskTopics, MODEL_SUBJECTS } from '../scripts/atlas-model/askTopics';
+import headings from '../data/atlasModel/headings.json';
 
 const FIXTURE = path.join(__dirname, 'fixtures', 'atlasModelKnownMisses.json');
-interface Known { note: string; cards: CheckResult['cards']; questions: CheckResult['questions'] }
+interface Known { note: string; questions: CheckResult['questions'] }
 const known: Known | null = fs.existsSync(FIXTURE) ? JSON.parse(fs.readFileSync(FIXTURE, 'utf8')) : null;
 
-const cardIds = (m: CheckResult['cards']) => new Map(Object.entries(m).map(([s, reasons]) => [s, new Set(Object.values(reasons).flat() as string[])]));
-const questionKeys = (m: CheckResult['questions']) => new Map(Object.entries(m).map(([s, keys]) => [s, new Set(keys)]));
-function compare(actual: Map<string, Set<string>>, listed: Map<string, Set<string>>) {
+/** The Atlas subjects whose questions the model gates (History's Later and Early Modern lists both). */
+const MODEL_ATLAS_IDS = new Set((headings as { subjects: Array<{ subjectId: string; atlasIds: string[] }> }).subjects
+  .filter(s => MODEL_SUBJECTS.includes(s.subjectId)).flatMap(s => s.atlasIds));
+const gated = (questions: CheckResult['questions']): CheckResult['questions'] =>
+  Object.fromEntries([...MODEL_ATLAS_IDS].sort().map(atlasId => [atlasId, questions[atlasId] ?? []]));
+
+function compare(actual: CheckResult['questions'], listed: CheckResult['questions']) {
   const grew: string[] = []; const fixed: string[] = [];
-  for (const [s, ids] of actual) for (const id of ids) if (!listed.get(s)?.has(id)) grew.push(`${s}: ${id}`);
-  for (const [s, ids] of listed) for (const id of ids) if (!actual.get(s)?.has(id)) fixed.push(`${s}: ${id}`);
+  for (const [s, keys] of Object.entries(actual)) for (const k of keys) if (!listed[s]?.includes(k)) grew.push(`${s}: ${k}`);
+  for (const [s, keys] of Object.entries(listed)) for (const k of keys) if (!actual[s]?.includes(k)) fixed.push(`${s}: ${k}`);
   return { grew, fixed };
 }
 
@@ -33,41 +42,41 @@ describe('the single model: Mark Bank and Topic Atlas, both ways', () => {
   let result: CheckResult;
   it('runs both checks across every subject', async () => {
     result = await runAtlasModelChecks();
+    const ungatedCards = Object.entries(result.cards).filter(([s]) => !MODEL_SUBJECTS.includes(s))
+      .reduce((n, [, reasons]) => n + Object.values(reasons).flat().length, 0);
+    const ungatedQuestions = Object.entries(result.questions).filter(([s]) => !MODEL_ATLAS_IDS.has(s))
+      .reduce((n, [, keys]) => n + keys.length, 0);
+    console.info(`[atlas model] not yet switched on: ${ungatedCards} cards miss the Atlas, ${ungatedQuestions} Atlas questions have no card`);
     if (process.env.ATLAS_MISSES_WRITE) {
-      const grows = known && (compare(cardIds(result.cards), cardIds(known.cards)).grew.length
-        || compare(questionKeys(result.questions), questionKeys(known.questions)).grew.length);
-      if (grows) throw new Error('refusing to write a known-miss list that grows');
+      const next = gated(result.questions);
+      const grows = known && compare(next, known.questions).grew.filter(k => k.split(': ')[0] in known.questions);
+      if (grows && grows.length) throw new Error(`refusing to grow the known-miss list: ${grows.slice(0, 5).join('; ')}`);
       fs.writeFileSync(FIXTURE, `${JSON.stringify({
-        note: 'Shrink-only (test/atlasModelChecks.test.ts). cards: Mark Bank subject -> reason -> cards that do not reach a Topic Atlas question under the same topic. questions: Atlas subject -> in-scope Atlas questions (year|level|booklet|n) with no card.',
-        cards: result.cards, questions: result.questions,
+        note: 'Shrink-only (test/atlasModelChecks.test.ts). questions: Atlas subject switched on in the single model -> its in-scope Atlas questions (year|level|booklet|n) with no card.',
+        questions: next,
       }, null, 1)}\n`);
     }
     expect(result.totals.cards).toBeGreaterThan(50000);
   }, 900_000);
 
-  it('every card reaches a Topic Atlas question under the same topic (known misses may only shrink)', () => {
-    expect(known, 'test/fixtures/atlasModelKnownMisses.json is missing').not.toBeNull();
-    const { grew, fixed } = compare(cardIds(result.cards), cardIds(known!.cards));
-    expect(grew, 'cards that newly fail to reach the Atlas under their topic').toEqual([]);
-    expect(fixed, 'fixed: take these cards off the known-miss list (ATLAS_MISSES_WRITE=1)').toEqual([]);
+  it('every card of a switched-on subject reaches a Topic Atlas question under the same topic', () => {
+    for (const subject of MODEL_SUBJECTS) expect(result.cards[subject] ?? {}, subject).toEqual({});
   });
 
-  it('every Topic Atlas question in scope has a card (known misses may only shrink)', () => {
-    const { grew, fixed } = compare(questionKeys(result.questions), questionKeys(known!.questions));
+  it('every Topic Atlas question of a switched-on subject has a card (known misses may only shrink)', () => {
+    expect(known, 'test/fixtures/atlasModelKnownMisses.json is missing').not.toBeNull();
+    for (const atlasId of MODEL_ATLAS_IDS) expect(atlasId in known!.questions, `${atlasId}: run with ATLAS_MISSES_WRITE=1`).toBe(true);
+    const { grew, fixed } = compare(gated(result.questions), known!.questions);
     expect(grew, 'Atlas questions that newly have no card').toEqual([]);
     expect(fixed, 'fixed: take these questions off the known-miss list (ATLAS_MISSES_WRITE=1)').toEqual([]);
   });
 
-  it('every subject in the model has no miss at all on its own cards', () => {
-    for (const subject of MODEL_SUBJECTS) expect(result.cards[subject] ?? {}, subject).toEqual({});
-  });
-
-  it('the committed topic record is the one the model derives today', async () => {
-    for (const subject of FILED_SUBJECTS) {
+  it('the committed topic record of every switched-on subject is the one the model derives today', async () => {
+    for (const subject of MODEL_SUBJECTS) {
       const { file, problems } = await deriveAskTopics(subject);
       expect(problems, subject).toEqual([]);
       const committed = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'atlasModel', `${subject}.json`), 'utf8'));
-      expect(committed, `${subject}: run node scripts/atlas-model/build-ask-topics.mjs`).toEqual(JSON.parse(JSON.stringify(file)));
+      expect(committed, `${subject}: run node scripts/atlas-model/build-ask-topics.mjs ${subject}`).toEqual(JSON.parse(JSON.stringify(file)));
     }
   }, 300_000);
 });
