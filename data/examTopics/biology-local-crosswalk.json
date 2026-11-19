@@ -11,13 +11,14 @@
     "referenceOfficialAssociations": 2419,
     "referenceMockAssociations": 2333,
     "referenceProviderSampleAssociations": 139,
-    "matchedAssociations": 1561,
-    "sourceBlockedAssociations": 858,
+    "matchedAssociations": 1633,
+    "sourceBlockedAssociations": 786,
     "matchedLogicalCards": 485,
     "retainedLocalLogicalCards": 49,
     "localPaperVariants": 100,
     "localPhysicalCards": 1068,
     "localLogicalQuestions": 534,
+    "deferredLogicalQuestions": 17,
     "preservedBaselineVariants": 89,
     "preservedBaselineTasks": 971,
     "corrected2019To2020SectionCCardIds": 48
@@ -281,8 +282,17 @@
         "1"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "1"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-12-chemicals-of-life-biomolecules",
@@ -965,8 +975,17 @@
         "5"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "5"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-12-dna-rna-and-the-genetic-code",
@@ -983,8 +1002,17 @@
         "8"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "8"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-12-dna-rna-and-the-genetic-code",
@@ -2009,8 +2037,17 @@
         "7"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "7"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-14-information-of-life-genetic-inheritance",
@@ -2027,8 +2064,17 @@
         "12"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "12"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-14-information-of-life-genetic-inheritance",
@@ -2999,8 +3045,17 @@
         "9"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "9"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-21-enzymes",
@@ -3665,8 +3720,17 @@
         "17"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "17"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-22-photosynthesis",
@@ -4475,8 +4539,17 @@
         "4"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "4"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-22-respiration",
@@ -5195,8 +5268,17 @@
         "17"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "17"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-23-cell-division-and-cancer",
@@ -6077,8 +6159,17 @@
         "13"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "13"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-24-homeostasis",
@@ -6356,8 +6447,17 @@
         "17"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "17"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-24-immunity",
@@ -6797,8 +6897,17 @@
         "11"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "11"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-24-plant-responses",
@@ -7130,8 +7239,17 @@
         "15"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "15"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-24-the-endocrine-system",
@@ -7580,8 +7698,17 @@
         "7"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "7"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-24-the-musculoskeletal-system",
@@ -7598,8 +7725,17 @@
         "15"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "15"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-24-the-musculoskeletal-system",
@@ -7976,8 +8112,17 @@
         "16"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "16"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-24-the-nervous-system",
@@ -8606,8 +8751,17 @@
         "3"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "3"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-25-reproduction-human",
@@ -8624,8 +8778,17 @@
         "7"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "7"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-25-reproduction-human",
@@ -9425,8 +9588,17 @@
         "16"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "16"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-25-reproduction-plant",
@@ -9983,8 +10155,17 @@
         "10"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "10"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-26-plant-structure-and-transport",
@@ -10001,8 +10182,17 @@
         "11"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "11"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-26-plant-structure-and-transport",
@@ -10442,8 +10632,17 @@
         "13"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "13"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-26-the-breathing-system",
@@ -10946,8 +11145,17 @@
         "10"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "10"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-26-the-circulatory-system-and-blood",
@@ -10964,8 +11172,17 @@
         "10"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "10"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-26-the-circulatory-system-and-blood",
@@ -10982,8 +11199,17 @@
         "16"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "16"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-26-the-circulatory-system-and-blood",
@@ -11990,8 +12216,17 @@
         "13"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "13"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-26-the-urinary-system",
@@ -12395,8 +12630,17 @@
         "17"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "17"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-26-transport-across-membranes",
@@ -12998,8 +13242,17 @@
         "6"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-31-ecology-ecosystems-and-biodiversity",
@@ -13016,8 +13269,17 @@
         "14"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "14"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-31-ecology-ecosystems-and-biodiversity",
@@ -14114,8 +14376,17 @@
         "6"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-31-investigating-an-ecosystem",
@@ -14933,8 +15204,17 @@
         "16"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "16"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-32-microorganisms",
@@ -15581,8 +15861,17 @@
         "14"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "14"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-32-nutrient-recycling",
@@ -15851,8 +16140,17 @@
         "12"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "12"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-33-genetic-engineering",
@@ -16175,8 +16473,17 @@
         "7"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "7"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-new-course-u2-investigating-in-science",
@@ -16679,8 +16986,17 @@
         "16"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "16"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-bacteria",
@@ -17174,8 +17490,17 @@
         "10"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "10"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-blood-circulatory-system",
@@ -17192,8 +17517,17 @@
         "10"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "10"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-blood-circulatory-system",
@@ -17210,8 +17544,17 @@
         "16"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "16"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-blood-circulatory-system",
@@ -17687,8 +18030,17 @@
         "13"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "13"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-breathing-system",
@@ -18056,8 +18408,17 @@
         "17"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "17"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-cell-division",
@@ -18641,8 +19002,17 @@
         "9"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "9"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-cell-metabolism-enzymes",
@@ -20567,8 +20937,17 @@
         "6"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-ecology",
@@ -20585,8 +20964,17 @@
         "14"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "14"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-ecology",
@@ -21638,8 +22026,17 @@
         "13"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "13"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-excretion-thermoregulation",
@@ -21656,8 +22053,17 @@
         "13"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "13"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-excretion-thermoregulation",
@@ -22214,8 +22620,17 @@
         "1"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "1"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-food-food-tests",
@@ -22907,8 +23322,17 @@
         "2"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "2"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-fungi",
@@ -23816,8 +24240,17 @@
         "5"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "5"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-genetics-dna-evolution",
@@ -23834,8 +24267,17 @@
         "7"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "7"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-genetics-dna-evolution",
@@ -23852,8 +24294,17 @@
         "8"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "8"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-genetics-dna-evolution",
@@ -23870,8 +24321,17 @@
         "12"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "12"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-genetics-dna-evolution",
@@ -24726,8 +25186,17 @@
         "15"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "15"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-hormonalendocrine-system",
@@ -25230,8 +25699,17 @@
         "3"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "3"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-human-reproduction",
@@ -25248,8 +25726,17 @@
         "7"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "7"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-human-reproduction",
@@ -25806,8 +26293,17 @@
         "17"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "17"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-movement-through-cell-membranes",
@@ -26157,8 +26653,17 @@
         "7"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "7"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-musculoskeletal-system",
@@ -26175,8 +26680,17 @@
         "15"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "15"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-musculoskeletal-system",
@@ -26589,8 +27103,17 @@
         "16"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "16"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-nervous-system",
@@ -27120,8 +27643,17 @@
         "17"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "17"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-photosynthesis",
@@ -27822,8 +28354,17 @@
         "10"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "10"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-plant-reproduction",
@@ -27840,8 +28381,17 @@
         "16"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "16"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-plant-reproduction",
@@ -28452,8 +29002,17 @@
         "11"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "11"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-plant-responses",
@@ -29163,8 +29722,17 @@
         "10"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "10"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-plant-structure",
@@ -29181,8 +29749,17 @@
         "10"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "10"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-plant-structure",
@@ -29199,8 +29776,17 @@
         "11"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "11"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-plant-structure",
@@ -29676,8 +30262,17 @@
         "11"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "11"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-plant-transport",
@@ -29982,8 +30577,17 @@
         "7"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "7"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-protista",
@@ -30288,8 +30892,17 @@
         "4"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "4"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-respiration",
@@ -30783,8 +31396,17 @@
         "7"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "7"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-the-scientific-method",
@@ -31134,8 +31756,17 @@
         "6"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-the-study-of-an-ecosystem",
@@ -31692,8 +32323,17 @@
         "7"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP038EV-deferred.pdf",
+          "questionNumber": "7"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-viruses",
@@ -31710,8 +32350,17 @@
         "17"
       ],
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Biology sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC025ALP040EV-deferred.pdf",
+          "questionNumber": "17"
+        }
+      ]
     },
     {
       "topicId": "biology-higher-old-course-viruses",

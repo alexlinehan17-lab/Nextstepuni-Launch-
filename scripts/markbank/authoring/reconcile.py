@@ -669,10 +669,10 @@ def reconcile_subject(subject, census=None):
                 continue
             if hist_deferred:
                 ref['paper'] = 'Deferred'
-        if subject in ('economics', 'engineering', 'dcg', 'spanish', 'german'):
+        if subject in ('economics', 'engineering', 'dcg', 'spanish', 'german', 'biology'):
             # A deferred sitting is its own census paper, 'Deferred', and its
             # card says so twice: the id ("econ-2022-hl-deferred-...",
-            # "eng-2022-hl-deferred-...", "dcg-2022-hl-deferred-...") and the
+            # "eng-2022-hl-deferred-...", "dcg-2022-hl-deferred-...", "bio-2022-hl-deferred-...") and the
             # citation ("... — Deferred sitting"). The two must agree. The
             # same rule as Physics and Home Economics on codex/home-economics-
             # continuation-20261101.
@@ -680,7 +680,8 @@ def reconcile_subject(subject, census=None):
                                       'engineering': r'^eng-\d{4}-(?:hl|ol)-deferred-',
                                       'dcg': r'^dcg-\d{4}-(?:hl|ol)-deferred-',
                                       'spanish': r'^es-\d{4}-(?:hl|ol)-deferred-',
-                                      'german': r'^de-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
+                                      'german': r'^de-\d{4}-(?:hl|ol)-deferred-',
+                                      'biology': r'^bio-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
             if deferred != (' — Deferred sitting' in refstr):
                 unparsed.append({'id': cid, 'ref': refstr})
                 continue

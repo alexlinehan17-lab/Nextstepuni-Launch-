@@ -921,9 +921,12 @@ PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2010, 2011, 2012, 2013
                                                            2017, 2018, 2019)}
 
 
-def short_ask_ok(subject, year, level, flag):
-    """An empty-leaf flag on a printed ask recorded in SHORT_ASKS, read as recorded."""
-    entry = SHORT_ASKS.get((subject, year, level, flag.get('where')))
+def short_ask_ok(subject, year, level, flag, sitting=None):
+    """An empty-leaf flag on a printed ask recorded in SHORT_ASKS, read as recorded.
+
+    A deferred Biology sitting's asks are keyed (subject, year, level + '-deferred', label), so a June
+    entry never stands for the deferred paper's ask of the same address (census_biology_deferred)."""
+    entry = SHORT_ASKS.get((subject, year, level + ('-deferred' if sitting == 'deferred' else ''), flag.get('where')))
     return bool(entry) and flag.get('type') == 'empty-leaf' and flag.get('detail') == f'extracted text: {entry[0]!r}'
 
 
@@ -4392,6 +4395,8 @@ def census_subject(subject):
                     'type': 'marks-checksum',
                     'where': f"{p['year']} {p['level']} {p.get('paper') or ''}",
                     'detail': f"marks sum {p['marksSum']}, other years say {want}"})
+    if subject == 'biology':
+        papers.extend(census_biology_deferred())
     if subject == 'engineering':
         papers.extend(census_engineering_deferred())
     if subject == 'history':
@@ -4405,6 +4410,43 @@ def census_subject(subject):
     if subject == 'german':
         papers.extend(census_german_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+
+
+# The SEC's deferred Biology sittings in the archive, English version (deferredexams/<year>/: two booklets
+# each, LC025<A|G>LP038EV Sections A and B and LC025<A|G>LP040EV Section C, as June's; scheme LC025<A|G>LP000EV
+# in deferredmarkingschemes/). 2022 and 2023 at both levels, 2024 and 2025 Higher only.
+BIO_DEFERRED_SITTINGS = ((2022, 'hl'), (2022, 'ol'), (2023, 'hl'), (2023, 'ol'), (2024, 'hl'), (2025, 'hl'))
+
+
+def biology_deferred_files(year, level):
+    letter = 'A' if level == 'hl' else 'G'
+    return [os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'LC025{letter}LP{c}EV.pdf')
+            for c in ('038', '040')]
+
+
+def census_biology_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Each deferred Biology sitting (BIO_DEFERRED_SITTINGS) is read by the June
+    reader (census_merged over its own two booklets) and keyed 'Deferred', as
+    Engineering keys its own (census_engineering_deferred), so a deferred ask
+    never lands on a June leaf with the same address. The checksum is not run
+    on it.
+    """
+    papers = []
+    for year, level in BIO_DEFERRED_SITTINGS:
+        parts, texts, _ = census_merged('biology', year, level, files=biology_deferred_files(year, level))
+        leaves = leaves_of(parts)
+        flags = [f for f in continuity_flags(parts, texts, 'biology')
+                 if not short_ask_ok('biology', year, level, f, sitting='deferred')]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'biology'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
 
 
 # The SEC's deferred Engineering sittings in the archive: 2022 and 2023 Higher

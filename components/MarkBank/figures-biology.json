@@ -5800,6 +5800,336 @@
    742
   ]
  },
+ "biology-2022-hl-deferred-q11-phloem": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q11-phloem.png",
+  "md5": "f4e2cf10ab42ced9132f797bbf0dfda7",
+  "alt": "Diagram of a plant tissue in longitudinal section: P points into a wide tube-shaped cell, Q to a narrow cell with dark nuclei beside it, and R to a cross-wall between two of the wide cells.",
+  "lettersVisible": [
+   "P",
+   "Q",
+   "R"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q11(b)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV-deferred.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   215,
+   240,
+   400,
+   440
+  ]
+ },
+ "biology-2022-hl-deferred-q12-ge": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q12-ge.png",
+  "md5": "765f882be2ea1ae44b5ac76c79aafcf7",
+  "alt": "Diagram in two dashed boxes. Box A: triangles labelled Enzyme beside a chromosome and beside a ring labelled Structure X; an arrow takes a short bar labelled Gene from the chromosome. Box B: the gene, a ring with a gap, and an arrow to a complete ring labelled Structure X with inserted gene.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q12(c)(ii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV-deferred.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   105,
+   338,
+   540,
+   588
+  ]
+ },
+ "biology-2022-hl-deferred-q13-breathing": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q13-breathing.png",
+  "md5": "0cd107541834141ae531496207062c1f",
+  "alt": "Diagram of the human breathing system with an enlarged inset beside a capillary: A and B point to parts of the throat, C to the tube below them, D and E to parts inside the inset, and F to the curved band below the lungs.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q13(b)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV-deferred.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   165,
+   145,
+   475,
+   410
+  ]
+ },
+ "biology-2022-hl-deferred-q14-pyramid": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q14-pyramid.png",
+  "md5": "a2faaa21f6d1d4bbb2d17f33cec9e27e",
+  "alt": "The marking scheme’s pyramid of numbers, four stacked bars narrowing upwards: Algae at the base, then Mayflies, Trout and Otter at the top.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(b)(v) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV-deferred.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   195,
+   350,
+   440,
+   466
+  ],
+  "solution": true
+ },
+ "biology-2022-hl-deferred-q15-leg": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q15-leg.png",
+  "md5": "dfa3e2af486f4d7aa60550e9509f4d18",
+  "alt": "Diagram of the bones of a human leg: A points to the upper long bone, X to the knee, and B and C to the two bones of the lower leg, above the foot.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q15(b)(iv) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV-deferred.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   240,
+   195,
+   350,
+   470
+  ]
+ },
+ "biology-2022-hl-deferred-q16-bacterium": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q16-bacterium.png",
+  "md5": "239e79c44c15149b55a0ecf49e6e027f",
+  "alt": "Electron microscope photograph of a single rod-shaped bacterial cell.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q16(d)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   370,
+   465,
+   530,
+   667
+  ]
+ },
+ "biology-2022-hl-deferred-q16-brain": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q16-brain.png",
+  "md5": "c91e3b770eb903f394973ef7c6b24826",
+  "alt": "Diagram of the internal structure of the human brain in section: the folded upper part labelled D, the lower stem labelled E, and the small rounded part at the back labelled F.",
+  "lettersVisible": [
+   "D",
+   "E",
+   "F"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q16(b)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV-deferred.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   195,
+   340,
+   430,
+   565
+  ]
+ },
+ "biology-2022-hl-deferred-q16-pollen": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q16-pollen.png",
+  "md5": "9e8df577402f8121c51ebbb2e4b95274",
+  "alt": "Diagram of a pollen grain: a round grain with a spiky outer wall and two dark nuclei inside, labelled Nucleus X and Generative nucleus.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q16(c)(v) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   305,
+   200,
+   535,
+   350
+  ]
+ },
+ "biology-2022-hl-deferred-q17-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q17-graph.png",
+  "md5": "2ff68a564f4ba71ecde58342c1ea81f5",
+  "alt": "Graph of rate of photosynthesis against light intensity / CO2 concentration: the curve rises slowly, then steeply, and levels off; an arrow labelled X points to where it levels off.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q17(a)(v) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV-deferred.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   140,
+   280,
+   465,
+   478
+  ]
+ },
+ "biology-2022-hl-deferred-q17-mitosis": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q17-mitosis.png",
+  "md5": "884097a29dca56d337b892c8eebb0411",
+  "alt": "Diagram of a cell during mitosis: four X-shaped chromosomes in the centre, curved segments around them, and fibres radiating from a body at each side; A points to the middle of one chromosome, B to one of the curved segments and C to the fibres at one side.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q17(d)(ii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV-deferred.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   148,
+   295,
+   455,
+   558
+  ]
+ },
+ "biology-2022-hl-deferred-q2-rhizopus": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q2-rhizopus.png",
+  "md5": "15361431d11b21aae7d3450f7efdb163",
+  "alt": "Four drawings in sequence, joined by arrows: two hyphae marked + and – grow towards each other, with A pointing to their tips; in the second, B points to the joined region between two parts labelled Suspensor; in the third, a dark spiky body labelled Zygospore lies between them; in the fourth, a stalk rises from the zygospore with a round head. Hyphae is labelled.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q2(a) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV-deferred.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   65,
+   80,
+   545,
+   245
+  ]
+ },
+ "biology-2022-hl-deferred-q3-male": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q3-male.png",
+  "md5": "9a4df3d56ad1c9306c967603a641ee2b",
+  "alt": "Diagram of the male reproductive system in side view: D points to a tube that runs up from the scrotum and over the top of the bladder; E points to the oval organ inside the scrotum.",
+  "lettersVisible": [
+   "D",
+   "E"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q3(a) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV-deferred.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   205,
+   85,
+   410,
+   315
+  ]
+ },
+ "biology-2022-hl-deferred-q4-muscle": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q4-muscle.png",
+  "md5": "8b1bb11315d2078971e1c63f20689b9d",
+  "alt": "Diagram of a muscle cell: a long striated cell with a dark nucleus labelled Nucleus and many small oval organelles scattered through it, two of them labelled A.",
+  "lettersVisible": [
+   "A"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q4(c) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV-deferred.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   165,
+   86,
+   492,
+   222
+  ]
+ },
+ "biology-2022-hl-deferred-q5-nucleotide": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q5-nucleotide.png",
+  "md5": "83c53f62cc8eef71b1a23f5e8e695e7e",
+  "alt": "Diagram of a single DNA nucleotide: a circle labelled X joined to a pentagon labelled Y, which is joined to a shape labelled Nitrogenous base; a dotted line from the base is labelled Z.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q5(a) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV-deferred.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   165,
+   80,
+   425,
+   165
+  ]
+ },
+ "biology-2022-hl-deferred-q5-table": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-deferred-q5-table.png",
+  "md5": "be26db8ddcda93d0f7aa07820d0edd1f",
+  "alt": "A two-row table. DNA: A, T, G, C, G, A. mRNA: six empty boxes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q5(c) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV-deferred.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   135,
+   382,
+   462,
+   444
+  ]
+ },
  "biology-2022-hl-q12c-iii-question": {
   "src": "/exam-figures/biology/markbank/biology-2022-hl-q12c-iii-question.png",
   "md5": "06bcc0cff0ef56d693cce5a343cfd032",
