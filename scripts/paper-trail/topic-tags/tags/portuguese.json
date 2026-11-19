@@ -458,5 +458,65 @@
     "primary": "portuguese-2-5"
    }
   ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC018GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-3"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-3"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-3"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC018GLPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-5"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-5"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-5"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-5"
+   }
+  ]
  }
 ]
