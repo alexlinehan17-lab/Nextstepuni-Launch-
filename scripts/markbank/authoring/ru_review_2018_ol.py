@@ -201,9 +201,10 @@ def language_and_matching(docs):
     raw=page_text(Q,4)
     assert all(p in squash(raw) for p in phrases)
     question=squash(re.search(r'Write out.*?script\.',page_text(Q,4,(300,30,580,770)),re.S).group())+'\n\n'+'\n'.join(phrases)
-    c=base('LA1',question,6,[4],[4]);c['kind']='question';c['tariffModel']={'kind':'questionTotal'}
-    c['rows']=[{'id':f'phrase-{n}','kind':'point','verbatim':p,'marks':None} for n,p in enumerate(phrases,1)]
-    c['rows'][0]['contextNote']='The scheme gives 6 marks for both phrases without per-phrase allocations or a handwritten exemplar. Review the complete printed task; numeric self-scoring is unavailable for this exercise.'
+    c=base('LA1',question,6,[4],[4]);c['kind']='question';c['tariffModel']={'kind':'fixed'}
+    c['rows']=[{'id':'unprinted-answer','kind':'criterion','verbatim':'The scheme prints no answer for this part.',
+               'marks':6,'unprinted':True,
+               'contextNote':'The scheme gives 6 marks for both phrases without separate marks for each phrase. It repeats the printed targets but supplies no handwritten answer. Assess the complete handwritten response against the printed total.'}]
     cards.append(c)
     instruction=squash(page_text(Q,7,(300,30,580,250)))
     instruction='The following'+between(instruction,'The following','plural:')+'plural:'
@@ -223,7 +224,7 @@ def language_and_matching(docs):
     # replacing them with visually similar Cyrillic characters.
     answers=['cлушаю','забронировать','интересуют','скажите','приедете','Добрый','Kонечно','Приятно','Hе за что','большое']
     c['rows']=[{'id':f'gap-{n}','kind':'point','verbatim':answer,'marks':None} for n,answer in enumerate(answers,1)]
-    c['rows'][0]['contextNote']='Complete both Group A and Group B. The scheme publishes 20 marks for the whole exercise without per-gap allocations. Review all ten answers here; numeric self-scoring is unavailable for this exercise.'
+    c['rows'][0]['contextNote']='Complete both Group A and Group B. The scheme gives 20 marks for the whole exercise without separate marks for each gap. Assess the complete response against the ten printed answers and the whole-question total.'
     cards.append(c)
     return cards
 

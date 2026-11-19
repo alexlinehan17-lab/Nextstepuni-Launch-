@@ -36,16 +36,20 @@ describe('Russian 2018 Ordinary source review',()=>{
     expect(family.rubric.groups).toHaveLength(17);
     expect(languageMarks(family,Object.assign({},...family.rubric.groups.map(g=>selected(g.id,'full',2))))).toBe(10);
   });
-  it('retains all unpriced handwriting targets and both mandatory discourse dialogues',()=>{
-    for(const suffix of ['la1','sd']){
-      const c=get(suffix);if(isRubricCard(c))throw new Error('Wrong card');
-      expect(c.tariffModel).toEqual({kind:'questionTotal'});
-      expect(c.rows.every(r=>r.marks===null)).toBe(true);
-      expect(c.answerVariants).toBeUndefined();
-      expect(c.rows[0].contextNote).toContain('numeric self-scoring is unavailable');
-      expect(marksClaimed(c,Object.fromEntries(c.rows.map(r=>[r.id,1])))).toBe(0);
-    }
+  it('keeps the printed handwriting marks with R4 and both mandatory discourse dialogues',()=>{
+    const handwriting=get('la1');if(isRubricCard(handwriting))throw new Error('Wrong card');
+    expect(handwriting.questionText).toContain('Наши цены очень низкие.');
+    expect(handwriting.questionText).toContain('Дополнительные услуги');
+    expect(handwriting.tariffModel).toEqual({kind:'fixed'});
+    expect(handwriting.rows).toHaveLength(1);
+    expect(handwriting.rows[0]).toMatchObject({kind:'criterion',verbatim:'The scheme prints no answer for this part.',marks:6,unprinted:true});
+    expect(marksClaimed(handwriting,{})).toBe(0);
+    expect(marksClaimed(handwriting,{'unprinted-answer':1})).toBe(6);
     const c=get('sd');if(isRubricCard(c))throw new Error('Wrong card');
+    expect(c.tariffModel).toEqual({kind:'questionTotal'});
+    expect(c.rows.every(r=>r.marks===null)).toBe(true);
+    expect(c.answerVariants).toBeUndefined();
+    expect(c.rows[0].contextNote).toContain('whole-question total');
     expect(c.rows.map(r=>r.verbatim)).toEqual(['cлушаю','забронировать','интересуют','скажите','приедете','Добрый','Kонечно','Приятно','Hе за что','большое']);
   });
   it('uses the explicit5-mark listening rate and separate2-mark Dublin option within the two-city quota',()=>{

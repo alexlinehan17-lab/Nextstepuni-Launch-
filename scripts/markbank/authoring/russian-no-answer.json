@@ -332,6 +332,38 @@
       "schemeSha256": "8622b34ca8c3a357141ced0ff917e9ebeea56e3f3783e86f3f1403d5e32a3237",
       "reviewedAt": "2026-11-19",
       "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2019-ol.json"
+    },
+    "ru-2018-ol-sa": {
+      "printedMarks": 30,
+      "schemePages": [
+        9
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2018-ol.pdf",
+      "schemeSha256": "fcb24b1b07dc2d5369a4c27506485b2e0670f79dfdfb68b556efc289fac62bc3",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2018-ol.json"
+    },
+    "ru-2018-ol-la1": {
+      "printedMarks": 6,
+      "schemePages": [
+        4
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2018-ol.pdf",
+      "schemeSha256": "fcb24b1b07dc2d5369a4c27506485b2e0670f79dfdfb68b556efc289fac62bc3",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2018-ol.json",
+      "treatment": "unprinted-criterion"
+    },
+    "ru-2018-ol-ew": {
+      "printedMarks": 30,
+      "schemePages": [
+        10,
+        11
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2018-ol.pdf",
+      "schemeSha256": "fcb24b1b07dc2d5369a4c27506485b2e0670f79dfdfb68b556efc289fac62bc3",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2018-ol.json"
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-11-19T11:21:50.086258+00:00",
+  "archive": {
+    "year": 2018,
+    "level": "ol",
+    "url": "https://www.examinations.ie/archive/markingschemes/2018/LC099GLP000EV.pdf",
+    "filename": "Russian-2018-ol-SEC-fresh-20261119.pdf",
+    "pages": 16,
+    "downloadDone": true,
+    "checkedAt": "2026-11-19T11:19:10.943Z",
+    "bytes": 354392,
+    "sha256": "fcb24b1b07dc2d5369a4c27506485b2e0670f79dfdfb68b556efc289fac62bc3",
+    "retainedSha256": "fcb24b1b07dc2d5369a4c27506485b2e0670f79dfdfb68b556efc289fac62bc3",
+    "exactMatch": true,
+    "freshDownloadVerified": true,
+    "localFile": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/stale-exclusions-20261119/sec-recheck/2018-ol.pdf"
+  },
+  "cards": [
+    {
+      "id": "ru-2018-ol-la1",
+      "printedMarks": 6,
+      "schemePages": [
+        4
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2018-ol.pdf",
+      "schemeSha256": "fcb24b1b07dc2d5369a4c27506485b2e0670f79dfdfb68b556efc289fac62bc3",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2018-ol.json",
+      "treatment": "unprinted-criterion",
+      "finding": "The scheme repeats the handwriting task or target phrases, but prints no handwritten answer.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2018-ol-sa",
+      "printedMarks": 30,
+      "schemePages": [
+        9
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2018-ol.pdf",
+      "schemeSha256": "fcb24b1b07dc2d5369a4c27506485b2e0670f79dfdfb68b556efc289fac62bc3",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2018-ol.json",
+      "finding": "The scheme prints the task and marking criteria/grid, but no model answer or indicative answer content.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2018-ol-ew",
+      "printedMarks": 30,
+      "schemePages": [
+        10,
+        11
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2018-ol.pdf",
+      "schemeSha256": "fcb24b1b07dc2d5369a4c27506485b2e0670f79dfdfb68b556efc289fac62bc3",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2018-ol.json",
+      "finding": "The scheme prints the task and marking criteria/grid, but no model answer or indicative answer content.",
+      "fixedLine": "The scheme prints no answer for this part."
+    }
+  ],
+  "rule": "R4; CARD-STANDARD sections 3, 5 and 10a",
+  "sourceReview": "Complete relevant scheme pages read; handwriting pages also visually inspected. No model answers removed.",
+  "sourceBranch": "wip/russian-2026-11-19",
+  "liveCardsChanged": false
+}

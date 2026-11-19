@@ -77982,22 +77982,17 @@
     "questionRef": "2018 OL Section LA1",
     "questionText": "Write out the following phrases/words in handwritten/cursive script.\n\nНаши цены очень низкие.\nДополнительные услуги",
     "tariffModel": {
-      "kind": "questionTotal"
+      "kind": "fixed"
     },
     "totalMarks": 6,
     "rows": [
       {
-        "id": "phrase-1",
-        "kind": "point",
-        "verbatim": "Наши цены очень низкие.",
-        "marks": null,
-        "contextNote": "The scheme gives 6 marks for both phrases without per-phrase allocations or a handwritten exemplar. Review the complete printed task; numeric self-scoring is unavailable for this exercise."
-      },
-      {
-        "id": "phrase-2",
-        "kind": "point",
-        "verbatim": "Дополнительные услуги",
-        "marks": null
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 6,
+        "unprinted": true,
+        "contextNote": "The scheme gives 6 marks for both phrases without separate marks for each phrase. It repeats the printed targets but supplies no handwritten answer. Assess the complete handwritten response against the printed total."
       }
     ],
     "sourceMaterial": {
@@ -78033,7 +78028,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -78358,7 +78353,7 @@
         "kind": "point",
         "verbatim": "cлушаю",
         "marks": null,
-        "contextNote": "Complete both Group A and Group B. The scheme publishes 20 marks for the whole exercise without per-gap allocations. Review all ten answers here; numeric self-scoring is unavailable for this exercise."
+        "contextNote": "Complete both Group A and Group B. The scheme gives 20 marks for the whole exercise without separate marks for each gap. Assess the complete response against the ten printed answers and the whole-question total."
       },
       {
         "id": "gap-2",
@@ -78617,7 +78612,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000EV",
@@ -78640,7 +78635,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -78839,7 +78834,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000EV",
@@ -78862,7 +78857,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
