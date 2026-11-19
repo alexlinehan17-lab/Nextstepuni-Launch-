@@ -208,6 +208,154 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2021 Higher Level — © State Examinations Commission.",
+    id: "pl-2021-hl-i-4", topicId: "polish-3-0", conceptId: "korzysci-wedlug-badaczy-plyna-samotnego-zycia",
+    section: "I", questionRef: "2021 HL Section I Q4",
+    questionText: "Jakie korzyści, według badaczy, płyną z samotnego życia? Czy niektóre z nich zaskakują cię? Wyjaśnij dlaczego tak lub nie. (p.9, 11)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Korzyści:”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme notes: “Po 1 punkcie za podanie korzyści (3 pkt max), 2 punkty za wytłumaczenie”.", group: {"claimMax":3,"perOption":1,"options":["poprawa stanu koncentracji umysłu i funkcji poznawczych","samotność sprzyja samorozwojowi, budowaniu własnej tożsamości i wzmacnia procesy twórcze","pozwala uzyskać wgląd w samego siebie","pomaga przejść przez życie pełne różnych presji społecznych i politycznych","pozwala zdystansować się do samego siebie"]} },
+    { id: "r-2", kind: "point", verbatim: "Tak, zaskakuje mnie to, że – paradoksalnie ‐ osoby, które doświadczają samotności potrafią budować lepsze i trwalsze relacje od tych, którzy nigdy nie doznali samotności.", marks: 2, contextNote: "For “Wytłumaczenie:”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Polish 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2021 Higher Level — © State Examinations Commission.",
+    id: "pl-2021-hl-i-5", topicId: "polish-3-0", conceptId: "temat-samotnego-zycia-mysla-osoby-inteligentne",
+    section: "I", questionRef: "2021 HL Section I Q5",
+    questionText: "Co na temat samotnego życia myślą osoby inteligentne? Wyjaśnij na podstawie artykułu ich punkt widzenia. Czy zgadzasz się z nim? (p. 10)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Opinie ludzi inteligentnych:”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme notes: “Po 1 punkcie za podanie opinii z tekstu (3 punkty max), 2 punkty za podanie swojej opinii”.", group: {"claimMax":3,"perOption":1,"options":["wolą samotność niż towarzystwo innych","dostrzegli, że ewolucyjny lęk przed samotnością nie ma dziś żadnego uzasadnienia","czas spędzany z przyjaciółmi traktują jako stracony, bo krępuje ich ambitne cele życiowe","uważają, że szanse spotkania osób równie inteligentnych są małe","męczy ich obecnośc osób mało bystrych"]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, group: {"claimMax":1,"perOption":2,"options":["Tak, zgadzam się z punktem widzenia osób inteligentnych ‐ uważam, że ludzie, którzy mają wiele do powiedzenia powinni się skoncentrować na swojej pracy, nie powinni tracić czasu na spotkania towarzyskie. Cały świat skorzysta z efektów ich pracy, z ich pomysłów…itd.","Nie, nie zgadzam się z ich punktem widzenia – ci ludzie są samolubni, wywyższają się nad innych. Uważam, że czas spędzony z przyjaciółmi może być bardzo korzystny dla człowieka, dla jego dobrego samopoczucia…itd."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Polish 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2021 Higher Level — © State Examinations Commission.",
+    id: "pl-2021-hl-i-6", topicId: "polish-3-0", conceptId: "czy-autor-artykulu-zacheca-swoich-czytelnikow",
+    section: "I", questionRef: "2021 HL Section I Q6",
+    questionText: "Czy autor artykułu zachęca swoich czytelników do samotnego życia? Uzasadnij swoją opinię w kilku zdaniach.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tytuł „ Pochwała samotności” sugeruje zachętę, jednak po przeczytaniu artykułu rozumiemy, że autor nie zachęca do bycia samotnym ani nie gani samotności, nie zgadza się jedynie ze stereotypowym podejściem pop ‐psychologii do samotności;", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Autor pokazuje, posługując się faktami, że samotność może mieć różne oblicza – może wyniszczać, ale może też wznieść człowieka na wyżyny jego możliwości.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Polish 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2021 Higher Level — © State Examinations Commission.",
+    id: "pl-2021-hl-ii-1", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "II", questionRef: "2021 HL Section II Q1",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając minimum 300 słów. „Samotność sprawia, że albo się odnajdujemy, albo się zatracamy.” - Roberto Gervaso",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu minimum 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme marks the essay as a whole, out of 40: its criterion, then under “Refleksje typu:” examples of what an essay may reflect on, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "Samotność ma różny wpływ na ludzi. Niektórzy bardzo sobie cenią bycie samotnym /doskonale odnajdują się w tym stanie, bo:", marks: null },
+    { id: "r-3", kind: "point", verbatim: "potrafią lepiej pracować/ skupić się na pracy/ są bardziej efektywni (np. pisarze)", marks: null },
+    { id: "r-4", kind: "point", verbatim: "rozwijają swoje zainteresowania (np. sztuką)", marks: null },
+    { id: "r-5", kind: "point", verbatim: "podejmują nowe wyzwania życiowe (np. uczą się języków, trenują sport)", marks: null },
+    { id: "r-6", kind: "point", verbatim: "są bardziej kreatywni, odprężeni, bo nikt ich nie ogranicza", marks: null },
+    { id: "r-7", kind: "point", verbatim: "po prostu kwitną, itd.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Nie wszystkim jednak służy bycie samotnym, czasem prowadzi to do:", marks: null },
+    { id: "r-9", kind: "point", verbatim: "depresji,", marks: null },
+    { id: "r-10", kind: "point", verbatim: "melancholii,", marks: null },
+    { id: "r-11", kind: "point", verbatim: "odczuwania braku celu i sensu w życiu,", marks: null },
+    { id: "r-12", kind: "point", verbatim: "zmniejszenia poczucia własnej wartości, itd.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Polish 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2021 Higher Level — © State Examinations Commission.",
+    id: "pl-2021-hl-ii-2", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "II", questionRef: "2021 HL Section II Q2",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając minimum 300 słów. „Nie możemy tak po prostu wymyślać własnych faktów tylko dlatego, że nie podoba nam się to, co słyszymy.” - Greta Thunberg",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu minimum 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme marks the essay as a whole, out of 40: its criterion, then under “Refleksje typu:” examples of what an essay may reflect on, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "fake news", marks: null },
+    { id: "r-3", kind: "point", verbatim: "postprawda", marks: null },
+    { id: "r-4", kind: "point", verbatim: "populizm", marks: null },
+    { id: "r-5", kind: "point", verbatim: "dezinformacja", marks: null },
+    { id: "r-6", kind: "point", verbatim: "prawda w mediach i życiu publicznym zagrożone są przez cynizm, grę na emocjach i tanią sensację", marks: null },
+    { id: "r-7", kind: "point", verbatim: "zaprzeczanie i manipulacja faktami dla własnej korzyści lub celów politycznych", marks: null },
+    { id: "r-8", kind: "point", verbatim: "dyskryminacja i mowa nienawiści – np. w mediach społecznościowych – kierowana przeciwko osobom, z którymi się nie zgadzamy", marks: null },
+    { id: "r-9", kind: "point", verbatim: "unikanie odpowiedzialności wobec planety lub innych osób", marks: null },
+    { id: "r-10", kind: "point", verbatim: "niewygodna prawda dotycząca zagadnień środowiskowych i zmian klimatu", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Polish 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "higher",
     paperFileid: "LC548ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",

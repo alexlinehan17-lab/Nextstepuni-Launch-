@@ -1421,6 +1421,7 @@ const POLISH_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number 
   2024: { higher: 31, ordinary: 29 },
   2023: { higher: 36, ordinary: 35 },
   2022: { higher: 38, ordinary: 41 },
+  2021: { higher: 5, ordinary: 0 },
 };
 const POLISH_ADDED_TO_FROZEN_ID = /^pl-202[1-5]-(?:hl|ol)-(?:l[a-e]-|b-)/;
 const POLISH_ADDED_TO_FROZEN_READING = new Set<string>([
@@ -1432,6 +1433,7 @@ const POLISH_ADDED_TO_FROZEN_READING = new Set<string>([
   'pl-2022-hl-a-2-e-i', 'pl-2022-hl-a-2-e-ii',
   'pl-2022-ol-a-1-f', 'pl-2022-ol-a-2-b', 'pl-2022-ol-a-3-a', 'pl-2022-ol-a-3-d-i',
   'pl-2022-ol-a-3-d-ii',
+  'pl-2021-hl-i-4', 'pl-2021-hl-i-5', 'pl-2021-hl-i-6', 'pl-2021-hl-ii-1', 'pl-2021-hl-ii-2',
 ]);
 const isPolishAdded = (id: string) => /^pl-\d{4}-/.test(id) && (Number(id.slice(3, 7)) in POLISH_ADDED
   || (Number(id.slice(3, 7)) in POLISH_ADDED_TO_FROZEN
