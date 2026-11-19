@@ -1221,6 +1221,197 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC006ALP000EV",
+    schemeCitation: "Units and marks quoted from the SEC marking scheme, Latin 2023 Higher Level, p.4 — © State Examinations Commission.",
+    id: "lat-2023-hl-a-q2-i", topicId: "latin-3-2", conceptId: "lat-addidit-aderant-aeneas-aeternum",
+    section: "Q2", questionRef: "2023 HL Section A Q2(i)",
+    stem: "Translate into English one passage from Section A and one passage from Section B.",
+    questionText: "(Pallas the ally of Aeneas has died in battle. When the funeral procession of Pallas has passed by, Aeneas speaks to bid him farewell.) hastam alii galeamque ferunt; nam cetera Turnus victor habet. tum maesta phalanx Teucrique sequuntur Tyrrhenique omnes et versis Arcades armis. postquam omnis longe comitum processerat ordo, substitit Aeneas, gemituque haec addidit alto: ‘nos alias hinc ad lacrimas eadem horrida belli fata vocant: salve aeternum mihi, maxime Palla, aeternumque vale.’ nec plura effatus ad altos tendebat muros gressumque in castra ferebat. iamque oratores aderant ex urbe Latina.",
+    totalMarks: 65,
+    rubric: {
+          "system": "translation",
+          "schemeGuidance": [
+                "Each mark allocation represents a complete unit of meaning to be translated, most often it is a full sentence.",
+                "Full marks are awarded per unit of meaning based on demonstrating thorough understanding of syntax and vocabulary.",
+                "Partial marks are awarded based on demonstrating sufficient understanding of vocabulary and grammatical function of individual words and phrases within the wider unit of meaning."
+          ],
+          "sourceLanguage": "la",
+          "units": [
+                {
+                      "id": "u1",
+                      "text": "hastam alii galeamque ferunt;",
+                      "marks": 4
+                },
+                {
+                      "id": "u2",
+                      "text": "nam cetera Turnus victor habet.",
+                      "marks": 4
+                },
+                {
+                      "id": "u3",
+                      "text": "tum maesta phalanx Teucrique sequuntur",
+                      "marks": 6
+                },
+                {
+                      "id": "u4",
+                      "text": "Tyrrhenique omnes et versis Arcades armis.",
+                      "marks": 6
+                },
+                {
+                      "id": "u5",
+                      "text": "postquam omnis longe comitum processerat ordo,",
+                      "marks": 7
+                },
+                {
+                      "id": "u6",
+                      "text": "substitit Aeneas, gemituque haec addidit alto:",
+                      "marks": 6
+                },
+                {
+                      "id": "u7",
+                      "text": "‘nos alias hinc ad lacrimas eadem horrida belli fata vocant:",
+                      "marks": 9
+                },
+                {
+                      "id": "u8",
+                      "text": "salve aeternum mihi, maxime Palla, aeternumque vale.’",
+                      "marks": 7
+                },
+                {
+                      "id": "u9",
+                      "text": "nec plura effatus ad altos tendebat muros",
+                      "marks": 6
+                },
+                {
+                      "id": "u10",
+                      "text": "gressumque in castra ferebat.",
+                      "marks": 4
+                },
+                {
+                      "id": "u11",
+                      "text": "iamque oratores aderant ex urbe Latina.",
+                      "marks": 6
+                }
+          ],
+          "schemePages": [
+                4
+          ],
+          "markingGuideNote": "The units, their marks and the rule above are the SEC marking scheme's own. It prints no translation of any unit, and it does not say how many marks a partly right unit earns: that number is your judgement.",
+          "schemeFileid": "LC006ALP000EV"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2 SECTION A (i) — THE PASSAGE",
+          "title": "The Latin passage, its summary and the printed vocabulary",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Latin 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The passage exactly as the examination printed it, with the words the SEC underlined and glossed.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.04,
+                            0.0975531716244804,
+                            0.96,
+                            0.5168880362975059
+                      ]
+                }
+          ]
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC006ALP000EV",
+    schemeCitation: "Units and marks quoted from the SEC marking scheme, Latin 2023 Higher Level, p.4 — © State Examinations Commission.",
+    id: "lat-2023-hl-a-q2-ii", topicId: "latin-3-2", conceptId: "lat-altior-apertos-aquarum-arbusta",
+    section: "Q2", questionRef: "2023 HL Section A Q2(ii)",
+    stem: "Translate into English one passage from Section A and one passage from Section B.",
+    questionText: "(Neptune releases a flood upon the earth; the entire world is under water.) ipse tridente suo terram percussit, et illa intremuit motuque vias patefecit aquarum. exspatiata ruunt per apertos flumina campos cumque satis arbusta simul pecudesque virosque tectaque cumque suis rapiunt penetralia sacris. si qua domus mansit potuitque resistere tanto indeiecta malo, culmen tamen altior huius unda tegit, pressaeque latent sub gurgite turres.",
+    totalMarks: 65,
+    rubric: {
+          "system": "translation",
+          "schemeGuidance": [
+                "Each mark allocation represents a complete unit of meaning to be translated, most often it is a full sentence.",
+                "Full marks are awarded per unit of meaning based on demonstrating thorough understanding of syntax and vocabulary.",
+                "Partial marks are awarded based on demonstrating sufficient understanding of vocabulary and grammatical function of individual words and phrases within the wider unit of meaning."
+          ],
+          "sourceLanguage": "la",
+          "units": [
+                {
+                      "id": "u1",
+                      "text": "ipse tridente suo terram percussit,",
+                      "marks": 7
+                },
+                {
+                      "id": "u2",
+                      "text": "at illa intremuit motuque vias patefecit aquarum.",
+                      "marks": 9
+                },
+                {
+                      "id": "u3",
+                      "text": "exspatiata ruunt per apertos flumina campos",
+                      "marks": 8
+                },
+                {
+                      "id": "u4",
+                      "text": "cumque satis arbusta simul pecudesque virosque",
+                      "marks": 8
+                },
+                {
+                      "id": "u5",
+                      "text": "tectaque cumque suis rapiunt penetralia sacris.",
+                      "marks": 9
+                },
+                {
+                      "id": "u6",
+                      "text": "si qua domus mansit potuitque resistere tanto indeiecta malo,",
+                      "marks": 10
+                },
+                {
+                      "id": "u7",
+                      "text": "culmen tamen altior huius unda tegit,",
+                      "marks": 7
+                },
+                {
+                      "id": "u8",
+                      "text": "pressaeque latent sub gurgite turres.",
+                      "marks": 7
+                }
+          ],
+          "schemePages": [
+                4
+          ],
+          "markingGuideNote": "The units, their marks and the rule above are the SEC marking scheme's own. It prints no translation of any unit, and it does not say how many marks a partly right unit earns: that number is your judgement.",
+          "schemeFileid": "LC006ALP000EV"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2 SECTION A (ii) — THE PASSAGE",
+          "title": "The Latin passage, its summary and the printed vocabulary",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Latin 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The passage exactly as the examination printed it, with the words the SEC underlined and glossed.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.04,
+                            0.5579569039605292,
+                            0.96,
+                            0.9231920400877747
+                      ]
+                }
+          ]
+    },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC006ALP000EV",
@@ -1605,6 +1796,217 @@ export const CARDS: SecCard[] = [
           ],
           "attribution": "SEC Latin 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the passage exactly as the examination printed it, with the vocabulary the SEC glossed it with, then answer in English."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC006ALP000EV",
+    schemeCitation: "Units and marks quoted from the SEC marking scheme, Latin 2023 Higher Level, p.4 — © State Examinations Commission.",
+    id: "lat-2023-hl-b-q2-i", topicId: "latin-3-2", conceptId: "lat-accesserat-addresses-aedem-after",
+    section: "Q2", questionRef: "2023 HL Section B Q2(i)",
+    stem: "Translate into English one passage from Section A and one passage from Section B.",
+    questionText: "(After learning first hand of Catiline’s plans to overthrow the government, Cicero decides to assemble the senators for an emergency meeting. He addresses the audience, which to his surprise includes Catiline, and reveals to everyone what Catiline has been plotting.) Senatum in aedem Iovis convocavi, quod domi meae paene interfectus eram, et rem omnem senatoribus narravi. Tum huc Catilina venit. Quis senator eum appellavit? Quis salutavit? Quis eum non ut ferocissimum hostem aspexit? Principes etiam senatus partem illam subselliorum, ad quam ille accesserat, inanem reliquerunt. Quaesivi a Catilina utrum in nocturno conventu apud M. Laecam fuisset necne. Cum ille, homo audacissimus, primo silens mansisset, ego cetera docui. Dixi enim quid ea nocte egisset, quid in proximam noctem constituisset, quomodo ratio totius belli ab eo parata esset. Quaesivi quid dubitaret proficisci eo et quo iam fugere pararet.",
+    totalMarks: 65,
+    rubric: {
+          "system": "translation",
+          "schemeGuidance": [
+                "Each mark allocation represents a complete unit of meaning to be translated, most often it is a full sentence.",
+                "Full marks are awarded per unit of meaning based on demonstrating thorough understanding of syntax and vocabulary.",
+                "Partial marks are awarded based on demonstrating sufficient understanding of vocabulary and grammatical function of individual words and phrases within the wider unit of meaning."
+          ],
+          "sourceLanguage": "la",
+          "units": [
+                {
+                      "id": "u1",
+                      "text": "Senatum in aedem Iovis convocavi,",
+                      "marks": 4
+                },
+                {
+                      "id": "u2",
+                      "text": "quod domi meae paene interfectus eram,",
+                      "marks": 4
+                },
+                {
+                      "id": "u3",
+                      "text": "et rem omnem senatoribus narravi.",
+                      "marks": 4
+                },
+                {
+                      "id": "u4",
+                      "text": "Tum huc Catilina venit.",
+                      "marks": 2
+                },
+                {
+                      "id": "u5",
+                      "text": "Quis senator eum appelavit?",
+                      "marks": 3
+                },
+                {
+                      "id": "u6",
+                      "text": "Quis salutavit? Quis eum non ut ferocissimum hostem aspexit?",
+                      "marks": 6
+                },
+                {
+                      "id": "u7",
+                      "text": "Principes etiam senatus partem illam subselliorum, ad quam ille accesserat, inanem reliquerunt.",
+                      "marks": 10
+                },
+                {
+                      "id": "u8",
+                      "text": "Quaesivi a Catilina utrum in nocturno conventu apud M. Laecam fuisset necne.",
+                      "marks": 8
+                },
+                {
+                      "id": "u9",
+                      "text": "Cum ille, homo audacissimus, primo silens mansisset, ego cetera docui.",
+                      "marks": 6
+                },
+                {
+                      "id": "u10",
+                      "text": "Dixi enim quid ea nocte egisset,",
+                      "marks": 4
+                },
+                {
+                      "id": "u11",
+                      "text": "quid in proximam noctem constituisset,",
+                      "marks": 4
+                },
+                {
+                      "id": "u12",
+                      "text": "quomodo ratio totius belli ab eo parata esset.",
+                      "marks": 4
+                },
+                {
+                      "id": "u13",
+                      "text": "Quaesivi quid dubitaret proficisci eo et quo iam fugere pararet.",
+                      "marks": 6
+                }
+          ],
+          "schemePages": [
+                4
+          ],
+          "markingGuideNote": "The units, their marks and the rule above are the SEC marking scheme's own. It prints no translation of any unit, and it does not say how many marks a partly right unit earns: that number is your judgement.",
+          "schemeFileid": "LC006ALP000EV"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2 SECTION B (i) — THE PASSAGE",
+          "title": "The Latin passage, its summary and the printed vocabulary",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Latin 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The passage exactly as the examination printed it, with the words the SEC underlined and glossed.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.04,
+                            0.0630638140680671,
+                            0.96,
+                            0.49023705706743614
+                      ]
+                }
+          ]
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC006ALP000EV",
+    schemeCitation: "Units and marks quoted from the SEC marking scheme, Latin 2023 Higher Level, p.5 — © State Examinations Commission.",
+    id: "lat-2023-hl-b-q2-ii", topicId: "latin-3-2", conceptId: "lat-abesse-absens-accedit-adduci",
+    section: "Q2", questionRef: "2023 HL Section B Q2(ii)",
+    stem: "Translate into English one passage from Section A and one passage from Section B.",
+    questionText: "(Sallust tells how Bocchus betrays Jugurtha to Marius and Sulla. When news of their victory travels back to Rome, Marius is elected consul.) Deinde ubi dies advenit et Boccho nuntiatum est Jugurtham haud procul abesse, cum paucis amicis et quaestore nostro procedit in tumulum facillimum visu omnibus. Eodem Jugurtha cum plerisque aliis inermis, ut imperatum erat, accedit ac statim signo dato undique ab insidiis invaditur. Ceteri occisi, Jugurtha Sullae vinctus traditur et ab eo ad Marium deductus est. Per idem tempus adversus Gallos ab ducibus nostris male pugnatum est. Quo metu Italia omnis contremuit. Postquam bellum in Numidia confectum est et Jugurtham vinctum adduci Romam nuntiatum est, Marius consul absens factus est et ei decreta est provincia Gallia. Eo tempore spes civitatis in illo sita est.",
+    totalMarks: 65,
+    rubric: {
+          "system": "translation",
+          "schemeGuidance": [
+                "Each mark allocation represents a complete unit of meaning to be translated, most often it is a full sentence.",
+                "Full marks are awarded per unit of meaning based on demonstrating thorough understanding of syntax and vocabulary.",
+                "Partial marks are awarded based on demonstrating sufficient understanding of vocabulary and grammatical function of individual words and phrases within the wider unit of meaning."
+          ],
+          "sourceLanguage": "la",
+          "units": [
+                {
+                      "id": "u1",
+                      "text": "Deinde ubi dies advenit et Boccho nuntiatum est Jugurtham haud procul abesse,",
+                      "marks": 8
+                },
+                {
+                      "id": "u2",
+                      "text": "cum paucis amicis et quaestore nostro procedit in tumulum facillimum visu omnibus.",
+                      "marks": 8
+                },
+                {
+                      "id": "u3",
+                      "text": "Eodem Jugurtha cum plerisque aliis inermis, ut imperatum erat,",
+                      "marks": 6
+                },
+                {
+                      "id": "u4",
+                      "text": "accedit ac statim signo dato undique ab insidiis invaditur.",
+                      "marks": 4
+                },
+                {
+                      "id": "u5",
+                      "text": "Ceteri occisi, Jugurtha Sullae vinctus traditur et ab eo ad Marium deductus est.",
+                      "marks": 7
+                },
+                {
+                      "id": "u6",
+                      "text": "Per idem tempus adversus Gallos ab ducibus nostris male pugnatum est.",
+                      "marks": 7
+                },
+                {
+                      "id": "u7",
+                      "text": "Quo metu Italia omnis contremuit.",
+                      "marks": 3
+                },
+                {
+                      "id": "u8",
+                      "text": "Postquam bellum in Numidia confectum est et Jugurtham Romam vinctum adduci nuntiatum est,",
+                      "marks": 10
+                },
+                {
+                      "id": "u9",
+                      "text": "Marius consul absens factus est et ei decreta est provincia Gallia.",
+                      "marks": 7
+                },
+                {
+                      "id": "u10",
+                      "text": "Eo tempore spes civitatis in illo sita est.",
+                      "marks": 5
+                }
+          ],
+          "schemePages": [
+                5
+          ],
+          "markingGuideNote": "The units, their marks and the rule above are the SEC marking scheme's own. It prints no translation of any unit, and it does not say how many marks a partly right unit earns: that number is your judgement.",
+          "schemeFileid": "LC006ALP000EV"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2 SECTION B (ii) — THE PASSAGE",
+          "title": "The Latin passage, its summary and the printed vocabulary",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Latin 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The passage exactly as the examination printed it, with the words the SEC underlined and glossed.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.04,
+                            0.5313772169824451,
+                            0.96,
+                            0.9231920400877747
+                      ]
+                }
+          ]
     },
   } as SecCard,
   {

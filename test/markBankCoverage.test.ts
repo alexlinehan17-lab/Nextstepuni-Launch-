@@ -260,6 +260,11 @@ describe('Mark Bank paper-coverage ratchet', () => {
           // the same grammar and says so: "… — Deferred sitting".
           return !/^\d{4} (?:HL|OL) (?:Paper [12] |(?=Cluastuiscint ))(?:(?:Cluastuiscint )?Cuid [ABC] · (?:Fógra|Comhrá|Píosa) a (?:hAon|Dó|Trí)(?: · An (?:Chéad Mhír|Dara Mír))?(?: · Ceist [1-9](?:\([a-e]\))?)?|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6](?:\([ab]\)(?:\((?:i|ii)\))?)?(?: · (?:Pointe(?: eolais)?|Freagra|Léargas|Dúshlán|Sampla|Ceist|Cúis|Tréith|Aidhm|Ábhar imní|Fáth) [1-9])?|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\)|(?:Prós [12]|Próstéacs 2|Filíocht 3)[A-D](?:\([a-c]\))? · .+|Stair na Gaeilge 4|Litríocht 4[A-F](?: ·|\.) .+|(?:Prós|Filíocht) (?:Ainmnithe|Roghnach) \([ab]\)(?:\((?:i|ii)\))? · .+)(?: — Deferred sitting)?$/.test(ref);
         }
+        if (subject === 'music') {
+          // Three booklets, each its own address: "Listening Q5 A(d)", "Listening Q5 B(i)", "Listening Q2(e)(ii)",
+          // "Composing Section A Q1", and the elective's one card over its five asks, "Elective Q1–Q4(b)".
+          return !/^\d{4} (?:HL|OL) (?:Listening Q[1-7](?: [AB])?(?:\([a-h]\))?(?:\((?:i|ii|iii|iv|v)\))?|Composing Section [AB] Q[1-6]|Elective Q[1-4](?:\([ab]\))?(?:–Q[1-4](?:\([ab]\))?)?)$/.test(ref);
+        }
         if (subject === 'geography') {
           // Reviewed sittings cite the printed part: "Q2(ii)(a)", "Q5A(iii)", "Q8A(vii)";
           // 2017 Ordinary prints four lettered statements under Q4(i), (a)-(d).
