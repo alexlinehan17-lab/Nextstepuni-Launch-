@@ -399,7 +399,9 @@ def grid_card(s, a, atlas, cid=None, ref=None, question=None):
                        'markingGuideNote': s.scheme(spec['markingGuideNote'])},
             'sourceMaterial': source_for(s, a, title)}
     if spec.get('stem'):
-        card['stem'] = s.paper(a['paper'], spec['stem'])
+        # A stem may carry several printed lines of the block (Q5's lead-in, then
+        # "B Answer one of the following:"): each line is checked on its own.
+        card['stem'] = '\n'.join(s.paper(a['paper'], x) for x in spec['stem'].split('\n'))
     if a.get('schemeCrop'):
         # The scheme's own print held back to the reveal: a composing question's
         # table of accepted chords, box by box, which a grid cannot carry.

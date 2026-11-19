@@ -1441,7 +1441,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2025 Higher Level, p.19 — © State Examinations Commission.",
     id: "mus-2025-hl-l-q5-b-i", topicId: "music-2-13", conceptId: "mus-discuss-fusion-irish-music",
     section: "L", questionRef: "2025 HL Listening Q5 B(i)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Discuss the use of fusion in Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -1539,7 +1539,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2025 Higher Level, p.19 — © State Examinations Commission.",
     id: "mus-2025-hl-l-q5-b-ii", topicId: "music-2-13", conceptId: "mus-century-describe-developments-have",
     section: "L", questionRef: "2025 HL Listening Q5 B(ii)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Describe three significant developments that have taken place in Irish traditional music in the 20th century.",
     totalMarks: 10,
     rubric: {
@@ -1637,7 +1637,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2025 Higher Level, p.19 — © State Examinations Commission.",
     id: "mus-2025-hl-l-q5-b-iii", topicId: "music-2-13", conceptId: "mus-account-irish-music-sean-n",
     section: "L", questionRef: "2025 HL Listening Q5 B(iii)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Write an account of sean-nós singing in Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -1735,7 +1735,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2025 Higher Level, p.19 — © State Examinations Commission.",
     id: "mus-2025-hl-l-q5-b-iv", topicId: "music-2-13", conceptId: "mus-account-dance-irish-music",
     section: "L", questionRef: "2025 HL Listening Q5 B(iv)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Write an account of the dance music tradition in Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -1833,7 +1833,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2025 Higher Level, p.19 — © State Examinations Commission.",
     id: "mus-2025-hl-l-q5-b-v", topicId: "music-2-13", conceptId: "mus-account-context-fiddle-give",
     section: "L", questionRef: "2025 HL Listening Q5 B(v)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Give an account of the harp or fiddle in the context of Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -4932,7 +4932,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2026 Higher Level, p.30 — © State Examinations Commission.",
     id: "mus-2026-hl-l-q5-b-i", topicId: "music-2-13", conceptId: "mus-band-discuss-irish-music",
     section: "L", questionRef: "2026 HL Listening Q5 B(i)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Discuss the céilí band tradition in Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -5032,7 +5032,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2026 Higher Level, p.30 — © State Examinations Commission.",
     id: "mus-2026-hl-l-q5-b-ii", topicId: "music-2-13", conceptId: "mus-another-composers-discuss-fuse",
     section: "L", questionRef: "2026 HL Listening Q5 B(ii)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Discuss the music of well-known composers that fuse Irish traditional music with another style or styles of music.",
     totalMarks: 10,
     rubric: {
@@ -5132,7 +5132,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2026 Higher Level, p.30 — © State Examinations Commission.",
     id: "mus-2026-hl-l-q5-b-iii", topicId: "music-2-13", conceptId: "mus-account-collectors-great-irish",
     section: "L", questionRef: "2026 HL Listening Q5 B(iii)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Write an account of the work of one of the great collectors of Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -5232,7 +5232,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2026 Higher Level, p.30 — © State Examinations Commission.",
     id: "mus-2026-hl-l-q5-b-iv", topicId: "music-2-13", conceptId: "mus-discuss-irish-music-ornamentation",
     section: "L", questionRef: "2026 HL Listening Q5 B(iv)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Discuss the use of ornamentation in Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -5332,7 +5332,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2026 Higher Level, p.30 — © State Examinations Commission.",
     id: "mus-2026-hl-l-q5-b-v", topicId: "music-2-13", conceptId: "mus-contribution-countries-discuss-folk",
     section: "L", questionRef: "2026 HL Listening Q5 B(v)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Discuss the contribution of Irish traditional music to the folk music in other countries.",
     totalMarks: 10,
     rubric: {
@@ -7972,7 +7972,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2024 Higher Level, p.20 — © State Examinations Commission.",
     id: "mus-2024-hl-l-q5-b-i", topicId: "music-2-13", conceptId: "mus-account-irish-music-regional",
     section: "L", questionRef: "2024 HL Listening Q5 B(i)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Write an account of regional styles in Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -8058,7 +8058,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2024 Higher Level, p.20 — © State Examinations Commission.",
     id: "mus-2024-hl-l-q5-b-ii", topicId: "music-2-13", conceptId: "mus-another-composer-discuss-fuses",
     section: "L", questionRef: "2024 HL Listening Q5 B(ii)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Discuss the music of a well-known group/performer/composer that fuses Irish traditional music with another style of music.",
     totalMarks: 10,
     rubric: {
@@ -8144,7 +8144,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2024 Higher Level, p.20 — © State Examinations Commission.",
     id: "mus-2024-hl-l-q5-b-iii", topicId: "music-2-13", conceptId: "mus-account-irish-music-song",
     section: "L", questionRef: "2024 HL Listening Q5 B(iii)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Write an account of the song tradition in Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -8230,7 +8230,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2024 Higher Level, p.20 — © State Examinations Commission.",
     id: "mus-2024-hl-l-q5-b-iv", topicId: "music-2-13", conceptId: "mus-account-dance-irish-music",
     section: "L", questionRef: "2024 HL Listening Q5 B(iv)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Write an account of the dance music tradition in Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -8316,7 +8316,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2024 Higher Level, p.20 — © State Examinations Commission.",
     id: "mus-2024-hl-l-q5-b-v", topicId: "music-2-13", conceptId: "mus-band-discuss-irish-music",
     section: "L", questionRef: "2024 HL Listening Q5 B(v)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Discuss the céilí band tradition in Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -11101,7 +11101,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2023 Higher Level, p.17 — © State Examinations Commission.",
     id: "mus-2023-hl-l-q5-b-i", topicId: "music-2-13", conceptId: "mus-account-america-centuries-contribution",
     section: "L", questionRef: "2023 HL Listening Q5 B(i)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Give an account of the contribution made by Irish music to the music of North America in the 19th and 20th centuries.",
     totalMarks: 10,
     rubric: {
@@ -11187,7 +11187,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2023 Higher Level, p.17 — © State Examinations Commission.",
     id: "mus-2023-hl-l-q5-b-ii", topicId: "music-2-13", conceptId: "mus-account-answer-context-flute",
     section: "L", questionRef: "2023 HL Listening Q5 B(ii)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Give an account of the flute or tin whistle in the context of Irish traditional music. Refer to playing styles and well-known performers in your answer.",
     totalMarks: 10,
     rubric: {
@@ -11273,7 +11273,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2023 Higher Level, p.17 — © State Examinations Commission.",
     id: "mus-2023-hl-l-q5-b-iii", topicId: "music-2-13", conceptId: "mus-account-collectors-contribution-great",
     section: "L", questionRef: "2023 HL Listening Q5 B(iii)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Write an account of the work of one of the great collectors and their contribution to the preservation of Irish music.",
     totalMarks: 10,
     rubric: {
@@ -11359,7 +11359,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2023 Higher Level, p.17 — © State Examinations Commission.",
     id: "mus-2023-hl-l-q5-b-iv", topicId: "music-2-13", conceptId: "mus-another-composer-discuss-fuses",
     section: "L", questionRef: "2023 HL Listening Q5 B(iv)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Discuss the music of a well-known composer or performer that fuses traditional Irish music with another style.",
     totalMarks: 10,
     rubric: {
@@ -11445,7 +11445,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2023 Higher Level, p.17 — © State Examinations Commission.",
     id: "mus-2023-hl-l-q5-b-v", topicId: "music-2-13", conceptId: "mus-account-answer-irish-music",
     section: "L", questionRef: "2023 HL Listening Q5 B(v)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Write an account of the sean nós singing tradition in Irish traditional music. Refer to well-known performers in your answer.",
     totalMarks: 10,
     rubric: {
@@ -14493,7 +14493,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.17 — © State Examinations Commission.",
     id: "mus-2022-hl-l-q5-b-i", topicId: "music-2-13", conceptId: "mus-discuss-instrumental-irish-music",
     section: "L", questionRef: "2022 HL Listening Q5 B(i)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Discuss ornamentation in Irish traditional instrumental music.",
     totalMarks: 10,
     rubric: {
@@ -14579,7 +14579,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.17 — © State Examinations Commission.",
     id: "mus-2022-hl-l-q5-b-ii", topicId: "music-2-13", conceptId: "mus-account-century-developments-irish",
     section: "L", questionRef: "2022 HL Listening Q5 B(ii)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Write an account of the developments that took place in Irish traditional music in the 20th century.",
     totalMarks: 10,
     rubric: {
@@ -14665,7 +14665,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.17 — © State Examinations Commission.",
     id: "mus-2022-hl-l-q5-b-iii", topicId: "music-2-13", conceptId: "mus-account-irish-music-song",
     section: "L", questionRef: "2022 HL Listening Q5 B(iii)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Write an account of the song tradition in Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -14751,7 +14751,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.17 — © State Examinations Commission.",
     id: "mus-2022-hl-l-q5-b-iv", topicId: "music-2-13", conceptId: "mus-account-dance-irish-music",
     section: "L", questionRef: "2022 HL Listening Q5 B(iv)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Write an account of the dance music tradition in Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -14837,7 +14837,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2022 Higher Level, p.17 — © State Examinations Commission.",
     id: "mus-2022-hl-l-q5-b-v", topicId: "music-2-13", conceptId: "mus-discuss-harping-irish-music",
     section: "L", questionRef: "2022 HL Listening Q5 B(v)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Discuss the uilleann piping or harping tradition in Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -16964,7 +16964,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q4-a", topicId: "music-2-12", conceptId: "mus-describe-feature-introduction",
     section: "L", questionRef: "2021 HL Listening Q4(a)",
-    stem: "An excerpt from She’s Leaving Home by the Beatles. The lyrics are printed below. Line 1 Wedn’sday morning at five o’ clock as the day begins, Line 2 Silently closing her bedroom door, Line 3 Leaving the note that she hoped would say more. Line 4 She goes downstairs to the kitchen clutching her handkerchief. Line 5 Quietly turning the backdoor key, Line 6 Stepping outside she is free.\n• Answer the following questions:",
+    stem: "An excerpt from She’s Leaving Home by the Beatles.\n• The lyrics are printed below. Line 1 Wedn’sday morning at five o’ clock as the day begins, Line 2 Silently closing her bedroom door, Line 3 Leaving the note that she hoped would say more. Line 4 She goes downstairs to the kitchen clutching her handkerchief. Line 5 Quietly turning the backdoor key, Line 6 Stepping outside she is free.\n• Answer the following questions:",
     questionText: "Describe one feature of the introduction.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -17010,7 +17010,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q4-b", topicId: "music-2-12", conceptId: "mus-describe-excerpt-feature-music",
     section: "L", questionRef: "2021 HL Listening Q4(b)",
-    stem: "An excerpt from She’s Leaving Home by the Beatles. The lyrics are printed below. Line 1 Wedn’sday morning at five o’ clock as the day begins, Line 2 Silently closing her bedroom door, Line 3 Leaving the note that she hoped would say more. Line 4 She goes downstairs to the kitchen clutching her handkerchief. Line 5 Quietly turning the backdoor key, Line 6 Stepping outside she is free.\n• Answer the following questions:",
+    stem: "An excerpt from She’s Leaving Home by the Beatles.\n• The lyrics are printed below. Line 1 Wedn’sday morning at five o’ clock as the day begins, Line 2 Silently closing her bedroom door, Line 3 Leaving the note that she hoped would say more. Line 4 She goes downstairs to the kitchen clutching her handkerchief. Line 5 Quietly turning the backdoor key, Line 6 Stepping outside she is free.\n• Answer the following questions:",
     questionText: "Describe one feature of the vocal music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -17056,7 +17056,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q4-c", topicId: "music-2-12", conceptId: "mus-line-played-rhythm-strings",
     section: "L", questionRef: "2021 HL Listening Q4(c)",
-    stem: "An excerpt from She’s Leaving Home by the Beatles. The lyrics are printed below. Line 1 Wedn’sday morning at five o’ clock as the day begins, Line 2 Silently closing her bedroom door, Line 3 Leaving the note that she hoped would say more. Line 4 She goes downstairs to the kitchen clutching her handkerchief. Line 5 Quietly turning the backdoor key, Line 6 Stepping outside she is free.\n• Answer the following questions:",
+    stem: "An excerpt from She’s Leaving Home by the Beatles.\n• The lyrics are printed below. Line 1 Wedn’sday morning at five o’ clock as the day begins, Line 2 Silently closing her bedroom door, Line 3 Leaving the note that she hoped would say more. Line 4 She goes downstairs to the kitchen clutching her handkerchief. Line 5 Quietly turning the backdoor key, Line 6 Stepping outside she is free.\n• Answer the following questions:",
     questionText: "The rhythm played by the strings at the end of line 2 and line 3 is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -17120,7 +17120,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q4-d", topicId: "music-2-12", conceptId: "mus-accompaniment-feature-line",
     section: "L", questionRef: "2021 HL Listening Q4(d)",
-    stem: "An excerpt from She’s Leaving Home by the Beatles. The lyrics are printed below. Line 1 Wedn’sday morning at five o’ clock as the day begins, Line 2 Silently closing her bedroom door, Line 3 Leaving the note that she hoped would say more. Line 4 She goes downstairs to the kitchen clutching her handkerchief. Line 5 Quietly turning the backdoor key, Line 6 Stepping outside she is free.\n• Answer the following questions:",
+    stem: "An excerpt from She’s Leaving Home by the Beatles.\n• The lyrics are printed below. Line 1 Wedn’sday morning at five o’ clock as the day begins, Line 2 Silently closing her bedroom door, Line 3 Leaving the note that she hoped would say more. Line 4 She goes downstairs to the kitchen clutching her handkerchief. Line 5 Quietly turning the backdoor key, Line 6 Stepping outside she is free.\n• Answer the following questions:",
     questionText: "A feature of the accompaniment at the end of line 4 is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -17176,7 +17176,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q4-e", topicId: "music-2-12", conceptId: "mus-contains-describe-example-examples",
     section: "L", questionRef: "2021 HL Listening Q4(e)",
-    stem: "An excerpt from She’s Leaving Home by the Beatles. The lyrics are printed below. Line 1 Wedn’sday morning at five o’ clock as the day begins, Line 2 Silently closing her bedroom door, Line 3 Leaving the note that she hoped would say more. Line 4 She goes downstairs to the kitchen clutching her handkerchief. Line 5 Quietly turning the backdoor key, Line 6 Stepping outside she is free.\n• Answer the following questions:",
+    stem: "An excerpt from She’s Leaving Home by the Beatles.\n• The lyrics are printed below. Line 1 Wedn’sday morning at five o’ clock as the day begins, Line 2 Silently closing her bedroom door, Line 3 Leaving the note that she hoped would say more. Line 4 She goes downstairs to the kitchen clutching her handkerchief. Line 5 Quietly turning the backdoor key, Line 6 Stepping outside she is free.\n• Answer the following questions:",
     questionText: "This song contains examples of picture painting. Describe one example of picture painting in the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -17568,7 +17568,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2021 Higher Level, p.18 — © State Examinations Commission.",
     id: "mus-2021-hl-l-q5-b-i", topicId: "music-2-13", conceptId: "mus-another-band-composer-discuss",
     section: "L", questionRef: "2021 HL Listening Q5 B(i)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Discuss the music of a well-known group/band/composer that fuses Irish traditional music with another style of music.",
     totalMarks: 10,
     rubric: {
@@ -17654,7 +17654,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2021 Higher Level, p.18 — © State Examinations Commission.",
     id: "mus-2021-hl-l-q5-b-ii", topicId: "music-2-13", conceptId: "mus-collector-discuss-irish-music",
     section: "L", questionRef: "2021 HL Listening Q5 B(ii)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Discuss the role of the collector in Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -17740,7 +17740,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2021 Higher Level, p.18 — © State Examinations Commission.",
     id: "mus-2021-hl-l-q5-b-iii", topicId: "music-2-13", conceptId: "mus-account-give-irish-music",
     section: "L", questionRef: "2021 HL Listening Q5 B(iii)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Give an account of regional styles in Irish traditional music.",
     totalMarks: 10,
     rubric: {
@@ -17826,7 +17826,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2021 Higher Level, p.18 — © State Examinations Commission.",
     id: "mus-2021-hl-l-q5-b-iv", topicId: "music-2-13", conceptId: "mus-america-contribution-discuss-importance",
     section: "L", questionRef: "2021 HL Listening Q5 B(iv)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Discuss the importance of the contribution of Irish music to the music of North America.",
     totalMarks: 10,
     rubric: {
@@ -17912,7 +17912,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2021 Higher Level, p.18 — © State Examinations Commission.",
     id: "mus-2021-hl-l-q5-b-v", topicId: "music-2-13", conceptId: "mus-account-harping-irish-music",
     section: "L", questionRef: "2021 HL Listening Q5 B(v)",
-    stem: "Answer one of the following:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
     questionText: "Write an account of the harping tradition in Irish traditional music.",
     totalMarks: 10,
     rubric: {
