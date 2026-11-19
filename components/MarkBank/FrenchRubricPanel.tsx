@@ -140,6 +140,46 @@ const CriterionMarks: React.FC<{
   );
 };
 
+/** A line the scheme marks by counting items at a printed rate (Music
+ *  Composing Section B's bass notes and chords): the student sets how many
+ *  they got right and the line shows the marks that count earns. The stored
+ *  score is the mark (count x rate), one of the criterion's permittedMarks,
+ *  so it is scored like every other criterion. */
+const CountedMarks: React.FC<{
+  criterion: FrenchCriterion;
+  selected: number;
+  disabled: boolean;
+  onSelect: (mark: number) => void;
+}> = ({ criterion, selected, disabled, onSelect }) => {
+  const { rate, items } = criterion.counted!;
+  const count = Math.round(selected / rate);
+  const set = (next: number) => onSelect(Math.max(0, Math.min(items, next)) * rate);
+  return (
+    <div className="mb-french-count">
+      <div className="mb-french-count-readout" aria-live="polite">
+        <span>Items right</span>
+        <strong>{count} of {items}</strong>
+        <span>{count} x {rate} = {selected} {selected === 1 ? 'mark' : 'marks'}</span>
+      </div>
+      <div className="mb-french-count-controls">
+        <button type="button" disabled={disabled || count <= 0} aria-label="One fewer item right" onClick={() => set(count - 1)}>−</button>
+        <input
+          type="range"
+          min={0}
+          max={items}
+          step={1}
+          value={count}
+          disabled={disabled}
+          aria-label={`Number of items right, out of ${items}`}
+          onChange={event => set(Number(event.currentTarget.value))}
+        />
+        <button type="button" disabled={disabled || count >= items} aria-label="One more item right" onClick={() => set(count + 1)}>+</button>
+      </div>
+      <div className="mb-french-slider-ends"><span>0</span><span>{items}</span></div>
+    </div>
+  );
+};
+
 export default function FrenchRubricPanel({ card, scores, onScore }: {
   card: SecRubricCard & { rubric: FrenchRubric };
   scores: FrenchScores;
@@ -207,8 +247,10 @@ export default function FrenchRubricPanel({ card, scores, onScore }: {
           <ul>{band.guidance.map((text, index) => <li key={index}>{text}</li>)}</ul>
         </div>)}
         <div className="mb-french-score">
-          <span>{criterion.label} mark</span>
-          <CriterionMarks criterion={scale} selected={selected} disabled={disabled} onSelect={mark => onScore(id, mark)} />
+          <span>{criterion.counted ? 'Count the items you got right' : `${criterion.label} mark`}</span>
+          {criterion.counted
+            ? <CountedMarks criterion={scale} selected={selected} disabled={disabled} onSelect={mark => onScore(id, mark)} />
+            : <CriterionMarks criterion={scale} selected={selected} disabled={disabled} onSelect={mark => onScore(id, mark)} />}
         </div>
       </section>;
     })}

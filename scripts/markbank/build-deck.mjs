@@ -791,6 +791,17 @@ function spanishGridFault(c, scheme, schemeCells = '') {
   if (criteria.reduce((sum, k) => sum + k.maxMarks, 0) !== c.totalMarks) return `the criteria do not add up to the paper's ${c.totalMarks}`;
   for (const k of criteria) {
     const allowed = k.permittedMarks ?? [];
+    // A line the scheme marks by counting items at a printed rate (Music
+    // Composing Section B: "0.5 mark per correct bass note ... (0.5 X 20)"):
+    // placed on every count from 0 to the printed number of items, each at the
+    // printed rate, with no bands of its own. Only Music prints one.
+    if (k.counted) {
+      if (SUBJECT_ID !== 'music') return `${k.label} is counted at a rate, which only Music prints`;
+      const { rate, items } = k.counted;
+      if (!(rate > 0) || !Number.isInteger(items) || items < 1 || rate * items !== k.maxMarks) return `${k.label}'s count does not make its ${k.maxMarks} marks`;
+      if (k.bands || allowed.length !== items + 1 || allowed.some((m, i) => m !== i * rate)) return `${k.label} is not placed on every count from 0 to ${items}`;
+      continue;
+    }
     if (allowed.length !== k.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
     if (k.bands) {
       const marks = k.bands.flatMap(b => b.marks).sort((a, b) => a - b);
@@ -842,7 +853,7 @@ function spanishGridFault(c, scheme, schemeCells = '') {
   const lifted = [
     ...r.taskRequirements,
     ...String(r.markingGuideNote ?? '').split('\n').filter(Boolean),
-    ...criteria.flatMap(k => [...k.guidance, ...(k.bands ? [k.label] : []),
+    ...criteria.flatMap(k => [...k.guidance, ...(k.bands || k.counted ? [k.label] : []),
       // German prints its expression categories unnamed ("CATEGORY
       // DESCRIPTION"): "Category 1" is the card's own label, never traced.
       ...(k.bands ?? []).flatMap(b => [...(SUBJECT_ID === 'german' ? [] : [b.label]), ...b.guidance]),
