@@ -399,25 +399,30 @@ def higher(year):
         [S.lines[i2], rule5], '\n'.join(join_lines(t2)), p2, 25, pages=cpages))
     # C3 (a) and (b)
     i3 = S.at(r'^3\.\s*Formal Writing', c0)
-    try:
-        fmt = S.span(r'^Date 1 mark', r'^Use the descriptors in Appendix 2', i3)
-        general = S.span(r'Correct register', r'^. Format$|^● Format$|^• Format$', i3)
-    except AssertionError:
-        # 2023-2024 print no breakdown of the format marks: the criterion's
-        # guidance is its own printed line.
-        fmt = [S.lines[S.at(r'^Format 10 marks', i3)]]
-        general = S.span(r'Correct register', r'^Format 10 marks', i3)
-    t3, p3 = paper_task(year, 'hl', 3)
-    for letter, nxt in (('a', r'^\(?b[.)]\s*The following'), ('b', r'^Points for the composition|^APPENDIX 1')):
-        pts = S.span(rf'^\(?{letter}[.)]\s*The following points', nxt, i3)
-        task = (split_choice(t3) or {}).get(letter)
-        assert task, f'{year} HL C3: the task does not print "(a)" and "(b)" on lines of their own'
-        out.append(rubric_card(year, 'hl', 3, letter, [letter], [
-            criterion('format', 'Format', 10, fmt),
-            criterion('content', 'Content and communication', 25, general + pts, c_letter),
-            criterion('language', 'Language', 15, ['Use the descriptors in Appendix 2'], lang15,
-                      lower_scale(7, rule7, 12))],
-            [S.lines[i3], rule7], '\n'.join(join_lines(task)), p3, 50, pages=cpages))
+    i3_end = S.at(r'^APPENDIX 1', i3)
+    if not any(re.match(r'^(?:Format 10 marks|Date 1 mark)', l) for l in S.lines[i3:i3_end]):
+        # 2017 prints no format line at all (see c3_unpriced).
+        out += c3_unpriced(S, year, i3, i3_end, rule7, cpages)
+    else:
+        try:
+            fmt = S.span(r'^Date 1 mark', r'^Use the descriptors in Appendix 2', i3)
+            general = S.span(r'Correct register', r'^. Format$|^● Format$|^• Format$', i3)
+        except AssertionError:
+            # 2023-2024 print no breakdown of the format marks: the criterion's
+            # guidance is its own printed line.
+            fmt = [S.lines[S.at(r'^Format 10 marks', i3)]]
+            general = S.span(r'Correct register', r'^Format 10 marks', i3)
+        t3, p3 = paper_task(year, 'hl', 3)
+        for letter, nxt in (('a', r'^\(?b[.)]\s*The following'), ('b', r'^Points for the composition|^APPENDIX 1')):
+            pts = S.span(rf'^\(?{letter}[.)]\s*The following points', nxt, i3)
+            task = (split_choice(t3) or {}).get(letter)
+            assert task, f'{year} HL C3: the task does not print "(a)" and "(b)" on lines of their own'
+            out.append(rubric_card(year, 'hl', 3, letter, [letter], [
+                criterion('format', 'Format', 10, fmt),
+                criterion('content', 'Content and communication', 25, general + pts, c_letter),
+                criterion('language', 'Language', 15, ['Use the descriptors in Appendix 2'], lang15,
+                          lower_scale(7, rule7, 12))],
+                [S.lines[i3], rule7], '\n'.join(join_lines(task)), p3, 50, pages=cpages))
     # B3 essays
     a1 = S.at(r'^APPENDIX 1')
     a1_end = S.at(r'^APP?ENDIX 2', a1)
@@ -436,6 +441,51 @@ def higher(year):
         card['id'] = f'it-{year}-hl-b3{route.lower()}-{item}'
         card['section'] = 'B'
         out.append(card)
+    return out
+
+
+def c3_unpriced(S, year, i3, i3_end, rule7, cpages):
+    """Higher C3 where the scheme prices less than the task's printed marks.
+
+    2017 heads the task "3. Formal Writing 50 marks" and prices only "Content
+    and communication 25 marks" and "Language 15 marks"; the format line every
+    neighbouring year prints ("Format 10 marks") is not there, and is never
+    borrowed from another year. Ruling (coordinator, 19 Nov): the printed 50,
+    self-assessed, with the scheme's printed lines as its criteria and both the
+    head and the priced lines quoted.
+    """
+    def lines(a, b):
+        return [re.sub(r'^[•●]\s*', '', l).strip() for l in S.span(a, b, i3)
+                if l.strip() and not re.match(r'^(?:\d+|## Page \d+)$', l.strip())]
+    head = S.lines[i3]
+    content = S.lines[S.at(r'^Content and communication 25 marks', i3)]
+    language = S.lines[S.at(r'^Language 15 marks', i3)]
+    general = lines(r'Correct register', r'^Content and communication 25 marks')
+    t3, p3 = paper_task(year, 'hl', 3)
+    out = []
+    for letter, nxt in (('a', r'^\(?b[.)]\s*The following'), ('b', r'^APPENDIX 1')):
+        # the points, without their "(a) The following points to be covered" head
+        pts = lines(rf'^\(?{letter}[.)]\s*The following points', nxt)[1:]
+        task = (split_choice(t3) or {}).get(letter)
+        assert task and pts, f'{year} HL C3({letter}): task or points not read'
+        texts = general + [content, language] + pts
+        S.check(head, rule7, *texts)
+        rows = [{'id': f'r-{k}', 'kind': 'criterion', 'verbatim': t, 'marks': None}
+                for k, t in enumerate(texts, start=1)]
+        rows[0]['contextNote'] = (
+            f'The scheme heads this task "{head}" and prices "{content}" and "{language}", '
+            '40 of the 50 marks; it prints no line for the other 10, so judge your letter '
+            f'against the total. It also prints: "{rule7}"')
+        text = '\n'.join(join_lines(task))
+        out.append({
+            'id': f'it-{year}-hl-c-3-{letter}', 'subjectId': 'italian', 'level': 'higher',
+            'year': year, 'section': 'C', 'topicId': TOPIC[('hl', 3)],
+            'conceptId': re.sub(r'[^a-z0-9]+', '-', flat(text)[:60].lower()).strip('-')[:48],
+            'questionRef': f'{year} HL Section C Q3({letter})', 'questionText': text,
+            'tariffModel': {'kind': 'questionTotal'}, 'totalMarks': 50, 'rows': rows,
+            'notes': f'The scheme prices this task on pages {", ".join(map(str, cpages))}.',
+            'sourceMaterial': source(year, 'hl', p3),
+        })
     return out
 
 
