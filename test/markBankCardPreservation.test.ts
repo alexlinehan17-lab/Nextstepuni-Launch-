@@ -1417,11 +1417,12 @@ const POLISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 65, ordinary: 74 },
 };
 const POLISH_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
-  2025: { higher: 38, ordinary: 0 },
+  2025: { higher: 38, ordinary: 36 },
 };
 const POLISH_ADDED_TO_FROZEN_ID = /^pl-202[1-5]-(?:hl|ol)-(?:l[a-e]-|b-)/;
 const POLISH_ADDED_TO_FROZEN_READING = new Set<string>([
   'pl-2025-hl-a-2-a-ii', 'pl-2025-hl-a-2-h-i', 'pl-2025-hl-a-2-h-ii',
+  'pl-2025-ol-a-1-d', 'pl-2025-ol-a-2-b-i', 'pl-2025-ol-a-2-b-ii', 'pl-2025-ol-a-2-c-vi',
 ]);
 const isPolishAdded = (id: string) => /^pl-\d{4}-/.test(id) && (Number(id.slice(3, 7)) in POLISH_ADDED
   || (Number(id.slice(3, 7)) in POLISH_ADDED_TO_FROZEN

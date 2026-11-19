@@ -17890,12 +17890,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Prawda",
+    "verbatim": "Fałsz",
     "marks": 2,
     "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
    }
   ],
-  "notes": "The scheme prints the tariff as '2 marks'; the paper prints this ask on page 9 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "notes": "The scheme prints the tariff as '2 marks'; the paper prints this ask on page 9 of the question booklet. Paper/scheme wording agreement 1.00. Corrected 19 Nov 2026 from \"Prawda\": scheme p6: the tick for (ii) \"Zbiórki harcerskie odbywają się raz w roku.\" stands in the Fałsz column.",
   "stem": "Zadanie 2: Tekst 2",
   "sourceMaterial": {
    "kind": "source-text",
@@ -17964,12 +17964,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Fałsz",
+    "verbatim": "Prawda",
     "marks": 2,
     "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
    }
   ],
-  "notes": "The scheme prints the tariff as '2 marks'; the paper prints this ask on page 9 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "notes": "The scheme prints the tariff as '2 marks'; the paper prints this ask on page 9 of the question booklet. Paper/scheme wording agreement 1.00. Corrected 19 Nov 2026 from \"Fałsz\": scheme p6: the tick for (iv) \"Harcerze sami budują obóz.\" stands in the Prawda column.",
   "stem": "Zadanie 2: Tekst 2",
   "sourceMaterial": {
    "kind": "source-text",
@@ -18001,12 +18001,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Prawda",
+    "verbatim": "Fałsz",
     "marks": 2,
     "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
    }
   ],
-  "notes": "The scheme prints the tariff as '2 marks'; the paper prints this ask on page 9 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "notes": "The scheme prints the tariff as '2 marks'; the paper prints this ask on page 9 of the question booklet. Paper/scheme wording agreement 1.00. Corrected 19 Nov 2026 from \"Prawda\": scheme p6: the tick for (v) \"Na obozie harcerze wywieszają polską flagę każdego wieczoru.\" stands in the Fałsz column.",
   "stem": "Zadanie 2: Tekst 2",
   "sourceMaterial": {
    "kind": "source-text",
@@ -18635,6 +18635,2770 @@
    ],
    "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2025-ol-a-1-d",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "A",
+  "topicId": "polish-3-1",
+  "conceptId": "visited-ania-family-christmas-eve-tick",
+  "questionRef": "2025 OL Section A Q1(d)",
+  "questionText": "Who visited Ania and her family on Christmas Eve? Tick the three correct answers from the six boxes below. (paragraph 3)\nA. Her aunt\nB. Kacper, the cat\nC. Her grandmother\nD. Her great grandfather\nE. Her school friend\nF. Her uncle",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A",
+    "marks": 2,
+    "contextNote": "For “A. Her aunt”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "C",
+    "marks": 2,
+    "contextNote": "For “C. Her grandmother”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "F",
+    "marks": 2,
+    "contextNote": "For “F. Her uncle”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 5 of the question booklet.",
+  "stem": "Zadanie 1: Tekst 1",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ZADANIE 1: TEKST 1",
+   "title": "Reading text — answer in English or Irish",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2025-ol-a-2-b-i",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "A",
+  "topicId": "polish-3-1",
+  "conceptId": "uzupelnij-ponizsza-tabelke-podstawie-czesc-oznacza",
+  "questionRef": "2025 OL Section A Q2(b)(i)",
+  "questionText": "Uzupełnij poniższą tabelkę na podstawie tekstu 2. (część 1) Co oznacza skrót ZHP?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Związek Harcerstwa Polskiego",
+    "marks": 2,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 9 of the question booklet.",
+  "stem": "Zadanie 2: Tekst 2",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ZADANIE 2: TEKST 2",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    7,
+    8
+   ],
+   "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2025-ol-a-2-b-ii",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "A",
+  "topicId": "polish-3-1",
+  "conceptId": "uzupelnij-ponizsza-tabelke-podstawie-czesc-kiedy",
+  "questionRef": "2025 OL Section A Q2(b)(ii)",
+  "questionText": "Uzupełnij poniższą tabelkę na podstawie tekstu 2. (część 1) Kiedy powstał ZHP?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Przed II wojną (światową)",
+    "marks": 2,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 9 of the question booklet.",
+  "stem": "Zadanie 2: Tekst 2",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ZADANIE 2: TEKST 2",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    7,
+    8
+   ],
+   "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2025-ol-a-2-c-vi",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "A",
+  "topicId": "polish-3-1",
+  "conceptId": "okresl-czy-podane-zdania-prawda-czy",
+  "questionRef": "2025 OL Section A Q2(c)(vi)",
+  "questionText": "Określ, czy podane zdania (ii) – (vi) to prawda czy fałsz. Odpowiedzi zaznacz (✓) w tabeli, zgodnie z przykładem (i). (części: 2, 3) Prawda Fałsz ✓ Harcerze potrafią przetrwać w trudnych warunkach.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Prawda",
+    "marks": 2,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); the paper prints this ask on page 9 of the question booklet. The tick stands in the Prawda column (scheme p6, rendered).",
+  "stem": "Zadanie 2: Tekst 2",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ZADANIE 2: TEKST 2",
+   "title": "Reading text — answer in Polish",
+   "pages": [
+    7,
+    8
+   ],
+   "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "pl-2025-ol-la-1-i",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LA",
+  "topicId": "polish-2-1",
+  "conceptId": "uzupelnij-tabele-ile-lat-adam-wajrak",
+  "questionRef": "2025 OL Section LA Q1(i)",
+  "questionText": "Uzupełnij tabelę. Ile lat Adam Wajrak mieszka w Puszczy Białowieskiej?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "27 lat",
+    "marks": 3,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 3.",
+  "stem": "You will hear an interview with Adam Wajrak – a journalist and ecologist. There will be pauses during the second playing. Answer in Polish.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część A — Question 1(i)",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część A · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-la-1-ii",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LA",
+  "topicId": "polish-2-1",
+  "conceptId": "uzupelnij-tabele-dlaczego-adam-wajrak-przeprowadzil",
+  "questionRef": "2025 OL Section LA Q1(ii)",
+  "questionText": "Uzupełnij tabelę. Dlaczego Adam Wajrak przeprowadził się do puszczy?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme allows “żona chciała się przeprowadzić” for 2 marks, in place of “jego żona chciała prowadzić w puszczy badania”, never beside it.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "jego żona chciała prowadzić w puszczy badania",
+      "puszcza to fascynujące miejsce",
+      "to miejsce urzekło go już w czasach studenckich",
+      "żona chciała się przeprowadzić"
+     ],
+     "optionMarks": [
+      3,
+      3,
+      3,
+      2
+     ],
+     "optionOf": [
+      null,
+      null,
+      null,
+      0
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 3.",
+  "stem": "You will hear an interview with Adam Wajrak – a journalist and ecologist. There will be pauses during the second playing. Answer in Polish.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część A — Question 1(ii)",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część A · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-la-2",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LA",
+  "topicId": "polish-2-1",
+  "conceptId": "zajecia-wykonuje-adam-wajrak-puszczy",
+  "questionRef": "2025 OL Section LA Q2",
+  "questionText": "Jakie zajęcia wykonuje Adam Wajrak w puszczy? Podaj 3 szczegóły.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "kosi trawę",
+      "rąbie drzewo",
+      "naprawia dach",
+      "maluje płot",
+      "sprząta szopę",
+      "pisze artkuły"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this listening ask 9 marks; the listening booklet prints it on page 3.",
+  "stem": "You will hear an interview with Adam Wajrak – a journalist and ecologist. There will be pauses during the second playing. Answer in Polish.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część A — Question 2",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część A · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-la-3",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LA",
+  "topicId": "polish-2-1",
+  "conceptId": "adam-wajrak-robi-rano",
+  "questionRef": "2025 OL Section LA Q3",
+  "questionText": "Co Adam Wajrak robi rano?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "idzie do lasu",
+      "obserwuje przyrodę",
+      "je śniadanie",
+      "zabiera psa na spacer"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 3.",
+  "stem": "You will hear an interview with Adam Wajrak – a journalist and ecologist. There will be pauses during the second playing. Answer in Polish.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część A — Question 3",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część A · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-la-4",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LA",
+  "topicId": "polish-2-1",
+  "conceptId": "zwierzeta-mozna-spotkac-puszczy-bialowieskiej",
+  "questionRef": "2025 OL Section LA Q4",
+  "questionText": "Jakie zwierzęta można spotkać w Puszczy Białowieskiej? Podaj 3 szczegóły.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "żubry",
+      "wilki",
+      "lisy",
+      "jelenie",
+      "borsuki",
+      "nornice",
+      "myszołowy"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this listening ask 9 marks; the listening booklet prints it on page 3.",
+  "stem": "You will hear an interview with Adam Wajrak – a journalist and ecologist. There will be pauses during the second playing. Answer in Polish.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część A — Question 4",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część A · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-la-5",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LA",
+  "topicId": "polish-2-1",
+  "conceptId": "czym-adam-wajrak-jezdzi-puszczy",
+  "questionRef": "2025 OL Section LA Q5",
+  "questionText": "Czym Adam Wajrak jeździ po puszczy?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "rowerem",
+    "marks": 3,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 3.",
+  "stem": "You will hear an interview with Adam Wajrak – a journalist and ecologist. There will be pauses during the second playing. Answer in Polish.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część A — Question 5",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część A · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-lb-1",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LB",
+  "topicId": "polish-2-1",
+  "conceptId": "jakim-wojewodztwie-lezy-kazimierz-dolny",
+  "questionRef": "2025 OL Section LB Q1",
+  "questionText": "W jakim województwie leży Kazimierz Dolny?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "lubelskim",
+    "marks": 3,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 4.",
+  "stem": "You will hear about Kazimierz Dolny. There will be pauses during the second playing. Answer in Polish.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część B — Question 1",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część B · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-lb-2-i",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LB",
+  "topicId": "polish-2-1",
+  "conceptId": "kiedy-kazimierzu-dolnym-odbywa-festiwal-dwa",
+  "questionRef": "2025 OL Section LB Q2(i)",
+  "questionText": "Kiedy w Kazimierzu Dolnym odbywa się festiwal Dwa Brzegi?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme allows “w lipcu/w sierpniu” for 1 mark, in place of “co roku/na przełomie lipca i sierpnia/w lipcu i sierpniu”, never beside it.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "co roku/na przełomie lipca i sierpnia/w lipcu i sierpniu",
+      "w lipcu/w sierpniu"
+     ],
+     "optionMarks": [
+      3,
+      1
+     ],
+     "optionOf": [
+      null,
+      0
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 4.",
+  "stem": "You will hear about Kazimierz Dolny. There will be pauses during the second playing. Answer in Polish.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część B — Question 2(i)",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część B · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-lb-2-ii",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LB",
+  "topicId": "polish-2-1",
+  "conceptId": "filmy-mozna-zobaczyc-podczas-trwania-festiwalu",
+  "questionRef": "2025 OL Section LB Q2(ii)",
+  "questionText": "Jakie filmy można zobaczyć podczas trwania festiwalu Dwa Brzegi? Podaj 2 szczegóły.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "fabularne",
+      "dokumentalne",
+      "animowane",
+      "z różnych krajów świata"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this listening ask 6 marks; the listening booklet prints it on page 4.",
+  "stem": "You will hear about Kazimierz Dolny. There will be pauses during the second playing. Answer in Polish.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część B — Question 2(ii)",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część B · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-lb-3",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LB",
+  "topicId": "polish-2-1",
+  "conceptId": "rodzaje-warsztatow-ktore-odbywaja-kazimierzu-dolnym",
+  "questionRef": "2025 OL Section LB Q3",
+  "questionText": "Wymień 2 rodzaje warsztatów, które odbywają się w Kazimierzu Dolnym?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme allows “sztuki” for 2 marks, in place of “sztuki ulicznej”, never beside it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "sztuki ulicznej",
+      "jogi",
+      "pszczelarskie",
+      "sztuki"
+     ],
+     "optionMarks": [
+      3,
+      3,
+      3,
+      2
+     ],
+     "optionOf": [
+      null,
+      null,
+      null,
+      0
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this listening ask 6 marks; the listening booklet prints it on page 4.",
+  "stem": "You will hear about Kazimierz Dolny. There will be pauses during the second playing. Answer in Polish.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część B — Question 3",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część B · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-lb-4",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LB",
+  "topicId": "polish-2-1",
+  "conceptId": "jakiego-przysmaku-mozna-skosztowac-kazimierzu-dolnym",
+  "questionRef": "2025 OL Section LB Q4",
+  "questionText": "Jakiego przysmaku można skosztować w Kazimierzu Dolnym?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "(miejscowego) wypieku",
+      "koguta (z ciasta)",
+      "oponki (z dodatkami)"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 4.",
+  "stem": "You will hear about Kazimierz Dolny. There will be pauses during the second playing. Answer in Polish.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część B — Question 4",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część B · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-lc-1",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LC",
+  "topicId": "polish-2-1",
+  "conceptId": "complete-table-below-book-jowita-zostaje",
+  "questionRef": "2025 OL Section LC Q1",
+  "questionText": "Complete the table below about the book Jowita zostaje. Venue of the protest Date of the protest Number of days of the protest",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Poznań/dormitory/Jowita",
+    "marks": 3,
+    "contextNote": "For “Venue of the protest”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "For “Date of the protest”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language. The scheme allows “December/2023” for 2 marks, in place of “December 2023”, never beside it.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "December 2023",
+      "December/2023"
+     ],
+     "optionMarks": [
+      3,
+      2
+     ],
+     "optionOf": [
+      null,
+      0
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Ten",
+    "marks": 3,
+    "contextNote": "For “Number of days of the protest”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this listening ask 9 marks; the listening booklet prints it on page 5.",
+  "stem": "You will hear a book review. There will be pauses during the second playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część C — Question 1",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część C · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-lc-2",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LC",
+  "topicId": "polish-2-1",
+  "conceptId": "tick-true-false-students-also-authors",
+  "questionRef": "2025 OL Section LC Q2",
+  "questionText": "Tick (✓) true or false. The students are also the authors of the book Jowita zostaje.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 3,
+    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 5.",
+  "stem": "You will hear a book review. There will be pauses during the second playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część C — Question 2",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część C · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-lc-3",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LC",
+  "topicId": "polish-2-1",
+  "conceptId": "list-contents-book",
+  "questionRef": "2025 OL Section LC Q3",
+  "questionText": "List two details about the contents of the book.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "instructions",
+      "program/schedule of the protest",
+      "correspondence",
+      "interviews",
+      "articles",
+      "essays",
+      "photos",
+      "leaflets",
+      "posters"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this listening ask 6 marks; the listening booklet prints it on page 5.",
+  "stem": "You will hear a book review. There will be pauses during the second playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część C — Question 3",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część C · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-lc-4",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LC",
+  "topicId": "polish-2-1",
+  "conceptId": "mark-correct-answer-closing-down-dormitory",
+  "questionRef": "2025 OL Section LC Q4",
+  "questionText": "Mark (✓) the correct answer. Closing down the dormitory would mean for the students: higher cost of living less hours at work more time available for self-development more time for hobbies",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "higher cost of living",
+    "marks": 3,
+    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 5.",
+  "stem": "You will hear a book review. There will be pauses during the second playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część C — Question 4",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część C · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-lc-5-i",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LC",
+  "topicId": "polish-2-1",
+  "conceptId": "book-received",
+  "questionRef": "2025 OL Section LC Q5(i)",
+  "questionText": "How was the book received?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "enthusiastically",
+    "marks": 3,
+    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 5.",
+  "stem": "You will hear a book review. There will be pauses during the second playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część C — Question 5(i)",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część C · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-lc-5-ii",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LC",
+  "topicId": "polish-2-1",
+  "conceptId": "read-book",
+  "questionRef": "2025 OL Section LC Q5(ii)",
+  "questionText": "Who read the book? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "students",
+      "parents",
+      "teachers"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this listening ask 6 marks; the listening booklet prints it on page 5.",
+  "stem": "You will hear a book review. There will be pauses during the second playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część C — Question 5(ii)",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część C · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-ld-1",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LD",
+  "topicId": "polish-2-1",
+  "conceptId": "type-furniture-mentioned-here",
+  "questionRef": "2025 OL Section LD Q1",
+  "questionText": "What type of furniture is mentioned here?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "stools/chairs",
+    "marks": 3,
+    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 6.",
+  "stem": "You will hear about Oskar Zięta’s furniture. There will be pauses during the second playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część D — Question 1",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część D · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-ld-2",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LD",
+  "topicId": "polish-2-1",
+  "conceptId": "shape-furniture-bought",
+  "questionRef": "2025 OL Section LD Q2",
+  "questionText": "In what shape can the furniture be bought?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "in a roll",
+    "marks": 3,
+    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 6.",
+  "stem": "You will hear about Oskar Zięta’s furniture. There will be pauses during the second playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część D — Question 2",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część D · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-ld-3",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LD",
+  "topicId": "polish-2-1",
+  "conceptId": "tick-true-false-there-only-silver",
+  "questionRef": "2025 OL Section LD Q3",
+  "questionText": "Tick (✓) true or false. There is only silver furniture available.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 3,
+    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 6.",
+  "stem": "You will hear about Oskar Zięta’s furniture. There will be pauses during the second playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część D — Question 3",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część D · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-ld-4-i",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LD",
+  "topicId": "polish-2-1",
+  "conceptId": "weight-damage-oskar-zieta-furniture",
+  "questionRef": "2025 OL Section LD Q4(i)",
+  "questionText": "What weight will damage Oskar Zięta’s furniture?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2 tonnes",
+    "marks": 3,
+    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 6.",
+  "stem": "You will hear about Oskar Zięta’s furniture. There will be pauses during the second playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część D — Question 4(i)",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część D · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-ld-4-ii",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LD",
+  "topicId": "polish-2-1",
+  "conceptId": "whom-oskar-zieta-get-interest-metal",
+  "questionRef": "2025 OL Section LD Q4(ii)",
+  "questionText": "From whom did Oskar Zięta get his interest in metal?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "from his grandfather",
+    "marks": 3,
+    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this listening ask 3 marks; the listening booklet prints it on page 6.",
+  "stem": "You will hear about Oskar Zięta’s furniture. There will be pauses during the second playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część D — Question 4(ii)",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część D · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-le-1",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LE",
+  "topicId": "polish-2-1",
+  "conceptId": "fill-table-below-amp-football-against",
+  "questionRef": "2025 OL Section LE Q1",
+  "questionText": "Fill in the table below about Amp Football. Against who was the Polish team playing? What was the result of the match?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kenya",
+    "marks": 3,
+    "contextNote": "For “Against who was the Polish team playing?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "For “What was the result of the match?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language. The scheme allows “1 – 0” for 2 marks, in place of “Poland 1, Kenya 0 / Poland won”, never beside it.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Poland 1, Kenya 0 / Poland won",
+      "1 – 0"
+     ],
+     "optionMarks": [
+      3,
+      2
+     ],
+     "optionOf": [
+      null,
+      0
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this listening ask 6 marks; the listening booklet prints it on page 7.",
+  "stem": "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 1",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część E — Question 1",
+   "pages": [
+    7
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część E · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-le-2",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LE",
+  "topicId": "polish-2-1",
+  "conceptId": "learn-rysiek-cat",
+  "questionRef": "2025 OL Section LE Q2",
+  "questionText": "What do we learn about Rysiek, the cat? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "from a shelter",
+      "he regularly accompanied his owner to the train",
+      "he waited until the train left",
+      "he was loyal",
+      "he was smart"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this listening ask 6 marks; the listening booklet prints it on page 7.",
+  "stem": "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 2",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część E — Question 2",
+   "pages": [
+    7
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część E · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-le-3",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LE",
+  "topicId": "polish-2-1",
+  "conceptId": "project-run-copernicus-science-centre",
+  "questionRef": "2025 OL Section LE Q3",
+  "questionText": "Give two details about the project run by the Copernicus Science Centre.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "The Centre runs workshops Lets discover it!",
+      "The workshops take place in small towns",
+      "The workshops take place during weekends",
+      "The workshops take place in local libraries/community centres/sport centres/schools",
+      "The teachers show adults how to discover science with a child",
+      "No advanced technical equipment is needed",
+      "No costly tools are needed",
+      "Participants get a free kit to experiment at home"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this listening ask 6 marks; the listening booklet prints it on page 7.",
+  "stem": "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 3",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część E — Question 3",
+   "pages": [
+    7
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część E · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-le-4",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "LE",
+  "topicId": "polish-2-1",
+  "conceptId": "porcelain-square-cmielow",
+  "questionRef": "2025 OL Section LE Q4",
+  "questionText": "Describe the Porcelain Square in Ćmielów. Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "there is a fountain there",
+      "the fountain looks like a coffee set",
+      "there are 20 benches there",
+      "the benches are cup shaped",
+      "there is water pouring into one of the coffee cups (from the coffee pot)",
+      "there is a sugar bowl there"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this listening ask 6 marks; the listening booklet prints it on page 7.",
+  "stem": "You will hear four news items. There will be pauses during the second playing. Answer in English. Item 4",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Część E — Question 4",
+   "pages": [
+    7
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Polish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Część E · listening",
+   "title": "2025 Polish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "secFileid": "LC548ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC548ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "pl-2025-ol-b-4-a",
+  "kind": "rubric",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "B",
+  "topicId": "polish-3-3",
+  "conceptId": "wyobraz-sobie-jestes-ania-pierwszego-spotykasz",
+  "questionRef": "2025 OL Section B Q4(a)",
+  "questionText": "Wyobraź sobie, że jesteś Anią z tekstu pierwszego. Spotykasz kuzyna Marcina. Uzupełnij dialog. Użyj około 100 słów.\nMarcin: Cześć Aniu! Jak się czujesz po świętach?\nAnia:\nMarcin: Jakie dania smakowały ci najbardziej?\nAnia:\nMarcin: Otworzyłaś w końcu swój prezent? Co dostałaś?\nAnia:\nMarcin: Twój tata wspominał, że bardzo polubiłaś mojego szczeniaka i też chcesz mieć psa.\nAnia:\nMarcin: Zapraszam cię na sylwestra. Będzie dużo znajomych. Przyjdziesz?\nAnia:",
+  "stem": "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Zadanie 4: (a) lub (b), lub (c)",
+    "(30 marks: Content 15 marks, Expression 15 marks)",
+    "Zadanie 5: (a) lub (b), lub (c)",
+    "(30 marks: Content 15 marks, Expression 15 marks)"
+   ],
+   "criteria": [
+    {
+     "id": "content",
+     "label": "Content",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Content - relevant",
+        "Coherence very good",
+        "Communication intention fulfilled",
+        "Few mistakes in register"
+       ]
+      },
+      {
+       "label": "Good",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Content - relevant but limited",
+        "Coherence good",
+        "Communication intention more or less respected",
+        "Some mistakes in register"
+       ]
+      },
+      {
+       "label": "Fair",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Content – very limited",
+        "Coherence fair",
+        "Communication intention struggling for accuracy",
+        "Many mistakes in register"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Very good vocabulary",
+        "Rare grammar errors",
+        "Minor loan translations",
+        "Words mostly spelt correctly"
+       ]
+      },
+      {
+       "label": "Good",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Good vocabulary",
+        "Grammar correct more often than incorrect",
+        "Few loan translations",
+        "Frequent spelling mistakes"
+       ]
+      },
+      {
+       "label": "Fair",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Poor vocabulary",
+        "Grammar incorrect more often than correct",
+        "Big interference form English",
+        "Many spelling mistakes"
+       ]
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in Polish, then place it on the published grid: content first, then expression."
+   ]
+  },
+  "schemePages": [
+   9
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ZADANIE 4",
+   "title": "Zadanie 4 (a) — answer in Polish",
+   "pages": [
+    15
+   ],
+   "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "pl-2025-ol-b-4-b",
+  "kind": "rubric",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "B",
+  "topicId": "polish-3-3",
+  "conceptId": "byles-obozie-harcerskim-zredaguj-wpis-pamietnika",
+  "questionRef": "2025 OL Section B Q4(b)",
+  "questionText": "Byłeś na obozie harcerskim. Zredaguj wpis do pamiętnika i opisz bieg nocny, w którym brałeś udział. Użyj około 100 słów.\nUwzględnij:\n• czas (kiedy odbył się bieg i jak długo trwał)\n• miejsce startu i zakończenia biegu\n• mijane miejsca i napotkane przeszkody\n• warunki pogodowe\n• odczucia związane z ukończeniem biegu",
+  "stem": "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Zadanie 4: (a) lub (b), lub (c)",
+    "(30 marks: Content 15 marks, Expression 15 marks)",
+    "Zadanie 5: (a) lub (b), lub (c)",
+    "(30 marks: Content 15 marks, Expression 15 marks)"
+   ],
+   "criteria": [
+    {
+     "id": "content",
+     "label": "Content",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Content - relevant",
+        "Coherence very good",
+        "Communication intention fulfilled",
+        "Few mistakes in register"
+       ]
+      },
+      {
+       "label": "Good",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Content - relevant but limited",
+        "Coherence good",
+        "Communication intention more or less respected",
+        "Some mistakes in register"
+       ]
+      },
+      {
+       "label": "Fair",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Content – very limited",
+        "Coherence fair",
+        "Communication intention struggling for accuracy",
+        "Many mistakes in register"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Very good vocabulary",
+        "Rare grammar errors",
+        "Minor loan translations",
+        "Words mostly spelt correctly"
+       ]
+      },
+      {
+       "label": "Good",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Good vocabulary",
+        "Grammar correct more often than incorrect",
+        "Few loan translations",
+        "Frequent spelling mistakes"
+       ]
+      },
+      {
+       "label": "Fair",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Poor vocabulary",
+        "Grammar incorrect more often than correct",
+        "Big interference form English",
+        "Many spelling mistakes"
+       ]
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in Polish, then place it on the published grid: content first, then expression."
+   ]
+  },
+  "schemePages": [
+   9
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ZADANIE 4",
+   "title": "Zadanie 4 (b) — answer in Polish",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "pl-2025-ol-b-4-c",
+  "kind": "rubric",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "B",
+  "topicId": "polish-3-3",
+  "conceptId": "twoi-rodzice-wyjechali-tydzien-posprzatales-dom",
+  "questionRef": "2025 OL Section B Q4(c)",
+  "questionText": "Twoi rodzice wyjechali na tydzień, a ty posprzątałeś dom. Napisz e-mail do rodziców, w którym opowiesz im, co zrobiłeś. Uwzględnij zastosowanie każdego z 5 sprzętów domowych przedstawionych na poniższych zdjęciach. Użyj około 100 słów.",
+  "stem": "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Zadanie 4: (a) lub (b), lub (c)",
+    "(30 marks: Content 15 marks, Expression 15 marks)",
+    "Zadanie 5: (a) lub (b), lub (c)",
+    "(30 marks: Content 15 marks, Expression 15 marks)"
+   ],
+   "criteria": [
+    {
+     "id": "content",
+     "label": "Content",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Content - relevant",
+        "Coherence very good",
+        "Communication intention fulfilled",
+        "Few mistakes in register"
+       ]
+      },
+      {
+       "label": "Good",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Content - relevant but limited",
+        "Coherence good",
+        "Communication intention more or less respected",
+        "Some mistakes in register"
+       ]
+      },
+      {
+       "label": "Fair",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Content – very limited",
+        "Coherence fair",
+        "Communication intention struggling for accuracy",
+        "Many mistakes in register"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Very good vocabulary",
+        "Rare grammar errors",
+        "Minor loan translations",
+        "Words mostly spelt correctly"
+       ]
+      },
+      {
+       "label": "Good",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Good vocabulary",
+        "Grammar correct more often than incorrect",
+        "Few loan translations",
+        "Frequent spelling mistakes"
+       ]
+      },
+      {
+       "label": "Fair",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Poor vocabulary",
+        "Grammar incorrect more often than correct",
+        "Big interference form English",
+        "Many spelling mistakes"
+       ]
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in Polish, then place it on the published grid: content first, then expression."
+   ]
+  },
+  "schemePages": [
+   9
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ZADANIE 4",
+   "title": "Zadanie 4 (c) — answer in Polish",
+   "pages": [
+    17
+   ],
+   "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "pl-2025-ol-b-5-a",
+  "kind": "rubric",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "B",
+  "topicId": "polish-3-3",
+  "conceptId": "napisz-notatke-zajecia-jezyka-polskiego-irlandzkich",
+  "questionRef": "2025 OL Section B Q5(a)",
+  "questionText": "Napisz notatkę na zajęcia języka polskiego o irlandzkich i polskich symbolach. Uwzględnij informacje zawarte w poniższej tabeli. Użyj około 100 słów.",
+  "stem": "Wykonaj zadanie (a) lub (b), lub (c).",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Zadanie 4: (a) lub (b), lub (c)",
+    "(30 marks: Content 15 marks, Expression 15 marks)",
+    "Zadanie 5: (a) lub (b), lub (c)",
+    "(30 marks: Content 15 marks, Expression 15 marks)"
+   ],
+   "criteria": [
+    {
+     "id": "content",
+     "label": "Content",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Content - relevant",
+        "Coherence very good",
+        "Communication intention fulfilled",
+        "Few mistakes in register"
+       ]
+      },
+      {
+       "label": "Good",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Content - relevant but limited",
+        "Coherence good",
+        "Communication intention more or less respected",
+        "Some mistakes in register"
+       ]
+      },
+      {
+       "label": "Fair",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Content – very limited",
+        "Coherence fair",
+        "Communication intention struggling for accuracy",
+        "Many mistakes in register"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Very good vocabulary",
+        "Rare grammar errors",
+        "Minor loan translations",
+        "Words mostly spelt correctly"
+       ]
+      },
+      {
+       "label": "Good",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Good vocabulary",
+        "Grammar correct more often than incorrect",
+        "Few loan translations",
+        "Frequent spelling mistakes"
+       ]
+      },
+      {
+       "label": "Fair",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Poor vocabulary",
+        "Grammar incorrect more often than correct",
+        "Big interference form English",
+        "Many spelling mistakes"
+       ]
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in Polish, then place it on the published grid: content first, then expression."
+   ]
+  },
+  "schemePages": [
+   9
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ZADANIE 5",
+   "title": "Zadanie 5 (a) — answer in Polish",
+   "pages": [
+    19
+   ],
+   "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "pl-2025-ol-b-5-b",
+  "kind": "rubric",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "B",
+  "topicId": "polish-3-3",
+  "conceptId": "wziales-udzial-waznej-uroczystosci-rodzinnej-przyklad",
+  "questionRef": "2025 OL Section B Q5(b)",
+  "questionText": "Wziąłeś udział w ważnej uroczystości rodzinnej, na przykład w weselu, chrzcie itp. Napisz opowiadanie. Użyj około 100 słów. Rozwiń następujące punkty:\n• W jakiej uroczystości rodzinnej wziąłeś udział?\n• Kiedy i gdzie miała miejsce ta uroczystość?\n• Kto był na niej obecny?\n• Opisz 2 zwyczaje związane z tą uroczystością.\n• Jakie masz pamiątki z tej uroczystości?",
+  "stem": "Wykonaj zadanie (a) lub (b), lub (c).",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Zadanie 4: (a) lub (b), lub (c)",
+    "(30 marks: Content 15 marks, Expression 15 marks)",
+    "Zadanie 5: (a) lub (b), lub (c)",
+    "(30 marks: Content 15 marks, Expression 15 marks)"
+   ],
+   "criteria": [
+    {
+     "id": "content",
+     "label": "Content",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Content - relevant",
+        "Coherence very good",
+        "Communication intention fulfilled",
+        "Few mistakes in register"
+       ]
+      },
+      {
+       "label": "Good",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Content - relevant but limited",
+        "Coherence good",
+        "Communication intention more or less respected",
+        "Some mistakes in register"
+       ]
+      },
+      {
+       "label": "Fair",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Content – very limited",
+        "Coherence fair",
+        "Communication intention struggling for accuracy",
+        "Many mistakes in register"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Very good vocabulary",
+        "Rare grammar errors",
+        "Minor loan translations",
+        "Words mostly spelt correctly"
+       ]
+      },
+      {
+       "label": "Good",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Good vocabulary",
+        "Grammar correct more often than incorrect",
+        "Few loan translations",
+        "Frequent spelling mistakes"
+       ]
+      },
+      {
+       "label": "Fair",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Poor vocabulary",
+        "Grammar incorrect more often than correct",
+        "Big interference form English",
+        "Many spelling mistakes"
+       ]
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in Polish, then place it on the published grid: content first, then expression."
+   ]
+  },
+  "schemePages": [
+   9
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ZADANIE 5",
+   "title": "Zadanie 5 (b) — answer in Polish",
+   "pages": [
+    21
+   ],
+   "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "pl-2025-ol-b-5-c",
+  "kind": "rubric",
+  "subjectId": "polish",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "B",
+  "topicId": "polish-3-3",
+  "conceptId": "kolega-polski-zaprosil-cie-tygodniowa-wyprawe",
+  "questionRef": "2025 OL Section B Q5(c)",
+  "questionText": "Kolega z Polski zaprosił cię na tygodniową wyprawę w Bieszczady. Niestety, nie możesz pojechać. Napisz list do kolegi. Użyj około 100 słów. Uwzględnij następujące punkty:\n• Powitaj kolegę i podziękuj za zaproszenie.\n• Wyjaśnij, dlaczego nie możesz przyjechać.\n• Zaproponuj spotkanie w innym terminie.\n• Napisz, co ciekawego wydarzyło się ostatnio.\n• Zakończ list pozdrowieniami.",
+  "stem": "Wykonaj zadanie (a) lub (b), lub (c).",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Zadanie 4: (a) lub (b), lub (c)",
+    "(30 marks: Content 15 marks, Expression 15 marks)",
+    "Zadanie 5: (a) lub (b), lub (c)",
+    "(30 marks: Content 15 marks, Expression 15 marks)"
+   ],
+   "criteria": [
+    {
+     "id": "content",
+     "label": "Content",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Content - relevant",
+        "Coherence very good",
+        "Communication intention fulfilled",
+        "Few mistakes in register"
+       ]
+      },
+      {
+       "label": "Good",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Content - relevant but limited",
+        "Coherence good",
+        "Communication intention more or less respected",
+        "Some mistakes in register"
+       ]
+      },
+      {
+       "label": "Fair",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Content – very limited",
+        "Coherence fair",
+        "Communication intention struggling for accuracy",
+        "Many mistakes in register"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Very good",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Very good vocabulary",
+        "Rare grammar errors",
+        "Minor loan translations",
+        "Words mostly spelt correctly"
+       ]
+      },
+      {
+       "label": "Good",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Good vocabulary",
+        "Grammar correct more often than incorrect",
+        "Few loan translations",
+        "Frequent spelling mistakes"
+       ]
+      },
+      {
+       "label": "Fair",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Poor vocabulary",
+        "Grammar incorrect more often than correct",
+        "Big interference form English",
+        "Many spelling mistakes"
+       ]
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in Polish, then place it on the published grid: content first, then expression."
+   ]
+  },
+  "schemePages": [
+   9
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ZADANIE 5",
+   "title": "Zadanie 5 (c) — answer in Polish",
+   "pages": [
+    22
+   ],
+   "attribution": "SEC Polish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
   }
  },
  {
