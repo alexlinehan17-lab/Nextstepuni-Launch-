@@ -153,6 +153,29 @@ def T2(n1, n2, each=False):
     return SplitPrice(n1, n2, each)
 
 
+class GluedPrice:
+    """One price cell the extractor broke over two lines' marks cells:
+    "⟨3 marks: 3 x 1⟩" on n1 and "⟨mark⟩" on n2 (2023 Higher Parte E): the
+    cells' text joined, then read as one price."""
+    def __init__(self, n1, n2, each=False):
+        self.n1, self.n2, self.each = n1, n2, each
+
+    def read(self, doc):
+        cells = ' '.join(m.group(0)[1:-1] for n in (self.n1, self.n2)
+                         for m in ANGLE.finditer(doc['raw'][n - 1]))
+        m = PRICE.search(cells)
+        if not m or not m.group('n'):
+            raise ValueError(f'scheme lines {self.n1}/{self.n2}: no split price in {cells!r}')
+        n, p, total = int(m.group('n')), int(m.group('p')), int(m.group('total'))
+        if n * p != total:
+            raise ValueError(f'scheme lines {self.n1}/{self.n2}: {m.group(0)!r} does not add up')
+        return (1 if self.each else n), p, m.group(0)
+
+
+def TG(n1, n2, each=False):
+    return GluedPrice(n1, n2, each)
+
+
 ANY_WORD = re.compile(r'\bany\s+(\d{1,2})\b', re.I)
 
 
@@ -286,6 +309,13 @@ def _marks(n):
     return 'mark' if n == 1 else 'marks'
 
 
+def _joined(ctx, said):
+    """A row's own note after its lead: "For “Assaltante 2”: The scheme ..."."""
+    if not ctx:
+        return said
+    return f'{ctx}: {said}' if ctx.endswith('”') else f'{ctx} {said}'
+
+
 def build_rows(doc, rows, note, key=''):
     """The card's rows and the marks they add to. The language note (and any
     card note) goes on the FIRST row only, as German, Spanish and Polish set
@@ -319,7 +349,7 @@ def build_rows(doc, rows, note, key=''):
                     f'answer{"" if r.printed == 1 else "s"}; it prints no answer for the rest.')
             out.append({'id': rid, 'kind': 'criterion', 'verbatim': UNPRINTED_ANSWER, 'marks': left,
                         'unprinted': True, 'permittedMarks': list(range(left + 1)),
-                        'contextNote': f'{ctx} {said}'.strip()})
+                        'contextNote': _joined(ctx, said)})
             total += left
             continue
         if isinstance(r, Stepped):
@@ -330,7 +360,7 @@ def build_rows(doc, rows, note, key=''):
             said = f'The scheme prices this answer “{notation}”.'
             out.append({'id': rid, 'kind': 'criterion', 'verbatim': r.sel.text(doc), 'marks': whole,
                         'permittedMarks': list(range(0, whole + 1, per)),
-                        'contextNote': f'{ctx} {said}'.strip()})
+                        'contextNote': _joined(ctx, said)})
             total += whole
             continue
         if isinstance(r, Menu):

@@ -94,6 +94,120 @@ class Crit:
                 'bands': sorted(bands, key=lambda b: -b['marks'][0])}
 
 
+ANGLE = re.compile('\u27e8([^\u27e9]*)\u27e9')
+CELL_RANGE = re.compile(r'^(\d{1,2})(?:\s*[–‐-]\s*(\d{1,2}))?(?:\s*marks?)?$', re.I)
+EMOJI = re.compile('[\U0001F300-\U0001FAFF]')
+
+
+def _cells(doc, n):
+    return [m.group(1).strip() for m in ANGLE.finditer(doc['raw'][n - 1])]
+
+
+def _items(lines):
+    """A band's descriptors: a new one at each bullet; where the band prints
+    no bullets, at each line that opens with a capital (a line opening in
+    lower case or "(" continues the one above: the SEC wrapped it)."""
+    bulleted = any(BULLET.match(t) for t in lines)
+    out = []
+    for t in lines:
+        t = re.sub(r'\s+', ' ', t).strip()
+        if not t:
+            continue
+        new = bool(BULLET.match(t)) if bulleted else not re.match(r'^[a-z(]', t)
+        if new or not out:
+            out.append(BULLET.sub('', t))
+        else:
+            out[-1] = f'{out[-1]} {t}'
+    return out
+
+
+class RangeBand:
+    """A band the scheme names by nothing but the range printed in its marks
+    cell ("⟨10 - 13⟩" over "⟨marks⟩", 2022-2023): that range is its label and
+    its marks; its descriptors are the lines first..last."""
+    def __init__(self, first, last):
+        self.first, self.last = first, last
+
+    def read(self, doc):
+        for n in range(self.first, self.last + 1):
+            for c in _cells(doc, n):
+                m = CELL_RANGE.match(c)
+                if m:
+                    lo = int(m.group(1)); hi = int(m.group(2) or m.group(1))
+                    label = re.sub(r'\s*marks?$', '', c, flags=re.I).strip()
+                    lines = [doc['scheme'][k - 1] for k in range(self.first, self.last + 1)]
+                    return {'label': label, 'marks': list(range(lo, hi + 1)), 'guidance': _items(lines)}
+        raise ValueError(f'lines {self.first}-{self.last}: no range cell')
+
+
+class RangeCrit:
+    """A criterion of the 2022-2023 grids: its printed head, its printed
+    maximum (the cell "⟨13⟩" on line max_line), and its bands, which must
+    cover 0 to the maximum once (else see RungCrit)."""
+    def __init__(self, cid, label, max_line, bands):
+        self.cid, self.label, self.max_line, self.bands = cid, label, max_line, bands
+
+    def read(self, doc):
+        top = _printed_max(doc, self.max_line)
+        bands = sorted((b.read(doc) for b in self.bands), key=lambda b: -b['marks'][0])
+        marks = sorted(m for b in bands for m in b['marks'])
+        if marks != list(range(top + 1)):
+            raise ValueError(f'{self.label.text(doc)}: printed ranges {marks} do not cover 0-{top} once')
+        return {'id': self.cid, 'label': self.label.text(doc), 'maxMarks': top,
+                'permittedMarks': list(range(top + 1)), 'guidance': [], 'bands': bands}
+
+
+class RungCrit:
+    """A criterion whose printed rungs do not cover 0 to its maximum (2023
+    Higher Q4 Content: 4, 3, 2, 1 marks and no 0). Lead ruling 19 Nov 2026:
+    no bands; placed 0 to the maximum; the rungs verbatim in its guidance,
+    one line per rung with its mark as printed. A rung the SEC wrapped past
+    its marks cell is its text and then its mark, the order that traces."""
+    def __init__(self, cid, label, max_line, rungs):
+        self.cid, self.label, self.max_line, self.rungs = cid, label, max_line, rungs
+
+    def read(self, doc):
+        top = _printed_max(doc, self.max_line)
+        guidance = []
+        for first, last in self.rungs:
+            text = ' '.join(re.sub(r'\s+', ' ', doc['scheme'][n - 1]).strip() for n in range(first, last + 1))
+            text = BULLET.sub('', text).strip()
+            where = [(n, c) for n in range(first, last + 1) for c in _cells(doc, n) if CELL_RANGE.match(c)]
+            if len(where) != 1:
+                raise ValueError(f'rung {first}-{last}: {len(where)} mark cells')
+            n, cell = where[0]
+            guidance += [f'{text} {cell}'] if n == last else [text, cell]
+        return {'id': self.cid, 'label': self.label.text(doc), 'maxMarks': top,
+                'permittedMarks': list(range(top + 1)), 'guidance': guidance}
+
+
+def _printed_max(doc, n):
+    nums = [int(c) for c in _cells(doc, n) if re.fullmatch(r'\d{1,2}', c)]
+    if len(nums) != 1:
+        raise ValueError(f'scheme line {n}: {len(nums)} maximum cells')
+    return nums[0]
+
+
+class Celled:
+    """Scheme lines read with their marks cells in place ("Did not follow the
+    requested structure/format. -1 mark"), the order the scheme prints."""
+    def __init__(self, *ns):
+        self.ns = ns
+
+    def text(self, doc):
+        return re.sub(r'\s+', ' ', ' '.join(ANGLE.sub(r'\1', doc['raw'][n - 1]) for n in self.ns)).strip()
+
+
+class Emoji:
+    """A paper line whose emoji the page prints in outline: each lifted with
+    U+FE0E (text presentation), as the Polish card's was (coordinator, 19 Nov)."""
+    def __init__(self, sel):
+        self.sel = sel
+
+    def text(self, doc):
+        return EMOJI.sub(lambda m: m.group(0) + '\ufe0e', self.sel.text(doc))
+
+
 class Task:
     """One question's three options: the grid that marks them and, per
     option, the paper lines that print it."""
@@ -108,7 +222,10 @@ SPECS = {}
 def _doc(year, level):
     P = EuPaper(year, level, SUBJECT)
     doc = scheme_doc(year, level)
-    doc['paper'] = [(l.page, l.text) for l in read_lines(P.path, P.furniture)]
+    # Unfiltered: a task line may open with words the furniture filter takes
+    # for a page header ("Leaving Certificate. O texto deve incluir os
+    # tópicos:", 2023 Higher Q4(c)). Lines are only ever picked by opening.
+    doc['paper'] = [(l.page, l.text) for l in read_lines(P.path, None)]
     return P, doc
 
 
@@ -219,6 +336,53 @@ SPECS[(2024, 'ol')] = [
          {x: (14, [PL(14, 'Inclua os tópicos'), PL(14, '•Que mensagem'), PL(14, '•A sua opinião')])
           for x in 'abc'},
          _grid_2024_ol(), [S(70)], [9], note=_NOTE_2024_OL),
+]
+
+
+# ================================================================ 2023 HL ===
+# Scheme .md lines 268-433 (pages 10-13): a grid per question, Content /
+# Communication / Language, each band named only by the range in its marks
+# cell. Q4's Content prints rungs 4, 3, 2, 1 and no 0: RungCrit (lead ruling).
+# Part B's own rules (lines 269-274) are every card's taskRequirements.
+from pt_lib import J                                               # noqa: E402
+
+_REQ_2023_HL = [S(269), Celled(270, 271), J(S(272), S(273)), S(274)]
+_Q3_TOPICS = {'a': ((12, 0), [('Olá, tudo bem?', 0), ('Tudo!', 0), ('Viste a nova série', 0),
+                               ('Sim, vi. E foi', 0), ('Oh, que pena eu não ter podido', 0),
+                               ('Podias contar-me', 0), ('Tens a certeza?', 0), ('Sim!!! Por favor!!!', 0)]),
+              'b': ((12, 1), [('(b) Olá, tudo bem?', 0), ('Tudo!', 1), ('Leste o novo livro', 0),
+                               ('Sim, li.', 0), ('Oh, que pena eu ainda', 0), ('Podias contar-me', 1),
+                               ('Tens a certeza?', 1), ('Sim!!! Por favor!!!', 1)]),
+              'c': ((13, 0), [('Olá, tudo bem?', 0), ('Tudo!', 0), ('Ontem viste', 0), ('Sim, vi.', 0),
+                               ('Oh, que pena', 0), ('Qual é o teu desportista', 0)])}
+
+
+def _chat(page, lines):
+    return [Emoji(PLk(page, o, k, after='(b) ' if o.startswith('(b) ') else None)) for o, k in lines]
+
+
+SPECS[(2023, 'hl')] = [
+    Task(3, 12, [PL(12, 'Escolha uma opção'), PL(12, 'Continue a troca'), PL(12, 'Escreva cerca de 200')],
+         {x: (page, _chat(page, lines)) for x, ((page, _k), lines) in _Q3_TOPICS.items()},
+         [RangeCrit('content', S(277), 276, [RangeBand(278, 279), RangeBand(280, 281), RangeBand(282, 283)]),
+          RangeCrit('communication', S(285), 284, [RangeBand(286, 290), RangeBand(291, 295), RangeBand(296, 300)]),
+          RangeCrit('language', S(308), 307, [RangeBand(309, 314), RangeBand(315, 321), RangeBand(322, 328)])],
+         _REQ_2023_HL, [10, 11]),
+    Task(4, 15, [PL(15, 'Escolha uma opção'), PL(15, 'Escreva cerca de 200')],
+         {'a': (15, [PLk(15, '(a)', 0, after='(a) ')] + [PLk(15, '•', j) for j in range(5)]),
+          'b': (15, [PLk(15, '(b)', 0, after='(b) '), PL(15, 'chegou.')] + [PLk(15, '•', j) for j in range(5, 10)]),
+          'c': (15, [PLk(15, '(c)', 0, after='(c) ')] + [PLk(15, '•', j) for j in range(10, 15)])},
+         [RungCrit('content', S(336), 336, [(338, 338), (339, 339), (340, 340), (341, 342)]),
+          RangeCrit('communication', S(343), 343, [RangeBand(345, 349), RangeBand(350, 354), RangeBand(355, 359)]),
+          RangeCrit('language', S(360), 360, [RangeBand(362, 367), RangeBand(368, 374), RangeBand(375, 381)])],
+         _REQ_2023_HL, [12]),
+    Task(5, 17, [PL(17, 'Observe as imagens')],
+         {x: (17, [PL(17, 'Escreva um texto em português, com cerca de 150'), PL(17, '• Que mensagem'),
+                   PL(17, '• A sua opinião')]) for x in 'abc'},
+         [RangeCrit('content', S(390), 389, [RangeBand(391, 392), RangeBand(393, 394)]),
+          RangeCrit('communication', S(396), 395, [RangeBand(397, 401), RangeBand(402, 406), RangeBand(407, 411)]),
+          RangeCrit('language', S(413), 412, [RangeBand(414, 419), RangeBand(420, 426), RangeBand(427, 433)])],
+         _REQ_2023_HL, [13]),
 ]
 
 

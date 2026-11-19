@@ -35,8 +35,11 @@ FILINGS = '/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/lang
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 # Sittings with no live card before this lane: a rewrite replaces them whole.
 ALL_NEW = {2026}
-# Written tasks held for the shared lower-scale change (see the docstring).
-WRITING_HELD = {2025, 2026}
+# Written tasks held: 2025/2026 for the shared lower-scale change (see the
+# docstring); 2022/2023 because their grids print every mark, band range and
+# rung price only in the marks cells, which provenance strips (schemeText
+# MARKS_CELL) -- asked of the coordinator 19 Nov 2026.
+WRITING_HELD = {2022, 2023, 2025, 2026}
 
 _GENERATED = None
 

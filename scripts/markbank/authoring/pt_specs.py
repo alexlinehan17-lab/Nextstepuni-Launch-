@@ -27,7 +27,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
 sys.path.insert(0, HERE)
 
-from pt_lib import (S, J, B, T, T2, AnyOf, CELL, PL, Sel, one, menu, alt, stepped, shown, rest,   # noqa: E402,F401
+from pt_lib import (S, J, B, T, T2, TG, AnyOf, CELL, PL, Sel, one, menu, alt, stepped, shown, rest,   # noqa: E402,F401
                     pairs, scheme_doc, build_rows, SCHEMES)
 from eu_paper import EuPaper, read_lines                          # noqa: E402
 from eu_topics import (topic_for, concept_for, answer_language,    # noqa: E402
@@ -306,9 +306,9 @@ def section_intro(doc):
 
 
 def _listening_language(stem):
-    if re.search(r'\bResponda\b.*\bem portugu[eê]s\b', stem):
+    if re.search(r'\bresponda\b.*\bem portugu[eê]s\b', stem, re.I):
         return 'Portuguese'
-    if re.search(r'\bAnswer\b.*\bin English\b', stem):
+    if re.search(r'\banswer\b.*\bin English\b', stem, re.I):
         return ENGLISH_OR_IRISH
     raise ValueError(f'no answer language in {stem!r}')
 
@@ -907,6 +907,92 @@ LISTENING[(2024, 'ol')] = [
     C('LE4', [menu([S(361, before=' and villains'), S(361, after='Superheroes and ')], T(361))]),
     C('LE5', [menu([S(363, before=', dance'), S(363, after='Music, ', before=', food'),
                     S(363, after='floor, ', before=' and drink'), S(363, after='food and ')], T(363))]),
+]
+
+
+# ================================================================ 2023 HL ===
+# Live: 22 reading cards. New: Q1(e) and Q2(g), and the listening test
+# (scheme .md lines 440-605, pages 14-18; each Part 20). The scheme sets
+# circled markers (➀) over the words each mark is for; they are never cut
+# into an answer. Written tasks: pt_writing.py.
+from pt_writing import PLk                                        # noqa: E402
+
+READING[(2023, 'hl')] = [
+    # Three cells, Manhã / Tarde / Noite, each "2 marks: 2 x 1 mark" (any 2):
+    # an anyN row per cell, led by it (cell boundaries read on the rendered
+    # scheme p5: "Foi à escola" is Noite's).
+    C('A1e', [menu([S(114, after='• '), S(115)], T(114), lead=S(114, before=' •')),
+              menu([S(116), S(117, after='• '), S(118)], T(116), lead=S(117, before=' •')),
+              menu([S(119), S(120, after='• '), S(121), S(122)], T(120), lead=S(120, before=' •'))],
+      total=T(113)),
+    C('A2g', [one(CELL(n), T(233, each=True), lead=S(n)) for n in range(234, 241)]
+      + [one(CELL(241), T(233, each=True), lead=J(S(241), S(242)))], total=T(233),
+      question=(PLc(10, '(g) Number', after='(g) '), PL(10, 'the text.'),
+                PL(10, 'Andreas, The Trash'), PL(10, 'You can follow'), PL(10, 'Andreas Noe'),
+                PL(10, 'Andreas has left'), PL(10, 'The Trash Traveller assembled'),
+                PL(10, 'The highest mountain'), PL(10, 'The Trash Traveller will'), PL(10, 'Germany pays'))),
+]
+
+LISTENING[(2023, 'hl')] = [
+    C('LA1', [stepped(B(S(444), S(446)), T(445))]),
+    # The shorter form of the same answer, on its own line at "2 marks": paid
+    # in place of the full answer, never beside it.
+    C('LA2', [menu([J(S(449), S(450))], T(449), [alt(S(451), T(451), of=0)])]),
+    C('LA3', [one(S(454, after='sentiram: '), T(454), lead=S(454, before=': ficaram')),
+              menu([S(455, after='fizeram: ', before='/ esconderam'), S(455, after='porta/ ', before='/ olharam'),
+                    J(S(455, after='esconderam-se/ '), S(456, before='/ riram')), S(456, after='loja/ ')],
+                   T(455), lead=S(455, before=': trancaram'))],
+      extra=(PL(3, 'Testemunhas'), PL(3, 'O que sentiram'), PL(3, 'O que fizeram'))),
+    C('LA4', [one(S(460, after='Assaltante 1 '), T(460), lead=S(460, before=' Ficou')),
+              stepped(J(S(461, after='Assaltante 2 '), S(462, before=' 3 marks')), T(462),
+                      lead=S(461, before=' Tentou'))], total=T(458)),
+    C('LA5', [stepped(J(S(465), S(466)), T(465))]),
+    C('LB1', [one(VI(477, 15), T(477))]),
+    C('LB2', [one(S(480), T(480))]),
+    C('LB3', [one(S(483, after='é ', before=' da Sofia'), T(484, each=True), lead=S(483)),
+              one(S(484, after='gosta de '), T(484, each=True), lead=S(484)),
+              one(S(485, after='possui ', before=' na Serra'), T(484, each=True), lead=S(485)),
+              one(S(485, after='casa na '), T(484, each=True), lead=S(485))], total=T(484),
+      question=(PLc(5, '3. Complete', after='3. '), PL(5, 'O Carlos'), PL(5, 'é _'),
+                PL(5, 'gosta de'), PL(5, 'possui'))),
+    C('LB4', [stepped(J(S(489, before=' ➀'), S(490)), T(489))]),
+    C('LB5', [menu([S(493, before='; meias'), S(493, after='Botas; ', before='; casaco'),
+                    S(493, after='quentes; ', before='; gorro'), S(493, after='impermeável; ', before='; cachecol'),
+                    S(493, after='gorro; ', before='; luvas'), S(493, after='cachecol; ', before=';'),
+                    S(494)], T(493))]),
+    C('LB6', [stepped(J(S(497), S(498)), T(497))]),
+    C('LC1', [one(VI(509, 16), T(509))]),
+    C('LC2', [menu([S(512), S(513), S(514), S(515)], T(514))]),
+    C('LC3', [stepped(S(518), T(518))]),
+    C('LC4', [menu([S(521, before=', groups'), S(521, after='people, ', before=', couples'),
+                    J(S(521, after='friends, '), S(522, before=' or families')), S(522, after='getaway or ')],
+                   T(521))]),
+    C('LC5', [stepped(B(S(525), S(526)), T(526))]),
+    C('LC6', [stepped(J(S(529), S(530)), T(529))]),
+    C('LD1', [one(S(540), T(540))]),
+    # Two answers, each "3 marks: 1 x 3 marks": one claimed.
+    C('LD2', [menu([S(543), S(544)], T(543))]),
+    C('LD3', [stepped(S(547), T(547))]),
+    C('LD4', [one(S(550, after='in-law '), T(551, each=True), lead=S(550, before=' Ana')),
+              one(S(551, after='in-law '), T(551, each=True), lead=S(551, before=' Manuel'))], total=T(551)),
+    C('LD5', [menu([S(554), S(555)], T(554))]),
+    C('LD6', [stepped(S(559), T(559))]),
+    C('LD7', [stepped(S(563), T(563))]),
+    # Two answers, the second on its own line at "2 marks", no "or": an
+    # answer of its own.
+    C('LE1', [menu([S(573)], T(573), [alt(S(574), T(574))])]),
+    C('LE2', [menu([S(577, before=', oil'), S(577, after='economics, ', before=', cultural'),
+                    S(577, after='petrol, ')], T(577))]),
+    C('LE3', [one(J(S(581), S(583)), T(582))]),
+    # Two sentences holding the marked details, "3 marks: 3 x 1 mark (any 3)"
+    # (the cell broken over two lines): one answer on the printed steps.
+    C('LE4', [stepped(B(J(S(587), S(588)), S(589)), TG(586, 588))]),
+    C('LE5', [one(S(593), T(593))], extra=tuple(PLk(12, 'She is a', k) for k in range(4))),
+    C('LE6', [menu([S(596, before=', writers'), S(596, after='Actors, ', before=', journalists'),
+                    S(596, after='writers, ', before=', historians'), S(596, after='journalists, ', before=', and'),
+                    S(596, after='historians, and ')], T(596))]),
+    C('LE7', [one(VI(601, 18), TG(601, 602))]),
+    C('LE8', [one(S(605), T(605))]),
 ]
 
 

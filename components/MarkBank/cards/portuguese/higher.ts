@@ -1414,6 +1414,1191 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-a-1-e", topicId: "portuguese-2-3", conceptId: "foi-dia-narradora",
+    section: "A", questionRef: "2023 HL Section A Q1(e)",
+    stem: "Questão 1 - O Diário de Diene",
+    questionText: "Descreva como foi o dia 26 da narradora. Dê detalhes. (parágrafo 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Manhã”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":1,"options":["Foi trabalhar;","Estava tranquilo."]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Tarde”", group: {"claimMax":2,"perOption":1,"options":["Ouviu música;","Esteve no TikTok;","Não fez o trabalho de química."]} },
+    { id: "r-3", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Noite”", group: {"claimMax":2,"perOption":1,"options":["Foi à escola;","Estava cansada;","Não conversou / estava sozinha;","Voltou para casa."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 1 - O DIÁRIO DE DIENE",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                3,
+                4
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-a-2-g", topicId: "portuguese-2-3", conceptId: "number-following-sentences-order-appear-text",
+    section: "A", questionRef: "2023 HL Section A Q2(g)",
+    stem: "Questão 2 - O Viajante do Lixo",
+    questionText: "Number the following sentences from 1 to 8, according to the order in which they appear in the text. Andreas, The Trash Traveller, collected litter and made urban art out of it. You can follow the Trash Traveller’s activity on social media. Andreas Noe talks about plastic and microplastic. Andreas has left his former job. The Trash Traveller assembled a bicycle, using parts from old ones. The highest mountain in mainland Portugal is Andreas’s next challenge. The Trash Traveller will cycle throughout Portugal for two months. Germany pays for plastic bottles which are collected and delivered for recycling.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "5", marks: 1, contextNote: "For “Andreas, The Trash Traveller, collected litter and made urban art out of it.”: The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "8", marks: 1, contextNote: "For “You can follow the Trash Traveller’s activity on social media.”" },
+    { id: "r-3", kind: "point", verbatim: "4", marks: 1, contextNote: "For “Andreas Noe talks about plastic and microplastic.”" },
+    { id: "r-4", kind: "point", verbatim: "3", marks: 1, contextNote: "For “Andreas has left his former job.”" },
+    { id: "r-5", kind: "point", verbatim: "7", marks: 1, contextNote: "For “The Trash Traveller assembled a bicycle, using parts from old ones.”" },
+    { id: "r-6", kind: "point", verbatim: "2", marks: 1, contextNote: "For “The highest mountain in mainland Portugal is Andreas’s next challenge.”" },
+    { id: "r-7", kind: "point", verbatim: "1", marks: 1, contextNote: "For “The Trash Traveller will cycle throughout Portugal for two months.”" },
+    { id: "r-8", kind: "point", verbatim: "6", marks: 1, contextNote: "For “Germany pays for plastic bottles which are collected and delivered for recycling.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 2 - O VIAJANTE DO LIXO",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-la-1", topicId: "portuguese-2-5", conceptId: "onde-quando-passa-noticia-onde-quando",
+    section: "LA", questionRef: "2023 HL Section LA Q1",
+    stem: "Vai ouvir uma notícia. Haverá uma pausa na segunda vez que o áudio tocar. De acordo com o áudio, responda a todas as questões em português.",
+    questionText: "Onde e quando se passa esta notícia? Onde: Quando:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Onde: Numa pastelaria em Belém. Quando: segunda-feira.", marks: 3, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “3 marks: 3 x 1 mark”.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Notícia — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-la-2", topicId: "portuguese-2-5", conceptId: "idosa-conseguiu-impedir-assalto",
+    section: "LA", questionRef: "2023 HL Section LA Q2",
+    stem: "Vai ouvir uma notícia. Haverá uma pausa na segunda vez que o áudio tocar. De acordo com o áudio, responda a todas as questões em português.",
+    questionText: "Como é que a idosa conseguiu impedir o assalto? Dê detalhes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme allows “Batendo nos assaltantes” for 2 marks, in place of “A idosa impediu o assalto batendo nos assaltantes com a sua mala de mão.”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["A idosa impediu o assalto batendo nos assaltantes com a sua mala de mão.","Batendo nos assaltantes"],"optionMarks":[3,2],"optionOf":[null,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Notícia — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-la-3", topicId: "portuguese-2-5", conceptId: "foi-atitude-testemunhas-quando-viram-assaltantes",
+    section: "LA", questionRef: "2023 HL Section LA Q3",
+    stem: "Vai ouvir uma notícia. Haverá uma pausa na segunda vez que o áudio tocar. De acordo com o áudio, responda a todas as questões em português.",
+    questionText: "Qual foi a atitude das testemunhas quando viram os assaltantes? Testemunhas O que sentiram O que fizeram",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ficaram assustados / medo", marks: 1, contextNote: "For “O que sentiram”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “O que fizeram”", group: {"claimMax":3,"perOption":1,"options":["trancaram a porta","esconderam-se","olharam para fora da loja","riram-se"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Notícia — Question 3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-la-4", topicId: "portuguese-2-5", conceptId: "aconteceu-aos-assaltantes-antes-serem-detidos",
+    section: "LA", questionRef: "2023 HL Section LA Q4",
+    stem: "Vai ouvir uma notícia. Haverá uma pausa na segunda vez que o áudio tocar. De acordo com o áudio, responda a todas as questões em português.",
+    questionText: "O que aconteceu aos assaltantes antes de serem detidos? Dê detalhes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ficou no local / paralisado de espanto", marks: 3, contextNote: "For “Assaltante 1”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "criterion", verbatim: "Tentou fugir, mas quase foi atropelado por um automóvel acabando por ser apanhado por um grupo de populares.", marks: 3, contextNote: "For “Assaltante 2”: The scheme prices this answer “3 marks: 3 x 1 mark”.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Notícia — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-la-5", topicId: "portuguese-2-5", conceptId: "idosa-quis-ser-identificada",
+    section: "LA", questionRef: "2023 HL Section LA Q5",
+    stem: "Vai ouvir uma notícia. Haverá uma pausa na segunda vez que o áudio tocar. De acordo com o áudio, responda a todas as questões em português.",
+    questionText: "Por que razão a idosa não quis ser identificada? Dê detalhes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Porque é diabética e o marido não sabe que estava a comprar Pastéis de Nata.", marks: 4, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “4 marks: 2 x 2 marks”.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Notícia — Question 5",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-lb-1", topicId: "portuguese-2-5", conceptId: "sofia-pedro-marcaram-encontro-centro-comercial",
+    section: "LB", questionRef: "2023 HL Section LB Q1",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. De acordo com o áudio, responda a todas as questões em português.",
+    questionText: "A Sofia e o Pedro marcaram encontro no Centro Comercial. Assinale a opção correta com um (✓).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Falso", marks: 2, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B No Centro Comercial — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-lb-2", topicId: "portuguese-2-5", conceptId: "quando-sofia-foi-centro-comercial",
+    section: "LB", questionRef: "2023 HL Section LB Q2",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. De acordo com o áudio, responda a todas as questões em português.",
+    questionText: "Quando é que a Sofia foi ao Centro Comercial?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No fim / final de semana.", marks: 2, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B No Centro Comercial — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-lb-3", topicId: "portuguese-2-5", conceptId: "complete-espacos-audio-carlos-sofia-pedro",
+    section: "LB", questionRef: "2023 HL Section LB Q3",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. De acordo com o áudio, responda a todas as questões em português.",
+    questionText: "Complete os espaços de acordo com o áudio. O Carlos é _______________________ da Sofia e do Pedro. gosta de _________________________________________________ possui __________________ na _____________________________",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "colega", marks: 1, contextNote: "For “é colega da Sofia e do Pedro”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "viajar", marks: 1, contextNote: "For “gosta de viajar”" },
+    { id: "r-3", kind: "point", verbatim: "uma casa", marks: 1, contextNote: "For “possui uma casa na Serra da Estrela”" },
+    { id: "r-4", kind: "point", verbatim: "Serra da Estrela", marks: 1, contextNote: "For “possui uma casa na Serra da Estrela”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B No Centro Comercial — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-lb-4", topicId: "portuguese-2-5", conceptId: "foi-convite-sofia-recebeu",
+    section: "LB", questionRef: "2023 HL Section LB Q4",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. De acordo com o áudio, responda a todas as questões em português.",
+    questionText: "Qual foi o convite que a Sofia recebeu? Dê detalhes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A Sofia recebeu um convite do Carlos para passar uma semana na casa dele na Serra da Estrela / para ver a neve.", marks: 2, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “2 marks: 2 x 1 mark”.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B No Centro Comercial — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-lb-5", topicId: "portuguese-2-5", conceptId: "enumere-pedro-aconselhou-sofia-comprar",
+    section: "LB", questionRef: "2023 HL Section LB Q5",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. De acordo com o áudio, responda a todas as questões em português.",
+    questionText: "Enumere o que o Pedro aconselhou a Sofia a comprar.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":4,"perOption":1,"options":["Botas","meias quentes","casaco impermeável","gorro","cachecol","luvas","roupa quente e leve."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B No Centro Comercial — Question 5",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-lb-6", topicId: "portuguese-2-5", conceptId: "serra-estrela",
+    section: "LB", questionRef: "2023 HL Section LB Q6",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. De acordo com o áudio, responda a todas as questões em português.",
+    questionText: "Descreva a Serra da Estrela. Dê detalhes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A Serra da Estrela é muito bonita e tem muitos trilhos para fazer caminhadas e restaurantes com comida tradicional espetacular.", marks: 6, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “6 marks: 3 x 2 marks”.", permittedMarks: [0,2,4,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B No Centro Comercial — Question 6",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-lc-1", topicId: "portuguese-2-5", conceptId: "history-porto-seguro-known-today-started",
+    section: "LC", questionRef: "2023 HL Section LC Q1",
+    stem: "You will hear an informative piece. There will be a pause during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "The history of Porto Seguro, as it is known today, started in the year 520. Tick (✓) the correct answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Falso", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Porto Seguro The history of Porto Seguro, as it is known today, started in the year 520. Tick (✓) the correct — Question 1",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-lc-2", topicId: "portuguese-2-5", conceptId: "list-attractions-available-porto-seguro",
+    section: "LC", questionRef: "2023 HL Section LC Q2",
+    stem: "You will hear an informative piece. There will be a pause during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "List the attractions available in Porto Seguro.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":4,"perOption":1,"options":["Beaches","Parties / Animation","Good food / lots of restaurants/ gastronomy","Wonderful tours / walks / trips"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Porto Seguro The history of Porto Seguro, as it is known today, started in the year 520. Tick (✓) the correct — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-lc-3", topicId: "portuguese-2-5", conceptId: "find-porto-seguro-historical-centre",
+    section: "LC", questionRef: "2023 HL Section LC Q3",
+    stem: "You will hear an informative piece. There will be a pause during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "What can one find at Porto Seguro’s historical centre?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Visit old buildings and important historical points of interest.", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “4 marks: 2 x 2 marks”.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Porto Seguro The history of Porto Seguro, as it is known today, started in the year 520. Tick (✓) the correct — Question 3",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-lc-4", topicId: "portuguese-2-5", conceptId: "type-people-enjoy-passarela-descobrimento",
+    section: "LC", questionRef: "2023 HL Section LC Q4",
+    stem: "You will hear an informative piece. There will be a pause during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "What type of people can enjoy Passarela do Descobrimento?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":4,"perOption":1,"options":["Lively young people","groups of friends","couples on a romantic getaway","families with children."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Porto Seguro The history of Porto Seguro, as it is known today, started in the year 520. Tick (✓) the correct — Question 4",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-lc-5", topicId: "portuguese-2-5", conceptId: "beaches-sea-porto-seguro",
+    section: "LC", questionRef: "2023 HL Section LC Q5",
+    stem: "You will hear an informative piece. There will be a pause during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "Describe the beaches and sea at Porto Seguro.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Beaches Fine and white sand. Sea Warm and green.", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “4 marks: 4 x 1 mark”.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Porto Seguro The history of Porto Seguro, as it is known today, started in the year 520. Tick (✓) the correct — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-lc-6", topicId: "portuguese-2-5", conceptId: "happens-porto-seguro-high-season",
+    section: "LC", questionRef: "2023 HL Section LC Q6",
+    stem: "You will hear an informative piece. There will be a pause during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "What happens in Porto Seguro in high season? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "During high season Porto Seguro is crowded with many parties, with music and dancing in the typical rhythms of the region.", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “2 marks: 2 x 1 mark (any 2)”.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Porto Seguro The history of Porto Seguro, as it is known today, started in the year 520. Tick (✓) the correct — Question 6",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-ld-1", topicId: "portuguese-2-5", conceptId: "venue-sara-celebrating-birthday",
+    section: "LD", questionRef: "2023 HL Section LD Q1",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "Give details about the venue where Sara is celebrating her birthday.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sara is celebrating her birthday at home / garden.", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Festa de Aniversário — Question 1",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-ld-2", topicId: "portuguese-2-5", conceptId: "sara-younger-than-duarte",
+    section: "LD", questionRef: "2023 HL Section LD Q2",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "Is Sara younger than Duarte? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["She is one year younger than him.","She is 19 and Duarte is 20."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Festa de Aniversário — Question 2",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-ld-3", topicId: "portuguese-2-5", conceptId: "sara-father",
+    section: "LD", questionRef: "2023 HL Section LD Q3",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "Describe Sara’s father.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Sara’s father is tall, bald, with a moustache and brown eyes.", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “4 marks: 4 x 1 mark”.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Festa de Aniversário — Question 3",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-ld-4", topicId: "portuguese-2-5", conceptId: "names-carolina-laws",
+    section: "LD", questionRef: "2023 HL Section LD Q4",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "What are the names of Carolina’s in‐laws?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ana", marks: 1, contextNote: "For “Mother in-law”: The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Manuel / Emanuel", marks: 1, contextNote: "For “Father in-law”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Festa de Aniversário — Question 4",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-ld-5", topicId: "portuguese-2-5", conceptId: "sara-uncle-famous",
+    section: "LD", questionRef: "2023 HL Section LD Q5",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "Why is Sara’s uncle famous?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":2,"options":["Because he plays in a band / samba","Because he is a musician in a band"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Festa de Aniversário — Question 5",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-ld-6", topicId: "portuguese-2-5", conceptId: "joao-arrive-late-party",
+    section: "LD", questionRef: "2023 HL Section LD Q6",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "Why does João arrive late to the party? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Usually, he has rehearsals until eight in the evening.", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “2 marks: 2 x 1 mark”.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Festa de Aniversário — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-ld-7", topicId: "portuguese-2-5", conceptId: "duarte-before-met-sara's-uncle",
+    section: "LD", questionRef: "2023 HL Section LD Q7",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "What did Duarte do before he met Sara's uncle?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "He asked for / drunk a lemonade with lots of ice.", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “3 marks: 3 x 1 mark”.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Festa de Aniversário — Question 7",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-le-1", topicId: "portuguese-2-5", conceptId: "njinga-represent",
+    section: "LE", questionRef: "2023 HL Section LE Q1",
+    stem: "You will hear a podcast. There will be two pauses during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "Who does Njinga represent?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices “African women.” at 2 marks, as an answer of its own.", group: {"claimMax":1,"perOption":3,"options":["The Angolan people/ Symbol of Angola","African women."],"optionMarks":[3,2],"optionOf":[null,null]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Njinga, Rainha de Angola — Question 1",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-le-2", topicId: "portuguese-2-5", conceptId: "angola-attracting-attention-internationally",
+    section: "LE", questionRef: "2023 HL Section LE Q2",
+    stem: "You will hear a podcast. There will be two pauses during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "How is Angola attracting attention internationally?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":1,"options":["Development and economics","oil/ petrol","cultural or Kuduro"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Njinga, Rainha de Angola — Question 2",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-le-3", topicId: "portuguese-2-5", conceptId: "film-released",
+    section: "LE", questionRef: "2023 HL Section LE Q3",
+    stem: "You will hear a podcast. There will be two pauses during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "When was the film released?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "During the commemorations of the anniversary of the independence of Angola.", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Njinga, Rainha de Angola — Question 3",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-le-4", topicId: "portuguese-2-5", conceptId: "njinga-main-characteristics",
+    section: "LE", questionRef: "2023 HL Section LE Q4",
+    stem: "You will hear a podcast. There will be two pauses during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "What are Njinga’s main characteristics?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "She is a determined and warrior queen, who sacrifices her love in favour of the fight to free her people; She represents the strength of African women.", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “3 marks: 3 x 1 mark”.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Njinga, Rainha de Angola — Question 4",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-le-5", topicId: "portuguese-2-5", conceptId: "tick-correct-answer-below-reference-lesliana",
+    section: "LE", questionRef: "2023 HL Section LE Q5",
+    stem: "You will hear a podcast. There will be two pauses during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "Tick (✓) the correct answer below in reference to Lesliana Pereira. She is a 23‐year‐old top model and journalist and was Miss Angola in 2018. She is a 26‐year‐old top model and journalist and was Miss Angola in 2008. She is a 23‐year‐old top model and actress and was Miss Angola in 2018. She is a 26‐year‐old top model and actress and was Miss Angola in 2008.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "She is a 26-year-old top model and actress and was Miss Angola in 2008", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Njinga, Rainha de Angola — Question 5",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-le-6", topicId: "portuguese-2-5", conceptId: "gave-standing-ovation-premiere-film",
+    section: "LE", questionRef: "2023 HL Section LE Q6",
+    stem: "You will hear a podcast. There will be two pauses during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "Who gave a standing ovation at the premiere of the film?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":4,"perOption":1,"options":["Artists/ Actors","writers","journalists","historians","film lovers."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Njinga, Rainha de Angola — Question 6",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-le-7", topicId: "portuguese-2-5", conceptId: "during-first-week-showing-film-njinga",
+    section: "LE", questionRef: "2023 HL Section LE Q7",
+    stem: "You will hear a podcast. There will be two pauses during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "During the first week of showing, the film Njinga, Rainha de Angola has sold as many tickets as Avatar. Tick (✓) the correct answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Falso", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Njinga, Rainha de Angola — Question 7",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",
+    id: "por-2023-hl-le-8", topicId: "portuguese-2-5", conceptId: "topic-next-episode-podcast",
+    section: "LE", questionRef: "2023 HL Section LE Q8",
+    stem: "You will hear a podcast. There will be two pauses during the second playing. Based on the audio, answer all questions in English.",
+    questionText: "What is the topic of the next episode of the Podcast?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Adaptation of the film into a miniseries about the history of Angola.", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Njinga, Rainha de Angola — Question 8",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Portuguese 2023 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2023 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC018ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Higher Level — © State Examinations Commission.",
