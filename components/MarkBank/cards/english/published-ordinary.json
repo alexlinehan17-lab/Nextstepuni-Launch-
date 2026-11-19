@@ -59,6 +59,17 @@
    "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce"
   },
   {
+   "paperId": "english-2024-ol-deferred-p1",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "tasks": 22,
+   "cards": 20,
+   "printedDuplicates": 2,
+   "paperSha256": "f5ad8ce2de2939fecb99076b76f8e2f95f40919f6fccce61cb94624841cefba1",
+   "schemeSha256": "2cff36cfe559ca5bf37c6808ccb82c587ef6a736366997defceac92757f119c9"
+  },
+  {
    "paperId": "english-2024-ol-p2",
    "year": 2024,
    "level": "ordinary",
@@ -68,6 +79,17 @@
    "printedDuplicates": 3,
    "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
    "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce"
+  },
+  {
+   "paperId": "english-2024-ol-deferred-p2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "tasks": 104,
+   "cards": 101,
+   "printedDuplicates": 3,
+   "paperSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee",
+   "schemeSha256": "2cff36cfe559ca5bf37c6808ccb82c587ef6a736366997defceac92757f119c9"
   },
   {
    "paperId": "english-2023-ol-p1",
@@ -1619,6 +1641,16 @@
     },
     "capRulePage": 3
    },
+   "2024-ordinary-deferred": {
+    "family": "ol-o1-o8-2018",
+    "gridPages": [
+     34
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2025-ordinary": {
     "family": "ol-o1-o8-2018",
     "gridPages": [
@@ -2215,7 +2247,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1947,
+ "cardCount": 2068,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -12102,6 +12134,800 @@
    }
   },
   {
+   "id": "english-2024-ol-deferred-p1-t1-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 1 QA(i) — Deferred sitting",
+   "questionText": "Identify three aspects of Taylor Swift’s personality, evident in TEXT 1, that in your opinion may have helped her to become successful. Explain why you think these aspects of Taylor’s personality may have contributed to her success.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "A Successful Singer-Songwriter",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Taylor Swift — edited extracts from her speech to students graduating from New York University in 2022, when she was awarded an honorary doctorate, with a photograph from the ceremony (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-t1-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 1 QA(ii) — Deferred sitting",
+   "questionText": "Explain what Taylor Swift says to encourage the graduating students during the course of her speech. Support your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "A Successful Singer-Songwriter",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Taylor Swift — edited extracts from her speech to students graduating from New York University in 2022, when she was awarded an honorary doctorate, with a photograph from the ceremony (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-t1-a-iii-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 1 QA(iii)(a) — Deferred sitting",
+   "questionText": "You have been asked to choose a title for a documentary film about Taylor Swift. Based on what you have read above, which one of the following titles would you choose? Swift Success Taylor Made Taylor Swift – A Life in Music Support your choice with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected title: 1 of 3). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "A Successful Singer-Songwriter",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Taylor Swift — edited extracts from her speech to students graduating from New York University in 2022, when she was awarded an honorary doctorate, with a photograph from the ceremony (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-t1-a-iii-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 1 QA(iii)(b) — Deferred sitting",
+   "questionText": "Identify a successful person you would really like to meet. Explain at least one reason why you would particularly like to meet this person. In your answer you may not refer to any of the people featured in this examination paper.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "8"
+   },
+   "atlasPlacements": [
+    {
+     "fileid": "LC002GLP100EV-deferred.pdf",
+     "n": "10"
+    },
+    {
+     "fileid": "LC002GLP100EV-deferred.pdf",
+     "n": "12"
+    }
+   ]
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-t1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 1 QB — Deferred sitting",
+   "questionText": "Based on your reading of TEXT 1, imagine you are one of the graduates who attended the ceremony at which Taylor Swift spoke. Write a post for your blog in which you: outline what Taylor Swift told the graduating students, give your reaction to what she said and explain why you do or do not think she was a good choice of speaker for the event.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "A Successful Singer-Songwriter",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Taylor Swift — edited extracts from her speech to students graduating from New York University in 2022, when she was awarded an honorary doctorate, with a photograph from the ceremony (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-t2-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 2 QA(i) — Deferred sitting",
+   "questionText": "Identify three aspects of Mark Smith’s personality, evident in TEXT 2, that in your opinion may have helped him to become successful. Explain why you think these aspects of Mark’s personality may have contributed to his success.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "A Successful Actor",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Material drawn from two articles about the actor Mark Smith, one by Marjorie Brennan and one by Orla Dwyer, with a photograph of Mark Smith and Aisling Byrne on stage (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-t2-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 2 QA(ii) — Deferred sitting",
+   "questionText": "Explain the ways in which Aisling Byrne contributed to Mark Smith’s success. Support your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "A Successful Actor",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Material drawn from two articles about the actor Mark Smith, one by Marjorie Brennan and one by Orla Dwyer, with a photograph of Mark Smith and Aisling Byrne on stage (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-t2-a-iii-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 2 QA(iii)(a) — Deferred sitting",
+   "questionText": "You have been asked to choose a title for a documentary film about Mark Smith’s life. Based on what you have read above, which one of the following titles would you choose? Believe It, Achieve It Making A Mark A Man of Many Talents Support your choice with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected title: 1 of 3). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "A Successful Actor",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Material drawn from two articles about the actor Mark Smith, one by Marjorie Brennan and one by Orla Dwyer, with a photograph of Mark Smith and Aisling Byrne on stage (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-t2-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 2 QB — Deferred sitting",
+   "questionText": "You have been asked to write a letter to Mark Smith inviting him to present your school’s High Achiever Award. This award recognises achievement in sport or academics or the arts. It can also be awarded for community involvement. In your letter you should: invite Mark Smith to the event, provide him with information and details about the event, identify the winner and explain the reasons why this person is being honoured in this way.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-t3-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 3 QA(i) — Deferred sitting",
+   "questionText": "Identify three aspects of Kellie Harrington’s personality, evident in TEXT 3, that in your opinion may have helped her to become successful. Explain why you think these aspects of Kellie’s personality may have contributed to her success.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "A Successful Sportsperson",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Kellie Harrington — edited extracts from Kellie, her book written with Roddy Doyle, with the book’s cover (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-t3-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 3 QA(ii) — Deferred sitting",
+   "questionText": "Explain the ways in which Joey O’Brien contributed to Kellie Harrington’s success. Support your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "A Successful Sportsperson",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Kellie Harrington — edited extracts from Kellie, her book written with Roddy Doyle, with the book’s cover (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-t3-a-iii-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 3 QA(iii)(a) — Deferred sitting",
+   "questionText": "You have been asked to choose a title for a documentary film about Kellie Harrington. Based on what you have read above, which one of the following titles would you choose? Fighter Girl Never Give Up Champ Support your choice with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected title: 1 of 3). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "A Successful Sportsperson",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Kellie Harrington — edited extracts from Kellie, her book written with Roddy Doyle, with the book’s cover (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-t3-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 3 QB — Deferred sitting",
+   "questionText": "Imagine you have written a book about the life of a successful person you admire. Identify the successful person your book is about and write an introduction for it in which you: explain why you chose to write about this person, outline what writing the book taught you about success and share the reasons why you think readers will enjoy the book.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-composing-1",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Composing 1 — Deferred sitting",
+   "questionText": "Taylor Swift, one of the world’s most famous people, features in TEXT 1. Write an article, for publication in a popular magazine, in which you explore both the positive and negative aspects of being famous.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    3,
+    11,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-composing-2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Composing 2 — Deferred sitting",
+   "questionText": "TEXTS 1, 2 and 3, all deal with the theme of Celebrating Success. As the chairperson of your school’s graduation committee, you have been asked to give a speech at the graduation event. The theme of your speech is, “Celebrating Success”. Write the speech you would deliver.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-composing-3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Composing 3 — Deferred sitting",
+   "questionText": "In TEXT 3, Kellie Harrington mentions that there are boxing clubs on every corner of inner-city Dublin. Write an article for the sports pages of a local newspaper in which you discuss the contribution made to the community by sporting groups of all kinds, celebrate local sporting achievements and encourage more young people to participate in local sporting activities.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    3,
+    11,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-composing-4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Composing 4 — Deferred sitting",
+   "questionText": "TEXT 2 is entitled ‘A Successful Actor’. Write a short story about a school show or a production by a local drama group that faced a variety of difficulties in the run-up to the opening night of their play. Your story may be serious or humorous or both.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    3,
+    11,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-composing-5",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Composing 5 — Deferred sitting",
+   "questionText": "The individuals featured in TEXTS 1, 2 and 3 are all passionate about what they do in life. Write a personal essay about an activity you feel passionate about, explain how participating in this activity makes you feel and the impact your participation has had on your life.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-composing-6",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Composing 6 — Deferred sitting",
+   "questionText": "TEXTS 1, 2 and 3 all feature people from different professional backgrounds. Write a short story in which a successful scientist, a successful engineer and a celebrity chef get stranded together on a desert island and have to pool their skills in order to survive until they are rescued.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    3,
+    11,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p1-composing-7",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Composing 7 — Deferred sitting",
+   "questionText": "In TEXTS 1, 2 and 3 we meet people who have enjoyed different kinds of success. Write a personal essay about what success means to you, discuss some of your personal successes and explain who or what helped you to achieve your success.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP100EV-deferred.pdf",
+    "n": "7"
+   }
+  },
+  {
    "id": "english-2024-ol-p2-single-a-q1-a",
    "year": 2024,
    "level": "ordinary",
@@ -15832,6 +16658,3826 @@
    "paperFileid": "LC002GLP200EV",
    "atlas": {
     "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-a-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text A Q1(a) — Deferred sitting",
+   "questionText": "Identify a complicated relationship in Doerr’s novel, All the Light We Cannnot See. Explain one reason why this relationship is complicated.",
+   "totalMarks": 10,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-a-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text A Q1(b) — Deferred sitting",
+   "questionText": "Are the characters in the complicated relationship you identified in part (a) happy, unhappy or a combination of both? Explain your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-a-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text A Q1(c) — Deferred sitting",
+   "questionText": "What is the most valuable lesson you have learned from your study of the complicated relationship you have identified? Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-a-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text A Q2 — Deferred sitting",
+   "questionText": "Your local book club has just finished reading Doerr’s novel, All the Light We Cannot See. You have been asked to give a presentation to the group about the lasting thoughts and feelings you were left with having read the novel. Write the text of the presentation you would give. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-a-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text A Q3 — Deferred sitting",
+   "questionText": "Doerr’s novel, All the Light We Cannot See, has been described as a fascinating exploration of the challenges faced by characters in the world in which they live. Do you agree or disagree with this view? Support your response with reference to at least one character in the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-a-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text A Q4 — Deferred sitting",
+   "questionText": "To celebrate Reading Week, your English class is staging a series of lunchtime talks about Anthony Doerr’s novel, All the Light We Cannot See. You have been asked to give a talk focusing on three key moments from the novel that you think an audience would be interested in hearing about. Write the text of the talk you would give, identifying the key moments and explaining the reasons for your choice. Your explanation should demonstrate your knowledge and understanding of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-b-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text B Q1(a) — Deferred sitting",
+   "questionText": "Identify a complicated relationship in Eliot’s novel, Silas Marner. Explain one reason why this relationship is complicated.",
+   "totalMarks": 10,
+   "topicId": "english-12-31",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Silas Marner (George Eliot)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-b-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text B Q1(b) — Deferred sitting",
+   "questionText": "Are the characters in the complicated relationship you identified in part (a) happy, unhappy or a combination of both? Explain your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-31",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Silas Marner (George Eliot)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-b-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text B Q1(c) — Deferred sitting",
+   "questionText": "What is the most valuable lesson you have learned from your study of the complicated relationship you have identified? Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-31",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Silas Marner (George Eliot)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-b-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text B Q2 — Deferred sitting",
+   "questionText": "Your local book club has just finished reading Eliot’s novel, Silas Marner. You have been asked to give a presentation to the group about the lasting thoughts and feelings you were left with having read the novel. Write the text of the presentation you would give. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-31",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Silas Marner (George Eliot)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-b-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text B Q3 — Deferred sitting",
+   "questionText": "Eliot’s novel, Silas Marner, has been described as a fascinating exploration of the challenges faced by characters in the world in which they live. Do you agree or disagree with this view? Support your response with reference to at least one character in the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-31",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Silas Marner (George Eliot)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-b-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text B Q4 — Deferred sitting",
+   "questionText": "To celebrate Reading Week, your English class is staging a series of lunchtime talks about Eliot’s novel, Silas Marner. You have been asked to give a talk focusing on three key moments from the novel that you think an audience would be interested in hearing about. Write the text of the talk you would give, identifying the key moments and explaining the reasons for your choice. Your explanation should demonstrate your knowledge and understanding of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-31",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Silas Marner (George Eliot)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-c-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text C Q1(a) — Deferred sitting",
+   "questionText": "Identify a complicated relationship in Friel’s play, Philadelphia, Here I Come!. Explain one reason why this relationship is complicated.",
+   "totalMarks": 10,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    16
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-c-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text C Q1(b) — Deferred sitting",
+   "questionText": "Are the characters in the complicated relationship you identified in part (a) happy, unhappy or a combination of both? Explain your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    16
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-c-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text C Q1(c) — Deferred sitting",
+   "questionText": "What is the most valuable lesson you have learned from your study of the complicated relationship you have identified? Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    16
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-c-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text C Q2 — Deferred sitting",
+   "questionText": "Your local drama group has just attended a production of Friel’s play, Philadelphia, Here I Come!. You have been asked to give a presentation to the group about the lasting thoughts and feelings you were left with having watched the play. Write the text of the presentation you would give. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-c-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text C Q3 — Deferred sitting",
+   "questionText": "Brian Friel’s play, Philadelphia, Here I Come!, has been described as a fascinating exploration of the challenges faced by characters in the world in which they live. Do you agree or disagree with this view? Support your response with reference to at least one character in the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-c-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text C Q4 — Deferred sitting",
+   "questionText": "To celebrate Drama Week, English classes in your school are staging scenes from the plays they are studying. Your class is to stage a scene from Brian Friel’s play, Philadelphia, Here I Come!. Identify the scene that your class has chosen to stage and explain three reasons why you think an audience would be interested in watching this scene. Your explanation should demonstrate your knowledge and understanding of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-d-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text D Q1(a) — Deferred sitting",
+   "questionText": "Identify a complicated relationship in Hansberry’s play, A Raisin in the Sun. Explain one reason why this relationship is complicated.",
+   "totalMarks": 10,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-d-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text D Q1(b) — Deferred sitting",
+   "questionText": "Are the characters in the complicated relationship you identified in part (a) happy, unhappy or a combination of both? Explain your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-d-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text D Q1(c) — Deferred sitting",
+   "questionText": "What is the most valuable lesson you have learned from your study of the complicated relationship you have identified? Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-d-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text D Q2 — Deferred sitting",
+   "questionText": "Your local drama group has just attended a production of Hansberry’s play, A Raisin in The Sun. You have been asked to give a presentation to the group about the lasting thoughts and feelings you were left with having watched the play. Write the text of the presentation you would give. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-d-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text D Q3 — Deferred sitting",
+   "questionText": "Hansberry’s play, A Raisin in the Sun, has been described as a fascinating exploration of the challenges faced by characters in the world in which they live. Do you agree or disagree with this view? Support your response with reference to at least one character in the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-d-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text D Q4 — Deferred sitting",
+   "questionText": "To celebrate Drama Week, English classes in your school are staging scenes from the plays they are studying. Your class is to stage a scene from Lorraine Hansberry’s play, A Raisin in the Sun. Identify the scene that your class has chosen to stage and explain three reasons why you think an audience would be interested in watching this scene. Your explanation should demonstrate your knowledge and understanding of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-e-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text E Q1(a) — Deferred sitting",
+   "questionText": "Identify a complicated relationship in Miller’s play, The Crucible. Explain one reason why this relationship is complicated.",
+   "totalMarks": 10,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    18
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-e-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text E Q1(b) — Deferred sitting",
+   "questionText": "Are the characters in the complicated relationship you identified in part (a) happy, unhappy or a combination of both? Explain your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    18
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-e-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text E Q1(c) — Deferred sitting",
+   "questionText": "What is the most valuable lesson you have learned from your study of the complicated relationship you have identified? Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-e-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text E Q2 — Deferred sitting",
+   "questionText": "Your local drama group has just attended a production of Miller’s play, The Crucible. You have been asked to give a presentation to the group about the lasting thoughts and feelings you were left with having watched the play. Write the text of the presentation you would give. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-e-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text E Q3 — Deferred sitting",
+   "questionText": "Miller’s play, The Crucible, has been described as a fascinating exploration of the challenges faced by characters in the world in which they live. Do you agree or disagree with this view? Support your response with reference to at least one character in the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-e-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text E Q4 — Deferred sitting",
+   "questionText": "To celebrate Drama Week, English classes in your school are staging scenes from the plays they are studying. Your class is to stage a scene from Arthur Miller’s play, The Crucible. Identify the scene that your class has chosen to stage and explain three reasons why you think an audience would be interested in watching this scene. Your explanation should demonstrate your knowledge and understanding of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-f-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text F Q1(a) — Deferred sitting",
+   "questionText": "Identify a complicated relationship in Rash’s novel, The Cove. Explain one reason why this relationship is complicated.",
+   "totalMarks": 10,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-f-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text F Q1(b) — Deferred sitting",
+   "questionText": "Are the characters in the complicated relationship you identified in part (a) happy, unhappy or a combination of both? Explain your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-f-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text F Q1(c) — Deferred sitting",
+   "questionText": "What is the most valuable lesson you have learned from your study of the complicated relationship you have identified? Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-f-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text F Q2 — Deferred sitting",
+   "questionText": "Your local book club has just finished reading Rash’s novel, The Cove. You have been asked to give a presentation to the group about the lasting thoughts and feelings you were left with having read the novel. Write the text of the presentation you would give. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-f-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text F Q3 — Deferred sitting",
+   "questionText": "Rash’s novel, The Cove, has been described as a fascinating exploration of the challenges faced by characters in the world in which they live. Do you agree or disagree with this view? Support your response with reference to at least one character in the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-f-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text F Q4 — Deferred sitting",
+   "questionText": "To celebrate Reading Week, your English class is staging a series of lunchtime talks about Rash’s novel, The Cove. You have been asked to give a talk focusing on three key moments from the novel that you think an audience would be interested in hearing about. Write the text of the talk you would give, identifying the key moments and explaining the reasons for your choice. Your explanation should demonstrate your knowledge and understanding of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-g-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text G Q1(a) — Deferred sitting",
+   "questionText": "Identify a complicated relationship in Shakespeare’s play, Hamlet. Explain one reason why this relationship is complicated.",
+   "totalMarks": 10,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-g-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text G Q1(b) — Deferred sitting",
+   "questionText": "Are the characters in the complicated relationship you identified in part (a) happy, unhappy or a combination of both? Explain your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-g-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text G Q1(c) — Deferred sitting",
+   "questionText": "What is the most valuable lesson you have learned from your study of the complicated relationship you have identified? Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-g-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text G Q2 — Deferred sitting",
+   "questionText": "Your local drama group has just attended a production of Shakespeare’s play, Hamlet. You have been asked to give a presentation to the group about the lasting thoughts and feelings you were left with having watched the play. Write the text of the presentation you would give. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-g-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text G Q3 — Deferred sitting",
+   "questionText": "Shakespeare’s play, Hamlet, has been described as a fascinating exploration of the challenges faced by characters in the world in which they live. Do you agree or disagree with this view? Support your response with reference to at least one character in the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-g-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text G Q4 — Deferred sitting",
+   "questionText": "To celebrate Drama Week, English classes in your school are staging scenes from the plays they are studying. Your class is to stage a scene from Shakespeare’s play, Hamlet. Identify the scene that your class has chosen to stage and explain three reasons why you think an audience would be interested in watching this scene. Your explanation should demonstrate your knowledge and understanding of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-h-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text H Q1(a) — Deferred sitting",
+   "questionText": "Identify a complicated relationship in Shelley’s novel, Frankenstein. Explain one reason why this relationship is complicated.",
+   "totalMarks": 10,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-h-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text H Q1(b) — Deferred sitting",
+   "questionText": "Are the characters in the complicated relationship you identified in part (a) happy, unhappy or a combination of both? Explain your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-h-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text H Q1(c) — Deferred sitting",
+   "questionText": "What is the most valuable lesson you have learned from your study of the complicated relationship you have identified? Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-h-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text H Q2 — Deferred sitting",
+   "questionText": "Your local book club has just finished reading Shelley’s novel, Frankenstein. You have been asked to give a presentation to the group about the lasting thoughts and feelings you were left with having read the novel. Write the text of the presentation you would give. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-h-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text H Q3 — Deferred sitting",
+   "questionText": "Shelley’s novel, Frankenstein, has been described as a fascinating exploration of the challenges faced by characters in the world in which they live. Do you agree or disagree with this view? Support your response with reference to at least one character in the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-h-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text H Q4 — Deferred sitting",
+   "questionText": "To celebrate Reading Week, your English class is staging a series of lunchtime talks about Shelley’s novel, Frankenstein. You have been asked to give a talk focusing on three key moments from the novel that you think an audience would be interested in hearing about. Write the text of the talk you would give, identifying the key moments and explaining the reasons for your choice. Your explanation should demonstrate your knowledge and understanding of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-i-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text I Q1(a) — Deferred sitting",
+   "questionText": "Identify a complicated relationship in Wilde’s novel, The Picture of Dorian Gray. Explain one reason why this relationship is complicated.",
+   "totalMarks": 10,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-i-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text I Q1(b) — Deferred sitting",
+   "questionText": "Are the characters in the complicated relationship you identified in part (a) happy, unhappy or a combination of both? Explain your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-i-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text I Q1(c) — Deferred sitting",
+   "questionText": "What is the most valuable lesson you have learned from your study of the complicated relationship you have identified? Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-i-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text I Q2 — Deferred sitting",
+   "questionText": "Your local book club has just finished reading Wilde’s novel, The Picture of Dorian Gray. You have been asked to give a presentation to the group about the lasting thoughts and feelings you were left with having read the novel. Write the text of the presentation you would give. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-i-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text I Q3 — Deferred sitting",
+   "questionText": "Wilde’s novel, The Picture of Dorian Gray, has been described as a fascinating exploration of the challenges faced by characters in the world in which they live. Do you agree or disagree with this view? Support your response with reference to at least one character in the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-single-i-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text I Q4 — Deferred sitting",
+   "questionText": "To celebrate Reading Week, your English class is staging a series of lunchtime talks about Wilde’s novel, The Picture of Dorian Gray. You have been asked to give a talk focusing on three key moments from the novel that you think an audience would be interested in hearing about. Write the text of the talk you would give, identifying the key moments and explaining the reasons for your choice. Your explanation should demonstrate your knowledge and understanding of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    3,
+    15,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-a-q1-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative A Q1(a)(i) — Deferred sitting",
+   "questionText": "Name one text on your comparative course and identify a hero, heroine or villain in it. Use one or more key moment(s) to show how an action or a decision taken by this character had a significant impact on another character. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-a-q1-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative A Q1(a)(ii) — Deferred sitting",
+   "questionText": "Name another comparative text you have studied and identify a hero, heroine or villain in it. Use one or more key moment(s) to show how an action or a decision taken by this character had a significant impact on another character. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-a-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative A Q1(b) — Deferred sitting",
+   "questionText": "Identify a hero, heroine or villain from each of at least two texts on your comparative course. Compare the extent to which you found these characters inspiring. Support your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-a-q2-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative A Q2(a)(i) — Deferred sitting",
+   "questionText": "Name one text you studied as part of your comparative course and identify a hero, heroine or villain in it. Describe a key moment when your chosen character behaved in a way that led to an important turning point in that text. Explain why this was an important turning point. Support your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-a-q2-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative A Q2(a)(ii) — Deferred sitting",
+   "questionText": "Name another text you studied as part of your comparative course and identify a hero, heroine or villain in it. Describe a key moment when your chosen character behaved in a way that led to an important turning point in that text. Explain why this was an important turning point. Support your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-b-q1-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative B Q1(a)(i) — Deferred sitting",
+   "questionText": "Name one text on your comparative course and identify a theme you studied in it. Identify a main character whose treatment of other characters in the text helped you to explore your chosen theme. Use one or more key moment(s) to demonstrate how the main character’s treatment of other characters helped you to explore your chosen theme. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-b-q1-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative B Q1(a)(ii) — Deferred sitting",
+   "questionText": "Name another text on your comparative course. In relation to the same theme discussed in part (a) (i) above, identify a main character whose treatment of other characters in this text helped you to explore your chosen theme. Use one or more key moment(s) to demonstrate how the main character’s treatment of other characters helped you to explore your chosen theme. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-b-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative B Q1(b) — Deferred sitting",
+   "questionText": "Compare the extent to which the exploration of the same theme you discussed in part (a), left you feeling positive or negative, in each of at least two texts on your comparative course. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-b-q2-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative B Q2(a)(i) — Deferred sitting",
+   "questionText": "Name one of your comparative texts and identify a theme you studied in it. Identify one relationship in the text and using one or more key moment(s) explain what you learned about your chosen theme by studying this relationship in the text. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-b-q2-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative B Q2(a)(ii) — Deferred sitting",
+   "questionText": "Name another of your comparative texts. Identify one relationship in this text and using one or more key moment(s) explain what you learned about the same theme you discussed in part (a) (i) above, by studying this relationship in the text. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-c-q1-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative C Q1(a)(i) — Deferred sitting",
+   "questionText": "Name one of the comparative texts you have studied and identify the aspect of the social setting that you found most memorable. Use one or more key moment(s) to help explain why you found this aspect of the social setting so memorable. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Social Setting",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-c-q1-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative C Q1(a)(ii) — Deferred sitting",
+   "questionText": "Name another comparative text you have studied and identify the aspect of the social setting that you found most memorable. Use one or more key moment(s) to help explain why you found this aspect of the social setting so memorable. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Social Setting",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-c-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative C Q1(b) — Deferred sitting",
+   "questionText": "Identify an aspect of the social setting in each of at least two comparative texts you have studied. Compare the extent to which these aspects of the social setting changed or remained the same over time in your chosen texts. You may refer to the same aspect or different aspects of social setting in each of your chosen texts. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Social Setting",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-c-q2-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative C Q2(a)(i) — Deferred sitting",
+   "questionText": "Name one of the comparative texts you have studied and explain why, in your opinion, tension was or was not evident because of the social setting of this text. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Social Setting",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-comparative-c-q2-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative C Q2(a)(ii) — Deferred sitting",
+   "questionText": "Name another of the comparative texts you have studied and explain why, in your opinion, tension was or was not evident because of the social setting of this text. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Social Setting",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-unseen-q1",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Unseen Poetry Q1 — Deferred sitting",
+   "questionText": "The poet in the above poem is effective in appealing to our senses. Identify the place where, in your view, the poet is most effective in appealing to our senses. Explain your choice with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Three Good Things",
+    "pages": [
+     14
+    ],
+    "attribution": "Three Good Things — Jan Dean, as reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-unseen-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Unseen Poetry Q2 — Deferred sitting",
+   "questionText": "From reading the above poem, which of the following word or words do you think accurately describes the tone or mood of this poem? Hopeful Reflective Challenging Explain your response with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Three Good Things",
+    "pages": [
+     14
+    ],
+    "attribution": "Three Good Things — Jan Dean, as reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-a-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry A Q1(a) — Deferred sitting",
+   "questionText": "Based on your reading of the above poem, what impression do you form of the butcher’s daughter? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-18",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Street — Eiléan Ní Chuilleanáin",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Street",
+    "pages": [
+     15
+    ],
+    "attribution": "Street — Eiléan Ní Chuilleanáin.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-a-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry A Q1(b) — Deferred sitting",
+   "questionText": "Do you think Ní Chuilleanáin has chosen a good title for this poem? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-18",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Street — Eiléan Ní Chuilleanáin",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Street",
+    "pages": [
+     15
+    ],
+    "attribution": "Street — Eiléan Ní Chuilleanáin.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-a-q2-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry A Q2(i) — Deferred sitting",
+   "questionText": "Eiléan Ní Chuilleanáin makes readers use their imaginations when engaging with her poem “Street”. Do you agree? Explain your answer using the poem to support your response.",
+   "totalMarks": 20,
+   "topicId": "english-11-18",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Street — Eiléan Ní Chuilleanáin",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Street",
+    "pages": [
+     15
+    ],
+    "attribution": "Street — Eiléan Ní Chuilleanáin.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-a-q2-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry A Q2(ii) — Deferred sitting",
+   "questionText": "Which of the following word or words would you choose to describe this poem? Thought-provoking Menacing Confusing Explain your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-18",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Street — Eiléan Ní Chuilleanáin",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Street",
+    "pages": [
+     15
+    ],
+    "attribution": "Street — Eiléan Ní Chuilleanáin.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-a-q2-iii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry A Q2(iii) — Deferred sitting",
+   "questionText": "You have been invited to contribute to a radio programme called ‘Poetry Craft’, which discusses popular poets and their work. You have been asked to explain why the language used by Ní Chuilleanáin in her poem, “Street” appeals to you. Write the text of the contribution you would make. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-18",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Street — Eiléan Ní Chuilleanáin",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Street",
+    "pages": [
+     15
+    ],
+    "attribution": "Street — Eiléan Ní Chuilleanáin.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-b-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry B Q1(a) — Deferred sitting",
+   "questionText": "Based on your reading of the extract above, what impression do you form of Africa? Support your answer with reference to the extract.",
+   "totalMarks": 15,
+   "topicId": "english-11-68",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Extract From They Clapped — Nikki Giovanni",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Extract From They Clapped",
+    "pages": [
+     16
+    ],
+    "attribution": "Extract From They Clapped — Nikki Giovanni.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-b-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry B Q1(b) — Deferred sitting",
+   "questionText": "Do you think that the visitors enjoyed their visit to Africa? Explain your answer with reference to the poem. You may refer to the whole poem in your response.",
+   "totalMarks": 15,
+   "topicId": "english-11-68",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Extract From They Clapped — Nikki Giovanni",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Extract From They Clapped",
+    "pages": [
+     16
+    ],
+    "attribution": "Extract From They Clapped — Nikki Giovanni.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-b-q2-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry B Q2(i) — Deferred sitting",
+   "questionText": "Nikki Giovanni, makes us think about how we view other people and other places, when engaging with “They Clapped”. Do you agree? Explain your answer using the poem to support your response. You may refer to the whole poem in your response.",
+   "totalMarks": 20,
+   "topicId": "english-11-68",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Extract From They Clapped — Nikki Giovanni",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Extract From They Clapped",
+    "pages": [
+     16
+    ],
+    "attribution": "Extract From They Clapped — Nikki Giovanni.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-b-q2-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry B Q2(ii) — Deferred sitting",
+   "questionText": "Which of the following word or words would you choose to describe this poem? Amusing Thought-Provoking Optimistic Explain your response with reference to the poem. You may refer to the whole poem in your response.",
+   "totalMarks": 20,
+   "topicId": "english-11-68",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Extract From They Clapped — Nikki Giovanni",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Extract From They Clapped",
+    "pages": [
+     16
+    ],
+    "attribution": "Extract From They Clapped — Nikki Giovanni.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-b-q2-iii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry B Q2(iii) — Deferred sitting",
+   "questionText": "You have been invited to contribute to a radio programme called ‘Poetry Craft’, which discusses popular poets and their work. You have been asked to explain why the language used by Giovanni in her poem, “They Clapped” appeals to you. Write the text of the contribution you would make. Support your response with reference to the poem. You may refer to the whole poem in your response.",
+   "totalMarks": 20,
+   "topicId": "english-11-68",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Extract From They Clapped — Nikki Giovanni",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Extract From They Clapped",
+    "pages": [
+     16
+    ],
+    "attribution": "Extract From They Clapped — Nikki Giovanni.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-c-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry C Q1(a) — Deferred sitting",
+   "questionText": "Based on your reading of the above poem, what impression do you form of the new building, Liberty Hall? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-69",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "New Liberty Hall — Austin Clarke",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "New Liberty Hall",
+    "pages": [
+     17
+    ],
+    "attribution": "New Liberty Hall — Austin Clarke.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-c-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry C Q1(b) — Deferred sitting",
+   "questionText": "Do you think Austin Clarke has chosen a good title for this poem? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-69",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "New Liberty Hall — Austin Clarke",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "New Liberty Hall",
+    "pages": [
+     17
+    ],
+    "attribution": "New Liberty Hall — Austin Clarke.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-c-q2-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry C Q2(i) — Deferred sitting",
+   "questionText": "Austin Clarke, uses history and historical figures cleverly, to help us to fully understand his poem, “New Liberty Hall”. Do you agree? Explain your answer using the poem to support your response.",
+   "totalMarks": 20,
+   "topicId": "english-11-69",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "New Liberty Hall — Austin Clarke",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "New Liberty Hall",
+    "pages": [
+     17
+    ],
+    "attribution": "New Liberty Hall — Austin Clarke.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-c-q2-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry C Q2(ii) — Deferred sitting",
+   "questionText": "Which of the following word or words would you choose to describe this poem? Angry Thought-Provoking Pessimistic Explain your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-69",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "New Liberty Hall — Austin Clarke",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "New Liberty Hall",
+    "pages": [
+     17
+    ],
+    "attribution": "New Liberty Hall — Austin Clarke.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-c-q2-iii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry C Q2(iii) — Deferred sitting",
+   "questionText": "You have been invited to contribute to a radio programme called ‘Poetry Craft’, which discusses popular poets and their work. You have been asked to explain why the language used by Clarke in his poem, “New Liberty Hall” appeals to you. Write the text of the contribution you would make. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-69",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "New Liberty Hall — Austin Clarke",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "New Liberty Hall",
+    "pages": [
+     17
+    ],
+    "attribution": "New Liberty Hall — Austin Clarke.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-d-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry D Q1(a) — Deferred sitting",
+   "questionText": "Based on your reading of the above poem, what impression do you form of Paula Meehan’s neighbourhood? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Buying Winkles — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Buying Winkles",
+    "pages": [
+     18
+    ],
+    "attribution": "Buying Winkles — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-d-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry D Q1(b) — Deferred sitting",
+   "questionText": "Do you think that Paula Meehan enjoyed her childhood years? Support your explanation with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Buying Winkles — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Buying Winkles",
+    "pages": [
+     18
+    ],
+    "attribution": "Buying Winkles — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-d-q2-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry D Q2(i) — Deferred sitting",
+   "questionText": "Paula Meehan makes readers use their senses to help them engage with her poem “Buying Winkles”. Do you agree? Explain your answer using the poem to support your response.",
+   "totalMarks": 20,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Buying Winkles — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Buying Winkles",
+    "pages": [
+     18
+    ],
+    "attribution": "Buying Winkles — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-d-q2-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry D Q2(ii) — Deferred sitting",
+   "questionText": "Which of the following word or words would you choose to describe this poem? Nostalgic Colourful Realistic Explain your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Buying Winkles — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Buying Winkles",
+    "pages": [
+     18
+    ],
+    "attribution": "Buying Winkles — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-d-q2-iii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry D Q2(iii) — Deferred sitting",
+   "questionText": "You have been invited to contribute to a radio programme called ‘Poetry Craft’, which discusses popular poets and their work. You have been asked to explain why the language used by Meehan in her poem, “Buying Winkles” appeals to you. Write the text of the contribution you would make. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Buying Winkles — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Buying Winkles",
+    "pages": [
+     18
+    ],
+    "attribution": "Buying Winkles — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-e-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry E Q1(a) — Deferred sitting",
+   "questionText": "What do you learn about the process of writing poetry from reading the above poem? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-50",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Thought-Fox — Ted Hughes",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "The Thought-Fox",
+    "pages": [
+     19
+    ],
+    "attribution": "The Thought-Fox — Ted Hughes.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-e-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry E Q1(b) — Deferred sitting",
+   "questionText": "Do you think Hughes has chosen a good title for this poem? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-50",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Thought-Fox — Ted Hughes",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "The Thought-Fox",
+    "pages": [
+     19
+    ],
+    "attribution": "The Thought-Fox — Ted Hughes.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-e-q2-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry E Q2(i) — Deferred sitting",
+   "questionText": "Ted Hughes, makes readers use their senses to help them engage with his poem “The Thought-Fox”. Do you agree? Explain your answer using the poem to support your response.",
+   "totalMarks": 20,
+   "topicId": "english-11-50",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Thought-Fox — Ted Hughes",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "The Thought-Fox",
+    "pages": [
+     19
+    ],
+    "attribution": "The Thought-Fox — Ted Hughes.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-e-q2-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry E Q2(ii) — Deferred sitting",
+   "questionText": "Which of the following word or words would you choose to describe this poem? Mysterious Revealing Confusing Explain your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-50",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Thought-Fox — Ted Hughes",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "The Thought-Fox",
+    "pages": [
+     19
+    ],
+    "attribution": "The Thought-Fox — Ted Hughes.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-e-q2-iii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry E Q2(iii) — Deferred sitting",
+   "questionText": "You have been invited to contribute to a radio programme called ‘Poetry Craft’, which discusses popular poets and their work. You have been asked to explain why the language used by Hughes in his poem, “The Thought-Fox” appeals to you. Write the text of the contribution you would make. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-50",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Thought-Fox — Ted Hughes",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "The Thought-Fox",
+    "pages": [
+     19
+    ],
+    "attribution": "The Thought-Fox — Ted Hughes.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-f-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry F Q1(a) — Deferred sitting",
+   "questionText": "Based on your reading of the above poem, what impression do you form of nature? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Inversnaid — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Inversnaid",
+    "pages": [
+     20
+    ],
+    "attribution": "Inversnaid — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-f-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry F Q1(b) — Deferred sitting",
+   "questionText": "Do you agree with the views the poet expresses in the final stanza of this poem? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Inversnaid — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Inversnaid",
+    "pages": [
+     20
+    ],
+    "attribution": "Inversnaid — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-f-q2-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry F Q2(i) — Deferred sitting",
+   "questionText": "Gerard Manley Hopkins, makes readers use their senses to help them engage with his poem “Inversnaid”. Do you agree? Explain your answer using the poem to support your response.",
+   "totalMarks": 20,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Inversnaid — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Inversnaid",
+    "pages": [
+     20
+    ],
+    "attribution": "Inversnaid — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-f-q2-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry F Q2(ii) — Deferred sitting",
+   "questionText": "Which of the following word or words would you choose to describe this poem: Original Optimistic Energetic Explain your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Inversnaid — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Inversnaid",
+    "pages": [
+     20
+    ],
+    "attribution": "Inversnaid — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2024-ol-deferred-p2-prescribed-f-q2-iii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry F Q2(iii) — Deferred sitting",
+   "questionText": "You have been invited to contribute to a radio programme called ‘Poetry Craft’, which discusses popular poets and their work. You have been asked to explain why the language used by Hopkins in his poem, ”Inversnaid” appeals to you. Write the text of the contribution you would make. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Inversnaid — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Inversnaid",
+    "pages": [
+     20
+    ],
+    "attribution": "Inversnaid — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    3,
+    29,
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary-deferred",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002GLP200EV-deferred.pdf",
     "n": "19"
    }
   },

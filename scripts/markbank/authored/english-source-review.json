@@ -5837,6 +5837,190 @@
       "reason": "Paper PDF6 prints the introduction (an extract from ‘milk and honey’ by the Indian-Canadian poet Rupi Kaur), the whole extract and the byline above both questions; visually verified.",
       "questionSha256": "2ad3950332bd330ef893c85ebca6c83279238bffbd6a68bb36313b2387516fd1"
     },
+    "english-2024-ol-deferred-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Successful Singer-Songwriter",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Taylor Swift — edited extracts from her speech to students graduating from New York University in 2022, when she was awarded an honorary doctorate, with a photograph from the ceremony (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "8da350dabf8c5e6a80a4d18780d83d83f087e1c5865fa803946fa6175b05781d"
+    },
+    "english-2024-ol-deferred-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Successful Singer-Songwriter",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Taylor Swift — edited extracts from her speech to students graduating from New York University in 2022, when she was awarded an honorary doctorate, with a photograph from the ceremony (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "1f28b8601c46eb0c6f916cb6bf90c4728bf8eeef23295df5f534687e3a419364"
+    },
+    "english-2024-ol-deferred-p1-t1-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Successful Singer-Songwriter",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Taylor Swift — edited extracts from her speech to students graduating from New York University in 2022, when she was awarded an honorary doctorate, with a photograph from the ceremony (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "9ef3d724b04930a06c8428e6e3bbe1b9f312092c0d23f6a27ab9e68408942b38"
+    },
+    "english-2024-ol-deferred-p1-t1-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "A SUCCESSFUL SINGER-SONGWRITER",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "f5ad8ce2de2939fecb99076b76f8e2f95f40919f6fccce61cb94624841cefba1",
+      "questionSha256": "3da900e9dd71fda4c599ab5854fa832c87f00ab0c3ce7d66efc853442aa31b69",
+      "reason": "Self-contained: a successful person the candidate would like to meet and why; the paper says “you may not refer to any of the people featured in this examination paper”, and scheme PDF6 assesses the candidate’s own choice. The same task is printed under all three texts, so the default reader is removed."
+    },
+    "english-2024-ol-deferred-p1-t1-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Successful Singer-Songwriter",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Taylor Swift — edited extracts from her speech to students graduating from New York University in 2022, when she was awarded an honorary doctorate, with a photograph from the ceremony (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "The blog post must “outline what Taylor Swift told the graduating students” and react to it (scheme PDF6), so the speech is needed to answer faithfully: TEXT 1 as printed on PDF2–3.",
+      "questionSha256": "f47e1e30e882219fa60fbcc78c9786a30c418f880922a287bfa12165bd7f6432"
+    },
+    "english-2024-ol-deferred-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Successful Actor",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Material drawn from two articles about the actor Mark Smith, one by Marjorie Brennan and one by Orla Dwyer, with a photograph of Mark Smith and Aisling Byrne on stage (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "79458303159b23619060c3fdb740ec13fe2abf4a9d1db9a94e46b3f308297f69"
+    },
+    "english-2024-ol-deferred-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Successful Actor",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Material drawn from two articles about the actor Mark Smith, one by Marjorie Brennan and one by Orla Dwyer, with a photograph of Mark Smith and Aisling Byrne on stage (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "35cf468ecd6cb87830bd35283efa342b331293a3d935ba6b0b568ad0001da0e6"
+    },
+    "english-2024-ol-deferred-p1-t2-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Successful Actor",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Material drawn from two articles about the actor Mark Smith, one by Marjorie Brennan and one by Orla Dwyer, with a photograph of Mark Smith and Aisling Byrne on stage (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "7283423c548e6cf80550720b82651276d3b0b3a9bb896c5c504102c7ec7f163f"
+    },
+    "english-2024-ol-deferred-p1-t2-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "A SUCCESSFUL ACTOR",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "f5ad8ce2de2939fecb99076b76f8e2f95f40919f6fccce61cb94624841cefba1",
+      "questionSha256": "3da900e9dd71fda4c599ab5854fa832c87f00ab0c3ce7d66efc853442aa31b69",
+      "reason": "Self-contained: a successful person the candidate would like to meet and why; the paper says “you may not refer to any of the people featured in this examination paper”, and scheme PDF8 assesses the candidate’s own choice. The same task is printed under all three texts, so the default reader is removed."
+    },
+    "english-2024-ol-deferred-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "A Successful Sportsperson",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Kellie Harrington — edited extracts from Kellie, her book written with Roddy Doyle, with the book’s cover (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "6e5a0ff1a1a31e011a5da62dfc9ae2e10699d31a8875e2ee5099013d88e99927"
+    },
+    "english-2024-ol-deferred-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "A Successful Sportsperson",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Kellie Harrington — edited extracts from Kellie, her book written with Roddy Doyle, with the book’s cover (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "dc6abf9494baa0df5f7d53dd0926475038c1aca06cc3572a7621d411a6a51dc7"
+    },
+    "english-2024-ol-deferred-p1-t3-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "A Successful Sportsperson",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Kellie Harrington — edited extracts from Kellie, her book written with Roddy Doyle, with the book’s cover (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "278944eec14abb9cad903657038a64fc46eba53bb4e5238c7a218bf3b7d92dc0"
+    },
+    "english-2024-ol-deferred-p1-t3-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "A SUCCESSFUL SPORTSPERSON",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "f5ad8ce2de2939fecb99076b76f8e2f95f40919f6fccce61cb94624841cefba1",
+      "questionSha256": "3da900e9dd71fda4c599ab5854fa832c87f00ab0c3ce7d66efc853442aa31b69",
+      "reason": "Self-contained: a successful person the candidate would like to meet and why; the paper says “you may not refer to any of the people featured in this examination paper”, and scheme PDF10 assesses the candidate’s own choice. The same task is printed under all three texts, so the default reader is removed."
+    },
+    "english-2024-ol-deferred-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Three Good Things",
+      "pages": [
+        14
+      ],
+      "attribution": "Three Good Things — Jan Dean, as reproduced in the SEC 2024 deferred paper.",
+      "reason": "Paper PDF14 prints the title, the whole poem and the byline above both questions; visually verified.",
+      "questionSha256": "b2f011695c41580d0f4838188aba10a522ab6e7c983b9b079b3aedadb7099097"
+    },
+    "english-2024-ol-deferred-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Three Good Things",
+      "pages": [
+        14
+      ],
+      "attribution": "Three Good Things — Jan Dean, as reproduced in the SEC 2024 deferred paper.",
+      "reason": "Paper PDF14 prints the title, the whole poem and the byline above both questions; visually verified.",
+      "questionSha256": "dd59a44c3048cb8e4c3df88ab3bfb62afd0d22b5d4344f14edd09fbc79432a09"
+    },
     "english-2025-hl-deferred-p1-t1-a-i": {
       "kind": "source-text",
       "label": "TEXT 1",

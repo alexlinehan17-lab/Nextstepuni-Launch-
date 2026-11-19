@@ -2978,13 +2978,13 @@ describe('Mark Bank card preservation', () => {
     expect([...published].every(id => papers.some(paper => id.startsWith(`${paper}-`)))).toBe(true);
     // Reviewed additions on top of the frozen 650: 548 Higher + 1,612 Ordinary June cards,
     // none reusing a frozen ID or an alias key; and, from 2026-11-19, the deferred sittings' new ids
-    // (2025 Higher 44, 2024 Higher 44).
+    // (2025 Higher 44, 2024 Higher 44, 2024 Ordinary 121).
     const added = (level: string) => [...englishAdditionIds].filter(id => id.includes(level) && !id.includes('-deferred-')).length;
     const aliased = (level: string) => englishAliasIds.filter(id => id.includes(level)).length;
     expect([added('-hl-'), aliased('-hl-'), added('-ol-'), aliased('-ol-')]).toEqual([548, 20, 1612, 105]);
     const deferredAdded = (level: string) => [...englishAdditionIds]
       .filter(id => id.includes(`${level}deferred-`)).length;
-    expect([deferredAdded('-hl-'), deferredAdded('-ol-')]).toEqual([88, 0]);
+    expect([deferredAdded('-hl-'), deferredAdded('-ol-')]).toEqual([88, 121]);
     for (const id of englishAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
     expect(ENGLISH_HIGHER).toHaveLength(210 - aliased('-hl-') + added('-hl-') + deferredAdded('-hl-'));
     expect(ENGLISH_ORDINARY).toHaveLength(440 - aliased('-ol-') + added('-ol-') + deferredAdded('-ol-'));
