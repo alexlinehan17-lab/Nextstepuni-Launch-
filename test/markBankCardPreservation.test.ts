@@ -1418,6 +1418,7 @@ const POLISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
 };
 const POLISH_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
   2025: { higher: 38, ordinary: 36 },
+  2024: { higher: 31, ordinary: 0 },
 };
 const POLISH_ADDED_TO_FROZEN_ID = /^pl-202[1-5]-(?:hl|ol)-(?:l[a-e]-|b-)/;
 const POLISH_ADDED_TO_FROZEN_READING = new Set<string>([

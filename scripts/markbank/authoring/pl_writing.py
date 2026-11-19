@@ -41,7 +41,8 @@ LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 LEVEL_TITLE = {'hl': 'Higher', 'ol': 'Ordinary'}
 LUB = re.compile(r'^(?:lub|LUB)$')
 CREDIT = re.compile(r'^[\w.-]+\.(?:pl|ie|com|org|net|eu)$', re.I)
-RANGE = re.compile(r'(\d{1,2})\s*[-–]\s*(\d{1,2})')
+# 2023 sets its ranges with U+2010 HYPHEN ("15‐12").
+RANGE = re.compile(r'(\d{1,2})\s*[-‐–]\s*(\d{1,2})')
 SPEAKER = re.compile(r'^[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+:(?:\s|$)')
 # Numbers under a row of photographs and the photographs' credits.
 PHOTO_LABELS = re.compile(r'(?:\b\d{1,2}\.|[\w.-]+\.(?:pl|ie|com|org|net|eu|co\.uk)\b)')
@@ -51,6 +52,11 @@ PHOTO_LABELS = re.compile(r'(?:\b\d{1,2}\.|[\w.-]+\.(?:pl|ie|com|org|net|eu|co\.
 IMAGE_COLUMN = 290.0
 INSTRUCTION = re.compile(r'^(?:Odpowiedz\b.*\b(?:słów|słowa)\b|Wykonaj\b.*\bzadanie\b)')
 TASK_GAP = 45.0
+# Tasks set on a printed table of pictures: the task's words stop at the
+# table's first row label, and the table itself is read on the page the
+# card carries. 2024 Ordinary Q5(a) (paper p20): rows Wygląd / Miejsce
+# zamieszkania / Wiek, Lubi, Nie lubi, each a row of photographs.
+TABLE_STARTS = {(2024, 'ol', 5, 'a'): 'Wygląd'}
 
 
 def scheme_pdf(year, level):
@@ -71,7 +77,8 @@ def _cell(text):
 def _descriptors(cell):
     """The descriptor cell, one entry per printed point: bullets at Higher,
     one point a line at Ordinary."""
-    raw = (cell or '').replace('•', '•')
+    # 2023 prints its bullets as the Symbol font's private-use U+F0B7.
+    raw = (cell or '').replace('\uf0b7', '•')
     if '•' in raw:
         return [_cell(p) for p in raw.split('•') if _cell(p)]
     return [_cell(p) for p in raw.split('\n') if _cell(p)]
@@ -130,11 +137,18 @@ def requirements(year, level):
     "Content:"); a bullet opens a point and a line without one continues it.
     """
     lines = scheme_md(year, level)
-    start = next(i for i, l in enumerate(lines)
-                 if re.match(r'^(?:SECTION B\b|Część B: Pisanie|Cz[eę][sś][cć] B: Pisanie)', l.strip()))
+    # "SECTION B 80 marks" (2026 HL), "Część B: Pisanie", or the 2023/2024
+    # pair "Część B Pisanie 80 punktów" over "Section B Writing 80 marks":
+    # the rules start after the last heading line of the run.
+    head = re.compile(r'^(?:SECTION B\b|Section B Writing\b|Cz[eę][sś][cć] B:? Pisanie)')
+    norm = lambda l: re.sub(r'[ \xa0]+', ' ', l).strip()                     # noqa: E731
+    start = next(i for i, l in enumerate(lines) if head.match(norm(l)))
+    while start + 1 < len(lines) and head.match(norm(lines[start + 1])):
+        start += 1
     out = []
     for l in lines[start + 1:]:
-        t = l.strip()
+        # 2023 sets the section in no-break spaces.
+        t = re.sub(r'[ \xa0]+', ' ', l).strip()
         if re.match(r'^Content\b', t):
             break
         if not t or re.match(r'^(?:##\s*Page\s*\d+|\d{1,3})$', t):
@@ -142,7 +156,7 @@ def requirements(year, level):
         if t.startswith('•'):
             out.append(t.lstrip('•').strip())
         elif out and not re.match(r'^(?:Zadanie|\(\d)', t) \
-                and not out[-1].endswith(('.', ')')):
+                and (not out[-1].endswith(('.', ')')) or re.match(r'^(?:AND|and|or)\b', t)):
             # A line the SEC wrapped: "Candidates are required to attempt:" /
             # "Either question" / "3(a) or 3(b) or 3(c), ..." is one point.
             out[-1] = f'{out[-1]} {t}'
@@ -179,6 +193,9 @@ def task_text(P, key):
                 # them ("16 września 2026, piątek" on the 2026 Ordinary map).
                 # A printed dialogue leaves answer space between turns, so a
                 # speaker's turn continues the task across it.
+                break
+            table = TABLE_STARTS.get((P.year, P.level, q, letter))
+            if table and t.startswith(table):
                 break
             if line.page != page or LUB.match(t) or pl_paper.Q_HEAD.match(t) \
                     or re.match(r'^\(\s*[a-h]\s*\)', t) \
@@ -234,12 +251,13 @@ def cards(year, level):
     P = pl_paper.PlPaper(year, level)
     G = grid(year, level)
     reqs = requirements(year, level)
-    md = scheme_md(year, level)
+    # No-break spaces (2023) read as spaces; the zero rule may wrap (2024).
+    md = [re.sub(r'[ \xa0]+', ' ', l) for l in scheme_md(year, level)]
     content_label = next((l.strip() for l in md if re.match(r'^Content\b', l.strip())), 'Content')
     content_label = 'Content (C)' if content_label.startswith('Content (C)') else 'Content'
     expression_label = 'Expression (E)' if any(l.strip().startswith('Expression (E)') for l in md) \
         else 'Expression'
-    zero_rule = any('no marks will be awarded for expression' in l.lower() for l in md)
+    zero_rule = 'no marks will be awarded for expression' in ' '.join(l.strip() for l in md).lower()
     out = []
     for ask in P.writing_asks():
         key = ask.key

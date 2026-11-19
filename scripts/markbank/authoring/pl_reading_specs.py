@@ -121,6 +121,15 @@ SPECS[(2025, 'ol')] = [
 ]
 
 
+# ================================================================ 2024 OL ===
+SPECS[(2024, 'ol')] = [
+    # Rendered scheme p6: the (v) tick stands in the Prawda column. The price
+    # is the "2 marks" printed in the Marks column on (v)'s first line.
+    R('A2cv', [one(S(155, before=' Fałsz'), T(164))],
+      note='The tick stands in the Prawda column (scheme p6, rendered).'),
+]
+
+
 def _marker_off(text):
     return re.sub(r'^\(\s*[a-l]\s*\)\s*', '', text)
 

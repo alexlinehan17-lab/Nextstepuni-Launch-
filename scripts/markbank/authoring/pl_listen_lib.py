@@ -193,3 +193,29 @@ class Token:
 
 def W(n, k):
     return Token(n, k)
+
+
+NUMBER_WORD = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6}
+ANY_OF = re.compile(r'\bany\s+(one|two|three|four|five|six)\s+of\b', re.I)
+
+
+class RowTariff:
+    """A table row's own share of the question's price: the per-answer marks
+    from the tariff on scheme line `n_price`, the count from the "any two of:"
+    printed over the row on line `n_directive` ("(4 x 2m)" over two rows of
+    "any two of:", 2024 Higher Część D Q1)."""
+    def __init__(self, n_price, n_directive, k=0):
+        self.price, self.n_directive = Tariff(n_price, k), n_directive
+
+    def read(self, doc):
+        _count, per, notation = self.price.read(doc)
+        line = doc['scheme'][self.n_directive - 1]
+        m = ANY_OF.search(line)
+        if not m:
+            raise ValueError(f'scheme line {self.n_directive} prints no "any N of": {line!r}')
+        return NUMBER_WORD[m.group(1).lower()], per, f'{m.group(0)} {notation}'
+
+
+def TN(n_price, n_directive, k=0):
+    return RowTariff(n_price, n_directive, k)
+

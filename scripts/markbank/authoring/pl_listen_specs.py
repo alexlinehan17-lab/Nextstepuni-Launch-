@@ -27,8 +27,8 @@ sys.path.insert(0, HERE)
 
 import pl_paper                                                  # noqa: E402
 from pl_listen import scheme_lines, aural_lines, AUDIO           # noqa: E402
-from pl_listen_lib import (S, J, T, one, menu, part, One, Menu,  # noqa: E402,F401
-                           Sel)
+from pl_listen_lib import (S, J, T, TN, PL, one, menu, part,   # noqa: E402,F401
+                           One, Menu, Sel)
 from pl_topics import (AURAL, POLISH, ENGLISH_OR_IRISH,          # noqa: E402
                        language_note, answer_language, concept_for)
 from paper_census import key_label                              # noqa: E402
@@ -50,8 +50,11 @@ def parse_key(spec_key):
 
 class C:
     """One card: the census address, its rows, the tariff that prices it."""
-    def __init__(self, key, rows, total=None, note=None, rownote=None):
+    def __init__(self, key, rows, total=None, note=None, rownote=None, extra=()):
         self.key, self.rows, self.total, self.note = key, rows, total, note
+        # Booklet lines the census leaves off the question (a table's second
+        # row, a true/false statement): PL(page, opening), appended in order.
+        self.extra = extra
         # A conflict between two printed lines, quoted for the student on
         # every row (CARD-STANDARD 5): the printed total is carded.
         self.rownote = rownote
@@ -179,7 +182,8 @@ def cards(year, level):
     spec_list = SPECS.get((year, level))
     if spec_list is None:
         raise KeyError(f'no listening spec for {year} {level}')
-    doc = {'scheme': scheme_lines(year, level)}
+    doc = {'scheme': scheme_lines(year, level),
+           'paper': [(l.page, l.text) for l in aural_lines(year, level)]}
     P = pl_paper.PlPaper(year, level)
     asks = {a.key: a for a in P.aural_asks()}
     intros = section_intro(year, level)
@@ -200,6 +204,9 @@ def cards(year, level):
         if (part, key[1]) in items:
             stem = f'{stem} {items[(part, key[1])]}'
         question = TRAILING.sub('', ask.full_text).strip()
+        if spec.extra:
+            question = ' '.join([question] + [TRAILING.sub('', x.text(doc)).strip()
+                                              for x in spec.extra])
         language = _language(stem, question)
         note = language_note(language)
         if spec.rownote:
@@ -469,4 +476,99 @@ SPECS[(2025, 'ol')] = [
     C('LE3', [menu([S(418), S(419), S(420), J(S(421), S(422)), S(423), S(424), S(425), S(430)],
                    T(417))]),
     C('LE4', [menu([S(n) for n in range(434, 440)], T(433))]),
+]
+
+
+# ================================================================ 2024 HL ===
+# Scheme .md lines 358-518 (pages 12-16). Część A and B answer in Polish, C to
+# E in English. Section totals as printed: A 24, B 16, C 22, D 16, E 22 (= 100).
+SPECS[(2024, 'hl')] = [
+    # A table of three rows, "(3 x 2m)": each row's answer printed beside it.
+    C('LA1', [one(S(360, after='grany '), T(359, each=True), lead=S(360, before=' Kwadrat')),
+              one(S(361, after='Miejscowość '), T(359, each=True), lead=S(361, before=' Warszawa')),
+              one(S(362, after='Tytuł '), T(359, each=True), lead=S(362, before=' Promieniowanie'))],
+      total=T(359)),
+    C('LA2', [menu([S(n) for n in range(365, 375)], T(364))]),
+    C('LA3', [one(S(376, after='nudna. '), T(375))], extra=(PL(3, 'Reżyser'),)),
+    C('LA4', [menu([S(n) for n in range(379, 386)], T(378))]),
+    C('LA5', [menu([S(n) for n in range(388, 392)], T(387))]),
+    C('LA6', [one(S(393), T(392))]),
+    C('LB1', [menu([S(n) for n in range(401, 405)], T(400))]),
+    C('LB2', [menu([S(407), S(408)], T(405))]),
+    C('LB3', [menu([S(n) for n in range(411, 415)], T(409))]),
+    C('LB4', [menu([S(n) for n in range(417, 422)], T(415))]),
+    C('LC1', [menu([S(n) for n in range(429, 432)], T(428))]),
+    C('LC2', [one(S(433), T(432))]),
+    C('LC3', [menu([S(n) for n in range(436, 442)], T(435))]),
+    C('LC4', [menu([S(n) for n in range(444, 449)], T(443))]),
+    C('LC5', [one(S(450), T(449))]),
+    # A table of two rows, "(4 x 2m)" over both, "any two of:" over each.
+    C('LD1', [menu([S(458, after='posters: '), S(459), S(460), S(461)], TN(456, 457),
+                   lead=S(458, before=' - simple')),
+              menu([S(463, after='created? '), S(464), S(465), S(466)], TN(456, 462),
+                   lead=S(463, before=' - films'))],
+      total=T(456), extra=(PL(6, 'For what were'),)),
+    C('LD2', [one(S(468, after='artists. '), T(468))]),
+    C('LD3', [menu([S(n) for n in range(471, 478)], T(470))]),
+    # A table of three rows, "(3 x 2m)"; its third row takes "any one of:".
+    C('LE1', [one(S(484, after='damaged? '), T(483, each=True), lead=S(484, before=' gas')),
+              one(J(S(485, after='happen? '), S(486)), T(483, each=True),
+                  lead=S(485, before=' (last)')),
+              menu([S(488), S(489), S(490)], TN(483, 487), lead=S(487, before=' any one'))],
+      total=T(483)),
+    C('LE2', [menu([S(n) for n in range(493, 498)], T(492))]),
+    C('LE3', [menu([S(n) for n in range(500, 508)], T(498))]),
+    C('LE4', [menu([S(510, after='seaside '), S(511), S(512), S(513)], TN(508, 509),
+                   lead=S(510, before=' - temperature')),
+              menu([S(515, after='mountains '), S(516), S(517), S(518)], TN(508, 514),
+                   lead=S(515, before=' - sunny'))],
+      total=T(508), extra=(PL(7, 'at the seaside'), PL(7, 'in the mountains'))),
+]
+
+
+# ================================================================ 2024 OL ===
+# Scheme .md lines 285-422 (pages 11-15). Część A and B answer in Polish, C to
+# E in English. Section totals as printed: A 25, B 22, C 25, D 21, E 27 (= 120).
+SPECS[(2024, 'ol')] = [
+    C('LA1', [one(S(287, after='grany. '), T(286, each=True), lead=S(287, before=' Kwadrat')),
+              one(S(288, after='bohaterka? '), T(286, each=True), lead=S(288, before=' Maria'))],
+      total=T(286)),
+    # Multiple choice: the scheme ticks the first of the four printed options.
+    C('LA2', [one(S(291, before=' ✓'), T(289))],
+      extra=(PL(3, 'Sztuka poświęcona'), PL(3, 'życiu i pracy'), PL(3, 'jedynie życiu'),
+             PL(3, 'jedynie pracy noblistki'), PL(3, 'jedynie pracy naukowej'))),
+    C('LA3', [menu([S(n) for n in range(294, 301)], T(293))]),
+    C('LA4', [menu([S(n) for n in range(303, 307)], T(301))]),
+    C('LA5', [menu([S(309), S(310)], T(307))]),
+    C('LB1', [one(S(317), T(316))]),
+    C('LB2', [menu([S(n) for n in range(320, 323)], T(319))]),
+    C('LB3', [menu([S(325), S(326)], T(324))]),
+    C('LB4', [menu([S(n) for n in range(329, 332)], T(328))]),
+    C('LB5', [menu([S(n) for n in range(334, 340)], T(332))]),
+    C('LC1', [menu([S(347), S(348)], T(346))]),
+    C('LC2', [one(S(350), T(349))]),
+    C('LC3', [one(S(352, after='Podsiadło. '), T(352))], extra=(PL(5, 'There are only'),)),
+    C('LC4', [menu([S(n) for n in range(355, 361)], T(354))]),
+    C('LC5', [menu([S(n) for n in range(363, 366)], T(362))]),
+    C('LD1', [one(S(372, after='Poland. '), T(372))]),
+    # A table of two rows, "(4 x 3 m)" over both, "any two of:" beside each.
+    C('LD2', [menu([S(n) for n in range(375, 379)], TN(373, 374), lead=S(374, before=' any two')),
+              menu([S(n) for n in range(380, 384)], TN(373, 379), lead=S(379, before=' any two'))],
+      total=T(373), extra=(PL(6, 'For what were'),)),
+    C('LD3', [menu([S(n) for n in range(386, 393)], T(385))]),
+    C('LE1', [one(S(399, after='damaged? '), T(398, each=True), lead=S(399, before=' gas')),
+              one(J(S(400, after='happen? '), S(401)), T(398, each=True),
+                  lead=S(400, before=' (last)')),
+              one(J(S(402, after='help? '), S(403)), T(398, each=True),
+                  lead=S(402, before=' fire'))],
+      total=T(398)),
+    C('LE2', [menu([S(n) for n in range(406, 411)], T(405))]),
+    C('LE3', [one(S(412), T(412))]),
+    # "(2 x 3 m)": one answer for each of the two rows. The seaside row prints
+    # "any one of:"; the mountains row prints its list with no directive.
+    C('LE4', [menu([S(415), S(416), J(S(417), S(418))], T(413, each=True),
+                   lead=S(414, before=' any one')),
+              menu([S(419, after='mountains '), S(420), S(421), S(422)], T(413, each=True),
+                   lead=S(419, before=' - sunny'))],
+      total=T(413), extra=(PL(7, 'in the mountains'),)),
 ]
