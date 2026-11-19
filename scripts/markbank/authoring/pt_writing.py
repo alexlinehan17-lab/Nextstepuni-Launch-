@@ -8,7 +8,8 @@ Every string is lifted: the task from the paper's own lines (PL / PLk), the
 grid from the scheme's .md (criterion heads, band names, descriptors), each
 band's marks read from the range the scheme prints in the band (the k-th
 "11 – 15" in its lines, k naming the column: "Q. 3 and 4" or "Q. 5"). The
-only words that are the app's are markingGuideNote and practiceNotes.
+only words that are the app's are practiceNotes (markingGuideNote stays empty:
+build-deck traces it to the scheme).
 
 Sittings and their grids:
 * 2024: one table, "Content and Communication" and "Language", bands TOP /
@@ -144,9 +145,13 @@ def cards(year, level):
                     'system': 'french',
                     'taskRequirements': [x.text(doc) for x in t.requirements],
                     'criteria': [dict(c) for c in criteria],
-                    'markingGuideNote': t.note,
+                    'markingGuideNote': '',
+                    # NextStepUni's own words, under the app's label (a note on
+                    # the printed grid's own heading goes here too: the gate
+                    # traces markingGuideNote to the scheme).
                     'practiceNotes': ['Write your answer in Portuguese, then place it on the published '
-                                      'grid: content and communication first, then language.'],
+                                      'grid: content and communication first, then language.']
+                                     + ([t.note] if t.note else []),
                 },
                 'schemePages': list(t.scheme_pages),
                 'sourceMaterial': {
@@ -202,8 +207,8 @@ def _grid_2024_ol():
                  [Band(228, 229, 234), Band(235, 236, 242), Band(243, 244, 250)])]
 
 
-_NOTE_2024_OL = ('NextStepUni note: the scheme heads this grid “Q.3 and 4”; on the Ordinary Level '
-                 'paper the written tasks are Questions 4 and 5, each marked out of 30 on it.')
+_NOTE_2024_OL = ('The scheme heads this grid “Q.3 and 4”; on the Ordinary Level paper the written '
+                 'tasks are Questions 4 and 5, each marked out of 30 on it.')
 SPECS[(2024, 'ol')] = [
     Task(4, 11, [PL(11, 'Escolha uma opção'), PL(11, 'Escreva um texto em português com cerca de 100')],
          {'a': (11, [PLk(11, '(a)', 0, after='(a) ')] + [PLk(11, '•', j) for j in range(3)]),

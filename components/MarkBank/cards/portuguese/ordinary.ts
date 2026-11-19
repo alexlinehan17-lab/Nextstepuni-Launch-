@@ -1620,6 +1620,1837 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-a-1-e", topicId: "portuguese-2-3", conceptId: "maria-aceitou-imediato-pedido-antenor-assinale",
+    section: "A", questionRef: "2024 OL Section A Q1(e)",
+    stem: "Questão 1 – Leia este texto e responda às perguntas.",
+    questionText: "Maria aceitou de imediato o pedido de Antenor. Assinale (✓) a resposta correta. (parágrafo 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Falso", marks: 2, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 1 – LEIA ESTE TEXTO E RESPONDA ÀS PERGUNTAS.",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                3,
+                4
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level, p.9 — © State Examinations Commission.",
+    id: "por-2024-ol-b-4-a", topicId: "portuguese-2-4", conceptId: "sua-cidade-preferida-escreva-artigo-jornal",
+    section: "B", questionRef: "2024 OL Section B Q4(a)",
+    stem: "Escolha uma opção (a) ou (b) ou (c) para responder. Escreva um texto em português com cerca de 100 palavras.",
+    questionText: "Qual é a sua cidade preferida? Escreva um artigo para o jornal da escola sobre a sua cidade preferida e descreva: •a paisagem; •as pessoas; •as atividades oferecidas aos habitantes.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Did not follow the requested number of words (less than 75%). 50% of the Marks"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task",
+                                        "High level of textual coherence",
+                                        "Clear and well-structured text",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Adequate achievement of the task",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear and reasonably structured text",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task",
+                                        "Lack of textual coherence",
+                                        "Text not always clear or unclear text",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Use of language generally correct",
+                                        "Spelling mistakes are rare, good level of accuracy",
+                                        "Punctuation nearly always corrects",
+                                        "Almost all sentences constructed in a cohesive manner"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor use of language errors",
+                                        "At least half the words spelt correctly, only occasional mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a cohesive manner"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Vocabulary very inadequate with interference or direct translation from any other language",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious use of language errors",
+                                        "Most words misspelt",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an incohesive manner"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language.",
+                "The scheme heads this grid “Q.3 and 4”; on the Ordinary Level paper the written tasks are Questions 4 and 5, each marked out of 30 on it."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 4",
+          "title": "Questão 4 (a) — answer in Portuguese",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level, p.9 — © State Examinations Commission.",
+    id: "por-2024-ol-b-4-b", topicId: "portuguese-2-4", conceptId: "filme-gostou-ver-escreva-blog-filme",
+    section: "B", questionRef: "2024 OL Section B Q4(b)",
+    stem: "Escolha uma opção (a) ou (b) ou (c) para responder. Escreva um texto em português com cerca de 100 palavras.",
+    questionText: "Que filme gostou de ver? Escreva um texto para um blog sobre um filme que tenha visto e descreva: •a história; •as personagens; •onde acontece a história.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Did not follow the requested number of words (less than 75%). 50% of the Marks"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task",
+                                        "High level of textual coherence",
+                                        "Clear and well-structured text",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Adequate achievement of the task",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear and reasonably structured text",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task",
+                                        "Lack of textual coherence",
+                                        "Text not always clear or unclear text",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Use of language generally correct",
+                                        "Spelling mistakes are rare, good level of accuracy",
+                                        "Punctuation nearly always corrects",
+                                        "Almost all sentences constructed in a cohesive manner"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor use of language errors",
+                                        "At least half the words spelt correctly, only occasional mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a cohesive manner"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Vocabulary very inadequate with interference or direct translation from any other language",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious use of language errors",
+                                        "Most words misspelt",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an incohesive manner"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language.",
+                "The scheme heads this grid “Q.3 and 4”; on the Ordinary Level paper the written tasks are Questions 4 and 5, each marked out of 30 on it."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 4",
+          "title": "Questão 4 (b) — answer in Portuguese",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level, p.9 — © State Examinations Commission.",
+    id: "por-2024-ol-b-4-c", topicId: "portuguese-2-4", conceptId: "foi-seu-dia-escreva-pagina-seu",
+    section: "B", questionRef: "2024 OL Section B Q4(c)",
+    stem: "Escolha uma opção (a) ou (b) ou (c) para responder. Escreva um texto em português com cerca de 100 palavras.",
+    questionText: "Como foi o seu dia? Escreva uma página no seu diário e descreva: •o seu dia; •quem fez parte do seu dia; •um dos locais onde esteve.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Did not follow the requested number of words (less than 75%). 50% of the Marks"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task",
+                                        "High level of textual coherence",
+                                        "Clear and well-structured text",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Adequate achievement of the task",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear and reasonably structured text",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task",
+                                        "Lack of textual coherence",
+                                        "Text not always clear or unclear text",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Use of language generally correct",
+                                        "Spelling mistakes are rare, good level of accuracy",
+                                        "Punctuation nearly always corrects",
+                                        "Almost all sentences constructed in a cohesive manner"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor use of language errors",
+                                        "At least half the words spelt correctly, only occasional mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a cohesive manner"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Vocabulary very inadequate with interference or direct translation from any other language",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious use of language errors",
+                                        "Most words misspelt",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an incohesive manner"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language.",
+                "The scheme heads this grid “Q.3 and 4”; on the Ordinary Level paper the written tasks are Questions 4 and 5, each marked out of 30 on it."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 4",
+          "title": "Questão 4 (c) — answer in Portuguese",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level, p.9 — © State Examinations Commission.",
+    id: "por-2024-ol-b-5-a", topicId: "portuguese-2-4", conceptId: "inclua-topicos-mensagem-lhe-transmite-imagem",
+    section: "B", questionRef: "2024 OL Section B Q5(a)",
+    stem: "Escolha uma opção (a) ou (b) ou (c) para responder. Escreva um texto em português com cerca de 100 palavras.",
+    questionText: "Inclua os tópicos: •Que mensagem lhe transmite a imagem; •A sua opinião sobre essa mensagem.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Did not follow the requested number of words (less than 75%). 50% of the Marks"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task",
+                                        "High level of textual coherence",
+                                        "Clear and well-structured text",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Adequate achievement of the task",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear and reasonably structured text",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task",
+                                        "Lack of textual coherence",
+                                        "Text not always clear or unclear text",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Use of language generally correct",
+                                        "Spelling mistakes are rare, good level of accuracy",
+                                        "Punctuation nearly always corrects",
+                                        "Almost all sentences constructed in a cohesive manner"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor use of language errors",
+                                        "At least half the words spelt correctly, only occasional mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a cohesive manner"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Vocabulary very inadequate with interference or direct translation from any other language",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious use of language errors",
+                                        "Most words misspelt",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an incohesive manner"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language.",
+                "The scheme heads this grid “Q.3 and 4”; on the Ordinary Level paper the written tasks are Questions 4 and 5, each marked out of 30 on it."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 5",
+          "title": "Questão 5 (a) — answer in Portuguese",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level, p.9 — © State Examinations Commission.",
+    id: "por-2024-ol-b-5-b", topicId: "portuguese-2-4", conceptId: "inclua-topicos-mensagem-lhe-transmite-imagem",
+    section: "B", questionRef: "2024 OL Section B Q5(b)",
+    stem: "Escolha uma opção (a) ou (b) ou (c) para responder. Escreva um texto em português com cerca de 100 palavras.",
+    questionText: "Inclua os tópicos: •Que mensagem lhe transmite a imagem; •A sua opinião sobre essa mensagem.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Did not follow the requested number of words (less than 75%). 50% of the Marks"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task",
+                                        "High level of textual coherence",
+                                        "Clear and well-structured text",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Adequate achievement of the task",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear and reasonably structured text",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task",
+                                        "Lack of textual coherence",
+                                        "Text not always clear or unclear text",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Use of language generally correct",
+                                        "Spelling mistakes are rare, good level of accuracy",
+                                        "Punctuation nearly always corrects",
+                                        "Almost all sentences constructed in a cohesive manner"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor use of language errors",
+                                        "At least half the words spelt correctly, only occasional mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a cohesive manner"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Vocabulary very inadequate with interference or direct translation from any other language",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious use of language errors",
+                                        "Most words misspelt",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an incohesive manner"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language.",
+                "The scheme heads this grid “Q.3 and 4”; on the Ordinary Level paper the written tasks are Questions 4 and 5, each marked out of 30 on it."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 5",
+          "title": "Questão 5 (b) — answer in Portuguese",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level, p.9 — © State Examinations Commission.",
+    id: "por-2024-ol-b-5-c", topicId: "portuguese-2-4", conceptId: "inclua-topicos-mensagem-lhe-transmite-imagem",
+    section: "B", questionRef: "2024 OL Section B Q5(c)",
+    stem: "Escolha uma opção (a) ou (b) ou (c) para responder. Escreva um texto em português com cerca de 100 palavras.",
+    questionText: "Inclua os tópicos: •Que mensagem lhe transmite a imagem; •A sua opinião sobre essa mensagem.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Did not follow the requested number of words (less than 75%). 50% of the Marks"
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task",
+                                        "High level of textual coherence",
+                                        "Clear and well-structured text",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Adequate achievement of the task",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear and reasonably structured text",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task",
+                                        "Lack of textual coherence",
+                                        "Text not always clear or unclear text",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Use of language generally correct",
+                                        "Spelling mistakes are rare, good level of accuracy",
+                                        "Punctuation nearly always corrects",
+                                        "Almost all sentences constructed in a cohesive manner"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor use of language errors",
+                                        "At least half the words spelt correctly, only occasional mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a cohesive manner"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Vocabulary very inadequate with interference or direct translation from any other language",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious use of language errors",
+                                        "Most words misspelt",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an incohesive manner"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language.",
+                "The scheme heads this grid “Q.3 and 4”; on the Ordinary Level paper the written tasks are Questions 4 and 5, each marked out of 30 on it."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 5",
+          "title": "Questão 5 (c) — answer in Portuguese",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-la-1", topicId: "portuguese-2-5", conceptId: "pedro-comecou-clube-agora",
+    section: "LA", questionRef: "2024 OL Section LA Q1",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Por que razão Pedro só começou no clube agora?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prices “Fica perto do trabalho dele.” at 2 marks, as an answer of its own.", group: {"claimMax":1,"perOption":4,"options":["Estava muito ocupado.","Fica perto do trabalho dele."],"optionMarks":[4,2],"optionOf":[null,null]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Boa Forma — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-la-2", topicId: "portuguese-2-5", conceptId: "complete-frase-letra-opcao-correta-marina",
+    section: "LA", questionRef: "2024 OL Section LA Q2",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Complete a frase com a letra da opção correta (a, b, c ou d). A Marina treina naquele clube há ________________. (a) dois anos (b) dois dias (c) dois meses (d) duas semanas",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a) dois anos", marks: 2, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Boa Forma — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-la-3", topicId: "portuguese-2-5", conceptId: "marina-enumera-vantagens-treinar-naquele-clube",
+    section: "LA", questionRef: "2024 OL Section LA Q3",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "A Marina enumera as vantagens de treinar naquele clube. Preencha os espaços com duas das vantagens que ela refere.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Amigos","Aparelhos são completos","Várias opções de aulas.","Perto da casa dela."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Boa Forma — Question 3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-la-4", topicId: "portuguese-2-5", conceptId: "assinale-tick-dois-beneficios-exercicio-fisico",
+    section: "LA", questionRef: "2024 OL Section LA Q4",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Assinale com um tick (✓) os dois benefícios do exercício físico, de acordo com a Marina. Aumenta a energia. Diminui o apetite. Melhora a forma física. Piora a saúde mental.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Aumenta a energia.","Melhora a forma física."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Boa Forma — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-la-5", topicId: "portuguese-2-5", conceptId: "dois-falam-horarios-vao-treinar-preencha",
+    section: "LA", questionRef: "2024 OL Section LA Q5",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Os dois falam dos horários em que vão treinar. Preencha o quadro com o horário de cada um. Marina: Pedro:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "7 da manhã.", marks: 2, contextNote: "For “Marina”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "8 horas.", marks: 2, contextNote: "For “Pedro”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Boa Forma — Question 5",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-la-6", topicId: "portuguese-2-5", conceptId: "marina-recomenda-aula-pedro-preencha-tabela",
+    section: "LA", questionRef: "2024 OL Section LA Q6",
+    stem: "Vai ouvir um diálogo. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "A Marina recomenda uma aula ao Pedro. Preencha a tabela sobre esta aula. Aula: Horário: Sala:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ioga/Yoga", marks: 2, contextNote: "For “Aula”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "8:30", marks: 2, contextNote: "For “Horário”" },
+    { id: "r-3", kind: "point", verbatim: "3", marks: 2, contextNote: "For “Sala”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A Boa Forma — Question 6",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-lb-1", topicId: "portuguese-2-5", conceptId: "onde-nasceu-escritora",
+    section: "LB", questionRef: "2024 OL Section LB Q1",
+    stem: "Vai ouvir um episódio de um podcast. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Onde nasceu a escritora?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Moçambique.", marks: 3, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B Paulina Chiziane — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-lb-2", topicId: "portuguese-2-5", conceptId: "complete-frase-letra-opcao-correta-desde",
+    section: "LB", questionRef: "2024 OL Section LB Q2",
+    stem: "Vai ouvir um episódio de um podcast. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Complete a frase com a letra da opção correta (a, b, c ou d). Desde cedo, Paulina desenvolveu o gosto pela dança, pintura e ______________. (a) cinema (b) escrita (c) escultura (d) teatro",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(b) escrita", marks: 2, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B Paulina Chiziane — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-lb-3", topicId: "portuguese-2-5", conceptId: "paulina-estudou-escola-comercial-angola-assinale",
+    section: "LB", questionRef: "2024 OL Section LB Q3",
+    stem: "Vai ouvir um episódio de um podcast. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Paulina estudou na Escola Comercial de Angola. Assinale a opção correta com um (✓). Verdadeiro Falso",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Falso", marks: 2, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B Paulina Chiziane — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-lb-4", topicId: "portuguese-2-5", conceptId: "preencha-espacos-complete-frase-alguns-depois",
+    section: "LB", questionRef: "2024 OL Section LB Q4",
+    stem: "Vai ouvir um episódio de um podcast. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Preencha os espaços e complete a frase. Alguns _____________ depois, _______________ seus _________________ contos em ______________ locais.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "anos", marks: 2, contextNote: "For “Alguns anos depois, publicou seus primeiros contos em jornais locais.”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "publicou", marks: 2, contextNote: "For “Alguns anos depois, publicou seus primeiros contos em jornais locais.”" },
+    { id: "r-3", kind: "point", verbatim: "primeiros", marks: 2, contextNote: "For “Alguns anos depois, publicou seus primeiros contos em jornais locais.”" },
+    { id: "r-4", kind: "point", verbatim: "jornais", marks: 2, contextNote: "For “Alguns anos depois, publicou seus primeiros contos em jornais locais.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B Paulina Chiziane — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-lb-5", topicId: "portuguese-2-5", conceptId: "quem-personagens-principais-historias-escritora",
+    section: "LB", questionRef: "2024 OL Section LB Q5",
+    stem: "Vai ouvir um episódio de um podcast. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Quem são os personagens principais das histórias da escritora?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "As mulheres.", marks: 4, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B Paulina Chiziane — Question 5",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-lb-6", topicId: "portuguese-2-5", conceptId: "ano-livro-balada-amor-vento-foi",
+    section: "LB", questionRef: "2024 OL Section LB Q6",
+    stem: "Vai ouvir um episódio de um podcast. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Em que ano o livro ‘Balada de Amor ao Vento’ foi publicado?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1990", marks: 2, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B Paulina Chiziane — Question 6",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-lb-7", topicId: "portuguese-2-5", conceptId: "foi-premio-paulina-recebeu-2021",
+    section: "LB", questionRef: "2024 OL Section LB Q7",
+    stem: "Vai ouvir um episódio de um podcast. Haverá uma pausa na segunda vez que o áudio tocar. Responda a todas as questões em português de acordo com o áudio.",
+    questionText: "Qual foi o prêmio que Paulina recebeu em 2021?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Prêmio Camões.", marks: 3, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B Paulina Chiziane — Question 7",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-lc-1", topicId: "portuguese-2-5", conceptId: "tick-correct-answer-alice-porto-doctor",
+    section: "LC", questionRef: "2024 OL Section LC Q1",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "Tick (✓) the correct answer. Alice is in Porto to go to the doctor. Alice is in Porto to study. Alice is in Porto to visit family. Alice is in Porto to work.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Alice is in Porto to work.", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Agência de Viagens — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-lc-2", topicId: "portuguese-2-5", conceptId: "alice-waiting-visitors-fill-table-below",
+    section: "LC", questionRef: "2024 OL Section LC Q2",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "Alice is waiting for visitors. Fill in the table below. Who: When:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Her family.", marks: 3, contextNote: "For “Who”: The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Next weekend.", marks: 3, contextNote: "For “When”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Agência de Viagens — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-lc-3", topicId: "portuguese-2-5", conceptId: "alice-been-boat-rio-douro-tick",
+    section: "LC", questionRef: "2024 OL Section LC Q3",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "Alice has been on a boat in Rio Douro. Tick (✓) the correct answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Agência de Viagens — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-lc-4", topicId: "portuguese-2-5", conceptId: "many-days-holiday-package-alice-chose",
+    section: "LC", questionRef: "2024 OL Section LC Q4",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "For how many days is the holiday package that Alice chose?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Two days.", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Agência de Viagens — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-lc-5", topicId: "portuguese-2-5", conceptId: "included-price",
+    section: "LC", questionRef: "2024 OL Section LC Q5",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What is included in the price? Give four details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":4,"perOption":2,"options":["Cruise","Hotel","Trips","Visits","Meals"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Agência de Viagens — Question 5",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-lc-6", topicId: "portuguese-2-5", conceptId: "price-holiday-package-per-adult",
+    section: "LC", questionRef: "2024 OL Section LC Q6",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What is the price of this holiday package per adult?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "€ 246", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C Agência de Viagens — Question 6",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-ld-1", topicId: "portuguese-2-5", conceptId: "theme-today-radio-programme",
+    section: "LD", questionRef: "2024 OL Section LD Q1",
+    stem: "You will hear a radio programme. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What is the theme of today’s radio programme?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sustainable clothes/clothing.", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Programa de Rádio — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-ld-2", topicId: "portuguese-2-5", conceptId: "many-companies-talk",
+    section: "LD", questionRef: "2024 OL Section LD Q2",
+    stem: "You will hear a radio programme. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "How many companies will they talk about?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "3", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Programa de Rádio — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-ld-3", topicId: "portuguese-2-5", conceptId: "enter-correct-letter-box-provided-companies",
+    section: "LD", questionRef: "2024 OL Section LD Q3",
+    stem: "You will hear a radio programme. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "Enter the correct letter (a, b, c or d) in the box provided. Companies want to succeed and sell their product, but sometimes they ____________.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(c) forget about the environment.", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Programa de Rádio — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-ld-4", topicId: "portuguese-2-5", conceptId: "foods-roupa-terra-uses-make-products",
+    section: "LD", questionRef: "2024 OL Section LD Q4",
+    stem: "You will hear a radio programme. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "Name three foods that Roupa da Terra uses to make their products.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["Banana (skin)","corn","bamboo","soya."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Programa de Rádio — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-ld-5", topicId: "portuguese-2-5", conceptId: "whom-verde-company-produce-clothes",
+    section: "LD", questionRef: "2024 OL Section LD Q5",
+    stem: "You will hear a radio programme. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "For whom does the Verde company produce clothes?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Men / male","women / female."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Programa de Rádio — Question 5",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-ld-6", topicId: "portuguese-2-5", conceptId: "fill-table-below-natura-pura-country",
+    section: "LD", questionRef: "2024 OL Section LD Q6",
+    stem: "You will hear a radio programme. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "Fill in the table below about Natura Pura. Country: Products Type of Material",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Brazil", marks: 1, contextNote: "For “Country”: The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Clothes", marks: 1, contextNote: "For “Products”" },
+    { id: "r-3", kind: "point", verbatim: "Toys", marks: 1, contextNote: "For “Products”" },
+    { id: "r-4", kind: "point", verbatim: "Baby/Kids/children sheets/blankets/covers", marks: 1, contextNote: "For “Products”" },
+    { id: "r-5", kind: "point", verbatim: "Organic/bio/natural/chemicals free cotton", marks: 1, contextNote: "For “Type of Material”" },
+    { id: "r-6", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The scheme prices this ask “6 marks: 6 x 1 mark” and prints five answers; it prints no answer for the rest.", permittedMarks: [0,1], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D Programa de Rádio — Question 6",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-le-1", topicId: "portuguese-2-5", conceptId: "luiz-invites-sara-birthday-party-tick",
+    section: "LE", questionRef: "2024 OL Section LE Q1",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "Luiz invites Sara to a birthday party. Tick (✓) the correct answer. True False",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Festa Temática — Question 1",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-le-2", topicId: "portuguese-2-5", conceptId: "reason-event",
+    section: "LE", questionRef: "2024 OL Section LE Q2",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What is the reason for the event?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "To raise money for an animal shelter / pound.", marks: 4, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “4 marks: 2 x 2 marks”.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Festa Temática — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-le-3", topicId: "portuguese-2-5", conceptId: "money-used",
+    section: "LE", questionRef: "2024 OL Section LE Q3",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What will the money be used for? Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["Food","shelter","vet."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Festa Temática — Question 3",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-le-4", topicId: "portuguese-2-5", conceptId: "theme-event",
+    section: "LE", questionRef: "2024 OL Section LE Q4",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "What is the theme of the event?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Superheroes","villains."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Festa Temática — Question 4",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC018GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "por-2024-ol-le-5", topicId: "portuguese-2-5", conceptId: "event-take-place-big-room-offer",
+    section: "LE", questionRef: "2024 OL Section LE Q5",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer all questions in English based on the audio.",
+    questionText: "The event will take place in a big room. What will be on offer there? Give four details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":4,"perOption":2,"options":["Music","dance floor","food","drink."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E Festa Temática — Question 5",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2024 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2024 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC018GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
