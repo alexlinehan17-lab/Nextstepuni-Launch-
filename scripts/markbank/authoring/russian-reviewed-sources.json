@@ -29692,7 +29692,17 @@
     ],
     "guidancePages": [
       3
-    ]
+    ],
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        16,
+        17,
+        18
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2021-hl.json"
+    }
   },
   {
     "id": "ru-2021-hl-se",

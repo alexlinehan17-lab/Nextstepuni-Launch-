@@ -24,6 +24,10 @@ def annotate_no_answers(cards):
             row = card['rows'][0]
             assert row['kind'] == 'criterion' and row['unprinted'] is True, card['id']
             assert row['verbatim'] == FIXED_LINE and row['marks'] == entry['printedMarks'], card['id']
+        elif entry.get('treatment') == 'empty-points':
+            assert card['kind'] == 'rubric', card['id']
+            assert card['rubric']['system'] == 'language-points', card['id']
+            assert all(not group['rows'] for group in card['rubric']['groups']), card['id']
         else:
             assert card['kind'] == 'rubric', card['id']
             assert card['rubric']['system'] == 'language-writing', card['id']
