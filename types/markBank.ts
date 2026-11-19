@@ -1862,10 +1862,11 @@ export const isRubricCard = (c: SecCard): c is SecRubricCard => c.kind === 'rubr
 /** A card whose paper has no published marking scheme: shown, never scored. */
 export const isNoSchemeCard = (c: SecCard): boolean => (c.kind === 'question' || c.kind === 'diagram') && c.noScheme === true;
 
-/** Subjects whose reviewed decks (released from Codex on 18 Nov 2026) hold a
- *  task as a confidence review. Elsewhere a question-total card keeps the
- *  mark-total assessment it has always had. */
-const CONFIDENCE_REVIEW_SUBJECTS = new Set(['maths', 'physics', 'home-economics', 'japanese', 'russian', 'lcvp']);
+/** Subjects whose reviewed decks still hold a task as a confidence review:
+ *  Codex's Russian and Link Modules, until they are converted under R3/R4.
+ *  Home Economics, Physics and Japanese were converted on 19 Nov 2026; every
+ *  other question-total card keeps the mark-total assessment it has always had. */
+const CONFIDENCE_REVIEW_SUBJECTS = new Set(['russian', 'lcvp']);
 
 /**
  * A "confidence-only" hold: the reviewed scheme gives this task no settled

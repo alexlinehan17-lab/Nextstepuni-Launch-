@@ -1288,50 +1288,39 @@
       },
       "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2010 Ordinary Level — © State Examinations Commission.",
       "tariffModel": {
-        "kind": "questionTotal"
+        "kind": "fixed"
       },
       "rows": [
         {
-          "kind": "point",
-          "verbatim": "Steak",
+          "kind": "anyN",
+          "verbatim": "Steak / Teriyaki Chicken / Raw fish / Potato fries / Ceaser salad (chicken, fish, salad;  half marks)",
           "marks": null,
-          "contextNote": "2 names of the following food (2 marks each). (chicken, fish, salad;  half marks). (Half marks if answered in the inappropriate language). The full alternatives carry 2 each and the generic chicken/fish/salad alternatives carry half (1 each), under the two-answer total4. The source does not state how generic partial credit and the independent language reduction combine. This complete task is confidence review only; marks are not calculated. Do not infer a cumulative or once-only combined reduction.",
-          "id": "r-1"
-        },
-        {
-          "kind": "point",
-          "verbatim": "Teriyaki Chicken",
-          "marks": null,
-          "contextNote": "2 names of the following food (2 marks each). (chicken, fish, salad;  half marks). (Half marks if answered in the inappropriate language). The full alternatives carry 2 each and the generic chicken/fish/salad alternatives carry half (1 each), under the two-answer total4. The source does not state how generic partial credit and the independent language reduction combine. This complete task is confidence review only; marks are not calculated. Do not infer a cumulative or once-only combined reduction.",
-          "id": "r-2"
-        },
-        {
-          "kind": "point",
-          "verbatim": "Raw fish",
-          "marks": null,
-          "contextNote": "2 names of the following food (2 marks each). (chicken, fish, salad;  half marks). (Half marks if answered in the inappropriate language). The full alternatives carry 2 each and the generic chicken/fish/salad alternatives carry half (1 each), under the two-answer total4. The source does not state how generic partial credit and the independent language reduction combine. This complete task is confidence review only; marks are not calculated. Do not infer a cumulative or once-only combined reduction.",
-          "id": "r-3"
-        },
-        {
-          "kind": "point",
-          "verbatim": "Potato fries",
-          "marks": null,
-          "contextNote": "2 names of the following food (2 marks each). (chicken, fish, salad;  half marks). (Half marks if answered in the inappropriate language). The full alternatives carry 2 each and the generic chicken/fish/salad alternatives carry half (1 each), under the two-answer total4. The source does not state how generic partial credit and the independent language reduction combine. This complete task is confidence review only; marks are not calculated. Do not infer a cumulative or once-only combined reduction.",
-          "id": "r-4"
-        },
-        {
-          "kind": "point",
-          "verbatim": "Ceaser salad",
-          "marks": null,
-          "contextNote": "2 names of the following food (2 marks each). (chicken, fish, salad;  half marks). (Half marks if answered in the inappropriate language). The full alternatives carry 2 each and the generic chicken/fish/salad alternatives carry half (1 each), under the two-answer total4. The source does not state how generic partial credit and the independent language reduction combine. This complete task is confidence review only; marks are not calculated. Do not infer a cumulative or once-only combined reduction.",
-          "id": "r-5"
-        },
-        {
-          "kind": "point",
-          "verbatim": "(chicken, fish, salad;  half marks)",
-          "marks": null,
-          "contextNote": "2 names of the following food (2 marks each). (chicken, fish, salad;  half marks). (Half marks if answered in the inappropriate language). The full alternatives carry 2 each and the generic chicken/fish/salad alternatives carry half (1 each), under the two-answer total4. The source does not state how generic partial credit and the independent language reduction combine. This complete task is confidence review only; marks are not calculated. Do not infer a cumulative or once-only combined reduction.",
-          "id": "r-6"
+          "contextNote": "2 names of the following food (2 marks each). (chicken, fish, salad;  half marks). (Half marks if answered in the inappropriate language). The scheme gives no rule for combining a half-mark answer with the language reduction, so the card does not apply the reduction for you.",
+          "id": "r-1",
+          "group": {
+            "claimMax": 2,
+            "perOption": 2,
+            "options": [
+              "Steak",
+              "Teriyaki Chicken",
+              "Raw fish",
+              "Potato fries",
+              "Ceaser salad",
+              "chicken",
+              "fish",
+              "salad"
+            ],
+            "optionMarks": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1
+            ]
+          }
         }
       ],
       "sourceMaterial": {
