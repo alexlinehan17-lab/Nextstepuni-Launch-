@@ -187,7 +187,10 @@ def task_text(P, key):
     for line in lines[start:]:
         t = line.text
         if line is not lines[start]:
-            if last_y is not None and line.y - last_y > TASK_GAP and not SPEAKER.match(t):
+            # A bullet glyph opens one of the task's own points, however far
+            # below the task line the SEC set the list (2022 HL Q4(a): 46 pt).
+            if last_y is not None and line.y - last_y > TASK_GAP and not SPEAKER.match(t) \
+                    and t != '•':
                 # The task's words are set close together; what follows a
                 # wider gap is the picture, map or table the task sets below
                 # them ("16 września 2026, piątek" on the 2026 Ordinary map).
@@ -227,7 +230,12 @@ def task_text(P, key):
             parts.append(t)
     # Ordinary sets some bullets inline ("punkty: • Poranny stres. • Droga do
     # szkoły."): each point on its own line, as the page lays it out.
-    return '\n'.join(p.replace(' • ', '\n• ') for p in parts), page
+    text = '\n'.join(p.replace(' • ', '\n• ') for p in parts)
+    # The paper prints a smiling face in outline in a dialogue (2023 OL Q4(a),
+    # p16): lifted as printed, with VARIATION SELECTOR-15 so platforms that
+    # honour text presentation draw the outline form, not a colour emoji.
+    text = re.sub('\U0001F60A(?!\uFE0E)', '\U0001F60A\uFE0E', text)
+    return text, page
 
 
 def instruction(P, q):

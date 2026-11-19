@@ -22,15 +22,16 @@ sys.path.insert(0, HERE)
 
 import pl_paper                                                  # noqa: E402
 from pl_listen import scheme_lines                               # noqa: E402
-from pl_listen_lib import S, J, T, TM, PL, W, one, menu, part, One  # noqa: E402,F401
-from pl_listen_specs import build_rows                           # noqa: E402
+from pl_listen_lib import S, J, T, TM, PL, W, one, menu, part, One, shown, graded  # noqa: E402,F401
+from pl_listen_specs import build_rows, conflict                 # noqa: E402
 from pl_topics import (topic_for, concept_for, answer_language,  # noqa: E402
                        language_note)
 from pl_all import card_id, question_ref, source_material        # noqa: E402
 from paper_census import key_label                              # noqa: E402
 
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
-KEY = re.compile(r'^A(\d{1,2})([a-l])(i{1,3}|iv|vi{0,3})?$')
+# Section, question, letter, roman: 'A2ei'; the old papers' 'I4', 'II1', 'III2'.
+KEY = re.compile(r'^(A|III|II|I)(\d{1,2})([a-l])?(i{1,3}|iv|vi{0,3})?$')
 
 
 class R:
@@ -38,8 +39,11 @@ class R:
     (`rownote`, a callable of the documents or a string) and the reviewer's
     evidence (`note`)."""
     def __init__(self, key, rows, total=None, note=None, rownote=None, question=None,
-                 extra_pages=()):
+                 extra_pages=(), whole=False):
         self.key, self.rows, self.total, self.note = key, rows, total, note
+        # The scheme prices the ask only as a whole (`questionTotal`): its rows
+        # are shown, never claimed, and `total` is the printed price.
+        self.whole = whole
         self.rownote, self.question = rownote, question
         # Paper pages the card needs beside its text's: a matching task's
         # pictures printed on a page of their own.
@@ -84,6 +88,50 @@ class OptionOnly:
         return 1, int(m.group(1)), m.group(0)
 
 
+class Times:
+    """A split printed without brackets inside a question's price line,
+    "(d) 8 marks: (i) 3 x 2 marks, (ii) 2 marks": the k-th "N x P marks"."""
+    def __init__(self, n, k=0):
+        self.n, self.k = n, k
+
+    def read(self, doc):
+        line = doc['scheme'][self.n - 1].replace('\xa0', ' ')
+        found = list(re.finditer(r'(\d{1,2})\s*[x×]\s*(\d{1,2})\s*marks?', line))
+        if len(found) <= self.k:
+            raise ValueError(f'scheme line {self.n} prints no "N x P marks" #{self.k}: {line!r}')
+        m = found[self.k]
+        return int(m.group(1)), int(m.group(2)), m.group(0)
+
+
+class Rule:
+    """A price the 2021 scheme prints in words or brackets, read by a pattern
+    on scheme line n whose groups give (count, per): "Po 1 punkcie za podanie
+    korzyści (3 pkt max)" is three answers at 1, "2 punkty za wytłumaczenie"
+    one answer at 2, "(5)" one at 5, "CZĘŚĆ II (40/70)" one at 40."""
+    def __init__(self, n, pattern, order=('count', 'per')):
+        self.n, self.pattern, self.order = n, pattern, order
+
+    def read(self, doc):
+        line = re.sub(r'[\s\xa0]+', ' ', doc['scheme'][self.n - 1]).strip()
+        m = re.search(self.pattern, line)
+        if not m:
+            raise ValueError(f'scheme line {self.n} does not print {self.pattern!r}: {line!r}')
+        vals = dict(zip(self.order, (int(g) for g in m.groups())))
+        return vals.get('count', 1), vals['per'], m.group(0)
+
+
+def per_point_max(n):
+    return Rule(n, r'Po (\d{1,2}) punkcie\b.*?\((\d{1,2}) (?:pkt|punkty) max\)', ('per', 'count'))
+
+
+def points_for(n, what):
+    return Rule(n, r'(\d{1,2}) punkty za ' + re.escape(what), ('per',))
+
+
+def bracket(n):
+    return Rule(n, r'\((\d{1,3})(?:/\d{1,3})?\)', ('per',))
+
+
 def columns(d, page, y0, y1, edges):
     """A printed table's columns between y0 and y1 on a paper page, each read
     top to bottom and left to right inside its own x-range: "Marta lubi: •
@@ -94,6 +142,14 @@ def columns(d, page, y0, y1, edges):
                       key=lambda l: (round(l.y / 4), l.x))
         out.append(re.sub(r'\s+', ' ', ' '.join(l.text for l in cell)).strip())
     return out
+
+
+def _remainder_line(rule, d):
+    """The arithmetic, where the student sees it (row contextNote)."""
+    _c, rest, notation = rule.read(d)
+    total = int(re.search(r'\d{1,3}', notation).group(0))
+    return (f'The scheme prints no mark for this part; {rest} marks is the {total} printed for '
+            f'the text less the {total - rest} printed for its other parts.')
 
 
 def lifted(*sels):
@@ -171,6 +227,152 @@ SPECS[(2025, 'ol')] = [
 ]
 
 
+# ================================================================ 2020 HL ===
+# The old examination (Część I: a text and six questions, 30; Część II: ~100
+# words, 30; Część III: an essay, 40). The scheme prices Q1 a point a word and
+# Q2-Q6 only as a whole "(5)" over model points; Części II and III on four
+# printed percentage criteria (30/30/30/10%), which give whole marks of 30
+# and of 40 (CARD-STANDARD 10b). The paper carries a second, hidden text layer
+# that repeats and reorders Q4-Q6; their questions are its visible lines, as
+# the rendered p4 sets them.
+CRITERIA_2020 = [(J(S(51), S(52)), 52), (J(S(53), S(54)), 54), (J(S(55), S(56)), 56), (S(57), 57)]
+
+
+def _examples(*sels):
+    return lambda d: (f'The scheme prints, for Części II and III: “{S(50).text(d)}” Its points for '
+                      f'this task, as examples, not a checklist: '
+                      + '; '.join(f'“{x.text(d)}”' for x in sels) + '.')
+
+
+def _essay_2020(d, q):
+    title = re.sub(r'^\d\.\s*', '', q)
+    return f'{PL(4, "Napisz wypracowanie").text(d)} {PL(4, "300 słów:").text(d)} {title}'
+
+
+SPECS[(2020, 'hl')] = [
+    *[R(f'I1{x}', [one(S(n, after=f'{x}) '), Rule(67, r'(\d) pkt za każde', ('per',)))])
+      for x, n in zip('abcde', range(68, 73))],
+    R('I2', [shown(S(80)), shown(S(81)), shown(S(82))], total=bracket(79), whole=True),
+    R('I3', [shown(J(S(85), S(86), S(87))), shown(S(88))], total=bracket(84), whole=True),
+    R('I4', [shown(J(S(91), S(92))), shown(J(S(93), S(94))), shown(S(95)), shown(S(96))],
+      total=bracket(90), whole=True,
+      question=lambda d, q: (re.sub(r'^4\.\s*', '', PL(4, '4. Dlaczego').text(d))
+                             .replace(' (akapit 3) ', ' ') + ' (akapit 3)')),
+    R('I5', [shown(J(S(99), S(100))), shown(J(S(101), S(102)))], total=bracket(98), whole=True,
+      question=lambda d, q: re.sub(r'^5\.\s*', '', PL(4, '5. Dlaczego').text(d))),
+    R('I6', [shown(S(105)), shown(J(S(106), S(107))), shown(S(108)), shown(J(S(109), S(110))),
+             shown(S(111)), shown(S(112)), shown(S(113))], total=bracket(104), whole=True,
+      question=lambda d, q: f'{PL(4, "Jaką cenę").text(d)} {PL(4, "społeczeństwa?").text(d)}'),
+    R('II1', [graded(S(119), bracket(118), CRITERIA_2020)],
+      rownote=_examples(*[S(n) for n in range(122, 126)])),
+    R('III1', [graded(J(S(127), S(128)), bracket(126), CRITERIA_2020)],
+      rownote=_examples(S(132), J(S(133), S(134)), S(135), S(136), J(S(137), S(138))),
+      question=_essay_2020),
+    R('III2', [graded(J(S(127), S(128)), bracket(126), CRITERIA_2020)],
+      rownote=_examples(S(140), J(S(141), S(142))),
+      question=_essay_2020),
+]
+
+
+# ================================================================ 2021 HL ===
+# The 2021 paper (Część I: a text and six questions, 30; Część II: an essay,
+# 40). Its scheme prices in words: "Po 1 punkcie za podanie korzyści (3 pkt
+# max), 2 punkty za wytłumaczenie". Where it prices points, they are rows;
+# where it prints a model answer or a list of reflections priced only as a
+# whole, the card is `questionTotal` and shows them (CARD-STANDARD 10a).
+def _essay_note(head, total):
+    return lambda d: (f'The scheme marks the essay as a whole, out of {total.read(d)[1]}: its '
+                      f'criterion, then under “{head.text(d)}” examples of what an essay may '
+                      f'reflect on, not a checklist.')
+
+
+def _essay_question(d, q):
+    # The paper's instruction over the two titles (p4), then the title.
+    title = re.sub(r'\s*ALBO\s*$', '', q)
+    return f'{PL(4, "Napisz wypracowanie").text(d)} {title}'
+
+
+SPECS[(2021, 'hl')] = [
+    R('I4', [menu([S(91), J(S(92), S(93)), S(94), S(95), S(96)], per_point_max(89), lead=S(90)),
+             one(J(S(98), S(99)), points_for(89, 'wytłumaczenie'), lead=S(97))],
+      total=bracket(88), rownote=lifted(S(89))),
+    R('I5', [menu([S(n) for n in range(109, 114)], per_point_max(107), lead=S(108)),
+             menu([J(S(114), S(115), S(116)), J(S(118), S(119), S(120))],
+                  points_for(107, 'podanie swojej opinii'))],
+      total=bracket(106), rownote=lifted(S(107))),
+    # "(5)" for the question, no split: the two printed points are the
+    # scheme's answer, shown, and the student assesses against the 5.
+    R('I6', [shown(J(S(123), S(124), S(125))), shown(J(S(126), S(127)))],
+      total=bracket(122), whole=True),
+    R('II1', [shown(J(S(133), S(134))), shown(J(S(138), S(139)))]
+             + [shown(S(n)) for n in range(140, 145)] + [shown(S(145))]
+             + [shown(S(n)) for n in range(146, 150)],
+      total=bracket(132), whole=True, rownote=_essay_note(S(137), bracket(132)),
+      question=_essay_question),
+    # The list runs on over a page break (p6-p7) and ends "‐itp.", which the
+    # note's "not a checklist" carries.
+    R('II2', [shown(J(S(133), S(134)))] + [shown(S(n)) for n in (154, 155, 156, 161)]
+             + [shown(J(S(162), S(163))), shown(S(164)), shown(J(S(165), S(166)))]
+             + [shown(S(n)) for n in (167, 168)],
+      total=bracket(132), whole=True, rownote=_essay_note(S(153), bracket(132)),
+      question=_essay_question),
+]
+
+
+# ================================================================ 2022 OL ===
+SPECS[(2022, 'ol')] = [
+    # Ordering (rendered scheme p5, paper p7): one card for the printed
+    # question, a row per numbered event with the scheme's position and its
+    # "1 mark"; (iii) is the printed example with its "1" (18526a518). The
+    # scheme words (ii) "co zastanie", the paper "co zobaczy": rows are led by
+    # the paper's lines, the answers are the scheme's numbers.
+    R('A1f', [one(S(109, after='buty. '), T(109), lead=PL(7, '(i) Zmienił')),
+              one(S(110, after='Adama. '), T(110), lead=PL(7, '(ii) ')),
+              one(S(112, after='szkoły. '), T(112), lead=PL(7, '(iv) ')),
+              one(S(113, after='szatni. '), T(113), lead=PL(7, '(v) ')),
+              one(S(114, after='przystanek. '), T(114), lead=PL(7, '(vi) ')),
+              one(S(115, after='przygodę. '), T(115), lead=PL(7, '(vii) '))],
+      total=T(106, 1),
+      question=lambda d, q: '\n'.join(
+          [_marker_off(PL(7, '(f) Co po kolei').text(d)) + ' ' + PL(7, '(akapity: 3, 4)').text(d),
+           PL(7, '(i) Zmienił').text(d), PL(7, '(ii) ').text(d),
+           PL(7, '(iii) ').text(d) + ' ' + PL(7, '1').text(d),
+           PL(7, '(iv) ').text(d), PL(7, '(v) ').text(d), PL(7, '(vi) ').text(d),
+           PL(7, '(vii) ').text(d)]),
+      note='The positions are the scheme\'s (p5, rendered); (iii) is the printed example.'),
+    # Matching (rendered scheme p6): 2 = D, 3 = A, 4 = B, "2 marks" each.
+    R('A2b', [one(W(159, 0), T(160, 0), lead=PL(10, '2. Najmłodszy')),
+              one(W(159, 1), T(160, 1), lead=PL(10, '3. Największy')),
+              one(W(159, 2), T(160, 2), lead=PL(10, '4. Najstarszy'))],
+      total=T(155, 1),
+      question=lambda d, q: '\n'.join(
+          [_marker_off(PL(10, '(b) Połącz').text(d)) + ' ' + PL(10, 'odpowiedzi wpisz').text(d)]
+          + [PL(10, f'{n}. ').text(d) for n in (1, 2, 3, 4)]
+          + [PL(10, f'{x}. ').text(d) for x in 'ABCD'])),
+    # "6 marks (2 x 3 marks)" over "Any three of:" and "Podaj 3 szczegóły"
+    # (rendered scheme p8): the printed price is carded (CARD-STANDARD 5, the
+    # coordinator's ruling on 2026 OL Część A Q4) and both lines are quoted.
+    R('A3a', [menu([S(n) for n in range(206, 211)], T(202, 1))],
+      rownote=conflict(S(205), T(202, 1), ', though the paper asks for three details')),
+    R('A3di', [menu([S(n) for n in range(225, 231)], Times(220, 0))]),
+    R('A3dii', [one(S(232), T(220, 2))]),
+]
+
+
+# ================================================================ 2022 HL ===
+SPECS[(2022, 'hl')] = [
+    # Rendered scheme p7: "(2 x 2m)" is printed on (e)'s head row, one price
+    # for each sentence (the old "no tariff" exclusion missed it). The paper
+    # prints each answer line opening with the underlined word (p9).
+    R('A2ei', [one(S(216), T(213, each=True))],
+      question=lambda d, q: ' '.join(
+          [_marker_off(PL(9, '(e) Podkreślone').text(d)), q, PL(9, 'zdziwienie').text(d)])),
+    R('A2eii', [one(S(218), T(213, each=True))],
+      question=lambda d, q: ' '.join(
+          [q, PL(9, 'produktywna').text(d)])),
+]
+
+
 # ================================================================ 2023 HL ===
 SPECS[(2023, 'hl')] = [
     # Rendered scheme p5: (ii)'s synonyms are printed with no price, and the
@@ -178,6 +380,8 @@ SPECS[(2023, 'hl')] = [
     # its twelve other parts print ((i) "(2m)") leaves 2. The paper prints the
     # answer line opening with the underlined word, "mnóstwo –" (p5).
     R('A1dii', [one(S(130), TextRemainder(77, 'pl-2023-hl-a-1-', 'pl-2023-hl-a-1-d-ii'))],
+      rownote=lambda d: _remainder_line(
+          TextRemainder(77, 'pl-2023-hl-a-1-', 'pl-2023-hl-a-1-d-ii'), d),
       question=lambda d, q: ' '.join(
           [_marker_off(PL(5, '(d) Podkreślone').text(d)), q, PL(5, 'mnóstwo').text(d)]),
       note=('The scheme prints no price for (ii); its 2 marks are the text\'s printed '
@@ -295,7 +499,7 @@ def cards(year, level):
     out = []
     for spec in specs:
         m = KEY.match(spec.key)
-        key = ('A', int(m.group(1)), m.group(2), m.group(3))
+        key = (m.group(1), int(m.group(2)), m.group(3), m.group(4))
         # A card for a whole printed question whose rows the census reads as
         # romans (an ordering task) cites the question; its page is theirs.
         ask = asks.get(key) or next(a for k, a in sorted(asks.items(), key=str)
@@ -308,7 +512,12 @@ def cards(year, level):
         if spec.rownote:
             note = f'{note} {spec.rownote(doc) if callable(spec.rownote) else spec.rownote}'
         rows, total = build_rows(doc, spec, note)
-        if spec.total is not None:
+        if spec.whole:
+            if total != 0 or spec.total is None:
+                raise ValueError(f'{year} {level} {spec.key}: a whole-question card shows rows only')
+            tc, tp, _tn = spec.total.read(doc)
+            total = tc * tp
+        elif spec.total is not None:
             tc, tp, tn = spec.total.read(doc)
             if tc * tp != total:
                 raise ValueError(f'{year} {level} {spec.key}: rows add to {total}, printed {tn!r}')
@@ -317,12 +526,12 @@ def cards(year, level):
             'subjectId': 'polish',
             'level': LEVEL_WORD[level],
             'year': year,
-            'section': 'A',
-            'topicId': topic_for(year, 'A'),
+            'section': key[0],
+            'topicId': topic_for(year, key[0]),
             'conceptId': concept_for(question),
             'questionRef': question_ref(year, level, key),
             'questionText': question,
-            'tariffModel': {'kind': 'fixed'},
+            'tariffModel': {'kind': 'questionTotal' if spec.whole else 'fixed'},
             'totalMarks': total,
             'rows': rows,
             'notes': (f'Read on the rendered scheme and paper (languages-q3 lane, 19 Nov 2026); '

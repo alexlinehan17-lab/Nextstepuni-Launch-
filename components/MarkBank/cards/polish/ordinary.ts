@@ -1540,9 +1540,9 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "5", marks: 2, contextNote: "For “(i) The girl met Krzysiek on the street.”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "2", marks: 2, contextNote: "For “(ii) The girl was surprised on seeing one of Krzysiek’s pictures.”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-3", kind: "point", verbatim: "3", marks: 2, contextNote: "For “(iv) The girl read the title of the picture.”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-4", kind: "point", verbatim: "4", marks: 2, contextNote: "For “(v) The girl left the gallery.”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "2", marks: 2, contextNote: "For “(ii) The girl was surprised on seeing one of Krzysiek’s pictures.”" },
+    { id: "r-3", kind: "point", verbatim: "3", marks: 2, contextNote: "For “(iv) The girl read the title of the picture.”" },
+    { id: "r-4", kind: "point", verbatim: "4", marks: 2, contextNote: "For “(v) The girl left the gallery.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1568,8 +1568,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Muzeum Guzików w Łowiczu", marks: 2, contextNote: "For “Marta lubi:”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "Muzeum Horroru w Wojnowicach", marks: 2, contextNote: "For “Tomek lubi:”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-3", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Zosia lubi:”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":2,"options":["Rogalowe Muzeum Poznania","Żywe Muzeum Piernika w Toruniu"]} },
+    { id: "r-2", kind: "point", verbatim: "Muzeum Horroru w Wojnowicach", marks: 2, contextNote: "For “Tomek lubi:”" },
+    { id: "r-3", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Zosia lubi:”", group: {"claimMax":1,"perOption":2,"options":["Rogalowe Muzeum Poznania","Żywe Muzeum Piernika w Toruniu"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1801,7 +1801,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "wrócić do Polski /nie chciała zostać w Anglii na stałe", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "otworzyć swój biznes (w Polsce)", marks: 3, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "otworzyć swój biznes (w Polsce)", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2222,8 +2222,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "in 1970s", marks: 3, contextNote: "For “When was it built?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "(almost) 1 km", marks: 3, contextNote: "For “How long is it?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-3", kind: "point", verbatim: "a wave", marks: 3, contextNote: "For “What does its shape remind us of?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "(almost) 1 km", marks: 3, contextNote: "For “How long is it?”" },
+    { id: "r-3", kind: "point", verbatim: "a wave", marks: 3, contextNote: "For “What does its shape remind us of?”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2399,8 +2399,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "photo competition", marks: 3, contextNote: "For “type”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "‘My Town’", marks: 3, contextNote: "For “title”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-3", kind: "point", verbatim: "1200 zł", marks: 3, contextNote: "For “main prize”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "‘My Town’", marks: 3, contextNote: "For “title”" },
+    { id: "r-3", kind: "point", verbatim: "1200 zł", marks: 3, contextNote: "For “main prize”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2502,7 +2502,7 @@ export const CARDS: SecCard[] = [
     id: "pl-2023-ol-b-4-a", topicId: "polish-3-3", conceptId: "wyobraz-sobie-jestes-dziewczyna-pierwszego-masz",
     section: "B", questionRef: "2023 OL Section B Q4(a)",
     stem: "Wykonaj po polsku zadanie (a) lub (b), lub (c).",
-    questionText: "Wyobraź sobie, że jesteś dziewczyną z tekstu pierwszego. Masz na imię Zosia. Uzupełnij dialog. Użyj około 100 słów.\nKrzysiek: Cześć Zosiu. Proszę, te konwalie są dla ciebie.\nZosia:\nKrzysiek: Oczywiście, że pamiętałem. 😊 Co u ciebie? Tak dawno się nie widzieliśmy...\nZosia:\nKrzysiek: To świetnie! Wiedziałem, że zostaniesz pielęgniarką. Zawsze o tym marzyłaś. Jak się mają twoi rodzice?\nZosia:\nKrzysiek: Moja mama wyjechała razem ze mną do Francji. Masz jeszcze kontakt z kimś z klasy?\nZosia:\nKrzysiek: Może pójdziemy na kawę? 😊\nZosia:",
+    questionText: "Wyobraź sobie, że jesteś dziewczyną z tekstu pierwszego. Masz na imię Zosia. Uzupełnij dialog. Użyj około 100 słów.\nKrzysiek: Cześć Zosiu. Proszę, te konwalie są dla ciebie.\nZosia:\nKrzysiek: Oczywiście, że pamiętałem. 😊︎ Co u ciebie? Tak dawno się nie widzieliśmy...\nZosia:\nKrzysiek: To świetnie! Wiedziałem, że zostaniesz pielęgniarką. Zawsze o tym marzyłaś. Jak się mają twoi rodzice?\nZosia:\nKrzysiek: Moja mama wyjechała razem ze mną do Francji. Masz jeszcze kontakt z kimś z klasy?\nZosia:\nKrzysiek: Może pójdziemy na kawę? 😊︎\nZosia:",
     totalMarks: 30,
     rubric: {
           "system": "french",
@@ -4040,7 +4040,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Kwadrat", marks: 3, contextNote: "For “Nazwa teatru, w którym jest grany.”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "Maria", marks: 3, contextNote: "For “Jak ma na imię bohaterka?”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Maria", marks: 3, contextNote: "For “Jak ma na imię bohaterka?”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4601,7 +4601,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Name two style details of the posters:”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["simple form","irony","symbol","metaphor"]} },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “For what were the posters created?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["films","theatre shows","circus shows","exhibitions"]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “For what were the posters created?”", group: {"claimMax":2,"perOption":3,"options":["films","theatre shows","circus shows","exhibitions"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4672,8 +4672,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "gas pipe", marks: 3, contextNote: "For “What has been damaged?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "(last) Tuesday/during pavement repairs", marks: 3, contextNote: "For “When did the damage happen?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-3", kind: "point", verbatim: "fire brigade/gas emergency service/police(garda)", marks: 3, contextNote: "For “Who came to help?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "(last) Tuesday/during pavement repairs", marks: 3, contextNote: "For “When did the damage happen?”" },
+    { id: "r-3", kind: "point", verbatim: "fire brigade/gas emergency service/police(garda)", marks: 3, contextNote: "For “Who came to help?”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4779,7 +4779,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “at the seaside”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["temperature 25 degrees","moderate winds","rain will fall at the end of the month"]} },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “in the mountains”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["sunny days","30 degrees during the day","windy nights","18 degrees during the nights"]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “in the mountains”", group: {"claimMax":1,"perOption":3,"options":["sunny days","30 degrees during the day","windy nights","18 degrees during the nights"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6249,8 +6249,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A", marks: 2, contextNote: "For “A. Her aunt”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "C", marks: 2, contextNote: "For “C. Her grandmother”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-3", kind: "point", verbatim: "F", marks: 2, contextNote: "For “F. Her uncle”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "C", marks: 2, contextNote: "For “C. Her grandmother”" },
+    { id: "r-3", kind: "point", verbatim: "F", marks: 2, contextNote: "For “F. Her uncle”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6736,8 +6736,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Poznań/dormitory/Jowita", marks: 3, contextNote: "For “Venue of the protest”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Date of the protest”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language. The scheme allows “December/2023” for 2 marks, in place of “December 2023”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["December 2023","December/2023"],"optionMarks":[3,2],"optionOf":[null,0]} },
-    { id: "r-3", kind: "point", verbatim: "Ten", marks: 3, contextNote: "For “Number of days of the protest”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Date of the protest” The scheme allows “December/2023” for 2 marks, in place of “December 2023”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["December 2023","December/2023"],"optionMarks":[3,2],"optionOf":[null,0]} },
+    { id: "r-3", kind: "point", verbatim: "Ten", marks: 3, contextNote: "For “Number of days of the protest”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7123,7 +7123,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Kenya", marks: 3, contextNote: "For “Against who was the Polish team playing?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “What was the result of the match?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language. The scheme allows “1 – 0” for 2 marks, in place of “Poland 1, Kenya 0 / Poland won”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["Poland 1, Kenya 0 / Poland won","1 – 0"],"optionMarks":[3,2],"optionOf":[null,0]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “What was the result of the match?” The scheme allows “1 – 0” for 2 marks, in place of “Poland 1, Kenya 0 / Poland won”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["Poland 1, Kenya 0 / Poland won","1 – 0"],"optionMarks":[3,2],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8874,10 +8874,10 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "C", marks: 2, contextNote: "For “2. Jacek”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "F", marks: 2, contextNote: "For “3. Miś Uszatek”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-3", kind: "point", verbatim: "A", marks: 2, contextNote: "For “4. Reksio”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-4", kind: "point", verbatim: "B", marks: 2, contextNote: "For “5. Lolek”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-5", kind: "point", verbatim: "D", marks: 2, contextNote: "For “6. Bolek”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "F", marks: 2, contextNote: "For “3. Miś Uszatek”" },
+    { id: "r-3", kind: "point", verbatim: "A", marks: 2, contextNote: "For “4. Reksio”" },
+    { id: "r-4", kind: "point", verbatim: "B", marks: 2, contextNote: "For “5. Lolek”" },
+    { id: "r-5", kind: "point", verbatim: "D", marks: 2, contextNote: "For “6. Bolek”" },
     ],
     sourceMaterial: {
           "kind": "source-text",

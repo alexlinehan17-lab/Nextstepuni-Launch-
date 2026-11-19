@@ -28,7 +28,7 @@ sys.path.insert(0, HERE)
 import pl_paper                                                  # noqa: E402
 from pl_listen import scheme_lines, aural_lines, AUDIO           # noqa: E402
 from pl_listen_lib import (S, J, T, TN, PL, one, menu, part,   # noqa: E402,F401
-                           One, Menu, Sel)
+                           One, Menu, Sel, Shown, shown, Graded, percent_of)
 from pl_topics import (AURAL, POLISH, ENGLISH_OR_IRISH,          # noqa: E402
                        language_note, answer_language, concept_for)
 from paper_census import key_label                              # noqa: E402
@@ -37,8 +37,8 @@ LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 LEVEL_TITLE = {'hl': 'Higher', 'ol': 'Ordinary'}
 KEY = re.compile(r'^L([A-F])(\d{1,2})([a-h])?(i{1,3}|iv|vi{0,3})?$')
 # Printed matter that closes a question in the booklet and is not part of it:
-# the true/false columns' headings and the answer lines' dashes.
-TRAILING = re.compile(r'(?:\s+(?:True\s+False|Prawda\s+Fa[lł]sz|[–—-]))+\s*$')
+# the true/false columns' headings and the answer lines' dashes or rules.
+TRAILING = re.compile(r'(?:\s+(?:True\s+False|Prawda\s+Fa[lł]sz|[–—-]|_{3,}))+\s*$')
 
 
 def parse_key(spec_key):
@@ -130,18 +130,47 @@ def _language(stem, question):
 
 
 def build_rows(doc, spec, note):
+    """The card's rows. The language note and the card's own notes go on the
+    FIRST row only, as German and Spanish set them; a later row carries its
+    own label ("For “(ii) …”") and its own alternatives' notes."""
     rows, total = [], 0
     base_note = note
     for i, r in enumerate(spec.rows, 1):
         rid = f'r-{i}'
-        note = (f'For “{r.lead.text(doc)}”: {base_note}' if getattr(r, 'lead', None)
-                else base_note)
+        lead = r.lead.text(doc) if getattr(r, 'lead', None) else None
+        if i == 1:
+            note = f'For “{lead}”: {base_note}' if lead else base_note
+        else:
+            note = f'For “{lead}”' if lead else ''
+        ctx = {'contextNote': note} if note else {}
+        if isinstance(r, Graded):
+            _c, whole, _n = r.total.read(doc)
+            parts, given = [], 0
+            for k, (sel, pct_line) in enumerate(r.parts, 1):
+                pct = percent_of(doc, pct_line)
+                if (pct * whole) % 100:
+                    raise ValueError(f'{spec.key}: {pct}% of {whole} is not a whole number')
+                m = pct * whole // 100
+                parts.append({'id': f'c{k}', 'verbatim': sel.text(doc), 'marks': m,
+                              'permittedMarks': list(range(m + 1))})
+                given += pct
+            if given != 100:
+                raise ValueError(f'{spec.key}: the criteria print {given}%, not 100%')
+            rows.append({'id': rid, 'kind': 'criterion', 'verbatim': r.head.text(doc),
+                         'marks': whole, 'permittedMarks': list(range(whole + 1)),
+                         'parts': parts, **ctx})
+            total += whole
+            continue
+        if isinstance(r, Shown):
+            rows.append({'id': rid, 'kind': 'point', 'verbatim': r.sel.text(doc),
+                         'marks': None, **ctx})
+            continue
         if isinstance(r, One) and not r.alts:
             count, per, notation = r.tariff.read(doc)
             if count != 1:
                 raise ValueError(f'{spec.key}: one answer priced {notation!r}')
             rows.append({'id': rid, 'kind': 'point', 'verbatim': r.sel.text(doc),
-                         'marks': per, 'contextNote': note})
+                         'marks': per, **ctx})
             total += per
             continue
         if isinstance(r, One):          # one answer with lower-paid alternatives
@@ -171,9 +200,10 @@ def build_rows(doc, spec, note):
                              f'{"mark" if pp == 1 else "marks"}, in place of '
                              f'“{texts[of_i]}”, never beside it.')
             group['optionMarks'], group['optionOf'] = marks, of
+        joined = ' '.join(x for x in [note] + extra if x)
         rows.append({'id': rid, 'kind': 'anyN',
                      'verbatim': 'The answers the scheme accepts in full', 'marks': None,
-                     'contextNote': ' '.join([note] + extra), 'group': group})
+                     **({'contextNote': joined} if joined else {}), 'group': group})
         total += count * per
     return rows, total
 
@@ -666,3 +696,94 @@ SPECS[(2023, 'ol')] = [
     C('LE4', [menu([S(n) for n in range(437, 450)], T(436))]),
     C('LE5', [menu([J(S(452), S(453)), S(454), S(455)], T(451))]),
 ]
+
+
+# ================================================================ 2022 HL ===
+# Scheme .md lines 356-483 (pages 12-16). Część A and B answer in Polish, C to
+# E in English. Section totals as printed: A 24, B 17, C 18, D 17, E 24 (= 100).
+# 2022 prints a question's total before its split ("4 marks (2 x 2m)"): the
+# split is tariff #1 on the line.
+SPECS[(2022, 'hl')] = [
+    C('LA1', [one(S(358, after='powstania: '), T(357, 1, each=True), lead=S(358, before=' 170')),
+              one(S(359, after='powstania: '), T(357, 1, each=True), lead=S(359, before=' Warszawa'))],
+      total=T(357, 1), extra=(PL(3, 'Miejsce powstania'),)),
+    C('LA2', [one(S(361), T(361))]),
+    C('LA3', [one(S(363), T(363))]),
+    C('LA4', [menu([S(n) for n in range(366, 369)], T(365, 1))]),
+    C('LA5', [menu([S(n) for n in range(371, 375)], T(370, 1))]),
+    C('LA6', [one(S(376, after='nazwy. '), T(375))]),
+    C('LA7i', [one(S(378, before=' - 2 marks'), T(378))]),
+    C('LA7ii', [one(S(380, before=' - 2 marks'), T(380))]),
+    # A table of three rows, "6 marks" (rendered scheme p13): the second row's
+    # slash list is one cell under "any one of:", the third a list of three.
+    C('LB1', [one(S(387), T(387), lead=PL(4, 'Kiedy je otwarto')),
+              one(J(S(388), S(390)), T(390), lead=PL(4, 'Co można')),
+              menu([S(391), S(392, after='any one of '), S(393)], T(393), lead=PL(4, 'Jak się'))],
+      total=T(386)),
+    C('LB2', [one(S(395, after='Co? '), T(395), lead=PL(4, 'Co?')),
+              menu([S(397), S(398)], T(396), lead=PL(4, 'Dlaczego?'))],
+      total=T(394)),
+    C('LB3', [menu([S(n) for n in range(401, 405)], T(400, 1))]),
+    C('LC1', [menu([S(n) for n in range(408, 416)], T(407, 1))]),
+    C('LC2', [one(S(417, before=' (both'), T(416))], rownote=quoted(S(417, after='mother '))),
+    C('LC3', [one(S(423, before=' ✓'), T(422))]),
+    C('LC4', [one(J(S(425), S(426)), T(424))]),
+    C('LC5', [menu([S(n) for n in range(430, 434)], T(428, 1))]),
+    C('LD1', [one(J(S(436), S(437)), T(435))]),
+    C('LD2', [menu([S(n) for n in range(440, 444)], T(439, 1))]),
+    C('LD3', [menu([S(n) for n in range(446, 449)], T(444, 1))]),
+    C('LD4', [one(S(450), T(449))]),
+    C('LD5', [one(S(452), T(451, 1, each=True)), one(S(453), T(451, 1, each=True))],
+      total=T(451, 1)),
+    C('LE1', [menu([S(n) for n in range(461, 467)], T(459, 1))]),
+    C('LE2', [one(S(468), T(467))]),
+    C('LE3', [one(S(470), T(469))]),
+    C('LE4', [one(S(472), T(471))]),
+    C('LE5', [one(S(474, before=' ✓'), T(473))]),
+    C('LE6', [menu([S(n) for n in range(477, 484)], T(475, 1))]),
+]
+
+
+# ================================================================ 2022 OL ===
+# Scheme .md lines 316-448 (pages 12-16). Część A and B answer in Polish, C to
+# E in English. Section totals as printed: A 25, B 21, C 22, D 22, E 30 (= 120).
+SPECS[(2022, 'ol')] = [
+    C('LA1', [one(S(318, after='powstania: '), T(317, 1, each=True), lead=S(318, before=' 170')),
+              one(S(319, after='powstania: '), T(317, 1, each=True), lead=S(319, before=' Warszawa'))],
+      total=T(317, 1), extra=(PL(3, 'Miejsce powstania'),)),
+    C('LA2', [one(S(321), T(320))]),
+    C('LA3i', [one(S(323), T(323))]),
+    C('LA3ii', [one(S(326), T(326))]),
+    C('LA3iii', [one(S(328), T(328))]),
+    C('LA4', [one(S(332, before=' ✓'), T(329))]),
+    C('LA5', [one(S(335), T(335)), one(S(336), T(336))], total=T(334)),
+    C('LB1i', [one(S(344, before=' ✓'), T(344))]),
+    C('LB1ii', [one(S(346), T(346))]),
+    C('LB1iii', [menu([S(349), S(350), S(351)], T(347, 1))]),
+    C('LB2', [one(S(353, after='Co? '), T(353), lead=PL(4, 'Co?')),
+              one(J(S(354, after='Dlaczego? '), S(355)), T(355), lead=PL(4, 'Dlaczego?'))],
+      total=T(352)),
+    C('LB3', [menu([S(n) for n in range(359, 363)], T(357, 1))]),
+    C('LC1', [menu([S(n) for n in range(366, 374)], T(365, 1))]),
+    C('LC2', [one(S(379), T(378))]),
+    C('LC3', [one(J(S(381), S(382)), T(380))]),
+    C('LC4', [one(S(384), T(383))]),
+    C('LC5', [menu([S(387), S(388), S(389), J(S(390), S(391))], T(386, 1))]),
+    C('LD1', [one(S(394), T(393))]),
+    # "6 marks (2 x 3 marks)" over (i) and (ii); (ii)'s "any one of:" is one
+    # printed line of alternatives.
+    C('LD2i', [one(S(397), T(395, 1, each=True))]),
+    C('LD2ii', [one(S(400), T(395, 1, each=True))]),
+    C('LD3', [menu([S(n) for n in range(404, 407)], T(402, 1))]),
+    C('LD4', [one(S(412, before=' ✓'), T(412))],
+      extra=(PL(6, 'dormitory'), PL(6, 'rented room'), PL(6, 'hotel'), PL(6, 'studio'))),
+    C('LD5', [one(S(415), T(414))]),
+    C('LE1', [menu([S(n) for n in range(419, 423)], T(418, 1))]),
+    C('LE2', [one(S(424, before=' ✓'), T(424))]),
+    C('LE3', [one(S(426), T(425))]),
+    C('LE4', [one(S(428), T(428))]),
+    C('LE5', [one(S(430, before=' ✓'), T(429))]),
+    C('LE6', [menu([S(n) for n in range(433, 436)], T(432, 1))]),
+    C('LE7', [menu([S(n) for n in range(442, 449)], T(441, 1))]),
+]
+

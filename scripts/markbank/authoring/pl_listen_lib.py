@@ -133,6 +133,45 @@ class Menu(Row):
         self.options, self.tariff, self.partials, self.lead = options, tariff, partials, lead
 
 
+class Shown(Row):
+    """A printed line shown after the reveal with no marks of its own: a
+    model answer's sentence or an indicative point on a card the scheme prices
+    only as a whole (CARD-STANDARD 10a; tariff `questionTotal`)."""
+    def __init__(self, sel, lead=None):
+        self.sel, self.lead = sel, lead
+
+
+def shown(sel, lead=None):
+    return Shown(sel, lead)
+
+
+class Graded(Row):
+    """An essay the scheme marks on printed percentage criteria
+    (CARD-STANDARD 10b): one criterion row, the scheme's own head line, at the
+    printed total; each criterion a part at its percentage of that total,
+    placed anywhere from 0 to its marks. `parts` are (selector, line printing
+    the percentage). Only where every percentage of the total is a whole
+    number; otherwise the build refuses and the card must show the
+    percentages and score on the total."""
+    def __init__(self, head, total, parts, lead=None):
+        self.head, self.total, self.parts, self.lead = head, total, parts, lead
+
+
+def graded(head, total, parts):
+    return Graded(head, total, parts)
+
+
+PERCENT = re.compile(r'(\d{1,3})\s*%')
+
+
+def percent_of(doc, n):
+    line = doc['scheme'][n - 1]
+    found = PERCENT.findall(line)
+    if len(found) != 1:
+        raise ValueError(f'scheme line {n} prints {len(found)} percentages: {line!r}')
+    return int(found[0])
+
+
 def one(sel, tariff=None, partials=(), lead=None):
     return One(sel, tariff, partials, lead)
 

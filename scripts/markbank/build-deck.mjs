@@ -877,7 +877,11 @@ function schemeFor(subjectId, card) {
  * these four are added and not the block they live in, because the block is
  * also where several BROKEN subset glyphs land — U+019E stands for "tf" and
  * U+019F for "ti" in glyphmap.json — and those must still be refused. */
-const REAL = /[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D62-\u1D6A\u1F00-\u1FFF]/;
+/* U+1D52 MODIFIER LETTER SMALL O is the raised o the SEC types for a degree in
+ * Calibri: the 2022 Higher Polish listening booklet prints "grows in 20\u1D52C" (rendered:
+ * a degree sign), and its text layer carries the character itself, not a
+ * subset's stand-in. Added alone; at the time no other deck input held it. */
+const REAL = /[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D52\u1D62-\u1D6A\u1F00-\u1FFF]/;
 /* Greek Extended (U+1F00-U+1FFF) is genuinely Greek, for the same reason
  * U+0370-U+03FF already is: POLYTONIC Greek is the alphabet the Ancient Greek
  * paper and its scheme are printed in, and every accented vowel in it lives

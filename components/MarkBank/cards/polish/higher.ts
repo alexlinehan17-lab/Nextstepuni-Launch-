@@ -832,6 +832,2336 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-a-2-e-i", topicId: "polish-3-1", conceptId: "podkreslone-wyrazy-zastap-ich-synonimami-zdania",
+    section: "A", questionRef: "2022 HL Section A Q2(e)(i)",
+    questionText: "Podkreślone wyrazy zastąp ich synonimami. Zdania, z których pochodzą, powinny zachować swoje znaczenie. Tu kolejne zdziwienie, w ten sposób szybciej i dokładniej załatwiałam wiele spraw. (akapit 6) zdziwienie -",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "zaskoczenie/niespodzianka/zdumienie/oniemienie/szok/osłupienie", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Polish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-a-2-e-ii", topicId: "polish-3-1", conceptId: "podkreslone-wyrazy-zastap-ich-synonimami-zdania",
+    section: "A", questionRef: "2022 HL Section A Q2(e)(ii)",
+    questionText: "Podkreślone wyrazy zastąp ich synonimami. Zdania, z których pochodzą, powinny zachować swoje znaczenie. W pracy byłam dużo bardziej produktywna. (akapit 9) produktywna -",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "wydajna/efektywna/zaangażowana/aktywna", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Polish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-la-1", topicId: "polish-2-1", conceptId: "uzupelnij-tabele-firmie-wedel-czas-powstania",
+    section: "LA", questionRef: "2022 HL Section LA Q1",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Uzupełnij tabelę o firmie Wedel. Czas powstania: Miejsce powstania:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "170 lat temu / (ok.1852r.)", marks: 2, contextNote: "For “Czas powstania:”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Warszawa/ stolica", marks: 2, contextNote: "For “Miejsce powstania:”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-la-2", topicId: "polish-2-1", conceptId: "kto-pracowal-razem-wlascicielem-pierwszej-cukierni",
+    section: "LA", questionRef: "2022 HL Section LA Q2",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Kto pracował razem z właścicielem w pierwszej cukierni?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Karolina (Wedel) / żona Karola (właściciela)/ żona (Karolina)", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-la-3", topicId: "polish-2-1", conceptId: "jak-emil-wedel-zostal-wlascicielem-firmy",
+    section: "LA", questionRef: "2022 HL Section LA Q3",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jak Emil Wedel został właścicielem firmy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(dostał) w prezencie/prezent ślubny", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-la-4", topicId: "polish-2-1", conceptId: "pomoglo-emilowi-wedlowi-odniesieniu-sukcesu",
+    section: "LA", questionRef: "2022 HL Section LA Q4",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Co pomogło Emilowi Wedlowi w odniesieniu sukcesu?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["praca z ojcem","praktyka w Paryżu","logo - podpis Emila Wedla"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-la-5", topicId: "polish-2-1", conceptId: "jak-jan-wedel-reklamowal-firme-sposoby",
+    section: "LA", questionRef: "2022 HL Section LA Q5",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jak Jan Wedel reklamował firmę? Wymień 3 sposoby.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["(wprowadził) automat ze słodyczami","(umieścił) logo na (zakładowych) samochodach","(udzielał) wywiadów","(zlecił) projekt nowego symbolu Wedla"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 5",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-la-6", topicId: "polish-2-1", conceptId: "zaznacz-prawda-czy-falsz-firma-wedel",
+    section: "LA", questionRef: "2022 HL Section LA Q6",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Zaznacz (✓) prawda czy fałsz. Firma Wedel nigdy nie zmieniała swojej nazwy.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "F", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 6",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-la-7-i", topicId: "polish-2-1", conceptId: "ilu-krajach-znane-slodycze-wedla",
+    section: "LA", questionRef: "2022 HL Section LA Q7(i)",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "W ilu krajach znane są słodycze Wedla?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(w ponad) 60 (krajach)", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 7(i)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-la-7-ii", topicId: "polish-2-1", conceptId: "wartosci-wazne-dla-firmy-wedel",
+    section: "LA", questionRef: "2022 HL Section LA Q7(ii)",
+    stem: "Wedel You will hear about Wedel. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Jakie wartości są ważne dla firmy Wedel?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "radość i przyjemność", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część A — Question 7(ii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część A · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-lb-1", topicId: "polish-2-1", conceptId: "wypelnij-tabele-informacjami-muzeum-polskiej-piosenki",
+    section: "LB", questionRef: "2022 HL Section LB Q1",
+    stem: "Muzeum Polskiej Piosenki You will hear about Muzeum Polskiej Piosenki. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Wypełnij tabelę informacjami o Muzeum Polskiej Piosenki. Kiedy je otwarto? Co można w nim oglądać? Jak się je zwiedza?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2016r.", marks: 2, contextNote: "For “Kiedy je otwarto?”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "wystawę o polskiej piosence/(historię) polskiej piosenki/teledyski/koncerty/wywiady", marks: 2, contextNote: "For “Co można w nim oglądać?”" },
+    { id: "r-3", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Jak się je zwiedza?”", group: {"claimMax":1,"perOption":2,"options":["indywidualnie","z audioprzewodnikiem","ze słuchawkami"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-lb-2", topicId: "polish-2-1", conceptId: "najwieksza-atrakcja-muzeum-polskiej-piosenki-dlaczego",
+    section: "LB", questionRef: "2022 HL Section LB Q2",
+    stem: "Muzeum Polskiej Piosenki You will hear about Muzeum Polskiej Piosenki. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Co jest największą atrakcją Muzeum Polskiej Piosenki? Dlaczego? Co? Dlaczego?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "budki (do nagrywania)", marks: 2, contextNote: "For “Co?”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Dlaczego?”", group: {"claimMax":1,"perOption":3,"options":["można nagrać piosenkę","może wysłać (własną) piosenkę na e-mail"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-lb-3", topicId: "polish-2-1", conceptId: "dzieje-centrum-kulturalnym-muzeum-przyklady",
+    section: "LB", questionRef: "2022 HL Section LB Q3",
+    stem: "Muzeum Polskiej Piosenki You will hear about Muzeum Polskiej Piosenki. There will be pauses during the second playing. Answer in Polish.",
+    questionText: "Co dzieje się w centrum kulturalnym muzeum? Wymień 3 przykłady.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["spotkania z artystami","koncerty","lekcje (muzealne)","zajęcia edukacyjne (dla najmłodszych)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część B — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część B · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-lc-1", topicId: "polish-2-1", conceptId: "agnieszka-radwanska-say-athlete-lifestyle",
+    section: "LC", questionRef: "2022 HL Section LC Q1",
+    stem: "Wywiad z Agnieszką Radwańską – tenisistką You will hear an interview with tennis player, Agnieszka Radwańska. There will be pauses during the second playing. Answer in English.",
+    questionText: "What does Agnieszka Radwańska say about an athlete’s lifestyle? Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["have little time (for themselves)","hard work","a routine","a monotony","a sacrifice","athletes train a lot","they travel a lot","they take part in sports tournaments"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-lc-2", topicId: "polish-2-1", conceptId: "agnieszka-radwanska-now",
+    section: "LC", questionRef: "2022 HL Section LC Q2",
+    stem: "Wywiad z Agnieszką Radwańską – tenisistką You will hear an interview with tennis player, Agnieszka Radwańska. There will be pauses during the second playing. Answer in English.",
+    questionText: "What does Agnieszka Radwańska do now?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(she is) a wife and mother", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language. The scheme notes: “(both details required for marks)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-lc-3", topicId: "polish-2-1", conceptId: "word-best-describes-agnieszka-radwanska-childhood",
+    section: "LC", questionRef: "2022 HL Section LC Q3",
+    stem: "Wywiad z Agnieszką Radwańską – tenisistką You will hear an interview with tennis player, Agnieszka Radwańska. There will be pauses during the second playing. Answer in English.",
+    questionText: "Which word best describes Agnieszka Radwańska’s childhood? Tick (✓) the correct box. Tick one box only. Acceptance Joy Sadness Sorrow",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "acceptance", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-lc-4", topicId: "polish-2-1", conceptId: "agnieszka-radwanska-not-rebel-against-lifestyle",
+    section: "LC", questionRef: "2022 HL Section LC Q4",
+    stem: "Wywiad z Agnieszką Radwańską – tenisistką You will hear an interview with tennis player, Agnieszka Radwańska. There will be pauses during the second playing. Answer in English.",
+    questionText: "Why did Agnieszka Radwańska not rebel against her lifestyle?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "the rewards compensated her for her efforts / she won (interesting) prizes (headphones, player, TV)", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-lc-5", topicId: "polish-2-1", conceptId: "agnieszka-radwanska-want-son-know-money",
+    section: "LC", questionRef: "2022 HL Section LC Q5",
+    stem: "Wywiad z Agnieszką Radwańską – tenisistką You will hear an interview with tennis player, Agnieszka Radwańska. There will be pauses during the second playing. Answer in English.",
+    questionText: "What does Agnieszka Radwańska want her son to know about money? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["she doesn’t want him to think that he will always have everything","does not come out of nowhere","has to be earned/nothing is for free","is hard to earn"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część C — Question 5",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część C · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-ld-1", topicId: "polish-2-1", conceptId: "jola-happy",
+    section: "LD", questionRef: "2022 HL Section LD Q1",
+    stem: "Rozmowa studentów You will hear the students’ conversation. There will be pauses during the second playing. Answer in English.",
+    questionText: "What is Jola happy about?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "She got the place on the acting course/She got the place despite there being 12 applicants for one university place", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-ld-2", topicId: "polish-2-1", conceptId: "jola-think-living-dormitory",
+    section: "LD", questionRef: "2022 HL Section LD Q2",
+    stem: "Rozmowa studentów You will hear the students’ conversation. There will be pauses during the second playing. Answer in English.",
+    questionText: "What does Jola think about living in a dormitory? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["(she is afraid) she won’t be able to focus on her studies","several people in a room","noisy","parties"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-ld-3", topicId: "polish-2-1", conceptId: "marek-say-living-dormitory",
+    section: "LD", questionRef: "2022 HL Section LD Q3",
+    stem: "Rozmowa studentów You will hear the students’ conversation. There will be pauses during the second playing. Answer in English.",
+    questionText: "What does Marek say about living in a dormitory?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["cheap","no need to buy furniture","close to the university"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-ld-4", topicId: "polish-2-1", conceptId: "jola-decide-accommodation",
+    section: "LD", questionRef: "2022 HL Section LD Q4",
+    stem: "Rozmowa studentów You will hear the students’ conversation. There will be pauses during the second playing. Answer in English.",
+    questionText: "What did Jola decide to do about her accommodation?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(she will) rent a room", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-ld-5", topicId: "polish-2-1", conceptId: "jola-going-afford-accommodation",
+    section: "LD", questionRef: "2022 HL Section LD Q5",
+    stem: "Rozmowa studentów You will hear the students’ conversation. There will be pauses during the second playing. Answer in English.",
+    questionText: "How is Jola going to afford her accommodation? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "she has savings", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "she will work during weekends", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część D — Question 5",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część D · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-le-1", topicId: "polish-2-1", conceptId: "purpose-mural",
+    section: "LE", questionRef: "2022 HL Section LE Q1",
+    stem: "Wiadomości You will hear four news items. There will be pauses during the second playing. Answer in English. Item 1",
+    questionText: "What is the purpose of the mural? Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["cleans the air (made with special paint)","removes bacteria","removes bad odours","removes air pollution","works the same way as planting 100 threes","cleans the pollution of 143 cars every day"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 1",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-le-2", topicId: "polish-2-1", conceptId: "customers-enter-shop",
+    section: "LE", questionRef: "2022 HL Section LE Q2",
+    stem: "Wiadomości You will hear four news items. There will be pauses during the second playing. Answer in English. Item 2",
+    questionText: "What do customers have to do to enter the shop?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "generate the access code", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-le-3", topicId: "polish-2-1", conceptId: "kind-customers-shop-there",
+    section: "LE", questionRef: "2022 HL Section LE Q3",
+    stem: "Wiadomości You will hear four news items. There will be pauses during the second playing. Answer in English. Item 2",
+    questionText: "What kind of customers shop there?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "people who live fast/ in a hurry", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 3",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-le-4", topicId: "polish-2-1", conceptId: "roza-rutkowska-proven",
+    section: "LE", questionRef: "2022 HL Section LE Q4",
+    stem: "Wiadomości You will hear four news items. There will be pauses during the second playing. Answer in English. Item 3",
+    questionText: "What has Róża Rutkowska proven?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "there are/exist natural materials, which can replace plastic (boxes, cling film)", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 4",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-le-5", topicId: "polish-2-1", conceptId: "tick-correct-box-tick-box-only",
+    section: "LE", questionRef: "2022 HL Section LE Q5",
+    stem: "Wiadomości You will hear four news items. There will be pauses during the second playing. Answer in English. Item 3",
+    questionText: "Tick (✓) the correct box. Tick one box only. Róża Rutkowska’s new material: grows in 20ᵒC extends the shelf life of food cannot be cooked cannot be composted",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "extends the shelf life of food", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 5",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2022 Higher Level — © State Examinations Commission.",
+    id: "pl-2022-hl-le-6", topicId: "polish-2-1", conceptId: "new-course-poznan-university",
+    section: "LE", questionRef: "2022 HL Section LE Q6",
+    stem: "Wiadomości You will hear four news items. There will be pauses during the second playing. Answer in English. Item 4",
+    questionText: "Give three details about the new course at Poznań University.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["Takes three years","Bachelor’s degree","for people who are interested in computer/video games","virtual reality fans","experts/teachers are from all over Poland","plenty of opportunities","focusses on the future"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Część E — Question 6",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Polish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC548ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Część E · listening",
+          "title": "2022 Polish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "secFileid": "LC548ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC548ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Części A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-hl-b-3-a", topicId: "polish-3-3", conceptId: "kazdy-sukces-wymaga-ciezkiej-pracy-wielu",
+    section: "B", questionRef: "2022 HL Section B Q3(a)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 200 słów.",
+    questionText: "Każdy sukces wymaga ciężkiej pracy i wielu poświęceń. Czy zgadzasz się z tym stwierdzeniem? Udziel odpowiedzi na podstawie tekstu numer 1.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right-hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e-mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 3",
+          "title": "Pytanie 3 (a) — answer in Polish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Polish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-hl-b-3-b", topicId: "polish-3-3", conceptId: "technologia-niesie-soba-tyle-samo-korzysci",
+    section: "B", questionRef: "2022 HL Section B Q3(b)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 200 słów.",
+    questionText: "Technologia niesie ze sobą tyle samo korzyści, co niebezpieczeństw. Wyraź swoją opinię na ten temat w oparciu o tekst numer 2.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right-hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e-mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 3",
+          "title": "Pytanie 3 (b) — answer in Polish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Polish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-hl-b-3-c", topicId: "polish-3-3", conceptId: "stereotypy-dotyczace-polakow-czesto-niesprawiedliwe-jaka",
+    section: "B", questionRef: "2022 HL Section B Q3(c)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 200 słów.",
+    questionText: "Stereotypy dotyczące Polaków są często niesprawiedliwe. A jaka jest twoja opinia na ten temat?",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right-hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e-mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 3",
+          "title": "Pytanie 3 (c) — answer in Polish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Polish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-hl-b-4-a", topicId: "polish-3-3", conceptId: "kupowanie-ksiazek-ciagle-czasie-zredaguj-wpis",
+    section: "B", questionRef: "2022 HL Section B Q4(a)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 200 słów.",
+    questionText: "Kupowanie książek jest ciągle na czasie. Zredaguj wpis na blog. Porusz następujące kwestie:\n• porównaj książkę tradycyjną z e-bookiem – uwzględnij: cenę, dostępność, wielkość\n• korzyści płynące z czytania książek\n• rodzaj książek, który lubisz najbardziej\n• przyszłość bibliotek",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right-hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e-mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 4",
+          "title": "Pytanie 4 (a) — answer in Polish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Polish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-hl-b-4-b", topicId: "polish-3-3", conceptId: "zamierzasz-korespondowac-dziewczyna-chlopakiem-polski-napisz",
+    section: "B", questionRef: "2022 HL Section B Q4(b)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 200 słów.",
+    questionText: "Zamierzasz korespondować z dziewczyną/chłopakiem z Polski. Napisz do niej/niego pierwszy list. Zamieść w nim:\n• opis miejscowości, w której mieszkasz\n• informacje o swojej rodzinie, np.: ile liczy osób, czym się one zajmują, co lubicie razem robić\n• jak długo i dlaczego uczysz się języka polskiego\n• swoje plany po ukończeniu szkoły",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right-hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e-mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 4",
+          "title": "Pytanie 4 (b) — answer in Polish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Polish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-hl-b-4-c", topicId: "polish-3-3", conceptId: "ostatnie-ferie-zimowe-spedzilas-spedziles-polsce",
+    section: "B", questionRef: "2022 HL Section B Q4(c)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 200 słów.",
+    questionText: "Ostatnie ferie zimowe spędziłaś/spędziłeś w Polsce. Zredaguj wpis do pamiętnika. Uwzględnij w nim:\n• pogodę w czasie ferii\n• lokalne atrakcje\n• ciekawą osobę, którą spotkałaś/spotkałeś\n• moment, w którym byłaś/byłeś naprawdę szczęśliwa/szczęśliwy",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right-hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e-mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [12,13,14,15],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [8,9,10,11],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 4",
+          "title": "Pytanie 4 (c) — answer in Polish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Polish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-hl-b-5-a", topicId: "polish-3-3", conceptId: "spojrz-zamieszczony-obok-obrazek-opisz-zdaniach",
+    section: "B", questionRef: "2022 HL Section B Q5(a)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 150 słów.",
+    questionText: "Spójrz na zamieszczony obok obrazek.\n• Opisz w 3 – 4 zdaniach, co na nim widzisz.\n• W pogoni ludzkości za pieniędzmi największe straty ponosi środowisko naturalne. Czy się z tym zgadzasz? Uzasadnij.\n• Świat powoli odwraca się od plastiku. Czy tak jest naprawdę? Skomentuj.\n• Jakie dwie zmiany mogłabyś/mógłbyś wprowadzić do swojego życia, żeby pomóc środowisku?",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right-hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [9,10],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e-mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [9,10],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 5",
+          "title": "Pytanie 5 (a) — answer in Polish",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Polish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-hl-b-5-b", topicId: "polish-3-3", conceptId: "spojrz-zamieszczony-obok-obrazek-opisz-zdaniach",
+    section: "B", questionRef: "2022 HL Section B Q5(b)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 150 słów.",
+    questionText: "Spójrz na zamieszczony obok obrazek.\n• Opisz w 3 – 4 zdaniach, co na nim widzisz.\n• Wegetarianizm – moda czy konieczność naszych czasów? Odpowiedz i uzasadnij.\n• Polskie potrawy są wyjątkowe. Skomentuj.\n• Czy jesteś zwolenniczką/zwolennikiem zakazu używania telefonów podczas wspólnych posiłków? Uzasadnij swoje zdanie.",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right-hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [9,10],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e-mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [9,10],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 5",
+          "title": "Pytanie 5 (b) — answer in Polish",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Polish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Polish 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "pl-2022-hl-b-5-c", topicId: "polish-3-3", conceptId: "spojrz-zamieszczony-obok-obrazek-opisz-zdaniach",
+    section: "B", questionRef: "2022 HL Section B Q5(c)",
+    stem: "Odpowiedz na pytanie (a) lub (b), lub (c), używając około 150 słów.",
+    questionText: "Spójrz na zamieszczony obok obrazek.\n• Opisz w 3 – 4 zdaniach, co na nim widzisz.\n• Taniec, szachy, dodatkowe lekcje matematyki itd. – dzieci i młodzież są dziś zbyt obciążone zajęciami pozalekcyjnymi. Czy się z tym zgadzasz?\n• Internet odgrywa ogromną rolę w rozwijaniu naszych pasji. Uzasadnij.\n• Ważne odkrycia i wynalazki zaczynają się często od marzeń. Co o tym sądzisz?",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Candidates are required to attempt Question 3(a) or 3(b) or 3(c), Question 4(a) or 4(b) or 4(c) AND either 5(a) or 5(b) or 5(c).",
+                "If more than one part of Question 3 or Question 4, or Question 5 is answered, all answers must be marked and marks awarded only for the higher scoring part.",
+                "Add the marks for content (C) and expression (E) to give the total marks for the question",
+                "Note: In any part of written production the same mistake will not be penalised twice.",
+                "Mark content and expression separately",
+                "Award content marks first.",
+                "No marks are awarded for irrelevant information/content.",
+                "Mark irrelevant material on the right-hand margin.",
+                "Where no marks are awarded for content (i.e. effort totally irrelevant), no marks will be awarded for expression."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content (C)",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [9,10],
+                                  "guidance": [
+                                        "Stimulus material well exploited (text 1, text 2 or bullet points)",
+                                        "High level of textual coherence",
+                                        "Clarity in argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register (for example in: e-mail, letter, blog etc.)"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "More or less competent treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Reasonable level of textual coherence",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material",
+                                        "Some mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Fair level of textual coherence",
+                                        "Poorly developed argument",
+                                        "Communicative intention struggling for accuracy",
+                                        "A lot of irrelevant material",
+                                        "Many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Very poor treatment of stimulus material (text 1, text 2 or bullet points)",
+                                        "Lack of textual coherence",
+                                        "Communication intention is limited",
+                                        "Candidate unclear on how to respond to the task",
+                                        "Mostly irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good",
+                                  "marks": [9,10],
+                                  "guidance": [
+                                        "Idiomatic Polish",
+                                        "Rich vocabulary",
+                                        "Complex sentences well handled",
+                                        "Few mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Good",
+                                  "marks": [6,7,8],
+                                  "guidance": [
+                                        "Vocabulary good",
+                                        "Generally good syntax",
+                                        "Occasional use of English words",
+                                        "Some grammar, spelling and punctuation mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Vocabulary generally accurate but limited",
+                                        "Some use of English words",
+                                        "Repetition",
+                                        "Some interference from English syntax",
+                                        "Many mistakes in grammar, spelling and punctuation"
+                                  ]
+                            },
+                            {
+                                  "label": "Weak",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Vocabulary very limited and mostly inaccurate",
+                                        "Frequent use of English words",
+                                        "Interference from English syntax",
+                                        "Frequent spelling and grammar mistakes make text hard to understand"
+                                  ]
+                            }
+                      ],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Polish, then place it on the published grid: content first, then expression."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PYTANIE 5",
+          "title": "Pytanie 5 (c) — answer in Polish",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Polish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC548ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2023 Higher Level — © State Examinations Commission.",
@@ -1488,7 +3818,7 @@ export const CARDS: SecCard[] = [
     questionText: "Podkreślone wyrazy zastąp synonimami. Zdania, z których pochodzą, powinny zachować swoje znaczenie. Chciałam być ostatnia, żebyś miała dla mnie więcej czasu, więc przepuściłam mnóstwo osób. (akapit 6) mnóstwo –",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "wiele/ dużo / sporo", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "wiele/ dużo / sporo", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints no mark for this part; 2 marks is the 50 printed for the text less the 48 printed for its other parts." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1549,7 +3879,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "przypadkiem", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "(kiedy pracowała w Anglii) dowiedziała się, że pewna firma poszukuje kogoś do pracy przy oklejaniu aut", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "(kiedy pracowała w Anglii) dowiedziała się, że pewna firma poszukuje kogoś do pracy przy oklejaniu aut", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1585,7 +3915,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "motoryzacja interesowała ją od najmłodszych lat", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "lubiła majsterkować przy rowerze / w dzieciństwie rozkładała i składała rower na części", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "lubiła majsterkować przy rowerze / w dzieciństwie rozkładała i składała rower na części", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1796,7 +4126,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "w celu szkolenia żołnierzy", marks: 2, contextNote: "For “Po co powstały?”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "po II wojnie światowej", marks: 2, contextNote: "For “Kiedy?”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "po II wojnie światowej", marks: 2, contextNote: "For “Kiedy?”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1867,7 +4197,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "od liczby lotów", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "od wieku (klienta)", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "od wieku (klienta)", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2148,8 +4478,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "in 1970s", marks: 2, contextNote: "For “When was it built?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "(almost) 1 km", marks: 2, contextNote: "For “How long is it?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-3", kind: "point", verbatim: "a sea wave", marks: 2, contextNote: "For “What does its shape remind us of?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "(almost) 1 km", marks: 2, contextNote: "For “How long is it?”" },
+    { id: "r-3", kind: "point", verbatim: "a sea wave", marks: 2, contextNote: "For “What does its shape remind us of?”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2325,8 +4655,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "photo competition", marks: 2, contextNote: "For “type”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "“My Town”", marks: 2, contextNote: "For “title”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-3", kind: "point", verbatim: "1 200 złotych", marks: 2, contextNote: "For “main prize”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "“My Town”", marks: 2, contextNote: "For “title”" },
+    { id: "r-3", kind: "point", verbatim: "1 200 złotych", marks: 2, contextNote: "For “main prize”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4460,8 +6790,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Kwadrat", marks: 2, contextNote: "For “Nazwa teatru, w którym jest grany”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "Warszawa", marks: 2, contextNote: "For “Miejscowość”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-3", kind: "point", verbatim: "Promieniowanie", marks: 2, contextNote: "For “Tytuł”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Warszawa", marks: 2, contextNote: "For “Miejscowość”" },
+    { id: "r-3", kind: "point", verbatim: "Promieniowanie", marks: 2, contextNote: "For “Tytuł”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4987,7 +7317,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Name two style details of the posters:”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["simple form","irony","symbol","metaphor"]} },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “For what were the posters created?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["films","theatre shows","circus shows","exhibitions"]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “For what were the posters created?”", group: {"claimMax":2,"perOption":2,"options":["films","theatre shows","circus shows","exhibitions"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5093,8 +7423,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "gas pipe", marks: 2, contextNote: "For “What has been damaged?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "(last) Tuesday/during pavement repairs", marks: 2, contextNote: "For “When did the damage happen?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-3", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Who came to help?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":2,"options":["fire brigade","gas emergency service","police (Garda)"]} },
+    { id: "r-2", kind: "point", verbatim: "(last) Tuesday/during pavement repairs", marks: 2, contextNote: "For “When did the damage happen?”" },
+    { id: "r-3", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Who came to help?”", group: {"claimMax":1,"perOption":2,"options":["fire brigade","gas emergency service","police (Garda)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5200,7 +7530,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “at the seaside”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":2,"options":["temperature 25 degrees","no extreme rise in temperatures","moderate winds","rain will fall at the end of the month"]} },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “in the mountains”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":2,"options":["sunny days","30 degrees during the day","windy nights","18 degrees during the night"]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “in the mountains”", group: {"claimMax":1,"perOption":2,"options":["sunny days","30 degrees during the day","windy nights","18 degrees during the night"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7273,7 +9603,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Kiedy Adam Wajrak zamieszkał w Puszczy Białowieskiej?”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme allows “1990.” for 1 mark, in place of “pod koniec lat 90./27 lat temu”, never beside it.", group: {"claimMax":1,"perOption":2,"options":["pod koniec lat 90./27 lat temu","1990."],"optionMarks":[2,1],"optionOf":[null,0]} },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Dlaczego Adam Wajrak zamieszkał w puszczy? Podaj 2 powody.”: The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme allows “jego żona chciała tu mieszkać” for 1 mark, in place of “jego żona chciała prowadzić tutaj badania”, never beside it.", group: {"claimMax":2,"perOption":2,"options":["jego żona chciała prowadzić tutaj badania","to fascynujące miejsce","puszcza urzekła go już w czasach studenckich","jego żona chciała tu mieszkać"],"optionMarks":[2,2,2,1],"optionOf":[null,null,null,0]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “Dlaczego Adam Wajrak zamieszkał w puszczy? Podaj 2 powody.” The scheme allows “jego żona chciała tu mieszkać” for 1 mark, in place of “jego żona chciała prowadzić tutaj badania”, never beside it.", group: {"claimMax":2,"perOption":2,"options":["jego żona chciała prowadzić tutaj badania","to fascynujące miejsce","puszcza urzekła go już w czasach studenckich","jego żona chciała tu mieszkać"],"optionMarks":[2,2,2,1],"optionOf":[null,null,null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7659,9 +9989,9 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "December", marks: 1, contextNote: "For “When did the protest take place?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "2023", marks: 1, contextNote: "For “When did the protest take place?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-3", kind: "point", verbatim: "university authorities were going to sell the dormitory/the students didn’t want to lose their accommodation/they didn’t agree with selling the dormitory/", marks: 3, contextNote: "For “Why did the students protest?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-4", kind: "point", verbatim: "ten", marks: 1, contextNote: "For “How many days did the protest last?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "2023", marks: 1, contextNote: "For “When did the protest take place?”" },
+    { id: "r-3", kind: "point", verbatim: "university authorities were going to sell the dormitory/the students didn’t want to lose their accommodation/they didn’t agree with selling the dormitory/", marks: 3, contextNote: "For “Why did the students protest?”" },
+    { id: "r-4", kind: "point", verbatim: "ten", marks: 1, contextNote: "For “How many days did the protest last?”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8047,7 +10377,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Kenya", marks: 2, contextNote: "For “Against who was the Polish team playing?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “What was the result of the match?”: The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language. The scheme allows “1 – 0” for 1 mark, in place of “Poland 1, Kenya 0/Poland won”, never beside it.", group: {"claimMax":1,"perOption":2,"options":["Poland 1, Kenya 0/Poland won","1 – 0"],"optionMarks":[2,1],"optionOf":[null,0]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "For “What was the result of the match?” The scheme allows “1 – 0” for 1 mark, in place of “Poland 1, Kenya 0/Poland won”, never beside it.", group: {"claimMax":1,"perOption":2,"options":["Poland 1, Kenya 0/Poland won","1 – 0"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
