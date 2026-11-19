@@ -41,6 +41,7 @@ import {
 type EnglishCard = SecRubricCard & { rubric: PclmRubric };
 interface PublishedRecord {
   id: string; year: number; level: 'higher' | 'ordinary'; paper: 1 | 2; topicId: string;
+  questionRef: string; paperFileid: string;
   atlas: { fileid: string; n: string };
   atlasPlacements?: Array<{ fileid: string; n: string }>;
 }
