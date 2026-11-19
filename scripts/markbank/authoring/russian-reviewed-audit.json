@@ -3897,6 +3897,14 @@
           "The writing scheme does not assign its generic category letters to the printed choices; no mapping invented."
         ],
         "testCorrection": "Scoped test types caught an invalid L1 section discriminator. Replaced with all five exact announcement IDs and verified nonempty scope/full instructions; all11 focused sitting cases, scoped types, lint and build passed afterward. No source change or weakened assertion."
+      },
+      "r4Recheck20261119": {
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2015-hl.json",
+        "cards": [
+          "ru-2015-hl-se",
+          "ru-2015-hl-gw"
+        ],
+        "releaseComplete": false
       }
     },
     {

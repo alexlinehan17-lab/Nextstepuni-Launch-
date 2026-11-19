@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-19T12:12:06.201383+00:00",
+  "archive": {
+    "year": 2015,
+    "level": "hl",
+    "url": "https://www.examinations.ie/archive/markingschemes/2015/LC099ALP000EV.pdf",
+    "filename": "Russian-2015-hl-SEC-fresh-20261119.pdf",
+    "pages": 20,
+    "downloadDone": true,
+    "downloadConfirmation": "Chrome history shows exact completed file and source URL with Show in Finder.",
+    "checkedAt": "2026-11-19T11:58:15.468Z",
+    "bytes": 593564,
+    "sha256": "210b81b664cfac3107aed4c750d839c70c82777d40b92c805f7f5db60d1c730c",
+    "retainedSha256": "210b81b664cfac3107aed4c750d839c70c82777d40b92c805f7f5db60d1c730c",
+    "exactMatch": true,
+    "freshDownloadVerified": true,
+    "localFile": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/stale-exclusions-20261119/sec-recheck/2015-hl.pdf"
+  },
+  "cards": [
+    {
+      "id": "ru-2015-hl-se",
+      "printedMarks": 30,
+      "schemePages": [
+        11,
+        12
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2015-hl.pdf",
+      "schemeSha256": "210b81b664cfac3107aed4c750d839c70c82777d40b92c805f7f5db60d1c730c",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2015-hl.json",
+      "finding": "The scheme supplies the task and marking grid/criteria, without a model answer or indicative answer content.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2015-hl-gw",
+      "printedMarks": 40,
+      "schemePages": [
+        13,
+        14
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2015-hl.pdf",
+      "schemeSha256": "210b81b664cfac3107aed4c750d839c70c82777d40b92c805f7f5db60d1c730c",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2015-hl.json",
+      "finding": "The scheme supplies the task and marking grid/criteria, without a model answer or indicative answer content.",
+      "fixedLine": "The scheme prints no answer for this part."
+    }
+  ],
+  "otherFindings": [],
+  "sourceReview": "All relevant scheme pages read in full as original-page images and extracted text; examples distinguished from prompts. Original downloaded PDF matches the retained source exactly.",
+  "rule": "R4; CARD-STANDARD sections3,5 and10a",
+  "sourceBranch": "wip/russian-2026-11-19",
+  "liveCardsChanged": false
+}
