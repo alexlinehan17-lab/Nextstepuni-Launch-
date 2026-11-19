@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-19T12:32:56.187376+00:00",
+  "sourceVerifiedCards": 406,
+  "fixedNoticeRegenerationIsIdempotent": true,
+  "sourceVerification": "sources.log",
+  "requiredChecks": [
+    "required.log",
+    "required-followup.log"
+  ],
+  "requiredDistinctChecks": 334,
+  "followupReason": "The old yes-claim assertion now expects the full8 marks for a scored criterion. The12 other files and both visible numeric-scoring layouts already passed.",
+  "reconciliation": "ledger.json"
+}

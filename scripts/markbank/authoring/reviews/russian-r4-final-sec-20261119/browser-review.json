@@ -1,0 +1,148 @@
+{
+  "checkedAt": "2026-11-19T12:40:50.908766+00:00",
+  "nativeBrowser": "Google Chrome via CUA",
+  "cases": [
+    {
+      "id": "ru-2013-hl-ca1",
+      "width": 390,
+      "theme": "light",
+      "key": "ru-2013-hl-ca1-390-light",
+      "checkedAt": "2026-11-19T12:33:59.822Z",
+      "questionCaptured": true,
+      "schemeCaptured": true,
+      "audioReview": "SEC requests disabled in temporary harness; playback not verified"
+    },
+    {
+      "id": "ru-2013-hl-ca1",
+      "width": 1120,
+      "theme": "light",
+      "key": "ru-2013-hl-ca1-1120-light",
+      "checkedAt": "2026-11-19T12:34:09.182Z",
+      "questionCaptured": true,
+      "schemeCaptured": true,
+      "audioReview": "SEC requests disabled in temporary harness; playback not verified"
+    },
+    {
+      "id": "ru-2013-hl-ca1",
+      "width": 390,
+      "theme": "dark",
+      "key": "ru-2013-hl-ca1-390-dark",
+      "checkedAt": "2026-11-19T12:34:11.355Z",
+      "questionCaptured": true,
+      "schemeCaptured": true,
+      "audioReview": "SEC requests disabled in temporary harness; playback not verified"
+    },
+    {
+      "id": "ru-2013-hl-ca1",
+      "width": 1120,
+      "theme": "dark",
+      "key": "ru-2013-hl-ca1-1120-dark",
+      "checkedAt": "2026-11-19T12:34:13.474Z",
+      "questionCaptured": true,
+      "schemeCaptured": true,
+      "audioReview": "SEC requests disabled in temporary harness; playback not verified"
+    },
+    {
+      "id": "ru-2010-hl-l1-1-i",
+      "width": 390,
+      "theme": "light",
+      "key": "ru-2010-hl-l1-1-i-390-light",
+      "checkedAt": "2026-11-19T12:34:52.778Z",
+      "questionCaptured": true,
+      "schemeCaptured": true,
+      "audioReview": "SEC requests disabled in temporary harness; playback not verified"
+    },
+    {
+      "id": "ru-2010-hl-l1-1-i",
+      "width": 1120,
+      "theme": "light",
+      "key": "ru-2010-hl-l1-1-i-1120-light",
+      "checkedAt": "2026-11-19T12:34:54.963Z",
+      "questionCaptured": true,
+      "schemeCaptured": true,
+      "audioReview": "SEC requests disabled in temporary harness; playback not verified"
+    },
+    {
+      "id": "ru-2010-hl-l1-1-i",
+      "width": 390,
+      "theme": "dark",
+      "key": "ru-2010-hl-l1-1-i-390-dark",
+      "checkedAt": "2026-11-19T12:34:56.819Z",
+      "questionCaptured": true,
+      "schemeCaptured": true,
+      "audioReview": "SEC requests disabled in temporary harness; playback not verified"
+    },
+    {
+      "id": "ru-2010-hl-l1-1-i",
+      "width": 1120,
+      "theme": "dark",
+      "key": "ru-2010-hl-l1-1-i-1120-dark",
+      "checkedAt": "2026-11-19T12:34:58.678Z",
+      "questionCaptured": true,
+      "schemeCaptured": true,
+      "audioReview": "SEC requests disabled in temporary harness; playback not verified"
+    },
+    {
+      "id": "ru-2012-hl-ca1",
+      "width": 390,
+      "theme": "light",
+      "key": "ru-2012-hl-ca1-390-light",
+      "checkedAt": "2026-11-19T12:35:14.569Z",
+      "questionCaptured": true,
+      "schemeCaptured": true,
+      "audioReview": "SEC requests disabled in temporary harness; playback not verified"
+    },
+    {
+      "id": "ru-2012-hl-ca1",
+      "width": 1120,
+      "theme": "light",
+      "key": "ru-2012-hl-ca1-1120-light",
+      "checkedAt": "2026-11-19T12:35:16.710Z",
+      "questionCaptured": true,
+      "schemeCaptured": true,
+      "audioReview": "SEC requests disabled in temporary harness; playback not verified"
+    },
+    {
+      "id": "ru-2012-hl-ca1",
+      "width": 390,
+      "theme": "dark",
+      "key": "ru-2012-hl-ca1-390-dark",
+      "checkedAt": "2026-11-19T12:35:18.915Z",
+      "questionCaptured": true,
+      "schemeCaptured": true,
+      "audioReview": "SEC requests disabled in temporary harness; playback not verified"
+    },
+    {
+      "id": "ru-2012-hl-ca1",
+      "width": 1120,
+      "theme": "dark",
+      "key": "ru-2012-hl-ca1-1120-dark",
+      "checkedAt": "2026-11-19T12:35:21.100Z",
+      "questionCaptured": true,
+      "schemeCaptured": true,
+      "audioReview": "SEC requests disabled in temporary harness; playback not verified"
+    }
+  ],
+  "questionAndRevealScreenshots": 24,
+  "contactSheetsVisuallyRead": 6,
+  "manualScores": [
+    {
+      "cardId": "ru-2013-hl-ca1",
+      "score": 5,
+      "total": 8,
+      "evidence": "2013-cultural-5of8"
+    },
+    {
+      "cardId": "ru-2010-hl-l1-1-i",
+      "score": 2,
+      "total": 4,
+      "evidence": "2010-city-2of4"
+    }
+  ],
+  "limits": [
+    "Scheme content below the initial viewport needs the remaining scrolling review, especially the 2012 choice-card footer.",
+    "Audio metadata requests were disabled in the temporary harness while the SEC archive is blocked. Playback is not verified.",
+    "All generated source guidance is retained in data; the native accessibility snapshot abbreviates long text."
+  ],
+  "releaseReady": false
+}
