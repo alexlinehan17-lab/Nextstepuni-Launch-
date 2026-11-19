@@ -303,19 +303,19 @@
     "refsHash": "f8c5b0fdc8cb31f7"
   },
   "english": {
-    "cards": 2894,
-    "contentHash": "7953c891a3179f40",
-    "coveragePct": 93.0,
-    "covered": 2894,
+    "cards": 2939,
+    "contentHash": "4b3d521bf3b99c01",
+    "coveragePct": 94.5,
+    "covered": 2939,
     "excluded": 0,
-    "leaves": 3112,
-    "open": 218,
+    "leaves": 3111,
+    "open": 172,
     "orphans": 0,
     "papers": {
       "count": 20,
       "hash": "5a9e0ab3f863aa4f"
     },
-    "refsHash": "921c08053fb7aa6c"
+    "refsHash": "fe555e019e89589e"
   },
   "estonian": {
     "cards": 107,

@@ -18486,6 +18486,166 @@
       "kind": "open",
       "reason": "Scheme PDF48: whether, in the candidate’s opinion, the poem is (or is not) amusing, disturbing, emotional or joyful as printed — one judgement. One 15-mark response."
     },
+    "english-2023-hl-deferred-p1-composing-2": {
+      "questionSha256": "31a27835a7221de409bc93fb25f07471afa7af86105c140c8238ed271837d6f7",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this composition (PDF2 note). The paper asks for one feature article exploring our fascination with the lives of others, celebrities and people we know well. One 100-mark composition."
+    },
+    "english-2023-hl-deferred-p1-composing-3": {
+      "questionSha256": "a0dc296273a11b5b3342ade3426854de14f2977a3fccafa6fd69d0dabeaab0da",
+      "kind": "required",
+      "reason": "Scheme PDF15: a short story set in a fictitious supermarket in which at least one employee is in ongoing tension with both the manager and the customers; both tensions required. One 100-mark composition."
+    },
+    "english-2023-hl-deferred-p1-composing-4": {
+      "questionSha256": "bee340bd5b9f33b43a05003a3aa4f7af4ac92fd8fd7a9d81177e9a84367477fe",
+      "kind": "required",
+      "reason": "Scheme PDF16: a personal essay reflecting on the balance between work and leisure and evaluating the candidate’s own lifestyle; both required. One 100-mark composition."
+    },
+    "english-2023-hl-deferred-p1-composing-5": {
+      "questionSha256": "9c5c944381027672d50ac689196f7c893de7dd97e1fc03d6a4216e2d8e6a2339",
+      "kind": "open",
+      "reason": "Scheme PDF17: a discursive essay considering some lifestyle choices the candidate believes environmentally ethical and appropriate in 2023. One 100-mark composition."
+    },
+    "english-2023-hl-deferred-p1-composing-6": {
+      "questionSha256": "c2d123bc7082e166703f733114e89135a71f0424139bdfc100a5cedb197a7d93",
+      "kind": "open",
+      "reason": "Scheme PDF18: a personal essay reflecting on some of the worst advice the candidate was given; “serious or humorous or both” is the register, not a choice of task. One 100-mark composition."
+    },
+    "english-2023-hl-deferred-p1-composing-7": {
+      "questionSha256": "4f73b33f95220dd576256f9455b85dd312811ee83c485c3faa50ab6f1d59fa6e",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this composition (PDF2 note). The paper asks for at least one scene for a radio play in which a middle-aged woman in a midlands town is embroiled in a bitter dispute with her neighbours. One 100-mark composition."
+    },
+    "english-2023-hl-deferred-p1-t1-a-ii": {
+      "questionSha256": "a9c197a125ce5620098376edb8e9d83e24798c066797d89fadaa3cd46afe593b",
+      "kind": "flexible",
+      "reason": "Scheme PDF5: “at least two reasons” the candidate prefers novels or plays or films for other people’s fictional stories; “Candidates may refer to novels, plays and films in a comparative fashion”, so one medium or a comparison is marked on one grid. One 15-mark response."
+    },
+    "english-2023-hl-deferred-p1-t2-a-ii": {
+      "questionSha256": "a9c197a125ce5620098376edb8e9d83e24798c066797d89fadaa3cd46afe593b",
+      "kind": "flexible",
+      "reason": "Scheme PDF7: “at least two reasons” the candidate prefers novels or plays or films for other people’s fictional stories; “Candidates may refer to novels, plays and films in a comparative fashion”, so one medium or a comparison is marked on one grid. One 15-mark response."
+    },
+    "english-2023-hl-deferred-p1-t2-b": {
+      "questionSha256": "f2ceebbd6991233dc59c8868b17a446ac7776e408ec00dcd89844f39644282af",
+      "kind": "required",
+      "reason": "Scheme PDF9: a Careers Handbook article from 2043 that explains what inspired the career path, outlines challenges and set-backs overcome and reflects on what was learned; “interesting or unusual” describes the handbook, not a choice; all aspects required. One 50-mark response."
+    },
+    "english-2023-hl-deferred-p1-t3-a-ii": {
+      "questionSha256": "e4a9cd59bde2f8e7ff6399f3973f571749815e1c5ca7643ebd448de6879d6bec",
+      "kind": "flexible",
+      "reason": "Scheme PDF10: “at least two reasons” the candidate prefers biographies or memoirs or documentary films for true stories; they “may refer to biographies or memoirs or documentary films in a comparative fashion”. One 15-mark response."
+    },
+    "english-2023-hl-deferred-p1-t3-b": {
+      "questionSha256": "ea8401dae55d0997e2de34ccb507e8b1b4baef12523e56365da2fbdf7e9f27c8",
+      "kind": "required",
+      "reason": "Scheme PDF12: three blog posts at the three printed points (the night before leaving, a month in, a year on), each with its printed focus; all three required. One 50-mark response."
+    },
+    "english-2023-hl-deferred-p2-comparative-a-q1-b": {
+      "questionSha256": "c4b7e50fa83d2ac3db6f2815fbf932358196d23b30e97e377f33dd614a410659",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this part (PDF2 note); the paper asks about at least one technique in each of two other texts, “the same technique or different techniques”. One 40-mark response."
+    },
+    "english-2023-hl-deferred-p2-comparative-b-q1-a": {
+      "questionSha256": "2f8e799e0d437c92d984233e6582aacb64d8631da2ea85a1d63e183c9bb570d0",
+      "kind": "open",
+      "reason": "Scheme PDF24: a theme or issue of the candidate’s choosing in one text and what it revealed about them. One 30-mark response."
+    },
+    "english-2023-hl-deferred-p2-comparative-b-q1-b": {
+      "questionSha256": "e0907b5d2ba722e01685bd1ee06a59e4e31c9ebace116ebc7c78f6d21f726769",
+      "kind": "open",
+      "reason": "Scheme PDF25: the same theme or issue in two other texts of the candidate’s choosing. One 40-mark response."
+    },
+    "english-2023-hl-deferred-p2-comparative-b-q2": {
+      "questionSha256": "deff640cfa98d2b8b78b28a8f6e7614b8b612fe101c723d42d093dfc3ec4f6f7",
+      "kind": "flexible",
+      "reason": "Scheme PDF26: at least two texts; “tension or conflict” used to explore the same theme or issue — either or both. One 70-mark response."
+    },
+    "english-2023-hl-deferred-p2-comparative-c-q1-a": {
+      "questionSha256": "77a105dcd0003ccde7fa25c9b2c05e88a09318eabc831f7bf2eeac583ab964cd",
+      "kind": "open",
+      "reason": "Scheme PDF27: the portrayal of any kind of love, of the candidate’s choosing, in one text. One 30-mark response."
+    },
+    "english-2023-hl-deferred-p2-comparative-c-q1-b": {
+      "questionSha256": "05c7d75aa3522e9bf35b8a091bf0b0caa1756442d5deede181333689217c6c14",
+      "kind": "open",
+      "reason": "Scheme PDF28: the portrayal of any kind of love in two other texts of the candidate’s choosing. One 40-mark response."
+    },
+    "english-2023-hl-deferred-p2-comparative-c-q2": {
+      "questionSha256": "c70d484fa601b0da1247e4ea6ad8d00029e95418a2b324002e07f01e834719d2",
+      "kind": "flexible",
+      "reason": "Scheme PDF29: at least two texts of the candidate’s choosing; the extent to which their idealism influenced the general vision and viewpoint. One 70-mark response."
+    },
+    "english-2023-hl-deferred-p2-prescribed-1": {
+      "questionSha256": "91676074e97dae5f9a3fddd0346b5390cbcdd625a3eb421ecc6326ede224a661",
+      "kind": "open",
+      "reason": "Scheme PDF32: agree or disagree with the printed statement, poems of the candidate’s choosing — a graded judgement. One 50-mark response."
+    },
+    "english-2023-hl-deferred-p2-prescribed-2": {
+      "questionSha256": "e328f5643d249b64fceb5cbaaadee4df50f6928240f52e1645ca8a51aa672966",
+      "kind": "open",
+      "reason": "Scheme PDF33: agree or disagree with the printed statement, poems of the candidate’s choosing — a graded judgement. One 50-mark response."
+    },
+    "english-2023-hl-deferred-p2-prescribed-3": {
+      "questionSha256": "d0a118e20cf3ec33e83f57c32f7a4623f1f1bdb9d83c10dc23bb2518c1afab22",
+      "kind": "open",
+      "reason": "Scheme PDF34: agree or disagree with the printed statement, poems of the candidate’s choosing — a graded judgement. One 50-mark response."
+    },
+    "english-2023-hl-deferred-p2-prescribed-4": {
+      "questionSha256": "ffe7d86d08375083b1582ea744826b85aa4ff2d382f59eee6e9eea04b970ad3c",
+      "kind": "open",
+      "reason": "Scheme PDF35: agree or disagree with the printed statement, poems of the candidate’s choosing — a graded judgement. One 50-mark response."
+    },
+    "english-2023-hl-deferred-p2-prescribed-5": {
+      "questionSha256": "d3c7389956a61ab6b4afe292e889d5a17421678d99ab95243115fd438d797a3a",
+      "kind": "open",
+      "reason": "Scheme PDF36: agree or disagree with the printed statement, poems of the candidate’s choosing — a graded judgement. One 50-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-a-i": {
+      "questionSha256": "25cce87baa566284ff8e755a661bae519ef339f8ce110e6d82e594fd6dc387b7",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task (PDF2 note); the paper asks for the three choices or decisions the candidate believes most important; “You may refer to any combination of choices or decisions”. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-a-ii": {
+      "questionSha256": "65ae008c8e720d824304e7dd4c610b2739f1e925673c7b1923b6917e6a115467",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task (PDF2 note); the paper asks whether the printed aspect does or does not undermine the narrative’s credibility — a reasoned judgement either way, not routes. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-b-i": {
+      "questionSha256": "9f0d2cd0c5d3d2375add5de566a0090866d28fdcc9239cd50dd9f4b331e618a4",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task (PDF2 note); the paper asks for the three choices or decisions the candidate believes most important; “You may refer to any combination of choices or decisions”. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-c-i": {
+      "questionSha256": "c31914567a7be7624f0fd83044772b69bfac24624a766260767c2819b09d61c7",
+      "kind": "open",
+      "reason": "Scheme PDF20: the three choices or decisions the candidate believes most important; “You may refer to any combination of choices or decisions”. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-d-i": {
+      "questionSha256": "e75b5286f7d157d69c5eef6c22faa883b5c8dc0f14965617ffecd0e7bfed9997",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task (PDF2 note); the paper asks for the three choices or decisions the candidate believes most important; “You may refer to any combination of choices or decisions”. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-d-ii": {
+      "questionSha256": "dc0fdac5960245bfa9272643caf21a7d65137e87f7b4af9e67c59dc70cb388ad",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task (PDF2 note); the paper asks whether the printed aspect does or does not undermine the narrative’s credibility — a reasoned judgement either way, not routes. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-e-i": {
+      "questionSha256": "5c8afc46f9a04baeef4c2cb9aab59f9d40e65949550c1b59b506e8326f0e8968",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task (PDF2 note); the paper asks for the three choices or decisions the candidate believes most important; “You may refer to any combination of choices or decisions”. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-e-ii": {
+      "questionSha256": "ae59c080ca41b413ed7a1f989e1653167556b16758bf2a1e77ac1f061a51c3c9",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task (PDF2 note); the paper asks whether the printed aspect does or does not undermine the narrative’s credibility — a reasoned judgement either way, not routes. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-unseen-q1-b": {
+      "questionSha256": "ca21eabfadf464c839c0d49b47b856a128e7607381632ee779484c4462971381",
+      "kind": "open",
+      "reason": "Scheme PDF30: whether the poem should or should not be included, with reasons from its poetic merits — a judgement either way. One 10-mark response."
+    },
     "english-2024-hl-deferred-p1-composing-1": {
       "questionSha256": "7c1c4816884afea50ba9a1dfde3a6f2c5a3113f9921f8aad918a7a690ef93741",
       "kind": "flexible",

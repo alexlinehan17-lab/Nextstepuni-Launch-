@@ -157,6 +157,10 @@
       "canonical": "english-2026-ol-p2-comparative-c-q1-b",
       "reason": "Q1(b) and Q2(b) are printed with identical wording and tariff (40) under one mode, on the same page (paper PDF13) and marked from the same scheme page; one practice identity, keeping both printed placements in the Atlas."
     },
+    "english-2023-hl-deferred-p1-t2-a-ii": {
+      "canonical": "english-2023-hl-deferred-p1-t1-a-ii",
+      "reason": "Printed identically under TEXT 1 and TEXT 2 (paper PDF3, PDF5), same tariff (15), grid and no reader: it asks about the candidate’s own preference among novels, plays and films (scheme PDF5, PDF7). One practice identity, keeping both printed placements in the Atlas; TEXT 3’s QA(ii) asks about true stories and is its own card."
+    },
     "english-2024-hl-deferred-p1-t2-a-ii": {
       "canonical": "english-2024-hl-deferred-p1-t1-a-ii",
       "reason": "Printed identically under TEXT 1, 2 and 3 (paper PDF3, PDF5, PDF7), same tariff (15), grid and no reader: the paper forbids referring to any of its texts (scheme PDF5, PDF8, PDF11). One practice identity, keeping all three printed placements in the Atlas."

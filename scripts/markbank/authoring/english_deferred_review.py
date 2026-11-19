@@ -374,7 +374,10 @@ def classify(hit, tasks, suggested_tasks, source_pages, last_page):
                                     r'read\s+the\s+following\s|you\s+must\s+answer|[A-C]\s+[A-Z ,]+$|'
                                     # the choice rubric's last line ("or C – Cultural Context.") and the
                                     # Comparative Study's "Please note" definitions ("• When used, the words …")
-                                    r'or\s+[A-C]\s*[–—-]|•\s*when\s+used)', text):
+                                    r'or\s+[A-C]\s*[–—-]|[•\uf0b7]\s*when\s+used|'
+                                    # a comparative mode's heading printed apart from its letter
+                                    r'(?:THEME OR ISSUE|CULTURAL CONTEXT|GENERAL VISION AND VIEWPOINT|LITERARY GENRE|'
+                                    r'HERO, HEROINE,? VILLAIN|SOCIAL SETTING|RELATIONSHIPS)$)', text):
         return {'kind': 'exam-instruction'}
     if hit['page'] in source_pages:
         # A line of the printed passage or poem: on a page that prints one, and in no task's own wording.

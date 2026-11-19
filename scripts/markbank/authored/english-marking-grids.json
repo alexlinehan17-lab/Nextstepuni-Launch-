@@ -2128,6 +2128,20 @@
       "capRulePage": 3,
       "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
     },
+    "2023-higher-deferred": {
+      "family": "hl-h1-h8",
+      "scheme": "paper-trail-corpus/deferredmarkingschemes/2023/LC002ALP000EV.pdf",
+      "schemeSha256": "755d417fc2b6536de58834daccb6f962525d384729e77ef8897131f1fcc6bf37",
+      "gridPages": [
+        4,
+        38
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Appendix 2 (PDF38) prints the discrete 100/70/60/50 grids and the combined 40/30/20/10 rows; the combined 15-mark row is printed with the Question A tasks (PDF4)."
+    },
     "2024-higher-deferred": {
       "family": "hl-h1-h8",
       "scheme": "paper-trail-corpus/deferredmarkingschemes/2024/LC002ALP000EV.pdf",

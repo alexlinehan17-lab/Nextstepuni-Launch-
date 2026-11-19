@@ -125,6 +125,17 @@
    "schemeSha256": "1f87d14f685446f36c40b6faa92ed50f043ff9e9a357c408212c4720c1c069c2"
   },
   {
+   "paperId": "english-2023-hl-deferred-p1",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "tasks": 19,
+   "cards": 18,
+   "printedDuplicates": 1,
+   "paperSha256": "8478421ce1f7230542c97d003557b909116f79e7d3e91cf0ba3a6245911e40d0",
+   "schemeSha256": "755d417fc2b6536de58834daccb6f962525d384729e77ef8897131f1fcc6bf37"
+  },
+  {
    "paperId": "english-2023-hl-p2",
    "year": 2023,
    "level": "higher",
@@ -134,6 +145,17 @@
    "printedDuplicates": 0,
    "paperSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
    "schemeSha256": "1f87d14f685446f36c40b6faa92ed50f043ff9e9a357c408212c4720c1c069c2"
+  },
+  {
+   "paperId": "english-2023-hl-deferred-p2",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "tasks": 27,
+   "cards": 27,
+   "printedDuplicates": 0,
+   "paperSha256": "f09cefdb117b7aeff217515351077ff6fdc71cff3887fa7dfd4ba73ef9a1a278",
+   "schemeSha256": "755d417fc2b6536de58834daccb6f962525d384729e77ef8897131f1fcc6bf37"
   },
   {
    "paperId": "english-2022-hl-p1",
@@ -1159,6 +1181,17 @@
     },
     "capRulePage": 3
    },
+   "2023-higher-deferred": {
+    "family": "hl-h1-h8",
+    "gridPages": [
+     4,
+     38
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2024-higher": {
     "family": "hl-h1-h8",
     "gridPages": [
@@ -1459,7 +1492,7 @@
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 826,
+ "cardCount": 871,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -10214,6 +10247,651 @@
    }
   },
   {
+   "id": "english-2023-hl-deferred-p1-t1-a-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 1 QA(i) — Deferred sitting",
+   "questionText": "Based on your reading of TEXT 1, explain three insights you gain into Kit de Waal’s perspective on telling other people’s stories. Support your explanation with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Telling Other People’s Stories",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Kit de Waal — edited extracts from a manifesto she delivered at A National Day for Writers organised by Words Ireland in 2018, with a photograph of the writer (PDF2–3). As reproduced in the SEC 2023 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    4
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-t1-a-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 1 QA(ii) — Deferred sitting",
+   "questionText": "We can engage with other people’s fictional stories in different ways. Explain the reasons why you prefer to engage with other people’s fictional stories through novels or plays or films.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "8"
+   },
+   "atlasPlacements": [
+    {
+     "fileid": "LC002ALP100EV-deferred.pdf",
+     "n": "10"
+    }
+   ]
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-t1-a-iii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 1 QA(iii) — Deferred sitting",
+   "questionText": "Identify four features of the writing style, evident in TEXT 1, and discuss how effectively these stylistic features are employed to provide both an engaging and thought-provoking exploration of the issues raised. Support your answer with reference to TEXT 1.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Telling Other People’s Stories",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Kit de Waal — edited extracts from a manifesto she delivered at A National Day for Writers organised by Words Ireland in 2018, with a photograph of the writer (PDF2–3). As reproduced in the SEC 2023 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-t1-b",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 1 QB — Deferred sitting",
+   "questionText": "You have been asked to write an introduction to a collection of fictional and non-fictional writing called Other People’s Stories. The book includes a selection of short stories, personal essays, novel extracts and interviews. In your introduction you should: explain why you find the mix of fictional and non-fictional writing in the text attractive, discuss the value you see in engaging with other people’s stories through reading, and explain why you would recommend this particular collection to readers.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-t2-a-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 2 QA(i) — Deferred sitting",
+   "questionText": "Based on your reading of TEXT 2, explain three insights you gain into the struggles in Shuggie Bain’s life. Support your explanation with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Shuggie’s Story",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Douglas Stuart — edited extracts from the opening paragraphs of his Booker Prize-winning novel Shuggie Bain (Picador, 2020), with the book’s cover (PDF4–5). As reproduced in the SEC 2023 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-t2-a-iii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 2 QA(iii) — Deferred sitting",
+   "questionText": "Identify four features of the writing style, evident in TEXT 2, and discuss how these stylistic features contribute to making the above text both a realistic and an evocative portrayal of Shuggie’s story. Support your answer with reference to TEXT 2.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Shuggie’s Story",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Douglas Stuart — edited extracts from the opening paragraphs of his Booker Prize-winning novel Shuggie Bain (Picador, 2020), with the book’s cover (PDF4–5). As reproduced in the SEC 2023 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-t2-b",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 2 QB — Deferred sitting",
+   "questionText": "Every year your former school produces a Careers Handbook. As well as information and advice on courses and careers, the handbook features articles by former students who have followed interesting or unusual career paths. It is 2043, and you have been invited to submit an article on your journey through the world of work for the Careers Handbook. In your article you should: explain what inspired or motivated you to follow your particular career path, outline some of the challenges and set-backs you overcame and reflect on what you have learned about yourself in the process.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-t3-a-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 3 QA(i) — Deferred sitting",
+   "questionText": "Based on your reading of TEXT 3, explain three reasons why the above article, written in 1977, is still current in its content and philosophy in 2023. Support your explanation with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "The Story of Another Life",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Michael Viney — edited extracts from the first column of his series Another Life, first published in The Irish Times in 1977, with a photograph of him in Mayo in 1977 (PDF6–7). As reproduced in the SEC 2023 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-t3-a-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 3 QA(ii) — Deferred sitting",
+   "questionText": "We can engage with other people’s true stories in different ways. Explain the reasons why you prefer to engage with other people’s non-fictional stories through biographies or memoirs or documentary films.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-t3-a-iii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 3 QA(iii) — Deferred sitting",
+   "questionText": "Identify four features of the writing style, evident in TEXT 3, and discuss how these stylistic features may have helped to give Michael Viney’s weekly newspaper column an enduring appeal. Support your answer with reference to TEXT 3.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "The Story of Another Life",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Michael Viney — edited extracts from the first column of his series Another Life, first published in The Irish Times in 1977, with a photograph of him in Mayo in 1977 (PDF6–7). As reproduced in the SEC 2023 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    11
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-t3-b",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 3 QB — Deferred sitting",
+   "questionText": "Imagine you are a teenage member of a family who move from Dublin to live a self-sufficient lifestyle in rural Ireland. You decide to write a blog in which you share this experience. Write three blog posts: the first on the night before you leave Dublin in which you reflect on what you are leaving behind and the changes ahead, the second after a month in your new home as you struggle to adjust, and the third in which you share your thoughts and feelings after a year of living in a rural area.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-composing-1",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Composing 1 — Deferred sitting",
+   "questionText": "In TEXT 2, we see Shuggie Bain abandon his dream to become a hairdresser. Write an inspirational speech, to be delivered at a national youth event, on the transformative power of dreams both for individuals and for entire communities.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-composing-2",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Composing 2 — Deferred sitting",
+   "questionText": "The theme of this examination paper is “Other People’s Stories”. Write a feature article, to be published in a popular magazine, which explores our endless fascination with the lives of others, both celebrities and people we know well.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested feature article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    3,
+    13,
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-composing-3",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Composing 3 — Deferred sitting",
+   "questionText": "In TEXT 2, we find Shuggie Bain working in a supermarket. Write a short story, set in a fictitious supermarket, in which at least one of the employees is involved in ongoing tension with both the manager and the customers.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-composing-4",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Composing 4 — Deferred sitting",
+   "questionText": "In TEXT 2, Shuggie, like many young people, has a part-time job that fits around his schooling. Write a personal essay in which you reflect on the appropriate balance in life between work and leisure and evaluate your own lifestyle in this respect.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-composing-5",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Composing 5 — Deferred sitting",
+   "questionText": "In TEXT 3, we learn Michael Viney’s thoughts on pursuing a self-sufficient lifestyle. Write a discursive essay in which you consider some of the lifestyle choices you believe to be environmentally ethical and appropriate in 2023.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-discursive",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested discursive essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-composing-6",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Composing 6 — Deferred sitting",
+   "questionText": "In TEXT 1, Kit de Waal poses the question, “Was there ever any worse advice than write what you know?”. Write a personal essay in which you reflect on some of the worst advice you were ever given. Your essay may be serious or humorous or both.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p1-composing-7",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Composing 7 — Deferred sitting",
+   "questionText": "In TEXT 1, Kit de Waal observes that the life of a middle-aged woman who lives in a midlands town, visits the supermarket and tends her garden is not interesting. Write at least one scene for a radio play in which a middle-aged woman living in a midlands town becomes embroiled in a bitter dispute with her next-door neighbours.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    3,
+    13,
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "7"
+   }
+  },
+  {
    "id": "english-2023-hl-p2-single-a-i",
    "year": 2023,
    "level": "higher",
@@ -11115,6 +11793,932 @@
    "atlas": {
     "fileid": "LC002ALP200EV.pdf",
     "n": "5"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-single-a-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text A(i) — Deferred sitting",
+   "questionText": "Identify what you believe to be the three most important choices or decisions Werner Pfennig makes. Discuss why you believe these choices or decisions are important and the insights you gain into various aspects of Werner’s character from them. You may refer to any combination of choices or decisions. Develop your discussion with reference to Anthony Doerr’s novel, All the Light We Cannot See.",
+   "totalMarks": 60,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    3,
+    19,
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-single-a-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text A(ii) — Deferred sitting",
+   "questionText": "Discuss the reasons why, in your opinion, Doerr’s portrayal of Nazi characters does or does not undermine the credibility of the narrative in his novel, All the Light We Cannot See. Develop your discussion with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    3,
+    19,
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-single-b-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text B(i) — Deferred sitting",
+   "questionText": "Identify what you believe to be the three most important choices or decisions Nora Helmer makes. Discuss why you believe these choices or decisions are important and the insights you gain into various aspects of Nora’s character from them. You may refer to any combination of choices or decisions Nora makes prior to or during Ibsen’s play, A Doll’s House. Develop your discussion with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    3,
+    19,
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-single-b-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text B(ii) — Deferred sitting",
+   "questionText": "Identify aspects of Ibsen’s play, A Doll’s House, that, in your opinion, lead us to draw disturbing conclusions about marriage. Discuss the disturbing conclusions that may be drawn about this subject from the aspects of the play you have identified. Support your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    3,
+    19,
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-single-c-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text C(i) — Deferred sitting",
+   "questionText": "Identify what you believe to be the three most important choices or decisions Macbeth makes. Discuss why you believe these choices or decisions are important and the insights you gain into various aspects of Macbeth’s character from them. You may refer to any combination of choices or decisions. Develop your discussion with reference to Shakespeare’s play, Macbeth.",
+   "totalMarks": 60,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-single-c-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text C(ii) — Deferred sitting",
+   "questionText": "Identify aspects of Shakespeare’s play, Macbeth, that, in your opinion, lead us to draw disturbing conclusions about evil. Discuss the disturbing conclusions that may be drawn about this subject from the aspects of the play you have identified. Support your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-single-d-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text D(i) — Deferred sitting",
+   "questionText": "Identify what you believe to be the three most important choices or decisions Victor Frankenstein makes. Discuss why you believe these choices or decisions are important and the insights you gain into various aspects of Frankenstein’s character from them. You may refer to any combination of choices or decisions. Develop your discussion with reference to Mary Shelley’s novel, Frankenstein.",
+   "totalMarks": 60,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    3,
+    19,
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-single-d-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text D(ii) — Deferred sitting",
+   "questionText": "Discuss the reasons why, in your opinion, Mary Shelley’s portrayal of the monster does or does not undermine the credibility of the narrative in her novel, Frankenstein. Develop your discussion with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    3,
+    19,
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-single-e-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text E(i) — Deferred sitting",
+   "questionText": "Identify what you believe to be the three most important choices or decisions Dorian Gray makes. Discuss why you believe these choices or decisions are important and the insights you gain into various aspects of Dorian’s character from them. You may refer to any combination of choices or decisions. Develop your discussion with reference to Oscar Wilde’s novel, The Picture of Dorian Gray.",
+   "totalMarks": 60,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    3,
+    19,
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-single-e-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text E(ii) — Deferred sitting",
+   "questionText": "Discuss the reasons why, in your opinion, Oscar Wilde’s inclusion of the supernatural does or does not undermine the credibility of the narrative in his novel, The Picture of Dorian Gray. Develop your discussion with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    3,
+    19,
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-comparative-a-q1-a",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative A Q1(a) — Deferred sitting",
+   "questionText": "Discuss how effectively two techniques are used to focus our attention on a central character in one text on your comparative course. Develop your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Literary Genre · Q1",
+   "schemePages": [
+    3,
+    22,
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-comparative-a-q1-b",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative A Q1(b) — Deferred sitting",
+   "questionText": "Compare how effectively at least one technique is used to focus our attention on a central character in each of two other comparative texts. You may refer to the same technique or different techniques in each text. You may refer to the same or different techniques than those you discussed in answer to part (a) of this question. Develop your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Literary Genre · Q1",
+   "schemePages": [
+    3,
+    22,
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-comparative-a-q2",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative A Q2 — Deferred sitting",
+   "questionText": "Compare how the authors of at least two texts on your comparative course create a compelling narrative in each of these texts. Develop your response with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Literary Genre · Q2",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-comparative-b-q1-a",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative B Q1(a) — Deferred sitting",
+   "questionText": "Identify a theme or issue you studied on your comparative course. Discuss what your study of this theme or issue in one text on your comparative course revealed to you about yourself. Develop your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme or Issue · Q1",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-comparative-b-q1-b",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative B Q1(b) — Deferred sitting",
+   "questionText": "With reference to the same theme or issue discussed above, compare what your study of this theme or issue in each of two other comparative texts revealed to you about yourself. Develop your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme or Issue · Q1",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-comparative-b-q2",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative B Q2 — Deferred sitting",
+   "questionText": "Compare the extent to which tension or conflict is used to explore or develop the same theme or issue in each of at least two texts on your comparative course. Develop your response with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme or Issue · Q2",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-comparative-c-q1-a",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative C Q1(a) — Deferred sitting",
+   "questionText": "Discuss how the portrayal of any kind of love helped to shape your perception of the general vision and viewpoint of one text on your comparative course. Develop your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · General Vision and Viewpoint · Q1",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-comparative-c-q1-b",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative C Q1(b) — Deferred sitting",
+   "questionText": "Compare how the portrayal of any kind of love helped to shape your perception of the general vision and viewpoint of each of two other comparative texts. Develop your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · General Vision and Viewpoint · Q1",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-comparative-c-q2",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative C Q2 — Deferred sitting",
+   "questionText": "Compare the extent to which the level of idealism evident in each of at least two texts on your comparative course influenced your sense of the general vision and viewpoint in these texts. Develop your response with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · General Vision and Viewpoint · Q2",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-unseen-q1-a",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Unseen Poetry Q1(a) — Deferred sitting",
+   "questionText": "What impression of Bridget does Moya Cannon convey in the above poem? Support your response with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "A Song at Imbolc",
+    "pages": [
+     6
+    ],
+    "attribution": "A Song at Imbolc — Moya Cannon, as reproduced in the SEC 2023 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-unseen-q1-b",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Unseen Poetry Q1(b) — Deferred sitting",
+   "questionText": "With reference to its poetic merits, explain the reasons why you do or do not agree that the above poem should be included in a collection of poems to mark St Brigid’s Day.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "A Song at Imbolc",
+    "pages": [
+     6
+    ],
+    "attribution": "A Song at Imbolc — Moya Cannon, as reproduced in the SEC 2023 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-unseen-q2",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Unseen Poetry Q2 — Deferred sitting",
+   "questionText": "Discuss how the poet imbues this poem with both a timeless quality and a universal relevance. Develop your discussion with reference to both the content and language of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q2",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "A Song at Imbolc",
+    "pages": [
+     6
+    ],
+    "attribution": "A Song at Imbolc — Moya Cannon, as reproduced in the SEC 2023 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-prescribed-1",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Prescribed Poetry Q1 — Deferred sitting",
+   "questionText": "“Elizabeth Bishop’s use of an attractive observational style enhances her ability to communicate various revelations and reflections in her work.” Discuss the extent to which you agree or disagree with the above statement. Develop your discussion with reference to the poems by Elizabeth Bishop on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Elizabeth Bishop",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-prescribed-2",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Prescribed Poetry Q2 — Deferred sitting",
+   "questionText": "“John Donne effectively employs complex thought and language to explore a variety of deeply personal relationships in his poetry.” Discuss the extent to which you agree or disagree with the above statement. Develop your discussion with reference to the poems by John Donne on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-3",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "John Donne",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "20"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-prescribed-3",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Prescribed Poetry Q3 — Deferred sitting",
+   "questionText": "“Patrick Kavanagh articulates a range of powerful emotions in his work, often expressed through lyrical language and real-life references.” Discuss the extent to which you agree or disagree with the above statement. Develop your discussion with reference to the poems by Patrick Kavanagh on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-10",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Patrick Kavanagh",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "21"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-prescribed-4",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Prescribed Poetry Q4 — Deferred sitting",
+   "questionText": "“Paula Meehan crafts vivid poetry, holding up a mirror to life that can be revealing or moving or both.” Discuss the extent to which you agree or disagree with the above statement. Develop your discussion with reference to the poems by Paula Meehan on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Paula Meehan",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "22"
+   }
+  },
+  {
+   "id": "english-2023-hl-deferred-p2-prescribed-5",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Prescribed Poetry Q5 — Deferred sitting",
+   "questionText": "“Emily Dickinson’s work is fascinating due to the various challenges presented by her poetic style and the many moments of private intensity that she shares.” Discuss the extent to which you agree or disagree with the above statement. Develop your discussion with reference to the poems by Emily Dickinson on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Emily Dickinson",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "23"
    }
   },
   {
