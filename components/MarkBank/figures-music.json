@@ -764,5 +764,73 @@
   "md5": "51e4e580aaeba5e5a4e1b22ac0719ae7",
   "alt": "The printed question, printed with Listening Q6(g) in the 2025 Ordinary Level paper, as the SEC set it.",
   "attribution": "SEC Leaving Certificate Music 2025 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-HL-l-q1-b-score": {
+  "src": "/exam-figures/music/markbank/music-2024-HL-l-q1-b-score.png",
+  "md5": "5ebfc4583969ab2d6157f772a8c96938",
+  "alt": "The printed outline score of Excerpt 1 (bars 1-16), with X and Y marked, printed with Listening Q1(b) in the 2024 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-HL-l-q2-b-score": {
+  "src": "/exam-figures/music/markbank/music-2024-HL-l-q2-b-score.png",
+  "md5": "c10994d1d270c0a765653f417fd40195",
+  "alt": "The printed chorale melody (bars 1-16), with X and Y marked, printed with Listening Q2(b) in the 2024 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-HL-l-q2-c-score": {
+  "src": "/exam-figures/music/markbank/music-2024-HL-l-q2-c-score.png",
+  "md5": "e65770b49edfcd16ad1ece4ae09be328",
+  "alt": "The printed chorale melody with Y marked, down to the three printed key options for (c), printed with Listening Q2(c) in the 2024 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-HL-l-q3-a-score": {
+  "src": "/exam-figures/music/markbank/music-2024-HL-l-q3-a-score.png",
+  "md5": "6dccfc0f551d5f71d593531ee4b10e7e",
+  "alt": "The six printed lines of lyrics for Excerpt 1, printed with Listening Q3(a) in the 2024 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-HL-l-q3-b-score": {
+  "src": "/exam-figures/music/markbank/music-2024-HL-l-q3-b-score.png",
+  "md5": "6dccfc0f551d5f71d593531ee4b10e7e",
+  "alt": "The six printed lines of lyrics for Excerpt 1, printed with Listening Q3(b) in the 2024 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-HL-l-q3-c-score": {
+  "src": "/exam-figures/music/markbank/music-2024-HL-l-q3-c-score.png",
+  "md5": "f7c229396f87b6c1a240cfacb47f49ae",
+  "alt": "The outline score of bars 1-3 with the lyrics, X marked, printed with Listening Q3(c) in the 2024 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-HL-scheme-p17-l-q3-c": {
+  "src": "/exam-figures/music/markbank/music-2024-HL-scheme-p17-l-q3-c.png",
+  "md5": "619e08f92881c9d27153c272a7c982d9",
+  "alt": "The marking scheme’s printed answer for Listening Q3(c): the four missing notes printed on a treble stave with their words, cropped from page 17 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2024 Higher Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2024-HL-scheme-p19-l-q5-a-a": {
+  "src": "/exam-figures/music/markbank/music-2024-HL-scheme-p19-l-q5-a-a.png",
+  "md5": "2eca933b8352143c7f78877e902bfb5d",
+  "alt": "The marking scheme’s printed answer for Listening Q5 A(a): the dance (Reel, allow Polka), the time signatures accepted for each, stacked as in music, and the rhythm rule, cropped from page 19 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2024 Higher Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2024-HL-l-q6-a-score": {
+  "src": "/exam-figures/music/markbank/music-2024-HL-l-q6-a-score.png",
+  "md5": "a41269dc7fef2450f108e425b4fb549a",
+  "alt": "The three printed options, printed with Listening Q6(a) in the 2024 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-HL-l-q6-b-score": {
+  "src": "/exam-figures/music/markbank/music-2024-HL-l-q6-b-score.png",
+  "md5": "ca11b1afe81b48df6c4e10e5357aae03",
+  "alt": "The outline score of bars 1-3 with X marked, down to the three printed time-signature options for (b), printed with Listening Q6(b) in the 2024 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2024-HL-l-q6-e-score": {
+  "src": "/exam-figures/music/markbank/music-2024-HL-l-q6-e-score.png",
+  "md5": "7031757aef80ec4b15619060ab3a964f",
+  "alt": "The three printed options, printed with Listening Q6(e) in the 2024 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2024 Higher Level examination paper — © State Examinations Commission"
  }
 }
