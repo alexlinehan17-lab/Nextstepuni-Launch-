@@ -165,16 +165,17 @@ def source_card(r):
     c=base(r['unit'],r['question'],r['publishedTotal'],pages,r['schemePages'],r['item'],r['roman']);c['review']['questionPages']=r['questionPages'];return c
 
 def cultural_awareness(source):
-    """Retain the complete source task without selecting a disputed numeric tariff."""
+    """Keep the paper total and disclose both conflicting source figures (R4)."""
     record=next(task for task in source['tasks'] if task['unit']=='CA1')
     assert (record['paperTotal'],record['publishedTotal'])==(8,4)
     card=source_card(record)
     card['kind']='question'
     card['questionRef']='2013 HL Section CA1'
     card['totalMarks']=record['paperTotal']
-    card['tariffModel']={'kind':'questionTotal'}
-    card['rows']=[{'id':'published-guidance','kind':'point','verbatim':record['publishedSourceBlock'],'marks':None,
-        'contextNote':'Source discrepancy: the original question paper prints 8 marks; the marking scheme prints “Assign 1 mark for each relevant detail” and “2 х 2 = 4”. The recorded 8 is the paper’s printed total, not an agreed scoring maximum. Choose two of the three original topics and give two details about each. The scheme supplies these instructions and topic names, without exemplar factual answers. Review your response against the complete source guidance; this card does not calculate a numerical score. The English paper column allows English or Russian; the Irish column and the scheme also allow Irish.'}]
+    card['tariffModel']={'kind':'fixed'}
+    card['rows']=[{'id':'published-guidance','kind':'criterion','verbatim':'The scheme prints no answer for this part.','marks':8,'unprinted':True,
+        'permittedMarks':list(range(9)),
+        'contextNote':'Source discrepancy: the original question paper prints 8 marks; the marking scheme prints “Assign 1 mark for each relevant detail” and “2 х 2 = 4”. This card retains the paper’s printed total under the card standard; the conflict remains unresolved in the source. Assess the complete response out of 8 without inferring marks per detail. Choose two of the three original topics and give two details about each. The English paper column allows English or Russian; the Irish column and the scheme also allow Irish. Complete printed scheme guidance: '+record['publishedSourceBlock']}]
     return [card]
 
 def reading(source):
@@ -394,7 +395,7 @@ def build():
     assert sum(c['totalMarks'] for c in cards if c['section']!='CA1')==292
     assert sum(bool(c.get('answerLanguageRule')) for c in cards)==18
     culture=next(c for c in cards if c['id']=='ru-2013-hl-ca1')
-    assert culture['totalMarks']==8 and all(row['marks'] is None for row in culture['rows'])
+    assert culture['totalMarks']==8 and culture['rows'][0]['marks']==8 and culture['rows'][0]['unprinted']
     assert 'answerLanguageRule' not in culture
     for doc in docs.values():doc.close()
     from ru_summary_language_rules import attach_reviewed_summary_language_exceptions

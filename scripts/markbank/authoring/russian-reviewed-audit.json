@@ -4381,7 +4381,16 @@
       },
       "numericallyScoredTasks": 39,
       "confidenceOnlyTasks": 1,
-      "sourceCoverageComplete": true
+      "sourceCoverageComplete": true,
+      "r4Recheck20261119": {
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2013-hl.json",
+        "cards": [
+          "ru-2013-hl-se",
+          "ru-2013-hl-gw",
+          "ru-2013-hl-ca1"
+        ],
+        "releaseComplete": false
+      }
     },
     {
       "year": 2012,

@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageOtherLanguageId } from '../components/MarkBank/languageScoring';
 import { isRubricCard, tariffReconciles } from '../types/markBank';
+import { marksClaimed } from '../components/MarkBank/SessionScreen';
 const sitting=REVIEWED_CARDS.filter(c=>c.year===2013&&c.level==='higher');
 const get=(suffix:string)=>{const c=sitting.find(c=>c.id===`ru-2013-hl-${suffix}`);if(!c||!isRubricCard(c))throw new Error(suffix);return c;};
 const points=(suffix:string)=>{const c=get(suffix);if(c.rubric.system!=='language-points')throw new Error(suffix);return {...c,rubric:c.rubric};};
@@ -10,12 +11,17 @@ const row=(group:string,id='full',value=1)=>({[languageGroupId(group)]:1,[langua
 const slot=(id:string,value:number)=>({[languageGroupId(id)]:1,[languageScoreId(id)]:value});
 
 describe('Russian 2013 Higher supported source tasks',()=>{
-  it('covers forty original tasks while keeping the cultural allocation numerically unresolved',()=>{
+  it('covers forty original tasks with the printed cultural total and both conflicting source figures',()=>{
     expect(sitting).toHaveLength(40);
     const culture=sitting.find(c=>c.id==='ru-2013-hl-ca1');
-    if(!culture||isRubricCard(culture))throw new Error('unpriced cultural question');
-    expect(culture.tariffModel.kind).toBe('questionTotal');
-    expect(culture.rows.every(row=>row.marks===null)).toBe(true);
+    if(!culture||isRubricCard(culture))throw new Error('Expected no-answer criterion');
+    expect(culture.tariffModel.kind).toBe('fixed');
+    expect(culture.rows).toHaveLength(1);
+    expect(culture.rows[0]).toMatchObject({kind:'criterion',marks:8,unprinted:true,verbatim:'The scheme prints no answer for this part.'});
+    expect(culture.rows[0].contextNote).toContain('paper prints 8 marks');
+    expect(culture.rows[0].contextNote).toContain('2 х 2 = 4');
+    expect(marksClaimed(culture,{'published-guidance':5})).toBe(5);
+    expect(marksClaimed(culture,{'published-guidance':8})).toBe(8);
     expect(culture.totalMarks).toBe(8);
     expect(sitting.filter(c=>!tariffReconciles(c)).map(c=>c.id)).toEqual([]);
     expect(sitting.filter(c=>c.id!=='ru-2013-hl-ca1').reduce((s,c)=>s+c.totalMarks,0)).toBe(292);

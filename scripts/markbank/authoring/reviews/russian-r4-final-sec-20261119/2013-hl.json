@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-11-19T12:26:39.932452+00:00",
+  "archive": {
+    "year": 2013,
+    "level": "hl",
+    "url": "https://www.examinations.ie/archive/markingschemes/2013/LC099ALP000EV.pdf",
+    "filename": "Russian-2013-hl-SEC-fresh-20261119.pdf",
+    "pages": 20,
+    "downloadDone": true,
+    "downloadConfirmation": "Chrome native Recent download history shows exact filename,924 KB and completed time; full file checked separately on disk.",
+    "checkedAt": "2026-11-19T12:03:00.879Z",
+    "bytes": 945741,
+    "sha256": "b14c59425b38ee71743c5b59b119baad4071759692f069d143abc421b5ac4b6d",
+    "retainedSha256": "b14c59425b38ee71743c5b59b119baad4071759692f069d143abc421b5ac4b6d",
+    "exactMatch": true,
+    "freshDownloadVerified": true,
+    "localFile": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/stale-exclusions-20261119/sec-recheck/2013-hl.pdf"
+  },
+  "cards": [
+    {
+      "id": "ru-2013-hl-se",
+      "printedMarks": 30,
+      "schemePages": [
+        10,
+        11
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2013-hl.pdf",
+      "schemeSha256": "b14c59425b38ee71743c5b59b119baad4071759692f069d143abc421b5ac4b6d",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2013-hl.json",
+      "finding": "The scheme supplies marking instructions or a grid but no answer for this task.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2013-hl-gw",
+      "printedMarks": 40,
+      "schemePages": [
+        12,
+        13
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2013-hl.pdf",
+      "schemeSha256": "b14c59425b38ee71743c5b59b119baad4071759692f069d143abc421b5ac4b6d",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2013-hl.json",
+      "finding": "The scheme supplies marking instructions or a grid but no answer for this task.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2013-hl-ca1",
+      "printedMarks": 8,
+      "schemePages": [
+        5
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2013-hl.pdf",
+      "schemeSha256": "b14c59425b38ee71743c5b59b119baad4071759692f069d143abc421b5ac4b6d",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2013-hl.json",
+      "treatment": "unprinted-criterion",
+      "finding": "No factual answers are printed. Retain the paper total8 and disclose the scheme instruction1 mark per detail and its total4 under CARD-STANDARD section5.",
+      "fixedLine": "The scheme prints no answer for this part."
+    }
+  ],
+  "otherFindings": [],
+  "sourceReview": "All relevant scheme pages read in full as original-page images and extracted text; examples distinguished from prompts. Original downloaded PDF matches the retained source exactly.",
+  "rule": "R4; CARD-STANDARD sections3,5 and10a",
+  "sourceBranch": "wip/russian-2026-11-19",
+  "liveCardsChanged": false,
+  "mainAtReview": "dd70ba43d6bc87dbe293b72d1b52c1cabdfcabf0"
+}

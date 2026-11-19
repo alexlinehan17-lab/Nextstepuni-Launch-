@@ -156075,13 +156075,22 @@
       "component": "000",
       "guidancePages": [
         3
-      ]
+      ],
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          10,
+          11
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2013-hl.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
       "system": "language-writing",
       "taskRequirements": [],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
@@ -156498,7 +156507,16 @@
       "component": "000",
       "guidancePages": [
         3
-      ]
+      ],
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          12,
+          13
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2013-hl.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -156507,7 +156525,7 @@
         "1. Write an entry for Facebook. On your page indicate: a. (Introduction to who you are/personal data) b. What your interests/ hobbies are? c. What you like collecting? d. What your favourite places to visit are? e. Talk about two-three of the photos/videos you have posted. 2. Write about an episode from your childhood when you went to visit a friend. Include: a. How you got there? b. Who was with you? c. Things you did there (give 3 details) d. How you felt when you got home. 3. What are the advantages and disadvantages of going to a university in another country? a. Would you like to study abroad? b. Why? What are the advantages? c. Why not? What are the disadvantages?",
         "If a candidate answers TWO or MORE Questions, mark ALL and take the best mark. Only if a candidate obtains full marks on the first/second questions the examiner is not required to mark the subsequent one(s)."
       ],
-      "markingGuideNote": "Source descriptor conflict: the Lower A prose gives the middle pair as 9/10, but its table prints 9–11, overlapping the 11–12 row. Both exact versions remain above. The agreed numeric range is 7–12; no descriptor is trimmed or reassigned, and no minimum mark is automatically awarded. The choice-specific category letters and requirements are retained in the original guide; no equal per-category prices are invented.",
+      "markingGuideNote": "The scheme prints no answer for this part. Source descriptor conflict: the Lower A prose gives the middle pair as 9/10, but its table prints 9–11, overlapping the 11–12 row. Both exact versions remain above. The agreed numeric range is 7–12; no descriptor is trimmed or reassigned, and no minimum mark is automatically awarded. The choice-specific category letters and requirements are retained in the original guide; no equal per-category prices are invented.",
       "criteria": [
         {
           "id": "content",
@@ -170590,16 +170608,28 @@
     "questionRef": "2013 HL Section CA1",
     "questionText": "Cultural awareness: Select two of the words/phrases listed below and give two details explaining each of them. Answer in English or Russian. (8 marks) 1. церковь 2. Третьяковская галерея 3. Санкт-Петербург",
     "tariffModel": {
-      "kind": "questionTotal"
+      "kind": "fixed"
     },
     "totalMarks": 8,
     "rows": [
       {
         "id": "published-guidance",
-        "kind": "point",
-        "verbatim": "1.3. Select two of the words / phrases listed below and give two details in English / Irish or Russian explaining each of them. Assign 1 mark for each relevant detail 2 х 2 = 4 1. Церковь 2. Третьяковская галерея 3. Санкт-Петербург",
-        "marks": null,
-        "contextNote": "Source discrepancy: the original question paper prints 8 marks; the marking scheme prints “Assign 1 mark for each relevant detail” and “2 х 2 = 4”. The recorded 8 is the paper’s printed total, not an agreed scoring maximum. Choose two of the three original topics and give two details about each. The scheme supplies these instructions and topic names, without exemplar factual answers. Review your response against the complete source guidance; this card does not calculate a numerical score. The English paper column allows English or Russian; the Irish column and the scheme also allow Irish."
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 8,
+        "unprinted": true,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "contextNote": "Source discrepancy: the original question paper prints 8 marks; the marking scheme prints “Assign 1 mark for each relevant detail” and “2 х 2 = 4”. This card retains the paper’s printed total under the card standard; the conflict remains unresolved in the source. Assess the complete response out of 8 without inferring marks per detail. Choose two of the three original topics and give two details about each. The English paper column allows English or Russian; the Irish column and the scheme also allow Irish. Complete printed scheme guidance: 1.3. Select two of the words / phrases listed below and give two details in English / Irish or Russian explaining each of them. Assign 1 mark for each relevant detail 2 х 2 = 4 1. Церковь 2. Третьяковская галерея 3. Санкт-Петербург"
       }
     ],
     "sourceMaterial": {
@@ -170623,7 +170653,15 @@
       "component": "000",
       "questionPages": [
         5
-      ]
+      ],
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          5
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2013-hl.json"
+      }
     },
     "kind": "question"
   },
