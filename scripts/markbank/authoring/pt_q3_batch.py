@@ -90,7 +90,7 @@ def _spec_key(card):
     q = rest[0]
     tail = rest[1:]
     if sec.startswith('L'):
-        return f'{sec}{q}{"".join(tail)}'
+        return f'{sec}{q}{tail[0]}-{tail[1]}' if len(tail) == 2 else f'{sec}{q}{"".join(tail)}'
     letter = tail[0] if tail else ''
     roman = f'-{tail[1]}' if len(tail) > 1 else ''
     return f'{sec}{q}{letter}{roman}'

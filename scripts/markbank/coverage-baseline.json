@@ -679,12 +679,12 @@
   },
   "portuguese": {
     "cards": 341,
-    "contentHash": "c383d529d9314759",
-    "coveragePct": 80.7,
+    "contentHash": "307924841042f04c",
+    "coveragePct": 80.2,
     "covered": 341,
-    "excluded": 264,
-    "leaves": 750,
-    "open": 145,
+    "excluded": 262,
+    "leaves": 752,
+    "open": 149,
     "orphans": 0,
     "papers": {
       "count": 31,

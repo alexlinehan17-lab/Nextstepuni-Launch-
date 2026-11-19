@@ -2478,7 +2478,9 @@ export const CARDS: SecCard[] = [
     questionText: "Quais são as duas influências dos Calema?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Várias duplas brasileiras; Os pais", marks: 6, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “6 marks: 3 x 2 marks”.", permittedMarks: [0,2,4,6] },
+    { id: "r-1", kind: "point", verbatim: "Várias duplas brasileiras", marks: 2, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Os pais", marks: 2 },
+    { id: "r-3", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme prices this ask “6 marks: 3 x 2 marks” and prints two answers; it prints no answer for the rest.", permittedMarks: [0,1,2], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",

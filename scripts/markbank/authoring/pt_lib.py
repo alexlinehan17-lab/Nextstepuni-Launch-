@@ -78,6 +78,24 @@ def B(*parts):
     return Bullets(*parts)
 
 
+class Cell:
+    """The text of the k-th marks-column cell on scheme line n, as printed:
+    the number a numbering task's answer column sets there ("⟨4⟩", 2024
+    Higher Q2(j)), which the cut view of the line blanks with the prices."""
+    def __init__(self, n, k=0):
+        self.n, self.k = n, k
+
+    def text(self, doc):
+        cells = [m.group(0)[1:-1].strip() for m in ANGLE.finditer(doc['raw'][self.n - 1])]
+        if len(cells) <= self.k or not cells[self.k]:
+            raise ValueError(f'scheme line {self.n} prints no cell #{self.k}')
+        return cells[self.k]
+
+
+def CELL(n, k=0):
+    return Cell(n, k)
+
+
 class Price:
     """The k-th price printed on scheme line n: (count, per, notation). With
     `each`, one answer at the per-answer price (a table row of "4 x 1 mark")."""
@@ -187,6 +205,25 @@ class Shown(Row):
         self.sel, self.lead = sel, lead
 
 
+class Rest(Row):
+    """The marks a price pays beyond the answers the scheme prints: "6 marks:
+    3 x 2 marks" over two printed answers leaves 2 for which it prints none.
+    The card's LAST row, CARD-STANDARD 3 (UNPRINTED_ANSWER), as German
+    de-2011-hl-t2-3-a: a criterion row with the fixed line, placed 0 to its
+    marks. `printed` is how many answers the scheme prints; each was carded
+    at the price's per-answer marks."""
+    def __init__(self, tariff, printed):
+        self.tariff, self.printed = tariff, printed
+
+
+UNPRINTED_ANSWER = 'The scheme prints no answer for this part.'
+NUMBER = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven'}
+
+
+def rest(tariff, printed):
+    return Rest(tariff, printed)
+
+
 def one(sel, tariff, lead=None):
     return One(sel, tariff, lead)
 
@@ -272,6 +309,18 @@ def build_rows(doc, rows, note, key=''):
             out.append({'id': rid, 'kind': 'point', 'verbatim': r.sel.text(doc), 'marks': per,
                         **({'contextNote': ctx} if ctx else {})})
             total += per
+            continue
+        if isinstance(r, Rest):
+            count, per, notation = r.tariff.read(doc)
+            left = (count - r.printed) * per
+            if left <= 0:
+                raise ValueError(f'{key}: {notation!r} pays no more than the {r.printed} printed answers')
+            said = (f'The scheme prices this ask “{notation}” and prints {NUMBER[r.printed]} '
+                    f'answer{"" if r.printed == 1 else "s"}; it prints no answer for the rest.')
+            out.append({'id': rid, 'kind': 'criterion', 'verbatim': UNPRINTED_ANSWER, 'marks': left,
+                        'unprinted': True, 'permittedMarks': list(range(left + 1)),
+                        'contextNote': f'{ctx} {said}'.strip()})
+            total += left
             continue
         if isinstance(r, Stepped):
             count, per, notation = r.tariff.read(doc)
