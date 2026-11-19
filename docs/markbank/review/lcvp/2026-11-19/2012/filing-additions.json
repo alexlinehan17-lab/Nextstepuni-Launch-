@@ -1,10 +1,10 @@
 {
-  "recordedAt": "2026-11-19T19:36:00.930544+00:00",
+  "recordedAt": "2026-11-19T20:01:04.286214+00:00",
   "sitting": "2012",
   "status": "Review-only filing additions; no canonical or generated file changed",
   "cards": 47,
   "sourceCandidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-authoring/proposed-47-authored-cards.json",
-  "sourceCandidateSha256": "973a864707db5bf505312661fef90321fd8b53923b122cabbb00cab1e5652149",
+  "sourceCandidateSha256": "c3790d702477748be6a877a01f0e7bdb788671274aa762f208ee7ba8da2a69b9",
   "thirdReaderDecision": {
     "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/third-reader-decision.json",
     "sha256": "daddacedf6cefd7929055499437c56c0fc8e3dd724a6a21b76e3a758197bfc8f"
@@ -28,15 +28,9 @@
       ],
       "r3"
     ],
-    "lcvp-2012-cl-a3": [
-      [
-        "link-modules-common-2-enterprise-skills"
-      ],
-      "r2"
-    ],
     "lcvp-2012-cl-a4": [
       [
-        "link-modules-common-2-enterprise-skills"
+        "link-modules-common-audio-visual"
       ],
       "r2"
     ],
@@ -45,12 +39,6 @@
         "link-modules-common-1-introduction-to-working-life"
       ],
       "r3"
-    ],
-    "lcvp-2012-cl-a6": [
-      [
-        "link-modules-common-2-enterprise-skills"
-      ],
-      "r2"
     ],
     "lcvp-2012-cl-a7": [
       [
@@ -300,8 +288,9 @@
     ]
   },
   "counts": {
-    "r2": 39,
-    "r3": 8
+    "r2": 37,
+    "r3": 8,
+    "pending-method-evidence": 2
   },
   "items": [
     {
@@ -310,16 +299,28 @@
         "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/category-comparison.json",
-      "reason": "Recalls the company name from the recording.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Identifies the employer named in the recording.",
       "internalTopicId": "lcvp-link-modules-1-1",
       "questionRef": "2012 CL Section A Q1",
-      "firstHeadingIds": [
-        "link-modules-common-audio-visual"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-audio-visual"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2012-cl-a1",
+        "headingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/category-comparison.json",
+        "reason": "Recalls the company name from the recording.",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2012 CL Section A Q1",
+        "firstHeadingIds": [
+          "link-modules-common-audio-visual"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-audio-visual"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2012-cl-a2",
@@ -335,36 +336,63 @@
     {
       "cardId": "lcvp-2012-cl-a3",
       "headingIds": [
-        "link-modules-common-2-enterprise-skills"
+        "link-modules-common-1-introduction-to-working-life"
       ],
-      "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/category-comparison.json",
-      "reason": "Describes project management responsibilities.",
+      "how": null,
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Describes the responsibilities of a project manager at work.",
       "internalTopicId": "lcvp-link-modules-1-0",
       "questionRef": "2012 CL Section A Q3",
-      "firstHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ],
+      "previousReading": {
+        "cardId": "lcvp-2012-cl-a3",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/category-comparison.json",
+        "reason": "Describes project management responsibilities.",
+        "internalTopicId": "lcvp-link-modules-1-0",
+        "questionRef": "2012 CL Section A Q3",
+        "firstHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
       "secondHeadingIds": [
         "link-modules-common-2-enterprise-skills"
-      ]
+      ],
+      "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
     },
     {
       "cardId": "lcvp-2012-cl-a4",
       "headingIds": [
-        "link-modules-common-2-enterprise-skills"
+        "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/category-comparison.json",
-      "reason": "Explains why a manager addresses team conflict and performance.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Recalls specific complaints, delays and atmosphere prompting this meeting.",
       "internalTopicId": "lcvp-link-modules-1-0",
       "questionRef": "2012 CL Section A Q4",
-      "firstHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2012-cl-a4",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/category-comparison.json",
+        "reason": "Explains why a manager addresses team conflict and performance.",
+        "internalTopicId": "lcvp-link-modules-1-0",
+        "questionRef": "2012 CL Section A Q4",
+        "firstHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2012-cl-a5",
@@ -380,19 +408,34 @@
     {
       "cardId": "lcvp-2012-cl-a6",
       "headingIds": [
-        "link-modules-common-2-enterprise-skills"
+        "link-modules-common-1-introduction-to-working-life"
       ],
-      "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/category-comparison.json",
-      "reason": "Explains management practices to reduce stress.",
+      "how": null,
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Applies workplace support and planning to reduce employee stress.",
       "internalTopicId": "lcvp-link-modules-1-0",
       "questionRef": "2012 CL Section A Q6",
-      "firstHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ],
+      "previousReading": {
+        "cardId": "lcvp-2012-cl-a6",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/category-comparison.json",
+        "reason": "Explains management practices to reduce stress.",
+        "internalTopicId": "lcvp-link-modules-1-0",
+        "questionRef": "2012 CL Section A Q6",
+        "firstHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
       "secondHeadingIds": [
         "link-modules-common-2-enterprise-skills"
-      ]
+      ],
+      "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
     },
     {
       "cardId": "lcvp-2012-cl-a7",
@@ -400,16 +443,28 @@
         "link-modules-common-2-enterprise-skills"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/category-comparison.json",
-      "reason": "Explains why managers need communication skills.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Explains communication skills needed to manage teams and resolve problems.",
       "internalTopicId": "lcvp-link-modules-1-0",
       "questionRef": "2012 CL Section A Q7",
-      "firstHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2012-cl-a7",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/category-comparison.json",
+        "reason": "Explains why managers need communication skills.",
+        "internalTopicId": "lcvp-link-modules-1-0",
+        "questionRef": "2012 CL Section A Q7",
+        "firstHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2012-cl-a8",
@@ -417,16 +472,28 @@
         "link-modules-common-2-enterprise-skills"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/category-comparison.json",
-      "reason": "Evaluates management abilities with supporting examples.",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Evaluates management skills and qualities, permitting either reasoned judgement.",
       "internalTopicId": "lcvp-link-modules-1-0",
       "questionRef": "2012 CL Section A Q8",
-      "firstHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2012-cl-a8",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/category-comparison.json",
+        "reason": "Evaluates management abilities with supporting examples.",
+        "internalTopicId": "lcvp-link-modules-1-0",
+        "questionRef": "2012 CL Section A Q8",
+        "firstHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2012-cl-b1",
@@ -1116,7 +1183,72 @@
       ]
     }
   ],
-  "pending": [],
+  "pending": [
+    {
+      "cardId": "lcvp-2012-cl-a3",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": null,
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Describes the responsibilities of a project manager at work.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2012 CL Section A Q3",
+      "previousReading": {
+        "cardId": "lcvp-2012-cl-a3",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/category-comparison.json",
+        "reason": "Describes project management responsibilities.",
+        "internalTopicId": "lcvp-link-modules-1-0",
+        "questionRef": "2012 CL Section A Q3",
+        "firstHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
+    },
+    {
+      "cardId": "lcvp-2012-cl-a6",
+      "headingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "how": null,
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Applies workplace support and planning to reduce employee stress.",
+      "internalTopicId": "lcvp-link-modules-1-0",
+      "questionRef": "2012 CL Section A Q6",
+      "previousReading": {
+        "cardId": "lcvp-2012-cl-a6",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/category-comparison.json",
+        "reason": "Explains management practices to reduce stress.",
+        "internalTopicId": "lcvp-link-modules-1-0",
+        "questionRef": "2012 CL Section A Q6",
+        "firstHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
+    }
+  ],
   "limits": [
     "All internal topic IDs, card IDs and concept IDs remain unchanged.",
     "The coordinator’s market-research ruling is applied explicitly; the remaining recall/content consistency review is recorded separately.",
