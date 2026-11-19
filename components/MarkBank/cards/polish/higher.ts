@@ -18219,4 +18219,254 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-i-1-a", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-bez-uzywania-sformulowan",
+    section: "I", questionRef: "2010 HL Section I Q1(a)",
+    questionText: "Wyjaśnij własnymi słowami (tj. bez używania sformułowań zawartych w tekście) znaczenie wyrażenia „kozioł ofiarny” (akapit 3)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(fraz.) kozioł ofiarny „ktoś, na kogo zrzuca się całą odpowiedzialność za coś”", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Mechanizm kozła ofiarnego polega na tym, iż grupa społeczna w momencie kryzysu czy zagrożenia, by powrócić do stanu utraconej równowagi, obiera sobie ofiarę, która staje się obiektem zbiorowej agresji całej grupy.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-i-1-b", topicId: "polish-3-0", conceptId: "wyjasnij-wlasnymi-slowami-bez-uzywania-sformulowan",
+    section: "I", questionRef: "2010 HL Section I Q1(b)",
+    questionText: "Wyjaśnij własnymi słowami (tj. bez używania sformułowań zawartych w tekście) na czym polega efekt przemieszczania się agresji (akapit 6)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Efekt przemieszczania się agresji polega na tym, że ofiara agresji (np. dziecko karane przez zbyt surowych rodziców) wyładowuje swoją złość na kimś słabszym od siebie (młodszym koledze, bracie albo zwierzęciu domowym), często niemającym związku z daną sprawą.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-i-2", topicId: "polish-3-0", conceptId: "opierajac-powyzszym-tekscie-napisz-wlasnymi-slowami",
+    section: "I", questionRef: "2010 HL Section I Q2",
+    questionText: "Opierając się na powyższym tekście, napisz własnymi słowami, co to jest agresja i jakie są jej przyczyny. Udziel odpowiedzi w mniej więcej pięciu zdaniach.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Agresja to zachowanie, którego podłożem jest zwykle gniew lub frustracja znajdujące w ten sposób swoje ujście. Psychologowie wyróżniają rożne formy agresji, np. z jednej strony, pojedynczą lub zbiorową, z drugiej, fizyczną, werbalną i niewerbalną. Jako przyczyny agresji wymienia się niezaspokojone potrzeby w domu rodzinnym, w szkole lub w grupie rówieśników. Dodaje się, że również środki masowego przekazu mogą wzmagać przemoc i agresję wśród młodzieży. Ogólnie mówiąc, zjawisko to nie jest do końca wyjaśnione, choć agresja wśród młodych ludzi ciągle się nasila, a wiele przypadków jest zatajanych ze strachu przed odwetem.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-i-3", topicId: "polish-3-0", conceptId: "jakich-rad-podstawie-przeczytanego-udzielilbys-rodzicom",
+    section: "I", questionRef: "2010 HL Section I Q3",
+    questionText: "Jakich rad – na podstawie przeczytanego tekstu – udzieliłbyś rodzicom czy nauczycielom, żeby ograniczyć agresję wśród młodzieży? Podaj trzy przykłady.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "szczera rozmowa z dzieckiem o jego potrzebach w domu i w szkole (akapit 5)", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme notes: “(5 pkt za trzy przykłady, 4 pkt za dwa, itd.)”." },
+    { id: "r-2", kind: "point", verbatim: "niestosowanie surowych kar (akapit 6)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "położenie większego nacisku w szkole na funkcję wychowawczą i opiekuńczą (akapit 7)", marks: null },
+    { id: "r-4", kind: "point", verbatim: "wyczulenie klasy przez wychowawców na możliwość występowania tego zjawiska i odpowiednie reakcje ze strony uczniów (akapit 9)", marks: null },
+    { id: "r-5", kind: "point", verbatim: "nauczenie dzieci tolerancji i poszanowania drugiego człowieka (akapit 10)", marks: null },
+    { id: "r-6", kind: "point", verbatim: "uczenie młodych ludzi panowania nad emocjami i nawiązywania przyjaznych kontaktów z rówieśnikami (akapit 10)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-i-4", topicId: "polish-3-0", conceptId: "czy-zgadzasz-stwierdzeniem-akapicie-srodki-masowego",
+    section: "I", questionRef: "2010 HL Section I Q4",
+    questionText: "Czy zgadzasz się ze stwierdzeniem w akapicie 5, że środki masowego przekazu mogą wzmagać przemoc wśród uczniów? Odpowiedź uzasadnij.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tak, całkowicie zgadzam się z tą opinią. Środki masowego przekazu mają duże znaczenie dla kształtowania zachowań społecznych. Do takich, które swoim agresywnym charakterem mogą negatywnie wpływać na zachowania młodzieży, można zaliczyć: telewizję, kino, prasę, blogi komputerowe, gry komputerowe.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints two answers, either one, joined by “LUB”." },
+    { id: "r-2", kind: "point", verbatim: "Nie zgadzam się z tą opinią. Uważam, że ten argument jest często nadużywany. Powiedziałbym, że, po pierwsze, jeśli ktoś ma mocny kręgosłup moralny, oglądanie agresywnych filmów na pewno go nie zmieni. Po drugie – moim zdaniem – środki masowego przekazu mogą wręcz zapobiegać agresywnym zachowaniom poprzez umożliwienie ludziom wyżycia się, np. w grach komputerowych.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-i-5", topicId: "polish-3-0", conceptId: "rozne-bywaja-przyczyny-takiego-przesladowania-najczestsza",
+    section: "I", questionRef: "2010 HL Section I Q5",
+    questionText: "„Różne bywają przyczyny takiego prześladowania, a najczęstszą pozostaje jakaś odmienność.” (akapit 3) Dlaczego według ciebie czyjaś odmienność może wywoływać agresję u innych? Udziel odpowiedzi podając trzy powody.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme pays by how many reasons are given, in its own words: “(5 pkt za trzy powody, 4 pkt za dwa, 3 pkt za jeden )”. Its lead-in: “Inność zawsze wzbudza zainteresowanie, ale staje się to zjawiskiem niepokojącym, gdy zaczyna wzbudzać agresję. Można wymienić kilka przyczyn takiego zachowania:”", group: {"claimMax":3,"perOption":3,"options":["zazdrość,","pokaz siły,","chęć zaimponowania rówieśnikom,","chęć pokazania, ze jest się kimś lepszym; kompleks wyższości,","chęć wyżycia się na kimś,","chęć kontrolowania kogoś,","odreagowanie za niesłusznie doświadczone kary."],"perOptionSteps":[3,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-i-6", topicId: "polish-3-0", conceptId: "chodzi-dziecko-zachowywalo-poprawnie-dlatego-boi",
+    section: "I", questionRef: "2010 HL Section I Q6",
+    questionText: "„Chodzi o to, by dziecko zachowywało się poprawnie nie dlatego, że boi się kary, ale dlatego, że tak podpowiada mu jego wewnętrzny system wartości.” (akapit 10) Twoim zdaniem, jaka jest różnica pomiędzy poprawnym zachowaniem pod wpływem strachu, a poprawnym zachowaniem wynikającym z czyjegoś systemu wartości?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dziecko, które boi się kary, nie rozumie, dlaczego ma się dobrze zachowywać. Strach przed karą może mu zaciemnić obraz sytuacji i utrudnić prawidłowe postępowanie, ponieważ strach nigdy nie jest dobrą motywacją.", marks: null, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Dziecko, które zachowuje się poprawnie, bo tak podpowiada mu jego wewnętrzny system wartości, ma nie tylko szansę podejmować bardziej świadome i precyzyjne decyzje, ale także, działając w zgodzie z samym sobą, może nabrać większego zaufania do siebie i przez to jeszcze umocnić się w swoim systemie wartości.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Pierwsze działa z pozycji strachu i niewoli, drugie – z pozycji wewnętrznej wolności.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Pierwsze, w przyszłości będzie zawsze potrzebowało do działania czyjejś opinii albo bodźca strachu, drugie – to z silniejszym kośćcem moralnym – będzie potrafiło samodzielnie zachować się odpowiednio w każdej sytuacji.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-ii-1", topicId: "polish-3-2", conceptId: "dotkliwosc-agresji-slownej-bez-uzycia-slow",
+    section: "II", questionRef: "2010 HL Section II Q1",
+    questionText: "„Dotkliwość agresji słownej i bez użycia słów jest często większa niż fizycznej, bowiem narażając na upokorzenie i ośmieszenie osobę będącą przedmiotem agresji, rani ona jej godność.” (akapit 3) Używając około 100 słów, skomentuj powyższy cytat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Płynna wypowiedź na temat, przy użyciu około 100 słów", marks: 30, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Uwaga: Następujące elementy będą brane pod uwagę przy przyznawaniu punktów w części II i III:” Its model for this task, as an example, not a checklist: “Jak najbardziej zgadzam się z tym stwierdzeniem, chodzi tu bowiem nie o ranę fizyczną, ale duchową. W przypadku agresji fizycznej z czasem rany mają szansę zagoić się bez śladu. W przypadku agresji werbalnej i niewerbalnej agresor rani godność i dumę swojej ofiary, które są niepodważalnymi cechami każdego człowieka i których rany najtrudniej wyleczyć.” “Agresja niewerbalna ma jeszcze jedną cechę, a mianowicie, często jej ani nie widać, ani nie słychać, a jednak ma miejsce. Jest ją trudno udowodnić. Przenośnie mówi się wtedy o takiej sytuacji, że ktoś „wypił krew, ale śladu nie zostawił”.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-iii-1", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2010 HL Section III Q1",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: „Panować nad sobą – to najwyższa władza.”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Uwaga: Następujące elementy będą brane pod uwagę przy przyznawaniu punktów w części II i III:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC548ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Polish 2010 Higher Level — © State Examinations Commission.",
+    id: "pl-2010-hl-iii-2", topicId: "polish-3-2", conceptId: "napisz-wypracowanie-jeden-ponizszych-tematow-uzywajac",
+    section: "III", questionRef: "2010 HL Section III Q2",
+    questionText: "Napisz wypracowanie na jeden z poniższych tematów, używając około 300 słów: Nikt nie jest wyspą.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Czytelnie napisane wypracowanie na temat, przy użyciu około 300 słów, w którym treść przekazana jest w sposób przejrzysty, spójny i w miarę płynny", marks: 40, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language. The scheme prints, for Części II and III: “Uwaga: Następujące elementy będą brane pod uwagę przy przyznawaniu punktów w części II i III:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Przejrzystość celu – kandydat zrozumiał pytanie i wie, jak podejść do udzielenia odpowiedzi – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Spójność wypowiedzi – kandydat dobiera właściwy materiał, korzystając z niego w uporządkowany i celowy sposób – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Znajomość języka – kandydat wykazuje na tyle dobrą znajomość języka, by w sposób jasny i w miarę płynny przekazać treść – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zasady – gramatyka i ortografia – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Polish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Polish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
 ];
