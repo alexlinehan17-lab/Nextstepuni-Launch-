@@ -1,0 +1,43 @@
+{"recordedAt": "2026-11-19T18:47:23.702407+00:00", "status": "Source preparation only; no production writes.", "sourceSha256": {"paper": "26f7d6e54302fa61029046dd8183634ff3c62120b34a16a656dfb06a592e76e9", "case": "9ee1fa88948caf8b453fbde59d0ec4ea9e75eb2e7f1491c9ad83fdee978e8e74", "scheme": "02b7bb8646d5f7450f2cec19b624f056a6980e420323695770da737a223c5e2b"}, "printedParts": 42, "proposedAsks": 47, "offeredMarks": 210, "candidateMaximum": 160, "pending": "Five headings need third reading. Generic split consistency and fresh R4 archive recheck remain pending."}
+A1 [1] What is the name of the company where Dermot works?
+A2 [2] State Dermot’s qualifications.
+A3 [3] Describe Dermot’s role as a ‘Project Manager’.
+A4 [4] Explain why Dermot felt the need to arrange a meeting with Tom.
+A5 [4] Describe how Tom might benefit from his meeting with Dermot.
+A6 [4] What could Dermot have done to reduce Tom’s stress levels on this particular project?
+A7 [6] Why is it necessary for managers like Dermot to have good communication skills? Explain your answer.
+A8 [6] Dermot has shown a good aptitude/ability for management. Do you agree with this statement? Explain your answer.
+B1 [6] Explain the benefits that the community resource centre will bring to the people of Glencar.
+B2(i) [4] Outline two reasons why the County Council wants people from the local community and business groups to participate in the resource centre committee.
+B2(ii) [4] Explain why it is important that the committee carried out market research before devising its plan.
+B2(iii) [2, 2] Select one of the community needs identified in the survey. What are the implications for the committee if they decide to provide that service?
+B3(i) [3] What are the benefits for the local community of using the FÁS CES?
+B3(ii) [9] Set out the Finance section of the Development Plan for the Glencar resource centre, covering the initial set up and subsequent running of the centre.
+C1(a) [4] Name four other ways jobs can be advertised.
+C1(b)(i) [2] Explain why Newsradio Ltd is seeking an employee with good interpersonal skills.
+C1(b)(ii) [2] Explain why applicants are asked to submit references or name referees on their CV.
+C1(c) [9] Write the letter of application for the position advertised.
+C1(d) [8] Describe how to leave a lasting impression at an interview in order to improve your chances of success.
+C2(a) [4] Outline the reasons why people volunteer for community/charity organisations.
+C2(b) [6] State and explain the responsibilities a volunteer has towards community/charity organisations.
+C2(c) [6] Describe the issues a community/charity organisation must consider before recruiting volunteers.
+C2(d) [9] Describe how a community/charity organisation can evaluate the success of its use of volunteers.
+C3(a) [1] Name one LCVP team activity in which you were involved.
+C3(b) [6] Outline three benefits of teamwork in this LCVP activity.
+C3(c) [8] Describe the characteristics of a successful team.
+C3(d)(i) [6] State and explain the difficulties/challenges associated with teamwork.
+C3(d)(ii) [4] Outline how these difficulties/challenges may be overcome.
+C4(a) [4] Outline why planning is so important in setting up and running an enterprise activity.
+C4(b) [2, 4] State two research methods used when planning an enterprise activity. Analyse the usefulness of each research method used.
+C4(c) [2, 4] Name two Leaving Certificate subjects that helped you in completing your part in the class enterprise activity. Give a reason for each subject choice.
+C4(d)(i) [3] Describe the different areas of the enterprise activity that need to be evaluated.
+C4(d)(ii) [6] Explain why each of these different areas should be evaluated.
+C5(a) [1, 2] Name a local commercial business enterprise and identify the product/service it produces.
+C5(b) [2, 4] Identify two agencies which provide support for business start-ups. Outline the type of support offered by each of these agencies.
+C5(c) [7] Your class has decided to invite a business owner to speak to the LCVP class. Draft the agenda for the first meeting to organise the visit-in.
+C5(d)(i) [5] What steps should be taken to ensure the success of the visit-in?
+C5(d)(ii) [4] Outline the most important factors for the successful running of a business.
+C6(a) [3] ‘Diversity in the workplace is encouraged in the modern working environment.’ Explain what is meant by diversity in the workplace.
+C6(b) [6] Outline the benefits that diversity in the workplace might bring to an organisation.
+C6(c) [8] Employers have very clear legal responsibilities in relation to employing young workers (under 18 years of age). Outline four of these responsibilities.
+C6(d) [8] State and explain the responsibilities of workers with regard to Health and Safety in the workplace.

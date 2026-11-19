@@ -1,0 +1,33 @@
+{
+  "recordedAt": "2026-11-19T18:47:23.790114+00:00",
+  "status": "REVIEW ONLY \u2014 not applied or production verified",
+  "proposedAsks": 47,
+  "originalParts": 42,
+  "offeredMarks": 210,
+  "sourcePartFileSha256": "d03804218adc33c68c92442257fb9e2526f0d7bb4186073aa20d63ab734baa3b",
+  "payloadSha256": "973a864707db5bf505312661fef90321fd8b53923b122cabbb00cab1e5652149",
+  "wholeNoAnswerIds": [
+    "lcvp-2012-cl-c1c",
+    "lcvp-2012-cl-c3a",
+    "lcvp-2012-cl-c4c",
+    "lcvp-2012-cl-c4c-2",
+    "lcvp-2012-cl-c5a",
+    "lcvp-2012-cl-c5a-2"
+  ],
+  "partialNoAnswerIds": [
+    "lcvp-2012-cl-a6",
+    "lcvp-2012-cl-a8",
+    "lcvp-2012-cl-c2b",
+    "lcvp-2012-cl-c4dii",
+    "lcvp-2012-cl-c5b-2",
+    "lcvp-2012-cl-c5dii"
+  ],
+  "outstanding": [
+    "Source-selection audit against original pages",
+    "Independent candidate review",
+    "Five topic decisions and generic split consistency adjudication",
+    "Fresh SEC R4 archive recheck",
+    "Native video hosting/playback",
+    "Lane integration, source bindings, canonical filings and automatic checks"
+  ]
+}

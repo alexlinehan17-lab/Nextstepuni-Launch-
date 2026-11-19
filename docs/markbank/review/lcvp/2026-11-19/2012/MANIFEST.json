@@ -1,0 +1,87 @@
+{
+  "recordedAt": "2026-11-19T19:38:46.753334+00:00",
+  "sitting": "2012",
+  "sourceCandidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-authoring/proposed-47-authored-cards.json",
+  "files": [
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/README.md",
+      "bytes": 1101,
+      "sha256": "302d957b523db3a91704dc9121cce58c0d1c4cd60b55ad96bfdfacc7e71d6e3c"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/candidate.json",
+      "bytes": 168943,
+      "sha256": "973a864707db5bf505312661fef90321fd8b53923b122cabbb00cab1e5652149"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/coordinator-rulings.md",
+      "bytes": 8563,
+      "sha256": "fd17baac513eab4ec8e9e911a4f2fd93be002e683c57a5035a1a6a1679e2ed02"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/evidence/build-candidate.py",
+      "bytes": 18629,
+      "sha256": "00b99e415818b1161cbc96cd2c0b1f1e3bde13ba42cf8ae75758d77a566ce23a"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/evidence/candidate-proof.json",
+      "bytes": 1064,
+      "sha256": "55c51536b4ccd67fecf38dc2bb58cf50c08bd18f11870be01a41448dbf796c35"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/evidence/missing-answer-evidence.json",
+      "bytes": 27525,
+      "sha256": "72cb321b831046bb595885420d33f21ad32d55fc6f2bb4f03dd34b0958459a29"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/evidence/prepare-source.py",
+      "bytes": 7443,
+      "sha256": "857438632b785f72f90ec0f4ea05345228495444d11f4116102eb3bcf8fa2cb7"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/evidence/proposed-47-authored-cards.json",
+      "bytes": 168943,
+      "sha256": "973a864707db5bf505312661fef90321fd8b53923b122cabbb00cab1e5652149"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/evidence/removed-scheme-furniture.json",
+      "bytes": 2133,
+      "sha256": "39f01c59eefdd96754b70bef29b22e54bb1811d3a5562c330b97db7fae991877"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/evidence/second-reader-candidate-review.json",
+      "bytes": 3773,
+      "sha256": "6c7fb35b793cc6b65348d64d53fc7392f678c5f5bbb944ca304279479f784ead"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/evidence/source-claim-audit-current.json",
+      "bytes": 722,
+      "sha256": "3dd0375bff08e48431e79c68c6c557bf91e6b4081647b3cb9116ce1fa06f1a86"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/evidence/source-claim-audit.json",
+      "bytes": 722,
+      "sha256": "5c4a6f5cf203b37968ec592209fac4ed6455f83f26768d58ae75fe861aaf5eba"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/evidence/source-parts.json",
+      "bytes": 64855,
+      "sha256": "d03804218adc33c68c92442257fb9e2526f0d7bb4186073aa20d63ab734baa3b"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/evidence/source-preview.txt",
+      "bytes": 4804,
+      "sha256": "78eeafe62fbb0223cd9837f86a47ad5c6b81a6a5b1db44334612b3cefd6acd56"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/filing-additions.json",
+      "bytes": 40458,
+      "sha256": "92317070eaeb2e1ddfc5c6ad76c64b63af2030fdbcf678ff483b72480e840eeb"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-19/2012/third-reader-decision.json",
+      "bytes": 2939,
+      "sha256": "daddacedf6cefd7929055499437c56c0fc8e3dd724a6a21b76e3a758197bfc8f"
+    }
+  ]
+}

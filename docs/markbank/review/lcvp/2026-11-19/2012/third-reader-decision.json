@@ -1,0 +1,39 @@
+{
+  "recordedAt": "2026-11-19T20:20:00Z",
+  "reader": "Claude third reader (assigned by the Claude coordinator)",
+  "readerA": "first reader (firstHeadingIds)",
+  "readerB": "second reader (secondHeadingIds)",
+  "method": "Original paper and scheme renders in original-pages/ read for every item. Rules: PLAN R9, CARD-STANDARD section 9. Audio Visual is kept for asks answered only from the recording; module content goes under its content heading. Case-study asks that draft a plan follow the model lane's pass-C precedent (2019 B3(ii), 2026 B3(iii): An Enterprise Activity).",
+  "items": [
+    {
+      "id": "A2",
+      "decision": {"headingIds": ["link-modules-common-audio-visual"]},
+      "reason": "Paper p3 Q2 asks Dermot's qualifications and scheme p3 (physical p5) pays 2 @ 1m for the facts stated in the recording (Leaving Certificate, engineering, building conservation in London), recall like the agreed Audio Visual Q1, not career-investigation content.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "A5",
+      "decision": {"headingIds": ["link-modules-common-1-introduction-to-working-life"]},
+      "reason": "Paper p4-5 Q5 asks how Tom benefits from his meeting with his manager and scheme p3 (physical p5) pays airing grievances about conditions and pay, two-way feedback, private correction, training and less stress, which is the employee-manager relationship at work rather than an enterprise skill.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "B3i",
+      "decision": {"headingIds": ["link-modules-common-2-local-voluntarycommunity-enterprises"]},
+      "reason": "Paper p11 Q3(i) asks the benefits to the local community of using the FAS Community Employment Scheme for the Glencar resource centre and scheme p7 (physical p9) pays local employment, savings for the committee, upskilling and community spirit, which is how a community enterprise is supported and benefits its area.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "B3ii",
+      "decision": {"headingIds": ["link-modules-common-2-an-enterprise-activity"]},
+      "reason": "Paper p11 Q3(ii) asks the student to set out the finance section of a development plan (set-up and running) and scheme p7 pays 3 @ 3m (1+1+1) for plan items (finance sub-committee, banking, grants, fundraising, budgeted start-up and running costs, income), i.e. drafting an enterprise plan, filed as the live 2019 B3(ii) and 2026 B3(iii) plan-drafting asks are.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "C3a",
+      "decision": {"headingIds": ["link-modules-common-2-an-enterprise-activity"]},
+      "reason": "Paper p20 Q3(a) asks only to name one LCVP team activity the student took part in and scheme p10 (physical p12) pays 1m for any relevant activity, so the ask is naming the student's own LCVP activity (as the agreed 2010 C2(a) and C4(a) naming asks are filed); the teamwork knowledge is asked in (b)-(d).",
+      "agreesWith": "A"
+    }
+  ]
+}

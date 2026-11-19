@@ -1,0 +1,77 @@
+{
+  "recordedAt": "2026-11-19T18:47:28.294717+00:00",
+  "payloadSha256": "973a864707db5bf505312661fef90321fd8b53923b122cabbb00cab1e5652149",
+  "reader": "Codex second worker",
+  "scope": "All47 proposed question texts, row labels, mark controls and42 selected original scheme blocks read. The earlier independent54-page visual reading is frozen separately; two relevant original images were reopened in this candidate review.",
+  "counts": {
+    "cards": 47,
+    "offeredMarks": 210,
+    "wholeNoAnswer": [
+      "lcvp-2012-cl-c1c",
+      "lcvp-2012-cl-c3a",
+      "lcvp-2012-cl-c4c",
+      "lcvp-2012-cl-c4c-2",
+      "lcvp-2012-cl-c5a",
+      "lcvp-2012-cl-c5a-2"
+    ],
+    "partialNoAnswer": [
+      "lcvp-2012-cl-a6",
+      "lcvp-2012-cl-a8",
+      "lcvp-2012-cl-c2b",
+      "lcvp-2012-cl-c4dii",
+      "lcvp-2012-cl-c5b-2",
+      "lcvp-2012-cl-c5dii"
+    ]
+  },
+  "images": [
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/original-pages/scheme-18.png",
+      "sha256": "78f561c9dae8d4d5f7accb268afb467e704c1286de0b6ba0293bcee1cb1861ad",
+      "visuallyReopenedThisPass": true
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-independent/original-pages/paper-29.png",
+      "sha256": "c7deb81560a25723ed48718970f48a6288e6956191f4d631ed4748b5a0bec6fa",
+      "visuallyReopenedThisPass": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "source-guidance-furniture",
+      "severity": "source-only refinement",
+      "detail": "Full support notes include source page footers and Part2/Part3 furniture. Remove only recorded page-number/section-furniture spans; retain all answer models and allocation wording.",
+      "examples": [
+        "C1(c) trailing8",
+        "C3(d)(i)/(ii) trailing11",
+        "A3 Part2",
+        "A6 Part3"
+      ],
+      "status": "Resolved in973a8647: recorded footer coordinates and standalone section furniture removed."
+    },
+    {
+      "id": "lcvp-2012-cl-c6a",
+      "severity": "source-only refinement",
+      "detail": "The scheme explicitly gives Mix of people1m plus2examples at1m. Replace first generic Response control label with Mix of people and identify the other two as examples; preserve the same3marks, all original model examples and one card.",
+      "source": "Scheme physical18,printed16; paper29",
+      "allocation": "Mix of people 1m + 2 examples @ 1m each",
+      "status": "Resolved in973a8647: Mix of people + Example1 + Example2, each1mark."
+    }
+  ],
+  "confirmed": [
+    "All47 proposed cards have unique IDs and rows add to210offered marks.",
+    "Six whole and six partial no-answer notices use exact fixed line, with zero-mark notices last and no optional single-step ladder.",
+    "The agenda keeps Election of committee compulsory, four other items, heading and layout:7marks.",
+    "Binary0/2 controls retained for C3(c),C3(d)(ii),C4(d)(ii),C5(a)-2,C5(d)(ii),C6(c).",
+    "Chosen activity, selected challenge/area/research method and agency context is retained in the relevant follow-up cards.",
+    "Original Newsradio advert and full case/graph remain accessible."
+  ],
+  "remaining": [
+    "C4(b) generic-component split consistency adjudication.",
+    "Five independent heading differences.",
+    "SEC archive recheck and hosted video playback.",
+    "Fresh lane integration, production source routes, application checks and browser inspection."
+  ],
+  "verdict": "The two source-only refinements are confirmed. Remaining adjudications and integration checks still prevent release clearance.",
+  "initialReadPayload": "88aa7dab (full candidate read before parent applied the refinements)",
+  "confirmationAt": "2026-11-19T18:47:51.170817+00:00"
+}

@@ -1,0 +1,3561 @@
+[
+  {
+    "id": "lcvp-2012-cl-a1",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "a1-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "A",
+    "questionRef": "2012 CL Section A Q1",
+    "questionText": "What is the name of the company where Dermot works?",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 1,
+    "rows": [
+      {
+        "id": "company",
+        "kind": "point",
+        "verbatim": "Dermot works for RP Restorations.",
+        "marks": 1
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        3
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2012 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "secFileid": "LC462CLP031EV.mov",
+      "attribution": "State Examinations Commission — original 2012 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with its sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-a2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-2",
+    "conceptId": "a2-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "A",
+    "questionRef": "2012 CL Section A Q2",
+    "questionText": "State Dermot’s qualifications.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "State Dermot’s qualifications?",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Two one-mark qualifications; preserve both printed sentences without creating an extra award for studying engineering. Printed support notes and allocation: State Dermot’s qualifications? 2 marks He has completed his Leaving Certificate. He studied engineering in college and achieved a qualification in Historical Building Conservation in London. 2 @ 1m",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        3
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2012 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "secFileid": "LC462CLP031EV.mov",
+      "attribution": "State Examinations Commission — original 2012 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with its sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-a3",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "a3-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "A",
+    "questionRef": "2012 CL Section A Q3",
+    "questionText": "Describe Dermot’s role as a ‘Project Manager’.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Describe Dermot’s role as Project Manager.",
+        "marks": 3,
+        "openList": true,
+        "group": {
+          "claimMax": 3,
+          "perOption": 1,
+          "options": [
+            "He has to plan and manage the restoration project from beginning to end.",
+            "He has to keep everything running smoothly.",
+            "He has to make sure they stay on time and on budget.",
+            "He has to make sure all the different people on site communicate with each other.",
+            "He manages a large team."
+          ]
+        },
+        "contextNote": " Printed support notes and allocation: Describe Dermot’s role as Project Manager. 3 marks 1. He has to plan and manage the restoration project from beginning to end. 2. He has to keep everything running smoothly. 3. He has to make sure they stay on time and on budget. 4 He has to make sure all the different people on site communicate with each other. 5. He manages a large team. 3 @ 1m"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        3
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2012 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "secFileid": "LC462CLP031EV.mov",
+      "attribution": "State Examinations Commission — original 2012 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with its sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-a4",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "a4-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "A",
+    "questionRef": "2012 CL Section A Q4",
+    "questionText": "Explain why Dermot felt the need to arrange a meeting with Tom.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Explain why Dermot felt the need to arrange a meeting with Tom.",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 4,
+          "perOption": 1,
+          "options": [
+            "To determine how Tom is getting on with the team.",
+            "Dermot has received complaints from other workers about him, stating that his attitude is affecting their work.",
+            "The job is behind schedule which is affecting others.",
+            "Progress reports are not filed on time which affects planning for the following week.",
+            "Clients have noticed a bad atmosphere on site/There is a bad atmosphere on site.",
+            "Afraid workers will down tools."
+          ]
+        },
+        "contextNote": " Printed support notes and allocation: Explain why Dermot felt the need to arrange a meeting with Tom. 4 marks 1. To determine how Tom is getting on with the team. 2. Dermot has received complaints from other workers about him, stating that his attitude is affecting their work. 3. The job is behind schedule which is affecting others. 4. Progress reports are not filed on time which affects planning for the following week. 5. Clients have noticed a bad atmosphere on site/There is a bad atmosphere on site. 6. Afraid workers will down tools. 4 @ 1m"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        4
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2012 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "secFileid": "LC462CLP031EV.mov",
+      "attribution": "State Examinations Commission — original 2012 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with its sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-a5",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-0",
+    "conceptId": "a5-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "A",
+    "questionRef": "2012 CL Section A Q5",
+    "questionText": "Describe how Tom might benefit from his meeting with Dermot.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Describe how Tom might benefit from his meeting with Dermot.",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 4,
+          "perOption": 1,
+          "options": [
+            "Tom can give feedback on his perceptions of how the the job is going/discuss working conditions/pay/he can air his grievances.",
+            "Tom can receive feedback from Dermot/develop a better relationship with Dermot/co-workers.",
+            "He can get negative feedback in private, which saves face.",
+            "Tom will be given the opportunity to improve his IT skills through training.",
+            "Due to the weekly meetings with Dermot, Tom should feel less stressed."
+          ]
+        },
+        "contextNote": " Printed support notes and allocation: Describe how Tom might benefit from his meeting with Dermot. 4 marks 1. Tom can give feedback on his perceptions of how the the job is going/discuss working conditions/pay/he can air his grievances. 2. Tom can receive feedback from Dermot/develop a better relationship with Dermot/co-workers. 3. He can get negative feedback in private, which saves face. 4. Tom will be given the opportunity to improve his IT skills through training. 5. Due to the weekly meetings with Dermot, Tom should feel less stressed. 4 @ 1m"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2012 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "secFileid": "LC462CLP031EV.mov",
+      "attribution": "State Examinations Commission — original 2012 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with its sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-a6",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "a6-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "A",
+    "questionRef": "2012 CL Section A Q6",
+    "questionText": "What could Dermot have done to reduce Tom’s stress levels on this particular project?",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "What could Dermot have done to reduce Tom’s stress levels on this particular project?",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": " Printed support notes and allocation: What could Dermot have done to reduce Tom’s stress levels on this particular project? 4 marks 1. He should have regular meetings from the beginning of the project to make sure that everyone is clear on all aspects of the job. 2. He could have provided proper IT training from the outset + valid expansion. 3. He should have made sure the schedule was more realistic + valid expansion. 4. Proper planning at the beginning would have meant revisions would be kept to a minimum. 2 @ 2m (1 + 1) Keep each response distinct and credit it only once. Complete original guidance: He should have regular meetings from the beginning of the project to make sure that everyone is clear on all aspects of the job. | He could have provided proper IT training from the outset + valid expansion. | He should have made sure the schedule was more realistic + valid expansion. | Proper planning at the beginning would have meant revisions would be kept to a minimum.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "contextNote": "This notice applies only to the unprinted valid expansions in options 2 and 3. All four printed options remain; no extra mark is added.",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        5
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2012 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "secFileid": "LC462CLP031EV.mov",
+      "attribution": "State Examinations Commission — original 2012 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with its sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-a7",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "a7-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "A",
+    "questionRef": "2012 CL Section A Q7",
+    "questionText": "Why is it necessary for managers like Dermot to have good communication skills? Explain your answer.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Why is it necessary for managers like Dermot to have good communication skills? Explain your answer.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": " Printed support notes and allocation: Why is it necessary for managers like Dermot to have good communication skills? Explain your answer. 6 marks 1. Because he has to deal with lots of different people, eg line workers, supervisors,clients. He also-need to control and manage teams on site. 2. He has to deal with employee issues such as: conflicts, individuals whose work may be below standard. 3. As a manager he must appear confident in order to show his authority. 4. He needs to talk to his workers, become aware of problems before they get out of control/affect the work being done. 5. He needs to listen to his workers, to tap into the expertise of the workforce, identify training needs. 3 @ 2m (1 + 1) Keep each response distinct and credit it only once. Complete original guidance: Because he has to deal with lots of different people, eg line workers, supervisors,clients. He also-need to control and manage teams on site. | He has to deal with employee issues such as: conflicts, individuals whose work may be below standard. | As a manager he must appear confident in order to show his authority. | He needs to talk to his workers, become aware of problems before they get out of control/affect the work being done. | He needs to listen to his workers, to tap into the expertise of the workforce, identify training needs.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        6
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2012 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "secFileid": "LC462CLP031EV.mov",
+      "attribution": "State Examinations Commission — original 2012 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with its sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-a8",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "a8-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "A",
+    "questionRef": "2012 CL Section A Q8",
+    "questionText": "Dermot has shown a good aptitude/ability for management. Do you agree with this statement? Explain your answer.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Dermot has shown a good aptitude/ability for managment. Do you agree with this statement? Explain your answer.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": " Printed support notes and allocation: Dermot has shown a good aptitude/ability for managment. Do you agree with this statement? Explain your answer. 6 marks 1. He is good at self reflection, admits his own faults e.g bad scheduling. 2. He recognised the value of good employees such as Tom. 3. He has concern for his clients. He listens to clients and is anxious to keep them informed and up to date with developments on site so that they are not concerned. 4. He is good at his job, he has a calm manner,he kept written notes and documentation on the complaints against Tom. He is pleasant but firm. 5. He has good problem solving skills/deals with problems. *Candidates may also present a ‘No’ answer. 3 @ 2m (1 + 1) Keep each response distinct and credit it only once. Complete original guidance: He is good at self reflection, admits his own faults e.g bad scheduling. | He recognised the value of good employees such as Tom. | He has concern for his clients. He listens to clients and is anxious to keep them informed and up to date with developments on site so that they are not concerned. | He is good at his job, he has a calm manner,he kept written notes and documentation on the complaints against Tom. He is pleasant but firm. | He has good problem solving skills/deals with problems.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "contextNote": "The scheme accepts a No answer but prints no example of that answer. The five printed affirmative responses remain; either position is assessed against the same three two-mark responses.",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        7
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2012 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC462CLP031EV.mov",
+      "secFileid": "LC462CLP031EV.mov",
+      "attribution": "State Examinations Commission — original 2012 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with its sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-b1",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "b1-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "B",
+    "questionRef": "2012 CL Section B Q1",
+    "questionText": "Explain the benefits that the community resource centre will bring to the people of Glencar.",
+    "stem": "GLENCAR COMMUNITY RESOURCE CENTRE Glencar is a small town with a population of 2,200 people. The town has two primary schools, a secondary school and a community hospital catering for the town and the surrounding area. The Gaelic Athletic Association (GAA) is very active in the area, as well as a number of voluntary organisations and community organisations. A large privately owned building has recently been donated to the County Council on condition that it is turned into a community resource centre. The building has a large reception area, a big hall which, with alteration, would be suitable for staging shows or plays. This hall could also be used as a small sports hall. There are two small meeting rooms with computer facilities which could be used by local groups or for exhibitions. There are also two larger adjoining rooms with access to a garden area. The County Council has put together a committee to devise a development plan for the set up and subsequent running of the centre. Local community and business groups were approached to nominate members to this committee and the committee has met on a number of occasions. The committee’s first task was to survey local townspeople to help identify the community needs that the resource centre could meet. A survey was carried out on 100 local people who were asked to state which priority needs the community resource centre should meet. The findings are presented as follows:\n\nUses for Resource Centre: Creche 30; Youth Club/Café 20; Retirement Group 15; Meeting & Training Facilities 20; Recreational Classes 15.\n\nThe committee is currently analysing the findings of the survey. The committee members agree that the new community resource centre should be the focal point in the town. The County Council is happy to allow the committee to finalise the development plan for the centre. However, the Council has insisted that a seasonal tourist office be located in the main reception area of the building for the months of April to October. The County Council has committed to part finance the development and renovation costs of the building. The resource centre committee has also applied to the FÁS Community Employment Scheme (CES) to get local unemployed construction workers to renovate the building. This would help cover some of the costs. However, the committee knows that major fundraising will also have to be undertaken to cover the full renovation costs. They will also investigate the possibility of Lotto funding.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Explain the benefits the community resource centre will bring to the people of Glencar.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "One explanation ask; each response has one mark for stating and one for description. Printed support notes and allocation: Explain the benefits the community resource centre will bring to the people of Glencar. 6 Marks 1. It is a good facility for community groups, crèche, clubs, and local organisations to meet. 2. It provides a social outlet for retired groups, young and older people. 3. It could encourage a good community/entrepreneurial spirit in the area. 4. It may encourage the setting up of new clubs. 5. The resource centre/seasonal tourist office will benefit many local businesses/spin off business/indirect employment- cafes, tourist attractions, B & B’s and hotels. 6. Provide employment in the centre/direct employment. 7. Provides training/up skilling. 3 @ 2marks (1m for stating + 1m for description) Keep each response distinct and credit it only once. Complete original guidance: It is a good facility for community groups, crèche, clubs, and local organisations to meet. | It provides a social outlet for retired groups, young and older people. | It could encourage a good community/entrepreneurial spirit in the area. | It may encourage the setting up of new clubs. | The resource centre/seasonal tourist office will benefit many local businesses/spin off business/indirect employment- cafes, tourist attractions, B & B’s and hotels. | Provide employment in the centre/direct employment. | Provides training/up skilling.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Glencar Community Resource Centre — complete case study and chart",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          9
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-b2i",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "b2i-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "B",
+    "questionRef": "2012 CL Section B Q2(i)",
+    "questionText": "Outline two reasons why the County Council wants people from the local community and business groups to participate in the resource centre committee.",
+    "stem": "GLENCAR COMMUNITY RESOURCE CENTRE Glencar is a small town with a population of 2,200 people. The town has two primary schools, a secondary school and a community hospital catering for the town and the surrounding area. The Gaelic Athletic Association (GAA) is very active in the area, as well as a number of voluntary organisations and community organisations. A large privately owned building has recently been donated to the County Council on condition that it is turned into a community resource centre. The building has a large reception area, a big hall which, with alteration, would be suitable for staging shows or plays. This hall could also be used as a small sports hall. There are two small meeting rooms with computer facilities which could be used by local groups or for exhibitions. There are also two larger adjoining rooms with access to a garden area. The County Council has put together a committee to devise a development plan for the set up and subsequent running of the centre. Local community and business groups were approached to nominate members to this committee and the committee has met on a number of occasions. The committee’s first task was to survey local townspeople to help identify the community needs that the resource centre could meet. A survey was carried out on 100 local people who were asked to state which priority needs the community resource centre should meet. The findings are presented as follows:\n\nUses for Resource Centre: Creche 30; Youth Club/Café 20; Retirement Group 15; Meeting & Training Facilities 20; Recreational Classes 15.\n\nThe committee is currently analysing the findings of the survey. The committee members agree that the new community resource centre should be the focal point in the town. The County Council is happy to allow the committee to finalise the development plan for the centre. However, the Council has insisted that a seasonal tourist office be located in the main reception area of the building for the months of April to October. The County Council has committed to part finance the development and renovation costs of the building. The resource centre committee has also applied to the FÁS Community Employment Scheme (CES) to get local unemployed construction workers to renovate the building. This would help cover some of the costs. However, the committee knows that major fundraising will also have to be undertaken to cover the full renovation costs. They will also investigate the possibility of Lotto funding.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Outline two reasons why the County Council wants people from local community and business groups to participate in the resource centre committee.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": " Printed support notes and allocation: 1. The County Council needs to know what the local community and business groups want from the centre/involve them in making decisions about the development. 2. The large range of skills and talents within these groups will benefit the committee/costs reduced due to services provided by local people. 3. Business people have the business management and finance skills needed to ensure the success of the project. 4. Business groups may invest in the development of the centre/may sponsor activities in the centre/boost public relations. 5. Generates a better community spirit because if local people are involved from the outset they will be more positive about the community centre and their involvement/running of the centre. 2 @ 2 marks (1 + 1) Keep each response distinct and credit it only once. Complete original guidance: The County Council needs to know what the local community and business groups want from the centre/involve them in making decisions about the development. | The large range of skills and talents within these groups will benefit the committee/costs reduced due to services provided by local people. | Business people have the business management and finance skills needed to ensure the success of the project. | Business groups may invest in the development of the centre/may sponsor activities in the centre/boost public relations. | Generates a better community spirit because if local people are involved from the outset they will be more positive about the community centre and their involvement/running of the centre.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Glencar Community Resource Centre — complete case study and chart",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          10
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-b2ii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "b2ii-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "B",
+    "questionRef": "2012 CL Section B Q2(ii)",
+    "questionText": "Explain why it is important that the committee carried out market research before devising its plan.",
+    "stem": "GLENCAR COMMUNITY RESOURCE CENTRE Glencar is a small town with a population of 2,200 people. The town has two primary schools, a secondary school and a community hospital catering for the town and the surrounding area. The Gaelic Athletic Association (GAA) is very active in the area, as well as a number of voluntary organisations and community organisations. A large privately owned building has recently been donated to the County Council on condition that it is turned into a community resource centre. The building has a large reception area, a big hall which, with alteration, would be suitable for staging shows or plays. This hall could also be used as a small sports hall. There are two small meeting rooms with computer facilities which could be used by local groups or for exhibitions. There are also two larger adjoining rooms with access to a garden area. The County Council has put together a committee to devise a development plan for the set up and subsequent running of the centre. Local community and business groups were approached to nominate members to this committee and the committee has met on a number of occasions. The committee’s first task was to survey local townspeople to help identify the community needs that the resource centre could meet. A survey was carried out on 100 local people who were asked to state which priority needs the community resource centre should meet. The findings are presented as follows:\n\nUses for Resource Centre: Creche 30; Youth Club/Café 20; Retirement Group 15; Meeting & Training Facilities 20; Recreational Classes 15.\n\nThe committee is currently analysing the findings of the survey. The committee members agree that the new community resource centre should be the focal point in the town. The County Council is happy to allow the committee to finalise the development plan for the centre. However, the Council has insisted that a seasonal tourist office be located in the main reception area of the building for the months of April to October. The County Council has committed to part finance the development and renovation costs of the building. The resource centre committee has also applied to the FÁS Community Employment Scheme (CES) to get local unemployed construction workers to renovate the building. This would help cover some of the costs. However, the committee knows that major fundraising will also have to be undertaken to cover the full renovation costs. They will also investigate the possibility of Lotto funding.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Explain why it is important that the committee carried out market research before devising its plan.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": " Printed support notes and allocation: 1. To identify the needs of different groups in society so that they can focus their planning. 2. Make sure money is not wasted in providing services not demanded/already provided in the local area. 3. Consulting local people shows that their opinions matter and they are more likely to support centre when it is operational. 2 @ 2marks (1 + 1) Keep each response distinct and credit it only once. Complete original guidance: To identify the needs of different groups in society so that they can focus their planning. | Make sure money is not wasted in providing services not demanded/already provided in the local area. | Consulting local people shows that their opinions matter and they are more likely to support centre when it is operational.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Glencar Community Resource Centre — complete case study and chart",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          10
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-b2iii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "b2iii-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "B",
+    "questionRef": "2012 CL Section B Q2(iii)",
+    "questionText": "Select one of the community needs identified in the survey.",
+    "stem": "GLENCAR COMMUNITY RESOURCE CENTRE Glencar is a small town with a population of 2,200 people. The town has two primary schools, a secondary school and a community hospital catering for the town and the surrounding area. The Gaelic Athletic Association (GAA) is very active in the area, as well as a number of voluntary organisations and community organisations. A large privately owned building has recently been donated to the County Council on condition that it is turned into a community resource centre. The building has a large reception area, a big hall which, with alteration, would be suitable for staging shows or plays. This hall could also be used as a small sports hall. There are two small meeting rooms with computer facilities which could be used by local groups or for exhibitions. There are also two larger adjoining rooms with access to a garden area. The County Council has put together a committee to devise a development plan for the set up and subsequent running of the centre. Local community and business groups were approached to nominate members to this committee and the committee has met on a number of occasions. The committee’s first task was to survey local townspeople to help identify the community needs that the resource centre could meet. A survey was carried out on 100 local people who were asked to state which priority needs the community resource centre should meet. The findings are presented as follows:\n\nUses for Resource Centre: Creche 30; Youth Club/Café 20; Retirement Group 15; Meeting & Training Facilities 20; Recreational Classes 15.\n\nThe committee is currently analysing the findings of the survey. The committee members agree that the new community resource centre should be the focal point in the town. The County Council is happy to allow the committee to finalise the development plan for the centre. However, the Council has insisted that a seasonal tourist office be located in the main reception area of the building for the months of April to October. The County Council has committed to part finance the development and renovation costs of the building. The resource centre committee has also applied to the FÁS Community Employment Scheme (CES) to get local unemployed construction workers to renovate the building. This would help cover some of the costs. However, the committee knows that major fundraising will also have to be undertaken to cover the full renovation costs. They will also investigate the possibility of Lotto funding.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "need",
+        "kind": "anyN",
+        "verbatim": "Select a need.",
+        "marks": 2,
+        "openList": true,
+        "group": {
+          "claimMax": 1,
+          "perOption": 2,
+          "options": [
+            "Creche",
+            "Youth Club/Cafe",
+            "Retirement Group",
+            "Meeting/training facilities:",
+            "Recreational:"
+          ]
+        },
+        "contextNote": " Printed support notes and allocation: Select a need. 2 marks Implications for the committee of this choice. 2 @ 1m Valid implication to the need is required. Creche Trained staff are required. Specialist equipment may be needed. There are Health & Safety concerns. Youth Club/Cafe How will the youth club/cafe be staffed e.g.volunteers or paid staff. What age group will the club/cafe serve? There may be food hygiene issues or Health & Safety requirements. Specialist equipment may be needed. Retirement Group The garden will need maintenance. Computers will have to be provided and staff to teach IT skills may be required. The committee may have to decide on a variety of uses such as bowling, cards etc. Meeting/training facilities: Internet access will have to be provided. Equipment for meetings such as desks, chairs will be required. IT equipment e.g. computers, data projectors will be needed. Free parking and easy access to the building will be needed. Refreshments facilities are necessary for such a facility. The committee will receive revenue by using the centre in this way. Recreational: Different size rooms may be needed depending on the use. Should a full time manager be employed? The committee may decide that rooms can be hired by local groups. Shower facilities may be needed if sports activities are planned. The committee will need to determine the opening hours of the centre e.g. evenings and weekends."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Glencar Community Resource Centre — complete case study and chart",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          10
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-b2iii-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "b2iii-2012-source-second-ask",
+    "level": "common",
+    "year": 2012,
+    "section": "B",
+    "questionRef": "2012 CL Section B Q2(iii)",
+    "questionText": "What are the implications for the committee if they decide to provide that service?",
+    "stem": "GLENCAR COMMUNITY RESOURCE CENTRE Glencar is a small town with a population of 2,200 people. The town has two primary schools, a secondary school and a community hospital catering for the town and the surrounding area. The Gaelic Athletic Association (GAA) is very active in the area, as well as a number of voluntary organisations and community organisations. A large privately owned building has recently been donated to the County Council on condition that it is turned into a community resource centre. The building has a large reception area, a big hall which, with alteration, would be suitable for staging shows or plays. This hall could also be used as a small sports hall. There are two small meeting rooms with computer facilities which could be used by local groups or for exhibitions. There are also two larger adjoining rooms with access to a garden area. The County Council has put together a committee to devise a development plan for the set up and subsequent running of the centre. Local community and business groups were approached to nominate members to this committee and the committee has met on a number of occasions. The committee’s first task was to survey local townspeople to help identify the community needs that the resource centre could meet. A survey was carried out on 100 local people who were asked to state which priority needs the community resource centre should meet. The findings are presented as follows:\n\nUses for Resource Centre: Creche 30; Youth Club/Café 20; Retirement Group 15; Meeting & Training Facilities 20; Recreational Classes 15.\n\nThe committee is currently analysing the findings of the survey. The committee members agree that the new community resource centre should be the focal point in the town. The County Council is happy to allow the committee to finalise the development plan for the centre. However, the Council has insisted that a seasonal tourist office be located in the main reception area of the building for the months of April to October. The County Council has committed to part finance the development and renovation costs of the building. The resource centre committee has also applied to the FÁS Community Employment Scheme (CES) to get local unemployed construction workers to renovate the building. This would help cover some of the costs. However, the committee knows that major fundraising will also have to be undertaken to cover the full renovation costs. They will also investigate the possibility of Lotto funding. Select one of the community needs identified in the survey.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "implications",
+        "kind": "criterion",
+        "verbatim": "Implications for the committee of this choice.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Use the same selected need. Valid implication to the need is required. Printed support notes and allocation: Select a need. 2 marks Implications for the committee of this choice. 2 @ 1m Valid implication to the need is required. Creche Trained staff are required. Specialist equipment may be needed. There are Health & Safety concerns. Youth Club/Cafe How will the youth club/cafe be staffed e.g.volunteers or paid staff. What age group will the club/cafe serve? There may be food hygiene issues or Health & Safety requirements. Specialist equipment may be needed. Retirement Group The garden will need maintenance. Computers will have to be provided and staff to teach IT skills may be required. The committee may have to decide on a variety of uses such as bowling, cards etc. Meeting/training facilities: Internet access will have to be provided. Equipment for meetings such as desks, chairs will be required. IT equipment e.g. computers, data projectors will be needed. Free parking and easy access to the building will be needed. Refreshments facilities are necessary for such a facility. The committee will receive revenue by using the centre in this way. Recreational: Different size rooms may be needed depending on the use. Should a full time manager be employed? The committee may decide that rooms can be hired by local groups. Shower facilities may be needed if sports activities are planned. The committee will need to determine the opening hours of the centre e.g. evenings and weekends.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Glencar Community Resource Centre — complete case study and chart",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          10
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-b3i",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-0",
+    "conceptId": "b3i-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "B",
+    "questionRef": "2012 CL Section B Q3(i)",
+    "questionText": "What are the benefits for the local community of using the FÁS CES?",
+    "stem": "GLENCAR COMMUNITY RESOURCE CENTRE Glencar is a small town with a population of 2,200 people. The town has two primary schools, a secondary school and a community hospital catering for the town and the surrounding area. The Gaelic Athletic Association (GAA) is very active in the area, as well as a number of voluntary organisations and community organisations. A large privately owned building has recently been donated to the County Council on condition that it is turned into a community resource centre. The building has a large reception area, a big hall which, with alteration, would be suitable for staging shows or plays. This hall could also be used as a small sports hall. There are two small meeting rooms with computer facilities which could be used by local groups or for exhibitions. There are also two larger adjoining rooms with access to a garden area. The County Council has put together a committee to devise a development plan for the set up and subsequent running of the centre. Local community and business groups were approached to nominate members to this committee and the committee has met on a number of occasions. The committee’s first task was to survey local townspeople to help identify the community needs that the resource centre could meet. A survey was carried out on 100 local people who were asked to state which priority needs the community resource centre should meet. The findings are presented as follows:\n\nUses for Resource Centre: Creche 30; Youth Club/Café 20; Retirement Group 15; Meeting & Training Facilities 20; Recreational Classes 15.\n\nThe committee is currently analysing the findings of the survey. The committee members agree that the new community resource centre should be the focal point in the town. The County Council is happy to allow the committee to finalise the development plan for the centre. However, the Council has insisted that a seasonal tourist office be located in the main reception area of the building for the months of April to October. The County Council has committed to part finance the development and renovation costs of the building. The resource centre committee has also applied to the FÁS Community Employment Scheme (CES) to get local unemployed construction workers to renovate the building. This would help cover some of the costs. However, the committee knows that major fundraising will also have to be undertaken to cover the full renovation costs. They will also investigate the possibility of Lotto funding.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "What are the benefits for the local community of using the FAS CES.",
+        "marks": 3,
+        "openList": true,
+        "group": {
+          "claimMax": 3,
+          "perOption": 1,
+          "options": [
+            "Local people who are unemployed can get employment/alleviate social problems.",
+            "The committee can save money by using these workers as their wages are paid by FÁS.",
+            "This type of work might suit those who want to work part-time and remain in their local area.",
+            "The committee can avail of different types of workers.",
+            "Local people are trained/upskilled.",
+            "Community spirit created. Locals are seen working on the project."
+          ]
+        },
+        "contextNote": " Printed support notes and allocation: 1. Local people who are unemployed can get employment/alleviate social problems. 2. The committee can save money by using these workers as their wages are paid by FÁS. 3. This type of work might suit those who want to work part-time and remain in their local area. 4. The committee can avail of different types of workers. 5. Local people are trained/upskilled. 6. Community spirit created. Locals are seen working on the project. 3 @ 1m"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Glencar Community Resource Centre — complete case study and chart",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          11
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-b3ii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-3",
+    "conceptId": "b3ii-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "B",
+    "questionRef": "2012 CL Section B Q3(ii)",
+    "questionText": "Set out the Finance section of the Development Plan for the Glencar resource centre, covering the initial set up and subsequent running of the centre.",
+    "stem": "GLENCAR COMMUNITY RESOURCE CENTRE Glencar is a small town with a population of 2,200 people. The town has two primary schools, a secondary school and a community hospital catering for the town and the surrounding area. The Gaelic Athletic Association (GAA) is very active in the area, as well as a number of voluntary organisations and community organisations. A large privately owned building has recently been donated to the County Council on condition that it is turned into a community resource centre. The building has a large reception area, a big hall which, with alteration, would be suitable for staging shows or plays. This hall could also be used as a small sports hall. There are two small meeting rooms with computer facilities which could be used by local groups or for exhibitions. There are also two larger adjoining rooms with access to a garden area. The County Council has put together a committee to devise a development plan for the set up and subsequent running of the centre. Local community and business groups were approached to nominate members to this committee and the committee has met on a number of occasions. The committee’s first task was to survey local townspeople to help identify the community needs that the resource centre could meet. A survey was carried out on 100 local people who were asked to state which priority needs the community resource centre should meet. The findings are presented as follows:\n\nUses for Resource Centre: Creche 30; Youth Club/Café 20; Retirement Group 15; Meeting & Training Facilities 20; Recreational Classes 15.\n\nThe committee is currently analysing the findings of the survey. The committee members agree that the new community resource centre should be the focal point in the town. The County Council is happy to allow the committee to finalise the development plan for the centre. However, the Council has insisted that a seasonal tourist office be located in the main reception area of the building for the months of April to October. The County Council has committed to part finance the development and renovation costs of the building. The resource centre committee has also applied to the FÁS Community Employment Scheme (CES) to get local unemployed construction workers to renovate the building. This would help cover some of the costs. However, the committee knows that major fundraising will also have to be undertaken to cover the full renovation costs. They will also investigate the possibility of Lotto funding.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Set out the Finance Section of the Development Plan for Glencar resource centre, covering the initial set up and subsequent running of the centre.",
+        "marks": 9,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "contextNote": "Require two points on set up and one on running OR two on running and one on set up. No repetition. This is one finance-section output; the full seven printed examples remain. Printed support notes and allocation: 1. Set up the Finance sub-committee: Appoint a treasurer, decide who signs cheques etc. 2. Banking – Open a bank account/take out a loan. Decide which bank to use, decide on the type of account e.g.deposit, current account etc. 3. Apply for grants/CES Research what grants are available and how to apply. The finance committee need to establish what information is required in order to get Lotto funding. 4. Fundraising How it will be done, when it will happen and who will be in charg? How much will be raised and what will it be used for e.g. Capital costs or Current/running costs. 5. Budgeted start up costs: Layout design and who will carry out this work. Renovation costs, materials and furnishings 6. Budgeted daily running expenses of centre Staffing costs, heating & lighting, cleaning & maintenance need to be estimated. 7. Estimate income that can be generated from clubs, Estimating how much revenue can be earned from charging for meeting rooms. Identify any other sources of revenue. 9 marks 3 @ 3m (1 + 1 + 1) 2 points on set up + 1 on running Or 2 points on running + 1 on set up No repetition of points",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Glencar Community Resource Centre — complete case study and chart",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          11,
+          12
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-c1a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-1",
+    "conceptId": "c1a-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q1(a)",
+    "questionText": "Name four other ways jobs can be advertised.",
+    "stem": "The following job advertisement appeared in a national newspaper. Person required to join a Sales & Marketing Team. The successful applicant will be a creative individual with good interpersonal skills. Apply with Curriculum Vitae (including referees) and letter of application to: Human Resource Manager, Newsradio Ltd, Wicklow St, Dublin 2.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Name four other ways jobs can be advertised.",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 4,
+          "perOption": 1,
+          "options": [
+            "Internet/websites",
+            "Recruitment agencies",
+            "Job fairs",
+            "FAS training centres/offices",
+            "Notice board in shops/business/Billboard",
+            "Radio",
+            "TV",
+            "Magazines"
+          ]
+        },
+        "contextNote": " Printed support notes and allocation: Name four other ways jobs can be advertised. 4 marks 1. Internet/websites 2. Recruitment agencies 3. Job fairs 4. FAS training centres/offices 5. Notice board in shops/business/Billboard 6. Radio 7. TV 8. Magazines 4 @ 1m"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-text",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original Newsradio job advertisement",
+        "pages": [
+          14
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-c1bi",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c1bi-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q1(b)(i)",
+    "questionText": "Explain why Newsradio Ltd is seeking an employee with good interpersonal skills.",
+    "stem": "The following job advertisement appeared in a national newspaper. Person required to join a Sales & Marketing Team. The successful applicant will be a creative individual with good interpersonal skills. Apply with Curriculum Vitae (including referees) and letter of application to: Human Resource Manager, Newsradio Ltd, Wicklow St, Dublin 2.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Explain why Newsradio is seeking an employee with good interpersonal skills.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": " Printed support notes and allocation: Good interpersonal skills are important as the employee will be dealing with and communicating with different types of people and customers. Employees must work well with others and work well as part of a team. 2 @ 1m",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-text",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original Newsradio job advertisement",
+        "pages": [
+          14
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-c1bii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-1",
+    "conceptId": "c1bii-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q1(b)(ii)",
+    "questionText": "Explain why applicants are asked to submit references or name referees on their CV.",
+    "stem": "The following job advertisement appeared in a national newspaper. Person required to join a Sales & Marketing Team. The successful applicant will be a creative individual with good interpersonal skills. Apply with Curriculum Vitae (including referees) and letter of application to: Human Resource Manager, Newsradio Ltd, Wicklow St, Dublin 2.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Explain why applicants are asked to submit references or name referees on their CV.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": " Printed support notes and allocation: References are used to check the reliability of the potential employee/the quality of their work, suitability for the job etc/Referees provide vital information for a potential employer/verify that details given are correct 2@1m",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-text",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original Newsradio job advertisement",
+        "pages": [
+          14
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-c1c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-1",
+    "conceptId": "c1c-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q1(c)",
+    "questionText": "Write the letter of application for the position advertised.",
+    "stem": "The following job advertisement appeared in a national newspaper. Person required to join a Sales & Marketing Team. The successful applicant will be a creative individual with good interpersonal skills. Apply with Curriculum Vitae (including referees) and letter of application to: Human Resource Manager, Newsradio Ltd, Wicklow St, Dublin 2.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 9,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "contextNote": "One application letter. Sender’s address carries one printed mark; Addressee is also printed but has no separate award. Opening/closing share one printed mark. Date, reason, statement, enclosed CV, spelling, grammar and layout each carry one. No model letter is printed. Printed support notes and allocation: Write the letter of application for the position advertised. 9 Marks Sender’s address 1m Addressee Date 1m Spelling 1m Opening- Dear..} 1m Grammar 1m Closing- Yours..} Layout/Neatness 1m RE:/Reason why they are writing 1m Statement 1m Enclose CV 1m",
+        "parts": [
+          {
+            "id": "criterion-1",
+            "verbatim": "Sender’s address",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "criterion-2",
+            "verbatim": "Date",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "criterion-3",
+            "verbatim": "Opening- Dear.. / Closing- Yours..",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "criterion-4",
+            "verbatim": "RE:/Reason why they are writing",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "criterion-5",
+            "verbatim": "Statement",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "criterion-6",
+            "verbatim": "Enclose CV",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "criterion-7",
+            "verbatim": "Spelling",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "criterion-8",
+            "verbatim": "Grammar",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "criterion-9",
+            "verbatim": "Layout/Neatness",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ],
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        15
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-text",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original Newsradio job advertisement",
+        "pages": [
+          14
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-c1d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-1",
+    "conceptId": "c1d-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q1(d)",
+    "questionText": "Describe how to leave a lasting impression at an interview in order to improve your chances of success.",
+    "stem": "The following job advertisement appeared in a national newspaper. Person required to join a Sales & Marketing Team. The successful applicant will be a creative individual with good interpersonal skills. Apply with Curriculum Vitae (including referees) and letter of application to: Human Resource Manager, Newsradio Ltd, Wicklow St, Dublin 2.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Describe how to leave a lasting impression at an interview in order to improve your chances of success.",
+        "marks": 8,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "contextNote": " Printed support notes and allocation: Describe how to leave a lasting impression at an interview in order to improve your chances of success. 8 Marks 1. Turn up on time/be punctual. 2. Neat dress, portray a professional image/dressed appropriately/well groomed. 3. Be well prepared/know the facts about the company/review your CV/show that research on the job has been done. 4. Portray positive body language/shake hands/sit correctly/make eye contact/be courteous. 5. Speak clearly and slowly to ensure that the interviewer hears and understands all your answers. Appear confident. 6. Answer all the questions asked, ask for clarification if you do not understand what is being asked/have a intelligent question prepared. 4 @2 m (1 + 1) Keep each response distinct and credit it only once. Complete original guidance: Turn up on time/be punctual. | Neat dress, portray a professional image/dressed appropriately/well groomed. | Be well prepared/know the facts about the company/review your CV/show that research on the job has been done. | Portray positive body language/shake hands/sit correctly/make eye contact/be courteous. | Speak clearly and slowly to ensure that the interviewer hears and understands all your answers. Appear confident. | Answer all the questions asked, ask for clarification if you do not understand what is being asked/have a intelligent question prepared.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        16
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-text",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original Newsradio job advertisement",
+        "pages": [
+          14
+        ],
+        "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2012-cl-c2a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "c2a-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q2(a)",
+    "questionText": "Outline the reasons why people volunteer for community/charity organisations.",
+    "stem": "Volunteering is the practice of people working on behalf of others or for a particular cause, without payment for their time or service.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Outline the reasons why people volunteer for community/charity organisations.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": " Printed support notes and allocation: Outline the reasons why people volunteer for community/charity organisations. 4 marks 1. They want to make a difference and contribute to the community or society/provide better amenities/services for a group of people/improve life for a group of people. 2. People want to do something positive with their freetime/unemployment. 3. It can improve personal skills. 4. Individuals might want to take on a personal challenge or improve self esteem/personal satisfaction/Gaisce. 5. Family members may have benefited from this organisation. 6. Can improve CV/gain experience. 7. Social aspect/meeting new people/making friends. 2 @ 2m (1 + 1) Keep each response distinct and credit it only once. Complete original guidance: They want to make a difference and contribute to the community or society/provide better amenities/services for a group of people/improve life for a group of people. | People want to do something positive with their freetime/unemployment. | It can improve personal skills. | Individuals might want to take on a personal challenge or improve self esteem/personal satisfaction/Gaisce. | Family members may have benefited from this organisation. | Can improve CV/gain experience. | Social aspect/meeting new people/making friends.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        17
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c2b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "c2b-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q2(b)",
+    "questionText": "State and explain the responsibilities a volunteer has towards community/charity organisations.",
+    "stem": "Volunteering is the practice of people working on behalf of others or for a particular cause, without payment for their time or service.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "State and explain the responsibilities a volunteer has towards the community/charity organisation.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": " Printed support notes and allocation: State and explain the responsibilities a volunteer has towards the community/charity organisation. 6 marks 1. To respect the aims and values of the organisation. To behave at all times to uphold these values 2. To be committed to the work and do the work to a high standard/fundraising. 3. To attend all training sessions and put information received into practice at work. 4. To respect the confidentiality of the clients of the organisation. 5. Treat members/clients with respect and dignity. 6. Work well with other volunteers/team members. 7. Be trustworthy/reliable/punctual/dependable. Relevant valid expansion required 3 @ 2m (1 + 1) Keep each response distinct and credit it only once. Complete original guidance: To respect the aims and values of the organisation. To behave at all times to uphold these values | To be committed to the work and do the work to a high standard/fundraising. | To attend all training sessions and put information received into practice at work. | To respect the confidentiality of the clients of the organisation. | Treat members/clients with respect and dignity. | Work well with other volunteers/team members. | Be trustworthy/reliable/punctual/dependable.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "contextNote": "The notice concerns the additional valid expansion required by the scheme where a listed responsibility has no expanded explanation. All seven printed responsibilities and any printed elaborations remain. Do not invent an explanation or award a bare heading the explanation mark.",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        17
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c2c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "c2c-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q2(c)",
+    "questionText": "Describe the issues a community/charity organisation must consider before recruiting volunteers.",
+    "stem": "Volunteering is the practice of people working on behalf of others or for a particular cause, without payment for their time or service.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Describe the issues the community/charity organisation must consider before recruiting volunteers.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": " Printed support notes and allocation: Describe the issues the community/charity organisation must consider before recruiting volunteers. 6 marks 1. Have they proper policies, procedures and job descriptions in place? 2. Have they correct vetting procedures in place and who checks this? 3. They must provide proper insurance cover and safe working conditions. 4. They must ensure that there is adequate supervision, support/training and resources for volunteers. 5. What areas/jobs are the volunteers needed for and the skill set requires/numbers required. 3 @ 2m (1 + 1) Keep each response distinct and credit it only once. Complete original guidance: Have they proper policies, procedures and job descriptions in place? | Have they correct vetting procedures in place and who checks this? | They must provide proper insurance cover and safe working conditions. | They must ensure that there is adequate supervision, support/training and resources for volunteers. | What areas/jobs are the volunteers needed for and the skill set requires/numbers required.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        18
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c2d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "c2d-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q2(d)",
+    "questionText": "Describe how a community/charity organisation can evaluate the success of its use of volunteers.",
+    "stem": "Volunteering is the practice of people working on behalf of others or for a particular cause, without payment for their time or service.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "response-1",
+        "kind": "criterion",
+        "verbatim": "Describe how the community/charity organisation can evaluate the success of its use of volunteers.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 1 of 3.  Printed support notes and allocation: Describe how the community/charity organisation can evaluate the success of its use of volunteers. 9 marks 1. Review if the aims of organisation are being met e.g. are the needs of the organisation being met by the volunteers/is the organisation run effectively. They can check the level of volunteer involvement. 2. Check the retention level of volunteers. Do volunteers stay for a long-term and do they remain loyal to the organisation? 3. Survey the volunteers and see if they are satisified with the work and feel valued by the management of the organisation. Ascertain whether or not they feel supported and whether they are benefiting from volunteering for the organisation. 4. Have a group discussion of volunteers so that everyone can contribute. Ensure their opinions and feedback are spontaneous and honest. 5. Survey the clients/local community; are their clients satisfied with the services provided? What would they change? 3 @ 3m (1 + 2) Complete original guidance: Review if the aims of organisation are being met e.g. are the needs of the organisation being met by the volunteers/is the organisation run effectively. They can check the level of volunteer involvement. | Check the retention level of volunteers. Do volunteers stay for a long-term and do they remain loyal to the organisation? | Survey the volunteers and see if they are satisified with the work and feel valued by the management of the organisation. Ascertain whether or not they feel supported and whether they are benefiting from volunteering for the organisation. | Have a group discussion of volunteers so that everyone can contribute. Ensure their opinions and feedback are spontaneous and honest. | Survey the clients/local community; are their clients satisfied with the services provided? What would they change?",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-2",
+        "kind": "criterion",
+        "verbatim": "Describe how the community/charity organisation can evaluate the success of its use of volunteers.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 2 of 3.  Printed support notes and allocation: Describe how the community/charity organisation can evaluate the success of its use of volunteers. 9 marks 1. Review if the aims of organisation are being met e.g. are the needs of the organisation being met by the volunteers/is the organisation run effectively. They can check the level of volunteer involvement. 2. Check the retention level of volunteers. Do volunteers stay for a long-term and do they remain loyal to the organisation? 3. Survey the volunteers and see if they are satisified with the work and feel valued by the management of the organisation. Ascertain whether or not they feel supported and whether they are benefiting from volunteering for the organisation. 4. Have a group discussion of volunteers so that everyone can contribute. Ensure their opinions and feedback are spontaneous and honest. 5. Survey the clients/local community; are their clients satisfied with the services provided? What would they change? 3 @ 3m (1 + 2) Complete original guidance: Review if the aims of organisation are being met e.g. are the needs of the organisation being met by the volunteers/is the organisation run effectively. They can check the level of volunteer involvement. | Check the retention level of volunteers. Do volunteers stay for a long-term and do they remain loyal to the organisation? | Survey the volunteers and see if they are satisified with the work and feel valued by the management of the organisation. Ascertain whether or not they feel supported and whether they are benefiting from volunteering for the organisation. | Have a group discussion of volunteers so that everyone can contribute. Ensure their opinions and feedback are spontaneous and honest. | Survey the clients/local community; are their clients satisfied with the services provided? What would they change?",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-3",
+        "kind": "criterion",
+        "verbatim": "Describe how the community/charity organisation can evaluate the success of its use of volunteers.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 3 of 3.  Printed support notes and allocation: Describe how the community/charity organisation can evaluate the success of its use of volunteers. 9 marks 1. Review if the aims of organisation are being met e.g. are the needs of the organisation being met by the volunteers/is the organisation run effectively. They can check the level of volunteer involvement. 2. Check the retention level of volunteers. Do volunteers stay for a long-term and do they remain loyal to the organisation? 3. Survey the volunteers and see if they are satisified with the work and feel valued by the management of the organisation. Ascertain whether or not they feel supported and whether they are benefiting from volunteering for the organisation. 4. Have a group discussion of volunteers so that everyone can contribute. Ensure their opinions and feedback are spontaneous and honest. 5. Survey the clients/local community; are their clients satisfied with the services provided? What would they change? 3 @ 3m (1 + 2) Complete original guidance: Review if the aims of organisation are being met e.g. are the needs of the organisation being met by the volunteers/is the organisation run effectively. They can check the level of volunteer involvement. | Check the retention level of volunteers. Do volunteers stay for a long-term and do they remain loyal to the organisation? | Survey the volunteers and see if they are satisified with the work and feel valued by the management of the organisation. Ascertain whether or not they feel supported and whether they are benefiting from volunteering for the organisation. | Have a group discussion of volunteers so that everyone can contribute. Ensure their opinions and feedback are spontaneous and honest. | Survey the clients/local community; are their clients satisfied with the services provided? What would they change?",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        19
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c3a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-3",
+    "conceptId": "c3a-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q3(a)",
+    "questionText": "Name one LCVP team activity in which you were involved.",
+    "stem": "Teamwork is a major feature of modern working life and of most LCVP activities.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 1,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": " Printed support notes and allocation: Name one LCVP team activity you were involved with. 1 mark Any relevant activity. 1m",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        20
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c3b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c3b-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q3(b)",
+    "questionText": "Outline three benefits of teamwork in this LCVP activity.",
+    "stem": "Teamwork is a major feature of modern working life and of most LCVP activities. Name one LCVP team activity in which you were involved.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Outline three benefits of teamwork in this LCVP activity.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": " Printed support notes and allocation: Outline three benefits of teamwork in this LCVP activity. 6 marks 1. Goals are achieved faster and the work is shared/more work is done. 2. Decisions can be made or problems solved more quickly. 3. The responsibility is shared so no one person is under too much pressure/everyone takes ownership of the part of the task they are responsible for. 4. Members of a team will have a variety of strengths/skills or ideas/ Experience, skills shared/more ideas. 5. Disputes are avoided as communication is essential in team work/everyone has a say. 6. Pupils can work closely with those who have a common interest. 7. Communication/interpersonal skills are improved. 8. Pupils are more contented, as relationships with class members improve, better motivation. 3 @ 2m (1 + 1) Keep each response distinct and credit it only once. Complete original guidance: Goals are achieved faster and the work is shared/more work is done. | Decisions can be made or problems solved more quickly. | The responsibility is shared so no one person is under too much pressure/everyone takes ownership of the part of the task they are responsible for. | Members of a team will have a variety of strengths/skills or ideas/ Experience, skills shared/more ideas. | Disputes are avoided as communication is essential in team work/everyone has a say. | Pupils can work closely with those who have a common interest. | Communication/interpersonal skills are improved. | Pupils are more contented, as relationships with class members improve, better motivation.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        20
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c3c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c3c-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q3(c)",
+    "questionText": "Describe the characteristics of a successful team.",
+    "stem": "Teamwork is a major feature of modern working life and of most LCVP activities. Name one LCVP team activity in which you were involved.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Describe the characteristics of a successful team.",
+        "marks": 8,
+        "openList": true,
+        "group": {
+          "claimMax": 4,
+          "perOption": 2,
+          "options": [
+            "There are a range of talents or strengths/they should be versitile.",
+            "All members are very committed to a common goal/self motivated to achieve/planning.",
+            "The roles and responsibilities of team members are clearly defined.",
+            "All ideas and opinions are heard and valued/tolerate others views.",
+            "There is trust and cooperation between team members and there is a good atmosphere.",
+            "There is a strong leader to motivate and support all team members/sucess is recognised.",
+            "There is regular communication/consultation between team members/problem solving."
+          ]
+        },
+        "contextNote": " Printed support notes and allocation: Describe the characteristics of a successful team. 8 marks 1. There are a range of talents or strengths/they should be versitile. 2. All members are very committed to a common goal/self motivated to achieve/planning. 3. The roles and responsibilities of team members are clearly defined. 4. All ideas and opinions are heard and valued/tolerate others views. 5. There is trust and cooperation between team members and there is a good atmosphere. 6. There is a strong leader to motivate and support all team members/sucess is recognised. 7. There is regular communication/consultation between team members/problem solving. 4 @ 2m (0, 2)"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        21
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c3di",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c3di-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q3(d)(i)",
+    "questionText": "State and explain the difficulties/challenges associated with teamwork.",
+    "stem": "Teamwork is a major feature of modern working life and of most LCVP activities. Name one LCVP team activity in which you were involved.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "State and explain the difficulties/challenges associated with teamwork",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "State and explain: two responses at three marks, with printed 2+1. Keep the five paired challenge/response examples. No new semantic split is inferred within this printed part. Printed support notes and allocation: (i) State and explain the difficulties/challenges associated with teamwork (ii) Outline how these difficulties/challenges may be overcome. 10 marks 1. There may be some team members not pulling their weight. There should be regular meetings to review progress of team members or to clearly define their duties. 2. Team members may not be working well together/dominant personality/controlling/personality clash. Provide a team building excerise for members/bring in a mediator. 3. Disagreement Members discuss decisions and agree to commit to final decisions or some decisions remain flexible so that agreement can be reached. 4. It may be difficult to plan and co-ordinate the work of the team. A strong team leader is needed who clearly defines roles within the team/regular meeting. 5. There might be too much talking and not enough action/Lack of skill within the team. Training is needed. The importance of sticking to time schedules need to be clearly established. State and explain: 2 @ 3m (2 + 1) Overcoming: 2 @ 2m (0, 2)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        22
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c3dii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c3dii-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q3(d)(ii)",
+    "questionText": "Outline how these difficulties/challenges may be overcome.",
+    "stem": "Teamwork is a major feature of modern working life and of most LCVP activities. Name one LCVP team activity in which you were involved. State and explain the difficulties/challenges associated with teamwork.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Outline how these difficulties/challenges may be overcome.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          2,
+          4
+        ],
+        "contextNote": "Overcoming: two responses at two or zero marks. Use the challenges selected in part (i). No one-mark step or unprinted cross-part deduction. Printed support notes and allocation: (i) State and explain the difficulties/challenges associated with teamwork (ii) Outline how these difficulties/challenges may be overcome. 10 marks 1. There may be some team members not pulling their weight. There should be regular meetings to review progress of team members or to clearly define their duties. 2. Team members may not be working well together/dominant personality/controlling/personality clash. Provide a team building excerise for members/bring in a mediator. 3. Disagreement Members discuss decisions and agree to commit to final decisions or some decisions remain flexible so that agreement can be reached. 4. It may be difficult to plan and co-ordinate the work of the team. A strong team leader is needed who clearly defines roles within the team/regular meeting. 5. There might be too much talking and not enough action/Lack of skill within the team. Training is needed. The importance of sticking to time schedules need to be clearly established. State and explain: 2 @ 3m (2 + 1) Overcoming: 2 @ 2m (0, 2)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        22
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c4a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-3",
+    "conceptId": "c4a-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q4(a)",
+    "questionText": "Outline why planning is so important in setting up and running an enterprise activity.",
+    "stem": "Planning is essential in setting up and running an enterprise activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Outline why planning is so important in setting up and running an enterprise activity.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": " Printed support notes and allocation: Outline why planning is so important in setting up and running an enterprise activity. 4 Marks 1. Aims and activities are established clearly. 2. Everyone knows what they are working towards. 3. You can check the progress of the activity against the plan/to see if any changes are needed/make decisions. 4. It allows a time frame and deadlines which keeps everyone on track. 5. To draw up budgets/schedule of costs/be aware of financial requirements/resources needed/required when applying for a loan or a grant. 6. Carry out SWOT analysis, look at competition, identify weaknesses/anticipate problems. 2 @ 2m (1 + 1) Keep each response distinct and credit it only once. Complete original guidance: Aims and activities are established clearly. | Everyone knows what they are working towards. | You can check the progress of the activity against the plan/to see if any changes are needed/make decisions. | It allows a time frame and deadlines which keeps everyone on track. | To draw up budgets/schedule of costs/be aware of financial requirements/resources needed/required when applying for a loan or a grant. | Carry out SWOT analysis, look at competition, identify weaknesses/anticipate problems.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        23
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c4b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c4b-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q4(b)",
+    "questionText": "State two research methods used when planning an enterprise activity.",
+    "stem": "Planning is essential in setting up and running an enterprise activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "methods",
+        "kind": "anyN",
+        "verbatim": "State two research methods",
+        "marks": 2,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "Telephone call, face to face meetings, talking with school Principal and teachers and anyone else involved.",
+            "Survey/Questionaire/Sugggestion Box",
+            "Internet",
+            "Brainstorming/Class Discussion/Group discussion",
+            "Publications"
+          ]
+        },
+        "contextNote": "Proposed name allocation from the printed 2@3m(1+2), awaiting consistency adjudication. Printed support notes and allocation: State two research methods used when planning this activity. Analyse the usefulness of each method used. 6 Marks 1. Telephone call, face to face meetings, talking with school Principal and teachers and anyone else involved. Information can be requested directly. Answers are instant answer. Clarification can be provided if needed/questions explained. Easy to do. 2. Survey/Questionaire/Sugggestion Box It is inexpensive to carry out. Different types of information can be gathered easily. It is quick to administer and answers can be collated easily. Anonymous. Good response rate. 3. Internet A wide variety of information can be accessed. This can be done from your desk at any time of the day or night. It is inexpensive to carry out this type of research. (Information may not be specific to the needs of the activity/hard to filter information) 4. Brainstorming/Class Discussion/Group discussion The entire class can be involved. Everyone can give their opinion on ideas being expressed. It is quick to administer and can be done in a single session. 5.Publications Library free to access Different types of information can be accessed **Also accept valid critisism with an expansion 2 @ 3m (1 + 2)"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        23
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c4b-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c4b-2012-source-second-ask",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q4(b)",
+    "questionText": "Analyse the usefulness of each research method used.",
+    "stem": "Planning is essential in setting up and running an enterprise activity. State two research methods used when planning an enterprise activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "usefulness",
+        "kind": "criterion",
+        "verbatim": "Analyse the usefulness of each method used.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": "Use the same two research methods. Keep all positive details and the acceptance of valid criticism with expansion. Proposed 2+4 split awaits adjudication. Printed support notes and allocation: State two research methods used when planning this activity. Analyse the usefulness of each method used. 6 Marks 1. Telephone call, face to face meetings, talking with school Principal and teachers and anyone else involved. Information can be requested directly. Answers are instant answer. Clarification can be provided if needed/questions explained. Easy to do. 2. Survey/Questionaire/Sugggestion Box It is inexpensive to carry out. Different types of information can be gathered easily. It is quick to administer and answers can be collated easily. Anonymous. Good response rate. 3. Internet A wide variety of information can be accessed. This can be done from your desk at any time of the day or night. It is inexpensive to carry out this type of research. (Information may not be specific to the needs of the activity/hard to filter information) 4. Brainstorming/Class Discussion/Group discussion The entire class can be involved. Everyone can give their opinion on ideas being expressed. It is quick to administer and can be done in a single session. 5.Publications Library free to access Different types of information can be accessed **Also accept valid critisism with an expansion 2 @ 3m (1 + 2)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        23
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c4c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-3",
+    "conceptId": "c4c-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q4(c)",
+    "questionText": "Name two Leaving Certificate subjects that helped you in completing your part in the class enterprise activity.",
+    "stem": "Planning is essential in setting up and running an enterprise activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Naming subject, one mark for each of two subjects. Printed support notes and allocation: Name two Leaving Certificate subjects that helped you in completing your part in the class enterprise activity. Give a reason for each choice. 6 Marks Naming subject 1m Valid Reason for choosing the subject 2m 2 @ 3m (1 + 2)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ],
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        24
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c4c-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-3",
+    "conceptId": "c4c-2012-source-second-ask",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q4(c)",
+    "questionText": "Give a reason for each subject choice.",
+    "stem": "Planning is essential in setting up and running an enterprise activity. Name two Leaving Certificate subjects that helped you in completing your part in the class enterprise activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": "Valid reason for each same subject, two marks each. Printed support notes and allocation: Name two Leaving Certificate subjects that helped you in completing your part in the class enterprise activity. Give a reason for each choice. 6 Marks Naming subject 1m Valid Reason for choosing the subject 2m 2 @ 3m (1 + 2)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ],
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        24
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c4di",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-3",
+    "conceptId": "c4di-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q4(d)(i)",
+    "questionText": "Describe the different areas of the enterprise activity that need to be evaluated.",
+    "stem": "Planning is essential in setting up and running an enterprise activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Describe the different areas of the enterprise activity that need to be evaluated",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Three areas, one mark each. The paired printed (ii) receives the separate six marks. Printed support notes and allocation: Review and evaluation is important at the end of an activity. (i) Describe the different areas of the enterprise activity that need to be evaluated (ii) Explain why each of these different areas should be evaluated. 9 Marks 1. Were the aims achieved/Did the activity go to plan/Was the correct product produced- This shows that they were realistic. 2. Were clients/teachers/students satisfied with the activity? 3. Teamwork/group performance, did all the class participate in the activity? 4. Time management – were the time schedules adhered to? 5. Costs – did the class keep within budget/make the expected profit. 6. New skills learnt/developed. 3 @ 3m 1 + 2m (0, 2)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        24,
+        25
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c4dii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-3",
+    "conceptId": "c4dii-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q4(d)(ii)",
+    "questionText": "Explain why each of these different areas should be evaluated.",
+    "stem": "Planning is essential in setting up and running an enterprise activity. Describe the different areas of the enterprise activity that need to be evaluated.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Explain why each of these different areas should be evaluated.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          2,
+          4,
+          6
+        ],
+        "contextNote": "Three reasons, two or zero marks each. Keep the selected areas from (i). The first printed example explains that meeting the aims shows they were realistic. Printed support notes and allocation: Review and evaluation is important at the end of an activity. (i) Describe the different areas of the enterprise activity that need to be evaluated (ii) Explain why each of these different areas should be evaluated. 9 Marks 1. Were the aims achieved/Did the activity go to plan/Was the correct product produced- This shows that they were realistic. 2. Were clients/teachers/students satisfied with the activity? 3. Teamwork/group performance, did all the class participate in the activity? 4. Time management – were the time schedules adhered to? 5. Costs – did the class keep within budget/make the expected profit. 6. New skills learnt/developed. 3 @ 3m 1 + 2m (0, 2)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "contextNote": "Only option 1 gives a why-statement. Options 2–6 name evaluation areas without explaining why; this notice applies to those missing explanations. Keep every original area and the complete first example.",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        24,
+        25
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c5a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "c5a-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q5(a)",
+    "questionText": "Name a local commercial business enterprise",
+    "stem": "An investigation into a local commercial business enterprise gives students a clearer understanding of the reality of running a business.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 1,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": "Name: one mark. Printed support notes and allocation: Name a local commercial business and identify the product/service it produces. 3 marks Name 1m Products/service 2m",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        26
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c5a-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "c5a-2012-source-second-ask",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q5(a)",
+    "questionText": "and identify the product/service it produces.",
+    "stem": "An investigation into a local commercial business enterprise gives students a clearer understanding of the reality of running a business. Name a local commercial business enterprise",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          2
+        ],
+        "contextNote": "Product/service: two marks; the same named business. No intermediate award is printed. Printed support notes and allocation: Name a local commercial business and identify the product/service it produces. 3 marks Name 1m Products/service 2m",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        26
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c5b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "c5b-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q5(b)",
+    "questionText": "Identify two agencies which provide support for business start-ups.",
+    "stem": "An investigation into a local commercial business enterprise gives students a clearer understanding of the reality of running a business.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "agencies",
+        "kind": "anyN",
+        "verbatim": "Name agency",
+        "marks": 2,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "County Enterprise Boards",
+            "Enterprise Ireland",
+            "Local Area Partnerships",
+            "Leader Plus",
+            "FAS/Solas",
+            "Udaras na Gaeltachta",
+            "IDA Ireland",
+            "Teagasc",
+            "Failte Ireland"
+          ]
+        },
+        "contextNote": " Printed support notes and allocation: Identify two agencies which provide support for business start-ups. Outline the type of support offered by each of these agencies. 6 Marks Name agency 1m Type of support 2 @ 1m 1. County Enterprise Boards Mentoring services Gives advice Start your own business courses Grants for feasibility studies Capital grants for capital equipment/costs 2. Enterprise Ireland Offers grants Gives advice 3. Local Area Partnerships 4. Leader Plus Grants Advice for new business in certain urban or rural areas or for certain types of business Provide premises Workshops/training 5. FAS/Solas They provide training in certain areas They work with local colleges providing courses Employers can advertise jobs in their offices. 6. Udaras na Gaeltachta 7. IDA Ireland 8. Teagasc 9. Failte Ireland"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        26
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c5b-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "c5b-2012-source-second-ask",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q5(b)",
+    "questionText": "Outline the type of support offered by each of these agencies.",
+    "stem": "An investigation into a local commercial business enterprise gives students a clearer understanding of the reality of running a business. Identify two agencies which provide support for business start-ups.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "agency-1-support",
+        "kind": "criterion",
+        "verbatim": "Type of support",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "First selected agency: two one-mark support details. Keep each support attached to its agency; do not transfer a printed example between agencies. Printed support notes and allocation: Identify two agencies which provide support for business start-ups. Outline the type of support offered by each of these agencies. 6 Marks Name agency 1m Type of support 2 @ 1m 1. County Enterprise Boards Mentoring services Gives advice Start your own business courses Grants for feasibility studies Capital grants for capital equipment/costs 2. Enterprise Ireland Offers grants Gives advice 3. Local Area Partnerships 4. Leader Plus Grants Advice for new business in certain urban or rural areas or for certain types of business Provide premises Workshops/training 5. FAS/Solas They provide training in certain areas They work with local colleges providing courses Employers can advertise jobs in their offices. 6. Udaras na Gaeltachta 7. IDA Ireland 8. Teagasc 9. Failte Ireland",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "agency-2-support",
+        "kind": "criterion",
+        "verbatim": "Type of support",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Second selected agency: two one-mark support details. Use a different agency from the first response. Printed support notes and allocation: Identify two agencies which provide support for business start-ups. Outline the type of support offered by each of these agencies. 6 Marks Name agency 1m Type of support 2 @ 1m 1. County Enterprise Boards Mentoring services Gives advice Start your own business courses Grants for feasibility studies Capital grants for capital equipment/costs 2. Enterprise Ireland Offers grants Gives advice 3. Local Area Partnerships 4. Leader Plus Grants Advice for new business in certain urban or rural areas or for certain types of business Provide premises Workshops/training 5. FAS/Solas They provide training in certain areas They work with local colleges providing courses Employers can advertise jobs in their offices. 6. Udaras na Gaeltachta 7. IDA Ireland 8. Teagasc 9. Failte Ireland",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "contextNote": "No support examples are printed for Local Area Partnerships, Udaras na Gaeltachta, IDA Ireland, Teagasc or Failte Ireland. All nine names and the full four printed support pools remain.",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        26
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c5c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c5c-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q5(c)",
+    "questionText": "Your class has decided to invite a business owner to speak to the LCVP class. Draft the agenda for the first meeting to organise the visit-in.",
+    "stem": "An investigation into a local commercial business enterprise gives students a clearer understanding of the reality of running a business.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 7,
+    "rows": [
+      {
+        "id": "heading",
+        "kind": "point",
+        "verbatim": "Heading",
+        "marks": 1
+      },
+      {
+        "id": "layout",
+        "kind": "point",
+        "verbatim": "Layout/numbered points",
+        "marks": 1
+      },
+      {
+        "id": "election",
+        "kind": "point",
+        "verbatim": "Election of committee *",
+        "marks": 1,
+        "contextNote": "* Compulsory point"
+      },
+      {
+        "id": "other-items",
+        "kind": "anyN",
+        "verbatim": "Your class has decided to invite a business owner to speak to the LCVP class. Draft the agenda for the first meeting to organise the visit-in.",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 4,
+          "perOption": 1,
+          "options": [
+            "Draw up list of jobs to be done/permission from the principal.",
+            "Decide on date & time of visit/speaker",
+            "Discuss budget/costs",
+            "Divide up jobs to be done",
+            "AOB",
+            "Arrange the next meeting"
+          ]
+        },
+        "contextNote": "Election of committee is compulsory; choose four other distinct items. One seven-mark agenda. Printed support notes and allocation: Your class has decided to invite a business owner to speak to the LCVP class. Draft the agenda for the first meeting to organise this visit-in. 7 Marks Heading 1m Layout/numbered points 1m Agenda 1. Election of committee * 2. Draw up list of jobs to be done/permission from the principal. 3. Decide on date & time of visit/speaker 4. Discuss budget/costs 5. Divide up jobs to be done 6. AOB 7. Arrange the next meeting 5 @ 1m * Compulsory point"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        27
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c5di",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c5di-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q5(d)(i)",
+    "questionText": "What steps should be taken to ensure the success of the visit-in?",
+    "stem": "An investigation into a local commercial business enterprise gives students a clearer understanding of the reality of running a business.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 5,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "What steps should be taken to ensure the success of the visit-in?",
+        "marks": 5,
+        "openList": true,
+        "group": {
+          "claimMax": 5,
+          "perOption": 1,
+          "options": [
+            "Select a good speaker.",
+            "Talk to speaker in advance so you know their requirements/confirm arrangements",
+            "Make sure room is prepared correctly",
+            "Check permission for visit with Principal",
+            "Set up and check AV equipment in advance.",
+            "Allow adequate time for the visit.",
+            "Be clear on who is responsible for the different tasks.Committee in place.",
+            "Do some research/Have questions prepared in advance."
+          ]
+        },
+        "contextNote": " Printed support notes and allocation: 1. Select a good speaker. 2. Talk to speaker in advance so you know their requirements/confirm arrangements 3. Make sure room is prepared correctly 4. Check permission for visit with Principal 5. Set up and check AV equipment in advance. 6. Allow adequate time for the visit. 7. Be clear on who is responsible for the different tasks.Committee in place. 8. Do some research/Have questions prepared in advance. 5 @ 1m"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        28
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c5dii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "c5dii-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q5(d)(ii)",
+    "questionText": "Outline the most important factors for the successful running of a business.",
+    "stem": "An investigation into a local commercial business enterprise gives students a clearer understanding of the reality of running a business.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Outline the most important factors for the successful running of a business.",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "Financial- be realistic about the budgets.",
+            "Make realistic Plans and keep to them.",
+            "Do your research to have appropriate service/product.",
+            "Employees need to be reliable, properly trained.",
+            "Location of the business/near markets/good infrastructure.",
+            "Good management/leadership + valid expansion."
+          ]
+        },
+        "contextNote": " Printed support notes and allocation: 1. Financial- be realistic about the budgets. 2. Make realistic Plans and keep to them. 3. Do your research to have appropriate service/product. 4. Employees need to be reliable, properly trained. 5. Location of the business/near markets/good infrastructure. 6. Good management/leadership + valid expansion. 2 @ 2m (0, 2)"
+      },
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "contextNote": "This notice applies only to the unprinted valid expansion in option 6, Good management/leadership. All six printed options remain; each response receives two or zero marks.",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        28
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c6a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-0",
+    "conceptId": "c6a-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q6(a)",
+    "questionText": "‘Diversity in the workplace is encouraged in the modern working environment.’ Explain what is meant by diversity in the workplace.",
+    "stem": "The working world has changed in recent years.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Diversity in the workplace is encouraged in the modern working environment. Explain what is meant by diversity in the work place.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "One definition. The scheme gives one mark for Mix of people and one each for two examples; keep all examples in its full sentence. Printed support notes and allocation: Diversity in the workplace is encouraged in the modern working environment. Explain what is meant by diversity in the work place. 3 Marks There is a large mix of people working, male, female, young old, from different countries, ablebodied and having special needs. Mix of people 1m + 2 examples @ 1m each",
+        "parts": [
+          {
+            "id": "mix-of-people",
+            "verbatim": "Mix of people",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "example-1",
+            "verbatim": "Example 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "example-2",
+            "verbatim": "Example 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        29
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c6b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-0",
+    "conceptId": "c6b-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q6(b)",
+    "questionText": "Outline the benefits that diversity in the workplace might bring to an organisation.",
+    "stem": "The working world has changed in recent years.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "response-1",
+        "kind": "criterion",
+        "verbatim": "Explain the benefits that diversity in the workplace might bring.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 1 of 2.  Printed support notes and allocation: Explain the benefits that diversity in the workplace might bring. 6 Marks 1. Younger employees can learn from older employees, vice versa. 2. Employees come from different backgrounds so will have a different outlook/viewpoint, which may help in decision making. 3. You learn tolerance /no one person is better than another. 4. Different work attitudes will have a positive affect on others. 5. Improve a variety of skills eg languages. 2 @ 3m (2 + 1) Complete original guidance: Younger employees can learn from older employees, vice versa. | Employees come from different backgrounds so will have a different outlook/viewpoint, which may help in decision making. | You learn tolerance /no one person is better than another. | Different work attitudes will have a positive affect on others. | Improve a variety of skills eg languages.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-2",
+        "kind": "criterion",
+        "verbatim": "Explain the benefits that diversity in the workplace might bring.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 2 of 2.  Printed support notes and allocation: Explain the benefits that diversity in the workplace might bring. 6 Marks 1. Younger employees can learn from older employees, vice versa. 2. Employees come from different backgrounds so will have a different outlook/viewpoint, which may help in decision making. 3. You learn tolerance /no one person is better than another. 4. Different work attitudes will have a positive affect on others. 5. Improve a variety of skills eg languages. 2 @ 3m (2 + 1) Complete original guidance: Younger employees can learn from older employees, vice versa. | Employees come from different backgrounds so will have a different outlook/viewpoint, which may help in decision making. | You learn tolerance /no one person is better than another. | Different work attitudes will have a positive affect on others. | Improve a variety of skills eg languages.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        29
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c6c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-0",
+    "conceptId": "c6c-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q6(c)",
+    "questionText": "Employers have very clear legal responsibilities in relation to employing young workers (under 18 years of age). Outline four of these responsibilities.",
+    "stem": "The working world has changed in recent years.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Employers have very clear legal responsibilities in relation to employing young workers (under 18 years of age). Outline four of these responsibilities.",
+        "marks": 8,
+        "openList": true,
+        "group": {
+          "claimMax": 4,
+          "perOption": 2,
+          "options": [
+            "Employer must keep copy of birth cert/passport for all those under 18.",
+            "Detailed records must be kept, name, DOB, start time, end time, pay rate.",
+            "Compliance with law eg. early morning start times and late evening finishing/holidays.",
+            "Breaks. Young workers are entitled to more frequent breaks than older employees.",
+            "Written permission is required(u16)/consent of parent/guardian."
+          ]
+        },
+        "contextNote": " Printed support notes and allocation: Employers have very clear legal responsibilities in relation to employing young workers (under 18 years of age). Outline four of these responsibilities. 8 Marks 1. Employer must keep copy of birth cert/passport for all those under 18. 2. Detailed records must be kept, name, DOB, start time, end time, pay rate. 3. Compliance with law eg. early morning start times and late evening finishing/holidays. 4. Breaks. Young workers are entitled to more frequent breaks than older employees. 5. Written permission is required(u16)/consent of parent/guardian. 4 @ 2m (0, 2)"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        30
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2012-cl-c6d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-0",
+    "conceptId": "c6d-2012-source",
+    "level": "common",
+    "year": 2012,
+    "section": "C",
+    "questionRef": "2012 CL Section C Q6(d)",
+    "questionText": "State and explain the responsibilities of workers with regard to Health and Safety in the workplace.",
+    "stem": "The working world has changed in recent years.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "State and explain the responsibilities of workers with regard to Health and Safety in the workplace.",
+        "marks": 8,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "contextNote": " Printed support notes and allocation: State and explain the responsibilities of workers with regard to Health and Safety in the workplace. 8 Marks 1. To follow all safety instructions/guidelines/procedures. 2. Use machinery & equipment correctly. 3. Wear all protective clothing etc.. 4. Report all accidents and safety hazards to management. 5. Attend all safety training and practice skills/knowledge in work. 6. Treat all others with respect. Do not bully in the workplace. 7. Read the safety statement/notices and adhere to them. 4 @ 2m (1 + 1) Keep each response distinct and credit it only once. Complete original guidance: To follow all safety instructions/guidelines/procedures. | Use machinery & equipment correctly. | Wear all protective clothing etc.. | Report all accidents and safety hazards to management. | Attend all safety training and practice skills/knowledge in work. | Treat all others with respect. Do not bully in the workplace. | Read the safety statement/notices and adhere to them.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2012 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        31
+      ],
+      "attribution": "SEC LCVP Link Modules 2012 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  }
+]

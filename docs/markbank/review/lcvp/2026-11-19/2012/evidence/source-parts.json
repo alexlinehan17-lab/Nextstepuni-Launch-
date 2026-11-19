@@ -1,0 +1,781 @@
+{
+  "recordedAt": "2026-11-19T18:47:23.702407+00:00",
+  "status": "Source preparation only; no production writes.",
+  "sourceSha256": {
+    "paper": "26f7d6e54302fa61029046dd8183634ff3c62120b34a16a656dfb06a592e76e9",
+    "case": "9ee1fa88948caf8b453fbde59d0ec4ea9e75eb2e7f1491c9ad83fdee978e8e74",
+    "scheme": "02b7bb8646d5f7450f2cec19b624f056a6980e420323695770da737a223c5e2b"
+  },
+  "printedParts": 42,
+  "proposedAsks": 47,
+  "offeredMarks": 210,
+  "candidateMaximum": 160,
+  "pending": "Five headings need third reading. Generic split consistency and fresh R4 archive recheck remain pending.",
+  "records": [
+    {
+      "id": "lcvp-2012-cl-a1",
+      "ref": "A1",
+      "questionText": "What is the name of the company where Dermot works?",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "sourceSchemeBlock": "What is the name of the company where Dermots works?                         1 mark\n\n      Dermot works for RP Restorations.\n",
+      "proposedCardMarks": [
+        1
+      ],
+      "sourceSchemePrompt": "What is the name of the company where Dermots works?",
+      "firstReaderHeading": "link-modules-common-audio-visual",
+      "sourceDecision": "Company name; one printed answer."
+    },
+    {
+      "id": "lcvp-2012-cl-a2",
+      "ref": "A2",
+      "questionText": "State Dermot’s qualifications.",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "sourceSchemeBlock": "State Dermot’s qualifications?                                               2 marks\n\n    He has completed his Leaving Certificate. He studied engineering in college and achieved a\n      qualification in Historical Building Conservation in London.\n                                                                            2 @ 1m\n",
+      "proposedCardMarks": [
+        2
+      ],
+      "sourceSchemePrompt": "State Dermot’s qualifications?",
+      "firstReaderHeading": "link-modules-common-1-career-investigation",
+      "sourceDecision": "Retain the full two printed qualification sentences with2 @1m. Do not turn studied engineering into an invented third separately marked qualification."
+    },
+    {
+      "id": "lcvp-2012-cl-a3",
+      "ref": "A3",
+      "questionText": "Describe Dermot’s role as a ‘Project Manager’.",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "sourceSchemeBlock": "Describe Dermot’s role as Project Manager.                                    3 marks\n\n      1.   He has to plan and manage the restoration project from beginning to end.\n      2.   He has to keep everything running smoothly.\n      3.   He has to make sure they stay on time and on budget.\n     4   He has to make sure all the different people on site communicate with each other.\n      5.   He manages a large team.\n                                                                            3 @ 1m\n",
+      "proposedCardMarks": [
+        3
+      ],
+      "sourceSchemePrompt": "Describe Dermot’s role as Project Manager.",
+      "firstReaderHeading": "link-modules-common-2-enterprise-skills",
+      "sourceDecision": "3 @ 1m; five project-manager role options."
+    },
+    {
+      "id": "lcvp-2012-cl-a4",
+      "ref": "A4",
+      "questionText": "Explain why Dermot felt the need to arrange a meeting with Tom.",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "sourceSchemeBlock": "Explain why Dermot felt the need to arrange a meeting with Tom.                  4 marks\n\n      1.   To determine how Tom is getting on with the team.\n      2.   Dermot has received complaints from other workers about him, stating that his attitude is\n            affecting their work.\n      3.   The job is behind schedule which is affecting others.\n      4.    Progress reports are not filed on time which affects planning for the following week.\n      5.    Clients have noticed a bad atmosphere on site/There is a bad atmosphere on site.\n      6.    Afraid workers will down tools.\n                                                                            4 @ 1m\n",
+      "proposedCardMarks": [
+        4
+      ],
+      "sourceSchemePrompt": "Explain why Dermot felt the need to arrange a meeting with Tom.",
+      "firstReaderHeading": "link-modules-common-2-enterprise-skills",
+      "sourceDecision": "4 @ 1m; six reasons for the meeting."
+    },
+    {
+      "id": "lcvp-2012-cl-a5",
+      "ref": "A5",
+      "questionText": "Describe how Tom might benefit from his meeting with Dermot.",
+      "paperPages": [
+        4,
+        5
+      ],
+      "schemePages": [
+        5
+      ],
+      "sourceSchemeBlock": "Describe how Tom might benefit from his meeting with Dermot.                   4 marks\n\n      1.   Tom can give feedback on his perceptions of how the the job is going/discuss working\n           conditions/pay/he can air his grievances.\n      2.   Tom can receive feedback from Dermot/develop a better relationship with Dermot/co-workers.\n      3.   He can get negative feedback in private, which saves face.\n      4.   Tom will be given the opportunity to improve his IT skills through training.\n      5.   Due to the weekly meetings with Dermot, Tom should feel less stressed.\n                                                                            4 @ 1m\n",
+      "proposedCardMarks": [
+        4
+      ],
+      "sourceSchemePrompt": "Describe how Tom might benefit from his meeting with Dermot.",
+      "firstReaderHeading": "link-modules-common-1-introduction-to-working-life",
+      "sourceDecision": "4 @ 1m; five employee-benefit options."
+    },
+    {
+      "id": "lcvp-2012-cl-a6",
+      "ref": "A6",
+      "questionText": "What could Dermot have done to reduce Tom’s stress levels on this particular project?",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "sourceSchemeBlock": "What could Dermot have done to reduce Tom’s stress levels on this particular project?  4 marks\n\n      1.   He should have regular meetings from the beginning of the project to make sure that everyone is\n            clear on all aspects of the job.\n      2.   He could have provided proper IT training from the outset + valid expansion.\n      3.   He should have made sure the schedule was more realistic + valid expansion.\n      4.    Proper planning at the beginning would have meant revisions would be kept to a minimum.\n                                                                            2 @ 2m\n                                                                                           (1 + 1)\n",
+      "proposedCardMarks": [
+        4
+      ],
+      "sourceSchemePrompt": "What could Dermot have done to reduce Tom’s stress levels on this particular project?",
+      "firstReaderHeading": "link-modules-common-2-enterprise-skills",
+      "sourceDecision": "2 @ 2m (1 + 1); four management/planning responses."
+    },
+    {
+      "id": "lcvp-2012-cl-a7",
+      "ref": "A7",
+      "questionText": "Why is it necessary for managers like Dermot to have good communication skills? Explain your answer.",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        6
+      ],
+      "sourceSchemeBlock": "Why is it necessary for managers like Dermot to have good communication skills?  Explain your\n     answer.                                                                 6 marks\n\n      1.   Because he has to deal with lots of different people, eg line workers, supervisors,clients. He\n           also-need to control and manage teams on site.\n      2.   He has to deal with employee issues such as: conflicts, individuals whose work may be below\n            standard.\n      3.   As a manager he must appear confident in order to show his authority.\n      4.   He needs to talk to his workers, become aware of problems before they get out of control/affect\n            the work being done.\n      5.   He needs to listen to his workers, to tap into the expertise of the workforce, identify training\n           needs.\n                                                                            3 @ 2m\n                                                                                           (1 + 1)\n",
+      "proposedCardMarks": [
+        6
+      ],
+      "sourceSchemePrompt": "Why is it necessary for managers like Dermot to have good communication skills? Explain your answer.",
+      "firstReaderHeading": "link-modules-common-2-enterprise-skills",
+      "sourceDecision": "3 @ 2m (1 + 1); communication rationale."
+    },
+    {
+      "id": "lcvp-2012-cl-a8",
+      "ref": "A8",
+      "questionText": "Dermot has shown a good aptitude/ability for management. Do you agree with this statement? Explain your answer.",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        6
+      ],
+      "sourceSchemeBlock": "Dermot has shown a good aptitude/ability for managment. Do you agree with this statement? Explain\n     your answer.                                                             6 marks\n\n      1.   He is good at self reflection, admits his own faults e.g bad scheduling.\n      2.   He recognised the value of good employees such as Tom.\n      3.   He has concern for his clients. He listens to clients and is anxious to keep them informed and\n         up to date with developments on site so that they are not concerned.\n      4.   He is good at his job, he has a calm manner,he kept written notes and documentation on the\n           complaints against Tom. He is pleasant but firm.\n      5.   He has good problem solving skills/deals with problems.\n\n*Candidates may also present a ‘No’ answer.\n                                                                            3 @ 2m\n                                                                                           (1 + 1)\n",
+      "proposedCardMarks": [
+        6
+      ],
+      "sourceSchemePrompt": "Dermot has shown a good aptitude/ability for managment. Do you agree with this statement? Explain your answer.",
+      "firstReaderHeading": "link-modules-common-2-enterprise-skills",
+      "sourceDecision": "3 @ 2m (1 + 1); retain printed acceptance of a No answer."
+    },
+    {
+      "id": "lcvp-2012-cl-b1",
+      "ref": "B1",
+      "questionText": "Explain the benefits that the community resource centre will bring to the people of Glencar.",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        7
+      ],
+      "sourceSchemeBlock": "Explain the benefits the community resource centre will bring to the people of Glencar.\n                                                                            6 Marks\n\n      1.     It is a good facility for community groups, crèche, clubs, and local organisations to meet.\n      2.     It provides a social outlet for retired groups, young and older people.\n      3.     It could encourage a good community/entrepreneurial spirit in the area.\n      4.     It may encourage the setting up of new clubs.\n      5.   The resource centre/seasonal tourist office will benefit many local businesses/spin off\n            business/indirect employment- cafes, tourist attractions, B & B’s and hotels.\n      6.    Provide employment in the centre/direct employment.\n      7.    Provides training/up skilling.\n                                                                            3 @ 2marks\n                                                  (1m for stating + 1m for description)\n",
+      "proposedCardMarks": [
+        6
+      ],
+      "sourceSchemePrompt": "Explain the benefits the community resource centre will bring to the people of Glencar.",
+      "firstReaderHeading": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "sourceDecision": "3 @ 2m, one for stating and one for description; preserve Glencar case."
+    },
+    {
+      "id": "lcvp-2012-cl-b2i",
+      "ref": "B2(i)",
+      "questionText": "Outline two reasons why the County Council wants people from the local community and business groups to participate in the resource centre committee.",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "sourceSchemeBlock": "1.   The County Council needs to know what the local community and business groups want from\n            the centre/involve them in making decisions about the development.\n      2.   The large range of skills and talents within these groups will benefit the committee/costs\n          reduced due to services provided by local people.\n      3.    Business people have the business management and finance skills needed to ensure the success\n           of the project.\n      4.    Business groups may invest in the development of the centre/may sponsor activities in the\n            centre/boost public relations.\n      5.    Generates a better community spirit because if local people are involved from the outset they\n            will be more positive about the community centre and their involvement/running of the centre.\n\n                                                                            2 @ 2 marks\n                                                                                           (1 + 1)\n",
+      "proposedCardMarks": [
+        4
+      ],
+      "sourceSchemePrompt": "Outline two reasons why the County Council wants people from local community and business groups to participate in the resource centre committee.",
+      "firstReaderHeading": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "sourceDecision": "2 @ 2m (1 + 1); local community and business participation in committee."
+    },
+    {
+      "id": "lcvp-2012-cl-b2ii",
+      "ref": "B2(ii)",
+      "questionText": "Explain why it is important that the committee carried out market research before devising its plan.",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "sourceSchemeBlock": "1.   To identify the needs of different groups in society so that they can focus their planning.\n      2.   Make sure money is not wasted in providing services not demanded/already provided in the\n            local area.\n      3.    Consulting local people shows that their opinions matter and they are more likely to support\n            centre when it is operational.\n                                                                            2 @ 2marks\n                                                                                           (1 + 1)\n",
+      "proposedCardMarks": [
+        4
+      ],
+      "sourceSchemePrompt": "Explain why it is important that the committee carried out market research before devising its plan.",
+      "firstReaderHeading": "link-modules-common-2-enterprise-skills",
+      "sourceDecision": "2 @ 2m (1 + 1); market research purpose."
+    },
+    {
+      "id": "lcvp-2012-cl-b2iii",
+      "ref": "B2(iii)",
+      "questionText": "Select one of the community needs identified in the survey. What are the implications for the committee if they decide to provide that service?",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "sourceSchemeBlock": "Select a need.                                                            2 marks\n\n      Implications for the committee of this choice.                                  2 @ 1m\n\n     Valid implication to the need is required.\n\n     Creche\n           Trained staff are required.\n            Specialist equipment may be needed.\n          There are Health & Safety concerns.\n\n     Youth Club/Cafe\n       How will the youth club/cafe be staffed e.g.volunteers or paid staff.\n         What age group will the club/cafe serve?\n          There may be food hygiene issues or Health & Safety requirements.\n            Specialist equipment may be needed.\n\n     Retirement Group\n         The garden will need maintenance.\n          Computers will have to be provided and staff to teach IT skills may be required.\n         The committee may have to decide on a variety of uses such as bowling, cards etc.\n\n      Meeting/training facilities:\n            Internet access will have to be provided.\n          Equipment for meetings such as desks, chairs will be required.\n          IT equipment e.g. computers, data projectors will be needed.\n           Free parking and easy access to the building will be needed.\n          Refreshments facilities are necessary for such a facility.\n         The committee will receive revenue by using the centre in this way.\n\n      Recreational:\n            Different size rooms may be needed depending on the use.\n          Should a full time manager be employed? The committee may decide that rooms can be hired\n         by local groups.\n         Shower facilities may be needed if sports activities are planned.\n         The committee will need to determine the opening hours of the centre e.g. evenings and\n          weekends.\n",
+      "proposedCardMarks": [
+        2,
+        2
+      ],
+      "sourceSchemePrompt": "Select one of the community needs identified in the survey. What are the implications for the committee if they decide to provide the service?",
+      "firstReaderHeading": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "sourceDecision": "Separate Select a need 2m and implications 2 @ 1m. Retain chosen need and full case/graph context; five needs with separate implication pools."
+    },
+    {
+      "id": "lcvp-2012-cl-b3i",
+      "ref": "B3(i)",
+      "questionText": "What are the benefits for the local community of using the FÁS CES?",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        9
+      ],
+      "sourceSchemeBlock": "1.    Local people who are unemployed can get employment/alleviate social problems.\n      2.   The committee can save money by using these workers as their wages are paid by FÁS.\n      3.    This type of work might suit those who want to work part-time and remain in their local\n            area.\n      4.   The committee can avail of different types of workers.\n      5.    Local people are trained/upskilled.\n      6.   Community spirit created. Locals are seen working on the project.\n                                                                       3 @ 1m\n",
+      "proposedCardMarks": [
+        3
+      ],
+      "sourceSchemePrompt": "What are the benefits for the local community of using the FAS CES.",
+      "firstReaderHeading": "link-modules-common-1-introduction-to-working-life",
+      "sourceDecision": "3 @ 1m; benefits of FAS Community Employment Scheme."
+    },
+    {
+      "id": "lcvp-2012-cl-b3ii",
+      "ref": "B3(ii)",
+      "questionText": "Set out the Finance section of the Development Plan for the Glencar resource centre, covering the initial set up and subsequent running of the centre.",
+      "paperPages": [
+        11,
+        12
+      ],
+      "schemePages": [
+        9
+      ],
+      "sourceSchemeBlock": "1.    Set up the Finance sub-committee:\n          Appoint a treasurer, decide who signs cheques etc.\n      2.   Banking – Open a bank account/take out a loan.\n          Decide which bank to use, decide on the type of account e.g.deposit, current account etc.\n      3.   Apply for grants/CES\n          Research what grants are available and how to apply. The finance committee need to\n            establish what information is required in order to get Lotto funding.\n      4.    Fundraising\n       How it will be done, when it will happen and who will be in charg? How much will be\n            raised and what will it be used for e.g. Capital costs or Current/running costs.\n      5.   Budgeted start up costs:\n          Layout design and who will carry out this work. Renovation costs, materials and\n            furnishings\n      6.   Budgeted daily running expenses of centre\n            Staffing costs, heating & lighting, cleaning & maintenance need to be estimated.\n      7.    Estimate income that can be generated from clubs,\n           Estimating how much revenue can be earned from charging for meeting rooms. Identify\n          any other sources of revenue.\n                                                                       9 marks\n                                                                       3 @ 3m\n                                                                                     (1 + 1 + 1)\n                                                    2 points on set up + 1 on running\n                                                        Or\n                                                    2 points on running + 1 on set up\n                                           No repetition of points\n",
+      "proposedCardMarks": [
+        9
+      ],
+      "sourceSchemePrompt": "Set out the Finance Section of the Development Plan for Glencar resource centre, covering the initial set up and subsequent running of the centre.",
+      "firstReaderHeading": "link-modules-common-2-an-enterprise-activity",
+      "sourceDecision": "One finance-plan output; 3 @ 3m (1 + 1 + 1). Require two set-up points plus one running point OR reverse; no repeated points. Preserve all seven options and this restriction."
+    },
+    {
+      "id": "lcvp-2012-cl-c1a",
+      "ref": "C1(a)",
+      "questionText": "Name four other ways jobs can be advertised.",
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        10
+      ],
+      "sourceSchemeBlock": "Name four other ways jobs can be advertised.                             4 marks\n\n      1.    Internet/websites\n      2.    Recruitment agencies\n      3.   Job fairs\n      4.   FAS training centres/offices\n      5.    Notice board in shops/business/Billboard\n      6.   Radio\n      7.  TV\n      8.   Magazines\n                                                                            4 @ 1m\n",
+      "proposedCardMarks": [
+        4
+      ],
+      "sourceSchemePrompt": "Name four other ways jobs can be advertised.",
+      "firstReaderHeading": "link-modules-common-1-job-seeking-skills",
+      "sourceDecision": "Any four job-advertising methods at 1m; preserve advertisement and other wording."
+    },
+    {
+      "id": "lcvp-2012-cl-c1bi",
+      "ref": "C1(b)(i)",
+      "questionText": "Explain why Newsradio Ltd is seeking an employee with good interpersonal skills.",
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        10
+      ],
+      "sourceSchemeBlock": "Good interpersonal skills are important as the employee will be dealing with and\n               communicating with different types of people and customers.\n              Employees must work well with others and work well as part of a team.\n                                                                            2 @ 1m\n",
+      "proposedCardMarks": [
+        2
+      ],
+      "sourceSchemePrompt": "Explain why Newsradio is seeking an employee with good interpersonal skills.",
+      "firstReaderHeading": "link-modules-common-2-enterprise-skills",
+      "sourceDecision": "2 @ 1m; interpersonal/team skills for advertised employee."
+    },
+    {
+      "id": "lcvp-2012-cl-c1bii",
+      "ref": "C1(b)(ii)",
+      "questionText": "Explain why applicants are asked to submit references or name referees on their CV.",
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        10
+      ],
+      "sourceSchemeBlock": "References are used to check the reliability of the potential employee/the quality of their\n               work, suitability for the job etc/Referees provide vital information for a potential\n                employer/verify that details given are correct\n                                                       2@1m\n",
+      "proposedCardMarks": [
+        2
+      ],
+      "sourceSchemePrompt": "Explain why applicants are asked to submit references or name referees on their CV.",
+      "firstReaderHeading": "link-modules-common-1-job-seeking-skills",
+      "sourceDecision": "2 @ 1m; references/referees in job selection."
+    },
+    {
+      "id": "lcvp-2012-cl-c1c",
+      "ref": "C1(c)",
+      "questionText": "Write the letter of application for the position advertised.",
+      "paperPages": [
+        15
+      ],
+      "schemePages": [
+        10
+      ],
+      "sourceSchemeBlock": "Write the letter of application for the position advertised.                     9 Marks\n\n                Sender’s address            1m\n               Addressee\n               Date                   1m                    Spelling      1m\n               Opening- Dear..}           1m               Grammar     1m\n                Closing- Yours..}\n                                                                    Layout/Neatness 1m\n               RE:/Reason why they are writing 1m\n                Statement                1m\n                Enclose CV               1m\n",
+      "proposedCardMarks": [
+        9
+      ],
+      "sourceSchemePrompt": "Write the letter of application for the position advertised.",
+      "firstReaderHeading": "link-modules-common-1-job-seeking-skills",
+      "sourceDecision": "One letter, 9 marks. The image prints one mark beside sender address/addressee grouping and one beside the opening/closing grouping, plus date, reason, statement, enclosed CV, spelling, grammar and layout. No complete letter answer is printed; preserve the criteria and fixed R4 line."
+    },
+    {
+      "id": "lcvp-2012-cl-c1d",
+      "ref": "C1(d)",
+      "questionText": "Describe how to leave a lasting impression at an interview in order to improve your chances of success.",
+      "paperPages": [
+        16
+      ],
+      "schemePages": [
+        11
+      ],
+      "sourceSchemeBlock": "Describe how to leave a lasting impression at an interview in order to improve your chances of\n            success.                                                            8 Marks\n\n             1.   Turn up on time/be punctual.\n             2.   Neat dress, portray a professional image/dressed appropriately/well groomed.\n             3.   Be well prepared/know the facts about the company/review your CV/show that research\n              on the job has been done.\n             4.    Portray positive body language/shake hands/sit correctly/make eye contact/be courteous.\n             5.   Speak clearly and slowly to ensure that the interviewer hears and understands all your\n                answers. Appear confident.\n             6.   Answer all the questions asked, ask for clarification if you do not understand what is being\n                asked/have a intelligent question prepared.\n                                                                            4 @2 m\n                                                                                           (1 + 1)\n",
+      "proposedCardMarks": [
+        8
+      ],
+      "sourceSchemePrompt": "Describe how to leave a lasting impression at an interview in order to improve your chances of success.",
+      "firstReaderHeading": "link-modules-common-1-job-seeking-skills",
+      "sourceDecision": "4 @ 2m (1 + 1); interview behaviour."
+    },
+    {
+      "id": "lcvp-2012-cl-c2a",
+      "ref": "C2(a)",
+      "questionText": "Outline the reasons why people volunteer for community/charity organisations.",
+      "paperPages": [
+        17
+      ],
+      "schemePages": [
+        11
+      ],
+      "sourceSchemeBlock": "Outline the reasons why people volunteer for community/charity organisations.\n                                                                            4 marks\n\n             1.   They want to make a difference and contribute to the community or society/provide better\n                 amenities/services for a group of people/improve life for a group of people.\n             2.    People want to do something positive with their freetime/unemployment.\n             3.     It can improve personal skills.\n             4.    Individuals might want to take on a personal challenge or improve self esteem/personal\n                  satisfaction/Gaisce.\n             5.   Family members may have benefited from this organisation.\n             6.   Can improve CV/gain experience.\n             7.    Social aspect/meeting new people/making friends.\n                                                                            2 @ 2m\n                                                                                           (1 + 1)\n",
+      "proposedCardMarks": [
+        4
+      ],
+      "sourceSchemePrompt": "Outline the reasons why people volunteer for community/charity organisations.",
+      "firstReaderHeading": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "sourceDecision": "2 @ 2m (1 + 1); reasons for volunteering."
+    },
+    {
+      "id": "lcvp-2012-cl-c2b",
+      "ref": "C2(b)",
+      "questionText": "State and explain the responsibilities a volunteer has towards community/charity organisations.",
+      "paperPages": [
+        17
+      ],
+      "schemePages": [
+        11
+      ],
+      "sourceSchemeBlock": "State and explain the responsibilities a volunteer has towards the community/charity\n            organisation.                                                        6 marks\n\n             1.   To respect the aims and values of the organisation. To behave at all times to uphold these\n                 values\n             2.   To be committed to the work and do the work to a high standard/fundraising.\n             3.   To attend all training sessions and put information received into practice at work.\n             4.   To respect the confidentiality of the clients of the organisation.\n             5.    Treat members/clients with respect and dignity.\n             6.   Work well with other volunteers/team members.\n             7.   Be trustworthy/reliable/punctual/dependable.\n                                                                Relevant valid expansion required\n                                                                            3 @ 2m\n                                                                                           (1 + 1)\n",
+      "proposedCardMarks": [
+        6
+      ],
+      "sourceSchemePrompt": "State and explain the responsibilities a volunteer has towards the community/charity organisation.",
+      "firstReaderHeading": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "sourceDecision": "3 @ 2m (1 + 1); volunteer responsibilities, valid expansion required."
+    },
+    {
+      "id": "lcvp-2012-cl-c2c",
+      "ref": "C2(c)",
+      "questionText": "Describe the issues a community/charity organisation must consider before recruiting volunteers.",
+      "paperPages": [
+        18
+      ],
+      "schemePages": [
+        12
+      ],
+      "sourceSchemeBlock": "Describe the issues the community/charity organisation must consider before recruiting\n            volunteers.                                                         6 marks\n             1.   Have they proper policies, procedures and job descriptions in place?\n             2.   Have they correct vetting procedures in place and who checks this?\n             3.   They must provide proper insurance cover and safe working conditions.\n             4.   They must ensure that there is adequate supervision, support/training and resources for\n                  volunteers.\n             5.   What areas/jobs are the volunteers needed for and the skill set requires/numbers required.\n                                                                            3 @ 2m\n                                                                                           (1 + 1)\n",
+      "proposedCardMarks": [
+        6
+      ],
+      "sourceSchemePrompt": "Describe the issues the community/charity organisation must consider before recruiting volunteers.",
+      "firstReaderHeading": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "sourceDecision": "3 @ 2m (1 + 1); organisation preparations for volunteers."
+    },
+    {
+      "id": "lcvp-2012-cl-c2d",
+      "ref": "C2(d)",
+      "questionText": "Describe how a community/charity organisation can evaluate the success of its use of volunteers.",
+      "paperPages": [
+        19
+      ],
+      "schemePages": [
+        12
+      ],
+      "sourceSchemeBlock": "Describe how the community/charity organisation can evaluate the success of its use of\n            volunteers.                                                         9 marks\n             1.   Review if the aims of organisation are being met e.g. are the needs of the organisation\n                being met by the volunteers/is the organisation run effectively. They can check the level\n                 of volunteer involvement.\n             2.   Check the retention level of volunteers. Do volunteers stay for a long-term and do they\n               remain loyal to the organisation?\n             3.   Survey the volunteers and see if they are satisified with the work and feel valued by the\n              management of the organisation. Ascertain whether or not they feel supported and\n               whether they are benefiting from volunteering for the organisation.\n             4.   Have a group discussion of volunteers so that everyone can contribute. Ensure their\n                opinions and feedback are spontaneous and honest.\n             5.   Survey the clients/local community; are their clients satisfied with the services provided?\n             What would they change?\n                                                                            3 @ 3m\n                                                                                           (1 + 2)\n",
+      "proposedCardMarks": [
+        9
+      ],
+      "sourceSchemePrompt": "Describe how the community/charity organisation can evaluate the success of its use of volunteers.",
+      "firstReaderHeading": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "sourceDecision": "3 @ 3m (1 + 2); evaluating volunteers in community organisation."
+    },
+    {
+      "id": "lcvp-2012-cl-c3a",
+      "ref": "C3(a)",
+      "questionText": "Name one LCVP team activity in which you were involved.",
+      "paperPages": [
+        20
+      ],
+      "schemePages": [
+        12
+      ],
+      "sourceSchemeBlock": "Name one LCVP team activity you were involved with.                     1 mark\n        Any relevant activity.                                      1m\n",
+      "proposedCardMarks": [
+        1
+      ],
+      "sourceSchemePrompt": "Name one LCVP team activity you were involved with.",
+      "firstReaderHeading": "link-modules-common-2-an-enterprise-activity",
+      "sourceDecision": "Any relevant activity is the entire criterion; no named answer printed. R4 notice required."
+    },
+    {
+      "id": "lcvp-2012-cl-c3b",
+      "ref": "C3(b)",
+      "questionText": "Outline three benefits of teamwork in this LCVP activity.",
+      "paperPages": [
+        20
+      ],
+      "schemePages": [
+        12
+      ],
+      "sourceSchemeBlock": "Outline three benefits of teamwork in this LCVP activity.                    6 marks\n\n             1.   Goals are achieved faster and the work is shared/more work is done.\n             2.    Decisions can be made or problems solved more quickly.\n             3.   The responsibility is shared so no one person is under too much pressure/everyone takes\n               ownership of the part of the task they are responsible for.\n             4.   Members of a team will have a variety of strengths/skills or ideas/ Experience, skills\n                shared/more ideas.\n             5.    Disputes are avoided as communication is essential in team work/everyone has a say.\n             6.    Pupils can work closely with those who have a common interest.\n             7.    Communication/interpersonal skills are improved.\n             8.    Pupils are more contented, as relationships with class members improve, better\n                 motivation.\n                                                                            3 @ 2m\n                                                                                           (1 + 1)\n",
+      "proposedCardMarks": [
+        6
+      ],
+      "sourceSchemePrompt": "Outline three benefits of teamwork in this LCVP activity.",
+      "firstReaderHeading": "link-modules-common-2-enterprise-skills",
+      "sourceDecision": "3 @ 2m (1 + 1); teamwork benefits linked to named activity."
+    },
+    {
+      "id": "lcvp-2012-cl-c3c",
+      "ref": "C3(c)",
+      "questionText": "Describe the characteristics of a successful team.",
+      "paperPages": [
+        21
+      ],
+      "schemePages": [
+        13
+      ],
+      "sourceSchemeBlock": "Describe the characteristics of a successful team.                           8 marks\n\n      1.   There are a range of talents or strengths/they should be versitile.\n      2.    All members are very committed to a common goal/self motivated to achieve/planning.\n      3.   The roles and responsibilities of team members are clearly defined.\n      4.    All ideas and opinions are heard and valued/tolerate others views.\n      5.   There is trust and cooperation between team members and there is a good atmosphere.\n      6.   There is a strong leader to motivate and support all team members/sucess is recognised.\n      7.   There is regular communication/consultation between team members/problem solving.\n                                                                       4 @ 2m\n                                                                                                  (0, 2)\n",
+      "proposedCardMarks": [
+        8
+      ],
+      "sourceSchemePrompt": "Describe the characteristics of a successful team.",
+      "firstReaderHeading": "link-modules-common-2-enterprise-skills",
+      "sourceDecision": "4 @ 2m (0, 2); successful-team characteristics. No one-mark award."
+    },
+    {
+      "id": "lcvp-2012-cl-c3di",
+      "ref": "C3(d)(i)",
+      "questionText": "State and explain the difficulties/challenges associated with teamwork.",
+      "paperPages": [
+        22
+      ],
+      "schemePages": [
+        13
+      ],
+      "sourceSchemeBlock": "(i)    State and explain the difficulties/challenges associated with teamwork\n        (ii)   Outline how these difficulties/challenges may be overcome.              10 marks\n\n      1.   There may be some team members not pulling their weight.\n          There should be regular meetings to review progress of team members or to clearly define\n             their duties.\n      2.   Team members may not be working well together/dominant\n            personality/controlling/personality clash.\n           Provide a team building excerise for members/bring in a mediator.\n      3.   Disagreement\n         Members discuss decisions and agree to commit to final decisions or some decisions\n          remain flexible so that agreement can be reached.\n      4.     It may be difficult to plan and co-ordinate the work of the team.\n       A strong team leader is needed who clearly defines roles within the team/regular meeting.\n      5.   There might be too much talking and not enough action/Lack of skill within the team.\n           Training is needed. The importance of sticking to time schedules need to be clearly\n            established.\n\n                                                            State and explain:    2 @ 3m\n                                                                                     (2 + 1)\n                                                   Overcoming: 2 @ 2m\n                                                                                                  (0, 2)\n",
+      "proposedCardMarks": [
+        6
+      ],
+      "sourceSchemePrompt": "State and explain the difficulties/challenges associated with teamwork",
+      "firstReaderHeading": "link-modules-common-2-enterprise-skills",
+      "sourceDecision": "State and explain 2 @ 3m (2 + 1); retain five paired challenge/response models."
+    },
+    {
+      "id": "lcvp-2012-cl-c3dii",
+      "ref": "C3(d)(ii)",
+      "questionText": "Outline how these difficulties/challenges may be overcome.",
+      "paperPages": [
+        22
+      ],
+      "schemePages": [
+        13
+      ],
+      "sourceSchemeBlock": "(i)    State and explain the difficulties/challenges associated with teamwork\n        (ii)   Outline how these difficulties/challenges may be overcome.              10 marks\n\n      1.   There may be some team members not pulling their weight.\n          There should be regular meetings to review progress of team members or to clearly define\n             their duties.\n      2.   Team members may not be working well together/dominant\n            personality/controlling/personality clash.\n           Provide a team building excerise for members/bring in a mediator.\n      3.   Disagreement\n         Members discuss decisions and agree to commit to final decisions or some decisions\n          remain flexible so that agreement can be reached.\n      4.     It may be difficult to plan and co-ordinate the work of the team.\n       A strong team leader is needed who clearly defines roles within the team/regular meeting.\n      5.   There might be too much talking and not enough action/Lack of skill within the team.\n           Training is needed. The importance of sticking to time schedules need to be clearly\n            established.\n\n                                                            State and explain:    2 @ 3m\n                                                                                     (2 + 1)\n                                                   Overcoming: 2 @ 2m\n                                                                                                  (0, 2)\n",
+      "proposedCardMarks": [
+        4
+      ],
+      "sourceSchemePrompt": "Outline how these difficulties/challenges may be overcome.",
+      "firstReaderHeading": "link-modules-common-2-enterprise-skills",
+      "sourceDecision": "Overcoming 2 @ 2m (0, 2); maintain selected challenge context. No separate cross-part deduction is printed."
+    },
+    {
+      "id": "lcvp-2012-cl-c4a",
+      "ref": "C4(a)",
+      "questionText": "Outline why planning is so important in setting up and running an enterprise activity.",
+      "paperPages": [
+        23
+      ],
+      "schemePages": [
+        14
+      ],
+      "sourceSchemeBlock": "Outline why planning is so important in setting up and running an enterprise activity.\n                                                                            4 Marks\n\n      1.   Aims and activities are established clearly.\n      2.   Everyone knows what they are working towards.\n      3.   You can check the progress of the activity against the plan/to see if any changes are\n          needed/make decisions.\n      4.     It allows a time frame and deadlines which keeps everyone on track.\n      5.   To draw up budgets/schedule of costs/be aware of financial requirements/resources\n           needed/required when applying for a loan or a grant.\n      6.    Carry out SWOT analysis, look at competition, identify weaknesses/anticipate problems.\n                                                                            2 @ 2m\n                                                                                           (1 + 1)\n",
+      "proposedCardMarks": [
+        4
+      ],
+      "sourceSchemePrompt": "Outline why planning is so important in setting up and running an enterprise activity.",
+      "firstReaderHeading": "link-modules-common-2-an-enterprise-activity",
+      "sourceDecision": "2 @ 2m (1 + 1); planning an enterprise activity."
+    },
+    {
+      "id": "lcvp-2012-cl-c4b",
+      "ref": "C4(b)",
+      "questionText": "State two research methods used when planning an enterprise activity. Analyse the usefulness of each research method used.",
+      "paperPages": [
+        23
+      ],
+      "schemePages": [
+        14
+      ],
+      "sourceSchemeBlock": "State two research methods used when planning this activity. Analyse the usefulness of each\n         method used.                                                       6 Marks\n\n             1.   Telephone call, face to face meetings, talking with school Principal and teachers and\n               anyone else involved.\n                      Information can be requested directly.\n                   Answers are instant answer.\n                        Clarification can be provided if needed/questions explained.\n                   Easy to do.\n             2.    Survey/Questionaire/Sugggestion Box\n                               It is inexpensive to carry out.\n                       Different types of information can be gathered easily.\n                               It is quick to administer and answers can be collated easily.\n                  Anonymous.\n                 Good response rate.\n             3.    Internet\n             A wide variety of information can be accessed.\n                     This can be done from your desk at any time of the day or night.\n                               It is inexpensive to carry out this type of research.\n                      (Information may not be specific to the needs of the activity/hard to filter\n                      information)\n             4.    Brainstorming/Class Discussion/Group discussion\n                  The entire class can be involved.\n                    Everyone can give their opinion on ideas being expressed.\n                               It is quick to administer and can be done in a single session.\n            5.Publications\n                      Library free to access\n                       Different types of information can be accessed\n\n          **Also accept valid critisism with an expansion                            2 @ 3m\n                                                                                           (1 + 2)\n",
+      "proposedCardMarks": [
+        2,
+        4
+      ],
+      "sourceSchemePrompt": "State two research methods used when planning this activity. Analyse the usefulness of each method used.",
+      "firstReaderHeading": "link-modules-common-2-enterprise-skills",
+      "sourceDecision": "First-reader split is 2 marks for the two research-method names and 4 for analysing their usefulness. The scheme prints 2 @ 3m (1 + 2), with five named methods and their separate supporting detail. Unlike C4(c), it does not separately label Naming and Reason awards. Preserve this distinction for the second reading; no authored split yet."
+    },
+    {
+      "id": "lcvp-2012-cl-c4c",
+      "ref": "C4(c)",
+      "questionText": "Name two Leaving Certificate subjects that helped you in completing your part in the class enterprise activity. Give a reason for each subject choice.",
+      "paperPages": [
+        24
+      ],
+      "schemePages": [
+        15
+      ],
+      "sourceSchemeBlock": "Name two Leaving Certificate subjects that helped you in completing your part in the class\n      enterprise activity. Give a reason for each choice.                          6 Marks\n\n             Naming subject                                 1m\n                Valid Reason for choosing the subject                    2m\n                                                                       2 @ 3m\n                                                                                     (1 + 2)\n",
+      "proposedCardMarks": [
+        2,
+        4
+      ],
+      "sourceSchemePrompt": "Name two Leaving Certificate subjects that helped you in completing your part in the class enterprise activity. Give a reason for each choice.",
+      "firstReaderHeading": "link-modules-common-2-an-enterprise-activity",
+      "sourceDecision": "Explicit naming subject 1m and valid reason 2m, twice. Two naming marks plus four reason marks; no concrete subjects/reasons printed. Keep separate asks with R4 notices and linked choices."
+    },
+    {
+      "id": "lcvp-2012-cl-c4di",
+      "ref": "C4(d)(i)",
+      "questionText": "Describe the different areas of the enterprise activity that need to be evaluated.",
+      "paperPages": [
+        24,
+        25
+      ],
+      "schemePages": [
+        15
+      ],
+      "sourceSchemeBlock": "Review and evaluation is important at the end of an activity.\n        (i)     Describe the different areas of the enterprise activity that need to be evaluated\n        (ii)    Explain why each of these different areas should be evaluated.          9 Marks\n\n      1.   Were the aims achieved/Did the activity go to plan/Was the correct product produced-\n           This shows that they were realistic.\n      2.   Were clients/teachers/students satisfied with the activity?\n      3.   Teamwork/group performance, did all the class participate in the activity?\n      4.   Time management – were the time schedules adhered to?\n      5.    Costs – did the class keep within budget/make the expected profit.\n      6.   New skills learnt/developed.\n                                                                       3 @ 3m\n                                                                       1 + 2m\n                                                                                                  (0, 2)\n",
+      "proposedCardMarks": [
+        3
+      ],
+      "sourceSchemePrompt": "Describe the different areas of the enterprise activity that need to be evaluated",
+      "firstReaderHeading": "link-modules-common-2-an-enterprise-activity",
+      "sourceDecision": "Three separately requested evaluation areas, one mark each, from the printed 3 @ 3m / 1 + 2m award. Keep all six numbered scheme entries."
+    },
+    {
+      "id": "lcvp-2012-cl-c4dii",
+      "ref": "C4(d)(ii)",
+      "questionText": "Explain why each of these different areas should be evaluated.",
+      "paperPages": [
+        24,
+        25
+      ],
+      "schemePages": [
+        15
+      ],
+      "sourceSchemeBlock": "Review and evaluation is important at the end of an activity.\n        (i)     Describe the different areas of the enterprise activity that need to be evaluated\n        (ii)    Explain why each of these different areas should be evaluated.          9 Marks\n\n      1.   Were the aims achieved/Did the activity go to plan/Was the correct product produced-\n           This shows that they were realistic.\n      2.   Were clients/teachers/students satisfied with the activity?\n      3.   Teamwork/group performance, did all the class participate in the activity?\n      4.   Time management – were the time schedules adhered to?\n      5.    Costs – did the class keep within budget/make the expected profit.\n      6.   New skills learnt/developed.\n                                                                       3 @ 3m\n                                                                       1 + 2m\n                                                                                                  (0, 2)\n",
+      "proposedCardMarks": [
+        6
+      ],
+      "sourceSchemePrompt": "Explain why each of these different areas should be evaluated.",
+      "firstReaderHeading": "link-modules-common-2-an-enterprise-activity",
+      "sourceDecision": "The six numbered scheme entries primarily identify evaluation areas. The first explicitly adds This shows that they were realistic. Do not invent why-statements for the other areas. Preserve the full printed material, 3 @ 3m / 1 + 2m / (0, 2), selected-area context, and the fixed no-answer line for the missing explanation content."
+    },
+    {
+      "id": "lcvp-2012-cl-c5a",
+      "ref": "C5(a)",
+      "questionText": "Name a local commercial business enterprise and identify the product/service it produces.",
+      "paperPages": [
+        26
+      ],
+      "schemePages": [
+        16
+      ],
+      "sourceSchemeBlock": "Name a local commercial business and identify the product/service it produces.\n                                                                            3 marks\n            Name                                          1m\n                 Products/service                                    2m\n",
+      "proposedCardMarks": [
+        1,
+        2
+      ],
+      "sourceSchemePrompt": "Name a local commercial business and identify the product/service it produces.",
+      "firstReaderHeading": "link-modules-common-2-local-business-enterprises",
+      "sourceDecision": "Explicit Name 1m, Products/service 2m. Two separately answered asks; no actual business/product model printed, so retain criteria and R4 notices."
+    },
+    {
+      "id": "lcvp-2012-cl-c5b",
+      "ref": "C5(b)",
+      "questionText": "Identify two agencies which provide support for business start-ups. Outline the type of support offered by each of these agencies.",
+      "paperPages": [
+        26
+      ],
+      "schemePages": [
+        16
+      ],
+      "sourceSchemeBlock": "Identify two agencies which provide support for business start-ups. Outline the type of support\n           offered by each of these agencies.                                       6 Marks\n\n            Name agency                                      1m\n              Type of support                                                 2 @ 1m\n\n             1.   County Enterprise Boards\n               Mentoring services\n               Gives advice\n                   Start your own business courses\n                Grants for feasibility studies\n                 Capital grants for capital equipment/costs\n\n             2.    Enterprise Ireland\n                 Offers grants\n               Gives advice\n\n             3.    Local Area Partnerships\n\n             4.   Leader Plus\n                Grants\n               Advice for new business in certain urban or rural areas or for certain types of business\n                Provide premises\n                Workshops/training\n\n             5.   FAS/Solas\n              They provide training in certain areas\n              They work with local colleges providing courses\n               Employers can advertise jobs in their offices.\n\n             6.   Udaras na Gaeltachta\n\n             7.   IDA Ireland\n\n             8.   Teagasc\n\n             9.    Failte Ireland\n",
+      "proposedCardMarks": [
+        2,
+        4
+      ],
+      "sourceSchemePrompt": "Identify two agencies which provide support for business start-ups. Outline the type of support offered by each of these agencies.",
+      "firstReaderHeading": "link-modules-common-2-local-business-enterprises",
+      "sourceDecision": "Two named agencies at one mark each; supports two one-mark details per agency. Nine named agencies; some have no printed support examples. Preserve each complete printed pool and distinguish missing support answers; do not invent examples. Nine agency names. Local Area Partnerships, Udaras na Gaeltachta, IDA Ireland, Teagasc and Failte Ireland have no printed support details: five, not four. County Enterprise Boards, Enterprise Ireland, Leader Plus and FAS/Solas have printed support pools."
+    },
+    {
+      "id": "lcvp-2012-cl-c5c",
+      "ref": "C5(c)",
+      "questionText": "Your class has decided to invite a business owner to speak to the LCVP class. Draft the agenda for the first meeting to organise the visit-in.",
+      "paperPages": [
+        27
+      ],
+      "schemePages": [
+        17
+      ],
+      "sourceSchemeBlock": "Your class has decided to invite a business owner to speak to the LCVP class. Draft the agenda\n      for the first meeting to organise this visit-in.                               7 Marks\n\n          Heading                                         1m\n          Layout/numbered points                               1m\n\n     Agenda\n\n      1.    Election of committee *\n      2.   Draw up list of jobs to be done/permission from the principal.\n      3.   Decide on date & time of visit/speaker\n      4.    Discuss budget/costs\n      5.    Divide up jobs to be done\n      6.  AOB\n      7.   Arrange the next meeting                                         5 @ 1m\n     *    Compulsory point\n",
+      "proposedCardMarks": [
+        7
+      ],
+      "sourceSchemePrompt": "Your class has decided to invite a business owner to speak to the LCVP class. Draft the agenda for the first meeting to organise this visit-in.",
+      "firstReaderHeading": "link-modules-common-2-enterprise-skills",
+      "sourceDecision": "One agenda output: heading 1, layout 1, five items @1, with Election of committee compulsory. Preserve whole model and compulsory condition."
+    },
+    {
+      "id": "lcvp-2012-cl-c5di",
+      "ref": "C5(d)(i)",
+      "questionText": "What steps should be taken to ensure the success of the visit-in?",
+      "paperPages": [
+        28
+      ],
+      "schemePages": [
+        17
+      ],
+      "sourceSchemeBlock": "1.    Select a good speaker.\n             2.    Talk to speaker in advance so you know their requirements/confirm arrangements\n             3.   Make sure room is prepared correctly\n             4.   Check permission for visit with Principal\n             5.    Set up and check AV equipment in advance.\n             6.   Allow adequate time for the visit.\n             7.   Be clear on who is responsible for the different tasks.Committee in place.\n             8.   Do some research/Have questions prepared in advance.\n                                                                       5 @ 1m\n",
+      "proposedCardMarks": [
+        5
+      ],
+      "sourceSchemePrompt": "What steps should be taken to ensure the success of the visit-in?",
+      "firstReaderHeading": "link-modules-common-2-enterprise-skills",
+      "sourceDecision": "5 @ 1m; practical arrangements for visit-in."
+    },
+    {
+      "id": "lcvp-2012-cl-c5dii",
+      "ref": "C5(d)(ii)",
+      "questionText": "Outline the most important factors for the successful running of a business.",
+      "paperPages": [
+        28
+      ],
+      "schemePages": [
+        17
+      ],
+      "sourceSchemeBlock": "1.    Financial- be realistic about the budgets.\n             2.   Make realistic Plans and keep to them.\n             3.   Do your research to have appropriate service/product.\n             4.   Employees need to be reliable, properly trained.\n             5.    Location of the business/near markets/good infrastructure.\n             6.   Good management/leadership + valid expansion.\n                                                                       2 @ 2m\n                                                                                                  (0, 2)\n",
+      "proposedCardMarks": [
+        4
+      ],
+      "sourceSchemePrompt": "Outline the most important factors for the successful running of a business.",
+      "firstReaderHeading": "link-modules-common-2-local-business-enterprises",
+      "sourceDecision": "2 @ 2m (0, 2); successful-business factors."
+    },
+    {
+      "id": "lcvp-2012-cl-c6a",
+      "ref": "C6(a)",
+      "questionText": "‘Diversity in the workplace is encouraged in the modern working environment.’ Explain what is meant by diversity in the workplace.",
+      "paperPages": [
+        29
+      ],
+      "schemePages": [
+        18
+      ],
+      "sourceSchemeBlock": "Diversity in the workplace is encouraged in the modern working environment. Explain what is\n          meant by diversity in the work place.                                    3 Marks\n\n          There is a large mix of people working, male, female, young old, from different countries,\n           ablebodied and having special needs.\n\n                                         Mix of people 1m + 2 examples @ 1m each\n",
+      "proposedCardMarks": [
+        3
+      ],
+      "sourceSchemePrompt": "Diversity in the workplace is encouraged in the modern working environment. Explain what is meant by diversity in the work place.",
+      "firstReaderHeading": "link-modules-common-1-introduction-to-working-life",
+      "sourceDecision": "One diversity explanation: mix of people 1m plus two examples at1. These are components of one requested explanation, not separate printed asks."
+    },
+    {
+      "id": "lcvp-2012-cl-c6b",
+      "ref": "C6(b)",
+      "questionText": "Outline the benefits that diversity in the workplace might bring to an organisation.",
+      "paperPages": [
+        29
+      ],
+      "schemePages": [
+        18
+      ],
+      "sourceSchemeBlock": "Explain the benefits that diversity in the workplace might bring.               6 Marks\n\n             1.   Younger employees can learn from older employees, vice versa.\n             2.   Employees come from different backgrounds so will have a different outlook/viewpoint,\n               which may help in decision making.\n             3.   You learn tolerance /no one person is better than another.\n             4.    Different work attitudes will have a positive affect on others.\n             5.   Improve a variety of skills eg languages.                             2 @ 3m\n                                                                                           (2 + 1)\n",
+      "proposedCardMarks": [
+        6
+      ],
+      "sourceSchemePrompt": "Explain the benefits that diversity in the workplace might bring.",
+      "firstReaderHeading": "link-modules-common-1-introduction-to-working-life",
+      "sourceDecision": "2 @ 3m (2 + 1); diversity benefits."
+    },
+    {
+      "id": "lcvp-2012-cl-c6c",
+      "ref": "C6(c)",
+      "questionText": "Employers have very clear legal responsibilities in relation to employing young workers (under 18 years of age). Outline four of these responsibilities.",
+      "paperPages": [
+        30
+      ],
+      "schemePages": [
+        18
+      ],
+      "sourceSchemeBlock": "Employers have very clear legal responsibilities in relation to employing young workers (under\n         18 years of age). Outline four of these responsibilities.                      8 Marks\n\n             1.   Employer must keep copy of birth cert/passport for all those under 18.\n             2.    Detailed records must be kept, name, DOB, start time, end time, pay rate.\n             3.   Compliance with law eg. early morning start times and late evening finishing/holidays.\n             4.    Breaks. Young workers are entitled to more frequent breaks than older employees.\n             5.    Written permission is required(u16)/consent of parent/guardian.\n                                                                            4 @ 2m\n                                                                                                           (0, 2)\n",
+      "proposedCardMarks": [
+        8
+      ],
+      "sourceSchemePrompt": "Employers have very clear legal responsibilities in relation to employing young workers (under 18 years of age). Outline four of these responsibilities.",
+      "firstReaderHeading": "link-modules-common-1-introduction-to-working-life",
+      "sourceDecision": "4 @ 2m (0, 2); employment obligations as printed in this 2012 scheme. Historical source content, not current legal advice."
+    },
+    {
+      "id": "lcvp-2012-cl-c6d",
+      "ref": "C6(d)",
+      "questionText": "State and explain the responsibilities of workers with regard to Health and Safety in the workplace.",
+      "paperPages": [
+        31
+      ],
+      "schemePages": [
+        18
+      ],
+      "sourceSchemeBlock": "State and explain the responsibilities of workers with regard to Health and Safety in the\n           workplace.                                                         8 Marks\n\n             1.   To follow all safety instructions/guidelines/procedures.\n             2.   Use machinery & equipment correctly.\n             3.   Wear all protective clothing etc..\n             4.    Report all accidents and safety hazards to management.\n             5.    Attend all safety training and practice skills/knowledge in work.\n             6.    Treat all others with respect. Do not bully in the workplace.\n             7.   Read the safety statement/notices and adhere to them.                  4 @ 2m\n                                                                                           (1 + 1)",
+      "proposedCardMarks": [
+        8
+      ],
+      "sourceSchemePrompt": "State and explain the responsibilities of workers with regard to Health and Safety in the workplace.",
+      "firstReaderHeading": "link-modules-common-1-introduction-to-working-life",
+      "sourceDecision": "4 @ 2m (1 + 1); worker health/safety responsibilities."
+    }
+  ]
+}
