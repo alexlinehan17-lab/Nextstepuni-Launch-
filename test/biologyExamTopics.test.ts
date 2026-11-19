@@ -129,7 +129,8 @@ describe('Biology exam-topic registry', () => {
       // 2022 Higher + 72, 2023 Higher + 59, 2024 Higher + 70, 2025 Higher + 30 (the Ordinary sittings have none).
       matchedAssociations: 1561 + 72 + 59 + 70 + 30,
       sourceBlockedAssociations: 858 - 72 - 59 - 70 - 30,
-      matchedLogicalCards: 485,
+      // + 1: the 2025 Higher deferred reference card now matches its carded booklets.
+      matchedLogicalCards: 485 + 1,
       retainedLocalLogicalCards: 49,
     });
     expect(

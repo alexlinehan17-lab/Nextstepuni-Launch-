@@ -56883,11 +56883,19 @@ export const CARDS: SecCard[] = [
     id: "bio-2025-hl-deferred-q17-d-iii-3", topicId: "bio-3-2", conceptId: "functions-of-rhizopus-parts",
     section: "C", questionRef: "2025 HL Q17(d)(iii)3 — Deferred sitting",
     stem: "Answer the following questions in relation to the Kingdom Fungi. Fungi can be classified as saprophytic or parasitic. Rhizopus is an example of a saprophytic fungus.",
-    questionText: "1. Draw a diagram of the structure of Rhizopus.\n2. On your diagram, label the following parts: sporangiophore, stolon, rhizoid.\n3. Give a function for any one of the above-labelled parts.",
+    questionText: "1. Draw a diagram of the structure of Rhizopus. 2. On your diagram, label the following parts: sporangiophore, stolon, rhizoid. 3. Give a function for any one of the above-labelled parts.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r1", kind: "anyN", verbatim: "Sporangiophore: holds up the sporangium / Stolon: spread of fungus / Rhizoid: absorption or anchorage", marks: null, group: {"claimMax":1,"perOption":3,"options":["Sporangiophore: holds up the sporangium","Stolon: spread of fungus","Rhizoid: absorption or anchorage"]} },
     ],
+    questionFigure: {
+          "candId": "biology-2025-hl-deferred-q17d-iii-question",
+          "src": "/exam-figures/biology/markbank/biology-2025-hl-deferred-q17d-iii-question.png",
+          "srcHash": "65ced4d67fd666d6c574f877f6370e7a",
+          "alt": "The printed Question 17(d)(iii): Rhizopus is an example of a saprophytic fungus. 1. Draw a diagram of the structure of Rhizopus. 2. On your diagram, label the following parts: sporangiophore, stolon, rhizoid. 3. Give a function for any one of the above-labelled parts.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Biology 2025 Higher Level deferred examination paper — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

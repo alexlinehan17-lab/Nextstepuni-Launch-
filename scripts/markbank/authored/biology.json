@@ -201702,7 +201702,8 @@
   ],
   "notes": "Numbered items are separately priced responses: one card each. Item 3 asks about the parts the candidate drew and labelled in items 1 and 2 (no printed figure), so its question shows all three items. Reviewed 2026-11-19 against the paper and scheme; ledger bio_review_2025_hl_deferred.py.",
   "year": 2025,
-  "level": "higher"
+  "level": "higher",
+  "questionFigureKey": "biology-2025-hl-deferred-q17d-iii-question"
  },
  {
   "id": "bio-2025-hl-deferred-q17-d-iv",

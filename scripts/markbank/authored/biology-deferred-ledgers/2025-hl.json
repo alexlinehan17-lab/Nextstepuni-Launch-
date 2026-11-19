@@ -902,6 +902,20 @@
    [],
    "Diagram of a seed with its Endosperm labelled, beside a table with columns Substrate, Enzyme and Product(s) and rows Starch, Protein and Lipid, the enzyme and product cells empty.",
    false
+  ],
+  "q17d-iii-question": [
+   "040",
+   10,
+   [
+    105,
+    566,
+    470,
+    664
+   ],
+   "State Examinations Commission",
+   [],
+   "The printed Question 17(d)(iii): Rhizopus is an example of a saprophytic fungus. 1. Draw a diagram of the structure of Rhizopus. 2. On your diagram, label the following parts: sporangiophore, stolon, rhizoid. 3. Give a function for any one of the above-labelled parts.",
+   false
   ]
  },
  "TASKS": [
@@ -9377,7 +9391,8 @@
      }
     }
    ],
-   "decision": "Numbered items are separately priced responses: one card each. Item 3 asks about the parts the candidate drew and labelled in items 1 and 2 (no printed figure), so its question shows all three items."
+   "decision": "Numbered items are separately priced responses: one card each. Item 3 asks about the parts the candidate drew and labelled in items 1 and 2 (no printed figure), so its question shows all three items.",
+   "qfig": "q17d-iii-question"
   },
   {
    "key": "17div",
