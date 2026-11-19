@@ -1461,6 +1461,7 @@ const POLISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2020: { higher: 13, ordinary: 0 },
   2019: { higher: 16, ordinary: 0 },
   2018: { higher: 13, ordinary: 0 },
+  2017: { higher: 13, ordinary: 0 },
 };
 const POLISH_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
   2025: { higher: 38, ordinary: 36 },
