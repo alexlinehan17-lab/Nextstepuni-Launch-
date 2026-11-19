@@ -237,6 +237,26 @@ Q_HEAD = re.compile(r'^(?:Pytanie|Zadanie)\s*(\d{1,2})\b')
 SECTION_TAB = re.compile(r'^Cz[eę][sś][cć]\s+([AB])\b')
 # 2021's own two parts, printed in Roman numerals.
 PART_2021 = re.compile(r'^Cz[eę][sś][cć]\s+(I{1,2})\b')
+# The examination up to 2020 prints THREE parts, and 2011 and 2012 set their
+# heads in capitals, "CZĘŚĆ I". PART_2021 knows neither: it is case-sensitive
+# and stops at "II", so those two sittings found no part at all and every other
+# year lost Część III, and with it both essay titles.
+PART_CLASSIC = re.compile(r'^Cz[eę][sś][cć]\s+(I{1,3})\b', re.I)
+# The share of the paper printed beside each part head, "(30/100)". It is the
+# part's price, not part of the prompt beneath it.
+PART_SHARE = re.compile(r'^\(\s*\d{1,3}\s*/\s*\d{1,3}\s*\)$')
+# The word the SEC prints between the two essay titles of the last part.
+CHOICE_WORD = re.compile(r'^(?:ALBO|LUB)$', re.I)
+# A lettered part of the 100-mark examination, which sets it "a)" in most
+# years and "a." in 2020 ("a. cała gama (akapit 1)"). A letter is only ever
+# taken here when it is the NEXT letter of its question, so the dot cannot turn
+# a line of a question's own words into a part.
+LETTER_CLASSIC = re.compile(r'^\(?\s*([a-l])\s*[.)]\s*(.*)$', re.I)
+# Parts printed INSIDE their question's sentence: 2019 Question 3 reads "W
+# świetle artykułu, a) jak wygląda, i b) jak działa robot-zapylacz…", and the
+# scheme gives (a) 2 marks and (b) 3. Both markers have to be there, in order,
+# each after a space, so a lone bracketed letter in a quotation is left alone.
+INLINE_PARTS = re.compile(r'^(.*?)(?:^|\s)a\)\s+(.+?)\s+b\)\s+(.+)$')
 # A 2021 essay title: the SEC prints it as a quotation attributed to its author.
 ESSAY_TITLE = re.compile(r'^[„“"]')
 AURAL_TAB = re.compile(r'^Cz[eę][sś][cć]\s+([A-F])\b')
@@ -309,7 +329,9 @@ class PlPaper:
         self.flags = []
         self.text_pages = {}          # question number -> [pages of its text]
         self.leads = {}               # question number -> its printed title
-        self._asks = (self._walk_2021() if year <= 2021 else self._walk())
+        self._asks = (self._walk_classic() if year <= 2020
+                      else self._walk_2021() if year == 2021
+                      else self._walk())
         self._aural = self._walk_aural() if self.aural_path else []
 
     # ------------------------------------------------------------ layout ---
@@ -550,6 +572,125 @@ class PlPaper:
 
     _past_source = False
 
+    # 2010 to 2020 is the 100-mark examination: the reading text and the line
+    # crediting its source come FIRST, then "ZADANIA" and three parts. Część I
+    # (30/100) sets six numbered questions on the text, some lettered a) to e);
+    # Część II (30/100) is one comment on a quotation; Część III (40/100) is an
+    # essay on one of two numbered titles with "ALBO" between them.
+    #
+    # Walked by `_walk_2021` these sittings censused as nothing, for three
+    # reasons the page shows: that walk ignores every line before the first
+    # part head, so the source line that opens its questions was never seen;
+    # its head pattern is case-sensitive, so the capitals of 2011 and 2012
+    # matched no part at all; and it stops at "II", so Część III was read as
+    # more of Część II. Here nothing waits on the source line, because no
+    # passage is printed inside a part: every numbered line of Część I that is
+    # the next number in the run IS a question.
+    #
+    # Keyed like the rest of this family: 'I' with its question numbers,
+    # Część II's single prompt as Question 1 (as eu_paper keys a part that
+    # prints one prompt, and as Polish 2021 numbers its Section II), and
+    # Część III's two titles by the numbers the paper prints.
+    def _walk_classic(self):
+        asks, part, q, letter = [], None, None, None
+        current, last_y = None, None
+        text_pages = {}
+        prompt, prompt_page = [], None
+
+        def close():
+            nonlocal current
+            if current is not None:
+                current.text = TRAILING_MARK.sub('', _norm(current.text))
+                inline = (INLINE_PARTS.match(current.text)
+                          if current.section == 'I' and current.letter is None
+                          else None)
+                if inline:
+                    # The question is the parent; its two parts are the leaves.
+                    stem, a_text, b_text = (s.strip() for s in inline.groups())
+                    current.text = stem
+                    asks.append(current)
+                    for mark, words in (('a', a_text), ('b', b_text)):
+                        asks.append(Ask(current.section, current.q, mark, None,
+                                        words, current.page))
+                else:
+                    asks.append(current)
+                current = None
+
+        def close_part():
+            nonlocal prompt, prompt_page
+            close()
+            if part == 'II' and prompt:
+                asks.append(Ask('II', 1, None, None,
+                                TRAILING_MARK.sub('', _norm(' '.join(prompt))),
+                                prompt_page))
+            prompt, prompt_page = [], None
+
+        for line in self.lines:
+            if FURNITURE.match(line.text) and len(line.text) < 60:
+                continue
+            pm = PART_CLASSIC.match(line.text)
+            if pm:
+                close_part()
+                part, q, letter = pm.group(1).upper(), None, None
+                continue
+            if part is None:
+                # The reading text, which every question of Część I is about.
+                # Page 1 is the cover in every one of these sittings.
+                if line.page > 1 and not SOURCE_LINE.match(line.text) \
+                        and line.text != 'ZADANIA':
+                    text_pages.setdefault(1, [])
+                    if line.page not in text_pages[1]:
+                        text_pages[1].append(line.page)
+                continue
+            if PART_SHARE.match(line.text):
+                continue
+            if CHOICE_WORD.match(line.text):
+                close()
+                continue
+            nm = NUMBERED.match(line.text)
+            if part == 'II':
+                # One ask: the quotation and the instruction under it. 2010
+                # numbers it "1." and the other years do not.
+                prompt.append(nm.group(2) if nm and not prompt
+                              and nm.group(1) == '1' else line.text)
+                prompt_page = prompt_page or line.page
+                continue
+            if nm and int(nm.group(1)) == (q or 0) + 1:
+                close()
+                q, letter = int(nm.group(1)), None
+                first = LETTER_CLASSIC.match(nm.group(2)) if part == 'I' else None
+                if first and first.group(1).lower() == 'a':
+                    # "5. a) Jak daleko…" — the question's own line opens its
+                    # first part, and (b) follows on a line of its own. Read
+                    # whole, (a) swallowed (b) and 2019 Questions 5 and 6
+                    # censused as one ask each where the scheme prices two.
+                    asks.append(Ask(part, q, None, None, '', line.page))
+                    letter = 'a'
+                    current = Ask(part, q, 'a', None, first.group(2), line.page)
+                else:
+                    current = Ask(part, q, None, None, nm.group(2), line.page)
+                last_y = line.y
+                continue
+            lm = LETTER_CLASSIC.match(line.text)
+            if lm and part == 'I' and q is not None \
+                    and lm.group(1).lower() == next_letter(letter):
+                close()
+                letter = lm.group(1).lower()
+                current = Ask(part, q, letter, None, lm.group(2), line.page)
+                last_y = line.y
+                continue
+            if current is not None and last_y is not None \
+                    and 0 <= line.y - last_y <= LINE_GAP \
+                    and line.page == current.page:
+                current.text += ' ' + line.text
+                last_y = line.y
+                continue
+            close()
+        close_part()
+        self.text_pages = text_pages
+        self.leads = {}
+        return asks
+
     # ----------------------------------------------------------- listening --
     def _walk_aural(self):
         """The Listening Comprehension booklet's own asks.
@@ -644,7 +785,7 @@ class PlPaper:
                 or a.section == 'I']
 
     def writing_asks(self):
-        return [a for a in self.all_asks() if a.section in ('B', 'II')]
+        return [a for a in self.all_asks() if a.section in ('B', 'II', 'III')]
 
     def aural_asks(self):
         return [a for a in self.all_asks() if (a.section or '').startswith('L')]
