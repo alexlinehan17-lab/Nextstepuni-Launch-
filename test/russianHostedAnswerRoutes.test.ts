@@ -7,6 +7,7 @@ import sources from '../scripts/markbank/authoring/russian-reviewed-sources.json
 // Exact original filenames: EV through 2018, bilingual BV from 2019.
 const repaired = [
   [2010, 'LC099ALP000EV.pdf'], [2010, 'LC099ALPA00EV.pdf'],
+  [2017, 'LC099GLP000EV.pdf'], [2017, 'LC099GLPA00EV.pdf'],
   [2018, 'LC099ALP000EV.pdf'], [2018, 'LC099ALPA00EV.pdf'],
   [2019, 'LC099ALP000BV.pdf'], [2019, 'LC099ALPA00BV.pdf'],
   [2020, 'LC099ALP000BV.pdf'], [2020, 'LC099ALPA00BV.pdf'],

@@ -47,6 +47,9 @@ export const hostedAnchorsUrl = (year: number, fileid: string) =>
  * Storage object is live, an entry can be removed without changing callers.
  */
 export const HOSTED_ANSWER_OVERRIDES = new Set([
+  // Newly reviewed Russian 2017 Ordinary sitting.
+  'russian|2017|LC099GLP000EV.pdf',
+  'russian|2017|LC099GLPA00EV.pdf',
   // Newly reviewed Russian 2021 Higher sitting.
   'russian|2021|LC099ALP000BV.pdf',
   'russian|2021|LC099ALPA00BV.pdf',

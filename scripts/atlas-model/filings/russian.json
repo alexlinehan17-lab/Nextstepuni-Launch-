@@ -297,6 +297,312 @@
         "russian-0-10"
       ],
       "x"
+    ],
+    "ru-2017-ol-ir1-i": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ir1-ii": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ir1-iii": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ir1-iv": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ir1-v": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ir1-vi": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ir1-vii": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ir1-viii": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ir2-i": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ir2-ii": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ir2-iii": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ir2-iv": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ir2-v": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ir2-vi": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ir2-vii": [
+      [
+        "russian-3-4"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-cd-1-i": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-cd-1-ii": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-cd-1-iii": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-cd-2": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-cd-3-i": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-cd-3-ii": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-cd-3-iii": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-cd-3-iv": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-cd-4-i": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-cd-4-ii": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-cd-4-iii": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-cd-4-iv": [
+      [
+        "russian-3-0"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-la1": [
+      [
+        "russian-3-2"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-la2": [
+      [
+        "russian-3-2"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-mm-1": [
+      [
+        "russian-3-5"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-sd": [
+      [
+        "russian-3-3"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-sa": [
+      [
+        "russian-3-6"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-ew": [
+      [
+        "russian-3-9"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l1-1": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l1-2": [
+      [
+        "russian-0-7"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l1-3-i": [
+      [
+        "russian-0-7"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l1-3-ii": [
+      [
+        "russian-0-7"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l1-4": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l2-1": [
+      [
+        "russian-0-8"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l2-2": [
+      [
+        "russian-0-8"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l2-3-i": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l2-3-ii": [
+      [
+        "russian-0-3"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l3-1-i": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l3-1-ii": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l3-2": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l3-3": [
+      [
+        "russian-0-8"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l4-1-i": [
+      [
+        "russian-0-7"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l4-1-ii": [
+      [
+        "russian-0-3"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l4-2": [
+      [
+        "russian-0-3"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l4-3": [
+      [
+        "russian-2-11"
+      ],
+      "x"
+    ],
+    "ru-2017-ol-l4-4": [
+      [
+        "russian-0-7"
+      ],
+      "x"
     ]
   },
   "releaseScope": "New or changed asks replayed after the 19 November release. Combine with the coordinator’s independent Stage 1r filings before enabling the single model; unchanged existing asks are deliberately not re-filed here."

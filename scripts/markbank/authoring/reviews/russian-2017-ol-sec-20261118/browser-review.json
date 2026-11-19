@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-18T22:13:37.804963+00:00",
+  "sampleCards": [
+    "ir1-ii",
+    "ir1-vii",
+    "ir2-iii",
+    "ir2-iv",
+    "la1",
+    "mm-1",
+    "sd",
+    "sa",
+    "ew"
+  ],
+  "widths": [
+    390,
+    1120
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "combinations": 36,
+  "states": [
+    "question",
+    "scheme"
+  ],
+  "captures": 72,
+  "extendedWritingSaved": {
+    "cardId": "ru-2017-ol-ew",
+    "grade": "got",
+    "marksClaimed": 30,
+    "marksAvailable": 30
+  },
+  "readingRoutesObserved": {
+    "completeHotCold": 4,
+    "twoDistinctDetails": 4,
+    "total": 4,
+    "mutuallyExclusive": true
+  },
+  "writtenSourcePagesLoaded": [
+    2,
+    3,
+    4
+  ],
+  "screenshots": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-18-russian-2017-ol",
+  "visualReview": "All nine eight-image contact sheets reviewed, covering both captured states in all 36 combinations. No horizontal content overflow observed. Long original prompts and guidance require scrolling. The outer review viewport crops the top or bottom after scrolling; grading was separately exercised and saved.",
+  "limitations": [
+    "Isolated harness uses the existing session screen; no student progress was saved.",
+    "Listening allocations await Alex; no 2017 listening cards are represented by this written-card review.",
+    "This is branch evidence, not a production release claim."
+  ]
+}
