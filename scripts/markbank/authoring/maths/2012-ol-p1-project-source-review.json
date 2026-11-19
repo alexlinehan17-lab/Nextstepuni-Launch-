@@ -1,0 +1,753 @@
+{
+  "status": "complete",
+  "reviewedAt": "2026-10-30",
+  "paperFileid": "LC003GLP130EV.pdf",
+  "schemeFileid": "LC003GLP030EV.pdf",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "generalNotesPages": [
+    24,
+    25
+  ],
+  "offeredMarks": 300,
+  "candidateMarks": 300,
+  "practiceMarks": 300,
+  "scales": {
+    "5B": [
+      0,
+      3,
+      5
+    ],
+    "5C": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "10B": [
+      0,
+      6,
+      10
+    ],
+    "10C": [
+      0,
+      6,
+      8,
+      10
+    ],
+    "15C": [
+      0,
+      8,
+      13,
+      15
+    ],
+    "25C": [
+      0,
+      8,
+      20,
+      25
+    ],
+    "25D": [
+      0,
+      6,
+      13,
+      20,
+      25
+    ]
+  },
+  "tasks": [
+    {
+      "suffix": "1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "scale": "10C",
+      "schemePages": [
+        7,
+        26
+      ],
+      "sourcePages": [
+        3
+      ],
+      "questionText": "Alan pays income tax at 20% and has weekly tax credits of €63. How much income tax does he pay?",
+      "stem": "Alan pays income tax, USC and PRSI on gross weekly wages of €510."
+    },
+    {
+      "suffix": "1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "scale": "10C",
+      "schemePages": [
+        7,
+        26
+      ],
+      "sourcePages": [
+        3
+      ],
+      "questionText": "Alan pays USC at 2% on the first €193, 4% on the next €115 and 7% on the balance. Calculate the amount of USC he pays.",
+      "stem": "Alan pays income tax, USC and PRSI on gross weekly wages of €510."
+    },
+    {
+      "suffix": "1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "scale": "5B",
+      "schemePages": [
+        7,
+        26
+      ],
+      "sourcePages": [
+        3
+      ],
+      "questionText": "His total weekly deductions are €76·92. How much PRSI does Alan pay?",
+      "stem": "Alan pays income tax, USC and PRSI on gross weekly wages of €510. Income tax is 20%, with €63 weekly credits. USC is 2% on €193, 4% on the next €115, then 7% on the balance."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "scale": "10C",
+      "schemePages": [
+        8,
+        27
+      ],
+      "sourcePages": [
+        4
+      ],
+      "questionText": "Let a = √2. For each number a, a − 1, (−a)², (a − 2)² and 1 + a², tick whether it is rational or irrational."
+    },
+    {
+      "suffix": "2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "scale": "10C",
+      "schemePages": [
+        8,
+        27
+      ],
+      "sourcePages": [
+        4
+      ],
+      "questionText": "Let a = √2. Show a, −a, √a and a⁻² on the number line."
+    },
+    {
+      "suffix": "2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "scale": "5C",
+      "schemePages": [
+        8,
+        27
+      ],
+      "sourcePages": [
+        4
+      ],
+      "questionText": "Verify that 3 − √2 is a root of x² − 6x + 7 = 0."
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "scale": "15C",
+      "schemePages": [
+        9,
+        28
+      ],
+      "sourcePages": [
+        5
+      ],
+      "questionText": "Plot z and −2z on the Argand diagram.",
+      "stem": "The complex number z = 1 − 4i, where i² = −1."
+    },
+    {
+      "suffix": "3-b-c-d",
+      "printedParts": [
+        "Q3(b)",
+        "Q3(c)",
+        "Q3(d)"
+      ],
+      "scale": "10C",
+      "schemePages": [
+        9,
+        28
+      ],
+      "sourcePages": [
+        5
+      ],
+      "questionText": "(b) Show that 2|z| = |−2z|. (c) What does this tell you about the points plotted in (a)? (d) Let k be real with |z + k| = 5. Find the two possible values of k.",
+      "stem": "The complex number z = 1 − 4i, where i² = −1. Part (a) asks you to plot z and −2z; use the original Argand diagram."
+    },
+    {
+      "suffix": "4-a-b",
+      "printedParts": [
+        "Q4(a)",
+        "Q4(b)"
+      ],
+      "scale": "25D",
+      "schemePages": [
+        10,
+        28
+      ],
+      "sourcePages": [
+        6
+      ],
+      "questionText": "(a) Solve ½(7x − 2) + 5 = 2x + 7. (b) Solve 2/(3x − 4) − 1/(2x + 1) = ½, giving answers to one decimal place."
+    },
+    {
+      "suffix": "5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "scale": "15C",
+      "schemePages": [
+        11,
+        29
+      ],
+      "sourcePages": [
+        7
+      ],
+      "questionText": "Draw the graph of g on the diagram.",
+      "stem": "Use the original graph of f. The graph of g is a straight line with g(−1) = −6 and g(3) = 6."
+    },
+    {
+      "suffix": "5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "scale": "5C",
+      "schemePages": [
+        11,
+        29
+      ],
+      "sourcePages": [
+        7
+      ],
+      "questionText": "Use the graphs to find both values of x for which g(x) = f(x).",
+      "stem": "Use the original graph of f. The graph of g is a straight line with g(−1) = −6 and g(3) = 6."
+    },
+    {
+      "suffix": "5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "scale": "5C",
+      "schemePages": [
+        11,
+        29
+      ],
+      "sourcePages": [
+        7
+      ],
+      "questionText": "For x ∈ ℝ, g(x) = ax + b and f(x) = x² + px + q, where a, b, p, q are constants. The graph of f crosses the x-axis at −1 and 3. Find a, b, p, q and use algebra to solve g(x) = f(x).",
+      "stem": "Use the original graph of f. The graph of g is a straight line with g(−1) = −6 and g(3) = 6."
+    },
+    {
+      "suffix": "6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "scale": "10C",
+      "schemePages": [
+        12,
+        30
+      ],
+      "sourcePages": [
+        8
+      ],
+      "questionText": "Find the coordinates of the point at which f cuts the y-axis.",
+      "stem": "The original diagram shows f(x) = x³ − x² − x + 6 for x ∈ ℝ."
+    },
+    {
+      "suffix": "6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "scale": "10C",
+      "schemePages": [
+        12,
+        30
+      ],
+      "sourcePages": [
+        8
+      ],
+      "questionText": "f has a minimum turning point at (1, 5). Find the coordinates of the maximum turning point.",
+      "stem": "The original diagram shows f(x) = x³ − x² − x + 6 for x ∈ ℝ."
+    },
+    {
+      "suffix": "6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "scale": "5C",
+      "schemePages": [
+        13,
+        30
+      ],
+      "sourcePages": [
+        8,
+        9
+      ],
+      "questionText": "The lines k and l are parallel tangents to y = f(x). The equation of k is 4x − y + 9 = 0. Find the x-coordinate of the point where l is tangent to the curve.",
+      "stem": "The original diagram shows f(x) = x³ − x² − x + 6 for x ∈ ℝ."
+    },
+    {
+      "suffix": "7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "scale": "10B",
+      "schemePages": [
+        14,
+        31
+      ],
+      "sourcePages": [
+        10
+      ],
+      "questionText": "The adult dose is 125 mg per day. Calculate the dose for a child weighing 30 kg using Clark’s rule, to the nearest 5 mg.",
+      "stem": "In the examination model, Clark’s rule is C = (W/68) × A, where C is the child’s dose, A the adult dose and W the child’s weight in kg.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "scale": "5B",
+      "schemePages": [
+        14,
+        31
+      ],
+      "sourcePages": [
+        10
+      ],
+      "questionText": "Divide the child’s age by the child’s age plus 12, then multiply by the usual adult dose.",
+      "stem": "Write a formula that exactly matches the supplied description of Young’s rule. State clearly the meaning of any letters used."
+    },
+    {
+      "suffix": "7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "scale": "5B",
+      "schemePages": [
+        14,
+        15,
+        31
+      ],
+      "sourcePages": [
+        10,
+        11
+      ],
+      "questionText": "Add 12 to the child’s age, divide the sum by the child’s age, then divide the adult dose by the figure obtained.",
+      "stem": "Write a formula that exactly matches the supplied description of Young’s rule. State clearly the meaning of any letters used."
+    },
+    {
+      "suffix": "7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "scale": "5B",
+      "schemePages": [
+        14,
+        15,
+        31
+      ],
+      "sourcePages": [
+        10,
+        11
+      ],
+      "questionText": "Multiply the adult dose by the child’s age in years and divide the result by the child’s age plus 12.",
+      "stem": "Write a formula that exactly matches the supplied description of Young’s rule. State clearly the meaning of any letters used."
+    },
+    {
+      "suffix": "7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "scale": "5B",
+      "schemePages": [
+        14,
+        15,
+        31
+      ],
+      "sourcePages": [
+        10,
+        11
+      ],
+      "questionText": "Explain why the three formulae in part (b) all give the same result.",
+      "stem": "Young’s rule is described three ways: divide age by (age + 12), then multiply by adult dose; divide adult dose by ((age + 12)/age); or divide (adult dose × age) by (age + 12)."
+    },
+    {
+      "suffix": "7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "scale": "5B",
+      "schemePages": [
+        15,
+        31
+      ],
+      "sourcePages": [
+        10,
+        11
+      ],
+      "questionText": "The adult dose is 150 mg per day. According to Young’s rule, what is the correct dose for a six-year-old child?",
+      "stem": "Young’s rule is described three ways: divide age by (age + 12), then multiply by adult dose; divide adult dose by ((age + 12)/age); or divide (adult dose × age) by (age + 12).",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "scale": "5C",
+      "schemePages": [
+        15,
+        31
+      ],
+      "sourcePages": [
+        10,
+        11
+      ],
+      "questionText": "Young’s rule gives a child one fifth of the adult dose. How old is the child?",
+      "stem": "Young’s rule is described three ways: divide age by (age + 12), then multiply by adult dose; divide adult dose by ((age + 12)/age); or divide (adult dose × age) by (age + 12)."
+    },
+    {
+      "suffix": "7-f",
+      "printedParts": [
+        "Q7(f)"
+      ],
+      "scale": "5C",
+      "schemePages": [
+        16,
+        31
+      ],
+      "sourcePages": [
+        12
+      ],
+      "questionText": "The adult dose is 200 mg per day. Use the BSA rule to calculate the dose for a child of height 125 cm and weight 26 kg.",
+      "stem": "Use the original BSA chart and the examination rule: child’s dose = (child’s BSA in m² / 1·73) × adult dose. Join height on the left scale to weight on the right to read the BSA.",
+      "fullCreditMinusOne": true,
+      "measurementRequired": true
+    },
+    {
+      "suffix": "7-g",
+      "printedParts": [
+        "Q7(g)"
+      ],
+      "scale": "5C",
+      "schemePages": [
+        16,
+        17,
+        32
+      ],
+      "sourcePages": [
+        10,
+        12,
+        13
+      ],
+      "questionText": "A child is nine years old. Clark’s and Young’s rules both give 90 mg per day; the BSA rule gives 130 mg per day. Find the weight and height of the child.",
+      "stem": "In the examination model, Clark’s rule is C = (W/68) × A, where C is the child’s dose, A the adult dose and W the child’s weight in kg. Young’s rule is described three ways: divide age by (age + 12), then multiply by adult dose; divide adult dose by ((age + 12)/age); or divide (adult dose × age) by (age + 12). Use the original BSA chart and the examination rule: child’s dose = (child’s BSA in m² / 1·73) × adult dose. Join height on the left scale to weight on the right to read the BSA.",
+      "fullCreditMinusOne": true,
+      "measurementRequired": true
+    },
+    {
+      "suffix": "8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "scale": "10B",
+      "schemePages": [
+        18,
+        33
+      ],
+      "sourcePages": [
+        14
+      ],
+      "questionText": "Draw the next row of coins, continuing the same pattern.",
+      "stem": "Lucy arranges 1-cent and 5-cent coins in rows. Use the original row pattern and table."
+    },
+    {
+      "suffix": "8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "scale": "10C",
+      "schemePages": [
+        18,
+        33
+      ],
+      "sourcePages": [
+        14
+      ],
+      "questionText": "Complete the table for rows 4 to 7, giving the number of each denomination, total number and total value.",
+      "stem": "Lucy arranges 1-cent and 5-cent coins in rows. Use the original row pattern and table."
+    },
+    {
+      "suffix": "8-c",
+      "printedParts": [
+        "Q8(c)(i)",
+        "Q8(c)(ii)"
+      ],
+      "scale": "5C",
+      "schemePages": [
+        19,
+        33
+      ],
+      "sourcePages": [
+        14,
+        15
+      ],
+      "questionText": "Complete both sentences in terms of n: (i) if n is odd, row n has ___ 1-cent coins and ___ 5-cent coins; (ii) if n is even, row n has ___ 1-cent coins and ___ 5-cent coins.",
+      "stem": "Lucy arranges 1-cent and 5-cent coins in rows. Use the original row pattern and table."
+    },
+    {
+      "suffix": "8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "scale": "15C",
+      "schemePages": [
+        19,
+        33
+      ],
+      "sourcePages": [
+        14,
+        15
+      ],
+      "questionText": "Find the total number of coins in the 40th row.",
+      "stem": "Lucy arranges 1-cent and 5-cent coins in rows. Use the original row pattern and table."
+    },
+    {
+      "suffix": "8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "scale": "5C",
+      "schemePages": [
+        19,
+        33
+      ],
+      "sourcePages": [
+        14,
+        15
+      ],
+      "questionText": "Find the total value of the coins in the 40th row.",
+      "stem": "Lucy arranges 1-cent and 5-cent coins in rows. Use the original row pattern and table."
+    },
+    {
+      "suffix": "8-f-g",
+      "printedParts": [
+        "Q8(f)",
+        "Q8(g)"
+      ],
+      "scale": "5C",
+      "schemePages": [
+        20,
+        34
+      ],
+      "sourcePages": [
+        14,
+        16
+      ],
+      "questionText": "(f) Which row has coins with a total value of 337 cent? (g) Find the total value of the coins in the first 40 rows.",
+      "stem": "Lucy arranges 1-cent and 5-cent coins in rows. Use the original row pattern and table."
+    },
+    {
+      "suffix": "9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "scale": "5C",
+      "schemePages": [
+        21,
+        35
+      ],
+      "sourcePages": [
+        17
+      ],
+      "questionText": "Find the rate at which its value was changing after 6 months.",
+      "stem": "An investment of €100 is modelled by V = 100 + 45t − 1·5t², where V is its value in euro and t is the number of months since it was made.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "scale": "5C",
+      "schemePages": [
+        21,
+        35
+      ],
+      "sourcePages": [
+        17
+      ],
+      "questionText": "State whether its value was increasing or decreasing after 18 months. Justify your answer.",
+      "stem": "An investment of €100 is modelled by V = 100 + 45t − 1·5t², where V is its value in euro and t is the number of months since it was made."
+    },
+    {
+      "suffix": "9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "scale": "25C",
+      "schemePages": [
+        21,
+        35
+      ],
+      "sourcePages": [
+        17
+      ],
+      "questionText": "The investment was cashed in at the end of 24 months. How much was it worth then?",
+      "stem": "An investment of €100 is modelled by V = 100 + 45t − 1·5t², where V is its value in euro and t is the number of months since it was made."
+    },
+    {
+      "suffix": "9-a-iv",
+      "printedParts": [
+        "Q9(a)(iv)"
+      ],
+      "scale": "5C",
+      "schemePages": [
+        22,
+        35
+      ],
+      "sourcePages": [
+        17,
+        18
+      ],
+      "questionText": "How much was the investment worth when it had its maximum value?",
+      "stem": "An investment of €100 is modelled by V = 100 + 45t − 1·5t², where V is its value in euro and t is the number of months since it was made."
+    },
+    {
+      "suffix": "9-b",
+      "printedParts": [
+        "Q9(b)(i)",
+        "Q9(b)(ii)",
+        "Q9(b)(iii)",
+        "Q9(b)(iv)"
+      ],
+      "scale": "10C",
+      "schemePages": [
+        22,
+        23,
+        36
+      ],
+      "sourcePages": [
+        18,
+        19
+      ],
+      "questionText": "Garden slabs measure 40 cm by 20 cm, with x slabs on one side and y on the adjacent side of a rectangle. (i) Write the perimeter in cm in terms of x and y. (ii) The perimeter is 64 m; find y in terms of x. (iii) Find x for maximum area. (iv) Find the number of slabs needed."
+    }
+  ],
+  "notes": [
+    "All 20 original paper pages and scheme pages 1–36 independently visually inspected. All 35 published mark units retained.",
+    "Q3(b,c,d), Q4(a,b), Q8(c)(i,ii), Q8(f,g) and Q9(b)(i–iv) remain joint responses at their single published scales. Required entries and both roots are not optional routes.",
+    "Five starred tasks only: Q7(a,d,f,g), Q9(a)(i). Units omission is penalised once across Q7(a,d,f), as retained in the original notes.",
+    "Q7(b) definitions of letters apply once across the three required formula responses. Every standalone card preserves the instruction and definition context; the combined-exam convention is disclosed.",
+    "The source has a duplicated/overprinted BSA chart heading. Preserve its original scales and chart; exact source pages support ruler measurement.",
+    "No finite printed task-internal selection pool found. Every diagram, table, graph, formula and dependent stem remains available."
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        10
+      ],
+      "wording": "Answer all nine/six/three questions",
+      "classification": "all-required",
+      "reason": "All nine questions are required; every published mark unit is retained."
+    },
+    {
+      "pages": [
+        4,
+        5,
+        7,
+        10,
+        11,
+        14,
+        15,
+        18,
+        19
+      ],
+      "wording": "For each; two possible values; two values; In each case; Complete the table; odd/even; maximum",
+      "classification": "all-required-within-joint-task",
+      "reason": "Every table entry, both roots, all three formula descriptions, both parity cases and all optimisation steps are compulsory. No choose-k route."
+    },
+    {
+      "pages": [
+        10
+      ],
+      "wording": "One rule for working out the child’s dose",
+      "classification": "given-model",
+      "reason": "Introduces Clark’s rule; not a candidate question selection."
+    }
+  ],
+  "paperSha256": "3b3d2bbace29e65578cd80c2040d84bb66a6fb75f9a581490f1f9e57e6882ae2",
+  "schemeSha256": "cd5eb0637449f098575ff73ce6eaaf3cbaf355c099f08cbae2a32cd9053bd7d0"
+}

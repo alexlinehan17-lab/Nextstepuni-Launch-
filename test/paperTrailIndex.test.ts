@@ -9,6 +9,7 @@
  * jcToolVisibility.test.ts instead.
  */
 
+import { existsSync, readFileSync } from 'node:fs';
 import { describe, it, expect } from 'vitest';
 import { CURRICULUM } from '../curriculum';
 import {
@@ -191,9 +192,16 @@ describe('Paper Trail sittings', () => {
         expect(item.label, where).toMatch(/^Deferred · /);
         expect(item.doc.f, where).toMatch(/-deferred\.(pdf|jpg)$/);
         if (item.scheme) expect(item.scheme.f, where).toMatch(/-deferred\.pdf$/);
-        // No answer map has been built for a deferred paper; a June sidecar
-        // keyed by the shared SEC fileid must never light it.
-        expect(item.answers, where).toBeUndefined();
+        // A deferred paper lights only with its own reviewed answer map, keyed by
+        // its own "-deferred" fileid (Maths, Physics and Home Economics since the
+        // 2026-11-18 release); a June sidecar keyed by the shared SEC fileid must
+        // never light it.
+        if (item.answers !== undefined) {
+          const own = ['../scripts/paper-trail/answers', '../public/paper-answers']
+            .map(dir => `${__dirname}/${dir}/${entry.year}/${item.doc.f}.json`).find(file => existsSync(file));
+          expect(own, `${where}: its own deferred answer map`).toBeDefined();
+          expect(JSON.parse(readFileSync(own!, 'utf8')).paperFileid, where).toBe(item.doc.f);
+        }
       } else {
         expect(item.doc.f, where).not.toMatch(/-deferred\./);
         if (item.scheme) expect(item.scheme.f, where).not.toMatch(/-deferred\./);

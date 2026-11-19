@@ -1,0 +1,619 @@
+{
+  "schemaVersion": 1,
+  "year": 2010,
+  "level": "ordinary",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-reviewed",
+  "sources": {
+    "paper-trail-corpus/exampapers/2010/LC098GLP000EV.pdf": {
+      "sha256": "2d1345c5b86465c9cc40c45d04d141bd3bd9c7c3b02e0f0ca31dfb832b79bfdd",
+      "pages": 12
+    },
+    "paper-trail-corpus/markingschemes/2010/LC098GLP000EV.pdf": {
+      "sha256": "bcd30296678dc76bcccd09b70d783d3e295721e6d7e60192e11c156c79808200",
+      "pages": 34
+    }
+  },
+  "visualSweep": {
+    "paper": "All 12 pages independently reviewed: cover/instructions1; A2–5; B6–8; C9–11; explicit blank12.",
+    "scheme": "All 34 pages independently reviewed: cover1,blank2,guidance3,A4–7,B8–13,C14–20 (C3 continuation20),separate food-studies coursework21–32,blank33,backcover34."
+  },
+  "expectedTasks": 50,
+  "expectedSectionTasks": {
+    "A": 16,
+    "B": 16,
+    "C": 18
+  },
+  "sourceQuestionGroups": 20,
+  "offeredPracticeMarks": 627,
+  "sectionMarks": {
+    "A": 72,
+    "B": 280,
+    "C": 275
+  },
+  "censusBeforeAuthoring": true,
+  "tasks": [
+    {
+      "id": "he-2010-ol-sa-q1",
+      "section": "A",
+      "marks": 4,
+      "questionRef": "2010 OL Section A Q1",
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2010-ol-sa-q1-sources",
+      "section": "A",
+      "marks": 2,
+      "questionRef": "2010 OL Section A Q1 — sources",
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2010-ol-sa-q2",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 OL Section A Q2",
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2010-ol-sa-q3",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 OL Section A Q3",
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2010-ol-sa-q4",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 OL Section A Q4",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2010-ol-sa-q5",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 OL Section A Q5",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2010-ol-sa-q6",
+      "section": "A",
+      "marks": 2,
+      "questionRef": "2010 OL Section A Q6",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2010-ol-sa-q6-careers",
+      "section": "A",
+      "marks": 4,
+      "questionRef": "2010 OL Section A Q6 — careers",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2010-ol-sa-q7",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 OL Section A Q7",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2010-ol-sa-q8",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 OL Section A Q8",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2010-ol-sa-q9",
+      "section": "A",
+      "marks": 3,
+      "questionRef": "2010 OL Section A Q9",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2010-ol-sa-q9-symbol",
+      "section": "A",
+      "marks": 3,
+      "questionRef": "2010 OL Section A Q9 — symbol",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2010-ol-sa-q10",
+      "section": "A",
+      "marks": 4,
+      "questionRef": "2010 OL Section A Q10",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2010-ol-sa-q10-assurance",
+      "section": "A",
+      "marks": 2,
+      "questionRef": "2010 OL Section A Q10 — assurance",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2010-ol-sa-q11",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 OL Section A Q11",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2010-ol-sa-q12",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 OL Section A Q12",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2010-ol-sb-q1a",
+      "section": "B",
+      "marks": 9,
+      "questionRef": "2010 OL Section B Q1(a)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2010-ol-sb-q1b",
+      "section": "B",
+      "marks": 15,
+      "questionRef": "2010 OL Section B Q1(b)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2010-ol-sb-q1c",
+      "section": "B",
+      "marks": 36,
+      "questionRef": "2010 OL Section B Q1(c)",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2010-ol-sb-q1d",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2010 OL Section B Q1(d)",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2010-ol-sb-q2a",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2010 OL Section B Q2(a)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2010-ol-sb-q2b",
+      "section": "B",
+      "marks": 14,
+      "questionRef": "2010 OL Section B Q2(b)",
+      "topicId": "home-economics-0-10"
+    },
+    {
+      "id": "he-2010-ol-sb-q2c",
+      "section": "B",
+      "marks": 16,
+      "questionRef": "2010 OL Section B Q2(c)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2010-ol-sb-q3a",
+      "section": "B",
+      "marks": 16,
+      "questionRef": "2010 OL Section B Q3(a)",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2010-ol-sb-q3b",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2010 OL Section B Q3(b)",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2010-ol-sb-q3c",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2010 OL Section B Q3(c)",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2010-ol-sb-q4a",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2010 OL Section B Q4(a)",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2010-ol-sb-q4b",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2010 OL Section B Q4(b)",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2010-ol-sb-q4c",
+      "section": "B",
+      "marks": 18,
+      "questionRef": "2010 OL Section B Q4(c)",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2010-ol-sb-q5a",
+      "section": "B",
+      "marks": 15,
+      "questionRef": "2010 OL Section B Q5(a)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2010-ol-sb-q5b",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2010 OL Section B Q5(b)",
+      "topicId": "home-economics-2-1"
+    },
+    {
+      "id": "he-2010-ol-sb-q5c",
+      "section": "B",
+      "marks": 15,
+      "questionRef": "2010 OL Section B Q5(c)",
+      "topicId": "home-economics-2-1"
+    },
+    {
+      "id": "he-2010-ol-sc-q1ai",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2010 OL Section C E1 Q1(a)(i)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2010-ol-sc-q1aii",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2010 OL Section C E1 Q1(a)(ii)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2010-ol-sc-q1aiii",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2010 OL Section C E1 Q1(a)(iii)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2010-ol-sc-q1bi",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2010 OL Section C E1 Q1(b)(i)",
+      "topicId": "home-economics-3-6"
+    },
+    {
+      "id": "he-2010-ol-sc-q1bii",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2010 OL Section C E1 Q1(b)(ii)",
+      "topicId": "home-economics-3-6"
+    },
+    {
+      "id": "he-2010-ol-sc-q1ci",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2010 OL Section C E1 Q1(c)(i)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2010-ol-sc-q1cii",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2010 OL Section C E1 Q1(c)(ii)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2010-ol-sc-q2ai",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2010 OL Section C E2 Q2(a)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2010-ol-sc-q2aii",
+      "section": "C",
+      "marks": 7,
+      "questionRef": "2010 OL Section C E2 Q2(a)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2010-ol-sc-q2bi",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2010 OL Section C E2 Q2(b)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2010-ol-sc-q2bii",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2010 OL Section C E2 Q2(b)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2010-ol-sc-q2c",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2010 OL Section C E2 Q2(c)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2010-ol-sc-q3ai",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2010 OL Section C E3 Q3(a)(i)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2010-ol-sc-q3aii",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2010 OL Section C E3 Q3(a)(ii)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2010-ol-sc-q3aiii",
+      "section": "C",
+      "marks": 14,
+      "questionRef": "2010 OL Section C E3 Q3(a)(iii)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2010-ol-sc-q3bi",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2010 OL Section C E3 Q3(b)(i)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2010-ol-sc-q3bii",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2010 OL Section C E3 Q3(b)(ii)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2010-ol-sc-q3c",
+      "section": "C",
+      "marks": 30,
+      "questionRef": "2010 OL Section C E3 Q3(c)",
+      "topicId": "home-economics-3-11"
+    }
+  ],
+  "sourceDecisions": [
+    "A1 elements4/source pair2; A6 agencies2/careers4; A9 labelling3/symbol3; A10 budget4/life assurance2 are distinct original asks. All12 physical A questions preserved as16 tasks.",
+    "B3(b) explicitly prices a pair of suitable foods at4 total; do not invent2 marks per food. Name4,method3×4,packaging4 remain a single24-mark chosen-method profile.",
+    "B5(a) requires at least one physical and one psychological need among three5-mark points.",
+    "C2(a)(i) prints a blank fashion-influences bullet in its answer guide; preserve the photo/prompt and flag the absence in visible guidance, never invent a model.",
+    "C2(c) paper lists production/properties/uses; the scheme additionally names the fabric and requires one reference to each of four headings plus one further3-mark point. Retain original paper prompt and explain marking detail visibly.",
+    "C3(a)(i),C3(b)(i) andC3(c) print minimum required-heading quotas plus flexible further points. Keep their single source tasks and all choices; no combinatorial cards."
+  ],
+  "sectionAReview": {
+    "tasks": 16,
+    "marks": 72,
+    "selectionDecisions": "A1,6,9,10 independent companion asks split only at their published tariffs. Printed choose-two pools retained. Flour names and dependent uses remain three paired groups. No invented partial-credit ladders."
+  },
+  "sectionBReview": {
+    "tasks": 16,
+    "marks": 280,
+    "selectionDecisions": "Menus, processed-meat pairs, preservation profiles and same-family income/expenditure remain whole. Suitable foods retain the source’s four-mark pair with no inferred per-food tariff. Child-needs minimum headings and flexible third point explicitly retained."
+  },
+  "sectionCReview": {
+    "tasks": 18,
+    "marks": 275,
+    "selectionDecisions": "Required area/method and flooring/properties pairs stay whole. All flexible heading quotas remain explicit. Fashion-influences source blank and extra scheme fabric-name requirement are recorded in visible row notes. C3(c) is one choose-three task with all four headings and its continued original guidance."
+  },
+  "figures": {
+    "home-economics-2010-ol-sa-q2": {
+      "source": "paper-trail-corpus/exampapers/2010/LC098GLP000EV.pdf",
+      "page": 2,
+      "bounds": [
+        45,
+        400.9676818847656,
+        560.219970703125,
+        566.5675048828125
+      ],
+      "alt": "Original carbohydrate cloze question with word bank: liver, energy, cellulose. All three sentences and answer blanks retained.",
+      "sha256": "e1adfeca6161ac67972b52855d105a2ce24a49a02401467896ff480dadc563cc"
+    },
+    "home-economics-2010-ol-sa-q4": {
+      "source": "paper-trail-corpus/exampapers/2010/LC098GLP000EV.pdf",
+      "page": 3,
+      "bounds": [
+        45,
+        39.88771057128906,
+        560.219970703125,
+        228.4076690673828
+      ],
+      "alt": "Original vitamin true/false table with all three statements and empty answer columns. Statements concern night blindness and vitamin A, vitamin C and iron absorption, and whether vitamin B is fat-soluble.",
+      "sha256": "37d4c2b3dc82230a02cd3c1f35910839a672cdbb2e69ae4e7a7d06f45996e084"
+    },
+    "home-economics-2010-ol-sa-q7": {
+      "source": "paper-trail-corpus/exampapers/2010/LC098GLP000EV.pdf",
+      "page": 3,
+      "bounds": [
+        45,
+        587.1475830078125,
+        560.219970703125,
+        790
+      ],
+      "alt": "Original three-row flour and culinary-use table. Each row asks for a type of flour and one different matching culinary use.",
+      "sha256": "77e077e2939d6387494ba04753c698f8fea2ce04a8074f45082cc0db62fee714"
+    },
+    "home-economics-2010-ol-sa-q8": {
+      "source": "paper-trail-corpus/exampapers/2010/LC098GLP000EV.pdf",
+      "page": 4,
+      "bounds": [
+        45,
+        39.88771057128906,
+        560.219970703125,
+        256.0076599121094
+      ],
+      "alt": "Original food-additive matching table. Given options: herbs and spices, vitamin E, turmeric. Given classes: Colourings, Flavourings, Antioxidants; answer cells blank.",
+      "sha256": "0b77980d775bdb748d91bcf6e4c9300a7a877d164e986bf201669988c9dab0a9"
+    },
+    "home-economics-2010-ol-sa-q9-symbol": {
+      "source": "paper-trail-corpus/exampapers/2010/LC098GLP000EV.pdf",
+      "page": 4,
+      "bounds": [
+        98,
+        390,
+        201,
+        498
+      ],
+      "alt": "Original household-cleaning hazard symbol: a bold black diagonal cross inside a square; the identification and explanation are left to the student.",
+      "sha256": "3ca3e04191299eb3e8c265696e1ad07a045c6e4ae6de6da60c9bb33521ff0c2e"
+    },
+    "home-economics-2010-ol-sb-q1-milk": {
+      "source": "paper-trail-corpus/exampapers/2010/LC098GLP000EV.pdf",
+      "page": 6,
+      "bounds": [
+        45,
+        180,
+        550,
+        462
+      ],
+      "alt": "Original nutritional information per 100g: Whole Milk / Semi-skimmed Milk. Energy kcal 66 / 46; Protein (g) 3.3 / 3.5; Carbohydrates (g) 4.6 / 4.7; Fat (g) 3.9 / 1.7; Saturated fatty acids (g) 2.5 / 1.1; Calcium 118 / 120; Iron (mg) 0.03 / 0.02; Vitamin A (Retinol) 30 / 19; Folate 8 / 9; Vitamin C 2 / 2. All source rows and units retained; no missing units inferred.",
+      "sha256": "484ad1d5d6682b67544cd878747cec2887ca37033fe3c2c2e55462581eb8eaad"
+    },
+    "home-economics-2010-ol-sc-q1-plan": {
+      "source": "paper-trail-corpus/exampapers/2010/LC098GLP000EV.pdf",
+      "page": 9,
+      "bounds": [
+        130,
+        170,
+        505,
+        444
+      ],
+      "alt": "Original two-bedroom house floor plan, with both bedrooms, bathroom, corridor, hall, lounge and kitchen/dining labels, walls, doors and windows intact. Blueprint Home Plans attribution retained.",
+      "sha256": "d0f7e57368324b1458f51b6f44653860425d1983be18f2aa568fbe10bba6d6da"
+    },
+    "home-economics-2010-ol-sc-q2-fashion": {
+      "source": "paper-trail-corpus/exampapers/2010/LC098GLP000EV.pdf",
+      "page": 10,
+      "bounds": [
+        199,
+        85,
+        382,
+        350
+      ],
+      "alt": "Original black-and-white photograph of two adults wearing formal outfits. Complete photograph retained: dress, suit, patterned shirt and neckwear, hat, sunglasses, belt and jewellery are visible.",
+      "sha256": "7e336340a581f85609ec5d896ecb2b82550b0c0f1d319d65bd9da7077fa79eef"
+    }
+  },
+  "sourceCensusReconciliation": {
+    "independentPracticeTasks": 50,
+    "rawPaperLeaves": 46,
+    "sectionPracticeTasks": {
+      "A": 16,
+      "B": 16,
+      "C": 18
+    },
+    "sectionRawLeaves": {
+      "A": 12,
+      "B": 16,
+      "C": 18
+    },
+    "explanation": "The raw walker retains each numbered short question as one leaf. Four A questions contain separately prompted and separately allocated tasks, giving16 A tasks from12 numbered leaves. This is not inferred from parser counts: the paper/scheme page sweep established the50-task census before authoring.",
+    "separatelyPricedCompanions": [
+      {
+        "question": "A1",
+        "paperPage": 2,
+        "schemePage": 4,
+        "tasks": [
+          {
+            "id": "he-2010-ol-sa-q1",
+            "ask": "List the four elements found in proteins.",
+            "marks": 4
+          },
+          {
+            "id": "he-2010-ol-sa-q1-sources",
+            "ask": "Give one source of each of the following proteins.",
+            "marks": 2
+          }
+        ]
+      },
+      {
+        "question": "A6",
+        "paperPage": 3,
+        "schemePage": 5,
+        "tasks": [
+          {
+            "id": "he-2010-ol-sa-q6",
+            "ask": "Name two government departments or agencies that have a role in the food and drinks industry.",
+            "marks": 2
+          },
+          {
+            "id": "he-2010-ol-sa-q6-careers",
+            "ask": "List two career opportunities in the food industry.",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "question": "A9",
+        "paperPage": 4,
+        "schemePage": 6,
+        "tasks": [
+          {
+            "id": "he-2010-ol-sa-q9",
+            "ask": "State the purpose of labelling on household cleaning agents.",
+            "marks": 3
+          },
+          {
+            "id": "he-2010-ol-sa-q9-symbol",
+            "ask": "Identify and explain this hazard symbol.",
+            "marks": 3
+          }
+        ]
+      },
+      {
+        "question": "A10",
+        "paperPage": 4,
+        "schemePage": 6,
+        "tasks": [
+          {
+            "id": "he-2010-ol-sa-q10",
+            "ask": "Outline two advantages of planning a household budget.",
+            "marks": 4
+          },
+          {
+            "id": "he-2010-ol-sa-q10-assurance",
+            "ask": "What protection does life assurance give to a person or family?",
+            "marks": 2
+          }
+        ]
+      }
+    ],
+    "mandatorySourceGate": "python3 scripts/markbank/authoring/he_validate_2010_source_census.py",
+    "coveredSourceLeaves": 46,
+    "openSourceLeaves": 0,
+    "excludedSourceLeaves": 0,
+    "orphanCards": 0,
+    "continuityFlags": 0
+  },
+  "validation": {
+    "requiredVitest": "232 required preservation/curriculum/deck tests passed; seven Higher and seven Ordinary2010 runtime/source regressions passed at maxWorkers1. Fourteen sitting regressions rerun after closing the two printed choose-two pools.",
+    "mandatoryRawSourceGate": "Passed: python3 scripts/markbank/authoring/he_validate_2010_source_census.py. Original hashes and independently pinned50HL/46OL source keys, zero continuity flags. Evidence: tmp/he-2010-source-census-gate.json. This source gate requires the local PDF archive; normal Vitest has no Python/fitz/archive dependency and no skipped suite.",
+    "atlas": "Two targeted Home Economics registry tests passed. All50 new cards map to20 preserved original groups and canonical topics;61 tagged papers,656 physical groups,1002 registry mappings.",
+    "mainTypecheck": "passed",
+    "scoped2010TestTypecheck": "passed",
+    "productionBuild": "passed; own reproducible dist removed after success",
+    "cardlint": "clean",
+    "regeneration": "Two full authoring/figures/deck/Atlas/tags/showcase/landing regenerations byte-identical across33 files, including final metadata.",
+    "preservation": "All earlier authored cards, other decks, unrelated sizes/showcase subjects, tags/runtime/associations and other HE sitting censuses unchanged; frozen identity hashes unchanged.",
+    "reconciliation": "2010 Ordinary46/46 raw paper leaves covered,50 independently priced tasks,zero exclusions/orphans/continuity flags. Whole subject938 cards,897/1401 covered,504 open,zero orphans/unparsed/exclusions and34 census flags.",
+    "browser": "Pending parent integration/live QA. All eight source crops independently visually inspected."
+  },
+  "reviewCorrections": [
+    "Footer-aware extraction retains the low-printed flooring property prompt and final marmoleum guidance. Independently checked2010 Higher has no source text beyond its earlier cutoff.",
+    "Short A3 and A12 preserve their closed choose-two-of-three pools. Agencies/careers retain all10/13 published examples despite the generic eight-option advisory cap; no valid source option was discarded.",
+    "Raw-source census now recognizes quoted B heads, the whole-question A section boundary and gram units as input data, not a phantom(g) task.",
+    "Mandatory raw-PDF census checks for both2010 levels moved out of checkout-only Vitest; independent source verification remains required."
+  ]
+}

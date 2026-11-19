@@ -1,0 +1,1141 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2019,
+  "level": "foundation",
+  "lang": "ev",
+  "paperKey": "single",
+  "paperFileid": "LC003BLP000EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "11a9288b8480b2303e8144fd5c7704323b4e3e7e361133e80db95c6070b8565b",
+  "schemeSha256": "7e608632e3c7a227ef7b47d640652d57e0fd44695a51be38f5f6540c53e69d8b",
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Independent visual reading of all 20 paper pages and all 20 scheme pages; every detailed scale checked against the summary on page 5.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 25,
+    "8": 25,
+    "9": 45,
+    "10": 55
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sourceNotes": [
+    "All ten questions are required. Candidate and offered totals are both 300 marks. Question 9 is 45 marks and Question 10 is 55 marks.",
+    "34 independently marked units. Q2(b)(i)–(iv), Q5(a)/(b)/(c) and Q7(b)/(c) retain their complete shared allocations.",
+    "2019 bands are 5C=0,1,2,5; 10C=0,3,5,10; 10D=0,3,5,6,10; 15D=0,3,6,9,15. These differ from later Foundation schemes.",
+    "Q9(d) full-sized logo construction uses the physical-scale ruler; source includes the original logo on page 14 and construction workspace on page 15.",
+    "Q5 parts (a)–(d) explicitly require relevant work on the graph. That instruction is retained in each applicable card."
+  ],
+  "cards": [
+    {
+      "id": "maths-2019-fl-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Aoife has €30. She spends ½ of this money on magazines. Then, she spends €12·50 of what’s left at the cinema.",
+      "questionText": "How much money has she left after paying for the magazines and the cinema?",
+      "solutionQuotes": [
+        "30 ÷ 2=15",
+        "15 – 12·50 = €2·50"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Aoife has two brothers, Brian and Calvin. Each of the three has their own money box. The total amount of money in the three boxes is €164. The amounts in Aoife and Brian’s boxes add up to €117.",
+      "questionText": "How much is in Calvin’s box?",
+      "solutionQuotes": [
+        "164 – 117 = €47"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Aoife has two brothers, Brian and Calvin. Each of the three has their own money box. The total amount of money in the three boxes is €164. The amounts in Aoife and Brian’s boxes add up to €117. Aoife has €5 more than Brian.",
+      "questionText": "How much does Brian have in his box?",
+      "solutionQuotes": [
+        "117 – 5 =112",
+        "112 ÷ 2 = €56"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q2-a-i-ii",
+      "printedParts": [
+        "Q2(a)(i)",
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "A letter is chosen at random from the word ‘S T A T I S T I C S’.",
+      "questionText": "Write down the probability that the letter chosen is: (i) C; (ii) T.",
+      "solutionQuotes": [
+        "1\n10",
+        "ଷ\nଵ଴"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q2-b-i-ii-iii-iv",
+      "printedParts": [
+        "Q2(b)(i)",
+        "Q2(b)(ii)",
+        "Q2(b)(iii)",
+        "Q2(b)(iv)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        3,
+        6,
+        9,
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "A group of 120 students were asked how each travelled to school. Some of the results are shown in the table below. Columns: Car, Bus, Walk, Total. Boy: 22, 18, 14, [blank]. Girl: [blank], 23, 18, 66.",
+      "questionText": "(i) Complete the table. A student is chosen at random from the group. What is the probability that the student: (ii) is a boy who walks to school; (iii) is a girl; (iv) travels to school by bus?",
+      "solutionQuotes": [
+        "18 + 23 = 41",
+        "Table and 2 probabilities"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "The diagram below shows the first 3 patterns in a sequence of patterns of squares.",
+      "questionText": "Draw pattern 4 of the sequence in the space below.",
+      "solutionQuotes": [
+        "Substantially correct e.g. not more than 2 squares missing or misplaced"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "The diagram below shows the first 3 patterns in a sequence of patterns of squares.",
+      "questionText": "Complete the table below, giving the number of squares in Patterns 3, 4, 5 and 6. Pattern 1 has 1 square and Pattern 2 has 5 squares.",
+      "solutionQuotes": [
+        "3 correct or consistent entries"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "The diagram below shows the first 3 patterns in a sequence of patterns of squares.",
+      "questionText": "How many squares are there in pattern 9?",
+      "solutionQuotes": [
+        "List including 33 but 33 not identified"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q3-d",
+      "printedParts": [
+        "Q3(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "The diagram below shows the first 3 patterns in a sequence of patterns of squares.",
+      "questionText": "Which pattern has 101 squares?",
+      "solutionQuotes": [
+        "Pattern 26"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "John and Mary divided €150 between them in the ratio 3 : 2.",
+      "questionText": "Find how much each got.",
+      "solutionQuotes": [
+        "3 + 2 = 5",
+        "= €90",
+        "= €60"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Lena bought a rug for €20 and later sold it for €26.",
+      "questionText": "Write her profit as a percentage (%) of the cost price.",
+      "solutionQuotes": [
+        "26 – 20 = 6",
+        "= 30%"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        6,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "In a league, a team gets 5 points for a win, 2 points for a draw and 0 points for a defeat. Alexander’s team has played 17 games and have 50 points. 5 of the games his team played were draws.",
+      "questionText": "How many games did his team lose?",
+      "solutionQuotes": [
+        "50 −(5 × 2) = 40 points",
+        "17 games – 5 drawn games = 12 games",
+        "12 – 8 = 4 losses"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q5-a-b-c",
+      "printedParts": [
+        "Q5(a)",
+        "Q5(b)",
+        "Q5(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        6,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Maia is travelling from Galway to Belfast by bus. The bus leaves Galway at 12:30. It makes two stops on the journey. The first stop is in Athlone (A). Later, the bus stops in Monaghan before continuing on to Belfast. The graph below shows Maia’s journey. Use the graph to answer the following questions. In each of the parts (a) to (d) show relevant work on the graph.",
+      "questionText": "(a) How long did it take the bus to get to Athlone (A), the first stop? (b) At what time did the bus arrive in Monaghan, the second stop? (c) For how long did the bus stop in Monaghan?",
+      "solutionQuotes": [
+        "1 hour",
+        "Half an hour",
+        "Tolerance of ± 5 mins for (b) and (c)"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q5-d",
+      "printedParts": [
+        "Q5(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Maia is travelling from Galway to Belfast by bus. The bus leaves Galway at 12:30. It makes two stops on the journey. The first stop is in Athlone (A). Later, the bus stops in Monaghan before continuing on to Belfast. The graph below shows Maia’s journey. Use the graph to answer the following questions. In each of the parts (a) to (d) show relevant work on the graph.",
+      "questionText": "Estimate the distance the bus travelled from Monaghan to Belfast.",
+      "solutionQuotes": [
+        "350 – 230 = 120 km"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q5-e",
+      "printedParts": [
+        "Q5(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic",
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Maia is travelling from Galway to Belfast by bus. The bus leaves Galway at 12:30. It makes two stops on the journey. The first stop is in Athlone (A). Later, the bus stops in Monaghan before continuing on to Belfast. The graph below shows Maia’s journey. Use the graph to answer the following questions. In each of the parts (a) to (d) show relevant work on the graph.",
+      "questionText": "Use the total distance the bus travelled from Galway to Belfast and the total time it took the bus to travel from Galway to Belfast, to calculate the average speed for the journey. Give your answer correct to the nearest km/h.",
+      "solutionQuotes": [
+        "Distance = 350 km",
+        "Time = 6 hours",
+        "= 58 km/h"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The diagram below shows a right-angled triangle with perpendicular sides of length 90 cm and 200 cm and hypotenuse x.",
+      "questionText": "Use the Theorem of Pythagoras to find the value of x in the diagram below. Give your answer correct to the nearest cm.",
+      "solutionQuotes": [
+        "= 219 cm"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "",
+      "questionText": "Which of the following fractions is nearest in value to ½? Give a reason for your answer. 3/5, 7/10, 11/20.",
+      "solutionQuotes": [
+        "3 fractions rewritten as twentieths",
+        "comparison of fraction or decimal equivalent values"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Janice runs an online business using different currencies. One transaction costs her 2 500 000 Chilean Pesos. On that day 1 Chilean Peso was worth 0·0013 Euro.",
+      "questionText": "What was the cost of this transaction in euro?",
+      "solutionQuotes": [
+        "2 500 000 × 0·0013 = €3250"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        3,
+        6,
+        9,
+        15
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "In his Science class, Eoin took readings to show how the extra length in a spring depends on the mass (weight) hanging from it. His results are given in the table below. Mass (g): 0, 20, 40, 60, 80, 100. Extra length (cm): 0, 3, 6, 9, 12, 15. Next Eoin plotted the 6 points from his table and joined them with a straight line.",
+      "questionText": "Complete the graph on the grid below to show Eoin’s points and his line. (One point has been plotted for you.)",
+      "solutionQuotes": [
+        "Points plotted but no line drawn",
+        "Correct line with (0, 0) omitted"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q7-b-c",
+      "printedParts": [
+        "Q7(b)",
+        "Q7(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "In his Science class, Eoin took readings to show how the extra length in a spring depends on the mass (weight) hanging from it. His results are given in the table below. Mass (g): 0, 20, 40, 60, 80, 100. Extra length (cm): 0, 3, 6, 9, 12, 15. Next Eoin plotted the 6 points from his table and joined them with a straight line.",
+      "questionText": "(b) Eoin then hung a mass of 50 g from the spring. Use the graph above to estimate the extra length in the spring. (c) Eoin hung a single new mass from the spring and he found that the extra length was 10 cm. Use the graph above to estimate the mass he hung from the spring.",
+      "solutionQuotes": [
+        "7·5 cm",
+        "67 g"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The rectangular box shown below has a square base of length 10 cm and is 6·5 cm high.",
+      "questionText": "Find the volume of the box.",
+      "solutionQuotes": [
+        "V = 10 × 10 × 6·5",
+        "= 650 cm3"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram below (not drawn to scale) shows Tom’s lawn, with measurements as shown. The parallel top and bottom edges are 12 m and 18 m and the perpendicular height is 9 m.",
+      "questionText": "The lawn can be divided into a rectangle and triangle (as shown by the dotted line in the diagram). Find, in m², the area of the lawn.",
+      "solutionQuotes": [
+        "108 + 27 = 135 m2"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram below (not drawn to scale) shows Tom’s lawn, with measurements as shown. The parallel top and bottom edges are 12 m and 18 m and the perpendicular height is 9 m. Tom wants to reseed his lawn. A bag of grass seed covers 20 m².",
+      "questionText": "What is the minimum number of bags he will need to reseed the whole lawn?",
+      "solutionQuotes": [
+        "7 bags",
+        "Identifies 135 (or answer from (i))"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram on the right shows a drawing of the logo of a company Little and Large. It consists of a line and two circles enclosed in a rectangle. The length of the rectangle is 12 cm. The diameter of circle s is 8 cm.",
+      "questionText": "Find the area of the rectangle, in cm².",
+      "solutionQuotes": [
+        "12 × 8 = 96 cm2"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram on the right shows a drawing of the logo of a company Little and Large. It consists of a line and two circles enclosed in a rectangle. The length of the rectangle is 12 cm. The diameter of circle s is 8 cm.",
+      "questionText": "Find the area of circle s. Give your answer correct to the nearest cm².",
+      "solutionQuotes": [
+        "r = 4",
+        "= 50 cm2"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        3,
+        6,
+        9,
+        15
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram on the right shows a drawing of the logo of a company Little and Large. It consists of a line and two circles enclosed in a rectangle. The length of the rectangle is 12 cm. The diameter of circle s is 8 cm. The area of circle t is ¼ of the area of circle s.",
+      "questionText": "Find the area of the shaded region in the diagram.",
+      "solutionQuotes": [
+        "96 −(50 + 12·5) = 33·5 cm2"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        3,
+        6,
+        9,
+        15
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The diagram on the right shows a drawing of the logo of a company Little and Large. It consists of a line and two circles enclosed in a rectangle. The length of the rectangle is 12 cm. The diameter of circle s is 8 cm. The area of circle t is ¼ of the area of circle s.",
+      "questionText": "Construct a full-sized version of the logo (12 cm × 8 cm rectangle, 2 circles and a line) in the box below. (The shading is not necessary.)",
+      "solutionQuotes": [
+        "2 shapes correctly drawn and located",
+        "3 shapes correctly drawn"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2019-fl-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        6,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Students in a Maths class were asked to collect and represent data, for a project on statistics. Emily collected data on the shoe sizes of 28 male students. This data is shown in the table below: Shoe Size 4, 5, 6, 7, 8, 9; Number of Students 1, 3, 8, 9, 5, 2.",
+      "questionText": "Draw a bar chart on the grid below to represent the data.",
+      "solutionQuotes": [
+        "4 correct bars drawn"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Students in a Maths class were asked to collect and represent data, for a project on statistics. Emily collected data on the shoe sizes of 28 male students. This data is shown in the table below: Shoe Size 4, 5, 6, 7, 8, 9; Number of Students 1, 3, 8, 9, 5, 2.",
+      "questionText": "What is the mode of the shoe size data?",
+      "solutionQuotes": [
+        "7"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Jason collected data on the favourite sports of a group of boys. The results are shown in the pie chart below. The angles shown are: Others 60°, Rugby 96°, Basketball 84°, Football x°.",
+      "questionText": "Find the value of x, the missing angle. Show all your work.",
+      "solutionQuotes": [
+        "84 + 96 + 60 = 240",
+        "360 – 240 = 120"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Jason collected data on the favourite sports of a group of boys. The results are shown in the pie chart below. The angles shown are: Others 60°, Rugby 96°, Basketball 84°, Football x°. There are 30 boys in total in the group.",
+      "questionText": "Find the number of boys who said that rugby was their favourite sport.",
+      "solutionQuotes": [
+        "= 8 boys"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q10-c-i",
+      "printedParts": [
+        "Q10(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Rachel collected data on the heights, to the nearest cm, of 21 female students from a particular class. Her results are shown below: 160, 172, 157, 163, 167, 174, 150; 168, 162, 158, 172, 156, 167, 147; 153, 149, 157, 161, 170, 159, 162.",
+      "questionText": "Complete the stem and leaf plot below to display the data. Stems: 14, 15, 16, 17. Key: 15|6 = 156 cm.",
+      "solutionQuotes": [
+        "11 correct entries",
+        "list may be unordered and still receive full marks"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q10-c-ii",
+      "printedParts": [
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Rachel collected data on the heights, to the nearest cm, of 21 female students from a particular class. Her results are shown below: 160, 172, 157, 163, 167, 174, 150; 168, 162, 158, 172, 156, 167, 147; 153, 149, 157, 161, 170, 159, 162.",
+      "questionText": "What was the median height of the students?",
+      "solutionQuotes": [
+        "161 cm"
+      ]
+    },
+    {
+      "id": "maths-2019-fl-q10-c-iii",
+      "printedParts": [
+        "Q10(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Rachel collected data on the heights, to the nearest cm, of 21 female students from a particular class. Her results are shown below: 160, 172, 157, 163, 167, 174, 150; 168, 162, 158, 172, 156, 167, 147; 153, 149, 157, 161, 170, 159, 162.",
+      "questionText": "What was the range of the data?",
+      "solutionQuotes": [
+        "174 – 147 = 27"
+      ]
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        4
+      ],
+      "classification": "probability-sample-space",
+      "reason": "Random letter and student selection defines probability experiments. Both letters and all travel questions are required, with grouped published scales."
+    },
+    {
+      "pages": [
+        11
+      ],
+      "classification": "answer-selection",
+      "reason": "The three fractions are candidate mathematical answers to one comparison task; the student must compare them and justify the nearest, not select a practice prompt."
+    }
+  ],
+  "selectionDecisions": {
+    "2:fabf72a47e264c00": {
+      "classification": "all-questions-required",
+      "reason": "The paper requires all ten questions, including all eight in Section A. Every independently marked unit is kept."
+    },
+    "3:ca3fdcddbfa7e712": {
+      "classification": "all-questions-required",
+      "reason": "The paper requires all ten questions, including all eight in Section A. Every independently marked unit is kept."
+    }
+  }
+}

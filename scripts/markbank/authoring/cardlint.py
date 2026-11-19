@@ -57,9 +57,24 @@ def english_deck_cards():
     return legacy + cards
 
 
+def japanese_deck_cards():
+    """Lint the exact served union, including reviewed rubrics and source crops."""
+    from reconcile import shipped_cards
+    served = {cid for cid, _ref in shipped_cards('japanese')}
+    with open(os.path.join(AUTHORED, 'japanese.json')) as fh:
+        cards = {card['id']: card for card in json.load(fh)}
+    with open(os.path.join(DECKS, 'japanese', 'reviewed.json')) as fh:
+        cards.update((card['id'], card) for card in json.load(fh))
+    missing = served - cards.keys()
+    if missing:
+        raise SystemExit(f'cardlint: Japanese served IDs have no source card: {sorted(missing)}')
+    return [cards[cid] for cid in sorted(served)]
+
+
 # A deck whose served cards span several files is read by its own loader.
 DECK_LOADERS = {
     'english': english_deck_cards,
+    'japanese': japanese_deck_cards,
 }
 
 SUBJECTS = ['agricultural-science', 'ancient-greek', 'applied-maths',
@@ -69,7 +84,7 @@ SUBJECTS = ['agricultural-science', 'ancient-greek', 'applied-maths',
             'engineering', 'english', 'estonian', 'finnish', 'french',
             'geography', 'german', 'history', 'home-economics', 'hungarian',
             'irish', 'italian', 'japanese', 'latin', 'latvian', 'lcvp',
-            'lithuanian', 'mandarin-chinese', 'maths', 'modern-greek',
+            'lithuanian', 'mandarin-chinese', 'maths', 'music', 'modern-greek',
             'physical-education', 'physics', 'polish', 'portuguese',
             'religious-education', 'romanian', 'russian', 'slovakian',
             'slovenian', 'spanish', 'swedish', 'technology', 'ukrainian']
@@ -265,6 +280,16 @@ def lint(subject):
     if os.path.exists(bindings_path):
         with open(bindings_path) as fh:
             bound = set(json.load(fh).get(subject, {}))
+    if subject == 'maths':
+        # Every reviewed Mathematics card is built with its SEC question page
+        # attached (build-deck applyMathematicsReview: a source-question page,
+        # and the printed crop where there is one), which the authored file
+        # this reads does not carry yet: it is bound to its printed matter.
+        import glob
+        for review_path in glob.glob(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                                                  'mathematics', 'reviews', '*.json')):
+            with open(review_path) as fh:
+                bound.update(card['id'] for card in json.load(fh)['cards'])
     flags = []
     for c in cards:
         stem = c.get('stem') or ''
@@ -294,7 +319,7 @@ def lint(subject):
                 and not (unprintable and unprintable.search(joined))
                 and c['id'] not in REVIEWED):
             flags.append((subject, c['id'], 'ghost-figure', joined.strip()[:90]))
-        if label_junk(stem):
+        if label_junk(stem) and c['id'] not in REVIEWED:
             flags.append((subject, c['id'], 'label-junk', stem[:90]))
         lettered = (NAMES_LETTERS.search(qtext)
                     and not INVITES_DRAWING.search(qtext))

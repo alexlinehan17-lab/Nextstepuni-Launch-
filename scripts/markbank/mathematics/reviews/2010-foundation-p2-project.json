@@ -1,0 +1,1252 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2010,
+  "level": "foundation",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003BLP230EV.pdf",
+  "schemeFileid": "LC003BLP030EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "7c9c642b9d8adbeb7d02d1cb739e097ec49851961ecd374e4f41245c6057f554",
+  "schemeSha256": "e06adaa097e7951bb41ab89d8ad0881c07ab43db3e17418111b03eea9d070848",
+  "reviewedAt": "2026-10-30",
+  "reviewMethod": "Independent visual inspection of all 16 original paper pages and scheme PDF pages 3–4 and 40–66, including every model solution, alternative proof, diagram, scale, component allocation and detailed credit note. All 34 question and 34 solution crops visually inspected.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "schemePagesInspected": [
+    3,
+    4,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66
+  ],
+  "printedQuestionMarks": {
+    "1": 50,
+    "2": 50,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 50,
+    "8": 50
+  },
+  "fullCreditMinusOne": false,
+  "generalNotesPages": [
+    53,
+    58,
+    59
+  ],
+  "sourceNotes": [
+    "All sixteen original paper pages and scheme PDF pages 3–4 and 40–66 independently visually inspected. Paper 1 is common with the legacy exam and is already covered by its own review.",
+    "All 34 tasks and 300 marks retained. Q5(a), Q6(a) and Q6(c) remain whole at their published scales.",
+    "Section 0 uses deduction rules with general guidance on PDF page 53. Sections A/B use exact 2010 Foundation bands with guidance on pages 58–59; only Q8(a)–(d) permit starred minus-one awards.",
+    "Original diagrams, worked solutions, alternative answers and full detailed credit notes retained. All contextual tables and dependent sail measurements travel with split tasks.",
+    "The summary table (PDF page 59) labels Q8(d) 10C*, but the detailed notes (page 64) explicitly use 10B* with one partial-credit band. This card follows the detailed rule: 0, 6, 9 or 10 marks. The nine-mark allowance is the starred full-credit-minus-one award. Accept consistent answers carried from earlier parts.",
+    "No finite optional answer-route pool requires expansion; probability judgments and the justified comparison of mean and median remain complete responses."
+  ],
+  "cards": [
+    {
+      "id": "maths-2010-fl-p2-project-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "questionText": "Find the area of the field.",
+      "stem": "A rectangular field is 150 m long and 90 m wide.",
+      "generalNotesPages": [
+        53
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "questionText": "Find the length of the perimeter of the field.",
+      "stem": "A rectangular field is 150 m long and 90 m wide.",
+      "generalNotesPages": [
+        53
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 30,
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 30,
+              "attempt": 12
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        55
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "questionText": "Use Simpson’s rule to calculate the area of the side of the fence in m².",
+      "stem": "The fence heights are 1·7, 1·3, 1·6, 2·5, 2·4, 2·2 and 2·3 metres at intervals of 1·8 metre along its base.",
+      "generalNotesPages": [
+        53
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        55
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "questionText": "One tin of paint covers 5·4 square metres. How many tins does the owner use to paint this side of the fence?",
+      "stem": "The fence heights are 1·7, 1·3, 1·6, 2·5, 2·4, 2·2 and 2·3 metres at intervals of 1·8 metre along its base.",
+      "generalNotesPages": [
+        53
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        56
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "questionText": "Calculate the volume of the rectangular block.",
+      "stem": "The block is 70 cm long, 30 cm wide and 8 cm high.",
+      "generalNotesPages": [
+        53
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        56
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "questionText": "Find the area of the circle, correct to the nearest cm².",
+      "stem": "A circle of radius 8 cm is inscribed in a square.",
+      "generalNotesPages": [
+        53
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        56
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "questionText": "Find the area of the square.",
+      "stem": "A circle of radius 8 cm is inscribed in a square.",
+      "generalNotesPages": [
+        53
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q2-c-i",
+      "printedParts": [
+        "Q2(c)(i)"
+      ],
+      "totalMarks": 15,
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 15,
+              "attempt": 6
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        57
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "questionText": "Find the volume of water in the container, in terms of π.",
+      "stem": "A full inverted conical container has diameter 9 cm and height 12 cm.",
+      "generalNotesPages": [
+        53
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q2-c-ii",
+      "printedParts": [
+        "Q2(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        57
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "questionText": "Find h, the depth of water in the cylindrical can.",
+      "stem": "Water from a full inverted cone, diameter 9 cm and height 12 cm, is poured into a cylindrical can of diameter 6 cm.",
+      "generalNotesPages": [
+        53
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        45,
+        60
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "The €3 lunch special is any sandwich and any drink. Sandwiches: chicken, cheese, tuna, salad, egg. Drinks: tea, hot chocolate, fruit drink.",
+      "questionText": "What is the total number of different options available?",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q3-a-ii",
+      "printedParts": [
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        45,
+        60
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "The €3 lunch special is any sandwich and any drink. Sandwiches: chicken, cheese, tuna, salad, egg. Drinks: tea, hot chocolate, fruit drink.",
+      "questionText": "Orla doesn’t like tuna or tea. How many different options does she have?",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        45,
+        60
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "A fair spinner has nine equal sections numbered as in the diagram.",
+      "questionText": "Michael says: “There’s a greater than even chance that you’ll get a 2.” State whether he is correct and give a reason.",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        46,
+        60
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "The chart shows the numbers of red, orange and green sweets in Robert’s bag. Robert picks one sweet at random.",
+      "questionText": "What is the probability that Robert picks a red sweet?",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        46,
+        60
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "The chart shows the numbers of red, orange and green sweets in Robert’s bag. Robert picks one sweet at random.",
+      "questionText": "What is the probability that Robert does not pick an orange sweet?",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        46,
+        60
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "The chart shows the numbers of red, orange and green sweets in Robert’s bag. Robert picks one sweet at random.",
+      "questionText": "The first sweet is red and Robert eats it. He then picks another sweet at random. Is the probability of a second red sweet greater than, less than, or the same as the original probability? Explain.",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        47,
+        61
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The diagram shows a triangle and three parallel lines.",
+      "questionText": "Find the value of x and the value of y.",
+      "markingNote": "Both required angles form one ten-mark response. One correct angle earns eight marks under the published 10C scale.",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        47,
+        61
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "[AC] is a diameter of a circle with centre O. B is on the circle; the labelled angles are 35° at C and 70° at O.",
+      "questionText": "Find |∠ABC|.",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        47,
+        61
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "[AC] is a diameter of a circle with centre O. B is on the circle; the labelled angles are 35° at C and 70° at O.",
+      "questionText": "Find |∠ABO|.",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        47,
+        61
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "questionText": "On the diagram, show how to construct the tangent to the circle at P.",
+      "measurementRequired": true,
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        48,
+        62
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A coordinate grid covers the island map shown.",
+      "questionText": "Write down the coordinates of the cave and the camp.",
+      "markingNote": "Both coordinate pairs form one ten-mark response. One point correctly identified earns eight marks.",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        48,
+        62
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A coordinate grid covers the island map shown.",
+      "questionText": "Find the coordinates of the point exactly halfway between the cave and the camp.",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        48,
+        62
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A coordinate grid covers the island map shown.",
+      "questionText": "The red team is at the cave and the blue team is at (5, 4). Use the distance formula to decide which team is closer to the spring.",
+      "markingNote": "Both distance calculations and the conclusion belong to this single five-mark task.",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        49,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Gary recorded the minutes 20 classmates spent on the internet: 45, 32, 29, 34, 32; 26, 30, 32, 20, 36; 27, 42, 18, 24, 18; 15, 38, 27, 34, 19.",
+      "questionText": "Display the data in a stem-and-leaf plot.",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        49,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Gary recorded the minutes 20 classmates spent on the internet: 45, 32, 29, 34, 32; 26, 30, 32, 20, 36; 27, 42, 18, 24, 18; 15, 38, 27, 34, 19.",
+      "questionText": "What percentage of the students spent less than twenty minutes on the internet?",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        6,
+        10
+      ],
+      "schemePages": [
+        49,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Gary recorded the minutes 20 classmates spent on the internet: 45, 32, 29, 34, 32; 26, 30, 32, 20, 36; 27, 42, 18, 24, 18; 15, 38, 27, 34, 19.",
+      "questionText": "Complete Gary’s answer, “Most of them spent…”, to give a good one-sentence summary of the data.",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        50,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Mary’s five maths test marks are 85, 92, 78, 54 and 82.",
+      "questionText": "What is Mary’s median mark for the term?",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        50,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Mary’s five maths test marks are 85, 92, 78, 54 and 82.",
+      "questionText": "Calculate Mary’s mean mark for the term.",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        6,
+        10
+      ],
+      "schemePages": [
+        50,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Mary’s five maths test marks are 85, 92, 78, 54 and 82.",
+      "questionText": "Which one of Mary’s marks is out of line with the others?",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q7-b-iv",
+      "printedParts": [
+        "Q7(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        50,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Mary’s five maths test marks are 85, 92, 78, 54 and 82.",
+      "questionText": "Which is a fairer summary of Mary’s work for the term: the mean or the median? Give a reason for your answer.",
+      "markingNote": "The original scheme accepts either the mean or median with a suitable justification. This is one evaluative response, not two optional question routes.",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        51,
+        64
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Seán’s toy boat has |AB| = 24 cm, |BC| = 32 cm and |∠BCD| = 38°. The right angles and sail labels are shown in the original diagram.",
+      "questionText": "Use Pythagoras’ theorem to find |AC|.",
+      "fullCreditMinusOne": true,
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        51,
+        64
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-trigonometry"
+      ],
+      "stem": "Seán’s toy boat has |AB| = 24 cm, |BC| = 32 cm and |∠BCD| = 38°. The right angles and sail labels are shown in the original diagram.",
+      "questionText": "Use triangle BCD to find |BD|, correct to the nearest centimetre.",
+      "fullCreditMinusOne": true,
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        51,
+        52,
+        64
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Seán’s toy boat has |AB| = 24 cm, |BC| = 32 cm and |∠BCD| = 38°. The right angles and sail labels are shown in the original diagram.",
+      "questionText": "The sail DEF is a reduction of BCD with scale factor 3/5. Find |DF|.",
+      "fullCreditMinusOne": true,
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        6,
+        10
+      ],
+      "schemePages": [
+        51,
+        52,
+        64
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Seán’s toy boat has |AB| = 24 cm, |BC| = 32 cm and |∠BCD| = 38°. The right angles and sail labels are shown in the original diagram. Sail DEF is a reduction of BCD with scale factor 3/5. Calculate BD to the nearest centimetre.",
+      "questionText": "Find the total distance from A to F.",
+      "fullCreditMinusOne": true,
+      "markingNote": "The summary table (PDF page 59) labels Q8(d) 10C*, but the detailed notes (page 64) explicitly use 10B* with one partial-credit band. This card follows the detailed rule: 0, 6, 9 or 10 marks. The nine-mark allowance is the starred full-credit-minus-one award. Accept consistent answers carried from earlier parts.",
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "maths-2010-fl-p2-project-q8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        52,
+        64
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The triangle is the flag at the top of the toy boat’s mast.",
+      "questionText": "Construct an accurate triangle with sides 7 cm, 7 cm and 4 cm.",
+      "measurementRequired": true,
+      "generalNotesPages": [
+        58,
+        59
+      ]
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        8,
+        12
+      ],
+      "wording": "Answer all eight questions; Answer all four questions",
+      "classification": "whole-examination-selection",
+      "reason": "All eight questions are compulsory. Retain all 34 separately practicable tasks and all 300 marks."
+    },
+    {
+      "pages": [
+        8
+      ],
+      "wording": "Any sandwich & any drink; different options",
+      "classification": "counting-scenario",
+      "reason": "These are data in a counting problem, not alternative candidate answer routes."
+    },
+    {
+      "pages": [
+        9,
+        13
+      ],
+      "wording": "greater than, less than, or the same as; Which one of Mary’s marks; mean or median",
+      "classification": "evaluation-response",
+      "reason": "These prompts require identifying or justifying an answer. They do not direct the candidate to choose among independent optional questions. Both justified mean/median answers remain within Q7(b)(iv)."
+    },
+    {
+      "pages": [
+        10,
+        11
+      ],
+      "wording": "x and y; cave and camp; which team is closer",
+      "classification": "required-complete-response",
+      "reason": "Required paired angles, coordinate pairs and distance comparisons remain whole at the single published scale boundary."
+    }
+  ],
+  "selectionDecisions": {
+    "2:ce8e55f30c576b20": {
+      "classification": "whole-examination-selection",
+      "reason": "All eight questions are compulsory. Retain all 34 separately practicable tasks and all 300 marks."
+    },
+    "8:2b7e19829baa391f": {
+      "classification": "whole-examination-selection",
+      "reason": "All eight questions are compulsory. Retain all 34 separately practicable tasks and all 300 marks."
+    },
+    "13:4104119aff45078f": {
+      "classification": "whole-examination-selection",
+      "reason": "All eight questions are compulsory. Retain all 34 separately practicable tasks and all 300 marks."
+    }
+  }
+}

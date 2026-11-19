@@ -1,0 +1,1252 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2014,
+  "level": "foundation",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003BLP130EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "d79f02b0e3ddf8bdcd64c389d19726513a5b7b3c2d2104d4cd8d0a4f2460a008",
+  "schemeSha256": "c59c431455c3e8ef8d8f48437054619f9c0088b1fbeb32c4c160a7c1fe254a3f",
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Independent visual reading of all 20 question-paper pages and PDF pages 1–30 of the combined 60-page Foundation scheme, covering the complete Paper 1 section. Model answers and separate credit notes cross-checked against the summary on PDF page 22.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 25,
+    "8": 25,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    21,
+    22
+  ],
+  "sourceNotes": [
+    "All ten questions are required. Candidate and offered totals are both 300 marks.",
+    "36 independently marked units. Grouping follows the published summary and detailed credit notes; multi-part prompts with one shared scale remain together.",
+    "The question booklet is LC003BLP130EV.pdf. Its indexed scheme is LC003BLP000EV.pdf, shared with Paper 2; every page reference is a PDF position.",
+    "Historical prompts are mapped into the existing canonical Mathematics curriculum registry; its identifier mathematics:2015 is not a claim that this paper was sat under a later specification.",
+    "All graph-reading tasks preserve instructions to show working on the original diagram. Q10(d) includes the distance chart, journey graph and printed task.",
+    "Q9(b)(i) model answer incorrectly gives (5)² + 2(5) = 25. The correct value is 35, as in the scheme table. The original remains available; that erroneous line is not quoted as a model answer."
+  ],
+  "cards": [
+    {
+      "id": "maths-2014-fl-p1-project-q1-a-i-ii",
+      "printedParts": [
+        "Q1(a)(i)",
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        7,
+        23
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "Use your calculator to answer the following.",
+      "questionText": "(i) Find √(3 × 10⁵), correct to the nearest whole number. (ii) Find π/12, correct to one decimal place.",
+      "solutionQuotes": [
+        "Any work of merit in one part",
+        "Some work of merit in both parts"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q1-a-iii",
+      "printedParts": [
+        "Q1(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        7,
+        23
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "Use your calculator to answer the following.",
+      "questionText": "Find 8% of 910, correct to the nearest whole number.",
+      "solutionQuotes": [
+        "Any work of merit"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        7,
+        23
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "The population of China is 1·351 × 10⁹ people.",
+      "questionText": "Write this as a whole number of people.",
+      "solutionQuotes": [
+        "=1 351 000 000"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q2-a-i-ii",
+      "printedParts": [
+        "Q2(a)(i)",
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        8,
+        23
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "",
+      "questionText": "(i) Write 125 as 5ⁿ, where n ∈ ℕ. (ii) Find 49^(1/2).",
+      "solutionQuotes": [
+        "Some work of merit in both parts"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        8,
+        23
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "",
+      "questionText": "Simplify (a⁴)²/a⁵.",
+      "solutionQuotes": [
+        "Any work of merit"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q2-c-i-ii",
+      "printedParts": [
+        "Q2(c)(i)",
+        "Q2(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        8,
+        23
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "For each of the following sequences of numbers, use the pattern to continue the sequence for two more terms.",
+      "questionText": "(i) 2, 6, 18, 54, ___, ___. (ii) 1, 3, 6, 10, ___, ___.",
+      "solutionQuotes": [
+        "2, 6, 18, 54, 162, 486",
+        "1, 3, 6, 10, 15, 21"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q3-a-i-ii-iii",
+      "printedParts": [
+        "Q3(a)(i)",
+        "Q3(a)(ii)",
+        "Q3(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        9,
+        24
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "",
+      "questionText": "(i) Write each of the numbers below correct to the nearest whole number: 1·8, 15·2, 4·9. (ii) Use your values from above to estimate the value of (1·8 × 15·2)/4·9. (iii) Use your calculator to find the actual value of (1·8 × 15·2)/4·9. Give your answer correct to one decimal place.",
+      "solutionQuotes": [
+        "Part (i), (ii) or (iii) fully correct",
+        "Two parts fully correct"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q3-b-i-ii",
+      "printedParts": [
+        "Q3(b)(i)",
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        9,
+        24
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "Part (a) asks you to round 1·8, 15·2 and 4·9 to whole numbers, then use those values to estimate (1·8 × 15·2)/4·9, and use a calculator to find the actual value correct to one decimal place.",
+      "questionText": "(i) Find the difference between the actual value and your estimated value in part (a)(ii). (ii) Find the percentage error in your estimate. Give your answer correct to one decimal place.",
+      "solutionQuotes": [
+        "6·0 – 5·6= 0·4",
+        "7·1%"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        10,
+        24
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "A surveyor needed to find the area of a small piece of land, bounded in part by two straight walls [AB] and [BC]. He divided [AB] into five equal parts. Each part is 3 m long. The distance to the boundary from each part is shown in the diagram below.",
+      "questionText": "Use the Trapezoidal Rule to find the approximate area of the piece of land.",
+      "solutionQuotes": [
+        "Correct substitution into formula and fails to finish.",
+        "One error in substitution into formula and finishes correctly."
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q4-b-i-ii",
+      "printedParts": [
+        "Q4(b)(i)",
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        11,
+        24
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagrams show a shed with an end wall consisting of a rectangle 4 m wide and 2·8 m high topped by a triangle of base 4 m and height 2 m. The shed is 6 m long.",
+      "questionText": "(i) Find the area of the end wall. (ii) Find the volume of the shed.",
+      "solutionQuotes": [
+        "One correct answer.",
+        "Some work of merit in both parts."
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q5-a-i-ii-iii",
+      "printedParts": [
+        "Q5(a)(i)",
+        "Q5(a)(ii)",
+        "Q5(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        12,
+        25
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "",
+      "questionText": "In the spaces provided, write down: (i) 2 natural numbers; (ii) 2 negative integers; (iii) 2 prime numbers.",
+      "solutionQuotes": [
+        "One correct entry",
+        "Two or three correct entries",
+        "Four or five correct entries"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q5-b-i-ii",
+      "printedParts": [
+        "Q5(b)(i)",
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        12,
+        25
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "A tractor depreciates in value at a rate of 15% per year.",
+      "questionText": "(i) Write 15% as a decimal. (ii) The tractor was bought for €100 000. Find its value at the end of three years.",
+      "solutionQuotes": [
+        "0·15",
+        "= €61 412·50"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        13,
+        25
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "",
+      "questionText": "Find the value of x² − 2x + 5 when x = −3.",
+      "solutionQuotes": [
+        "9 – 2(–3) + 5",
+        "= 20"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        13,
+        25
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "",
+      "questionText": "Simplify 3(5a − 1) − 4(a − 2).",
+      "solutionQuotes": [
+        "Multiplies out correctly but fails to finish."
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        13,
+        25
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "",
+      "questionText": "Solve the equation m² + 2m − 5 = 0. Give your answers correct to one decimal place.",
+      "solutionQuotes": [
+        "Any work of merit"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        14,
+        26
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "",
+      "questionText": "Solve the equation 3x − 1 = 2x + 5.",
+      "solutionQuotes": [
+        "Correct solution verified by trial and improvement"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        14,
+        26
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "",
+      "questionText": "Write down the natural numbers, x, which satisfy the inequality 9 − 2x > 1.",
+      "solutionQuotes": [
+        "{1, 2, 3}"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q7-c-i-ii-iii",
+      "printedParts": [
+        "Q7(c)(i)",
+        "Q7(c)(ii)",
+        "Q7(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        14,
+        26
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Ruairí is x years of age.",
+      "questionText": "(i) Alex is 7 years older than Ruairí. Write down an expression in x for Alex’s age. (ii) Aideen is three times as old as Ruairí. Write down an expression in x for Aideen’s age. (iii) Aideen’s age added to Alex’s age is 47. How old is Ruairí?",
+      "solutionQuotes": [
+        "One correct answer",
+        "Work of merit in two or three parts"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15,
+        27
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "The function f: x ↦ 3 − 2x is defined for all values of x ∈ ℝ.",
+      "questionText": "Find the value of f(−3).",
+      "solutionQuotes": [
+        "Any work of merit"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15,
+        27
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "The graphs of two functions are shown on the axes below. The functions are g(x) = x + 1, x ∈ ℝ and h(x) = x² − 2x − 3, x ∈ ℝ.",
+      "questionText": "Identify the functions by writing g(x) or h(x) in the blank boxes on the diagram above.",
+      "solutionQuotes": [
+        "Any work of merit"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15,
+        27
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "The graphs of two functions are shown on the axes below. The functions are g(x) = x + 1, x ∈ ℝ and h(x) = x² − 2x − 3, x ∈ ℝ.",
+      "questionText": "Use the diagram to find the value of h(1·5). Show your work on the diagram.",
+      "solutionQuotes": [
+        "Any work of merit"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15,
+        27
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "The graphs of two functions are shown on the axes below. The functions are g(x) = x + 1, x ∈ ℝ and h(x) = x² − 2x − 3, x ∈ ℝ.",
+      "questionText": "Use the diagram to find the value of x for which g(x) = 3. Show your work on the diagram.",
+      "solutionQuotes": [
+        "Any work of merit"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q8-b-iv",
+      "printedParts": [
+        "Q8(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15,
+        27
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "The graphs of two functions are shown on the axes below. The functions are g(x) = x + 1, x ∈ ℝ and h(x) = x² − 2x − 3, x ∈ ℝ.",
+      "questionText": "Use the diagram to find the values of x for which h(x) = g(x). Show your work on the diagram.",
+      "solutionQuotes": [
+        "Any work of merit"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        16,
+        28
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "A pattern of rectangles is shown in the diagram below. The first three have dimensions 3 × 1, 4 × 2 and 5 × 3, with heights 1, 2 and 3 respectively. The rectangles are made of small squares.",
+      "questionText": "Draw the next two rectangles in the pattern. Write the dimensions (i.e. 3 × 1, 4 × 2, etc.) under them.",
+      "solutionQuotes": [
+        "Two correct sets of dimensions given",
+        "Two correct rectangles drawn"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        16,
+        28
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "A pattern of rectangles is shown in the diagram below. The first three have dimensions 3 × 1, 4 × 2 and 5 × 3, with heights 1, 2 and 3 respectively. The rectangles are made of small squares.",
+      "questionText": "Complete the table below. It gives heights 1, 2, 3, 4 and 5, and asks for the number of small squares in each rectangle. The first two entries, 3 and 8, are already given.",
+      "solutionQuotes": [
+        "One correct answer",
+        "Two correct answers"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        16,
+        28
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "A pattern of rectangles is shown in the diagram below. The first three have dimensions 3 × 1, 4 × 2 and 5 × 3, with heights 1, 2 and 3 respectively. The rectangles are made of small squares. Part (a)(ii) asks you to complete a table giving the number of small squares for rectangles of heights 1–5.",
+      "questionText": "Plot the 5 points from your table ((1, 3), (2, 8), etc.) on the given axes.",
+      "solutionQuotes": [
+        "One point plotted correctly",
+        "Two or three points plotted correctly",
+        "Four points plotted correctly"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17,
+        28
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "A pattern of rectangles is shown in the diagram below. The first three have dimensions 3 × 1, 4 × 2 and 5 × 3, with heights 1, 2 and 3 respectively. The rectangles are made of small squares. Part (a)(i) asks you to draw the next two rectangles.",
+      "questionText": "The number of small squares in each rectangle in part (a) can be calculated by using one of the following three expressions, where h is the height of the rectangle: h² + h, h² + 2, h² + 2h. Which expression always gives the correct number of small squares? Give a reason for your answer.",
+      "solutionQuotes": [
+        "Correct expression without a reason"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        17,
+        28
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "A pattern of rectangles is shown in the diagram below. The first three have dimensions 3 × 1, 4 × 2 and 5 × 3, with heights 1, 2 and 3 respectively. The rectangles are made of small squares. Part (a)(i) asks you to draw the next two rectangles, making five rectangles in all.",
+      "questionText": "For each of the 5 rectangles above, shade in the biggest possible square that fits into that rectangle.",
+      "solutionQuotes": [
+        "Any work of merit"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        17,
+        28
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "A pattern of rectangles is shown in the diagram below. The first three have dimensions 3 × 1, 4 × 2 and 5 × 3, with heights 1, 2 and 3 respectively. The rectangles are made of small squares. Part (a)(i) asks you to draw the next two rectangles. Part (b)(ii) asks you to shade in the biggest possible square that fits into each of the five rectangles.",
+      "questionText": "For each of the 5 rectangles, write down the numbers of small squares that are not shaded.",
+      "solutionQuotes": [
+        "2, 4, 6, 8, 10"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q9-b-iv",
+      "printedParts": [
+        "Q9(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        17,
+        28
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "A pattern of rectangles is shown in the diagram below. The first three have dimensions 3 × 1, 4 × 2 and 5 × 3, with heights 1, 2 and 3 respectively. The rectangles are made of small squares. Part (a)(i) asks you to draw the next two rectangles. Part (b)(ii) asks you to shade in the biggest possible square that fits into each of the five rectangles. Part (b)(iii) asks you to write the numbers of small squares not shaded in each rectangle.",
+      "questionText": "Is there a pattern to be seen in the numbers in your answer to (iii) above? Give a reason for your answer.",
+      "solutionQuotes": [
+        "Reason: Pattern is 2n"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q10-a-i-ii",
+      "printedParts": [
+        "Q10(a)(i)",
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        18,
+        29
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The chart below shows the distances (in kilometres) between some of Ireland’s main towns. For example, the distance between Portlaoise and Galway is 150 km and the distance between Sligo and Belfast is 206 km (highlighted in the chart). Use the chart to answer the following questions.",
+      "questionText": "(i) What is the distance between Sligo and Dublin? (ii) Carla has to go from Sligo to Dublin. She travels from Sligo to Portlaoise first and then on to Dublin. How many kilometres does this add to her journey?",
+      "solutionQuotes": [
+        "217 km",
+        "191 +84=275 km",
+        "275–217 = 58 km"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        18,
+        29
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The chart below shows the distances (in kilometres) between some of Ireland’s main towns. For example, the distance between Portlaoise and Galway is 150 km and the distance between Sligo and Belfast is 206 km (highlighted in the chart). Use the chart to answer the following questions.",
+      "questionText": "Which two towns, shown in the chart, are furthest apart?",
+      "solutionQuotes": [
+        "One town correct"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q10-c",
+      "printedParts": [
+        "Q10(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        19,
+        29
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Amanda travelled from Waterford to Belfast. The graph below shows the 5 stages of her journey. The stages are labelled 1, 2, 3, 4 and 5 on the graph.",
+      "questionText": "There are five statements labelled A, B, C, D and E: A. She takes about 15 minutes to change the wheel. B. She drives steadily and arrives in Belfast around 16:15. C. She stops for lunch for about an hour. D. She sets out from Waterford at 11:00 and drives at a steady speed until lunchtime. E. She drives steadily for about 2 hours. In the table below, insert the letters A, B, C, D and E to match each one of the statements above with a stage of her journey.",
+      "solutionQuotes": [
+        "One correct answer",
+        "Two or three correct answers",
+        "Four correct answers"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q10-d-i-ii",
+      "printedParts": [
+        "Q10(d)(i)",
+        "Q10(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        20,
+        29
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        14,
+        15,
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Amanda travelled from Waterford to Belfast. The graph below shows the 5 stages of her journey. The stages are labelled 1, 2, 3, 4 and 5 on the graph. The distance chart on page 14 includes the Waterford–Belfast distance.",
+      "questionText": "(i) How long, in total, did it take Amanda to travel from Waterford to Belfast? (ii) Find Amanda’s average speed during her trip, in kilometres per hour. Give your answer correct to the nearest whole number.",
+      "solutionQuotes": [
+        "5 Hours 15 Min",
+        "63 km/h"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q10-e",
+      "printedParts": [
+        "Q10(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        20,
+        29
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        15,
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Amanda travelled from Waterford to Belfast. The graph below shows the 5 stages of her journey. The stages are labelled 1, 2, 3, 4 and 5 on the graph. The car was stopped for a total of one hour and fifteen minutes.",
+      "questionText": "Find the amount of time the car was being driven during the journey.",
+      "solutionQuotes": [
+        "5: 15 – 1: 15 = 4 hours"
+      ]
+    },
+    {
+      "id": "maths-2014-fl-p1-project-q10-f",
+      "printedParts": [
+        "Q10(f)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        20,
+        29
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Amanda changed some euro into sterling. She got £215. The exchange rate was €1 = £0·86.",
+      "questionText": "How much did she have to pay, in euro?",
+      "solutionQuotes": [
+        "€250"
+      ]
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        8
+      ],
+      "classification": "open-examples",
+      "reason": "Two natural numbers, negative integers and primes are unrestricted examples, not a finite printed option pool; all three requests share one scale."
+    },
+    {
+      "pages": [
+        13
+      ],
+      "classification": "answer-selection",
+      "reason": "The candidate must identify which of three expressions models the same rectangle pattern. The expressions are mathematical answer options, not independent prompt routes."
+    },
+    {
+      "pages": [
+        14
+      ],
+      "classification": "answer-selection",
+      "reason": "The two furthest towns must be determined from the complete chart. The town pairs are possible mathematical answers, not a choice of routes to practise."
+    },
+    {
+      "pages": [
+        15
+      ],
+      "classification": "required-matching",
+      "reason": "All five statements must be matched to journey stages within one scale. The candidate is not choosing which statements to answer."
+    }
+  ],
+  "selectionDecisions": {
+    "2:de5a6ea9601a4ef8": {
+      "classification": "all-questions-required",
+      "reason": "All ten questions, including all eight Section A questions, are required; every published unit is retained."
+    },
+    "3:38efcf269b19d725": {
+      "classification": "all-questions-required",
+      "reason": "All ten questions, including all eight Section A questions, are required; every published unit is retained."
+    },
+    "13:413b56c5edd089fe": {
+      "classification": "answer-selection",
+      "reason": "The candidate must identify which of three expressions models the same rectangle pattern. The expressions are mathematical answer options, not independent prompt routes."
+    },
+    "15:7f5324cc1f4ba5a0": {
+      "classification": "required-matching",
+      "reason": "All five statements must be matched to journey stages within one scale. The candidate is not choosing which statements to answer."
+    }
+  }
+}

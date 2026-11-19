@@ -26,12 +26,19 @@ import { execFileSync } from 'node:child_process';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { resolvePaperFileid, resolveCompanionFileid, corpusSubjectFor, paperEntry, deferredPaperEntry } from './paperIndex.mjs';
+import { resolvePaperFileid, resolveIndexedPaperFileid, resolveCompanionFileid, corpusSubjectFor, paperEntry, deferredPaperEntry } from './paperIndex.mjs';
 import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
 import { questionStandsAlone } from './questionText.mjs';
 import { assertEconomicsReviewCoverage, bindEconomicsEditions } from './economicsEditions.mjs';
+import { applyMathematicsReview, validateMathematicsReviewSources, assertReviewedMathematicsCards, reviewedMathematicsSource } from './mathematics/review.mjs';
+import { reviewedPhysicsSource } from './physicsSources.mjs';
+import { reviewedHomeEconomicsSource } from './homeEconomicsSources.mjs';
+import { reviewedLcvpSource, readLcvpDeferredScheme } from './lcvpSources.mjs';
+import { audioMaterialFault, audioQuestionPaperFileid } from './audioMaterial.mjs';
+import { videoMaterialFault } from './videoMaterial.mjs';
+import { withLiveConceptId } from './liveConceptIds.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -210,6 +217,14 @@ const SUBJECTS = {
     specVersion: 'lcvp-link-modules-programme-statement',
     specNote: 'Cards are tagged to the units of the LCVP Link Modules programme statement, which is\n * the one these papers were sat under. Life, Community and Work replaces it from 2028.\n * The paper is COMMON level: one paper, sat by everyone, cited "YYYY CL".',
     figureDir: 'public/exam-figures/lcvp',
+    blocked: new Set(),
+  },
+  /* Review pack 1 prototype (treatments lane): ONE sitting, 2025 Higher. */
+  music: {
+    title: 'Music',
+    specVersion: 'lc-music-syllabus',
+    specNote: 'Cards are tagged to the Listening, Composing and elective strands of the Leaving\n * Certificate Music syllabus. A sitting is up to THREE booklets: Listening (core),\n * Composing and, at Higher Level, the Listening elective. A listening card plays the\n * SEC\'s own published sound file; a band-marked answer is placed on the scheme\'s\n * printed bands.',
+    figureDir: 'public/exam-figures/music',
     blocked: new Set(),
   },
   german: {
@@ -617,6 +632,70 @@ const UNPRINTED_ANSWER = 'The scheme prints no answer for this part.';
  *  it, so no card carries it as data. */
 const HISTORY_ESSAY_NO_MODEL_ANSWER = 'The scheme prints no model answer for this question.';
 
+/** The line a card carries when the SEC published no marking scheme for its
+ *  paper (PLAN-2026-11-18 R4). Mirrors NO_SCHEME_PUBLISHED in types/markBank.ts. */
+const NO_SCHEME_PUBLISHED = 'The SEC published no marking scheme for this paper.';
+
+/**
+ * A card whose paper has no published scheme (types/markBank.ts `noScheme`):
+ * the question as printed, the paper's own marks, and one criterion row that
+ * reads NO_SCHEME_PUBLISHED and claims nothing. It is refused if the sitting
+ * HAS a scheme, on disk or in the Paper Trail index: the flag can never stand
+ * in for an answer the SEC printed. Returns the reason to drop it, or null.
+ */
+function noSchemeFault(c) {
+  const t = c.tariffModel ?? {};
+  if (t.kind !== 'questionTotal') return 'a no-scheme card has the questionTotal tariff';
+  if (c.rows.length !== 1) return 'a no-scheme card has exactly one row';
+  const [r] = c.rows;
+  if (r.kind !== 'criterion' || r.verbatim !== NO_SCHEME_PUBLISHED || (r.marks !== null && r.marks !== undefined)
+    || r.group || r.parts || r.permittedMarks || r.route || r.unprinted || r.ask) {
+    return `a no-scheme card's one row is an unpriced criterion reading "${NO_SCHEME_PUBLISHED}"`;
+  }
+  if (c.answerVariants?.length || c.questionBonus || c.taskGroups || c.figureKey || c.labelKey?.length) {
+    return 'a no-scheme card carries nothing from a scheme';
+  }
+  if (!Number.isInteger(c.totalMarks) || c.totalMarks <= 0) return 'a no-scheme card keeps the marks its paper prints';
+  const stem = `${c.year}-${LEVEL_TOKEN[c.level] ?? 'hl'}${deferredCard(SUBJECT_ID, c) ? '-deferred' : ''}`;
+  if (['md', 'pdf'].some(ext => existsSync(resolve(ROOT, 'examiner-reports', SUBJECT_ID, 'schemes', `${stem}.${ext}`)))) {
+    return `a scheme for ${c.year} ${c.level} is on disk`;
+  }
+  const entry = deferredCard(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, c.year, c.level) : paperEntry(SUBJECT_ID, c.year, c.level);
+  if (entry?.papers?.some(p => p.scheme?.f)) return `the Paper Trail index lists a scheme for ${c.year} ${c.level}`;
+  return null;
+}
+
+/** The fixed line on a translation card. Mirrors TRANSLATION_NO_MODEL in
+ *  types/markBank.ts; the panel prints it, so no card carries it as data. */
+const TRANSLATION_NO_MODEL = 'The scheme prints no model translation.';
+
+/**
+ * An unseen-translation rubric card (types/markBank.ts TranslationRubric),
+ * held as a point card's rows are: every unit of the passage and every line
+ * of the scheme's rule must be found in that year's scheme, the units' marks
+ * must make the question's total, and nothing else may ride on it. Returns
+ * the reason to drop the card, or null.
+ */
+function translationFault(c, scheme) {
+  const r = c.rubric;
+  if (r?.system !== 'translation') return 'not a translation rubric';
+  if ('schemeFileid' in r) return 'schemeFileid is resolved by the build, never authored';
+  if (!Array.isArray(r.units) || !r.units.length) return 'a translation card needs its units';
+  if (new Set(r.units.map(u => u.id)).size !== r.units.length) return 'two units share an id';
+  const bad = r.units.find(u => !String(u.text ?? '').trim() || !Number.isInteger(u.marks) || u.marks <= 0);
+  if (bad) return `unit ${bad.id} has no text or no whole positive mark`;
+  const sum = r.units.reduce((n, u) => n + u.marks, 0);
+  if (sum !== c.totalMarks) return `units sum to ${sum}, the paper prints ${c.totalMarks}`;
+  if (!Array.isArray(r.schemeGuidance) || !r.schemeGuidance.length) return 'a translation card quotes the scheme\'s own rule';
+  const untraced = [...r.units.map(u => u.text), ...r.schemeGuidance].find(text => !claimMatches(scheme, text));
+  if (untraced) return `not found in the ${c.year} ${c.level} scheme: "${String(untraced).slice(0, 60)}"`;
+  if (!Array.isArray(r.schemePages) || !r.schemePages.length || r.schemePages.some(p => !Number.isInteger(p) || p <= 0)) {
+    return 'schemePages must be the scheme pages the units are printed on';
+  }
+  if (!String(r.sourceLanguage ?? '').trim() || !String(r.markingGuideNote ?? '').trim()) return 'sourceLanguage and markingGuideNote are required';
+  return null;
+}
+
 /**
  * A History essay rubric card (types/markBank.ts HistoryEssayRubric), checked
  * the way a point card's rows are: every string the card shows from the
@@ -682,7 +761,10 @@ function historyEssayFault(c, scheme) {
  *  carry a printed lower scale). */
 // Polish joins with treatment D (languages-q3 lane, 19 Nov 2026): its Część B
 // tasks are marked on one Content (C) / Expression (E) grid, the same card.
-const GRID_SUBJECTS = new Set(['spanish', 'german', 'polish']);
+const GRID_SUBJECTS = new Set(['spanish', 'german', 'music', 'polish']);
+/** Music is sat in separate booklets; a card's section names the booklet it is
+ *  printed in, by the Paper Trail index's own label. */
+const MUSIC_BOOKLET = { L: 'Listening', A: 'Composing', B: 'Composing', E: 'Elective' };
 /* A band name the SEC sets on TWO lines of its table cell, with the band's
  * own mark ranges printed in the next cells at the first line's height, so the
  * text layer reads "Very 15 - 12 10-9 good" (Polish 2026 Higher scheme pp10-11,
@@ -700,7 +782,7 @@ const bandNameTraces = (scheme, label) => {
 };
 function spanishGridFault(c, scheme) {
   const r = c.rubric;
-  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German or Polish marking grid';
+  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German, Music or Polish marking grid';
   if (r.allocation || r.answerGuide) return 'a marking grid carries no answer rows';
   const criteria = r.criteria ?? [];
   if (!criteria.length || new Set(criteria.map(k => k.id)).size !== criteria.length) return 'no criteria, or two with one id';
@@ -785,9 +867,8 @@ const ladderOf = (g) => {
  * already records. Filing it as 'higher' would have every card cite a Higher
  * Level paper that does not exist.
  */
-const LEVELS = ['higher', 'ordinary', 'common'];
-const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl' };
-const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common' };
+const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl', foundation: 'fl' };
+const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common', foundation: 'Foundation' };
 
 /* A card from the SEC's DEFERRED sitting ("econ-2022-hl-deferred-sa-q1-a",
  * "eng-2022-hl-deferred-q1-a", "dcg-2022-hl-deferred-a2a",
@@ -802,6 +883,9 @@ const DEFERRED_ID = {
   spanish: /^es-\d{4}-(?:hl|ol)-deferred-/,
   dcg: /^dcg-\d{4}-(?:hl|ol)-deferred-/,
   german: /^de-\d{4}-(?:hl|ol)-deferred-/,
+  physics: /^phys-\d{4}-(?:hl|ol)-deferred-/,
+  'home-economics': /^he-\d{4}-(?:hl|ol)-deferred-/,
+  maths: /^maths-\d{4}-(?:hl|ol|fl)-deferred-/,
 };
 const deferredCard = (subjectId, card) =>
   Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));
@@ -819,8 +903,19 @@ const historyDeferred = (subjectId, card) =>
   subjectId === 'history' && deferredCard(subjectId, card);
 
 function schemeFor(subjectId, card) {
+  // A deferred Link Modules card reads the transcript of its own reviewed
+  // archive scheme, never June's.
+  const lcvpSource = subjectId === 'lcvp' ? reviewedLcvpSource(card) : undefined;
+  if (lcvpSource) {
+    const file = lcvpSource.schemeTextPath;
+    if (!schemeCache.has(file)) schemeCache.set(file, comparableScheme(readLcvpDeferredScheme(lcvpSource)));
+    return schemeCache.get(file);
+  }
+  // An older Maths sitting prints a standard and a Project Maths booklet, each
+  // with its own scheme; the reviewed source names which one a card is from.
+  const project = subjectId === 'maths' && /LP030EV\.pdf$/.test(reviewedMathematicsSource(card.id)?.schemeFileid ?? '');
   const deferred = deferredCard(subjectId, card);
-  const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}${deferred ? '-deferred' : ''}`;
+  const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}${project ? '-project' : deferred ? '-deferred' : ''}`;
   const file = resolve(ROOT, 'examiner-reports', subjectId, 'schemes', `${stem}.md`);
   if (!schemeCache.has(file)) {
     const raw = existsSync(file) ? readFileSync(file, 'utf8') : '';
@@ -1059,6 +1154,8 @@ if (subjectIds.length !== 1) {
   process.exit(1);
 }
 const SUBJECT_ID = subjectIds[0];
+const LEVELS = ['higher', 'ordinary', ...(SUBJECT_ID === 'maths' ? ['foundation'] : []), 'common'];
+if (SUBJECT_ID === 'maths') validateMathematicsReviewSources();
 const SUBJECT = SUBJECTS[SUBJECT_ID];
 if (SUBJECT_ID === 'economics') {
   // During the corpus audit, unreviewed papers remain explicitly pending.
@@ -1161,7 +1258,16 @@ for (const id of Object.keys(subjectSourceBindings)) {
 
 const appliedCorrections = [];
 const cards = [];
+// These two authored Japanese candidates were absent from the frozen served
+// deck. A later generic provenance improvement must not silently publish an
+// unreviewed older sitting during the 2026 source review. They remain OPEN in
+// the paper ledger until their 2021 Ordinary source review resolves them.
+const pendingJapaneseCandidates = new Set(['ja-2021-ol-2b-ii', 'ja-2021-ol-3a-4-iv']);
 for (const raw of rawCards) {
+  if (SUBJECT_ID === 'japanese' && pendingJapaneseCandidates.has(raw.id)) {
+    appliedCorrections.push(`${raw.id}: unshipped legacy candidate; awaiting its original-paper review`);
+    continue;
+  }
   if (repairedFrenchIds.has(raw.id)) {
     appliedCorrections.push(`${raw.id}: preserved in the visually reviewed reading deck`);
     continue;
@@ -1229,7 +1335,9 @@ for (const raw of rawCards) {
     if (!Array.isArray(binding) && binding.questionText) card.questionText = binding.questionText;
     appliedCorrections.push(`${raw.id}: attached its inspected official question-page source`);
   }
-  cards.push(card);
+  // A live card keeps its live conceptId (R12): live-concept-ids.json lists the
+  // only cards this touches, all in Codex's reviewed subjects.
+  cards.push(withLiveConceptId(SUBJECT_ID === 'maths' ? applyMathematicsReview(card) : card));
   if (correction) appliedCorrections.push(`${raw.id}: ${correction.reason}`);
 }
 
@@ -1272,6 +1380,7 @@ const figureRecord = (key) => {
       alt: inspected.alt,
       attribution: inspected.attribution,
       ...(inspected.solution ? { solution: true } : {}),
+      ...(inspected.sourceNote ? { sourceNote: inspected.sourceNote } : {}),
     };
   }
 
@@ -1486,8 +1595,8 @@ function groupFault(c) {
 
 function sourceMaterialFault(source, field = 'sourceMaterial') {
   if (!source || typeof source !== 'object') return `${field} is not an object`;
-  if (!['source-text', 'source-illustration'].includes(source.kind)) {
-    return `${field}.kind must be source-text or source-illustration`;
+  if (!['source-text', 'source-illustration', 'source-question'].includes(source.kind)) {
+    return `${field}.kind must be source-text, source-illustration or source-question`;
   }
   for (const key of ['label', 'title', 'attribution', 'presentationNote']) {
     if (!String(source[key] ?? '').trim()) return `${field}.${key} is empty`;
@@ -1575,13 +1684,19 @@ function relabelDistractors(c) {
  * answered without seeing which diagram is meant. Where two cards claim the same
  * question, the one carrying a figure wins.
  */
+// A repeated printed reference in two distinct Mathematics booklets is two
+// tasks. Preserve ordinary duplicate resolution within each exact booklet.
+const questionIdentity = c => SUBJECT_ID === 'maths'
+  ? JSON.stringify([reviewedMathematicsSource(c.id)?.paperFileid ?? null, c.questionRef, c.mathematicsScale?.practiceInstruction ?? null])
+  : c.questionRef;
 const byQuestion = new Map();
 for (const c of cards) {
-  const prev = byQuestion.get(c.questionRef);
-  if (!prev) { byQuestion.set(c.questionRef, c); continue; }
+  const key = questionIdentity(c);
+  const prev = byQuestion.get(key);
+  if (!prev) { byQuestion.set(key, c); continue; }
   const prevHasFigure = Boolean(prev.figureKey);
   const thisHasFigure = Boolean(c.figureKey);
-  if (thisHasFigure && !prevHasFigure) byQuestion.set(c.questionRef, c);
+  if (thisHasFigure && !prevHasFigure) byQuestion.set(key, c);
 }
 
 const out = [];
@@ -1595,6 +1710,44 @@ const seenHash = new Map();
 let unresolvedPapers = 0;
 
 for (const c of cards) {
+  /* An unseen translation marked unit by unit (Latin): a RUBRIC card of its
+   * own system, with its own gate. Only a card authored with
+   * rubric.system 'translation' takes this path, so every other deck,
+   * History's essays included, is emitted exactly as before. */
+  if (c.kind === 'rubric' && c.rubric?.system === 'translation') {
+    if (seenId.has(c.id)) { dropped.push(`${c.id}: duplicate id`); continue; }
+    const badQ = badQuestion(c.questionText, c);
+    if (badQ) { dropped.push(`${c.id}: ${badQ} — "${c.questionText}"`); continue; }
+    const scheme = schemeFor(SUBJECT_ID, c);
+    if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
+    const fault = translationFault(c, scheme);
+    if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
+    const source = c.sourceMaterial;
+    const badSource = source ? sourceMaterialFault(source, 'sourceMaterial') : null;
+    if (badSource) { dropped.push(`${c.id}: ${badSource}`); continue; }
+    repairGlyphs(c);
+    const mangled = mangledText(c);
+    if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+    const fileid = resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
+    if (!fileid) unresolvedPapers++;
+    const schemeFile = paperEntry(SUBJECT_ID, c.year, c.level)?.papers?.find(p => p.scheme?.f)?.scheme?.f;
+    if (!schemeFile) { dropped.push(`${c.id}: no scheme document in the Paper Trail index`); continue; }
+    const rubric = { ...c.rubric, schemeFileid: String(schemeFile).replace(/\.pdf$/i, '') };
+    const pages = rubric.schemePages.length > 1 ? `pp.${rubric.schemePages[0]}-${rubric.schemePages.at(-1)}` : `p.${rubric.schemePages[0]}`;
+    seenId.add(c.id);
+    out.push({ id: c.id, level: c.level, code: `  {
+    ...base, kind: "rubric",
+    year: ${c.year}, level: ${q(c.level)},
+    paperFileid: ${fileid ? q(fileid) : 'null'},
+    schemeCitation: ${q(`Units and marks quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level, ${pages} — © State Examinations Commission.`)},
+    id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
+    section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
+    questionText: ${q(c.questionText)},
+    totalMarks: ${c.totalMarks},
+    rubric: ${JSON.stringify(rubric, null, 6).replace(/\n/g, '\n    ')},${source ? `\n    sourceMaterial: ${JSON.stringify(source, null, 6).replace(/\n/g, '\n    ')},` : ''}
+  } as SecCard,` });
+    continue;
+  }
   /* A History essay is a RUBRIC card: no rows, a paragraph-marking apparatus
    * instead. It gets its own gates and its own literal, and nothing else in
    * this loop applies to it. No other subject authors kind 'rubric' into its
@@ -1624,6 +1777,8 @@ for (const c of cards) {
     if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
     const fileid = deferredCard(SUBJECT_ID, c)
       ? deferredDoc(SUBJECT_ID, c, 'Exam Paper')
+      : SUBJECT_ID === 'music'
+      ? resolveCompanionFileid('music', c.year, c.level, MUSIC_BOOKLET[c.section])
       : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
     if (!fileid) unresolvedPapers++;
     const pages = c.schemePages.length > 1 ? `pp.${c.schemePages[0]}-${c.schemePages.at(-1)}` : `p.${c.schemePages[0]}`;
@@ -1707,7 +1862,7 @@ for (const c of cards) {
       && (typeof c.questionFigureIncludesPrompt !== 'boolean' || !c.questionFigureKey)) {
     throw new Error(`${c.id}: questionFigureIncludesPrompt requires a question figure and a boolean value`);
   }
-  if (byQuestion.get(c.questionRef) !== c) {
+  if (byQuestion.get(questionIdentity(c)) !== c) {
     dropped.push(`${c.id}: superseded for ${c.questionRef} by a card carrying its figure`);
     continue;
   }
@@ -1750,6 +1905,12 @@ for (const c of cards) {
 
   const badVariants = answerVariantsFault(c);
   if (badVariants) { dropped.push(`${c.id}: ${badVariants}`); continue; }
+
+  const badAudio = audioMaterialFault(c, SUBJECT_ID);
+  if (badAudio) { dropped.push(`${c.id}: ${badAudio}`); continue; }
+
+  const badVideo = videoMaterialFault(c, SUBJECT_ID);
+  if (badVideo) throw new Error(`${c.id}: ${badVideo}`);
 
   const sources = [c.sourceMaterial, ...(c.additionalSourceMaterials ?? [])]
     .filter(Boolean);
@@ -1850,7 +2011,9 @@ for (const c of cards) {
    * with a questionFigure — so this was the odd one out, in the same way the
    * INVITES_DRAWING exemption above had drifted. Measured across every
    * authored deck in the repo: exactly ONE card changes verdict. */
-  if (namesLetters && !((c.figureKey || c.questionFigureKey)
+  const hasReviewedMathematicsSource = SUBJECT_ID === 'maths' && c.mathematicsScale
+    && c.sourceMaterial?.kind === 'source-question' && c.sourceMaterial.pages?.length;
+  if (namesLetters && !hasReviewedMathematicsSource && !((c.figureKey || c.questionFigureKey)
       && Array.isArray(c.labelKey) && c.labelKey.length)) {
     dropped.push(`${c.id}: names lettered parts but carries no labelled figure`);
     continue;
@@ -1859,11 +2022,19 @@ for (const c of cards) {
   const kindFault = badRowKind(c);
   if (kindFault) { dropped.push(`${c.id}: ${kindFault}`); continue; }
 
+  /* A card whose paper has no published scheme claims nothing from one, so
+   * it has nothing to trace; noSchemeFault holds it to its one fixed row and
+   * refuses it outright where a scheme exists. Only a card authored with
+   * `noScheme` takes this path. */
+  if (c.noScheme) {
+    const fault = noSchemeFault(c);
+    if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
+  }
   // Every marking point must actually appear in its own scheme.
-  const scheme = schemeFor(SUBJECT_ID, c);
-  if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
+  const scheme = c.noScheme ? null : schemeFor(SUBJECT_ID, c);
+  if (!c.noScheme && !scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
   const untraceable = [];
-  for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows), ...(c.questionBonus ? [[c.questionBonus]] : [])].flat()) {
+  for (const r of c.noScheme ? [] : [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows), ...(c.questionBonus ? [[c.questionBonus]] : [])].flat()) {
     if (r.unprinted) {
       /* A printed ask whose scheme prints NO answer row (Biology 2010 Ordinary
        * Q11(c)(vii)): every printed ask gets a card, and this row says the
@@ -1992,17 +2163,33 @@ for (const c of cards) {
   /* History is examined in two FIELDS OF STUDY, printed as separate papers a
    * candidate chooses between, and Paper Trail indexes them as two subjects.
    * corpusSubjectFor reads the field out of the citation; see paperIndex.mjs. */
-  const deferredEntry = deferredCard(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, year, level) : null;
+  /* Codex's reviewed subjects bind each card to the exact booklet and scheme a
+   * reviewer read (an older Maths sitting prints two booklets with the same
+   * paper numbers; a deferred Physics or Home Economics card names its own
+   * deferred pair). Whether a card is deferred is still read one way, from its
+   * id (deferredCard), and the reviewed source must agree with it. */
+  const reviewedSource = SUBJECT_ID === 'maths' ? reviewedMathematicsSource(c.id)
+    : SUBJECT_ID === 'physics' ? reviewedPhysicsSource(c.id)
+    : SUBJECT_ID === 'home-economics' ? reviewedHomeEconomicsSource(c.id)
+    : SUBJECT_ID === 'lcvp' ? reviewedLcvpSource(c) : undefined;
+  if (reviewedSource && (reviewedSource.sitting === 'deferred') !== deferredCard(SUBJECT_ID, c)) {
+    throw new Error(`${c.id}: its reviewed source sitting (${reviewedSource.sitting}) disagrees with its id`);
+  }
+  const deferredEntry = !reviewedSource && deferredCard(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, year, level) : null;
   /* A Spanish listening card (section L) is answered from the Listening
    * Comprehension Test, a separate SEC booklet the Paper Trail index labels
    * "Aural Paper": its paper is that booklet, never the written paper the
    * section-less resolver returns for a language. German's listening test is
-   * the same booklet in four parts, filed L1 to L4. No other deck has these. */
+   * the same booklet in four parts, filed L1 to L4. Japanese and Russian
+   * listening cards carry their recording and name their Aural Paper through
+   * audioQuestionPaperFileid. No other deck has these. */
   const listening = (SUBJECT_ID === 'spanish' && c.section === 'L')
     || (SUBJECT_ID === 'german' && /^L[1-4]$/.test(c.section));
   /* A DCG deferred sitting is two booklets, as June's is: its card opens the
    * one that prints its section, never simply the entry's first. */
-  const fileid = deferredEntry && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
+  const fileid = reviewedSource
+    ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
+    : deferredEntry && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
     ? deferredDoc(SUBJECT_ID, c, listening ? 'Aural Paper' : 'Exam Paper')
     : deferredEntry
     ? (SUBJECT_ID === 'dcg'
@@ -2010,32 +2197,40 @@ for (const c of cards) {
       : String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null)
     : listening
       ? resolveCompanionFileid(SUBJECT_ID, year, level, 'Aural Paper')
-      : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
+      : SUBJECT_ID === 'music'
+      ? resolveCompanionFileid('music', year, level, MUSIC_BOOKLET[c.section])
+      : audioQuestionPaperFileid(c, SUBJECT_ID)
+        ?? resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
   out.push({ id: c.id, level, code: `  {
     ...base,${c.qa ? ` qa: ${JSON.stringify(c.qa)},` : ''}${c.curriculumNodeIds ? `\n    ...examCardCurriculum(${q(SUBJECT_ID)}, ${year}, ${JSON.stringify(c.curriculumNodeIds)}),` : ''} kind: ${q(labelKey ? 'diagram' : 'question')},
     year: ${year}, level: ${q(level)},
     paperFileid: ${fileid ? q(fileid) : 'null'},
-    schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry ? ', deferred examination' : ''} — © State Examinations Commission.`)},
+    schemeCitation: ${q(c.noScheme
+    ? `No marking scheme: the SEC published none for ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry || reviewedSource?.sitting === 'deferred' ? ', deferred examination' : ''}. Question quoted from the SEC examination paper — © State Examinations Commission.`
+    : `Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry || reviewedSource?.sitting === 'deferred' ? ', deferred examination' : ''} — © State Examinations Commission.`)},
     id: ${q(c.id)}, topicId: ${q(c.topicId)},${c.additionalTopicIds?.length ? ` additionalTopicIds: ${JSON.stringify(c.additionalTopicIds)},` : ''} conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},${c.questionChoices?.length ? `\n    questionChoices: ${JSON.stringify(c.questionChoices)},` : ''}
-    tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},
+    tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},${c.noScheme ? '\n    noScheme: true,' : ''}
     rows: [
 ${rows}
-    ],${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.audioMaterial ? `\n    audioMaterial: ${JSON.stringify(c.audioMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
+    ],${c.mathematicsScale ? `\n    mathematicsScale: ${JSON.stringify(c.mathematicsScale)},` : ''}${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.audioMaterial ? `\n    audioMaterial: ${JSON.stringify(c.audioMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.videoMaterial ? `\n    videoMaterial: ${JSON.stringify(c.videoMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
   } as SecCard,` });
 }
 
 // A later provenance, glyph or figure rejection must not silently remove a
 // task that the independent physical-paper census requires. Fail before writes.
 if (SUBJECT_ID === 'economics') assertEconomicsReviewCoverage(seenId, economicsReviews);
+
+if (SUBJECT_ID === 'maths') assertReviewedMathematicsCards(out.map(card => card.id), dropped);
 process.stderr.write(`${SUBJECT.title}: built ${out.length} cards, dropped ${dropped.length}\n`);
 /* Every build ends with the paper-anchored ledger, so nobody can ship a deck
  * without the coverage number in front of them — the class of failure where
  * "64 cards" was reported for a subject whose papers print 500 asks. Best
  * effort: a machine without python3 still builds. */
+if (SUBJECT_ID !== 'maths') {
 try {
   const { execSync } = await import('node:child_process');
   const led = execSync(
@@ -2047,6 +2242,7 @@ try {
   process.stderr.write(first
     ? `LEDGER ${first}\n`
     : 'LEDGER unavailable (python3 missing?) — run reconcile.py by hand\n');
+}
 }
 for (const d of dropped) process.stderr.write(`  DROPPED ${d}\n`);
 for (const c of appliedCorrections) process.stderr.write(`  CORRECTED ${c}\n`);
@@ -2107,7 +2303,10 @@ if (businessRubrics.length) {
 // point-card source, so each printed ask is carded once.
 const reRubricCards = SUBJECT_ID === 'religious-education' && existsSync(resolve(OUT_DIR, 'rubric-authored.json'))
   ? JSON.parse(readFileSync(resolve(OUT_DIR, 'rubric-authored.json'), 'utf8')).cards : [];
-const moduleImports = SUBJECT_ID === 'applied-maths' ? "import { withReviewedCards } from './reviewed';"
+// Applied Maths, Japanese and Russian lay a reviewed overlay (reviewed.json)
+// over the generated cards of each level module.
+const reviewedOverlaySubject = ['applied-maths', 'russian', 'japanese'].includes(SUBJECT_ID);
+const moduleImports = reviewedOverlaySubject ? "import { withReviewedCards } from './reviewed';"
   : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\n"
     : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n"
       : reRubricCards.length ? "import { rubricCardsForLevel } from './rubric';\n" : '';
@@ -2149,9 +2348,9 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
 ${historyEssayMarking[level].map(json => `  ${json.replace(/\n/g, '\n  ')},`).join('\n')}
 ];
 ` : ''}
-export const CARDS: SecCard[] = ${SUBJECT_ID === 'applied-maths' ? 'withReviewedCards(' : ''}[
+export const CARDS: SecCard[] = ${reviewedOverlaySubject ? 'withReviewedCards(' : ''}[
 ${cards.join('\n')}
-${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : reRubricCards.length ? `  ...rubricCardsForLevel(${q(level)}),\n` : ''}]${SUBJECT_ID === 'applied-maths' ? `, '${level}')` : ''};
+${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : reRubricCards.length ? `  ...rubricCardsForLevel(${q(level)}),\n` : ''}]${reviewedOverlaySubject ? `, '${level}')` : ''};
 `;
 
 /* A level gets a module when the subject HAS that level, never as a matter of
@@ -2168,13 +2367,15 @@ for (const level of LEVELS) {
   const path = resolve(OUT_DIR, `${level}.ts`);
   if (!levelCards.length && !levelRubrics && !existsSync(path)) continue;
   writeFileSync(path, moduleFor(level, levelCards));
-  const reviewedIds = SUBJECT_ID === 'applied-maths'
+  const reviewedIds = reviewedOverlaySubject
     ? JSON.parse(readFileSync(resolve(OUT_DIR, 'reviewed.json'), 'utf8')).filter(card => card.level === level).map(card => card.id) : [];
   const originalIds = levelCards.map(code => code.match(/^    id: "([^"]+)"/m)?.[1]).filter(Boolean);
+  const reviewedAliases = SUBJECT_ID === 'japanese'
+    ? JSON.parse(readFileSync(resolve(OUT_DIR, 'aliases.json'), 'utf8')) : {};
   const additionsCount = SUBJECT_ID === 'french'
     ? ['writing.json', 'reading.json', 'cloze.json', 'listening.json'].flatMap(name => JSON.parse(readFileSync(resolve(OUT_DIR, name), 'utf8'))).filter(card => card.level === level).length
     : 0;
-  sizes[level] = SUBJECT_ID === 'applied-maths' ? new Set([...originalIds, ...reviewedIds]).size : levelCards.length + additionsCount + levelRubrics;
+  sizes[level] = reviewedOverlaySubject ? new Set([...originalIds.filter(id => !Object.hasOwn(reviewedAliases, id)), ...reviewedIds]).size : levelCards.length + additionsCount + levelRubrics;
   process.stderr.write(`  ${level}: ${sizes[level]} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);
 }
 
@@ -2190,3 +2391,16 @@ for (const level of LEVELS) {
 const MANIFEST_OUT = resolve(ROOT, 'components/MarkBank/cards/sizes.json');
 const existing = existsSync(MANIFEST_OUT) ? JSON.parse(readFileSync(MANIFEST_OUT, 'utf8')) : {};
 writeFileSync(MANIFEST_OUT, `${JSON.stringify({ ...existing, [SUBJECT_ID]: sizes }, null, 1)}\n`);
+
+
+// Mathematics reconciles the just-written modules against the full Paper Trail
+// inventory, including Foundation. The legacy ledger counts only two levels
+// and runs before the files are written, so it cannot report this build.
+if (SUBJECT_ID === 'maths') {
+  const { execFileSync } = await import('node:child_process');
+  try {
+    process.stderr.write(execFileSync('python3', [resolve(ROOT, 'scripts/markbank/mathematics/audit.py')], { encoding: 'utf8' }));
+  } catch (error) {
+    process.stderr.write(String(error.stdout ?? error.message));
+  }
+}

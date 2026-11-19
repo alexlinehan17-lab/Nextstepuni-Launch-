@@ -1,0 +1,828 @@
+{
+  "status": "complete original-source and presentation review; all 38 distinct question/solution pairs inspected",
+  "reviewedAt": "2026-10-29",
+  "paperFileid": "LC003BLP200EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "schemePagesInspected": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+  ],
+  "generalNotesPages": [
+    56,
+    57
+  ],
+  "offeredMarks": 325,
+  "candidateMarks": 300,
+  "practiceMarks": 350,
+  "scales": {
+    "5B": [
+      0,
+      3,
+      5
+    ],
+    "5C": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "10B": [
+      0,
+      5,
+      10
+    ],
+    "10C": [
+      0,
+      5,
+      7,
+      10
+    ],
+    "15D": [
+      0,
+      6,
+      9,
+      12,
+      15
+    ],
+    "20C": [
+      0,
+      15,
+      17,
+      20
+    ],
+    "20D": [
+      0,
+      8,
+      12,
+      16,
+      20
+    ]
+  },
+  "tasks": [
+    {
+      "suffix": "1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 20,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        43,
+        58
+      ],
+      "questionText": "For each of the six events, write the letter A–E that best describes how likely it is. Use the original descriptions and event table.",
+      "scale": "20D"
+    },
+    {
+      "suffix": "1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        43,
+        58
+      ],
+      "questionText": "Find the difference between the mean weekly wage and the median weekly wage.",
+      "scale": "5C",
+      "stem": "A business has 1 manager paid €1020, 4 technicians each paid €800, 2 technical assistants each paid €500 and 2 secretaries each paid €450 per week."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        44,
+        59
+      ],
+      "questionText": "How many different possible outcomes are there?",
+      "scale": "10C",
+      "stem": "John has two bags: balls numbered 1 and 2 in one, and balls numbered 5, 6 and 7 in the other. He picks one ball at random from each and records both numbers."
+    },
+    {
+      "suffix": "2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        44,
+        59
+      ],
+      "questionText": "What is the probability that the outcome will be the balls numbered 1 and 5?",
+      "scale": "5C",
+      "stem": "John has two bags: balls numbered 1 and 2 in one, and balls numbered 5, 6 and 7 in the other. He picks one ball at random from each and records both numbers."
+    },
+    {
+      "suffix": "2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        44,
+        59
+      ],
+      "questionText": "What is the probability that both numbers drawn will be odd?",
+      "scale": "5C",
+      "stem": "John has two bags: balls numbered 1 and 2 in one, and balls numbered 5, 6 and 7 in the other. He picks one ball at random from each and records both numbers."
+    },
+    {
+      "suffix": "2-d",
+      "printedParts": [
+        "Q2(d)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        44,
+        59
+      ],
+      "questionText": "What is the probability that at least one of the numbers will be odd?",
+      "scale": "5C",
+      "stem": "John has two bags: balls numbered 1 and 2 in one, and balls numbered 5, 6 and 7 in the other. He picks one ball at random from each and records both numbers."
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        45,
+        60
+      ],
+      "questionText": "Write down the co-ordinates of A, B and C.",
+      "scale": "10C",
+      "stem": "Use the original diagram showing A, B and C."
+    },
+    {
+      "suffix": "3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        45,
+        60
+      ],
+      "questionText": "Find the co-ordinates of the midpoint of [BC].",
+      "scale": "5C",
+      "stem": "Use the original diagram showing A, B and C."
+    },
+    {
+      "suffix": "3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        45,
+        60
+      ],
+      "questionText": "Find the slope of AB.",
+      "scale": "5C",
+      "stem": "Use the original diagram showing A, B and C."
+    },
+    {
+      "suffix": "3-d",
+      "printedParts": [
+        "Q3(d)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        45,
+        60
+      ],
+      "questionText": "The point X has co-ordinates (7, 17). Is the line AB parallel to the line CX? Give a reason for your answer.",
+      "scale": "5C",
+      "stem": "Use the original diagram showing A, B and C. Part (c) asks for the slope of AB."
+    },
+    {
+      "suffix": "4a-a",
+      "printedParts": [
+        "Q4A(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        46,
+        61
+      ],
+      "questionText": "Construct a parallelogram PQRS with |PQ| = 7 cm, |QR| = 5 cm and ∠PQR = 120°. Show all construction lines clearly.",
+      "scale": "15D",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "4a-b",
+      "printedParts": [
+        "Q4A(b)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        46,
+        61
+      ],
+      "questionText": "Use your protractor to measure the angle RSP.",
+      "scale": "5B",
+      "stem": "Construct a parallelogram PQRS with |PQ| = 7 cm, |QR| = 5 cm and ∠PQR = 120°. Show all construction lines clearly.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "4a-c",
+      "printedParts": [
+        "Q4A(c)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        46,
+        61
+      ],
+      "questionText": "Explain how you could use the measurement in part (b) to check the accuracy of your construction.",
+      "scale": "5B",
+      "stem": "Construct a parallelogram PQRS with |PQ| = 7 cm, |QR| = 5 cm and ∠PQR = 120°. Show all construction lines clearly. In part (b), measure ∠RSP with a protractor."
+    },
+    {
+      "suffix": "4b-a",
+      "printedParts": [
+        "Q4B(a)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "questionText": "Write down ∠BCD.",
+      "scale": "5B",
+      "stem": "ABCD is a parallelogram inscribed in a circle with centre O. The diagonals meet at O. |AB| = 12, |BC| = 9 and ∠CDB = 37°. Use the original diagram."
+    },
+    {
+      "suffix": "4b-b",
+      "printedParts": [
+        "Q4B(b)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "questionText": "Calculate |DB|.",
+      "scale": "5C",
+      "stem": "ABCD is a parallelogram inscribed in a circle with centre O. The diagonals meet at O. |AB| = 12, |BC| = 9 and ∠CDB = 37°. Use the original diagram."
+    },
+    {
+      "suffix": "4b-c",
+      "printedParts": [
+        "Q4B(c)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "questionText": "Name two isosceles triangles in the diagram.",
+      "scale": "5C",
+      "stem": "ABCD is a parallelogram inscribed in a circle with centre O. The diagonals meet at O. |AB| = 12, |BC| = 9 and ∠CDB = 37°. Use the original diagram."
+    },
+    {
+      "suffix": "4b-d",
+      "printedParts": [
+        "Q4B(d)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "questionText": "Find ∠BOC.",
+      "scale": "5C",
+      "stem": "ABCD is a parallelogram inscribed in a circle with centre O. The diagonals meet at O. |AB| = 12, |BC| = 9 and ∠CDB = 37°. Use the original diagram."
+    },
+    {
+      "suffix": "4b-e",
+      "printedParts": [
+        "Q4B(e)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "questionText": "Find the area of the triangle ABD.",
+      "scale": "5C",
+      "stem": "ABCD is a parallelogram inscribed in a circle with centre O. The diagonals meet at O. |AB| = 12, |BC| = 9 and ∠CDB = 37°. Use the original diagram."
+    },
+    {
+      "suffix": "5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        48,
+        63
+      ],
+      "questionText": "Complete the grouped-frequency table. Each interval includes its lower endpoint and excludes its upper endpoint.",
+      "scale": "15D",
+      "stem": "A researcher asks the Principal in her old school to choose students for a survey of weekly study hours among Leaving Certificate students in Ireland. Use the original 25 recorded values."
+    },
+    {
+      "suffix": "5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        48,
+        63
+      ],
+      "questionText": "How many students took part in the research?",
+      "scale": "10B",
+      "stem": "A researcher asks the Principal in her old school to choose students for a survey of weekly study hours among Leaving Certificate students in Ireland. Use the original 25 recorded values."
+    },
+    {
+      "suffix": "5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        48,
+        63
+      ],
+      "questionText": "Represent the data using a suitable chart.",
+      "scale": "10C",
+      "stem": "A researcher asks the Principal in her old school to choose students for a survey of weekly study hours among Leaving Certificate students in Ireland. Use the original 25 recorded values."
+    },
+    {
+      "suffix": "5-d",
+      "printedParts": [
+        "Q5(d)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        8,
+        9
+      ],
+      "schemePages": [
+        49,
+        63
+      ],
+      "questionText": "A student is picked at random from the group. What is the probability that this student spends less than 10 hours a week studying?",
+      "scale": "5C",
+      "stem": "A researcher asks the Principal in her old school to choose students for a survey of weekly study hours among Leaving Certificate students in Ireland. Use the original 25 recorded values."
+    },
+    {
+      "suffix": "5-e",
+      "printedParts": [
+        "Q5(e)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        8,
+        9
+      ],
+      "schemePages": [
+        49,
+        63
+      ],
+      "questionText": "A sample should represent the population fairly. Give one reason why the sample in this case might be biased.",
+      "scale": "5B",
+      "stem": "A researcher asks the Principal in her old school to choose students for a survey of weekly study hours among Leaving Certificate students in Ireland. Use the original 25 recorded values."
+    },
+    {
+      "suffix": "5-f",
+      "printedParts": [
+        "Q5(f)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        8,
+        9
+      ],
+      "schemePages": [
+        49,
+        63
+      ],
+      "questionText": "State one thing the researcher could have done to avoid bias in the sample.",
+      "scale": "5B",
+      "stem": "A researcher asks the Principal in her old school to choose students for a survey of weekly study hours among Leaving Certificate students in Ireland. Use the original 25 recorded values."
+    },
+    {
+      "suffix": "6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        50,
+        64
+      ],
+      "questionText": "On the diagram, find the centre of enlargement.",
+      "scale": "5B",
+      "stem": "Two pictures hang from a horizontal rail. The smaller frame measures 42 cm by 28 cm. The larger is an enlargement with scale factor 2. Use the original diagram."
+    },
+    {
+      "suffix": "6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 20,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        50,
+        64
+      ],
+      "questionText": "Find the measurements of the larger picture.",
+      "scale": "20C",
+      "stem": "Two pictures hang from a horizontal rail. The smaller frame measures 42 cm by 28 cm. The larger is an enlargement with scale factor 2. Use the original diagram.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "6-a-iii",
+      "printedParts": [
+        "Q6(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        50,
+        64
+      ],
+      "questionText": "The centre of enlargement is 70 cm from the nearest corner of the smaller picture. Find x, the distance between the two pictures.",
+      "scale": "10C",
+      "stem": "Two pictures hang from a horizontal rail. The smaller frame measures 42 cm by 28 cm. The larger is an enlargement with scale factor 2. Use the original diagram.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        11
+      ],
+      "schemePages": [
+        51,
+        64
+      ],
+      "questionText": "Use Pythagoras’ theorem to find d, correct to the nearest cm.",
+      "scale": "10C",
+      "stem": "John moves the larger picture across and up. The original diagram shows the resulting triangle, with hypotenuse 75 cm and vertical side 14 cm.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        11
+      ],
+      "schemePages": [
+        51,
+        64
+      ],
+      "questionText": "Find the angle α, correct to the nearest degree.",
+      "scale": "5C",
+      "stem": "John moves the larger picture across and up. The original diagram shows the resulting triangle, with hypotenuse 75 cm and vertical side 14 cm.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        12
+      ],
+      "schemePages": [
+        52,
+        65
+      ],
+      "questionText": "A disc has a diameter of 16 cm. Find its area, correct to the nearest cm².",
+      "scale": "10C",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        12
+      ],
+      "schemePages": [
+        52,
+        65
+      ],
+      "questionText": "Find the volume of the cone, correct to the nearest mm³.",
+      "scale": "15D",
+      "stem": "A cone has base radius 15 mm and height 36 mm. Its slant height is l. Use the original diagram.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        12
+      ],
+      "schemePages": [
+        52,
+        65
+      ],
+      "questionText": "Find l, the slant height of the cone.",
+      "scale": "5C",
+      "stem": "A cone has base radius 15 mm and height 36 mm. Its slant height is l. Use the original diagram.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        13
+      ],
+      "schemePages": [
+        53,
+        65
+      ],
+      "questionText": "Find the volume of the sphere in terms of π.",
+      "scale": "15D",
+      "stem": "A solid wax sphere has diameter 12 cm.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        13
+      ],
+      "schemePages": [
+        53,
+        65
+      ],
+      "questionText": "A solid wax cylinder has height 8 cm. Four of these cylinders contain the same volume of wax as the sphere. Find the radius of the cylinder.",
+      "scale": "5C",
+      "stem": "A solid wax sphere has diameter 12 cm. Part (c)(i) asks for its volume in terms of π.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        14
+      ],
+      "schemePages": [
+        54,
+        66
+      ],
+      "questionText": "Find the length of the longer side.",
+      "scale": "10C",
+      "stem": "A rectangular playing field has perimeter 440 m and shorter side 85 m.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        14
+      ],
+      "schemePages": [
+        54,
+        66
+      ],
+      "questionText": "Find the area of the playing field.",
+      "scale": "5C",
+      "stem": "A rectangular playing field has perimeter 440 m and shorter side 85 m.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 30,
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        55,
+        66
+      ],
+      "questionText": "Use Simpson’s rule to estimate the area of the school yard.",
+      "components": [
+        {
+          "id": "substitution",
+          "label": "Substitution",
+          "code": "20C",
+          "fullCreditMinusOne": false
+        },
+        {
+          "id": "calculation",
+          "label": "Calculation",
+          "code": "10C",
+          "fullCreditMinusOne": true
+        }
+      ],
+      "stem": "Use the original school-yard diagram. Offsets of 20 m, 15 m, 16 m, 17 m, 14 m and 8 m are measured at intervals of 9 m. The final endpoint lies on the baseline.",
+      "markingNote": "Mark substitution out of 20 and calculation out of 10 independently. The one-mark rounding or units deduction applies only to the calculation component."
+    },
+    {
+      "suffix": "8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        55,
+        66
+      ],
+      "questionText": "The yard is resurfaced at a cost of €185 for every 10 square metres. Find the cost of resurfacing the yard.",
+      "scale": "5C",
+      "stem": "Use the original school-yard diagram. Offsets of 20 m, 15 m, 16 m, 17 m, 14 m and 8 m are measured at intervals of 9 m. The final endpoint lies on the baseline. Part (b)(i) asks for the area using Simpson’s rule."
+    }
+  ],
+  "paperSha256": "00bb1f29194a39f9612caf8a876b5b883bac53459e0be4c0f4d522006d34ab37",
+  "schemeSha256": "a2c36474eef909e0348c0533b379f4f34d56fa99b0f92ec09b25da5812680459",
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        6,
+        7
+      ],
+      "wording": "either Question 4A or Question 4B",
+      "classification": "expanded-alternatives",
+      "reason": "Both complete geometry alternatives retained: 325 offered marks and 300 candidate marks."
+    },
+    {
+      "pages": [
+        7
+      ],
+      "wording": "Name two isosceles triangles in the diagram.",
+      "classification": "expanded-finite-pool",
+      "reason": "The four eligible triangles OAB, OBC, OCD and ODA form six unordered pairs. All six mechanically generated practice routes retain the joint 5C tariff. Each instruction identifies the outer sides, leaving the learner to name the triangles. This adds 25 practice marks without changing the paper tariff."
+    },
+    {
+      "pages": [
+        3,
+        4,
+        5,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15
+      ],
+      "wording": "each event; A–E likelihood labels; both numbers; at least one; one reason; one thing",
+      "classification": "all-required-or-open-response",
+      "reason": "All six likelihood classifications, all coordinates and all grouped frequencies are compulsory within their shared scales. A–E are response labels, and probability outcomes are data, not optional questions. The bias explanation and remedy are open responses; both published examples are retained, without inventing a closed prompt pool."
+    }
+  ],
+  "notes": [
+    "38 published tasks and 39 independently awarded scale components; six Q4B(c) pairs yield 43 practice cards and 44 scale controls.",
+    "All three sections use Paper 2 scales, including old-syllabus Section C. Foundation 20C is 0/15/17/20, not the Higher or Ordinary ladder.",
+    "Eleven tasks have a whole-task star: Q6(a)(ii,iii), Q6(b)(i,ii), all five Q7 tasks and Q8(a)(i,ii). Q8(b)(i) has a star only on its calculation component; Q8(b)(ii) is unstarred.",
+    "Every source diagram, table, sample-selection description and dependent stem retained; all published model solutions and specific credit notes shown as original typeset crops.",
+    "Q4B(c) six routes share one original prompt image and one complete official solution panel. Alternative routes are practice choices, never summed into the candidate paper total.",
+    "The PDF text layer scrambled Q6(b)(ii)’s inverse-sine expression. The extracted scheme text was corrected to α = sin⁻¹(14/75), independently checked against PDF page 64; the source PDF and rendered solution remain unchanged."
+  ]
+}

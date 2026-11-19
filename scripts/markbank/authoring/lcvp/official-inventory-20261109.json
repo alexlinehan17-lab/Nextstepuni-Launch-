@@ -1,0 +1,1769 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-09T23:05:39.432599+00:00",
+  "authority": "State Examinations Commission",
+  "archiveUrl": "https://www.examinations.ie/exammaterialarchive/index.php",
+  "offeredYears": {
+    "exampapers": [
+      2026,
+      2025,
+      2024,
+      2023,
+      2022,
+      2021,
+      2020,
+      2019,
+      2018,
+      2017,
+      2016,
+      2015,
+      2014,
+      2013,
+      2012,
+      2011,
+      2010,
+      2009,
+      2008,
+      2007,
+      2006,
+      2005,
+      2004,
+      2003,
+      2002,
+      2001,
+      2000,
+      1999,
+      1998,
+      1997,
+      1996,
+      1995
+    ],
+    "markingschemes": [
+      2026,
+      2025,
+      2024,
+      2023,
+      2022,
+      2021,
+      2020,
+      2019,
+      2018,
+      2017,
+      2016,
+      2015,
+      2014,
+      2013,
+      2012,
+      2011,
+      2010,
+      2009,
+      2008,
+      2007,
+      2006,
+      2005,
+      2004,
+      2003,
+      2002,
+      2001
+    ],
+    "deferredexams": [
+      2025,
+      2024,
+      2023,
+      2022
+    ],
+    "deferredmarkingschemes": [
+      2025,
+      2024,
+      2023,
+      2022
+    ]
+  },
+  "listings": [
+    {
+      "view": "exampapers",
+      "year": 2026,
+      "subjectListSha256": "18ef87c95fca082337fc289e998a7fb4d1b728c9c3e2bb4d80b1616335918ce0",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "8d82861120fb788f7501be748282583322f362b7b646880510d6849e8344eba7",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP031EV.mov",
+        "LC462CLP031IV.mov"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2025,
+      "subjectListSha256": "56a41e92962ba7d91293b6af4a03f692ec1634cbc0e3dc8b4e5c4bc165daf3fe",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "57a19084e7a570f3612058ed5873ee22abe3829132cf8255cee8cbd8e92ac5fe",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP031EV.mov",
+        "LC462CLP031IV.mov"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2024,
+      "subjectListSha256": "13462fd574c52917401d1147c704d53124a73a8075925a5f3af669dcae2279c7",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "438ef31ced9b005fd8d4689c26f2186cf537e9b3a8a1fa4e1f7c2ebee5980458",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP031EV.mov",
+        "LC462CLP031IV.mov"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2023,
+      "subjectListSha256": "26425501a9b7f7ab0bf6c7f4a7912ccc72441a2c53e2e63900dc4bef981f4656",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "e3d1247e6fbb649840b124dab144c7b05dea6403e1e6847a1f039623272a135c",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP031EV.mov",
+        "LC462CLP031IV.mov"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2022,
+      "subjectListSha256": "23d987bd4b7a0b342e1bd0233e8b0bc8500f47b2874ba3a29474d248644ddce7",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "507dce5fd16b4762ba4cdd89ba3a57b4eb085e8a914f06d23baa95799f3d2bed",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP031EV.mov",
+        "LC462CLP031IV.mov"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2021,
+      "subjectListSha256": "c6650ff98271a17af2dbcc0a0f8f987bb38e1750473f047498242a3563591126",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "15187206c952f35a4d57e93427aa65d7b08083051d89f139168eae45d862cc0a",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP031EV.mov",
+        "LC462CLP031IV.mov"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2020,
+      "subjectListSha256": "d13ff5517b4e31cddb558732d3feb734b612172c92cb95581bbd5cd58c092417",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "6a20f94993891572bd953217767937e007787179030d7e5d759eb27e1d247465",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP031EV.mp4",
+        "LC462CLP031IV.mp4"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2019,
+      "subjectListSha256": "12480129e5a055062a1d7fbea12ea3ca8877e387f16b9cf2db24a131520d5334",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "33029062586deeb2bf648bada31c05c5b07275d7b4d941aa98820b5252b20ca7",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP031EV.mp4",
+        "LC462CLP031IV.mp4"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2018,
+      "subjectListSha256": "6273b2ae903020def289d3ba60006c3e6aea405dd60921eae602b009a44b119a",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "d101d4610ec188d9e4e0b07edfdac98080bc8aaf55d28d4b8f68b171b699c9dc",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP031EV.mp4",
+        "LC462CLP031IV.mp4"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2017,
+      "subjectListSha256": "9ffbed6ab06566ebd9a19c297fe0d603c2a2d28937717512cd632b1fb421a480",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "446024d2f9b641d8971ca69db8e7b0470f8cfa4a14d22c68175aada6e94ad687",
+      "files": [
+        "LC462CLP031EV.mp4",
+        "LC462CLP031IV.mp4",
+        "LC462CLPO00EV.pdf"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2016,
+      "subjectListSha256": "212b97c2a47a1f8c9b0fc7076198d5af2cd180b2f8135d7212e2e08c2678e3d5",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "79ffd5b7b056ab3ced7191aee1732ce31831e4f7dacd054c1c1f8919f7ab6be4",
+      "files": [
+        "LC462CLP031EV.mp4",
+        "LC462CLP031IV.mp4",
+        "LC462CLPO00EV.pdf",
+        "LC462CLPO00IV.pdf",
+        "LC462CLPO16EV.pdf",
+        "LC462CLPO16IV.pdf"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2015,
+      "subjectListSha256": "709c1c112a4df1b2f43de83ca620c9aa7a946e9c49f143ef6c4eba2c02149dc6",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "5bf6704481a1903c4854332e23cd1bcd6b7dcf353338212816477ac90aadda9d",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP016EV.pdf",
+        "LC462CLP016IV.pdf",
+        "LC462CLPO31EV.mp4",
+        "LC462CLPO31IV.mp4"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2014,
+      "subjectListSha256": "22f12613570bb226854e03421f7c3bb7cfe5e8881a329f3ea7ff8c59203d5562",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "7975a1491c026bfdcc89747818c4d183fdacb0400b6c701d1e8f41f4b1f57df9",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP016EV.pdf",
+        "LC462CLP016IV.pdf",
+        "LC462CLP031EV.mp4",
+        "LC462CLP031IV.mp4"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2013,
+      "subjectListSha256": "323697db612097291169bcdd6879ec6d04c68e2e183b84565d591be2019690c3",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "57afd98a1865731d6608ff4f5f26888ad2e384d0aef3599b56dbd512f8fdb463",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP016EV.pdf",
+        "LC462CLP016IV.pdf",
+        "LC462CLP031EV.mp4",
+        "LC462CLP031IV.mp4"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2012,
+      "subjectListSha256": "05e5a22056f65d900d44bc8f29ee8094596dc5d0a2db308cb644deb7d4fd218e",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "bab9a15d52a97802914ad3f0bc9c1e0f57086cb42820acde90d25ca0595a457a",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP016EV.pdf",
+        "LC462CLP016IV.pdf",
+        "LC462CLP031EV.mov",
+        "LC462CLP031IV.avi"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2011,
+      "subjectListSha256": "78c7654caa089c71dca771d051a36a8e5c32aa04174625c24ff8297b01e614d8",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "d3196be3663067cf14107bc02dc8b64c5739be3784b5ab4dc4082ba14332c244",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP016EV.pdf",
+        "LC462CLP016IV.pdf",
+        "LC462CLP031EV.mp4"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "exampapers",
+      "year": 2010,
+      "subjectListSha256": "4835e60db204a79aa85bcc6083ce7ae7619a81f6a7f33665b36bfbfc37d3fe33",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "8b3c84bcd788dd88befe444e8596f4505bed742cde83542aa54d14e77b0eb674",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP031EV.mov"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "markingschemes",
+      "year": 2026,
+      "subjectListSha256": "08de9001c6c187e573336de0c00d2b1f6e33db1d7bb873016d3a67d5b45b2235",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "listingSha256": "fd7fde83e4dea93cbecf11e10c8971220652f359eae59a778b4daf6b6a795d15",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP044EV.pdf",
+        "LC462CLP044IV.pdf"
+      ],
+      "evidence": "Cached successful official response from this same inventory run."
+    },
+    {
+      "view": "markingschemes",
+      "year": 2025,
+      "subjectListSha256": "10950adef61f49c475b64b77c57d093edf92b28a5569aafc12d2e9834c122688",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "24",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "219",
+        "29",
+        "567",
+        "547",
+        "38",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "49",
+        "10",
+        "5",
+        "11",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "557",
+        "566",
+        "3",
+        "19",
+        "67",
+        "225",
+        "21",
+        "23",
+        "548",
+        "568",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "12",
+        "39",
+        "65",
+        "570"
+      ],
+      "listingSha256": "810b8402b20a734a1331f7bebbffdb6d14c7cb24588b6bca86c9edde3262e3b1",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP044EV.pdf",
+        "LC462CLP044IV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2024,
+      "subjectListSha256": "ce0ba9e4b677ba95ba958dbf3eb924fb25fd0569b97daf609b06e8178f166070",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "24",
+        "7",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "219",
+        "29",
+        "567",
+        "547",
+        "38",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "49",
+        "10",
+        "5",
+        "11",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "557",
+        "566",
+        "3",
+        "19",
+        "67",
+        "225",
+        "21",
+        "23",
+        "548",
+        "568",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "558",
+        "12",
+        "39",
+        "65"
+      ],
+      "listingSha256": "9d989bd68667334de35a4035b8aa1a1e4b33189dee10a87e4346758dbcf0f0e1",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP044EV.pdf",
+        "LC462CLP044IV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2023,
+      "subjectListSha256": "4b5a8610ddb2136395fff55391df3787c587c7e23c64dd34d404ca9722269837",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "24",
+        "7",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "219",
+        "29",
+        "567",
+        "547",
+        "38",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "49",
+        "10",
+        "5",
+        "11",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "557",
+        "566",
+        "3",
+        "19",
+        "67",
+        "225",
+        "21",
+        "23",
+        "548",
+        "568",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "558",
+        "12",
+        "39",
+        "65"
+      ],
+      "listingSha256": "06fdbfd550a0cb0661788668a986a24aa545d3608e5a1614b57e11d8ce0400b3",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP044EV.pdf",
+        "LC462CLP044IV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2022,
+      "subjectListSha256": "bec850febfe4e49b6ea2a97b8140d1915393fdce4a523a14c5d6d13b927d67f3",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "24",
+        "7",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "219",
+        "29",
+        "567",
+        "547",
+        "38",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "49",
+        "10",
+        "5",
+        "11",
+        "96",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "557",
+        "566",
+        "3",
+        "19",
+        "67",
+        "225",
+        "21",
+        "23",
+        "548",
+        "568",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "12",
+        "39",
+        "65"
+      ],
+      "listingSha256": "fa08caa93ff2bb67ca81a48405ce953b6759302a48f01cf78b5349c9589da987",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP044EV.pdf",
+        "LC462CLP044IV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2021,
+      "subjectListSha256": "795c7a5e8d00507fa370fd797e00beb1b936967c6b4cb52796e26e89e783827d",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "24",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "219",
+        "29",
+        "567",
+        "547",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "10",
+        "5",
+        "11",
+        "96",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "3",
+        "19",
+        "67",
+        "225",
+        "21",
+        "23",
+        "548",
+        "568",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "12",
+        "39",
+        "65"
+      ],
+      "listingSha256": "62b6194cbc379b44e549e49bd4329279392831cb0637ea68f2704cd8a4a9a0c6",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP044EV.pdf",
+        "LC462CLP044IV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2020,
+      "subjectListSha256": "8b7253aff2b5619059696fc2a827c810fae3ec9941f00e609bc8c6793b4a64e9",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "24",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "219",
+        "29",
+        "567",
+        "547",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "10",
+        "5",
+        "11",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "3",
+        "67",
+        "225",
+        "21",
+        "548",
+        "568",
+        "223",
+        "553",
+        "99",
+        "12",
+        "65"
+      ],
+      "listingSha256": "b6bee9e53912b629c62b655f10196c830a0db443e85c3056fd605424b5801f98",
+      "files": [
+        "LC462CLP000EV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2019,
+      "subjectListSha256": "93ea65f40bca7442c1a8cfaabcd6c236bd018ee53e12dc16d7bc836e35f8a85e",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "26",
+        "24",
+        "7",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "29",
+        "567",
+        "547",
+        "38",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "49",
+        "10",
+        "5",
+        "11",
+        "9",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "557",
+        "3",
+        "19",
+        "67",
+        "21",
+        "23",
+        "548",
+        "568",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "558",
+        "12",
+        "39",
+        "65"
+      ],
+      "listingSha256": "b819169b5ce6acc7023b90700ff07446e6a014694afdc6f47279e44f2f8d3c26",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2018,
+      "subjectListSha256": "22ab990c6c2fe15056bcf3f22dedd2649219ca8bd13596255f7358c08d2e7c26",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "26",
+        "24",
+        "7",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "29",
+        "567",
+        "547",
+        "38",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "49",
+        "10",
+        "5",
+        "11",
+        "9",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "557",
+        "3",
+        "19",
+        "67",
+        "21",
+        "23",
+        "548",
+        "568",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "558",
+        "12",
+        "39",
+        "65"
+      ],
+      "listingSha256": "51a96fd2197c63fb08ecde41acf533b9fd96844fd71df63081fda0427e92e79e",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2017,
+      "subjectListSha256": "79ac0216d2a091214daa2c02cf557cf63238499fccaf1847fb4ecd4974996910",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "26",
+        "24",
+        "7",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "29",
+        "567",
+        "547",
+        "38",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "49",
+        "10",
+        "5",
+        "11",
+        "9",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "3",
+        "19",
+        "67",
+        "21",
+        "23",
+        "548",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "12",
+        "39",
+        "65"
+      ],
+      "listingSha256": "5adb3c34e687a1e7ea53648d9b74a7003b1f550d01ae98d41345cea3d9c2bd96",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2016,
+      "subjectListSha256": "fc30efa1357e0e2691e84bc19a0bc7d825b29ff19e784f4144d1210733cfaa73",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "26",
+        "24",
+        "7",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "29",
+        "567",
+        "547",
+        "38",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "49",
+        "10",
+        "5",
+        "11",
+        "9",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "3",
+        "19",
+        "67",
+        "21",
+        "23",
+        "548",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "12",
+        "39",
+        "65"
+      ],
+      "listingSha256": "da175d8154e9f17ecec97b2bc27520c07b6474d07d1b229e10b0e9c13af908b8",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2015,
+      "subjectListSha256": "91f751074272ead64cdf8fbaf0d16c1bec1dca12cf75401116d56d1fbbd6c61f",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "26",
+        "24",
+        "7",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "29",
+        "567",
+        "547",
+        "38",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "49",
+        "10",
+        "5",
+        "11",
+        "9",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "3",
+        "19",
+        "67",
+        "21",
+        "23",
+        "548",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "12",
+        "39",
+        "65"
+      ],
+      "listingSha256": "eb54dba069c99cfe04ae92c794fda40cdfdbc5a6f0aae6832612617a085258b4",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2014,
+      "subjectListSha256": "b59326c1c4fe2df2cf66248bcf4005d67c6992bdca3e435028ef3eaf4fe9e46d",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "26",
+        "24",
+        "7",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "29",
+        "567",
+        "547",
+        "38",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "49",
+        "10",
+        "5",
+        "11",
+        "9",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "3",
+        "19",
+        "67",
+        "21",
+        "23",
+        "548",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "12",
+        "39",
+        "65"
+      ],
+      "listingSha256": "c86b88196ba1e5475eb1ca83070bd0b0bdb68736c7c71d927f82657937744527",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2013,
+      "subjectListSha256": "386166d4745466fb5464d4c18b363ee46dabe941f31e8c4e2dfa8c671cda8435",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "26",
+        "24",
+        "7",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "29",
+        "547",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "49",
+        "10",
+        "5",
+        "11",
+        "9",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "3",
+        "19",
+        "67",
+        "21",
+        "23",
+        "548",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "12",
+        "39",
+        "65"
+      ],
+      "listingSha256": "b242e008ca5fc50a01b0645745d375afcb1bfcafaad87455bebf3e3edb36dd91",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2012,
+      "subjectListSha256": "d2e87a4bfb8b4c49942ba4d436718e9253bdf21e74690632725f6db26eb20d09",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "26",
+        "24",
+        "7",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "29",
+        "547",
+        "38",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "49",
+        "10",
+        "5",
+        "11",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "3",
+        "19",
+        "67",
+        "21",
+        "23",
+        "548",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "12",
+        "39",
+        "65"
+      ],
+      "listingSha256": "dd4836d3384aedd1cbcf332687db338b1b17ed186bd171c9e351855272f8418b",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2011,
+      "subjectListSha256": "fbcb62732156689f8fb1141d51032edd15fdfc2f28521c6f84b03261018d2aa6",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "26",
+        "24",
+        "7",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "29",
+        "547",
+        "38",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "49",
+        "10",
+        "5",
+        "11",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "3",
+        "19",
+        "67",
+        "21",
+        "23",
+        "548",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "12",
+        "39",
+        "65"
+      ],
+      "listingSha256": "7f9bf423e0dd4e45777cfef69dd3c08cfc5e59b14895e6e63c6e590443d09081",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf"
+      ]
+    },
+    {
+      "view": "markingschemes",
+      "year": 2010,
+      "subjectListSha256": "ed0fcb87f89075172377ae2798141c3cc3e671fe4675ec0c0ddfdc4eee770d3f",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "26",
+        "24",
+        "7",
+        "20",
+        "59",
+        "14",
+        "25",
+        "559",
+        "33",
+        "22",
+        "8",
+        "29",
+        "547",
+        "562",
+        "17",
+        "34",
+        "27",
+        "2",
+        "552",
+        "49",
+        "10",
+        "5",
+        "11",
+        "9",
+        "4",
+        "98",
+        "551",
+        "1",
+        "13",
+        "58",
+        "6",
+        "549",
+        "462",
+        "550",
+        "3",
+        "19",
+        "67",
+        "847",
+        "21",
+        "23",
+        "548",
+        "18",
+        "223",
+        "553",
+        "99",
+        "554",
+        "12",
+        "39",
+        "65"
+      ],
+      "listingSha256": "45fb2a9b50aecdb86912ecb50eccffbc4fd016b7314d0a20f63ce152fb834657",
+      "files": [
+        "LC462CCLP000EV.pdf",
+        "LC462CLP000IV.pdf"
+      ]
+    },
+    {
+      "view": "deferredexams",
+      "year": 2025,
+      "subjectListSha256": "64f4380a0b032b18bf1ce0597cb1a94558aec1f602de9d01aac846f1f3710517",
+      "lcvpSubjects": [],
+      "subjectIds": [
+        "25",
+        "2",
+        "5",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "view": "deferredexams",
+      "year": 2024,
+      "subjectListSha256": "bd35fddeb8928ee19b66f9704e48249d26b88f667db9f78f82bc4f45302c3893",
+      "lcvpSubjects": [],
+      "subjectIds": [
+        "25",
+        "2",
+        "5",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "view": "deferredexams",
+      "year": 2023,
+      "subjectListSha256": "5fa7f95f27015a9f0b13b329540bb24f2431f3d76530ea3f289ebf21b282ff62",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "24",
+        "20",
+        "14",
+        "25",
+        "33",
+        "22",
+        "562",
+        "27",
+        "2",
+        "10",
+        "5",
+        "4",
+        "98",
+        "1",
+        "6",
+        "462",
+        "3",
+        "67",
+        "225",
+        "21"
+      ],
+      "listingSha256": "2b09edc92d33571d2b9729fc13abb6708a32ebbb96575c48945cb9b00788c63c",
+      "files": [
+        "LC462CLP000EV.pdf",
+        "LC462CLP000IV.pdf",
+        "LC462CLP031EV.mov",
+        "LC462CLP031IV.mov"
+      ]
+    },
+    {
+      "view": "deferredexams",
+      "year": 2022,
+      "subjectListSha256": "0120b3d0ab7cd84814ed0167e9ca28ad761b6213c410bef011edd3006d03cec9",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "20",
+        "14",
+        "25",
+        "33",
+        "22",
+        "29",
+        "562",
+        "34",
+        "27",
+        "2",
+        "10",
+        "5",
+        "11",
+        "4",
+        "98",
+        "1",
+        "462",
+        "3",
+        "67",
+        "225",
+        "21",
+        "23",
+        "568",
+        "12"
+      ],
+      "listingSha256": "89c5c111418db2883b8bb312d8d73b00793e8e98116170065c447ec0e47b40f8",
+      "files": [
+        "LC462CLP000EV.pdf"
+      ]
+    },
+    {
+      "view": "deferredmarkingschemes",
+      "year": 2025,
+      "subjectListSha256": "60a71d1b6b952da1b7f275acffb634f6e0c1ab214ca07be1ce84f3498c3d648e",
+      "lcvpSubjects": [],
+      "subjectIds": [
+        "25",
+        "2",
+        "5",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "view": "deferredmarkingschemes",
+      "year": 2024,
+      "subjectListSha256": "4eaaad50d613a319f7cfcdb16c9f1f26e9d37c241a3a673899d2163b329c03e6",
+      "lcvpSubjects": [],
+      "subjectIds": [
+        "25",
+        "2",
+        "5",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "view": "deferredmarkingschemes",
+      "year": 2023,
+      "subjectListSha256": "5752d3ef119d4115754abb3a4fb40713972cbb7fd67cbc0613ede9fb06f93571",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "24",
+        "20",
+        "14",
+        "25",
+        "33",
+        "22",
+        "562",
+        "27",
+        "2",
+        "10",
+        "5",
+        "4",
+        "98",
+        "1",
+        "462",
+        "3",
+        "67",
+        "225",
+        "21"
+      ],
+      "listingSha256": "f4d4d435c38b1aa641f3b8ca01a20434a44b73684d587c456987ad1e1a41de20",
+      "files": [
+        "LC462CLP000EV.pdf"
+      ]
+    },
+    {
+      "view": "deferredmarkingschemes",
+      "year": 2022,
+      "subjectListSha256": "01eaf1878627115ac64b7a97f0260555fbb1473a7d1c25bc3959eed173d5129e",
+      "lcvpSubjects": [
+        [
+          "462",
+          "Link Modules"
+        ]
+      ],
+      "subjectIds": [
+        "32",
+        "20",
+        "14",
+        "25",
+        "33",
+        "22",
+        "29",
+        "562",
+        "34",
+        "27",
+        "2",
+        "10",
+        "5",
+        "11",
+        "4",
+        "98",
+        "1",
+        "462",
+        "3",
+        "67",
+        "225",
+        "21",
+        "23",
+        "568",
+        "12"
+      ],
+      "listingSha256": "ea00723924f9cf3876efa0e4cbd3a9845b9efe6f1b1468a2ad9b89d1183e3778",
+      "files": [
+        "LC462CLP000EV.pdf"
+      ]
+    }
+  ],
+  "scope": "English editions only; Irish editions deferred by user instruction.",
+  "limit": "A missing archive listing is a publication finding, not evidence that no exam was sat."
+}

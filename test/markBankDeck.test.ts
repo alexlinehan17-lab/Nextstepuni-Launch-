@@ -25,7 +25,13 @@ import { resolve } from 'node:path';
 // One implementation of the provenance comparison, shared with build-deck.mjs —
 // two copies drifted once and reported four correct cards as untraceable.
 import { comparableScheme, claimMatches, normalise } from '../scripts/markbank/schemeText.mjs';
+import { japaneseBoundBankAnswers } from '../scripts/markbank/japanese-source-answers.mjs';
 import { questionStandsAlone } from '../scripts/markbank/questionText.mjs';
+import { reviewedPhysicsSourceMetadata } from '../scripts/markbank/physicsSources.mjs';
+import { reviewedHomeEconomicsSourceMetadata } from '../scripts/markbank/homeEconomicsSources.mjs';
+
+// These assertions join committed deck/Atlas/scheme identities. Original PDF
+// hashes remain mandatory in authoring; optional corpus tests verify those bytes.
 import { createHash } from 'node:crypto';
 
 import { STRANDS, CHEMISTRY_STRANDS, PHYSICS_STRANDS, ALL_TOPICS, SUBJECTS, BLOCKED_FIGURES, deckSize } from '../components/MarkBank/deck';
@@ -105,6 +111,7 @@ import { CARDS as AM_ORDINARY } from '../components/MarkBank/cards/applied-maths
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
+import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
 import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
 import { CARDS as AGREEK_HIGHER } from '../components/MarkBank/cards/ancient-greek/higher';
 import { CARDS as AGREEK_ORDINARY } from '../components/MarkBank/cards/ancient-greek/ordinary';
@@ -148,6 +155,8 @@ const SAMPLE_CARDS = [
   ...LATVIAN_HIGHER, ...CZECH_HIGHER,
   ...CLAS_HIGHER, ...CLAS_ORDINARY,
   ...LATIN_HIGHER, ...LATIN_ORDINARY,
+  // Review pack 1 prototype: Music 2025 Higher only.
+  ...MUSIC_HIGHER,
   ...ARABIC_HIGHER, ...ARABIC_ORDINARY,
   ...AGREEK_HIGHER, ...AGREEK_ORDINARY,
   // Higher only: Modern Greek is examined at ONE level and there is no
@@ -163,6 +172,7 @@ const SAMPLE_CARDS = [
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
   rowCapFor, isValidCardId, optionCapFor, MAX_LONG_OPTION_ROWS, UNPRINTED_ANSWER,
+  NO_SCHEME_PUBLISHED, isRubricCard,
 } from '../types/markBank';
 
 /**
@@ -197,8 +207,9 @@ const comparable = (text: string) => comparableScheme(text);
 
 // A card from the SEC's deferred sitting ("econ-2022-hl-deferred-...",
 // "eng-2022-hl-deferred-...", "hist-2023-hl-deferred-lm-...",
-// "dcg-2022-hl-deferred-...") traces to that sitting's own scheme
-// ("2022-hl-deferred.md"), as build-deck reads it.
+// "dcg-2022-hl-deferred-...", "phys-2022-hl-deferred-...",
+// "he-2023-hl-deferred-...", "maths-2025-hl-deferred-p1-...") traces to that
+// sitting's own scheme ("2022-hl-deferred.md"), as build-deck reads it.
 const deferredCard = (card: { id?: string; subjectId: string }) =>
   (card.subjectId === 'economics' && /^econ-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'dcg' && /^dcg-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
@@ -206,14 +217,22 @@ const deferredCard = (card: { id?: string; subjectId: string }) =>
   || (card.subjectId === 'history' && /^hist-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'irish' && /^irish-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'spanish' && /^es-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
-  || (card.subjectId === 'german' && /^de-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
+  || (card.subjectId === 'german' && /^de-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'physics' && /^phys-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'home-economics' && /^he-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'maths' && /^maths-\d{4}-(?:hl|ol|fl)-deferred-/.test(card.id ?? ''));
+// Codex's reviewed subjects bind each card to its exact reviewed booklet.
+const REVIEWED_SOURCE_SUBJECTS = new Set(['maths', 'physics', 'home-economics']);
 
-const schemeFor = (card: { id?: string; year: number; level: string; subjectId: string }) =>
+type SchemeCard = { id?: string; year: number; level: string; subjectId: string; mathematicsScale?: { schemeFileid: string } };
+const schemeFor = (card: SchemeCard) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
-    `${card.year}-${card.level === 'higher' ? 'hl' : card.level === 'foundation' ? 'fl' : 'ol'}${deferredCard(card) ? '-deferred' : ''}.md`);
+    `${card.year}-${({ higher: 'hl', ordinary: 'ol', foundation: 'fl', common: 'cl' } as Record<string, string>)[card.level]}${
+      card.subjectId === 'maths' && card.mathematicsScale?.schemeFileid.includes('LP030EV') ? '-project'
+        : deferredCard(card) ? '-deferred' : ''}.md`);
 
 const schemeCache = new Map<string, string>();
-const schemeText = (card: { id?: string; year: number; level: string; subjectId: string }) => {
+const schemeText = (card: SchemeCard) => {
   const path = schemeFor(card);
   if (!schemeCache.has(path)) {
     schemeCache.set(path, existsSync(path) ? comparable(readFileSync(path, 'utf8')) : '');
@@ -251,8 +270,43 @@ describe('every card traces to the marking scheme on disk', () => {
   });
 
   test('every year and level the deck draws on has its scheme present', () => {
-    const missing = [...new Set(SAMPLE_CARDS.map(schemeFor))].filter(p => !existsSync(p));
+    // A card whose paper has no published scheme draws on none (PLAN R4).
+    const missing = [...new Set(SAMPLE_CARDS.filter(c => !(isPointCard(c) && c.noScheme)).map(schemeFor))]
+      .filter(p => !existsSync(p));
     expect(missing, show(missing)).toEqual([]);
+  });
+
+  /* PLAN-2026-11-18 R4: a paper with no published scheme is carded as the
+   * question, its printed marks and one fixed line, and nothing claimable.
+   * The flag can never stand in for a scheme the SEC did publish. */
+  test('a no-scheme card says so, claims nothing, and its sitting really has no scheme', () => {
+    const bad = SAMPLE_CARDS.filter(isPointCard).filter(c => c.noScheme).filter(c =>
+      c.tariffModel.kind !== 'questionTotal' || c.rows.length !== 1
+      || c.rows[0].kind !== 'criterion' || c.rows[0].verbatim !== NO_SCHEME_PUBLISHED || c.rows[0].marks !== null
+      || !(c.totalMarks > 0) || existsSync(schemeFor(c)) || existsSync(schemeFor(c).replace(/\.md$/, '.pdf'))
+      || !/^No marking scheme: the SEC published none for /.test(c.schemeCitation))
+      .map(c => c.questionRef);
+    expect(bad, show(bad)).toEqual([]);
+    // The fixed line appears on no card that has a scheme.
+    const stray = SAMPLE_CARDS.filter(isPointCard).filter(c => !c.noScheme
+      && c.rows.some(r => r.verbatim === NO_SCHEME_PUBLISHED)).map(c => c.questionRef);
+    expect(stray, show(stray)).toEqual([]);
+  });
+
+  /* An unseen translation marked unit by unit: every unit is the scheme's own
+   * cut of the passage, and the units make the question's total. */
+  test('every translation unit and rule line is in its own scheme', () => {
+    const bad: string[] = [];
+    for (const card of SAMPLE_CARDS.filter(isRubricCard)) {
+      if (card.rubric.system !== 'translation') continue;
+      const scheme = schemeText(card);
+      for (const text of [...card.rubric.units.map(u => u.text), ...card.rubric.schemeGuidance]) {
+        if (!claimMatches(scheme, text)) bad.push(`${card.questionRef}: "${text}"`);
+      }
+      const sum = card.rubric.units.reduce((n, u) => n + u.marks, 0);
+      if (sum !== card.totalMarks) bad.push(`${card.questionRef}: units sum to ${sum}, not ${card.totalMarks}`);
+    }
+    expect(bad, show(bad)).toEqual([]);
   });
 
   /* Sixty seconds, not the thirty every other test gets. This one walks EVERY
@@ -265,7 +319,19 @@ describe('every card traces to the marking scheme on disk', () => {
   test('every marking point appears in its own scheme', () => {
     const bad: string[] = [];
     for (const card of SAMPLE_CARDS.filter(isPointCard)) {
+      // A no-scheme card claims nothing from a scheme; its one row is checked
+      // by the no-scheme test above.
+      if (card.noScheme) continue;
       const scheme = schemeText(card);
+      // This one approved paper/scheme discrepancy has an exact source-bound
+      // correction. Validate the emitted card against the original review and
+      // literal quantity/option selectors; all other claims stay scheme-bound.
+      let boundAnswers = new Set<string>();
+      if (card.id === 'ja-2010-ol-1-3-iii') {
+        const review = JSON.parse(readFileSync(resolve(__dirname, '../scripts/markbank/authoring/reviews/japanese-2010-ol.json'), 'utf8'));
+        const original = review.cards.find((item: { id: string }) => item.id === card.id);
+        boundAnswers = japaneseBoundBankAnswers({ ...original, ...card }, review);
+      }
       for (const row of card.rows) {
         if (row.unprinted) {
           // An unprinted row claims nothing from the scheme: the scheme prints
@@ -296,7 +362,7 @@ describe('every card traces to the marking scheme on disk', () => {
           // As the build: a menu option pairing a label with its value, read
           // from a scheme table ("thoracic — 12"), traces when each half does.
           const halves = row.kind === 'anyN' ? claim.split(/\s—\s/) : [];
-          if (!claimMatches(scheme, claim)
+          if (!claimMatches(scheme, claim) && !boundAnswers.has(claim)
             && !(halves.length === 2 && halves.every(half => half.trim() && claimMatches(scheme, half)))) {
             bad.push(`${card.questionRef}: "${claim}"`);
           }
@@ -553,10 +619,17 @@ describe('every card points at the question paper it came from', () => {
   });
 
   test('and at the paper holding its own section', async () => {
-    const { resolvePaperFileid, corpusSubjectFor, deferredPaperEntry, paperEntry } =
+    const { audioQuestionPaperFileid } = await import('../scripts/markbank/audioMaterial.mjs');
+    const { resolvePaperFileid, resolveCompanionFileid, resolveIndexedPaperFileid, corpusSubjectFor, deferredPaperEntry, paperEntry } =
       await import('../scripts/markbank/paperIndex.mjs');
     const bad = SAMPLE_CARDS
       .filter(c => {
+        // Music is sat in separate booklets; a card's section names its booklet
+        // by the Paper Trail label, as build-deck's MUSIC_BOOKLET does.
+        if (c.subjectId === 'music') {
+          const label = ({ L: 'Listening', A: 'Composing', B: 'Composing', E: 'Elective' } as Record<string, string>)[c.section];
+          return !label || c.paperFileid !== resolveCompanionFileid('music', c.year, c.level, label);
+        }
         // Irish prints two papers a sitting, in Irish: a deferred card's paper is the one its section names in the
         // year's deferred entry ("Deferred · Paper One" for section 1).
         if (deferredCard(c) && c.subjectId === 'irish') {
@@ -570,7 +643,7 @@ describe('every card points at the question paper it came from', () => {
           return c.paperFileid === null
             || c.paperFileid !== resolvePaperFileid('dcg', c.year, c.level, c.section, 'deferred');
         }
-        if (deferredCard(c)) {
+        if (deferredCard(c) && !REVIEWED_SOURCE_SUBJECTS.has(c.subjectId)) {
           const deferred = deferredPaperEntry(c.subjectId, c.year, c.level);
           return c.paperFileid !== null
             && c.paperFileid !== String(deferred?.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/, '');
@@ -581,10 +654,15 @@ describe('every card points at the question paper it came from', () => {
         const sourceSection = c.subjectId === 'maths'
           ? c.questionRef.match(/\bPaper\s+([12])\b/i)?.[1] ?? c.section
           : c.section;
-        return c.paperFileid !== null
-          && c.paperFileid !== resolvePaperFileid(
-            corpusSubjectFor(c.subjectId, c.questionRef),
-            c.year, c.level, sourceSection);
+        const source = c.subjectId === 'maths' && 'mathematicsScale' in c
+          && c.mathematicsScale && c.sourceMaterial?.sourceFileid
+          ? { paperFileid: c.sourceMaterial.sourceFileid, schemeFileid: c.mathematicsScale.schemeFileid }
+          : c.subjectId === 'physics' ? reviewedPhysicsSourceMetadata(c.id)
+          : c.subjectId === 'home-economics' ? reviewedHomeEconomicsSourceMetadata(c.id) : undefined;
+        const expected = audioQuestionPaperFileid(c, c.subjectId) ?? (source
+          ? resolveIndexedPaperFileid(c.subjectId, c.year, c.level, source)
+          : resolvePaperFileid(corpusSubjectFor(c.subjectId, c.questionRef), c.year, c.level, sourceSection));
+        return c.paperFileid !== null && c.paperFileid !== expected;
       })
       .map(c => `${c.questionRef} (Section ${c.section}) -> ${c.paperFileid}`);
     expect(bad, show(bad)).toEqual([]);

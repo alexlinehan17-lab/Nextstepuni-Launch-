@@ -8,8 +8,8 @@
   "ordinary": 1507
  },
  "physics": {
-  "higher": 570,
-  "ordinary": 563
+  "higher": 2189,
+  "ordinary": 1870
  },
  "agricultural-science": {
   "higher": 1207,
@@ -20,8 +20,8 @@
   "ordinary": 1111
  },
  "home-economics": {
-  "higher": 283,
-  "ordinary": 266
+  "higher": 1026,
+  "ordinary": 927
  },
  "economics": {
   "higher": 1214,
@@ -32,8 +32,9 @@
   "ordinary": 526
  },
  "maths": {
-  "higher": 413,
-  "ordinary": 441
+  "higher": 1917,
+  "ordinary": 2134,
+  "foundation": 1137
  },
  "english": {
   "higher": 738,
@@ -65,7 +66,7 @@
   "ordinary": 409
  },
  "lcvp": {
-  "common": 314
+  "common": 518
  },
  "technology": {
   "higher": 1239,
@@ -96,19 +97,19 @@
   "ordinary": 178
  },
  "russian": {
-  "higher": 83,
-  "ordinary": 116
+  "higher": 642,
+  "ordinary": 730
  },
  "japanese": {
-  "higher": 339,
-  "ordinary": 261
+  "higher": 1053,
+  "ordinary": 888
  },
  "classical-studies": {
   "higher": 240,
   "ordinary": 276
  },
  "latin": {
-  "higher": 145,
+  "higher": 149,
   "ordinary": 82
  },
  "polish": {
@@ -141,7 +142,7 @@
  },
  "ancient-greek": {
   "higher": 369,
-  "ordinary": 14
+  "ordinary": 35
  },
  "modern-greek": {
   "higher": 79
@@ -198,5 +199,8 @@
  "accounting": {
   "higher": 721,
   "ordinary": 644
+ },
+ "music": {
+  "higher": 46
  }
 }
