@@ -250,7 +250,7 @@
    ],
    "questionText": "The chord heard at the word gun in line 2 is",
    "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
-   "excerptLine": "Excerpt 3, played three times. The lyrics are printed below. Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
+   "excerptLine": "Excerpt 3, played three times. The lyrics are printed below. B♭ Gm Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
    "needsRecording": true,
    "figure": {
     "page": 4,
@@ -297,7 +297,7 @@
    ],
    "questionText": "Identify and describe the instrumental technique played by the bass guitar at the end of line 2.",
    "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
-   "excerptLine": "Excerpt 3, played three times. The lyrics are printed below. Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
+   "excerptLine": "Excerpt 3, played three times. The lyrics are printed below. B♭ Gm Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
    "needsRecording": true,
    "figure": {
     "page": 4,
@@ -3358,16 +3358,16 @@
     0.92,
     0.25
    ],
-   "text": "Excerpt 3, played three times. The lyrics are printed below. Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
+   "text": "Excerpt 3, played three times. The lyrics are printed below. B♭ Gm Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
    "readBy": "music lane lead, 19 Nov 2026, from a 170 dpi render of the page",
-   "why": "The booklet has no usable text layer and the OCR misreads \"I’ve\" and \"I need\" as \"l’ve\" and \"l need\"."
+   "why": "The booklet has no usable text layer and the OCR misreads \"I’ve\" and \"I need\" as \"l’ve\" and \"l need\". The boxed chord symbols B♭ and Gm printed above Line 1 are kept, in reading order (second reader, 19 Nov)."
   },
   {
    "booklet": "listening",
    "page": 18,
    "box": [
     0.08,
-    0.47,
+    0.45,
     0.92,
     0.63
    ],

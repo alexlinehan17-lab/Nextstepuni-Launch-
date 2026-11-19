@@ -9821,7 +9821,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q1-d", topicId: "music-2-14", conceptId: "mus-chord-heard-line-word",
     section: "L", questionRef: "2023 HL Listening Q1(d)",
-    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. B♭ Gm Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
     questionText: "The chord heard at the word gun in line 2 is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -9876,7 +9876,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q1-e", topicId: "music-2-14", conceptId: "mus-bass-describe-guitar-identify",
     section: "L", questionRef: "2023 HL Listening Q1(e)",
-    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. B♭ Gm Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
     questionText: "Identify and describe the instrumental technique played by the bass guitar at the end of line 2.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
