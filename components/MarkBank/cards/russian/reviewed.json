@@ -84365,7 +84365,8 @@
       {
         "id": "handwriting",
         "kind": "criterion",
-        "verbatim": "Deduct ½ mark for each letter incorrectly formed. Do not penalise for repeat errors.",
+        "verbatim": "The scheme prints no answer for this part.",
+        "unprinted": true,
         "marks": 6,
         "permittedMarks": [
           0,
@@ -84382,25 +84383,7 @@
           5.5,
           6
         ],
-        "contextNote": "Handwriting exercise: Write out the following headings in handwritten/cursive script. (6 marks) The source provides no handwritten exemplar. Apply the printed half-mark deductions across the complete exercise; no per-phrase allocation is inferred."
-      },
-      {
-        "id": "phrase-1",
-        "kind": "point",
-        "verbatim": "Тематика конкурса",
-        "marks": null
-      },
-      {
-        "id": "phrase-2",
-        "kind": "point",
-        "verbatim": "Возрастные группы",
-        "marks": null
-      },
-      {
-        "id": "phrase-3",
-        "kind": "point",
-        "verbatim": "Справки",
-        "marks": null
+        "contextNote": "Deduct ½ mark for each letter incorrectly formed. Do not penalise for repeat errors. Handwriting exercise: Write out the following headings in handwritten/cursive script. (6 marks) The scheme repeats the printed targets and leaves the handwritten answers blank. Apply the printed half-mark deductions across the complete exercise; no per-phrase allocation is inferred."
       }
     ],
     "sourceMaterial": {
@@ -84436,7 +84419,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -85124,7 +85107,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000EV",
@@ -85147,7 +85130,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -85350,7 +85333,7 @@
           ]
         }
       ],
-      "markingGuideNote": "The opening/greeting, age, birthday account and signing-off guidance applies to the letter choice."
+      "markingGuideNote": "The scheme prints no answer for this part. The opening/greeting, age, birthday account and signing-off guidance applies to the letter choice."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000EV",
@@ -85373,7 +85356,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {

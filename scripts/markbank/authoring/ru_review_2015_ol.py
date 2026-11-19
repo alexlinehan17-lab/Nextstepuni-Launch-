@@ -116,10 +116,11 @@ def language_and_matching(docs):
     phrases=['Тематика конкурса','Возрастные группы','Справки']
     question='Write out '+squash(between(page_text(Q,5,(300,30,580,150)),'Write out','script.'))+' script.'+'\n\n'+'\n'.join(phrases)
     c=base('LA1',question,6,[5],[4]);c['kind']='question'
-    c['rows']=[{'id':'handwriting','kind':'criterion','verbatim':'Deduct ½ mark for each letter incorrectly formed. Do not penalise for repeat errors.',
+    deduction='Deduct ½ mark for each letter incorrectly formed. Do not penalise for repeat errors.'
+    assert deduction in squash(page_text(S,4))
+    c['rows']=[{'id':'handwriting','kind':'criterion','verbatim':'The scheme prints no answer for this part.','unprinted':True,
         'marks':6,'permittedMarks':[n/2 for n in range(13)],
-        'contextNote':'Handwriting exercise: Write out the following headings in handwritten/cursive script. (6 marks) The source provides no handwritten exemplar. Apply the printed half-mark deductions across the complete exercise; no per-phrase allocation is inferred.'}]
-    c['rows'] += [{'id':f'phrase-{n}','kind':'point','verbatim':p,'marks':None} for n,p in enumerate(phrases,1)]
+        'contextNote':deduction+' Handwriting exercise: Write out the following headings in handwritten/cursive script. (6 marks) The scheme repeats the printed targets and leaves the handwritten answers blank. Apply the printed half-mark deductions across the complete exercise; no per-phrase allocation is inferred.'}]
     cards.append(c)
     raw=page_text(Q,8,(300,30,580,180));question='The following '+squash(between(raw,'The following','plural:'))+' plural:'
     table=S[4].find_tables().tables[0].extract()[1:];assert len(table)==6

@@ -37,7 +37,11 @@ describe('Russian 2015 Ordinary source review',()=>{
   it('preserves fractional handwriting and gender/number scoring without per-phrase handwriting prices',()=>{
     const c=get('la1'),d=get('la2');if(isRubricCard(c)||isRubricCard(d))throw new Error('Wrong cards');
     expect(c.rows[0].permittedMarks).toEqual([0,.5,1,1.5,2,2.5,3,3.5,4,4.5,5,5.5,6]);
-    expect(c.rows.slice(1).every(r=>r.marks===null)).toBe(true);
+    expect(c.rows).toHaveLength(1);
+    expect(c.rows[0].verbatim).toBe('The scheme prints no answer for this part.');
+    expect(c.rows[0].unprinted).toBe(true);
+    expect(c.rows[0].contextNote).toContain('Deduct ½ mark for each letter incorrectly formed.');
+    for(const phrase of ['Тематика конкурса','Возрастные группы','Справки'])expect(c.questionText).toContain(phrase);
     expect(marksClaimed(c,{handwriting:5.5})).toBe(5.5);
     expect(marksClaimed(d,{'phrase-2':.5,'phrase-3':1,'phrase-6':.5})).toBe(2);
     expect(marksClaimed(d,{'phrase-1':.5})).toBe(0);

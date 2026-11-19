@@ -2769,6 +2769,15 @@
         "baselineRegression": "none",
         "sittingOpenTasks": 0,
         "sittingExclusions": 0
+      },
+      "r4Recheck20261119": {
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2015-ol.json",
+        "cards": [
+          "ru-2015-ol-la1",
+          "ru-2015-ol-sa",
+          "ru-2015-ol-ew"
+        ],
+        "releaseComplete": false
       }
     },
     {

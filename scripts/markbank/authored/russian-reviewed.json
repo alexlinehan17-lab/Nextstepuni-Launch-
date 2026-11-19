@@ -78842,7 +78842,8 @@
       {
         "id": "handwriting",
         "kind": "criterion",
-        "verbatim": "Deduct ½ mark for each letter incorrectly formed. Do not penalise for repeat errors.",
+        "verbatim": "The scheme prints no answer for this part.",
+        "unprinted": true,
         "marks": 6,
         "permittedMarks": [
           0.0,
@@ -78859,25 +78860,7 @@
           5.5,
           6.0
         ],
-        "contextNote": "Handwriting exercise: Write out the following headings in handwritten/cursive script. (6 marks) The source provides no handwritten exemplar. Apply the printed half-mark deductions across the complete exercise; no per-phrase allocation is inferred."
-      },
-      {
-        "id": "phrase-1",
-        "kind": "point",
-        "verbatim": "Тематика конкурса",
-        "marks": null
-      },
-      {
-        "id": "phrase-2",
-        "kind": "point",
-        "verbatim": "Возрастные группы",
-        "marks": null
-      },
-      {
-        "id": "phrase-3",
-        "kind": "point",
-        "verbatim": "Справки",
-        "marks": null
+        "contextNote": "Deduct ½ mark for each letter incorrectly formed. Do not penalise for repeat errors. Handwriting exercise: Write out the following headings in handwritten/cursive script. (6 marks) The scheme repeats the printed targets and leaves the handwritten answers blank. Apply the printed half-mark deductions across the complete exercise; no per-phrase allocation is inferred."
       }
     ],
     "sourceMaterial": {
@@ -78898,7 +78881,15 @@
       "schemePages": [
         4
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          4
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2015-ol.json"
+      }
     },
     "kind": "question"
   },
@@ -79382,7 +79373,15 @@
       "schemePages": [
         9
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          9
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2015-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -79527,7 +79526,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {
@@ -79560,7 +79559,16 @@
         10,
         11
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          10,
+          11
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-older-sec-20261119/2015-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -79740,7 +79748,7 @@
           ]
         }
       ],
-      "markingGuideNote": "The opening/greeting, age, birthday account and signing-off guidance applies to the letter choice."
+      "markingGuideNote": "The scheme prints no answer for this part. The opening/greeting, age, birthday account and signing-off guidance applies to the letter choice."
     }
   },
   {
