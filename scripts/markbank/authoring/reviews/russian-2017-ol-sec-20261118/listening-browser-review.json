@@ -1,0 +1,170 @@
+{
+  "recordedAt": "2026-11-19T10:20:42.183578+00:00",
+  "review": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-russian-2017-listening/review.html",
+  "matrix": [
+    {
+      "card": "l1-1",
+      "width": 390,
+      "theme": "light",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l1-1",
+      "width": 390,
+      "theme": "dark",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l1-1",
+      "width": 1120,
+      "theme": "light",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l1-1",
+      "width": 1120,
+      "theme": "dark",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l1-3-i",
+      "width": 390,
+      "theme": "light",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l1-3-i",
+      "width": 390,
+      "theme": "dark",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l1-3-i",
+      "width": 1120,
+      "theme": "light",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l1-3-i",
+      "width": 1120,
+      "theme": "dark",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l2-1",
+      "width": 390,
+      "theme": "light",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l2-1",
+      "width": 390,
+      "theme": "dark",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l2-1",
+      "width": 1120,
+      "theme": "light",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l2-1",
+      "width": 1120,
+      "theme": "dark",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l2-3-ii",
+      "width": 390,
+      "theme": "light",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l2-3-ii",
+      "width": 390,
+      "theme": "dark",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l2-3-ii",
+      "width": 1120,
+      "theme": "light",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l2-3-ii",
+      "width": 1120,
+      "theme": "dark",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l4-3",
+      "width": 390,
+      "theme": "light",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l4-3",
+      "width": 390,
+      "theme": "dark",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l4-3",
+      "width": 1120,
+      "theme": "light",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    },
+    {
+      "card": "l4-3",
+      "width": 1120,
+      "theme": "dark",
+      "conflictVisible": true,
+      "hasMarkControls": true,
+      "embeddedAudioBlocked": true
+    }
+  ],
+  "recommendation": "The 18 newly approved listening cards preserve the printed questions and the explicit three-mark alternatives. Twenty phone/desktop and light/dark layouts were captured. A manual partial answer gave 3/5. The original aural page 3 loads. Add the exact Russian 2017 aural answer-map preference so the Atlas uses its committed per-ask map; all other subjects remain byte-identical. Embedded SEC audio returns 403: the existing recording needs a verified hosted copy before release. This is not an unpublished recording.",
+  "nativeBrowser": "Google Chrome, actual SessionScreen in an isolated iframe; no student progress saved",
+  "screenshotsCaptured": 41,
+  "visualInspection": "Representative full-size captures and the complete contact sheet inspected; no horizontal clipping in sampled question/marking controls. Phone scheme controls manually checked through scoring."
+}

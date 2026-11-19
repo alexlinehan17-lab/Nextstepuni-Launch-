@@ -1,11 +1,13 @@
 import React from 'react';
 import fs from 'node:fs';
 import path from 'node:path';
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import AskThePapers from '../components/landing/sections/AskThePapers';
 import { loadAsk, matchingTopics, matches, queryTerms, type AskIndexFile, type AskQuestion } from '../components/landing/fx-e/ask';
 import { buildAskTopicIndex } from '../scripts/landing/askTopicIndex';
+import { loadAllAtlasModels } from '../components/PaperTrail/atlasModel';
+beforeAll(() => loadAllAtlasModels());
 
 const dir = path.resolve(__dirname, '../public/assets/landing/ask');
 const index: AskIndexFile = JSON.parse(fs.readFileSync(path.join(dir, 'index.json'), 'utf8'));

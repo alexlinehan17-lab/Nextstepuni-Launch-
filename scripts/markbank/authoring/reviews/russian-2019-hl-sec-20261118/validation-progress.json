@@ -1,0 +1,32 @@
+{
+  "status": "Source, scoring, preservation, required, topic, split and browser checks pass. Hosted audio and exact-candidate remote checks remain before release.",
+  "sourceChecks": {
+    "cases": 10,
+    "sourcePassages": 354,
+    "passed": true
+  },
+  "scoringAndRequiredChecks": {
+    "files": 6,
+    "cases": 264,
+    "passed": 264
+  },
+  "sourceCoverageComplete": true,
+  "sittingCompletion": false,
+  "heldNumericTasks": [],
+  "browserQA": "browser-review.json",
+  "splitAndCategory": "split-and-category.json",
+  "preservation": "preservation.json",
+  "archiveRecheck": "archive-recheck.json",
+  "allocationApproval": "allocation-approval.json",
+  "applicationTypesAndBuild": "pending exact candidate remote run",
+  "russianCoverage": {
+    "asksCounted": 1489,
+    "asksCarded": 1489,
+    "open": 0,
+    "excluded": 0,
+    "staleExclusions": 254,
+    "orphans": 0,
+    "unreadPapers": 0
+  },
+  "releaseIssue": "The direct SEC embed is blocked. A verified hosted copy must play before release."
+}

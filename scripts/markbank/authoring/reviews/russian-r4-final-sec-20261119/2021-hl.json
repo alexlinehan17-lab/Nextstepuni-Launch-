@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-11-19T12:26:39.933235+00:00",
+  "archive": {
+    "checkedAt": "2026-11-18T20:49:18.004915+00:00",
+    "method": "Native Chrome opened the exact official scheme URL. Automatic site verification completed, the28-page PDF appeared, and its Download control saved a fresh PDF. No challenge was clicked or solved.",
+    "officialUrl": "https://www.examinations.ie/archive/markingschemes/2021/LC099ALP000EV.pdf",
+    "downloadedFile": "Russian-2021-Higher-SEC-recheck-20261118.pdf",
+    "sha256": "7339c36919457d79424b100fb782372daf99d8c790dbe26ca5d69900779d3b41",
+    "bytes": 385962,
+    "matchesRetainedOriginalByteForByte": true,
+    "result": "The SEC currently publishes the same28-page marking scheme used for the cards. Original pages13–15 have the printed content/expression grid and no model essay or factual answer.",
+    "exactMatch": true,
+    "freshDownloadVerified": true,
+    "year": 2021,
+    "level": "hl"
+  },
+  "cards": [
+    {
+      "id": "ru-2021-hl-gw",
+      "printedMarks": 40,
+      "schemePages": [
+        16,
+        17,
+        18
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2021-hl.pdf",
+      "schemeSha256": "7339c36919457d79424b100fb782372daf99d8c790dbe26ca5d69900779d3b41",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2021-hl.json",
+      "finding": "The scheme supplies marking instructions or a grid but no answer for this task.",
+      "fixedLine": "The scheme prints no answer for this part."
+    }
+  ],
+  "otherFindings": [],
+  "sourceReview": "All relevant scheme pages read in full as original-page images and extracted text; examples distinguished from prompts. Original downloaded PDF matches the retained source exactly.",
+  "rule": "R4; CARD-STANDARD sections3,5 and10a",
+  "sourceBranch": "wip/russian-2026-11-19",
+  "liveCardsChanged": false,
+  "mainAtReview": "dd70ba43d6bc87dbe293b72d1b52c1cabdfcabf0"
+}

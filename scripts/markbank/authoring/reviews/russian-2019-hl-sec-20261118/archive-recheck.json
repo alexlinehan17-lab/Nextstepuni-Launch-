@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-11-19T10:35:07.651795+00:00",
+  "url": "https://www.examinations.ie/archive/markingschemes/2019/LC099ALP000EV.pdf",
+  "method": "Native Chrome opened the official PDF; automatic security verification completed without interaction, and the download visibly reached Done.",
+  "bytes": 497156,
+  "sha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216",
+  "retainedSha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216",
+  "exactMatch": true,
+  "freshDownloadVerified": true,
+  "localFile": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/2019-hl-nov18/SEC-fresh-20261119.pdf",
+  "cardsWithNoPrintedAnswer": [
+    {
+      "id": "ru-2019-hl-ca1",
+      "schemePages": [
+        6
+      ]
+    },
+    {
+      "id": "ru-2019-hl-se",
+      "schemePages": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "ru-2019-hl-gw",
+      "schemePages": [
+        12,
+        13
+      ]
+    }
+  ],
+  "earlierAttempt": {
+    "checkedAt": "2026-11-18T22:51:24.667095+00:00",
+    "url": "https://www.examinations.ie/archive/markingschemes/2019/LC099ALP000EV.pdf",
+    "method": "Single direct public URL request; stop on403",
+    "status": 403,
+    "error": "Forbidden",
+    "sourceReview": "The pinned 24-page original scheme was re-read. Cultural awareness, short essay and guided writing print marking directions and grids but no model answer; no claim that a scheme was unpublished.",
+    "retainedSchemeSha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216",
+    "freshDownloadVerified": false,
+    "cardsWithNoPrintedAnswer": [
+      {
+        "id": "ru-2019-hl-ca1",
+        "schemePages": [
+          6
+        ]
+      },
+      {
+        "id": "ru-2019-hl-se",
+        "schemePages": [
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "id": "ru-2019-hl-gw",
+        "schemePages": [
+          12,
+          13
+        ]
+      }
+    ]
+  }
+}

@@ -18,8 +18,8 @@ import KobraScope, {
   Tabs, TabsList, TabsTrigger, ToggleGroup, ToggleGroupItem,
 } from '../approved-ui-runtime';
 import ThemeArtwork from '../ThemeArtwork';
-import { libraryTopicIds, libraryYearsLabel } from './libraryGroups';
-import { markBankCurriculumMenu } from './curriculumMenu';
+import { libraryYearsLabel } from './libraryGroups';
+import { markBankCurriculumMenu, menuTopicIds } from './curriculumMenu';
 import { SUBJECTS, LEVEL_LABEL, levelsFor, type Level } from './deck';
 import { completeListeningExercises, resolveSessionQueue } from './sessionPlanning';
 import type { DeckState } from './store';
@@ -50,7 +50,7 @@ export default function MarkBankLibrary({examDate,subjectId,level,cards,state,no
  const groups=menu.strands;
  const cardsByTopic=useMemo(()=>{
    const grouped=new Map<string,SecCard[]>();
-   for(const card of cards)for(const id of libraryTopicIds(card,menu.spec)){const list=grouped.get(id) ?? [];list.push(card);grouped.set(id,list);}
+   for(const card of cards)for(const id of menuTopicIds(card,menu)){const list=grouped.get(id) ?? [];list.push(card);grouped.set(id,list);}
    return grouped;
  },[cards,menu.spec]);
  const subject={...base,groups};
@@ -120,7 +120,7 @@ export default function MarkBankLibrary({examDate,subjectId,level,cards,state,no
             : <Kbd className="mb-search-kbd" aria-hidden="true">⌘ K</Kbd>}
         </div>
       </div>
-      <p className="mb-source-note">{menu.current ? `Your syllabus: ${menu.spec?.title}.` : "Your cohort map is being verified."} Questions retain their original paper year. Archived topics are labelled in the index.</p>
+      <p className="mb-source-note">{menu.current ? `Your syllabus: ${menu.spec?.title}.` : "Your cohort map is being verified."}{menu.model ? ' Topics are the Topic Atlas headings, so a question sits under the same topic in both.' : ''} Questions retain their original paper year. Archived topics are labelled in the index.</p>
       {onStartingPoint && <Button variant="outline" disabled={busy || !ready} onClick={onStartingPoint}>Where should I start?</Button>}
       {loading && <p className="mb-sr" role="status">Loading this question bank…</p>}
       {!online && <p className="mb-source-note">You’re offline. Reviews save on this device and sync when your connection returns.</p>}

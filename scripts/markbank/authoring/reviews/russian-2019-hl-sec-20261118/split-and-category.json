@@ -1,0 +1,645 @@
+{
+  "reviewedAt": "2026-11-19T10:39:17.141Z",
+  "sitting": "Russian 2019 Higher",
+  "asksCountedFromPapers": 44,
+  "asksCarded": 44,
+  "asksOpen": 0,
+  "primaryTopicMismatches": 0,
+  "headingMismatches": 0,
+  "sourceLinksToRetiredSectionCards": 0,
+  "splitReview": "One card per printed ask. The short essay and guided-writing choices remain one card each. The retired four section cards are replaced by the original individually numbered listening asks.",
+  "categoryReview": "Every listening ask retains its independently reviewed prior per-question topic. All other task topics and headings remain exact. Source records bind the original question and scheme pages.",
+  "rows": [
+    {
+      "id": "ru-2019-hl-c1-1",
+      "question": "Give two reasons why Vadim has not written to his friend before now. (Section 1)",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2019-hl-c1-2-i",
+      "question": "Give four details about how this school year is different for Vadim. (Section 2)",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2019-hl-c1-2-ii",
+      "question": "Give two details about Vadim’s preparations for the university examinations that he hopes to take in the future. (Section 2)",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2019-hl-c1-3-i",
+      "question": "Why is Moscow State University Vadim’s first choice? Give two details. (Section 3)",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2019-hl-c1-3-ii",
+      "question": "What do the teachers say about Vadim’s class? Give one detail. (Section 3)",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2019-hl-c1-3-iii",
+      "question": "What did the students agree to do for the masquerade ball? Give two details. (Section 3)",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2019-hl-c1-3-iv",
+      "question": "Vadim’s class took part in a History Olympiad. Give three details. (Section 3)",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2019-hl-c1-4",
+      "question": "Give three details about how Vadim and his parents currently spend their evenings. (Section 4)",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English"
+    },
+    {
+      "id": "ru-2019-hl-c2-1",
+      "question": "Give four details about Georgiy’s response to the questions asked in the survey.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        6,
+        7
+      ],
+      "cardPrimary": "russian-3-1",
+      "atlasPrimary": "russian-3-1",
+      "heading": "Summary in English"
+    },
+    {
+      "id": "ru-2019-hl-c2-2",
+      "question": "Give four details about Shokrat’s response to the questions asked in the survey.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        6,
+        7
+      ],
+      "cardPrimary": "russian-3-1",
+      "atlasPrimary": "russian-3-1",
+      "heading": "Summary in English"
+    },
+    {
+      "id": "ru-2019-hl-c2-3",
+      "question": "Give four details about Elvira’s response to the questions asked in the survey.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        6,
+        7
+      ],
+      "cardPrimary": "russian-3-1",
+      "atlasPrimary": "russian-3-1",
+      "heading": "Summary in English"
+    },
+    {
+      "id": "ru-2019-hl-c2-4",
+      "question": "Give four details about Alexander’s response to the questions asked in the survey.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        6,
+        7
+      ],
+      "cardPrimary": "russian-3-1",
+      "atlasPrimary": "russian-3-1",
+      "heading": "Summary in English"
+    },
+    {
+      "id": "ru-2019-hl-la1",
+      "question": "Indicate the case of the following noun phrases: (You may write your answer in Irish, English or Russian)",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        5
+      ],
+      "cardPrimary": "russian-3-2",
+      "atlasPrimary": "russian-3-2",
+      "heading": "Language Awareness Tasks"
+    },
+    {
+      "id": "ru-2019-hl-ca1",
+      "question": "Select one of the topics listed below and give three details explaining the topic you have chosen. Answer in English or Russian. 1. Mocква 2. Олимпиадa 3. МГУ",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "cardPrimary": "russian-2-0",
+      "atlasPrimary": "russian-2-0",
+      "heading": "Present-Day Target Culture"
+    },
+    {
+      "id": "ru-2019-hl-la2-1",
+      "question": "Verbs: Supply the infinitive/dictionary form/инфинитив of the following verbs from the text (5 marks) 1. беспокоилась",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        7
+      ],
+      "cardPrimary": "russian-3-2",
+      "atlasPrimary": "russian-3-2",
+      "heading": "Language Awareness Tasks"
+    },
+    {
+      "id": "ru-2019-hl-la2-2",
+      "question": "Semantic field/семaнтичеcкое поле: In the text find five words related to ‘family’ and list them in Russian. (5 marks)",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        8
+      ],
+      "cardPrimary": "russian-3-2",
+      "atlasPrimary": "russian-3-2",
+      "heading": "Language Awareness Tasks"
+    },
+    {
+      "id": "ru-2019-hl-sd",
+      "question": "Read the following news items. Match the news item with the appropriate heading. Insert the number of the appropriate question in the box beside its answer. (20 marks)",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "cardPrimary": "russian-3-3",
+      "atlasPrimary": "russian-3-3",
+      "heading": "Structuring Discourse"
+    },
+    {
+      "id": "ru-2019-hl-gr",
+      "question": "Read through the following text. Put the words in brackets into the correct form. All nouns, adjectives and pronouns are supplied in the nominative form; verbs are supplied in the infinitive of the appropriate aspect. No marks are awarded for incorrectly spelled words or substitute words.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        9
+      ],
+      "cardPrimary": "russian-3-7",
+      "atlasPrimary": "russian-3-7",
+      "heading": "Grammar & Language Use"
+    },
+    {
+      "id": "ru-2019-hl-gw",
+      "question": "Write a piece of continuous prose in Russian (140 words) in answer to ONE of the following ‐ Letter or Narrative or Discussion. In your answer make sure to include ALL the points listed. 1. LETTER Write a letter to your pen‐pal. In your letter make reference to the following: • How your exams have gone. • Your summer holiday plans. • Work and/or study plans for the next academic year. 2. NARRATIVE Write a story about a competition in which you took part. 3. DISCUSSION Discuss the role of women in modern society.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        13
+      ],
+      "schemePages": [
+        12,
+        13
+      ],
+      "cardPrimary": "russian-3-9",
+      "atlasPrimary": "russian-3-9",
+      "heading": "Guided / Extended Writing (Letter, Continuous Prose)"
+    },
+    {
+      "id": "ru-2019-hl-se",
+      "question": "Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title.\n\nНапишите небольшую статью по–русски размером 50 слов на одну из следующих тем. В свою \nстатью включите пять страноведческих фактов. \n \n1. Spórt i gCónaidhm na Rúise / Sport in the Russian Federation/ Спорт в Российской Федерции  \n \n2. An t‐Oideachas i gCónaidhm na Rúise / Education in the Russian Federation / Oбразование в \nРоссийской Федерции  \n \n3. An teaghlach i gCónaidhm na Rúise / The family in the Russian Federation / Семья в Российской \nФедерции  \n \n4. Reiligiún i gCónaidhm na Rúise / Religion in the Russian Federation / Религия в Российской Федерции \n \n5. Tithíocht i gCónaidhm na Rúise / Housing in the Russian Federation / Жильё в Российской Федерции  \n \n",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        9,
+        10,
+        11
+      ],
+      "cardPrimary": "russian-3-8",
+      "atlasPrimary": "russian-3-8",
+      "heading": "Short Essay (~50 Words, HL)"
+    },
+    {
+      "id": "ru-2019-hl-l1-1",
+      "question": "Why does the taxi driver recommend the Radisson hotel? Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        14
+      ],
+      "cardPrimary": "russian-0-9",
+      "atlasPrimary": "russian-0-9",
+      "heading": "Buying Goods & Services"
+    },
+    {
+      "id": "ru-2019-hl-l1-2-i",
+      "question": "What level of English does this caller have?",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        14
+      ],
+      "cardPrimary": "russian-0-3",
+      "atlasPrimary": "russian-0-3",
+      "heading": "Learning"
+    },
+    {
+      "id": "ru-2019-hl-l1-2-ii",
+      "question": "How many people will be in her class?",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        14
+      ],
+      "cardPrimary": "russian-0-3",
+      "atlasPrimary": "russian-0-3",
+      "heading": "Learning"
+    },
+    {
+      "id": "ru-2019-hl-l1-3",
+      "question": "Give two details about the patient’s symptoms.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        14
+      ],
+      "cardPrimary": "russian-0-9",
+      "atlasPrimary": "russian-0-9",
+      "heading": "Buying Goods & Services"
+    },
+    {
+      "id": "ru-2019-hl-l1-4",
+      "question": "Give two details about the plans these friends make for this evening.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        14
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits"
+    },
+    {
+      "id": "ru-2019-hl-l1-5-i",
+      "question": "Where does this caller want to go?",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        14
+      ],
+      "cardPrimary": "russian-0-9",
+      "atlasPrimary": "russian-0-9",
+      "heading": "Buying Goods & Services"
+    },
+    {
+      "id": "ru-2019-hl-l1-5-ii",
+      "question": "How many passengers will be travelling in the taxi?",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        14
+      ],
+      "cardPrimary": "russian-0-9",
+      "atlasPrimary": "russian-0-9",
+      "heading": "Buying Goods & Services"
+    },
+    {
+      "id": "ru-2019-hl-l2-1-i",
+      "question": "Give two details about Maria’s first experiences of Irish dancing.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        15
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits"
+    },
+    {
+      "id": "ru-2019-hl-l2-2-i",
+      "question": "Give two details about Irish Culture Day.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        15
+      ],
+      "cardPrimary": "russian-0-7",
+      "atlasPrimary": "russian-0-7",
+      "heading": "Events in People's Lives"
+    },
+    {
+      "id": "ru-2019-hl-l2-2-ii",
+      "question": "Give one detail about the age range of the dancers in the group.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        15
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits"
+    },
+    {
+      "id": "ru-2019-hl-l2-3-i",
+      "question": "What does Maria say about her job? Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        15
+      ],
+      "cardPrimary": "russian-0-4",
+      "atlasPrimary": "russian-0-4",
+      "heading": "Work"
+    },
+    {
+      "id": "ru-2019-hl-l2-3-ii",
+      "question": "Name one other hobby apart from Irish dancing that Maria enjoys",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        15
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits"
+    },
+    {
+      "id": "ru-2019-hl-l2-4",
+      "question": "Give two details about Maria’s last holiday.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        15
+      ],
+      "cardPrimary": "russian-0-8",
+      "atlasPrimary": "russian-0-8",
+      "heading": "Travel & Transport"
+    },
+    {
+      "id": "ru-2019-hl-l3-1-i",
+      "question": "Where and when will the festival take place?",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        16
+      ],
+      "cardPrimary": "russian-0-7",
+      "atlasPrimary": "russian-0-7",
+      "heading": "Events in People's Lives"
+    },
+    {
+      "id": "ru-2019-hl-l3-1-ii",
+      "question": "Give two details about the opening ceremony of the festival.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        16
+      ],
+      "cardPrimary": "russian-0-7",
+      "atlasPrimary": "russian-0-7",
+      "heading": "Events in People's Lives"
+    },
+    {
+      "id": "ru-2019-hl-l3-2-i",
+      "question": "Give two details about the subject matter of the film ‘Zhili Bili.’",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        16
+      ],
+      "cardPrimary": "russian-0-7",
+      "atlasPrimary": "russian-0-7",
+      "heading": "Events in People's Lives"
+    },
+    {
+      "id": "ru-2019-hl-l3-2-ii",
+      "question": "What format of this film will be shown?",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        16
+      ],
+      "cardPrimary": "russian-0-7",
+      "atlasPrimary": "russian-0-7",
+      "heading": "Events in People's Lives"
+    },
+    {
+      "id": "ru-2019-hl-l3-3",
+      "question": "Give three details about the award ceremony.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        16
+      ],
+      "cardPrimary": "russian-0-7",
+      "atlasPrimary": "russian-0-7",
+      "heading": "Events in People's Lives"
+    },
+    {
+      "id": "ru-2019-hl-l4-1-i",
+      "question": "Give two details about Michael’s family.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "cardPrimary": "russian-0-1",
+      "atlasPrimary": "russian-0-1",
+      "heading": "Family & Home"
+    },
+    {
+      "id": "ru-2019-hl-l4-1-ii",
+      "question": "Give two details about the part‐time job Michael had when he was young.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "cardPrimary": "russian-0-4",
+      "atlasPrimary": "russian-0-4",
+      "heading": "Work"
+    },
+    {
+      "id": "ru-2019-hl-l4-2-i",
+      "question": "Give one detail about the band that Michael formed during his teenage years.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits"
+    },
+    {
+      "id": "ru-2019-hl-l4-2-ii",
+      "question": "Give two details about why Michael says the age of 19 was the most difficult time in his life.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "cardPrimary": "russian-0-3",
+      "atlasPrimary": "russian-0-3",
+      "heading": "Learning"
+    },
+    {
+      "id": "ru-2019-hl-l4-3-i",
+      "question": "Give two details about Michael’s leading role in the film ‘300.’",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "cardPrimary": "russian-0-4",
+      "atlasPrimary": "russian-0-4",
+      "heading": "Work"
+    },
+    {
+      "id": "ru-2019-hl-l4-3-ii",
+      "question": "Give one detail about why 2014 was a significant year in Michael’s career.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "cardPrimary": "russian-0-4",
+      "atlasPrimary": "russian-0-4",
+      "heading": "Work"
+    }
+  ]
+}

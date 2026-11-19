@@ -723,19 +723,19 @@
     "refsHash": "8dc6e8622a1ca48e"
   },
   "russian": {
-    "cards": 1372,
-    "contentHash": "644185115d27074a",
-    "coveragePct": 98.3,
-    "covered": 1414,
-    "excluded": 26,
-    "leaves": 1465,
-    "open": 25,
+    "cards": 1485,
+    "contentHash": "4f30f3c1c5adae72",
+    "coveragePct": 100.0,
+    "covered": 1489,
+    "excluded": 0,
+    "leaves": 1489,
+    "open": 0,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "ff06e1bdb6b5283e"
     },
-    "refsHash": "9391f1468955b756"
+    "refsHash": "922dcd4bb5770390"
   },
   "slovakian": {
     "cards": 140,

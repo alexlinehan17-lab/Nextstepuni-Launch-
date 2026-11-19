@@ -18,7 +18,7 @@
     "cycle": "lc",
     "markBankCards": 5540,
     "atlasQuestions": 534,
-    "atlasTopics": 122,
+    "atlasTopics": 66,
     "paperCount": 178,
     "firstYear": 1996,
     "lastYear": 2026
@@ -210,7 +210,7 @@
     "cycle": "lc",
     "markBankCards": 3369,
     "atlasQuestions": 374,
-    "atlasTopics": 76,
+    "atlasTopics": 34,
     "paperCount": 129,
     "firstYear": 1996,
     "lastYear": 2026
@@ -1072,9 +1072,9 @@
     "name": "Russian",
     "artworkSubject": "russian",
     "cycle": "lc",
-    "markBankCards": 1372,
-    "atlasQuestions": 1642,
-    "atlasTopics": 32,
+    "markBankCards": 1485,
+    "atlasQuestions": 1734,
+    "atlasTopics": 33,
     "paperCount": 115,
     "firstYear": 2004,
     "lastYear": 2026
