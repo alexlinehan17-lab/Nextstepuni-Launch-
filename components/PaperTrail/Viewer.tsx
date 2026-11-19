@@ -88,7 +88,7 @@ import { captureZoomAnchor, restoreZoomAnchor, type ZoomAnchor } from './zoomAnc
 import MobileQuestionTools from './MobileQuestionTools';
 import { printedQuestionAnchors, questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
 import { isAnswerMap, mergePaperAnchorMetadata } from './vaultResolve';
-import { frenchAudioForPaper } from './frenchAudio';
+import { audioForPaper } from './paperRecording';
 import FrenchPaperAudio from './FrenchPaperAudio';
 // The chrome (top bar, Tools menu, page bar, status toasts) is Kobra; see the file.
 import './viewer-chrome.css';
@@ -225,7 +225,7 @@ const Viewer: React.FC<ViewerProps> = ({
   onClose,
   onPosition,
 }) => {
-  const audioSource = useMemo(() => topics ? frenchAudioForPaper(topics) : null, [topics]);
+  const audioSource = useMemo(() => topics ? audioForPaper(topics) : null, [topics]);
   const deskNs = storageNs ?? `anon|${paper.url}`;
   const book = useAnswerBook(deskNs);
   // Opening a paper never opts the student into the answer desk. Saved work

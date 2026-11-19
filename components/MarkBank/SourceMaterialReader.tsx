@@ -1,3 +1,4 @@
+import './mathematics.css';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -23,6 +24,7 @@ import { createPortal } from 'react-dom';
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 import type { CardSourceMaterial } from '../../types/markBank';
 import CropView from '../PaperTrail/CropView';
+import PdfRuler from './PdfRuler';
 import { paperStoragePath, paperUrl } from '../PaperTrail/storage';
 import { vaultPdf } from '../PaperTrail/vaultDocs';
 import { resolveSubjectId } from '../../curriculumRegistry';
@@ -95,12 +97,17 @@ const CloseIcon = () => (
   </svg>
 );
 
+/** Subjects whose source notes hold instructions needed before the reveal: they
+ *  wrap in full and stay visible on phones (index.css .mb-source-notes-full). */
+const SOURCE_NOTES_FULL = new Set(['maths', 'physics', 'home-economics', 'japanese', 'russian', 'lcvp']);
+
 const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   source, subjectId, year, paperFileid, documentKind = 'paper', inline = false, labelNamesMaterial = false,
 }) => {
   const isIllustration = source.kind === 'source-illustration';
+  const isMathematicsPage = subjectId === 'maths' && (source.kind === 'source-question' || source.kind === 'source-scheme');
   const isImage = IMAGE_FILE.test(paperFileid);
-  const isScheme = documentKind === 'scheme' || source.kind === 'marking-scheme' || source.kind === 'source-scheme';
+  const isScheme = documentKind === 'scheme' || source.documentKind === 'scheme' || source.kind === 'marking-scheme' || source.kind === 'source-scheme';
   const isAccounting = subjectId === 'accounting';
   const maxZoom = isAccounting ? 3 : 2;
   const isSupplementary = source.kind === 'supplementary-text';
@@ -113,7 +120,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
     : source.kind === 'source-table' ? 'accounting data'
     : source.kind === 'source-data' ? 'source material'
     : source.kind === 'exam-material' ? 'exam material'
-    : source.kind === 'source-paper' ? 'question pages'
+    : source.kind === 'source-paper' || source.kind === 'source-question' ? 'question pages'
     : isIllustration ? illustrationDocument(subjectId, source) : 'source text';
   // "ILLUSTRATION SHEET · Q1 · illustration sheet", "OS MAP · OS map": where
   // the label already names the document, it is not named twice.
@@ -124,6 +131,8 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const [failed, setFailed] = useState(false);
   const [pageIndex, setPageIndex] = useState(0);
   const [zoom, setZoom] = useState(1);
+  const [measuring, setMeasuring] = useState(false);
+  const [measurement, setMeasurement] = useState<number | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
   const closeRef = useRef<HTMLButtonElement | null>(null);
   const trackRef = useRef<HTMLDivElement | null>(null);
@@ -133,8 +142,10 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
 
   const url = useMemo(() => paperUrl(paperStoragePath(
     // A deck id that is not the corpus's folder name: 'applied-maths' is filed
-    // as applied-mathematics and 'dcg' as design-and-communication-graphics.
-    'lc', subjectId === 'applied-maths' || subjectId === 'dcg' ? resolveSubjectId(subjectId)! : subjectId, source.sourceYear ?? year,
+    // as applied-mathematics, 'dcg' as design-and-communication-graphics,
+    // 'maths' as mathematics and 'lcvp' as link-modules.
+    'lc', subjectId === 'maths' ? 'mathematics' : subjectId === 'lcvp' ? 'link-modules'
+      : subjectId === 'applied-maths' || subjectId === 'dcg' ? resolveSubjectId(subjectId)! : subjectId, source.sourceYear ?? year,
     isScheme ? 'scheme' : 'paper', withPdfExtension(source.sourceFileid ?? paperFileid),
   )), [paperFileid, source.sourceFileid, source.sourceYear, subjectId, year, isScheme]);
   const regions = useMemo(
@@ -161,6 +172,8 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
     requestedPage.current = null;
     setPageIndex(0);
     setZoom(1);
+    setMeasuring(false);
+    setMeasurement(null);
     setOpen(true);
   }, []);
 
@@ -231,15 +244,15 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   }, [itemCount]);
 
   const swipeStarted = useCallback((event: React.PointerEvent<HTMLDivElement>) => {
-    if (zoom !== 1 || event.isPrimary === false) return;
+    if (measuring || zoom !== 1 || event.isPrimary === false) return;
     requestedPage.current = null;
     swipeStart.current = { x: event.clientX, y: event.clientY, pointerId: event.pointerId };
     try { event.currentTarget.setPointerCapture?.(event.pointerId); } catch { /* capture is an enhancement */ }
-  }, [zoom]);
+  }, [measuring, zoom]);
 
   const completeSwipe = useCallback((x: number, y: number, pointerId: number) => {
     const start = swipeStart.current;
-    if (!start || start.pointerId !== pointerId || zoom !== 1) return;
+    if (measuring || !start || start.pointerId !== pointerId || zoom !== 1) return;
     swipeStart.current = null;
     const dx = x - start.x;
     const dy = y - start.y;
@@ -249,7 +262,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
     // desktop trackpad or tablet.
     if (Math.abs(dx) < 54 || Math.abs(dx) < Math.abs(dy) * 1.15) return;
     goTo(pageIndex + (dx < 0 ? 1 : -1));
-  }, [goTo, pageIndex, zoom]);
+  }, [goTo, measuring, pageIndex, zoom]);
 
   const swipeFinished = useCallback((event: React.PointerEvent<HTMLDivElement>) => {
     completeSwipe(event.clientX, event.clientY, event.pointerId);
@@ -259,10 +272,10 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   // PointerEvent sequence. Real touch uses the pointer path above; this fallback
   // also makes a desktop click-and-drag feel like the same physical reader.
   const mouseSwipeStarted = useCallback((event: React.MouseEvent<HTMLDivElement>) => {
-    if (zoom !== 1 || event.button !== 0) return;
+    if (measuring || zoom !== 1 || event.button !== 0) return;
     requestedPage.current = null;
     swipeStart.current = { x: event.clientX, y: event.clientY, pointerId: -1 };
-  }, [zoom]);
+  }, [measuring, zoom]);
 
   const mouseSwipeFinished = useCallback((event: React.MouseEvent<HTMLDivElement>) => {
     if (swipeStart.current?.pointerId !== -1) return;
@@ -273,11 +286,11 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   // older WKWebView shells, where touch events are present but pointer capture
   // has historically been inconsistent during nested overflow scrolling.
   const touchSwipeStarted = useCallback((event: React.TouchEvent<HTMLDivElement>) => {
-    if (zoom !== 1 || event.touches.length !== 1) return;
+    if (measuring || zoom !== 1 || event.touches.length !== 1) return;
     requestedPage.current = null;
     const touch = event.touches[0];
     swipeStart.current = { x: touch.clientX, y: touch.clientY, pointerId: -2 };
-  }, [zoom]);
+  }, [measuring, zoom]);
 
   const touchSwipeFinished = useCallback((event: React.TouchEvent<HTMLDivElement>) => {
     const touch = event.changedTouches[0];
@@ -308,7 +321,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const modal = open && typeof document !== 'undefined' ? createPortal(
     <div className="mark-bank-theme mb-source-reader-overlay">
       <div
-        className={`mb-source-reader-dialog${isAccounting ? ' mb-source-reader-accounting' : ''}`}
+        className={`mb-source-reader-dialog${isAccounting ? ' mb-source-reader-accounting' : ''}${isMathematicsPage ? ' mb-source-reader-question' : ''}`}
         role="dialog"
         aria-modal="true"
         aria-labelledby="mb-source-reader-title"
@@ -318,6 +331,16 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
           <div className="mb-source-reader-heading">
             <span>{headingNamesMaterial ? source.label : `${source.label} · ${materialLabel}`}</span>
             <h2 id="mb-source-reader-title">{source.title}</h2>
+            {source.measurementRequired && (
+              <div className="mb-source-reader-measure">
+                <button type="button" aria-pressed={measuring} onClick={() => { setMeasuring(value => !value); setMeasurement(null); }}>
+                  {measuring ? 'Finish measuring' : 'Measure in cm'}
+                </button>
+                <span aria-live="polite">{measuring
+                  ? measurement === null ? 'Select two endpoints on the page.' : `${measurement.toFixed(2)} cm on the printed page`
+                  : 'Uses the original printed scale at any zoom.'}</span>
+              </div>
+            )}
           </div>
           {!isLinked && <div className="mb-source-reader-tools" aria-label="Page display controls">
             <button
@@ -420,15 +443,33 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
                       />
                     )
                   ) : pdf ? (
+                    source.measurementRequired ? (
+                    /* A printed-scale task (Maths) measures on the page itself. */
+                    <div style={{ position: 'relative' }}>
                     <CropView
                       key={`${page}-${zoom}`}
                       pdf={pdf}
                       region={regions[index]}
                       rotation={source.pageRotations?.[page] ?? 0}
                       ariaLabel={pageAriaLabel}
-                      maxWidth={isAccounting ? 3300 : 900}
+                      maxWidth={isAccounting ? 3300 : isMathematicsPage ? 2400 : 900}
                       failText="This printed page could not be rendered. Open the original paper below."
                     />
+                      {measuring && pageIndex === index && (
+                        <PdfRuler pdf={pdf} page={page} onMeasure={setMeasurement} />
+                      )}
+                    </div>
+                    ) : (
+                    <CropView
+                      key={`${page}-${zoom}`}
+                      pdf={pdf}
+                      region={regions[index]}
+                      rotation={source.pageRotations?.[page] ?? 0}
+                      ariaLabel={pageAriaLabel}
+                      maxWidth={isAccounting ? 3300 : isMathematicsPage ? 2400 : 900}
+                      failText="This printed page could not be rendered. Open the original paper below."
+                    />
+                    )
                   ) : failed ? (
                     <div className="mb-source-reader-failed">
                       <strong>That page did not load.</strong>
@@ -452,7 +493,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
         </div>}
 
         <footer className="mb-source-reader-footer">
-          <div className="mb-source-reader-provenance">
+          <div className={`mb-source-reader-provenance${SOURCE_NOTES_FULL.has(subjectId) ? ' mb-source-notes-full' : ''}`}>
             <strong>{isSupplementary ? texts[pageIndex]?.edition : source.attribution}</strong>
             {!isLinked && <span>{source.presentationNote}</span>}
             {!isLinked && <a href={isSupplementary ? texts[pageIndex]?.sourceUrl : isImage ? url : `${url}#page=${source.pages[pageIndex]}`} target="_blank" rel="noreferrer">
@@ -503,7 +544,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
         onClick={show}>
         <span className="mb-source-material-icon"><PageStackIcon /></span>
         <span className="mb-source-material-copy">
-          <span>{isAccounting && isScheme ? 'Open worked solution' : source.kind === 'source-table' ? 'Open accounting data' : `${source.kind === 'marking-scheme' || source.kind === 'exam-material' ? 'Open' : 'Read'} ${source.label}`}</span>
+          <span>{isMathematicsPage ? `Open ${materialLabel}` : isAccounting && isScheme ? 'Open worked solution' : source.kind === 'source-table' ? 'Open accounting data' : `${source.kind === 'marking-scheme' || source.kind === 'exam-material' ? 'Open' : 'Read'} ${source.label}`}</span>
           <strong>{source.title}</strong>
           <small>
             {isLinked ? `${itemCount} poems · published reading copies` : isSupplementary ? `${itemCount} poems · supplementary reading editions` :
