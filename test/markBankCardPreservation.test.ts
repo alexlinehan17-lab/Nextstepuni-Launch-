@@ -1419,7 +1419,7 @@ const isTechnologyAdded = (id: string) => /^tech-201\d-/.test(id);
  * dialogues LB1-LB3), writing (C), the Higher essays (B3A, B3B), and the reading
  * asks the generator refused (ITALIAN_ADDED_READING). Pinned per level, count
  * and id hash, beside the frozen set (italianAdditions below). */
-const ITALIAN_ADDED_READING = new Set(['it-2025-hl-a-3-b', 'it-2024-hl-b2b-1-a']);
+const ITALIAN_ADDED_READING = new Set(['it-2025-hl-a-3-b', 'it-2024-hl-b2b-1-a', 'it-2023-hl-a-4-b']);
 const isItalianAdded = (id: string) => /^it-(?:201\d|2020|2026)-/.test(id)
   || /^it-202[1-5]-(?:hl|ol)-(?:la|lb\d|c|b3[ab])-/.test(id)
   || ITALIAN_ADDED_READING.has(id);
@@ -2143,7 +2143,7 @@ const technologyAdditions = {
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
 } as const;
 const italianAdditions = {
-  higher: [ITALIAN_HIGHER, 133, 'b97e82622c6f9e7e80a1ccb078cbd814be9b145c9248ee006efaaa7b7809acf2'],
+  higher: [ITALIAN_HIGHER, 166, '7ca63c3a01f57805d9fd0dda1af5ae34ee37b27dcd1de4a47eb412f0dce0ce32'],
   ordinary: [ITALIAN_ORDINARY, 120, 'ac8f3589b791fce6cefccdcab74e293d93a71d572c27ecf4a87a8497b1ecd6a4'],
 } as const;
 const dcgAdditions = {
@@ -2245,7 +2245,10 @@ describe('Mark Bank card preservation', () => {
     // left out (B2B Q1(a), 'Any two of the following' over a bare 5 marks, is
     // carded on its printed total); 2024 Ordinary 28 for the 34 its 35 live
     // cards left out (listening 24 - Dialogue 1 Q4, which the scheme reader
-    // loses at a page foot, carded from the scheme's own line - and writing 4).
+    // loses at a page foot, carded from the scheme's own line - and writing 4);
+    // 2023 Higher 33 for the 37 its 34 live cards left out (listening 24,
+    // writing 4 on 8 asks, essays 4, and A Q4(b), whose answers the scheme
+    // prints as one line of slash-cut alternatives at two marks each).
     const additions = cards.map(card => card.id).filter(isItalianAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);

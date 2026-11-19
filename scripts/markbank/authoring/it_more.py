@@ -116,6 +116,49 @@ def question_total_card(P, S, year, level, section, item, letter, cards):
 
 TOTAL_ONLY = 'the scheme asks for more answers than its printed tariff divides into'
 
+# Asks whose scheme prints its accepted answers as ONE line of alternatives
+# cut by slashes, with the rate after them: 2023 Higher Section A Q4(b) "Two of
+# 4 marks" over "Stimolando/catturando/monitorando/osservando/apportando (2
+# marks each)". Each alternative is a cut of that line (checked present).
+READING_OPTIONS = {
+    (2023, 'hl', 'A', 4, 'b'): {
+        'claimMax': 2, 'perOption': 2,
+        'options': ['Stimolando', 'catturando', 'monitorando', 'osservando', 'apportando'],
+        'note': 'Two of 4 marks: Stimolando/catturando/monitorando/osservando/apportando (2 marks each)'},
+}
+
+
+def options_card(P, S, year, level, section, item, letter, cards):
+    o = READING_OPTIONS[(year, level, section, item, letter)]
+    ask = next(a for a in S.asks if (a.section, a.item, a.letter) == (section, item, letter))
+    text, page = next((t, pg) for sec, it, le, t, pg in P.asks()
+                      if (sec, it, le) == (section, item, letter))
+    ws = it_writing.Scheme(year, level)
+    ws.check(*o['options'], 'Stimolando/catturando/monitorando/osservando/apportando (2 marks each)'
+             if (year, level) == (2023, 'hl') else o['options'][0])
+    assert o['claimMax'] * o['perOption'] == ask.total
+    language = it_all.answer_language(level, text)
+    card = {
+        'id': it_all.card_id(year, level, section, item, letter),
+        'subjectId': 'italian', 'level': it_all.LEVEL_WORD[level], 'year': year,
+        'section': it_all.CARD_SECTION[section[0]],
+        'topicId': it_all.topic_for(level, section),
+        'conceptId': it_all.concept_for(text),
+        'questionRef': it_all.question_ref(year, level, section, item, letter),
+        'questionText': text, 'tariffModel': {'kind': 'fixed'}, 'totalMarks': ask.total,
+        'rows': [{'id': 'r-1', 'kind': 'anyN',
+                  'verbatim': 'The answers the scheme accepts in full', 'marks': None,
+                  'group': {'claimMax': o['claimMax'], 'perOption': o['perOption'],
+                            'options': o['options']},
+                  'contextNote': f'{it_all.language_note(language)} The scheme prints "{o["note"]}".'}],
+        'notes': (f'The scheme prints the tariff as {ask.parts[0].notation!r}; the paper '
+                  f'prints this ask on page {page}.'),
+    }
+    source = it_all.source_material(P, section, language, level, year)
+    if source:
+        card['sourceMaterial'] = source
+    cards.append(card)
+
 
 def sitting(year, level):
     P = ItPaper(year, level)
@@ -130,6 +173,11 @@ def sitting(year, level):
     for key in READING_LADDERS:
         if key[:2] == (year, level):
             ladder_card(P, S, year, level, *key[2:], reading)
+            ref = it_all.question_ref(year, level, key[2], key[3], key[4])
+            refused[:] = [r for r in refused if r['ref'] != ref]
+    for key in READING_OPTIONS:
+        if key[:2] == (year, level):
+            options_card(P, S, year, level, *key[2:], reading)
             ref = it_all.question_ref(year, level, key[2], key[3], key[4])
             refused[:] = [r for r in refused if r['ref'] != ref]
     for r in [r for r in refused if r['reason'].startswith(TOTAL_ONLY)]:
