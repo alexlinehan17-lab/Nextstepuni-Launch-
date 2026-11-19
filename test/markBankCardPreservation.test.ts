@@ -186,6 +186,7 @@ import { CARDS as MGREEK_HIGHER } from '../components/MarkBank/cards/modern-gree
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
+import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
 import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
@@ -2659,8 +2660,18 @@ const japaneseAliasIds = Object.keys(japaneseAliases);
 const japaneseAdditionIds = new Set([japanese2010OrdinaryCensus, japanese2010HigherCensus, japanese2011OrdinaryCensus, japanese2011HigherCensus, japanese2012OrdinaryCensus, japanese2012HigherCensus, japanese2013OrdinaryCensus, japanese2013HigherCensus, japanese2014OrdinaryCensus, japanese2014HigherCensus, japanese2015OrdinaryCensus, japanese2015HigherCensus, japanese2016OrdinaryCensus, japanese2016HigherCensus, japanese2017OrdinaryCensus, japanese2017HigherCensus, japanese2018OrdinaryCensus, japanese2018HigherCensus, japanese2019OrdinaryCensus, japanese2019HigherCensus, japanese2020HigherCensus, japanese2021OrdinaryCensus, japanese2021HigherCensus, japanese2022OrdinaryCensus, japanese2022HigherCensus, japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus, japanese2025OrdinaryCensus, japanese2024HigherCensus, japanese2024OrdinaryCensus, japanese2023HigherCensus, japanese2023OrdinaryCensus].flatMap(census => census.tasks.map(task =>
   `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`)).filter(id => !japaneseLiteralIds.has(id)));
 const lcvpAdditionIds = new Set<string>([...LCVP_2015_ADDED_IDS, ...LCVP_2016_ADDED_IDS, ...LCVP_2017_ADDED_IDS, ...LCVP_2018_ADDED_IDS, ...LCVP_2019_ADDED_IDS, ...LCVP_2020_ADDED_IDS, ...LCVP_2021_ADDED_IDS, ...LCVP_2022_ADDED_IDS, ...LCVP_2023_ADDED_IDS, ...LCVP_2024_ADDED_IDS, ...LCVP_2025_ADDED_IDS, ...LCVP_2026_ADDED_IDS]);
+/* Review pack 1 prototypes (treatments lane, 18 Nov 2026), counted on top of
+ * the frozen bank as the History essays are: Latin 2023 Higher Q2's four
+ * unseen passages, carded with the translation panel, and the 21 asks of
+ * Ancient Greek 2022 Ordinary, a paper the SEC published no marking scheme
+ * for. Every card frozen before them keeps its id. */
+const treatmentAdditionIds = new Set([...LATIN_HIGHER, ...AGREEK_ORDINARY]
+  .filter(card => (card.kind === 'rubric' && card.rubric.system === 'translation')
+    || ((card.kind === 'question' || card.kind === 'diagram') && card.noScheme === true))
+  .map(card => card.id));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
+  if (name === 'latin:higher' || name === 'ancient-greek:ordinary') return ids.filter(id => !treatmentAdditionIds.has(id));
   if (name.startsWith('history:')) return ids.filter(id => !historyEssayIds.has(id));
   if (name === 'lcvp:common') return ids.filter(id => !lcvpAdditionIds.has(id));
   if (name.startsWith('russian:')) {
@@ -3010,6 +3021,27 @@ describe('Mark Bank card preservation', () => {
       .toBe(true);
   });
 
+  it('pins the review pack 1 prototypes beside the frozen set', () => {
+    expect([...treatmentAdditionIds].sort()).toEqual([
+      'agr-2022-ol-a-q1', 'agr-2022-ol-b-q1', 'agr-2022-ol-c-q1', 'agr-2022-ol-d-q1', 'agr-2022-ol-q2-i',
+      'agr-2022-ol-q2-ii-a', 'agr-2022-ol-q2-ii-b', 'agr-2022-ol-q2-ii-c', 'agr-2022-ol-q2-ii-d', 'agr-2022-ol-q2-ii-e',
+      'agr-2022-ol-q2-ii-f', 'agr-2022-ol-q2-ii-g', 'agr-2022-ol-q2-ii-h', 'agr-2022-ol-q3-i', 'agr-2022-ol-q3-ii',
+      'agr-2022-ol-q3-iii', 'agr-2022-ol-q3-iv', 'agr-2022-ol-q3-v', 'agr-2022-ol-q3-vi', 'agr-2022-ol-q3-vii',
+      'agr-2022-ol-q3-viii',
+      'lat-2023-hl-a-q2-i', 'lat-2023-hl-a-q2-ii', 'lat-2023-hl-b-q2-i', 'lat-2023-hl-b-q2-ii',
+    ]);
+    expect([...treatmentAdditionIds].filter(id => id in CARD_ID_ALIASES)).toEqual([]);
+  });
+
+  it('pins the Music 2025 Higher prototype (review pack 1), a deck of its own', () => {
+    // 46 cards for 53 printed asks: 42 listening, Composing Section A's three,
+    // and one Listening elective card for its five asks (one shared band).
+    // Composing Section B's three asks are not carded: no card type takes
+    // their half mark per correct note (treatments lane README).
+    expect(MUSIC_HIGHER).toHaveLength(46);
+    expect(idHash(MUSIC_HIGHER.map(card => card.id))).toBe('2d7a41260efd6dc6e9c91822e02da297e675a9eba782445057e9c868d2dd46b2');
+  });
+
   it('protects the complete current bank', () => {
     // 10,495 before this session, plus sixteen subjects carded in six waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
@@ -3117,7 +3149,8 @@ describe('Mark Bank card preservation', () => {
         // Technology's 2010-2019 and DCG's 2010-2018 additions count on top of the bank the same way.
         : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
-        : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length : 0;
+        : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length
+        : name === 'latin:higher' || name === 'ancient-greek:ordinary' ? cards.filter(card => treatmentAdditionIds.has(card.id)).length : 0;
     const technologyAddedCount = [...TECHNOLOGY_HIGHER, ...TECHNOLOGY_ORDINARY]
       .filter(card => isTechnologyAdded(card.id)).length;
     const dcgAddedCount = [...DCG_HIGHER, ...DCG_ORDINARY].filter(card => isDcgAdded(card.id)).length;
@@ -3153,7 +3186,9 @@ describe('Mark Bank card preservation', () => {
         // Codex's reviewed Maths, Physics, Home Economics, Japanese and Link Modules (release 2026-11-18).
         + mathsNet
         + physicsAdditionIds.size - physicsAliasIds.length + homeEconomicsAdditionIds.size - homeEconomicsAliasIds.length
-        + japaneseAdditionIds.size - japaneseAliasIds.length + lcvpAdditionIds.size);
+        + japaneseAdditionIds.size - japaneseAliasIds.length + lcvpAdditionIds.size
+        // Review pack 1 prototypes: Latin 4 + Ancient Greek 21.
+        + treatmentAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
