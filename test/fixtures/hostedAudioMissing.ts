@@ -110,6 +110,8 @@ export const HOSTED_AUDIO_MISSING: readonly string[] = [
   'audio/2025/LC001ZLP017IV.mp3',
   'audio/2025/LC011CLP017BV.mp3',
   'audio/2025/LC012ZLP017BV.mp3',
+  'audio/2025/LC067ZLP045EV.mp3',
+  'audio/2025/LC067ZLP046EV.mp3',
   'audio/2026/LC001BLP017IV.mp3',
   'audio/2026/LC001ZLP017IV.mp3',
   'audio/2026/LC011CLP017BV.mp3',
