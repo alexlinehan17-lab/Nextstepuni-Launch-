@@ -360,8 +360,12 @@ def ordinary(year):
         'conceptId': re.sub(r'[^a-z0-9]+', '-', flat(' '.join(t3))[:60].lower()).strip('-')[:48],
         'questionRef': f'{year} OL Section C Q3', 'questionText': '\n'.join(t3),
         'tariffModel': {'kind': 'fixed'}, 'totalMarks': 8,
-        'rows': [{'id': f'r-{n}', 'kind': 'point', 'verbatim': f'{n}. {flat(t)}', 'marks': 1}
-                 for n, t in rows],
+        # One menu row of the eight printed lines, a mark for each in its place
+        # ("8x1 mark"): a fixed card shows at most six rows.
+        'rows': [{'id': 'r-1', 'kind': 'anyN',
+                  'verbatim': 'The answers the scheme accepts in full', 'marks': None,
+                  'group': {'claimMax': 8, 'perOption': 1,
+                            'options': [f'{n}. {flat(t)}' for n, t in rows]}}],
         'notes': f'The scheme prices the sequence "{q3[0]}": one mark for each line in its place.',
         'sourceMaterial': source(year, 'ol', p3),
     })

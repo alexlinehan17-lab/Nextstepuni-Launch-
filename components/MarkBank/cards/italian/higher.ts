@@ -4741,11 +4741,11 @@ export const CARDS: SecCard[] = [
     id: "it-2026-hl-la-1", topicId: "italian-3-1", conceptId: "advertisement-about-seaside-holiday-destinations",
     section: "L", questionRef: "2026 HL Section LA Q1",
     stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
-    questionText: "The advertisement is about",
+    questionText: "The advertisement is about\n(a) a city break\n(b) school tours\n(c) seaside holiday destinations\n(d) ski holidays",
     questionChoices: ["a city break","school tours","seaside holiday destinations","ski holidays"],
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "seaside holiday destinations", marks: 2, contextNote: "The scheme marks the right option in bold: (c). Circle one letter only." },
+    { id: "r-1", kind: "point", verbatim: "seaside holiday destinations", marks: 2, contextNote: "The scheme sets the right option in bold: (c)." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4777,11 +4777,11 @@ export const CARDS: SecCard[] = [
     id: "it-2026-hl-la-2", topicId: "italian-3-1", conceptId: "temperatures-above-season-average",
     section: "L", questionRef: "2026 HL Section LA Q2",
     stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
-    questionText: "Temperatures are",
+    questionText: "Temperatures are\n(a) above the season average\n(b) below the season average\n(c) in line with the season average\n(d) very low",
     questionChoices: ["above the season average","below the season average","in line with the season average","very low"],
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "above the season average", marks: 2, contextNote: "The scheme marks the right option in bold: (a). Circle one letter only." },
+    { id: "r-1", kind: "point", verbatim: "above the season average", marks: 2, contextNote: "The scheme sets the right option in bold: (a)." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4813,11 +4813,11 @@ export const CARDS: SecCard[] = [
     id: "it-2026-hl-la-3", topicId: "italian-3-1", conceptId: "news-item-about-public-reading-children",
     section: "L", questionRef: "2026 HL Section LA Q3",
     stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
-    questionText: "The news item is about",
+    questionText: "The news item is about\n(a) a puppet show\n(b) drama performances\n(c) poetry reading\n(d) public readings of children’s books",
     questionChoices: ["a puppet show","drama performances","poetry reading","public readings of children’s books"],
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "public reading of children’s books", marks: 2, contextNote: "The scheme marks the right option in bold: (d). Circle one letter only." },
+    { id: "r-1", kind: "point", verbatim: "public reading of children’s books", marks: 2, contextNote: "The scheme sets the right option in bold: (d)." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4849,11 +4849,11 @@ export const CARDS: SecCard[] = [
     id: "it-2026-hl-la-4", topicId: "italian-3-1", conceptId: "registration-fee-payable-bank-transfer",
     section: "L", questionRef: "2026 HL Section LA Q4",
     stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
-    questionText: "The registration fee is payable",
+    questionText: "The registration fee is payable\n(a) at the post office\n(b) by bank transfer\n(c) by credit card\n(d) in cash",
     questionChoices: ["at the post office","by bank transfer","by credit card","in cash"],
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "by bank transfer", marks: 2, contextNote: "The scheme marks the right option in bold: (b). Circle one letter only." },
+    { id: "r-1", kind: "point", verbatim: "by bank transfer", marks: 2, contextNote: "The scheme sets the right option in bold: (b)." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4885,11 +4885,11 @@ export const CARDS: SecCard[] = [
     id: "it-2026-hl-la-5", topicId: "italian-3-1", conceptId: "idea-came-stefano-while-waiting-train",
     section: "L", questionRef: "2026 HL Section LA Q5",
     stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
-    questionText: "The idea came to Stefano while he was",
+    questionText: "The idea came to Stefano while he was\n(a) relaxing at home\n(b) stuck in traffic\n(c) training at the gym\n(d) waiting at a train station",
     questionChoices: ["relaxing at home","stuck in traffic","training at the gym","waiting at a train station"],
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "waiting at a train station", marks: 2, contextNote: "The scheme marks the right option in bold: (d). Circle one letter only." },
+    { id: "r-1", kind: "point", verbatim: "waiting at a train station", marks: 2, contextNote: "The scheme sets the right option in bold: (d)." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4921,11 +4921,11 @@ export const CARDS: SecCard[] = [
     id: "it-2026-hl-la-6", topicId: "italian-3-1", conceptId: "comites-members-volunteers",
     section: "L", questionRef: "2026 HL Section LA Q6",
     stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
-    questionText: "Comites members are",
+    questionText: "Comites members are\n(a) diplomats\n(b) public servants\n(c) self‐employees\n(d) volunteers",
     questionChoices: ["diplomats","public servants","self‐employees","volunteers"],
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "volunteers", marks: 2, contextNote: "The scheme marks the right option in bold: (d). Circle one letter only." },
+    { id: "r-1", kind: "point", verbatim: "volunteers", marks: 2, contextNote: "The scheme sets the right option in bold: (d)." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4957,11 +4957,11 @@ export const CARDS: SecCard[] = [
     id: "it-2026-hl-la-7", topicId: "italian-3-1", conceptId: "concert-free",
     section: "L", questionRef: "2026 HL Section LA Q7",
     stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
-    questionText: "The concert",
+    questionText: "The concert\n(a) is by invitation only\n(b) is free\n(c) is cancelled\n(d) will be held in a small venue",
     questionChoices: ["is by invitation only","is free","is cancelled","will be held in a small venue"],
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "is free", marks: 2, contextNote: "The scheme marks the right option in bold: (b). Circle one letter only." },
+    { id: "r-1", kind: "point", verbatim: "is free", marks: 2, contextNote: "The scheme sets the right option in bold: (b)." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4993,11 +4993,11 @@ export const CARDS: SecCard[] = [
     id: "it-2026-hl-la-8", topicId: "italian-3-1", conceptId: "ingredients-pizza-mentioned-mozzarella-pineapple",
     section: "L", questionRef: "2026 HL Section LA Q8",
     stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
-    questionText: "The ingredients for the pizza mentioned are",
+    questionText: "The ingredients for the pizza mentioned are\n(a) mozzarella and pineapple\n(b) mozzarella and tomato\n(c) tomato and herbs\n(d) tomato, mozzarella and pineapple",
     questionChoices: ["mozzarella and pineapple","mozzarella and tomato","tomato and herbs","tomato, mozzarella and pineapple"],
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "mozzarella and pineapple", marks: 2, contextNote: "The scheme marks the right option in bold: (a). Circle one letter only." },
+    { id: "r-1", kind: "point", verbatim: "mozzarella and pineapple", marks: 2, contextNote: "The scheme sets the right option in bold: (a)." },
     ],
     sourceMaterial: {
           "kind": "source-text",

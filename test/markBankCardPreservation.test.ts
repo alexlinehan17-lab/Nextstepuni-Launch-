@@ -2144,7 +2144,7 @@ const technologyAdditions = {
 } as const;
 const italianAdditions = {
   higher: [ITALIAN_HIGHER, 67, 'c55c0e8c933d23f8288990984d7b9fdbceffdb405c5322967653b163d3d4b429'],
-  ordinary: [ITALIAN_ORDINARY, 0, 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'],
+  ordinary: [ITALIAN_ORDINARY, 64, 'c3f786a59f9be680cb2344eda9e18077b2242cb3c2c336ba0e5322cd4c1b29fe'],
 } as const;
 const dcgAdditions = {
   higher: [DCG_HIGHER, 460, 'f3f80dccc2dbf842c64db715d43b83169290d4cb7315d9eb2087ad8b29c0a4c1'],
@@ -2236,7 +2236,8 @@ describe('Mark Bank card preservation', () => {
     // Added sitting by sitting, newest first, one card per printed ask the
     // census reads (reconcile.py italian), a printed choice one card:
     // 2026 Higher 67 cards for its 71 asks (Section C Q1's five prompts, of
-    // which a candidate answers three, are one card).
+    // which a candidate answers three, are one card); 2026 Ordinary 64 for its
+    // 70 (the matching task's eight items are two cards of four).
     const additions = cards.map(card => card.id).filter(isItalianAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);

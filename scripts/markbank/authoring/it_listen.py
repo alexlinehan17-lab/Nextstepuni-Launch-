@@ -328,26 +328,30 @@ def cards(year, level, refuse, row_for, concept_for):
         letter, answer = key[n]
         options = [' '.join(t.split()) for _l, t in q['options']]
         printed = dict((l, ' '.join(t.split())) for l, t in q['options'])
-        if answer is None:
-            # Ordinary prints the letter alone; the option's words are the
-            # booklet's, the letter the scheme's (the Arabic key's precedent).
+        letter_only = answer is None
+        if letter_only:
+            # Ordinary prints the key as the letter alone, "1. (a)": that line is
+            # the scheme's whole answer, and the row is that line. The option's
+            # words are the booklet's and are on the card as its choices.
             if letter not in printed:
                 refuse('the scheme accepts a letter the booklet does not print',
                        ref, f'{year} {lvl} scheme, Section A Q{n}: ({letter})')
                 continue
-            answer = f'({letter}) {printed[letter]}'
+            answer = f'{n}. ({letter})'
         out.append({
             'id': f'it-{year}-{level}-la-{n}',
             'subjectId': 'italian', 'level': LEVEL_WORD[level], 'year': year,
             'section': 'L', 'topicId': SECTION_A_TOPIC,
             'conceptId': concept_for(' '.join(q['stem']) + ' ' + answer),
             'questionRef': ref,
-            'questionText': ' '.join(' '.join(q['stem']).split()),
+            'questionText': ' '.join(' '.join(q['stem']).split()) + ''.join(
+                f'\n({l}) {" ".join(t.split())}' for l, t in q['options']),
             'questionChoices': options,
             'tariffModel': {'kind': 'fixed'}, 'totalMarks': per,
             'rows': [{'id': 'r-1', 'kind': 'point', 'verbatim': answer, 'marks': per,
-                      'contextNote': ('The scheme marks the right option in bold: '
-                                      f'({letter}). Circle one letter only.')}],
+                      'contextNote': (f'The scheme accepts option ({letter}) only.' if letter_only
+                                      else 'The scheme sets the right option in bold: '
+                                      f'({letter}).')}],
             'notes': (f'The scheme prices Section A "8x{per}": {per} marks a question; '
                       f'the listening booklet prints this ask on page {q["page"]}.'),
             'stem': stem_a,
