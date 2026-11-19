@@ -149180,7 +149180,15 @@
       ],
       "guidancePages": [
         4
-      ]
+      ],
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          5
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2014-hl.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -149227,7 +149235,7 @@
         "Q.1.3. Cultural awareness: Select one of the topics listed below and give three details explaining the topic you have chosen. Answer in English or Russian. (6 marks) 1. Транспорт в Российской Федерации 2. Погода в Российской Федерации 3. Москва",
         "Award 2 marks per detail."
       ],
-      "markingGuideNote": "Choose one of the three original cultural topics and supply three distinct details. English, Irish and Russian are permitted by the original bilingual paper. The detail rate is printed in the general Q1 guidance on scheme page4; its50-mark heading explicitly includes38+12, with this task and language awareness making up the12. No factual model answers or partial-detail tariff are supplied."
+      "markingGuideNote": "The scheme prints no answer for this part. Choose one of the three original cultural topics and supply three distinct details. English, Irish and Russian are permitted by the original bilingual paper. The detail rate is printed in the general Q1 guidance on scheme page4; its50-mark heading explicitly includes38+12, with this task and language awareness making up the12. No factual model answers or partial-detail tariff are supplied."
     }
   },
   {

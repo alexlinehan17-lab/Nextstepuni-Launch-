@@ -540,6 +540,16 @@
       "schemeSha256": "7339c36919457d79424b100fb782372daf99d8c790dbe26ca5d69900779d3b41",
       "reviewedAt": "2026-11-19",
       "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2021-hl.json"
+    },
+    "ru-2014-hl-ca1": {
+      "printedMarks": 6,
+      "schemePages": [
+        5
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2014-hl.pdf",
+      "schemeSha256": "fb5cfc36f2f64fc1a8fc068bbad392ff99eb2ff5792c37267dfcabc0d0ad1f48",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2014-hl.json"
     }
   }
 }
