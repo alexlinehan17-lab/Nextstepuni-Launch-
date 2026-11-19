@@ -187,6 +187,7 @@ import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-stu
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
 import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
+import { CARDS as MUSIC_ORDINARY } from '../components/MarkBank/cards/music/ordinary';
 import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
@@ -3049,11 +3050,12 @@ describe('Mark Bank card preservation', () => {
     const MUSIC_LANE_SITTINGS: Array<[string, number, string]> = [
       ['2025 higher', 3, 'eba1c9deac3a34ae8b9e609a168791b0d6112c4ba1db6eddda4d57516dcc0c2c'],
       ['2026 higher', 56, '7456dcb567921ed8a24c698bb99a461e7ced4159f874a83abef3f3d0df302fe2'],
+      ['2026 ordinary', 48, 'a5afbcf10d02d25dd699036a151444daafb5de89e16958c5ed1d54c5a9dfa47a'],
     ];
     const lane = new Map<string, string[]>();
-    for (const card of MUSIC_HIGHER) {
+    for (const card of [...MUSIC_HIGHER, ...MUSIC_ORDINARY]) {
       const deferred = card.id.includes('-deferred-');
-      if (card.year === 2025 && card.section !== 'B' && !deferred) continue;
+      if (card.year === 2025 && card.level === 'higher' && card.section !== 'B' && !deferred) continue;
       const key = `${card.year} ${card.level}${deferred ? ' deferred' : ''}`;
       lane.set(key, [...(lane.get(key) ?? []), card.id]);
     }

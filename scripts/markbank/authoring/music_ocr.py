@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Text for a Music booklet the SEC printed with no text layer (2012, and the
 listening booklets of 2019, 2020, 2022, 2023 Higher and 2023, 2025 Ordinary):
-each page rendered at 200 dpi and read by Apple's Vision text recogniser
+each page rendered at 200 and at 300 dpi and read by Apple's Vision text recogniser
 (music_ocr.swift, compiled on first use). The output is what the reading file's
 question lines are checked against, in place of a text layer; the card shows a
 crop of the printed page, so a student always sees the SEC's own print.
@@ -52,18 +52,25 @@ def main(pdf, out, lines_path=None):
     pages, positions = {}, []
     with tempfile.TemporaryDirectory() as tmp:
         for i, pg in enumerate(doc):
-            png = os.path.join(tmp, f'p{i + 1}.png')
-            pg.get_pixmap(dpi=200).save(png)
-            res = subprocess.run([binary, png], capture_output=True, text=True, check=True).stdout
-            found = []
-            for line in res.splitlines():
-                box, _, text = line.partition('\t')
-                found.append(([float(v) for v in box.split()], text))
-            texts = []
-            for box, text in reading_order(found):
-                texts.append(text)
-                positions.append(f'p{i + 1} [{", ".join(f"{v:.3f}" for v in box)}]  {text}')
-            pages[str(i + 1)] = '\n'.join(texts)
+            readings = []
+            # Two independent readings, 200 and 300 dpi: each misses a word now
+            # and then (2023 HL page 6 lost "excerpt." at 200); a line is the
+            # SEC's if either reading holds it.
+            for dpi in (200, 300):
+                png = os.path.join(tmp, f'p{i + 1}-{dpi}.png')
+                pg.get_pixmap(dpi=dpi).save(png)
+                res = subprocess.run([binary, png], capture_output=True, text=True, check=True).stdout
+                found = []
+                for line in res.splitlines():
+                    box, _, text = line.partition('\t')
+                    found.append(([float(v) for v in box.split()], text))
+                texts = []
+                for box, text in reading_order(found):
+                    texts.append(text)
+                    if dpi == 200:
+                        positions.append(f'p{i + 1} [{", ".join(f"{v:.3f}" for v in box)}]  {text}')
+                readings.append('\n'.join(texts))
+            pages[str(i + 1)] = '\n\n'.join(readings)
     json.dump(pages, open(out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     open(out, 'a').write('\n')
     if lines_path:
