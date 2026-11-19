@@ -148,11 +148,13 @@ class Sitting:
         kind, addr = a['paper'], a['address']
         base = f'mus-{self.year}-{self.tag}'
         if kind == 'listening':
-            m = re.fullmatch(r'Q(\d)(?: ([AB]))?((?:\([a-z]+\))*)', addr)
+            # 2018 numbers its parts afresh under each excerpt: "Q1 Excerpt 2(i)".
+            m = re.fullmatch(r'Q(\d)(?: ([AB]))?(?: Excerpt (\d))?((?:\([a-z]+\))*)', addr)
             if not m:
                 raise SystemExit(f'listening address {addr!r}')
-            parts = re.findall(r'\(([a-z]+)\)', m.group(3))
-            return '-'.join(x for x in [f'{base}-l', f'q{m.group(1)}', (m.group(2) or '').lower(), *parts] if x)
+            parts = re.findall(r'\(([a-z]+)\)', m.group(4))
+            excerpt = f'x{m.group(3)}' if m.group(3) else ''
+            return '-'.join(x for x in [f'{base}-l', f'q{m.group(1)}', (m.group(2) or '').lower(), excerpt, *parts] if x)
         if kind == 'composing':
             # Ordinary Level prints two melodies under one question, "Answer (a) and (b)".
             m = re.fullmatch(r'Section ([AB]) Q(\d)((?:\([a-z]+\))*)', addr)
@@ -353,7 +355,12 @@ def grid_criteria(s, spec):
             crit['guidance'] = [s.scheme(g) for g in k.get('guidance', [])]
             crit['counted'] = {'rate': rate, 'items': items}
         else:
-            crit['permittedMarks'] = list(range(k['max'] + 1))
+            top = k['max']
+            # A band line whose printed top is a half mark (2018 HL Composing Q4's
+            # bass quality, "8 – 9.5" beside 0.5 x 21 = 10.5): every whole mark
+            # below it and the printed top, as the bands print them.
+            ladder = list(range(int(top) + 1)) + ([top] if top != int(top) else [])
+            crit['permittedMarks'] = ladder
             crit['guidance'] = [s.scheme(g) for g in k.get('guidance', [])]
             if not k.get('bands'):
                 # "Up to 3 marks for quality ... (3 x 4)": placed on its marks, no descriptors printed.
@@ -363,8 +370,8 @@ def grid_criteria(s, spec):
             for b in k['bands']:
                 marks = b['marks']
                 if isinstance(marks, str):
-                    nums = [int(n) for n in re.findall(r'\d+', marks)]
-                    marks = list(range(min(nums), max(nums) + 1))
+                    nums = [float(n) for n in re.findall(r'\d+(?:\.\d+)?', marks)]
+                    marks = [m for m in ladder if min(nums) <= m <= max(nums)]
                 bands.append({'label': s.scheme(b['label']), 'marks': marks,
                               'guidance': [s.scheme(g) for g in b.get('guidance', [])]})
             crit['bands'] = bands
