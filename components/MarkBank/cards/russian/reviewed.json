@@ -17527,7 +17527,7 @@
     "rubric": {
       "system": "language-writing",
       "taskRequirements": [],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
@@ -17842,7 +17842,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {
@@ -17873,7 +17873,7 @@
       "taskRequirements": [
         "Question 3. Guided writing (40 marks) Write a piece of continuous prose in Russian (140 words) in answer to ONE of the following. In your answer, make sure to include ALL the points listed. 1. LETTER a) Write a letter to your pen pal in Ireland about your post-graduation plans. In your letter, you should refer to the following: • Opening (A) • what exams you are sat (B) and how you feel about them (C); • your summer holiday plans (D); • your work and/or study plans for the next academic year (E); • Sign off (F) OR b) Write a letter of enquiry about booking a boat trip for your class to celebrate school graduation. In your letter you should refer to the following: • Opening (A) • Date (B) and time (C) of the trip; • services available on the boat (D); • cost of the trip (E) and method of payment (F); • Sign off (G) 2. NARRATIVE a) Write an account of the most memorable show or performance act you attended. OR b) Alexandra (Comprehension Text, Section II) had a Skype call with a girl from the USA. Write Alexandra’s blog entry describing this experience. You should address the following: • what the girl from the USA looked like (A); • topics you discussed (B); • what went well or what didn’t go well (C). 3. DISCUSSION a) Discuss the importance of learning about different cultures. OR b) Discuss the advantages (A, B) and disadvantages (C, D) of becoming a professional tour guide."
       ],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
@@ -18162,7 +18162,7 @@
         "source-defined-tariff"
       ],
       "humanReviewedBy": "Codex source review; browser QA pending",
-      "humanReviewedAt": "2026-11-06"
+      "humanReviewedAt": "2026-11-19"
     }
   },
   {

@@ -2512,7 +2512,16 @@
       12,
       13
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        12,
+        13
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2025-hl.json"
+    }
   },
   {
     "id": "ru-2025-hl-gw",
@@ -2530,7 +2539,17 @@
       15,
       16
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        14,
+        15,
+        16
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2025-hl.json"
+    }
   },
   {
     "id": "ru-2025-hl-l1-1-i",
