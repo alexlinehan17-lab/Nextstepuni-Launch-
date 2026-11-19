@@ -122,6 +122,10 @@ describe('Marking Lens integrity', () => {
     'home-economics-s-and-s|LC098ALP014IV.pdf', 'home-economics-s-and-s|LC098ALP039IV.pdf',
     'home-economics-s-and-s|LC098GLP014EV.pdf', 'home-economics-s-and-s|LC098GLP039EV.pdf',
     'home-economics-s-and-s|LC098GLP014IV.pdf', 'home-economics-s-and-s|LC098GLP039IV.pdf',
+    // Physics: the 2022 and 2023 deferred papers (LC021ALP000EV-deferred.pdf, released
+    // 2026-11-18) are their own Atlas question sets and reuse the June numbers. Every
+    // Physics lens entry was written for, and names, the June booklet.
+    'physics|LC021ALP000EV.pdf',
   ]);
 
   it('booklet-ambiguous entries use only explicitly verified booklets', () => {

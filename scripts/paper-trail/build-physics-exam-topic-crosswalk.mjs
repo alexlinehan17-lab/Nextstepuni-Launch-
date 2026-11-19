@@ -23,6 +23,13 @@ const CURRICULUM_CROSSWALK_PATH = path.join(
 const REVIEWED_2026_PATH = path.join(
   ROOT, 'data/examTopics/physics-2026-exam-topic-map.json',
 );
+// Sittings reviewed paper by paper (scripts/markbank/authoring/phys_review_<year>_<level>.py):
+// each question's topics are the reference snapshot's PLUS the reviewed map's
+// (a union, so nothing the snapshot linked is lost), as Biology's builder does.
+const REVIEWED_EARLIER_YEARS = [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010];
+const reviewedMapPath = year => path.join(
+  ROOT, `data/examTopics/physics-${year}-exam-topic-map.json`,
+);
 const REVIEWED_OMISSIONS_PATH = path.join(
   ROOT, 'data/examTopics/physics-reference-omissions-topic-map.json',
 );
@@ -40,7 +47,25 @@ const reference = readJson(REFERENCE_PATH);
 const curriculumCrosswalk = readJson(CURRICULUM_CROSSWALK_PATH);
 const reviewed2026 = readJson(REVIEWED_2026_PATH);
 const reviewedOmissions = readJson(REVIEWED_OMISSIONS_PATH);
+const reviewedEarlier = new Map(REVIEWED_EARLIER_YEARS
+  .filter(year => fs.existsSync(reviewedMapPath(year)))
+  .map(year => [year, readJson(reviewedMapPath(year))]));
+const reviewAudit = readJson(path.join(ROOT, 'scripts/markbank/authored/physics-review-audit.json'));
+const deferredReviews = Object.entries(reviewAudit.sittings)
+  .filter(([, review]) => review.sitting === 'deferred');
+const reviewedDeferred = new Map(deferredReviews.map(([key, review]) => {
+  if (review.status !== 'reviewed' || !/^\d{4}-(?:hl|ol)-deferred$/.test(key)) {
+    throw new Error(`Unreviewed Physics deferred map: ${key}`);
+  }
+  const [year, level] = key.split('-');
+  const map = readJson(path.join(ROOT, `data/examTopics/physics-${year}-deferred-exam-topic-map.json`));
+  if (map.year !== Number(year) || map.sitting !== 'deferred') throw new Error(`Wrong sitting: ${key}`);
+  return [`${level === 'hl' ? 'higher' : 'ordinary'}|${year}`, map];
+}));
 const localPapers = readJson(TAGS_PATH);
+const isDeferred = paper => paper.fileid.endsWith('-deferred.pdf');
+const logicalKeyFor = (level, year, n, sitting = 'main') =>
+  [level, year, n, ...(sitting === 'deferred' ? ['deferred'] : [])].join('|');
 const preservationBaseline = readJson(BASELINE_PATH);
 
 const VARIANTS = [
@@ -107,6 +132,15 @@ validateReviewedMap(
   28,
   'reviewed 2026 Physics map',
 );
+for (const [year, map] of reviewedEarlier) {
+  if (map.year !== year) throw new Error(`Reviewed ${year} Physics map names year ${map.year}`);
+  validateReviewedMap(
+    map.questions,
+    /^(higher|ordinary)\|(?:[1-9]|1[0-4])$/,
+    Object.keys(map.questions).length,
+    `reviewed ${year} Physics map`,
+  );
+}
 validateReviewedMap(
   reviewedOmissions.questions,
   /^(higher|ordinary)\|\d{4}\|(?:[1-9]|1[0-4])$/,
@@ -126,14 +160,20 @@ if (duplicatePaperIds.length) {
     `Duplicate Physics variants: ${[...new Set(duplicatePaperIds)].join(', ')}`,
   );
 }
-if (localPapers.length !== 68) {
-  throw new Error(`Expected 68 Physics variants, found ${localPapers.length}`);
+if (localPapers.length !== 68 + deferredReviews.length) {
+  throw new Error(`Expected ${68 + deferredReviews.length} Physics variants, found ${localPapers.length}`);
 }
 const physicalCards = localPapers.reduce((sum, paper) => sum + paper.q.length, 0);
-if (physicalCards !== 864) {
-  throw new Error(`Expected 864 Physics physical cards, found ${physicalCards}`);
+if (physicalCards !== 864 + 14 * deferredReviews.length) {
+  throw new Error(`Expected ${864 + 14 * deferredReviews.length} Physics physical cards, found ${physicalCards}`);
 }
 for (const paper of localPapers) {
+  if (isDeferred(paper)) {
+    const map = reviewedDeferred.get(`${paper.level}|${paper.year}`);
+    if (!map || paper.lang !== 'ev') throw new Error(`Unreviewed deferred Physics source: ${paperIdentity(paper)}`);
+    validateReviewedMap(map.questions, /^(higher|ordinary)\|(?:[1-9]|1[0-4])$/, 14,
+      `reviewed ${paper.year} deferred Physics map`);
+  }
   const count = paper.year <= 2020 ? 12 : 14;
   const expectedNumbers = Array.from({ length: count }, (_, index) => String(index + 1));
   if (
@@ -208,11 +248,12 @@ const parseHeading = heading => {
   };
 };
 
-const englishPaper = (level, year, number) => {
+const englishPaper = (level, year, number, sitting = 'main') => {
   const candidates = localPapers.filter(paper => (
     paper.level === level
     && paper.lang === 'ev'
     && paper.year === year
+    && isDeferred(paper) === (sitting === 'deferred')
     && paper.q.some(question => question.n === number)
   ));
   if (candidates.length > 1) {
@@ -226,11 +267,11 @@ const exactTopicsByCard = new Map();
 for (const topic of allTopics) {
   for (const heading of topic.officialQuestionHeadings) {
     const parsed = parseHeading(heading);
-    const target = parsed.sitting === 'main'
-      ? englishPaper(topic.level, parsed.year, parsed.questionNumber)
+    const target = parsed.sitting !== 'sample'
+      ? englishPaper(topic.level, parsed.year, parsed.questionNumber, parsed.sitting)
       : null;
     if (target) {
-      const key = [topic.level, parsed.year, parsed.questionNumber].join('|');
+      const key = logicalKeyFor(topic.level, parsed.year, parsed.questionNumber, parsed.sitting);
       const indexes = exactTopicsByCard.get(key) ?? [];
       const index = topicIndex.get(topic.id);
       if (index === undefined) throw new Error(`Unknown Physics topic ${topic.id}`);
@@ -281,14 +322,23 @@ const questionMappings = [];
 const retainedLocalCards = [];
 for (const paper of logicalEnglishPapers) {
   for (const question of paper.q) {
-    const logicalKey = [paper.level, paper.year, question.n].join('|');
+    const sitting = isDeferred(paper) ? 'deferred' : 'main';
+    const logicalKey = logicalKeyFor(paper.level, paper.year, question.n, sitting);
     let indexes = exactTopicsByCard.get(logicalKey);
     let resolution = 'matched';
-    if (!indexes && paper.year === 2026) {
+    if (!indexes && sitting === 'main' && paper.year === 2026) {
       const ids = reviewed2026.questions[`${paper.level}|${question.n}`];
       if (!ids) throw new Error(`Missing reviewed 2026 mapping for ${logicalKey}`);
       indexes = ids.map(id => topicIndex.get(id));
       resolution = 'retained-local-reviewed';
+    }
+    const reviewedIds = (sitting === 'deferred'
+      ? reviewedDeferred.get(`${paper.level}|${paper.year}`)
+      : reviewedEarlier.get(paper.year))?.questions[`${paper.level}|${question.n}`];
+    if (reviewedIds) {
+      // Union: nothing the reference snapshot linked is lost.
+      if (!indexes) resolution = 'retained-local-reviewed';
+      indexes = [...new Set([...(indexes ?? []), ...reviewedIds.map(id => topicIndex.get(id))])];
     }
     if (!indexes) {
       const ids = reviewedOmissions.questions[logicalKey];
@@ -308,6 +358,7 @@ for (const paper of logicalEnglishPapers) {
       paper.year - 2000,
       question.n,
       indexes,
+      ...(sitting === 'deferred' ? ['d'] : []),
     ]);
     if (resolution !== 'matched') {
       retainedLocalCards.push({
@@ -321,7 +372,9 @@ for (const paper of logicalEnglishPapers) {
         resolution,
         reason: paper.year === 2026
           ? 'Official SEC 2026 task retained from direct paper review; it post-dates the factual reference snapshot.'
-          : 'Entitled SEC task omitted from the factual reference snapshot and retained from direct review of the official paper.',
+          : reviewedIds
+            ? `Official SEC ${paper.year} task retained from direct paper review (phys_review_${paper.year}); the factual reference snapshot has no association for this independently selectable question.`
+            : 'Entitled SEC task omitted from the factual reference snapshot and retained from direct review of the official paper.',
       });
     }
   }
@@ -352,10 +405,10 @@ if (
     + `${official}/${mocks}/${providerSamples}`,
   );
 }
-if (questionMappings.length !== 432) {
-  throw new Error(`Expected 432 logical mappings, found ${questionMappings.length}`);
+if (questionMappings.length !== 432 + 14 * deferredReviews.length) {
+  throw new Error(`Expected ${432 + 14 * deferredReviews.length} logical mappings, found ${questionMappings.length}`);
 }
-if (retainedLocalCards.length !== 41) {
+if (retainedLocalCards.filter(paper => !isDeferred(paper)).length !== 41) {
   throw new Error(
     `Expected 41 directly reviewed local mappings, found ${retainedLocalCards.length}`,
   );
@@ -463,7 +516,7 @@ const sourceBlockedAssociations = associations.filter(
   item => item.resolution === 'source-blocked',
 );
 const matchedLogicalCards = new Set(matchedAssociations.map(item => [
-  item.level, item.year, item.questionNumber,
+  item.level, item.year, item.questionNumber, item.sitting,
 ].join('|'))).size;
 const localCrosswalk = {
   schemaVersion: 1,

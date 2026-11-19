@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-31",
+  "subjectId": "physics",
+  "scope": "2019 Higher Level, main English sitting. Continuation after the reviewed 2020–2026 main sittings; not a whole-subject completion claim.",
+  "wholeSubjectComplete": false,
+  "irishEditions": "Deferred by Alex.",
+  "baseCommit": "a59fafc7a",
+  "reviewedSitting": {
+    "status": "reviewed",
+    "reviewedAt": "2026-10-31",
+    "ledger": "scripts/markbank/authoring/phys_review_2019_hl.py",
+    "method": "Physics 2019 Higher — source-reviewed task ledger.",
+    "sources": {
+      "paper": {
+        "path": "examiner-reports/physics/papers/2019-hl-paper.pdf",
+        "fileid": "LC021ALP000EV.pdf",
+        "sha256": "8c3dc1203ad17cc96558b9911695a8c921656745c1fdf0cb27828a7d0a90295f",
+        "bytes": 2414473,
+        "pages": 12,
+        "pageRoles": {
+          "1": "cover",
+          "2": "questions",
+          "3": "questions",
+          "4": "questions",
+          "5": "questions",
+          "6": "questions",
+          "7": "questions",
+          "8": "questions",
+          "9": "questions",
+          "10": "questions",
+          "11": "questions",
+          "12": "back-cover"
+        },
+        "pagesLifted": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "scheme": {
+        "path": "examiner-reports/physics/schemes/2019-hl.pdf",
+        "fileid": "LC021ALP000EV.pdf",
+        "sha256": "9f966f25ff366a276b7281bfda2b2e93231fb7a6d1abc9a831c26715355bf0b3",
+        "bytes": 398448,
+        "pages": 24,
+        "pageRoles": {
+          "1": "cover",
+          "2": "note",
+          "3": "conventions",
+          "4": "annotations",
+          "5": "irish-language-bonus-instructions",
+          "6": "marking",
+          "7": "marking",
+          "8": "marking",
+          "9": "marking",
+          "10": "marking",
+          "11": "marking",
+          "12": "marking",
+          "13": "marking",
+          "14": "marking",
+          "15": "marking",
+          "16": "marking",
+          "17": "marking",
+          "18": "marking",
+          "19": "marking",
+          "20": "marking",
+          "21": "blank",
+          "22": "blank",
+          "23": "blank",
+          "24": "back-cover"
+        },
+        "pagesLifted": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    "visualSweep": {
+      "paper": "all 12 pages rendered and read",
+      "scheme": "all 24 pages rendered and read"
+    }
+  },
+  "runtimeCards": {
+    "higher": 1008,
+    "ordinary": 872,
+    "total": 1880,
+    "added": 112
+  },
+  "figuresAdded": 14,
+  "coverage": {
+    "subject": "physics",
+    "mode": "merged",
+    "cards": 1880,
+    "leaves": 1717,
+    "covered": 1717,
+    "excluded": 0,
+    "open": 0,
+    "coveragePct": 100.0,
+    "orphans": [],
+    "unparsed": [],
+    "staleExclusions": [],
+    "papers": [
+      {
+        "year": 2019,
+        "level": "hl",
+        "paper": null,
+        "leaves": 42,
+        "covered": 42,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2020,
+        "level": "hl",
+        "paper": null,
+        "leaves": 106,
+        "covered": 106,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2020,
+        "level": "ol",
+        "paper": null,
+        "leaves": 109,
+        "covered": 109,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2021,
+        "level": "hl",
+        "paper": null,
+        "leaves": 121,
+        "covered": 121,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2021,
+        "level": "ol",
+        "paper": null,
+        "leaves": 130,
+        "covered": 130,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2022,
+        "level": "hl",
+        "paper": "Section B (224 marks)",
+        "leaves": 118,
+        "covered": 118,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2022,
+        "level": "ol",
+        "paper": "Section B (224 marks)",
+        "leaves": 125,
+        "covered": 125,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2023,
+        "level": "hl",
+        "paper": null,
+        "leaves": 114,
+        "covered": 114,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2023,
+        "level": "ol",
+        "paper": null,
+        "leaves": 119,
+        "covered": 119,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2024,
+        "level": "hl",
+        "paper": null,
+        "leaves": 125,
+        "covered": 125,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2024,
+        "level": "ol",
+        "paper": null,
+        "leaves": 125,
+        "covered": 125,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2025,
+        "level": "hl",
+        "paper": null,
+        "leaves": 125,
+        "covered": 125,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2025,
+        "level": "ol",
+        "paper": null,
+        "leaves": 131,
+        "covered": 131,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2026,
+        "level": "hl",
+        "paper": null,
+        "leaves": 107,
+        "covered": 107,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2026,
+        "level": "ol",
+        "paper": null,
+        "leaves": 120,
+        "covered": 120,
+        "excluded": 0,
+        "open": []
+      }
+    ],
+    "censusFlags": 0,
+    "unreadPapers": []
+  },
+  "preservation": {
+    "previousAuthoredCardsUnchanged": 1779,
+    "previousHigherRuntimeBlocksUnchanged": 896,
+    "ordinaryRuntimeByteIdentical": true,
+    "previousFigureManifestEntriesUnchanged": 236,
+    "previousReviewAuditRecordsUnchanged": true,
+    "otherSubjectDecksAndAuthoredFilesUnchanged": true,
+    "otherSubjectCoverageAndSizeRecordsUnchanged": true
+  },
+  "validation": {
+    "targetedJavascriptTestsPassed": 446,
+    "targetedJavascriptTestsFailed": 0,
+    "mathsParserRegressionTestsPassed": 27,
+    "previousPhysicsSourceGeneratorChecksPassed": 14,
+    "newSourceGeneratorReproduces": true,
+    "applicationTypecheck": "passed",
+    "productionBuild": "passed; existing large-chunk warning",
+    "atlas": "All 112 new cards appear under their canonical curriculum topics and exact source questions, including reverse topic feeds. Corrected old 2019 Higher tags during visual review.",
+    "browserInteraction": "Pending: CUA native bridge unavailable; no browser pass claimed."
+  },
+  "indexedEnglishScope": {
+    "booklets": 36,
+    "reviewedBooklets": 15,
+    "unreviewedBooklets": 21,
+    "note": "Current local catalogue only. Check SEC for further English deferred sittings before claiming complete."
+  },
+  "remaining": [
+    "2019 Ordinary, then 2018–2010 both levels, main English sittings.",
+    "Indexed 2022 and 2023 Higher deferred sittings, plus any further English deferred papers found in SEC inventory.",
+    "Browser interaction review when CUA is available."
+  ],
+  "nextSitting": "2019-ol",
+  "auditRecord": "scripts/markbank/authored/physics-review-audit.json#sittings.2019-hl"
+}

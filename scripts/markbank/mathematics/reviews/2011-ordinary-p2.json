@@ -1,0 +1,2903 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2011,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "ea6d881eaa63e040a8d6091e0415147a488468363738af0fe92ce5eb73aacdc0",
+  "schemeSha256": "0550df820b59db17845b1b21c0e7700ee8d435d76d18fef4cb916dcd07137b56",
+  "reviewedAt": "2026-10-30",
+  "reviewMethod": "Independent visual inspection of all twelve original paper pages and scheme pages 45–104, all eleven questions, every published marking allocation, restricted award list, alternative solution and relevant note. All 74 question and 74 solution presentations inspected.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "schemePagesInspected": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104
+  ],
+  "printedQuestionMarks": {
+    "1": 50,
+    "2": 50,
+    "3": 50,
+    "4": 50,
+    "5": 50,
+    "6": 50,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50,
+    "11": 50
+  },
+  "fullCreditMinusOne": false,
+  "generalNotesPages": [
+    47,
+    48
+  ],
+  "sourceNotes": [
+    "Attempt FIVE questions from Section A and ONE question from Section B is whole-examination selection: keep all eleven questions without duplicating exam-length bundles.",
+    "All requested roots, points, terms, table cells, inequalities and vector expressions are required. Counting arrangements is a mathematical task, not a choice of a question to answer.",
+    "Q4(b) any two sides is a universally quantified triangle theorem, not a finite answer pool. Prove the general result once.",
+    "Mathematical errors/omissions lose 3; numerical slips and permitted misreadings lose 1.",
+    "Relevant work earns at least the specified attempt award; worthless work earns 0. No marks strictly between zero and the attempt floor.",
+    "Accept the best of multiple attempts unless specified otherwise; penalise the same error in one section once. Retain task-specific follow-through and caps.",
+    "Published step awards remain separate score controls within a linked task. Alternative methods do not create extra cards or add marks.",
+    "Where the detailed scheme says award the following marks only, expose exactly those scores. Eight Q6 counting/probability tasks are all-or-nothing.",
+    "Original diagrams, alternative methods and every relevant note remain in the solution presentation. General Q2/Q3 formula guidance on page 54 is retained for all coordinate tasks.",
+    "Q2(b)(ii): the explicit permitted list 0/4/5 conflicts with a shared Att 2 note for a bare correct answer. Retain both original passages, disclose the conflict, and use the explicit restricted list.",
+    "74 printed tasks across eleven questions, each worth 50 marks. All 550 offered marks retained; a candidate answers 300.",
+    "Q1(b)(i) has substitution/calculation controls; Q3(b)(iii) has forming/solving controls. Q9(a) plots both points on one diagram with two five-mark controls. Q11(a) defines one region with three inequality controls. Q11(b)(i) has two inequality controls and a graph control; Q11(b)(ii) has intersection and income controls.",
+    "Table completion, both required roots and paired parameters remain linked tasks; no separately selectable printed pool is present."
+  ],
+  "cards": [
+    {
+      "id": "maths-2011-ol-p2-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Rectangle area",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Calculate the area of the rectangle.",
+      "stem": "The original diagram shows a 14 cm by 8 cm rectangle with an unshaded right triangle of height 5 cm and base 14 − 10 cm."
+    },
+    {
+      "id": "maths-2011-ol-p2-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Shaded area",
+              "maximum": 5,
+              "attempt": 4,
+              "permittedMarks": [
+                0,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Hence calculate the area of the shaded region.",
+      "stem": "The original diagram shows a 14 cm by 8 cm rectangle with an unshaded right triangle of height 5 cm and base 14 − 10 cm.",
+      "markingNote": "This task permits only 0, 4 or 5 marks; no separate attempt award. Accept a result consistent with the candidate’s rectangle area. A missing/incorrect unit is penalised only where the answer otherwise earns full marks."
+    },
+    {
+      "id": "maths-2011-ol-p2-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 15,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Formula substitution",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                10
+              ]
+            },
+            {
+              "id": "step-2",
+              "label": "Calculation",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        50,
+        51
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Use Simpson’s rule to estimate the area of the wall section.",
+      "stem": "The original sketch gives seven perpendicular heights 0, 0.6, 1.8, 2.7, 2.2, 2.4 and 2.0 metres at equal intervals of 1.2 metres.",
+      "markingNote": "The detailed scheme allows only 0/3/10 for substitution and 0/2/4/5 for calculation. Correct answer without substitution earns 3 + 2; correct substituted work with a consistent answer can earn full calculation marks."
+    },
+    {
+      "id": "maths-2011-ol-p2-q1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Paint required",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "How many litres of paint are needed if one litre covers 2.2 m²? Round to the nearest litre.",
+      "stem": "The original sketch gives seven perpendicular heights 0, 0.6, 1.8, 2.7, 2.2, 2.4 and 2.0 metres at equal intervals of 1.2 metres. First estimate the wall area using Simpson’s rule."
+    },
+    {
+      "id": "maths-2011-ol-p2-q1-c-i",
+      "printedParts": [
+        "Q1(c)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Hemisphere radius",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                4,
+                7,
+                9,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        52,
+        53
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Find the radius of each hemisphere.",
+      "stem": "A cylinder has hemispherical ends of the same radius. Each hemisphere has volume 144π cm³.",
+      "markingNote": "Only 0, 3, 4, 7, 9 or 10 marks are permitted. Penalise missing or incorrect units only if the answer otherwise earns full marks."
+    },
+    {
+      "id": "maths-2011-ol-p2-q1-c-ii",
+      "printedParts": [
+        "Q1(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Full object length",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                4,
+                7,
+                9,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        52,
+        53
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        2
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "The total volume is 720π cm³. Find d, the full length of the object.",
+      "stem": "A cylinder has hemispherical ends of the same radius. Each hemisphere has volume 144π cm³.",
+      "markingNote": "Only 0, 3, 4, 7, 9 or 10 marks are permitted. Follow through the candidate’s radius for the full length. Penalise units only if otherwise fully correct."
+    },
+    {
+      "id": "maths-2011-ol-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Point verification",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Verify that (2, −4) lies on 3x − y = 10."
+    },
+    {
+      "id": "maths-2011-ol-p2-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Slope of PR",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        55,
+        56
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Find the slope of PR.",
+      "stem": "P(2, 8), Q(4, −1) and R(6, 0).",
+      "markingNote": "Only 0, 2, 4 or 5 marks are allowed. A correct answer without work earns two attempt marks."
+    },
+    {
+      "id": "maths-2011-ol-p2-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Perpendicularity proof",
+              "maximum": 5,
+              "attempt": 4,
+              "permittedMarks": [
+                0,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        55,
+        56
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Show that PR is perpendicular to RQ.",
+      "stem": "P(2, 8), Q(4, −1) and R(6, 0).",
+      "markingNote": "The explicit restricted award list permits only 0, 4 or 5 marks. Use your earlier slope consistently. See the source clarification for the conflict with the shared attempt note."
+    },
+    {
+      "id": "maths-2011-ol-p2-q2-b-iii",
+      "printedParts": [
+        "Q2(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Line equation",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        55,
+        56
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Find the equation of RQ.",
+      "stem": "P(2, 8), Q(4, −1) and R(6, 0).",
+      "markingNote": "Only 0, 2, 4 or 5 marks are allowed. Use your slope from (ii) consistently. A correct answer without work earns two attempt marks."
+    },
+    {
+      "id": "maths-2011-ol-p2-q2-b-iv",
+      "printedParts": [
+        "Q2(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Y-intercept",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        55,
+        56
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Find the point where RQ meets the y-axis.",
+      "stem": "P(2, 8), Q(4, −1) and R(6, 0).",
+      "markingNote": "Only 0, 2, 4 or 5 marks are allowed. Follow through your earlier line equation consistently. A correct answer without work earns two attempt marks."
+    },
+    {
+      "id": "maths-2011-ol-p2-q2-c-i",
+      "printedParts": [
+        "Q2(c)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Triangle area",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        57
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Find the area of triangle ABC.",
+      "stem": "A(−1, −6), B(6, 8) and C(2, 5)."
+    },
+    {
+      "id": "maths-2011-ol-p2-q2-c-ii",
+      "printedParts": [
+        "Q2(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Both points D",
+              "maximum": 10,
+              "attempt": 7,
+              "permittedMarks": [
+                0,
+                7,
+                9,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        57,
+        58
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Find both possible points D on the x-axis for which triangle ABD has the same area as triangle ABC.",
+      "stem": "A(−1, −6), B(6, 8) and C(2, 5).",
+      "markingNote": "Both points are required for full marks. Only 0, 7, 9 or 10 marks are allowed; finding one point or other work of merit earns seven."
+    },
+    {
+      "id": "maths-2011-ol-p2-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Circle centre",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        59
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "questionText": "Write down the circle’s centre.",
+      "stem": "x² + y² = 81."
+    },
+    {
+      "id": "maths-2011-ol-p2-q3-a-ii",
+      "printedParts": [
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Circle radius",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        59
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "questionText": "Find the circle’s radius.",
+      "stem": "x² + y² = 81."
+    },
+    {
+      "id": "maths-2011-ol-p2-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Point verification",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        59,
+        60
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "questionText": "Verify that (7, −2) is on c.",
+      "stem": "The circle c is (x − 3)² + (y + 1)² = 17."
+    },
+    {
+      "id": "maths-2011-ol-p2-q3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Circle diagram",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        60
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "questionText": "Mark the centre of c and draw c on a coordinate diagram.",
+      "stem": "The circle c is (x − 3)² + (y + 1)² = 17.",
+      "markingNote": "A reasonable freehand circle is accepted with its correct centre marked, extending into every quadrant and through (7, −2)."
+    },
+    {
+      "id": "maths-2011-ol-p2-q3-b-iii",
+      "printedParts": [
+        "Q3(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Form the quadratic",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Solve the quadratic",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        61
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "questionText": "Use algebra to find both points where c meets the x-axis.",
+      "stem": "The circle c is (x − 3)² + (y + 1)² = 17.",
+      "markingNote": "With no equation, the solving step earns zero, except that a graphical solution or correct answer without work earns 2 + 2 attempt marks."
+    },
+    {
+      "id": "maths-2011-ol-p2-q3-c-i",
+      "printedParts": [
+        "Q3(c)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Centre of s",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        62,
+        63
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "questionText": "Find the centre of s.",
+      "stem": "A(−1, 2), B(−3, −4), C(3, −6) and D(5, 0) form a square whose sides are tangent to circle s.",
+      "markingNote": "Any error beyond an obvious slip earns at most two. Correct answer without work earns two."
+    },
+    {
+      "id": "maths-2011-ol-p2-q3-c-ii",
+      "printedParts": [
+        "Q3(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Equation of s",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        63,
+        64
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "questionText": "Find the equation of s.",
+      "stem": "A(−1, 2), B(−3, −4), C(3, −6) and D(5, 0) form a square whose sides are tangent to circle s.",
+      "markingNote": "Use your centre from (i) consistently. The scheme accepts several radius methods, including perpendicular distance from the centre to a side."
+    },
+    {
+      "id": "maths-2011-ol-p2-q3-c-iii",
+      "printedParts": [
+        "Q3(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Translation parameters",
+              "maximum": 10,
+              "attempt": 7,
+              "permittedMarks": [
+                0,
+                7,
+                9,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        54,
+        62,
+        64
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "questionText": "The image of s under the translation (p, q) → (6, 5) is (x + 4)² + y² = 10. Find p and q.",
+      "stem": "A(−1, 2), B(−3, −4), C(3, −6) and D(5, 0) form a square whose sides are tangent to circle s.",
+      "markingNote": "Only 0/7/9/10 are allowed. Follow through earlier work; both parameters are required."
+    },
+    {
+      "id": "maths-2011-ol-p2-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Angle x",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        65
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "Find angle x.",
+      "stem": "The original diagram has a line through A parallel to BC, ∠ABC = 42° and ∠BAC = 76°."
+    },
+    {
+      "id": "maths-2011-ol-p2-q4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Angle y",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        65
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "Find angle y.",
+      "stem": "The original diagram has a line through A parallel to BC, ∠ABC = 42° and ∠BAC = 76°."
+    },
+    {
+      "id": "maths-2011-ol-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 20,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Triangle inequality proof",
+              "maximum": 20,
+              "attempt": 7
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        66
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "questionText": "Prove that the sum of any two sides of a triangle is greater than the third side.",
+      "markingNote": "Relevant proof work earns at least seven. A correct diagram with the relevant angles and sides indicated earns ten. Proof without a diagram is capped at seven as specified by the source."
+    },
+    {
+      "id": "maths-2011-ol-p2-q4-c-i",
+      "printedParts": [
+        "Q4(c)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Enlargement i",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        67
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "Find the enlargement scale factor.",
+      "stem": "Triangle ORS is the enlargement of OPQ with centre O; OQ = 6, QS = 9 and RS = 6. The original diagram shows the corresponding vertices.",
+      "markingNote": "Use the original shared diagram and follow through the earlier scale factor/area as the detailed scheme permits. Correct answers without work are accepted for (i) and (iv); (ii) and (iii) without work earn at most two."
+    },
+    {
+      "id": "maths-2011-ol-p2-q4-c-ii",
+      "printedParts": [
+        "Q4(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Enlargement ii",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        67
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "Find PQ.",
+      "stem": "Triangle ORS is the enlargement of OPQ with centre O; OQ = 6, QS = 9 and RS = 6. The original diagram shows the corresponding vertices.",
+      "markingNote": "Use the original shared diagram and follow through the earlier scale factor/area as the detailed scheme permits. Correct answers without work are accepted for (i) and (iv); (ii) and (iii) without work earn at most two."
+    },
+    {
+      "id": "maths-2011-ol-p2-q4-c-iii",
+      "printedParts": [
+        "Q4(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Enlargement iii",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        68
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "The area of OPQ is 7.2 square units. Find the area of ORS.",
+      "stem": "Triangle ORS is the enlargement of OPQ with centre O; OQ = 6, QS = 9 and RS = 6. The original diagram shows the corresponding vertices.",
+      "markingNote": "Use the original shared diagram and follow through the earlier scale factor/area as the detailed scheme permits. Correct answers without work are accepted for (i) and (iv); (ii) and (iii) without work earn at most two."
+    },
+    {
+      "id": "maths-2011-ol-p2-q4-c-iv",
+      "printedParts": [
+        "Q4(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Enlargement iv",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        68
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "Find the area of quadrilateral PRSQ.",
+      "stem": "Triangle ORS is the enlargement of OPQ with centre O; OQ = 6, QS = 9 and RS = 6. The original diagram shows the corresponding vertices. The area of OPQ is 7.2 square units.",
+      "markingNote": "Use the original shared diagram and follow through the earlier scale factor/area as the detailed scheme permits. Correct answers without work are accepted for (i) and (iv); (ii) and (iii) without work earn at most two."
+    },
+    {
+      "id": "maths-2011-ol-p2-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Sine-rule length",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        69
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "questionText": "Use the sine rule to calculate x in the original triangle. Round to the nearest integer.",
+      "stem": "The side of length 8 is opposite 30°; x is opposite 50°.",
+      "markingNote": "A correct calculation without using the sine rule earns seven; a bare correct answer earns three."
+    },
+    {
+      "id": "maths-2011-ol-p2-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Hypotenuse AC",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        70
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "questionText": "Find AC.",
+      "stem": "Triangle ABC has BC = 6 cm, ∠ABC = 90°, ∠CAB = θ and sin θ = 3/5.",
+      "markingNote": "A correct answer without work is accepted. Units are required if the answer otherwise earns full marks."
+    },
+    {
+      "id": "maths-2011-ol-p2-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Side AB",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        71
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "questionText": "Find AB.",
+      "stem": "Triangle ABC has BC = 6 cm, ∠ABC = 90°, ∠CAB = θ and sin θ = 3/5.",
+      "markingNote": "Use your answer from (i) consistently. A correct answer without work is accepted; units are required if otherwise fully correct."
+    },
+    {
+      "id": "maths-2011-ol-p2-q5-b-iii",
+      "printedParts": [
+        "Q5(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Trigonometric identity",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        72
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "questionText": "Verify cos² θ + sin² θ = 1.",
+      "stem": "Triangle ABC has BC = 6 cm, ∠ABC = 90°, ∠CAB = θ and sin θ = 3/5.",
+      "markingNote": "Use your earlier side lengths consistently. A correct answer without work earns at most two; state the conclusion of the verification."
+    },
+    {
+      "id": "maths-2011-ol-p2-q5-c-i",
+      "printedParts": [
+        "Q5(c)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Angle QRS",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        73
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "questionText": "Find ∠QRS to the nearest degree, given 0° ≤ ∠QRS ≤ 90°.",
+      "stem": "PQRS has diagonal SQ; RS = 62, SQ = 35, ∠SQR = 82°, ∠SPQ = 60°, SP = 3x and PQ = 8x.",
+      "markingNote": "Incorrectly working with two triangles earns at most three; a bare correct answer also earns three."
+    },
+    {
+      "id": "maths-2011-ol-p2-q5-c-ii",
+      "printedParts": [
+        "Q5(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Value of x",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        73,
+        74
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "questionText": "Find the value of x.",
+      "stem": "PQRS has diagonal SQ; RS = 62, SQ = 35, ∠SQR = 82°, ∠SPQ = 60°, SP = 3x and PQ = 8x."
+    },
+    {
+      "id": "maths-2011-ol-p2-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Factorial i",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        75
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "questionText": "Find 4!.",
+      "markingNote": "Accept correct answers without work. Penalise treating factorials as combinations only once across part (a)."
+    },
+    {
+      "id": "maths-2011-ol-p2-q6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Factorial ii",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        75
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "questionText": "Simplify 6(5!)/(5(4!)).",
+      "markingNote": "Accept correct answers without work. Penalise treating factorials as combinations only once across part (a)."
+    },
+    {
+      "id": "maths-2011-ol-p2-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Arrangement count",
+              "maximum": 5,
+              "attempt": 0
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        76
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "questionText": "How many arrangements are possible if there are no restrictions?",
+      "stem": "Arrange all six letters of FERMAT once each.",
+      "markingNote": "Hit or miss: five marks for a fully correct answer, otherwise zero, even if consistent with an earlier answer."
+    },
+    {
+      "id": "maths-2011-ol-p2-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Arrangement count",
+              "maximum": 5,
+              "attempt": 0
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        76
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "questionText": "How many arrangements are possible if the arrangement begins with F?",
+      "stem": "Arrange all six letters of FERMAT once each.",
+      "markingNote": "Hit or miss: five marks for a fully correct answer, otherwise zero, even if consistent with an earlier answer."
+    },
+    {
+      "id": "maths-2011-ol-p2-q6-b-iii",
+      "printedParts": [
+        "Q6(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Arrangement count",
+              "maximum": 5,
+              "attempt": 0
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        76
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "questionText": "How many arrangements are possible if the arrangement begins with F and ends with a vowel?",
+      "stem": "Arrange all six letters of FERMAT once each.",
+      "markingNote": "Hit or miss: five marks for a fully correct answer, otherwise zero, even if consistent with an earlier answer."
+    },
+    {
+      "id": "maths-2011-ol-p2-q6-b-iv",
+      "printedParts": [
+        "Q6(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Arrangement count",
+              "maximum": 5,
+              "attempt": 0
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        76
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "questionText": "How many arrangements are possible if the two vowels are together?",
+      "stem": "Arrange all six letters of FERMAT once each.",
+      "markingNote": "Hit or miss: five marks for a fully correct answer, otherwise zero, even if consistent with an earlier answer."
+    },
+    {
+      "id": "maths-2011-ol-p2-q6-c-i",
+      "printedParts": [
+        "Q6(c)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Probability",
+              "maximum": 5,
+              "attempt": 0
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        77
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "questionText": "A student is chosen at random. Find the probability that the student is a boy.",
+      "stem": "School travel table: boys walk 157, cycle 123, other 166; girls walk 184, cycle 91, other 172.",
+      "markingNote": "Hit or miss: five marks for a fully correct probability, otherwise zero, even if consistent."
+    },
+    {
+      "id": "maths-2011-ol-p2-q6-c-ii",
+      "printedParts": [
+        "Q6(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Probability",
+              "maximum": 5,
+              "attempt": 0
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        77
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "questionText": "A student is chosen at random. Find the probability that the student walks.",
+      "stem": "School travel table: boys walk 157, cycle 123, other 166; girls walk 184, cycle 91, other 172.",
+      "markingNote": "Hit or miss: five marks for a fully correct probability, otherwise zero, even if consistent."
+    },
+    {
+      "id": "maths-2011-ol-p2-q6-c-iii",
+      "printedParts": [
+        "Q6(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Probability",
+              "maximum": 5,
+              "attempt": 0
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        77
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "questionText": "A boy is chosen at random. Find the probability that he cycles.",
+      "stem": "School travel table: boys walk 157, cycle 123, other 166; girls walk 184, cycle 91, other 172.",
+      "markingNote": "Hit or miss: five marks for a fully correct probability, otherwise zero, even if consistent."
+    },
+    {
+      "id": "maths-2011-ol-p2-q6-c-iv",
+      "printedParts": [
+        "Q6(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Probability",
+              "maximum": 5,
+              "attempt": 0
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        77
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "questionText": "A girl is chosen at random. Find the probability that she does not walk.",
+      "stem": "School travel table: boys walk 157, cycle 123, other 166; girls walk 184, cycle 91, other 172.",
+      "markingNote": "Hit or miss: five marks for a fully correct probability, otherwise zero, even if consistent."
+    },
+    {
+      "id": "maths-2011-ol-p2-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Mean",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        78
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "Calculate the mean of 8, 6, 1, 3, 7, 8, 2."
+    },
+    {
+      "id": "maths-2011-ol-p2-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Cumulative frequency i",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        79
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "Complete the cumulative frequency table.",
+      "stem": "The original school-entry table gives six successive 20-minute intervals from 18:00 to 20:00, with frequencies 35, 55, 190, 140, 110 and 70. Intervals include their starting time and exclude their ending time.",
+      "markingNote": "All six cells are one five-mark task."
+    },
+    {
+      "id": "maths-2011-ol-p2-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Cumulative frequency ii",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        79,
+        80
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "Draw the cumulative frequency curve (ogive).",
+      "stem": "The original school-entry table gives six successive 20-minute intervals from 18:00 to 20:00, with frequencies 35, 55, 190, 140, 110 and 70. Intervals include their starting time and exclude their ending time.",
+      "markingNote": "The original table alone plotted earns at most three. Points and joins have separate one-mark deductions; one omitted point may incur both."
+    },
+    {
+      "id": "maths-2011-ol-p2-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Cumulative frequency iii",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        79,
+        80
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "Use your curve to estimate the interquartile range.",
+      "stem": "The original school-entry table gives six successive 20-minute intervals from 18:00 to 20:00, with frequencies 35, 55, 190, 140, 110 and 70. Intervals include their starting time and exclude their ending time.",
+      "markingNote": "Carry forward the candidate’s cumulative frequencies and curve. The IQR tolerance is ±4 minutes or ±10 on the vertical reading, as the scheme specifies."
+    },
+    {
+      "id": "maths-2011-ol-p2-q7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Frequency table",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        81
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "Complete the frequency table from the histogram.",
+      "stem": "The original histogram uses unequal class widths 20–30, 30–40, 40–60, 60–90 and 90–100. The first class contains four candidates."
+    },
+    {
+      "id": "maths-2011-ol-p2-q7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Standard deviation",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                4,
+                7,
+                9,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        82,
+        83
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "The mean mark is 60. Use the completed table’s mid-interval values to find the standard deviation, to the nearest integer.",
+      "stem": "The original histogram uses unequal class widths 20–30, 30–40, 40–60, 60–90 and 90–100. The first class contains four candidates.",
+      "markingNote": "Only 0/3/4/7/9/10 are allowed. Follow through frequencies; correct calculator answers without work are accepted. Apply the printed sample-standard-deviation slip, and the oversimplification cap of three."
+    },
+    {
+      "id": "maths-2011-ol-p2-q7-c-iii",
+      "printedParts": [
+        "Q7(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Maximum candidate count",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        83
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "Find the greatest possible number of candidates whose marks were within one standard deviation of the mean.",
+      "stem": "The original histogram uses unequal class widths 20–30, 30–40, 40–60, 60–90 and 90–100. The first class contains four candidates. The mean is 60; first calculate the standard deviation from the completed grouped table.",
+      "markingNote": "Carry forward the candidate’s frequencies and standard deviation. If no standard deviation was found, this task earns zero; a bare correct/consistent answer earns at most two."
+    },
+    {
+      "id": "maths-2011-ol-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Angle x",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        84
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "Find the value of x.",
+      "stem": "P, Q, R and S lie on a circle with centre O and ∠SPQ = 65°. The original diagram labels central angle x and angle y at R."
+    },
+    {
+      "id": "maths-2011-ol-p2-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Angle y",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        84
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "Find the value of y.",
+      "stem": "P, Q, R and S lie on a circle with centre O and ∠SPQ = 65°. The original diagram labels central angle x and angle y at R."
+    },
+    {
+      "id": "maths-2011-ol-p2-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 20,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Intersecting chords proof",
+              "maximum": 20,
+              "attempt": 7
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        85
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "questionText": "Prove that AK × KB = CK × KD when chords AB and CD meet at K inside a circle.",
+      "markingNote": "A complete relevant proof without a diagram is capped at seven. A correct diagram with all relevant angles earns fourteen."
+    },
+    {
+      "id": "maths-2011-ol-p2-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Length RP",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        86
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "Calculate RP.",
+      "stem": "QS is tangent to circle c, RS is a diameter, and QR cuts the circle at P. QP = 8 and QS = 4√5."
+    },
+    {
+      "id": "maths-2011-ol-p2-q8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Diameter RS",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        86
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "Hence calculate RS in the form a√b, where a and b are natural numbers and a > 1.",
+      "stem": "QS is tangent to circle c, RS is a diameter, and QR cuts the circle at P. QP = 8 and QS = 4√5.",
+      "markingNote": "Use your result from (i) consistently. Give the length in the required surd form."
+    },
+    {
+      "id": "maths-2011-ol-p2-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Point M",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Point N",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        87
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Plot M and N on one coordinate diagram.",
+      "stem": "OM = 3i − 4j and ON = i + 2j; O is the origin.",
+      "markingNote": "Plot both points on the same coordinate diagram. Each point is worth five marks. Apply the shared axis, label and scale penalties as specified in the notes."
+    },
+    {
+      "id": "maths-2011-ol-p2-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Vector i",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        88
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Express 2OP − OQ in terms of i and j.",
+      "stem": "OP = 5i + 3j and OQ = −4i + j, with O the origin.",
+      "markingNote": "A correct answer without work earns two attempt marks. Combine the i and j components separately."
+    },
+    {
+      "id": "maths-2011-ol-p2-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Vector ii",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        88
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Express PQ in terms of i and j.",
+      "stem": "OP = 5i + 3j and OQ = −4i + j, with O the origin.",
+      "markingNote": "A correct answer without work earns two attempt marks. Preserve the direction from P to Q."
+    },
+    {
+      "id": "maths-2011-ol-p2-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Vector iii",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        89
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Find real k and t such that kOP + tOQ = 6i + 7j.",
+      "stem": "OP = 5i + 3j and OQ = −4i + j, with O the origin.",
+      "markingNote": "Both k and t are required. Finding only one is a three-mark deduction; a correct answer without work earns three attempt marks."
+    },
+    {
+      "id": "maths-2011-ol-p2-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Vector expression",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        89,
+        90
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Express OB in terms of OA and OC.",
+      "stem": "OABC is a parallelogram. X is on CB with CX : XB = 2 : 1, and Y is the midpoint of AB. Use vectors OA and OC.",
+      "markingNote": "Only 0/2/4/5 are allowed. A correct answer without work earns five. An incorrect answer in terms of OA and OC with one correct term may earn two, subject to the original direction rules."
+    },
+    {
+      "id": "maths-2011-ol-p2-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Vector expression",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        89,
+        90
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Express OX in terms of OA and OC.",
+      "stem": "OABC is a parallelogram. X is on CB with CX : XB = 2 : 1, and Y is the midpoint of AB. Use vectors OA and OC.",
+      "markingNote": "Only 0/2/4/5 are allowed. A correct answer without work earns five. An incorrect answer in terms of OA and OC with one correct term may earn two, subject to the original direction rules."
+    },
+    {
+      "id": "maths-2011-ol-p2-q9-c-iii",
+      "printedParts": [
+        "Q9(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Vector expression",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        89,
+        90
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Express OY in terms of OA and OC.",
+      "stem": "OABC is a parallelogram. X is on CB with CX : XB = 2 : 1, and Y is the midpoint of AB. Use vectors OA and OC.",
+      "markingNote": "Only 0/2/4/5 are allowed. A correct answer without work earns five. An incorrect answer in terms of OA and OC with one correct term may earn two, subject to the original direction rules."
+    },
+    {
+      "id": "maths-2011-ol-p2-q9-c-iv",
+      "printedParts": [
+        "Q9(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Vector expression",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        90
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Express XY in terms of OA and OC.",
+      "stem": "OABC is a parallelogram. X is on CB with CX : XB = 2 : 1, and Y is the midpoint of AB. Use vectors OA and OC.",
+      "markingNote": "Only 0/2/4/5 are allowed. A correct answer without work earns five. An incorrect answer in terms of OA and OC with one correct term may earn two, subject to the original direction rules."
+    },
+    {
+      "id": "maths-2011-ol-p2-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Binomial i",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        91
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "questionText": "Write the first three terms of (1 + x)⁴ in ascending powers of x.",
+      "markingNote": "Give all three requested terms. Extra terms are ignored; long multiplication or Pascal’s triangle is accepted."
+    },
+    {
+      "id": "maths-2011-ol-p2-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Binomial ii",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        92
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "questionText": "Find the third term when x = 0.2.",
+      "markingNote": "Use your third term from (i) consistently, provided it does not oversimplify the question. A correct or consistent answer without work is accepted."
+    },
+    {
+      "id": "maths-2011-ol-p2-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Sum to infinity",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        92
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "questionText": "Find S, the sum to infinity of the geometric series 1 + 1/2 + 1/4 + 1/8 + ….",
+      "stem": "The geometric series is 1 + 1/2 + 1/4 + 1/8 + …, with sum to infinity S."
+    },
+    {
+      "id": "maths-2011-ol-p2-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "First term",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        93
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "questionText": "Another geometric series also has sum S and common ratio 0.4. Find its first term.",
+      "stem": "The geometric series is 1 + 1/2 + 1/4 + 1/8 + …, with sum to infinity S."
+    },
+    {
+      "id": "maths-2011-ol-p2-q10-c-i",
+      "printedParts": [
+        "Q10(c)(i)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Depreciated value",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        94
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "Equipment costing €15,000 depreciates by 12% per year. Find its value after seven years, to the nearest euro."
+    },
+    {
+      "id": "maths-2011-ol-p2-q10-c-ii",
+      "printedParts": [
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Total equipment value",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        95
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "A company buys €15,000 of equipment at the start of each of seven consecutive years. It depreciates by 12% per year. Use the geometric-series sum formula to find its total value at the end of the seven years, to the nearest euro.",
+      "markingNote": "The question requires the geometric-series sum formula. A correct answer obtained only by yearly calculations earns at most three attempt marks."
+    },
+    {
+      "id": "maths-2011-ol-p2-q11-a",
+      "printedParts": [
+        "Q11(a)"
+      ],
+      "totalMarks": 15,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Line l inequality",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            },
+            {
+              "id": "step-2",
+              "label": "Line h inequality",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            },
+            {
+              "id": "step-3",
+              "label": "Line k inequality",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        96
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations",
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Write the three inequalities which together define the shaded region.",
+      "stem": "The diagram shows l: 2x + 3y − 6 = 0, h: x − 3 = 0 and k: y − 2 = 0.",
+      "markingNote": "Each of the three inequalities is worth five marks, with only 0, 2, 4 or 5 allowed. Strict inequalities are accepted; a reversed direction earns two per inequality."
+    },
+    {
+      "id": "maths-2011-ol-p2-q11-b-i",
+      "printedParts": [
+        "Q11(b)(i)"
+      ],
+      "totalMarks": 15,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Purchase-cost inequality",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Parking-space inequality",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-3",
+              "label": "Feasible-region graph",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        97,
+        98
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations",
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Write the two inequalities in x and y and illustrate them on graph paper.",
+      "stem": "Small vans cost €20,000 and need 18 m² each; large vans cost €40,000 and need 24 m² each. The garage has at most €800,000 and 576 m². Let x and y be the numbers of small and large vans.",
+      "markingNote": "Each inequality and the graph are worth five marks. A full correct data table alone earns seven across the inequalities. No written inequalities but a correct graph earns 0 + 0 + 5. Apply a missing/wrong inequality sign penalty once on first occurrence. The source calls parking space “Time”; it is the space constraint."
+    },
+    {
+      "id": "maths-2011-ol-p2-q11-b-ii",
+      "printedParts": [
+        "Q11(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Constraint intersection",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Maximum rental income",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        99
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations",
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Small vans rent for €40 per day and large vans for €50. Find how many of each maximise rental income, assuming all vans are rented.",
+      "stem": "Small vans cost €20,000 and need 18 m² each; large vans cost €40,000 and need 24 m² each. The garage has at most €800,000 and 576 m². Let x and y be the numbers of small and large vans.",
+      "markingNote": "The intersection and maximum-income calculation are worth five marks each. Accept earlier equations and their consistently derived vertices. The chosen van numbers must be explicitly stated. Testing an infeasible intercept to select the maximum earns zero for the final conclusion."
+    },
+    {
+      "id": "maths-2011-ol-p2-q11-b-iii",
+      "printedParts": [
+        "Q11(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Maximum daily profit",
+              "maximum": 10,
+              "attempt": 7,
+              "permittedMarks": [
+                0,
+                7,
+                9,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "schemePages": [
+        100
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations",
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Daily expenses are €12 per van. Calculate the maximum daily profit.",
+      "stem": "Small vans cost €20,000 and need 18 m² each; large vans cost €40,000 and need 24 m² each. The garage has at most €800,000 and 576 m². Let x and y be the numbers of small and large vans. Daily rents are €40 for a small van and €50 for a large van.",
+      "markingNote": "Only 0/7/9/10 are allowed. Recalculate profit at the feasible vertices; the income-maximising mix need not maximise profit. Testing only (16,12) is capped at seven, even if €904 is labelled maximum. Maximum profit must be stated or highlighted."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        1,
+        2,
+        8
+      ],
+      "wording": "Attempt FIVE questions from Section A and ONE question from Section B.",
+      "classification": "whole-examination-selection",
+      "reason": "Attempt FIVE questions from Section A and ONE question from Section B is whole-examination selection: keep all eleven questions without duplicating exam-length bundles."
+    },
+    {
+      "pages": [
+        4
+      ],
+      "wording": "Prove that the sum of the lengths of any two sides of a triangle is greater than that of the third side.",
+      "classification": "universal-theorem",
+      "reason": "Q4(b) any two sides is a universally quantified triangle theorem, not a finite answer pool. Prove the general result once."
+    }
+  ],
+  "selectionDecisions": {
+    "1:6fbd23c3ab1e08a3": {
+      "classification": "whole-examination-selection",
+      "reason": "Attempt FIVE questions from Section A and ONE question from Section B is whole-examination selection: keep all eleven questions without duplicating exam-length bundles."
+    },
+    "2:41585bb42fd9193c": {
+      "classification": "whole-examination-selection",
+      "reason": "Attempt FIVE questions from Section A and ONE question from Section B is whole-examination selection: keep all eleven questions without duplicating exam-length bundles."
+    },
+    "4:cc145227a46944bc": {
+      "classification": "universal-theorem",
+      "reason": "Q4(b) any two sides is a universally quantified triangle theorem, not a finite answer pool. Prove the general result once."
+    },
+    "8:a0f840223b97cee3": {
+      "classification": "whole-examination-selection",
+      "reason": "Attempt FIVE questions from Section A and ONE question from Section B is whole-examination selection: keep all eleven questions without duplicating exam-length bundles."
+    }
+  }
+}

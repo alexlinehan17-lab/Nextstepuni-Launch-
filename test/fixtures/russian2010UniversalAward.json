@@ -1,0 +1,119 @@
+{
+  "id": "ru-2010-hl-la1",
+  "kind": "rubric",
+  "subjectId": "russian",
+  "year": 2010,
+  "level": "higher",
+  "section": "LA1",
+  "questionRef": "2010 HL Section LA1",
+  "questionText": "Language awareness (12 marks) Section 1 Give an example of a feminine noun in the instrumental case: Give an example of a feminine noun in the dative case: Section 2 Give an example of a reflexive verb: Give an example of a plural noun in the dative case: Section 3 Give an example of a masculine noun in the genitive case: Section 4 Give an example of a feminine adjective in the accusative case: _____________________________________",
+  "totalMarks": 12,
+  "rubric": {
+    "system": "language-writing",
+    "criteria": [
+      {
+        "id": "section1-feminine-instrumental",
+        "label": "Section 1 — Give an example of a feminine noun in the instrumental case:",
+        "maxMarks": 2,
+        "guidance": [
+          "Give an example of a feminine noun in the instrumental case:",
+          "Award full marks if candidates supply an appropriate word from the text and put it into the required form. Award full marks if correct words are translated and supplied in English OR if appropriate words are selected from the text and supplied in the base/dictionary form (rather than the form supplied in the task)."
+        ],
+        "permittedMarks": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": "section1-feminine-dative",
+        "label": "Section 1 — Give an example of a feminine noun in the dative case:",
+        "maxMarks": 2,
+        "guidance": [
+          "Give an example of a feminine noun in the dative case:",
+          "Award full marks if candidates supply an appropriate word from the text and put it into the required form. Award full marks if correct words are translated and supplied in English OR if appropriate words are selected from the text and supplied in the base/dictionary form (rather than the form supplied in the task)."
+        ],
+        "permittedMarks": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": "section2-reflexive",
+        "label": "Section 2 — Give an example of a reflexive verb:",
+        "maxMarks": 2,
+        "guidance": [
+          "Give an example of a reflexive verb:",
+          "Award full marks if candidates supply an appropriate word from the text and put it into the required form. Award full marks if correct words are translated and supplied in English OR if appropriate words are selected from the text and supplied in the base/dictionary form (rather than the form supplied in the task)."
+        ],
+        "permittedMarks": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": "section2-dative-plural",
+        "label": "Section 2 — Give an example of a plural noun in the dative case:",
+        "maxMarks": 2,
+        "guidance": [
+          "Give an example of a plural noun in the dative case:",
+          "Award full marks if candidates supply an appropriate word from the text and put it into the required form. Award full marks if correct words are translated and supplied in English OR if appropriate words are selected from the text and supplied in the base/dictionary form (rather than the form supplied in the task).",
+          "award 2 marks to all (there is no noun in the dative case)"
+        ],
+        "automaticAward": {
+          "marks": 2,
+          "sourceText": "award 2 marks to all (there is no noun in the dative case)",
+          "schemePages": [
+            5
+          ]
+        },
+        "permittedMarks": [
+          2
+        ]
+      },
+      {
+        "id": "section3-masculine-genitive",
+        "label": "Section 3 — Give an example of a masculine noun in the genitive case:",
+        "maxMarks": 2,
+        "guidance": [
+          "Give an example of a masculine noun in the genitive case:",
+          "Award full marks if candidates supply an appropriate word from the text and put it into the required form. Award full marks if correct words are translated and supplied in English OR if appropriate words are selected from the text and supplied in the base/dictionary form (rather than the form supplied in the task)."
+        ],
+        "permittedMarks": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": "section4-feminine-accusative",
+        "label": "Section 4 — Give an example of a feminine adjective in the accusative case:",
+        "maxMarks": 2,
+        "guidance": [
+          "Give an example of a feminine adjective in the accusative case:",
+          "Award full marks if candidates supply an appropriate word from the text and put it into the required form. Award full marks if correct words are translated and supplied in English OR if appropriate words are selected from the text and supplied in the base/dictionary form (rather than the form supplied in the task)."
+        ],
+        "permittedMarks": [
+          0,
+          2
+        ]
+      }
+    ],
+    "taskRequirements": [
+      "Award full marks if candidates supply an appropriate word from the text and put it into the required form. Award full marks if correct words are translated and supplied in English OR if appropriate words are selected from the text and supplied in the base/dictionary form (rather than the form supplied in the task).",
+      "award 2 marks to all (there is no noun in the dative case)"
+    ],
+    "markingGuideNote": "Assess the other five examples using the printed guidance. The plural-dative prompt carries the published two-mark award for all candidates."
+  },
+  "source": "sec",
+  "paperFileid": null,
+  "conceptId": "test-russian-2010-universal-award",
+  "topicId": "russian-1-1",
+  "schemeCitation": "SEC Russian 2010 Higher Level marking scheme, physical page 5. Test fixture for the published award.",
+  "specVersion": "test-fixture",
+  "qa": {
+    "gates": [
+      "source-contract-fixture"
+    ],
+    "humanReviewedBy": "Test fixture; not a published card",
+    "humanReviewedAt": "2026-11-11"
+  }
+}

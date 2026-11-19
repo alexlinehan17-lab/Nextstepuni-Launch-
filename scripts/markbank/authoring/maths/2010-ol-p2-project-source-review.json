@@ -1,0 +1,1314 @@
+{
+  "status": "Paper and scheme visually inspected; crops pending",
+  "reviewedAt": "2026-10-30",
+  "paperFileid": "LC003GLP230EV.pdf",
+  "schemeFileid": "LC003GLP030EV.pdf",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    3,
+    4,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78
+  ],
+  "generalNotesPages": [
+    61,
+    62,
+    67,
+    68
+  ],
+  "candidateMarks": 300,
+  "offeredMarks": 345,
+  "printedQuestionMarks": {
+    "1": 50,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 40,
+    "8": 40,
+    "9A": 45,
+    "9B": 45
+  },
+  "scales": {
+    "5A": [
+      0,
+      5
+    ],
+    "5B": [
+      0,
+      3,
+      5
+    ],
+    "5C": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "10B": [
+      0,
+      8,
+      10
+    ],
+    "10C": [
+      0,
+      5,
+      8,
+      10
+    ],
+    "15C": [
+      0,
+      7,
+      12,
+      15
+    ],
+    "15D": [
+      0,
+      7,
+      9,
+      12,
+      15
+    ]
+  },
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        5,
+        10
+      ],
+      "wording": "Answer all nine questions; answer all five questions; either Question 9A or Question 9B.",
+      "classification": "whole-examination-selection",
+      "reason": "Retain all offered tasks, including both 45-mark Question 9 alternatives. The candidate answers 300 marks; practice includes 345 offered marks."
+    },
+    {
+      "pages": [
+        7
+      ],
+      "wording": "Using a calculator, or otherwise",
+      "classification": "open-method-choice",
+      "reason": "A solution-method choice, not a finite pool of alternative questions."
+    },
+    {
+      "pages": [
+        8
+      ],
+      "wording": "selections of three songs; one particular song",
+      "classification": "counting-scenario",
+      "reason": "Songs define the combinatorial calculation, not a printed answer-choice menu. Both counts share one five-mark scale."
+    },
+    {
+      "pages": [
+        8
+      ],
+      "wording": "Tick the correct answer, and give a reason.",
+      "classification": "single-correct-response",
+      "reason": "The five probability descriptions are competing answers to one question, not independently valid routes. Retain every option with the required reason."
+    },
+    {
+      "pages": [
+        14
+      ],
+      "wording": "State two differences",
+      "classification": "open-comparison",
+      "reason": "No finite menu of candidate-selected comparisons is printed. Both differences remain one response."
+    },
+    {
+      "pages": [
+        7,
+        11,
+        15,
+        17
+      ],
+      "wording": "mean and standard deviation; both surpluses and comment; two graph estimates; three angles",
+      "classification": "required-complete-response",
+      "reason": "Required values are not answer choices. Preserve every requested value within the single published scale, with separate components only where the scheme publishes them."
+    }
+  ],
+  "notes": [
+    "Paper 1 is common with the legacy examination, already reviewed separately. The Project Paper 2 is a distinct exact edition, including its common Q1.",
+    "Question 1 uses the original deductions and attempt floors; Questions 2–9 use credit scales. Only published starred tasks permit a one-mark deduction.",
+    "Q5(a), Q9A(e), Q4(a), Q7(e) and Q9B(c) retain every requested answer within the published holistic scale.",
+    "Q2(a) and Q9B(b) retain their two scoring components inside each complete task.",
+    "Q9B(a)(ii) credit notes contain x² = 277, while the correct model solution is x² = 2777; explain beside the unaltered source."
+  ],
+  "tasks": [
+    {
+      "suffix": "1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        63
+      ],
+      "questionText": "Find the perimeter of the square.",
+      "stem": "A circle of radius 9 cm is inscribed in the square shown.",
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "totalMarks": 5,
+      "markingNote": "Use the explicit award table. The special exchanged perimeter/area case and consistent follow-through are retained in the original notes.",
+      "generalNotesPages": [
+        61,
+        62
+      ]
+    },
+    {
+      "suffix": "1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        63
+      ],
+      "questionText": "Calculate the area of the square.",
+      "stem": "A circle of radius 9 cm is inscribed in the square shown.",
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "totalMarks": 5,
+      "markingNote": "Use the explicit award table. The special exchanged perimeter/area case and consistent follow-through are retained in the original notes.",
+      "generalNotesPages": [
+        61,
+        62
+      ]
+    },
+    {
+      "suffix": "1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        64,
+        65
+      ],
+      "questionText": "Use Simpson’s rule to estimate the area of the field.",
+      "stem": "The original field diagram gives perpendicular measurements at equal intervals of 5 m.",
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "substitution-in-simpson-s-rule",
+              "label": "Substitution in Simpson’s rule",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                4,
+                7,
+                10
+              ]
+            },
+            {
+              "id": "calculation-of-area",
+              "label": "Calculation of area",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "totalMarks": 15,
+      "markingNote": "The substitution and calculation are scored separately within one task. The answer 195 without substitution earns 3 + 2; with relevant substitution, apply the separate five-mark calculation table.",
+      "generalNotesPages": [
+        61,
+        62
+      ]
+    },
+    {
+      "suffix": "1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "sourcePages": [
+        3,
+        4
+      ],
+      "schemePages": [
+        64,
+        65
+      ],
+      "questionText": "The actual area of the field is 200 m². Find the percentage error in the estimate.",
+      "stem": "Part (i) asks for a Simpson’s-rule estimate using the original field diagram.",
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "totalMarks": 5,
+      "generalNotesPages": [
+        61,
+        62
+      ]
+    },
+    {
+      "suffix": "1-c-i",
+      "printedParts": [
+        "Q1(c)(i)"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        65,
+        66
+      ],
+      "questionText": "Calculate the volume of the metal sphere, in terms of π.",
+      "stem": "The metal sphere has diameter 9 cm.",
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                4,
+                7,
+                9,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "totalMarks": 10,
+      "markingNote": "Use radius 4.5 cm. A correct answer without work earns attempt 3 only.",
+      "generalNotesPages": [
+        61,
+        62
+      ]
+    },
+    {
+      "suffix": "1-c-ii",
+      "printedParts": [
+        "Q1(c)(ii)"
+      ],
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        65,
+        66
+      ],
+      "questionText": "Calculate r, correct to one decimal place.",
+      "stem": "The 9 cm diameter sphere is melted into a right circular cone and a right circular cylinder, each of height 8 cm and base radius r cm. Part (i) asks for the sphere’s volume.",
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                4,
+                7,
+                9,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "totalMarks": 10,
+      "markingNote": "All published volume methods are retained. Correct answer without work receives attempt 3; area formulas or unrelated volume formulas alone earn zero.",
+      "generalNotesPages": [
+        61,
+        62
+      ]
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        48,
+        69
+      ],
+      "questionText": "Find the equation of the line.",
+      "stem": "A line crosses the x-axis at x = 3 and the y-axis at y = 2, as shown.",
+      "components": [
+        {
+          "id": "slope",
+          "label": "Slope",
+          "code": "15D"
+        },
+        {
+          "id": "equation",
+          "label": "Equation",
+          "code": "5C"
+        }
+      ],
+      "totalMarks": 20,
+      "markingNote": "Award the slope and equation separately. A correct answer without working is accepted for both components.",
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        48,
+        69
+      ],
+      "questionText": "Determine whether the lines are perpendicular. Justify your answer clearly.",
+      "stem": "l₁: x + 3y = 8; l₂: 6x − 2y = 15.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        49,
+        70
+      ],
+      "questionText": "Find the equation of the circle.",
+      "stem": "A circle has centre (0, 0) and passes through (3, 4).",
+      "scale": "10C",
+      "totalMarks": 10,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "3-a-ii",
+      "printedParts": [
+        "Q3(a)(ii)"
+      ],
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        49,
+        70
+      ],
+      "questionText": "Find the coordinates of the two points at which the circle crosses the y-axis.",
+      "stem": "A circle has centre (0, 0) and passes through (3, 4).",
+      "scale": "5C",
+      "totalMarks": 5,
+      "markingNote": "Both coordinates are required. A correct answer without work is accepted.",
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        49,
+        70
+      ],
+      "questionText": "Find the equation of the circle.",
+      "stem": "A circle has centre (2, 4) and touches the y-axis.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        50,
+        71
+      ],
+      "questionText": "Find the mean and standard deviation of the data in the frequency table.",
+      "stem": "Values x: 20, 30, 40, 50; frequencies f: 16, 38, 26, 20.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "markingNote": "Give both the mean and standard deviation. The model solution accepts population or sample standard deviation.",
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        50,
+        71
+      ],
+      "questionText": "How many students are in the group?",
+      "stem": "Use the original split stem-and-leaf plot of student heights; 13 | 3 means 133 cm.",
+      "scale": "10B",
+      "totalMarks": 10,
+      "fullCreditMinusOne": true,
+      "markingNote": "The correct count is 20. A count of 19 or 21 earns the special 9-mark award; counting the six stems as students gives 26 and earns partial credit.",
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        50,
+        71
+      ],
+      "questionText": "What is the range of heights in the group?",
+      "stem": "Use the original split stem-and-leaf plot of student heights; 13 | 3 means 133 cm.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "fullCreditMinusOne": true,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "4-b-iii",
+      "printedParts": [
+        "Q4(b)(iii)"
+      ],
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        50,
+        71
+      ],
+      "questionText": "What percentage of the students are between 145 cm and 154 cm in height?",
+      "stem": "Use the original split stem-and-leaf plot of student heights; 13 | 3 means 133 cm.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "5-a",
+      "printedParts": [
+        "Q5(a)(i)",
+        "Q5(a)(ii)"
+      ],
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        51,
+        71
+      ],
+      "questionText": "Find the number of selections of three songs (i) from all seven songs and (ii) when one particular song must be included.",
+      "stem": "Helen can download three songs and wants seven songs.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "markingNote": "Both counts are required: 35 and 15. One correct count earns low partial credit; two unevaluated correct combinations earn high partial credit.",
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        51,
+        71
+      ],
+      "questionText": "What is the probability of getting two heads when two fair coins are tossed?",
+      "scale": "5B",
+      "totalMarks": 5,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        51,
+        71
+      ],
+      "questionText": "Two fair coins are tossed 1000 times. How often would you expect to get two heads?",
+      "scale": "5B",
+      "totalMarks": 5,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        51,
+        71
+      ],
+      "questionText": "Tick how likely the tenth toss is to be a head, and give a reason.",
+      "stem": "Síle offers Pádraig a prize for ten heads in ten tosses of a fair coin. The first nine tosses were heads. Options: Extremely unlikely; Fairly unlikely; 50-50 chance; Fairly likely; Almost certain.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "markingNote": "Choose the correct response and explain it. An incorrect box receives no credit; a correct reason with no box ticked earns low partial credit.",
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        52,
+        72
+      ],
+      "questionText": "Calculate the area of triangle ABC, correct to the nearest cm².",
+      "stem": "Triangle ABC has |AB| = 6 cm, |CB| = 10 cm and ∠ABC = 50°.",
+      "scale": "15C",
+      "totalMarks": 15,
+      "fullCreditMinusOne": true,
+      "measurementRequired": true,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        52,
+        72
+      ],
+      "questionText": "Calculate |AC|, correct to one decimal place.",
+      "stem": "Triangle ABC has |AB| = 6 cm, |CB| = 10 cm and ∠ABC = 50°.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "fullCreditMinusOne": true,
+      "measurementRequired": true,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        52,
+        72
+      ],
+      "questionText": "Triangle A′BC′ is the image of ABC under enlargement with centre B and scale factor 3. Find its area, correct to the nearest cm².",
+      "stem": "Triangle ABC has |AB| = 6 cm, |CB| = 10 cm and ∠ABC = 50°.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "fullCreditMinusOne": true,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        53,
+        73
+      ],
+      "questionText": "Find the probability that a randomly selected male driver made a claim, correct to three decimal places.",
+      "stem": "The table covers fully licensed drivers aged 17–20 with their own insurance policy in Ireland in 2007. Male: 9634 drivers, 977 claims, €6108 average cost per claim. Female: 6743 drivers, 581 claims, €6051 average cost per claim. Source: Financial Regulator, Private Motor Insurance Statistics 2007.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "fullCreditMinusOne": true,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        53,
+        73
+      ],
+      "questionText": "Find the probability that a randomly selected female driver made a claim, correct to three decimal places.",
+      "stem": "The table covers fully licensed drivers aged 17–20 with their own insurance policy in Ireland in 2007. Male: 9634 drivers, 977 claims, €6108 average cost per claim. Female: 6743 drivers, 581 claims, €6051 average cost per claim. Source: Financial Regulator, Private Motor Insurance Statistics 2007.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "fullCreditMinusOne": true,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        53,
+        73
+      ],
+      "questionText": "Find the expected value of the cost of claims on a male driver’s policy.",
+      "stem": "The table covers fully licensed drivers aged 17–20 with their own insurance policy in Ireland in 2007. Male: 9634 drivers, 977 claims, €6108 average cost per claim. Female: 6743 drivers, 581 claims, €6051 average cost per claim. Source: Financial Regulator, Private Motor Insurance Statistics 2007.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        53,
+        73
+      ],
+      "questionText": "Find the expected value of the cost of claims on a female driver’s policy.",
+      "stem": "The table covers fully licensed drivers aged 17–20 with their own insurance policy in Ireland in 2007. Male: 9634 drivers, 977 claims, €6108 average cost per claim. Female: 6743 drivers, 581 claims, €6051 average cost per claim. Source: Financial Regulator, Private Motor Insurance Statistics 2007.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "sourcePages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        54,
+        73
+      ],
+      "questionText": "Calculate the average surplus for male and female drivers and comment on your answer. The average premiums are €1688 and €1024 respectively; surplus means premium minus expected claim cost.",
+      "stem": "The table covers fully licensed drivers aged 17–20 with their own insurance policy in Ireland in 2007. Male: 9634 drivers, 977 claims, €6108 average cost per claim. Female: 6743 drivers, 581 claims, €6051 average cost per claim. Source: Financial Regulator, Private Motor Insurance Statistics 2007.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "markingNote": "Both average surpluses and a comparison are required. The scheme accepts values consistent with earlier answers. Its large totals are a partial-credit case for total group surplus, not the requested average per policy.",
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "7-f",
+      "printedParts": [
+        "Q7(f)"
+      ],
+      "sourcePages": [
+        11
+      ],
+      "schemePages": [
+        54,
+        73
+      ],
+      "questionText": "How much should the company charge for insurance to show a surplus of €175 per policy?",
+      "stem": "A fully licensed 40-year-old female driver has probability 0.07 of a claim; average claim cost is €3900.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "sourcePages": [
+        12
+      ],
+      "schemePages": [
+        55,
+        74
+      ],
+      "questionText": "Show that ∠ABC = 60°.",
+      "stem": "In the pointed-arch window, arc AB has centre C and arc AC has centre B. |BD| = 2.4 m and |DE| = 1.8 m. Use the original labelled diagram.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "sourcePages": [
+        12
+      ],
+      "schemePages": [
+        55,
+        74
+      ],
+      "questionText": "Find the length of arc AB in metres, correct to three decimal places.",
+      "stem": "In the pointed-arch window, arc AB has centre C and arc AC has centre B. |BD| = 2.4 m and |DE| = 1.8 m. Use the original labelled diagram.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "fullCreditMinusOne": true,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "sourcePages": [
+        12
+      ],
+      "schemePages": [
+        55,
+        74
+      ],
+      "questionText": "Find the perimeter of the window in metres, correct to two decimal places.",
+      "stem": "In the pointed-arch window, arc AB has centre C and arc AC has centre B. |BD| = 2.4 m and |DE| = 1.8 m. Use the original labelled diagram.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "fullCreditMinusOne": true,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        56,
+        74
+      ],
+      "questionText": "Find the height of the window in metres, correct to two decimal places.",
+      "stem": "In the pointed-arch window, arc AB has centre C and arc AC has centre B. |BD| = 2.4 m and |DE| = 1.8 m. Use the original labelled diagram.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "fullCreditMinusOne": true,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        56,
+        74
+      ],
+      "questionText": "Make an accurate drawing of the window outline at scale 1:30: 1 cm represents 30 cm.",
+      "stem": "In the pointed-arch window, arc AB has centre C and arc AC has centre B. |BD| = 2.4 m and |DE| = 1.8 m. Use the original labelled diagram.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "markingNote": "Use 8 cm for the straight vertical sides and 6 cm for the width. The accepted construction tolerance is ±3 mm.",
+      "measurementRequired": true,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "9a-a",
+      "printedParts": [
+        "Q9A(a)"
+      ],
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        57,
+        75
+      ],
+      "questionText": "Construct a back-to-back stem-and-leaf plot of the data.",
+      "stem": "The table gives the highest temperatures on ten randomly selected days in summer 2009 at schools in Kerry and Offaly. Kerry (°C): 18.5, 17.2, 17.8, 17.6, 17.5, 17.2, 17.1, 16.9, 16.9, 17.1. Offaly (°C): 22.1, 18.0, 19.1, 17.2, 18.4, 18.6, 19.8, 19.0, 17.6, 17.0.",
+      "scale": "15C",
+      "totalMarks": 15,
+      "fullCreditMinusOne": true,
+      "markingNote": "Include all 20 values, stems 16–22 and a key. A fully correct plot without a key, or with only one leaf omitted, earns 14.",
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "9a-b",
+      "printedParts": [
+        "Q9A(b)"
+      ],
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        57,
+        75
+      ],
+      "questionText": "State two differences between the distributions.",
+      "stem": "The table gives the highest temperatures on ten randomly selected days in summer 2009 at schools in Kerry and Offaly. Kerry (°C): 18.5, 17.2, 17.8, 17.6, 17.5, 17.2, 17.1, 16.9, 16.9, 17.1. Offaly (°C): 22.1, 18.0, 19.1, 17.2, 18.4, 18.6, 19.8, 19.0, 17.6, 17.0.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "markingNote": "Give two comparisons of the distributions, rather than isolated observations.",
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "9a-c",
+      "printedParts": [
+        "Q9A(c)"
+      ],
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        57,
+        75
+      ],
+      "questionText": "Perform a Tukey Quick Test on the data and state clearly what can be concluded.",
+      "stem": "The table gives the highest temperatures on ten randomly selected days in summer 2009 at schools in Kerry and Offaly. Kerry (°C): 18.5, 17.2, 17.8, 17.6, 17.5, 17.2, 17.1, 16.9, 16.9, 17.1. Offaly (°C): 22.1, 18.0, 19.1, 17.2, 18.4, 18.6, 19.8, 19.0, 17.6, 17.0.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "markingNote": "The lower and upper tail counts are 2 and 5, giving a total of 7. State the conclusion as well as the count.",
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "9a-d",
+      "printedParts": [
+        "Q9A(d)"
+      ],
+      "sourcePages": [
+        15
+      ],
+      "schemePages": [
+        58,
+        75
+      ],
+      "questionText": "Draw a cumulative frequency curve for the data using the indicated scale.",
+      "stem": "Hours of sunshine per day in Offaly, July 2009: at most 2, 4, 6, 8, 10, 12 hours on 11, 12, 20, 29, 30, 31 days respectively. Source: Monthly Weather Bulletin, July 2009, Met Éireann.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "markingNote": "Use a curve and the indicated scale. You do not have to join it to (0, 0), because the number of days with zero sunshine is unknown.",
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "9a-e",
+      "printedParts": [
+        "Q9A(e)(i)",
+        "Q9A(e)(ii)"
+      ],
+      "sourcePages": [
+        15
+      ],
+      "schemePages": [
+        58,
+        75
+      ],
+      "questionText": "Use your cumulative frequency curve to estimate (i) the median hours of sunshine and (ii) the number of days with more than seven hours of sunshine.",
+      "stem": "Hours of sunshine per day in Offaly, July 2009: at most 2, 4, 6, 8, 10, 12 hours on 11, 12, 20, 29, 30, 31 days respectively. Source: Monthly Weather Bulletin, July 2009, Met Éireann.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "markingNote": "Both estimates share one five-mark scale. Accept readings from your own curve within ±0.3 hours horizontally and ±1 day vertically. Either 15.5 or 16 may be used to locate the median.",
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "9a-f",
+      "printedParts": [
+        "Q9A(f)"
+      ],
+      "sourcePages": [
+        15
+      ],
+      "schemePages": [
+        58,
+        75
+      ],
+      "questionText": "A day is chosen at random from July 2009. Estimate the probability that its sunshine was less than the usual July mean of 4.24 hours.",
+      "stem": "Hours of sunshine per day in Offaly, July 2009: at most 2, 4, 6, 8, 10, 12 hours on 11, 12, 20, 29, 30, 31 days respectively. Source: Monthly Weather Bulletin, July 2009, Met Éireann.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "markingNote": "Use your cumulative frequency curve to estimate the count below 4.24 hours, then divide by 31. The printed model uses 12/31; the credit notes also allow counts of 13 or 14.",
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "9b-a-i",
+      "printedParts": [
+        "Q9B(a)(i)"
+      ],
+      "sourcePages": [
+        16
+      ],
+      "schemePages": [
+        59,
+        76
+      ],
+      "questionText": "Find the area of this side of the building.",
+      "stem": "The original photo and diagram show the Dockland building in Hamburg. Its side is a parallelogram, 29 m high, with top and bottom edges 88 m long.",
+      "scale": "15C",
+      "totalMarks": 15,
+      "fullCreditMinusOne": true,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "9b-a-ii",
+      "printedParts": [
+        "Q9B(a)(ii)"
+      ],
+      "sourcePages": [
+        16
+      ],
+      "schemePages": [
+        59,
+        76
+      ],
+      "questionText": "If |BD| = |AD|, find |BC|.",
+      "stem": "The original photo and diagram show the Dockland building in Hamburg. Its side is a parallelogram, 29 m high, with top and bottom edges 88 m long.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "fullCreditMinusOne": true,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "9b-a-iii",
+      "printedParts": [
+        "Q9B(a)(iii)"
+      ],
+      "sourcePages": [
+        16,
+        17
+      ],
+      "schemePages": [
+        60,
+        76
+      ],
+      "questionText": "Find the distance between the parallel lines BC and AD.",
+      "stem": "The original photo and diagram show the Dockland building in Hamburg. Its side is a parallelogram, 29 m high, with top and bottom edges 88 m long. Use |BD| = |AD| from part (ii).",
+      "scale": "5C",
+      "totalMarks": 5,
+      "fullCreditMinusOne": true,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "9b-b",
+      "printedParts": [
+        "Q9B(b)"
+      ],
+      "sourcePages": [
+        17
+      ],
+      "schemePages": [
+        60,
+        76
+      ],
+      "questionText": "State the theorem used to construct a tangent at a given point on a circle, and use it to construct the tangent at P.",
+      "components": [
+        {
+          "id": "theorem",
+          "label": "Theorem",
+          "code": "5A"
+        },
+        {
+          "id": "construction",
+          "label": "Tangent construction",
+          "code": "5B"
+        }
+      ],
+      "totalMarks": 10,
+      "markingNote": "Award the theorem and construction separately. The theorem is correct-or-incorrect; the construction allows partial credit.",
+      "measurementRequired": true,
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    },
+    {
+      "suffix": "9b-c",
+      "printedParts": [
+        "Q9B(c)"
+      ],
+      "sourcePages": [
+        17
+      ],
+      "schemePages": [
+        60,
+        76
+      ],
+      "questionText": "Find the values of x, y and z.",
+      "stem": "Line l is tangent to the circle in the original diagram; the marked angle is 42°.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "markingNote": "Give all three angles. Two correct angles earn high partial credit; one earns low partial credit.",
+      "generalNotesPages": [
+        67,
+        68
+      ]
+    }
+  ],
+  "paperSha256": "7c5a248842a404ad94346adf12a267d207ae60e57b9602fa9ebaae5f3d0cb935",
+  "schemeSha256": "70d0865498a3dc161c0b2b514d12ab434947bddacf3bce027829e7a5dc21d159"
+}
