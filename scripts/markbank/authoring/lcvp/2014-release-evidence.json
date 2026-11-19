@@ -1,0 +1,222 @@
+{
+  "review": "Independent source preflight completed19November2026 before release replay.",
+  "printedLeafLabels": 39,
+  "paperAsks": 40,
+  "requiredSplit": {
+    "id": "lcvp-2014-cl-c4d",
+    "live": false,
+    "before": {
+      "marks": 9,
+      "question": "Explain the term ‘feedback’. In relation to an enterprise activity explain the type of feedback you could expect to receive."
+    },
+    "after": [
+      {
+        "id": "lcvp-2014-cl-c4d",
+        "conceptId": "enterprise-feedback-definition-types",
+        "marks": 3,
+        "question": "Explain the term ‘feedback’.",
+        "rowsFromExisting": [
+          "definition"
+        ],
+        "sourceAnswer": "Feedback is information or advice/given after the completion of a task/activity/which can be positive or negative/of what can be done to improve future performance.",
+        "allocation": "3 @ 1m"
+      },
+      {
+        "proposedId": "lcvp-2014-cl-c4d-2",
+        "marks": 6,
+        "question": "In relation to an enterprise activity explain the type of feedback you could expect to receive.",
+        "rowsFromExisting": [
+          "types"
+        ],
+        "allocation": "3 @ 2m (1 + 1)",
+        "sourceAnswer": "Retain all six existing verbatim types and their continuations from scheme physical page 12."
+      }
+    ],
+    "paperPhysicalPage": 25,
+    "schemePhysicalPage": 12,
+    "schemePrintedPage": 10,
+    "rule": "R7 / CARD-STANDARD §5: separate printed asks with separate marks.",
+    "liveApprovalNeeded": false,
+    "parentConfirmedRuleSettlesThis": true,
+    "implementation": "Implemented by lcvp_review_2014.py: first draft ID/concept retained; second new card;40ask census."
+  },
+  "sources": [
+    {
+      "year": 2014,
+      "kind": "exampapers",
+      "path": "paper-trail-corpus/exampapers/2014/LC462CLP000EV.pdf",
+      "sha256": "0ab57a643775584bec9477d433825260b70cfbd9e39b007a56d678cbaf209d37",
+      "originalSourceHashRechecked": true,
+      "physicalPagesReadForThisAudit": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "sourceUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP000EV.pdf"
+    },
+    {
+      "year": 2014,
+      "kind": "exampapers",
+      "path": "paper-trail-corpus/exampapers/2014/LC462CLP016EV.pdf",
+      "sha256": "a0e783d3a0b2e1d9d241088edd78223d7346fc4e10866214f0de45cdf5848ff2",
+      "originalSourceHashRechecked": true,
+      "physicalPagesReadForThisAudit": [
+        1,
+        2
+      ],
+      "sourceUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP016EV.pdf"
+    },
+    {
+      "year": 2014,
+      "kind": "markingschemes",
+      "path": "paper-trail-corpus/markingschemes/2014/LC462CLP000EV.pdf",
+      "sha256": "eb92d0d5926e3af0053800e7ae1c911a4ee6403a201078e1b85d47fbe60b27f8",
+      "originalSourceHashRechecked": true,
+      "physicalPagesReadForThisAudit": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceUrl": "https://www.examinations.ie/archive/markingschemes/2014/LC462CLP000EV.pdf"
+    }
+  ],
+  "imagesActuallySeen": [
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-01.png",
+      "sha256": "fa44fd48c0e2ad2d442df5c8dd0473fa8e44e2d6a9180f7eb5b4ec9f7ae2c074"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-02.png",
+      "sha256": "df3376c344ad52ba3b5ea8d6f43523d6f82862ccb4e5f82090582e88f17cbb6d"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-03.png",
+      "sha256": "73e9794af85fa52752120b66993c293ac918580e20e8f8bd4429acd55b555746"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-04.png",
+      "sha256": "3fda51ff52c0892790db416a54a5b1080a95a0591f4782b78b88cf92b999bc53"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-05.png",
+      "sha256": "b3a17df86c8b0aea2db08137a8ac2ac52d329870f5e91b6f0a50bd54a1aec83c"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-06.png",
+      "sha256": "06d23c135641c7ffa42bdf6f34b30ee37c641910c2b89f8b65ef77d392869f65"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-07.png",
+      "sha256": "2f7f1b3f3f113e1eca2c2b38a8426694ab4e42316ccd57bfdcc141f891260d72"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-08.png",
+      "sha256": "b7e12b55034d99ecc0d88cd565354ae5937070091ed613426ad4442895be7aab"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/scheme-contact-01.png",
+      "sha256": "70729bb02dba7b6b09b2bb88a3bdab77bf1cf345eef2622b354ae720c63570da"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/scheme-contact-02.png",
+      "sha256": "ec3f2e4e0d2de52fa2347a6d957fec85c9b6b72d3077e9d2b3939e1c06cc11f7"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/scheme-contact-03.png",
+      "sha256": "c4d1c4abca44a6283607605781e179616eaad12f3800467cdfedeafe0ed0d743"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/scheme-contact-04.png",
+      "sha256": "9357f3f194e257866e61d24b15df74a84f644d1f2e68d7887dc2b880dafa37a6"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/case-contact-01.png",
+      "sha256": "70e307cf86b6140f5c5605eed5b645eea26064180ee2e547bef6504c5a0f948b"
+    }
+  ],
+  "offMacEvidence": "https://drive.google.com/file/d/15jPGfElnT0iPh861V9u44QKQti23J4nX/view",
+  "liveCardChanges": 0,
+  "newOnly": true,
+  "limitations": [
+    "Native2014video playback has not been verified; official listing/headers/container prefix were verified.",
+    "Single-model generation and production integration are owned by the coordinator and not yet complete."
+  ],
+  "releaseStatus": "Unfinished: new-only display filings await the coordinator third reading; shared-model integration and native video hosting remain pending.",
+  "displayFilingReview": {
+    "asks": 40,
+    "firstReaderOriginalPagesSeen": 50,
+    "independentSample": 15,
+    "independentAgreements": 5,
+    "thirdReadingPending": [
+      "lcvp-2014-cl-a3",
+      "lcvp-2014-cl-a4",
+      "lcvp-2014-cl-a5",
+      "lcvp-2014-cl-a6",
+      "lcvp-2014-cl-a8",
+      "lcvp-2014-cl-b2i",
+      "lcvp-2014-cl-b2ii",
+      "lcvp-2014-cl-b3i",
+      "lcvp-2014-cl-b3ii",
+      "lcvp-2014-cl-c4d"
+    ],
+    "internalTopicIdsChanged": false,
+    "existing518FilingsOverwritten": false,
+    "decisionEvidence": "REVIEW/2026-11-19-lcvp-release/third-reader-input.json in the shared plans folder"
+  },
+  "releaseSnapshot": "https://drive.google.com/file/d/1PHjEcp8s340w5H5clFGdGF_wQb6T98zH/view"
+}
