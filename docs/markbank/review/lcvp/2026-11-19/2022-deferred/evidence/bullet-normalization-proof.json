@@ -1,0 +1,35 @@
+{
+  "recordedAt": "2026-11-19T19:54:51.270617+00:00",
+  "beforeSha256": "eca25ef5bba944bf9faae54ae70443211c88db324a78a61dbc154c2ad67c1cde",
+  "afterSha256": "fa505f8e2b82ca42a2fefbf8c735996ff3e3f75860bbf1f086f9bab8d06ff3f2",
+  "change": "Normalize27 private-use PDF bullet glyphs U+F0B7 to Unicode bullet U+2022; no other byte changes",
+  "changedCards": 3,
+  "unchangedCards": 45,
+  "fields": [
+    {
+      "path": "/30/rows/0/contextNote",
+      "replacements": 9
+    },
+    {
+      "path": "/31/rows/0/contextNote",
+      "replacements": 9
+    },
+    {
+      "path": "/46/rows/0/contextNote",
+      "replacements": 9
+    }
+  ],
+  "sourceImages": [
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/original-pages/scheme-14.png",
+      "sha256": "c077e26137b92a5b6c3d37d040e743bc87a43ac9484c0b6200748658f6db9fd0",
+      "originalPageViewed": true
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/original-pages/scheme-18.png",
+      "sha256": "72ea4e07c44c7a1b810c28b04f4ef2aef3d690805585e285ab992453431b20a1",
+      "originalPageViewed": true
+    }
+  ],
+  "scope": "Source text correction only; frozen47 browser input and its evidence remain unchanged. Final application generation/browser review pending."
+}

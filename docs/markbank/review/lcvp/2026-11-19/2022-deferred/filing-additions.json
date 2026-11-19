@@ -1,10 +1,10 @@
 {
-  "recordedAt": "2026-11-19T19:36:00.936198+00:00",
+  "recordedAt": "2026-11-19T20:01:04.290625+00:00",
   "sitting": "2022-deferred",
   "status": "Review-only filing additions; no canonical or generated file changed",
   "cards": 48,
   "sourceCandidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/proposed-48-after-third-reading.json",
-  "sourceCandidateSha256": "eca25ef5bba944bf9faae54ae70443211c88db324a78a61dbc154c2ad67c1cde",
+  "sourceCandidateSha256": "a66a9e40753549d3c29b2f57a3c1485b1a357f565c3e0e6521a7fa28a30a1280",
   "thirdReaderDecision": {
     "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/third-reader-decision.json",
     "sha256": "ec8fae088bedbc0e7db2d6036ea790cc17ea89ac9975c62a85279bff580ccbf0"
@@ -24,7 +24,7 @@
     ],
     "lcvp-2022-cl-deferred-a2": [
       [
-        "link-modules-common-2-local-business-enterprises"
+        "link-modules-common-audio-visual"
       ],
       "r2"
     ],
@@ -36,7 +36,7 @@
     ],
     "lcvp-2022-cl-deferred-a4": [
       [
-        "link-modules-common-1-introduction-to-working-life"
+        "link-modules-common-audio-visual"
       ],
       "r2"
     ],
@@ -317,33 +317,57 @@
         "link-modules-common-2-enterprise-skills"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
-      "reason": "",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Explains teamwork benefits such as sharing ideas and dividing work.",
       "internalTopicId": "lcvp-link-modules-1-0",
       "questionRef": "2022 CL Section A Q1 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-enterprise-skills"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2022-cl-deferred-a1",
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
+        "reason": "",
+        "internalTopicId": "lcvp-link-modules-1-0",
+        "questionRef": "2022 CL Section A Q1 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2022-cl-deferred-a2",
       "headingIds": [
-        "link-modules-common-2-local-business-enterprises"
+        "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
-      "reason": "",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Recalls the two researched areas and specific supermarket interview.",
       "internalTopicId": "lcvp-link-modules-1-1",
       "questionRef": "2022 CL Section A Q2 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2022-cl-deferred-a2",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
+        "reason": "",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2022 CL Section A Q2 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2022-cl-deferred-a3",
@@ -351,33 +375,57 @@
         "link-modules-common-2-local-business-enterprises"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
-      "reason": "",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Defines corporate social responsibility and an enterprise’s impacts.",
       "internalTopicId": "lcvp-link-modules-1-1",
       "questionRef": "2022 CL Section A Q3 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2022-cl-deferred-a3",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
+        "reason": "",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2022 CL Section A Q3 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2022-cl-deferred-a4",
       "headingIds": [
-        "link-modules-common-1-introduction-to-working-life"
+        "link-modules-common-audio-visual"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
-      "reason": "",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Recalls Cáit’s particular observations of this supermarket’s staff.",
       "internalTopicId": "lcvp-link-modules-0-0",
       "questionRef": "2022 CL Section A Q4 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-1-introduction-to-working-life"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-1-introduction-to-working-life"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2022-cl-deferred-a4",
+        "headingIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
+        "reason": "",
+        "internalTopicId": "lcvp-link-modules-0-0",
+        "questionRef": "2022 CL Section A Q4 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2022-cl-deferred-a5",
@@ -385,16 +433,28 @@
         "link-modules-common-2-local-business-enterprises"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
-      "reason": "",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Applies corporate social responsibility to one chosen business-impact area.",
       "internalTopicId": "lcvp-link-modules-1-1",
       "questionRef": "2022 CL Section A Q5 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2022-cl-deferred-a5",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
+        "reason": "",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2022 CL Section A Q5 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2022-cl-deferred-a6",
@@ -402,16 +462,28 @@
         "link-modules-common-2-local-business-enterprises"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
-      "reason": "",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Evaluates business advertising, reputation and community goodwill.",
       "internalTopicId": "lcvp-link-modules-1-1",
       "questionRef": "2022 CL Section A Q6 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2022-cl-deferred-a6",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
+        "reason": "",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2022 CL Section A Q6 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2022-cl-deferred-a7",
@@ -419,16 +491,28 @@
         "link-modules-common-2-local-business-enterprises"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
-      "reason": "",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Evaluates whether the enterprise meets corporate social responsibility aims.",
       "internalTopicId": "lcvp-link-modules-1-1",
       "questionRef": "2022 CL Section A Q7 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2022-cl-deferred-a7",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
+        "reason": "",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2022 CL Section A Q7 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2022-cl-deferred-a8",
@@ -436,16 +520,28 @@
         "link-modules-common-2-local-business-enterprises"
       ],
       "how": "r2",
-      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
-      "reason": "",
+      "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+      "reason": "Explains modern business, customer and community reasons for CSR.",
       "internalTopicId": "lcvp-link-modules-1-1",
       "questionRef": "2022 CL Section A Q8 — Deferred sitting",
-      "firstHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ],
-      "secondHeadingIds": [
-        "link-modules-common-2-local-business-enterprises"
-      ]
+      "previousReading": {
+        "cardId": "lcvp-2022-cl-deferred-a8",
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "how": "r2",
+        "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/category-comparison.json",
+        "reason": "",
+        "internalTopicId": "lcvp-link-modules-1-1",
+        "questionRef": "2022 CL Section A Q8 — Deferred sitting",
+        "firstHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        "secondHeadingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      "methodStatus": "Two separate re-readings under the final recall/content rule; earlier exposure recorded"
     },
     {
       "cardId": "lcvp-2022-cl-deferred-b2i",
