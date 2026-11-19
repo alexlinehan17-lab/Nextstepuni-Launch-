@@ -1,0 +1,5027 @@
+{
+  "source": "examiner-reports/japanese/schemes/2010-hl.pdf",
+  "sha256": "7a71fa81c9f4dcdf00223ec1774c8e8c1fe86ce8ddffa61c04cb207c896d6628",
+  "outlineMethod": "original-image-glyph-crops-and-proven-zero-ink-spaces",
+  "repairs": {
+    "MS-Gothic": {
+      "1941": {
+        "text": "。",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              284.83,
+              298.62
+            ],
+            "imageSha256": "5dce6b2c3edeefab001a2616f8053ea5270d3c021c541926dc6d2f8f21c472f2"
+          }
+        ]
+      },
+      "1990": {
+        "text": "か",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              272.782,
+              298.62
+            ],
+            "imageSha256": "0c4a506c610ed1dcaf939a27431e6dda674b41c1e518745eedc99adf41b5a9cd"
+          }
+        ]
+      },
+      "1992": {
+        "text": "き",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              224.59,
+              298.62
+            ],
+            "imageSha256": "276c363920594b5ef5ec699c8bd9f9fa0d3847896fb98f1f136b55bb65208834"
+          }
+        ]
+      },
+      "2002": {
+        "text": "し",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              248.686,
+              298.62
+            ],
+            "imageSha256": "876f2f348e67f0ff8f7270beae9e448329a16f1c37c2f45145b2ff1d0826ade6"
+          }
+        ]
+      },
+      "2010": {
+        "text": "た",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              260.734,
+              298.62
+            ],
+            "imageSha256": "3d7724382f677fac85878750fba19f1d4d3eda9b64055830262853db999ea038"
+          }
+        ]
+      },
+      "2035": {
+        "text": "へ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              200.494,
+              298.62
+            ],
+            "imageSha256": "5153690a53505164b522767c90bb7825b7e7bef3d1eaa8a43827ecbc7392ead8"
+          }
+        ]
+      },
+      "2041": {
+        "text": "ま",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              236.638,
+              298.62
+            ],
+            "imageSha256": "6f1c9a217aadb6dc86dd534675cd0f56f9c467953cdf667628c45ab49e97ffc9"
+          }
+        ]
+      },
+      "2070": {
+        "text": "イ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              116.158,
+              298.62
+            ],
+            "imageSha256": "4184bb11306a2945bea4d2b5e5a337fef3e563f38bf4c560fc1b53d66d2141a2"
+          }
+        ]
+      },
+      "2093": {
+        "text": "ズ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              128.206,
+              298.62
+            ],
+            "imageSha256": "50d8d50a8586e5cfb37aabb9725fde22a4b79792026ae801abc7326627bb3b72"
+          }
+        ]
+      },
+      "2106": {
+        "text": "デ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              104.11,
+              298.62
+            ],
+            "imageSha256": "b12e4fcda8d60dc53272f366838adbaf266724f6c8b7ede470d166056e209e9b"
+          }
+        ]
+      },
+      "2108": {
+        "text": "ド",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              188.446,
+              298.62
+            ],
+            "imageSha256": "65407fda11f2b7ea333b3a5a2bab98b320cc2024ff05e44f01c49ce6f45ac007"
+          }
+        ]
+      },
+      "2110": {
+        "text": "ニ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              140.254,
+              298.62
+            ],
+            "imageSha256": "46cf7e671dadf1512a01d00a59a5732e39eab1e103112abb1e44d2e30d4114cc"
+          }
+        ]
+      },
+      "2140": {
+        "text": "ラ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              164.35,
+              298.62
+            ],
+            "imageSha256": "86bdc849a6515a9495454a057ac7466c64659ddeefe55e5fae209667235392e7"
+          }
+        ]
+      },
+      "2150": {
+        "text": "ン",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              176.398,
+              298.62
+            ],
+            "imageSha256": "8984475012d017f361df7ab6d8ec75ac8ff0cf1f03861dd1aea662fc03a8f11f"
+          }
+        ]
+      },
+      "2159": {
+        "text": "ー",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              152.302,
+              298.62
+            ],
+            "imageSha256": "3706a444e0a53633c710a6c9264f1f350a4649fd852002a76dd3d290dec36bb5"
+          }
+        ]
+      },
+      "11541": {
+        "text": "行",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              212.542,
+              298.62
+            ],
+            "imageSha256": "59ee507d538775795133d1099323b2963f9d8de1c5ee4381c0bf881cdac09c27"
+          }
+        ]
+      }
+    },
+    "MS-PMincho": {
+      "2555": {
+        "text": "一",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              195.546,
+              533.52
+            ],
+            "imageSha256": "e21b415cf8eb9d15ed0da241af8c9691b0780fbe27877488e4dd3cfbadcd50f4"
+          }
+        ]
+      },
+      "2587": {
+        "text": "中",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              172.262,
+              533.52
+            ],
+            "imageSha256": "695d2ebed8fde202817b8846b7d2c0fbebffa9dc3bf95366befa5c21ac42aa2a"
+          }
+        ]
+      },
+      "2637": {
+        "text": "予",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              140.04,
+              334.08
+            ],
+            "imageSha256": "98edd4c16033f35d0333f494c6f93a7ca60da696bdc5b363fcbcb7dbafdc718d"
+          }
+        ]
+      },
+      "2673": {
+        "text": "人",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              110.23,
+              310.02
+            ],
+            "imageSha256": "84140bb43c43a23c9d56726f081795456cb2cffe4c98cfd304361ac44a6ff67d"
+          }
+        ]
+      },
+      "2769": {
+        "text": "住",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              211.452,
+              455.16
+            ],
+            "imageSha256": "e6736f8cce8579c42aabf73fc0b6617af5cd2fe01f21b296a707645e155e5a68"
+          }
+        ]
+      },
+      "2775": {
+        "text": "何",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              334.071,
+              533.52
+            ],
+            "imageSha256": "6b884f91667e846de6f12cc8f8991644826e582ac0ee1aed5e2367c63d8b15a1"
+          }
+        ]
+      },
+      "3304": {
+        "text": "前",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              310.436,
+              533.52
+            ],
+            "imageSha256": "6d0a0d87fec80f718a1589f61c79e5575120791d7353b88d240cbde031fb976e"
+          }
+        ]
+      },
+      "3598": {
+        "text": "古",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              225.55,
+              533.52
+            ],
+            "imageSha256": "21d4cac2076fe21bd3b4ad59350c94f52bf74bb6c2f75ccbef7aecee2000207a"
+          }
+        ]
+      },
+      "3628": {
+        "text": "名",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              298.432,
+              533.52
+            ],
+            "imageSha256": "db77d6b61f6149ee1e8b7ba18a4bf91e1396d03b51844143e3b2da1957cd8724"
+          }
+        ]
+      },
+      "4054": {
+        "text": "国",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              182.409,
+              455.16
+            ],
+            "imageSha256": "b576e70a52892dbbb402e3d881142b759415de7ee54bb36425ddd140d6ee890d"
+          }
+        ]
+      },
+      "4374": {
+        "text": "外",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              166.389,
+              455.16
+            ],
+            "imageSha256": "fc0e2ce9bbe8bcf35e1b402bcd4377dd30f208d30a0615b9b2ec3bb3059de6b3"
+          }
+        ]
+      },
+      "4388": {
+        "text": "天",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              233.163,
+              550.2
+            ],
+            "imageSha256": "4d09c42ed80109fd67f8b6b209ea14b3d0915d38fc3e780055080dc5fa785685"
+          }
+        ]
+      },
+      "4719": {
+        "text": "定",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              152.045,
+              334.08
+            ],
+            "imageSha256": "5396822b8c1926e569aa99bd0060bfaccf091e6c65546e3b7e637039a70c9713"
+          }
+        ]
+      },
+      "4801": {
+        "text": "将",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              120.43,
+              455.16
+            ],
+            "imageSha256": "9ebc8eed3528ab87d0d3b07084ee32c6a9cbe2f090ee0a4b6dc61fd9c5b34d92"
+          }
+        ]
+      },
+      "5098": {
+        "text": "帯",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              209.582,
+              572.58
+            ],
+            "imageSha256": "306d71fe5a498c6b813b2525b4dd8a752d35dd0c46523e972c9ff4bac0a79269"
+          }
+        ]
+      },
+      "5141": {
+        "text": "年",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              251.588,
+              573.78
+            ],
+            "imageSha256": "f215a901c4868d60b526fd65a676a36b8a3d188e81b37e955920a35f34100d39"
+          }
+        ]
+      },
+      "5441": {
+        "text": "思",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              173.909,
+              358.08
+            ],
+            "imageSha256": "d561af1637bd8038ecadcdbdeaeb2d1d59515f803876f64b008cac84574e04ef"
+          }
+        ]
+      },
+      "6116": {
+        "text": "携",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              193.562,
+              572.58
+            ],
+            "imageSha256": "421493a0838c5bc1cf637e7d6a8661b8242306b11ef182fb1db43f2b7b37ae9a"
+          }
+        ]
+      },
+      "6371": {
+        "text": "日",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              138.25,
+              165.96
+            ],
+            "imageSha256": "0dbdedea908d9b3670407f0a396c05a8d663f88b3690b657475b3a600414b419"
+          }
+        ]
+      },
+      "6573": {
+        "text": "有",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              235.208,
+              597.3
+            ],
+            "imageSha256": "9230c0a46a6bf2eebf559ac912d2e1167fae14dcc5af2b29e6d77c8cf632c88b"
+          }
+        ]
+      },
+      "6634": {
+        "text": "来",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              127.874,
+              310.02
+            ],
+            "imageSha256": "a1ccf3c7bde654841ed0b5c61c8db3018dcaaad576a7b9fd68d942432fb35ba9"
+          }
+        ]
+      },
+      "7367": {
+        "text": "気",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              245.168,
+              550.2
+            ],
+            "imageSha256": "1b532f17a5b66027a1107c03866ae152244fd44ded303380173650fff9a134db"
+          }
+        ]
+      },
+      "8219": {
+        "text": "物",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              275.037,
+              533.52
+            ],
+            "imageSha256": "d39e0db3890c63107123c7e09aa1f8667b14434d67cba7cd7e2786604b6c1e6e"
+          }
+        ]
+      },
+      "8610": {
+        "text": "生",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              122.23,
+              165.96
+            ],
+            "imageSha256": "d2e323f13d4a1c017a013078a80a4c228243d3ea876e189a8d275d64b1f17b27"
+          }
+        ]
+      },
+      "8671": {
+        "text": "番",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              209.526,
+              533.52
+            ],
+            "imageSha256": "2c2c6af8a97d3e94b4fb10e7acead8a65fc5ea9c9d1b89a48aef218716200a41"
+          }
+        ]
+      },
+      "11541": {
+        "text": "行",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              150.239,
+              539.52
+            ],
+            "imageSha256": "3067e7c9a7a6871fa16b32c3112035b5e297530073440de0fe6a9f3cc760cd9f"
+          }
+        ]
+      },
+      "11904": {
+        "text": "誕",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              106.21,
+              165.96
+            ],
+            "imageSha256": "75b4bcbdf4f907eaaaac9f1a72de8d1d87575f28bba4b3ce4df5f55eecf4c639"
+          }
+        ]
+      },
+      "13878": {
+        "text": "飲",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              251.03,
+              533.52
+            ],
+            "imageSha256": "bea44c21fe39b08b226f5fb5b81534962200f65eab90fc422465e36d3d19cde9"
+          }
+        ]
+      },
+      "14110": {
+        "text": "高",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              83.89,
+              539.52
+            ],
+            "imageSha256": "d4e81dac85ec684eaf199df8230c71b97032f2f4a2538c95fb9c937bbb88fe61"
+          }
+        ]
+      },
+      "14967": {
+        "text": " ",
+        "outlines": [],
+        "evidence": [
+          {
+            "method": "original-CFF-optional-width-and-endchar-only",
+            "fontSha256": "3e40b0c0cda2f6b0811ba2efc9a1d445ef46e7bacaeacfd183825724807d5f80",
+            "charstringHex": "fcb80e"
+          }
+        ]
+      },
+      "14975": {
+        "text": "(",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              71.89,
+              157.98
+            ],
+            "imageSha256": "0b555669c035a5f31aa63f55a431e8b3c80a63b7c866044ea0409a4bd43c11c7"
+          }
+        ]
+      },
+      "14976": {
+        "text": ")",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              78.552,
+              157.98
+            ],
+            "imageSha256": "c4e978db7a4a053948994c65b6549a276a7c10068fb7e45092b31f2070995784"
+          }
+        ]
+      },
+      "14981": {
+        "text": ".",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              172.188,
+              503.16
+            ],
+            "imageSha256": "c1b5f537c5ad026047862442a3038c85e733f9aaf9cde145a25ed8cbae802678"
+          }
+        ]
+      },
+      "14993": {
+        "text": ":",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              80.348,
+              510.0
+            ],
+            "imageSha256": "e557487f69b9d8565f195bb792d40f78c2abbc54f96adaa38c3d13cf1f3f67ba"
+          }
+        ]
+      },
+      "15002": {
+        "text": "C",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              71.89,
+              510.0
+            ],
+            "imageSha256": "2f7e19bcbcdb367af64aadf3b9d2aae7cff2eb051ebf5e55e6a2b515067c749d"
+          }
+        ]
+      },
+      "15014": {
+        "text": "O",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              283.39,
+              173.52
+            ],
+            "imageSha256": "1c9d3f965083c96b91137327d3cf579dfcb5bd9bf025464a35d9b8d432ed6ad5"
+          }
+        ]
+      },
+      "15017": {
+        "text": "R",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              292.642,
+              173.52
+            ],
+            "imageSha256": "dead4cd93bc90410ac3d3418fd486296287890a9068429553af04ac15b508323"
+          }
+        ]
+      },
+      "15032": {
+        "text": "a",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              71.89,
+              245.88
+            ],
+            "imageSha256": "1a2c5a5986e7da298cc8d8267896bdd46cd3935440da2580e85f8e3c2865080c"
+          }
+        ]
+      },
+      "15033": {
+        "text": "b",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              71.89,
+              269.94
+            ],
+            "imageSha256": "e2585beec4ebb27c425526d67ff9a40b6764d306269388f4f810f82197636ac9"
+          }
+        ]
+      },
+      "15034": {
+        "text": "c",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              71.89,
+              285.96
+            ],
+            "imageSha256": "aeb2e11c26cf1dabd4af3faa511e2055d8c65c1a3de65eeb15b7b4db8cb0d68c"
+          }
+        ]
+      },
+      "15035": {
+        "text": "d",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              71.89,
+              302.04
+            ],
+            "imageSha256": "731b01a1b7ab66b759975a9f39ed1646c1ad480fa805af2c6101290e08d9a7a4"
+          }
+        ]
+      },
+      "15036": {
+        "text": "e",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              71.89,
+              326.1
+            ],
+            "imageSha256": "219673a5a6e5620af2f65528afc666d81cd86ee8f639187100fafe30b37b30c0"
+          }
+        ]
+      },
+      "15037": {
+        "text": "f",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              71.89,
+              350.1
+            ],
+            "imageSha256": "62f8e51fdd267bfd2d4fba4f1fac0a81fbd5328808af0807637b12edbedf0d5e"
+          }
+        ]
+      },
+      "15040": {
+        "text": "i",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              75.599,
+              157.98
+            ],
+            "imageSha256": "2cbba1c401dee95dba2919137958c0531d5522afb40ed79efb0c4c0af65336a8"
+          }
+        ]
+      },
+      "15046": {
+        "text": "o",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              306.68,
+              69.36
+            ],
+            "imageSha256": "7a800261abc57514ddeb64301e80f192b14c22a4011bb2a58f02ecd57bbea305"
+          }
+        ]
+      },
+      "15049": {
+        "text": "r",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              312.734,
+              69.36
+            ],
+            "imageSha256": "8faed5a1df3ed270dfa15fb7aa81ea8800c054d3e2a1728470bcfd491b60c91b"
+          }
+        ]
+      },
+      "16878": {
+        "text": "、",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              412.443,
+              333.06
+            ],
+            "imageSha256": "6c98c39a4a213fa8a7c91b8616254da05b1f55371e98b62c1d70b06becd681bd"
+          }
+        ]
+      },
+      "16879": {
+        "text": "。",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              380.717,
+              533.52
+            ],
+            "imageSha256": "086b95cb2eb6ee9aff7a243728188271ab280475a0b7974fc3b1200d1680d175"
+          }
+        ]
+      },
+      "16901": {
+        "text": "あ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              302.878,
+              526.68
+            ],
+            "imageSha256": "73aa89f819dfabfc024c77616f359c8412addeafdd8c6947cf06e1a31ad77ac8"
+          }
+        ]
+      },
+      "16903": {
+        "text": "い",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              239.59,
+              533.52
+            ],
+            "imageSha256": "ed208683218cbc2416ecc0e8b420a21155c2cd67c432398a17bc5664743c76f2"
+          }
+        ]
+      },
+      "16905": {
+        "text": "う",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              305.71,
+              572.58
+            ],
+            "imageSha256": "50c5e3feed2943c37bdf65de0167f20daab6f6b2ce587347a80b97062a3a1e65"
+          }
+        ]
+      },
+      "16909": {
+        "text": "お",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              92.23,
+              165.96
+            ],
+            "imageSha256": "8481a21376a9ed7898bc837c7e32b875174fd8ea1894a98a49e6f3b832a177c3"
+          }
+        ]
+      },
+      "16910": {
+        "text": "か",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              369.374,
+              533.52
+            ],
+            "imageSha256": "064ee9d41f5f8824baa4eb5584d1ffdb6aef6807a44ebf613b38b36a020ae6b7"
+          }
+        ]
+      },
+      "16911": {
+        "text": "が",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              330.602,
+              572.58
+            ],
+            "imageSha256": "7430ef7ad9c00a313891859d9e841d71e2972aec29d7b9b3f3c5b0926f960110"
+          }
+        ]
+      },
+      "16912": {
+        "text": "き",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              356.945,
+              572.58
+            ],
+            "imageSha256": "000a7571fcbb2c5dda30769d4596b720bf2ecf8fb6817f8b4462994943734041"
+          }
+        ]
+      },
+      "16914": {
+        "text": "く",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              183.334,
+              539.52
+            ],
+            "imageSha256": "b5b4e018839f07ea0109fb4c5dd497e38b563bce8868908b154cef5134664c95"
+          }
+        ]
+      },
+      "16915": {
+        "text": "ぐ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              265.57,
+              573.78
+            ],
+            "imageSha256": "514384606879efe3da2503fdb7fc54083f524dbd8e1eb7e6f4841c38c5d1d2f7"
+          }
+        ]
+      },
+      "16918": {
+        "text": "こ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              313.115,
+              572.58
+            ],
+            "imageSha256": "34888e7e2118b609071afbacfe38abe4454676bad55904f73658a6c38d853882"
+          }
+        ]
+      },
+      "16920": {
+        "text": "さ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              202.469,
+              539.52
+            ],
+            "imageSha256": "dfc4b88081030d1ce2ed137bb35272e2d5cd067b18fa9d58cb4cad651d6aae9f"
+          }
+        ]
+      },
+      "16922": {
+        "text": "し",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              207.178,
+              253.86
+            ],
+            "imageSha256": "7d36ff6649777b8ea86d4a4d8c9bba77a3054a469d714d581ffcb76db57bf0f9"
+          }
+        ]
+      },
+      "16924": {
+        "text": "す",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              357.37,
+              533.52
+            ],
+            "imageSha256": "d27ece18d495641d7c4929418be14d771eb121bc2a3dd1539881bb588ef32f56"
+          }
+        ]
+      },
+      "16928": {
+        "text": "そ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              183.176,
+              503.16
+            ],
+            "imageSha256": "6454b8236bd438dc4ce3d120fc96b255dcde917d175ff5eb128f98504a4bae6c"
+          }
+        ]
+      },
+      "16930": {
+        "text": "た",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              478.126,
+              253.86
+            ],
+            "imageSha256": "9585d9f554571592621facb4af0acc8c3e662126d9a4823d9c05f40fa081c855"
+          }
+        ]
+      },
+      "16931": {
+        "text": "だ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              191.078,
+              539.52
+            ],
+            "imageSha256": "5577ce8ec480feded7c7bbb60a02cf5bd854dc6cbd2c6e67be72a952fce9bcf8"
+          }
+        ]
+      },
+      "16934": {
+        "text": "っ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              162.243,
+              539.52
+            ],
+            "imageSha256": "168b847a8c7a06f3c074a164fa1f35d4f87204bd51997877e7f5d267da5348b4"
+          }
+        ]
+      },
+      "16935": {
+        "text": "つ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              182.614,
+              165.96
+            ],
+            "imageSha256": "15aa79d81b55126cc0041bbb08a1cc471534c1314c2027fcf92311866bf99667"
+          }
+        ]
+      },
+      "16937": {
+        "text": "て",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              172.506,
+              539.52
+            ],
+            "imageSha256": "26df53d14cca3a8c2ee28723fdf60c26f04da48dc7a9eeb0766f5f6e1447b848"
+          }
+        ]
+      },
+      "16938": {
+        "text": "で",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              184.258,
+              533.52
+            ],
+            "imageSha256": "c43c64fb9fcac0fa6126e04c42f6a89faa06ad80c480ed861ab689184d3bd228"
+          }
+        ]
+      },
+      "16939": {
+        "text": "と",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              322.164,
+              572.58
+            ],
+            "imageSha256": "c8fb5dad0706315b68cd46b89df2fc0fb817beb175d10b669f99ec1747f6571e"
+          }
+        ]
+      },
+      "16940": {
+        "text": "ど",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              423.551,
+              572.58
+            ],
+            "imageSha256": "adfcae8ed2aded93284c86d23c25284ecf4aa6fe149a4fa4c8f6b41dd5a0e5d6"
+          }
+        ]
+      },
+      "16941": {
+        "text": "な",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              265.21,
+              597.3
+            ],
+            "imageSha256": "9919842f6a9b3125c08b6ac9313e9e0af839bb94afaefbe35c17374d3eddbe88"
+          }
+        ]
+      },
+      "16942": {
+        "text": "に",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              138.848,
+              539.52
+            ],
+            "imageSha256": "2bdeb36e36a40463185c324938d37966f4aa4c37742eca40fb11b35e8e8c356d"
+          }
+        ]
+      },
+      "16945": {
+        "text": "の",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              160.877,
+              533.52
+            ],
+            "imageSha256": "506f2e429a82aa072122ebf07c705c02f7305909e7fc8195c7cd5d2697e38982"
+          }
+        ]
+      },
+      "16946": {
+        "text": "は",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              322.439,
+              533.52
+            ],
+            "imageSha256": "ba349bc4e1c3c8152ba21b541711cf80a717c06bcc26ee76ba19c8349f5ca887"
+          }
+        ]
+      },
+      "16958": {
+        "text": "ほ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              195.838,
+              253.86
+            ],
+            "imageSha256": "a827713a5bd3e2f6bab2bf26b7fb923fe53f72a79d6dfca50a75250a76aeca9c"
+          }
+        ]
+      },
+      "16961": {
+        "text": "ま",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              176.686,
+              269.94
+            ],
+            "imageSha256": "df591f15a2fc7eb1818d912e60e300b26966bb85cb4c9b1a2c9a103855aa0292"
+          }
+        ]
+      },
+      "16962": {
+        "text": "み",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              263.033,
+              533.52
+            ],
+            "imageSha256": "287cf588ed50a01028887dd5f1793c14433e65aee0074fcc16bbf7b8fed135e5"
+          }
+        ]
+      },
+      "16963": {
+        "text": "む",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              307.87,
+              573.78
+            ],
+            "imageSha256": "f0c5e36a5614b8a422ffa5245d275771af1e607a9e4e2c47156bed6fe8cd9bae"
+          }
+        ]
+      },
+      "16965": {
+        "text": "も",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              283.758,
+              572.58
+            ],
+            "imageSha256": "9e94f1136eb1fdd3430279d276aa5df9ef98bd1174749cb9e46a077808ae82ee"
+          }
+        ]
+      },
+      "16972": {
+        "text": "ら",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              296.517,
+              572.58
+            ],
+            "imageSha256": "4e9c77638922c64b14b83ca9f28f41cb722eef4831e5755bd2bb4d852c359159"
+          }
+        ]
+      },
+      "16973": {
+        "text": "り",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              313.472,
+              526.68
+            ],
+            "imageSha256": "5ad7c6e725c4d56d8b84cad39b4695dd996abc2ef24f9d31d34ea5634bb707e4"
+          }
+        ]
+      },
+      "16974": {
+        "text": "る",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              366.462,
+              572.58
+            ],
+            "imageSha256": "426f0eb49dfd2f41db1db26a5ff94d3f6c77fce482d73c215573d3b741daea57"
+          }
+        ]
+      },
+      "16975": {
+        "text": "れ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              433.68,
+              572.58
+            ],
+            "imageSha256": "7ce0c59c05b9bbbdf940040c1792c062810b0d77b6c649e13c38c8ab33e8efe2"
+          }
+        ]
+      },
+      "16976": {
+        "text": "ろ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              128.488,
+              539.52
+            ],
+            "imageSha256": "d875181e640ad8f9b86488bc746bc6c0d52b10e0727456c7e699d55f0d3bb8ea"
+          }
+        ]
+      },
+      "16981": {
+        "text": "を",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              269.836,
+              572.58
+            ],
+            "imageSha256": "d076b3f6dcd012843a50b1750a56d81889e47eab06a0e693d1135374b828cde0"
+          }
+        ]
+      },
+      "16982": {
+        "text": "ん",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              244.99,
+              503.16
+            ],
+            "imageSha256": "6a2027160b075a535a2cb4fd95558c2eea7680d4a88979e40972fd7331b5486b"
+          }
+        ]
+      },
+      "16988": {
+        "text": "ァ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              118.08,
+              588.18
+            ],
+            "imageSha256": "0da554fa2ac5ab5996ec330741c511edcc9d5a9905488f1aaeea5061abacd9a5"
+          }
+        ]
+      },
+      "16989": {
+        "text": "ア",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              179.283,
+              588.18
+            ],
+            "imageSha256": "aead48dcdf27c8f2fac70af217f4233efd30190056f874be0df2b79dd666d479"
+          }
+        ]
+      },
+      "16990": {
+        "text": "ィ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              126.764,
+              285.96
+            ],
+            "imageSha256": "069a731dba9612369eeb1bd6b1b24624dfce9c1a035efe04275f04866c467d72"
+          }
+        ]
+      },
+      "16991": {
+        "text": "イ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              153.041,
+              588.18
+            ],
+            "imageSha256": "8eb82be1c231ea7ae41eca559bd9d6e5fa5a996ee616578f733a674cff54d4e2"
+          }
+        ]
+      },
+      "16998": {
+        "text": "カ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              117.49,
+              549.06
+            ],
+            "imageSha256": "d5c313838945120d06b0840582742026e9fe96cd19a04d3772bcf80413092a3b"
+          }
+        ]
+      },
+      "17002": {
+        "text": "ク",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              151.929,
+              533.52
+            ],
+            "imageSha256": "7d66a04f1e360c0101ec0dd774d707378b4cbeb878a9722e2a5b4f2729513a26"
+          }
+        ]
+      },
+      "17006": {
+        "text": "コ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              107.89,
+              549.06
+            ],
+            "imageSha256": "038cd271c21152047f25741263ea114e7ded87b65e12ace27f59150122442e2e"
+          }
+        ]
+      },
+      "17012": {
+        "text": "ス",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              223.57,
+              572.58
+            ],
+            "imageSha256": "70f0fb57ae6f7261d7d304361436fa838e9e9bdb94d3774b7612437413e8a5b0"
+          }
+        ]
+      },
+      "17014": {
+        "text": "セ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              113.554,
+              253.86
+            ],
+            "imageSha256": "4ea6492d23c694544276ed82a5584546bafe9e311583d0ea42b1469344a15a07"
+          }
+        ]
+      },
+      "17015": {
+        "text": "ゼ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              367.956,
+              253.86
+            ],
+            "imageSha256": "f03782b5d80c00a45278b6cad63739eab3e6ddfd40672c02e009a369cda5e8dd"
+          }
+        ]
+      },
+      "17016": {
+        "text": "ソ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              99.546,
+              533.52
+            ],
+            "imageSha256": "b5271fe07b97b7e031648e1e4b696b1457eb9c184b6f00ebb75bf0cf70202503"
+          }
+        ]
+      },
+      "17018": {
+        "text": "タ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              137.561,
+              588.18
+            ],
+            "imageSha256": "dd10949a98c52d3a830e8675d0eccbafa3d00d1a72a4294fd3f7870911458dd2"
+          }
+        ]
+      },
+      "17020": {
+        "text": "チ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              218.242,
+              588.18
+            ],
+            "imageSha256": "35c88a5cd67b8e5c9a83b4e169809e1f4f44c61d2c447e1eec3a96ff17fca05b"
+          }
+        ]
+      },
+      "17022": {
+        "text": "ッ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              249.686,
+              572.58
+            ],
+            "imageSha256": "6195f2c00dfce202cd4de52ef237e472845032769410da5d0fc8507fb3c90305"
+          }
+        ]
+      },
+      "17025": {
+        "text": "テ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              115.944,
+              285.96
+            ],
+            "imageSha256": "283071c7c85d1c02831e3b1dc9eeaaedbdf74afb01113dc1f4f0ee28ea834ca9"
+          }
+        ]
+      },
+      "17027": {
+        "text": "ト",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              118.715,
+              533.52
+            ],
+            "imageSha256": "97a1a3e404e98896f451cd6e1e9db73e3ed94c7754f0163982d1ca254dc60079"
+          }
+        ]
+      },
+      "17028": {
+        "text": "ド",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              125.792,
+              533.52
+            ],
+            "imageSha256": "f2535aceef9ab20a81012ad43d99c056639530ac76406f4c6270f058d625a6ec"
+          }
+        ]
+      },
+      "17036": {
+        "text": "パ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              92.23,
+              285.96
+            ],
+            "imageSha256": "8116bae2c3f72390f3d1f6f53315a6940bddfe4b5c45f0277992e4d466513d75"
+          }
+        ]
+      },
+      "17039": {
+        "text": "ピ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              196.1,
+              588.18
+            ],
+            "imageSha256": "6e94dbb99790b4b3d21f006c7e298c5144927544242676e9bffff43bbe1a07be"
+          }
+        ]
+      },
+      "17040": {
+        "text": "フ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              108.591,
+              533.52
+            ],
+            "imageSha256": "235fd0f6007afc38e3f72fc25e36f8d49feff84d5ab7c29e4a0d147d3b5b7164"
+          }
+        ]
+      },
+      "17042": {
+        "text": "プ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              258.495,
+              572.58
+            ],
+            "imageSha256": "d51ef46640f4e1bca3e4597be9d19b25cb3883d18d198330ac031ef2afc5e789"
+          }
+        ]
+      },
+      "17060": {
+        "text": "ラ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              149.711,
+              549.06
+            ],
+            "imageSha256": "d08231842c8daed5238dd1019084b7ada5cf27b8969b6c971e6d9cffa8449f4c"
+          }
+        ]
+      },
+      "17061": {
+        "text": "リ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              134.272,
+              533.52
+            ],
+            "imageSha256": "865830831adde8159658d5546decc036c2a6cdf88a68086ae89669c05cb08b1d"
+          }
+        ]
+      },
+      "17063": {
+        "text": "レ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 13,
+            "origin": [
+              103.57,
+              253.86
+            ],
+            "imageSha256": "ef834af2bd016d619d6127269d4df9ae4f306a20995d925c7d1209e91e5e0370"
+          }
+        ]
+      },
+      "17070": {
+        "text": "ン",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              141.576,
+              533.52
+            ],
+            "imageSha256": "5a231df9da9e8184e3a698f4da413e1f69a4858e17e35d2201d34aa064fd3633"
+          }
+        ]
+      },
+      "17078": {
+        "text": "・",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              146.979,
+              588.18
+            ],
+            "imageSha256": "ef42f995462b01557ad4bc2ba60f5572edbadb15d4ef75ee6cc88b5522872992"
+          }
+        ]
+      },
+      "17079": {
+        "text": "ー",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              137.651,
+              549.06
+            ],
+            "imageSha256": "43447a439a60125dc9bc4cd7770cceabc53fbd4130adee8bd1e76d15bc4252ba"
+          }
+        ]
+      }
+    },
+    "MSMincho": {
+      "2": {
+        "text": " ",
+        "outlines": [],
+        "evidence": [
+          {
+            "method": "original-CFF-optional-width-and-endchar-only",
+            "fontSha256": "81f645b01089d4cec477b3f6d51ef69772b0251ecb013728327b0cb3f3946bd9",
+            "charstringHex": "200e"
+          }
+        ]
+      },
+      "10": {
+        "text": "(",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              241.87,
+              252.72
+            ],
+            "imageSha256": "0d79702f6fa47d0c62ffb4aaef2237bee5bbfe23967869df9ecbb3fefc1b08c5"
+          }
+        ]
+      },
+      "11": {
+        "text": ")",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 6,
+            "origin": [
+              325.03,
+              209.94
+            ],
+            "imageSha256": "5e30d562436b8bc3e0f699d4a8501daf5e4f67f95d77eb58b9b1775f1e5b9b99"
+          }
+        ]
+      },
+      "16": {
+        "text": ".",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              92.11,
+              183.48
+            ],
+            "imageSha256": "86f10efb573a42ba5b4597081960d6369884dca740663a32541538f39b0598b2"
+          }
+        ]
+      },
+      "17": {
+        "text": "/",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 6,
+            "origin": [
+              314.297,
+              194.34
+            ],
+            "imageSha256": "17b85e7304267f5a60c20c4b194de5a22f8ab62d77d5632d891bca41b3e921b3"
+          }
+        ]
+      },
+      "19": {
+        "text": "1",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              71.89,
+              213.6
+            ],
+            "imageSha256": "5cd31a73a3e6361895f39b827ca989cc659ef12f54fbe0dcb73e594789616d1f"
+          }
+        ]
+      },
+      "20": {
+        "text": "2",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              86.11,
+              183.48
+            ],
+            "imageSha256": "f5cba3454ebf801a8e66215755dfb398ce61d5dae7e4260eca7053b2da18578e"
+          }
+        ]
+      },
+      "21": {
+        "text": "3",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              71.89,
+              307.32
+            ],
+            "imageSha256": "1b5f88c147c656fa119de5adf04a6d966660d787581f11e2aca52ed9ff132397"
+          }
+        ]
+      },
+      "22": {
+        "text": "4",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              71.89,
+              346.44
+            ],
+            "imageSha256": "ae5c9b504193b083fcd2be69c4ea773ba157a31e32de2dd55c9b33422d62730c"
+          }
+        ]
+      },
+      "23": {
+        "text": "5",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              132.551,
+              88.8
+            ],
+            "imageSha256": "972c9c92146fa6055a977bde6e467d0c69fd6f94e6acffd0d6487afb30fe4829"
+          }
+        ]
+      },
+      "24": {
+        "text": "6",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              71.89,
+              424.62
+            ],
+            "imageSha256": "e314f884bb2810b2e263ff49c22cd522722111b8d7d2fbfca4c0d13f0d8fe374"
+          }
+        ]
+      },
+      "67": {
+        "text": "a",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              265.87,
+              252.72
+            ],
+            "imageSha256": "c1e57e886cfcc9f751478633627767404483e31958c4e0eba41d8ff0acb21598"
+          }
+        ]
+      },
+      "77": {
+        "text": "k",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              277.87,
+              252.72
+            ],
+            "imageSha256": "3f9f48b33bbad7b3bd63d35e98d3e3413898a55242101b3d1e8c338d61b430bc"
+          }
+        ]
+      },
+      "79": {
+        "text": "m",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              259.87,
+              252.72
+            ],
+            "imageSha256": "e989c6493216de6b8e56654b080e4cf6820022e72554a4a179e2bc8f24cdbc59"
+          }
+        ]
+      },
+      "84": {
+        "text": "r",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              271.87,
+              252.72
+            ],
+            "imageSha256": "921e345e8c61a4f1af669f587f7ba575c82eacbbf3e691213de1915e0bb5f5e5"
+          }
+        ]
+      },
+      "85": {
+        "text": "s",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              283.87,
+              252.72
+            ],
+            "imageSha256": "a70a7df89673224e33c9ce834147cb68e3617b3d8c3fa5f899a9da262e8e6c64"
+          }
+        ]
+      },
+      "1940": {
+        "text": "、",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              171.57,
+              146.1
+            ],
+            "imageSha256": "7f579b854515c1ac2c40d7e6d815622f33404959e51918c8086baef3d23b1fcc"
+          }
+        ]
+      },
+      "1941": {
+        "text": "。",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              272.828,
+              253.68
+            ],
+            "imageSha256": "c64225184efd923bf8c8660948ea086832e8034415f618ce5bc919960ebf0318"
+          }
+        ]
+      },
+      "1981": {
+        "text": "あ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              212.11,
+              372.9
+            ],
+            "imageSha256": "69057051ec2147cebe31f856e5048e8d5decf19482c5fb5c10b7d705aeeccdea"
+          }
+        ]
+      },
+      "1983": {
+        "text": "い",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 6,
+            "origin": [
+              240.01,
+              165.0
+            ],
+            "imageSha256": "8c9863406e856a02ccf7b3113cc178447228ff5c4a0e1f75d569c3b2528d09fb"
+          }
+        ]
+      },
+      "1985": {
+        "text": "う",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              260.89,
+              175.5
+            ],
+            "imageSha256": "294221009517a9c632fea53690ac0d3fa45362aa50eef94d9acf8886dd680ce4"
+          }
+        ]
+      },
+      "1987": {
+        "text": "え",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 6,
+            "origin": [
+              241.974,
+              194.34
+            ],
+            "imageSha256": "2154ea0a3282b90f3cb79469f7ece37576fc0ec84b548a9a871e1a56bd40287e"
+          }
+        ]
+      },
+      "1989": {
+        "text": "お",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 6,
+            "origin": [
+              217.87,
+              194.34
+            ],
+            "imageSha256": "4156f57e25c78f0ad3b475c9cad2ef54ef481f217e2102c2e2fa48ad2815efc5"
+          }
+        ]
+      },
+      "1990": {
+        "text": "か",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              140.264,
+              253.68
+            ],
+            "imageSha256": "05af14be0ef4d1a1767492f7aa7b32b72c6b461cb025a9395b506accd9f37c15"
+          }
+        ]
+      },
+      "1991": {
+        "text": "が",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              272.89,
+              175.5
+            ],
+            "imageSha256": "1f7c153a1257f32187d8f5642147410b2714c37f7665125841234e59a9442d66"
+          }
+        ]
+      },
+      "1992": {
+        "text": "き",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              140.89,
+              175.5
+            ],
+            "imageSha256": "88f52fc7740af402821d7e93b8d38e279727d746c6eec35de3a006c12364ce15"
+          }
+        ]
+      },
+      "1994": {
+        "text": "く",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              274.3,
+              146.1
+            ],
+            "imageSha256": "6b735d99a860af0225b610ddf3956add7289f789a0a0a64cdf957019cf21ebd5"
+          }
+        ]
+      },
+      "1996": {
+        "text": "け",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              191.59,
+              560.58
+            ],
+            "imageSha256": "fc8afef3fd98f5fd7235cda383f2d083de33ca1f9faa3f71a063e506de6a05a5"
+          }
+        ]
+      },
+      "1997": {
+        "text": "げ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              182.11,
+              372.9
+            ],
+            "imageSha256": "030ffd2c0f9121faa70df10041d31544f44833355afabe9fe6b3907f6d052a4f"
+          }
+        ]
+      },
+      "1998": {
+        "text": "こ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              116.162,
+              253.68
+            ],
+            "imageSha256": "015be888d6cd5a017a7ba7ea942ee79a5895ff208105350f99c7511118decebe"
+          }
+        ]
+      },
+      "1999": {
+        "text": "ご",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 10,
+            "origin": [
+              117.91,
+              296.28
+            ],
+            "imageSha256": "c25bafdabbc8bf2d695039215e44f3ee06e75290854638c71c0861d82a7a41e8"
+          }
+        ]
+      },
+      "2000": {
+        "text": "さ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 6,
+            "origin": [
+              278.133,
+              194.34
+            ],
+            "imageSha256": "d1508e6c5cf146fe92df34ecb3d39339492a5558903a4546c28b4cf5afe04062"
+          }
+        ]
+      },
+      "2001": {
+        "text": "ざ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 10,
+            "origin": [
+              101.89,
+              354.48
+            ],
+            "imageSha256": "1bc060d7006de0174d9a3d6d492447e4dd44800df851a8281e6833c469312827"
+          }
+        ]
+      },
+      "2002": {
+        "text": "し",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              128.212,
+              253.68
+            ],
+            "imageSha256": "0d4a3c3f0f91413f6ec3d602d7ebf5e6271bdc097952321030df63ab40e95a6b"
+          }
+        ]
+      },
+      "2003": {
+        "text": "じ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              164.366,
+              253.68
+            ],
+            "imageSha256": "06bad5bf55bbdb96282e386cae574fcf710aefccca02de98e787e83982fe6694"
+          }
+        ]
+      },
+      "2004": {
+        "text": "す",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              104.11,
+              253.68
+            ],
+            "imageSha256": "01040822a1b8aa21e2c9292441899570f296b3a967837e1e650c91e91b56d337"
+          }
+        ]
+      },
+      "2006": {
+        "text": "せ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              152.313,
+              147.12
+            ],
+            "imageSha256": "f40ca9f5bdcc4059f968421207a72d29b64d99b7b74dba94fc3fb40ff31bc78c"
+          }
+        ]
+      },
+      "2008": {
+        "text": "そ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              201.704,
+              191.04
+            ],
+            "imageSha256": "17d06d626c37f533b60071d4f20d7a009c77bcf40c9ab0f663439ca50a905649"
+          }
+        ]
+      },
+      "2009": {
+        "text": "ぞ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              97.93,
+              508.68
+            ],
+            "imageSha256": "3377c663f6266ce421d06583e666aa51377d8820cf93f98b00bc70b3a870b9bf"
+          }
+        ]
+      },
+      "2010": {
+        "text": "た",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              260.776,
+              253.68
+            ],
+            "imageSha256": "802f79e6549506cb49ecd74eff21033ed37384679ddc7562620be5f2472e3c51"
+          }
+        ]
+      },
+      "2011": {
+        "text": "だ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 6,
+            "origin": [
+              227.95,
+              165.0
+            ],
+            "imageSha256": "6e3c490011595e64ae26e1bc113526d01c88a1e2cecf6f32f4260db72413161d"
+          }
+        ]
+      },
+      "2012": {
+        "text": "ち",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              188.11,
+              425.76
+            ],
+            "imageSha256": "44c86971e2ff05f1e35d5105072191bca3b0841df6371698c0cf8deeff7b641e"
+          }
+        ]
+      },
+      "2014": {
+        "text": "っ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              202.51,
+              327.96
+            ],
+            "imageSha256": "7275392fb5e9fabd97fd2d7c9cdbffc06bfb890c3a9ae2398338a3e8d3f8a1ee"
+          }
+        ]
+      },
+      "2015": {
+        "text": "つ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              121.93,
+              373.56
+            ],
+            "imageSha256": "0142642840292c4de6403e31b5e61201f02cf9c6676a2ba67a8f07e192aaa3e5"
+          }
+        ]
+      },
+      "2017": {
+        "text": "て",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              311.89,
+              496.38
+            ],
+            "imageSha256": "47b434c4f3be823cecd7fefbd1a3c2f0fa09092e3305362e5339c2ef63105ddc"
+          }
+        ]
+      },
+      "2018": {
+        "text": "で",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              207.71,
+              146.1
+            ],
+            "imageSha256": "6db3da077c2bcdbf9076e90243abd5c86c1bbb6e6858a35f479b576581414267"
+          }
+        ]
+      },
+      "2019": {
+        "text": "と",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              128.89,
+              175.5
+            ],
+            "imageSha256": "7258cf50370484927908063a795898663b910421a8500c8cd253d8a43449cfdd"
+          }
+        ]
+      },
+      "2020": {
+        "text": "ど",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              164.89,
+              175.5
+            ],
+            "imageSha256": "34dde390b51b97e57e70287c96c73113ebc0b530276aa3d74648e67cf50ce79a"
+          }
+        ]
+      },
+      "2021": {
+        "text": "な",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 6,
+            "origin": [
+              266.08,
+              194.34
+            ],
+            "imageSha256": "da620a2c05a241ab4603ea517a6c219e131911bcd363137b9e4ffdda74a37a54"
+          }
+        ]
+      },
+      "2022": {
+        "text": "に",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              188.89,
+              175.5
+            ],
+            "imageSha256": "05cb74c7a6fb923b3f560aab923ba19e37ac060f380f137915e5aa867516c5ac"
+          }
+        ]
+      },
+      "2024": {
+        "text": "ね",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              164.357,
+              388.44
+            ],
+            "imageSha256": "883348ac8db78a80ca65063796104658c14dd326cd91989fed655fd7badd5cbb"
+          }
+        ]
+      },
+      "2025": {
+        "text": "の",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              176.417,
+              253.68
+            ],
+            "imageSha256": "59d39816040ae9e8db857d1e1c3ef3a59f881fc9abda9c76cc105ab8cb0f1a3a"
+          }
+        ]
+      },
+      "2026": {
+        "text": "は",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              166.51,
+              327.96
+            ],
+            "imageSha256": "c5e6d54d81a8f261c66841cc663fd08c8596f3157394fd73e1a8c25425c5f743"
+          }
+        ]
+      },
+      "2027": {
+        "text": "ば",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              213.755,
+              191.04
+            ],
+            "imageSha256": "73da58d10e43e7455dbcc3dd7b1135103b1bb2a9f57a22f8b15d8147ec04a095"
+          }
+        ]
+      },
+      "2029": {
+        "text": "ひ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 10,
+            "origin": [
+              104.11,
+              102.36
+            ],
+            "imageSha256": "9a077ead57654d7cff2e6ecd1cee4e8b52418166c25cde8d1fadc684ba2493a3"
+          }
+        ]
+      },
+      "2030": {
+        "text": "び",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 10,
+            "origin": [
+              101.89,
+              311.82
+            ],
+            "imageSha256": "6f68cbc557b58d74a2363100cd15eea623197ded7788ebf86ef976d6e6c5a84e"
+          }
+        ]
+      },
+      "2032": {
+        "text": "ふ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              223.57,
+              521.52
+            ],
+            "imageSha256": "6bb79de8d3a6b61584f55eefb1563ed93ca8ca8bc07b21814ca48523e0ecef6d"
+          }
+        ]
+      },
+      "2033": {
+        "text": "ぶ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              118.15,
+              465.66
+            ],
+            "imageSha256": "0b9ed33de6baf53867ed18947ba5f4deae8c6e4d87f204b571e70d61a62e7d85"
+          }
+        ]
+      },
+      "2035": {
+        "text": "へ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 10,
+            "origin": [
+              123.25,
+              454.56
+            ],
+            "imageSha256": "0e1ff1db3e1611b1250808a76d7ea4d57857994d0934b61a27abdef33c33d5c7"
+          }
+        ]
+      },
+      "2036": {
+        "text": "べ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              172.09,
+              238.14
+            ],
+            "imageSha256": "f0a76b220f2293bf1c9776027537d8153ce9aa990ea3c1383bc59a3ad6df9092"
+          }
+        ]
+      },
+      "2038": {
+        "text": "ほ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              248.89,
+              175.5
+            ],
+            "imageSha256": "b086bd6537eacbec5cb4b281eb15a351fab52fde5afe4cdd3125a2a966b874ad"
+          }
+        ]
+      },
+      "2041": {
+        "text": "ま",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              236.673,
+              253.68
+            ],
+            "imageSha256": "18945496b9601cabf93caaf0f71c4d4693860bf6dcb271fbc3eed0a8b9075217"
+          }
+        ]
+      },
+      "2042": {
+        "text": "み",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              99.73,
+              739.8
+            ],
+            "imageSha256": "cb75844513a86aa53ae0089d41bbdfb2a06359f1bef3dec4d909d708d8459230"
+          }
+        ]
+      },
+      "2043": {
+        "text": "む",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              123.85,
+              708.66
+            ],
+            "imageSha256": "3896efc125220da94f9171517edf199af1b3397215e5ad843e257c412139e6e8"
+          }
+        ]
+      },
+      "2044": {
+        "text": "め",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 10,
+            "origin": [
+              116.17,
+              86.82
+            ],
+            "imageSha256": "11c698403dc411cfaaa3a69a14edde9d670a82687ab96409805be6955714d621"
+          }
+        ]
+      },
+      "2045": {
+        "text": "も",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              148.15,
+              413.76
+            ],
+            "imageSha256": "ce5478cd36a57844a0966875340dcae750a073ff10e1a21c1d23270966bf6ee0"
+          }
+        ]
+      },
+      "2046": {
+        "text": "ゃ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              212.571,
+              545.1
+            ],
+            "imageSha256": "190b80dcf00343b6089274d7ac310f23f9e3bc10fb4b2ec820db8cc817d30d8e"
+          }
+        ]
+      },
+      "2047": {
+        "text": "や",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              158.89,
+              496.38
+            ],
+            "imageSha256": "9abd2dccdc660c6fdd79e354d8becc6d663a6515353f3076a3b2fb3743d0c044"
+          }
+        ]
+      },
+      "2048": {
+        "text": "ゅ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              97.93,
+              373.56
+            ],
+            "imageSha256": "44630965a800fafbd8d34daac35682ef0e0bd8a08bf79c185cfcf0b0b8e7ede1"
+          }
+        ]
+      },
+      "2049": {
+        "text": "ゆ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              104.11,
+              441.36
+            ],
+            "imageSha256": "b0ca997553b2e95a84120b338a0ed723fad8adfe4833bebafd5dcf58d74c9eca"
+          }
+        ]
+      },
+      "2050": {
+        "text": "ょ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 10,
+            "origin": [
+              140.29,
+              117.96
+            ],
+            "imageSha256": "bc153bc8f04796a963e844fb15f77c66cb4b93289c4cf06a44c596fd63a815a9"
+          }
+        ]
+      },
+      "2051": {
+        "text": "よ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              99.73,
+              708.66
+            ],
+            "imageSha256": "22802f1dc4a5d0289b14fb206777471a38f3dd68af21c1724eab10e16d37dc7f"
+          }
+        ]
+      },
+      "2052": {
+        "text": "ら",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              272.89,
+              496.38
+            ],
+            "imageSha256": "411c47d98f1c45df62139dc1ed9b6221b4e67255a48127e86ec9ecc2a3a30acb"
+          }
+        ]
+      },
+      "2053": {
+        "text": "り",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 6,
+            "origin": [
+              254.027,
+              194.34
+            ],
+            "imageSha256": "87e567fe3aafe06b30126db96d124c4c468fae25dd510c0bef9e0787a8436603"
+          }
+        ]
+      },
+      "2054": {
+        "text": "る",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              123.85,
+              739.8
+            ],
+            "imageSha256": "f0d719e4e42ced710d44386dc6308c1da9c103c6c4086583a65b536856da62d4"
+          }
+        ]
+      },
+      "2055": {
+        "text": "れ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              309.602,
+              343.5
+            ],
+            "imageSha256": "2610afca8165bac661203f30092c2aa41b30e34a0788544b4498c5715fc95a40"
+          }
+        ]
+      },
+      "2056": {
+        "text": "ろ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              179.89,
+              559.8
+            ],
+            "imageSha256": "ee5bd07562dbef713653f2447a8a53fea833add1207d3587205d1a43e63db78b"
+          }
+        ]
+      },
+      "2061": {
+        "text": "を",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              212.571,
+              253.68
+            ],
+            "imageSha256": "8896dea69f5a844d3b60cb74c73acf76c7fba7a924ccd158f65a34d1680cd79b"
+          }
+        ]
+      },
+      "2062": {
+        "text": "ん",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              152.315,
+              253.68
+            ],
+            "imageSha256": "009f65960e11824c49d00d3710173a26f24ca71037e58500cd9def3d494a6338"
+          }
+        ]
+      },
+      "2069": {
+        "text": "ア",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              321.033,
+              545.1
+            ],
+            "imageSha256": "b07345ada40b5fa6e5aae3fbbb98de5dd298400dc426b57a9813dae52f842e51"
+          }
+        ]
+      },
+      "2071": {
+        "text": "イ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              333.084,
+              545.1
+            ],
+            "imageSha256": "e85cf6aa3ea42a7616fbcb6963e83d5a72391cfd72f65ee691936c93fd585671"
+          }
+        ]
+      },
+      "2075": {
+        "text": "エ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              83.89,
+              496.38
+            ],
+            "imageSha256": "5cc8caafe5bece7ce99e60bbae86274f7bf6d39a51c39945f1ed5ac19db81037"
+          }
+        ]
+      },
+      "2077": {
+        "text": "オ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              104.89,
+              582.72
+            ],
+            "imageSha256": "7dd5ee947cabec187290e94f18b360fa4d17170d187c262b21e032f5925b45f7"
+          }
+        ]
+      },
+      "2078": {
+        "text": "カ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              197.89,
+              496.38
+            ],
+            "imageSha256": "e38cb22e2898e88b1992e8262964de602a29171febc999e583c558ba11ae3a1c"
+          }
+        ]
+      },
+      "2082": {
+        "text": "ク",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              357.113,
+              545.1
+            ],
+            "imageSha256": "1f5c85f57c39c3e2e0047c8911c5e375d3585fb4508d4c9fefd45ec388d45c6e"
+          }
+        ]
+      },
+      "2090": {
+        "text": "シ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              230.11,
+              199.02
+            ],
+            "imageSha256": "d41b52850f7ea5ce05512a07c05c6e9e7f8b63806f06b64c83955f5a5df22b0c"
+          }
+        ]
+      },
+      "2091": {
+        "text": "ジ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              92.89,
+              582.72
+            ],
+            "imageSha256": "b49220de79f02be19303b91d3490551b0bc434355faf89bf54b468fb5aafa145"
+          }
+        ]
+      },
+      "2092": {
+        "text": "ス",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              185.89,
+              496.38
+            ],
+            "imageSha256": "ceea7a60de912d814f3bf8257091ab5a9a4ec8f02e79b235d49ac4b68edb9d60"
+          }
+        ]
+      },
+      "2098": {
+        "text": "タ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              131.89,
+              496.38
+            ],
+            "imageSha256": "e7f48ce888d0eb398207beb3a36df99a9134f1a80520c4bdcf3c28cf3cdbe4a0"
+          }
+        ]
+      },
+      "2099": {
+        "text": "ダ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              128.212,
+              545.1
+            ],
+            "imageSha256": "2a9e55ce4b2d9d8f2d7b9a4be81e91394faa17d69de20296b61f2dbabf674b16"
+          }
+        ]
+      },
+      "2103": {
+        "text": "ツ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              161.89,
+              677.04
+            ],
+            "imageSha256": "c72b60704dfb9ad4a070103f3b26d169977e3955600490efd701e65bb2e03655"
+          }
+        ]
+      },
+      "2108": {
+        "text": "ド",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              149.89,
+              213.6
+            ],
+            "imageSha256": "fedc37ae3848613fa7acffa5e79e5beaec2d510ec52350a0fa7e5c97708cc7e8"
+          }
+        ]
+      },
+      "2110": {
+        "text": "ニ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              128.89,
+              582.72
+            ],
+            "imageSha256": "db8ecd7a0d33068b988d062dc6257d45d2972f7df6aaa184121574bbc4b2d17d"
+          }
+        ]
+      },
+      "2116": {
+        "text": "パ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              104.11,
+              545.1
+            ],
+            "imageSha256": "c525aada622e384698fb3513130c01bf57084e428f38dc088ffe3b1d21ade112"
+          }
+        ]
+      },
+      "2124": {
+        "text": "ベ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              107.89,
+              496.38
+            ],
+            "imageSha256": "438aef0fe7792f28981f4fcadc46d3a2c8cb748786e602c460fe4fbd729c90d7"
+          }
+        ]
+      },
+      "2127": {
+        "text": "ボ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              254.201,
+              199.02
+            ],
+            "imageSha256": "e15659da6cd2d3a628e416a8fe18b16288dcbb023eec63c8370076869b746218"
+          }
+        ]
+      },
+      "2128": {
+        "text": "ポ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              137.89,
+              677.04
+            ],
+            "imageSha256": "16ab7caa874f4177e89b079699098d75b7c420e769988b2d200bc3672408a79a"
+          }
+        ]
+      },
+      "2131": {
+        "text": "ム",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              393.264,
+              545.1
+            ],
+            "imageSha256": "dc063639b8792984f0a1baaf78d61d9c3a8b2069b3c5084ec585bfa34545f2fd"
+          }
+        ]
+      },
+      "2136": {
+        "text": "ュ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              140.89,
+              582.72
+            ],
+            "imageSha256": "d4b60523073640f7977d58f54dbc7a4c08534e98e1230b2464f31d0c3d575280"
+          }
+        ]
+      },
+      "2140": {
+        "text": "ラ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              80.89,
+              582.72
+            ],
+            "imageSha256": "6c517404ec8b367e4171b01daf4aee5662a541d2754b04ee6c66421292afb3d8"
+          }
+        ]
+      },
+      "2141": {
+        "text": "リ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              369.164,
+              545.1
+            ],
+            "imageSha256": "9c72779f0eb265bf5c537ae056c75a80dd68b6304723d248fe30b1b63a12419b"
+          }
+        ]
+      },
+      "2142": {
+        "text": "ル",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              266.246,
+              199.02
+            ],
+            "imageSha256": "44c34b1559fb745081874e4c0c09a2ada15e6fea23941b5b18f4fbbdb241edc0"
+          }
+        ]
+      },
+      "2143": {
+        "text": "レ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              95.89,
+              496.38
+            ],
+            "imageSha256": "219db96ea2840d90e8300070b46cf908dfd1ab1abb449b3fb2059ff98c2d427f"
+          }
+        ]
+      },
+      "2150": {
+        "text": "ン",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              242.156,
+              199.02
+            ],
+            "imageSha256": "8118f7089f7fb73b1d2c1d47e4734a2cbe0797932e9e7f2d3ac0d43fa09ac7e1"
+          }
+        ]
+      },
+      "2158": {
+        "text": "・",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              181.93,
+              199.02
+            ],
+            "imageSha256": "a93a07d2fe58efd1b322049afc7689708b17f90eaf39613c7f2a1d492db6d528"
+          }
+        ]
+      },
+      "2159": {
+        "text": "ー",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              119.89,
+              496.38
+            ],
+            "imageSha256": "186740d1f6703342e169554cc93a1e23c29063476d5998cac9b4256e7722b732"
+          }
+        ]
+      },
+      "2555": {
+        "text": "一",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              135.85,
+              598.86
+            ],
+            "imageSha256": "95c0f4b2a5d0dfba5725c5fe0b5845c634d7bd90db30870e83b79e0cf93de4e3"
+          }
+        ]
+      },
+      "2665": {
+        "text": "京",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              188.11,
+              131.58
+            ],
+            "imageSha256": "83e001b7637f26e257563c3bb686efb2896260f40ec18056fe1aa21eb74fa4b9"
+          }
+        ]
+      },
+      "2769": {
+        "text": "住",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              89.89,
+              559.8
+            ],
+            "imageSha256": "ab7c89cb05fb2f727419c10a445eabc9ab07dee10b4c9b485a42ccfd898d787f"
+          }
+        ]
+      },
+      "2775": {
+        "text": "何",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              232.09,
+              238.14
+            ],
+            "imageSha256": "41cd33fe37bb00e9190a8c31fdaf38d423449d14f4a3d53b97c87d1db61ae5e9"
+          }
+        ]
+      },
+      "3392": {
+        "text": "勉",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              188.468,
+              253.68
+            ],
+            "imageSha256": "ef9094525e7bd713ccfc9872b7d9295e6a5d98336b93c0b82a52d6fbd0a31970"
+          }
+        ]
+      },
+      "3399": {
+        "text": "動",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              105.07,
+              477.66
+            ],
+            "imageSha256": "26b18760e145c09c5964bf9e534b51a882397644f823e6d23e867d8292e413ad"
+          }
+        ]
+      },
+      "3505": {
+        "text": "単",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 10,
+            "origin": [
+              119.89,
+              272.7
+            ],
+            "imageSha256": "ed29a7de95d0c28b0ca893df72b9aafcb17cdda71ea69d81a08828340e2dd28c"
+          }
+        ]
+      },
+      "3577": {
+        "text": "友",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              127.87,
+              716.16
+            ],
+            "imageSha256": "3f18fffc077043de7b7bedbd26ccc870efe9a55325669e0956a6e4adc06500bc"
+          }
+        ]
+      },
+      "4070": {
+        "text": "園",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              133.03,
+              477.66
+            ],
+            "imageSha256": "4ad73f2c5bbc100966c880ce63c8da2996095fdf6e3c51310ca353cca550d9e6"
+          }
+        ]
+      },
+      "4094": {
+        "text": "地",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              92.89,
+              175.5
+            ],
+            "imageSha256": "4b51561bff47ef3e9e3de6f521fccaa12f41a6329c46e7e53b47087d0a41cb2d"
+          }
+        ]
+      },
+      "4347": {
+        "text": "士",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              116.11,
+              183.48
+            ],
+            "imageSha256": "e621c5b3883f56c983bd8da57511b9e417a7c1013b015d07200bdba718045ad6"
+          }
+        ]
+      },
+      "4377": {
+        "text": "多",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              183.617,
+              146.1
+            ],
+            "imageSha256": "03b1b009b5d75490bcb4199743957ca7d9dd5cac1cd7473f93c27545e0b44aef"
+          }
+        ]
+      },
+      "4386": {
+        "text": "大",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              104.11,
+              199.02
+            ],
+            "imageSha256": "eead17de0c3a3bede0a8998661a90e2dd3207e8c6a77f3bb0d54fd5589102fc3"
+          }
+        ]
+      },
+      "4388": {
+        "text": "天",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              142.51,
+              327.96
+            ],
+            "imageSha256": "1f9cea5c574b47d3e5dec29e9edb64bcb8718d1878b361e75127c07acb8d14c8"
+          }
+        ]
+      },
+      "4450": {
+        "text": "好",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              89.89,
+              637.98
+            ],
+            "imageSha256": "f4d7eb08907bbe7c96c394edec3e4b31b6c711030fe8b01f357b3d84e2b7e531"
+          }
+        ]
+      },
+      "4679": {
+        "text": "学",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              91.87,
+              252.72
+            ],
+            "imageSha256": "469516f8b4412aac01153ed7254d8755786c64b971397558e0f4d61d4fa57aa2"
+          }
+        ]
+      },
+      "4741": {
+        "text": "家",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              89.89,
+              520.68
+            ],
+            "imageSha256": "35cf769219f9040e71be4e1bbfbdb5d97a088678ac1624ad6e72abaf389ed159"
+          }
+        ]
+      },
+      "4757": {
+        "text": "富",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              104.11,
+              183.48
+            ],
+            "imageSha256": "7459e37fa9154f94993c4f1532df80dbe6ca396600d130450c20f0ccebb86a81"
+          }
+        ]
+      },
+      "4811": {
+        "text": "少",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              250.21,
+              146.1
+            ],
+            "imageSha256": "254eef772a99bc4569c0c01ac7efb36ada6d1f012d84d6f10ed3f40ba15d7507"
+          }
+        ]
+      },
+      "4874": {
+        "text": "山",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              128.11,
+              183.48
+            ],
+            "imageSha256": "4f53867132fded3630795979ea87503393aa2fe63e934966fcfd0f6a4bb8b574"
+          }
+        ]
+      },
+      "5049": {
+        "text": "川",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              165.55,
+              191.04
+            ],
+            "imageSha256": "e98d794b92be1d707b48335385a57316f3d2dcfa12b79a806186da43927e1163"
+          }
+        ]
+      },
+      "5099": {
+        "text": "帰",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              171.85,
+              346.44
+            ],
+            "imageSha256": "10e5ce3839b4f74189f90cdf9c11b87b00905c3e6ae3c29a304c478f143555ae"
+          }
+        ]
+      },
+      "5231": {
+        "text": "弁",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              118.09,
+              238.14
+            ],
+            "imageSha256": "7d6a6a7b0f527f71454b6fdf5e8338c48757e51b2ed3a8f3944a1ae21d6adf7b"
+          }
+        ]
+      },
+      "5277": {
+        "text": "強",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              200.519,
+              253.68
+            ],
+            "imageSha256": "4db5cac294b27fac4ac37038dc6cd90d184a3a561a1a03333997bdb1248af2a4"
+          }
+        ]
+      },
+      "5296": {
+        "text": "当",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              134.11,
+              238.14
+            ],
+            "imageSha256": "27bd94d968d037d42a852456b89e9a5f354fe6eb5dfa3ae41a8fc6286951a334"
+          }
+        ]
+      },
+      "5343": {
+        "text": "後",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              196.09,
+              238.14
+            ],
+            "imageSha256": "220a4bc7d38c16119f35095e11df0722b083b6be934b8f616b624a776a9c68c3"
+          }
+        ]
+      },
+      "5416": {
+        "text": "念",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 10,
+            "origin": [
+              119.89,
+              366.48
+            ],
+            "imageSha256": "896f914ead5eff134f0d7543a11426cc7910a75dad4b41e1022454d298b399b6"
+          }
+        ]
+      },
+      "5441": {
+        "text": "思",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              176.11,
+              183.48
+            ],
+            "imageSha256": "15cc9d509452313ed04ff904110321aaf81f6d52487c7c66a9baf033ae993527"
+          }
+        ]
+      },
+      "6358": {
+        "text": "族",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              101.89,
+              520.68
+            ],
+            "imageSha256": "4e2eca550c9a2b082740439adc2add24db283322f896f8214b0cd1b0af859eb2"
+          }
+        ]
+      },
+      "6371": {
+        "text": "日",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              193.976,
+              199.02
+            ],
+            "imageSha256": "d4eb67de791baaded5590d61224fdecc2520825d20762c7f498d863acab99107"
+          }
+        ]
+      },
+      "6469": {
+        "text": "晩",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 10,
+            "origin": [
+              103.87,
+              296.28
+            ],
+            "imageSha256": "28c2b1c2d6d3a006584faf51dacf114cb626cdbd967e608dcdce300fe5ae205e"
+          }
+        ]
+      },
+      "6595": {
+        "text": "末",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              113.89,
+              385.56
+            ],
+            "imageSha256": "d4a358a4d6804cf1cd00394b3ed101adf191d826009e718d90428ff6174fccc5"
+          }
+        ]
+      },
+      "6596": {
+        "text": "本",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              206.02,
+              199.02
+            ],
+            "imageSha256": "bde5a7ebd5e3f64d7f6b10f47a6e8051e554e32dbb53440074d33b4269504800"
+          }
+        ]
+      },
+      "6642": {
+        "text": "東",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              168.13,
+              131.58
+            ],
+            "imageSha256": "383add87f7bdc7d835873035853ac451716c4d70b4bb7ed9a45bd96d127d7caf"
+          }
+        ]
+      },
+      "6750": {
+        "text": "校",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              107.89,
+              252.72
+            ],
+            "imageSha256": "4faf4b15ae6403d04dd7f9d0bddbaa15f2261e7ab8187c177a0dc8ef2a9fcb83"
+          }
+        ]
+      },
+      "6985": {
+        "text": "楽",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              167.89,
+              598.86
+            ],
+            "imageSha256": "427ac0cac49d4e5b5fab1daf223e58eba37b0425350756aa3794e46109e0007d"
+          }
+        ]
+      },
+      "7287": {
+        "text": "残",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 10,
+            "origin": [
+              103.87,
+              366.48
+            ],
+            "imageSha256": "d3e9d7db978adf4d1058716630b60a4ed37a7b0470f29e2cf304024d16d78f80"
+          }
+        ]
+      },
+      "7331": {
+        "text": "母",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              128.21,
+              388.44
+            ],
+            "imageSha256": "faffa8783a5fb71cba882bc77eb5199eccbe519bd60afad491eafe58a0ed737b"
+          }
+        ]
+      },
+      "7332": {
+        "text": "毎",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              91.87,
+              346.44
+            ],
+            "imageSha256": "e668b66106f45d2bad5589a3ba7f0ea05edf11b1029237bde8b728e209d69bba"
+          }
+        ]
+      },
+      "7367": {
+        "text": "気",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              154.51,
+              327.96
+            ],
+            "imageSha256": "a8aa2c1405ccb270f76545eefea4002691795f61e06edbbf05597f52e5763c76"
+          }
+        ]
+      },
+      "7566": {
+        "text": "浴",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              104.11,
+              425.76
+            ],
+            "imageSha256": "48cb19e049407afd8f7d6b68eda7e18f67890b38c6491d57b0146cb58a5fba3b"
+          }
+        ]
+      },
+      "7567": {
+        "text": "海",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              265.27,
+              191.04
+            ],
+            "imageSha256": "72fb292d310d1fd9020cf3231467d644d3340efec14b301bf491975463c8f133"
+          }
+        ]
+      },
+      "8179": {
+        "text": "父",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              104.11,
+              388.44
+            ],
+            "imageSha256": "18b53b271f67b226da2eb88b0c0c03777e226388c1f4db2fe4ab23d6aa7ae699"
+          }
+        ]
+      },
+      "8219": {
+        "text": "物",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              152.11,
+              425.76
+            ],
+            "imageSha256": "a51effee36f4aa9f81403a9632ef936c2386a739679285c7e768d6323b76509a"
+          }
+        ]
+      },
+      "8671": {
+        "text": "番",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              151.87,
+              598.86
+            ],
+            "imageSha256": "2db881e073e5865adb2039ffcaa9c2d91538dc6cd10bb5c2afe08272e1f4d7d9"
+          }
+        ]
+      },
+      "8929": {
+        "text": "目",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              137.89,
+              637.98
+            ],
+            "imageSha256": "07e12961c4dddb3b75f247e2e135e82519cd1593bb1e429f24edbfc228c96570"
+          }
+        ]
+      },
+      "8981": {
+        "text": "着",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              140.11,
+              425.76
+            ],
+            "imageSha256": "eed44f0bb248acf6db4fcb99a422f022c82a601c4d0ec8c171c6be5b71f01918"
+          }
+        ]
+      },
+      "9340": {
+        "text": "科",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              125.89,
+              637.98
+            ],
+            "imageSha256": "97615898c40c0c3dae4764ee79415c7029340091ecc7cdf107ab1812efe33bd4"
+          }
+        ]
+      },
+      "9714": {
+        "text": "簡",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 10,
+            "origin": [
+              103.87,
+              272.7
+            ],
+            "imageSha256": "54f4098e314f2b5f9665148cc130cd4b158cef1aae24507e235da3b8200149b3"
+          }
+        ]
+      },
+      "10334": {
+        "text": "聞",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              188.89,
+              582.72
+            ],
+            "imageSha256": "d4f94bc479bb5529e56698e2336fa2f97df26ce6ae1c5cf3aabd8f5e70b3d0b2"
+          }
+        ]
+      },
+      "11541": {
+        "text": "行",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              200.89,
+              175.5
+            ],
+            "imageSha256": "b836ac4707e68f5f64bf7b166fa80a434a339d3a1a6fb0879aeb5522e272b061"
+          }
+        ]
+      },
+      "11561": {
+        "text": "衣",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              116.11,
+              425.76
+            ],
+            "imageSha256": "134c0b605560998b1a5b829f5c29924bcad7423743d64ffbb8e7db703b5cced4"
+          }
+        ]
+      },
+      "11735": {
+        "text": "見",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              152.315,
+              545.1
+            ],
+            "imageSha256": "31c9c77d83537b15f42a8e8a52f6a2cdb08202357c6beb520f884bb9dd3cd2e4"
+          }
+        ]
+      },
+      "12168": {
+        "text": "買",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              224.11,
+              425.76
+            ],
+            "imageSha256": "b4c27cf6a3a5d5f22ff6255bd00aaa0cec870d39c115f2fce501cc406a6184d3"
+          }
+        ]
+      },
+      "12589": {
+        "text": "近",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              126.07,
+              191.04
+            ],
+            "imageSha256": "ac24f53988b429857920082542f8aa28a4e106d0966facfb24700641618665d4"
+          }
+        ]
+      },
+      "12659": {
+        "text": "週",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              93.91,
+              385.56
+            ],
+            "imageSha256": "55e11736d39d3ca31aa71b37f54bea57cb09f2da16d9e5e4877fabef85982cac"
+          }
+        ]
+      },
+      "12688": {
+        "text": "達",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 11,
+            "origin": [
+              143.89,
+              716.16
+            ],
+            "imageSha256": "f33df1596e76890bfd170cefbe95811f94fdc53810f43893c5c11b35addeb230"
+          }
+        ]
+      },
+      "13601": {
+        "text": "震",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              104.89,
+              175.5
+            ],
+            "imageSha256": "1614e14035c4f4789c9558664ab4c12b81e27405cf4d3fe28b1a7ecc8e44634e"
+          }
+        ]
+      },
+      "13865": {
+        "text": "食",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              160.09,
+              238.14
+            ],
+            "imageSha256": "06f869d933bcba90dcf74709cec6e80788a3676dc745d02f5f3a0efa17c0a8be"
+          }
+        ]
+      },
+      "13982": {
+        "text": "駅",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              195.07,
+              477.66
+            ],
+            "imageSha256": "f9e0ee577aa2dc04d44f14011466534094474b87811f278dddcd297177e550ab"
+          }
+        ]
+      },
+      "14804": {
+        "text": "(",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              177.602,
+              191.04
+            ],
+            "imageSha256": "57f8082a9316610275fe8cb5628332ad46d64232101ccb1ae7ead9e3b4c2aa5c"
+          }
+        ]
+      },
+      "14805": {
+        "text": ")",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 8,
+            "origin": [
+              225.806,
+              191.04
+            ],
+            "imageSha256": "545c293ad942d49c724f19d95b202e9579f10eddff01710ac99bebdcd308a5dd"
+          }
+        ]
+      },
+      "14816": {
+        "text": "4",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              107.89,
+              631.44
+            ],
+            "imageSha256": "60c4aa3335b92904d4f77f292aaa342ca8b8455278a499c7f238f1d5a9bddf9f"
+          }
+        ]
+      },
+      "14817": {
+        "text": "5",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 12,
+            "origin": [
+              336.97,
+              54.6
+            ],
+            "imageSha256": "bc0a2a42c1b10222275857914222638df611a7fa63a7da57ab1b2092a60f630c"
+          }
+        ]
+      }
+    },
+    "SimSun": {
+      "3": {
+        "text": " ",
+        "outlines": [],
+        "evidence": [
+          {
+            "method": "original-CFF-optional-width-and-endchar-only",
+            "fontSha256": "186031acd81967d5e7a8d06d5c659c262a07e5ef5530032b5fdccb9be80b85f6",
+            "charstringHex": "200e"
+          }
+        ]
+      },
+      "451": {
+        "text": "、",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              148.51,
+              283.02
+            ],
+            "imageSha256": "c74c42c5a0b10a4aaf8e2364c31a47e526b4942d31e748a62ffdeec31a0649b8"
+          }
+        ]
+      },
+      "452": {
+        "text": "。",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 7,
+            "origin": [
+              480.13,
+              572.58
+            ],
+            "imageSha256": "92074db7c924de62c0d36b3afa72a0ed7a4822eece04bed9b3b8b84fc330a44f"
+          }
+        ]
+      },
+      "480": {
+        "text": "か",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              256.51,
+              283.02
+            ],
+            "imageSha256": "0ecd7424fc91fcd354661696195cab5c96e8f0e4e64af5b14168f73dfa5def5c"
+          }
+        ]
+      },
+      "482": {
+        "text": "き",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              208.51,
+              283.02
+            ],
+            "imageSha256": "ac41d966d12fcafc97d359c382b0fc7f7c8962a9786277507a68dbfc10bbabea"
+          }
+        ]
+      },
+      "488": {
+        "text": "こ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              172.51,
+              283.02
+            ],
+            "imageSha256": "fc1f3ff0328c7ce7a308958fa2aac8af97972f0e0119bbeacaa478b84fc8212d"
+          }
+        ]
+      },
+      "492": {
+        "text": "し",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              232.51,
+              283.02
+            ],
+            "imageSha256": "c224b6ebad18b8e7ffd5990436837ca7598349fd92e3fc9ee3f3c23d3dca0398"
+          }
+        ]
+      },
+      "500": {
+        "text": "た",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              244.51,
+              283.02
+            ],
+            "imageSha256": "0496741407ab78c39793c3504e15bde7afec1051d8af5a65477a5c96cbff646e"
+          }
+        ]
+      },
+      "510": {
+        "text": "ど",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              160.51,
+              283.02
+            ],
+            "imageSha256": "14ee3c56e20430db93cfacdb48d990a4630e5c2548c0e24459612e98cabfb329"
+          }
+        ]
+      },
+      "512": {
+        "text": "に",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              136.51,
+              283.02
+            ],
+            "imageSha256": "b125b100a2f4a3e5539046ae456af3db50f0a31af55d2356c41890a136a8afc9"
+          }
+        ]
+      },
+      "531": {
+        "text": "ま",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              220.51,
+              283.02
+            ],
+            "imageSha256": "dfe8f37a51dd278fe25bed17a28d2573a55a6faf1c5f8a9fd1c3ede57920e048"
+          }
+        ]
+      },
+      "7097": {
+        "text": "日",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              112.51,
+              283.02
+            ],
+            "imageSha256": "712cca6dcc6de65c76aa7723dce9025841f99592edb1d17ef5805b3281ed9753"
+          }
+        ]
+      },
+      "11458": {
+        "text": "目",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              124.51,
+              283.02
+            ],
+            "imageSha256": "47336b4c26b0a6275b052a0cb9134c497228096fcf25747c5d75a91ffa2fd85d"
+          }
+        ]
+      },
+      "15904": {
+        "text": "行",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 9,
+            "origin": [
+              196.51,
+              283.02
+            ],
+            "imageSha256": "f5a581c6c0cd90aa1012ac141ab136317ab34faaec9bfd42aa7de97d5b0ab206"
+          }
+        ]
+      }
+    },
+    "TimesNewRomanPSMT": {
+      "148": {
+        "text": "≤",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json",
+            "sha256": "1bc400cab1391eb8cc439bc958ac58becd7bacf63a3e6a64711d35cc6da6dc36",
+            "page": 12,
+            "origin": [
+              124.93,
+              262.32
+            ],
+            "imageSha256": "d9ccbb696462a6a2dc280eb33e0a527d994be6e78644cdf564954f7165d99796"
+          }
+        ]
+      }
+    }
+  },
+  "unresolvedImageOnly": []
+}

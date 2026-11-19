@@ -44,6 +44,14 @@ import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/account
 import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
 import { CARDS as BUSINESS_HIGHER } from '../components/MarkBank/cards/business/higher';
 import { CARDS as BUSINESS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
+import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
+import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
+import japanese2023OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2023-ol-census.json';
+import japanese2023OrdinaryReview from '../scripts/markbank/authoring/reviews/japanese-2023-ol.json';
+import japanese2023HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2023-hl-census.json';
+import japanese2023HigherReview from '../scripts/markbank/authoring/reviews/japanese-2023-hl.json';
+import japanese2019HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2019-hl-census.json';
+import japanese2019HigherReview from '../scripts/markbank/authoring/reviews/japanese-2019-hl.json';
 import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
 import { CARDS as RE_HIGHER } from '../components/MarkBank/cards/religious-education/higher';
 import { CARDS as RE_ORDINARY } from '../components/MarkBank/cards/religious-education/ordinary';
@@ -56,9 +64,31 @@ const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 const irishManifests = (): string[] => [...readFileSync(resolve(
   __dirname, '..', 'components', 'MarkBank', 'cards', 'irish', 'factory.ts'), 'utf8')
   .matchAll(/^import \w+ from '\.\/([\w-]+\.json)';/gm)].map((m) => m[1]);
+// These papers print roman tasks directly beneath Part D, without a Q number.
+// Accept only the independent censuses' exact source-bound IDs and references.
+// Other subjects and the generic citation grammar remain unchanged.
+const japaneseUnnumberedRefs = new Map(([
+  [japanese2023HigherCensus, japanese2023HigherReview],
+  [japanese2023OrdinaryCensus, japanese2023OrdinaryReview],
+  [japanese2019HigherCensus, japanese2019HigherReview],
+] as const).flatMap(([census, review]) => census.tasks
+  .filter(task => task.key[0] === 'LD' && task.key[1] === null
+    && (census.year === 2023 || 'paperRef' in task))
+  .map(task => {
+    const [section, , letter, roman] = task.key;
+    const id = `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`;
+    const ref = `${census.year} ${census.level.toUpperCase()} Section ${section}(${roman})${letter === null ? '' : `(${letter})`}`;
+    const reviewed = review.cards.find(card => card.id === id);
+    if (reviewed?.questionRef !== ref || JSON.stringify(reviewed.sourceEvidence.paperPages) !== JSON.stringify(task.paperPages)) {
+      throw new Error(`Unbound Japanese unnumbered reference: ${id}`);
+    }
+    return [id, ref] as const;
+  })));
+const isJapaneseUnnumberedRef = (id: string, ref: string) => japaneseUnnumberedRefs.get(id) === ref;
 
 const deckCards = (subject: string): { id: string; ref: string }[] => {
   if (subject === 'accounting') return [...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
+  if (subject === 'japanese') return [...JAPANESE_HIGHER, ...JAPANESE_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
   if (subject === 'french') {
     return [...FRENCH_HIGHER, ...FRENCH_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
@@ -104,7 +134,8 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
   const out: { id: string; ref: string }[] = [];
   // 'common' is the level a one-level subject ships under — LCVP's Link
   // Modules. Leaving it out of this walk reported the whole deck as missing.
-  for (const level of ['higher', 'ordinary', 'common']) {
+  // Mathematics also ships Foundation, and reconcile.py counts it.
+  for (const level of ['higher', 'ordinary', 'common', ...(subject === 'maths' ? ['foundation'] : [])]) {
     const path = resolve(
       __dirname, '..', 'components', 'MarkBank', 'cards', subject, `${level}.ts`);
     let text: string;
@@ -129,7 +160,8 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
 // What CANNOT pass is a ref with no parseable address at all.
 // The question number is OPTIONAL: Religious Education's Sections B-J print
 // none, so its citations read "2023 HL Section E Q(b)(ii)".
-// CL is LCVP's common level, the third the SEC prints.
+// CL is LCVP's common level, the third the SEC prints; FL is Mathematics'
+// Foundation level.
 // History adds two things. Its two FIELDS OF STUDY are separate papers a
 // candidate chooses between, so the citation names one — "2021 HL Early
 // Modern ...". And its Sections 2 and 3 restart their numbering inside every
@@ -143,7 +175,7 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
 // the citation reads "2021 HL Topic 1(i) Q(a)". Its 2023 paper numbers
 // Questions 1-16 straight through Sections A and B and cites "2024 HL Q3(b)".
 const ADDRESS =
-  '^(\\d{4}) (HL|OL|CL)'
+  '^(\\d{4}) (HL|OL|CL|FL)'
   + '(?: (?:Later|Early) Modern)?'
   + '(?: Paper (\\d))?'
   + '(?: Topic \\d{1,2}\\((?:i{1,3}|iv|v)\\))?'
@@ -191,7 +223,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // display ordering is not the manifest ordering. Coverage pins identity,
     // not presentation order.
     if (subject === 'english' || subject === 'irish' || subject === 'art'
-      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education' || subject === 'applied-maths' || subject === 'accounting' || subject === 'business' || subject === 'religious-education') identities.sort();
+      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education' || subject === 'applied-maths' || subject === 'accounting' || subject === 'business' || subject === 'religious-education' || subject === 'japanese') identities.sort();
     const digest = createHash('sha256')
       .update(identities.join('\n'))
       .digest('hex').slice(0, 16);
@@ -203,7 +235,8 @@ describe('Mark Bank paper-coverage ratchet', () => {
 
   it.each(SUBJECTS)('%s citations all parse under the grammar', (subject) => {
     const bad = deckCards(subject)
-      .filter(({ ref }) => {
+      .filter(({ id, ref }) => {
+        if (subject === 'japanese' && isJapaneseUnnumberedRef(id, ref)) return false;
         if (subject === 'accounting') return !/^\d{4} (?:HL|OL) Q[1-9][A-Z]?(?:\([a-z0-9]+\))*(?:-[a-z0-9()-]+)?$/.test(ref);
         if (subject === 'english') {
           // Legacy 2021-2025 cards bundle linked parts; reviewed published
@@ -229,12 +262,33 @@ describe('Mark Bank paper-coverage ratchet', () => {
           // 2017 Ordinary prints four lettered statements under Q4(i), (a)-(d).
           return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?:\((?:i|ii|iii|iv|v|vi|vii|viii)\))?(?:\([a-d]\))?(?: · .+)?$/.test(ref);
         }
-        const core = ref.split(/\s+[—–-]\s+/)[0];
+        // As reconcile.py reads a Mathematics citation: the booklet is pinned by
+        // its review, so "(Project Maths)" before the address goes; a deferred
+        // card ends " — Deferred sitting", read like every other subject's.
+        // Foundation 2010 and 2012 Paper 1 Q7 end with an unlettered graph the
+        // scheme marks on its own, cited "Q7(graph)"; reconcile.py reads Q7.
+        const cited = subject === 'maths'
+          ? ref.replace(' (Project Maths) Q', ' Q').replace(/\(graph\)$/, '') : ref;
+        const core = cited.split(/\s+[—–-]\s+/)[0];
         const m = core.match(HEAD);
         return !m || !TAIL.test(core.slice(m[0].length));
       })
       .map(({ id, ref }) => `${id}: "${ref}"`);
     expect(bad, `${subject}: unparseable questionRef(s)`).toEqual([]);
+  });
+
+  it('japanese unnumbered references reject another year, sibling, order or suffix', () => {
+    expect(japaneseUnnumberedRefs.size).toBe(22);
+    for (const [id, ref] of japaneseUnnumberedRefs) {
+      expect(isJapaneseUnnumberedRef(id, ref)).toBe(true);
+      expect(isJapaneseUnnumberedRef(id, ref.replace(/^\d{4}/, year => String(Number(year) + 1)))).toBe(false);
+      expect(isJapaneseUnnumberedRef(id, ref + ' — unrelated')).toBe(false);
+    }
+    expect(isJapaneseUnnumberedRef('ja-2023-hl-ld-a-iv', '2023 HL Section LD(iv)(b)')).toBe(false);
+    expect(isJapaneseUnnumberedRef('ja-2023-hl-ld-a-iv', '2023 HL Section LD(a)(iv)')).toBe(false);
+    expect(isJapaneseUnnumberedRef('unbound-id', '2023 HL Section LD(i)')).toBe(false);
+    expect(isJapaneseUnnumberedRef('ja-2019-hl-ld-a-v', '2019 HL Section LD(v)(b)')).toBe(false);
+    expect(isJapaneseUnnumberedRef('ja-2019-hl-ld-a-v', '2019 HL Section LD(a)(v)')).toBe(false);
   });
 
   it('every subject with a deck is measured', () => {
@@ -252,7 +306,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // The refs hash pins addresses; this pins everything else — questionText,
     // rows, figure bindings. A card gutted in place trips here.
     const h = createHash('sha256');
-    for (const level of ['higher', 'ordinary', 'common']) {
+    for (const level of ['higher', 'ordinary', 'common', ...(subject === 'maths' ? ['foundation'] : [])]) {
       const path = resolve(
         __dirname, '..', 'components', 'MarkBank', 'cards', subject, `${level}.ts`);
       try { h.update(readFileSync(path)); } catch { /* single-level deck */ }
@@ -273,7 +327,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
     }
-    if (subject === 'physical-education' || subject === 'applied-maths') {
+    if (subject === 'physical-education' || subject === 'applied-maths' || subject === 'japanese') {
       // PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
       for (const name of subject === 'physical-education' ? ['factory.ts', 'reviewed.json', 'answers.ts'] : ['reviewed.ts', 'reviewed.json']) {
         h.update(readFileSync(resolve(
@@ -286,6 +340,9 @@ describe('Mark Bank paper-coverage ratchet', () => {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
+    }
+    if (subject === 'japanese') {
+      h.update(readFileSync(resolve(__dirname, '..', 'components', 'MarkBank', 'cards', subject, 'aliases.json')));
     }
     if (subject === 'business') {
       // Same files and order as reconcile.py's content hash.

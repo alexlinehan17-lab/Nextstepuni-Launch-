@@ -1,0 +1,1495 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2022,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "daf5686ae18857574dd291f0e4221e7a934e893d4940531640c083f2bcf569d1",
+  "schemeSha256": "03b6d60f182e4ec188d889171b072c463e7c1731b865c3c7f0f7fe1c57c73ab2",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 32 question-paper pages and PDF pages 29–60 of the combined Ordinary Level scheme (Paper 2 title page, the Paper 2 scale table on page 30, the summary of allocations on page 31, annotation palette, every Paper 2 model solution and marking note, and the closing page). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    30,
+    31
+  ],
+  "sourceNotes": [
+    "The 2022 paper was adjusted for COVID-19 (220 marks): candidates answer any four of Q1–6 (30 marks each) and any two of Q7–10 (50 marks each), so 380 marks are offered and 220 count. Every question is retained.",
+    "50 independently marked units, matching the printed summary of allocations on scheme page 31. Shared scales keep their parts together: Q1(b)(i)–(ii) 5C, Q4(b)(i)–(ii) 10C, Q5(a)(i)–(ii) 10C, Q6(b)(i)–(ii) 10D, Q7(c)(i)–(ii) 5D and Q10(b)(iii)–(iv) 10D.",
+    "Paper 2 bands from scheme page 30: 5A 0,5; 5B 0,2,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10B 0,5,10; 10C 0,3,7,10; 10D 0,3,5,8,10; 15D 0,4,8,12,15. They differ from Paper 1, which prints no A, 5D or 10B scales.",
+    "Before this review the deck held 49 of the 50 units. Q9(d) (enlargement of the shed diagram, centre A, scale factor 3; 10C) had no card and is added with the page measuring tool, since the scheme checks image lengths in centimetres. Ten cards had their marking points re-quoted from the printed scheme because the text layer had garbled them: Q5(b) and Q8(a)(ii) interleaved bands, Q6(a)(i) carried the diagram labels as its marking points, and Q6(a)(iii), Q7(a)(ii), Q8(b)(i), Q10(b)(i), Q10(b)(iii)–(iv) and Q10(e) shipped broken solution lines or merged bullets. On the remaining cards, “Full Credit (−1)” deductions welded onto a credit band are moved to the row note. All existing IDs are kept; prompts are restored from the paper and topics corrected as metadata.",
+    "The question booklet is LC003GLP200EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 1. All page references are PDF positions, which match the printed scheme page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2022-ol-p2-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Parts of the lines AC and BC are shown in the co-ordinate diagram below (not to scale): A is on the x-axis at (−2, 0), C is on the y-axis at (0, 3), and B is on the x-axis at (5, 0).",
+      "questionText": "Find the slope of AC."
+    },
+    {
+      "id": "maths-2022-ol-p2-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Parts of the lines AC and BC are shown in the co-ordinate diagram below (not to scale): A is on the x-axis at (−2, 0), C is on the y-axis at (0, 3), and B is on the x-axis at (5, 0).",
+      "questionText": "By using slopes, investigate if AC is perpendicular to BC. Justify your answer. (Tick one box only: AC is perpendicular to BC; AC is not perpendicular to BC.)"
+    },
+    {
+      "id": "maths-2022-ol-p2-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)",
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The triangle LMN is shown on the co-ordinate diagram below (not to scale). The point M has co-ordinates (9, 1). The triangle LMN is symmetrical about the y-axis.",
+      "questionText": "(i) Find the length |LM|. (ii) Write down the equation of the horizontal line LM."
+    },
+    {
+      "id": "maths-2022-ol-p2-q1-b-iii",
+      "printedParts": [
+        "Q1(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The triangle LMN is shown on the co-ordinate diagram below (not to scale). The point M has co-ordinates (9, 1). The triangle LMN is symmetrical about the y-axis.",
+      "questionText": "The line NM has equation x + 4y − 13 = 0, where x, y ∈ ℝ. Use this equation to find the co-ordinates of the point N."
+    },
+    {
+      "id": "maths-2022-ol-p2-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle k has equation (x − 4)² + (y + 2)² = 169.",
+      "questionText": "Write down the centre and radius of the circle k."
+    },
+    {
+      "id": "maths-2022-ol-p2-q2-a-ii",
+      "printedParts": [
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle k has equation (x − 4)² + (y + 2)² = 169.",
+      "questionText": "Is the point (11, 10) on the circle k, inside the circle k, or outside the circle k? Show your working out. (Tick one box only.)"
+    },
+    {
+      "id": "maths-2022-ol-p2-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The diagram below shows two circles, s and t. The circle s has centre (22, 13). The two circles touch at the point (12, 11).",
+      "questionText": "Find the co-ordinates of another point on the circle s, other than (12, 11)."
+    },
+    {
+      "id": "maths-2022-ol-p2-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The diagram below shows two circles, s and t. The circle s has centre (22, 13). The two circles touch at the point (12, 11).",
+      "questionText": "The radius of the circle t is half the radius of s. Find the co-ordinates of the centre of the circle t."
+    },
+    {
+      "id": "maths-2022-ol-p2-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A list of 7 numbers is shown below: 17, 8, 9, 8, 14, 11, 28",
+      "questionText": "Find the mean of these 7 numbers, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2022-ol-p2-q3-a-ii",
+      "printedParts": [
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A list of 7 numbers is shown below: 17, 8, 9, 8, 14, 11, 28",
+      "questionText": "Find the median of these 7 numbers."
+    },
+    {
+      "id": "maths-2022-ol-p2-q3-a-iii",
+      "printedParts": [
+        "Q3(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A list of 7 numbers is shown below: 17, 8, 9, 8, 14, 11, 28",
+      "questionText": "One more number is added to the list. The new median is 10·5. Find the number that was added to the list."
+    },
+    {
+      "id": "maths-2022-ol-p2-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "Ben has to choose three subjects to study. He must pick one subject from each of these three groups: Group A (3 subjects): French, Spanish, German. Group B (4 subjects): Biology, Physics, Chemistry, Business. Group C (5 subjects): Art, Accounting, History, Geography, Home Economics.",
+      "questionText": "How many different choices of three subjects can Ben make, picking one from each group?"
+    },
+    {
+      "id": "maths-2022-ol-p2-q3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "Ben has to choose three subjects to study. He must pick one subject from each of these three groups: Group A (3 subjects): French, Spanish, German. Group B (4 subjects): Biology, Physics, Chemistry, Business. Group C (5 subjects): Art, Accounting, History, Geography, Home Economics.",
+      "questionText": "The school is going to add one extra subject to one of these groups (A, B, or C). Which group should the extra subject be added to, in order to make the number of different choices of three subjects that Ben can make as large as possible? Justify your answer."
+    },
+    {
+      "id": "maths-2022-ol-p2-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "A group of students sat an exam. Each student was given a grade. The following table shows how many students got each grade: Distinction 8, High Merit 12, Merit 39, Achieved 13. Complete the pie chart below to show this information. Label each sector clearly. Show your working out. The sector for Distinction is already given. It has an angle of 40°."
+    },
+    {
+      "id": "maths-2022-ol-p2-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)",
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A large group of people took a reading test. The scores were normally distributed, with a mean of 100 and a standard deviation of 20. Use the empirical rule to answer parts (b)(i) and (b)(ii).",
+      "questionText": "(i) What percentage of the people had scores between 80 and 120? (ii) The top 2·5% of scores were given a grade of ‘Exceptional’. What was the least score that was needed to get this grade?"
+    },
+    {
+      "id": "maths-2022-ol-p2-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "The scores of six people on this test were as follows: 104, 82, 94, 113, 98, 105. Find the range and the standard deviation of these numbers. Give the standard deviation correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2022-ol-p2-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)",
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry",
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "An equilateral triangle PQR has sides of length 8 cm.",
+      "questionText": "(i) Write down the size of the angle ∠PQR. (ii) Show that the area of the triangle PQR is 16√3 cm²."
+    },
+    {
+      "id": "maths-2022-ol-p2-q5-a-iii",
+      "printedParts": [
+        "Q5(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "An equilateral triangle PQR has sides of length 8 cm. The area of the triangle PQR is 16√3 cm².",
+      "questionText": "Hence, or otherwise, find the perpendicular height of the triangle PQR, taking PQ as the base. Give your answer in the form a√b cm, where a, b ∈ ℕ."
+    },
+    {
+      "id": "maths-2022-ol-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "questionText": "GHK is a right-angled triangle. |∠GHK| = 90°, |GH| = 12 cm, and |GK| = 30 cm. Using the theorem of Pythagoras, find the distance |HK|. Give your answer correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2022-ol-p2-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The circle c is shown in the diagram below (not to scale). Its centre is at the point O. The points A, B, and D lie on the circle, and [AB] is a diameter of the circle.",
+      "questionText": "Write down |∠ADB|, the size of the total angle at the point D."
+    },
+    {
+      "id": "maths-2022-ol-p2-q6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The circle c is shown in the diagram below (not to scale). Its centre is at the point O. The points A, B, and D lie on the circle, and [AB] is a diameter of the circle.",
+      "questionText": "|∠AOD| = 130°. Work out the size of the angle marked X in the diagram."
+    },
+    {
+      "id": "maths-2022-ol-p2-q6-a-iii",
+      "printedParts": [
+        "Q6(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The circle c is shown in the diagram below (not to scale). Its centre is at the point O. The points A, B, and D lie on the circle, and [AB] is a diameter of the circle. |∠AOD| = 130°.",
+      "questionText": "The radius of the circle is 18 cm. Find the length of the arc AD. Give your answer in cm, in terms of π."
+    },
+    {
+      "id": "maths-2022-ol-p2-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)",
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "Two statements, A and B, are shown below.",
+      "questionText": "For each statement, put a tick (✓) in the correct box to show if it is true or false. Give a reason for your answer in each case. (i) Statement A: If two triangles are similar, then they must be congruent. (ii) Statement B: If two triangles are congruent, then they must be similar."
+    },
+    {
+      "id": "maths-2022-ol-p2-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "An animal shelter takes cats and dogs. The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table below shows the weights of 10 dogs (labelled A to J) on these two days. Weight Day X (kg): 4·5, 4·9, 5·3, 5·3, 5·5, 5·7, 6·7, 6·9, 7·3, 7·4. Weight Day Y (kg): 4·8, 5·4, 5·5, 6·1, 6·3, 6·0, 7·0, 7·6, 8·1, 7·9.",
+      "questionText": "Draw a back-to-back stem-and-leaf plot to show this information. (Key: 6 | 0 = 6·0 kg)"
+    },
+    {
+      "id": "maths-2022-ol-p2-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "An animal shelter takes cats and dogs. The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table below shows the weights of 10 dogs (labelled A to J) on these two days. Weight Day X (kg): 4·5, 4·9, 5·3, 5·3, 5·5, 5·7, 6·7, 6·9, 7·3, 7·4. Weight Day Y (kg): 4·8, 5·4, 5·5, 6·1, 6·3, 6·0, 7·0, 7·6, 8·1, 7·9.",
+      "questionText": "What does the stem-and-leaf plot show about the weights of the dogs on Day X and Day Y?"
+    },
+    {
+      "id": "maths-2022-ol-p2-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "An animal shelter takes cats and dogs. The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table below shows the weights of 10 dogs (labelled A to J) on these two days. Weight Day X (kg): 4·5, 4·9, 5·3, 5·3, 5·5, 5·7, 6·7, 6·9, 7·3, 7·4. Weight Day Y (kg): 4·8, 5·4, 5·5, 6·1, 6·3, 6·0, 7·0, 7·6, 8·1, 7·9.",
+      "questionText": "r is the correlation coefficient between the weight on Day X and the weight on Day Y. Based on the data in the table, pick the most likely value of r from the list below. Give a reason for your answer, based on the data in the table. Most likely value of r (tick one box only): −0·9, −0·2, 0·2, 0·9."
+    },
+    {
+      "id": "maths-2022-ol-p2-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "An animal shelter takes cats and dogs. The table below shows the breakdown of the animals in the shelter, by type of animal (cat or dog) and by sex (male or female), on a particular Monday. Cats: 5 male, 9 female, 14 in total. Dogs: 11 male. Total: 40 animals.",
+      "questionText": "Complete the table, by filling in the four missing values."
+    },
+    {
+      "id": "maths-2022-ol-p2-q7-c-i",
+      "printedParts": [
+        "Q7(c)(i)",
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "An animal shelter takes cats and dogs. The table below shows the breakdown of the animals in the shelter, by type of animal (cat or dog) and by sex (male or female), on a particular Monday. Cats: 5 male, 9 female, 14 in total. Dogs: 11 male. Total: 40 animals. Three different animals were picked at random from the animals in the shelter on this Monday.",
+      "questionText": "(i) Find the probability that the first animal picked was a cat. (ii) Find the probability that all three animals picked were male dogs. Give your answer correct to 3 decimal places."
+    },
+    {
+      "id": "maths-2022-ol-p2-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "An animal shelter takes cats and dogs. The table below shows the breakdown of the animals in the shelter, by type of animal (cat or dog) and by sex (male or female), on a particular Monday. Cats: 5 male, 9 female, 14 in total. Dogs: 11 male. Total: 40 animals.",
+      "questionText": "The 9 female cats were put in 9 separate pens. Work out the number of ways in which this could have been done (that is, the number of different possible arrangements)."
+    },
+    {
+      "id": "maths-2022-ol-p2-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "An animal shelter takes cats and dogs. The table below shows the breakdown of the animals in the shelter, by type of animal (cat or dog) and by sex (male or female), on a particular Monday. Cats: 5 male, 9 female, 14 in total. Dogs: 11 male. Total: 40 animals.",
+      "questionText": "By the end of this week, 10 of the animals had left the shelter, and no new animals had been taken in. If an animal was picked at random at the end of this week, the probability of picking a dog would be 11/15. Work out how many cats left the shelter during this week."
+    },
+    {
+      "id": "maths-2022-ol-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The top of a particular lighthouse is in the shape of a hemisphere on top of a cylinder. The hemisphere and the cylinder both have a radius of 3 m.",
+      "questionText": "Find the volume of the hemisphere. Give your answer in m³ in terms of π."
+    },
+    {
+      "id": "maths-2022-ol-p2-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The top of a particular lighthouse is in the shape of a hemisphere on top of a cylinder. The hemisphere and the cylinder both have a radius of 3 m.",
+      "questionText": "The volume of the cylinder is 36π m³. Work out h, the height of the cylinder."
+    },
+    {
+      "id": "maths-2022-ol-p2-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        50
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram on the right below shows part of the base of the lighthouse (not to scale). It is in the shape of a cone of radius 7·5 m, from which the top part has been removed, leaving a horizontal circle of radius 3 m.",
+      "questionText": "The height of the cone before the top part is removed is 47 m. Work out the size of the angle at the base of the cone, marked A in the diagram above. Give your answer correct to the nearest degree."
+    },
+    {
+      "id": "maths-2022-ol-p2-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        50
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry",
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The diagram on the right below shows part of the base of the lighthouse (not to scale). It is in the shape of a cone of radius 7·5 m, from which the top part has been removed, leaving a horizontal circle of radius 3 m. The height of the cone before the top part is removed is 47 m.",
+      "questionText": "Find the distance marked k on the diagram, the height after the top part is removed."
+    },
+    {
+      "id": "maths-2022-ol-p2-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Assume that the Fastnet lighthouse can be seen from anywhere within a circle of radius 50 km.",
+      "questionText": "Work out the area of the circle within which the Fastnet lighthouse can be seen. Give your answer correct to the nearest km²."
+    },
+    {
+      "id": "maths-2022-ol-p2-q8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Assume that the Fastnet lighthouse can be seen from anywhere within a circle of radius 50 km.",
+      "questionText": "50 km = 27 nautical miles. Use this to work out how many km are in 1 nautical mile. Give your answer correct to 4 significant figures."
+    },
+    {
+      "id": "maths-2022-ol-p2-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "questionText": "The top of the Fastnet lighthouse, F, is 49 m above sea level. The angle of elevation of the top of the lighthouse from a ship S is 1·2°, as shown in the diagram below (not to scale). Find the horizontal distance marked d below, from the ship to the base of the lighthouse. Give your answer in kilometres, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2022-ol-p2-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        52
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above the centre of its base. The front face is 12 m wide, its walls are 7 m high and its highest point is 8·5 m high; the shed is 18 m long.",
+      "questionText": "State which of the following statements is most likely to be true, and write down a possible height of Seán that would support your answer. Tick (✓) one box only: The shed at the highest point is 3 times as high as Seán; 5 times as high as Seán; 8 times as high as Seán."
+    },
+    {
+      "id": "maths-2022-ol-p2-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        52
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above the centre of its base. The front face is 12 m wide, its walls are 7 m high and its highest point is 8·5 m high; the shed is 18 m long.",
+      "questionText": "Seán says that his shed has a capacity of over one million litres, where 1 m³ = 1000 litres. Work out the volume of Seán’s shed, to show that he is correct."
+    },
+    {
+      "id": "maths-2022-ol-p2-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        53
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above the centre of its base. The front face is 12 m wide, its walls are 7 m high and its highest point is 8·5 m high; the shed is 18 m long.",
+      "questionText": "Use the theorem of Pythagoras to find the length of the distance marked d in the diagram below, the slant length of the roof. Give your answer in metres, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2022-ol-p2-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        54
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above the centre of its base. The front face is 12 m wide, its walls are 7 m high and its highest point is 8·5 m high; the shed is 18 m long.",
+      "questionText": "A scale diagram of the front of the shed is shown below. One point on the diagram is marked A. Construct an enlargement of the diagram below, with centre A and a scale factor of 3. Show all of your construction lines clearly.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2022-ol-p2-q9-e-i",
+      "printedParts": [
+        "Q9(e)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        55
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram below shows part of the roof of a smaller shed (not to scale). Some measurements are marked on the diagram: |AB| = 3 m, |AC| = 7 m and |∠BAC| = 30°.",
+      "questionText": "Show that |BC| = 4·65 m, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2022-ol-p2-q9-e-ii",
+      "printedParts": [
+        "Q9(e)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        56
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram below shows part of the roof of a smaller shed (not to scale). Some measurements are marked on the diagram: |AB| = 3 m, |AC| = 7 m and |∠BAC| = 30°.",
+      "questionText": "Find |∠ACB|, the angle that the roof makes at the point C. Give your answer correct to the nearest degree. Remember that |BC| = 4·65 m, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2022-ol-p2-q10-a",
+      "printedParts": [
+        "Q10(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        57
+      ],
+      "topicId": "maths-1-5",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A survey was carried out to investigate the amount and type of exercise that adults in Ireland are taking in 2022. This survey was carried out on a sample of adults in Ireland.",
+      "questionText": "Write down one advantage and one disadvantage of carrying out a survey on a sample instead of a population."
+    },
+    {
+      "id": "maths-2022-ol-p2-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        57
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A survey was carried out to investigate the amount and type of exercise that adults in Ireland are taking in 2022. This survey was carried out on a sample of adults in Ireland.",
+      "questionText": "A random sample of 1500 people took part in the survey. Show that the margin of error for the survey is 2·6%, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2022-ol-p2-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        57
+      ],
+      "topicId": "maths-1-5",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A survey was carried out to investigate the amount and type of exercise that adults in Ireland are taking in 2022. This survey was carried out on a sample of adults in Ireland. A random sample of 1500 people took part in the survey.",
+      "questionText": "71% of the sample said that they walk for recreation. Find the number of people from the sample who said that they walk for recreation."
+    },
+    {
+      "id": "maths-2022-ol-p2-q10-b-iii",
+      "printedParts": [
+        "Q10(b)(iii)",
+        "Q10(b)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        58
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A survey was carried out to investigate the amount and type of exercise that adults in Ireland are taking in 2022. This survey was carried out on a sample of adults in Ireland. A random sample of 1500 people took part in the survey; the margin of error is 2·6%. 71% of the sample said that they walk for recreation.",
+      "questionText": "(iii) Use the percentages given in (b)(i) and (b)(ii) to write down a 95% confidence interval for the percentage of all adults in Ireland who walk for recreation, in 2022. (iv) According to the 2019 Irish Sport Monitor Report, 65% of the adults in Ireland walked for recreation. Carry out a Hypothesis Test, at the 5% level of significance, to find out if this figure of 65% has changed in 2022, based on the results of the above survey. Clearly state your conclusion and give a reason for your conclusion."
+    },
+    {
+      "id": "maths-2022-ol-p2-q10-c",
+      "printedParts": [
+        "Q10(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        58
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "questionText": "Assume that 20% of adults in Ireland jog for recreation. Three adults are picked at random. Find the probability that exactly one of these adults jogs for recreation."
+    },
+    {
+      "id": "maths-2022-ol-p2-q10-d",
+      "printedParts": [
+        "Q10(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        58
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Sinéad is joining a gym. She will be able to use the gym, and also go to classes.",
+      "questionText": "She could pay for individual classes, at €6 per class. Sinéad estimates that there is: a 30% chance she will go to no classes in the year, a 60% chance she will go to 1 class a week, so 52 classes in a year, and a 10% chance she will go to 2 classes a week, so 104 classes a year. Use these figures to work out the expected value of the cost of the classes for a year."
+    },
+    {
+      "id": "maths-2022-ol-p2-q10-e",
+      "printedParts": [
+        "Q10(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        59
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Sinéad is joining a gym. She will be able to use the gym, and also go to classes.",
+      "questionText": "There are two price plans for the gym, Silver and Gold, as follows: Silver, €420 for the year and pay €6 for each class; Gold, €670 for the year and all classes are free. Work out the least number of classes that Sinéad would have to go to in a year, so that the Gold plan would cost less than the Silver plan."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any four / any two questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained."
+    },
+    {
+      "pages": [
+        9
+      ],
+      "wording": "pick one subject from each of these three groups / add one extra subject to one of these groups",
+      "classification": "counting-context",
+      "reason": "The choices are the objects counted (3 × 4 × 5), and the extra subject is the answer to one required comparison; not a choice of prompts."
+    },
+    {
+      "pages": [
+        12
+      ],
+      "wording": "Hence, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task; no printed pool of prompts."
+    },
+    {
+      "pages": [
+        4,
+        6,
+        15,
+        17,
+        24
+      ],
+      "wording": "Tick one box only",
+      "classification": "answer-selection",
+      "reason": "Perpendicular or not, on/inside/outside, true/false, the value of r and the height ratio are answers with justification, not alternative prompts."
+    },
+    {
+      "pages": [
+        29
+      ],
+      "wording": "exactly one of these adults",
+      "classification": "mathematical-context",
+      "reason": "Defines the event whose probability is required; there is a single prompt."
+    }
+  ],
+  "selectionDecisions": {
+    "3:6add43db1364664a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:61d2edd9d8426d56": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:cbb3062f202ab5ae": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "9:a9af9bca61936529": {
+      "classification": "counting-context",
+      "reason": "The groups are the subjects counted (one from each), or the extra subject is the answer to one required comparison; not a choice of prompts."
+    },
+    "9:20175a15416a3b22": {
+      "classification": "counting-context",
+      "reason": "The groups are the subjects counted (one from each), or the extra subject is the answer to one required comparison; not a choice of prompts."
+    },
+    "12:b7729bd1ce6326c2": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    },
+    "16:83c827928dc81395": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "29:8a0f5e35bb651c10": {
+      "classification": "mathematical-context",
+      "reason": "Defines the event “exactly one of three adults jogs” whose probability is required; there is a single prompt."
+    }
+  }
+}

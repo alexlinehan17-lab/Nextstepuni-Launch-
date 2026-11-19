@@ -1,0 +1,927 @@
+{
+  "status": "complete original-source and presentation review",
+  "reviewedAt": "2026-10-30",
+  "paperFileid": "LC003GLP230EV.pdf",
+  "schemeFileid": "LC003GLP030EV.pdf",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72
+  ],
+  "generalNotesPages": [
+    56,
+    57
+  ],
+  "offeredMarks": 325,
+  "candidateMarks": 300,
+  "practiceMarks": 325,
+  "scales": {
+    "5A": [
+      0,
+      5
+    ],
+    "5B": [
+      0,
+      2,
+      5
+    ],
+    "5C": [
+      0,
+      2,
+      4,
+      5
+    ],
+    "10B": [
+      0,
+      5,
+      10
+    ],
+    "10C": [
+      0,
+      4,
+      7,
+      10
+    ],
+    "10D": [
+      0,
+      2,
+      5,
+      8,
+      10
+    ],
+    "15C": [
+      0,
+      5,
+      10,
+      15
+    ],
+    "15D": [
+      0,
+      4,
+      7,
+      11,
+      15
+    ],
+    "25C": [
+      0,
+      8,
+      17,
+      25
+    ]
+  },
+  "tasks": [
+    {
+      "suffix": "1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        39,
+        58
+      ],
+      "questionText": "Write out the sample space showing all the possible outcomes. For example, BGG is one outcome, representing Boy, Girl, Girl.",
+      "stem": "Peter and Niamh arrive early at a large school and guess whether each of the next three students to enter will be a boy or a girl."
+    },
+    {
+      "suffix": "1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        39,
+        58
+      ],
+      "questionText": "Peter says these outcomes are equally likely. Niamh says they are not. What do you need to know about the students in the school to decide which of them is correct?",
+      "stem": "Peter and Niamh arrive early at a large school and guess whether each of the next three students to enter will be a boy or a girl."
+    },
+    {
+      "suffix": "1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        39,
+        58
+      ],
+      "questionText": "If all the outcomes are equally likely, what is the probability that the three students will be two girls followed by a boy?",
+      "stem": "Peter and Niamh arrive early at a large school and guess whether each of the next three students to enter will be a boy or a girl."
+    },
+    {
+      "suffix": "1-d",
+      "printedParts": [
+        "Q1(d)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        39,
+        58
+      ],
+      "questionText": "Niamh guesses there will be at least one girl; Peter guesses there will be either three boys or two boys and a girl. Who is more likely to be correct, assuming all outcomes are equally likely? Justify your answer.",
+      "stem": "Peter and Niamh arrive early at a large school and guess whether each of the next three students to enter will be a boy or a girl."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        40,
+        59
+      ],
+      "questionText": "Show on the Venn diagram the number of elements in each region.",
+      "stem": "The universal set is a normal deck of 52 playing cards. The two sets represent clubs and picture cards (kings, queens and jacks)."
+    },
+    {
+      "suffix": "2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "scale": "10B",
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        40,
+        59
+      ],
+      "questionText": "A card is drawn from a pack of 52 cards. Find the probability that the card drawn is the king of clubs."
+    },
+    {
+      "suffix": "2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        40,
+        59
+      ],
+      "questionText": "A card is drawn from a pack of 52 cards. Find the probability that the card drawn is a club or a picture card.",
+      "stem": "Picture cards are kings, queens and jacks."
+    },
+    {
+      "suffix": "2-b-iii",
+      "printedParts": [
+        "Q2(b)(iii)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        40,
+        59
+      ],
+      "questionText": "Two cards are drawn from a pack of 52 cards. Find the probability that neither is a club or a picture card. Give your answer correct to two decimal places.",
+      "stem": "Picture cards are kings, queens and jacks.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "scale": "15C",
+      "totalMarks": 15,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        41,
+        60
+      ],
+      "questionText": "Plot the four points on the diagram below.",
+      "stem": "A(6, −1), B(12, −3), C(8, 5) and D(2, 7) are four points."
+    },
+    {
+      "suffix": "3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        41,
+        60
+      ],
+      "questionText": "Describe two different ways of showing, using co-ordinate geometry techniques, that the points form a parallelogram ABCD.",
+      "stem": "A(6, −1), B(12, −3), C(8, 5) and D(2, 7) are four points."
+    },
+    {
+      "suffix": "3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        5,
+        6
+      ],
+      "schemePages": [
+        42,
+        60
+      ],
+      "questionText": "Use one of the ways you have described to show that ABCD is a parallelogram.",
+      "stem": "A(6, −1), B(12, −3), C(8, 5) and D(2, 7) are four points. Part (b) asks for two different co-ordinate geometry methods."
+    },
+    {
+      "suffix": "4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        42,
+        61
+      ],
+      "questionText": "Find the equation of c₁.",
+      "stem": "Two circles c₁ and c₂ have equal radius. c₁ has centre (0, 0) and cuts the x-axis at (5, 0). Use the original diagram."
+    },
+    {
+      "suffix": "4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        42,
+        61
+      ],
+      "questionText": "Show that the point P(−3, 4) is on c₁.",
+      "stem": "Two circles c₁ and c₂ have equal radius. c₁ has centre (0, 0) and cuts the x-axis at (5, 0). Use the original diagram."
+    },
+    {
+      "suffix": "4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        43,
+        61
+      ],
+      "questionText": "The two circles touch at P(−3, 4). P is on the line joining the two centres. Find the equation of c₂.",
+      "stem": "Two circles c₁ and c₂ have equal radius. c₁ has centre (0, 0) and cuts the x-axis at (5, 0). Use the original diagram."
+    },
+    {
+      "suffix": "4-d",
+      "printedParts": [
+        "Q4(d)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        43,
+        61
+      ],
+      "questionText": "Find the equation of the common tangent at P.",
+      "stem": "Two circles c₁ and c₂ have equal radius. c₁ has centre (0, 0) and cuts the x-axis at (5, 0). Use the original diagram. The circles touch at P(−3, 4), which lies on the line joining their centres."
+    },
+    {
+      "suffix": "5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        44,
+        62
+      ],
+      "questionText": "Find the radius length of the circle.",
+      "stem": "A circle is inscribed in a square of area 16 cm².",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        44,
+        62
+      ],
+      "questionText": "Find the area of the shaded region, in cm², correct to one decimal place.",
+      "stem": "A circle is inscribed in a square of area 16 cm². The shaded region is inside the square and outside the circle.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        45,
+        62
+      ],
+      "questionText": "Find the height of the candle.",
+      "stem": "A solid wax candle is a cylinder with a cone on top. The cylinder has diameter 3 cm and height 8 cm. The volume of wax is 21π cm³.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        45,
+        62
+      ],
+      "questionText": "Nine candles fit into a rectangular box with a square base. Find the volume of the smallest rectangular box that the candles will fit into.",
+      "stem": "A solid wax candle is a cylinder with a cone on top. The cylinder has diameter 3 cm and height 8 cm. The volume of wax is 21π cm³. Part (b)(i) asks for the candle height.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "6a-a-i",
+      "printedParts": [
+        "Q6A(a)(i)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        46,
+        63
+      ],
+      "questionText": "Write down a geometrical result that can be used to construct a tangent to a circle at a point."
+    },
+    {
+      "suffix": "6a-a-ii",
+      "printedParts": [
+        "Q6A(a)(ii)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        46,
+        63
+      ],
+      "questionText": "On the diagram shown, construct the tangent to the circle at A.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "6a-b",
+      "printedParts": [
+        "Q6A(b)"
+      ],
+      "scale": "15D",
+      "totalMarks": 15,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        46,
+        63
+      ],
+      "questionText": "Construct the circumcentre and circumcircle of the triangle below, using only a straight edge and compass. Show all construction marks clearly.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "6b",
+      "printedParts": [
+        "Q6B"
+      ],
+      "scale": "25C",
+      "totalMarks": 25,
+      "sourcePages": [
+        11
+      ],
+      "schemePages": [
+        47,
+        63
+      ],
+      "questionText": "Prove that |CD| = |CP|.",
+      "stem": "ABCD is a parallelogram. A, B and C lie on the circle which cuts [AD] at P. The line CP meets BA at Q."
+    },
+    {
+      "suffix": "7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        12
+      ],
+      "schemePages": [
+        48,
+        64
+      ],
+      "questionText": "Show the annual total sales of cars over the six years, using a suitable chart.",
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types."
+    },
+    {
+      "suffix": "7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        12
+      ],
+      "schemePages": [
+        48,
+        64
+      ],
+      "questionText": "Find the mean number of cars sold per year over the six years.",
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types."
+    },
+    {
+      "suffix": "7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        49,
+        64
+      ],
+      "questionText": "Calculate the percentage increase in annual car sales between 2009 and 2011.",
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types."
+    },
+    {
+      "suffix": "7-a-iv",
+      "printedParts": [
+        "Q7(a)(iv)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        49,
+        64
+      ],
+      "questionText": "Aoife says the increase shows car sales are currently going well. Paul says they are going badly: sales have fallen by 52% since 2007 and are well below average. Complete the sentences to give a criticism of each argument.",
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types. Part (a)(iii) calculates the increase from 2009 to 2011."
+    },
+    {
+      "suffix": "7-a-v",
+      "printedParts": [
+        "Q7(a)(v)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        49,
+        64
+      ],
+      "questionText": "Give a more balanced description of the pattern of car sales over the six years.",
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types."
+    },
+    {
+      "suffix": "7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        49,
+        64
+      ],
+      "questionText": "Describe how the sales of the cars are distributed over the four quarters of each year.",
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types."
+    },
+    {
+      "suffix": "7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "scale": "5A",
+      "totalMarks": 5,
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        49,
+        64
+      ],
+      "questionText": "Suggest a reason for this pattern of sales.",
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types. Part (b)(i) describes the distribution over the four quarters."
+    },
+    {
+      "suffix": "7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        49,
+        65
+      ],
+      "questionText": "The sales for the first quarter of 2012 are 36 081. Find, with justification, an estimate for the total annual sales for 2012.",
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types."
+    },
+    {
+      "suffix": "7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        12,
+        14
+      ],
+      "schemePages": [
+        50,
+        65
+      ],
+      "questionText": "Two pie charts show the change from 2006 to 2011 in the popularity of petrol and diesel cars. Complete the second pie chart.",
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        12,
+        14
+      ],
+      "schemePages": [
+        50,
+        65
+      ],
+      "questionText": "Which of statements A–E best describes the change over time in the popularity of diesel cars as a percentage of the total? Write the letter corresponding to the correct answer in the box.",
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types."
+    },
+    {
+      "suffix": "7-d-i",
+      "printedParts": [
+        "Q7(d)(i)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        15
+      ],
+      "schemePages": [
+        51,
+        65
+      ],
+      "questionText": "Construct a back-to-back stem-and-leaf plot of the above data.",
+      "stem": "Use the original CO₂ emissions data (g/km) for the 12 diesel and 12 petrol models. Part (d)(i) asks for a back-to-back stem-and-leaf plot."
+    },
+    {
+      "suffix": "7-d-ii",
+      "printedParts": [
+        "Q7(d)(ii)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        15
+      ],
+      "schemePages": [
+        51,
+        65
+      ],
+      "questionText": "Does the information suggest that diesel engines produce lower CO₂ emissions than petrol engines? Refer to the stem-and-leaf plot and an appropriate measure of central tendency.",
+      "stem": "Use the original CO₂ emissions data (g/km) for the 12 diesel and 12 petrol models. Part (d)(i) asks for a back-to-back stem-and-leaf plot."
+    },
+    {
+      "suffix": "7-d-iii",
+      "printedParts": [
+        "Q7(d)(iii)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        15
+      ],
+      "schemePages": [
+        51,
+        65
+      ],
+      "questionText": "Does the information suggest greater variation in the CO₂ emissions of diesel engines than petrol engines? Refer to the stem-and-leaf plot and an appropriate measure of variability.",
+      "stem": "Use the original CO₂ emissions data (g/km) for the 12 diesel and 12 petrol models. Part (d)(i) asks for a back-to-back stem-and-leaf plot."
+    },
+    {
+      "suffix": "8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        16
+      ],
+      "schemePages": [
+        52,
+        66
+      ],
+      "questionText": "Explain what is meant by a scalene triangle.",
+      "stem": "The planned roof supports form scalene triangles of different sizes."
+    },
+    {
+      "suffix": "8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "scale": "15D",
+      "totalMarks": 15,
+      "sourcePages": [
+        16
+      ],
+      "schemePages": [
+        52,
+        66
+      ],
+      "questionText": "Find the length of [FG].",
+      "stem": "Triangles ABC, CDE and EFG form roof supports. CDE is the enlargement of ABC and EFG is the enlargement of CDE under the same enlargement. |AB| = 7·2 m, |BC| = 8 m, |CD| = 9 m and |∠DCB| = 60°. Use the original diagram.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "scale": "15D",
+      "totalMarks": 15,
+      "sourcePages": [
+        16
+      ],
+      "schemePages": [
+        52,
+        66
+      ],
+      "questionText": "Find the length of [BD], correct to three decimal places.",
+      "stem": "Triangles ABC, CDE and EFG form roof supports. CDE is the enlargement of ABC and EFG is the enlargement of CDE under the same enlargement. |AB| = 7·2 m, |BC| = 8 m, |CD| = 9 m and |∠DCB| = 60°. Use the original diagram.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-a-iv",
+      "printedParts": [
+        "Q8(a)(iv)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        16,
+        17
+      ],
+      "schemePages": [
+        53,
+        66
+      ],
+      "questionText": "The centre of the enlargement is O. Find the distance from O to the point B.",
+      "stem": "Triangles ABC, CDE and EFG form roof supports. CDE is the enlargement of ABC and EFG is the enlargement of CDE under the same enlargement. |AB| = 7·2 m, |BC| = 8 m, |CD| = 9 m and |∠DCB| = 60°. Use the original diagram.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-a-v",
+      "printedParts": [
+        "Q8(a)(v)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        16,
+        18
+      ],
+      "schemePages": [
+        54,
+        67
+      ],
+      "questionText": "The height of G above the horizontal line BF cannot exceed 11·6 m. Does the plan meet this condition? Justify your answer by calculation.",
+      "stem": "Triangles ABC, CDE and EFG form roof supports. CDE is the enlargement of ABC and EFG is the enlargement of CDE under the same enlargement. |AB| = 7·2 m, |BC| = 8 m, |CD| = 9 m and |∠DCB| = 60°. Use the original diagram."
+    },
+    {
+      "suffix": "8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        19
+      ],
+      "schemePages": [
+        55,
+        67
+      ],
+      "questionText": "Find the lengths of the horizontal line and the offsets, taking each grid unit as 5 mm, and record the lengths on the diagram.",
+      "stem": "A horizontal line is drawn across the widest part of an irregular shape and five offsets at equal intervals. Each grid unit represents 5 mm.",
+      "fullCreditMinusOne": true,
+      "measurementRequired": true
+    },
+    {
+      "suffix": "8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "scale": "15D",
+      "totalMarks": 15,
+      "sourcePages": [
+        19
+      ],
+      "schemePages": [
+        55,
+        67
+      ],
+      "questionText": "Use the trapezoidal rule to estimate the area of the shape.",
+      "stem": "A horizontal line is drawn across the widest part of an irregular shape and five offsets at equal intervals. Each grid unit represents 5 mm. Part (b)(i) asks for the lengths of the horizontal line and offsets.",
+      "fullCreditMinusOne": true
+    }
+  ],
+  "notes": [
+    "All 20 original paper pages and scheme pages 37–72 independently visually inspected. 43 published tasks; both Q6A and Q6B geometry routes retained. 325 offered/practice marks, 300 candidate marks.",
+    "Q3(b) requests two methods under one 5B scale, with no finite printed option pool. All four model approaches retained in Q3(c). Q7(c)(ii) is one multiple-choice answer task with all A–E statements: D full credit, B/C partial credit.",
+    "Q8 detailed task notes supersede its inconsistent summary table: part (a) scales 5B,15D*,15D*,5B*,10D and part (b) 10C*,15D*. Ten starred tasks only: Q2(b)(iii), all Q5 parts, Q8(a)(ii,iii,iv), Q8(b)(i,ii).",
+    "The Q6A(a)(i) model incorrectly repeats tangent instead of radius. Preserve original and disclose the correct geometrical result beside it.",
+    "This paper asks for the trapezoidal rule in Q8(b)(ii), unlike the parallel Phase 1 paper’s Simpson rule. Correct original model and task retained. All original source diagrams, scales, tables and dependent stems remain available."
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        10,
+        11
+      ],
+      "wording": "either Question 6A or Question 6B",
+      "classification": "expanded-alternatives",
+      "reason": "All three Q6A tasks and the complete Q6B proof retained at their own published tariffs."
+    },
+    {
+      "pages": [
+        5,
+        6
+      ],
+      "wording": "two different ways; Use one of the ways you have described",
+      "classification": "open-method-choice",
+      "reason": "No closed method list appears in the paper. Two descriptions remain one 5B task and application one 5C task; example scheme methods are not printed practice options."
+    },
+    {
+      "pages": [
+        3,
+        4,
+        12,
+        13,
+        14,
+        15,
+        19
+      ],
+      "wording": "all outcomes; either three boys or two boys and a girl; each region; criticism of each argument; statements A–E; lengths of offsets",
+      "classification": "all-required-or-answer-construction",
+      "reason": "All entries, comparisons and lengths are required. Predictions and the five-option multiple-choice answer are mathematical data and answer selection, not optional practice prompts."
+    }
+  ],
+  "paperSha256": "a00eced9ae5939af1c3ef0947391079dcd03309cd35ca9c9c2febf4bc67c1e5e",
+  "schemeSha256": "cd5eb0637449f098575ff73ce6eaaf3cbaf355c099f08cbae2a32cd9053bd7d0"
+}
