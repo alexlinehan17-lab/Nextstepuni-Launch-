@@ -1,0 +1,68 @@
+{
+  "recordedAt": "2026-11-19T20:00:00Z",
+  "reader": "Claude third reader (assigned by the Claude coordinator)",
+  "readerA": "root reader (rootHeadingIds / rootCardMarks)",
+  "readerB": "second reader (secondHeadingIds / secondCardMarks)",
+  "method": "Original paper and scheme renders in original-pages/ read for every item. Rules: PLAN R7/R9, CARD-STANDARD sections 5 and 9. Audio Visual and Case Study are kept for asks answered only from the recording or the printed case; an ask that tests Link Module content goes under that content heading (the model lane's own LCVP pass-C precedent).",
+  "items": [
+    {
+      "id": "A3",
+      "decision": {"headingIds": ["link-modules-common-1-job-seeking-skills"]},
+      "reason": "Paper p3 Q3 asks the key to a recruitment agency's success and scheme p4 pays 2 @ 1m for matching job-seekers to vacancies and knowing the employment sectors, which is knowledge of agencies as a job-seeking route rather than of running a local business.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "A4",
+      "decision": {"headingIds": ["link-modules-common-audio-visual"]},
+      "reason": "Paper p4 Q4 asks why emigration is not an option for Michael and scheme p4 pays only his personal reasons from the recording (not leaving friends and family, fear of no job on return), so the ask is recall of the audio-visual with no module content.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C3b",
+      "decision": {"headingIds": ["link-modules-common-1-introduction-to-working-life"]},
+      "reason": "Paper p21 asks why the cafe wants a customer-focused deli assistant and scheme p11 pays what the job demands of the worker (dealing with the public, satisfying customers so they return, competitive edge), which is the nature of the job and workplace, not an enterprise skill.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C5a",
+      "decision": {"headingIds": ["link-modules-common-2-an-enterprise-activity"]},
+      "reason": "Paper p26 asks for the agenda of the first class meeting for the class's non-uniform-day fundraiser and scheme p14 pays 5 @ 1m for planning items for that activity (officers, charity, work plan, finances, principal's permission, date), so it is planning the class enterprise activity, as the live 2025 Q5(a) fundraiser agenda is filed.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C5c",
+      "decision": {"headingIds": ["link-modules-common-2-an-enterprise-activity"]},
+      "reason": "Paper p27 asks the importance of financial planning for this fundraiser and scheme p15 pays targets for the charity, monitoring money collected, what to charge and sponsorship, all about planning the class activity itself.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "B2(i)",
+      "decision": {
+        "cards": 2,
+        "cardMarks": [3, 3],
+        "perCardHeadingIds": [
+          ["link-modules-common-2-local-business-enterprises"],
+          ["link-modules-common-2-local-voluntarycommunity-enterprises"]
+        ],
+        "perCardSubject": ["County Enterprise Board", "County Council"]
+      },
+      "reason": "Paper p10 names two organisations and asks why each is on the committee (no choice), and scheme p6 prints a separate answer for each (1 CEB, 2 County Council) at 2 @ 3m (2+1), so the student answers two things separately for separate marks (R7) and they sit under different headings.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "C3(a)",
+      "decision": {
+        "cards": 3,
+        "cardMarks": [2, 2, 2],
+        "perCardHeadingIds": [
+          ["link-modules-common-1-job-seeking-skills"],
+          ["link-modules-common-1-job-seeking-skills"],
+          ["link-modules-common-1-introduction-to-working-life"]
+        ],
+        "perCardSubject": ["CV", "referees", "equal opportunities employer"]
+      },
+      "reason": "Paper p20 underlines exactly three named terms and asks for all three (not a choice), and scheme p11 prints a separate definition for each at 3 @ 2m (0, 2), so each term is answered separately for its own marks (R7); equal opportunities employer is filed where the live 2021 Q4(b) equal-opportunities card is.",
+      "agreesWith": "A"
+    }
+  ]
+}

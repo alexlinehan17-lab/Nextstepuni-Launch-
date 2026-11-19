@@ -1,0 +1,32 @@
+{
+  "recordedAt": "2026-11-19T19:13:24.637947+00:00",
+  "status": "Review-only provisional shape; no production writes or adjudication.",
+  "cards": 48,
+  "alternativeCards": 45,
+  "offeredMarks": 210,
+  "sourceParts": 40,
+  "candidateMaximum": 160,
+  "payloadSha256": "11832f5af645fd70d1aecbb689443d39cad5624b5efc4ee62ea751d62d090ce2",
+  "wholeNotices": [
+    "lcvp-2010-cl-c1a",
+    "lcvp-2010-cl-c2a",
+    "lcvp-2010-cl-c2a-2",
+    "lcvp-2010-cl-c4a",
+    "lcvp-2010-cl-c4a-2",
+    "lcvp-2010-cl-c6c-2"
+  ],
+  "partialNotices": [
+    "lcvp-2010-cl-b2ii-2",
+    "lcvp-2010-cl-b3iii",
+    "lcvp-2010-cl-c1c",
+    "lcvp-2010-cl-c2d",
+    "lcvp-2010-cl-c6b"
+  ],
+  "outstanding": [
+    "B2(i) and C3(a) split adjudication; B2(ii) generic-component consistency",
+    "Five display-heading differences and final filing",
+    "Independent candidate review and source-provenance checks",
+    "Source/Atlas bindings, application and browser checks",
+    "Fresh archive recheck and original video hosting/playback"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "recordedAt": "2026-11-19T19:10:16.628797+00:00",
+  "seen": [
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/original-pages/paper-08.png",
+      "sha256": "ea86b7ec3f1faa7bea362694f32ebed9600828073d54e38c21fbc90a5e8bc79a"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/original-pages/paper-20.png",
+      "sha256": "64e9bdc8c1cb2048012c2451355b2fb440b85ce8853779dbf846c8f755055e3c"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/original-pages/scheme-16.png",
+      "sha256": "1a4e4c8878c8bc3edd3e388edfb6e842d4381353adef476ca2a3bbe6c6705696"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/original-pages/scheme-11.png",
+      "sha256": "ad3a4a480f65ce1057062e293bb1f52d8819a0a51f9b6a9b16745aed0150d33f"
+    }
+  ],
+  "findings": [
+    "All12 population values and six columns confirmed; all five preceding paragraphs and final paragraph retained.",
+    "Full Gourmet Café advertisement confirmed; CV, referees and equal opportunities employer are three distinct underlined fixed terms. Split remains unresolved.",
+    "Scheme16 confirms2@3m(1+2) followed by Explanation and example; no semantic allocation imposed.",
+    "Additional partial notices confirmed against scheme11/16; see additional-r4-evidence.json."
+  ],
+  "limitation": "Four original images reopened for authoring. Earlier independent reading records all52; no all-page reread claimed."
+}

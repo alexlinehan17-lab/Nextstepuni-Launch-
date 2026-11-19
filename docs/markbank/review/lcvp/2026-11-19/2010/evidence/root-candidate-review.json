@@ -1,0 +1,49 @@
+{
+  "recordedAt": "2026-11-19T19:13:37.503924+00:00",
+  "reader": "Codex root, independent of candidate author",
+  "payloadSha256": "11832f5af645fd70d1aecbb689443d39cad5624b5efc4ee62ea751d62d090ce2",
+  "read": {
+    "questionsAndScoringControls": 48,
+    "selectedCompleteSchemeBlocks": 40,
+    "originalPagesReopened": [
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/original-pages/paper-08.png",
+        "sha256": "ea86b7ec3f1faa7bea362694f32ebed9600828073d54e38c21fbc90a5e8bc79a"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/original-pages/paper-20.png",
+        "sha256": "64e9bdc8c1cb2048012c2451355b2fb440b85ce8853779dbf846c8f755055e3c"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/original-pages/scheme-14.png",
+        "sha256": "a2b32cb4579ecb8c5295aff6c6859b64ba1e7d4a3a93155c157f8377dd113ebe"
+      },
+      {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/original-pages/scheme-16.png",
+        "sha256": "1a4e4c8878c8bc3edd3e388edfb6e842d4381353adef476ca2a3bbe6c6705696"
+      }
+    ]
+  },
+  "confirmed": [
+    "48 provisional asks / 40 paper labels / 210 offered marks. Both split alternatives remain retained.",
+    "All12 original population-table values match the case transcription, including both totals; full five preceding paragraphs and final paragraph retained.",
+    "Gourmet Café advertisement contains all three underlined terms and remains before reveal. Split adjudication remains pending.",
+    "C5(a) retains both compulsory one-mark agenda items plus three other items.",
+    "Unequal response awards and binary component controls match the printed allocations. C6(b) keeps literal1+2 without assigning words to either number.",
+    "All48 question/row shapes read; all40 scheme blocks read in bounded groups. Earlier truncated bulk output was not counted as reading."
+  ],
+  "pendingSourceQuestions": [
+    "C2(d): missing developed descriptions for bare method examples; second reader rechecking exact scope.",
+    "C6(b): no example for Take steps to avoid bullying; second reader rechecking original instruction and other options."
+  ],
+  "limitations": [
+    "Not a release approval or application/browser clearance.",
+    "B2(i), C3(a), generic B2(ii) split consistency and five topic differences still need third reading.",
+    "No fresh archive or video verification."
+  ],
+  "amendment": {
+    "recordedAt": "2026-11-19T19:15:59.789442+00:00",
+    "payloadSha256": "11832f5af645fd70d1aecbb689443d39cad5624b5efc4ee62ea751d62d090ce2",
+    "confirmed": "Both scoped zero-mark notices are present with all earlier controls/content unchanged, as recorded in additional-r4-evidence.json. Original scheme11 and16 inspected by root. Six whole/five partial notices. Source review follow-ups resolved; third-reading and release limits remain."
+  }
+}

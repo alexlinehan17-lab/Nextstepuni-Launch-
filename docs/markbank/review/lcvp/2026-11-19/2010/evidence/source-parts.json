@@ -1,0 +1,952 @@
+{
+  "recordedAt": "2026-11-19T19:08:53.380668+00:00",
+  "status": "Review-only source selections; no production writes.",
+  "sourceSha256": {
+    "paper": "4669535c42a2604efb2288fef4d1e814e52949af561cef5ee04f93b3e86935a7",
+    "scheme": "488a5897231de7d8bc7d4ea99b987ec23d5eff05ea9f88539dcf2380843e7b70"
+  },
+  "printedParts": 40,
+  "proposedAsks": 48,
+  "offeredMarks": 210,
+  "candidateMaximum": 160,
+  "sectionCStems": {
+    "1": "Enterprise is essential for progress. Consider a business/enterprise familiar to you.",
+    "2": "Planning an event is an essential part of the LCVP programme.",
+    "3": "A Job Advertisement with questions relating to recruitment. Gourmet Café Vacancy for Deli Assistant We are looking for an enthusiastic, customer-focused, friendly and hardworking person to work in our busy Kilkenny store. We are offering an attractive salary and flexible working hours. Please reply with CV including two referees to mgleeson@gourmetcafe.ie Gourmet Café is an equal opportunities employer.",
+    "4": "Leadership and communication skills are important for people in businesses and community organisations. Consider an LCVP activity where you had a leadership role.",
+    "5": "Your class have decided to run a non-uniform day as a charity fundraiser.",
+    "6": "Undertaking appropriate work experience/shadowing is a core element of the Link Modules."
+  },
+  "records": [
+    {
+      "id": "lcvp-2010-cl-a1",
+      "ref": "A1",
+      "questionText": "Why did Jane jump at the chance to manage a recruitment agency?",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "sourceSchemeBlock": "Why did Jane jump at the chance to manage a recruitment agency?             2 marks\n\n         She had decided HR was her true calling/as after working in several different departments she had\n          experience in HR which she liked.\n                                                                              1 @ 2m\n                                                                                             (1 + 1)\n",
+      "sourceSchemePrompt": "Why did Jane jump at the chance to manage a recruitment agency?",
+      "proposedCardMarks": [
+        2
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Career preference and HR experience, 1 @ 2m (1 + 1)."
+    },
+    {
+      "id": "lcvp-2010-cl-a2",
+      "ref": "A2",
+      "questionText": "Name two skills required to run a business",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "sourceSchemeBlock": "Name two skills needed to run a business.                                  2 marks\n\n          •  Finance,\n          •   Staffing,\n          •  Marketing,\n          •   Negotiating.\n                                                                              2 @ 1m\n",
+      "sourceSchemePrompt": "Name two skills needed to run a business.",
+      "proposedCardMarks": [
+        2
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Any two of finance/staffing/marketing/negotiating at 1m."
+    },
+    {
+      "id": "lcvp-2010-cl-a3",
+      "ref": "A3",
+      "questionText": "What is the key to success for a recruitment agency?",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "sourceSchemeBlock": "What is the key to success for a recruitment agency?                        2 marks\n\n             1.   To be able to match employees to vacancies.\n             2.    Have a thorough understanding of many different sectors/sales, financial, manufacturing,\n                  IT.\n\n                                                                              2 @ 1m\n",
+      "sourceSchemePrompt": "What is the key to success for a recruitment agency?",
+      "proposedCardMarks": [
+        2
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Matching employees and understanding sectors, 2 @ 1m."
+    },
+    {
+      "id": "lcvp-2010-cl-a4",
+      "ref": "A4",
+      "questionText": "Why is emigration not an option for Michael?",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "sourceSchemeBlock": "Why is emigration not an option for Michael?                             4 marks\n\n             1. He does not want to leave his friends and family.\n             2. He thinks it might be hard to get a job when he returns.\n\n                                                                              2 @ 2m\n                                                                                                           (0, 2)\n",
+      "sourceSchemePrompt": "Why is emigration not an option for Michael?",
+      "proposedCardMarks": [
+        4
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Two reasons emigration not an option, 2 @ 2m (0, 2)."
+    },
+    {
+      "id": "lcvp-2010-cl-a5",
+      "ref": "A5",
+      "questionText": "What are Michael’s weaknesses as a job seeker?",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "sourceSchemeBlock": "What are Michael’s weaknesses as a job seeker?                           4 marks\n\n             1. His CV is not as good as it could be/it is not a good show case.\n             2. His CV is not updated e.g. further education\n             3. He has worked as an Architectural technician/ it is hard to get employment in the construction\n                sector.\n             4. Not flexible/not willing to emigrate\n             5. No personal contact with potential employers/he is sending out, uploading CV to employers\n             6. Lacks employment experience\n\n                                                                              2 @ 2m\n                                                                                             (1 + 1)\n",
+      "sourceSchemePrompt": "What are Michael’s weaknesses as a job seeker?",
+      "proposedCardMarks": [
+        4
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Jobseeker weaknesses, 2 @ 2m (1 + 1), six options."
+    },
+    {
+      "id": "lcvp-2010-cl-a6",
+      "ref": "A6",
+      "questionText": "What advice does Jane offer for a good CV?",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        5
+      ],
+      "sourceSchemeBlock": "What advice does Jane offer for a good CV?                            4 marks\n\n          1.    Make it stand out. Be different. Use eye catching subject lines.\n          2.     Emphasise your uniqueness/what you can do better than anyone else/include further\n               education\n          3.    Make sure your key achievements are highlighted.\n          4.   CV should be easy to read\n          5.     Match your CV to the job on offer.\n          6.     Prepare well and put a lot of thought into it.\n                                                                         4 @ 1m\n",
+      "sourceSchemePrompt": "What advice does Jane offer for a good CV?",
+      "proposedCardMarks": [
+        4
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Good CV advice, 4 @ 1m, six options."
+    },
+    {
+      "id": "lcvp-2010-cl-a7",
+      "ref": "A7",
+      "questionText": "Outline three reasons why preparation for interviews pays off.",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        5
+      ],
+      "sourceSchemeBlock": "Outline three reasons why preparation for interviews pays off?             6 marks\n\n          1.    Your answers allow an employer to get to know more about you and more about your\n                personality than what is on your CV/give detailed responses/research the\n               company/anticipate questions in advance/prepare answers.\n          2.    You only get one chance to make a first impression so dress appropriately/ use of body\n               language/shaking hands/asking inappropriate questions\n          3.     Ensure employers won’t find out anything inappropriate about you from social\n              networking sites.\n          4.      Interviews become easier when you have practiced public speaking.\n\n                                                                         3 @ 2m\n                                                                                        (1 + 1)\n",
+      "sourceSchemePrompt": "Outline three reasons why preparation for interviews pays off?",
+      "proposedCardMarks": [
+        6
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Interview preparation benefits, 3 @ 2m (1 + 1), four options."
+    },
+    {
+      "id": "lcvp-2010-cl-a8",
+      "ref": "A8",
+      "questionText": "In Jane’s opinion how are some people responding positively to the downturn in the economy?",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        5
+      ],
+      "sourceSchemeBlock": "In Jane’s opinion how are some people responding positively to the downturn in the\n       economy?\n                                                                         6 marks\n\n          1.    Some people are opting to start their own businesses/Entrepreneurial activity is strong\n                 in Ireland which is good for the economy/will bring on even more business/ some past\n               candidates who used her services are now employing people themselves.\n\n          2.    Many are using the fact that they are out of a job as a chance to review their own\n                career paths.\n                                                        Two statements\n                                                1@ 4m (2 + 2)\n                                                1@ 2m (0, 2)\n",
+      "sourceSchemePrompt": "In Jane’s opinion how are some people responding positively to the downturn in the economy?",
+      "proposedCardMarks": [
+        6
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-1-career-investigation"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Two statements, 1 @ 4m (2 + 2), 1 @ 2m (0, 2). Preserve both complete statements and unequal awards; one printed question."
+    },
+    {
+      "id": "lcvp-2010-cl-b1i",
+      "ref": "B1(i)",
+      "questionText": "List three stakeholders other than the County Enterprise Board and the County Council.",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        6
+      ],
+      "sourceSchemeBlock": "\n\n         1.  Social, Sport, commercial, educational organisations\n                                                                         3 @ 1m\n",
+      "sourceSchemePrompt": "List three stakeholders other than the County Enterprise Board and the County Council.",
+      "proposedCardMarks": [
+        3
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Three stakeholders other than CEB/Council, 3 @ 1m. Four stakeholder categories."
+    },
+    {
+      "id": "lcvp-2010-cl-b1ii",
+      "ref": "B1(ii)",
+      "questionText": "Give one reason why each stakeholder you mentioned would be involved with the Community Development Committee.",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        6
+      ],
+      "sourceSchemeBlock": "\n\n                Social:       To ensure that the needs of all age groups are represented young/old.\n                Sport:       To make sure amenities are developed that they can use/encourage\n                                sport in their area/provide proper facilities.\n              Commercial:  To ensure that business parks that may be developed will be\n                               appropriate for the businesses to use/their interests will be\n                               represented/boost sales/good PR/provide business experience/skill.\n               Educational:   To show the young people that their education is important to the\n                                 area/representative of young people’s interests/provide training/\n                          up skilling/to develop school projects.\n\n                                           No repetition of reasons allowed.\n                                             Any valid reason acceptable.\n                                                                         3 @ 1m\n",
+      "sourceSchemePrompt": "Give one reason why each stakeholder you mentioned would be involved with the Community Development Committee.",
+      "proposedCardMarks": [
+        3
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Three stakeholder reasons, 3 @ 1m; no repetition, any valid reason accepted. Keep chosen stakeholders and whole case."
+    },
+    {
+      "id": "lcvp-2010-cl-b2i",
+      "ref": "B2(i)",
+      "questionText": "Why are the County Enterprise Board and the County Council part of the Community Development Committee?",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        6
+      ],
+      "sourceSchemeBlock": "1.   The County Enterprise Boards promote entrepreneurship/by helping existing\n                      Enterprises and new enterprises in local areas/help new enterprises with grants,\n                    advice or mentoring.\n\n                 2.   The County Councils look after local areas/ they have responsibility for\n                     planning/ environmental issues and amenities in these areas.\n                                                                         2 @ 3m\n                                                                                        (2 + 1)\n",
+      "sourceSchemePrompt": "Why are the County enterprise Board and the County Council part of the Community Development Committee?",
+      "proposedCardMarks": [
+        3,
+        3
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-local-business-enterprises",
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "perAskHeadingIds": [
+        [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      ],
+      "sourceDecision": "Paper asks about both specifically named organisations, with no choice. Original scheme page 6 supplies distinct CEB and County Council model answers, 2 @ 3m (2 + 1). R7: separate required answers receive 3 marks each. Keep whole Killmaloe case and both organisations in question context."
+    },
+    {
+      "id": "lcvp-2010-cl-b2ii",
+      "ref": "B2(ii)",
+      "questionText": "Identify three ways the development of new enterprises in Killmaloe can be encouraged. Explain each of your answers.",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        6
+      ],
+      "sourceSchemeBlock": "1.     Grants.\n                  2.     Serviced facilities/enterprise units/infrastructure.\n                  3.     Support/mentoring/advice.\n                  4.    Work with enterprise courses in local schools/colleges/provide\n                         training/courses.\n                  5.     Tourism - marketing/website/promotion/adventure centre.\n                                                                         3 @ 2m\n                                                                                        (1 +1)\n",
+      "sourceSchemePrompt": "Identify three ways the development of new enterprises in Killmaloe can be encouraged. Explain each of your answers.",
+      "proposedCardMarks": [
+        3,
+        3
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "perAskHeadingIds": [
+        [
+          "link-modules-common-2-local-business-enterprises"
+        ],
+        [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      ],
+      "sourceDecision": "Original paper has separate Identify three ways and Explain each sentences. Scheme gives 3 @ 2m (1 + 1). Proposed 3 naming + 3 explanation marks; allocation does not explicitly label each 1m, so preserve this boundary and independent comparison. Some printed ways lack an explanation: scope the R4 notice to those gaps."
+    },
+    {
+      "id": "lcvp-2010-cl-b3i",
+      "ref": "B3(i)",
+      "questionText": "Describe one way the local people may have been asked for their opinion. Give two advantages of this method of gathering information.",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        7
+      ],
+      "sourceSchemeBlock": "1.     Questionnaire/Suggestion Box\n                      This is a written set of questions/requested comments designed to cover the\n                       areas you are interested in finding out about/ view opinions/make decisions\n\n                    Advantages\n                          (a)    The design is easy\n                         (b)    Quick to administer\n                          (c)    Cheap to do.\n\n                    Advantages\n                  2.     Interview\n                      This is a one to one way of finding out the views to particular questions. The\n                     answers are completed by the interviewer.\n\n                          (a)    Questions can be explained by the interviewer.\n                         (b)    High response to all questions\n\n                  3.    Community Meeting\n             A gathering of local stakeholders/local people.\n\n                    Advantages\n                           (a)    Brainstorm\n                         (b)    Different opinions expressed and heard.\n\n                                                                         4 marks\n                                                                         Description 2m (1 + 1)\n                                                                 Advantages 2 @ 1m\n",
+      "sourceSchemePrompt": "Describe one way the local people may have been asked for their opinion. Give two advantages of this method of gathering information.",
+      "proposedCardMarks": [
+        2,
+        2
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": [
+        [
+          "link-modules-common-2-enterprise-skills"
+        ],
+        [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      ],
+      "sourceDecision": "Description 2m (1 + 1), advantages 2 @ 1m separately printed. Three method pools; selected method context on advantages."
+    },
+    {
+      "id": "lcvp-2010-cl-b3ii",
+      "ref": "B3(ii)",
+      "questionText": "Using the information in the Table suggest one trend that will influence the Community Development Committee’s decisions.",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        7
+      ],
+      "sourceSchemeBlock": "Trend\n\n            Any category can be selected.                          Relevant comment.\n\n                Population – number of young people decreasing/number of old people increasing.\n\n\n                                                         2m (0, 2)\n",
+      "sourceSchemePrompt": "Using the information in the table suggest one trend that will influence the Community Developments Committee’s decisions.",
+      "proposedCardMarks": [
+        2
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Relevant population trend 2m (0, 2), original table required. Young decreasing/old increasing printed."
+    },
+    {
+      "id": "lcvp-2010-cl-b3iii",
+      "ref": "B3(iii)",
+      "questionText": "Outline two projects you think the Community Development Committee should prioritise to enable Killmaloe meet the challenges it now faces yet retain what’s good about the town/area.",
+      "paperPages": [
+        11,
+        12
+      ],
+      "schemePages": [
+        8
+      ],
+      "sourceSchemeBlock": "1.    Scenic walks/Tidy Towns/Litter Campaigns/landscaping\n2.   Beach\n3.    Mill\n4.   Adventure Centre\n5.   Resource Centre\n6.   Employer\n7.   Creche\n8.   Website\n\n\n                                                                 2 @ 3m\n\n                                1m – statement of the project\n                                1m – how they met the challenge\n\n                                1m – retain what’s good about the area\n                                  No repetition of points.\n",
+      "sourceSchemePrompt": "Outline two projects you think the Community Development Committee should prioritise to enable Killmaloe meet the challenges it now faces yet retain what’s good about the town/area.",
+      "proposedCardMarks": [
+        6
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "One outline of two prioritised projects. 2 @ 3m: project 1, meets challenge 1, retains good 1; no repetition. Eight project names only: no invented explanations, preserve fixed no-answer notice for absent content."
+    },
+    {
+      "id": "lcvp-2010-cl-c1a",
+      "ref": "C1(a)",
+      "questionText": "State the product/service provided by this business/enterprise.",
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        9
+      ],
+      "sourceSchemeBlock": "State the product/service provided by this business/enterprise\n                                                                        2 marks\n            Name of the product/service                            2m\n",
+      "sourceSchemePrompt": "State the product/service provided by this business/enterprise",
+      "proposedCardMarks": [
+        2
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Only Name of product/service criterion, 2m. R4 notice with chosen business context."
+    },
+    {
+      "id": "lcvp-2010-cl-c1b",
+      "ref": "C1(b)",
+      "questionText": "Carry out a SWOT analysis for that business/enterprise.",
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        9
+      ],
+      "sourceSchemeBlock": "Carry out a SWOT analysis for that business/enterprise.          8 marks\n\n                 Strengths        -   location/product/service/staff/reputation/awards/loyal customers\n              Weaknesses    -   poor management/need of capital/out of date\n                                  premises/equipment\n                 Opportunities  -   new markets/expansion/new products/experience skilled\n                                employees\n                Threats          -    competition/cost of finance/bad employees/economic downturn\n\n                                                2 points under each heading\n                                       No repetition of points/examples\n                                                                        4 @ 2m\n                                                                                      (1 + 1)\n",
+      "sourceSchemePrompt": "Carry out a SWOT analysis for that business/enterprise.",
+      "proposedCardMarks": [
+        8
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "One SWOT analysis, two points each of four headings, 4 @ 2m (1 + 1), no repeated examples. Preserve whole printed four-column material."
+    },
+    {
+      "id": "lcvp-2010-cl-c1c",
+      "ref": "C1(c)",
+      "questionText": "Explain three personal characteristics of a successful entrepreneur in your locality.",
+      "paperPages": [
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "sourceSchemeBlock": "Explain three personal characteristics of a successful entrepreneur in your\n                   locality.                                                   6 marks\n            Any three named relevant characteristics.\n\n                   Motivated\n                     Innovative\n                Good communicator\n                      Self Starter\n                   Risk taker\n                                                                        3 @ 2m\n                                                                                      (1 + 1)\n",
+      "sourceSchemePrompt": "Explain three personal characteristics of a successful entrepreneur in your locality.",
+      "proposedCardMarks": [
+        6
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Five named characteristics, 3 @ 2m (1 + 1), no explanatory model. Keep source names and no-answer notice for missing explanations."
+    },
+    {
+      "id": "lcvp-2010-cl-c1d",
+      "ref": "C1(d)",
+      "questionText": "How does the role of the entrepreneur differ from that of the manager in a business?",
+      "paperPages": [
+        16
+      ],
+      "schemePages": [
+        9
+      ],
+      "sourceSchemeBlock": "How does the role of the entrepreneur differ from that of a manager in a\n                business?                                                  9 marks\n\n        1.      An entrepreneur comes up with an idea/ a manager is responsible for implementing\n                      it/a particular function/running the business.\n        2.      An entrepreneur takes risks whereas a manager does not necessarily take a risk.\n        3.      An entrepreneur works for themselves whereas a manager is often employed by\n                  others.\n        4.      An entrepreneur may not have specific training whereas a manager has specific\n                  training in one or more areas.\n        5.      An entrepreneur has the potential to make high profits whereas a manager is paid a\n                   set salary.\n        6.      An entrepreneur sets up the business and the manager runs it.\n\n                                                                        Contrasts must be evident.\n                                                 No repetition of points.\n                                                                        3 @ 3m\n                                                                                      (1 + 2)\n",
+      "sourceSchemePrompt": "How does the role of the entrepreneur differ from that of a manager in a business?",
+      "proposedCardMarks": [
+        9
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Three entrepreneur/manager contrasts, 3 @ 3m (1 + 2), no repetition; preserve all six contrasts, do not separate sides."
+    },
+    {
+      "id": "lcvp-2010-cl-c2a",
+      "ref": "C2(a)",
+      "questionText": "Identify one teamwork activity in which you have been involved. Indicate clearly your role in this activity.",
+      "paperPages": [
+        17
+      ],
+      "schemePages": [
+        10
+      ],
+      "sourceSchemeBlock": "Identify one teamwork activity in which you have been involved. Indicate\n                clearly your role in this activity.                                4 marks\n\n\n           Name of activity                                    1m\n\n              Role in the activity                                  3m\n\n                                                                           State role + explain\n                                                                                      (1 + 2)\n",
+      "sourceSchemePrompt": "Identify one teamwork activity in which you have been involved. Indicate clearly your role in this activity.",
+      "proposedCardMarks": [
+        1,
+        3
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-an-enterprise-activity",
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": [
+        [
+          "link-modules-common-2-an-enterprise-activity"
+        ],
+        [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      ],
+      "sourceDecision": "Explicit activity name 1m and role 3m (state + explain 1 + 2). No actual name or role model; R4 both. Heading separately activity for name, enterprise skills for role."
+    },
+    {
+      "id": "lcvp-2010-cl-c2b",
+      "ref": "C2(b)",
+      "questionText": "Outline three benefits of teamwork in this activity.",
+      "paperPages": [
+        17
+      ],
+      "schemePages": [
+        10
+      ],
+      "sourceSchemeBlock": "Outline three benefits of teamwork to this activity.    6 mark\n\n\n              Benefits of teamwork\n\n        1.    You get more work done/quicker/work shared.\n        2.     Everyone takes ownership of the part they are responsible for/responsibility shared/no\n             one under too much pressure\n        3.     Experience & skills are shared/ variety of strengths/weaknesses/more ideas.\n        4.     Disputes are avoided as communication with each other is essential in\n             teamwork/everyone has a say.\n        5.     Workers are more contented as relationships with colleagues improve/better\n               motivation.\n        6.     Workers can work closely with those who have a common interest.\n        7.      Easier to solve problems, more than one approach reviewed.\n        8.     Communication/interpersonal skills improved.\n                                                                         3 @ 2m\n                                                                                      (1 + 1)\n",
+      "sourceSchemePrompt": "Outline three benefits of teamwork to this activity.",
+      "proposedCardMarks": [
+        6
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Three teamwork benefits, 3 @ 2m (1 + 1), eight options."
+    },
+    {
+      "id": "lcvp-2010-cl-c2c",
+      "ref": "C2(c)",
+      "questionText": "What makes a person a good team member?",
+      "paperPages": [
+        18
+      ],
+      "schemePages": [
+        10
+      ],
+      "sourceSchemeBlock": "What makes a person a good team member?\n                                                                        6 marks\n\n        1.     Being a good listener.\n        2.     Being willing to do your share/share ideas.\n        3.     Being good at encouraging others to participate.\n        4.     Asking for help from others when needed/offering help when needed..\n        5.    Good at keeping to target/ committed to making the team work by keeping deadlines.\n        6.    Good at recording what was decided, who does what etc.\n        7.      Tolerate other ideas/views/criticisms.\n\n\n\n\n                                                                        3 @ 2m\n                                                                                                   (0, 2)\n",
+      "sourceSchemePrompt": "What makes a person a good team member?",
+      "proposedCardMarks": [
+        6
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Three good-team-member qualities, 3 @ 2m (0, 2), seven options."
+    },
+    {
+      "id": "lcvp-2010-cl-c2d",
+      "ref": "C2(d)",
+      "questionText": "Describe three ways a team can evaluate its group performance.",
+      "paperPages": [
+        19
+      ],
+      "schemePages": [
+        11
+      ],
+      "sourceSchemeBlock": "Describe three ways a team can evaluate its group performance.      9 marks\n\n\n        1.    Compare what was achieved to the plans/targets drawn up/aims/goals/ how successful\n            was the activity?\n        2.     Class discussion.\n        3.    Ask teachers/other adults.\n        4.    Teams can review how each member has developed/ new skills learnt/quality of what\n           was learned?/do a SWOT/SCOT/SPOT analysis\n        5.    Were there many disagreements?\n        6.   How were disputes settled?\n        7.      Questionnaires.\n                                                                        3 @ 3m\n                                                                                      (1 + 1 + 1)\n",
+      "sourceSchemePrompt": "Describe three ways a team can evaluate its group performance.",
+      "proposedCardMarks": [
+        9
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Three group evaluation ways, 3 @ 3m (1 + 1 + 1), seven options."
+    },
+    {
+      "id": "lcvp-2010-cl-c3a",
+      "ref": "C3(a)",
+      "questionText": "Explain the three underlined words.",
+      "paperPages": [
+        20
+      ],
+      "schemePages": [
+        11
+      ],
+      "sourceSchemeBlock": "Explain the three underlined words.                             6 marks\n\n\n     CV:   Curriculum Vitae. This is a document setting out/ personal, educational, work\n              experience information together with skills and talents plus any other relevant\n              information of a person seeking employment.\n\n\n       Referees:  These are people who know the job seeker and a potential employer can\n                   contact them to find out about their reliability etc.\n\n      Equal opportunities employer:\n             This means that the employer will not discriminate between applicants on the grounds\n              of  sex, age, race, religion, ethnic group, gender, marital status, disability\n              etc./everyone gets the same chance.\n\n                                                                        3 @ 2m\n                                                                                                   (0, 2)\n",
+      "sourceSchemePrompt": "Explain the three underlined words.",
+      "proposedCardMarks": [
+        2,
+        2,
+        2
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-1-job-seeking-skills",
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "perAskHeadingIds": [
+        [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        [
+          "link-modules-common-1-job-seeking-skills"
+        ],
+        [
+          "link-modules-common-1-introduction-to-working-life"
+        ]
+      ],
+      "sourceDecision": "Original paper page 20 underlines exactly CV, referees and equal opportunities employer in the Gourmet Cafe advertisement. All three named definitions are required; this is not an any-three choice. Scheme page 11 prints three distinct definitions, 3 @ 2m (0, 2). R7: three separately answered, separately marked asks. Full advertisement retained with each."
+    },
+    {
+      "id": "lcvp-2010-cl-c3b",
+      "ref": "C3(b)",
+      "questionText": "Why do you think Gourmet Café want a customer-focused person for this job?",
+      "paperPages": [
+        21
+      ],
+      "schemePages": [
+        11
+      ],
+      "sourceSchemeBlock": "Why do you think Gourmet Cafe want a customer-focused person for this job?\n                                                                        5 marks\n\n        1.    The work involves dealing with the public.\n        2.     The worker must be willing to satisfy the demands of the customer in a pleasant\n             way/good public image/good reputation.\n        3.        It is important that the customers feel happy with the service so that they return.\n        4.     Gives the business a competitive edge/boosts sales.\n\n                                                                        3 points\n                                                                        2 @ 2m\n                                                                                                   (0, 2)\n                                                                        1 @ 1m\n",
+      "sourceSchemePrompt": "Why do you think Gourmet Cafe want a customer-focused person for this job?",
+      "proposedCardMarks": [
+        5
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Customer focus reasons; three points, 2 @ 2m (0, 2) + 1 @ 1m. Four printed options."
+    },
+    {
+      "id": "lcvp-2010-cl-c3c",
+      "ref": "C3(c)",
+      "questionText": "What advice would you give when completing an application form?",
+      "paperPages": [
+        21,
+        22
+      ],
+      "schemePages": [
+        12
+      ],
+      "sourceSchemeBlock": "What advice would you give when completing an application form?  8 marks\n\n\n1.      Follow all instructions/use black biro/block caps/include photos if requested.\n2.       Print details so that your handwriting can be read/complete on computer if you\n         can/legibility/correct spelling.\n3.     Answer all parts/be honest/include an extra sheet if necessary/ensure you sign the\n       form\n4.      Take a copy of the blank form and practise filling it in.\n5.     Keep a copy of the completed form/for interview preparation.\n       Submit in good time so you are not disqualified for being late.\n6.     Do not leave to the last minute/rush filling in the form.\n                                                                  4 @ 2m\n                                                                          (1+1)\n",
+      "sourceSchemePrompt": "What advice would you give when completing an application form?",
+      "proposedCardMarks": [
+        8
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Application-form advice, 4 @ 2m (1 + 1); preserve full numbered support including unnumbered Submit in good time."
+    },
+    {
+      "id": "lcvp-2010-cl-c3d",
+      "ref": "C3(d)",
+      "questionText": "Outline four pieces of information which should be included in a contract of employment.",
+      "paperPages": [
+        22
+      ],
+      "schemePages": [
+        12
+      ],
+      "sourceSchemeBlock": "Outline four pieces of information that should be included in a Contract of\n       Employment.                                                6 marks\n\n1.       Details on wages/salary, how much you are paid/when you are paid/ how you are\n        paid/overtime bonus.\n2.      Holiday entitlements such as when work year begins/ when you can take holidays/\n      how many days holidays.\n3.      Sick leave entitlements, how many days before a cert is needed/ details on payment\n        while you are ill.\n4.       Details of the job you are appointed to do/ job title\n5.     Code of conduct/grievance procedure, who you can complain to and how you should\n        complain.\n6.       Details on statutory leave such as parental leave/maternity leave.\n7.      Employers’ name/address, Employees’ name/address.\n8.      Employees’ start date/duration of contract.\n9.       Signature of employee.                                        2 @ 2m\n                                                                          (1+1)\n                                                                  2 @ 1m\n",
+      "sourceSchemePrompt": "Outline four pieces of information that should be included in a Contract of Employment.",
+      "proposedCardMarks": [
+        6
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Four contract details, 2 @ 2m (1 + 1) + 2 @ 1m. Nine options; historical 2010 scheme content."
+    },
+    {
+      "id": "lcvp-2010-cl-c4a",
+      "ref": "C4(a)",
+      "questionText": "Name the activity. Was the activity successful? Explain.",
+      "paperPages": [
+        23
+      ],
+      "schemePages": [
+        13
+      ],
+      "sourceSchemeBlock": "Name of LCVP activity. Was the activity successful? Explain.         5 marks\n\n\n         Naming of activity where you had a leadership role.                1m\n\n            Successful? Yes or No                                            2 @ 2m\n                                                                                                   (0, 2)\n",
+      "sourceSchemePrompt": "Name of LCVP activity. Was the activity successful? Explain.",
+      "proposedCardMarks": [
+        1,
+        4
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-an-enterprise-activity",
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": [
+        [
+          "link-modules-common-2-an-enterprise-activity"
+        ],
+        [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      ],
+      "sourceDecision": "Explicit activity name 1m then successful Yes/No 2 @ 2m (0, 2). No specific activity or reasons printed; R4, selected activity context. Activity heading for name, skills for evaluation."
+    },
+    {
+      "id": "lcvp-2010-cl-c4b",
+      "ref": "C4(b)",
+      "questionText": "What makes for a successful/effective leader in any organisation?",
+      "paperPages": [
+        23
+      ],
+      "schemePages": [
+        13
+      ],
+      "sourceSchemeBlock": "What makes for a successful/effective leader in any organisation?     6 marks\n\n         1.   A good planner will ensure goals are achieved and carried out.\n         2.    They have a knowledge of all aspects of the work of the organisation.\n         3.     Charismatic personality so that people will work with them.\n         4.    Good decision maker so that progress can be made.\n         5.    Having good communication and listening skills.\n         6.    Being innovative, not afraid to try out new things.\n         7.    Being a good motivator so that he/she can encourage others in the organisation.\n         8.    Able to delegate.\n                                                                        3 @ 2m\n                                                                                 (1+1)\n",
+      "sourceSchemePrompt": "What makes for a successful/effective leader in any organisation?",
+      "proposedCardMarks": [
+        6
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Effective leader qualities, 3 @ 2m (1 + 1), eight options."
+    },
+    {
+      "id": "lcvp-2010-cl-c4c",
+      "ref": "C4(c)",
+      "questionText": "How can an organisation benefit from effective leadership?",
+      "paperPages": [
+        24
+      ],
+      "schemePages": [
+        13
+      ],
+      "sourceSchemeBlock": "How can an organisation benefit from effective leadership?          6 marks\n\n        1.    They are more profitable/sucessful.\n        2.    They have a good reputation as an employer and generally.\n        3.    Workers are happy/less stressed/ less staff turnover/less industrial relations problems.\n        4.     Staff know their role/more productivity/motivated\n                                                                               3 @ 2m\n                                                                                               (1 + 1)\n",
+      "sourceSchemePrompt": "How can an organisation benefit from effective leadership?",
+      "proposedCardMarks": [
+        6
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Organisational benefits of leadership, 3 @ 2m (1 + 1), four options."
+    },
+    {
+      "id": "lcvp-2010-cl-c4di",
+      "ref": "C4(d)(i)",
+      "questionText": "Explain what is meant by the term “good communicator”.",
+      "paperPages": [
+        24
+      ],
+      "schemePages": [
+        14
+      ],
+      "sourceSchemeBlock": "This is someone who can get their message across in an effective way so that\n                      the information is acted upon. They are also a good listener so that they will\n                     hear what is being said and not misinterpret it.\n                                                        2m (1+1)\n",
+      "sourceSchemePrompt": "Explain what is meant by the term good communicator.",
+      "proposedCardMarks": [
+        2
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "One good-communicator definition, 2m (1 + 1); sending/listening components remain one ask."
+    },
+    {
+      "id": "lcvp-2010-cl-c4dii",
+      "ref": "C4(d)(ii)",
+      "questionText": "Outline three ways of improving your communication skills?",
+      "paperPages": [
+        25
+      ],
+      "schemePages": [
+        14
+      ],
+      "sourceSchemeBlock": "1   Attend training course to get outside help.\n                  2   Practise speaking in public/join a drama group\n                  3   Improve your ICT skills/report writing skills\n                  4  Be well prepared so that you are not worrying about being caught out/you\n                       can answer questions asked/Mock Interviews\n                  5   Research/read self help books/web sites.\n                                                                        3 @ 2m\n                                                                                      (1 + 1)\n",
+      "sourceSchemePrompt": "Outline three ways of improving your communication skills.",
+      "proposedCardMarks": [
+        6
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Three methods improving communication, 3 @ 2m (1 + 1), five options."
+    },
+    {
+      "id": "lcvp-2010-cl-c5a",
+      "ref": "C5(a)",
+      "questionText": "Draw up the agenda for the first class meeting in relation to this activity.",
+      "paperPages": [
+        26
+      ],
+      "schemePages": [
+        14
+      ],
+      "sourceSchemeBlock": "Draw up an Agenda for the first class meeting in relation to this activity.\n                                                                        5 marks\n\n     AGENDA\n\n         1.    Election of officers*  Chairperson\n                                     Secretary\n                                   Treasurer\n         2.   Which charity gets their support\n         3.   Draw up work plan/delegate tasks.\n         4.    Discussion on finances.\n         5.   Arrange permission from Principal*\n         6.   Arrange a date for the activity.\n         7.   Arrange next meeting.\n         8.  AOB\n\n                                                                        5 @ 1m\n                                                            *Compulsory points\n",
+      "sourceSchemePrompt": "Draw up an Agenda for the first class meeting in relation to this activity.",
+      "proposedCardMarks": [
+        5
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "One agenda, 5 @ 1m, eight complete items. Election of officers and principal permission compulsory; no invented heading/layout marks."
+    },
+    {
+      "id": "lcvp-2010-cl-c5b",
+      "ref": "C5(b)",
+      "questionText": "Outline three benefits to students of participation in this activity.",
+      "paperPages": [
+        26
+      ],
+      "schemePages": [
+        14
+      ],
+      "sourceSchemeBlock": "Outline three benefits to the student of participating in this activity.   6 marks\n\n         1.   The classes teamwork skills are practised/importance of listening to others.\n         2.   Awareness of helping others/the charity, is created which is good.\n         3.    Personal skills can be developed as the students can pick different roles to carry out.\n         4.   The self esteem of the students will improve as they will have a high profile around the\n              school during this activity/work with people you have never worked with before.\n         5.   Taught the importance of planning which will help drawing up plans/study plans.\n         6.   Helped to complete an item for the Link Modules portfolio.\n                                                                        3 @ 2m\n                                                                                 (1+1)\n",
+      "sourceSchemePrompt": "Outline three benefits to the student of participating in this activity.",
+      "proposedCardMarks": [
+        6
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Student benefits from fundraiser participation, 3 @ 2m (1 + 1), six options."
+    },
+    {
+      "id": "lcvp-2010-cl-c5c",
+      "ref": "C5(c)",
+      "questionText": "Explain the importance of financial planning for this activity.",
+      "paperPages": [
+        27
+      ],
+      "schemePages": [
+        15
+      ],
+      "sourceSchemeBlock": "Explain the importance of financial planning for this activity.       5 marks\n\n\n1.    Targets can be set so that a realistic amount for the charity can be raised/is it worth\n     doing/going ahead with?\n2.    Monitor the amount of money collected for the charity by keeping lists.\n3.    Financial planning to decide on what to charge.\n4.      It will allow students interact with business if they decided to get sponsorship.\n\n                                                                 1 @ 3m\n                                                                              (2 + 1)\n                                                                 1 @ 2m\n                                                                                         (0, 2)\n",
+      "sourceSchemePrompt": "Explain the importance of financial planning for this activity.",
+      "proposedCardMarks": [
+        5
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Financial-planning importance; 1 @ 3m (2 + 1) plus 1 @ 2m (0, 2), four options."
+    },
+    {
+      "id": "lcvp-2010-cl-c5d",
+      "ref": "C5(d)",
+      "questionText": "A disagreement has arisen within the class about responsibilities. Describe three steps that could be taken to resolve this disagreement.",
+      "paperPages": [
+        27,
+        28
+      ],
+      "schemePages": [
+        15
+      ],
+      "sourceSchemeBlock": "A disagreement has arisen within the class about responsibilities. Describe three\n      steps that could be taken to resolve this disagreement.               9 marks\n\n1.    Ask the teacher to act as mediator/listens to everyone’s opinions/get written opinions,\n      statements /impartial.\n2.    Have class discussion about who would be best doing what/each person can explain\n       their strengths/that the best is chosen for the job.\n3.    Define each responsibility/role so that each member is clear about what is involved in\n      each/should eliminate disagreements so everyone is involved.\n4.     Set up small teams rather than individuals to take on responsibilities/shared\n       skills,workload/better decisions.\n\n                                                                 3 @ 3m\n                                                                     (1+1+1)\n",
+      "sourceSchemePrompt": "A disagreement has arisen within the class about responsibilities. Describe three steps that could be taken to resolve this disagreement.",
+      "proposedCardMarks": [
+        9
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Three disagreement-resolution steps, 3 @ 3m (1 + 1 + 1), four complete options."
+    },
+    {
+      "id": "lcvp-2010-cl-c6a",
+      "ref": "C6(a)",
+      "questionText": "Outline two advantages of doing work placement/shadowing.",
+      "paperPages": [
+        29
+      ],
+      "schemePages": [
+        16
+      ],
+      "sourceSchemeBlock": "Outline two advantages of doing work placement/shadowing.       4 marks\n\n         1.    You get to know what is involved in a particular job.\n         2.    You experience the reality of having to be somewhere on time/ each day etc./taste of\n                the world of work.\n         3.    You have a referee for your CV/a contact.\n         4.    You may get offered summer/ part time work.\n         5.    You can make more informed decisions about your career choices.\n         6.    You learn new skills/improve skills.\n         7.    You can improve your self esteem/confidence from interaction with other adults.\n         8.     Helped complete your Link Modules portfolio.\n         9.     Motivates you to work harder in school.\n                                                                        2 @ 2m\n                                                                                      (1 + 1)\n",
+      "sourceSchemePrompt": "Outline two advantages of doing work placement/shadowing.",
+      "proposedCardMarks": [
+        4
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Two placement advantages, 2 @ 2m (1 + 1), nine options."
+    },
+    {
+      "id": "lcvp-2010-cl-c6b",
+      "ref": "C6(b)",
+      "questionText": "Explain two obligations an employer has regarding health and safety at work.",
+      "paperPages": [
+        29
+      ],
+      "schemePages": [
+        16
+      ],
+      "sourceSchemeBlock": "Explain two obligations an employer has regarding health and safety at work.\n                                                                        6 marks\n\n         1.    To provide safe working condition/proper facilities/breaks/holidays/proper working\n              machines etc.\n         2.    To provide proper training/instruction/adequate signs displayed/fire drills\n         3.    To provide safety clothing & equipment.\n         4.     Prepare a safety statement/ensure risks are assessed.\n         5.    Take steps to avoid bullying.\n         6.     Appoint a Safety Officer/report accidents to Health and Safety Officer.\n                                                                        2 @ 3m\n                                                                                      (1 + 2)\n                                                                     Explanation and example\n",
+      "sourceSchemePrompt": "Explain two obligations an employer has regarding health and safety at work.",
+      "proposedCardMarks": [
+        6
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Two employer health-and-safety obligations, 2 @ 3m; scheme explicitly labels explanation 2m and example 1m. One requested explanation task, no additional example ask. Preserve all six historical source examples."
+    },
+    {
+      "id": "lcvp-2010-cl-c6c",
+      "ref": "C6(c)",
+      "questionText": "Outline how you planned for and organised your work placement/shadowing. Write a brief evaluation of your work placement/shadowing experience.",
+      "paperPages": [
+        30
+      ],
+      "schemePages": [
+        17
+      ],
+      "sourceSchemeBlock": "Outline how you planned for and organised your work placement/shadowing.\n      Write a brief evaluation of your work placement/shadowing experience.\n                                                                 7 marks\n\n       Planned for and organised\n\n1.   How you obtained the placement.\n2.     Travel arrangements.\n3.     Research on the organisation.\n4.     Consent forms.\n5.    Underwent relevant training.\n6.    Check the dress code/start, finishing times..\n7.    Make lunch arrangements.\n                                                                 3 @ 1m\n\n\nEvaluation:\n\n1.    Comment on career choice/future studies and this type of job.\n2.    Comment on how it helped in:       Home\n3.                                        School\n4.                                   Community                4 @ 1m\n",
+      "sourceSchemePrompt": "Outline how you planned for and organised your work placement/shadowing. Write a brief evaluation of your work placement/shadowing experience.",
+      "proposedCardMarks": [
+        3,
+        4
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "perAskHeadingIds": [
+        [
+          "link-modules-common-1-work-placement"
+        ],
+        [
+          "link-modules-common-1-work-placement"
+        ]
+      ],
+      "sourceDecision": "Original scheme page 17 explicitly gives Planned for and organised 3 @ 1m and Evaluation 4 @ 1m. Paper separately asks for plan and evaluation: two cards 3+4. Evaluation prints only criteria (career choice/future studies; Home; School; Community), so preserve the R4 notice with printed criteria."
+    },
+    {
+      "id": "lcvp-2010-cl-c6d",
+      "ref": "C6(d)",
+      "questionText": "Describe four difficulties that a student may experience during his/her work shadowing or work experience.",
+      "paperPages": [
+        31
+      ],
+      "schemePages": [
+        17
+      ],
+      "sourceSchemeBlock": "Describe four difficulties that a student may experience during his/her work\n      shadowing or work experience.                                 8 marks\n\n\n\n\n1.    Not having work to do/boredom.\n2.     Finding it hard to talk to other people/overcoming personal worries/shyness.\n3.    Lack of training for tasks/no instructions given/finding the work difficult.\n4.    Not being treated well by the organisation/workers/over worked/exploited/long\n        hours..\n5.      Practical issues/transport/timekeeping/dress code.\n6.     Being excluded/employees not interested in helping the student.\n                                                                 4 @ 2m\n                                                                         (1+1)",
+      "sourceSchemePrompt": "Describe four difficulties that a student may experience during his/her work shadowing or work experience.",
+      "proposedCardMarks": [
+        8
+      ],
+      "proposedHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "perAskHeadingIds": null,
+      "sourceDecision": "Four placement difficulties, 4 @ 2m (1 + 1), six options."
+    }
+  ],
+  "unresolvedAlternatives": {
+    "B2(i)": {
+      "combinedMarks": [
+        6
+      ],
+      "splitMarks": [
+        3,
+        3
+      ]
+    },
+    "C3(a)": {
+      "combinedMarks": [
+        6
+      ],
+      "splitMarks": [
+        2,
+        2,
+        2
+      ]
+    }
+  },
+  "pending": "Two disputed split groups, generic B2(ii) consistency, five display-heading differences, source/application checks and SEC archive/media follow-up."
+}

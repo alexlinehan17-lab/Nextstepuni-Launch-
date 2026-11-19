@@ -1,0 +1,482 @@
+{
+  "B2(i)": {
+    "status": "Unresolved alternatives; neither is approved or applied.",
+    "combined": [
+      {
+        "id": "lcvp-2010-cl-b2i",
+        "subjectId": "lcvp",
+        "conceptId": "b2i-2010-source",
+        "level": "common",
+        "year": 2010,
+        "section": "B",
+        "questionRef": "2010 CL Section B Q2(i)",
+        "questionText": "Why are the County Enterprise Board and the County Council part of the Community Development Committee?",
+        "stem": "KILLMALOE COMMUNITY DEVELOPMENT Killmaloe is a small town situated on the west coast. Farming, fishing, construction and tourism were the main sectors offering employment opportunities for the local people. With the obvious decline in construction and farming, and the unlikely chance of a large scale employer coming to the area, the local people became proactive and decided to try and develop Killmaloe to its full potential, and to guarantee the future for the community and especially for its younger population. A community development committee was formed consisting of all the local stakeholders, including social, sporting, commercial and educational organisations, the local County Enterprise Board and the County Council. Killmaloe has several safe sandy beaches with unpolluted waters providing an ideal location for swimming, diving, surfing and angling. The area is surrounded by a number of scenic walks and heritage sites. With suitable grant aid these could be properly maintained and attractively signposted and promoted. It was also proposed that an Adventure Centre should be set up offering climbing, hill walking, horse riding, together with all the other water based activities. This Adventure Centre could appeal to families, schools clubs and companies who want to develop team building amongst its staff. First impressions last and proper landscaping, planting of shrubs and flowers are vital if Killmaloe is to attract people all year round to experience its unique and pleasant environment. Proper maintenance and upgrading of both public and private buildings would be essential to create a positive image for the town. There is one old derelict mill in the area which is an eyesore but if restored it could provide work space for entrepreneurs wishing to set up small to medium sized businesses. The local people were asked their opinion and suggestions put forward include provision of a crèche, internet café, gymnasium, a resource centre and a local website. Providing all of these services would obviously create employment and help to secure the town’s future by making it attractive for the tourists to visit and for the local person who live and work there. The committee are energetic and optimistic but finance is a big problem. Government agencies have less to give by way of grants and banks are also making it more difficult for borrowers to access funding for development projects.\n\nTable showing the Population of Killmaloe between the years 1999 and 2009\n0 – 14 yrs — 1999: 673; 2009: 528\n15 – 24 yrs — 1999: 469; 2009: 348\n25 – 44 yrs — 1999: 667; 2009: 580\n45 – 64 yrs — 1999: 554; 2009: 670\n65+ yrs — 1999: 412; 2009: 458\nTotal — 1999: 2775; 2009: 2584\n\nCommunities, like Killmaloe, that lack facilities are likely to see population changes (see table) over time particularly if there are few employment opportunities in the area.",
+        "figureKey": "",
+        "labelKey": [],
+        "totalMarks": 6,
+        "rows": [
+          {
+            "id": "response-1",
+            "kind": "criterion",
+            "verbatim": "Why are the County enterprise Board and the County Council part of the Community Development Committee?",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "contextNote": "Response 1 of 2.  Complete printed support notes and allocation: 1. The County Enterprise Boards promote entrepreneurship/by helping existing Enterprises and new enterprises in local areas/help new enterprises with grants, advice or mentoring. 2. The County Councils look after local areas/ they have responsibility for planning/ environmental issues and amenities in these areas. 2 @ 3m (2 + 1) Complete original guidance: The County Enterprise Boards promote entrepreneurship/by helping existing Enterprises and new enterprises in local areas/help new enterprises with grants, advice or mentoring. | The County Councils look after local areas/ they have responsibility for planning/ environmental issues and amenities in these areas.",
+            "parts": [
+              {
+                "id": "component-1",
+                "verbatim": "2m",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "id": "component-2",
+                "verbatim": "1m",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "response-2",
+            "kind": "criterion",
+            "verbatim": "Why are the County enterprise Board and the County Council part of the Community Development Committee?",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "contextNote": "Response 2 of 2.  Complete printed support notes and allocation: 1. The County Enterprise Boards promote entrepreneurship/by helping existing Enterprises and new enterprises in local areas/help new enterprises with grants, advice or mentoring. 2. The County Councils look after local areas/ they have responsibility for planning/ environmental issues and amenities in these areas. 2 @ 3m (2 + 1) Complete original guidance: The County Enterprise Boards promote entrepreneurship/by helping existing Enterprises and new enterprises in local areas/help new enterprises with grants, advice or mentoring. | The County Councils look after local areas/ they have responsibility for planning/ environmental issues and amenities in these areas.",
+            "parts": [
+              {
+                "id": "component-1",
+                "verbatim": "2m",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "id": "component-2",
+                "verbatim": "1m",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        "tariffModel": {
+          "kind": "fixed",
+          "notation": "Original 2010 marking scheme allocation."
+        },
+        "sourceMaterial": {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Killmaloe Community Development — complete case and table",
+          "pages": [
+            8
+          ],
+          "attribution": "SEC LCVP Link Modules 2010 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+        },
+        "topicId": "lcvp-link-modules-1-1",
+        "additionalTopicIds": [
+          "lcvp-link-modules-1-2"
+        ],
+        "additionalSourceMaterials": [
+          {
+            "kind": "source-question",
+            "label": "OFFICIAL SOURCE",
+            "title": "Original question",
+            "pages": [
+              10
+            ],
+            "attribution": "SEC LCVP Link Modules 2010 Common Level — © State Examinations Commission.",
+            "presentationNote": "Read the complete original source and question in context."
+          }
+        ]
+      }
+    ],
+    "split": [
+      {
+        "id": "lcvp-2010-cl-b2i",
+        "subjectId": "lcvp",
+        "conceptId": "b2i-2010-source",
+        "level": "common",
+        "year": 2010,
+        "section": "B",
+        "questionRef": "2010 CL Section B Q2(i) — County Enterprise Board",
+        "questionText": "County Enterprise Board",
+        "stem": "KILLMALOE COMMUNITY DEVELOPMENT Killmaloe is a small town situated on the west coast. Farming, fishing, construction and tourism were the main sectors offering employment opportunities for the local people. With the obvious decline in construction and farming, and the unlikely chance of a large scale employer coming to the area, the local people became proactive and decided to try and develop Killmaloe to its full potential, and to guarantee the future for the community and especially for its younger population. A community development committee was formed consisting of all the local stakeholders, including social, sporting, commercial and educational organisations, the local County Enterprise Board and the County Council. Killmaloe has several safe sandy beaches with unpolluted waters providing an ideal location for swimming, diving, surfing and angling. The area is surrounded by a number of scenic walks and heritage sites. With suitable grant aid these could be properly maintained and attractively signposted and promoted. It was also proposed that an Adventure Centre should be set up offering climbing, hill walking, horse riding, together with all the other water based activities. This Adventure Centre could appeal to families, schools clubs and companies who want to develop team building amongst its staff. First impressions last and proper landscaping, planting of shrubs and flowers are vital if Killmaloe is to attract people all year round to experience its unique and pleasant environment. Proper maintenance and upgrading of both public and private buildings would be essential to create a positive image for the town. There is one old derelict mill in the area which is an eyesore but if restored it could provide work space for entrepreneurs wishing to set up small to medium sized businesses. The local people were asked their opinion and suggestions put forward include provision of a crèche, internet café, gymnasium, a resource centre and a local website. Providing all of these services would obviously create employment and help to secure the town’s future by making it attractive for the tourists to visit and for the local person who live and work there. The committee are energetic and optimistic but finance is a big problem. Government agencies have less to give by way of grants and banks are also making it more difficult for borrowers to access funding for development projects.\n\nTable showing the Population of Killmaloe between the years 1999 and 2009\n0 – 14 yrs — 1999: 673; 2009: 528\n15 – 24 yrs — 1999: 469; 2009: 348\n25 – 44 yrs — 1999: 667; 2009: 580\n45 – 64 yrs — 1999: 554; 2009: 670\n65+ yrs — 1999: 412; 2009: 458\nTotal — 1999: 2775; 2009: 2584\n\nCommunities, like Killmaloe, that lack facilities are likely to see population changes (see table) over time particularly if there are few employment opportunities in the area. Why are the County Enterprise Board and the County Council part of the Community Development Committee?",
+        "figureKey": "",
+        "labelKey": [],
+        "totalMarks": 3,
+        "rows": [
+          {
+            "id": "response-1",
+            "kind": "criterion",
+            "verbatim": "Why are the County enterprise Board and the County Council part of the Community Development Committee?",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "contextNote": "Response 1 of 1. Answer only for this named organisation. The source gives one of the two three-mark awards to each printed model; split form remains provisional. Complete printed support notes and allocation: 1. The County Enterprise Boards promote entrepreneurship/by helping existing Enterprises and new enterprises in local areas/help new enterprises with grants, advice or mentoring. 2. The County Councils look after local areas/ they have responsibility for planning/ environmental issues and amenities in these areas. 2 @ 3m (2 + 1) Complete original guidance: The County Enterprise Boards promote entrepreneurship/by helping existing Enterprises and new enterprises in local areas/help new enterprises with grants, advice or mentoring.",
+            "parts": [
+              {
+                "id": "component-1",
+                "verbatim": "2m",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "id": "component-2",
+                "verbatim": "1m",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        "tariffModel": {
+          "kind": "fixed",
+          "notation": "Original 2010 marking scheme allocation."
+        },
+        "sourceMaterial": {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Killmaloe Community Development — complete case and table",
+          "pages": [
+            8
+          ],
+          "attribution": "SEC LCVP Link Modules 2010 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+        },
+        "topicId": "lcvp-link-modules-1-1",
+        "additionalSourceMaterials": [
+          {
+            "kind": "source-question",
+            "label": "OFFICIAL SOURCE",
+            "title": "Original question",
+            "pages": [
+              10
+            ],
+            "attribution": "SEC LCVP Link Modules 2010 Common Level — © State Examinations Commission.",
+            "presentationNote": "Read the complete original source and question in context."
+          }
+        ]
+      },
+      {
+        "id": "lcvp-2010-cl-b2i-2",
+        "subjectId": "lcvp",
+        "conceptId": "b2i-2010-source-ask-2",
+        "level": "common",
+        "year": 2010,
+        "section": "B",
+        "questionRef": "2010 CL Section B Q2(i) — County Council",
+        "questionText": "County Council",
+        "stem": "KILLMALOE COMMUNITY DEVELOPMENT Killmaloe is a small town situated on the west coast. Farming, fishing, construction and tourism were the main sectors offering employment opportunities for the local people. With the obvious decline in construction and farming, and the unlikely chance of a large scale employer coming to the area, the local people became proactive and decided to try and develop Killmaloe to its full potential, and to guarantee the future for the community and especially for its younger population. A community development committee was formed consisting of all the local stakeholders, including social, sporting, commercial and educational organisations, the local County Enterprise Board and the County Council. Killmaloe has several safe sandy beaches with unpolluted waters providing an ideal location for swimming, diving, surfing and angling. The area is surrounded by a number of scenic walks and heritage sites. With suitable grant aid these could be properly maintained and attractively signposted and promoted. It was also proposed that an Adventure Centre should be set up offering climbing, hill walking, horse riding, together with all the other water based activities. This Adventure Centre could appeal to families, schools clubs and companies who want to develop team building amongst its staff. First impressions last and proper landscaping, planting of shrubs and flowers are vital if Killmaloe is to attract people all year round to experience its unique and pleasant environment. Proper maintenance and upgrading of both public and private buildings would be essential to create a positive image for the town. There is one old derelict mill in the area which is an eyesore but if restored it could provide work space for entrepreneurs wishing to set up small to medium sized businesses. The local people were asked their opinion and suggestions put forward include provision of a crèche, internet café, gymnasium, a resource centre and a local website. Providing all of these services would obviously create employment and help to secure the town’s future by making it attractive for the tourists to visit and for the local person who live and work there. The committee are energetic and optimistic but finance is a big problem. Government agencies have less to give by way of grants and banks are also making it more difficult for borrowers to access funding for development projects.\n\nTable showing the Population of Killmaloe between the years 1999 and 2009\n0 – 14 yrs — 1999: 673; 2009: 528\n15 – 24 yrs — 1999: 469; 2009: 348\n25 – 44 yrs — 1999: 667; 2009: 580\n45 – 64 yrs — 1999: 554; 2009: 670\n65+ yrs — 1999: 412; 2009: 458\nTotal — 1999: 2775; 2009: 2584\n\nCommunities, like Killmaloe, that lack facilities are likely to see population changes (see table) over time particularly if there are few employment opportunities in the area. Why are the County Enterprise Board and the County Council part of the Community Development Committee?",
+        "figureKey": "",
+        "labelKey": [],
+        "totalMarks": 3,
+        "rows": [
+          {
+            "id": "response-1",
+            "kind": "criterion",
+            "verbatim": "Why are the County enterprise Board and the County Council part of the Community Development Committee?",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "contextNote": "Response 1 of 1. Answer only for this named organisation. The source gives one of the two three-mark awards to each printed model; split form remains provisional. Complete printed support notes and allocation: 1. The County Enterprise Boards promote entrepreneurship/by helping existing Enterprises and new enterprises in local areas/help new enterprises with grants, advice or mentoring. 2. The County Councils look after local areas/ they have responsibility for planning/ environmental issues and amenities in these areas. 2 @ 3m (2 + 1) Complete original guidance: The County Councils look after local areas/ they have responsibility for planning/ environmental issues and amenities in these areas.",
+            "parts": [
+              {
+                "id": "component-1",
+                "verbatim": "2m",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "id": "component-2",
+                "verbatim": "1m",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        "tariffModel": {
+          "kind": "fixed",
+          "notation": "Original 2010 marking scheme allocation."
+        },
+        "sourceMaterial": {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Killmaloe Community Development — complete case and table",
+          "pages": [
+            8
+          ],
+          "attribution": "SEC LCVP Link Modules 2010 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+        },
+        "topicId": "lcvp-link-modules-1-2",
+        "additionalSourceMaterials": [
+          {
+            "kind": "source-question",
+            "label": "OFFICIAL SOURCE",
+            "title": "Original question",
+            "pages": [
+              10
+            ],
+            "attribution": "SEC LCVP Link Modules 2010 Common Level — © State Examinations Commission.",
+            "presentationNote": "Read the complete original source and question in context."
+          }
+        ]
+      }
+    ]
+  },
+  "C3(a)": {
+    "status": "Unresolved alternatives; neither is approved or applied.",
+    "combined": [
+      {
+        "id": "lcvp-2010-cl-c3a",
+        "subjectId": "lcvp",
+        "conceptId": "c3a-2010-source",
+        "level": "common",
+        "year": 2010,
+        "section": "C",
+        "questionRef": "2010 CL Section C Q3(a)",
+        "questionText": "Explain the three underlined words.",
+        "stem": "A Job Advertisement with questions relating to recruitment. Gourmet Café Vacancy for Deli Assistant We are looking for an enthusiastic, customer-focused, friendly and hardworking person to work in our busy Kilkenny store. We are offering an attractive salary and flexible working hours. Please reply with CV including two referees to mgleeson@gourmetcafe.ie Gourmet Café is an equal opportunities employer.",
+        "figureKey": "",
+        "labelKey": [],
+        "totalMarks": 6,
+        "rows": [
+          {
+            "id": "responses",
+            "kind": "criterion",
+            "verbatim": "Explain the three underlined words.",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "contextNote": "Three fixed underlined terms, not a choose-three pool. One two-or-zero award for each definition. Split decision remains unresolved. Complete printed support notes and allocation: CV: Curriculum Vitae. This is a document setting out/ personal, educational, work experience information together with skills and talents plus any other relevant information of a person seeking employment. Referees: These are people who know the job seeker and a potential employer can contact them to find out about their reliability etc. Equal opportunities employer: This means that the employer will not discriminate between applicants on the grounds of sex, age, race, religion, ethnic group, gender, marital status, disability etc./everyone gets the same chance. 3 @ 2m (0, 2)",
+            "parts": [
+              {
+                "id": "response-1",
+                "verbatim": "CV",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "id": "response-2",
+                "verbatim": "Referees",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "id": "response-3",
+                "verbatim": "Equal opportunities employer",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  2
+                ]
+              }
+            ]
+          }
+        ],
+        "tariffModel": {
+          "kind": "fixed",
+          "notation": "Original 2010 marking scheme allocation."
+        },
+        "sourceMaterial": {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+            20
+          ],
+          "attribution": "SEC LCVP Link Modules 2010 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+        },
+        "topicId": "lcvp-link-modules-0-1",
+        "additionalTopicIds": [
+          "lcvp-link-modules-0-0"
+        ]
+      }
+    ],
+    "split": [
+      {
+        "id": "lcvp-2010-cl-c3a",
+        "subjectId": "lcvp",
+        "conceptId": "c3a-2010-source",
+        "level": "common",
+        "year": 2010,
+        "section": "C",
+        "questionRef": "2010 CL Section C Q3(a) — CV",
+        "questionText": "CV",
+        "stem": "A Job Advertisement with questions relating to recruitment. Gourmet Café Vacancy for Deli Assistant We are looking for an enthusiastic, customer-focused, friendly and hardworking person to work in our busy Kilkenny store. We are offering an attractive salary and flexible working hours. Please reply with CV including two referees to mgleeson@gourmetcafe.ie Gourmet Café is an equal opportunities employer. Explain the three underlined words.",
+        "figureKey": "",
+        "labelKey": [],
+        "totalMarks": 2,
+        "rows": [
+          {
+            "id": "definition",
+            "kind": "criterion",
+            "verbatim": "CV: Curriculum Vitae. This is a document setting out/ personal, educational, work experience information together with skills and talents plus any other relevant information of a person seeking employment.",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ],
+            "contextNote": "Define only this fixed underlined term. Split form remains provisional. Complete printed support notes and allocation: CV: Curriculum Vitae. This is a document setting out/ personal, educational, work experience information together with skills and talents plus any other relevant information of a person seeking employment. Referees: These are people who know the job seeker and a potential employer can contact them to find out about their reliability etc. Equal opportunities employer: This means that the employer will not discriminate between applicants on the grounds of sex, age, race, religion, ethnic group, gender, marital status, disability etc./everyone gets the same chance. 3 @ 2m (0, 2)"
+          }
+        ],
+        "tariffModel": {
+          "kind": "fixed",
+          "notation": "Original 2010 marking scheme allocation."
+        },
+        "sourceMaterial": {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+            20
+          ],
+          "attribution": "SEC LCVP Link Modules 2010 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+        },
+        "topicId": "lcvp-link-modules-0-1"
+      },
+      {
+        "id": "lcvp-2010-cl-c3a-2",
+        "subjectId": "lcvp",
+        "conceptId": "c3a-2010-source-ask-2",
+        "level": "common",
+        "year": 2010,
+        "section": "C",
+        "questionRef": "2010 CL Section C Q3(a) — Referees",
+        "questionText": "referees",
+        "stem": "A Job Advertisement with questions relating to recruitment. Gourmet Café Vacancy for Deli Assistant We are looking for an enthusiastic, customer-focused, friendly and hardworking person to work in our busy Kilkenny store. We are offering an attractive salary and flexible working hours. Please reply with CV including two referees to mgleeson@gourmetcafe.ie Gourmet Café is an equal opportunities employer. Explain the three underlined words.",
+        "figureKey": "",
+        "labelKey": [],
+        "totalMarks": 2,
+        "rows": [
+          {
+            "id": "definition",
+            "kind": "criterion",
+            "verbatim": "Referees: These are people who know the job seeker and a potential employer can contact them to find out about their reliability etc.",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ],
+            "contextNote": "Define only this fixed underlined term. Split form remains provisional. Complete printed support notes and allocation: CV: Curriculum Vitae. This is a document setting out/ personal, educational, work experience information together with skills and talents plus any other relevant information of a person seeking employment. Referees: These are people who know the job seeker and a potential employer can contact them to find out about their reliability etc. Equal opportunities employer: This means that the employer will not discriminate between applicants on the grounds of sex, age, race, religion, ethnic group, gender, marital status, disability etc./everyone gets the same chance. 3 @ 2m (0, 2)"
+          }
+        ],
+        "tariffModel": {
+          "kind": "fixed",
+          "notation": "Original 2010 marking scheme allocation."
+        },
+        "sourceMaterial": {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+            20
+          ],
+          "attribution": "SEC LCVP Link Modules 2010 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+        },
+        "topicId": "lcvp-link-modules-0-1"
+      },
+      {
+        "id": "lcvp-2010-cl-c3a-3",
+        "subjectId": "lcvp",
+        "conceptId": "c3a-2010-source-ask-3",
+        "level": "common",
+        "year": 2010,
+        "section": "C",
+        "questionRef": "2010 CL Section C Q3(a) — Equal opportunities employer",
+        "questionText": "equal opportunities employer",
+        "stem": "A Job Advertisement with questions relating to recruitment. Gourmet Café Vacancy for Deli Assistant We are looking for an enthusiastic, customer-focused, friendly and hardworking person to work in our busy Kilkenny store. We are offering an attractive salary and flexible working hours. Please reply with CV including two referees to mgleeson@gourmetcafe.ie Gourmet Café is an equal opportunities employer. Explain the three underlined words.",
+        "figureKey": "",
+        "labelKey": [],
+        "totalMarks": 2,
+        "rows": [
+          {
+            "id": "definition",
+            "kind": "criterion",
+            "verbatim": "Equal opportunities employer: This means that the employer will not discriminate between applicants on the grounds of sex, age, race, religion, ethnic group, gender, marital status, disability etc./everyone gets the same chance.",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ],
+            "contextNote": "Define only this fixed underlined term. Split form remains provisional. Complete printed support notes and allocation: CV: Curriculum Vitae. This is a document setting out/ personal, educational, work experience information together with skills and talents plus any other relevant information of a person seeking employment. Referees: These are people who know the job seeker and a potential employer can contact them to find out about their reliability etc. Equal opportunities employer: This means that the employer will not discriminate between applicants on the grounds of sex, age, race, religion, ethnic group, gender, marital status, disability etc./everyone gets the same chance. 3 @ 2m (0, 2)"
+          }
+        ],
+        "tariffModel": {
+          "kind": "fixed",
+          "notation": "Original 2010 marking scheme allocation."
+        },
+        "sourceMaterial": {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+            20
+          ],
+          "attribution": "SEC LCVP Link Modules 2010 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+        },
+        "topicId": "lcvp-link-modules-0-0"
+      }
+    ]
+  }
+}

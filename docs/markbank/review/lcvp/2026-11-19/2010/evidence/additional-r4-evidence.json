@@ -1,0 +1,35 @@
+{
+  "recordedAt": "2026-11-19T19:13:42.993059+00:00",
+  "beforeSha256": "32dbf998fdc5f9adefb5b3af44231abc7cfd185ca2046dbbc9c83249c9b55a07",
+  "afterSha256": "11832f5af645fd70d1aecbb689443d39cad5624b5efc4ee62ea751d62d090ce2",
+  "changedOnly": [
+    "lcvp-2010-cl-c2d",
+    "lcvp-2010-cl-c6b"
+  ],
+  "preservation": "Exactly one last zero-mark fixed notice appended on each of two cards. Every prior row, original option/model, question, ID/concept, allocation and other card unchanged. Both disputed alternate shapes regenerated.",
+  "originalImagesViewed": [
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/original-pages/scheme-11.png",
+      "sha256": "ad3a4a480f65ce1057062e293bb1f52d8819a0a51f9b6a9b16745aed0150d33f"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/original-pages/scheme-16.png",
+      "sha256": "1a4e4c8878c8bc3edd3e388edfb6e842d4381353adef476ca2a3bbe6c6705696"
+    }
+  ],
+  "evidence": [
+    {
+      "ref": "C2(d)",
+      "schemePage": 11,
+      "printed": "Describe three ways;3@3m(1+1+1). Options2 Class discussion,3 Ask teachers/other adults,7 Questionnaires are brief method names;5/6 are evaluation questions.",
+      "scope": "Only the missing developed descriptions beyond these exact printed prompts; retain both fuller options1/4."
+    },
+    {
+      "ref": "C6(b)",
+      "schemePage": 16,
+      "printed": "2@3m(1+2), Explanation and example. Option5 Take steps to avoid bullying.",
+      "scope": "The missing example for option5; no invented example or semantic assignment of1+2. All six printed models retained."
+    }
+  ],
+  "limitations": "Review-only. Current archive recheck remains blocked; no production or application verification."
+}

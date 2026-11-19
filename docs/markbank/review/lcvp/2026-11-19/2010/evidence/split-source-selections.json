@@ -1,0 +1,131 @@
+[
+  {
+    "ref": "B2(i)",
+    "originalPrompt": "Why are the County Enterprise Board and the County Council part of the Community Development Committee?",
+    "selectedPrompts": [
+      "County Enterprise Board",
+      "County Council"
+    ],
+    "marks": [
+      3,
+      3
+    ],
+    "scopes": [
+      "County Enterprise Board",
+      "County Council"
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "provisional": true
+  },
+  {
+    "ref": "B2(ii)",
+    "originalPrompt": "Identify three ways the development of new enterprises in Killmaloe can be encouraged. Explain each of your answers.",
+    "selectedPrompts": [
+      "Identify three ways the development of new enterprises in Killmaloe can be encouraged.",
+      "Explain each of your answers."
+    ],
+    "marks": [
+      3,
+      3
+    ],
+    "scopes": [
+      "ways",
+      "explanations"
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "provisional": true
+  },
+  {
+    "ref": "B3(i)",
+    "originalPrompt": "Describe one way the local people may have been asked for their opinion. Give two advantages of this method of gathering information.",
+    "selectedPrompts": [
+      "Describe one way the local people may have been asked for their opinion.",
+      "Give two advantages of this method of gathering information."
+    ],
+    "marks": [
+      2,
+      2
+    ],
+    "scopes": [
+      "description",
+      "advantages"
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "provisional": false
+  },
+  {
+    "ref": "C2(a)",
+    "originalPrompt": "Identify one teamwork activity in which you have been involved. Indicate clearly your role in this activity.",
+    "selectedPrompts": [
+      "Identify one teamwork activity in which you have been involved.",
+      "Indicate clearly your role in this activity."
+    ],
+    "marks": [
+      1,
+      3
+    ],
+    "scopes": [
+      "activity",
+      "role"
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "provisional": false
+  },
+  {
+    "ref": "C3(a)",
+    "originalPrompt": "Explain the three underlined words.",
+    "selectedPrompts": [
+      "CV",
+      "referees",
+      "equal opportunities employer"
+    ],
+    "marks": [
+      2,
+      2,
+      2
+    ],
+    "scopes": [
+      "CV",
+      "Referees",
+      "Equal opportunities employer"
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "provisional": true
+  },
+  {
+    "ref": "C4(a)",
+    "originalPrompt": "Name the activity. Was the activity successful? Explain.",
+    "selectedPrompts": [
+      "Name the activity.",
+      "Was the activity successful? Explain."
+    ],
+    "marks": [
+      1,
+      4
+    ],
+    "scopes": [
+      "activity",
+      "success"
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "provisional": false
+  },
+  {
+    "ref": "C6(c)",
+    "originalPrompt": "Outline how you planned for and organised your work placement/shadowing. Write a brief evaluation of your work placement/shadowing experience.",
+    "selectedPrompts": [
+      "Outline how you planned for and organised your work placement/shadowing.",
+      "Write a brief evaluation of your work placement/shadowing experience."
+    ],
+    "marks": [
+      3,
+      4
+    ],
+    "scopes": [
+      "planning",
+      "evaluation"
+    ],
+    "fullOriginalRetainedBeforeReveal": true,
+    "provisional": false
+  }
+]

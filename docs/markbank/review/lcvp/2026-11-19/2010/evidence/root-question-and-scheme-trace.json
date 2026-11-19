@@ -1,0 +1,733 @@
+{
+  "recordedAt": "2026-11-19T19:13:38.092704+00:00",
+  "selected": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-authoring/source-parts.json",
+  "selectedSha256": "3af6987bf173ad6a23e6409c0bcf9ae43376c5506196c6548b5d98066d1caafb",
+  "checked": 80,
+  "differences": [],
+  "claims": [
+    {
+      "ref": "A1",
+      "kind": "paper",
+      "pages": [
+        3
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A1",
+      "kind": "scheme",
+      "pages": [
+        4
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A2",
+      "kind": "paper",
+      "pages": [
+        3
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A2",
+      "kind": "scheme",
+      "pages": [
+        4
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A3",
+      "kind": "paper",
+      "pages": [
+        3
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A3",
+      "kind": "scheme",
+      "pages": [
+        4
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A4",
+      "kind": "paper",
+      "pages": [
+        4
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A4",
+      "kind": "scheme",
+      "pages": [
+        4
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A5",
+      "kind": "paper",
+      "pages": [
+        4
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A5",
+      "kind": "scheme",
+      "pages": [
+        4
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A6",
+      "kind": "paper",
+      "pages": [
+        5
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A6",
+      "kind": "scheme",
+      "pages": [
+        5
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A7",
+      "kind": "paper",
+      "pages": [
+        6
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A7",
+      "kind": "scheme",
+      "pages": [
+        5
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A8",
+      "kind": "paper",
+      "pages": [
+        7
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "A8",
+      "kind": "scheme",
+      "pages": [
+        5
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "B1(i)",
+      "kind": "paper",
+      "pages": [
+        9
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "B1(i)",
+      "kind": "scheme",
+      "pages": [
+        6
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "B1(ii)",
+      "kind": "paper",
+      "pages": [
+        9
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "B1(ii)",
+      "kind": "scheme",
+      "pages": [
+        6
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "B2(i)",
+      "kind": "paper",
+      "pages": [
+        10
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "B2(i)",
+      "kind": "scheme",
+      "pages": [
+        6
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "B2(ii)",
+      "kind": "paper",
+      "pages": [
+        10
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "B2(ii)",
+      "kind": "scheme",
+      "pages": [
+        6
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "B3(i)",
+      "kind": "paper",
+      "pages": [
+        11
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "B3(i)",
+      "kind": "scheme",
+      "pages": [
+        7
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "B3(ii)",
+      "kind": "paper",
+      "pages": [
+        11
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "B3(ii)",
+      "kind": "scheme",
+      "pages": [
+        7
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "B3(iii)",
+      "kind": "paper",
+      "pages": [
+        11,
+        12
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "B3(iii)",
+      "kind": "scheme",
+      "pages": [
+        8
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C1(a)",
+      "kind": "paper",
+      "pages": [
+        14
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C1(a)",
+      "kind": "scheme",
+      "pages": [
+        9
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C1(b)",
+      "kind": "paper",
+      "pages": [
+        14
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C1(b)",
+      "kind": "scheme",
+      "pages": [
+        9
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C1(c)",
+      "kind": "paper",
+      "pages": [
+        15
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C1(c)",
+      "kind": "scheme",
+      "pages": [
+        9
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C1(d)",
+      "kind": "paper",
+      "pages": [
+        16
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C1(d)",
+      "kind": "scheme",
+      "pages": [
+        9
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C2(a)",
+      "kind": "paper",
+      "pages": [
+        17
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C2(a)",
+      "kind": "scheme",
+      "pages": [
+        10
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C2(b)",
+      "kind": "paper",
+      "pages": [
+        17
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C2(b)",
+      "kind": "scheme",
+      "pages": [
+        10
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C2(c)",
+      "kind": "paper",
+      "pages": [
+        18
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C2(c)",
+      "kind": "scheme",
+      "pages": [
+        10
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C2(d)",
+      "kind": "paper",
+      "pages": [
+        19
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C2(d)",
+      "kind": "scheme",
+      "pages": [
+        11
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C3(a)",
+      "kind": "paper",
+      "pages": [
+        20
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C3(a)",
+      "kind": "scheme",
+      "pages": [
+        11
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C3(b)",
+      "kind": "paper",
+      "pages": [
+        21
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C3(b)",
+      "kind": "scheme",
+      "pages": [
+        11
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C3(c)",
+      "kind": "paper",
+      "pages": [
+        21,
+        22
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C3(c)",
+      "kind": "scheme",
+      "pages": [
+        12
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C3(d)",
+      "kind": "paper",
+      "pages": [
+        22
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C3(d)",
+      "kind": "scheme",
+      "pages": [
+        12
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C4(a)",
+      "kind": "paper",
+      "pages": [
+        23
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C4(a)",
+      "kind": "scheme",
+      "pages": [
+        13
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C4(b)",
+      "kind": "paper",
+      "pages": [
+        23
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C4(b)",
+      "kind": "scheme",
+      "pages": [
+        13
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C4(c)",
+      "kind": "paper",
+      "pages": [
+        24
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C4(c)",
+      "kind": "scheme",
+      "pages": [
+        13
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C4(d)(i)",
+      "kind": "paper",
+      "pages": [
+        24
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C4(d)(i)",
+      "kind": "scheme",
+      "pages": [
+        14
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C4(d)(ii)",
+      "kind": "paper",
+      "pages": [
+        25
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C4(d)(ii)",
+      "kind": "scheme",
+      "pages": [
+        14
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C5(a)",
+      "kind": "paper",
+      "pages": [
+        26
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C5(a)",
+      "kind": "scheme",
+      "pages": [
+        14
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C5(b)",
+      "kind": "paper",
+      "pages": [
+        26
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C5(b)",
+      "kind": "scheme",
+      "pages": [
+        14
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C5(c)",
+      "kind": "paper",
+      "pages": [
+        27
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C5(c)",
+      "kind": "scheme",
+      "pages": [
+        15
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C5(d)",
+      "kind": "paper",
+      "pages": [
+        27,
+        28
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C5(d)",
+      "kind": "scheme",
+      "pages": [
+        15
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C6(a)",
+      "kind": "paper",
+      "pages": [
+        29
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C6(a)",
+      "kind": "scheme",
+      "pages": [
+        16
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C6(b)",
+      "kind": "paper",
+      "pages": [
+        29
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C6(b)",
+      "kind": "scheme",
+      "pages": [
+        16
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C6(c)",
+      "kind": "paper",
+      "pages": [
+        30
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C6(c)",
+      "kind": "scheme",
+      "pages": [
+        17
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C6(d)",
+      "kind": "paper",
+      "pages": [
+        31
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    },
+    {
+      "ref": "C6(d)",
+      "kind": "scheme",
+      "pages": [
+        17
+      ],
+      "matched": true,
+      "paperAllocationsRemovedForComparison": []
+    }
+  ],
+  "scope": "Questions compared whole after whitespace normalisation and removal of parenthesised printed mark totals; all removals listed. Scheme blocks compared line by line to omit documented page furniture. Not split, scoring, model-layout, browser or release verification."
+}

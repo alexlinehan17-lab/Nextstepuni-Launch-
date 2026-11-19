@@ -1,0 +1,34 @@
+{
+  "sourcePaperSha256": "4669535c42a2604efb2288fef4d1e814e52949af561cef5ee04f93b3e86935a7",
+  "physicalPage": 8,
+  "originalTable": " \n \nAge Groups \n0 – 14 yrs \n15 – 24 yrs \n25 – 44 yrs \n45 – 64 yrs \n65+ yrs \nTotal \n1999 \n673 \n469 \n667 \n554 \n412 \n2775 \n2009 \n528 \n348 \n580 \n670 \n458 \n2584 \n \n",
+  "headers": [
+    "0 – 14 yrs",
+    "15 – 24 yrs",
+    "25 – 44 yrs",
+    "45 – 64 yrs",
+    "65+ yrs",
+    "Total"
+  ],
+  "values": {
+    "1999": [
+      673,
+      469,
+      667,
+      554,
+      412,
+      2775
+    ],
+    "2009": [
+      528,
+      348,
+      580,
+      670,
+      458,
+      2584
+    ]
+  },
+  "transcription": "Table showing the Population of Killmaloe between the years 1999 and 2009\n0 – 14 yrs — 1999: 673; 2009: 528\n15 – 24 yrs — 1999: 469; 2009: 348\n25 – 44 yrs — 1999: 667; 2009: 580\n45 – 64 yrs — 1999: 554; 2009: 670\n65+ yrs — 1999: 412; 2009: 458\nTotal — 1999: 2775; 2009: 2584",
+  "sourceImage": "2010-independent/original-pages/paper-08.png",
+  "scope": "Every original column and all12 values, full five preceding paragraphs and final paragraph retained. Original layout remains available before reveal."
+}
