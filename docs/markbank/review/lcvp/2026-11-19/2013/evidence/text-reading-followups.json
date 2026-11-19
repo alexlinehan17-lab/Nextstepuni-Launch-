@@ -1,0 +1,272 @@
+{
+  "time": "2026-11-19T15:56:59.394687+00:00",
+  "status": "Full original text-layer reading, partial original-image reading; no authoring",
+  "paperTextPagesRead": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemeTextPagesRead": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "caseTextPagesRead": [
+    1,
+    2
+  ],
+  "paperImagesSeen": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "schemeImagesSeen": [],
+  "caseImagesSeen": [],
+  "provisionalPrintedLeafLabels": 38,
+  "provisionalSections": {
+    "A": 8,
+    "B": 6,
+    "C": 24
+  },
+  "notACompleteVisualCensus": true,
+  "schemeAllocations": {
+    "A": [
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      6,
+      6
+    ],
+    "B1": 6,
+    "B2i": 2,
+    "B2ii": 8,
+    "B2iii": 2,
+    "B3i": 6,
+    "B3ii": 6,
+    "C1": [
+      4,
+      4,
+      8,
+      9
+    ],
+    "C2": [
+      6,
+      4,
+      7,
+      8
+    ],
+    "C3": [
+      4,
+      6,
+      9,
+      6
+    ],
+    "C4": [
+      1,
+      8,
+      8,
+      8
+    ],
+    "C5": [
+      2,
+      6,
+      11,
+      6
+    ],
+    "C6": [
+      4,
+      5,
+      7,
+      9
+    ]
+  },
+  "visualFollowups": [
+    {
+      "ref": "B2(ii)",
+      "pages": {
+        "paper": [
+          10,
+          11
+        ],
+        "scheme": [
+          6,
+          7
+        ]
+      },
+      "reason": "Support models span two scheme pages and six agency headings. Preserve all continuation text and the agencies chosen in part(i). Printed allocation is2@4(2+2). No linkage deduction printed in the text."
+    },
+    {
+      "ref": "C1(b)",
+      "pages": {
+        "paper": [
+          14
+        ],
+        "scheme": [
+          9
+        ]
+      },
+      "reason": "Two benefits and two challenges,2@1each. Read original before final boundary decision; required category mix should not become freely interchangeable points."
+    },
+    {
+      "ref": "C1(d)",
+      "pages": {
+        "paper": [
+          16
+        ],
+        "scheme": [
+          10
+        ]
+      },
+      "reason": "Three complete characteristic/explanation/importance profiles; printed3naming+6expansion, no repetition. Preserve all6models."
+    },
+    {
+      "ref": "C2(c)",
+      "pages": {
+        "paper": [
+          18
+        ],
+        "scheme": [
+          11
+        ]
+      },
+      "reason": "Printed3@2(1+1)+1@1=7. Do not replace with an invented uniform allocation or hold."
+    },
+    {
+      "ref": "C3(b)",
+      "pages": {
+        "paper": [
+          20
+        ],
+        "scheme": [
+          12
+        ]
+      },
+      "reason": "Original recreational-facilities pie chart must remain available. Do not reconstruct chart associations from text order alone."
+    },
+    {
+      "ref": "C3(c)",
+      "pages": {
+        "paper": [
+          21
+        ],
+        "scheme": [
+          13
+        ]
+      },
+      "reason": "Chosen organisation name1 plus four developed headings2each; six heading models and no marks for headings alone. Check one complete profile boundary against original."
+    },
+    {
+      "ref": "C5(c)",
+      "pages": {
+        "paper": [
+          27
+        ],
+        "scheme": [
+          15
+        ]
+      },
+      "reason": "Financial section:7figures with labels and4headings, total11. Printed unmarked1100income/401.50cost totals must not receive invented marks; preserve the full table. Visual table reading required."
+    },
+    {
+      "ref": "C5(d)",
+      "pages": {
+        "paper": [
+          28
+        ],
+        "scheme": [
+          16
+        ]
+      },
+      "reason": "Open product/service selection supplies context;3advertising responses2each. No separate mark for naming product/service in text; no extra invented score."
+    },
+    {
+      "ref": "C6(c)",
+      "pages": {
+        "paper": [
+          30
+        ],
+        "scheme": [
+          17
+        ]
+      },
+      "reason": "Printed model email plus seven1-mark criteria. Retain entire model after reveal; model sentences are not additional claimable rows."
+    },
+    {
+      "ref": "C6(d)",
+      "pages": {
+        "paper": [
+          31
+        ],
+        "scheme": [
+          17,
+          18
+        ]
+      },
+      "reason": "Evaluation model list continues on page18. Three complete heading/explanation/reason profiles3each; preserve all5models and all reason continuations."
+    }
+  ],
+  "limits": [
+    "No source changes or cards authored.",
+    "Only paper pages1–12 have been visually read.",
+    "Final count, boundaries and source fidelity still require remaining original images.",
+    "SEC archive remains blocked; use cached originals and later shared heavy rendering slot."
+  ]
+}

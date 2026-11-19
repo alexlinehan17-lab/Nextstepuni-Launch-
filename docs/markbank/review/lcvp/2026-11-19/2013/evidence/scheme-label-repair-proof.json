@@ -1,0 +1,194 @@
+{
+  "recordedAt": "2026-11-19T18:44:46.627028+00:00",
+  "payloadSha256": "873162dad707b5e62b48b623194a693c433ff710c1e1e90d6ca38204ca2dc96b",
+  "previousPayloadSha256": "f679179e2d4d06206ab6c888d020620f98af4dbd6cc1870cb56e698b78b81957",
+  "asks": 41,
+  "offeredMarks": 210,
+  "allQuestionTextIdsConceptIdsUnchanged": true,
+  "changes": [
+    {
+      "id": "lcvp-2013-cl-a4",
+      "rowId": "responses",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Describe some of the ways that Tom organises the finances of ‘Stars by Night’.",
+      "after": "Describe some of the ways that Tom organised the finances of ‘Stars by Night’."
+    },
+    {
+      "id": "lcvp-2013-cl-a5",
+      "rowId": "responses",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Explain two advantages of buying a locally produced craft product as a gift instead of buying a mass-produced product.",
+      "after": "Explain two advantages of buying a locally produced craft product as a gift instead of buying a mass produced product."
+    },
+    {
+      "id": "lcvp-2013-cl-a7",
+      "rowId": "responses",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Explain three ways in which Information and Communications Technology (ICT) could be used to market Irish craft industries.",
+      "after": "Explain three ways in which Information and Communications Technology (ICT) can help to market Irish Craft industries."
+    },
+    {
+      "id": "lcvp-2013-cl-b1",
+      "rowId": "terms",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Explain three of the following terms: Smartphones Plan of Action Redundancy Package Curriculum Vitae",
+      "after": "Explain three of the following terms."
+    },
+    {
+      "id": "lcvp-2013-cl-b3i",
+      "rowId": "responses",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Describe how Mark should proceed so that that he obtains the best formal qualification suited to his requirements",
+      "after": "Describe how Mark should proceed so that he obtains the best formal qualification suited to his requirements."
+    },
+    {
+      "id": "lcvp-2013-cl-b3ii",
+      "rowId": "responses",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Mark, as a mature student, has an interview for a place on an IT course. Explain how can he ensure that he performs well at his interview.",
+      "after": "Mark, as a mature student, has an interview for a place on an IT course. Explain how he can ensure that he performs well at his interview."
+    },
+    {
+      "id": "lcvp-2013-cl-b3ii",
+      "rowId": "missing-expansion",
+      "fields": [
+        "permittedMarks"
+      ],
+      "before": "The scheme prints no answer for this part.",
+      "after": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "lcvp-2013-cl-c1a",
+      "rowId": "definition",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Explain the term ‘Entrepreneur’.",
+      "after": "Explain the term ‘entrepreneur’."
+    },
+    {
+      "id": "lcvp-2013-cl-c1c",
+      "rowId": "responses",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "As part of the Leaving Certificate Vocational Programme you have investigated an entrepreneur in your local area. Outline the steps taken to prepare for the interview with this entrepreneur.",
+      "after": "As part of the LCVP you have investigated an entrepreneur in your local area. Outline the steps taken to prepare for the interview with this entrepreneur."
+    },
+    {
+      "id": "lcvp-2013-cl-c2b",
+      "rowId": "responses",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Interpersonal skills are very important in the workplace. Describe two different situations where you demonstrated interpersonal skills during your work experience placement.",
+      "after": "Interpersonal skills are very important in the workplace. Describe two different situations where you demonstrated interpersonal skills during your work placement."
+    },
+    {
+      "id": "lcvp-2013-cl-c3b",
+      "rowId": "responses",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "The accompanying graph shows the results of part of a survey of teenagers about their preferred choice of recreational facilities in a small town. Explain the steps involved in the successful completion of a survey.",
+      "after": "The accompanying graph shows the results of part of a survey of teenagers preferred choice of recreational facilities in a small town. Explain the steps involved in the successful completion of a survey."
+    },
+    {
+      "id": "lcvp-2013-cl-c3d",
+      "rowId": "responses",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Community organisations depend on local people to volunteer their time and efforts. Describe how they could encourage more involvement by young people.",
+      "after": "Community organisations depend on local people to volunteer their time and efforts. Describe how community organisations can encourage more involvement by young people."
+    },
+    {
+      "id": "lcvp-2013-cl-c4b",
+      "rowId": "missing-expansion",
+      "fields": [
+        "permittedMarks"
+      ],
+      "before": "The scheme prints no answer for this part.",
+      "after": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "lcvp-2013-cl-c4d",
+      "rowId": "responses",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Many businesses have been affected by the current economic recession. Describe some of the strategies businesses could use to overcome the effects of this recession.",
+      "after": "Many businesses have been affected by the current economic recession. Describe some of the strategies businesses could use to overcome the affects of the recession."
+    },
+    {
+      "id": "lcvp-2013-cl-c5d",
+      "rowId": "missing-expansion",
+      "fields": [
+        "permittedMarks"
+      ],
+      "before": "The scheme prints no answer for this part.",
+      "after": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "lcvp-2013-cl-c6a",
+      "rowId": "responses",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Outline the benefits of inviting a guest speaker into school to address the LCVP Link Modules class.",
+      "after": "Outline the benefits of inviting a guest speaker into school to address the LCVP Link Modules class"
+    },
+    {
+      "id": "lcvp-2013-cl-c6b",
+      "rowId": "responses",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Outline the steps that should be taken on the day of the visit in to ensure that the event is successful.",
+      "after": "Outline the steps that should be taken on the day of the visit to ensure that the event is successful."
+    },
+    {
+      "id": "lcvp-2013-cl-c6d",
+      "rowId": "response-1",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Describe how your class would evaluate the success of the visit in from the guest speaker.",
+      "after": "Describe how your class would evaluate the success of the visit-in from the guest speaker."
+    },
+    {
+      "id": "lcvp-2013-cl-c6d",
+      "rowId": "response-2",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Describe how your class would evaluate the success of the visit in from the guest speaker.",
+      "after": "Describe how your class would evaluate the success of the visit-in from the guest speaker."
+    },
+    {
+      "id": "lcvp-2013-cl-c6d",
+      "rowId": "response-3",
+      "fields": [
+        "verbatim"
+      ],
+      "before": "Describe how your class would evaluate the success of the visit in from the guest speaker.",
+      "after": "Describe how your class would evaluate the success of the visit-in from the guest speaker."
+    }
+  ],
+  "limitations": [
+    "Review-only payload. Original-PDF selector integration and required application checks have not run.",
+    "Source filing and C5(d) generic-component split adjudication remain pending."
+  ]
+}

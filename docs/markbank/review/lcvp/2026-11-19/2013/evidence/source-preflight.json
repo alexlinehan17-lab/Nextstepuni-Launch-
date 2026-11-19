@@ -1,0 +1,672 @@
+{
+  "completedSourceReadingAt": "2026-11-19T16:53:22.259446+00:00",
+  "status": "Visual source census completed; 41 asks counted, 0 cards authored. Topic review, fresh archive recheck and later application work remain.",
+  "year": 2013,
+  "level": "common",
+  "language": "ev",
+  "printedLeafLabels": 38,
+  "paperAsks": 41,
+  "sections": {
+    "A": 8,
+    "B": 6,
+    "C": 27
+  },
+  "offeredMarks": 210,
+  "candidateWrittenMarks": 160,
+  "newCardsAuthored": 0,
+  "existing2013AuthoredCards": 0,
+  "tasks": [
+    {
+      "ref": "A1",
+      "marks": 1,
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ]
+    },
+    {
+      "ref": "A2",
+      "marks": 2,
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ]
+    },
+    {
+      "ref": "A3",
+      "marks": 3,
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ]
+    },
+    {
+      "ref": "A4",
+      "marks": 4,
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4
+      ]
+    },
+    {
+      "ref": "A5",
+      "marks": 4,
+      "paperPages": [
+        4,
+        5
+      ],
+      "schemePages": [
+        4
+      ]
+    },
+    {
+      "ref": "A6",
+      "marks": 4,
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        5
+      ]
+    },
+    {
+      "ref": "A7",
+      "marks": 6,
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        5
+      ]
+    },
+    {
+      "ref": "A8",
+      "marks": 6,
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        5
+      ]
+    },
+    {
+      "ref": "B1",
+      "marks": 6,
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        6
+      ]
+    },
+    {
+      "ref": "B2i",
+      "marks": 2,
+      "paperPages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        6
+      ]
+    },
+    {
+      "ref": "B2ii",
+      "marks": 8,
+      "paperPages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        6,
+        7
+      ]
+    },
+    {
+      "ref": "B2iii",
+      "marks": 2,
+      "paperPages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        7
+      ]
+    },
+    {
+      "ref": "B3i",
+      "marks": 6,
+      "paperPages": [
+        11,
+        12
+      ],
+      "schemePages": [
+        8
+      ]
+    },
+    {
+      "ref": "B3ii",
+      "marks": 6,
+      "paperPages": [
+        11,
+        12
+      ],
+      "schemePages": [
+        8
+      ]
+    },
+    {
+      "ref": "C1a",
+      "marks": 4,
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        9
+      ]
+    },
+    {
+      "ref": "C1b-benefits",
+      "marks": 2,
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        9
+      ]
+    },
+    {
+      "ref": "C1b-challenges",
+      "marks": 2,
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        9
+      ]
+    },
+    {
+      "ref": "C1c",
+      "marks": 8,
+      "paperPages": [
+        15
+      ],
+      "schemePages": [
+        9
+      ]
+    },
+    {
+      "ref": "C1d-characteristics",
+      "marks": 3,
+      "paperPages": [
+        16
+      ],
+      "schemePages": [
+        10
+      ]
+    },
+    {
+      "ref": "C1d-importance",
+      "marks": 6,
+      "paperPages": [
+        16
+      ],
+      "schemePages": [
+        10
+      ]
+    },
+    {
+      "ref": "C2a",
+      "marks": 6,
+      "paperPages": [
+        17
+      ],
+      "schemePages": [
+        10
+      ]
+    },
+    {
+      "ref": "C2b",
+      "marks": 4,
+      "paperPages": [
+        17
+      ],
+      "schemePages": [
+        10
+      ]
+    },
+    {
+      "ref": "C2c",
+      "marks": 7,
+      "paperPages": [
+        18
+      ],
+      "schemePages": [
+        11
+      ]
+    },
+    {
+      "ref": "C2d",
+      "marks": 8,
+      "paperPages": [
+        19
+      ],
+      "schemePages": [
+        11
+      ]
+    },
+    {
+      "ref": "C3a",
+      "marks": 4,
+      "paperPages": [
+        20
+      ],
+      "schemePages": [
+        12
+      ]
+    },
+    {
+      "ref": "C3b",
+      "marks": 6,
+      "paperPages": [
+        20
+      ],
+      "schemePages": [
+        12
+      ]
+    },
+    {
+      "ref": "C3c-name",
+      "marks": 1,
+      "paperPages": [
+        21
+      ],
+      "schemePages": [
+        13
+      ]
+    },
+    {
+      "ref": "C3c-account",
+      "marks": 8,
+      "paperPages": [
+        21
+      ],
+      "schemePages": [
+        13
+      ]
+    },
+    {
+      "ref": "C3d",
+      "marks": 6,
+      "paperPages": [
+        22
+      ],
+      "schemePages": [
+        13
+      ]
+    },
+    {
+      "ref": "C4a",
+      "marks": 1,
+      "paperPages": [
+        23
+      ],
+      "schemePages": [
+        14
+      ]
+    },
+    {
+      "ref": "C4b",
+      "marks": 8,
+      "paperPages": [
+        23
+      ],
+      "schemePages": [
+        14
+      ]
+    },
+    {
+      "ref": "C4c",
+      "marks": 8,
+      "paperPages": [
+        24
+      ],
+      "schemePages": [
+        14
+      ]
+    },
+    {
+      "ref": "C4d",
+      "marks": 8,
+      "paperPages": [
+        25
+      ],
+      "schemePages": [
+        14
+      ]
+    },
+    {
+      "ref": "C5a",
+      "marks": 2,
+      "paperPages": [
+        26
+      ],
+      "schemePages": [
+        15
+      ]
+    },
+    {
+      "ref": "C5b",
+      "marks": 6,
+      "paperPages": [
+        26
+      ],
+      "schemePages": [
+        15
+      ]
+    },
+    {
+      "ref": "C5c",
+      "marks": 11,
+      "paperPages": [
+        27
+      ],
+      "schemePages": [
+        15
+      ]
+    },
+    {
+      "ref": "C5d",
+      "marks": 6,
+      "paperPages": [
+        28
+      ],
+      "schemePages": [
+        16
+      ]
+    },
+    {
+      "ref": "C6a",
+      "marks": 4,
+      "paperPages": [
+        29
+      ],
+      "schemePages": [
+        16
+      ]
+    },
+    {
+      "ref": "C6b",
+      "marks": 5,
+      "paperPages": [
+        29
+      ],
+      "schemePages": [
+        16
+      ]
+    },
+    {
+      "ref": "C6c",
+      "marks": 7,
+      "paperPages": [
+        30
+      ],
+      "schemePages": [
+        17
+      ]
+    },
+    {
+      "ref": "C6d",
+      "marks": 9,
+      "paperPages": [
+        31
+      ],
+      "schemePages": [
+        17,
+        18
+      ]
+    }
+  ],
+  "sourcePagesActuallySeen": {
+    "paper": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "scheme": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "case": [
+      1,
+      2
+    ]
+  },
+  "firstReadingEvidence": [
+    "partial-reading.json",
+    "remaining-source-reading.json"
+  ],
+  "laterCorroboratingImages": [
+    {
+      "kind": "paper",
+      "physicalPage": 20,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/paper-20.png",
+      "sha256": "d472e21a31f0a3f1b8f66c69eef2a6c5c2c6c5d99c16bae45334b1ea6509730a",
+      "visualReview": "Viewed after parent conclusions were received; corroborating source reading, not blind.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 21,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/paper-21.png",
+      "sha256": "1291a6cde361225bf3f3f02e984084bf10febb3e028dc60be515384db0cb049d",
+      "visualReview": "Viewed after parent conclusions were received; corroborating source reading, not blind.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 27,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/paper-27.png",
+      "sha256": "689d38e2b95233f6e2ec9f933e34e8b0c4b930b92794918994e27f039b7f34e3",
+      "visualReview": "Viewed after parent conclusions were received; corroborating source reading, not blind.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 30,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/paper-30.png",
+      "sha256": "e216223585d2087749dc58579b6823530a9d31669f75a18e43b69e5559a11924",
+      "visualReview": "Viewed after parent conclusions were received; corroborating source reading, not blind.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 12,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/scheme-12.png",
+      "sha256": "b40119822dfaa4d9882def3690e5dd4531ee691acd8b441147430ff57d7fb561",
+      "visualReview": "Viewed after parent conclusions were received; corroborating source reading, not blind.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 13,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/scheme-13.png",
+      "sha256": "378857448e38b0811d48b4cda35bf9a5b1d6f242e545a4f7a5d93b7a854d5444",
+      "visualReview": "Viewed after parent conclusions were received; corroborating source reading, not blind.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 15,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/scheme-15.png",
+      "sha256": "85c8018a237e2284ab317f8b4d71e0d242750718accd1f33a7bf2c7ae0f3516e",
+      "visualReview": "Viewed after parent conclusions were received; corroborating source reading, not blind.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 17,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/scheme-17.png",
+      "sha256": "ac35ce4ae40256194fdd3fcf11c74c099b651fee51722c3394224c123bd1dcc5",
+      "visualReview": "Viewed after parent conclusions were received; corroborating source reading, not blind.",
+      "actuallyViewed": true
+    }
+  ],
+  "corroboratingNotes": {
+    "C3a": "Two binary two-mark responses, printed (0, 2); all seven models.",
+    "C3b": "One survey-process ask, 3 @ 2m (1 + 1); all seven models. Original pie chart remains attached.",
+    "C3c": "Two printed sentences with separate 1 + 8 marks: name and detailed account. The name has only Name of organisation. in the scheme; use the fixed R4 no-answer line with the printed criterion. The four-heading account retains all six model headings and every continuation, plus No Marks for headings.",
+    "C3d": "Seven complete youth-participation models, 3 @ 2m (1 + 1).",
+    "C5a": "Seven full ideas-generation models, 2 @ 1m.",
+    "C5b": "Five market-research models, 3 @ 2m (1 + 1).",
+    "C5c": "One complete financial-section response; seven labelled figures and four headings, each one mark. Both the printed 1,100.00 income and 401.50 costs subtotals remain in the full model without invented extra marks. Profit figure €698.50 and Surplus[Profit] heading are separate printed awards.",
+    "C6c": "One email with seven printed one-mark criteria. Whole model remains after reveal, including Tuesday November 15th at 2:30pm, 30 students and Mark Smith. No model sentence becomes an additional scoring row.",
+    "C6d": "All five full evaluation profiles have now been read across scheme pages 17 and 18. Three complete Heading/Explanation/Reason responses, each 1 + 1 + 1."
+  },
+  "splitDecisions": [
+    {
+      "part": "C1b",
+      "before": {
+        "firstReader": "One four-mark card with two required categories",
+        "frozenFile": "remaining-source-reading.json"
+      },
+      "independentSecondReader": "Two asks, benefits 2 and challenges 2; each keeps its own any-two choice pool",
+      "decision": "Split 2 + 2",
+      "reason": "Plan R7 is stricter: two independently answered and separately marked lists. The first reader reconsidered after comparing; this is not reported as initial agreement.",
+      "secondReaderEvidence": "../2026-11-19-lcvp-2013-independent/c1b-independent-split.json"
+    },
+    {
+      "part": "C3c",
+      "decision": "Split 1 + 8",
+      "reason": "Two printed sentences with separately marked name and account. Parent first reading preceded this reader’s visual corroboration.",
+      "secondReaderEvidence": "../2026-11-19-lcvp-2013-independent/independent-findings.json"
+    },
+    {
+      "part": "C1d",
+      "before": {
+        "firstReader": "One nine-mark card with matched profiles",
+        "frozenFile": "remaining-source-reading.json"
+      },
+      "independentSecondReader": "Two printed commands; separately marked 3 naming and 6 explanation/importance marks",
+      "decision": "Split 3 + 6, retaining chosen-characteristic context",
+      "reason": "Plan R7 applies to the two separately printed and separately marked asks. The first reader reconsidered after comparison; not an initial independent agreement.",
+      "secondReaderEvidence": "../2026-11-19-lcvp-2013-independent/c1d-independent-split.json",
+      "comparedAt": "2026-11-19T16:58:39.829381+00:00"
+    }
+  ],
+  "noPrintedAnswer": [
+    {
+      "ref": "C3c-name",
+      "marks": 1,
+      "schemePage": 13,
+      "printedCriterion": "Name of organisation."
+    },
+    {
+      "ref": "C4a",
+      "marks": 1,
+      "schemePage": 14,
+      "printedCriterion": "Name of the Business."
+    }
+  ],
+  "freshArchiveRecheck": "Blocked; no SEC request made. Retain cached source/listing evidence, do not claim a fresh archive search.",
+  "recording": "Cached SEC listing contains LC462CLP031EV.mp4; the recording is published. Native hosted playback remains with the shared audio/video lane.",
+  "remaining": [
+    "Finish 2014 verification and report its remote checkpoint before 2013 authoring.",
+    "Settle A8, B1, C4c and C5a heading differences through third reading; retain original independent decisions.",
+    "Literal question spans for C1b and C1d split cards must retain the full original prompts and chosen-answer context without rewriting.",
+    "Source-lift all 41 asks, preserve full models/context, generate direct Atlas links and run source/application checks.",
+    "Fresh SEC archive recheck remains blocked; cached originals and recorded video listing are retained."
+  ],
+  "previousProposedAskCount": 40,
+  "askCountProvisional": false,
+  "boundaryReviewCompletedAt": "2026-11-19T17:04:08.529360+00:00",
+  "boundaryReviewEvidence": "remaining-category-comparison.json plus the three source-backed split decisions retained below",
+  "categoryReview": {
+    "independentlyComparedAsks": 35,
+    "agreements": 31,
+    "differences": [
+      "A8",
+      "B1",
+      "C4c",
+      "C5a"
+    ],
+    "informedCorroborations": 6,
+    "allAsks": 41,
+    "evidence": [
+      "remaining-category-comparison.json",
+      "audio-case-category-comparison.json",
+      "third-reader-input.json"
+    ]
+  }
+}

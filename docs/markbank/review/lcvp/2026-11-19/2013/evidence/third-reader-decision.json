@@ -1,0 +1,69 @@
+{
+  "recordedAt": "2026-11-19T20:30:00Z",
+  "reader": "Claude third reader (assigned by the Claude coordinator)",
+  "readerA": "first reader (firstHeadingIds)",
+  "readerB": "second reader (secondHeadingIds)",
+  "method": "Original paper and scheme renders named in third-reader-input.json read for every item. Rules: PLAN R7/R9, CARD-STANDARD sections 5 and 9, BRIEF rule 5, standard-model/stage1/READING.md rules 4 and 6 (a printed choice spanning more than two headings takes the two covering most, flagged CHOICE SPANS; Case Study and Audio Visual are format headings, used only where the ask tests the case or recording itself). Splitting rule applied across all LCVP packets: a separately printed instruction, or an item the paper itself names, that the scheme marks separately is its own card; a single 'state and explain N' instruction whose (1+1) sits inside each answer point stays one card.",
+  "items": [
+    {
+      "id": "C4c",
+      "decision": {
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      "reason": "Paper p24 Q4(c), under 'Learning about businesses operating in your local area', asks how a business owner or manager ensures targets are met and scheme p12 (physical p14) pays 4 @ 2m (1+1) for running the business (planning, staffing, reviewing targets, incentives, customer service, marketing), filed with live 2023 Q4(a)/(d) business-management asks.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "C5a",
+      "decision": {
+        "headingIds": [
+          "link-modules-common-2-an-enterprise-activity"
+        ]
+      },
+      "reason": "Paper p26 Q5, 'you are required to organise a class enterprise activity', (a) asks two methods of generating ideas for a class enterprise and scheme p13 (physical p15) pays 2 @ 1m for brainstorming, market research and similar first steps of that activity.",
+      "agreesWith": "A"
+    },
+    {
+      "id": "A8",
+      "decision": {
+        "headingIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      "reason": "Paper p7 Q8 asks advice for someone setting up a craft business in Ireland and scheme p3 (physical p5) pays 3 @ 2m (1+1) for start-up advice (research, business skills and supports, promotion, finance, business plan, location), which is setting up a local business, as 2011 B3(ii) is settled.",
+      "agreesWith": "B"
+    },
+    {
+      "id": "B1",
+      "decision": {
+        "headingIds": [
+          "link-modules-common-2-enterprise-skills",
+          "link-modules-common-1-introduction-to-working-life"
+        ],
+        "cards": 1,
+        "choiceSpans": [
+          "link-modules-common-2-enterprise-skills",
+          "link-modules-common-1-introduction-to-working-life",
+          "link-modules-common-1-job-seeking-skills"
+        ]
+      },
+      "reason": "Paper p9 Q1 is one printed 'explain three of the following' choice over four terms (smartphones, plan of action, redundancy package, CV) that scheme p4 (physical p6) marks alike at 3 @ 2m (1+1), so it stays one card (R7); the terms test content, not the case, so under READING rules 4 and 6 it takes the two content headings covering most options, Enterprise Skills (smartphones/ICT, plan of action) and Introduction to Working Life (redundancy), flagged CHOICE SPANS with Job Seeking Skills (CV).",
+      "agreesWith": "B",
+      "note": "The live 2015-2026 Section B 'explain three of the following terms' cards (2015, 2018, 2020, 2021 Q1) sit under Case Study by evidence default (decision code xa, never read); by the same rule they would move to content headings. BRIEF rule 5 would also permit per-option cards since the options sit under different topics; that is a coordinator call for all term-choice cards at once."
+    },
+    {
+      "id": "C5(d)",
+      "decision": {
+        "cards": 1,
+        "cardMarks": [
+          6
+        ],
+        "split": false
+      },
+      "reason": "Paper p28 Q5(d) is one instruction, 'State and explain three types of advertising', and scheme p14 (physical p16) pays 3 @ 2m (1+1) per type with each model printing the type and its explanation together and no mark for the product named, so the (1+1) is the inside of each answer point, not two separately answered tasks (R7); keep one six-mark card, with the scoped no-answer notice for models 3, 7 and 8 that print a type without an explanation.",
+      "agreesWith": "both"
+    }
+  ]
+}

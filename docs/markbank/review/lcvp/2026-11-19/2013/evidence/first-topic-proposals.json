@@ -1,0 +1,618 @@
+{
+  "createdAt": "2026-11-19T16:57:06.059591+00:00",
+  "status": "Review-only proposals; no canonical filings or 2013 cards authored",
+  "newAsks": 40,
+  "independentFirstChoices": 34,
+  "parentFirstChoicesThenCorroborated": 6,
+  "topicsMetadataSource": "standard-model/stage1r/export/lcvp.json groups only; existing asks not consulted",
+  "asks": [
+    {
+      "ref": "A1",
+      "marks": 1,
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "headingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Direct recall of the time stated in the recording; it does not ask for a separate business concept."
+    },
+    {
+      "ref": "A2",
+      "marks": 2,
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "headingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Direct recall of the speakers’ personal benefits from rural living."
+    },
+    {
+      "ref": "A3",
+      "marks": 3,
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Benefits of the local craft-business network and tourism to the named business."
+    },
+    {
+      "ref": "A4",
+      "marks": 4,
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "The part asks how business finances are organised."
+    },
+    {
+      "ref": "A5",
+      "marks": 4,
+      "paperPages": [
+        4,
+        5
+      ],
+      "schemePages": [
+        4
+      ],
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Local craft products and their benefits for buyers and local jobs."
+    },
+    {
+      "ref": "A6",
+      "marks": 4,
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        5
+      ],
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Challenges facing Irish craft businesses."
+    },
+    {
+      "ref": "A7",
+      "marks": 6,
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        5
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Use of ICT to market products."
+    },
+    {
+      "ref": "A8",
+      "marks": 6,
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        5
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Advice about researching, financing, planning and locating a start-up."
+    },
+    {
+      "ref": "B1",
+      "marks": 6,
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        6
+      ],
+      "headingIds": [
+        "link-modules-common-case-study"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "One printed any-three choice over four different case-study terms; keep the complete choice together."
+    },
+    {
+      "ref": "B2i",
+      "marks": 2,
+      "paperPages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        6
+      ],
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Government agencies supporting local enterprise and employment after the factory closure."
+    },
+    {
+      "ref": "B2ii",
+      "marks": 8,
+      "paperPages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        6,
+        7
+      ],
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "The corresponding agency supports for the town and local enterprises."
+    },
+    {
+      "ref": "B2iii",
+      "marks": 2,
+      "paperPages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        7
+      ],
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Why local people should participate in a community meeting and its development decisions."
+    },
+    {
+      "ref": "B3i",
+      "marks": 6,
+      "paperPages": [
+        11,
+        12
+      ],
+      "schemePages": [
+        8
+      ],
+      "headingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Choosing and researching a suitable formal qualification."
+    },
+    {
+      "ref": "B3ii",
+      "marks": 6,
+      "paperPages": [
+        11,
+        12
+      ],
+      "schemePages": [
+        8
+      ],
+      "headingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Interview preparation and performance; the same interview skills apply to this course interview."
+    },
+    {
+      "ref": "C1a",
+      "marks": 4,
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        9
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "The scheme explicitly gives 2 @ 2m (0, 2). Keep two binary two-mark components and the full continuous definition; no invented one-mark subdivision."
+    },
+    {
+      "ref": "C1b-benefits",
+      "marks": 2,
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        9
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "One printed describe question with two required categories. Keep two benefits and two challenges, each 2 @ 1m, with separate complete four-option pools. Required headings are not separate printed questions (repository rule against fanning out required headings), like the four SWOT categories in 2014."
+    },
+    {
+      "ref": "C1b-challenges",
+      "marks": 2,
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        9
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "One printed describe question with two required categories. Keep two benefits and two challenges, each 2 @ 1m, with separate complete four-option pools. Required headings are not separate printed questions (repository rule against fanning out required headings), like the four SWOT categories in 2014."
+    },
+    {
+      "ref": "C1c",
+      "marks": 8,
+      "paperPages": [
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Interview preparation; retain all six expanded models. 4 @ 2m (1 + 1)."
+    },
+    {
+      "ref": "C1d",
+      "marks": 9,
+      "paperPages": [
+        16
+      ],
+      "schemePages": [
+        10
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Three matched characteristic/explanation/importance profiles; each 1 + 1 + 1, all six complete models and No repetition of points. Do not split the characteristics from the same profiles."
+    },
+    {
+      "ref": "C2a",
+      "marks": 6,
+      "paperPages": [
+        17
+      ],
+      "schemePages": [
+        10
+      ],
+      "headingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "3 @ 2m (1 + 1), all nine preparation models."
+    },
+    {
+      "ref": "C2b",
+      "marks": 4,
+      "paperPages": [
+        17
+      ],
+      "schemePages": [
+        10
+      ],
+      "headingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Two interpersonal-skill situations, 2 @ 2m (1 + 1), all five models."
+    },
+    {
+      "ref": "C2c",
+      "marks": 7,
+      "paperPages": [
+        18
+      ],
+      "schemePages": [
+        11
+      ],
+      "headingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Prints 3 @ 2m (1 + 1) plus 1 @ 1m. Keep this uneven allocation and all six models; do not infer a uniform award or leave a hold."
+    },
+    {
+      "ref": "C2d",
+      "marks": 8,
+      "paperPages": [
+        19
+      ],
+      "schemePages": [
+        11
+      ],
+      "headingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "4 @ 2m (1 + 1), all seven evaluation models."
+    },
+    {
+      "ref": "C3a",
+      "marks": 4,
+      "paperPages": [
+        20
+      ],
+      "schemePages": [
+        12
+      ],
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "readingStatus": "Corroborated after parent conclusion; not blind",
+      "reason": "See source-preflight.json and the parent independent reading."
+    },
+    {
+      "ref": "C3b",
+      "marks": 6,
+      "paperPages": [
+        20
+      ],
+      "schemePages": [
+        12
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "Corroborated after parent conclusion; not blind",
+      "reason": "See source-preflight.json and the parent independent reading."
+    },
+    {
+      "ref": "C3c-name",
+      "marks": 1,
+      "paperPages": [
+        21
+      ],
+      "schemePages": [
+        13
+      ],
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "readingStatus": "Corroborated after parent conclusion; not blind",
+      "reason": "See source-preflight.json and the parent independent reading."
+    },
+    {
+      "ref": "C3c-account",
+      "marks": 8,
+      "paperPages": [
+        21
+      ],
+      "schemePages": [
+        13
+      ],
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "readingStatus": "Corroborated after parent conclusion; not blind",
+      "reason": "See source-preflight.json and the parent independent reading."
+    },
+    {
+      "ref": "C3d",
+      "marks": 6,
+      "paperPages": [
+        22
+      ],
+      "schemePages": [
+        13
+      ],
+      "headingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Paper asks how community organisations can encourage youth participation. Scheme page 13 belongs to the parent first reading, so its models are not yet independently visually read here."
+    },
+    {
+      "ref": "C4a",
+      "marks": 1,
+      "paperPages": [
+        23
+      ],
+      "schemePages": [
+        14
+      ],
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Scheme prints only Name of the Business. and 1m, with no actual named answer. R4 needs the fixed no-answer line alongside the printed criterion and one mark; retain original evidence. Archive recheck remains blocked."
+    },
+    {
+      "ref": "C4b",
+      "marks": 8,
+      "paperPages": [
+        23
+      ],
+      "schemePages": [
+        14
+      ],
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "4 @ 2m (1 + 1), all seven complete school-support models."
+    },
+    {
+      "ref": "C4c",
+      "marks": 8,
+      "paperPages": [
+        24
+      ],
+      "schemePages": [
+        14
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "4 @ 2m (1 + 1), all seven management/target models."
+    },
+    {
+      "ref": "C4d",
+      "marks": 8,
+      "paperPages": [
+        25
+      ],
+      "schemePages": [
+        14
+      ],
+      "headingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "4 @ 2m (1 + 1), all six expanded recession-strategy models, including the long negotiation and marketing continuations."
+    },
+    {
+      "ref": "C5a",
+      "marks": 2,
+      "paperPages": [
+        26
+      ],
+      "schemePages": [
+        15
+      ],
+      "headingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "List two methods; scheme page 15 belongs to the parent first reading, not yet independently visually read here."
+    },
+    {
+      "ref": "C5b",
+      "marks": 6,
+      "paperPages": [
+        26
+      ],
+      "schemePages": [
+        15
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Outline three reasons for market research; scheme page 15 belongs to the parent first reading, not yet independently visually read here."
+    },
+    {
+      "ref": "C5c",
+      "marks": 11,
+      "paperPages": [
+        27
+      ],
+      "schemePages": [
+        15
+      ],
+      "headingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "readingStatus": "Corroborated after parent conclusion; not blind",
+      "reason": "See source-preflight.json and the parent independent reading."
+    },
+    {
+      "ref": "C5d",
+      "marks": 6,
+      "paperPages": [
+        28
+      ],
+      "schemePages": [
+        16
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Naming a product/service supplies open context. No separate naming allocation; 3 @ 2m (1 + 1) applies to the three advertising responses. Keep one card and all eight full models."
+    },
+    {
+      "ref": "C6a",
+      "marks": 4,
+      "paperPages": [
+        29
+      ],
+      "schemePages": [
+        16
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "4 @ 1m, all six benefits of the guest visit."
+    },
+    {
+      "ref": "C6b",
+      "marks": 5,
+      "paperPages": [
+        29
+      ],
+      "schemePages": [
+        16
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "5 @ 1m, all eight day-of-visit steps."
+    },
+    {
+      "ref": "C6c",
+      "marks": 7,
+      "paperPages": [
+        30
+      ],
+      "schemePages": [
+        17
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "Corroborated after parent conclusion; not blind",
+      "reason": "See source-preflight.json and the parent independent reading."
+    },
+    {
+      "ref": "C6d",
+      "marks": 9,
+      "paperPages": [
+        31
+      ],
+      "schemePages": [
+        17,
+        18
+      ],
+      "headingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "readingStatus": "First-reader choice frozen before existing 2013 filings",
+      "reason": "Question says visit in from the guest speaker; preserve that wording. Scheme page 18 continues the fifth Class Discussion model and gives 3 @ 3m (1 + 1 + 1), Heading/Explanation/Reason. Full page 17 still needs this reader to view it before a complete model claim."
+    }
+  ]
+}

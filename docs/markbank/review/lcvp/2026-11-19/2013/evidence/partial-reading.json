@@ -1,0 +1,208 @@
+{
+  "status": "Partial independent original-paper reading only; no authoring or final filing decisions",
+  "seenPhysicalPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "unseenPhysicalPages": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemeSeen": false,
+  "paperContext": {
+    "A": {
+      "asks": 8,
+      "marks": 30
+    },
+    "B": {
+      "asks": 6,
+      "marks": 30,
+      "B2combinedMarks": 12,
+      "B3combinedMarks": 12
+    },
+    "C": {
+      "printedQuestions": 6,
+      "candidateChoice": 4,
+      "marksForChosenFour": 100,
+      "asksNotYetCounted": true
+    }
+  },
+  "asks": [
+    {
+      "ref": "A1",
+      "pages": [
+        3
+      ],
+      "paperMarks": 1,
+      "questionReadFromImage": "How long have Andrea and Tom been living in Co. Kilkenny?"
+    },
+    {
+      "ref": "A2",
+      "pages": [
+        3
+      ],
+      "paperMarks": 2,
+      "questionReadFromImage": "State two ways that Tom and Andrea have benefited from life in rural Ireland compared to life in the USA."
+    },
+    {
+      "ref": "A3",
+      "pages": [
+        3
+      ],
+      "paperMarks": 3,
+      "questionReadFromImage": "How does the Kilkenny Craft Trail benefit ‘Stars by Night’?"
+    },
+    {
+      "ref": "A4",
+      "pages": [
+        4
+      ],
+      "paperMarks": 4,
+      "questionReadFromImage": "Describe some of the ways that Tom organises the finances of ‘Stars by Night’."
+    },
+    {
+      "ref": "A5",
+      "pages": [
+        4,
+        5
+      ],
+      "paperMarks": 4,
+      "questionReadFromImage": "Explain two advantages of buying a locally produced craft product as a gift instead of buying a mass-produced product."
+    },
+    {
+      "ref": "A6",
+      "pages": [
+        5
+      ],
+      "paperMarks": 4,
+      "questionReadFromImage": "Outline two problems that craft industries in Ireland have faced in recent years."
+    },
+    {
+      "ref": "A7",
+      "pages": [
+        6
+      ],
+      "paperMarks": 6,
+      "questionReadFromImage": "Explain three ways in which Information and Communications Technology (ICT) could be used to market Irish craft industries."
+    },
+    {
+      "ref": "A8",
+      "pages": [
+        7
+      ],
+      "paperMarks": 6,
+      "questionReadFromImage": "What advice would you give to someone considering setting up a craft business in Ireland at present?"
+    },
+    {
+      "ref": "B1",
+      "pages": [
+        9
+      ],
+      "paperMarks": 6,
+      "questionReadFromImage": "Explain three of the following terms: Smartphones; Plan of Action; Redundancy Package; Curriculum Vitae."
+    },
+    {
+      "ref": "B2i",
+      "pages": [
+        10,
+        11
+      ],
+      "paperMarks": null,
+      "questionReadFromImage": "Name two relevant government agencies the Town Council and Local Chamber of Commerce should consult for support in dealing with the closure of Axel Computers."
+    },
+    {
+      "ref": "B2ii",
+      "pages": [
+        10,
+        11
+      ],
+      "paperMarks": null,
+      "questionReadFromImage": "Outline the types of support these agencies can give to help the town deal with the closure of Axel Computers."
+    },
+    {
+      "ref": "B2iii",
+      "pages": [
+        10,
+        11
+      ],
+      "paperMarks": null,
+      "questionReadFromImage": "Why is it important for locals to attend the planned town meeting?"
+    },
+    {
+      "ref": "B3i",
+      "pages": [
+        11,
+        12
+      ],
+      "paperMarks": null,
+      "questionReadFromImage": "Describe how Mark should proceed so that that he obtains the best formal qualification suited to his requirements"
+    },
+    {
+      "ref": "B3ii",
+      "pages": [
+        11,
+        12
+      ],
+      "paperMarks": null,
+      "questionReadFromImage": "Mark, as a mature student, has an interview for a place on an IT course. Explain how can he ensure that he performs well at his interview."
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/tmp/pdfs/lcvp-review/2013-main/paper-contact-01.png",
+      "sha256": "6e68bd7e7ff072b5a30afd0f608e8f51fa8b4093d9b413dc86a03f9047605575",
+      "seen": true
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/tmp/pdfs/lcvp-review/2013-main/paper-contact-02.png",
+      "sha256": "f0b3f09240a8adc48185f4b74ca4d3766c786356188acab9504d102ad66d69a3",
+      "seen": true
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/tmp/pdfs/lcvp-review/2013-main/paper-contact-03.png",
+      "sha256": "7b20ccbf03acd8a05eb9900d865e23916b3b44b2309a6a0e6634d4c908031ad6",
+      "seen": true
+    }
+  ],
+  "limits": [
+    "Only original paper pages 1–12 visually inspected; no whole-sitting census claim.",
+    "No scheme images inspected, so no individual marks inferred for B2/B3.",
+    "B1 is a printed choice: one ask despite four alternatives.",
+    "B2/B3 are separate printed parts; preserve shared Axel Computers context on each.",
+    "No SEC request, no source-deck or branch mutation, no 2013 authoring before 2014 push."
+  ],
+  "correctionFromSinglePageInspection": {
+    "page": 11,
+    "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/tmp/pdfs/lcvp-review/2013-main/paper-11.png",
+    "sha256": "31798c634aea57e64b6014da4cdd0920c3172e27d3d9aef77eb9ff25503bd727",
+    "reason": "The first contact-image notes accidentally normalised two printed grammatical errors. Single-page inspection confirms the original says “that that” and “how can he ensure”. Retain both literally in future question cards; the scheme restates corrected wording, so use the paper for prompts."
+  }
+}

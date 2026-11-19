@@ -1,0 +1,432 @@
+{
+  "purpose": "Second reader input: source refs and images only; no first heading choices",
+  "note": "The initial 19 printed parts become 20 asks after the accepted C1(b) benefits/challenges split.",
+  "asks": [
+    {
+      "ref": "C1a",
+      "paperPhysicalPages": [
+        14
+      ],
+      "schemePhysicalPages": [
+        9
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 14,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-14.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 9,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-09.png"
+        }
+      ]
+    },
+    {
+      "ref": "C1b-benefits",
+      "paperPhysicalPages": [
+        14
+      ],
+      "schemePhysicalPages": [
+        9
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 14,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-14.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 9,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-09.png"
+        }
+      ]
+    },
+    {
+      "ref": "C1b-challenges",
+      "paperPhysicalPages": [
+        14
+      ],
+      "schemePhysicalPages": [
+        9
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 14,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-14.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 9,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-09.png"
+        }
+      ]
+    },
+    {
+      "ref": "C1c",
+      "paperPhysicalPages": [
+        15
+      ],
+      "schemePhysicalPages": [
+        9
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 15,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-15.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 9,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-09.png"
+        }
+      ]
+    },
+    {
+      "ref": "C1d",
+      "paperPhysicalPages": [
+        16
+      ],
+      "schemePhysicalPages": [
+        10
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 16,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-16.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 10,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-10.png"
+        }
+      ]
+    },
+    {
+      "ref": "C2a",
+      "paperPhysicalPages": [
+        17
+      ],
+      "schemePhysicalPages": [
+        10
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 17,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-17.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 10,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-10.png"
+        }
+      ]
+    },
+    {
+      "ref": "C2b",
+      "paperPhysicalPages": [
+        17
+      ],
+      "schemePhysicalPages": [
+        10
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 17,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-17.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 10,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-10.png"
+        }
+      ]
+    },
+    {
+      "ref": "C2c",
+      "paperPhysicalPages": [
+        18
+      ],
+      "schemePhysicalPages": [
+        11
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 18,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-18.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 11,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-11.png"
+        }
+      ]
+    },
+    {
+      "ref": "C2d",
+      "paperPhysicalPages": [
+        19
+      ],
+      "schemePhysicalPages": [
+        11
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 19,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-19.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 11,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-11.png"
+        }
+      ]
+    },
+    {
+      "ref": "C3d",
+      "paperPhysicalPages": [
+        22
+      ],
+      "schemePhysicalPages": [
+        13
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 22,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-22.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 13,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/scheme-13.png"
+        }
+      ]
+    },
+    {
+      "ref": "C4a",
+      "paperPhysicalPages": [
+        23
+      ],
+      "schemePhysicalPages": [
+        14
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 23,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-23.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 14,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-14.png"
+        }
+      ]
+    },
+    {
+      "ref": "C4b",
+      "paperPhysicalPages": [
+        23
+      ],
+      "schemePhysicalPages": [
+        14
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 23,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-23.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 14,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-14.png"
+        }
+      ]
+    },
+    {
+      "ref": "C4c",
+      "paperPhysicalPages": [
+        24
+      ],
+      "schemePhysicalPages": [
+        14
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 24,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-24.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 14,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-14.png"
+        }
+      ]
+    },
+    {
+      "ref": "C4d",
+      "paperPhysicalPages": [
+        25
+      ],
+      "schemePhysicalPages": [
+        14
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 25,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-25.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 14,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-14.png"
+        }
+      ]
+    },
+    {
+      "ref": "C5a",
+      "paperPhysicalPages": [
+        26
+      ],
+      "schemePhysicalPages": [
+        15
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 26,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-26.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 15,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/scheme-15.png"
+        }
+      ]
+    },
+    {
+      "ref": "C5b",
+      "paperPhysicalPages": [
+        26
+      ],
+      "schemePhysicalPages": [
+        15
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 26,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-26.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 15,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/scheme-15.png"
+        }
+      ]
+    },
+    {
+      "ref": "C5d",
+      "paperPhysicalPages": [
+        28
+      ],
+      "schemePhysicalPages": [
+        16
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 28,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-28.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 16,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-16.png"
+        }
+      ]
+    },
+    {
+      "ref": "C6a",
+      "paperPhysicalPages": [
+        29
+      ],
+      "schemePhysicalPages": [
+        16
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 29,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-29.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 16,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-16.png"
+        }
+      ]
+    },
+    {
+      "ref": "C6b",
+      "paperPhysicalPages": [
+        29
+      ],
+      "schemePhysicalPages": [
+        16
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 29,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-29.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 16,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-16.png"
+        }
+      ]
+    },
+    {
+      "ref": "C6d",
+      "paperPhysicalPages": [
+        31
+      ],
+      "schemePhysicalPages": [
+        17,
+        18
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 31,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-31.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 17,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/scheme-17.png"
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 18,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-18.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "recordedAt": "2026-11-19T18:49:14.365969+00:00",
+  "status": "Review-only original-PDF reproduction passed; no lane mutation",
+  "payloadSha256": "873162dad707b5e62b48b623194a693c433ff710c1e1e90d6ca38204ca2dc96b",
+  "helperSha256": "dd263f35f61595d9234b0fee0bbdfc713b3b1416da030c9ec14c3023acb97371",
+  "sources": [
+    {
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP016EV.pdf",
+      "sha256": "887e61fc2f8ed9186f117ea1b1fe975182dce995e9342e5a7b53e01e743d8a58"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4"
+    }
+  ],
+  "sourcePageCounts": {
+    "paper": 32,
+    "scheme": 20,
+    "case": 2
+  },
+  "exactPayloadReproduced": true,
+  "asks": 41,
+  "offeredMarks": 210,
+  "remaining": [
+    "Production source binding/author helper integration",
+    "Application and browser checks",
+    "Four heading and C5(d) split adjudications",
+    "SEC archive recheck and native video hosting/playback"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "recordedAt": "2026-11-19T18:21:59.997284+00:00",
+  "scope": "Review-only source evidence; no authored or live cards changed.",
+  "fixedLine": "The scheme prints no answer for this part.",
+  "sourceSchemeSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+  "sourcePaperSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+  "archiveRecheck": "Pending: SEC archive blocked. Cached originals inspected; no fresh SEC request made. Do not call the absence rechecked against the current archive.",
+  "wholeNoAnswerAsks": 3,
+  "partialNoAnswerAsks": 3,
+  "items": [
+    {
+      "ref": "B3(ii)",
+      "id": "lcvp-2013-cl-b3ii",
+      "kind": "partial",
+      "marks": 6,
+      "schemePages": [
+        8
+      ],
+      "printedAllocation": "3 @ 2m (1 + 1)",
+      "missing": [
+        "Option 1: Mark should be punctual for the interview + valid expansion",
+        "Option 8: Do a mock interview + valid expansion"
+      ],
+      "treatment": "Keep all eight printed alternatives and the three two-mark response controls. Add the exact fixed line as a last zero-mark criterion notice scoped only to the unprinted expansions in options 1 and 8. No invented expansion or extra mark.",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-08.png",
+      "imageSha256": "9e530aa5194e52b1404aff1aeb2658720606d5a29810201ab7dbfbca8a70d350",
+      "visuallyRead": true
+    },
+    {
+      "ref": "C3(c) name",
+      "id": "lcvp-2013-cl-c3c",
+      "kind": "whole",
+      "marks": 1,
+      "schemePages": [
+        13
+      ],
+      "printedAllocation": "Name of organisation. 1m",
+      "missing": [
+        "No particular organisation is named."
+      ],
+      "treatment": "One one-mark criterion with the fixed line; preserve the printed criterion and full chosen-organisation context.",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/scheme-13.png",
+      "imageSha256": "378857448e38b0811d48b4cda35bf9a5b1d6f242e545a4f7a5d93b7a854d5444",
+      "visuallyRead": true
+    },
+    {
+      "ref": "C3(c) account",
+      "id": "lcvp-2013-cl-c3c-2",
+      "kind": "whole",
+      "marks": 8,
+      "schemePages": [
+        13
+      ],
+      "printedAllocation": "4 @ 2m (1 + 1); No Marks for headings",
+      "missing": [
+        "All six pools are headings and guidance about the chosen body, not a model account of a named organisation."
+      ],
+      "treatment": "One eight-mark no-answer criterion retaining four response slots with two one-mark components each, all six complete guidance pools and the exact direction No Marks for headings. No invented account.",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/scheme-13.png",
+      "imageSha256": "378857448e38b0811d48b4cda35bf9a5b1d6f242e545a4f7a5d93b7a854d5444",
+      "visuallyRead": true
+    },
+    {
+      "ref": "C4(a)",
+      "id": "lcvp-2013-cl-c4a",
+      "kind": "whole",
+      "marks": 1,
+      "schemePages": [
+        14
+      ],
+      "printedAllocation": "Name of the Business. 1m",
+      "missing": [
+        "No particular business is named."
+      ],
+      "treatment": "One one-mark criterion with the exact fixed line and printed criterion.",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-14.png",
+      "imageSha256": "f17a33efde901d2e8c31486dd8a28e7c33db453374e7e8836eee0d0b1f784080",
+      "visuallyRead": true
+    },
+    {
+      "ref": "C4(b)",
+      "id": "lcvp-2013-cl-c4b",
+      "kind": "partial",
+      "marks": 8,
+      "schemePages": [
+        14
+      ],
+      "printedAllocation": "4 @ 2m (1 + 1)",
+      "missing": [
+        "Option 1: Offer work experience to students + valid expansion"
+      ],
+      "treatment": "Keep all seven printed models and four two-mark response controls. Add a last zero-mark fixed-line criterion notice scoped only to the missing expansion in option 1.",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-14.png",
+      "imageSha256": "f17a33efde901d2e8c31486dd8a28e7c33db453374e7e8836eee0d0b1f784080",
+      "visuallyRead": true
+    },
+    {
+      "ref": "C5(d)",
+      "id": "lcvp-2013-cl-c5d",
+      "kind": "partial",
+      "marks": 6,
+      "schemePages": [
+        16
+      ],
+      "printedAllocation": "3 @ 2m (1 + 1)",
+      "missing": [
+        "Option 3: Posters/billboards/flyers/buses/press releases.",
+        "Option 7: Newspapers/magazines.",
+        "Option 8: Use of ICT – Facebook/Twitter/Email/Phone apps"
+      ],
+      "treatment": "Keep the whole six-mark ask provisionally, all eight original options and three two-mark response controls. Add a last zero-mark fixed-line criterion scoped only to the missing explanations in options 3, 7 and 8. Separate state/explain allocations are not labelled in the scheme; do not infer a new split without adjudication.",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-16.png",
+      "imageSha256": "5d92deae7521413db7ee080ffe5f1375509802a0bb4bbfacd969e788994bbe0f",
+      "visuallyRead": true
+    }
+  ],
+  "sourceCensus": "38 original leaf labels; frozen proposal41 asks. C5(d) remains one6-mark ask provisionally; generic1+1 does not explicitly label separate state/explain marks.",
+  "limits": "Topic disagreements await third reading. This is source preparation, not release verification."
+}

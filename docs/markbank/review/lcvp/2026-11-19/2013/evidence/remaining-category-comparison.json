@@ -1,0 +1,787 @@
+{
+  "createdAt": "2026-11-19T17:04:08.529360+00:00",
+  "status": "Review only; no cards or canonical filings changed",
+  "firstSource": {
+    "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-source-reading.json",
+    "sha256": "7e9c29d7f455815bf928e7df9ae3dcc21851944f2446d4abdf3798e8c72b53b6"
+  },
+  "firstExpandedSource": {
+    "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/first-topic-proposals.json",
+    "sha256": "e248c636a19a156a45ad2d08d8152471dc5adb325b4abb24e85ae689786097b4"
+  },
+  "secondSource": {
+    "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-independent/remaining-category-decisions-blind.json",
+    "sha256": "ada2b2d41be76bfa6e730b29dd26b66b146faebd97a843d9771c5214d90faf87"
+  },
+  "printedParts": 19,
+  "asksAfterSeparatelyMarkedSplits": 21,
+  "agreements": 19,
+  "disagreements": 2,
+  "splitNote": "C1b and C1d headings were frozen on the original parts before their R7 splits. Expanded headings preserve the original first choice. Initial whole-question boundary disagreements are retained in source-preflight.json; they are not reported as original agreement.",
+  "items": [
+    {
+      "ref": "C1a",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C1a",
+      "firstFrozenTreatment": "The scheme explicitly gives 2 @ 2m (0, 2). Keep two binary two-mark components and the full continuous definition; no invented one-mark subdivision.",
+      "secondReason": "Defines an entrepreneur.",
+      "paperPhysicalPages": [
+        14
+      ],
+      "schemePhysicalPages": [
+        9
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 14,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-14.png",
+          "sha256": "cce049286d26dc97e59fdc92e003039b79f2554a1550ee20de1ff76b4187c733",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 9,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-09.png",
+          "sha256": "f15af71e0d4d7b063dbaca1ff8851a305f467e768cc11d5255a891c2a26d27f8",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 4
+    },
+    {
+      "ref": "C1b-benefits",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C1b-benefits",
+      "firstFrozenTreatment": "One printed describe question with two required categories. Keep two benefits and two challenges, each 2 @ 1m, with separate complete four-option pools. Required headings are not separate printed questions (repository rule against fanning out required headings), like the four SWOT categories in 2014.",
+      "secondReason": "Benefits of being an entrepreneur.",
+      "paperPhysicalPages": [
+        14
+      ],
+      "schemePhysicalPages": [
+        9
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 14,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-14.png",
+          "sha256": "cce049286d26dc97e59fdc92e003039b79f2554a1550ee20de1ff76b4187c733",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 9,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-09.png",
+          "sha256": "f15af71e0d4d7b063dbaca1ff8851a305f467e768cc11d5255a891c2a26d27f8",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 2
+    },
+    {
+      "ref": "C1b-challenges",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C1b-challenges",
+      "firstFrozenTreatment": "One printed describe question with two required categories. Keep two benefits and two challenges, each 2 @ 1m, with separate complete four-option pools. Required headings are not separate printed questions (repository rule against fanning out required headings), like the four SWOT categories in 2014.",
+      "secondReason": "Challenges of being an entrepreneur.",
+      "paperPhysicalPages": [
+        14
+      ],
+      "schemePhysicalPages": [
+        9
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 14,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-14.png",
+          "sha256": "cce049286d26dc97e59fdc92e003039b79f2554a1550ee20de1ff76b4187c733",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 9,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-09.png",
+          "sha256": "f15af71e0d4d7b063dbaca1ff8851a305f467e768cc11d5255a891c2a26d27f8",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 2
+    },
+    {
+      "ref": "C1c",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C1c",
+      "firstFrozenTreatment": "Interview preparation; retain all six expanded models. 4 @ 2m (1 + 1).",
+      "secondReason": "Interview research and preparation; the entrepreneur supplies context.",
+      "paperPhysicalPages": [
+        15
+      ],
+      "schemePhysicalPages": [
+        9
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 15,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-15.png",
+          "sha256": "c06f94c464258aa0c1c77927f0c715eee65efeb9a72e99e1a53505dbcee2222a",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 9,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-09.png",
+          "sha256": "f15af71e0d4d7b063dbaca1ff8851a305f467e768cc11d5255a891c2a26d27f8",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 8
+    },
+    {
+      "ref": "C1d-naming",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C1d",
+      "firstFrozenTreatment": "Three matched characteristic/explanation/importance profiles; each 1 + 1 + 1, all six complete models and No repetition of points. Do not split the characteristics from the same profiles.",
+      "secondReason": "Names personal entrepreneurial characteristics.",
+      "paperPhysicalPages": [
+        16
+      ],
+      "schemePhysicalPages": [
+        10
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 16,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-16.png",
+          "sha256": "251e7ef0fc3c3cb7d89de1ebc6688442557018a7d76779edc3bc17bbdf067453",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 10,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-10.png",
+          "sha256": "4ecd78484430ec03902ec54af95106f026aebd471d4047d523024dca3dc7e775",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 3
+    },
+    {
+      "ref": "C1d-importance",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C1d",
+      "firstFrozenTreatment": "Three matched characteristic/explanation/importance profiles; each 1 + 1 + 1, all six complete models and No repetition of points. Do not split the characteristics from the same profiles.",
+      "secondReason": "Explains why chosen entrepreneurial characteristics matter.",
+      "paperPhysicalPages": [
+        16
+      ],
+      "schemePhysicalPages": [
+        10
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 16,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-16.png",
+          "sha256": "251e7ef0fc3c3cb7d89de1ebc6688442557018a7d76779edc3bc17bbdf067453",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 10,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-10.png",
+          "sha256": "4ecd78484430ec03902ec54af95106f026aebd471d4047d523024dca3dc7e775",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 6
+    },
+    {
+      "ref": "C2a",
+      "firstHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C2a",
+      "firstFrozenTreatment": "3 @ 2m (1 + 1), all nine preparation models.",
+      "secondReason": "Preparation for the student’s work placement.",
+      "paperPhysicalPages": [
+        17
+      ],
+      "schemePhysicalPages": [
+        10
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 17,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-17.png",
+          "sha256": "f86685e48d9145fcb532c5b4efe4f53316b6a1223ceea956026db39d37b42340",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 10,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-10.png",
+          "sha256": "4ecd78484430ec03902ec54af95106f026aebd471d4047d523024dca3dc7e775",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 6
+    },
+    {
+      "ref": "C2b",
+      "firstHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C2b",
+      "firstFrozenTreatment": "Two interpersonal-skill situations, 2 @ 2m (1 + 1), all five models.",
+      "secondReason": "Recalls situations demonstrating skills during the student’s placement.",
+      "paperPhysicalPages": [
+        17
+      ],
+      "schemePhysicalPages": [
+        10
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 17,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-17.png",
+          "sha256": "f86685e48d9145fcb532c5b4efe4f53316b6a1223ceea956026db39d37b42340",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 10,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-10.png",
+          "sha256": "4ecd78484430ec03902ec54af95106f026aebd471d4047d523024dca3dc7e775",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 4
+    },
+    {
+      "ref": "C2c",
+      "firstHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C2c",
+      "firstFrozenTreatment": "Prints 3 @ 2m (1 + 1) plus 1 @ 1m. Keep this uneven allocation and all six models; do not infer a uniform award or leave a hold.",
+      "secondReason": "Employer arrangements for meaningful student work experience.",
+      "paperPhysicalPages": [
+        18
+      ],
+      "schemePhysicalPages": [
+        11
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 18,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-18.png",
+          "sha256": "7f92ed065db3c3eb00d7154fb50f7a623060c92fee7d21745923371ed5e0b398",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 11,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-11.png",
+          "sha256": "53bcad64c0918147a51e6794db24aa10697cd86402f13dde2dbf16bb55392146",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 7
+    },
+    {
+      "ref": "C2d",
+      "firstHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-work-placement"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C2d",
+      "firstFrozenTreatment": "4 @ 2m (1 + 1), all seven evaluation models.",
+      "secondReason": "Reasons to evaluate work experience.",
+      "paperPhysicalPages": [
+        19
+      ],
+      "schemePhysicalPages": [
+        11
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 19,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-19.png",
+          "sha256": "4dbc290515c68f3346aa5828850473616d7106dde2df27bcb36800d3e71f82fa",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 11,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-11.png",
+          "sha256": "53bcad64c0918147a51e6794db24aa10697cd86402f13dde2dbf16bb55392146",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 8
+    },
+    {
+      "ref": "C3d",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C3d",
+      "firstFrozenTreatment": "Paper asks how community organisations can encourage youth participation. Scheme page 13 belongs to the parent first reading, so its models are not yet independently visually read here.",
+      "secondReason": "Recruiting young volunteers into community organisations.",
+      "paperPhysicalPages": [
+        22
+      ],
+      "schemePhysicalPages": [
+        13
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 22,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-22.png",
+          "sha256": "c3c1802032e93d30ecee35511c3c23f1b4c514117b34d48fdd4fb29e3134ce30",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 13,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/scheme-13.png",
+          "sha256": "378857448e38b0811d48b4cda35bf9a5b1d6f242e545a4f7a5d93b7a854d5444",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 6
+    },
+    {
+      "ref": "C4a",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C4a",
+      "firstFrozenTreatment": "Scheme prints only Name of the Business. and 1m, with no actual named answer. R4 needs the fixed no-answer line alongside the printed criterion and one mark; retain original evidence. Archive recheck remains blocked.",
+      "secondReason": "Names the local business investigated.",
+      "paperPhysicalPages": [
+        23
+      ],
+      "schemePhysicalPages": [
+        14
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 23,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-23.png",
+          "sha256": "f35417645fcbaa2f889bd21d12457505ebf451083c5b20a27ec27d8df5b27762",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 14,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-14.png",
+          "sha256": "f17a33efde901d2e8c31486dd8a28e7c33db453374e7e8836eee0d0b1f784080",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 1
+    },
+    {
+      "ref": "C4b",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C4b",
+      "firstFrozenTreatment": "4 @ 2m (1 + 1), all seven complete school-support models.",
+      "secondReason": "Local businesses’ support for schools.",
+      "paperPhysicalPages": [
+        23
+      ],
+      "schemePhysicalPages": [
+        14
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 23,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-23.png",
+          "sha256": "f35417645fcbaa2f889bd21d12457505ebf451083c5b20a27ec27d8df5b27762",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 14,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-14.png",
+          "sha256": "f17a33efde901d2e8c31486dd8a28e7c33db453374e7e8836eee0d0b1f784080",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 8
+    },
+    {
+      "ref": "C4c",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "agrees": false,
+      "firstFrozenRef": "C4c",
+      "firstFrozenTreatment": "4 @ 2m (1 + 1), all seven management/target models.",
+      "secondReason": "How business owners and managers achieve business targets.",
+      "paperPhysicalPages": [
+        24
+      ],
+      "schemePhysicalPages": [
+        14
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 24,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-24.png",
+          "sha256": "5918c048984dff165d86a7275d77c8944bdaab82c148a8bc5ede968531c9ad6b",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 14,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-14.png",
+          "sha256": "f17a33efde901d2e8c31486dd8a28e7c33db453374e7e8836eee0d0b1f784080",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 8
+    },
+    {
+      "ref": "C4d",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C4d",
+      "firstFrozenTreatment": "4 @ 2m (1 + 1), all six expanded recession-strategy models, including the long negotiation and marketing continuations.",
+      "secondReason": "Business strategies for overcoming recession.",
+      "paperPhysicalPages": [
+        25
+      ],
+      "schemePhysicalPages": [
+        14
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 25,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-25.png",
+          "sha256": "e5c6e962681857539a1a092edc39e9be1dad6ea72f99cbcd3c24709ccc707546",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 14,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-14.png",
+          "sha256": "f17a33efde901d2e8c31486dd8a28e7c33db453374e7e8836eee0d0b1f784080",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 8
+    },
+    {
+      "ref": "C5a",
+      "firstHeadingIds": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "agrees": false,
+      "firstFrozenRef": "C5a",
+      "firstFrozenTreatment": "List two methods; scheme page 15 belongs to the parent first reading, not yet independently visually read here.",
+      "secondReason": "Methods for generating enterprise ideas.",
+      "paperPhysicalPages": [
+        26
+      ],
+      "schemePhysicalPages": [
+        15
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 26,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-26.png",
+          "sha256": "7b1d20cf12bb3e4b9032e9166472ac57a5f079b99a4be55069fa7936a7236c53",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 15,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/scheme-15.png",
+          "sha256": "85c8018a237e2284ab317f8b4d71e0d242750718accd1f33a7bf2c7ae0f3516e",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 2
+    },
+    {
+      "ref": "C5b",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C5b",
+      "firstFrozenTreatment": "Outline three reasons for market research; scheme page 15 belongs to the parent first reading, not yet independently visually read here.",
+      "secondReason": "Purpose of market research.",
+      "paperPhysicalPages": [
+        26
+      ],
+      "schemePhysicalPages": [
+        15
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 26,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-26.png",
+          "sha256": "7b1d20cf12bb3e4b9032e9166472ac57a5f079b99a4be55069fa7936a7236c53",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 15,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/scheme-15.png",
+          "sha256": "85c8018a237e2284ab317f8b4d71e0d242750718accd1f33a7bf2c7ae0f3516e",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 6
+    },
+    {
+      "ref": "C5d",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C5d",
+      "firstFrozenTreatment": "Naming a product/service supplies open context. No separate naming allocation; 3 @ 2m (1 + 1) applies to the three advertising responses. Keep one card and all eight full models.",
+      "secondReason": "Advertising methods for a chosen product or service.",
+      "paperPhysicalPages": [
+        28
+      ],
+      "schemePhysicalPages": [
+        16
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 28,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-28.png",
+          "sha256": "406d49cbeb99b3162fcf18cce39cf808150c02913e364e00ec08fb5dfb13e13b",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 16,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-16.png",
+          "sha256": "5d92deae7521413db7ee080ffe5f1375509802a0bb4bbfacd969e788994bbe0f",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 6
+    },
+    {
+      "ref": "C6a",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C6a",
+      "firstFrozenTreatment": "4 @ 1m, all six benefits of the guest visit.",
+      "secondReason": "Learning and organisational benefits of arranging a guest speaker.",
+      "paperPhysicalPages": [
+        29
+      ],
+      "schemePhysicalPages": [
+        16
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 29,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-29.png",
+          "sha256": "83fc50a14ff367ac23080e455da43b4bef00b4236d7d923081eb29e99e7a1d45",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 16,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-16.png",
+          "sha256": "5d92deae7521413db7ee080ffe5f1375509802a0bb4bbfacd969e788994bbe0f",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 4
+    },
+    {
+      "ref": "C6b",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C6b",
+      "firstFrozenTreatment": "5 @ 1m, all eight day-of-visit steps.",
+      "secondReason": "Organising the event on the day.",
+      "paperPhysicalPages": [
+        29
+      ],
+      "schemePhysicalPages": [
+        16
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 29,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-29.png",
+          "sha256": "83fc50a14ff367ac23080e455da43b4bef00b4236d7d923081eb29e99e7a1d45",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 16,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-16.png",
+          "sha256": "5d92deae7521413db7ee080ffe5f1375509802a0bb4bbfacd969e788994bbe0f",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 5
+    },
+    {
+      "ref": "C6d",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "agrees": true,
+      "firstFrozenRef": "C6d",
+      "firstFrozenTreatment": "Question says visit in from the guest speaker; preserve that wording. Scheme page 18 continues the fifth Class Discussion model and gives 3 @ 3m (1 + 1 + 1), Heading/Explanation/Reason. Full page 17 still needs this reader to view it before a complete model claim.",
+      "secondReason": "Evaluation methods for the guest-speaker event.",
+      "paperPhysicalPages": [
+        31
+      ],
+      "schemePhysicalPages": [
+        17,
+        18
+      ],
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 31,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-31.png",
+          "sha256": "ec0643a180995bbd249477f341fd31bfefee27e9742ec146aaffa8101531936c",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 17,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/independent-pages/scheme-17.png",
+          "sha256": "ac35ce4ae40256194fdd3fcf11c74c099b651fee51722c3394224c123bd1dcc5",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 18,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-18.png",
+          "sha256": "39c7c8ac68331d70f983d0acd7943340c62f3d64e77ef2417039a6fff8c8c9b6",
+          "viewedByRoot": true
+        }
+      ],
+      "marks": 9
+    }
+  ]
+}

@@ -1,0 +1,723 @@
+{
+  "recordedAt": "2026-11-19T18:45:00.796937+00:00",
+  "payloadSha256": "873162dad707b5e62b48b623194a693c433ff710c1e1e90d6ca38204ca2dc96b",
+  "scope": "Cached source text only; root actual-PDF audit remains separate.",
+  "checked": 119,
+  "differences": [],
+  "claims": [
+    {
+      "id": "lcvp-2013-cl-a1",
+      "rowId": "years",
+      "claim": "6 years.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a2",
+      "rowId": "responses",
+      "claim": "State two ways that Tom and Andrea have benefited from life in rural Ireland compared to life in the USA.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a2",
+      "rowId": "responses",
+      "claim": "Rent is cheaper than in New York.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a2",
+      "rowId": "responses",
+      "claim": "They get to spend a lot more time together now.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a2",
+      "rowId": "responses",
+      "claim": "Kilkenny is a supportive and friendly environment to work and live in.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a2",
+      "rowId": "responses",
+      "claim": "Better quality of life.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a2",
+      "rowId": "responses",
+      "claim": "Closer to family/miss family.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a3",
+      "rowId": "responses",
+      "claim": "How does the Kilkenny Craft Trail benefit ‘Stars by Night’?",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a3",
+      "rowId": "responses",
+      "claim": "Range of artists – help each other out/supportive/friendly.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a3",
+      "rowId": "responses",
+      "claim": "Tourist attraction – this increases trade for all crafts.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a3",
+      "rowId": "responses",
+      "claim": "Get good adverting on the Kilkenny Trail website.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a4",
+      "rowId": "responses",
+      "claim": "Describe some of the ways that Tom organised the finances of ‘Stars by Night’.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a4",
+      "rowId": "responses",
+      "claim": "Savings from the USA.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a4",
+      "rowId": "responses",
+      "claim": "Applied to the Craft Council for a grant.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a4",
+      "rowId": "responses",
+      "claim": "Negotiates with the Bank.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a4",
+      "rowId": "responses",
+      "claim": "Pays the bills.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a4",
+      "rowId": "responses",
+      "claim": "Keeps an eye on all the finances.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a5",
+      "rowId": "responses",
+      "claim": "Explain two advantages of buying a locally produced craft product as a gift instead of buying a mass produced product.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a6",
+      "rowId": "responses",
+      "claim": "Outline two problems that craft industries in Ireland have faced in recent years.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a7",
+      "rowId": "responses",
+      "claim": "Explain three ways in which Information and Communications Technology (ICT) can help to market Irish Craft industries.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-a8",
+      "rowId": "responses",
+      "claim": "What advice would you give to someone considering setting up a craft business in Ireland at present?",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b1",
+      "rowId": "terms",
+      "claim": "Explain three of the following terms.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b2i",
+      "rowId": "agencies",
+      "claim": "Name two relevant government agencies the Town Council and Local Chamber of Commerce should consult for support in dealing with the closure of Axel Computers.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b2i",
+      "rowId": "agencies",
+      "claim": "IDA Ireland",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b2i",
+      "rowId": "agencies",
+      "claim": "Enterprise Ireland",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b2i",
+      "rowId": "agencies",
+      "claim": "County Enterprise Boards",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b2i",
+      "rowId": "agencies",
+      "claim": "FAS (SOLAS) – Department of Soial Protection",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b2i",
+      "rowId": "agencies",
+      "claim": "Leader",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b2ii",
+      "rowId": "response-1",
+      "claim": "Outline the types of support these agencies can give to help the town deal with the closure of Axel Computers.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b2ii",
+      "rowId": "response-2",
+      "claim": "Outline the types of support these agencies can give to help the town deal with the closure of Axel Computers.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b2iii",
+      "rowId": "responses",
+      "claim": "Why is it important for locals to attend the planned town meeting?",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b2iii",
+      "rowId": "responses",
+      "claim": "They can voice their opinions on developments.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b2iii",
+      "rowId": "responses",
+      "claim": "A good attendance will ensure there is a wide range of representation from the local community.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b2iii",
+      "rowId": "responses",
+      "claim": "More ideas could be generated which will mean a better plan of action.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b2iii",
+      "rowId": "responses",
+      "claim": "There is a greater chance of success for new enterprises/uses if there is local support.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b2iii",
+      "rowId": "responses",
+      "claim": "The local community are involved in working through any problems that arise which is better in the long run/foster better community spirit/creates awareness of issues faced by the community.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b3i",
+      "rowId": "responses",
+      "claim": "Describe how Mark should proceed so that he obtains the best formal qualification suited to his requirements.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-b3ii",
+      "rowId": "responses",
+      "claim": "Mark, as a mature student, has an interview for a place on an IT course. Explain how he can ensure that he performs well at his interview.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c1a",
+      "rowId": "definition",
+      "claim": "Explain the term ‘entrepreneur’.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c1b",
+      "rowId": "benefits",
+      "claim": "Describe two benefits",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c1b",
+      "rowId": "benefits",
+      "claim": "Independence - you work for yourself/own boss.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c1b",
+      "rowId": "benefits",
+      "claim": "Personal satisfaction at setting up a business.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c1b",
+      "rowId": "benefits",
+      "claim": "High profits if the business is successful.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c1b",
+      "rowId": "benefits",
+      "claim": "You have control over the decisions made/set your own hours.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c1b-2",
+      "rowId": "challenges",
+      "claim": "and two challenges for an entrepreneur.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c1b-2",
+      "rowId": "challenges",
+      "claim": "It can be stressful/make all major decisions/need expertise in all areas of business.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c1b-2",
+      "rowId": "challenges",
+      "claim": "There is a risk of personal and financial failure.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c1b-2",
+      "rowId": "challenges",
+      "claim": "The business will be affected by the economic climate/hard to get finance/competition.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c1b-2",
+      "rowId": "challenges",
+      "claim": "You have to work long hours/can never switch off/effect on family life.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c1c",
+      "rowId": "responses",
+      "claim": "As part of the LCVP you have investigated an entrepreneur in your local area. Outline the steps taken to prepare for the interview with this entrepreneur.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c1d",
+      "rowId": "names",
+      "claim": "State three essential personal characteristics of an entrepreneur.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c1d-2",
+      "rowId": "importance",
+      "claim": "Explain the importance of each characteristic.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c2a",
+      "rowId": "responses",
+      "claim": "Outline how you prepared for your work experience placement.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c2b",
+      "rowId": "responses",
+      "claim": "Interpersonal skills are very important in the workplace. Describe two different situations where you demonstrated interpersonal skills during your work placement.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c2c",
+      "rowId": "response-1",
+      "claim": "Explain how an employer can ensure that students have a meaningful and useful work experience.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c2c",
+      "rowId": "response-2",
+      "claim": "Explain how an employer can ensure that students have a meaningful and useful work experience.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c2c",
+      "rowId": "response-3",
+      "claim": "Explain how an employer can ensure that students have a meaningful and useful work experience.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c2c",
+      "rowId": "response-4",
+      "claim": "Explain how an employer can ensure that students have a meaningful and useful work experience.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c2d",
+      "rowId": "responses",
+      "claim": "Explain the importance of evaluating work experience.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c3a",
+      "rowId": "responses",
+      "claim": "Outline the benefits of recreational facilities and organised activities for teenagers in local areas.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c3a",
+      "rowId": "responses",
+      "claim": "Young people will not get into trouble/antisocial behaviour.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c3a",
+      "rowId": "responses",
+      "claim": "Training/personal development aspect/positive use of their time, from the activities which is good.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c3a",
+      "rowId": "responses",
+      "claim": "It is good for the young people to socialise outside home/school/social aspect.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c3a",
+      "rowId": "responses",
+      "claim": "It allows young people who live in different areas/go to different schools to meet and get to know each other.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c3a",
+      "rowId": "responses",
+      "claim": "It is cheaper on families than young people looking for money to go out etc.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c3a",
+      "rowId": "responses",
+      "claim": "They will be positive towards their area so they may come up with ideas to improve it.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c3a",
+      "rowId": "responses",
+      "claim": "Better physical/mental health.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c3b",
+      "rowId": "responses",
+      "claim": "The accompanying graph shows the results of part of a survey of teenagers preferred choice of recreational facilities in a small town. Explain the steps involved in the successful completion of a survey.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c3d",
+      "rowId": "responses",
+      "claim": "Community organisations depend on local people to volunteer their time and efforts. Describe how community organisations can encourage more involvement by young people.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c4b",
+      "rowId": "responses",
+      "claim": "Many local businesses actively help and support schools. Explain how a business can help secondary schools in its local area.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c4c",
+      "rowId": "responses",
+      "claim": "Outline four ways the manager/owner of a business can ensure that the business targets are met.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c4d",
+      "rowId": "responses",
+      "claim": "Many businesses have been affected by the current economic recession. Describe some of the strategies businesses could use to overcome the affects of the recession.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5a",
+      "rowId": "responses",
+      "claim": "List two methods of generating ideas for a class enterprise.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5a",
+      "rowId": "responses",
+      "claim": "Brainstorming/class discussion/mind maps.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5a",
+      "rowId": "responses",
+      "claim": "Market research/survey/questionaire/suggestion box.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5a",
+      "rowId": "responses",
+      "claim": "Identify an niche market.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5a",
+      "rowId": "responses",
+      "claim": "Review what has been done in the past/analysing failure.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5a",
+      "rowId": "responses",
+      "claim": "Use TV/internet to look at seasonal trends which could have good ideas.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5a",
+      "rowId": "responses",
+      "claim": "Visit local shops/business to check what sells/competition/look abroad. Research what works in the local area.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5a",
+      "rowId": "responses",
+      "claim": "Ask parents/teachers.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5b",
+      "rowId": "responses",
+      "claim": "Outline three reasons for carrying out market research.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5c",
+      "rowId": "heading-1",
+      "claim": "Resources and Costs/Financial Section [Income/Expenditure]",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5c",
+      "rowId": "heading-2",
+      "claim": "Revenue [Income]",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5c",
+      "rowId": "heading-3",
+      "claim": "Costs [Expenditure]",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5c",
+      "rowId": "heading-4",
+      "claim": "Surplus[Profit]",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5c",
+      "rowId": "figure-1",
+      "claim": "Sales 1,000",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5c",
+      "rowId": "figure-2",
+      "claim": "Sponsorship 100",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5c",
+      "rowId": "figure-3",
+      "claim": "Advertising 75.00",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5c",
+      "rowId": "figure-4",
+      "claim": "Raw Materials 300.00",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5c",
+      "rowId": "figure-5",
+      "claim": "Telephone 8.50",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5c",
+      "rowId": "figure-6",
+      "claim": "Stationery 18.00",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5c",
+      "rowId": "figure-7",
+      "claim": "Surplus[Profit] €698.50",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c5d",
+      "rowId": "responses",
+      "claim": "Identify a product/service you might like to promote. State and explain three types of advertising that could be used to promote this product/service.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6a",
+      "rowId": "responses",
+      "claim": "Outline the benefits of inviting a guest speaker into school to address the LCVP Link Modules class",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6a",
+      "rowId": "responses",
+      "claim": "Planning this visit is good teamwork activity so the class learns from this.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6a",
+      "rowId": "responses",
+      "claim": "You learn about the organisation which may also help in a career choice.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6a",
+      "rowId": "responses",
+      "claim": "Developes a relationship with the local business/community organisation which will help in the future/work experience/mentoring/visit out.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6a",
+      "rowId": "responses",
+      "claim": "Class have information they can use to write up a portfolio item such as a Summary Report.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6a",
+      "rowId": "responses",
+      "claim": "You have experience organising a visit-in.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6a",
+      "rowId": "responses",
+      "claim": "Comunication skills are tested/improved as someone has to welcome, thank and ask questions.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6b",
+      "rowId": "responses",
+      "claim": "Outline the steps that should be taken on the day of the visit to ensure that the event is successful.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6b",
+      "rowId": "responses",
+      "claim": "Confirm the time of the talk on the day.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6b",
+      "rowId": "responses",
+      "claim": "Make sure room is ready e.g set out chairs.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6b",
+      "rowId": "responses",
+      "claim": "Ensure that refreshments/water are in place.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6b",
+      "rowId": "responses",
+      "claim": "Check any equipment that is being used eg data projectors/ micro phones/dvd players etc..",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6b",
+      "rowId": "responses",
+      "claim": "Draw up a list of jobs to be done. Ensure that all students with jobs are in school, if not get new people to do them, so that everything is done.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6b",
+      "rowId": "responses",
+      "claim": "Practice the introduction, thank you’s and questions so that these go well/meet and greet.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6b",
+      "rowId": "responses",
+      "claim": "Make sure that all class members have a copy/pen to take notes.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6b",
+      "rowId": "responses",
+      "claim": "Watch the time keeping so that you do not run out of time for questions/get in trouble with other teachers for being late.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6c",
+      "rowId": "email-1",
+      "claim": "To",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6c",
+      "rowId": "email-2",
+      "claim": "Subject Line",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6c",
+      "rowId": "email-3",
+      "claim": "Opening",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6c",
+      "rowId": "email-4",
+      "claim": "Purpose of email",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6c",
+      "rowId": "email-5",
+      "claim": "Arrangements",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6c",
+      "rowId": "email-6",
+      "claim": "Closing",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6c",
+      "rowId": "email-7",
+      "claim": "Neatness/Presentation/Layout",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6d",
+      "rowId": "response-1",
+      "claim": "Describe how your class would evaluate the success of the visit-in from the guest speaker.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6d",
+      "rowId": "response-2",
+      "claim": "Describe how your class would evaluate the success of the visit-in from the guest speaker.",
+      "found": true
+    },
+    {
+      "id": "lcvp-2013-cl-c6d",
+      "rowId": "response-3",
+      "claim": "Describe how your class would evaluate the success of the visit-in from the guest speaker.",
+      "found": true
+    }
+  ]
+}

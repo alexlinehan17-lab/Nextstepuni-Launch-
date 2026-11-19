@@ -1,0 +1,39 @@
+{
+  "recordedAt": "2026-11-19T18:32:55.604578+00:00",
+  "status": "Review-only payload; no source-deck mutations or application check claim",
+  "cards": 41,
+  "offeredMarks": 210,
+  "candidateMarks": 160,
+  "sections": {
+    "A": 8,
+    "B": 6,
+    "C": 27
+  },
+  "sha256": "f679179e2d4d06206ab6c888d020620f98af4dbd6cc1870cb56e698b78b81957",
+  "textSources": [
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/paper-text-layer.txt",
+      "sha256": "49f314980d4d810717674ed15168ce642e7a132b961e0abe1802702a6ea0ad4a"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/scheme-text-layer.txt",
+      "sha256": "ded9ebd35e40c5c8499b56de6949ef1ff549b4a67f84a3f5756f7d946bcd2352"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/case-text-layer.txt",
+      "sha256": "67f27e9c05a04a24cddc14f77369a64733a9171f0581999e889b039bb2cdeb4f"
+    }
+  ],
+  "sourceLimits": [
+    "Uses already-inspected cached text and original-page boundary decisions; a fresh hash-bound PDF selector check remains required.",
+    "Office score-column1/2 and page furniture removed only; graph labels remain on original source page20 instead of the prompt.",
+    "Original email marking box reattached to C6(c), as source page17 shows; native text order had placed it inside C6(d).",
+    "C5(d) generic-component split remains with third reader. Four heading disagreements remain; provisional topic IDs are not final shared-model filings.",
+    "Source media address must be revalidated against cached archive evidence in the release helper; actual hosting/playback unverified.",
+    "R4 evidence remains subject to the blocked SEC archive recheck."
+  ],
+  "payloadSha256": "873162dad707b5e62b48b623194a693c433ff710c1e1e90d6ca38204ca2dc96b",
+  "sourceLabelRepair": "scheme-label-repair-proof.json",
+  "originalPdfReproduction": "original-pdf-reproduction-proof.json",
+  "originalPdfReproductionPassed": true
+}

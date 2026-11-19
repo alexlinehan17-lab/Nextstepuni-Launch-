@@ -1,0 +1,603 @@
+{
+  "createdAt": "2026-11-19T16:49:35.488372+00:00",
+  "status": "Original-image reading of all 34 non-overlapping remaining pages; no 2013 cards authored",
+  "imagesActuallySeen": [
+    {
+      "kind": "paper",
+      "physicalPage": 13,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-13.png",
+      "sha256": "dccf19cb685a4f71f7102738c68af6e9040b4eb923b4bdc0ecaa4bc7b902f677",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 14,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-14.png",
+      "sha256": "cce049286d26dc97e59fdc92e003039b79f2554a1550ee20de1ff76b4187c733",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 15,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-15.png",
+      "sha256": "c06f94c464258aa0c1c77927f0c715eee65efeb9a72e99e1a53505dbcee2222a",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 16,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-16.png",
+      "sha256": "251e7ef0fc3c3cb7d89de1ebc6688442557018a7d76779edc3bc17bbdf067453",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 17,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-17.png",
+      "sha256": "f86685e48d9145fcb532c5b4efe4f53316b6a1223ceea956026db39d37b42340",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 18,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-18.png",
+      "sha256": "7f92ed065db3c3eb00d7154fb50f7a623060c92fee7d21745923371ed5e0b398",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 19,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-19.png",
+      "sha256": "4dbc290515c68f3346aa5828850473616d7106dde2df27bcb36800d3e71f82fa",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 22,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-22.png",
+      "sha256": "c3c1802032e93d30ecee35511c3c23f1b4c514117b34d48fdd4fb29e3134ce30",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 23,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-23.png",
+      "sha256": "f35417645fcbaa2f889bd21d12457505ebf451083c5b20a27ec27d8df5b27762",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 24,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-24.png",
+      "sha256": "5918c048984dff165d86a7275d77c8944bdaab82c148a8bc5ede968531c9ad6b",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 25,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-25.png",
+      "sha256": "e5c6e962681857539a1a092edc39e9be1dad6ea72f99cbcd3c24709ccc707546",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 26,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-26.png",
+      "sha256": "7b1d20cf12bb3e4b9032e9166472ac57a5f079b99a4be55069fa7936a7236c53",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 28,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-28.png",
+      "sha256": "406d49cbeb99b3162fcf18cce39cf808150c02913e364e00ec08fb5dfb13e13b",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 29,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-29.png",
+      "sha256": "83fc50a14ff367ac23080e455da43b4bef00b4236d7d923081eb29e99e7a1d45",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 31,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-31.png",
+      "sha256": "ec0643a180995bbd249477f341fd31bfefee27e9742ec146aaffa8101531936c",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "paper",
+      "physicalPage": 32,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/paper-32.png",
+      "sha256": "3d9f7786b7ec80ecac82dfe83eab1704b954df3cd813dfc79914d92cfad0cac5",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 1,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-01.png",
+      "sha256": "7ed68f24412eb5e8b041824f6eb27b79afa7ccfd07b0a529675a72d1f80ae68b",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 2,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-02.png",
+      "sha256": "e481ada53246ec5cbf6534267a4ce7f2a3e493a0049dbd6b30d1506f1ba101fd",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 3,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-03.png",
+      "sha256": "fe08c9c459e69b532c7e7d463a363b8aaac98af0dbc67ac0ea1e0071224da9e4",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 4,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-04.png",
+      "sha256": "1a2cab9423d8eab20639fa5a7e534bc5afbf91ef7b7a68bb3d9ee3d5dc502634",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 5,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-05.png",
+      "sha256": "39a3b15a8811f6d6be6422c282306a7ba3bbe3cd72249dbba7f5f3e87f831a97",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 6,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-06.png",
+      "sha256": "5cae1bacc5db495b5b5bda786680df27689eda645efc2330c3abb5278526cf31",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 7,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-07.png",
+      "sha256": "870c400399d9be80a99d66f9e6a7fdea1b37835526beefecbe86504535319d88",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 8,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-08.png",
+      "sha256": "9e530aa5194e52b1404aff1aeb2658720606d5a29810201ab7dbfbca8a70d350",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 9,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-09.png",
+      "sha256": "f15af71e0d4d7b063dbaca1ff8851a305f467e768cc11d5255a891c2a26d27f8",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 10,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-10.png",
+      "sha256": "4ecd78484430ec03902ec54af95106f026aebd471d4047d523024dca3dc7e775",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 11,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-11.png",
+      "sha256": "53bcad64c0918147a51e6794db24aa10697cd86402f13dde2dbf16bb55392146",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 14,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-14.png",
+      "sha256": "f17a33efde901d2e8c31486dd8a28e7c33db453374e7e8836eee0d0b1f784080",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 16,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-16.png",
+      "sha256": "5d92deae7521413db7ee080ffe5f1375509802a0bb4bbfacd969e788994bbe0f",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 18,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-18.png",
+      "sha256": "39c7c8ac68331d70f983d0acd7943340c62f3d64e77ef2417039a6fff8c8c9b6",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 19,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-19.png",
+      "sha256": "926dfb159e4096cb3df2e06df423962d0c151f8696d680489e14b46557ff2b74",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "scheme",
+      "physicalPage": 20,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "sourceSha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-20.png",
+      "sha256": "e9fa11c3e8b33c32b8c3339e979bae4fc1b9357190bdf94b4e085699765a2cd9",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "case",
+      "physicalPage": 1,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP016EV.pdf",
+      "sourceSha256": "887e61fc2f8ed9186f117ea1b1fe975182dce995e9342e5a7b53e01e743d8a58",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/case-01.png",
+      "sha256": "4dc4feadcb75283397846bbb0ea754ec77452f998b3a68f37078bdc461c21711",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    },
+    {
+      "kind": "case",
+      "physicalPage": 2,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP016EV.pdf",
+      "sourceSha256": "887e61fc2f8ed9186f117ea1b1fe975182dce995e9342e5a7b53e01e743d8a58",
+      "imagePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/case-02.png",
+      "sha256": "5cca4784ba401824b1fc952f319209652d6cfd0c144d61db1622742afa23f895",
+      "visualReview": "Read in full with view_image on 19 November 2026.",
+      "actuallyViewed": true
+    }
+  ],
+  "earlierImages": "partial-reading.json records paper pages 1–12",
+  "parentConclusionExposure": "Parent sent conclusions for paper 20/21/27/30 and scheme 12/13/15/17 before this reader viewed those pages; a later reading of those pages is not a blind independent decision. This record covers other pages.",
+  "paperLeafLabels": 38,
+  "finalAskCountPendingCombinedBoundaryRecord": true,
+  "notes": {
+    "C1a": {
+      "paper": [
+        14
+      ],
+      "scheme": [
+        9
+      ],
+      "asks": 1,
+      "marks": 4,
+      "treatment": "The scheme explicitly gives 2 @ 2m (0, 2). Keep two binary two-mark components and the full continuous definition; no invented one-mark subdivision."
+    },
+    "C1b": {
+      "paper": [
+        14
+      ],
+      "scheme": [
+        9
+      ],
+      "asks": 1,
+      "marks": 4,
+      "treatment": "One printed describe question with two required categories. Keep two benefits and two challenges, each 2 @ 1m, with separate complete four-option pools. Required headings are not separate printed questions (repository rule against fanning out required headings), like the four SWOT categories in 2014."
+    },
+    "C1c": {
+      "paper": [
+        15
+      ],
+      "scheme": [
+        9
+      ],
+      "asks": 1,
+      "marks": 8,
+      "modelCount": 6,
+      "treatment": "Interview preparation; retain all six expanded models. 4 @ 2m (1 + 1)."
+    },
+    "C1d": {
+      "paper": [
+        16
+      ],
+      "scheme": [
+        10
+      ],
+      "asks": 1,
+      "marks": 9,
+      "modelCount": 6,
+      "treatment": "Three matched characteristic/explanation/importance profiles; each 1 + 1 + 1, all six complete models and No repetition of points. Do not split the characteristics from the same profiles."
+    },
+    "C2a": {
+      "paper": [
+        17
+      ],
+      "scheme": [
+        10
+      ],
+      "asks": 1,
+      "marks": 6,
+      "modelCount": 9,
+      "treatment": "3 @ 2m (1 + 1), all nine preparation models."
+    },
+    "C2b": {
+      "paper": [
+        17
+      ],
+      "scheme": [
+        10
+      ],
+      "asks": 1,
+      "marks": 4,
+      "modelCount": 5,
+      "treatment": "Two interpersonal-skill situations, 2 @ 2m (1 + 1), all five models."
+    },
+    "C2c": {
+      "paper": [
+        18
+      ],
+      "scheme": [
+        11
+      ],
+      "asks": 1,
+      "marks": 7,
+      "modelCount": 6,
+      "treatment": "Prints 3 @ 2m (1 + 1) plus 1 @ 1m. Keep this uneven allocation and all six models; do not infer a uniform award or leave a hold."
+    },
+    "C2d": {
+      "paper": [
+        19
+      ],
+      "scheme": [
+        11
+      ],
+      "asks": 1,
+      "marks": 8,
+      "modelCount": 7,
+      "treatment": "4 @ 2m (1 + 1), all seven evaluation models."
+    },
+    "C3d": {
+      "paper": [
+        22
+      ],
+      "scheme": [],
+      "asks": 1,
+      "marks": 6,
+      "treatment": "Paper asks how community organisations can encourage youth participation. Scheme page 13 belongs to the parent first reading, so its models are not yet independently visually read here."
+    },
+    "C4a": {
+      "paper": [
+        23
+      ],
+      "scheme": [
+        14
+      ],
+      "asks": 1,
+      "marks": 1,
+      "treatment": "Scheme prints only Name of the Business. and 1m, with no actual named answer. R4 needs the fixed no-answer line alongside the printed criterion and one mark; retain original evidence. Archive recheck remains blocked."
+    },
+    "C4b": {
+      "paper": [
+        23
+      ],
+      "scheme": [
+        14
+      ],
+      "asks": 1,
+      "marks": 8,
+      "modelCount": 7,
+      "treatment": "4 @ 2m (1 + 1), all seven complete school-support models."
+    },
+    "C4c": {
+      "paper": [
+        24
+      ],
+      "scheme": [
+        14
+      ],
+      "asks": 1,
+      "marks": 8,
+      "modelCount": 7,
+      "treatment": "4 @ 2m (1 + 1), all seven management/target models."
+    },
+    "C4d": {
+      "paper": [
+        25
+      ],
+      "scheme": [
+        14
+      ],
+      "asks": 1,
+      "marks": 8,
+      "modelCount": 6,
+      "treatment": "4 @ 2m (1 + 1), all six expanded recession-strategy models, including the long negotiation and marketing continuations."
+    },
+    "C5a": {
+      "paper": [
+        26
+      ],
+      "scheme": [],
+      "asks": 1,
+      "marks": 2,
+      "treatment": "List two methods; scheme page 15 belongs to the parent first reading, not yet independently visually read here."
+    },
+    "C5b": {
+      "paper": [
+        26
+      ],
+      "scheme": [],
+      "asks": 1,
+      "marks": 6,
+      "treatment": "Outline three reasons for market research; scheme page 15 belongs to the parent first reading, not yet independently visually read here."
+    },
+    "C5d": {
+      "paper": [
+        28
+      ],
+      "scheme": [
+        16
+      ],
+      "asks": 1,
+      "marks": 6,
+      "modelCount": 8,
+      "treatment": "Naming a product/service supplies open context. No separate naming allocation; 3 @ 2m (1 + 1) applies to the three advertising responses. Keep one card and all eight full models."
+    },
+    "C6a": {
+      "paper": [
+        29
+      ],
+      "scheme": [
+        16
+      ],
+      "asks": 1,
+      "marks": 4,
+      "modelCount": 6,
+      "treatment": "4 @ 1m, all six benefits of the guest visit."
+    },
+    "C6b": {
+      "paper": [
+        29
+      ],
+      "scheme": [
+        16
+      ],
+      "asks": 1,
+      "marks": 5,
+      "modelCount": 8,
+      "treatment": "5 @ 1m, all eight day-of-visit steps."
+    },
+    "C6d": {
+      "paper": [
+        31
+      ],
+      "scheme": [
+        18
+      ],
+      "asks": 1,
+      "marks": 9,
+      "treatment": "Question says visit in from the guest speaker; preserve that wording. Scheme page 18 continues the fifth Class Discussion model and gives 3 @ 3m (1 + 1 + 1), Heading/Explanation/Reason. Full page 17 still needs this reader to view it before a complete model claim."
+    }
+  },
+  "firstHeadingChoicesBeforeExisting2013Filings": {
+    "C1a": "enterprise-skills",
+    "C1b": "enterprise-skills",
+    "C1c": "enterprise-skills",
+    "C1d": "enterprise-skills",
+    "C2a": "work-placement",
+    "C2b": "work-placement",
+    "C2c": "work-placement",
+    "C2d": "work-placement",
+    "C3d": "local-voluntarycommunity-enterprises",
+    "C4a": "local-business-enterprises",
+    "C4b": "local-business-enterprises",
+    "C4c": "enterprise-skills",
+    "C4d": "local-business-enterprises",
+    "C5a": "an-enterprise-activity",
+    "C5b": "enterprise-skills",
+    "C5d": "enterprise-skills",
+    "C6a": "enterprise-skills",
+    "C6b": "enterprise-skills",
+    "C6d": "enterprise-skills"
+  },
+  "additionalFindings": [
+    "A4 paper says organises while scheme says organised; preserve the original paper prompt.",
+    "B1 paper lists Redundancy Package while scheme lists Redundancy; preserve each original in its own role.",
+    "B2(i) has five printed lines, one joining FAS (SOLAS) and Department of Social Protection; B2(ii) prints six separate agency headings with 7/5/4/2/2/4 models. Do not lose the Department model or any continuation.",
+    "B2(ii) gives 2 @ 4m (2 + 2), with no printed cross-part deduction. Preserve the chosen-agency context.",
+    "B3 questions retain the paper’s that that and how can he ensure errors, confirmed previously on page 11.",
+    "Paper page 32 is examiner/portfolio bookkeeping, not an extra ask. Scheme pages 19/20 are blank/back cover.",
+    "Case document page 2 is the full Axel Computers context: 500 current staff vs 1,300 peak; July 2013 closure; Mark’s 12 years, qualification plans and employer support all remain."
+  ],
+  "limitations": [
+    "No 2013 authoring before the 2014 check/push checkpoint.",
+    "No SEC archive request or fresh no-answer archive verification during the block.",
+    "Display-heading choices are first-reader proposals only; no canonical filings written.",
+    "All 20 scheme pages have not yet been viewed by this reader; parent evidence is separate."
+  ]
+}

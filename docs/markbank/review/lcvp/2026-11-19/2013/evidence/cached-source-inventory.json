@@ -1,0 +1,46 @@
+{
+  "scope": "Cached original availability only; no archive request, no new full sitting or scheme reading",
+  "sources": [
+    {
+      "kind": "exampapers",
+      "fileid": "LC462CLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP000EV.pdf",
+      "present": true,
+      "bytes": 357983,
+      "sha256": "7c3a6eaa8ed56a8d3ebddc4d804ad4e23d8975a8959c5f75b9cef2ac979e39ae",
+      "contentsReviewedHere": "Only paper physical pages1\u201312, as separately recorded"
+    },
+    {
+      "kind": "exampapers",
+      "fileid": "LC462CLP016EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2013/LC462CLP016EV.pdf",
+      "present": true,
+      "bytes": 76647,
+      "sha256": "887e61fc2f8ed9186f117ea1b1fe975182dce995e9342e5a7b53e01e743d8a58",
+      "contentsReviewedHere": "Not reviewed here"
+    },
+    {
+      "kind": "markingschemes",
+      "fileid": "LC462CLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/markingschemes/2013/LC462CLP000EV.pdf",
+      "present": true,
+      "bytes": 405981,
+      "sha256": "845f04a8a1ba044fa372deed3e6c16f8aad714fe0bff0af2c069eaeb7f378aa4",
+      "contentsReviewedHere": "Not reviewed here"
+    }
+  ],
+  "cachedListings": [
+    {
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/tmp/pdfs/lcvp-review/official-inventory-20261109/exampapers-2013-files.html",
+      "sha256": "57afd98a1865731d6608ff4f5f26888ad2e384d0aef3599b56dbd512f8fdb463",
+      "captured": "2026-11-09"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/tmp/pdfs/lcvp-review/official-inventory-20261109/markingschemes-2013-files.html",
+      "sha256": "b242e008ca5fc50a01b0645745d375afcb1bfcafaad87455bebf3e3edb36dd91",
+      "captured": "2026-11-09"
+    }
+  ],
+  "recording": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+  "recordingPlaybackVerifiedHere": false
+}

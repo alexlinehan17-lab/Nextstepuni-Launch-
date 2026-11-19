@@ -1,0 +1,64 @@
+{
+  "recordedAt": "2026-11-19T18:38:36.817537+00:00",
+  "payloadSha256": "f679179e2d4d06206ab6c888d020620f98af4dbd6cc1870cb56e698b78b81957",
+  "checked": 108,
+  "differences": [
+    {
+      "id": "lcvp-2013-cl-a5",
+      "claim": "Explain two advantages of buying a locally produced craft product as a gift instead of buying a mass-produced product."
+    },
+    {
+      "id": "lcvp-2013-cl-a7",
+      "claim": "Explain three ways in which Information and Communications Technology (ICT) could be used to market Irish craft industries."
+    },
+    {
+      "id": "lcvp-2013-cl-b1",
+      "claim": "Explain three of the following terms: Smartphones Plan of Action Redundancy Package Curriculum Vitae"
+    },
+    {
+      "id": "lcvp-2013-cl-b3i",
+      "claim": "Describe how Mark should proceed so that that he obtains the best formal qualification suited to his requirements"
+    },
+    {
+      "id": "lcvp-2013-cl-b3ii",
+      "claim": "Mark, as a mature student, has an interview for a place on an IT course. Explain how can he ensure that he performs well at his interview."
+    },
+    {
+      "id": "lcvp-2013-cl-c1a",
+      "claim": "Explain the term ‘Entrepreneur’."
+    },
+    {
+      "id": "lcvp-2013-cl-c1c",
+      "claim": "As part of the Leaving Certificate Vocational Programme you have investigated an entrepreneur in your local area. Outline the steps taken to prepare for the interview with this entrepreneur."
+    },
+    {
+      "id": "lcvp-2013-cl-c2b",
+      "claim": "Interpersonal skills are very important in the workplace. Describe two different situations where you demonstrated interpersonal skills during your work experience placement."
+    },
+    {
+      "id": "lcvp-2013-cl-c3b",
+      "claim": "The accompanying graph shows the results of part of a survey of teenagers about their preferred choice of recreational facilities in a small town. Explain the steps involved in the successful completion of a survey."
+    },
+    {
+      "id": "lcvp-2013-cl-c3d",
+      "claim": "Community organisations depend on local people to volunteer their time and efforts. Describe how they could encourage more involvement by young people."
+    },
+    {
+      "id": "lcvp-2013-cl-c4d",
+      "claim": "Many businesses have been affected by the current economic recession. Describe some of the strategies businesses could use to overcome the effects of this recession."
+    },
+    {
+      "id": "lcvp-2013-cl-c6d",
+      "claim": "Describe how your class would evaluate the success of the visit in from the guest speaker."
+    },
+    {
+      "id": "lcvp-2013-cl-c6d",
+      "claim": "Describe how your class would evaluate the success of the visit in from the guest speaker."
+    },
+    {
+      "id": "lcvp-2013-cl-c6d",
+      "claim": "Describe how your class would evaluate the success of the visit in from the guest speaker."
+    }
+  ],
+  "scope": "Root review against actual cached PDF native and spatial text. Differences need source-bound resolution before integration."
+}

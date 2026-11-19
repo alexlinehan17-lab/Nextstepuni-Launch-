@@ -1,0 +1,552 @@
+{
+  "createdAt": "2026-11-19T17:12:05.367697+00:00",
+  "status": "Review only; original first decisions retained",
+  "firstFrozenPath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/first-topic-proposals.json",
+  "firstFrozenSha256": "e248c636a19a156a45ad2d08d8152471dc5adb325b4abb24e85ae689786097b4",
+  "secondFrozenPath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-independent/audio-case-category-decisions-blind.json",
+  "secondFrozenSha256": "d661ec628b75c6a09675500d06e5fef00be4e9faac582ef491db7e59484f6bd0",
+  "asks": 14,
+  "agreements": 12,
+  "disagreements": 2,
+  "items": [
+    {
+      "ref": "A1",
+      "firstHeadingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "agrees": true,
+      "firstReason": "Direct recall of the time stated in the recording; it does not ask for a separate business concept.",
+      "secondReason": "Recall a duration stated in the recording.",
+      "paperPhysicalPages": [
+        3
+      ],
+      "schemePhysicalPages": [
+        4
+      ],
+      "marks": 1,
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 3,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-03.png",
+          "sha256": "d95a0ee7731168178130072f162b976303b8e4c9c989954cca8b74819b19781b",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 4,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-04.png",
+          "sha256": "1a2cab9423d8eab20639fa5a7e534bc5afbf91ef7b7a68bb3d9ee3d5dc502634",
+          "viewedByRoot": true
+        }
+      ]
+    },
+    {
+      "ref": "A2",
+      "firstHeadingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-audio-visual"
+      ],
+      "agrees": true,
+      "firstReason": "Direct recall of the speakers’ personal benefits from rural living.",
+      "secondReason": "Recall living-condition comparisons from the recording, without a narrower content heading.",
+      "paperPhysicalPages": [
+        3
+      ],
+      "schemePhysicalPages": [
+        4
+      ],
+      "marks": 2,
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 3,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-03.png",
+          "sha256": "d95a0ee7731168178130072f162b976303b8e4c9c989954cca8b74819b19781b",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 4,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-04.png",
+          "sha256": "1a2cab9423d8eab20639fa5a7e534bc5afbf91ef7b7a68bb3d9ee3d5dc502634",
+          "viewedByRoot": true
+        }
+      ]
+    },
+    {
+      "ref": "A3",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "agrees": true,
+      "firstReason": "Benefits of the local craft-business network and tourism to the named business.",
+      "secondReason": "Benefits of a local craft business network.",
+      "paperPhysicalPages": [
+        3
+      ],
+      "schemePhysicalPages": [
+        4
+      ],
+      "marks": 3,
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 3,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-03.png",
+          "sha256": "d95a0ee7731168178130072f162b976303b8e4c9c989954cca8b74819b19781b",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 4,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-04.png",
+          "sha256": "1a2cab9423d8eab20639fa5a7e534bc5afbf91ef7b7a68bb3d9ee3d5dc502634",
+          "viewedByRoot": true
+        }
+      ]
+    },
+    {
+      "ref": "A4",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "agrees": true,
+      "firstReason": "The part asks how business finances are organised.",
+      "secondReason": "Financial organisation and management practices.",
+      "paperPhysicalPages": [
+        4
+      ],
+      "schemePhysicalPages": [
+        4
+      ],
+      "marks": 4,
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 4,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-04.png",
+          "sha256": "cc959e5d2ad932bf52bcff81857dd7a459ee6d2cfeab23092b6d2653314f32a2",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 4,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-04.png",
+          "sha256": "1a2cab9423d8eab20639fa5a7e534bc5afbf91ef7b7a68bb3d9ee3d5dc502634",
+          "viewedByRoot": true
+        }
+      ]
+    },
+    {
+      "ref": "A5",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "agrees": true,
+      "firstReason": "Local craft products and their benefits for buyers and local jobs.",
+      "secondReason": "Local craft production and its economic advantages.",
+      "paperPhysicalPages": [
+        4,
+        5
+      ],
+      "schemePhysicalPages": [
+        4
+      ],
+      "marks": 4,
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 4,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-04.png",
+          "sha256": "cc959e5d2ad932bf52bcff81857dd7a459ee6d2cfeab23092b6d2653314f32a2",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "paper",
+          "physicalPage": 5,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-05.png",
+          "sha256": "5fc00304f64a344ed0cd9e886f45619e06b685b34d840970a6155da11f828ec0",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 4,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-04.png",
+          "sha256": "1a2cab9423d8eab20639fa5a7e534bc5afbf91ef7b7a68bb3d9ee3d5dc502634",
+          "viewedByRoot": true
+        }
+      ]
+    },
+    {
+      "ref": "A6",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "agrees": true,
+      "firstReason": "Challenges facing Irish craft businesses.",
+      "secondReason": "Commercial problems affecting Irish craft industries.",
+      "paperPhysicalPages": [
+        5
+      ],
+      "schemePhysicalPages": [
+        5
+      ],
+      "marks": 4,
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 5,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-05.png",
+          "sha256": "5fc00304f64a344ed0cd9e886f45619e06b685b34d840970a6155da11f828ec0",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 5,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-05.png",
+          "sha256": "39a3b15a8811f6d6be6422c282306a7ba3bbe3cd72249dbba7f5f3e87f831a97",
+          "viewedByRoot": true
+        }
+      ]
+    },
+    {
+      "ref": "A7",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "agrees": true,
+      "firstReason": "Use of ICT to market products.",
+      "secondReason": "Using ICT for marketing and communication.",
+      "paperPhysicalPages": [
+        6
+      ],
+      "schemePhysicalPages": [
+        5
+      ],
+      "marks": 6,
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 6,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-06.png",
+          "sha256": "5787ca2b90600bd5f08c4aed2f9dab65a6711da58bf8ae44272fd3c9f4a58ba0",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 5,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-05.png",
+          "sha256": "39a3b15a8811f6d6be6422c282306a7ba3bbe3cd72249dbba7f5f3e87f831a97",
+          "viewedByRoot": true
+        }
+      ]
+    },
+    {
+      "ref": "A8",
+      "firstHeadingIds": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "agrees": false,
+      "firstReason": "Advice about researching, financing, planning and locating a start-up.",
+      "secondReason": "Advice for establishing a craft business.",
+      "paperPhysicalPages": [
+        7
+      ],
+      "schemePhysicalPages": [
+        5
+      ],
+      "marks": 6,
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 7,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-07.png",
+          "sha256": "5187fed2c58ab141ed1cd5b5ddb7500859cbede2328dcefae44b3d6047d301d4",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 5,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-05.png",
+          "sha256": "39a3b15a8811f6d6be6422c282306a7ba3bbe3cd72249dbba7f5f3e87f831a97",
+          "viewedByRoot": true
+        }
+      ]
+    },
+    {
+      "ref": "B1",
+      "firstHeadingIds": [
+        "link-modules-common-case-study"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-enterprise-skills",
+        "link-modules-common-1-introduction-to-working-life"
+      ],
+      "agrees": false,
+      "firstReason": "One printed any-three choice over four different case-study terms; keep the complete choice together.",
+      "secondReason": "CHOICE SPANS: enterprise-skills; introduction-to-working-life; job-seeking-skills. ICT/planning, redundancy and CV definitions.",
+      "paperPhysicalPages": [
+        9
+      ],
+      "schemePhysicalPages": [
+        6
+      ],
+      "marks": 6,
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 9,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-09.png",
+          "sha256": "f2cc121a1fe6776053e2b17911bb0da4ca82699009bef15a03d25147d914bd71",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 6,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-06.png",
+          "sha256": "5cae1bacc5db495b5b5bda786680df27689eda645efc2330c3abb5278526cf31",
+          "viewedByRoot": true
+        }
+      ]
+    },
+    {
+      "ref": "B2i",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "agrees": true,
+      "firstReason": "Government agencies supporting local enterprise and employment after the factory closure.",
+      "secondReason": "Government agencies supporting employment and enterprise after factory closure.",
+      "paperPhysicalPages": [
+        10
+      ],
+      "schemePhysicalPages": [
+        6
+      ],
+      "marks": 2,
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 10,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-10.png",
+          "sha256": "470fe90c662f297cd96d8b00c3b80b079d0bc5e06036bb99548811a55a0a5d11",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 6,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-06.png",
+          "sha256": "5cae1bacc5db495b5b5bda786680df27689eda645efc2330c3abb5278526cf31",
+          "viewedByRoot": true
+        }
+      ]
+    },
+    {
+      "ref": "B2ii",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "agrees": true,
+      "firstReason": "The corresponding agency supports for the town and local enterprises.",
+      "secondReason": "Agency support for business development, training and local employment.",
+      "paperPhysicalPages": [
+        10,
+        11
+      ],
+      "schemePhysicalPages": [
+        6,
+        7
+      ],
+      "marks": 8,
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 10,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-10.png",
+          "sha256": "470fe90c662f297cd96d8b00c3b80b079d0bc5e06036bb99548811a55a0a5d11",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "paper",
+          "physicalPage": 11,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-11.png",
+          "sha256": "31798c634aea57e64b6014da4cdd0920c3172e27d3d9aef77eb9ff25503bd727",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 6,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-06.png",
+          "sha256": "5cae1bacc5db495b5b5bda786680df27689eda645efc2330c3abb5278526cf31",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 7,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-07.png",
+          "sha256": "870c400399d9be80a99d66f9e6a7fdea1b37835526beefecbe86504535319d88",
+          "viewedByRoot": true
+        }
+      ]
+    },
+    {
+      "ref": "B2iii",
+      "firstHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "agrees": true,
+      "firstReason": "Why local people should participate in a community meeting and its development decisions.",
+      "secondReason": "Community participation in planning local development.",
+      "paperPhysicalPages": [
+        10,
+        11
+      ],
+      "schemePhysicalPages": [
+        7
+      ],
+      "marks": 2,
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 10,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-10.png",
+          "sha256": "470fe90c662f297cd96d8b00c3b80b079d0bc5e06036bb99548811a55a0a5d11",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "paper",
+          "physicalPage": 11,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-11.png",
+          "sha256": "31798c634aea57e64b6014da4cdd0920c3172e27d3d9aef77eb9ff25503bd727",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 7,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-07.png",
+          "sha256": "870c400399d9be80a99d66f9e6a7fdea1b37835526beefecbe86504535319d88",
+          "viewedByRoot": true
+        }
+      ]
+    },
+    {
+      "ref": "B3i",
+      "firstHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "agrees": true,
+      "firstReason": "Choosing and researching a suitable formal qualification.",
+      "secondReason": "Research qualifications, career guidance and course entry.",
+      "paperPhysicalPages": [
+        11,
+        12
+      ],
+      "schemePhysicalPages": [
+        8
+      ],
+      "marks": 6,
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 11,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-11.png",
+          "sha256": "31798c634aea57e64b6014da4cdd0920c3172e27d3d9aef77eb9ff25503bd727",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "paper",
+          "physicalPage": 12,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-12.png",
+          "sha256": "3c07069213c20827e17c38a2cd5967c9cf4dc9e01313fe512be1d22003717c7b",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 8,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-08.png",
+          "sha256": "9e530aa5194e52b1404aff1aeb2658720606d5a29810201ab7dbfbca8a70d350",
+          "viewedByRoot": true
+        }
+      ]
+    },
+    {
+      "ref": "B3ii",
+      "firstHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "secondHeadingIds": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "agrees": true,
+      "firstReason": "Interview preparation and performance; the same interview skills apply to this course interview.",
+      "secondReason": "Interview preparation and performance skills.",
+      "paperPhysicalPages": [
+        11,
+        12
+      ],
+      "schemePhysicalPages": [
+        8
+      ],
+      "marks": 6,
+      "images": [
+        {
+          "kind": "paper",
+          "physicalPage": 11,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-11.png",
+          "sha256": "31798c634aea57e64b6014da4cdd0920c3172e27d3d9aef77eb9ff25503bd727",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "paper",
+          "physicalPage": 12,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/earlier-paper-pages/paper-12.png",
+          "sha256": "3c07069213c20827e17c38a2cd5967c9cf4dc9e01313fe512be1d22003717c7b",
+          "viewedByRoot": true
+        },
+        {
+          "kind": "scheme",
+          "physicalPage": 8,
+          "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/remaining-original-pages/scheme-08.png",
+          "sha256": "9e530aa5194e52b1404aff1aeb2658720606d5a29810201ab7dbfbca8a70d350",
+          "viewedByRoot": true
+        }
+      ]
+    }
+  ]
+}
