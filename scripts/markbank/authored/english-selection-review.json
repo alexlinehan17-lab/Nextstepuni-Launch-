@@ -18486,6 +18486,176 @@
       "kind": "open",
       "reason": "Scheme PDF48: whether, in the candidate’s opinion, the poem is (or is not) amusing, disturbing, emotional or joyful as printed — one judgement. One 15-mark response."
     },
+    "english-2024-hl-deferred-p1-composing-1": {
+      "questionSha256": "7c1c4816884afea50ba9a1dfde3a6f2c5a3113f9921f8aad918a7a690ef93741",
+      "kind": "flexible",
+      "reason": "Scheme PDF15: a personal essay reflecting on “at least two moments” when the candidate felt they were “walking on air” and what those moments mean now. One 100-mark composition."
+    },
+    "english-2024-hl-deferred-p1-composing-3": {
+      "questionSha256": "03bff5a416d410824b37bb9d4761dd32a339cbe27b8d47540c48f85ab35740aa",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this composition. The paper asks for one short story in which a minor moment or event precipitates a major development in a central character’s life. One 100-mark composition."
+    },
+    "english-2024-hl-deferred-p1-composing-4": {
+      "questionSha256": "eb07a1d868f38240b7784b364bf04499dcc89ba3dfa89d25ae26e8b5361b86ec",
+      "kind": "flexible",
+      "reason": "Scheme PDF16: a discursive essay considering arguments both for and against an additional Nobel Prize, or prizes, “in one or more of the following areas: Sport, Music, Art”; any of the printed areas, alone or together, is marked on the one grid. One 100-mark composition."
+    },
+    "english-2024-hl-deferred-p1-composing-5": {
+      "questionSha256": "cab50c7265db454eb9c255deb0b4760bc6908e9511cf7aee1667551ca73f145d",
+      "kind": "required",
+      "reason": "Scheme PDF17: a gripping short story based on a thrilling experience that must include the printed words “She barely breathed; she didn’t blink”. One 100-mark composition."
+    },
+    "english-2024-hl-deferred-p1-composing-6": {
+      "questionSha256": "702a847dc530577c49a504246cda3390b94aca6244612ac6b09e969d805b98c9",
+      "kind": "required",
+      "reason": "Scheme PDF18: a personal essay identifying some rights fundamental to the candidate’s life and reflecting on how their life would be affected if they were denied; both required. One 100-mark composition."
+    },
+    "english-2024-hl-deferred-p1-t1-a-ii": {
+      "questionSha256": "3bca05e350a3b9e33f6950d13a2d1c77aa8c446cca93e46ebd6caa02028a3aa6",
+      "kind": "flexible",
+      "reason": "Scheme PDF5: “at least two of the characteristics of a truly thrilling experience”, illustrated by one experience of the candidate’s own; no text from the paper. One 15-mark response."
+    },
+    "english-2024-hl-deferred-p1-t1-b": {
+      "questionSha256": "81d8995228332bf1343f8912f4659eb114bb637ea9a608fc9c58c0122e674c6e",
+      "kind": "required",
+      "reason": "Scheme PDF7: the director’s note for the festival programme must give the film’s title and why it was chosen, discuss what made the extract suitable for film-making and describe the thrill of working with a real tigress; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 50-mark response."
+    },
+    "english-2024-hl-deferred-p1-t2-a-ii": {
+      "questionSha256": "3bca05e350a3b9e33f6950d13a2d1c77aa8c446cca93e46ebd6caa02028a3aa6",
+      "kind": "flexible",
+      "reason": "Scheme PDF8: “at least two of the characteristics of a truly thrilling experience”, illustrated by one experience of the candidate’s own; no text from the paper. One 15-mark response."
+    },
+    "english-2024-hl-deferred-p1-t2-b": {
+      "questionSha256": "ce621924977467cfc6360f5940fbe8a23a4b9a5e5fd2bd2e8ed8c0ae1dcfdfeb",
+      "kind": "required",
+      "reason": "Scheme PDF10: the first “FAN-tastic” podcast episode must introduce contemporary fandom, explore its positive aspects and consider some disturbing consequences of extreme fandom; serious or humorous or both is the register, not a choice of task; all aspects required, not necessarily equally. One 50-mark response."
+    },
+    "english-2024-hl-deferred-p1-t3-a-ii": {
+      "questionSha256": "3bca05e350a3b9e33f6950d13a2d1c77aa8c446cca93e46ebd6caa02028a3aa6",
+      "kind": "flexible",
+      "reason": "Scheme PDF11: “at least two of the characteristics of a truly thrilling experience”, illustrated by one experience of the candidate’s own; no text from the paper. One 15-mark response."
+    },
+    "english-2024-hl-deferred-p1-t3-b": {
+      "questionSha256": "079b48176bb418fa07756dcb9d185161c3cc419f0075d6cef1ced7d59c529607",
+      "kind": "required",
+      "reason": "Scheme PDF13: the opinion piece must argue that a local radio station is essential, give views on increasing its listenership and explain why local organisations and businesses must do more to support it; all aspects required, not necessarily equally. One 50-mark response."
+    },
+    "english-2024-hl-deferred-p2-comparative-a-q1-a": {
+      "questionSha256": "0e85d9e057bb24354266ac18c43f5adbebbc6e3838e4038552ee2c32b52de997",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this part; the paper asks about one text of the candidate’s choosing, within the mode Literary Genre. One 30-mark response."
+    },
+    "english-2024-hl-deferred-p2-comparative-a-q1-b": {
+      "questionSha256": "1932fc66e4858b7644ce96a1e246ab0578e0183de413c5c86c3d9f142fdb78f2",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this part; the paper asks about two other texts of the candidate’s choosing within the mode Literary Genre; the same or different techniques or aspects may be used for each. One 40-mark response."
+    },
+    "english-2024-hl-deferred-p2-comparative-a-q2": {
+      "questionSha256": "65f081c1459e7833e54b2063dba0c1ab4a134d259a39eb99ff84aa7d686deec9",
+      "kind": "flexible",
+      "reason": "Scheme PDF28: at least two texts of the candidate’s choosing within the mode Literary Genre. One 70-mark response."
+    },
+    "english-2024-hl-deferred-p2-comparative-b-q1-a": {
+      "questionSha256": "f4f600b156a300c58ecc33265c45b1708e9203db84ec544a6cd4d0e1ffd64f2a",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this part; the paper asks about one text of the candidate’s choosing, within the mode Theme or Issue. One 30-mark response."
+    },
+    "english-2024-hl-deferred-p2-comparative-b-q1-b": {
+      "questionSha256": "a3a49f78c758cc3859d410f996abcc313731c99425b516e3ea8fd7fa2bd6e906",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this part; the paper asks about two other texts of the candidate’s choosing within the mode Theme or Issue, on the theme or issue of part (a). One 40-mark response."
+    },
+    "english-2024-hl-deferred-p2-comparative-b-q2": {
+      "questionSha256": "a9d97f4f5531018cd4eb07f7ccfde4b556f1da3b9929e9583874b569aff1815e",
+      "kind": "flexible",
+      "reason": "Scheme PDF29: at least two texts of the candidate’s choosing within the mode Theme or Issue. One 70-mark response."
+    },
+    "english-2024-hl-deferred-p2-comparative-c-q1-a": {
+      "questionSha256": "f9f3fcf7183ebbf17f7a5a24420440218c3cb5cb98b277e4fe393f68cb00539b",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this part; the paper asks about one text of the candidate’s choosing, within the mode Cultural Context. One 30-mark response."
+    },
+    "english-2024-hl-deferred-p2-comparative-c-q1-b": {
+      "questionSha256": "ba953b785029a848baf7f127c0a37aa7d6c21068c91335d9061ef99325e95aac",
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this part; the paper asks about two other texts of the candidate’s choosing within the mode Cultural Context; the same or different techniques or aspects may be used for each. One 40-mark response."
+    },
+    "english-2024-hl-deferred-p2-comparative-c-q2": {
+      "questionSha256": "5e9cfdf8589949e19401e8df509d28c07478283cb033d67f35335eb3645abd5a",
+      "kind": "flexible",
+      "reason": "Scheme PDF30: at least two texts of the candidate’s choosing within the mode Cultural Context. One 70-mark response."
+    },
+    "english-2024-hl-deferred-p2-single-a-i": {
+      "questionSha256": "7d9e844d63dc768bb7d51427842da76a615a703b1691b8cf1a7f0e7173ad8478",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task; the paper asks to what extent the candidate agrees with the printed statement — a graded judgement. One 60-mark response."
+    },
+    "english-2024-hl-deferred-p2-single-b-i": {
+      "questionSha256": "5fe62381a35dcadfbd4ed50e4dcd031455640983fef33b1f2c757f1465cfc70c",
+      "kind": "open",
+      "reason": "Scheme PDF22: the extent to which the candidate agrees with the printed statement — a graded judgement. One 60-mark response."
+    },
+    "english-2024-hl-deferred-p2-single-c-i": {
+      "questionSha256": "ae7c45c58057024ea1f531d425e33316c4f0b8117277fc2dedf613f3a2b6db5c",
+      "kind": "open",
+      "reason": "Scheme PDF24: the extent to which the candidate agrees with the printed statement — a graded judgement. One 60-mark response."
+    },
+    "english-2024-hl-deferred-p2-single-d-i": {
+      "questionSha256": "a779e57bdcb12675cf48251c527a3e9a8f04b895d2766e2a9e1147139310eb90",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task; the paper asks to what extent the candidate agrees with the printed statement — a graded judgement. One 60-mark response."
+    },
+    "english-2024-hl-deferred-p2-single-e-i": {
+      "questionSha256": "b2205e1a8d6c20d76f3dde1eabcbe195f1cde463f7f83ab7c98466597ac36ef4",
+      "kind": "open",
+      "reason": "Scheme PDF26: the extent to which the candidate agrees with the printed statement — a graded judgement. One 60-mark response."
+    },
+    "english-2024-hl-deferred-p2-unseen-q1-b": {
+      "questionSha256": "1ec29f8f5b0d95c78571c3e421a75a4e1c1a6535ec05b451c7d35ac0bf4952a6",
+      "kind": "open",
+      "reason": "Scheme PDF31: “two metaphors” the candidate chooses from the poem and discusses. One 10-mark response."
+    },
+    "english-2024-hl-deferred-p2-unseen-q2": {
+      "questionSha256": "2ad3950332bd330ef893c85ebca6c83279238bffbd6a68bb36313b2387516fd1",
+      "kind": "open",
+      "reason": "Scheme PDF31: at least two aspects that make the poem suitable or unsuitable for public performance — a judgement of the candidate’s own. One 20-mark response."
+    },
+    "english-2025-hl-deferred-p1-composing-1": {
+      "questionSha256": "40b861b5c05b03fcdd7230ed69848526af7a02cdd2b8d65cd01612aad3a199e6",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this composition. The paper asks for one short story set in a community astonished by an unexpected revelation; “serious or humorous, or both” describes the treatment, not alternative tasks. One 100-mark composition."
+    },
+    "english-2025-hl-deferred-p1-composing-2": {
+      "questionSha256": "e7dd3d21e4eedef9e6cefdbc00faf92145f63ccf7dbc2a7ab00c4d028ffd1759",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this composition. The paper asks for one feature article exploring some of “the walls” that divide us and how they might be overcome. One 100-mark composition."
+    },
+    "english-2025-hl-deferred-p1-composing-3": {
+      "questionSha256": "f5b59b84d9fa31b457e974d81fc87739773173e2f9e754051bb1bb5f86d59f2e",
+      "kind": "open",
+      "reason": "Scheme PDF14: a personal essay reflecting on some of the challenges and opportunities change poses for the candidate or their community; a variety of approaches. One 100-mark composition."
+    },
+    "english-2025-hl-deferred-p1-composing-4": {
+      "questionSha256": "cc2dd954ffd4a3964e669336b444095956401269c3a36a109d77f512e44cda37",
+      "kind": "open",
+      "reason": "Scheme PDF15: a short story in which one of the Others is captured while trying to infiltrate the Wall; a variety of approaches. One 100-mark composition."
+    },
+    "english-2025-hl-deferred-p1-composing-5": {
+      "questionSha256": "41b7cbc7d57510d741545c2e2a814d457b31d5260dde614538a9fc6ce24c871a",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this composition. The paper asks for one speech identifying some of “the decent instincts of humanity” and exploring how they could be cultivated. One 100-mark composition."
+    },
+    "english-2025-hl-deferred-p1-composing-6": {
+      "questionSha256": "65bad49ad79c86dcb95bf7e8c1adaaef14cb8a16453f41a47ccca3b7de59efeb",
+      "kind": "required",
+      "reason": "Scheme PDF16: a discursive essay discussing the advantages and disadvantages of relying primarily on social media for news and information; both sides are required. One 100-mark composition."
+    },
+    "english-2025-hl-deferred-p1-composing-7": {
+      "questionSha256": "3a0bd45019b51fdf17924485dd46c3d66b82cf250e1508b6600369470c6d29d4",
+      "kind": "required",
+      "reason": "Scheme PDF17: a personal essay reflecting on a time the candidate has flourished and considering what makes them feel deeply fulfilled; the scheme requires both, “although not necessarily equally”. One 100-mark composition."
+    },
     "english-2025-hl-deferred-p1-t1-a-ii": {
       "questionSha256": "71a2ae88f033ae04c871133a0fe75a30395759f06dcd13899edd0a9b389d31d5",
       "kind": "flexible",
@@ -18530,66 +18700,6 @@
       "questionSha256": "f515dd52d0f33982be65e47be843047a4b1491029ecec555a0e176a57ed14a29",
       "kind": "required",
       "reason": "Scheme PDF12: a response to the President’s speech expressing appreciation, responding to “at least two” of his observations and reiterating his encouragement; all aspects required, not necessarily equally. One 50-mark response."
-    },
-    "english-2025-hl-deferred-p1-composing-1": {
-      "questionSha256": "40b861b5c05b03fcdd7230ed69848526af7a02cdd2b8d65cd01612aad3a199e6",
-      "kind": "open",
-      "reason": "The deferred scheme sets out no block for this composition. The paper asks for one short story set in a community astonished by an unexpected revelation; “serious or humorous, or both” describes the treatment, not alternative tasks. One 100-mark composition."
-    },
-    "english-2025-hl-deferred-p1-composing-2": {
-      "questionSha256": "e7dd3d21e4eedef9e6cefdbc00faf92145f63ccf7dbc2a7ab00c4d028ffd1759",
-      "kind": "open",
-      "reason": "The deferred scheme sets out no block for this composition. The paper asks for one feature article exploring some of “the walls” that divide us and how they might be overcome. One 100-mark composition."
-    },
-    "english-2025-hl-deferred-p1-composing-3": {
-      "questionSha256": "f5b59b84d9fa31b457e974d81fc87739773173e2f9e754051bb1bb5f86d59f2e",
-      "kind": "open",
-      "reason": "Scheme PDF14: a personal essay reflecting on some of the challenges and opportunities change poses for the candidate or their community; a variety of approaches. One 100-mark composition."
-    },
-    "english-2025-hl-deferred-p1-composing-4": {
-      "questionSha256": "cc2dd954ffd4a3964e669336b444095956401269c3a36a109d77f512e44cda37",
-      "kind": "open",
-      "reason": "Scheme PDF15: a short story in which one of the Others is captured while trying to infiltrate the Wall; a variety of approaches. One 100-mark composition."
-    },
-    "english-2025-hl-deferred-p1-composing-5": {
-      "questionSha256": "41b7cbc7d57510d741545c2e2a814d457b31d5260dde614538a9fc6ce24c871a",
-      "kind": "open",
-      "reason": "The deferred scheme sets out no block for this composition. The paper asks for one speech identifying some of “the decent instincts of humanity” and exploring how they could be cultivated. One 100-mark composition."
-    },
-    "english-2025-hl-deferred-p1-composing-6": {
-      "questionSha256": "65bad49ad79c86dcb95bf7e8c1adaaef14cb8a16453f41a47ccca3b7de59efeb",
-      "kind": "required",
-      "reason": "Scheme PDF16: a discursive essay discussing the advantages and disadvantages of relying primarily on social media for news and information; both sides are required. One 100-mark composition."
-    },
-    "english-2025-hl-deferred-p1-composing-7": {
-      "questionSha256": "3a0bd45019b51fdf17924485dd46c3d66b82cf250e1508b6600369470c6d29d4",
-      "kind": "required",
-      "reason": "Scheme PDF17: a personal essay reflecting on a time the candidate has flourished and considering what makes them feel deeply fulfilled; the scheme requires both, “although not necessarily equally”. One 100-mark composition."
-    },
-    "english-2025-hl-deferred-p2-single-a-i": {
-      "questionSha256": "16af98d57b9ebfb28ba4e7661d48d1f5a2ab288f58bf374b9f8f0677d945edeb",
-      "kind": "open",
-      "reason": "The deferred scheme sets out no block for this task; the paper asks to what extent the candidate agrees with the printed statement — a graded judgement. One 60-mark response."
-    },
-    "english-2025-hl-deferred-p2-single-b-i": {
-      "questionSha256": "8f121bb6867be9cf2104a4792e0f88d6cf5fc76caf61acee79875ac1ac98a343",
-      "kind": "open",
-      "reason": "The deferred scheme sets out no block for this task; the paper asks to what extent the candidate agrees with the printed statement — a graded judgement. One 60-mark response."
-    },
-    "english-2025-hl-deferred-p2-single-c-i": {
-      "questionSha256": "bbb943a82b383d2075c010639fa6f0e0b23b4da4e3fc7070b0f1c0850f26a7e9",
-      "kind": "open",
-      "reason": "Scheme PDF19: the extent to which the candidate agrees with the printed view — a graded judgement. One 60-mark response."
-    },
-    "english-2025-hl-deferred-p2-single-d-i": {
-      "questionSha256": "66ed79a66a582068d751d78e59cfe15e5f18ae3b7682c8bc6c08e7b2e76e0cc1",
-      "kind": "open",
-      "reason": "Scheme PDF20: the extent to which the candidate agrees with the printed view — a graded judgement. One 60-mark response."
-    },
-    "english-2025-hl-deferred-p2-single-e-i": {
-      "questionSha256": "27be2203243065fffa14078cca3f16ce170d5dffe27bb80d124946efc05546a5",
-      "kind": "open",
-      "reason": "The deferred scheme sets out no block for this task; the paper asks to what extent the candidate agrees with the printed statement — a graded judgement. One 60-mark response."
     },
     "english-2025-hl-deferred-p2-comparative-a-q1-a": {
       "questionSha256": "232515cb853960103d388e89be47fccb17bc2d6716e148d08a17110b03be6859",
@@ -18645,6 +18755,31 @@
       "questionSha256": "c155bc00c37c270d12457cd883fa652b19f1b036dc35369b586b145f26d9b439",
       "kind": "open",
       "reason": "Scheme PDF38: agree or disagree with the statement on Dickinson, poems of the candidate’s choosing — a graded judgement. One 50-mark response."
+    },
+    "english-2025-hl-deferred-p2-single-a-i": {
+      "questionSha256": "16af98d57b9ebfb28ba4e7661d48d1f5a2ab288f58bf374b9f8f0677d945edeb",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task; the paper asks to what extent the candidate agrees with the printed statement — a graded judgement. One 60-mark response."
+    },
+    "english-2025-hl-deferred-p2-single-b-i": {
+      "questionSha256": "8f121bb6867be9cf2104a4792e0f88d6cf5fc76caf61acee79875ac1ac98a343",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task; the paper asks to what extent the candidate agrees with the printed statement — a graded judgement. One 60-mark response."
+    },
+    "english-2025-hl-deferred-p2-single-c-i": {
+      "questionSha256": "bbb943a82b383d2075c010639fa6f0e0b23b4da4e3fc7070b0f1c0850f26a7e9",
+      "kind": "open",
+      "reason": "Scheme PDF19: the extent to which the candidate agrees with the printed view — a graded judgement. One 60-mark response."
+    },
+    "english-2025-hl-deferred-p2-single-d-i": {
+      "questionSha256": "66ed79a66a582068d751d78e59cfe15e5f18ae3b7682c8bc6c08e7b2e76e0cc1",
+      "kind": "open",
+      "reason": "Scheme PDF20: the extent to which the candidate agrees with the printed view — a graded judgement. One 60-mark response."
+    },
+    "english-2025-hl-deferred-p2-single-e-i": {
+      "questionSha256": "27be2203243065fffa14078cca3f16ce170d5dffe27bb80d124946efc05546a5",
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task; the paper asks to what extent the candidate agrees with the printed statement — a graded judgement. One 60-mark response."
     }
   }
 }

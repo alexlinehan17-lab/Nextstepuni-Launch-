@@ -114,8 +114,20 @@ def scheme_split(scheme, regions):
     return found if len(found) == 4 else None
 
 
+ORDINARY_KINDS = ((r'^p1-t\d-a-(?:i|ii)$', 'qa15'), (r'^p1-t\d-a-iii-', 'qa10'), (r'^p1-t\d-b', 'qb'),
+                  (r'^p1-composing', 'composing'), (r'^p2-single-[a-i]-q1-', 'single-q1'),
+                  (r'^p2-single-[a-i]-q[2-4]$', 'single-q'), (r'^p2-comparative-[a-c]-q[12]-a-', 'comparative-a'),
+                  (r'^p2-comparative-[a-c]-q[12]-b$', 'comparative-b'), (r'^p2-unseen', 'unseen'),
+                  (r'^p2-prescribed-[a-f]-q1-', 'prescribed-q1'), (r'^p2-prescribed-[a-f]-q2-', 'prescribed-q2'))
+
+
 def task_kind(task):
     tid = task['id'].split('-deferred-')[1]
+    if task['level'] == 'ordinary':
+        for pattern, kind in ORDINARY_KINDS:
+            if re.match(pattern, tid):
+                return kind
+        raise ValueError('Unclassified deferred Ordinary task: ' + task['id'])
     for pattern, kind in ((r'^p1-t\d-a-', 'qa'), (r'^p1-t\d-b', 'qb'), (r'^p1-composing', 'composing'),
                           (r'^p2-single', 'single'), (r'^p2-comparative-[a-c]-q1', 'comparative-q1'),
                           (r'^p2-comparative-[a-c]-q2', 'comparative-q2'), (r'^p2-unseen', 'unseen'),
@@ -216,8 +228,10 @@ def apply(key, review, check):
                 if mode != 'discrete' and printed and len(tasks_in_block(tasks, task)) == 1:
                     raise ValueError(f"{task['id']}: the scheme prints a split {printed} for a combined task")
                 reason = review['criteria']['presentReason'][kind].format(marks=task['totalMarks'], page=pages[0])
+                if task['level'] == 'ordinary':
+                    ordinary_criteria_printed(scheme, task, mode, allocation)
             criteria = {'mode': mode}
-            if mode == 'discrete':
+            if mode == 'discrete' or (mode == 'combined' and allocation):
                 criteria['allocation'] = allocation
             notes = override.get('notes') or (default['absentNotes'] if task.get('schemeAbsent') else default['notes'])
             criteria['notes'] = notes.format(marks=task['totalMarks'])
@@ -274,6 +288,20 @@ def apply(key, review, check):
                              f'{paper["tally"]["finiteRoutes"]}) differs from the extracted {len(tasks)}/{len(routes)}')
     changed.update({'english-task-review.json': task_reviews, 'english-selection-review.json': selections,
                     'english-raw-selection-review.json': raw, 'english-visual-review.json': visual})
+    # One order whatever order the sittings are written in: June's entries as committed, then every
+    # deferred entry by id.
+    def ordered(mapping):
+        june = [(k, v) for k, v in mapping.items() if '-deferred' not in k]
+        return dict(june + sorted((k, v) for k, v in mapping.items() if '-deferred' in k))
+    grids['sittings'] = ordered(grids['sittings'])
+    attachments['attachments'] = ordered(attachments['attachments'])
+    duplicates['duplicates'] = ordered(duplicates['duplicates'])
+    task_reviews['tasks'] = ordered(task_reviews['tasks'])
+    selections['decisions'] = ordered(selections['decisions'])
+    raw['decisions'] = ordered(raw['decisions'])
+    raw['sources'] = ordered(raw['sources'])
+    visual['papers'] = [p for p in visual['papers'] if '-deferred-' not in p['paperId']] + \
+        sorted((p for p in visual['papers'] if '-deferred-' in p['paperId']), key=lambda p: p['paperId'])
     stale = []
     for name, value in changed.items():
         text = json.dumps(value, ensure_ascii=False, indent=2 if name in INDENT2 else 1) + '\n'
@@ -283,6 +311,27 @@ def apply(key, review, check):
         else:
             (AUTHORED / name).write_text(text)
     return stale
+
+
+def ordinary_criteria_printed(scheme, task, mode, allocation):
+    """An Ordinary scheme prints each part's award on one line: "Combined Criteria ex 10 P + C = 6 L + M = 4" or
+    "Discrete Criteria ex 30 P = 9 C = 9 L = 9 M = 3". The task's own line must be on its traced page or the next."""
+    page = task['schemePage']
+    text = ' '.join(' '.join(scheme[p - 1].get_text().split()) for p in (page, page + 1) if p <= len(scheme))
+    text = text.replace('P+C', 'P + C').replace('L+M', 'L + M')
+    marks = task['totalMarks']
+    if mode == 'discrete':
+        want = (f"Discrete Criteria ex {marks} P = {allocation['P']} C = {allocation['C']} L = {allocation['L']} "
+                f"M = {allocation['M']}")
+    else:
+        want = f"Combined Criteria ex {marks} P + C = {allocation['P+C']} L + M = {allocation['L+M']}"
+    if mode == 'discrete' and marks == 100 and allocation == {'P': 30, 'C': 30, 'L': 30, 'M': 10}:
+        # A composition prints its discrete grid in full: 100% / 30% / 10% rows.
+        flat = re.sub(r'\s*-\s*', ' - ', text)
+        if '100% 100 - 90' in flat and '30% 30 - 27' in flat and '10% 10 - 9' in flat:
+            return
+    if re.sub(r'\s+', ' ', want) not in re.sub(r'\s*=\s*', ' = ', text):
+        raise ValueError(f"{task['id']}: the scheme does not print “{want}” on PDF{page}-{page + 1}")
 
 
 def key_prefix(key):
@@ -322,20 +371,49 @@ def classify(hit, tasks, suggested_tasks, source_pages, last_page):
                                                r'commission does not|\(2000\)', hit['context']):
         return {'kind': 'non-selection'}
     if hit['page'] == 1 or re.match(r'(?i)^(?:candidates\s+(?:must|should|may)|answer|write\s+a\s+composition\s+on\s+any|'
-                                    r'read\s+the\s+following\s+poem|you\s+must\s+answer|[A-C]\s+[A-Z ,]+$)', text):
+                                    r'read\s+the\s+following\s|you\s+must\s+answer|[A-C]\s+[A-Z ,]+$|'
+                                    # the choice rubric's last line ("or C – Cultural Context.") and the
+                                    # Comparative Study's "Please note" definitions ("• When used, the words …")
+                                    r'or\s+[A-C]\s*[–—-]|•\s*when\s+used)', text):
         return {'kind': 'exam-instruction'}
-    if hit['page'] in source_pages and not inside:
+    if hit['page'] in source_pages:
+        # A line of the printed passage or poem: on a page that prints one, and in no task's own wording.
         return {'kind': 'source-prose'}
     return None
 
 
+def remove(key):
+    """Take one sitting's entries out of every ledger (to commit sittings one at a time)."""
+    prefix = key_prefix(key)
+    for name, field in (('english-task-review.json', 'tasks'), ('english-selection-review.json', 'decisions'),
+                        ('english-raw-selection-review.json', 'decisions'), ('english-source-review.json', 'attachments'),
+                        ('english-printed-duplicates.json', 'duplicates')):
+        ledger = read(name)
+        ledger[field] = {k: v for k, v in ledger[field].items() if not k.startswith(prefix)}
+        if name == 'english-raw-selection-review.json':
+            ledger['sources'] = {k: v for k, v in ledger['sources'].items() if not k.startswith(prefix)}
+        write(name, ledger)
+    visual = read('english-visual-review.json')
+    visual['papers'] = [p for p in visual['papers'] if not p['paperId'].startswith(prefix)]
+    write('english-visual-review.json', visual)
+    grids = read('english-marking-grids.json')
+    year, level = key.split('-')
+    grids['sittings'].pop(f"{year}-{'higher' if level == 'hl' else 'ordinary'}-deferred", None)
+    write('english-marking-grids.json', grids)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--remove', help='take this sitting\'s entries out of the ledgers')
     parser.add_argument('sittings', nargs='*')
     parser.add_argument('--all', action='store_true')
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
     detect_indent()
+    if args.remove:
+        remove(args.remove)
+        print(f'{args.remove}: removed')
+        return 0
     keys = sorted(p.stem for p in REVIEWS.glob('*.json')) if args.all else args.sittings
     stale = []
     for key in keys:

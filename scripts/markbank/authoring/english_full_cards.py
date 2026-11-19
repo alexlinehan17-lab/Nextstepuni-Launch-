@@ -145,7 +145,8 @@ def region_text(doc, regions):
                 continue
             # The deferred papers' running footer: "Leaving Certificate  3" over
             # "English, Higher Level – Paper 1" (June prints "English – Higher Level – Paper 1").
-            if re.fullmatch(r'Leaving Certificate(?:\s+\d{1,2})?|English, (?:Higher|Ordinary) Level\s*[–—-]\s*Paper [12]', text):
+            if re.fullmatch(r'Leaving Certificate(?: Examination)?(?:\s+\d{1,2})?|English, (?:(?:Higher|Ordinary) Level\s*[–—-]\s*Paper [12]|'
+                            r'Paper [12]\s*[–—-]\s*(?:Higher|Ordinary) Level)', text):
                 continue
             if re.fullmatch(r'(?:[A-I]\s*)?\(continued\)', text, re.I):
                 continue

@@ -105,7 +105,7 @@ def composing_heads(scheme, start_page0):
     heads = []
     for page_index in range(start_page0, len(scheme)):
         text = scheme[page_index].get_text()
-        if page_index > start_page0 and re.search(r"^\s*PAPER\s+2\b", text, re.M):
+        if page_index > start_page0 and re.search(r"^\s*PAPER\s+(?:2|TWO)\b", text, re.M | re.I):
             break
         for txt, x, y in english_p1.lines_with_pos(scheme[page_index]):
             m = english_p1.COMPOSING_HEAD.match(txt) or (english_p1.HEAD.match(txt) if x <= 0.25 else None)
@@ -117,7 +117,7 @@ def composing_heads(scheme, start_page0):
 def paper2_divider(scheme, after_page0):
     for page_index in range(after_page0 + 1, len(scheme)):
         head = " ".join(scheme[page_index].get_text().split())[:200].upper()
-        if "PAPER 2" in head:
+        if re.search(r"PAPER (?:2|TWO)\b", head):
             return page_index
     return len(scheme) - 1
 
@@ -199,8 +199,9 @@ def scheme_markers(scheme, start):
     for page_index in range(start, len(scheme)):
         page = scheme[page_index]
         lines = p2.lines_of(page)
-        if page_index > start and any(re.match(r"^(?:LEAVING CERTIFICATE ENGLISH\s+)?(?:CRITERIA FOR ASSESSMENT|"
-                                               r"REASONABLE ACCOMMODATIONS?)\.?$", line.text.strip())
+        if page_index > start and any(re.match(r"^(?:(?:LEAVING CERTIFICATE ENGLISH\s+)?(?:CRITERIA FOR ASSESSMENT|"
+                                               r"REASONABLE ACCOMMODATIONS?)\.?|LEAVING CERTIFICATE ENGLISH CRITERIA|"
+                                               r"APPENDIX\s+\d)$", line.text.strip())
                                       for line in lines):
             out.append({"kind": "end", "page": page_index, "y": 0.0})
             break

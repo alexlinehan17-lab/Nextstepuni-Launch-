@@ -233,6 +233,17 @@
       ],
       "attribution": "The Word — Zaffar Kunial, as reproduced in the SEC 2025 deferred paper.",
       "reason": "Paper PDF6 prints the title, the whole poem and the byline above both questions; visually verified."
+    },
+    "english-2025-hl-deferred-p1-t3-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Communities in All Their Diversity",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "President Michael D. Higgins — edited extracts from his speech at a garden party at Áras an Uachtaráin celebrating community groups and activists, with a photograph from the event (PDF6–7). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "The task responds to “at least two of the observations made by the President during the course of his speech” (scheme PDF12), so the speech is needed to answer faithfully: TEXT 3 as printed on PDF6–7, introduction and photograph included."
     }
   },
   "duplicates": {

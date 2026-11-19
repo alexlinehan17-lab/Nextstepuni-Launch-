@@ -5678,6 +5678,165 @@
       "questionSha256": "9815f06906a63ffc079bcd9f12d1fc2717de5288cec27761032f1340fb9c67fe",
       "reason": "Paper PDF13 prints the instruction (“Read the following poem by Barbara Crooker”), the title, the whole 13-line poem, the byline and the gloss (*A murmuration occurs when a large flock of birds … fly together in swooping patterns) above both questions; visually verified. PDF14 begins Prescribed Poem A."
     },
+    "english-2024-hl-deferred-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "The Thrill of the Tigress",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Maggie O’Farrell — edited extracts adapted from her novel The Marriage Portrait (Tinder Press, 2022), with a photograph of a tigress (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "90037e09aa92a9d7acbefaa46b5fab088b560ae3c5460ce5f9e8ad755895278a"
+    },
+    "english-2024-hl-deferred-p1-t1-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "THE THRILL OF THE TIGRESS",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "951efae4c8cd26dd37d98cb4f4b3415d683d567500b8bd3f30ea8f72b2414f6a",
+      "questionSha256": "3bca05e350a3b9e33f6950d13a2d1c77aa8c446cca93e46ebd6caa02028a3aa6",
+      "reason": "Self-contained: the characteristics of a truly thrilling experience, supported by one the candidate found thrilling; the paper says “you may not refer to any of the texts that appear in this examination paper”, and scheme PDF5 assesses the candidate’s own explanation. The same task is printed under all three texts, so the default reader is removed."
+    },
+    "english-2024-hl-deferred-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "The Thrill of the Tigress",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Maggie O’Farrell — edited extracts adapted from her novel The Marriage Portrait (Tinder Press, 2022), with a photograph of a tigress (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "667b02fe4b0ceabbed3bf0c71a2d45d2b96529fdbc1be8faddd4e9ab458f6690"
+    },
+    "english-2024-hl-deferred-p1-t1-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "The Thrill of the Tigress",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Maggie O’Farrell — edited extracts adapted from her novel The Marriage Portrait (Tinder Press, 2022), with a photograph of a tigress (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "The director’s note must discuss “the aspects of the extract” that made it suitable for film-making (scheme PDF7), so the extract is needed to answer faithfully: TEXT 1 as printed on PDF2–3, introduction and photograph included.",
+      "questionSha256": "81d8995228332bf1343f8912f4659eb114bb637ea9a608fc9c58c0122e674c6e"
+    },
+    "english-2024-hl-deferred-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Thrill of the Game",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Duncan Hamilton — edited extracts adapted from the prologue of his book Going to the Match (Cornet, 2018), with L.S. Lowry’s painting Going to the Match (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "f1dda66c9591187240c9f130bc6750d75710b0660f2877c6e98423f764a5bbfb"
+    },
+    "english-2024-hl-deferred-p1-t2-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "THE THRILL OF THE GAME",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "951efae4c8cd26dd37d98cb4f4b3415d683d567500b8bd3f30ea8f72b2414f6a",
+      "questionSha256": "3bca05e350a3b9e33f6950d13a2d1c77aa8c446cca93e46ebd6caa02028a3aa6",
+      "reason": "Self-contained: the characteristics of a truly thrilling experience, supported by one the candidate found thrilling; the paper says “you may not refer to any of the texts that appear in this examination paper”, and scheme PDF8 assesses the candidate’s own explanation. The same task is printed under all three texts, so the default reader is removed."
+    },
+    "english-2024-hl-deferred-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Thrill of the Game",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Duncan Hamilton — edited extracts adapted from the prologue of his book Going to the Match (Cornet, 2018), with L.S. Lowry’s painting Going to the Match (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "926bc8772699a73c00f520fd4e213d88d794f5238778a980ada2bbc8631cf363"
+    },
+    "english-2024-hl-deferred-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Thrill of Story",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Seamus Heaney — edited extracts adapted from the opening of his Nobel Prize lecture, delivered in Stockholm in 1995, with a photograph of him delivering it (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "01cb94fd46f4ee40fd5c95b88613af8dbcd22c40f7d67181daeb40ce0623fb0c"
+    },
+    "english-2024-hl-deferred-p1-t3-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "THE THRILL OF STORY",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "951efae4c8cd26dd37d98cb4f4b3415d683d567500b8bd3f30ea8f72b2414f6a",
+      "questionSha256": "3bca05e350a3b9e33f6950d13a2d1c77aa8c446cca93e46ebd6caa02028a3aa6",
+      "reason": "Self-contained: the characteristics of a truly thrilling experience, supported by one the candidate found thrilling; the paper says “you may not refer to any of the texts that appear in this examination paper”, and scheme PDF11 assesses the candidate’s own explanation. The same task is printed under all three texts, so the default reader is removed."
+    },
+    "english-2024-hl-deferred-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Thrill of Story",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Seamus Heaney — edited extracts adapted from the opening of his Nobel Prize lecture, delivered in Stockholm in 1995, with a photograph of him delivering it (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "f31af3b1f8c0908b528ecb5593e80fe5e240b568666efd2fbdec6074c261fc78"
+    },
+    "english-2024-hl-deferred-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Extract from milk and honey",
+      "pages": [
+        6
+      ],
+      "attribution": "An extract from ‘milk and honey’ — Rupi Kaur, as reproduced in the SEC 2024 deferred paper.",
+      "reason": "Paper PDF6 prints the introduction (an extract from ‘milk and honey’ by the Indian-Canadian poet Rupi Kaur), the whole extract and the byline above both questions; visually verified.",
+      "questionSha256": "61660d353e35a1030c8887f2244d3964fb888367649b6de39af0db00d55f9971"
+    },
+    "english-2024-hl-deferred-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Extract from milk and honey",
+      "pages": [
+        6
+      ],
+      "attribution": "An extract from ‘milk and honey’ — Rupi Kaur, as reproduced in the SEC 2024 deferred paper.",
+      "reason": "Paper PDF6 prints the introduction (an extract from ‘milk and honey’ by the Indian-Canadian poet Rupi Kaur), the whole extract and the byline above both questions; visually verified.",
+      "questionSha256": "1ec29f8f5b0d95c78571c3e421a75a4e1c1a6535ec05b451c7d35ac0bf4952a6"
+    },
+    "english-2024-hl-deferred-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Extract from milk and honey",
+      "pages": [
+        6
+      ],
+      "attribution": "An extract from ‘milk and honey’ — Rupi Kaur, as reproduced in the SEC 2024 deferred paper.",
+      "reason": "Paper PDF6 prints the introduction (an extract from ‘milk and honey’ by the Indian-Canadian poet Rupi Kaur), the whole extract and the byline above both questions; visually verified.",
+      "questionSha256": "2ad3950332bd330ef893c85ebca6c83279238bffbd6a68bb36313b2387516fd1"
+    },
     "english-2025-hl-deferred-p1-t1-a-i": {
       "kind": "source-text",
       "label": "TEXT 1",
@@ -5689,18 +5848,6 @@
       "attribution": "Oein DeBhairduin — an edited adaptation of his introduction to Why the Moon Travels, his collection of Traveller stories (Skein Press, 2020), with the book’s cover, illustrated by Leanne McDonagh (PDF2–3). As reproduced in the SEC 2025 deferred paper.",
       "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
       "questionSha256": "052966cf07f2a7f4f28888d34f4cadcdc25233e1bcbc2c2609e9f34473715185"
-    },
-    "english-2025-hl-deferred-p1-t1-a-iii": {
-      "kind": "source-text",
-      "label": "TEXT 1",
-      "title": "Stories from the Irish Traveller Community",
-      "pages": [
-        2,
-        3
-      ],
-      "attribution": "Oein DeBhairduin — an edited adaptation of his introduction to Why the Moon Travels, his collection of Traveller stories (Skein Press, 2020), with the book’s cover, illustrated by Leanne McDonagh (PDF2–3). As reproduced in the SEC 2025 deferred paper.",
-      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
-      "questionSha256": "096bc78660a9e2dc6e13c28dc97a2d3ee6378cf130856c99f6bc752019d17a2b"
     },
     "english-2025-hl-deferred-p1-t1-a-ii": {
       "kind": "not-required",
@@ -5716,6 +5863,18 @@
       "questionSha256": "71a2ae88f033ae04c871133a0fe75a30395759f06dcd13899edd0a9b389d31d5",
       "reason": "Self-contained: the impact on the candidate’s own life of at least one community they belong to. Scheme PDF5 assesses the candidate’s own evaluation (“Allow a broad interpretation of ‘communities’”) and never refers to TEXT 1. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
     },
+    "english-2025-hl-deferred-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Stories from the Irish Traveller Community",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Oein DeBhairduin — an edited adaptation of his introduction to Why the Moon Travels, his collection of Traveller stories (Skein Press, 2020), with the book’s cover, illustrated by Leanne McDonagh (PDF2–3). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "096bc78660a9e2dc6e13c28dc97a2d3ee6378cf130856c99f6bc752019d17a2b"
+    },
     "english-2025-hl-deferred-p1-t2-a-i": {
       "kind": "source-text",
       "label": "TEXT 2",
@@ -5727,18 +5886,6 @@
       "attribution": "John Lanchester — edited extracts from his dystopian novel The Wall (Faber & Faber, 2019), with the book’s cover and two printed notes (PDF4–5). As reproduced in the SEC 2025 deferred paper.",
       "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
       "questionSha256": "46bf88bbb7d6b1ccab9744d65c44a6baf8a2df02f67e7224254ebc448ed03aa1"
-    },
-    "english-2025-hl-deferred-p1-t2-a-iii": {
-      "kind": "source-text",
-      "label": "TEXT 2",
-      "title": "The Community on the Wall",
-      "pages": [
-        4,
-        5
-      ],
-      "attribution": "John Lanchester — edited extracts from his dystopian novel The Wall (Faber & Faber, 2019), with the book’s cover and two printed notes (PDF4–5). As reproduced in the SEC 2025 deferred paper.",
-      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
-      "questionSha256": "22cd1b40791ccbae57531cc7aeffd312dbc6f9da038ecf4c92fc4bf8f48c4759"
     },
     "english-2025-hl-deferred-p1-t2-a-ii": {
       "kind": "not-required",
@@ -5754,6 +5901,18 @@
       "questionSha256": "71a2ae88f033ae04c871133a0fe75a30395759f06dcd13899edd0a9b389d31d5",
       "reason": "Self-contained: the impact on the candidate’s own life of at least one community they belong to. Scheme PDF7 assesses the candidate’s own evaluation (“Allow a broad interpretation of ‘communities’”) and never refers to TEXT 2. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
     },
+    "english-2025-hl-deferred-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Community on the Wall",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "John Lanchester — edited extracts from his dystopian novel The Wall (Faber & Faber, 2019), with the book’s cover and two printed notes (PDF4–5). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "22cd1b40791ccbae57531cc7aeffd312dbc6f9da038ecf4c92fc4bf8f48c4759"
+    },
     "english-2025-hl-deferred-p1-t3-a-i": {
       "kind": "source-text",
       "label": "TEXT 3",
@@ -5765,18 +5924,6 @@
       "attribution": "President Michael D. Higgins — edited extracts from his speech at a garden party at Áras an Uachtaráin celebrating community groups and activists, with a photograph from the event (PDF6–7). As reproduced in the SEC 2025 deferred paper.",
       "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
       "questionSha256": "9a1a6dbdda99a81c708030e3dbb56f0db80775cd746e07e23a5db6277de4620a"
-    },
-    "english-2025-hl-deferred-p1-t3-a-iii": {
-      "kind": "source-text",
-      "label": "TEXT 3",
-      "title": "Communities in All Their Diversity",
-      "pages": [
-        6,
-        7
-      ],
-      "attribution": "President Michael D. Higgins — edited extracts from his speech at a garden party at Áras an Uachtaráin celebrating community groups and activists, with a photograph from the event (PDF6–7). As reproduced in the SEC 2025 deferred paper.",
-      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
-      "questionSha256": "d4b06c34ed6d66e4d2a6b46fcfb7b8ff3cdf9665cf06a100eba8a495b93e3bd0"
     },
     "english-2025-hl-deferred-p1-t3-a-ii": {
       "kind": "not-required",
@@ -5791,6 +5938,30 @@
       "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
       "questionSha256": "71a2ae88f033ae04c871133a0fe75a30395759f06dcd13899edd0a9b389d31d5",
       "reason": "Self-contained: the impact on the candidate’s own life of at least one community they belong to. Scheme PDF10 assesses the candidate’s own evaluation (“Allow a broad interpretation of ‘communities’”) and never refers to TEXT 3. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2025-hl-deferred-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Communities in All Their Diversity",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "President Michael D. Higgins — edited extracts from his speech at a garden party at Áras an Uachtaráin celebrating community groups and activists, with a photograph from the event (PDF6–7). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "d4b06c34ed6d66e4d2a6b46fcfb7b8ff3cdf9665cf06a100eba8a495b93e3bd0"
+    },
+    "english-2025-hl-deferred-p1-t3-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Communities in All Their Diversity",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "President Michael D. Higgins — edited extracts from his speech at a garden party at Áras an Uachtaráin celebrating community groups and activists, with a photograph from the event (PDF6–7). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "The task responds to “at least two of the observations made by the President during the course of his speech” (scheme PDF12), so the speech is needed to answer faithfully: TEXT 3 as printed on PDF6–7, introduction and photograph included.",
+      "questionSha256": "f515dd52d0f33982be65e47be843047a4b1491029ecec555a0e176a57ed14a29"
     },
     "english-2025-hl-deferred-p2-unseen-q1-a": {
       "kind": "source-text",

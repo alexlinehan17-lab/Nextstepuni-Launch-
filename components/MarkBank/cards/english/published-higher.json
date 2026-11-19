@@ -81,6 +81,17 @@
    "schemeSha256": "470ddca344cc7b0941cf6e10f4d1e1a13e27db7ca6b58501d6997a8289b5a82b"
   },
   {
+   "paperId": "english-2024-hl-deferred-p1",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "tasks": 19,
+   "cards": 17,
+   "printedDuplicates": 2,
+   "paperSha256": "951efae4c8cd26dd37d98cb4f4b3415d683d567500b8bd3f30ea8f72b2414f6a",
+   "schemeSha256": "9df406094c42ada9f3b641d48a4fd4e5c4c14b1172778bc1d2d9b6c19285a0fb"
+  },
+  {
    "paperId": "english-2024-hl-p2",
    "year": 2024,
    "level": "higher",
@@ -90,6 +101,17 @@
    "printedDuplicates": 0,
    "paperSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712",
    "schemeSha256": "470ddca344cc7b0941cf6e10f4d1e1a13e27db7ca6b58501d6997a8289b5a82b"
+  },
+  {
+   "paperId": "english-2024-hl-deferred-p2",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "tasks": 27,
+   "cards": 27,
+   "printedDuplicates": 0,
+   "paperSha256": "4ef1663d1f4ccc88038f2705fc3b59d71fe885a576118ce3423006089a71f6b6",
+   "schemeSha256": "9df406094c42ada9f3b641d48a4fd4e5c4c14b1172778bc1d2d9b6c19285a0fb"
   },
   {
    "paperId": "english-2023-hl-p1",
@@ -1147,6 +1169,16 @@
     },
     "capRulePage": 3
    },
+   "2024-higher-deferred": {
+    "family": "hl-h1-h8",
+    "gridPages": [
+     39
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2025-higher": {
     "family": "hl-h1-h8",
     "gridPages": [
@@ -1427,7 +1459,7 @@
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 782,
+ "cardCount": 826,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -4179,8 +4211,20 @@
    "conceptId": "english-functional-writing",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Communities in All Their Diversity",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "President Michael D. Higgins — edited extracts from his speech at a garden party at Áras an Uachtaráin celebrating community groups and activists, with a photograph from the event (PDF6–7). As reproduced in the SEC 2025 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
    "schemePages": [
     12
    ],
@@ -6989,6 +7033,639 @@
    }
   },
   {
+   "id": "english-2024-hl-deferred-p1-t1-a-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 1 QA(i) — Deferred sitting",
+   "questionText": "Based on your reading of TEXT 1, explain three insights you gained into the character of Lucrezia de’ Medici. Support your explanation with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "The Thrill of the Tigress",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Maggie O’Farrell — edited extracts adapted from her novel The Marriage Portrait (Tinder Press, 2022), with a photograph of a tigress (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-t1-a-ii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 1 QA(ii) — Deferred sitting",
+   "questionText": "The theme of this examination paper is “Thrilling Experiences”. Explain what you believe are some of the characteristics of a truly thrilling experience. Support your explanation with reference to one experience that you found truly thrilling. Your example may be drawn from real-life or from any novel, play or film. In your response you may not refer to any of the texts that appear in this examination paper.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "8"
+   },
+   "atlasPlacements": [
+    {
+     "fileid": "LC002ALP100EV-deferred.pdf",
+     "n": "10"
+    },
+    {
+     "fileid": "LC002ALP100EV-deferred.pdf",
+     "n": "12"
+    }
+   ]
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-t1-a-iii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 1 QA(iii) — Deferred sitting",
+   "questionText": "Identify four stylistic elements, evident in TEXT 1, and discuss how these stylistic elements enable the writer to effectively convey the dramatic and moving nature of Lucrezia’s encounter with the tigress. Support your answer with reference to the text.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "The Thrill of the Tigress",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Maggie O’Farrell — edited extracts adapted from her novel The Marriage Portrait (Tinder Press, 2022), with a photograph of a tigress (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-t1-b",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 1 QB — Deferred sitting",
+   "questionText": "You are the director of a short film based on the extract from Maggie O’Farrell’s novel, The Marriage Proposal, that appears in TEXT 1. Your film has been chosen for screening at a film festival and you have been asked to submit a note about the film for inclusion in the festival programme. Write the note you would submit in which you: indicate the title of the film you have made and explain why this title was chosen, discuss the aspects of the extract that, in your opinion, made it suitable for film-making and describe the thrill of working with a real tigress.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "The Thrill of the Tigress",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Maggie O’Farrell — edited extracts adapted from her novel The Marriage Portrait (Tinder Press, 2022), with a photograph of a tigress (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-t2-a-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 2 QA(i) — Deferred sitting",
+   "questionText": "Based on your reading of TEXT 2, explain three insights you gained into the personality of Duncan Hamilton. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The Thrill of the Game",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Duncan Hamilton — edited extracts adapted from the prologue of his book Going to the Match (Cornet, 2018), with L.S. Lowry’s painting Going to the Match (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-t2-a-iii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 2 QA(iii) — Deferred sitting",
+   "questionText": "Identify four stylistic elements, evident in Text 2, and discuss how these stylistic elements enable the writer to create an engaging and evocative celebration of the game of football. Support your answer with reference to the text.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The Thrill of the Game",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Duncan Hamilton — edited extracts adapted from the prologue of his book Going to the Match (Cornet, 2018), with L.S. Lowry’s painting Going to the Match (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-t2-b",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 2 QB — Deferred sitting",
+   "questionText": "In TEXT 2, Duncan Hamilton shares some of his experiences as a football fan. You have been asked to present the first episode in a podcast series entitled “FAN-tastic”, which explores the phenomenon of contemporary fandom in areas such as sport and music. Write the text for the podcast, which may be serious or humorous or both, in which you: introduce the concept of contemporary fandom, explore the positive aspects of being a fan and consider some of the disturbing consequences of extreme fandom.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-t3-a-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 3 QA(i) — Deferred sitting",
+   "questionText": "Based on your reading of TEXT 3, explain three insights you gained into the personality of Seamus Heaney. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "The Thrill of Story",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Seamus Heaney — edited extracts adapted from the opening of his Nobel Prize lecture, delivered in Stockholm in 1995, with a photograph of him delivering it (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    11
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-t3-a-iii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 3 QA(iii) — Deferred sitting",
+   "questionText": "Identify four stylistic elements, evident in TEXT 3, and discuss how these stylistic elements would have helped to make Seamus Heaney’s lecture both accessible and captivating for his listeners. Support your answer with reference to the text.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "The Thrill of Story",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Seamus Heaney — edited extracts adapted from the opening of his Nobel Prize lecture, delivered in Stockholm in 1995, with a photograph of him delivering it (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    12
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-t3-b",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 3 QB — Deferred sitting",
+   "questionText": "The family wireless (i.e. radio) played an important part in opening up the world to Seamus Heaney in his youth. Your local radio station has been threatened with closure due to a combination of falling listenership and rising costs. Write an opinion piece, for publication in your local newspaper, in which you: argue that having its own radio station is essential to the life of the local community, give your views on what could be done to increase the station's listenership and explain why, in your opinion, local organisations and businesses must do more to support this important community asset.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-composing-1",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Composing 1 — Deferred sitting",
+   "questionText": "In TEXT 3, Seamus Heaney permits himself the luxury of walking on air. Write a personal essay in which you reflect on some of the moments in your life when you felt you were “walking on air”, and consider what those moments mean to you now.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-composing-2",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Composing 2 — Deferred sitting",
+   "questionText": "In TEXT 2, the writer explains how L.S Lowry ennobles the ordinary and the mundane in his painting, Going to the Match. Write a feature article that explores and celebrates the joy that can be found in the more mundane and ordinary aspects of life. The article should be suitable for publication in the magazine section of a weekend newspaper.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested feature article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    3,
+    14,
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-composing-3",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Composing 3 — Deferred sitting",
+   "questionText": "In TEXT 2, the writer observes that “major things can start in minor moments”. Write a short story in which a minor moment or event precipitates a major development in the life of a central character.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    3,
+    14,
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-composing-4",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Composing 4 — Deferred sitting",
+   "questionText": "In TEXT 3, we read an extract from the Nobel Prize Lecture delivered by Seamus Heaney in 1995. Nobel Prizes are currently awarded for Physics, Chemistry, Physiology or Medicine, Literature, Economics and Peace. Write a discursive essay in which you consider arguments both for and against awarding an additional Nobel Prize, or prizes, in one or more of the following areas: Sport, Music, Art.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-discursive",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested discursive essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-composing-5",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Composing 5 — Deferred sitting",
+   "questionText": "The theme of this examination paper, “Thrilling Experiences”, is vividly conveyed in Text 1 when Maggie O’Farrell writes of Lucrezia, “She barely breathed; she didn’t blink.” Write a gripping short story, based on a thrilling experience, which includes the words: “She barely breathed; she didn’t blink”.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-composing-6",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Composing 6 — Deferred sitting",
+   "questionText": "In TEXT 1, the tigress has been denied her fundamental right to freedom. Write a personal essay in which you identify some of the rights that you consider to be fundamental to your life and reflect on how your life would be impacted if these rights were denied.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p1-composing-7",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Composing 7 — Deferred sitting",
+   "questionText": "In TEXT 1, we read that Lucrezia had never seen anything as beautiful as the tigress she encounters in her father’s private zoo. Write a speech, to be delivered at the final of a national public speaking competition, on the necessity of having beauty in our lives.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested speech.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP100EV-deferred.pdf",
+    "n": "7"
+   }
+  },
+  {
    "id": "english-2024-hl-p2-single-a-i",
    "year": 2024,
    "level": "higher",
@@ -7892,6 +8569,930 @@
    "atlas": {
     "fileid": "LC002ALP200EV.pdf",
     "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-single-a-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text A(i) — Deferred sitting",
+   "questionText": "Doerr’s depiction of humanity in his novel, All the Light We Cannot See, is unconvincing and largely discouraging. To what extent do you agree with this statement? Develop your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    3,
+    20,
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-single-a-ii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text A(ii) — Deferred sitting",
+   "questionText": "Doerr’s utilisation of setting in his novel, All the Light We Cannot See, is central to his shaping of an engaging narrative. Discuss this statement, developing your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-single-b-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text B(i) — Deferred sitting",
+   "questionText": "Miller’s depiction of humanity in his play, The Crucible, is unconvincing and largely discouraging. To what extent do you agree with this statement? Develop your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-single-b-ii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text B(ii) — Deferred sitting",
+   "questionText": "Miller utilises a range of dramatic techniques effectively, to investigate central human questions about life in his play, The Crucible. Discuss this statement developing your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-single-c-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text C(i) — Deferred sitting",
+   "questionText": "Shakespeare’s depiction of humanity in his play, Hamlet, is unconvincing and largely discouraging. To what extent do you agree with this statement? Develop your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-single-c-ii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text C(ii) — Deferred sitting",
+   "questionText": "Shakespeare utilises a range of dramatic techniques effectively, to investigate central questions about life in his play, Hamlet. Discuss this statement developing your response with reference to Shakespeare’s play, Hamlet.",
+   "totalMarks": 60,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-single-d-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text D(i) — Deferred sitting",
+   "questionText": "Shelley’s depiction of humans and monsters in her novel, Frankenstein, is unconvincing and largely discouraging. To what extent do you agree with this statement? Develop your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    3,
+    20,
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-single-d-ii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text D(ii) — Deferred sitting",
+   "questionText": "Shelley’s utilisation of setting in her novel, Frankenstein, is central to her shaping of an engaging narrative. Discuss this statement, developing your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    3,
+    20,
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-single-e-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text E(i) — Deferred sitting",
+   "questionText": "Wilde’s depiction of humanity in his novel, The Picture of Dorian Gray, is unconvincing and largely discouraging. To what extent do you agree with this statement? Develop your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-single-e-ii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text E(ii) — Deferred sitting",
+   "questionText": "Wilde’s utilisation of a variety of places in London in his novel, The Picture of Dorian Gray, is central to his shaping of an engaging narrative. Discuss this statement, developing your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    3,
+    20,
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-comparative-a-q1-a",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative A Q1(a) — Deferred sitting",
+   "questionText": "In the case of one text on your comparative course, discuss how the author uses a variety of literary techniques to intensify the tone or atmosphere in that text. Develop your discussion with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Literary Genre · Q1",
+   "schemePages": [
+    3,
+    27,
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-comparative-a-q1-b",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative A Q1(b) — Deferred sitting",
+   "questionText": "In the case of two other texts on your comparative course compare how each of the authors of these texts use at least one literary technique to intensify the mood or atmosphere in these texts. Develop your response with reference to your chosen texts. You may refer to the same or different literary techniques in relation to each of your chosen texts. You may refer to the same or different literary techniques to those you discussed in part (a) above.",
+   "totalMarks": 40,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Literary Genre · Q1",
+   "schemePages": [
+    3,
+    27,
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-comparative-a-q2",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative A Q2 — Deferred sitting",
+   "questionText": "In the case of at least two texts on your comparative course, compare how the authors of these texts employed one or more literary technique(s) to influence how you view a significant relationship in each of these texts. You may refer to the same technique or different techniques in each of your chosen texts. Develop your response with reference to the texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Literary Genre · Q2",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-comparative-b-q1-a",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative B Q1(a) — Deferred sitting",
+   "questionText": "Identify a theme or issue from one text on your comparative course. To what extent was what you learned from the author’s exploration of this theme or issue original or innovative? Develop your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme or Issue · Q1",
+   "schemePages": [
+    3,
+    27,
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-comparative-b-q1-b",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative B Q1(b) — Deferred sitting",
+   "questionText": "In the case of two other texts on your comparative course, compare the extent to which what you learned from the authors’ exploration of the same theme or issue, dealt with in part (a) above, was original or innovative. Develop your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme or Issue · Q1",
+   "schemePages": [
+    3,
+    27,
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-comparative-b-q2",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative B Q2 — Deferred sitting",
+   "questionText": "In the case of at least two texts on your comparative course, compare the extent to which, in your opinion, the treatment of a theme or issue by the authors of these texts, had a long-lasting impact on you as a reader. Develop your response with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme or Issue · Q2",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-comparative-c-q1-a",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative C Q1(a) — Deferred sitting",
+   "questionText": "In the case of one text on your comparative course, explain how your exploration of an aspect of the cultural context allowed you to gain at least one insight into the human condition. Develop your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Cultural Context · Q1",
+   "schemePages": [
+    3,
+    27,
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-comparative-c-q1-b",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative C Q1(b) — Deferred sitting",
+   "questionText": "In the case of two other texts on your comparative course, compare the extent to which your exploration of an aspect of the cultural context in each of these texts allowed you to gain at least one insight into the human condition. Develop your response with reference to your chosen texts. You may refer to the same or different aspects of cultural context in relation to each of your chosen texts. You may refer to the same or a different aspect of cultural context to the one discussed in part (a) above.",
+   "totalMarks": 40,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Cultural Context · Q1",
+   "schemePages": [
+    3,
+    27,
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-comparative-c-q2",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative C Q2 — Deferred sitting",
+   "questionText": "In the case of at least two texts on your comparative course, compare the extent to which the dominant values held by characters in these texts shaped the cultural context evident in your chosen texts. Develop your response with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Cultural Context · Q2",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-unseen-q1-a",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Unseen Poetry Q1(a) — Deferred sitting",
+   "questionText": "In your opinion, what message is the poet trying to convey in this poem? Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Extract from milk and honey",
+    "pages": [
+     6
+    ],
+    "attribution": "An extract from ‘milk and honey’ — Rupi Kaur, as reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-unseen-q1-b",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Unseen Poetry Q1(b) — Deferred sitting",
+   "questionText": "Identify and discuss your understanding of any two of the metaphors employed by the poet in this poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Extract from milk and honey",
+    "pages": [
+     6
+    ],
+    "attribution": "An extract from ‘milk and honey’ — Rupi Kaur, as reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-unseen-q2",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Unseen Poetry Q2 — Deferred sitting",
+   "questionText": "Rupi Kaur often performs as a spoken-word poet. Explain the aspects of the above poem that, in your opinion, make it suitable or unsuitable for public performance. Develop your response with reference to both the content and language of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q2",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Extract from milk and honey",
+    "pages": [
+     6
+    ],
+    "attribution": "An extract from ‘milk and honey’ — Rupi Kaur, as reproduced in the SEC 2024 deferred paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher-deferred"
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-prescribed-1",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Prescribed Poetry Q1 — Deferred sitting",
+   "questionText": "“The tensions apparent in the poetry of Yeats are addressed with emotional honesty.” Discuss this statement with reference to both the themes and language found in the poetry by W. B. Yeats on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-23",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "W.B. Yeats",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-prescribed-2",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Prescribed Poetry Q2 — Deferred sitting",
+   "questionText": "“Plath’s work displays realism and resilience through powerful, provocative imagery.” To what extent do you agree with the above statement? Develop your discussion with reference to both the themes and imagery found in the poetry by Sylvia Plath on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sylvia Plath",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "20"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-prescribed-3",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Prescribed Poetry Q3 — Deferred sitting",
+   "questionText": "“Heaney’s poetry reaches profound insights through the evocative exploration of the past and the present.” Discuss this statement. Develop your discussion with reference to both the themes and language found in the poetry by Seamus Heaney on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-8",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Seamus Heaney",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "21"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-prescribed-4",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Prescribed Poetry Q4 — Deferred sitting",
+   "questionText": "“In her work, Meehan’s compelling poetic voice simultaneously celebrates and questions her world.” Discuss this statement. Develop your discussion with reference to both the themes and language found in the poetry by Paula Meehan on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Paula Meehan",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "22"
+   }
+  },
+  {
+   "id": "english-2024-hl-deferred-p2-prescribed-5",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Prescribed Poetry Q5 — Deferred sitting",
+   "questionText": "“Hopkins’ poetry explores aspects of spirituality using language in a highly sophisticated and innovative way.” Discuss this statement with reference to both the themes and language found in the poetry by Gerard Manley Hopkins on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Gerard Manley Hopkins",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher-deferred",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV-deferred",
+   "atlas": {
+    "fileid": "LC002ALP200EV-deferred.pdf",
+    "n": "23"
    }
   },
   {
