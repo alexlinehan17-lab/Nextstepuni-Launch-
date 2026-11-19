@@ -362,6 +362,41 @@
   ],
   "year": 2017
  },
+ "audio/2017/LC099ZLP017EV.mp3": {
+  "bitRate": 33501,
+  "bytes": 11016899,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC099ZLP017EV.mp3",
+  "durationSeconds": 2630.426122,
+  "fileType": "MPG3",
+  "format": "2 ch,  22050 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 576 frames/packet, 0 bytes/frame",
+  "md5": "zo3ckmVDrqjpNCt5cdzc2w==",
+  "path": "audio/2017/LC099ZLP017EV.mp3",
+  "priorVerification": [
+   "~/Documents/NextStepUni-MarkBank-Lanes-20261104/codex-continuation-20261106/audio-discovery/russian-recordings.json"
+  ],
+  "secFileid": "LC099ZLP017EV.mp3",
+  "sha256": "8208eac00fdda18dc02454324da2fec119a732699c3d3b10f17a5163230773e0",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/2017-ol/LC099ZLP017EV.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "R7QiHw==",
+   "generation": "1795088938909202",
+   "md5Hash": "zo3ckmVDrqjpNCt5cdzc2w==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2017/LC099ZLP017EV.mp3",
+   "sha256Metadata": "8208eac00fdda18dc02454324da2fec119a732699c3d3b10f17a5163230773e0",
+   "size": 11016899,
+   "uploadedAt": "2026-11-19T11:48:59+00:00"
+  },
+  "subjects": [
+   "russian"
+  ],
+  "year": 2017
+ },
  "audio/2018/LC010ZLP017EV.mp3": {
   "bitRate": 256000,
   "bytes": 71155346,
@@ -642,6 +677,76 @@
   ],
   "year": 2025
  },
+ "audio/2025/LC058ZLP017BV.mp3": {
+  "bitRate": 256000,
+  "bytes": 76716460,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+  "durationSeconds": 2397.389375,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "yr7AKqt2YcD6IIXqJpBAHQ==",
+  "path": "audio/2025/LC058ZLP017BV.mp3",
+  "priorVerification": [
+   "~/Documents/NextStepUni-MarkBank-Lanes-20261104/codex-continuation-20261106/audio-discovery/japanese-recordings.json"
+  ],
+  "secFileid": "LC058ZLP017BV.mp3",
+  "sha256": "cc46424b50967be4358c84a0ff0285c21f34ef826cf892a4dca6cbc330870883",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/NextStepUni-MarkBank-Lanes-20261104/codex-continuation-20261106/audio-discovery/japanese-2025.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "PbwPYA==",
+   "generation": "1795088947669063",
+   "md5Hash": "yr7AKqt2YcD6IIXqJpBAHQ==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2025/LC058ZLP017BV.mp3",
+   "sha256Metadata": "cc46424b50967be4358c84a0ff0285c21f34ef826cf892a4dca6cbc330870883",
+   "size": 76716460,
+   "uploadedAt": "2026-11-19T11:49:08+00:00"
+  },
+  "subjects": [
+   "japanese"
+  ],
+  "year": 2025
+ },
+ "audio/2025/LC099ZLP017BV.mp3": {
+  "bitRate": 256000,
+  "bytes": 73724655,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC099ZLP017BV.mp3",
+  "durationSeconds": 2303.895469,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "Exz2yQxTn1oW4wfpAvWbGg==",
+  "path": "audio/2025/LC099ZLP017BV.mp3",
+  "priorVerification": [
+   "~/Documents/NextStepUni-MarkBank-Lanes-20261104/codex-continuation-20261106/audio-discovery/russian-recordings.json"
+  ],
+  "secFileid": "LC099ZLP017BV.mp3",
+  "sha256": "d66499c02e3783aa61ca567864c5b9e9ce1f45b255e8f3e505621c2ab7985175",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/NextStepUni-MarkBank-Lanes-20261104/codex-continuation-20261106/audio-discovery/russian-2025.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "DgUIPw==",
+   "generation": "1795088955374129",
+   "md5Hash": "Exz2yQxTn1oW4wfpAvWbGg==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2025/LC099ZLP017BV.mp3",
+   "sha256Metadata": "d66499c02e3783aa61ca567864c5b9e9ce1f45b255e8f3e505621c2ab7985175",
+   "size": 73724655,
+   "uploadedAt": "2026-11-19T11:49:16+00:00"
+  },
+  "subjects": [
+   "russian"
+  ],
+  "year": 2025
+ },
  "audio/2026/LC010CLP017EV.mp3": {
   "bitRate": 256000,
   "bytes": 78597715,
@@ -674,6 +779,111 @@
   },
   "subjects": [
    "french"
+  ],
+  "year": 2026
+ },
+ "audio/2026/LC013ZLP017BV.mp3": {
+  "bitRate": 256000,
+  "bytes": 78364750,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC013ZLP017BV.mp3",
+  "durationSeconds": 2448.898438,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "Bwb+xe4j+He0XrrOzw/6hg==",
+  "path": "audio/2026/LC013ZLP017BV.mp3",
+  "priorVerification": [
+   "~/Documents/Nextstepuni-Classics-Lane-20261118/data/italianAudio.json"
+  ],
+  "secFileid": "LC013ZLP017BV.mp3",
+  "sha256": "7b022b3a563f382a113ff6be786d0881b468be447d263f424b8117267e3d9ccc",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/Nextstepuni-Japanese-Continuation-20261106/tmp/italian-review/audio/2026-LC013ZLP017BV.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=86400",
+   "contentType": "audio/mpeg",
+   "crc32c": "lE21mg==",
+   "generation": "1795088963974848",
+   "md5Hash": "Bwb+xe4j+He0XrrOzw/6hg==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2026/LC013ZLP017BV.mp3",
+   "sha256Metadata": "7b022b3a563f382a113ff6be786d0881b468be447d263f424b8117267e3d9ccc",
+   "size": 78364750,
+   "uploadedAt": "2026-11-19T11:49:24+00:00"
+  },
+  "subjects": [
+   "italian"
+  ],
+  "year": 2026
+ },
+ "audio/2026/LC058ZLP017BV.mp3": {
+  "bitRate": 256000,
+  "bytes": 76303135,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC058ZLP017BV.mp3",
+  "durationSeconds": 2384.472969,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "/Oid+ykpA0iGVRU7OeaUMg==",
+  "path": "audio/2026/LC058ZLP017BV.mp3",
+  "priorVerification": [
+   "~/Documents/NextStepUni-MarkBank-Lanes-20261104/codex-continuation-20261106/audio-discovery/japanese-recordings.json"
+  ],
+  "secFileid": "LC058ZLP017BV.mp3",
+  "sha256": "3467f537fdd5781dede6cba307f61d078d46fdcdf4932fd661fabb4c777aa081",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/NextStepUni-MarkBank-Lanes-20261104/codex-continuation-20261106/audio-discovery/japanese-2026.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=86400",
+   "contentType": "audio/mpeg",
+   "crc32c": "6POXTg==",
+   "generation": "1795088971887212",
+   "md5Hash": "/Oid+ykpA0iGVRU7OeaUMg==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2026/LC058ZLP017BV.mp3",
+   "sha256Metadata": "3467f537fdd5781dede6cba307f61d078d46fdcdf4932fd661fabb4c777aa081",
+   "size": 76303135,
+   "uploadedAt": "2026-11-19T11:49:32+00:00"
+  },
+  "subjects": [
+   "japanese"
+  ],
+  "year": 2026
+ },
+ "audio/2026/LC099ZLP017BV.mp3": {
+  "bitRate": 256000,
+  "bytes": 71429240,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC099ZLP017BV.mp3",
+  "durationSeconds": 2232.16375,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "4iE/tol8+XhTtAGXIm8qEw==",
+  "path": "audio/2026/LC099ZLP017BV.mp3",
+  "priorVerification": [
+   "~/Documents/NextStepUni-MarkBank-Lanes-20261104/codex-continuation-20261106/audio-discovery/russian-recordings.json"
+  ],
+  "secFileid": "LC099ZLP017BV.mp3",
+  "sha256": "5911a9caea0c00c97a466fc3b9c5d2c086b24946af60f7eb8c4782df5b219f52",
+  "sitting": "june",
+  "source": {
+   "localCopy": "~/Documents/NextStepUni-MarkBank-Lanes-20261104/codex-continuation-20261106/audio-discovery/russian-2026.mp3",
+   "via": "copy already on this Mac from an earlier fetch of the SEC archive; sha256 matched that fetch's fingerprint"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=86400",
+   "contentType": "audio/mpeg",
+   "crc32c": "d2V9GA==",
+   "generation": "1795088979442854",
+   "md5Hash": "4iE/tol8+XhTtAGXIm8qEw==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2026/LC099ZLP017BV.mp3",
+   "sha256Metadata": "5911a9caea0c00c97a466fc3b9c5d2c086b24946af60f7eb8c4782df5b219f52",
+   "size": 71429240,
+   "uploadedAt": "2026-11-19T11:49:40+00:00"
+  },
+  "subjects": [
+   "russian"
   ],
   "year": 2026
  }
