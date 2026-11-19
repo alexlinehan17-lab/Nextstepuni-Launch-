@@ -27,7 +27,7 @@ import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { resolvePaperFileid, resolveIndexedPaperFileid, resolveCompanionFileid, corpusSubjectFor, paperEntry, deferredPaperEntry } from './paperIndex.mjs';
-import { normalise, comparableScheme, comparableSchemeWithCells, claimMatches, rangeLabelFault } from './schemeText.mjs';
+import { normalise, comparableScheme, comparableSchemeWithCells, comparableSchemeWithoutRangeLines, claimMatches, rangeLabelFault } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
 import { questionStandsAlone } from './questionText.mjs';
@@ -782,7 +782,7 @@ const bandNameTraces = (scheme, label) => {
   const esc = w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   return new RegExp(words.map(esc).join('[0-9]*')).test(scheme);
 };
-function spanishGridFault(c, scheme, schemeCells = '') {
+function spanishGridFault(c, scheme, schemeCells = '', schemeRanges = '') {
   const r = c.rubric;
   if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German, Music, Polish, Italian or Portuguese marking grid';
   if (r.allocation || r.answerGuide) return 'a marking grid carries no answer rows';
@@ -860,11 +860,14 @@ function spanishGridFault(c, scheme, schemeCells = '') {
       ...(k.lowerScale ? [k.lowerScale.rule, ...k.lowerScale.bands.flatMap(b => b.guidance)] : [])]),
   ];
   const bandNames = new Set(criteria.flatMap(k => (k.bands ?? []).map(b => b.label)));
-  // A grid line traces in the scheme as compared everywhere, or in its added
-  // form with the marks cells kept (comparableSchemeWithCells: bands named by
-  // their printed range, rung prices, penalties printed only in cells).
+  // A grid line traces in the scheme as compared everywhere, or in one of its
+  // two grid-only added forms (schemeText.mjs ADDED FORMS): the marks cells
+  // kept (bands named by their printed range, rung prices, penalties printed
+  // only in cells), or the band-range lines lifted out (a bullet the range
+  // printed beside it split in two).
   const untraced = lifted.find(text => !String(text).trim()
     || !(claimMatches(scheme, text) || (schemeCells && claimMatches(schemeCells, text))
+      || (schemeRanges && claimMatches(schemeRanges, text))
       || (bandNames.has(text) && bandNameTraces(scheme, text))));
   if (untraced !== undefined) return `a marking line not found in the ${c.year} ${c.level} scheme, "${String(untraced).slice(0, 60)}"`;
   return null;
@@ -926,9 +929,10 @@ const deferredDoc = (subjectId, card, label) => {
 const historyDeferred = (subjectId, card) =>
   subjectId === 'history' && deferredCard(subjectId, card);
 
-/* `cells`: the scheme with its marks cells kept (comparableSchemeWithCells),
- * for the marking-grid gate alone. */
-function schemeFor(subjectId, card, { cells = false } = {}) {
+/* `cells` / `ranges`: the scheme with its marks cells kept, or with its
+ * band-range lines lifted out (schemeText.mjs ADDED FORMS), for the
+ * marking-grid gate alone. */
+function schemeFor(subjectId, card, { cells = false, ranges = false } = {}) {
   // A deferred Link Modules card reads the transcript of its own reviewed
   // archive scheme, never June's.
   const lcvpSource = subjectId === 'lcvp' ? reviewedLcvpSource(card) : undefined;
@@ -943,10 +947,11 @@ function schemeFor(subjectId, card, { cells = false } = {}) {
   const deferred = deferredCard(subjectId, card);
   const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}${project ? '-project' : deferred ? '-deferred' : ''}`;
   const file = resolve(ROOT, 'examiner-reports', subjectId, 'schemes', `${stem}.md`);
-  const key = cells ? `${file}|cells` : file;
+  const key = cells ? `${file}|cells` : ranges ? `${file}|ranges` : file;
   if (!schemeCache.has(key)) {
     const raw = existsSync(file) ? readFileSync(file, 'utf8') : '';
-    schemeCache.set(key, cells ? comparableSchemeWithCells(raw) : comparableScheme(raw));
+    schemeCache.set(key, cells ? comparableSchemeWithCells(raw)
+      : ranges ? comparableSchemeWithoutRangeLines(raw) : comparableScheme(raw));
   }
   return schemeCache.get(key);
 }
@@ -1786,7 +1791,8 @@ for (const c of cards) {
     if (badQ) { dropped.push(`${c.id}: ${badQ} — "${c.questionText}"`); continue; }
     const scheme = schemeFor(SUBJECT_ID, c);
     if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
-    const fault = spanishGridFault(c, scheme, schemeFor(SUBJECT_ID, c, { cells: true }));
+    const fault = spanishGridFault(c, scheme, schemeFor(SUBJECT_ID, c, { cells: true }),
+      schemeFor(SUBJECT_ID, c, { ranges: true }));
     if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
     const source = c.sourceMaterial;
     if (source?.sourceLabel) {
