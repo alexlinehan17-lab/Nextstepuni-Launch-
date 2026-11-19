@@ -267,8 +267,9 @@ describe('Mark Bank paper-coverage ratchet', () => {
         }
         if (subject === 'geography') {
           // Reviewed sittings cite the printed part: "Q2(ii)(a)", "Q5A(iii)", "Q8A(vii)";
-          // 2017 Ordinary prints four lettered statements under Q4(i), (a)-(d).
-          return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?:\((?:i|ii|iii|iv|v|vi|vii|viii)\))?(?:\([a-d]\))?(?: · .+)?$/.test(ref);
+          // 2017 Ordinary prints four lettered statements under Q4(i), (a)-(d). A deferred sitting's card
+          // (geography_review_<year>_hl_deferred.py) cites the same grammar and says so: "… — Deferred sitting".
+          return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?:\((?:i|ii|iii|iv|v|vi|vii|viii)\))?(?:\([a-d]\))?(?: · .+)?(?: — Deferred sitting)?$/.test(ref);
         }
         // As reconcile.py reads a Mathematics citation: the booklet is pinned by
         // its review, so "(Project Maths)" before the address goes; a deferred

@@ -76,7 +76,8 @@ const pricedProseLines = (deck: unknown, pick: (card: Guided) => string[][]): nu
 describe('answer clarity: priced answers are rows, not prose', () => {
   it('Geography: every structured criterion reconciles and lifts its words from the scheme or the paper', () => {
     const cards = [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY].filter(isRubricCard);
-    expect(cards).toHaveLength(4153);
+    // + the carded deferred sittings (2022 Higher 120).
+    expect(cards).toHaveLength(4153 + 120);
     const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '');
     let criteria = 0;
     let structuredCriteria = 0;
@@ -141,8 +142,9 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // Every criterion structures since the last 45 cards did (2026-10-28):
     // the 2010–2013 Higher 80-mark options (a points table split over two
     // criteria) and 2016 Ordinary Q12C (one line pricing three patterns).
-    expect([criteria, structuredCriteria]).toEqual([7689, 7689]);
-    expect(structured).toHaveLength(4153);
+    // + the carded deferred sittings' criteria (2022 Higher 235).
+    expect([criteria, structuredCriteria]).toEqual([7689 + 235, 7689 + 235]);
+    expect(structured).toHaveLength(4153 + 120);
     expect(fallback.map(card => card.id)).toEqual([]);
 
     // 2010–2013 Higher options print one table for 80 marks: "Number of

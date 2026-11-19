@@ -378,8 +378,13 @@ def reconcile_geography(census):
     covered = set()
     orphans = []
     cards = shipped_cards('geography')
+    deferred = ' — Deferred sitting'
     for cid, ref in cards:
         base_ref = ref.split(' · ', 1)[0]
+        # A deferred route card's reference ends "· <route> — Deferred sitting";
+        # its base task is the printed part's reference with that suffix.
+        if ref.endswith(deferred) and not base_ref.endswith(deferred):
+            base_ref += deferred
         if base_ref not in expected:
             orphans.append({
                 'id': cid, 'ref': ref,

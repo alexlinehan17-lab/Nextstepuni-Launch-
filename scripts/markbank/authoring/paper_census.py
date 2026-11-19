@@ -4229,16 +4229,19 @@ def census_subject(subject):
             raise AssertionError('Geography authored census total is stale')
         papers = []
         for sitting in payload['sittings']:
+            # A deferred sitting (its rows carry "sitting": "deferred") is a
+            # paper of its own beside June's of the same year and level.
             asks = [task for task in tasks
                     if task['year'] == sitting['year']
-                    and task['level'] == sitting['level']]
+                    and task['level'] == sitting['level']
+                    and task.get('sitting') == sitting.get('sitting')]
             if sitting.get('paperBaseTasks') != len(asks):
                 raise AssertionError(
                     f"Geography {sitting['year']} {sitting['level']} "
                     'census count is stale')
             papers.append({
                 'year': sitting['year'], 'level': sitting['level'],
-                'paper': None, 'leafCount': len(asks),
+                'paper': sitting.get('sitting'), 'leafCount': len(asks),
                 'leaves': [{
                     'key': [ask['id']], 'label': ask['questionRef'],
                     'text': ask['title'], 'status': ask['status'],

@@ -220,6 +220,7 @@ const deferredCard = (card: { id?: string; subjectId: string }) =>
   || (card.subjectId === 'german' && /^de-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'english' && /^english-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'biology' && /^bio-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'geography' && /^geography-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'physics' && /^phys-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'home-economics' && /^he-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'maths' && /^maths-\d{4}-(?:hl|ol|fl)-deferred-/.test(card.id ?? ''));
@@ -646,9 +647,9 @@ describe('every card points at the question paper it came from', () => {
           const named = deferred?.papers?.find((p: { label: string }) => p.label === `Deferred · Paper ${c.section === '1' ? 'One' : 'Two'}`);
           return String(named?.doc?.f ?? '').replace(/\.pdf$/, '') !== c.paperFileid;
         }
-        // DCG's and Biology's deferred sittings are two booklets, as June's are:
+        // DCG's, Biology's and Geography's deferred sittings are two booklets, as June's are:
         // a deferred card's paper is the one printing its section, found as June's is.
-        if (deferredCard(c) && (c.subjectId === 'dcg' || c.subjectId === 'biology')) {
+        if (deferredCard(c) && (c.subjectId === 'dcg' || c.subjectId === 'biology' || c.subjectId === 'geography')) {
           return c.paperFileid === null
             || c.paperFileid !== resolvePaperFileid(c.subjectId, c.year, c.level, c.section, 'deferred');
         }
