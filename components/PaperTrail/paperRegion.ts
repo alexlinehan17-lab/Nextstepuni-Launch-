@@ -35,7 +35,11 @@ const MIN_TAIL = 0.03;
 const isPrintedAnchor = (question: PaperAnswerQuestion): boolean =>
   // Agricultural Science's reviewed sub-tasks (parentN) sit inside a retained
   // whole question with their own audited region, like a practice task.
-  !question.parentN && (!question.practiceTask || /^\d+$/.test(question.n));
+  !question.parentN && (!question.practiceTask || /^\d+$/.test(question.n))
+  // A reviewed task route (taskRoute: Russian "c1-2-i", "la1", "se") carries its
+  // own audited region and is not a printed question either: its page reference
+  // must never end a printed question's crop.
+  && !question.taskRoute;
 
 /** The printed question anchors in a sidecar. Treating a split task as an
  *  anchor would end the previous question's crop at the top of the task's

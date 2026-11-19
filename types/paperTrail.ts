@@ -70,6 +70,10 @@ export interface PaperAnswerQuestion {
   label?: string;
   /** A separately marked practice task whose complete context is in the crop. */
   practiceTask?: { prompt: string; focus?: string | null; marks: number };
+  /** A reviewed task route keyed by its own address (Russian "c1-2-i", "la1",
+   *  "se"), practised as its own Mark Bank task, with an explicit audited
+   *  `paperRegion` and a place in `printOrder`. Never a printed-question anchor. */
+  taskRoute?: true;
   /** Optional physical sequence within the paper. `n` is a stable card identity,
    *  so a later repair that recovers previously-colliding section-restart
    *  questions must not renumber shipped cards. In that exceptional case this
