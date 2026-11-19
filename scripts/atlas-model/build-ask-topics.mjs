@@ -26,7 +26,12 @@ try {
     const file = JSON.parse(await readFile(new URL(`../../data/atlasModel/${subjectId}.json`, import.meta.url), 'utf8'));
     const home = atlasSubjectFor(subjectId) ?? subjectId;
     const used = file.groups.map(g => new Set(file.questions.filter(q => q[5].some(([, t]) => t.some(i => g.topics.includes(i)))).map(q => q[0])));
-    const groups = file.groups.map((g, i) => ({ ...g, atlasId: [...used[i]].sort()[0] ?? home }));
+    // A group's label names its level and course in the Atlas's own taxonomy ("Higher Level · New Course · Strand 1:
+    // …"); the level is shown by the screen and there is one course, so the label keeps only the group's own name.
+    const strip = label => label.replace(/^(?:(?:Higher|Ordinary|Common|Foundation) Level|(?:New|Old) Course)(?: · |$)/, '');
+    const levelName = level => (level === 'all' ? 'Topics' : `${level[0].toUpperCase()}${level.slice(1)} Level`);
+    const clean = (label, level) => strip(strip(strip(label))) || levelName(level);
+    const groups = file.groups.map((g, i) => ({ ...g, label: clean(g.label, g.level), atlasId: [...used[i]].sort()[0] ?? home }));
     subjects.push({ subjectId, atlasIds: [...new Set([home, ...groups.map(g => g.atlasId)])], headingSource: file.headingSource, groups, topics: file.topics });
   }
   await writeFile(new URL('../../data/atlasModel/headings.json', import.meta.url), `${JSON.stringify({ v: 1, subjects })}\n`);

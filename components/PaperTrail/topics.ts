@@ -501,8 +501,9 @@ export function strandsFor(subjectId: string, taggedIds: string[]): AtlasStrand[
     for (const group of modelGroups) {
       const ids = group.topics.map(t => t.id).filter(id => tagged.has(id));
       if (!ids.length) continue;
-      const levelWord = group.level === 'all' || !twoLevels ? '' : `${group.level[0].toUpperCase()}${group.level.slice(1)} Level · `;
-      out.push({ id: group.id, name: `${levelWord}${group.label}`, subtopicIds: ids });
+      const level = group.level === 'all' ? '' : `${group.level[0].toUpperCase()}${group.level.slice(1)} Level`;
+      const name = !twoLevels || !level || group.label.startsWith(level) ? group.label : `${level} · ${group.label}`;
+      out.push({ id: group.id, name, subtopicIds: ids });
       for (const id of ids) claimed.add(id);
     }
   } else if (examTaxonomy) {
