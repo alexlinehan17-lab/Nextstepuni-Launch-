@@ -1419,7 +1419,8 @@ const isTechnologyAdded = (id: string) => /^tech-201\d-/.test(id);
  * dialogues LB1-LB3), writing (C), the Higher essays (B3A, B3B), and the reading
  * asks the generator refused (ITALIAN_ADDED_READING). Pinned per level, count
  * and id hash, beside the frozen set (italianAdditions below). */
-const ITALIAN_ADDED_READING = new Set(['it-2025-hl-a-3-b', 'it-2024-hl-b2b-1-a', 'it-2023-hl-a-4-b']);
+const ITALIAN_ADDED_READING = new Set(['it-2025-hl-a-3-b', 'it-2024-hl-b2b-1-a', 'it-2023-hl-a-4-b',
+  'it-2022-hl-a-5', 'it-2021-hl-a-5']);
 const isItalianAdded = (id: string) => /^it-(?:201\d|2020|2026)-/.test(id)
   || /^it-202[1-5]-(?:hl|ol)-(?:la|lb\d|c|b3[ab])-/.test(id)
   || ITALIAN_ADDED_READING.has(id);
@@ -2143,7 +2144,7 @@ const technologyAdditions = {
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
 } as const;
 const italianAdditions = {
-  higher: [ITALIAN_HIGHER, 166, '7ca63c3a01f57805d9fd0dda1af5ae34ee37b27dcd1de4a47eb412f0dce0ce32'],
+  higher: [ITALIAN_HIGHER, 199, '2118fbcefb2043e7925a502a6f2384c1fffffe12acb9576f8ef195950b21233e'],
   ordinary: [ITALIAN_ORDINARY, 148, '06426dc6100abff1cd44178927bae82ebdb466e8398461d637f02e684f4e4724'],
 } as const;
 const dcgAdditions = {
@@ -2250,7 +2251,9 @@ describe('Mark Bank card preservation', () => {
     // writing 4 on 8 asks, essays 4, and A Q4(b), whose answers the scheme
     // prints as one line of slash-cut alternatives at two marks each); 2023
     // Ordinary 28 for the 28 its 36 live cards left out (listening 24 -
-    // Dialogue 3 Q5 carded from the scheme's own line - and writing 4).
+    // Dialogue 3 Q5 carded from the scheme's own line - and writing 4); 2022
+    // Higher 33 for the 37 its 35 live cards left out (A Q5's 'Three of
+    // (5+5+5+5)' carded on its printed total, both conflicting lines quoted).
     const additions = cards.map(card => card.id).filter(isItalianAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);

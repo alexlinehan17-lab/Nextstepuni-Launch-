@@ -36934,5 +36934,3021 @@
    "attribution": "SEC Italian 2023 Ordinary Level examination paper — © State Examinations Commission.",
    "presentationNote": "The task as the examination paper prints it, with the eight sentences to put in order."
   }
+ },
+ {
+  "id": "it-2022-hl-a-5",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "A",
+  "topicId": "italian-5-0",
+  "conceptId": "answer-following-question-english-looking-article",
+  "questionRef": "2022 HL Section A Q5",
+  "questionText": "Answer the following question in English.\nLooking at the article as a whole, outline\nthree reasons why nomadi digitali make\nthis life choice and one advantage Claudia\nhad in choosing this life.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Travel the world how and when suits you/to travel and move around when people feel like the need for it, and be able to discover wonderful places/tropical paradises living your life the way you want/working from home- doing remote working and /not taking holidays",
+    "marks": null,
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints \"Three of (5+5+5+5)\" and the split (5+5+5+5), which do not agree for 20 marks and does not say what one answer is worth: judge your answer against the total. It also accepts, for less: She is a success story 1m; She helps people 1m; She has travelled the world 1m."
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "To be more flexible and have the chance to work everywhere people want/wherever you choose, to have the chance to adapt their job to their ideal lifestyle",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "Promote a social/economic positive effect on the community where one lives/works",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "criterion",
+    "verbatim": "Promote quality of life and allow companies to access/recruit the best candidates wherever they are located.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "criterion",
+    "verbatim": "Work in a place that allows people to be in touch with nature where people can be in the open air for their break/after work as it’s very good for people’s wellbeing/this will reflect positively on people’s energy/clear thinking",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "criterion",
+    "verbatim": "They are interested in working for a long period of time in very nice holiday places/destinations",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "criterion",
+    "verbatim": "She has made/gained out of the ordinary experiences, precious and important life lessons, the chance to have her two children grow in different cultures and environments her two children are citizens of the world/ free from any prejudice",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints the tariff as '20 marks' under 'Three of (5+5+5+5)'; the paper prints this ask on page 3.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION A",
+   "title": "Journalistic passage — answer in English or Irish",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Italian 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+  }
+ },
+ {
+  "id": "it-2022-hl-la-1",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "most-recent-nobel-prize-won-italian",
+  "questionRef": "2022 HL Section LA Q1",
+  "questionText": "The most recent Nobel Prize, won by an Italian, was in\n(a) Chemistry\n(b) Literature\n(c) Peace\n(d) Physics",
+  "questionChoices": [
+   "Chemistry",
+   "Literature",
+   "Peace",
+   "Physics"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Physics",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (d)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 1",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-la-2",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "announcement-asks-passengers-platform",
+  "questionRef": "2022 HL Section LA Q2",
+  "questionText": "The announcement asks passengers to\n(a) buy a new ticket\n(b) change train\n(c) go to platform 2\n(d) wait inside the station",
+  "questionChoices": [
+   "buy a new ticket",
+   "change train",
+   "go to platform 2",
+   "wait inside the station"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "go to platform 2",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (c)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 2",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-la-3",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "festival-entry-free",
+  "questionRef": "2022 HL Section LA Q3",
+  "questionText": "The festival entry is\n(a) 3 euro\n(b) 30 euro\n(c) free\n(d) by invitation only",
+  "questionChoices": [
+   "3 euro",
+   "30 euro",
+   "free",
+   "by invitation only"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "free",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (c)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 3",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-la-4",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "there-will-heavy-rain-north-italy",
+  "questionRef": "2022 HL Section LA Q4",
+  "questionText": "There will be heavy rain in the north of Italy\n(a) at the beginning of the week\n(b) on Wednesday\n(c) at the weekend\n(d) next week",
+  "questionChoices": [
+   "at the beginning of the week",
+   "on Wednesday",
+   "at the weekend",
+   "next week"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "at the beginning of the week",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (a)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 4",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-la-5",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "beauty-industry-increasingly-promoting-gender-neutral",
+  "questionRef": "2022 HL Section LA Q5",
+  "questionText": "The beauty industry is increasingly promoting\n(a) cruelty‐free products\n(b) eco products\n(c) gender‐neutral beauty products\n(d) vegan products",
+  "questionChoices": [
+   "cruelty‐free products",
+   "eco products",
+   "gender‐neutral beauty products",
+   "vegan products"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "gender-neutral beauty products",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (c)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 3.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 5",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-la-6",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "city-milan-won-prize-its-efforts",
+  "questionRef": "2022 HL Section LA Q6",
+  "questionText": "The city of Milan won a prize for its efforts in\n(a) recycling\n(b) avoiding food waste\n(c) reducing CO2 emissions\n(d) promoting organic food",
+  "questionChoices": [
+   "recycling",
+   "avoiding food waste",
+   "reducing CO2 emissions",
+   "promoting organic food"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "avoiding food waste",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (b)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 3.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 6",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-la-7",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "news-item-about-electric-scooters",
+  "questionRef": "2022 HL Section LA Q7",
+  "questionText": "The news item is about\n(a) bus routes\n(b) car share\n(c) electric scooters\n(d) walking routes",
+  "questionChoices": [
+   "bus routes",
+   "car share",
+   "electric scooters",
+   "walking routes"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "electric scooters",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (c)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 3.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 7",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-la-8",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "new-trend-public-workplaces-about-pets",
+  "questionRef": "2022 HL Section LA Q8",
+  "questionText": "The new trend in public workplaces is about\n(a) encouraging teamwork\n(b) flexible working times\n(c) pets in the office\n(d) the use of new technologies Iodáilis ‐ Ardleibhéal",
+  "questionChoices": [
+   "encouraging teamwork",
+   "flexible working times",
+   "pets in the office",
+   "the use of new technologies Iodáilis ‐ Ardleibhéal"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "pets in the office",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (c)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 3.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 8",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb1-1",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "where-lorenzo-going",
+  "questionRef": "2022 HL Section LB1 Q1",
+  "questionText": "Where is Lorenzo going? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "A meeting (reunion)",
+      "The gym",
+      "The sports centre",
+      "Opposite/in front of the (university) bookshop"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '2 marks'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 1. Conversation between Lorenzo and Luisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 1",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb1-2",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "will-elderly-people-help-university-students",
+  "questionRef": "2022 HL Section LB1 Q2",
+  "questionText": "How will elderly people help university students?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1-1",
+    "kind": "point",
+    "verbatim": "(The elderly) will offer/share",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish."
+   },
+   {
+    "id": "r-1-2",
+    "kind": "point",
+    "verbatim": "their spare/free room to (university students)",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 1. Conversation between Lorenzo and Luisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 2",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb1-3",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "four-household-chores",
+  "questionRef": "2022 HL Section LB1 Q3",
+  "questionText": "Name four household chores.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "Doing the shopping",
+      "Cooking",
+      "Washing up/(doing the) dishes",
+      "Vacuuming/ Hoovering",
+      "Scrubbing/cleaning floors",
+      "Looking after pets"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 1. Conversation between Lorenzo and Luisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 3",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb1-4",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "other-activities-included-project",
+  "questionRef": "2022 HL Section LB1 Q4",
+  "questionText": "Name two other activities included in the project.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Accompanying the elderly/going to (1) medical appointments (1)",
+      "(Keep them company by) watching (1) a film (1)",
+      "(Keep them company by) reading (1) the (news)paper (1)",
+      "Going for (1) walks (1) (together)/ Walking (2)"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks (2+2)'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 1. Conversation between Lorenzo and Luisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 4",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb2-1",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "does-agata-feel-tired-full",
+  "questionRef": "2022 HL Section LB2 Q1",
+  "questionText": "Why does Agata feel tired? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "For the month (1) before the deadline (1)",
+      "She worked (1) every evening/late (1)",
+      "She slept (1) very little (1)",
+      "She didn’t take a break (1) even on the weekends (1)"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks'; the listening booklet prints this ask on page 5.",
+  "stem": "Dialogue 2. Conversation between Agata and Franco. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 1",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb2-2",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "whom-will-agata-organise-art-workshop",
+  "questionRef": "2022 HL Section LB2 Q2",
+  "questionText": "For whom will Agata organise the art workshop?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1-1",
+    "kind": "point",
+    "verbatim": "Children",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish."
+   },
+   {
+    "id": "r-1-2",
+    "kind": "point",
+    "verbatim": "under",
+    "marks": 1
+   },
+   {
+    "id": "r-1-3",
+    "kind": "point",
+    "verbatim": "10 (years old)",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 5.",
+  "stem": "Dialogue 2. Conversation between Agata and Franco. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 2",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb2-3",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "items-agata-will-use-her-art",
+  "questionRef": "2022 HL Section LB2 Q3",
+  "questionText": "Mention two items Agata will use in her art workshops.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Bottles",
+      "Cans",
+      "Cardboard boxes",
+      "(Old) clothes"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '2 marks'; the listening booklet prints this ask on page 5.",
+  "stem": "Dialogue 2. Conversation between Agata and Franco. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 3",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb2-4",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "would-agata-like-open-art-school",
+  "questionRef": "2022 HL Section LB2 Q4",
+  "questionText": "Why would Agata like to open an art school for young people? Give one reason. Iodáilis ‐ Ardleibhéal",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "To give them an opportunity (2) to be creative (2) to develop/help (2) their creativity (2)",
+      "To occupy them/keep them busy (2) in their free time (2)",
+      "For the positive impact (2) on wellbeing (2)/positive effect (2) on them (2)"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 5.",
+  "stem": "Dialogue 2. Conversation between Agata and Franco. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 4",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb3-1",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "about-piero-bellis",
+  "questionRef": "2022 HL Section LB3 Q1",
+  "questionText": "Give two details about Piero De Bellis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "He is nice",
+      "He is interesting",
+      "He is 26 years old/he is young",
+      "He is passionate about/loves sailing",
+      "He is from Genoa (Genova)",
+      "He is sailing/he is a sailor/he travels the sea around Italy",
+      "He fundraised money for some environmental organisations/to protect the sea"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '2 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 1",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb3-2",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "does-piero-say-about-his-experience",
+  "questionRef": "2022 HL Section LB3 Q2",
+  "questionText": "What does Piero say about his experience in sailing? Give one detail.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "He has a lot (2) of experience (2)",
+      "He started (2) as a child (2)",
+      "He started (2) when he was about 5 (2) (years old)",
+      "He has become (2) very good (2)",
+      "He never (2) took part in a competition (2)"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 2",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb3-3",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "where-does-piero-stop-during-his",
+  "questionRef": "2022 HL Section LB3 Q3",
+  "questionText": "Where does Piero stop during his sailing tour?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1-1",
+    "kind": "point",
+    "verbatim": "In the biggest",
+    "marks": 1,
+    "contextNote": "Answer in English or Irish."
+   },
+   {
+    "id": "r-1-2",
+    "kind": "point",
+    "verbatim": "ports of Italy",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 3",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb3-4",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "people-ask-piero",
+  "questionRef": "2022 HL Section LB3 Q4",
+  "questionText": "What do people ask Piero? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "How he prepares (1) before his journey (1)",
+      "If he is afraid",
+      "If he misses (1) his family (1)"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 4",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb3-5",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "dangers-being-sea",
+  "questionRef": "2022 HL Section LB3 Q5",
+  "questionText": "What are the dangers of being at sea? Give two details",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "(The sudden changes of) weather",
+      "Storms",
+      "(Strong summer) sun",
+      "Dehydration",
+      "Tiredness"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '2 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 5",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb3-6",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "four-foods-that-piero-has-during",
+  "questionRef": "2022 HL Section LB3 Q6",
+  "questionText": "Mention four foods that Piero has during his sailing trip.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "Fruit",
+      "(raw) Vegetables",
+      "Proteins",
+      "(canned) Lentils",
+      "Beans",
+      "Cheese",
+      "Eggs",
+      "Biscuits"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 6",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb3-7",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "about-piero-plans-future",
+  "questionRef": "2022 HL Section LB3 Q7",
+  "questionText": "Give two details about Piero’s plans for the future.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Continue (1) travelling/sailing (1)",
+      "Write (1) a book (1) (on his adventures)",
+      "(Continue) raising awareness/telling people (1) about problems in the sea (1)"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 7",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-lb3-8",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "piero-going-after-his-sailing-trip",
+  "questionRef": "2022 HL Section LB3 Q8",
+  "questionText": "What is Piero going to do after his sailing trip? Iodáilis ‐ Ardleibhéal Higher level Italian Monday 27 June 12:10 – 12:50",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Go to the mountains",
+    "marks": 4,
+    "id": "r-1",
+    "contextNote": "Answer in English or Irish."
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Rest/Relax/Spend few days- some time",
+      "To see different/new landscapes",
+      "Take a break/from the sea"
+     ]
+    },
+    "contextNote": "Any two of",
+    "id": "r-2"
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 8",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2022 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2022-hl-c-1-a",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "C",
+  "topicId": "italian-6-0",
+  "conceptId": "1-written-composition-linked-to-reading-comprehe",
+  "questionRef": "2022 HL Section C Q1(a)–(e)",
+  "questionText": "1. Written composition linked to reading comprehension (journalistic passage).\nAnswer any three of parts (a), (b), (c), (d), (e).\n(25 marks)\nL’articolo parla di scelte di vita e di lavoro non tradizionali.\n(a) Cosa pensate delle scelte di vita fatte dai nomadi digitali?\n(b) Vi piacerebbe fare un’esperienza di vita o di lavoro all’estero? Spiegate perché.\n(c) È importante per voi conoscere culture e popoli nuovi?\n(d) Quali sono i vantaggi di visitare Paesi nuovi?\n(e) Avete mai fatto un viaggio studio o una breve esperienza di vita all’estero? Parlatene.",
+  "totalMarks": 25,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "1. Composition linked to the journalistic passage 25 marks",
+    "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+   ],
+   "criteria": [
+    {
+     "id": "content",
+     "label": "Content and communication",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [
+      "Content and communication 15 marks"
+     ],
+     "bands": [
+      {
+       "label": "0 – 5",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Lacks coherence",
+        "Very confused argumentation",
+        "Communicative task not fulfilled",
+        "All irrelevant material"
+       ]
+      },
+      {
+       "label": "6 – 7",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": [
+        "Little coherence",
+        "Unclear argumentation",
+        "Communicative task barely fulfilled",
+        "Poor use of vocabulary",
+        "Mostly irrelevant material"
+       ]
+      },
+      {
+       "label": "8 – 10",
+       "marks": [
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Adequate level of coherence",
+        "Argumentation not always clear",
+        "Elements of communicative task not always fulfilled",
+        "Lack of vocabulary interferes at times with ability to complete task",
+        "A good deal of irrelevant material"
+       ]
+      },
+      {
+       "label": "11 – 12",
+       "marks": [
+        11,
+        12
+       ],
+       "guidance": [
+        "Reasonable level of coherence",
+        "Fairly clear argumentation",
+        "Most elements of communicative task fulfilled",
+        "Reasonable range of vocabulary",
+        "Little irrelevant material"
+       ]
+      },
+      {
+       "label": "13 – 15",
+       "marks": [
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Good level of coherence",
+        "Clear argumentation",
+        "Full completion of communicative task",
+        "Good range of vocabulary",
+        "Appropriate use of idiomatic expressions",
+        "No irrelevant material"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "language",
+     "label": "Language",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [
+      "Use the descriptors in Appendix 2"
+     ],
+     "bands": [
+      {
+       "label": "0 - 3",
+       "marks": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "guidance": [
+        "Very limited range of vocabulary, most verbs incorrect and many spelling mistakes"
+       ]
+      },
+      {
+       "label": "4 - 6",
+       "marks": [
+        4,
+        5,
+        6
+       ],
+       "guidance": [
+        "Adequate vocabulary, some incorrect verbs and agreements, and many spelling",
+        "mistakes."
+       ]
+      },
+      {
+       "label": "7 - 10",
+       "marks": [
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Idiomatic Italian, good vocabulary, good grammatical accuracy and few spelling",
+        "mistakes."
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower",
+      "maxMarks": 5,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "bands": [],
+      "contentCriteria": [
+       "content"
+      ],
+      "contentAtMost": 7,
+      "rule": "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+     }
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 2"
+  },
+  "schemePages": [
+   22,
+   23,
+   26,
+   27
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Italian 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2022-hl-c-2",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "C",
+  "topicId": "italian-6-1",
+  "conceptId": "2-guided-composition-25-marks-describe-how-you-g",
+  "questionRef": "2022 HL Section C Q2",
+  "questionText": "2. Guided Composition.\n(25 marks)\nDescribe how you got to meet again your old childhood friend. Use any six of the following ideas.\n• Domenica mattina\n• andare alla stazione\n• incontrare Giovanni/Giovanna\n• prendere un caffè\n• tanti ricordi\n• parlare dei vecchi amici\n• emigrare in Australia\n• lavoro\n• tanto da dire\n• rimanere in contatto.",
+  "totalMarks": 25,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "2. Guided composition 25 marks",
+    "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+   ],
+   "criteria": [
+    {
+     "id": "content",
+     "label": "Content and communication",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [
+      "Candidates must not produce something learnt off by heart and off the point. It is not",
+      "necessary to use all the words or phrases given.",
+      "12 marks (6 points) for points covered and well expanded",
+      "3 marks for overall coherence"
+     ],
+     "bands": [
+      {
+       "label": "0 – 5",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Lacks coherence",
+        "Very confused argumentation",
+        "Communicative task not fulfilled",
+        "All irrelevant material"
+       ]
+      },
+      {
+       "label": "6 – 7",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": [
+        "Little coherence",
+        "Unclear argumentation",
+        "Communicative task barely fulfilled",
+        "Poor use of vocabulary",
+        "Mostly irrelevant material"
+       ]
+      },
+      {
+       "label": "8 – 10",
+       "marks": [
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Adequate level of coherence",
+        "Argumentation not always clear",
+        "Elements of communicative task not always fulfilled",
+        "Lack of vocabulary interferes at times with ability to complete task",
+        "A good deal of irrelevant material"
+       ]
+      },
+      {
+       "label": "11 – 12",
+       "marks": [
+        11,
+        12
+       ],
+       "guidance": [
+        "Reasonable level of coherence",
+        "Fairly clear argumentation",
+        "Most elements of communicative task fulfilled",
+        "Reasonable range of vocabulary",
+        "Little irrelevant material"
+       ]
+      },
+      {
+       "label": "13 – 15",
+       "marks": [
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Good level of coherence",
+        "Clear argumentation",
+        "Full completion of communicative task",
+        "Good range of vocabulary",
+        "Appropriate use of idiomatic expressions",
+        "No irrelevant material"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "language",
+     "label": "Language",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [
+      "Use the descriptors in Appendix 2"
+     ],
+     "bands": [
+      {
+       "label": "0 - 3",
+       "marks": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "guidance": [
+        "Very limited range of vocabulary, most verbs incorrect and many spelling mistakes"
+       ]
+      },
+      {
+       "label": "4 - 6",
+       "marks": [
+        4,
+        5,
+        6
+       ],
+       "guidance": [
+        "Adequate vocabulary, some incorrect verbs and agreements, and many spelling",
+        "mistakes."
+       ]
+      },
+      {
+       "label": "7 - 10",
+       "marks": [
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Idiomatic Italian, good vocabulary, good grammatical accuracy and few spelling",
+        "mistakes."
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower",
+      "maxMarks": 5,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "bands": [],
+      "contentCriteria": [
+       "content"
+      ],
+      "contentAtMost": 7,
+      "rule": "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+     }
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 2"
+  },
+  "schemePages": [
+   22,
+   23,
+   26,
+   27
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC Italian 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2022-hl-c-3-a",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "C",
+  "topicId": "italian-6-2",
+  "conceptId": "3-formal-writing-choose-either-a-or-b-50-marks-a",
+  "questionRef": "2022 HL Section C Q3(a)",
+  "questionText": "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(a)\nAvete letto il seguente annuncio su internet.\nScrivete una lettera o un’email specificando:\ndue motivi per cui volete fare il corso, le caratteristiche che vi rendono particolarmente adatti/e a quel lavoro e le vostre esperienze lavorative passate.\nInformatevi inoltre sugli orari, le modalità di pagamento e altri particolari di vostro interesse.\nScrivete a:\nDirettore dei corsi PizzaItalia Via Verona, 40100 Bologna email: pizzaitalia@libero.it",
+  "totalMarks": 50,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "3. Formal Writing 50 marks",
+    "In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7."
+   ],
+   "criteria": [
+    {
+     "id": "format",
+     "label": "Format",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [
+      "Format 10 marks"
+     ]
+    },
+    {
+     "id": "content",
+     "label": "Content and communication",
+     "maxMarks": 25,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+     ],
+     "guidance": [
+      "• Correct register and appropriate greeting and ending are required for full marks",
+      "• (Date and address are required for letter)",
+      "• Candidates are expected to make relevant points",
+      "• Each point should be expanded and developed.",
+      "• Full name (e.g. Alex Murphy) must be provided, please do not use your own name.",
+      "(a) The following points to be covered",
+      "• Introduzione",
+      "• Motivo",
+      "• Motivo",
+      "• Caratteristiche che rendono adatti/e",
+      "• Esperienza lavorativa",
+      "• Orari",
+      "• Modalità di pagamento",
+      "• Particolari di interesse"
+     ],
+     "bands": [
+      {
+       "label": "0 – 9",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+       ],
+       "guidance": [
+        "Lacks coherence",
+        "Very confused argumentation",
+        "Communicative task not fulfilled",
+        "All irrelevant material"
+       ]
+      },
+      {
+       "label": "10 – 13",
+       "marks": [
+        10,
+        11,
+        12,
+        13
+       ],
+       "guidance": [
+        "Little coherence",
+        "Unclear argumentation",
+        "Communicative task barely fulfilled",
+        "Poor use of vocabulary",
+        "Mostly irrelevant material"
+       ]
+      },
+      {
+       "label": "14 – 17",
+       "marks": [
+        14,
+        15,
+        16,
+        17
+       ],
+       "guidance": [
+        "Adequate level of coherence",
+        "Argumentation not always clear",
+        "Elements of communicative task not always fulfilled",
+        "Lack of vocabulary interferes at times with ability to complete task",
+        "A good deal of irrelevant material"
+       ]
+      },
+      {
+       "label": "18 – 20",
+       "marks": [
+        18,
+        19,
+        20
+       ],
+       "guidance": [
+        "Reasonable level of coherence",
+        "Fairly clear argumentation",
+        "Most elements of communicative task fulfilled",
+        "Reasonable range of vocabulary",
+        "Little irrelevant material"
+       ]
+      },
+      {
+       "label": "21 – 25",
+       "marks": [
+        21,
+        22,
+        23,
+        24,
+        25
+       ],
+       "guidance": [
+        "Good level of coherence",
+        "Clear argumentation",
+        "Full completion of communicative task",
+        "Good range of vocabulary",
+        "Appropriate use of idiomatic expressions",
+        "No irrelevant material"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "language",
+     "label": "Language",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [
+      "Use the descriptors in Appendix 2"
+     ],
+     "bands": [
+      {
+       "label": "0 - 5",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Inappropriate/ irrelevant vocabulary, most verbs incorrect, many spelling mistakes"
+       ]
+      },
+      {
+       "label": "6 - 10",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Adequate vocabulary, some incorrect verbs and agreements, and some spelling",
+        "mistakes."
+       ]
+      },
+      {
+       "label": "11 - 15",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Correct topic related vocabulary, most verbs correct and few spelling mistakes."
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower",
+      "maxMarks": 7,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "bands": [],
+      "contentCriteria": [
+       "content"
+      ],
+      "contentAtMost": 12,
+      "rule": "In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7."
+     }
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 2"
+  },
+  "schemePages": [
+   22,
+   23,
+   26,
+   27
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Italian 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2022-hl-c-3-b",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "C",
+  "topicId": "italian-6-2",
+  "conceptId": "3-formal-writing-choose-either-a-or-b-50-marks-b",
+  "questionRef": "2022 HL Section C Q3(b)",
+  "questionText": "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(b)\nNÓ / OR I tuoi vicini di casa hanno intenzione di passare una vacanza in Sardegna in una proprietà in affitto e ti hanno chiesto di contattare da parte loro un’agenzia del posto.\nScrivete al direttore dell’agenzia indicando il periodo in cui hanno intenzione di andare, la durata del soggiorno e il tipo di alloggio che desiderano.\nSpecificate inoltre le loro esigenze specifiche e perché hanno queste esigenze (per esempio:\nvicinanza al mare, posti da visitare, accesso per i disabili, se sono ammessi animali domestici, ecc...). Descrivete gli interessi dei vostri vicini e chiedete le modalità di pagamento.\nYou may use this page for extra work.\nquestion number and part.\nYou may use this page for extra work.\nquestion number and part.\nHigher Level Italian Monday, 27 June Morning 9:30 – 12:00",
+  "totalMarks": 50,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "3. Formal Writing 50 marks",
+    "In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7."
+   ],
+   "criteria": [
+    {
+     "id": "format",
+     "label": "Format",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [
+      "Format 10 marks"
+     ]
+    },
+    {
+     "id": "content",
+     "label": "Content and communication",
+     "maxMarks": 25,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+     ],
+     "guidance": [
+      "• Correct register and appropriate greeting and ending are required for full marks",
+      "• (Date and address are required for letter)",
+      "• Candidates are expected to make relevant points",
+      "• Each point should be expanded and developed.",
+      "• Full name (e.g. Alex Murphy) must be provided, please do not use your own name.",
+      "(b) The following points to be covered",
+      "• Introduzione",
+      "• Periodo",
+      "• Durata del soggiorno",
+      "• Tipo di alloggio",
+      "• Esigenze specifiche",
+      "• Perché",
+      "• Interessi dei vicini",
+      "• Modalità di pagamento"
+     ],
+     "bands": [
+      {
+       "label": "0 – 9",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+       ],
+       "guidance": [
+        "Lacks coherence",
+        "Very confused argumentation",
+        "Communicative task not fulfilled",
+        "All irrelevant material"
+       ]
+      },
+      {
+       "label": "10 – 13",
+       "marks": [
+        10,
+        11,
+        12,
+        13
+       ],
+       "guidance": [
+        "Little coherence",
+        "Unclear argumentation",
+        "Communicative task barely fulfilled",
+        "Poor use of vocabulary",
+        "Mostly irrelevant material"
+       ]
+      },
+      {
+       "label": "14 – 17",
+       "marks": [
+        14,
+        15,
+        16,
+        17
+       ],
+       "guidance": [
+        "Adequate level of coherence",
+        "Argumentation not always clear",
+        "Elements of communicative task not always fulfilled",
+        "Lack of vocabulary interferes at times with ability to complete task",
+        "A good deal of irrelevant material"
+       ]
+      },
+      {
+       "label": "18 – 20",
+       "marks": [
+        18,
+        19,
+        20
+       ],
+       "guidance": [
+        "Reasonable level of coherence",
+        "Fairly clear argumentation",
+        "Most elements of communicative task fulfilled",
+        "Reasonable range of vocabulary",
+        "Little irrelevant material"
+       ]
+      },
+      {
+       "label": "21 – 25",
+       "marks": [
+        21,
+        22,
+        23,
+        24,
+        25
+       ],
+       "guidance": [
+        "Good level of coherence",
+        "Clear argumentation",
+        "Full completion of communicative task",
+        "Good range of vocabulary",
+        "Appropriate use of idiomatic expressions",
+        "No irrelevant material"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "language",
+     "label": "Language",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [
+      "Use the descriptors in Appendix 2"
+     ],
+     "bands": [
+      {
+       "label": "0 - 5",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Inappropriate/ irrelevant vocabulary, most verbs incorrect, many spelling mistakes"
+       ]
+      },
+      {
+       "label": "6 - 10",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Adequate vocabulary, some incorrect verbs and agreements, and some spelling",
+        "mistakes."
+       ]
+      },
+      {
+       "label": "11 - 15",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Correct topic related vocabulary, most verbs correct and few spelling mistakes."
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower",
+      "maxMarks": 7,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "bands": [],
+      "contentCriteria": [
+       "content"
+      ],
+      "contentAtMost": 12,
+      "rule": "In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7."
+     }
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 2"
+  },
+  "schemePages": [
+   22,
+   23,
+   26,
+   27
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Italian 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2022-hl-b3a-1",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "discuss-how-the-bond-between-leo-and-niko-change",
+  "questionRef": "2022 HL Section B3A Q1",
+  "questionText": "Discuss how the bond between Leo and Niko changes as the novel develops. At least three points to be made.",
+  "totalMarks": 60,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "B 3 Essay on prescribed text (60 marks)",
+    "Use the descriptors in Appendix 1"
+   ],
+   "criteria": [
+    {
+     "id": "essay",
+     "label": "Essay",
+     "maxMarks": 60,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+     ],
+     "guidance": [
+      "(51 - 60 marks)",
+      "Answers the question fully",
+      "Demonstrates excellent knowledge of text as a whole",
+      "Accurate quotes / references to text in support of all points made",
+      "No irrelevant material or repetition of points",
+      "(42 - 50 marks)",
+      "All points covered",
+      "Demonstrates very good knowledge of text as a whole",
+      "Makes ample accurate references to the text",
+      "Some irrelevant material and some small repetition of points",
+      "(33 - 41 marks)",
+      "Answer not always fully developed or clear",
+      "Demonstrates adequate knowledge of text as a whole",
+      "Makes some references to the text, but they may be slightly vague or inaccurate",
+      "Substantial irrelevant material and repetition of points.",
+      "________________________________ (24 - 32 marks)",
+      "Argumentation unclear",
+      "Some or little knowledge of text as a whole",
+      "Below average answer of the question",
+      "Makes little reference to the text",
+      "A lot of irrelevant material and repetition of points",
+      "__________________________________ (6 - 23 marks)",
+      "Shows almost no knowledge of text",
+      "No attempt at question asked",
+      "No reference to the text",
+      "All irrelevant material",
+      "If Individual point only:",
+      "Excellent: up to 18 marks",
+      "Excellent/extremely good point with no inaccuracies",
+      "Well – developed: up to 16 marks",
+      "Point fully covered and developed",
+      "Better than average up to 14 marks",
+      "Point made is reasonably developed",
+      "Average: up to 12 marks",
+      "Answer not always fully developed or clear",
+      "Below average up to 10 marks",
+      "Argumentation unclear some knowledge of text",
+      "Poor: up to 8 marks",
+      "Shows almost no knowledge of text"
+     ]
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 1"
+  },
+  "schemePages": [
+   24,
+   25
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Italian 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2022-hl-b3a-2",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "discuss-the-impact-that-il-sognatore-has-on-leo-",
+  "questionRef": "2022 HL Section B3A Q2",
+  "questionText": "Discuss the impact that Il Sognatore has on Leo’s life. At least three points to be made.",
+  "totalMarks": 60,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "B 3 Essay on prescribed text (60 marks)",
+    "Use the descriptors in Appendix 1"
+   ],
+   "criteria": [
+    {
+     "id": "essay",
+     "label": "Essay",
+     "maxMarks": 60,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+     ],
+     "guidance": [
+      "(51 - 60 marks)",
+      "Answers the question fully",
+      "Demonstrates excellent knowledge of text as a whole",
+      "Accurate quotes / references to text in support of all points made",
+      "No irrelevant material or repetition of points",
+      "(42 - 50 marks)",
+      "All points covered",
+      "Demonstrates very good knowledge of text as a whole",
+      "Makes ample accurate references to the text",
+      "Some irrelevant material and some small repetition of points",
+      "(33 - 41 marks)",
+      "Answer not always fully developed or clear",
+      "Demonstrates adequate knowledge of text as a whole",
+      "Makes some references to the text, but they may be slightly vague or inaccurate",
+      "Substantial irrelevant material and repetition of points.",
+      "________________________________ (24 - 32 marks)",
+      "Argumentation unclear",
+      "Some or little knowledge of text as a whole",
+      "Below average answer of the question",
+      "Makes little reference to the text",
+      "A lot of irrelevant material and repetition of points",
+      "__________________________________ (6 - 23 marks)",
+      "Shows almost no knowledge of text",
+      "No attempt at question asked",
+      "No reference to the text",
+      "All irrelevant material",
+      "If Individual point only:",
+      "Excellent: up to 18 marks",
+      "Excellent/extremely good point with no inaccuracies",
+      "Well – developed: up to 16 marks",
+      "Point fully covered and developed",
+      "Better than average up to 14 marks",
+      "Point made is reasonably developed",
+      "Average: up to 12 marks",
+      "Answer not always fully developed or clear",
+      "Below average up to 10 marks",
+      "Argumentation unclear some knowledge of text",
+      "Poor: up to 8 marks",
+      "Shows almost no knowledge of text"
+     ]
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 1"
+  },
+  "schemePages": [
+   24,
+   25
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Italian 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2022-hl-b3b-1",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "explain-how-the-meetings-between-luisa-roscio-an",
+  "questionRef": "2022 HL Section B3B Q1",
+  "questionText": "Explain how the meetings between Luisa Roscio and Professor Laurana are crucial for the development of the novel. At least three points to be made.",
+  "totalMarks": 60,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "B 3 Essay on prescribed text (60 marks)",
+    "Use the descriptors in Appendix 1"
+   ],
+   "criteria": [
+    {
+     "id": "essay",
+     "label": "Essay",
+     "maxMarks": 60,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+     ],
+     "guidance": [
+      "(51 - 60 marks)",
+      "Answers the question fully",
+      "Demonstrates excellent knowledge of text as a whole",
+      "Accurate quotes / references to text in support of all points made",
+      "No irrelevant material or repetition of points",
+      "(42 - 50 marks)",
+      "All points covered",
+      "Demonstrates very good knowledge of text as a whole",
+      "Makes ample accurate references to the text",
+      "Some irrelevant material and some small repetition of points",
+      "(33 - 41 marks)",
+      "Answer not always fully developed or clear",
+      "Demonstrates adequate knowledge of text as a whole",
+      "Makes some references to the text, but they may be slightly vague or inaccurate",
+      "Substantial irrelevant material and repetition of points.",
+      "________________________________ (24 - 32 marks)",
+      "Argumentation unclear",
+      "Some or little knowledge of text as a whole",
+      "Below average answer of the question",
+      "Makes little reference to the text",
+      "A lot of irrelevant material and repetition of points",
+      "__________________________________ (6 - 23 marks)",
+      "Shows almost no knowledge of text",
+      "No attempt at question asked",
+      "No reference to the text",
+      "All irrelevant material",
+      "If Individual point only:",
+      "Excellent: up to 18 marks",
+      "Excellent/extremely good point with no inaccuracies",
+      "Well – developed: up to 16 marks",
+      "Point fully covered and developed",
+      "Better than average up to 14 marks",
+      "Point made is reasonably developed",
+      "Average: up to 12 marks",
+      "Answer not always fully developed or clear",
+      "Below average up to 10 marks",
+      "Argumentation unclear some knowledge of text",
+      "Poor: up to 8 marks",
+      "Shows almost no knowledge of text"
+     ]
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 1"
+  },
+  "schemePages": [
+   24,
+   25
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Italian 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2022-hl-b3b-2",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2022,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "discuss-the-significance-of-omert-and-how-it-inf",
+  "questionRef": "2022 HL Section B3B Q2",
+  "questionText": "Discuss the significance of Omertà and how it influences the behaviour of the people of the society portrayed by Sciascia. At least three points to be made.",
+  "totalMarks": 60,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "B 3 Essay on prescribed text (60 marks)",
+    "Use the descriptors in Appendix 1"
+   ],
+   "criteria": [
+    {
+     "id": "essay",
+     "label": "Essay",
+     "maxMarks": 60,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+     ],
+     "guidance": [
+      "(51 - 60 marks)",
+      "Answers the question fully",
+      "Demonstrates excellent knowledge of text as a whole",
+      "Accurate quotes / references to text in support of all points made",
+      "No irrelevant material or repetition of points",
+      "(42 - 50 marks)",
+      "All points covered",
+      "Demonstrates very good knowledge of text as a whole",
+      "Makes ample accurate references to the text",
+      "Some irrelevant material and some small repetition of points",
+      "(33 - 41 marks)",
+      "Answer not always fully developed or clear",
+      "Demonstrates adequate knowledge of text as a whole",
+      "Makes some references to the text, but they may be slightly vague or inaccurate",
+      "Substantial irrelevant material and repetition of points.",
+      "________________________________ (24 - 32 marks)",
+      "Argumentation unclear",
+      "Some or little knowledge of text as a whole",
+      "Below average answer of the question",
+      "Makes little reference to the text",
+      "A lot of irrelevant material and repetition of points",
+      "__________________________________ (6 - 23 marks)",
+      "Shows almost no knowledge of text",
+      "No attempt at question asked",
+      "No reference to the text",
+      "All irrelevant material",
+      "If Individual point only:",
+      "Excellent: up to 18 marks",
+      "Excellent/extremely good point with no inaccuracies",
+      "Well – developed: up to 16 marks",
+      "Point fully covered and developed",
+      "Better than average up to 14 marks",
+      "Point made is reasonably developed",
+      "Average: up to 12 marks",
+      "Answer not always fully developed or clear",
+      "Below average up to 10 marks",
+      "Argumentation unclear some knowledge of text",
+      "Poor: up to 8 marks",
+      "Shows almost no knowledge of text"
+     ]
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 1"
+  },
+  "schemePages": [
+   24,
+   25
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Italian 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
  }
 ]

@@ -444,14 +444,17 @@ def ordinary(year):
         criterion('box-b', 'Box B', 14, q2[ib:])],
         q2[:ia], '\n'.join(join_lines(t2)), p2, 22, note=q2[0], pages=opages))
     # C3 the sequence: eight lines in the printed order, one mark each
-    q3 = S.span(r'^3\.\s.*\(8x1 mark', r'^APPENDIX 1', c0)
+    # Its head is "3. Francesca has a very busy weekend ahead (8x1 mark)"
+    # (2025-2026), "3. Andrea's school schedule 8 marks" over "(8x1 mark)"
+    # (2021) or "Question 3" over the title (2022): the eight lines follow.
+    q3 = S.span(r'^(?:Question 3\b|3\.\s)', r'^APPENDIX 1', S.at(r'^Question 2 FORM', c0))
     rows, cur = [], None
     for l in q3[1:]:
         m = re.match(r'^(\d)\.\s*(.*)$', l)
         if m:
             cur = [int(m.group(1)), m.group(2)]
             rows.append(cur)
-        elif cur:
+        elif cur and not re.match(r'^\(?\d+x\d', l):
             cur[1] = f'{cur[1]} {l}'
     assert [r[0] for r in rows] == list(range(1, 9)), (year, [r[0] for r in rows])
     for _n, t in rows:

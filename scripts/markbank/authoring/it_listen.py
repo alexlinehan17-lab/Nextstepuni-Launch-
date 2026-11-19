@@ -456,6 +456,17 @@ def cards(year, level, refuse, row_for, concept_for):
 # a directive) cannot see it. Each option is a cut of the scheme's own line,
 # checked present in the scheme before it is used, never typed.
 OVERRIDES = {
+    # "1. (Last) May 4 marks", the first line under the Dialogue 3 head, lost
+    # by the reader.
+    (2022, 'ol', 3, 1): {'total': 4, 'points': [('(Last) May', 4)]},
+    # "8. Go to the mountains (4) 6 marks" then "Any two of" three bullets at (1).
+    (2022, 'hl', 3, 8): {'rows': [
+        {'kind': 'point', 'verbatim': 'Go to the mountains', 'marks': 4},
+        {'kind': 'anyN', 'verbatim': 'The answers the scheme accepts in full', 'marks': None,
+         'group': {'claimMax': 2, 'perOption': 1, 'options': [
+             'Rest/Relax/Spend few days- some time', 'To see different/new landscapes',
+             'Take a break/from the sea']},
+         'contextNote': 'Any two of'}]},
     # Asks the reading grammar loses at a page foot or under a wrapped answer;
     # each carries its printed total, and its rows are cuts of the scheme.
     (2024, 'ol', 1, 4): {'total': 4, 'points': [('(Only) this morning', 4)],
@@ -485,6 +496,12 @@ OVERRIDES = {
 
 def _override_rows(S, o, ref):
     text = _scheme_text(S)
+    if 'rows' in o:
+        for row in o['rows']:
+            for piece in [row.get('verbatim')] + (row.get('group') or {}).get('options', []):
+                if piece and piece != 'The answers the scheme accepts in full':
+                    assert _flat(piece) in text, f'{ref}: {piece!r} is not in the scheme'
+        return [dict(r, id=f'r-{k}') for k, r in enumerate(o['rows'], start=1)]
     for piece in o.get('options', []) + o.get('note', []) + [p for p, _m in o.get('points', [])]:
         assert _flat(piece) in text, f'{ref}: {piece!r} is not in the scheme'
     if 'points' in o:

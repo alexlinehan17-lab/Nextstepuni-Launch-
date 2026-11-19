@@ -92,8 +92,10 @@ def question_total_card(P, S, year, level, section, item, letter, cards):
     rows = [{'id': f'r-{k}', 'kind': 'criterion', 'verbatim': a, 'marks': None}
             for k, a in enumerate(part.answers, start=1)]
     lesser = '; '.join(f'{t} {m}m' for t, m in part.rungs)
+    split = (f' and the split ({"+".join(map(str, part.split))}), which do not agree'
+             if part.split and part.claim and len(part.split) != part.claim else '')
     rows[0]['contextNote'] = (f'{it_all.language_note(language)} The scheme prints '
-                              f'"{part.directive}" for {ask.total} marks and does not say what '
+                              f'"{part.directive}"{split} for {ask.total} marks and does not say what '
                               'one answer is worth: judge your answer against the total.'
                               + (f' It also accepts, for less: {lesser}.' if lesser else ''))
     card = {
@@ -114,7 +116,8 @@ def question_total_card(P, S, year, level, section, item, letter, cards):
     cards.append(card)
 
 
-TOTAL_ONLY = 'the scheme asks for more answers than its printed tariff divides into'
+TOTAL_ONLY = ('the scheme asks for more answers than its printed tariff divides into',
+              'the scheme prints a count and a split that disagree')
 
 # Asks whose scheme prints its accepted answers as ONE line of alternatives
 # cut by slashes, with the rate after them: 2023 Higher Section A Q4(b) "Two of
