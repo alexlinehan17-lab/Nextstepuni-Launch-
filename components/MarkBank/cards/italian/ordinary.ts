@@ -5960,7 +5960,18 @@ export const CARDS: SecCard[] = [
                                         "Few mistakes, many correct agreements, very good accuracy"
                                   ]
                             }
-                      ]
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 0,
+                            "permittedMarks": [0],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+                      }
                 }
           ],
           "markingGuideNote": "Question 1 30 marks"
@@ -6054,7 +6065,18 @@ export const CARDS: SecCard[] = [
                                         "Few mistakes, many correct agreements, very good accuracy"
                                   ]
                             }
-                      ]
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 0,
+                            "permittedMarks": [0],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+                      }
                 }
           ],
           "markingGuideNote": "Question 1 30 marks"
@@ -7071,7 +7093,18 @@ export const CARDS: SecCard[] = [
                                         "Few mistakes, many correct agreements, very good accuracy"
                                   ]
                             }
-                      ]
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 0,
+                            "permittedMarks": [0],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+                      }
                 }
           ],
           "markingGuideNote": "Question 1 30 marks"
@@ -7160,7 +7193,18 @@ export const CARDS: SecCard[] = [
                                         "Few mistakes, many correct agreements, very good accuracy"
                                   ]
                             }
-                      ]
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 0,
+                            "permittedMarks": [0],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+                      }
                 }
           ],
           "markingGuideNote": "Question 1 30 marks"

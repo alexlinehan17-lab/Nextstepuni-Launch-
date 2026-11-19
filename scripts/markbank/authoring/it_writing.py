@@ -109,13 +109,16 @@ def criterion(cid, label, maxm, guidance, bands=None, lower=None):
         # The band's label is its range exactly as the scheme prints it.
         c['bands'] = [{'label': raw, 'marks': list(range(lo, hi + 1)), 'guidance': g}
                       for lo, hi, g, raw in sorted(bands, key=lambda b: b[0])]
-    # The scheme's lower language scale prints a rule and no bands of its own,
-    # so the rule is shown in the card's task requirements, never as a scale.
+    # The scheme's lower language scale: its printed rule caps the criterion
+    # (out of 5 or 7; at Ordinary no language marks) while content is at or
+    # under the printed figure. It prints no bands of its own.
+    if lower:
+        c['lowerScale'] = lower
     return c
 
 
 def lower_scale(maxm, rule, at_most):
-    return {'label': f'Language out of {maxm}', 'maxMarks': maxm,
+    return {'label': 'Lower', 'maxMarks': maxm,
             'permittedMarks': list(range(maxm + 1)), 'bands': [],
             'contentCriteria': ['content'], 'contentAtMost': at_most, 'rule': rule}
 

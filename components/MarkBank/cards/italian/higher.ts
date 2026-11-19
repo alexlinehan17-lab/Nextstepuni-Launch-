@@ -5713,7 +5713,18 @@ export const CARDS: SecCard[] = [
                                         "grammatical accuracy and few spelling mistakes."
                                   ]
                             }
-                      ]
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 5,
+                            "permittedMarks": [0,1,2,3,4,5],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+                      }
                 }
           ],
           "markingGuideNote": "Use the descriptors in Appendix 2"
@@ -5854,7 +5865,18 @@ export const CARDS: SecCard[] = [
                                         "grammatical accuracy and few spelling mistakes."
                                   ]
                             }
-                      ]
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 5,
+                            "permittedMarks": [0,1,2,3,4,5],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+                      }
                 }
           ],
           "markingGuideNote": "Use the descriptors in Appendix 2"
@@ -6014,7 +6036,18 @@ export const CARDS: SecCard[] = [
                                         "Correct topic related vocabulary, most verbs correct and few spelling mistakes."
                                   ]
                             }
-                      ]
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 7,
+                            "permittedMarks": [0,1,2,3,4,5,6,7],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 12,
+                            "rule": "In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7."
+                      }
                 }
           ],
           "markingGuideNote": "Use the descriptors in Appendix 2"
@@ -6174,7 +6207,18 @@ export const CARDS: SecCard[] = [
                                         "Correct topic related vocabulary, most verbs correct and few spelling mistakes."
                                   ]
                             }
-                      ]
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 7,
+                            "permittedMarks": [0,1,2,3,4,5,6,7],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 12,
+                            "rule": "In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7."
+                      }
                 }
           ],
           "markingGuideNote": "Use the descriptors in Appendix 2"
@@ -7500,7 +7544,18 @@ export const CARDS: SecCard[] = [
                                         "mistakes."
                                   ]
                             }
-                      ]
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 5,
+                            "permittedMarks": [0,1,2,3,4,5],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+                      }
                 }
           ],
           "markingGuideNote": "Use the descriptors in Appendix 2"
@@ -7634,7 +7689,18 @@ export const CARDS: SecCard[] = [
                                         "mistakes."
                                   ]
                             }
-                      ]
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 5,
+                            "permittedMarks": [0,1,2,3,4,5],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+                      }
                 }
           ],
           "markingGuideNote": "Use the descriptors in Appendix 2"
@@ -7789,7 +7855,18 @@ export const CARDS: SecCard[] = [
                                         "Correct topic related vocabulary, most verbs correct and few spelling mistakes."
                                   ]
                             }
-                      ]
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 7,
+                            "permittedMarks": [0,1,2,3,4,5,6,7],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 12,
+                            "rule": "In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7."
+                      }
                 }
           ],
           "markingGuideNote": "Use the descriptors in Appendix 2"
@@ -7943,7 +8020,18 @@ export const CARDS: SecCard[] = [
                                         "Correct topic related vocabulary, most verbs correct and few spelling mistakes."
                                   ]
                             }
-                      ]
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 7,
+                            "permittedMarks": [0,1,2,3,4,5,6,7],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 12,
+                            "rule": "In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7."
+                      }
                 }
           ],
           "markingGuideNote": "Use the descriptors in Appendix 2"

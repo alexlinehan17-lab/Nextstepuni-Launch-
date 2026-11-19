@@ -788,12 +788,16 @@ function spanishGridFault(c, scheme) {
   for (const k of criteria) {
     const lower = k.lowerScale;
     if (!lower) continue;
-    if (SUBJECT_ID !== 'german') return `${k.label} carries a lower scale, which only German prints`;
-    if (!(lower.maxMarks > 0 && lower.maxMarks < k.maxMarks)) return `${k.label}'s lower scale is not below its own ${k.maxMarks}`;
+    // Any grid subject may carry the cap its scheme prints (German "Lower E";
+    // Italian "language will be marked out of 5", or at Ordinary "award no marks
+    // for language", a cap of 0). Bands are checked where the scheme prints
+    // them for the lower scale; a cap printed with no bands of its own carries
+    // none (Italian), and is placed on every mark from 0 to the cap.
+    if (!(lower.maxMarks >= 0 && lower.maxMarks < k.maxMarks)) return `${k.label}'s lower scale is not below its own ${k.maxMarks}`;
     const allowed = lower.permittedMarks ?? [];
     if (allowed.length !== lower.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label}'s lower scale is not placed on every mark from 0 to ${lower.maxMarks}`;
     const marks = (lower.bands ?? []).flatMap(b => b.marks).sort((a, b) => a - b);
-    if (marks.length !== allowed.length || marks.some((m, i) => m !== i)) return `${k.label}'s lower bands do not cover 0 to ${lower.maxMarks} once`;
+    if ((lower.bands ?? []).length && (marks.length !== allowed.length || marks.some((m, i) => m !== i))) return `${k.label}'s lower bands do not cover 0 to ${lower.maxMarks} once`;
     if (!lower.contentCriteria?.length || lower.contentCriteria.some(id => id === k.id || !criteria.some(other => other.id === id && !other.lowerScale))) {
       return `${k.label}'s lower scale counts a criterion the card does not have`;
     }
