@@ -305,7 +305,9 @@ def reconcile_manifest(subject, census):
         wanted = expected.get(cid)
         # A deferred Irish card says so twice, as Economics', Engineering's and History's do: its id
         # ("irish-2023-hl-deferred-…") and its citation ("… — Deferred sitting"). The two must agree.
-        if subject == 'irish' and bool(re.match(r'^irish-\d{4}-(?:hl|ol)-deferred-', cid)) != (' — Deferred sitting' in ref):
+        # English's deferred cards say so the same two ways ("english-2025-hl-deferred-p1-…").
+        if subject in ('irish', 'english') and \
+                bool(re.match(rf'^{subject}-\d{{4}}-(?:hl|ol)-deferred-', cid)) != (' — Deferred sitting' in ref):
             orphans.append({'id': cid, 'ref': ref, 'why': 'deferred id and "— Deferred sitting" citation disagree'})
             continue
         if cid in covers:
@@ -741,10 +743,10 @@ def reconcile_subject(subject, census=None):
                 continue
             if hist_deferred:
                 ref['paper'] = 'Deferred'
-        if subject in ('economics', 'engineering', 'dcg', 'spanish', 'german', 'physics', 'home-economics'):
+        if subject in ('economics', 'engineering', 'dcg', 'spanish', 'german', 'biology', 'physics', 'home-economics'):
             # A deferred sitting is its own census paper, 'Deferred', and its
             # card says so twice: the id ("econ-2022-hl-deferred-...",
-            # "eng-2022-hl-deferred-...", "dcg-2022-hl-deferred-...") and the
+            # "eng-2022-hl-deferred-...", "dcg-2022-hl-deferred-...", "bio-2022-hl-deferred-...") and the
             # citation ("... — Deferred sitting"). The two must agree. The
             # same rule as Physics and Home Economics on codex/home-economics-
             # continuation-20261101.
@@ -753,6 +755,7 @@ def reconcile_subject(subject, census=None):
                                       'dcg': r'^dcg-\d{4}-(?:hl|ol)-deferred-',
                                       'spanish': r'^es-\d{4}-(?:hl|ol)-deferred-',
                                       'german': r'^de-\d{4}-(?:hl|ol)-deferred-',
+                                      'biology': r'^bio-\d{4}-(?:hl|ol)-deferred-',
                                       'physics': r'^phys-\d{4}-(?:hl|ol)-deferred-',
                                       'home-economics': r'^he-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
             if deferred != (' — Deferred sitting' in refstr):

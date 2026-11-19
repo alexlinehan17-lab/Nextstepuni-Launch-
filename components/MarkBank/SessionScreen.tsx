@@ -69,6 +69,7 @@ import {
   type PclmRubric,
   type SecCard,
   type SecRubricCard,
+  UNPRINTED_ANSWER,
 } from '../../types/markBank';
 import type { MarkBankGrade } from './scheduler';
 import { figureUrl } from '../../utils/figureUrl';
@@ -1160,6 +1161,14 @@ const PclmRubricPanel: React.FC<{
 
   return (
     <div>
+      {rubric.unprintedAnswer && (
+        // A task the scheme sets out no block for (deferred schemes): the fixed line, then the
+        // general criteria and grid it is marked on. Even neutral border, no accent.
+        <div style={{ margin: '0 0 16px', padding: '11px 12px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}>
+          <p style={{ margin: 0, font: `600 13px/1.45 ${SANS}`, color: INK }}>{UNPRINTED_ANSWER}</p>
+          <p style={{ margin: '4px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>{rubric.unprintedAnswer.citation}</p>
+        </div>
+      )}
       <div style={{ margin: '0 0 16px', padding: '0 0 15px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
         <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
           Task check · no marks added here
