@@ -68,7 +68,7 @@
     0.39
    ],
    "questionText": "Identify two features of the music in this excerpt.",
-   "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+   "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -129,7 +129,7 @@
     0.652
    ],
    "questionText": "Name a recording technique used in this excerpt. Describe this recording technique with reference to the music in this excerpt.",
-   "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+   "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -197,7 +197,7 @@
     0.852
    ],
    "questionText": "Describe the music played by the piano in this excerpt.",
-   "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+   "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -249,8 +249,8 @@
     0.4
    ],
    "questionText": "The chord heard at the word gun in line 2 is",
-   "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
-   "excerptLine": "Excerpt 3, played three times. The lyrics are printed below.",
+   "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3, played three times. The lyrics are printed below. Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
    "needsRecording": true,
    "figure": {
     "page": 4,
@@ -296,8 +296,8 @@
     0.633
    ],
    "questionText": "Identify and describe the instrumental technique played by the bass guitar at the end of line 2.",
-   "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
-   "excerptLine": "Excerpt 3, played three times. The lyrics are printed below.",
+   "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3, played three times. The lyrics are printed below. Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
    "needsRecording": true,
    "figure": {
     "page": 4,
@@ -355,7 +355,7 @@
     0.552
    ],
    "questionText": "Describe two differences between the music in Excerpt 3 and the music in Excerpt 4. Refer to both excerpts in your answer.",
-   "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+   "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 3, played once more and Excerpt 4, played three times.",
    "needsRecording": true,
    "figure": {
@@ -411,7 +411,7 @@
     0.87
    ],
    "questionText": "Identify two features of the guitar music in this excerpt.",
-   "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+   "questionContext": "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 5, played three times.",
    "needsRecording": true,
    "figure": {
@@ -476,7 +476,7 @@
     0.272
    ],
    "questionText": "Name the section of the work from which the excerpt is taken.",
-   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -519,7 +519,7 @@
     0.428
    ],
    "questionText": "The theme heard in this excerpt is the",
-   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -562,7 +562,7 @@
     0.612
    ],
    "questionText": "Identify two features of the music heard in this excerpt.",
-   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -614,7 +614,7 @@
     0.83
    ],
    "questionText": "Describe one of the features you have chosen with reference to the music in this excerpt.",
-   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -666,7 +666,7 @@
     0.337
    ],
    "questionText": "Describe one way in which Tchaikovsky creates a feeling of tension in the music heard in this excerpt.",
-   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -723,7 +723,7 @@
     0.328
    ],
    "questionText": "Describe the texture of the music in this excerpt.",
-   "questionContext": "An excerpt from Piano Quartet No.1 by Gerald Barry, played three times.",
+   "questionContext": "An excerpt from Piano Quartet No.1 by Gerald Barry, played three times.\n• Answer the following questions.",
    "excerptLine": null,
    "needsRecording": true,
    "figure": {
@@ -776,7 +776,7 @@
     0.458
    ],
    "questionText": "Identify one feature of 20th century music in this excerpt.",
-   "questionContext": "An excerpt from Piano Quartet No.1 by Gerald Barry, played three times.",
+   "questionContext": "An excerpt from Piano Quartet No.1 by Gerald Barry, played three times.\n• Answer the following questions.",
    "excerptLine": null,
    "needsRecording": true,
    "figure": {
@@ -831,7 +831,7 @@
     0.667
    ],
    "questionText": "Describe one difference between the music heard in this excerpt and the music which immediately follows this excerpt in Piano Quartet No.1 by Gerald Barry.",
-   "questionContext": "An excerpt from Piano Quartet No.1 by Gerald Barry, played three times.",
+   "questionContext": "An excerpt from Piano Quartet No.1 by Gerald Barry, played three times.\n• Answer the following questions.",
    "excerptLine": null,
    "needsRecording": true,
    "figure": {
@@ -890,7 +890,7 @@
     0.857
    ],
    "questionText": "Describe Barry’s treatment of the tune Sí Beag, Sí Mór in Piano Quartet No.1.",
-   "questionContext": "An excerpt from Piano Quartet No.1 by Gerald Barry, played three times.",
+   "questionContext": "An excerpt from Piano Quartet No.1 by Gerald Barry, played three times.\n• Answer the following questions.",
    "excerptLine": null,
    "needsRecording": false,
    "figure": {
@@ -944,7 +944,7 @@
     0.398
    ],
    "questionText": "Insert the four missing notes at X on the score.",
-   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.",
+   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times. An outline score of the opening four bars of the excerpt is printed below.",
    "needsRecording": true,
    "figure": {
@@ -1020,7 +1020,7 @@
     0.636
    ],
    "questionText": "Describe one feature of Baroque music in this excerpt.",
-   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.",
+   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2, played three times.",
    "needsRecording": true,
    "figure": {
@@ -1074,7 +1074,7 @@
     0.433
    ],
    "questionText": "Describe one similarity and one difference between the music in Excerpt 1 and the music in Excerpt 2. Refer to both excerpts in your answer.",
-   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.",
+   "questionContext": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1 and Excerpt 2 once more.",
    "needsRecording": true,
    "figure": {
@@ -1149,7 +1149,7 @@
     0.306
    ],
    "questionText": "Name the instrument playing in this excerpt.",
-   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1.",
    "needsRecording": true,
    "figure": {
@@ -1192,7 +1192,7 @@
     0.477
    ],
    "questionText": "The music in this excerpt features (tick two)",
-   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1.",
    "needsRecording": true,
    "figure": {
@@ -1240,7 +1240,7 @@
     0.557
    ],
    "questionText": "Using letters, write down the form of the music in this excerpt.",
-   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1.",
    "needsRecording": true,
    "figure": {
@@ -1283,7 +1283,7 @@
     0.775
    ],
    "questionText": "Identify the type of dance tune in this excerpt. Give its time signature and one bar of rhythm associated with it.",
-   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2.",
    "needsRecording": true,
    "figure": {
@@ -1357,7 +1357,7 @@
     0.184
    ],
    "questionText": "Name two instruments which play the melody in this excerpt.",
-   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 2.",
    "needsRecording": true,
    "figure": {
@@ -1411,7 +1411,7 @@
     0.443
    ],
    "questionText": "Identify two features of sean nós singing as heard in this excerpt.",
-   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 3.",
    "needsRecording": true,
    "figure": {
@@ -1466,7 +1466,7 @@
     0.79
    ],
    "questionText": "Describe two features of the instrumental accompaniment heard in this excerpt.",
-   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 3.",
    "needsRecording": true,
    "figure": {
@@ -1978,7 +1978,7 @@
     0.318
    ],
    "questionText": "How many full bars of music are heard in the introduction, before the vocalist enters?",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -2021,7 +2021,7 @@
     0.426
    ],
    "questionText": "Identify a feature of the music played by the piano in this excerpt.",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 1, played three times.",
    "needsRecording": true,
    "figure": {
@@ -2080,8 +2080,8 @@
     0.755
    ],
    "questionText": "Identify two features of the vocal music heard in this excerpt.",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
-   "excerptLine": "Excerpt 2, played three times. The lyrics are printed below.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times.\n• The lyrics are printed below. Line 1 I never thought I’d miss you Line 2 Half as much as I do. Line 3 And I never thought I’d feel this way Line 4 The way I feel about you. Line 5 As soon as I wake up, every night every day. Line 6 I know that it’s you I need to take the blues away.",
    "needsRecording": true,
    "figure": {
     "page": 18,
@@ -2139,8 +2139,8 @@
     0.882
    ],
    "questionText": "Name two instruments (other than piano) heard playing in lines 5–6.",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
-   "excerptLine": "Excerpt 2, played three times. The lyrics are printed below.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times.\n• The lyrics are printed below. Line 1 I never thought I’d miss you Line 2 Half as much as I do. Line 3 And I never thought I’d feel this way Line 4 The way I feel about you. Line 5 As soon as I wake up, every night every day. Line 6 I know that it’s you I need to take the blues away.",
    "needsRecording": true,
    "figure": {
     "page": 18,
@@ -2195,7 +2195,7 @@
     0.168
    ],
    "questionText": "Name the instrument which plays the melody at the start of this excerpt.",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 3, played three times.",
    "needsRecording": true,
    "figure": {
@@ -2241,7 +2241,7 @@
     0.358
    ],
    "questionText": "Describe the texture of the music heard in this excerpt.",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 3, played three times.",
    "needsRecording": true,
    "figure": {
@@ -2296,7 +2296,7 @@
     0.84
    ],
    "questionText": "The missing notes at X on the score are",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 4, played three times. An outline score is printed below.",
    "needsRecording": true,
    "figure": {
@@ -2348,7 +2348,7 @@
     0.368
    ],
    "questionText": "From your prescribed works, select the work which most closely resembles the music heard in this excerpt. Give a reason for your choice.",
-   "questionContext": "Aural Skills This question is based on five excerpts of music.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
    "excerptLine": "Excerpt 5, played three times.",
    "needsRecording": true,
    "figure": {
@@ -2396,7 +2396,7 @@
     5
    ],
    "crop": null,
-   "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list:",
+   "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -2614,7 +2614,7 @@
     9
    ],
    "crop": null,
-   "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a gigue is given. • Continue the given opening to make a 16-bar melody. • Use the form AA1BB1. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list:",
+   "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a gigue is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -2743,7 +2743,7 @@
     13
    ],
    "crop": null,
-   "questionText": "Composing melody and bass notes from a set of chords • Study the following piece of music. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
+   "questionText": "Composing melody and bass notes from a set of chords Preparatory work: Plot the chords available in the key of E minor, either in the chord bank grid or on the stave below. • Study the following piece of music. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -2897,7 +2897,7 @@
     15
    ],
    "crop": null,
-   "questionText": "Composing bass notes and chord indications to a given tune • Study the following piece of music. • Add suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+   "questionText": "Composing bass notes and chord indications to a given tune Preparatory work: Plot the chords available in the key of A major, either in the chord bank grid or on the stave below. • Study the following piece of music. • Add suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -3040,7 +3040,7 @@
     17
    ],
    "crop": null,
-   "questionText": "Adding a countermelody or descant and chordal support to a given tune • Study the following piece of music. • Insert suitable chord indications in the boxes provided. • Continue the descant part in the given style to complete the piece. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+   "questionText": "Adding a countermelody or descant and chordal support to a given tune Preparatory work: Plot the chords available in the key of D major, either in the chord bank grid or on the stave below. • Study the following piece of music. • Insert suitable chord indications in the boxes provided. • Continue the descant part in the given style to complete the piece. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,
@@ -3346,6 +3346,34 @@
    "sharedCard": "e-q1-q4",
    "label": "(b)",
    "notes": "Marked inside the shared band. Answer space runs on pages 3-7 (page 7 is staves)."
+  }
+ ],
+ "readFromPage": [
+  {
+   "booklet": "listening",
+   "page": 4,
+   "box": [
+    0.08,
+    0.06,
+    0.92,
+    0.25
+   ],
+   "text": "Excerpt 3, played three times. The lyrics are printed below. Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
+   "readBy": "music lane lead, 19 Nov 2026, from a 170 dpi render of the page",
+   "why": "The booklet has no usable text layer and the OCR misreads \"I’ve\" and \"I need\" as \"l’ve\" and \"l need\"."
+  },
+  {
+   "booklet": "listening",
+   "page": 18,
+   "box": [
+    0.08,
+    0.47,
+    0.92,
+    0.63
+   ],
+   "text": "Excerpt 2, played three times.\n• The lyrics are printed below. Line 1 I never thought I’d miss you Line 2 Half as much as I do. Line 3 And I never thought I’d feel this way Line 4 The way I feel about you. Line 5 As soon as I wake up, every night every day. Line 6 I know that it’s you I need to take the blues away.",
+   "readBy": "music lane lead, 19 Nov 2026, from a 170 dpi render of the page",
+   "why": "The booklet has no usable text layer and the OCR misreads \"I’ve\" and \"I need\" as \"l’ve\" and \"l need\"."
   }
  ]
 }
