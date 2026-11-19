@@ -1,0 +1,1099 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2018,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003GLP100EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "defe64f7981f7184f494e0540de12d96be3fe4ddb548200dbed8309b7f0120f4",
+  "schemeSha256": "3e24b6941a9023945287286d086d781523098bccd55969d390cca3d308c9c368",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 16 question-paper pages and PDF pages 1–21 of the combined Ordinary Level scheme (cover, notes, contents, the Paper 1 title page 5, the scale table on page 6, the summary of mark allocations on page 7, every Paper 1 model solution and marking note on pages 8–20, and the Paper 2 title page 21). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 55,
+    "8": 65,
+    "9": 30
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    6,
+    7
+  ],
+  "sourceNotes": [
+    "The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 55 marks, Q8 65 marks, Q9 30 marks). Every question is retained.",
+    "37 independently marked units, matching the printed summary of allocations on scheme page 7.",
+    "Paper 1 bands from the 2018 Ordinary scale table on scheme page 6: 5B 0,3,5; 5C 0,3,4,5; 5D 0,2,3,4,5; 10C 0,3,8,10; 10D 0,2,6,8,10; 15C 0,4,12,15; 15D 0,3,7,13,15. Every part prints the same ladder beside its scale.",
+    "This paper had no authored cards before this review; all 37 units are new. Marking points are lifted line by line from the scheme (read through the glyph repair map) and labelled with the part of the scheme they come from; the scheme’s bullets are not reproduced. Q9(b)(i) prints “Low Partial Credit” on its 5B scale and is labelled as printed. Two alternative methods in Q7(d) are quoted as one multi-line point each to stay within the row limit.",
+    "Four parts carry the SEC’s own print of their scheme row (model solution and every credit band), cropped from the scheme PDF and shown only after the reveal, because the model solution is an image (the Q2(a) Argand diagram, the Q4(a) tile diagram, the Q8(c) graph) or its roots formula loses the denominator 4 to the mark-cell filter (Q3(a)).",
+    "The question booklet is LC003GLP100EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 2. Scheme page references are PDF positions (printed page number + 3); question-paper PDF positions match the printed page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2018-ol-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "When Sean joined a sales company he was offered a choice of two different salary contracts. The details of the contracts are outlined in the table below. Contract A: salary €35 000, end of year commission on total sales 2%. Contract B: salary €30 000, end of year commission on total sales 3%.",
+      "questionText": "Find how much Sean would earn under each contract in a year where his total sales were €400 000."
+    },
+    {
+      "id": "maths-2018-ol-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "When Sean joined a sales company he was offered a choice of two different salary contracts. The details of the contracts are outlined in the table below. Contract A: salary €35 000, end of year commission on total sales 2%. Contract B: salary €30 000, end of year commission on total sales 3%.",
+      "questionText": "Another employee, Mary, earned €50 000 in a particular year. She is on Contract A. Find her total sales for that year."
+    },
+    {
+      "id": "maths-2018-ol-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "When Sean joined a sales company he was offered a choice of two different salary contracts. The details of the contracts are outlined in the table below. Contract A: salary €35 000, end of year commission on total sales 2%. Contract B: salary €30 000, end of year commission on total sales 3%.",
+      "questionText": "Find the total sales for which a salesperson would earn the same amount of money under each contract."
+    },
+    {
+      "id": "maths-2018-ol-p1-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        13,
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "z₁ = −2 + 3i and z₂ = −3 − 2i, where i² = −1. z₃ = z₁ − z₂.",
+      "questionText": "Plot z₁, z₂, and z₃ on the Argand Diagram. Label each point clearly."
+    },
+    {
+      "id": "maths-2018-ol-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "z₁ = −2 + 3i and z₂ = −3 − 2i, where i² = −1. z₃ = z₁ − z₂.",
+      "questionText": "Investigate if |z₃| = |z₁| + |z₂|."
+    },
+    {
+      "id": "maths-2018-ol-p1-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "z₁ = −2 + 3i and z₂ = −3 − 2i, where i² = −1. z₃ = z₁ − z₂.",
+      "questionText": "z₄ = z₁/z₂. Write z₄ in the form x + yi, where x, y ∈ ℝ."
+    },
+    {
+      "id": "maths-2018-ol-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the equation 2x² − 7x − 3 = 0. Give each answer correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2018-ol-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        13,
+        15
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the simultaneous equations below to find the value of a and the value of b. 2a + 3b = 15; 5a + b = −8."
+    },
+    {
+      "id": "maths-2018-ol-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three stages in a pattern of grey and white tiles are shown in the diagram below.",
+      "questionText": "Draw the next stage of tiles (Stage 4) onto the diagram above."
+    },
+    {
+      "id": "maths-2018-ol-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three stages in a pattern of grey and white tiles are shown in the diagram below.",
+      "questionText": "Based on the pattern shown, complete the table below. Stage (n): 1, 2, 3, 4, 5. Number of Grey Tiles: 4, _, _, _, _. Number of White Tiles: _, _, _, _, _. Total: 6, _, _, _, _."
+    },
+    {
+      "id": "maths-2018-ol-p1-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series",
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "The first three stages in a pattern of grey and white tiles are shown in the diagram below.",
+      "questionText": "Assuming the pattern continues, the total number of tiles in stage n (Tₙ) is given by the formula Tₙ = n² + bn + c, where b and c ∈ ℕ. Find the value of b and the value of c."
+    },
+    {
+      "id": "maths-2018-ol-p1-q4-d",
+      "printedParts": [
+        "Q4(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "The first three stages in a pattern of grey and white tiles are shown in the diagram below. Part (c): Assuming the pattern continues, the total number of tiles in stage n (Tₙ) is given by the formula Tₙ = n² + bn + c, where b and c ∈ ℕ. Find the value of b and the value of c.",
+      "questionText": "Find the number of the stage which has 443 tiles in total."
+    },
+    {
+      "id": "maths-2018-ol-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The diagram on the right shows the graph of a quadratic function, f.",
+      "questionText": "Write down the co-ordinates of A, B, and C."
+    },
+    {
+      "id": "maths-2018-ol-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "The diagram on the right shows the graph of a quadratic function, f.",
+      "questionText": "Show that the function can be written as f(x) = −x² + x + 6."
+    },
+    {
+      "id": "maths-2018-ol-p1-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "The diagram on the right shows the graph of a quadratic function, f. Part (b): Show that the function can be written as f(x) = −x² + x + 6.",
+      "questionText": "Show, using calculus, that the maximum point of f(x) is (0·5, 6·25)."
+    },
+    {
+      "id": "maths-2018-ol-p1-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve for x. (x + 5)(3x − 4) − 3(x² + 2) + 4 = 0"
+    },
+    {
+      "id": "maths-2018-ol-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        13,
+        15
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Find the solutions of 5/(x + 3) − 1/x = 1/2 where x ≠ −3, 0, x ∈ ℝ."
+    },
+    {
+      "id": "maths-2018-ol-p1-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "Part of the seating arrangement in a theatre is shown in the diagram below. The seats are arranged in rows. Row 1 is nearest the stage and has 28 seats. Each subsequent row behind that contains one more seat. i.e. row 2 has 29 seats, row 3 has 30 seats, and so on.",
+      "questionText": "Find the number of seats in row 10."
+    },
+    {
+      "id": "maths-2018-ol-p1-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "Part of the seating arrangement in a theatre is shown in the diagram below. The seats are arranged in rows. Row 1 is nearest the stage and has 28 seats. Each subsequent row behind that contains one more seat. i.e. row 2 has 29 seats, row 3 has 30 seats, and so on.",
+      "questionText": "There are 50 seats in the last row. How many rows of seats are there in the theatre?"
+    },
+    {
+      "id": "maths-2018-ol-p1-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "Part of the seating arrangement in a theatre is shown in the diagram below. The seats are arranged in rows. Row 1 is nearest the stage and has 28 seats. Each subsequent row behind that contains one more seat. i.e. row 2 has 29 seats, row 3 has 30 seats, and so on. Part (b): There are 50 seats in the last row. How many rows of seats are there in the theatre?",
+      "questionText": "Find the total number of seats in the theatre."
+    },
+    {
+      "id": "maths-2018-ol-p1-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "Part of the seating arrangement in a theatre is shown in the diagram below. The seats are arranged in rows. Row 1 is nearest the stage and has 28 seats. Each subsequent row behind that contains one more seat. i.e. row 2 has 29 seats, row 3 has 30 seats, and so on.",
+      "questionText": "On a particular night 600 people are at a show in the theatre. Assume that people are seated only in the rows closest to the stage, i.e. they have filled the first n rows and there are some people seated in the next row. Find the value of n and find the number of people seated in the next row."
+    },
+    {
+      "id": "maths-2018-ol-p1-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Part of the seating arrangement in a theatre is shown in the diagram below. The seats are arranged in rows. Row 1 is nearest the stage and has 28 seats. Each subsequent row behind that contains one more seat. i.e. row 2 has 29 seats, row 3 has 30 seats, and so on.",
+      "questionText": "For a particular show, adult tickets cost €25 each and children’s tickets cost €12 each. Find the total income from ticket sales if 276 adult tickets and 212 children’s tickets were sold."
+    },
+    {
+      "id": "maths-2018-ol-p1-q7-f-i",
+      "printedParts": [
+        "Q7(f)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Part of the seating arrangement in a theatre is shown in the diagram below. The seats are arranged in rows. Row 1 is nearest the stage and has 28 seats. Each subsequent row behind that contains one more seat. i.e. row 2 has 29 seats, row 3 has 30 seats, and so on.",
+      "questionText": "For a different show 752 tickets were sold. The ratio of adult tickets sold to children’s tickets sold is 3 : 1. Find how many adult tickets and how many children’s tickets were sold for that show."
+    },
+    {
+      "id": "maths-2018-ol-p1-q7-f-ii",
+      "printedParts": [
+        "Q7(f)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "Part of the seating arrangement in a theatre is shown in the diagram below. The seats are arranged in rows. Row 1 is nearest the stage and has 28 seats. Each subsequent row behind that contains one more seat. i.e. row 2 has 29 seats, row 3 has 30 seats, and so on. Part (f)(i): For a different show 752 tickets were sold. The ratio of adult tickets sold to children’s tickets sold is 3 : 1. Find how many adult tickets and how many children’s tickets were sold for that show.",
+      "questionText": "For the show referred to in part f(i) an adult ticket cost 2½ times as much as a children’s ticket. The income was €17 578. Find the cost of a children’s ticket for this show."
+    },
+    {
+      "id": "maths-2018-ol-p1-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t ∈ ℝ.",
+      "questionText": "Use the drug amount function, C(t), to show that the amount of the drug in the bloodstream 4 hours after the drug has been taken is 224 units."
+    },
+    {
+      "id": "maths-2018-ol-p1-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t ∈ ℝ.",
+      "questionText": "Use the function C(t) to complete the table below. t (Hours): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. C(t) (Units): 0, 57·5, _, _, 224, _, _, _, _, _."
+    },
+    {
+      "id": "maths-2018-ol-p1-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t ∈ ℝ. Part (b): Use the function C(t) to complete the table below. t (Hours): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. C(t) (Units): 0, 57·5, _, _, 224, _, _, _, _, _.",
+      "questionText": "Draw the graph of the function C(t) for 0 ≤ t ≤ 9 where t ∈ ℝ."
+    },
+    {
+      "id": "maths-2018-ol-p1-q8-d-i",
+      "printedParts": [
+        "Q8(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t ∈ ℝ. Part (c): Draw the graph of the function C(t) for 0 ≤ t ≤ 9 where t ∈ ℝ.",
+      "questionText": "Use your graph to estimate each of the following values. In each case show your work on the graph above. The amount of the drug in the bloodstream after 3½ hours."
+    },
+    {
+      "id": "maths-2018-ol-p1-q8-d-ii",
+      "printedParts": [
+        "Q8(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t ∈ ℝ. Part (c): Draw the graph of the function C(t) for 0 ≤ t ≤ 9 where t ∈ ℝ.",
+      "questionText": "Use your graph to estimate each of the following values. In each case show your work on the graph above. How long after taking the drug will the amount of the drug in the bloodstream be 100 units?"
+    },
+    {
+      "id": "maths-2018-ol-p1-q8-e-i",
+      "printedParts": [
+        "Q8(e)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t ∈ ℝ.",
+      "questionText": "Use the drug amount function C(t) = −t³ + 4·5t² + 54t to find, in terms of t, the rate at which the drug amount is changing after t hours."
+    },
+    {
+      "id": "maths-2018-ol-p1-q8-e-ii",
+      "printedParts": [
+        "Q8(e)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t ∈ ℝ. Part (e)(i): Use the drug amount function C(t) = −t³ + 4·5t² + 54t to find, in terms of t, the rate at which the drug amount is changing after t hours.",
+      "questionText": "Use your answer to part e(i) to find the rate at which the drug amount is changing after 4 hours."
+    },
+    {
+      "id": "maths-2018-ol-p1-q8-e-iii",
+      "printedParts": [
+        "Q8(e)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t ∈ ℝ. Part (e)(i): Use the drug amount function C(t) = −t³ + 4·5t² + 54t to find, in terms of t, the rate at which the drug amount is changing after t hours.",
+      "questionText": "Use your answer to part e(i) to find the maximum amount of the drug in the bloodstream over the first 9 hours."
+    },
+    {
+      "id": "maths-2018-ol-p1-q8-e-iv",
+      "printedParts": [
+        "Q8(e)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t ∈ ℝ. Part (e)(i): Use the drug amount function C(t) = −t³ + 4·5t² + 54t to find, in terms of t, the rate at which the drug amount is changing after t hours.",
+      "questionText": "Use your answer to part e(i) to show that the drug amount in the bloodstream is decreasing 7 hours after the drug has been taken. Explain your reasoning."
+    },
+    {
+      "id": "maths-2018-ol-p1-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "When earthquakes occur under the sea, they can cause large tidal waves called tsunamis. Scientists can estimate the arrival times of tsunamis to nearby countries. The average speed at which a tsunami travels is given by the formula: s = √(g × d) where s is the speed of the tsunami (in metres per second), d is the depth of the ocean (in metres) at the location where the earthquake occurred, and g = 9·8 metres per second².",
+      "questionText": "Find s, the speed of a tsunami when the an earthquake occurs at a depth of 2000 m. Give your answer in metres per second."
+    },
+    {
+      "id": "maths-2018-ol-p1-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "When earthquakes occur under the sea, they can cause large tidal waves called tsunamis. Scientists can estimate the arrival times of tsunamis to nearby countries. The average speed at which a tsunami travels is given by the formula: s = √(g × d) where s is the speed of the tsunami (in metres per second), d is the depth of the ocean (in metres) at the location where the earthquake occurred, and g = 9·8 metres per second². Part (a)(i): Find s, the speed of a tsunami when the an earthquake occurs at a depth of 2000 m. Give your answer in metres per second.",
+      "questionText": "A tsunami has been identified as beginning 400 km from land. The depth of the ocean at that point is 2000 m. Find how long it will take this tsunami to reach land. Give your answer correct to the nearest minute."
+    },
+    {
+      "id": "maths-2018-ol-p1-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "When earthquakes occur under the sea, they can cause large tidal waves called tsunamis. Scientists can estimate the arrival times of tsunamis to nearby countries. The average speed at which a tsunami travels is given by the formula: s = √(g × d) where s is the speed of the tsunami (in metres per second), d is the depth of the ocean (in metres) at the location where the earthquake occurred, and g = 9·8 metres per second².",
+      "questionText": "Rearrange the formula to give d in terms of g and s."
+    },
+    {
+      "id": "maths-2018-ol-p1-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        4,
+        12,
+        15
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "When earthquakes occur under the sea, they can cause large tidal waves called tsunamis. Scientists can estimate the arrival times of tsunamis to nearby countries. The average speed at which a tsunami travels is given by the formula: s = √(g × d) where s is the speed of the tsunami (in metres per second), d is the depth of the ocean (in metres) at the location where the earthquake occurred, and g = 9·8 metres per second². Part (b)(i): Rearrange the formula to give d in terms of g and s.",
+      "questionText": "Hence, or otherwise, find the depth of the ocean at the place where an earthquake occurred, if the resulting tsunami has a speed of 55 metres per second. Give your answer correct to the nearest metre"
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        10
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        15
+      ],
+      "wording": "Hence, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task, with no printed pool of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "2:48a21cd75db7f791": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "3:cba1da2d44615842": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "10:716f79d4474f27e3": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "15:ef69b81dee19f9ce": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    }
+  }
+}

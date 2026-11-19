@@ -1,0 +1,804 @@
+{
+  "paperFileid": "LC003GLP230EV.pdf",
+  "schemeFileid": "LC003GLP030EV.pdf",
+  "offeredMarks": 325,
+  "candidateMarks": 300,
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6A": 25,
+    "6B": 25,
+    "7": 75,
+    "8": 75
+  },
+  "scales": {
+    "5B": [
+      0,
+      3,
+      5
+    ],
+    "5C": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "10B": [
+      0,
+      6,
+      10
+    ],
+    "10C": [
+      0,
+      5,
+      8,
+      10
+    ],
+    "15B": [
+      0,
+      8,
+      15
+    ],
+    "15C": [
+      0,
+      8,
+      13,
+      15
+    ],
+    "15D": [
+      0,
+      7,
+      10,
+      13,
+      15
+    ],
+    "20C": [
+      0,
+      10,
+      18,
+      20
+    ],
+    "25C": [
+      0,
+      8,
+      20,
+      25
+    ]
+  },
+  "status": "Complete: independent source and crop review, publication, reconciliation and runtime verification passed",
+  "reviewedAt": "2026-10-30",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76
+  ],
+  "generalNotesPages": [
+    60,
+    61
+  ],
+  "tasks": [
+    {
+      "suffix": "1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "scale": "15D",
+      "totalMarks": 15,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        45,
+        63
+      ],
+      "questionText": "Find the equation of the line AB.",
+      "stem": "A(6, 1) and B(2, −1) are shown on the original coordinate diagram."
+    },
+    {
+      "suffix": "1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        45,
+        63
+      ],
+      "questionText": "The line AB crosses the y-axis at C. Find the coordinates of C.",
+      "stem": "A(6, 1) and B(2, −1) are shown on the original coordinate diagram."
+    },
+    {
+      "suffix": "1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        45,
+        63
+      ],
+      "questionText": "Find |AB|/|AC| in the form p/q, where p and q are whole numbers.",
+      "stem": "A(6, 1) and B(2, −1) are shown on the original coordinate diagram. C is the y-axis intercept of AB; find it first if practising independently."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "questionText": "Show c₁ on a coordinate diagram.",
+      "stem": "Circle c₁ has centre (0, 0) and diameter 8 units."
+    },
+    {
+      "suffix": "2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "questionText": "Find the equation of c₁.",
+      "stem": "Circle c₁ has centre (0, 0) and diameter 8 units."
+    },
+    {
+      "suffix": "2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "questionText": "Prove that (3, 2) is inside c₁ and that (3, 3) is outside it.",
+      "stem": "Circle c₁ has centre (0, 0) and diameter 8 units."
+    },
+    {
+      "suffix": "2-d",
+      "printedParts": [
+        "Q2(d)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "questionText": "Circle c₂ has centre (0, 1) and just touches c₁. Show c₂ on your diagram and find its equation.",
+      "stem": "Circle c₁ has centre (0, 0) and diameter 8 units."
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        47,
+        65
+      ],
+      "questionText": "Explain why two possible outcomes do not necessarily give a probability of 1/2 for landing flat side down.",
+      "stem": "A hemispherical toy can land flat side down or flat side up."
+    },
+    {
+      "suffix": "3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        47,
+        65
+      ],
+      "questionText": "Which group’s estimate is likely to be better, and why?",
+      "stem": "A hemispherical toy can land flat side down or flat side up. Group A drops it 100 times and estimates P(flat side down) = 0.76; Group B drops it 500 times and estimates 0.812."
+    },
+    {
+      "suffix": "3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        47,
+        65
+      ],
+      "questionText": "How many times did the toy land flat side down for Group B?",
+      "stem": "A hemispherical toy can land flat side down or flat side up. Group A drops it 100 times and estimates P(flat side down) = 0.76; Group B drops it 500 times and estimates 0.812."
+    },
+    {
+      "suffix": "3-b-iii",
+      "printedParts": [
+        "Q3(b)(iii)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        47,
+        65
+      ],
+      "questionText": "Using both groups’ data, what is the best estimate of the probability that the toy lands flat side down?",
+      "stem": "A hemispherical toy can land flat side down or flat side up. Group A drops it 100 times and estimates P(flat side down) = 0.76; Group B drops it 500 times and estimates 0.812."
+    },
+    {
+      "suffix": "4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "scale": "10B",
+      "totalMarks": 10,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        48,
+        66
+      ],
+      "questionText": "What is the median number of sweets?",
+      "stem": "The original stem-and-leaf plot records the number of sweets in nineteen packets."
+    },
+    {
+      "suffix": "4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        48,
+        66
+      ],
+      "questionText": "What is the range of the data?",
+      "stem": "The original stem-and-leaf plot records the number of sweets in nineteen packets."
+    },
+    {
+      "suffix": "4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        48,
+        66
+      ],
+      "questionText": "Find the interquartile range of the data.",
+      "stem": "The original stem-and-leaf plot records the number of sweets in nineteen packets."
+    },
+    {
+      "suffix": "4-d",
+      "printedParts": [
+        "Q4(d)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        48,
+        66
+      ],
+      "questionText": "Delete the incorrect word in each pair: [univariate / bivariate] data; [discrete / continuous] data.",
+      "stem": "The original stem-and-leaf plot records the number of sweets in nineteen packets."
+    },
+    {
+      "suffix": "5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        49,
+        67
+      ],
+      "questionText": "Find the volume of a cylinder of radius 6 mm and height 20 mm, in terms of π.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        49,
+        67
+      ],
+      "questionText": "Find the volume of a cylinder of radius 6 mm and height 20 mm, correct to two decimal places.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        49,
+        67
+      ],
+      "questionText": "After how many cylindrical holes will more than half of the original block have been removed?",
+      "stem": "A solid block measures 60 mm × 35 mm × 20 mm. Holes of radius 6 mm are drilled through the 20 mm dimension in the direction shown."
+    },
+    {
+      "suffix": "6a-a",
+      "printedParts": [
+        "Q6A(a)"
+      ],
+      "scale": "15C",
+      "totalMarks": 15,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        50,
+        68
+      ],
+      "questionText": "Construct the centroid of the original triangle. All instruments are permitted; show any measurements and calculations used.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "6a-b",
+      "printedParts": [
+        "Q6A(b)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        50,
+        68
+      ],
+      "questionText": "State what an axiom is and explain why axioms are needed to prove theorems."
+    },
+    {
+      "suffix": "6b",
+      "printedParts": [
+        "Q6B"
+      ],
+      "scale": "25C",
+      "totalMarks": 25,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        51,
+        68
+      ],
+      "questionText": "Show that DEFG is a cyclic quadrilateral.",
+      "stem": "In the original diagram, ABCD is a cyclic quadrilateral and ABCF is a parallelogram."
+    },
+    {
+      "suffix": "7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "scale": "15B",
+      "totalMarks": 15,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        52,
+        69
+      ],
+      "questionText": "In 1966, how many households had exactly eight people?",
+      "stem": "Use the original census table of permanent private households in Ireland from 1926 to 2006. Ignore other types of household."
+    },
+    {
+      "suffix": "7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        52,
+        69
+      ],
+      "questionText": "In 1986, how many people lived in households of exactly seven people?",
+      "stem": "Use the original census table of permanent private households in Ireland from 1926 to 2006. Ignore other types of household."
+    },
+    {
+      "suffix": "7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        52,
+        69
+      ],
+      "questionText": "Estimate the mean number of people per household in 2006, correct to one decimal place.",
+      "stem": "Use the original census table of permanent private households in Ireland from 1926 to 2006. Ignore other types of household.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        53,
+        69
+      ],
+      "questionText": "State the main point or points that each of Conor, Fiona and Ray was trying to make in the three original slides.",
+      "stem": "Use the original census table of permanent private households in Ireland from 1926 to 2006. Ignore other types of household.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        10,
+        12
+      ],
+      "schemePages": [
+        54,
+        69
+      ],
+      "questionText": "A household is chosen randomly from all households in 2006. What is the probability that it has seven or eight people?",
+      "stem": "Use the original census table of permanent private households in Ireland from 1926 to 2006. Ignore other types of household."
+    },
+    {
+      "suffix": "7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        10,
+        12
+      ],
+      "schemePages": [
+        54,
+        69
+      ],
+      "questionText": "1000 households are randomly selected from all households in 2006. If X is the number of four-person households selected, find E(X).",
+      "stem": "Use the original census table of permanent private households in Ireland from 1926 to 2006. Ignore other types of household."
+    },
+    {
+      "suffix": "7-e-i",
+      "printedParts": [
+        "Q7(e)(i)"
+      ],
+      "scale": "15B",
+      "totalMarks": 15,
+      "sourcePages": [
+        12
+      ],
+      "schemePages": [
+        54,
+        70
+      ],
+      "questionText": "Describe the differences between the two distributions.",
+      "stem": "Use the original 2006 charts of household sizes in Dublin City and South Dublin. The vertical axes show percentages of households."
+    },
+    {
+      "suffix": "7-e-ii",
+      "printedParts": [
+        "Q7(e)(ii)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        55,
+        70
+      ],
+      "questionText": "There are about 81,000 households in South Dublin. Estimate how many people live in four-person households.",
+      "stem": "Use the original 2006 charts of household sizes in Dublin City and South Dublin. The vertical axes show percentages of households."
+    },
+    {
+      "suffix": "7-e-iii",
+      "printedParts": [
+        "Q7(e)(iii)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        55,
+        70
+      ],
+      "questionText": "What is the median household size in Dublin City?",
+      "stem": "Use the original 2006 charts of household sizes in Dublin City and South Dublin. The vertical axes show percentages of households."
+    },
+    {
+      "suffix": "7-e-iv",
+      "printedParts": [
+        "Q7(e)(iv)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        55,
+        70
+      ],
+      "questionText": "A person is randomly selected from all people living in Dublin City. Is the person more likely to live alone or in a three-person household? Explain.",
+      "stem": "Use the original 2006 charts of household sizes in Dublin City and South Dublin. The vertical axes show percentages of households."
+    },
+    {
+      "suffix": "8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "scale": "15C",
+      "totalMarks": 15,
+      "sourcePages": [
+        14
+      ],
+      "schemePages": [
+        56,
+        71
+      ],
+      "questionText": "Show that AB = 70 cm.",
+      "stem": "A classroom table has an isosceles trapezium top ABCD, with AD = 140 cm, BC = 70 cm, AB = DC and ∠ADC = ∠DAB = 60°."
+    },
+    {
+      "suffix": "8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "scale": "20C",
+      "totalMarks": 20,
+      "sourcePages": [
+        14
+      ],
+      "schemePages": [
+        56,
+        71
+      ],
+      "questionText": "Find the distance between the parallel sides AD and BC, in centimetres, correct to one decimal place.",
+      "stem": "A classroom table has an isosceles trapezium top ABCD, with AD = 140 cm, BC = 70 cm, AB = DC and ∠ADC = ∠DAB = 60°. Part (a) establishes AB = 70 cm.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "scale": "20C",
+      "totalMarks": 20,
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        57,
+        71
+      ],
+      "questionText": "What fraction of the table surface is yellow in the original yellow-and-blue pattern? Show your work.",
+      "stem": "A classroom table has an isosceles trapezium top ABCD, with AD = 140 cm, BC = 70 cm, AB = DC and ∠ADC = ∠DAB = 60°."
+    },
+    {
+      "suffix": "8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        57,
+        71
+      ],
+      "questionText": "Two painted tables form the original hexagon. Prove that the yellow area is a rectangle.",
+      "stem": "A classroom table has an isosceles trapezium top ABCD, with AD = 140 cm, BC = 70 cm, AB = DC and ∠ADC = ∠DAB = 60°."
+    },
+    {
+      "suffix": "8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        14,
+        16
+      ],
+      "schemePages": [
+        58,
+        72
+      ],
+      "questionText": "Find the total classroom width in metres, correct to two decimal places.",
+      "stem": "A classroom table has an isosceles trapezium top ABCD, with AD = 140 cm, BC = 70 cm, AB = DC and ∠ADC = ∠DAB = 60°. Twelve tables form six hexagons as shown, with 2 m clearance between neighbouring tables and 1.5 m to the side walls.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-f",
+      "printedParts": [
+        "Q8(f)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        14,
+        17
+      ],
+      "schemePages": [
+        59,
+        72
+      ],
+      "questionText": "How much does each table weigh, in kilograms, correct to one decimal place?",
+      "stem": "A classroom table has an isosceles trapezium top ABCD, with AD = 140 cm, BC = 70 cm, AB = DC and ∠ADC = ∠DAB = 60°. The wooden top is 1.6 cm thick and weighs 0.75 g per cm³; the metal frame weighs 6 kg.",
+      "fullCreditMinusOne": true
+    }
+  ],
+  "paperSha256": "eefed571c26566544ec1f7e65b3fcdc5fd3baa07aebf7077be4fdeb685138c31",
+  "schemeSha256": "8f5f26d039d785de5584b6f8ee8fe6f601529c33e97f7df0afb76a8537631d7c",
+  "selectionReview": [
+    {
+      "scope": "Whole paper / Q6",
+      "reason": "All mandatory tasks and both complete Question 6 alternatives retained. Q6A has two separately marked tasks; Q6B is one 25C proof. Candidates answer one alternative, giving 325 offered marks and 300 candidate marks."
+    },
+    {
+      "scope": "Q7 census introduction",
+      "reason": "“One of the items of information gathered in a census” introduces the household-size variable; it does not instruct the candidate to choose an answer."
+    },
+    {
+      "scope": "Q2(d), Q3(a), Q4(d), Q6A, Q6B, Q7(b,c,e), Q8",
+      "reason": "The two acceptable tangent circles and alternative mathematical methods are solution routes, not finite printed question pools. Both Q4 word pairs, all three Q7(b) slides and all five Q6B proof steps are required within their single scales. Seven or eight in Q7(c) is an event union; Q7(e)(iv) requires a comparison and explanation, not two selectable tasks. No internal finite answer pools remain."
+    }
+  ],
+  "notes": [
+    "All 20 original paper pages and scheme PDF pages 43–76 independently visually inspected, including cover pages, blank working pages, model solutions, alternatives, diagrams, scale table, detailed notes and web amendments. All page references are PDF positions.",
+    "37 separately practicable tasks and 37 scale components. Q5(a)(i) and (ii) have separate published marks. Q2(c), Q4(d), Q6B and Q7(b) remain holistic tasks.",
+    "Full Credit Minus One applies only to the seven starred tasks: Q5(a)(i,ii), Q7(a)(iii), Q7(b), Q8(b,e,f). Q7(b) follows the detailed 5C* despite the unstarred summary; Q2(d) follows its published 0,3,4,5 ladder despite the omitted C.",
+    "Q6A(a) retains the original construction triangle, paper reader ruler and ±3 mm midpoint tolerance. Q7 keeps original table, CSO attribution, all slides and both graphs.",
+    "Q7(a)(iii) accepts 2.6–3.0 with work, exceptionally 2.8 without work; Q7(c) accepts a correct answer without work. Candidate-answer follow-through retained in Q2(b), Q5(b) and Q8(f).",
+    "Q8(b) printed 70√3 is corrected in a separate source note to 35√3 = 70 sin 60°; original scheme image unchanged. Q7(e)(i) source note qualifies the claim that graphically negligible bars prove zero households."
+  ]
+}

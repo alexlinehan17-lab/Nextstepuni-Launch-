@@ -148,8 +148,8 @@ describe('Foundation level and other names', () => {
     expect(choicesFor('6th', 'foundation')).toEqual(['F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8']);
   });
 
-  it('practises Foundation in the Ordinary Mark Bank deck', () => {
-    expect(profileDeckChoice([{ subjectName: 'Mathematics', level: 'foundation' }])).toEqual({ subjectId: 'maths', level: 'ordinary' });
+  it('practises Foundation in the Foundation Mark Bank deck now Mathematics has one', () => {
+    expect(profileDeckChoice([{ subjectName: 'Mathematics', level: 'foundation' }])).toEqual({ subjectId: 'maths', level: 'foundation' });
   });
 
   it('finds a subject by the name students search for', () => {

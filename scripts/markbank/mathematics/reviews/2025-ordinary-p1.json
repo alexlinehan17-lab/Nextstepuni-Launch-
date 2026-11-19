@@ -1,0 +1,1254 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2025,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003GLP100EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "87d6150ff7077495daa46d127be7445effa1ada6e5b02d9d118e5d98533be636",
+  "schemeSha256": "c1fda1631ad49b1d83dfd60605c5c296f5627e5bd5790f7c9aec3af45b51daab",
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Independent visual reading of all 32 paper pages and scheme pages 1–22; task boundaries transcribed from each published scale block.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    4,
+    5,
+    6
+  ],
+  "sourceNotes": [
+    "The Ordinary 15D scales differ between the two papers: Paper 1 awards 0,4,8,10,15; Paper 2 awards 0,6,8,10,15. Preserve the paper-specific marks.",
+    "Tasks sharing a single printed scale remain grouped, with earlier source pages attached when required.",
+    "All plaintext stems and asks were checked against the viewed paper, including every grouped Roman part and variables lost by earlier extraction. The source reader remains the exact reference for diagrams, tables and notation."
+  ],
+  "cards": [
+    {
+      "id": "maths-2025-ol-p1-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Seán is buying a power bank and a USB-C cable.",
+      "questionText": "One power bank costs €30 before VAT at 23% has been added. Find the cost of the power bank after VAT has been added."
+    },
+    {
+      "id": "maths-2025-ol-p1-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Seán is going to buy a different power bank that costs €26, and a USB-C cable that costs €9. Seán sees a special offer to buy the power bank and USB-C cable together for €28.",
+      "questionText": "Work out the percentage discount of this special offer."
+    },
+    {
+      "id": "maths-2025-ol-p1-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)",
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Máiréad and Diarmuid own a window cleaning business. Máiréad can clean a standard window in 9 minutes. Diarmuid can clean a standard window in 12 minutes.",
+      "questionText": "(i) Máiréad and Diarmuid both start cleaning standard windows at the same time. They both finish cleaning a window at the same time. After how many minutes will this first happen? (ii) A building has 35 standard windows. Work out how long it would take Máiréad and Diarmuid to clean the 35 windows if they work together."
+    },
+    {
+      "id": "maths-2025-ol-p1-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1. z₁, z₂ and z₃ are three complex numbers: z₁ = −1 + 2i, z₂ = 2 + 3i, z₃ = 4 − i.",
+      "questionText": "The complex number z₁ is shown on the Argand diagram below. Plot and label z₂ and z₃ on the same Argand diagram."
+    },
+    {
+      "id": "maths-2025-ol-p1-q2-a-ii",
+      "printedParts": [
+        "Q2(a)(ii)",
+        "Q2(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1. z₁, z₂ and z₃ are three complex numbers: z₁ = −1 + 2i, z₂ = 2 + 3i, z₃ = 4 − i.",
+      "questionText": "(ii) Work out the modulus of z₁. That is, find |z₁|. Give your answer in surd form. (iii) z₄ is a complex number with |z₄| < |z₁|. Write down one possible value of z₄. Give your answer in the form a + bi, where a, b ∈ ℤ."
+    },
+    {
+      "id": "maths-2025-ol-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "u and v are two complex numbers. u = 4 − 6i, v = 1 + i.",
+      "questionText": "Write u/v in the form a + bi, where a, b ∈ ℤ."
+    },
+    {
+      "id": "maths-2025-ol-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Rickie is buying protein bars. The cost of a single protein bar is €3·30. A shop has the following two special offers: Offer A: 3 bars for the price of 2 bars. Offer B: 12 pack of the same bar for €29·99.",
+      "questionText": "Which offer is cheaper per bar? Use calculations to support your answer. Cheaper offer: Offer A or Offer B. Tick one box only."
+    },
+    {
+      "id": "maths-2025-ol-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "",
+      "questionText": "Solve the inequality for x ∈ ℝ: 2x + 4 ≥ 6x − 8."
+    },
+    {
+      "id": "maths-2025-ol-p1-q3-c-i",
+      "printedParts": [
+        "Q3(c)(i)",
+        "Q3(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "k × t = 12, where k, t ∈ ℤ.",
+      "questionText": "(i) Write down a possible value of k and the corresponding value of t. (ii) Use your values for k and t from part c(i) to find the value of b in the equation below: (x + k)(x + t) = x² + bx + 12."
+    },
+    {
+      "id": "maths-2025-ol-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "",
+      "questionText": "Solve the following equation in a ∈ ℝ: 5(a − 3) = 2a + 7."
+    },
+    {
+      "id": "maths-2025-ol-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "The function f(x) is defined as f(x) = x³ − 3x² + 4x − 8, where x ∈ ℝ.",
+      "questionText": "Find f′(x), the derivative of f(x). Hence, find the slope of the tangent to f(x) at the point (2, −4)."
+    },
+    {
+      "id": "maths-2025-ol-p1-q4-c-i",
+      "printedParts": [
+        "Q4(c)(i)",
+        "Q4(c)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10,
+        15
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "The diagram below shows the graph of a cubic function g(x). P, Q, and R are points on the graph of g.",
+      "questionText": "(i) Write each of the letters P, Q, and R in the correct place in the table so that each point matches the description of the derivative at that point, where g′(x) is the derivative of g(x). (ii) For the point that you matched to g′(x) = 0, give a reason for your answer."
+    },
+    {
+      "id": "maths-2025-ol-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "",
+      "questionText": "Use algebra to solve the simultaneous equations: 3x + 2y = 11; x − 4y = −1."
+    },
+    {
+      "id": "maths-2025-ol-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "",
+      "questionText": "Solve the following equation in x ∈ ℝ: 3x² − 2x − 4 = 0. Give each answer correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2025-ol-p1-q5-c-i",
+      "printedParts": [
+        "Q5(c)(i)",
+        "Q5(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The graph of a quadratic function h(x) is shown in the diagram below (drawn to scale). The graph is symmetrical about a vertical line.",
+      "questionText": "(i) Based on the graph, which of the following pairs of values of x is a possible set of roots of h(x), that is, values of x for which h(x) = 0? Tick one box only: x = 2 and x = 8; x = −2 and x = −8; x = −2 and x = 8; x = −8 and x = 2. (ii) Find the value of x, at which h(x) is a minimum."
+    },
+    {
+      "id": "maths-2025-ol-p1-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)",
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Tara buys a coat for €90. She then sells the coat at a profit of 25%.",
+      "questionText": "(i) Find the selling price of the coat. (ii) The margin on the coat is the profit as a percentage of the selling price. Write down the profit for this coat and hence find the margin."
+    },
+    {
+      "id": "maths-2025-ol-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-indices"
+      ],
+      "stem": "",
+      "questionText": "Write each of the following numbers in the form a × 10ⁿ, where 1 ≤ a < 10, n ∈ ℤ: 58 000; 0·036."
+    },
+    {
+      "id": "maths-2025-ol-p1-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-indices"
+      ],
+      "stem": "Light travels at a speed of approximately 3 × 10⁵ km/second. A light year is the distance travelled by light in 1 year.",
+      "questionText": "Find the distance travelled by light in 1 year. (You may assume there are 365 days in a year.) Give your answer, in km, in the form a × 10ⁿ, where 1 ≤ a < 10, n ∈ ℤ."
+    },
+    {
+      "id": "maths-2025-ol-p1-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)",
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The diagram below shows the value of one share for Company A, in euro, on the 1st day of each month from 1st January to 1st July.",
+      "questionText": "(i) Use the graph to estimate the value of one share on 1st March. (ii) Use the graph to identify the month during which the value of one share increased by the greatest amount."
+    },
+    {
+      "id": "maths-2025-ol-p1-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths",
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The diagram below shows the value of one share for Company A, in euro, on the 1st day of each month from 1st January to 1st July.",
+      "questionText": "On 1st August the value of one share was 15% lower than it was on 1st of July. By reading from the graph and doing calculations, estimate the value of one share on 1st of August as accurately as possible and hence plot that point on the diagram on the previous page."
+    },
+    {
+      "id": "maths-2025-ol-p1-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Later in the year, Liam predicts the value of one share. The error in his prediction is €1·50, which is a percentage error of 16·3%.",
+      "questionText": "Find the value of one share at this time. Give your answer correct to the nearest cent."
+    },
+    {
+      "id": "maths-2025-ol-p1-q7-d-i",
+      "printedParts": [
+        "Q7(d)(i)",
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The value of one share for Company B can be modelled by the function P(m) = 2 × 1·29^m, where P(m) is the value of one share, in euro, and m is the time, in months, since 1st January, with 0 ≤ m ≤ 6, m ∈ ℝ.",
+      "questionText": "(i) Complete the table below to show the values of P(m) for the given values of m. Give each value of P(m) correct to 2 decimal places where relevant. (ii) The graph of Company A is shown again below. On the same diagram, draw the graph of P(m), for 0 ≤ m ≤ 6, m ∈ ℝ."
+    },
+    {
+      "id": "maths-2025-ol-p1-q7-d-iii",
+      "printedParts": [
+        "Q7(d)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The value of one share for Company B can be modelled by the function P(m) = 2 × 1·29^m, where P(m) is the value of one share, in euro, and m is the time, in months, since 1st January, with 0 ≤ m ≤ 6, m ∈ ℝ.",
+      "questionText": "At only one point in the time period shown, the value of one share for Company A is equal to the value of one share for Company B, according to the function P(m). In which month must this have happened?"
+    },
+    {
+      "id": "maths-2025-ol-p1-q7-e-i",
+      "printedParts": [
+        "Q7(e)(i)",
+        "Q7(e)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "The value of one share for Company B can be modelled by the function P(m) = 2 × 1·29^m, where P(m) is the value of one share, in euro, and m is the time, in months, since 1st January, with 0 ≤ m ≤ 6, m ∈ ℝ. According to the model, the value of one share for Company B reaches its highest value on 1st July, and from then onwards it declines at a steady linear rate of 30 cent per month. A new function is created to model this decline, where Q(n) is the value of one share n months after the time the share reaches its highest value (n ∈ ℕ). Part of the function is shown below: Q(n) = [blank] − 0·3n.",
+      "questionText": "(i) Fill in the missing number in the box above to complete the expression for Q(n). (ii) Using your expression, or otherwise, find how many months it takes for the value of one share for Company B to fall below its value on 1st January, according to the model. Remember that n ∈ ℕ."
+    },
+    {
+      "id": "maths-2025-ol-p1-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "A company launches a new phone. The company’s profit each year will depend on the number of phones, x, it produces. The company’s profit for the first year can be modelled by the function P(x) = −1·5x² + 10·5x − 4, where P(x) is the profit for the first year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the first year, with 0 ≤ x ≤ 7, x ∈ ℝ.",
+      "questionText": "Find P(0) and explain what it means in the context of the question."
+    },
+    {
+      "id": "maths-2025-ol-p1-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)",
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "A company launches a new phone. The company’s profit each year will depend on the number of phones, x, it produces. The company’s profit for the first year can be modelled by the function P(x) = −1·5x² + 10·5x − 4, where P(x) is the profit for the first year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the first year, with 0 ≤ x ≤ 7, x ∈ ℝ.",
+      "questionText": "(ii) Complete the table below to show the values of P(x) for the given values of x. (iii) Draw the graph of P(x) on the axes below for 0 ≤ x ≤ 7, x ∈ ℝ."
+    },
+    {
+      "id": "maths-2025-ol-p1-q8-a-iv",
+      "printedParts": [
+        "Q8(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "A company launches a new phone. The company’s profit each year will depend on the number of phones, x, it produces. The company’s profit for the first year can be modelled by the function P(x) = −1·5x² + 10·5x − 4, where P(x) is the profit for the first year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the first year, with 0 ≤ x ≤ 7, x ∈ ℝ.",
+      "questionText": "Use your graph on the previous page to estimate the range of values of x for which the company will have a profit of at least €6 million. Show your work on the graph."
+    },
+    {
+      "id": "maths-2025-ol-p1-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)",
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10,
+        15
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "The profit of the company for the second year can be modelled by the function Q(x) = −1·5x² + 9·6x − 3·5, where Q(x) is the profit for the second year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the second year, with 0 ≤ x ≤ 7, x ∈ ℝ.",
+      "questionText": "(i) Find Q′(x), and hence find the value of x which will give the maximum value of Q(x). (ii) Hence, find the maximum value of Q(x)."
+    },
+    {
+      "id": "maths-2025-ol-p1-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)",
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10,
+        15
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The profit for the third year can be modelled by the function R(x), where R(x) is the profit for the third year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the third year, with x ∈ ℝ. The graph of R(x) is shown below for 0 ≤ x ≤ 6, x ∈ ℝ. At the start of the third year, the company receives €3 million in additional funding. As a result, the profit for the third year can actually be modelled by: Profit = R(x) + 3.",
+      "questionText": "(i) From the graph, estimate R(2) and hence work out the value of R(2) + 3. (ii) On the diagram above, draw the graph of y = R(x) + 3 for 0 ≤ x ≤ 6, x ∈ ℝ, using the same axes and scales."
+    },
+    {
+      "id": "maths-2025-ol-p1-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)",
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Evan has €4500 saved. He put this money in a savings account with a rate of 2·8% per annum compound interest.",
+      "questionText": "(i) Find how much money will be in the account after 1 year. (ii) Hence, or otherwise, find how much money will be in the account at the end of 3 years using the rate of 2·8% per annum compound interest. Give your answer correct to the nearest cent."
+    },
+    {
+      "id": "maths-2025-ol-p1-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence.",
+      "questionText": "The dots for pattern 3 are drawn below. Complete pattern 3."
+    },
+    {
+      "id": "maths-2025-ol-p1-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence.",
+      "questionText": "Complete the table below to show the number of dots and line segments in the first five patterns of the sequence. The number of line segments in each pattern is in a quadratic sequence."
+    },
+    {
+      "id": "maths-2025-ol-p1-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence.",
+      "questionText": "Write down the number of dots in the 1000th pattern."
+    },
+    {
+      "id": "maths-2025-ol-p1-q9-b-iv",
+      "printedParts": [
+        "Q9(b)(iv)",
+        "Q9(b)(v)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence.",
+      "questionText": "(iv) Sₙ is the total number of dots required to make the first n patterns, where n ∈ ℕ. Write Sₙ in terms of n. (v) Hence, or otherwise, find the total number of complete patterns in the sequence that can be made using 740 dots."
+    },
+    {
+      "id": "maths-2025-ol-p1-q9-b-vi",
+      "printedParts": [
+        "Q9(b)(vi)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence.",
+      "questionText": "The formula for the number of line segments in term n is of the form: T(n) = 0·5n² + bn. Find the value of b, where b ∈ ℚ."
+    },
+    {
+      "id": "maths-2025-ol-p1-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below: 70 cm, 30 cm and 20 cm.",
+      "questionText": "Draw a scaled diagram of a net of the box in the grid below. Use the scale 1:10. The length of each small square in the grid is 1 cm."
+    },
+    {
+      "id": "maths-2025-ol-p1-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below: 70 cm, 30 cm and 20 cm.",
+      "questionText": "Work out the surface area of this box, in cm²."
+    },
+    {
+      "id": "maths-2025-ol-p1-q10-a-iii",
+      "printedParts": [
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The factory owner buys a machine from China for making the boxes. The machine costs 353 819·34 Chinese Yuan, including shipping. The factory owner must also pay €1890 in customs duty.",
+      "questionText": "Using the exchange rate €1 = 7·61 Chinese Yuan, find the total cost of the machine, in euro, including the customs duty."
+    },
+    {
+      "id": "maths-2025-ol-p1-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Ciara gets paid a wage of €780 per week for working 40 hours. Ciara gets paid an hourly rate for any hours worked over the 40 hours. This rate is 50% more than the hourly rate for the first 40 hours.",
+      "questionText": "On a particular week, Ciara works her regular 40 hours, plus an additional n hours. Her total wage is €1043·25. Work out the value of n."
+    },
+    {
+      "id": "maths-2025-ol-p1-q10-c-i",
+      "printedParts": [
+        "Q10(c)(i)",
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "A shop repairs clothes. The charge for a repair is given by the formula C = (20h + xh)/d, where C is the charge for the repair, in euro, h is the number of hours it took to do the repair, x is an extra hourly charge based on the level of difficulty of the work and d is a discount rate, with d ≥ 1.",
+      "questionText": "(i) Find the charge for a repair when it takes 3 hours to do the repair, the extra hourly charge, x, is 3·5, and the discount rate, d, is 1·1. Give your answer correct to 2 decimal places. (ii) Find the value of x when the charge for the repair is €76, the repair takes 4 hours, and the discount rate is 1·2."
+    },
+    {
+      "id": "maths-2025-ol-p1-q10-c-iii",
+      "printedParts": [
+        "Q10(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "A shop repairs clothes. The charge for a repair is given by the formula C = (20h + xh)/d, where C is the charge for the repair, in euro, h is the number of hours it took to do the repair, x is an extra hourly charge based on the level of difficulty of the work and d is a discount rate, with d ≥ 1.",
+      "questionText": "In the formula for C above, d ≥ 1. What impact would changing d, so that d < 1, have on the charge for a repair?"
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        6,
+        9
+      ],
+      "classification": "mathematical-answer-construction",
+      "reason": "Q2(a)(iii) constructs a complex number satisfying a modulus condition; Q3(c)(i) constructs integer factors of 12. Those are possible answers to mathematical problems, not choices between printed task prompts. Expanding them would supply their answers."
+    },
+    {
+      "pages": [
+        8,
+        11,
+        13
+      ],
+      "classification": "answer-selection",
+      "reason": "Offer A/B, the P/Q/R matching table and the four proposed root pairs are competing mathematical answers. Each task requires solving the same problem; the distractors are not alternative practice routes."
+    }
+  ],
+  "selectionDecisions": {
+    "3:8e58f60456ec7ed4": {
+      "classification": "exam-level-selection",
+      "reason": "Every independently marked question is retained. Exam-level selection does not combine separately practicable tasks."
+    },
+    "3:991950edb18a685a": {
+      "classification": "exam-level-selection",
+      "reason": "Every independently marked question is retained. Exam-level selection does not combine separately practicable tasks."
+    },
+    "4:c5c1197f6fb9e021": {
+      "classification": "exam-level-selection",
+      "reason": "Every independently marked question is retained. Exam-level selection does not combine separately practicable tasks."
+    },
+    "16:e5feeaa4276464b6": {
+      "classification": "exam-level-selection",
+      "reason": "Every independently marked question is retained. Exam-level selection does not combine separately practicable tasks."
+    },
+    "19:2b0344f02c235cc6": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed mathematical task and share its scale."
+    },
+    "23:5746abf42f85d40c": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed mathematical task and share its scale."
+    },
+    "25:32a42ae2ecd0c16d": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed mathematical task and share its scale."
+    },
+    "26:9897c6f24e2ac1e0": {
+      "classification": "mathematical-context",
+      "reason": "This describes the object or random event in the problem, not a candidate choice between task prompts."
+    }
+  }
+}

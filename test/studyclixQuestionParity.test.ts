@@ -5,6 +5,7 @@ import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { browseTopicIdsForQuestion, topicsForPaper } from '../components/PaperTrail/topics';
 import parityJson from '../data/examTopics/studyclix-question-parity.json';
+import mathsTopicDifferences from './fixtures/studyclixMathsTopicDifferences.json';
 import { examTopicDefinition } from '../data/examTopics/registry';
 import { PAPER_TRAIL_INDEX } from '../paperTrailData';
 import type { PaperLang, PaperLevel } from '../types/paperTrail';
@@ -35,6 +36,12 @@ interface Crosswalk {
 }
 
 const ROOT = process.cwd();
+
+// Maths files each part by what it asks since the 2026-11-18 release (Alex R9,
+// 18 Nov): these StudyClix headings no longer reach their topic. Pinned and
+// shrink-only: never add a key; a key whose heading resolves again must come
+// out. The uniform-heading rollout re-files every Maths part (its Stage 2).
+const PINNED_MATHS_TOPIC_DIFFERENCES = new Set<string>(mathsTopicDifferences.keys);
 const physicalCardCache = new Map<string, Set<string>>();
 
 const physicalCardNumbers = (year: number, fileid: string): Set<string> => {
@@ -94,6 +101,7 @@ describe('StudyClix official-question parity', () => {
 
   it('resolves every matched StudyClix heading to its official NextStepUni paper card and live-course topic', () => {
     const failures: string[] = [];
+    const pinnedStillDiffering = new Set<string>();
 
     for (const subject of parityJson.subjects) {
       if (!subject.crosswalkFile) continue;
@@ -166,6 +174,11 @@ describe('StudyClix official-question parity', () => {
               continue;
             }
             const topicIds = browseTopicIdsForQuestion(paper, question);
+            const pinKey = `${crosswalk.subjectId}|${association.topicId}|${association.heading}|${target.fileid}|Q${number}`;
+            if (!topicIds.includes(association.topicId) && PINNED_MATHS_TOPIC_DIFFERENCES.has(pinKey)) {
+              pinnedStillDiffering.add(pinKey);
+              continue;
+            }
             if (!topicIds.includes(association.topicId)) {
               failures.push(
                 `${crosswalk.subjectId}|${association.topicId}|${association.heading}: ${target.fileid} Q${number} maps to ${topicIds.join(', ') || '(none)'}`,
@@ -182,6 +195,12 @@ describe('StudyClix official-question parity', () => {
         .map(subjectId => [subjectId, failures.filter(failure => failure.startsWith(`${subjectId}|`)).length]),
     );
     expect(failures.slice(0, 100), `${failures.length} failures: ${JSON.stringify(failureCounts)}`).toEqual([]);
+    // Shrink-only: a pinned Maths difference that resolves leaves the list.
+    expect(
+      [...PINNED_MATHS_TOPIC_DIFFERENCES].filter(key => !pinnedStillDiffering.has(key)),
+      'resolved: remove from test/fixtures/studyclixMathsTopicDifferences.json',
+    ).toEqual([]);
+    expect(PINNED_MATHS_TOPIC_DIFFERENCES.size).toBeLessThanOrEqual(174);
   });
 
   it('has no heading left under the generic local-paper/card-missing state', () => {

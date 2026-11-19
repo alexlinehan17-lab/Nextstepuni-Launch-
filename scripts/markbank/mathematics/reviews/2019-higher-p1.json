@@ -1,0 +1,1061 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2019,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003ALP100EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "0957e7caac5f7827a7abcd9a6101ae4b4bb73b9d8a4bb6d5d5662b667767ef33",
+  "schemeSha256": "939dabdcff1d17b57e98911cb035dd928e1c997b235d4479029438c61fe34383",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 28 question-paper pages and PDF pages 1–29 of the combined Higher Level scheme (cover, notes, contents, the Paper 1 scale table on page 4, the summary of mark allocations on page 5, the annotation notes on pages 6–7, every Paper 1 model solution and marking note on pages 8–28, and the Paper 2 title page 29). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 45,
+    "8": 50,
+    "9": 55
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    4,
+    5
+  ],
+  "sourceNotes": [
+    "The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 45 marks, Q8 50 marks, Q9 55 marks). Every question is retained.",
+    "35 independently marked units, matching the printed summary of allocations on scheme page 5. Q9(b)(i) and (ii) share one 15D scale (“(b)(i)+(ii)”) and are one task.",
+    "Paper 1 bands from the 2019 scale table on scheme page 4, which differ from later years: 5B 0,2,5; 5C 0,2,3,5; 10C 0,4,7,10; 10D 0,4,5,8,10; 15D 0,4,7,11,15. Every part prints the same ladder beside its scale.",
+    "This paper had no authored cards before this review; all 35 units are new. Marking points are lifted line by line from the scheme (read through the glyph repair map) and labelled with the part of the scheme they come from; Q5(a) and Q6(a)(i) keep each printed method’s ladder separately. Tables in prompts carry the printed values with blanks for the cells the candidate fills.",
+    "The question booklet is LC003ALP100EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 2. All page references are PDF positions, which match the printed scheme page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2019-hl-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "In the expansion of (2x + 1)(x² + px + 4), where p ∈ ℕ, the coefficient of x is twice the coefficient of x². Find the value of p."
+    },
+    {
+      "id": "maths-2019-hl-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "questionText": "Solve the equation 3/(2x + 1) + 2/5 = 2/(3x − 1) where x ≠ −1/2, 1/3, and x ∈ ℝ."
+    },
+    {
+      "id": "maths-2019-hl-p1-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "The graph of the function f(x) = 3^x, where x ∈ ℝ, cuts the y-axis at (0, 1) as shown in the diagram below.",
+      "questionText": "Draw the graph of the function g(x) = 4x + 1 on the diagram."
+    },
+    {
+      "id": "maths-2019-hl-p1-q2-a-ii",
+      "printedParts": [
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "The graph of the function f(x) = 3^x, where x ∈ ℝ, cuts the y-axis at (0, 1) as shown in the diagram below. Part (a)(i): Draw the graph of the function g(x) = 4x + 1 on the diagram.",
+      "questionText": "Use substitution to verify that f(x) < g(x), for x = 1·9."
+    },
+    {
+      "id": "maths-2019-hl-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-induction"
+      ],
+      "stem": "The graph of the function f(x) = 3^x, where x ∈ ℝ, cuts the y-axis at (0, 1) as shown in the diagram below. Part (a)(i): Draw the graph of the function g(x) = 4x + 1 on the diagram.",
+      "questionText": "Prove, using induction, that f(n) ≥ g(n), where n ≥ 2 and n ∈ ℕ."
+    },
+    {
+      "id": "maths-2019-hl-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "Factorise fully: 3xy − 9x + 4y − 12."
+    },
+    {
+      "id": "maths-2019-hl-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs",
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "stem": "Part (a): Factorise fully: 3xy − 9x + 4y − 12.",
+      "questionText": "g(x) = 3x ln x − 9x + 4 ln x − 12. Using your answer to part (a) or otherwise, solve g(x) = 0."
+    },
+    {
+      "id": "maths-2019-hl-p1-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "stem": "g(x) = 3x ln x − 9x + 4 ln x − 12.",
+      "questionText": "Evaluate g′(e) correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2019-hl-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "questionText": "Find ∫(4x³ − 6x + 10) dx."
+    },
+    {
+      "id": "maths-2019-hl-p1-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "Part of the graph of a cubic function f(x) is shown below (graph not to scale). The graph cuts the x-axis at the three points A(2, 0), B, and C.",
+      "questionText": "Given that f′(x) = 6x² − 54x + 109, show that f(x) = 2x³ − 27x² + 109x − 126."
+    },
+    {
+      "id": "maths-2019-hl-p1-q4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-cubics"
+      ],
+      "stem": "Part of the graph of a cubic function f(x) is shown below (graph not to scale). The graph cuts the x-axis at the three points A(2, 0), B, and C. Part (b)(i): Given that f′(x) = 6x² − 54x + 109, show that f(x) = 2x³ − 27x² + 109x − 126.",
+      "questionText": "Find the co-ordinates of the point B and the point C."
+    },
+    {
+      "id": "maths-2019-hl-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "questionText": "3 + 2i is a root of z² + pz + q = 0, where p, q ∈ ℝ, and i² = −1. Find the value of p and the value of q."
+    },
+    {
+      "id": "maths-2019-hl-p1-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "questionText": "v = 2 − 2√3i. Write v in the form r(cos θ + i sin θ), where r ∈ ℝ and 0 ≤ θ ≤ 2π."
+    },
+    {
+      "id": "maths-2019-hl-p1-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "stem": "Part (b)(i): v = 2 − 2√3i. Write v in the form r(cos θ + i sin θ), where r ∈ ℝ and 0 ≤ θ ≤ 2π.",
+      "questionText": "Use your answer to part (b)(i) to find the two possible values of w, where w² = v. Give your answers in the form a + ib, where a, b ∈ ℝ."
+    },
+    {
+      "id": "maths-2019-hl-p1-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "questionText": "Given that x − √32 = √128 − 5x, find the value of x, where x ∈ ℝ. Give your answer in the form a√2, where a ∈ ℕ."
+    },
+    {
+      "id": "maths-2019-hl-p1-q6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "questionText": "A = {√(32k²), √(50k²), √(128k²), √(98k²)}, where k ∈ ℕ. Show that the mean of set A is equal to the median of set A."
+    },
+    {
+      "id": "maths-2019-hl-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-induction"
+      ],
+      "questionText": "Prove, using contradiction, that √2 is not a rational number."
+    },
+    {
+      "id": "maths-2019-hl-p1-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "The closed line segment [0, 1] is shown below. The first three steps in the construction of the Cantor Set are also shown: Step 1 removes the open middle third of the line segment [0, 1] leaving two closed line segments (i.e. the end points of the segments remain in the Cantor Set); Step 2 removes the middle third of the two remaining segments leaving four closed line segments; Step 3 removes the middle third of the four remaining segments leaving eight closed line segments. The process continues indefinitely. The set of points in the line segment [0, 1] that are not removed during the process is the Cantor Set.",
+      "questionText": "Complete the table below to show the length of the line segment(s) removed at each step for the first 5 steps. Give your answers as fractions. Step: Step 1, Step 2, Step 3, Step 4, Step 5. Length Removed: 1/3, 2/9, _, _, _."
+    },
+    {
+      "id": "maths-2019-hl-p1-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "The closed line segment [0, 1] is shown below. The first three steps in the construction of the Cantor Set are also shown: Step 1 removes the open middle third of the line segment [0, 1] leaving two closed line segments (i.e. the end points of the segments remain in the Cantor Set); Step 2 removes the middle third of the two remaining segments leaving four closed line segments; Step 3 removes the middle third of the four remaining segments leaving eight closed line segments. The process continues indefinitely. The set of points in the line segment [0, 1] that are not removed during the process is the Cantor Set.",
+      "questionText": "Find the total length of all of the line segments removed from the initial line segment of length 1 unit, after a finite number (n) of steps in the process. Give your answer in terms of n."
+    },
+    {
+      "id": "maths-2019-hl-p1-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "The closed line segment [0, 1] is shown below. The first three steps in the construction of the Cantor Set are also shown: Step 1 removes the open middle third of the line segment [0, 1] leaving two closed line segments (i.e. the end points of the segments remain in the Cantor Set); Step 2 removes the middle third of the two remaining segments leaving four closed line segments; Step 3 removes the middle third of the four remaining segments leaving eight closed line segments. The process continues indefinitely. The set of points in the line segment [0, 1] that are not removed during the process is the Cantor Set.",
+      "questionText": "Find the total length removed, from the initial line segment, after an infinite number of steps of the process."
+    },
+    {
+      "id": "maths-2019-hl-p1-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "The closed line segment [0, 1] is shown below. The first three steps in the construction of the Cantor Set are also shown: Step 1 removes the open middle third of the line segment [0, 1] leaving two closed line segments (i.e. the end points of the segments remain in the Cantor Set); Step 2 removes the middle third of the two remaining segments leaving four closed line segments; Step 3 removes the middle third of the four remaining segments leaving eight closed line segments. The process continues indefinitely. The set of points in the line segment [0, 1] that are not removed during the process is the Cantor Set.",
+      "questionText": "Complete the table below to identify the end-points labelled in the diagram. Give your answers as fractions. Label: A, B, C, D, E, F. End-point: _, _, _, _, _, _."
+    },
+    {
+      "id": "maths-2019-hl-p1-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "The closed line segment [0, 1] is shown below. The first three steps in the construction of the Cantor Set are also shown: Step 1 removes the open middle third of the line segment [0, 1] leaving two closed line segments (i.e. the end points of the segments remain in the Cantor Set); Step 2 removes the middle third of the two remaining segments leaving four closed line segments; Step 3 removes the middle third of the four remaining segments leaving eight closed line segments. The process continues indefinitely. The set of points in the line segment [0, 1] that are not removed during the process is the Cantor Set.",
+      "questionText": "Give a reason why 1/3 − 1/9 + 1/27 − 1/81 is a point in the Cantor Set."
+    },
+    {
+      "id": "maths-2019-hl-p1-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "The closed line segment [0, 1] is shown below. The first three steps in the construction of the Cantor Set are also shown: Step 1 removes the open middle third of the line segment [0, 1] leaving two closed line segments (i.e. the end points of the segments remain in the Cantor Set); Step 2 removes the middle third of the two remaining segments leaving four closed line segments; Step 3 removes the middle third of the four remaining segments leaving eight closed line segments. The process continues indefinitely. The set of points in the line segment [0, 1] that are not removed during the process is the Cantor Set.",
+      "questionText": "The limit of the series 1/3 − 1/9 + 1/27 − ⋯ is a point in the Cantor Set. Find this point."
+    },
+    {
+      "id": "maths-2019-hl-p1-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The weekly revenue produced by a company manufacturing air conditioning units is seasonal. The revenue (in euro) can be approximated by the function: r(t) = 22 500 cos((π/26)t) + 37 500, t ≥ 0, where t is the number of weeks measured from the beginning of July and ((π/26)t) is in radians.",
+      "questionText": "Find the approximate revenue produced 20 weeks after the beginning of July. Give your answer correct to the nearest euro."
+    },
+    {
+      "id": "maths-2019-hl-p1-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The weekly revenue produced by a company manufacturing air conditioning units is seasonal. The revenue (in euro) can be approximated by the function: r(t) = 22 500 cos((π/26)t) + 37 500, t ≥ 0, where t is the number of weeks measured from the beginning of July and ((π/26)t) is in radians.",
+      "questionText": "Find the two values of the time t, within the first 52 weeks, when the revenue is approximately €26 250."
+    },
+    {
+      "id": "maths-2019-hl-p1-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The weekly revenue produced by a company manufacturing air conditioning units is seasonal. The revenue (in euro) can be approximated by the function: r(t) = 22 500 cos((π/26)t) + 37 500, t ≥ 0, where t is the number of weeks measured from the beginning of July and ((π/26)t) is in radians.",
+      "questionText": "Find r′(t), the derivative of r(t) = 22 500 cos((π/26)t) + 37 500."
+    },
+    {
+      "id": "maths-2019-hl-p1-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The weekly revenue produced by a company manufacturing air conditioning units is seasonal. The revenue (in euro) can be approximated by the function: r(t) = 22 500 cos((π/26)t) + 37 500, t ≥ 0, where t is the number of weeks measured from the beginning of July and ((π/26)t) is in radians.",
+      "questionText": "Use calculus to show that the revenue is increasing 30 weeks after the beginning of July."
+    },
+    {
+      "id": "maths-2019-hl-p1-q8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The weekly revenue produced by a company manufacturing air conditioning units is seasonal. The revenue (in euro) can be approximated by the function: r(t) = 22 500 cos((π/26)t) + 37 500, t ≥ 0, where t is the number of weeks measured from the beginning of July and ((π/26)t) is in radians.",
+      "questionText": "Find a value for the time t, within the first 52 weeks, when the revenue is at a minimum. Use r′′(t), to verify your answer."
+    },
+    {
+      "id": "maths-2019-hl-p1-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Norman windows consist of a rectangle topped by a semi-circle as shown above. Let the height of the rectangle be y metres and the radius of the semi-circle be x metres as shown. The perimeter of the window is P.",
+      "questionText": "Write P in terms of x, y, and π."
+    },
+    {
+      "id": "maths-2019-hl-p1-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "stem": "Norman windows consist of a rectangle topped by a semi-circle as shown above. Let the height of the rectangle be y metres and the radius of the semi-circle be x metres as shown. The perimeter of the window is P.",
+      "questionText": "In a particular Norman window the perimeter P = 12 metres. Show that y = (12 − (2 + π)x)/2 for 0 ≤ x ≤ 12/(2 + π) where x ∈ ℝ."
+    },
+    {
+      "id": "maths-2019-hl-p1-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)",
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Norman windows consist of a rectangle topped by a semi-circle as shown above. Let the height of the rectangle be y metres and the radius of the semi-circle be x metres as shown. The perimeter of the window is P. Part (a)(ii): In a particular Norman window the perimeter P = 12 metres. Show that y = (12 − (2 + π)x)/2 for 0 ≤ x ≤ 12/(2 + π) where x ∈ ℝ.",
+      "questionText": "(i) Complete the table on the right. x: 0, 12/(2 + π). y = (12 − (2 + π)x)/2: _, _. (ii) On the diagram below, draw the graph of the linear function, y = (12 − (2 + π)x)/2 for 0 ≤ x ≤ 12/(2 + π) where x ∈ ℝ."
+    },
+    {
+      "id": "maths-2019-hl-p1-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Norman windows consist of a rectangle topped by a semi-circle as shown above. Let the height of the rectangle be y metres and the radius of the semi-circle be x metres as shown. The perimeter of the window is P. Part (a)(ii): In a particular Norman window the perimeter P = 12 metres. Show that y = (12 − (2 + π)x)/2 for 0 ≤ x ≤ 12/(2 + π) where x ∈ ℝ.",
+      "questionText": "Find the slope of the graph of y, correct to 2 decimal places. Interpret this slope in the context of the question."
+    },
+    {
+      "id": "maths-2019-hl-p1-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-functions"
+      ],
+      "stem": "Norman windows consist of a rectangle topped by a semi-circle as shown above. Let the height of the rectangle be y metres and the radius of the semi-circle be x metres as shown. The perimeter of the window is P.",
+      "questionText": "The Norman window shown below has a perimeter of 12 metres and y = (12 − (2 + π)x)/2. Show that the function a(x) = (24x − (π + 4)x²)/2 represents the area of the window, in terms of x and π."
+    },
+    {
+      "id": "maths-2019-hl-p1-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "stem": "Norman windows consist of a rectangle topped by a semi-circle as shown above. Let the height of the rectangle be y metres and the radius of the semi-circle be x metres as shown. The perimeter of the window is P. Part (c)(i): The Norman window shown below has a perimeter of 12 metres and y = (12 − (2 + π)x)/2. Show that the function a(x) = (24x − (π + 4)x²)/2 represents the area of the window, in terms of x and π.",
+      "questionText": "Find a′(x)."
+    },
+    {
+      "id": "maths-2019-hl-p1-q9-c-iii",
+      "printedParts": [
+        "Q9(c)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "Norman windows consist of a rectangle topped by a semi-circle as shown above. Let the height of the rectangle be y metres and the radius of the semi-circle be x metres as shown. The perimeter of the window is P. Part (c)(i): The Norman window shown below has a perimeter of 12 metres and y = (12 − (2 + π)x)/2. Show that the function a(x) = (24x − (π + 4)x²)/2 represents the area of the window, in terms of x and π.",
+      "questionText": "Find the relationship between x and y when the area of the window in part (c)(i) is at its maximum."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        8
+      ],
+      "wording": "Using your answer to part (a) or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task, with no printed pool of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:4bcb6b2e6058aa0d": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "4:63e785bf86b7ccfa": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "8:f631335171634c68": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    },
+    "16:e1b2e34df433ae0b": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    }
+  }
+}

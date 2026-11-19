@@ -2029,6 +2029,7 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   maths: {
     higher: () => import('./cards/maths/higher'),
     ordinary: () => import('./cards/maths/ordinary'),
+    foundation: () => import('./cards/maths/foundation'),
   },
   english: {
     higher: () => import('./cards/english/higher'),

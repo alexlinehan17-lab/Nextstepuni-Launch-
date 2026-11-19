@@ -1,0 +1,654 @@
+{
+  "status": "complete original-source and presentation review",
+  "reviewedAt": "2026-10-30",
+  "paperFileid": "LC003BLP130EV.pdf",
+  "schemeFileid": "LC003BLP030EV.pdf",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "generalNotesPages": [
+    21,
+    22
+  ],
+  "offeredMarks": 300,
+  "candidateMarks": 300,
+  "practiceMarks": 300,
+  "scales": {
+    "5B": [
+      0,
+      3,
+      5
+    ],
+    "5C": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "10B": [
+      0,
+      6,
+      10
+    ],
+    "10C": [
+      0,
+      5,
+      8,
+      10
+    ],
+    "10D": [
+      0,
+      5,
+      8,
+      9,
+      10
+    ],
+    "15C": [
+      0,
+      8,
+      13,
+      15
+    ],
+    "15D": [
+      0,
+      7,
+      10,
+      13,
+      15
+    ],
+    "20C": [
+      0,
+      12,
+      18,
+      20
+    ],
+    "25D": [
+      0,
+      15,
+      19,
+      22,
+      25
+    ]
+  },
+  "tasks": [
+    {
+      "suffix": "1",
+      "printedParts": [
+        "Q1(a)",
+        "Q1(b)",
+        "Q1(c)"
+      ],
+      "scale": "25D",
+      "totalMarks": 25,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        7,
+        23
+      ],
+      "questionText": "Continue each sequence with two further terms and describe its pattern: (a) 12, 17·5, 23, 28·5; (b) 64, 96, 144, 216; (c) 1, 1, 2, 3, 5, 8, 13, 21."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)(i)",
+        "Q2(a)(ii)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        8,
+        23
+      ],
+      "questionText": "(i) Let a = 8640. Express a as a product of prime factors. (ii) Let b = 2¹⁰ × 3⁵ × 13⁶. Express ab as a product of prime factors, using powers appropriately."
+    },
+    {
+      "suffix": "2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "scale": "20C",
+      "totalMarks": 20,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        8,
+        23
+      ],
+      "questionText": "Place 0·3, 3/8, 5/9, 60% and 0·12 in the correct positions on the original number line.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "scale": "15C",
+      "totalMarks": 15,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        9,
+        24
+      ],
+      "questionText": "Find the area of the shaded region between the two squares, in cm².",
+      "stem": "The inner square has side 11 cm and the outer square has side 12 cm."
+    },
+    {
+      "suffix": "3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        9,
+        24
+      ],
+      "questionText": "Find the volume of steel in the beam, in cm³.",
+      "stem": "The steel beam is 2·4 metres long. Its cross-section is the shaded region between two squares: inner side 11 cm and outer side 12 cm. The original diagrams are supplied."
+    },
+    {
+      "suffix": "3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        9,
+        24
+      ],
+      "questionText": "Each cm³ of steel weighs 7·9 grams. How much does the steel beam weigh, in kilograms?",
+      "stem": "The steel beam is 2·4 metres long. Its cross-section is the shaded region between two squares: inner side 11 cm and outer side 12 cm. The original diagrams are supplied."
+    },
+    {
+      "suffix": "4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        10,
+        25
+      ],
+      "questionText": "Solve the inequality 3x − 11 ≤ 4, for x ∈ ℕ. List the elements of the solution set."
+    },
+    {
+      "suffix": "4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "scale": "15D",
+      "totalMarks": 15,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        10,
+        25
+      ],
+      "questionText": "Solve the simultaneous equations a − 6b = 11 and 4a + 3b = 17."
+    },
+    {
+      "suffix": "5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        11,
+        26
+      ],
+      "questionText": "Solve the equation x² + 9x + 8 = 0."
+    },
+    {
+      "suffix": "5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "scale": "15D",
+      "totalMarks": 15,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        11,
+        26
+      ],
+      "questionText": "Solve the equation p² + 5p − 11 = 0, giving your answers correct to two decimal places."
+    },
+    {
+      "suffix": "6",
+      "printedParts": [
+        "Q6(a)",
+        "Q6(b)",
+        "Q6(c)",
+        "Q6(d)",
+        "Q6(e)"
+      ],
+      "scale": "25D",
+      "totalMarks": 25,
+      "sourcePages": [
+        8,
+        9
+      ],
+      "schemePages": [
+        12,
+        13,
+        26
+      ],
+      "questionText": "(a) Find f(2·6). (b) Find the maximum value of f. (c) Find the values of x for which g(x) = 11. (d) Find the range of x for which g(x) ≤ 0. (e) Solve 8 + 3x − x² = 2x² − 5x − 2.",
+      "stem": "The original graphs show f(x) = 8 + 3x − x² and g(x) = 2x² − 5x − 2. Use the diagram and show your work on it.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "7-a-i-ii",
+      "printedParts": [
+        "Q7(a)(i)",
+        "Q7(a)(ii)"
+      ],
+      "scale": "25D",
+      "totalMarks": 25,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        14,
+        27
+      ],
+      "questionText": "(i) Calculate Monday, Wednesday and Friday hours and insert them on the time card. (ii) Complete the summary: Saturday/Sunday hours, total weekday hours and weekday overtime.",
+      "stem": "Mary works in a shop. Her original time card shows daily start/finish times, lunch breaks and some calculated hours. Her standard working week is 37 hours. Saturday: 10:30–17:30 with 1 hour lunch; Sunday: 11:30–14:00, no lunch; Monday: 14:00–19:00, no lunch; Tuesday: 08:50–18:10 with 1 hour lunch; Wednesday: 08:45–18:45 with 1 hour lunch; Thursday: 09:00–18:55 with 1 hour lunch; Friday: 09:35–18:20 with 1 hour lunch."
+    },
+    {
+      "suffix": "7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        15,
+        27
+      ],
+      "questionText": "Mary is paid €9·80 per hour for standard weekday hours, time and a half for weekday overtime, and double time for Saturdays and Sundays. Calculate her gross pay for the week.",
+      "stem": "Mary works in a shop. Her original time card shows daily start/finish times, lunch breaks and some calculated hours. Her standard working week is 37 hours. Saturday: 10:30–17:30 with 1 hour lunch; Sunday: 11:30–14:00, no lunch; Monday: 14:00–19:00, no lunch; Tuesday: 08:50–18:10 with 1 hour lunch; Wednesday: 08:45–18:45 with 1 hour lunch; Thursday: 09:00–18:55 with 1 hour lunch; Friday: 09:35–18:20 with 1 hour lunch."
+    },
+    {
+      "suffix": "7-a-iv",
+      "printedParts": [
+        "Q7(a)(iv)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        11
+      ],
+      "schemePages": [
+        15,
+        27
+      ],
+      "questionText": "The following week Mary has gross pay of €680. Income tax rates are 21% and 41%, weekly tax credits €63, and weekly standard-rate cut-off €630. Calculate her tax for that week."
+    },
+    {
+      "suffix": "7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "scale": "10B",
+      "totalMarks": 10,
+      "sourcePages": [
+        12
+      ],
+      "schemePages": [
+        16,
+        27
+      ],
+      "questionText": "Complete the table to show the number of bacteria over the next five hours.",
+      "stem": "A scientist grows bacteria in a dish. The number starts at 10 000 and doubles every hour. The original table uses thousands of bacteria and times 0–5 hours."
+    },
+    {
+      "suffix": "7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "scale": "15C",
+      "totalMarks": 15,
+      "sourcePages": [
+        12
+      ],
+      "schemePages": [
+        16,
+        28
+      ],
+      "questionText": "Draw a graph to show the number of bacteria over the five hours.",
+      "stem": "A scientist grows bacteria in a dish. The number starts at 10 000 and doubles every hour. The original table uses thousands of bacteria and times 0–5 hours.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        16,
+        17,
+        28
+      ],
+      "questionText": "Use your graph to estimate the number of bacteria after 2½ hours.",
+      "stem": "A scientist grows bacteria in a dish. The number starts at 10 000 and doubles every hour. The original table uses thousands of bacteria and times 0–5 hours.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "7-b-iv",
+      "printedParts": [
+        "Q7(b)(iv)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        16,
+        17,
+        28
+      ],
+      "questionText": "The scientist needs at least 250 000 bacteria. She started growing them at 10:00 in the morning. At what time is the dish ready for the experiment?",
+      "stem": "A scientist grows bacteria in a dish. The number starts at 10 000 and doubles every hour. The original table uses thousands of bacteria and times 0–5 hours.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "scale": "15C",
+      "totalMarks": 15,
+      "sourcePages": [
+        14
+      ],
+      "schemePages": [
+        18,
+        29
+      ],
+      "questionText": "Plot the three points on the original diagram.",
+      "stem": "Three friends exchange euros for US dollars at the same bank on the same day. The bank applies an exchange rate and a fixed fee. Deirdre pays €55 and gets $65; Olga pays €85 and gets $104; Frank pays €105 and gets $130.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "scale": "10B",
+      "totalMarks": 10,
+      "sourcePages": [
+        14
+      ],
+      "schemePages": [
+        18,
+        29
+      ],
+      "questionText": "Draw a straight-line graph showing the dollars received for any particular amount paid in euro at that bank that day.",
+      "stem": "Three friends exchange euros for US dollars at the same bank on the same day. The bank applies an exchange rate and a fixed fee. Deirdre pays €55 and gets $65; Olga pays €85 and gets $104; Frank pays €105 and gets $130.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        18,
+        19,
+        29
+      ],
+      "questionText": "Use your graph to estimate how much you could get in dollars for €75.",
+      "stem": "Three friends exchange euros for US dollars at the same bank on the same day. The bank applies an exchange rate and a fixed fee. Deirdre pays €55 and gets $65; Olga pays €85 and gets $104; Frank pays €105 and gets $130.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        18,
+        19,
+        29
+      ],
+      "questionText": "Use your graph to estimate how much it would cost in euro to get 80 US dollars.",
+      "stem": "Three friends exchange euros for US dollars at the same bank on the same day. The bank applies an exchange rate and a fixed fee. Deirdre pays €55 and gets $65; Olga pays €85 and gets $104; Frank pays €105 and gets $130.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "scale": "10B",
+      "totalMarks": 10,
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        18,
+        19,
+        29
+      ],
+      "questionText": "Find the slope of the graph and the point where it crosses the horizontal (euro) axis.",
+      "stem": "Three friends exchange euros for US dollars at the same bank on the same day. The bank applies an exchange rate and a fixed fee. Deirdre pays €55 and gets $65; Olga pays €85 and gets $104; Frank pays €105 and gets $130.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "8-f",
+      "printedParts": [
+        "Q8(f)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        19,
+        30
+      ],
+      "questionText": "Use the amounts or the graph to complete: “For every extra €10 you spend, the amount you get in dollars goes ____.”",
+      "stem": "Three friends exchange euros for US dollars at the same bank on the same day. The bank applies an exchange rate and a fixed fee. Deirdre pays €55 and gets $65; Olga pays €85 and gets $104; Frank pays €105 and gets $130."
+    },
+    {
+      "suffix": "8-g",
+      "printedParts": [
+        "Q8(g)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        19,
+        30
+      ],
+      "questionText": "Complete: 1 euro = ____ US dollars; the fixed fee charged by the bank was €____.",
+      "stem": "Three friends exchange euros for US dollars at the same bank on the same day. The bank applies an exchange rate and a fixed fee. Deirdre pays €55 and gets $65; Olga pays €85 and gets $104; Frank pays €105 and gets $130."
+    },
+    {
+      "suffix": "8-h",
+      "printedParts": [
+        "Q8(h)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        19,
+        30
+      ],
+      "questionText": "Which of the three friends got the best value from the bank, in your opinion? Give a reason.",
+      "stem": "Three friends exchange euros for US dollars at the same bank on the same day. The bank applies an exchange rate and a fixed fee. Deirdre pays €55 and gets $65; Olga pays €85 and gets $104; Frank pays €105 and gets $130."
+    },
+    {
+      "suffix": "8-i",
+      "printedParts": [
+        "Q8(i)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        14,
+        16
+      ],
+      "schemePages": [
+        20,
+        30
+      ],
+      "questionText": "Another bank offered 1 euro = 1·23 US dollars with no fixed fee. Using tables, graphs, algebra or any other method, work out which friends, if any, would have been better off at the second bank.",
+      "stem": "Three friends exchange euros for US dollars at the same bank on the same day. The bank applies an exchange rate and a fixed fee. Deirdre pays €55 and gets $65; Olga pays €85 and gets $104; Frank pays €105 and gets $130."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        10
+      ],
+      "wording": "Answer all eight questions; Answer all six questions; Answer both Question 7 and Question 8.",
+      "classification": "all-required",
+      "reason": "All questions and all printed parts are compulsory; no optional question pool."
+    },
+    {
+      "pages": [
+        3,
+        4,
+        8,
+        10,
+        12,
+        14,
+        15
+      ],
+      "wording": "each sequence; each number; values; summary entries; table and graph; which friend",
+      "classification": "all-required-or-answer-selection",
+      "reason": "Required entries and numerical answers are not optional practice routes. Q8(h) chooses a conclusion from the scenario, not a question."
+    },
+    {
+      "pages": [
+        15,
+        16
+      ],
+      "wording": "pattern or graph; tables or graphs or algebra or any other method",
+      "classification": "open-method-choice",
+      "reason": "Equivalent methods for the same response, with no finite printed task pool; each remains one card."
+    }
+  ],
+  "notes": [
+    "All 35 printed asks are retained in 27 separately marked tasks. Q1(a,b,c), Q2(a)(i,ii), Q6(a–e) and Q7(a)(i,ii) each share one published scale.",
+    "Foundation Phase 3 uses its own award ladders: 25D [0,15,19,22,25], 15D [0,7,10,13,15], 10D [0,5,8,9,10], 20C [0,12,18,20]. No task in this paper is starred, so no additional full-credit-minus-one control is enabled.",
+    "Q3(b,c), Q6, Q7(a)(i,ii,iii), Q7(b)(iii) and Q8(c,d,g) retain candidate-follow-through notes. Q6 graph readings allow ±0·2; Q7(b)(iii) ±10 000; Q8(c,d) ±1 with intermediate partial-credit tolerances.",
+    "Q7(b)(ii) grants full credit when all points are correct but not joined. Q8(e) slope and intercept remain one 10B award, and Q8(g) rate and fixed fee one 5B award.",
+    "Every shared stem, original table, graph and model remains attached. The Q7(b)(iv) model is the published graphical estimate 14:34, preserved with its original graph."
+  ]
+}

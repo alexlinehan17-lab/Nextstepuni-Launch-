@@ -408,19 +408,19 @@
     "refsHash": "1a23027de607a73b"
   },
   "home-economics": {
-    "cards": 549,
-    "contentHash": "dd6afae3967936b8",
-    "coveragePct": 95.3,
-    "covered": 545,
+    "cards": 1953,
+    "contentHash": "ead4865b78f642a1",
+    "coveragePct": 100.0,
+    "covered": 1908,
     "excluded": 0,
-    "leaves": 572,
-    "open": 27,
-    "orphans": 1,
+    "leaves": 1908,
+    "open": 0,
+    "orphans": 0,
     "papers": {
-      "count": 20,
-      "hash": "6b57d840bf971638"
+      "count": 48,
+      "hash": "a640889609f96625"
     },
-    "refsHash": "d68011c4e1a644b2"
+    "refsHash": "06b764f923a27680"
   },
   "hungarian": {
     "cards": 168,
@@ -468,19 +468,19 @@
     "refsHash": "7bc73bbdfb897f41"
   },
   "japanese": {
-    "cards": 600,
-    "contentHash": "f8ca05bcde10a040",
-    "coveragePct": 95.6,
-    "covered": 600,
-    "excluded": 456,
-    "leaves": 1105,
-    "open": 49,
+    "cards": 1941,
+    "contentHash": "c3a55117845c56b1",
+    "coveragePct": 100.0,
+    "covered": 1941,
+    "excluded": 0,
+    "leaves": 1941,
+    "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 20,
-      "hash": "8c702243c6947eae"
+      "count": 66,
+      "hash": "daeb2b7e93e3b7f1"
     },
-    "refsHash": "d23fe40d77f543ca"
+    "refsHash": "999ffad1ef9e4b50"
   },
   "latin": {
     "cards": 227,
@@ -573,19 +573,19 @@
     "refsHash": "25434d529fd64aae"
   },
   "maths": {
-    "cards": 854,
-    "contentHash": "dcd14a7f50bdb548",
-    "coveragePct": 98.5,
-    "covered": 974,
+    "cards": 5188,
+    "contentHash": "78caa4001fdce205",
+    "coveragePct": 99.4,
+    "covered": 5601,
     "excluded": 0,
-    "leaves": 989,
-    "open": 15,
-    "orphans": 0,
+    "leaves": 5636,
+    "open": 35,
+    "orphans": 108,
     "papers": {
-      "count": 20,
-      "hash": "dd8222a2e1b8d8d6"
+      "count": 82,
+      "hash": "85af10c8f0afdec2"
     },
-    "refsHash": "a84c4dc9f66c30aa"
+    "refsHash": "8e1e27da1b7b1b20"
   },
   "modern-greek": {
     "cards": 79,
@@ -618,19 +618,19 @@
     "refsHash": "95be090e951fe8e2"
   },
   "physics": {
-    "cards": 1133,
-    "contentHash": "5991102c908f5746",
-    "coveragePct": 95.2,
-    "covered": 1119,
-    "excluded": 46,
-    "leaves": 1224,
-    "open": 59,
-    "orphans": 6,
+    "cards": 4059,
+    "contentHash": "c474c88f67d95d7f",
+    "coveragePct": 100.0,
+    "covered": 3250,
+    "excluded": 0,
+    "leaves": 3250,
+    "open": 0,
+    "orphans": 0,
     "papers": {
-      "count": 10,
-      "hash": "aedd9969b3ce025e"
+      "count": 34,
+      "hash": "235feb6c1db85258"
     },
-    "refsHash": "83bd7bc978ad6302"
+    "refsHash": "c8412e48ab29b939"
   },
   "polish": {
     "cards": 237,

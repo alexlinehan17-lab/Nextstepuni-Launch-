@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-01",
+  "scope": "2023 Ordinary English main sitting, Section A",
+  "status": "source-reviewed; browser QA pending",
+  "sources": "Paper 014 pp3–7 and scheme physical pp6–9; SHA-256 pinned in generator.",
+  "generator": "he_review_2023_ol_section_a.py",
+  "correctedExistingIds": [
+    "he-2023-ol-sa-q2",
+    "he-2023-ol-sa-q7",
+    "he-2023-ol-sa-q9",
+    "he-2023-ol-sa-q12",
+    "he-2023-ol-sa-q13",
+    "he-2023-ol-sa-q4",
+    "he-2023-ol-sa-q8",
+    "he-2023-ol-sa-q11",
+    "he-2023-ol-sa-q1",
+    "he-2023-ol-sa-q5",
+    "he-2023-ol-sa-q10"
+  ],
+  "addedIds": [
+    "he-2023-ol-sa-q4-source"
+  ],
+  "verifiedUnchangedIds": [
+    "he-2023-ol-sa-q3",
+    "he-2023-ol-sa-q6",
+    "he-2023-ol-sa-q14"
+  ],
+  "responseCount": 15,
+  "printedQuestions": 14,
+  "offeredMarks": 84,
+  "candidateMarks": "Answer ten questions for 60 marks; offered totals are practice coverage, not the candidate tariff.",
+  "boundaryDecisions": [
+    "Iron functions (4) and dietary source (2) are independently written prompts and separately priced. Original ID retains functions; add source.",
+    "Credit name and its disadvantages form one dependent response.",
+    "Cereals/product and baked-product/raising-agent tables require each named row; no finite-option expansion.",
+    "True/false grids and word bank require all printed statements.",
+    "Other counts request open examples, not a finite pool."
+  ],
+  "qualityChanges": [
+    "Expose all published 2:1:0 grading steps, instead of full-mark-only ticks.",
+    "Keep complete scheme guidance, including the previously omitted brand criterion for a microwave oven.",
+    "Preserve the different-agent restriction and remove unprinted recommendations and definitions of partial grades.",
+    "True/false explanations identify the historical 2023 examination answer."
+  ],
+  "preservation": {
+    "previous558IdsRetained": true,
+    "changedRuntimeCards": 11,
+    "otherRuntimeCardsByteIdentical": true,
+    "addedCards": 1,
+    "frozenIdentityHashesUnchanged": true
+  },
+  "atlas": "New iron-source task maps to the existing Section A Q4 and its canonical curriculum topic; regression verified.",
+  "validation": {
+    "vitest": "260 passed across 5 suites",
+    "python": "11 passed",
+    "scopedTestTypecheck": "passed",
+    "regeneration": "byte-identical",
+    "browser": "Pending: unavailable native connection",
+    "productionBuild": "Previous recovery batch passed; this data-only batch verified by deck build, source checks and mandatory suites."
+  },
+  "remaining": "Continue Ordinary Section B and C grading and boundary review; whole subject incomplete."
+}

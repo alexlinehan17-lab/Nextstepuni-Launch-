@@ -1,0 +1,624 @@
+{
+  "schemaVersion": 1,
+  "year": 2020,
+  "level": "higher",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-reviewed",
+  "sources": {
+    "paper-trail-corpus/exampapers/2020/LC098ALP014EV.pdf": {
+      "sha256": "209d36fc7f5c38698bc1192d71ce5a0d93338022f91b4c58f7c9dcc287c69580",
+      "pages": 40
+    },
+    "paper-trail-corpus/exampapers/2020/LC098ALP039EV.pdf": {
+      "sha256": "7452e4edb380755ddc2d6a92b0c0e06e039283956945f6339fd90845c15d8d7b",
+      "pages": 8
+    },
+    "paper-trail-corpus/markingschemes/2020/LC098ALP000EV.pdf": {
+      "sha256": "dd443f95fd1de761fe1305598d00ee89649ca13c90cdf878da260a74942d2395",
+      "pages": 42
+    }
+  },
+  "visualSweep": {
+    "paper A": "All 40 original pages viewed: cover1, instructions2, A3–6, answerbook guide7, ruled answer pages8–39, back40.",
+    "paperBC": "All eight original pages viewed: cover1, B2–4, C5–7, back8.",
+    "scheme": "All42 original pages viewed: cover1, notice2, rubric3, annotations4, A5–8, B9–18, C19–27, blank28, separate coursework29–39, blanks40–41, back42.",
+    "evidence": "All paper-a-01..10, paper-bc-01..02, scheme-01..11 contacts individually visually inspected at tmp/pdfs/home-economics-review/2020-hl-main.",
+    "method": "This manual source ledger saved before inspecting any parser, existing card or authoring output for 2020 Higher."
+  },
+  "expectedTasks": 49,
+  "expectedSectionTasks": {
+    "A": 12,
+    "B": 16,
+    "C": 21
+  },
+  "sourceQuestionGroups": 20,
+  "offeredPracticeMarks": 627,
+  "independentTaskCensus": {
+    "A": {
+      "Q1": 6,
+      "Q2": 6,
+      "Q3": 6,
+      "Q4": 6,
+      "Q5": 6,
+      "Q6": 6,
+      "Q7": 6,
+      "Q8": 6,
+      "Q9": 6,
+      "Q10": 6,
+      "Q11": 6,
+      "Q12": 6
+    },
+    "B": {
+      "Q1(a)": 20,
+      "Q1(b)": 24,
+      "Q1(c)": 16,
+      "Q1(d)": 20,
+      "Q2(a)": 20,
+      "Q2(b)": 18,
+      "Q2(c)": 12,
+      "Q3(a)": 12,
+      "Q3(b)": 26,
+      "Q3(c)": 12,
+      "Q4(a)": 26,
+      "Q4(b)": 12,
+      "Q4(c)": 12,
+      "Q5(a)": 20,
+      "Q5(b)": 18,
+      "Q5(c)": 12
+    },
+    "C": {
+      "Q1(a)(i)": 16,
+      "Q1(a)(ii)": 16,
+      "Q1(a)(iii)": 18,
+      "Q1(b)(i)": 16,
+      "Q1(b)(ii)": 14,
+      "Q1(c)(i)": 16,
+      "Q1(c)(ii)": 14,
+      "Q2(a)(i)": 10,
+      "Q2(a)(ii)": 15,
+      "Q2(b)(i)": 6,
+      "Q2(b)(ii)": 9,
+      "Q2(c)(i)": 9,
+      "Q2(c)(ii)": 6,
+      "Q3(a)(i)": 15,
+      "Q3(a)(ii)": 20,
+      "Q3(a)(iii)": 15,
+      "Q3(b)(i)": 9,
+      "Q3(b)(ii)": 12,
+      "Q3(b)(iii)": 9,
+      "Q3(c)(i)": 12,
+      "Q3(c)(ii)": 18
+    }
+  },
+  "sourceLeafReconciliation": "The pre-parser visual ledger established 49 priced tasks A12/B16/C21. Subsequent source-census comparison identified the four named roman answer pairs A6/A10/A11/A12; original paper A pages 4/6 were visually re-opened and confirmed. The raw source ledger correctly retains all eight roman leaves, yielding53 source leaves A16/B16/C21, covered by49 whole tasks. Each pair is one required-term response under one printed instruction with separately claimable 3-mark rows. No census marker is removed to force the task count.",
+  "sourceDecisions": [
+    "Original sources visually reviewed before any 2020 parser/card/author inspection. Split Section A answerbook 014, B/C booklet 039, one 000 marking scheme. Pre-parser independently priced-task census A12/B16/C21 = 49, 627marks. The original note called these 49 source leaves as well; that terminology is corrected after explicit original-page reinspection of the four named roman pairs. See sourceLeafReconciliation: 53 printed leaves remain mapped into 49 tasks.",
+    "A1 six cells1[0,1]: each carbohydrate formula and matching example; original subscripts. A2 two3[0,2,3], explicitly ONE nutrition-aware and ONE health-conscious reference. A3 any TWO omega3 functions3[0,2,3], no forced row/category quota. A4 three vitamin identifications2[0,2], preserve original K/C/D pool for blood clotting, folate/B12 for neural-tube defects, A for night blindness; no silent scientific rewriting. A5 any TWO Bord Bia functions3[0,2,3]. A6 extractives and marinating3[0,2,3] EACH. A7 three homogenisation points2[0,1,2]. A8 intense/bulk names2[0,2] EACH plus matching example1 EACH, full example pools. A9 both complete original symbols and source captions, each explanation3[0,2,3]. A10 enzymes/surfactants3[0,2,3] EACH. A11 fixed/variable3[0,2,3] EACH; source also gives loan-to-value and tracker explanations, retain as additional guidance without new required claims. A12 product placement/loyalty schemes3[0,2,3] EACH.",
+    "B1a any FIVE of TEN table situations, each reason4[0,1,2,3,4], complete original ten-row/three-percentage table plus safefood attribution. Scheme groups examples into difficult/not difficult; keep both full pools without inventing per-situation keys or difficulty quotas. b ALL THREE required protein heads each four2[0,1,2]: peptide bond formation, essential/non-essential amino acids, supplementary/complementary role; all original examples. c BOTH gel/foam each four2[0,1,2], retain culinary applications without inventing internal explanation/application splits. d four strategies5[0,3,5]: ONE shopping, ONE at home, ONE eating out, ONE other, all models.",
+    "B2a five points4[0,1,2,3,4], full nutritional-significance source. b ONE chosen cereal product: six production2[0,1,2], packaging3[0,2,3], labelling3[0,2,3]. Full flour and pasta models plus open valid product; appropriate shared packaging/labelling guidance, no invented models. c three fibre benefits4[0,2,4].",
+    "B3a four3[0,2,3]: ONE safe preparation, ONE safe storage, TWO others. b ONE task choosing TWO different home-preservation methods; each coherent method profile HOW two2[0,1,2], principle two3[0,1,2,3], spoilage-risk one3[0,1,2,3]; 13 each/26 total. Full original table profiles freezing, heat treatments, chemical preservation, dehydration, salting span scheme13–14; preserve column pairings and all submethods, no combination expansion. c ONE legislation profile name4[0,2,3,4]+two details4[0,2,3,4]. Full models Food Hygiene Regulations, FIC, European Communities(Hygiene of Foodstuffs), Sale of Food and Drugs Acts, Health Acts; An Bord Bia Act1994/Food Safety Authority of Ireland Act accepted by name only; preserve continuation scheme14–15 and no invented details.",
+    "B4a ONE coherent motorised kitchen-appliance profile: name2[0,2], selection3×2[0,1,2], information3×2[0,1,2], working4×2[0,1,2], use2×2[0,1,2] =26. Full original appliance name pool; refrigerator and food processor have full working/use models, others accepted by name only. Accept labelled diagrams. b ONE each choosing/using/disposing4[0,2,4]. c three consumer-law points4[0,1,2,3,4], exact historical 1980 Act source. B5a five4[0,2,4]: TWO mid-century, TWO present, ONE other; historical source account. b EACH children/teenagers, parents, grandparents6[0,2,4,6]. c three communication points4[0,2,4].",
+    "C1ai four open-plan evaluations4[0,2,4], whole positive/negative source without invented quota. aii four interior-planning factors4[0,2,4]. aiii ANY THREE design principles6[0,2,4,6] each with application, complete balance/proportion/emphasis/rhythm models, no invented description/application split. bi four comparative cost factors4[0,2,4], full buying/renting initial/continuous model with original historical figures, no per-category mark quota. bii ONE local-authority scheme name2[0,1,2]+three details4[0,2,4], all FOUR full HAP/Mortgage Allowance/Rebuilding Ireland Home Loan/Incremental Purchase profiles. ci four heating-selection4[0,2,4]. cii ONE coherent heating profile name1,fuel1,three working3[0,2,3],environment3[0,2,3]. Preserve all names and wet/dry/solar/air-source/ground-source models, scheme21–22 continuation; additional name-only choices remain open with no invented models; labelled diagrams accepted.",
+    "C2ai daywear sketch4[0,1,2,3,4]+description6[0,2,4,6], no source model printed. aii EACH suitability/sustainability/fashion5[0,3,5], including original historical trends. bi any THREE finish names2[0,2], full ten-name pool. bii three enhancement points3[0,2,3], all original models, no invented requirement for three different finishes or moth-proof model where none printed. ci three textile-industry structure3[0,2,3]; cii two small-business importance3[0,2,3].",
+    "C3ai three socialisation5[0,3,5]. aii EACH physical/emotional/moral/intellectual5[0,3,5]. aiii five SEN supports3[0,2,3]. bi three unemployment causes3[0,2,3], original COVID19 example and quoted Sept2019 statistic/source preserved. bii three society effects4[0,2,4]. biii ONE statutory initiative name3[0,1,2,3]+two details3[0,2,3], IDA/Enterprise Ireland full profiles plus SOLAS/LEO name-only and open valid alternatives. ci TWO age and TWO gender points3[0,2,3]. cii ONE task selecting TWO different leisure facilities, each facilities/value/community3[0,2,3] =9 each/18; all named examples and open choice retained with appropriate shared guidance, no combination expansion."
+  ],
+  "expectedFigureGroups": [
+    "A1 carbohydrate table",
+    "A4 vitamin table",
+    "A8 sweetener table",
+    "A9 both consumer symbols/captions",
+    "B1 full portion-size table/caption"
+  ],
+  "tasks": [
+    {
+      "id": "he-2020-hl-sa-q1",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 HL Section A Q1",
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2020-hl-sa-q2",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 HL Section A Q2",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2020-hl-sa-q3",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 HL Section A Q3",
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2020-hl-sa-q4",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 HL Section A Q4",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2020-hl-sa-q5",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 HL Section A Q5",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2020-hl-sa-q6",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 HL Section A Q6",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2020-hl-sa-q7",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 HL Section A Q7",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2020-hl-sa-q8",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 HL Section A Q8",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2020-hl-sa-q9",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 HL Section A Q9",
+      "topicId": "home-economics-1-5"
+    },
+    {
+      "id": "he-2020-hl-sa-q10",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 HL Section A Q10",
+      "topicId": "home-economics-1-4"
+    },
+    {
+      "id": "he-2020-hl-sa-q11",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 HL Section A Q11",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2020-hl-sa-q12",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 HL Section A Q12",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2020-hl-sb-q1a",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2020 HL Section B Q1(a)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2020-hl-sb-q1b",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2020 HL Section B Q1(b)",
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2020-hl-sb-q1c",
+      "section": "B",
+      "marks": 16,
+      "questionRef": "2020 HL Section B Q1(c)",
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2020-hl-sb-q1d",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2020 HL Section B Q1(d)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2020-hl-sb-q2a",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2020 HL Section B Q2(a)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2020-hl-sb-q2b",
+      "section": "B",
+      "marks": 18,
+      "questionRef": "2020 HL Section B Q2(b)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2020-hl-sb-q2c",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2020 HL Section B Q2(c)",
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2020-hl-sb-q3a",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2020 HL Section B Q3(a)",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2020-hl-sb-q3b",
+      "section": "B",
+      "marks": 26,
+      "questionRef": "2020 HL Section B Q3(b)",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2020-hl-sb-q3c",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2020 HL Section B Q3(c)",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2020-hl-sb-q4a",
+      "section": "B",
+      "marks": 26,
+      "questionRef": "2020 HL Section B Q4(a)",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2020-hl-sb-q4b",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2020 HL Section B Q4(b)",
+      "topicId": "home-economics-1-5"
+    },
+    {
+      "id": "he-2020-hl-sb-q4c",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2020 HL Section B Q4(c)",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2020-hl-sb-q5a",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2020 HL Section B Q5(a)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2020-hl-sb-q5b",
+      "section": "B",
+      "marks": 18,
+      "questionRef": "2020 HL Section B Q5(b)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2020-hl-sb-q5c",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2020 HL Section B Q5(c)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2020-hl-sc-q1ai",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2020 HL Section C E1 Q1(a)(i)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2020-hl-sc-q1aii",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2020 HL Section C E1 Q1(a)(ii)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2020-hl-sc-q1aiii",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2020 HL Section C E1 Q1(a)(iii)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2020-hl-sc-q1bi",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2020 HL Section C E1 Q1(b)(i)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2020-hl-sc-q1bii",
+      "section": "C",
+      "marks": 14,
+      "questionRef": "2020 HL Section C E1 Q1(b)(ii)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2020-hl-sc-q1ci",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2020 HL Section C E1 Q1(c)(i)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2020-hl-sc-q1cii",
+      "section": "C",
+      "marks": 14,
+      "questionRef": "2020 HL Section C E1 Q1(c)(ii)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2020-hl-sc-q2ai",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2020 HL Section C E2 Q2(a)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2020-hl-sc-q2aii",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2020 HL Section C E2 Q2(a)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2020-hl-sc-q2bi",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2020 HL Section C E2 Q2(b)(i)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2020-hl-sc-q2bii",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2020 HL Section C E2 Q2(b)(ii)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2020-hl-sc-q2ci",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2020 HL Section C E2 Q2(c)(i)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2020-hl-sc-q2cii",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2020 HL Section C E2 Q2(c)(ii)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2020-hl-sc-q3ai",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2020 HL Section C E3 Q3(a)(i)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2020-hl-sc-q3aii",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2020 HL Section C E3 Q3(a)(ii)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2020-hl-sc-q3aiii",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2020 HL Section C E3 Q3(a)(iii)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2020-hl-sc-q3bi",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2020 HL Section C E3 Q3(b)(i)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2020-hl-sc-q3bii",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2020 HL Section C E3 Q3(b)(ii)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2020-hl-sc-q3biii",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2020 HL Section C E3 Q3(b)(iii)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2020-hl-sc-q3ci",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2020 HL Section C E3 Q3(c)(i)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2020-hl-sc-q3cii",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2020 HL Section C E3 Q3(c)(ii)",
+      "topicId": "home-economics-3-11"
+    }
+  ],
+  "expectedSourceLeaves": 53,
+  "expectedSectionSourceLeaves": {
+    "A": 16,
+    "B": 16,
+    "C": 21
+  },
+  "figures": {
+    "home-economics-2020-hl-sa-q1": {
+      "kind": "a",
+      "source": "paper-trail-corpus/exampapers/2020/LC098ALP014EV.pdf",
+      "page": 3,
+      "bounds": [
+        20,
+        147.479736328125,
+        570.219970703125,
+        286.4000244140625
+      ],
+      "alt": "Complete original carbohydrate table: required formula and example fields for monosaccharides, disaccharides and polysaccharides.",
+      "sha256": "0f25cdb71ef8204fca0e48cb078f030bfca437ff850befbf28c82cc2fb6ffc23"
+    },
+    "home-economics-2020-hl-sa-q4": {
+      "kind": "a",
+      "source": "paper-trail-corpus/exampapers/2020/LC098ALP014EV.pdf",
+      "page": 4,
+      "bounds": [
+        20,
+        56.09967041015625,
+        570.219970703125,
+        212.70003255208334
+      ],
+      "alt": "Complete original vitamin-deficiency table: poor blood clotting, neural tube defects and night blindness.",
+      "sha256": "cabb2c3342d846e23e49e48b69330a5f94a2d66ad0693e4a1b48f7809edb46ed"
+    },
+    "home-economics-2020-hl-sa-q8": {
+      "kind": "a",
+      "source": "paper-trail-corpus/exampapers/2020/LC098ALP014EV.pdf",
+      "page": 5,
+      "bounds": [
+        20,
+        227.51971435546875,
+        570.219970703125,
+        339.3599853515625
+      ],
+      "alt": "Complete original artificial-sweetener class/type and matching-example table.",
+      "sha256": "6abd69d0b50716fe787ddb7f480e44a4e1ba82997740d3df72a0216e1b82b36d"
+    },
+    "home-economics-2020-hl-sa-q9": {
+      "kind": "a",
+      "source": "paper-trail-corpus/exampapers/2020/LC098ALP014EV.pdf",
+      "page": 5,
+      "bounds": [
+        20,
+        378.41973876953125,
+        570.219970703125,
+        763.5396728515625
+      ],
+      "alt": "Both complete original consumer symbols: Green Dot and PET identification 1 recycling symbol, with repak.ie and clearpak.com source captions.",
+      "sha256": "5e52d20c3177866e0aab98a9b69a8e4f3d28c9ac6dcc33bd262a4641f5075d32"
+    },
+    "home-economics-2020-hl-sb-q1-portions": {
+      "kind": "bc",
+      "source": "paper-trail-corpus/exampapers/2020/LC098ALP039EV.pdf",
+      "page": 2,
+      "bounds": [
+        80.78399658203125,
+        217.20590209960938,
+        513.1600036621094,
+        486.86468505859375
+      ],
+      "alt": "Complete original safefood portion-size table: all ten situations and three percentage columns (sometimes, always and never difficult), with complete safefood.eu/media/safefoodlibrary attribution.",
+      "sha256": "82eb0a0920171ce159b5c7db585b375bbf6b33b53d57b4fb9ef27359b037c758"
+    }
+  },
+  "sectionAReview": {
+    "tasks": 12,
+    "marks": 72,
+    "tariffDecision": "All required formula/example cells, nutrition/health category quota, complete vitamin/sweetener/symbol pools, exact original partial steps and required paired terms. Original extra mortgage guidance remains supplementary."
+  },
+  "sectionBReview": {
+    "tasks": 16,
+    "marks": 280,
+    "selectionDecisions": "Full ten-row table, exact protein/portion quotas, coherent cereal choices, five complete preservation-table profiles in TWO selected-method slots, all legislation models and name-only alternatives, one coherent appliance profile with complete name pool, required environmental categories and historical family quotas."
+  },
+  "sectionCReview": {
+    "tasks": 21,
+    "marks": 275,
+    "selectionDecisions": "All four design-principle and local-authority-scheme models, historical cost figures, coherent heating profiles with original continuation, linked daywear sketch/evaluation, all finish choices and named-only gaps, required education headings, all statutory initiative alternatives, exact age/gender quotas and two coherent leisure-facility profiles."
+  },
+  "figureVisualReview": "All five complete original inputs individually inspected: carbohydrate formula/example grid, all vitamin-deficiency cells, sweetener class/example grid, both Green Dot/PET symbols and their captions, and all ten portion-size situations with three percentage columns and full safefood attribution.",
+  "sourceCensusReconciliation": {
+    "level": "higher",
+    "sourceHashes": "verified",
+    "expectedSourceLeaves": 53,
+    "observedSourceLeaves": 53,
+    "continuityFlags": [],
+    "keys": [
+      "Section A Q1",
+      "Section A Q10(i)",
+      "Section A Q10(ii)",
+      "Section A Q11(i)",
+      "Section A Q11(ii)",
+      "Section A Q12(i)",
+      "Section A Q12(ii)",
+      "Section A Q2",
+      "Section A Q3",
+      "Section A Q4",
+      "Section A Q5",
+      "Section A Q6(i)",
+      "Section A Q6(ii)",
+      "Section A Q7",
+      "Section A Q8",
+      "Section A Q9",
+      "Section B Q1(a)",
+      "Section B Q1(b)",
+      "Section B Q1(c)",
+      "Section B Q1(d)",
+      "Section B Q2(a)",
+      "Section B Q2(b)",
+      "Section B Q2(c)",
+      "Section B Q3(a)",
+      "Section B Q3(b)",
+      "Section B Q3(c)",
+      "Section B Q4(a)",
+      "Section B Q4(b)",
+      "Section B Q4(c)",
+      "Section B Q5(a)",
+      "Section B Q5(b)",
+      "Section B Q5(c)",
+      "Section C Q1(a)(i)",
+      "Section C Q1(a)(ii)",
+      "Section C Q1(a)(iii)",
+      "Section C Q1(b)(i)",
+      "Section C Q1(b)(ii)",
+      "Section C Q1(c)(i)",
+      "Section C Q1(c)(ii)",
+      "Section C Q2(a)(i)",
+      "Section C Q2(a)(ii)",
+      "Section C Q2(b)(i)",
+      "Section C Q2(b)(ii)",
+      "Section C Q2(c)(i)",
+      "Section C Q2(c)(ii)",
+      "Section C Q3(a)(i)",
+      "Section C Q3(a)(ii)",
+      "Section C Q3(a)(iii)",
+      "Section C Q3(b)(i)",
+      "Section C Q3(b)(ii)",
+      "Section C Q3(b)(iii)",
+      "Section C Q3(c)(i)",
+      "Section C Q3(c)(ii)"
+    ],
+    "reconciliation": "Independent 90-page visual sweep of both split booklets and the complete scheme pinned 49 priced tasks A12/B16/C21 before parser/card inspection. Subsequent explicit reinspection of original paper A pages 4/6 confirmed four named roman pairs A6/A10/A11/A12 retained by the raw census: 53 source leaves A16/B16/C21 map to 49 whole tasks and 627marks. All eight named terms remain separately claimable 3-mark rows; no source markers removed."
+  },
+  "validation": {
+    "runtime": "248 affected/required tests passed: eight 2020 Higher and eight 2019 Ordinary plus 232 preservation/curriculum/deck. maxWorkers=1, owned temporary test caches removed automatically.",
+    "mandatoryRawSourceGate": "Explicit 2010–2020 original-PDF hash/key gates passed. Independent 90-page visual census pinned 49 priced tasks A12/B16/C21 before parser/card inspection. Re-opening original paper A pages 4/6 confirmed four named roman pairs A6/A10/A11/A12: 53 source leaves A16/B16/C21 map to 49 whole tasks, with every named term separately claimable at 3 marks. No parser marker removed. 627 offered marks.",
+    "atlas": "Two targeted Home Economics checks passed: 76 tagged papers, 983 physical groups, 1011 registry mappings. All 17 original IDs retained and three missing electives restored as B/C 6–8; exact runtime 999.",
+    "coverage": "Three targeted Home Economics checks passed. Subject-only baseline 1897 cards / 1853 of 1907 raw leaves covered, 54 open. Zero ratchet findings before/after; all other subject entries unchanged.",
+    "mainTypecheck": "passed",
+    "scoped2020TestTypecheck": "passed",
+    "productionBuild": "passed on retry after initial ENOSPC; only owned ignored nonsymlink partial dist was removed after the failed process exited, and successful dist removed after verified completion",
+    "cardlint": "clean; 1923 authored records including withdrawals inspected",
+    "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across 30 generated files.",
+    "reconciliation": "2020 Higher 53/53 original leaves and 49 priced tasks, zero sitting opens/exclusions/continuity flags. Lane 1897 cards (1026 Higher / 871 Ordinary), 1853/1907 raw leaves covered, 54 open, zero orphan/unparsed/excluded, 11 flags.",
+    "preservation": "Every earlier authored card and all 977 earlier emitted Higher blocks, unrelated decks, sizes/showcase subjects, full and decoded non-HE Atlas records, unrelated HE mappings and every other HE raw census sitting unchanged. Frozen identity hashes unchanged; 49 additions explicitly pinned.",
+    "browser": "Parent-owned/pending; all five original input crops individually visually inspected."
+  }
+}

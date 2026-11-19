@@ -379,6 +379,9 @@
 "focus":"the table below",
 "conditions":[
 "in relation to the digestion of protein"
+],
+"use":[
+"Organ: Pancreas"
 ]
 }
 ]
@@ -714,6 +717,20 @@
 "focus":"how the results changed for these students",
 "conditions":[
 "from the initial test to the re-test"
+],
+"use":[
+"The table and graph below show the results"
+]
+},
+{
+"action":"Find",
+"focus":"the value of r",
+"conditions":[
+"correct to 4 decimal places"
+],
+"use":[
+"The initial-test distances are 22, 34, 38, 45, 49, 57 and 61 m",
+"the matching re-test distances are 25, 40, 65, 96, 142, 262 and 350 m"
 ]
 }
 ]
@@ -872,7 +889,7 @@
 "with respect to x"
 ],
 "use":[
-"f(x) = x² −7x−10"
+"f(x) = x² − 7x − 10"
 ]
 }
 ]
@@ -887,6 +904,11 @@
 "when it is directly above E",
 "in metres",
 "correct to the nearest metre"
+],
+"use":[
+"The diagram is drawn to a scale of 1 unit = 250 metres",
+"travels 1 250 m to a point L where it lifts off",
+"makes an angle of 14° with the ground"
 ]
 }
 ]
@@ -911,7 +933,7 @@
 "action":"Explain briefly",
 "focus":"why the following equation holds",
 "use":[
-"the following equation"
+"√(100 + d²)/0·343 = 2d/0·255"
 ]
 }
 ]
@@ -967,7 +989,7 @@
 "use":[
 "the shape of a cylinder",
 "a diameter of 10 cm",
-"a volume of 450𝜋 cm³"
+"a volume of 450π cm³"
 ]
 }
 ]
@@ -1220,28 +1242,8 @@
 "on Earth"
 ],
 "use":[
-"The ISS is located 400 km above the Earth’s surface",
-"the acceleration due to gravity is 90% as strong as it is on the Earth’s surface",
-"the mass of one of the astronauts was measured to be 85 kg"
-]
-},
-{
-"action":"What is",
-"focus":"the astronaut’s mass",
-"conditions":[
-"at the altitude of the ISS"
-]
-},
-{
-"action":"Calculate",
-"focus":"the astronaut’s weight",
-"conditions":[
-"at the altitude of the ISS"
-],
-"use":[
-"The ISS is located 400 km above the Earth’s surface",
-"the acceleration due to gravity is 90% as strong as it is on the Earth’s surface",
-"the mass of one of the astronauts was measured to be 85 kg"
+"the mass of one of the astronauts was measured to be 85 kg",
+"acceleration due to gravity on Earth’s surface = 9.8 m s⁻²"
 ]
 }
 ]
@@ -1434,7 +1436,7 @@
 "a natural length of 15.0 cm",
 "a block of mass 500 g",
 "its length increases to 17.5 cm",
-"the elastic constant of the spring was found to be 196 N m–1"
+"acceleration due to gravity = 9.8 m s⁻²"
 ]
 }
 ]
@@ -1851,7 +1853,7 @@
 "units":[
 {
 "action":"How does one explain",
-"focus":"the chosen\nword"
+"focus":"the chosen word"
 }
 ]
 },
@@ -1972,7 +1974,8 @@
 "count":"two",
 "focus":"Japanese dishes",
 "conditions":[
-"available"
+"available",
+"in English"
 ]
 }
 ]
@@ -2970,7 +2973,9 @@
 "action":"Complete",
 "focus":"the missing lengths",
 "use":[
-"the table below"
+"the table below",
+"an arc length of 45 cm",
+"the length of the arc is 90% of the previous length"
 ]
 }
 ]
@@ -3320,7 +3325,19 @@
 },
 {
 "id":"maths-2021-ol-p2-q1-c-i",
-"notDecomposable":"garbled"
+"units":[
+{
+"action":"What is",
+"focus":"the probability that the outcome is his right hand and a blue spot",
+"conditions":[
+"Jack spins each spinner once"
+],
+"use":[
+"The two spinners needed for the game are shown below",
+"Both consist of four equal sections"
+]
+}
+]
 },
 {
 "id":"phys-2022-hl-q13-v-c",
@@ -3330,10 +3347,6 @@
 "focus":"the period that Huygens’ clock would have",
 "conditions":[
 "on the surface of Saturn"
-],
-"use":[
-"a pendulum of length 0.993 m",
-"The acceleration due to gravity on the surface of Saturn is 11.2 m s⁻²"
 ]
 }
 ]
@@ -3343,7 +3356,11 @@
 "units":[
 {
 "action":"Calculate",
-"focus":"the position of the real image formed"
+"focus":"the position of the real image formed",
+"use":[
+"The object is 20 cm in front of the concave mirror",
+"The mirror has a focal length of 12 cm"
+]
 }
 ]
 },
