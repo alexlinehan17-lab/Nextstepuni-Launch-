@@ -1,5 +1,5 @@
 {
-  "name": "Russian 2017 to 2020 exact-candidate verification",
+  "name": "Russian R4 and zero-exclusion exact-candidate verification",
   "permissions": {
     "contents": "read"
   },
@@ -11,7 +11,7 @@
     }
   },
   "concurrency": {
-    "group": "russian-2017-2020-20261119",
+    "group": "russian-r4-zero-20261119",
     "cancel-in-progress": false
   },
   "jobs": {
@@ -31,7 +31,7 @@
         {
           "name": "Verify exact source candidate",
           "id": "integrity",
-          "run": "test \"$(git rev-parse HEAD^)\" = 6a6eea98b26d7129332d9a940e1b2551bfe16d2a\ntest \"$(git diff --name-only HEAD^ HEAD)\" = .github/workflows/russian-sitting-check-20261118.yml"
+          "run": "test \"$(git rev-parse HEAD^)\" = 7bbde60ec50f25f3ec5afc4cd5cc514666f0e311\ntest \"$(git diff --name-only HEAD^ HEAD)\" = .github/workflows/russian-sitting-check-20261118.yml"
         },
         {
           "uses": "actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
