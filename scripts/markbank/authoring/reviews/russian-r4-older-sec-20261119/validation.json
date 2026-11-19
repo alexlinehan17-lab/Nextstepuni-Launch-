@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-19T12:21:29.374780+00:00",
+  "sourceVerifiedCards": 300,
+  "fixedNoticeRegenerationIsIdempotent": true,
+  "sourceVerification": "sources.log",
+  "requiredChecks": [
+    "required.log",
+    "required-followup.log"
+  ],
+  "requiredDistinctChecks": 266,
+  "followupReason": "The old 2016 Ordinary assertion expected a confidence-only hold. It now requires whole-question assessment under CARD-STANDARD section5. The other256 checks passed before this assertion-only correction.",
+  "reconciliation": "ledger.json"
+}

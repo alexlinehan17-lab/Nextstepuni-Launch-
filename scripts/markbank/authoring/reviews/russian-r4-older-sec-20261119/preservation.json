@@ -1,0 +1,23 @@
+{
+  "baseCommit": "091540bac32ce43ecb48b569ec43c1b9dbbddbe1",
+  "retainedCardIdsAndConceptIds": 1488,
+  "allMarksUnchanged": true,
+  "writingGridsUnchanged": true,
+  "original199AndOtherSubjectsUnchanged": true,
+  "noAnswerCards": [
+    "ru-2014-hl-gw",
+    "ru-2014-hl-se",
+    "ru-2014-ol-ew",
+    "ru-2014-ol-la1",
+    "ru-2014-ol-sa",
+    "ru-2015-hl-gw",
+    "ru-2015-hl-se",
+    "ru-2015-ol-ew",
+    "ru-2015-ol-la1",
+    "ru-2015-ol-sa",
+    "ru-2016-hl-gw",
+    "ru-2016-ol-ew",
+    "ru-2016-ol-sa"
+  ],
+  "otherChange": "2016 Ordinary discourse (20 marks) and 2014 Ordinary language awareness 2 (10 marks) now describe whole-question assessment; all printed answers and totals remain."
+}
