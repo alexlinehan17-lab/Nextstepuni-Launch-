@@ -35209,5 +35209,1730 @@
    "attribution": "SEC Italian 2023 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "The task as the examination paper prints it."
   }
+ },
+ {
+  "id": "it-2023-ol-la-1",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "shop-sells",
+  "questionRef": "2023 OL Section LA Q1",
+  "questionText": "The shop sells\n(a) biscuits\n(b) books\n(c) clothes\n(d) flowers",
+  "questionChoices": [
+   "biscuits",
+   "books",
+   "clothes",
+   "flowers"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. (a)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (a) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 1",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-la-2",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "film-screened",
+  "questionRef": "2023 OL Section LA Q2",
+  "questionText": "The film was screened\n(a) a year ago\n(b) last Monday\n(c) last Friday\n(d) last Saturday",
+  "questionChoices": [
+   "a year ago",
+   "last Monday",
+   "last Friday",
+   "last Saturday"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2. (b)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (b) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 2",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-la-3",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "news-item-about",
+  "questionRef": "2023 OL Section LA Q3",
+  "questionText": "The news item is about\n(a) a new course\n(b) a new film\n(c) a new app\n(d) a social media account",
+  "questionChoices": [
+   "a new course",
+   "a new film",
+   "a new app",
+   "a social media account"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3. (a)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (a) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 3",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-la-4",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "botanic-gardens-padua-were-established",
+  "questionRef": "2023 OL Section LA Q4",
+  "questionText": "The Botanic Gardens in Padua were established in\n(a) 1545\n(b) 1655\n(c) 1667\n(d) 1757",
+  "questionChoices": [
+   "1545",
+   "1655",
+   "1667",
+   "1757"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "4. (a)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (a) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 4",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-la-5",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "advertisement-job",
+  "questionRef": "2023 OL Section LA Q5",
+  "questionText": "The advertisement is for a job\n(a) at a beach\n(b) in the mountains\n(c) in a youth centre\n(d) on a farm",
+  "questionChoices": [
+   "at a beach",
+   "in the mountains",
+   "in a youth centre",
+   "on a farm"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "5. (a)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (a) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 3.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 5",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-la-6",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "weather-announcement-month",
+  "questionRef": "2023 OL Section LA Q6",
+  "questionText": "The weather announcement is for the month of\n(a) March\n(b) May\n(c) June\n(d) July",
+  "questionChoices": [
+   "March",
+   "May",
+   "June",
+   "July"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "6. (d)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (d) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 3.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 6",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-la-7",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "boarding-will-start",
+  "questionRef": "2023 OL Section LA Q7",
+  "questionText": "Boarding will start at\n(a) 07:30\n(b) 15:30\n(c) 17:00\n(d) 17:15",
+  "questionChoices": [
+   "07:30",
+   "15:30",
+   "17:00",
+   "17:15"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "7. (d)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (d) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 3.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 7",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-la-8",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "news-item-about",
+  "questionRef": "2023 OL Section LA Q8",
+  "questionText": "The news item is about\n(a) a college open day\n(b) a concert\n(c) a furniture and design fair\n(d) a new television series Iodáilis ‐ Gnáthleibhéal",
+  "questionChoices": [
+   "a college open day",
+   "a concert",
+   "a furniture and design fair",
+   "a new television series Iodáilis ‐ Gnáthleibhéal"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "8. (c)",
+    "marks": 3,
+    "contextNote": "The scheme accepts option (c) only."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x3\": 3 marks a question; the listening booklet prints this ask on page 3.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 8",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb1-1",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "who-marco-going-holiday-with",
+  "questionRef": "2023 OL Section LB1 Q1",
+  "questionText": "Who is Marco going on holiday with?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "His group of friends",
+    "marks": 4,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 1. Conversation between Marco and Maria. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 1",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb1-2",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "activities-can-cinque-terre",
+  "questionRef": "2023 OL Section LB1 Q2",
+  "questionText": "Mention two activities you can do in Le Cinque Terre.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Sunbathing",
+      "Swimming",
+      "Boat trips",
+      "Hiking/ walking",
+      "Photography/Sightseeing"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks (3+3)'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 1. Conversation between Marco and Maria. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 2",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb1-3",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "type-accommodation-have-booked",
+  "questionRef": "2023 OL Section LB1 Q3",
+  "questionText": "What type of accommodation have they booked?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Quadruple rooms in a hostel/ A hostel with kitchen facilities 4 marks)",
+    "marks": 4,
+    "contextNote": "The scheme prices this half of the ask separately, under the heading “A youth (1) hostel (3)”. Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks (3+1)'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 1. Conversation between Marco and Maria. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 3",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb1-4",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "reason-maria-prefers-travelling-train",
+  "questionRef": "2023 OL Section LB1 Q4",
+  "questionText": "Give one reason why Maria prefers travelling by train.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "It is relaxing",
+      "It is (a lot more) sustainable",
+      "(There are a lot of) student discounts"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 1. Conversation between Marco and Maria. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 4",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb2-1",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "long-did-anna-have-rest",
+  "questionRef": "2023 OL Section LB2 Q1",
+  "questionText": "For how long did Anna have to rest?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Three weeks",
+    "marks": 5,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '5 marks'; the listening booklet prints this ask on page 5.",
+  "stem": "Dialogue 2. Conversation between Max and Anna. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 1",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb2-2",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "who-worried-about-anna",
+  "questionRef": "2023 OL Section LB2 Q2",
+  "questionText": "Who is worried about Anna? Give one detail.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Her coach/trainer",
+      "Her team/ teammates",
+      "Her parents"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '5 marks'; the listening booklet prints this ask on page 5.",
+  "stem": "Dialogue 2. Conversation between Max and Anna. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 2",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb2-3",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "does-anna-say-about-her-team",
+  "questionRef": "2023 OL Section LB2 Q3",
+  "questionText": "What does Anna say about her team?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They are (very) strong, passionate",
+    "marks": 6,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks (3+3)'; the listening booklet prints this ask on page 5.",
+  "stem": "Dialogue 2. Conversation between Max and Anna. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 3",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb2-4",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "other-symptom-anna-had-after-she",
+  "questionRef": "2023 OL Section LB2 Q4",
+  "questionText": "Mention one other symptom Anna had after she fell. Iodáilis ‐ Gnáthleibhéal",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "One of ` — the answers the scheme accepts",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "She lost (2) her appetite (2)",
+      "(She often gets a) head (2) ache (2)"
+     ]
+    },
+    "contextNote": "The scheme prices this half of the ask separately, under the heading “One of `”. Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 5.",
+  "stem": "Dialogue 2. Conversation between Max and Anna. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 4",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb3-1",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "where-did-sabrina-work-experience",
+  "questionRef": "2023 OL Section LB3 Q1",
+  "questionText": "Where did Sabrina go on work experience?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To a Tourist Office/Ireland",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '2 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Sabrina Bellanova. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 1",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb3-2",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "when-did-sabrina-work-waitress",
+  "questionRef": "2023 OL Section LB3 Q2",
+  "questionText": "When did Sabrina work as a waitress?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "April and May",
+    "marks": 6,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks (3+3)'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Sabrina Bellanova. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 2",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb3-3",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "describe-area-where-sabrina-lived",
+  "questionRef": "2023 OL Section LB3 Q3",
+  "questionText": "Describe the area where Sabrina lived. Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "in the countryside — the answers the scheme accepts",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "She lived:",
+      "in a small town /village",
+      "in the west of Ireland",
+      "on a farm (with animals) / on farmland",
+      "(near) a river",
+      "(near) an old castle",
+      "not far from the city"
+     ]
+    },
+    "contextNote": "The scheme prices this half of the ask separately, under the heading “in the countryside”. Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks (3+3)'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Sabrina Bellanova. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 3",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb3-4",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "nationalities-mentioned",
+  "questionRef": "2023 OL Section LB3 Q4",
+  "questionText": "Name two nationalities mentioned.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Irish",
+      "German",
+      "Slovak",
+      "Spanish",
+      "French",
+      "Polish",
+      "Dutch"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks (2+2)'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Sabrina Bellanova. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 4",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb3-5",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "time-italians-usually-finish-work",
+  "questionRef": "2023 OL Section LB3 Q5",
+  "questionText": "At what time do Italians usually finish work?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(Around) 7 pm/The Italians finish work late (Later than the Irish)",
+    "marks": 4,
+    "contextNote": "(In the evening 1 mark) Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Sabrina Bellanova. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 5",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb3-6",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "did-sabrina-her-free-time",
+  "questionRef": "2023 OL Section LB3 Q6",
+  "questionText": "What did Sabrina do in her free time? Give one detail.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "She learned/played camogie/(one of the) national games.",
+      "She joined a choir",
+      "She took Irish dancing classes",
+      "(She took",
+      "Irish (cultural) classes 2 marks)"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Sabrina Bellanova. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 6",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb3-7",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "irish-foods-sabrina-liked",
+  "questionRef": "2023 OL Section LB3 Q7",
+  "questionText": "Mention three Irish foods Sabrina liked.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Meat",
+      "Milk",
+      "Butter",
+      "Potatoes",
+      "Strawberries"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks (2+2+2)'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Sabrina Bellanova. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 7",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-lb3-8",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "did-sabrina-miss-while-ireland-iod",
+  "questionRef": "2023 OL Section LB3 Q8",
+  "questionText": "What did Sabrina miss while in Ireland? Give two details. Iodáilis ‐ Gnáthleibhéal Ordinary level Italian Monday 26 June 12:10 – 12:50",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Ice-cream (gelato) — the answers the scheme accepts",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "The sea ¬`",
+      "The sun",
+      "Heat",
+      "(Hot weather is acceptable as an equivalent of The sun",
+      "The heat but not in addition to either one)"
+     ]
+    },
+    "contextNote": "The scheme prices this half of the ask separately, under the heading “Ice-cream (gelato)”. Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks (3+3)'; the listening booklet prints this ask on page 6.",
+  "stem": "Dialogue 3. Interview with Sabrina Bellanova. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 8",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2023 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2023 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "secFileid": "LC013ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC013ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2023-ol-c-1-a",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "C",
+  "topicId": "italian-6-3",
+  "conceptId": "informal-writing-30-marks-choose-a-informal-lett",
+  "questionRef": "2023 OL Section C Q1(a)",
+  "questionText": "Informal Writing (30 marks) Choose (a) Informal Letter or (b) Dialogue In both (a) and (b), write on any four of the following six ideas.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Question 1 30 marks",
+    "(a) E-mail/Letter 30 marks",
+    "Where marks for content and communication are 7 or less, award no marks for language"
+   ],
+   "criteria": [
+    {
+     "id": "format",
+     "label": "Format",
+     "maxMarks": 7,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "guidance": [
+      "Beginning, opening greeting,",
+      "closing formula, ending 7 marks (2+2+2+1)"
+     ]
+    },
+    {
+     "id": "content",
+     "label": "Content and communication",
+     "maxMarks": 16,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "guidance": [
+      "Content and communication: 16 marks (4x4)",
+      "Four of the following points to be covered",
+      "• the day and time of departure",
+      "• why are you going to Italy",
+      "• details of accommodation (where and type)",
+      "• duration of the visit",
+      "• organization of",
+      "time (weekend, planned activities, etc.)",
+      "• organise a weekend with aunt/uncle"
+     ]
+    },
+    {
+     "id": "language",
+     "label": "Language",
+     "maxMarks": 7,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "guidance": [
+      "Language: 7 marks"
+     ],
+     "bands": [
+      {
+       "label": "0 - 2",
+       "marks": [
+        0,
+        1,
+        2
+       ],
+       "guidance": [
+        "Most verbs incorrect, few correct agreements, many spelling mistakes"
+       ]
+      },
+      {
+       "label": "3 - 5",
+       "marks": [
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Few verbs wrong, some correct agreements not too many mistakes"
+       ]
+      },
+      {
+       "label": "6 - 7",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": [
+        "Few mistakes, many correct agreements, very good accuracy"
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower",
+      "maxMarks": 0,
+      "permittedMarks": [
+       0
+      ],
+      "bands": [],
+      "contentCriteria": [
+       "content"
+      ],
+      "contentAtMost": 7,
+      "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+     }
+    }
+   ],
+   "markingGuideNote": "Question 1 30 marks"
+  },
+  "schemePages": [
+   18,
+   19,
+   20
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Italian 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2023-ol-c-1-b",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "C",
+  "topicId": "italian-6-3",
+  "conceptId": "informal-writing-30-marks-choose-a-informal-lett",
+  "questionRef": "2023 OL Section C Q1(b)",
+  "questionText": "Informal Writing (30 marks) Choose (a) Informal Letter or (b) Dialogue In both (a) and (b), write on any four of the following six ideas.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Question 1 30 marks",
+    "(b) Dialogue 30 marks",
+    "Where marks for content and communication are 7 or less, award no marks for language"
+   ],
+   "criteria": [
+    {
+     "id": "format",
+     "label": "Format",
+     "maxMarks": 7,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "guidance": [
+      "Dialogue format, beginning,",
+      "closing formula, ending 7 marks (2+2+2+1)"
+     ]
+    },
+    {
+     "id": "content",
+     "label": "Content and communication",
+     "maxMarks": 16,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "guidance": [
+      "Content and communication: 16 marks (4x4)",
+      "Four of the following points to be covered",
+      "• What job is it",
+      "• How many hours per week",
+      "• How much is the salary (payment, per hour etc)",
+      "• With whom do you work",
+      "• What you will have to do",
+      "• Why you are the ideal person for this job"
+     ]
+    },
+    {
+     "id": "language",
+     "label": "Language and conversational expressions 7 marks",
+     "maxMarks": 7,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "guidance": [
+      "Language and conversational expressions 7 marks"
+     ],
+     "bands": [
+      {
+       "label": "0 – 2",
+       "marks": [
+        0,
+        1,
+        2
+       ],
+       "guidance": [
+        "Most verbs incorrect, few correct agreements, many spelling",
+        "mistakes"
+       ]
+      },
+      {
+       "label": "3 - 5",
+       "marks": [
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Few verbs wrong, some correct agreements not too many mistakes"
+       ]
+      },
+      {
+       "label": "6 -7",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": [
+        "Few mistakes, many correct agreements, very good accuracy"
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower",
+      "maxMarks": 0,
+      "permittedMarks": [
+       0
+      ],
+      "bands": [],
+      "contentCriteria": [
+       "content"
+      ],
+      "contentAtMost": 7,
+      "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+     }
+    }
+   ],
+   "markingGuideNote": "Question 1 30 marks"
+  },
+  "schemePages": [
+   18,
+   19,
+   20
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Italian 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2023-ol-c-2",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "C",
+  "topicId": "italian-6-4",
+  "conceptId": "you-are-staying-with-italian-relatives-and-you-a",
+  "questionRef": "2023 OL Section C Q2",
+  "questionText": "You are staying with Italian relatives and you are applying for a summer job at a library.\nWithout using your personal details fill in the form below in Italian.\n(max 22 marks) A.\nAnswer any eight of the following nine questions.\nAnswer any seven of the following eight questions.\nNote some questions have 2 parts.",
+  "totalMarks": 22,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Question 2 FORM-FILLING 22 marks",
+    "Candidates will be penalised for incorrect verbs, incorrect agreements and spelling",
+    "mistakes"
+   ],
+   "criteria": [
+    {
+     "id": "box-a",
+     "label": "Box A",
+     "maxMarks": 8,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "guidance": [
+      "Box A – 8 marks (8x1)",
+      "Marks awarded for the best 8 questions (out of 9 questions)"
+     ]
+    },
+    {
+     "id": "box-b",
+     "label": "Box B",
+     "maxMarks": 14,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ],
+     "guidance": [
+      "Box B – 14 marks (7x2)",
+      "Marks awarded for the best 7 questions (out of 8 questions)",
+      "Where a question has two parts award 1+1",
+      "(When the same word is used to answer multiple questions, marks may only be allocated",
+      "once)"
+     ]
+    }
+   ],
+   "markingGuideNote": "Question 2 FORM-FILLING 22 marks"
+  },
+  "schemePages": [
+   18,
+   19,
+   20
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    18
+   ],
+   "attribution": "SEC Italian 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2023-ol-c-3",
+  "subjectId": "italian",
+  "level": "ordinary",
+  "year": 2023,
+  "section": "C",
+  "topicId": "italian-6-5",
+  "conceptId": "write-the-sequence-of-claudia-s-weekend-in-the-c",
+  "questionRef": "2023 OL Section C Q3",
+  "questionText": "Write the sequence of Claudia’s weekend in the correct order.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 8,
+     "perOption": 1,
+     "options": [
+      "1. È venerdì. Claudia e la sua famiglia hanno organizzato un fine settimana in montagna a Trento, il treno parte tra un paio di ore dalla stazione centrale di Verona.",
+      "2. Arrivano alla stazione di Verona venerdì pomeriggio alle 16:30.",
+      "3. Arrivati alla stazione di Trento, prendono un taxi e si dirigono all’hotel in centro.",
+      "4. Dopo aver fatto il check-in in hotel decidono di andare in pizzeria in centro.",
+      "5. Dopo aver mangiato, tornano in hotel per un meritato riposo!",
+      "6. È sabato mattina. Claudia e la sua famiglia si incontrano per fare la colazione.",
+      "7. Dopo la colazione escono per esplorare il meraviglioso paesaggio!",
+      "8. La famiglia ha passato ore in montagna e non vedono già l’ora di ritornarci in futuro."
+     ]
+    },
+    "contextNote": "The scheme prints the order line by line; each line in its place is one mark."
+   }
+  ],
+  "notes": "The scheme prices the sequence \"3. Claudia’s weekend in the mountains 8 marks (8x1 mark)\": one mark for each line in its place.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    19
+   ],
+   "attribution": "SEC Italian 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it, with the eight sentences to put in order."
+  }
  }
 ]
