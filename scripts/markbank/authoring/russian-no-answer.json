@@ -625,6 +625,52 @@
       "schemeSha256": "0aafd6dfe0224a50fd53f45934ebb0e32e9241b05ba51c2854e8b712a792a0be",
       "reviewedAt": "2026-11-19",
       "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2013-ol.json"
+    },
+    "ru-2012-hl-se": {
+      "printedMarks": 30,
+      "schemePages": [
+        14,
+        15
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2012-hl.pdf",
+      "schemeSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-hl.json"
+    },
+    "ru-2012-hl-gw": {
+      "printedMarks": 40,
+      "schemePages": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2012-hl.pdf",
+      "schemeSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-hl.json"
+    },
+    "ru-2012-hl-la2-1": {
+      "printedMarks": 5,
+      "schemePages": [
+        10
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2012-hl.pdf",
+      "schemeSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-hl.json"
+    },
+    "ru-2012-hl-ca1": {
+      "printedMarks": 4,
+      "schemePages": [
+        7,
+        8
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2012-hl.pdf",
+      "schemeSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-hl.json",
+      "treatment": "empty-points"
     }
   }
 }

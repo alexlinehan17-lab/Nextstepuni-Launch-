@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-11-19T12:26:39.932666+00:00",
+  "archive": {
+    "year": 2012,
+    "level": "hl",
+    "url": "https://www.examinations.ie/archive/markingschemes/2012/LC099ALP000EV.pdf",
+    "filename": "Russian-2012-hl-SEC-fresh-20261119.pdf",
+    "pages": 28,
+    "downloadDone": true,
+    "downloadConfirmation": "Chrome history shows exact completed file and source URL with Show in Finder.",
+    "checkedAt": "2026-11-19T12:06:11.452Z",
+    "bytes": 559034,
+    "sha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+    "retainedSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+    "exactMatch": true,
+    "freshDownloadVerified": true,
+    "localFile": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/stale-exclusions-20261119/sec-recheck/2012-hl.pdf"
+  },
+  "cards": [
+    {
+      "id": "ru-2012-hl-se",
+      "printedMarks": 30,
+      "schemePages": [
+        14,
+        15
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2012-hl.pdf",
+      "schemeSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-hl.json",
+      "finding": "The scheme supplies marking instructions or a grid but no answer for this task.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2012-hl-gw",
+      "printedMarks": 40,
+      "schemePages": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2012-hl.pdf",
+      "schemeSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-hl.json",
+      "finding": "The scheme supplies marking instructions or a grid but no answer for this task.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2012-hl-la2-1",
+      "printedMarks": 5,
+      "schemePages": [
+        10
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2012-hl.pdf",
+      "schemeSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-hl.json",
+      "finding": "The scheme supplies marking instructions or a grid but no answer for this task.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2012-hl-ca1",
+      "printedMarks": 4,
+      "schemePages": [
+        7,
+        8
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2012-hl.pdf",
+      "schemeSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2012-hl.json",
+      "treatment": "empty-points",
+      "finding": "The scheme supplies marking instructions or a grid but no answer for this task.",
+      "fixedLine": "The scheme prints no answer for this part."
+    }
+  ],
+  "otherFindings": [
+    {
+      "id": "ru-2012-hl-la1",
+      "decision": "Retain the printed partial answer одним. Check separate numbered asks in the split review before assigning their precise no-answer scope.",
+      "sourcePages": [
+        7
+      ]
+    }
+  ],
+  "sourceReview": "All relevant scheme pages read in full as original-page images and extracted text; examples distinguished from prompts. Original downloaded PDF matches the retained source exactly.",
+  "rule": "R4; CARD-STANDARD sections3,5 and10a",
+  "sourceBranch": "wip/russian-2026-11-19",
+  "liveCardsChanged": false,
+  "mainAtReview": "dd70ba43d6bc87dbe293b72d1b52c1cabdfcabf0"
+}
