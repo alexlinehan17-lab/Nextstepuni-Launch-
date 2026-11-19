@@ -3359,6 +3359,26 @@
           25
         ],
         "finding": "Countries collectively one2-mark detail. Hockey maximum2 details/4 marks within overall3 details/6 marks, preserving separate hobbies. Grammar original p11 has14 gaps and15 priced forms, with the Olympic-museum phrase retaining both required words."
+      },
+      "planRecheck20261119": {
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2023-hl.json",
+        "retiredExclusions": 27,
+        "fixedNoAnswerCards": [
+          "ru-2023-hl-se",
+          "ru-2023-hl-gw"
+        ],
+        "allPrintedMarksAndGridsUnchanged": true,
+        "currentRussianLedger": {
+          "asksCounted": 1489,
+          "asksCarded": 1489,
+          "open": 0,
+          "excluded": 0,
+          "staleExclusions": 0,
+          "orphans": 0,
+          "unreadPapers": 0
+        },
+        "releaseComplete": false,
+        "remaining": "Hosted audio and full R1–R12 sweep, then coordinator release."
       }
     },
     {
