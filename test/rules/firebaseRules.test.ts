@@ -36,6 +36,7 @@ beforeEach(async () => {
     ]);
     await uploadBytes(ref(context.storage(), 'papers/sample.pdf'), new Uint8Array([1, 2, 3]));
     await uploadBytes(ref(context.storage(), 'audio/2010/sample.mp3'), new Uint8Array([1, 2, 3]));
+    await uploadBytes(ref(context.storage(), 'video/2015/sample.mp4'), new Uint8Array([1, 2, 3]));
   });
 });
 
@@ -337,15 +338,17 @@ describe('Storage corpus boundary', () => {
     await assertSucceeds(getBytes(ref(storage, 'papers/sample.pdf')));
   });
 
-  it('allows public reads of hosted SEC listening recordings', async () => {
+  it('allows public reads of hosted SEC listening recordings and videos', async () => {
     const storage = environment.unauthenticatedContext().storage();
     await assertSucceeds(getBytes(ref(storage, 'audio/2010/sample.mp3')));
+    await assertSucceeds(getBytes(ref(storage, 'video/2015/sample.mp4')));
   });
 
   it('denies client writes and access outside the paper corpus', async () => {
     const storage = environment.authenticatedContext('alice', { auth_time: 1 }).storage();
     await assertFails(uploadBytes(ref(storage, 'papers/client-upload.pdf'), new Uint8Array([1])));
     await assertFails(uploadBytes(ref(storage, 'audio/2010/client-upload.mp3'), new Uint8Array([1])));
+    await assertFails(uploadBytes(ref(storage, 'video/2015/client-upload.mp4'), new Uint8Array([1])));
     await assertFails(uploadBytes(ref(storage, 'private/file.txt'), new Uint8Array([1])));
     await assertFails(getBytes(ref(storage, 'private/file.txt')));
   });
