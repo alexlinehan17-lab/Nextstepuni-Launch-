@@ -179275,7 +179275,17 @@
       ],
       "guidancePages": [
         3
-      ]
+      ],
+      "reviewedAt": "2026-11-18",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          12,
+          13,
+          14
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-2018-hl-sec-20261118/archive-recheck.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -179285,7 +179295,7 @@
         "Communication + content 15 Language + expression 15 Textual coherence 10 If a candidate answers TWO or MORE Questions, mark ALL and take the best mark. If a candidate obtains full marks on the first/second questions the examiner is not required to mark the subsequent one(s). ",
         "WRITTEN EXAMINATTION 220 MARKS Spelling and Grammar Waivers: For those who have been granted a spelling and grammar waiver, errors in spelling and in certain grammatical elements are not penalised. In assessing the work of these candidates, a modified marking scheme will apply. "
       ],
-      "markingGuideNote": "Manually assess the selected response against all its original categories, including at least one detail from each required category. The scheme supplies one mark per content detail, without a fixed per-category split. Lower A and Lower E retain their own source tables; no descriptor conversion or minimum award is inferred.",
+      "markingGuideNote": "The scheme prints no answer for this part. Manually assess the selected response against all its original categories, including at least one detail from each required category. The scheme supplies one mark per content detail, without a fixed per-category split. Lower A and Lower E retain their own source tables; no descriptor conversion or minimum award is inferred.",
       "criteria": [
         {
           "id": "content",
@@ -179608,25 +179618,7 @@
     "conceptId": "short-essay-words-russian-following-topics",
     "questionRef": "2018 HL Section SE Q2",
     "questionText": "Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title. (30 marks)\n\nНапишите небольшую статью по–русски размером 50 слов на одну из следующих тем. В \nсвою статью включите пять страноведческих фактов. \n \n1. Ceol agus/nó ceoltóirí na Rúise / Russian music and/or musicians / Музыка/музыканты в \nРоссийской Федерации.  \n2. Litríocht na Rúise/ Russian literature / Русская литература. \n3. Tithíocht i gCónaidhm na Rúise / Housing in the Russian Federation / Жильё в Российской \nФедерации. \n4. Naisc idir Éirinn agus an Rúis / Irish‐Russian links / Российско‐ирландские связи. \n5. Cathracha i gCónaidhm na Rúise / Cities in the Russian Federation / Города в Российской \nФедерации. \n \n",
-    "tariffModel": {
-      "kind": "questionTotal"
-    },
     "totalMarks": 30,
-    "rows": [
-      {
-        "id": "published-guidance",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "Q.2. Cultural Awareness (30 marks) Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title. Напишите небольшую статью по–русски размером 50 слов на одну из следующих тем. В свою статью включите пять страноведческих фактов. 1. Russian music and/or musicians/ Музыка/ музыканты в Российской Федерации. 2. Russian literature / Русская литература. 3. Housing in the Russian Federation/ Жильё в Российской Федерации. 4. Irish-Russian links / Российско-ирландские связи. 5. Cities in the Russian Federation / Города в Российской Федерации. 1. content 10 2. language/expression 20 Mark content and language/expression separately 1. Communication/content (C) Award content marks first (ex 10). No marks are awarded for irrelevant information/ content: use square brackets to bracket off irrelevant material [ … ]; exclude when judging the expression mark. Answers which are completely irrelevant or contain no rewardable material for content will be awarded no marks for language. Award a maximum of two content marks for an introductory/contextual remark or judgment (not a factual detail). Award two marks for each relevant content detail (up to a maximum of 10 marks). Candidates are required to indicate which question they are answering. If a candidate does not indicate which question they are answering deduct ONE penalty mark from the overall content score. 2. Expression (E): Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category. • If the content mark is 5 or less [excepting where a penalty mark has been deducted and brought the content marks down to 5], or the question is too short (less than 25 words), mark expression out of 14 and write ‘lower E’ to indicate this. • If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology); error in every 2nd or 3rd word, mark expression between 9 and 14 (9-11; 12-14; 15-16) and write ‘lower A’ to indicate this. Put square box around repeated errors, do not re-penalise. Use wavy line for spelling mistakes and errors of vocabulary. Underline serious mistakes. Penalise students who randomly use/fail to use soft signs in present tense forms or infinitives (– 1 OR – 2). ",
-        "contextNote": "Confidence review: the whole question is printed as 30 marks, with content 10 and expression 20. Its Lower A instruction says between 9 and 14, but the same instruction and table include 15–16. Both original versions and every other scoring instruction are retained. No Lower A ceiling is selected and this card does not calculate a numerical score. All five original choices, the 50-word Russian response, five factual details and title remain required as printed."
-      },
-      {
-        "id": "published-expression-grid",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "Mark Language: lexis, accuracy, fluency 18-20 lower A 15-16 lower E 12-14 Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language. 14-17 lower A 12-14 lower E 10-11 Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse. 10-13 lower A 9-11 lower E 7-9 Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful. LA: evidence of cross linguistic influence 6-9 lower E 4-6 Some basic knowledge of lexis but lacks variety. Lexis often inappropriate with frequent anglicisms and wrong words. Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language; mainly simple 'translated' language, which impedes communication. 1-5 lower E 1-3 Very limited knowledge and range of lexis. Very basic, inappropriate or wrong words. Many anglicisms. Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language. 0 Knowledge and range so limited that no mark can be awarded Add the marks for communication/content (C) and expression (E/ lower E) to give the total marks for the question. C = … E/ lower E = … Total = …"
-      }
-    ],
     "sourceMaterial": {
       "kind": "source-text",
       "label": "Official question and source",
@@ -179649,9 +179641,290 @@
       "component": "000",
       "questionPages": [
         13
+      ],
+      "reviewedAt": "2026-11-18",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          10,
+          11
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-2018-hl-sec-20261118/archive-recheck.json"
+      }
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Q.2. Cultural Awareness (30 marks) Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title. Напишите небольшую статью по–русски размером 50 слов на одну из следующих тем. В свою статью включите пять страноведческих фактов. 1. Russian music and/or musicians/ Музыка/ музыканты в Российской Федерации. 2. Russian literature / Русская литература. 3. Housing in the Russian Federation/ Жильё в Российской Федерации. 4. Irish-Russian links / Российско-ирландские связи. 5. Cities in the Russian Federation / Города в Российской Федерации. 1. content 10 2. language/expression 20 Mark content and language/expression separately 1. Communication/content (C) Award content marks first (ex 10). No marks are awarded for irrelevant information/ content: use square brackets to bracket off irrelevant material [ … ]; exclude when judging the expression mark. Answers which are completely irrelevant or contain no rewardable material for content will be awarded no marks for language. Award a maximum of two content marks for an introductory/contextual remark or judgment (not a factual detail). Award two marks for each relevant content detail (up to a maximum of 10 marks). Candidates are required to indicate which question they are answering. If a candidate does not indicate which question they are answering deduct ONE penalty mark from the overall content score. 2. Expression (E): Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category. • If the content mark is 5 or less [excepting where a penalty mark has been deducted and brought the content marks down to 5], or the question is too short (less than 25 words), mark expression out of 14 and write ‘lower E’ to indicate this. • If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology); error in every 2nd or 3rd word, mark expression between 9 and 14 (9-11; 12-14; 15-16) and write ‘lower A’ to indicate this. Put square box around repeated errors, do not re-penalise. Use wavy line for spelling mistakes and errors of vocabulary. Underline serious mistakes. Penalise students who randomly use/fail to use soft signs in present tense forms or infinitives (– 1 OR – 2). ",
+        "Mark Language: lexis, accuracy, fluency 18-20 lower A 15-16 lower E 12-14 Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language. 14-17 lower A 12-14 lower E 10-11 Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse. 10-13 lower A 9-11 lower E 7-9 Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful. LA: evidence of cross linguistic influence 6-9 lower E 4-6 Some basic knowledge of lexis but lacks variety. Lexis often inappropriate with frequent anglicisms and wrong words. Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language; mainly simple 'translated' language, which impedes communication. 1-5 lower E 1-3 Very limited knowledge and range of lexis. Very basic, inappropriate or wrong words. Many anglicisms. Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language. 0 Knowledge and range so limited that no mark can be awarded Add the marks for communication/content (C) and expression (E/ lower E) to give the total marks for the question. C = … E/ lower E = … Total = …"
+      ],
+      "markingGuideNote": "The scheme prints no answer for this part. Assess the selected essay using content 10 and expression 20. Source discrepancy: the Lower A instruction says “between 9 and 14 (9-11; 12-14; 15-16)”, while its highest table band says “lower A 15-16”. Both printed statements are shown above. Select the expression mark using that guidance; no single Lower A ceiling is imposed.",
+      "criteria": [
+        {
+          "id": "content",
+          "label": "Communication/content (C)",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "guidance": [
+            "Award content marks first (ex 10). No marks are awarded for irrelevant information/ content: use square brackets to bracket off irrelevant material [ … ]; exclude when judging the expression mark. Answers which are completely irrelevant or contain no rewardable material for content will be awarded no marks for language. Award a maximum of two content marks for an introductory/contextual remark or judgment (not a factual detail). Award two marks for each relevant content detail (up to a maximum of 10 marks). Candidates are required to indicate which question they are answering. If a candidate does not indicate which question they are answering deduct ONE penalty mark from the overall content score."
+          ]
+        },
+        {
+          "id": "title-penalty",
+          "label": "Essay title penalty",
+          "kind": "deduction",
+          "deductFrom": "content",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidance": [
+            "Candidates are required to indicate which question they are answering. If a candidate does not indicate which question they are answering deduct ONE penalty mark from the overall content score."
+          ]
+        },
+        {
+          "id": "expression",
+          "label": "Language/expression (E)",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [
+            "Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category. • If the content mark is 5 or less [excepting where a penalty mark has been deducted and brought the content marks down to 5], or the question is too short (less than 25 words), mark expression out of 14 and write ‘lower E’ to indicate this. • If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology); error in every 2nd or 3rd word, mark expression between 9 and 14 (9-11; 12-14; 15-16) and write ‘lower A’ to indicate this. Put square box around repeated errors, do not re-penalise. Use wavy line for spelling mistakes and errors of vocabulary. Underline serious mistakes. Penalise students who randomly use/fail to use soft signs in present tense forms or infinitives (– 1 OR – 2)."
+          ],
+          "bands": [
+            {
+              "label": "18-20",
+              "marks": [
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language."
+              ]
+            },
+            {
+              "label": "14-17",
+              "marks": [
+                14,
+                15,
+                16,
+                17
+              ],
+              "guidance": [
+                "Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse."
+              ]
+            },
+            {
+              "label": "10-13",
+              "marks": [
+                10,
+                11,
+                12,
+                13
+              ],
+              "guidance": [
+                "Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful. LA: evidence of cross linguistic influence"
+              ]
+            },
+            {
+              "label": "6-9",
+              "marks": [
+                6,
+                7,
+                8,
+                9
+              ],
+              "guidance": [
+                "Some basic knowledge of lexis but lacks variety. Lexis often inappropriate with frequent anglicisms and wrong words. Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language; mainly simple 'translated' language, which impedes communication."
+              ]
+            },
+            {
+              "label": "1-5",
+              "marks": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Very limited knowledge and range of lexis. Very basic, inappropriate or wrong words. Many anglicisms. Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language."
+              ]
+            },
+            {
+              "label": "0",
+              "marks": [
+                0
+              ],
+              "guidance": [
+                "Knowledge and range so limited that no mark can be awarded"
+              ]
+            }
+          ],
+          "limits": [
+            {
+              "id": "lower-e",
+              "scaleLabel": "Lower E",
+              "maxMarks": 14,
+              "when": {
+                "any": [
+                  {
+                    "criterionIds": [
+                      "content"
+                    ],
+                    "atMost": 5,
+                    "ignoreDeductions": true
+                  },
+                  {
+                    "length": "words",
+                    "below": 25
+                  }
+                ]
+              },
+              "guidance": [
+                "If the content mark is 5 or less [excepting where a penalty mark has been deducted and brought the content marks down to 5], or the question is too short (less than 25 words), mark expression out of 14 and write ‘lower E’ to indicate this."
+              ],
+              "bands": [
+                {
+                  "label": "12-14",
+                  "marks": [
+                    12,
+                    13,
+                    14
+                  ],
+                  "guidance": [
+                    "Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language."
+                  ]
+                },
+                {
+                  "label": "10-11",
+                  "marks": [
+                    10,
+                    11
+                  ],
+                  "guidance": [
+                    "Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse."
+                  ]
+                },
+                {
+                  "label": "7-9",
+                  "marks": [
+                    7,
+                    8,
+                    9
+                  ],
+                  "guidance": [
+                    "Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful. LA: evidence of cross linguistic influence"
+                  ]
+                },
+                {
+                  "label": "4-6",
+                  "marks": [
+                    4,
+                    5,
+                    6
+                  ],
+                  "guidance": [
+                    "Some basic knowledge of lexis but lacks variety. Lexis often inappropriate with frequent anglicisms and wrong words. Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language; mainly simple 'translated' language, which impedes communication."
+                  ]
+                },
+                {
+                  "label": "1-3",
+                  "marks": [
+                    1,
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Very limited knowledge and range of lexis. Very basic, inappropriate or wrong words. Many anglicisms. Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language."
+                  ]
+                },
+                {
+                  "label": "0",
+                  "marks": [
+                    0
+                  ],
+                  "guidance": [
+                    "Knowledge and range so limited that no mark can be awarded"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "no-content",
+              "maxMarks": 0,
+              "when": {
+                "any": [
+                  {
+                    "criterionIds": [
+                      "content"
+                    ],
+                    "atMost": 0,
+                    "ignoreDeductions": true
+                  }
+                ]
+              },
+              "guidance": [
+                "Answers which are completely irrelevant or contain no rewardable material for content will be awarded no marks for language."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "soft-sign-penalty",
+          "label": "Soft sign penalty",
+          "kind": "deduction",
+          "deductFrom": "expression",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidance": [
+            "Penalise students who randomly use/fail to use soft signs in present tense forms or infinitives (– 1 OR – 2)."
+          ]
+        }
       ]
     },
-    "kind": "question"
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
+      "schemePages": [
+        3
+      ]
+    }
   },
   {
     "id": "ru-2018-hl-l1-1-i",

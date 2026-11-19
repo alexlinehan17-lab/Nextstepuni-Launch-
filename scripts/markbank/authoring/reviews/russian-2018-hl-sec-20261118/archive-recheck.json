@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-18T22:20:55.004837+00:00",
+  "url": "https://www.examinations.ie/archive/markingschemes/2018/LC099ALP000EV.pdf",
+  "method": "Native Chrome opened the published PDF URL; automatic security verification completed and download visibly Done. No archive-terms checkbox was accepted.",
+  "bytes": 385508,
+  "sha256": "3a850731dfc2acd40b0df080a8910776105b541dee97dadaa94c353331a5360a",
+  "retainedSha256": "3a850731dfc2acd40b0df080a8910776105b541dee97dadaa94c353331a5360a",
+  "exactMatch": true,
+  "file": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/2018-hl-nov18/SEC-fresh-20261118.pdf",
+  "cardsWithNoPrintedAnswer": [
+    {
+      "id": "ru-2018-hl-se",
+      "schemePages": [
+        10,
+        11
+      ],
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2018-hl-gw",
+      "schemePages": [
+        12,
+        13,
+        14
+      ],
+      "fixedLine": "The scheme prints no answer for this part."
+    }
+  ],
+  "sourceConflict": "Essay Lower A prose says between 9 and 14; its parenthesised ranges and table include 15\u201316. Both are retained; no single automatic Lower A ceiling is inferred."
+}

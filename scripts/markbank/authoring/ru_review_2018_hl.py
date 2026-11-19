@@ -1,4 +1,4 @@
-"""Original-source Russian 2018 Higher; the conflicting essay stays unpriced."""
+"""Original-source Russian 2018 Higher; printed writing grids and disclosed conflict."""
 import hashlib,json,re,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[3]
@@ -307,20 +307,64 @@ def writing(docs,source):
                      'guidance':['3. Textual coherence:'+between(body,'3. Textual coherence:','Mark Textual coherence')],'bands':coherence},
                     {'id':'soft-sign-penalty','label':'Soft sign penalty','kind':'deduction','deductFrom':'expression','maxMarks':2,'permittedMarks':[0,1,2],'guidance':[soft]}]}
     c['review']['guidancePages']=[3]
+    c['rubric']['markingGuideNote']='The scheme prints no answer for this part. '+c['rubric']['markingGuideNote']
+    c['review']['reviewedAt']='2026-11-18'
+    c['review']['noPrintedAnswer']={'fixedLine':'The scheme prints no answer for this part.',
+        'schemePages':[12,13,14],
+        'evidence':'scripts/markbank/authoring/reviews/russian-2018-hl-sec-20261118/archive-recheck.json'}
     return c
 
 
-def cultural_confidence(source):
+def cultural_writing(docs,source):
+    from ru_review_2017_hl import band
     r=next(r for r in source['tasks'] if r['unit']=='SE')
     c=source_card(r)
     choices='Напишите'+between(r['fullQuestionPage'],'Напишите').split('___')[0]
     assert all(f'{n}.' in choices for n in range(1,6))
     c['questionText']+='\n\n'+choices
-    c['kind']='question';c['tariffModel']={'kind':'questionTotal'}
     instruction,table=r['publishedSourceBlock'].split('Mark Language: lexis, accuracy, fluency',1)
-    c['rows']=[{'id':'published-guidance','kind':'point','marks':None,'verbatim':instruction,
-        'contextNote':'Confidence review: the whole question is printed as 30 marks, with content 10 and expression 20. Its Lower A instruction says between 9 and 14, but the same instruction and table include 15–16. Both original versions and every other scoring instruction are retained. No Lower A ceiling is selected and this card does not calculate a numerical score. All five original choices, the 50-word Russian response, five factual details and title remain required as printed.'}]
-    c['rows'].append({'id':'published-expression-grid','kind':'point','marks':None,'verbatim':'Mark Language: lexis, accuracy, fluency'+table})
+    content=between(instruction,'1. Communication/content (C)','2. Expression (E):')
+    expression=between(instruction,'2. Expression (E):')
+    title=re.search(r'Candidates are required.*?overall content score\.',content).group()
+    no_content=re.search(r'Answers which are completely irrelevant.*?no marks for language\.',content).group()
+    lower_e=re.search(r'If the content mark.*?indicate this\.',expression).group()
+    lower_a=re.search(r'If the expression is very fluent.*?indicate this\.',expression).group()
+    soft=re.search(r'Penalise students.*?\(– 1 OR – 2\)\.',expression).group()
+    normal=[];lower=[];accuracy=[]
+    tables=docs['scheme'][10].find_tables().tables;assert len(tables)==1
+    for printed,description in tables[0].extract()[1:]:
+        full=re.split(r'lower [AE]',printed)[0].strip()
+        normal.append(band(full,description))
+        lower.append(band(printed.split('lower E')[-1].strip(),description))
+        if 'lower A' in printed:accuracy.append(band(between(printed,'lower A','lower E'),description))
+    assert [b['marks'] for b in normal]==[[18,19,20],[14,15,16,17],[10,11,12,13],[6,7,8,9],[1,2,3,4,5],[0]]
+    assert [b['marks'] for b in lower]==[[12,13,14],[10,11],[7,8,9],[4,5,6],[1,2,3],[0]]
+    assert [b['marks'] for b in accuracy]==[[15,16],[12,13,14],[9,10,11]]
+    assert 'between 9 and 14 (9-11; 12-14; 15-16)' in lower_a
+    c.pop('rows');c.pop('tariffModel');c['kind']='rubric'
+    c['rubric']={'system':'language-writing',
+        'taskRequirements':[instruction,'Mark Language: lexis, accuracy, fluency'+table],
+        'markingGuideNote':'The scheme prints no answer for this part. Assess the selected essay using content 10 and expression 20. Source discrepancy: the Lower A instruction says “between 9 and 14 (9-11; 12-14; 15-16)”, while its highest table band says “lower A 15-16”. Both printed statements are shown above. Select the expression mark using that guidance; no single Lower A ceiling is imposed.',
+        'criteria':[
+            {'id':'content','label':'Communication/content (C)','maxMarks':10,
+             'permittedMarks':[0,2,4,6,8,10],'guidance':[squash(content)]},
+            {'id':'title-penalty','label':'Essay title penalty','kind':'deduction','deductFrom':'content',
+             'maxMarks':1,'permittedMarks':[0,1],'guidance':[title]},
+            {'id':'expression','label':'Language/expression (E)','maxMarks':20,
+             'permittedMarks':list(range(21)),'guidance':[squash(expression)],'bands':normal,
+             'limits':[
+                 {'id':'lower-e','scaleLabel':'Lower E','maxMarks':14,
+                  'when':{'any':[{'criterionIds':['content'],'atMost':5,'ignoreDeductions':True},
+                                 {'length':'words','below':25}]},'guidance':[lower_e],'bands':lower},
+                 {'id':'no-content','maxMarks':0,
+                  'when':{'any':[{'criterionIds':['content'],'atMost':0,'ignoreDeductions':True}]},
+                  'guidance':[no_content]}]},
+            {'id':'soft-sign-penalty','label':'Soft sign penalty','kind':'deduction','deductFrom':'expression',
+             'maxMarks':2,'permittedMarks':[0,1,2],'guidance':[soft]}]}
+    c['review']['reviewedAt']='2026-11-18'
+    c['review']['noPrintedAnswer']={'fixedLine':'The scheme prints no answer for this part.',
+        'schemePages':[10,11],
+        'evidence':'scripts/markbank/authoring/reviews/russian-2018-hl-sec-20261118/archive-recheck.json'}
     return c
 
 
@@ -328,7 +372,7 @@ def source_language_rules(cards,source):
     rule='Language of answer:'+between(source['generalWrittenGuidance'],'Language of answer:','Quality of English:')
     exception=re.search(r'Discretionary marks \(as opposed to content marks\) may be awarded.*?answers\)\.',source['summaryGuidance']).group()
     for c in cards:
-        if c['section'] not in ('C1','C2','LA1','LA2','GR','GW'):continue
+        if c['section'] not in ('C1','C2','LA1','LA2','GR','SE','GW'):continue
         c['answerLanguageRule']={'otherLanguageMultiplier':0,'sourceText':squash(rule),'schemePages':[3]}
         if c['section'] in ('C1','C2'):
             c['rubric']['markingGuideNote']+=' Answer in English or Irish, as permitted by the original bilingual paper.'
@@ -339,12 +383,12 @@ def source_language_rules(cards,source):
 def build():
     docs,source=source_records()
     try:
-        cards=reading(source)+summaries(source)+language_and_matching(docs,source)+[writing(docs,source),cultural_confidence(source)]+listening(source)
+        cards=reading(source)+summaries(source)+language_and_matching(docs,source)+[writing(docs,source),cultural_writing(docs,source)]+listening(source)
         source_language_rules(cards,source)
         assert len(cards)==len({c['id'] for c in cards})==39
         assert sum(c['totalMarks'] for c in cards)==300
         assert sum(c['totalMarks'] for c in cards if c['section']!='SE')==270
-        assert sum(bool(c.get('answerLanguageRule')) for c in cards)==17
+        assert sum(bool(c.get('answerLanguageRule')) for c in cards)==18
         return cards
     finally:
         for document in docs.values():document.close()

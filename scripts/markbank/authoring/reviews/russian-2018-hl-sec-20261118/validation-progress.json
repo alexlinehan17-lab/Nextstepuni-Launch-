@@ -1,0 +1,29 @@
+{
+  "sourceChecks": {
+    "passed": true,
+    "cases": 11,
+    "originalSlices": 246
+  },
+  "focusedAndRequiredChecks": {
+    "passed": true,
+    "files": 6,
+    "cases": 268
+  },
+  "targetedLint": "passed",
+  "runtimeLint": "passed",
+  "browserReview": "passed with embedded audio release issue recorded",
+  "applicationTypesAndBuild": "pending exact current candidate",
+  "onlyChangedIds": [
+    "ru-2018-hl-se",
+    "ru-2018-hl-gw"
+  ],
+  "russianTotalAsksCountUnchanged": true,
+  "focusedRerun": {
+    "passed": true,
+    "cases": 39
+  },
+  "russianCoverage": {
+    "passed": true,
+    "cases": 3
+  }
+}

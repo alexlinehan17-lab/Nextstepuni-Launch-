@@ -1,0 +1,66 @@
+{
+  "recordedAt": "2026-11-19T10:20:42.183578+00:00",
+  "review": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-russian-2018-writing/review.html",
+  "matrix": [
+    {
+      "card": "se",
+      "width": 390,
+      "theme": "light",
+      "noPrintedAnswer": true,
+      "rubric": true
+    },
+    {
+      "card": "se",
+      "width": 390,
+      "theme": "dark",
+      "noPrintedAnswer": true,
+      "rubric": true
+    },
+    {
+      "card": "se",
+      "width": 1120,
+      "theme": "light",
+      "noPrintedAnswer": true,
+      "rubric": true
+    },
+    {
+      "card": "se",
+      "width": 1120,
+      "theme": "dark",
+      "noPrintedAnswer": true,
+      "rubric": true
+    },
+    {
+      "card": "gw",
+      "width": 390,
+      "theme": "light",
+      "noPrintedAnswer": true,
+      "rubric": true
+    },
+    {
+      "card": "gw",
+      "width": 390,
+      "theme": "dark",
+      "noPrintedAnswer": true,
+      "rubric": true
+    },
+    {
+      "card": "gw",
+      "width": 1120,
+      "theme": "light",
+      "noPrintedAnswer": true,
+      "rubric": true
+    },
+    {
+      "card": "gw",
+      "width": 1120,
+      "theme": "dark",
+      "noPrintedAnswer": true,
+      "rubric": true
+    }
+  ],
+  "recommendation": "The short essay now uses the printed content and expression grid. Both writing cards show the required no-answer line. Eight phone/desktop and light/dark layouts were captured. Manual essay scoring gave 30, 29 and 28 after the explicit zero-, one- and two-mark soft-sign deductions. The conflicting Lower A ranges remain visible; no invented automatic ceiling is applied.",
+  "nativeBrowser": "Google Chrome, actual SessionScreen in an isolated iframe; no student progress saved",
+  "screenshotsCaptured": 17,
+  "visualInspection": "Representative full-size captures and the complete contact sheet inspected; no horizontal clipping in sampled question/marking controls. Phone scheme controls manually checked through scoring."
+}

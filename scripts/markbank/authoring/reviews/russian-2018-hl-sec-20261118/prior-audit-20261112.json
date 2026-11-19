@@ -1,0 +1,218 @@
+{
+  "year": 2018,
+  "level": "higher",
+  "reviewedAt": "2026-11-12",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "auralPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "fullSizeTariffPages": [
+    6,
+    10,
+    11,
+    15
+  ],
+  "sourceHashes": {
+    "paper": {
+      "pages": 16,
+      "sha256": "d6687ec578dd821b52da934b60d69713a76c9d22bfe2740bc57572f335a35da7"
+    },
+    "aural": {
+      "pages": 8,
+      "sha256": "4168e975614c8d0dcdcf5399c36e2b28e91413519faf87f828974ce1043baf79"
+    },
+    "scheme": {
+      "pages": 20,
+      "sha256": "3a850731dfc2acd40b0df080a8910776105b541dee97dadaa94c353331a5360a"
+    }
+  },
+  "independentPracticeTasks": 39,
+  "writtenTasks": 19,
+  "listeningTasks": 20,
+  "sourceReviewedSupportedTasks": 39,
+  "publishedPracticeCards": 39,
+  "printedWrittenMarks": 220,
+  "printedListeningMarks": 80,
+  "publishedPracticeMarks": 270,
+  "sourceAccountedMarks": 300,
+  "confidenceOnlyPrintedMarks": 30,
+  "newCards": 39,
+  "correctedCards": 0,
+  "previousIdsPreserved": 199,
+  "sourceReview": "All 39 original asks are represented. The complete Cultural Awareness choice remains confidence-only because its Lower A numeric bounds conflict; source coverage does not resolve that allocation.",
+  "diagnosedReaderIssues": [
+    "The previous unreviewed parser counted only 15 listening parents and missed all written asks and listening Roman leaves. The independent pinned 44-page sweep has 19 written and 20 listening asks, increasing the subject denominator by 24.",
+    "One Cultural Awareness choice retains all five topics, 50 Russian words, five factual details, title, C10/E20, all partial/deduction/lower-scale rules and both original expression grids. Lower A prose says 9\u201314 while its own bracket and table include 15\u201316. No ceiling is chosen; all rows are unpriced and numeric scoring remains held.",
+    "Four summaries use four manual distinct full details at two each plus manual discretion two. No general one-mark content partial is printed. Source-bound Russian-word/weak-English exception preserves discretion when language flags zero content. Incomplete sections cap discretion at one; summary4 sequence not understood also caps it at one.",
+    "Summary4 preserves the original paper page8 website www.scherbackov.ru and scheme page7 www.scherbakov.ru visibly, without adjudication. Summary2 continuation is split into two physical-page quotes, retaining the complete sentence and excluding only the original standalone footer.",
+    "Reading partial pools stay beside manual distinct-answer slots where a unique partial-to-full pairing is not established. The unprefixed Anna sentence stays in its original location. Cross-section acceptance is retained literally.",
+    "LA1 is five of nine supplied aspect-preserving infinitives, not all nine. LA2 retains all29 original music entries, including the separate line-boundary words \u0437\u0430\u043f\u0438\u0441\u0430\u0442\u044c and \u0437\u0432\u0435\u0437\u0434\u0430; each slash/parenthesis entry remains one option and the printed example is not added to the pool.",
+    "Grammar has fourteen printed bracket prompts but fifteen priced forms; \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0445 \u0437\u0430\u043d\u044f\u0442\u0438\u0439 has two separately priced words. All fifteen underlined source forms are extracted by their original underline baselines, with the full spelling/Latin-letter/wrong-tense zero rule.",
+    "Guided writing retains all three options, category requirements, one mark per content detail, literal borrowed-phrase rule, C15/E15/TC10, LowerE10 and nonoverlapping LowerA7\u201312 source grids. Soft-sign penalty is one OR two, not the prior year\u2019s one-only rule.",
+    "Listening allows a combination of half-details from two segments to earn one two-mark point. Manual zero-or-two distinct response slots preserve that rule without inventing atom prices. The husband/Tatyana Dublin example earns two once; museums earns none. All literal full/no-credit pools and Russian-answer acceptance remain visible."
+  ],
+  "validation": {
+    "sourceCoverageComplete": true,
+    "sittingCompletion": false,
+    "sourceQuoteGate": {
+      "cards": 39,
+      "slices": 227,
+      "passed": true
+    },
+    "mandatoryOriginalTests": {
+      "cases": 10,
+      "passed": true,
+      "originalSlices": 227,
+      "rawArtifact": "All 20 original pages preserved as extracted from the pinned PDF, with a separate mechanically joined full-page form retaining standalone numeric allocations."
+    },
+    "runtimeTests": {
+      "completedCases": 245,
+      "files": 4,
+      "allRequiredPassed": true,
+      "pendingCases": 0,
+      "deckRecovery": "103 completed local deck assertions retained. The final generic provenance assertion passed remotely against the unchanged b2df29d2 Russian source snapshot after root separated generic committed-metadata lookup from strict original-PDF generator validation. The isolated run reports1 passed/103 skipped; earlier assertions were not repeated.",
+      "finalProvenanceRun": "https://github.com/alexlinehan17-lab/Nextstepuni-Launch-/actions/runs/43231479108"
+    },
+    "preservation": {
+      "all1268PriorAuthoredRecordsUnchanged": true,
+      "original199IdentityHash": "704087dd0796c1c71da7a2c6f436138197fb157e689fc1045168d25469c9147d",
+      "all1268PriorRuntimeRecordsUnchanged": true,
+      "allOtherSubjectDecksBaselinesIndexAndDecodedAtlasUnchanged": true,
+      "scripts/paper-trail/answers/2018/LC099ALP000EV.pdf.json": {
+        "allPriorRowsUnchanged": 13,
+        "newRows": 19
+      },
+      "public/paper-answers/2018/LC099ALP000EV.pdf.json": {
+        "allPriorRowsUnchanged": 13,
+        "newRows": 19
+      },
+      "public/paper-anchors/2018/LC099ALP000EV.pdf.json": {
+        "allPriorRowsUnchanged": 13,
+        "newRows": 19
+      },
+      "scripts/paper-trail/answers/2018/LC099ALPA00EV.pdf.json": {
+        "allPriorRowsUnchanged": 4,
+        "newRows": 20
+      },
+      "public/paper-answers/2018/LC099ALPA00EV.pdf.json": {
+        "allPriorRowsUnchanged": 4,
+        "newRows": 20
+      },
+      "public/paper-anchors/2018/LC099ALPA00EV.pdf.json": {
+        "allPriorRowsUnchanged": 4,
+        "newRows": 20
+      },
+      "allPriorRussianTopicQuestionRecordsUnchanged": true,
+      "allOtherSittingAuditRecordsUnchanged": true
+    },
+    "deterministicRegenerations": 2,
+    "appTypes": "pending root combined integration",
+    "build": "pending root combined integration",
+    "browserQA": "coordinator-owned; not claimed",
+    "heldNumericTasks": [
+      {
+        "questionRef": "2018 HL Section SE Q2",
+        "reason": "Original Lower A numeric range 9\u201314 conflicts with the same instruction and table including 15\u201316. Complete 30-mark task is available for confidence review only."
+      }
+    ],
+    "rootIntegrationRequirements": [
+      "Actual both-layout confidence headers must not suggest a numeric30-mark assessment maximum.",
+      "Exclude actual Cultural Awareness task from numeric quiz selection.",
+      "Preserve all prior cards/anchors and run combined full types/build."
+    ],
+    "status": "Per-sitting source/runtime checkpoint passed, including all245 focused/required cases and3 coverage cases. Cultural Awareness numeric range remains held. Combined full types/build and current-root confidence-label/quiz integration remain separate root gates; native QA is not claimed.",
+    "russianCoverageTests": {
+      "cases": 3,
+      "passed": true,
+      "run": "https://github.com/alexlinehan17-lab/Nextstepuni-Launch-/actions/runs/43228419183"
+    },
+    "targetedLint": "passed",
+    "actualRuntimeOverlayLint": {
+      "cards": 1324,
+      "findings": 0,
+      "rulesUnchanged": true
+    },
+    "sittingOpenTasks": 0,
+    "sittingExcludedTasks": 0,
+    "sittingOrphans": 0,
+    "unpricedResult": {
+      "marksClaimed": 0,
+      "marksAvailable": 0,
+      "bothLayoutsConfidenceGradeSaved": true
+    },
+    "reconciliation": {
+      "commandExitCode": 120,
+      "subjectComplete": false,
+      "covered": 1328,
+      "leaves": 1424,
+      "open": 70,
+      "excluded": 26,
+      "orphans": 0,
+      "unparsed": 0,
+      "historicalStaleExclusionsUnchanged": 254,
+      "targetSitting": {
+        "asks": 39,
+        "covered": 39,
+        "open": 0,
+        "excluded": 0
+      },
+      "baselineReason": "Baseline records independently reviewed39 asks, original-source proof and exact prior-record preservation; it was not changed to suppress any test failure. All3 runtime coverage cases subsequently passed remotely.",
+      "explanation": "Expected nonzero subject-wide result: min(70 open +254 unchanged historical stale-exclusion records,120)=120. Target sitting is fully covered; other Russian source work remains."
+    },
+    "sourceCheckpointPassed": true,
+    "remoteEvidence": {
+      "sourceCandidate": "b2df29d2be08a4894efa158c4e8568db3f525c20",
+      "supportedCandidate": "bf3c4df311e5bc152f6155e1aba8b907edd822b0",
+      "workflowOnlyChild": "5d91f71be9e08fbaad37c711da34e00aa064da94",
+      "sourceSnapshotUnchanged": true,
+      "coordinatorReportedPassed": "2026-11-12",
+      "infrastructureScope": "Root generic source-metadata/test support only; strict original-PDF generator verification remains required."
+    }
+  }
+}

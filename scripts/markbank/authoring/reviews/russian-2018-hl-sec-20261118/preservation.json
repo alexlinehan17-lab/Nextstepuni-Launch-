@@ -1,0 +1,20 @@
+{
+  "baseCommit": "d516b08e63a7f17f9daf65dbace77c83bb148ffb",
+  "intendedChangedCards": [
+    "ru-2018-hl-se",
+    "ru-2018-hl-gw"
+  ],
+  "scripts/markbank/authored/russian-reviewed.json": {
+    "all1429IdsAndConceptIdsPreserved": true,
+    "other1427RecordsUnchanged": true
+  },
+  "components/MarkBank/cards/russian/reviewed.json": {
+    "all1429IdsAndConceptIdsPreserved": true,
+    "other1427RecordsUnchanged": true
+  },
+  "sourceRecords": {
+    "onlyTwoReviewDatesAndNoAnswerEvidenceAdded": true,
+    "allQuestionSchemePageAndTopicBindingsPreserved": true
+  },
+  "sourceBindingsAtlasCoverageAndDeckCountsUnchanged": true
+}

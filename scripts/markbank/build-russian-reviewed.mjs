@@ -36,7 +36,7 @@ const cards = authored.map(({ review, ...card }) => {
     schemeCitation: `SEC Russian ${card.year} ${card.level === 'higher' ? 'Higher' : 'Ordinary'} Level marking scheme, pages ${review.schemePages.join(', ')} — © State Examinations Commission.`,
     schemeRegion: { schemeFileid: paper.scheme.f, p: review.schemePages[0], r: [0, 0, 1, 1] },
     qa: { gates: ['original-pdf-review', 'printed-task-census', 'source-defined-tariff', ...(previous ? ['reviewed-card-correction'] : [])],
-      humanReviewedBy: 'Codex source review; browser QA pending', humanReviewedAt: '2026-11-06' } };
+      humanReviewedBy: 'Codex source review; browser QA pending', humanReviewedAt: review.reviewedAt ?? '2026-11-06' } };
 });
 await validateReviewedRussianQuestionTopics(ROOT, records, cards);
 const out = resolve(ROOT, 'components/MarkBank/cards/russian');
