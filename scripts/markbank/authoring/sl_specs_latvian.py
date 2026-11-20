@@ -1467,7 +1467,7 @@ SPECS[2022] = [
       rownote=_paras_2022, pages=(2, 3)),
     R('I5', [shown(L(178, 181)), shown(L(182, 183))], whole=True, total=PaperP(4, 'Vai grūtību'), pages=(2, 3),
       # the whole reprint, its "Paskaidro, kāpēc jā vai kāpēc ne!" included (second reader)
-      rownote=both(_paras_2022, quote(L(176, 177, after='5. '),
+      rownote=both(_paras_2022, quote(L(176, 177, after='5. ', before=' (5)'),
                                       lead='The scheme reprints this question as'))),
     R('I6', [one(L(186, 189), PaperP(4, 'viedokli par šo'))], total=PaperP(4, 'viedokli par šo'), pages=(2, 3)),
     R('II1', [unprinted(_essay_2022)], total=PARTP(), question=QP(4, ESSAY_2022, '1. “Mani')),
