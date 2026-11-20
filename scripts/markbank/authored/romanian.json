@@ -8563,6 +8563,92 @@
   }
  },
  {
+  "id": "ron-2021-hl-ii-1",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2021,
+  "section": "II",
+  "topicId": "romanian-1-1",
+  "conceptId": "plecand-citatul-urm-tor-avut-dintotdeauna",
+  "questionRef": "2021 HL Section II Q1",
+  "questionText": "Scrieți un eseu pornind de la una dintre cele două teme propuse mai jos (aproximativ 300 de cuvinte): Plecând de la citatul următor: Am avut dintotdeauna neastâmpărul drumului, curiozitatea de a vedea ce se întâmplă de partea cealaltă a gardului, ce e dincolo de orizont, cum trăiesc oamenii în alte părţi ale lumii, cum se îmbracă, cum gândesc, ce mănâncă. (Carmen Firan, în Unde începe cerul. Jurnal de călătorie), comentați ideea: Călătoria – o nevoie permanentă a ființei noastre.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într‐un mod clar",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\" The scheme heads this part “Compunere de aproximativ 300 de cuvinte, la alegere între două subiecte, scrisă cursiv, urmărind organizarea coerentă a ideilor şi conducând la o concluzie clară.” and prints, with no marks or percentages beside the criteria: “La Partea a II‐a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Coerența răspunsurilor – candidatul folosește textul într‐un mod propriu gândirii sale; ideile sunt exprimate structurat și logic",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Eficiența limbajului – candidatul demonstrează că stăpânește limba suficient de bine pentru a‐și exprima clar și cursiv ideile și opiniile",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Respectarea regulilor de gramatică, de ortografie și de punctuație",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "ron-2021-hl-ii-2",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2021,
+  "section": "II",
+  "topicId": "romanian-1-1",
+  "conceptId": "inventa-alt-adev-doar-pentru-place",
+  "questionRef": "2021 HL Section II Q2",
+  "questionText": "Scrieți un eseu pornind de la una dintre cele două teme propuse mai jos (aproximativ 300 de cuvinte): Nu poți inventa un alt adevăr doar pentru că nu îți place ce auzi. - Greta Thunberg",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într‐un mod clar",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\" The scheme heads this part “Compunere de aproximativ 300 de cuvinte, la alegere între două subiecte, scrisă cursiv, urmărind organizarea coerentă a ideilor şi conducând la o concluzie clară.” and prints, with no marks or percentages beside the criteria: “La Partea a II‐a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Coerența răspunsurilor – candidatul folosește textul într‐un mod propriu gândirii sale; ideile sunt exprimate structurat și logic",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Eficiența limbajului – candidatul demonstrează că stăpânește limba suficient de bine pentru a‐și exprima clar și cursiv ideile și opiniile",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Respectarea regulilor de gramatică, de ortografie și de punctuație",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "ron-2022-hl-i-1-a",
   "subjectId": "romanian",
   "level": "higher",
