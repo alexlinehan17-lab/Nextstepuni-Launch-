@@ -579,6 +579,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2012 Higher Level — © State Examinations Commission.",
+    id: "swe-2012-hl-ii-1", topicId: "swedish-1-0", conceptId: "med-ratt-motivation-verkar-allra-flesta",
+    section: "II", questionRef: "2012 HL Section II Q1",
+    questionText: "” (...) med rätt motivation verkar de allra flesta kunna bli väldigt duktiga inom ett område – om de nu vill” (stycke 16) Skriv en uppsats på 100 ord där du uttrycker dina tankar om detta citat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "I del I och II kommer följande kriterier att vägas in i betygssättningen:", marks: 30, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme prints, as examples, not a checklist: “Citatet visar på vikten av beslutsamhet, flit och dedikation. Premissen för artikeln är att vem som helst med rätt sorts och tillräcklig träning kan uppnå expertprestationer. Det innebär att börja tidigt och lägga ner nästan all fritid på träningen. Då, och bara då, kan man nå toppen. Frågan som inställer sig är den om framgångens pris. Hur många unga har inte tröttnat på den hårda träningen och gett upp när de hade framgången inom räckhåll?. Hur mycket då har de inte redan offrat av skolarbete, hobbyer och vänner? Inte heller för de som faktiskt lyckas nå toppen är kampen över. Träningen måste fortsätta lika hårt för att hålla sig kvar, vilket leder till att familjebildning skjuts upp och kontakt med släkt och vänner begränsas. I slutändan måste frågan gälla om det offer man gör genom att lägga ner så mycket träning faktiskt är mödan värd. Den motivation som nämns i citatet bör komma från barnet självt, inte från omgivningen. Vilket ansvar har föräldrarna i att driva på sina barn att prestera allt bättre?”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Ett tydligt syfte – kandidaten har förstått frågan och vet hur den ska besvaras – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ett sammanhängande svar – kandidaten använder relevant och lämplig fakta ur materialet på ett strukturerat och meningsfullt sätt – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Språklig klarhet – kandidaten uppvisar en språkbehandling som med tydlighet och med flyt kan uttrycka dennes idéer – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Formalia – interpunktion, grammatik, stavning – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEL II",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2012 Higher Level — © State Examinations Commission.",
+    id: "swe-2012-hl-iii-1", topicId: "swedish-1-1", conceptId: "skriv-uppsats-ungefar-300-ord-dar",
+    section: "III", questionRef: "2012 HL Section III Q1",
+    questionText: "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. Arbetet är sin egen belöning",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under “Del III” the scheme reprints only the instruction and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts I and II only: “I del I och II kommer följande kriterier att vägas in i betygssättningen:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2012 Higher Level — © State Examinations Commission.",
+    id: "swe-2012-hl-iii-2", topicId: "swedish-1-1", conceptId: "moderna-samhalle-handlar-allt-har-och",
+    section: "III", questionRef: "2012 HL Section III Q2",
+    questionText: "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. I vårt moderna samhälle handlar allt om här och nu",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under “Del III” the scheme reprints only the instruction and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts I and II only: “I del I och II kommer följande kriterier att vägas in i betygssättningen:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2013, level: "higher",
     paperFileid: "LC039ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2013 Higher Level — © State Examinations Commission.",
