@@ -789,6 +789,795 @@
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet."
  },
  {
+  "id": "nld-2011-hl-i-1-a",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "dutch-0-0",
+  "conceptId": "waarnaar-verwijzen-volgende-woorden-die-alinea",
+  "questionRef": "2011 HL Section I Q1(a)",
+  "questionText": "Waarnaar verwijzen de volgende woorden? ‘die’ (alinea 2: zegt die man)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "De secretaris-generaal van het vrij secundair onderwijs",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2011-hl-i-1-b",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "dutch-0-0",
+  "conceptId": "waarnaar-verwijzen-volgende-woorden-alinea-het",
+  "questionRef": "2011 HL Section I Q1(b)",
+  "questionText": "Waarnaar verwijzen de volgende woorden? ‘ze’ (alinea 5: het feit dat we ze in het onderwijs ook niet meer…)?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "De leerlingen in het algemeen of de vijftienjarigen",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2011-hl-i-1-c",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "dutch-0-0",
+  "conceptId": "wat-betekenen-volgende-uitdrukkingen-leefwereld-van",
+  "questionRef": "2011 HL Section I Q1(c)",
+  "questionText": "Wat betekenen de volgende uitdrukkingen? ‘De leefwereld van de tiener is een marktgestuurde carrousel(…)’ (alinea 4)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Het is een commerciële leefwereld geworden waarin iedereen gedwongen is mee te doen.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2011-hl-i-1-d",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "dutch-0-0",
+  "conceptId": "wat-betekenen-volgende-uitdrukkingen-wij-hebben",
+  "questionRef": "2011 HL Section I Q1(d)",
+  "questionText": "Wat betekenen de volgende uitdrukkingen? ‘Wij hebben de wereld uit handen gegeven.’ (alinea 6)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "We hebben onze idealen verkocht door onze tradities uit handen te geven en alles af te stemmen op onmiddellijke behoeftebevrediging.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2011-hl-i-1-e",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "dutch-0-0",
+  "conceptId": "leg-uit-dat-het-woord-zegeningen",
+  "questionRef": "2011 HL Section I Q1(e)",
+  "questionText": "Leg uit dat het woord ‘zegeningen’ (alinea 4) in de tekst een negatieve betekenis heeft.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Het staat in een context met negatief beladen termen (geld, winstbejag; de rest van de zin maakt dat duidelijk.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2011-hl-i-2",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "dutch-0-1",
+  "conceptId": "wat-houding-van-auteur-ten-opzichte",
+  "questionRef": "2011 HL Section I Q2",
+  "questionText": "Wat is de houding van de auteur ten opzichte van diegenen die verantwoordelijk zijn voor het onderwijs?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hij verwijt het onderwijs te angstig te zijn geworden om de juiste beslissingen te nemen. Deze beslissingen moeten ertoe leiden dat leerlingen weer graag lezen zonder daarbij toegevingen te doen naar de leerlingen.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2011-hl-i-3",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "dutch-0-1",
+  "conceptId": "wat-hoofdoorzaak-voor-het-gebrek-aan",
+  "questionRef": "2011 HL Section I Q3",
+  "questionText": "Wat is de hoofdoorzaak voor het gebrek aan leescultuur bij jongeren?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "De hoofdoorzaak is dat we niet meer toekomen aan kwalitatief hoogstaand onderwijs omdat we het literatuuronderwijs niet inbedden in kwalitatief geschiedenisonderwijs én omdat we de leerlingen niet meer dwingen te zeggen wat ze moeten lezen.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2011-hl-i-4",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "dutch-0-1",
+  "conceptId": "verklaar-rol-die-het-onderwijs-volgens",
+  "questionRef": "2011 HL Section I Q4",
+  "questionText": "Verklaar de rol die het onderwijs volgens de auteur zou moeten spelen inzake het aanleren van burgerzin en het vormen tot sociaalvoelende wezens van de schoolgaande jeugd.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Het onderwijs moet leerlingen verplichten bepaalde leerstof tot zich te nemen en moet ophouden de jeugd te betuttelen door zich aan te passen aan de leefwereld van de jongeren.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2011-hl-i-5",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "dutch-0-1",
+  "conceptId": "als-het-gaat-lezen-binnen-schoolverband",
+  "questionRef": "2011 HL Section I Q5",
+  "questionText": "‘Als het gaat om lezen binnen schoolverband moet uitgegaan worden van datgene wat leerlingen geacht worden te lezen wanneer ze volwaardig deel willen uitmaken van zowel de culturele als de nationale geschiedenis van een land.’ (alinea 3) Geef je commentaar op deze uitspraak en betrek daarbij je eigen literatuuronderwijs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Goede uitleg en verwijzingen naar eigen onderwijs.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2011-hl-i-6",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "dutch-0-1",
+  "conceptId": "wat-zijn-concrete-nadelen-van-het",
+  "questionRef": "2011 HL Section I Q6",
+  "questionText": "Wat zijn de concrete nadelen van het feit dat we volgens de auteur de wereld hebben herleid tot een marktplaats?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gebrek aan burgerzin bij jongeren.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme heads its points: “Goede uitleg.” “In het antwoord zijn mogelijk vervat:”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Alles is op rechtstreekse behoeftebevrediging gericht.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Er is geen ruimte meer voor echte persoonlijke ontwikkeling.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2011-hl-ii-1",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2011,
+  "section": "II",
+  "topicId": "dutch-1-0",
+  "conceptId": "becommentarieer-ongeveer-100-woorden-volgende-kwestie",
+  "questionRef": "2011 HL Section II Q1",
+  "questionText": "Becommentarieer in ongeveer 100 woorden de volgende kwestie: ‘Als zo'n enquête iets duidelijk maakt, is het dat we dringend werk moeten maken van serieus literatuuronderwijs, ingebed in al even serieus geschiedenisonderwijs.’",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "In deel 2 en 3 worden de volgende punten meegewogen:",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. doel: de kandidaat begrijpt de opgave en behandelt het onderwerp adequaat – 30%.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. logische gedachtegang: de kandidaat gebruikt relevant materiaal en weet dit op een logische en zinvolle manier te ordenen – 30 %.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. taalbeheersing: de kandidaat laat zien dat hij de taal voldoende beheerst om zijn ideeën begrijpelijk uiteen te zetten - 30%.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. formulering: stijl en spelling - 10%.",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" Under the scheme's heading “De volgende deelonderwerpen kunnen aan bod komen:”, as examples, not a checklist: “Het literatuuronderwijs moet ernstiger worden genomen.”; “Het literatuuronderwijs moet ingebed worden in een historische context.”; “Het nut van dergelijke enquêtes is relatief.”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "DEEL 2: COMMENTAAR",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2011-hl-iii-1",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2011,
+  "section": "III",
+  "topicId": "dutch-1-1",
+  "conceptId": "schrijf-een-opstel-van-minimaal-300",
+  "questionRef": "2011 HL Section III Q1",
+  "questionText": "Schrijf een opstel van minimaal 300 woorden. Kies één van de volgende opgaven. Mensen zijn zo gelukkig als ze zelf besluiten te zijn. (Abraham Lincoln)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Het opstel handelt over het opgegeven onderwerp, heeft een logische gedachtegang, een heldere structuur, een duidelijk doel en kenmerkt zich door verzorgd taalgebruik.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. doel: de kandidaat begrijpt de opgave en behandelt het onderwerp adequaat – 30%.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. logische gedachtegang: de kandidaat gebruikt relevant materiaal en weet dit op een logische en zinvolle manier te ordenen – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. taalbeheersing: de kandidaat laat zien dat hij de taal voldoende beheerst om zijn ideeën begrijpelijk uiteen te zetten - 30%.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. formulering: stijl en spelling - 10%.",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet."
+ },
+ {
+  "id": "nld-2011-hl-iii-2",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2011,
+  "section": "III",
+  "topicId": "dutch-1-1",
+  "conceptId": "schrijf-een-opstel-van-minimaal-300",
+  "questionRef": "2011 HL Section III Q2",
+  "questionText": "Schrijf een opstel van minimaal 300 woorden. Kies één van de volgende opgaven. In onze hedendaagse samenleving is alles gericht op het hier en nu.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Het opstel handelt over het opgegeven onderwerp, heeft een logische gedachtegang, een heldere structuur, een duidelijk doel en kenmerkt zich door verzorgd taalgebruik.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. doel: de kandidaat begrijpt de opgave en behandelt het onderwerp adequaat – 30%.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. logische gedachtegang: de kandidaat gebruikt relevant materiaal en weet dit op een logische en zinvolle manier te ordenen – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. taalbeheersing: de kandidaat laat zien dat hij de taal voldoende beheerst om zijn ideeën begrijpelijk uiteen te zetten - 30%.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. formulering: stijl en spelling - 10%.",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet."
+ },
+ {
   "id": "nld-2021-hl-i-1-a",
   "subjectId": "dutch",
   "level": "higher",
