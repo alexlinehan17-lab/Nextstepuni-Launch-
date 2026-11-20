@@ -203,6 +203,10 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
       // question inside its part, so it never addresses the booklet's rows.
       const l = /\bSection L([A-E])\b/.exec(ref);
       if (l) return { fileid: fid, cands: [String('ABCDE'.indexOf(l[1]) + 1)], cls: 'inferred' };
+      // The old Portuguese paper (2010-2021): Section I's questions are Atlas 1-6, then Section II (the commentary) is
+      // Atlas 7 and Section III (the discursive essay) Atlas 8; their own Q<n> restarts at 1 (coordinator, 20 Nov).
+      const later = c.subjectId === 'portuguese' && c.year <= 2021 ? /\bSection (II|III)\b/.exec(ref) : null;
+      if (later) return { fileid: fid, cands: [later[1] === 'II' ? '7' : '8'], cls: 'inferred' };
       const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
     }
     default: {
