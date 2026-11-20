@@ -4182,6 +4182,277 @@
   }
  },
  {
+  "id": "slk-2016-hl-ii-1",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2016,
+  "section": "II",
+  "topicId": "slovakian-1-0",
+  "conceptId": "napi-komentar-najmenej-100-slov-temu",
+  "questionRef": "2016 HL Section II Q1",
+  "questionText": "Napíšte komentár (najmenej 100 slov) na tému: Západná spoločnosť oblečená do bangladéšskych šiat si po nešťastnej udalosti z roku 2013 akoby zrazu uvedomila, že svojím nákupom podporuje strašné zaobchádzanie s úbohými ázijskými robotníkmi.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Zručnosti – gramatika, pravopis – 10%",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the scheme's heading “Napríklad:”, as examples, not a checklist: “Západná spoločnosť je konzumná, pracujeme, aby sme sme zarábali, aby sme si mohli kúpiť, čo potrebujeme”; “Kupujeme si, keď niečo potrebujeme, a niekedy aj keď to nepotrebujeme, keď sa nám to páči a má to dobrú cenu, to znamená, že to je lacné”; “Na oblečení, ktoré si kupujeme, je často napísané made in Bangladéš, made in India, made in Vietnam, made in Kambodža, made in China, pri kúpe si ani neuvedomujeme, za akých podmienok sa naše oblečnie vyrába”; “Vďaka médiám sme už viac informovaní o životných a pracovných podmienkach ľudí v rozvojových krajinách”; “Nakupovaním lacného oblečenia šitého v ázijských krajinách podporujeme ekonomiku týchto krajín aj napriek tomu, že hlavný zisk ide veľkým západným spoločnostiam”; “Keby sa zvýšila cena práce v týchto krajinách, oblečenie by bolo drahšie, alebo veľké spoločnosti by preniesli výrobu do iných, ešte chudobnejších krajín.”; “Keby sme prestali kupovať oblečnie šité v chudobných ázijských krajinách, možno by tisíce ľudí prišlo o prácu a o existenčnú istotu”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ČASŤ II",
+   "title": "Reading text — answer in Slovakian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovakian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+  }
+ },
+ {
+  "id": "slk-2016-hl-iii-1",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "slovakian-1-1",
+  "conceptId": "tema-ako-pre-astny-ivot-vedomim",
+  "questionRef": "2016 HL Section III Q1",
+  "questionText": "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Ako sa dá prežiť šťastný život s vedomím nespravodlivosti na svete.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "slk-2016-hl-iii-2",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "slovakian-1-1",
+  "conceptId": "tema-svet-sta-zlym-miestom-spolo",
+  "questionRef": "2016 HL Section III Q2",
+  "questionText": "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Svet sa môže stať veľmi zlým miestom, ak ho spoločne nebudeme robiť spravodlivejším, demokratickejším a udržateľnejším. Fintan O´Toole: The Irish Times 22. februára 2016",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "slk-2017-hl-i-1-a",
   "subjectId": "slovakian",
   "level": "higher",
