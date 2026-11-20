@@ -1010,6 +1010,58 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2014 Higher Level — © State Examinations Commission.",
+    id: "bul-2014-hl-ii-1", topicId: "bulgarian-1-0", conceptId: "100",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "„Kак да си помогнем срещу огромния психологически натиск, произтичащ от предпоставката за равните възможности?” Какви са вашите идеи по този въпрос? (около 100 думи)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Кандидатът би могъл да се позове на авторовата (малко неопределена) теза – „нужна е една по-добра и по-човешка философия на успеха” и да разсъждава върху етичния принцип на „толерантността към другия” (в текста - „да се въздържаме да съдим прекалено строго неуспелите”), но би могъл да доразвие сюжета, разсъждавайки за толерантността към самия себе си и умението да приемаш собствените си грешки. Би могъл да интерпретира по друг начин антиномията „успех – провал”, да разсъждава върху условността на успеха, винаги по-комплексна, отколкото си представяме... да говори например за това, че успехът на личността е зависим от благоприятното съвпадение на най-различни условия - наследствени (биологични и социални), условията на средата - исторически, политически, географски... да не говорим за играта на съдбата...", marks: null, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" The scheme heads it: “Лична интерпретация, ясни и непротиворечиви идеи.” “Много възможности:”. Under “Бележки:” the scheme prints “При оценяването на отговорите от първите две части се прилагат следните критерии:” “1. Яснота и точност на израза – кандидатът разбира добре въпросите и знае как да отговори ясно и точно – 30% ;” “2. Свързаност и непротиворечивост на отговорите – кандидатът използва откъси от текста, които са адекватни на мисълта му, идеите му са непротиворечиви и композицията на съчинението следва определена логика – 30% ;” “3. Езикова компетентност – кандидатът умее свободно да изразява идеи си, езикът на изказването му е ясен и точен – 30% ;” “4. Конвенционални умения – кандидатът владее и прилага граматичната норма и правописа на съвременния български книжовен език.” The fourth criterion prints no percentage, so the criteria are shown and the part is scored on its printed total." },
+    { id: "r-2", kind: "point", verbatim: "Ще бъде предимство, ако кандидатът се позове на другите идеали от „триединството” – братството, което представлява човешката солидарност и взаимопомощ и свободата – индивидуалната свобода да мислиш свободно, да си създадеш своя (неконвенционална, нестандартна) представа за неуспеха, които уравновесяват непостижимостта на идеала за абсолютно равенство...", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Кандидатът би могъл да се позове на богата фразеология по въпроса, да цитира афоризми като: „Не съм се провалил. Имах само 1000 идеи, които не потръгнаха.” (Б. Φранклин;, „Провалът е пътят към успеха”; „Всяка грешка ни научава на нещо”... Една забавна и виртуозна възможност за проява на чувство за хумор е да се олекоти „генетичната съдбовност” в нашия живот с намек за други подобни научни открития в областта на генетиката, според които ние притежаваме също и „ген на солидарността”, чието предназначение е да контролира социалните ни емоции.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ВТОРА ЧАСТ",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2014 Higher Level — © State Examinations Commission.",
+    id: "bul-2014-hl-iii-1", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: „ Най-голямата грешка не е в това да се провалиш, а в неумението да надмогнеш неуспеха” (Дж.Р.Р.Толкин)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under the two titles the scheme prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Under “Бележки:” it prints its criteria for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2014 Higher Level — © State Examinations Commission.",
+    id: "bul-2014-hl-iii-2", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: „Дори да обиколим света в търсене на красотата, не я ли носим в себе си, не ще я открием.“ (Ралф Уолдо Емерсън)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under the two titles the scheme prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Under “Бележки:” it prints its criteria for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "higher",
     paperFileid: "LC559ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2016 Higher Level — © State Examinations Commission.",
