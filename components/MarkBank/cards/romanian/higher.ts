@@ -3922,6 +3922,60 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2025 Higher Level — © State Examinations Commission.",
+    id: "ron-2025-hl-ii-1", topicId: "romanian-1-0", conceptId: "partea-final-textului-reg-sim-trei",
+    section: "II", questionRef: "2025 HL Section II Q1",
+    questionText: "În partea finală a textului, regăsim trei sfaturi de ademenit fericirea : „Trăiți momentul!“, „Păstrați contactul cu semenii dumneavoastră! “și „La vânătoare de amintiri! “ Alegeți unul dintre aceste sfaturi și comentați importanța lui, în lumina textului și potrivit experienței voastre. (100-150 de cuvinte)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "În funcție de firea fiecărui individ, fericirea poate fi atinsă pe diverse căi. Firile spontane, extrovertite, efervescente se bucură de trăirea momentului și de contactul cu ceilalți, fericirea venind și din lucruri mărunte, oricând la îndemâna noastră.", marks: null, contextNote: "For “„Trăiți momentul!“”: The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\" The scheme reprints the task as: “În partea finală a textului, regăsim trei sfaturi de ademenit fericirea. Alegeți unul dintre aceste sfaturi și discutați importanța lui, în lumina textului și potrivit experienței voastre. (100-150 de cuvinte)”." },
+    { id: "r-2", kind: "point", verbatim: "Pe de altă parte, o fire introvertită poate găsește fericirea în momentele de singurătate și de meditație. Fiecare persoană poate regăsi, așadar, surse de fericire în apropierea ei, în feluri potrivite firii sale.", marks: null, contextNote: "For “„Trăiți momentul!“”" },
+    { id: "r-3", kind: "point", verbatim: "Este adevărat că nu ne putem împlini destinul în absența celorlalți. Experiențele prin care îi cunoaștem pe ceilalți și creăm legături, parcurgem etape din viață împreună, împărtășim emoții și sentimente, implicându-ne activ și afectiv fiecare în povestea celuilalt, toate acestea contribuie la propria fericire.", marks: null, contextNote: "For “„Păstrați contactul cu semenii dumneavoastră! “”" },
+    { id: "r-4", kind: "point", verbatim: "Propria fericirea, în trăirea relațiilor cu ceilalți, poate veni chiar prin săvârșirea de gesturi de generozitate și altruism, mergând până la sacrificiul de sine.", marks: null, contextNote: "For “„Păstrați contactul cu semenii dumneavoastră! “”" },
+    { id: "r-5", kind: "point", verbatim: "Chiar dacă ne îndepărtăm în timp de o experiență pozitivă care ne-a oferit o stare de bine sau de fericire, ne rămân amintirile, care nu pier din noi, dându-ne oricând posibilitatea de a retrăi acea stare. Locuri, lucruri și persoane care nu mai sunt în viața noastră prezentă continuă să fie o parte din noi, putând să compenseze trăirea unor momente sau aspecte neplăcute din prezent.", marks: null, contextNote: "For “„La vânătoare de amintiri! “”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PARTEA A II-A",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2025 Higher Level — © State Examinations Commission.",
+    id: "ron-2025-hl-iii-1", topicId: "romanian-1-1", conceptId: "fericirea-apare-atunci-cand-instituie-armonie",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "Scrieți un eseu în care să comentați, la alegere, unul dintre citatele de mai jos (1. sau 2.) (minimum 300 de cuvinte): Fericirea apare atunci când se instituie o armonie între ceea ce gândești, ceea ce spui și ceea ce faci. (Mahatma Gandhi)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\" The scheme reprints the instruction and the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2025 Higher Level — © State Examinations Commission.",
+    id: "ron-2025-hl-iii-2", topicId: "romanian-1-1", conceptId: "elepciunea-popular-mai-pre-ioas-decat",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "Scrieți un eseu în care să comentați, la alegere, unul dintre citatele de mai jos (1. sau 2.) (minimum 300 de cuvinte): Înțelepciunea populară este mai prețioasă decât aurul. (Mihai Eminescu)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\" The scheme reprints the instruction and the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2026, level: "higher",
     paperFileid: "LC553ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2026 Higher Level — © State Examinations Commission.",
