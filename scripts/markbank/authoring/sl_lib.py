@@ -82,9 +82,19 @@ P_PRICE = re.compile(r'[(\[]\s*(\d{1,2})\s*p\.?\s*[)\]]')
 
 class AskPrice:
     """The price the paper prints for the ask itself (eu_paper's reading of
-    its right-hand margin): (count, per, notation)."""
+    its right-hand margin): (count, per, notation). With `key` ("I2", "I1а"),
+    the price the paper prints for THAT ask of the same sitting (the other
+    asks a remainder subtracts; REM)."""
+    def __init__(self, key=None):
+        self.key = key
+
     def read(self, doc):
         ask = doc['ask']
+        if self.key:
+            want = parse_key(self.key)
+            ask = next((a for a in doc['P'].all_asks() if a.key == want), None)
+            if ask is None:
+                raise ValueError(f'the census prints no ask {self.key}')
         if not ask.tariff:
             found = P_PRICE.findall(f'{ask.text} {ask.margin_price}')
             if len(found) == 1:
@@ -96,8 +106,8 @@ class AskPrice:
         return (1, total, ask.notation) if count * per == total else (count, per, ask.notation)
 
 
-def PP():
-    return AskPrice()
+def PP(key=None):
+    return AskPrice(key)
 
 
 class SchemePrice:
@@ -238,6 +248,40 @@ class PaperLinePrice:
 
 def PY(page, y):
     return PaperLinePrice(page, y)
+
+
+class Remainder:
+    """CARD-STANDARD 10i, clarification of 20 Nov: a SINGLE ask with no
+    printed mark whose mark is fixed by printed figures takes the printed
+    total of its part (or question) less the printed marks of every other ask
+    under it. `total` and each of `others` are price readers of PRINTED
+    figures; `note(doc)` states the sum on the row. Two or more unpriced asks
+    sharing a remainder are 10i proper (never split): not this class."""
+    def __init__(self, total, *others):
+        if not others:
+            raise ValueError('a remainder needs the printed marks of the other asks')
+        self.total, self.others = total, others
+
+    def _sum(self, doc):
+        _c, t, tn = self.total.read(doc)
+        rest = sum(c * p for c, p, _n in (o.read(doc) for o in self.others))
+        if not 0 < t - rest <= t:
+            raise ValueError(f'remainder {t} - {rest} is not a mark')
+        return t, tn, rest
+
+    def read(self, doc):
+        t, tn, rest = self._sum(doc)
+        return 1, t - rest, f'{t} - {rest}'
+
+    def note(self, doc):
+        t, tn, rest = self._sum(doc)
+        return (f'Neither the paper nor the scheme prints a mark for this question. The paper prints '
+                f'{t} marks for the part ("{tn}") and {rest} for its other questions, so this one '
+                f'carries the remaining {t - rest} ({t} - {rest} = {t - rest}).')
+
+
+def REM(total, *others):
+    return Remainder(total, *others)
 
 
 class R:
