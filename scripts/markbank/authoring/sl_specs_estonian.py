@@ -342,7 +342,8 @@ SPECS[2013] = [
                    LEAD_2013),
       question=QP(4, Run('Artikli 4. lõigus', 'pealkirja? Kirjuta')), pages=(2, 3)),
     R('III1', [graded(L(138, 139), PARTP(), CRIT_2013)], rownote=LEAD_2013,
-      question=QL(4, 'Kirjuta umbes 300-sõnaline', 'Inimene on looduse kroon', 'Oma unistuste täide')),
+      # the paper prints "VÕI" on its own line between the two titles (second reader)
+      question=QL(4, 'Kirjuta umbes 300-sõnaline', 'Inimene on looduse kroon', 'VÕI', 'Oma unistuste täide')),
 ]
 
 
@@ -537,15 +538,19 @@ SPECS[2015] = [
 CRIT_2016 = crit((104, 105), (106, 107), (108, 109), 110)
 LEAD_2016 = quote(S(103), lead='The scheme prints')
 ESSAY_2016 = 'Kirjuta umbes 300sõnaline'
+def _BROKEN_2016(d):
+    return 'The scheme\'s head line breaks off mid-sentence ("... ning"); it is shown as printed.'
+
+
 SPECS[2016] = [
     R('II1', [graded(S(112), PARTP(), CRIT_2016)],
       rownote=both(examples(S(113, before=' Ränne'), S(113, after='Näiteks: '), S(114), L(119, 120), S(121),
                             L(122, 123), S(124), S(125)),
                    LEAD_2016),
       question=QP(4, Run('„Irooniliselt', 'ebakindluse eest'), 'Kommenteeri seda väidet'), pages=(2, 3)),
-    R('III1', [graded(S(128), PARTP(), CRIT_2016)], rownote=LEAD_2016,
+    R('III1', [graded(S(128), PARTP(), CRIT_2016)], rownote=both(LEAD_2016, _BROKEN_2016),
       question=QP(4, ESSAY_2016, '1) Kes maksab')),
-    R('III2', [graded(S(128), PARTP(), CRIT_2016)], rownote=LEAD_2016,
+    R('III2', [graded(S(128), PARTP(), CRIT_2016)], rownote=both(LEAD_2016, _BROKEN_2016),
       question=QP(4, ESSAY_2016, '2) „Maailm', 'Fintan O')),
 ]
 

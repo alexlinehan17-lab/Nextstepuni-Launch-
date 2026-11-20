@@ -2886,7 +2886,7 @@
   "topicId": "estonian-1-1",
   "conceptId": "kirjuta-umbes-300-sonaline-arutlev-kirjand",
   "questionRef": "2013 HL Section III Q1",
-  "questionText": "Kirjuta umbes 300-sõnaline arutlev kirjand. Vali üks antud teemadest.\nInimene on looduse kroon\nOma unistuste täide viimine – kibemagus teekond",
+  "questionText": "Kirjuta umbes 300-sõnaline arutlev kirjand. Vali üks antud teemadest.\nInimene on looduse kroon\nVÕI\nOma unistuste täide viimine – kibemagus teekond",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5209,7 +5209,7 @@
       ]
      }
     ],
-    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”."
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”. The scheme's head line breaks off mid-sentence (\"... ning\"); it is shown as printed."
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
@@ -5351,7 +5351,7 @@
       ]
      }
     ],
-    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”."
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”. The scheme's head line breaks off mid-sentence (\"... ning\"); it is shown as printed."
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
