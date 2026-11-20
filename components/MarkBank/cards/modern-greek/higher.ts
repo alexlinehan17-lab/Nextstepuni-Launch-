@@ -1233,6 +1233,212 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2016 Higher Level — © State Examinations Commission.",
+    id: "mgr-2016-hl-1-1", topicId: "modern-greek-0-0", conceptId: "mgr-λέξεων-υπογραμμισμένων",
+    section: "1", questionRef: "2016 HL Section 1 Q1",
+    questionText: "Εξηγήστε με δικά σας λόγια τη σημασία των υπογραμμισμένων στο κείμενο λέξεων.\nΠρωταρχικό\nΕκφράζει\nΕπίδραση\nΛαμβάνονται\nκαταπολεμά",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"ΟΜΑΔΑ 1η","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "βασικό, αρχικό", marks: null, contextNote: "For “Πρωταρχικό”: The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\" The scheme reprints the second expression, “Εκφράζει” on the paper, as “Εκφράζω”." },
+    { id: "r-2", kind: "point", verbatim: "δείχνω, φανερώνω, παρουσιάζω", marks: null, contextNote: "For “Εκφράζει”" },
+    { id: "r-3", kind: "point", verbatim: "επιρροή, επίπτωση", marks: null, contextNote: "For “Επίδραση”" },
+    { id: "r-4", kind: "point", verbatim: "χρησιμοποιούνται", marks: null, contextNote: "For “Λαμβάνονται”" },
+    { id: "r-5", kind: "point", verbatim: "διώχνει, μειώνει", marks: null, contextNote: "For “καταπολεμά”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2016 Higher Level — © State Examinations Commission.",
+    id: "mgr-2016-hl-1-2", topicId: "modern-greek-0-1", conceptId: "mgr-άνθρωπο-αποδεικνύει-εκτονώνει",
+    section: "1", questionRef: "2016 HL Section 1 Q2",
+    questionText: "Πως αποδεικνύει ο συγγραφέας ότι η μουσική εκτονώνει ψυχικά τον άνθρωπο;",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"ΟΜΑΔΑ 1η","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Η μουσική μας προσφέρει χαλάρωση και μας δίνει τη δυνατότητα να αποδράσουμε νοητά από την καθημερινότητα, να αφήσουμε το μυαλό μας να ονειρεύεται μέσα από την μουσική, έτσι ώστε να ανεβάσουμε την διάθεση μας και να αφεθούμε στους ρυθμούς της. Η χαλάρωση που επιτυγχάνεται με τη μουσική μας προκαλεί διάφορα συναισθήματα, τις περισσότερες φορές ευφορίας, που ευνοεί όμως και μια καινούργια διαθεσιμότητα και μεγαλύτερη δεκτικότητα σε εξωτερικούς ερεθισμούς. Σε αυτό ακριβώς το στάδιο η μουσική παύει να είναι απλώς ένα στοιχείο χαλάρωσης και παίζει θεραπευτικό ρόλο.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2016 Higher Level — © State Examinations Commission.",
+    id: "mgr-2016-hl-1-3", topicId: "modern-greek-0-1", conceptId: "mgr-ανάπτυξη-αυτή-βοηθάει",
+    section: "1", questionRef: "2016 HL Section 1 Q3",
+    questionText: "Τι είναι η μουσική θεραπεία και να εξηγήσετε πως αυτή βοηθάει την ανάπτυξη του παιδιού;",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"ΟΜΑΔΑ 1η","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Τόσο ο όρος θεραπεία, όσο και ο όρος μουσική λαμβάνονται με την πλατιά τους έννοια. Σταδιακά το παιδί ανοίγει τους συναισθηματικούς του δρόμους, αποκτά αυτοπεποίθηση, αυτοεκτίμηση και καλύτερη εικόνα του εαυτού του , ενώ μέσα από την ομάδα αναπτύσσεται η συλλογικότητα, η συνειδητή συναίσθηση και η αλληλεγγύη, που τόσο απελπιστικά απουσιάζουν από τη ζωή μας.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2016 Higher Level — © State Examinations Commission.",
+    id: "mgr-2016-hl-1-4", topicId: "modern-greek-0-1", conceptId: "mgr-αθλητές-ασθενείς-επιδρά",
+    section: "1", questionRef: "2016 HL Section 1 Q4",
+    questionText: "Σύμφωνα με το κείμενο πώς επιδρά η μουσική στους αθλητές και πώς στους ασθενείς των μικρών χειρουργείων;",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"ΟΜΑΔΑ 1η","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Η μουσική αποτελεί και ένα στοιχείο ψυχολογικής ανάτασης κι αυτός είναι ο κύριος λόγος που οι αθλητές ακούν γρήγορα τραγούδια ή γενικότερα τραγούδια της αρεσκείας τους πριν από το αγώνισμά τους. Η μουσική έχει επίδραση στην απόδοση των αθλητών. Σε πείραμα που έγινε το 2007 σε νεαρούς αθλητές τένις, πριν από τον αγώνα παρατηρήθηκε ότι η συγκέντρωση, η σιγουριά και το πάθος τους διαβαθμιζόταν ανάλογα με την μουσική. Ακόμη, μετά από κάποιο χειρουργείο μικρού βαθμού, το άκουσμα μουσικής καταπολεμά το άγχος.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2016 Higher Level — © State Examinations Commission.",
+    id: "mgr-2016-hl-1-5", topicId: "modern-greek-0-1", conceptId: "mgr-αυτήν-διαφωνείτε-εξηγήσετε",
+    section: "1", questionRef: "2016 HL Section 1 Q5",
+    questionText: "O συγγραφέας λέει ότι η μουσική είναι μια σίγουρη συντροφιά που δεν πρόκειται ποτέ κάποιος να χάσει. Συμφωνείτε με αυτήν την άποψη; Να εξηγήσετε για τι συμφωνείτε ή γιατί διαφωνείτε.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"ΟΜΑΔΑ 1η","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Αποδεκτή οποιαδήποτε άποψη αρκεί να στηρίζεται σε επιχειρήματα", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\" The scheme reprints the question as “Ο συγγραφέας λέει ότι η μουσική είναι μια σίγουρη συντροφιά που δεν πρόκειται ποτέ κάποιος να χάσει. Συμφωνείτε με αυτήν την άποψη; Να εξηγήσετε γιατί συμφωνείτε ή γιατί διαφωνείτε.” Its two sample answers stand under the heading “Για παράδειγμα :”." },
+    { id: "r-2", kind: "point", verbatim: "η μουσική είναι ένας φίλος που μπορεί να υποστηρίξει τον άνθρωπο σε μια δύσκολη στιγμή, να μοιραστούμε τα ίδια συναισθήματα , να επιβεβαιώσουμε την προσωπικότητα μας και/ή την κοινή αισθητική μας για την κοινωνία.", marks: null, contextNote: "For “εάν συμφωνώ”" },
+    { id: "r-3", kind: "point", verbatim: "η μουσική μπορεί να ενοχλεί κάποιον σε ένα σουπερ μάρκετ , σε αίθουσες αναμονής, η επαναλαμβανόμενη χριστουγεννιάτικη μουσική που ακούγεται παντού για πάνω από ένα μήνα, μπορεί να αποτελέσει αιτία απομόνωσης ή ακόμα χειρότερα επιθετικότητας όταν κάποιος αισθανθεί εντελώς άβολα με τη μουσική μιας εντελώς διαφορετικής κουλτούρας, μπορεί να αποτελέσει την πηγή κοινωνικής ενόχλησης η δυνατή μουσική στους δρόμους, τις παραλίες, τα καφέ, τις ντισκοτέκ.", marks: null, contextNote: "For “εάν διαφωνώ”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2016 Higher Level — © State Examinations Commission.",
+    id: "mgr-2016-hl-1-6", topicId: "modern-greek-0-1", conceptId: "mgr-αναφορές-θεωρείτε-κάνοντας",
+    section: "1", questionRef: "2016 HL Section 1 Q6",
+    questionText: "Να συζητήσετε κάνοντας και τις σχετικές αναφορές στο κείμενο και βασισμένοι και στη δική σας άποψη , ποια θεωρείτε ότι είναι η συνεισφορά της μουσικής στην καθημερινότητα .",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"ΟΜΑΔΑ 1η","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Η μουσική είναι πολιτισμός, βοηθά τον άνθρωπο να χαλαρώσει, να εκτονωθεί, να εκφράσει τα συναισθήματα του, να λειτουργήσει θεραπευτικά , παιδαγωγικά. Η αυτο-έκφραση μέσω της μουσικής βοηθά στην επίλυση των εσωτερικών συγκρούσεων και προβλημάτων, λειτουργεί σαν γέφυρα για να ενισχύσει την αυτοπεποίθησή του ατόμου, του επιτρέπει να εκτονώσει, να εκφράσει και να διαχειριστεί καλύτερα την συμπεριφορά του και να δώσει διεξόδους σε πιθανές ανησυχίες και προβληματισμούς.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2016 Higher Level — © State Examinations Commission.",
+    id: "mgr-2016-hl-2", topicId: "modern-greek-1-0", conceptId: "mgr-έκφραση-ανακάλυψη-ατόμου",
+    section: "2", questionRef: "2016 HL Section 2",
+    questionText: "Να σχολιάσετε σε περίπου 100 λέξεις πως καταλαβαίνετε την έκφραση: Η μουσική χρησιμοποιείται από όλους ως “όχημα” για την ανακάλυψη της ταυτότητάς μας, της κοινωνικής θέσης αλλά και για τη δημιουργία σχέσεων, στο πλαίσιο της κοινωνικοποίησης του ατόμου.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ακούγοντας ο άνθρωπος μουσική οδηγείται σε επιλογές , κριτική και επιχειρήματα που τον βοηθούν να συγκροτήσει την προσωπικότητα του, για παράδειγμα αν προτιμά την παραδοσιακή μουσική ή τη θρησκευτική μουσική , αν επιλέγει ροκ συγκροτήματα ή κλασικές όπερες. Όλα αυτά σηματοδοτούν τις παρέες που θα επιλέξει, τους χώρους που θα διαλέξει να κινείται .", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2016 Higher Level — © State Examinations Commission.",
+    id: "mgr-2016-hl-3-1", topicId: "modern-greek-1-0", conceptId: "mgr-ανθρώπων-επικοινωνίας-κατανοητός",
+    section: "3", questionRef: "2016 HL Section 3 Q1",
+    questionText: "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων. Η μουσική είναι ο πιο κατανοητός κώδικας επικοινωνίας των ανθρώπων.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Οι άνθρωποι χωρίς να χρειάζονται να μιλούν μια κοινή γλώσσα , μπορούν να μοιραστούν κοινά συναισθήματα, ιδεολογίες, απόψεις, αθλητικά ιδεώδη και πολιτικούς προσανατολισμούς αφού αθλητικοί σύλλογοι, ομάδες, κράτη, χρησιμοποιούν συγκεκριμένα τραγούδια. Ακόμα τα κράτη έχουν τους εθνικούς τους ύμνους, η Ε.Ε. το δικό της ύμνο . Tέλος, κάθε εποχή εκφράζεται μέσα από συγκεκριμένες μουσικές επιλογές. π.χ. εποχή των Beatles, Adele, Beethoven , κλπ.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\"" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2016 Higher Level — © State Examinations Commission.",
+    id: "mgr-2016-hl-3-2", topicId: "modern-greek-1-0", conceptId: "mgr-αποδειχτεί-βιώσιμο-δίκαιο",
+    section: "3", questionRef: "2016 HL Section 3 Q2",
+    questionText: "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων. «Ο κόσμος μπορεί να αποδειχτεί ένα εχθρικό και επικίνδυνο μέρος , αν δεν συνεργαστούμε από κοινού για να τον κάνουμε πιο δίκαιο , πιο δημοκρατικό και πιο βιώσιμο.» Fintan O’ Toole: The Irish Times, 22.02.2016",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ο καθένας μας πρέπει να νιώσει ότι είναι κομμάτι και όχι το κέντρο του σύμπαντος, να αφήσει τον εγωισμό του, να αποφασίσει να συνεργαστεί με τους συνανθρώπους του για το καλό όλων . Mόνο έτσι οι άνθρωποι μπορούν να ζουν ασφαλείς, σε περιβάλλον αρμονίας, να μοιράζονται τα αγαθά και όσα η γη τους προσφέρει, να αναγνωρίσουν ότι η γη που θα παραδώσουν στις επόμενες γενιές πρέπει να είναι αν όχι καλύτερη, τουλάχιστον βιώσιμη. Οφείλουμε να αποδεχόμαστε τη διαφορετικότητα , την ποικιλία ιδεών και συμπεριφορών, και τέλος να σεβόμαστε το φυσικό περιβάλλον που μας φιλοξενεί.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις να δοθούν στα νέα ελληνικά.\"" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2017, level: "higher",
     paperFileid: "LC019ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2017 Higher Level — © State Examinations Commission.",
