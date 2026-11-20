@@ -37,17 +37,22 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC567ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2014 Higher Level — © State Examinations Commission.",
     id: "hrv-2014-hl-i-1-e", topicId: "croatian-0-0", conceptId: "objasnite-zna-enje-sljede-rije-izraza",
-    section: "I", questionRef: "2014 HL Section I Q1(e)",
-    questionText: "Objasnite značenje sljedećih riječi, izraza ili frazema na temelju konteksta u kojem se pojavljuju u navedenome tekstu: stvaranje idola (3. odjeljak)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    section: "I", questionRef: "2014 HL Section I Q1",
+    questionText: "Objasnite značenje sljedećih riječi, izraza ili frazema na temelju konteksta u kojem se pojavljuju u navedenome tekstu:\na) kuditi (2. odjeljak)\nb) zadužiti naciju (3. odjeljak)\nc) obrisati nekim pod (3. odjeljak)\nd) mahati brojkom (5. odjeljak)\ne) stvaranje idola (3. odjeljak)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a) navoditi nečije mane, prekoravati, kritizirati b) učiniti nešto vrijedno za opće dobro, na razini cijeloga naroda i zaslužiti time javno iskazivanje časti c) nekoga javno osramotiti, javno obeščastiti nekoga d) uvjeravati javnost u kvalitetu i važnost medija tek na temelju relativno velikoga broja čitatelja e) medijsko proizvođenje slavnih osoba od pojedinaca koje nisu učinili ništa objektivno vrijedno, od javnoga značenja, koje onda postaju primatelji poruke nastoje oponašati, koje im postaju uzori", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Odgovore napišite na hrvatskome jeziku, na temelju navdenoga teksta.\"" },
+    { id: "r-1", kind: "point", verbatim: "navoditi nečije mane, prekoravati, kritizirati", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Odgovore napišite na hrvatskome jeziku, na temelju navdenoga teksta.\"" },
+    { id: "r-2", kind: "point", verbatim: "učiniti nešto vrijedno za opće dobro, na razini cijeloga naroda i zaslužiti time javno iskazivanje časti", marks: null },
+    { id: "r-3", kind: "point", verbatim: "nekoga javno osramotiti, javno obeščastiti nekoga", marks: null },
+    { id: "r-4", kind: "point", verbatim: "uvjeravati javnost u kvalitetu i važnost medija tek na temelju relativno velikoga broja čitatelja", marks: null },
+    { id: "r-5", kind: "point", verbatim: "medijsko proizvođenje slavnih osoba od pojedinaca koje nisu učinili ništa objektivno vrijedno, od javnoga značenja, koje onda postaju primatelji poruke nastoje oponašati, koje im postaju uzori", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Croatian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Croatian 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -71,6 +76,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Croatian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Croatian 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -85,15 +91,19 @@ export const CARDS: SecCard[] = [
     id: "hrv-2014-hl-i-3", topicId: "croatian-0-1", conceptId: "temelju-teksta-navedite-tri-problema-koja",
     section: "I", questionRef: "2014 HL Section I Q3",
     questionText: "Na temelju teksta, navedite tri problema koja autor primjećuje i navodi. Podrobno objasnite, pozivajući se na tekst, što sve te tri pojave čini problematičnima.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1. problem: Mediji pristrano izvještavaju, hvaleći jedne i kudeći druge. Ono što ovu praksu čini problematičnom činjenica je da prikazivanje osoba unaprijed kao pozitivnih ili negativnih nameće stav primateljima poruke, onemogućujući im stvaranje kritičkoga stava. 2. problem: mediji s nepravom promiču pojedince koji nisu učinili ništa od javnoga značenja, a prešućuju moralno uzorne osobe ili one koje su učinile nešto značajno za javno dobro. Ta je praksa problematična jer je nepravedna; ljudi sa zaslugama ostaju bez javnoga priznanja a osobe bez zasluga, često neodgovorni ljudi koji razotkrivaju svoj privatni identitet u medijima. To dovodi do moralnoga i kulturnoga relativizma, budući da istinske vrijednosti i trud nisu prepoznati i pohvaljeni. 3. U Hrvatskoj je moguće objaviti lažan intervju i ne biti za to sankcioniran. Također, zabilježena je zlouporaba institute anonimnoga izvora. Ovu praksu problematičnom čini opadanje načela istinitosti i točnosti; moguće je nešto izmisliti, a da se za to ne odgovara. Također, društveno-politički je problem što nema odgovarajućega zakonskoga mehanizma koji bi kažnjavao lažne medijske navode, tako da se podatci u medijima mogu lako krivotvoriti. Zbog toga se mediji mogu neodgovorno ponašati. (Također je točno: političari se boje medija zbog čega ulaze u neprincipijelne koalicije s njima. Also possible: reality shows promote media violence. Također je točno: senzacionalizam. Također je točno: nekontroliran ulazak u struku. Svima je dopušteno baviti se novinarstvom. Također je točno: nepoštivanje etičkih i profesionalnih načela. Također je točno: zlouporaba instituta anonimnoga izvora. Također je točno: lažna tvrdnja da ljudi vole senzacionalizam i crne vijesti)", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Odgovore napišite na hrvatskome jeziku, na temelju navdenoga teksta.\"" },
+    { id: "r-1", kind: "point", verbatim: "1. problem: Mediji pristrano izvještavaju, hvaleći jedne i kudeći druge. Ono što ovu praksu čini problematičnom činjenica je da prikazivanje osoba unaprijed kao pozitivnih ili negativnih nameće stav primateljima poruke, onemogućujući im stvaranje kritičkoga stava.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Odgovore napišite na hrvatskome jeziku, na temelju navdenoga teksta.\"" },
+    { id: "r-2", kind: "point", verbatim: "2. problem: mediji s nepravom promiču pojedince koji nisu učinili ništa od javnoga značenja, a prešućuju moralno uzorne osobe ili one koje su učinile nešto značajno za javno dobro. Ta je praksa problematična jer je nepravedna; ljudi sa zaslugama ostaju bez javnoga priznanja a osobe bez zasluga, često neodgovorni ljudi koji razotkrivaju svoj privatni identitet u medijima. To dovodi do moralnoga i kulturnoga relativizma, budući da istinske vrijednosti i trud nisu prepoznati i pohvaljeni.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. U Hrvatskoj je moguće objaviti lažan intervju i ne biti za to sankcioniran. Također, zabilježena je zlouporaba institute anonimnoga izvora. Ovu praksu problematičnom čini opadanje načela istinitosti i točnosti; moguće je nešto izmisliti, a da se za to ne odgovara. Također, društveno-politički je problem što nema odgovarajućega zakonskoga mehanizma koji bi kažnjavao lažne medijske navode, tako da se podatci u medijima mogu lako krivotvoriti. Zbog toga se mediji mogu neodgovorno ponašati.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "(Također je točno: političari se boje medija zbog čega ulaze u neprincipijelne koalicije s njima. Also possible: reality shows promote media violence. Također je točno: senzacionalizam. Također je točno: nekontroliran ulazak u struku. Svima je dopušteno baviti se novinarstvom. Također je točno: nepoštivanje etičkih i profesionalnih načela. Također je točno: zlouporaba instituta anonimnoga izvora. Također je točno: lažna tvrdnja da ljudi vole senzacionalizam i crne vijesti)", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Croatian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Croatian 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -117,6 +127,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Croatian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Croatian 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -140,6 +151,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Croatian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Croatian 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -163,6 +175,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Croatian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Croatian 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -591,9 +604,13 @@ export const CARDS: SecCard[] = [
     id: "hrv-2016-hl-i-6", topicId: "croatian-0-1", conceptId: "nakon-ste-pro-itali-tekst-mislite",
     section: "I", questionRef: "2016 HL Section I Q6",
     questionText: "Nakon što ste pročitali tekst, mislite li da biste i sami mogli živjeti načinom koji je odabrao Ivan? Iscrpno opišite razloge zbog kojih biste ili ne biste odabrali takav način života.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mogao/mogla bih tako živjeti zato što sam vrlo osjetljiv/a na pitanja održivog razvoja i očuvanja okoliša. Mislim kako suvremeni način života ne čini dovoljno za zaštitu okoliša. Mogao/mogla bih tako živjeti zato što obožavam prirodu i smatram kako je život u skladu s prirodom i njezinim zakonima jedini ispravan i istinski način življenja. Mogao/mogla bih tako živjeti zato što bi bilo lijepo imati pokretnu kućicu i stvoriti si mogućnost mijenjanja adrese bez uobičajenog stresa i problema koje preseljenje obično donosi. Povremena promjena okoliša ima povoljan učinak na naš način razmišljanja i život općenito. Želio/željela bih tako živjeti zato što smatram kako se sreća ne nalazi u posjedovanju stvari, nego u razvijanju svojega unutarnjeg života te u mirnom postojanju u skladu s prirodom. Ne bih mogao/mogla tako živjeti zato što sam ovisan/ovisna o modernoj tehnologiji, volim živjeti udobno i ugodno te imati mogućnost korištenja svih dosega moderne tehnologije.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mogao/mogla bih tako živjeti zato što sam vrlo osjetljiv/a na pitanja održivog razvoja i očuvanja okoliša. Mislim kako suvremeni način života ne čini dovoljno za zaštitu okoliša.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Mogao/mogla bih tako živjeti zato što obožavam prirodu i smatram kako je život u skladu s prirodom i njezinim zakonima jedini ispravan i istinski način življenja.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Mogao/mogla bih tako živjeti zato što bi bilo lijepo imati pokretnu kućicu i stvoriti si mogućnost mijenjanja adrese bez uobičajenog stresa i problema koje preseljenje obično donosi. Povremena promjena okoliša ima povoljan učinak na naš način razmišljanja i život općenito.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Želio/željela bih tako živjeti zato što smatram kako se sreća ne nalazi u posjedovanju stvari, nego u razvijanju svojega unutarnjeg života te u mirnom postojanju u skladu s prirodom.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Ne bih mogao/mogla tako živjeti zato što sam ovisan/ovisna o modernoj tehnologiji, volim živjeti udobno i ugodno te imati mogućnost korištenja svih dosega moderne tehnologije.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -673,6 +690,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Mlada je Bjelovarka svakodnevno objavljivala više statusa na toj društvenoj mreži, mijenjala je vlastiti fizički izgled samo da bi se time mogla pohvaliti svojim virtualnim prijateljima. Isto tako, lažno je označivala svoju lokaciju samo zato što je ta lokacija prestižna. Uspoređivala se sa svojim prijateljicama i, ako bi koja prijateljica objavila uspješniji status ili sliku, mlada je Bjelovarka svoje prijateljice počela doživljavati kao rivalke, a sebe kao promašaj, rezultat čega je bilo osmišljavanje vlastitih zanimljivijih sadržaja kako bi nadmašila uspjeh svojih prijateljica.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Croatian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -686,6 +715,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Promenade u manjim gradovima bila su, i još uvijek jesu, mjesta su okupljanja njihovih stanovnika i često središnja točka društvenog života. Na njima su se pokazivali statusni smboli, uspoređivali s drugima, na njima su se tražili i upoznavali budući partneri, poslovni i bračni... Stoga je razumljivo da se za večernje pokazivanje na takvim šetalištima većina ljudi posebno odijevala i uljepšavala, želeći ostaviti što bolji dojam, sakriti svoje mane i nedostatke, što je rijetko moglo biti u skladu sa stvarnim stanjem. U tome je pogledu takva, lažna, prezentacija umnogome slična pomnoj brizi koju mnogi pojedinci na društvenim mrežama posvećuju svojoj samoprezentaciji.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Croatian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -694,11 +735,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2017 Higher Level — © State Examinations Commission.",
     id: "hrv-2017-hl-i-4", topicId: "croatian-0-1", conceptId: "opi-ite-temelju-teksta-ali-svojim",
     section: "I", questionRef: "2017 HL Section I Q4",
-    questionText: "Opišite, na temelju teksta, ali svojim riječima, na koji način i zašto postupci „selektivnog predstavljanja“ i „krivotvorenja stvarnosti“ u konačnici dovode do negativnih posljedica po one koji objavljuju i konzumiraju tako stvorene sadržaje na društvenim mrežama.",
+    questionText: "Opišite, na temelju teksta, ali svojim riječima, na koji način i zašto postupci „selektivnog predstavljanja“ (6) i „krivotvorenja stvarnosti“ (9) u konačnici dovode do negativnih posljedica po one koji objavljuju i konzumiraju tako stvorene sadržaje na društvenim mrežama.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Postupci selektivnog predstavljanja i krivotvorenja stvarnosti posebno su opasni zato što, iako zapravo služe tome da bi slika koju šaljemo svojim pratiteljima bila što savršenija, u potpunosti iskrivljuju percepciju i predodžbu koju oni koji takve sadržaje promatraju imaju o sebi, što za posljedicu ima da i oni krenu u krivotvorenje vlastite stvarnosti, uljepšavanje vlastitog života i tako se zatvoreni krug lažnog predstavljanja, krivotvorene stvarnosti i obmana samo nastavlja, ostavljajući pogubne posljedice na sve koji u njegovu stvaranju sudjeluju.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Croatian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -708,10 +761,24 @@ export const CARDS: SecCard[] = [
     id: "hrv-2017-hl-i-5", topicId: "croatian-0-1", conceptId: "psihologinja-tekstu-kako-dru-tveni-ivot",
     section: "I", questionRef: "2017 HL Section I Q5",
     questionText: "Psihologinja u tekstu kaže kako „naš društveni život na Facebooku može biti intenzivniji od onoga u stvarnosti, ali je osiromašen za sve ono što donosi živi kontakt“. Slažete li se s navedenom tvrdnjom? Obrazložite svoj odgovor.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Slažem se s navedenom tvrdnjom zato što, iako društvene mreže mogu odražavati stvarni život, one su samo jedan njegov dio, začin, nikako ne smiju postati smisao života samog. Slažem se s navedenom tvrdnjom zato što su ljudi društvena bića, imaju potrebu fizički boraviti u blizini jedni drugih i nema savršene fotografije ili broja lajkova koji mogu zamijeniti ljepotu druženja uživo. Ne slažem se s navedenom tvrdnjom jer mislim da su naši profili na društvenim mrežama naš odraz i komunikacija na njima je još uvijek komunikacija, bez obzira na to što se ne nalazimo fizički jedni kraj drugih.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "Slažem se s navedenom tvrdnjom zato što, iako društvene mreže mogu odražavati stvarni život, one su samo jedan njegov dio, začin, nikako ne smiju postati smisao života samog.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Slažem se s navedenom tvrdnjom zato što su ljudi društvena bića, imaju potrebu fizički boraviti u blizini jedni drugih i nema savršene fotografije ili broja lajkova koji mogu zamijeniti ljepotu druženja uživo.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Ne slažem se s navedenom tvrdnjom jer mislim da su naši profili na društvenim mrežama naš odraz i komunikacija na njima je još uvijek komunikacija, bez obzira na to što se ne nalazimo fizički jedni kraj drugih.", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Croatian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -725,6 +792,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Dio je čovjekove prirode da bude priznat i cijenjen i prirodno je i dio našeg životnog puta da radimo na podizanju te vrijednosti. To se jednostavno naziva samopozdanjem, samopoštovanjem i ljubavi prema sebi. Jednostavno je nemoguće voljeti druge ljude, stvari, pojave i život sam ako čovjek prvo ne voli i ne poštuje sebe. Međutim, ponekad u životu naiđu teške situacije koje nam poljujaju samopuzdanje i vjeru u vlastite izbore i put te su nam u tim situacijama tuđe ohrabrenje i tuđe priznanje glavni izvori iz kojih crpimo snagu i vjeru u sebe. No, to je samo privremena i prirodna pomoć koja nam je svima s vremena na vrijeme potrebna. Problemi nastaju kada osoba trajno ima vrlo nisko sampouzdanje, kada zapravo ne zna tko je, što želi i kamo ide i kada su joj pažnja i priznanje okoline jedini izvori samoprihvaćanja. Osoba je tada kao list na vodi, nema jasan smjer, u potpunosti ovisi o mišljenju drugih ljudi, što u većini slučajeva dovodi do negativnih osjećaja i napetosti, a ponekad i do kobnih posljedica. Svatko je krojač vlastitog životnog puta i potpuno je iscrpljujuće, a u konačnici i pogrešno, živjeti prema tuđim mjerilima i za tuđi pogled.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Croatian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1011,9 +1090,10 @@ export const CARDS: SecCard[] = [
     id: "hrv-2018-hl-i-5", topicId: "croatian-0-1", conceptId: "petome-odlomku-saznajemo-kako-martina-misli",
     section: "I", questionRef: "2018 HL Section I Q5",
     questionText: "U petome odlomku saznajemo kako Martina misli da „sigurnost u sebe proizlazi iz uklanjanja sigurnosti koja dolazi iz imanja novca” te kako „novac sve pokvari”. Što mislite o navedenim tvrdnjama? Slažete li se s njom? Obrazložite svoj odgovor!",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Slažem se s Martininom tvrdnjom jer sigurnost u sebe, samopouzdanje nikako ne bi smjeli biti povezani s količinom novca ili materijanih dobara koje imamo. Temeljni problem kapitalističkog društva je to što u ljudima potiče natjecateljski duh, uspješnima se smatraju samo oni koji su materijalno uspješni, bogatstvo duha je u većini slučajeva u potpunosti zanemarena kategorija. Većina ljudi svoju vrijednost u većini slučajeva određuje u usporedbi s drugim ljudima – tko ima bolji posao, veću plaću, veću kuću, bolji auto, noviji mobilni telefon, atraktivnijeg partnera... To je u potpunosti pogrešan način određivanja vlastite vrijednosti. Svi ljudi su jednako vrijedni, svaki život je jednako vrijedan, svatko je u nečemu dobar. Najvažnije stvari na svijetu nisu materijalne – zdravlje, ljubav, sreće, unutarnje zadovoljstvo, zahvalnost, obitelj, prijatelji – i stoga je uistinu neprimjereno određivati razinu nečijega uspjeha u životu količinom novca koju zarađuje ili brojem materijanih dobara koje posjeduje. Ne slažem se s Martinom jer nam novac u konačnici ipak omogućuje komforan život, a iz komfornoga života rađaju se zadovoljstvo, mir i bezbrižnost.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 1: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "Slažem se s Martininom tvrdnjom jer sigurnost u sebe, samopouzdanje nikako ne bi smjeli biti povezani s količinom novca ili materijanih dobara koje imamo. Temeljni problem kapitalističkog društva je to što u ljudima potiče natjecateljski duh, uspješnima se smatraju samo oni koji su materijalno uspješni, bogatstvo duha je u većini slučajeva u potpunosti zanemarena kategorija. Većina ljudi svoju vrijednost u većini slučajeva određuje u usporedbi s drugim ljudima – tko ima bolji posao, veću plaću, veću kuću, bolji auto, noviji mobilni telefon, atraktivnijeg partnera... To je u potpunosti pogrešan način određivanja vlastite vrijednosti. Svi ljudi su jednako vrijedni, svaki život je jednako vrijedan, svatko je u nečemu dobar. Najvažnije stvari na svijetu nisu materijalne – zdravlje, ljubav, sreće, unutarnje zadovoljstvo, zahvalnost, obitelj, prijatelji – i stoga je uistinu neprimjereno određivati razinu nečijega uspjeha u životu količinom novca koju zarađuje ili brojem materijanih dobara koje posjeduje.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 1: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Ne slažem se s Martinom jer nam novac u konačnici ipak omogućuje komforan život, a iz komfornoga života rađaju se zadovoljstvo, mir i bezbrižnost.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1035,9 +1115,12 @@ export const CARDS: SecCard[] = [
     id: "hrv-2018-hl-i-6", topicId: "croatian-0-1", conceptId: "nakon-ste-pro-itali-tekst-mislite",
     section: "I", questionRef: "2018 HL Section I Q6",
     questionText: "Nakon što ste pročitali tekst, mislite li da biste i sami bili spremni učiniti isto ili nešto nalik onome što je učinila Martina i na takav način ispitati svoje granice i proširiti horizonte? Iscrpno argumentirajte svoj odgovor!",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mogla bih učiniti ono što je učinila Martina jer smatram kako je za osobni rast i razvoj uvijek potrebno pomicati svoje granice. Ovdje smo da učimo, a nema učenja bez izlaženja iz vlastite zone komfora. Ne bih možda učinio ovo što je učinila Martina, ali u svome životu na razne druge načine pokušavam širiti svoje horizonte i neprestano raditi na sebi. U životu je najvažnije dobro poznavati sebe, tek nakon što smo ispitivanjem vastitih granica, otkrivanjem vlastitih mogućnosti, ali i vlastitih ograničenja, dobro upoznali sebe, tek tada možemo ulaziti u kvalitetne i smislene odnose s drugim ljudima. Ne bih mogao učiniti ono što je učinila mlada Zadranka jer previše volim udobnost svoja četiri zida, komfor koji mi pružaju moderna tehnološka dostignuća. Ne bih volio svakodnevno brinuti o tome hoću li i što toga dana jesti. Ne bih se mogla odvažiti na Martininu avanturu jer smatram kako se raditi na sebi može i na mnogo manje drastične načine. Osim toga, svojom bih odlukom vjerojatno jako zabrinula svoje roditelje, a sa svojom sam obitelji jako povezana.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 1: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mogla bih učiniti ono što je učinila Martina jer smatram kako je za osobni rast i razvoj uvijek potrebno pomicati svoje granice. Ovdje smo da učimo, a nema učenja bez izlaženja iz vlastite zone komfora.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 1: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Ne bih možda učinio ovo što je učinila Martina, ali u svome životu na razne druge načine pokušavam širiti svoje horizonte i neprestano raditi na sebi. U životu je najvažnije dobro poznavati sebe, tek nakon što smo ispitivanjem vastitih granica, otkrivanjem vlastitih mogućnosti, ali i vlastitih ograničenja, dobro upoznali sebe, tek tada možemo ulaziti u kvalitetne i smislene odnose s drugim ljudima.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Ne bih mogao učiniti ono što je učinila mlada Zadranka jer previše volim udobnost svoja četiri zida, komfor koji mi pružaju moderna tehnološka dostignuća. Ne bih volio svakodnevno brinuti o tome hoću li i što toga dana jesti.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Ne bih se mogla odvažiti na Martininu avanturu jer smatram kako se raditi na sebi može i na mnogo manje drastične načine. Osim toga, svojom bih odlukom vjerojatno jako zabrinula svoje roditelje, a sa svojom sam obitelji jako povezana.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1111,7 +1194,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2019 Higher Level — © State Examinations Commission.",
     id: "hrv-2019-hl-i-1-a", topicId: "croatian-0-0", conceptId: "kognitivni-spoznajni-nastao-kao-rezultat-saznanja",
     section: "I", questionRef: "2019 HL Section I Q1(a)",
-    questionText: "kognitivni= spoznajni, nastao kao rezultat saznanja, odnosno misaone djelatnosti čovjekove svijesti u poimanju objektivne stvarnosti pomoću vlastitog iskustva, mišljenja i osjećaja štetočinama",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: štetočinama",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "onaj koji nanosi štetu (životinja, kukac, osoba); štetnik", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
@@ -1121,7 +1204,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1134,7 +1218,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2019 Higher Level — © State Examinations Commission.",
     id: "hrv-2019-hl-i-1-b", topicId: "croatian-0-0", conceptId: "kognitivni-spoznajni-nastao-kao-rezultat-saznanja",
     section: "I", questionRef: "2019 HL Section I Q1(b)",
-    questionText: "kognitivni= spoznajni, nastao kao rezultat saznanja, odnosno misaone djelatnosti čovjekove svijesti u poimanju objektivne stvarnosti pomoću vlastitog iskustva, mišljenja i osjećaja ponižavajući",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: ponižavajući",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "onaj koji zlonamjerno umanjuje čije značenj; vrijeđa čiji ugled ili dostojanstvo", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
@@ -1144,7 +1228,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1157,7 +1242,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2019 Higher Level — © State Examinations Commission.",
     id: "hrv-2019-hl-i-1-c", topicId: "croatian-0-0", conceptId: "kognitivni-spoznajni-nastao-kao-rezultat-saznanja",
     section: "I", questionRef: "2019 HL Section I Q1(c)",
-    questionText: "kognitivni= spoznajni, nastao kao rezultat saznanja, odnosno misaone djelatnosti čovjekove svijesti u poimanju objektivne stvarnosti pomoću vlastitog iskustva, mišljenja i osjećaja usredotočuje",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: usredotočuje",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "onaj koji se koncentrira, fokusira, usmjerava na jednu stvar, jedan način", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
@@ -1167,7 +1252,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1180,7 +1266,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2019 Higher Level — © State Examinations Commission.",
     id: "hrv-2019-hl-i-1-d", topicId: "croatian-0-0", conceptId: "kognitivni-spoznajni-nastao-kao-rezultat-saznanja",
     section: "I", questionRef: "2019 HL Section I Q1(d)",
-    questionText: "kognitivni= spoznajni, nastao kao rezultat saznanja, odnosno misaone djelatnosti čovjekove svijesti u poimanju objektivne stvarnosti pomoću vlastitog iskustva, mišljenja i osjećaja učinkovitu tehniku",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: učinkovitu tehniku",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "tehnika koja donosi plod ili rezultat; djelotvorna, efikasna, plodonosna tehnika", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
@@ -1190,7 +1276,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1203,7 +1290,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2019 Higher Level — © State Examinations Commission.",
     id: "hrv-2019-hl-i-1-e", topicId: "croatian-0-0", conceptId: "kognitivni-spoznajni-nastao-kao-rezultat-saznanja",
     section: "I", questionRef: "2019 HL Section I Q1(e)",
-    questionText: "kognitivni= spoznajni, nastao kao rezultat saznanja, odnosno misaone djelatnosti čovjekove svijesti u poimanju objektivne stvarnosti pomoću vlastitog iskustva, mišljenja i osjećaja „prožeta nizom...mogućnosti“",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: „prožeta nizom...mogućnosti“",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "obuzeta, potpuno ispunjena brojnim mogućnostima", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
@@ -1213,7 +1300,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1236,7 +1324,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1259,7 +1348,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1282,7 +1372,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1305,7 +1396,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1319,16 +1411,23 @@ export const CARDS: SecCard[] = [
     id: "hrv-2019-hl-i-6", topicId: "croatian-0-1", conceptId: "tehnologija-ito-promijenila-temeljeno-tekstu-ali",
     section: "I", questionRef: "2019 HL Section I Q6",
     questionText: "„Tehnologija me očito promijenila“. Temeljeno na tekstu, ali i prema vašem mišljenju, opišite načine na koji tehnologija može promijeniti ljudsko biće.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "U zadnjih dvadesetak godina tehnologija je uvelike promijenila način na koji živimo te su danas neke stvari za koje smo prije mislili da pripadaju dalekoj budućnosti postale dio naše svakodnevice. Protok informacija je brz, komunikacija olakšana, olakšano je poslovanje, gotovo sva svjetska baština dostupna je na internetu, samo nekoliko klikova mišem jedina su ulaznica u nepregledne hodnike svjetskih muzeja, nekoliko poteza po zaslonu pametnog telefona dijeli nas od uranjanja u knjižničnom blago najpoznatijih svjetskih knjižnica, a moguće je i virtualno prošetati najpoznatijim svjetskim destinacijama. No, osim brojnih pozitivnih stvari koje nam je donijela tehnologija i njezin nevjerojatan razvoj, postoje i negativni učinci koji su vezani uz način na koji ljudi koriste tehnologiju, odnosno vezani su uz našu preveliku ovisnost o tehnologiji, pametnim telefonima, internetu i slično. Tehnologija mi je omogućila da ostanem u kontaktu s prijateljima i rodbinom u Hrvatskoj, samo jedan klik dijeli me od mogućnosti da snjima podijelim trenutke iz svojega života, da ih čujem i vidim kad god to poželim, a sve to uvelike smanjuje čežnju za domovinom. To je do prije nekoliko godina bilo nemoguće i zahtijevalo je duga iščekivanja pisama ili razglednica. Tehnologija mi je omogućila da se lakše bavim svojim hobijima, saznam sve o stvarima koje me zanimaju, na lakši način dođem do predmeta koje skupljam i povežem se s ljudima iz cijelog svijeta koji dijele iste interese. Moji roditelji primijetili su da imam manje strpljenja nego njihova generacija. Na internetu sam pročitala kako je to možda čak i istina je nam je danas velika količina sadržaja dostupna na zahtjev, tako da pjesme, videozapise, utakmice i slično možemo pogledati kad god poželimo na YouTubeu i drugim video servisima, no zbog te navike da nam je uvijek sve dostupno, korisnici sve više gube strpljenje pa, prema jednom istraživanju, gase videozapis ako njegovo učitavanje traje više od dvije sekunde. Problem je što se ove navike prenose i u stvaran život te su ljudi sve nestrpljiviji čim moraju nešto čekati duže vremena (npr. dostavu, rezervaciju večere i slično). Prije nekoliko godina imao sam problema s utonućem u san; doktor mi je savjetovao da isključim telefon prije odlaska na spavanje budući da plavo svjetlo koje emitira mobilni telefon negativno utječe na prirodni proces spavanja. Poslušao sam liječnikov savjet i otad spavam normalno. Nevjerojatno! Čitala sam kako dopisivanje utječe na komunikaciju u stvarnom životu – tekstualno dopisivanje je za mnoge danas postalo temeljni oblik komunikacije, no ovakav način komunikacije negativno utječe na sposobnost ljudi u prepoznavanju emocija osoba s kojima razgovaraju/dopisuju se. Kako dopisivanjem ne možemo prepoznati neverbalne znakove komunikacije, neki se znanstvenici pribojavaju kako bi to moglo ostaviti negativne posljedice na društveni razvoj mladih. Sviđa mi se činjenica da zahvaljujući internetu mogu biti u toku s događajima iz cijelog svijeta i tako se osjećati kao pravi građanin svijeta.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "U zadnjih dvadesetak godina tehnologija je uvelike promijenila način na koji živimo te su danas neke stvari za koje smo prije mislili da pripadaju dalekoj budućnosti postale dio naše svakodnevice. Protok informacija je brz, komunikacija olakšana, olakšano je poslovanje, gotovo sva svjetska baština dostupna je na internetu, samo nekoliko klikova mišem jedina su ulaznica u nepregledne hodnike svjetskih muzeja, nekoliko poteza po zaslonu pametnog telefona dijeli nas od uranjanja u knjižničnom blago najpoznatijih svjetskih knjižnica, a moguće je i virtualno prošetati najpoznatijim svjetskim destinacijama. No, osim brojnih pozitivnih stvari koje nam je donijela tehnologija i njezin nevjerojatan razvoj, postoje i negativni učinci koji su vezani uz način na koji ljudi koriste tehnologiju, odnosno vezani su uz našu preveliku ovisnost o tehnologiji, pametnim telefonima, internetu i slično.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Tehnologija mi je omogućila da ostanem u kontaktu s prijateljima i rodbinom u Hrvatskoj, samo jedan klik dijeli me od mogućnosti da snjima podijelim trenutke iz svojega života, da ih čujem i vidim kad god to poželim, a sve to uvelike smanjuje čežnju za domovinom. To je do prije nekoliko godina bilo nemoguće i zahtijevalo je duga iščekivanja pisama ili razglednica.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Tehnologija mi je omogućila da se lakše bavim svojim hobijima, saznam sve o stvarima koje me zanimaju, na lakši način dođem do predmeta koje skupljam i povežem se s ljudima iz cijelog svijeta koji dijele iste interese.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Moji roditelji primijetili su da imam manje strpljenja nego njihova generacija. Na internetu sam pročitala kako je to možda čak i istina je nam je danas velika količina sadržaja dostupna na zahtjev, tako da pjesme, videozapise, utakmice i slično možemo pogledati kad god poželimo na YouTubeu i drugim video servisima, no zbog te navike da nam je uvijek sve dostupno, korisnici sve više gube strpljenje pa, prema jednom istraživanju, gase videozapis ako njegovo učitavanje traje više od dvije sekunde. Problem je što se ove navike prenose i u stvaran život te su ljudi sve nestrpljiviji čim moraju nešto čekati duže vremena (npr. dostavu, rezervaciju večere i slično).", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Prije nekoliko godina imao sam problema s utonućem u san; doktor mi je savjetovao da isključim telefon prije odlaska na spavanje budući da plavo svjetlo koje emitira mobilni telefon negativno utječe na prirodni proces spavanja. Poslušao sam liječnikov savjet i otad spavam normalno. Nevjerojatno!", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Čitala sam kako dopisivanje utječe na komunikaciju u stvarnom životu – tekstualno dopisivanje je za mnoge danas postalo temeljni oblik komunikacije, no ovakav način komunikacije negativno utječe na sposobnost ljudi u prepoznavanju emocija osoba s kojima razgovaraju/dopisuju se. Kako dopisivanjem ne možemo prepoznati neverbalne znakove komunikacije, neki se znanstvenici pribojavaju kako bi to moglo ostaviti negativne posljedice na društveni razvoj mladih.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Sviđa mi se činjenica da zahvaljujući internetu mogu biti u toku s događajima iz cijelog svijeta i tako se osjećati kao pravi građanin svijeta.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1489,9 +1588,11 @@ export const CARDS: SecCard[] = [
     id: "hrv-2020-hl-i-6", topicId: "croatian-0-1", conceptId: "estom-odlomku-autor-kako-upravo-odnosu",
     section: "I", questionRef: "2020 HL Section I Q6",
     questionText: "U šestom odlomku autor kaže kako „upravo po odnosu prema sreći razlikujemo dobru umjetnost od loše: tamo gdje se u sreću sumnja, imamo posla s pravom umjetnošću, a tamo gdje se u nju vjeruje, zacijelo je posrijedi kič.“ Slažete li se s ovom autorovom tvrdnjom? Mislite li da je samo umjetnost koja se bavi nesrećom i sumnja u postojanje sreće prava umjetnost? Objasnite svoje mišljenje.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Slažem se s autorovom tvrdnjom – život se ne sastoji samo od sretnih trenutaka, a još je manje savršen, a umjetnost kao imitacija života to mora odražavati. Ne postoji savršena osoba, griješiti je ljudski, ne postoji vječno nasmijana i radosna osoba, pa takvi svakako moraju biti i književni likovi, inače im čitatelji neće vjerovati. Ne slažem se s autorovom tvrdnjom – život je težak, nepravedan i prepun problema, a umjetnička djela u takvim okolnostima mogu biti naš prozor u neki bolji i sretniji svijet i kao takva nas mogu opustiti i uveseliti. Najteže je nasmijati ljude i zato ne bih rekla da umjetnička djela koja slave veselu i pozitivnu stranu života nisu prava umjetnost, upravo suprotno. Slažem se s autorom – samo umjetnička djela nadahnuta nesrećom mogu nam ponuditi pravu utjehu, pročišćenje i dotaknuti najdublje dijelove naše duše, posebice kad je bolno iskustvo koje opisuju vrlo blisko našemu.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "Slažem se s autorovom tvrdnjom – život se ne sastoji samo od sretnih trenutaka, a još je manje savršen, a umjetnost kao imitacija života to mora odražavati. Ne postoji savršena osoba, griješiti je ljudski, ne postoji vječno nasmijana i radosna osoba, pa takvi svakako moraju biti i književni likovi, inače im čitatelji neće vjerovati.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Ne slažem se s autorovom tvrdnjom – život je težak, nepravedan i prepun problema, a umjetnička djela u takvim okolnostima mogu biti naš prozor u neki bolji i sretniji svijet i kao takva nas mogu opustiti i uveseliti. Najteže je nasmijati ljude i zato ne bih rekla da umjetnička djela koja slave veselu i pozitivnu stranu života nisu prava umjetnost, upravo suprotno.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Slažem se s autorom – samo umjetnička djela nadahnuta nesrećom mogu nam ponuditi pravu utjehu, pročišćenje i dotaknuti najdublje dijelove naše duše, posebice kad je bolno iskustvo koje opisuju vrlo blisko našemu.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1590,7 +1691,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2021 Higher Level — © State Examinations Commission.",
     id: "hrv-2021-hl-i-1-a", topicId: "croatian-0-0", conceptId: "tvrtka-zrinjevac-projektira-ure-uje-odr",
     section: "I", questionRef: "2021 HL Section I Q1(a)",
-    questionText: "Tvrtka Zrinjevac projektira, uređuje i održava javne i ostale zelene površine, dječja igrališta, sportske i rekreacijske objekte u Zagrebu. očaravaju",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: očaravaju",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "čine da se tko zadivi, opčini, ushiti, zavede", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
@@ -1600,7 +1701,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2021 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1613,7 +1715,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2021 Higher Level — © State Examinations Commission.",
     id: "hrv-2021-hl-i-1-b", topicId: "croatian-0-0", conceptId: "tvrtka-zrinjevac-projektira-ure-uje-odr",
     section: "I", questionRef: "2021 HL Section I Q1(b)",
-    questionText: "Tvrtka Zrinjevac projektira, uređuje i održava javne i ostale zelene površine, dječja igrališta, sportske i rekreacijske objekte u Zagrebu. provedbe",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: provedbe",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "izvršenje, ostvarenje čega; implementacija", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
@@ -1623,7 +1725,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2021 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1636,7 +1739,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2021 Higher Level — © State Examinations Commission.",
     id: "hrv-2021-hl-i-1-c", topicId: "croatian-0-0", conceptId: "tvrtka-zrinjevac-projektira-ure-uje-odr",
     section: "I", questionRef: "2021 HL Section I Q1(c)",
-    questionText: "Tvrtka Zrinjevac projektira, uređuje i održava javne i ostale zelene površine, dječja igrališta, sportske i rekreacijske objekte u Zagrebu. „da se trebam odužiti“",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: „da se trebam odužiti“",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "uzvratiti kome za kakvo dobro ili za uslugu, vratiti dug", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
@@ -1646,7 +1749,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2021 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1659,7 +1763,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2021 Higher Level — © State Examinations Commission.",
     id: "hrv-2021-hl-i-1-d", topicId: "croatian-0-0", conceptId: "tvrtka-zrinjevac-projektira-ure-uje-odr",
     section: "I", questionRef: "2021 HL Section I Q1(d)",
-    questionText: "Tvrtka Zrinjevac projektira, uređuje i održava javne i ostale zelene površine, dječja igrališta, sportske i rekreacijske objekte u Zagrebu. „da se malo obuzdam“",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: „da se malo obuzdam“",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "zadržati se u granicama poželjnog ili dopuštenog; savladati, zauzdati, ukrotiti se", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
@@ -1669,7 +1773,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2021 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1682,7 +1787,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2021 Higher Level — © State Examinations Commission.",
     id: "hrv-2021-hl-i-1-e", topicId: "croatian-0-0", conceptId: "tvrtka-zrinjevac-projektira-ure-uje-odr",
     section: "I", questionRef: "2021 HL Section I Q1(e)",
-    questionText: "Tvrtka Zrinjevac projektira, uređuje i održava javne i ostale zelene površine, dječja igrališta, sportske i rekreacijske objekte u Zagrebu. „ne sadim...gdje mi se prohtije“",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: „ne sadim...gdje mi se prohtije“",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "gdje mi dođe želja, a nije moguće ili se ne pristoji; gdje nije prilično; tamo gdje mi se ushtjedne", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
@@ -1692,7 +1797,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2021 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1715,7 +1821,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2021 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1738,7 +1845,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2021 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1752,16 +1860,20 @@ export const CARDS: SecCard[] = [
     id: "hrv-2021-hl-i-4", topicId: "croatian-0-1", conceptId: "pitate-sadim-iskreno-zbog-osje-aja",
     section: "I", questionRef: "2021 HL Section I Q4",
     questionText: "„Pitate me zašto sadim... Iskreno - zbog osjećaja duga prema planetu Zemlji, jer besplatno dobivamo kisik. Mi to uzimamo ,zdravo za gotovo’, olako. Osjećam da se trebam odužiti za to što dobivam”. Slažete li se s Vladimirom Dimićem, mislite li da bismo se se majci prirodi trebali odužiti za sve ono što nam pruža? Objasnite zašto se slažete ili ne slažete.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem s mišljenjem Vladimira Dimića i podržavam njegovo djelovanje. Ljudski rod predugo samo iskorištava obilje koje nam priroda pruža i ne živi u skladu s njezinim zakonima. Globalno zatopljenje, klimatske promjene i sve veći broj elementarnih nepogoda pokazuju nam kako je takvo ponašanje neodrživo. Čovjek ne može samo grabiti, mora nešto i pružiti nazad u znak zahvalnosti. Ljudi često misle kako kao pojedinci ne mogu učiniti ništa, kako njihov pojedinačni doprinos ne može ništa značajno promijeniti, ali mislim kako se upravo pojedinačnim djelovanjem može promijeniti trenutni katastrofalni smjer. Sama pokušavam činiti sve što mogu – razdavajam otpad, ne onečišćujem prirodu kad u njoj boravim, sudjelujem u grupnom uklanjanju otpada s prirodnih površina, iz rijeka i s obala mora. Svojim primjerom pokušavam potaknuti i ljude u svojoj okolini da čine isto. Ne slažem se mišljenjem Vladimira Dimića, smatram da zaštita prirode ne bi trebala biti pojedinčeva odgovornost, nego bi vlade i velike korporacije (industrija) trebale osigurati da se otpad ne proizvodi na takav način da šteti prirodi. Svojim malim djelovanjem pojedinac ne može ostvariti neki veći doprinos i nešto značajnije promijeniti. Ne slažem se s mišljenjem Vladimira Dimića – kad bi velik broj pojedinaca djelovao proizvoljno i anarhično poput njega, prirodi bi se prije moglo naškoditi, nego za nju učiniti nešto dobro. Ne podržavam mišljenje Vladimira Dimića – priroda je oduvijek imala fluktuacije od hladnih do vrućih klimatskih razdoblja: trenutno globalno zatopljenje je posve normalno i priroda će se sama vratiti na normu koja joj najbolje odgovara. Osim toga, nemoguće je uništiti svemir, čak i ako Zemlja bude potpuno uništena.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem s mišljenjem Vladimira Dimića i podržavam njegovo djelovanje. Ljudski rod predugo samo iskorištava obilje koje nam priroda pruža i ne živi u skladu s njezinim zakonima. Globalno zatopljenje, klimatske promjene i sve veći broj elementarnih nepogoda pokazuju nam kako je takvo ponašanje neodrživo. Čovjek ne može samo grabiti, mora nešto i pružiti nazad u znak zahvalnosti. Ljudi često misle kako kao pojedinci ne mogu učiniti ništa, kako njihov pojedinačni doprinos ne može ništa značajno promijeniti, ali mislim kako se upravo pojedinačnim djelovanjem može promijeniti trenutni katastrofalni smjer. Sama pokušavam činiti sve što mogu – razdavajam otpad, ne onečišćujem prirodu kad u njoj boravim, sudjelujem u grupnom uklanjanju otpada s prirodnih površina, iz rijeka i s obala mora. Svojim primjerom pokušavam potaknuti i ljude u svojoj okolini da čine isto.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Ne slažem se mišljenjem Vladimira Dimića, smatram da zaštita prirode ne bi trebala biti pojedinčeva odgovornost, nego bi vlade i velike korporacije (industrija) trebale osigurati da se otpad ne proizvodi na takav način da šteti prirodi. Svojim malim djelovanjem pojedinac ne može ostvariti neki veći doprinos i nešto značajnije promijeniti.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Ne slažem se s mišljenjem Vladimira Dimića – kad bi velik broj pojedinaca djelovao proizvoljno i anarhično poput njega, prirodi bi se prije moglo naškoditi, nego za nju učiniti nešto dobro.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Ne podržavam mišljenje Vladimira Dimića – priroda je oduvijek imala fluktuacije od hladnih do vrućih klimatskih razdoblja: trenutno globalno zatopljenje je posve normalno i priroda će se sama vratiti na normu koja joj najbolje odgovara. Osim toga, nemoguće je uništiti svemir, čak i ako Zemlja bude potpuno uništena.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2021 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1775,16 +1887,19 @@ export const CARDS: SecCard[] = [
     id: "hrv-2021-hl-i-5", topicId: "croatian-0-1", conceptId: "vladimir-dimi-drve-sve-ove-godine",
     section: "I", questionRef: "2021 HL Section I Q5",
     questionText: "Vladimir Dimić drveće je sve ove godine sadio ilegalno. Mislite li da njegovi postupci – iako nezakoniti – mogu biti moralno opravdani ako se u vidu ima krajnji cilj? Iscrpno argumentirajte svoj odgovor!",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Slažem se s navedenom tvrdnjom da svaki cilj, ako je dovoljno moralan, opravdava sredstva kojima se do njega dolazi. Etično djelovanje ne znači da čovjek mora biti naivan, nepraktičan ili da očekuje savršeno djelovanje koje može postojati samo u idealnom, ali ne i u stvarnom svijetu. Upravo suprotno, istinski idealist ima istinsku potrebu oživjeti svoj san. Bez toga, bez istinske namjere da ga pretvori u djelo, njegov san ostaje puka želja, čista fantazija. Ne, cilj nikada ne opravdava sredstvo, nego obasjava sredstvo svojim vlastitim svjetlom. Djelovati u svjetlu viših ciljeva u životu znači plemenito djelovati i smatram da su postupci neodvojivi od onoga što se njima nastoji postići. Odgovor na ovo pitanje ovisi o tome koje ciljeve i koja sredstva koristimo da bismo ih postigli. Ako su ciljevi dobri i plemeniti, sredstva koja koristimo da bismo ih postigli su također dobri i plemeniti, onda da, cilj opravdava sredstvo. Međutim, to nije ono na što većina ljudi misli kada koristi ovaj izraz. Većina to koristi kao izgovor da postigne ciljeve putem bilo kojih sredstava, bez obzira koliko bili nemoralni, nezakoniti ili neugodni. Ono što ta tvrdnja danas obično znači je nešto poput: „Nije bitno kako dođeš do toga što želiš. Bitno je da to dobiješ\".", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "Slažem se s navedenom tvrdnjom da svaki cilj, ako je dovoljno moralan, opravdava sredstva kojima se do njega dolazi. Etično djelovanje ne znači da čovjek mora biti naivan, nepraktičan ili da očekuje savršeno djelovanje koje može postojati samo u idealnom, ali ne i u stvarnom svijetu. Upravo suprotno, istinski idealist ima istinsku potrebu oživjeti svoj san. Bez toga, bez istinske namjere da ga pretvori u djelo, njegov san ostaje puka želja, čista fantazija.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Ne, cilj nikada ne opravdava sredstvo, nego obasjava sredstvo svojim vlastitim svjetlom. Djelovati u svjetlu viših ciljeva u životu znači plemenito djelovati i smatram da su postupci neodvojivi od onoga što se njima nastoji postići.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Odgovor na ovo pitanje ovisi o tome koje ciljeve i koja sredstva koristimo da bismo ih postigli. Ako su ciljevi dobri i plemeniti, sredstva koja koristimo da bismo ih postigli su također dobri i plemeniti, onda da, cilj opravdava sredstvo. Međutim, to nije ono na što većina ljudi misli kada koristi ovaj izraz. Većina to koristi kao izgovor da postigne ciljeve putem bilo kojih sredstava, bez obzira koliko bili nemoralni, nezakoniti ili neugodni. Ono što ta tvrdnja danas obično znači je nešto poput: „Nije bitno kako dođeš do toga što želiš. Bitno je da to dobiješ\".", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2021 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1798,16 +1913,19 @@ export const CARDS: SecCard[] = [
     id: "hrv-2021-hl-i-6", topicId: "croatian-0-1", conceptId: "vladimir-dimi-desetom-odlomku-kako-sadnja",
     section: "I", questionRef: "2021 HL Section I Q6",
     questionText: "Vladimir Dimić u desetom odlomku kaže kako sadnja stabala za njega „ima pomalo religiozan karakter“. „Osjećam to kao neku svoju obavezu. Gledajte, ljudi svašta moraju, a ja u životu moram saditi“. Svakoga od nas nešto pokreće u životu, daje mu smisao, svakome je od nas u životu nešto važno. Što je to u vašem životu?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "U životu me pokreće glazba i ne mogu zamisliti nijedan dan bez slušanja ili stvaranja glazbe. Bez svega bih u životu mogao, ali bez glazbe moj život jednostavno ne bi imao smisla. Već sad sam siguran da će mi glazba odrediti život i da ću se njome baviti i profesionalno. U životu me pokreće snažno suosjećanje koje imam prema slabijima, starijima i nesretnijima od sebe. Aktivno pomažem u lokalnim humanitarnim organizacijama i to su trenuci u tjednu i životu u kojima se osjećam istinski živom i ispunjenom. Pomaganje drugima doista daje smisao mojem životu. Želim studirati medicinu i jednog dana postati kirurg i spašavati ljudske živote. Od malih nogu znam što želim biti u životu i sve što u životu radim obojeno je tim ciljem. U potpunosti sam posvećena učenju i stjecanju dobrih ocjena kako bih mogla ostvariti svoj san.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "U životu me pokreće glazba i ne mogu zamisliti nijedan dan bez slušanja ili stvaranja glazbe. Bez svega bih u životu mogao, ali bez glazbe moj život jednostavno ne bi imao smisla. Već sad sam siguran da će mi glazba odrediti život i da ću se njome baviti i profesionalno.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "U životu me pokreće snažno suosjećanje koje imam prema slabijima, starijima i nesretnijima od sebe. Aktivno pomažem u lokalnim humanitarnim organizacijama i to su trenuci u tjednu i životu u kojima se osjećam istinski živom i ispunjenom. Pomaganje drugima doista daje smisao mojem životu.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Želim studirati medicinu i jednog dana postati kirurg i spašavati ljudske živote. Od malih nogu znam što želim biti u životu i sve što u životu radim obojeno je tim ciljem. U potpunosti sam posvećena učenju i stjecanju dobrih ocjena kako bih mogla ostvariti svoj san.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Croatian",
           "pages": [
-                2
+                2,
+                3
           ],
           "attribution": "SEC Croatian 2021 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
@@ -1943,9 +2061,12 @@ export const CARDS: SecCard[] = [
     id: "hrv-2022-hl-i-6", topicId: "croatian-0-1", conceptId: "divan-osje-kad-shvati-pomo-nekom",
     section: "I", questionRef: "2022 HL Section I Q6",
     questionText: "„Divan je osjećaj kad shvatiš da možeš pomoći nekom sitnom stvari koja je nekome puno”, kaže Lada u drugome odlomku. Slažete li se s njom? Imate li možda sličnih primjera iz vlastitog života kada je vaše malo nekome bilo puno? Iscrpno argumentirajte svoj odgovor.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem Ladom, osjećaj kada možeš pomoći nekome nemjerljiv je s bilo kojim drugim osjećajem, a spasiti nekome život na način na koji je to učinila Lada vrijedan je svakog divljenja i njezini i Marijevi osjećaji nakon uspješno izvršene operacije vjerojatno se i ne daju posve opisati riječima. Slažem se s Ladom i roditelji su me oduvijek odgajali u takvom duhu, redovito za božićne praznike slažemo pakete za štićenike domova za napuštenu djecu. Nisu to uvijek velike i skupe stvari, ali su darovane od srca i s namjerom da dio naše lijepe blagdanske obiteljske atmosfere na taj način prenesemo i njima. Slažem se s Ladom, dijeljenjem s drugima uvijek dobiva i onaj koji dijeli. Redovito sudjelujem u humanitarnim akcijama, gotovo uvijek dobacim sitniš i osmijeh prosjacima kraj ulaza u moju lokalnu trgovinu, pomažem starijim osobama s prelaženjem pješačkog prijelaza ili im pomognem s teškim vrećicama. I uvijek nastojim biti ljubazan prema svima, pozdravljati ih i zahvaljivati im, moj osmijeh ili moje hvala, koji ništa ne koštaju, osobama u uslužnim djelatnostima mogu uljepšati dan. Slažem se s Ladom, da je moje malo nekome sve naučila sam nakon što sam s obitelji preselila u Irsku i u Hrvatskoj ostavila baku. Nazovem je svaki vikend i kaže mi da su joj to najljepši trenuci u tjednu, iako se meni ponekad čini da su stvari o kojima pričam njoj dosadne i nezanimljive. Ali moja bakica živi sama, jako joj nedostajemo i sretna je već i kad samo čuje moj glas, moje malo njoj je doista sve.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem Ladom, osjećaj kada možeš pomoći nekome nemjerljiv je s bilo kojim drugim osjećajem, a spasiti nekome život na način na koji je to učinila Lada vrijedan je svakog divljenja i njezini i Marijevi osjećaji nakon uspješno izvršene operacije vjerojatno se i ne daju posve opisati riječima.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Slažem se s Ladom i roditelji su me oduvijek odgajali u takvom duhu, redovito za božićne praznike slažemo pakete za štićenike domova za napuštenu djecu. Nisu to uvijek velike i skupe stvari, ali su darovane od srca i s namjerom da dio naše lijepe blagdanske obiteljske atmosfere na taj način prenesemo i njima.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Slažem se s Ladom, dijeljenjem s drugima uvijek dobiva i onaj koji dijeli. Redovito sudjelujem u humanitarnim akcijama, gotovo uvijek dobacim sitniš i osmijeh prosjacima kraj ulaza u moju lokalnu trgovinu, pomažem starijim osobama s prelaženjem pješačkog prijelaza ili im pomognem s teškim vrećicama. I uvijek nastojim biti ljubazan prema svima, pozdravljati ih i zahvaljivati im, moj osmijeh ili moje hvala, koji ništa ne koštaju, osobama u uslužnim djelatnostima mogu uljepšati dan.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Slažem se s Ladom, da je moje malo nekome sve naučila sam nakon što sam s obitelji preselila u Irsku i u Hrvatskoj ostavila baku. Nazovem je svaki vikend i kaže mi da su joj to najljepši trenuci u tjednu, iako se meni ponekad čini da su stvari o kojima pričam njoj dosadne i nezanimljive. Ali moja bakica živi sama, jako joj nedostajemo i sretna je već i kad samo čuje moj glas, moje malo njoj je doista sve.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2161,9 +2282,11 @@ export const CARDS: SecCard[] = [
     id: "hrv-2023-hl-i-5", topicId: "croatian-0-1", conceptId: "odlomku-voditelj-istra-ivanja-waldinger-svatko",
     section: "I", questionRef: "2023 HL Section I Q5",
     questionText: "U 5. odlomku voditelj istraživanja dr. Waldinger kaže da „svatko treba barem jednu osobu u svojem životu koju smatra svojom sigurnosnom mrežom, nekoga tko bi mu čuvao leđa da je stvarno u nevolji\". Slažete li se s njegovim mišljenjem? Tko je u vašemu životu ta sigurnosna mreža i jeste li vi možda bili u prilici biti nečija? Iscrpno argumentirajte svoj odgovor.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem s tim mišljenjem. Sve je lakše kada čovjek ima „svoje ljude”, s njima podijeljena sreća tada se množi, a nevolja se umanjuje. Za mene su moja sigurnosna mreža bez ikakve sumnje moji roditelji i moj brat i sestra. S njima mogu podijeliti baš sve što me u životu muči ili tišti i iako mi ponekad ne mogu konkretno pomoći, jer neke lekcije u životu čovjek mora proći i naučiti sam, već sama činjenica da su me uvijek spremni saslušati puno mi znači u životu i čini me smirenijim i zadovoljnijim. Slažem se sa zaključkom voditelja harvardskog istraživanja. Ja i moja najbolja prijateljica jedna smo drugoj uho za slušanje, rame za plakanje, sigurnosna mreža i mirna luka. Mogu je nazvati u pola noći i sigurna sam da će mi pomoći svojim savjetom. Sve smo prošle zajedno, i dobro i loše, i upravo to čini naše prijateljstvo neraskidivim i svakim danom sve snažnijim. Ne slažem se u potpunosti s mišljenjem dr. Waldingera. Mislim da bi svaki čovjek prije svega sam sebi trebao biti sigurnosna mreža i snagu za nošenjem s nedaćama života naći prvenstveno u sebi, kao i biti svoj najveći obožavatelj u trenucima uspjeha i sreće. Svaki puta kada uspješno isplivamo iz nekog izazova ili nedaće ili pak održimo obećanje zadano samima sebi, naša vjera u same sebe i vlastite resurse postaje sve čvršća, a mi postajemo u potpunosti samopouzdana osoba, sposobna nositi se sa svime što život nosi sama.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem s tim mišljenjem. Sve je lakše kada čovjek ima „svoje ljude”, s njima podijeljena sreća tada se množi, a nevolja se umanjuje. Za mene su moja sigurnosna mreža bez ikakve sumnje moji roditelji i moj brat i sestra. S njima mogu podijeliti baš sve što me u životu muči ili tišti i iako mi ponekad ne mogu konkretno pomoći, jer neke lekcije u životu čovjek mora proći i naučiti sam, već sama činjenica da su me uvijek spremni saslušati puno mi znači u životu i čini me smirenijim i zadovoljnijim.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Slažem se sa zaključkom voditelja harvardskog istraživanja. Ja i moja najbolja prijateljica jedna smo drugoj uho za slušanje, rame za plakanje, sigurnosna mreža i mirna luka. Mogu je nazvati u pola noći i sigurna sam da će mi pomoći svojim savjetom. Sve smo prošle zajedno, i dobro i loše, i upravo to čini naše prijateljstvo neraskidivim i svakim danom sve snažnijim.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Ne slažem se u potpunosti s mišljenjem dr. Waldingera. Mislim da bi svaki čovjek prije svega sam sebi trebao biti sigurnosna mreža i snagu za nošenjem s nedaćama života naći prvenstveno u sebi, kao i biti svoj najveći obožavatelj u trenucima uspjeha i sreće. Svaki puta kada uspješno isplivamo iz nekog izazova ili nedaće ili pak održimo obećanje zadano samima sebi, naša vjera u same sebe i vlastite resurse postaje sve čvršća, a mi postajemo u potpunosti samopouzdana osoba, sposobna nositi se sa svime što život nosi sama.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2187,7 +2310,7 @@ export const CARDS: SecCard[] = [
     questionText: "U 8. odlomku voditelj harvardskog istraživanja tvrdi kako „nitko nije stalno sretan”. Što dr. Waldinger želi reći ovom tvrdnjom? Obrazložite svoj odgovor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nakon što ste pročitali cijeli tekst i saznali što znanstvena istraživanja kažu o tome što je ključno za sreću, slažete li se s njihovim rezultatima i možete li potvrditi da je tako i u vašemu životu? Ako nije, što je za vas sreća? Iscrpno obrazložite svoj odgovor. U potpunosti se slažem s rezultatima istraživanja. Druženje s mojim prijateljima i sve aktivnosti u kojima s njima sudjelujem ‐ sport, izlasci, koncerti, povjerljivi razgovori – za mene su izvor najveće moguće sreće i zadovoljstva. Ne mogu zamisliti život bez svojih prijatelja i naših druženja. Djelomično se slažem s rezultatima istraživanja, čovjek je društveno biće i za zadovoljstvo i sreću su mu svakako potrebni duboki i smisleni odnosi. Ali ono što mene čini najsretnijim je sviranje moje gitare, moja glazba te duge šetnje u prirodi s mojim psom. Smatram da su povratak prirodi i život u potpunom skladu s njezinim zakonima i ritmovima jedini pravi i trajni izvor sreće i zadovoljstva. Djelomično se slažem s rezultatima istraživanja koja se spominju u tekstu, njegovati odnose s bliskim ljudima i biti aktivan i koristan član zajednice od iznimne je važnosti za pojedinčevu sreću. Pa ipak, mislim da je za sreću i zdravlje u životu ipak najvažniji osjećaj svrhe. Naše zašto pomoći će nam da isplivamo iz najtežih trenutaka, da stavimo stvari u perspektivu kada stvari u životu ne idu onako kako bismo željeli, ojačat će naše samopouzdanje i pružiti nam otpornost i snagu da nastavimo dalje i zadržimo optimističan pogled na budućnost.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The marking scheme reprints a different question here (“6. Nakon što ste pročitali cijeli tekst i saznali što znanstvena istraživanja kažu o tome što je ključno za sreću, slažete li se s njihovim rezultatima i možete li potvrditi da je tako i u vašemu životu? Ako nije, što je za vas sreća? Iscrpno obrazložite svoj odgovor.”) and gives no answer for the question the paper prints.", permittedMarks: [0,1,2,3,4,5], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2595,9 +2718,11 @@ export const CARDS: SecCard[] = [
     id: "hrv-2024-hl-i-5", topicId: "croatian-0-1", conceptId: "prvom-ulomku-lanka-autorica-tvrdi-brza",
     section: "I", questionRef: "2024 HL Section I Q5",
     questionText: "U prvom ulomku članka autorica tvrdi da je brza moda popularan trend jer su pristupačne cijene i proizvodi koji odražavaju najnovije modne trendove iznimno privlačni, osobito mlađim kupcima, dok se utjecaji industrije na okoliš i društvo često zanemaruju. Slažete li se s tom tvrdnjom? Privlače li vas modni trendovi i brza moda? Razmišljate li prilikom kupnje odjeće o okolišu? Iscrpno argumentirajte svoj odgovor.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Slažem se s autoricom da je brza moda popularna zbog pristupačnih cijena i proizvoda koji su u trendu. Točno je da se utjecaj modne industrije na okoliš i društvo u tom slučaju zanemaruju. Iz vlastitog primjera, nažalost, mogu potvrditi da je teško odoljeti novim modernim krpicama i da mi prilikom kupnje posljedice brze mode nisu ni na kraj pameti. U zadnje vrijeme vidimo da ljudi više paze što kupuju u trgovinama hranom, no mislim da se to razmišljanje još nije proširilo na trgovine odjećom i obućom. U potpunosti se slažem s autoricom. Niske cijene i brza promjena modnih trendova glavni su razlog popularnosti brze mode. Većina ljudi, posebno mladih, želi biti u trendu, slični ostalim mladima, i jednostavno kupuju odjeću koja ih čini takvima bez razmišljanja o široj slici. Naravno, tu je i mali broj onih koji se odupiru modnim trendovima, ili su ekološki više osviješteni i zapravo znaju što je u pozadini brze mode. Osobno, nisam osoba koja podilazi modnim trendovima i odjeća mi nije toliko bitna, nosim ono što volim, no istina je i da do sada nisam razmišljao o negativnim stranama brze mode. Donekle se slažem s autoričinom tvrdnjom da je brza moda popularna zbog pristupačnih cijena i proizvoda koji su moderni te da se prilikom kupnje utjecaj modne industrije na okoliš i društvo zanemaruju. Međutim, ne kupuju ljudi jeftine proizvode samo zato što su popularni. U današnje vrijeme, nažalost, puno je ljudi koji si ne mogu priuštiti skuplje kvalitetne proizvode i osuđeni su na kupnju robe niske kvalitete.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "Slažem se s autoricom da je brza moda popularna zbog pristupačnih cijena i proizvoda koji su u trendu. Točno je da se utjecaj modne industrije na okoliš i društvo u tom slučaju zanemaruju. Iz vlastitog primjera, nažalost, mogu potvrditi da je teško odoljeti novim modernim krpicama i da mi prilikom kupnje posljedice brze mode nisu ni na kraj pameti. U zadnje vrijeme vidimo da ljudi više paze što kupuju u trgovinama hranom, no mislim da se to razmišljanje još nije proširilo na trgovine odjećom i obućom.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "U potpunosti se slažem s autoricom. Niske cijene i brza promjena modnih trendova glavni su razlog popularnosti brze mode. Većina ljudi, posebno mladih, želi biti u trendu, slični ostalim mladima, i jednostavno kupuju odjeću koja ih čini takvima bez razmišljanja o široj slici. Naravno, tu je i mali broj onih koji se odupiru modnim trendovima, ili su ekološki više osviješteni i zapravo znaju što je u pozadini brze mode. Osobno, nisam osoba koja podilazi modnim trendovima i odjeća mi nije toliko bitna, nosim ono što volim, no istina je i da do sada nisam razmišljao o negativnim stranama brze mode.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Donekle se slažem s autoričinom tvrdnjom da je brza moda popularna zbog pristupačnih cijena i proizvoda koji su moderni te da se prilikom kupnje utjecaj modne industrije na okoliš i društvo zanemaruju. Međutim, ne kupuju ljudi jeftine proizvode samo zato što su popularni. U današnje vrijeme, nažalost, puno je ljudi koji si ne mogu priuštiti skuplje kvalitetne proizvode i osuđeni su na kupnju robe niske kvalitete.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2885,9 +3010,11 @@ export const CARDS: SecCard[] = [
     id: "hrv-2025-hl-i-5", topicId: "croatian-0-1", conceptId: "tekst-navodi-kako-rituali-obi-aji",
     section: "I", questionRef: "2025 HL Section I Q5",
     questionText: "Tekst navodi kako rituali i običaji igraju važnu ulogu u stvaranju i pojačavanju „osjećaja pripadnosti i zajedništva”. Slažete li se s ovom tvrdnjom? Obrazložite svoj odgovor temeljeći ga na tekstu te vlastitom iskustvu.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem s tom tvrdnjom, božićno vrijeme moje je najdraže doba u godini upravo zbog toga što moja obitelj i ja imamo svoje rituale i običaje u kojima svi sudjelujemo i blagdansko vrijeme gotovo u potpunosti provodimo družeći se jednim s drugima. Svatko ima svoja zaduženja i svi se trudimo obaviti ih što uspješnije kako bismo postigli što ljepšu blagdansku čaroliju. Ja i sestra zadužene smo za božićne kekse i kolače i s pripremom počinjemo već početkom prosinca. Obožavam Božić u svojoj obitelji! Nisam osoba od običaja i tradicije, pokušavam uvijek ići svojim putem i stvari raditi na svoj način, ali sa svojom najboljom prijateljicom njegujem tradiciju prespavljivanja jednom mjesečno kod jedne od nas i jako se veselim tim našim subotama. Isto tako, svako ljeto u Hrvatskoj kod bake i djeda provedem barem mjesec dana na moru i djed me tradicionalno vodi sa sobom u ribe; to su mi najdraži trenuci ljetovanja u kojima se djed i ja povezujemo na zaista poseban način, on me uči mnogim stvarima o životu i vrijeme kao da se zaustavi dok smo nas dvoje sami u čamcu. Slažem se, iako u Irskoj živimo već nekoliko godina, ja i moja obitelj svake godine u vrijeme božićnih i uskrsnih blagdana pokušavamo slijediti lijepe hrvatske božićne običaje i pripremati tradicionalana hrvatska jela. Mojim je roditeljima jako važno da kroz običuje brat i ja njegujemo osjećaj pripadnosti Hrvatskoj i hrvatskoj kulturi.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem s tom tvrdnjom, božićno vrijeme moje je najdraže doba u godini upravo zbog toga što moja obitelj i ja imamo svoje rituale i običaje u kojima svi sudjelujemo i blagdansko vrijeme gotovo u potpunosti provodimo družeći se jednim s drugima. Svatko ima svoja zaduženja i svi se trudimo obaviti ih što uspješnije kako bismo postigli što ljepšu blagdansku čaroliju. Ja i sestra zadužene smo za božićne kekse i kolače i s pripremom počinjemo već početkom prosinca. Obožavam Božić u svojoj obitelji!", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Nisam osoba od običaja i tradicije, pokušavam uvijek ići svojim putem i stvari raditi na svoj način, ali sa svojom najboljom prijateljicom njegujem tradiciju prespavljivanja jednom mjesečno kod jedne od nas i jako se veselim tim našim subotama. Isto tako, svako ljeto u Hrvatskoj kod bake i djeda provedem barem mjesec dana na moru i djed me tradicionalno vodi sa sobom u ribe; to su mi najdraži trenuci ljetovanja u kojima se djed i ja povezujemo na zaista poseban način, on me uči mnogim stvarima o životu i vrijeme kao da se zaustavi dok smo nas dvoje sami u čamcu.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Slažem se, iako u Irskoj živimo već nekoliko godina, ja i moja obitelj svake godine u vrijeme božićnih i uskrsnih blagdana pokušavamo slijediti lijepe hrvatske božićne običaje i pripremati tradicionalana hrvatska jela. Mojim je roditeljima jako važno da kroz običuje brat i ja njegujemo osjećaj pripadnosti Hrvatskoj i hrvatskoj kulturi.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2909,9 +3036,11 @@ export const CARDS: SecCard[] = [
     id: "hrv-2025-hl-i-6", topicId: "croatian-0-1", conceptId: "tekst-koncept-vjerovanja-djeda-njaka-baca",
     section: "I", questionRef: "2025 HL Section I Q6",
     questionText: "Tekst na koncept vjerovanja u Djeda Božićnjaka baca prilično negativno svjetlo. Iznesite svoje mišljenje o tom konceptu, a ono neka se temelji na tekstu te vlastitom iskustvu.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ne slažem se s ovom negativnom slikom, sjećanja na iščekivanje božićnog jutra i trčanje pod božićno drvce kako bih vidio je li mi Djed Božićnjak ispunio sve želje s popisa jedna su od mojih najljepših sjećanja iz djetinjstva. Priča o Djedu Božićnjaku samo je još jedna u nizu priča i bajki u koje smo vjerovali i kojima smo se kao djeca radovali. Sa mnom su roditelji bili otvoreni od najranijeg djetinjstva i znala sam da su oni zaslužni za sve moje trenutke beskrajne sreće kod otvaranja darova, ali mislim da djeci ionako nije važno tko ih daruje dok god su im želje ispunjene, tako da se djelomično slažem s kritičkim mišljenjima iznesenima u ovom članku. Djed Božićnjak, Krampus, Baba Roga, zmajevi i ostala bića kojima su nas plašili u djetinjstvu ako ne budemo dobri doista pripadaju nekim prošlim vremenima u kojima se djecu odgajalo na prilično tvrd način, a razne vrste prijekora i kažnjavanja bile su sastavni dio takvog odgoja. Vremena su se promijenila, otvoreni razgovor, a ne šiba nekog strašnog bića sada su temelj odgoja djece pa je možda vrijeme i da se redefiniraju neki običaji i likovi.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ne slažem se s ovom negativnom slikom, sjećanja na iščekivanje božićnog jutra i trčanje pod božićno drvce kako bih vidio je li mi Djed Božićnjak ispunio sve želje s popisa jedna su od mojih najljepših sjećanja iz djetinjstva. Priča o Djedu Božićnjaku samo je još jedna u nizu priča i bajki u koje smo vjerovali i kojima smo se kao djeca radovali.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Sa mnom su roditelji bili otvoreni od najranijeg djetinjstva i znala sam da su oni zaslužni za sve moje trenutke beskrajne sreće kod otvaranja darova, ali mislim da djeci ionako nije važno tko ih daruje dok god su im želje ispunjene, tako da se djelomično slažem s kritičkim mišljenjima iznesenima u ovom članku.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Djed Božićnjak, Krampus, Baba Roga, zmajevi i ostala bića kojima su nas plašili u djetinjstvu ako ne budemo dobri doista pripadaju nekim prošlim vremenima u kojima se djecu odgajalo na prilično tvrd način, a razne vrste prijekora i kažnjavanja bile su sastavni dio takvog odgoja. Vremena su se promijenila, otvoreni razgovor, a ne šiba nekog strašnog bića sada su temelj odgoja djece pa je možda vrijeme i da se redefiniraju neki običaji i likovi.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3175,9 +3304,11 @@ export const CARDS: SecCard[] = [
     id: "hrv-2026-hl-i-5", topicId: "croatian-0-1", conceptId: "odlomku-volonter-lovro-ako-ete-nekome",
     section: "I", questionRef: "2026 HL Section I Q5",
     questionText: "U 2. odlomku volonter Lovro kaže „Ako možete nekome pomoći, onda se i vi bolje osjećate ako ste odgovorni za dio nečijeg uspjeha.“ Dijelite li njegovo mišljenje? Možete li se prisjetiti neke situacije u kojoj ste imali prilike pomoći nekome u njegovu uspjehu? Iscrpno argumentirajte svoj odgovor.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem s Lovrinom tvrdnjom. Pomaganje drugome najbolji je osjećaj na svijetu, pogotovo ako to dovede do nečijeg uspjeha. Prilično sam dobra u jezicima i oduvijek pomažem svojim razrednim kolegama s gramatikom prije težih ispita. Njihov uspjeh na ispitu i dobre ocjene slavim kao da su moje. Slažem se s Lovrinom tvrdnjom, osjećaj nakon što smo pomogli nekome u nevolji nemjerljiv je i sa čim. S ljepotom pomaganja drugima upoznao sam se kad smo moja obitelj i ja doselili u Irsku i kad nam je bilo teško snaći se u početku, a meni je u školi zbog jezika bilo baš jako teško. Tada su mojim roditeljima puno pomogli susjedi, a u mojoj školi su se stvarno iskazali moji novi razredni prijatelji uz čiju sam se pomoć vrlo brzo integrirao i nadoknadio zaostatke i razlike u gradivu. Na tome ću im zauvijek biti zahvalan i ako uspijem upisati željeni fakultet, to će djelomično biti i njihova zasluga! Poučen tim iskustvom i sam nikad ne propuštam priliku pomoći kome god mogu. Djelomično se slažem s Lovrinim mišljenjem, naravno da je vrijedno i pohvalno pomagati drugima, ali mislim da je krivo ako to činimo samo da bismo se sami osjećali bolje i vrednije.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem s Lovrinom tvrdnjom. Pomaganje drugome najbolji je osjećaj na svijetu, pogotovo ako to dovede do nečijeg uspjeha. Prilično sam dobra u jezicima i oduvijek pomažem svojim razrednim kolegama s gramatikom prije težih ispita. Njihov uspjeh na ispitu i dobre ocjene slavim kao da su moje.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Slažem se s Lovrinom tvrdnjom, osjećaj nakon što smo pomogli nekome u nevolji nemjerljiv je i sa čim. S ljepotom pomaganja drugima upoznao sam se kad smo moja obitelj i ja doselili u Irsku i kad nam je bilo teško snaći se u početku, a meni je u školi zbog jezika bilo baš jako teško. Tada su mojim roditeljima puno pomogli susjedi, a u mojoj školi su se stvarno iskazali moji novi razredni prijatelji uz čiju sam se pomoć vrlo brzo integrirao i nadoknadio zaostatke i razlike u gradivu. Na tome ću im zauvijek biti zahvalan i ako uspijem upisati željeni fakultet, to će djelomično biti i njihova zasluga! Poučen tim iskustvom i sam nikad ne propuštam priliku pomoći kome god mogu.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Djelomično se slažem s Lovrinim mišljenjem, naravno da je vrijedno i pohvalno pomagati drugima, ali mislim da je krivo ako to činimo samo da bismo se sami osjećali bolje i vrednije.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3199,9 +3330,12 @@ export const CARDS: SecCard[] = [
     id: "hrv-2026-hl-i-6", topicId: "croatian-0-1", conceptId: "odlomku-saznajemo-kako-volonterka-dori-svjesna",
     section: "I", questionRef: "2026 HL Section I Q6",
     questionText: "U 8. odlomku saznajemo kako je volonterka Dori svjesna koliko je pozitivna energija bitna pomoć pri savladavanju nepoznatog i teškog. Slažete li se s time? Imate li možda primjera iz vlastitog života u kojemu vam je pozitivan stav pomogao pri savladavanju nečega teškog, novog ili izazovnog? Iscrpno obrazložite svoj odgovor.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem s ovom tvrdnjom. Pozitivan stav i pozitivna energija su ključna, ako ne i najvažnija sastavnica svakog uspjeha, napretka i uspješnog života u cjelini. Imam bezbroj primjera iz vlastitog života, a najviše onih sa sportskih terena. Naime, već godinama treniram nogomet i ne znam ni broja situacijma u kojima su pozitivan stav i vjera u uspjeh mene i mojih suigrača preokrenuli negativan rezultat i odveli nas u pobjedu iako je izgledala nedostižna. Isto tako, pozitivna i opuštena atmosfera na treninzima i u klubu je nužna za napredak, ali i ustrajnost. Treninzi su teški i iscrpljujući, ali zbog pozitivne atmosfere kući se s njih uvijek vraćam radostan i ispunjen i jedva čekam novi trening. Slažem se s ovim uvidom, čovjek ne može utjecati na događaje u vlastitom životu, ali itekako može utjecati na svoj stav prema tim događajima, kao i na svoju reakciju na njih, čak i kada su ti događaji negativni. Mi smo ti koji odlučujemo hoće li nas neko iskustvo u potpunosti paralizirati ili nas natjerati da budemo još bolji, da se potrudimo još više i da u konačnici narastemo kao osobe. Sjećam se kako sam se osjaćala kad su mene i brata roditelji obavijestili o selidbi u Irsku. Danima sam bila paralizirana od tuge, straha i strepnje. Ali onda sam odlučila na cijelo iskustvo gledati kao na nevjerojatnu avanturu i na nešto što će unaprijediti i obogatiti moje životno iskustvo te mi donijeti mnogo toga lijepoga i pozitivnoga. Taj stav zadražala sam do danas i iz sadašnjem perspektive mislim da je naše preseljenje u Irsku nešto najbolje što mi se moglo dogoditi u životu. Slažem se s ovom tvrdnjom, pogotovo u kontekstu u kojemu se govori u ovome tekstu. Energija i atmosfera u školi često su negativni, gradiva je uvijek puno, a vremena malo, testovi su česti, što i učenike i profesore čini jako nervoznima i u takvoj je atmosferi ponekad jako teško usvajati novo gradivo, a pogotovo to činiti s dubokim razumijevanjem. Stoga mi se jako svidjela ova ideja iz teksta da gradivo pojašnjavaju mladi ljudi u prijateljskom i opuštenom okruženju u kojemu oni svaki naš mali napredak i uspjeh smatraju i svojim uspjehom i raduju se zajedno s nama. Ne slažem se s ovom tvrdnjom, samo pozitivan stav i pozitivna energija neće nas daleko dovesti, za uspjeh u životu ključan je samo težak i naporan rad. Nikakva količina pozitivnog stava ne može nas spasiti ako nismo dovoljno učili, trenirali, vježbali ili se pripremili za ono što je pred nas stavljeno.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem s ovom tvrdnjom. Pozitivan stav i pozitivna energija su ključna, ako ne i najvažnija sastavnica svakog uspjeha, napretka i uspješnog života u cjelini. Imam bezbroj primjera iz vlastitog života, a najviše onih sa sportskih terena. Naime, već godinama treniram nogomet i ne znam ni broja situacijma u kojima su pozitivan stav i vjera u uspjeh mene i mojih suigrača preokrenuli negativan rezultat i odveli nas u pobjedu iako je izgledala nedostižna. Isto tako, pozitivna i opuštena atmosfera na treninzima i u klubu je nužna za napredak, ali i ustrajnost. Treninzi su teški i iscrpljujući, ali zbog pozitivne atmosfere kući se s njih uvijek vraćam radostan i ispunjen i jedva čekam novi trening.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Slažem se s ovim uvidom, čovjek ne može utjecati na događaje u vlastitom životu, ali itekako može utjecati na svoj stav prema tim događajima, kao i na svoju reakciju na njih, čak i kada su ti događaji negativni. Mi smo ti koji odlučujemo hoće li nas neko iskustvo u potpunosti paralizirati ili nas natjerati da budemo još bolji, da se potrudimo još više i da u konačnici narastemo kao osobe. Sjećam se kako sam se osjaćala kad su mene i brata roditelji obavijestili o selidbi u Irsku. Danima sam bila paralizirana od tuge, straha i strepnje. Ali onda sam odlučila na cijelo iskustvo gledati kao na nevjerojatnu avanturu i na nešto što će unaprijediti i obogatiti moje životno iskustvo te mi donijeti mnogo toga lijepoga i pozitivnoga. Taj stav zadražala sam do danas i iz sadašnjem perspektive mislim da je naše preseljenje u Irsku nešto najbolje što mi se moglo dogoditi u životu.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Slažem se s ovom tvrdnjom, pogotovo u kontekstu u kojemu se govori u ovome tekstu. Energija i atmosfera u školi često su negativni, gradiva je uvijek puno, a vremena malo, testovi su česti, što i učenike i profesore čini jako nervoznima i u takvoj je atmosferi ponekad jako teško usvajati novo gradivo, a pogotovo to činiti s dubokim razumijevanjem. Stoga mi se jako svidjela ova ideja iz teksta da gradivo pojašnjavaju mladi ljudi u prijateljskom i opuštenom okruženju u kojemu oni svaki naš mali napredak i uspjeh smatraju i svojim uspjehom i raduju se zajedno s nama.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Ne slažem se s ovom tvrdnjom, samo pozitivan stav i pozitivna energija neće nas daleko dovesti, za uspjeh u životu ključan je samo težak i naporan rad. Nikakva količina pozitivnog stava ne može nas spasiti ako nismo dovoljno učili, trenirali, vježbali ili se pripremili za ono što je pred nas stavljeno.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
