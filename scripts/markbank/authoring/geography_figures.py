@@ -33,10 +33,11 @@ def document_for(sitting: GR.Sitting, task: GR.Task, figure: GR.Figure) -> fitz.
         return sitting.papers[task.part].doc
     if figure.document == 'scheme':
         return sitting.scheme.doc
-    fileid = GC.COMPANIONS[sitting.year].get(figure.document)
+    companions = GC.DEFERRED_COMPANIONS if sitting.deferred else GC.COMPANIONS
+    fileid = companions[sitting.year].get(figure.document)
     if not fileid:
         raise AssertionError(f'{figure.name}: {sitting.year} has no {figure.document} companion')
-    return fitz.open(GC.companion_path(sitting.year, fileid))
+    return fitz.open(GC.companion_path(sitting.year, fileid, deferred=sitting.deferred))
 
 
 def render(sitting: GR.Sitting, task: GR.Task, figure: GR.Figure) -> bytes:
@@ -58,6 +59,13 @@ def figures():
         sitting = GR.Sitting.open(year, level)
         for task, figure in crops:
             yield sitting, task, figure
+    for (year, level), review in sorted(GC.REVIEWED_DEFERRED.items()):
+        crops = [(task, figure) for task in review.TASKS
+                 for figure in (task.question_figure, task.figure) if figure is not None]
+        if crops:
+            sitting = GR.Sitting.open(year, level, deferred=True)
+            for task, figure in crops:
+                yield sitting, task, figure
 
 
 def main() -> int:
