@@ -4346,6 +4346,15 @@ ADDED_ASKS = {
          'lines': (4, '\u201dDe sociale medier', 'Rasmussens synspunkt.'),
          'price': r'\(\s*maks\.\s*(\d+)\s*point\s*\)'},
     ],
+    # Estonian 2010 prints its two essay titles as "1)" and "2)", but the text
+    # layer welds title 2 onto title 1's line ("1) Keegi ei ole saar
+    # Mainimatajätmine ei tähenda valetamist", then "2)" alone), so the census
+    # keys only III1. Title 2 is cut from that printed line; it is an
+    # alternative of Part III (40 / 100), whose total the census already holds.
+    ('estonian', 2010, 'hl'): [
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'cut': (4, '1) Keegi ei ole saar', 'saar '), 'alternative': True},
+    ],
 }
 
 
@@ -4353,6 +4362,14 @@ def _added_leaf(subject, year, level, spec):
     """One ADDED_ASKS leaf, its text and price read off the printed paper."""
     import eu_paper
     P = eu_paper.EuPaper(year, level, subject)
+    if 'cut' in spec:
+        # a title the text layer welds onto another printed line: the words after `after`
+        page, opening, after = spec['cut']
+        hits = [l for l in P.lines if l.page == page and l.text.strip().startswith(opening)]
+        if len(hits) != 1 or after not in hits[0].text:
+            raise ValueError(f'{subject} {year}: {len(hits)} lines open {opening!r}')
+        text = re.sub(r'\s+', ' ', hits[0].text.split(after, 1)[1]).strip()
+        return {'key': spec['key'], 'label': spec['label'], 'text': text}, 0
     page, first, last = spec['lines']
     lines = [l for l in P.lines if l.page == page]
     start = next(i for i, l in enumerate(lines) if l.text.strip().startswith(first))
@@ -4379,10 +4396,11 @@ def census_subject(subject):
         paper = next(p for p in result['papers'] if p['year'] == y and p['level'] == l)
         for spec in specs:
             leaf, marks = _added_leaf(s, y, l, spec)
-            at = next(i for i, x in enumerate(paper['leaves']) if x['key'] == spec['before'])
+            at = (next(i for i, x in enumerate(paper['leaves']) if x['key'] == spec['before'])
+                  if spec.get('before') else len(paper['leaves']))
             paper['leaves'].insert(at, leaf)
             paper['leafCount'] += 1
-            paper['marksSum'] += marks
+            paper['marksSum'] += marks          # 0 for an alternative title: its part's total is counted
     gone = [{'year': y, 'level': l, 'evidence': e}
             for (s, y, l), e in sorted(NOT_PUBLISHED.items()) if s == subject]
     if gone:
