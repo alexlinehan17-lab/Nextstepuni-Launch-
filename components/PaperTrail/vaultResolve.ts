@@ -47,6 +47,8 @@ export const hostedAnchorsUrl = (year: number, fileid: string) =>
  * Storage object is live, an entry can be removed without changing callers.
  */
 export const HOSTED_ANSWER_OVERRIDES = new Set([
+  // Independently reviewed 2014 LCVP written and audiovisual questions.
+  'link-modules|2014|LC462CLP000EV.pdf',
   // Newly reviewed Russian 2017 Ordinary sitting.
   'russian|2017|LC099GLP000EV.pdf',
   'russian|2017|LC099GLPA00EV.pdf',

@@ -51,9 +51,56 @@ export function lcvpSourceMap(review, readSource = path => readFileSync(resolve(
   return result;
 }
 
+/** Only the new 2014 sitting is bound here. Existing live June cards stay unchanged. */
+export function lcvp2014SourceMap(review, readSource = path => readFileSync(resolve(root, path))) {
+  if (review?.year !== 2014 || review.level !== 'common' || review.sitting !== 'main'
+      || review.language !== 'ev' || review.manualOriginalLeaves !== 39
+      || review.manualPaperAsks !== 45 || review.manualPricedTasks !== 45
+      || review.tasks?.length !== 45 || !review.visualSweep?.paper || !review.visualSweep?.writtenScheme) {
+    throw new Error('Unreviewed LCVP 2014 main sitting');
+  }
+  const expected = [
+    ['exampapers', 'LC462CLP000EV.pdf', '0ab57a643775584bec9477d433825260b70cfbd9e39b007a56d678cbaf209d37'],
+    ['exampapers', 'LC462CLP016EV.pdf', 'a0e783d3a0b2e1d9d241088edd78223d7346fc4e10866214f0de45cdf5848ff2'],
+    ['markingschemes', 'LC462CLP000EV.pdf', 'eb92d0d5926e3af0053800e7ae1c911a4ee6403a201078e1b85d47fbe60b27f8'],
+  ];
+  if (review.sources?.length !== expected.length) throw new Error('LCVP 2014 source count differs');
+  for (const [kind, file, hash] of expected) {
+    const path = `paper-trail-corpus/${kind}/2014/${file}`;
+    const matches = review.sources.filter(s => s.kind === kind && s.fileid === file);
+    if (matches.length !== 1 || matches[0].year !== 2014 || matches[0].path !== path
+        || matches[0].sha256 !== hash || createHash('sha256').update(readSource(path)).digest('hex') !== hash) {
+      throw new Error(`LCVP 2014 reviewed source differs: ${path}`);
+    }
+  }
+  const result = new Map();
+  for (const task of review.tasks) {
+    if (!/^lcvp-2014-cl-[abc]/.test(task.id) || result.has(task.id)
+        || !/^2014 CL Section [ABC] Q\d/.test(task.questionRef) || /deferred/i.test(task.questionRef)) {
+      throw new Error(`LCVP 2014 reviewed ask differs: ${task.id}`);
+    }
+    result.set(task.id, { year: 2014, sitting: 'main', lang: 'ev',
+      paperFileid: 'LC462CLP000EV.pdf', schemeFileid: 'LC462CLP000EV.pdf',
+      schemeTextPath: 'examiner-reports/lcvp/schemes/2014-cl.md' });
+  }
+  return result;
+}
+
 export function reviewedLcvpSource(cardOrId) {
   const card = typeof cardOrId === 'string' ? undefined : cardOrId;
   const cardId = card?.id ?? cardOrId;
+  if (/^lcvp-2014-cl-/.test(cardId)) {
+    if (card && (card.year !== 2014 || card.level !== 'common' || /deferred/i.test(card.questionRef ?? ''))) {
+      throw new Error(`LCVP 2014 card metadata differs: ${cardId}`);
+    }
+    if (!sourceMaps.has('2014-main')) {
+      const review = JSON.parse(readFileSync(resolve(root, 'scripts/markbank/authoring/lcvp/2014-cl-main-review.json'), 'utf8'));
+      sourceMaps.set('2014-main', lcvp2014SourceMap(review));
+    }
+    const source = sourceMaps.get('2014-main').get(cardId);
+    if (!source) throw new Error(`LCVP 2014 ask lacks reviewed sources: ${cardId}`);
+    return source;
+  }
   if (!/^lcvp-.*-deferred-/.test(cardId)) {
     if (card && /\bdeferred\b/i.test(card.questionRef ?? '')) {
       throw new Error(`Deferred LCVP citation lacks a deferred identity: ${cardId}`);
@@ -81,7 +128,9 @@ export function reviewedLcvpSource(cardOrId) {
 
 /** A missing deferred transcript must never fall back to the June scheme. */
 export function readLcvpDeferredScheme(source, readText = path => readFileSync(resolve(root, path), 'utf8')) {
-  if (source.sitting !== 'deferred' || source.schemeTextPath !== schemePath(source.year)) {
+  const main2014 = source.year === 2014 && source.sitting === 'main'
+    && source.schemeTextPath === 'examiner-reports/lcvp/schemes/2014-cl.md';
+  if (!main2014 && (source.sitting !== 'deferred' || source.schemeTextPath !== schemePath(source.year))) {
     throw new Error('Invalid deferred LCVP scheme transcript identity');
   }
   let text;

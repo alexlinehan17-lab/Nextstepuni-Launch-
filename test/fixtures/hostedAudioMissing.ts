@@ -168,4 +168,6 @@ export const HOSTED_AUDIO_MISSING: readonly string[] = [
   'audio/2023/LC013ZLP017BV.mp3',
   'audio/2024/LC013ZLP017BV.mp3',
   'audio/2025/LC013ZLP017BV.mp3',
+  // SEC archive blocked; audio-hosting lane owns upload (19 Nov 2026, CARD-STANDARD 10g).
+  'video/2014/LC462CLP031EV.mp4',
 ];

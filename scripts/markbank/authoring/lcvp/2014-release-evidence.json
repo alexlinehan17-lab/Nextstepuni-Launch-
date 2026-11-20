@@ -1,0 +1,401 @@
+{
+  "review": "Independent source preflight completed19November2026 before release replay.",
+  "printedLeafLabels": 39,
+  "paperAsks": 45,
+  "requiredSplit": {
+    "id": "lcvp-2014-cl-c4d",
+    "live": false,
+    "before": {
+      "marks": 9,
+      "question": "Explain the term ‘feedback’. In relation to an enterprise activity explain the type of feedback you could expect to receive."
+    },
+    "after": [
+      {
+        "id": "lcvp-2014-cl-c4d",
+        "conceptId": "enterprise-feedback-definition-types",
+        "marks": 3,
+        "question": "Explain the term ‘feedback’.",
+        "rowsFromExisting": [
+          "definition"
+        ],
+        "sourceAnswer": "Feedback is information or advice/given after the completion of a task/activity/which can be positive or negative/of what can be done to improve future performance.",
+        "allocation": "3 @ 1m"
+      },
+      {
+        "proposedId": "lcvp-2014-cl-c4d-2",
+        "marks": 6,
+        "question": "In relation to an enterprise activity explain the type of feedback you could expect to receive.",
+        "rowsFromExisting": [
+          "types"
+        ],
+        "allocation": "3 @ 2m (1 + 1)",
+        "sourceAnswer": "Retain all six existing verbatim types and their continuations from scheme physical page 12."
+      }
+    ],
+    "paperPhysicalPage": 25,
+    "schemePhysicalPage": 12,
+    "schemePrintedPage": 10,
+    "rule": "R7 / CARD-STANDARD §5: separate printed asks with separate marks.",
+    "liveApprovalNeeded": false,
+    "parentConfirmedRuleSettlesThis": true,
+    "implementation": "Six printed parts yield two separately marked asks each; original draft IDs/concept IDs retained on the first ask. 39 original labels,45 asks,210 offered marks."
+  },
+  "sources": [
+    {
+      "year": 2014,
+      "kind": "exampapers",
+      "path": "paper-trail-corpus/exampapers/2014/LC462CLP000EV.pdf",
+      "sha256": "0ab57a643775584bec9477d433825260b70cfbd9e39b007a56d678cbaf209d37",
+      "originalSourceHashRechecked": true,
+      "physicalPagesReadForThisAudit": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "sourceUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP000EV.pdf"
+    },
+    {
+      "year": 2014,
+      "kind": "exampapers",
+      "path": "paper-trail-corpus/exampapers/2014/LC462CLP016EV.pdf",
+      "sha256": "a0e783d3a0b2e1d9d241088edd78223d7346fc4e10866214f0de45cdf5848ff2",
+      "originalSourceHashRechecked": true,
+      "physicalPagesReadForThisAudit": [
+        1,
+        2
+      ],
+      "sourceUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP016EV.pdf"
+    },
+    {
+      "year": 2014,
+      "kind": "markingschemes",
+      "path": "paper-trail-corpus/markingschemes/2014/LC462CLP000EV.pdf",
+      "sha256": "eb92d0d5926e3af0053800e7ae1c911a4ee6403a201078e1b85d47fbe60b27f8",
+      "originalSourceHashRechecked": true,
+      "physicalPagesReadForThisAudit": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceUrl": "https://www.examinations.ie/archive/markingschemes/2014/LC462CLP000EV.pdf"
+    }
+  ],
+  "imagesActuallySeen": [
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-01.png",
+      "sha256": "fa44fd48c0e2ad2d442df5c8dd0473fa8e44e2d6a9180f7eb5b4ec9f7ae2c074"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-02.png",
+      "sha256": "df3376c344ad52ba3b5ea8d6f43523d6f82862ccb4e5f82090582e88f17cbb6d"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-03.png",
+      "sha256": "73e9794af85fa52752120b66993c293ac918580e20e8f8bd4429acd55b555746"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-04.png",
+      "sha256": "3fda51ff52c0892790db416a54a5b1080a95a0591f4782b78b88cf92b999bc53"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-05.png",
+      "sha256": "b3a17df86c8b0aea2db08137a8ac2ac52d329870f5e91b6f0a50bd54a1aec83c"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-06.png",
+      "sha256": "06d23c135641c7ffa42bdf6f34b30ee37c641910c2b89f8b65ef77d392869f65"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-07.png",
+      "sha256": "2f7f1b3f3f113e1eca2c2b38a8426694ab4e42316ccd57bfdcc141f891260d72"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/paper-contact-08.png",
+      "sha256": "b7e12b55034d99ecc0d88cd565354ae5937070091ed613426ad4442895be7aab"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/scheme-contact-01.png",
+      "sha256": "70729bb02dba7b6b09b2bb88a3bdab77bf1cf345eef2622b354ae720c63570da"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/scheme-contact-02.png",
+      "sha256": "ec3f2e4e0d2de52fa2347a6d957fec85c9b6b72d3077e9d2b3939e1c06cc11f7"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/scheme-contact-03.png",
+      "sha256": "c4d1c4abca44a6283607605781e179616eaad12f3800467cdfedeafe0ed0d743"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/scheme-contact-04.png",
+      "sha256": "9357f3f194e257866e61d24b15df74a84f644d1f2e68d7887dc2b880dafa37a6"
+    },
+    {
+      "year": 2014,
+      "path": "tmp/pdfs/lcvp-review/2014-main/case-contact-01.png",
+      "sha256": "70e307cf86b6140f5c5605eed5b645eea26064180ee2e547bef6504c5a0f948b"
+    }
+  ],
+  "offMacEvidence": "https://drive.google.com/file/d/15jPGfElnT0iPh861V9u44QKQti23J4nX/view",
+  "liveCardChanges": 0,
+  "newOnly": true,
+  "limitations": [
+    "Native2014video playback has not been verified; official listing/headers/container prefix were verified.",
+    "Ten display headings still need coordinator adjudication; shared single-model generation/production integration remain pending.",
+    "SEC archive no-answer recheck remains blocked.",
+    "Browser source openings use hash-verified cached PDFs; no hosted availability or signed-in navigation claim."
+  ],
+  "releaseStatus": "Unfinished WIP:45source/application/browser and visual checks passed;10filing decisions and shared model/video/main integration pending.",
+  "displayFilingReview": {
+    "asks": 45,
+    "firstReaderOriginalPagesSeen": 50,
+    "independentSample": 15,
+    "independentAgreements": 5,
+    "thirdReadingPending": [
+      "lcvp-2014-cl-a3",
+      "lcvp-2014-cl-a4",
+      "lcvp-2014-cl-a5",
+      "lcvp-2014-cl-a6",
+      "lcvp-2014-cl-a8",
+      "lcvp-2014-cl-b2i",
+      "lcvp-2014-cl-b2ii",
+      "lcvp-2014-cl-b3i",
+      "lcvp-2014-cl-b3ii",
+      "lcvp-2014-cl-c4d"
+    ],
+    "internalTopicIdsChanged": false,
+    "existing518FilingsOverwritten": false,
+    "decisionEvidence": "REVIEW/2026-11-19-lcvp-release/third-reader-input.json in the shared plans folder",
+    "additionalSplitAsksCompared": 10,
+    "additionalSplitAgreements": 10,
+    "newOnlyCombinedHandoff": "REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+    "canonicalFilingWritten": false
+  },
+  "releaseSnapshot": "https://drive.google.com/file/d/1PHjEcp8s340w5H5clFGdGF_wQb6T98zH/view",
+  "verification": {
+    "recordedAt": "2026-11-19T18:56:13.837635+00:00",
+    "preservedLiveAuthoredCards": 518,
+    "preservedLiveRuntimeCards": 518,
+    "newAsks": 45,
+    "printedLeafLabels": 39,
+    "offeredMarks": 210,
+    "wholeNoAnswerAsks": 9,
+    "partialNoAnswerAsks": 3,
+    "passed": [
+      "Original PDFs reproduce exact45-card reviewed payload",
+      "All518 prior authored/runtime cards unchanged",
+      "All45 source bindings and original Atlas links;17 prior Atlas question identities preserved",
+      "All unrelated subject records/routes and coverage baseline entries unchanged",
+      "Cardlint",
+      "275checks in7focused suites",
+      "3LCVP coverage checks;2014open0/excluded0/orphans0",
+      "3871PaperTrail checks",
+      "Application and scoped sitting-check types",
+      "Source syntax and scopedlint",
+      "All45cached-original source openings",
+      "68phone/desktop light/dark browser cases,0pageerrors and0documentoverflow",
+      "8zero-mark notice interactions add0marks",
+      "24follow-up modal-scroll/settled-state cases;11specified images across6cards visually inspected, no persistent contrast defect"
+    ],
+    "pending": [
+      "Native2014video playback has not been verified; official listing/headers/container prefix were verified.",
+      "Ten display headings still need coordinator adjudication; shared single-model generation/production integration remain pending.",
+      "SEC archive no-answer recheck remains blocked.",
+      "Browser source openings use hash-verified cached PDFs; no hosted availability or signed-in navigation claim."
+    ],
+    "evidenceHashes": {
+      "checks45/complete.json": "4cc069ec7467847c2992c5f942b62c0880dea66ce6f996bd96a3851ea4877f14",
+      "checks45/original-source-proof.json": "f0d91df3459202e5685ef5d29d56e3f036956e7fedf72c10477336bc1d417ae7",
+      "45-runtime-preservation-and-links.json": "a279292bec5bddfc33ed8f54bcf72eaf4ffe1e43611bcf1f5f9bc8d8679d4953",
+      "checks45/baseline-preservation.json": "b1fa1bd324ce488fedbcb1a5c032964f1865f89a37fed38a22df7d87fb54e2e3",
+      "checks45/required-checks.log": "3b1353bb769a9858a340a7e70b5913872fc91246dde14839f0d70a5efde4782d",
+      "checks45/coverage.log": "e46f2717134b701362dac3400d4e2486df51cb06288674132ef3e2e0df954e6f",
+      "checks45/paper-trail.log": "315ec00e625eaddbce9b25562e323f5964dd49ee8c6de13698981a877a7c8bfd",
+      "browser45/results.json": "92e9408fca832c7b13f7e69ed46bb421cf9e0fc3caaca3e76b1d6ed805923d3e",
+      "45-new-ask-filing-handoff.json": "acf404ed5a873c9b7934d8fa8d8b99d7731e2f42da9dab5791647246e0ac24bc",
+      "45-visual-inspection.json": "9939bf6727d64f8a116a56151217d882b074b63c1f15cc4e43d06f3a801c0067"
+    }
+  },
+  "correctionReview": {
+    "reviewedAt": "2026-11-19T18:14:20.361139+00:00",
+    "reader": "root",
+    "independence": "Informed review of the second reader correction proposal, not a new blind filing pass. Earlier first reading remains preserved.",
+    "originalPaperPagesViewed": [
+      14,
+      15,
+      17,
+      18,
+      23,
+      24,
+      26,
+      29,
+      30,
+      31
+    ],
+    "originalSchemePhysicalPagesViewed": [
+      8,
+      9,
+      11,
+      12,
+      13,
+      14
+    ],
+    "decision": "45 asks, 39 printed labels, 210 offered marks, 160 exam marks; five additional splits supported.",
+    "splits": {
+      "C1(c)": [
+        3,
+        6
+      ],
+      "C2(a)": [
+        1,
+        1
+      ],
+      "C2(c)": [
+        3,
+        6
+      ],
+      "C4(c)": [
+        3,
+        3
+      ],
+      "C5(a)": [
+        1,
+        2
+      ]
+    },
+    "wholeNoAnswer": [
+      "C1(a)",
+      "C1(c)-stating",
+      "C1(c)-explaining",
+      "C2(a)-name",
+      "C2(a)-work",
+      "C2(c)-names",
+      "C2(c)-use",
+      "C5(a)-name",
+      "C5(a)-work"
+    ],
+    "partialNoAnswer": [
+      {
+        "ref": "C1(d)",
+        "schemePhysicalPage": 8,
+        "printedOption": "Use the local library/college propectus + valid expansion.",
+        "missing": "The expansion is not printed; keep all seven original options and scope the fixed last no-answer notice to this option. Do not allocate extra marks."
+      },
+      {
+        "ref": "C6(a)",
+        "schemePhysicalPage": 14,
+        "missing": "Seven characteristic names are printed; explanations are not. Keep the whole four-mark ask with all names, the explanation requirement and fixed no-answer notice."
+      },
+      {
+        "ref": "A8",
+        "schemePhysicalPage": 5,
+        "missing": "Option4 requires a valid expansion but prints only career-review criteria; retain six original options and controls, append a scoped zero-mark notice."
+      }
+    ],
+    "requiredPayloadCorrection": "C4(c)-2 must retain the original initial word and: and outline why each resource is needed.",
+    "keptWhole": [
+      "C6(c), descriptions with internal heading/expansion components",
+      "C6(d), paired entrepreneur/manager comparisons"
+    ],
+    "constraints": [
+      "Preserve all 40 prior draft IDs/conceptIds and all 518 live cards unchanged.",
+      "Fresh archive rechecks remain pending with audio coordinator while SEC is blocked.",
+      "Original 40-draft checks do not validate the 45-card correction.",
+      "Ten earlier filing differences remain pending; file new split asks individually."
+    ]
+  },
+  "correctionPayloadSha256": "ab42c365418746321d6df8744fec76d67af05fe01337928ba930f43dfed589d3",
+  "wholeNoAnswerAsks": 9,
+  "partialNoAnswerAsks": 3,
+  "historicalVerification40": {
+    "recordedAt": "2026-11-19T17:07:25.183366+00:00",
+    "preservedLiveCards": 518,
+    "newAsks": 40,
+    "printedLeafLabels": 39,
+    "offeredMarks": 210,
+    "passed": [
+      "Original question, case and scheme hashes and all 50 source pages",
+      "All 518 prior authored and runtime card objects unchanged",
+      "All 40 source bindings and original Atlas links",
+      "Unrelated subject records, source routes and coverage baseline entries unchanged",
+      "Card lint",
+      "Seven focused suites: 274 checks",
+      "LCVP coverage checks: 3 checks",
+      "Paper Trail integrity: 3871 checks",
+      "Application type check",
+      "Repository test type check at its 12 GiB setting",
+      "LCVP source helper syntax and scoped lint"
+    ],
+    "browser": "Pending browser-only retry and manual screenshot inspection",
+    "pending": [
+      "Ten third-reader display filings",
+      "Shared single-model generation and production integration",
+      "Native video hosting and its shared resolver/fixture treatment"
+    ],
+    "logEvidence": {
+      "original-source-proof.json": "5ee479cedf31170103c46a8b64061ae5a4f38deae1ebc6c6b576bc707b938289",
+      "runtime-preservation-and-links.json": "57ee6f0916f92a56c88962309db8de2984ab98c51ff085bfa8da37be91ac99ea",
+      "baseline-preservation.json": "cc3a4f428c83625991cc2a0c9a2f3ea1c730850d5bb406886a16938437375d2f",
+      "required-checks.log": "3fc8f6c29174a36b54cbb7ce9eaf3b5a0a2187889b9d2784975772bc003071a2",
+      "coverage-checks.log": "6c23334a1df8cafe1c0fea267e7d2882d98f376b51742c7c1df52c97910973ae",
+      "paper-trail-integrity.log": "306074d8fdb8477dd6625925cb0227a489498443ba97408c1c727486e5ebe9bd",
+      "application-types.log": "59925f4b026bd55ff54374e4d96c1d662f0018373be22840bf14358894b759f6",
+      "test-types.log": "b49d59b972b11cc7833e72bcc31512d134cb3dbd9b8594bcb4aa852475282d28",
+      "scoped-lint.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source-helper-syntax.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}
