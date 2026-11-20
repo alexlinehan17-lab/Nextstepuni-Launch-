@@ -53492,7 +53492,7 @@
     "rubric": {
       "system": "language-writing",
       "taskRequirements": [],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
@@ -53820,7 +53820,7 @@
       "taskRequirements": [
         "Q.3. Guided writing 40 marks Write a piece of continuous prose in Russian (140 words) in answer to ONE of the following. In your answer make sure to include ALL the points listed. 1. LETTER Write a letter to your Russian teacher telling him/her about a recent trip to Russia. In your letter make reference to the following: Opening (A) • Who you were with (B) • Where you have been (C) • What you have done (D) • Where you have stayed (E) • What you enjoyed most (F) Sign Off (G) OR Write a letter of application for a place on a Russian language course. In your letter of application include: Opening (A) • Basic information about yourself (B) • Your level of Russian (C) • Why you are interested in this course (D) • Where you heard about this course (E) Sign Off (F) 2. NARRATIVE (a) Write about the best day of your school life. OR (b) Write a review of a Russian film. 3. DISCUSSION (a) Discuss the benefits of a healthy lifestyle. OR (b) Discuss being an influencer as a career."
       ],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
@@ -59737,7 +59737,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000BV",
@@ -60354,7 +60354,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000BV",
@@ -60659,7 +60659,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000BV",
@@ -65895,7 +65895,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000BV",
@@ -66481,7 +66481,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000BV",
@@ -66722,7 +66722,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000BV",
@@ -72116,7 +72116,7 @@
           "guidance": []
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000BV",
@@ -72464,7 +72464,7 @@
         "kind": "point",
         "verbatim": "Где",
         "marks": null,
-        "contextNote": "Complete both Group A and Group B. The scheme publishes 20 marks for the whole exercise without per-gap allocations. Review all ten answers here; numeric self-scoring is unavailable for this exercise."
+        "contextNote": "Complete both Group A and Group B. The scheme publishes 20 marks for the whole exercise without per-gap allocations. Assess the complete exercise out of20 using all ten printed answers; do not infer a separate mark for each gap."
       },
       {
         "id": "gap-2",
@@ -72723,7 +72723,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000BV",
@@ -72964,7 +72964,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     },
     "source": "sec",
     "paperFileid": "LC099GLP000BV",
@@ -73783,7 +73783,7 @@
         "kind": "point",
         "verbatim": "20 September",
         "marks": null,
-        "contextNote": "There is no penalty for excess material which does not invalidate the answer. Accept any formulation which communicates the information sought. Accept answers to questions written in the wrong place. The quality of the English will only be an assessment factor insofar as it impedes communication. If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise Choose two distinct details. The scheme publishes 10 marks for this question without a per-detail allocation. Review the accepted answers here; numeric self-scoring is unavailable for this question."
+        "contextNote": "There is no penalty for excess material which does not invalidate the answer. Accept any formulation which communicates the information sought. Accept answers to questions written in the wrong place. The quality of the English will only be an assessment factor insofar as it impedes communication. If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise Choose two distinct details. The scheme publishes 10 marks for this question without a per-detail allocation. Assess the complete response out of10 using the printed answer pool; do not infer a separate mark for each detail."
       },
       {
         "id": "answer-2",
@@ -74116,7 +74116,7 @@
         "kind": "point",
         "verbatim": "International",
         "marks": null,
-        "contextNote": "There is no penalty for excess material which does not invalidate the answer. Accept any formulation which communicates the information sought. Accept answers to questions written in the wrong place. The quality of the English will only be an assessment factor insofar as it impedes communication. If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise Choose two distinct details. The scheme publishes 10 marks for this question without a per-detail allocation. Review the accepted answers here; numeric self-scoring is unavailable for this question."
+        "contextNote": "There is no penalty for excess material which does not invalidate the answer. Accept any formulation which communicates the information sought. Accept answers to questions written in the wrong place. The quality of the English will only be an assessment factor insofar as it impedes communication. If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise Choose two distinct details. The scheme publishes 10 marks for this question without a per-detail allocation. Assess the complete response out of10 using the printed answer pool; do not infer a separate mark for each detail."
       },
       {
         "id": "answer-2",
@@ -74614,7 +74614,7 @@
         "kind": "point",
         "verbatim": "Father is German",
         "marks": null,
-        "contextNote": "There is no penalty for excess material which does not invalidate the answer. Accept any formulation which communicates the information sought. Accept answers to questions written in the wrong place. The quality of the English will only be an assessment factor insofar as it impedes communication. If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise Choose two distinct details. The scheme publishes 10 marks for this question without a per-detail allocation. Review the accepted answers here; numeric self-scoring is unavailable for this question."
+        "contextNote": "There is no penalty for excess material which does not invalidate the answer. Accept any formulation which communicates the information sought. Accept answers to questions written in the wrong place. The quality of the English will only be an assessment factor insofar as it impedes communication. If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise Choose two distinct details. The scheme publishes 10 marks for this question without a per-detail allocation. Assess the complete response out of10 using the printed answer pool; do not infer a separate mark for each detail."
       },
       {
         "id": "answer-2",
