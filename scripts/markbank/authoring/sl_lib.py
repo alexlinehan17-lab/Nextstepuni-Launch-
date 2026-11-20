@@ -937,7 +937,7 @@ def cards(subject, year, specs, level='hl', scheme=True):
         # The reading text travels with Parts I and II, and with an essay title
         # that cites a paragraph of it (source='text'; Romanian 2010 III "(p.6)").
         if getattr(spec, 'source', True) and (essay_part(key[0], two_part) in ('I', 'II')
-                                              or spec.source == 'text'):
+                                              or getattr(spec, 'source', True) == 'text'):
             if getattr(spec, 'pages', None):
                 # The spec's pages, read on the render, where the census attaches
                 # none or the wrong ones (Romanian 2010 has none).

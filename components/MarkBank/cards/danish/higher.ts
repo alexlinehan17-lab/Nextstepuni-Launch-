@@ -33,6 +33,195 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-i-1", topicId: "danish-0-1", conceptId: "forklar-betydningen-ordet-aftensmad-som-det",
+    section: "I", questionRef: "2010 HL Section I Q1",
+    questionText: "Forklar betydningen af ordet ”aftensmad” som det bruges i teksten (1. afsnit) Forklar betydningen af ordet ”høflighed” som det bruges i teksten (2. afsnit) Forklar betydningen af ordet ”videresælge” som det bruges i teksten (5. afsnit) Forklar betydningen af ordet ”omskiftelig” som det bruges i teksten (6. afsnit) Forklar betydningen af ordet ”grundigt” som det bruges i teksten (7. afsnit)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-i-2", topicId: "danish-0-1", conceptId: "beskriv-funktioner-som-facebook-har-lge",
+    section: "I", questionRef: "2010 HL Section I Q2",
+    questionText: "Beskriv de to funktioner, som Facebook har ifølge teksten",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-i-3", topicId: "danish-0-1", conceptId: "hvad-det-der-fra-din-sning",
+    section: "I", questionRef: "2010 HL Section I Q3",
+    questionText: "Hvad er det, der ud fra din læsning af teksten gør Facebook så spændende for så mange mennesker?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-i-4", topicId: "danish-0-1", conceptId: "rede-den-magt-som-facebook-har",
+    section: "I", questionRef: "2010 HL Section I Q4",
+    questionText: "Gør rede for den magt, som Facebook har over folk samt de problemer, denne magt iflg. Anette Høyrup udgør .",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-i-5", topicId: "danish-0-1", conceptId: "facebook-blevet-med-skepsis-bekymring-ikke",
+    section: "I", questionRef: "2010 HL Section I Q5",
+    questionText: "”Facebook er blevet mødt med skepsis og bekymring, ikke mindst for at nære narcissismen og for at dyrke de overfladiske bekendtskaber, illustreret ved, at man på Facebook betegner alle sine kontakter som \"venner\"”. Tag stilling til dette udsagn ud fra teksten som helhed.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-i-6", topicId: "danish-0-1", conceptId: "hvilken-ligner-metaforen-med-naboen-den",
+    section: "I", questionRef: "2010 HL Section I Q6",
+    questionText: "På hvilken måde ligner metaforen med naboen og den fremmede i afsnit 1 og 2 interaktionen på Facebook?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-ii-1", topicId: "danish-1-0", conceptId: "hvad-sker-der-med-mennesker-lever",
+    section: "II", questionRef: "2010 HL Section II Q1",
+    questionText: "\"Hvad sker der med os mennesker, når vi lever en så omskiftelig tilværelse, hvor vi hele tiden kan udskifte vores netværk? Vi når aldrig at forpligte os på noget, men skifter løbende identitet, alt efter hvilket netværk der nu passer bedst til vores ambitioner. Man kan godt frygte, at vi i det lange løb mister en stor del af den værdi, der ligger i de nære og langvarige forhold med alt, hvad de indebærer af godt og ondt.” Giv med dine egne ord din mening til kende i en kommentar til dette synspunkt med cirka 100 ord.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2010 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét (1) af disse to emner: - Gør brugen af internettet os klogere eller dummere? eller - Mennesket er ingen ø",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2011, level: "higher",
     paperFileid: "LC038ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2011 Higher Level — © State Examinations Commission.",
