@@ -1809,6 +1809,178 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2017 Higher Level — © State Examinations Commission.",
+    id: "por-2017-hl-i-1-a", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-alcofa",
+    section: "I", questionRef: "2017 HL Section I Q1(a)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. alcofa (§ 1);",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cesto feito de vime, ou berço para crianças;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2017 Higher Level — © State Examinations Commission.",
+    id: "por-2017-hl-i-1-b", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-trazia-sua",
+    section: "I", questionRef: "2017 HL Section I Q1(b)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. trazia a sua calma (§ 1);",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "aproximava-se sem pressa;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2017 Higher Level — © State Examinations Commission.",
+    id: "por-2017-hl-i-1-c", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-ameigavam",
+    section: "I", questionRef: "2017 HL Section I Q1(c)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. ameigavam (§ 2);",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "acariciavam, cuidavam, tratavam;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2017 Higher Level — © State Examinations Commission.",
+    id: "por-2017-hl-i-1-d", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-desbotada",
+    section: "I", questionRef: "2017 HL Section I Q1(d)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. desbotada (§ 3);",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sem cor, pálido;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2017 Higher Level — © State Examinations Commission.",
+    id: "por-2017-hl-i-1-e", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-moldaram",
+    section: "I", questionRef: "2017 HL Section I Q1(e)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. moldaram (§ 4).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "transformaram a minha vida; ajudaram-me a crescer.", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2017 Higher Level — © State Examinations Commission.",
+    id: "por-2017-hl-ii-1", topicId: "portuguese-2-2", conceptId: "faca-comentario-frase-cerca-100-palavras",
+    section: "II", questionRef: "2017 HL Section II Q1",
+    questionText: "Faça um comentário sobre a frase do texto, em cerca de 100 palavras. “A parte do mundo em que eles não existiam era cruel.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Aquele mundo era cruel porque mais redutor. Hoje adulto, imagina-se quando era jovem num mundo mais limitado e finito, porque só hoje vê nos filhos a continuidade da sua memória.", marks: null, contextNote: "For “(Comentário pessoal, correcto e fluente em cerca de 100 palavras.)”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2017 Higher Level — © State Examinations Commission.",
+    id: "por-2017-hl-iii-1", topicId: "portuguese-2-2", conceptId: "proposta-relembre-objecto-acontecimento-seu-passado",
+    section: "III", questionRef: "2017 HL Section III Q1",
+    stem: "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)",
+    questionText: "Proposta 1 Relembre um objecto ou um acontecimento do seu passado familiar ou entre amigos e mostre como ele foi, ou é ainda hoje, importante na suas vivências como pessoa.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "O aluno deve definir o tema (objecto ou acontecimento a descrever) e elaborar um texto coerente e estruturado, com correcção ortográfica e sintáctica.", marks: null, contextNote: "For “Tema 1”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2017 Higher Level — © State Examinations Commission.",
+    id: "por-2017-hl-iii-2", topicId: "portuguese-2-2", conceptId: "proposta-minha-opiniao-tao-boa-tua",
+    section: "III", questionRef: "2017 HL Section III Q2",
+    stem: "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)",
+    questionText: "Proposta 2 “A minha opinião é tão boa como a tua e todas as opiniões devem ter a mesma importância”. Comente a frase no contexto do mundo moderno e em particular da utilização das redes sociais.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "O mundo moderno sublimou a liberdade de expressão. Os meios de comunicação social democratizaram o acesso à informação; as redes sociais banalizaram a expressão da opinião pessoal. Se podemos aceitar a liberdade de expressão como princípio básico de uma sociedade moderna democrática e promover o acesso à informação através da proliferação dos meios de comunicação social, não podemos contudo aceitar acriticamente a terceira premissa. A banalização do direito à expressão de opinião, sem controlo, sob o anonimato, insuficientemente informado, sem sentido crítico e sem uma formação ou educação adequada, como permitido pelas redes sociais, constitui muitas vezes um ato anti- democrático e violador da liberdade de expressão porque violadora dos direitos do indivíduo. Portanto, a minha opinião não é tão boa como a tua, e as opiniões não têm todas a mesma importância.", marks: null, contextNote: "For “Tema 2”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC018ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
