@@ -2992,6 +2992,723 @@
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
  },
  {
+  "id": "ron-2016-hl-i-1",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "romanian-0-1",
+  "conceptId": "explica-scurt-urm-toarele-cuvinte-expresii",
+  "questionRef": "2016 HL Section I Q1",
+  "questionText": "Explicați pe scurt următoarele cuvinte și expresii scrise îngroșat în text, folosind sinonime sau perifraze și ținând cont de contextul în care apar:\na) oamenii de valoare\nb) pseudo-vedete\nc) trăncăneală\nd) decăderea moravurilor\ne) criza de încredere",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "oamenii capabili să facă lucruri bune, memorabile, pentru ei și pentru societatea în care trăiesc ; oamenii care dovedesc, prin faptele lor, prin modul lor de viețuire, că au un caracter remarcabil și calități care îi impun în fața celorlalți ; persoane care rămân în memoria spirituală a unei societăți/a unei comunități.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "false vedete ; personaje din viața publică ale căror apariții sunt mediatizate excesiv, creând impresia că acestea ar fi importante.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "vorbărie lipsită de conținut ; vorbe goale, care nu transmit un mesaj, prin care oamenii nu comunică nimic important ; vorbe fără rost, rostite degeaba.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "degradarea societății, a obiceiurilor societății; intrarea societății într-o zonă a imoralității sau a lipsei de reguli, de echilibru.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "deziluzie ; manifestarea unei lipse de încredere a oamenilor, unii în ceilalți sau, în general, a oamenilor față de instituțiile sau de reprezentanții societății din care fac parte ; neputința oamenilor de a se mai încrede într-o ordine, într-un sistem.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+  }
+ },
+ {
+  "id": "ron-2016-hl-i-2",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "romanian-0-1",
+  "conceptId": "prezenta-bazandu-text-anume-elege-general",
+  "questionRef": "2016 HL Section I Q2",
+  "questionText": "Prezentați, bazându-vă pe text, ce anume se înțelege în general prin „societate fără valori“.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Potrivit textului, pretutindeni se „semnalează“ lipsa de valori din societate, pretutindeni se ajunge la această constatare. O societate fără valori poate fi, potrivit textului, aceea în care oamenii de valoare nu sunt apreciați și sunt împinși în afara spațiului public, de unde ar fi putut influența societatea în bine, prin intervențiile lor.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Identificarea informaţiilor detaliate din text:”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "O societate fără valori este aceea în care valorile sunt înlocuite de nonvalori. La această situație se ajunge și prin influența dăunătoare a mass-mediei asupra publicului receptor. Îndepărtându-se de carte, de citit, de cultură, oamenii dintr-o societate se îndepărtează, de fapt, de valorile unei societăți sau ale unui popor ; limba unui popor este, de pildă, o astfel de valoare pe care societatea actuală este în pericol de a o pierde.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "O societate fără valori este și aceea în care indivizii nu mai recunosc importanța respectării unor valori umane universale (cinstea, dreptatea etc.). Aceste valori sunt răsturnate, iar în locul lor societatea alege niște comportamente care pot duce la o stare de haos sau de insecuritate a indivizilor.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+  }
+ },
+ {
+  "id": "ron-2016-hl-i-3",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "romanian-0-1",
+  "conceptId": "care-opinia-autorului-acestui-articol-cauza",
+  "questionRef": "2016 HL Section I Q3",
+  "questionText": "Care este, în opinia autorului acestui articol, cauza principală a stării proaste a lucrurilor într-o societate? Sunteți de acord cu opinia autorului? Explicați.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Părerea autorului este că pierderea valorilor într-o societate are drept cauză lipsa de acțiune, de reacție a oamenilor. Astfel, chiar dacă toată lumea pare să se plângă de lipsa valorilor din societatea în care trăiește și să deplângă această stare proastă în care a ajuns societatea, cu toate acestea, nimeni nu contribuie în vreun fel, prin comportamentul individual, la ieșirea din această stare.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Înţelegerea ideilor de fond exprimate în text :”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Starea proastă a lucrurilor vine și din influența dăunătoare a mass-mediei, care nu aduce în fața publicului figuri valoroase; tot legat de mass-media, autorul consideră că marginalizarea cărții, a lecturii, are ca efect pierderea unei valori spirituale – limba -, ceea ce duce la degradarea puterii comunicării între indivizi. Și aceasta este o cauză a proastei stări a lucrurilor într-o societate.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Lipsa respectului pentru celălalt determină degradarea relațiilor interumane și proasta funționare a lucrurilor, a legăturilor într-o societate.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+  }
+ },
+ {
+  "id": "ron-2016-hl-i-4",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "romanian-0-1",
+  "conceptId": "mod-poate-mass-media-televiziune-ziare",
+  "questionRef": "2016 HL Section I Q4",
+  "questionText": "În ce mod poate fi mass-media – televiziune, ziare – responsabilă de lipsa, respectiv de promovarea valorilor într-o societate?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mass-media are un impact deosebit asupra formării gustului pentru cultură al publicului. Mediatizarea redusă a personalităților culturale face ca publicul să piardă contactul cu manifestările din spațiul cultural și să nu aibă o familiaritate față de evenimentele culturale, în general. Acestea, fiind prezentate sporadic, nu ajung să facă parte din cotidianul oamenilor.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Înţelegerea profundă a unor idei din text, exprimate mai putin explicit, demonstrând capacitate de gândire analitică şi extrapolarea cunoştinţelor:”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Mai mult, trecând printr-o fază de nemulțumire, oamenii ajung să se obișnuiască și să se mulțumească cu produsele de subcultură, căci acestea sunt mereu prezente în spațiul mass-mediei.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Emisiunile TV, în mare parte a lor, nu oferă un exemplu de folosire corectă și conștientă, responsabilă a limbii și contribuie, în acest fel, la degradarea limbajului. Presa scrisă, „cea adevărată“, care ar putea aduce un exemplu de folosire adecvată a limbii, le este, din păcate, mai greu accesibilă cititorilor, din cauza costului. Din păcate, ea nu este distribuită gratuit în școli sau în biblioteci.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Bineînțeles, pe lângă influența mass-mediei în formarea unui public receptiv și sensibil la problema valorii și nonvalorii în societate, există și responsabilitatea și capacitatea fiecăruia de a discerne între acestea.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+  }
+ },
+ {
+  "id": "ron-2016-hl-i-5",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "romanian-0-1",
+  "conceptId": "care-sunt-conform-textului-dar-potrivit",
+  "questionRef": "2016 HL Section I Q5",
+  "questionText": "Care sunt, conform textului, dar și potrivit părerii voastre, consecințele lipsei de valori într-o societate?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Putem considera că valorile într-o societate sunt reperele acesteia, cele care îi pot imprima un anumit mod de dezvoltare, o pot alinia în rândul altor societăți dezvoltate. Lipsa valorilor poate însemna, așadar, pentru o societate, pierderea reperelor sale, ceea ce poate duce la o stare haotică, de confuzie și de dezordine generală. Lipsa valorilor face să nu mai existe respectul față de ceilalți, dacă ne gândim la valorile reprezentând calități de caracter ale individului – moralitate, onestitate...",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Demonstrarea unei bune înţelegeri a textului în ansamblu şi capacitatea de a explica puncte de vedere personale:”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Lipsa valorilor duce la impunerea kitsch-ului, a nonvalorii, care vor deveni ele repere în societate.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Lipsa valorilor, ca absență din spațiul public a unor personalități culturale sau demne de luat în seamă în domeniul lor de activitate, face ca spațiul comunicării să fie umplut de vorbărie multă, lipsită de conținut, netransmițând un mesaj, ceea ce duce la o degradare a limbii. Or, limba este păstrătoarea și modul de transmitere a valorilor spirituale ale unei comunități.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+  }
+ },
+ {
+  "id": "ron-2016-hl-i-6",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "romanian-0-1",
+  "conceptId": "cum-poate-manifesta-dup-rerea-voastr",
+  "questionRef": "2016 HL Section I Q6",
+  "questionText": "Cum se poate manifesta, după părerea voastră, „respectul faţă de individul uman “ într-o comunitate?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Respectul față de individul uman este, sau ar trebui să fie, o pornire firească în fiecare din noi, un mod firesc de manifestare a noastră, în relațiile cu ceilalți. Acesta poate consta, pur și simplu, în decența și manifestarea bunului-simț al fiecăruia în întâlnirea celuilalt; sau poate lua forma altruismului, a sacrificiului de sine pentru binele sau pentru salvarea celuilalt, în situații-limită. Această atitudine ar izvorî, în fapt, din conștiința egalității semenilor și a dreptului fiecăruia la existență.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Buna înţelegere a textului şi a implicațiilor fenomenului descris în el:”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Respectul față de celălalt este simțit și din libertatea acestuia, din lipsa lui de ezitare în a se exprima sau a acționa potrivit felului său de a fi. O manifestare a respectului față de celălalt, pe cât de firească și de acceptată în teorie, pe atât de rar întâlnită în viața de zi cu zi, este lipsa judecării celuilalt, în cele mai mici lucruri pe care le face, prin raportarea la propriul mod de a face lucrurile. Privindu-l astfel pe celălalt, cu un ochi critic, amendăm, în fapt, orice îndepărtare a lui de modul nostru de a acționa. În acest fel, permitem ca și noi, la rândul nostru, să fim judecați în funcție de un cod care poate nu ne este specific. Acceptarea și încercarea de înțelegere a celuilalt este un mod de a ne manifesta respectul față de persoana lui.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+  }
+ },
+ {
+  "id": "ron-2016-hl-ii-1",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2016,
+  "section": "II",
+  "topicId": "romanian-1-0",
+  "conceptId": "avand-vedere-cele-exprimate-text-propriile",
+  "questionRef": "2016 HL Section II Q1",
+  "questionText": "Având în vedere cele exprimate în text, ca și propriile convingeri, explicați următoarea idee extrasă din text: „sîntem cu toţii părtaşi la starea naţiunii, la decăderea moravurilor, la tot ce ne îngrijorează“. (aproximativ 100 de cuvinte)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "La părțile a II-a și a III-a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într-un mod clar – 30%;",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Coerența răspunsurilor – candidatul folosește textul într-un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Eficiența limbajului – candidatul demonstrează că stăpânește limba suficient de bine pentru a-și exprima clar și cursiv ideile și opiniile – 30%;",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme prints, as examples, not a checklist: “O comunitate nu poate avea o dezvoltare echilibrată altfel decât prin participarea armonioasă la mersul ei a tuturor celor care fac parte din ea. Individualitatea fiecăruia aduce diversitate într-o societate, dar aceasta, în ansamblul său, trebuie să funcționeze prin concertarea vocilor care o compun. Această nevoie de participare a fiecăruia la viața comunității reprezintă un drept, dar și o responsabilitate a indivizilor. Oricare dintre noi este dator să privească cu un ochi mereu conștient la starea lucrurilor din jurul său și să acționeze, atrăgându-i și pe alții în mișcarea sa, atunci când ceva „nu merge“, când lucrurile par să se îndepărteze de pe un făgaș al normalității, aducându-le nemulțumire sau chiar suferință oamenilor. Cu toții trebuie să fim conștienți că gesturile noastre pot fi preluate de alții, că vorbele noastre pot avea consecințe în comunitatea în care le rostim, că faptele noastre nu se vor răsfrânge niciodată doar asupra noastră.”; “De multe ori, revoltându-ne împotriva vreunei situații de neîndurat, în care ne vedem „victime“, alegem pentru aceasta un responsabil impersonal, nedefinit - „cineva“, „ei“, „toți„ (ceilalți) - , în vreme ce, uitându-ne mai bine, mai responsabil, am înțelege că și noi îngroșăm rândurile acestui „toți“.”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PARTEA A II-A",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+  }
+ },
+ {
+  "id": "ron-2016-hl-iii-1",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "romanian-1-1",
+  "conceptId": "cat-sunt-mai-elaborate-mijloacele-noastre",
+  "questionRef": "2016 HL Section III Q1",
+  "questionText": "Scrieți un eseu pornind de la una dintre cele două teme propuse mai jos (aproximativ 300 de cuvinte): „Cu cât sunt mai elaborate mijloacele noastre de comunicare, cu atât mai puțin comunicăm între noi.“ – Joseph Priestley",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Compunere de aproximativ 300 de cuvinte, la alegere între două subiecte, scrisă cursiv, urmărind organizarea coerentă a ideilor şi conducând la o concluzie clară.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într-un mod clar – 30%;",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Coerența răspunsurilor – candidatul folosește textul într-un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Eficiența limbajului – candidatul demonstrează că stăpânește limba suficient de bine pentru a-și exprima clar și cursiv ideile și opiniile – 30%;",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme prints: “La părțile a II-a și a III-a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "ron-2016-hl-iii-2",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "romanian-1-1",
+  "conceptId": "lumea-poate-loc-destul-urat-dac",
+  "questionRef": "2016 HL Section III Q2",
+  "questionText": "Scrieți un eseu pornind de la una dintre cele două teme propuse mai jos (aproximativ 300 de cuvinte): „Lumea poate fi un loc destul de urât, dacă nu lucrăm laolaltă să o facem mai egalitară, mai democratică și mai durabilă.“ – Fintan O’Toole, în The Irish Times, 22 februarie 2016",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Compunere de aproximativ 300 de cuvinte, la alegere între două subiecte, scrisă cursiv, urmărind organizarea coerentă a ideilor şi conducând la o concluzie clară.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într-un mod clar – 30%;",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Coerența răspunsurilor – candidatul folosește textul într-un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Eficiența limbajului – candidatul demonstrează că stăpânește limba suficient de bine pentru a-și exprima clar și cursiv ideile și opiniile – 30%;",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme prints: “La părțile a II-a și a III-a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "ron-2021-hl-i-1-a",
   "subjectId": "romanian",
   "level": "higher",
