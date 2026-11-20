@@ -105,6 +105,7 @@ const INLINE_ASIDE = /\[[^\]]*\]|\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})*\s*(?:m|marks?)
  * never marks with words. Stripped as an ADDED form, for the reason
  * ORDINAL_TARIFF and INLINE_ASIDE are: it only removes printed characters, so
  * no wording the SEC did not print can pass (coordinator ruling, 19 Nov 2026).
+ * (ADDED FORMS, below: 4.)
  */
 const SPLIT_ONLY = /\(\s*\d+(?:\s*\+\s*\d+)+\s*\)/g;
 
@@ -382,7 +383,7 @@ const LANGUAGE_TARIFF = new RegExp(
   + `punt|pontos|ponto|marks?|p)\\.?\\s*\\)?`, 'gi');
 
 /**
- * ADDED FORMS. Three readings admit scheme text that comparableScheme's own
+ * ADDED FORMS. Four readings admit scheme text that comparableScheme's own
  * filters hide. Each is built from the same raw text through the same pipeline
  * (page markers, footers and cells handled alike) and only ADDS a reading:
  * nothing the plain form offers is removed or rewritten, so a claim that traced
@@ -413,22 +414,56 @@ const LANGUAGE_TARIFF = new RegExp(
  *    prose; the year is appended as an alternative of its own, and no line of
  *    one to three or five or more digits, nor any other century, qualifies.
  *
- * 3. BAND-RANGE LINE -- comparableSchemeWithoutRangeLines (this form's commit).
- *    Admits: the prose on either side of a line that is exactly a band's
- *    printed range with its marks ("10 - 13 marks"), read as one with that
- *    line lifted out.
+ * 3. BAND RANGES LIFTED OUT -- comparableSchemeWithoutRangeLines
+ *    (d9cc8de6a; extended to (b) by its own later commit).
+ *    Admits: the prose a grid's printed band ranges split, read as one with
+ *    the ranges lifted out, in two cases only:
+ *    (a) a line that is exactly a band's range with its marks ("10 - 13
+ *        marks"), lifted whole;
+ *    (b) a line whose END is exactly two range pairs after prose -- a band's
+ *        Full Scale and Lower Scale columns ("... (etc.) 11 – 15 8 – 10"):
+ *        the prose kept, the two pairs dropped, so the bullet joins the line
+ *        that continues it. A single trailing pair is never stripped.
  *    Read by: the marking-grid gate alone, beside the plain and cells forms.
- *    Forced by: the Portuguese 2022 Higher scheme p11 (2022-hl.md lines
+ *    Forced by: (a) the Portuguese 2022 Higher scheme p11 (2022-hl.md lines
  *    252-254; the 2022 Ordinary scheme likewise), which centres each
  *    Communication band's range in a side cell against a bullet that wraps,
  *    so the text layer sets "10 - 13 marks" between "Comprehensible for
- *    Portuguese language native speaker although" and "with a few mistakes".
- *    Only more: only a line that is the range and nothing else is lifted; a
- *    range inside a line of prose is untouched, the plain form still offers
- *    the range itself (a band label "10 - 13" traces there as before), and
- *    rangeLabelFault still holds every band named by a range to that range.
+ *    Portuguese language native speaker although" and "with a few mistakes";
+ *    (b) the Portuguese 2026 Higher scheme p10 lines 251/256/261 and p11
+ *    lines 287/292/297, whose Language bands set both range columns on the
+ *    first line of a wrapped bullet ("Verb endings, tenses, agreements
+ *    (number, gender, etc.) 11 – 15 8 – 10" over "nearly always correct.").
+ *    "After prose" means the character before the two pairs is neither a
+ *    digit nor a space. Across the grid subjects' schemes, exactly two pairs
+ *    after prose end 41 Portuguese lines, 27 Italian ("GRADE A 13 – 15
+ *    21 - 25", 2010-2014 Higher) and 2 Music ("Mark 4 - 9 0 - 3", a column
+ *    head), and no Spanish, German or Polish line; one pair after prose,
+ *    never cut, ends Spanish 34, German 1, Music 1,970, Polish 5, Italian 30
+ *    and Portuguese 8 lines. A lead-in of any non-space character was
+ *    refused: on Music's 170 lines of four pairs ("16 – 21 10 – 15 4 - 9
+ *    0 - 3") and German's 6 "Lower Ex." lines it would cut the last two pairs.
+ *    Only more: only range cells are lifted -- a whole range-only line, or
+ *    exactly two pairs at a line's end; a range inside a line of prose is
+ *    untouched, the plain form still offers every range (a band label
+ *    "10 - 13" traces there as before), and rangeLabelFault still holds every
+ *    band named by a range to that range.
  *
- * RULE FOR THE NEXT LANE: before adding a fourth form, record a lead or
+ * 4. SPLIT ONLY -- SPLIT_ONLY, inside comparableScheme,
+ *    /\(\s*\d+(?:\s*\+\s*\d+)+\s*\)/ (classics lane 092a58b26, landed via
+ *    #391, 2d06c7459; coordinator ruling, 19 Nov 2026).
+ *    Admits: the scheme text with a printed split such as "(3+2)" lifted out
+ *    where it sits inside a wrapped answer, so the answer reads as one.
+ *    Read by: comparableScheme, so every provenance path.
+ *    Forced by: Italian 2020 Higher LB1/LB3 Q1: the older Italian schemes print
+ *    an ask's split at the end of an answer's first line ("to be tourist
+ *    (2+2+1)" over "guides/ to do tours (2m)").
+ *    Proof (at its commit): 132,380 claims re-checked, exactly two flips, both
+ *    Italian 2020 Higher.
+ *    Only more: it is appended as an alternative reading
+ *    (joined.replace(SPLIT_ONLY, ' ')); the plain reading is unchanged.
+ *
+ * RULE FOR THE NEXT LANE: before adding a fifth form, record a lead or
  * coordinator ruling for it, and prove at its commit that every authored deck
  * rebuilds byte-identical; any card that appears or drops is named, and the
  * work stops until that is ruled on too.
@@ -441,9 +476,16 @@ export const comparableSchemeWithCells = (raw) =>
 /** A line that is exactly a band's printed range with its marks, "10 - 13 marks". */
 const BAND_RANGE_LINE = /^\s*\d{1,2}\s*[-–]\s*\d{1,2}\s*marks?\s*$/i;
 
-/** The scheme with each band-range line lifted out (ADDED FORMS, above: 3). */
+/** Exactly two range pairs ending a line after prose (the character before
+ *  them neither a digit nor a space): a band's Full Scale and Lower Scale
+ *  columns ("... (etc.) 11 – 15 8 – 10"). One pair, or three or more, never match. */
+const TWO_RANGE_COLUMNS = /([^\d\s])\s+\d{1,2}\s*[–-]\s*\d{1,2}\s+\d{1,2}\s*[–-]\s*\d{1,2}\s*$/;
+
+/** The scheme with its band ranges lifted out (ADDED FORMS, above: 3): each
+ *  range-only line dropped, and two trailing range columns cut off a line. */
 export const comparableSchemeWithoutRangeLines = (raw) =>
-  comparableScheme(String(raw).split('\n').filter((l) => !BAND_RANGE_LINE.test(l.trim())).join('\n'));
+  comparableScheme(String(raw).split('\n').filter((l) => !BAND_RANGE_LINE.test(l.trim()))
+    .map((l) => l.replace(TWO_RANGE_COLUMNS, '$1')).join('\n'));
 
 /**
  * A band the scheme names by nothing but its printed range ("10 - 13", "4"):
