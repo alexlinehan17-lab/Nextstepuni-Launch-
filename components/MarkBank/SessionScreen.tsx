@@ -121,7 +121,7 @@ import TranslationPanel from './TranslationPanel';
 import { translationMarks, translationPlacementComplete, type TranslationScoreId } from './translationScoring';
 import { listeningExerciseKey, listeningScoredAlone, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
-import { stemWithListBreaks, stemWithPrintedBreaks } from './stemText';
+import { stemKeepsPrintedBreaks, stemWithListBreaks, stemWithPrintedBreaks } from './stemText';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -3208,10 +3208,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             )}
 
             {assessmentCard.stem && !printedQuestionReplacesText && (
-              /* A printed bullet list keeps one item to a line; a History stem
-                 keeps the paper's own paragraph breaks. See stemText. */
+              /* A printed bullet list keeps one item to a line; a History or
+                 Music stem keeps the paper's own line breaks. See stemText. */
               <p style={{ margin: '10px 0 0', font: `400 14.5px/1.6 ${SANS}`, color: INK_2, whiteSpace: 'pre-line' }}>
-                {assessmentCard.subjectId === 'history'
+                {stemKeepsPrintedBreaks(assessmentCard.subjectId)
                   ? stemWithPrintedBreaks(assessmentCard.stem)
                   : stemWithListBreaks(assessmentCard.stem)}
               </p>
