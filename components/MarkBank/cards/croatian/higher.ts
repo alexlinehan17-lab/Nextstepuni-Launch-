@@ -291,6 +291,84 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2015 Higher Level — © State Examinations Commission.",
+    id: "hrv-2015-hl-i-1", topicId: "croatian-0-0", conceptId: "objasnite-svojima-rije-ima-sljede-pojmove",
+    section: "I", questionRef: "2015 HL Section I Q1",
+    questionText: "Objasnite svojima riječima sljedeće pojmove:\na) kompleksnih (2)\nb) pohranjen (3)\nc) dvolične (10)\nd) „Jedinice nam ne ginu“ (5)\ne) „pravednički zanos“ (5)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sastavljenih od više dijelova, složenih, zamršenih.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Onaj koji je sačuvan, spremljen.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Onaj koji je neiskren, himben, licemjeran. Onaj koji ima dva lica.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Sigurno ćemo dobiti jedinicu, najlošiju ocjenu. Jedinice nas ne mogu mimoići, ne mogu nam izmaknuti.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Ushićenje, uzbuđenje zbog nečega što nam se čini pravednim ili nečega čime ćemo što učiniti pravednim.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2015 Higher Level — © State Examinations Commission.",
+    id: "hrv-2015-hl-ii-1", topicId: "croatian-1-0", conceptId: "prvi-trenuci-nepravde-ini-ostaje-nama",
+    section: "II", questionRef: "2015 HL Section II Q1",
+    questionText: "„Prvi trenuci nepravde nešto su što, čini mi se, ostaje s nama dugo.“ Komentirajte, vlastitim triječima, ovu rečenicu. (minimalno 100 riječi).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pravda opisuje idealno stanje međudruštvenih djelovanja. Biti pravedan je cjeloživotni napor da se u svemu što netko radi postupa ispravno i nepristrano i time je to jedna od osobina koju je najteže postići, ali i osobina čije kršenje pojedinci najdublje i najrazornije osjećaju. To je vidljivo još u najranijoj dobi, u vrtiću, školi, na školskome igralištu. Trenuci nepravde u mladim životima vjerojatno su prvi ubodi odrasloga života u nevinost i iskrenost dječjeg postojanja. Zbog toga ih se, iako su sami događaji koji su izazvali osjećaj nepravde iz odrasle perspektive vjerojatno potpuno nebitni i zanemarivi, sjećamo čitav život i na nas obično ostavljaju dubok dojam, ponekad i duboke ožiljke koje nosimo dobar dio života.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme heads it “Na primjer”. The paper prints the task with “vlastitim triječima”, a misprint; the scheme reprints it as “vlastitim riječima”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2015 Higher Level — © State Examinations Commission.",
+    id: "hrv-2015-hl-iii-1", topicId: "croatian-1-1", conceptId: "nastaju-oni-aju",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    questionText: "Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema: „Vođe ne nastaju, oni se rađaju.”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" Under Part III the scheme reprints only the instruction and the two titles, with no answer, criteria or notes: “Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2015 Higher Level — © State Examinations Commission.",
+    id: "hrv-2015-hl-iii-2", topicId: "croatian-1-1", conceptId: "najbogatiji-onaj-koji-zadovoljan-malim-stvarima",
+    section: "III", questionRef: "2015 HL Section III Q2",
+    questionText: "Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema: „Najbogatiji je onaj koji je zadovoljan i s malim stvarima. ” (Sokrat)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" Under Part III the scheme reprints only the instruction and the two titles, with no answer, criteria or notes: “Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "higher",
     paperFileid: "LC567ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2016 Higher Level — © State Examinations Commission.",
