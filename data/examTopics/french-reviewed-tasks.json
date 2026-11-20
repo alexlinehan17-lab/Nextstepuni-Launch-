@@ -44258,5 +44258,3559 @@
       6
     ],
     "label": "Listening Section V · Q3"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-writing-b1a",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B1A",
+    "parent": "B1A",
+    "topicIds": [
+      "french-higher-opinion-education"
+    ],
+    "topicId": "french-7-1",
+    "pages": [
+      4,
+      5,
+      8
+    ],
+    "label": "Section B · Q1(a)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-writing-b1b",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B1B",
+    "parent": "B1B",
+    "topicIds": [
+      "french-higher-written-production-recit"
+    ],
+    "topicId": "french-6-7",
+    "pages": [
+      4,
+      5,
+      8
+    ],
+    "label": "Section B · Q1(b)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-writing-b1c",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B1C",
+    "parent": "B1C",
+    "topicIds": [
+      "french-higher-opinion-youth-teenagers-and-families"
+    ],
+    "topicId": "french-7-7",
+    "pages": [
+      6,
+      7,
+      8
+    ],
+    "label": "Section B · Q1(c)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-writing-b2",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B2",
+    "parent": "B2",
+    "topicIds": [
+      "french-higher-write-a-diary"
+    ],
+    "topicId": "french-6-0",
+    "pages": [
+      11
+    ],
+    "label": "Section B · Q2"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-writing-b3",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B3",
+    "parent": "B3",
+    "topicIds": [
+      "french-higher-write-an-email"
+    ],
+    "topicId": "french-6-3",
+    "pages": [
+      11
+    ],
+    "label": "Section B · Q3"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-writing-b4",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B4",
+    "parent": "B4",
+    "topicIds": [
+      "french-higher-opinion-technology-and-media"
+    ],
+    "topicId": "french-7-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q4"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-writing-b5",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B5",
+    "parent": "B5",
+    "topicIds": [
+      "french-higher-opinion-animals-nature-and-the-environment"
+    ],
+    "topicId": "french-7-0",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q5"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-writing-b6",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B6",
+    "parent": "B6",
+    "topicIds": [
+      "french-higher-opinion-sport"
+    ],
+    "topicId": "french-7-5",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q6"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-writing-b1b-field-1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1B-field-1",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      13
+    ],
+    "label": "Section B · Q1(b) · field 1"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-writing-b1b-field-2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1B-field-2",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      13
+    ],
+    "label": "Section B · Q1(b) · field 2"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-writing-b1b-field-3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1B-field-3",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      13
+    ],
+    "label": "Section B · Q1(b) · field 3"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-writing-b1b-field-4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1B-field-4",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      13
+    ],
+    "label": "Section B · Q1(b) · field 4"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-writing-b1b-field-5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1B-field-5",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      13
+    ],
+    "label": "Section B · Q1(b) · field 5"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-writing-b1b-route-6789",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1B-route-6789",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      13
+    ],
+    "label": "Section B · Q1(b) · points 6, 7, 8, 9"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-writing-b2a",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B2A",
+    "parent": "B2A",
+    "topicIds": [
+      "french-ordinary-write-a-message"
+    ],
+    "topicId": "french-6-2",
+    "pages": [
+      14
+    ],
+    "label": "Section B · Q2(a)"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-writing-b2b",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B2B",
+    "parent": "B2B",
+    "topicIds": [
+      "french-ordinary-write-a-postcard"
+    ],
+    "topicId": "french-6-4",
+    "pages": [
+      14
+    ],
+    "label": "Section B · Q2(b)"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-writing-b3a",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B3A",
+    "parent": "B3A",
+    "topicIds": [
+      "french-ordinary-write-a-diary"
+    ],
+    "topicId": "french-6-0",
+    "pages": [
+      16
+    ],
+    "label": "Section B · Q3(a)"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-writing-b3b",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B3B",
+    "parent": "B3B",
+    "topicIds": [
+      "french-ordinary-write-a-letter"
+    ],
+    "topicId": "french-6-1",
+    "pages": [
+      16
+    ],
+    "label": "Section B · Q3(b)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-writing-b1a",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B1A",
+    "parent": "B1A",
+    "topicIds": [
+      "french-higher-opinion-ireland-travel-tourism-and-culture"
+    ],
+    "topicId": "french-7-3",
+    "pages": [
+      4,
+      5,
+      8
+    ],
+    "label": "Section B · Q1(a)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-writing-b1b",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B1B",
+    "parent": "B1B",
+    "topicIds": [
+      "french-higher-written-production-recit"
+    ],
+    "topicId": "french-6-7",
+    "pages": [
+      6,
+      7,
+      8
+    ],
+    "label": "Section B · Q1(b)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-writing-b1c",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B1C",
+    "parent": "B1C",
+    "topicIds": [
+      "french-higher-opinion-youth-teenagers-and-families"
+    ],
+    "topicId": "french-7-7",
+    "pages": [
+      6,
+      7,
+      8
+    ],
+    "label": "Section B · Q1(c)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-writing-b2",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B2",
+    "parent": "B2",
+    "topicIds": [
+      "french-higher-write-a-diary"
+    ],
+    "topicId": "french-6-0",
+    "pages": [
+      11
+    ],
+    "label": "Section B · Q2"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-writing-b3",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B3",
+    "parent": "B3",
+    "topicIds": [
+      "french-higher-write-an-email"
+    ],
+    "topicId": "french-6-3",
+    "pages": [
+      11
+    ],
+    "label": "Section B · Q3"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-writing-b4",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B4",
+    "parent": "B4",
+    "topicIds": [
+      "french-higher-opinion-technology-and-media"
+    ],
+    "topicId": "french-7-6",
+    "pages": [
+      11
+    ],
+    "label": "Section B · Q4"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-writing-b5",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B5",
+    "parent": "B5",
+    "topicIds": [
+      "french-higher-opinion-politics-social-issues-and-equality"
+    ],
+    "topicId": "french-7-4",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q5"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-writing-b6",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "B6",
+    "parent": "B6",
+    "topicIds": [
+      "french-higher-opinion-health",
+      "french-higher-opinion-politics-social-issues-and-equality",
+      "french-higher-opinion-youth-teenagers-and-families"
+    ],
+    "topicId": "french-7-2",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q6"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-writing-b1b-field-1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1B-field-1",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      13
+    ],
+    "label": "Section B · Q1(b) · field 1"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-writing-b1b-field-2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1B-field-2",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      13
+    ],
+    "label": "Section B · Q1(b) · field 2"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-writing-b1b-field-3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1B-field-3",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      13
+    ],
+    "label": "Section B · Q1(b) · field 3"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-writing-b1b-field-4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1B-field-4",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      13
+    ],
+    "label": "Section B · Q1(b) · field 4"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-writing-b1b-field-5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1B-field-5",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      13
+    ],
+    "label": "Section B · Q1(b) · field 5"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-writing-b1b-route-6789",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1B-route-6789",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      13
+    ],
+    "label": "Section B · Q1(b) · points 6, 7, 8, 9"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-writing-b2a",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B2A",
+    "parent": "B2A",
+    "topicIds": [
+      "french-ordinary-write-a-message"
+    ],
+    "topicId": "french-6-2",
+    "pages": [
+      14
+    ],
+    "label": "Section B · Q2(a)"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-writing-b2b",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B2B",
+    "parent": "B2B",
+    "topicIds": [
+      "french-ordinary-write-a-postcard"
+    ],
+    "topicId": "french-6-4",
+    "pages": [
+      14
+    ],
+    "label": "Section B · Q2(b)"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-writing-b3a",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B3A",
+    "parent": "B3A",
+    "topicIds": [
+      "french-ordinary-write-a-diary"
+    ],
+    "topicId": "french-6-0",
+    "pages": [
+      16
+    ],
+    "label": "Section B · Q3(a)"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-writing-b3b",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B3B",
+    "parent": "B3B",
+    "topicIds": [
+      "french-ordinary-write-a-letter"
+    ],
+    "topicId": "french-6-1",
+    "pages": [
+      16
+    ],
+    "label": "Section B · Q3(b)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a1-q1-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q1-a",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q1(a)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a1-q1-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q1-b",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q1(b)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a1-q2-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q2-a",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q2(a)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a1-q2-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q2-b",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q2(b)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a1-q3-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q3-a",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q3(a)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a1-q3-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q3-b",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q3(b)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a1-q4-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q4-a",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q4(a)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a1-q4-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q4-b",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q4(b)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a1-q5-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q5-a",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q5(a)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a1-q5-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q5-b",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q5(b)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a1-q6",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q6",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q6"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a2-q1-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q1-a",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q1(a)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a2-q1-b-ordre",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q1-b-ordre",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q1(b) · L'ordre"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a2-q1-b-desordre",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q1-b-desordre",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q1(b) · Le désordre"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a2-q2-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q2-a",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q2(a)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a2-q2-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q2-b",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q2(b)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a2-q3-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q3-a",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q3(a)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a2-q3-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q3-b",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q3(b)"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a2-q4",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q4",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q4"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a2-q5",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q5",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q5"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a2-q6",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q6",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q6"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a1-q1",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q1",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q1"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a1-q2",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q2",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q2"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a1-q3",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q3",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q3"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a1-q4",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q4",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q4"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a1-q5",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q5",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q5"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a1-q6",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q6",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q6"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a1-q7",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q7",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q7"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a1-q8",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q8",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q8"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a2-q1-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q1-a",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q1(a)"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a2-q1-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q1-b",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q1(b)"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a2-q1-c",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q1-c",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q1(c)"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a2-q1-d",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q1-d",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q1(d)"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a2-q2",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q2",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q2"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a2-q3",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q3",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q3"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a2-q4",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q4",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q4"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a2-q5",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q5",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q5"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a2-q6",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q6",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q6"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a3-q1",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q1",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q1"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a3-q2",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q2",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q2"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a3-q3",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q3",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q3"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a3-q4",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q4",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q4"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a3-q5",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q5",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q5"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a3-q6",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q6",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q6"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a3-q7",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q7",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q7"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a3-q8",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q8",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q8"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a4-q1-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q1-a",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q1(a)"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a4-q1-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q1-b",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q1(b)"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a4-q2",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q2",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q2"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a4-q3",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q3",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q3"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a4-q4",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q4",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q4"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a4-q5",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q5",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q5"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a4-q6",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q6",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q6"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a4-q7-kamo",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q7-kamo",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q7 · Kamo"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a4-q7-mother",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q7-mother",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q7 · His mother"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a1-q1-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q1-a",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q1(a)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a1-q1-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q1-b",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q1(b)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a1-q2-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q2-a",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q2(a)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a1-q2-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q2-b",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q2(b)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a1-q3-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q3-a",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q3(a)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a1-q3-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q3-b",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q3(b)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a1-q4-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q4-a",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q4(a)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a1-q4-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q4-b",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q4(b)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a1-q5-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q5-a",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q5(a)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a1-q5-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q5-b",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q5(b)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a1-q6",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A1-Q6",
+    "parent": "A1",
+    "topicIds": [
+      "french-higher-newspapermagazine-comprehension"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q6"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a2-q1-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q1-a",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q1(a)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a2-q1-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q1-b",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q1(b)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a2-q2-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q2-a",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q2(a)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a2-q2-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q2-b",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q2(b)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a2-q3-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q3-a",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q3(a)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a2-q3-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q3-b",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q3(b)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a2-q4-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q4-a",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q4(a)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a2-q4-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q4-b",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q4(b)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a2-q5-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q5-a",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q5(a)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a2-q5-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q5-b",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q5(b)"
+  },
+  {
+    "cardId": "fr-2023-hl-deferred-reading-a2-q6",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q6",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q6"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a1-q1",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q1",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q1"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a1-q2",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q2",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q2"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a1-q3",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q3",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q3"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a1-q4",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q4",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q4"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a1-q5",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q5",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q5"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a1-q6",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q6",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q6"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a1-q7",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q7",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q7"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a1-q8",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A1-Q8",
+    "parent": "A1",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      4,
+      5
+    ],
+    "label": "Reading Comprehension 1 · Q8"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a2-q1-a",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q1-a",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q1(a)"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a2-q1-b",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q1-b",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q1(b)"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a2-q1-c",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q1-c",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q1(c)"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a2-q1-d",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q1-d",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q1(d)"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a2-q2",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q2",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q2"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a2-q3",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q3",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q3"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a2-q4",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q4",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q4"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a2-q5",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q5",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q5"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a2-q6",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A2-Q6",
+    "parent": "A2",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+    ],
+    "topicId": "french-5-3",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q6"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a3-q1",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q1",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q1"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a3-q2",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q2",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q2"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a3-q3",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q3",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q3"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a3-q4",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q4",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q4"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a3-q5",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q5",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q5"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a3-q6",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q6",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q6"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a3-q7",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q7",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q7"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a3-q8",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A3-Q8",
+    "parent": "A3",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-article"
+    ],
+    "topicId": "french-5-0",
+    "pages": [
+      8,
+      9
+    ],
+    "label": "Reading Comprehension 3 · Q8"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a4-q1",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q1",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q1"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a4-q2",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q2",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q2"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a4-q3",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q3",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q3"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a4-q4",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q4",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q4"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a4-q5",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q5",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q5"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a4-q6",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q6",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q6"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a4-q7",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q7",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q7"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-reading-a4-q8",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q8",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q8"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-cloze-b1a-gap-1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-1",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 1"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-cloze-b1a-gap-2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-2",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 2"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-cloze-b1a-gap-3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-3",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 3"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-cloze-b1a-gap-4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-4",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 4"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-cloze-b1a-gap-5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-5",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 5"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-cloze-b1a-gap-6",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-6",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 6"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-cloze-b1a-gap-7",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-7",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 7"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-cloze-b1a-gap-8",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-8",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 8"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-cloze-b1a-gap-9",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-9",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 9"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-cloze-b1a-gap-10",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-10",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 10"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-cloze-b1a-gap-1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-1",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 1"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-cloze-b1a-gap-2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-2",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 2"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-cloze-b1a-gap-3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-3",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 3"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-cloze-b1a-gap-4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-4",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 4"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-cloze-b1a-gap-5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-5",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 5"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-cloze-b1a-gap-6",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-6",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 6"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-cloze-b1a-gap-7",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-7",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 7"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-cloze-b1a-gap-8",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-8",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 8"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-cloze-b1a-gap-9",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-9",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 9"
+  },
+  {
+    "cardId": "fr-2023-ol-deferred-cloze-b1a-gap-10",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2023,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "B1A-gap-10",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q1(a) · gap 10"
   }
 ]

@@ -314,8 +314,11 @@ class FrPaper:
     be matched against, plus the page span each reading comprehension occupies.
     """
 
-    def __init__(self, year, level, subject=SUBJECT):
+    def __init__(self, year, level, subject=SUBJECT, sitting=None):
         self.year, self.level, self.subject = year, level, subject
+        # The SEC's deferred sittings (2022 and 2023, both levels): their own
+        # booklets, read from the archive's deferredexams/ folder, never June's.
+        self.sitting = sitting
         self.path = self._written_path()
         self.aural_path = self._aural_path()
         self.width = self._width(self.path)
@@ -326,7 +329,21 @@ class FrPaper:
         self._read()
 
     # -- files --------------------------------------------------------------
+    def _deferred_path(self, component):
+        """A deferred booklet, linked under its own name beside June's:
+        papers/<year>-<level>-deferred-000-paper.pdf (written) and
+        -A00-paper.pdf (listening). The archive files both under the June file
+        id in deferredexams/<year>/ (LC010ALP000BV.pdf, LC010ALPA00BV.pdf), so a
+        reviewed file is named by its sitting here, never by the SEC's id."""
+        return os.path.join(papers_dir(self.subject),
+                            f'{self.year}-{self.level}-deferred-{component}-paper.pdf')
+
     def _written_path(self):
+        if self.sitting == 'deferred':
+            p = self._deferred_path('000')
+            if os.path.exists(p):
+                return p
+            raise FileNotFoundError(p)
         for name in (f'{self.year}-{self.level}-000-paper.pdf',
                      f'{self.year}-{self.level}-paper.pdf'):
             p = os.path.join(papers_dir(self.subject), name)
@@ -335,6 +352,9 @@ class FrPaper:
         raise FileNotFoundError(f'{self.subject} {self.year} {self.level} written paper')
 
     def _aural_path(self):
+        if self.sitting == 'deferred':
+            p = self._deferred_path('A00')
+            return p if os.path.exists(p) else None
         for name in (f'{self.year}-{self.level}-A00-paper.pdf',
                      f'{self.year}-{self.level}-015-paper.pdf'):
             p = os.path.join(papers_dir(self.subject), name)
