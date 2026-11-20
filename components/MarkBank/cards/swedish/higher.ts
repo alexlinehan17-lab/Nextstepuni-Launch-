@@ -3400,6 +3400,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2023 Higher Level — © State Examinations Commission.",
+    id: "swe-2023-hl-ii-1", topicId: "swedish-1-0", conceptId: "kommentera-detta-citat-och-uttryck-dina",
+    section: "II", questionRef: "2023 HL Section II Q1",
+    questionText: "Kommentera detta citat och uttryck dina tankar med 100 - 150 ord: ”–När jag började plocka fram det som gjorde ont i min historia insåg jag att mycket av det hade jag egentligen inte upplevt själv.”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "I del I och II kommer följande kriterier att vägas in i betygssättningen:", marks: 30, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme prints, as examples, not a checklist: “Kandidaten kan föra en diskussion kring Katarina Pirak Sikkus väg att ta itu med sitt historiska arv. Kandidaten kan här också ta upp andra händelser i historien och diskutera detta. Kandidaten kan utgå från sig själv och sätta in sig själv i en historisk kontext. Det kan handla om temat sorg och arv som konstnären tar upp eller andra aspekter av ett historiskt arv. Diskussionen kan också röra sig om ett mer personligt plan vad som kan gå i arv inom en familj. Eller en diskussion kring vad han eller hon inte tror går i arv.”. It reprints the task as: “Kommentera detta citat och uttryck dina tankar med ungefär 100 ord:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Ett tydligt syfte – kandidaten har förstått frågan och vet hur den ska besvaras – 30%.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ett sammanhängande svar – kandidaten använder relevant och lämplig fakta ur materialet på ett strukturerat och meningsfullt sätt – 30%.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Språklig klarhet – kandidaten uppvisar en språkbehandling som med tydlighet och med visst flyt kan uttrycka dennes idéer – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Formalia – grammatik, stavning – 10%.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEL II (30 POÄNG)",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2023 Higher Level — © State Examinations Commission.",
+    id: "swe-2023-hl-iii-1", topicId: "swedish-1-1", conceptId: "utan-forl-telse-finns-det-ingen",
+    section: "III", questionRef: "2023 HL Section III Q1",
+    questionText: "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. ”Utan förlåtelse finns det ingen framtid.” Biskop Desmond Tutu",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under “Del III (40 poäng)” the scheme reprints only the instruction and the two titles; it prints no answer, no content and no criteria for this part. Its criteria, printed after the titles, are stated for parts I and II only: “I del I och II kommer följande kriterier att vägas in i betygssättningen:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2023 Higher Level — © State Examinations Commission.",
+    id: "swe-2023-hl-iii-2", topicId: "swedish-1-1", conceptId: "hungrig-manniska-mindre-betyder-broder-mer",
+    section: "III", questionRef: "2023 HL Section III Q2",
+    questionText: "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. ”En hungrig människa mindre betyder en broder mer.” Stig Dagerman",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under “Del III (40 poäng)” the scheme reprints only the instruction and the two titles; it prints no answer, no content and no criteria for this part. Its criteria, printed after the titles, are stated for parts I and II only: “I del I och II kommer följande kriterier att vägas in i betygssättningen:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC039ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2024 Higher Level — © State Examinations Commission.",
