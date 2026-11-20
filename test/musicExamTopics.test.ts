@@ -48,8 +48,12 @@ const baseline = baselineJson as Baseline;
 const referenceTopics = Object.values(reference.variants).flatMap(variant => variant.topics);
 const paperIdentity = (paper: { year: number; fileid: string }) => `${paper.year}|${paper.fileid}`;
 const musicPapers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'music');
+/** A deferred booklet ("LC067ALP008EV-deferred.pdf") is filed under deferredexams by its SEC name. */
+const corpusPaperPath = (paper: { year: number; fileid: string }) => (/-deferred\.pdf$/.test(paper.fileid)
+  ? path.join(CORPUS_ROOT, 'deferredexams', String(paper.year), paper.fileid.replace('-deferred', ''))
+  : path.join(CORPUS_ROOT, 'exampapers', String(paper.year), paper.fileid));
 const hasCompleteMusicPaperCorpus = fs.existsSync(CORPUS_ROOT) && musicPapers.every(paper => (
-  fs.existsSync(path.join(CORPUS_ROOT, 'exampapers', String(paper.year), paper.fileid))
+  fs.existsSync(corpusPaperPath(paper))
 ));
 const hasCompleteMusicSchemeCorpus = fs.existsSync(CORPUS_ROOT) && musicPapers.every(paper => {
   const sidecarPath = path.join(
@@ -157,8 +161,12 @@ describe('Music exam-topic registry', () => {
     const actual = references.map(item => `${item.topicId}|${item.subdivision}`).sort();
     expect(references).toHaveLength(646);
     expect(actual).toEqual(expected);
-    expect(references.filter(item => item.fileid)).toHaveLength(459);
-    expect(references.filter(item => !item.fileid)).toHaveLength(187);
+    // 459 June headings plus the 21 Higher deferred headings, which join the 2022 and 2023 deferred booklets.
+    expect(references.filter(item => item.fileid)).toHaveLength(480);
+    expect(references.filter(item => item.sitting === 'deferred' && item.fileid)).toHaveLength(21);
+    expect(references.filter(item => item.sitting === 'deferred' && item.fileid)
+      .every(item => /-deferred\.pdf$/.test(item.fileid!))).toBe(true);
+    expect(references.filter(item => !item.fileid)).toHaveLength(166);
     expect(references.every(item => item.paperKey === 'single')).toBe(true);
     expect(taxonomy.topics.every(topic => topic.officialQuestionKeys.length === 0)).toBe(true);
   });
@@ -212,45 +220,51 @@ describe('Music exam-topic registry', () => {
     }
   });
 
-  it('adds all 178 exact SEC paper variants and all 978 physical question mappings', () => {
+  it('adds all 178 June and 6 deferred SEC paper variants and all 1,014 physical question mappings', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'music');
     expect(crosswalk.summary).toMatchObject({
       referenceTopics: 34,
       archiveTopics: 9,
       totalRuntimeTopics: 43,
       referenceOfficialAssociations: 646,
-      matchedAssociations: 459,
-      sourceBlockedAssociations: 187,
-      localPaperVariants: 178,
-      localPhysicalMappings: 978,
-      distinctStudentFacingQuestions: 500,
-      hostedPaperAnchorMaps: 178,
+      matchedAssociations: 480,
+      sourceBlockedAssociations: 166,
+      localPaperVariants: 184,
+      localPhysicalMappings: 1014,
+      deferredPaperVariants: 6,
+      deferredPhysicalMappings: 36,
+      distinctStudentFacingQuestions: 524,
+      hostedPaperAnchorMaps: 184,
       preservedHostedAnchorMaps: 19,
-      generatedHostedAnchorMaps: 159,
+      generatedHostedAnchorMaps: 165,
       existingAnswerSidecarMaps: 161,
       existingAnswerSidecarCrops: 775,
       completeExistingAnswerSidecarMaps: 152,
       partialExistingAnswerSidecarMaps: 9,
       preservedBaselineVariants: 20,
       preservedBaselineCards: 184,
-      newlyAddedPaperVariants: 158,
-      newlyAddedPhysicalMappings: 794,
+      newlyAddedPaperVariants: 164,
+      newlyAddedPhysicalMappings: 830,
     });
     expect(crosswalk.status).toBe('runtime-mapped-source-completion-pending');
     expect(crosswalk.policy.excludedContent).toContain('No commercial mock question');
-    expect(papers).toHaveLength(178);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(978);
+    expect(papers).toHaveLength(184);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1014);
     expect(runtime.questionMappings).toHaveLength(978);
+    expect(runtime.deferredQuestionMappings).toHaveLength(36);
     const mappings = examQuestionTopicMappingsForSubject('music');
-    expect(mappings).toHaveLength(978);
+    expect(mappings).toHaveLength(1014);
     expect(mappings.every(mapping => mapping.fileid && mapping.lang !== 'any')).toBe(true);
+    // 500 June printed questions plus 24 deferred ones (the 2023 Irish editions collapse into their English twins).
     expect(subjectAtlasStats('music')).toMatchObject({
-      questions: 500,
+      questions: 524,
       topics: 43,
       yearMin: 2010,
       yearMax: 2026,
     });
-    expect(questionsForTopics('music', null)).toHaveLength(500);
+    expect(questionsForTopics('music', null)).toHaveLength(524);
+    expect(questionsForTopics('music', null).filter(question => question.fileid.endsWith('-deferred.pdf'))
+      .every(question => question.lang === 'ev')).toBe(true);
   });
 
   it('keeps same-number composing, listening and elective cards isolated by file ID', () => {
@@ -287,6 +301,55 @@ describe('Music exam-topic registry', () => {
     expect(examTopicIdsForQuestion(
       'music', 'ordinary', 2025, 'main', '6', 'single', 'iv', 'LC067GLP008IV.pdf',
     )).toContain('music-ordinary-listening-aural-skills-unheard');
+  });
+
+  it('keys the 2022 and 2023 deferred booklets by their own printed set works and pages', () => {
+    // Each deferred listening paper prints its own order of works, never June's.
+    const works = (year: number, lang: 'ev' | 'iv') => ['1', '2', '3', '4'].map(n => examTopicIdsForQuestion(
+      'music', 'higher', year, 'main', n, 'single', lang, `LC067ALP008${lang.toUpperCase()}-deferred.pdf`,
+    ));
+    expect(works(2022, 'ev')).toEqual([
+      ['music-higher-listening-berlioz'],
+      ['music-higher-listening-the-beatles'],
+      ['music-higher-listening-mozart'],
+      ['music-higher-listening-deane'],
+    ]);
+    for (const lang of ['ev', 'iv'] as const) {
+      expect(works(2023, lang)).toEqual([
+        ['music-higher-listening-freddie-mercury-archive'],
+        ['music-higher-listening-bach-archive'],
+        ['music-higher-listening-tchaikovsky-archive'],
+        ['music-higher-listening-gerald-barry-archive'],
+      ]);
+    }
+    expect(examTopicIdsForQuestion('music', 'higher', 2022, 'main', '1', 'single', 'ev', 'LC067ALP008EV.pdf'))
+      .toContain('music-higher-listening-mozart');
+    // 2012 sets Bohemian Rhapsody, Romeo and Juliet, the Bach cantata and the Barry quartet.
+    expect(['1', '2', '3', '4'].map(n => examTopicIdsForQuestion(
+      'music', 'ordinary', 2012, 'main', n, 'single', 'iv', 'LC067GLP008IV.pdf',
+    ))).toEqual([
+      ['music-ordinary-listening-freddie-mercury-archive'],
+      ['music-ordinary-listening-tchaikovsky-archive'],
+      ['music-ordinary-listening-bach-archive'],
+      ['music-ordinary-listening-gerald-barry-archive'],
+    ]);
+    const starts = { '006': [4, 6, 8, 12, 14, 16], '008': [3, 8, 10, 12, 14, 20] } as const;
+    const deferred = PAPER_TOPIC_TAGS.filter(item => item.subjectId === 'music' && item.fileid.endsWith('-deferred.pdf'));
+    expect(deferred.map(paper => `${paper.year}|${paper.fileid}`).sort()).toEqual([
+      '2022|LC067ALP006EV-deferred.pdf',
+      '2022|LC067ALP008EV-deferred.pdf',
+      '2023|LC067ALP006EV-deferred.pdf',
+      '2023|LC067ALP006IV-deferred.pdf',
+      '2023|LC067ALP008EV-deferred.pdf',
+      '2023|LC067ALP008IV-deferred.pdf',
+    ]);
+    for (const paper of deferred) {
+      const anchor = JSON.parse(fs.readFileSync(path.join(
+        ROOT, 'public/paper-anchors', String(paper.year), `${paper.fileid}.json`,
+      ), 'utf8'));
+      expect(anchor.q.map((question: { pP: number }) => question.pP), paperIdentity(paper))
+        .toEqual(starts[paper.fileid.slice(8, 11) as '006' | '008']);
+    }
   });
 
   it('pins every visually checked elective start, including the 2026 layout change', () => {
@@ -371,7 +434,7 @@ describe('Music exam-topic registry', () => {
     'keeps all hosted Music page references within their entitled paper PDFs', async () => {
     for (const paper of PAPER_TOPIC_TAGS.filter(item => item.subjectId === 'music')) {
       const anchorPath = path.join(ROOT, 'public/paper-anchors', String(paper.year), `${paper.fileid}.json`);
-      const paperPath = path.join(CORPUS_ROOT, 'exampapers', String(paper.year), paper.fileid);
+      const paperPath = corpusPaperPath(paper);
       const anchor = JSON.parse(fs.readFileSync(anchorPath, 'utf8'));
       const loadingTask = pdfjs.getDocument({
         data: new Uint8Array(fs.readFileSync(paperPath)),
@@ -536,6 +599,12 @@ describe('Music exam-topic registry', () => {
       '2016|LC067ALPU00IV.pdf',
       '2016|LC067GLPU00EV.pdf',
       '2016|LC067GLPU00IV.pdf',
+      '2022|LC067ALP006EV-deferred.pdf',
+      '2022|LC067ALP008EV-deferred.pdf',
+      '2023|LC067ALP006EV-deferred.pdf',
+      '2023|LC067ALP006IV-deferred.pdf',
+      '2023|LC067ALP008EV-deferred.pdf',
+      '2023|LC067ALP008IV-deferred.pdf',
     ]);
     expect(paperOnly.filter(paper => paper.fileid.slice(8, 11) === 'U00')).toHaveLength(14);
   }, 30_000);
