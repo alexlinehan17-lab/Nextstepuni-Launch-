@@ -5022,6 +5022,423 @@
   }
  },
  {
+  "id": "hun-2016-hl-ii-1",
+  "subjectId": "hungarian",
+  "level": "higher",
+  "year": 2016,
+  "section": "II",
+  "topicId": "hungarian-1-0",
+  "conceptId": "kommentar-szoveg-alapjan-kommentalja-tarsadalmi-szemelyes",
+  "questionRef": "2016 HL Section II Q1",
+  "questionText": "A szöveg alapján kommentálja a társadalmi és személyes helyzeteket figyelembe véve, hogy a szerző mire utal az alábbi mondatával (min. 100, max. 150 szóban) „Az egyik legnagyobb problémát a magány elleni küzdelemben mégis az jelenti, hogy nincs igazi ellenszere.”",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "A minimum 100, maximum 150 szóban tisztán, érthetően kifejtett saját vélemény.",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “A szerző arra utal az alábbi mondatával, hogy:”; “egyre több az egyedül élő ember, és bár ez nem mindenki számára jelent lelki terhet, sokak számára magányosságot hoz, kifejlődik a stressz, amiből depresszió alakulhat ki (1. bk);”; “minden harmadik 40 és 85 év közötti embert nyomaszt a magány, 3–7%-uk pedig kifejezetten szenved tőle (1. bk);”; “a magányt is az egészségügyi rizikófaktorok közé sorolják, hatását az elhízás, a dohányzás és a levegőszennyezettség veszélyeihez hasonlítják, a kutatások mind arra utalnak, hogy az elszigeteltség egyértelműen megrövidítheti az életet. (1. bk);”; “A magányos ember nem csupán egyedül van, hanem nyomasztónak érzi a többi ember hiányát (hol a kapcsolatok számát, hol azok intenzitását kevesli). Mert sokszor azok is magányosnak érzik magukat, akik nincsenek egyedül; ez a társas magány. A „magányosnak érzem magam” belső élményvilága mindenkinél összefüggésben van az önmagához fűződő viszonnyal is. (2. bk);”; “De sokan azért tudnak nehezen kontaktust teremteni vagy elérni azt az intimitást, mert félnek a túl közeli kapcsolatoktól. Pl. a magyar felnőtt lakosság mintegy ötven százaléka nem képes biztonságosan kötődni, vagyis a kapcsolataiban a reálisnál erősebben szorong, netán kifejezetten kerüli azokat. A magány érzését tompító stimulációk keresése más függőségekhez is vezethet. (3. bk);”; “A bezárkózás, a másokkal szembeni bizalmatlanság a kapcsolatok építése ellen hat, így a magány ördögi körré válik, amelybe bárki belekerülhet, és ahonnan nehéz bárkit is kiszabadítani (4. bk)”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II. RÉSZ",
+   "title": "Reading text — answer in Hungarian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Hungarian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+  }
+ },
+ {
+  "id": "hun-2016-hl-iii-1",
+  "subjectId": "hungarian",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "hungarian-1-1",
+  "conceptId": "lehet-seg-egyszer-megtalaltad-boldogsagot-onmagadban",
+  "questionRef": "2016 HL Section III Q1",
+  "questionText": "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! “[H]a egyszer megtaláltad a boldogságot önmagadban, akkor elveszni mégsem vész el soha.” (Anne Frank)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Tisztán, érthetően és világosan megírt esszé.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "hun-2016-hl-iii-2",
+  "subjectId": "hungarian",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "hungarian-1-1",
+  "conceptId": "lehet-seg-vilag-eleg-rossz-hely",
+  "questionRef": "2016 HL Section III Q2",
+  "questionText": "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! A világ elég rossz hely lehet, ha nem dolgozunk közösen azon, hogy egyenlőbbé, demokratikusabbá és fenntarthatóbbá tegyük. Fintan O’Toole, The Irish Times, 2016. február. 22.02.2016.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Tisztán, érthetően és világosan megírt esszé.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "hun-2017-hl-i-1-a",
   "subjectId": "hungarian",
   "level": "higher",
