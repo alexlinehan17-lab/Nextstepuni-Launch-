@@ -925,6 +925,10 @@ describe('Biology 2023 Ordinary — reviewed sitting, corrected in place', () =>
 const DEFERRED_SITTINGS: Array<[string, readonly ReviewedCard[], number]> = [
   ['2022-hl', BIO_HIGHER as unknown as ReviewedCard[], 182],
   ['2022-ol', BIO_ORDINARY as unknown as ReviewedCard[], 182],
+  ['2023-hl', BIO_HIGHER as unknown as ReviewedCard[], 179],
+  ['2023-ol', BIO_ORDINARY as unknown as ReviewedCard[], 188],
+  ['2024-hl', BIO_HIGHER as unknown as ReviewedCard[], 165],
+  ['2025-hl', BIO_HIGHER as unknown as ReviewedCard[], 161],
 ];
 describe.each(DEFERRED_SITTINGS)('Biology %s deferred sitting', (key, deck, count) => {
   const [year, level] = key.split('-');

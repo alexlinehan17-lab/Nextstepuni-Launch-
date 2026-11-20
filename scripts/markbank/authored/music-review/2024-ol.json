@@ -1,0 +1,2513 @@
+{
+ "year": 2024,
+ "level": "ordinary",
+ "deferred": false,
+ "readBy": "Claude (music lane helper), 19 Nov 2026",
+ "pagesWithoutAsks": {
+  "listening": [
+   1,
+   2,
+   17,
+   18,
+   19,
+   20
+  ],
+  "composing": [
+   1,
+   2,
+   3,
+   10,
+   11,
+   18,
+   19,
+   20
+  ]
+ },
+ "notCounted": [],
+ "asks": [
+  {
+   "paper": "listening",
+   "address": "Q1(a)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.08,
+    0.46,
+    0.92,
+    0.605
+   ],
+   "questionText": "The two instruments which play the melody in this excerpt are",
+   "questionContext": "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.24,
+     0.497,
+     0.6,
+     0.602
+    ],
+    "what": "The three printed options (violin and viola, viola and cello, violin and cello)"
+   },
+   "topicId": "music-2-16",
+   "marks": 3,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "criterion",
+     "text": "Viola + Cello",
+     "marks": 3,
+     "steps": [
+      0,
+      1,
+      3
+     ],
+     "quote": [
+      "Violin + Viola = 1",
+      "Violin + Cello = 1"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Tick one of three. The scheme prints \"Viola + Cello\" for its 3 marks and allows 1 mark for each of the other two options (\"Violin + Viola = 1\", \"Violin + Cello = 1\"): one criterion row on steps 0/1/3, the two allowances quoted."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1(b)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.08,
+    0.61,
+    0.92,
+    0.77
+   ],
+   "questionText": "The missing time signature at X on the score above is",
+   "questionContext": "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.08,
+     0.182,
+     0.95,
+     0.77
+    ],
+    "what": "The outline score of Excerpt 1 (bars 1-16) with X marked, down to the three printed time-signature options for (b)"
+   },
+   "topicId": "music-2-16",
+   "marks": 3,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "4/4",
+     "marks": 3
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The options are music-font time signatures (the text layer reads \"44\" and \"5\"); the scheme prints its answer as plain text \"4/4\", so no scheme crop. The figure has to span the score above (a) to show X, so (a)'s options show in it too. Filed under the set work (music-2-16), as 2024 Higher filed its Q1(b)."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1(c)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.08,
+    0.09,
+    0.92,
+    0.26
+   ],
+   "questionText": "This excerpt features polymetre. Explain polymetre.",
+   "questionContext": "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times.",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-16",
+   "marks": 4,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "criterion",
+     "text": "Two (or more) metres (time signatures) happening at the same time",
+     "marks": 4,
+     "steps": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "quote": [
+      "Up to 4m for a correct explanation of polymetre",
+      "For example:",
+      "Partially correct answer = 1m/2m/3m"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "A single \"For example\" model answer: carded as the prototype carded a model answer (criterion, rule and partials quoted). Steps 1-3 printed."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1(d)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.08,
+    0.28,
+    0.92,
+    0.425
+   ],
+   "questionText": "The music in this excerpt also features",
+   "questionContext": "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 4,
+    "box": [
+     0.24,
+     0.318,
+     0.5,
+     0.422
+    ],
+    "what": "The three printed options (ascending scales, triplets, sustained notes)"
+   },
+   "topicId": "music-2-16",
+   "marks": 3,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Triplets",
+     "marks": 3
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": null
+  },
+  {
+   "paper": "listening",
+   "address": "Q1(e)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.08,
+    0.485,
+    0.92,
+    0.675
+   ],
+   "questionText": "Identify one difference between the music in Excerpt 2 and the music in Excerpt 3. Refer to both excerpts in your answer.",
+   "questionContext": "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played once more and Excerpt 3, played three times.",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-16",
+   "marks": 4,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A difference between Excerpt 2 and Excerpt 3",
+     "options": [
+      "Polymetre — No polymetre",
+      "Piano — No piano",
+      "Dynamics f and ff / Louder — Dynamics p / Softer",
+      "Faster — Slower",
+      "No canon — Canon",
+      "Retrograde — No retrograde",
+      "Augmentation — No augmentation",
+      "Triplets throughout excerpt 2 — One triplet only in excerpt 3"
+     ],
+     "claim": 1,
+     "per": 4,
+     "open": true,
+     "quote": [
+      "Up to 4m for a valid difference between the music in excerpt 2 and the music in excerpt 3",
+      "Answers must refer to both excerpts and the same point of difference for full marks.",
+      "For example:",
+      "Partially correct difference = 1m/2m/3m"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Two-column \"For example\" table (Excerpt 2 / Excerpt 3): one option per row, \"<Excerpt 2> — <Excerpt 3>\"; open. The partial 1m/2m/3m is quoted (a menu claims whole marks only). The scheme's table prints the \"(e)\" label beside the Retrograde row; the part is the paper's (e) by wording."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1(f)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.08,
+    0.09,
+    0.92,
+    0.265
+   ],
+   "questionText": "Identify two features of the music in this excerpt:",
+   "questionContext": "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 4, played three times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.24,
+     0.115,
+     0.56,
+     0.262
+    ],
+    "what": "The four printed features, each with a box"
+   },
+   "topicId": "music-2-16",
+   "marks": 4,
+   "schemePage": 12,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Changing time signatures",
+     "marks": 2
+    },
+    {
+     "type": "point",
+     "text": "Accented notes",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Tick two of four; the scheme names the two, 2 marks each."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1(g)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.08,
+    0.29,
+    0.92,
+    0.57
+   ],
+   "questionText": "Describe the music that immediately follows the music in this excerpt in Piano Quartet No 1 by Gerald Barry.",
+   "questionContext": "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 4, played three times.",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-16",
+   "marks": 4,
+   "schemePage": 12,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 4,
+     "steps": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "quote": [
+      "Up to 4m for a correct description of the music which immediately follows excerpt 4 in Piano Quartet No 1 by Gerald Barry .",
+      "Partially correct answer = 1m/2m/3m"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Rule only: the scheme prints no description of the following music. Steps 1-3 printed. needsRecording kept true as 2024 Higher kept its identical Q1(f): the ask is anchored on the excerpt played."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(a)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.08,
+    0.485,
+    0.92,
+    0.61
+   ],
+   "questionText": "Identify two instruments which play in this excerpt.",
+   "questionContext": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach, played three times.\n• Answer the questions below.",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-17",
+   "marks": 4,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "Instruments which play in the excerpt",
+     "options": [
+      "Flute",
+      "oboe",
+      "French horn",
+      "violin",
+      "viola",
+      "cello/double bass",
+      "organ"
+     ],
+     "claim": 2,
+     "per": 2,
+     "open": true,
+     "quote": [
+      "Any two correct instruments",
+      "For example:",
+      "2 + 2"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "\"Any two correct instruments\" then \"For example:\" and a list: carded OPEN because the scheme heads the list \"For example\" (2026 Ordinary Q2(d) the same). Q2 has one excerpt: its line is the question context."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(b)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.08,
+    0.65,
+    0.92,
+    0.79
+   ],
+   "questionText": "The cadence at X on the score above is",
+   "questionContext": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach, played three times.\n• Answer the questions below.",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 6,
+    "box": [
+     0.08,
+     0.15,
+     0.95,
+     0.79
+    ],
+    "what": "The printed score (bars 1-16) with X marked over bar 4, down to the three printed cadence options for (b)"
+   },
+   "topicId": "music-2-17",
+   "marks": 2,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "An imperfect cadence",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The figure has to span the score to show X, so (a)'s answer boxes show in it too."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(c)",
+   "page": 7,
+   "pages": [
+    7
+   ],
+   "crop": [
+    0.08,
+    0.055,
+    0.92,
+    0.2
+   ],
+   "questionText": "This music is taken from",
+   "questionContext": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach, played three times.\n• Answer the questions below.",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 7,
+    "box": [
+     0.24,
+     0.08,
+     0.5,
+     0.197
+    ],
+    "what": "The three printed options (an aria, a chorale, a recitative)"
+   },
+   "topicId": "music-2-17",
+   "marks": 2,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "A chorale",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": null
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(d)",
+   "page": 7,
+   "pages": [
+    7
+   ],
+   "crop": [
+    0.08,
+    0.228,
+    0.92,
+    0.427
+   ],
+   "questionText": "This excerpt features a Tierce de Picardie. Explain Tierce de Picardie.",
+   "questionContext": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach, played three times.\n• Answer the questions below.",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-17",
+   "marks": 2,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "criterion",
+     "text": "Tierce de Picardie occurs when a piece in the minor key ends on a major tonic chord. (This piece is in G Minor and ends in G major).",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Up to 2m for a correct explanation of Tierce de Picardie.",
+      "For example:",
+      "Partially correct answer = 1m"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "A \"For example\" model answer as a criterion (as 2024 Higher Q2(d)); 1m printed."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(a)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.08,
+    0.323,
+    0.92,
+    0.465
+   ],
+   "questionText": "The instruments playing the accompaniment in the excerpt are",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times. The lyrics are printed below. Line 1 Too late, my time has come, Line 2 Sends shivers down my spine, body’s aching all the time. Line 3 Goodbye, everybody, I’ve got to go, Line 4 Got to leave you all behind and face the truth. Line 5 Mama, ooh, I don’t want to die, Line 6 I sometimes wish I’d never been born at all.",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.24,
+     0.36,
+     0.66,
+     0.463
+    ],
+    "what": "The three printed options (piano + bass guitar; piano + drums + bass guitar; piano + drums + guitar + bass guitar)"
+   },
+   "topicId": "music-2-14",
+   "marks": 2,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "criterion",
+     "text": "Piano + drums + guitar + bass guitar",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Piano + bass guitar = 1",
+      "Piano + drums + bass guitar = 1"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Tick one of three. The scheme prints the third option for its 2 marks and allows 1 mark for each of the other two: one criterion row on steps 0/1/2, the allowances quoted."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(b)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.08,
+    0.467,
+    0.92,
+    0.608
+   ],
+   "questionText": "At the end of line 2 the bass guitar plays",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times. The lyrics are printed below. Line 1 Too late, my time has come, Line 2 Sends shivers down my spine, body’s aching all the time. Line 3 Goodbye, everybody, I’ve got to go, Line 4 Got to leave you all behind and face the truth. Line 5 Mama, ooh, I don’t want to die, Line 6 I sometimes wish I’d never been born at all.",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.13,
+     0.185,
+     0.8,
+     0.607
+    ],
+    "what": "The printed lyrics (Lines 1-6) the ask refers to, down to the three printed options for (b)"
+   },
+   "topicId": "music-2-14",
+   "marks": 2,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Glissando",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The ask points at \"line 2\" of the printed lyrics, so the figure spans the lyrics down to (b)'s options; (a)'s options show between."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(c)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.08,
+    0.62,
+    0.92,
+    0.865
+   ],
+   "questionText": "This song features word painting. Give an example of word-painting heard in this excerpt.",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times. The lyrics are printed below. Line 1 Too late, my time has come, Line 2 Sends shivers down my spine, body’s aching all the time. Line 3 Goodbye, everybody, I’ve got to go, Line 4 Got to leave you all behind and face the truth. Line 5 Mama, ooh, I don’t want to die, Line 6 I sometimes wish I’d never been born at all.",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.17,
+     0.185,
+     0.8,
+     0.303
+    ],
+    "what": "The printed lyrics of Excerpt 1, Lines 1-6"
+   },
+   "topicId": "music-2-14",
+   "marks": 2,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "criterion",
+     "text": "A guitar plays a bell tree/tinkling sound to depict “shivers down my spine”",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Up to 2m for an example of word painting heard in the excerpt.",
+      "For example:",
+      "Partially correct description = 1m"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "A \"For example\" model answer as a criterion; 1m printed. Figure: the printed lyrics the word painting sits on."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(d)",
+   "page": 9,
+   "pages": [
+    9
+   ],
+   "crop": [
+    0.08,
+    0.055,
+    0.92,
+    0.135
+   ],
+   "questionText": "Identify the instrument that enters on the word ‘truth’ at the end of line 4.",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times. The lyrics are printed below. Line 1 Too late, my time has come, Line 2 Sends shivers down my spine, body’s aching all the time. Line 3 Goodbye, everybody, I’ve got to go, Line 4 Got to leave you all behind and face the truth. Line 5 Mama, ooh, I don’t want to die, Line 6 I sometimes wish I’d never been born at all.",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.17,
+     0.185,
+     0.8,
+     0.303
+    ],
+    "what": "The printed lyrics of Excerpt 1, Lines 1-6"
+   },
+   "topicId": "music-2-14",
+   "marks": 2,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Guitar",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Still Excerpt 1 (page 9 prints no excerpt line before (d)). Figure: the printed lyrics on page 8, which the ask points at (\"line 4\")."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(e)",
+   "page": 9,
+   "pages": [
+    9
+   ],
+   "crop": [
+    0.08,
+    0.19,
+    0.95,
+    0.41
+   ],
+   "questionText": "Insert the two missing notes at X on the score above. Use the given rhythm.",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times. An outline score of the excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 9,
+    "box": [
+     0.12,
+     0.215,
+     0.95,
+     0.345
+    ],
+    "what": "The outline score of Excerpt 2 (bars 1-3) with the lyrics, X marked over bar 2"
+   },
+   "topicId": "music-2-14",
+   "marks": 2,
+   "schemePage": 14,
+   "schemeCrop": {
+    "page": 14,
+    "box": [
+     0.15,
+     0.51,
+     0.91,
+     0.615
+    ],
+    "what": "the two missing notes printed on a treble stave, with \"Mark the first two notes from left to right\" and \"1 + 1\""
+   },
+   "rows": [
+    {
+     "type": "criterion",
+     "text": "Mark the first two notes from left to right",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "printedAnswer": true,
+     "quote": [
+      "1 + 1"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Notation answer: the scheme prints the two notes on a stave (crop) and \"1 + 1\": 1 mark a note, 0/1/2. The crop takes in the score, where the answer is written."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(a)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.08,
+    0.193,
+    0.92,
+    0.335
+   ],
+   "questionText": "The music in this excerpt is taken from the",
+   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.24,
+     0.228,
+     0.5,
+     0.333
+    ],
+    "what": "The three printed options (exposition, development, coda)"
+   },
+   "topicId": "music-2-15",
+   "marks": 2,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Exposition",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": null
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(b)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.08,
+    0.335,
+    0.92,
+    0.47
+   ],
+   "questionText": "The theme heard in this excerpt is the",
+   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.24,
+     0.364,
+     0.56,
+     0.47
+    ],
+    "what": "The three printed options (Love theme, Friar Lawrence theme, Strife theme)"
+   },
+   "topicId": "music-2-15",
+   "marks": 2,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Strife theme",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": null
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(c)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.08,
+    0.47,
+    0.92,
+    0.61
+   ],
+   "questionText": "The music in this excerpt features",
+   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.24,
+     0.501,
+     0.5,
+     0.607
+    ],
+    "what": "The three printed options (descending scales, repeated notes, trills)"
+   },
+   "topicId": "music-2-15",
+   "marks": 2,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Repeated notes",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": null
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(d)(i)",
+   "page": 11,
+   "pages": [
+    11
+   ],
+   "crop": [
+    0.08,
+    0.09,
+    0.92,
+    0.23
+   ],
+   "questionText": "The texture of the music at the beginning of the excerpt is",
+   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 11,
+    "box": [
+     0.24,
+     0.124,
+     0.5,
+     0.23
+    ],
+    "what": "The three printed options (monophonic, homophonic, polyphonic)"
+   },
+   "topicId": "music-2-15",
+   "marks": 2,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Polyphonic texture",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": null
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(d)(ii)",
+   "page": 11,
+   "pages": [
+    11
+   ],
+   "crop": [
+    0.08,
+    0.23,
+    0.92,
+    0.427
+   ],
+   "questionText": "Give a reason for your choice.",
+   "questionContext": "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times.",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-15",
+   "marks": 2,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "criterion",
+     "text": "Subject 1/Strife theme is played in canon / in imitation by cello & violin and the woodwind",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Up to 2m for the reason for choice of texture",
+      "For example:",
+      "Partially correct answer = 1m"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "A \"For example\" model answer as a criterion; 1m printed. The reason is for the choice at (d)(i)."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(a)(i)",
+   "page": 12,
+   "pages": [
+    12
+   ],
+   "crop": [
+    0.08,
+    0.245,
+    0.92,
+    0.345
+   ],
+   "questionText": "The dance heard in this excerpt is",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1.",
+   "needsRecording": true,
+   "figure": {
+    "page": 12,
+    "box": [
+     0.24,
+     0.28,
+     0.72,
+     0.34
+    ],
+    "what": "The three printed options (a reel, a jig, a hornpipe)"
+   },
+   "topicId": "music-2-2",
+   "marks": 3,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Reel",
+     "marks": 3
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": null
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(a)(ii)",
+   "page": 12,
+   "pages": [
+    12
+   ],
+   "crop": [
+    0.08,
+    0.35,
+    0.92,
+    0.452
+   ],
+   "questionText": "The time signature of this dance is",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1.",
+   "needsRecording": true,
+   "figure": {
+    "page": 12,
+    "box": [
+     0.24,
+     0.383,
+     0.72,
+     0.45
+    ],
+    "what": "The three printed time signatures, each with a box"
+   },
+   "topicId": "music-2-2",
+   "marks": 3,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "4/4",
+     "marks": 3
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The options are music-font time signatures (in the figure); the scheme prints its answer as plain text \"4/4\", so no scheme crop."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(a)(iii)",
+   "page": 12,
+   "pages": [
+    12
+   ],
+   "crop": [
+    0.08,
+    0.455,
+    0.92,
+    0.625
+   ],
+   "questionText": "A typical bar of rhythm associated with this dance is",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1.",
+   "needsRecording": true,
+   "figure": {
+    "page": 12,
+    "box": [
+     0.24,
+     0.48,
+     0.52,
+     0.625
+    ],
+    "what": "The three printed rhythms, each with a box"
+   },
+   "topicId": "music-2-2",
+   "marks": 3,
+   "schemePage": 16,
+   "schemeCrop": {
+    "page": 16,
+    "box": [
+     0.14,
+     0.3,
+     0.87,
+     0.36
+    ],
+    "what": "the bar of rhythm printed in notation, and its 3 marks"
+   },
+   "rows": [
+    {
+     "type": "ask",
+     "text": "A typical bar of rhythm associated with this dance is",
+     "marks": 3,
+     "printedAnswer": true
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The scheme prints the rhythm in notation only: ask row and scheme crop."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(b)",
+   "page": 12,
+   "pages": [
+    12
+   ],
+   "crop": [
+    0.08,
+    0.675,
+    0.92,
+    0.753
+   ],
+   "questionText": "Name one instrument which plays the melody in this excerpt.",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1.",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-2",
+   "marks": 3,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "An instrument which plays the melody",
+     "options": [
+      "Flute",
+      "uillean pipes",
+      "fiddle"
+     ],
+     "claim": 1,
+     "per": 3,
+     "open": false,
+     "quote": [
+      "Any correct instrument which plays the melody"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "JUDGEMENT CALL (open vs closed): \"Any correct instrument which plays the melody\" then three instruments, with no \"For example\" or \"Any valid\" line: carded CLOSED, by REVIEW-FORMAT's own example (\"Any 2 correct instruments\" = closed). 2025 Ordinary Q5(d), worded the same, was carded open by another helper: the two should be made to agree. \"uillean\" is the scheme's spelling, kept."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(c)",
+   "page": 13,
+   "pages": [
+    13
+   ],
+   "crop": [
+    0.08,
+    0.09,
+    0.92,
+    0.217
+   ],
+   "questionText": "Name two instruments which play the accompaniment in this excerpt.",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2.",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-2",
+   "marks": 6,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "Instruments which play the accompaniment",
+     "options": [
+      "Guitar X 2",
+      "Bass",
+      "Piano / keyboard",
+      "Harp",
+      "Mandolin"
+     ],
+     "claim": 2,
+     "per": 3,
+     "open": false,
+     "quote": [
+      "Allow: Harp Mandolin",
+      "(any two correct instruments)"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Closed list: three instruments, then \"Allow:\" Harp and Mandolin, then \"(any two correct instruments)\"; marks printed 3 and 3. \"Guitar X 2\" (two guitars) kept as the scheme prints it."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(d)",
+   "page": 13,
+   "pages": [
+    13
+   ],
+   "crop": [
+    0.08,
+    0.24,
+    0.92,
+    0.38
+   ],
+   "questionText": "The form of the music in this excerpt is",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2.",
+   "needsRecording": true,
+   "figure": {
+    "page": 13,
+    "box": [
+     0.24,
+     0.263,
+     0.42,
+     0.38
+    ],
+    "what": "The three printed options (ABBA, AABB, AABC)"
+   },
+   "topicId": "music-2-2",
+   "marks": 3,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "AABC",
+     "marks": 3
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": null
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(e)",
+   "page": 13,
+   "pages": [
+    13
+   ],
+   "crop": [
+    0.08,
+    0.428,
+    0.92,
+    0.795
+   ],
+   "questionText": "This excerpt is a fusion of different styles of music. Discuss, with reference to the music heard in the excerpt.",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3.",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-2",
+   "marks": 4,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "criterion",
+     "text": "Up to 4 marks for correct reference to the fusion in the excerpt",
+     "marks": 4,
+     "steps": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "quote": [
+      "For example:",
+      "Irish traditional style: Reel; ornamentation",
+      "Classical style: String sustained notes/chords/syncopated chords/harmonies",
+      "Jazz: Chromatic, walking bassline; syncopation; improvised solo",
+      "Partially correct answer = 1m/2m/3m"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Discuss ask marked as a whole (as 2024 Higher Q5 A(d), the same excerpt and scheme words): the rule as the row, the three styles' examples quoted. Steps 1-3 printed."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(a)",
+   "page": 14,
+   "pages": [
+    14
+   ],
+   "crop": [
+    0.08,
+    0.378,
+    0.92,
+    0.52
+   ],
+   "questionText": "The accompaniment in this excerpt is played on",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times. An outline score of bars 1–3 is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 14,
+    "box": [
+     0.25,
+     0.405,
+     0.5,
+     0.518
+    ],
+    "what": "The three printed options (strings, woodwind, brass)"
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 17,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Strings",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": null
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(b)",
+   "page": 14,
+   "pages": [
+    14
+   ],
+   "crop": [
+    0.08,
+    0.532,
+    0.92,
+    0.7
+   ],
+   "questionText": "The missing time signature at X on the score above is",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times. An outline score of bars 1–3 is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 14,
+    "box": [
+     0.08,
+     0.24,
+     0.95,
+     0.7
+    ],
+    "what": "The outline score of bars 1-3 with X marked, down to the three printed time-signature options for (b)"
+   },
+   "topicId": "music-2-3",
+   "marks": 2,
+   "schemePage": 17,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "4/4",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The options are music-font time signatures (the text layer reads \"2\" and \"44\"); the scheme prints \"4/4\" as plain text. Filed music-2-3: notation on a score (the Atlas's secondary for Q6). The figure also shows (a)'s options, which sit between."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(c)",
+   "page": 15,
+   "pages": [
+    15
+   ],
+   "crop": [
+    0.08,
+    0.09,
+    0.92,
+    0.2
+   ],
+   "questionText": "Identify one feature of the accompaniment heard in this excerpt.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times.",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-4",
+   "marks": 3,
+   "schemePage": 17,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A feature of the accompaniment",
+     "options": [
+      "Repeated chords on strings",
+      "staccato chords on strings",
+      "block chords on strings",
+      "crotchet chords on strings",
+      "quaver chords on the upper strings",
+      "descending cello line",
+      "Descending, syncopated violin figure at end"
+     ],
+     "claim": 1,
+     "per": 3,
+     "open": true,
+     "quote": [
+      "Any feature of the accompaniment heard in the excerpt.",
+      "For example:",
+      "Partially correct answer = 1m/2m"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Example list (\"Any feature ... For example\"), split at the scheme's semicolons and its one full stop; open. The partial 1m/2m is quoted (a menu claims whole marks only)."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(d)",
+   "page": 15,
+   "pages": [
+    15
+   ],
+   "crop": [
+    0.08,
+    0.272,
+    0.92,
+    0.5
+   ],
+   "questionText": "Describe the texture of the music heard in this excerpt.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3, played three times.",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-4",
+   "marks": 4,
+   "schemePage": 17,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 4,
+     "steps": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "quote": [
+      "Up to 4 marks for a description of the texture of the music in the excerpt",
+      "Partially correct answer = 1m/2m/3m"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Rule only, no answer or example printed; steps from the printed partials."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(e)",
+   "page": 16,
+   "pages": [
+    16
+   ],
+   "crop": [
+    0.08,
+    0.09,
+    0.92,
+    0.232
+   ],
+   "questionText": "How many full bars of music are heard in the introduction?",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 4, played three times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 16,
+    "box": [
+     0.25,
+     0.118,
+     0.5,
+     0.23
+    ],
+    "what": "The three printed options (3 bars, 4 bars, 6 bars)"
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 17,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "4 bars",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": null
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(f)",
+   "page": 16,
+   "pages": [
+    16
+   ],
+   "crop": [
+    0.08,
+    0.245,
+    0.92,
+    0.352
+   ],
+   "questionText": "Identify one feature of the vocal music heard in this excerpt.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 4, played three times.",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-4",
+   "marks": 3,
+   "schemePage": 17,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A feature of the vocal music",
+     "options": [
+      "Vocals feature in the introduction",
+      "Vocal harmony",
+      "Syncopation",
+      "Repeated notes",
+      "Repeated motif",
+      "Moving by step and leap",
+      "Narrow range"
+     ],
+     "claim": 1,
+     "per": 3,
+     "open": true,
+     "quote": [
+      "Up to 3m for any feature of the vocal music in the excerpt",
+      "For example:",
+      "Partially correct answer = 1m/2m"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Example list (\"For example\"); open. The partial 1m/2m is quoted."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(g)",
+   "page": 16,
+   "pages": [
+    16
+   ],
+   "crop": [
+    0.08,
+    0.41,
+    0.92,
+    0.595
+   ],
+   "questionText": "Describe one difference between the music heard in Excerpt 4 and the music heard in Excerpt 5. Refer to both excerpts in your answer.",
+   "questionContext": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 4, played once more and Excerpt 5, played three times.",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-4",
+   "marks": 4,
+   "schemePage": 18,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A difference between Excerpt 4 and Excerpt 5",
+     "options": [
+      "Introduction — No introduction",
+      "Voice/s — No vocals",
+      "Vocal harmony — No vocal harmony",
+      "Lower/different key — Higher/different key",
+      "No piano — Piano",
+      "Faster tempo — Slower tempo",
+      "Guitar/bass guitar/drums — No guitar/bass guitar/drums",
+      "Vamping accompaniment — Broken chord accompaniment"
+     ],
+     "claim": 1,
+     "per": 4,
+     "open": true,
+     "quote": [
+      "Up to 4m for a valid difference between the music in excerpt 4 and the music in excerpt 5",
+      "Answers must refer to both excerpts and the same point of difference for full marks.",
+      "For example:",
+      "Partially correct answer = 1m/2m/3m"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Two-column \"For example\" table (Excerpt 4 / Excerpt 5): one option per row, \"<Excerpt 4> — <Excerpt 5>\"; open. Partial 1m/2m/3m quoted. Scheme page 18."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q1(a)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.08,
+    0.06,
+    0.92,
+    0.875
+   ],
+   "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ clarinet □ flute □ descant recorder",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-10",
+   "marks": 20,
+   "schemePage": 3,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     3
+    ],
+    "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)",
+    "stem": "Answer one question only in this section:",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Each Melody",
+      "max": 20,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Very good sense of key",
+        "marks": "18-20",
+        "guidance": [
+         "Very good melodic shape",
+         "Very good continuation of given opening",
+         "Very good rhythmic consistency",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Good sense of key",
+        "marks": "15-17",
+        "guidance": [
+         "Good melodic shape",
+         "Good continuation of given opening",
+         "Good rhythmic consistency",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Moderately good sense of key",
+        "marks": "12-14",
+        "guidance": [
+         "Moderately good melodic shape",
+         "Moderately good continuation of given opening",
+         "Moderately good rhythmic consistency",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Fair sense of key",
+        "marks": "9-11",
+        "guidance": [
+         "Fair melodic shape",
+         "Fair continuation of given opening",
+         "Fair rhythmic consistency",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Poor sense of key",
+        "marks": "6-8",
+        "guidance": [
+         "Poor melodic shape",
+         "Poor continuation of given opening",
+         "Poor rhythmic consistency",
+         "Inappropriate phrasing and expression marks inserted.",
+         "Unsuitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Very poor sense of key",
+        "marks": "3-5",
+        "guidance": [
+         "Very poor melodic shape",
+         "Very poor continuation of given opening",
+         "Very poor rhythmic consistency",
+         "No phrasing and expression marks inserted.",
+         "No instrument chosen."
+        ]
+       },
+       {
+        "label": "Very little or no attempt",
+        "marks": "0-2",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "\"Answer (a) and (b).\" prints two separately answered melodies; the scheme marks \"Each Melody\" on one 20-mark band table, \"20 + 20\". One ask and one card per melody. Each band joins its three printed marks (20 / 19 / 18 = 18-20 ... 2 / 1 / 0 = 0-2). The 2024 Ordinary scheme prints no rhythm notes for Section A, so no task requirements. Printed opening: 3/4, D major, Andante."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q1(b)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.08,
+    0.055,
+    0.92,
+    0.81
+   ],
+   "questionText": "Continuation of a given opening Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ clarinet □ flute □ descant recorder",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-10",
+   "marks": 20,
+   "schemePage": 3,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     3
+    ],
+    "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)",
+    "stem": "Answer one question only in this section:",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Each Melody",
+      "max": 20,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Very good sense of key",
+        "marks": "18-20",
+        "guidance": [
+         "Very good melodic shape",
+         "Very good continuation of given opening",
+         "Very good rhythmic consistency",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Good sense of key",
+        "marks": "15-17",
+        "guidance": [
+         "Good melodic shape",
+         "Good continuation of given opening",
+         "Good rhythmic consistency",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Moderately good sense of key",
+        "marks": "12-14",
+        "guidance": [
+         "Moderately good melodic shape",
+         "Moderately good continuation of given opening",
+         "Moderately good rhythmic consistency",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Fair sense of key",
+        "marks": "9-11",
+        "guidance": [
+         "Fair melodic shape",
+         "Fair continuation of given opening",
+         "Fair rhythmic consistency",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Poor sense of key",
+        "marks": "6-8",
+        "guidance": [
+         "Poor melodic shape",
+         "Poor continuation of given opening",
+         "Poor rhythmic consistency",
+         "Inappropriate phrasing and expression marks inserted.",
+         "Unsuitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Very poor sense of key",
+        "marks": "3-5",
+        "guidance": [
+         "Very poor melodic shape",
+         "Very poor continuation of given opening",
+         "Very poor rhythmic consistency",
+         "No phrasing and expression marks inserted.",
+         "No instrument chosen."
+        ]
+       },
+       {
+        "label": "Very little or no attempt",
+        "marks": "0-2",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "\"Answer (a) and (b).\" prints two separately answered melodies; the scheme marks \"Each Melody\" on one 20-mark band table, \"20 + 20\". One ask and one card per melody. Each band joins its three printed marks (20 / 19 / 18 = 18-20 ... 2 / 1 / 0 = 0-2). The 2024 Ordinary scheme prints no rhythm notes for Section A, so no task requirements. Its bullets repeat (a)'s word for word; only the printed opening differs (4/4, F major, Moderato)."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q2(a)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.08,
+    0.06,
+    0.92,
+    0.76
+   ],
+   "questionText": "Setting music to a given text Answer (a) and (b). Here is an extract from the poem Owl-blasted by John McClure. Who has heard the madmen Shall remember long All their goblin music And their goblin song. • The first two lines have been set to a rhythm. Compose a rhythm to fit the remaining words.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-11",
+   "marks": 40,
+   "schemePage": 4,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     4
+    ],
+    "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)",
+    "stem": "Answer one question only in this section:",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Q.2 SETTING MUSIC TO A GIVEN TEXT",
+      "max": 40,
+      "guidance": [
+       "Where there is no answer at (a) and no attempt at word setting at (b) award 0 marks."
+      ],
+      "bands": [
+       {
+        "label": "Very good rhythmic consistency with words",
+        "marks": "35-40",
+        "guidance": [
+         "Very good continuation of given opening",
+         "Very good sense of key",
+         "Very good melodic shape",
+         "Appropriate phrasing and expression marks inserted."
+        ]
+       },
+       {
+        "label": "Good rhythmic consistency with words",
+        "marks": "29-34",
+        "guidance": [
+         "Good continuation of given opening",
+         "Good sense of key",
+         "Good melodic shape",
+         "Appropriate phrasing and expression marks inserted."
+        ]
+       },
+       {
+        "label": "Moderately good rhythmic consistency with words",
+        "marks": "23-28",
+        "guidance": [
+         "Moderately good continuation of given opening",
+         "Moderately good sense of key",
+         "Moderately good melodic shape",
+         "Generally appropriate phrasing and expression marks inserted."
+        ]
+       },
+       {
+        "label": "Fair rhythmic consistency with words",
+        "marks": "17-22",
+        "guidance": [
+         "Fair continuation of given opening",
+         "Fair sense of key",
+         "Fair melodic shape",
+         "Generally appropriate phrasing and expression marks inserted."
+        ]
+       },
+       {
+        "label": "Poor rhythmic consistency with words",
+        "marks": "11-16",
+        "guidance": [
+         "Poor continuation of given opening",
+         "Poor sense of key",
+         "Poor melodic shape",
+         "Inappropriate phrasing and expression marks inserted."
+        ]
+       },
+       {
+        "label": "Very poor rhythmic consistency with words",
+        "marks": "5-10",
+        "guidance": [
+         "Very poor continuation of given opening",
+         "Very poor sense of key",
+         "Very poor melodic shape",
+         "No phrasing and expression marks inserted."
+        ]
+       },
+       {
+        "label": "Very little or no attempt",
+        "marks": "0-4",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": "c-a-q2",
+   "notes": "(a) the rhythm and (b) the melody are two printed parts the scheme marks together on one 40-mark band (\"Where there is no answer at (a) and no attempt at word setting at (b) award 0 marks.\"): both counted, one shared card c-a-q2. Each band joins its three printed ranges (39 – 40 / 37 – 38 / 35 – 36 = 35-40 ... 3 – 4 / 1 – 2 / 0 = 0-4).",
+   "label": "(a)"
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q2(b)",
+   "page": 7,
+   "pages": [
+    7
+   ],
+   "crop": [
+    0.08,
+    0.06,
+    0.92,
+    0.855
+   ],
+   "questionText": "Using the rhythm that you composed at (a), continue the opening below to make a melody of eight bars. • End on the keynote, that is, doh. • Write the words under the notes. • Add appropriate phrasing and expression marks to the melody.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-11",
+   "marks": 40,
+   "schemePage": 4,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": null,
+   "sharedCard": "c-a-q2",
+   "notes": "(a) the rhythm and (b) the melody are two printed parts the scheme marks together on one 40-mark band (\"Where there is no answer at (a) and no attempt at word setting at (b) award 0 marks.\"): both counted, one shared card c-a-q2. Each band joins its three printed ranges (39 – 40 / 37 – 38 / 35 – 36 = 35-40 ... 3 – 4 / 1 – 2 / 0 = 0-4).",
+   "label": "(b)"
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q3(a)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.08,
+    0.06,
+    0.92,
+    0.86
+   ],
+   "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ oboe □ trumpet □ violin",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-12",
+   "marks": 20,
+   "schemePage": 5,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     5
+    ],
+    "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)",
+    "stem": "Answer one question only in this section:",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Each Melody",
+      "max": 20,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Rhythm and style of dance very well maintained",
+        "marks": "18-20",
+        "guidance": [
+         "Very good sense of key",
+         "Very good melodic shape",
+         "Very good continuation of given opening",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Rhythm and style of dance well maintained",
+        "marks": "15-17",
+        "guidance": [
+         "Good sense of key",
+         "Good melodic shape",
+         "Good continuation of given opening",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Rhythm and style of dance moderately well maintained",
+        "marks": "12-14",
+        "guidance": [
+         "Moderately good sense of key",
+         "Moderately good melodic shape",
+         "Moderately good continuation of given opening",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Rhythm and style of dance fairly well maintained",
+        "marks": "9-11",
+        "guidance": [
+         "Fair sense of key",
+         "Fair melodic shape",
+         "Fair continuation of given opening",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Poor adherence to rhythm and style of dance",
+        "marks": "6-8",
+        "guidance": [
+         "Poor sense of key",
+         "Poor melodic shape",
+         "Poor continuation of given opening",
+         "Inappropriate phrasing and expression marks inserted.",
+         "Unsuitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Very poor adherence to rhythm and style of dance",
+        "marks": "3-5",
+        "guidance": [
+         "Very poor sense of key",
+         "Very poor melodic shape",
+         "Very poor continuation of given opening",
+         "No phrasing and expression marks inserted.",
+         "No instrument chosen."
+        ]
+       },
+       {
+        "label": "Very little or no attempt",
+        "marks": "0-2",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "\"Answer (a) and (b).\" prints two separately answered melodies; the scheme marks \"Each Melody\" on one 20-mark band table, \"20 + 20\". One ask and one card per melody. Each band joins its three printed marks (20 / 19 / 18 = 18-20 ... 2 / 1 / 0 = 0-2). The 2024 Ordinary scheme prints no rhythm notes for Section A, so no task requirements. (a) is the march (4/4, D major); (b) the waltz."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q3(b)",
+   "page": 9,
+   "pages": [
+    9
+   ],
+   "crop": [
+    0.08,
+    0.055,
+    0.92,
+    0.82
+   ],
+   "questionText": "Composing to a given dance rhythm or metre or form Answer (a) and (b). • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ oboe □ trumpet □ violin",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-12",
+   "marks": 20,
+   "schemePage": 5,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     5
+    ],
+    "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)",
+    "stem": "Answer one question only in this section:",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Each Melody",
+      "max": 20,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Rhythm and style of dance very well maintained",
+        "marks": "18-20",
+        "guidance": [
+         "Very good sense of key",
+         "Very good melodic shape",
+         "Very good continuation of given opening",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Rhythm and style of dance well maintained",
+        "marks": "15-17",
+        "guidance": [
+         "Good sense of key",
+         "Good melodic shape",
+         "Good continuation of given opening",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Rhythm and style of dance moderately well maintained",
+        "marks": "12-14",
+        "guidance": [
+         "Moderately good sense of key",
+         "Moderately good melodic shape",
+         "Moderately good continuation of given opening",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Rhythm and style of dance fairly well maintained",
+        "marks": "9-11",
+        "guidance": [
+         "Fair sense of key",
+         "Fair melodic shape",
+         "Fair continuation of given opening",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Poor adherence to rhythm and style of dance",
+        "marks": "6-8",
+        "guidance": [
+         "Poor sense of key",
+         "Poor melodic shape",
+         "Poor continuation of given opening",
+         "Inappropriate phrasing and expression marks inserted.",
+         "Unsuitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Very poor adherence to rhythm and style of dance",
+        "marks": "3-5",
+        "guidance": [
+         "Very poor sense of key",
+         "Very poor melodic shape",
+         "Very poor continuation of given opening",
+         "No phrasing and expression marks inserted.",
+         "No instrument chosen."
+        ]
+       },
+       {
+        "label": "Very little or no attempt",
+        "marks": "0-2",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "\"Answer (a) and (b).\" prints two separately answered melodies; the scheme marks \"Each Melody\" on one 20-mark band table, \"20 + 20\". One ask and one card per melody. Each band joins its three printed marks (20 / 19 / 18 = 18-20 ... 2 / 1 / 0 = 0-2). The 2024 Ordinary scheme prints no rhythm notes for Section A, so no task requirements. (b) is the waltz (3/4, G major)."
+  },
+  {
+   "paper": "composing",
+   "address": "Section B Q4",
+   "page": 12,
+   "pages": [
+    12,
+    13
+   ],
+   "crop": [
+    0.08,
+    0.06,
+    0.92,
+    0.82
+   ],
+   "questionText": "Composing melody and bass notes from a set of chords at cadence points Preparatory work: • Write out the scale of D major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Using the given rhythms, add melody and bass notes to complete the cadences and approach chords as follows: (i) At A, an imperfect cadence with approach chord (IV—I—V) (ii) At B, a perfect cadence with approach chord (ii—V—I) (iii) At C, an interrupted cadence with approach chord (I—V—vi) (iv) At D, a plagal cadence with approach chord (I—IV—I)",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-14",
+   "marks": 60,
+   "schemePage": 7,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     6,
+     7
+    ],
+    "markingGuideNote": "Section B – Harmony (60 marks)",
+    "stem": "Answer one question only in this section:",
+    "taskRequirements": [
+     "Chord Progressions - General points",
+     "1. Same chord in adjacent boxes not accepted",
+     "2. Accidental and suffix, where relevant, must be fully correct for mark to be awarded",
+     "3. Chords must be part of a good progression",
+     "4. V – ii generally not accepted",
+     "5. ii – I generally not accepted",
+     "Good Progressions",
+     "1. Falling 3rd = generally better than rising 3rd",
+     "2. Rising 4ths",
+     "3. Cadence progressions anywhere",
+     "4. Primary triads",
+     "Bass Line",
+     "1. No doubling of major 3rd under chord symbol",
+     "2. Treatment of LN",
+     "3. Stepwise movement to and from inversions = good",
+     "4. Good finish"
+    ],
+    "criteria": [
+     {
+      "id": "grid",
+      "label": "1 mark per correct note of chord",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Grid / Stave"
+      ]
+     },
+     {
+      "id": "melody-count",
+      "label": "1 mark per correct melody note which is part of the given chord and which falls on the correct beat of the bar. The given rhythms must be used (1 x 12)",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": []
+     },
+     {
+      "id": "melody-quality",
+      "label": "Up to 3 marks for quality of correct melody line at each cadence point, which fits well with the chord progression and correct bass notes (3 x 4)",
+      "max": 12,
+      "guidance": []
+     },
+     {
+      "id": "bass-count",
+      "label": "1 mark per correct bass note of the given chord and which falls on the correct beat of the bar. The given rhythms must be used (1 x 12)",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": []
+     },
+     {
+      "id": "bass-quality",
+      "label": "Up to 3 marks for quality of the correct bass line at each cadence point (3 x 4)",
+      "max": 12,
+      "guidance": []
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "Section B: the \"Preparatory work\" (scale and chord bank) is MARKED at Ordinary Level (\"Grid / Stave\", 1 mark per correct note of chord, 1 x 12), so its bullets are part of the question text and its line is a counted criterion. The chord bank prints I (\"The first chord is given\") and also iii and vii° already filled in and shaded, outside the five chords asked for (I, ii, IV, V and vi): the 12 notes are those of ii, IV, V and vi; the pre-filled chords are part of the printed question, not separate asks. The four cadence criteria are the scheme's \"Criteria for awarding marks at cadence points\" lines, each 12 over the four cadences (the per-cadence table A-D prints the same lines at 1 x 3 and 3). The two \"Up to 3 marks for quality ... (3 x 4)\" lines carry no bands and sit on 0-12. The Section B general points (scheme p6) are carried on all three questions. The 2024 Ordinary scheme prints NO table of given or accepted chords for Q4-Q6, so there is no scheme crop. Q4's (i)-(iv) name the cadences at A-D; one ask, one total."
+  },
+  {
+   "paper": "composing",
+   "address": "Section B Q5",
+   "page": 14,
+   "pages": [
+    14,
+    15
+   ],
+   "crop": [
+    0.08,
+    0.06,
+    0.92,
+    0.76
+   ],
+   "questionText": "Adding bass notes and chord indications at cadence points Preparatory work: • Write out the scale of B♭ major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Add suitable bass notes and chord indications to complete the cadences at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both. • Do not repeat the same chord in adjacent boxes.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-13",
+   "marks": 60,
+   "schemePage": 8,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     6,
+     8
+    ],
+    "markingGuideNote": "Section B – Harmony (60 marks)",
+    "stem": "Answer one question only in this section:",
+    "taskRequirements": [
+     "Chord Progressions - General points",
+     "1. Same chord in adjacent boxes not accepted",
+     "2. Accidental and suffix, where relevant, must be fully correct for mark to be awarded",
+     "3. Chords must be part of a good progression",
+     "4. V – ii generally not accepted",
+     "5. ii – I generally not accepted",
+     "Good Progressions",
+     "1. Falling 3rd = generally better than rising 3rd",
+     "2. Rising 4ths",
+     "3. Cadence progressions anywhere",
+     "4. Primary triads",
+     "Bass Line",
+     "1. No doubling of major 3rd under chord symbol",
+     "2. Treatment of LN",
+     "3. Stepwise movement to and from inversions = good",
+     "4. Good finish"
+    ],
+    "criteria": [
+     {
+      "id": "grid",
+      "label": "1 mark per correct note of chord",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Grid / Stave"
+      ]
+     },
+     {
+      "id": "chord-count",
+      "label": "1 mark per correct chord that fits the notes (1 x 12)",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": []
+     },
+     {
+      "id": "chord-quality",
+      "label": "Up to 3 marks for quality of chord progression at each cadence point, which fits well with the melody (3 x 4)",
+      "max": 12,
+      "guidance": []
+     },
+     {
+      "id": "bass-count",
+      "label": "1 mark per correct bass note of the chord and which falls on the correct beat of the bar (1 x 12)",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": []
+     },
+     {
+      "id": "bass-quality",
+      "label": "Up to 3 marks for quality of the bass line at each cadence point which fits well with the chord progression and melody notes (3 x 4)",
+      "max": 12,
+      "guidance": []
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "Section B: the \"Preparatory work\" (scale and chord bank) is MARKED at Ordinary Level (\"Grid / Stave\", 1 mark per correct note of chord, 1 x 12), so its bullets are part of the question text and its line is a counted criterion. The chord bank prints I (\"The first chord is given\") and also iii and vii° already filled in and shaded, outside the five chords asked for (I, ii, IV, V and vi): the 12 notes are those of ii, IV, V and vi; the pre-filled chords are part of the printed question, not separate asks. The four cadence criteria are the scheme's \"Criteria for awarding marks at cadence points\" lines, each 12 over the four cadences (the per-cadence table A-D prints the same lines at 1 x 3 and 3). The two \"Up to 3 marks for quality ... (3 x 4)\" lines carry no bands and sit on 0-12. The Section B general points (scheme p6) are carried on all three questions. The 2024 Ordinary scheme prints NO table of given or accepted chords for Q4-Q6, so there is no scheme crop. \"Bb\" is how the text layer prints B flat."
+  },
+  {
+   "paper": "composing",
+   "address": "Section B Q6",
+   "page": 16,
+   "pages": [
+    16,
+    17
+   ],
+   "crop": [
+    0.08,
+    0.06,
+    0.92,
+    0.765
+   ],
+   "questionText": "Adding descant notes and chord indications at cadence points Preparatory work: • Write out the scale of G major on the stave below. • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music on the following page. • Complete the phrase endings by adding suitable chords and descant notes at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-15",
+   "marks": 60,
+   "schemePage": 9,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     6,
+     9
+    ],
+    "markingGuideNote": "Section B – Harmony (60 marks)",
+    "stem": "Answer one question only in this section:",
+    "taskRequirements": [
+     "Chord Progressions - General points",
+     "1. Same chord in adjacent boxes not accepted",
+     "2. Accidental and suffix, where relevant, must be fully correct for mark to be awarded",
+     "3. Chords must be part of a good progression",
+     "4. V – ii generally not accepted",
+     "5. ii – I generally not accepted",
+     "Good Progressions",
+     "1. Falling 3rd = generally better than rising 3rd",
+     "2. Rising 4ths",
+     "3. Cadence progressions anywhere",
+     "4. Primary triads",
+     "Bass Line",
+     "1. No doubling of major 3rd under chord symbol",
+     "2. Treatment of LN",
+     "3. Stepwise movement to and from inversions = good",
+     "4. Good finish"
+    ],
+    "criteria": [
+     {
+      "id": "grid",
+      "label": "1 mark per correct note of chord",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Grid / Stave"
+      ]
+     },
+     {
+      "id": "chord-count",
+      "label": "1 mark per correct cadence chord (1 x 12)",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": []
+     },
+     {
+      "id": "chord-quality",
+      "label": "Up to 3 marks for quality of chord progression at each cadence point, which fits well with the melody (3 x 4)",
+      "max": 12,
+      "guidance": []
+     },
+     {
+      "id": "descant-count",
+      "label": "1 mark per correct descant note which is part of the chord and which falls on the correct beat of the bar (1 x 12)",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": []
+     },
+     {
+      "id": "descant-quality",
+      "label": "Up to 3 marks for quality of descant line at each cadence point, which fits well with the melody and bass notes (3 x 4)",
+      "max": 12,
+      "guidance": []
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "Section B: the \"Preparatory work\" (scale and chord bank) is MARKED at Ordinary Level (\"Grid / Stave\", 1 mark per correct note of chord, 1 x 12), so its bullets are part of the question text and its line is a counted criterion. The chord bank prints I (\"The first chord is given\") and also iii and vii° already filled in and shaded, outside the five chords asked for (I, ii, IV, V and vi): the 12 notes are those of ii, IV, V and vi; the pre-filled chords are part of the printed question, not separate asks. The four cadence criteria are the scheme's \"Criteria for awarding marks at cadence points\" lines, each 12 over the four cadences (the per-cadence table A-D prints the same lines at 1 x 3 and 3). The two \"Up to 3 marks for quality ... (3 x 4)\" lines carry no bands and sit on 0-12. The Section B general points (scheme p6) are carried on all three questions. The 2024 Ordinary scheme prints NO table of given or accepted chords for Q4-Q6, so there is no scheme crop."
+  }
+ ]
+}

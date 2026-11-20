@@ -59,9 +59,48 @@ LEVEL_WORD = {'higher': 'Higher Level', 'ordinary': 'Ordinary Level'}
 
 
 def norm(text):
-    text = unicodedata.normalize('NFKC', text or '').lower()
+    # A printed flat or sharp sign reaches the text layer as the music font's
+    # "b" / "#": compare a card's ♭ with that "b" (♯ and "#" both drop out below).
+    text = unicodedata.normalize('NFKC', (text or '').replace('♭', 'b')).lower()
     text = re.sub('[‐-―]', '-', text)
     return re.sub(r'[^a-z0-9Ā-ſ]+', '', text)
+
+
+MUSIC_FONTS = ('Opus', 'Rousseau', 'Maestro', 'Petrucci', 'Sonata', 'Bravura')
+SIGN = {'b': '♭', '#': '♯'}
+
+
+def music_signs(pdf):
+    """Where the text layer types a flat or sharp in a music font (OpusTextStd's "b" is
+    drawn as ♭, Rousseau's "#" as ♯): the line as the text layer spells it, a few
+    characters either side of the letter and its sign, whitespace collapsed. A card
+    string that spells one of these with the plain letter has dropped the printed
+    sign (2025 HL Composing Q4 "Eb major" for the printed E♭ major)."""
+    out = set()
+    for page in fitz.open(pdf):
+        for block in page.get_text('rawdict')['blocks']:
+            for line in block.get('lines', []):
+                chars = [(c['c'], span['font']) for span in line['spans'] for c in span['chars']]
+                text = ''.join(c for c, _ in chars)
+                for i, (c, font) in enumerate(chars):
+                    if c in SIGN and i and chars[i - 1][0] in 'ABCDEFG' and any(f in font for f in MUSIC_FONTS):
+                        left = re.sub(r'\s+', ' ', text[max(0, i - 7):i])
+                        right = re.sub(r'\s+', ' ', text[i + 1:i + 7])
+                        # a letter in the music font too is a chord symbol, unless it sits in a sentence
+                        # (2015 OL "the scale of B♭ major", both letters in OpusChords)
+                        if any(f in chars[i - 1][1] for f in MUSIC_FONTS) and not (left[:-1].strip() and right.strip()):
+                            continue
+                        out.add((left, c, right))
+    return out
+
+
+def dropped_sign(text, signs):
+    flat = re.sub(r'\s+', ' ', text or '')
+    for left, c, right in signs:
+        core = left[-2:] + c + right[:4]
+        if core in flat:
+            return f'{left}{SIGN[c]}{right}'
+    return None
 
 
 def recordings(year, deferred):
@@ -103,6 +142,8 @@ class Sitting:
         if os.path.exists(md):
             text += open(md, encoding='utf-8').read()
         self.scheme_text = norm(text)
+        self.scheme_signs = music_signs(self.scheme_pdf)
+        self.paper_signs = {kind: music_signs(path) for kind, path in self.papers.items()}
         self.attr_paper = (f'SEC Leaving Certificate Music {self.year} {LEVEL_WORD[self.level]} '
                            f'{"deferred " if self.deferred else ""}examination paper — © State Examinations Commission')
         self.attr_scheme = (f'SEC Leaving Certificate Music {self.year} {LEVEL_WORD[self.level]} marking scheme'
@@ -127,6 +168,9 @@ class Sitting:
     def scheme(self, text):
         if not text or norm(text) not in self.scheme_text:
             raise SystemExit(f'{self.year} {self.tag}: not in the scheme: {text!r}')
+        printed = dropped_sign(text, self.scheme_signs)
+        if printed:
+            raise SystemExit(f'{self.year} {self.tag}: the scheme prints a music-font sign here ({printed!r}): {text!r}')
         return text
 
     def paper(self, kind, text):
@@ -138,6 +182,9 @@ class Sitting:
         t = norm(text)
         if not t or (t not in self.paper_text.get(kind, '') and t not in self.ocr_text.get(kind, '')):
             raise SystemExit(f'{self.year} {self.tag}: not in the {kind} booklet: {text!r}')
+        printed = dropped_sign(text, self.paper_signs.get(kind, set()))
+        if printed:
+            raise SystemExit(f'{self.year} {self.tag}: the {kind} booklet prints a music-font sign here ({printed!r}): {text!r}')
         return text
 
     def quote(self, lines):
@@ -148,11 +195,13 @@ class Sitting:
         kind, addr = a['paper'], a['address']
         base = f'mus-{self.year}-{self.tag}'
         if kind == 'listening':
-            m = re.fullmatch(r'Q(\d)(?: ([AB]))?((?:\([a-z]+\))*)', addr)
+            # 2018 numbers its parts afresh under each excerpt: "Q1 Excerpt 2(i)".
+            m = re.fullmatch(r'Q(\d)(?: ([AB]))?(?: Excerpt (\d))?((?:\([a-z]+\))*)', addr)
             if not m:
                 raise SystemExit(f'listening address {addr!r}')
-            parts = re.findall(r'\(([a-z]+)\)', m.group(3))
-            return '-'.join(x for x in [f'{base}-l', f'q{m.group(1)}', (m.group(2) or '').lower(), *parts] if x)
+            parts = re.findall(r'\(([a-z]+)\)', m.group(4))
+            excerpt = f'x{m.group(3)}' if m.group(3) else ''
+            return '-'.join(x for x in [f'{base}-l', f'q{m.group(1)}', (m.group(2) or '').lower(), excerpt, *parts] if x)
         if kind == 'composing':
             # Ordinary Level prints two melodies under one question, "Answer (a) and (b)".
             m = re.fullmatch(r'Section ([AB]) Q(\d)((?:\([a-z]+\))*)', addr)
@@ -287,8 +336,22 @@ def question_text(s, a):
     """The ask's words, each piece checked against the booklet (the title and
     bullets of a composing question are checked one by one)."""
     text = a['questionText']
-    for piece in text.split(' • '):
-        s.paper(a['paper'], piece)
+    for line in text.split('\n'):
+        for piece in line.split(' • '):
+            s.paper(a['paper'], piece)
+    return text
+
+
+def printed_block(s, kind, text):
+    """A lead-in or excerpt line, each printed line checked against the booklet
+    on its own: the lines of the block, its bullets, and each numbered lyric line
+    ("Line 4 Galileo, ..."), label and words together. A reading of a page in
+    bands can repeat or reorder whole lines at a band edge, never a line's words."""
+    if any(r['booklet'] == kind and r['text'] == text for r in s.data.get('readFromPage', [])):
+        return text
+    for line in text.split('\n'):
+        for piece in re.split(r' (?=Line \d+ )', line.removeprefix('• ')):
+            s.paper(kind, piece)
     return text
 
 
@@ -309,6 +372,14 @@ def figure_keys(s, a, card, cid):
                                  f'cropped from page {sc["page"]} of the scheme.', s.attr_scheme, solution=True)
 
 
+def excerpt_name(line):
+    """The recording's name for the player: "Excerpt 2" (or "Excerpt 5 and Excerpt 6"), not the
+    whole printed heading with its lyrics; a heading that names no excerpt keeps its first clause."""
+    first = (line or '').split('\n')[0]
+    m = re.match(r'Excerpt \d+(?: and Excerpt \d+)?', first)
+    return m.group(0) if m else first.split(',')[0]
+
+
 def point_card(s, a, atlas):
     cid = s.card_id(a)
     q = int(s.question_number(a))
@@ -317,10 +388,10 @@ def point_card(s, a, atlas):
     atlas.check(s, a, topic)
     card = {'id': cid, 'subjectId': 'music', 'level': s.level, 'year': s.year,
             'section': {'listening': 'L', 'composing': 'A', 'elective': 'E'}[a['paper']],
-            'topicId': topic, 'conceptId': music_2025.concept(question), 'questionRef': s.ref(a),
+            'topicId': topic, 'conceptId': music_2025.concept(a.get('conceptText') or question), 'questionRef': s.ref(a),
             'questionText': question, 'totalMarks': a['marks'],
             'sourceMaterial': source_for(s, a, f'{BOOKLET[a["paper"]]} — Question {q}')}
-    stem = ' '.join(s.paper(a['paper'], x) for x in [a.get('questionContext'), a.get('excerptLine')] if x)
+    stem = ' '.join(printed_block(s, a['paper'], x) for x in [a.get('questionContext'), a.get('excerptLine')] if x)
     if stem:
         card['stem'] = stem
     if a.get('needsRecording'):
@@ -328,7 +399,7 @@ def point_card(s, a, atlas):
         fileid, url = recordings(s.year, s.deferred)[n]
         card['audioMaterial'] = {
             'kind': 'source-audio',
-            'label': f'Question {q} · {(a.get("excerptLine") or "").split(",")[0]}'.strip(' ·'),
+            'label': f'Question {q} · {excerpt_name(a.get("excerptLine"))}'.strip(' ·'),
             'title': f'{s.year} Music · {"Deferred " if s.deferred else ""}Listening test (Higher and Ordinary)'
                      if not s.deferred else f'{s.year} Music · Deferred listening test (Higher)',
             'playbackUrl': url, 'secFileid': fileid, 'canonicalUrl': url,
@@ -337,6 +408,9 @@ def point_card(s, a, atlas):
                                 'Use the player to move to the question and replay the excerpt.'}
     card['rows'] = build_rows(s, a)
     card['tariffModel'] = {'kind': 'fixed'}
+    if len(card['rows']) > 6:
+        # types/markBank.ts MAX_ROWS: a fixed-tariff point card shows at most six rows (markBankDeck.test.ts)
+        raise SystemExit(f'{s.ref(a)}: {len(card["rows"])} rows, over the six-row cap of a point card')
     figure_keys(s, a, card, cid)
     if any(r.get('printedAnswer') or r['type'] == 'ask' for r in a['rows']) and not a.get('schemeCrop'):
         raise SystemExit(f'{s.ref(a)}: an answer printed in notation needs the scheme crop')
@@ -353,7 +427,12 @@ def grid_criteria(s, spec):
             crit['guidance'] = [s.scheme(g) for g in k.get('guidance', [])]
             crit['counted'] = {'rate': rate, 'items': items}
         else:
-            crit['permittedMarks'] = list(range(k['max'] + 1))
+            top = k['max']
+            # A band line whose printed top is a half mark (2018 HL Composing Q4's
+            # bass quality, "8 – 9.5" beside 0.5 x 21 = 10.5): every whole mark
+            # below it and the printed top, as the bands print them.
+            ladder = list(range(int(top) + 1)) + ([top] if top != int(top) else [])
+            crit['permittedMarks'] = ladder
             crit['guidance'] = [s.scheme(g) for g in k.get('guidance', [])]
             if not k.get('bands'):
                 # "Up to 3 marks for quality ... (3 x 4)": placed on its marks, no descriptors printed.
@@ -363,8 +442,8 @@ def grid_criteria(s, spec):
             for b in k['bands']:
                 marks = b['marks']
                 if isinstance(marks, str):
-                    nums = [int(n) for n in re.findall(r'\d+', marks)]
-                    marks = list(range(min(nums), max(nums) + 1))
+                    nums = [float(n) for n in re.findall(r'\d+(?:\.\d+)?', marks)]
+                    marks = [m for m in ladder if min(nums) <= m <= max(nums)]
                 bands.append({'label': s.scheme(b['label']), 'marks': marks,
                               'guidance': [s.scheme(g) for g in b.get('guidance', [])]})
             crit['bands'] = bands
@@ -384,7 +463,7 @@ def grid_card(s, a, atlas, cid=None, ref=None, question=None):
              else 'Listening elective — Questions' if a['paper'] == 'elective'
              else f'Question {q} {a["address"].split(" ")[1][0]}' if ' ' in a['address'] else f'Question {q}')
     card = {'id': cid, 'kind': 'rubric', 'subjectId': 'music', 'level': s.level, 'year': s.year,
-            'section': section, 'topicId': topic, 'conceptId': music_2025.concept(question),
+            'section': section, 'topicId': topic, 'conceptId': music_2025.concept(a.get('conceptText') or question),
             'questionRef': ref or s.ref(a), 'questionText': question, 'totalMarks': a['marks'],
             'schemePages': spec['schemePages'],
             'rubric': {'system': 'french', 'taskRequirements': [s.scheme(x) for x in spec.get('taskRequirements', [])],
@@ -392,7 +471,9 @@ def grid_card(s, a, atlas, cid=None, ref=None, question=None):
                        'markingGuideNote': s.scheme(spec['markingGuideNote'])},
             'sourceMaterial': source_for(s, a, title)}
     if spec.get('stem'):
-        card['stem'] = s.paper(a['paper'], spec['stem'])
+        # A stem may carry several printed lines of the block (Q5's lead-in, then
+        # "B Answer one of the following:"): each line is checked on its own.
+        card['stem'] = '\n'.join(s.paper(a['paper'], x) for x in spec['stem'].split('\n'))
     if a.get('schemeCrop'):
         # The scheme's own print held back to the reveal: a composing question's
         # table of accepted chords, box by box, which a grid cannot carry.
@@ -477,6 +558,16 @@ def check(path, crops_to):
         # "Question 1 (25 marks)", or before 2021 a bare "(25)" beside the question number.
         for m in re.finditer(r'Question\s+(\d)\s*[\s\S]{0,40}?\((\d+)(?:\s*marks)?\)', text):
             printed.setdefault(int(m.group(1)), int(m.group(2)))
+        if not printed:
+            # Before 2021: "Q. 1 ..." opens a question and its total stands alone, "(25)", at its end
+            # (read from the text layer only: OCR readings repeat pages).
+            layer = '\n'.join(p.get_text() for p in fitz.open(s.papers['listening']))
+            heads = list(re.finditer(r'(?m)^\s*Q\.\s*(\d)\b', layer))
+            for k, h in enumerate(heads):
+                seg = layer[h.end():heads[k + 1].start() if k + 1 < len(heads) else len(layer)]
+                totals = re.findall(r'(?m)^\s*\((\d{1,3})\)\s*$', seg)
+                if totals:
+                    printed.setdefault(int(h.group(1)), int(totals[-1]))
     sums = {}
     for a in s.data['asks']:
         if a['paper'] != 'listening':

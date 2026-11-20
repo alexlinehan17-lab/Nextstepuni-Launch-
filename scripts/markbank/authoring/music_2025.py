@@ -66,7 +66,8 @@ AUDIO = {
 
 
 def norm(text):
-    text = unicodedata.normalize('NFKC', text or '').lower()
+    # a printed ♭ reaches the text layer as the music font's "b" (music_cards.norm)
+    text = unicodedata.normalize('NFKC', (text or '').replace('♭', 'b')).lower()
     text = re.sub('[‐-―]', '-', text)
     return re.sub(r'[^a-z0-9Ā-ſ]+', '', text)
 
@@ -425,7 +426,10 @@ def q5b(r):
               'pages': [r['page']], 'regions': [{'p': r['page'], 'r': r['crop']}], 'attribution': f'{ATTR_PAPER}.',
               'sourceLabel': 'Listening', 'presentationNote': 'The choice of questions as the listening booklet prints it.'}
     return grid_card(f'mus-2025-hl-l-q5-b-{roman}', f'2025 HL Listening Q5 B({roman})', 'L', 'music-2-13', question, 10,
-                     criterion, [19], source, stem=paper('listening', 'Answer one of the following:'))
+                     criterion, [19], source,
+                     stem='\n'.join(paper('listening', x) for x in (
+                         'Irish Music. Answer A and B. Note that B contains a choice of questions.',
+                         'B Answer one of the following:')))
 
 
 def elective(rows):

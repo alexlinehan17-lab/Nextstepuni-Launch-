@@ -8,7 +8,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
 import businessReference from '../data/examTopics/business.json';
 import businessEvidence from '../data/examTopics/business-local-crosswalk.json';
 import curriculumCrosswalk from '../data/examTopics/business-curriculum-crosswalk.json';
@@ -32,6 +32,11 @@ import {
 } from '../data/examTopics/registry';
 import { resolveCurriculumSpecification } from '../curriculumRegistry';
 import preservationBaseline from './fixtures/businessTopicQuestionBaseline.json';
+import { atlasHeadings, loadAllAtlasModels } from '../components/PaperTrail/atlasModel';
+
+// The single model (Alex, 18 Nov 2026): the Topic Atlas files every Business part under the one heading list the
+// Mark Bank uses, the new-course (2027 specification) headings. The 105-topic registry stays as evidence.
+beforeAll(() => loadAllAtlasModels());
 
 const ROOT = process.cwd();
 const VARIANTS = [
@@ -86,7 +91,11 @@ describe('Business exam-topic registry', () => {
       .toEqual(referenceTopics.map(topic => topic.id));
     expect(taxonomy.topics.map(topic => topic.label))
       .toEqual(referenceTopics.map(topic => topic.label));
-    expect(topicsForSubject('business')).toHaveLength(105);
+    // The Atlas shows one list: the new-course headings at both levels.
+    const newCourse = taxonomy.topics.filter(topic => topic.course === 'new').map(topic => topic.id);
+    expect(topicsForSubject('business').map(topic => topic.subtopicId).sort()).toEqual([...newCourse].sort());
+    expect(atlasHeadings('business')!.map(topic => topic.id).sort()).toEqual([...newCourse].sort());
+    expect(topicsForSubject('business')).toHaveLength(46);
   });
 
   it('keeps the official 2027 specification separate and bridges every practice bucket', () => {
@@ -174,7 +183,9 @@ describe('Business exam-topic registry', () => {
       const paper = topicsForPaper('business', target.year, target.level, 'ev', target.fileid);
       const question = paper?.q.find(candidate => candidate.n === target.questionNumber);
       expect(question, association.heading).toBeDefined();
-      const live = browseTopicIdsForQuestion(paper!, question!);
+      // The registry's reviewed topics for the question (the Atlas itself now files by part, new course).
+      const live = examTopicIdsForQuestion('business', target.level, target.year, 'main', target.questionNumber,
+        target.paperKey, 'ev');
       const key = `${association.topicId}|${association.heading}`;
       // StudyClix's topic is not on the reviewed question; the recorded SEC
       // topics are exactly the outgoing-course topics it does carry.
@@ -238,7 +249,8 @@ describe('Business exam-topic registry', () => {
   });
 
   it('exposes every official Business edition and top-level question through 2026', () => {
-    const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'business');
+    // June's editions; the carded deferred booklets ("…-deferred.pdf") are counted below.
+    const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'business' && !paper.fileid.endsWith('-deferred.pdf'));
     expect(businessEvidence.summary).toMatchObject({
       localPaperDocuments: 96,
       localPhysicalCards: 1442,
@@ -257,6 +269,14 @@ describe('Business exam-topic registry', () => {
       }
       expect(paper.q.map(question => question.n)).toEqual(
         expectedQuestionNumbers(paper.level, paper.year, paper.paperKey),
+      );
+    }
+    // The SEC's deferred sittings, carded (business_deferred.py): each booklet its own paper, numbered as June's.
+    const deferred = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'business' && paper.fileid.endsWith('-deferred.pdf'));
+    expect(deferred.map(paper => `${paper.year} ${paper.level} ${paper.fileid}`).sort()).toEqual(DEFERRED_BOOKLETS);
+    for (const paper of deferred) {
+      expect(paper.q.map(question => question.n)).toEqual(
+        expectedQuestionNumbers(paper.level as 'higher' | 'ordinary', paper.year, paper.paperKey),
       );
     }
   });
@@ -352,7 +372,8 @@ describe('Business exam-topic registry', () => {
   });
 
   it('keeps every available scheme sidecar valid and falls back honestly where absent', () => {
-    const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'business');
+    // June's editions; the deferred booklets open from paper-only anchors (business_deferred.py).
+    const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'business' && !paper.fileid.endsWith('-deferred.pdf'));
     let schemeMaps = 0;
     let paperOnlyVariants = 0;
     for (const paper of papers) {
@@ -378,10 +399,11 @@ describe('Business exam-topic registry', () => {
     expect(paperOnlyVariants).toBe(14);
   });
 
-  it('surfaces all 721 entitled questions through all 105 topic buckets', () => {
+  it('surfaces all 721 entitled questions, and the carded deferred sittings\', through the 46 headings of the one list', () => {
+    // + the carded deferred sittings' printed questions (2022 Higher 21, 2022 Ordinary 24, 2023 Higher 21).
     expect(subjectAtlasStats('business')).toMatchObject({
-      questions: 721,
-      topics: 105,
+      questions: 721 + 21 + 24 + 21,
+      topics: 46,
       yearMin: 2010,
       yearMax: 2026,
     });
@@ -395,6 +417,12 @@ describe('Business exam-topic registry', () => {
     )).toBe(5708);
   });
 });
+
+const DEFERRED_BOOKLETS = [
+  '2022 higher LC033ALP032EV-deferred.pdf', '2022 higher LC033ALP041EV-deferred.pdf',
+  '2022 ordinary LC033GLP032EV-deferred.pdf', '2022 ordinary LC033GLP033EV-deferred.pdf',
+  '2023 higher LC033ALP032EV-deferred.pdf', '2023 higher LC033ALP041EV-deferred.pdf',
+];
 
 function expectedQuestionNumbers(
   level: 'higher' | 'ordinary',

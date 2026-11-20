@@ -44,6 +44,22 @@ const REVIEWED_SITTINGS = new Set(reviewAudit.reviewedSittings
 const isReviewed = (card: { year: number; level: string }) =>
   REVIEWED_SITTINGS.has(`${card.year}-${card.level}`);
 const LEGACY = ALL.filter(card => !isReviewed(card));
+// The SEC's deferred sittings (geography_review_<year>_hl_deferred.py) are papers of their own: "-deferred"
+// booklets, " — Deferred sitting" after any route label. June's pins count June; these count the deferred.
+const DEFERRED_REF = ' — Deferred sitting';
+const DEFERRED_SITTINGS: Record<string, { tasks: number; cards: number; routed: number }> = {
+  '2022-higher': { tasks: 112, cards: 120, routed: 5 },
+  '2023-higher': { tasks: 114, cards: 124, routed: 4 },
+  '2024-higher': { tasks: 112, cards: 124, routed: 6 },
+  '2025-higher': { tasks: 109, cards: 120, routed: 5 },
+};
+const deferredTotal = (key: 'tasks' | 'cards' | 'routed') =>
+  Object.values(DEFERRED_SITTINGS).reduce((sum, row) => sum + row[key], 0);
+const isDeferred = (card: { paperFileid?: string | null }) => String(card.paperFileid ?? '').endsWith('-deferred');
+// A printed task's family: its reference before any route label, the deferred suffix kept apart from June's.
+const familyOf = (ref: string) => ref.split(' · ')[0].replace(DEFERRED_REF, '')
+  + (ref.endsWith(DEFERRED_REF) ? DEFERRED_REF : '');
+const inFamily = (cardRef: string, ref: string) => familyOf(cardRef) === familyOf(ref);
 const REVIEWED = ALL.filter(isReviewed);
 const authoredById = new Map(authored.cards.map(card => [card.id, card]));
 // Every paper task is carded since the 2021 Ordinary review, so the census's
@@ -78,17 +94,17 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
     // 2011 legend was never published; 2010 OL Part One Q4 is answered by the
     // scheme's labelled drawing; 2020 OL 9C is priced 27 of its printed 30)
     // are carded with exactly what the paper and scheme print.
-    expect(census.paperBaseTasks).toBe(3869);
-    expect(census.includedBaseTasks).toBe(3869);
+    expect(census.paperBaseTasks).toBe(3869 + deferredTotal('tasks'));
+    expect(census.includedBaseTasks).toBe(3869 + deferredTotal('tasks'));
     expect(census.excludedBaseTasks).toBe(0);
     expect(census.includedBaseTasks + census.excludedBaseTasks)
       .toBe(census.paperBaseTasks);
-    expect(census.authoredCards).toBe(4153);
-    expect(census.baseTasks).toHaveLength(3869);
-    expect(census.baseTasks.filter(task => task.status === 'authored')).toHaveLength(3869);
+    expect(census.authoredCards).toBe(4153 + deferredTotal('cards'));
+    expect(census.baseTasks).toHaveLength(3869 + deferredTotal('tasks'));
+    expect(census.baseTasks.filter(task => task.status === 'authored')).toHaveLength(3869 + deferredTotal('tasks'));
     expect(census.baseTasks.filter(task => task.status === 'excluded')).toHaveLength(0);
     expect(EXCLUSIONS).toEqual([]);
-    expect(census.sittings).toHaveLength(34);
+    expect(census.sittings).toHaveLength(34 + Object.keys(DEFERRED_SITTINGS).length);
 
     const expected = {
       '2010-higher': 106, '2010-ordinary': 114,
@@ -111,17 +127,22 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
     } as const;
     for (const [sitting, cards] of Object.entries(expected)) {
       const [year, level] = sitting.split('-');
-      expect(ALL.filter(card => card.year === Number(year) && card.level === level), sitting)
+      expect(ALL.filter(card => card.year === Number(year) && card.level === level && !isDeferred(card)), sitting)
         .toHaveLength(cards);
+    }
+    for (const [sitting, row] of Object.entries(DEFERRED_SITTINGS)) {
+      const [year, level] = sitting.split('-');
+      expect(ALL.filter(card => card.year === Number(year) && card.level === level && isDeferred(card)),
+        `${sitting} deferred`).toHaveLength(row.cards);
     }
   });
 
   it('maps the generated manifest one-to-one to the live decks', () => {
-    expect(HIGHER).toHaveLength(2007);
+    expect(HIGHER).toHaveLength(2007 + deferredTotal('cards'));
     expect(ORDINARY).toHaveLength(2146);
-    expect(ALL).toHaveLength(4153);
-    expect(authored.meta.cardCount).toBe(4153);
-    expect(new Set(ALL.map(card => card.id)).size).toBe(4153);
+    expect(ALL).toHaveLength(4153 + deferredTotal('cards'));
+    expect(authored.meta.cardCount).toBe(4153 + deferredTotal('cards'));
+    expect(new Set(ALL.map(card => card.id)).size).toBe(4153 + deferredTotal('cards'));
     expect(ALL.map(card => card.id).sort())
       .toEqual(authored.cards.map(card => card.id).sort());
 
@@ -141,14 +162,14 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
   it('expands every closed choose-one route and keeps every choose-N pool as one card', () => {
     // 152 printed choose-one / (i)-or-(ii) routings; 85 choose-N-of-M pools
     // (N >= 2), each one card (choice is not a route).
-    expect(census.selectionAudit).toHaveLength(237);
+    expect(census.selectionAudit).toHaveLength(237 + deferredTotal('routed'));
     expect(census.selectionAudit.filter(entry => entry.classification === 'finite-expanded'))
-      .toHaveLength(152);
+      .toHaveLength(152 + deferredTotal('routed'));
     expect(census.selectionAudit.filter(entry => entry.classification === 'single-card-choice'))
       .toHaveLength(85);
     for (const selection of census.selectionAudit) {
       const variants = ALL.filter(card => card.questionRef === selection.questionRef
-        || card.questionRef.startsWith(`${selection.questionRef} ·`));
+        || inFamily(card.questionRef, selection.questionRef));
       expect(variants, selection.questionRef).toHaveLength(selection.variants);
       // Each route names its printed option in questionRef.
       expect(new Set(variants.map(card => card.questionRef)).size, selection.questionRef)
@@ -156,7 +177,7 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
     }
 
     const deposition = HIGHER.filter(card =>
-      card.questionRef.startsWith('2025 HL Part 2 Q2B'));
+      card.questionRef.startsWith('2025 HL Part 2 Q2B') && !isDeferred(card));
     expect(deposition.map(card => card.questionRef)).toEqual([
       '2025 HL Part 2 Q2B · Route (i) · one fluvial landform',
       '2025 HL Part 2 Q2B · Route (i) · one coastal landform',
@@ -178,8 +199,7 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
     for (const exclusion of EXCLUSIONS) {
       const base = `${exclusion.year} ${levelRef(exclusion.level)} Part ${exclusion.part} `
         + `Q${exclusion.questionRef}`;
-      const shipped = ALL.filter(card => card.questionRef === base
-        || card.questionRef.startsWith(`${base} ·`));
+      const shipped = ALL.filter(card => card.questionRef === base || inFamily(card.questionRef, base));
       expect(shipped.map(card => card.id), base).toEqual([]);
     }
     const companionTasks = ALL.filter(card =>
@@ -311,7 +331,8 @@ describe('Geography prompt, source and marking integrity', () => {
       expect(generated.schemePage, generated.id).toBeGreaterThan(0);
       expect(generated.schemeGuidance.length, generated.id).toBeGreaterThan(0);
       expect(runtime.paperFileid, generated.id).toBe(resolvePaperFileid(
-        'geography', generated.year, generated.level, String(generated.part)));
+        'geography', generated.year, generated.level, String(generated.part),
+        isDeferred(generated) ? 'deferred' : 'main'));
     }
   });
 
@@ -332,9 +353,9 @@ describe('Geography prompt, source and marking integrity', () => {
       expect(card.sourceMaterial!.presentationNote, card.id)
         .toMatch(/official|exact/i);
       // Map (003), legend (C00) and aerial (004); 2010's legend sheet is the
-      // common-level JPEG LC005CLP000EV.jpg.
+      // common-level JPEG LC005CLP000EV.jpg; a deferred sitting's own companions are "-deferred".
       for (const source of card.additionalSourceMaterials ?? []) {
-        expect(source.sourceFileid, card.id).toMatch(/^LC005CLP(?:C00|000|003|004)EV(?:\.jpg)?$/);
+        expect(source.sourceFileid, card.id).toMatch(/^LC005CLP(?:C00|000|003|004)EV(?:-deferred)?(?:\.jpg)?$/);
         expect(source.pages, card.id).toEqual([1]);
         expect(source.attribution, card.id).toContain('State Examinations Commission');
       }
@@ -669,7 +690,7 @@ describe('independently reviewed Geography sittings', () => {
   ] as const)('keeps every shipped %s %s id (live or progress-aliased) and adds only newly separated parts',
     (year, level, legacy, added, corrected) => {
       const review = sitting(year, level);
-      const ids = new Set(ALL.filter(card => card.year === year && card.level === level)
+      const ids = new Set(ALL.filter(card => card.year === year && card.level === level && !isDeferred(card))
         .map(card => card.id));
       expect(review.legacyIds).toHaveLength(legacy);
       // A shipped combination card of a choose-N pool is withdrawn and its
@@ -720,7 +741,7 @@ describe('independently reviewed Geography sittings', () => {
   });
 
   it('carries the published allocation line by line on every reviewed card', () => {
-    expect(REVIEWED).toHaveLength(4153);
+    expect(REVIEWED).toHaveLength(4153 + deferredTotal('cards'));
     expect(REVIEWED.filter(card => card.rubric.system === 'geography' && card.rubric.unpricedMarks)
       .map(card => card.id)).toEqual(['geography-2020-ol-p2-q9c']);
     for (const card of REVIEWED) {
@@ -1952,7 +1973,12 @@ describe('independently reviewed Geography sittings', () => {
           .map(source => source!.sourceFileid ?? 'page');
         // A printed evidence route ("the aerial photograph OR the map") carries only its own evidence.
         const routeSources = ('routeSources' in task ? task.routeSources : {}) as Record<string, string[]>;
-        const expected = (routeSources[id] ?? task.sources).map((source: string) => ({
+        // A deferred sitting carries its own companions, filed by Paper Trail as "<name>-deferred".
+        const deferred = 'sitting' in review && review.sitting === 'deferred';
+        const expected = (routeSources[id] ?? task.sources).map((source: string) => (deferred ? {
+          page: 'page', map: 'LC005CLP003EV-deferred', legend: 'LC005CLPC00EV-deferred',
+          aerial: 'LC005CLP004EV-deferred.jpg',
+        } : {
           page: 'page', map: map[review.year] ?? 'LC005CLP003EV', legend: legend[review.year] ?? 'LC005CLPC00EV',
           aerial: aerial[review.year],
         } as Record<string, string>)[source]);
@@ -2170,7 +2196,7 @@ describe('choice is not a route (bank-wide layout rule, 2026-10-12)', () => {
     expect(pools).toHaveLength(85);
     for (const row of pools) {
       const cards = ALL.filter(card => card.questionRef === row.questionRef
-        || card.questionRef.startsWith(`${row.questionRef} ·`));
+        || inFamily(card.questionRef, row.questionRef));
       expect(cards, row.questionRef).toHaveLength(row.variants);
       for (const card of cards) {
         const bullets = card.questionText.split('\n').filter(line => line.startsWith('• '));
@@ -2186,9 +2212,9 @@ describe('choice is not a route (bank-wide layout rule, 2026-10-12)', () => {
     // paper's own (i)/(ii) parts, each with its own scheme, differ.
     const families = new Map<string, Set<string>>();
     for (const card of ALL) {
-      const [base, ...labels] = card.questionRef.split(' · ');
+      const [, ...labels] = card.questionRef.replace(DEFERRED_REF, '').split(' · ');
       const printedPart = labels.find(label => /^Route \((?:i|ii)\)$/.test(label)) ?? '';
-      const key = `${base}|${printedPart}`;
+      const key = `${familyOf(card.questionRef)}|${printedPart}`;
       families.set(key, (families.get(key) ?? new Set()).add(card.questionText));
     }
     expect([...families].filter(([, texts]) => texts.size > 1).map(([key]) => key)).toEqual([]);
@@ -2206,7 +2232,7 @@ describe('choice is not a route (bank-wide layout rule, 2026-10-12)', () => {
     // Before -> after, per family: 2025 Higher Q9B kept one card per printed
     // activity (a choose-one route) and folded each factor pair into it.
     const familySize = (ref: string) => ALL.filter(card => card.questionRef === ref
-      || card.questionRef.startsWith(`${ref} ·`)).length;
+      || inFamily(card.questionRef, ref)).length;
     expect(familySize('2021 HL Part 2 Q6C')).toBe(1);
     expect(familySize('2022 HL Part 2 Q9B')).toBe(3);
     expect(familySize('2025 HL Part 2 Q9B')).toBe(3);
