@@ -1821,6 +1821,11 @@
    "irish|irish-higher-grammar|2023 - Paper Two - Section 1 - Question 1 - Part B - Question 6A|LC001ALP200IV.pdf|Q12"
   ],
   "italian": [
+   "italian|italian-ordinary-ads-general-advertisements|2019 - Paper - Section B - Question 1|LC013GLP000BV.pdf|Q10",
+   "italian|italian-ordinary-ads-general-advertisements|2019 - Paper - Section B - Question 1|LC013GLP000BV.pdf|Q11",
+   "italian|italian-ordinary-ads-general-advertisements|2019 - Paper - Section B - Question 1|LC013GLP000BV.pdf|Q12",
+   "italian|italian-ordinary-ads-general-advertisements|2019 - Paper - Section B - Question 1|LC013GLP000BV.pdf|Q13",
+   "italian|italian-ordinary-ads-general-advertisements|2019 - Paper - Section B - Question 4|LC013GLP000BV.pdf|Q24",
    "italian|italian-ordinary-ads-general-advertisements|2021 - Exam Paper - Section B - Question 1|LC013GLP000BV.pdf|Q10",
    "italian|italian-ordinary-ads-general-advertisements|2021 - Exam Paper - Section B - Question 1|LC013GLP000BV.pdf|Q11",
    "italian|italian-ordinary-ads-general-advertisements|2021 - Exam Paper - Section B - Question 1|LC013GLP000BV.pdf|Q12",
@@ -1832,6 +1837,12 @@
    "italian|italian-ordinary-ads-rulessafety-instructions|2022 - Paper - Section B - Question 5|LC013GLP000BV.pdf|Q25",
    "italian|italian-ordinary-ads-rulessafety-instructions|2024 - Paper - Section B - Question 5|LC013GLP000BV.pdf|Q25",
    "italian|italian-ordinary-ads-rulessafety-instructions|2025 - Paper - Section B - Question 5|LC013GLP000BV.pdf|Q26",
+   "italian|italian-ordinary-ads-special-offersoccasions|2019 - Paper - Section B - Question 2|LC013GLP000BV.pdf|Q14",
+   "italian|italian-ordinary-ads-special-offersoccasions|2019 - Paper - Section B - Question 2|LC013GLP000BV.pdf|Q15",
+   "italian|italian-ordinary-ads-special-offersoccasions|2019 - Paper - Section B - Question 2|LC013GLP000BV.pdf|Q16",
+   "italian|italian-ordinary-ads-special-offersoccasions|2019 - Paper - Section B - Question 2|LC013GLP000BV.pdf|Q17",
+   "italian|italian-ordinary-ads-special-offersoccasions|2019 - Paper - Section B - Question 2|LC013GLP000BV.pdf|Q18",
+   "italian|italian-ordinary-ads-special-offersoccasions|2019 - Paper - Section B - Question 2|LC013GLP000BV.pdf|Q19",
    "italian|italian-ordinary-ads-special-offersoccasions|2022 - Paper - Section B - Question 3|LC013GLP000BV.pdf|Q18",
    "italian|italian-ordinary-ads-special-offersoccasions|2022 - Paper - Section B - Question 3|LC013GLP000BV.pdf|Q19",
    "italian|italian-ordinary-ads-special-offersoccasions|2022 - Paper - Section B - Question 3|LC013GLP000BV.pdf|Q20",
@@ -2305,6 +2316,18 @@
    "mathematics|mathematics-ordinary-trigonometry|2020 - Paper Two - Section B - Question 8 - Part b|LC003GLP200IV.pdf|Q8",
    "mathematics|mathematics-ordinary-trigonometry|2023 - Paper 2 - Section B - Question 8 - Part C - (i)|LC003GLP200EV.pdf|Q8",
    "mathematics|mathematics-ordinary-trigonometry|2023 - Paper 2 - Section B - Question 8 - Part C - (i)|LC003GLP200IV.pdf|Q8"
+  ],
+  "music": [
+   "music|music-higher-composing-melody-and-bass-from-chords|2015 - Composing Paper - Section A - Question 3|LC067ALP006EV.pdf|Q3",
+   "music|music-higher-composing-melody-and-bass-from-chords|2015 - Composing Paper - Section A - Question 3|LC067ALP006IV.pdf|Q3",
+   "music|music-ordinary-adding-bass-and-chords-at-cadence-points|2018 - Composing Paper - Section B - Question 4|LC067GLP006EV.pdf|Q4",
+   "music|music-ordinary-adding-bass-and-chords-at-cadence-points|2018 - Composing Paper - Section B - Question 4|LC067GLP006IV.pdf|Q4",
+   "music|music-ordinary-adding-bass-and-chords-at-cadence-points|2019 - Composing Paper - Section A - Question 6|LC067GLP006EV.pdf|Q6",
+   "music|music-ordinary-adding-bass-and-chords-at-cadence-points|2019 - Composing Paper - Section A - Question 6|LC067GLP006IV.pdf|Q6",
+   "music|music-ordinary-composing-bass-and-melody-from-chords|2014 - Composing - Section B - Question 1|LC067GLP006EV.pdf|Q1",
+   "music|music-ordinary-composing-bass-and-melody-from-chords|2014 - Composing - Section B - Question 1|LC067GLP006IV.pdf|Q1",
+   "music|music-ordinary-composing-to-a-given-rhythm-or-meter|2019 - Composing Paper - Section A - Question 2|LC067GLP006EV.pdf|Q2",
+   "music|music-ordinary-composing-to-a-given-rhythm-or-meter|2019 - Composing Paper - Section A - Question 2|LC067GLP006IV.pdf|Q2"
   ],
   "physical-education": [
    "physical-education|physical-education-higher-2-psychological-demands-of-performance|2020 - Paper - Section A - Question 4|LC225ALP000EV.pdf|Q4",

@@ -197,6 +197,14 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
       const e = italian[c.id];
       return e?.n ? { fileid: e.fileid, cands: [e.n], cls: 'join' } : { fail: e ? 'no-atlas-question' : 'no-join-entry', cls: 'join' };
     }
+    case 'polish': case 'portuguese': {
+      // A listening card cites "Section L<A-E> Q<n>" and carries the listening booklet's file id (…LPA00…, build-deck's
+      // resolver, queue 3); the Atlas lists that booklet one row per part, A to E. The card's own Q<n> numbers the
+      // question inside its part, so it never addresses the booklet's rows.
+      const l = /\bSection L([A-E])\b/.exec(ref);
+      if (l) return { fileid: fid, cands: [String('ABCDE'.indexOf(l[1]) + 1)], cls: 'inferred' };
+      const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
+    }
     default: {
       void atlas;
       const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };

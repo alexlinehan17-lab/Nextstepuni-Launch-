@@ -6,7 +6,7 @@ import { masteryForSubject } from '../components/PaperTrail/topicMastery';
 import { evidenceForCurriculumNode } from '../components/PaperTrail/topicEvidence';
 import { resolveCurriculumSpecification, resolveSubjectId } from '../curriculumRegistry';
 import { SUBJECTS, loadCards, levelsFor } from '../components/MarkBank/deck';
-import { cardsForCurriculumNode, markBankCurriculumMenu } from '../components/MarkBank/curriculumMenu';
+import { cardsForMenuTopic, markBankCurriculumMenu } from '../components/MarkBank/curriculumMenu';
 import { LC_SUBJECTS, JC_SUBJECTS } from '../components/subjectData';
 import { loadAllAtlasModels as loadAtlasModelsForTest } from '../components/PaperTrail/atlasModel';
 // The single model: subjects' filings load when they open; these checks read every one.
@@ -45,7 +45,7 @@ describe('topic connections', () => {
     expect(menu.spec?.id).toBe('latin:2027');
     // Latin is in the single model: its menu is the one heading list (no separate original-paper strand).
     expect(menu.model).toBe(true);
-    const reachable = new Set(menu.strands.flatMap(strand => strand.topics.flatMap(topic => cardsForCurriculumNode(topic.id, cards, menu.spec).map(card => card.id))));
+    const reachable = new Set(menu.strands.flatMap(strand => strand.topics.flatMap(topic => cardsForMenuTopic(topic.id, cards, menu).map(card => card.id))));
     expect(reachable.size).toBe(cards.length);
   });
   // Keep the complete corpus sweep, with a timeout per subject rather than one
@@ -55,7 +55,7 @@ describe('topic connections', () => {
       const cards = await loadCards(subject.id, level);
       for (const year of [2026, 2027, 2029]) {
         const menu = markBankCurriculumMenu(subject.id, level, `${year}-06-02`, cards);
-        const reachable = new Set(menu.strands.flatMap(strand => strand.topics.flatMap(topic => cardsForCurriculumNode(topic.id, cards, menu.spec).map(card => card.id))));
+        const reachable = new Set(menu.strands.flatMap(strand => strand.topics.flatMap(topic => cardsForMenuTopic(topic.id, cards, menu).map(card => card.id))));
         expect(cards.filter(card => !reachable.has(card.id)).map(card => card.id), `${subject.id}/${level}/${year}`).toEqual([]);
       }
     }

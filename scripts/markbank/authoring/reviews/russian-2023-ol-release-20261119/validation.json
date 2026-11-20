@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-20T00:38:41.577019+00:00",
+  "base": "8c248453c0d74172f0e05e0f0729dc3be8f5edfb",
+  "sitting": "Russian 2023 Ordinary",
+  "asksCarded": 47,
+  "newCards": 0,
+  "changedExistingCards": 3,
+  "unchangedReviewedCards": 44,
+  "allPreviousIdsAndConceptIdsPreserved": true,
+  "otherRussianCardsByteIdentical": true,
+  "selectedCardsExactlyMatchApprovedProposalExceptQaDate": true,
+  "allOtherSubjectCardFilesByteIdentical": true,
+  "selectedCardAtlasPrimaryMismatches": 0,
+  "supersededExclusionsRemoved": 26,
+  "subjectReconciliation": "ledger.json; later approved sittings still to replay",
+  "sourceFilingsProvidedThisSitting": 0,
+  "sourceFilingsProvidedInBatch": 134,
+  "generatedModel": "Coordinator must combine these new/changed asks with its independent Stage 1r filings; model builder pending on this base"
+}
