@@ -2013,6 +2013,62 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2019 Higher Level — © State Examinations Commission.",
+    id: "mgr-2019-hl-2", topicId: "modern-greek-1-0", conceptId: "mgr-έναν-αναφορές-αξία",
+    section: "2", questionRef: "2019 HL Section 2",
+    questionText: "Σε ένα κείμενο 100 περίπου λέξεων και κάνοντας τις σχετικές αναφορές στο κείμενο που διαβάσατε, να συζητήσετε την αξία του διαδικτύου (internet) ως ένα μέσο που βοηθάει έναν μετανάστη να κατανοήσει και να εκτιμήσει την ταυτότητα του σε βάθος.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Το διαδίκτυο μπορεί επίσης να αποδειχθεί μία γέφυρα επικοινωνίας κάποιες φορές και η μοναδική, αφού ο μετανάστης μέσα από τα διαδίκτυο μπορεί να συνομιλεί, να βλέπει και να συμμετέχει σε αυτά που γίνονται στην πατρίδα που άφησε πίσω του .Του προσφέρει την άμεση εμπειρία από το μέρος που έφυγε, μία βιβλιοθήκη, μια εφημερίδα του τόπου του, το τηλέφωνο με τους συγγενείς του, την πηγή ανταλλαγής πληροφοριών για την ιστορία , τον πολιτισμό του. Του δημιουργεί κίνητρο, του δίνει τα μέσα να κρατήσει ζωντανή τη γλώσσα του, τη μουσική , την παράδοση .Και αυτό είναι πολύ σημαντικό , γιατί φεύγοντας πήρε μαζί του μόνο λίγα υπάρχοντα , αλλά πολλές αναμνήσεις και πόνο.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2019 Higher Level — © State Examinations Commission.",
+    id: "mgr-2019-hl-3-1", topicId: "modern-greek-1-0", conceptId: "mgr-ανθρώπου-τεχνολογία-υπηρεσία",
+    section: "3", questionRef: "2019 HL Section 3 Q1",
+    questionText: "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων. Η τεχνολογία στην υπηρεσία του ανθρώπου.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Η χρήση της τεχνολογίας μπορεί να αποδειχθεί ένας καλός φίλος ή ένας επικίνδυνος εχθρός. Μπορεί να βοηθήσει τον άνθρωπο να ξεπεράσει προβλήματα, ή αντίθετα να του δημιουργήσει καινούρια. Στην εποχή μας ο άνθρωπος δεν μπορεί ούτε να το σκεφτεί , αλλά και πρακτικά δεν μπορεί να ζήσει χωρίς τη χρήση της τεχνολογίας που πλέον είναι αναπόσπαστο κομμάτι της ζωής του. Οι επιστήμες, οι μεταφορές , η επικοινωνία των ανθρώπων, η ιατρική, δεν θα είχαν φτάσει σε τέτοιο σημείο ανάπτυξης αν δεν είχαν την τεχνολογία στην υπηρεσία τους.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Όμως όπως συμβαίνει πάντα, όλα έχουν δύο όψεις και η τεχνολογία μπορεί να αποδειχτεί ότι δεν είναι ένας καλός υπηρέτης , αλλά ένα επικίνδυνο αφεντικό που μπορεί να καταστρέψει ανθρώπους, ζώα , φυσικό περιβάλλον και όλον τον πλανήτη αν η χρήση της δεν έχει ως στόχο την προσφορά και την εξέλιξη.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2019 Higher Level — © State Examinations Commission.",
+    id: "mgr-2019-hl-3-2", topicId: "modern-greek-1-0", conceptId: "mgr-ένας-έτος-αμέσως",
+    section: "3", questionRef: "2019 HL Section 3 Q2",
+    questionText: "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων. Κάνοντας χρήση του “gap year” (έτος χάσματος) αμέσως μετά την αποφοίτηση από το Λύκειο θεωρείτε ότι αυτός ο χρόνος είναι ένας χρήσιμος χρόνος, ή απλά χάσιμο χρόνου; Να ασχοληθείτε και με τις δύο απόψεις αυτού του επιχειρήματος.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Στις μέρες μας όλο και περισσότεροι μαθητές αποφασίζουν, αμέσως μόλις τελειώσουν το Λύκειο, να κάνουν χρήση αυτού που συνηθίσαμε να λέμε ως gap year και αυτό είναι πλέον κάτι που αποδέχονται το ίδιο εύκολα και οι μαθητές οι ίδιοι και οι οικογένειες τους. Έτσι λοιπόν χρειάζεται να ερευνήσουμε και να συζητήσουμε αυτό το ζήτημα.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Οι εποχές έχουν αλλάξει πολύ, όπως και τα εργασιακά περιβάλλοντα και οι νέοι απόφοιτοι των Λυκείων θέλουν να μάθουν περισσότερα για τις αγορές, για τις ευκαιρίες που τους δίνονται, τα μέρη όπου μπορούν να ζήσουν και να εργαστούν, τα πανεπιστήμια που μπορούν να σπουδάσουν. Θέλουν επίσης να ταξιδέψουν στον κόσμο είτε μόνοι τους είτε με φίλους τους για να ανακαλύψουν τον κόσμο που τους περιβάλλει, να αισθανθούν πιο σίγουροι για τις μελλοντικές τους αποφάσεις.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Ξέρουν πολύ καλά ότι τους περιμένει μια μακροχρόνια επαγγελματική περίοδος και ένα μεγάλο μέρος από τους απόφοιτους έχει εργαστεί σκληρά για να αποφοιτήσει με έναν καλό βαθμό από το σχολείο και ένα gap year μπορεί να τους φανεί πολύ χρήσιμο από πολλές πλευρές.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Από την άλλη πλευρά όμως , υπάρχουν και αυτοί που θα μπορούσαν να υποστηρίξουν, ότι κάτι τέτοιο , ένα gap year δηλαδή δεν είναι τίποτε άλλο από ένα χάσιμο χρόνου καθώς κατά την άποψη τους χάνεται χρόνος, ενέργεια, ευκαιρίες και δυνατότητες να αρχίσει κάποιος γρηγορότερα την ενήλικη ζωή του ως ανεξάρτητος πολίτης.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Ο καθένας μπορεί να υποστηρίξει τη δική του άποψη και φυσικά αυτό είναι μια απόλυτα προσωπική επιλογή που έχει και τα πλεονεκτήματα και τα μειονεκτήματα της.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Όπως και να το δει κάποιος η ζωή κανόνες, παίκτες στόχους, στρατηγικές και κανένας δεν μπορεί να είναι εξαρχής σίγουρος για την ορθότητα της επιλογής του.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC019ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2021 Higher Level — © State Examinations Commission.",
