@@ -232,7 +232,8 @@ not in the safelist, use inline `style={{}}` — that's why all dynamic hex/widt
 other than `success`, purple/violet as accent, red as primary (only as a "harmful thought" marker), dark/near-black
 module backgrounds, rainbow card sequences, coloured card backgrounds (white only), gradients on cards/backgrounds. The
 **only** sanctioned off-token pair is the productive-vs-intrusive simulation pair `#5B8FD4` / `#E85D75` (sims only). IZ
-tools each declare their own identity hex (cyan/indigo) as a deliberate self-contained exception.
+tools each declare their own identity hex (cyan/indigo) as a deliberate self-contained exception. Listening Studio's
+charcoal sitting ground is the one approved dark surface (§10a).
 
 `ConceptCardGrid` (`components/ModuleShared.tsx`) replaces all inline numbered lists: 3+ named concepts with descriptions
 → `ConceptCardGrid`, never `1) Term, 2) Term` prose.
@@ -398,6 +399,37 @@ arithmetic ("Any three of the above or similar 2 marks each" is an `anyN` group,
 rows); a banded whole-answer tariff ("Fully correct 6 / Almost correct 4") is `questionTotal` with
 `marks: null` rows; `orderedSplit`/`questionTotal` rows are menu-class (the scheme's printed candidates,
 capped at `MAX_LONG_OPTION_ROWS`), while the five-row cap is for required-recall `fixed` cards only.
+
+## 10a. Listening Studio — where every card with a recording is sat
+
+Listening Studio (`components/ListeningStudio/`, tool id `listening-studio`) is Mark Bank on its listening front page:
+InnovationZone mounts `<MarkBank studio />`, so the deck, the student's memory of each card and the recorder
+(`handleGrade`) are the ones a review uses. Nothing is authored for it.
+
+- **What goes there.** Every card with `audioMaterial`. Mark Bank's board, counts and review queues take
+  `reviewCards` (the cards without a recording) and its board links to the Studio. Do not put a listening card back
+  into a review queue; do not give the Studio cards of its own.
+- **Grouping** is read off fields a card already has (`model.ts`): sitting (year, level, June or deferred), section
+  (what the paper numbers: Question 5, Section B, Cuid A), extract (what is heard as one piece). Parts are put in
+  printed order from `questionRef`, never deck order. Keep writing `questionRef`, `audioMaterial.label`, `section` and
+  `stem` as the existing cards of that subject do, or the Studio will file the card oddly.
+- **A new subject with recordings** must be added to `LISTENING_SUBJECT_IDS`, with its own rule in `place()` if the
+  general one (the card's `section`, one extract a section) does not suit its paper.
+  `test/listeningStudioModel.test.ts` fails until it is listed, and fails if any recording card is left unplaced.
+- **Marking is never re-implemented.** Each part mounts the reviewer in place: `<SessionScreen embedded={{ ... }}>`
+  draws only that card's scheme, with the same controls and arithmetic, and reports the result a commit would
+  record. A new card kind or scheme treatment therefore needs no Studio work. The host saves one result per part and
+  leaves a part the student never reached unrecorded.
+- **Recordings.** The player resolves the address as Mark Bank does (`audioStorage.ts`). A recording still at the
+  SEC's own address cannot play in the app, so the Studio offers the SEC's page and draws no player. No card has a
+  start time yet: the recording runs through the whole test with a seek bar, and its position is kept for the visit.
+- **Look (approved by Alex, 20 Nov 2026).** A charcoal ground with the recording on it, the questions on a rounded
+  sheet, DM Sans throughout, answers on a line, orange only where the recording has reached. This is a deliberate,
+  approved exception to "no dark backgrounds in tool surfaces" (§5) for this one full-screen sitting. The sheet takes
+  Mark Bank's `--mb-*` tokens, so it follows light and dark and an embedded scheme sits on it without a seam.
+- **Dev harness:** `/listening-studio-dev.html` (`?subject=French&level=higher&theme=dark`).
+
+---
 
 ## 11. Device alerts — notifications and the iOS Live Activity
 

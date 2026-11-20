@@ -227,6 +227,12 @@ export interface SessionCardResult {
   marksAvailable: number;
 }
 
+/** One embedded card's running result: what a commit would record for it now,
+ *  and whether the student has touched its scheme yet. */
+export interface EmbeddedAssessment extends SessionCardResult {
+  touched: boolean;
+}
+
 /** In-memory work retained while checking the post-study recap. */
 export interface SessionResponse {
   claims: Record<string, RowClaim>;
@@ -272,9 +278,29 @@ export interface SessionScreenProps {
   onGrade: (result: SessionCardResult) => string | void;
   onExit: () => void;
   onFinish: (results: SessionCardResult[]) => void;
+  /**
+   * Marking only, drawn in place. Listening Studio sits several cards on one
+   * sheet and marks each against its own scheme, so it mounts this screen once
+   * per card with this set: no takeover, header, question pane or grade rail,
+   * just the card's scheme with the same controls and the same arithmetic as a
+   * review. The card's running result is reported upward; the host saves it,
+   * and `locked` freezes the controls once it has.
+   */
+  embedded?: {
+    onAssessment: (assessment: EmbeddedAssessment) => void;
+    locked?: boolean;
+  };
 }
 
 /* ------------------------------------------------------------- mark logic ---- */
+
+/** The total a result may report. Where the scheme leaves per-row values
+ *  undefined no marks are scored, so no total is reported either: otherwise a
+ *  close screen reads "0 of 20 marks" for an answer that may have been perfect. */
+export const reportableTotal = (card: SecCard): number =>
+  isRubricCard(card) || (isPointCard(card) && card.mathematicsScale) || showsRowMarks(card)
+    ? claimableTotal(card)
+    : 0;
 
 /** Marks a row is worth when claimed. `anyN` groups count their claimable max. */
 export function rowMarks(row: MarkRow): number {
@@ -2486,7 +2512,7 @@ const useTwoPane = () => {
 };
 
 const SessionScreen: React.FC<SessionScreenProps> = ({
-  cards, subjectLabel, reviewPoolTotal, reviewPoolLabel, onGrade, onExit, onFinish, paperLayout = false, studyReview,
+  cards, subjectLabel, reviewPoolTotal, reviewPoolLabel, onGrade, onExit, onFinish, paperLayout = false, studyReview, embedded,
 }) => {
   const mobileAppDesign = useMobileAppDesign();
   const [expanded, setExpanded] = useState(false);
@@ -2522,7 +2548,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   });
   const [queue, setQueue] = useState(() => visibleSessionExercises(cards).map(c => c.id));
   const [position, setPosition] = useState(0);
-  const [revealed, setRevealed] = useState(false);
+  // Embedded, the scheme is all there is to show.
+  const [revealed, setRevealed] = useState(Boolean(embedded));
   const [claims, setClaims] = useState<Record<string, RowClaim>>({});
   const [picks, setPicks] = useState<Record<string, number[]>>({});
   const [rubricScores, setRubricScores] = useState<RubricScores>({});
@@ -2681,6 +2708,14 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     ? mathematicsCard ? got === total ? 'got' : got > 0 ? 'shaky' : 'missed'
       : isRubricCard(assessmentCard) ? suggestRubricGrade(assessmentCard, rubricScores) : suggestGrade(assessmentCard, rowClaims, picks)
     : 'shaky';
+  const reportAssessment = embedded?.onAssessment;
+  useEffect(() => {
+    if (!reportAssessment || !card) return;
+    reportAssessment({
+      cardId: card.id, grade: suggested, marksClaimed: got,
+      marksAvailable: reportableTotal(card), touched: schemeInteracted,
+    });
+  }, [reportAssessment, card, suggested, got, schemeInteracted]);
   /* A History essay is placed in two halves, paragraph by paragraph and then
      as a whole. Until the whole answer is placed on an OE band its marks are a
      running total, and a grade suggested from them preselected "Missed it"
@@ -2838,12 +2873,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         cardId: member.id,
         grade,
         marksClaimed: memberGot,
-        // Where the scheme leaves per-row values undefined we score no marks, so
-        // we must not report a total either — otherwise the close screen reads
-        // "0 of 20 marks" for a card the student may have answered perfectly.
-        marksAvailable: isRubricCard(member) || (isPointCard(member) && member.mathematicsScale) || showsRowMarks(member)
-          ? claimableTotal(member)
-          : 0,
+        marksAvailable: reportableTotal(member),
       } satisfies SessionCardResult;
     });
     let words: string | void;
@@ -2968,7 +2998,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
        fade whose failure mode is an invisible tool is not worth having; the
        transitions that earn their place are inside, where a stall costs one card
        rather than everything. */
-    <div className={`mark-bank-theme ${paperLayout ? 'mb-paper-session' : ''}`} style={{
+    <div className={`mark-bank-theme ${paperLayout ? 'mb-paper-session' : ''}`} data-embedded={embedded ? '' : undefined} style={embedded ? { fontFamily: SANS } : {
       /* Above the app's own z-100 chrome overlay. During a review the points
          chip and notification bell are exactly what should step aside — and the
          points chip is doubly wrong here, since Mark Bank is deliberately exempt
@@ -2981,7 +3011,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       {/* Session bar. Full-bleed, so the work surface below reads as contained
           by a declared edge rather than adrift in a wide window. */}
       {studyReview?.banner}
-      {paperLayout ? <header className="mb-paper-session-heading">
+      {embedded ? null : paperLayout ? <header className="mb-paper-session-heading">
         <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{confidenceReview ? 'Confidence review' : unpricedSection ? unpricedSectionLine(unpricedSection) : `${assessmentCard.totalMarks} ${marksWord(assessmentCard.totalMarks)}`} · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
         <div><Button variant="outline" aria-label={expanded?'Contract to compact view':'Expand to full screen'} aria-pressed={expanded} onClick={()=>setExpanded(value=>!value)}>{expanded?<Minimize2 size={16}/>:<Maximize2 size={16}/>}<span>{expanded?'Contract':'Expand'}</span></Button><Button ref={leaveButtonRef} variant="ghost" size="icon" aria-label="Close practice" onClick={openExitConfirmation}><X size={18}/></Button></div>
       </header> : <div style={{
@@ -3059,16 +3089,16 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           which would silently kill the sticky question pane inside it. */}
       <div
         key={listeningKey ?? card.id}
-        className="mb-card-in mb-session-workspace"
+        className={embedded ? undefined : 'mb-card-in mb-session-workspace'}
         data-focus={waysInFocusMode}
-        style={{
+        style={embedded ? undefined : {
           maxWidth: waysInFocusMode ? COLUMN : wide ? SURFACE : COLUMN,
           margin: '0 auto', padding: '38px 16px 0',
           display: 'flex', alignItems: 'flex-start',
           gap: wide ? 32 : 0, flexDirection: wide ? 'row' : 'column',
         }}
       >
-      <div
+      {!embedded && <div
         ref={questionPaneRef}
         data-testid="mark-bank-question-pane"
         hidden={waysInFocusMode}
@@ -3242,6 +3272,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             {!printedQuestionReplacesText && (audioMaterial && listeningScoredAlone(assessmentCard) ? (
               <>
                 <AudioSourcePlayer source={audioMaterial} />
+                {/* A Music listening question is answered against the listening booklet's
+                    own page (staves, lyric sheets, grids), so its reader stays beside the
+                    recording, where Music showed it before each card became its own
+                    exercise. The language subjects have never shown a reader here. */}
+                {assessmentCard.subjectId === 'music' && sourceReaders}
                 <QuestionText text={assessmentCard.questionChoices ? assessmentCard.questionText.split('\n')[0] : assessmentCard.questionText} />
                 {assessmentCard.questionChoices && <FrenchQuestionChoices key={assessmentCard.id} options={assessmentCard.questionChoices} />}
               </>
@@ -3330,25 +3365,25 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           </div>
         </MotionDiv>
         </div>
-      </div>
+      </div>}
 
       {/* The scheme pane. Present from the first frame so nothing moves on
           reveal — before it, it holds the tariff and the instruction; after, the
           marking points themselves. */}
       <div className="mb-scheme-pane" style={{
-        width: waysInFocusMode ? '100%' : wide ? SCHEME_W : '100%',
+        width: embedded || waysInFocusMode ? '100%' : wide ? SCHEME_W : '100%',
         maxWidth: '100%',
         flex: '0 0 auto',
         /* 14px of visible gap: the question card's accent plate reaches 8px
            below its sheet, so the margin allows for it in single-column mode. */
-        marginTop: waysInFocusMode || wide ? 0 : 22,
+        marginTop: embedded || waysInFocusMode || wide ? 0 : 22,
       }}>
-        <MotionDiv className="mb-scheme-sheet"
+        <MotionDiv className={embedded ? undefined : 'mb-scheme-sheet'}
           /* The pane still grows from the prompt to the marking points within a
              single card; `layout` eases that instead of snapping to the new size. */
-          layout={reduced ? false : true}
+          layout={reduced || embedded ? false : true}
           transition={{ duration: 0.26, ease: EASE }}
-          style={{
+          style={embedded ? undefined : {
             background: 'var(--mb-paper)', borderRadius: 16, overflow: 'hidden',
             border: '1.5px solid #383838', boxShadow: '0 12px 28px rgba(38, 32, 27, .045)',
           }}
@@ -3395,18 +3430,18 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 exit={{ opacity: 0 }}
                 transition={{ duration: reduced ? 0.12 : 0.18, ease: EASE }}
               >
-                <fieldset disabled={revisit} style={{ padding: '4px 18px 18px', margin: 0, border: 0, minWidth: 0 }}>
+                <fieldset disabled={revisit || Boolean(embedded?.locked)} style={{ padding: embedded ? 0 : '4px 18px 18px', margin: 0, border: 0, minWidth: 0 }}>
                   <WaysInAttemptReview work={waysInWork} card={assessmentCard} subjectLabel={subjectLabel} />
                   <div style={{
                     display: 'flex', justifyContent: 'space-between', alignItems: 'center',
                     padding: '12px 0 9px',
                   }}>
-                    <span style={{
+                    {embedded ? <span /> : <span style={{
                       font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em',
                       textTransform: 'uppercase', color: LABEL,
                     }}>
                       The scheme
-                    </span>
+                    </span>}
                     {isPointCard(assessmentCard) && !wholeResponseAssessment && !mathematicsCard && cardRoutes(assessmentCard.rows).length < 2 && (
                       <button
                         type="button" onClick={claimAll}
@@ -3451,7 +3486,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       onComponentSelect={(id, marks) => setRubricScore(`mathematics:${id}`, marks)} />
                   ) : isPointCard(assessmentCard) ? (
                     <>
-                      <div style={{ margin: '0 0 14px', padding: '0 0 13px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
+                      <div hidden={Boolean(embedded) && !wholeResponseAssessment} style={{ margin: '0 0 14px', padding: '0 0 13px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
                         <p style={{ margin: 0, font: `600 18px/1.3 ${SERIF}`, color: INK }}>
                           {wholeResponseAssessment
                             ? 'Check your complete response.' : 'Select the points you actually got.'}
@@ -3600,9 +3635,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
                   {labelKey && <LabelKeyPanel keys={labelKey} />}
 
-                  <p style={{ margin: '14px 0 0', font: `400 10px/1.45 ${SANS}`, color: LABEL }}>
+                  {!embedded && <p style={{ margin: '14px 0 0', font: `400 10px/1.45 ${SANS}`, color: LABEL }}>
                     {assessmentCard.schemeCitation}
-                  </p>
+                  </p>}
                 </fieldset>
               </MotionDiv>
             )}
@@ -3620,7 +3655,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           The whisper STACKS above the action rather than replacing it — an
           earlier arrangement suppressed the reveal button for the 1.1s the
           whisper was on screen, so the next card briefly had no way in. */}
-      <div className="mb-session-rail" ref={railRef} style={{
+      <div className="mb-session-rail" ref={railRef} style={embedded ? { display: 'none' } : {
         position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 2,
         background: '#FFFFFF', borderTop: `1px solid ${HAIRLINE_2}`,
         boxShadow: '0 -10px 30px rgba(38, 32, 27, .045)',
@@ -3859,6 +3894,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       )}
     </div>
   );
+  // In place, inside the host's own sheet: no dialog and no portal.
+  if (embedded) return surface;
   return paperLayout ? <KobraScope><Dialog open onOpenChange={open=>{if(!open)openExitConfirmation();}}><DialogContent className="mb-live-session-dialog" data-expanded={expanded} showCloseButton={false} onKeyDownCapture={event=>{
     if(event.key==='Escape' && expanded && !confirmExit && !waysInOpen){event.preventDefault();event.stopPropagation();setExpanded(false);}
   }}>{surface}</DialogContent></Dialog></KobraScope> : createPortal(surface, document.body);

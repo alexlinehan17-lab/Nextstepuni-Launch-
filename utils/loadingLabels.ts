@@ -14,6 +14,7 @@ const TOOL_LOADING_LABELS: Record<string, string> = {
   'college-compass': 'Opening College Compass',
   'catch-up-lane': 'Opening Catch-Up Lane',
   'mark-bank': 'Opening Mark Bank',
+  'listening-studio': 'Opening Listening Studio',
   'paper-trail': 'Opening Paper Trail',
   'topic-atlas': 'Opening Topic Atlas',
   'diagram-vault': 'Opening Diagram Vault',
