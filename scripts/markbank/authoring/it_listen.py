@@ -605,6 +605,14 @@ OVERRIDES = {
         'note': ['of her/ Grazia’s neighbourhood/', 'area (1m) (1+1+1)'],
         'contextNote': ('The scheme prints the third piece as “of her/ Grazia’s neighbourhood/” and, '
                         'after its tariff, “area (1m) (1+1+1)”.')},
+    # "4. National (1m) library (2m) ," / "(modern) art (1m) gallery(2m)," /
+    # "university 9 marks (3+3+3)": three places at 3, the first two priced
+    # in pieces (1+2).
+    (2018, 'ol', 3, 4): {
+        'points': [('National', 1), ('library', 2), ('(modern) art', 1), ('gallery', 2), ('university', 3)],
+        'note': ['National (1m) library (2m)', '(modern) art (1m) gallery(2m)', 'university 9 marks (3+3+3)'],
+        'contextNote': ('The scheme prints three places, 3 marks each: “National (1m) library (2m)”, '
+                        '“(modern) art (1m) gallery(2m)” and “university 9 marks (3+3+3)”.')},
     (2026, 'ol', 2, 4): {
         'claimMax': 4, 'perOption': 2,
         'options': ['A (prizewinning) app', 'to practice/learn', 'their verbs',

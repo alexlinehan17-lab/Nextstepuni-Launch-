@@ -270,6 +270,26 @@ READING_POINTS = {
                    ('all’aperto/all’aria aperta/ en plein air', 1), ('tutto l’anno', 1),
                    ('senza spendere soldi', 1)],
         'lesser': [('Il tutto a costo zero', 1)]},
+    # "(b) 5 marks" over "Potrebbero usare il bonus per recarsi a teatro (2) e
+    # assistere ai balletti (1)" and "Perché i biglietti sono cari (2)": three
+    # priced pieces (2+1+2); "Perché è caro 2m" its shorter answer.
+    # "1. (a) 8 marks" over "Chi I diciottenni /chi ha compiuto 18 anni (2) nel
+    # 2016 (2) (2+2+2+2)" and "Come funziona registrarsi entro il 31 gennaio 2017
+    # (2) e utilizzarlo entro la fine del 2017 (2)": four pieces at 2 under the
+    # scheme's own labels, written "<label> — <point>" (the build traces the point).
+    (2017, 'hl', 'A', 1, 'a'): {
+        'points': [('Chi — I diciottenni /chi ha compiuto 18 anni', 2), ('Chi — nel 2016', 2),
+                   ('Come funziona — registrarsi entro il 31 gennaio 2017', 2),
+                   ('Come funziona — e utilizzarlo entro la fine del', 2)],
+        'lesser': [],
+        # The last piece ends on a line of its own, "2017 (2)", which the
+        # build's comparable text drops as a marks-only line: the row is the
+        # traceable cut and the printed ending is quoted here.
+        'note': 'The scheme prints the last piece as “e utilizzarlo entro la fine del” over “2017 (2)”.'},
+    (2017, 'hl', 'A', 4, 'b'): {
+        'points': [('Potrebbero usare il bonus per recarsi a teatro', 2), ('e assistere ai balletti', 1),
+                   ('Perché i biglietti sono cari', 2)],
+        'lesser': [('Perché è caro', 2)]},
 }
 
 
@@ -284,12 +304,14 @@ def _reading_points(year, level, reading):
         cid = it_all.card_id(year, level, section, item, letter)
         card = next(c for c in reading if c['id'] == cid)
         for text, _m in o['points'] + o['lesser']:
-            assert it_writing.flat(text) in flat_no_split, f'{cid}: {text!r} is not in the scheme'
+            point = text.split(' — ')[-1]
+            assert it_writing.flat(point) in flat_no_split, f'{cid}: {point!r} is not in the scheme'
         assert sum(m for _t, m in o['points']) == card['totalMarks'], cid
         language = it_all.answer_language(level, card['questionText'])
         rows = [{'id': f'r-1-{k}', 'kind': 'point', 'verbatim': t, 'marks': m}
                 for k, (t, m) in enumerate(o['points'], start=1)]
-        rows[0]['contextNote'] = it_all.ladder_note(o['lesser'], language)
+        rows[0]['contextNote'] = it_all.ladder_note(o['lesser'], language) + (
+            f" {o['note']}" if o.get('note') else '')
         card['rows'] = rows
         card['tariffModel'] = {'kind': 'fixed'}
 
