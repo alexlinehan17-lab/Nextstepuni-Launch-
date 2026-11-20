@@ -38,7 +38,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
     id: "dan-2010-hl-i-1", topicId: "danish-0-1", conceptId: "forklar-betydningen-ordet-aftensmad-som-det",
     section: "I", questionRef: "2010 HL Section I Q1",
-    questionText: "Forklar betydningen af ordet ”aftensmad” som det bruges i teksten (1. afsnit) Forklar betydningen af ordet ”høflighed” som det bruges i teksten (2. afsnit) Forklar betydningen af ordet ”videresælge” som det bruges i teksten (5. afsnit) Forklar betydningen af ordet ”omskiftelig” som det bruges i teksten (6. afsnit) Forklar betydningen af ordet ”grundigt” som det bruges i teksten (7. afsnit)",
+    questionText: "Forklar betydningen af ordet ”aftensmad” som det bruges i teksten (1. afsnit)\nForklar betydningen af ordet ”høflighed” som det bruges i teksten (2. afsnit)\nForklar betydningen af ordet ”videresælge” som det bruges i teksten (5. afsnit)\nForklar betydningen af ordet ”omskiftelig” som det bruges i teksten (6. afsnit)\nForklar betydningen af ordet ”grundigt” som det bruges i teksten (7. afsnit)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     noScheme: true,
     rows: [
@@ -412,7 +412,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2012 Higher Level — © State Examinations Commission.",
     id: "dan-2012-hl-i-1", topicId: "danish-0-1", conceptId: "forklar-betydningen-ordene-veldrejede-ydre-som",
     section: "I", questionRef: "2012 HL Section I Q1",
-    questionText: "Forklar betydningen af ordene ”veldrejede ydre” som de bruges i teksten (1. afsnit) Forklar betydningen af ordene ”sparke døre ind” som de bruges i teksten (1. afsnit) Forklar betydningen af ordet ”undersøgelse” som det bruges i teksten ( 2. afsnit) Forklar betydningen af ordet ”bedømme” som det bruges i teksten (3. afsnit) Forklar betydningen af ordet ”forarge” som det bruges i teksten (4. afsnit)",
+    questionText: "Forklar betydningen af ordene ”veldrejede ydre” som de bruges i teksten (1. afsnit)\nForklar betydningen af ordene ”sparke døre ind” som de bruges i teksten (1. afsnit)\nForklar betydningen af ordet ”undersøgelse” som det bruges i teksten ( 2. afsnit)\nForklar betydningen af ordet ”bedømme” som det bruges i teksten (3. afsnit)\nForklar betydningen af ordet ”forarge” som det bruges i teksten (4. afsnit)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “godt udseende”, ”smuk”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
@@ -597,7 +597,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2014 Higher Level — © State Examinations Commission.",
     id: "dan-2014-hl-i-1", topicId: "danish-0-1", conceptId: "forklar-betydningen-ordet-lkehus-som-det",
     section: "I", questionRef: "2014 HL Section I Q1",
-    questionText: "Forklar betydningen af ordet ”bjælkehus” som det bruges i teksten Forklar betydningen af ordet ”værdier” som de bruges i teksten Forklar betydningen af ordene ”et stort og vildt spring ud over kanten” som de bruges i teksten Forklar betydningen af ordet ”nøjsomhed” som det bruges i teksten Forklar betydningen af ordene ” tæskede mig selv” som de bruges i teksten",
+    questionText: "Forklar betydningen af ordet ”bjælkehus” som det bruges i teksten\nForklar betydningen af ordet ”værdier” som de bruges i teksten\nForklar betydningen af ordene ”et stort og vildt spring ud over kanten” som de bruges i teksten\nForklar betydningen af ordet ”nøjsomhed” som det bruges i teksten\nForklar betydningen af ordene ” tæskede mig selv” som de bruges i teksten",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “hus lavet af træ, træstammer”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
@@ -981,7 +981,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2016 Higher Level — © State Examinations Commission.",
     id: "dan-2016-hl-i-1", topicId: "danish-0-1", conceptId: "forklar-betydningen-ordet-jhuse-som-det",
     section: "I", questionRef: "2016 HL Section I Q1",
-    questionText: "Forklar betydningen af ordet ”højhuse” som det bruges i teksten Forklar betydningen af ordene ”tilfældighed” som det bruges i teksten Forklar betydningen af ordet ”fællesskabet” som det bruges i teksten Forklar betydningen af ordet ”afgrøder” som det bruges i teksten Forklar betydningen af ordene ”hvinende dæk” som de bruges i teksten",
+    questionText: "Forklar betydningen af ordet ”højhuse” som det bruges i teksten\nForklar betydningen af ordene ”tilfældighed” som det bruges i teksten\nForklar betydningen af ordet ”fællesskabet” som det bruges i teksten\nForklar betydningen af ordet ”afgrøder” som det bruges i teksten\nForklar betydningen af ordene ”hvinende dæk” som de bruges i teksten",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “en stor bygning med lejligheder og plads til mange mennesker”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },

@@ -8,7 +8,7 @@
   "topicId": "danish-0-1",
   "conceptId": "forklar-betydningen-ordet-aftensmad-som-det",
   "questionRef": "2010 HL Section I Q1",
-  "questionText": "Forklar betydningen af ordet ”aftensmad” som det bruges i teksten (1. afsnit) Forklar betydningen af ordet ”høflighed” som det bruges i teksten (2. afsnit) Forklar betydningen af ordet ”videresælge” som det bruges i teksten (5. afsnit) Forklar betydningen af ordet ”omskiftelig” som det bruges i teksten (6. afsnit) Forklar betydningen af ordet ”grundigt” som det bruges i teksten (7. afsnit)",
+  "questionText": "Forklar betydningen af ordet ”aftensmad” som det bruges i teksten (1. afsnit)\nForklar betydningen af ordet ”høflighed” som det bruges i teksten (2. afsnit)\nForklar betydningen af ordet ”videresælge” som det bruges i teksten (5. afsnit)\nForklar betydningen af ordet ”omskiftelig” som det bruges i teksten (6. afsnit)\nForklar betydningen af ordet ”grundigt” som det bruges i teksten (7. afsnit)",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -808,7 +808,7 @@
   "topicId": "danish-0-1",
   "conceptId": "forklar-betydningen-ordene-veldrejede-ydre-som",
   "questionRef": "2012 HL Section I Q1",
-  "questionText": "Forklar betydningen af ordene ”veldrejede ydre” som de bruges i teksten (1. afsnit) Forklar betydningen af ordene ”sparke døre ind” som de bruges i teksten (1. afsnit) Forklar betydningen af ordet ”undersøgelse” som det bruges i teksten ( 2. afsnit) Forklar betydningen af ordet ”bedømme” som det bruges i teksten (3. afsnit) Forklar betydningen af ordet ”forarge” som det bruges i teksten (4. afsnit)",
+  "questionText": "Forklar betydningen af ordene ”veldrejede ydre” som de bruges i teksten (1. afsnit)\nForklar betydningen af ordene ”sparke døre ind” som de bruges i teksten (1. afsnit)\nForklar betydningen af ordet ”undersøgelse” som det bruges i teksten ( 2. afsnit)\nForklar betydningen af ordet ”bedømme” som det bruges i teksten (3. afsnit)\nForklar betydningen af ordet ”forarge” som det bruges i teksten (4. afsnit)",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -1323,7 +1323,7 @@
   "topicId": "danish-0-1",
   "conceptId": "forklar-betydningen-ordet-lkehus-som-det",
   "questionRef": "2014 HL Section I Q1",
-  "questionText": "Forklar betydningen af ordet ”bjælkehus” som det bruges i teksten Forklar betydningen af ordet ”værdier” som de bruges i teksten Forklar betydningen af ordene ”et stort og vildt spring ud over kanten” som de bruges i teksten Forklar betydningen af ordet ”nøjsomhed” som det bruges i teksten Forklar betydningen af ordene ” tæskede mig selv” som de bruges i teksten",
+  "questionText": "Forklar betydningen af ordet ”bjælkehus” som det bruges i teksten\nForklar betydningen af ordet ”værdier” som de bruges i teksten\nForklar betydningen af ordene ”et stort og vildt spring ud over kanten” som de bruges i teksten\nForklar betydningen af ordet ”nøjsomhed” som det bruges i teksten\nForklar betydningen af ordene ” tæskede mig selv” som de bruges i teksten",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -2335,7 +2335,7 @@
   "topicId": "danish-0-1",
   "conceptId": "forklar-betydningen-ordet-jhuse-som-det",
   "questionRef": "2016 HL Section I Q1",
-  "questionText": "Forklar betydningen af ordet ”højhuse” som det bruges i teksten Forklar betydningen af ordene ”tilfældighed” som det bruges i teksten Forklar betydningen af ordet ”fællesskabet” som det bruges i teksten Forklar betydningen af ordet ”afgrøder” som det bruges i teksten Forklar betydningen af ordene ”hvinende dæk” som de bruges i teksten",
+  "questionText": "Forklar betydningen af ordet ”højhuse” som det bruges i teksten\nForklar betydningen af ordene ”tilfældighed” som det bruges i teksten\nForklar betydningen af ordet ”fællesskabet” som det bruges i teksten\nForklar betydningen af ordet ”afgrøder” som det bruges i teksten\nForklar betydningen af ordene ”hvinende dæk” som de bruges i teksten",
   "tariffModel": {
    "kind": "fixed"
   },

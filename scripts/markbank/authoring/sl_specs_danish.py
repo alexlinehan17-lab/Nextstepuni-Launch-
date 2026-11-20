@@ -34,7 +34,11 @@ def both(*notes):
 # "(maksimum 30 point)" (p4), the commentary; Opgave III "(maksimum 40 point)",
 # one essay task with its two titles as dashes (one ask in the census).
 SPECS[2010] = [
-    NoScheme('I1', pages=(2, 3)),
+    # Q1 prints five unlettered lines, one per expression (p3 y422-y477): kept one per line
+    NoScheme('I1', pages=(2, 3),
+             question=QL(3, '1. Forklar betydningen af ordet ”aftensmad”', 'Forklar betydningen af ordet ”høflighed”',
+                         'Forklar betydningen af ordet ”videresælge”', 'Forklar betydningen af ordet ”omskiftelig”',
+                         'Forklar betydningen af ordet ”grundigt”')),
     NoScheme('I2', pages=(2, 3)),
     NoScheme('I3', pages=(2, 3)),
     NoScheme('I4', pages=(2, 3)),
