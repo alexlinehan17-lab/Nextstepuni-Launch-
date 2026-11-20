@@ -6969,6 +6969,80 @@
   }
  },
  {
+  "id": "swe-2022-hl-ii-1",
+  "subjectId": "swedish",
+  "level": "higher",
+  "year": 2022,
+  "section": "II",
+  "topicId": "swedish-1-1",
+  "conceptId": "djuren-mina-basta-vanner-och-jag",
+  "questionRef": "2022 HL Section II Q1",
+  "questionText": "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. “Djuren är mina bästa vänner... och jag äter inte mina vänner.” George Bernard Shaw.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Ett tydligt syfte – kandidaten har förstått frågan och vet hur den ska besvaras",
+    "marks": null,
+    "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme prints these criteria with no marks or percentages; their lead reads: “Följande kriterier vägs in i betygssättningen:”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Ett sammanhängande svar – kandidaten använder relevant och lämplig fakta ur materialet på ett strukturerat och meningsfullt sätt",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Språklig klarhet – kandidaten uppvisar en språkbehandling som med tydlighet och med visst flyt kan uttrycka dennes idéer",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "swe-2022-hl-ii-2",
+  "subjectId": "swedish",
+  "level": "higher",
+  "year": 2022,
+  "section": "II",
+  "topicId": "swedish-1-1",
+  "conceptId": "hur-sann-vanskap-skapas",
+  "questionRef": "2022 HL Section II Q2",
+  "questionText": "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. Hur sann vänskap skapas",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Ett tydligt syfte – kandidaten har förstått frågan och vet hur den ska besvaras",
+    "marks": null,
+    "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme prints these criteria with no marks or percentages; their lead reads: “Följande kriterier vägs in i betygssättningen:”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Ett sammanhängande svar – kandidaten använder relevant och lämplig fakta ur materialet på ett strukturerat och meningsfullt sätt",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Språklig klarhet – kandidaten uppvisar en språkbehandling som med tydlighet och med visst flyt kan uttrycka dennes idéer",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "swe-2023-hl-i-1-a",
   "subjectId": "swedish",
   "level": "higher",
