@@ -27,7 +27,7 @@ import { CARDS as GERMAN_HIGHER } from '../components/MarkBank/cards/german/high
 import { CARDS as GERMAN_ORDINARY } from '../components/MarkBank/cards/german/ordinary';
 import { CARDS as ITALIAN_HIGHER } from '../components/MarkBank/cards/italian/higher';
 import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/ordinary';
-import type { FrenchCriterion, FrenchLowerScale, SecCard, SecRubricCard } from '../types/markBank';
+import type { FrenchCriterion, FrenchLowerScale, FrenchRubric, SecCard, SecRubricCard } from '../types/markBank';
 
 const gridCards = (cards: SecCard[]) => cards.filter((card): card is SecRubricCard =>
   card.kind === 'rubric' && (card as SecRubricCard).rubric.system === 'french');
@@ -129,7 +129,8 @@ describe('a lower scale switched on by the word count alone (Portuguese 2025-202
     topicId: 'portuguese-2-4', conceptId: 'test', questionRef: '2025 HL Section B Q3(a)', questionText: 'Test task',
     totalMarks: 30, schemePages: [9],
     rubric: { system: 'french', taskRequirements: [], criteria, markingGuideNote: '', practiceNotes: [] },
-  } as unknown as SecRubricCard;
+    // FrenchRubricPanel takes a card whose rubric is the French grid.
+  } as unknown as SecRubricCard & { rubric: FrenchRubric };
   const placed = (a: number, b: number, extra: FrenchScores = {}): FrenchScores => ({
     [frenchScoreId('content-communication')]: a, [frenchScoreId('language')]: b, ...extra,
   });
