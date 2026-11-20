@@ -3463,6 +3463,32 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2021 Higher Level — © State Examinations Commission.",
+    id: "hun-2021-hl-ii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-egy-hosszu-tobbre-tanit",
+    section: "II", questionRef: "2021 HL Section II Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! „Egy hosszú út többre tanít magadról, mint százévnyi önvizsgálat.” - Patrick James Rothfuss: A bölcs ember félelme",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\" Under Part II the scheme prints only “Tisztán, érthetően és világosan megírt esszé.” and, under each title, “Egyéni válasz minimum 300 szóban.” It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2021 Higher Level — © State Examinations Commission.",
+    id: "hun-2021-hl-ii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-nem-talalhatsz-egyszer-csak",
+    section: "II", questionRef: "2021 HL Section II Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Nem találhatsz ki egyszerűen csak azért saját tényeket, mert nem tetszik, amit hallasz. - Greta Thunberg",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\" Under Part II the scheme prints only “Tisztán, érthetően és világosan megírt esszé.” and, under each title, “Egyéni válasz minimum 300 szóban.” It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "higher",
     paperFileid: "LC551ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2022 Higher Level — © State Examinations Commission.",
