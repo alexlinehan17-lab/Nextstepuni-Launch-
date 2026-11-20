@@ -753,11 +753,11 @@
     "refsHash": "1d94100309692bfa"
   },
   "slovenian": {
-    "cards": 27,
-    "contentHash": "58235751d24dfbc6",
+    "cards": 40,
+    "contentHash": "1afcca34c174bb6f",
     "coveragePct": 96.9,
-    "covered": 31,
-    "excluded": 31,
+    "covered": 44,
+    "excluded": 18,
     "leaves": 64,
     "open": 2,
     "orphans": 0,
@@ -765,7 +765,7 @@
       "count": 5,
       "hash": "e70003a7f221a331"
     },
-    "refsHash": "08cf94f36c2f3115"
+    "refsHash": "9317d5fb61d1afe9"
   },
   "spanish": {
     "cards": 2268,
