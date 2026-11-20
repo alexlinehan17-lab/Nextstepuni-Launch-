@@ -1502,7 +1502,7 @@ const polishAddedTotal = [...Object.values(POLISH_ADDED), ...Object.values(POLIS
  * sections LA-LE), its written tasks (Section B) and the reading asks the
  * shared reader refused, each named. */
 const PORTUGUESE_ADDED: Record<number, { higher: number; ordinary: number }> = {
-  2026: { higher: 51, ordinary: 52 },
+  2026: { higher: 51, ordinary: 58 },
 };
 const PORTUGUESE_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
   2025: { higher: 40, ordinary: 40 },
