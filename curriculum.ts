@@ -12792,7 +12792,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "dutch-1-1",
-            "name": "Essay on a set quotation (Part III, from 2023)"
+            "name": "Essay on a set quotation (Part III)"
           }
         ]
       }
@@ -13046,7 +13046,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "romanian-1-1",
-            "name": "Essay on a set quotation (Part III, from 2023)"
+            "name": "Essay on a set quotation (Part III)"
           }
         ]
       }
