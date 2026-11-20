@@ -614,3 +614,558 @@ SPECS[2016] = [
     R('S3Q1', [shown(L(127, 131))], whole=True, question=ESSAY_2016),
     R('S3Q2', [shown(L(136, 142))], whole=True, question=ESSAY_2016),
 ]
+
+
+# ====================================================================== 2017
+# ================================================================ 2017 HL ===
+# Drafted (small-languages lane, 20 Nov): the three open asks of this sitting,
+# S2, S3Q1, S3Q2. Live: S1Q1-S1Q6 (6 cards); not touched (audited: see
+# modern-greek-live-faults-2017-2026.json).
+# Paper (rendered pp2-4): "ΝΕΑ ΕΛΛΗΝΙΚΑ" / "Μέγιστη δυνατή βαθμολογία 100
+# Βαθμοί" (p2 y59-84); the article "Το πνεύμα της προσφοράς" (p2 y135), nine
+# numbered paragraphs to the byline "(διασκευασμένο άρθρο του Παναγιώτη
+# Μποκοβού ... Νοέμβριος 2004)" (p3 y381); "ΕΡΩΤΗΣΕΙΣ" (p3 y450) and the rule
+# "Να απαντήσετε και στις 3 ομάδες ερωτήσεων. Οι απαντήσεις να δοθούν στα νέα
+# Ελληνικά." (p3 y473); "ΟΜΑΔΑ 1η" / "ΚΑΤΑΝΟΗΣΗ ΚΑΙ ΕΡΜΗΝΕΙΑ [30 / 100]" (p3
+# y554-583), Q1's instruction ABOVE its bare "1." with "(5 βαθμοί)" at its
+# right (p3 y623) and five bulleted expressions (y663-747); Q2-Q6 "(5
+# βαθμοί)" each (p4 y72-266); "ΟΜΑΔΑ 2η" / "ΣΧΟΛΙΑΣΜΟΣ [30 / 100]" (p4
+# y319-343), ONE unnumbered task, the expression on its own two lines (y365-
+# 419); "ΟΜΑΔΑ 3η" / "ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ [40 / 100]" (p4 y485-510), the
+# instruction (y535-548), "1ο θέμα:" (y581) over its title (y615-630), "2ο
+# θέμα:" (y671) over a quotation (y692-713) and a task (y733-753).
+# PRICES: S2 the group head's "[30 / 100]" (PARTP, 30); S3Q1/S3Q2 "[40 /
+# 100]" (PARTP, 40). The scheme prints the same heads (107, 128). No other
+# figure on the paper or the scheme for these asks (rendered).
+# WHAT THE SCHEME PRINTS (rendered scheme pp4-6 = printed pages 2-4; no
+# criteria, no percentages, no notes):
+# - S2 (106-111 reprint the head, the task and the expression, word for word
+#   but for a comma): a model commentary in a shaded box over the page break,
+#   three printed paragraphs: 112-115 ("Δύο είναι οι βασικοί τύποι ... κοντά
+#   στο συνάνθρωπο τους."), 120-123 ("Ο άλλος τύπος της συμπεριφοράς ... τις
+#   ανθρώπινες επαφές.") and 124-126 ("Η εποχή μας χαρακτηρίζεται ...
+#   κάποιας μορφής όφελος."); each new paragraph opens a fresh line after a
+#   short closing line (rendered p4 y703, p5 y147).
+# - S3Q1 (131-133 reprint "1ο θέμα:" and the title): the bold-italic heading
+#   "Πιθανές περιοχές ανάπτυξης :" (134), then five paragraphs set apart by
+#   space (rendered p5 y408-636): 135-139, 140-141, 142-144, 145, 146-149.
+# - S3Q2 (150-152 and 157-158 reprint "2ο θέμα:", the quotation and the task
+#   over the page break): the same heading (159), then five paragraphs
+#   (rendered p6 y186-500, each closing on a short line): 160-163, 164-167,
+#   168-170, 171-172, 173-176.
+# SHAPES:
+# - S2: 10a, the three paragraphs as three shown rows, whole=True on the
+#   paper's 30; the reading text travels with it (pages=(2, 3), source='text').
+# - S3Q1, S3Q2: 10a, one shown row per printed paragraph, whole=True on the
+#   paper's 40; the heading over them is quoted in the rownote.
+# JUDGEMENT CALLS:
+# - "Πιθανές περιοχές ανάπτυξης :" is printed once under EACH title (rendered
+#   p5 y388, p6 y167), so it is that title's own heading: quoted on each card
+#   (rownote), never a row.
+# - Questions: S2 the census text (the task and the expression, checked
+#   against p4 y365-419); S3Q1/S3Q2 the group's instruction (p4 y535-548) put
+#   before the census title (title 2 with its printed task, y733-753).
+# - The scheme's reprint of S2's task drops the paper's comma after "έκφραση"
+#   (108): punctuation only, not quoted.
+# - Reading text pp2-3 (rendered: title p2 y135, the article to its byline p3
+#   y381; questions from p3 y450). The live cards' sourceMaterial.pages
+#   [2, 3] agree.
+# GLYPHS (code points read from the text layer, render checked): the PAPER's
+# S3Q1 title opens "Mε" with a LATIN M (U+004D; p4 y615); the scheme's reprint
+# (132) has the Greek Μ (U+039C). The paper's own typing: kept in the
+# question as printed, flagged for the lead. No Latin letter inside any
+# lifted scheme row.
+
+ESSAY_2017 = prerun(4, 'Να επιλέξετε', 'περίπου')
+HEAD_2017 = quote(S(134), lead='The scheme heads it')
+
+SPECS[2017] = [
+    R('S2', [shown(L(112, 115)), shown(L(120, 123)), shown(L(124, 126))], whole=True,
+      pages=(2, 3), source='text'),
+    R('S3Q1', [shown(L(135, 139)), shown(L(140, 141)), shown(L(142, 144)), shown(S(145)),
+               shown(L(146, 149))], whole=True, rownote=HEAD_2017, question=ESSAY_2017),
+    R('S3Q2', [shown(L(160, 163)), shown(L(164, 167)), shown(L(168, 170)), shown(L(171, 172)),
+               shown(L(173, 176))], whole=True, rownote=quote(S(159), lead='The scheme heads it'),
+      question=ESSAY_2017),
+]
+
+
+# ====================================================================== 2018
+# ================================================================ 2018 HL ===
+# Drafted (small-languages lane, 20 Nov): the three open asks of this sitting,
+# S2, S3Q1, S3Q2. Live: S1Q1-S1Q6 (6 cards); not touched (audited: see
+# modern-greek-live-faults-2017-2026.json).
+# Paper (rendered pp2-4): the article "Επικοινωνία μέσω διαδικτύου: νεανικές
+# τάσεις στη γραπτή γλώσσα" runs pp2-3, eleven numbered paragraphs to the
+# byline "ΝΑΣΟΣ ΚΑΤΣΩΧΗΣ,24grammata.com/ Λόγος , 20 /04/2011, 840 λέξεις,
+# ..." (p3 y631-643); "ΕΡΩΤΗΣΕΙΣ" (p3 y663) and the rule (p3 y693); p4:
+# "ΟΜΑΔΑ 1η" / "ΚΑΤΑΝΟΗΣΗ ΚΑΙ ΕΡΜΗΝΕΙΑ [30 / 100]" (y58-88), Q1 "1." over
+# five bulleted expressions with ONE "(5 βαθμοί)" at the right of the last
+# (y213); Q2-Q6 "(5 βαθμοί)" each (y238-390); "ΟΜΑΔΑ 2η" / "ΣΧΟΛΙΑΣΜΟΣ [30 /
+# 100]" (y430-446), one unnumbered task of four lines (y474-513); "ΟΜΑΔΑ 3η"
+# / "ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ [40 / 100]" (y557-581), the instruction (y605-618), "1ο
+# θέμα:" (y642) over its title (y665), "2ο θέμα:" (y701) over its title
+# (y724-745).
+# PRICES: S2 "[30 / 100]" (PARTP, 30); S3Q1/S3Q2 "[40 / 100]" (PARTP, 40).
+# The scheme prints the same heads (107, 125); nothing else priced for them.
+# WHAT THE SCHEME PRINTS (rendered scheme pp4-6 = printed pages 2-4; no
+# criteria, no notes):
+# - S2 (106-110 reprint the head and the task's first three lines; the
+#   paper's fourth line, "Να αναπτύξετε τις απόψεις σας σε ένα κείμενο 100
+#   περίπου λέξεων.", is not reprinted): ONE bold-italic paragraph of model
+#   commentary, 111-119 ("Οι νέοι άνθρωποι , έφηβοι ... μεγαλύτερης
+#   ηλικίας.").
+# - S3Q1 (128-129 reprint "1ο θέμα:" and the title): five paragraphs set
+#   apart by space (rendered p5 y221-647): 130-141, 142-147, 148-151,
+#   152-153, 154-155. No heading.
+# - S3Q2 (156-158 reprint "2ο θέμα:" and the title): three paragraphs on p6
+#   (rendered: each opens a fresh line after a short closing line, y74-356):
+#   163-172, 173-176, 177 ("Επιζητά ό άνθρωπος την αρμονία;").
+# SHAPES:
+# - S2: 10a, the paragraph as one shown row, whole=True on the paper's 30;
+#   pages=(2, 3), source='text'.
+# - S3Q1, S3Q2: 10a, one shown row per printed paragraph, whole=True on the
+#   paper's 40.
+# JUDGEMENT CALLS:
+# - S3Q2's closing one-line question (177) is printed as a paragraph of its
+#   own (rendered p6 y356, after "της ψυχής του;" closes the line above): its
+#   own row.
+# - The scheme's partial reprint of S2's task is an omission, not a
+#   rewording: not quoted.
+# - Questions: S2 the census text (the four printed lines, checked on p4);
+#   S3Q1/S3Q2 the group's instruction (p4 y605-618) before the census title.
+# - Reading text pp2-3 (rendered: title p2, the article to its byline p3
+#   y643; questions from p3 y663). The live cards' pages [2, 3] agree.
+# GLYPHS: none (no Latin letter inside a Greek word in any lifted line; the
+# scheme's own typos, "έχε γίνει" (130), "Ποτέ πριν ο άνθρωποι" (131-132),
+# are lifted as printed).
+
+ESSAY_2018 = prerun(4, 'Να επιλέξετε', 'περίπου')
+
+SPECS[2018] = [
+    R('S2', [shown(L(111, 119))], whole=True, pages=(2, 3), source='text'),
+    R('S3Q1', [shown(L(130, 141)), shown(L(142, 147)), shown(L(148, 151)), shown(L(152, 153)),
+               shown(L(154, 155))], whole=True, question=ESSAY_2018),
+    R('S3Q2', [shown(L(163, 172)), shown(L(173, 176)), shown(S(177))], whole=True, question=ESSAY_2018),
+]
+
+
+# ====================================================================== 2019
+# ================================================================ 2019 HL ===
+# Drafted (small-languages lane, 20 Nov): the three open asks of this sitting,
+# S2, S3Q1, S3Q2. Live: S1Q1-S1Q6 (6 cards); not touched (audited: see
+# modern-greek-live-faults-2017-2026.json).
+# Paper (rendered pp2-4): the article runs pp2-3 to its byline "Προβόπουλος
+# Ηλίας, Φιλελεύθερος, 03-11-2018, 841 Λέξεις" (p3 y517); "ΕΡΩΤΗΣΕΙΣ" (p3
+# y546), the rule (p3 y580); "ΟΜΑΔΑ 1η" / "ΚΑΤΑΝΟΗΣΗ ΚΑΙ ΕΡΜΗΝΕΙΑ [30 / 100]"
+# (p3 y606-634), Q1 "1." over five bulleted expressions with one "(5
+# βαθμοί)" at the right of the last (p3 y768); p4: Q2-Q6 "(5 βαθμοί)" each
+# (y59-244); "ΟΜΑΔΑ 2η" / "ΣΧΟΛΙΑΣΜΟΣ [30 / 100]" (y314-342), one unnumbered
+# task of three lines (y369-402); "ΟΜΑΔΑ 3η" / "ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ [40 / 100]"
+# (y486-516), the instruction (y543-556), "1ο θέμα:" (y591) over its title
+# (y614), "2ο θέμα:" (y657) over its title and task (y680-724).
+# PRICES: S2 "[30 / 100]" (PARTP, 30); S3Q1/S3Q2 "[40 / 100]" (PARTP, 40).
+# The scheme prints the same heads (103, 120); nothing else priced for them.
+# WHAT THE SCHEME PRINTS (rendered scheme pp4-6 = printed pages 2-4; no
+# criteria, no notes):
+# - S2 (102-106 reprint the head and the task, word for word): ONE justified
+#   bold-italic paragraph of model commentary over the page break, 107-111 and
+#   116-118 ("Το διαδίκτυο μπορεί επίσης ... πολλές αναμνήσεις και πόνο.").
+#   One paragraph: p4's last line (y752, "... τον πολιτισμό του.") is set
+#   full-justified to the right margin, so the paragraph runs on to p5.
+# - S3Q1 (123-124 reprint "1ο θέμα:" and the title): two paragraphs, an
+#   indented block (rendered p5 y322-541): 125-131 and 132-135.
+# - S3Q2 (136-139 reprint "2ο θέμα:" and the title with its task): six
+#   paragraphs over the page break, each opening at x57 with its later lines
+#   at x64 (rendered p5 y739 to p6 y455): 140-141 + 146-147, 148-153,
+#   154-156, 157-160, 161-162, 163-164.
+# SHAPES:
+# - S2: 10a, the paragraph as one shown row (its two halves joined over the
+#   page break), whole=True on the paper's 30; pages=(2, 3), source='text'.
+# - S3Q1, S3Q2: 10a, one shown row per printed paragraph, whole=True on the
+#   paper's 40.
+# JUDGEMENT CALLS:
+# - S2 kept as one paragraph across the page break (justified last line on
+#   p4, no paragraph start on p5).
+# - Questions: S2 the census text (checked on p4 y369-402); S3Q1/S3Q2 the
+#   group's instruction (p4 y543-556) before the census title (title 2 with
+#   its printed task line).
+# - The scheme reprints title 1 without the paper's full stop (124) and title
+#   2 with "( έτος χάσματος)" for "(έτος χάσματος)" (137): spacing and
+#   punctuation only, not quoted.
+# - Reading text pp2-3 (rendered: the article to its byline p3 y517;
+#   questions from p3 y546). The live cards' pages [2, 3] agree.
+# GLYPHS: none (no Latin letter inside a Greek word in any lifted line; "gap
+# year" is the scheme's own English, as the paper prints it).
+
+ESSAY_2019 = prerun(4, 'Να επιλέξετε', 'περίπου')
+
+SPECS[2019] = [
+    R('S2', [shown(J(L(107, 111), L(116, 118)))], whole=True, pages=(2, 3), source='text'),
+    R('S3Q1', [shown(L(125, 131)), shown(L(132, 135))], whole=True, question=ESSAY_2019),
+    R('S3Q2', [shown(J(L(140, 141), L(146, 147))), shown(L(148, 153)), shown(L(154, 156)),
+               shown(L(157, 160)), shown(L(161, 162)), shown(L(163, 164))], whole=True,
+      question=ESSAY_2019),
+]
+
+
+# ====================================================================== 2021
+# ================================================================ 2021 HL ===
+# Drafted (small-languages lane, 20 Nov): the two open asks of this sitting,
+# SIIQ1, SIIQ2 (the essay titles of Part II). Live: SIQ1-SIQ6 (6 cards); not
+# touched (audited: see modern-greek-live-faults-2017-2026.json).
+# A TWO-PART sitting (the SEC's 2021 reduction, no commentary): the rule
+# "Να απαντήσετε και στα 2 δύο μέρη: Πρώτο μέρος και δεύτερο μέρος." / "Όλες
+# οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά." and "Μέγιστη
+# βαθμολογία 70 βαθμοί" (p2 y59-103); "Μέρος πρώτο" + "(30 μονάδες)" (p2
+# y132), the article "Η ανεργία του μέλλοντος" (p2 y213 to its byline "ΑΡΙΣΤΟΣ
+# ΔΟΞΙΑΔΗΣ, ΠΟΛΙΤΙΚΗ ,18.04.2017, ..." p3 y479), Q1-Q6 (p3 y519 to p4 y263);
+# "Μέρος δεύτερο" + "(40 μονάδες)" (p4 y351), the instruction "Να γράψετε
+# ένα δοκίμιο ( το λιγότερο 300λέξεων ) επιλέγοντας ένα από τα δύο θέματα
+# που" / "ακολουθούν." (y380-395), "1ο θέμα:" (y430) over title 1 (y453),
+# "Ή" on a line of its own (y497), "2ο θέμα:" (y540) over title 2 (y563-578).
+# PRICES: SIIQ1/SIIQ2 the part head's "(40 μονάδες)" (PARTP, 40). The scheme
+# heads the same essay group "ΟΜΑΔΑ 2η" / "ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ [40 / 70]" (118-
+# 119): the same 40.
+# WHAT THE SCHEME PRINTS (rendered scheme pp5-7 = printed pages 3-5; no
+# criteria, no notes):
+# - The instruction REWORDED (120-121): "Να επιλέξετε ένα από τα δύο θέματα
+#   και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων."
+#   where the paper prints "Να γράψετε ένα δοκίμιο ( το λιγότερο 300λέξεων )
+#   επιλέγοντας ένα από τα δύο θέματα που ακολουθούν." (the paper asks for AT
+#   LEAST 300 words, the scheme for about 300).
+# - SIIQ1 (122-123 reprint "1ο θέμα:" and the title): a model essay in bold,
+#   lines double-spaced, each paragraph opening a fresh line after a short
+#   closing line (rendered p5 y536 to p6 y624): 124-129, 130-132, 133 ("Πιο
+#   συγκεκριμένα :", a line of its own at the foot of p5), 138-140, 141-142
+#   (closing "Για παράδειγμα:" on the same line), 143-144, 145-147, 148-154,
+#   155-161, 162-163.
+# - SIIQ2 (168-170 reprint "2ο θέμα:" and the title): two paragraphs
+#   (rendered p7 y184-448): 171-177 and 178-183.
+# SHAPES: SIIQ1, SIIQ2: 10a, one shown row per printed paragraph, whole=True
+# on the paper's 40; the scheme's reworded instruction quoted in the rownote
+# (the paper's words stand in the question). No reading text (Part II is the
+# essay; sl_lib files it as Part III).
+# JUDGEMENT CALLS:
+# - SIIQ1's "Πιο συγκεκριμένα :" (133) is printed as a line of its own, in the
+#   model's own bold type, introducing the paragraphs that follow: kept as a
+#   shown row (the model's words, not a heading the scheme sets over the
+#   answer). "Για παράδειγμα:" (142) ends its paragraph's printed line and
+#   stays inside that row.
+# - Questions: the paper's instruction (p4 y380-395) and the title's own
+#   printed line(s); the census's title 1 carries the "Ή" printed between the
+#   titles (y497), which is not part of it (QP takes the joiner off).
+# - The scheme reprints title 2 with two spaces after "Thunberg" (169):
+#   spacing only, not quoted.
+# GLYPHS: SIIQ1's row 124 prints "(TN)" for the abbreviation of "τεχνητή
+#   νοημοσύνη" with LATIN T and N (U+0054, U+004E; rendered identical): the
+#   scheme's own typing, lifted as printed, flagged for the lead.
+
+ESSAY_2021 = Run('Να γράψετε ένα δοκίμιο', 'ακολουθούν.')
+INSTR_2021 = quote(L(120, 121), lead='The scheme reprints the instruction as')
+
+SPECS[2021] = [
+    # "Πιο συγκεκριμένα :" (133) is a lead-in heading for the points under it: in the note, not a row (lead)
+    R('SIIQ1', [shown(L(124, 129)), shown(L(130, 132)), shown(L(138, 140)),
+                shown(L(141, 142)), shown(L(143, 144)), shown(L(145, 147)), shown(L(148, 154)),
+                shown(L(155, 161)), shown(L(162, 163))], whole=True,
+      rownote=both(INSTR_2021, quote(S(133), lead='The scheme leads the points after its second paragraph with')),
+      question=QP(4, ESSAY_2021, 'Η τεχνητή νοημοσύνη')),
+    R('SIIQ2', [shown(L(171, 177)), shown(L(178, 183))], whole=True, rownote=INSTR_2021,
+      question=QP(4, ESSAY_2021, Run('Η Greta Thunberg', 'επειδή δεν σου'))),
+]
+
+
+# ====================================================================== 2022
+# ================================================================ 2022 HL ===
+# Drafted (small-languages lane, 20 Nov): the two open asks of this sitting,
+# S2Q1, S2Q2. Live: S1Q1-S1Q6 (6 cards); not touched (audited: see
+# modern-greek-live-faults-2017-2026.json).
+# A TWO-GROUP sitting (the SEC's 2022 reduction): GROUP 2 IS THE ESSAY, not
+# the commentary. Paper (rendered pp2-4): the article runs pp2-3 to its source
+# lines "Σάββας Σαββόπουλος, https://www.athensvoice.gr/..." / "(820 λέξεις,
+# κείμενο ελαφρά τροποποιημένο ...)" (p3 y658-682); p4: "ΕΡΩΤΗΣΕΙΣ" (y59),
+# "Να απαντήσετε και στις 2 ομάδες ερωτήσεων. ..." (y86); "ΟΜΑΔΑ 1η" /
+# "ΚΑΤΑΝΟΗΣΗ ΚΑΙ ΕΡΜΗΝΕΙΑ [30 / 70]" (y111-140), Q1 "(5 × 1)" (y211), Q2-Q6
+# "(5)" each (y340-481); "ΟΜΑΔΑ 2η" / "ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ [40 / 70]" (y541-570),
+# the instruction (y597-610), and the two titles numbered "1." (y657-676)
+# and "2." (y730) -- no "1ο θέμα" heads this sitting.
+# PRICES: S2Q1/S2Q2 the group head's "[40 / 70]" (PARTP, 40). The scheme
+# prints the same "[40 / 70]" twice (103, 108).
+# WHAT THE SCHEME PRINTS (rendered scheme pp4-5 = printed pages 2-3; pp6-7
+# blank, no image on any page): at the foot of p4 "ΟΜΑΔΑ 2η" / "[40 / 70]"
+# (102-103); on p5 "ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ [40 / 70]" (108), the instruction
+# (109-110) and the two titles (111-112, 113), and NOTHING after them: no
+# model, no indicative points, no criteria.
+# SHAPES: S2Q1, S2Q2: R4, unprinted(), UNPRINTED_ANSWER at the paper's 40,
+# the note quoting what the scheme prints for the task (its instruction and
+# that title).
+# JUDGEMENT CALLS:
+# - Not 10a: the scheme's block is only the reprinted task (rendered p5:
+#   three short blocks, then blank to the page number "3").
+# - Questions: the group's instruction (p4 y597-610) before the title's own
+#   printed lines (title 1 runs over two lines, y659-676; the census's
+#   text is the same words).
+# - No reading text (the essay; sl_lib attaches none to section 2 here).
+# GLYPHS: none.
+
+# the paper sets this instruction in no-break spaces (U+00A0): the anchor carries one
+ESSAY_2022 = prerun(4, 'Να\xa0επιλέξετε', 'περίπου')
+
+SPECS[2022] = [
+    R('S2Q1', [unprinted(quote(L(109, 110), L(111, 112),
+                               lead='Under “ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ” the scheme prints only the instruction and '
+                                    'the title, and no answer'))],
+      question=ESSAY_2022),
+    R('S2Q2', [unprinted(quote(L(109, 110), S(113),
+                               lead='Under “ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ” the scheme prints only the instruction and '
+                                    'the title, and no answer'))],
+      question=ESSAY_2022),
+]
+
+
+# ====================================================================== 2023
+# ================================================================ 2023 HL ===
+# Drafted (small-languages lane, 20 Nov): the three open asks of this sitting,
+# S2, S3Q1, S3Q2. Live: S1Q1-S1Q6 (6 cards); not touched (audited: see
+# modern-greek-live-faults-2017-2026.json).
+# Paper (rendered pp2-4): the article "Οι αθλητές που νίκησαν τις
+# καταιγίδες" (p2 y59) runs pp2-3 to its source lines "https://maritimes.gr/
+# ..." / "Πέτρος Κασιμάτης, (κείμενο διασκευασμένο ...)" (p3 y709-721); p4:
+# "ΕΡΩΤΗΣΕΙΣ" (y59), the rule (y76); "ΟΜΑΔΑ 1η" / "ΚΑΤΑΝΟΗΣΗ ΚΑΙ ΕΡΜΗΝΕΙΑ [30
+# / 100]" (y102-130), Q1 "(5 × 1)" (y250), Q2-Q6 "(5)" each (y301-412);
+# "ΟΜΑΔΑ 2η" / "ΣΧΟΛΙΑΣΜΟΣ [30 / 100]" (y453-481), one unnumbered task of
+# three lines (y508-542); "ΟΜΑΔΑ 3η" / "ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ [40 / 100]" (y572-601),
+# the instruction (y629-642), "1ο θέμα:" (y677) / title (y700), "2ο θέμα:"
+# (y721) / title (y744).
+# PRICES: S2 "[30 / 100]" (PARTP, 30); S3Q1/S3Q2 "[40 / 100]" (PARTP, 40).
+# The scheme prints the same heads (92, 105); nothing else priced for them.
+# WHAT THE SCHEME PRINTS (rendered scheme pp4-5 = printed pages 2-3; no
+# criteria, no notes):
+# - S2 (91-95 reprint the head and the task, word for word): ONE bold
+#   paragraph of model commentary, 96-103 ("Όπως γνωρίζουμε από την Οδύσσεια
+#   ... έμεινε σταθερή στο στόχο της.").
+# - S3Q1 (108-109 reprint "1ο θέμα:" and the title): ONE paragraph over the
+#   page break, 110-116 and 121-127 (p4 ends mid-sentence, "Την εποχή μας
+#   που όλα δείχνουν να" / p5 "γίνονται γρήγορα ...").
+# - S3Q2 (128-129 reprint "2ο θέμα:" and the title): eight paragraphs set
+#   apart by space (rendered p5 y304-755): 130-132, 133-136, 137-141,
+#   142-143, 144-146, 147-150, 151-152, 153-157.
+# SHAPES:
+# - S2: 10a, one shown row, whole=True on the paper's 30; pages=(2, 3),
+#   source='text'.
+# - S3Q1: 10a, one shown row (the paragraph's halves joined over the page
+#   break), whole=True on the paper's 40.
+# - S3Q2: 10a, eight shown rows, whole=True on the paper's 40.
+# JUDGEMENT CALLS:
+# - S3Q2's 144-146 is one paragraph (line gaps 4 within it, 10 before 147;
+#   rendered p5 y540-570).
+# - Questions: S2 the census text (checked on p4 y508-542); S3Q1/S3Q2 the
+#   group's instruction (p4 y629-642) before the census title.
+# - Reading text pp2-3 (rendered: the article to its source lines p3 y721;
+#   questions from p4 y59). The live cards' pages [2, 3] agree.
+# GLYPHS (code points, glyph ids read with get_texttrace, render checked):
+#   S3Q2's first row opens "Oι φίλοι" with a LATIN O (U+004F, line 130) and
+#   its second row has "μοίρασmα" with a LATIN m (U+006D, line 135). Both are
+#   Latin glyphs of the scheme's Calibri-Bold (O = glyph 75, where the same
+#   font's Greek Ο is glyph 579; m = glyph 373), drawn as Latin (the m is
+#   visibly a Latin m on the render): the scheme's own typing, lifted as
+#   printed, flagged for the lead (never hand-mapped).
+
+ESSAY_2023 = prerun(4, 'Να επιλέξετε', 'λέξεων.')
+
+SPECS[2023] = [
+    R('S2', [shown(L(96, 103))], whole=True, pages=(2, 3), source='text'),
+    R('S3Q1', [shown(J(L(110, 116), L(121, 127)))], whole=True, question=ESSAY_2023),
+    R('S3Q2', [shown(L(130, 132)), shown(L(133, 136)), shown(L(137, 141)), shown(L(142, 143)),
+               shown(L(144, 146)), shown(L(147, 150)), shown(L(151, 152)), shown(L(153, 157))],
+      whole=True, question=ESSAY_2023),
+]
+
+
+# ====================================================================== 2024
+# ================================================================ 2024 HL ===
+# Drafted (small-languages lane, 20 Nov): the three open asks of this sitting,
+# S2, S3Q1, S3Q2. Live: S1Q1-S1Q6 (6 cards); not touched (audited: see
+# modern-greek-live-faults-2017-2026.json).
+# Paper (rendered pp2-4): "Μέγιστη δυνατή βαθμολογία 100 Βαθμοί" (p2 y59);
+# the article "Κλιματική αλλαγή : το υπαρξιακό countdown & η ψυχολογία της
+# κλιματικής αδράνειας" (p2 y114) runs pp2-3 to its source lines "(κείμενο
+# ελαφρά διασκευασμένο ..., Σπύρος Καλημέρης ,2..." / "https://kalimeris
+# therapist.com" (p3 y745-755); p4: "ΕΡΩΤΗΣΕΙΣ" (y59), the rule (y79);
+# "ΟΜΑΔΑ 1η" / "ΚΑΤΑΝΟΗΣΗ ΚΑΙ ΕΡΜΗΝΕΙΑ [30 / 100]" (y103-130), Q1 "(5 × 1)"
+# (y280), Q2-Q6 "(5)" each (y320-481); "ΟΜΑΔΑ 2η" / "ΣΧΟΛΙΑΣΜΟΣ [30 / 100]"
+# (y500-527), the task: a sentence to comment on (y552) and the instruction
+# "Σε μια παράγραφο 100 - 150 περίπου λέξεων να σχολιάσετε το νόημα της
+# προηγούμενης φράσης." (y572); "ΟΜΑΔΑ 3η" / "ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ [40 / 100]"
+# (y597-612), the instruction on ONE line (y625), "1ο θέμα:" (y650) / title
+# (y672-685), "2ο θέμα:" (y711) / a quotation signed "Γιώργος Σεφέρης (Νόμπελ
+# Λογοτεχνίας, 1963)" (y732-752).
+# PRICES: S2 "[30 / 100]" (PARTP, 30); S3Q1/S3Q2 "[40 / 100]" (PARTP, 40).
+# The scheme prints the same heads (126, 145); nothing else priced for them.
+# WHAT THE SCHEME PRINTS (rendered scheme pp5-7 = printed pages 3-5; no
+# criteria, no notes):
+# - S2 (125-130): the head, the sentence, and the instruction REWORDED:
+#   "Σε μια παράγραφο 100 περίπου λέξεων να σχολιάσετε το νόημα της
+#   προηγούμενης" / "φράσης." (129-130) where the paper asks for "100 - 150
+#   περίπου λέξεων". Then ONE justified bold paragraph of model commentary
+#   over the page break, 131-136 and 141-143 ("Η φράση "Οι άνθρωποι ..." ...
+#   προσωπικού χαρακτήρα και δράσης."); p5's "... στις αποφάσεις μας." (y704)
+#   is a justified inner line, not a paragraph end (rendered).
+# - S3Q1 (148-150 reprint "1ο θέμα:" and the title): three paragraphs set
+#   apart by space (rendered p6 y360 to p7 y118): 151-159, 160-164,
+#   165-167 + 172-174 (over the page break, mid-sentence).
+# - S3Q2 (175-177 reprint "2ο θέμα:" and the quotation with its signature):
+#   seven paragraphs set apart by space (rendered p7 y272-686): 178-181, 182
+#   ("Ας αναλύσουμε τα βασικά στοιχεία αυτής της άποψης:"), 183-186
+#   (opening with the run-in label "Σύνδεση Παρελθόντος και Μέλλοντος:"),
+#   187-190, 191-193, 194-196, 197-199.
+# SHAPES:
+# - S2: 10a, one shown row, whole=True on the paper's 30, the scheme's
+#   reworded instruction quoted in the rownote (the paper's words stand);
+#   pages=(2, 3), source='text'.
+# - S3Q1, S3Q2: 10a, one shown row per printed paragraph, whole=True on the
+#   paper's 40.
+# JUDGEMENT CALLS:
+# - S3Q2's 182 is a sentence of the model essay printed as a paragraph of its
+#   own (set apart by space), not a heading over the answer: its own row.
+#   The run-in "Σύνδεση Παρελθόντος και Μέλλοντος:" opens its paragraph's
+#   line in the same type and stays inside that row.
+# - Questions: S2 the census text (both printed lines, p4 y552-572); S3Q1/
+#   S3Q2 the group's one-line instruction (p4 y625) before the census title.
+# - Reading text pp2-3 (rendered: the article to its source lines p3 y755;
+#   questions from p4 y59). The live cards' pages [2, 3] agree.
+# GLYPHS: none (no Latin letter inside a Greek word in any lifted line; the
+# scheme's own slips, "η δικαιοσύνες" (155), lifted as printed).
+
+ESSAY_2024 = pre(4, 'Να επιλέξετε')
+
+SPECS[2024] = [
+    R('S2', [shown(J(L(131, 136), L(141, 143)))], whole=True,
+      rownote=quote(L(129, 130), lead='The scheme reprints the instruction as'), pages=(2, 3), source='text'),
+    R('S3Q1', [shown(L(151, 159)), shown(L(160, 164)), shown(J(L(165, 167), L(172, 174)))], whole=True,
+      question=ESSAY_2024),
+    R('S3Q2', [shown(L(178, 181)), shown(S(182)), shown(L(183, 186)), shown(L(187, 190)), shown(L(191, 193)),
+               shown(L(194, 196)), shown(L(197, 199))], whole=True, question=ESSAY_2024),
+]
+
+
+# ====================================================================== 2025
+# ================================================================ 2025 HL ===
+# Drafted (small-languages lane, 20 Nov): the three open asks of this sitting,
+# S2, S3Q1, S3Q2. Live: S1Q1-S1Q6 (6 cards); not touched (audited: see
+# modern-greek-live-faults-2017-2026.json).
+# Paper (rendered pp2-4): the interview "ΑΠΟΨΕΙΣ ΜΑΘΗΤΩΝ ΓΙΑ ΤΗΝ ΕΚΠΑΙΔΕΥΣΗ
+# ΤΟΥΣ" (p2 y59) runs pp2-3 to its byline "Των Νάσιας Αναστασιάδη, ... (1000
+# λέξεις) ΤΟ ΒΗΜΑ, 22-10-2023" (p3 y759-769); p4: "ΕΡΩΤΗΣΕΙΣ" (y59), the rule
+# (y88); "ΟΜΑΔΑ 1η" / "ΚΑΤΑΝΟΗΣΗ ΚΑΙ ΕΡΜΗΝΕΙΑ ... [30 / 100]" (y121-139), Q1
+# five expressions lettered a)-e) under one "(5 × 1)" (y275), Q2-Q6 "(5)"
+# each (y303-494); "ΟΜΑΔΑ 2η" / "ΣΧΟΛΙΑΣΜΟΣ ... [30 / 100]" (y522-538), the
+# question to comment on (y560) and the instruction "Σε μια παράγραφο 100
+# -150 λέξεων ..." (y582); "ΟΜΑΔΑ 3η" / "ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ ... [40 / 100]"
+# (y615-630), the instruction "... σε ένα κείμενο" / "τουλάχιστον 300
+# λέξεων." (y651-665), "1ο θέμα:" (y694) / title (y715), "2ο θέμα:" (y744) /
+# a quotation "(Ηράκλειτος)." (y765).
+# PRICES: S2 "[30 / 100]" (PARTP, 30); S3Q1/S3Q2 "[40 / 100]" (PARTP, 40).
+# The scheme prints the same heads (139, 166); nothing else priced for them.
+# WHAT THE SCHEME PRINTS (rendered scheme pp6-9 = printed pages 6-9; p3 the
+# SEC's annotation key; no criteria, no notes):
+# - S2 (138-141 reprint the head and the task, word for word): the bold
+#   heading "Για παράδειγμα:" (142), then a model commentary in TWO justified
+#   paragraphs: 143-151 + 156-160 (over the page break; p7 y162 "...
+#   προκλήσεις του." closes it short) and 161-164 ("Ακόμα, μαθαίνουμε ... η
+#   συναισθηματική μας κατάσταση."; its line y206 "... την εξέλιξη μας." is a
+#   justified inner line reaching the margin, x1 523, so 163 does not open a
+#   paragraph).
+# - S3Q1 (169-170 reprint "1ο θέμα:" and the title): "Για παράδειγμα:" (171),
+#   then five ragged-right paragraphs, each closing on a line the next word
+#   would have fitted (rendered p7 y512 to p8 y294): 172-176, 177-183,
+#   188-192, 193-195, 196-198.
+# - S3Q2 (199-200 reprint "2ο θέμα:" and the quotation, "Ηράκλειτος." for the
+#   paper's "(Ηράκλειτος).": punctuation only): "Για παράδειγμα:" (201), then
+#   six justified paragraphs (rendered p8 y404 to p9 y338; each closes on a
+#   short line): 202-206, 207-212, 213-216, 217-218 + 223-224 (over the page
+#   break; 219 is the page number "8"), 225-232, 233-235.
+# SHAPES:
+# - S2: 10a, the two paragraphs as two shown rows, whole=True on the paper's
+#   30, the heading quoted in the rownote; pages=(2, 3), source='text'.
+# - S3Q1, S3Q2: 10a, one shown row per printed paragraph, whole=True on the
+#   paper's 40, each title's own "Για παράδειγμα:" quoted in its rownote.
+# JUDGEMENT CALLS:
+# - "Για παράδειγμα:" is printed on a line of its own in bold over each model
+#   (once per task, under each title separately): a heading, quoted, never a
+#   row.
+# - S3Q2's 213 "... της ατομικής έκφρασης." reaches the margin justified
+#   (x1 523): the paragraph runs on to 216.
+# - Questions: S2 the census text (both printed lines, p4 y560-582); S3Q1/
+#   S3Q2 the group's instruction (p4 y651-665) before the census title.
+# - Reading text pp2-3 (rendered: the interview to its byline p3 y769;
+#   questions from p4 y59). The live cards' pages [2, 3] agree.
+# GLYPHS: none (no Latin letter inside a Greek word in any lifted line).
+
+ESSAY_2025 = prerun(4, 'Να επιλέξετε', 'τουλάχιστον')
+
+SPECS[2025] = [
+    R('S2', [shown(J(L(143, 151), L(156, 160))), shown(L(161, 164))], whole=True,
+      rownote=quote(S(142), lead='The scheme heads it'), pages=(2, 3), source='text'),
+    R('S3Q1', [shown(L(172, 176)), shown(L(177, 183)), shown(L(188, 192)), shown(L(193, 195)),
+               shown(L(196, 198))], whole=True, rownote=quote(S(171), lead='The scheme heads it'),
+      question=ESSAY_2025),
+    R('S3Q2', [shown(L(202, 206)), shown(L(207, 212)), shown(L(213, 216)), shown(J(L(217, 218), L(223, 224))),
+               shown(L(225, 232)), shown(L(233, 235))], whole=True,
+      rownote=quote(S(201), lead='The scheme heads it'), question=ESSAY_2025),
+]
+
+
+# ====================================================================== 2026
+# ================================================================ 2026 HL ===
+# Drafted (small-languages lane, 20 Nov): the three open asks of this sitting,
+# S2, S3Q1, S3Q2. Live: S1Q1-S1Q6 (6 cards); not touched (audited: see
+# modern-greek-live-faults-2017-2026.json).
+# Paper (rendered pp2-4): "Μέγιστη δυνατή βαθμολογία 100 Βαθμοί" (p2 y59);
+# the article runs pp2-3 to its source line "(κείμενο διασκευασμένο για τις
+# ανάγκες της εξέτασης) , Στέλιος Κερασίδης,08-02-2024, Pcychology.gr" (p3
+# y762); p4: "ΕΡΩΤΗΣΕΙΣ" (y59), the rule (y80); "ΟΜΑΔΑ 1η" / "ΚΑΤΑΝΟΗΣΗ ΚΑΙ
+# ΕΡΜΗΝΕΙΑ [30 / 100]" (y100-121), Q1 "1." set as a cell of its own beside
+# its instruction (y148), five expressions lettered a)-e) under one "(5 ×
+# 1)" (y246), Q2-Q6 "(5)" each (y270-417); "ΟΜΑΔΑ 2η" / "ΣΧΟΛΙΑΣΜΟΣ [30 /
+# 100]" (y436-464), one unnumbered task of three lines (y491-525); "ΟΜΑΔΑ 3η"
+# / "ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ [40 / 100]" (y552-578), the instruction (y599-614), "1ο
+# θέμα:" (y633) / title (y655-670), "2ο θέμα:" (y689) / three lines of
+# Cavafy signed "(Κ.Καβάφης,1913)" (y711-734).
+# PRICES: S2 "[30 / 100]" (PARTP, 30); S3Q1/S3Q2 "[40 / 100]" (PARTP, 40).
+# The scheme prints the same heads (116, 128); nothing else priced for these
+# asks (its "(5)" and "(5X1)" stand only under Q1-Q6).
+# WHAT THE SCHEME PRINTS (rendered scheme pp6-7 = printed pages 6-7; no
+# criteria, no notes):
+# - S2 (115-119 reprint the head and the task, word for word): ONE paragraph
+#   of model commentary, 120-126 ("Αν και αναγνωρίζουμε ... του κόσμου γύρω
+#   μας.").
+# - S3Q1 (131-133 reprint "1ο θέμα:" and the title): three paragraphs set
+#   apart by space (rendered p6 y518-757): 134-138, 139-143, 144-147.
+# - S3Q2 (152-155 reprint "2ο θέμα:" and the three lines): TWO paragraphs
+#   set apart by space (rendered p7): 156-168 and 169-177. Line 165 ("... το
+#   ενδεχόμενο αυτό.") fills its line and 166 ("Εκείνο, όμως, ...") follows
+#   with no space between: one paragraph (the only space on the page falls
+#   before 169).
+# SHAPES:
+# - S2: 10a, one shown row, whole=True on the paper's 30; pages=(2, 3),
+#   source='text'.
+# - S3Q1, S3Q2: 10a, one shown row per printed paragraph, whole=True on the
+#   paper's 40.
+# JUDGEMENT CALLS:
+# - Questions: S2 the census text (checked on p4 y491-525); S3Q1/S3Q2 the
+#   group's instruction (p4 y599-614) before the census title (title 2 its
+#   three printed lines with the signature, as printed).
+# - Reading text pp2-3 (rendered: the article to its source line p3 y762;
+#   questions from p4 y59). The live cards' pages [2, 3] agree.
+# GLYPHS: none (no Latin letter inside a Greek word in any lifted line).
+
+ESSAY_2026 = prerun(4, 'Να επιλέξετε', 'περίπου')
+
+SPECS[2026] = [
+    R('S2', [shown(L(120, 126))], whole=True, pages=(2, 3), source='text'),
+    R('S3Q1', [shown(L(134, 138)), shown(L(139, 143)), shown(L(144, 147))], whole=True,
+      question=ESSAY_2026),
+    R('S3Q2', [shown(L(156, 168)), shown(L(169, 177))], whole=True, question=ESSAY_2026),
+]
