@@ -209,7 +209,10 @@ def main():
             regions = {q['n']: q['paperRegion'] for q in existing['q'] if q['n'] in parents}
             for q in hosted['q']:
                 q['paperRegion'] = regions.get(q['n'], q['paperRegion'])
-            hosted['q'] += [q for q in existing['q'] if q['n'] not in parents]
+            # Only the tasks the reviewed cards still hold; a task no card holds any longer is dropped.
+            tasks = {t['n'] for t in json.loads(TASKS.read_text())
+                     if t['year'] == int(path.parent.name) and f"{t['fileid']}.json" == path.name}
+            hosted['q'] += [q for q in existing['q'] if q['n'] not in parents and q['n'] in tasks]
             if 'maxCropPages' in existing:
                 hosted['maxCropPages'] = existing['maxCropPages']
         text = json.dumps(hosted, ensure_ascii=False, separators=(',', ':')) + '\n'

@@ -153,10 +153,10 @@ describe('French exam-topic registry', () => {
     const deferred = papers.filter(paper => paper.fileid.endsWith('-deferred.pdf'));
     expect(papers).toHaveLength(98 + 4);
     expect(deferred.map(paper => `${paper.year} ${paper.fileid} ${paper.q.length}`).sort()).toEqual([
-      '2022 LC010ALP000BV-deferred.pdf 30', '2022 LC010GLP000BV-deferred.pdf 59',
+      '2022 LC010ALP000BV-deferred.pdf 31', '2022 LC010GLP000BV-deferred.pdf 60',
       '2023 LC010ALP000BV-deferred.pdf 32', '2023 LC010GLP000BV-deferred.pdf 59',
     ]);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1423 + 30 + 59 + 32 + 59);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1423 + 31 + 60 + 32 + 59);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
 
@@ -235,8 +235,8 @@ describe('French exam-topic registry', () => {
 
   it('retains 1,003 archive questions and adds the reviewed task boundaries', () => {
     expect(subjectAtlasStats('french')).toMatchObject({
-      // + the carded deferred sittings' written-paper questions and tasks (30 + 59 + 32 + 59).
-      questions: 2959 + 180,
+      // + the carded deferred sittings' written-paper questions and tasks (31 + 60 + 32 + 59).
+      questions: 2959 + 182,
       topics: 33,
       yearMin: 2010,
       yearMax: 2026,

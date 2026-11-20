@@ -7076,7 +7076,12 @@
         "secondary": "french-2-1"
       },
       {
-        "n": "A2-Q1-b",
+        "n": "A2-Q1-b-ordre",
+        "primary": "french-5-1",
+        "secondary": "french-2-1"
+      },
+      {
+        "n": "A2-Q1-b-desordre",
         "primary": "french-5-1",
         "secondary": "french-2-1"
       },
@@ -7318,7 +7323,11 @@
         "primary": "french-5-1"
       },
       {
-        "n": "A4-Q7",
+        "n": "A4-Q7-kamo",
+        "primary": "french-5-1"
+      },
+      {
+        "n": "A4-Q7-mother",
         "primary": "french-5-1"
       },
       {

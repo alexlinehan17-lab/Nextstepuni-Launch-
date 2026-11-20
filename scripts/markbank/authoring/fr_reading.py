@@ -244,8 +244,22 @@ def build(sitting=None):
                 assert topic_correction['reason'] and topic_correction['topicIds'], ask.rc
                 topic_id, topic_ids = topic_correction['topicId'], topic_correction['topicIds']
             letters = [chr(i) for i in range(ord(ask.letter), ord(ask.letter_to) + 1)] if ask.letter_to else [ask.letter]
-            for index, letter in enumerate(letters):
+            # (Deferred ledger.) An ask whose paper prints two labelled answers, each priced on its own
+            # in the scheme under its own heading: one card per label, as June splits 2011 HL Q.1 3
+            # (Positif / Négatif) and 2014 OL Q.4 8 (His parents / His sisters).
+            labelled = record.get('labelledParts', {}).get(address) if sitting else None
+            if labelled:
+                assert labelled['reason'] and not ask.letter_to, address
+            units = [(ask.letter, part) for part in labelled['parts']] if labelled else [(letter, None) for letter in letters]
+            for index, (letter, labelled_part) in enumerate(units):
                 prompt, guide, maximum = question, guidance, ask.total
+                if labelled_part:
+                    heads = [part['heading'] for part in labelled['parts']]
+                    start = guide.index(labelled_part['heading'])
+                    later = [guide.index(head) for head in heads if guide.index(head) > start]
+                    guide = guide[start:min(later) if later else len(guide)]
+                    prompt = '\n'.join([*labelled['lines'], labelled_part['paperLabel']])
+                    maximum = ask.per
                 if ask.letter_to:
                     part = max(paper.candidates(ask.rc, ask.item, letter), key=lambda block: (block.side == 'R', len(block.text)))
                     prompt = question + '\n\n' + part.text
@@ -256,8 +270,9 @@ def build(sitting=None):
                 suffix = f'{ask.item}' + (f'({letter})' if letter else '')
                 if question_group:
                     suffix = ' and Q'.join(map(str, question_group['questions']))
-                n = f'A{ask.rc}-Q{ask.item}' + (f'-{letter}' if letter else '')
+                n = f'A{ask.rc}-Q{ask.item}' + (f'-{letter}' if letter else '') + (f'-{labelled_part["key"]}' if labelled_part else '')
                 cid = f'fr-{year}-{level}-{"deferred-" if sitting else ""}reading-{n.lower()}'
+                label_ref = f' · {labelled_part["refLabel"]}' if labelled_part else ''
                 preserved_id = record.get('preservedCardIds', {}).get(n)
                 if preserved_id:
                     previous = original[preserved_id]
@@ -303,7 +318,7 @@ def build(sitting=None):
                     assert maximum == 8 and shared_tariff['reason'], address
                     requirements.append(lift(doc_texts(DATA / f'schemes/{year}-{fl(level)}.pdf', scheme_pages), shared_tariff['printedRule'], marks='', what=address))
                     practice.append('Give both required answers. Award 7 marks for one correct answer and 1 additional mark for the second correct answer (8 marks total).')
-                elif ask.count > 1 and not ask.letter_to:
+                elif ask.count > 1 and not ask.letter_to and not labelled_part:
                     practice.append(f'Give {ask.count} distinct points. Each earns at most {ask.per} marks; do not score the same point twice.')
                 if shared_tariff:
                     allowed = [0, 7, 8] if ask.rc < 3 else list(range(9))
@@ -340,7 +355,7 @@ def build(sitting=None):
                 cited = sorted(set(scheme_pages) | set(extra_pages))
                 card = dict(id=cid, subjectId='french', level=level_name, source='sec', kind='rubric', year=year,
                             paperFileid=doc['doc']['f'].removesuffix('.pdf'), section='A',
-                            questionRef=f'{year} {level.upper()} Section A{ask.rc} Q{suffix}' + deferred_ref, questionText=prompt,
+                            questionRef=f'{year} {level.upper()} Section A{ask.rc} Q{suffix}' + label_ref + deferred_ref, questionText=prompt,
                             totalMarks=maximum, topicId=topic_id, conceptId=f'french-reading-{topic_id}',
                             sourceMaterial=source, specVersion='lc-french-syllabus',
                             schemeCitation=f'SEC French {year} {level_name.title()} Level marking scheme{", deferred examination" if sitting else ""}, pp.{", ".join(map(str, cited))}; general rules p.{record.get("generalRulesPage", 4 if level == "hl" else 3)} — © State Examinations Commission.',
@@ -354,7 +369,9 @@ def build(sitting=None):
                     card['conceptId'] = previous['conceptId']
                 if scoring:
                     practice.append(scoring['sourceNote'])
-                if ask.decision:
+                if labelled_part:
+                    practice.append(labelled['note'])
+                elif ask.decision:
                     practice.append(ask.decision['sourceNote'])
                 if split and split.get('taskInstruction'):
                     practice.append(split['taskInstruction'])
@@ -371,7 +388,7 @@ def build(sitting=None):
                         assert re.match(rf'(?:{MARKER}\s*)?{re.escape(key)}', card['rubric']['answerGuide'][0]), cid
                 tasks.append(dict(cardId=cid, category='reading', subjectId='french', level=level_name, year=year, sitting=sitting or 'main', paperKey='single', lang='ev',
                                   fileid=doc['doc']['f'], n=n, parent=parent, topicIds=topic_ids,
-                                  topicId=topic_id, pages=pages, label=f'Reading Comprehension {ask.rc} · Q{suffix}'))
+                                  topicId=topic_id, pages=pages, label=f'Reading Comprehension {ask.rc} · Q{suffix}{label_ref}'))
     assert len(cards) == review['expectedCards']
     (DEFERRED_OUT if sitting else ROOT / 'components/MarkBank/cards/french/reading.json').write_text(
         json.dumps(cards, ensure_ascii=False, indent=2) + '\n')

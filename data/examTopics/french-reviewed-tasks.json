@@ -45258,7 +45258,7 @@
     "label": "Reading Comprehension 2 · Q1(a)"
   },
   {
-    "cardId": "fr-2022-hl-deferred-reading-a2-q1-b",
+    "cardId": "fr-2022-hl-deferred-reading-a2-q1-b-ordre",
     "category": "reading",
     "subjectId": "french",
     "level": "higher",
@@ -45267,7 +45267,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010ALP000BV-deferred.pdf",
-    "n": "A2-Q1-b",
+    "n": "A2-Q1-b-ordre",
     "parent": "A2",
     "topicIds": [
       "french-higher-literarynovel-comprehension"
@@ -45277,7 +45277,29 @@
       6,
       7
     ],
-    "label": "Reading Comprehension 2 · Q1(b)"
+    "label": "Reading Comprehension 2 · Q1(b) · L'ordre"
+  },
+  {
+    "cardId": "fr-2022-hl-deferred-reading-a2-q1-b-desordre",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "n": "A2-Q1-b-desordre",
+    "parent": "A2",
+    "topicIds": [
+      "french-higher-literarynovel-comprehension"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      6,
+      7
+    ],
+    "label": "Reading Comprehension 2 · Q1(b) · Le désordre"
   },
   {
     "cardId": "fr-2022-hl-deferred-reading-a2-q2-a",
@@ -46138,7 +46160,7 @@
     "label": "Reading Comprehension 4 · Q6"
   },
   {
-    "cardId": "fr-2022-ol-deferred-reading-a4-q7",
+    "cardId": "fr-2022-ol-deferred-reading-a4-q7-kamo",
     "category": "reading",
     "subjectId": "french",
     "level": "ordinary",
@@ -46147,7 +46169,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV-deferred.pdf",
-    "n": "A4-Q7",
+    "n": "A4-Q7-kamo",
     "parent": "A4",
     "topicIds": [
       "french-ordinary-reading-comprehension-book-extract"
@@ -46157,7 +46179,29 @@
       10,
       11
     ],
-    "label": "Reading Comprehension 4 · Q7"
+    "label": "Reading Comprehension 4 · Q7 · Kamo"
+  },
+  {
+    "cardId": "fr-2022-ol-deferred-reading-a4-q7-mother",
+    "category": "reading",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2022,
+    "sitting": "deferred",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000BV-deferred.pdf",
+    "n": "A4-Q7-mother",
+    "parent": "A4",
+    "topicIds": [
+      "french-ordinary-reading-comprehension-book-extract"
+    ],
+    "topicId": "french-5-1",
+    "pages": [
+      10,
+      11
+    ],
+    "label": "Reading Comprehension 4 · Q7 · His mother"
   },
   {
     "cardId": "fr-2023-hl-deferred-reading-a1-q1-a",

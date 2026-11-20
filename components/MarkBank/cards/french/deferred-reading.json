@@ -1141,7 +1141,7 @@
     }
   },
   {
-    "id": "fr-2022-hl-deferred-reading-a2-q1-b",
+    "id": "fr-2022-hl-deferred-reading-a2-q1-b-ordre",
     "subjectId": "french",
     "level": "higher",
     "source": "sec",
@@ -1149,9 +1149,9 @@
     "year": 2022,
     "paperFileid": "LC010ALP000BV-deferred",
     "section": "A",
-    "questionRef": "2022 HL Section A2 Q1(b) — Deferred sitting",
-    "questionText": "Dans la première section, relevez une expression qui évoque l’ordre, et une expression qui évoque le désordre. L'ordre : Le désordre :",
-    "totalMarks": 10,
+    "questionRef": "2022 HL Section A2 Q1(b) · L'ordre — Deferred sitting",
+    "questionText": "Dans la première section, relevez une expression qui évoque l’ordre, et une expression qui évoque le désordre.\nL'ordre :",
+    "totalMarks": 5,
     "topicId": "french-5-1",
     "conceptId": "french-reading-french-5-1",
     "sourceMaterial": {
@@ -1202,7 +1202,97 @@
         "• Tout est à sa place — 5 Marks",
         "• Le lit est fait — 5 Marks",
         "• Les vêtements pliés — 5 Marks",
-        "• Les livres rangés (par ordre alphabétique) — 5 Marks",
+        "• Les livres rangés (par ordre alphabétique) — 5 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "The scheme prints this head as 5 marks and pays 5 marks for each of its two expressions, the one for order and the one for disorder; each is its own card at 5.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a2-q1-b-desordre",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A2 Q1(b) · Le désordre — Deferred sitting",
+    "questionText": "Dans la première section, relevez une expression qui évoque l’ordre, et une expression qui évoque le désordre.\nLe désordre :",
+    "totalMarks": 5,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.8; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
         "(b) Le désordre",
         "One of:",
         "• (On pourrait croire qu') une bombe vient d'exploser — 5 Marks",
@@ -1217,27 +1307,21 @@
         {
           "id": "response",
           "label": "Response",
-          "maxMarks": 10,
+          "maxMarks": 5,
           "permittedMarks": [
             0,
             1,
             2,
             3,
             4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
+            5
           ],
           "guidance": []
         }
       ],
       "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
       "practiceNotes": [
-        "Give 2 distinct points. Each earns at most 5 marks; do not score the same point twice.",
-        "The scheme prints this head as 5 marks but pays 5 marks for each of the two required expressions (order, disorder); this card is scored out of 10 so that Q.2 adds up to its printed 60 marks.",
+        "The scheme prints this head as 5 marks and pays 5 marks for each of its two expressions, the one for order and the one for disorder; each is its own card at 5.",
         "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
       ]
     },
@@ -4500,7 +4584,7 @@
     }
   },
   {
-    "id": "fr-2022-ol-deferred-reading-a4-q7",
+    "id": "fr-2022-ol-deferred-reading-a4-q7-kamo",
     "subjectId": "french",
     "level": "ordinary",
     "source": "sec",
@@ -4508,9 +4592,9 @@
     "year": 2022,
     "paperFileid": "LC010GLP000BV-deferred",
     "section": "A",
-    "questionRef": "2022 OL Section A4 Q7 — Deferred sitting",
-    "questionText": "Give one point about the personality (i) of Kamo and (ii) of his mother.\nAnswer in English, referring to the text.",
-    "totalMarks": 8,
+    "questionRef": "2022 OL Section A4 Q7 · Kamo — Deferred sitting",
+    "questionText": "Give one point about the personality (i) of Kamo and (ii) of his mother.\nAnswer in English, referring to the text.\nKamo:",
+    "totalMarks": 4,
     "topicId": "french-5-1",
     "conceptId": "french-reading-french-5-1",
     "sourceMaterial": {
@@ -4539,6 +4623,9 @@
     "rubric": {
       "system": "french",
       "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning.",
         "Penalise extraneous material to a maximum of 2 marks.",
         "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
         "Where manipulation is required, do not penalise mistakes in grammar.",
@@ -4550,7 +4637,89 @@
         "• He likes a challenge, he immediately takes up the challenge offered by his mother",
         "• He is helpful, he does the shopping and cooking when his mother is under pressure",
         "• He is shy, he doesn’t want to correspond with strangers",
-        "Etc., etc.",
+        "Etc., etc."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "The scheme prices this ask 4 + 4: four marks for a point about Kamo and four for a point about his mother; each is its own card at 4.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a4-q7-mother",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A4 Q7 · His mother — Deferred sitting",
+    "questionText": "Give one point about the personality (i) of Kamo and (ii) of his mother.\nAnswer in English, referring to the text.\nhis mother:",
+    "totalMarks": 4,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.10; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning.",
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
         "His Mother:",
         "• She is cross with him about his poor result in his English exam",
         "• She is hard working, her job is tough and has long hours but she keeps at it",
@@ -4561,25 +4730,20 @@
         {
           "id": "response",
           "label": "Response",
-          "maxMarks": 8,
+          "maxMarks": 4,
           "permittedMarks": [
             0,
             1,
             2,
             3,
-            4,
-            5,
-            6,
-            7,
-            8
+            4
           ],
           "guidance": []
         }
       ],
       "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
       "practiceNotes": [
-        "Answer in French.",
-        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "The scheme prices this ask 4 + 4: four marks for a point about Kamo and four for a point about his mother; each is its own card at 4.",
         "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
       ]
     },

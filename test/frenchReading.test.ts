@@ -772,15 +772,17 @@ describe('French deferred sittings (2022 and 2023, both levels)', () => {
     .filter(card => card.id.startsWith(`fr-${year}-${level}-deferred-${kind}-`)).length;
 
   it('cards every printed reading, writing and gap-fill ask of the written papers, each said deferred twice', () => {
-    // Reading: Higher 20 (2022) and 22 (2023); Ordinary 33 each (1(a)-(d) is four printed asks).
+    // Reading: Higher 21 (2022) and 22 (2023); Ordinary 34 (2022) and 33 (2023). 1(a)-(d) is four printed
+    // asks; 2022 HL Q.2 1(b) (L'ordre / Le désordre) and 2022 OL Q.4 7 (Kamo / his mother) are one card per
+    // printed label, as June splits 2011 HL Q.1 3 and 2014 OL Q.4 8.
     // Writing: Higher Q1(a)-(c) and Q2-Q6 (8); Ordinary form fields 1-5, the choose-three form card and four tasks (10).
     // Gap-fill: Ordinary Q1(a), one card per printed gap (10). Listening waits on the deferred recordings.
     expect([count('reading', 2022, 'hl'), count('reading', 2023, 'hl'), count('reading', 2022, 'ol'), count('reading', 2023, 'ol')])
-      .toEqual([20, 22, 33, 33]);
+      .toEqual([21, 22, 34, 33]);
     expect([count('writing', 2022, 'hl'), count('writing', 2023, 'hl'), count('writing', 2022, 'ol'), count('writing', 2023, 'ol')])
       .toEqual([8, 8, 10, 10]);
     expect([count('cloze', 2022, 'ol'), count('cloze', 2023, 'ol')]).toEqual([10, 10]);
-    expect(FRENCH_DEFERRED_CARDS).toHaveLength(164);
+    expect(FRENCH_DEFERRED_CARDS).toHaveLength(166);
     for (const card of FRENCH_DEFERRED_CARDS) {
       expect(card.id).toMatch(/^fr-202[23]-(?:hl|ol)-deferred-/);
       expect(card.questionRef, card.id).toMatch(/ — Deferred sitting$/);
@@ -799,10 +801,23 @@ describe('French deferred sittings (2022 and 2023, both levels)', () => {
       '2023 ol A1-Q7 8', '2023 ol A2-Q6 4', '2023 ol A4-Q6 4',
     ]);
     for (const [year, level, address, marks] of decided) {
-      const card = FRENCH_DEFERRED_CARDS.find(card => card.id === `fr-${year}-${level}-deferred-reading-${address.toLowerCase()}`)!;
-      expect(card.totalMarks, card.id).toBe(marks);
-      expect(card.rubric.practiceNotes!.join(' '), card.id).toMatch(/^.*The scheme prints this head as/);
+      const id = `fr-${year}-${level}-deferred-reading-${address.toLowerCase()}`;
+      // A decided head the paper prints with two labels is carded one label at a time, each at its per-answer mark.
+      const cards = FRENCH_DEFERRED_CARDS.filter(card => card.id === id || card.id.startsWith(`${id}-`));
+      expect(cards.reduce((sum, card) => sum + card.totalMarks, 0), id).toBe(marks);
+      for (const card of cards) expect(card.rubric.practiceNotes!.join(' '), card.id).toMatch(/The scheme prints this head as/);
     }
+    const labelled = FRENCH_DEFERRED_CARDS.filter(card => card.id.includes('-reading-') && / · /.test(card.questionRef));
+    expect(labelled.map(card => `${card.questionRef} ${card.totalMarks}`)).toEqual([
+      "2022 HL Section A2 Q1(b) · L'ordre — Deferred sitting 5", '2022 HL Section A2 Q1(b) · Le désordre — Deferred sitting 5',
+      '2022 OL Section A4 Q7 · Kamo — Deferred sitting 4', '2022 OL Section A4 Q7 · His mother — Deferred sitting 4',
+    ]);
+    // The L'ordre / Le désordre cards' scheme answers are claimable rows. The Kamo / his mother cards keep the
+    // list fallback: the scheme prices that ask only on its head ("4 + 4") and lists its accepted points
+    // unpriced ("Any of: … Etc., etc."), with no partial-credit rule to place them (coordinator to rule).
+    expect(labelled.filter(card => (card.rubric as { allocation?: unknown }).allocation).map(card => card.id)).toEqual([
+      'fr-2022-hl-deferred-reading-a2-q1-b-ordre', 'fr-2022-hl-deferred-reading-a2-q1-b-desordre',
+    ]);
   });
 
   it('files every deferred task under its paper\'s own Atlas question', () => {
