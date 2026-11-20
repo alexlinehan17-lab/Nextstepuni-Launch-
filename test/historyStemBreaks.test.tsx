@@ -19,6 +19,8 @@ import { render } from '@testing-library/react';
 import { CARDS as HISTORY_ORDINARY } from '../components/MarkBank/cards/history/ordinary';
 import { CARDS as HISTORY_HIGHER } from '../components/MarkBank/cards/history/higher';
 import { CARDS as AGSCI_ORDINARY } from '../components/MarkBank/cards/agricultural-science/ordinary';
+import { CARDS as MUSIC_ORDINARY } from '../components/MarkBank/cards/music/ordinary';
+import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
 import SessionScreen from '../components/MarkBank/SessionScreen';
 import { stemWithListBreaks, stemWithPrintedBreaks } from '../components/MarkBank/stemText';
 
@@ -152,6 +154,21 @@ describe('showing a stem', () => {
     const card = HISTORY_ORDINARY.find(c => c.id === 'hist-2026-ol-lm-s2t1a-q1')!;
     render(<SessionScreen cards={[card]} subjectLabel="History" onGrade={vi.fn()} onFinish={vi.fn()} onExit={vi.fn()} />);
     expect(stemParagraph('In this edited extract')?.textContent).toBe(card.stem);
+  });
+
+  it('renders a Music stem with its printed lines: lead-in, instruction bullet and excerpt heading', () => {
+    const card = MUSIC_ORDINARY.find(c => c.id === 'mus-2021-ol-l-q3-b')!;
+    expect(card.stem).toBe('Three excerpts from the second movement of Piano Concerto in A major K488 by Mozart.'
+      + '\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.');
+    render(<SessionScreen cards={[card]} subjectLabel="Music" onGrade={vi.fn()} onFinish={vi.fn()} onExit={vi.fn()} />);
+    expect(stemParagraph('Three excerpts from the second movement')?.textContent).toBe(card.stem);
+  });
+
+  it('sets a Music Q5 B essay’s two printed lines apart', () => {
+    const card = MUSIC_HIGHER.find(c => c.id === 'mus-2021-hl-l-q5-b-iii')!;
+    expect(card.stem).toBe('Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:');
+    render(<SessionScreen cards={[card]} subjectLabel="Music" onGrade={vi.fn()} onFinish={vi.fn()} onExit={vi.fn()} />);
+    expect(stemParagraph('Irish Music.')?.textContent).toBe(card.stem);
   });
 
   it('renders another subject’s stem exactly as before', () => {

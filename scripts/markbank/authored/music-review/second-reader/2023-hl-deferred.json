@@ -1,0 +1,1577 @@
+{
+ "readingFile": "2023-hl-deferred.json",
+ "readBy": "second reader (Opus helper), 20 Nov 2026",
+ "method": "Rendered every page of both booklets with music_pages.py render at 110 dpi and read each ask page in full (listening 3, 4, 5, 6, 8, 10, 12, 13, 14, 15, 16, 20, 21, 22; composing 3, 4, 6, 8, 11, 12, 14, 16) and every page filed without asks on contact sheets. Zoomed with PyMuPDF clips at 350-400 dpi wherever a character was in doubt: the Q1 Excerpt 2 chord row (boxed B♭, X label), the Q5 lead-in (\"Irish Music.\", \"A.\"), the page-16 \"B\" (no full stop), \"Aural Skills\" (no full stop), the en dashes in \"bars 1–5\" / \"bars 1–4\", the superscripts in AA¹BB¹, and the drawn flat / sharp in \"E♭ major\" / \"F♯ minor\". Cross-check: rebuilt every file string, character for character, by concatenating whole printed lines of the text layer (spans in the OpusTextStd music font mapped b→♭, #→♯; spans flagged superscript mapped 1→¹; question labels such as \"(a)\" stripped; runs of spaces, tabs and the em space after composing bullets collapsed). All 134 strings rebuild exactly from printed lines in printed order, so every apostrophe (’ U+2019 throughout), dash, sign and superscript matches the page; joiners (\"\\n• \" only before printed bullets, \" • \" between printed composing bullets, a space or \"\\n\" elsewhere, \"□ \" before tick-box options) were checked against the renders. Verdicts rest on the renders. The file has no readFromPage entries, so none were checked.",
+ "booklets": {
+  "listening": "paper-trail-corpus/deferredexams/2023/LC067ALP008EV.pdf",
+  "composing": "paper-trail-corpus/deferredexams/2023/LC067ALP006EV.pdf"
+ },
+ "pagesRendered": {
+  "listening": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28
+  ],
+  "composing": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20
+  ]
+ },
+ "asks": [
+  {
+   "address": "Q1(a)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe one feature of the melody in this excerpt."
+  },
+  {
+   "address": "Q1(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Six excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(a)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times. The lyrics are printed below. Line 1 Too late, my time has come. Line 2 Sends shivers down my spine, body’s aching all the time."
+  },
+  {
+   "address": "Q1(b)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Insert the correct chord at X above."
+  },
+  {
+   "address": "Q1(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Six excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(b)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times. The lyrics are printed below. X B♭ Line 1 Goodbye everybody, I’ve got to go. Line 2 Gotta leave you all behind and face the truth. Line 3 Mama, ooh. I don’t want to die. I sometimes wish I’d never been born at all.",
+   "note": "Page 3: the chord row prints a boxed B♭ (B in Calibri, the flat in the OpusTextStd music font; drawn as a flat sign at 350 dpi) at the left and an empty box at the right with a bold \"X\" printed above it. The X label (y 0.480-0.499) sits wholly above the B♭ box (y 0.500-0.519), so the file's \"X B♭\" is top-to-bottom reading order; read strictly left to right along the box row it would be \"B♭ X\". Not counted as a difference; ordering call for the lane lead if the rule is left-to-right."
+  },
+  {
+   "address": "Q1(c)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe one feature of the bass guitar part in lines 2 and 3."
+  },
+  {
+   "address": "Q1(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Six excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(c)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times. The lyrics are printed below. X B♭ Line 1 Goodbye everybody, I’ve got to go. Line 2 Gotta leave you all behind and face the truth. Line 3 Mama, ooh. I don’t want to die. I sometimes wish I’d never been born at all.",
+   "note": "Same lyric block as Q1(b): see the note there on the \"X B♭\" order."
+  },
+  {
+   "address": "Q1(d)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Choose two of the following that feature in this excerpt."
+  },
+  {
+   "address": "Q1(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Six excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q1(e)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name one feature of the music played in the piano introduction of this excerpt."
+  },
+  {
+   "address": "Q1(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Six excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(e)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played three times."
+  },
+  {
+   "address": "Q1(f)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name one feature of the vocal music in this excerpt."
+  },
+  {
+   "address": "Q1(f)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Six excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(f)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played three times."
+  },
+  {
+   "address": "Q1(g)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name and describe one recording technique used in this excerpt."
+  },
+  {
+   "address": "Q1(g)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Six excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(g)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played three times."
+  },
+  {
+   "address": "Q1(h)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Which of the following features is heard in lines 1 and 2 above?"
+  },
+  {
+   "address": "Q1(h)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Six excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(h)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 5, played three times. The lyrics are printed below. Line 1 So you think you can stone me and spit in my eye. Line 2 So you think you can love me and leave me to die. Line 3 Oh baby, can’t do this to me baby. Line 4 Just gotta get out, just gotta get right out of here."
+  },
+  {
+   "address": "Q1(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Which of the following features is heard in line 4?"
+  },
+  {
+   "address": "Q1(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Six excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 5, played three times. The lyrics are printed below. Line 1 So you think you can stone me and spit in my eye. Line 2 So you think you can love me and leave me to die. Line 3 Oh baby, can’t do this to me baby. Line 4 Just gotta get out, just gotta get right out of here."
+  },
+  {
+   "address": "Q1(j)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The missing melody notes in bar 3 are"
+  },
+  {
+   "address": "Q1(j)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Six excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(j)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 6, played three times. An outline score of bars 1–5 of the excerpt is printed below.",
+   "note": "\"bars 1–5\": en dash (U+2013) on the page and in the file."
+  },
+  {
+   "address": "Q1(k)(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The style of the music in this excerpt is"
+  },
+  {
+   "address": "Q1(k)(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Six excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(k)(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 6, played three times. An outline score of bars 1–5 of the excerpt is printed below."
+  },
+  {
+   "address": "Q1(k)(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Give one reason for your answer."
+  },
+  {
+   "address": "Q1(k)(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Six excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(k)(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 6, played three times. An outline score of bars 1–5 of the excerpt is printed below."
+  },
+  {
+   "address": "Q2(a)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Insert the four missing notes at X on the score above."
+  },
+  {
+   "address": "Q2(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q2(a)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times. An outline score is printed below."
+  },
+  {
+   "address": "Q2(b)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify the cadence at Y."
+  },
+  {
+   "address": "Q2(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q2(b)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times. An outline score is printed below."
+  },
+  {
+   "address": "Q2(c)(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The texture of this movement is"
+  },
+  {
+   "address": "Q2(c)(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q2(c)(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played twice."
+  },
+  {
+   "address": "Q2(c)(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Give one reason to support your answer with reference to the music heard in this excerpt."
+  },
+  {
+   "address": "Q2(c)(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q2(c)(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played twice."
+  },
+  {
+   "address": "Q2(d)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The final chord in this excerpt is described as a Tierce de Picardie. Explain Tierce de Picardie as used in this movement."
+  },
+  {
+   "address": "Q2(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q2(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played twice."
+  },
+  {
+   "address": "Q3(a)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "From which section of the work is this excerpt taken?"
+  },
+  {
+   "address": "Q3(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played three times.\n• Answer the following questions."
+  },
+  {
+   "address": "Q3(b)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The texture at the opening of this excerpt is"
+  },
+  {
+   "address": "Q3(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played three times.\n• Answer the following questions."
+  },
+  {
+   "address": "Q3(c)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name any two instruments heard in the opening section of this excerpt."
+  },
+  {
+   "address": "Q3(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played three times.\n• Answer the following questions."
+  },
+  {
+   "address": "Q3(d)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name one feature of the music played by the harp in this excerpt."
+  },
+  {
+   "address": "Q3(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played three times.\n• Answer the following questions."
+  },
+  {
+   "address": "Q3(e)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe one difference between the Love theme as heard in this excerpt and the first time it is heard in Romeo and Juliet Fantasy Overture by Tchaikovsky."
+  },
+  {
+   "address": "Q3(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played three times.\n• Answer the following questions."
+  },
+  {
+   "address": "Q4(a)(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Which two of the following compositional techniques are used in this excerpt?"
+  },
+  {
+   "address": "Q4(a)(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Piano Quartet No. 1 by Gerald Barry.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(a)(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q4(a)(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe the use of one of these techniques in this excerpt."
+  },
+  {
+   "address": "Q4(a)(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Piano Quartet No. 1 by Gerald Barry.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(a)(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q4(b)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Select the missing time signature for the above excerpt."
+  },
+  {
+   "address": "Q4(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Piano Quartet No. 1 by Gerald Barry.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(b)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times. An outline score of bars 1–4 is printed below.",
+   "note": "\"bars 1–4\": en dash (U+2013) on the page and in the file."
+  },
+  {
+   "address": "Q4(c)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    13
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name an instrumental technique used in the excerpt."
+  },
+  {
+   "address": "Q4(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    13
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Piano Quartet No. 1 by Gerald Barry.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(c)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    13
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times. An outline score of bars 1–4 is printed below."
+  },
+  {
+   "address": "Q4(d)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    13
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This excerpt is based on the traditional Irish tune Lord Mayo’s Delight.\nName one similarity and one difference between the music of this excerpt and that of the opening section of the work. Refer to both sections in your answer."
+  },
+  {
+   "address": "Q4(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    13
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Piano Quartet No. 1 by Gerald Barry.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    13
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times. An outline score of bars 1–4 is printed below."
+  },
+  {
+   "address": "Q5 A(a)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "In the case of each dance tune, identify the type of dance, give its time signature and one bar of rhythm associated with it. Name the instrument playing the tune."
+  },
+  {
+   "address": "Q5 A(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "note": "\"Irish Music.\" (bold, full stop) and \"A.\" (bold, full stop) as printed (350 dpi zoom)."
+  },
+  {
+   "address": "Q5 A(a)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. Two dance tunes."
+  },
+  {
+   "address": "Q5 A(b)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify three features of sean-nós singing as heard in this performance."
+  },
+  {
+   "address": "Q5 A(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(b)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2."
+  },
+  {
+   "address": "Q5 A(c)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Using letters, write down the form of this song."
+  },
+  {
+   "address": "Q5 A(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(c)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2."
+  },
+  {
+   "address": "Q5 A(d)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    15
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This excerpt is a modern performance of a traditional Irish tune.\nDescribe two features of the music in the excerpt to support this statement."
+  },
+  {
+   "address": "Q5 A(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    15
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    15
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3."
+  },
+  {
+   "address": "Q5 B(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe the music of a composer who has combined traditional Irish music with another musical style."
+  },
+  {
+   "address": "Q5 B(i)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "pages": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
+   "note": "Page 16 prints the bold \"B\" with NO full stop (zoomed at 350 dpi), so \"B Answer one of the following:\" is as printed (the REVIEW-FORMAT example \"B. Answer ...\" is another year's print). Page 14 prints \"Irish Music.\" with a full stop."
+  },
+  {
+   "address": "Q5 B(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Write an account of the contribution made to the preservation of Irish music by Edward Bunting."
+  },
+  {
+   "address": "Q5 B(ii)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "pages": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:"
+  },
+  {
+   "address": "Q5 B(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Write an account of regional performing styles in Irish traditional music."
+  },
+  {
+   "address": "Q5 B(iii)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "pages": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:"
+  },
+  {
+   "address": "Q5 B(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Write an account of the céilí band tradition in Irish traditional music."
+  },
+  {
+   "address": "Q5 B(iv)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "pages": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:"
+  },
+  {
+   "address": "Q5 B(v)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe three significant developments that have taken place in Irish traditional music in the twentieth century."
+  },
+  {
+   "address": "Q5 B(v)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "pages": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:"
+  },
+  {
+   "address": "Q6(a)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The melody played by strings at the start of this excerpt features"
+  },
+  {
+   "address": "Q6(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.",
+   "note": "\"Aural Skills\" is printed bold with no full stop (350 dpi zoom); joined to the next line with a space, as the file has it."
+  },
+  {
+   "address": "Q6(a)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q6(b)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The music in this excerpt portrays a mood of conflict and strife. Describe two musical features which help to convey this mood with reference to the music heard in the excerpt."
+  },
+  {
+   "address": "Q6(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(b)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q6(c)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Insert the three missing notes at X on the score above."
+  },
+  {
+   "address": "Q6(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(c)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played 3 times. An outline score of the first six bars of the excerpt is printed below."
+  },
+  {
+   "address": "Q6(d)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The instrument playing the melody at the start of the excerpt is the"
+  },
+  {
+   "address": "Q6(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played twice."
+  },
+  {
+   "address": "Q6(e)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify one feature of the accompaniment."
+  },
+  {
+   "address": "Q6(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(e)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played twice."
+  },
+  {
+   "address": "Q6(f)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify one of the following features heard in this excerpt."
+  },
+  {
+   "address": "Q6(f)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(f)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played twice."
+  },
+  {
+   "address": "Q6(g)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Which of the following most accurately describes the text setting in this excerpt?"
+  },
+  {
+   "address": "Q6(g)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(g)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played twice."
+  },
+  {
+   "address": "Q6(h)",
+   "paper": "listening",
+   "field": "questionText",
+   "pages": [
+    22
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe two differences between the music heard in Excerpt 4 and the music heard in Excerpt 5. You must refer to both excerpts in your answer."
+  },
+  {
+   "address": "Q6(h)",
+   "paper": "listening",
+   "field": "questionContext",
+   "pages": [
+    22
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(h)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "pages": [
+    22
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played once more and Excerpt 5, played three times."
+  },
+  {
+   "address": "Section A Q1",
+   "paper": "composing",
+   "field": "questionText",
+   "pages": [
+    4,
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ descant recorder □ violin □ trumpet"
+  },
+  {
+   "address": "Section A Q1",
+   "paper": "composing",
+   "field": "grid.stem",
+   "pages": [
+    4,
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer one question only in this section:"
+  },
+  {
+   "address": "Section A Q2",
+   "paper": "composing",
+   "field": "questionText",
+   "pages": [
+    6,
+    7
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Setting music to a given text Here is an extract from the novel The Lord of the Rings by J.R.R. Tolkien. All that is gold does not glitter, Not all those who wander are lost; The old that is strong does not wither, Deep roots are not reached by the frost. The opening line has been set for you. • Set the remaining words to make a melody of 16 bars. (You may exceed this number of bars and include a modulation, if you wish.) • Add appropriate performing directions (phrasing and dynamics) to the melody.",
+   "note": "\"(You may exceed this number of bars and include a modulation, if you wish.)\" is printed as the indented second line of the first bullet, without a bullet of its own: joined with a space, as the file has it. The four poem lines are printed without bullets."
+  },
+  {
+   "address": "Section A Q2",
+   "paper": "composing",
+   "field": "questionContext",
+   "pages": [
+    6,
+    7
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer one question only in this section:"
+  },
+  {
+   "address": "Section A Q3",
+   "paper": "composing",
+   "field": "questionText",
+   "pages": [
+    8,
+    9
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Composing to a given dance rhythm or metre or form The opening phrase of a gigue is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ violin □ flute □ clarinet □ horn",
+   "note": "\"AA¹BB¹\": both 1s are superscripts on the page (400 dpi zoom; separate superscript spans in the text layer)."
+  },
+  {
+   "address": "Section A Q3",
+   "paper": "composing",
+   "field": "questionContext",
+   "pages": [
+    8,
+    9
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer one question only in this section:"
+  },
+  {
+   "address": "Section B Q4",
+   "paper": "composing",
+   "field": "questionText",
+   "pages": [
+    12,
+    13
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Composing melody and bass notes from a set of chords Preparatory work: Plot the chords available in the key of E♭ major, either in the chord bank grid or on the stave below. • Study the following piece of music. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
+   "note": "\"E♭ major\": the flat is the OpusTextStd music font, drawn as a flat sign (350 dpi zoom). \"Preparatory work\" is bold with the colon in regular weight; capitals as printed. The bullets are \"•\" followed by an em space (U+2003) in the text layer: spacing only."
+  },
+  {
+   "address": "Section B Q4",
+   "paper": "composing",
+   "field": "questionContext",
+   "pages": [
+    12,
+    13
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer one question only in this section:"
+  },
+  {
+   "address": "Section B Q5",
+   "paper": "composing",
+   "field": "questionText",
+   "pages": [
+    14,
+    15
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Composing bass notes and chord indications to a given tune Preparatory work: Plot the chords available in the key of F♯ minor, either in the chord bank grid or on the stave below. • Study the following piece of music. • Add suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+   "note": "\"F♯ minor\": the sharp is the OpusTextStd music font, drawn as a sharp sign (350 dpi zoom). The bullets are \"•\" plus an em space in the text layer: spacing only."
+  },
+  {
+   "address": "Section B Q5",
+   "paper": "composing",
+   "field": "grid.stem",
+   "pages": [
+    14,
+    15
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer one question only in this section:"
+  },
+  {
+   "address": "Section B Q6",
+   "paper": "composing",
+   "field": "questionText",
+   "pages": [
+    16,
+    17
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Adding a countermelody or descant and chordal support to a given tune Preparatory work: Plot the chords available in the key of C major, either in the chord bank grid or on the stave below. • Study the following piece of music. • Insert suitable chord indications in the boxes provided. • Continue the descant part in the given style to complete the piece. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+   "note": "The bullets are \"•\" plus an em space in the text layer: spacing only."
+  },
+  {
+   "address": "Section B Q6",
+   "paper": "composing",
+   "field": "questionContext",
+   "pages": [
+    16,
+    17
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer one question only in this section:"
+  }
+ ],
+ "addressCheck": "Every address matches the printed numbering: listening Q1(a)-(j), Q1(k)(i)-(ii); Q2(a), (b), (c)(i)-(ii), (d); Q3(a)-(e); Q4(a)(i)-(ii), (b), (c), (d); Q5 A(a)-(d) (printed \"A.\" then (a)-(d)), Q5 B(i)-(v) (printed \"B\"); Q6(a)-(h); composing Section A Q1-Q3 (pp. 4, 6, 8, scores on 5, 7, 9) and Section B Q4-Q6 (pp. 12, 14, 16, scores on 13, 15, 17). Pages and pagesWithoutAsks agree with the print: listening 1, 2, 7, 9, 11, 17-19, 23-28 and composing 1, 2, 3, 10, 11, 18, 19, 20 carry no ask (17-19 are Q5 B answer lines; composing 3 and 11 carry only the section banner, the stem and the question list).",
+ "missingLines": [
+  "Listening p16, Q5 B: \"Indicate your choice of question (i) □ (ii) □ (iii) □ (iv) □ (v) □\" is in no string; answer-slot material (the asks' notes say so), listed for completeness.",
+  "Listening p16: \"Continue your answer on pages 17 – 19. Question 6 begins on page 20.\" (italic) and p22: \"You have three minutes to complete the examination paper.\" (bold) are in no string; navigation / timing lines outside the question blocks, listed for completeness.",
+  "Composing p3 and p11: the section banners \"Section A Melody Composition 40 marks\" / \"Section B Harmony 60 marks\" and the question lists under the stem (\"Question 1 Continuation of a given opening (40 marks) or Question 2 Setting music to a given text (40 marks) or Question 3 Composing to a given dance rhythm or metre or form (40 marks)\"; likewise Q4-Q6 at 60 marks) are in no string; section-level material above the stem \"Answer one question only in this section:\", which is carried (grid.stem on Section A Q1 and Section B Q5, questionContext on the other four). Listed for completeness.",
+  "Listening p14, Q5 A(a): the answer table's headings \"Type of Dance\", \"Time signature\", \"Bar of rhythm\", \"Instrument playing the tune\" and row labels \"Dance 1\" / \"Dance 2\" are in no string; the ask's figure carries the table (answer slots).",
+  "Listening answer-slot labels in no string (not asks, by rule): \"Answer:\" (Q1(a), (c), Q3(a), (e), Q4(c)), \"Feature:\" (Q1(e), (f), Q3(d), Q6(e)), \"Technique:\" / \"Description:\" (Q1(g), Q4(a)(ii)), \"Reason:\" (Q1(k)(ii), Q2(c)(ii)), \"Tierce de Picardie:\" (Q2(d)), \"Instrument 1:\" / \"Instrument 2:\" (Q3(c)), \"Similarity:\" / \"Difference:\" (Q4(d)), \"Feature 1:\"-\"Feature 3:\" (Q5 A(b)), \"Form:\" (Q5 A(c)), \"Feature 1:\" / \"Feature 2:\" (Q5 A(d), Q6(b)), \"Difference 1:\" / \"Difference 2:\" (Q6(h)). Tick-box options of every choice part are in the asks' figures.",
+  "Score material in no string: listening p6 Q1 Excerpt 6 underlay (\"Noth - ing real - ly mat - ters, an - y - one can see. Noth-ing real-ly mat-ters, Noth-ing real-ly mat-ters to me.\") and bar numbers, inside the Q1(j) figure; the X / Y brackets on p8 and p20; composing tempo and dynamic marks (Allegretto, Andante, Moderato, mf), the p7 underlay (\"All that is gold does not glit - ter,\"), the chord symbols over the Q4-Q6 scores, the \"Descant\" / \"Melody\" stave labels and the chord-bank grids (\"Notes of chord\" / \"Chord symbol\" / \"Roman numeral\"; the Preparatory work grids are in notCounted)."
+ ],
+ "summary": {
+  "entriesChecked": 134,
+  "matchesPrint": 134,
+  "differs": 0
+ }
+}

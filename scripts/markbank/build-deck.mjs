@@ -846,8 +846,12 @@ function spanishGridFault(c, scheme, schemeCells = '', schemeRanges = '') {
     if (halfTop) {
       const ladder = [...Array(Math.floor(k.maxMarks) + 1).keys(), k.maxMarks];
       if (allowed.length !== ladder.length || allowed.some((m, i) => m !== ladder[i])) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
-      const marks = (k.bands ?? []).flatMap(b => b.marks).sort((a, b) => a - b);
-      if (marks.length !== ladder.length || marks.some((m, i) => m !== ladder[i])) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
+      // A quality line the scheme prints with its marks only (2011/2013 HL "Quality of bass line ... 9.5") has
+      // no bands; where bands are printed they cover the ladder once, as on every other criterion.
+      if (k.bands) {
+        const marks = k.bands.flatMap(b => b.marks).sort((a, b) => a - b);
+        if (marks.length !== ladder.length || marks.some((m, i) => m !== ladder[i])) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
+      }
       continue;
     }
     if (allowed.length !== k.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
@@ -977,6 +981,7 @@ const DEFERRED_ID = {
   physics: /^phys-\d{4}-(?:hl|ol)-deferred-/,
   'home-economics': /^he-\d{4}-(?:hl|ol)-deferred-/,
   maths: /^maths-\d{4}-(?:hl|ol|fl)-deferred-/,
+  music: /^mus-\d{4}-(?:hl|ol)-deferred-/,
 };
 const deferredCard = (subjectId, card) =>
   Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));
@@ -1875,8 +1880,9 @@ for (const c of cards) {
     repairGlyphs(c);
     const mangled = mangledText(c);
     if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+    // A Music deferred sitting is its two booklets, as June's are ("Deferred · Listening", "Deferred · Composing").
     const fileid = deferredCard(SUBJECT_ID, c)
-      ? deferredDoc(SUBJECT_ID, c, 'Exam Paper')
+      ? deferredDoc(SUBJECT_ID, c, SUBJECT_ID === 'music' ? MUSIC_BOOKLET[c.section] : 'Exam Paper')
       : SUBJECT_ID === 'music'
       ? resolveCompanionFileid('music', c.year, c.level, MUSIC_BOOKLET[c.section])
       : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
@@ -2024,7 +2030,7 @@ for (const c of cards) {
    * show them the article. Unresolvable means the card is DROPPED. */
   const unresolvedSource = sources.map((source) => {
     if (!source.sourceLabel) return null;
-    const fileid = deferredCard(SUBJECT_ID, c) && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
+    const fileid = deferredCard(SUBJECT_ID, c) && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german' || SUBJECT_ID === 'music')
       ? deferredDoc(SUBJECT_ID, c, source.sourceLabel)
       : resolveCompanionFileid(
         corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year ?? 2025,
@@ -2297,6 +2303,8 @@ for (const c of cards) {
     ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
     : deferredEntry && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
     ? deferredDoc(SUBJECT_ID, c, listening ? 'Aural Paper' : 'Exam Paper')
+    : deferredEntry && SUBJECT_ID === 'music'
+    ? deferredDoc(SUBJECT_ID, c, MUSIC_BOOKLET[c.section])
     : deferredEntry
     ? (SUBJECT_ID === 'dcg' || SUBJECT_ID === 'biology'
       ? resolvePaperFileid(SUBJECT_ID, year, level, paperSection, 'deferred')
