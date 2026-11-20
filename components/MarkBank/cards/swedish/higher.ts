@@ -1731,13 +1731,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: befinner sig i en gryende vår",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "befinner sig i en gryende vår: vädrar morgonluft, har framtiden för sig, har lysande utsikter", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "vädrar morgonluft, har framtiden för sig, har lysande utsikter", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1754,13 +1755,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: apa efter",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "apa efter: härma, efterlikna", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "härma, efterlikna", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1777,13 +1779,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: bete sig",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "bete sig: uppföra sig, uppträda, gå tillväga", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "uppföra sig, uppträda, gå tillväga", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1800,13 +1803,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: står till buds",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "står till buds: stå till förfogande, finns, existera", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "stå till förfogande, finns, existera", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1823,13 +1827,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: övervägande",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "övervägande: till största delen, rådande, dominerande, störst", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "till största delen, rådande, dominerande, störst", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1846,13 +1851,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara vad en ”teknologisk singularitet” är.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Svar finns i stycke 6. Rätt svar: En AI som förbättrar sig själv.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "En AI som förbättrar sig själv.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1869,13 +1875,14 @@ export const CARDS: SecCard[] = [
     questionText: "Var gör följderna av AI så svåra att förutse, enligt artikeln?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vad gör följderna av AI så svåra att förutse, enligt artikeln? Svar finns i stycken 6, 7 och 9 Vi vet inte hur en superintelligens kommer att bete sig, eftersom när en superintelligens uppstår tar den över utan att låta människan veta det. Dess enorma intelligens gör det alltså omöjligt för människan att veta vad den egentligen håller på med. Dessutom styrs utvecklingen av ekonomiska motiv.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Vi vet inte hur en superintelligens kommer att bete sig, eftersom när en superintelligens uppstår tar den över utan att låta människan veta det. Dess enorma intelligens gör det alltså omöjligt för människan att veta vad den egentligen håller på med. Dessutom styrs utvecklingen av ekonomiska motiv.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1892,13 +1899,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara Stefan Carlssons slutsats i citatet nedan: ”I framtiden kanske en snickare har bättre framtidsutsikter än en läkare eller revisor.”",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Svar baseras på stycke 4. När datainsamling tas över av AI kan läkare bli överflödiga; AI tar över dess roll. Yrken som går ut på att dra slutsatser av stora mängder data, så som revision, kommer att hotas. Praktiska hantverk som kräver finmotorik, konstnärlighet, tradition och omdöme kommer dock troligen att finnas kvar.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "När datainsamling tas över av AI kan läkare bli överflödiga; AI tar över dess roll. Yrken som går ut på att dra slutsatser av stora mängder data, så som revision, kommer att hotas. Praktiska hantverk som kräver finmotorik, konstnärlighet, tradition och omdöme kommer dock troligen att finnas kvar.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1915,13 +1923,14 @@ export const CARDS: SecCard[] = [
     questionText: "Kommentera följande uttalande och förklara vad författaren menar. ”Men Google har som sagt inrättat en etikkommitté, så vad skulle rimligtvis kunna gå fel?”",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Svar baseras på artikeln i sin helhet Påståendet ska tolkas ironiskt, kanske till och med sarkastiskt. Tidigare stycken har pekat på riskerna med att skapa superintelligenser eftersom det är omöjlligt att förutse vilka motiv de kommer att ha och att de kan arbeta ostört med t. ex. planer på världsherravälde. Den etikkommitté som omnämns kan på sin höjd sakta utvecklingen men när ekonomiska intressen står på spel, uppmuntrade dels av publik, populär framgång men också av de enorma vinster som står på spel, kommer etikkommittéerna inte att ha något att säga till om. Pengarna kommer att styra.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Påståendet ska tolkas ironiskt, kanske till och med sarkastiskt. Tidigare stycken har pekat på riskerna med att skapa superintelligenser eftersom det är omöjlligt att förutse vilka motiv de kommer att ha och att de kan arbeta ostört med t. ex. planer på världsherravälde. Den etikkommitté som omnämns kan på sin höjd sakta utvecklingen men när ekonomiska intressen står på spel, uppmuntrade dels av publik, populär framgång men också av de enorma vinster som står på spel, kommer etikkommittéerna inte att ha något att säga till om. Pengarna kommer att styra.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1938,13 +1947,14 @@ export const CARDS: SecCard[] = [
     questionText: "Baserat på artikeln och dina egna åsikter, diskutera huruvida du anser att AI erbjuder mer risker än möjligheter i framtiden.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Svar baserat på artikeln i sin helhet och kandidatens tankar och idéer. Ett utmärkt svar väger fördelar mot nackdelar med relevanta exempel och drar av detta resonemang en välavvägd slutsats. Relevanta idéer för AI kan innefatta: En historisk tillbakablick där oron över snabb teknikutveckling kommit på skam. Möjligheten att frigöra tid för arbetare, vilket kan leda till mer fritid och självförverkligande. Förhöjd livskvalitet genom att vardagslivet blir enklare. Tekniska och andra lösningar inom problemområden som miljö och resursfördelning som en superintelligens kan skapa skulle gynna mänskligheten. Relevanta idéer mot AI kan innefatta: Hotet från en superintelligens vars slutgiltiga mål man inte kan förutse. Arbetslöshet och utslagning som följer på friställande av arbetskraft. En brist på mening med tillvaron och ökande vilsenhet då traditionella värden som arbete försvinner. Hotet från vapenindustrin där kapprustning kan leda till väpnad konflikt.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ett utmärkt svar väger fördelar mot nackdelar med relevanta exempel och drar av detta resonemang en välavvägd slutsats. Relevanta idéer för AI kan innefatta: En historisk tillbakablick där oron över snabb teknikutveckling kommit på skam. Möjligheten att frigöra tid för arbetare, vilket kan leda till mer fritid och självförverkligande. Förhöjd livskvalitet genom att vardagslivet blir enklare. Tekniska och andra lösningar inom problemområden som miljö och resursfördelning som en superintelligens kan skapa skulle gynna mänskligheten. Relevanta idéer mot AI kan innefatta: Hotet från en superintelligens vars slutgiltiga mål man inte kan förutse. Arbetslöshet och utslagning som följer på friställande av arbetskraft. En brist på mening med tillvaron och ökande vilsenhet då traditionella värden som arbete försvinner. Hotet från vapenindustrin där kapprustning kan leda till väpnad konflikt.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1959,15 +1969,17 @@ export const CARDS: SecCard[] = [
     id: "swe-2018-hl-i-2", topicId: "swedish-0-1", conceptId: "vilka-kallades-digitala-infodingar",
     section: "I", questionRef: "2018 HL Section I Q2",
     questionText: "Vilka kallades för ”digitala infödingar”?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Det är den första generationen barn som är uppfödd med datorer och internet. Det är de som är födda runt år 2000.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Det är den första generationen barn som är uppfödd med datorer och internet.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Det är de som är födda runt år 2000.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2018 Higher Level examination paper — © State Examinations Commission.",
@@ -1984,13 +1996,14 @@ export const CARDS: SecCard[] = [
     questionText: "Jämför barn och ungdomars situation tillbaka i tiden med idag utifrån artikeln.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Jämför barn och ungas situation tillbaka i tiden med idag utifrån artikeln. Några exempel: Den tekniska utvecklingen har gått fort: idag har majoriteten av alla tvååringar varit på nätet och nästa alla elvaåringar har en smart-phone. För ca 15 år sedan var det extremt med mer än tre timmars internetanvändning per dag medan det idag är normalt. De som förr kände sig ensamma kan idag via internet komma i kontakt med många andra med samma problem. Många barns sovrum är idag fulla med datorer, mobiler och andra IT-produkter. Utan att lämna rummet har de nu kontakt med hela världen. Den tidigare skylten ”tillträde förbjudet” som kunde stå på barns dörrar finns i dag i deras datorer i form av hemliga inloggningar.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Den tekniska utvecklingen har gått fort: idag har majoriteten av alla tvååringar varit på nätet och nästa alla elvaåringar har en smart-phone. För ca 15 år sedan var det extremt med mer än tre timmars internetanvändning per dag medan det idag är normalt. De som förr kände sig ensamma kan idag via internet komma i kontakt med många andra med samma problem. Många barns sovrum är idag fulla med datorer, mobiler och andra IT-produkter. Utan att lämna rummet har de nu kontakt med hela världen. Den tidigare skylten ”tillträde förbjudet” som kunde stå på barns dörrar finns i dag i deras datorer i form av hemliga inloggningar.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2018 Higher Level examination paper — © State Examinations Commission.",
@@ -2014,6 +2027,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2018 Higher Level examination paper — © State Examinations Commission.",
@@ -2037,6 +2051,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2018 Higher Level examination paper — © State Examinations Commission.",
@@ -2051,15 +2066,20 @@ export const CARDS: SecCard[] = [
     id: "swe-2018-hl-i-6", topicId: "swedish-0-1", conceptId: "namn-och-nackdelar-med-barns-och",
     section: "I", questionRef: "2018 HL Section I Q6",
     questionText: "Nämn för‐ och nackdelar med barns och ungdomars internetanvändning utifrån artikeln och skriv vad du tycker om det.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ett utmärkt svar väger fördelar mot nackdelar med relevanta exempel och kandidaten drar av detta resonemang en välavvägd slutsats. Fördelar: Internet kan hjälpa barn som är isolerade/ ensamma av etniska, religiösa och sexuella skäl att komma i kontakt med likasinnade/ andra barn i samma situation. Det finns många möjligheter på nätet idag tack vare kreativa och intressanta sajter. Nackdelar: Det finns flera risker med internet, där barn kan bli kontaktade av okända personer, där de ser/ kommer i kontakt med porr/ sexuellt störande bilder, hat/ hatiska budskap/ meddelanden/ näthat, sidor som inspirerar till ätstörningar eller självskador/ självskadebeteende. Internet kan befästa könsroller.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ett utmärkt svar väger fördelar mot nackdelar med relevanta exempel och kandidaten drar av detta resonemang en välavvägd slutsats.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Fördelar: Internet kan hjälpa barn som är isolerade/ ensamma av etniska, religiösa och sexuella skäl att komma i kontakt med likasinnade/ andra barn i samma situation.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Det finns många möjligheter på nätet idag tack vare kreativa och intressanta sajter.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Nackdelar: Det finns flera risker med internet, där barn kan bli kontaktade av okända personer, där de ser/ kommer i kontakt med porr/ sexuellt störande bilder, hat/ hatiska budskap/ meddelanden/näthat, sidor som inspirerar till ätstörningar eller självskador/ självskadebeteende.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Internet kan befästa könsroller.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2018 Higher Level examination paper — © State Examinations Commission.",
@@ -2076,13 +2096,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. frikostigt-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "frikostigt- generöst, gärna, med vilja", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "generöst, gärna, med vilja", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2099,13 +2120,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. hållning-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "hållning- åsikt, uppfattning, åskådning", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "åsikt, uppfattning, åskådning", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2122,13 +2144,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. genväg-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "genväg- en kortare (och snabbare) väg än den vanliga", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "en kortare (och snabbare) väg än den vanliga", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2145,13 +2168,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. rimliga-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "rimliga- passande, skäliga, möjliga, tänkbara", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "passande, skäliga, möjliga, tänkbara", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2168,13 +2192,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. insikt-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "insikt- förståelse", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "förståelse", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2191,13 +2216,14 @@ export const CARDS: SecCard[] = [
     questionText: "Vad menar journalisten med att ” Zeynep Tufekci är den sorts intellektuell som vi desperat behöver just nu.”?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Svaret kommer direkt efter citatet. I vår digitaliserade värld behöver vi en tänkare som förstår både algoritmers och sociala mediers makt och som har både aktivistens och akademikerns perspektiv.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "I vår digitaliserade värld behöver vi en tänkare som förstår både algoritmers och sociala mediers makt och som har både aktivistens och akademikerns perspektiv.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2214,13 +2240,14 @@ export const CARDS: SecCard[] = [
     questionText: "Vad sägs om Facebook i artikeln?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: ". Det rör sig om kritik av Facebook och av Facebooks användare: Många som använder sig av nätet, Facebook inkluderat, är okritiska till hur de sprider spår på nätet. Gillanden på Facebook t.ex. ger mängder av information. Det gör \"big data\" ännu större och mäktigare och samtidigt finns det en risk att informationen kommer i fel händer. Facebook kritiseras också för att bestämmer vilka vi lyssnar på. Facebook styr uppmärksamhet på nätet åt ett bestämt håll, medan andra inte uppmärksammas.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Det rör sig om kritik av Facebook och av Facebooks användare: Många som använder sig av nätet, Facebook inkluderat, är okritiska till hur de sprider spår på nätet. Gillanden på Facebook t.ex. ger mängder av information. Det gör \"big data\" ännu större och mäktigare och samtidigt finns det en risk att informationen kommer i fel händer. Facebook kritiseras också för att bestämmer vilka vi lyssnar på. Facebook styr uppmärksamhet på nätet åt ett bestämt håll, medan andra inte uppmärksammas.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2235,15 +2262,19 @@ export const CARDS: SecCard[] = [
     id: "swe-2019-hl-i-4", topicId: "swedish-0-1", conceptId: "kommentera-vad-som-menas-med-rubriken",
     section: "I", questionRef: "2019 HL Section I Q4",
     questionText: "Kommentera vad som menas med rubriken. ”Varnar för eufori: En hashtag förändrar inte samhället”",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "En paradox: Nätet gör det möjligt att dra till sig väldigt många människor väldigt fort. Det ser ut som om det finns en stark rörelse, men den blir sällan så revolutionerande som man skulle kunna tro. Anledningen är att det inte finns en struktur bakom. Det saknas ledare och en väl inarbetad organisation som skulle ha kunnat samla folk efter protesterna. Jämförelse tillbaka i tiden: Före internet-eran tog det kanske många år för att skapa en rörelse med ett team och en infrastruktur, där man jobbade ihop, fattade beslut ihop och påverkade politiker. Det betydde att det fanns en hel organisation klar för nästa steg efter t.ex. en protestmarch. Nu är det en hashtag som samlar stora folkmassor. Det kan se ut som en genväg, men man hoppar över dessa viktiga steg för att nå verklig förändring. Därav varningen för att ha alltför stora förhoppningar när många människor samlas i dag för att protestera via sociala medier", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "En paradox: Nätet gör det möjligt att dra till sig väldigt många människor väldigt fort. Det ser ut som om det finns en stark rörelse, men den blir sällan så revolutionerande som man skulle kunna tro.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Anledningen är att det inte finns en struktur bakom. Det saknas ledare och en väl inarbetad organisation som skulle ha kunnat samla folk efter protesterna.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Jämförelse tillbaka i tiden: Före internet-eran tog det kanske många år för att skapa en rörelse med ett team och en infrastruktur, där man jobbade ihop, fattade beslut ihop och påverkade politiker. Det betydde att det fanns en hel organisation klar för nästa steg efter t.ex. en protestmarch.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Nu är det en hashtag som samlar stora folkmassor. Det kan se ut som en genväg, men man hoppar över dessa viktiga steg för att nå verklig förändring. Därav varningen för att ha alltför stora förhoppningar när många människor samlas i dag för att protestera via sociala medier", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2258,15 +2289,20 @@ export const CARDS: SecCard[] = [
     id: "swe-2019-hl-i-5", topicId: "swedish-0-1", conceptId: "vad-menar-zeynep-tufekci-med-detta",
     section: "I", questionRef: "2019 HL Section I Q5",
     questionText: "Vad menar Zeynep Tufekci med detta och vad föreslår hon? ”De försöker göra som förut fast det är som att sätta regler för en värld med hästar för en ny med bilar.”",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vad menar Zeynep Tufekci med detta och vad förslår hon? ”De försöker göra som förut fast det är som att sätta regler för en värld med hästar för en ny med bilar.” Zeynep Tufekci kritiserar politikerna för att inte kunna anpassa sig till en ny värld genom att här använda sig av en slående bild. Hon kräver att politikerna blir medvetna om vilka förändringar vi står inför och drar en historisk parallell till tiden då boktryckarkonsten kom för att peka på det historiska skiftet. Det är oacceptabelt för en politiker att inte vara medveten om ny teknologi. Zeynep Tufekci fram problemet med att bygga nya institutioner och föreslår att vi tänker efter vilka institutioner vi behöver skapa. Hon vill också ha en mer intensiv debatt om etik och begränsningar för datalagring. Hon förespråkar en strikt reglering för hur data sparas och säljs.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Zeynep Tufekci kritiserar politikerna för att inte kunna anpassa sig till en ny värld genom att här använda sig av en slående bild.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Hon kräver att politikerna blir medvetna om vilka förändringar vi står inför och drar en historisk parallell till tiden då boktryckarkonsten kom för att peka på det historiska skiftet.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Det är oacceptabelt för en politiker att inte vara medveten om ny teknologi.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Zeynep Tufekci fram problemet med att bygga nya institutioner och föreslår att vi tänker efter vilka institutioner vi behöver skapa. Hon vill också ha en mer intensiv debatt om etik och begränsningar för datalagring.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Hon förespråkar en strikt reglering för hur data sparas och säljs.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2283,13 +2319,14 @@ export const CARDS: SecCard[] = [
     questionText: "Nämn en problemställning med dagens internet utifrån artikeln, som du anser vara den allvarligaste och skriv vad du tycker.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kandidaten nämner en av följande problemställningar och diskuterar den. Många är alltför okritiska till hur vi sprider spår på nätet och därmed hjälper till att göra \"big data\" ännu större och mäktigare. Kunskapen kan hamna i fel händer. Nätet gör det möjligt att dra till sig väldigt många människor på kort tid. Det ser ut som om det finns en stark rörelse, men i själva verket finns där varken ledare eller organisation. Därmed sker ingen verklig förändring. Algoritmer övervakar, manipulerar och styr oss. Plattformar som Facebook och Google bestämmer vilka vi lyssnar på. Vissa håll lyfts fram, andra inte. Artificiell intelligens skapar hela tiden en alltmer komplex dynamik. Politiker följer inte med i utvecklingen.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Många är alltför okritiska till hur vi sprider spår på nätet och därmed hjälper till att göra \"big data\" ännu större och mäktigare. Kunskapen kan hamna i fel händer. Nätet gör det möjligt att dra till sig väldigt många människor på kort tid. Det ser ut som om det finns en stark rörelse, men i själva verket finns där varken ledare eller organisation. Därmed sker ingen verklig förändring. Algoritmer övervakar, manipulerar och styr oss. Plattformar som Facebook och Google bestämmer vilka vi lyssnar på. Vissa håll lyfts fram, andra inte. Artificiell intelligens skapar hela tiden en alltmer komplex dynamik. Politiker följer inte med i utvecklingen.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2306,7 +2343,7 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord och uttryck såsom de används i texten. oförmåga",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "oförmåga‐ inkompetens, oduglighet, svaghet, bristande förmåga", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "inkompetens, oduglighet, svaghet, bristande förmåga", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2330,7 +2367,7 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord och uttryck såsom de används i texten. sätta på pränt",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sätta på pränt‐ skriva ned, nerteckna", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "skriva ned, nerteckna", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2354,7 +2391,7 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord och uttryck såsom de används i texten. präglar",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "präglar‐ utmärker, kännetecknar, ger form åt", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "utmärker, kännetecknar, ger form åt", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2378,7 +2415,7 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord och uttryck såsom de används i texten. funtad",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "funtad‐ skapad, artad, beskaffad, gjord", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "skapad, artad, beskaffad, gjord", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2402,7 +2439,7 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord och uttryck såsom de används i texten. djärv(are)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "djärv(are)‐ modig, orädd, tuff, kaxig, vågad, utmanande", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "modig, orädd, tuff, kaxig, vågad, utmanande", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2426,7 +2463,7 @@ export const CARDS: SecCard[] = [
     questionText: "Lars Molin är kritisk till dem som ingår i Läsdelegationen. Vilka är skälen?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Svaret finns på rad 8 ‐ 9: Delegationen består av främst skönlitterära författare och det finns inga med lingvistisk kompetens från universitet och näringsliv.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Delegationen består av främst skönlitterära författare och det finns inga med lingvistisk kompetens från universitet och näringsliv.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2448,9 +2485,10 @@ export const CARDS: SecCard[] = [
     id: "swe-2021-hl-i-3", topicId: "swedish-0-1", conceptId: "namn-texttyper-lars-melin-diskuterar-och",
     section: "I", questionRef: "2021 HL Section I Q3",
     questionText: "Nämn de två texttyper Lars Melin diskuterar och ge exempel på vad som skiljer dem åt språkligt.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Lars Melin diskuterar skillnaden mellan fiktiva och informativa texter. Informativa texter bygger sammanhang och de har en logisk struktur med långa fraser. De redogör och använder presens. De vanligaste orden är prepositioner. Texten stöds med olika typografiska hjälpmedel. Fiktiva texter bygger på associativa texter med expressiva detaljer. De byggs upp med samordningar. De är berättande och använder preteritum. De vanligaste orden är personliga pronomen. Texten är löpande utan några tyografiska hjälpmedel.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Lars Melin diskuterar skillnaden mellan fiktiva och informativa texter. Informativa texter bygger sammanhang och de har en logisk struktur med långa fraser. De redogör och använder presens. De vanligaste orden är prepositioner. Texten stöds med olika typografiska hjälpmedel.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Fiktiva texter bygger på associativa texter med expressiva detaljer. De byggs upp med samordningar. De är berättande och använder preteritum. De vanligaste orden är personliga pronomen. Texten är löpande utan några tyografiska hjälpmedel.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2496,9 +2534,11 @@ export const CARDS: SecCard[] = [
     id: "swe-2021-hl-i-5", topicId: "swedish-0-1", conceptId: "vad-kritiserar-lars-molin-med-anar",
     section: "I", questionRef: "2021 HL Section I Q5",
     questionText: "Vad kritiserar Lars Molin med ”vi anar att skärmen var den gamla fienden, den som förförde med video, film och spel” och vad vill han?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "En kritik som Lars Molin för fram i texten är att delegationens syn på problemet läsförståelse är moraliserande och saknar nytänkande när det gäller läsvanor. Han skriver att delegationen har en tveksam hållning till dagens teknologi och gör en jämförelse tillbaka i tiden där man tog avstånd från dåtidens teveskärmar och Lars Molin frågar sig om inte denna syn finns kvar. Delegationen missar vad dagens skärmar har att erbjudan när det gäller digital läsning och han är oförstående inför detta. Att alla idag i praktiken har ett bibliotek i fickan borde vara något att bejaka och utveckla i skolan.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "En kritik som Lars Molin för fram i texten är att delegationens syn på problemet läsförståelse är moraliserande och saknar nytänkande när det gäller läsvanor.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Han skriver att delegationen har en tveksam hållning till dagens teknologi och gör en jämförelse tillbaka i tiden där man tog avstånd från dåtidens teveskärmar och Lars Molin frågar sig om inte denna syn finns kvar.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Delegationen missar vad dagens skärmar har att erbjudan när det gäller digital läsning och han är oförstående inför detta. Att alla idag i praktiken har ett bibliotek i fickan borde vara något att bejaka och utveckla i skolan.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2546,13 +2586,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord och uttryck såsom de används i texten. andlig",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "andlig‐ spirituell, religiös", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "spirituell, religiös", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2569,13 +2610,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord och uttryck såsom de används i texten. skriva under på",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "skriva under på‐ hålla med om, stödja", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "hålla med om, stödja", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2592,13 +2634,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord och uttryck såsom de används i texten. grubblerier",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "grubblerier‐ funderingar, bekymmer", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "funderingar, bekymmer", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2615,13 +2658,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord och uttryck såsom de används i texten. vistas",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "vistas‐ befinna sig, vara", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "befinna sig, vara", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2638,13 +2682,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord och uttryck såsom de används i texten. en vurm",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "en vurm‐ starkt intresse, passion, favoritsyssla", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "starkt intresse, passion, favoritsyssla", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2668,6 +2713,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2682,15 +2728,19 @@ export const CARDS: SecCard[] = [
     id: "swe-2022-hl-i-3", topicId: "swedish-0-1", conceptId: "gra-exempel-hur-relationen-religion-natur",
     section: "I", questionRef: "2022 HL Section I Q3",
     questionText: "Ge några exempel på hur relationen religion‐natur har skiftat genom historien.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ge exempel på hur relationen religion‐natur har skiftat genom historien. Under nordisk förkristen tid var naturen helig, en plats där man var omgiven av gudar. Med kristendomen knöts det heliga dels till städer långt bort, dels till altaret inne i kyrkan, i staden. Med reformationen blev naturen ytterligare distanserad i religionsutövningen. Industrialismen blir en brytpunkt: med urbaniseringen skiljs många från naturen och motsättningen land och stad skärps. Staden ses stå för det moderna och rationella. En sekularisering äger rum och det som inte passar in i den rationella synen‐ religion och existentiella upplevelser‐ placeras i den omoderna landsbygden. (r 31 ‐ 52)", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Under nordisk förkristen tid var naturen helig, en plats där man var omgiven av gudar.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Med kristendomen knöts det heliga dels till städer långt bort, dels till altaret inne i kyrkan, i staden.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Med reformationen blev naturen ytterligare distanserad i religionsutövningen.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Industrialismen blir en brytpunkt: med urbaniseringen skiljs många från naturen och motsättningen land och stad skärps. Staden ses stå för det moderna och rationella. En sekularisering äger rum och det som inte passar in i den rationella synen‐ religion och existentiella upplevelser‐ placeras i den omoderna landsbygden. (r 31 ‐ 52)", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2705,15 +2755,17 @@ export const CARDS: SecCard[] = [
     id: "swe-2022-hl-i-4", topicId: "swedish-0-1", conceptId: "kommentera-vad-david-thurfjell-menar-med",
     section: "I", questionRef: "2022 HL Section I Q4",
     questionText: "Kommentera vad David Thurfjell menar med: ”Naturen blir en kuliss för deras grubblerier.”",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Många svenskar känner att naturen speglar deras egna känslor och funderingar och att det ger tröst: det yttre landskapet speglar deras inre. Mår man dåligt kan man t.ex. finna tröst i ett ogästvänligt landskap. Naturen ger lugn och kraft och det har man lärt sig att den gör, man är uppfostrad med det. De flesta vet hur de kan ta sig ut i naturen och man kan göra det ensam och när man har det svårt. Det har varit viktigt under coronapandemin. (r 13 ‐ 30)", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Många svenskar känner att naturen speglar deras egna känslor och funderingar och att det ger tröst: det yttre landskapet speglar deras inre. Mår man dåligt kan man t.ex. finna tröst i ett ogästvänligt landskap.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Naturen ger lugn och kraft och det har man lärt sig att den gör, man är uppfostrad med det. De flesta vet hur de kan ta sig ut i naturen och man kan göra det ensam och när man har det svårt. Det har varit viktigt under coronapandemin. (r 13 ‐ 30)", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2728,15 +2780,18 @@ export const CARDS: SecCard[] = [
     id: "swe-2022-hl-i-5", topicId: "swedish-0-1", conceptId: "forklara-rubriken-naturen-har-blivit-svenskarnas",
     section: "I", questionRef: "2022 HL Section I Q5",
     questionText: "Förklara rubriken: ”Naturen har blivit svenskarnas kyrka”",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Artikeln beskriver en paradox: i allmänhet ser sig inte svenskar som troende och få går i kyrkan. Samtidigt är naturen viktig och många finner också ett slags andlighet ute i naturen. Många icke‐ troende kan beskriva naturen som sin kyrka. (r 1 ‐ 9) I naturen känner många en samhörighet med andra arter och universum. Det är en plats som ger ro och tröst. ( r 13 ‐ 25) Idag finns det också rörelser i samhället där man vänder sig från bilden av människan i centrum, t.ex. i miljörörelsen. Det handlar också om en nyandlighet: i olika former av ekologisk andlighet som skogsbad och naturkontakt ser man andra arter som personer. Det finns också de som delar olika naturfolks syn på t.ex. floder och berg som levande väsen. (r 49 ‐ 64)", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Artikeln beskriver en paradox: i allmänhet ser sig inte svenskar som troende och få går i kyrkan. Samtidigt är naturen viktig och många finner också ett slags andlighet ute i naturen. Många icke‐ troende kan beskriva naturen som sin kyrka. (r 1 ‐ 9)", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "I naturen känner många en samhörighet med andra arter och universum. Det är en plats som ger ro och tröst. ( r 13 ‐ 25)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Idag finns det också rörelser i samhället där man vänder sig från bilden av människan i centrum, t.ex. i miljörörelsen. Det handlar också om en nyandlighet: i olika former av ekologisk andlighet som skogsbad och naturkontakt ser man andra arter som personer. Det finns också de som delar olika naturfolks syn på t.ex. floder och berg som levande väsen. (r 49 ‐ 64)", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2760,6 +2815,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2776,13 +2832,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. påtaglig-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "påtaglig‐ konkret, tydlig, verklig", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "konkret, tydlig, verklig", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2799,13 +2856,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. ansåg (anse)-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ansåg (anse)‐ tycka, mena, tänka", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "tycka, mena, tänka", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2822,13 +2880,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. en uppfattning-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "en uppfattning‐ åsikt, mening, inställning", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "åsikt, mening, inställning", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2845,13 +2904,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. medverkade (medverka)-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "medverkade (medverka)‐ delta, vara med, uppträda", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "delta, vara med, uppträda", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2868,13 +2928,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. inträffat (inträffa)-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "inträffat (inträffa)‐ hända, ske, äga rum", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "hända, ske, äga rum", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2898,6 +2959,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2912,15 +2974,18 @@ export const CARDS: SecCard[] = [
     id: "swe-2023-hl-i-3", topicId: "swedish-0-1", conceptId: "hur-har-samerna-varit-fortryckta-sverige",
     section: "I", questionRef: "2023 HL Section I Q3",
     questionText: "Hur har samerna varit förtryckta i Sverige?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Statens institut för rasbiologi i Uppsala undersökte samerna och bl.a. mätte deras skallar och tvingade dem att fotograferas, många gånger nakna. Syftet var att dokumentera det rasbiologerna tyckte var en underlägsen ras. r 18‐22 Kyrkan deltog aktivt i förtrycket och accepterade inte samernas språk och religion. Präster hjälpte rasbiologerna på plats och lät dem gräva upp gravar. r 27‐31 Barnen skildes från sina föräldrar och tvingades gå i nomadskola. Där talade man bara svenska, oavsett om de kunde det eller inte. Barnen förlorade sitt samiska språk. r 35‐38", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Statens institut för rasbiologi i Uppsala undersökte samerna och bl.a. mätte deras skallar och tvingade dem att fotograferas, många gånger nakna. Syftet var att dokumentera det rasbiologerna tyckte var en underlägsen ras. r 18‐22", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Kyrkan deltog aktivt i förtrycket och accepterade inte samernas språk och religion. Präster hjälpte rasbiologerna på plats och lät dem gräva upp gravar. r 27‐31", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Barnen skildes från sina föräldrar och tvingades gå i nomadskola. Där talade man bara svenska, oavsett om de kunde det eller inte. Barnen förlorade sitt samiska språk. r 35‐38", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2935,15 +3000,18 @@ export const CARDS: SecCard[] = [
     id: "swe-2023-hl-i-4", topicId: "swedish-0-1", conceptId: "ursakten-del-ende-forsoningsprocess-forklara-vad",
     section: "I", questionRef: "2023 HL Section I Q4",
     questionText: "”Ursäkten är en del av en pågående försoningsprocess” Förklara vad detta innebär utifrån texten.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "”. Kyrkan vill försonas med samerna. Det sker i flera steg. Först handlar det om att ta fram fakta och påverkas av det. Sedan att be om ursäkt och försöka läka och verka för försoning. Inom kyrkan ber man ofta om förlåtelse för att bli förlåten. Men Ärkebiskop Antje Jackelén förklarar att det inte går i det här fallet, eftersom kyrkan har varit delaktig i förtrycket av samerna. Därför spelar i stället en ursäkt en viktig roll i processen. Med en ursäkt tar kyrkan på sig sitt ansvar för det som har hänt i historien. Försoning betyder att vara jämbördig och att ha förtroende för varandra säger ärkebiskopen som hoppas att de når dit. r 43‐55", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kyrkan vill försonas med samerna. Det sker i flera steg. Först handlar det om att ta fram fakta och påverkas av det. Sedan att be om ursäkt och försöka läka och verka för försoning.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Inom kyrkan ber man ofta om förlåtelse för att bli förlåten. Men Ärkebiskop Antje Jackelén förklarar att det inte går i det här fallet, eftersom kyrkan har varit delaktig i förtrycket av samerna. Därför spelar i stället en ursäkt en viktig roll i processen. Med en ursäkt tar kyrkan på sig sitt ansvar för det som har hänt i historien.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Försoning betyder att vara jämbördig och att ha förtroende för varandra säger ärkebiskopen som hoppas att de når dit. r 43‐55", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2958,15 +3026,18 @@ export const CARDS: SecCard[] = [
     id: "swe-2023-hl-i-5", topicId: "swedish-0-1", conceptId: "vad-sager-katarina-pirak-sikku-sorg",
     section: "I", questionRef: "2023 HL Section I Q5",
     questionText: "Vad säger Katarina Pirak Sikku om sorg och hur har hon bearbetat den?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Katarina Pirak Sikkus sorg är förknippad med den smärtsamma samiska historien och när hon lärde sig om samernas historia började hon fundera på om sorgen kunde gå i arv, då hon inte personligen hade drabbats av den, som t.ex. hennes man. Idag, efter en lång väg, har hon kommit fram till att sorg kan ärvas. Känslorna som väcktes hos henne när hon tog del av vad som skett med samerna har format henne som konstnär. Hennes intresse för den samiska historien började på Konsthögskolan i Umeå. Det ledde henne till att börja gräva i historien i arkiven på Statens institut för rasbiologi. Hennes konstnärskap har varit en bearbetning av sorgen. Med insikten att sorg går att ärva har hon också kommit fram till att det som skett hennes förfäder inte helt får ta över hennes liv. r. 10‐28, r 55‐58", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Katarina Pirak Sikkus sorg är förknippad med den smärtsamma samiska historien och när hon lärde sig om samernas historia började hon fundera på om sorgen kunde gå i arv, då hon inte personligen hade drabbats av den, som t.ex. hennes man. Idag, efter en lång väg, har hon kommit fram till att sorg kan ärvas.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Känslorna som väcktes hos henne när hon tog del av vad som skett med samerna har format henne som konstnär. Hennes intresse för den samiska historien började på Konsthögskolan i Umeå. Det ledde henne till att börja gräva i historien i arkiven på Statens institut för rasbiologi. Hennes konstnärskap har varit en bearbetning av sorgen.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Med insikten att sorg går att ärva har hon också kommit fram till att det som skett hennes förfäder inte helt får ta över hennes liv. r. 10‐28, r 55‐58", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2983,13 +3054,14 @@ export const CARDS: SecCard[] = [
     questionText: "Håller du med om detta? Förklara varför/ varför inte. ”Mycket av det som Svenska kyrkan har gjort sig skyldig till rör personer som inte längre lever. Av den anledningen finns det de som tycker att det inte är möjligt att be om ursäkt.”",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Håller du med om detta? Förklara varför/ varför inte utifrån dina egna åsikter/ tankar. ”Mycket av det som Svenska kyrkan har gjort sig skyldig till rör personer som inte längre lever. Av den anledningen finns det de som tycker att det inte är möjligt att be om ursäkt.” Kandidaten förklarar tydligt sin åsikt. Han/ hon kan instämma och förklara varför han/ hon håller med. Eller så invänder kandidaten som Katarina Pirak Sikku och förklarar varför. Kandidaten kan också argumentera för båda sidor.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kandidaten förklarar tydligt sin åsikt. Han/ hon kan instämma och förklara varför han/ hon håller med. Eller så invänder kandidaten som Katarina Pirak Sikku och förklarar varför. Kandidaten kan också argumentera för båda sidor.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3006,7 +3078,7 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. sticker ut-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sticker ut‐", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme reprints this expression (“sticker ut‐”) and prints no gloss for it, nor for any expression of Question 1 this sitting.", permittedMarks: [0,1], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3029,7 +3101,7 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. luddigt-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "luddigt‐", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme reprints this expression (“luddigt‐”) and prints no gloss for it, nor for any expression of Question 1 this sitting.", permittedMarks: [0,1], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3052,7 +3124,7 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. bejakar-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "bejakar‐", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme reprints this expression (“bejakar‐”) and prints no gloss for it, nor for any expression of Question 1 this sitting.", permittedMarks: [0,1], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3075,7 +3147,7 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. (en) plikt-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(en) plikt‐", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme reprints this expression (“(en) plikt‐”) and prints no gloss for it, nor for any expression of Question 1 this sitting.", permittedMarks: [0,1], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3098,7 +3170,7 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. innebär-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "innebär‐", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme reprints this expression (“innebär‐”) and prints no gloss for it, nor for any expression of Question 1 this sitting.", permittedMarks: [0,1], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3121,13 +3193,14 @@ export const CARDS: SecCard[] = [
     questionText: "Vad tycker Henrik Ekengren Oscarsson är viktigast för att räknas som svensk, enligt Lars Trägårdh?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Trägårdh? Enligt Lars Trägårdh tycker Henrik Ekengren Oscarsson att det viktigaste för att räknas som svensk är att man kan tala svenska och att man följer svensk lag.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enligt Lars Trägårdh tycker Henrik Ekengren Oscarsson att det viktigaste för att räknas som svensk är att man kan tala svenska och att man följer svensk lag.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3142,15 +3215,17 @@ export const CARDS: SecCard[] = [
     id: "swe-2024-hl-i-3", topicId: "swedish-0-1", conceptId: "vad-ller-lars-trag-rdh-med",
     section: "I", questionRef: "2024 HL Section I Q3",
     questionText: "Vad håller Lars Trägårdh med Henrik Ekengren Oscarsson om?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Lars Trägårdh håller med Henrik Ekengren Oscarsson om att det är viktigt att understryka lagar och reglers betydelse i Sverige och att detta kommer före etnicitet. Man kan bli svensk utan att ha familjekoppling till Sverige, utan koppling till svenska traditioner och högtider, att ens hudfärg inte spelar någon roll.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Lars Trägårdh håller med Henrik Ekengren Oscarsson om att det är viktigt att understryka lagar och reglers betydelse i Sverige och att detta kommer före etnicitet.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Man kan bli svensk utan att ha familjekoppling till Sverige, utan koppling till svenska traditioner och högtider, att ens hudfärg inte spelar någon roll.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3165,15 +3240,18 @@ export const CARDS: SecCard[] = [
     id: "swe-2024-hl-i-4", topicId: "swedish-0-1", conceptId: "vad-menar-lars-trag-rdh-med",
     section: "I", questionRef: "2024 HL Section I Q4",
     questionText: "Vad menar Lars Trägårdh med ”Lagar genomsyras av värderingar” och vad ger han för exempel?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Lars Trägårdh menar att lagar inte är neutrala i strikt mening. De är påverkade av den kultur som finns i landet. Lars Trägårdh är kritisk till de som valt att tona ner vikten av svensk kultur och svenska värderingar i debatten om svenskhet. Något som är utmärkande för Sverige, enligt Lars Trägårdh, är individens ställning, där jämställdhet är centralt. Denna individualism står i motvikt till familjens ställning, som är normen i kanske de flesta länder. Ett konkret exempel på detta är att varje person i Sverige beskattas individuellt. Individens ställning som självständig ser vi också i lagar som rör barn och äldre. Statens rätt att skydda barn står över föräldrarnas rätt och det är staten, som ansvarar för äldres omsorg, inte det vuxna barnet.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Lars Trägårdh menar att lagar inte är neutrala i strikt mening. De är påverkade av den kultur som finns i landet. Lars Trägårdh är kritisk till de som valt att tona ner vikten av svensk kultur och svenska värderingar i debatten om svenskhet.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Något som är utmärkande för Sverige, enligt Lars Trägårdh, är individens ställning, där jämställdhet är centralt. Denna individualism står i motvikt till familjens ställning, som är normen i kanske de flesta länder. Ett konkret exempel på detta är att varje person i Sverige beskattas individuellt.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Individens ställning som självständig ser vi också i lagar som rör barn och äldre. Statens rätt att skydda barn står över föräldrarnas rätt och det är staten, som ansvarar för äldres omsorg, inte det vuxna barnet.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3197,6 +3275,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3211,15 +3290,17 @@ export const CARDS: SecCard[] = [
     id: "swe-2024-hl-i-6", topicId: "swedish-0-1", conceptId: "forklara-vad-lars-trag-rdh-menar",
     section: "I", questionRef: "2024 HL Section I Q6",
     questionText: "Förklara vad Lars Trägårdh menar med: ”Vi betalar nu priset för denna välmenade förvirring.”",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Den grundläggande kritiken i Lars Trägårdhs artikel är att man inte varit tydlig med vad som är obligatoriskt och vad som är frivilligt i Sverige. Man har heller inte förklarat att kulturen har en roll när man skriver de lagar vi alla måste följa. Delvis är detta politikernas fel, enligt honom, som har undvikit att tala om assimilering i detta fall. Han illustrerar detta med liknelsen att de blandat ihop staten och restaurangen. Ett konkret exempel på en sammanblandning av staten och restaurangen är den upprörda kritiken kring socialtjänsten. Lars Trägårdh understryker att vi inte kan välja fritt bland lagar eller förhandla om dem. Däremot kan vi i det frivilliga samhället välja hur vi ska leva, likt vi väljer bland menyer på en restaurang.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Den grundläggande kritiken i Lars Trägårdhs artikel är att man inte varit tydlig med vad som är obligatoriskt och vad som är frivilligt i Sverige. Man har heller inte förklarat att kulturen har en roll när man skriver de lagar vi alla måste följa. Delvis är detta politikernas fel, enligt honom, som har undvikit att tala om assimilering i detta fall. Han illustrerar detta med liknelsen att de blandat ihop staten och restaurangen.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Ett konkret exempel på en sammanblandning av staten och restaurangen är den upprörda kritiken kring socialtjänsten. Lars Trägårdh understryker att vi inte kan välja fritt bland lagar eller förhandla om dem. Däremot kan vi i det frivilliga samhället välja hur vi ska leva, likt vi väljer bland menyer på en restaurang.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3236,8 +3317,19 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. omfattande",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "omfattande- stort, betydande, avsevärd", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "stort, betydande, avsevärd", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3249,8 +3341,19 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. betonar",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "betonar- framhåller, stryker under, lyfter fram", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "framhåller, stryker under, lyfter fram", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3262,8 +3365,19 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. ett samband",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ett samband- en förbindelse, en relation, en koppling", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "en förbindelse, en relation, en koppling", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3275,8 +3389,19 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. bidrar",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "bidrar- hjälper, medverkar", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "hjälper, medverkar", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3288,8 +3413,19 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. enskild",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "enskild- särskild, enstaka, individuell", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "särskild, enstaka, individuell", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3303,6 +3439,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Miljöaktivister lyckades att stoppa ett oljeraffinaderi i Lysekil men de lyckades inte att stoppa en gruva i Gállok/ Kallak.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3314,8 +3461,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vad hoppades forskarna i forskningsprojektet The power of protest göra, och varför var det svårt för dem att göra det?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vad hoppades forskarna involverade i forskningsprojektet Power of protest att göra, och varför var det svårt för dem att göra det? Forskarna hoppades kunna se effekter av protester, hur dessa påverkar samhällsförändringen. Det är i själva verket väldigt svårt att bevisa att aktivism påverkar opinionssvängningar och politiska beslut.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Forskarna hoppades kunna se effekter av protester, hur dessa påverkar samhällsförändringen. Det är i själva verket väldigt svårt att bevisa att aktivism påverkar opinionssvängningar och politiska beslut.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3325,10 +3483,23 @@ export const CARDS: SecCard[] = [
     id: "swe-2025-hl-i-4", topicId: "swedish-0-1", conceptId: "vilket-mest-framg-ngsrikt-olydnad-eller",
     section: "I", questionRef: "2025 HL Section I Q4",
     questionText: "Vilket är mest framgångsrikt: olydnad eller namninsamling? Vad kan vi lära oss från rörelsen Rädda våtmarkerna i sammanhanget? Utgå från texten och dina egna åsikter.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vilket är mest framgångsrikt: civil olydnad eller namninsamling? Vad kan vi lära oss från rörelsen Rädda våtmarkerna i sammanhanget? Utgå från texten och dina egna åsikter. Det rör sig om två olika slags protester: konfrontation och icke-konfrontation. Hur stora de är och hur stor uppmärksamhet de får spelar en roll. Svaret vilket som är mest framgångsrikt är tudelat: namninsamling är vanligare men konfrontativa protester får uppmärksamhet. Detta är i sin tur tudelat: dessa konfrontationer får lite stöd i sig i opinionen men själva frågan som uppmärksammas kan däremot få stort stöd. Kandidaten tar här med sina egna åsikter. En åsikt kan vara att en rörelse måste räkna med att möta negativa reaktioner för att nå sitt mål. En annan åsikt kan vara protester som inte är konfrontativa men som ändå får uppmärksamhet. Greta Thunbergs sittstrejk och skolstrejk för klimatet med Fridays for Future kan vara ett exempel.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Det rör sig om två olika slags protester: konfrontation och icke-konfrontation.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Hur stora de är och hur stor uppmärksamhet de får spelar en roll. Svaret vilket som är mest framgångsrikt är tudelat: namninsamling är vanligare men konfrontativa protester får uppmärksamhet. Detta är i sin tur tudelat: dessa konfrontationer får lite stöd i sig i opinionen men själva frågan som uppmärksammas kan däremot få stort stöd.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Kandidaten tar här med sina egna åsikter. En åsikt kan vara att en rörelse måste räkna med att möta negativa reaktioner för att nå sitt mål. En annan åsikt kan vara protester som inte är konfrontativa men som ändå får uppmärksamhet. Greta Thunbergs sittstrejk och skolstrejk för klimatet med Fridays for Future kan vara ett exempel.", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3338,10 +3509,23 @@ export const CARDS: SecCard[] = [
     id: "swe-2025-hl-i-5", topicId: "swedish-0-1", conceptId: "beror-sociala-forandringar-sociala-rorelser-grunda",
     section: "I", questionRef: "2025 HL Section I Q5",
     questionText: "Beror sociala förändringar på sociala rörelser? Grunda ditt svar utifrån texten och dina egna åsikter.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Beror social förändring på sociala rörelser? Grunda ditt svar utifrån texten och dina egna åsikter. Det finns inget klart och tydligt svar på frågan. En frågeställning är om sociala förändringar verkligen kan ske utan föregående protester. Kvinnlig rösträtt och medborgarrättsrörelsen är två exempel som föregåtts av protester och frågan är om det finns något undantag i nutidshistorien. Håkan Thörn pekar på proteströrelser under 70-talet som ledde fram till kärnkraftsomröstningen 1980. Detta i sin tur ledde till att Miljöpartiet bildades och miljöorganisationer fick många fler medlemmar. Miljöfrågan blev för första gången en huvudfråga i ett val. Utifrån detta är svaret på frågan ja om sociala förändringar beror på sociala rörelser. Kandidaten tar här med sina egna åsikter, kanske med egna exempel, och skriver om hen håller med om Håkan Thörns antagande eller inte.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Det finns inget klart och tydligt svar på frågan. En frågeställning är om sociala förändringar verkligen kan ske utan föregående protester. Kvinnlig rösträtt och medborgarrättsrörelsen är två exempel som föregåtts av protester och frågan är om det finns något undantag i nutidshistorien.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Håkan Thörn pekar på proteströrelser under 70-talet som ledde fram till kärnkraftsomröstningen 1980. Detta i sin tur ledde till att Miljöpartiet bildades och miljöorganisationer fick många fler medlemmar. Miljöfrågan blev för första gången en huvudfråga i ett val. Utifrån detta är svaret på frågan ja om sociala förändringar beror på sociala rörelser.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Kandidaten tar här med sina egna åsikter, kanske med egna exempel, och skriver om hen håller med om Håkan Thörns antagande eller inte.", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3351,10 +3535,22 @@ export const CARDS: SecCard[] = [
     id: "swe-2025-hl-i-6", topicId: "swedish-0-1", conceptId: "ller-med-detta-forklara-varfor-varfor",
     section: "I", questionRef: "2025 HL Section I Q6",
     questionText: "Håller du med om detta? Förklara varför/ varför inte. ”Därför tror han inte att den nuvarande radikaliseringsvågen kommer att ta slut än på ett tag”.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enligt Håkan Thörn går proteströrelser i cykler där de periodvis blir hårdare. Vi är nu inne i en sådan där klimatfrågan är i centrum. Kandidaten uttrycker tydligt sin ståndpunkt. Om denna radikaliseringsvåg kommer att tillta eller avta är något kandidaten kan diskutera och förklara varför.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enligt Håkan Thörn går proteströrelser i cykler där de periodvis blir hårdare. Vi är nu inne i en sådan där klimatfrågan är i centrum.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Kandidaten uttrycker tydligt sin ståndpunkt. Om denna radikaliseringsvåg kommer att tillta eller avta är något kandidaten kan diskutera och förklara varför.", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3366,13 +3562,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. entydig-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "entydig - klar, tveklös, lättolkad", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "klar, tveklös, lättolkad", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3389,13 +3586,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. oerhört-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "oerhört - väldigt, mycket", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "väldigt, mycket", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3412,13 +3610,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. utmattande-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "utmattande - ansträngande, tröttsamt, jobbigt", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "ansträngande, tröttsamt, jobbigt", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3435,13 +3634,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. hindrar-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "hindrar - stoppar, blockerar, hejdar", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "stoppar, blockerar, hejdar", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3458,13 +3658,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara dessa ord såsom de används i texten. hävdar-",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "hävdar - påstår, anser, menar", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "påstår, anser, menar", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3488,6 +3689,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3511,6 +3713,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3525,15 +3728,19 @@ export const CARDS: SecCard[] = [
     id: "swe-2026-hl-i-4", topicId: "swedish-0-1", conceptId: "namn-och-nackdelar-med-att-leva",
     section: "I", questionRef: "2026 HL Section I Q4",
     questionText: "Nämn för- och nackdelar med att leva som digitala nomader utifrån artikeln och skriv vad du tycker om det.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Fördelar som nämns i artikeln: att som ordet digitala nomader betyder kunna flytta runt och ha med sig sitt jobb, tack vare den digitala tekniken. De kan då välja att bo på olika attraktiva platser i olika länder och där träffa andra med samma livstil. Forskarna har visat att de digitala nomaderna är bra på att snabbt bygga upp sociala kontakter och komma in i en gemenskap. Flera länder ser det positiva med denna grupp, då de till skillnad från vanliga turister stannar längre och därmed ger mer inkomster. Nackdelar som nämns i artikeln: liksom mycket resande från rikare till fattigare länder, såsom den vanliga turismen, kan det slå mot lokalbefolkningen med t.ex. stora förändringar i olika områden med stora hyreshöjningar som följd, även om digitala nomader kan invända mot detta. Hur lätt eller svårt det kan vara att förena den här livsstilen med att bilda familj är också osäkert. Kandidaten diskuterar kort kring några för- och nackdelar som digital nomad.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Fördelar som nämns i artikeln: att som ordet digitala nomader betyder kunna flytta runt och ha med sig sitt jobb, tack vare den digitala tekniken. De kan då välja att bo på olika attraktiva platser i olika länder och där träffa andra med samma livstil. Forskarna har visat att de digitala nomaderna är bra på att snabbt bygga upp sociala kontakter och komma in i en gemenskap. Flera länder ser det positiva med denna grupp, då de till skillnad från vanliga turister stannar längre och därmed ger mer inkomster.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Nackdelar som nämns i artikeln: liksom mycket resande från rikare till fattigare länder, såsom den vanliga turismen, kan det slå mot lokalbefolkningen med t.ex. stora förändringar i olika områden med stora hyreshöjningar som följd, även om digitala nomader kan invända mot detta.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Hur lätt eller svårt det kan vara att förena den här livsstilen med att bilda familj är också osäkert.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Kandidaten diskuterar kort kring några för- och nackdelar som digital nomad.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3557,6 +3764,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3571,15 +3779,18 @@ export const CARDS: SecCard[] = [
     id: "swe-2026-hl-i-6", topicId: "swedish-0-1", conceptId: "nomaderna-inga-glidare-forklara-varfor-och",
     section: "I", questionRef: "2026 HL Section I Q6",
     questionText: "”Nomaderna är inga glidare”. Förklara varför och kommentera varför det kan vara ”överraskande fynd” utifrån artikeln.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Förklara varför och kommentera varför detta kan vara ”överraskande fynd” utifrån artikeln. Forskarna Robert Litchfield och Rachael Woldoff har gjort en studie över digitala nomader på Bali genom att intervjuade 70 av dem, från 18 olika länder. De upptäckte att den vanliga bilden av digitala nomader i media är en kliché som inte stämmer överens med verkligheten. Den bilden framställer dem som influencer på Instagram eller några som bara glider omkring utan att ha gjort något vettig här i livet. Tvärtom, så hade de flesta läst på universitet, hade bra jobb och arbetet var viktigt för dem. De är medvetna om att deras livsstil kan skapa problem, likt turistens, men de tycker att de är mer ansvarsfulla och engagerar sig lokalt. Forskarna upptäckte också att de digitala nomaderna är duktiga på att knyta nya sociala kontakter och forskarna lärde sig hur det gick till.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Forskarna Robert Litchfield och Rachael Woldoff har gjort en studie över digitala nomader på Bali genom att intervjuade 70 av dem, från 18 olika länder.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "De upptäckte att den vanliga bilden av digitala nomader i media är en kliché som inte stämmer överens med verkligheten. Den bilden framställer dem som influencer på Instagram eller några som bara glider omkring utan att ha gjort något vettig här i livet. Tvärtom, så hade de flesta läst på universitet, hade bra jobb och arbetet var viktigt för dem. De är medvetna om att deras livsstil kan skapa problem, likt turistens, men de tycker att de är mer ansvarsfulla och engagerar sig lokalt.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Forskarna upptäckte också att de digitala nomaderna är duktiga på att knyta nya sociala kontakter och forskarna lärde sig hur det gick till.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2026 Higher Level examination paper — © State Examinations Commission.",
