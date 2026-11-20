@@ -1572,6 +1572,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2017 Higher Level — © State Examinations Commission.",
+    id: "bul-2017-hl-ii-1", topicId: "bulgarian-1-0", conceptId: "100",
+    section: "II", questionRef: "2017 HL Section II Q1",
+    questionText: "„Някои твърдят, че все пак позитивното мислене е начин за приобщаване на хората към обществото и провокира емпатия. Но всъщност е точно обратното. Новата религия тласка хората към краен индивидуализъм, към затваряне, себефокусиране, изолация и безразличие към чувствата и преживяванията на другите, влошава качеството на отношенията между хората.” Какво е вашето мнение? Обяснете защо. (около 100 думи)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Лична интерпретация, ясни и непротиворечиви идеи.", marks: 30, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" The scheme prints: “При оценяването на отговорите от първите две части се прилагат следните критерии:”. The scheme prints, as examples, not a checklist: “Различни възможности за отговор. Кандидатът би могъл да подкрепи автора, но и да го опровергае, позовавайки се на собствени наблюдения. Една възможност например е да развие тезата, че позитивността е само особено отношение, нагласа, „настройка” към действителността, а не бягство от нея... позитивността не „избира”, а „третира”, не обръща гръб на тежките страни на живота, а ги изживява и усвоява позитивно. Примерен цитат: „Не можете да нагодите всяка житейска ситуация по своята мярка, но можете да нагодите отношението си така, че да бъде по мярката на всяка ситуация.” (Зиг Зиглар)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Яснота и точност на израза – кандидатът разбира добре въпросите и знае как да отговори ясно и точно – 30% ;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Свързаност и непротиворечивост на отговорите – кандидатът използва откъси от текста, които са адекватни на мисълта му, идеите му са непротиворечиви и композицията на съчинението следва определена логика – 30% ;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Езикова компетентност – кандидатът умее свободно да изразява идеите си, езикът на изказването му е ясен и точен – 30% ;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Конвенционални умения – кандидатът владее и прилага граматичната норма и правописа на съвременния български книжовен език – 10%.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ВТОРА ЧАСТ",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2017 Higher Level — © State Examinations Commission.",
+    id: "bul-2017-hl-iii-1", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2017 HL Section III Q1",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: „Ще обикна светлината, защото ми показва пътя, но ще понеса мрака, защото ми показва звездите.” (Ог Мандино)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under the two titles the scheme prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Under “Бележки:” it prints its criteria for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2017 Higher Level — © State Examinations Commission.",
+    id: "bul-2017-hl-iii-2", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2017 HL Section III Q2",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: „Моето мнение е толкова добро, колкото и вашето, всички мнения трябва да бъдат еднакво ценени.” Разсъждавайте върху тази гледна точка в контекста на съвременния свят и съвременните медии.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under the two titles the scheme prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Under “Бележки:” it prints its criteria for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:” The scheme reprints this title empty, as “2. „” ()”: the number, an empty pair of quotation marks and empty brackets. The paper's title is the question.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC559ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2018 Higher Level — © State Examinations Commission.",
