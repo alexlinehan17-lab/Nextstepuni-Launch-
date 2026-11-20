@@ -1244,13 +1244,13 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 20,
+  "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "Postupci selektivnog predstavljanja i krivotvorenja stvarnosti posebno su opasni zato što, iako zapravo služe tome da bi slika koju šaljemo svojim pratiteljima bila što savršenija, u potpunosti iskrivljuju percepciju i predodžbu koju oni koji takve sadržaje promatraju imaju o sebi, što za posljedicu ima da i oni krenu u krivotvorenje vlastite stvarnosti, uljepšavanje vlastitog života i tako se zatvoreni krug lažnog predstavljanja, krivotvorene stvarnosti i obmana samo nastavlja, ostavljajući pogubne posljedice na sve koji u njegovu stvaranju sudjeluju.",
-    "marks": 20,
+    "marks": 5,
     "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
    }
   ],

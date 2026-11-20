@@ -695,9 +695,9 @@ export const CARDS: SecCard[] = [
     id: "hrv-2017-hl-i-4", topicId: "croatian-0-1", conceptId: "opi-ite-temelju-teksta-ali-svojim",
     section: "I", questionRef: "2017 HL Section I Q4",
     questionText: "Opišite, na temelju teksta, ali svojim riječima, na koji način i zašto postupci „selektivnog predstavljanja“ i „krivotvorenja stvarnosti“ u konačnici dovode do negativnih posljedica po one koji objavljuju i konzumiraju tako stvorene sadržaje na društvenim mrežama.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Postupci selektivnog predstavljanja i krivotvorenja stvarnosti posebno su opasni zato što, iako zapravo služe tome da bi slika koju šaljemo svojim pratiteljima bila što savršenija, u potpunosti iskrivljuju percepciju i predodžbu koju oni koji takve sadržaje promatraju imaju o sebi, što za posljedicu ima da i oni krenu u krivotvorenje vlastite stvarnosti, uljepšavanje vlastitog života i tako se zatvoreni krug lažnog predstavljanja, krivotvorene stvarnosti i obmana samo nastavlja, ostavljajući pogubne posljedice na sve koji u njegovu stvaranju sudjeluju.", marks: 20, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-1", kind: "point", verbatim: "Postupci selektivnog predstavljanja i krivotvorenja stvarnosti posebno su opasni zato što, iako zapravo služe tome da bi slika koju šaljemo svojim pratiteljima bila što savršenija, u potpunosti iskrivljuju percepciju i predodžbu koju oni koji takve sadržaje promatraju imaju o sebi, što za posljedicu ima da i oni krenu u krivotvorenje vlastite stvarnosti, uljepšavanje vlastitog života i tako se zatvoreni krug lažnog predstavljanja, krivotvorene stvarnosti i obmana samo nastavlja, ostavljajući pogubne posljedice na sve koji u njegovu stvaranju sudjeluju.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
     ],
   } as SecCard,
   {
