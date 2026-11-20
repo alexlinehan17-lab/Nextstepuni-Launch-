@@ -4616,6 +4616,59 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2025 Higher Level — © State Examinations Commission.",
+    id: "nld-2025-hl-ii-1", topicId: "dutch-1-0", conceptId: "onenigheid-gezinnen-ontstaat-bij-onderwerpen-waar",
+    section: "II", questionRef: "2025 HL Section II Q1",
+    questionText: "”De onenigheid in gezinnen ontstaat bij onderwerpen waar het minder makkelijk is om te bepalen of het om risicovol gedrag gaat of om het persoonlijke domein.” (alinea 14) Wat bedoelt de auteur met deze opmerking? Geef je eigen visie in 100 tot 150 woorden op deze stelling.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "discussies tussen ouders en jongeren ontstaan vaak bij onderwerpen die niet duidelijk risicovol zijn, maar waar jongeren wel autonomie willen. Denk aan kledingkeuze of uitgaan.", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands worden gegeven.\" The scheme heads its points: “Het antwoord van de kandidaat kan verwijzen naar onder andere:”." },
+    { id: "r-2", kind: "point", verbatim: "Jongeren vinden dat zulke beslissingen tot hun persoonlijke vrijheid behoren, terwijl ouders ze als gevaarlijk kunnen zien", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Natuurlijk mogen ouders grenzen stellen bij echt gevaarlijke situaties (zoals drugsgebruik of gevaarlijk verkeer), maar bij persoonlijke stijl of hobby’s is het belangrijk ruimte te laten voor individuele expressie.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Alleen zo kunnen jongeren hun identiteit ontwikkelen en leren omgaan met de gevolgen van hun keuzes.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEEL 2: COMMENTAAR",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands worden gegeven.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2025 Higher Level — © State Examinations Commission.",
+    id: "nld-2025-hl-iii-1", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-minimum-300-woorden",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "Schrijf een opstel (minimum 300 woorden) over één van de volgende onderwerpen: Het is beter als om als jongere fouten te maken dan als volwassene.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands worden gegeven.\" The scheme reprints the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2025 Higher Level — © State Examinations Commission.",
+    id: "nld-2025-hl-iii-2", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-minimum-300-woorden",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "Schrijf een opstel (minimum 300 woorden) over één van de volgende onderwerpen: De cultuur van een land - wat het aan literatuur en kunst, dans en muziek voortbrengt - wordt gevormd door accidentele invloeden van buitenaf en door stromingen en stijlen die over de wereld waaien. (Gerrit Komrij Nederlands schrijver (1944 - 2012))",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands worden gegeven.\" The scheme reprints the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2026, level: "higher",
     paperFileid: "LC017ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2026 Higher Level — © State Examinations Commission.",
